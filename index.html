@@ -370,8 +370,11 @@
       msg.textContent = "Du er skrevet op. Vi giver besked, når din kommune er klar.";
       form.reset();
     } catch (err) {
+      console.warn("Tilmelding fejlede:", err.message);
       msg.className = "form-msg err";
-      msg.textContent = "Tilmeldingen gik ikke igennem. Prøv igen, eller skriv til ac.mansa.cph@gmail.com.";
+      msg.textContent = /activ/i.test(err.message)
+        ? "Tilmeldingen er ikke åbnet endnu. Prøv igen om lidt, eller skriv til ac.mansa.cph@gmail.com."
+        : "Tilmeldingen gik ikke igennem. Prøv igen, eller skriv til ac.mansa.cph@gmail.com.";
     } finally {
       btn.disabled = false;
     }
