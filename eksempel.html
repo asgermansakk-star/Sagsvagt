@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eksempel på en ugemail – Sagsvagt</title>
+<meta name="description" content="Sådan ser en ugentlig mail fra Sagsvagt ud. Bygget på rigtige dagsordener fra Odense Kommune, uge 41 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root { --paper:#F5F7FA; --sheet:#fff; --ink:#18212E; --muted:#586274; --rule:#D8DEE7; --blue:#2B4A7E; --marker:#F6E05E; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:400 1rem/1.6 "Public Sans", system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
+  a { color:var(--blue); }
+  :focus-visible { outline:3px solid var(--blue); outline-offset:2px; }
+  .back { max-width:680px; margin:0 auto; padding:20px 24px 0; font-size:.875rem; }
+  .mail { max-width:680px; margin:16px auto 64px; background:var(--sheet); border:1px solid var(--rule); border-radius:3px; }
+  .meta { padding:18px 28px; border-bottom:1px solid var(--rule); font-size:.875rem; color:var(--muted); display:grid; grid-template-columns:5em 1fr; gap:2px 8px; }
+  .meta b { color:var(--ink); font-weight:700; }
+  .body { padding:28px; }
+  h1 { font-weight:800; font-size:1.625rem; line-height:1.15; letter-spacing:-.02em; margin:0 0 10px; }
+  .intro { color:var(--muted); margin:0 0 8px; }
+  .topics { display:flex; flex-wrap:wrap; gap:8px; list-style:none; padding:0; margin:14px 0 28px; }
+  .topics li { font-family:"Source Serif 4", Georgia, serif; background:linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 88%, transparent 88%); padding:0 4px; }
+  article { border-top:2px solid var(--ink); padding:16px 0 22px; }
+  .where { font-size:.8125rem; color:var(--muted); margin:0 0 4px; }
+  h2 { font-family:"Source Serif 4", Georgia, serif; font-weight:600; font-size:1.25rem; line-height:1.3; margin:0 0 10px; }
+  article p { margin:0 0 10px; }
+  .status { display:grid; grid-template-columns:7.5em 1fr; gap:4px 12px; font-size:.9375rem; margin:12px 0; padding:12px 14px; background:var(--paper); border-left:3px solid var(--blue); }
+  .status dt { font-weight:700; }
+  .status dd { margin:0; }
+  .why { font-size:.9375rem; }
+  .why b { font-weight:700; }
+  .also { border-top:1px solid var(--rule); padding-top:16px; margin-top:8px; }
+  .also h3 { font-size:1rem; margin:0 0 8px; }
+  .also ul { margin:0; padding-left:1.1em; }
+  .foot { padding:18px 28px; border-top:1px solid var(--rule); font-size:.8125rem; color:var(--muted); }
+  @media (max-width:520px) {
+    .back { padding:16px 16px 0; }
+    .mail { margin:12px 0 40px; border-left:0; border-right:0; }
+    .meta, .body, .foot { padding-left:16px; padding-right:16px; }
+    .status { grid-template-columns:1fr; gap:0; }
+    .status dd { margin-bottom:6px; }
+  }
+</style>
+</head>
+<body>
+<p class="back"><a href="./">Tilbage til Sagsvagt</a></p>
+
+<div class="mail">
+  <div class="meta">
+    <span>Fra</span><b>Sagsvagt</b>
+    <span>Emne</span><b>4 nye sager i Odense om dine emner, uge 41</b>
+    <span>Dato</span><span>Mandag 12. oktober 2026, kl. 07.00</span>
+  </div>
+
+  <div class="body">
+    <h1>Dine sager i uge 41</h1>
+    <p class="intro">Vi har læst ugens 7 dagsordener og referater fra Odense Kommune. Disse 4 sager handler om det, du følger:</p>
+    <ul class="topics" aria-label="Dine emner">
+      <li>affald og genbrug</li>
+      <li>erhvervsbyggeri</li>
+      <li>kolonihaver</li>
+    </ul>
+
+    <article>
+      <p class="where">Klima- og Miljøudvalget, referat fra 6. oktober, pkt. 3</p>
+      <h2>Ny affaldsplan for 2027–2038 skal i høring</h2>
+      <p>Odense vil bygge et nyt net af større genbrugsstationer, suppleret med nærgenbrugsstationer, byttebokse og henteservice. Forvaltningen vurderer, at kommunen ikke kan nå de nationale genanvendelsesmål for 2030 og 2035 med den nuværende struktur. Kun 1 af 8 genbrugsstationer har plads til de nye affaldstyper, der er på vej.</p>
+      <p>Planen fastlægger retningen, men ikke hvor mange stationer der kommer, eller hvor de skal ligge. Det kommer som særskilte sager senere.</p>
+      <dl class="status">
+        <dt>Besluttet</dt><dd>Udvalget anbefaler, at byrådet sender planen i 8 ugers offentlig høring.</dd>
+        <dt>Næste skridt</dt><dd>Byrådet. Derefter høring, hvor borgere og virksomheder kan svare.</dd>
+      </dl>
+      <p class="why"><b>Matchede</b> affald og genbrug. <a href="https://dagsordener.odense.dk/vis?Referat-Klima--og-Miljoeudvalget-2026-2029-d.06-10-2026-kl.08.30&amp;id=b5c35d26-3d60-4d6b-871d-04b7da140007">Læs hele sagen</a></p>
+    </article>
+
+    <article>
+      <p class="where">Klima- og Miljøudvalget, referat fra 6. oktober, pkt. 2</p>
+      <h2>Virksomheder kan selv vælge forbrændingsanlæg</h2>
+      <p>Regulativet for erhvervsaffald revideres, fordi en lovændring konkurrenceudsætter forbrændingsegnet erhvervsaffald. Kommunen kan ikke længere anvise affaldet til Fjernvarme Fyn Affaldsenergi. Samtidig foreslås det, at kommunens egne institutioner ikke længere skal bruge Odense Renovation til genanvendeligt affald.</p>
+      <dl class="status">
+        <dt>Besluttet</dt><dd>Udvalget anbefaler 4 ugers offentlig høring.</dd>
+        <dt>Forventes</dt><dd>I kraft i 1. kvartal 2027. Ingen betydning for borgernes renovationstakst ifølge sagen.</dd>
+      </dl>
+      <p class="why"><b>Matchede</b> affald og genbrug. <a href="https://dagsordener.odense.dk/vis?Referat-Klima--og-Miljoeudvalget-2026-2029-d.06-10-2026-kl.08.30&amp;id=b5c35d26-3d60-4d6b-871d-04b7da140007">Læs hele sagen</a></p>
+    </article>
+
+    <article>
+      <p class="where">Klima- og Miljøudvalget, referat fra 6. oktober, pkt. 6</p>
+      <h2>DLF Seeds vil udvide i Højme: miljøvurdering sat i gang</h2>
+      <p>Virksomheden vil bygge lagerbygninger og et læsseområde ved Højmevej 12 på en grund, som kommunen ejer i dag. Der laves samtidig en lokalplan, og området skal overgå fra landzone til byzone. Projektet kræver, at yngle- og rasteområder for flagermus fjernes, og derfor skal det miljøvurderes.</p>
+      <dl class="status">
+        <dt>Besluttet</dt><dd>Udvalget satte miljøvurderingen i gang med en indledende offentlig høring.</dd>
+        <dt>Næste skridt</dt><dd>Udvalget får sagen igen før anden høring og ved den endelige tilladelse.</dd>
+      </dl>
+      <p class="why"><b>Matchede</b> erhvervsbyggeri. Sagen nævner også lokalplan og landzone. <a href="https://dagsordener.odense.dk/vis?Referat-Klima--og-Miljoeudvalget-2026-2029-d.06-10-2026-kl.08.30&amp;id=b5c35d26-3d60-4d6b-871d-04b7da140007">Læs hele sagen</a></p>
+    </article>
+
+    <article>
+      <p class="where">By- og Kulturudvalget, dagsorden for 7. oktober, pkt. 8</p>
+      <h2>Forslag om hårdere kurs mod ulovlig helårsbeboelse i kolonihaver</h2>
+      <p>Udvalgsformændene Lars Christian Lilleholt (V) og Søren Windell (C) foreslår at styrke kommunens kolonihaveindsats yderligere. De peger på ulovlig helårsbeboelse, overbebyggelse og socialt bedrageri. Byrådet afsatte allerede midler til en indsats i Budget 2026.</p>
+      <dl class="status">
+        <dt>Status</dt><dd>Initiativretsforslag på udvalgets dagsorden. Beslutningen kommer i referatet.</dd>
+        <dt>Vi følger</dt><dd>Du får besked, når referatet er offentliggjort.</dd>
+      </dl>
+      <p class="why"><b>Matchede</b> kolonihaver. <a href="https://dagsordener.odense.dk/vis?Dagsorden-By--og-Kulturudvalget-2026-2029-d.07-10-2026-kl.08.30&amp;id=970baaa3-006c-4208-86c6-fa7803672c03">Læs hele sagen</a></p>
+    </article>
+
+    <div class="also">
+      <h3>Også på dagsordenen i Odense</h3>
+      <ul>
+        <li>Byrådet, 7. oktober: 2. behandling af Budget 2027.</li>
+        <li>Klima- og Miljøudvalget, 6. oktober: evaluering af fodgænger- og cykelzoner ved skoler.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="foot">
+    Du får denne mail, fordi du følger 3 emner i Odense Kommune. Ret emner og kommuner, eller meld dig fra. Resuméerne er skrevet af Sagsvagt ud fra kommunens offentliggjorte dokumenter. Læs altid den originale sag, før du handler på den.
+  </div>
+</div>
+</body>
+</html>
