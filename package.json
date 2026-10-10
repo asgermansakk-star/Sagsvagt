@@ -1,0 +1,13 @@
+{
+  "name": "sagsvagt-avis",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hent": "node avis/hent-kk.mjs",
+    "byg": "node avis/byg.mjs",
+    "opdater": "node avis/hent-kk.mjs && node avis/byg.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

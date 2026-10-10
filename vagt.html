@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sagsvagt – få besked, når byrådet tager dit emne op</title>
+<meta name="description" content="Sagsvagt læser byråd, udvalg og lokaludvalg og sender dig de sager, der handler om det, du følger. Én mail hver mandag. Gratis i testperioden.">
+<meta name="theme-color" content="#0E0F14">
+<meta property="og:title" content="Sagsvagt – få besked, når byrådet tager dit emne op">
+<meta property="og:description" content="Vælg dine emner, og få de sager, politikerne behandler, i én mail hver mandag. Gratis i testperioden.">
+<meta property="og:image" content="assets/og-billede.png">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  /* Paletten "Vin og blæk": rød og blå blok mødes om sagen. Ingen hvid. */
+  :root {
+    --nat: #0E0F14; --grafit: #2A2B33; --kalk: #E6DFD3; --kalk-lys: #EEE8DE; --kalk-mork: #D9D1C3;
+    --muted: #56535A; --rule: #CFC6B8;
+    --bordeaux: #3E0E14; --vin: #8A2430; --rubin: #B04A50; --rosen: #DCA9A5;
+    --blaek: #0C1430; --indigo: #28377A; --skifer: #5D6BA8; --lyng: #B7BBD8;
+    --sans: "Montserrat", system-ui, sans-serif; --serif: "Source Serif 4", Georgia, serif;
+    --ease: cubic-bezier(.2,.7,.2,1);
+    --ease-spring: cubic-bezier(.34,1.4,.5,1);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body { margin: 0; background: var(--kalk); color: var(--nat); font: 400 1.0625rem/1.6 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: var(--indigo); }
+  :focus-visible { outline: 3px solid var(--skifer); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  h2 { font-weight: 700; font-size: clamp(1.9rem, 3.4vw, 2.75rem); letter-spacing: -.035em; line-height: 1.08; margin: 0 0 16px; }
+  .kicker { font-size: .8125rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--vin); margin: 0 0 12px; }
+  .lead { font-size: 1.125rem; color: var(--muted); max-width: 40em; margin: 0; }
+
+  /* ---------- Knapper ---------- */
+  .btn { display: inline-flex; align-items: center; gap: 10px; font: 700 1rem/1 var(--sans); text-decoration: none; border: 0; cursor: pointer;
+    padding: 15px 24px; border-radius: 99px; transition: transform .25s var(--ease), background .25s, box-shadow .25s; }
+  .btn:active { transform: scale(.97); }
+  .btn-kalk { background: var(--kalk); color: var(--nat); box-shadow: 0 10px 30px -12px rgba(0,0,0,.6); }
+  .btn-kalk:hover { background: var(--kalk-lys); transform: translateY(-2px); }
+  .btn-ghost { color: var(--kalk); background: rgba(230,223,211,.08); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.35); }
+  .btn-ghost:hover { background: rgba(230,223,211,.16); }
+  .btn-nat { background: var(--nat); color: var(--kalk); }
+  .btn-nat:hover { background: var(--grafit); transform: translateY(-2px); }
+  .btn svg { transition: transform .25s var(--ease); }
+  .btn:hover svg { transform: translateX(3px); }
+
+  /* ---------- Topbjælke ---------- */
+  .bar { position: fixed; inset: 0 0 auto; z-index: 50; transition: background .35s, box-shadow .35s, backdrop-filter .35s; }
+  .bar.scrolled { background: rgba(14,15,20,.78); backdrop-filter: blur(14px) saturate(1.3); -webkit-backdrop-filter: blur(14px) saturate(1.3); box-shadow: 0 1px 0 rgba(230,223,211,.08); }
+  .bar .wrap { display: flex; align-items: center; gap: 28px; height: 72px; }
+  .bar .logo { line-height: 0; margin-right: auto; } .bar .logo img { height: 44px; width: auto; margin-left: -10px; }
+  .bar nav { display: flex; gap: 24px; }
+  .bar nav a { color: rgba(230,223,211,.78); text-decoration: none; font-size: .9375rem; font-weight: 500; transition: color .2s; }
+  .bar nav a:hover { color: var(--kalk); }
+  .bar .btn { padding: 11px 18px; font-size: .9375rem; }
+
+  /* ---------- Hero: gradienten "Mødet", der lever ---------- */
+  .hero { position: relative; overflow: hidden; background: var(--nat); color: var(--kalk); padding: 132px 0 96px; isolation: isolate; }
+  .glow { position: absolute; border-radius: 50%; filter: blur(10px); z-index: -1; will-change: transform; }
+  .glow.blaa { width: 95vmax; height: 95vmax; left: -48vmax; top: -38vmax;
+    background: radial-gradient(closest-side, var(--skifer) 0%, var(--indigo) 38%, var(--blaek) 66%, transparent 100%);
+    animation: drift-b 18s ease-in-out infinite alternate; }
+  .glow.roed { width: 85vmax; height: 85vmax; right: -42vmax; bottom: -52vmax;
+    background: radial-gradient(closest-side, var(--rubin) 0%, var(--vin) 36%, var(--bordeaux) 64%, transparent 100%);
+    animation: drift-r 22s ease-in-out infinite alternate; }
+  /* Følger musen: gløderne glider, et svagt lys følger markøren, og logoet vipper */
+  .hero { --mx: 0; --my: 0; --sx: 50%; --sy: 40%; --so: 0; }
+  .glow.blaa { translate: calc(var(--mx) * 4vw) calc(var(--my) * 3vw); }
+  .glow.roed { translate: calc(var(--mx) * -3vw) calc(var(--my) * -2.5vw); }
+  .hero .spot { position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: var(--so); transition: opacity .8s var(--ease);
+    background: radial-gradient(520px circle at var(--sx) var(--sy), rgba(230,223,211,.09), rgba(183,187,216,.04) 40%, transparent 70%); }
+  .stage { perspective: 900px; }
+  .tilt { position: absolute; inset: 0; transform-style: preserve-3d;
+    transform: rotateX(calc(var(--my) * -11deg)) rotateY(calc(var(--mx) * 13deg)) translate3d(calc(var(--mx) * 10px), calc(var(--my) * 8px), 0); }
+  .stage .tilt .mark { filter: drop-shadow(calc(var(--mx) * -18px) calc(20px + var(--my) * -14px) 40px rgba(0,0,0,.45)); }
+  @keyframes drift-b { to { transform: translate(7vmax, 5vmax) scale(1.08); } }
+  @keyframes drift-r { to { transform: translate(-8vmax, -4vmax) scale(1.06); } }
+  .hero .grain { position: absolute; inset: 0; z-index: -1; opacity: .07; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 40px; align-items: center; }
+  .pill { display: inline-flex; align-items: center; gap: 8px; font-size: .8125rem; font-weight: 600; padding: 7px 14px 7px 10px; border-radius: 99px;
+    background: rgba(230,223,211,.1); box-shadow: inset 0 0 0 1px rgba(230,223,211,.2); margin-bottom: 26px; }
+  .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--rosen); box-shadow: 0 0 0 0 rgba(220,169,165,.7); animation: ping 2.2s infinite; }
+  @keyframes ping { 70%,100% { box-shadow: 0 0 0 9px rgba(220,169,165,0); } }
+  .hero h1 { font-weight: 700; font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.1; letter-spacing: -.045em; margin: 0 0 24px; }
+  .rot { position: relative; display: inline-block; white-space: nowrap; }
+  .rot-word { position: relative; display: inline-block; color: var(--hl, var(--rosen)); transition: opacity .5s var(--ease), transform .6s var(--ease), filter .5s, color .5s; }
+  .rot-word.out { opacity: 0; transform: translateY(-.35em); filter: blur(6px); }
+  .rot-word.in { opacity: 0; transform: translateY(.35em); filter: blur(6px); }
+  .hero .lead { color: rgba(230,223,211,.8); font-size: 1.1875rem; max-width: 34em; margin-bottom: 34px; }
+  .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+  .hero-note { margin: 22px 0 0; font-size: .875rem; color: rgba(230,223,211,.6); display: flex; gap: 18px; flex-wrap: wrap; }
+  .hero-note span::before { content: "✓ "; color: var(--lyng); font-weight: 700; }
+
+  /* Scenen: sager flyver ind i S'et, mailen kommer ud */
+  .stage { position: relative; aspect-ratio: 1 / 1; max-width: 520px; width: 100%; justify-self: end; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .stage .mark { position: absolute; left: 50%; top: 50%; width: 46%; transform: translate(-50%, -50%); filter: drop-shadow(0 20px 40px rgba(0,0,0,.45)); }
+  .mark .leaf { transform-box: fill-box; }
+  .mark.anim .l-roed { animation: meet-r 1.6s var(--ease) .3s both; }
+  .mark.anim .l-blaa { animation: meet-b 1.6s var(--ease) .3s both; }
+  @keyframes meet-r { from { opacity: 0; transform: translate(-22px, 20px); } to { opacity: 1; transform: none; } }
+  @keyframes meet-b { from { opacity: 0; transform: translate(22px, -20px); } to { opacity: 1; transform: none; } }
+
+  /* ---------- Afsnit ---------- */
+  section.s { padding: 112px 0; }
+  .s-head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 48px; }
+
+  /* ---------- Demo ---------- */
+  .demo { background: var(--kalk); }
+  .controls { background: var(--kalk-lys); border-radius: 24px; padding: 26px; box-shadow: 0 1px 0 rgba(0,0,0,.04); margin-bottom: 18px; }
+  .controls-top { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+  .controls h3 { margin: 0; font-size: 1rem; } .controls h3 span { color: var(--muted); font-weight: 500; }
+  .personas { display: flex; gap: 6px; flex-wrap: wrap; }
+  .persona { font: 600 .8125rem var(--sans); border: 0; cursor: pointer; padding: 8px 12px; border-radius: 99px; background: transparent; color: var(--muted);
+    box-shadow: inset 0 0 0 1px var(--rule); transition: all .2s; }
+  .persona:hover { color: var(--nat); box-shadow: inset 0 0 0 1px var(--nat); }
+  .persona.on { background: var(--nat); color: var(--kalk); box-shadow: none; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font: 600 .9375rem var(--sans); cursor: pointer; border: 0; padding: 11px 16px; border-radius: 99px; color: var(--nat); background: var(--kalk);
+    box-shadow: inset 0 0 0 1.5px var(--rule); display: inline-flex; align-items: center; gap: 8px; transition: transform .2s var(--ease-spring), background .2s, box-shadow .2s, color .2s; }
+  .chip:hover { transform: translateY(-2px); box-shadow: inset 0 0 0 1.5px var(--nat); }
+  .chip .n { font-size: .75rem; font-weight: 700; padding: 1px 7px; border-radius: 99px; background: var(--kalk-mork); color: var(--muted); transition: inherit; }
+  .chip[aria-pressed="true"] { background: var(--c); color: var(--cf); box-shadow: none; }
+  .chip[aria-pressed="true"] .n { background: rgba(14,15,20,.12); color: inherit; }
+  .chip.pop { animation: pop .4s var(--ease-spring); } @keyframes pop { 40% { transform: scale(1.08); } }
+  .search { position: relative; margin-top: 14px; max-width: 520px; }
+  .search input { width: 100%; font: 500 1rem var(--sans); color: var(--nat); background: var(--kalk); border: 0; box-shadow: inset 0 0 0 1.5px var(--rule);
+    border-radius: 14px; padding: 14px 16px 14px 46px; transition: box-shadow .2s; }
+  .search input:focus { outline: none; box-shadow: inset 0 0 0 2px var(--indigo); }
+  .sbox { position: relative; } .sbox svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
+  .search small { display: block; margin-top: 8px; line-height: 1.4; font-size: .8125rem; color: var(--muted); }
+
+  .demo-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 18px; align-items: start; }
+  .panel { background: var(--kalk-lys); border-radius: 24px; padding: 22px; position: relative; overflow: hidden; }
+  .panel-h { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 10px; }
+  .panel-h h3 { margin: 0; font-size: 1rem; } .panel-h span { font-size: .8125rem; color: var(--muted); }
+  .feed { list-style: none; margin: 0; padding: 0; position: relative; }
+  .feed li { display: grid; grid-template-columns: 54px 1fr; gap: 10px; padding: 9px 4px; border-bottom: 1px solid var(--rule); font-size: .875rem; line-height: 1.35;
+    transition: opacity .45s var(--ease), color .45s; }
+  .feed li:last-child { border-bottom: 0; }
+  .feed .d { color: var(--muted); font-size: .75rem; padding-top: 2px; font-variant-numeric: tabular-nums; }
+  .feed .t { position: relative; font-family: var(--serif); }
+  .feed .t mark { background: linear-gradient(transparent 10%, var(--hl) 10%, var(--hl) 90%, transparent 90%) no-repeat 0 0 / 0% 100%; color: inherit; padding: 0 2px; margin: 0 -2px;
+    transition: background-size .55s var(--ease); }
+  .feed li.hit .t mark { background-size: 100% 100%; }
+  .feed li.miss { opacity: .38; }
+  .feed .u { display: block; font-family: var(--sans); font-size: .6875rem; color: var(--muted); margin-top: 2px; }
+  .scan { position: absolute; left: 0; right: 0; height: 64px; top: -64px; pointer-events: none;
+    background: linear-gradient(180deg, transparent, rgba(93,107,168,.16) 60%, rgba(176,74,80,.22) 96%, transparent); }
+  .scan.go { animation: scan .9s var(--ease) forwards; } @keyframes scan { to { top: 100%; } }
+
+  .mail { background: var(--kalk-lys); border-radius: 24px; overflow: hidden; box-shadow: 0 30px 60px -36px rgba(14,15,20,.55); position: sticky; top: 92px; }
+  .mail-top { color: var(--kalk); padding: 18px 22px; display: flex; align-items: center; gap: 12px;
+    background: radial-gradient(80% 160% at 0% 0%, var(--skifer) 0%, var(--indigo) 22%, var(--blaek) 50%, transparent 72%), radial-gradient(70% 160% at 100% 100%, var(--rubin) 0%, var(--vin) 24%, var(--bordeaux) 50%, transparent 74%), var(--nat); }
+  .mail-top img { height: 30px; width: auto; }
+  .mail-top .meta { margin-left: auto; text-align: right; font-size: .75rem; line-height: 1.35; opacity: .85; }
+  .mail-body { padding: 20px 22px 8px; }
+  .mail-body h4 { margin: 0; font-size: 1.375rem; letter-spacing: -.03em; display: flex; align-items: baseline; gap: 10px; }
+  .big-n { font-variant-numeric: tabular-nums; color: var(--vin); min-width: 1.2ch; display: inline-block; }
+  .mail-body > p { margin: 4px 0 14px; color: var(--muted); font-size: .875rem; }
+  .cases { list-style: none; margin: 0; padding: 0; }
+  .case { border-top: 2px solid var(--nat); padding: 13px 0 15px; animation: rise .5s var(--ease) both; animation-delay: var(--delay, 0s); }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+  .case .where { font-size: .75rem; color: var(--muted); margin: 0 0 3px; }
+  .case h5 { margin: 0 0 5px; font: 600 1.0625rem/1.3 var(--serif); }
+  .case p { margin: 0 0 8px; font-size: .875rem; line-height: 1.55; color: #3E3B40; }
+  .case .why { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: .75rem; }
+  .tag { font-weight: 700; padding: 3px 9px; border-radius: 99px; background: var(--c); color: var(--cf); }
+  .case .why a { margin-left: auto; font-weight: 600; }
+  .empty { text-align: center; padding: 30px 10px 40px; color: var(--muted); font-size: .9375rem; }
+  .empty b { display: block; color: var(--nat); font-size: 1rem; margin-bottom: 4px; }
+  .mail-foot { padding: 14px 22px 20px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; border-top: 1px solid var(--rule); }
+  .mail-foot small { color: var(--muted); font-size: .75rem; max-width: 30ch; }
+
+  /* ---------- Sådan virker det ---------- */
+  .how { background: var(--kalk-lys); }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; position: relative; }
+  .track { position: absolute; left: 0; right: 0; top: 34px; height: 2px; background: var(--rule); border-radius: 2px; overflow: hidden; }
+  .track i { position: absolute; inset: 0; transform-origin: left; transform: scaleX(var(--p, 0)); background: linear-gradient(90deg, var(--skifer), var(--rubin)); }
+  .step { position: relative; }
+  .step .num { width: 68px; height: 68px; border-radius: 50%; display: grid; place-items: center; background: var(--kalk); box-shadow: inset 0 0 0 2px var(--rule);
+    font-weight: 700; font-size: 1.25rem; margin-bottom: 22px; transition: background .5s, color .5s, box-shadow .5s, transform .5s var(--ease-spring); }
+  .step.lit .num { background: var(--nat); color: var(--kalk); box-shadow: none; transform: scale(1.06); }
+  .step h3 { font-size: 1.25rem; letter-spacing: -.02em; margin: 0 0 8px; }
+  .step p { margin: 0; color: var(--muted); }
+  .vis { height: 128px; margin-top: 20px; border-radius: 18px; background: var(--kalk); position: relative; overflow: hidden; }
+  .vis-1 .c { position: absolute; padding: 6px 11px; border-radius: 99px; font-size: .75rem; font-weight: 700; background: var(--c); color: var(--cf);
+    opacity: 0; transform: scale(.6); transition: opacity .4s, transform .5s var(--ease-spring); }
+  .step.lit .vis-1 .c { opacity: 1; transform: none; }
+  .vis-2 .doc { position: absolute; width: 74px; height: 92px; border-radius: 8px; background: var(--kalk-lys); box-shadow: 0 6px 14px -6px rgba(0,0,0,.25);
+    top: 18px; padding: 12px 10px; }
+  .vis-2 .doc i { display: block; height: 4px; border-radius: 2px; background: var(--rule); margin-bottom: 7px; }
+  .vis-2 .doc i.h { background: var(--hl); }
+  .vis-2 .beam { position: absolute; top: 0; bottom: 0; width: 40px; left: -60px; background: linear-gradient(90deg, transparent, rgba(93,107,168,.35), transparent); }
+  .step.lit .vis-2 .beam { animation: beam 2.6s var(--ease) infinite; } @keyframes beam { to { left: 110%; } }
+  .vis-3 .env { position: absolute; left: 50%; top: 50%; width: 150px; transform: translate(-50%, 40%) ; opacity: 0; transition: transform .7s var(--ease-spring), opacity .4s;
+    background: var(--kalk-lys); border-radius: 12px; padding: 10px 12px; box-shadow: 0 12px 24px -12px rgba(0,0,0,.4); font-size: .6875rem; }
+  .vis-3 .env b { display: block; font-size: .75rem; }
+  .step.lit .vis-3 .env { transform: translate(-50%, -50%); opacity: 1; }
+  .vis-3 .badge { position: absolute; right: calc(50% - 86px); top: calc(50% - 44px); width: 26px; height: 26px; border-radius: 50%; background: var(--vin); color: var(--kalk);
+    font-size: .75rem; font-weight: 700; display: grid; place-items: center; transform: scale(0); transition: transform .5s var(--ease-spring) .5s; }
+  .step.lit .vis-3 .badge { transform: scale(1); }
+
+  /* ---------- Tal ---------- */
+  .stats { background: var(--nat); color: var(--kalk); padding: 76px 0; position: relative; overflow: hidden; }
+  .stats::before { content: ""; position: absolute; inset: 0; background: radial-gradient(60% 120% at 0% 0%, rgba(40,55,122,.6), transparent 60%), radial-gradient(60% 120% at 100% 100%, rgba(138,36,48,.55), transparent 60%); }
+  .stats .wrap { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+  .stat b { display: block; font-size: clamp(2.4rem, 4.5vw, 3.5rem); font-weight: 700; letter-spacing: -.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .stat > span { display: block; margin-top: 10px; color: rgba(230,223,211,.72); font-size: .9375rem; max-width: 22ch; }
+
+  /* ---------- Neutral ---------- */
+  .neutral .grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
+  .neutral .art { aspect-ratio: 1; border-radius: 32px; background: var(--kalk-lys); display: grid; place-items: center; position: relative; overflow: hidden; }
+  .neutral .art svg { width: 46%; }
+  .neutral .art .l-roed, .neutral .art .l-blaa { transition: transform 1.2s var(--ease-spring), opacity .8s; }
+  .neutral .art:not(.met) .l-roed { transform: translate(-70px, 60px); opacity: .35; }
+  .neutral .art:not(.met) .l-blaa { transform: translate(70px, -60px); opacity: .35; }
+  .neutral .art .lbl { position: absolute; font-size: .8125rem; font-weight: 700; padding: 6px 12px; border-radius: 99px; transition: all 1s var(--ease); }
+  .neutral .art .lbl.r { left: 9%; bottom: 12%; background: var(--rosen); color: var(--bordeaux); }
+  .neutral .art .lbl.b { right: 9%; top: 12%; background: var(--lyng); color: var(--blaek); }
+  .neutral .art.met .lbl { opacity: 0; transform: scale(.8); }
+  .neutral ul { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 14px; }
+  .neutral li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; }
+  .neutral li svg { margin-top: 2px; }
+
+  /* ---------- Tilmelding ---------- */
+  .signup { padding: 0 0 112px; }
+  .signup-card { position: relative; overflow: hidden; border-radius: 36px; color: var(--kalk); padding: 64px; isolation: isolate;
+    background: radial-gradient(80% 100% at 0% 25%, var(--skifer) 0%, var(--indigo) 25%, var(--blaek) 52%, transparent 74%), radial-gradient(75% 95% at 100% 100%, var(--rubin) 0%, var(--vin) 25%, var(--bordeaux) 52%, transparent 76%), var(--nat);
+    display: grid; grid-template-columns: .95fr 1.05fr; gap: 56px; }
+  .signup-card h2 { color: var(--kalk); }
+  .signup-card .lead { color: rgba(230,223,211,.78); }
+  .perks { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; font-size: .9375rem; }
+  .perks li::before { content: ""; display: inline-block; width: 18px; height: 18px; margin: 0 10px -3px 0; border-radius: 50%;
+    background: var(--kalk) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.5l2.5 2.5L13 6.5' fill='none' stroke='%230E0F14' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
+  form { display: grid; gap: 14px; align-content: start; }
+  .field { position: relative; }
+  .field input, .field select { width: 100%; font: 500 1rem var(--sans); color: var(--nat); background: var(--kalk-lys); border: 0; border-radius: 14px;
+    padding: 24px 16px 9px; box-shadow: inset 0 0 0 2px transparent; transition: box-shadow .2s; appearance: none; }
+  .field select { padding-top: 24px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2356535A' stroke-width='2'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; }
+  .field label { position: absolute; left: 16px; top: 16px; font-size: 1rem; color: #7A7570; pointer-events: none; transition: all .2s var(--ease); }
+  .field input:focus, .field select:focus { outline: none; box-shadow: inset 0 0 0 2px var(--lyng); }
+  .field input:focus + label, .field input:not(:placeholder-shown) + label, .field select + label { top: 7px; font-size: .6875rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  .field.bad input { box-shadow: inset 0 0 0 2px var(--rosen); animation: shake .4s; }
+  @keyframes shake { 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+  .picked { display: flex; flex-wrap: wrap; gap: 6px; min-height: 0; }
+  .picked .tag { display: inline-flex; align-items: center; gap: 6px; padding: 5px 6px 5px 11px; font-size: .8125rem; animation: pop .35s var(--ease-spring); }
+  .picked .tag button { border: 0; cursor: pointer; width: 18px; height: 18px; border-radius: 50%; background: rgba(14,15,20,.15); color: inherit; font-size: .75rem; line-height: 1; padding: 0; }
+  .picked-h { font-size: .75rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: rgba(230,223,211,.7); margin: 4px 0 -4px; }
+  .submit { justify-self: start; position: relative; }
+  .submit .spin { width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(14,15,20,.25); border-top-color: var(--nat); display: none; animation: spin .8s linear infinite; }
+  .submit.busy .spin { display: block; } .submit.busy svg { display: none; }
+  .form-msg { min-height: 1.5em; margin: 0; font-weight: 600; font-size: .9375rem; }
+  .form-msg.ok { color: var(--lyng); } .form-msg.err { color: var(--rosen); }
+  .form-note { margin: 0; font-size: .8125rem; color: rgba(230,223,211,.6); }
+  .done { display: none; text-align: center; align-content: center; gap: 10px; }
+  .done svg { width: 84px; margin: 0 auto 6px; } .done h3 { margin: 0; font-size: 1.5rem; letter-spacing: -.02em; } .done p { margin: 0; color: rgba(230,223,211,.78); }
+  .signup-card.ok form { display: none; } .signup-card.ok .done { display: grid; }
+
+  /* ---------- Spørgsmål ---------- */
+  .faq { max-width: 820px; }
+  .q { border-bottom: 1px solid var(--rule); }
+  .q button { all: unset; box-sizing: border-box; cursor: pointer; width: 100%; display: flex; justify-content: space-between; gap: 20px; padding: 22px 0; font-weight: 600; font-size: 1.0625rem; }
+  .q button:focus-visible { outline: 3px solid var(--skifer); }
+  .q .pm { flex: none; width: 26px; height: 26px; border-radius: 50%; box-shadow: inset 0 0 0 1.5px var(--rule); position: relative; transition: transform .35s var(--ease), background .3s; }
+  .q .pm::before, .q .pm::after { content: ""; position: absolute; left: 50%; top: 50%; width: 10px; height: 1.5px; background: var(--nat); transform: translate(-50%, -50%); }
+  .q .pm::after { transform: translate(-50%, -50%) rotate(90deg); transition: transform .35s var(--ease); }
+  .q.open .pm { background: var(--nat); transform: rotate(180deg); } .q.open .pm::before, .q.open .pm::after { background: var(--kalk); }
+  .q.open .pm::after { transform: translate(-50%, -50%) rotate(0); }
+  .q .a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .4s var(--ease); }
+  .q.open .a { grid-template-rows: 1fr; }
+  .q .a > div { overflow: hidden; } .q .a p { margin: 0 0 22px; color: var(--muted); max-width: 62ch; }
+
+  /* ---------- Fod ---------- */
+  footer { background: var(--nat); color: rgba(230,223,211,.7); font-size: .9375rem; }
+  footer .wrap { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; padding-top: 36px; padding-bottom: 40px; }
+  footer img { height: 38px; width: auto; margin-left: -8px; margin-right: auto; }
+  footer a { color: var(--kalk); text-decoration: none; } footer a:hover { text-decoration: underline; }
+
+  /* ---------- Indglidning ved scroll ---------- */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s var(--ease), transform .8s var(--ease); transition-delay: var(--d, 0s); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  /* ---------- Mobil ---------- */
+  @media (max-width: 960px) {
+    .hero-grid, .s-head, .demo-grid, .neutral .grid, .signup-card { grid-template-columns: 1fr; }
+    .stage { max-width: 420px; margin: 0 auto; }
+    .mail { position: relative; top: 0; }
+    .steps { grid-template-columns: 1fr; gap: 36px; } .track { display: none; }
+    .stats .wrap { grid-template-columns: 1fr 1fr; }
+    .signup-card { padding: 40px 28px; border-radius: 28px; }
+    .bar nav { display: none; }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 0 16px; }
+    .hero { padding: 112px 0 64px; }
+    section.s { padding: 80px 0; }
+    .controls, .panel { padding: 18px; border-radius: 20px; }
+    .signup-card { padding: 32px 20px; margin: 0 -4px; }
+    .stats .wrap { grid-template-columns: 1fr; }
+    .bar .logo img { height: 38px; }
+    }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+    .reveal { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Sagsvagt, til avisen"><img src="assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt"></a>
+    <nav aria-label="Hovedmenu">
+      <a href="index.html">Avisen</a>
+      <a href="#proev">Prøv det</a>
+      <a href="#saadan">Sådan virker det</a>
+      <a href="#spoergsmaal">Spørgsmål</a>
+    </nav>
+    <a class="btn btn-kalk" href="#tilmeld">Skriv dig op</a>
+  </div>
+</header>
+
+<main>
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="hero">
+    <div class="glow blaa" aria-hidden="true"></div>
+    <div class="glow roed" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="spot" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <span class="pill"><span class="dot"></span>Gratis i testperioden · København først</span>
+        <h1>Få besked, når byrådet tager <span class="rot" aria-live="polite"><span class="rot-word" id="rot">dit emne</span></span> op.</h1>
+        <p class="lead">Sagsvagt læser hvert eneste punkt på dagsordenerne i byråd, udvalg og lokaludvalg og sender dig de sager, der handler om det, du følger. Én mail hver mandag. Med link til kilden.</p>
+        <div class="ctas">
+          <a class="btn btn-kalk" href="#tilmeld">Skriv mig op gratis <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn-ghost" href="#proev">Prøv det på rigtige sager</a>
+        </div>
+        <p class="hero-note"><span>Ingen app</span><span>Afmeld med ét klik</span><span>Partineutral</span></p>
+      </div>
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="tilt"><svg class="mark anim" viewBox="44 16 168 224" xmlns="http://www.w3.org/2000/svg">
+          <path class="leaf l-roed" fill="#E6DFD3" fill-rule="evenodd" d="M51 231.1C66.2 215.4 74.7 194.5 74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C195.7 121.9 187.6 165.2 160.4 196.1C133.1 227 91.1 240.4 51 231.1Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/>
+          <path class="leaf l-blaa" fill="#E6DFD3" fill-rule="evenodd" d="M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/>
+        </svg></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= DEMO ======================= -->
+  <section class="s demo" id="proev">
+    <div class="wrap">
+      <div class="s-head reveal">
+        <div><p class="kicker">Prøv det</p><h2>Byg din mandagsmail på rigtige sager fra København.</h2></div>
+        <p class="lead">Herunder er 18 sager, som politikerne i Københavns Kommune har behandlet de seneste uger. Vælg dine emner, eller skriv dit eget ord, og se hvad der ville lande i din indbakke.</p>
+      </div>
+
+      <div class="controls reveal">
+        <div class="controls-top">
+          <h3>1 · Vælg dine emner <span>(eller vælg en rolle)</span></h3>
+          <div class="personas" role="group" aria-label="Vælg en rolle">
+            <button class="persona" data-p="politiker">Lokalpolitiker</button>
+            <button class="persona" data-p="journalist">Journalist</button>
+            <button class="persona" data-p="ejendom">Ejendom og byggeri</button>
+            <button class="persona" data-p="forening">Forening</button>
+          </div>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Emner"></div>
+        <div class="search">
+          <label for="q" class="sr">Søg på dit eget ord</label>
+          <div class="sbox">
+            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.5 12.5L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input id="q" type="search" placeholder="Skriv dit eget ord, fx cykel, skrald eller lokalplan" autocomplete="off">
+          </div>
+          <small id="qHint">Vi fanger også ord, der betyder det samme. Prøv "skrald" eller "regnvand".</small>
+        </div>
+      </div>
+
+      <div class="demo-grid">
+        <div class="panel reveal" style="--d:.05s">
+          <div class="panel-h"><h3>2 · Det, vi læste</h3><span id="feedMeta">18 punkter</span></div>
+          <div class="scan" id="scan"></div>
+          <ul class="feed" id="feed"></ul>
+        </div>
+        <div class="mail reveal" style="--d:.12s" aria-live="polite">
+          <div class="mail-top"><img src="assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt"><div class="meta">Til: dig<br>Mandag kl. 07.00</div></div>
+          <div class="mail-body">
+            <h4><span class="big-n" id="bigN">0</span> <span id="bigLbl">sager til dig</span></h4>
+            <p id="mailSub">Fra Københavns Kommune, de seneste uger.</p>
+            <ul class="cases" id="cases"></ul>
+          </div>
+          <div class="mail-foot">
+            <small>Hver sag har et kort resumé og et link til kommunens eget dokument.</small>
+            <a class="btn btn-nat" href="#tilmeld" id="toSignup">Få den hver mandag <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SÅDAN ======================= -->
+  <section class="s how" id="saadan">
+    <div class="wrap">
+      <div class="s-head reveal">
+        <div><p class="kicker">Sådan virker det</p><h2>Vi læser det hele. Du får det, der vedrører dig.</h2></div>
+        <p class="lead">Kommunerne lægger dagsordener og referater ud i hundredvis af PDF'er. Sagsvagt læser dem for dig og finder de punkter, der handler om dine emner, også når ordene er andre.</p>
+      </div>
+      <div class="steps" id="steps">
+        <div class="track"><i id="trackFill"></i></div>
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Vælg emner og kommuner</h3>
+          <p>Skriv de sager og ord, du holder øje med. Fx affald, cykelstier, en bestemt skole eller en lokalplan.</p>
+          <div class="vis vis-1" aria-hidden="true">
+            <span class="c" style="--c:var(--lyng);--cf:var(--blaek);left:8%;top:22%;transition-delay:.05s">Cykelstier</span>
+            <span class="c" style="--c:var(--rosen);--cf:var(--bordeaux);left:46%;top:16%;transition-delay:.15s">Lokalplan</span>
+            <span class="c" style="--c:var(--rosen);--cf:var(--bordeaux);left:14%;top:56%;transition-delay:.25s">Affald</span>
+            <span class="c" style="--c:var(--lyng);--cf:var(--blaek);left:52%;top:58%;transition-delay:.35s">Skybrud</span>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Vi læser alt, der bliver lagt ud</h3>
+          <p>Byråd, udvalg og lokaludvalg. Hvert punkt bliver læst og sammenholdt med dine emner, også synonymer.</p>
+          <div class="vis vis-2" aria-hidden="true">
+            <div class="doc" style="left:8%"><i></i><i style="width:70%"></i><i class="h" style="--hl:var(--lyng)"></i><i style="width:80%"></i><i></i></div>
+            <div class="doc" style="left:36%;top:12px"><i style="width:60%"></i><i></i><i></i><i class="h" style="--hl:var(--rosen);width:75%"></i><i></i></div>
+            <div class="doc" style="left:64%;top:22px"><i></i><i style="width:85%"></i><i></i><i style="width:50%"></i><i></i></div>
+            <div class="beam"></div>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Én mail hver mandag</h3>
+          <p>Kort resumé af hver sag, hvad der skal besluttes, hvornår, og et link til kommunens eget dokument.</p>
+          <div class="vis vis-3" aria-hidden="true">
+            <div class="env"><b>Dine sager i uge 42</b>Klima-, Miljø- og Teknikudvalget · Lokaludvalg · Borgerrepræsentationen</div>
+            <span class="badge">4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= TAL ======================= -->
+  <section class="stats" aria-label="Sagsvagt i tal">
+    <div class="wrap">
+      <div class="stat reveal"><b data-count="402">0</b><span>punkter fra Københavns politikere læst indtil nu</span></div>
+      <div class="stat reveal" style="--d:.08s"><b data-count="98">0</b><span>kommuner, vi bygger Sagsvagt til</span></div>
+      <div class="stat reveal" style="--d:.16s"><b data-count="1">0</b><span>mail om ugen, mandag kl. 07.00</span></div>
+      <div class="stat reveal" style="--d:.24s"><b><span data-count="0">0</span> kr.</b><span>mens vi tester. Du bestemmer selv, om du fortsætter.</span></div>
+    </div>
+  </section>
+
+  <!-- ======================= NEUTRAL ======================= -->
+  <section class="s neutral">
+    <div class="wrap grid">
+      <div class="art reveal" id="art" aria-hidden="true">
+        <span class="lbl r">Rød blok</span><span class="lbl b">Blå blok</span>
+        <svg viewBox="44 16 168 224" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="moedet-g" gradientUnits="userSpaceOnUse" x1="70" y1="20" x2="186" y2="236"><stop offset="0" stop-color="#5D6BA8"/><stop offset=".38" stop-color="#28377A"/><stop offset=".62" stop-color="#8A2430"/><stop offset="1" stop-color="#B04A50"/></linearGradient></defs>
+          <path class="l-roed" fill="url(#moedet-g)" fill-rule="evenodd" d="M51 231.1C66.2 215.4 74.7 194.5 74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C195.7 121.9 187.6 165.2 160.4 196.1C133.1 227 91.1 240.4 51 231.1Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/>
+          <path class="l-blaa" fill="url(#moedet-g)" fill-rule="evenodd" d="M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/>
+        </svg>
+      </div>
+      <div class="reveal" style="--d:.1s">
+        <p class="kicker">Partineutral</p>
+        <h2>Rød og blå blok mødes om sagen. Det gør vi også.</h2>
+        <p class="lead">S'et i vores logo er to parter, der rækker ud mod hinanden. Sagsvagt tager ikke parti. Vi læser alt, der står på dagsordenen, uanset hvem der har sat det der.</p>
+        <ul>
+          <li><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13" fill="#B7BBD8"/><path d="M8.5 14.5l3.5 3.5 7.5-8" fill="none" stroke="#0C1430" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Kun offentlige kilder.</b> Kommunernes egne dagsordener og referater. Hver sag linker til originalen.</span></li>
+          <li><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13" fill="#DCA9A5"/><path d="M8.5 14.5l3.5 3.5 7.5-8" fill="none" stroke="#3E0E14" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Resuméer, ikke holdninger.</b> Vi fortæller, hvad der skal besluttes, ikke hvad du skal mene om det.</span></li>
+          <li><svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="13" fill="#B7BBD8"/><path d="M8.5 14.5l3.5 3.5 7.5-8" fill="none" stroke="#0C1430" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Ingen persondata om borgere.</b> Vi gemmer ikke navne på privatpersoner fra sagerne.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= TILMELDING ======================= -->
+  <section class="signup" id="tilmeld">
+    <div class="wrap">
+      <div class="signup-card reveal">
+        <div>
+          <p class="kicker" style="color:var(--rosen)">Skriv dig op</p>
+          <h2>Få de første mails gratis.</h2>
+          <p class="lead">Vi åbner kommune for kommune, og København er først. Skriv dig op nu, så får du besked, når din kommune er klar.</p>
+          <ul class="perks">
+            <li>Gratis, mens vi tester</li>
+            <li>Én mail om ugen, ingen spam</li>
+            <li>Afmeld med ét klik, når som helst</li>
+          </ul>
+        </div>
+        <form id="form" novalidate>
+          <div class="field"><input id="email" name="email" type="email" autocomplete="email" placeholder=" " required><label for="email">Din e-mail</label></div>
+          <div class="field"><input id="kommuner" name="kommuner" type="text" placeholder=" " value="København"><label for="kommuner">Kommuner du vil følge</label></div>
+          <p class="picked-h" id="pickedH" hidden>Dine emner fra demoen</p>
+          <div class="picked" id="picked"></div>
+          <div class="field"><input id="emner" name="emner" type="text" placeholder=" "><label for="emner">Andre emner eller ord (valgfrit)</label></div>
+          <div class="field">
+            <select id="rolle" name="rolle">
+              <option value="">Vælg …</option>
+              <option>Lokalpolitiker</option><option>Journalist</option><option>Ejendom, byggeri eller rådgivning</option>
+              <option>Forening eller interesseorganisation</option><option>Public affairs eller kommunikation</option><option>Borger</option><option>Andet</option>
+            </select><label for="rolle">Jeg er</label>
+          </div>
+          <button class="btn btn-kalk submit" type="submit"><span>Skriv mig op</span><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><i class="spin"></i></button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+          <p class="form-note">Vi bruger kun din e-mail til Sagsvagt. Spørgsmål? Skriv til <a href="mailto:mansa@sagsvagt.dk" style="color:var(--kalk)">mansa@sagsvagt.dk</a>.</p>
+        </form>
+        <div class="done" aria-live="polite">
+          <svg viewBox="44 16 168 224" aria-hidden="true">
+            <path class="leaf l-roed" fill="#E6DFD3" fill-rule="evenodd" d="M51 231.1C66.2 215.4 74.7 194.5 74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C195.7 121.9 187.6 165.2 160.4 196.1C133.1 227 91.1 240.4 51 231.1Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/>
+            <path class="leaf l-blaa" fill="#E6DFD3" fill-rule="evenodd" d="M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/>
+          </svg>
+          <h3>Du er skrevet op.</h3>
+          <p>Vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SPØRGSMÅL ======================= -->
+  <section class="s" id="spoergsmaal" style="padding-top:0">
+    <div class="wrap">
+      <p class="kicker reveal">Spørgsmål</p>
+      <h2 class="reveal">Det, folk plejer at spørge om</h2>
+      <div class="faq reveal" id="faq">
+        <div class="q"><button aria-expanded="false">Hvor kommer oplysningerne fra?<span class="pm"></span></button><div class="a"><div><p>Fra kommunernes egne, offentligt tilgængelige dagsordener og referater. Hver sag i mailen linker til det originale dokument, så du altid kan læse hele sagen.</p></div></div></div>
+        <div class="q"><button aria-expanded="false">Hvilke kommuner er med?<span class="pm"></span></button><div class="a"><div><p>Vi starter med København: Borgerrepræsentationen, de stående udvalg og lokaludvalgene. Derefter udvider vi efter, hvad brugerne efterspørger. Skriv de kommuner, du vil følge, når du tilmelder dig, så kommer de først i køen.</p></div></div></div>
+        <div class="q"><button aria-expanded="false">Hvordan finder I de rigtige sager?<span class="pm"></span></button><div class="a"><div><p>Vi søger ikke kun efter præcis de ord, du skriver. En sag om "VE-anlæg" bliver også fanget, hvis du følger solceller, og "byplan" fanges, hvis du følger lokalplaner. Du kan prøve det i demoen længere oppe.</p></div></div></div>
+        <div class="q"><button aria-expanded="false">Hvad koster det?<span class="pm"></span></button><div class="a"><div><p>Intet, mens vi tester. Bagefter bliver det et abonnement. Du får besked i god tid, og du beslutter selv, om du vil fortsætte.</p></div></div></div>
+        <div class="q"><button aria-expanded="false">Hvornår starter det?<span class="pm"></span></button><div class="a"><div><p>De første mails sendes til testbrugerne i København i løbet af de kommende uger. Du får en mail, når din kommune er klar.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt">
+    <a href="index.html">Avisen</a><a href="eksempel.html">Eksempel på en mail</a><a href="om.html">Om Sagsvagt</a>
+    <a href="mailto:mansa@sagsvagt.dk">mansa@sagsvagt.dk</a>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  /* ---------- Emner (rød og blå på skift) og synonymer ---------- */
+  const R = { c: "var(--rosen)", cf: "var(--bordeaux)", hl: "var(--rosen)" }, B = { c: "var(--lyng)", cf: "var(--blaek)", hl: "var(--lyng)" };
+  const EMNER = {
+    affald:  { navn: "Affald", ...R, ord: ["affald", "skrald", "renovation", "genbrug", "tømning", "skraldespand", "madaffald"] },
+    trafik:  { navn: "Trafik og cykler", ...B, ord: ["trafik", "cykel", "cykelsti", "cykler", "vej", "bil", "bus", "metro", "gågade", "parkering", "fortov", "trafiksikkerhed"] },
+    klima:   { navn: "Klima og grønt", ...R, ord: ["klima", "skybrud", "regnvand", "træ", "træer", "natur", "grøn", "park", "tudse", "kloak"] },
+    bolig:   { navn: "Boliger", ...B, ord: ["bolig", "boliger", "studiebolig", "lejlighed", "senior", "almen", "rækkehus"] },
+    byggeri: { navn: "Byggeri og lokalplaner", ...R, ord: ["byggeri", "lokalplan", "byplan", "servitut", "rækkehuse", "byggesag", "bevaring"] },
+    skole:   { navn: "Skoler og børn", ...B, ord: ["skole", "skoler", "specialskole", "dagtilbud", "børnehave", "vuggestue", "børn", "institution"] },
+    budget:  { navn: "Budget", ...R, ord: ["budget", "økonomi", "bevilling", "penge", "pulje", "skat"] },
+    kultur:  { navn: "Kultur", ...B, ord: ["kultur", "bibliotek", "biblioteker", "kunst", "fritid", "borgermøde"] },
+  };
+  const KK = "https://www.kk.dk/dagsordener-og-referater/";
+  const SAGER = [
+    { e: ["affald"], d: "28. sep.", u: "Klima-, Miljø- og Teknikudvalget", t: "Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027", r: "Efter forsøg i villaer i 2025 og 2026 skal mad- og restaffald tømmes hver 14. dag i stedet for hver uge.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-28092026/referat/punkt-10" },
+    { e: ["trafik"], d: "30. sep.", u: "Christianshavns Lokaludvalg", t: "Høringssvar om udkast til Trafik- og Byrumsplan Amager", r: "Lokaludvalget godkender sit høringssvar til forvaltningens udkast til en ny trafik- og byrumsplan for Amager.", k: "Christianshavns%20Lokaludvalg/m%C3%B8de-30092026/referat/punkt-7" },
+    { e: ["trafik"], d: "24. sep.", u: "Brønshøj-Husum Lokaludvalg", t: "Udtalelse om forsøg med midlertidig lukning af Brønshøj Kirkevej", r: "Lokaludvalget udtaler sig om et forsøg med at lukke Brønshøj Kirkevej midlertidigt.", k: "Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-14" },
+    { e: ["trafik", "klima"], d: "8. okt.", u: "Indre By Lokaludvalg", t: "Henvendelse om fossilfri og sikker trafik på cykelstierne i Indre By", r: "Lokaludvalget skal godkende en henvendelse til Klima-, Miljø- og Teknikudvalget om fossilfri og sikker trafik på cykelstierne.", k: "Indre%20By%20Lokaludvalg/m%C3%B8de-08102026/dagsorden/punkt-8" },
+    { e: ["klima", "budget"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Forhøjelse af klimabevilling for skybrudsprojekter i Lersøparken", r: "Borgerrepræsentationen skal tage stilling til en større klimabevilling, så skybrudsprojektet i Lersøparken kan gennemføres.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-2" },
+    { e: ["klima"], d: "24. sep.", u: "Bispebjerg Lokaludvalg", t: "Høring vedr. skybrudsprojekt ved Lundehus Kirke", r: "Forvaltningen har sendt fem skybrudsprojekter i høring. Lokaludvalget giver forpersonskabet mandat til at skrive høringssvaret.", k: "Bispebjerg%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-10" },
+    { e: ["klima"], d: "28. sep.", u: "Klima-, Miljø- og Teknikudvalget", t: "Fældning af træer i Tingbjerg", r: "HOFOR skal lægge ny kloak i Tingbjerg, og 138 træer skal fældes, heraf 28 bevaringsværdige. De genplantes bagefter.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-28092026/referat/punkt-2" },
+    { e: ["trafik", "klima"], d: "8. okt.", u: "Borgerrepræsentationen", t: "Metro M5: høring om miljøkonsekvensrapport og grønbroget tudse", r: "Metroselskabet søger tilladelser, så eventuelle fund af den beskyttede grønbrogede tudse kan håndteres under byggeriet af M5.", k: "Borgerrepr%C3%A6sentationen/m%C3%B8de-08102026/referat/punkt-4" },
+    { e: ["bolig"], d: "30. sep.", u: "Christianshavns Lokaludvalg", t: "Forlængelse af tilladelse til 84 midlertidige studieboliger på Refshaleøen", r: "Lokaludvalget tager sit høringssvar om at forlænge tilladelsen til 84 studieboliger på Refshaleøen til efterretning.", k: "Christianshavns%20Lokaludvalg/m%C3%B8de-30092026/referat/punkt-18" },
+    { e: ["bolig"], d: "6. okt.", u: "Sundheds- og Omsorgsudvalget", t: "Principper for valg af Senior Plus Boligområde", r: "Udvalget skal godkende de kriterier, der afgør, hvor kommunens Senior Plus Boligområder skal ligge.", k: "Sundheds-%20og%20Omsorgsudvalget/m%C3%B8de-06102026/referat/punkt-2" },
+    { e: ["byggeri"], d: "24. sep.", u: "Vanløse Lokaludvalg", t: "Indledende høring om tillæg til byplan 85 Bellahøjvej", r: "Høring om bevaring af en bygning på Himmerlandsvej 8 med en tilhørende ny lokalplan.", k: "Vanl%C3%B8se%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-9" },
+    { e: ["byggeri", "bolig"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Erhverv bliver til rækkehuse på Ålholmvej 55, Valby", r: "Udvalget skal tage stilling til, om en villaservitut om antal boliger pr. etage kan fraviges, så erhverv kan blive til rækkehuse.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-9" },
+    { e: ["budget"], d: "1. okt.", u: "Borgerrepræsentationen", t: "Andenbehandling af budgetforslag 2027 og overslagsårene 2028–2030", r: "Borgerrepræsentationens anden og endelige behandling af Københavns budget for 2027.", k: "Borgerrepr%C3%A6sentationen/m%C3%B8de-01102026/referat/punkt-6" },
+    { e: ["skole", "budget"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Optakt til udmøntning af Budget 2027", r: "Udvalget drøfter, hvordan budgetaftalen for 2027 skal omsættes på børne- og ungeområdet.", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-2" },
+    { e: ["skole"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Handleplanskoncept for specialskoler", r: "Udvalget behandler et koncept for handleplaner på kommunens specialskoler.", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-4" },
+    { e: ["skole"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Opfølgning på udvidet åbningstid og weekendåbent i dagtilbud", r: "Opfølgning på længere åbningstid og weekendåbent i kommunens dagtilbud.", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-5" },
+    { e: ["kultur"], d: "24. sep.", u: "Vanløse Lokaludvalg", t: "Borgermøde om bibliotekerne i Københavns Kommune", r: "Vanløse Lokaludvalg bliver medarrangør af et borgermøde om kommunens biblioteker sammen med Amager Vest.", k: "Vanl%C3%B8se%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-17" },
+    { e: ["trafik"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Nordlige del af Badstuestræde som sekundær gågade", r: "Medlemsforslag om, at forvaltningen laver et forslag om at gøre den nordlige del af Badstuestræde op mod Strøget til gågade.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-15" },
+  ];
+  const PERSONER = { politiker: ["budget", "skole", "klima"], journalist: ["trafik", "bolig", "budget"], ejendom: ["byggeri", "bolig"], forening: ["klima", "kultur"] };
+
+  const valgt = new Set(["trafik", "klima"]);
+  let fritekst = "";
+
+  /* ---------- Emne-knapper ---------- */
+  const chipsEl = $("#chips");
+  for (const [id, e] of Object.entries(EMNER)) {
+    const n = SAGER.filter((s) => s.e.includes(id)).length;
+    const b = document.createElement("button");
+    b.className = "chip"; b.dataset.id = id; b.type = "button";
+    b.style.setProperty("--c", e.c); b.style.setProperty("--cf", e.cf);
+    b.innerHTML = `${esc(e.navn)} <span class="n">${n}</span>`;
+    b.addEventListener("click", () => { valgt.has(id) ? valgt.delete(id) : valgt.add(id); b.classList.remove("pop"); void b.offsetWidth; b.classList.add("pop"); $$(".persona").forEach((p) => p.classList.remove("on")); update(); });
+    chipsEl.append(b);
+  }
+  $$(".persona").forEach((p) => p.addEventListener("click", () => {
+    valgt.clear(); PERSONER[p.dataset.p].forEach((x) => valgt.add(x));
+    $$(".persona").forEach((x) => x.classList.toggle("on", x === p)); update();
+  }));
+  let qT; $("#q").addEventListener("input", (e) => { clearTimeout(qT); qT = setTimeout(() => { fritekst = e.target.value.trim().toLowerCase(); update(); }, 160); });
+
+  /* ---------- Matchning ---------- */
+  function match(s) {
+    const via = [];
+    for (const id of s.e) if (valgt.has(id)) via.push({ id, ord: null });
+    if (fritekst.length >= 3) {
+      const hay = (s.t + " " + s.r).toLowerCase();
+      for (const id of s.e) {
+        const hitOrd = EMNER[id].ord.find((o) => o.startsWith(fritekst) || fritekst.startsWith(o));
+        if (hitOrd && !via.some((v) => v.id === id)) via.push({ id, ord: fritekst });
+      }
+      if (!via.length && hay.includes(fritekst)) via.push({ id: s.e[0], ord: fritekst, direkte: true });
+    }
+    return via;
+  }
+
+  /* ---------- Listen over alt, vi læste ---------- */
+  const feed = $("#feed");
+  SAGER.forEach((s, i) => {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="d">${esc(s.d)}</span><span class="t"><mark>${esc(s.t)}</mark><span class="u">${esc(s.u)}</span></span>`;
+    li.style.setProperty("--hl", EMNER[s.e[0]].hl);
+    feed.append(li);
+  });
+
+  /* ---------- Opdater demo, mail og formular ---------- */
+  let shown = 0;
+  function countTo(el, to) {
+    const from = +el.textContent || 0;
+    if (reduce || from === to) { el.textContent = to; return; }
+    const t0 = performance.now(), dur = 500, id = (el._n = (el._n || 0) + 1);
+    const step = (t) => { if (el._n !== id) return; const p = Math.min(1, (t - t0) / dur); el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+    setTimeout(() => { if (el._n === id) el.textContent = to; }, dur + 80); // også når fanen er skjult og animationer er sat på pause
+  }
+  function update() {
+    $$(".chip").forEach((c) => c.setAttribute("aria-pressed", valgt.has(c.dataset.id)));
+    const hits = SAGER.map((s) => ({ s, via: match(s) })).filter((h) => h.via.length);
+    // skanner-linjen
+    const scan = $("#scan"); scan.classList.remove("go"); void scan.offsetWidth; scan.classList.add("go");
+    [...feed.children].forEach((li, i) => {
+      const hit = hits.some((h) => h.s === SAGER[i]);
+      const delay = reduce ? 0 : 60 + i * 38;
+      setTimeout(() => { li.classList.toggle("hit", hit); li.classList.toggle("miss", !hit && (valgt.size || fritekst)); }, delay);
+    });
+    $("#feedMeta").textContent = `${SAGER.length} punkter · ${hits.length} fundet`;
+    // mailen
+    countTo($("#bigN"), hits.length);
+    $("#bigLbl").textContent = hits.length === 1 ? "sag til dig" : "sager til dig";
+    const cases = $("#cases");
+    if (!hits.length) {
+      cases.innerHTML = `<li class="empty"><b>Ingen sager endnu</b>Vælg et emne eller skriv et ord, så bygger vi din mail.</li>`;
+    } else {
+      cases.innerHTML = hits.map((h, i) => {
+        const tags = h.via.map((v) => { const e = EMNER[v.id]; return `<span class="tag" style="--c:${e.c};--cf:${e.cf}">${esc(e.navn)}${v.ord ? ` · "${esc(v.ord)}"` : ""}</span>`; }).join("");
+        return `<li class="case" style="--delay:${reduce ? 0 : i * 0.05}s"><p class="where">${esc(h.s.u)} · ${esc(h.s.d)}</p><h5>${esc(h.s.t)}</h5><p>${esc(h.s.r)}</p>
+          <div class="why"><span style="color:var(--muted)">Matchede</span>${tags}<a href="${KK + h.s.k}" target="_blank" rel="noopener">Læs sagen</a></div></li>`;
+      }).join("");
+    }
+    // formularen: valgte emner følger med
+    const picked = $("#picked"); const liste = [...valgt].map((id) => EMNER[id]);
+    picked.innerHTML = [...valgt].map((id) => `<span class="tag" style="--c:${EMNER[id].c};--cf:${EMNER[id].cf}">${esc(EMNER[id].navn)}<button type="button" aria-label="Fjern ${esc(EMNER[id].navn)}" data-id="${id}">✕</button></span>`).join("");
+    $("#pickedH").hidden = !valgt.size;
+    picked.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => { valgt.delete(b.dataset.id); update(); }));
+    if (fritekst && !$("#emner").dataset.touched) $("#emner").value = fritekst;
+    shown = hits.length;
+  }
+  $("#emner").addEventListener("input", (e) => (e.target.dataset.touched = "1"));
+  update();
+
+  /* ---------- Hero: roterende ord ---------- */
+  const ORD = [["dit emne", "var(--rosen)"], ["affald", "var(--lyng)"], ["cykelstierne", "var(--rosen)"], ["skybrud", "var(--lyng)"], ["din skole", "var(--rosen)"], ["lokalplanen", "var(--lyng)"], ["budgettet", "var(--rosen)"]];
+  const rot = $("#rot"); let ri = 0;
+  if (!reduce) setInterval(() => {
+    rot.classList.add("out");
+    setTimeout(() => {
+      ri = (ri + 1) % ORD.length; rot.textContent = ORD[ri][0]; rot.style.setProperty("--hl", ORD[ri][1]);
+      rot.classList.remove("out"); rot.classList.add("in");
+      requestAnimationFrame(() => requestAnimationFrame(() => rot.classList.remove("in")));
+    }, 500);
+  }, 4800);
+
+  /* ---------- Hero: følger musen ---------- */
+  const hero = $("#hero");
+  if (!reduce && matchMedia("(pointer: fine)").matches) {
+    const tgt = { x: 0, y: 0 }, cur = { x: 0, y: 0 }; let raf = 0;
+    const tick = () => {
+      cur.x += (tgt.x - cur.x) * 0.07; cur.y += (tgt.y - cur.y) * 0.07;
+      hero.style.setProperty("--mx", cur.x.toFixed(4)); hero.style.setProperty("--my", cur.y.toFixed(4));
+      raf = Math.abs(tgt.x - cur.x) + Math.abs(tgt.y - cur.y) > 0.001 ? requestAnimationFrame(tick) : 0;
+    };
+    const go = () => { if (!raf) raf = requestAnimationFrame(tick); };
+    hero.addEventListener("pointermove", (e) => {
+      const r = hero.getBoundingClientRect();
+      tgt.x = ((e.clientX - r.left) / r.width) * 2 - 1; tgt.y = ((e.clientY - r.top) / r.height) * 2 - 1;
+      hero.style.setProperty("--sx", `${e.clientX - r.left}px`); hero.style.setProperty("--sy", `${e.clientY - r.top}px`);
+      hero.style.setProperty("--so", 1); go();
+    });
+    hero.addEventListener("pointerleave", () => { tgt.x = 0; tgt.y = 0; hero.style.setProperty("--so", 0); go(); });
+  }
+
+  /* ---------- Topbjælke ---------- */
+  const bar = $("#bar");
+  const onScroll = () => bar.classList.toggle("scrolled", scrollY > 24);
+  addEventListener("scroll", onScroll, { passive: true }); onScroll();
+
+  /* ---------- Indglidning, trin og tal ---------- */
+  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.15, rootMargin: "0px 0px -6% 0px" });
+  $$(".reveal").forEach((el) => io.observe(el));
+  const stepsIo = new IntersectionObserver((es) => es.forEach((e) => e.target.classList.toggle("lit", e.isIntersecting)), { threshold: 0.6 });
+  $$(".step").forEach((el) => stepsIo.observe(el));
+  const steps = $("#steps"), fill = $("#trackFill");
+  const onSteps = () => { const r = steps.getBoundingClientRect(), vh = innerHeight; const p = Math.min(1, Math.max(0, (vh * 0.85 - r.top) / (r.height + vh * 0.3))); fill.style.setProperty("--p", p.toFixed(3)); };
+  addEventListener("scroll", onSteps, { passive: true }); onSteps();
+  const numIo = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { countTo(e.target, +e.target.dataset.count); numIo.unobserve(e.target); } }), { threshold: 0.6 });
+  $$("[data-count]").forEach((el) => { el.textContent = reduce ? el.dataset.count : 0; if (!reduce) numIo.observe(el); });
+  const art = $("#art");
+  new IntersectionObserver(([e]) => art.classList.toggle("met", e.intersectionRatio > 0.55), { threshold: [0, 0.55, 1] }).observe(art);
+
+  /* ---------- Spørgsmål ---------- */
+  $$(".q button").forEach((b) => b.addEventListener("click", () => { const q = b.parentElement, open = !q.classList.contains("open"); q.classList.toggle("open", open); b.setAttribute("aria-expanded", open); }));
+
+  /* ---------- Tilmelding ---------- */
+  // Tilmeldinger sendes via FormSubmit til mansa@sagsvagt.dk. Første tilmelding udløser en aktiveringsmail.
+  const FORM_ENDPOINT = "https://formsubmit.co/ajax/mansa@sagsvagt.dk";
+  const form = $("#form"), msg = $(".form-msg", form), btn = $(".submit", form), card = $(".signup-card");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = form.email.value.trim(), f = form.email.parentElement;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      f.classList.remove("bad"); void f.offsetWidth; f.classList.add("bad");
+      msg.className = "form-msg err"; msg.textContent = "Skriv en gyldig e-mailadresse, fx navn@eksempel.dk."; form.email.focus(); return;
+    }
+    f.classList.remove("bad");
+    const data = Object.fromEntries(new FormData(form));
+    data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
+    data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table";
+    btn.disabled = true; btn.classList.add("busy"); msg.className = "form-msg"; msg.textContent = "";
+    try {
+      const res = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
+      const out = await res.json().catch(() => ({}));
+      if (!res.ok || String(out.success) === "false") throw new Error(out.message || res.status);
+      card.classList.add("ok"); $(".done svg", card).classList.add("mark", "anim");
+    } catch (err) {
+      console.warn("Tilmelding fejlede:", err.message);
+      msg.className = "form-msg err";
+      msg.textContent = /activ/i.test(err.message)
+        ? "Tilmeldingen er ikke åbnet endnu. Prøv igen om lidt, eller skriv til mansa@sagsvagt.dk."
+        : "Tilmeldingen gik ikke igennem. Prøv igen, eller skriv til mansa@sagsvagt.dk.";
+    } finally { btn.disabled = false; btn.classList.remove("busy"); }
+  });
+})();
+</script>
+</body>
+</html>

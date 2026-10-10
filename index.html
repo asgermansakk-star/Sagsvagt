@@ -3,382 +3,115 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sagsvagt – få besked, når byrådet tager dit emne op</title>
-<meta name="description" content="Sagsvagt læser dagsordener fra danske kommuner hver uge og sender dig de punkter, der handler om det, du følger.">
+<title>Sagsvagt – nyt fra byråd og udvalg i København</title>
+<meta name="description" content="Det, politikerne i Københavns Kommune har besluttet og skal tage stilling til. Fra Borgerrepræsentationen, udvalgene og lokaludvalgene, hentet fra de officielle referater.">
+<link rel="canonical" href="https://sagsvagt.dk/">
+<meta name="theme-color" content="#0E0F14">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sagsvagt – nyt fra byråd og udvalg i København">
+<meta property="og:description" content="Det, politikerne i Københavns Kommune har besluttet og skal tage stilling til. Fra Borgerrepræsentationen, udvalgene og lokaludvalgene, hentet fra de officielle referater.">
+<meta property="og:url" content="https://sagsvagt.dk/">
+<meta property="og:image" content="https://sagsvagt.dk/assets/og-billede.png">
+<meta property="og:locale" content="da_DK">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --paper: #F5F7FA;
-    --sheet: #FFFFFF;
-    --ink: #18212E;
-    --muted: #586274;
-    --rule: #D8DEE7;
-    --blue: #2B4A7E;
-    --marker: #F6E05E;
-    --ok: #2F6B4F;
-    --sans: "Public Sans", system-ui, sans-serif;
-    --serif: "Source Serif 4", Georgia, serif;
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--ink);
-    font: 400 1.0625rem/1.55 var(--sans);
-    -webkit-font-smoothing: antialiased;
-  }
-  a { color: var(--blue); }
-  :focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
-
-  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-
-  /* Top bar */
-  .top { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; }
-  .logo { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.125rem; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
-  .logo svg { flex: none; }
-  .top a.join { font-weight: 700; font-size: 0.9375rem; text-decoration: none; }
-  .top a.join:hover { text-decoration: underline; }
-
-  /* Hero */
-  .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; padding: 48px 0 88px; }
-  h1 {
-    font-weight: 800;
-    font-size: clamp(2.375rem, 5.2vw, 3.75rem);
-    line-height: 1.04;
-    letter-spacing: -0.03em;
-    margin: 0 0 24px;
-    max-width: 13ch;
-  }
-  .lede { font-size: 1.1875rem; color: var(--muted); max-width: 34em; margin: 0 0 32px; }
-
-  /* Signup */
-  form { display: grid; gap: 12px; max-width: 460px; }
-  label { font-weight: 700; font-size: 0.875rem; display: block; margin-bottom: 4px; }
-  .hint { font-weight: 400; color: var(--muted); }
-  input, select {
-    width: 100%; font: inherit; font-size: 1rem; color: var(--ink);
-    background: var(--sheet); border: 1.5px solid var(--rule); border-radius: 6px;
-    padding: 11px 13px;
-  }
-  input:focus, select:focus { border-color: var(--blue); outline: none; box-shadow: 0 0 0 3px rgba(43,74,126,.18); }
-  button {
-    font: inherit; font-weight: 700; font-size: 1rem; cursor: pointer;
-    background: var(--blue); color: #fff; border: 0; border-radius: 6px; padding: 13px 20px;
-    justify-self: start;
-  }
-  button:hover { background: #22406F; }
-  button[disabled] { opacity: .6; cursor: progress; }
-  .form-note { font-size: 0.875rem; color: var(--muted); margin: 4px 0 0; }
-  .form-msg { font-weight: 700; margin: 4px 0 0; min-height: 1.5em; }
-  .form-msg.ok { color: var(--ok); }
-  .form-msg.err { color: #9B2C2C; }
-
-  /* The agenda sheet */
-  .sheet {
-    background: var(--sheet);
-    border: 1px solid var(--rule);
-    border-radius: 3px;
-    box-shadow: 0 1px 0 var(--rule), 0 18px 40px -24px rgba(24,33,46,.35);
-    padding: 28px 30px 30px;
-    font-family: var(--serif);
-  }
-  .sheet-head { display: flex; justify-content: space-between; gap: 16px; border-bottom: 2px solid var(--ink); padding-bottom: 12px; margin-bottom: 4px; font-family: var(--sans); }
-  .sheet-head strong { display: block; font-size: 1rem; }
-  .sheet-head span { font-size: 0.8125rem; color: var(--muted); }
-  .sheet-head .date { text-align: right; white-space: nowrap; }
-  .item { display: grid; grid-template-columns: 3.4em 1fr; gap: 6px 10px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
-  .item:last-of-type { border-bottom: 0; }
-  .sheet-foot a { white-space: nowrap; }
-  .item .no { font-family: var(--sans); font-size: 0.8125rem; color: var(--muted); padding-top: 3px; }
-  .item h3 { margin: 0; font-weight: 600; font-size: 1.0625rem; line-height: 1.35; }
-  .item p { margin: 4px 0 0; font-size: 0.9375rem; line-height: 1.6; color: #3A4352; }
-  .item.dim h3, .item.dim p { color: #9AA3B2; }
-  mark {
-    color: inherit;
-    background: linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 88%, transparent 88%) no-repeat 0 0 / 0% 100%;
-    padding: 0 2px; margin: 0 -2px;
-    animation: swipe .55s cubic-bezier(.3,.7,.3,1) forwards;
-  }
-  .item:nth-of-type(2) mark { animation-delay: .5s; }
-  .item:nth-of-type(4) mark { animation-delay: 1.0s; }
-  .item:nth-of-type(5) mark { animation-delay: 1.45s; }
-  @keyframes swipe { to { background-size: 100% 100%; } }
-  .sheet-foot { font-family: var(--sans); font-size: 0.8125rem; color: var(--muted); margin: 14px 0 0; }
-
-  /* Sections */
-  section.block { border-top: 1px solid var(--rule); padding: 72px 0; }
-  h2 { font-weight: 800; font-size: clamp(1.75rem, 3vw, 2.25rem); letter-spacing: -0.02em; line-height: 1.12; margin: 0 0 32px; max-width: 20ch; }
-
-  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-  .steps li { border-top: 2px solid var(--ink); padding-top: 14px; }
-  .steps .no { font-size: 0.875rem; color: var(--muted); }
-  .steps h3 { font-size: 1.1875rem; margin: 4px 0 8px; letter-spacing: -0.01em; }
-  .steps p { margin: 0; color: var(--muted); }
-
-  .who { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 48px; margin: 0; }
-  .who div { padding: 20px 0; border-bottom: 1px solid var(--rule); }
-  .who dt { font-weight: 700; font-size: 1.0625rem; }
-  .who dd { margin: 4px 0 0; color: var(--muted); }
-  .who dd em { font-style: normal; font-family: var(--serif); color: var(--ink); background: linear-gradient(transparent 12%, var(--marker) 12%, var(--marker) 88%, transparent 88%); padding: 0 2px; }
-
-  .price { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-  .price p { margin: 0 0 14px; max-width: 34em; }
-  .price .big { font-weight: 800; font-size: 2rem; letter-spacing: -0.02em; margin: 0 0 6px; }
-
-  details { border-bottom: 1px solid var(--rule); padding: 18px 0; max-width: 46em; }
-  details:first-of-type { border-top: 1px solid var(--rule); }
-  summary { font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: "+"; font-weight: 400; font-size: 1.375rem; line-height: 1; color: var(--muted); }
-  details[open] summary::after { content: "–"; }
-  details p { margin: 10px 0 0; color: var(--muted); }
-
-  footer { border-top: 1px solid var(--rule); padding: 32px 0 48px; color: var(--muted); font-size: 0.875rem; }
-
-  @media (max-width: 860px) {
-    .hero { grid-template-columns: 1fr; gap: 40px; padding: 24px 0 64px; }
-    .steps { grid-template-columns: 1fr; gap: 28px; }
-    .who, .price { grid-template-columns: 1fr; }
-    .price { gap: 24px; }
-    section.block { padding: 56px 0; }
-  }
-  @media (max-width: 480px) {
-    .wrap { padding: 0 16px; }
-    .sheet { padding: 20px 18px 22px; }
-    .sheet-head { flex-direction: column; gap: 4px; }
-    .sheet-head .date { text-align: left; }
-    .item { grid-template-columns: 1fr; gap: 2px; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    mark { animation: none; background-size: 100% 100%; }
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/avis.css">
 </head>
 <body>
-
-<div class="wrap">
-  <header class="top">
-    <a class="logo" href="#" aria-label="Sagsvagt, til forsiden">
-      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
-        <rect x="2" y="3" width="20" height="23" rx="2" fill="none" stroke="#18212E" stroke-width="2"/>
-        <path d="M6 9h12M6 13h8M6 17h10M6 21h6" stroke="#18212E" stroke-width="2"/>
-        <rect x="5" y="15.2" width="15" height="3.6" fill="#F6E05E" style="mix-blend-mode:multiply"/>
-        <circle cx="22" cy="21" r="4.5" fill="#2B4A7E"/>
-      </svg>
-      Sagsvagt
-    </a>
-    <a class="join" href="#tilmeld">Skriv dig op</a>
-  </header>
-
-  <main>
-    <div class="hero">
-      <div>
-        <h1>Få besked, når byrådet tager dit emne op.</h1>
-        <p class="lede">Sagsvagt læser dagsordener og referater fra danske kommuner hver uge og sender dig de punkter, der handler om det, du følger. Du slipper for at grave i PDF'er på 98 forskellige hjemmesider.</p>
-
-        <form id="tilmeld" novalidate>
-          <div>
-            <label for="email">Din e-mail</label>
-            <input id="email" name="email" type="email" autocomplete="email" required placeholder="navn@eksempel.dk">
-          </div>
-          <div>
-            <label for="kommuner">Kommuner du vil følge <span class="hint">(valgfrit)</span></label>
-            <input id="kommuner" name="kommuner" type="text" placeholder="Fx Odense, Svendborg">
-          </div>
-          <div>
-            <label for="emner">Emner du vil følge <span class="hint">(valgfrit)</span></label>
-            <input id="emner" name="emner" type="text" placeholder="Fx solceller, lokalplan, skolestruktur">
-          </div>
-          <div>
-            <label for="rolle">Jeg er</label>
-            <select id="rolle" name="rolle">
-              <option value="">Vælg …</option>
-              <option>Lokalpolitiker</option>
-              <option>Journalist</option>
-              <option>Ejendom, byggeri eller rådgivning</option>
-              <option>Forening eller interesseorganisation</option>
-              <option>Public affairs eller kommunikation</option>
-              <option>Borger</option>
-              <option>Andet</option>
-            </select>
-          </div>
-          <button type="submit">Skriv mig op</button>
-          <p class="form-msg" role="status" aria-live="polite"></p>
-          <p class="form-note">Gratis i testperioden. Vi bruger kun din e-mail til Sagsvagt, og du kan altid melde dig fra.</p>
-        </form>
-      </div>
-
-      <figure class="sheet" aria-label="Eksempel på en dagsorden, hvor Sagsvagt har markeret de punkter, der matcher dine emner" style="margin:0">
-        <div class="sheet-head">
-          <div>
-            <strong>Klima- og Miljøudvalget, Odense</strong>
-            <span>Referat</span>
-          </div>
-          <div class="date"><strong>6. oktober 2026</strong><span>kl. 08.30</span></div>
-        </div>
-
-        <div class="item">
-          <div class="no">Pkt. 3</div>
-          <div>
-            <h3><mark>Affaldsplan</mark> sendes i offentlig høring</h3>
-            <p>Udvalget anbefaler, at byrådet sender forslag til Affaldsplan 2027–2038 i høring i 8 uger.</p>
-          </div>
-        </div>
-        <div class="item dim">
-          <div class="no">Pkt. 5</div>
-          <div>
-            <h3>Fugle- og hønseregulativ</h3>
-            <p>Beslutningssag om kommunens regler for at holde fugle og høns.</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="no">Pkt. 6</div>
-          <div>
-            <h3>Miljøvurdering af udvidelsen af <mark>erhvervsbyggeriet</mark> i Højme</h3>
-            <p>Udvalget godkender, at miljøvurderingen sættes i gang med indledende høring af offentligheden.</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="no">Pkt. 9</div>
-          <div>
-            <h3>Evaluering af fodgænger- og <mark>cykelzoner ved skoler</mark></h3>
-            <p>Orienteringssag til udvalget.</p>
-          </div>
-        </div>
-        <figcaption class="sheet-foot">Fra et rigtigt referat. Du følger affald, erhvervsbyggeri og trafiksikkerhed, så pkt. 3, 6 og 9 kommer med i din mail mandag morgen. <a href="eksempel.html">Se et eksempel på en hel mail</a></figcaption>
-      </figure>
+<header class="masthead">
+  <div class="wrap">
+    <div class="mh-row">
+      <a class="mh-logo" href="./" aria-label="Sagsvagt, til forsiden"><img src="assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt" width="168" height="52"></a>
+      <p class="mh-edition"><b>Lørdag 10. oktober 2026</b><br>Uge 41. Nyt fra byråd, udvalg og lokaludvalg</p>
     </div>
-
-    <section class="block" aria-labelledby="h-how">
-      <h2 id="h-how">Sådan virker det</h2>
-      <ol class="steps">
-        <li>
-          <span class="no">Pkt. 1</span>
-          <h3>Vælg kommuner og emner</h3>
-          <p>Skriv de ord og sager, du holder øje med, og vælg de kommuner, der er relevante for dig.</p>
-        </li>
-        <li>
-          <span class="no">Pkt. 2</span>
-          <h3>Vi læser alt, der bliver offentliggjort</h3>
-          <p>Byråd og udvalg lægger dagsordener og referater ud løbende. Vi henter dem og finder de punkter, der handler om dine emner, også når ordene er andre.</p>
-        </li>
-        <li>
-          <span class="no">Pkt. 3</span>
-          <h3>Du får én mail om ugen</h3>
-          <p>Hvert punkt kommer med et kort resumé, hvad der skal besluttes, mødedato og et link til det originale dokument.</p>
-        </li>
-      </ol>
-    </section>
-
-    <section class="block" aria-labelledby="h-who">
-      <h2 id="h-who">Til dig, der skal vide det før de andre</h2>
-      <dl class="who">
-        <div>
-          <dt>Lokalpolitikere</dt>
-          <dd>Se hvad nabokommunerne gør med fx <em>daginstitutioner</em>, før sagen lander hos jer.</dd>
-        </div>
-        <div>
-          <dt>Journalister</dt>
-          <dd>Få historierne fra udvalgsmøderne uden at læse hver eneste dagsorden selv.</dd>
-        </div>
-        <div>
-          <dt>Ejendom, byggeri og rådgivning</dt>
-          <dd>Følg <em>lokalplaner</em>, udbud og grundsalg i de kommuner, hvor du byder ind.</dd>
-        </div>
-        <div>
-          <dt>Foreninger og interesseorganisationer</dt>
-          <dd>Opdag sager om dit område i tide til at sende høringssvar.</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section class="block" aria-labelledby="h-price">
-      <div class="price">
-        <h2 id="h-price">Gratis, mens vi tester</h2>
-        <div>
-          <p class="big">0 kr.</p>
-          <p>De første brugere får Sagsvagt gratis, mens vi bygger tjenesten op kommune for kommune. Til gengæld vil vi gerne høre, hvad der virker, og hvad der mangler.</p>
-          <p>Bagefter bliver det et abonnement. Hvis du er med fra starten, får du besked i god tid, og du beslutter selv, om du vil fortsætte.</p>
-          <p><a href="#tilmeld">Skriv dig op til testperioden</a></p>
-        </div>
+    <nav class="mh-nav" aria-label="Hovedmenu">
+      <a href="./" aria-current="page">Forside</a>
+      <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a>
+      <a href="udvalg/">Udvalg</a>
+      <a href="bydel/">Bydele</a>
+      <a href="om.html">Om Sagsvagt</a>
+      <a class="cta" href="vagt.html">Få dine sager på mail</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="wrap">
+  <div class="front">
+    <div>
+      <article class="lead">
+        <p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p>
+        <h1 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-4.html">Metro M5 – Offentlig høring om Miljøkonsekvensrapport og udkast til tilladelser vedr. grønbroget tudse</a></h1>
+        <p class="dek">Metroselskabet har ansøgt Københavns Kommune og Styrelsen for Grøn Arealomlægning og Vandmiljø om tilladelser, herunder forhåndstilladelser, så håndtering af eventuelle fund af grønbroget tudse på forhånd er tilstrækkeligt miljøvurderet og naturfagligt fastlagt inden anlægsprocessen for metro M5 …</p>
+        <div class="decision"><b>Beslutning</b>Indstillingen blev herefter godkendt efter afstemning med 50 stemmer mod 3.<span class="votes"><span>For: Ø, F, A, C, B, V, I og O</span><span>Imod: Å og Q</span></span></div>
+      </article>
+      <div class="second">
+        <article><p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h2 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-5.html">Forslag til lokalplan Jernbanebyen og kommuneplantillæg med miljørapport, miljøkonsekvensrapport og udbygningsaftale, Vesterbro/Kgs. Enghave</a></h2><p class="dek">Borgerrepræsentationen skal tage stilling til, om revideret forslag til lokalplan Jernbanebyen med kommuneplantillæg, miljørapport, miljøkonsekvensrapport og …</p></article>
+        <article><p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h2 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-8.html">Tilskud til opsøgende gadeplansarbejde i socialpsykiatrien</a></h2><p class="dek">Borgerrepræsentationen skal med denne sag beslutte, hvorvidt Socialforvaltningen skal tage imod et direkte tilskud på 6,8 mio. kr.</p></article>
+        <article><p class="kicker"><span class="status besluttet">Besluttet 22. september</span>, <a href="udvalg/oekonomiudvalget.html">Økonomiudvalget</a></p><h2 class="hl"><a href="sag/kk-2026-09-22-oekonomiudvalget-3.html">Valg mellem statsgaranti og selvbudgettering</a></h2><p class="dek">Som en del af vedtagelsen af budget 2027 skal Borgerrepræsentationen beslutte, hvordan Københavns Kommune skal budgettere indtægterne fra indkomstskat, tilskud og …</p></article>
+        <article><p class="kicker"><span class="status besluttet">Besluttet 22. september</span>, <a href="udvalg/oekonomiudvalget.html">Økonomiudvalget</a></p><h2 class="hl"><a href="sag/kk-2026-09-22-oekonomiudvalget-8.html">Drøftelse af konkurrenceprogram for Kløverparken og Quintus, Amager Øst</a></h2><p class="dek">Klima-, Miljø- og Teknikudvalget og Økonomiudvalget skal drøfte grundejernes konkurrenceprogram for en struktur- og masterplan for Kløverparken og Quintus.</p></article>
+        <article><p class="kicker"><span class="status besluttet">Besluttet 7. oktober</span>, <a href="udvalg/socialudvalget.html">Socialudvalget</a></p><h2 class="hl"><a href="sag/kk-2026-10-07-socialudvalget-4.html">Rammerne for strategien for samarbejdet med private og selvejende leverandører af botilbudspladser</a></h2><p class="dek">Socialudvalget skal drøfte og godkende Socialforvaltningens oplæg til rammerne for en langsigtet strategi for samarbejdet med private og selvejende leverandører af …</p></article>
+        <article><p class="kicker"><span class="status besluttet">Besluttet 7. oktober</span>, <a href="udvalg/socialudvalget.html">Socialudvalget</a></p><h2 class="hl"><a href="sag/kk-2026-10-07-socialudvalget-7.html">Virksomhedsoverdragelse af herberg og krisecenter Garvergården</a></h2><p class="dek">Borgerrepræsentationen skal med denne indstilling godkende virksomhedsoverdragelsen af krisecenteret og herberget Garvergården, Dannebrogsgade 34-36, 1660 København V, …</p></article>
       </div>
-    </section>
-
-    <section class="block" aria-labelledby="h-faq">
-      <h2 id="h-faq">Spørgsmål</h2>
-      <details>
-        <summary>Hvor kommer oplysningerne fra?</summary>
-        <p>Fra kommunernes egne, offentligt tilgængelige dagsordener og referater. Hvert punkt i mailen linker til det originale dokument, så du altid kan læse hele sagen.</p>
-      </details>
-      <details>
-        <summary>Hvilke kommuner er med?</summary>
-        <p>Vi starter med et udvalg af kommuner og udvider efter, hvad testbrugerne efterspørger. Skriv de kommuner, du vil følge, når du tilmelder dig, så kommer de først i køen.</p>
-      </details>
-      <details>
-        <summary>Hvordan finder I de rigtige punkter?</summary>
-        <p>Vi søger ikke kun efter præcis de ord, du skriver. En sag om "VE-anlæg" eller "kommuneplantillæg for solenergi" bliver også fanget, hvis du følger solceller.</p>
-      </details>
-      <details>
-        <summary>Hvornår starter det?</summary>
-        <p>De første mails sendes til testbrugerne i løbet af de kommende uger. Du får en mail, når din kommune er klar.</p>
-      </details>
-    </section>
-  </main>
-
-  <footer>
-    Sagsvagt. Kontakt: <a href="mailto:ac.mansa.cph@gmail.com">ac.mansa.cph@gmail.com</a>
-  </footer>
+    </div>
+    <div class="rail">
+      <aside class="vagt-box">
+  <h2>Følg det, der betyder noget for dig</h2>
+  <p>Vælg emner som cykelstier, skoler eller lokalplaner, og få en mail, når politikerne tager dem op.</p>
+  <a class="btn" href="vagt.html">Skriv dig op gratis</a>
+</aside>
+      <section aria-labelledby="h-bydele" style="margin-top:34px">
+        <h2 id="h-bydele" class="sec-h">Fra bydelene <a href="bydel/">Alle bydele</a></h2>
+        <article class="mini"><p class="kicker"><span class="status besluttet">Besluttet 29. september</span>, <a href="bydel/amager-vest.html">Amager Vest Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-09-29-amager-vest-lokaludvalg-5.html">Svar på høring ang. trafik- og byrumsplan Amager</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-11.html">Medlemsforslag om medfinansiering af lysinstallation til Copenhagen Light Festival 2027</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-10.html">Højhuse i København</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status besluttet">Besluttet 30. september</span>, <a href="bydel/christianshavn.html">Christianshavn Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-09-30-christianshavns-lokaludvalg-6.html">Forslag til midlertidige og mindre anlægsprojekter</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status besluttet">Besluttet 30. september</span>, <a href="bydel/christianshavn.html">Christianshavn Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-09-30-christianshavns-lokaludvalg-10.html">Evaluering af Christianshavnerdagen 2026</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status besluttet">Besluttet 24. september</span>, <a href="bydel/broenshoej-husum.html">Brønshøj-Husum Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-09-24-broenshoej-husum-lokaludvalg-4.html">Opsamling på seminar og valg af repræsentanter til tværgående bydelsplansudvalg</a></h3></article>
+      </section>
+      <section aria-labelledby="h-kommer">
+        <h2 id="h-kommer" class="sec-h">Det skal de tage stilling til</h2>
+        <article class="mini"><p class="kicker"><span class="status kommer">På dagsordenen 19. oktober</span>, <a href="udvalg/beskaeftigelses-integrations-og-erhvervsudvalget.html">Beskæftigelses-, Integrations- og Erhvervsudvalget</a></p><h3 class="hl"><a href="sag/kk-2026-10-19-beskaeftigelses-integrations-og-erhvervsudvalget-4.html">Aftale om systematisk gennemgang af udvalgte førtidspensionssager</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status kommer">På dagsordenen 19. oktober</span>, <a href="udvalg/beskaeftigelses-integrations-og-erhvervsudvalget.html">Beskæftigelses-, Integrations- og Erhvervsudvalget</a></p><h3 class="hl"><a href="sag/kk-2026-10-19-beskaeftigelses-integrations-og-erhvervsudvalget-5.html">Perspektiver på udbudsplacering af EPX</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status kommer">På dagsordenen 20. oktober</span>, <a href="udvalg/folkeoplysningsudvalget.html">Folkeoplysningsudvalget</a></p><h3 class="hl"><a href="sag/kk-2026-10-20-folkeoplysningsudvalget-4.html">Evaluering af projektet Engagerende Mødesteder (Mere folkeoplysning i KFF-faciliteter)</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status kommer">På dagsordenen 20. oktober</span>, <a href="udvalg/folkeoplysningsudvalget.html">Folkeoplysningsudvalget</a></p><h3 class="hl"><a href="sag/kk-2026-10-20-folkeoplysningsudvalget-12.html">Udviklingspuljen for børn og unge - administrative tilsagn</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status kommer">På dagsordenen 21. oktober</span>, <a href="udvalg/boerne-og-ungdomsudvalget.html">Børne- og Ungdomsudvalget</a></p><h3 class="hl"><a href="sag/kk-2026-10-21-boerne-og-ungdomsudvalget-3.html">Implementering af forsøg med modulpasning i daginstitutioner</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status kommer">På dagsordenen 21. oktober</span>, <a href="udvalg/boerne-og-ungdomsudvalget.html">Børne- og Ungdomsudvalget</a></p><h3 class="hl"><a href="sag/kk-2026-10-21-boerne-og-ungdomsudvalget-5.html">Opfølgning på udvidet åbningstid og weekendåben i dagtilbud</a></h3></article>
+        <article class="mini"><p class="kicker"><span class="status kommer">På dagsordenen 22. oktober</span>, <a href="udvalg/kultur-fritids-og-borgerserviceudvalget.html">Kultur-, Fritids- og Borgerserviceudvalget</a></p><h3 class="hl"><a href="sag/kk-2026-10-22-kultur-fritids-og-borgerserviceudvalget-5.html">Resultater af Kultur- og Fritidsbarometer 2026</a></h3></article>
+      </section>
+    </div>
+  </div>
+  <section class="latest" aria-labelledby="h-seneste">
+    <h2 id="h-seneste" class="sec-h">Flere sager fra København</h2>
+    <ol>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-5.html">Høringssvar om Lokalplanforslag for Studiestræde 6 m.fl. (Studiegården)</a></h3></li>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-6.html">Høringssvar om forslag til lokalplan og kommuneplantillæg for Kommunehospitalet</a></h3></li>
+      <li><p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-6.html">Høring af kommuner om fordeling af fordrevne ukrainere ud over gældende kvote</a></h3></li>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-7.html">Høringssvar om Langebros fremtid</a></h3></li>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-8.html">Henvendelse om fossilfri og sikker trafik på cykelstierne i Indre By</a></h3></li>
+      <li><p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-10.html">Tildeling af bevilling til eksternt finansieret CUBIS projekt under EU-programmet Horizon</a></h3></li>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-12.html">Medlemsforslag om &quot;Indre By Dag&quot;</a></h3></li>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-13.html">Medlemsforslag om udarbejdelse af oversigt over markeder og begivenheder</a></h3></li>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-14.html">Medlemsforslag: Hvordan vi får adgang til lokaler i Indre By for både bydelens borgere og Lokaludvalgets sekretariat</a></h3></li>
+      <li><p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-14.html">Forespørgsel til overborgmesteren om nedrivninger i Fælledby</a></h3></li>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-15.html">Aftalen om kommunens budget for 2027</a></h3></li>
+      <li><p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-15.html">Medlemsforslag om at politianmelde Sikandar Siddique og stille tilbagebetalingskrav af vederlag</a></h3></li>
+      <li><p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-16.html">Medlemsforslag om styrket kontrol med valgbarhedskrav til kommunalvalg</a></h3></li>
+      <li><p class="kicker"><span class="status">Behandlet 8. oktober</span>, <a href="bydel/indre-by.html">Indre By Lokaludvalg</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-indre-by-lokaludvalg-17.html">Redegørelse om forløbet vedr. lokaludvalgets høringssvar om dispensation til sauna-anlæg ved Havnegade-promenaden</a></h3></li>
+      <li><p class="kicker"><span class="status besluttet">Besluttet 8. oktober</span>, <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h3 class="hl"><a href="sag/kk-2026-10-08-borgerrepraesentationen-17.html">Medlemsforslag om opkaldelse af veje efter stifterne af De grønne pigespejdere</a></h3></li>
+    </ol>
+  </section>
 </div>
-
-<script>
-  // Tilmeldinger sendes via FormSubmit til Sagsvagts indbakke. Aliaset nedenfor
-  // skjuler modtagerens mailadresse i kildekoden.
-  const FORM_ENDPOINT = "https://formsubmit.co/ajax/424d1304258cfcf5d9718ed239d32ff8";
-
-  const form = document.getElementById("tilmeld");
-  const msg = form.querySelector(".form-msg");
-  const btn = form.querySelector("button");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const email = form.email.value.trim();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      msg.className = "form-msg err";
-      msg.textContent = "Skriv en gyldig e-mailadresse, fx navn@eksempel.dk.";
-      form.email.focus();
-      return;
-    }
-    const data = Object.fromEntries(new FormData(form));
-    data._subject = "Ny tilmelding til Sagsvagt";
-    data._template = "table";
-    btn.disabled = true;
-    msg.className = "form-msg";
-    msg.textContent = "Skriver dig op …";
-    try {
-      if (!FORM_ENDPOINT) throw new Error("no-endpoint");
-      const res = await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify(data)
-      });
-      const out = await res.json().catch(() => ({}));
-      if (!res.ok || String(out.success) === "false") throw new Error(out.message || res.status);
-      msg.className = "form-msg ok";
-      msg.textContent = "Du er skrevet op. Vi giver besked, når din kommune er klar.";
-      form.reset();
-    } catch (err) {
-      console.warn("Tilmelding fejlede:", err.message);
-      msg.className = "form-msg err";
-      msg.textContent = /activ/i.test(err.message)
-        ? "Tilmeldingen er ikke åbnet endnu. Prøv igen om lidt, eller skriv til ac.mansa.cph@gmail.com."
-        : "Tilmeldingen gik ikke igennem. Prøv igen, eller skriv til ac.mansa.cph@gmail.com.";
-    } finally {
-      btn.disabled = false;
-    }
-  });
-</script>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <img src="assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt" width="110" height="34">
+    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="om.html">Om Sagsvagt</a></span>
+  </div>
+</footer>
 </body>
 </html>
