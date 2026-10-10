@@ -7,6 +7,14 @@ const ROD = join(import.meta.dirname, "..");
 const SITE_URL = (process.env.SITE_URL || "https://sagsvagt.dk/").replace(/\/?$/, "/");
 const IDAG = process.env.IDAG || new Date().toISOString().slice(0, 10);
 
+// Logoet lægges direkte i hver side som et SVG-symbol, så det ikke afhænger af en separat billedfil
+// (Simplys bot-beskyttelse kan blokere billedfiler for nogle browsere).
+const LOGO_SVG = await readFile(join(ROD, "assets", "sagsvagt-vandret-kalk.svg"), "utf8");
+const LOGO_VB = LOGO_SVG.match(/viewBox="([^"]+)"/)[1];
+const LOGO_SYMBOL = `<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo" viewBox="${LOGO_VB}">${
+  LOGO_SVG.replace(/^[\s\S]*?<svg[^>]*>|<\/svg>\s*$/g, "").replace(/<title>[\s\S]*?<\/title>/, "")}</symbol></svg>`;
+const logo = (w, h) => `<svg viewBox="${LOGO_VB}" width="${w}" height="${h}" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg>`;
+
 // ---------- Hjælpere ----------
 const esc = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const slug = (s) => s.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa")
@@ -100,10 +108,11 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
 <link rel="stylesheet" href="${rod}assets/avis.css">
 </head>
 <body>
+${LOGO_SYMBOL}
 <header class="masthead">
   <div class="wrap">
     <div class="mh-row">
-      <a class="mh-logo" href="${rod}./" aria-label="Sagsvagt, til forsiden"><img src="${rod}assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt" width="168" height="52"></a>
+      <a class="mh-logo" href="${rod}./" aria-label="Sagsvagt, til forsiden">${logo(168, 52)}</a>
       ${aktiv === "forside"
         ? `<p class="mh-edition"><b>${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}</b><br>Uge ${ugenr(IDAG)}. Nyt fra byråd, udvalg og lokaludvalg</p>`
         : `<p class="mh-edition">Nyt fra byråd, udvalg og lokaludvalg</p>`}
@@ -123,8 +132,8 @@ ${indhold}
 </main>
 <footer class="foot">
   <div class="wrap">
-    <img src="${rod}assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt" width="110" height="34">
-    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a></span>
+    ${logo(110, 34)}
+    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a> · <a href="${rod}privatliv.html">Privatliv</a></span>
   </div>
 </footer>
 </body>

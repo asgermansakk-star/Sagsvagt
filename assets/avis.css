@@ -33,7 +33,7 @@ a:hover { text-decoration-color: currentColor; }
 .masthead { background: var(--moedet); color: var(--kalk); }
 .masthead a { color: var(--kalk); text-decoration: none; }
 .mh-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 16px 0 14px; }
-.mh-logo img { height: 52px; width: auto; display: block; margin-left: -10px; }
+.mh-logo img, .mh-logo svg { height: 52px; width: auto; display: block; margin-left: -10px; }
 .mh-edition { font-size: .8125rem; color: rgba(230,223,211,.78); text-align: right; line-height: 1.45; }
 .mh-edition b { color: var(--kalk); font-weight: 600; }
 .mh-nav { display: flex; gap: 6px 22px; flex-wrap: wrap; border-top: 1px solid rgba(230,223,211,.22); padding: 10px 0 12px; font-size: .875rem; font-weight: 600; }
@@ -115,7 +115,7 @@ a:hover { text-decoration-color: currentColor; }
 
 footer.foot { background: var(--nat); color: rgba(230,223,211,.75); font-size: .875rem; }
 footer.foot .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px 32px; flex-wrap: wrap; padding-top: 26px; padding-bottom: 34px; }
-footer.foot img { height: 34px; margin-left: -8px; }
+footer.foot img, footer.foot svg { height: 34px; width: auto; margin-left: -8px; }
 footer.foot a { color: var(--kalk); }
 
 @media (max-width: 960px) {
@@ -126,7 +126,7 @@ footer.foot a { color: var(--kalk); }
 }
 @media (max-width: 620px) {
   .wrap { padding: 0 16px; }
-  .mh-logo img { height: 42px; }
+  .mh-logo img, .mh-logo svg { height: 42px; }
   .mh-edition { display: none; }
   .mh-nav .cta { margin-left: 0; }
   .second, .latest ol { grid-template-columns: 1fr; }
