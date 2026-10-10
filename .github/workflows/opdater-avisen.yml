@@ -1,12 +1,26 @@
-# Henter nye dagsordener og referater og bygger avisen igen.
-# Kører hver morgen og eftermiddag (dansk tid) og kan også startes manuelt.
+# Henter nye dagsordener og referater, bygger avisen igen og uploader den til
+# sagsvagt.dk hos Simply via FTPS. Kører hver morgen og eftermiddag (dansk tid),
+# når nogen pusher til main, og kan også startes manuelt under "Actions".
+#
+# Kræver tre hemmeligheder (Settings > Secrets and variables > Actions):
+#   FTP_SERVER    fx ftp.simply.com eller serveren fra Simplys kontrolpanel
+#   FTP_USERNAME  FTP-brugernavnet fra Simply
+#   FTP_PASSWORD  FTP-adgangskoden fra Simply
+# Valgfri variabel FTP_SERVER_DIR (standard: public_html/).
 name: Opdater avisen
 
 on:
   schedule:
     - cron: "15 4 * * *"
     - cron: "15 14 * * *"
+  push:
+    branches: [main]
   workflow_dispatch:
+    inputs:
+      ryd_foerst:
+        description: "Slet ALT på webhotellet før upload (kun første gang, for at fjerne gamle filer)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -18,7 +32,9 @@ concurrency:
 jobs:
   opdater:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
+    env:
+      FTP_SERVER: ${{ secrets.FTP_SERVER }}
     steps:
       - uses: actions/checkout@v4
 
@@ -29,7 +45,9 @@ jobs:
 
       - run: npm ci
 
+      # Ved push bygger vi bare det, der er i repoet; robotten kører kun på tidsplan/manuelt
       - name: Hent nye sager fra kk.dk
+        if: github.event_name != 'push'
         run: node avis/hent-kk.mjs
         env:
           SIDER: "2"
@@ -39,14 +57,41 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://sagsvagt.dk/' }}
 
-      - name: Gem ændringer
+      - name: Gem ændringer i repoet
         run: |
           git config user.name "Sagsvagt-robot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "Ingen nye sager."
+            echo "Ingen ændringer at gemme."
           else
             git commit -m "Opdater avisen $(date -u +%Y-%m-%d)"
             git push
           fi
+
+      # Kun de offentlige filer kommer på webhotellet
+      - name: Saml de offentlige filer
+        run: |
+          rsync -a --delete \
+            --exclude '.*' --exclude '_deploy' --exclude 'node_modules' \
+            --exclude 'avis' --exclude 'data' --exclude 'package*.json' --exclude 'README.md' \
+            ./ _deploy/
+          echo "Filer til upload: $(find _deploy -type f | wc -l)"
+
+      - name: Upload til Simply (FTPS)
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}
+          dangerous-clean-slate: ${{ inputs.ryd_foerst == true }}
+          timeout: 120000
+
+      - name: Mangler FTP-oplysninger
+        if: env.FTP_SERVER == ''
+        run: echo "::warning::FTP_SERVER er ikke sat, så avisen blev ikke uploadet til sagsvagt.dk."

@@ -104,7 +104,9 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
   <div class="wrap">
     <div class="mh-row">
       <a class="mh-logo" href="${rod}./" aria-label="Sagsvagt, til forsiden"><img src="${rod}assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt" width="168" height="52"></a>
-      <p class="mh-edition"><b>${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}</b><br>Uge ${ugenr(IDAG)}. Nyt fra byråd, udvalg og lokaludvalg</p>
+      ${aktiv === "forside"
+        ? `<p class="mh-edition"><b>${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}</b><br>Uge ${ugenr(IDAG)}. Nyt fra byråd, udvalg og lokaludvalg</p>`
+        : `<p class="mh-edition">Nyt fra byråd, udvalg og lokaludvalg</p>`}
     </div>
     <nav class="mh-nav" aria-label="Hovedmenu">
       <a href="${rod}./"${aktiv === "forside" ? ' aria-current="page"' : ""}>Forside</a>
