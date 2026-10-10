@@ -734,8 +734,12 @@
   $$(".q button").forEach((b) => b.addEventListener("click", () => { const q = b.parentElement, open = !q.classList.contains("open"); q.classList.toggle("open", open); b.setAttribute("aria-expanded", open); }));
 
   /* ---------- Tilmelding ---------- */
-  // Tilmeldinger sendes via FormSubmit til mansa@sagsvagt.dk. Første tilmelding udløser en aktiveringsmail.
-  const FORM_ENDPOINT = "https://formsubmit.co/ajax/mansa@sagsvagt.dk";
+  // Tilmeldinger sendes via FormSubmits aktiverede alias (skjuler den aktiverede modtageradresse) med en kopi (_cc)
+  // til signup@sagsvagt.dk. Afviser FormSubmit alligevel, tilbyder vi en færdigudfyldt mail til signup@ i stedet.
+  const SIGNUP_MAIL = "signup@sagsvagt.dk";
+  const FORM_ENDPOINT = "https://formsubmit.co/ajax/424d1304258cfcf5d9718ed239d32ff8";
+  const mailto = (d) => `mailto:${SIGNUP_MAIL}?subject=${encodeURIComponent("Tilmelding til Sagsvagt")}&body=${encodeURIComponent(
+    `Skriv mig op til Sagsvagt.\n\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\n`)}`;
   const form = $("#form"), msg = $(".form-msg", form), btn = $(".submit", form), card = $(".signup-card");
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -747,7 +751,7 @@
     f.classList.remove("bad");
     const data = Object.fromEntries(new FormData(form));
     data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
-    data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table";
+    data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table"; data._cc = SIGNUP_MAIL;
     btn.disabled = true; btn.classList.add("busy"); msg.className = "form-msg"; msg.textContent = "";
     try {
       const res = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
@@ -757,9 +761,7 @@
     } catch (err) {
       console.warn("Tilmelding fejlede:", err.message);
       msg.className = "form-msg err";
-      msg.textContent = /activ/i.test(err.message)
-        ? "Tilmeldingen er ikke åbnet endnu. Prøv igen om lidt, eller skriv til mansa@sagsvagt.dk."
-        : "Tilmeldingen gik ikke igennem. Prøv igen, eller skriv til mansa@sagsvagt.dk.";
+      msg.innerHTML = `Tilmeldingen gik ikke igennem automatisk. <a href="${mailto(data)}" style="color:var(--kalk)">Send den som mail i stedet</a>, så skriver vi dig op.`;
     } finally { btn.disabled = false; btn.classList.remove("busy"); }
   });
 })();
