@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sagsvagt//Møder//DA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sagsvagt: Københavns Rådhus' Præsidium
+X-WR-TIMEZONE:Europe/Copenhagen
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:20260921-koebenhavns-raadhus-praesidium@sagsvagt.dk
+DTSTAMP:20261011T125326Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:Møde: Københavns Rådhus' Præsidium
+DESCRIPTION:9 punkter på dagsordenen.\n• Status på IT\n• Københavns
+  Rådhus’ Præsidiums mødeplan 2027\n• Evaluering af modtagelse af n
+ y samling 2026-2029\n• Drøftelse af rammer og principper for borgerrep
+ ræsentationens og udvalgenes mødeplan\n• Indstilling om forplejning i
+ fm. møderne i Borgerrepræsentationen\n\nDagsordenen: https://www.kk.dk/
+ dagsordener-og-referater/K%C3%B8benhavns%20R%C3%A5dhus%27%20Pr%C3%A6sidiu
+ m/m%C3%B8de-21092026/referat
+URL:https://www.kk.dk/dagsordener-og-referater/K%C3%B8benhavns%20R%C3%A5dh
+ us%27%20Pr%C3%A6sidium/m%C3%B8de-21092026/referat
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

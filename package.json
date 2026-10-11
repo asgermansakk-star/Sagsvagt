@@ -8,6 +8,7 @@
     "opdater": "node avis/hent-kk.mjs && node avis/byg.mjs"
   },
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "cheerio": "^1.2.0"
   }
 }

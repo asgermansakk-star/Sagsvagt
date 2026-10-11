@@ -99,6 +99,30 @@
   .antal { font-size: .8125rem; color: var(--muted); margin: 0; }
   .indlaes { padding: 80px 0; text-align: center; color: var(--muted); }
 
+  /* Møder og mandagsmail */
+  .m-moede + .m-moede { margin-top: 6px; }
+  .m-u { font-size: .8125rem; color: var(--muted); margin: 2px 0 2px; line-height: 1.45; }
+  .m-u b { color: var(--nat); }
+  .m-u a { color: var(--indigo); }
+  .m-andre { font-size: .8125rem; color: var(--muted); margin: 16px 0 0; line-height: 1.6; }
+  .m-andre a { color: var(--indigo); }
+  .mail-knap { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border: 1.5px solid var(--nat); border-radius: 99px; background: transparent; color: var(--nat); cursor: pointer; }
+  .mail-knap:hover { background: var(--nat); color: var(--kalk); }
+  dialog.mail-dlg { width: min(760px, calc(100vw - 24px)); }
+  .mail-ramme { display: block; width: 100%; height: min(72dvh, 900px); border: 0; background: #E6DFD3; }
+  .mail-note { margin: 0; padding: 12px 24px 16px; font-size: .8125rem; color: var(--muted); border-top: 1px solid var(--rule); }
+
+  /* Læs sagen */
+  dialog.laes-dlg { width: min(860px, calc(100vw - 24px)); }
+  .laes-top-knapper { display: flex; gap: 4px; align-items: center; }
+  .laes-top-knapper .ikon { color: var(--kalk); }
+  .laes-top-knapper .ikon:hover { background: rgba(230,223,211,.14); color: var(--kalk); }
+  .laes-top-knapper .gem[aria-pressed="true"] { color: var(--rosen); }
+  .laes-indhold { padding: 24px 28px 30px; }
+  .laes-indhold .article { display: block; padding: 0; }
+  .laes-indhold .article h1.hl { font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
+  .laes-indhold .indlaes { padding: 40px 0; }
+
   /* Debat */
   .debat { padding: 44px 0 4px; }
   .debat .sec-h span { font-size: .8125rem; font-weight: 600; color: var(--muted); }
@@ -176,6 +200,7 @@
       <a href="#alle" data-aaben>Alle mine sager</a>
       <a href="#debat" data-aaben>Debat</a>
       <a href="#gemte" data-aaben>Gemte</a>
+      <a href="#" data-mail data-aaben>Mandagsmail</a>
       <button type="button" class="ud" id="logud" data-aaben title="Login kommer snart">Log ud</button>
     </nav>
   </div>
@@ -237,7 +262,7 @@
         </div>
         <div class="rail">
           <section aria-labelledby="h-kommer">
-            <h2 id="h-kommer" class="sec-h">Det skal de tage stilling til</h2>
+            <h2 id="h-kommer" class="sec-h">Dine kommende møder</h2>
             <div id="kommer"></div>
           </section>
           <section aria-labelledby="h-bydel">
@@ -314,12 +339,29 @@
       <button class="send" type="button" data-luk>Luk</button>
     </div>
   </dialog>
+
+  <dialog class="skriv laes-dlg" id="laes" aria-labelledby="laes-h">
+    <div class="skriv-top">
+      <div><h2 id="laes-h">Sagen</h2><p id="laes-hvor"></p></div>
+      <div class="laes-top-knapper" id="laes-knapper"></div>
+    </div>
+    <div class="laes-indhold" id="laes-indhold"></div>
+  </dialog>
+
+  <dialog class="skriv mail-dlg" id="mail" aria-labelledby="mail-h">
+    <div class="skriv-top">
+      <div><h2 id="mail-h">Din mandagsmail</h2><p id="mail-emne"></p></div>
+      <button class="luk" type="button" data-luk aria-label="Luk">×</button>
+    </div>
+    <iframe class="mail-ramme" id="mail-ramme" title="Forhåndsvisning af din mandagsmail"></iframe>
+    <p class="mail-note">Sådan ser mailen ud med dine emner, ord og bydel lige nu. Den kommer hver mandag morgen, når udsendelsen er i gang.</p>
+  </dialog>
 </main>
 
 <footer class="foot">
   <div class="wrap">
     <svg viewBox="0 0 964.08 300.00" width="110" height="34" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg>
-    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="../privatliv.html">Privatliv</a></span>
+    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="../privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
 </footer>
 
@@ -363,31 +405,10 @@
     };
   }
 
-  /* ---------- Emner ---------- */
-  // Korte ord matches som hele ord (med bøjning), lange ord også inde i sammensatte ord ("cykelsti" i "supercykelstien").
-  const EMNER = {
-    trafik:  { navn: "Trafik og cykler", f: "b", ord: ["trafik", "cykel", "cykler", "cyklist", "vejarbejde", "vejbelysning", "bil", "bus", "metro", "letbane", "gågade", "parkering", "fortov", "fodgænger", "trafiksikker", "hastighed", "krydset"] },
-    klima:   { navn: "Klima og grønt", f: "r", ord: ["klima", "skybrud", "regnvand", "træ", "natur", "grøn", "park", "biodiversitet", "kloak", "co2", "energi", "solcelle"] },
-    affald:  { navn: "Affald", f: "b", ord: ["affald", "skrald", "renovation", "genbrug", "tømning", "storskrald"] },
-    bolig:   { navn: "Boliger", f: "r", ord: ["bolig", "lejlighed", "almene", "husleje", "udlejning", "boligområde"] },
-    byggeri: { navn: "Byggeri og lokalplaner", f: "b", ord: ["byggeri", "lokalplan", "byplan", "servitut", "byggesag", "bevaring", "kommuneplan", "dispensation", "bebyggelse", "nedrivning"] },
-    skole:   { navn: "Skoler og børn", f: "r", ord: ["skole", "dagtilbud", "børnehave", "vuggestue", "børn", "institution", "fritidshjem", "klub", "elever", "undervisning"] },
-    aeldre:  { navn: "Ældre og sundhed", f: "b", ord: ["ældre", "plejehjem", "hjemmepleje", "sundhed", "omsorg", "senior", "demens", "rehabilitering"] },
-    social:  { navn: "Det sociale", f: "r", ord: ["hjemløs", "udsat", "misbrug", "handicap", "botilbud", "psykiatri", "socialt", "sociale"] },
-    budget:  { navn: "Budget og økonomi", f: "b", ord: ["budget", "bevilling", "anlægsbevilling", "anlægsoversigt", "skat", "overførsel", "besparelse", "regnskab"] },
-    kultur:  { navn: "Kultur og fritid", f: "r", ord: ["kultur", "bibliotek", "kunst", "teater", "museum", "idræt", "svømmehal", "forening"] },
-    erhverv: { navn: "Erhverv og job", f: "b", ord: ["erhverv", "beskæftigelse", "ledig", "job", "virksomhed", "turisme", "natteliv", "udeservering"] },
-  };
-  const BOGSTAV = "a-zæøåéü0-9";
-  const regex = (ord) => new RegExp(ord.map((o) => {
-    const w = o.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    return w.length <= 4 ? `(?<![${BOGSTAV}])${w}(e|er|en|et|erne|ene|ets|s)?(?![${BOGSTAV}])` : w;
-  }).join("|"), "i");
-  for (const e of Object.values(EMNER)) e.re = regex(e.ord);
-  // Udvalgs- og forvaltningsnavne fjernes før match, ellers handler alt fra "Klima-, Miljø- og Teknikudvalget" om klima
-  const ORG = /(?:[\wæøå]+-,?\s+)*(?:og\s+)?[\wæøå]*(?:udvalg|forvaltning)[\wæøå]*/gi;
-  const emneTekst = (s) => (s._e ??= `${s.t} ${s.d}`.replace(ORG, " "));
-  const titelTekst = (s) => (s._t ??= s.t.replace(ORG, " "));
+  /* ---------- Emner ----------
+     Emnerne og hvilke sager de dækker kommer fra avisen (avis/beriget.mjs) via assets/sager.json:
+     s.e er sagens emner, s.et emnerne i overskriften. Så er Min avis og avisen altid enige. */
+  let EMNER = {};
 
   /* ---------- Profil (gemmes i browseren, indtil login er klar) ---------- */
   const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [] };
@@ -407,21 +428,21 @@
   const hilsen = () => { const h = new Date().getHours(); return h < 10 ? "God morgen" : h < 18 ? `God ${ugedag}` : "God aften"; };
 
   /* ---------- Data ---------- */
-  let SAGER = [];
+  let SAGER = [], DATA = {};
   const lokal = (u) => /Lokaludvalg$/.test(u);
   const bydelNavn = (u) => u.replace(/\s*Lokaludvalg$/, "");
 
   const match = (s) => {
-    const tekst = emneTekst(s);
-    const emner = profil.emner.filter((id) => EMNER[id]?.re.test(tekst));
-    const ord = profil.ord.filter((o) => o && tekst.toLowerCase().includes(o.toLowerCase()));
+    const tekst = `${s.t} ${s.d}`.toLowerCase();
+    const emner = profil.emner.filter((id) => s.e.includes(id));
+    const ord = profil.ord.filter((o) => o && tekst.includes(o.toLowerCase()));
     return { emner, ord };
   };
   const vurder = (s) => {
     const m = match(s);
     const hits = m.emner.length + m.ord.length * 2;
     // Titlen tæller mest: står emnet i overskriften, handler sagen om det
-    const iTitel = profil.emner.filter((id) => EMNER[id].re.test(titelTekst(s))).length + profil.ord.filter((o) => s.t.toLowerCase().includes(o.toLowerCase())).length;
+    const iTitel = profil.emner.filter((id) => s.et.includes(id)).length + profil.ord.filter((o) => s.t.toLowerCase().includes(o.toLowerCase())).length;
     return { ...s, m, hits, score: s.v * 6 + hits * 4 + iTitel * 8 - Math.max(0, alder(s.dato)) * 0.35 - s.r * 25 };
   };
 
@@ -449,9 +470,9 @@
   const AVIS_AABEN = false;
   const link = (s) => (AVIS_AABEN ? `../${s.url}` : s.k);
   const kortet = (s, slags) => {
-    if (slags === "lead") return `<article class="lead kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d)}</p>` : ""}${beslutning(s)}${tags(s)}</article>`;
-    if (slags === "mini") return `<article class="mini kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3></article>`;
-    return `<article class="kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 180 ? s.d.slice(0, 180).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</article>`;
+    if (slags === "lead") return `<article class="lead kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d)}</p>` : ""}${beslutning(s)}${tags(s)}</article>`;
+    if (slags === "mini") return `<article class="mini kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3></article>`;
+    return `<article class="kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 180 ? s.d.slice(0, 180).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</article>`;
   };
   const tom = (tekst) => `<p class="tom">${tekst}</p>`;
 
@@ -459,9 +480,10 @@
   let fane = "alle", soeg = "", vist = 20;
 
   function tegnMine() {
-    const antal = (id) => SAGER.filter((s) => !s.r && EMNER[id].re.test(emneTekst(s))).length;
+    const antal = (id) => SAGER.filter((s) => !s.r && s.e.includes(id)).length;
     $("#mine").innerHTML = `<span class="lbl">Du følger</span>`
       + Object.entries(EMNER).map(([id, e]) => `<button type="button" class="emne ${e.f}" data-emne="${id}" aria-pressed="${profil.emner.includes(id)}">${esc(e.navn)}<span class="n">${antal(id)}</span></button>`).join("")
+      + `<button type="button" class="mail-knap" data-mail>Se din mandagsmail</button>`
       + `<button type="button" class="tilpas" id="tilpas" aria-expanded="${!$("#panel").hidden}" aria-controls="panel">Tilpas</button>`;
   }
 
@@ -492,12 +514,15 @@
       ? kortet(top, "lead") + `<div class="second">${rest.slice(0, 6).map((s) => kortet(s)).join("")}</div>`
       : tom("Der er ingen nye beslutninger om dine emner endnu. Vælg flere emner, eller tilføj dine egne ord under Tilpas.");
 
-    // Kommende, grupperet pr. mødedag
-    const grp = {};
-    for (const s of kommende.slice(0, 8)) (grp[s.dato] ||= []).push(s);
-    $("#kommer").innerHTML = Object.keys(grp).length
-      ? Object.entries(grp).map(([d, l]) => `<p class="dag">${esc(stor(dato(d, { weekday: "long", day: "numeric", month: "long" })))}</p>${l.map((s) => kortet(s, "mini")).join("")}`).join("")
-      : tom("Ingen kommende møder har sager om dine emner endnu.");
+    // Kommende møder: dem med sager om dine emner først, de andre som en kort liste
+    const moeder = (DATA.moeder || []).filter((m) => m.dato >= IDAG).map((m) => ({ ...m, mine: kommende.filter((s) => s.u === m.u && s.dato === m.dato) }));
+    const medMine = moeder.filter((m) => m.mine.length), andre = moeder.filter((m) => !m.mine.length);
+    $("#kommer").innerHTML = !moeder.length ? tom("Kommunen har ikke offentliggjort dagsordener til kommende møder endnu.")
+      : (medMine.length ? medMine.map((m) => `<div class="m-moede"><p class="dag">${esc(stor(dato(m.dato, { weekday: "long", day: "numeric", month: "long" })))}</p>`
+          + `<p class="m-u"><b>${esc(hvor(m.u))}</b> · ${m.n} punkter, ${m.mine.length} om dine emner · <a href="${esc(m.url)}" rel="nofollow">Dagsordenen</a></p>`
+          + `${m.mine.slice(0, 4).map((s) => kortet(s, "mini")).join("")}</div>`).join("")
+        : tom("Ingen af de kommende møder har sager om dine emner."))
+      + (andre.length ? `<p class="m-andre">${medMine.length ? "Andre møder" : "Kommende møder"}: ${andre.map((m) => `<a href="${esc(m.url)}" rel="nofollow">${esc(hvor(m.u))}, ${esc(kort(m.dato))}</a>`).join(" · ")}</p>` : "");
 
     // Bydel
     if (profil.bydel) {
@@ -531,7 +556,7 @@
       return `<article class="indlaeg"><p class="kicker"><span class="status besluttet">Indlæg</span> · ${esc(kort(i.dato))}</p>`
         + `<h3 class="hl">${esc(i.overskrift)}</h3><p class="af">${esc(i.navn)}${af ? `, <span>${af}</span>` : ""}</p>`
         + `<div class="tekst">${afsnit(foerste)}${resten.length ? `<details><summary>Læs hele indlægget</summary>${afsnit(resten.join("\n\n"))}</details>` : ""}</div>`
-        + `${sag ? `<p class="om-sag">Om sagen: <a href="${link(sag)}">${esc(sag.t)}</a></p>` : ""}</article>`;
+        + `${sag ? `<p class="om-sag">Om sagen: <a href="${link(sag)}" data-laes="${esc(sag.id)}">${esc(sag.t)}</a></p>` : ""}</article>`;
     }).join("") : tom("Der er ingen indlæg endnu. Skriv det første om en sag, du har en holdning til.");
   }
 
@@ -608,10 +633,50 @@
     liste = liste.filter((s) => !s.r || q).sort((a, b) => b.dato.localeCompare(a.dato) || b.score - a.score);
     $("#antal").textContent = q ? `${liste.length} sager matcher "${soeg.trim()}"` : `${liste.length} sager`;
     $("#liste").innerHTML = liste.length
-      ? liste.slice(0, vist).map((s) => `<li><div>${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 220 ? s.d.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</div>${handl(s)}</li>`).join("")
+      ? liste.slice(0, vist).map((s) => `<li><div>${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 220 ? s.d.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</div>${handl(s)}</li>`).join("")
       : `<li>${tom(q ? "Ingen sager matcher søgningen." : "Ingen sager endnu.")}</li>`;
     $("#flere").hidden = liste.length <= vist;
   }
+
+  /* ---------- Læs sagen ----------
+     Hele sagen (Kort fortalt, afstemning, sagens vej og teksten) hentes som fragment fra assets/sager/, som avisen bygger.
+     Mens avisen er lukket, bliver links til avisens sider til almindelig tekst. */
+  async function laesSag(id) {
+    const s = SAGER.find((x) => x.id === id); if (!s) return;
+    const d = $("#laes"), ind = $("#laes-indhold");
+    $("#laes-hvor").textContent = `${hvor(s.u)} · ${kort(s.dato)}`;
+    const knapper = () => { $("#laes-knapper").innerHTML = `${skrivKnap(s)}${gemKnap(s)}<button class="luk" type="button" data-luk aria-label="Luk">×</button>`; };
+    knapper(); laesSag.opdater = knapper;
+    ind.innerHTML = `<p class="indlaes">Henter sagen …</p>`;
+    if (!d.open) d.showModal();
+    try {
+      const r = await fetch(`../assets/sager/${s.url.slice(4)}`); if (!r.ok) throw new Error(r.status);
+      ind.innerHTML = `<div class="article">${await r.text()}</div>`;
+      if (!AVIS_AABEN) ind.querySelectorAll("a[href]").forEach((a) => {
+        const u = new URL(a.getAttribute("href"), location.href);
+        if (u.origin === location.origin && /^\/(sag|udvalg|bydel|emne)\//.test(u.pathname)) {
+          const sp = document.createElement("span"); sp.className = a.className; sp.append(...a.childNodes); a.replaceWith(sp);
+        }
+      });
+      ind.scrollTop = 0; d.scrollTop = 0;
+    } catch (err) {
+      ind.innerHTML = `<p class="tom">Sagen kunne ikke hentes. <a href="${esc(s.k)}" rel="nofollow">Læs den hos kommunen</a>.</p>`;
+    }
+  }
+  $("#laes").addEventListener("click", (e) => { if (e.target === $("#laes")) $("#laes").close(); });
+
+  /* ---------- Mandagsmailen ----------
+     Samme skabelon som den rigtige mail (assets/mandagsmail.js), med din profil og den kommende mandag. */
+  async function visMail() {
+    const { lavMandagsmail } = await import("../assets/mandagsmail.js");
+    const d = new Date(); d.setDate(d.getDate() + ((8 - d.getDay()) % 7));
+    const mandag = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    const mail = lavMandagsmail({ data: DATA, profil, idag: mandag, modtager: bruger?.email || "", linkTil: link, logo: new URL("../assets/mail-logo.png", location.href).href });
+    $("#mail-emne").textContent = `Emne: ${mail.emne}`;
+    $("#mail-ramme").srcdoc = mail.html;
+    $("#mail").showModal();
+  }
+  $("#mail").addEventListener("click", (e) => { if (e.target === $("#mail")) $("#mail").close(); });
 
   /* ---------- Tilpas ---------- */
   function fyldPanel() {
@@ -623,10 +688,13 @@
   const vend = () => { const p = $("#panel"); p.hidden = !p.hidden; $("#tilpas")?.setAttribute("aria-expanded", String(!p.hidden)); if (!p.hidden) $("#p-navn").focus(); };
 
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("[data-emne],[data-gem],[data-skriv],[data-luk],[data-fane],#tilpas,[data-tilpas],#flere,#p-nulstil");
+    const t = e.target.closest("[data-laes],[data-emne],[data-gem],[data-skriv],[data-mail],[data-luk],[data-fane],#tilpas,[data-tilpas],#flere,#p-nulstil");
     if (!t) return;
-    if (t.dataset.skriv !== undefined) aabnSkriv(t.dataset.skriv);
-    else if (t.dataset.luk !== undefined) dlg.close();
+    // Ctrl/cmd-klik åbner stadig sagen hos kommunen i en ny fane
+    if (t.dataset.laes !== undefined) { if (e.ctrlKey || e.metaKey || e.shiftKey || e.button) return; e.preventDefault(); laesSag(t.dataset.laes); }
+    else if (t.dataset.skriv !== undefined) { if (t.closest("#laes")) $("#laes").close(); aabnSkriv(t.dataset.skriv); }
+    else if (t.dataset.mail !== undefined) { e.preventDefault(); visMail(); }
+    else if (t.dataset.luk !== undefined) t.closest("dialog").close();
     else if (t.dataset.emne) {
       const id = t.dataset.emne;
       profil.emner = profil.emner.includes(id) ? profil.emner.filter((x) => x !== id) : [...profil.emner, id];
@@ -634,7 +702,7 @@
     } else if (t.dataset.gem) {
       const id = t.dataset.gem;
       profil.gemte = profil.gemte.includes(id) ? profil.gemte.filter((x) => x !== id) : [id, ...profil.gemte];
-      gem(); tegn();
+      gem(); tegn(); if ($("#laes").open) laesSag.opdater?.();
     } else if (t.dataset.fane) { fane = t.dataset.fane; vist = 20; tegnListe(); }
     else if (t.id === "flere") { vist += 20; tegnListe(); }
     else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte }; gem(); fyldPanel(); tegn(); }
@@ -648,9 +716,10 @@
   /* ---------- Start ---------- */
   $("#indlaes").hidden = false;
   const hent = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); });
-  Promise.all([hent("sager.json"), hent("indlaeg.json").catch(() => ({ indlaeg: [] }))])
+  Promise.all([hent("../assets/sager.json"), hent("indlaeg.json").catch(() => ({ indlaeg: [] }))])
     .then(([data, debat]) => {
-      SAGER = data.sager; INDLAEG = debat.indlaeg || [];
+      DATA = data; SAGER = data.sager; INDLAEG = debat.indlaeg || []; EMNER = data.emner || {};
+      profil.emner = profil.emner.filter((id) => EMNER[id]);
       $("#indlaes").hidden = true; $("#avis").hidden = false;
       fyldPanel(); tegn();
     })

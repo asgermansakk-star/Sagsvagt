@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sagsvagt//Møder//DA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sagsvagt: Kontrol- og Rådgivningsudvalget
+X-WR-TIMEZONE:Europe/Copenhagen
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:20261002-kontrol-og-raadgivningsudvalget@sagsvagt.dk
+DTSTAMP:20261011T125326Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Møde: Kontrol- og Rådgivningsudvalget
+DESCRIPTION:1 punkter på dagsordenen.\n\n\nDagsordenen: https://www.kk.dk
+ /dagsordener-og-referater/Kontrol-%20og%20R%C3%A5dgivningsudvalget/m%C3%B
+ 8de-02102026/referat
+URL:https://www.kk.dk/dagsordener-og-referater/Kontrol-%20og%20R%C3%A5dgiv
+ ningsudvalget/m%C3%B8de-02102026/referat
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260925-kontrol-og-raadgivningsudvalget@sagsvagt.dk
+DTSTAMP:20261011T125326Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Møde: Kontrol- og Rådgivningsudvalget
+DESCRIPTION:14 punkter på dagsordenen.\n• GODKENDELSE AF PROTOKOL FRA 2
+ 8. AUGUST 2026 (08.10 - 08.15)\n• INTERN REVISION OPGAVER (08.15 - 08.2
+ 0)\n• EKSTERN REVISORS KVARTALSOPGØRELSER FOR 2. KVARTAL 2026 (08.35 -
+  08.40)\n• BORGERRÅDGIVERENS OPGAVER (09.15 - 09.45)\n• DATABESKYTTE
+ LSESRÅDGIVERENS OPGAVER (09.45 - 09.55)\n\nDagsordenen: https://www.kk.d
+ k/dagsordener-og-referater/Kontrol-%20og%20R%C3%A5dgivningsudvalget/m%C3%
+ B8de-25092026/referat
+URL:https://www.kk.dk/dagsordener-og-referater/Kontrol-%20og%20R%C3%A5dgiv
+ ningsudvalget/m%C3%B8de-25092026/referat
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20260828-kontrol-og-raadgivningsudvalget@sagsvagt.dk
+DTSTAMP:20261011T125326Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:Møde: Kontrol- og Rådgivningsudvalget
+DESCRIPTION:8 punkter på dagsordenen.\n• GODKENDELSE AF PROTOKOL FRA 17
+ . JUNI 2026 (07.35-07.37)\n• INTERN REVISION OPGAVER (07.37-08.07)\n•
+  BORGERRÅDGIVERENS OPGAVER (08.07-08.12)\n• WHISTLEBLOWERENHEDENS OPGA
+ VER (08.12- 08.30)\n\nDagsordenen: https://www.kk.dk/dagsordener-og-refer
+ ater/Kontrol-%20og%20R%C3%A5dgivningsudvalget/m%C3%B8de-28082026/referat
+URL:https://www.kk.dk/dagsordener-og-referater/Kontrol-%20og%20R%C3%A5dgiv
+ ningsudvalget/m%C3%B8de-28082026/referat
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

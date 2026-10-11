@@ -2,5 +2,7 @@
 # Undermapper (udvalg/, bydel/, min/) har ingen vagt.html og viser derfor deres index.html som før.
 DirectoryIndex vagt.html index.html
 
-# Avisen er åben. For at lukke den igen midlertidigt (302 til tilmeldingen), indsæt:
-# RedirectMatch 302 ^/(index.html|om.html|sag/.*|udvalg/.*|bydel/.*)$ /
+# Avisen er lukket for nu efter ejerens ønske, så det kun er muligt at skrive sig op. Avisens sider sender
+# midlertidigt (302) videre til tilmeldingen. Åbn ikke avisen uden at aftale det med ejeren.
+# Slet linjen herunder for at åbne avisen igen.
+RedirectMatch 302 ^/(index\.html|om\.html|soeg\.html|moeder\.html|partier\.html|hoeringer\.html|sag/.*|udvalg/.*|bydel/.*|emne/.*|kalender/.*|feed/.*)$ /
