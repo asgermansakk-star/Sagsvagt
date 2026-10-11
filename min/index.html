@@ -167,11 +167,11 @@
 <header class="masthead">
   <div class="wrap">
     <div class="mh-row">
-      <a class="mh-logo" href="../index.html" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
+      <a class="mh-logo" href="../" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
       <p class="mh-edition" id="udgave">Nyt fra byråd, udvalg og lokaludvalg</p>
     </div>
     <nav class="mh-nav" aria-label="Hovedmenu">
-      <a href="../index.html">Forside</a>
+      <a href="../">Forside</a>
       <a href="./" aria-current="page">Min avis</a>
       <a href="#alle" data-aaben>Alle mine sager</a>
       <a href="#debat" data-aaben>Debat</a>
@@ -191,7 +191,6 @@
         <p class="lead-p">Her samler vi de sager, der handler om dine emner: det, politikerne har besluttet, det, de skal tage stilling til, og det, der sker i din bydel. Vi åbner for login, når testperioden går i gang.</p>
         <div class="knapper">
           <a class="btn moerk" href="../vagt.html?fra=min-avis">Skriv dig op</a>
-          <a class="btn linje" href="../index.html">Læs avisen</a>
         </div>
       </div>
       <form class="login" novalidate onsubmit="return false" aria-describedby="login-note">
@@ -320,7 +319,7 @@
 <footer class="foot">
   <div class="wrap">
     <svg viewBox="0 0 964.08 300.00" width="110" height="34" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg>
-    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="../om.html">Om Sagsvagt</a> · <a href="../privatliv.html">Privatliv</a></span>
+    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="../privatliv.html">Privatliv</a></span>
   </div>
 </footer>
 
@@ -446,7 +445,9 @@
   };
   const beslutning = (s) => s.st === "besluttet" && s.ud
     ? `<div class="decision"><b>Beslutning</b>${esc(s.ud)}${s.sm ? `<span class="votes"><span>For: ${esc(s.sm.for)}</span><span>Imod: ${esc(s.sm.imod)}</span></span>` : ""}</div>` : "";
-  const link = (s) => `../${s.url}`;
+  // Mens avisen er lukket (se .htaccess), linker sagerne til kommunens egen side. Sæt AVIS_AABEN = true, når avisen åbner igen.
+  const AVIS_AABEN = false;
+  const link = (s) => (AVIS_AABEN ? `../${s.url}` : s.k);
   const kortet = (s, slags) => {
     if (slags === "lead") return `<article class="lead kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d)}</p>` : ""}${beslutning(s)}${tags(s)}</article>`;
     if (slags === "mini") return `<article class="mini kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3></article>`;
