@@ -1,0 +1,3 @@
+# Forsiden på sagsvagt.dk er tilmeldingssiden (vagt.html). Avisens forside ligger på /index.html.
+# Undermapper (udvalg/, bydel/, min/) har ingen vagt.html og viser derfor deres index.html som før.
+DirectoryIndex vagt.html index.html

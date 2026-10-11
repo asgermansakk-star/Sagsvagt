@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Min avis – Sagsvagt</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E0F14">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/avis.css">
+<style>
+  /* Min avis: brugerens egen udgave. Bygger på avis.css og tilføjer kun det, der er særligt for siden. */
+  [hidden] { display: none !important; }
+  .mh-nav button { all: unset; cursor: pointer; opacity: .82; }
+  .mh-nav button:hover { opacity: 1; text-decoration: underline; text-underline-offset: 6px; }
+  .mh-nav .ud { margin-left: auto; }
+
+  /* Lukket */
+  .lukket { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 56px; align-items: center; padding: 72px 0 96px; }
+  .lukket h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 1.04; letter-spacing: -.025em; margin: 0 0 18px; max-width: 14ch; }
+  .lukket .lead-p { font-family: var(--serif); font-size: 1.1875rem; line-height: 1.6; color: #3E3B40; max-width: 34em; margin: 0 0 26px; }
+  .lukket .knapper { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn.moerk { background: var(--nat); color: var(--kalk); }
+  .btn.moerk:hover { background: var(--grafit); }
+  .btn.linje { background: transparent; box-shadow: inset 0 0 0 1.5px var(--nat); }
+  .btn.linje:hover { background: var(--kalk-lys); }
+  .login { background: var(--moedet); color: var(--kalk); border-radius: 10px; padding: 30px 30px 26px; }
+  .login h2 { font-size: 1.1875rem; margin: 0 0 4px; letter-spacing: -.02em; }
+  .login p { margin: 0 0 18px; font-size: .9375rem; color: rgba(230,223,211,.8); }
+  .login label { display: block; font-size: .8125rem; font-weight: 600; margin-bottom: 6px; }
+  .login input { width: 100%; font: inherit; padding: 12px 14px; border-radius: 8px; border: 1.5px solid rgba(230,223,211,.3); background: rgba(230,223,211,.08); color: var(--kalk); }
+  .login button { margin-top: 12px; width: 100%; font: inherit; font-weight: 700; padding: 12px; border: 0; border-radius: 99px; background: var(--kalk); color: var(--nat); cursor: pointer; }
+  .login button:disabled { opacity: .5; cursor: not-allowed; }
+  .login button:not(:disabled):hover { background: var(--rosen); }
+  .login .fejl { color: var(--rosen); font-weight: 600; }
+  .login small { display: block; margin-top: 12px; font-size: .8125rem; color: rgba(230,223,211,.7); }
+
+  /* Udgavens top */
+  .ed { padding: 34px 0 22px; border-bottom: 2px solid var(--nat); }
+  .ed h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 4.2vw, 3rem); line-height: 1.06; letter-spacing: -.022em; margin: 0; }
+  .ed .sum { font-family: var(--serif); font-size: 1.25rem; line-height: 1.5; color: #3E3B40; margin: 8px 0 0; max-width: 46em; }
+  .ed .sum b { color: var(--nat); font-weight: 600; }
+  .mine { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 20px; }
+  .mine .lbl { font-size: .8125rem; font-weight: 700; margin-right: 4px; }
+  .emne { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border-radius: 99px; border: 1.5px solid var(--rule); background: transparent; color: var(--nat); cursor: pointer; }
+  .emne:hover { border-color: var(--nat); }
+  .emne[aria-pressed="true"].r { background: var(--rosen); border-color: var(--rosen); color: var(--bordeaux); }
+  .emne[aria-pressed="true"].b { background: var(--lyng); border-color: var(--lyng); color: var(--blaek); }
+  .emne .n { opacity: .6; margin-left: 4px; font-variant-numeric: tabular-nums; }
+  .tilpas { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border: 0; border-radius: 99px; background: var(--nat); color: var(--kalk); cursor: pointer; margin-left: auto; }
+
+  .panel { background: var(--kalk-lys); border-radius: 10px; padding: 22px 24px; margin-top: 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; }
+  .panel label { display: block; font-size: .8125rem; font-weight: 700; margin-bottom: 6px; }
+  .panel input, .panel select { width: 100%; font: inherit; font-size: .9375rem; padding: 10px 12px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--kalk); color: var(--nat); }
+  .panel .hint { font-size: .78rem; color: var(--muted); margin: 6px 0 0; }
+  .panel .slut { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: .8125rem; color: var(--muted); }
+  .panel .slut button { font: 600 .8125rem var(--sans); background: none; border: 0; color: var(--vin); cursor: pointer; padding: 0; }
+
+  /* Kort og mærker */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tag { font-size: .72rem; font-weight: 700; padding: 3px 9px; border-radius: 99px; }
+  .tag.r { background: var(--rosen); color: var(--bordeaux); }
+  .tag.b { background: var(--lyng); color: var(--blaek); }
+  .tag.o { background: var(--nat); color: var(--kalk); }
+  .kort { position: relative; }
+  .handl { position: absolute; top: -4px; right: -6px; display: flex; }
+  .ikon { width: 34px; height: 34px; display: grid; place-items: center; border: 0; background: none; cursor: pointer; color: var(--muted); border-radius: 50%; }
+  .ikon:hover { background: var(--kalk-lys); color: var(--nat); }
+  .gem[aria-pressed="true"] { color: var(--vin); }
+  .ikon svg { width: 18px; height: 18px; }
+  .kort .kicker, .kort .hl { padding-right: 72px; }
+  .lead .hl { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
+  .tom { font-family: var(--serif); color: var(--muted); padding: 16px 0; margin: 0; }
+  .dag { font-size: .78rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .06em; margin: 18px 0 2px; }
+  .dag:first-of-type { margin-top: 10px; }
+
+  /* Alle sager */
+  .alle { padding: 40px 0 64px; }
+  .vaerktoej { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin: 14px 0 6px; }
+  .faner { display: flex; flex-wrap: wrap; gap: 6px; }
+  .fane { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border-radius: 99px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+  .fane:hover { color: var(--nat); }
+  .fane[aria-selected="true"] { background: var(--nat); color: var(--kalk); }
+  .soeg { margin-left: auto; position: relative; }
+  .soeg input { font: inherit; font-size: .9375rem; padding: 9px 14px 9px 36px; border: 1.5px solid var(--rule); border-radius: 99px; background: var(--kalk-lys); width: 260px; max-width: 100%; }
+  .soeg svg { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; color: var(--muted); }
+  .liste { list-style: none; margin: 0; padding: 0; }
+  .liste li { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 20px; }
+  .liste .hl { font-size: 1.1875rem; line-height: 1.25; }
+  .liste .dek { font-size: .9688rem; line-height: 1.5; margin-top: 4px; }
+  .liste .tags { margin-top: 8px; }
+  .liste .handl { position: static; align-self: start; }
+  .flere { margin-top: 22px; font: 700 .9375rem var(--sans); padding: 11px 20px; border-radius: 99px; border: 0; background: var(--nat); color: var(--kalk); cursor: pointer; }
+  .antal { font-size: .8125rem; color: var(--muted); margin: 0; }
+  .indlaes { padding: 80px 0; text-align: center; color: var(--muted); }
+
+  /* Debat */
+  .debat { padding: 44px 0 4px; }
+  .debat .sec-h span { font-size: .8125rem; font-weight: 600; color: var(--muted); }
+  .debat-grid { display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr); gap: 0 44px; }
+  .indlaeg { padding: 22px 0 24px; border-bottom: 1px solid var(--rule); }
+  .indlaeg .hl { font-size: clamp(1.4rem, 2.6vw, 1.75rem); line-height: 1.15; }
+  .indlaeg .af { font-size: .875rem; font-weight: 700; margin: 10px 0 0; }
+  .indlaeg .af span { font-weight: 500; color: var(--muted); }
+  .indlaeg .tekst { font-family: var(--serif); font-size: 1.0625rem; line-height: 1.7; margin-top: 12px; max-width: 40em; }
+  .indlaeg .tekst p { margin: 0 0 12px; }
+  .indlaeg summary { cursor: pointer; font: 700 .875rem var(--sans); color: var(--vin); list-style: none; }
+  .indlaeg summary::-webkit-details-marker { display: none; }
+  .indlaeg details[open] summary { display: none; }
+  .om-sag { font-size: .8125rem; color: var(--muted); margin: 6px 0 0; }
+  .skriv-boks { background: var(--moedet); color: var(--kalk); border-radius: 10px; padding: 24px 24px 26px; align-self: start; margin-top: 18px; }
+  .skriv-boks h3 { margin: 0 0 8px; font-size: 1.25rem; letter-spacing: -.02em; }
+  .skriv-boks p { margin: 0 0 14px; font-size: .9375rem; color: rgba(230,223,211,.85); }
+  .skriv-boks ul { margin: 0 0 20px; padding-left: 18px; font-size: .875rem; color: rgba(230,223,211,.85); }
+  .skriv-boks button { font: 700 .9375rem var(--sans); border: 0; border-radius: 99px; padding: 11px 20px; background: var(--kalk); color: var(--nat); cursor: pointer; }
+  .skriv-boks button:hover { background: var(--rosen); }
+
+  dialog.skriv { width: min(720px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); border: 0; border-radius: 12px; padding: 0; background: var(--kalk); color: var(--nat); box-shadow: 0 40px 100px -30px rgba(0,0,0,.6); }
+  dialog.skriv::backdrop { background: rgba(14,15,20,.6); }
+  .skriv-top { background: var(--moedet); color: var(--kalk); padding: 20px 24px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; position: sticky; top: 0; z-index: 1; }
+  .skriv-top h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
+  .skriv-top p { margin: 4px 0 0; font-size: .875rem; color: rgba(230,223,211,.82); }
+  .luk { width: 36px; height: 36px; flex: none; display: grid; place-items: center; border: 0; border-radius: 50%; background: rgba(230,223,211,.12); color: var(--kalk); font-size: 1.375rem; line-height: 1; cursor: pointer; }
+  .luk:hover { background: rgba(230,223,211,.24); }
+  #skriv-form { padding: 22px 24px 24px; display: grid; gap: 14px; }
+  .felt label { display: block; font-size: .8125rem; font-weight: 700; margin-bottom: 6px; }
+  .felt input, .felt select, .felt textarea { width: 100%; font: inherit; font-size: .9688rem; padding: 10px 12px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--kalk-lys); color: var(--nat); }
+  .felt input:focus, .felt select:focus, .felt textarea:focus { border-color: var(--nat); outline: 0; }
+  .felt textarea { font-family: var(--serif); font-size: 1.0625rem; line-height: 1.6; min-height: 220px; resize: vertical; }
+  .felt .hl-in { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; }
+  .to { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .taeller { font-size: .78rem; color: var(--muted); text-align: right; margin: 4px 0 0; font-variant-numeric: tabular-nums; }
+  .taeller.over { color: var(--vin); font-weight: 700; }
+  .bekraeft { display: flex; gap: 10px; align-items: flex-start; font-size: .875rem; line-height: 1.5; }
+  .bekraeft input { margin-top: 2px; width: 18px; height: 18px; flex: none; accent-color: var(--vin); }
+  .send-raekke { display: flex; justify-content: space-between; align-items: center; gap: 12px 20px; flex-wrap: wrap; }
+  .send-raekke small { font-size: .78rem; color: var(--muted); flex: 1 1 260px; }
+  .send { font: 700 .9375rem var(--sans); border: 0; border-radius: 99px; padding: 12px 22px; background: var(--nat); color: var(--kalk); cursor: pointer; }
+  .send:disabled { opacity: .5; cursor: wait; }
+  .skriv-msg { font-size: .875rem; margin: 0; }
+  .skriv-msg:empty { display: none; }
+  .skriv-msg.fejl { color: var(--vin); font-weight: 600; }
+  .tak { padding: 40px 24px 44px; text-align: center; }
+  .tak h3 { font-family: var(--serif); font-size: 1.75rem; margin: 0 0 8px; }
+  .tak p { margin: 0 auto 22px; max-width: 32em; color: #3E3B40; }
+
+  @media (max-width: 960px) {
+    .debat-grid { grid-template-columns: 1fr; }
+    .lukket { grid-template-columns: 1fr; gap: 36px; padding: 48px 0 64px; }
+    .panel { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 620px) {
+    .tilpas { margin-left: 0; }
+    .soeg { margin-left: 0; width: 100%; } .soeg input { width: 100%; }
+    .mh-nav .ud { margin-left: 0; }
+    .to { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo" viewBox="0 0 964.08 300.00"><path fill="#E6DFD3" fill-rule="evenodd" transform="translate(50.00 50.00) scale(0.94340) translate(-51.03 -22.00)" d="M51 231.1C66.2 215.4 74.7 194.5 74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C195.7 121.9 187.6 165.2 160.4 196.1C133.1 227 91.1 240.4 51 231.1Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/><path fill="#E6DFD3" transform="translate(270.22 200.00) scale(0.14286)" d="M311.03446780836765 9.9051593323217Q229.12930847604596 9.9051593323217 154.0948406676783 -13.577606763494472Q79.06037285931065 -37.06037285931065 34.767288098851076 -74.28452200303491L80.29308476045958 -174.8878170388034Q122.4568610448732 -141.53435941903317 184.3922068068502 -119.68090179926295Q246.32755256882723 -97.82744417949274 311.2930847604596 -97.82744417949274Q366.1896813353566 -97.82744417949274 400.0560914805983 -109.72832213310211Q433.92250162584 -121.62920008671148 449.8880338174724 -142.31888142206807Q465.8535660091047 -163.00856275742467 465.8535660091047 -188.93962714068937Q465.8535660091047 -221.0 443.1121829611966 -240.27156947756342Q420.3707999132885 -259.54313895512684 383.6940711034034 -271.39659657489705Q347.0173422935183 -283.25005419466726 302.5345761977021 -293.0560914805983Q258.05181010188596 -302.8621287665294 213.50438976804682 -316.42678300455236Q168.95696943420768 -329.99143724257533 132.28024062432257 -351.68539995664423Q95.60351181443747 -373.3793626707132 72.86212876652938 -409.1379796228051Q50.120745718621286 -444.89659657489705 50.120745718621286 -500.89659657489705Q50.120745718621286 -558.0603728593106 80.52590505094298 -605.4655321916323Q110.93106438326468 -652.8706915239541 173.41811185779318 -681.3879254281378Q235.9051593323217 -709.9051593323217 331.7154779969651 -709.9051593323217Q394.87925428137873 -709.9051593323217 456.9137220897464 -694.0344678083677Q518.948189898114 -678.1637762844136 565.2412746585736 -648.0344678083677L523.844786473011 -546.6897897246911Q477.0689356167353 -575.3018642965533 427.2628983308042 -588.7372100585303Q377.45686104487316 -602.1725558205072 330.58616952091916 -602.1725558205072Q277.4309559939302 -602.1725558205072 243.4998916106655 -589.2070236288748Q209.56882722740082 -576.2414914372425 194.1032950357685 -554.9225016258399Q178.63776284413615 -533.6035118144374 178.63776284413615 -506.8017559072187Q178.63776284413615 -474.87069152395406 201.37914589204422 -455.66377628441364Q224.1205289399523 -436.45686104487316 260.7972577498374 -425.10340342510295Q297.4739865597225 -413.74994580533274 342.0214068935617 -403.57321699544764Q386.5688272274008 -393.39648818556253 431.051593323217 -380.26717970951654Q475.5343594190332 -367.1378712334706 512.2110882289182 -345.87925428137873Q548.8878170388034 -324.6206373292868 571.6292000867115 -288.92667461521785Q594.3705831346196 -253.23271190114892 594.3705831346196 -198.23271190114892Q594.3705831346196 -142.0689356167353 563.5300780403209 -94.66377628441361Q532.689572946022 -47.25861695209191 469.8318339475395 -18.676728809885105Q406.974094949057 9.9051593323217 311.03446780836765 9.9051593323217ZM1009.6035118144375 0.0V-108.31898981140256L1003.181118577932 -130.83622371558639V-320.06037285931063Q1003.181118577932 -374.8621287665294 969.9742033383916 -405.4397355300239Q936.767288098851 -436.0173422935183 869.5776067634945 -436.0173422935183Q824.7413830479081 -436.0173422935183 781.5172339041839 -421.9052677216562Q738.2930847604596 -407.79319314979404 707.8103186646434 -383.4397355300238L659.3189898114026 -474.10340342510295Q702.0948406676783 -506.7154779969651 761.6939627140689 -523.5861695209192Q821.2930847604596 -540.4568610448732 885.2930847604596 -540.4568610448732Q1001.0430305657924 -540.4568610448732 1064.6119661825278 -484.85773899848255Q1128.180901799263 -429.2586169520919 1128.180901799263 -313.155213526989V0.0ZM842.4138304790808 6.517233904183828Q781.5086711467592 6.517233904183828 736.5086711467592 -13.870691523954042Q691.5086711467592 -34.25861695209191 667.2026338608281 -70.58188814220681Q642.896596574897 -106.9051593323217 642.896596574897 -153.03446780836765Q642.896596574897 -198.19824409278127 664.6724474311727 -233.8922068068502Q686.4482982874486 -269.58616952091916 735.4181118577932 -290.76289833080426Q784.3879254281378 -311.93962714068937 865.0344678083677 -311.93962714068937H1019.9569694342076V-229.06037285931063H874.0430305657924Q810.180901799263 -229.06037285931063 788.0214068935617 -208.41811185779318Q765.8619119878604 -187.77585085627575 765.8619119878604 -157.8103186646434Q765.8619119878604 -124.00856275742467 792.986939085194 -104.1076848038153Q820.1119661825276 -84.20680685020594 867.7499458053328 -84.20680685020594Q914.2586169520919 -84.20680685020594 950.7371016691957 -104.97837632776935Q987.2155863862996 -125.74994580533276 1003.181118577932 -166.68101018859744L1024.3448948623454 -91.84478647301106Q1006.1207457186213 -44.77585085627574 959.767288098851 -19.129308476045956Q913.4138304790808 6.517233904183828 842.4138304790808 6.517233904183828ZM1500.6465423802297 200.51723390418383Q1426.6120745718622 200.51723390418383 1356.4827660958163 181.34050509429872Q1286.3534576197703 162.16377628441361 1240.5776067634945 124.68101018859744L1296.5517017125514 30.758725341426413Q1332.0344678083677 60.11218296119662 1385.452579666161 77.65960329503577Q1438.870691523954 95.20702362887491 1494.1896813353567 95.20702362887491Q1582.4742033383914 95.20702362887491 1623.357847387817 54.82337957944938Q1664.2414914372425 14.439735530023846 1664.2414914372425 -66.68101018859744V-162.3104270539779L1674.2414914372425 -282.68101018859744L1670.0173422935184 -403.92228484717106V-533.9396271406894H1789.2412746585737V-81.13787123347063Q1789.2412746585737 63.93106438326468 1715.1723390418383 132.22414914372425Q1641.103403425103 200.51723390418383 1500.6465423802297 200.51723390418383ZM1485.3793626707131 -23.905159332321702Q1408.5431389551268 -23.905159332321702 1347.2371016691957 -56.4051593323217Q1285.9310643832646 -88.9051593323217 1250.2371016691957 -147.03446780836765Q1214.5431389551268 -205.16377628441361 1214.5431389551268 -282.68101018859744Q1214.5431389551268 -360.1982440927813 1250.2371016691957 -418.32755256882723Q1285.9310643832646 -476.45686104487316 1347.2371016691957 -508.4568610448732Q1408.5431389551268 -540.4568610448732 1485.3793626707131 -540.4568610448732Q1552.896596574897 -540.4568610448732 1607.1035118144375 -513.3275525688273Q1661.310427053978 -486.1982440927813 1693.7587253414265 -429.00428137871234Q1726.207023628875 -371.8103186646434 1726.207023628875 -282.68101018859744Q1726.207023628875 -193.55170171255148 1693.7587253414265 -136.35773899848255Q1661.310427053978 -79.16377628441361 1607.1035118144375 -51.53446780836766Q1552.896596574897 -23.905159332321702 1485.3793626707131 -23.905159332321702ZM1503.5861695209192 -130.2498374159983Q1551.4827660958163 -130.2498374159983 1588.155213526989 -149.52140689356168Q1624.8276609581617 -168.79297637112506 1645.534576197702 -203.1593865163668Q1666.2414914372425 -237.5257966616085 1666.2414914372425 -282.68101018859744Q1666.2414914372425 -327.96553219163235 1645.534576197702 -362.26728809885105Q1624.8276609581617 -396.5690440060698 1588.155213526989 -415.3406134836332Q1551.4827660958163 -434.1121829611966 1503.5861695209192 -434.1121829611966Q1456.689572946022 -434.1121829611966 1419.5171255148493 -415.3406134836332Q1382.3446780836766 -396.5690440060698 1361.5731086061132 -362.26728809885105Q1340.8015391285498 -327.96553219163235 1340.8015391285498 -282.68101018859744Q1340.8015391285498 -237.5257966616085 1361.5731086061132 -203.1593865163668Q1382.3446780836766 -168.79297637112506 1419.5171255148493 -149.52140689356168Q1456.689572946022 -130.2498374159983 1503.5861695209192 -130.2498374159983ZM2088.456861044873 6.517233904183828Q2021.0689356167354 6.517233904183828 1959.5991220463907 -10.659494905701278Q1898.129308476046 -27.836223715586385 1862.2241491437242 -52.70691523954043L1910.2930847604596 -147.72404075438976Q1945.8103186646433 -124.72404075438976 1996.0042813787122 -109.98265770648167Q2046.1982440927814 -95.24127465857359 2096.0689356167354 -95.24127465857359Q2155.3534576197703 -95.24127465857359 2181.6077931931495 -110.94818989811402Q2207.862128766529 -126.65510513765446 2207.862128766529 -154.32755256882723Q2207.862128766529 -175.9051593323217 2189.991437242575 -187.5Q2172.120745718621 -199.0948406676783 2142.81470843269 -205.14226100151745Q2113.5086711467593 -211.1896813353566 2078.267288098851 -216.1250270973336Q2043.025905050943 -221.06037285931063 2007.719867765012 -229.6250270973336Q1972.4138304790808 -238.1896813353566 1943.1077931931497 -254.4482982874485Q1913.8017559072186 -270.7069152395404 1895.9310643832646 -299.0301864296553Q1878.0603728593107 -327.3534576197702 1878.0603728593107 -373.48276609581615Q1878.0603728593107 -423.7413830479081 1906.9482982874486 -461.38792542813786Q1935.8362237155864 -499.03446780836765 1988.3232711901148 -519.7456644266205Q2040.8103186646433 -540.4568610448732 2112.7844136137005 -540.4568610448732Q2166.689572946022 -540.4568610448732 2221.900769564275 -528.1508237589421Q2277.111966182528 -515.844786473011 2313.1464339908953 -493.7154779969651L2265.07749837416 -398.69835248211575Q2227.43095599393 -421.69835248211575 2188.6723390418383 -430.19835248211575Q2149.9137220897464 -438.69835248211575 2112.3016475178842 -438.69835248211575Q2055.3705831346197 -438.69835248211575 2027.680901799263 -421.99143724257533Q1999.9912204639063 -405.2845220030349 1999.9912204639063 -378.7413830479081Q1999.9912204639063 -355.4223932365055 2017.8619119878604 -343.32755256882723Q2035.7326035118144 -331.23271190114895 2065.0386407977458 -324.31460004335577Q2094.3446780836766 -317.39648818556253 2129.5860611315848 -312.46114242358556Q2164.827444179493 -307.5257966616085 2200.068827227401 -298.8964881855626Q2235.310210275309 -290.2671797095166 2264.61624756124 -274.4439085194017Q2293.922284847171 -258.6206373292868 2311.792976371125 -230.73271190114895Q2329.663667895079 -202.84478647301106 2329.663667895079 -157.58616952091916Q2329.663667895079 -107.71547799696509 2300.405050942987 -70.87497290266637Q2271.1464339908953 -34.03446780836766 2217.2886949924127 -13.758616952091915Q2163.43095599393 6.517233904183828 2088.456861044873 6.517233904183828ZM2540.155213526989 0.0 2311.4482982874483 -533.9396271406894H2440.7066984608714L2638.1809017992628 -62.94818989811402H2574.2930847604594L2777.543138955127 -533.9396271406894H2898.379145892044L2668.80153912855 0.0ZM3251.6035118144373 0.0V-108.31898981140256L3245.181118577932 -130.83622371558639V-320.06037285931063Q3245.181118577932 -374.8621287665294 3211.974203338392 -405.4397355300239Q3178.767288098851 -436.0173422935183 3111.5776067634943 -436.0173422935183Q3066.741383047908 -436.0173422935183 3023.5172339041837 -421.9052677216562Q2980.2930847604594 -407.79319314979404 2949.8103186646435 -383.4397355300238L2901.3189898114024 -474.10340342510295Q2944.0948406676785 -506.7154779969651 3003.693962714069 -523.5861695209192Q3063.2930847604594 -540.4568610448732 3127.2930847604594 -540.4568610448732Q3243.0430305657924 -540.4568610448732 3306.611966182528 -484.85773899848255Q3370.1809017992628 -429.2586169520919 3370.1809017992628 -313.155213526989V0.0ZM3084.413830479081 6.517233904183828Q3023.5086711467593 6.517233904183828 2978.5086711467593 -13.870691523954042Q2933.5086711467593 -34.25861695209191 2909.2026338608284 -70.58188814220681Q2884.896596574897 -106.9051593323217 2884.896596574897 -153.03446780836765Q2884.896596574897 -198.19824409278127 2906.6724474311727 -233.8922068068502Q2928.4482982874483 -269.58616952091916 2977.418111857793 -290.76289833080426Q3026.387925428138 -311.93962714068937 3107.0344678083675 -311.93962714068937H3261.9569694342076V-229.06037285931063H3116.0430305657924Q3052.1809017992628 -229.06037285931063 3030.0214068935616 -208.41811185779318Q3007.8619119878604 -187.77585085627575 3007.8619119878604 -157.8103186646434Q3007.8619119878604 -124.00856275742467 3034.986939085194 -104.1076848038153Q3062.111966182528 -84.20680685020594 3109.7499458053326 -84.20680685020594Q3156.258616952092 -84.20680685020594 3192.737101669196 -104.97837632776935Q3229.2155863862995 -125.74994580533276 3245.181118577932 -166.68101018859744L3266.3448948623454 -91.84478647301106Q3248.120745718621 -44.77585085627574 3201.767288098851 -19.129308476045956Q3155.413830479081 6.517233904183828 3084.413830479081 6.517233904183828ZM3742.6465423802297 200.51723390418383Q3668.612074571862 200.51723390418383 3598.4827660958163 181.34050509429872Q3528.3534576197703 162.16377628441361 3482.5776067634943 124.68101018859744L3538.5517017125517 30.758725341426413Q3574.0344678083675 60.11218296119662 3627.452579666161 77.65960329503577Q3680.870691523954 95.20702362887491 3736.1896813353565 95.20702362887491Q3824.4742033383914 95.20702362887491 3865.357847387817 54.82337957944938Q3906.2414914372425 14.439735530023846 3906.2414914372425 -66.68101018859744V-162.3104270539779L3916.2414914372425 -282.68101018859744L3912.017342293518 -403.92228484717106V-533.9396271406894H4031.2412746585737V-81.13787123347063Q4031.2412746585737 63.93106438326468 3957.1723390418383 132.22414914372425Q3883.103403425103 200.51723390418383 3742.6465423802297 200.51723390418383ZM3727.3793626707134 -23.905159332321702Q3650.543138955127 -23.905159332321702 3589.237101669196 -56.4051593323217Q3527.9310643832646 -88.9051593323217 3492.237101669196 -147.03446780836765Q3456.543138955127 -205.16377628441361 3456.543138955127 -282.68101018859744Q3456.543138955127 -360.1982440927813 3492.237101669196 -418.32755256882723Q3527.9310643832646 -476.45686104487316 3589.237101669196 -508.4568610448732Q3650.543138955127 -540.4568610448732 3727.3793626707134 -540.4568610448732Q3794.896596574897 -540.4568610448732 3849.1035118144373 -513.3275525688273Q3903.310427053978 -486.1982440927813 3935.7587253414267 -429.00428137871234Q3968.207023628875 -371.8103186646434 3968.207023628875 -282.68101018859744Q3968.207023628875 -193.55170171255148 3935.7587253414267 -136.35773899848255Q3903.310427053978 -79.16377628441361 3849.1035118144373 -51.53446780836766Q3794.896596574897 -23.905159332321702 3727.3793626707134 -23.905159332321702ZM3745.586169520919 -130.2498374159983Q3793.4827660958163 -130.2498374159983 3830.155213526989 -149.52140689356168Q3866.8276609581617 -168.79297637112506 3887.5345761977023 -203.1593865163668Q3908.2414914372425 -237.5257966616085 3908.2414914372425 -282.68101018859744Q3908.2414914372425 -327.96553219163235 3887.5345761977023 -362.26728809885105Q3866.8276609581617 -396.5690440060698 3830.155213526989 -415.3406134836332Q3793.4827660958163 -434.1121829611966 3745.586169520919 -434.1121829611966Q3698.689572946022 -434.1121829611966 3661.5171255148493 -415.3406134836332Q3624.3446780836766 -396.5690440060698 3603.5731086061132 -362.26728809885105Q3582.80153912855 -327.96553219163235 3582.80153912855 -282.68101018859744Q3582.80153912855 -237.5257966616085 3603.5731086061132 -203.1593865163668Q3624.3446780836766 -168.79297637112506 3661.5171255148493 -149.52140689356168Q3698.689572946022 -130.2498374159983 3745.586169520919 -130.2498374159983ZM4365.655105137655 6.517233904183828Q4277.905159332322 6.517233904183828 4229.706915239541 -38.84050509429872Q4181.508671146759 -84.19824409278127 4181.508671146759 -172.81888142206807V-651.7154779969651H4306.5084543680905V-175.6895729460221Q4306.5084543680905 -137.62920008671148 4326.1032950357685 -116.66366789507913Q4345.6981357034465 -95.69813570344678 4381.37058313462 -95.69813570344678Q4422.560264469977 -95.69813570344678 4450.655105137655 -117.66366789507913L4486.37058313462 -28.577606763494472Q4463.853349230436 -10.965532191632343 4431.706806850207 -2.2241491437242575Q4399.560264469977 6.517233904183828 4365.655105137655 6.517233904183828ZM4094.3189898114024 -434.2414914372426V-533.9396271406894H4449.853349230436V-434.2414914372426Z"/></symbol></svg>
+<header class="masthead">
+  <div class="wrap">
+    <div class="mh-row">
+      <a class="mh-logo" href="../index.html" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
+      <p class="mh-edition" id="udgave">Nyt fra byråd, udvalg og lokaludvalg</p>
+    </div>
+    <nav class="mh-nav" aria-label="Hovedmenu">
+      <a href="../index.html">Forside</a>
+      <a href="./" aria-current="page">Min avis</a>
+      <a href="#alle" data-aaben>Alle mine sager</a>
+      <a href="#debat" data-aaben>Debat</a>
+      <a href="#gemte" data-aaben>Gemte</a>
+      <button type="button" class="ud" id="logud" data-aaben title="Login kommer snart">Log ud</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <!-- Lukket: vises, indtil der er login -->
+  <div class="wrap" id="lukket" hidden>
+    <div class="lukket">
+      <div>
+        <p class="kicker"><span class="status kommer">Kommer snart</span></p>
+        <h1>Din egen udgave af Sagsvagt.</h1>
+        <p class="lead-p">Her samler vi de sager, der handler om dine emner: det, politikerne har besluttet, det, de skal tage stilling til, og det, der sker i din bydel. Vi åbner for login, når testperioden går i gang.</p>
+        <div class="knapper">
+          <a class="btn moerk" href="../vagt.html?fra=min-avis">Skriv dig op</a>
+          <a class="btn linje" href="../index.html">Læs avisen</a>
+        </div>
+      </div>
+      <form class="login" novalidate onsubmit="return false" aria-describedby="login-note">
+        <h2>Log ind</h2>
+        <p>Vi sender dig et login-link på mail. Ingen adgangskode.</p>
+        <label for="login-mail">Din e-mail</label>
+        <input id="login-mail" type="email" autocomplete="email" placeholder="navn@eksempel.dk" disabled>
+        <button type="submit" disabled>Send login-link</button>
+        <small id="login-note">Login er ikke åbnet endnu.</small>
+      </form>
+    </div>
+  </div>
+
+  <!-- Avisen: bygges af scriptet herunder -->
+  <div id="avis" hidden>
+    <div class="wrap">
+      <section class="ed" aria-labelledby="ed-h">
+        <p class="kicker" id="ed-kicker"></p>
+        <h1 id="ed-h"></h1>
+        <p class="sum" id="ed-sum"></p>
+        <div class="mine" id="mine"></div>
+        <form class="panel" id="panel" hidden onsubmit="return false">
+          <div>
+            <label for="p-navn">Hvad skal vi kalde dig?</label>
+            <input id="p-navn" autocomplete="given-name" placeholder="Dit fornavn">
+          </div>
+          <div>
+            <label for="p-ord">Dine egne ord</label>
+            <input id="p-ord" placeholder="fx Lersøparken, Valby Langgade">
+            <p class="hint">Adskil med komma. Vi finder sager, hvor ordene står.</p>
+          </div>
+          <div>
+            <label for="p-bydel">Din bydel</label>
+            <select id="p-bydel"><option value="">Vælg bydel …</option></select>
+          </div>
+          <div class="slut"><span>Dine valg gemmes kun i denne browser, indtil login er klar.</span><button type="button" id="p-nulstil">Nulstil</button></div>
+        </form>
+      </section>
+
+      <div class="front">
+        <div>
+          <h2 class="sec-h" style="margin-top:2px">Besluttet om dine emner</h2>
+          <div id="besluttet"></div>
+        </div>
+        <div class="rail">
+          <section aria-labelledby="h-kommer">
+            <h2 id="h-kommer" class="sec-h">Det skal de tage stilling til</h2>
+            <div id="kommer"></div>
+          </section>
+          <section aria-labelledby="h-bydel">
+            <h2 id="h-bydel" class="sec-h">Fra din bydel</h2>
+            <div id="bydel"></div>
+          </section>
+          <section aria-labelledby="h-gemte" id="gemte">
+            <h2 id="h-gemte" class="sec-h">Gemte sager</h2>
+            <div id="gemte-liste"></div>
+          </section>
+        </div>
+      </div>
+
+      <section class="debat" id="debat" aria-labelledby="h-debat">
+        <h2 id="h-debat" class="sec-h">Debat <span>Læsernes indlæg om sagerne</span></h2>
+        <div class="debat-grid">
+          <div id="indlaeg-liste"></div>
+          <aside class="skriv-boks">
+            <h3>Har du noget på hjerte?</h3>
+            <p>Skriv et indlæg om en sag fra byrådet, udvalgene eller din bydel. Redaktionen læser alle indlæg og bringer et udvalg.</p>
+            <ul><li>Højst 2.000 tegn</li><li>Under dit fulde navn</li><li>Fra alle partier og synspunkter</li></ul>
+            <button type="button" data-skriv="">Skriv et indlæg</button>
+          </aside>
+        </div>
+      </section>
+
+      <section class="alle" id="alle" aria-labelledby="h-alle">
+        <h2 id="h-alle" class="sec-h">Alle sager om dine emner</h2>
+        <div class="vaerktoej">
+          <div class="faner" role="tablist" aria-label="Filtrér efter emne" id="faner"></div>
+          <label class="soeg"><span class="sr" hidden>Søg</span>
+            <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input type="search" id="soeg" placeholder="Søg i alle sager" aria-label="Søg i alle sager">
+          </label>
+        </div>
+        <p class="antal" id="antal"></p>
+        <ul class="liste" id="liste"></ul>
+        <button class="flere" id="flere" type="button" hidden>Vis flere</button>
+      </section>
+    </div>
+  </div>
+
+  <p class="indlaes" id="indlaes" hidden>Henter dine sager …</p>
+
+  <dialog class="skriv" id="skriv" aria-labelledby="skriv-h">
+    <div class="skriv-top">
+      <div><h2 id="skriv-h">Skriv et indlæg</h2><p>Indlægget sendes til redaktionen. Vi skriver til dig, hvis vi bringer det.</p></div>
+      <button class="luk" type="button" data-luk aria-label="Luk">×</button>
+    </div>
+    <form id="skriv-form" novalidate>
+      <div class="felt"><label for="i-sag">Hvilken sag handler det om?</label><select id="i-sag" name="sag"></select></div>
+      <div class="felt"><label for="i-overskrift">Overskrift</label><input id="i-overskrift" name="overskrift" class="hl-in" maxlength="90" placeholder="Din pointe i én sætning"></div>
+      <div class="felt">
+        <label for="i-tekst">Dit indlæg</label>
+        <textarea id="i-tekst" name="tekst" aria-describedby="taeller"></textarea>
+        <p class="taeller" id="taeller">0 / 2.000 tegn</p>
+      </div>
+      <div class="to">
+        <div class="felt"><label for="i-navn">Fulde navn</label><input id="i-navn" name="navn" autocomplete="name"></div>
+        <div class="felt"><label for="i-titel">Titel eller rolle <span style="font-weight:500;color:var(--muted)">(valgfrit)</span></label><input id="i-titel" name="titel" placeholder="fx formand for en forening"></div>
+        <div class="felt"><label for="i-by">Bydel eller by</label><input id="i-by" name="by" placeholder="fx Nørrebro"></div>
+        <div class="felt"><label for="i-mail">E-mail <span style="font-weight:500;color:var(--muted)">(bringes ikke)</span></label><input id="i-mail" name="email" type="email" autocomplete="email"></div>
+      </div>
+      <label class="bekraeft"><input type="checkbox" name="bekraeftet" value="ja"><span>Jeg har selv skrevet indlægget, og det må bringes under mit navn med titel og bydel. Redaktionen må forkorte det og vælge overskrift. Læs, <a href="../privatliv.html" target="_blank">hvordan vi behandler dine oplysninger</a>.</span></label>
+      <p class="skriv-msg" id="skriv-msg" role="status" aria-live="polite"></p>
+      <div class="send-raekke">
+        <small>Indlæg udtrykker skribentens egen holdning. Vi bringer indlæg fra alle partier og synspunkter, men ikke personangreb eller usande påstande om andre.</small>
+        <button class="send" type="submit">Send til redaktionen</button>
+      </div>
+    </form>
+    <div class="tak" id="tak" hidden>
+      <h3>Tak for dit indlæg.</h3>
+      <p>Redaktionen har modtaget det, og du får en kvittering på mail. Vi læser alle indlæg og skriver til dig, hvis vi bringer dit.</p>
+      <button class="send" type="button" data-luk>Luk</button>
+    </div>
+  </dialog>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <svg viewBox="0 0 964.08 300.00" width="110" height="34" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg>
+    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="../om.html">Om Sagsvagt</a> · <a href="../privatliv.html">Privatliv</a></span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const esc = (s = "") => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const gemt = (k, v) => { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch { return null; } };
+
+  /* ---------- Adgang ----------
+     Siden er lukket, indtil login er bygget. Forpremiere: åbn min/?adgang=forpremiere (luk igen med ?adgang=luk).
+     Det er ikke sikkerhed, kun en lukket dør: sagerne er offentlige i forvejen. */
+  const q = new URLSearchParams(location.search);
+  if (q.get("adgang") === "forpremiere") gemt("sv-adgang", true);
+  if (q.get("adgang") === "luk") gemt("sv-adgang", false);
+  if (q.has("adgang")) history.replaceState(null, "", location.pathname + location.hash);
+  // Testlogin: på din egen computer (localhost) virker login-boksen med samme flow som det rigtige login via
+  // mail-link. Brugeren gemmes kun i browseren. På sagsvagt.dk er boksen slået fra, indtil der er et rigtigt login.
+  const LOKAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  const bruger = gemt("sv-bruger");
+  const aaben = !!(bruger && bruger.email) || gemt("sv-adgang") === true || q.get("adgang") === "forpremiere";
+  document.querySelectorAll("[data-aaben]").forEach((el) => (el.hidden = !aaben));
+  if (!aaben) { $("#lukket").hidden = false; if (LOKAL) testLogin(); return; }
+  $("#logud").title = bruger?.email ? `Logget ind som ${bruger.email}` : "Luk Min avis igen";
+  $("#logud").addEventListener("click", () => { gemt("sv-bruger", null); gemt("sv-adgang", false); location.href = location.pathname; });
+
+  function testLogin() {
+    const f = $(".login"), inp = $("#login-mail"), btn = $(".login button"), note = $("#login-note");
+    inp.disabled = btn.disabled = false;
+    note.textContent = "Testlogin: virker kun på din egen computer, indtil det rigtige login er bygget.";
+    f.onsubmit = (e) => {
+      e.preventDefault();
+      const email = inp.value.trim().toLowerCase();
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { note.className = "fejl"; note.textContent = "Skriv en gyldig e-mailadresse."; inp.focus(); return; }
+      f.innerHTML = `<h2>Tjek din mail</h2><p>Vi har sendt et login-link til <b>${esc(email)}</b>. Linket virker i 15 minutter.</p>`
+        + `<button type="button" id="aabn-link">Åbn login-linket</button>`
+        + `<small>Lokal test: knappen svarer til at klikke på linket i mailen. <a href="#" id="andet" style="color:inherit">Brug en anden e-mail</a></small>`;
+      $("#aabn-link").focus();
+      $("#aabn-link").onclick = () => { gemt("sv-bruger", { email, loggetInd: new Date().toISOString() }); location.reload(); };
+      $("#andet").onclick = (ev) => { ev.preventDefault(); location.reload(); };
+    };
+  }
+
+  /* ---------- Emner ---------- */
+  // Korte ord matches som hele ord (med bøjning), lange ord også inde i sammensatte ord ("cykelsti" i "supercykelstien").
+  const EMNER = {
+    trafik:  { navn: "Trafik og cykler", f: "b", ord: ["trafik", "cykel", "cykler", "cyklist", "vejarbejde", "vejbelysning", "bil", "bus", "metro", "letbane", "gågade", "parkering", "fortov", "fodgænger", "trafiksikker", "hastighed", "krydset"] },
+    klima:   { navn: "Klima og grønt", f: "r", ord: ["klima", "skybrud", "regnvand", "træ", "natur", "grøn", "park", "biodiversitet", "kloak", "co2", "energi", "solcelle"] },
+    affald:  { navn: "Affald", f: "b", ord: ["affald", "skrald", "renovation", "genbrug", "tømning", "storskrald"] },
+    bolig:   { navn: "Boliger", f: "r", ord: ["bolig", "lejlighed", "almene", "husleje", "udlejning", "boligområde"] },
+    byggeri: { navn: "Byggeri og lokalplaner", f: "b", ord: ["byggeri", "lokalplan", "byplan", "servitut", "byggesag", "bevaring", "kommuneplan", "dispensation", "bebyggelse", "nedrivning"] },
+    skole:   { navn: "Skoler og børn", f: "r", ord: ["skole", "dagtilbud", "børnehave", "vuggestue", "børn", "institution", "fritidshjem", "klub", "elever", "undervisning"] },
+    aeldre:  { navn: "Ældre og sundhed", f: "b", ord: ["ældre", "plejehjem", "hjemmepleje", "sundhed", "omsorg", "senior", "demens", "rehabilitering"] },
+    social:  { navn: "Det sociale", f: "r", ord: ["hjemløs", "udsat", "misbrug", "handicap", "botilbud", "psykiatri", "socialt", "sociale"] },
+    budget:  { navn: "Budget og økonomi", f: "b", ord: ["budget", "bevilling", "anlægsbevilling", "anlægsoversigt", "skat", "overførsel", "besparelse", "regnskab"] },
+    kultur:  { navn: "Kultur og fritid", f: "r", ord: ["kultur", "bibliotek", "kunst", "teater", "museum", "idræt", "svømmehal", "forening"] },
+    erhverv: { navn: "Erhverv og job", f: "b", ord: ["erhverv", "beskæftigelse", "ledig", "job", "virksomhed", "turisme", "natteliv", "udeservering"] },
+  };
+  const BOGSTAV = "a-zæøåéü0-9";
+  const regex = (ord) => new RegExp(ord.map((o) => {
+    const w = o.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return w.length <= 4 ? `(?<![${BOGSTAV}])${w}(e|er|en|et|erne|ene|ets|s)?(?![${BOGSTAV}])` : w;
+  }).join("|"), "i");
+  for (const e of Object.values(EMNER)) e.re = regex(e.ord);
+  // Udvalgs- og forvaltningsnavne fjernes før match, ellers handler alt fra "Klima-, Miljø- og Teknikudvalget" om klima
+  const ORG = /(?:[\wæøå]+-,?\s+)*(?:og\s+)?[\wæøå]*(?:udvalg|forvaltning)[\wæøå]*/gi;
+  const emneTekst = (s) => (s._e ??= `${s.t} ${s.d}`.replace(ORG, " "));
+  const titelTekst = (s) => (s._t ??= s.t.replace(ORG, " "));
+
+  /* ---------- Profil (gemmes i browseren, indtil login er klar) ---------- */
+  const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [] };
+  const PKEY = bruger?.email ? `sv-profil:${bruger.email}` : "sv-profil";
+  let profil = { ...STANDARD, ...(gemt(PKEY) || gemt("sv-profil") || {}) };
+  const gem = () => gemt(PKEY, profil);
+
+  /* ---------- Dato ---------- */
+  const IDAG = new Date().toISOString().slice(0, 10);
+  const dag = (iso) => new Date(iso + "T12:00:00Z");
+  const dato = (iso, o) => dag(iso).toLocaleDateString("da-DK", { timeZone: "UTC", ...o });
+  const kort = (iso) => dato(iso, { day: "numeric", month: "long" });
+  const ugenr = (iso) => { const t = dag(iso); const d = (t.getUTCDay() + 6) % 7; t.setUTCDate(t.getUTCDate() - d + 3); const f = new Date(Date.UTC(t.getUTCFullYear(), 0, 4)); return 1 + Math.round(((t - f) / 864e5 - 3 + ((f.getUTCDay() + 6) % 7)) / 7); };
+  const alder = (iso) => (dag(IDAG) - dag(iso)) / 864e5;
+  const stor = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  const ugedag = dato(IDAG, { weekday: "long" });
+  const hilsen = () => { const h = new Date().getHours(); return h < 10 ? "God morgen" : h < 18 ? `God ${ugedag}` : "God aften"; };
+
+  /* ---------- Data ---------- */
+  let SAGER = [];
+  const lokal = (u) => /Lokaludvalg$/.test(u);
+  const bydelNavn = (u) => u.replace(/\s*Lokaludvalg$/, "");
+
+  const match = (s) => {
+    const tekst = emneTekst(s);
+    const emner = profil.emner.filter((id) => EMNER[id]?.re.test(tekst));
+    const ord = profil.ord.filter((o) => o && tekst.toLowerCase().includes(o.toLowerCase()));
+    return { emner, ord };
+  };
+  const vurder = (s) => {
+    const m = match(s);
+    const hits = m.emner.length + m.ord.length * 2;
+    // Titlen tæller mest: står emnet i overskriften, handler sagen om det
+    const iTitel = profil.emner.filter((id) => EMNER[id].re.test(titelTekst(s))).length + profil.ord.filter((o) => s.t.toLowerCase().includes(o.toLowerCase())).length;
+    return { ...s, m, hits, score: s.v * 6 + hits * 4 + iTitel * 8 - Math.max(0, alder(s.dato)) * 0.35 - s.r * 25 };
+  };
+
+  /* ---------- Byggeklodser ---------- */
+  const STJERNE = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5l2.3 4.9 5.2.6-3.9 3.6 1.1 5.2L10 14.2l-4.7 2.6 1.1-5.2L2.5 8l5.2-.6z" fill="currentColor"/></svg>';
+  const STJERNE_TOM = STJERNE.replace('fill="currentColor"', 'fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"');
+  const gemKnap = (s) => { const g = profil.gemte.includes(s.id); return `<button class="ikon gem" type="button" data-gem="${esc(s.id)}" aria-pressed="${g}" aria-label="${g ? "Fjern fra gemte" : "Gem sagen"}">${g ? STJERNE : STJERNE_TOM}</button>`; };
+  const SKRIV = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M13.4 3.6l3 3L7 16H4v-3zM11.6 5.4l3 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>';
+  const skrivKnap = (s) => `<button class="ikon" type="button" data-skriv="${esc(s.id)}" aria-label="Skriv et indlæg om sagen" title="Skriv et indlæg om sagen">${SKRIV}</button>`;
+  const handl = (s) => `<div class="handl">${skrivKnap(s)}${gemKnap(s)}</div>`;
+  const hvor = (u) => (lokal(u) ? `${bydelNavn(u)} Lokaludvalg` : u);
+  const kicker = (s) => {
+    const st = s.st === "besluttet" ? `<span class="status besluttet">Besluttet ${kort(s.dato)}</span>`
+      : s.st === "kommer" ? `<span class="status kommer">På dagsordenen ${kort(s.dato)}</span>`
+      : `<span class="status">Behandlet ${kort(s.dato)}</span>`;
+    return `<p class="kicker">${st}, ${esc(hvor(s.u))}</p>`;
+  };
+  const tags = (s) => {
+    const t = [...s.m.emner.map((id) => `<span class="tag ${EMNER[id].f}">${esc(EMNER[id].navn)}</span>`), ...s.m.ord.map((o) => `<span class="tag o">${esc(o)}</span>`)];
+    return t.length ? `<div class="tags">${t.join("")}</div>` : "";
+  };
+  const beslutning = (s) => s.st === "besluttet" && s.ud
+    ? `<div class="decision"><b>Beslutning</b>${esc(s.ud)}${s.sm ? `<span class="votes"><span>For: ${esc(s.sm.for)}</span><span>Imod: ${esc(s.sm.imod)}</span></span>` : ""}</div>` : "";
+  const link = (s) => `../${s.url}`;
+  const kortet = (s, slags) => {
+    if (slags === "lead") return `<article class="lead kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d)}</p>` : ""}${beslutning(s)}${tags(s)}</article>`;
+    if (slags === "mini") return `<article class="mini kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3></article>`;
+    return `<article class="kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 180 ? s.d.slice(0, 180).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</article>`;
+  };
+  const tom = (tekst) => `<p class="tom">${tekst}</p>`;
+
+  /* ---------- Tegn siden ---------- */
+  let fane = "alle", soeg = "", vist = 20;
+
+  function tegnMine() {
+    const antal = (id) => SAGER.filter((s) => !s.r && EMNER[id].re.test(emneTekst(s))).length;
+    $("#mine").innerHTML = `<span class="lbl">Du følger</span>`
+      + Object.entries(EMNER).map(([id, e]) => `<button type="button" class="emne ${e.f}" data-emne="${id}" aria-pressed="${profil.emner.includes(id)}">${esc(e.navn)}<span class="n">${antal(id)}</span></button>`).join("")
+      + `<button type="button" class="tilpas" id="tilpas" aria-expanded="${!$("#panel").hidden}" aria-controls="panel">Tilpas</button>`;
+  }
+
+  function tegn() {
+    const mine = SAGER.map(vurder).filter((s) => s.hits > 0);
+    const sket = mine.filter((s) => s.st !== "kommer");
+    let nye = sket.filter((s) => alder(s.dato) <= 30);
+    if (nye.length < 5) nye = sket.filter((s) => alder(s.dato) <= 120);
+    nye.sort((a, b) => b.score - a.score);
+    const kommende = mine.filter((s) => s.st === "kommer" && !s.r).sort((a, b) => a.dato.localeCompare(b.dato) || b.score - a.score);
+
+    // Toppen
+    const navn = profil.navn.trim();
+    $("#ed-kicker").innerHTML = `<span class="status">Din udgave</span> · ${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long" })))} · Uge ${ugenr(IDAG)}`;
+    const nBesl = sket.filter((s) => alder(s.dato) <= 14 && s.st === "besluttet").length;
+    const nKom = kommende.filter((s) => -alder(s.dato) <= 14).length;
+    const tal = (n, en, flere) => `${n === 0 ? "ingen" : n} ${n === 1 ? en : flere}`;
+    $("#ed-h").textContent = `${hilsen()}${navn ? `, ${navn}` : ""}.`;
+    $("#ed-sum").innerHTML = profil.emner.length || profil.ord.length
+      ? `De seneste 14 dage er der truffet <b>${tal(nBesl, "beslutning", "beslutninger")}</b> om det, du følger. De næste 14 dage er <b>${tal(nKom, "sag", "sager")}</b> på dagsordenen.`
+      : "Vælg de emner, du vil følge, så samler vi sagerne her.";
+    $("#udgave").innerHTML = `<b>${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long", year: "numeric" })))}</b><br>${bruger?.email ? `Logget ind som ${esc(bruger.email)}` : `Din udgave · uge ${ugenr(IDAG)}`}`;
+    tegnMine();
+
+    // Besluttet: én stor historie og et gitter
+    const [top, ...rest] = nye;
+    $("#besluttet").innerHTML = top
+      ? kortet(top, "lead") + `<div class="second">${rest.slice(0, 6).map((s) => kortet(s)).join("")}</div>`
+      : tom("Der er ingen nye beslutninger om dine emner endnu. Vælg flere emner, eller tilføj dine egne ord under Tilpas.");
+
+    // Kommende, grupperet pr. mødedag
+    const grp = {};
+    for (const s of kommende.slice(0, 8)) (grp[s.dato] ||= []).push(s);
+    $("#kommer").innerHTML = Object.keys(grp).length
+      ? Object.entries(grp).map(([d, l]) => `<p class="dag">${esc(stor(dato(d, { weekday: "long", day: "numeric", month: "long" })))}</p>${l.map((s) => kortet(s, "mini")).join("")}`).join("")
+      : tom("Ingen kommende møder har sager om dine emner endnu.");
+
+    // Bydel
+    if (profil.bydel) {
+      const b = SAGER.filter((s) => s.u === profil.bydel && !s.r).slice(0, 5).map(vurder);
+      $("#h-bydel").textContent = `Fra ${bydelNavn(profil.bydel)}`;
+      $("#bydel").innerHTML = b.length ? b.map((s) => kortet(s, "mini")).join("") : tom("Ingen nye sager fra lokaludvalget.");
+    } else {
+      $("#h-bydel").textContent = "Fra din bydel";
+      $("#bydel").innerHTML = tom(`Vælg din bydel under <a href="#" data-tilpas>Tilpas</a>, så får du lokaludvalgets sager her.`);
+    }
+
+    // Gemte
+    const g = profil.gemte.map((id) => SAGER.find((s) => s.id === id)).filter(Boolean).map(vurder);
+    $("#gemte-liste").innerHTML = g.length ? g.map((s) => kortet(s, "mini")).join("") : tom("Tryk på stjernen ved en sag for at gemme den her.");
+
+    tegnListe(mine);
+    tegnDebat();
+  }
+
+  /* ---------- Debat ----------
+     Læserne sender indlæg til redaktionen via formularen. Bragte indlæg lægges i min/indlaeg.json:
+     { "indlaeg": [ { "id": "…", "dato": "2026-10-12", "overskrift": "…", "tekst": "Afsnit\n\nAfsnit", "navn": "…", "titel": "…", "by": "…", "sag": "<sagens id>" } ] } */
+  let INDLAEG = [];
+  const afsnit = (t) => t.split(/\n{2,}/).map((p) => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("");
+  function tegnDebat() {
+    const l = [...INDLAEG].sort((a, b) => b.dato.localeCompare(a.dato)).slice(0, 8);
+    $("#indlaeg-liste").innerHTML = l.length ? l.map((i) => {
+      const sag = SAGER.find((s) => s.id === i.sag);
+      const [foerste, ...resten] = i.tekst.trim().split(/\n{2,}/);
+      const af = [i.titel, i.by].filter(Boolean).map(esc).join(", ");
+      return `<article class="indlaeg"><p class="kicker"><span class="status besluttet">Indlæg</span> · ${esc(kort(i.dato))}</p>`
+        + `<h3 class="hl">${esc(i.overskrift)}</h3><p class="af">${esc(i.navn)}${af ? `, <span>${af}</span>` : ""}</p>`
+        + `<div class="tekst">${afsnit(foerste)}${resten.length ? `<details><summary>Læs hele indlægget</summary>${afsnit(resten.join("\n\n"))}</details>` : ""}</div>`
+        + `${sag ? `<p class="om-sag">Om sagen: <a href="${link(sag)}">${esc(sag.t)}</a></p>` : ""}</article>`;
+    }).join("") : tom("Der er ingen indlæg endnu. Skriv det første om en sag, du har en holdning til.");
+  }
+
+  // Alle indlæg sendes direkte til redaktionen (mansa@sagsvagt.dk) via FormSubmit. Første indsendelse udløser en
+  // aktiveringsmail fra FormSubmit til mansa@; indtil der er klikket "Activate Form", går indlæg ikke igennem,
+  // og skribenten får i stedet en færdigudfyldt mail til redaktionen.
+  const REDAKTION = "mansa@sagsvagt.dk";
+  const FORM_ENDPOINT = `https://formsubmit.co/ajax/${REDAKTION}`;
+  const KVITTERING = "Tak for dit indlæg til Sagsvagt.\n\n"
+    + "Redaktionen har modtaget det. Vi læser alle indlæg og skriver til dig, hvis vi bringer dit. Vi kan forkorte indlægget og vælge en anden overskrift.\n\n"
+    + "Har du spørgsmål, så skriv til mansa@sagsvagt.dk.\n"
+    + "Sådan behandler vi dine oplysninger: https://sagsvagt.dk/privatliv.html\n\n"
+    + "Venlig hilsen\nSagsvagt";
+  const MAKS = 2000, MIN = 200, KLADDE = "sv-kladde";
+  const dlg = $("#skriv"), sf = $("#skriv-form"), FELTER = ["overskrift", "tekst", "navn", "titel", "by", "email"];
+  const taeller = () => { const n = sf.tekst.value.length; $("#taeller").textContent = `${n.toLocaleString("da-DK")} / ${MAKS.toLocaleString("da-DK")} tegn`; $("#taeller").classList.toggle("over", n > MAKS); };
+  function aabnSkriv(id) {
+    const mine = SAGER.map(vurder).filter((s) => s.hits > 0 && !s.r).sort((a, b) => b.dato.localeCompare(a.dato)).slice(0, 40);
+    const valgt = id && SAGER.find((s) => s.id === id);
+    const opts = valgt && !mine.some((s) => s.id === id) ? [valgt, ...mine] : mine;
+    $("#i-sag").innerHTML = `<option value="">Ingen bestemt sag</option>`
+      + opts.map((s) => `<option value="${esc(s.id)}">${esc(kort(s.dato))}: ${esc(s.t.length > 72 ? s.t.slice(0, 72).replace(/\s+\S*$/, "") + " …" : s.t)}</option>`).join("");
+    $("#i-sag").value = valgt ? id : "";
+    const k = gemt(KLADDE) || {};
+    for (const n of FELTER) if (k[n] && !sf[n].value) sf[n].value = k[n];
+    if (!sf.email.value && bruger?.email) sf.email.value = bruger.email;
+    sf.hidden = false; $("#tak").hidden = true; $("#skriv-msg").textContent = ""; taeller();
+    dlg.showModal();
+    (valgt ? sf.overskrift : sf.sag).focus();
+  }
+  sf.addEventListener("input", () => { taeller(); gemt(KLADDE, Object.fromEntries(FELTER.map((n) => [n, sf[n].value]))); });
+  dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+  sf.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const v = Object.fromEntries(FELTER.map((n) => [n, sf[n].value.trim()]));
+    const msg = $("#skriv-msg"), btn = $(".send", sf);
+    const fejl = !v.overskrift ? ["overskrift", "Giv indlægget en overskrift."]
+      : v.tekst.length < MIN ? ["tekst", `Indlægget skal være på mindst ${MIN} tegn.`]
+      : v.tekst.length > MAKS ? ["tekst", `Indlægget må højst være på ${MAKS.toLocaleString("da-DK")} tegn. Det er ${(v.tekst.length - MAKS).toLocaleString("da-DK")} tegn for langt.`]
+      : !/\S\s+\S/.test(v.navn) ? ["navn", "Skriv dit fulde navn. Vi bringer kun indlæg under fuldt navn."]
+      : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email) ? ["email", "Skriv en gyldig e-mail, så vi kan kontakte dig."]
+      : !sf.bekraeftet.checked ? ["bekraeftet", "Sæt kryds for at bekræfte, at indlægget må bringes."] : null;
+    if (fejl) { msg.className = "skriv-msg fejl"; msg.textContent = fejl[1]; sf[fejl[0]].focus(); return; }
+    const sag = SAGER.find((s) => s.id === sf.sag.value);
+    const data = {
+      overskrift: v.overskrift, tekst: v.tekst, navn: v.navn, titel: v.titel, by: v.by, email: v.email,
+      sag: sag ? `${sag.t} (${hvor(sag.u)}, ${kort(sag.dato)})` : "Ingen bestemt sag",
+      sag_id: sag ? sag.id : "", sag_link: sag ? new URL(link(sag), location.href).href : "", tegn: v.tekst.length, kilde: "min-avis",
+      _subject: `Nyt indlæg: ${v.overskrift}`, _template: "table", _autoresponse: KVITTERING,
+    };
+    btn.disabled = true; msg.className = "skriv-msg"; msg.textContent = "Sender …";
+    try {
+      const res = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
+      const out = await res.json().catch(() => ({}));
+      if (!res.ok || String(out.success) === "false") throw new Error(out.message || res.status);
+      gemt(KLADDE, {}); sf.reset(); sf.hidden = true; $("#tak").hidden = false; $("#tak .send").focus();
+    } catch (err) {
+      console.warn("Indlæg fejlede:", err.message);
+      const mail = `mailto:${REDAKTION}?subject=${encodeURIComponent(`Indlæg: ${v.overskrift}`)}&body=${encodeURIComponent(`${v.overskrift}\n\n${v.tekst}\n\n${v.navn}${v.titel ? `, ${v.titel}` : ""}${v.by ? `, ${v.by}` : ""}\nSag: ${data.sag}\n`)}`;
+      msg.className = "skriv-msg fejl";
+      msg.innerHTML = `Indlægget kunne ikke sendes automatisk. Din tekst er gemt her. <a href="${mail}">Send det som mail i stedet</a>.`;
+    } finally { btn.disabled = false; }
+  });
+
+  function tegnListe(mine = SAGER.map(vurder).filter((s) => s.hits > 0)) {
+    const brugte = [...profil.emner, ...(profil.ord.length ? ["ord"] : [])];
+    if (fane !== "alle" && !brugte.includes(fane)) fane = "alle";
+    $("#faner").innerHTML = [["alle", "Alle"], ...profil.emner.map((id) => [id, EMNER[id].navn]), ...(profil.ord.length ? [["ord", "Dine ord"]] : [])]
+      .map(([id, n]) => `<button type="button" role="tab" class="fane" data-fane="${id}" aria-selected="${fane === id}">${esc(n)}</button>`).join("");
+    const q = soeg.trim().toLowerCase();
+    let liste = q ? SAGER.map(vurder).filter((s) => `${s.t} ${s.d} ${s.x} ${s.u}`.toLowerCase().includes(q)) : mine;
+    if (fane === "ord") liste = liste.filter((s) => s.m.ord.length);
+    else if (fane !== "alle") liste = liste.filter((s) => s.m.emner.includes(fane));
+    liste = liste.filter((s) => !s.r || q).sort((a, b) => b.dato.localeCompare(a.dato) || b.score - a.score);
+    $("#antal").textContent = q ? `${liste.length} sager matcher "${soeg.trim()}"` : `${liste.length} sager`;
+    $("#liste").innerHTML = liste.length
+      ? liste.slice(0, vist).map((s) => `<li><div>${kicker(s)}<h3 class="hl"><a href="${link(s)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 220 ? s.d.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</div>${handl(s)}</li>`).join("")
+      : `<li>${tom(q ? "Ingen sager matcher søgningen." : "Ingen sager endnu.")}</li>`;
+    $("#flere").hidden = liste.length <= vist;
+  }
+
+  /* ---------- Tilpas ---------- */
+  function fyldPanel() {
+    $("#p-navn").value = profil.navn;
+    $("#p-ord").value = profil.ord.join(", ");
+    const bydele = [...new Set(SAGER.map((s) => s.u).filter(lokal))].sort((a, b) => a.localeCompare(b, "da"));
+    $("#p-bydel").innerHTML = `<option value="">Vælg bydel …</option>` + bydele.map((u) => `<option value="${esc(u)}"${u === profil.bydel ? " selected" : ""}>${esc(bydelNavn(u))}</option>`).join("");
+  }
+  const vend = () => { const p = $("#panel"); p.hidden = !p.hidden; $("#tilpas")?.setAttribute("aria-expanded", String(!p.hidden)); if (!p.hidden) $("#p-navn").focus(); };
+
+  document.addEventListener("click", (e) => {
+    const t = e.target.closest("[data-emne],[data-gem],[data-skriv],[data-luk],[data-fane],#tilpas,[data-tilpas],#flere,#p-nulstil");
+    if (!t) return;
+    if (t.dataset.skriv !== undefined) aabnSkriv(t.dataset.skriv);
+    else if (t.dataset.luk !== undefined) dlg.close();
+    else if (t.dataset.emne) {
+      const id = t.dataset.emne;
+      profil.emner = profil.emner.includes(id) ? profil.emner.filter((x) => x !== id) : [...profil.emner, id];
+      gem(); vist = 20; tegn();
+    } else if (t.dataset.gem) {
+      const id = t.dataset.gem;
+      profil.gemte = profil.gemte.includes(id) ? profil.gemte.filter((x) => x !== id) : [id, ...profil.gemte];
+      gem(); tegn();
+    } else if (t.dataset.fane) { fane = t.dataset.fane; vist = 20; tegnListe(); }
+    else if (t.id === "flere") { vist += 20; tegnListe(); }
+    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte }; gem(); fyldPanel(); tegn(); }
+    else { e.preventDefault(); if (t.dataset.tilpas !== undefined) $("#panel").hidden = true; vend(); scrollTo({ top: 0, behavior: "smooth" }); }
+  });
+  $("#p-navn").addEventListener("input", (e) => { profil.navn = e.target.value.slice(0, 40); gem(); tegn(); });
+  $("#p-ord").addEventListener("change", (e) => { profil.ord = e.target.value.split(",").map((o) => o.trim()).filter((o) => o.length > 1).slice(0, 12); gem(); tegn(); });
+  $("#p-bydel").addEventListener("change", (e) => { profil.bydel = e.target.value; gem(); tegn(); });
+  let t0; $("#soeg").addEventListener("input", (e) => { clearTimeout(t0); t0 = setTimeout(() => { soeg = e.target.value; vist = 20; tegnListe(); }, 120); });
+
+  /* ---------- Start ---------- */
+  $("#indlaes").hidden = false;
+  const hent = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); });
+  Promise.all([hent("sager.json"), hent("indlaeg.json").catch(() => ({ indlaeg: [] }))])
+    .then(([data, debat]) => {
+      SAGER = data.sager; INDLAEG = debat.indlaeg || [];
+      $("#indlaes").hidden = true; $("#avis").hidden = false;
+      fyldPanel(); tegn();
+    })
+    .catch((err) => { console.warn(err); $("#indlaes").textContent = "Vi kunne ikke hente sagerne lige nu. Prøv igen om lidt."; });
+})();
+</script>
+</body>
+</html>

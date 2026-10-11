@@ -112,13 +112,13 @@ ${LOGO_SYMBOL}
 <header class="masthead">
   <div class="wrap">
     <div class="mh-row">
-      <a class="mh-logo" href="${rod}./" aria-label="Sagsvagt, til forsiden">${logo(168, 52)}</a>
+      <a class="mh-logo" href="${rod}index.html" aria-label="Sagsvagt, til forsiden">${logo(168, 52)}</a>
       ${aktiv === "forside"
         ? `<p class="mh-edition"><b>${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}</b><br>Uge ${ugenr(IDAG)}. Nyt fra byråd, udvalg og lokaludvalg</p>`
         : `<p class="mh-edition">Nyt fra byråd, udvalg og lokaludvalg</p>`}
     </div>
     <nav class="mh-nav" aria-label="Hovedmenu">
-      <a href="${rod}./"${aktiv === "forside" ? ' aria-current="page"' : ""}>Forside</a>
+      <a href="${rod}index.html"${aktiv === "forside" ? ' aria-current="page"' : ""}>Forside</a>
       <a href="${rod}udvalg/borgerrepraesentationen.html"${aktiv === "br" ? ' aria-current="page"' : ""}>Borgerrepræsentationen</a>
       <a href="${rod}udvalg/"${aktiv === "udvalg" ? ' aria-current="page"' : ""}>Udvalg</a>
       <a href="${rod}bydel/"${aktiv === "bydel" ? ' aria-current="page"' : ""}>Bydele</a>
@@ -220,7 +220,7 @@ async function main() {
   await writeFile(join(ROD, "index.html"), side({
     titel: "Sagsvagt – nyt fra byråd og udvalg i København",
     beskrivelse: "Det, politikerne i Københavns Kommune har besluttet og skal tage stilling til. Fra Borgerrepræsentationen, udvalgene og lokaludvalgene, hentet fra de officielle referater.",
-    sti: "", rod: "", indhold: forside, aktiv: "forside",
+    sti: "index.html", rod: "", indhold: forside, aktiv: "forside",
   }));
 
   // Sagssider
@@ -296,8 +296,19 @@ async function main() {
 </div></div>`,
   }));
 
+  // Data til Min avis (min/index.html, lukket indtil login): en kompakt udgave af alle publicerede sager.
+  // x er en kort tekst fra sagen, som siden matcher brugerens emner imod.
+  await mkdir(join(ROD, "min"), { recursive: true });
+  await writeFile(join(ROD, "min", "sager.json"), JSON.stringify({
+    opdateret: IDAG,
+    sager: sager.map((s) => ({
+      id: s.id, t: s.titel, d: s.dek, u: s.udvalg, dato: s.dato, st: s.status, ud: s.udfald, sm: s.stemmer,
+      url: s.url, k: s.kilde, v: s.vaegt, r: s.rutine ? 1 : 0, x: saetninger(s.afsnit.map((a) => a.tekst).join(" "), 600),
+    })),
+  }));
+
   // Sitemap og robots
-  const urls = ["", "om.html", "udvalg/", "bydel/", ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), ...sager.map((s) => s.url)];
+  const urls = ["", "index.html", "om.html", "udvalg/", "bydel/", ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), ...sager.map((s) => s.url)];
   await writeFile(join(ROD, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE_URL}${u}</loc></url>`).join("\n")}\n</urlset>\n`);
   await writeFile(join(ROD, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
   console.log(`Byggede forside, ${sager.length} sager, ${udvalg.length} udvalg, ${lokal.length} bydele`);
