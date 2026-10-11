@@ -69,10 +69,12 @@ jobs:
             git push
           fi
 
-      # Kun de offentlige filer kommer på webhotellet
+      # Kun de offentlige filer kommer på webhotellet. .htaccess skal med (forside og
+      # midlertidig lukning af avisen styres dér); alle andre dotfiler bliver hjemme.
       - name: Saml de offentlige filer
         run: |
           rsync -a --delete \
+            --include '/.htaccess' \
             --exclude '.*' --exclude '_deploy' --exclude 'node_modules' \
             --exclude 'avis' --exclude 'data' --exclude 'package*.json' --exclude 'README.md' \
             ./ _deploy/
