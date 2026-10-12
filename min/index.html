@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/avis.css">
 <style>
   /* Min avis: brugerens egen udgave. Bygger på avis.css og tilføjer kun det, der er særligt for siden. */
@@ -34,7 +34,7 @@
   .login p { margin: 0 0 18px; font-size: .9375rem; color: rgba(230,223,211,.8); }
   .login label { display: block; font-size: .8125rem; font-weight: 600; margin-bottom: 6px; }
   .login input { width: 100%; font: inherit; padding: 12px 14px; border-radius: 8px; border: 1.5px solid rgba(230,223,211,.3); background: rgba(230,223,211,.08); color: var(--kalk); }
-  .login button { margin-top: 12px; width: 100%; font: inherit; font-weight: 700; padding: 12px; border: 0; border-radius: 99px; background: var(--kalk); color: var(--nat); cursor: pointer; }
+  .login button { margin-top: 12px; width: 100%; font: inherit; font-weight: 700; padding: 12px; border: 0; border-radius: 8px; background: var(--kalk); color: var(--nat); cursor: pointer; }
   .login button:disabled { opacity: .5; cursor: not-allowed; }
   .login button:not(:disabled):hover { background: var(--rosen); }
   .login .fejl { color: var(--rosen); font-weight: 600; }
@@ -47,12 +47,12 @@
   .ed .sum b { color: var(--nat); font-weight: 600; }
   .mine { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 20px; }
   .mine .lbl { font-size: .8125rem; font-weight: 700; margin-right: 4px; }
-  .emne { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border-radius: 99px; border: 1.5px solid var(--rule); background: transparent; color: var(--nat); cursor: pointer; }
+  .emne { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--rule); background: transparent; color: var(--nat); cursor: pointer; }
   .emne:hover { border-color: var(--nat); }
   .emne[aria-pressed="true"].r { background: var(--rosen); border-color: var(--rosen); color: var(--bordeaux); }
   .emne[aria-pressed="true"].b { background: var(--lyng); border-color: var(--lyng); color: var(--blaek); }
   .emne .n { opacity: .6; margin-left: 4px; font-variant-numeric: tabular-nums; }
-  .tilpas { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border: 0; border-radius: 99px; background: var(--nat); color: var(--kalk); cursor: pointer; margin-left: auto; }
+  .tilpas { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border: 0; border-radius: 8px; background: var(--nat); color: var(--kalk); cursor: pointer; margin-left: auto; }
 
   .panel { background: var(--kalk-lys); border-radius: 10px; padding: 22px 24px; margin-top: 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; }
   .panel label { display: block; font-size: .8125rem; font-weight: 700; margin-bottom: 6px; }
@@ -63,7 +63,7 @@
 
   /* Kort og mærker */
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-  .tag { font-size: .72rem; font-weight: 700; padding: 3px 9px; border-radius: 99px; }
+  .tag { font-size: .72rem; font-weight: 700; padding: 3px 9px; border-radius: 8px; }
   .tag.r { background: var(--rosen); color: var(--bordeaux); }
   .tag.b { background: var(--lyng); color: var(--blaek); }
   .tag.o { background: var(--nat); color: var(--kalk); }
@@ -83,11 +83,11 @@
   .alle { padding: 40px 0 64px; }
   .vaerktoej { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; margin: 14px 0 6px; }
   .faner { display: flex; flex-wrap: wrap; gap: 6px; }
-  .fane { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border-radius: 99px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+  .fane { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border-radius: 8px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
   .fane:hover { color: var(--nat); }
   .fane[aria-selected="true"] { background: var(--nat); color: var(--kalk); }
   .soeg { margin-left: auto; position: relative; }
-  .soeg input { font: inherit; font-size: .9375rem; padding: 9px 14px 9px 36px; border: 1.5px solid var(--rule); border-radius: 99px; background: var(--kalk-lys); width: 260px; max-width: 100%; }
+  .soeg input { font: inherit; font-size: .9375rem; padding: 9px 14px 9px 36px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--kalk-lys); width: 260px; max-width: 100%; }
   .soeg svg { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; color: var(--muted); }
   .liste { list-style: none; margin: 0; padding: 0; }
   .liste li { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 20px; }
@@ -95,7 +95,7 @@
   .liste .dek { font-size: .9688rem; line-height: 1.5; margin-top: 4px; }
   .liste .tags { margin-top: 8px; }
   .liste .handl { position: static; align-self: start; }
-  .flere { margin-top: 22px; font: 700 .9375rem var(--sans); padding: 11px 20px; border-radius: 99px; border: 0; background: var(--nat); color: var(--kalk); cursor: pointer; }
+  .flere { margin-top: 22px; font: 700 .9375rem var(--sans); padding: 11px 20px; border-radius: 8px; border: 0; background: var(--nat); color: var(--kalk); cursor: pointer; }
   .antal { font-size: .8125rem; color: var(--muted); margin: 0; }
   .indlaes { padding: 80px 0; text-align: center; color: var(--muted); }
 
@@ -106,7 +106,7 @@
   .m-u a { color: var(--indigo); }
   .m-andre { font-size: .8125rem; color: var(--muted); margin: 16px 0 0; line-height: 1.6; }
   .m-andre a { color: var(--indigo); }
-  .mail-knap { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border: 1.5px solid var(--nat); border-radius: 99px; background: transparent; color: var(--nat); cursor: pointer; }
+  .mail-knap { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border: 1.5px solid var(--nat); border-radius: 8px; background: transparent; color: var(--nat); cursor: pointer; }
   .mail-knap:hover { background: var(--nat); color: var(--kalk); }
   dialog.mail-dlg { width: min(760px, calc(100vw - 24px)); }
   .mail-ramme { display: block; width: 100%; height: min(72dvh, 900px); border: 0; background: #E6DFD3; }
@@ -152,10 +152,10 @@
   .skriv-boks h3 { margin: 0 0 8px; font-size: 1.25rem; letter-spacing: -.02em; }
   .skriv-boks p { margin: 0 0 14px; font-size: .9375rem; color: rgba(230,223,211,.85); }
   .skriv-boks ul { margin: 0 0 20px; padding-left: 18px; font-size: .875rem; color: rgba(230,223,211,.85); }
-  .skriv-boks button { font: 700 .9375rem var(--sans); border: 0; border-radius: 99px; padding: 11px 20px; background: var(--kalk); color: var(--nat); cursor: pointer; }
+  .skriv-boks button { font: 700 .9375rem var(--sans); border: 0; border-radius: 8px; padding: 11px 20px; background: var(--kalk); color: var(--nat); cursor: pointer; }
   .skriv-boks button:hover { background: var(--rosen); }
 
-  dialog.skriv { width: min(720px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); border: 0; border-radius: 12px; padding: 0; background: var(--kalk); color: var(--nat); box-shadow: 0 40px 100px -30px rgba(0,0,0,.6); }
+  dialog.skriv { width: min(720px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); border: 0; border-radius: 10px; padding: 0; background: var(--kalk); color: var(--nat); box-shadow: 0 40px 100px -30px rgba(0,0,0,.6); }
   dialog.skriv::backdrop { background: rgba(14,15,20,.6); }
   .skriv-top { background: var(--moedet); color: var(--kalk); padding: 20px 24px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; position: sticky; top: 0; z-index: 1; }
   .skriv-top h2 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
@@ -175,7 +175,7 @@
   .bekraeft input { margin-top: 2px; width: 18px; height: 18px; flex: none; accent-color: var(--vin); }
   .send-raekke { display: flex; justify-content: space-between; align-items: center; gap: 12px 20px; flex-wrap: wrap; }
   .send-raekke small { font-size: .78rem; color: var(--muted); flex: 1 1 260px; }
-  .send { font: 700 .9375rem var(--sans); border: 0; border-radius: 99px; padding: 12px 22px; background: var(--nat); color: var(--kalk); cursor: pointer; }
+  .send { font: 700 .9375rem var(--sans); border: 0; border-radius: 8px; padding: 12px 22px; background: var(--nat); color: var(--kalk); cursor: pointer; }
   .send:disabled { opacity: .5; cursor: wait; }
   .skriv-msg { font-size: .875rem; margin: 0; }
   .skriv-msg:empty { display: none; }
@@ -201,7 +201,7 @@
   .indtryk legend { font-size: .8125rem; font-weight: 700; margin-bottom: 8px; padding: 0; }
   .indtryk label { cursor: pointer; }
   .indtryk input { position: absolute; opacity: 0; pointer-events: none; }
-  .indtryk label span { display: inline-block; font: 600 .875rem/1 var(--sans); padding: 10px 16px; border-radius: 99px; border: 1.5px solid var(--rule); }
+  .indtryk label span { display: inline-block; font: 600 .875rem/1 var(--sans); padding: 10px 16px; border-radius: 8px; border: 1.5px solid var(--rule); }
   .indtryk input:checked + span { background: var(--nat); border-color: var(--nat); color: var(--kalk); }
   .indtryk input:focus-visible + span { outline: 2px solid var(--indigo); outline-offset: 2px; }
   .farlig { background: var(--vin) !important; }

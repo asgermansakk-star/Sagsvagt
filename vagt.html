@@ -16,7 +16,7 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   /* Paletten "Vin og blæk": rød og blå blok mødes om sagen. Ingen hvid.
      Opbygget efter Apples Human Interface Guidelines: få typestørrelser med tydeligt hierarki,
@@ -29,7 +29,7 @@
     --moedet: radial-gradient(80% 110% at 0% 20%, var(--skifer) 0%, var(--indigo) 26%, var(--blaek) 54%, transparent 76%),
               radial-gradient(75% 100% at 100% 100%, var(--rubin) 0%, var(--vin) 26%, var(--bordeaux) 54%, transparent 78%),
               var(--nat);
-    --sans: "Montserrat", system-ui, sans-serif; --serif: "Source Serif 4", Georgia, serif;
+    --sans: "Montserrat", system-ui, sans-serif; --serif: var(--sans);
 
     /* Tekststile, som på Apples platforme: én skala, brugt alle steder */
     --t-stor: clamp(2.25rem, 1.5rem + 3.2vw, 3.25rem);   /* stor titel */
@@ -42,14 +42,14 @@
     --fodnote: .8125rem;                                 /* 13 px */
     --billedtekst: .75rem;                               /* 12 px, mindste størrelse */
 
-    --r-knap: 99px; --r-felt: 12px; --r-kort: 16px; --r-stor: 20px;
+    --r-knap: 8px; --r-felt: 8px; --r-kort: 12px; --r-stor: 14px;
     --ease: cubic-bezier(.2,.7,.2,1);
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 80px; }
   body { margin: 0; background: var(--kalk); color: var(--nat); font: 400 var(--broed)/1.55 var(--sans); -webkit-font-smoothing: antialiased; }
   a { color: var(--indigo); text-underline-offset: 3px; }
-  :focus-visible { outline: 3px solid var(--skifer); outline-offset: 3px; border-radius: 6px; }
+  :focus-visible { outline: 3px solid var(--skifer); outline-offset: 3px; border-radius: 2px; }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
   .smal { max-width: 720px; margin: 0 auto; }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -58,8 +58,9 @@
   h3 { font-size: var(--t2); font-weight: 600; }
   p { margin: 0; }
   .lead { font-size: var(--t3); line-height: 1.5; color: var(--muted); max-width: 38em; }
-  .afsnit-hoved { text-align: center; max-width: 40em; margin: 0 auto 40px; }
-  .afsnit-hoved .lead { margin: 12px auto 0; }
+  /* Afsnit indledes som i en avis: en sort streg, overskrift og manchet, venstrestillet */
+  .afsnit-hoved { border-top: 2px solid var(--nat); padding-top: 16px; margin: 0 0 32px; }
+  .afsnit-hoved .lead { margin: 10px 0 0; }
 
   /* ---------- Knapper: én familie, tre styrker ---------- */
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 22px;
@@ -79,7 +80,7 @@
 
   /* ---------- Topbjælke ---------- */
   .bar { position: fixed; inset: 0 0 auto; z-index: 50; color: var(--kalk); transition: background .3s, box-shadow .3s; }
-  .bar.scrolled { background: rgba(14,15,20,.82); backdrop-filter: blur(16px) saturate(1.3); -webkit-backdrop-filter: blur(16px) saturate(1.3); box-shadow: 0 1px 0 rgba(230,223,211,.1); }
+  .bar.scrolled { background: var(--nat); box-shadow: 0 1px 0 rgba(230,223,211,.12); }
   .bar .wrap { display: flex; align-items: center; gap: 8px; height: 64px; }
   .bar .logo { display: flex; align-items: center; min-height: 44px; margin-right: auto; border-radius: 6px; }
   .bar .logo svg { height: 40px; width: auto; margin-left: -8px; display: block; }
@@ -89,19 +90,25 @@
   .bar .btn-lille.btn-sekundaer { color: var(--kalk); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.4); }
   .bar .btn-lille.btn-sekundaer:hover { box-shadow: inset 0 0 0 1.5px var(--kalk); background: rgba(230,223,211,.08); }
 
-  /* ---------- Hero: roligt, centreret, ét budskab ---------- */
-  .hero { background: var(--moedet); color: var(--kalk); padding: 144px 0 88px; text-align: center; }
-  .hero .mark { width: 56px; height: auto; margin: 0 auto 28px; display: block; }
-  .hero h1 { font-size: var(--t-stor); font-weight: 700; letter-spacing: -.03em; line-height: 1.08; max-width: 16ch; margin: 0 auto; }
-  .hero .lead { color: rgba(230,223,211,.84); margin: 20px auto 0; max-width: 34em; }
-  .hero .handlinger { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
-  .tryghed { list-style: none; padding: 0; margin: 28px auto 0; display: flex; justify-content: center; gap: 8px 28px; flex-wrap: wrap; font-size: var(--sekundaer); color: rgba(230,223,211,.72); }
+  /* ---------- Hero: som en avisforside, venstrestillet og ét budskab ---------- */
+  .hero { background: var(--moedet); color: var(--kalk); padding: 136px 0 72px; }
+  .hero h1 { font-size: var(--t-stor); font-weight: 700; letter-spacing: -.03em; line-height: 1.08; max-width: 16ch; }
+  .hero .lead { color: rgba(230,223,211,.84); margin: 20px 0 0; max-width: 36em; }
+  .hero .handlinger { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
+  .hero-gitter { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 64px; align-items: end; }
+  .udklip { border-left: 1px solid rgba(230,223,211,.22); padding-left: 32px; }
+  .udklip h2 { font: 600 var(--fodnote)/1.3 var(--sans); letter-spacing: 0; color: rgba(230,223,211,.72); margin-bottom: 4px; }
+  .udklip ol { list-style: none; margin: 0 0 14px; padding: 0; }
+  .udklip li { font: 600 var(--t3)/1.3 var(--serif); padding: 14px 0; border-bottom: 1px solid rgba(230,223,211,.16); }
+  .udklip li span { display: block; font: 500 var(--billedtekst)/1.4 var(--sans); color: rgba(230,223,211,.66); margin-bottom: 4px; }
+  .udklip a { color: var(--kalk); font-size: var(--sekundaer); font-weight: 600; }
+  .tryghed { list-style: none; padding: 0; margin: 24px 0 0; display: flex; gap: 6px 24px; flex-wrap: wrap; font-size: var(--sekundaer); color: rgba(230,223,211,.72); }
 
   /* ---------- Afsnit ---------- */
   section.afsnit { padding: 88px 0; }
   section.afsnit + section.afsnit { padding-top: 0; }
-  .lys { background: var(--kalk-lys); }
-  section.afsnit.lys { padding-top: 88px; }
+  /* Alle afsnit står på samme baggrund og skilles af streger, ikke af skiftende farvebånd */
+  .lys { background: transparent; }
 
   /* ---------- Demo: her virker produktet ---------- */
   .kort { background: var(--kalk-lys); border-radius: var(--r-kort); padding: 24px; }
@@ -125,7 +132,7 @@
   .lys .chip { background: var(--kalk-lys); }
   .chip:hover { box-shadow: inset 0 0 0 1.5px var(--nat); }
   .chip:active { transform: scale(.97); }
-  .chip .n { font-size: var(--billedtekst); font-weight: 700; padding: 2px 7px; border-radius: 99px; background: var(--kalk-mork); color: var(--muted); }
+  .chip .n { font-size: var(--billedtekst); font-weight: 700; padding: 2px 7px; border-radius: 6px; background: var(--kalk-mork); color: var(--muted); }
   .chip[aria-pressed="true"] { background: var(--c); color: var(--cf); box-shadow: none; }
   .chip[aria-pressed="true"] .n { background: rgba(14,15,20,.12); color: inherit; }
   .soeg { margin-top: 16px; max-width: 520px; }
@@ -150,9 +157,9 @@
   .feed li.hit .t mark { background-size: 100% 100%; }
   .feed li.miss { opacity: .42; }
   .feed .u { display: block; font-family: var(--sans); font-size: var(--billedtekst); color: var(--muted); margin-top: 2px; }
-  .scan { position: absolute; left: 0; right: 0; height: 56px; top: -56px; pointer-events: none;
-    background: linear-gradient(180deg, transparent, rgba(93,107,168,.16) 60%, rgba(176,74,80,.2) 96%, transparent); }
-  .scan.go { animation: scan .8s var(--ease) forwards; } @keyframes scan { to { top: 100%; } }
+  /* Når listen gennemsøges, løber en tynd streg ned over den, som en læsestreg */
+  .scan { position: absolute; left: 0; right: 0; height: 2px; top: 0; opacity: 0; pointer-events: none; background: var(--vin); }
+  .scan.go { animation: scan .8s var(--ease) forwards; } @keyframes scan { from { top: 0; opacity: 1; } to { top: 100%; opacity: 0; } }
 
   .mail { background: var(--kalk-lys); border-radius: var(--r-kort); overflow: hidden; position: sticky; top: 80px; }
   .mail-top { color: var(--kalk); padding: 14px 20px; display: flex; align-items: center; gap: 12px; background: var(--moedet); }
@@ -170,7 +177,7 @@
   .case h5 { margin: 0 0 6px; font: 600 var(--overskrift)/1.3 var(--serif); }
   .case p { margin: 0 0 10px; font-size: var(--sekundaer); line-height: 1.5; color: #3E3B40; }
   .case .why { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: var(--fodnote); }
-  .tag { font-weight: 600; padding: 4px 10px; border-radius: 99px; background: var(--c); color: var(--cf); font-size: var(--fodnote); }
+  .tag { font-weight: 600; padding: 4px 10px; border-radius: 6px; background: var(--c); color: var(--cf); font-size: var(--fodnote); }
   .case .why a { margin-left: auto; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; padding: 0 4px; }
   .tom { text-align: center; padding: 28px 10px 36px; color: var(--muted); font-size: var(--sekundaer); }
   .tom b { display: block; color: var(--nat); font-size: var(--broed); margin-bottom: 4px; }
@@ -180,10 +187,10 @@
   /* ---------- Tilmelding ---------- */
   .tilmeld-kort { border-radius: var(--r-stor); color: var(--kalk); padding: 48px; background: var(--moedet);
     display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; }
-  .tilmeld-kort .lead { color: rgba(230,223,211,.8); margin-top: 12px; }
-  .fordele { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 10px; font-size: var(--sekundaer); }
-  .fordele li { display: grid; grid-template-columns: 20px 1fr; gap: 10px; align-items: start; }
-  .fordele svg { margin-top: 2px; }
+  .tilmeld-kort h2 { font-size: var(--t1); }
+  .tilmeld-kort .lead { color: rgba(230,223,211,.84); margin-top: 12px; }
+  .fordele { list-style: none; padding: 0; margin: 24px 0 0; font-size: var(--sekundaer); }
+  .fordele li { padding: 10px 0; border-top: 1px solid rgba(230,223,211,.2); }
   form { display: grid; gap: 16px; align-content: start; }
   .felt label { display: block; font-size: var(--fodnote); font-weight: 600; margin-bottom: 6px; }
   .felt label small { font-weight: 400; opacity: .75; }
@@ -195,7 +202,7 @@
   .felt.bad input { box-shadow: inset 0 0 0 2px var(--rosen); }
   .valgte { display: flex; flex-wrap: wrap; gap: 6px; }
   .valgte .tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 4px 4px 12px; }
-  .valgte .tag button { border: 0; cursor: pointer; width: 32px; height: 32px; border-radius: 50%; background: rgba(14,15,20,.15); color: inherit; font-size: var(--fodnote); line-height: 1; padding: 0; }
+  .valgte .tag button { border: 0; cursor: pointer; width: 32px; height: 32px; border-radius: 6px; background: rgba(14,15,20,.15); color: inherit; font-size: var(--fodnote); line-height: 1; padding: 0; }
   .send { justify-self: start; }
   .send .spin { width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(14,15,20,.25); border-top-color: var(--nat); display: none; animation: spin .8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
@@ -212,20 +219,21 @@
   .tilmeld-kort.ok form { display: none; } .tilmeld-kort.ok .done { display: grid; }
 
   /* ---------- Sådan virker det ---------- */
-  .trin { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; counter-reset: trin; }
-  .trin li { background: var(--kalk); border-radius: var(--r-kort); padding: 24px; counter-increment: trin; }
-  .trin li::before { content: counter(trin); display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--nat); color: var(--kalk); font-weight: 700; font-size: var(--sekundaer); margin-bottom: 16px; }
+  /* Trinene er en nummereret liste med tynde streger, ikke tre ens kort */
+  .trin { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; counter-reset: trin; }
+  .trin li { border-top: 1px solid var(--rule); padding-top: 14px; counter-increment: trin; }
+  .trin li::before { content: counter(trin) "."; display: block; font: 600 var(--t2)/1 var(--serif); color: var(--vin); margin-bottom: 10px; }
   .trin h3 { font-size: var(--t3); margin-bottom: 8px; }
   .trin p { color: var(--muted); font-size: var(--sekundaer); line-height: 1.5; }
-  .loefter { margin: 48px auto 0; max-width: 760px; }
-  .loefter h3 { font-size: var(--t3); text-align: center; margin-bottom: 20px; }
-  .loefter ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-  .loefter li { display: grid; grid-template-columns: 24px 1fr; gap: 10px; align-items: start; font-size: var(--sekundaer); line-height: 1.5; }
+  .loefter { margin: 56px 0 0; }
+  .loefter h3 { font-size: var(--t3); margin-bottom: 16px; }
+  .loefter ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .loefter li { font-size: var(--sekundaer); line-height: 1.5; border-left: 2px solid var(--vin); padding-left: 14px; }
   .loefter li b { display: block; color: var(--nat); font-size: var(--broed); margin-bottom: 2px; }
   .loefter li span { color: var(--muted); }
 
   /* ---------- Spørgsmål: den indbyggede fold-ud ---------- */
-  .faq { max-width: 760px; margin: 0 auto; border-top: 1px solid var(--rule); }
+  .faq { max-width: 760px; }
   details { border-bottom: 1px solid var(--rule); }
   summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 20px 4px; font-weight: 600; font-size: var(--overskrift); }
   summary::-webkit-details-marker { display: none; }
@@ -244,7 +252,8 @@
   /* På små skærme kommer resultatet (mailen) først, og den lange liste foldes sammen */
   .vis-alle { display: none; width: 100%; margin-top: 8px; }
   @media (max-width: 900px) {
-    .demo-gitter, .tilmeld-kort { grid-template-columns: 1fr; }
+    .demo-gitter, .tilmeld-kort, .hero-gitter { grid-template-columns: 1fr; }
+    .udklip { display: none; }
     .mail { position: relative; top: 0; order: -1; }
     .panel:not(.alle) .feed li:nth-child(n+7) { display: none; }
     .panel:not(.alle) .vis-alle, .panel.alle .vis-alle.skjul { display: inline-flex; }
@@ -274,7 +283,6 @@
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="logo" viewBox="0 0 964.08 300.00"><path fill="#E6DFD3" fill-rule="evenodd" transform="translate(50.00 50.00) scale(0.94340) translate(-51.03 -22.00)" d="M51 231.1C66.2 215.4 74.7 194.5 74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C195.7 121.9 187.6 165.2 160.4 196.1C133.1 227 91.1 240.4 51 231.1Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/><path fill="#E6DFD3" transform="translate(270.22 200.00) scale(0.14286)" d="M311.03446780836765 9.9051593323217Q229.12930847604596 9.9051593323217 154.0948406676783 -13.577606763494472Q79.06037285931065 -37.06037285931065 34.767288098851076 -74.28452200303491L80.29308476045958 -174.8878170388034Q122.4568610448732 -141.53435941903317 184.3922068068502 -119.68090179926295Q246.32755256882723 -97.82744417949274 311.2930847604596 -97.82744417949274Q366.1896813353566 -97.82744417949274 400.0560914805983 -109.72832213310211Q433.92250162584 -121.62920008671148 449.8880338174724 -142.31888142206807Q465.8535660091047 -163.00856275742467 465.8535660091047 -188.93962714068937Q465.8535660091047 -221.0 443.1121829611966 -240.27156947756342Q420.3707999132885 -259.54313895512684 383.6940711034034 -271.39659657489705Q347.0173422935183 -283.25005419466726 302.5345761977021 -293.0560914805983Q258.05181010188596 -302.8621287665294 213.50438976804682 -316.42678300455236Q168.95696943420768 -329.99143724257533 132.28024062432257 -351.68539995664423Q95.60351181443747 -373.3793626707132 72.86212876652938 -409.1379796228051Q50.120745718621286 -444.89659657489705 50.120745718621286 -500.89659657489705Q50.120745718621286 -558.0603728593106 80.52590505094298 -605.4655321916323Q110.93106438326468 -652.8706915239541 173.41811185779318 -681.3879254281378Q235.9051593323217 -709.9051593323217 331.7154779969651 -709.9051593323217Q394.87925428137873 -709.9051593323217 456.9137220897464 -694.0344678083677Q518.948189898114 -678.1637762844136 565.2412746585736 -648.0344678083677L523.844786473011 -546.6897897246911Q477.0689356167353 -575.3018642965533 427.2628983308042 -588.7372100585303Q377.45686104487316 -602.1725558205072 330.58616952091916 -602.1725558205072Q277.4309559939302 -602.1725558205072 243.4998916106655 -589.2070236288748Q209.56882722740082 -576.2414914372425 194.1032950357685 -554.9225016258399Q178.63776284413615 -533.6035118144374 178.63776284413615 -506.8017559072187Q178.63776284413615 -474.87069152395406 201.37914589204422 -455.66377628441364Q224.1205289399523 -436.45686104487316 260.7972577498374 -425.10340342510295Q297.4739865597225 -413.74994580533274 342.0214068935617 -403.57321699544764Q386.5688272274008 -393.39648818556253 431.051593323217 -380.26717970951654Q475.5343594190332 -367.1378712334706 512.2110882289182 -345.87925428137873Q548.8878170388034 -324.6206373292868 571.6292000867115 -288.92667461521785Q594.3705831346196 -253.23271190114892 594.3705831346196 -198.23271190114892Q594.3705831346196 -142.0689356167353 563.5300780403209 -94.66377628441361Q532.689572946022 -47.25861695209191 469.8318339475395 -18.676728809885105Q406.974094949057 9.9051593323217 311.03446780836765 9.9051593323217ZM1009.6035118144375 0.0V-108.31898981140256L1003.181118577932 -130.83622371558639V-320.06037285931063Q1003.181118577932 -374.8621287665294 969.9742033383916 -405.4397355300239Q936.767288098851 -436.0173422935183 869.5776067634945 -436.0173422935183Q824.7413830479081 -436.0173422935183 781.5172339041839 -421.9052677216562Q738.2930847604596 -407.79319314979404 707.8103186646434 -383.4397355300238L659.3189898114026 -474.10340342510295Q702.0948406676783 -506.7154779969651 761.6939627140689 -523.5861695209192Q821.2930847604596 -540.4568610448732 885.2930847604596 -540.4568610448732Q1001.0430305657924 -540.4568610448732 1064.6119661825278 -484.85773899848255Q1128.180901799263 -429.2586169520919 1128.180901799263 -313.155213526989V0.0ZM842.4138304790808 6.517233904183828Q781.5086711467592 6.517233904183828 736.5086711467592 -13.870691523954042Q691.5086711467592 -34.25861695209191 667.2026338608281 -70.58188814220681Q642.896596574897 -106.9051593323217 642.896596574897 -153.03446780836765Q642.896596574897 -198.19824409278127 664.6724474311727 -233.8922068068502Q686.4482982874486 -269.58616952091916 735.4181118577932 -290.76289833080426Q784.3879254281378 -311.93962714068937 865.0344678083677 -311.93962714068937H1019.9569694342076V-229.06037285931063H874.0430305657924Q810.180901799263 -229.06037285931063 788.0214068935617 -208.41811185779318Q765.8619119878604 -187.77585085627575 765.8619119878604 -157.8103186646434Q765.8619119878604 -124.00856275742467 792.986939085194 -104.1076848038153Q820.1119661825276 -84.20680685020594 867.7499458053328 -84.20680685020594Q914.2586169520919 -84.20680685020594 950.7371016691957 -104.97837632776935Q987.2155863862996 -125.74994580533276 1003.181118577932 -166.68101018859744L1024.3448948623454 -91.84478647301106Q1006.1207457186213 -44.77585085627574 959.767288098851 -19.129308476045956Q913.4138304790808 6.517233904183828 842.4138304790808 6.517233904183828ZM1500.6465423802297 200.51723390418383Q1426.6120745718622 200.51723390418383 1356.4827660958163 181.34050509429872Q1286.3534576197703 162.16377628441361 1240.5776067634945 124.68101018859744L1296.5517017125514 30.758725341426413Q1332.0344678083677 60.11218296119662 1385.452579666161 77.65960329503577Q1438.870691523954 95.20702362887491 1494.1896813353567 95.20702362887491Q1582.4742033383914 95.20702362887491 1623.357847387817 54.82337957944938Q1664.2414914372425 14.439735530023846 1664.2414914372425 -66.68101018859744V-162.3104270539779L1674.2414914372425 -282.68101018859744L1670.0173422935184 -403.92228484717106V-533.9396271406894H1789.2412746585737V-81.13787123347063Q1789.2412746585737 63.93106438326468 1715.1723390418383 132.22414914372425Q1641.103403425103 200.51723390418383 1500.6465423802297 200.51723390418383ZM1485.3793626707131 -23.905159332321702Q1408.5431389551268 -23.905159332321702 1347.2371016691957 -56.4051593323217Q1285.9310643832646 -88.9051593323217 1250.2371016691957 -147.03446780836765Q1214.5431389551268 -205.16377628441361 1214.5431389551268 -282.68101018859744Q1214.5431389551268 -360.1982440927813 1250.2371016691957 -418.32755256882723Q1285.9310643832646 -476.45686104487316 1347.2371016691957 -508.4568610448732Q1408.5431389551268 -540.4568610448732 1485.3793626707131 -540.4568610448732Q1552.896596574897 -540.4568610448732 1607.1035118144375 -513.3275525688273Q1661.310427053978 -486.1982440927813 1693.7587253414265 -429.00428137871234Q1726.207023628875 -371.8103186646434 1726.207023628875 -282.68101018859744Q1726.207023628875 -193.55170171255148 1693.7587253414265 -136.35773899848255Q1661.310427053978 -79.16377628441361 1607.1035118144375 -51.53446780836766Q1552.896596574897 -23.905159332321702 1485.3793626707131 -23.905159332321702ZM1503.5861695209192 -130.2498374159983Q1551.4827660958163 -130.2498374159983 1588.155213526989 -149.52140689356168Q1624.8276609581617 -168.79297637112506 1645.534576197702 -203.1593865163668Q1666.2414914372425 -237.5257966616085 1666.2414914372425 -282.68101018859744Q1666.2414914372425 -327.96553219163235 1645.534576197702 -362.26728809885105Q1624.8276609581617 -396.5690440060698 1588.155213526989 -415.3406134836332Q1551.4827660958163 -434.1121829611966 1503.5861695209192 -434.1121829611966Q1456.689572946022 -434.1121829611966 1419.5171255148493 -415.3406134836332Q1382.3446780836766 -396.5690440060698 1361.5731086061132 -362.26728809885105Q1340.8015391285498 -327.96553219163235 1340.8015391285498 -282.68101018859744Q1340.8015391285498 -237.5257966616085 1361.5731086061132 -203.1593865163668Q1382.3446780836766 -168.79297637112506 1419.5171255148493 -149.52140689356168Q1456.689572946022 -130.2498374159983 1503.5861695209192 -130.2498374159983ZM2088.456861044873 6.517233904183828Q2021.0689356167354 6.517233904183828 1959.5991220463907 -10.659494905701278Q1898.129308476046 -27.836223715586385 1862.2241491437242 -52.70691523954043L1910.2930847604596 -147.72404075438976Q1945.8103186646433 -124.72404075438976 1996.0042813787122 -109.98265770648167Q2046.1982440927814 -95.24127465857359 2096.0689356167354 -95.24127465857359Q2155.3534576197703 -95.24127465857359 2181.6077931931495 -110.94818989811402Q2207.862128766529 -126.65510513765446 2207.862128766529 -154.32755256882723Q2207.862128766529 -175.9051593323217 2189.991437242575 -187.5Q2172.120745718621 -199.0948406676783 2142.81470843269 -205.14226100151745Q2113.5086711467593 -211.1896813353566 2078.267288098851 -216.1250270973336Q2043.025905050943 -221.06037285931063 2007.719867765012 -229.6250270973336Q1972.4138304790808 -238.1896813353566 1943.1077931931497 -254.4482982874485Q1913.8017559072186 -270.7069152395404 1895.9310643832646 -299.0301864296553Q1878.0603728593107 -327.3534576197702 1878.0603728593107 -373.48276609581615Q1878.0603728593107 -423.7413830479081 1906.9482982874486 -461.38792542813786Q1935.8362237155864 -499.03446780836765 1988.3232711901148 -519.7456644266205Q2040.8103186646433 -540.4568610448732 2112.7844136137005 -540.4568610448732Q2166.689572946022 -540.4568610448732 2221.900769564275 -528.1508237589421Q2277.111966182528 -515.844786473011 2313.1464339908953 -493.7154779969651L2265.07749837416 -398.69835248211575Q2227.43095599393 -421.69835248211575 2188.6723390418383 -430.19835248211575Q2149.9137220897464 -438.69835248211575 2112.3016475178842 -438.69835248211575Q2055.3705831346197 -438.69835248211575 2027.680901799263 -421.99143724257533Q1999.9912204639063 -405.2845220030349 1999.9912204639063 -378.7413830479081Q1999.9912204639063 -355.4223932365055 2017.8619119878604 -343.32755256882723Q2035.7326035118144 -331.23271190114895 2065.0386407977458 -324.31460004335577Q2094.3446780836766 -317.39648818556253 2129.5860611315848 -312.46114242358556Q2164.827444179493 -307.5257966616085 2200.068827227401 -298.8964881855626Q2235.310210275309 -290.2671797095166 2264.61624756124 -274.4439085194017Q2293.922284847171 -258.6206373292868 2311.792976371125 -230.73271190114895Q2329.663667895079 -202.84478647301106 2329.663667895079 -157.58616952091916Q2329.663667895079 -107.71547799696509 2300.405050942987 -70.87497290266637Q2271.1464339908953 -34.03446780836766 2217.2886949924127 -13.758616952091915Q2163.43095599393 6.517233904183828 2088.456861044873 6.517233904183828ZM2540.155213526989 0.0 2311.4482982874483 -533.9396271406894H2440.7066984608714L2638.1809017992628 -62.94818989811402H2574.2930847604594L2777.543138955127 -533.9396271406894H2898.379145892044L2668.80153912855 0.0ZM3251.6035118144373 0.0V-108.31898981140256L3245.181118577932 -130.83622371558639V-320.06037285931063Q3245.181118577932 -374.8621287665294 3211.974203338392 -405.4397355300239Q3178.767288098851 -436.0173422935183 3111.5776067634943 -436.0173422935183Q3066.741383047908 -436.0173422935183 3023.5172339041837 -421.9052677216562Q2980.2930847604594 -407.79319314979404 2949.8103186646435 -383.4397355300238L2901.3189898114024 -474.10340342510295Q2944.0948406676785 -506.7154779969651 3003.693962714069 -523.5861695209192Q3063.2930847604594 -540.4568610448732 3127.2930847604594 -540.4568610448732Q3243.0430305657924 -540.4568610448732 3306.611966182528 -484.85773899848255Q3370.1809017992628 -429.2586169520919 3370.1809017992628 -313.155213526989V0.0ZM3084.413830479081 6.517233904183828Q3023.5086711467593 6.517233904183828 2978.5086711467593 -13.870691523954042Q2933.5086711467593 -34.25861695209191 2909.2026338608284 -70.58188814220681Q2884.896596574897 -106.9051593323217 2884.896596574897 -153.03446780836765Q2884.896596574897 -198.19824409278127 2906.6724474311727 -233.8922068068502Q2928.4482982874483 -269.58616952091916 2977.418111857793 -290.76289833080426Q3026.387925428138 -311.93962714068937 3107.0344678083675 -311.93962714068937H3261.9569694342076V-229.06037285931063H3116.0430305657924Q3052.1809017992628 -229.06037285931063 3030.0214068935616 -208.41811185779318Q3007.8619119878604 -187.77585085627575 3007.8619119878604 -157.8103186646434Q3007.8619119878604 -124.00856275742467 3034.986939085194 -104.1076848038153Q3062.111966182528 -84.20680685020594 3109.7499458053326 -84.20680685020594Q3156.258616952092 -84.20680685020594 3192.737101669196 -104.97837632776935Q3229.2155863862995 -125.74994580533276 3245.181118577932 -166.68101018859744L3266.3448948623454 -91.84478647301106Q3248.120745718621 -44.77585085627574 3201.767288098851 -19.129308476045956Q3155.413830479081 6.517233904183828 3084.413830479081 6.517233904183828ZM3742.6465423802297 200.51723390418383Q3668.612074571862 200.51723390418383 3598.4827660958163 181.34050509429872Q3528.3534576197703 162.16377628441361 3482.5776067634943 124.68101018859744L3538.5517017125517 30.758725341426413Q3574.0344678083675 60.11218296119662 3627.452579666161 77.65960329503577Q3680.870691523954 95.20702362887491 3736.1896813353565 95.20702362887491Q3824.4742033383914 95.20702362887491 3865.357847387817 54.82337957944938Q3906.2414914372425 14.439735530023846 3906.2414914372425 -66.68101018859744V-162.3104270539779L3916.2414914372425 -282.68101018859744L3912.017342293518 -403.92228484717106V-533.9396271406894H4031.2412746585737V-81.13787123347063Q4031.2412746585737 63.93106438326468 3957.1723390418383 132.22414914372425Q3883.103403425103 200.51723390418383 3742.6465423802297 200.51723390418383ZM3727.3793626707134 -23.905159332321702Q3650.543138955127 -23.905159332321702 3589.237101669196 -56.4051593323217Q3527.9310643832646 -88.9051593323217 3492.237101669196 -147.03446780836765Q3456.543138955127 -205.16377628441361 3456.543138955127 -282.68101018859744Q3456.543138955127 -360.1982440927813 3492.237101669196 -418.32755256882723Q3527.9310643832646 -476.45686104487316 3589.237101669196 -508.4568610448732Q3650.543138955127 -540.4568610448732 3727.3793626707134 -540.4568610448732Q3794.896596574897 -540.4568610448732 3849.1035118144373 -513.3275525688273Q3903.310427053978 -486.1982440927813 3935.7587253414267 -429.00428137871234Q3968.207023628875 -371.8103186646434 3968.207023628875 -282.68101018859744Q3968.207023628875 -193.55170171255148 3935.7587253414267 -136.35773899848255Q3903.310427053978 -79.16377628441361 3849.1035118144373 -51.53446780836766Q3794.896596574897 -23.905159332321702 3727.3793626707134 -23.905159332321702ZM3745.586169520919 -130.2498374159983Q3793.4827660958163 -130.2498374159983 3830.155213526989 -149.52140689356168Q3866.8276609581617 -168.79297637112506 3887.5345761977023 -203.1593865163668Q3908.2414914372425 -237.5257966616085 3908.2414914372425 -282.68101018859744Q3908.2414914372425 -327.96553219163235 3887.5345761977023 -362.26728809885105Q3866.8276609581617 -396.5690440060698 3830.155213526989 -415.3406134836332Q3793.4827660958163 -434.1121829611966 3745.586169520919 -434.1121829611966Q3698.689572946022 -434.1121829611966 3661.5171255148493 -415.3406134836332Q3624.3446780836766 -396.5690440060698 3603.5731086061132 -362.26728809885105Q3582.80153912855 -327.96553219163235 3582.80153912855 -282.68101018859744Q3582.80153912855 -237.5257966616085 3603.5731086061132 -203.1593865163668Q3624.3446780836766 -168.79297637112506 3661.5171255148493 -149.52140689356168Q3698.689572946022 -130.2498374159983 3745.586169520919 -130.2498374159983ZM4365.655105137655 6.517233904183828Q4277.905159332322 6.517233904183828 4229.706915239541 -38.84050509429872Q4181.508671146759 -84.19824409278127 4181.508671146759 -172.81888142206807V-651.7154779969651H4306.5084543680905V-175.6895729460221Q4306.5084543680905 -137.62920008671148 4326.1032950357685 -116.66366789507913Q4345.6981357034465 -95.69813570344678 4381.37058313462 -95.69813570344678Q4422.560264469977 -95.69813570344678 4450.655105137655 -117.66366789507913L4486.37058313462 -28.577606763494472Q4463.853349230436 -10.965532191632343 4431.706806850207 -2.2241491437242575Q4399.560264469977 6.517233904183828 4365.655105137655 6.517233904183828ZM4094.3189898114024 -434.2414914372426V-533.9396271406894H4449.853349230436V-434.2414914372426Z"/></symbol>
   <symbol id="maerke" viewBox="44 16 168 224"><path fill="currentColor" fill-rule="evenodd" d="M51 231.1C66.2 215.4 74.7 194.5 74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C195.7 121.9 187.6 165.2 160.4 196.1C133.1 227 91.1 240.4 51 231.1Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/><path fill="currentColor" fill-rule="evenodd" d="M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/></symbol>
-  <symbol id="flueben" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="var(--lyng)"/><path d="M7.5 12.5l3 3 6-7" fill="none" stroke="#0C1430" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
 <header class="bar" id="bar">
@@ -292,8 +300,8 @@
 
 <main>
   <section class="hero paa-moerk" aria-labelledby="hero-h">
-    <div class="wrap">
-      <svg class="mark" viewBox="0 0 168 224" aria-hidden="true" style="color:var(--kalk)"><use href="#maerke"/></svg>
+    <div class="wrap hero-gitter">
+     <div>
       <h1 id="hero-h">Få besked, når byrådet tager dit emne op.</h1>
       <p class="lead">Sagsvagt læser hvert punkt på dagsordenerne i byråd, udvalg og lokaludvalg og sender dig de sager, der handler om det, du følger. Én mail hver mandag, med link til kilden.</p>
       <div class="handlinger">
@@ -305,6 +313,17 @@
         <li>Partineutral</li>
         <li>Afmeld med ét klik</li>
       </ul>
+     </div>
+      <!-- Tre rigtige sager fra demoen herunder, så man med det samme ser, hvad Sagsvagt finder -->
+      <aside class="udklip" aria-labelledby="udklip-h">
+        <h2 id="udklip-h">Fra dagsordenerne i København</h2>
+        <ol>
+          <li><span>Klima-, Miljø- og Teknikudvalget · 28. sep.</span>Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027</li>
+          <li><span>Klima-, Miljø- og Teknikudvalget · 28. sep.</span>Fældning af træer i Tingbjerg</li>
+          <li><span>Klima-, Miljø- og Teknikudvalget · 5. okt.</span>Nordlige del af Badstuestræde som sekundær gågade</li>
+        </ol>
+        <a href="#proev">Se 15 sager mere</a>
+      </aside>
     </div>
   </section>
 
@@ -368,9 +387,9 @@
           <h2 id="tilmeld-h">Få de første mails gratis</h2>
           <p class="lead">Vi åbner kommune for kommune, og København er først. Skriv dig op nu, så får du besked, når din kommune er klar.</p>
           <ul class="fordele">
-            <li><svg width="20" height="20" aria-hidden="true"><use href="#flueben"/></svg><span>Gratis, mens vi tester</span></li>
-            <li><svg width="20" height="20" aria-hidden="true"><use href="#flueben"/></svg><span>Én mail om ugen, ingen spam</span></li>
-            <li><svg width="20" height="20" aria-hidden="true"><use href="#flueben"/></svg><span>Afmeld med ét klik, når som helst</span></li>
+            <li><span>Gratis, mens vi tester</span></li>
+            <li><span>Én mail om ugen, ingen spam</span></li>
+            <li><span>Afmeld med ét klik, når som helst</span></li>
           </ul>
         </div>
         <form id="form" novalidate>
@@ -427,9 +446,9 @@
       <div class="loefter">
         <h3>Det kan du regne med</h3>
         <ul>
-          <li><svg width="24" height="24" aria-hidden="true"><use href="#flueben"/></svg><div><b>Kun offentlige kilder</b><span>Kommunernes egne dagsordener og referater. Hver sag linker til originalen.</span></div></li>
-          <li><svg width="24" height="24" aria-hidden="true"><use href="#flueben"/></svg><div><b>Resuméer, ikke holdninger</b><span>Vi fortæller, hvad der skal besluttes, ikke hvad du skal mene om det.</span></div></li>
-          <li><svg width="24" height="24" aria-hidden="true"><use href="#flueben"/></svg><div><b>Ingen persondata om borgere</b><span>Vi gemmer ikke navne på privatpersoner fra sagerne.</span></div></li>
+          <li><div><b>Kun offentlige kilder</b><span>Kommunernes egne dagsordener og referater. Hver sag linker til originalen.</span></div></li>
+          <li><div><b>Resuméer, ikke holdninger</b><span>Vi fortæller, hvad der skal besluttes, ikke hvad du skal mene om det.</span></div></li>
+          <li><div><b>Ingen persondata om borgere</b><span>Vi gemmer ikke navne på privatpersoner fra sagerne.</span></div></li>
         </ul>
       </div>
     </div>

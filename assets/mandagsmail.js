@@ -16,7 +16,7 @@ const C = {
   vin: "#8A2430", bordeaux: "#3E0E14", rosen: "#DCA9A5", indigo: "#28377A", blaek: "#0C1430", lyng: "#B7BBD8",
 };
 const SANS = "Montserrat, 'Segoe UI', Arial, sans-serif";
-const SERIF = "'Source Serif 4', Georgia, 'Times New Roman', serif";
+const SERIF = SANS; // Montserrat er Sagsvagts eneste skrift
 const SITE = "https://sagsvagt.dk/";
 const REDAKTION = "mansa@sagsvagt.dk";
 
@@ -68,8 +68,8 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
   const top = v.besluttet[0] || v.kommer[0];
   const preheader = top ? `${top.t}${nB + nK > 1 ? ` og ${nB + nK - 1} sager mere` : ""}.` : "Der er ingen nye sager om dine emner i denne uge.";
 
-  const tag = (id) => { const e = data.emner[id]; const r = e.f === "r"; return `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:99px;background:${r ? C.rosen : C.lyng};color:${r ? C.bordeaux : C.blaek};font:700 11px/1.4 ${SANS};">${esc(e.navn)}</span>`; };
-  const ordTag = (o) => `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:99px;background:${C.nat};color:${C.kalk};font:700 11px/1.4 ${SANS};">${esc(o)}</span>`;
+  const tag = (id) => { const e = data.emner[id]; const r = e.f === "r"; return `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:6px;background:${r ? C.rosen : C.lyng};color:${r ? C.bordeaux : C.blaek};font:700 11px/1.4 ${SANS};">${esc(e.navn)}</span>`; };
+  const ordTag = (o) => `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:6px;background:${C.nat};color:${C.kalk};font:700 11px/1.4 ${SANS};">${esc(o)}</span>`;
   // Stemmetallet står allerede i udfaldet ("med 50 stemmer mod 3"); vi tilføjer kun dem, der undlod
   const stemmer = (s) => (s.tal?.undlod ? ` <b style="white-space:nowrap;">${s.tal.undlod} undlod.</b>` : "");
 

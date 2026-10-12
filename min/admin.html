@@ -8,7 +8,7 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/avis.css">
 <style>
   /* Redaktionens oversigt over tilmeldte og invitationer. Kræver login som redaktør (admins i api/_konfig.php). */
@@ -18,7 +18,7 @@
   .tal { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 16px 0 22px; font-size: .9375rem; }
   .tal b { font-size: 1.75rem; display: block; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
   .handl-raekke { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
-  .knap { font: 700 .875rem/1 var(--sans); padding: 11px 18px; border-radius: 99px; border: 0; background: var(--nat); color: var(--kalk); cursor: pointer; }
+  .knap { font: 700 .875rem/1 var(--sans); padding: 11px 18px; border-radius: 8px; border: 0; background: var(--nat); color: var(--kalk); cursor: pointer; }
   .knap.sek { background: transparent; color: var(--nat); box-shadow: inset 0 0 0 1.5px var(--nat); }
   .knap:disabled { opacity: .45; cursor: not-allowed; }
   .besked { font-weight: 600; font-size: .9375rem; margin: 0 0 14px; }
@@ -26,13 +26,13 @@
   table.liste { width: 100%; border-collapse: collapse; font-size: .875rem; }
   table.liste th, table.liste td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
   table.liste thead th { font-size: .75rem; color: var(--muted); border-bottom: 2px solid var(--nat); white-space: nowrap; }
-  .st { font-size: .72rem; font-weight: 700; padding: 3px 8px; border-radius: 3px; background: var(--kalk-lys); white-space: nowrap; }
+  .st { font-size: .72rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; background: var(--kalk-lys); white-space: nowrap; }
   .st.aktiv { background: #cfe3d4; color: #1d5b35; } .st.inviteret { background: var(--lyng); color: var(--blaek); } .st.afmeldt { background: var(--rule); color: var(--muted); }
   .lille { color: var(--muted); font-size: .8125rem; }
   .mini-knap { font: 600 .78rem var(--sans); background: none; border: 0; color: var(--vin); cursor: pointer; padding: 0; }
   details.import { margin: 26px 0 0; border-top: 2px solid var(--nat); padding-top: 12px; }
   details.import summary { font-weight: 700; cursor: pointer; }
-  details.import textarea { width: 100%; min-height: 140px; font: inherit; padding: 10px; border: 1.5px solid var(--rule); border-radius: 6px; background: var(--kalk-lys); margin: 10px 0; }
+  details.import textarea { width: 100%; min-height: 140px; font: inherit; padding: 10px; border: 1.5px solid var(--rule); border-radius: 10px; background: var(--kalk-lys); margin: 10px 0; }
   .login-boks { max-width: 420px; margin: 50px 0; }
   .login-boks input { width: 100%; font: inherit; padding: 11px 13px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--kalk-lys); margin: 6px 0 12px; }
   .tabel-wrap { overflow-x: auto; }
