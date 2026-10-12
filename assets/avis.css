@@ -346,3 +346,18 @@ footer.foot a:hover { text-decoration: underline; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .001ms !important; animation-duration: .001ms !important; }
 }
+
+/* "Forklar sagen enkelt" (avis/forenklet.mjs): en fold-ud øverst på sagen med en letlæst forklaring */
+.forenklet { margin: 20px 0 4px; max-width: 44em; }
+.forenklet summary { list-style: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px; border-radius: var(--r-knap); background: var(--nat); color: var(--kalk); font: 600 var(--sekundaer)/1.2 var(--sans); cursor: pointer; }
+.forenklet summary::-webkit-details-marker { display: none; }
+.forenklet summary::before { content: ""; width: 8px; height: 8px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg) translate(-2px, -2px); transition: transform .2s; }
+.forenklet[open] summary::before { transform: rotate(-135deg) translate(-2px, -2px); }
+.forenklet summary:hover { background: var(--grafit); }
+.forenklet .skjul, .forenklet[open] .vis { display: none; }
+.forenklet[open] .skjul { display: inline; }
+.forenklet-indhold { margin-top: 14px; padding: 20px 22px 18px; background: var(--kalk-lys); border-left: 3px solid var(--indigo); border-radius: var(--r-felt); }
+.forenklet-kort { font-size: var(--t3); font-weight: 600; line-height: 1.45; margin: 0 0 6px; }
+.forenklet-indhold h3 { font-size: var(--overskrift); font-weight: 700; margin: 16px 0 4px; }
+.forenklet-indhold p { margin: 0; line-height: 1.6; }
+.forenklet-note { margin-top: 16px !important; padding-top: 12px; border-top: 1px solid var(--rule); font-size: var(--fodnote); color: var(--muted); }

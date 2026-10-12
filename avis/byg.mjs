@@ -6,6 +6,7 @@ import { EMNER, emnerFor, deltagere, stemmetal, indstillingPunkter, videreTil, a
 import { bygDelebilleder } from "./delebilleder.mjs";
 import { bygBokse } from "./boks.mjs";
 import { bygKommuner } from "./kommuner.mjs";
+import { laesForenklet, forenkletBoks } from "./forenklet.mjs";
 import { sagensVej, vejBoks, bygPartier, bygHoeringer, bygKalendere, bygFeeds, kalenderLink, feedLink } from "./ekstra.mjs";
 
 const ROD = join(import.meta.dirname, "..");
@@ -264,6 +265,7 @@ async function main() {
   const alle = [];
   for (const f of filer) alle.push(...Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager));
   const red = await laesRedaktion();
+  const FORENKLET = await laesForenklet(); // "Forklar sagen enkelt" (avis/forenklet.mjs)
   const sager = alle.filter(publicerbar).map(berig).map((s) => {
     const r = red.sager?.[s.id];
     return r?.overskrift ? { ...s, kommunensTitel: s.titel, titel: r.overskrift.trim(), dek: (r.underrubrik || s.dek).trim() } : s;
@@ -356,6 +358,7 @@ async function main() {
         ${s.dek ? `<p class="dek">${esc(s.dek)}</p>` : ""}
         ${s.kommunensTitel ? `<p class="kommunens-titel">Kommunens titel: ${esc(s.kommunensTitel)}</p>` : ""}
         ${emneLinks(s, "../")}
+        ${forenkletBoks(s, FORENKLET, esc)}
       </header>
       <div class="body">
         ${kortFortalt(s)}
