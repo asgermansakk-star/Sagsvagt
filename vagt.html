@@ -224,6 +224,13 @@
   .done p { color: rgba(230,223,211,.8); }
   .done .tjek { margin-top: 8px; font-size: var(--fodnote); color: rgba(230,223,211,.65); }
   .tilmeld-kort.ok form { display: none; } .tilmeld-kort.ok .done { display: grid; }
+  /* Henvisning: den tilmeldte får sit eget link (?fra=ven-xxxxxx) */
+  .henvis { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(230,223,211,.2); text-align: left; }
+  .henvis[hidden] { display: none; }
+  .henvis .henvis-titel { font-weight: 600; color: var(--kalk); }
+  .henvis-rad { display: flex; gap: 8px; margin-top: 12px; }
+  .henvis-rad input { flex: 1; min-width: 0; min-height: 44px; padding: 0 14px; font: 500 var(--sekundaer) var(--sans); color: var(--nat); background: var(--kalk-lys); border: 0; border-radius: var(--r-felt); }
+  .henvis-svar { margin-top: 8px; font-size: var(--fodnote); min-height: 1em; }
 
   /* ---------- Sådan virker det ---------- */
   /* Trinene er en nummereret liste med tynde streger, ikke tre ens kort */
@@ -433,6 +440,12 @@
           <h3>Du er skrevet op.</h3>
           <p>Vi har sendt dig en kvittering, og vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
           <p class="tjek">Kan du ikke finde vores mails? Tjek også din mappe med uønsket mail, og markér dem som "Ikke uønsket".</p>
+          <div class="henvis" hidden>
+            <p class="henvis-titel">Kender du nogen, der også bør følge med?</p>
+            <p>Send dem dit eget link. Så kan vi se, hvem der kom via dig.</p>
+            <div class="henvis-rad"><input id="henvisLink" type="text" readonly aria-label="Dit link til Sagsvagt"><button type="button" class="btn btn-lys btn-lille" id="henvisKnap">Kopiér</button></div>
+            <p class="henvis-svar" role="status"></p>
+          </div>
         </div>
       </div>
     </div>
@@ -677,7 +690,19 @@
   // Demoen bygges efter indlæsning og skubber formularen ned, så hop til den igen, når siden er færdig
   if (location.hash === "#tilmeld") addEventListener("load", () => $("#tilmeld").scrollIntoView({ block: "start" }));
   const form = $("#form"), msg = $(".form-msg", form), btn = $(".send", form), card = $(".tilmeld-kort");
-  const faerdig = () => { card.classList.add("ok"); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
+  const visHenvisning = async (email) => {
+    try {
+      const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(email.trim().toLowerCase()));
+      const kode = [...new Uint8Array(h)].slice(0, 3).map((x) => x.toString(16).padStart(2, "0")).join("");
+      const link = `https://sagsvagt.dk/?fra=ven-${kode}`, felt = $("#henvisLink"), knap = $("#henvisKnap"), svar = $(".henvis-svar");
+      felt.value = link; knap.textContent = navigator.share ? "Del" : "Kopiér"; $(".henvis").hidden = false;
+      knap.addEventListener("click", () => {
+        if (navigator.share) { navigator.share({ title: "Sagsvagt", text: "Få besked, når politikerne i København tager dit emne op. Gratis.", url: link }).catch(() => {}); return; }
+        navigator.clipboard.writeText(link).then(() => { svar.textContent = "Linket er kopieret."; }, () => { felt.select(); });
+      });
+    } catch {}
+  };
+  const faerdig = () => { card.classList.add("ok"); visHenvisning(form.email.value); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = form.email.value.trim(), f = form.email.parentElement;

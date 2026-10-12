@@ -4,6 +4,7 @@ import { readFile, writeFile, mkdir, rm, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { EMNER, emnerFor, deltagere, stemmetal, indstillingPunkter, videreTil, afstemninger, hoeringsfrist, iHoering, forklar } from "./beriget.mjs";
 import { bygDelebilleder } from "./delebilleder.mjs";
+import { findSteder, stedLinks, bygSteder, delRad, DEL_SCRIPT } from "./steder.mjs";
 import { bygBokse } from "./boks.mjs";
 import { bygKommuner } from "./kommuner.mjs";
 import { laesForenklet, forenkletBoks } from "./forenklet.mjs";
@@ -184,9 +185,10 @@ ${LOGO_SYMBOL}
       <a href="${rod}moeder.html"${aktiv === "moeder" ? ' aria-current="page"' : ""}>Møder</a>
       <a href="${rod}soeg.html"${aktiv === "soeg" ? ' aria-current="page"' : ""}>Søg</a>
       <a href="${rod}kommune/"${aktiv === "kommune" ? ' aria-current="page"' : ""}>Kommuner</a>
-      <details class="mere"><summary${["br", "udvalg", "hoeringer", "partier", "om"].includes(aktiv) ? ' aria-current="page"' : ""}>Mere</summary><div>
+      <details class="mere"><summary${["br", "udvalg", "sted", "hoeringer", "partier", "om"].includes(aktiv) ? ' aria-current="page"' : ""}>Mere</summary><div>
         <a href="${rod}udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a>
         <a href="${rod}udvalg/">Alle udvalg</a>
+        <a href="${rod}sted/">Steder</a>
         <a href="${rod}hoeringer.html">Høringer</a>
         <a href="${rod}partier.html">Sådan stemmer partierne</a>
         <a href="${rod}om.html">Om Sagsvagt</a>
@@ -290,6 +292,7 @@ async function main() {
   console.log(`${alle.length} punkter, ${sager.length} publiceres i København${andre.length ? `, ${andre.length} i andre kommuner` : ""}`);
 
   const H = { ROD, IDAG, SITE_URL, esc, side, kicker, emneLinks, hvorNavn, stor, kortDato, datoTekst, ugedag, slug, saetninger, erLokaludvalg, bydel, vagtBoks, notits };
+  const { prSted, stederFor } = await findSteder(sager, ROD); // gader, pladser og parker (avis/steder.mjs)
   for (const dir of ["sag", "udvalg", "bydel", "emne"]) { await rm(join(ROD, dir), { recursive: true, force: true }); await mkdir(join(ROD, dir), { recursive: true }); }
 
   // Forside
@@ -378,6 +381,8 @@ async function main() {
         ${s.dek ? `<p class="dek">${esc(s.dek)}</p>` : ""}
         ${s.kommunensTitel ? `<p class="kommunens-titel">Kommunens titel: ${esc(s.kommunensTitel)}</p>` : ""}
         ${emneLinks(s, "../")}
+        ${erKK(s) ? stedLinks(stederFor(s), "../", H) : ""}
+        <!--del-->
         ${forenkletBoks(s, FORENKLET, esc)}
       </header>
       <div class="body">
@@ -390,17 +395,17 @@ async function main() {
       </div>
     </article>`;
     // Samme artikel som fragment, så Min avis kan vise hele sagen (sag/ og min/ ligger begge ét niveau nede)
-    await writeFile(join(ROD, "assets", "sager", s.url.slice(4)), artikel.replace("<!--tester-->", ""));
+    await writeFile(join(ROD, "assets", "sager", s.url.slice(4)), artikel.replace("<!--tester-->", "").replace("<!--del-->", ""));
     const indhold = `<div class="wrap">
   <div class="article">
-    ${artikel.replace("<!--tester-->", testerBoks(s))}
+    ${artikel.replace("<!--tester-->", testerBoks(s)).replace("<!--del-->", delRad(SITE_URL + s.url, s.titel))}
     <aside class="side">
       ${vagtBoks("../", "sag", erKK(s) ? "København" : s.kommune)}
       ${relateret.length ? `<h2 class="rubrik">Mere fra ${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</h2>${relateret.map((x) => `<article class="mini">${kicker(x, "../", false)}<h3 class="hl"><a href="../${x.url}">${esc(x.titel)}</a></h3></article>`).join("")}` : ""}
     </aside>
   </div>
 </div>
-<script type="application/ld+json">${JSON.stringify(jsonld)}</script>`;
+<script type="application/ld+json">${JSON.stringify(jsonld)}</script>${DEL_SCRIPT}`;
     await writeFile(join(ROD, s.url), side({
       titel: `${s.titel} – Sagsvagt`, beskrivelse: s.dek || `${s.udvalg}, ${datoTekst(s.dato)}`,
       sti: s.url, rod: "../", indhold, ogType: "article", ogBillede: delebilleder.get(s.id),
@@ -573,7 +578,9 @@ async function main() {
   const { kommuner, kommuneSider } = await bygKommuner({ sager, andre }, H);
 
   // Sitemap og robots
-  const urls = ["", "index.html", "om.html", "boks.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), "kommune/", ...kommuner.map((k) => `kommune/${k.slug}.html`), ...kommuneSider, ...alleSager.map((s) => s.url)];
+  const stedUrls = await bygSteder(prSted, H);
+  console.log(`${stedUrls.length - 1} stedsider`);
+  const urls = [...stedUrls, "", "index.html", "om.html", "boks.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), "kommune/", ...kommuner.map((k) => `kommune/${k.slug}.html`), ...kommuneSider, ...alleSager.map((s) => s.url)];
   await writeFile(join(ROD, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE_URL}${u}</loc></url>`).join("\n")}\n</urlset>\n`);
   await writeFile(join(ROD, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
   console.log(`Byggede forside, ${sager.length} sager, ${udvalg.length} udvalg, ${lokal.length} bydele, ${Object.keys(EMNER).length} emner, ${antalBokse} bokse`);

@@ -363,3 +363,18 @@ footer.foot a:hover { text-decoration: underline; }
 .forenklet-indhold h3 { font-size: var(--overskrift); font-weight: 700; margin: 16px 0 4px; }
 .forenklet-indhold p { margin: 0; line-height: 1.6; }
 .forenklet-note { margin-top: 16px !important; padding-top: 12px; border-top: 1px solid var(--rule); font-size: var(--fodnote); color: var(--muted); }
+
+/* Steder i sagen og stedsiderne (avis/steder.mjs) */
+.steder { margin: 12px 0 0; font-size: var(--fodnote); color: var(--muted); }
+.steder span { font-weight: 600; margin-right: 2px; }
+.steder a { color: var(--nat); font-weight: 600; }
+.sted-bogstav { font-size: var(--overskrift); margin: 24px 0 8px; }
+.listing .tester { margin: 40px 0 0; }
+.kilde-osm { margin-top: 32px; font-size: var(--fodnote); color: var(--muted); }
+/* Del: én rolig række, samme knapfamilie som chips */
+.del-rad { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 16px 0 0; }
+.del-knap { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; font: 600 var(--sekundaer)/1 var(--sans); color: var(--nat); background: none; border: 0; box-shadow: inset 0 0 0 1.5px var(--rule); border-radius: var(--r-knap); text-decoration: none; cursor: pointer; }
+.del-knap:hover { box-shadow: inset 0 0 0 1.5px var(--nat); text-decoration: none; }
+.del-knap[hidden] { display: none; }
+.del-svar { font-size: var(--fodnote); color: var(--muted); }
+.chips a span { margin-left: 4px; }
