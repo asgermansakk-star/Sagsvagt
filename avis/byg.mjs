@@ -160,6 +160,7 @@ ${LOGO_SYMBOL}
       ${aktiv === "forside"
         ? `<p class="mh-edition"><b>${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}</b><br>Uge ${ugenr(IDAG)}. Nyt fra byråd, udvalg og lokaludvalg</p>`
         : `<p class="mh-edition">Nyt fra byråd, udvalg og lokaludvalg</p>`}
+      <a class="mh-cta" href="${rod}vagt.html?fra=avis#tilmeld">Bliv tester</a>
     </div>
     <nav class="mh-nav" aria-label="Hovedmenu">
       <a href="${rod}index.html"${aktiv === "forside" ? ' aria-current="page"' : ""}>Forside</a>
