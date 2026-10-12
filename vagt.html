@@ -102,6 +102,13 @@
   .udklip li { font: 600 var(--t3)/1.3 var(--serif); padding: 14px 0; border-bottom: 1px solid rgba(230,223,211,.16); }
   .udklip li span { display: block; font: 500 var(--billedtekst)/1.4 var(--sans); color: rgba(230,223,211,.66); margin-bottom: 4px; }
   .udklip a { color: var(--kalk); font-size: var(--sekundaer); font-weight: 600; }
+  .find-kommune { margin-top: 28px; max-width: 30em; }
+  .find-kommune label { display: block; font-size: var(--sekundaer); font-weight: 600; margin-bottom: 8px; color: rgba(230,223,211,.9); }
+  .find-kommune div { display: flex; gap: 8px; }
+  .find-kommune input { flex: 1; min-width: 0; min-height: 44px; font: 500 var(--broed) var(--sans); color: var(--nat); background: var(--kalk); border: 0; border-radius: var(--r-felt); padding: 10px 14px; }
+  .find-kommune input:focus { outline: 3px solid var(--lyng); outline-offset: 1px; }
+  .find-kommune .btn { min-height: 44px; }
+  .fk-fejl { margin-top: 6px; font-size: var(--fodnote); color: var(--rosen); min-height: 1em; }
   .tryghed { list-style: none; padding: 0; margin: 24px 0 0; display: flex; gap: 6px 24px; flex-wrap: wrap; font-size: var(--sekundaer); color: rgba(230,223,211,.72); }
 
   /* ---------- Afsnit ---------- */
@@ -292,6 +299,7 @@
       <a href="#proev">Prøv det</a>
       <a href="#saadan">Sådan virker det</a>
       <a href="#spoergsmaal">Spørgsmål</a>
+      <a href="kommune/">Kommuner</a>
       <a href="index.html">Læs avisen</a>
     </nav>
     <a class="btn btn-lille btn-sekundaer" href="min/">Log ind</a>
@@ -309,6 +317,11 @@
         <a class="btn btn-primaer" href="#tilmeld">Skriv dig op gratis</a>
         <a class="btn btn-sekundaer" href="#proev">Prøv det på rigtige sager</a>
       </div>
+      <form class="find-kommune" id="find-kommune" role="search" novalidate>
+        <label for="fk">Bor du ikke i København? Find din kommune</label>
+        <div><input id="fk" list="kommune-liste" autocomplete="off" placeholder="Skriv din kommune, fx Aarhus"><button class="btn btn-lille btn-sekundaer" type="submit">Find</button></div>
+        <p class="fk-fejl" id="fk-fejl" role="status"></p>
+      </form>
       <ul class="tryghed" aria-label="Det kan du regne med">
         <li>Gratis i testperioden</li>
         <li>Partineutral</li>
@@ -396,7 +409,7 @@
         <form id="form" novalidate>
           <input type="hidden" name="kilde" id="kilde">
           <div class="felt"><label for="email">Din e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="navn@eksempel.dk" required></div>
-          <div class="felt"><label for="kommuner">Kommuner du vil følge</label><input id="kommuner" name="kommuner" type="text" value="København"></div>
+          <div class="felt"><label for="kommuner">Kommuner du vil følge</label><input id="kommuner" name="kommuner" type="text" value="København" list="kommune-liste" autocomplete="off"><datalist id="kommune-liste"><option value="Albertslund"><option value="Allerød"><option value="Assens"><option value="Ballerup"><option value="Billund"><option value="Bornholm"><option value="Brøndby"><option value="Brønderslev"><option value="Dragør"><option value="Egedal"><option value="Esbjerg"><option value="Fanø"><option value="Favrskov"><option value="Faxe"><option value="Fredensborg"><option value="Fredericia"><option value="Frederiksberg"><option value="Frederikshavn"><option value="Frederikssund"><option value="Furesø"><option value="Faaborg-Midtfyn"><option value="Gentofte"><option value="Gladsaxe"><option value="Glostrup"><option value="Greve"><option value="Gribskov"><option value="Guldborgsund"><option value="Haderslev"><option value="Halsnæs"><option value="Hedensted"><option value="Helsingør"><option value="Herlev"><option value="Herning"><option value="Hillerød"><option value="Hjørring"><option value="Holbæk"><option value="Holstebro"><option value="Horsens"><option value="Hvidovre"><option value="Høje-Taastrup"><option value="Hørsholm"><option value="Ikast-Brande"><option value="Ishøj"><option value="Jammerbugt"><option value="Kalundborg"><option value="Kerteminde"><option value="Kolding"><option value="København"><option value="Køge"><option value="Langeland"><option value="Lejre"><option value="Lemvig"><option value="Lolland"><option value="Lyngby-Taarbæk"><option value="Læsø"><option value="Mariagerfjord"><option value="Middelfart"><option value="Morsø"><option value="Norddjurs"><option value="Nordfyn"><option value="Nyborg"><option value="Næstved"><option value="Odder"><option value="Odense"><option value="Odsherred"><option value="Randers"><option value="Rebild"><option value="Ringkøbing-Skjern"><option value="Ringsted"><option value="Roskilde"><option value="Rudersdal"><option value="Rødovre"><option value="Samsø"><option value="Silkeborg"><option value="Skanderborg"><option value="Skive"><option value="Slagelse"><option value="Solrød"><option value="Sorø"><option value="Stevns"><option value="Struer"><option value="Svendborg"><option value="Syddjurs"><option value="Sønderborg"><option value="Thisted"><option value="Tønder"><option value="Tårnby"><option value="Vallensbæk"><option value="Varde"><option value="Vejen"><option value="Vejle"><option value="Vesthimmerland"><option value="Viborg"><option value="Vordingborg"><option value="Ærø"><option value="Aabenraa"><option value="Aalborg"><option value="Aarhus"></datalist></div>
           <div class="felt" id="valgteFelt" hidden>
             <span class="label-tekst" style="display:block;font-size:var(--fodnote);font-weight:600;margin-bottom:6px">Dine emner fra demoen</span>
             <div class="valgte" id="picked"></div>
@@ -460,7 +473,7 @@
       <div class="afsnit-hoved"><h2 id="faq-h">Spørgsmål</h2></div>
       <div class="faq">
         <details><summary>Hvor kommer oplysningerne fra?</summary><p>Fra kommunernes egne, offentligt tilgængelige dagsordener og referater. Hver sag i mailen linker til det originale dokument, så du altid kan læse hele sagen.</p></details>
-        <details><summary>Hvilke kommuner er med?</summary><p>Vi starter med København: Borgerrepræsentationen, de stående udvalg og lokaludvalgene. Derefter udvider vi efter, hvad brugerne efterspørger. Skriv de kommuner, du vil følge, når du tilmelder dig, så kommer de først i køen.</p></details>
+        <details><summary>Hvilke kommuner er med?</summary><p>Vi starter med København: Borgerrepræsentationen, de stående udvalg og lokaludvalgene. Derefter udvider vi efter, hvad brugerne efterspørger. Skriv de kommuner, du vil følge, når du tilmelder dig, så kommer de først i køen. <a href="kommune/">Find din kommune</a>.</p></details>
         <details><summary>Hvordan finder I de rigtige sager?</summary><p>Vi søger ikke kun efter præcis de ord, du skriver. En sag om "VE-anlæg" bliver også fanget, hvis du følger solceller, og "byplan" fanges, hvis du følger lokalplaner. Du kan prøve det i demoen længere oppe.</p></details>
         <details><summary>Hvad koster det?</summary><p>Intet, mens vi tester. Bagefter bliver det et abonnement. Du får besked i god tid, og du beslutter selv, om du vil fortsætte.</p></details>
         <details><summary>Hvornår starter det?</summary><p>De første mails sendes til testbrugerne i København i løbet af de kommende uger. Du får en mail, når din kommune er klar.</p></details>
@@ -638,6 +651,28 @@
   // Fra en sag i avisen: udfyld emnet eller bydelen, læseren kom fra
   const emneFra = new URLSearchParams(location.search).get("emne");
   if (emneFra && !$("#emner").value) $("#emner").value = emneFra.slice(0, 80);
+  // Find din kommune: skriv navnet (eller vælg det i listen), så kommer man til kommunens side. København er åben og går til avisen.
+  const KOMMUNER = {"københavn":"koebenhavn","frederiksberg":"frederiksberg","ballerup":"ballerup","brøndby":"broendby","dragør":"dragoer","gentofte":"gentofte","gladsaxe":"gladsaxe","glostrup":"glostrup","herlev":"herlev","albertslund":"albertslund","hvidovre":"hvidovre","høje-taastrup":"hoeje-taastrup","lyngby-taarbæk":"lyngby-taarbaek","rødovre":"roedovre","ishøj":"ishoej","tårnby":"taarnby","vallensbæk":"vallensbaek","furesø":"furesoe","allerød":"alleroed","fredensborg":"fredensborg","helsingør":"helsingoer","hillerød":"hilleroed","hørsholm":"hoersholm","rudersdal":"rudersdal","egedal":"egedal","frederikssund":"frederikssund","greve":"greve","køge":"koege","halsnæs":"halsnaes","roskilde":"roskilde","solrød":"solroed","gribskov":"gribskov","odsherred":"odsherred","holbæk":"holbaek","faxe":"faxe","kalundborg":"kalundborg","ringsted":"ringsted","slagelse":"slagelse","stevns":"stevns","sorø":"soroe","lejre":"lejre","lolland":"lolland","næstved":"naestved","guldborgsund":"guldborgsund","vordingborg":"vordingborg","bornholm":"bornholm","middelfart":"middelfart","assens":"assens","faaborg-midtfyn":"faaborg-midtfyn","kerteminde":"kerteminde","nyborg":"nyborg","odense":"odense","svendborg":"svendborg","nordfyn":"nordfyn","langeland":"langeland","ærø":"aeroe","haderslev":"haderslev","billund":"billund","sønderborg":"soenderborg","tønder":"toender","esbjerg":"esbjerg","fanø":"fanoe","varde":"varde","vejen":"vejen","aabenraa":"aabenraa","fredericia":"fredericia","horsens":"horsens","kolding":"kolding","vejle":"vejle","herning":"herning","holstebro":"holstebro","lemvig":"lemvig","struer":"struer","syddjurs":"syddjurs","norddjurs":"norddjurs","favrskov":"favrskov","odder":"odder","randers":"randers","silkeborg":"silkeborg","samsø":"samsoe","skanderborg":"skanderborg","aarhus":"aarhus","ikast-brande":"ikast-brande","ringkøbing-skjern":"ringkoebing-skjern","hedensted":"hedensted","morsø":"morsoe","skive":"skive","thisted":"thisted","viborg":"viborg","brønderslev":"broenderslev","frederikshavn":"frederikshavn","vesthimmerland":"vesthimmerland","læsø":"laesoe","rebild":"rebild","mariagerfjord":"mariagerfjord","jammerbugt":"jammerbugt","aalborg":"aalborg","hjørring":"hjoerring"};
+  const findKommune = (vis) => {
+    const v = $("#fk").value.trim().toLowerCase().replace(/s+kommune$/, "").replace(/^aa/, "å");
+    const slug = KOMMUNER[v] || KOMMUNER[v.replace(/^å/, "aa")] || Object.entries(KOMMUNER).find(([n]) => n.startsWith(v) && v.length >= 3)?.[1];
+    if (slug) { location.href = slug === "koebenhavn" ? "index.html" : `kommune/${slug}.html`; return true; }
+    if (vis) $("#fk-fejl").textContent = v ? "Vi kan ikke finde den kommune. Vælg den i listen, eller se alle kommuner under Kommuner." : "Skriv navnet på din kommune.";
+    return false;
+  };
+  $("#find-kommune").addEventListener("submit", (e) => { e.preventDefault(); findKommune(true); });
+  // Vælger man en kommune i forslagslisten, går vi direkte videre
+  $("#fk").addEventListener("change", () => { if (KOMMUNER[$("#fk").value.trim().toLowerCase()]) findKommune(false); });
+  $("#fk").addEventListener("input", () => { $("#fk-fejl").textContent = ""; });
+  // Fra en kommuneside (kommune/aarhus.html): udfyld kommunen, og sig, at det er den, de skriver sig op til
+  const kommuneFra = (new URLSearchParams(location.search).get("kommune") || "").slice(0, 60);
+  if (kommuneFra) {
+    $("#kommuner").value = kommuneFra;
+    if (kommuneFra !== "København") {
+      $("#tilmeld-h").textContent = `Få besked, når Sagsvagt åbner i ${kommuneFra}`;
+      $("#tilmeld .lead").textContent = `Vi er startet i København og åbner kommune for kommune, der hvor flest skriver sig op. Skriv dig op, så rykker ${kommuneFra} op i køen, og du får besked, når den er klar.`;
+    }
+  }
   // Demoen bygges efter indlæsning og skubber formularen ned, så hop til den igen, når siden er færdig
   if (location.hash === "#tilmeld") addEventListener("load", () => $("#tilmeld").scrollIntoView({ block: "start" }));
   const form = $("#form"), msg = $(".form-msg", form), btn = $(".send", form), card = $(".tilmeld-kort");

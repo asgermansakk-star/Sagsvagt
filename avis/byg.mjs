@@ -5,6 +5,7 @@ import { join } from "node:path";
 import { EMNER, emnerFor, deltagere, stemmetal, indstillingPunkter, videreTil, afstemninger, hoeringsfrist, iHoering, forklar } from "./beriget.mjs";
 import { bygDelebilleder } from "./delebilleder.mjs";
 import { bygBokse } from "./boks.mjs";
+import { bygKommuner } from "./kommuner.mjs";
 import { sagensVej, vejBoks, bygPartier, bygHoeringer, bygKalendere, bygFeeds, kalenderLink, feedLink } from "./ekstra.mjs";
 
 const ROD = join(import.meta.dirname, "..");
@@ -166,6 +167,7 @@ ${LOGO_SYMBOL}
       <a href="${rod}bydel/"${aktiv === "bydel" ? ' aria-current="page"' : ""}>Bydele</a>
       <a href="${rod}moeder.html"${aktiv === "moeder" ? ' aria-current="page"' : ""}>Møder</a>
       <a href="${rod}soeg.html"${aktiv === "soeg" ? ' aria-current="page"' : ""}>Søg</a>
+      <a href="${rod}kommune/"${aktiv === "kommune" ? ' aria-current="page"' : ""}>Kommuner</a>
       <details class="mere"><summary${["br", "udvalg", "hoeringer", "partier", "om"].includes(aktiv) ? ' aria-current="page"' : ""}>Mere</summary><div>
         <a href="${rod}udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a>
         <a href="${rod}udvalg/">Alle udvalg</a>
@@ -542,9 +544,11 @@ async function main() {
 
   // Bokse til andres hjemmesider og siden boks.html, hvor man henter koden (avis/boks.mjs)
   const antalBokse = await bygBokse({ sager, udvalg, lokal, prUdvalg, prEmne }, H);
+  // En side for hver af de 98 kommuner (avis/kommuner.mjs)
+  const kommuner = await bygKommuner({ sager }, H);
 
   // Sitemap og robots
-  const urls = ["", "index.html", "om.html", "boks.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), ...sager.map((s) => s.url)];
+  const urls = ["", "index.html", "om.html", "boks.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), "kommune/", ...kommuner.map((k) => `kommune/${k.slug}.html`), ...sager.map((s) => s.url)];
   await writeFile(join(ROD, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE_URL}${u}</loc></url>`).join("\n")}\n</urlset>\n`);
   await writeFile(join(ROD, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
   console.log(`Byggede forside, ${sager.length} sager, ${udvalg.length} udvalg, ${lokal.length} bydele, ${Object.keys(EMNER).length} emner, ${antalBokse} bokse`);

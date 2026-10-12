@@ -1,0 +1,786 @@
+[
+ {
+  "navn": "København",
+  "kommune": "Københavns Kommune",
+  "slug": "koebenhavn",
+  "region": "Hovedstaden",
+  "kode": 101,
+  "web": "https://www.kk.dk/"
+ },
+ {
+  "navn": "Frederiksberg",
+  "kommune": "Frederiksberg Kommune",
+  "slug": "frederiksberg",
+  "region": "Hovedstaden",
+  "kode": 147,
+  "web": "https://www.frederiksberg.dk/"
+ },
+ {
+  "navn": "Ballerup",
+  "kommune": "Ballerup Kommune",
+  "slug": "ballerup",
+  "region": "Hovedstaden",
+  "kode": 151,
+  "web": "https://www.ballerup.dk/"
+ },
+ {
+  "navn": "Brøndby",
+  "kommune": "Brøndby Kommune",
+  "slug": "broendby",
+  "region": "Hovedstaden",
+  "kode": 153,
+  "web": "https://www.brondby.dk/"
+ },
+ {
+  "navn": "Dragør",
+  "kommune": "Dragør Kommune",
+  "slug": "dragoer",
+  "region": "Hovedstaden",
+  "kode": 155,
+  "web": "https://www.dragoer.dk/"
+ },
+ {
+  "navn": "Gentofte",
+  "kommune": "Gentofte Kommune",
+  "slug": "gentofte",
+  "region": "Hovedstaden",
+  "kode": 157,
+  "web": "https://gentofte.dk/"
+ },
+ {
+  "navn": "Gladsaxe",
+  "kommune": "Gladsaxe Kommune",
+  "slug": "gladsaxe",
+  "region": "Hovedstaden",
+  "kode": 159,
+  "web": "https://www.gladsaxe.dk/"
+ },
+ {
+  "navn": "Glostrup",
+  "kommune": "Glostrup Kommune",
+  "slug": "glostrup",
+  "region": "Hovedstaden",
+  "kode": 161,
+  "web": "https://www.glostrup.dk/"
+ },
+ {
+  "navn": "Herlev",
+  "kommune": "Herlev Kommune",
+  "slug": "herlev",
+  "region": "Hovedstaden",
+  "kode": 163,
+  "web": "https://www.herlev.dk/"
+ },
+ {
+  "navn": "Albertslund",
+  "kommune": "Albertslund Kommune",
+  "slug": "albertslund",
+  "region": "Hovedstaden",
+  "kode": 165,
+  "web": "https://albertslund.dk/"
+ },
+ {
+  "navn": "Hvidovre",
+  "kommune": "Hvidovre Kommune",
+  "slug": "hvidovre",
+  "region": "Hovedstaden",
+  "kode": 167,
+  "web": "https://hvidovre.dk/"
+ },
+ {
+  "navn": "Høje-Taastrup",
+  "kommune": "Høje-Taastrup Kommune",
+  "slug": "hoeje-taastrup",
+  "region": "Hovedstaden",
+  "kode": 169,
+  "web": "https://www.htk.dk/"
+ },
+ {
+  "navn": "Lyngby-Taarbæk",
+  "kommune": "Lyngby-Taarbæk Kommune",
+  "slug": "lyngby-taarbaek",
+  "region": "Hovedstaden",
+  "kode": 173,
+  "web": "https://www.ltk.dk/"
+ },
+ {
+  "navn": "Rødovre",
+  "kommune": "Rødovre Kommune",
+  "slug": "roedovre",
+  "region": "Hovedstaden",
+  "kode": 175,
+  "web": "https://www.rk.dk/"
+ },
+ {
+  "navn": "Ishøj",
+  "kommune": "Ishøj Kommune",
+  "slug": "ishoej",
+  "region": "Hovedstaden",
+  "kode": 183,
+  "web": "https://ishoj.dk/"
+ },
+ {
+  "navn": "Tårnby",
+  "kommune": "Tårnby Kommune",
+  "slug": "taarnby",
+  "region": "Hovedstaden",
+  "kode": 185,
+  "web": "https://www.taarnby.dk/"
+ },
+ {
+  "navn": "Vallensbæk",
+  "kommune": "Vallensbæk Kommune",
+  "slug": "vallensbaek",
+  "region": "Hovedstaden",
+  "kode": 187,
+  "web": "https://www.vallensbaek.dk/"
+ },
+ {
+  "navn": "Furesø",
+  "kommune": "Furesø Kommune",
+  "slug": "furesoe",
+  "region": "Hovedstaden",
+  "kode": 190,
+  "web": "https://www.furesoe.dk/"
+ },
+ {
+  "navn": "Allerød",
+  "kommune": "Allerød Kommune",
+  "slug": "alleroed",
+  "region": "Hovedstaden",
+  "kode": 201,
+  "web": "https://www.alleroed.dk/"
+ },
+ {
+  "navn": "Fredensborg",
+  "kommune": "Fredensborg Kommune",
+  "slug": "fredensborg",
+  "region": "Hovedstaden",
+  "kode": 210,
+  "web": "https://www.fredensborg.dk/"
+ },
+ {
+  "navn": "Helsingør",
+  "kommune": "Helsingør Kommune",
+  "slug": "helsingoer",
+  "region": "Hovedstaden",
+  "kode": 217,
+  "web": "https://www.helsingor.dk/"
+ },
+ {
+  "navn": "Hillerød",
+  "kommune": "Hillerød Kommune",
+  "slug": "hilleroed",
+  "region": "Hovedstaden",
+  "kode": 219,
+  "web": "https://www.hillerod.dk/"
+ },
+ {
+  "navn": "Hørsholm",
+  "kommune": "Hørsholm Kommune",
+  "slug": "hoersholm",
+  "region": "Hovedstaden",
+  "kode": 223,
+  "web": "https://www.horsholm.dk/"
+ },
+ {
+  "navn": "Rudersdal",
+  "kommune": "Rudersdal Kommune",
+  "slug": "rudersdal",
+  "region": "Hovedstaden",
+  "kode": 230,
+  "web": "https://www.rudersdal.dk/"
+ },
+ {
+  "navn": "Egedal",
+  "kommune": "Egedal Kommune",
+  "slug": "egedal",
+  "region": "Hovedstaden",
+  "kode": 240,
+  "web": "https://www.egedalkommune.dk/"
+ },
+ {
+  "navn": "Frederikssund",
+  "kommune": "Frederikssund Kommune",
+  "slug": "frederikssund",
+  "region": "Hovedstaden",
+  "kode": 250,
+  "web": "https://www.frederikssund.dk/"
+ },
+ {
+  "navn": "Greve",
+  "kommune": "Greve Kommune",
+  "slug": "greve",
+  "region": "Sjælland",
+  "kode": 253,
+  "web": "https://greve.dk/"
+ },
+ {
+  "navn": "Køge",
+  "kommune": "Køge Kommune",
+  "slug": "koege",
+  "region": "Sjælland",
+  "kode": 259,
+  "web": "https://www.koege.dk/"
+ },
+ {
+  "navn": "Halsnæs",
+  "kommune": "Halsnæs Kommune",
+  "slug": "halsnaes",
+  "region": "Hovedstaden",
+  "kode": 260,
+  "web": "https://www.halsnaes.dk/"
+ },
+ {
+  "navn": "Roskilde",
+  "kommune": "Roskilde Kommune",
+  "slug": "roskilde",
+  "region": "Sjælland",
+  "kode": 265,
+  "web": "https://roskilde.dk/"
+ },
+ {
+  "navn": "Solrød",
+  "kommune": "Solrød Kommune",
+  "slug": "solroed",
+  "region": "Sjælland",
+  "kode": 269,
+  "web": "https://www.solrod.dk/"
+ },
+ {
+  "navn": "Gribskov",
+  "kommune": "Gribskov Kommune",
+  "slug": "gribskov",
+  "region": "Hovedstaden",
+  "kode": 270,
+  "web": "https://www.gribskov.dk/"
+ },
+ {
+  "navn": "Odsherred",
+  "kommune": "Odsherred Kommune",
+  "slug": "odsherred",
+  "region": "Sjælland",
+  "kode": 306,
+  "web": "https://www.odsherred.dk/"
+ },
+ {
+  "navn": "Holbæk",
+  "kommune": "Holbæk Kommune",
+  "slug": "holbaek",
+  "region": "Sjælland",
+  "kode": 316,
+  "web": "https://holbaek.dk/"
+ },
+ {
+  "navn": "Faxe",
+  "kommune": "Faxe Kommune",
+  "slug": "faxe",
+  "region": "Sjælland",
+  "kode": 320,
+  "web": "https://www.faxekommune.dk/"
+ },
+ {
+  "navn": "Kalundborg",
+  "kommune": "Kalundborg Kommune",
+  "slug": "kalundborg",
+  "region": "Sjælland",
+  "kode": 326,
+  "web": "https://www.kalundborg.dk/"
+ },
+ {
+  "navn": "Ringsted",
+  "kommune": "Ringsted Kommune",
+  "slug": "ringsted",
+  "region": "Sjælland",
+  "kode": 329,
+  "web": "https://ringsted.dk/"
+ },
+ {
+  "navn": "Slagelse",
+  "kommune": "Slagelse Kommune",
+  "slug": "slagelse",
+  "region": "Sjælland",
+  "kode": 330,
+  "web": "https://www.slagelse.dk/"
+ },
+ {
+  "navn": "Stevns",
+  "kommune": "Stevns Kommune",
+  "slug": "stevns",
+  "region": "Sjælland",
+  "kode": 336,
+  "web": "https://stevns.dk/"
+ },
+ {
+  "navn": "Sorø",
+  "kommune": "Sorø Kommune",
+  "slug": "soroe",
+  "region": "Sjælland",
+  "kode": 340,
+  "web": "https://soroe.dk/"
+ },
+ {
+  "navn": "Lejre",
+  "kommune": "Lejre Kommune",
+  "slug": "lejre",
+  "region": "Sjælland",
+  "kode": 350,
+  "web": "https://www.lejre.dk/"
+ },
+ {
+  "navn": "Lolland",
+  "kommune": "Lolland Kommune",
+  "slug": "lolland",
+  "region": "Sjælland",
+  "kode": 360,
+  "web": "https://www.lolland.dk/"
+ },
+ {
+  "navn": "Næstved",
+  "kommune": "Næstved Kommune",
+  "slug": "naestved",
+  "region": "Sjælland",
+  "kode": 370,
+  "web": "https://www.naestved.dk/"
+ },
+ {
+  "navn": "Guldborgsund",
+  "kommune": "Guldborgsund Kommune",
+  "slug": "guldborgsund",
+  "region": "Sjælland",
+  "kode": 376,
+  "web": "https://www.guldborgsund.dk/"
+ },
+ {
+  "navn": "Vordingborg",
+  "kommune": "Vordingborg Kommune",
+  "slug": "vordingborg",
+  "region": "Sjælland",
+  "kode": 390,
+  "web": "https://www.vordingborg.dk/"
+ },
+ {
+  "navn": "Bornholm",
+  "kommune": "Bornholms Regionskommune",
+  "slug": "bornholm",
+  "region": "Hovedstaden",
+  "kode": 400,
+  "web": "https://www.brk.dk/"
+ },
+ {
+  "navn": "Middelfart",
+  "kommune": "Middelfart Kommune",
+  "slug": "middelfart",
+  "region": "Syddanmark",
+  "kode": 410,
+  "web": "https://www.middelfart.dk/"
+ },
+ {
+  "navn": "Assens",
+  "kommune": "Assens Kommune",
+  "slug": "assens",
+  "region": "Syddanmark",
+  "kode": 420,
+  "web": "https://www.assens.dk/"
+ },
+ {
+  "navn": "Faaborg-Midtfyn",
+  "kommune": "Faaborg-Midtfyn Kommune",
+  "slug": "faaborg-midtfyn",
+  "region": "Syddanmark",
+  "kode": 430,
+  "web": "https://fmk.dk/"
+ },
+ {
+  "navn": "Kerteminde",
+  "kommune": "Kerteminde Kommune",
+  "slug": "kerteminde",
+  "region": "Syddanmark",
+  "kode": 440,
+  "web": "https://www.kerteminde.dk/"
+ },
+ {
+  "navn": "Nyborg",
+  "kommune": "Nyborg Kommune",
+  "slug": "nyborg",
+  "region": "Syddanmark",
+  "kode": 450,
+  "web": "https://www.nyborg.dk/"
+ },
+ {
+  "navn": "Odense",
+  "kommune": "Odense Kommune",
+  "slug": "odense",
+  "region": "Syddanmark",
+  "kode": 461,
+  "web": "https://www.odense.dk/"
+ },
+ {
+  "navn": "Svendborg",
+  "kommune": "Svendborg Kommune",
+  "slug": "svendborg",
+  "region": "Syddanmark",
+  "kode": 479,
+  "web": "https://www.svendborg.dk/"
+ },
+ {
+  "navn": "Nordfyn",
+  "kommune": "Nordfyns Kommune",
+  "slug": "nordfyn",
+  "region": "Syddanmark",
+  "kode": 480,
+  "web": "https://www.nordfynskommune.dk/"
+ },
+ {
+  "navn": "Langeland",
+  "kommune": "Langeland Kommune",
+  "slug": "langeland",
+  "region": "Syddanmark",
+  "kode": 482,
+  "web": "https://www.langelandkommune.dk/"
+ },
+ {
+  "navn": "Ærø",
+  "kommune": "Ærø Kommune",
+  "slug": "aeroe",
+  "region": "Syddanmark",
+  "kode": 492,
+  "web": "https://aeroekommune.dk/"
+ },
+ {
+  "navn": "Haderslev",
+  "kommune": "Haderslev Kommune",
+  "slug": "haderslev",
+  "region": "Syddanmark",
+  "kode": 510,
+  "web": "https://www.haderslev.dk/"
+ },
+ {
+  "navn": "Billund",
+  "kommune": "Billund Kommune",
+  "slug": "billund",
+  "region": "Syddanmark",
+  "kode": 530,
+  "web": "https://billund.dk/"
+ },
+ {
+  "navn": "Sønderborg",
+  "kommune": "Sønderborg Kommune",
+  "slug": "soenderborg",
+  "region": "Syddanmark",
+  "kode": 540,
+  "web": "https://sonderborgkommune.dk/"
+ },
+ {
+  "navn": "Tønder",
+  "kommune": "Tønder Kommune",
+  "slug": "toender",
+  "region": "Syddanmark",
+  "kode": 550,
+  "web": "https://www.toender.dk/"
+ },
+ {
+  "navn": "Esbjerg",
+  "kommune": "Esbjerg Kommune",
+  "slug": "esbjerg",
+  "region": "Syddanmark",
+  "kode": 561,
+  "web": "https://www.esbjerg.dk/"
+ },
+ {
+  "navn": "Fanø",
+  "kommune": "Fanø Kommune",
+  "slug": "fanoe",
+  "region": "Syddanmark",
+  "kode": 563,
+  "web": "https://www.fanoe.dk/"
+ },
+ {
+  "navn": "Varde",
+  "kommune": "Varde Kommune",
+  "slug": "varde",
+  "region": "Syddanmark",
+  "kode": 573,
+  "web": "https://vardekommune.dk/"
+ },
+ {
+  "navn": "Vejen",
+  "kommune": "Vejen Kommune",
+  "slug": "vejen",
+  "region": "Syddanmark",
+  "kode": 575,
+  "web": "https://vejen.dk/"
+ },
+ {
+  "navn": "Aabenraa",
+  "kommune": "Aabenraa Kommune",
+  "slug": "aabenraa",
+  "region": "Syddanmark",
+  "kode": 580,
+  "web": "https://www.aabenraa.dk/"
+ },
+ {
+  "navn": "Fredericia",
+  "kommune": "Fredericia Kommune",
+  "slug": "fredericia",
+  "region": "Syddanmark",
+  "kode": 607,
+  "web": "https://www.fredericia.dk/"
+ },
+ {
+  "navn": "Horsens",
+  "kommune": "Horsens Kommune",
+  "slug": "horsens",
+  "region": "Midtjylland",
+  "kode": 615,
+  "web": "https://horsens.dk/"
+ },
+ {
+  "navn": "Kolding",
+  "kommune": "Kolding Kommune",
+  "slug": "kolding",
+  "region": "Syddanmark",
+  "kode": 621,
+  "web": "https://www.kolding.dk/"
+ },
+ {
+  "navn": "Vejle",
+  "kommune": "Vejle Kommune",
+  "slug": "vejle",
+  "region": "Syddanmark",
+  "kode": 630,
+  "web": "https://www.vejle.dk/"
+ },
+ {
+  "navn": "Herning",
+  "kommune": "Herning Kommune",
+  "slug": "herning",
+  "region": "Midtjylland",
+  "kode": 657,
+  "web": "https://www.herning.dk/"
+ },
+ {
+  "navn": "Holstebro",
+  "kommune": "Holstebro Kommune",
+  "slug": "holstebro",
+  "region": "Midtjylland",
+  "kode": 661,
+  "web": "https://www.holstebro.dk/"
+ },
+ {
+  "navn": "Lemvig",
+  "kommune": "Lemvig Kommune",
+  "slug": "lemvig",
+  "region": "Midtjylland",
+  "kode": 665,
+  "web": "https://lemvig.dk/"
+ },
+ {
+  "navn": "Struer",
+  "kommune": "Struer Kommune",
+  "slug": "struer",
+  "region": "Midtjylland",
+  "kode": 671,
+  "web": "https://www.struer.dk/"
+ },
+ {
+  "navn": "Syddjurs",
+  "kommune": "Syddjurs Kommune",
+  "slug": "syddjurs",
+  "region": "Midtjylland",
+  "kode": 706,
+  "web": "https://www.syddjurs.dk/"
+ },
+ {
+  "navn": "Norddjurs",
+  "kommune": "Norddjurs Kommune",
+  "slug": "norddjurs",
+  "region": "Midtjylland",
+  "kode": 707,
+  "web": "https://norddjurs.dk/"
+ },
+ {
+  "navn": "Favrskov",
+  "kommune": "Favrskov Kommune",
+  "slug": "favrskov",
+  "region": "Midtjylland",
+  "kode": 710,
+  "web": "https://www.favrskov.dk/"
+ },
+ {
+  "navn": "Odder",
+  "kommune": "Odder Kommune",
+  "slug": "odder",
+  "region": "Midtjylland",
+  "kode": 727,
+  "web": "https://www.odder.dk/"
+ },
+ {
+  "navn": "Randers",
+  "kommune": "Randers Kommune",
+  "slug": "randers",
+  "region": "Midtjylland",
+  "kode": 730,
+  "web": "https://www.randers.dk/"
+ },
+ {
+  "navn": "Silkeborg",
+  "kommune": "Silkeborg Kommune",
+  "slug": "silkeborg",
+  "region": "Midtjylland",
+  "kode": 740,
+  "web": "https://www.silkeborg.dk/"
+ },
+ {
+  "navn": "Samsø",
+  "kommune": "Samsø Kommune",
+  "slug": "samsoe",
+  "region": "Midtjylland",
+  "kode": 741,
+  "web": "https://www.samsoe.dk/"
+ },
+ {
+  "navn": "Skanderborg",
+  "kommune": "Skanderborg Kommune",
+  "slug": "skanderborg",
+  "region": "Midtjylland",
+  "kode": 746,
+  "web": "https://www.skanderborg.dk/"
+ },
+ {
+  "navn": "Aarhus",
+  "kommune": "Aarhus Kommune",
+  "slug": "aarhus",
+  "region": "Midtjylland",
+  "kode": 751,
+  "web": "https://www.aarhus.dk/"
+ },
+ {
+  "navn": "Ikast-Brande",
+  "kommune": "Ikast-Brande Kommune",
+  "slug": "ikast-brande",
+  "region": "Midtjylland",
+  "kode": 756,
+  "web": "https://www.ikast-brande.dk/"
+ },
+ {
+  "navn": "Ringkøbing-Skjern",
+  "kommune": "Ringkøbing-Skjern Kommune",
+  "slug": "ringkoebing-skjern",
+  "region": "Midtjylland",
+  "kode": 760,
+  "web": "https://www.rksk.dk/"
+ },
+ {
+  "navn": "Hedensted",
+  "kommune": "Hedensted Kommune",
+  "slug": "hedensted",
+  "region": "Midtjylland",
+  "kode": 766,
+  "web": "https://www.hedensted.dk/"
+ },
+ {
+  "navn": "Morsø",
+  "kommune": "Morsø Kommune",
+  "slug": "morsoe",
+  "region": "Nordjylland",
+  "kode": 773,
+  "web": "https://www.morsoe.dk/"
+ },
+ {
+  "navn": "Skive",
+  "kommune": "Skive Kommune",
+  "slug": "skive",
+  "region": "Midtjylland",
+  "kode": 779,
+  "web": "https://skive.dk/"
+ },
+ {
+  "navn": "Thisted",
+  "kommune": "Thisted Kommune",
+  "slug": "thisted",
+  "region": "Nordjylland",
+  "kode": 787,
+  "web": "https://www.thisted.dk/"
+ },
+ {
+  "navn": "Viborg",
+  "kommune": "Viborg Kommune",
+  "slug": "viborg",
+  "region": "Midtjylland",
+  "kode": 791,
+  "web": "https://www.viborg.dk/"
+ },
+ {
+  "navn": "Brønderslev",
+  "kommune": "Brønderslev Kommune",
+  "slug": "broenderslev",
+  "region": "Nordjylland",
+  "kode": 810,
+  "web": "https://www.bronderslev.dk/"
+ },
+ {
+  "navn": "Frederikshavn",
+  "kommune": "Frederikshavn Kommune",
+  "slug": "frederikshavn",
+  "region": "Nordjylland",
+  "kode": 813,
+  "web": "https://frederikshavn.dk/"
+ },
+ {
+  "navn": "Vesthimmerland",
+  "kommune": "Vesthimmerlands Kommune",
+  "slug": "vesthimmerland",
+  "region": "Nordjylland",
+  "kode": 820,
+  "web": "https://www.vesthimmerland.dk/"
+ },
+ {
+  "navn": "Læsø",
+  "kommune": "Læsø Kommune",
+  "slug": "laesoe",
+  "region": "Nordjylland",
+  "kode": 825,
+  "web": "https://www.laesoe.dk/"
+ },
+ {
+  "navn": "Rebild",
+  "kommune": "Rebild Kommune",
+  "slug": "rebild",
+  "region": "Nordjylland",
+  "kode": 840,
+  "web": "https://rebild.dk/"
+ },
+ {
+  "navn": "Mariagerfjord",
+  "kommune": "Mariagerfjord Kommune",
+  "slug": "mariagerfjord",
+  "region": "Nordjylland",
+  "kode": 846,
+  "web": "https://www.mariagerfjord.dk/"
+ },
+ {
+  "navn": "Jammerbugt",
+  "kommune": "Jammerbugt Kommune",
+  "slug": "jammerbugt",
+  "region": "Nordjylland",
+  "kode": 849,
+  "web": "https://www.jammerbugt.dk/"
+ },
+ {
+  "navn": "Aalborg",
+  "kommune": "Aalborg Kommune",
+  "slug": "aalborg",
+  "region": "Nordjylland",
+  "kode": 851,
+  "web": "https://www.aalborg.dk/"
+ },
+ {
+  "navn": "Hjørring",
+  "kommune": "Hjørring Kommune",
+  "slug": "hjoerring",
+  "region": "Nordjylland",
+  "kode": 860,
+  "web": "https://www.hjoerring.dk/"
+ }
+]
