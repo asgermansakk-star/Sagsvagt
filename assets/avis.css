@@ -320,7 +320,9 @@ footer.foot a:hover { text-decoration: underline; }
   .mellem article { padding: 16px 0; }
   .mellem article + article { border-top: 1px solid var(--rule); }
   .emne-gitter { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .mh-edition { display: none; }
+}
+@media (max-width: 1120px) {
+  .mh-edition { display: none; } /* mellem 720 og 1120 px er der ikke plads til både menu, udgave og knap */
 }
 @media (max-width: 720px) {
   .wrap { padding: 0 16px; }
