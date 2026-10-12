@@ -22,6 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/avis.css">
 <script>try{var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;if(!sessionStorage.getItem("svKilde")&&(f||r&&r!==location.hostname))sessionStorage.setItem("svKilde",(f||r).slice(0,60))}catch(e){}</script>
+<script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1")fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:sessionStorage.getItem("svKilde")||""})})}catch(e){}</script>
 <link rel="alternate" type="application/rss+xml" title="Sagsvagt: København" href="https://sagsvagt.dk/feed/alle.xml">
 </head>
 <body>
@@ -70,7 +71,7 @@
   <h2>Indtil da</h2>
   <p>Holstebro Kommune lægger selv dagsordener og referater ud på <a href="https://www.holstebro.dk/" rel="nofollow">holstebro.dk</a>.</p>
   <h2>Andre kommuner i Region Midtjylland</h2>
-  <ul class="chips"><li><a href="favrskov.html">Favrskov</a></li><li><a href="hedensted.html">Hedensted</a></li><li><a href="herning.html">Herning</a></li><li><a href="horsens.html">Horsens</a></li><li><a href="ikast-brande.html">Ikast-Brande</a></li><li><a href="lemvig.html">Lemvig</a></li><li><a href="norddjurs.html">Norddjurs</a></li><li><a href="odder.html">Odder</a></li><li><a href="randers.html">Randers</a></li><li><a href="ringkoebing-skjern.html">Ringkøbing-Skjern</a></li><li><a href="samsoe.html">Samsø</a></li><li><a href="silkeborg.html">Silkeborg</a></li><li><a href="skanderborg.html">Skanderborg</a></li><li><a href="skive.html">Skive</a></li><li><a href="struer.html">Struer</a></li><li><a href="syddjurs.html">Syddjurs</a></li><li><a href="viborg.html">Viborg</a></li><li><a href="aarhus.html">Aarhus</a></li></ul>
+  <ul class="chips"><li><a href="favrskov.html">Favrskov</a></li><li><a href="hedensted.html">Hedensted</a></li><li><a href="herning.html">Herning</a></li><li><a href="horsens.html">Horsens</a></li><li><a href="ikast-brande.html">Ikast-Brande</a></li><li><a href="lemvig.html">Lemvig</a></li><li><a href="norddjurs.html">Norddjurs</a></li><li><a href="odder.html">Odder</a></li><li><a href="randers.html">Randers</a></li><li><a href="ringkoebing-skjern.html">Ringkøbing-Skjern</a></li><li><a href="samsoe.html">Samsø</a></li><li><a href="silkeborg.html">Silkeborg</a></li><li><a href="skanderborg.html">Skanderborg</a></li><li><a href="skive.html">Skive</a></li><li><a href="struer.html">Struer</a></li><li><a href="syddjurs.html">Syddjurs</a></li><li><a href="viborg.html">Viborg <span class="aaben">åben</span></a></li><li><a href="aarhus.html">Aarhus</a></li></ul>
 </div></div><style>
   .kommune-side .kicker a { color: inherit; }
   .kommune-tilmeld { background: var(--moedet); color: var(--kalk); border-radius: 12px; padding: 24px 26px; margin: 26px 0 34px; display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; justify-content: space-between; }
