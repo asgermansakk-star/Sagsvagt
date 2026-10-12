@@ -123,6 +123,17 @@
   .laes-indhold .article h1.hl { font-size: clamp(1.6rem, 3.4vw, 2.2rem); }
   .laes-indhold .indlaes { padding: 40px 0; }
 
+  /* Egne sider i Min avis */
+  .side-h { font-family: var(--serif); font-weight: 600; font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.08; letter-spacing: -.02em; margin: 34px 0 6px; }
+  .side-intro { color: var(--muted); margin: 0 0 18px; max-width: 46em; }
+  .se-alle { margin: 18px 0 0; font-weight: 700; font-size: .9375rem; }
+  .se-alle a { color: var(--vin); text-decoration: none; }
+  .se-alle a:hover { text-decoration: underline; }
+  .gemte-side, .mail-side { padding-bottom: 64px; }
+  .mail-side .mail-ramme { max-width: 760px; height: min(80dvh, 1100px); border: 1px solid var(--rule); border-radius: 8px; }
+  .mail-side .mail-note { padding: 12px 0 0; border: 0; max-width: 760px; }
+  .rail .sec-h a { font-size: .8125rem; font-weight: 600; color: var(--muted); text-decoration: none; }
+
   /* Debat */
   .debat { padding: 44px 0 4px; }
   .debat .sec-h span { font-size: .8125rem; font-weight: 600; color: var(--muted); }
@@ -195,11 +206,11 @@
       <p class="mh-edition" id="udgave">Nyt fra byråd, udvalg og lokaludvalg</p>
     </div>
     <nav class="mh-nav" aria-label="Hovedmenu">
-      <a href="./" aria-current="page">Forside</a>
-      <a href="#alle" data-aaben>Alle mine sager</a>
-      <a href="#debat" data-aaben>Debat</a>
-      <a href="#gemte" data-aaben>Gemte</a>
-      <a href="#" data-mail data-aaben>Mandagsmail</a>
+      <a href="#forside" data-side="forside" aria-current="page">Forside</a>
+      <a href="#sager" data-side="sager" data-aaben>Alle mine sager</a>
+      <a href="#debat" data-side="debat" data-aaben>Debat</a>
+      <a href="#gemte" data-side="gemte" data-aaben>Gemte</a>
+      <a href="#mandagsmail" data-side="mandagsmail" data-aaben>Mandagsmail</a>
       <button type="button" class="ud" id="logud" data-aaben title="Login kommer snart">Log ud</button>
     </nav>
   </div>
@@ -231,7 +242,7 @@
   <!-- Avisen: bygges af scriptet herunder -->
   <div id="avis" hidden>
     <div class="wrap">
-      <section class="ed" aria-labelledby="ed-h">
+      <section class="ed" data-visning="forside" aria-labelledby="ed-h">
         <p class="kicker" id="ed-kicker"></p>
         <h1 id="ed-h"></h1>
         <p class="sum" id="ed-sum"></p>
@@ -254,10 +265,11 @@
         </form>
       </section>
 
-      <div class="front">
+      <div class="front" data-visning="forside">
         <div>
           <h2 class="sec-h" style="margin-top:2px">Besluttet om dine emner</h2>
           <div id="besluttet"></div>
+          <p class="se-alle"><a href="#sager">Se alle sager om dine emner →</a></p>
         </div>
         <div class="rail">
           <section aria-labelledby="h-kommer">
@@ -268,15 +280,16 @@
             <h2 id="h-bydel" class="sec-h">Fra din bydel</h2>
             <div id="bydel"></div>
           </section>
-          <section aria-labelledby="h-gemte" id="gemte">
-            <h2 id="h-gemte" class="sec-h">Gemte sager</h2>
+          <section aria-labelledby="h-gemte">
+            <h2 id="h-gemte" class="sec-h">Gemte sager <a href="#gemte">Alle</a></h2>
             <div id="gemte-liste"></div>
           </section>
         </div>
       </div>
 
-      <section class="debat" id="debat" aria-labelledby="h-debat">
-        <h2 id="h-debat" class="sec-h">Debat <span>Læsernes indlæg om sagerne</span></h2>
+      <section class="debat" data-visning="debat" hidden aria-labelledby="h-debat">
+        <h1 id="h-debat" class="side-h">Debat</h1>
+        <p class="side-intro">Læsernes indlæg om sagerne fra byrådet, udvalgene og bydelene.</p>
         <div class="debat-grid">
           <div id="indlaeg-liste"></div>
           <aside class="skriv-boks">
@@ -288,8 +301,22 @@
         </div>
       </section>
 
-      <section class="alle" id="alle" aria-labelledby="h-alle">
-        <h2 id="h-alle" class="sec-h">Alle sager om dine emner</h2>
+      <section class="gemte-side" data-visning="gemte" hidden aria-labelledby="h-gemte-side">
+        <h1 id="h-gemte-side" class="side-h">Gemte sager</h1>
+        <p class="side-intro">Sager, du har gemt med stjernen. Tryk på stjernen igen for at fjerne en sag.</p>
+        <ul class="liste" id="gemte-side-liste"></ul>
+      </section>
+
+      <section class="mail-side" data-visning="mandagsmail" hidden aria-labelledby="h-mail-side">
+        <h1 id="h-mail-side" class="side-h">Din mandagsmail</h1>
+        <p class="side-intro" id="mail-emne"></p>
+        <iframe class="mail-ramme" id="mail-ramme" title="Forhåndsvisning af din mandagsmail"></iframe>
+        <p class="mail-note">Sådan ser mailen ud med dine emner, ord og bydel lige nu. Den kommer hver mandag morgen, når udsendelsen er i gang. Ret dine emner under Tilpas på forsiden.</p>
+      </section>
+
+      <section class="alle" data-visning="sager" hidden aria-labelledby="h-alle">
+        <h1 id="h-alle" class="side-h">Alle mine sager</h1>
+        <p class="side-intro">Alle sager om dine emner og dine egne ord. Filtrér efter emne, eller søg i alle sager.</p>
         <div class="vaerktoej">
           <div class="faner" role="tablist" aria-label="Filtrér efter emne" id="faner"></div>
           <label class="soeg"><span class="sr" hidden>Søg</span>
@@ -347,14 +374,6 @@
     <div class="laes-indhold" id="laes-indhold"></div>
   </dialog>
 
-  <dialog class="skriv mail-dlg" id="mail" aria-labelledby="mail-h">
-    <div class="skriv-top">
-      <div><h2 id="mail-h">Din mandagsmail</h2><p id="mail-emne"></p></div>
-      <button class="luk" type="button" data-luk aria-label="Luk">×</button>
-    </div>
-    <iframe class="mail-ramme" id="mail-ramme" title="Forhåndsvisning af din mandagsmail"></iframe>
-    <p class="mail-note">Sådan ser mailen ud med dine emner, ord og bydel lige nu. Den kommer hver mandag morgen, når udsendelsen er i gang.</p>
-  </dialog>
 </main>
 
 <footer class="foot">
@@ -576,7 +595,8 @@
 
     // Gemte
     const g = profil.gemte.map((id) => SAGER.find((s) => s.id === id)).filter(Boolean).map(vurder);
-    $("#gemte-liste").innerHTML = g.length ? g.map((s) => kortet(s, "mini")).join("") : tom("Tryk på stjernen ved en sag for at gemme den her.");
+    $("#gemte-liste").innerHTML = g.length ? g.slice(0, 5).map((s) => kortet(s, "mini")).join("") : tom("Tryk på stjernen ved en sag for at gemme den her.");
+    tegnGemte();
 
     tegnListe(mine);
     tegnDebat();
@@ -714,9 +734,31 @@
     const mail = lavMandagsmail({ data: DATA, profil, idag: mandag, modtager: bruger?.email || "", linkTil: link, logo: new URL("../assets/mail-logo.png", location.href).href });
     $("#mail-emne").textContent = `Emne: ${mail.emne}`;
     $("#mail-ramme").srcdoc = mail.html;
-    $("#mail").showModal();
   }
-  $("#mail").addEventListener("click", (e) => { if (e.target === $("#mail")) $("#mail").close(); });
+
+  /* ---------- Sider ----------
+     Forside, Alle mine sager, Debat, Gemte og Mandagsmail er hver sin side med sin egen adresse (min/#debat osv.),
+     så de kan deles, bogmærkes, og tilbage-knappen virker. */
+  const SIDER = { forside: "Min avis", sager: "Alle mine sager", debat: "Debat", gemte: "Gemte sager", mandagsmail: "Din mandagsmail" };
+  function visSide() {
+    const navn = location.hash.slice(1);
+    const side = SIDER[navn] ? navn : "forside";
+    document.querySelectorAll("[data-visning]").forEach((el) => (el.hidden = el.dataset.visning !== side));
+    document.querySelectorAll("[data-side]").forEach((a) => (a.dataset.side === side ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")));
+    document.title = `${SIDER[side]} – Sagsvagt`;
+    if (side === "mandagsmail") visMail();
+    if (side === "gemte") tegnGemte();
+    scrollTo(0, 0);
+  }
+  addEventListener("hashchange", visSide);
+
+  // Gemte sager som en hel side, med samme kort som "Alle mine sager"
+  function tegnGemte() {
+    const g = profil.gemte.map((id) => SAGER.find((s) => s.id === id)).filter(Boolean).map(vurder);
+    $("#gemte-side-liste").innerHTML = g.length
+      ? g.map((s) => `<li><div>${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 220 ? s.d.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</div>${handl(s)}</li>`).join("")
+      : `<li>${tom("Du har ikke gemt nogen sager endnu. Tryk på stjernen ved en sag for at gemme den.")}</li>`;
+  }
 
   /* ---------- Tilpas ---------- */
   function fyldPanel() {
@@ -733,7 +775,7 @@
     // Ctrl/cmd-klik åbner stadig sagen hos kommunen i en ny fane
     if (t.dataset.laes !== undefined) { if (e.ctrlKey || e.metaKey || e.shiftKey || e.button) return; e.preventDefault(); laesSag(t.dataset.laes); }
     else if (t.dataset.skriv !== undefined) { if (t.closest("#laes")) $("#laes").close(); aabnSkriv(t.dataset.skriv); }
-    else if (t.dataset.mail !== undefined) { e.preventDefault(); visMail(); }
+    else if (t.dataset.mail !== undefined) { e.preventDefault(); location.hash = "#mandagsmail"; }
     else if (t.dataset.luk !== undefined) t.closest("dialog").close();
     else if (t.dataset.emne) {
       const id = t.dataset.emne;
@@ -761,7 +803,7 @@
       DATA = data; SAGER = data.sager; INDLAEG = debat.indlaeg || []; EMNER = data.emner || {};
       profil.emner = profil.emner.filter((id) => EMNER[id]);
       $("#indlaes").hidden = true; $("#avis").hidden = false;
-      fyldPanel(); tegn();
+      fyldPanel(); tegn(); visSide();
     })
     .catch((err) => { console.warn(err); $("#indlaes").textContent = "Vi kunne ikke hente sagerne lige nu. Prøv igen om lidt."; });
 })();
