@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Redaktionen – Sagsvagt</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/avis.css">
+<style>
+  /* Redaktionsværktøjet: kører kun på din egen computer via den lokale server (npm-scriptet "site" / scripts/serve.mjs). */
+  body { background: var(--kalk); }
+  .top { background: var(--nat); color: var(--kalk); }
+  .top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-top: 18px; padding-bottom: 18px; }
+  .top h1 { margin: 0; font-size: 1.25rem; letter-spacing: -.02em; }
+  .top p { margin: 2px 0 0; font-size: .8125rem; opacity: .75; }
+  .knapper { display: flex; gap: 8px; flex-wrap: wrap; }
+  .knap { font: 700 .875rem/1 var(--sans); padding: 11px 18px; border-radius: 99px; border: 0; cursor: pointer; background: var(--kalk); color: var(--nat); }
+  .knap.sek { background: transparent; color: var(--kalk); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.5); }
+  .knap:disabled { opacity: .5; cursor: wait; }
+  main.wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 40px; padding-top: 30px; padding-bottom: 60px; }
+  h2.rubrik { margin-top: 0; }
+  .felt { margin: 12px 0 0; }
+  .felt label { display: block; font-size: .8125rem; font-weight: 700; margin-bottom: 5px; }
+  .felt input, .felt textarea { width: 100%; font: inherit; font-size: .9688rem; padding: 10px 12px; border: 1.5px solid var(--rule); border-radius: 6px; background: var(--kalk-lys); color: var(--nat); }
+  .felt input:focus, .felt textarea:focus { outline: 0; border-color: var(--nat); }
+  .felt textarea { font-family: var(--serif); font-size: 1.0625rem; line-height: 1.6; min-height: 230px; resize: vertical; }
+  .felt .stor { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; }
+  .to { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+  .hint { font-size: .8125rem; color: var(--muted); margin: 6px 0 0; }
+  .status { position: sticky; top: 0; z-index: 5; font-size: .875rem; font-weight: 600; padding: 10px 0; }
+  .status:empty { display: none; }
+  .status.ok { color: #1d5b35; } .status.fejl { color: var(--vin); }
+  .soeg input { width: 100%; font: inherit; padding: 10px 14px; border: 1.5px solid var(--rule); border-radius: 99px; background: var(--kalk-lys); margin: 8px 0 4px; }
+  .filtre { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0 10px; }
+  .sag { border-bottom: 1px solid var(--rule); padding: 12px 0; }
+  .sag.redigeret { box-shadow: inset 3px 0 0 var(--vin); padding-left: 12px; }
+  .sag.top-valgt { box-shadow: inset 3px 0 0 var(--indigo); padding-left: 12px; }
+  .sag .meta { font-size: .75rem; color: var(--muted); font-weight: 600; }
+  .sag .titel { font-family: var(--serif); font-weight: 600; font-size: 1.0625rem; line-height: 1.3; margin: 3px 0 0; }
+  .sag .ny { font-family: var(--serif); font-size: 1.0625rem; font-weight: 600; color: var(--vin); margin: 3px 0 0; }
+  .sag .rediger { font: 600 .8125rem var(--sans); background: none; border: 0; color: var(--indigo); cursor: pointer; padding: 6px 0 0; }
+  .sag .form { margin-top: 8px; }
+  .sag .valg { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: .875rem; font-weight: 600; }
+  .sag .dek-org { font-size: .875rem; color: var(--muted); margin: 6px 0 0; font-family: var(--serif); }
+  @media (max-width: 960px) { main.wrap { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div><h1>Redaktionen</h1><p>Din leder, dine overskrifter og ugens tophistorie. Gemmes i avis/redaktion.json.</p></div>
+  <div class="knapper">
+    <a class="knap sek" href="../index.html" target="_blank">Se forsiden</a>
+    <button class="knap sek" id="gem" type="button">Gem</button>
+    <button class="knap" id="gem-byg" type="button">Gem og byg avisen</button>
+  </div>
+</div></header>
+
+<main class="wrap">
+  <section>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+    <h2 class="rubrik">Lederen</h2>
+    <p class="hint">Står øverst på forsiden i ti dage efter, du har gemt den. Lad teksten være tom for at fjerne den. Tom linje giver nyt afsnit.</p>
+    <div class="felt"><label for="l-overskrift">Overskrift</label><input id="l-overskrift" class="stor" placeholder="Ugens overblik"></div>
+    <div class="felt"><label for="l-tekst">Tekst</label><textarea id="l-tekst" placeholder="Hvad er vigtigt i denne uge, og hvorfor?"></textarea></div>
+    <div class="to">
+      <div class="felt"><label for="l-navn">Navn</label><input id="l-navn"></div>
+      <div class="felt"><label for="l-titel">Titel</label><input id="l-titel"></div>
+    </div>
+    <p class="hint" id="l-dato"></p>
+  </section>
+
+  <section>
+    <h2 class="rubrik">Overskrifter og tophistorie</h2>
+    <p class="hint">Skriv en overskrift, som en avis ville skrive den, og en kort underrubrik. Kommunens titel står stadig på sagen. Vælg én tophistorie, ellers vælger avisen selv.</p>
+    <label class="soeg"><span hidden>Søg</span><input type="search" id="q" placeholder="Søg efter en sag"></label>
+    <div class="filtre" role="tablist">
+      <button class="fane" type="button" data-filter="nye" aria-selected="true">Seneste 30 dage</button>
+      <button class="fane" type="button" data-filter="kommer" aria-selected="false">På dagsordenen</button>
+      <button class="fane" type="button" data-filter="mine" aria-selected="false">Redigerede</button>
+    </div>
+    <div id="liste"></div>
+  </section>
+</main>
+
+<script>
+(function () {
+  var $ = function (s) { return document.querySelector(s); };
+  var esc = function (s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var dato = function (iso) { return new Date(iso + "T12:00:00Z").toLocaleDateString("da-DK", { timeZone: "UTC", day: "numeric", month: "long" }); };
+  var idag = new Date().toISOString().slice(0, 10);
+  var red = { leder: null, tophistorie: null, sager: {} }, sager = [], filter = "nye", aaben = null;
+
+  function status(t, klasse) { var s = $("#status"); s.className = "status " + (klasse || ""); s.textContent = t; }
+
+  function samlet() {
+    var tekst = $("#l-tekst").value.trim();
+    red.leder = tekst ? { dato: (red.leder && red.leder.tekst === tekst && red.leder.dato) || idag, overskrift: $("#l-overskrift").value.trim(), tekst: tekst, navn: $("#l-navn").value.trim(), titel: $("#l-titel").value.trim() } : null;
+    // Tomme overskrifter fjernes, så kommunens titel bruges igen
+    Object.keys(red.sager).forEach(function (id) { if (!red.sager[id].overskrift) delete red.sager[id]; });
+    return red;
+  }
+
+  function vis() {
+    var q = $("#q").value.trim().toLowerCase();
+    var l = sager.filter(function (s) {
+      var r = red.sager[s.id];
+      if (filter === "mine") return !!r || red.tophistorie === s.id;
+      if (s.r) return false;
+      if (filter === "kommer") return s.st === "kommer";
+      return s.st !== "kommer" && (new Date(idag) - new Date(s.dato)) / 864e5 <= 30;
+    }).filter(function (s) { return !q || ((s.kt || s.t) + " " + s.u + " " + s.d).toLowerCase().indexOf(q) >= 0; });
+    l.sort(function (a, b) { return (b.v - a.v) || b.dato.localeCompare(a.dato); });
+    $("#liste").innerHTML = l.slice(0, 60).map(function (s) {
+      var r = red.sager[s.id] || {}, top = red.tophistorie === s.id, org = s.kt || s.t;
+      return '<div class="sag' + (r.overskrift ? " redigeret" : "") + (top ? " top-valgt" : "") + '" data-id="' + esc(s.id) + '">'
+        + '<p class="meta">' + esc(dato(s.dato)) + " · " + esc(s.u) + (top ? " · Tophistorie" : "") + "</p>"
+        + (r.overskrift ? '<p class="ny">' + esc(r.overskrift) + "</p>" : "")
+        + '<p class="titel">' + (r.overskrift ? "Kommunens titel: " : "") + esc(org) + "</p>"
+        + (aaben === s.id
+          ? '<div class="form"><div class="felt"><label>Din overskrift</label><input class="stor" data-felt="overskrift" value="' + esc(r.overskrift) + '" placeholder="Fx: Metroen må flytte beskyttede tudser"></div>'
+            + '<div class="felt"><label>Underrubrik</label><input data-felt="underrubrik" value="' + esc(r.underrubrik) + '" placeholder="Én sætning om, hvad sagen betyder"></div>'
+            + '<p class="dek-org">Kommunens resumé: ' + esc(s.d) + "</p>"
+            + '<label class="valg"><input type="radio" name="top" data-top' + (top ? " checked" : "") + "> Ugens tophistorie</label>"
+            + (top ? '<button class="rediger" type="button" data-fjern-top>Fjern som tophistorie</button>' : "") + "</div>"
+          : '<button class="rediger" type="button" data-aabn>' + (r.overskrift ? "Ret overskrift" : "Skriv overskrift") + "</button>")
+        + "</div>";
+    }).join("") || '<p class="hint">Ingen sager.</p>';
+  }
+
+  document.addEventListener("input", function (e) {
+    var f = e.target.getAttribute("data-felt"); if (!f) return;
+    var id = e.target.closest(".sag").getAttribute("data-id");
+    red.sager[id] = red.sager[id] || {}; red.sager[id][f] = e.target.value;
+  });
+  document.addEventListener("click", function (e) {
+    var t = e.target, sag = t.closest(".sag"), id = sag && sag.getAttribute("data-id");
+    if (t.hasAttribute("data-aabn")) { aaben = id; vis(); var i = document.querySelector('.sag[data-id="' + CSS.escape(id) + '"] input'); if (i) i.focus(); }
+    else if (t.hasAttribute("data-top")) { red.tophistorie = id; }
+    else if (t.hasAttribute("data-fjern-top")) { red.tophistorie = null; vis(); }
+    else if (t.hasAttribute("data-filter")) { filter = t.getAttribute("data-filter"); document.querySelectorAll("[data-filter]").forEach(function (x) { x.setAttribute("aria-selected", String(x === t)); }); vis(); }
+  });
+  $("#q").addEventListener("input", vis);
+
+  function gem() {
+    return fetch("redaktion.json", { method: "PUT", headers: { "Content-Type": "application/json", "X-Sagsvagt": "redaktion" }, body: JSON.stringify(samlet()) })
+      .then(function (r) { if (!r.ok) return r.text().then(function (t) { throw new Error(t); }); });
+  }
+  $("#gem").addEventListener("click", function () {
+    status("Gemmer …"); gem().then(function () { status("Gemt i avis/redaktion.json.", "ok"); vis(); }).catch(function (e) { status("Kunne ikke gemme: " + e.message, "fejl"); });
+  });
+  $("#gem-byg").addEventListener("click", function () {
+    var k = this; k.disabled = true; status("Gemmer og bygger avisen. Det tager omkring et minut …");
+    gem().then(function () { return fetch("../__byg", { method: "POST", headers: { "X-Sagsvagt": "redaktion" } }); })
+      .then(function (r) { return r.text().then(function (t) { if (!r.ok) throw new Error(t); return t; }); })
+      .then(function (t) { status("Avisen er bygget. " + (t.split("\n").pop() || "") + " Tryk på Se forsiden.", "ok"); vis(); })
+      .catch(function (e) { status("Det gik ikke: " + e.message, "fejl"); })
+      .finally(function () { k.disabled = false; });
+  });
+
+  Promise.all([
+    fetch("../assets/sager.json", { cache: "no-store" }).then(function (r) { return r.json(); }),
+    fetch("redaktion.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }),
+  ]).then(function (res) {
+    sager = res[0].sager; red = Object.assign({ leder: null, tophistorie: null, sager: {} }, res[1]); red.sager = red.sager || {};
+    var l = red.leder || {};
+    $("#l-overskrift").value = l.overskrift || ""; $("#l-tekst").value = l.tekst || "";
+    $("#l-navn").value = l.navn || "Asger Christian Mansa"; $("#l-titel").value = l.titel || "Redaktør";
+    $("#l-dato").textContent = l.dato ? "Senest gemt " + dato(l.dato) + "." : "";
+    vis();
+  }).catch(function (e) { status("Kunne ikke hente sagerne. Kører den lokale server? " + e.message, "fejl"); });
+})();
+</script>
+</body>
+</html>

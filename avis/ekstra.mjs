@@ -154,11 +154,10 @@ const icsTekst = (t) => String(t).replace(/\\/g, "\\\\").replace(/;/g, "\\;").re
 const fold = (l) => { const b = Buffer.from(l, "utf8"); if (b.length <= 74) return l; const ud = []; let i = 0, s = ""; for (const c of l) { if (Buffer.byteLength(s + c) > (ud.length ? 73 : 74)) { ud.push(s); s = ""; } s += c; i++; } ud.push(s); return ud.join("\r\n "); };
 export async function bygKalendere(moeder, h) {
   await rm(join(h.ROD, "kalender"), { recursive: true, force: true }); await mkdir(join(h.ROD, "kalender"), { recursive: true });
-  const nu = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
   const begivenhed = (m) => {
     const d = m.dato.replace(/-/g, ""); const naeste = new Date(Date.UTC(+m.dato.slice(0, 4), +m.dato.slice(5, 7) - 1, +m.dato.slice(8, 10) + 1)).toISOString().slice(0, 10).replace(/-/g, "");
     const punkter = m.sager.filter((s) => !s.rutine).map((s) => `• ${s.titel}`).join("\n");
-    return ["BEGIN:VEVENT", `UID:${d}-${h.slug(m.udvalg)}@sagsvagt.dk`, `DTSTAMP:${nu}`, `DTSTART;VALUE=DATE:${d}`, `DTEND;VALUE=DATE:${naeste}`,
+    return ["BEGIN:VEVENT", `UID:${d}-${h.slug(m.udvalg)}@sagsvagt.dk`, `DTSTAMP:${d}T000000Z`, `DTSTART;VALUE=DATE:${d}`, `DTEND;VALUE=DATE:${naeste}`,
       `SUMMARY:${icsTekst(`Møde: ${h.hvorNavn(m.udvalg)}`)}`, `DESCRIPTION:${icsTekst(`${m.antal} punkter på dagsordenen.\n${punkter}\n\nDagsordenen: ${m.url}`)}`, `URL:${m.url}`, "TRANSP:TRANSPARENT", "END:VEVENT"].map(fold).join("\r\n");
   };
   const kalender = (navn, l) => ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Sagsvagt//Møder//DA", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",

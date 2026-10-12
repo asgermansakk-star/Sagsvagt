@@ -110,7 +110,8 @@ export const ORDBOG = [
 ];
 const ORDBOG_RE = ORDBOG.map(([o, f]) => [new RegExp(`(?<![${BOGSTAV}])(${o})(?![${BOGSTAV}])`, "i"), f]);
 // Sætter forklaringer på i færdig, escapet HTML: kun i tekst (ikke i tags eller links), første forekomst af hvert ord
-export function forklar(html, escAttr) {
+// Højst `max` forklaringer pr. side, så teksten ikke drukner i prikkede ord
+export function forklar(html, escAttr, max = 4) {
   const brugt = new Set(); let iLink = 0;
   return html.split(/(<[^>]+>)/).map((del) => {
     if (del.startsWith("<")) { if (/^<a[\s>]/i.test(del)) iLink++; else if (/^<\/a>/i.test(del)) iLink = Math.max(0, iLink - 1); return del; }
@@ -118,7 +119,7 @@ export function forklar(html, escAttr) {
     // Find alle match i den oprindelige tekst først, så en indsat forklaring aldrig selv bliver matchet
     const fund = [];
     for (const [re, f] of ORDBOG_RE) {
-      if (brugt.has(re)) continue;
+      if (brugt.has(re) || brugt.size >= max) continue;
       const m = del.match(re);
       if (m && !fund.some((x) => m.index < x.slut && m.index + m[1].length > x.start)) { brugt.add(re); fund.push({ start: m.index, slut: m.index + m[1].length, f }); }
     }

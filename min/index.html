@@ -191,12 +191,11 @@
 <header class="masthead">
   <div class="wrap">
     <div class="mh-row">
-      <a class="mh-logo" href="../" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
+      <a class="mh-logo" href="./" aria-label="Sagsvagt, til din forside"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
       <p class="mh-edition" id="udgave">Nyt fra byråd, udvalg og lokaludvalg</p>
     </div>
     <nav class="mh-nav" aria-label="Hovedmenu">
-      <a href="../">Forside</a>
-      <a href="./" aria-current="page">Min avis</a>
+      <a href="./" aria-current="page">Forside</a>
       <a href="#alle" data-aaben>Alle mine sager</a>
       <a href="#debat" data-aaben>Debat</a>
       <a href="#gemte" data-aaben>Gemte</a>
@@ -366,14 +365,22 @@
 </footer>
 
 <script>
-(() => {
+(async () => {
   const $ = (s) => document.querySelector(s);
   const esc = (s = "") => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const gemt = (k, v) => { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch { return null; } };
 
   /* ---------- Adgang ----------
-     Siden er lukket, indtil login er bygget. Forpremiere: åbn min/?adgang=forpremiere (luk igen med ?adgang=luk).
-     Det er ikke sikkerhed, kun en lukket dør: sagerne er offentlige i forvejen. */
+     Rigtigt login: serveren (api/mig.php) siger, hvem der er logget ind. server er { email, profil, admin } når man er logget ind,
+     false når serveren svarer, men man ikke er logget ind, og null når der ikke er nogen server (fx den statiske testserver).
+     Uden server bruges den gamle forpremiere: min/?adgang=forpremiere (luk igen med ?adgang=luk). */
+  const api = (fil, data) => fetch(`../api/${fil}`, { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data || {}) })
+    .then((r) => r.json().catch(() => ({})).then((j) => { if (!r.ok) throw new Error(j.fejl || "Noget gik galt. Prøv igen."); return j; }));
+  let server = null;
+  try {
+    const r = await fetch("../api/mig.php", { credentials: "same-origin", cache: "no-store" });
+    if ((r.headers.get("content-type") || "").includes("application/json")) server = r.ok ? await r.json() : false;
+  } catch { server = null; }
   const q = new URLSearchParams(location.search);
   if (q.get("adgang") === "forpremiere") gemt("sv-adgang", true);
   if (q.get("adgang") === "luk") gemt("sv-adgang", false);
@@ -381,12 +388,38 @@
   // Testlogin: på din egen computer (localhost) virker login-boksen med samme flow som det rigtige login via
   // mail-link. Brugeren gemmes kun i browseren. På sagsvagt.dk er boksen slået fra, indtil der er et rigtigt login.
   const LOKAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
-  const bruger = gemt("sv-bruger");
-  const aaben = !!(bruger && bruger.email) || gemt("sv-adgang") === true || q.get("adgang") === "forpremiere";
+  const bruger = server ? { email: server.email } : server === false ? null : gemt("sv-bruger");
+  const aaben = server !== null ? !!server : !!(bruger && bruger.email) || gemt("sv-adgang") === true || q.get("adgang") === "forpremiere";
   document.querySelectorAll("[data-aaben]").forEach((el) => (el.hidden = !aaben));
-  if (!aaben) { $("#lukket").hidden = false; if (LOKAL) testLogin(); return; }
+  if (!aaben) { $("#lukket").hidden = false; if (server === false) rigtigLogin(); else if (LOKAL) testLogin(); return; }
   $("#logud").title = bruger?.email ? `Logget ind som ${bruger.email}` : "Luk Min avis igen";
-  $("#logud").addEventListener("click", () => { gemt("sv-bruger", null); gemt("sv-adgang", false); location.href = location.pathname; });
+  $("#logud").addEventListener("click", () => {
+    if (server) { api("logud.php").finally(() => (location.href = location.pathname)); return; }
+    gemt("sv-bruger", null); gemt("sv-adgang", false); location.href = location.pathname;
+  });
+  // Redaktionen får et link til oversigten over tilmeldte
+  if (server?.admin) $("#logud").insertAdjacentHTML("beforebegin", `<a href="admin.html">Tilmeldte</a>`);
+
+  // Login med e-mail og adgangskode (adgangskoden oprettes via linket i invitationen)
+  function rigtigLogin() {
+    $(".lukket .kicker").innerHTML = `<span class="status kommer">Log ind</span>`;
+    $(".lukket .lead-p").textContent = "Her samler vi de sager, der handler om dine emner: det, politikerne har besluttet, det, de skal tage stilling til, og det, der sker i din bydel. Log ind med den e-mail, du er skrevet op med.";
+    const f = $(".login");
+    f.innerHTML = `<h2>Log ind</h2>
+      <label for="login-mail">Din e-mail</label><input id="login-mail" type="email" autocomplete="email" placeholder="navn@eksempel.dk">
+      <label for="login-kode" style="margin-top:12px">Adgangskode</label><input id="login-kode" type="password" autocomplete="current-password">
+      <button type="submit">Log ind</button>
+      <small id="login-note"><a href="adgang.html" style="color:inherit">Glemt adgangskode?</a> Har du fået en invitation, så opret din adgangskode via linket i mailen. Kan du ikke finde den, så tjek også din mappe med uønsket mail.</small>`;
+    f.onsubmit = (e) => {
+      e.preventDefault();
+      const note = $("#login-note"), knap = f.querySelector("button");
+      knap.disabled = true;
+      api("login.php", { email: $("#login-mail").value, adgangskode: $("#login-kode").value })
+        .then(() => location.reload())
+        .catch((err) => { note.className = "fejl"; note.textContent = err.message; knap.disabled = false; });
+    };
+    $("#login-mail").focus();
+  }
 
   function testLogin() {
     const f = $(".login"), inp = $("#login-mail"), btn = $(".login button"), note = $("#login-note");
@@ -413,8 +446,13 @@
   /* ---------- Profil (gemmes i browseren, indtil login er klar) ---------- */
   const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [] };
   const PKEY = bruger?.email ? `sv-profil:${bruger.email}` : "sv-profil";
-  let profil = { ...STANDARD, ...(gemt(PKEY) || gemt("sv-profil") || {}) };
-  const gem = () => gemt(PKEY, profil);
+  // Med login ligger profilen på serveren og følger brugeren mellem computer og telefon; browseren har en kopi
+  let profil = { ...STANDARD, ...((server && server.profil) || gemt(PKEY) || gemt("sv-profil") || {}) };
+  let tGem;
+  const gem = () => {
+    gemt(PKEY, profil);
+    if (server) { clearTimeout(tGem); tGem = setTimeout(() => api("profil.php", profil).catch((e) => console.warn("Profilen blev ikke gemt:", e.message)), 600); }
+  };
 
   /* ---------- Dato ---------- */
   const IDAG = new Date().toISOString().slice(0, 10);
@@ -469,6 +507,8 @@
   // Mens avisen er lukket (se .htaccess), linker sagerne til kommunens egen side. Sæt AVIS_AABEN = true, når avisen åbner igen.
   const AVIS_AABEN = false;
   const link = (s) => (AVIS_AABEN ? `../${s.url}` : s.k);
+  // Når avisen er åben, får menuen et link til den. Mens den er lukket, ville linket sende folk til tilmeldingssiden.
+  if (AVIS_AABEN) $(".mh-nav a").insertAdjacentHTML("afterend", `<a href="../index.html">Avisen</a>`);
   const kortet = (s, slags) => {
     if (slags === "lead") return `<article class="lead kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d)}</p>` : ""}${beslutning(s)}${tags(s)}</article>`;
     if (slags === "mini") return `<article class="mini kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3></article>`;

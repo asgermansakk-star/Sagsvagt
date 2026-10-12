@@ -1,0 +1,5 @@
+# Filer, der starter med _ (konfiguration og fælles kode), og eksempelkonfigurationen kan ikke hentes udefra
+<FilesMatch "^(_.*|konfig\.eksempel\.php)$">
+  Require all denied
+</FilesMatch>
+Options -Indexes

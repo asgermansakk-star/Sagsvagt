@@ -61,6 +61,8 @@
   .bar nav a { color: rgba(230,223,211,.78); text-decoration: none; font-size: .9375rem; font-weight: 500; transition: color .2s; }
   .bar nav a:hover { color: var(--kalk); }
   .bar .btn { padding: 11px 18px; font-size: .9375rem; }
+  .bar .log-ind { display: inline-flex; align-items: center; gap: 7px; color: var(--kalk); text-decoration: none; font-size: .9375rem; font-weight: 600; padding: 10px 14px; border-radius: 99px; box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.35); transition: box-shadow .2s, background .2s; }
+  .bar .log-ind:hover { box-shadow: inset 0 0 0 1.5px var(--kalk); background: rgba(230,223,211,.08); }
 
   /* ---------- Hero: gradienten "Mødet", der lever ---------- */
   .hero { position: relative; overflow: hidden; background: var(--nat); color: var(--kalk); padding: 132px 0 96px; isolation: isolate; }
@@ -263,7 +265,7 @@
   .form-msg.ok { color: var(--lyng); } .form-msg.err { color: var(--rosen); }
   .form-note { margin: 0; font-size: .8125rem; color: rgba(230,223,211,.6); }
   .done { display: none; text-align: center; align-content: center; gap: 10px; }
-  .done svg { width: 84px; margin: 0 auto 6px; } .done h3 { margin: 0; font-size: 1.5rem; letter-spacing: -.02em; } .done p { margin: 0; color: rgba(230,223,211,.78); }
+  .done svg { width: 84px; margin: 0 auto 6px; } .done h3 { margin: 0; font-size: 1.5rem; letter-spacing: -.02em; } .done p { margin: 0; color: rgba(230,223,211,.78); } .done .tjek-uoensket { margin-top: 10px; font-size: .875rem; color: rgba(230,223,211,.65); }
   .signup-card.ok form { display: none; } .signup-card.ok .done { display: grid; }
 
   /* ---------- Spørgsmål ---------- */
@@ -308,6 +310,10 @@
     .signup-card { padding: 32px 20px; margin: 0 -4px; }
     .stats .wrap { grid-template-columns: 1fr; }
     .bar .logo svg { height: 38px; }
+    .bar .wrap { gap: 10px; }
+    .bar .log-ind { padding: 8px 11px; font-size: .875rem; }
+    .bar .log-ind svg { display: none; }
+    .bar .btn { padding: 9px 14px; font-size: .875rem; }
     }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
@@ -326,6 +332,7 @@
       <a href="#saadan">Sådan virker det</a>
       <a href="#spoergsmaal">Spørgsmål</a>
     </nav>
+    <a class="log-ind" href="min/"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.2" r="2.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2.6 14c.6-2.8 2.8-4.3 5.4-4.3s4.8 1.5 5.4 4.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Log ind</a>
     <a class="btn btn-kalk" href="#tilmeld">Skriv dig op</a>
   </div>
 </header>
@@ -523,7 +530,8 @@
             <path class="leaf l-blaa" fill="#E6DFD3" fill-rule="evenodd" d="M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/>
           </svg>
           <h3>Du er skrevet op.</h3>
-          <p>Vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
+          <p>Vi har sendt dig en kvittering, og vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
+          <p class="tjek-uoensket">Kan du ikke finde vores mails? Tjek også din mappe med uønsket mail, og markér dem som "Ikke uønsket".</p>
         </div>
       </div>
     </div>
@@ -769,6 +777,16 @@
     data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
     data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table"; data._cc = SIGNUP_MAIL; data._autoresponse = AUTOSVAR;
     btn.disabled = true; btn.classList.add("busy"); msg.className = "form-msg"; msg.textContent = "";
+    // Først vores egen server (api/tilmeld.php gemmer tilmeldingen, så den kan få en invitation til login).
+    // Svarer den ikke (fx uden PHP), bruges FormSubmit som før.
+    try {
+      const egen = await fetch("api/tilmeld.php", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) });
+      if ((egen.headers.get("content-type") || "").includes("application/json")) {
+        const out = await egen.json().catch(() => ({}));
+        if (egen.ok) { card.classList.add("ok"); $(".done svg", card).classList.add("mark", "anim"); btn.disabled = false; btn.classList.remove("busy"); return; }
+        if (egen.status === 400 || egen.status === 429) { msg.className = "form-msg err"; msg.textContent = out.fejl || "Noget gik galt."; btn.disabled = false; btn.classList.remove("busy"); return; }
+      }
+    } catch (err) { console.warn("Egen server svarede ikke, bruger FormSubmit:", err.message); }
     try {
       const res = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
       const out = await res.json().catch(() => ({}));

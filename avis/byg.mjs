@@ -34,11 +34,24 @@ function ugenr(iso) {
   return 1 + Math.round(((t - f) / 864e5 - 3 + ((f.getUTCDay() + 6) % 7)) / 7);
 }
 const afsnitTilHtml = (tekst) => tekst.split(/\n{2,}/).map((p) => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("\n");
+// Forkorter til hele sætninger. Den første sætning må gerne være lidt længere end max, hellere end at blive klippet over.
+// En sætning slutter ved . ? ! efterfulgt af stort bogstav (så "jf." og "bl.a." ikke tæller).
 const saetninger = (t, max) => {
   const s = t.replace(/\s+/g, " ").trim();
   if (s.length <= max) return s;
-  const cut = s.slice(0, max); const i = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("? "));
-  return (i > max * 0.45 ? cut.slice(0, i + 1) : cut.replace(/\s+\S*$/, "") + " …");
+  const slut = [...s.matchAll(/[.?!](?=\s+[A-ZÆØÅ"”]|$)/g)].map((m) => m.index + 1);
+  const inden = slut.filter((i) => i <= max).pop();
+  if (inden && inden > max * 0.4) return s.slice(0, inden);
+  if (slut[0] && slut[0] <= max * 1.6) return s.slice(0, slut[0]);
+  return s.slice(0, max).replace(/\s+\S*$/, "") + " …";
+};
+// Fjerner den indledning, der står i næsten alle resuméer ("Borgerrepræsentationen skal tage stilling til …"),
+// fordi udvalget allerede står over overskriften.
+const reRe = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const renDek = (t, udvalg) => {
+  const ud = t.replace(new RegExp(`^(?:${reRe(udvalg)}|Udvalget|Lokaludvalget|Borgerrepræsentationen|Økonomiudvalget)\\s+(?:skal|bedes)\\s+(?:tage stilling til|orienteres om)\\s+(?![,]?\\s*(?:om|hvorvidt|hvordan)\\b)`, "i"), "")
+    .replace(/^Det foreslås,?\s*•?\s*at\s+/i, "");
+  return ud === t ? t : ud.replace(/^./, (c) => c.toUpperCase());
 };
 
 // ---------- Udvælgelse ----------
@@ -77,7 +90,7 @@ function berig(s) {
   const alder = Math.max(0, (d(IDAG) - d(s.dato)) / 864e5);
   const rutine = RUTINE.test(titel);
   const score = vaegt * 10 + Math.min(laengde / 800, 8) + (beslutning ? 3 : 0) - alder * 0.6 - (rutine ? 25 : 0);
-  const dek = resume ? saetninger(resume.tekst.replace(/^Indstilling[^\n]*\n*/i, ""), 300) : "";
+  const dek = resume ? saetninger(renDek(resume.tekst.replace(/^Indstilling[^\n]*\n*/i, "").trim(), s.udvalg), 300) : "";
   const indst = find(/^Indstilling/)?.tekst || "";
   const videre = find(/^Videre proces/i);
   return {
@@ -137,14 +150,17 @@ ${LOGO_SYMBOL}
     </div>
     <nav class="mh-nav" aria-label="Hovedmenu">
       <a href="${rod}index.html"${aktiv === "forside" ? ' aria-current="page"' : ""}>Forside</a>
-      <a href="${rod}udvalg/borgerrepraesentationen.html"${aktiv === "br" ? ' aria-current="page"' : ""}>Borgerrepræsentationen</a>
-      <a href="${rod}udvalg/"${aktiv === "udvalg" ? ' aria-current="page"' : ""}>Udvalg</a>
-      <a href="${rod}bydel/"${aktiv === "bydel" ? ' aria-current="page"' : ""}>Bydele</a>
       <a href="${rod}emne/"${aktiv === "emne" ? ' aria-current="page"' : ""}>Emner</a>
+      <a href="${rod}bydel/"${aktiv === "bydel" ? ' aria-current="page"' : ""}>Bydele</a>
       <a href="${rod}moeder.html"${aktiv === "moeder" ? ' aria-current="page"' : ""}>Møder</a>
       <a href="${rod}soeg.html"${aktiv === "soeg" ? ' aria-current="page"' : ""}>Søg</a>
-      <a href="${rod}hoeringer.html"${aktiv === "hoeringer" ? ' aria-current="page"' : ""}>Høringer</a>
-      <a href="${rod}partier.html"${aktiv === "partier" ? ' aria-current="page"' : ""}>Partier</a>
+      <details class="mere"><summary${["br", "udvalg", "hoeringer", "partier", "om"].includes(aktiv) ? ' aria-current="page"' : ""}>Mere</summary><div>
+        <a href="${rod}udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a>
+        <a href="${rod}udvalg/">Alle udvalg</a>
+        <a href="${rod}hoeringer.html">Høringer</a>
+        <a href="${rod}partier.html">Sådan stemmer partierne</a>
+        <a href="${rod}om.html">Om Sagsvagt</a>
+      </div></details>
       <a class="cta" href="${rod}vagt.html">Få dine sager på mail</a>
     </nav>
   </div>
@@ -204,18 +220,29 @@ const beslutningsboks = (s) => s.status === "besluttet"
   ? `<div class="decision"><b>Beslutning</b>${esc(s.udfald || saetninger(s.beslutning, 260))}${afstemning(s, true)}</div>`
   : s.status === "kommer" ? `<div class="decision kommer"><b>Til beslutning ${ugedag(s.dato)} ${datoTekst(s.dato)}</b>${esc(saetninger((s.afsnit.find((a) => /^Indstilling/.test(a.titel))?.tekst || "Sagen er på dagsordenen.").replace(/^[^\n]*indstiller[^\n]*\n*/i, ""), 220))}</div>` : "";
 
-const vagtBoks = (rod) => `<aside class="vagt-box">
-  <h2>Følg det, der betyder noget for dig</h2>
-  <p>Vælg emner som cykelstier, skoler eller lokalplaner, og få en mail, når politikerne tager dem op.</p>
-  <a class="btn" href="${rod}vagt.html">Skriv dig op gratis</a>
+const vagtBoks = (rod) => `<aside class="paa-mail">
+  <h2 class="rubrik">Sagsvagt på mail</h2>
+  <p>Hver mandag de sager, der handler om dine emner, fra cykelstier til lokalplaner. Gratis, mens vi tester.</p>
+  <a href="${rod}vagt.html">Skriv dig op →</a>
 </aside>`;
+// Én linje pr. sag: hvor, overskrift og dato
+const notits = (s, rod = "", medDato = true) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg.replace(/udvalget$/, "udvalget"))}</span> <a href="${rod}${s.url}">${esc(s.titel)}</a>${medDato ? ` <span class="nh-dato">${kortDato(s.dato)}</span>` : ""}</li>`;
+
+// Redaktionen: din leder, dine overskrifter og ugens tophistorie (avis/redaktion.json, redigeres med avis/redaktion.html)
+async function laesRedaktion() {
+  try { return JSON.parse(await readFile(join(ROD, "avis", "redaktion.json"), "utf8")); } catch { return {}; }
+}
 
 // ---------- Sider ----------
 async function main() {
   const filer = (await readdir(join(ROD, "data"))).filter((f) => f.endsWith(".json"));
   const alle = [];
   for (const f of filer) alle.push(...Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager));
-  const sager = alle.filter(publicerbar).map(berig).sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr);
+  const red = await laesRedaktion();
+  const sager = alle.filter(publicerbar).map(berig).map((s) => {
+    const r = red.sager?.[s.id];
+    return r?.overskrift ? { ...s, kommunensTitel: s.titel, titel: r.overskrift.trim(), dek: (r.underrubrik || s.dek).trim() } : s;
+  }).sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr);
   console.log(`${alle.length} punkter, ${sager.length} publiceres`);
 
   const H = { ROD, IDAG, SITE_URL, esc, side, kicker, emneLinks, hvorNavn, stor, kortDato, datoTekst, ugedag, slug, saetninger, erLokaludvalg, bydel };
@@ -230,46 +257,56 @@ async function main() {
     for (const s of liste) { if (ud.length >= n) break; if ((talt[s.udvalg] = (talt[s.udvalg] || 0) + 1) <= max) ud.push(s); }
     return ud;
   };
-  const top = nyheder[0];
-  const anden = spred(nyheder.filter((s) => s !== top && !erLokaludvalg(s.udvalg)), 6, 2);
+  // Tophistorien vælger redaktionen, ellers den vigtigste sag
+  const top = sager.find((s) => s.id === red.tophistorie) || nyheder[0];
+  const anden = spred(nyheder.filter((s) => s !== top && !erLokaludvalg(s.udvalg)), 9, 2);
+  const mellem = anden.slice(0, 3);
   const brugt = new Set([top, ...anden]);
   const bydele = spred(nyheder.filter((s) => erLokaludvalg(s.udvalg) && !brugt.has(s)), 6, 2);
   bydele.forEach((s) => brugt.add(s));
   const kommende = spred(sager.filter((s) => s.status === "kommer" && s.vaegt > 0 && !s.rutine).sort((a, b) => a.dato.localeCompare(b.dato) || b.score - a.score), 7, 2);
-  const seneste = afholdt.filter((s) => !brugt.has(s) && s.vaegt > 0 && !s.rutine).slice(0, 15);
+  const kortNyt = [...anden.slice(3), ...afholdt.filter((s) => !brugt.has(s) && s.vaegt > 0 && !s.rutine).slice(0, 10)];
+  // Lederen vises i ti dage efter, den er skrevet
+  const leder = red.leder?.tekst?.trim() && Math.abs(d(IDAG) - d(red.leder.dato || IDAG)) / 864e5 <= 10 ? red.leder : null;
+  const kalender = {}; for (const s of kommende) (kalender[s.dato] ||= []).push(s);
 
   const forside = `<div class="wrap">
+  ${leder ? `<section class="leder" aria-labelledby="leder-h">
+    <p class="rubrik">Leder</p>
+    <div><h2 id="leder-h">${esc(leder.overskrift || "Ugens overblik")}</h2>${afsnitTilHtml(leder.tekst.trim())}<p class="byline">${esc(leder.navn || "")}${leder.titel ? `, ${esc(leder.titel)}` : ""}</p></div>
+  </section>` : ""}
   <div class="front">
     <div>
       <article class="lead">
         ${kicker(top, "")}
         <h1 class="hl"><a href="${top.url}">${esc(top.titel)}</a></h1>
-        <p class="dek">${esc(top.dek)}</p>
-        ${beslutningsboks(top)}
-        ${emneLinks(top, "")}
+        ${top.dek ? `<p class="dek anslag">${esc(saetninger(top.dek, 320))}</p>` : ""}
+        ${top.status === "besluttet" && top.udfald ? `<p class="udfald">${esc(top.udfald)}</p>` : top.status === "kommer" ? `<p class="udfald kommer">Til beslutning ${ugedag(top.dato)} ${datoTekst(top.dato)}.</p>` : ""}
       </article>
-      <div class="second">
-        ${anden.map((s) => `<article>${kicker(s, "")}<h2 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h2><p class="dek">${esc(saetninger(s.dek, 170))}</p></article>`).join("\n        ")}
+      <div class="mellem">
+        ${mellem.map((s) => `<article>${kicker(s, "")}<h2 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 190))}</p>` : ""}</article>`).join("\n        ")}
       </div>
+      <section class="kortnyt" aria-labelledby="h-kort">
+        <h2 id="h-kort" class="rubrik">Kort nyt</h2>
+        <ul>${kortNyt.map((s) => notits(s)).join("")}</ul>
+      </section>
     </div>
     <div class="rail">
       ${vagtBoks("")}
-      <section aria-labelledby="h-bydele" style="margin-top:34px">
-        <h2 id="h-bydele" class="sec-h">Fra bydelene <a href="bydel/">Alle bydele</a></h2>
-        ${bydele.map((s) => `<article class="mini">${kicker(s, "")}<h3 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h3></article>`).join("\n        ")}
+      <section aria-labelledby="h-bydele">
+        <h2 id="h-bydele" class="rubrik">Fra bydelene <a href="bydel/">Alle bydele</a></h2>
+        <ul class="notitser">${bydele.map((s) => notits(s)).join("")}</ul>
       </section>
       <section aria-labelledby="h-kommer">
-        <h2 id="h-kommer" class="sec-h">Det skal de tage stilling til <a href="moeder.html">Alle møder</a></h2>
-        ${kommende.map((s) => `<article class="mini">${kicker(s, "")}<h3 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h3></article>`).join("\n        ")}
+        <h2 id="h-kommer" class="rubrik">Kalender <a href="moeder.html">Alle møder</a></h2>
+        ${Object.entries(kalender).map(([dag, l]) => {
+          // Ét møde pr. udvalg: udvalget står én gang, punkterne under
+          const pr = {}; for (const s of l) (pr[s.udvalg] ||= []).push(s);
+          return `<p class="kal-dag">${esc(stor(ugedag(dag)))} ${kortDato(dag)}</p>${Object.entries(pr).map(([u, ps]) => `<p class="kal-moede">${esc(hvorNavn(u))}</p><ul class="notitser kal">${ps.map((s) => `<li><a href="${s.url}">${esc(s.titel)}</a></li>`).join("")}</ul>`).join("")}`;
+        }).join("")}
       </section>
     </div>
   </div>
-  <section class="latest" aria-labelledby="h-seneste">
-    <h2 id="h-seneste" class="sec-h">Flere sager fra København</h2>
-    <ol>
-      ${seneste.map((s) => `<li>${kicker(s, "")}<h3 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h3></li>`).join("\n      ")}
-    </ol>
-  </section>
 </div>`;
   await writeFile(join(ROD, "index.html"), side({
     titel: "Sagsvagt – nyt fra byråd og udvalg i København",
@@ -292,6 +329,7 @@ async function main() {
         ${kicker(s, "../")}
         <h1 class="hl">${esc(s.titel)}</h1>
         ${s.dek ? `<p class="dek">${esc(s.dek)}</p>` : ""}
+        ${s.kommunensTitel ? `<p class="kommunens-titel">Kommunens titel: ${esc(s.kommunensTitel)}</p>` : ""}
         ${emneLinks(s, "../")}
       </header>
       <div class="body">
@@ -309,7 +347,7 @@ async function main() {
     ${artikel}
     <aside class="side">
       ${vagtBoks("../")}
-      ${relateret.length ? `<h2 class="sec-h">Mere fra ${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</h2>${relateret.map((x) => `<article class="mini">${kicker(x, "../", false)}<h3 class="hl"><a href="../${x.url}">${esc(x.titel)}</a></h3></article>`).join("")}` : ""}
+      ${relateret.length ? `<h2 class="rubrik">Mere fra ${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</h2>${relateret.map((x) => `<article class="mini">${kicker(x, "../", false)}<h3 class="hl"><a href="../${x.url}">${esc(x.titel)}</a></h3></article>`).join("")}` : ""}
     </aside>
   </div>
 </div>
@@ -321,7 +359,7 @@ async function main() {
   }
 
   // Udvalgs- og bydelssider
-  const liste = (s, medUdvalg = false) => `<article>${kicker(s, "../", medUdvalg)}<h2 class="hl"><a href="../${s.url}">${esc(s.titel)}</a></h2><p class="dek">${esc(saetninger(s.dek, 200))}</p>${emneLinks(s, "../")}</article>`;
+  const liste = (s, medUdvalg = false) => `<article>${kicker(s, "../", medUdvalg)}<h2 class="hl"><a href="../${s.url}">${esc(s.titel)}</a></h2><p class="dek">${esc(saetninger(s.dek, 200))}</p></article>`;
   const udvalg = [...prUdvalg.keys()].filter((u) => !erLokaludvalg(u)).sort((a, b) => (VAEGT[b] ?? 2) - (VAEGT[a] ?? 2) || a.localeCompare(b, "da"));
   const lokal = [...prUdvalg.keys()].filter(erLokaludvalg).sort((a, b) => a.localeCompare(b, "da"));
   for (const u of [...udvalg, ...lokal]) {
@@ -353,7 +391,9 @@ async function main() {
   }
   await writeFile(join(ROD, "emne", "index.html"), side({
     titel: "Emner – Sagsvagt", beskrivelse: "Find sagerne fra Københavns byråd, udvalg og lokaludvalg efter emne.", sti: "emne/", rod: "../", aktiv: "emne",
-    indhold: `<div class="wrap"><div class="listing"><h1>Emner</h1><p class="intro">Sagerne fra Borgerrepræsentationen, udvalgene og lokaludvalgene, sorteret efter emne. En sag kan handle om flere emner.</p>${emneChips("")}</div></div>`,
+    // Som sektionerne i en avis: hvert emne med sine seneste sager
+    indhold: `<div class="wrap"><div class="emne-oversigt"><h1>Emner</h1><p class="intro">Sagerne fra Borgerrepræsentationen, udvalgene og lokaludvalgene, sorteret efter emne. En sag kan handle om flere emner.</p>
+<div class="emne-gitter">${Object.entries(EMNER).map(([id, e]) => `<section aria-labelledby="em-${id}"><h2 id="em-${id}" class="rubrik"><a href="${id}.html" class="emne-navn">${esc(e.navn)}</a> <a href="${id}.html">${prEmne[id].length} sager</a></h2><ul class="notitser">${prEmne[id].slice(0, 4).map((s) => notits(s, "../")).join("")}</ul></section>`).join("")}</div></div></div>`,
   }));
 
   // Møder: ét møde er et udvalg på en dato. Antallet af punkter tæller hele dagsordenen,
@@ -472,7 +512,7 @@ async function main() {
     emner: Object.fromEntries(Object.entries(EMNER).map(([id, e]) => [id, { navn: e.navn, f: e.f }])),
     moeder: [...kommendeMoeder, ...senesteMoeder].map((m) => ({ dato: m.dato, u: m.udvalg, url: m.url, n: m.antal, referat: m.referat })),
     sager: sager.map((s) => ({
-      id: s.id, t: s.titel, d: s.dek, u: s.udvalg, dato: s.dato, st: s.status, ud: s.udfald, sm: s.stemmer, tal: s.tal,
+      id: s.id, t: s.titel, kt: s.kommunensTitel, d: s.dek, u: s.udvalg, dato: s.dato, st: s.status, ud: s.udfald, sm: s.stemmer, tal: s.tal,
       e: s.emner, et: s.emnerTitel, url: s.url, k: s.kilde, v: s.vaegt, r: s.rutine ? 1 : 0, x: saetninger(s.afsnit.map((a) => a.tekst).join(" "), 600),
     })),
   }));
