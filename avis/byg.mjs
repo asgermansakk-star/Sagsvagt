@@ -4,6 +4,7 @@ import { readFile, writeFile, mkdir, rm, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { EMNER, emnerFor, deltagere, stemmetal, indstillingPunkter, videreTil, afstemninger, hoeringsfrist, iHoering, forklar } from "./beriget.mjs";
 import { bygDelebilleder } from "./delebilleder.mjs";
+import { bygBokse } from "./boks.mjs";
 import { sagensVej, vejBoks, bygPartier, bygHoeringer, bygKalendere, bygFeeds, kalenderLink, feedLink } from "./ekstra.mjs";
 
 const ROD = join(import.meta.dirname, "..");
@@ -182,7 +183,7 @@ ${indhold}
 <footer class="foot">
   <div class="wrap">
     ${logo(110, 34)}
-    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a> · <a href="${rod}privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
+    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a> · <a href="${rod}boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="${rod}privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
 </footer>
 </body>
@@ -539,11 +540,14 @@ async function main() {
     })),
   }));
 
+  // Bokse til andres hjemmesider og siden boks.html, hvor man henter koden (avis/boks.mjs)
+  const antalBokse = await bygBokse({ sager, udvalg, lokal, prUdvalg, prEmne }, H);
+
   // Sitemap og robots
-  const urls = ["", "index.html", "om.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), ...sager.map((s) => s.url)];
+  const urls = ["", "index.html", "om.html", "boks.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), ...sager.map((s) => s.url)];
   await writeFile(join(ROD, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE_URL}${u}</loc></url>`).join("\n")}\n</urlset>\n`);
   await writeFile(join(ROD, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
-  console.log(`Byggede forside, ${sager.length} sager, ${udvalg.length} udvalg, ${lokal.length} bydele, ${Object.keys(EMNER).length} emner`);
+  console.log(`Byggede forside, ${sager.length} sager, ${udvalg.length} udvalg, ${lokal.length} bydele, ${Object.keys(EMNER).length} emner, ${antalBokse} bokse`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });
