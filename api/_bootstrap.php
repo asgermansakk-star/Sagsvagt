@@ -80,6 +80,10 @@ function db(): PDO {
     $pdo->exec("CREATE TABLE IF NOT EXISTS tokens (
         id $id, abonnent_id INT NOT NULL, type VARCHAR(10) NOT NULL, hash CHAR(64) NOT NULL UNIQUE, udloeber VARCHAR(25) NOT NULL, brugt VARCHAR(25) NULL)");
     $pdo->exec("CREATE TABLE IF NOT EXISTS forsoeg (noegle VARCHAR(200) NOT NULL, tid INT NOT NULL)");
+    // Feedback fra testpersonerne i Min avis. Sletter en bruger sin konto, beholdes teksten uden e-mail.
+    $pdo->exec("CREATE TABLE IF NOT EXISTS feedback (
+        id $id, abonnent_id INT NULL, email VARCHAR(254) NOT NULL DEFAULT '', vurdering VARCHAR(20) NOT NULL DEFAULT '',
+        tekst $tekst NOT NULL, side VARCHAR(100) NOT NULL DEFAULT '', kontakt TINYINT NOT NULL DEFAULT 0, oprettet VARCHAR(25) NOT NULL)");
     return $pdo;
 }
 

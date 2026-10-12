@@ -13,6 +13,7 @@ $profil = [
     'ord' => $tekster($d['ord'] ?? [], 12, 60),
     'bydel' => mb_substr(trim((string)($d['bydel'] ?? '')), 0, 100),
     'gemte' => $tekster($d['gemte'] ?? [], 300, 120),
+    'velkommen' => !empty($d['velkommen']),
 ];
 db()->prepare('UPDATE abonnenter SET profil = ? WHERE id = ?')->execute([json_encode($profil, JSON_UNESCAPED_UNICODE), $b['id']]);
 svar(200, ['ok' => true]);

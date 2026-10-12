@@ -13,7 +13,7 @@
 <style>
   /* Redaktionens oversigt over tilmeldte og invitationer. Kræver login som redaktør (admins i api/_konfig.php). */
   [hidden] { display: none !important; }
-  .side-admin { padding: 30px 0 64px; }
+  .side-admin { padding-top: 30px; padding-bottom: 64px; }
   .side-admin h1 { font-size: clamp(1.8rem, 3.4vw, 2.4rem); letter-spacing: -.03em; margin: 0 0 6px; }
   .tal { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 16px 0 22px; font-size: .9375rem; }
   .tal b { font-size: 1.75rem; display: block; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
@@ -36,6 +36,9 @@
   .login-boks { max-width: 420px; margin: 50px 0; }
   .login-boks input { width: 100%; font: inherit; padding: 11px 13px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--kalk-lys); margin: 6px 0 12px; }
   .tabel-wrap { overflow-x: auto; }
+  .omraade select { font: inherit; font-size: .9375rem; padding: 8px 10px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--kalk-lys); margin-left: 6px; }
+  .fb { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .fb p { margin: 6px 0 0; white-space: pre-wrap; font-size: .9375rem; }
 </style>
 </head>
 <body>
@@ -63,14 +66,21 @@
     <div class="tal" id="tal"></div>
     <p class="besked" id="besked" role="status" aria-live="polite"></p>
     <div class="handl-raekke">
+      <label class="lille omraade"><b>Område</b> <select id="omraade"></select></label>
+      <label class="lille"><input type="checkbox" id="kun-nye" checked> Vis kun dem uden konto</label>
+    </div>
+    <div class="handl-raekke">
       <button class="knap" id="inviter-valgte" type="button" disabled>Send invitation til valgte</button>
       <button class="knap sek" id="inviter-alle" type="button">Send invitation til alle, der ikke har en konto</button>
-      <label class="lille"><input type="checkbox" id="kun-nye" checked> Vis kun dem uden konto</label>
     </div>
     <div class="tabel-wrap"><table class="liste">
       <thead><tr><th><input type="checkbox" id="alle-valg" aria-label="Vælg alle"></th><th>E-mail</th><th>Status</th><th>Kommuner og emner</th><th>Rolle</th><th>Tilmeldt</th><th></th></tr></thead>
       <tbody id="raekker"></tbody>
     </table></div>
+    <details class="import" id="fb-boks">
+      <summary id="fb-titel">Feedback fra Min avis</summary>
+      <div id="fb-liste"></div>
+    </details>
     <details class="import">
       <summary>Læg tilmeldte ind fra mails</summary>
       <p class="lille">Til dem, der skrev sig op, før tilmeldingerne kom i databasen. Kopiér hele tabellen fra en eller flere tilmeldingsmails (kilde, email, kommuner, emner, rolle) og indsæt den her, så kommer alle oplysningerne med. Du kan også bare indsætte e-mailadresser. Findes en adresse allerede, udfyldes kun de felter, der mangler.</p>
@@ -92,18 +102,56 @@
   var data = [];
   function besked(t, k) { var b = $("#besked"); b.className = "besked " + (k || ""); b.textContent = t; }
 
+  // Område: kommunerne skrives frit ved tilmeldingen ("Kbh", "Københavns Kommune", "Frederiksberg og København"),
+  // så de ryddes op her, før man kan filtrere på dem.
+  var INGEN = "Ikke angivet";
+  function omraader(tekst) {
+    var l = String(tekst || "").split(/[,;\/&+\n]|\s+og\s+/i).map(function (k) {
+      k = k.trim().replace(/\s+kommunes?$/i, "").replace(/\.$/, "");
+      if (/^(k(ø|o|oe)benhavns?|kbh|cph|copenhagen|københavn [a-zæøå]+)$/i.test(k)) return "København";
+      return k ? k.charAt(0).toUpperCase() + k.slice(1) : "";
+    }).filter(Boolean);
+    return l.length ? l : [INGEN];
+  }
+  var kanInviteres = function (a) { return a.status === "tilmeldt" || a.status === "inviteret"; };
+  function iOmraade(a) { var o = $("#omraade").value; return !o || omraader(a.kommuner).indexOf(o) > -1; }
+  function fyldOmraader() {
+    var valgt = $("#omraade").value, t = {};
+    data.forEach(function (a) { omraader(a.kommuner).forEach(function (o) { t[o] = t[o] || { i: 0, n: 0 }; t[o].i++; if (kanInviteres(a)) t[o].n++; }); });
+    var navne = Object.keys(t).sort(function (x, y) { return x === "København" ? -1 : y === "København" ? 1 : x === INGEN ? 1 : y === INGEN ? -1 : t[y].i - t[x].i || x.localeCompare(y, "da"); });
+    // Første gang vælges København, så man ikke kommer til at invitere alle på én gang
+    if (valgt === "" && fyldOmraader.foerste !== false && t["København"]) valgt = "København";
+    fyldOmraader.foerste = false;
+    $("#omraade").innerHTML = '<option value="">Alle områder (' + data.length + ')</option>' + navne.map(function (o) {
+      return '<option value="' + esc(o) + '"' + (o === valgt ? " selected" : "") + ">" + esc(o) + " (" + t[o].i + (t[o].n !== t[o].i ? ", " + t[o].n + " uden konto" : "") + ")</option>";
+    }).join("");
+  }
+
   function hent() {
     return api("admin/abonnenter.php").then(function (j) {
       data = j.abonnenter; $("#login").hidden = true; $("#panel").hidden = false;
       var a = j.antal || {};
       $("#tal").innerHTML = [["I alt", data.length], ["Tilmeldt", a.tilmeldt || 0], ["Inviteret", a.inviteret || 0], ["Har konto", a.aktiv || 0], ["Afmeldt", a.afmeldt || 0]]
         .map(function (x) { return "<div><b>" + x[1] + "</b>" + x[0] + "</div>"; }).join("");
+      fyldOmraader();
       vis();
+      hentFeedback();
     });
+  }
+  var INDTRYK = { godt: "Godt", blandet: "Blandet", daarligt: "Dårligt" };
+  function hentFeedback() {
+    api("admin/feedback.php").then(function (j) {
+      var l = j.feedback || [];
+      $("#fb-titel").textContent = "Feedback fra Min avis (" + l.length + ")";
+      $("#fb-liste").innerHTML = l.length ? l.map(function (f) {
+        return '<div class="fb"><span class="lille">' + dato(f.oprettet) + " · " + (f.email ? esc(f.email) + (+f.kontakt ? "" : " (vil ikke kontaktes)") : "Slettet konto")
+          + (f.vurdering ? " · <b>" + esc(INDTRYK[f.vurdering] || f.vurdering) + "</b>" : "") + (f.side ? " · " + esc(f.side) : "") + "</span><p>" + esc(f.tekst) + "</p></div>";
+      }).join("") : '<p class="lille">Ingen feedback endnu.</p>';
+    }).catch(function () {});
   }
   function vis() {
     var kunNye = $("#kun-nye").checked;
-    $("#raekker").innerHTML = data.filter(function (a) { return !kunNye || a.status === "tilmeldt" || a.status === "inviteret"; }).map(function (a) {
+    $("#raekker").innerHTML = data.filter(function (a) { return iOmraade(a) && (!kunNye || kanInviteres(a)); }).map(function (a) {
       var kanInv = a.status === "tilmeldt" || a.status === "inviteret";
       return "<tr><td>" + (kanInv ? '<input type="checkbox" class="valg" value="' + a.id + '" aria-label="Vælg ' + esc(a.email) + '">' : "") + "</td>"
         + "<td>" + esc(a.email) + (a.kilde ? '<br><span class="lille">' + esc(a.kilde) + "</span>" : "") + "</td>"
@@ -115,7 +163,14 @@
     opdaterKnap();
   }
   function valgte() { return Array.prototype.map.call(document.querySelectorAll(".valg:checked"), function (x) { return +x.value; }); }
-  function opdaterKnap() { var n = valgte().length; $("#inviter-valgte").disabled = !n; $("#inviter-valgte").textContent = n ? "Send invitation til " + n + " valgte" : "Send invitation til valgte"; }
+  // Dem i det valgte område, der kan inviteres (har ikke oprettet en konto og er ikke afmeldt)
+  function iOmraadetUdenKonto() { return data.filter(function (a) { return iOmraade(a) && kanInviteres(a); }).map(function (a) { return a.id; }); }
+  function opdaterKnap() {
+    var n = valgte().length, o = $("#omraade").value, m = iOmraadetUdenKonto().length;
+    $("#inviter-valgte").disabled = !n; $("#inviter-valgte").textContent = n ? "Send invitation til " + n + " valgte" : "Send invitation til valgte";
+    $("#inviter-alle").disabled = !m;
+    $("#inviter-alle").textContent = "Send invitation til " + (m === 1 ? "den 1" : "alle " + m) + (o ? " i " + o : "") + " uden konto";
+  }
 
   function inviter(data, tekst) {
     if (!confirm(tekst)) return;
@@ -127,13 +182,16 @@
   }
   document.addEventListener("change", function (e) {
     if (e.target.id === "alle-valg") document.querySelectorAll(".valg").forEach(function (x) { x.checked = e.target.checked; });
-    if (e.target.id === "kun-nye") vis();
+    if (e.target.id === "kun-nye" || e.target.id === "omraade") { $("#alle-valg").checked = false; vis(); }
     opdaterKnap();
   });
   document.addEventListener("click", function (e) {
     var t = e.target, id;
     if (t.id === "inviter-valgte") inviter({ ids: valgte() }, "Send invitation til " + valgte().length + " valgte? De får en mail med et link til at oprette en adgangskode.");
-    else if (t.id === "inviter-alle") inviter({ alle: true }, "Send invitation til alle, der ikke har en konto endnu (højst 200 ad gangen)?");
+    else if (t.id === "inviter-alle") {
+      var ids = iOmraadetUdenKonto(), o = $("#omraade").value;
+      inviter({ ids: ids }, "Send invitation til " + ids.length + (o ? " i " + o : " i alle områder") + ", der ikke har en konto endnu? De får en mail med et link til at oprette en adgangskode." + (ids.length > 200 ? " Der sendes højst 200 ad gangen." : ""));
+    }
     else if ((id = t.getAttribute("data-afmeld"))) { if (confirm("Afmeld? De får ingen mails og kan ikke logge ind.")) api("admin/status.php", { id: +id, handling: "afmeld" }).then(hent).catch(function (e) { besked(e.message, "fejl"); }); }
     else if ((id = t.getAttribute("data-slet"))) { if (confirm("Slet helt? Det kan ikke fortrydes.")) api("admin/status.php", { id: +id, handling: "slet" }).then(hent).catch(function (e) { besked(e.message, "fejl"); }); }
     else if (t.id === "importer") api("admin/importer.php", { tekst: $("#import-tekst").value }).then(function (j) { besked(j.nye + " lagt ind, " + j.opdateret + " opdateret, " + j.fandtes + " fandtes allerede.", "ok"); $("#import-tekst").value = ""; return hent(); }).catch(function (e) { besked(e.message, "fejl"); });

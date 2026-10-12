@@ -184,6 +184,30 @@
   .tak h3 { font-family: var(--serif); font-size: 1.75rem; margin: 0 0 8px; }
   .tak p { margin: 0 auto 22px; max-width: 32em; color: #3E3B40; }
 
+  /* Velkomst ved første login */
+  .velkommen { background: var(--kalk-lys); border-left: 4px solid var(--vin); border-radius: 0 10px 10px 0; padding: 22px 26px 22px; margin: 0 0 28px; }
+  .velkommen h2 { font-family: var(--serif); font-weight: 600; font-size: 1.5rem; line-height: 1.2; letter-spacing: -.015em; margin: 0 0 6px; }
+  .velkommen > p { margin: 0 0 14px; max-width: 46em; color: #3E3B40; }
+  .velkommen ol { margin: 0 0 18px; padding-left: 22px; display: grid; gap: 6px; max-width: 46em; }
+  .velkommen li::marker { font-weight: 700; color: var(--vin); }
+  .velkommen .knapper { display: flex; flex-wrap: wrap; gap: 10px; }
+  .velkommen .btn { font-size: .875rem; padding: 10px 18px; border: 0; cursor: pointer; }
+
+  /* Feedback og slet konto */
+  .mh-nav .fb { font-weight: 700; }
+  .dlg-form { padding: 22px 24px 24px; display: grid; gap: 14px; }
+  .dlg-form textarea { min-height: 150px; font-family: var(--sans); font-size: .9688rem; }
+  .indtryk { display: flex; flex-wrap: wrap; gap: 8px; border: 0; padding: 0; margin: 0; }
+  .indtryk legend { font-size: .8125rem; font-weight: 700; margin-bottom: 8px; padding: 0; }
+  .indtryk label { cursor: pointer; }
+  .indtryk input { position: absolute; opacity: 0; pointer-events: none; }
+  .indtryk label span { display: inline-block; font: 600 .875rem/1 var(--sans); padding: 10px 16px; border-radius: 99px; border: 1.5px solid var(--rule); }
+  .indtryk input:checked + span { background: var(--nat); border-color: var(--nat); color: var(--kalk); }
+  .indtryk input:focus-visible + span { outline: 2px solid var(--indigo); outline-offset: 2px; }
+  .farlig { background: var(--vin) !important; }
+  .slet-liste { margin: 0; padding-left: 20px; font-size: .9375rem; display: grid; gap: 4px; }
+  .panel .slut .knapper-h { display: flex; gap: 18px; }
+
   @media (max-width: 960px) {
     .debat-grid { grid-template-columns: 1fr; }
     .lukket { grid-template-columns: 1fr; gap: 36px; padding: 48px 0 64px; }
@@ -191,9 +215,15 @@
   }
   @media (max-width: 620px) {
     .tilpas { margin-left: 0; }
+    /* På telefonen skal login-boksen kunne ses uden at scrolle */
+    .lukket { padding-top: 28px; gap: 28px; }
+    .lukket .login { order: -1; padding: 24px 22px 22px; }
     .soeg { margin-left: 0; width: 100%; } .soeg input { width: 100%; }
     .mh-nav .ud { margin-left: 0; }
     .to { grid-template-columns: 1fr; }
+    .velkommen { padding: 18px 18px 18px; margin-bottom: 22px; font-size: .9375rem; }
+    .velkommen h2 { font-size: 1.3rem; }
+    .velkommen .btn { padding: 9px 14px; }
   }
 </style>
 </head>
@@ -211,7 +241,8 @@
       <a href="#debat" data-side="debat" data-aaben>Debat</a>
       <a href="#gemte" data-side="gemte" data-aaben>Gemte</a>
       <a href="#mandagsmail" data-side="mandagsmail" data-aaben>Mandagsmail</a>
-      <button type="button" class="ud" id="logud" data-aaben title="Login kommer snart">Log ud</button>
+      <button type="button" class="ud fb" id="feedback-knap" data-aaben>Giv feedback</button>
+      <button type="button" id="logud" data-aaben title="Login kommer snart">Log ud</button>
     </nav>
   </div>
 </header>
@@ -243,6 +274,21 @@
   <div id="avis" hidden>
     <div class="wrap">
       <section class="ed" data-visning="forside" aria-labelledby="ed-h">
+        <div class="velkommen" id="velkommen" hidden>
+          <h2 id="velkommen-h">Velkommen til Min avis.</h2>
+          <p>Du er en af de første, der prøver Sagsvagt. Sådan kommer du i gang:</p>
+          <ol>
+            <li><b>Vælg dine emner</b> under "Du følger". <span id="velkommen-forud"></span></li>
+            <li><b>Vælg din bydel og egne ord</b> under Tilpas, fx et gadenavn.</li>
+            <li><b>Gem sager med stjernen</b>, så ligger de under Gemte.</li>
+          </ol>
+          <p>Tryk på en sag for at læse et kort resumé. Hele sagen ligger hos kommunen. Det er en testversion, så sig til, hvad der virker, og hvad der mangler.</p>
+          <div class="knapper">
+            <button type="button" class="btn moerk" id="velkommen-tilpas">Tilpas min avis</button>
+            <button type="button" class="btn linje" id="velkommen-fb">Giv feedback</button>
+            <button type="button" class="btn linje" id="velkommen-luk">Forstået</button>
+          </div>
+        </div>
         <p class="kicker" id="ed-kicker"></p>
         <h1 id="ed-h"></h1>
         <p class="sum" id="ed-sum"></p>
@@ -261,7 +307,7 @@
             <label for="p-bydel">Din bydel</label>
             <select id="p-bydel"><option value="">Vælg bydel …</option></select>
           </div>
-          <div class="slut"><span>Dine valg gemmes kun i denne browser, indtil login er klar.</span><button type="button" id="p-nulstil">Nulstil</button></div>
+          <div class="slut"><span id="p-gemmes">Dine valg gemmes kun i denne browser, indtil login er klar.</span><span class="knapper-h"><button type="button" id="p-nulstil">Nulstil</button><button type="button" id="p-slet" hidden>Slet min konto</button></span></div>
         </form>
       </section>
 
@@ -364,6 +410,45 @@
       <p>Redaktionen har modtaget det, og du får en kvittering på mail. Vi læser alle indlæg og skriver til dig, hvis vi bringer dit.</p>
       <button class="send" type="button" data-luk>Luk</button>
     </div>
+  </dialog>
+
+  <dialog class="skriv" id="fb" aria-labelledby="fb-h">
+    <div class="skriv-top">
+      <div><h2 id="fb-h">Giv feedback</h2><p>Går direkte til redaktionen. Alt hjælper, også det korte.</p></div>
+      <button class="luk" type="button" data-luk aria-label="Luk">×</button>
+    </div>
+    <form class="dlg-form" id="fb-form" novalidate>
+      <fieldset class="indtryk">
+        <legend>Hvad er dit indtryk indtil videre? <span style="font-weight:500;color:var(--muted)">(valgfrit)</span></legend>
+        <label><input type="radio" name="vurdering" value="godt"><span>Godt</span></label>
+        <label><input type="radio" name="vurdering" value="blandet"><span>Blandet</span></label>
+        <label><input type="radio" name="vurdering" value="daarligt"><span>Dårligt</span></label>
+      </fieldset>
+      <div class="felt"><label for="fb-tekst">Hvad virker, hvad mangler, og hvad var svært?</label><textarea id="fb-tekst" name="tekst" maxlength="3000" placeholder="Fx: Jeg savner sager om …, eller: Jeg forstod ikke …"></textarea></div>
+      <label class="bekraeft"><input type="checkbox" name="kontakt" checked><span>I må gerne skrive til mig, hvis I har spørgsmål til min feedback.</span></label>
+      <p class="skriv-msg" id="fb-msg" role="status" aria-live="polite"></p>
+      <div class="send-raekke"><small>Vi gemmer din feedback sammen med din e-mail, så vi kan svare dig.</small><button class="send" type="submit">Send feedback</button></div>
+    </form>
+    <div class="tak" id="fb-tak" hidden>
+      <h3>Tak for din feedback.</h3>
+      <p>Vi læser alt, hvad testpersonerne skriver, og bruger det til at gøre Sagsvagt bedre.</p>
+      <button class="send" type="button" data-luk>Luk</button>
+    </div>
+  </dialog>
+
+  <dialog class="skriv" id="slet" aria-labelledby="slet-h">
+    <div class="skriv-top">
+      <div><h2 id="slet-h">Slet din konto</h2><p>Det kan ikke fortrydes.</p></div>
+      <button class="luk" type="button" data-luk aria-label="Luk">×</button>
+    </div>
+    <form class="dlg-form" id="slet-form" novalidate>
+      <p style="margin:0">Når du sletter din konto, sletter vi:</p>
+      <ul class="slet-liste"><li>din e-mail og din tilmelding</li><li>dine emner, ord, bydel og gemte sager</li><li>links fra de mails, vi har sendt dig</li></ul>
+      <p style="margin:0">Du får ingen mails fra os bagefter. Har du sendt feedback, beholder vi teksten, men uden din e-mail.</p>
+      <div class="felt"><label for="slet-kode">Skriv din adgangskode for at bekræfte</label><input id="slet-kode" type="password" autocomplete="current-password"></div>
+      <p class="skriv-msg" id="slet-msg" role="status" aria-live="polite"></p>
+      <div class="send-raekke"><small>Vil du holde en pause, kan du også bare lade være med at logge ind.</small><button class="send farlig" type="submit">Slet min konto</button></div>
+    </form>
   </dialog>
 
   <dialog class="skriv laes-dlg" id="laes" aria-labelledby="laes-h">
@@ -787,13 +872,82 @@
       gem(); tegn(); if ($("#laes").open) laesSag.opdater?.();
     } else if (t.dataset.fane) { fane = t.dataset.fane; vist = 20; tegnListe(); }
     else if (t.id === "flere") { vist += 20; tegnListe(); }
-    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte }; gem(); fyldPanel(); tegn(); }
+    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte, velkommen: profil.velkommen }; gem(); fyldPanel(); tegn(); }
     else { e.preventDefault(); if (t.dataset.tilpas !== undefined) $("#panel").hidden = true; vend(); scrollTo({ top: 0, behavior: "smooth" }); }
   });
   $("#p-navn").addEventListener("input", (e) => { profil.navn = e.target.value.slice(0, 40); gem(); tegn(); });
   $("#p-ord").addEventListener("change", (e) => { profil.ord = e.target.value.split(",").map((o) => o.trim()).filter((o) => o.length > 1).slice(0, 12); gem(); tegn(); });
   $("#p-bydel").addEventListener("change", (e) => { profil.bydel = e.target.value; gem(); tegn(); });
   let t0; $("#soeg").addEventListener("input", (e) => { clearTimeout(t0); t0 = setTimeout(() => { soeg = e.target.value; vist = 20; tegnListe(); }, 120); });
+
+  /* ---------- Velkomst ----------
+     Første gang man logger ind, bliver emnerne fra tilmeldingen udgangspunktet, og et kort viser, hvordan Min avis bruges.
+     Kortet forsvinder, når man trykker Forstået (profil.velkommen gemmes på kontoen). */
+  const NOEGLEORD = { trafik: /trafik|cykl|parkering/, klima: /klima|grøn|miljø|solcelle/, affald: /affald|genbrug/, bolig: /bolig/,
+    byggeri: /bygg|lokalplan|byplan/, skole: /skole|børn|dagtilbud|uddannelse/, aeldre: /ældre|sundhed|pleje/, social: /social|udsat|hjemløs/,
+    budget: /budget|økonomi/, kultur: /kultur|fritid|idræt|bibliotek/, erhverv: /erhverv|job|arbejdsmarked/ };
+  function forudfyld() {
+    const t = (server?.tilmelding?.emner || "").toLowerCase();
+    const emner = Object.keys(EMNER).filter((id) => t.includes(EMNER[id].navn.toLowerCase()) || NOEGLEORD[id]?.test(t));
+    if (emner.length) { profil.emner = emner; gem(); }
+    return emner.map((id) => EMNER[id].navn);
+  }
+  function visVelkomst(forud) {
+    if (!server || profil.velkommen) return;
+    // Emnenavnene indeholder selv "og" (Skoler og børn), så de skrives som en liste med kommaer
+    $("#velkommen-forud").textContent = forud.length ? `Ud fra din tilmelding har vi valgt: ${forud.join(", ")}.` : "";
+    $("#velkommen").hidden = false;
+  }
+  $("#velkommen-luk").addEventListener("click", () => { profil.velkommen = true; gem(); $("#velkommen").hidden = true; });
+  $("#velkommen-tilpas").addEventListener("click", () => { if ($("#panel").hidden) vend(); $("#panel").scrollIntoView({ behavior: "smooth", block: "center" }); });
+  $("#velkommen-fb").addEventListener("click", () => aabnFeedback());
+
+  /* ---------- Feedback ----------
+     Gemmes i databasen og sendes til redaktionen (api/feedback.php). Uden server åbnes en færdigudfyldt mail. */
+  const fbDlg = $("#fb"), fbForm = $("#fb-form");
+  function aabnFeedback() {
+    fbForm.hidden = false; $("#fb-tak").hidden = true; $("#fb-msg").textContent = "";
+    fbDlg.showModal(); $("#fb-tekst").focus();
+  }
+  $("#feedback-knap").addEventListener("click", aabnFeedback);
+  fbDlg.addEventListener("click", (e) => { if (e.target === fbDlg) fbDlg.close(); });
+  fbForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const msg = $("#fb-msg"), btn = $(".send", fbForm), tekst = fbForm.tekst.value.trim();
+    if (tekst.length < 3) { msg.className = "skriv-msg fejl"; msg.textContent = "Skriv et par ord om, hvad du synes."; fbForm.tekst.focus(); return; }
+    const data = { tekst, vurdering: fbForm.vurdering.value, kontakt: fbForm.kontakt.checked, side: `${SIDER[location.hash.slice(1)] || "Min avis"} · ${innerWidth} px bred skærm` };
+    if (!server) { location.href = `mailto:${REDAKTION}?subject=${encodeURIComponent("Feedback til Min avis")}&body=${encodeURIComponent(tekst)}`; return; }
+    btn.disabled = true; msg.className = "skriv-msg"; msg.textContent = "Sender …";
+    api("feedback.php", data)
+      .then(() => { fbForm.reset(); fbForm.hidden = true; $("#fb-tak").hidden = false; $("#fb-tak .send").focus(); })
+      .catch((err) => { msg.className = "skriv-msg fejl"; msg.textContent = err.message; })
+      .finally(() => { btn.disabled = false; });
+  });
+
+  /* ---------- Slet konto ----------
+     Kun med rigtigt login. Redaktionens egen konto kan ikke slettes herfra. */
+  if (server) {
+    $("#p-gemmes").textContent = "Dine valg gemmes på din konto, så de følger dig mellem computer og telefon.";
+    $("#p-slet").hidden = !!server.admin;
+  }
+  $("#p-slet").addEventListener("click", () => { $("#slet-msg").textContent = ""; $("#slet-kode").value = ""; $("#slet").showModal(); $("#slet-kode").focus(); });
+  $("#slet").addEventListener("click", (e) => { if (e.target === $("#slet")) $("#slet").close(); });
+  $("#slet-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const msg = $("#slet-msg"), btn = $(".send", e.target);
+    if (!$("#slet-kode").value) { msg.className = "skriv-msg fejl"; msg.textContent = "Skriv din adgangskode."; $("#slet-kode").focus(); return; }
+    btn.disabled = true; msg.className = "skriv-msg"; msg.textContent = "Sletter …";
+    api("slet-konto.php", { adgangskode: $("#slet-kode").value })
+      .then(() => {
+        [PKEY, "sv-profil", KLADDE, "sv-bruger", "sv-adgang"].forEach((k) => { try { localStorage.removeItem(k); } catch {} });
+        document.querySelectorAll("[data-aaben]").forEach((el) => (el.hidden = true));
+        $("#main").innerHTML = `<div class="wrap"><div class="lukket" style="display:block"><h1>Din konto er slettet.</h1>`
+          + `<p class="lead-p">Vi har slettet din e-mail, din tilmelding og alt, hvad du har valgt i Min avis. Tak, fordi du prøvede Sagsvagt.</p>`
+          + `<a class="btn moerk" href="../vagt.html">Til forsiden</a></div></div>`;
+        scrollTo(0, 0);
+      })
+      .catch((err) => { msg.className = "skriv-msg fejl"; msg.textContent = err.message; btn.disabled = false; });
+  });
 
   /* ---------- Start ---------- */
   $("#indlaes").hidden = false;
@@ -802,8 +956,9 @@
     .then(([data, debat]) => {
       DATA = data; SAGER = data.sager; INDLAEG = debat.indlaeg || []; EMNER = data.emner || {};
       profil.emner = profil.emner.filter((id) => EMNER[id]);
+      const forud = server && !server.profil ? forudfyld() : [];
       $("#indlaes").hidden = true; $("#avis").hidden = false;
-      fyldPanel(); tegn(); visSide();
+      fyldPanel(); tegn(); visSide(); visVelkomst(forud);
     })
     .catch((err) => { console.warn(err); $("#indlaes").textContent = "Vi kunne ikke hente sagerne lige nu. Prøv igen om lidt."; });
 })();
