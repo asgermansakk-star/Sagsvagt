@@ -323,6 +323,7 @@ footer.foot a { color: var(--kalk); }
 .paa-mail a { font-weight: 700; color: var(--vin); text-decoration: none; }
 .paa-mail a:hover { text-decoration: underline; }
 .side .paa-mail { margin-bottom: 32px; }
+.body .tester { margin: 40px 0 0; }
 
 /* Bokse bliver til spalter med streger */
 .kf, .vej { background: transparent; border-top: 2px solid var(--nat); border-bottom: 1px solid var(--rule); padding-left: 0; padding-right: 0; }

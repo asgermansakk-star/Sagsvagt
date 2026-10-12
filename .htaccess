@@ -2,7 +2,7 @@
 # Undermapper (udvalg/, bydel/, min/) har ingen vagt.html og viser derfor deres index.html som før.
 DirectoryIndex vagt.html index.html
 
-# Avisen er lukket for nu efter ejerens ønske, så det kun er muligt at skrive sig op. Avisens sider sender
-# midlertidigt (302) videre til tilmeldingen. Åbn ikke avisen uden at aftale det med ejeren.
-# Slet linjen herunder for at åbne avisen igen.
-RedirectMatch 302 ^/(index\.html|om\.html|soeg\.html|moeder\.html|partier\.html|hoeringer\.html|sag/.*|udvalg/.*|bydel/.*|emne/.*|kalender/.*|feed/.*)$ /
+# Avisen er åben igen fra 12. okt. 2026 efter ejerens ønske, så Google og delte links kan finde sagerne.
+# Hver sag beder læseren om at blive tester. Min avis (min/) er stadig lukket bag login.
+# For at lukke avisen igen: fjern # foran linjen herunder.
+# RedirectMatch 302 ^/(index\.html|om\.html|soeg\.html|moeder\.html|partier\.html|hoeringer\.html|sag/.*|udvalg/.*|bydel/.*|emne/.*|kalender/.*|feed/.*)$ /

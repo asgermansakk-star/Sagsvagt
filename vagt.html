@@ -292,6 +292,7 @@
       <a href="#proev">Prøv det</a>
       <a href="#saadan">Sådan virker det</a>
       <a href="#spoergsmaal">Spørgsmål</a>
+      <a href="index.html">Læs avisen</a>
     </nav>
     <a class="btn btn-lille btn-sekundaer" href="min/">Log ind</a>
     <a class="btn btn-lille btn-lys" href="#tilmeld">Skriv dig op</a>
@@ -626,12 +627,19 @@
     `Skriv mig op til Sagsvagt.\n\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n`)}`;
   // Hvor kom den tilmeldte fra? Del fx sagsvagt.dk/vagt.html?fra=instagram eller ?fra=grupper
   const kilde = (() => {
+    // Kom de via avisen, står den første kilde foran, fx "facebook.com > sag"
     const q = new URLSearchParams(location.search), fra = q.get("fra") || q.get("utm_source");
-    if (fra) return fra.slice(0, 60);
+    let foer = ""; try { foer = sessionStorage.getItem("svKilde") || ""; } catch {}
+    if (fra) return (foer && foer !== fra ? `${foer} > ${fra}` : fra).slice(0, 60);
     try { const r = document.referrer && new URL(document.referrer).hostname; if (r && r !== location.hostname) return r; } catch {}
-    return "direkte";
+    return foer || "direkte";
   })();
   $("#kilde").value = kilde;
+  // Fra en sag i avisen: udfyld emnet eller bydelen, læseren kom fra
+  const emneFra = new URLSearchParams(location.search).get("emne");
+  if (emneFra && !$("#emner").value) $("#emner").value = emneFra.slice(0, 80);
+  // Demoen bygges efter indlæsning og skubber formularen ned, så hop til den igen, når siden er færdig
+  if (location.hash === "#tilmeld") addEventListener("load", () => $("#tilmeld").scrollIntoView({ block: "start" }));
   const form = $("#form"), msg = $(".form-msg", form), btn = $(".send", form), card = $(".tilmeld-kort");
   const faerdig = () => { card.classList.add("ok"); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
   form.addEventListener("submit", async (e) => {

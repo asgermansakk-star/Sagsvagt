@@ -146,6 +146,7 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="${rod}assets/avis.css">
+<script>try{var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;if(!sessionStorage.getItem("svKilde")&&(f||r&&r!==location.hostname))sessionStorage.setItem("svKilde",(f||r).slice(0,60))}catch(e){}</script>
 <link rel="alternate" type="application/rss+xml" title="Sagsvagt: København" href="${SITE_URL}feed/alle.xml">
 </head>
 <body>
@@ -171,7 +172,7 @@ ${LOGO_SYMBOL}
         <a href="${rod}partier.html">Sådan stemmer partierne</a>
         <a href="${rod}om.html">Om Sagsvagt</a>
       </div></details>
-      <a class="cta" href="${rod}vagt.html">Få dine sager på mail</a>
+      <a class="cta" href="${rod}vagt.html?fra=avis#tilmeld">Bliv tester</a>
     </nav>
   </div>
 </header>
@@ -230,11 +231,21 @@ const beslutningsboks = (s) => s.status === "besluttet"
   ? `<div class="decision"><b>Beslutning</b>${esc(s.udfald || saetninger(s.beslutning, 260))}${afstemning(s, true)}</div>`
   : s.status === "kommer" ? `<div class="decision kommer"><b>Til beslutning ${ugedag(s.dato)} ${datoTekst(s.dato)}</b>${esc(saetninger((s.afsnit.find((a) => /^Indstilling/.test(a.titel))?.tekst || "Sagen er på dagsordenen.").replace(/^[^\n]*indstiller[^\n]*\n*/i, ""), 220))}</div>` : "";
 
-const vagtBoks = (rod) => `<aside class="paa-mail">
+const vagtBoks = (rod, fra = "avis") => `<aside class="paa-mail">
   <h2 class="rubrik">Sagsvagt på mail</h2>
-  <p>Hver mandag de sager, der handler om dine emner, fra cykelstier til lokalplaner. Gratis, mens vi tester.</p>
-  <a href="${rod}vagt.html">Skriv dig op →</a>
+  <p>Hver mandag de sager, der handler om dine emner, fra cykelstier til lokalplaner. Vi søger de første testere i København. Det er gratis.</p>
+  <a href="${rod}vagt.html?fra=${fra}#tilmeld">Bliv tester →</a>
 </aside>`;
+// Under sagen: tilbyd at følge netop sagens emne eller bydel. Linket udfylder emnet i tilmeldingen.
+const testerBoks = (s) => {
+  const hvad = erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.emner.length ? EMNER[s.emner[0]].navn : "";
+  const om = erLokaludvalg(s.udvalg) ? `sager fra ${esc(hvad)}` : hvad ? `sager om ${esc(hvad.toLowerCase())}` : "sager som denne";
+  return `<aside class="paa-mail tester">
+  <h2 class="rubrik">Få ${om} hver mandag</h2>
+  <p>Sagsvagt læser alle dagsordener fra byråd, udvalg og lokaludvalg og sender dig de sager, der handler om det, du følger. Vi søger de første testere i København. Det er gratis.</p>
+  <a href="../vagt.html?fra=sag${hvad ? `&amp;emne=${encodeURIComponent(hvad)}` : ""}#tilmeld">Bliv tester →</a>
+</aside>`;
+};
 // Én linje pr. sag: hvor, overskrift og dato
 const notits = (s, rod = "", medDato = true) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg.replace(/udvalget$/, "udvalget"))}</span> <a href="${rod}${s.url}">${esc(s.titel)}</a>${medDato ? ` <span class="nh-dato">${kortDato(s.dato)}</span>` : ""}</li>`;
 
@@ -348,15 +359,16 @@ async function main() {
         ${forklar(krop.map((a) => `<h2>${esc(a.titel)}</h2>\n${afsnitTilHtml(a.tekst)}`).join("\n") + (s.status === "besluttet" ? `<h2>Beslutning</h2>\n${afsnitTilHtml(s.beslutning)}` : ""), esc)}
         ${s.bilag.length ? `<h2>Bilag</h2><ul class="files">${s.bilag.map((b) => `<li>${b.url ? `<a href="${esc(b.url)}" rel="nofollow">${esc(b.navn)}</a>` : esc(b.navn)}</li>`).join("")}</ul>` : ""}
         <p class="source">Kilde: ${esc(s.kommune)}s Kommune, ${esc(s.udvalg)}, ${s.type === "referat" ? "referat" : "dagsorden"} fra mødet ${ugedag(s.dato)} ${datoTekst(s.dato)}, punkt ${s.nr}. <a href="${esc(s.kilde)}" rel="nofollow">Læs den originale sag hos kommunen</a>.</p>
+      <!--tester-->
       </div>
     </article>`;
     // Samme artikel som fragment, så Min avis kan vise hele sagen (sag/ og min/ ligger begge ét niveau nede)
-    await writeFile(join(ROD, "assets", "sager", s.url.slice(4)), artikel);
+    await writeFile(join(ROD, "assets", "sager", s.url.slice(4)), artikel.replace("<!--tester-->", ""));
     const indhold = `<div class="wrap">
   <div class="article">
-    ${artikel}
+    ${artikel.replace("<!--tester-->", testerBoks(s))}
     <aside class="side">
-      ${vagtBoks("../")}
+      ${vagtBoks("../", "sag")}
       ${relateret.length ? `<h2 class="rubrik">Mere fra ${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</h2>${relateret.map((x) => `<article class="mini">${kicker(x, "../", false)}<h3 class="hl"><a href="../${x.url}">${esc(x.titel)}</a></h3></article>`).join("")}` : ""}
     </aside>
   </div>
