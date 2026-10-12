@@ -133,8 +133,10 @@ export function forklar(html, escAttr, max = 4) {
 const stort = (t) => t.replace(/^./, (c) => c.toUpperCase());
 // Indstillingens at-punkter: "• at godkende X" → "Godkende X"
 export function indstillingPunkter(tekst = "") {
-  return tekst.split("\n").map((l) => l.trim()).filter((l) => /^[•·\-–]\s*/.test(l))
-    .map((l) => stort(l.replace(/^[•·\-–]\s*/, "").replace(/^at\s+/i, "").replace(/[,;]\s*(og)?$/i, "").trim()))
+  // Punkter står med "•" eller nummereret ("1. at …")
+  const PKT = /^([•·\-–]|\d{1,2}\.(?=\s*at\s))\s*/i;
+  return tekst.split("\n").map((l) => l.trim()).filter((l) => PKT.test(l))
+    .map((l) => stort(l.replace(PKT, "").replace(/^at\s+/i, "").replace(/[,;]\s*(og)?$/i, "").trim()))
     .filter((l) => l.length > 8);
 }
 // Hvem sagen går videre til: "… indstiller, at udvalget over for Økonomiudvalget og Borgerrepræsentationen anbefaler, …"

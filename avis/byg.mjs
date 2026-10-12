@@ -64,7 +64,17 @@ const erLokaludvalg = (u) => /Lokaludvalg$/.test(u);
 const bydel = (u) => u.replace(/\s*Lokaludvalg$/, "").replace(/^Christianshavns$/, "Christianshavn");
 const VAEGT = { "Borgerrepræsentationen": 3, "Økonomiudvalget": 3, "Rådet for Visuel Kunst": 0 };
 
+// Kommunens sager slutter med underskrifter ("Mikkel Boje / Janus Rønholt Hansen"), som hænger fast i det sidste afsnit.
+// De fjernes, så de ikke ender i "Næste skridt" o.l. Et afsnit regnes for underskrift, hvis det kun er navne med stort.
+const NAVN = /^[\s/]*[A-ZÆØÅ][a-zæøåéü.-]*(?:[\s/]+[A-ZÆØÅ][a-zæøåéü.-]*){1,9}[\s/]*$/;
+function udenUnderskrift(t) {
+  const dele = t.split(/\n\s*\n/);
+  while (dele.length && NAVN.test(dele.at(-1).trim()) && dele.at(-1).length < 90) dele.pop();
+  return dele.join("\n\n").trim();
+}
+
 function berig(s) {
+  s.afsnit = s.afsnit.map((a) => (/beslutning/i.test(a.titel) ? a : { ...a, tekst: udenUnderskrift(a.tekst) }));
   const titel = renTitel(s.titel);
   const find = (re) => s.afsnit.find((a) => re.test(a.titel));
   const resume = find(/^Resumé$/) || find(/^Problemstilling/) || find(/^Indstilling/) || s.afsnit[0];
