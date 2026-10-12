@@ -28,7 +28,8 @@ concurrency:
 jobs:
   opdater:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    # Første upload er alle ~4.000 filer over FTPS og tager omkring en time. Derefter uploades kun ændrede filer.
+    timeout-minutes: 180
     env:
       FTP_SERVER: ${{ secrets.FTP_SERVER }}
     steps:
