@@ -3,7 +3,7 @@
 # når nogen pusher til main, og kan også startes manuelt under "Actions".
 #
 # Kræver tre hemmeligheder (Settings > Secrets and variables > Actions):
-#   FTP_SERVER    fx ftp.simply.com eller serveren fra Simplys kontrolpanel
+#   FTP_SERVER    ftp.simply.com (port 21, FTPS)
 #   FTP_USERNAME  FTP-brugernavnet fra Simply
 #   FTP_PASSWORD  FTP-adgangskoden fra Simply
 # Valgfri variabel FTP_SERVER_DIR (standard: public_html/).
@@ -15,12 +15,8 @@ on:
     - cron: "15 14 * * *"
   push:
     branches: [main]
+  # Ingen "ryd webhotellet"-mulighed: den ville også slette api/_konfig.php, som kun findes på serveren
   workflow_dispatch:
-    inputs:
-      ryd_foerst:
-        description: "Slet ALT på webhotellet før upload (kun første gang, for at fjerne gamle filer)"
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -91,7 +87,6 @@ jobs:
           port: 21
           local-dir: ./_deploy/
           server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}
-          dangerous-clean-slate: ${{ inputs.ryd_foerst == true }}
           timeout: 120000
 
       - name: Mangler FTP-oplysninger
