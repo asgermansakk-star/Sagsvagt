@@ -6,3 +6,19 @@ DirectoryIndex vagt.html index.html
 # Hver sag beder læseren om at blive tester. Min avis (min/) er stadig lukket bag login.
 # For at lukke avisen igen: fjern # foran linjen herunder.
 # RedirectMatch 302 ^/(index\.html|om\.html|soeg\.html|moeder\.html|partier\.html|hoeringer\.html|sag/.*|udvalg/.*|bydel/.*|emne/.*|kalender/.*|feed/.*)$ /
+
+# Sikkerhed i browseren. IfModule gør, at siden stadig virker, hvis serveren mangler mod_headers.
+<IfModule mod_headers.c>
+  # Brug altid https (et halvt år ad gangen)
+  Header always set Strict-Transport-Security "max-age=15552000"
+  # Afslør ikke hele adressen (fx login-links) til andre sider
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+  Header always set X-Content-Type-Options "nosniff"
+  # Andre sider må ikke vise Sagsvagt i en ramme (beskytter login og Min avis mod "clickjacking").
+  # Undtagelse: boksene (boks.html og boks/), som andre hjemmesider netop skal kunne indlejre.
+  <If "%{REQUEST_URI} !~ m#^/boks(\.html|/)#">
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Content-Security-Policy "frame-ancestors 'self'"
+  </If>
+</IfModule>

@@ -60,7 +60,7 @@ for (const m of moeder) {
   const titel = `Mødebriefing: ${hvor(m.u)}, ${datoTekst(m.dato)}`;
   const html = `<!doctype html>
 <html lang="da"><head><meta charset="utf-8"><title>${esc(titel)}</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="${pathToFileURL(join(ROD, "assets", "fonts", "montserrat.css")).href}">
 <style>${css}
 /* Briefing: A4, til print og PDF */
 @page { size: A4; margin: 16mm 16mm 18mm; }

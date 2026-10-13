@@ -106,17 +106,24 @@ function start_session(): void {
     ini_set('session.gc_maxlifetime', (string)(60 * 60 * 24 * 60));
     session_start();
 }
+// Et fingeraftryk af adgangskodens hash ligger i sessionen. Skifter man adgangskode (fx via "Glemt adgangskode"),
+// passer det ikke længere, så alle andre enheder, der var logget ind, bliver logget ud.
+function kode_aftryk(?string $hash): string { return substr(hash('sha256', (string)$hash), 0, 16); }
 function log_ind(int $id): void {
     start_session();
     session_regenerate_id(true);
+    $q = db()->prepare('SELECT adgangskode FROM abonnenter WHERE id = ?'); $q->execute([$id]);
     $_SESSION['id'] = $id;
+    $_SESSION['aftryk'] = kode_aftryk($q->fetchColumn() ?: null);
     db()->prepare('UPDATE abonnenter SET sidst_inde = ? WHERE id = ?')->execute([nu(), $id]);
 }
 function bruger(): ?array {
     start_session();
     if (empty($_SESSION['id'])) return null;
     $q = db()->prepare("SELECT * FROM abonnenter WHERE id = ? AND status = 'aktiv'"); $q->execute([$_SESSION['id']]);
-    return $q->fetch() ?: null;
+    $b = $q->fetch() ?: null;
+    if ($b && !hash_equals(kode_aftryk($b['adgangskode']), (string)($_SESSION['aftryk'] ?? ''))) { $_SESSION = []; return null; }
+    return $b;
 }
 function er_admin(?array $b): bool { global $K; return $b && in_array($b['email'], $K['admins'], true); }
 function kraev_admin(): array { $b = bruger(); if (!er_admin($b)) fejl(403, 'Kun for redaktionen'); return $b; }

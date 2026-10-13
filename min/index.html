@@ -9,16 +9,29 @@
 <link rel="icon" href="../favicon.ico" sizes="48x48">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/fonts/montserrat.css">
 <link rel="stylesheet" href="../assets/avis.css">
 <style>
   /* Min avis: brugerens egen udgave. Bygger på avis.css og tilføjer kun det, der er særligt for siden. */
   [hidden] { display: none !important; }
-  .mh-nav button { all: unset; cursor: pointer; opacity: .82; }
-  .mh-nav button:hover { opacity: 1; text-decoration: underline; text-underline-offset: 6px; }
-  .mh-nav .ud { margin-left: auto; }
+  /* Menuen: siderne på én linje, det personlige i "Konto" yderst til højre */
+  .mh-logo { gap: 10px; }
+  .mh-min { font-size: var(--fodnote); font-weight: 600; letter-spacing: .02em; padding: 3px 8px; border-radius: 6px; background: rgba(230,223,211,.14); color: var(--kalk); white-space: nowrap; }
+  .mh-nav a { white-space: nowrap; gap: 6px; }
+  .mh-nav .ni { display: none; }
+  .mh-nav .kun-lille { display: none !important; }
+  .nav-antal { font-size: .72rem; font-weight: 700; min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: var(--kalk); color: var(--nat); display: inline-grid; place-items: center; font-variant-numeric: tabular-nums; }
+  .mh-nav .konto { margin-left: auto; }
+  .mh-nav .konto summary { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px 0 6px; border-radius: 8px; opacity: .85; white-space: nowrap; }
+  .mh-nav .konto summary:hover, .mh-nav .konto[open] summary { opacity: 1; background: rgba(230,223,211,.08); }
+  .initial { width: 28px; height: 28px; border-radius: 50%; background: var(--kalk); color: var(--nat); display: inline-grid; place-items: center; font-weight: 700; font-size: .8125rem; }
+  .initial:empty { display: none; }
+  .mh-nav .konto > div { left: auto; right: 0; }
+  .mh-nav .konto > div a { color: var(--kalk); }
+  .mh-nav .konto button { all: unset; box-sizing: border-box; display: flex; width: 100%; min-height: 44px; align-items: center; padding: 0 12px; border-radius: 8px; cursor: pointer; opacity: .9; font-weight: 500; }
+  .mh-nav .konto button:hover, .mh-nav .konto button:focus-visible { opacity: 1; background: rgba(230,223,211,.1); }
+  .konto-mail { margin: 4px 12px 8px; padding-bottom: 10px; border-bottom: 1px solid rgba(230,223,211,.18); font-size: var(--fodnote); color: rgba(230,223,211,.7); }
+  .konto-mail:empty { display: none; }
 
   /* Lukket */
   .lukket { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 56px; align-items: center; padding: 72px 0 96px; }
@@ -194,7 +207,6 @@
   .velkommen .btn { font-size: .875rem; padding: 10px 18px; border: 0; cursor: pointer; }
 
   /* Feedback og slet konto */
-  .mh-nav .fb { font-weight: 700; }
   .dlg-form { padding: 22px 24px 24px; display: grid; gap: 14px; }
   .dlg-form textarea { min-height: 150px; font-family: var(--sans); font-size: .9688rem; }
   .indtryk { display: flex; flex-wrap: wrap; gap: 8px; border: 0; padding: 0; margin: 0; }
@@ -213,13 +225,45 @@
     .lukket { grid-template-columns: 1fr; gap: 36px; padding: 48px 0 64px; }
     .panel { grid-template-columns: 1fr; }
   }
+  /* Telefon: menuen bliver en fast tab-bjælke i bunden (som i en app), så den altid kan nås med tommelfingeren */
+  /* Tablet: der er ikke plads til hele menuen på én linje, så Mandagsmail flytter ind under Konto */
+  @media (max-width: 1000px) {
+    .mh-nav .kun-stor { display: none !important; }
+    .mh-nav .kun-lille { display: flex !important; }
+    .mh-nav .konto.aktiv summary { opacity: 1; background: rgba(230,223,211,.14); font-weight: 600; }
+  }
+  @media (min-width: 721px) and (max-width: 860px) {
+    .masthead .wrap { column-gap: 12px; }
+    .mh-logo svg { width: 140px; height: auto; }
+    .mh-nav { margin-left: 0; gap: 0; }
+    .mh-nav a { padding: 0 8px; }
+    .mh-nav .konto summary { padding-right: 8px; }
+    .mh-nav .konto summary::after { display: none; }
+  }
+  @media (max-width: 720px) {
+    body.har-nav { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+    .masthead .mh-nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; order: 0; flex-basis: auto; margin: 0; display: flex; justify-content: space-around; gap: 0;
+      padding: 6px 4px calc(6px + env(safe-area-inset-bottom)); overflow: visible; background: #0e0f14; border-top: 1px solid rgba(230,223,211,.14); }
+    .masthead .mh-nav > a, .masthead .mh-nav .konto summary { flex: 1 1 0; position: relative; flex-direction: column; justify-content: center; gap: 3px; min-height: 56px; padding: 4px 2px; font-size: .6875rem; font-weight: 600; border-radius: 10px; opacity: .72; }
+    .masthead .mh-nav > a[aria-current], .masthead .mh-nav .konto.aktiv summary { opacity: 1; background: rgba(230,223,211,.12); }
+    .mh-nav .ni { display: block; width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .mh-nav > a[aria-current] .ni { stroke-width: 2.2; }
+    .mh-nav .kun-stor { display: none !important; }
+    .mh-nav .kun-lille { display: flex !important; }
+    .nav-antal { position: absolute; top: 2px; left: calc(50% + 6px); min-width: 18px; height: 18px; font-size: .65rem; padding: 0 5px; }
+    .mh-nav .konto { margin: 0; flex: 1 1 0; display: flex; position: static; }
+    .mh-nav .konto summary::after { display: none; }
+    .initial { width: 22px; height: 22px; font-size: .72rem; }
+    .initial:empty { display: block; width: 22px; height: 22px; background: none; border: 1.8px solid currentColor; }
+    .mh-nav .konto > div { position: fixed; left: 12px; right: 12px; top: auto; bottom: calc(80px + env(safe-area-inset-bottom)); min-width: 0; }
+  }
   @media (max-width: 620px) {
     .tilpas { margin-left: 0; }
     /* På telefonen skal login-boksen kunne ses uden at scrolle */
     .lukket { padding-top: 28px; gap: 28px; }
     .lukket .login { order: -1; padding: 24px 22px 22px; }
     .soeg { margin-left: 0; width: 100%; } .soeg input { width: 100%; }
-    .mh-nav .ud { margin-left: 0; }
+    .mh-nav .konto { margin-left: 0; }
     .to { grid-template-columns: 1fr; }
     .velkommen { padding: 18px 18px 18px; margin-bottom: 22px; font-size: .9375rem; }
     .velkommen h2 { font-size: 1.3rem; }
@@ -232,17 +276,25 @@
 <header class="masthead">
   <div class="wrap">
     <div class="mh-row">
-      <a class="mh-logo" href="./" aria-label="Sagsvagt, til din forside"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
+      <a class="mh-logo" href="#forside" aria-label="Sagsvagt, Min avis: til din forside"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg><span class="mh-min">Min avis</span></a>
       <p class="mh-edition" id="udgave">Nyt fra byråd, udvalg og lokaludvalg</p>
     </div>
-    <nav class="mh-nav" aria-label="Hovedmenu">
-      <a href="#forside" data-side="forside" aria-current="page">Forside</a>
-      <a href="#sager" data-side="sager" data-aaben>Alle mine sager</a>
-      <a href="#debat" data-side="debat" data-aaben>Debat</a>
-      <a href="#gemte" data-side="gemte" data-aaben>Gemte</a>
-      <a href="#mandagsmail" data-side="mandagsmail" data-aaben>Mandagsmail</a>
-      <button type="button" class="ud fb" id="feedback-knap" data-aaben>Giv feedback</button>
-      <button type="button" id="logud" data-aaben title="Login kommer snart">Log ud</button>
+    <!-- Menuen: siderne på én linje og det personlige i "Konto". På telefonen bliver den en fast tab-bjælke i bunden
+         med ikoner, så den kan nås med tommelfingeren; Mandagsmail ligger så under Konto. -->
+    <nav class="mh-nav" id="min-nav" aria-label="Min avis" hidden>
+      <a href="#forside" data-side="forside" aria-current="page"><svg class="ni" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Forside</span></a>
+      <a href="#sager" data-side="sager"><svg class="ni" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg><span>Mine sager</span></a>
+      <a href="#debat" data-side="debat"><svg class="ni" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1h-8l-5 4v-4H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg><span>Debat</span></a>
+      <a href="#gemte" data-side="gemte"><svg class="ni" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z"/></svg><span>Gemte</span><b class="nav-antal" id="gemte-antal" hidden></b></a>
+      <a href="#mandagsmail" data-side="mandagsmail" class="kun-stor"><svg class="ni" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg><span>Mandagsmail</span></a>
+      <details class="mere konto"><summary><span class="initial" id="konto-initial" aria-hidden="true"></span><span>Konto</span></summary><div>
+        <p class="konto-mail" id="konto-mail"></p>
+        <a href="#mandagsmail" class="kun-lille">Din mandagsmail</a>
+        <a href="../index.html">Gå til avisen</a>
+        <a href="admin.html" id="admin-link" hidden>Tilmeldte</a>
+        <button type="button" id="feedback-knap">Giv feedback</button>
+        <button type="button" id="logud">Log ud</button>
+      </div></details>
     </nav>
   </div>
 </header>
@@ -361,7 +413,7 @@
       </section>
 
       <section class="alle" data-visning="sager" hidden aria-labelledby="h-alle">
-        <h1 id="h-alle" class="side-h">Alle mine sager</h1>
+        <h1 id="h-alle" class="side-h">Mine sager</h1>
         <p class="side-intro">Alle sager om dine emner og dine egne ord. Filtrér efter emne, eller søg i alle sager.</p>
         <div class="vaerktoej">
           <div class="faner" role="tablist" aria-label="Filtrér efter emne" id="faner"></div>
@@ -495,6 +547,8 @@
   const bruger = server ? { email: server.email } : server === false ? null : gemt("sv-bruger");
   const aaben = server !== null ? !!server : !!(bruger && bruger.email) || gemt("sv-adgang") === true || q.get("adgang") === "forpremiere";
   document.querySelectorAll("[data-aaben]").forEach((el) => (el.hidden = !aaben));
+  // Menuen vises først, når man er logget ind (før det er der kun forsiden med login)
+  $("#min-nav").hidden = !aaben; document.body.classList.toggle("har-nav", aaben);
   if (!aaben) { $("#lukket").hidden = false; if (server === false) rigtigLogin(); else if (LOKAL) testLogin(); return; }
   $("#logud").title = bruger?.email ? `Logget ind som ${bruger.email}` : "Luk Min avis igen";
   $("#logud").addEventListener("click", () => {
@@ -502,7 +556,7 @@
     gemt("sv-bruger", null); gemt("sv-adgang", false); location.href = location.pathname;
   });
   // Redaktionen får et link til oversigten over tilmeldte
-  if (server?.admin) $("#logud").insertAdjacentHTML("beforebegin", `<a href="admin.html">Tilmeldte</a>`);
+  $("#admin-link").hidden = !server?.admin;
 
   // Login med e-mail og adgangskode (adgangskoden oprettes via linket i invitationen)
   function rigtigLogin() {
@@ -609,10 +663,9 @@
   const beslutning = (s) => s.st === "besluttet" && s.ud
     ? `<div class="decision"><b>Beslutning</b>${esc(s.ud)}${s.sm ? `<span class="votes"><span>For: ${esc(s.sm.for)}</span><span>Imod: ${esc(s.sm.imod)}</span></span>` : ""}</div>` : "";
   // Mens avisen er lukket (se .htaccess), linker sagerne til kommunens egen side. Sæt AVIS_AABEN = true, når avisen åbner igen.
-  const AVIS_AABEN = false;
+  const AVIS_AABEN = true;
   const link = (s) => (AVIS_AABEN ? `../${s.url}` : s.k);
   // Når avisen er åben, får menuen et link til den. Mens den er lukket, ville linket sende folk til tilmeldingssiden.
-  if (AVIS_AABEN) $(".mh-nav a").insertAdjacentHTML("afterend", `<a href="../index.html">Avisen</a>`);
   const kortet = (s, slags) => {
     if (slags === "lead") return `<article class="lead kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d)}</p>` : ""}${beslutning(s)}${tags(s)}</article>`;
     if (slags === "mini") return `<article class="mini kort">${handl(s)}${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3></article>`;
@@ -649,7 +702,9 @@
     $("#ed-sum").innerHTML = profil.emner.length || profil.ord.length
       ? `De seneste 14 dage er der truffet <b>${tal(nBesl, "beslutning", "beslutninger")}</b> om det, du følger. De næste 14 dage er <b>${tal(nKom, "sag", "sager")}</b> på dagsordenen.`
       : "Vælg de emner, du vil følge, så samler vi sagerne her.";
-    $("#udgave").innerHTML = `<b>${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long", year: "numeric" })))}</b><br>${bruger?.email ? `Logget ind som ${esc(bruger.email)}` : `Din udgave · uge ${ugenr(IDAG)}`}`;
+    $("#udgave").innerHTML = `<b>${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long", year: "numeric" })))}</b><br>Din udgave · uge ${ugenr(IDAG)}`;
+    $("#konto-mail").textContent = bruger?.email ? `Logget ind som ${bruger.email}` : "";
+    $("#konto-initial").textContent = (profil.navn.trim() || bruger?.email || "").charAt(0).toUpperCase();
     tegnMine();
 
     // Besluttet: én stor historie og et gitter
@@ -680,6 +735,7 @@
 
     // Gemte
     const g = profil.gemte.map((id) => SAGER.find((s) => s.id === id)).filter(Boolean).map(vurder);
+    $("#gemte-antal").textContent = g.length; $("#gemte-antal").hidden = !g.length;
     $("#gemte-liste").innerHTML = g.length ? g.slice(0, 5).map((s) => kortet(s, "mini")).join("") : tom("Tryk på stjernen ved en sag for at gemme den her.");
     tegnGemte();
 
@@ -824,12 +880,14 @@
   /* ---------- Sider ----------
      Forside, Alle mine sager, Debat, Gemte og Mandagsmail er hver sin side med sin egen adresse (min/#debat osv.),
      så de kan deles, bogmærkes, og tilbage-knappen virker. */
-  const SIDER = { forside: "Min avis", sager: "Alle mine sager", debat: "Debat", gemte: "Gemte sager", mandagsmail: "Din mandagsmail" };
+  const SIDER = { forside: "Min avis", sager: "Mine sager", debat: "Debat", gemte: "Gemte sager", mandagsmail: "Din mandagsmail" };
   function visSide() {
     const navn = location.hash.slice(1);
     const side = SIDER[navn] ? navn : "forside";
     document.querySelectorAll("[data-visning]").forEach((el) => (el.hidden = el.dataset.visning !== side));
     document.querySelectorAll("[data-side]").forEach((a) => (a.dataset.side === side ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")));
+    // På telefonen ligger Mandagsmail under Konto, så Konto-fanen lyser, når man står der
+    document.querySelector(".konto").classList.toggle("aktiv", side === "mandagsmail");
     document.title = `${SIDER[side]} – Sagsvagt`;
     if (side === "mandagsmail") visMail();
     if (side === "gemte") tegnGemte();
@@ -910,6 +968,11 @@
     fbDlg.showModal(); $("#fb-tekst").focus();
   }
   $("#feedback-knap").addEventListener("click", aabnFeedback);
+  // Konto-menuen lukker, når man vælger noget i den eller klikker et andet sted
+  document.addEventListener("click", (e) => { const k = $(".konto"); if (k?.open && (!k.contains(e.target) || e.target.closest(".konto > div button, .konto > div a"))) k.open = false; });
+  // Escape lukker menuen og sætter fokus tilbage på knappen; skift af side lukker den også
+  document.addEventListener("keydown", (e) => { const k = $(".konto"); if (e.key === "Escape" && k?.open) { k.open = false; k.querySelector("summary").focus(); } });
+  addEventListener("hashchange", () => { const k = $(".konto"); if (k) k.open = false; });
   fbDlg.addEventListener("click", (e) => { if (e.target === fbDlg) fbDlg.close(); });
   fbForm.addEventListener("submit", (e) => {
     e.preventDefault();

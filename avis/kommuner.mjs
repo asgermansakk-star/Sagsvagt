@@ -4,12 +4,13 @@
 // avis/kommuner.json og er hentet fra Wikidata. byg.mjs kalder bygKommuner().
 import { writeFile, mkdir, rm, readFile } from "node:fs/promises";
 import { join } from "node:path";
+import { bygUdgave } from "./udgave.mjs";
 
 const REGIONER = ["Hovedstaden", "Sjælland", "Syddanmark", "Midtjylland", "Nordjylland"];
 
 // sager: Københavns sager. andre: sager fra de andre kommuner, vi henter (data/<kommune>.json). En kommune er
 // "åben", når vi har sager fra den; så viser dens side sagerne i stedet for en tilmelding til ventelisten.
-export async function bygKommuner({ sager, andre = [] }, h) {
+export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [], KSTED = new Map(), TOPRAAD = new Map() }, h) {
   const { ROD, esc, side, kortDato, erLokaludvalg, bydel } = h;
   const kommuner = JSON.parse(await readFile(join(import.meta.dirname, "kommuner.json"), "utf8"));
   const prKommune = {}; for (const s of andre) (prKommune[s.kommune] ||= []).push(s);
@@ -19,7 +20,9 @@ export async function bygKommuner({ sager, andre = [] }, h) {
 
   const domaene = (web) => web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
   const tilmeld = (k) => `../vagt.html?kommune=${encodeURIComponent(k.navn)}&amp;fra=kommune-${k.slug}#tilmeld`;
-  const chips = (liste, aktiv) => `<ul class="chips">${liste.map((k) => `<li><a href="${k.slug}.html"${k.slug === aktiv ? ' aria-current="page"' : ""}>${esc(k.navn)}${AABNE.has(k.slug) ? ' <span class="aaben">åben</span>' : ""}</a></li>`).join("")}</ul>`;
+  // København går direkte til avisens forside, ligesom de andre åbne kommuner går direkte til deres egen avis
+  const kHref = (k) => (k.slug === "koebenhavn" ? "../index.html" : `${k.slug}.html`);
+  const chips = (liste, aktiv) => `<ul class="chips">${liste.map((k) => `<li><a href="${kHref(k)}"${k.slug === aktiv ? ' aria-current="page"' : ""}>${esc(k.navn)}${AABNE.has(k.slug) ? ' <span class="aaben">åben</span>' : ""}</a></li>`).join("")}</ul>`;
   // De nyeste vigtige sager fra København som eksempel på, hvad man får
   const eksempler = sager.filter((s) => s.status !== "kommer" && s.vaegt >= 2 && !s.rutine).slice(0, 4);
   const eksempel = `<ul class="notitser">${eksempler.map((s) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</span> <a href="../${s.url}">${esc(s.titel)}</a> <span class="nh-dato">${kortDato(s.dato)}</span></li>`).join("")}</ul>`;
@@ -63,7 +66,7 @@ export async function bygKommuner({ sager, andre = [] }, h) {
       kommuneSider.push(sti);
       await writeFile(join(ROD, sti), side({
         titel: `${u}, ${k.kommune} – Sagsvagt`, beskrivelse: `Sager og beslutninger fra ${u} i ${k.kommune}, hentet fra kommunens dagsordener og referater.`,
-        sti, rod: "../../", aktiv: "kommune", udgave: k.navn,
+        sti, rod: "../../", aktiv: "k-udvalg", kommune: k,
         indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="../${k.slug}.html">${esc(k.navn)}</a></p><h1>${esc(u)}</h1><p class="intro">Sager fra ${esc(u)} i ${esc(k.kommune)}, nyeste først.</p>${prUdvalg[u].sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr).map((s) => `<article>${kicker(s, "../../", false)}<h2 class="hl"><a href="../../${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 200))}</p>` : ""}</article>`).join("\n")}</div></div>`,
       }));
     }
@@ -88,11 +91,11 @@ export async function bygKommuner({ sager, andre = [] }, h) {
     <div class="rail">
       ${vagtBoks(R, `kommune-${k.slug}`, k.navn)}
       <section aria-labelledby="h-udvalg">
-        <h2 id="h-udvalg" class="rubrik">Udvalg</h2>
+        <h2 id="h-udvalg" class="rubrik">Udvalg <a href="${k.slug}/udvalg.html">Alle udvalg</a></h2>
         <ul class="notitser">${udvalg.map((u) => `<li><a href="${k.slug}/${slug(u)}.html">${esc(u)}</a> <span class="nh-dato">${prUdvalg[u].length} sager</span></li>`).join("")}</ul>
       </section>
       ${kommende.length ? `<section aria-labelledby="h-kommer">
-        <h2 id="h-kommer" class="rubrik">Kalender</h2>
+        <h2 id="h-kommer" class="rubrik">Kalender <a href="${k.slug}/moeder.html">Alle møder</a></h2>
         ${Object.entries(kalender).map(([dag, l]) => {
           const pr = {}; for (const s of l) (pr[s.udvalg] ||= []).push(s);
           return `<p class="kal-dag">${esc(stor(ugedag(dag)))} ${kortDato(dag)}</p>${Object.entries(pr).map(([u, ps]) => `<p class="kal-moede">${esc(u)}</p><ul class="notitser kal">${ps.map((s) => `<li><a href="${R}${s.url}">${esc(s.titel)}</a></li>`).join("")}</ul>`).join("")}`;
@@ -108,18 +111,14 @@ export async function bygKommuner({ sager, andre = [] }, h) {
   for (const k of kommuner) {
     const aaben = AABNE.has(k.slug), egne = prKommune[k.navn] || [];
     const naboer = kommuner.filter((x) => x.region === k.region && x !== k).sort((a, b) => a.navn.localeCompare(b.navn, "da"));
-    const indhold = egne.length ? await egenSide(k, egne, naboer) : aaben
-      ? `<div class="wrap"><div class="listing kommune-side">
-  <p class="kicker"><a href="./">Alle kommuner</a> · Region ${esc(k.region)}</p>
-  <h1>Sagsvagt i ${esc(k.navn)}</h1>
-  <p class="intro">Sagsvagt er åben i ${esc(k.navn)}. Vi læser alle dagsordener og referater fra Borgerrepræsentationen, udvalgene og de 12 lokaludvalg og skriver kort, hvad sagerne handler om, og hvad politikerne har besluttet.</p>
-  <div class="kommune-tilmeld"><p><b>Få sagerne om dine emner hver mandag</b>Vi søger de første testere i ${esc(k.navn)}. Det er gratis.</p><a class="btn" href="${tilmeld(k)}">Bliv tester</a></div>
-  <h2>Seneste beslutninger</h2>
-  ${eksempel}
-  <p><a href="../index.html">Læs hele avisen for ${esc(k.navn)} →</a></p>
-  <h2>Andre kommuner i Region ${esc(k.region)}</h2>
-  ${chips(naboer)}
-</div></div>${stil}`
+    // Emner, Udvalg, Møder og Søg som i København (avis/udgave.mjs)
+    if (egne.length) kommuneSider.push(...await bygUdgave(k, egne, alle.filter((s) => s.kommune === k.navn), soegValg, h, KSTED.get(k.navn) || { prSted: new Map(), prBy: new Map() }, TOPRAAD.get(k.navn)));
+    // kommune/koebenhavn.html er kun en henvisning til avisens forside (for gamle links)
+    if (k.slug === "koebenhavn") {
+      await writeFile(join(ROD, "kommune", "koebenhavn.html"), `<!doctype html><html lang="da"><head><meta charset="utf-8"><title>Sagsvagt i København</title><link rel="canonical" href="${h.SITE_URL}index.html"><meta http-equiv="refresh" content="0; url=../index.html"><meta name="robots" content="noindex"></head><body><p><a href="../index.html">Gå til Sagsvagt i København</a></p></body></html>`);
+      continue;
+    }
+    const indhold = egne.length ? await egenSide(k, egne, naboer)
       : `<div class="wrap"><div class="listing kommune-side">
   <p class="kicker"><a href="./">Alle kommuner</a> · Region ${esc(k.region)}</p>
   <h1>Sagsvagt i ${esc(k.navn)}</h1>
@@ -134,7 +133,7 @@ export async function bygKommuner({ sager, andre = [] }, h) {
   <h2>Se, hvordan det ser ud i København</h2>
   <p>Sagsvagt kører allerede i København. Her er nogle af de seneste beslutninger:</p>
   ${eksempel}
-  <p><a href="koebenhavn.html">Se Sagsvagt i København →</a></p>
+  <p><a href="../index.html">Se Sagsvagt i København →</a></p>
   <h2>Indtil da</h2>
   <p>${esc(k.kommune)} lægger selv dagsordener og referater ud på <a href="${esc(k.web)}" rel="nofollow">${esc(domaene(k.web))}</a>.</p>
   <h2>Andre kommuner i Region ${esc(k.region)}</h2>
@@ -145,17 +144,20 @@ export async function bygKommuner({ sager, andre = [] }, h) {
       beskrivelse: aaben
         ? `Det, politikerne i ${k.kommune} har besluttet og skal tage stilling til, fra byråd, udvalg og lokaludvalg.`
         : `Få besked, når byrådet og udvalgene i ${k.kommune} tager dit emne op. Skriv dig op, så åbner Sagsvagt i ${k.navn}.`,
-      sti: `kommune/${k.slug}.html`, rod: "../", aktiv: "kommune", indhold, udgave: egne.length ? k.navn : "",
+      sti: `kommune/${k.slug}.html`, rod: "../", aktiv: egne.length ? "k-forside" : "kommune", indhold, kommune: egne.length ? k : null,
     }));
   }
 
+  // "København, Albertslund, … og Viborg": København først, så de andre åbne kommuner alfabetisk
+  const aabneNavne = ["København", ...kommuner.filter((k) => AABNE.has(k.slug) && k.slug !== "koebenhavn").map((k) => k.navn).sort((a, b) => a.localeCompare(b, "da"))];
+  const aabneTekst = aabneNavne.length > 1 ? `${aabneNavne.slice(0, -1).join(", ")} og ${aabneNavne.at(-1)}` : aabneNavne[0];
   await writeFile(join(ROD, "kommune", "index.html"), side({
     titel: "Sagsvagt i alle kommuner – Sagsvagt",
-    beskrivelse: "Følg byrådet i din kommune. Sagsvagt er åben i København og åbner kommune for kommune, der hvor flest skriver sig op.",
+    beskrivelse: `Følg byrådet i din kommune. Sagsvagt er åben i ${aabneTekst} og åbner kommune for kommune, der hvor flest skriver sig op.`,
     sti: "kommune/", rod: "../", aktiv: "kommune",
     indhold: `<div class="wrap"><div class="listing kommune-side">
   <h1>Sagsvagt i din kommune</h1>
-  <p class="intro">Sagsvagt er åben i København. Vi åbner kommune for kommune, der hvor flest skriver sig op. Find din kommune, og skriv dig op, så får du besked, når den er klar.</p>
+  <p class="intro">Sagsvagt er åben i ${esc(aabneTekst)}. Vi åbner kommune for kommune, der hvor flest skriver sig op. Find din kommune, og skriv dig op, så får du besked, når den er klar.</p>
   <label class="k-soeg"><span>Find din kommune</span><input type="search" id="k-soeg" placeholder="Skriv fx Aarhus eller Køge" autocomplete="off"></label>
   <p class="k-ingen" id="k-ingen" hidden>Ingen kommuner passer. Tjek stavemåden.</p>
   ${REGIONER.map((r) => `<section class="region"><h2 class="region-h">Region ${r}</h2>${chips(kommuner.filter((k) => k.region === r).sort((a, b) => a.navn.localeCompare(b.navn, "da")))}</section>`).join("\n  ")}

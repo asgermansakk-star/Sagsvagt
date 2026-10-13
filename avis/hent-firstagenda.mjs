@@ -53,7 +53,8 @@ export async function pdfTilTekst(buf) {
 }
 
 const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const udenPeriode = (u) => u.replace(/\s*\(\d{4}\s*-\s*\d{4}\)\s*$/, "").trim();
+// Valgperioden står forskelligt: "(2026-2029)", "2026-2029", "2026 - 2029" eller "2026 2029"
+const udenPeriode = (u) => u.replace(/\s*\(?\d{4}\s*[-–]?\s*\d{4}\)?\s*$/, "").trim();
 const norm = (u) => udenPeriode(u).toUpperCase().replace(/\s+/g, " ");
 const dato = (d, m, y) => `${y}-${m}-${d}`;
 const MDR = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
@@ -74,19 +75,21 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   kendteUdvalg.set(norm(udvalg), udvalg);
 
   // Indholdsfortegnelsen: "Titel.......... 3 Titel........ 9" (kan stå på én eller flere linjer)
-  const iIndhold = t.indexOf("Indholdsfortegnelse");
-  if (iIndhold < 0) throw new Error("Ingen indholdsfortegnelse");
+  // (Guldborgsund staver den "Innholdsfortegnelse")
+  const mIndhold = t.match(/In[dn]holdsfortegnelse/);
+  if (!mIndhold) throw new Error("Ingen indholdsfortegnelse");
   const reIndhold = /(\S[^\n]*?)\s*\.{4,}\s*(\d+)\s*/gy;
-  reIndhold.lastIndex = iIndhold + "Indholdsfortegnelse".length;
+  reIndhold.lastIndex = mIndhold.index + mIndhold[0].length;
   while (/\s/.test(t[reIndhold.lastIndex])) reIndhold.lastIndex++;
   const titler = []; let m;
   while ((m = reIndhold.exec(t))) titler.push(m[1].trim());
   let markoer = reIndhold.lastIndex;
 
-  // Find hvert punkt i rækkefølge; lange titler kan være brudt over flere linjer i selve teksten
+  // Find hvert punkt i rækkefølge; lange titler kan være brudt over flere linjer i selve teksten.
+  // Nogle kommuner skriver titlen med versaler og løbenummer foran ("188.ORIENTERINGSSAG: …")
   const fund = [];
   for (const titel of titler) {
-    const re = new RegExp(`(^|\\n)${titel.split(/\s+/).map(reEsc).join("\\s+")}\\s*\\n`, "g");
+    const re = new RegExp(`(^|\\n)(?:\\d+\\.[ \\t]*)?${titel.split(/\s+/).map(reEsc).join("\\s+")}\\s*\\n`, "gi");
     re.lastIndex = markoer;
     const f = re.exec(t);
     if (!f) continue;
@@ -94,7 +97,17 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
     markoer = f.index + f[0].length;
   }
 
-  const MARK = /(RESUME|INDSTILLING|SAGSFREMSTILLING|BESLUTNING I (.+?) DEN (\d{2})-(\d{2})-(\d{4})|(?<=^|\n)Sagsfremstilling(?=\s)|(?<=\n)Bilag(?=\n))/g;
+  // Afsnitsoverskrifter: kommunerne bruger forskellige navne, med versaler midt i teksten ("RESUME Økonomi- og …")
+  // eller som en linje for sig ("Sagsfremstilling"). Beslutninger: "BESLUTNING I <UDVALG> DEN|den dd-mm-åååå".
+  const OVERSKRIFTER = ["SAMMENHÆNG TIL POLITISKE STRATEGIER", "PERSONALEMÆSSIGE KONSEKVENSER", "ØKONOMISKE KONSEKVENSER", "BESKRIVELSE AF SAGEN",
+    "BESLUTNINGSKOMPETENCE", "TIDLIGERE BESLUTNING", "SAGSFREMSTILLING", "STRATEGISK RAMME", "SAGSBESKRIVELSE", "PROBLEMSTILLING", "BORGERPERSPEKTIV",
+    "SAGENS FORLØB", "KOMMUNIKATION", "VIDERE PROCES", "SAGSRESUMÉ", "SAGSRESUME", "INDSTILLING", "LOVGRUNDLAG", "LØSNINGER", "BESLUTNING", "VURDERING",
+    "HISTORIK", "SAGSGANG", "LØSNING", "ØKONOMI", "RESUMÉ", "RESUME", "BILAG"];
+  const LINJE = ["Sagsfremstilling", "Sagsbeskrivelse", "Sagsresumé", "Problemstilling", "Videre proces", "Indstilling", "Beslutning", "Vurdering", "Økonomi", "Resumé", "Resume", "Bilag"];
+  const MARK = new RegExp(`(BESLUTNING I (.+?) (?:DEN|den) (\\d{2})-?(\\d{2})-?(\\d{4})|(?<![A-ZÆØÅa-zæøå])(${OVERSKRIFTER.join("|")})(?![A-ZÆØÅa-zæøå])|(?<=^|\\n)(${LINJE.join("|")})(?=[ \\t]*\\n|\\s+[A-ZÆØÅ][a-zæøå]))`, "g");
+  const NAVN = { RESUME: "Resumé", "RESUMÉ": "Resumé", SAGSRESUME: "Resumé", "SAGSRESUMÉ": "Resumé", Resume: "Resumé", "Sagsresumé": "Resumé",
+    SAGSFREMSTILLING: "Sagsfremstilling", SAGSBESKRIVELSE: "Sagsfremstilling", "BESKRIVELSE AF SAGEN": "Sagsfremstilling", Sagsbeskrivelse: "Sagsfremstilling" };
+  const afsnitNavn = (h) => NAVN[h] || h.charAt(0).toUpperCase() + h.slice(1).toLowerCase();
   const punkter = [];
   fund.forEach((p, i) => {
     if (/^(Lukket\b|Underskriftsark)/i.test(p.titel)) return;
@@ -112,8 +125,10 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
         if (norm(d[2]) === norm(udvalg)) afsnit.push({ titel: "Beslutning", tekst });
         else afsnit.push({ titel: `Behandling i ${navn} ${datoTekst(dd)}`, tekst });
       } else {
-        const navn = { RESUME: "Resumé", INDSTILLING: "Indstilling", SAGSFREMSTILLING: "Sagsfremstilling", Sagsfremstilling: "Sagsfremstilling", Bilag: "Bilag" }[d[1]];
-        afsnit.push({ titel: navn, tekst });
+        // En overskrift, der står flere gange i samme punkt, lægges sammen
+        const navn = afsnitNavn(d[6] || d[7]);
+        const forrige = afsnit.find((a) => a.titel === navn);
+        if (forrige) forrige.tekst += `\n\n${tekst}`; else afsnit.push({ titel: navn, tekst });
       }
     });
     if (!dele.length && renTekst(krop)) afsnit.push({ titel: "Sagsfremstilling", tekst: renTekst(krop) });
@@ -145,7 +160,9 @@ async function hentKommune(k) {
   for (const u of udvalgSitemaps) {
     const sm = gemt.sitemaps[u];
     if (sm && sm.senest < etAar && sm.tjekket > enMaaned) continue;
-    const xml = await hent(u);
+    // Et enkelt udvalgs sitemap kan give serverfejl; så springer vi det over og tager resten
+    let xml;
+    try { xml = await hent(u); } catch (e) { console.warn(`  Sitemap sprunget over (${e.message.slice(0, 60)})`); continue; }
     let senest = "";
     for (const x of xml.matchAll(/<url>\s*<loc>[^<]*\/vis\?id=([0-9a-f-]{36})<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/gi)) {
       const lm = x[2].slice(0, 10);

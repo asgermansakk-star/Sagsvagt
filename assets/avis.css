@@ -59,7 +59,7 @@ p { margin: 0; }
 .mh-row { display: contents; }
 .mh-logo { display: flex; align-items: center; min-height: 44px; order: 0; border-radius: 6px; }
 .mh-logo img, .mh-logo svg { height: 40px; width: auto; display: block; margin-left: -8px; }
-.mh-edition { order: 2; flex: 0 1 auto; font-size: var(--fodnote); color: rgba(230,223,211,.78); text-align: right; line-height: 1.4; }
+.mh-edition { order: 2; flex: none; font-size: var(--fodnote); color: rgba(230,223,211,.78); text-align: right; line-height: 1.4; white-space: nowrap; } /* altid to korte linjer */
 .mh-edition b { color: var(--kalk); font-weight: 600; }
 .mh-nav { order: 1; flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 2px; font-size: var(--sekundaer); font-weight: 500; margin-left: 8px; }
 .mh-nav a, .mh-nav summary { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: 8px; opacity: .85; }
@@ -378,3 +378,38 @@ footer.foot a:hover { text-decoration: underline; }
 .del-knap[hidden] { display: none; }
 .del-svar { font-size: var(--fodnote); color: var(--muted); }
 .chips a span { margin-left: 4px; }
+
+/* ---------- Avishovedet i to etager (.masthead.to): som en trykt avis ----------
+   Øverst logo og udgave (bag en tynd streg) til venstre, knap og login til højre.
+   Nedenunder sektionerne centreret på deres egen række med god luft. Min avis har sit eget hoved. */
+.masthead.to .mh-top { display: flex; align-items: center; gap: 0 18px; min-height: 84px; }
+.masthead.to .mh-logo svg { height: 50px; }
+.masthead.to .mh-edition { display: block; order: 0; text-align: left; padding-left: 18px; border-left: 1px solid rgba(230,223,211,.3); line-height: 1.45; }
+.masthead.to .mh-handling { margin-left: auto; display: flex; align-items: center; gap: 22px; }
+.masthead.to .mh-cta { order: 0; }
+.mh-ikon { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 44px; min-width: 44px; font-size: .75rem; font-weight: 500; opacity: .88; }
+.mh-ikon:hover { opacity: 1; }
+.mh-ikon svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; }
+.masthead.to .mh-nav { display: block; margin: 0; padding: 0; border-top: 1px solid rgba(230,223,211,.14); font-size: 1rem; }
+.masthead.to .mh-nav .wrap { display: flex; justify-content: center; align-items: stretch; gap: 0 36px; min-height: 52px; }
+.masthead.to .mh-nav a, .masthead.to .mh-nav summary { min-height: 52px; padding: 0 2px; border-radius: 0; font-weight: 600; letter-spacing: .01em; opacity: .8; background: none; }
+.masthead.to .mh-nav a:hover, .masthead.to .mh-nav summary:hover { opacity: 1; background: none; }
+/* Den aktive sektion: en streg under, i stedet for en kasse */
+.masthead.to .mh-nav > .wrap > a[aria-current], .masthead.to .mh-nav summary[aria-current] { opacity: 1; background: none; box-shadow: inset 0 -3px 0 var(--kalk); }
+.masthead.to .mere > div { top: 100%; }
+@media (max-width: 900px) {
+  .masthead.to .mh-nav .wrap { gap: 0 24px; }
+}
+@media (max-width: 720px) {
+  .masthead.to .wrap.mh-top { min-height: 60px; gap: 0 12px; padding-top: 0; padding-bottom: 0; flex-wrap: nowrap; }
+  .masthead.to .mh-logo svg { height: 36px; }
+  .masthead.to .mh-edition { display: none; }
+  .masthead.to .mh-handling { gap: 10px; }
+  .masthead.to .mh-cta { min-height: 38px; padding: 0 14px; }
+  .mh-ikon span { display: none; }
+  /* Sektionerne kan skubbes til siden med fingeren */
+  .masthead.to .mh-nav { flex-basis: auto; margin: 0; padding: 0; overflow: visible; }
+  .masthead.to .mh-nav .wrap { justify-content: flex-start; flex-wrap: nowrap; gap: 0 22px; min-height: 46px; padding-top: 0; padding-bottom: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .masthead.to .mh-nav .wrap::-webkit-scrollbar { display: none; }
+  .masthead.to .mh-nav a, .masthead.to .mh-nav summary { flex: none; min-height: 46px; font-size: var(--sekundaer); }
+}

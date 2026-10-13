@@ -59,14 +59,16 @@ function opgoer(afst) {
   }
   return { partier, par };
 }
-export async function bygPartier(sager, h) {
+// o: til en anden kommune (fx { sti: "kommune/viborg/partier.html", rod: "../../", kommune, hvor: "Viborg Kommune", top: "Byrådet" })
+export async function bygPartier(sager, h, o = {}) {
+  const { sti = "partier.html", rod = "", kommune = null, hvor = "Københavns", top = "Borgerrepræsentationen", aktiv = "partier" } = o;
   const alle = sager.filter((s) => !h.erLokaludvalg(s.udvalg)).flatMap((s) => s.afstemninger.map((a) => ({ ...a, sag: s })))
     .filter((a) => [...a.for, ...a.imod, ...a.undlod].some((d) => d.b));
-  if (!alle.length) return;
+  if (!alle.length) return false;
   const omfang = [
     ["alle", "Alle", alle],
-    ["br", "Borgerrepræsentationen", alle.filter((a) => a.sag.udvalg === "Borgerrepræsentationen")],
-    ["udvalg", "Udvalgene", alle.filter((a) => a.sag.udvalg !== "Borgerrepræsentationen")],
+    ["br", top, alle.filter((a) => a.sag.udvalg === top)],
+    ["udvalg", "Udvalgene", alle.filter((a) => a.sag.udvalg !== top)],
   ];
   const fra = alle.map((a) => a.sag.dato).sort()[0];
   const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
@@ -84,7 +86,7 @@ export async function bygPartier(sager, h) {
         return `<td style="--v:${v / 100}" title="${h.esc(PARTIER[x] || x)} og ${h.esc(PARTIER[y] || y)}: enige i ${q.enige} af ${q.n}">${v}</td>`;
       }).join("")}</tr>`).join("") + `</tbody></table></div>`;
     return `<section class="omfang" id="omfang-${id}"${i ? " hidden" : ""} aria-label="${h.esc(navn)}">
-  <p class="intro">${afst.length} afstemninger med partiernes stemmer.</p>
+  <p class="intro">${afst.length} ${afst.length === 1 ? "afstemning" : "afstemninger"} med partiernes stemmer.</p>
   ${tabel}
   <h2 class="sec-h" style="margin-top:36px">Hvem stemmer ens?</h2>
   ${matrix}
@@ -95,18 +97,18 @@ export async function bygPartier(sager, h) {
   const liste = (l) => l.map((d) => (d.b ? `<abbr title="${h.esc(d.navn)}">${d.b}</abbr>` : h.esc(d.navn))).join(", ");
   const delteHtml = delte.map((a) => {
     const t = stemmetal(a.om);
-    return `<article class="delt">${h.kicker(a.sag, "")}<h3 class="hl"><a href="${a.sag.url}">${h.esc(a.sag.titel)}</a></h3>
+    return `<article class="delt">${h.kicker(a.sag, rod)}<h3 class="hl"><a href="${rod}${a.sag.url}">${h.esc(a.sag.titel)}</a></h3>
   <p class="delt-om">${h.esc(a.om || "Afstemning")}</p>
   <p class="afst-bogst">For: ${liste(a.for)}<br>Imod: ${liste(a.imod)}${a.undlod.length ? `<br>Undlod: ${liste(a.undlod)}` : ""}${t ? ` <span class="delt-tal">(${t.for} mod ${t.imod})</span>` : ""}</p></article>`;
   }).join("");
 
-  await writeFile(join(h.ROD, "partier.html"), h.side({
-    titel: "Sådan stemmer partierne – Sagsvagt",
-    beskrivelse: "Hvor ofte partierne i Københavns Borgerrepræsentation og udvalg stemmer for og imod, og hvilke partier der oftest stemmer ens. Opgjort ud fra kommunens egne referater.",
-    sti: "partier.html", rod: "", aktiv: "partier",
+  await writeFile(join(h.ROD, sti), h.side({
+    titel: kommune ? `Sådan stemmer partierne, ${kommune.navn} – Sagsvagt` : "Sådan stemmer partierne – Sagsvagt",
+    beskrivelse: `Hvor ofte partierne i ${kommune ? `${top} og udvalgene i ${hvor}` : "Københavns Borgerrepræsentation og udvalg"} stemmer for og imod, og hvilke partier der oftest stemmer ens. Opgjort ud fra kommunens egne referater.`,
+    sti, rod, aktiv, kommune,
     indhold: `<div class="wrap"><div class="listing partier-side">
   <h1>Sådan stemmer partierne</h1>
-  <p class="intro">Opgjort ud fra alle afstemninger i referaterne fra Borgerrepræsentationen og udvalgene siden ${h.datoTekst(fra)}, også afstemninger om ændringsforslag. Et parti tæller med, når det står på listen over for, imod eller undlod. "Med flertallet" er, hvor ofte partiet stemte som det, der blev vedtaget. I udvalgene stemmer partiets medlemmer af udvalget.</p>
+  <p class="intro">Opgjort ud fra alle afstemninger i referaterne fra ${h.esc(top)} og udvalgene${kommune ? ` i ${h.esc(hvor)}` : ""} siden ${h.datoTekst(fra)}, også afstemninger om ændringsforslag. Et parti tæller med, når det står på listen over for, imod eller undlod. "Med flertallet" er, hvor ofte partiet stemte som det, der blev vedtaget. I udvalgene stemmer partiets medlemmer af udvalget.</p>
   <div class="faner" role="tablist" aria-label="Vis afstemninger fra">${omfang.map(([id, navn], i) => `<button type="button" role="tab" class="fane" data-omfang="${id}" aria-selected="${!i}">${h.esc(navn)}</button>`).join("")}</div>
   ${omfang.map(visning).join("")}
   <h2 class="sec-h" style="margin-top:40px">Seneste afstemninger, hvor partierne var uenige</h2>
@@ -124,22 +126,26 @@ document.querySelector(".faner").addEventListener("click", function (e) {
 }
 
 // ---------- Høringer ----------
-export async function bygHoeringer(sager, h) {
+// o: til en anden kommune, som bygPartier
+export async function bygHoeringer(sager, h, o = {}) {
+  const { sti = "hoeringer.html", rod = "", kommune = null, hvor = "Københavns Kommune", aktiv = "hoeringer", web = "https://blivhoert.kk.dk" } = o;
   const aabne = sager.filter((s) => s.frist && s.frist >= h.IDAG).sort((a, b) => a.frist.localeCompare(b.frist));
   const sendes = sager.filter((s) => !s.frist && s.hoering && s.status !== "kommer" && (new Date(h.IDAG) - new Date(s.dato)) / 864e5 <= 60).sort((a, b) => b.dato.localeCompare(a.dato));
   const kommer = sager.filter((s) => s.hoering && s.status === "kommer").sort((a, b) => a.dato.localeCompare(b.dato));
   const lukket = sager.filter((s) => s.frist && s.frist < h.IDAG && (new Date(h.IDAG) - new Date(s.frist)) / 864e5 <= 120).sort((a, b) => b.frist.localeCompare(a.frist));
   const dage = (iso) => Math.round((new Date(iso) - new Date(h.IDAG)) / 864e5);
-  const kort = (s, frist) => `<article>${h.kicker(s, "")}<h2 class="hl"><a href="${s.url}">${h.esc(s.titel)}</a></h2>`
+  const kort = (s, frist) => `<article>${h.kicker(s, rod)}<h2 class="hl"><a href="${rod}${s.url}">${h.esc(s.titel)}</a></h2>`
     + (frist ? `<p class="frist${dage(s.frist) <= 7 ? " snart" : ""}">Høringsfrist ${h.ugedag(s.frist)} ${h.datoTekst(s.frist)}${dage(s.frist) >= 0 ? ` · ${dage(s.frist) === 0 ? "i dag" : `om ${dage(s.frist)} ${dage(s.frist) === 1 ? "dag" : "dage"}`}` : ""}</p>` : "")
-    + `<p class="dek">${h.esc(h.saetninger(s.dek, 200))}</p>${h.emneLinks(s, "")}</article>`;
-  const sektion = (titel, intro, l, frist) => `<h2 class="sec-h" style="margin-top:34px">${titel}</h2>${intro ? `<p class="intro">${intro}</p>` : ""}${l.length ? l.map((s) => kort(s, frist)).join("\n") : `<p class="intro">Ingen lige nu.</p>`}`;
-  await writeFile(join(h.ROD, "hoeringer.html"), h.side({
-    titel: "Høringer – Sagsvagt", beskrivelse: "Forslag fra Københavns Kommune, som er sendt i høring, og hvornår fristen for at svare udløber.",
-    sti: "hoeringer.html", rod: "", aktiv: "hoeringer",
+    + `<p class="dek">${h.esc(h.saetninger(s.dek, 200))}</p>${h.emneLinks(s, rod)}</article>`;
+  // Samme sag kan være behandlet i flere udvalg; den står kun én gang (den nyeste behandling)
+  const unik = (l) => { const set = new Set(); return [...l].sort((a, b) => b.dato.localeCompare(a.dato)).filter((s) => !set.has(s.titel.toLowerCase()) && set.add(s.titel.toLowerCase())); };
+  const sektion = (titel, intro, l, frist) => { l = l.filter((s) => unik(l).includes(s)); return `<h2 class="sec-h" style="margin-top:34px">${titel}</h2>${intro ? `<p class="intro">${intro}</p>` : ""}${l.length ? l.map((s) => kort(s, frist)).join("\n") : `<p class="intro">Ingen lige nu.</p>`}`; };
+  await writeFile(join(h.ROD, sti), h.side({
+    titel: kommune ? `Høringer, ${kommune.navn} – Sagsvagt` : "Høringer – Sagsvagt", beskrivelse: `Forslag fra ${hvor}, som er sendt i høring, og hvornår fristen for at svare udløber.`,
+    sti, rod, aktiv, kommune,
     indhold: `<div class="wrap"><div class="listing hoeringer">
   <h1>Høringer</h1>
-  <p class="intro">Når et forslag er i høring, kan alle sende kommentarer til kommunen, før det bliver endeligt vedtaget. Her er de sager, hvor referaterne nævner en høring. Selve høringerne og hvordan du svarer, finder du på <a href="https://blivhoert.kk.dk" rel="nofollow">blivhoert.kk.dk</a>.</p>
+  <p class="intro">Når et forslag er i høring, kan alle sende kommentarer til kommunen, før det bliver endeligt vedtaget. Her er de sager, hvor referaterne nævner en høring. Selve høringerne og hvordan du svarer, finder du på <a href="${h.esc(web)}" rel="nofollow">${h.esc(web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>${kommune ? " under høringer" : ""}.</p>
   ${sektion("Åbne høringer", "Med fristen fra sagen.", aabne, true)}
   ${sektion("Besluttet at sende i høring", "De seneste 60 dage. Fristen står i høringen hos kommunen.", sendes, false)}
   ${sektion("Skal behandles", "Forslag på kommende møder, som lægger op til en høring.", kommer, false)}

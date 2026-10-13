@@ -1,3 +1,10 @@
 [
- { "slug": "viborg", "kommune": "Viborg", "base": "https://dagsordener.viborg.dk", "aktiv": true }
+ { "slug": "viborg", "kommune": "Viborg", "base": "https://dagsordener.viborg.dk", "aktiv": true },
+ { "slug": "fredericia", "kommune": "Fredericia", "base": "https://dagsordner.fredericia.dk", "aktiv": true },
+ { "slug": "albertslund", "kommune": "Albertslund", "base": "https://dagsordner.albertslund.dk", "aktiv": true },
+ { "slug": "broenderslev", "kommune": "Brønderslev", "base": "https://dagsordener.bronderslev.dk", "aktiv": true },
+ { "slug": "guldborgsund", "kommune": "Guldborgsund", "base": "https://dagsordener.guldborgsund.dk", "aktiv": true },
+ { "slug": "herning", "kommune": "Herning", "base": "https://dagsordener.herning.dk", "aktiv": true },
+ { "slug": "lyngby-taarbaek", "kommune": "Lyngby-Taarbæk", "base": "https://dagsordener.ltk.dk", "aktiv": true },
+ { "slug": "horsens", "kommune": "Horsens", "base": "https://dagsordener.horsens.dk", "aktiv": true }
 ]

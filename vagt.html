@@ -14,9 +14,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts/montserrat.css">
 <style>
   /* Paletten "Vin og blæk": rød og blå blok mødes om sagen. Ingen hvid.
      Opbygget efter Apples Human Interface Guidelines: få typestørrelser med tydeligt hierarki,
@@ -417,6 +415,9 @@
         <form id="form" novalidate>
           <input type="hidden" name="kilde" id="kilde">
           <div class="felt"><label for="email">Din e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="navn@eksempel.dk" required></div>
+          <!-- Usynligt felt, som kun robotter udfylder (FormSubmit kender også _honey) -->
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+
           <div class="felt"><label for="kommuner">Kommuner du vil følge</label><input id="kommuner" name="kommuner" type="text" value="København" list="kommune-liste" autocomplete="off"><datalist id="kommune-liste"><option value="Albertslund"><option value="Allerød"><option value="Assens"><option value="Ballerup"><option value="Billund"><option value="Bornholm"><option value="Brøndby"><option value="Brønderslev"><option value="Dragør"><option value="Egedal"><option value="Esbjerg"><option value="Fanø"><option value="Favrskov"><option value="Faxe"><option value="Fredensborg"><option value="Fredericia"><option value="Frederiksberg"><option value="Frederikshavn"><option value="Frederikssund"><option value="Furesø"><option value="Faaborg-Midtfyn"><option value="Gentofte"><option value="Gladsaxe"><option value="Glostrup"><option value="Greve"><option value="Gribskov"><option value="Guldborgsund"><option value="Haderslev"><option value="Halsnæs"><option value="Hedensted"><option value="Helsingør"><option value="Herlev"><option value="Herning"><option value="Hillerød"><option value="Hjørring"><option value="Holbæk"><option value="Holstebro"><option value="Horsens"><option value="Hvidovre"><option value="Høje-Taastrup"><option value="Hørsholm"><option value="Ikast-Brande"><option value="Ishøj"><option value="Jammerbugt"><option value="Kalundborg"><option value="Kerteminde"><option value="Kolding"><option value="København"><option value="Køge"><option value="Langeland"><option value="Lejre"><option value="Lemvig"><option value="Lolland"><option value="Lyngby-Taarbæk"><option value="Læsø"><option value="Mariagerfjord"><option value="Middelfart"><option value="Morsø"><option value="Norddjurs"><option value="Nordfyn"><option value="Nyborg"><option value="Næstved"><option value="Odder"><option value="Odense"><option value="Odsherred"><option value="Randers"><option value="Rebild"><option value="Ringkøbing-Skjern"><option value="Ringsted"><option value="Roskilde"><option value="Rudersdal"><option value="Rødovre"><option value="Samsø"><option value="Silkeborg"><option value="Skanderborg"><option value="Skive"><option value="Slagelse"><option value="Solrød"><option value="Sorø"><option value="Stevns"><option value="Struer"><option value="Svendborg"><option value="Syddjurs"><option value="Sønderborg"><option value="Thisted"><option value="Tønder"><option value="Tårnby"><option value="Vallensbæk"><option value="Varde"><option value="Vejen"><option value="Vejle"><option value="Vesthimmerland"><option value="Viborg"><option value="Vordingborg"><option value="Ærø"><option value="Aabenraa"><option value="Aalborg"><option value="Aarhus"></datalist></div>
           <div class="felt" id="valgteFelt" hidden>
             <span class="label-tekst" style="display:block;font-size:var(--fodnote);font-weight:600;margin-bottom:6px">Dine emner fra demoen</span>

@@ -6,6 +6,8 @@ require __DIR__ . '/_bootstrap.php';
 
 $d = kraev_post();
 begraens('tilmeld:' . ip(), 20, 3600);
+// Det usynlige felt "_honey" udfyldes kun af robotter: svar "ok", men gem intet og send ingen mails
+if (trim((string)($d['_honey'] ?? '')) !== '') svar(200, ['ok' => true]);
 $email = ren_email($d['email'] ?? '');
 if ($email === '') fejl(400, 'Skriv en gyldig e-mailadresse.');
 $felt = fn($k, $max) => mb_substr(trim((string)($d[$k] ?? '')), 0, $max);
