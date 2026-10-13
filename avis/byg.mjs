@@ -359,7 +359,7 @@ const beslutningsboks = (s) => s.status === "besluttet"
 
 const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="paa-mail">
   <h2 class="rubrik">Sagsvagt på mail</h2>
-  <p>Hver mandag de sager, der handler om dine emner, fra cykelstier til lokalplaner. Vi søger de første testere i ${esc(kommune)}. Det er gratis.</p>
+  <p>Hver mandag de sager, der handler om dine emner, fra cykelstier til lokalplaner. Sagsvagt er en lokalavis for hele Danmark, og vi søger testere. Det er gratis.</p>
   <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Bliv tester</a>
 </aside>`;
 // Under sagen: tilbyd at følge netop sagens emne eller bydel. Linket udfylder emnet i tilmeldingen.
@@ -368,7 +368,7 @@ const testerBoks = (s) => {
   const om = erLokaludvalg(s.udvalg) ? `sager fra ${esc(hvad)}` : hvad ? `sager om ${esc(hvad.toLowerCase())}` : "sager som denne";
   return `<aside class="paa-mail tester">
   <h2 class="rubrik">Få ${om} hver mandag</h2>
-  <p>Sagsvagt læser alle dagsordener fra byråd, udvalg og lokaludvalg og sender dig de sager, der handler om det, du følger. Vi søger de første testere i ${esc(erKK(s) ? "København" : s.kommune)}. Det er gratis.</p>
+  <p>Sagsvagt læser alle dagsordener fra byråd, udvalg og lokaludvalg og sender dig de sager, der handler om det, du følger. Vi søger testere i hele Danmark. Det er gratis.</p>
   <a href="../vagt.html?fra=sag${hvad ? `&amp;emne=${encodeURIComponent(hvad)}` : ""}${erKK(s) ? "" : `&amp;kommune=${encodeURIComponent(s.kommune)}`}#tilmeld">Bliv tester</a>
 </aside>`;
 };
@@ -644,7 +644,7 @@ async function main() {
   await writeFile(join(ROD, "om.html"), side({
     titel: "Om Sagsvagt", beskrivelse: "Sagsvagt gør det let at følge med i, hvad politikerne i din kommune beslutter.", sti: "om.html", rod: "", aktiv: "om",
     indhold: `<div class="wrap"><div class="listing prose"><h1 style="font-family:var(--sans)">Om Sagsvagt</h1>
-<p>Sagsvagt gør det let at følge med i, hvad politikerne i din kommune beslutter. Hver dag læser vi de dagsordener og referater, kommunen selv offentliggør, og samler sagerne ét sted, så du ikke skal lede i udvalgenes dokumenter.</p>
+<p>Sagsvagt er en gratis lokalavis for hele Danmark. Vi gør det let at følge med i, hvad politikerne i din kommune beslutter. Hver dag læser vi de dagsordener og referater, kommunen selv offentliggør, og samler sagerne ét sted, så du ikke skal lede i udvalgenes dokumenter.</p>
 <h2>Hvor kommer sagerne fra?</h2>
 <p>Alt på Sagsvagt kommer fra kommunernes offentligt tilgængelige dagsordener og referater. Vi er startet i Københavns Kommune med Borgerrepræsentationen, udvalgene og de 12 lokaludvalg og har åbnet ${aabneTekst}. Flere kommuner følger efter, hvor flest skriver sig op. <a href="kommune/">Find din kommune</a>. Hver sag linker til den originale side hos kommunen.</p>
 <h2>Hvordan bliver teksterne lavet?</h2>

@@ -86,7 +86,7 @@
   .tag.r { background: var(--rosen); color: var(--bordeaux); }
   .tag.b { background: var(--lyng); color: var(--blaek); }
   .tag.o { background: var(--nat); color: var(--kalk); }
-  .kort { position: relative; }
+  .kort { position: relative; background: none; border-radius: 0; } /* ingen boks; som i avisen adskilt af streger */
   .handl { position: absolute; top: -4px; right: -6px; display: flex; }
   .ikon { width: 34px; height: 34px; display: grid; place-items: center; border: 0; background: none; cursor: pointer; color: var(--muted); border-radius: 50%; }
   .ikon:hover { background: var(--kalk-lys); color: var(--nat); }
@@ -867,6 +867,7 @@
     let nye = sket.filter((s) => alder(s.dato) <= 30);
     if (nye.length < 5) nye = sket.filter((s) => alder(s.dato) <= 120);
     nye.sort((a, b) => b.score - a.score);
+    { const set = new Set(); nye = nye.filter((s) => { const t = s.t.toLowerCase(); if (set.has(t)) return false; set.add(t); return true; }); }
     const kommende = mine.filter((s) => s.st === "kommer" && !s.r).sort((a, b) => a.dato.localeCompare(b.dato) || b.score - a.score);
 
     // Toppen
