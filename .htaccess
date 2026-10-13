@@ -1,6 +1,8 @@
 # Forsiden på sagsvagt.dk er tilmeldingssiden (vagt.html). Avisens forside ligger på /index.html.
 # Undermapper (udvalg/, bydel/, min/) har ingen vagt.html og viser derfor deres index.html som før.
 DirectoryIndex vagt.html index.html
+# Egen side for adresser, der ikke findes (bygges af avis/byg.mjs)
+ErrorDocument 404 /404.html
 
 # Avisen er åben igen fra 12. okt. 2026 efter ejerens ønske, så Google og delte links kan finde sagerne.
 # Hver sag beder læseren om at blive tester. Min avis (min/) er stadig lukket bag login.

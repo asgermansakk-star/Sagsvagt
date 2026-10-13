@@ -226,10 +226,10 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
 <meta property="og:title" content="${esc(titel)}">
 <meta property="og:description" content="${esc(beskrivelse)}">
 <meta property="og:url" content="${canonical}">
-<meta property="og:image" content="${SITE_URL}${ogBillede || "assets/og-billede.png"}">${ogBillede ? `
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">` : ""}
+<meta property="og:image" content="${SITE_URL}${ogBillede || "assets/og-billede.png"}">
+<meta property="og:image:width" content="${ogBillede ? 1200 : 1920}">
+<meta property="og:image:height" content="${ogBillede ? 630 : 1080}">
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="da_DK">
 <link rel="icon" href="${rod}favicon.ico" sizes="48x48">
 <link rel="icon" href="${rod}favicon.svg" type="image/svg+xml">
@@ -623,13 +623,34 @@ async function main() {
   await bygKalendere([...moeder.values()], H);
   await bygFeeds(sager, H);
 
-  // Om-side
+  // 404: vises af serveren for ukendte adresser (ErrorDocument i .htaccess). Links fra roden, fordi siden kan vises på enhver sti.
+  await writeFile(join(ROD, "404.html"), side({
+    titel: "Siden findes ikke – Sagsvagt", beskrivelse: "Siden findes ikke på Sagsvagt.", sti: "404.html", rod: "/",
+    indhold: `<div class="wrap"><div class="listing prose" style="padding:48px 0 64px">
+  <p class="kicker"><span class="status">Fejl 404</span></p>
+  <h1 style="font-family:var(--sans)">Siden findes ikke</h1>
+  <p class="intro">Adressen er forkert, eller sagen er flyttet. Kommunerne lægger nogle gange en sag om, så den får en ny adresse.</p>
+  <ul class="chips" style="margin-top:20px">
+    <li><a href="/index.html">Til forsiden</a></li>
+    <li><a href="/kommune/">Find din kommune</a></li>
+    <li><a href="/soeg.html">Søg i sagerne</a></li>
+  </ul>
+</div></div>`,
+  }));
+
+  // Om-side (med de åbne kommuner: "Albertslund, Brønderslev … og Viborg")
+  const aabneNavne = udgaver.map((k) => k.navn);
+  const aabneTekst = aabneNavne.length > 1 ? `${aabneNavne.slice(0, -1).join(", ")} og ${aabneNavne.at(-1)}` : aabneNavne[0] || "flere kommuner";
   await writeFile(join(ROD, "om.html"), side({
     titel: "Om Sagsvagt", beskrivelse: "Sagsvagt gør det let at følge med i, hvad politikerne i din kommune beslutter.", sti: "om.html", rod: "", aktiv: "om",
     indhold: `<div class="wrap"><div class="listing prose"><h1 style="font-family:var(--sans)">Om Sagsvagt</h1>
 <p>Sagsvagt gør det let at følge med i, hvad politikerne i din kommune beslutter. Hver dag læser vi de dagsordener og referater, kommunen selv offentliggør, og samler sagerne ét sted, så du ikke skal lede i udvalgenes dokumenter.</p>
 <h2>Hvor kommer sagerne fra?</h2>
-<p>Alt på Sagsvagt kommer fra kommunernes offentligt tilgængelige dagsordener og referater. Vi starter med Københavns Kommune, Borgerrepræsentationen, udvalgene og de 12 lokaludvalg, og udvider til flere kommuner i hovedstadsområdet. Hver sag linker til den originale side hos kommunen.</p>
+<p>Alt på Sagsvagt kommer fra kommunernes offentligt tilgængelige dagsordener og referater. Vi er startet i Københavns Kommune med Borgerrepræsentationen, udvalgene og de 12 lokaludvalg og har åbnet ${aabneTekst}. Flere kommuner følger efter, hvor flest skriver sig op. <a href="kommune/">Find din kommune</a>. Hver sag linker til den originale side hos kommunen.</p>
+<h2>Hvordan bliver teksterne lavet?</h2>
+<p>Overskrifter, resuméer, indstillinger og beslutninger er kommunens egen tekst, som vi henter automatisk fra dagsordener og referater og sætter op, så de er lette at læse. "Kort fortalt" samler de samme oplysninger. Teksten under "Forklar sagen enkelt" er skrevet med hjælp fra AI og er mærket sådan. Læs altid den originale sag hos kommunen, før du handler på den.</p>
+<h2>Hvem står bag?</h2>
+<p>Sagsvagt drives af Asger Christian Mansa (CVR 46841514). Sagsvagt er partineutral: alle partier vises ens og efter de samme regler, sagerne udvælges efter emne og ikke efter parti, og vi skriver ikke holdninger ind i sagerne. Debatindlæg bringes under skribentens eget navn.</p>
 <h2>Hvad er "Besluttet" og "På dagsordenen"?</h2>
 <p>"Besluttet" betyder, at referatet fra mødet er offentliggjort, og at vi viser udvalgets beslutning. "På dagsordenen" betyder, at sagen skal behandles på et kommende møde.</p>
 <h2>Fejl og rettelser</h2>
