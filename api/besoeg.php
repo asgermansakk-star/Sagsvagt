@@ -39,3 +39,9 @@ if ($up->rowCount() === 0) {
     catch (PDOException $e) { $up->execute([$dato, $sti, $kilde]); } // to samtidige første besøg
 }
 http_response_code(204);
+// Push-beskeder: er sagerne opdateret siden sidst, sendes beskederne nu, efter at svaret til den besøgende er afsendt
+// (robotten kan ikke kalde siden direkte, fordi Simply spærrer for robotter). Se api/_push.php.
+if (function_exists('fastcgi_finish_request')) {
+    fastcgi_finish_request();
+    try { require_once __DIR__ . '/_push.php'; push_maaske_koer(); } catch (Throwable $e) { error_log('Sagsvagt push: ' . $e->getMessage()); }
+}

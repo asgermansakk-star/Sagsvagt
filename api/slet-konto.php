@@ -13,6 +13,7 @@ if (er_admin($b)) fejl(400, 'Redaktionens konto kan ikke slettes her.');
 
 $db = db();
 $db->prepare('DELETE FROM tokens WHERE abonnent_id = ?')->execute([$b['id']]);
+try { $db->prepare('DELETE FROM push_abonnementer WHERE abonnent_id = ?')->execute([$b['id']]); } catch (PDOException $e) {} // findes kun, når push er brugt
 $db->prepare("UPDATE feedback SET abonnent_id = NULL, email = '' WHERE abonnent_id = ?")->execute([$b['id']]);
 $db->prepare('DELETE FROM abonnenter WHERE id = ?')->execute([$b['id']]);
 

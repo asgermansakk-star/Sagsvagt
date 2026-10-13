@@ -75,6 +75,15 @@
       <thead><tr><th><input type="checkbox" id="alle-valg" aria-label="Vælg alle"></th><th>E-mail</th><th>Status</th><th>Kommuner og emner</th><th>Rolle</th><th>Tilmeldt</th><th></th></tr></thead>
       <tbody id="raekker"></tbody>
     </table></div>
+    <details class="import" id="push-boks">
+      <summary id="push-titel">Push-beskeder</summary>
+      <p class="lille" id="push-status">Henter …</p>
+      <p class="lille">Testerne kan slå beskeder til under Konto i Min avis. Når udsendelsen er slået til, får hver af dem højst én besked, hver gang avisen bliver opdateret, med de nye sager om deres emner, ord og bydel. Mens den er slået fra, sendes der intet til andre end testbeskeden til den, der lige har slået beskeder til.</p>
+      <div class="handl-raekke">
+        <button class="knap" id="push-aktiv" type="button">Slå udsendelse til</button>
+        <button class="knap sek" id="push-koer" type="button">Kør udsendelsen nu</button>
+      </div>
+    </details>
     <details class="import" id="fb-boks">
       <summary id="fb-titel">Feedback fra Min avis</summary>
       <div id="fb-liste"></div>
@@ -134,8 +143,25 @@
       fyldOmraader();
       vis();
       hentFeedback();
+      hentPush();
     });
   }
+  // Push-beskeder: status, til/fra og en udsendelse nu (api/admin/push.php)
+  function visPush(j) {
+    $("#push-titel").textContent = "Push-beskeder (" + (j.aktiv ? "slået til" : "slået fra") + ")";
+    $("#push-status").textContent = j.personer + (j.personer === 1 ? " tester" : " testere") + " har slået beskeder til på " + j.abonnementer + (j.abonnementer === 1 ? " enhed" : " enheder") + "."
+      + (j.sidst_sendt ? " Seneste besked: " + dato(j.sidst_sendt) + "." : "")
+      + (j.koersel ? (j.koersel.koert ? " Udsendelsen kørte: " + (j.koersel.nye || 0) + " nye sager, " + (j.koersel.sendt || 0) + " beskeder sendt." : " Intet nyt at sende.") : "");
+    $("#push-aktiv").textContent = j.aktiv ? "Slå udsendelse fra" : "Slå udsendelse til";
+    $("#push-aktiv").dataset.til = j.aktiv ? "1" : "";
+  }
+  function hentPush() { api("admin/push.php", { handling: "status" }).then(visPush).catch(function () { $("#push-status").textContent = "Kunne ikke hente status."; }); }
+  $("#push-aktiv").addEventListener("click", function () {
+    var til = !$("#push-aktiv").dataset.til;
+    if (til && !confirm("Slå udsendelsen til? Så får testere, der har slået beskeder til, en besked, når der kommer nye sager om deres emner.")) return;
+    api("admin/push.php", { handling: "aktiv", til: til }).then(visPush).catch(function (e) { besked(e.message, "fejl"); });
+  });
+  $("#push-koer").addEventListener("click", function () { api("admin/push.php", { handling: "koer" }).then(visPush).catch(function (e) { besked(e.message, "fejl"); }); });
   var INDTRYK = { godt: "Godt", blandet: "Blandet", daarligt: "Dårligt" };
   function hentFeedback() {
     api("admin/feedback.php").then(function (j) {

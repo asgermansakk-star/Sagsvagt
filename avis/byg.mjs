@@ -217,7 +217,7 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
 <html lang="da">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${esc(titel)}</title>
 <meta name="description" content="${esc(beskrivelse)}">
 <link rel="canonical" href="${canonical}">

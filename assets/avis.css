@@ -41,7 +41,8 @@
   --ease: cubic-bezier(.2,.7,.2,1);
 }
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; }
+/* Mørk baggrund bag siden: telefonens statuslinje (klokken) og træk ud over kanten får samme farve som sidehovedet */
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; background: var(--nat); }
 body { margin: 0; background: var(--kalk); color: var(--nat); font: 400 var(--broed)/1.55 var(--sans); -webkit-font-smoothing: antialiased;
   min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
 body > main { flex: 1 0 auto; }
@@ -53,7 +54,7 @@ h1, h2, h3, h4 { margin: 0; letter-spacing: -.02em; line-height: 1.15; }
 p { margin: 0; }
 
 /* ---------- Avishovedet: én række med logo, menu og knap ---------- */
-.masthead { background: var(--moedet); color: var(--kalk); }
+.masthead { background: var(--moedet); color: var(--kalk); padding-top: env(safe-area-inset-top); } /* i appen går sidehovedet op bag klokken */
 .masthead a { color: var(--kalk); text-decoration: none; }
 .masthead .wrap { display: flex; align-items: center; gap: 8px 20px; min-height: 64px; }
 .mh-row { display: contents; }

@@ -9,7 +9,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Sagsvagt">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0E0F14">
 <link rel="icon" href="../favicon.ico" sizes="48x48">
@@ -310,6 +310,7 @@
         <a href="#mandagsmail" class="kun-lille">Din mandagsmail</a>
         <a href="../index.html">Gå til avisen</a>
         <a href="admin.html" id="admin-link" hidden>Tilmeldte</a>
+        <button type="button" id="push-knap">Få besked om nye sager</button>
         <button type="button" id="app-knap" hidden>Installér appen</button>
         <button type="button" id="feedback-knap">Giv feedback</button>
         <button type="button" id="logud">Log ud</button>
@@ -525,6 +526,17 @@
     </div>
   </dialog>
 
+  <dialog class="skriv" id="push" aria-labelledby="push-h">
+    <div class="skriv-top">
+      <div><h2 id="push-h">Besked om nye sager</h2><p id="push-intro">Få en besked på telefonen, når der kommer nye sager om det, du følger.</p></div>
+      <button class="luk" type="button" data-luk aria-label="Luk">×</button>
+    </div>
+    <div class="dlg-form">
+      <p style="margin:0" id="push-tekst"></p>
+      <div class="send-raekke"><small>Højst én besked, hver gang avisen bliver opdateret. Du kan slå det fra igen under Konto.</small><button class="send" type="button" id="push-app" hidden>Sådan lægger du appen på hjemmeskærmen</button></div>
+    </div>
+  </dialog>
+
   <dialog class="skriv" id="slet" aria-labelledby="slet-h">
     <div class="skriv-top">
       <div><h2 id="slet-h">Slet din konto</h2><p>Det kan ikke fortrydes.</p></div>
@@ -578,6 +590,50 @@
     $("#app").showModal();
   };
   $("#app-knap").addEventListener("click", installerApp);
+
+  /* ---------- Push-beskeder ----------
+     Telefonen giver lov, opretter et abonnement med serverens nøgle (api/push.php), og serveren sender en besked,
+     når der kommer nye sager om ens emner (api/_push.php). På iPhone virker det kun i appen på hjemmeskærmen. */
+  const kanPush = "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
+  const tilBytes = (t) => { const r = atob((t + "=".repeat((4 - t.length % 4) % 4)).replace(/-/g, "+").replace(/_/g, "/")); return Uint8Array.from(r, (c) => c.charCodeAt(0)); };
+  const pushApi = (data) => fetch("../api/push.php", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) })
+    .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))));
+  const pushBesked = (tekst, appVejledning = false) => { $("#push-tekst").textContent = tekst; $("#push-app").hidden = !appVejledning; $("#push").showModal(); };
+  async function pushStatus() {
+    const k = $("#push-knap");
+    if (!kanPush) return;
+    const sub = await (await navigator.serviceWorker.ready).pushManager.getSubscription();
+    k.dataset.til = sub && Notification.permission === "granted" ? "1" : "";
+    k.textContent = k.dataset.til ? "Slå beskeder fra" : "Få besked om nye sager";
+  }
+  $("#push-knap").addEventListener("click", async () => {
+    if (!kanPush) {
+      return erIos && !iApp
+        ? pushBesked("På iPhone kan Sagsvagt kun sende beskeder, når appen ligger på din hjemmeskærm. Læg den derhen, åbn den, og tryk så her igen.", true)
+        : pushBesked("Din browser kan ikke modtage beskeder fra Sagsvagt. Prøv med Chrome på Android eller appen på iPhone.");
+    }
+    const reg = await navigator.serviceWorker.ready;
+    if ($("#push-knap").dataset.til) {
+      const sub = await reg.pushManager.getSubscription();
+      if (sub) { await pushApi({ handling: "fra", endpoint: sub.endpoint }).catch(() => {}); await sub.unsubscribe(); }
+      return pushStatus();
+    }
+    if (await Notification.requestPermission() !== "granted") {
+      return pushBesked("Du har ikke givet Sagsvagt lov til at sende beskeder. Du kan give lov i telefonens indstillinger under Sagsvagt (eller browseren) og prøve igen.");
+    }
+    try {
+      const { noegle } = await fetch("../api/push.php", { credentials: "same-origin" }).then((r) => r.json());
+      const sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: tilBytes(noegle) });
+      await pushApi({ handling: "til", abonnement: sub.toJSON() });
+      await pushApi({ handling: "test" }).catch(() => {});
+      pushBesked("Beskeder er slået til. Du har lige fået en testbesked, så du kan se, hvordan de ser ud.");
+    } catch (e) {
+      pushBesked("Beskeder kunne ikke slås til lige nu. Prøv igen om lidt.");
+    }
+    pushStatus();
+  });
+  $("#push-app").addEventListener("click", () => { $("#push").close(); $("#app-ios").hidden = false; $("#app-andre").hidden = true; $("#app").showModal(); });
+  pushStatus().catch(() => {});
   $("#app-link button").addEventListener("click", installerApp);
   const esc = (s = "") => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const gemt = (k, v) => { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch { return null; } };
