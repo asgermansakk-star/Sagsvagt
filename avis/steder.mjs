@@ -49,7 +49,7 @@ export async function bygSteder(prSted, H, o = {}) {
     const tester = `<aside class="paa-mail tester">
   <h2 class="rubrik">Få besked, når ${esc(n)} er på dagsordenen</h2>
   <p>Sagsvagt læser alle dagsordener fra ${kommune ? "byråd og udvalg" : "byråd, udvalg og lokaludvalg"}. Skriv dig op, så får du en kort mail hver mandag med de sager, du følger. Vi søger de første testere i ${esc(kommune ? kommune.navn : "København")}. Det er gratis.</p>
-  <a href="${rod}vagt.html?fra=${fra}&amp;emne=${encodeURIComponent(n)}${kommune ? `&amp;kommune=${encodeURIComponent(kommune.navn)}` : ""}#tilmeld">Bliv tester →</a>
+  <a href="${rod}vagt.html?fra=${fra}&amp;emne=${encodeURIComponent(n)}${kommune ? `&amp;kommune=${encodeURIComponent(kommune.navn)}` : ""}#tilmeld">Bliv tester</a>
 </aside>`;
     const nyeste = l[0];
     await writeFile(join(ROD, mappe, `${slug(n)}.html`), side({

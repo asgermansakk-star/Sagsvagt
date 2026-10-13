@@ -1,25 +1,25 @@
 {
+  "id": "/min/",
   "name": "Sagsvagt",
   "short_name": "Sagsvagt",
-  "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    },
-    {
-      "src": "maskable-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ],
+  "description": "Din egen avis med de sager fra byråd og udvalg, der handler om det, du følger.",
+  "lang": "da",
+  "dir": "ltr",
+  "start_url": "/min/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#0E0F14",
   "background_color": "#0E0F14",
-  "display": "standalone"
+  "categories": ["news", "politics"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Mine sager", "url": "/min/#sager", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Gemte sager", "short_name": "Gemte", "url": "/min/#gemte", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Søg i sagerne", "short_name": "Søg", "url": "/soeg.html", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] }
+  ]
 }

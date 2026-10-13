@@ -52,6 +52,22 @@
       </div></details>
   </div></nav>
 </header>
+<nav class="tabbar" aria-label="Sektioner">
+  <a href="../index.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Forside</span></a>
+  <a href="../emne/" aria-current="page"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span>Emner</span></a>
+  <a href="../soeg.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Søg</span></a>
+  <a href="../moeder.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg><span>Møder</span></a>
+  <details class="tab-mere"><summary><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/></svg><span>Mere</span></summary><div>
+    <a href="../bydel/">Bydele</a>
+    <a href="../kommune/">Kommuner</a>
+    <a href="../udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a>
+    <a href="../udvalg/">Alle udvalg</a>
+    <a href="../sted/">Steder</a>
+    <a href="../hoeringer.html">Høringer</a>
+    <a href="../partier.html">Sådan stemmer partierne</a>
+    <a href="../om.html">Om Sagsvagt</a>
+  </div></details>
+</nav>
 <main>
 <div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>Kultur og fritid</h1><p class="intro">266 sager fra Borgerrepræsentationen, udvalgene og lokaludvalgene i København, nyeste først.</p><p class="abonner"><a href="../feed/emne-kultur.xml">RSS for kultur og fritid</a></p><ul class="chips"><li><a href="trafik.html">Trafik og cykler <span style="opacity:.6">(88)</span></a></li><li><a href="klima.html">Klima og grønt <span style="opacity:.6">(95)</span></a></li><li><a href="affald.html">Affald <span style="opacity:.6">(19)</span></a></li><li><a href="bolig.html">Boliger <span style="opacity:.6">(82)</span></a></li><li><a href="byggeri.html">Byggeri og lokalplaner <span style="opacity:.6">(111)</span></a></li><li><a href="skole.html">Skoler og børn <span style="opacity:.6">(141)</span></a></li><li><a href="aeldre.html">Ældre og sundhed <span style="opacity:.6">(56)</span></a></li><li><a href="social.html">Det sociale <span style="opacity:.6">(64)</span></a></li><li><a href="budget.html">Budget og økonomi <span style="opacity:.6">(305)</span></a></li><li><a href="kultur.html" aria-current="page">Kultur og fritid <span style="opacity:.6">(266)</span></a></li><li><a href="erhverv.html">Erhverv og job <span style="opacity:.6">(50)</span></a></li></ul><article><p class="kicker"><span class="status kommer">På dagsordenen 22. oktober</span>, <a href="../udvalg/kultur-fritids-og-borgerserviceudvalget.html">Kultur-, Fritids- og Borgerserviceudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-10-22-kultur-fritids-og-borgerserviceudvalget-4.html">Håndtering af medlemsforslag om LGBT+ arkiv og museum i København</a></h2><p class="dek">Håndteringen af medlemsforslag om et LGBT+ arkiv og museum i København (bilag 1). Medlemsforslaget blev vedtaget af Borgerrepræsentationen på møde den 18. juni 2026.</p></article>
 <article><p class="kicker"><span class="status kommer">På dagsordenen 22. oktober</span>, <a href="../udvalg/kultur-fritids-og-borgerserviceudvalget.html">Kultur-, Fritids- og Borgerserviceudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-10-22-kultur-fritids-og-borgerserviceudvalget-5.html">Resultater af Kultur- og Fritidsbarometer 2026</a></h2><p class="dek">Kultur-, Fritids- og Borgerserviceudvalget orienteres om Kultur- og Fritidsbarometeret 2026, som belyser københavnernes kendskab til, brug af og tilfredshed med de kommunale kultur- og fritidstilbud samt barrierer for deltagelse.</p></article>
@@ -326,5 +342,8 @@
     <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="../om.html">Om Sagsvagt</a> · <a href="../boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="../privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
 </footer>
+<script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});</script>
 </body>
 </html>

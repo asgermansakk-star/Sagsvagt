@@ -133,7 +133,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
   <h2>Se, hvordan det ser ud i København</h2>
   <p>Sagsvagt kører allerede i København. Her er nogle af de seneste beslutninger:</p>
   ${eksempel}
-  <p><a href="../index.html">Se Sagsvagt i København →</a></p>
+  <p><a href="../index.html">Se Sagsvagt i København</a></p>
   <h2>Indtil da</h2>
   <p>${esc(k.kommune)} lægger selv dagsordener og referater ud på <a href="${esc(k.web)}" rel="nofollow">${esc(domaene(k.web))}</a>.</p>
   <h2>Andre kommuner i Region ${esc(k.region)}</h2>

@@ -37,7 +37,7 @@
   --fodnote: .8125rem;
   --billedtekst: .75rem;
 
-  --r-knap: 99px; --r-felt: 12px; --r-kort: 16px;
+  --r-knap: 8px; --r-felt: 12px; --r-kort: 16px; /* knapper let afrundede, ikke piller */
   --ease: cubic-bezier(.2,.7,.2,1);
 }
 * { box-sizing: border-box; }
@@ -107,7 +107,7 @@ p { margin: 0; }
 .fane:hover { box-shadow: inset 0 0 0 1.5px var(--nat); }
 .fane[aria-selected="true"] { background: var(--nat); box-shadow: none; color: var(--kalk); }
 .emner { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 0; }
-.emne-tag { display: inline-flex; align-items: center; min-height: 32px; font: 600 var(--fodnote)/1 var(--sans); padding: 6px 12px; border-radius: var(--r-knap); text-decoration: none; }
+.emne-tag { display: inline-flex; align-items: center; min-height: 32px; font: 600 var(--fodnote)/1 var(--sans); padding: 6px 10px; border-radius: 6px; text-decoration: none; }
 .emne-tag.r { background: var(--rosen); color: var(--bordeaux); }
 .emne-tag.b { background: var(--lyng); color: var(--blaek); }
 .emne-tag:hover { box-shadow: inset 0 0 0 1.5px currentColor; }
@@ -115,11 +115,12 @@ p { margin: 0; }
 
 /* ---------- Stille flader ---------- */
 .kort, .kf, .vej, .paa-mail, .vagt-box, .decision { background: var(--kalk-lys); border-radius: var(--r-kort); }
-.decision { font-size: var(--sekundaer); line-height: 1.5; border-left: 3px solid var(--vin); border-radius: var(--r-felt); padding: 12px 16px; max-width: 44em; }
-.decision.kommer { border-left-color: var(--indigo); }
-.decision b { display: block; font-size: var(--fodnote); margin-bottom: 2px; }
-.udfald { font: 500 var(--sekundaer)/1.5 var(--sans); margin: 16px 0 0; padding: 12px 16px; background: var(--kalk-lys); border-left: 3px solid var(--vin); border-radius: var(--r-felt); max-width: 44em; }
-.udfald.kommer { border-left-color: var(--indigo); }
+.decision { font-size: var(--sekundaer); line-height: 1.5; background: none; border-top: 2px solid var(--vin); border-radius: 0; padding: 10px 0 0; max-width: 44em; }
+.decision.kommer { border-top-color: var(--indigo); }
+.decision b { display: block; font-size: var(--fodnote); letter-spacing: .04em; text-transform: uppercase; color: var(--vin); margin-bottom: 4px; }
+.decision.kommer b { color: var(--indigo); }
+.udfald { font: 600 var(--sekundaer)/1.5 var(--sans); margin: 16px 0 0; padding: 10px 0 0; border-top: 2px solid var(--vin); max-width: 44em; }
+.udfald.kommer { border-top-color: var(--indigo); }
 
 /* ---------- Forside ---------- */
 .front { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 0 48px; padding: 32px 0 24px; }
@@ -337,7 +338,7 @@ footer.foot a:hover { text-decoration: underline; }
   .kortnyt ul { columns: 1; }
   .second, .emne-gitter { grid-template-columns: 1fr; }
   .lead .dek { font-size: var(--broed); }
-  .hl, .listing h1, .emne-oversigt h1 { hyphens: auto; overflow-wrap: anywhere; } /* lange kommuneord som "miljøkonsekvensrapport" deles på smalle skærme */
+  .hl, .listing h1, .emne-oversigt h1 { -webkit-hyphens: auto; hyphens: auto; overflow-wrap: anywhere; } /* lange kommuneord som "miljøkonsekvensrapport" deles på smalle skærme */
   .kf, .vej, .paa-mail { padding: 16px; }
   .kf dl > div { grid-template-columns: 1fr; gap: 2px; }
   .parti-tabel th, .parti-tabel td { padding: 10px 5px; font-size: var(--fodnote); }
@@ -412,4 +413,33 @@ footer.foot a:hover { text-decoration: underline; }
   .masthead.to .mh-nav .wrap { justify-content: flex-start; flex-wrap: nowrap; gap: 0 22px; min-height: 46px; padding-top: 0; padding-bottom: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
   .masthead.to .mh-nav .wrap::-webkit-scrollbar { display: none; }
   .masthead.to .mh-nav a, .masthead.to .mh-nav summary { flex: none; min-height: 46px; font-size: var(--sekundaer); }
+}
+
+/* ---------- Telefon: tab-bjælke i bunden (som i Min avis) ----------
+   De fire vigtigste sektioner og "Mere" kan nås med tommelfingeren; øverst står kun logo, knap og login. */
+.tabbar { display: none; }
+@media (max-width: 720px) {
+  .masthead.to .mh-nav { display: none; }
+  body { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
+  .tabbar { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; justify-content: space-around; gap: 0;
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom)); background: #0e0f14; border-top: 1px solid rgba(230,223,211,.14); }
+  .tabbar > a, .tab-mere summary { flex: 1 1 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;
+    min-height: 54px; padding: 4px 2px; border-radius: 10px; color: var(--kalk); text-decoration: none; font: 600 .6875rem/1.1 var(--sans); opacity: .72; }
+  .tabbar > a[aria-current], .tab-mere summary[aria-current], .tab-mere[open] summary { opacity: 1; background: rgba(230,223,211,.12); }
+  .tabbar .ti { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .tabbar > a[aria-current] .ti { stroke-width: 2.2; }
+  .tab-mere { flex: 1 1 0; display: flex; }
+  .tab-mere summary { list-style: none; cursor: pointer; }
+  .tab-mere summary::-webkit-details-marker { display: none; }
+  .tab-mere .ti circle { fill: currentColor; stroke: none; }
+  /* Mørkt lag bag arket: et tryk udenfor lukker arket uden at ramme et link bagved */
+  .tab-mere[open]::before { content: ""; position: fixed; inset: 0; z-index: -1; background: rgba(14,15,20,.4); }
+  .tab-mere > div { position: fixed; left: 12px; right: 12px; bottom: calc(76px + env(safe-area-inset-bottom)); max-height: calc(100vh - 140px); overflow-y: auto;
+    background: var(--nat); padding: 8px; border-radius: var(--r-felt); box-shadow: 0 18px 40px -12px rgba(0,0,0,.6); }
+  .tab-mere > div a { display: flex; align-items: center; min-height: 48px; padding: 0 14px; border-radius: 8px; color: var(--kalk); text-decoration: none; font-weight: 500; }
+  .tab-mere > div a[aria-current] { background: rgba(230,223,211,.12); font-weight: 600; }
+  /* Lange ord (fx "DATABESKYTTELSESRÅDGIVERENS") må brydes, så intet løber ud over kanten */
+  main { overflow-wrap: break-word; }
+  /* Udvalgslinket over overskrifterne er lille; en usynlig kant gør det lettere at ramme */
+  .kicker a { padding: 10px 0; }
 }

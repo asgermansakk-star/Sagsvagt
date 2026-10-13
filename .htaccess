@@ -14,7 +14,11 @@ DirectoryIndex vagt.html index.html
   # Afslør ikke hele adressen (fx login-links) til andre sider
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
-  Header always set X-Content-Type-Options "nosniff"
+  # X-Content-Type-Options: nosniff sætter Simply selv
+  # Appens service worker og manifest skal altid tjekkes, så telefonerne får den nyeste udgave
+  <FilesMatch "^(sw\.js|site\.webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
   # Andre sider må ikke vise Sagsvagt i en ramme (beskytter login og Min avis mod "clickjacking").
   # Undtagelse: boksene (boks.html og boks/), som andre hjemmesider netop skal kunne indlejre.
   <If "%{REQUEST_URI} !~ m#^/boks(\.html|/)#">

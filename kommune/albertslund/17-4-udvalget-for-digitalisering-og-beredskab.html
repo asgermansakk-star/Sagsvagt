@@ -44,7 +44,7 @@
       <a href="../../kommune/">Kommuner</a>
       <details class="mere"><summary aria-current="page">Mere</summary><div>
         <a href="../../kommune/albertslund/kommunalbestyrelsen.html">Kommunalbestyrelsen</a>
-        <a href="../../kommune/albertslund/udvalg.html">Alle udvalg</a>
+        <a href="../../kommune/albertslund/udvalg.html" aria-current="page">Alle udvalg</a>
         <a href="../../kommune/albertslund/sted/">Steder</a>
         <a href="../../kommune/albertslund/hoeringer.html">Høringer</a>
         <a href="../../kommune/albertslund/partier.html">Sådan stemmer partierne</a>
@@ -52,6 +52,22 @@
       </div></details>
   </div></nav>
 </header>
+<nav class="tabbar" aria-label="Sektioner">
+  <a href="../../kommune/albertslund.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Forside</span></a>
+  <a href="../../kommune/albertslund/emne/"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span>Emner</span></a>
+  <a href="../../kommune/albertslund/soeg.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Søg</span></a>
+  <a href="../../kommune/albertslund/moeder.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg><span>Møder</span></a>
+  <details class="tab-mere"><summary aria-current="page"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/></svg><span>Mere</span></summary><div>
+    <a href="../../kommune/albertslund/bydel/">Bydele</a>
+    <a href="../../kommune/">Kommuner</a>
+    <a href="../../kommune/albertslund/kommunalbestyrelsen.html">Kommunalbestyrelsen</a>
+    <a href="../../kommune/albertslund/udvalg.html" aria-current="page">Alle udvalg</a>
+    <a href="../../kommune/albertslund/sted/">Steder</a>
+    <a href="../../kommune/albertslund/hoeringer.html">Høringer</a>
+    <a href="../../kommune/albertslund/partier.html">Sådan stemmer partierne</a>
+    <a href="../../om.html">Om Sagsvagt</a>
+  </div></details>
+</nav>
 <main>
 <div class="wrap"><div class="listing"><p class="kicker"><a href="../albertslund.html">Albertslund</a></p><h1>§17,4 Udvalget for digitalisering og beredskab</h1><p class="intro">Sager fra §17,4 Udvalget for digitalisering og beredskab i Albertslund Kommune, nyeste først.</p><article><p class="kicker"><span class="status besluttet">Besluttet 21. september</span></p><h2 class="hl"><a href="../../sag/albertslund-2026-09-21-17-4-udvalget-for-digitalisering-og-beredskab-2.html">§17,4 - Digitalisering og beredskab - Tema om kommunikation til borgerne om beredskab</a></h2><p class="dek">På dette temapunkt skal udvalget give input til det videre arbejde om borgerrettet kommunikation i forbindelse med kriser og beredskab.</p></article>
 <article><p class="kicker"><span class="status besluttet">Besluttet 21. september</span></p><h2 class="hl"><a href="../../sag/albertslund-2026-09-21-17-4-udvalget-for-digitalisering-og-beredskab-4.html">§17,4 - Digitalisering og beredskab - Orientering fra kommunaldirektøren</a></h2><p class="dek">Kommunaldirektøren indstiller, 1. at orienteringen tages til efterretning Sagsfremstilling A. Orientering om bevilgede midler fra KL til AI-understøttet kommunikation B.</p></article>
@@ -63,5 +79,8 @@
     <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="../../om.html">Om Sagsvagt</a> · <a href="../../boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="../../privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
 </footer>
+<script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});</script>
 </body>
 </html>

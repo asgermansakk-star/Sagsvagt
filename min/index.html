@@ -2,8 +2,14 @@
 <html lang="da">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Min avis – Sagsvagt</title>
+<!-- Appen: Min avis kan installeres på hjemmeskærmen (site.webmanifest) og virker uden net (../sw.js) -->
+<link rel="manifest" href="../site.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Sagsvagt">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#0E0F14">
 <link rel="icon" href="../favicon.ico" sizes="48x48">
@@ -168,6 +174,10 @@
   .skriv-boks button { font: 700 .9375rem var(--sans); border: 0; border-radius: 8px; padding: 11px 20px; background: var(--kalk); color: var(--nat); cursor: pointer; }
   .skriv-boks button:hover { background: var(--rosen); }
 
+  .app-link { margin: 18px 0 0; }
+  .app-link button { all: unset; cursor: pointer; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; min-height: 44px; display: inline-flex; align-items: center; }
+  .app-trin h3 { font-size: 1rem; margin: 0 0 8px; }
+  .app-trin ol { margin: 0; padding-left: 22px; display: grid; gap: 6px; line-height: 1.5; }
   dialog.skriv { width: min(720px, calc(100vw - 24px)); max-height: calc(100dvh - 24px); border: 0; border-radius: 10px; padding: 0; background: var(--kalk); color: var(--nat); box-shadow: 0 40px 100px -30px rgba(0,0,0,.6); }
   dialog.skriv::backdrop { background: rgba(14,15,20,.6); }
   .skriv-top { background: var(--moedet); color: var(--kalk); padding: 20px 24px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; position: sticky; top: 0; z-index: 1; }
@@ -292,6 +302,7 @@
         <a href="#mandagsmail" class="kun-lille">Din mandagsmail</a>
         <a href="../index.html">Gå til avisen</a>
         <a href="admin.html" id="admin-link" hidden>Tilmeldte</a>
+        <button type="button" id="app-knap" hidden>Installér appen</button>
         <button type="button" id="feedback-knap">Giv feedback</button>
         <button type="button" id="logud">Log ud</button>
       </div></details>
@@ -310,6 +321,7 @@
         <div class="knapper">
           <a class="btn moerk" href="../vagt.html?fra=min-avis">Skriv dig op</a>
         </div>
+        <p class="app-link" id="app-link" hidden><button type="button">Læg Sagsvagt på hjemmeskærmen som app</button></p>
       </div>
       <form class="login" novalidate onsubmit="return false" aria-describedby="login-note">
         <h2>Log ind</h2>
@@ -488,6 +500,24 @@
     </div>
   </dialog>
 
+  <dialog class="skriv" id="app" aria-labelledby="app-h">
+    <div class="skriv-top">
+      <div><h2 id="app-h">Sagsvagt som app</h2><p>Læg Min avis på hjemmeskærmen. Den åbner i fuld skærm, og de sager, du har læst, kan du åbne uden net.</p></div>
+      <button class="luk" type="button" data-luk aria-label="Luk">×</button>
+    </div>
+    <div class="dlg-form">
+      <div class="app-trin" id="app-ios" hidden>
+        <h3>På iPhone og iPad</h3>
+        <ol><li>Åbn siden i <b>Safari</b>.</li><li>Tryk på <b>Del</b>-knappen (firkanten med pilen op) nederst.</li><li>Vælg <b>Føj til hjemmeskærm</b>, og tryk <b>Tilføj</b>.</li></ol>
+      </div>
+      <div class="app-trin" id="app-andre">
+        <h3>På Android</h3>
+        <ol><li>Åbn siden i <b>Chrome</b>.</li><li>Tryk på menuen <b>⋮</b> øverst til højre.</li><li>Vælg <b>Installér app</b> eller <b>Føj til startskærm</b>.</li></ol>
+      </div>
+      <p style="margin:0;color:var(--muted)">Du er stadig logget ind, når du åbner appen. Den bruger ikke plads at tale om og kan fjernes som enhver anden app.</p>
+    </div>
+  </dialog>
+
   <dialog class="skriv" id="slet" aria-labelledby="slet-h">
     <div class="skriv-top">
       <div><h2 id="slet-h">Slet din konto</h2><p>Det kan ikke fortrydes.</p></div>
@@ -523,6 +553,25 @@
 <script>
 (async () => {
   const $ = (s) => document.querySelector(s);
+  // Appen: service workeren registreres med det samme (også på login-siden), så appen kan installeres og virker uden net
+  if ("serviceWorker" in navigator && !/github\.io$/.test(location.hostname)) navigator.serviceWorker.register("../sw.js", { scope: "../" }).catch(() => {});
+  // Chrome sender tilbuddet om at installere tidligt; det gemmes, til man trykker "Installér appen" i Konto
+  // "Installér appen" (i Konto og under login) vises kun i browseren, ikke i den installerede app. Android og computerens
+  // Chrome viser deres egen installationsboks; iPhone kræver Del → Føj til hjemmeskærm, som dialogen forklarer.
+  const iApp = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+  const erIos = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  let installer = null;
+  const visAppKnapper = (vis) => { for (const id of ["#app-knap", "#app-link"]) $(id).hidden = !vis; };
+  addEventListener("beforeinstallprompt", (e) => { e.preventDefault(); installer = e; visAppKnapper(!iApp); });
+  addEventListener("appinstalled", () => { installer = null; visAppKnapper(false); });
+  if (!iApp && erIos) visAppKnapper(true);
+  const installerApp = async () => {
+    if (installer) { installer.prompt(); const { outcome } = await installer.userChoice; if (outcome === "accepted") visAppKnapper(false); installer = null; return; }
+    $("#app-ios").hidden = !erIos; $("#app-andre").hidden = erIos;
+    $("#app").showModal();
+  };
+  $("#app-knap").addEventListener("click", installerApp);
+  $("#app-link button").addEventListener("click", installerApp);
   const esc = (s = "") => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const gemt = (k, v) => { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch { return null; } };
 
@@ -968,6 +1017,7 @@
     fbDlg.showModal(); $("#fb-tekst").focus();
   }
   $("#feedback-knap").addEventListener("click", aabnFeedback);
+
   // Konto-menuen lukker, når man vælger noget i den eller klikker et andet sted
   document.addEventListener("click", (e) => { const k = $(".konto"); if (k?.open && (!k.contains(e.target) || e.target.closest(".konto > div button, .konto > div a"))) k.open = false; });
   // Escape lukker menuen og sætter fokus tilbage på knappen; skift af side lukker den også

@@ -136,42 +136,78 @@ const publicerbar = (s) => !STOEJ.test(renTitel(s.titel)) && !/fortrolig/i.test(
 
 // ---------- Skabeloner ----------
 // Menuen på Københavns sider
-const kkMenu = (rod, aktiv) => `
-      <a href="${rod}index.html"${aktiv === "forside" ? ' aria-current="page"' : ""}>Forside</a>
-      <a href="${rod}emne/"${aktiv === "emne" ? ' aria-current="page"' : ""}>Emner</a>
-      <a href="${rod}bydel/"${aktiv === "bydel" ? ' aria-current="page"' : ""}>Bydele</a>
-      <a href="${rod}moeder.html"${aktiv === "moeder" ? ' aria-current="page"' : ""}>Møder</a>
-      <a href="${rod}soeg.html"${aktiv === "soeg" ? ' aria-current="page"' : ""}>Søg</a>
-      <a href="${rod}kommune/"${aktiv === "kommune" ? ' aria-current="page"' : ""}>Kommuner</a>
-      <details class="mere"><summary${["br", "udvalg", "sted", "hoeringer", "partier", "om"].includes(aktiv) ? ' aria-current="page"' : ""}>Mere</summary><div>
-        <a href="${rod}udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a>
-        <a href="${rod}udvalg/">Alle udvalg</a>
-        <a href="${rod}sted/">Steder</a>
-        <a href="${rod}hoeringer.html">Høringer</a>
-        <a href="${rod}partier.html">Sådan stemmer partierne</a>
-        <a href="${rod}om.html">Om Sagsvagt</a>
-      </div></details>`;
-// Menuen i en anden kommunes udgave (fx Viborg): de samme sektioner som København, men med kommunens egne sider.
+// Menuen som data, så computerens menu og telefonens tab-bjælke altid har de samme punkter.
+// hoved: punkterne i menuen ({ href, navn, id, ikon }). mere: punkterne under "Mere".
 // TOPRAAD: kommunens øverste råd ("Byrådet" eller "Kommunalbestyrelsen"), der står, hvor København har Borgerrepræsentationen.
 const TOPRAAD = new Map();
-const kommuneMenu = (rod, aktiv, k) => {
-  const r = `${rod}kommune/${k.slug}`, cur = (a) => (aktiv === a ? ' aria-current="page"' : "");
-  const top = TOPRAAD.get(k.navn);
+const menuData = (rod, k) => {
+  if (!k) return {
+    hoved: [
+      { href: `${rod}index.html`, navn: "Forside", id: "forside", ikon: "hjem" },
+      { href: `${rod}emne/`, navn: "Emner", id: "emne", ikon: "emner" },
+      { href: `${rod}bydel/`, navn: "Bydele", id: "bydel", ikon: "sted" },
+      { href: `${rod}moeder.html`, navn: "Møder", id: "moeder", ikon: "kalender" },
+      { href: `${rod}soeg.html`, navn: "Søg", id: "soeg", ikon: "soeg" },
+      { href: `${rod}kommune/`, navn: "Kommuner", id: "kommune", ikon: "kort" },
+    ],
+    mere: [
+      { href: `${rod}udvalg/borgerrepraesentationen.html`, navn: "Borgerrepræsentationen", id: "br" },
+      { href: `${rod}udvalg/`, navn: "Alle udvalg", id: "udvalg" },
+      { href: `${rod}sted/`, navn: "Steder", id: "sted" },
+      { href: `${rod}hoeringer.html`, navn: "Høringer", id: "hoeringer" },
+      { href: `${rod}partier.html`, navn: "Sådan stemmer partierne", id: "partier" },
+      { href: `${rod}om.html`, navn: "Om Sagsvagt", id: "om" },
+    ],
+  };
+  const r = `${rod}kommune/${k.slug}`, top = TOPRAAD.get(k.navn);
+  return {
+    hoved: [
+      { href: `${r}.html`, navn: "Forside", id: "k-forside", ikon: "hjem" },
+      { href: `${r}/emne/`, navn: "Emner", id: "k-emne", ikon: "emner" },
+      { href: `${r}/bydel/`, navn: "Bydele", id: "k-bydel", ikon: "sted" },
+      { href: `${r}/moeder.html`, navn: "Møder", id: "k-moeder", ikon: "kalender" },
+      { href: `${r}/soeg.html`, navn: "Søg", id: "k-soeg", ikon: "soeg" },
+      { href: `${rod}kommune/`, navn: "Kommuner", id: "kommune", ikon: "kort" },
+    ],
+    mere: [
+      ...(top ? [{ href: `${r}/${slug(top)}.html`, navn: top, id: "k-top" }] : []),
+      { href: `${r}/udvalg.html`, navn: "Alle udvalg", id: "k-udvalg" },
+      { href: `${r}/sted/`, navn: "Steder", id: "k-sted" },
+      { href: `${r}/hoeringer.html`, navn: "Høringer", id: "k-hoeringer" },
+      { href: `${r}/partier.html`, navn: "Sådan stemmer partierne", id: "k-partier" },
+      { href: `${rod}om.html`, navn: "Om Sagsvagt", id: "om" },
+    ],
+  };
+};
+const cur = (on) => (on ? ' aria-current="page"' : "");
+// Computerens menu: alle hovedpunkter og "Mere" som rullemenu
+const menu = (rod, aktiv, k) => {
+  const { hoved, mere } = menuData(rod, k);
   return `
-      <a href="${r}.html"${cur("k-forside")}>Forside</a>
-      <a href="${r}/emne/"${cur("k-emne")}>Emner</a>
-      <a href="${r}/bydel/"${cur("k-bydel")}>Bydele</a>
-      <a href="${r}/moeder.html"${cur("k-moeder")}>Møder</a>
-      <a href="${r}/soeg.html"${cur("k-soeg")}>Søg</a>
-      <a href="${rod}kommune/">Kommuner</a>
-      <details class="mere"><summary${["k-udvalg", "k-sted", "k-hoeringer", "k-partier"].includes(aktiv) ? ' aria-current="page"' : ""}>Mere</summary><div>
-        ${top ? `<a href="${r}/${slug(top)}.html">${esc(top)}</a>` : ""}
-        <a href="${r}/udvalg.html">Alle udvalg</a>
-        <a href="${r}/sted/">Steder</a>
-        <a href="${r}/hoeringer.html">Høringer</a>
-        <a href="${r}/partier.html">Sådan stemmer partierne</a>
-        <a href="${rod}om.html">Om Sagsvagt</a>
+      ${hoved.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n      ")}
+      <details class="mere"><summary${cur(mere.some((m) => m.id === aktiv))}>Mere</summary><div>
+        ${mere.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n        ")}
       </div></details>`;
+};
+// Telefonens tab-bjælke i bunden: de fire vigtigste og "Mere" med resten, som i Min avis
+const IKON = {
+  hjem: '<path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/>',
+  emner: '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
+  soeg: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
+  kalender: '<rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/>',
+  mere: '<circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/>',
+};
+const ikon = (n) => `<svg class="ti" viewBox="0 0 24 24" aria-hidden="true">${IKON[n]}</svg>`;
+const tabBjaelke = (rod, aktiv, k) => {
+  const { hoved, mere } = menuData(rod, k);
+  const faner = ["hjem", "emner", "soeg", "kalender"].map((i) => hoved.find((m) => m.ikon === i));
+  const iMere = [...hoved.filter((m) => !faner.includes(m)), ...mere];
+  return `<nav class="tabbar" aria-label="Sektioner">
+  ${faner.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${ikon(m.ikon)}<span>${esc(m.navn)}</span></a>`).join("\n  ")}
+  <details class="tab-mere"><summary${cur(iMere.some((m) => m.id === aktiv))}>${ikon("mere")}<span>Mere</span></summary><div>
+    ${iMere.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n    ")}
+  </div></details>
+</nav>`;
 };
 
 function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "website", ogBillede = "", kommune = null }) {
@@ -219,9 +255,10 @@ ${LOGO_SYMBOL}
       <a class="mh-ikon" href="${rod}min/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.2 4-4.9 7.2-4.9s5.9 1.7 7.2 4.9"/><circle cx="12" cy="12" r="10.2"/></svg><span>Log ind</span></a>
     </div>
   </div>
-  <nav class="mh-nav" aria-label="Hovedmenu"><div class="wrap">${kommune ? kommuneMenu(rod, aktiv, kommune) : kkMenu(rod, aktiv)}
+  <nav class="mh-nav" aria-label="Hovedmenu"><div class="wrap">${menu(rod, aktiv, kommune)}
   </div></nav>
 </header>
+${tabBjaelke(rod, aktiv, kommune)}
 <main>
 ${indhold}
 </main>
@@ -231,6 +268,9 @@ ${indhold}
     <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a> · <a href="${rod}boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="${rod}privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
 </footer>
+<script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});</script>
 </body>
 </html>
 `;
@@ -320,7 +360,7 @@ const beslutningsboks = (s) => s.status === "besluttet"
 const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="paa-mail">
   <h2 class="rubrik">Sagsvagt på mail</h2>
   <p>Hver mandag de sager, der handler om dine emner, fra cykelstier til lokalplaner. Vi søger de første testere i ${esc(kommune)}. Det er gratis.</p>
-  <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Bliv tester →</a>
+  <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Bliv tester</a>
 </aside>`;
 // Under sagen: tilbyd at følge netop sagens emne eller bydel. Linket udfylder emnet i tilmeldingen.
 const testerBoks = (s) => {
@@ -329,7 +369,7 @@ const testerBoks = (s) => {
   return `<aside class="paa-mail tester">
   <h2 class="rubrik">Få ${om} hver mandag</h2>
   <p>Sagsvagt læser alle dagsordener fra byråd, udvalg og lokaludvalg og sender dig de sager, der handler om det, du følger. Vi søger de første testere i ${esc(erKK(s) ? "København" : s.kommune)}. Det er gratis.</p>
-  <a href="../vagt.html?fra=sag${hvad ? `&amp;emne=${encodeURIComponent(hvad)}` : ""}${erKK(s) ? "" : `&amp;kommune=${encodeURIComponent(s.kommune)}`}#tilmeld">Bliv tester →</a>
+  <a href="../vagt.html?fra=sag${hvad ? `&amp;emne=${encodeURIComponent(hvad)}` : ""}${erKK(s) ? "" : `&amp;kommune=${encodeURIComponent(s.kommune)}`}#tilmeld">Bliv tester</a>
 </aside>`;
 };
 // Én linje pr. sag: hvor, overskrift og dato
@@ -378,13 +418,16 @@ async function main() {
   };
   // Tophistorien vælger redaktionen, ellers den vigtigste sag
   const top = sager.find((s) => s.id === red.tophistorie) || nyheder[0];
-  const anden = spred(nyheder.filter((s) => s !== top && !erLokaludvalg(s.udvalg)), 9, 2);
+  // Samme sag behandles ofte i flere udvalg; på forsiden står hver overskrift kun én gang
+  const tt = (s) => s.titel.toLowerCase();
+  const anden = spred(unikTitel(nyheder.filter((s) => s !== top && tt(s) !== tt(top) && !erLokaludvalg(s.udvalg))), 9, 2);
   const mellem = anden.slice(0, 3);
   const brugt = new Set([top, ...anden]);
   const bydele = spred(nyheder.filter((s) => erLokaludvalg(s.udvalg) && !brugt.has(s)), 6, 2);
   bydele.forEach((s) => brugt.add(s));
   const kommende = spred(sager.filter((s) => s.status === "kommer" && s.vaegt > 0 && !s.rutine).sort((a, b) => a.dato.localeCompare(b.dato) || b.score - a.score), 7, 2);
-  const kortNyt = [...anden.slice(3), ...afholdt.filter((s) => !brugt.has(s) && s.vaegt > 0 && !s.rutine).slice(0, 10)];
+  const brugteTitler = new Set([...brugt].map(tt));
+  const kortNyt = [...anden.slice(3), ...unikTitel(afholdt.filter((s) => !brugt.has(s) && !brugteTitler.has(tt(s)) && s.vaegt > 0 && !s.rutine)).slice(0, 10)];
   // Lederen vises i ti dage efter, den er skrevet
   const leder = red.leder?.tekst?.trim() && Math.abs(d(IDAG) - d(red.leder.dato || IDAG)) / 864e5 <= 10 ? red.leder : null;
   const kalender = {}; for (const s of kommende) (kalender[s.dato] ||= []).push(s);

@@ -52,6 +52,22 @@
       </div></details>
   </div></nav>
 </header>
+<nav class="tabbar" aria-label="Sektioner">
+  <a href="../../../kommune/broenderslev.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Forside</span></a>
+  <a href="../../../kommune/broenderslev/emne/" aria-current="page"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span>Emner</span></a>
+  <a href="../../../kommune/broenderslev/soeg.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Søg</span></a>
+  <a href="../../../kommune/broenderslev/moeder.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg><span>Møder</span></a>
+  <details class="tab-mere"><summary><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/></svg><span>Mere</span></summary><div>
+    <a href="../../../kommune/broenderslev/bydel/">Bydele</a>
+    <a href="../../../kommune/">Kommuner</a>
+    <a href="../../../kommune/broenderslev/byraadet.html">Byrådet</a>
+    <a href="../../../kommune/broenderslev/udvalg.html">Alle udvalg</a>
+    <a href="../../../kommune/broenderslev/sted/">Steder</a>
+    <a href="../../../kommune/broenderslev/hoeringer.html">Høringer</a>
+    <a href="../../../kommune/broenderslev/partier.html">Sådan stemmer partierne</a>
+    <a href="../../../om.html">Om Sagsvagt</a>
+  </div></details>
+</nav>
 <main>
 <div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>Byggeri og lokalplaner</h1><p class="intro">10 sager fra byrådet og udvalgene i Brønderslev Kommune, nyeste først.</p><ul class="chips"><li><a href="trafik.html">Trafik og cykler <span style="opacity:.6">(6)</span></a></li><li><a href="klima.html">Klima og grønt <span style="opacity:.6">(14)</span></a></li><li><a href="affald.html">Affald <span style="opacity:.6">(0)</span></a></li><li><a href="bolig.html">Boliger <span style="opacity:.6">(21)</span></a></li><li><a href="byggeri.html" aria-current="page">Byggeri og lokalplaner <span style="opacity:.6">(10)</span></a></li><li><a href="skole.html">Skoler og børn <span style="opacity:.6">(27)</span></a></li><li><a href="aeldre.html">Ældre og sundhed <span style="opacity:.6">(42)</span></a></li><li><a href="social.html">Det sociale <span style="opacity:.6">(8)</span></a></li><li><a href="budget.html">Budget og økonomi <span style="opacity:.6">(44)</span></a></li><li><a href="kultur.html">Kultur og fritid <span style="opacity:.6">(23)</span></a></li><li><a href="erhverv.html">Erhverv og job <span style="opacity:.6">(19)</span></a></li></ul><article><p class="kicker"><span class="status besluttet">Besluttet 5. oktober</span>, <a href="../../../kommune/broenderslev/teknisk-udvalg.html">Teknisk Udvalg, Brønderslev</a></p><h2 class="hl"><a href="../../../sag/broenderslev-2026-10-05-teknisk-udvalg-4.html">Beslutning om ændret prioritering af lokalplaner til igangsætning</a></h2><p class="dek">Sagsforløb: TU Fagforvaltningen for Klima, Teknik og Kultur har modtaget en ansøgning om at ændre prioriteringen af to lokalplanansøgninger på lokalplanlisten.</p></article>
 <article><p class="kicker"><span class="status besluttet">Besluttet 5. oktober</span>, <a href="../../../kommune/broenderslev/teknisk-udvalg.html">Teknisk Udvalg, Brønderslev</a></p><h2 class="hl"><a href="../../../sag/broenderslev-2026-10-05-teknisk-udvalg-5.html">Beslutning om forbud mod anvendelse af zink, kobber og bly i lokalplaner</a></h2><p class="dek">Sagsforløb: TU Anvendelse af zink, kobber og bly i byggeriet kan medføre forurening af vandmiljøet. Nye lokalplaner kan regulere bebyggelsens udformning, herunder materialevalg.</p></article>
@@ -70,5 +86,8 @@
     <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="../../../om.html">Om Sagsvagt</a> · <a href="../../../boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="../../../privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
 </footer>
+<script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});</script>
 </body>
 </html>
