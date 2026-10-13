@@ -46,7 +46,7 @@
   .lukket .knapper { display: flex; flex-wrap: wrap; gap: 10px; }
   .btn.moerk { background: var(--nat); color: var(--kalk); }
   .btn.moerk:hover { background: var(--grafit); }
-  .btn.linje { background: transparent; box-shadow: inset 0 0 0 1.5px var(--nat); }
+  .btn.linje { background: transparent; color: var(--nat); box-shadow: inset 0 0 0 1.5px var(--nat); }
   .btn.linje:hover { background: var(--kalk-lys); }
   .login { background: var(--moedet); color: var(--kalk); border-radius: 10px; padding: 30px 30px 26px; }
   .login h2 { font-size: 1.1875rem; margin: 0 0 4px; letter-spacing: -.02em; }
@@ -208,13 +208,19 @@
   .tak p { margin: 0 auto 22px; max-width: 32em; color: #3E3B40; }
 
   /* Velkomst ved første login */
-  .velkommen { background: var(--kalk-lys); border-left: 4px solid var(--vin); border-radius: 0 10px 10px 0; padding: 22px 26px 22px; margin: 0 0 28px; }
-  .velkommen h2 { font-family: var(--serif); font-weight: 600; font-size: 1.5rem; line-height: 1.2; letter-spacing: -.015em; margin: 0 0 6px; }
-  .velkommen > p { margin: 0 0 14px; max-width: 46em; color: #3E3B40; }
-  .velkommen ol { margin: 0 0 18px; padding-left: 22px; display: grid; gap: 6px; max-width: 46em; }
-  .velkommen li::marker { font-weight: 700; color: var(--vin); }
-  .velkommen .knapper { display: flex; flex-wrap: wrap; gap: 10px; }
-  .velkommen .btn { font-size: .875rem; padding: 10px 18px; border: 0; cursor: pointer; }
+  /* Velkomsten til nye testere: kort, kan lukkes med ×, og fylder ikke mere end nødvendigt */
+  .velkommen { position: relative; background: var(--kalk-lys); border-radius: var(--r-kort); padding: 20px 22px; margin: 0 0 28px; max-width: 44rem; }
+  .velkommen .v-maerke { margin: 0 0 4px; font-size: var(--fodnote); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--vin); }
+  .velkommen h2 { font-family: var(--sans); font-weight: 700; font-size: 1.25rem; line-height: 1.25; margin: 0 40px 14px 0; }
+  .velkommen .v-luk { all: unset; position: absolute; top: 10px; right: 10px; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 8px; font-size: 1.5rem; line-height: 1; color: var(--muted); cursor: pointer; }
+  .velkommen .v-luk:hover, .velkommen .v-luk:focus-visible { background: rgba(14,15,20,.06); color: var(--nat); }
+  .velkommen ol { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 10px; counter-reset: trin; }
+  .velkommen li { counter-increment: trin; display: grid; grid-template-columns: 26px 1fr; gap: 10px; align-items: baseline; line-height: 1.45; }
+  .velkommen li::before { content: counter(trin); display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--nat); color: var(--kalk); font-size: .8125rem; font-weight: 700; align-self: start; }
+  .velkommen li span { color: var(--muted); }
+  .velkommen .knapper { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; }
+  .velkommen .btn { font-size: .9375rem; min-height: 44px; padding: 10px 18px; }
+  .velkommen .v-link { all: unset; cursor: pointer; font-weight: 600; font-size: .9375rem; text-decoration: underline; text-underline-offset: 3px; min-height: 44px; display: inline-flex; align-items: center; }
 
   /* Feedback og slet konto */
   .dlg-form { padding: 22px 24px 24px; display: grid; gap: 14px; }
@@ -268,6 +274,9 @@
     .mh-nav .konto > div { position: fixed; left: 12px; right: 12px; top: auto; bottom: calc(80px + env(safe-area-inset-bottom)); min-width: 0; }
   }
   @media (max-width: 620px) {
+    .ed { padding-top: 22px; }
+    .ed h1 { font-size: 1.875rem; }
+    .ed .sum { font-size: 1.0625rem; }
     .tilpas { margin-left: 0; }
     /* På telefonen skal login-boksen kunne ses uden at scrolle */
     .lukket { padding-top: 28px; gap: 28px; }
@@ -275,9 +284,8 @@
     .soeg { margin-left: 0; width: 100%; } .soeg input { width: 100%; }
     .mh-nav .konto { margin-left: 0; }
     .to { grid-template-columns: 1fr; }
-    .velkommen { padding: 18px 18px 18px; margin-bottom: 22px; font-size: .9375rem; }
-    .velkommen h2 { font-size: 1.3rem; }
-    .velkommen .btn { padding: 9px 14px; }
+    .velkommen { padding: 16px 16px 14px; margin-bottom: 22px; font-size: .9375rem; }
+    .velkommen h2 { font-size: 1.125rem; }
   }
 </style>
 </head>
@@ -339,18 +347,17 @@
     <div class="wrap">
       <section class="ed" data-visning="forside" aria-labelledby="ed-h">
         <div class="velkommen" id="velkommen" hidden>
-          <h2 id="velkommen-h">Velkommen til Min avis.</h2>
-          <p>Du er en af de første, der prøver Sagsvagt. Sådan kommer du i gang:</p>
+          <p class="v-maerke">Du tester Sagsvagt</p>
+          <h2 id="velkommen-h">Gør avisen til din egen</h2>
+          <button type="button" class="v-luk" id="velkommen-luk" aria-label="Luk velkomsten">×</button>
           <ol>
-            <li><b>Vælg dine emner</b> under "Du følger". <span id="velkommen-forud"></span></li>
-            <li><b>Vælg din bydel og egne ord</b> under Tilpas, fx et gadenavn.</li>
-            <li><b>Gem sager med stjernen</b>, så ligger de under Gemte.</li>
+            <li><div><b>Vælg dine emner</b> <span id="velkommen-forud"></span></div></li>
+            <li><div><b>Tilføj din bydel</b> og egne ord, fx din gade</div></li>
+            <li><div><b>Gem sager med stjernen</b>, så finder du dem under Gemte</div></li>
           </ol>
-          <p>Tryk på en sag for at læse et kort resumé. Hele sagen ligger hos kommunen. Det er en testversion, så sig til, hvad der virker, og hvad der mangler.</p>
           <div class="knapper">
             <button type="button" class="btn moerk" id="velkommen-tilpas">Tilpas min avis</button>
-            <button type="button" class="btn linje" id="velkommen-fb">Giv feedback</button>
-            <button type="button" class="btn linje" id="velkommen-luk">Forstået</button>
+            <button type="button" class="v-link" id="velkommen-fb">Sig, hvad du synes</button>
           </div>
         </div>
         <p class="kicker" id="ed-kicker"></p>
@@ -1002,7 +1009,7 @@
   function visVelkomst(forud) {
     if (!server || profil.velkommen) return;
     // Emnenavnene indeholder selv "og" (Skoler og børn), så de skrives som en liste med kommaer
-    $("#velkommen-forud").textContent = forud.length ? `Ud fra din tilmelding har vi valgt: ${forud.join(", ")}.` : "";
+    $("#velkommen-forud").textContent = forud.length ? `(vi har valgt ${forud.join(", ").toLowerCase()} ud fra din tilmelding)` : "";
     $("#velkommen").hidden = false;
   }
   $("#velkommen-luk").addEventListener("click", () => { profil.velkommen = true; gem(); $("#velkommen").hidden = true; });
