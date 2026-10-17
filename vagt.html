@@ -685,6 +685,26 @@
   // Vælger man en kommune i forslagslisten, går vi direkte videre
   $("#fk").addEventListener("change", () => { if (KOMMUNER[$("#fk").value.trim().toLowerCase()]) findKommune(false); });
   $("#fk").addEventListener("input", () => { $("#fk-fejl").textContent = ""; });
+  // Kommunerne i tilmeldingen: fritekst ("lyngby", "Kbh, Aarhus Kommune") bliver til de rigtige navne fra listen.
+  // Et navn passer, hvis det er hele navnet, eller hvis kun én kommune (eller en del af et bindestregsnavn) begynder sådan.
+  // Mellemrum og bindestreg tæller ens ("Høje Taastrup" = "Høje-Taastrup"), og gamle eller lange navne har et alias
+  const nøgle = (t) => t.toLowerCase().replace(/[\s-]+/g, "-");
+  const NAVNE = Object.fromEntries([...document.querySelectorAll("#kommune-liste option")].map((o) => [nøgle(o.value), o.value]));
+  const ALIAS = { kbh: "københavn", "københavns": "københavn", "århus": "aarhus", "ålborg": "aalborg", "åbenrå": "aabenraa", "bornholms": "bornholm", "bornholms-regionskommune": "bornholm" };
+  const kommuneDele = (t) => t.split(/,|\/|\s+og\s+/i).map((x) => x.trim()).filter(Boolean);
+  const find = (v) => {
+    v = ALIAS[v] || v;
+    if (NAVNE[v]) return NAVNE[v];
+    const hit = v.length >= 3 ? Object.keys(NAVNE).filter((n) => n.startsWith(v) || n.split("-").some((d) => d.startsWith(v))) : [];
+    return hit.length === 1 ? NAVNE[hit[0]] : null;
+  };
+  const rigtigKommune = (t) => {
+    const v = nøgle(t.trim().replace(/\.+$/, "").replace(/[\s-]+(regions)?kommunes?$/i, ""));
+    // "København V", "Aarhus C": prøv også uden postdistriktet til sidst
+    return find(v) || find(v.replace(/-[a-zæøå]{1,2}$/, ""));
+  };
+  // Når man forlader feltet, rettes de navne, vi kan genkende, så man kan se, hvad der bliver sendt
+  $("#kommuner").addEventListener("change", (e) => { e.target.value = kommuneDele(e.target.value).map((t) => rigtigKommune(t) || t).join(", "); });
   // Fra en kommuneside (kommune/aarhus.html): udfyld kommunen, og sig, at det er den, de skriver sig op til
   const kommuneFra = (new URLSearchParams(location.search).get("kommune") || "").slice(0, 60);
   if (kommuneFra) {
@@ -718,6 +738,14 @@
       msg.className = "form-msg err"; msg.textContent = "Skriv en gyldig e-mailadresse, fx navn@eksempel.dk."; form.email.focus(); return;
     }
     f.classList.remove("bad");
+    // Kommunerne skal stå med deres rigtige navn, så Min avis kan finde dem; ukendte navne stopper tilmeldingen
+    const dele = kommuneDele(form.kommuner.value), ukendte = dele.filter((t) => !rigtigKommune(t)), kf = form.kommuner.parentElement;
+    if (ukendte.length) {
+      kf.classList.add("bad");
+      msg.className = "form-msg err"; msg.textContent = `Vi kan ikke finde ${ukendte.join(" og ")}. Skriv kommunens navn, fx Aarhus eller Lyngby-Taarbæk.`; form.kommuner.focus(); return;
+    }
+    kf.classList.remove("bad");
+    form.kommuner.value = [...new Set(dele.map(rigtigKommune))].join(", ");
     const data = Object.fromEntries(new FormData(form));
     data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
     data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table"; data._cc = SIGNUP_MAIL; data._autoresponse = AUTOSVAR;

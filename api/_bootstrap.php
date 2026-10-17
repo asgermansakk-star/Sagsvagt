@@ -77,6 +77,8 @@ function db(): PDO {
         id $id, email VARCHAR(254) NOT NULL UNIQUE, kommuner VARCHAR(500) NOT NULL DEFAULT '', emner $tekst, rolle VARCHAR(100) NOT NULL DEFAULT '',
         kilde VARCHAR(100) NOT NULL DEFAULT '', status VARCHAR(20) NOT NULL DEFAULT 'tilmeldt', oprettet VARCHAR(25) NOT NULL,
         inviteret VARCHAR(25) NULL, adgangskode VARCHAR(255) NULL, profil $tekst NULL, sidst_inde VARCHAR(25) NULL)");
+    // mail_fejl: hvornår redaktionen markerede, at mails til adressen kommer retur (kolonnen kom til senere)
+    try { $pdo->query('SELECT mail_fejl FROM abonnenter LIMIT 1'); } catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN mail_fejl VARCHAR(25) NULL'); }
     $pdo->exec("CREATE TABLE IF NOT EXISTS tokens (
         id $id, abonnent_id INT NOT NULL, type VARCHAR(10) NOT NULL, hash CHAR(64) NOT NULL UNIQUE, udloeber VARCHAR(25) NOT NULL, brugt VARCHAR(25) NULL)");
     $pdo->exec("CREATE TABLE IF NOT EXISTS forsoeg (noegle VARCHAR(200) NOT NULL, tid INT NOT NULL)");
@@ -149,14 +151,16 @@ function find_token(string $noegle): ?array {
 // Det er nødvendigt, fordi sagsvagt.dk har en streng DMARC-regel (p=reject): mails fra PHP's mail() bliver ikke godkendt
 // med SPF/DKIM og bliver derfor afvist af fx Outlook. 'php' bruger mail() (kun som nødløsning), 'fil' gemmer mailen som
 // .eml-fil (til lokal test).
-function send_mail(string $til, string $emne, string $html, string $tekst): bool {
+// $svarTil: hvem et svar skal gå til (fx brugeren bag en feedback); ellers redaktionens svaradresse
+function send_mail(string $til, string $emne, string $html, string $tekst, string $svarTil = ''): bool {
     global $K;
     $m = $K['mail'];
+    $svarTil = ren_email($svarTil) ?: $m['svar_til']; // ren_email afviser linjeskift, så headeren ikke kan manipuleres
     $graense = 'sv' . bin2hex(random_bytes(12));
     $emneKodet = '=?UTF-8?B?' . base64_encode($emne) . '?=';
     $fraNavn = '=?UTF-8?B?' . base64_encode($m['fra_navn']) . '?=';
     $domaene = substr(strrchr($m['fra'], '@'), 1);
-    $hoveder = "From: $fraNavn <{$m['fra']}>\r\nReply-To: {$m['svar_til']}\r\nDate: " . date('r') . "\r\nMessage-ID: <" . bin2hex(random_bytes(16)) . "@$domaene>\r\n"
+    $hoveder = "From: $fraNavn <{$m['fra']}>\r\nReply-To: $svarTil\r\nDate: " . date('r') . "\r\nMessage-ID: <" . bin2hex(random_bytes(16)) . "@$domaene>\r\n"
              . "MIME-Version: 1.0\r\nContent-Type: multipart/alternative; boundary=\"$graense\"\r\n";
     $krop = "--$graense\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($tekst))
           . "--$graense\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($html)) . "--$graense--\r\n";

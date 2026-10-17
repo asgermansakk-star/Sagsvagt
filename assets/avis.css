@@ -120,6 +120,10 @@ p { margin: 0; }
 .decision.kommer { border-top-color: var(--indigo); }
 .decision b { display: block; font-size: var(--fodnote); letter-spacing: .04em; text-transform: uppercase; color: var(--vin); margin-bottom: 4px; }
 .decision.kommer b { color: var(--indigo); }
+/* Når beslutningen er forkortet: en tydelig linje under teksten med et link til hele beslutningen længere nede */
+.kf-forkortet { display: block; margin-top: 8px; font-size: var(--fodnote); color: var(--muted); }
+.kf-mere-link { display: inline-block; padding: 12px 0; margin: -12px 0; font-weight: 600; color: var(--nat); text-decoration: underline; text-underline-offset: 3px; }
+.kf-mere-link::after { content: " ↓"; }
 .udfald { font: 600 var(--sekundaer)/1.5 var(--sans); margin: 16px 0 0; padding: 10px 0 0; border-top: 2px solid var(--vin); max-width: 44em; }
 .udfald.kommer { border-top-color: var(--indigo); }
 

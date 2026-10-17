@@ -22,6 +22,8 @@ function push_db(): PDO {
         p256dh VARCHAR(200) NOT NULL, auth VARCHAR(60) NOT NULL, oprettet VARCHAR(25) NOT NULL, sidst_sendt VARCHAR(25) NULL, fejl INT NOT NULL DEFAULT 0)");
     $db->exec("CREATE TABLE IF NOT EXISTS push_indstillinger (noegle VARCHAR(50) NOT NULL PRIMARY KEY, vaerdi TEXT NOT NULL)");
     $db->exec("CREATE TABLE IF NOT EXISTS push_set (sag_id VARCHAR(190) NOT NULL PRIMARY KEY)");
+    // Følg sagen: sager, vi har set som besluttet, så en gemt sag kun giver besked én gang
+    $db->exec("CREATE TABLE IF NOT EXISTS push_besluttet (sag_id VARCHAR(190) NOT NULL PRIMARY KEY)");
     $klar = true;
     return $db;
 }
@@ -122,12 +124,47 @@ function push_til_abonnent(int $abonnent_id, array $besked): array {
 
 // ---------- Udsendelse efter nye sager ----------
 // Kaldes efter besøg (api/besoeg.php), så den kører kort efter, at robotten har lagt nye sager op.
+// Sagerne kommer fra alle åbne kommuner: København i assets/sager.json, de andre i kommune/<slug>/sager.json.
 // Sager, der ikke er set før, bliver husket; er udsendelsen slået fra, huskes de bare, så der ikke kommer
-// en lavine af gamle sager, når den slås til. Hver abonnent får højst én besked pr. opdatering.
+// en lavine af gamle sager, når den slås til. Det samme gælder en kommune, der lige er åbnet.
+// Hver abonnent får højst én besked pr. opdatering: er en sag, de følger (har gemt), blevet besluttet, handler
+// beskeden om den; ellers om de nye sager i deres kommuner om deres emner, ord og bydel.
+function push_sagsfiler(): array {
+    $rod = dirname(__DIR__);
+    $filer = ['koebenhavn' => "$rod/assets/sager.json"];
+    foreach (glob("$rod/kommune/*/sager.json") ?: [] as $f) $filer[basename(dirname($f))] = $f;
+    return $filer;
+}
+function push_alle_sager(array $filer): array {
+    $alle = [];
+    foreach ($filer as $slug => $f) {
+        $data = json_decode((string)@file_get_contents($f), true);
+        foreach ($data['sager'] ?? [] as $s) { $s['ks'] = $slug; $alle[] = $s; }
+    }
+    return $alle;
+}
+// Kommunerne, en abonnent følger: valget i Min avis (profil.kommuner), ellers de åbne kommuner fra tilmeldingen
+// (fritekst som "Lyngby, Aarhus"), ellers København
+function push_kommuner(array $profil, string $tilmelding, array $aabne): array {
+    $valgt = array_values(array_intersect((array)($profil['kommuner'] ?? (isset($profil['kommune']) ? [$profil['kommune']] : [])), $aabne));
+    if ($valgt) return $valgt;
+    $alias = ['kbh' => 'koebenhavn', 'koebenhavns' => 'koebenhavn', 'lyngby' => 'lyngby-taarbaek', 'taastrup' => 'hoeje-taastrup'];
+    $fra = [];
+    foreach (preg_split('/,|\/|\s+og\s+/iu', $tilmelding) as $t) {
+        $s = mb_strtolower(trim($t));
+        $s = preg_replace('/\s+kommunes?$/u', '', $s);
+        $s = trim(preg_replace('/[^a-z0-9]+/', '-', str_replace(['æ', 'ø', 'å'], ['ae', 'oe', 'aa'], $s)), '-');
+        $s = $alias[$s] ?? $s;
+        if ($s !== '' && in_array($s, $aabne, true)) $fra[] = $s;
+    }
+    return $fra ? array_values(array_unique($fra)) : ['koebenhavn'];
+}
 function push_maaske_koer(bool $tving = false): array {
-    $fil = dirname(__DIR__) . '/assets/sager.json';
-    $mtime = (string)@filemtime($fil);
-    if (!$mtime || (!$tving && push_hent('sager_mtime') === $mtime)) return ['koert' => false];
+    $filer = push_sagsfiler();
+    $mtime = md5(implode('|', array_map(fn($f) => (string)@filemtime($f), $filer)));
+    if (!$tving && push_hent('sager_mtime') === $mtime) return ['koert' => false];
+    // Filerne lander ikke samtidig (ni kommuner), så højst én kørsel pr. halve time; ellers kan én person få flere beskeder
+    if (!$tving && time() - (int)push_hent('sidst_koert', '0') < 1800) return ['koert' => false, 'venter' => true];
     // Lås, så to samtidige besøg ikke sender to gange
     $db = push_db(); $nu = time();
     if (push_hent('laas') === null) push_saet('laas', '0');
@@ -137,33 +174,59 @@ function push_maaske_koer(bool $tving = false): array {
     if ($l->rowCount() === 0) return ['koert' => false, 'laast' => true];
     try {
         @set_time_limit(90);
-        $data = json_decode((string)file_get_contents($fil), true);
-        $sager = $data['sager'] ?? [];
+        push_saet('sidst_koert', (string)time());
+        $sager = push_alle_sager($filer);
         $kendte = array_flip($db->query('SELECT sag_id FROM push_set')->fetchAll(PDO::FETCH_COLUMN));
-        $foerste = !$kendte;
+        // En kommune, vi ikke har set en eneste sag fra før, er lige åbnet: dens sager huskes kun
+        $setKommuner = [];
+        foreach ($sager as $s) if (isset($kendte[$s['id']])) $setKommuner[$s['ks']] = true;
         $nye = array_values(array_filter($sager, fn($s) => !isset($kendte[$s['id']])));
+        // Første gang er det tusindvis af rækker, så de skrives i én transaktion (hurtigt, og alt eller intet)
+        $db->beginTransaction();
         $ins = $db->prepare('INSERT INTO push_set (sag_id) VALUES (?)');
         foreach ($nye as $s) { try { $ins->execute([$s['id']]); } catch (PDOException $e) {} }
+        $nye = array_values(array_filter($nye, fn($s) => isset($setKommuner[$s['ks']])));
+        // Følg sagen: sager, der er blevet besluttet siden sidst. Første gang huskes de kun.
+        $foerBesluttet = array_flip($db->query('SELECT sag_id FROM push_besluttet')->fetchAll(PDO::FETCH_COLUMN));
+        $besluttetFoerste = !$foerBesluttet;
+        $nyBesluttet = [];
+        $insB = $db->prepare('INSERT INTO push_besluttet (sag_id) VALUES (?)');
+        foreach ($sager as $s) {
+            if (($s['st'] ?? '') !== 'besluttet' || isset($foerBesluttet[$s['id']])) continue;
+            try { $insB->execute([$s['id']]); } catch (PDOException $e) {}
+            if (isset($setKommuner[$s['ks']])) $nyBesluttet[$s['id']] = $s;
+        }
+        $db->commit();
         push_saet('sager_mtime', $mtime);
+        if ($besluttetFoerste) $nyBesluttet = [];
         // Første gang og mens udsendelsen er slået fra, huskes sagerne kun
-        if ($foerste || !push_aktiv() || !$nye) return ['koert' => true, 'nye' => count($nye), 'sendt' => 0, 'aktiv' => push_aktiv()];
+        if (!$kendte || !push_aktiv() || (!$nye && !$nyBesluttet)) return ['koert' => true, 'nye' => count($nye), 'besluttet' => count($nyBesluttet), 'sendt' => 0, 'aktiv' => push_aktiv()];
         // Kun nye sager fra den seneste måned, og ikke rutinesager
         $graense = gmdate('Y-m-d', time() - 30 * 86400);
         $nye = array_values(array_filter($nye, fn($s) => ($s['dato'] ?? '') >= $graense && empty($s['r'])));
-        $modtagere = $db->query("SELECT DISTINCT a.id, a.profil FROM push_abonnementer p JOIN abonnenter a ON a.id = p.abonnent_id WHERE a.status = 'aktiv'")->fetchAll();
+        $aabne = array_keys($filer);
+        $modtagere = $db->query("SELECT DISTINCT a.id, a.profil, a.kommuner FROM push_abonnementer p JOIN abonnenter a ON a.id = p.abonnent_id WHERE a.status = 'aktiv'")->fetchAll();
         $sendt = 0;
         foreach ($modtagere as $m) {
-            $hits = push_match($nye, json_decode((string)$m['profil'], true) ?: []);
-            if (!$hits) continue;
-            $n = count($hits);
-            $r = push_til_abonnent((int)$m['id'], [
-                'title' => $n === 1 ? 'Ny sag om det, du følger' : "$n nye sager om det, du følger",
-                'body' => $hits[0]['t'] . ($n > 1 ? ' og ' . ($n - 1) . ($n === 2 ? ' sag mere' : ' sager mere') : ''),
-                'url' => '/min/#sager', 'tag' => 'sagsvagt-nye',
-            ]);
-            $sendt += $r['sendt'];
+            $profil = json_decode((string)$m['profil'], true) ?: [];
+            $fulgte = array_values(array_filter(array_map(fn($id) => $nyBesluttet[$id] ?? null, (array)($profil['gemte'] ?? []))));
+            if ($fulgte) {
+                $n = count($fulgte);
+                $besked = ['title' => $n === 1 ? 'En sag, du følger, er besluttet' : "$n sager, du følger, er besluttet",
+                    'body' => $fulgte[0]['t'] . (!empty($fulgte[0]['ud']) ? ': ' . $fulgte[0]['ud'] : '') . ($n > 1 ? ' og ' . ($n - 1) . ($n === 2 ? ' sag mere' : ' sager mere') : ''),
+                    'url' => '/min/#gemte', 'tag' => 'sagsvagt-besluttet'];
+            } else {
+                $mine = push_kommuner($profil, (string)$m['kommuner'], $aabne);
+                $hits = push_match(array_values(array_filter($nye, fn($s) => in_array($s['ks'], $mine, true))), $profil);
+                if (!$hits) continue;
+                $n = count($hits);
+                $besked = ['title' => $n === 1 ? 'Ny sag om det, du følger' : "$n nye sager om det, du følger",
+                    'body' => $hits[0]['t'] . ($n > 1 ? ' og ' . ($n - 1) . ($n === 2 ? ' sag mere' : ' sager mere') : ''),
+                    'url' => '/min/#sager', 'tag' => 'sagsvagt-nye'];
+            }
+            $sendt += push_til_abonnent((int)$m['id'], $besked)['sendt'];
         }
-        return ['koert' => true, 'nye' => count($nye), 'modtagere' => count($modtagere), 'sendt' => $sendt, 'aktiv' => true];
+        return ['koert' => true, 'nye' => count($nye), 'besluttet' => count($nyBesluttet), 'modtagere' => count($modtagere), 'sendt' => $sendt, 'aktiv' => true];
     } finally {
         push_saet('laas', '0');
     }

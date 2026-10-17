@@ -25,7 +25,7 @@
   table.liste th, table.liste td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
   table.liste thead th { font-size: .75rem; color: var(--muted); border-bottom: 2px solid var(--nat); white-space: nowrap; }
   .st { font-size: .72rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; background: var(--kalk-lys); white-space: nowrap; }
-  .st.aktiv { background: #cfe3d4; color: #1d5b35; } .st.inviteret { background: var(--lyng); color: var(--blaek); } .st.afmeldt { background: var(--rule); color: var(--muted); }
+  .st.aktiv { background: #cfe3d4; color: #1d5b35; } .st.inviteret { background: var(--lyng); color: var(--blaek); } .st.afmeldt { background: var(--rule); color: var(--muted); } .st.fejl { background: var(--rosen); color: var(--bordeaux); }
   .lille { color: var(--muted); font-size: .8125rem; }
   .mini-knap { font: 600 .78rem var(--sans); background: none; border: 0; color: var(--vin); cursor: pointer; padding: 0; }
   details.import { margin: 26px 0 0; border-top: 2px solid var(--nat); padding-top: 12px; }
@@ -78,7 +78,7 @@
     <details class="import" id="push-boks">
       <summary id="push-titel">Push-beskeder</summary>
       <p class="lille" id="push-status">Henter …</p>
-      <p class="lille">Testerne kan slå beskeder til under Konto i Min avis. Når udsendelsen er slået til, får hver af dem højst én besked, hver gang avisen bliver opdateret, med de nye sager om deres emner, ord og bydel. Mens den er slået fra, sendes der intet til andre end testbeskeden til den, der lige har slået beskeder til.</p>
+      <p class="lille">Testerne kan slå beskeder til under Konto i Min avis. Når udsendelsen er slået til, får hver af dem højst én besked, hver gang avisen bliver opdateret: om en gemt sag, der er blevet besluttet, eller ellers om de nye sager om deres emner, ord og bydel i de kommuner, de følger. Mens den er slået fra, sendes der intet til andre end testbeskeden til den, der lige har slået beskeder til.</p>
       <div class="handl-raekke">
         <button class="knap" id="push-aktiv" type="button">Slå udsendelse til</button>
         <button class="knap sek" id="push-koer" type="button">Kør udsendelsen nu</button>
@@ -120,7 +120,8 @@
     }).filter(Boolean);
     return l.length ? l : [INGEN];
   }
-  var kanInviteres = function (a) { return a.status === "tilmeldt" || a.status === "inviteret"; };
+  // Markerede adresser (mails kom retur) springes over, til adressen er rettet
+  var kanInviteres = function (a) { return (a.status === "tilmeldt" || a.status === "inviteret") && !a.mail_fejl; };
   function iOmraade(a) { var o = $("#omraade").value; return !o || omraader(a.kommuner).indexOf(o) > -1; }
   function fyldOmraader() {
     var valgt = $("#omraade").value, t = {};
@@ -176,13 +177,15 @@
   function vis() {
     var kunNye = $("#kun-nye").checked;
     $("#raekker").innerHTML = data.filter(function (a) { return iOmraade(a) && (!kunNye || kanInviteres(a)); }).map(function (a) {
-      var kanInv = a.status === "tilmeldt" || a.status === "inviteret";
+      var kanInv = kanInviteres(a);
       return "<tr><td>" + (kanInv ? '<input type="checkbox" class="valg" value="' + a.id + '" aria-label="Vælg ' + esc(a.email) + '">' : "") + "</td>"
         + "<td>" + esc(a.email) + (a.kilde ? '<br><span class="lille">' + esc(a.kilde) + "</span>" : "") + "</td>"
-        + '<td><span class="st ' + esc(a.status) + '">' + esc(NAVN[a.status] || a.status) + "</span>" + (a.inviteret && a.status === "inviteret" ? '<br><span class="lille">' + dato(a.inviteret) + "</span>" : "") + (a.sidst_inde ? '<br><span class="lille">Sidst inde ' + dato(a.sidst_inde) + "</span>" : "") + "</td>"
+        + '<td><span class="st ' + esc(a.status) + '">' + esc(NAVN[a.status] || a.status) + "</span>" + (a.inviteret && a.status === "inviteret" ? '<br><span class="lille">' + dato(a.inviteret) + "</span>" : "") + (a.sidst_inde ? '<br><span class="lille">Sidst inde ' + dato(a.sidst_inde) + "</span>" : "") + (a.mail_fejl ? '<br><span class="st fejl" title="Markeret ' + dato(a.mail_fejl) + '">Mail kom retur</span>' : "") + "</td>"
         + "<td>" + esc(a.kommuner) + (a.emner ? '<br><span class="lille">' + esc(a.emner) + "</span>" : "") + "</td>"
         + "<td>" + esc(a.rolle) + "</td><td>" + dato(a.oprettet) + "</td>"
-        + '<td>' + (a.status !== "afmeldt" ? '<button class="mini-knap" data-afmeld="' + a.id + '" type="button">Afmeld</button><br>' : "") + '<button class="mini-knap" data-slet="' + a.id + '" type="button">Slet</button></td></tr>';
+        + '<td><button class="mini-knap" data-ret="' + a.id + '" type="button">Ret e-mail</button><br>'
+        + '<button class="mini-knap" data-fejl="' + a.id + '" data-til="' + (a.mail_fejl ? "" : "1") + '" type="button">' + (a.mail_fejl ? "Mail virker" : "Mail kom retur") + '</button><br>'
+        + (a.status !== "afmeldt" ? '<button class="mini-knap" data-afmeld="' + a.id + '" type="button">Afmeld</button><br>' : "") + '<button class="mini-knap" data-slet="' + a.id + '" type="button">Slet</button></td></tr>';
     }).join("") || '<tr><td colspan="7" class="lille">Ingen.</td></tr>';
     opdaterKnap();
   }
@@ -217,6 +220,11 @@
       inviter({ ids: ids }, "Send invitation til " + ids.length + (o ? " i " + o : " i alle områder") + ", der ikke har en konto endnu? De får en mail med et link til at oprette en adgangskode." + (ids.length > 200 ? " Der sendes højst 200 ad gangen." : ""));
     }
     else if ((id = t.getAttribute("data-afmeld"))) { if (confirm("Afmeld? De får ingen mails og kan ikke logge ind.")) api("admin/status.php", { id: +id, handling: "afmeld" }).then(hent).catch(function (e) { besked(e.message, "fejl"); }); }
+    else if ((id = t.getAttribute("data-ret"))) {
+      var a = data.find(function (x) { return x.id == id; }), ny = prompt("Ny e-mailadresse til " + (a ? a.email : "") + ":", a ? a.email : "");
+      if (ny && (!a || ny.trim() !== a.email)) api("admin/status.php", { id: +id, handling: "ret_email", email: ny }).then(function () { besked("E-mailadressen er rettet.", "ok"); return hent(); }).catch(function (e) { besked(e.message, "fejl"); });
+    }
+    else if ((id = t.getAttribute("data-fejl"))) api("admin/status.php", { id: +id, handling: "mail_fejl", til: !!t.getAttribute("data-til") }).then(hent).catch(function (e) { besked(e.message, "fejl"); });
     else if ((id = t.getAttribute("data-slet"))) { if (confirm("Slet helt? Det kan ikke fortrydes.")) api("admin/status.php", { id: +id, handling: "slet" }).then(hent).catch(function (e) { besked(e.message, "fejl"); }); }
     else if (t.id === "importer") api("admin/importer.php", { tekst: $("#import-tekst").value }).then(function (j) { besked(j.nye + " lagt ind, " + j.opdateret + " opdateret, " + j.fandtes + " fandtes allerede.", "ok"); $("#import-tekst").value = ""; return hent(); }).catch(function (e) { besked(e.message, "fejl"); });
     else if (t.id === "start") api("admin/start.php").then(function () { $("#login-besked").className = "besked ok"; $("#login-besked").textContent = "Har redaktionens e-mail ingen konto endnu, er der sendt en invitation til den."; }).catch(function (e) { $("#login-besked").className = "besked fejl"; $("#login-besked").textContent = e.message; });

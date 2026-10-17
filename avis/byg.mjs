@@ -351,7 +351,8 @@ function kortBeslutning(t, max = 520) {
   return (tekst + optalt).trim();
 }
 // Link til hele beslutningen længere nede, når kortformen ikke har det hele med
-const helBeslutning = (s, vist) => s.beslutning.replace(/\s+/g, " ").length > vist.length + 40 ? ` <a class="kf-mere-link" href="#beslutning">Læs hele beslutningen</a>` : "";
+// Jakob fra Amager Vest troede, at teksten var skåret af ved en fejl, så linket siger nu, at den er forkortet
+const helBeslutning = (s, vist) => s.beslutning.replace(/\s+/g, " ").length > vist.length + 40 ? `<span class="kf-forkortet">Beslutningen er forkortet her. <a class="kf-mere-link" href="#beslutning">Læs hele beslutningen</a></span>` : "";
 
 const beslutningsboks = (s) => s.status === "besluttet"
   ? `<div class="decision"><b>Beslutning</b>${esc(s.udfald || kortBeslutning(s.beslutning, 360))}${afstemning(s, true)}</div>`

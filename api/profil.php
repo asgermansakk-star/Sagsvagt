@@ -14,8 +14,8 @@ $profil = [
     'bydel' => mb_substr(trim((string)($d['bydel'] ?? '')), 0, 100),
     'gemte' => $tekster($d['gemte'] ?? [], 300, 120),
     'velkommen' => !empty($d['velkommen']),
-    // Kommunen (slug fra kommune/aabne.json) og profilikonet (id i Min avis); kun bogstaver, tal og bindestreg
-    'kommune' => substr(preg_replace('/[^a-z0-9-]/', '', (string)($d['kommune'] ?? '')), 0, 40),
+    // Kommunerne (slugs fra kommune/aabne.json) og profilikonet (id i Min avis); kun bogstaver, tal og bindestreg
+    'kommuner' => array_values(array_unique(array_filter(array_map(fn($x) => substr(preg_replace('/[^a-z0-9-]/', '', (string)$x), 0, 40), is_array($d['kommuner'] ?? null) ? array_slice($d['kommuner'], 0, 20) : []), 'strlen'))),
     'ikon' => substr(preg_replace('/[^a-z0-9-]/', '', (string)($d['ikon'] ?? '')), 0, 20),
 ];
 db()->prepare('UPDATE abonnenter SET profil = ? WHERE id = ?')->execute([json_encode($profil, JSON_UNESCAPED_UNICODE), $b['id']]);

@@ -76,6 +76,16 @@
   .panel { background: var(--kalk-lys); border-radius: 10px; padding: 22px 24px; margin-top: 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; }
   /* Ikonvalg: rigtige radioknapper (piletaster virker), skjult bag runde mærker med 44 px tryk-mål */
   .ikoner { grid-column: 1 / -1; border: 0; padding: 0; margin: 0; min-width: 0; }
+  /* Kommunevalg: afkrydsningsfelter vist som knapper; man kan følge flere kommuner på én gang */
+  .k-valg { display: flex; flex-wrap: wrap; gap: 8px; }
+  .panel .k-valg label { position: relative; margin: 0; font-weight: 600; }
+  .panel .k-valg input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: 0; cursor: pointer; }
+  .k-valg span { display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 8px; border: 1.5px solid var(--rule); background: var(--kalk); color: var(--nat); font: 600 .8125rem/1 var(--sans); }
+  .k-valg label:hover span { border-color: var(--nat); }
+  .k-valg input:checked + span { background: var(--nat); border-color: var(--nat); color: var(--kalk); }
+  .k-valg input:focus-visible + span { outline: 2px solid var(--indigo); outline-offset: 2px; }
+  .k-valg input:disabled + span { opacity: .6; }
+  @media (pointer: coarse) { .k-valg span { min-height: 44px; } }
   .ikoner legend { font-size: .8125rem; font-weight: 700; padding: 0; margin-bottom: 8px; }
   .ikon-valg { display: flex; flex-wrap: wrap; gap: 10px; }
   .panel .ikon-valg label { position: relative; width: 64px; height: 64px; margin: 0; display: grid; place-items: center; cursor: pointer; }
@@ -456,14 +466,14 @@
             <legend>Dit ikon</legend>
             <div class="ikon-valg" id="p-ikon"></div>
           </fieldset>
+          <fieldset class="ikoner">
+            <legend>Dine kommuner</legend>
+            <div class="k-valg" id="p-kommuner"></div>
+            <p class="hint" id="p-kommuner-hint">Avisen viser sagerne fra de kommuner, du vælger. Vi åbner flere løbende.</p>
+          </fieldset>
           <div>
             <label for="p-navn">Hvad skal vi kalde dig?</label>
             <input id="p-navn" autocomplete="given-name" placeholder="Dit fornavn">
-          </div>
-          <div>
-            <label for="p-kommune">Din kommune</label>
-            <select id="p-kommune"></select>
-            <p class="hint">Avisen viser sagerne herfra. Vi åbner flere kommuner løbende.</p>
           </div>
           <div>
             <label for="p-bydel">Din bydel</label>
@@ -516,7 +526,7 @@
 
       <section class="gemte-side" data-visning="gemte" hidden aria-labelledby="h-gemte-side">
         <h1 id="h-gemte-side" class="side-h">Gemte sager</h1>
-        <p class="side-intro">Sager, du har gemt med stjernen. Tryk på stjernen igen for at fjerne en sag.</p>
+        <p class="side-intro">Sager, du har gemt med stjernen, følger vi for dig: har du slået beskeder til, får du besked, når en af dem bliver besluttet. Tryk på stjernen igen for at fjerne en sag.</p>
         <ul class="liste" id="gemte-side-liste"></ul>
       </section>
 
@@ -623,7 +633,7 @@
 
   <dialog class="skriv" id="push" aria-labelledby="push-h">
     <div class="skriv-top">
-      <div><h2 id="push-h">Besked om nye sager</h2><p id="push-intro">Få en besked på telefonen, når der kommer nye sager om det, du følger.</p></div>
+      <div><h2 id="push-h">Besked om nye sager</h2><p id="push-intro">Få en besked på telefonen, når der kommer nye sager om det, du følger, og når en sag, du har gemt, bliver besluttet.</p></div>
       <button class="luk" type="button" data-luk aria-label="Luk">×</button>
     </div>
     <div class="dlg-form">
@@ -809,7 +819,7 @@
   let EMNER = {};
 
   /* ---------- Profil (gemmes i browseren, indtil login er klar) ---------- */
-  const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [], kommune: "", ikon: "" };
+  const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [], kommuner: [], ikon: "" };
 
   /* ---------- Ikoner ----------
      Atten profilikoner i Vin og blæk. Seks er bygget af logoets to blade (identitet/logo/svg/sagsvagt-symbol-*.svg) med
@@ -907,6 +917,9 @@
   const PKEY = bruger?.email ? `sv-profil:${bruger.email}` : "sv-profil";
   // Med login ligger profilen på serveren og følger brugeren mellem computer og telefon; browseren har en kopi
   let profil = { ...STANDARD, ...((server && server.profil) || gemt(PKEY) || gemt("sv-profil") || {}) };
+  // Før kunne man kun vælge én kommune (profil.kommune); nu er det en liste
+  if (!Array.isArray(profil.kommuner) || (!profil.kommuner.length && profil.kommune)) profil.kommuner = profil.kommune ? [profil.kommune] : [];
+  delete profil.kommune;
   let tGem;
   const gem = () => {
     gemt(PKEY, profil);
@@ -925,7 +938,10 @@
   const hilsen = () => { const h = new Date().getHours(); return h < 10 ? "God morgen" : h < 18 ? `God ${ugedag}` : "God aften"; };
 
   /* ---------- Data ---------- */
-  let SAGER = [], DATA = {}, KOMMUNE = "København", KSLUG = "koebenhavn", IKKE_AABEN = "", AABNE = [{ navn: "København", slug: "koebenhavn" }];
+  // SAGER: sagerne fra de kommuner, man følger. ALLE: også sager fra andre kommuner, man har gemt (opslag efter id).
+  // IKKE_AABEN: kommuner fra tilmeldingen, der ikke er åbne endnu ({ navne, tilbage }, tilbage = vi viser København i stedet)
+  let SAGER = [], ALLE = new Map(), DATA = {}, KOMMUNE = "København", VALGTE = ["koebenhavn"], FLERE = false, IKKE_AABEN = null, AABNE = [{ navn: "København", slug: "koebenhavn" }];
+  const findSag = (id) => ALLE.get(id);
   const lokal = (u) => /Lokaludvalg$/.test(u);
   const bydelNavn = (u) => u.replace(/\s*Lokaludvalg$/, "");
 
@@ -946,17 +962,20 @@
   /* ---------- Byggeklodser ---------- */
   const STJERNE = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5l2.3 4.9 5.2.6-3.9 3.6 1.1 5.2L10 14.2l-4.7 2.6 1.1-5.2L2.5 8l5.2-.6z" fill="currentColor"/></svg>';
   const STJERNE_TOM = STJERNE.replace('fill="currentColor"', 'fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"');
-  const gemKnap = (s) => { const g = profil.gemte.includes(s.id); return `<button class="ikon gem" type="button" data-gem="${esc(s.id)}" aria-pressed="${g}" aria-label="${g ? "Fjern fra gemte" : "Gem sagen"}">${g ? STJERNE : STJERNE_TOM}</button>`; };
+  const gemKnap = (s) => { const g = profil.gemte.includes(s.id); return `<button class="ikon gem" type="button" data-gem="${esc(s.id)}" aria-pressed="${g}" aria-label="${g ? "Fjern fra gemte" : "Gem og følg sagen"}" title="${g ? "Fjern fra gemte" : "Gem og følg sagen"}">${g ? STJERNE : STJERNE_TOM}</button>`; };
   const SKRIV = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M13.4 3.6l3 3L7 16H4v-3zM11.6 5.4l3 3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>';
   const skrivKnap = (s) => `<button class="ikon" type="button" data-skriv="${esc(s.id)}" aria-label="Skriv et indlæg om sagen" title="Skriv et indlæg om sagen">${SKRIV}</button>`;
   const handl = (s) => `<div class="handl">${skrivKnap(s)}${gemKnap(s)}</div>`;
-  const hvor = (u) => (lokal(u) ? `${bydelNavn(u)} Lokaludvalg` : u);
+  // Følger man flere kommuner, står kommunen efter udvalget ("Økonomiudvalget, Fredericia")
+  const hvor = (u, kn) => (lokal(u) ? `${bydelNavn(u)} Lokaludvalg` : u) + (kn ? `, ${kn}` : "");
+  // Kommunen står med, når man følger flere, og ved gemte sager fra en kommune, man ikke følger længere
+  const kommuneVis = (s) => (FLERE || (s.ks && !VALGTE.includes(s.ks)) ? s.kn : "");
   const kicker = (s) => {
     const st = s.st === "besluttet" ? `<span class="status besluttet">Besluttet ${kort(s.dato)}</span>`
       : s.st === "kommer" ? `<span class="status kommer">På dagsordenen ${kort(s.dato)}</span>`
       : `<span class="status">Behandlet ${kort(s.dato)}</span>`;
     const emne = s.m?.emner?.[0];
-    return `<p class="kicker">${emne && EMNER[emne] ? `<span class="k-emne">${esc(EMNER[emne].navn)}</span>` : ""}${st}, ${esc(hvor(s.u))}</p>`;
+    return `<p class="kicker">${emne && EMNER[emne] ? `<span class="k-emne">${esc(EMNER[emne].navn)}</span>` : ""}${st}, ${esc(hvor(s.u, kommuneVis(s)))}</p>`;
   };
   const tags = (s) => {
     const t = [...s.m.emner.map((id) => `<span class="tag ${EMNER[id].f}">${esc(EMNER[id].navn)}</span>`), ...s.m.ord.map((o) => `<span class="tag o">${esc(o)}</span>`)];
@@ -1005,7 +1024,8 @@
     $("#ed-sum").innerHTML = profil.emner.length || profil.ord.length
       ? `De seneste 14 dage er der truffet <b>${tal(nBesl, "beslutning", "beslutninger")}</b> om det, du følger. De næste 14 dage er <b>${tal(nKom, "sag", "sager")}</b> på dagsordenen.`
       : "Vælg de emner, du vil følge, så samler vi sagerne her.";
-    if (IKKE_AABEN) $("#ed-sum").innerHTML += ` <br>${esc(IKKE_AABEN)} er ikke åben i Sagsvagt endnu, så du ser København, indtil den er.`;
+    if (IKKE_AABEN) $("#ed-sum").innerHTML += ` <br>${esc(IKKE_AABEN.navne.join(" og "))} er ikke ${IKKE_AABEN.navne.length > 1 ? "åbne" : "åben"} i Sagsvagt endnu`
+      + (IKKE_AABEN.tilbage ? ", så du ser København indtil da." : `. Vi giver besked, når ${IKKE_AABEN.navne.length > 1 ? "de åbner" : "den åbner"}.`);
     $("#udgave").innerHTML = `<b>${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long", year: "numeric" })))}</b><br>Din udgave · uge ${ugenr(IDAG)}`;
     $("#konto-mail").textContent = bruger?.email ? `Logget ind som ${bruger.email}` : "";
     tegnAvatar();
@@ -1025,14 +1045,14 @@
       : tom("Der er ingen nye beslutninger om dine emner endnu. Vælg flere emner, eller tilføj dine egne ord under Tilpas.");
 
     // Kommende møder: dem med sager om dine emner først, de andre som en kort liste
-    const moeder = (DATA.moeder || []).filter((m) => m.dato >= IDAG).map((m) => ({ ...m, mine: kommende.filter((s) => s.u === m.u && s.dato === m.dato) }));
+    const moeder = (DATA.moeder || []).filter((m) => m.dato >= IDAG).map((m) => ({ ...m, mine: kommende.filter((s) => s.u === m.u && s.dato === m.dato && s.ks === m.ks) }));
     const medMine = moeder.filter((m) => m.mine.length), andre = moeder.filter((m) => !m.mine.length);
-    $("#kommer").innerHTML = !moeder.length ? tom("Kommunen har ikke offentliggjort dagsordener til kommende møder endnu.")
+    $("#kommer").innerHTML = !moeder.length ? tom(FLERE ? "Kommunerne har ikke offentliggjort dagsordener til kommende møder endnu." : "Kommunen har ikke offentliggjort dagsordener til kommende møder endnu.")
       : (medMine.length ? medMine.map((m) => `<div class="m-moede"><p class="dag">${esc(stor(dato(m.dato, { weekday: "long", day: "numeric", month: "long" })))}</p>`
-          + `<p class="m-u"><b>${esc(hvor(m.u))}</b> · ${m.n} punkter, ${m.mine.length} om dine emner · <a href="${esc(m.url)}" rel="nofollow">Dagsordenen</a></p>`
+          + `<p class="m-u"><b>${esc(hvor(m.u, FLERE && m.kn))}</b> · ${m.n} punkter, ${m.mine.length} om dine emner · <a href="${esc(m.url)}" rel="nofollow">Dagsordenen</a></p>`
           + `${m.mine.slice(0, 4).map((s) => kortet(s, "mini")).join("")}</div>`).join("")
         : tom("Ingen af de kommende møder har sager om dine emner."))
-      + (andre.length ? `<p class="m-andre">${medMine.length ? "Andre møder" : "Kommende møder"}: ${andre.map((m) => `<a href="${esc(m.url)}" rel="nofollow">${esc(hvor(m.u))}, ${esc(kort(m.dato))}</a>`).join(" · ")}</p>` : "");
+      + (andre.length ? `<p class="m-andre">${medMine.length ? "Andre møder" : "Kommende møder"}: ${andre.map((m) => `<a href="${esc(m.url)}" rel="nofollow">${esc(hvor(m.u, FLERE && m.kn))}, ${esc(kort(m.dato))}</a>`).join(" · ")}</p>` : "");
 
     // Bydel
     if (profil.bydel) {
@@ -1045,7 +1065,7 @@
     }
 
     // Gemte
-    const g = profil.gemte.map((id) => SAGER.find((s) => s.id === id)).filter(Boolean).map(vurder);
+    const g = profil.gemte.map((id) => findSag(id)).filter(Boolean).map(vurder);
     $("#gemte-antal").textContent = g.length; $("#gemte-antal").hidden = !g.length;
     $("#gemte-liste").innerHTML = g.length ? g.slice(0, 5).map((s) => kortet(s, "mini")).join("") : tom("Tryk på stjernen ved en sag for at gemme den her.");
     tegnGemte();
@@ -1062,7 +1082,7 @@
   function tegnDebat() {
     const l = [...INDLAEG].sort((a, b) => b.dato.localeCompare(a.dato)).slice(0, 8);
     $("#indlaeg-liste").innerHTML = l.length ? l.map((i) => {
-      const sag = SAGER.find((s) => s.id === i.sag);
+      const sag = findSag(i.sag);
       const [foerste, ...resten] = i.tekst.trim().split(/\n{2,}/);
       const af = [i.titel, i.by].filter(Boolean).map(esc).join(", ");
       return `<article class="indlaeg"><p class="kicker"><span class="status besluttet">Indlæg</span> · ${esc(kort(i.dato))}</p>`
@@ -1087,7 +1107,7 @@
   const taeller = () => { const n = sf.tekst.value.length; $("#taeller").textContent = `${n.toLocaleString("da-DK")} / ${MAKS.toLocaleString("da-DK")} tegn`; $("#taeller").classList.toggle("over", n > MAKS); };
   function aabnSkriv(id) {
     const mine = SAGER.map(vurder).filter((s) => s.hits > 0 && !s.r).sort((a, b) => b.dato.localeCompare(a.dato)).slice(0, 40);
-    const valgt = id && SAGER.find((s) => s.id === id);
+    const valgt = id && findSag(id);
     const opts = valgt && !mine.some((s) => s.id === id) ? [valgt, ...mine] : mine;
     $("#i-sag").innerHTML = `<option value="">Ingen bestemt sag</option>`
       + opts.map((s) => `<option value="${esc(s.id)}">${esc(kort(s.dato))}: ${esc(s.t.length > 72 ? s.t.slice(0, 72).replace(/\s+\S*$/, "") + " …" : s.t)}</option>`).join("");
@@ -1112,10 +1132,10 @@
       : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.email) ? ["email", "Skriv en gyldig e-mail, så vi kan kontakte dig."]
       : !sf.bekraeftet.checked ? ["bekraeftet", "Sæt kryds for at bekræfte, at indlægget må bringes."] : null;
     if (fejl) { msg.className = "skriv-msg fejl"; msg.textContent = fejl[1]; sf[fejl[0]].focus(); return; }
-    const sag = SAGER.find((s) => s.id === sf.sag.value);
+    const sag = findSag(sf.sag.value);
     const data = {
       overskrift: v.overskrift, tekst: v.tekst, navn: v.navn, titel: v.titel, by: v.by, email: v.email,
-      sag: sag ? `${sag.t} (${hvor(sag.u)}, ${kort(sag.dato)})` : "Ingen bestemt sag",
+      sag: sag ? `${sag.t} (${hvor(sag.u, sag.kn)}, ${kort(sag.dato)})` : "Ingen bestemt sag",
       sag_id: sag ? sag.id : "", sag_link: sag ? new URL(link(sag), location.href).href : "", tegn: v.tekst.length, kilde: "min-avis",
       _subject: `Nyt indlæg: ${v.overskrift}`, _template: "table", _autoresponse: KVITTERING,
     };
@@ -1154,9 +1174,9 @@
      Hele sagen (Kort fortalt, afstemning, sagens vej og teksten) hentes som fragment fra assets/sager/, som avisen bygger.
      Mens avisen er lukket, bliver links til avisens sider til almindelig tekst. */
   async function laesSag(id) {
-    const s = SAGER.find((x) => x.id === id); if (!s) return;
+    const s = findSag(id); if (!s) return;
     const d = $("#laes"), ind = $("#laes-indhold");
-    $("#laes-hvor").textContent = `${hvor(s.u)} · ${kort(s.dato)}`;
+    $("#laes-hvor").textContent = `${hvor(s.u, kommuneVis(s))} · ${kort(s.dato)}`;
     const knapper = () => { $("#laes-knapper").innerHTML = `${skrivKnap(s)}${gemKnap(s)}<button class="luk" type="button" data-luk aria-label="Luk">×</button>`; };
     knapper(); laesSag.opdater = knapper;
     ind.innerHTML = `<p class="indlaes">Henter sagen …</p>`;
@@ -1164,6 +1184,10 @@
     try {
       const r = await fetch(`../assets/sager/${s.url.slice(4)}`); if (!r.ok) throw new Error(r.status);
       ind.innerHTML = `<div class="article">${await r.text()}</div>`;
+      // "Læs hele beslutningen" peger på #beslutning; i Min avis ruller vi ned i vinduet i stedet for at skifte side
+      ind.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener("click", (e) => {
+        e.preventDefault(); ind.querySelector(a.getAttribute("href"))?.scrollIntoView({ block: "start" });
+      }));
       if (!AVIS_AABEN) ind.querySelectorAll("a[href]").forEach((a) => {
         const u = new URL(a.getAttribute("href"), location.href);
         if (u.origin === location.origin && /^\/(sag|udvalg|bydel|emne)\//.test(u.pathname)) {
@@ -1208,7 +1232,7 @@
 
   // Gemte sager som en hel side, med samme kort som "Alle mine sager"
   function tegnGemte() {
-    const g = profil.gemte.map((id) => SAGER.find((s) => s.id === id)).filter(Boolean).map(vurder);
+    const g = profil.gemte.map((id) => findSag(id)).filter(Boolean).map(vurder);
     $("#gemte-side-liste").innerHTML = g.length
       ? g.map((s) => `<li><div>${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 220 ? s.d.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</div>${handl(s)}</li>`).join("")
       : `<li>${tom("Du har ikke gemt nogen sager endnu. Tryk på stjernen ved en sag for at gemme den.")}</li>`;
@@ -1222,7 +1246,8 @@
     $("#p-bydel").innerHTML = `<option value="">Vælg bydel …</option>` + bydele.map((u) => `<option value="${esc(u)}"${u === profil.bydel ? " selected" : ""}>${esc(bydelNavn(u))}</option>`).join("");
     // Kun København har lokaludvalg; i andre kommuner skjules bydelen
     $("#p-bydel").parentElement.hidden = $("#h-bydel").parentElement.hidden = !bydele.length;
-    $("#p-kommune").innerHTML = AABNE.map((k) => `<option value="${esc(k.slug)}"${k.slug === KSLUG ? " selected" : ""}>${esc(k.navn)}</option>`).join("");
+    $("#p-kommuner").closest("fieldset").hidden = AABNE.length < 2;
+    $("#p-kommuner").innerHTML = AABNE.map((k) => `<label><input type="checkbox" value="${esc(k.slug)}"${VALGTE.includes(k.slug) ? " checked" : ""}><span>${esc(k.navn)}</span></label>`).join("");
     $("#p-ikon").innerHTML = [["", "Forbogstav"], ...Object.entries(IKONER).map(([id, [navn]]) => [id, navn])]
       .map(([id, navn]) => `<label title="${navn}"><input type="radio" name="ikon" value="${id}" aria-label="${navn}"${(profil.ikon || "") === id ? " checked" : ""}><span class="av">${id ? ikonSvg(id) : esc(forbogstav() || "A")}</span></label>`).join("");
   }
@@ -1246,13 +1271,13 @@
       gem(); tegn(); if ($("#laes").open) laesSag.opdater?.();
     } else if (t.dataset.fane) { fane = t.dataset.fane; vist = 20; tegnListe(); }
     else if (t.id === "flere") { vist += 20; tegnListe(); }
-    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte, velkommen: profil.velkommen, kommune: profil.kommune, ikon: profil.ikon }; gem(); fyldPanel(); tegn(); }
+    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte, velkommen: profil.velkommen, kommuner: profil.kommuner, ikon: profil.ikon }; gem(); fyldPanel(); tegn(); }
     else { e.preventDefault(); if (t.dataset.tilpas !== undefined) $("#panel").hidden = true; vend(); scrollTo({ top: 0, behavior: "smooth" }); }
   });
   $("#p-navn").addEventListener("input", (e) => { profil.navn = e.target.value.slice(0, 40); gem(); tegn(); });
   $("#p-ord").addEventListener("change", (e) => { profil.ord = e.target.value.split(",").map((o) => o.trim()).filter((o) => o.length > 1).slice(0, 12); gem(); tegn(); });
   $("#p-bydel").addEventListener("change", (e) => { profil.bydel = e.target.value; gem(); tegn(); });
-  $("#p-kommune").addEventListener("change", (e) => skiftKommune(e.target.value));
+  $("#p-kommuner").addEventListener("change", (e) => skiftKommuner(e.target));
   $("#p-ikon").addEventListener("change", (e) => { profil.ikon = e.target.value; gem(); tegnAvatar(); });
   let t0; $("#soeg").addEventListener("input", (e) => { clearTimeout(t0); t0 = setTimeout(() => { soeg = e.target.value; vist = 20; tegnListe(); }, 120); });
 
@@ -1334,43 +1359,67 @@
   /* ---------- Start ---------- */
   $("#indlaes").hidden = false;
   const hent = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); });
-  // Kommunen: først den, man har valgt under Tilpas (profil.kommune), så den første åbne kommune fra tilmeldingen
+  // Kommunerne: dem, man har valgt under Tilpas (profil.kommuner), ellers de åbne kommuner fra tilmeldingen
   // (fritekst som "Lyngby" eller "Københavns Kommune, Frederiksberg"), ellers København. ?kommune=albertslund virker til test.
   // De åbne kommuner står i kommune/aabne.json (avis/kommuner.mjs); Københavns sager ligger i assets/sager.json.
   const slugAf = (t) => t.toLowerCase().replace(/\s+kommunes?$/, "").replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const ALIAS = { kbh: "koebenhavn", koebenhavns: "koebenhavn", lyngby: "lyngby-taarbaek", taastrup: "hoeje-taastrup" };
-  const oensket = (q.get("kommune") || server?.tilmelding?.kommuner || "").split(/,|\/|\s+og\s+/)
+  const oensket = (q.get("kommune") || server?.tilmelding?.kommuner || "").split(/,|\/|\s+og\s+/i)
     .map((t) => ({ navn: stor(t.trim().replace(/\s+kommunes?$/i, "")), slug: ALIAS[slugAf(t)] || slugAf(t) })).filter((k) => k.slug);
-  const sagerFra = (slug) => hent(slug === "koebenhavn" ? "../assets/sager.json" : `../kommune/${slug}/sager.json`);
-  function brugKommune(k, data) {
-    // Andre kommuner har ikke rang (v), "Øvrige punkter" (r) og emner i overskriften (et)
-    SAGER = data.sager.map((s) => ({ et: [], v: 0, r: 0, ...s }));
-    DATA = { ...data, sager: SAGER }; EMNER = data.emner || {};
-    KOMMUNE = k.navn; KSLUG = k.slug;
-    IKKE_AABEN = !profil.kommune && oensket.length && !oensket.some((o) => AABNE.some((a) => a.slug === o.slug)) ? oensket.map((o) => o.navn).join(", ") : "";
-    profil.emner = profil.emner.filter((id) => EMNER[id]);
+  const erAaben = (slug) => AABNE.some((a) => a.slug === slug);
+  const navnPaa = (slug) => AABNE.find((a) => a.slug === slug)?.navn || slug;
+  // Hvilken kommune en sag er fra: Københavns id'er starter med "kk-", de andres med kommunens slug (det længste, der passer)
+  const kommuneAf = (id) => (id.startsWith("kk-") ? "koebenhavn" : AABNE.map((a) => a.slug).filter((s) => id.startsWith(`${s}-`)).sort((a, b) => b.length - a.length)[0]);
+  // Hver kommune hentes én gang. Andre kommuner har ikke rang (v), rutine (r) og emner i overskriften (et) i ældre filer.
+  const CACHE = new Map();
+  function hentKommune(slug) {
+    if (!CACHE.has(slug)) CACHE.set(slug, hent(slug === "koebenhavn" ? "../assets/sager.json" : `../kommune/${slug}/sager.json`)
+      .then((d) => ({ ...d, sager: d.sager.map((s) => ({ et: [], v: 0, r: 0, ...s, ks: slug, kn: navnPaa(slug) })), moeder: (d.moeder || []).map((m) => ({ ...m, ks: slug, kn: navnPaa(slug) })) }))
+      .catch((e) => { CACHE.delete(slug); throw e; }));
+    return CACHE.get(slug);
   }
-  // Skift kommune under Tilpas: hent de nye sager uden at genindlæse siden. Bydelen hører til den gamle kommune.
-  async function skiftKommune(slug) {
-    const k = AABNE.find((x) => x.slug === slug), sel = $("#p-kommune"), note = sel.nextElementSibling, tekst = note.textContent;
-    if (!k) return;
-    sel.disabled = true; note.textContent = `Henter sagerne fra ${k.navn} …`;
+  async function brugKommuner(slugs) {
+    const valgte = await Promise.all(slugs.map(hentKommune));
+    // Gemte sager fra kommuner, man ikke følger lige nu, hentes også, så de ikke forsvinder fra Gemte
+    const andre = [...new Set(profil.gemte.map(kommuneAf).filter((s) => s && !slugs.includes(s)))];
+    const gemte = (await Promise.all(andre.map((s) => hentKommune(s).catch(() => null)))).filter(Boolean);
+    SAGER = valgte.flatMap((d) => d.sager);
+    DATA = { ...valgte[0], sager: SAGER, moeder: valgte.flatMap((d) => d.moeder).sort((a, b) => a.dato.localeCompare(b.dato)) };
+    ALLE = new Map([...valgte, ...gemte].flatMap((d) => d.sager).map((s) => [s.id, s]));
+    EMNER = valgte[0].emner || {};
+    VALGTE = slugs; FLERE = slugs.length > 1;
+    KOMMUNE = slugs.length <= 2 ? slugs.map(navnPaa).join(" og ") : `${slugs.length} kommuner`;
+    profil.emner = profil.emner.filter((id) => EMNER[id]);
+    if (profil.bydel && !SAGER.some((s) => s.u === profil.bydel)) profil.bydel = "";
+  }
+  // Skift kommuner under Tilpas: hent de nye sager uden at genindlæse siden. Mindst én kommune skal være valgt.
+  async function skiftKommuner(inp) {
+    const boks = $("#p-kommuner"), note = $("#p-kommuner-hint"), tekst = "Avisen viser sagerne fra de kommuner, du vælger. Vi åbner flere løbende.";
+    const slugs = [...boks.querySelectorAll("input:checked")].map((i) => i.value);
+    if (!slugs.length) { inp.checked = true; note.textContent = "Vælg mindst én kommune."; return; }
+    boks.querySelectorAll("input").forEach((i) => (i.disabled = true)); note.textContent = "Henter sagerne …";
     try {
-      brugKommune(k, await sagerFra(slug));
-      profil.kommune = slug; profil.bydel = ""; gem();
+      await brugKommuner(slugs);
+      profil.kommuner = slugs; IKKE_AABEN = null; gem();
       fyldPanel(); tegn(); visSide();
       note.textContent = tekst;
     } catch (err) {
-      console.warn(err); sel.value = KSLUG;
-      note.textContent = `Vi kunne ikke hente sagerne fra ${k.navn}. Prøv igen om lidt.`;
-    } finally { sel.disabled = false; }
+      console.warn(err); inp.checked = !inp.checked;
+      note.textContent = "Vi kunne ikke hente sagerne lige nu. Prøv igen om lidt.";
+    } finally {
+      boks.querySelectorAll("input").forEach((i) => (i.disabled = false));
+      boks.querySelector(`input[value="${inp.value}"]`)?.focus();
+    }
   }
   Promise.all([hent("../kommune/aabne.json").catch(() => AABNE), hent("indlaeg.json").catch(() => ({ indlaeg: [] }))])
     .then(async ([aabne, debat]) => {
       AABNE = aabne; INDLAEG = debat.indlaeg || [];
-      const find = (slug) => AABNE.find((a) => a.slug === slug);
-      const k = find(profil.kommune) || oensket.map((o) => find(o.slug)).find(Boolean) || find("koebenhavn") || AABNE[0];
-      brugKommune(k, await sagerFra(k.slug));
+      const valgte = profil.kommuner.filter(erAaben);
+      const fraTilmelding = [...new Set(oensket.map((o) => o.slug).filter(erAaben))];
+      const slugs = valgte.length ? valgte : fraTilmelding.length ? fraTilmelding : ["koebenhavn"];
+      const lukkede = valgte.length ? [] : oensket.filter((o) => !erAaben(o.slug));
+      IKKE_AABEN = lukkede.length ? { navne: lukkede.map((o) => o.navn), tilbage: !fraTilmelding.length } : null;
+      await brugKommuner(slugs);
       const forud = server && !server.profil ? forudfyld() : [];
       $("#indlaes").hidden = true; $("#avis").hidden = false;
       fyldPanel(); tegn(); visSide(); visVelkomst(forud);

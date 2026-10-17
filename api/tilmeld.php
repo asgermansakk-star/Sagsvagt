@@ -29,7 +29,7 @@ if ($fandtes) {
 // Besked til redaktionen og kvittering til den tilmeldte. Fejler mailen, er tilmeldingen stadig gemt.
 $linjer = "E-mail: $email\nKommuner: $kommuner\nEmner: $alleEmner\nJeg er: $rolle\nKilde: $kilde\n" . ($fandtes ? "(Var allerede tilmeldt og har opdateret sine valg.)\n" : '');
 @send_mail($K['tilmeldinger_til'], ($fandtes ? 'Opdateret tilmelding' : 'Ny tilmelding') . " til Sagsvagt: $email",
-    '<pre style="font:14px/1.5 Arial,sans-serif">' . htmlspecialchars($linjer, ENT_QUOTES, 'UTF-8') . '</pre>', $linjer);
+    '<pre style="font:14px/1.5 Arial,sans-serif">' . htmlspecialchars($linjer, ENT_QUOTES, 'UTF-8') . '</pre>', $linjer, $email); // "Besvar" går til den tilmeldte
 if (!$fandtes) {
     [$html, $tekst] = mail_skabelon('Tak, fordi du har skrevet dig op',
         "Vi giver besked, når din kommune er klar. Derefter får du én mail hver mandag med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\nVil du ændre dine emner eller afmelde dig, så svar på denne mail.",

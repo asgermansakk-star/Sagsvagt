@@ -185,7 +185,12 @@ export async function bygUdgave(k, egne, raa, valg, h, ks, top) {
   else stier.push(`${R}/partier.html`);
 
   // Søg
-  await writeFile(join(ROD, R, "sager.json"), JSON.stringify(soegData(egne, EMNER, saetninger)));
+  // Samme fil bruges af Min avis, så den får de felter, Københavns assets/sager.json har: udfald, stemmer,
+  // emner i titlen, kilden hos kommunen, vægt, rutine og møderne (kommende og de seneste tre uger)
+  const data = soegData(egne, EMNER, saetninger);
+  data.sager = data.sager.map((x, i) => { const s = egne[i]; return { ...x, ud: s.udfald || "", sm: s.stemmer, tal: s.tal, et: s.emnerTitel, k: s.kilde, v: s.vaegt, r: s.rutine ? 1 : 0 }; });
+  data.moeder = [...kommende, ...seneste].map((m) => ({ dato: m.dato, u: m.udvalg, url: m.url, n: m.antal, referat: m.referat }));
+  await writeFile(join(ROD, R, "sager.json"), JSON.stringify(data));
   await skriv(`${R}/soeg.html`, {
     titel: `Søg i sagerne, ${k.navn} – Sagsvagt`, beskrivelse: `Søg i alle sager fra byrådet og udvalgene i ${k.kommune}.`, rod: "../../", aktiv: "k-soeg",
     indhold: soegIndhold({ rod: "../../", data: "sager.json", antal: egne.length, valg, aktiv: k.navn, emner: EMNER }),

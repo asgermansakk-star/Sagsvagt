@@ -60,6 +60,9 @@ export function vaelgSager({ data, profil, idag }) {
 export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, modtager = "", logo = `${SITE}assets/mail-logo.png` }) {
   const v = vaelgSager({ data, profil, idag });
   const uge = ugenr(idag);
+  // Følger modtageren flere kommuner (sagerne har ks/kn fra Min avis eller avis/mandagsmail.mjs), står kommunen efter udvalget
+  const flere = new Set(data.sager.map((s) => s.ks).filter(Boolean)).size > 1;
+  const hvorSag = (s) => hvor(s.u) + (flere && s.kn ? `, ${s.kn}` : "");
   const nB = v.besluttet.length + v.flereBesluttet, nK = v.kommer.length + v.flereKommer;
   const navn = (profil.navn || "").trim();
   const tal = (n, en, flere) => `${n === 0 ? "Ingen" : n} ${n === 1 ? en : flere}`;
@@ -80,7 +83,7 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
     const besl = s.st === "besluttet" && s.ud
       ? `<p style="margin:12px 0 0;padding:9px 12px;background:${C.kalk};border-left:3px solid ${C.vin};font:14px/1.5 ${SANS};color:${C.nat};">${esc(s.ud)}${stemmer(s)}</p>` : "";
     return `<tr><td style="padding:18px 28px 20px;border-top:1px solid ${C.rule};">
-  <p style="margin:0 0 6px;font:600 12px/1.45 ${SANS};color:${C.muted};">${status} · ${esc(hvor(s.u))}</p>
+  <p style="margin:0 0 6px;font:600 12px/1.45 ${SANS};color:${C.muted};">${status} · ${esc(hvorSag(s))}</p>
   <a href="${esc(linkTil(s))}" style="font:600 19px/1.3 ${SERIF};color:${C.nat};text-decoration:none;">${esc(s.t)}</a>
   ${s.d ? `<p style="margin:8px 0 0;font:15px/1.55 ${SERIF};color:${C.brod};">${esc(klip(s.d, 230))}</p>` : ""}
   ${besl}
@@ -128,7 +131,7 @@ ${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0
 </body></html>`;
 
   // Ren tekst til mailprogrammer, der ikke viser HTML
-  const linje = (s) => `- ${s.t}\n  ${s.st === "besluttet" ? `Besluttet ${kort(s.dato)}` : s.st === "kommer" ? `På dagsordenen ${kort(s.dato)}` : `Behandlet ${kort(s.dato)}`}, ${hvor(s.u)}${s.st === "besluttet" && s.ud ? `\n  ${s.ud}${s.tal ? ` ${s.tal.for} for, ${s.tal.imod} imod.` : ""}` : ""}\n  ${linkTil(s)}`;
+  const linje = (s) => `- ${s.t}\n  ${s.st === "besluttet" ? `Besluttet ${kort(s.dato)}` : s.st === "kommer" ? `På dagsordenen ${kort(s.dato)}` : `Behandlet ${kort(s.dato)}`}, ${hvorSag(s)}${s.st === "besluttet" && s.ud ? `\n  ${s.ud}${s.tal ? ` ${s.tal.for} for, ${s.tal.imod} imod.` : ""}` : ""}\n  ${linkTil(s)}`;
   const del = (t, l) => (l.length ? `\n\n${t.toUpperCase()}\n\n${l.map(linje).join("\n\n")}` : "");
   const tekst = `Sagsvagt, uge ${uge}\n\nGod morgen${navn ? `, ${navn}` : ""}.${ingen ? " Der er ingen nye sager om dine emner i denne uge." : ""}`
     + del("Besluttet", v.besluttet) + del("Det skal de tage stilling til", v.kommer) + del(`Fra ${hvor(profil.bydel || "")}`, v.bydel)

@@ -20,5 +20,6 @@ $NAVN = ['godt' => 'Godt', 'blandet' => 'Blandet', 'daarligt' => 'Dårligt'];
 $linjer = "Fra: {$b['email']}" . ($kontakt ? ' (må gerne kontaktes)' : ' (vil ikke kontaktes)') . "\n"
     . ($vurdering ? "Samlet indtryk: {$NAVN[$vurdering]}\n" : '') . ($side ? "Side: $side\n" : '') . "\n$tekst\n";
 @send_mail($K['feedback_til'] ?? $K['mail']['svar_til'] ?? $K['tilmeldinger_til'], 'Feedback fra Min avis: ' . $b['email'],
-    '<pre style="font:14px/1.5 Arial,sans-serif;white-space:pre-wrap">' . htmlspecialchars($linjer, ENT_QUOTES, 'UTF-8') . '</pre>', $linjer);
+    '<pre style="font:14px/1.5 Arial,sans-serif;white-space:pre-wrap">' . htmlspecialchars($linjer, ENT_QUOTES, 'UTF-8') . '</pre>', $linjer,
+    $kontakt ? $b['email'] : ''); // Må brugeren kontaktes, går "Besvar" direkte til dem
 svar(200, ['ok' => true]);

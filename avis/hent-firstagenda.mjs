@@ -171,7 +171,14 @@ async function hentKommune(k) {
     }
     gemt.sitemaps[u] = { senest, tjekket: idag };
   }
-  const nye = [...dok].filter(([id, lastmod]) => gemt.dokumenter[id]?.lastmod !== lastmod);
+  // Nye eller ændrede møder, og møder der gav nul punkter: kommunen lægger nogle gange mødet op, før dagsordenen er
+  // fyldt ud, uden at lastmod ændrer sig bagefter. Dem prøver vi igen i en uge fra første tomme hentning.
+  // Møder hentet før tomFra fandtes, prøves kun igen, hvis selve mødet er højst en uge gammelt.
+  const enUge = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
+  const nye = [...dok].filter(([id, lastmod]) => {
+    const d = gemt.dokumenter[id];
+    return d?.lastmod !== lastmod || (d.punkter === 0 && (d.tomFra || ((d.dato || "") >= enUge ? idag : "")) >= enUge);
+  });
   console.log(`${k.kommune}: ${udvalgSitemaps.length} udvalg, ${dok.size} møder siden ${fra}, ${nye.length} nye eller ændrede`);
 
   const kendte = new Map(Object.values(gemt.dokumenter).filter((d) => d.udvalg).map((d) => [norm(d.udvalg), d.udvalg]));
@@ -180,7 +187,8 @@ async function hentKommune(k) {
     try {
       const pdf = await hent(`/pdf/GetDagsorden/${id}`, { binaer: true });
       const m = parsePdf(await pdfTilTekst(pdf), kendte);
-      gemt.dokumenter[id] = { lastmod, type: m.type, udvalg: m.udvalg, dato: m.dato, punkter: m.punkter.length };
+      // tomFra: hvornår mødet første gang gav nul punkter, så vi kun prøver igen i en uge
+      gemt.dokumenter[id] = { lastmod, type: m.type, udvalg: m.udvalg, dato: m.dato, punkter: m.punkter.length, ...(m.punkter.length ? {} : { tomFra: gemt.dokumenter[id]?.tomFra || idag }) };
       for (const p of m.punkter) {
         const sid = `${k.slug}-${m.dato}-${slug(m.udvalg)}-${p.nr}`;
         // Et referat erstatter dagsordenen for samme punkt, men aldrig omvendt
