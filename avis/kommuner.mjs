@@ -17,6 +17,9 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
   const AABNE = new Set(["koebenhavn", ...kommuner.filter((k) => prKommune[k.navn]?.length).map((k) => k.slug)]);
   await rm(join(ROD, "kommune"), { recursive: true, force: true });
   await mkdir(join(ROD, "kommune"), { recursive: true });
+  // Min avis lader brugeren vælge mellem de åbne kommuner (København først, resten alfabetisk)
+  await writeFile(join(ROD, "kommune", "aabne.json"), JSON.stringify(kommuner.filter((k) => AABNE.has(k.slug))
+    .sort((a, b) => (a.slug === "koebenhavn" ? -1 : b.slug === "koebenhavn" ? 1 : a.navn.localeCompare(b.navn, "da"))).map(({ navn, slug }) => ({ navn, slug }))));
 
   const domaene = (web) => web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
   const tilmeld = (k) => `../vagt.html?kommune=${encodeURIComponent(k.navn)}&amp;fra=kommune-${k.slug}#tilmeld`;

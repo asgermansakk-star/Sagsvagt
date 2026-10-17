@@ -30,7 +30,7 @@
   .mh-nav .konto { margin-left: auto; }
   .mh-nav .konto summary { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 12px 0 6px; border-radius: 8px; opacity: .85; white-space: nowrap; }
   .mh-nav .konto summary:hover, .mh-nav .konto[open] summary { opacity: 1; background: rgba(230,223,211,.08); }
-  .initial { width: 28px; height: 28px; border-radius: 50%; background: var(--kalk); color: var(--nat); display: inline-grid; place-items: center; font-weight: 700; font-size: .8125rem; }
+  .initial { width: 28px; height: 28px; border-radius: 50%; overflow: hidden; background: var(--kalk); color: var(--nat); display: inline-grid; place-items: center; font-weight: 700; font-size: .8125rem; }
   .initial:empty { display: none; }
   .mh-nav .konto > div { left: auto; right: 0; }
   .mh-nav .konto > div a { color: var(--kalk); }
@@ -74,6 +74,28 @@
   .tilpas { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border: 0; border-radius: 8px; background: var(--nat); color: var(--kalk); cursor: pointer; margin-left: auto; }
 
   .panel { background: var(--kalk-lys); border-radius: 10px; padding: 22px 24px; margin-top: 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; }
+  /* Ikonvalg: rigtige radioknapper (piletaster virker), skjult bag runde mærker med 44 px tryk-mål */
+  .ikoner { grid-column: 1 / -1; border: 0; padding: 0; margin: 0; min-width: 0; }
+  .ikoner legend { font-size: .8125rem; font-weight: 700; padding: 0; margin-bottom: 8px; }
+  .ikon-valg { display: flex; flex-wrap: wrap; gap: 10px; }
+  .panel .ikon-valg label { position: relative; width: 64px; height: 64px; margin: 0; display: grid; place-items: center; cursor: pointer; }
+  .panel .ikon-valg input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: 0; cursor: pointer; }
+  .av { width: 56px; height: 56px; border-radius: 50%; overflow: hidden; display: grid; place-items: center; background: var(--nat); color: var(--kalk); font-weight: 700; font-size: 1.25rem; transition: transform .18s var(--ease), box-shadow .18s var(--ease); }
+  .av svg, .initial svg { width: 100%; height: 100%; display: block; }
+  /* Svag kant, så lyse ikoner (Kalk) kan ses på lyse flader */
+  .av, .initial:has(svg) { outline: 1px solid rgba(14,15,20,.12); outline-offset: -1px; }
+  .ikon-valg label:hover .av { transform: scale(1.06); }
+  .ikon-valg input:checked + .av { box-shadow: 0 0 0 3px var(--kalk-lys), 0 0 0 5px var(--nat); }
+  .ikon-valg input:focus-visible + .av { box-shadow: 0 0 0 3px var(--kalk-lys), 0 0 0 5px var(--indigo); }
+  @media (prefers-reduced-motion: reduce) { .av { transition: none; } .ikon-valg label:hover .av { transform: none; } }
+  /* Tryk-mål på 44 px (HIG) på touch: små knapper og tekstlinks får en usynlig, større trykflade, så udseendet er det samme */
+  @media (pointer: coarse) {
+    .emne, .tilpas, .mail-knap, .ikon, .panel .slut button, .se-alle a, .sn-h a, .sec-h a { position: relative; }
+    .emne::after, .tilpas::after, .mail-knap::after, .ikon::after, .panel .slut button::after, .se-alle a::after, .sn-h a::after, .sec-h a::after { content: ""; position: absolute; inset: -6px -4px; }
+    .ikon::after { inset: -5px; }
+    .tilpas::after { inset: -8px -4px; }
+    .panel .slut button::after, .se-alle a::after, .sn-h a::after, .sec-h a::after { inset: -14px -8px; }
+  }
   .panel label { display: block; font-size: .8125rem; font-weight: 700; margin-bottom: 6px; }
   .panel input, .panel select { width: 100%; font: inherit; font-size: .9375rem; padding: 10px 12px; border: 1.5px solid var(--rule); border-radius: 8px; background: var(--kalk); color: var(--nat); }
   .panel .hint { font-size: .78rem; color: var(--muted); margin: 6px 0 0; }
@@ -169,7 +191,7 @@
   .indlaeg details[open] summary { display: none; }
   .om-sag { font-size: .8125rem; color: var(--muted); margin: 6px 0 0; }
   .skriv-boks { background: var(--moedet); color: var(--kalk); border-radius: 10px; padding: 24px 24px 26px; align-self: start; margin-top: 18px; }
-  .skriv-boks h3 { margin: 0 0 8px; font-size: 1.25rem; letter-spacing: -.02em; }
+  .skriv-boks h2 { margin: 0 0 8px; font-size: 1.25rem; letter-spacing: -.02em; }
   .skriv-boks p { margin: 0 0 14px; font-size: .9375rem; color: rgba(230,223,211,.85); }
   .skriv-boks ul { margin: 0 0 20px; padding-left: 18px; font-size: .875rem; color: rgba(230,223,211,.85); }
   .skriv-boks button { font: 700 .9375rem var(--sans); border: 0; border-radius: 8px; padding: 11px 20px; background: var(--kalk); color: var(--nat); cursor: pointer; }
@@ -416,7 +438,7 @@
           <button type="button" class="v-luk" id="velkommen-luk" aria-label="Luk velkomsten">×</button>
           <ol>
             <li><div><b>Vælg dine emner</b> <span id="velkommen-forud"></span></div></li>
-            <li><div><b>Tilføj din bydel</b> og egne ord, fx din gade</div></li>
+            <li><div><b>Vælg din kommune og dit ikon</b>, og tilføj egne ord, fx din gade</div></li>
             <li><div><b>Gem sager med stjernen</b>, så finder du dem under Gemte</div></li>
           </ol>
           <div class="knapper">
@@ -430,18 +452,27 @@
         <section class="seneste" id="seneste" aria-labelledby="sn-h" hidden></section>
         <div class="mine" id="mine"></div>
         <form class="panel" id="panel" hidden onsubmit="return false">
+          <fieldset class="ikoner">
+            <legend>Dit ikon</legend>
+            <div class="ikon-valg" id="p-ikon"></div>
+          </fieldset>
           <div>
             <label for="p-navn">Hvad skal vi kalde dig?</label>
             <input id="p-navn" autocomplete="given-name" placeholder="Dit fornavn">
           </div>
           <div>
-            <label for="p-ord">Dine egne ord</label>
-            <input id="p-ord" placeholder="fx Lersøparken, Valby Langgade">
-            <p class="hint">Adskil med komma. Vi finder sager, hvor ordene står.</p>
+            <label for="p-kommune">Din kommune</label>
+            <select id="p-kommune"></select>
+            <p class="hint">Avisen viser sagerne herfra. Vi åbner flere kommuner løbende.</p>
           </div>
           <div>
             <label for="p-bydel">Din bydel</label>
             <select id="p-bydel"><option value="">Vælg bydel …</option></select>
+          </div>
+          <div>
+            <label for="p-ord">Dine egne ord</label>
+            <input id="p-ord" placeholder="fx Lersøparken, Valby Langgade">
+            <p class="hint">Adskil med komma. Vi finder sager, hvor ordene står.</p>
           </div>
           <div class="slut"><span id="p-gemmes">Dine valg gemmes kun i denne browser, indtil login er klar.</span><span class="knapper-h"><button type="button" id="p-nulstil">Nulstil</button><button type="button" id="p-slet" hidden>Slet min konto</button></span></div>
         </form>
@@ -475,7 +506,7 @@
         <div class="debat-grid">
           <div id="indlaeg-liste"></div>
           <aside class="skriv-boks">
-            <h3>Har du noget på hjerte?</h3>
+            <h2>Har du noget på hjerte?</h2>
             <p>Skriv et indlæg om en sag fra byrådet, udvalgene eller din bydel. Redaktionen læser alle indlæg og bringer et udvalg.</p>
             <ul><li>Højst 2.000 tegn</li><li>Under dit fulde navn</li><li>Fra alle partier og synspunkter</li></ul>
             <button type="button" data-skriv="">Skriv et indlæg</button>
@@ -778,7 +809,101 @@
   let EMNER = {};
 
   /* ---------- Profil (gemmes i browseren, indtil login er klar) ---------- */
-  const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [] };
+  const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [], kommune: "", ikon: "" };
+
+  /* ---------- Ikoner ----------
+     Atten profilikoner i Vin og blæk. Seks er bygget af logoets to blade (identitet/logo/svg/sagsvagt-symbol-*.svg) med
+     hullet i midten; tolv er motiver fra kommunen og lokallivet: byen, havnen, rådhuset, skolen, biblioteket, bussen m.fl.
+     Logoreglerne gælder: rød blad til venstre, blå til højre, ingen hvid. viewBox 32×32; den runde beholder
+     (.av / .initial) klipper hjørnerne. Tom ikon = forbogstav. */
+  const BLAD_R = "M51 231.1C66.2 215.4 74.7 194.5 74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C195.7 121.9 187.6 165.2 160.4 196.1C133.1 227 91.1 240.4 51 231.1Z";
+  const BLAD_B = "M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z";
+  const MIDTE = "M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z";
+  const T = (s, x = 16, y = 16, v = 0) => `translate(${x} ${y}) rotate(${v}) scale(${s}) translate(-128 -128)`;
+  const flade = (c) => `<rect width="32" height="32" fill="${c}"/>`;
+  // Mærket: rødt blad (r) og blåt blad (b), hver uden midten. s = størrelse, (x, y) = midtpunkt, v = drejning, a = ekstra attributter
+  const maerke = (r, b, { s = .1, x = 16, y = 16, v = 0, a = "" } = {}) =>
+    `<g transform="${T(s, x, y, v)}" fill-rule="evenodd" ${a}><path fill="${r}" d="${BLAD_R} ${MIDTE}"/><path fill="${b}" d="${BLAD_B} ${MIDTE}"/></g>`;
+  // Gradienten Mødet som i web/favicon.svg: blå fra øverst til venstre, rød fra nederst til højre på Nat
+  const moedet = (u) => `<defs><radialGradient id="mb${u}" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(0 8) scale(25.6 32)"><stop offset="0" stop-color="#5D6BA8"/><stop offset=".25" stop-color="#28377A"/><stop offset=".52" stop-color="#0C1430"/><stop offset=".74" stop-color="#0C1430" stop-opacity="0"/></radialGradient><radialGradient id="mr${u}" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(32 32) scale(24 30.4)"><stop offset="0" stop-color="#B04A50"/><stop offset=".25" stop-color="#8A2430"/><stop offset=".52" stop-color="#3E0E14"/><stop offset=".76" stop-color="#3E0E14" stop-opacity="0"/></radialGradient></defs>${flade("#0E0F14")}<rect width="32" height="32" fill="url(#mr${u})"/><rect width="32" height="32" fill="url(#mb${u})"/>`;
+  const IKONER = {
+    // Logoet, som app-ikonet
+    moedet: ["Mødet", (u) => moedet(u) + maerke("#E6DFD3", "#E6DFD3")],
+    // Sagsvagt holder øje: hullet i mærket har form som et øje, så det får en iris
+    oeje: ["Øjet", (u) => flade("#0E0F14") + `<defs><clipPath id="oe${u}"><path transform="${T(.11)}" d="${MIDTE}"/></clipPath><radialGradient id="ir${u}"><stop offset=".35" stop-color="#28377A"/><stop offset="1" stop-color="#5D6BA8"/></radialGradient></defs>`
+      + maerke("#E6DFD3", "#E6DFD3", { s: .11 }) + `<g clip-path="url(#oe${u})"><circle cx="16.4" cy="15.6" r="3.9" fill="url(#ir${u})"/><circle cx="16.4" cy="15.6" r="1.7" fill="#0E0F14"/><circle cx="17.5" cy="14.5" r=".7" fill="#E6DFD3"/></g>`],
+    // Mandagsmailen: en kuvert lukket med mærket som laksegl
+    mail: ["Mandagsmailen", () => flade("#28377A") + '<rect x="5" y="9" width="22" height="15" rx="1.6" fill="#E6DFD3"/><path d="M5.6 9.6 16 17.4 26.4 9.6" fill="#D9D1C3"/><path d="M5.6 23.4 13 16.4M26.4 23.4 19 16.4" stroke="#D9D1C3" stroke-width=".8"/>'
+      + '<circle cx="16" cy="17.4" r="4.3" fill="#8A2430"/><circle cx="16" cy="17.4" r="3.4" fill="none" stroke="#B04A50" stroke-width=".5"/>' + maerke("#E6DFD3", "#E6DFD3", { s: .025, y: 17.4 })],
+    // Avisen: mærket trykt i rasterprikker, skråt som i en gammel avis
+    avis: ["Avistrykket", (u) => flade("#E6DFD3") + `<defs><pattern id="pr${u}" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><circle cx="10" cy="10" r="7.5" fill="#8A2430"/></pattern><pattern id="pb${u}" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><circle cx="10" cy="10" r="7.5" fill="#28377A"/></pattern></defs>`
+      + maerke(`url(#pr${u})`, `url(#pb${u})`, { s: .125 })],
+    // Seglet: et stempel med takket kant, som et officielt dokument
+    segl: ["Seglet", () => flade("#8A2430") + Array.from({ length: 22 }, (_, i) => `<circle cx="16" cy="3.4" r="1.7" fill="#E6DFD3" transform="rotate(${i * 360 / 22} 16 16)"/>`).join("")
+      + '<circle cx="16" cy="16" r="12.6" fill="#E6DFD3"/><circle cx="16" cy="16" r="10.4" fill="none" stroke="#8A2430" stroke-width=".5"/><circle cx="16" cy="16" r="9.4" fill="none" stroke="#8A2430" stroke-width=".25"/>'
+      + maerke("#8A2430", "#28377A", { s: .07 })],
+    // Kompasset: mærket som nål, blå spids mod nordøst, rød mod sydvest
+    kompas: ["Kompasset", () => flade("#0C1430") + '<circle cx="16" cy="16" r="11.5" fill="none" stroke="#5D6BA8" stroke-width=".8"/>'
+      + [0, 90, 180, 270].map((v) => `<path d="M16 3.3v2.2" stroke="#B7BBD8" stroke-width=".9" stroke-linecap="round" transform="rotate(${v} 16 16)"/>`).join("")
+      + [45, 135, 225, 315].map((v) => `<circle cx="16" cy="4.4" r=".45" fill="#5D6BA8" transform="rotate(${v} 16 16)"/>`).join("")
+      + '<path d="M16 1.2 17.3 3.4H14.7Z" fill="#B04A50"/>' + maerke("#B04A50", "#5D6BA8", { s: .075 }) + '<circle cx="16" cy="16" r=".9" fill="#E6DFD3"/>'],
+    // Byen: kamtakkede gavle, et spir og et par tændte vinduer mod en rosa aftenhimmel
+    byen: ["Byen", () => flade("#DCA9A5") + '<circle cx="22" cy="11" r="4.6" fill="#B04A50"/>'
+      + '<path fill="#28377A" d="M0 32V21.5h1.4V20h1.4v-1.5h1.6V17h1.6v1.5h1.6V20h1.4v1.5H10V13l1.6-7.5L13.2 13v4.5L17 14l3.8 3.5V22h1.4v-1.5h1.4V19h1.6v-1.5h1.6V19h1.6v1.5h1.4V22H32v10Z"/>'
+      + '<path fill="#E6DFD3" d="M3.6 24h1.3v1.8H3.6zM15.4 20.5h1.3v1.8h-1.3zM25 24.5h1.3v1.8H25zM11 18h1.2v1.6H11z"/>'],
+    // Rådhuset: tårnet med uret, hvor beslutningerne bliver taget
+    raadhus: ["Rådhuset", () => flade("#B7BBD8") + '<path fill="#8A2430" d="M13.4 32V11.5h1V10h3.2v1.5h1V32Z"/><path fill="#8A2430" d="M14.6 10 16 2.5 17.4 10Z"/>'
+      + '<circle cx="16" cy="14.6" r="1.9" fill="#E6DFD3"/><path d="M16 13.4v1.2l.9.6" fill="none" stroke="#8A2430" stroke-width=".45" stroke-linecap="round"/>'
+      + '<path fill="#3E0E14" d="M3 32V23.5L8 21l5.4 2v9ZM18.6 32V23l5.4-2 5 2.5V32Z"/>'
+      + '<path fill="#DCA9A5" d="M5.4 25.6h1.2v2.2H5.4zM9 25.6h1.2v2.2H9zM21.8 25.6H23v2.2h-1.2zM25.4 25.6h1.2v2.2h-1.2zM15.4 19h1.2v2.2h-1.2zM15.4 24h1.2v2.2h-1.2z"/>'],
+    // Byrådssalen: mødebordet set oppefra, formanden for enden og politikerne langs siderne
+    byraad: ["Byrådssalen", () => flade("#D9D1C3") + '<path d="M10.4 10.6v8.2a5.6 5.6 0 0 0 11.2 0v-8.2" fill="none" stroke="#8A2430" stroke-width="2.6"/><rect x="11.4" y="6.2" width="9.2" height="2.6" rx=".6" fill="#28377A"/><circle cx="16" cy="4.6" r="1.1" fill="#0E0F14"/>'
+      + [11.6, 15.2, 18.8].map((y) => `<circle cx="7.4" cy="${y}" r="1.1" fill="#0E0F14"/><circle cx="24.6" cy="${y}" r="1.1" fill="#0E0F14"/>`).join("")
+      + '<circle cx="10.6" cy="24.6" r="1.1" fill="#0E0F14"/><circle cx="16" cy="27" r="1.1" fill="#0E0F14"/><circle cx="21.4" cy="24.6" r="1.1" fill="#0E0F14"/>'],
+    // Krydset: en stemmeseddel med et rødt kryds, sat med hånden
+    kryds: ["Krydset", () => flade("#28377A") + '<g transform="rotate(-8 16 16)"><rect x="8.5" y="5.5" width="15" height="21" rx="1" fill="#E6DFD3"/>'
+      + [10.2, 15.2, 20.2].map((y) => `<rect x="10.6" y="${y}" width="2.8" height="2.8" rx=".3" fill="none" stroke="#5D6BA8" stroke-width=".55"/><path d="M15 ${y + .9}h6.5M15 ${y + 2}h4.4" stroke="#B7BBD8" stroke-width=".6" stroke-linecap="round"/>`).join("")
+      + '</g><path d="M9.6 14.2c1.6 1.4 3.4 3.4 4.6 5.6M14.4 13.6c-1.8 2.2-3.6 4.4-4.4 6.8" fill="none" stroke="#B04A50" stroke-width="1.7" stroke-linecap="round"/>'],
+    // Skolen: rød skolebygning med klokketårn og et Dannebrog i Rubin og Kalk
+    skole: ["Skolen", () => flade("#B7BBD8") + '<path fill="#3E0E14" d="M5 17.5 13 12l8 5.5z"/><path fill="#8A2430" d="M6 17.5h14V27H6z"/><path fill="#28377A" d="M11.6 9.2h2.8v4h-2.8z"/><path fill="#28377A" d="M11.2 9.4 13 6.8l1.8 2.6z"/>'
+      + '<path fill="#E6DFD3" d="M7.6 19.4h2v2.2h-2zM11.9 19.4h2.2v2.2h-2.2zM16.4 19.4h2v2.2h-2zM7.6 23.2h2v2.2h-2zM16.4 23.2h2v2.2h-2z"/><path fill="#0E0F14" d="M11.9 23h2.2v4h-2.2z"/>'
+      + '<path d="M24.5 27V8" stroke="#0E0F14" stroke-width=".6"/><path fill="#B04A50" d="M24.8 8.2h5.4v3.6h-5.4z"/><path d="M26.4 8.2v3.6M24.8 10h5.4" stroke="#E6DFD3" stroke-width=".7"/><rect y="27" width="32" height="5" fill="#28377A"/>'],
+    // Biblioteket: en hylde med bøger, en af dem læner sig
+    bibliotek: ["Biblioteket", () => flade("#D9D1C3") + '<path fill="#8A2430" d="M6.5 11h3.2v11H6.5z"/><path fill="#28377A" d="M10 13.2h2.6V22H10z"/><path fill="#B04A50" d="M12.9 10h3.1v12h-3.1z"/><path fill="#5D6BA8" d="M16.3 14h2.4v8h-2.4z"/>'
+      + '<path fill="#3E0E14" d="m19.2 22 3.4-10.4 2.8.9-3.1 9.5z"/><path d="M6.5 13.2h3.2M6.5 19.5h3.2M12.9 12.3h3.1M12.9 19.8h3.1" stroke="#E6DFD3" stroke-width=".5"/>'
+      + '<rect x="4.5" y="22" width="23" height="1.6" rx=".4" fill="#0E0F14"/>'],
+    // Parken: et træ i efterårsfarver og en bænk
+    park: ["Parken", () => flade("#B7BBD8") + '<rect y="24" width="32" height="8" fill="#28377A"/><path d="M12.4 24v-7" stroke="#3E0E14" stroke-width="1.6"/>'
+      + '<circle cx="9.4" cy="13.6" r="4.2" fill="#8A2430"/><circle cx="15.2" cy="13" r="4.4" fill="#B04A50"/><circle cx="12.4" cy="9.4" r="4.4" fill="#8A2430"/><circle cx="13.6" cy="15.6" r="2.6" fill="#B04A50"/>'
+      + '<path d="M18.6 21.4h8.6M18.6 19.6h8.6M19.4 21.4V24M26.4 21.4V24" stroke="#0E0F14" stroke-width=".9" stroke-linecap="round"/><circle cx="24" cy="26.4" r=".6" fill="#DCA9A5"/>'],
+    // Cykelstien: en cykel på den blå cykelsti
+    cykel: ["Cykelstien", () => flade("#E6DFD3") + '<rect y="25" width="32" height="7" fill="#5D6BA8"/><path d="M3 28.4h4M11 28.4h4M19 28.4h4M27 28.4h4" stroke="#E6DFD3" stroke-width=".7"/>'
+      + '<circle cx="9.2" cy="20.4" r="4.4" fill="none" stroke="#0E0F14" stroke-width="1.1"/><circle cx="22.8" cy="20.4" r="4.4" fill="none" stroke="#0E0F14" stroke-width="1.1"/>'
+      + '<path d="M9.2 20.4 13.4 13.6h7.2l-5 6.8H9.2M13.4 13.6l2.2 6.8M20.6 13.6l2.2 6.8M12.4 12.2h2.6M19.6 11.2l1 2.4 1.8-.4" fill="none" stroke="#8A2430" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>'],
+    // Bussen: en bybus på vej gennem kommunen
+    bus: ["Bussen", () => flade("#DCA9A5") + '<rect y="25.6" width="32" height="6.4" fill="#0E0F14"/><path d="M4 28.6h5M14 28.6h5M24 28.6h5" stroke="#8D8A86" stroke-width=".6"/>'
+      + '<rect x="3.5" y="10" width="25" height="14.4" rx="2.6" fill="#8A2430"/><path fill="#B7BBD8" d="M6 12.4h4v4.6H6zM11.2 12.4h4v4.6h-4zM16.4 12.4h4v4.6h-4zM22.2 12.4h4.2v4.6h-4.2z"/><path fill="#3E0E14" d="M22.2 18.4h4.2v6h-4.2z"/>'
+      + '<path d="M3.5 19.2h18" stroke="#E6DFD3" stroke-width=".6"/><circle cx="9" cy="24.6" r="2.3" fill="#0E0F14"/><circle cx="9" cy="24.6" r=".8" fill="#D9D1C3"/><circle cx="24" cy="24.6" r="2.3" fill="#0E0F14"/><circle cx="24" cy="24.6" r=".8" fill="#D9D1C3"/><rect x="27.4" y="20.6" width="1.4" height="1.6" rx=".3" fill="#E6DFD3"/>'],
+    // Havnen: en båd med et rødt og et blåt sejl, som i mærket
+    havn: ["Havnen", () => flade("#E6DFD3") + '<rect y="21.5" width="32" height="10.5" fill="#28377A"/><path d="M4 25.2h4M12 27.6h6M22 25.4h5" stroke="#5D6BA8" stroke-width=".8" stroke-linecap="round"/>'
+      + '<path d="M15.3 6.5v13.6H8.4Z" fill="#8A2430"/><path d="M16.7 8.8v11.3h6Z" fill="#28377A"/><path d="M16 5.6v15" stroke="#0E0F14" stroke-width=".7"/>'
+      + '<path d="M7.6 20.6h16.8l-2.4 3.4H10Z" fill="#0E0F14"/><path d="M22.5 8.2q.9-.9 1.8 0q.9-.9 1.8 0" fill="none" stroke="#0E0F14" stroke-width=".6" stroke-linecap="round"/>'],
+    // Mågen: en måge over en rød sol, havnen om aftenen
+    maage: ["Mågen", () => flade("#E6DFD3") + '<circle cx="18" cy="21" r="7.6" fill="#B04A50"/><path d="M0 23.5h32V32H0Z" fill="#0C1430"/><path d="M5 26h5M14 28.2h7M23 26h4" stroke="#5D6BA8" stroke-width=".7" stroke-linecap="round"/>'
+      + '<path d="M7 12.6c1.9-2.1 3.8-2.1 5.6.7c1.8-2.8 3.7-2.8 5.6-.7" fill="none" stroke="#0C1430" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.6 7.4q1.1-1.2 2.2 0q1.1-1.2 2.2 0" fill="none" stroke="#0C1430" stroke-width=".7" stroke-linecap="round"/>'],
+    // Morgenkaffen: mandagsmailen kommer kl. 7, sammen med den første kop
+    kaffe: ["Morgenkaffen", () => flade("#8A2430") + '<ellipse cx="15.5" cy="26.6" rx="9.5" ry="1.7" fill="#3E0E14"/>'
+      + '<circle cx="22.3" cy="18" r="2.6" fill="none" stroke="#E6DFD3" stroke-width="1.5"/><path d="M8.6 13.8h13.8v5.2a6.9 6.9 0 0 1-13.8 0Z" fill="#E6DFD3"/>'
+      + '<ellipse cx="15.5" cy="13.8" rx="6.9" ry="1.5" fill="#3E0E14"/><path d="M12.6 10.6c-1.2-1.3 1.2-2.4 0-3.8M16 10.8c-1.3-1.5 1.3-2.8 0-4.4M19.2 10.6c-1.2-1.3 1.2-2.4 0-3.8" fill="none" stroke="#DCA9A5" stroke-width=".9" stroke-linecap="round"/>'
+      + maerke("#8A2430", "#28377A", { s: .03, x: 15.5, y: 19.4 })],
+  };
+
+
+  // Hver tegning får sine egne id'er, så gradienten virker, selv om ikonet står flere steder på siden
+  let ikonNr = 0;
+  const ikonSvg = (id) => `<svg viewBox="0 0 32 32" aria-hidden="true">${IKONER[id][1](++ikonNr)}</svg>`;
+  const forbogstav = () => (profil.navn.trim() || bruger?.email || "").charAt(0).toUpperCase();
+  const tegnAvatar = () => { $("#konto-initial").innerHTML = IKONER[profil.ikon] ? ikonSvg(profil.ikon) : esc(forbogstav()); };
   const PKEY = bruger?.email ? `sv-profil:${bruger.email}` : "sv-profil";
   // Med login ligger profilen på serveren og følger brugeren mellem computer og telefon; browseren har en kopi
   let profil = { ...STANDARD, ...((server && server.profil) || gemt(PKEY) || gemt("sv-profil") || {}) };
@@ -800,7 +925,7 @@
   const hilsen = () => { const h = new Date().getHours(); return h < 10 ? "God morgen" : h < 18 ? `God ${ugedag}` : "God aften"; };
 
   /* ---------- Data ---------- */
-  let SAGER = [], DATA = {};
+  let SAGER = [], DATA = {}, KOMMUNE = "København", KSLUG = "koebenhavn", IKKE_AABEN = "", AABNE = [{ navn: "København", slug: "koebenhavn" }];
   const lokal = (u) => /Lokaludvalg$/.test(u);
   const bydelNavn = (u) => u.replace(/\s*Lokaludvalg$/, "");
 
@@ -872,7 +997,7 @@
 
     // Toppen
     const navn = profil.navn.trim();
-    $("#ed-kicker").innerHTML = `<span class="status">Din udgave</span> · ${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long" })))} · Uge ${ugenr(IDAG)}`;
+    $("#ed-kicker").innerHTML = `<span class="status">Din udgave</span> · ${esc(KOMMUNE)} · ${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long" })))} · Uge ${ugenr(IDAG)}`;
     const nBesl = sket.filter((s) => alder(s.dato) <= 14 && s.st === "besluttet").length;
     const nKom = kommende.filter((s) => -alder(s.dato) <= 14).length;
     const tal = (n, en, flere) => `${n === 0 ? "ingen" : n} ${n === 1 ? en : flere}`;
@@ -880,9 +1005,10 @@
     $("#ed-sum").innerHTML = profil.emner.length || profil.ord.length
       ? `De seneste 14 dage er der truffet <b>${tal(nBesl, "beslutning", "beslutninger")}</b> om det, du følger. De næste 14 dage er <b>${tal(nKom, "sag", "sager")}</b> på dagsordenen.`
       : "Vælg de emner, du vil følge, så samler vi sagerne her.";
+    if (IKKE_AABEN) $("#ed-sum").innerHTML += ` <br>${esc(IKKE_AABEN)} er ikke åben i Sagsvagt endnu, så du ser København, indtil den er.`;
     $("#udgave").innerHTML = `<b>${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long", year: "numeric" })))}</b><br>Din udgave · uge ${ugenr(IDAG)}`;
     $("#konto-mail").textContent = bruger?.email ? `Logget ind som ${bruger.email}` : "";
-    $("#konto-initial").textContent = (profil.navn.trim() || bruger?.email || "").charAt(0).toUpperCase();
+    tegnAvatar();
     tegnMine();
 
     // Seneste: de nyeste sager om dine emner, med hvor længe siden
@@ -1046,7 +1172,7 @@
       });
       ind.scrollTop = 0; d.scrollTop = 0;
     } catch (err) {
-      ind.innerHTML = `<p class="tom">Sagen kunne ikke hentes. <a href="${esc(s.k)}" rel="nofollow">Læs den hos kommunen</a>.</p>`;
+      ind.innerHTML = `<p class="tom">Sagen kunne ikke hentes. <a href="${esc(s.k || link(s))}" rel="nofollow">Læs den hos kommunen</a>.</p>`;
     }
   }
   $("#laes").addEventListener("click", (e) => { if (e.target === $("#laes")) $("#laes").close(); });
@@ -1094,6 +1220,11 @@
     $("#p-ord").value = profil.ord.join(", ");
     const bydele = [...new Set(SAGER.map((s) => s.u).filter(lokal))].sort((a, b) => a.localeCompare(b, "da"));
     $("#p-bydel").innerHTML = `<option value="">Vælg bydel …</option>` + bydele.map((u) => `<option value="${esc(u)}"${u === profil.bydel ? " selected" : ""}>${esc(bydelNavn(u))}</option>`).join("");
+    // Kun København har lokaludvalg; i andre kommuner skjules bydelen
+    $("#p-bydel").parentElement.hidden = $("#h-bydel").parentElement.hidden = !bydele.length;
+    $("#p-kommune").innerHTML = AABNE.map((k) => `<option value="${esc(k.slug)}"${k.slug === KSLUG ? " selected" : ""}>${esc(k.navn)}</option>`).join("");
+    $("#p-ikon").innerHTML = [["", "Forbogstav"], ...Object.entries(IKONER).map(([id, [navn]]) => [id, navn])]
+      .map(([id, navn]) => `<label title="${navn}"><input type="radio" name="ikon" value="${id}" aria-label="${navn}"${(profil.ikon || "") === id ? " checked" : ""}><span class="av">${id ? ikonSvg(id) : esc(forbogstav() || "A")}</span></label>`).join("");
   }
   const vend = () => { const p = $("#panel"); p.hidden = !p.hidden; $("#tilpas")?.setAttribute("aria-expanded", String(!p.hidden)); if (!p.hidden) $("#p-navn").focus(); };
 
@@ -1115,12 +1246,14 @@
       gem(); tegn(); if ($("#laes").open) laesSag.opdater?.();
     } else if (t.dataset.fane) { fane = t.dataset.fane; vist = 20; tegnListe(); }
     else if (t.id === "flere") { vist += 20; tegnListe(); }
-    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte, velkommen: profil.velkommen }; gem(); fyldPanel(); tegn(); }
+    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte, velkommen: profil.velkommen, kommune: profil.kommune, ikon: profil.ikon }; gem(); fyldPanel(); tegn(); }
     else { e.preventDefault(); if (t.dataset.tilpas !== undefined) $("#panel").hidden = true; vend(); scrollTo({ top: 0, behavior: "smooth" }); }
   });
   $("#p-navn").addEventListener("input", (e) => { profil.navn = e.target.value.slice(0, 40); gem(); tegn(); });
   $("#p-ord").addEventListener("change", (e) => { profil.ord = e.target.value.split(",").map((o) => o.trim()).filter((o) => o.length > 1).slice(0, 12); gem(); tegn(); });
   $("#p-bydel").addEventListener("change", (e) => { profil.bydel = e.target.value; gem(); tegn(); });
+  $("#p-kommune").addEventListener("change", (e) => skiftKommune(e.target.value));
+  $("#p-ikon").addEventListener("change", (e) => { profil.ikon = e.target.value; gem(); tegnAvatar(); });
   let t0; $("#soeg").addEventListener("input", (e) => { clearTimeout(t0); t0 = setTimeout(() => { soeg = e.target.value; vist = 20; tegnListe(); }, 120); });
 
   /* ---------- Velkomst ----------
@@ -1201,10 +1334,43 @@
   /* ---------- Start ---------- */
   $("#indlaes").hidden = false;
   const hent = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); });
-  Promise.all([hent("../assets/sager.json"), hent("indlaeg.json").catch(() => ({ indlaeg: [] }))])
-    .then(([data, debat]) => {
-      DATA = data; SAGER = data.sager; INDLAEG = debat.indlaeg || []; EMNER = data.emner || {};
-      profil.emner = profil.emner.filter((id) => EMNER[id]);
+  // Kommunen: først den, man har valgt under Tilpas (profil.kommune), så den første åbne kommune fra tilmeldingen
+  // (fritekst som "Lyngby" eller "Københavns Kommune, Frederiksberg"), ellers København. ?kommune=albertslund virker til test.
+  // De åbne kommuner står i kommune/aabne.json (avis/kommuner.mjs); Københavns sager ligger i assets/sager.json.
+  const slugAf = (t) => t.toLowerCase().replace(/\s+kommunes?$/, "").replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const ALIAS = { kbh: "koebenhavn", koebenhavns: "koebenhavn", lyngby: "lyngby-taarbaek", taastrup: "hoeje-taastrup" };
+  const oensket = (q.get("kommune") || server?.tilmelding?.kommuner || "").split(/,|\/|\s+og\s+/)
+    .map((t) => ({ navn: stor(t.trim().replace(/\s+kommunes?$/i, "")), slug: ALIAS[slugAf(t)] || slugAf(t) })).filter((k) => k.slug);
+  const sagerFra = (slug) => hent(slug === "koebenhavn" ? "../assets/sager.json" : `../kommune/${slug}/sager.json`);
+  function brugKommune(k, data) {
+    // Andre kommuner har ikke rang (v), "Øvrige punkter" (r) og emner i overskriften (et)
+    SAGER = data.sager.map((s) => ({ et: [], v: 0, r: 0, ...s }));
+    DATA = { ...data, sager: SAGER }; EMNER = data.emner || {};
+    KOMMUNE = k.navn; KSLUG = k.slug;
+    IKKE_AABEN = !profil.kommune && oensket.length && !oensket.some((o) => AABNE.some((a) => a.slug === o.slug)) ? oensket.map((o) => o.navn).join(", ") : "";
+    profil.emner = profil.emner.filter((id) => EMNER[id]);
+  }
+  // Skift kommune under Tilpas: hent de nye sager uden at genindlæse siden. Bydelen hører til den gamle kommune.
+  async function skiftKommune(slug) {
+    const k = AABNE.find((x) => x.slug === slug), sel = $("#p-kommune"), note = sel.nextElementSibling, tekst = note.textContent;
+    if (!k) return;
+    sel.disabled = true; note.textContent = `Henter sagerne fra ${k.navn} …`;
+    try {
+      brugKommune(k, await sagerFra(slug));
+      profil.kommune = slug; profil.bydel = ""; gem();
+      fyldPanel(); tegn(); visSide();
+      note.textContent = tekst;
+    } catch (err) {
+      console.warn(err); sel.value = KSLUG;
+      note.textContent = `Vi kunne ikke hente sagerne fra ${k.navn}. Prøv igen om lidt.`;
+    } finally { sel.disabled = false; }
+  }
+  Promise.all([hent("../kommune/aabne.json").catch(() => AABNE), hent("indlaeg.json").catch(() => ({ indlaeg: [] }))])
+    .then(async ([aabne, debat]) => {
+      AABNE = aabne; INDLAEG = debat.indlaeg || [];
+      const find = (slug) => AABNE.find((a) => a.slug === slug);
+      const k = find(profil.kommune) || oensket.map((o) => find(o.slug)).find(Boolean) || find("koebenhavn") || AABNE[0];
+      brugKommune(k, await sagerFra(k.slug));
       const forud = server && !server.profil ? forudfyld() : [];
       $("#indlaes").hidden = true; $("#avis").hidden = false;
       fyldPanel(); tegn(); visSide(); visVelkomst(forud);
