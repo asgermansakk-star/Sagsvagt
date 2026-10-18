@@ -368,6 +368,38 @@ const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="p
   <p>Vælg det, du går op i, fx boliger, cykler eller natteliv. Så sender vi dig de sager, politikerne har på bordet, forklaret så det giver mening. Det er gratis, og vi søger testere.</p>
   <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Bliv tester</a>
 </aside>`;
+// "Hvad kan du gøre?": kun det, sagen og reglerne dækker. Byrådets møder er offentlige (styrelseslovens § 10),
+// udvalgenes er lukkede (§ 20). Høringsfristen står i sagen. Uden noget at gøre vises boksen ikke.
+const BYRAAD = /^(Borgerrepræsentationen|Kommunalbestyrelsen|Byrådet)$/i;
+function hvadKanDuGoere(s) {
+  const web = KOMMUNE[s.kommune || "København"]?.web || "https://www.kk.dk/";
+  const kort = (u) => u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+  const lnk = (u) => `<a href="${esc(u)}" rel="nofollow">${esc(kort(u))}</a>`;
+  const hoering = erKK(s) ? "https://blivhoert.kk.dk" : web;
+  const naar = `${ugedag(s.dato)} ${datoTekst(s.dato)}`;
+  // Ældre sager er sandsynligvis afgjort videre oppe eller færdighørt, så dér lover vi ikke noget
+  const siden = (Date.parse(IDAG) - Date.parse(s.dato)) / 864e5, forkastet = /forkast|afvist|ikke godkendt/i.test(s.udfald || "");
+  const r = [];
+  // "Alle kan svare" kun, når sagen selv siger offentlig høring; mange høringer er kun for bestemte parter (fx skolebestyrelser)
+  const offentlig = /offentlig\s+høring/i.test(s.afsnit.map((a) => a.tekst).join(" "));
+  // shortcut: høringer kun for København; FirstAgenda-PDF'erne blander nogle gange flere punkters tekst i én sag. Fjern, når parsePdf skiller dem rent.
+  if (erKK(s)) {
+    if (s.frist && s.frist >= IDAG) r.push(offentlig
+      ? ["Svar i høringen", `Alle kan sende et høringssvar, før forslaget bliver endeligt vedtaget. Fristen er ${ugedag(s.frist)} ${datoTekst(s.frist)}, og du svarer på ${lnk(hoering)}.`]
+      : ["Høringsfrist", `Sagen nævner en høringsfrist ${ugedag(s.frist)} ${datoTekst(s.frist)}. Læs i sagen, hvem høringen er for.`]);
+    else if (s.hoering && offentlig && !s.frist && siden <= 60 && !forkastet) r.push(["Hold øje med høringen", `Forslaget lægger op til en offentlig høring. Når den åbner, kan alle sende et høringssvar på ${lnk(hoering)}.`]);
+  }
+  if (s.status === "kommer") {
+    if (BYRAAD.test(s.udvalg)) r.push(["Sid med til mødet", `Byrådets møder er offentlige, så du kan selv sidde med, når sagen behandles ${naar}.`]);
+    else if (erLokaludvalg(s.udvalg)) r.push(["Mød op", `Lokaludvalgets møder er som regel åbne for alle i bydelen. Sagen behandles ${naar}.`]);
+    else r.push(["Skriv til politikerne", `Udvalgets møder er lukkede, men du kan skrive til medlemmerne før mødet ${naar}. Du finder dem på ${lnk(web)}.`]);
+  } else if (s.videre && !BYRAAD.test(s.udvalg) && siden <= 30 && !forkastet) {
+    r.push(["Sagen er ikke slut", `Den skal videre til ${esc(s.videre)}. Indtil den er afgjort, kan du skrive til politikerne. Du finder dem på ${lnk(web)}.`]);
+  }
+  if (!r.length) return "";
+  return `<section class="kf goer" aria-labelledby="goer-h"><h2 id="goer-h">Hvad kan du gøre?</h2><dl>${r.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl></section>`;
+}
+
 // Under sagen: tilbyd at følge netop sagens emne eller bydel. Linket udfylder emnet i tilmeldingen.
 const testerBoks = (s) => {
   const hvad = erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.emner.length ? EMNER[s.emner[0]].navn : "";
@@ -508,6 +540,7 @@ async function main() {
       </header>
       <div class="body">
         ${forklar(kortFortalt(s), esc, 3)}
+        ${hvadKanDuGoere(s)}
         ${vejBoks(s, vej, H)}
       <!--tester-->
         <details class="hel-sag">

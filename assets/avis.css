@@ -207,6 +207,9 @@ p { margin: 0; }
 .kf li + li { margin-top: 6px; }
 .kf-mere { margin: 6px 0 0; font-size: var(--fodnote); color: var(--muted); }
 .kf-videre { display: block; font-size: var(--fodnote); color: var(--muted); margin-top: 2px; }
+/* Hvad kan du gøre?: samme opbygning som Kort fortalt, med en rød streg, så handlingerne skiller sig ud */
+.kf.goer { box-shadow: inset 3px 0 0 var(--vin); }
+.kf.goer dt { color: var(--vin); }
 .vej ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 0; }
 .vej-trin { flex: 1 1 150px; position: relative; padding: 18px 14px 0 0; font-size: var(--fodnote); line-height: 1.4; }
 .vej-trin::before { content: ""; position: absolute; top: 5px; left: 0; right: 0; height: 2px; background: var(--rule); }

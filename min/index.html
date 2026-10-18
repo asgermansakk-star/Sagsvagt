@@ -303,7 +303,9 @@
   .indtryk input:focus-visible + span { outline: 2px solid var(--indigo); outline-offset: 2px; }
   .farlig { background: var(--vin) !important; }
   .slet-liste { margin: 0; padding-left: 20px; font-size: .9375rem; display: grid; gap: 4px; }
-  .panel .slut .knapper-h { display: flex; gap: 18px; }
+  .panel .slut .knapper-h { display: flex; gap: 18px; align-items: center; }
+  .panel .slut button.p-gem { min-height: 44px; padding: 0 22px; border-radius: 8px; background: var(--nat); color: var(--kalk); font-size: .9375rem; }
+  .panel .slut button.p-gem:hover { background: var(--grafit); }
 
   @media (max-width: 960px) {
     .debat-grid { grid-template-columns: 1fr; }
@@ -405,6 +407,7 @@
       <a href="#mandagsmail" data-side="mandagsmail" class="kun-stor"><svg class="ni" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg><span>Mandagsmail</span></a>
       <details class="mere konto"><summary><span class="initial" id="konto-initial" aria-hidden="true"></span><span>Konto</span></summary><div>
         <p class="konto-mail" id="konto-mail"></p>
+        <button type="button" data-tilpas>Rediger profil</button>
         <a href="#mandagsmail" class="kun-lille">Din mandagsmail</a>
         <a href="../index.html">Gå til avisen</a>
         <a href="admin.html" id="admin-link" hidden>Tilmeldte</a>
@@ -489,7 +492,7 @@
             <input id="p-ord" placeholder="fx Lersøparken, Valby Langgade">
             <p class="hint">Adskil med komma. Vi finder sager, hvor ordene står.</p>
           </div>
-          <div class="slut"><span id="p-gemmes">Dine valg gemmes kun i denne browser, indtil login er klar.</span><span class="knapper-h"><button type="button" id="p-nulstil">Nulstil</button><button type="button" id="p-slet" hidden>Slet min konto</button></span></div>
+          <div class="slut"><span id="p-gemmes">Dine valg gemmes kun i denne browser, indtil login er klar.</span><span class="knapper-h"><button type="button" id="p-nulstil">Nulstil</button><button type="button" id="p-slet" hidden>Slet min konto</button><button type="button" id="p-gem" class="p-gem">Gem</button></span></div>
         </form>
       </section>
 
@@ -1305,7 +1308,25 @@
     } else if (t.dataset.fane) { fane = t.dataset.fane; vist = 20; tegnListe(); }
     else if (t.id === "flere") { vist += 20; tegnListe(); }
     else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte, velkommen: profil.velkommen, kommuner: profil.kommuner, ikon: profil.ikon }; gem(); fyldPanel(); tegn(); }
-    else { e.preventDefault(); if (t.dataset.tilpas !== undefined) $("#panel").hidden = true; vend(); scrollTo({ top: 0, behavior: "smooth" }); }
+    else if (t.dataset.tilpas !== undefined) {
+      // Fra Konto-menuen eller en tekst: gå til forsiden, åbn Tilpas og rul hen til det (efter visSide har rullet til toppen)
+      e.preventDefault(); $("#panel").hidden = true; vend();
+      const tilPanel = () => setTimeout(() => $("#panel").scrollIntoView({ block: "start" }), 0);
+      if (location.hash.length > 1) { addEventListener("hashchange", tilPanel, { once: true }); location.hash = ""; } else tilPanel();
+    } else { e.preventDefault(); vend(); scrollTo({ top: 0, behavior: "smooth" }); }
+  });
+  // Gem: alt gemmes allerede løbende, men knappen gemmer med det samme, siger det tydeligt og lukker panelet
+  $("#p-gem").addEventListener("click", async () => {
+    const b = $("#p-gem"), note = $("#p-gemmes"), foer = note.textContent;
+    clearTimeout(tGem); gemt(PKEY, profil); b.disabled = true;
+    try {
+      if (server) await api("profil.php", profil);
+      note.textContent = "Gemt."; b.textContent = "Gemt";
+      setTimeout(() => { if (!$("#panel").hidden) vend(); note.textContent = foer; b.textContent = "Gem"; scrollTo({ top: 0, behavior: "smooth" }); }, 900);
+    } catch (err) {
+      console.warn("Profilen blev ikke gemt:", err.message);
+      note.textContent = "Vi kunne ikke gemme på serveren. Prøv igen om lidt.";
+    } finally { b.disabled = false; }
   });
   $("#p-navn").addEventListener("input", (e) => { profil.navn = e.target.value.slice(0, 40); gem(); tegn(); });
   $("#p-ord").addEventListener("change", (e) => { profil.ord = e.target.value.split(",").map((o) => o.trim()).filter((o) => o.length > 1).slice(0, 12); gem(); tegn(); });
