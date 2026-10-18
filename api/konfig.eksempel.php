@@ -32,6 +32,4 @@ return [
     // Dem, der kan bruge admin-siden (min/admin.html). De skal selv have en konto.
     'admins' => ['mansa@sagsvagt.dk'],
 
-    // Hvem får besked om nye tilmeldinger
-    'tilmeldinger_til' => 'signup@sagsvagt.dk',
 ];

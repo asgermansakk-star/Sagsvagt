@@ -4,6 +4,8 @@
 declare(strict_types=1);
 
 $K = require __DIR__ . '/_konfig.php';
+// Alle mails om tilmeldinger (nye, opdaterede, slettede konti) går hertil; i mailen filtreres de til mappen Signup
+const TILMELDINGER_TIL = 'mansa@sagsvagt.dk';
 
 // ---------- Svar ----------
 function svar(int $kode, array $data = []): never {

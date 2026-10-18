@@ -653,15 +653,15 @@
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   /* ---------- Tilmelding ---------- */
-  // Tilmeldinger sendes via FormSubmits aktiverede alias (skjuler den aktiverede modtageradresse) med en kopi (_cc)
-  // til signup@sagsvagt.dk. Afviser FormSubmit alligevel, tilbyder vi en færdigudfyldt mail til signup@ i stedet.
-  const SIGNUP_MAIL = "signup@sagsvagt.dk";
+  // Svarer vores server ikke, sendes tilmeldingen via FormSubmit til mansa@sagsvagt.dk (samme adresse som serveren bruger).
+  // Afviser FormSubmit alligevel, tilbyder vi en færdigudfyldt mail til mansa@ i stedet.
+  const SIGNUP_MAIL = "mansa@sagsvagt.dk";
   const AUTOSVAR = "Tak, fordi du har skrevet dig op til Sagsvagt.\n\n"
     + "Vi giver besked, når din kommune er klar. Derefter får du én mail hver mandag kl. 07.00 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
     + "Vil du ændre dine emner eller afmelde dig, så skriv til mansa@sagsvagt.dk.\n"
     + "Sådan behandler vi dine oplysninger: https://sagsvagt.dk/privatliv.html\n\n"
     + "Venlig hilsen\nSagsvagt";
-  const FORM_ENDPOINT = "https://formsubmit.co/ajax/424d1304258cfcf5d9718ed239d32ff8";
+  const FORM_ENDPOINT = `https://formsubmit.co/ajax/${SIGNUP_MAIL}`;
   const mailto = (d) => `mailto:${SIGNUP_MAIL}?subject=${encodeURIComponent("Tilmelding til Sagsvagt")}&body=${encodeURIComponent(
     `Skriv mig op til Sagsvagt.\n\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n`)}`;
   // Hvor kom den tilmeldte fra? Del fx sagsvagt.dk/vagt.html?fra=instagram eller ?fra=grupper
@@ -753,7 +753,7 @@
     form.kommuner.value = [...new Set(dele.map(rigtigKommune))].join(", ");
     const data = Object.fromEntries(new FormData(form));
     data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
-    data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table"; data._cc = SIGNUP_MAIL; data._autoresponse = AUTOSVAR;
+    data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table"; data._autoresponse = AUTOSVAR;
     btn.disabled = true; btn.classList.add("busy"); msg.className = "form-msg"; msg.textContent = "";
     // Først vores egen server (api/tilmeld.php gemmer tilmeldingen, så den kan få en invitation til login).
     // Svarer den ikke (fx uden PHP), bruges FormSubmit som før.
