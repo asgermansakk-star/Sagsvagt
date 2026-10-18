@@ -82,19 +82,43 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   reIndhold.lastIndex = mIndhold.index + mIndhold[0].length;
   while (/\s/.test(t[reIndhold.lastIndex])) reIndhold.lastIndex++;
   const titler = []; let m;
-  while ((m = reIndhold.exec(t))) titler.push(m[1].trim());
+  while ((m = reIndhold.exec(t))) titler.push({ titel: m[1].trim(), side: +m[2] });
   let markoer = reIndhold.lastIndex;
 
   // Find hvert punkt i rækkefølge; lange titler kan være brudt over flere linjer i selve teksten.
   // Nogle kommuner skriver titlen med versaler og løbenummer foran ("188.ORIENTERINGSSAG: …")
-  const fund = [];
-  for (const titel of titler) {
-    const re = new RegExp(`(^|\\n)(?:\\d+\\.[ \\t]*)?${titel.split(/\s+/).map(reEsc).join("\\s+")}\\s*\\n`, "gi");
-    re.lastIndex = markoer;
+  // En afkortet titel er kun begyndelsen af overskriften; så bruger vi hele linjen fra teksten som titel.
+  // Et punktum sidst i titlen forsvinder i indholdsfortegnelsens prikker ("lejekontrakt......" for "lejekontrakt."),
+  // og i teksten mister pdftotext nogle gange bindestregen mellem årstal ("20272029").
+  const findTitel = (titel, fra, afkortet = false) => {
+    const ord = titel.split(/\s+/).map(reEsc).join("\\s+").replace(/(\d)-(?=\d)/g, "$1-?");
+    const re = new RegExp(`(^|\\n)(?:\\d+\\.[ \\t]*)?(${ord}${afkortet ? "[^\\n]*" : ""})\\.?[ \\t]*\\n`, "gi");
+    re.lastIndex = fra;
     const f = re.exec(t);
-    if (!f) continue;
-    fund.push({ titel, idx: f.index, start: f.index + f[0].length });
-    markoer = f.index + f[0].length;
+    return f && { titel: afkortet ? f[2].trim() : titel, idx: f.index, start: f.index + f[0].length };
+  };
+  // En titel, der er for lang til linjen i indholdsfortegnelsen, afkortes uden prikker og flyder sammen med den næste:
+  // "… i hørin 10 MNBU/ØU/KB - Næste titel...... 13". Findes det hele ikke, deler vi ved et sidetal mellem forrige og
+  // denne titels side, hvis begge dele står i teksten.
+  const findDele = (titel, fra, fraSide, tilSide) => {
+    const f = findTitel(titel, fra);
+    if (f) return [f];
+    for (const d of titel.matchAll(/\s(\d{1,3})\s+/g)) {
+      if (+d[1] < fraSide || +d[1] > tilSide) continue;
+      const a = findTitel(titel.slice(0, d.index), fra, true);
+      const b = a && findDele(titel.slice(d.index + d[0].length), a.start, +d[1], tilSide);
+      if (b) return [a, ...b];
+    }
+    return null;
+  };
+  // null = titlen blev ikke fundet; så kender vi ikke slutningen på punktet før.
+  // Lukkede punkter står kun i indholdsfortegnelsen, så dem tæller vi bare med i nummereringen.
+  const fund = []; let side = 0, nr = 0;
+  for (const { titel, side: s } of titler) {
+    const f = findDele(titel, markoer, side, s);
+    if (f) { for (const x of f) fund.push({ ...x, nr: ++nr }); markoer = f.at(-1).start; }
+    else { nr++; if (!/^Lukket\b/i.test(titel)) fund.push(null); }
+    side = s;
   }
 
   // Afsnitsoverskrifter: kommunerne bruger forskellige navne, med versaler midt i teksten ("RESUME Økonomi- og …")
@@ -110,8 +134,10 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   const afsnitNavn = (h) => NAVN[h] || h.charAt(0).toUpperCase() + h.slice(1).toLowerCase();
   const punkter = [];
   fund.forEach((p, i) => {
-    if (/^(Lukket\b|Underskriftsark)/i.test(p.titel)) return;
-    const krop = t.slice(p.start, i + 1 < fund.length ? fund[i + 1].idx : t.length);
+    if (!p || /^(Lukket\b|Underskriftsark)/i.test(p.titel)) return;
+    // Uden næste punkts overskrift ville kroppen tage det næste punkts tekst med; så springer vi punktet over
+    if (fund[i + 1] === null) return;
+    const krop = t.slice(p.start, fund[i + 1]?.idx ?? t.length);
     const dele = [...krop.matchAll(MARK)];
     const afsnit = [];
     dele.forEach((d, j) => {
@@ -134,7 +160,7 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
     if (!dele.length && renTekst(krop)) afsnit.push({ titel: "Sagsfremstilling", tekst: renTekst(krop) });
     const bilagAfsnit = afsnit.find((a) => a.titel === "Bilag");
     punkter.push({
-      nr: i + 1, titel: p.titel.replace(/\s+/g, " "),
+      nr: p.nr, titel: p.titel.replace(/\s+/g, " "),
       afsnit: afsnit.filter((a) => a !== bilagAfsnit),
       bilag: bilagAfsnit ? bilagAfsnit.tekst.split("\n").map((l) => l.trim()).filter(Boolean).map((navn) => ({ navn, url: null })) : [],
     });
@@ -188,6 +214,8 @@ async function hentKommune(k) {
       const pdf = await hent(`/pdf/GetDagsorden/${id}`, { binaer: true });
       const m = parsePdf(await pdfTilTekst(pdf), kendte);
       // tomFra: hvornår mødet første gang gav nul punkter, så vi kun prøver igen i en uge
+      // Mødets gamle punkter fjernes først, så et punkt, der har skiftet nummer eller er sprunget over, ikke bliver hængende
+      for (const [sid, s] of Object.entries(gemt.sager)) if (s.kilde === `${k.base}/vis?id=${id}`) delete gemt.sager[sid];
       gemt.dokumenter[id] = { lastmod, type: m.type, udvalg: m.udvalg, dato: m.dato, punkter: m.punkter.length, ...(m.punkter.length ? {} : { tomFra: gemt.dokumenter[id]?.tomFra || idag }) };
       for (const p of m.punkter) {
         const sid = `${k.slug}-${m.dato}-${slug(m.udvalg)}-${p.nr}`;

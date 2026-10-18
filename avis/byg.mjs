@@ -370,7 +370,8 @@ const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="p
 </aside>`;
 // "Hvad kan du gøre?": kun det, sagen og reglerne dækker. Byrådets møder er offentlige (styrelseslovens § 10),
 // udvalgenes er lukkede (§ 20). Høringsfristen står i sagen. Uden noget at gøre vises boksen ikke.
-const BYRAAD = /^(Borgerrepræsentationen|Kommunalbestyrelsen|Byrådet)$/i;
+// Nogle kommuner sætter navnet foran ("Herning Byråd", "Odense Byråd")
+const BYRAAD = /^(Borgerrepræsentationen|Kommunalbestyrelsen|Byrådet)$|Byråd$/i;
 function hvadKanDuGoere(s) {
   const web = KOMMUNE[s.kommune || "København"]?.web || "https://www.kk.dk/";
   const kort = (u) => u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
@@ -382,13 +383,10 @@ function hvadKanDuGoere(s) {
   const r = [];
   // "Alle kan svare" kun, når sagen selv siger offentlig høring; mange høringer er kun for bestemte parter (fx skolebestyrelser)
   const offentlig = /offentlig\s+høring/i.test(s.afsnit.map((a) => a.tekst).join(" "));
-  // shortcut: høringer kun for København; FirstAgenda-PDF'erne blander nogle gange flere punkters tekst i én sag. Fjern, når parsePdf skiller dem rent.
-  if (erKK(s)) {
-    if (s.frist && s.frist >= IDAG) r.push(offentlig
-      ? ["Svar i høringen", `Alle kan sende et høringssvar, før forslaget bliver endeligt vedtaget. Fristen er ${ugedag(s.frist)} ${datoTekst(s.frist)}, og du svarer på ${lnk(hoering)}.`]
-      : ["Høringsfrist", `Sagen nævner en høringsfrist ${ugedag(s.frist)} ${datoTekst(s.frist)}. Læs i sagen, hvem høringen er for.`]);
-    else if (s.hoering && offentlig && !s.frist && siden <= 60 && !forkastet) r.push(["Hold øje med høringen", `Forslaget lægger op til en offentlig høring. Når den åbner, kan alle sende et høringssvar på ${lnk(hoering)}.`]);
-  }
+  if (s.frist && s.frist >= IDAG) r.push(offentlig
+    ? ["Svar i høringen", `Alle kan sende et høringssvar, før forslaget bliver endeligt vedtaget. Fristen er ${ugedag(s.frist)} ${datoTekst(s.frist)}, og du svarer på ${lnk(hoering)}.`]
+    : ["Høringsfrist", `Sagen nævner en høringsfrist ${ugedag(s.frist)} ${datoTekst(s.frist)}. Læs i sagen, hvem høringen er for.`]);
+  else if (s.hoering && offentlig && !s.frist && siden <= 60 && !forkastet) r.push(["Hold øje med høringen", `Forslaget lægger op til en offentlig høring. Når den åbner, kan alle sende et høringssvar på ${lnk(hoering)}.`]);
   if (s.status === "kommer") {
     if (BYRAAD.test(s.udvalg)) r.push(["Sid med til mødet", `Byrådets møder er offentlige, så du kan selv sidde med, når sagen behandles ${naar}.`]);
     else if (erLokaludvalg(s.udvalg)) r.push(["Mød op", `Lokaludvalgets møder er som regel åbne for alle i bydelen. Sagen behandles ${naar}.`]);
@@ -435,7 +433,7 @@ async function main() {
   const KSTED = new Map();
   for (const navn of new Set(andre.map((s) => s.kommune))) {
     const egne = andre.filter((s) => s.kommune === navn);
-    const top = [...new Set(egne.map((s) => s.udvalg))].find((u) => /^(Byrådet|Kommunalbestyrelsen|Byråd)/i.test(u));
+    const top = [...new Set(egne.map((s) => s.udvalg))].find((u) => BYRAAD.test(u));
     if (top) TOPRAAD.set(navn, top);
     if (KOMMUNE[navn]) KSTED.set(navn, await findKommuneSteder(KOMMUNE[navn], egne, ROD));
   }
