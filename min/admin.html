@@ -92,7 +92,7 @@
     </details>
     <details class="import" id="mm-boks">
       <summary id="mm-titel">Mandagsmail</summary>
-      <p class="lille">Laver hver tilmeldts mail ud fra deres kommuner, emner og egne ord, så du kan se dem, før de sendes. Tilmeldte fra kommuner, der ikke er åbne endnu, og tilmeldte uden emner får ingen mail. Er der valgt et område øverst, gælder det også her. Ingen får samme uges mail to gange.</p>
+      <p class="lille">Laver en mail til alle tilmeldte, så du kan se dem, før de sendes. Følger de en åben kommune, får de sagerne om deres emner (uden emner: ugens vigtigste sager). Er deres kommune ikke åben endnu, får de en kort mail om, at den er på vej. Afmeldte og adresser markeret med "Mail kom retur" får ingen. Ingen får samme uges mail to gange.</p>
       <div class="handl-raekke">
         <label class="lille"><b>Mandag</b> <input type="date" id="mm-dato"></label>
         <button class="knap sek" id="mm-forbered" type="button">Forbered mails</button>
@@ -264,7 +264,7 @@
 <script type="module">
 // Mandagsmailen: henter de tilmeldte, laver hver mail med samme skabelon som forhåndsvisningen i Min avis
 // (assets/mandagsmail.js) og sender dem først, når redaktionen trykker Send. Sagerne hentes fra de samme filer som Min avis.
-import { lavMandagsmail } from "../assets/mandagsmail.js";
+import { lavMandagsmail, lavVentemail } from "../assets/mandagsmail.js";
 import { profilFor } from "../assets/profil.js";
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -279,7 +279,9 @@ $("#mm-dato").value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2,
 
 let MAILS = [];
 const status = (t) => { $("#mm-status").textContent = t; };
-const NAVN = { klar: "Klar", sendt: "Sendt", lukket: "Kommune ikke åben", ingenEmner: "Ingen emner", ingenSager: "Ingen sager", udenfor: "Uden for området", fejl: "Fejlede" };
+const NAVN = { klar: "Klar", sendt: "Sendt", fejl: "Fejlede" };
+// De kommuner, en tilmeldt skrev, med pænt navn ("aarhus kommune" → "Aarhus")
+const skrevne = (t) => (t || "").split(/,|\/|\s+og\s+/i).map((x) => x.trim().replace(/\s+kommunes?$/i, "")).filter(Boolean).map((x) => x.charAt(0).toUpperCase() + x.slice(1));
 
 // Én kommunes sager, som Min avis henter dem (København i assets/sager.json, de andre i kommune/<slug>/sager.json)
 const CACHE = new Map();
@@ -297,22 +299,24 @@ async function forbered() {
     const [{ modtagere }, aabne] = await Promise.all([api("admin/mandagsmail.php", { handling: "modtagere", uge }), hent("../kommune/aabne.json")]);
     const slugs = aabne.map((k) => k.slug), navnPaa = Object.fromEntries(aabne.map((k) => [k.slug, k.navn]));
     const EMNER = (await kommune("koebenhavn", "København")).emner;
-    // Området øverst på siden ("København", "Albertslund" …) begrænser også udsendelsen
-    const omraade = $("#omraade")?.value || "", omrSlug = aabne.find((k) => k.navn === omraade)?.slug;
+    const aabneNavne = aabne.map((k) => k.navn);
     MAILS = [];
     for (const a of modtagere) {
-      const p = profilFor(a, EMNER, slugs), m = { a, p, uge };
-      if (a.sendt) m.st = "sendt";
-      else if (!p.kommuner.length) m.st = "lukket";
-      else if (omraade && !p.kommuner.includes(omrSlug)) m.st = "udenfor";
-      else if (!p.emner.length && !p.ord.length) m.st = "ingenEmner";
-      if (p.kommuner.length && (p.emner.length || p.ord.length)) {
+      const p = profilFor(a, EMNER, slugs), m = { a, p, uge, st: a.sendt ? "sendt" : "klar" };
+      if (!p.kommuner.length) {
+        // Kommunen er ikke åben endnu (eller ingen kommune skrevet): en kort mail om, at den er på vej
+        m.type = "Venteliste";
+        m.mail = lavVentemail({ kommuner: skrevne(a.kommuner), aabne: aabneNavne, idag: uge, navn: p.navn, modtager: a.email });
+      } else {
+        // Uden emner og egne ord: ugens vigtigste sager på tværs af alle emner
+        const udenEmner = !p.emner.length && !p.ord.length;
+        m.type = udenEmner ? "Sager (alle emner)" : "Sager";
         const data = await Promise.all(p.kommuner.map((s) => kommune(s, navnPaa[s])));
         const samlet = { emner: data[0].emner, sager: data.flatMap((x) => x.sager) };
-        m.mail = lavMandagsmail({ data: samlet, profil: p, idag: uge, modtager: a.email, linkTil: (s) => SITE + s.url });
-        if (!m.st && !m.mail.antal.besluttet && !m.mail.antal.kommer && !m.mail.antal.bydel) m.st = "ingenSager";
+        m.mail = lavMandagsmail({ data: samlet, profil: udenEmner ? { ...p, emner: Object.keys(EMNER) } : p, idag: uge, modtager: a.email, linkTil: (s) => SITE + s.url });
+        // De har ikke valgt emner, så emnelinjen skal ikke sige "om dine emner"
+        if (udenEmner) m.mail = { ...m.mail, emne: m.mail.emne.replace(/ om dine emner$/, " i din kommune") };
       }
-      m.st ||= "klar";
       MAILS.push(m);
     }
     vis();
@@ -324,10 +328,11 @@ function vis() {
   const klar = MAILS.filter((m) => m.st === "klar"), t = (st) => MAILS.filter((m) => m.st === st).length;
   $("#mm-tabel").hidden = !MAILS.length;
   $("#mm-raekker").innerHTML = MAILS.map((m, i) => `<tr><td>${esc(m.a.email)}</td><td>${esc(m.p.kommuner.length ? m.p.kommuner.join(", ") : m.a.kommuner)}</td>`
-    + `<td>${m.mail ? esc(m.mail.emne) : '<span class="lille">–</span>'}</td><td><span class="st ${m.st === "klar" ? "klar" : m.st === "sendt" ? "sendt" : "spring"}">${esc(NAVN[m.st])}</span>${m.fejl ? `<br><span class="lille">${esc(m.fejl)}</span>` : ""}</td>`
+    + `<td>${m.mail ? esc(m.mail.emne) : '<span class="lille">–</span>'}</td><td><span class="st ${m.st === "klar" ? "klar" : m.st === "sendt" ? "sendt" : "spring"}">${esc(NAVN[m.st])}</span><br><span class="lille">${esc(m.type)}</span>${m.fejl ? `<br><span class="lille">${esc(m.fejl)}</span>` : ""}</td>`
     + `<td>${m.mail ? `<button class="mini-knap" type="button" data-vis="${i}">Vis</button>` : ""}</td></tr>`).join("");
   $("#mm-titel").textContent = `Mandagsmail (${klar.length} klar)`;
-  status(`${klar.length} klar til at sende. ${t("sendt")} har allerede fået ugens mail. Springes over: ${t("lukket")} kommune ikke åben, ${t("ingenEmner")} uden emner, ${t("ingenSager")} uden sager${t("udenfor") ? `, ${t("udenfor")} uden for området` : ""}.`);
+  const ty = (x) => MAILS.filter((m) => m.st === "klar" && m.type === x).length;
+  status(`${klar.length} klar til at sende: ${ty("Sager")} med sager om deres emner, ${ty("Sager (alle emner)")} med ugens vigtigste sager (ingen emner valgt) og ${ty("Venteliste")} om, at deres kommune er på vej. ${t("sendt")} har allerede fået ugens mail.`);
   $("#mm-send").disabled = !klar.length;
   $("#mm-send").textContent = klar.length ? `Send ${klar.length} ${klar.length === 1 ? "mail" : "mails"}` : "Send";
 }

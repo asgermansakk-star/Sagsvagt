@@ -60,6 +60,30 @@ export function vaelgSager({ data, profil, idag }) {
   return { besluttet: sket.slice(0, VIS), flereBesluttet: Math.max(0, sket.length - VIS), kommer: kommer.slice(0, VIS), flereKommer: Math.max(0, kommer.length - VIS), bydel, dage, emner, ord: profil.ord || [] };
 }
 
+// Mailens top (logo, uge og dato) og bund (afsender, afmelding), fælles for mandagsmailen og ventelistemailen
+const mailTop = ({ emne, preheader, uge, idag, logo }) => `<!doctype html>
+<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light"><meta name="x-apple-disable-message-reformatting"><meta name="format-detection" content="telephone=no, date=no, address=no"><title>${esc(emne)}</title></head>
+<body style="margin:0;padding:0;background:${C.kalk};">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(preheader)}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${C.kalk}" style="background:${C.kalk};"><tr><td align="center" style="padding:24px 12px 40px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:${C.kalkLys};border-radius:10px;overflow:hidden;">
+<tr><td bgcolor="${C.nat}" style="background:${C.nat};background-image:linear-gradient(115deg,${C.indigo} 0%,${C.blaek} 30%,${C.nat} 55%,${C.bordeaux} 80%,${C.vin} 100%);padding:22px 28px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td style="line-height:0;"><a href="${SITE}" style="text-decoration:none;"><img src="${esc(logo)}" width="150" height="35" alt="Sagsvagt" style="display:block;border:0;color:${C.kalk};font:700 22px ${SANS};"></a></td>
+    <td align="right" style="font:600 12px/1.5 ${SANS};color:${C.kalk};">Uge ${uge}<br><span style="opacity:.75;font-weight:500;">${esc(stor(dato(idag, { weekday: "long", day: "numeric", month: "long" })))}</span></td>
+  </tr></table>
+</td></tr>
+`;
+const mailBund = (modtager) => `<tr><td style="padding:24px 28px 26px;border-top:2px solid ${C.nat};font:12px/1.6 ${SANS};color:${C.muted};">
+  Sagsvagt er partineutral og bygger på kommunens egne dagsordener og referater. Læs altid den originale sag, før du handler på den.<br><br>
+  Du får denne mail, fordi du har skrevet dig op til Sagsvagt${modtager ? ` med ${esc(modtager)}` : ""}.
+  <!-- Linkene på deres egen linje med luft, så de er nemme at ramme med en finger -->
+  <br><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Ret mine emner")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Ret dine emner</a><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Afmeld Sagsvagt")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Afmeld</a><a href="${SITE}privatliv.html" style="display:inline-block;padding:12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Privatliv</a>
+</td></tr>
+</table>
+</td></tr></table>
+</body></html>`;
+
 // ---------- Mailen ----------
 export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, modtager = "", logo = `${SITE}assets/mail-logo.png` }) {
   const v = vaelgSager({ data, profil, idag });
@@ -114,19 +138,7 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
 
   const dineEmner = [...v.emner.map((id) => data.emner[id].navn), ...v.ord].join(", ");
   const ingen = !v.besluttet.length && !v.kommer.length && !v.bydel.length;
-  const html = `<!doctype html>
-<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light"><meta name="x-apple-disable-message-reformatting"><meta name="format-detection" content="telephone=no, date=no, address=no"><title>${esc(emne)}</title></head>
-<body style="margin:0;padding:0;background:${C.kalk};">
-<div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(preheader)}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${C.kalk}" style="background:${C.kalk};"><tr><td align="center" style="padding:24px 12px 40px;">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:${C.kalkLys};border-radius:10px;overflow:hidden;">
-<tr><td bgcolor="${C.nat}" style="background:${C.nat};background-image:linear-gradient(115deg,${C.indigo} 0%,${C.blaek} 30%,${C.nat} 55%,${C.bordeaux} 80%,${C.vin} 100%);padding:22px 28px;">
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-    <td style="line-height:0;"><a href="${SITE}" style="text-decoration:none;"><img src="${esc(logo)}" width="150" height="35" alt="Sagsvagt" style="display:block;border:0;color:${C.kalk};font:700 22px ${SANS};"></a></td>
-    <td align="right" style="font:600 12px/1.5 ${SANS};color:${C.kalk};">Uge ${uge}<br><span style="opacity:.75;font-weight:500;">${esc(stor(dato(idag, { weekday: "long", day: "numeric", month: "long" })))}</span></td>
-  </tr></table>
-</td></tr>
-<tr><td style="padding:28px 28px 4px;">
+  const html = mailTop({ emne, preheader, uge, idag, logo }) + `<tr><td style="padding:28px 28px 4px;">
   <h1 style="margin:0;font:600 26px/1.15 ${SERIF};color:${C.nat};">God morgen${navn ? `, ${esc(navn)}` : ""}.</h1>
   <p style="margin:10px 0 0;font:16px/1.55 ${SERIF};color:${C.brod};">${ingen
     ? "Der er ingen nye sager om dine emner i denne uge. Vi holder øje og skriver, når der sker noget."
@@ -136,15 +148,7 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
 ${sektion(v.dage === 7 ? "Besluttet i ugen der gik" : "Besluttet de seneste to uger", "", v.besluttet, v.flereBesluttet)}
 ${sektion("Det skal de tage stilling til", "De næste to uger.", v.kommer, v.flereKommer)}
 ${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0, false)}
-<tr><td style="padding:24px 28px 26px;border-top:2px solid ${C.nat};font:12px/1.6 ${SANS};color:${C.muted};">
-  Sagsvagt er partineutral og bygger på kommunens egne dagsordener og referater. Læs altid den originale sag, før du handler på den.<br><br>
-  Du får denne mail, fordi du har skrevet dig op til Sagsvagt${modtager ? ` med ${esc(modtager)}` : ""}.
-  <!-- Linkene på deres egen linje med luft, så de er nemme at ramme med en finger -->
-  <br><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Ret mine emner")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Ret dine emner</a><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Afmeld Sagsvagt")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Afmeld</a><a href="${SITE}privatliv.html" style="display:inline-block;padding:12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Privatliv</a>
-</td></tr>
-</table>
-</td></tr></table>
-</body></html>`;
+` + mailBund(modtager);
 
   // Ren tekst til mailprogrammer, der ikke viser HTML
   const linje = (s) => `- ${s.t}\n  ${s.st === "besluttet" ? `Besluttet ${kort(s.dato)}` : s.st === "kommer" ? `På dagsordenen ${kort(s.dato)}` : `Behandlet ${kort(s.dato)}`}, ${hvorSag(s)}${s.st === "besluttet" && (s.ud || s.kb) ? `\n  ${s.ud || klip(s.kb, 220)}${s.ud && s.tal ? ` ${s.tal.for} for, ${s.tal.imod} imod.` : ""}` : ""}\n  ${linkTil(s)}`;
@@ -154,4 +158,33 @@ ${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0
     + `\n\n--\nDu får denne mail, fordi du har skrevet dig op til Sagsvagt. Afmeld eller ret dine emner: ${REDAKTION}\n`;
 
   return { emne, preheader, html, tekst, antal: { besluttet: nB, kommer: nK, bydel: v.bydel.length } };
+}
+
+// ---------- Ventelistemailen ----------
+// Til tilmeldte, hvis kommune ikke er åben endnu (eller som ikke har skrevet en kommune): en kort mail om, at deres
+// kommune er på vej, hvilke kommuner der er åbne, og et link, de kan dele, så kommunen rykker op i køen.
+// kommuner: de navne, de skrev ved tilmeldingen. aabne: navnene på de åbne kommuner.
+export function lavVentemail({ kommuner = [], aabne = [], idag, navn = "", modtager = "", logo = `${SITE}assets/mail-logo.png` }) {
+  const uge = ugenr(idag);
+  const liste = (l) => (l.length > 1 ? `${l.slice(0, -1).join(", ")} og ${l.at(-1)}` : l[0] || "");
+  const hvem = liste(kommuner);
+  const emne = hvem ? `Uge ${uge}: Sagsvagt er på vej til ${hvem}` : `Uge ${uge}: Hvilken kommune vil du følge?`;
+  const preheader = hvem ? `Vi giver besked, så snart ${hvem} er åben.` : "Svar på mailen med din kommune, så kommer den i køen.";
+  const del = `${SITE}vagt.html?fra=mandagsmail${kommuner[0] ? `&kommune=${encodeURIComponent(kommuner[0])}` : ""}#tilmeld`;
+  const p = (t) => `<p style="margin:12px 0 0;font:16px/1.55 ${SERIF};color:${C.brod};">${t}</p>`;
+  const html = mailTop({ emne, preheader, uge, idag, logo }) + `<tr><td style="padding:28px 28px 26px;">
+  <h1 style="margin:0;font:600 26px/1.15 ${SERIF};color:${C.nat};">God morgen${navn ? `, ${esc(navn)}` : ""}.</h1>
+  ${hvem
+    ? p(`Sagsvagt er endnu ikke åben i <b style="color:${C.nat};">${esc(hvem)}</b>. Vi åbner kommune for kommune, der hvor flest skriver sig op, og du får besked, så snart ${esc(hvem)} er med.`)
+    : p("Du har ikke skrevet, hvilken kommune du vil følge. Svar på denne mail med navnet på din kommune, så sætter vi den i køen.")}
+  ${aabne.length ? p(`Lige nu følger vi byrådene i ${esc(liste(aabne))}.`) : ""}
+  ${hvem ? `<p style="margin:20px 0 0;"><a href="${esc(del)}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:${C.nat};color:${C.kalk};font:700 15px/1.2 ${SANS};text-decoration:none;">Del Sagsvagt med en nabo</a></p>
+  <p style="margin:10px 0 0;font:13px/1.5 ${SANS};color:${C.muted};">Jo flere fra ${esc(hvem)}, der skriver sig op, jo før åbner vi.</p>` : ""}
+</td></tr>` + mailBund(modtager);
+  const tekst = `Sagsvagt, uge ${uge}\n\nGod morgen${navn ? `, ${navn}` : ""}.\n\n`
+    + (hvem ? `Sagsvagt er endnu ikke åben i ${hvem}. Vi åbner kommune for kommune, der hvor flest skriver sig op, og du får besked, så snart ${hvem} er med.\n\nDel Sagsvagt med en nabo: ${del}`
+      : "Du har ikke skrevet, hvilken kommune du vil følge. Svar på denne mail med navnet på din kommune, så sætter vi den i køen.")
+    + (aabne.length ? `\n\nLige nu følger vi byrådene i ${liste(aabne)}.` : "")
+    + `\n\n--\nDu får denne mail, fordi du har skrevet dig op til Sagsvagt. Afmeld: ${REDAKTION}\n`;
+  return { emne, preheader, html, tekst, antal: { besluttet: 0, kommer: 0, bydel: 0 }, vente: true };
 }
