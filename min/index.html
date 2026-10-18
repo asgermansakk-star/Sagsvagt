@@ -244,6 +244,9 @@
   .kicker .k-emne { display: block; color: var(--vin); font-weight: 700; margin-bottom: 2px; }
   .kicker:has(.k-emne) .status { color: var(--muted); }
   .seneste { margin: 20px 0 4px; padding: 14px 0 16px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .siden + .seneste { margin-top: 0; border-top: 0; }
+  .sd-sum { margin: -4px 0 12px; font-size: var(--fodnote); color: var(--muted); }
+  .sd-mrk { color: var(--vin); font-weight: 700; }
   .sn-h { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; font: 700 1rem/1.2 var(--sans); color: var(--vin); }
   .sn-h a { margin-left: auto; font-size: var(--fodnote); font-weight: 600; color: var(--nat); }
   .sn-prik { width: 9px; height: 9px; border-radius: 50%; background: var(--vin); box-shadow: 0 0 0 4px rgba(138,36,48,.15); }
@@ -460,6 +463,7 @@
         <p class="kicker" id="ed-kicker"></p>
         <h1 id="ed-h"></h1>
         <p class="sum" id="ed-sum"></p>
+        <section class="seneste siden" id="siden" aria-labelledby="sd-h" hidden></section>
         <section class="seneste" id="seneste" aria-labelledby="sn-h" hidden></section>
         <div class="mine" id="mine"></div>
         <form class="panel" id="panel" hidden onsubmit="return false">
@@ -961,6 +965,21 @@
     return { ...s, m, hits, score: s.v * 6 + hits * 4 + iTitel * 8 - Math.max(0, alder(s.dato)) * 0.35 - s.r * 25 };
   };
 
+  /* ---------- Siden sidst ----------
+     Et øjebliksbillede af sagerne (id → status) gemmes i browseren. Et nyt besøg er en pause på over 3 timer, og vi
+     sammenligner altid med forrige besøg, så "nyt" kun er det, der faktisk er kommet til eller har skiftet status.
+     shortcut: billedet ligger pr. enhed (profil.php gemmer kun faste felter); flyt det til serveren, hvis folk savner det på tværs af enheder. */
+  const SKEY = `sv-sidst:${bruger?.email || ""}`;
+  const STK = { kommer: "k", besluttet: "b", behandlet: "h" };
+  let SIDST = null;
+  function sidstBesoeg() {
+    const nu = { tid: Date.now(), ks: VALGTE, st: Object.fromEntries(SAGER.map((s) => [s.id, STK[s.st]])) };
+    const g = gemt(SKEY) || {};
+    const forrige = g.nu && nu.tid - g.nu.tid > 3 * 36e5 ? g.nu : g.forrige;
+    gemt(SKEY, { forrige, nu });
+    return forrige || null;
+  }
+
   /* ---------- Byggeklodser ---------- */
   const STJERNE = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2.5l2.3 4.9 5.2.6-3.9 3.6 1.1 5.2L10 14.2l-4.7 2.6 1.1-5.2L2.5 8l5.2-.6z" fill="currentColor"/></svg>';
   const STJERNE_TOM = STJERNE.replace('fill="currentColor"', 'fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"');
@@ -1032,6 +1051,18 @@
     $("#konto-mail").textContent = bruger?.email ? `Logget ind som ${bruger.email}` : "";
     tegnAvatar();
     tegnMine();
+
+    // Siden sidst: sager om dine emner, der er kommet til, og sager (dine eller gemte), der har skiftet status.
+    // Første besøg på en enhed viser intet, så gamle sager ikke står som nye.
+    const foer = (s) => (SIDST?.ks?.includes(s.ks) ? SIDST.st[s.id] : undefined);
+    const nyeSiden = SIDST ? mine.filter((s) => !s.r && SIDST.ks?.includes(s.ks) && !(s.id in SIDST.st)).sort((a, b) => b.score - a.score) : [];
+    const skiftet = SIDST ? [...new Map([...mine, ...profil.gemte.map(findSag).filter(Boolean).map(vurder)].map((s) => [s.id, s])).values()]
+      .filter((s) => foer(s) && foer(s) !== STK[s.st] && s.st !== "kommer") : [];
+    const sidenListe = [...skiftet.map((s) => ({ s, mrk: s.st === "besluttet" ? "Nu besluttet" : "Mødet er holdt" })), ...nyeSiden.slice(0, 6).map((s) => ({ s, mrk: "Ny" }))];
+    $("#siden").hidden = !sidenListe.length;
+    $("#siden").innerHTML = !sidenListe.length ? "" : `<h2 class="sn-h" id="sd-h"><span class="sn-prik" aria-hidden="true"></span>Siden dit sidste besøg ${esc(kort(new Date(SIDST.tid).toISOString().slice(0, 10)))}</h2>`
+      + `<p class="sd-sum">${[nyeSiden.length && `${tal(nyeSiden.length, "ny sag", "nye sager")} om dine emner`, skiftet.length && `${tal(skiftet.length, "sag har", "sager har")} skiftet status`].filter(Boolean).join(" · ")}</p>`
+      + `<div class="sn-liste">${sidenListe.map(({ s, mrk }) => `<a class="sn-kort" href="${link(s)}" data-laes="${esc(s.id)}"><span class="sn-tid"><span class="sd-mrk">${mrk}</span>${s.m.emner[0] && EMNER[s.m.emner[0]] ? ` · ${esc(EMNER[s.m.emner[0]].navn)}` : ""}</span><b>${esc(s.t)}</b></a>`).join("")}</div>`;
 
     // Seneste: de nyeste sager om dine emner, med hvor længe siden
     const siden = (iso) => { const d = Math.round(alder(iso)); return d <= 0 ? "I dag" : d === 1 ? "I går" : d < 7 ? `${d} dage siden` : stor(kort(iso)); };
@@ -1422,6 +1453,7 @@
       const lukkede = valgte.length ? [] : oensket.filter((o) => !erAaben(o.slug));
       IKKE_AABEN = lukkede.length ? { navne: lukkede.map((o) => o.navn), tilbage: !fraTilmelding.length } : null;
       await brugKommuner(slugs);
+      SIDST = sidstBesoeg();
       const forud = server && !server.profil ? forudfyld() : [];
       $("#indlaes").hidden = true; $("#avis").hidden = false;
       fyldPanel(); tegn(); visSide(); visVelkomst(forud);

@@ -144,6 +144,7 @@ const menuData = (rod, k) => {
   if (!k) return {
     hoved: [
       { href: `${rod}index.html`, navn: "Forside", id: "forside", ikon: "hjem" },
+      { href: `${rod}ugen.html`, navn: "Ugens sager", fane: "Ugen", id: "ugen", ikon: "ugen" },
       { href: `${rod}emne/`, navn: "Emner", id: "emne", ikon: "emner" },
       { href: `${rod}bydel/`, navn: "Bydele", id: "bydel", ikon: "sted" },
       { href: `${rod}moeder.html`, navn: "Møder", id: "moeder", ikon: "kalender" },
@@ -194,16 +195,18 @@ const IKON = {
   hjem: '<path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/>',
   emner: '<rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/>',
   soeg: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
+  ugen: '<rect x="5" y="8" width="14" height="12" rx="2"/><path d="M7.5 5h9"/>',
   kalender: '<rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/>',
   mere: '<circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/>',
 };
 const ikon = (n) => `<svg class="ti" viewBox="0 0 24 24" aria-hidden="true">${IKON[n]}</svg>`;
 const tabBjaelke = (rod, aktiv, k) => {
   const { hoved, mere } = menuData(rod, k);
-  const faner = ["hjem", "emner", "soeg", "kalender"].map((i) => hoved.find((m) => m.ikon === i));
+  // København har Ugens sager som fane (Møder ligger så under Mere); de andre kommuner har ikke ugen.html endnu
+  const faner = (hoved.some((m) => m.ikon === "ugen") ? ["hjem", "ugen", "emner", "soeg"] : ["hjem", "emner", "soeg", "kalender"]).map((i) => hoved.find((m) => m.ikon === i));
   const iMere = [...hoved.filter((m) => !faner.includes(m)), ...mere];
   return `<nav class="tabbar" aria-label="Sektioner">
-  ${faner.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${ikon(m.ikon)}<span>${esc(m.navn)}</span></a>`).join("\n  ")}
+  ${faner.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${ikon(m.ikon)}<span>${esc(m.fane || m.navn)}</span></a>`).join("\n  ")}
   <details class="tab-mere"><summary${cur(iMere.some((m) => m.id === aktiv))}>${ikon("mere")}<span>Mere</span></summary><div>
     ${iMere.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n    ")}
   </div></details>
@@ -504,7 +507,7 @@ async function main() {
         ${forenkletBoks(s, FORENKLET, esc)}
       </header>
       <div class="body">
-        ${kortFortalt(s)}
+        ${forklar(kortFortalt(s), esc, 3)}
         ${vejBoks(s, vej, H)}
       <!--tester-->
         <details class="hel-sag">

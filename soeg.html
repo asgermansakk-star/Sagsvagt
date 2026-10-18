@@ -40,6 +40,7 @@
   </div>
   <nav class="mh-nav" aria-label="Hovedmenu"><div class="wrap">
       <a href="index.html">Forside</a>
+      <a href="ugen.html">Ugens sager</a>
       <a href="emne/">Emner</a>
       <a href="bydel/">Bydele</a>
       <a href="moeder.html">Møder</a>
@@ -57,11 +58,12 @@
 </header>
 <nav class="tabbar" aria-label="Sektioner">
   <a href="index.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Forside</span></a>
+  <a href="ugen.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="8" width="14" height="12" rx="2"/><path d="M7.5 5h9"/></svg><span>Ugen</span></a>
   <a href="emne/"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg><span>Emner</span></a>
   <a href="soeg.html" aria-current="page"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Søg</span></a>
-  <a href="moeder.html"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg><span>Møder</span></a>
   <details class="tab-mere"><summary><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/></svg><span>Mere</span></summary><div>
     <a href="bydel/">Bydele</a>
+    <a href="moeder.html">Møder</a>
     <a href="kommune/">Kommuner</a>
     <a href="udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a>
     <a href="udvalg/">Alle udvalg</a>
@@ -76,7 +78,7 @@
   <h1>Søg i sagerne</h1>
   <p class="intro">Søg i overskrifter, resuméer og udvalg i alle 1.842 sager fra København.</p>
   <form class="soeg-felt" role="search" onsubmit="return false"><input type="search" id="q" placeholder="fx cykelsti, skole eller budget" aria-label="Søg i sagerne" autocomplete="off"><label class="soeg-kommune"><span>Kommune</span><select id="kommune-valg" aria-label="Vælg kommune"><option value="soeg.html" selected>København</option><option value="kommune/albertslund/soeg.html">Albertslund</option><option value="kommune/broenderslev/soeg.html">Brønderslev</option><option value="kommune/fredericia/soeg.html">Fredericia</option><option value="kommune/guldborgsund/soeg.html">Guldborgsund</option><option value="kommune/herning/soeg.html">Herning</option><option value="kommune/horsens/soeg.html">Horsens</option><option value="kommune/lyngby-taarbaek/soeg.html">Lyngby-Taarbæk</option><option value="kommune/viborg/soeg.html">Viborg</option></select></label></form>
-  <ul class="chips" id="emnefilter"><li><a href="#" data-emne="" aria-current="page">Alle emner</a></li><li><a href="#" data-emne="trafik">Trafik og cykler</a></li><li><a href="#" data-emne="klima">Klima og grønt</a></li><li><a href="#" data-emne="affald">Affald</a></li><li><a href="#" data-emne="bolig">Boliger</a></li><li><a href="#" data-emne="byggeri">Byggeri og lokalplaner</a></li><li><a href="#" data-emne="skole">Skoler og børn</a></li><li><a href="#" data-emne="aeldre">Ældre og sundhed</a></li><li><a href="#" data-emne="social">Det sociale</a></li><li><a href="#" data-emne="budget">Budget og økonomi</a></li><li><a href="#" data-emne="kultur">Kultur og fritid</a></li><li><a href="#" data-emne="erhverv">Erhverv og job</a></li></ul>
+  <ul class="chips" id="emnefilter"><li><a href="#" data-emne="" aria-current="page">Alle emner</a></li><li><a href="#" data-emne="trafik">Trafik og cykler</a></li><li><a href="#" data-emne="klima">Klima og grønt</a></li><li><a href="#" data-emne="affald">Affald</a></li><li><a href="#" data-emne="bolig">Boliger</a></li><li><a href="#" data-emne="byggeri">Byggeri og lokalplaner</a></li><li><a href="#" data-emne="skole">Skoler og børn</a></li><li><a href="#" data-emne="unge">Unge og uddannelse</a></li><li><a href="#" data-emne="aeldre">Ældre og sundhed</a></li><li><a href="#" data-emne="social">Det sociale</a></li><li><a href="#" data-emne="budget">Budget og økonomi</a></li><li><a href="#" data-emne="kultur">Kultur og fritid</a></li><li><a href="#" data-emne="erhverv">Erhverv og job</a></li></ul>
   <p class="intro" id="antal" aria-live="polite"></p>
   <div id="resultater"></div>
 </div></div>

@@ -14,7 +14,7 @@ const VERBUM = /\b(godkendt|vedtaget|anbefalet|tiltrådt|forkastet|nedstemt|udsa
 export function sagensVej(sager) {
   const norm = (t) => t.toLowerCase().replace(/[^a-zæøå0-9 ]/g, " ").replace(/\s+/g, " ").trim();
   const grupper = new Map();
-  for (const s of sager) { if (s.rutine) continue; const k = norm(s.titel); if (!grupper.has(k)) grupper.set(k, []); grupper.get(k).push(s); }
+  for (const s of sager) { if (s.rutine) continue; const k = norm(s.kommunensTitel || s.titel); if (!grupper.has(k)) grupper.set(k, []); grupper.get(k).push(s); }
   const vej = new Map();
   for (const l of grupper.values()) {
     if (l.length < 2) continue;

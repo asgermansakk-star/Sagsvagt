@@ -106,6 +106,8 @@
   .udklip li { font: 600 var(--t3)/1.3 var(--serif); padding: 14px 0; border-bottom: 1px solid rgba(230,223,211,.16); }
   .udklip li span { display: block; font: 500 var(--billedtekst)/1.4 var(--sans); color: rgba(230,223,211,.66); margin-bottom: 4px; }
   .udklip a { color: var(--kalk); font-size: var(--sekundaer); font-weight: 600; }
+  .ugen-link { margin-top: 16px; font-size: var(--sekundaer); }
+  .ugen-link a { color: var(--kalk); font-weight: 600; display: inline-flex; min-height: 44px; align-items: center; }
   .find-kommune { margin-top: 28px; max-width: 30em; }
   .find-kommune label { display: block; font-size: var(--sekundaer); font-weight: 600; margin-bottom: 8px; color: rgba(230,223,211,.9); }
   .find-kommune div { display: flex; gap: 8px; }
@@ -311,6 +313,7 @@
       <a href="#proev">Prøv det</a>
       <a href="#saadan">Sådan virker det</a>
       <a href="#spoergsmaal">Spørgsmål</a>
+      <a href="ugen.html">Ugens sager</a>
       <a href="kommune/">Kommuner</a>
       <a href="index.html">Læs avisen</a>
     </nav>
@@ -329,6 +332,7 @@
         <a class="btn btn-primaer" href="#tilmeld">Få min mandagsmail</a>
         <a class="btn btn-sekundaer" href="#proev">Se et eksempel først</a>
       </div>
+      <p class="ugen-link"><a href="ugen.html?fra=forside">Eller swipe gennem ugens sager fra København</a></p>
       <form class="find-kommune" id="find-kommune" role="search" novalidate>
         <label for="fk">Find din kommune</label>
         <div><input id="fk" list="kommune-liste" autocomplete="off" placeholder="Skriv din kommune, fx Aarhus"><button class="btn btn-lille btn-sekundaer" type="submit">Find</button></div>
