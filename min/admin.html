@@ -92,11 +92,13 @@
     </details>
     <details class="import" id="mm-boks">
       <summary id="mm-titel">Mandagsmail</summary>
-      <p class="lille">Laver en mail til alle tilmeldte, så du kan se dem, før de sendes. Følger de en åben kommune, får de sagerne om deres emner (uden emner: ugens vigtigste sager). Er deres kommune ikke åben endnu, får de en kort mail om, at den er på vej. Afmeldte og adresser markeret med "Mail kom retur" får ingen. Ingen får samme uges mail to gange.</p>
+      <p class="lille">Laver en mail til alle tilmeldte, så du kan se dem, før de sendes. Følger de en åben kommune, får de sagerne om deres emner (uden emner: ugens vigtigste sager). Er deres kommune ikke åben endnu, får de en kort mail om, at den er på vej. Afmeldte og adresser markeret med "Mail kom retur" får ingen. Ingen får samme uges mail to gange. Planlagte mails sendes ved første besøg på sagsvagt.dk efter klokken 8.</p>
       <div class="handl-raekke">
         <label class="lille"><b>Mandag</b> <input type="date" id="mm-dato"></label>
         <button class="knap sek" id="mm-forbered" type="button">Forbered mails</button>
-        <button class="knap" id="mm-send" type="button" disabled>Send</button>
+        <button class="knap sek" id="mm-send" type="button" disabled>Send nu</button>
+        <button class="knap" id="mm-planlaeg" type="button" disabled>Send mandag kl. 8</button>
+        <button class="knap sek" id="mm-fortryd" type="button" hidden>Fortryd planlagte</button>
       </div>
       <p class="lille" id="mm-status" role="status" aria-live="polite"></p>
       <div class="tabel-wrap" id="mm-tabel" hidden><table class="liste">
@@ -279,7 +281,10 @@ $("#mm-dato").value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2,
 
 let MAILS = [];
 const status = (t) => { $("#mm-status").textContent = t; };
-const NAVN = { klar: "Klar", sendt: "Sendt", fejl: "Fejlede" };
+const NAVN = { klar: "Klar", planlagt: "Planlagt", sendt: "Sendt", fejl: "Fejlede" };
+// Klokken 8 dansk tid den valgte dag (serveren får den i UTC: "2026-10-19T06:00:00Z")
+const kl8 = () => new Date(`${$("#mm-dato").value}T08:00:00`);
+const kl8Tekst = () => `${kl8().toLocaleDateString("da-DK", { weekday: "long", day: "numeric", month: "long" })} kl. 8`;
 // De kommuner, en tilmeldt skrev, med pænt navn ("aarhus kommune" → "Aarhus")
 const skrevne = (t) => (t || "").split(/,|\/|\s+og\s+/i).map((x) => x.trim().replace(/\s+kommunes?$/i, "")).filter(Boolean).map((x) => x.charAt(0).toUpperCase() + x.slice(1));
 
@@ -294,7 +299,7 @@ const kommune = (slug, navn) => {
 async function forbered() {
   const uge = $("#mm-dato").value;
   if (!uge) { status("Vælg mandagens dato."); return; }
-  $("#mm-forbered").disabled = $("#mm-send").disabled = true; status("Henter tilmeldte og sager …");
+  $("#mm-forbered").disabled = $("#mm-send").disabled = $("#mm-planlaeg").disabled = true; status("Henter tilmeldte og sager …");
   try {
     const [{ modtagere }, aabne] = await Promise.all([api("admin/mandagsmail.php", { handling: "modtagere", uge }), hent("../kommune/aabne.json")]);
     const slugs = aabne.map((k) => k.slug), navnPaa = Object.fromEntries(aabne.map((k) => [k.slug, k.navn]));
@@ -302,7 +307,7 @@ async function forbered() {
     const aabneNavne = aabne.map((k) => k.navn);
     MAILS = [];
     for (const a of modtagere) {
-      const p = profilFor(a, EMNER, slugs), m = { a, p, uge, st: a.sendt ? "sendt" : "klar" };
+      const p = profilFor(a, EMNER, slugs), m = { a, p, uge, st: a.sendt ? "sendt" : a.planlagt ? "planlagt" : "klar" };
       if (!p.kommuner.length) {
         // Kommunen er ikke åben endnu (eller ingen kommune skrevet): en kort mail om, at den er på vej
         m.type = "Venteliste";
@@ -332,28 +337,52 @@ function vis() {
     + `<td>${m.mail ? `<button class="mini-knap" type="button" data-vis="${i}">Vis</button>` : ""}</td></tr>`).join("");
   $("#mm-titel").textContent = `Mandagsmail (${klar.length} klar)`;
   const ty = (x) => MAILS.filter((m) => m.st === "klar" && m.type === x).length;
-  status(`${klar.length} klar til at sende: ${ty("Sager")} med sager om deres emner, ${ty("Sager (alle emner)")} med ugens vigtigste sager (ingen emner valgt) og ${ty("Venteliste")} om, at deres kommune er på vej. ${t("sendt")} har allerede fået ugens mail.`);
-  $("#mm-send").disabled = !klar.length;
-  $("#mm-send").textContent = klar.length ? `Send ${klar.length} ${klar.length === 1 ? "mail" : "mails"}` : "Send";
+  if (!klar.length && t("planlagt")) status(`${t("planlagt")} ${t("planlagt") === 1 ? "mail er" : "mails er"} planlagt til ${kl8Tekst()}. Du kan fortryde indtil da.${t("sendt") ? ` ${t("sendt")} har allerede fået ugens mail.` : ""}`);
+  else status(`${klar.length} klar til at sende: ${ty("Sager")} med sager om deres emner, ${ty("Sager (alle emner)")} med ugens vigtigste sager (ingen emner valgt) og ${ty("Venteliste")} om, at deres kommune er på vej. ${t("sendt")} har allerede fået ugens mail.${t("planlagt") ? ` ${t("planlagt")} er planlagt til ${kl8Tekst()}.` : ""}`);
+  // Planlagte kan også sendes nu
+  const kan = MAILS.filter((m) => m.st === "klar" || m.st === "planlagt").length, n = (x) => `${x} ${x === 1 ? "mail" : "mails"}`;
+  $("#mm-send").disabled = !kan;
+  $("#mm-send").textContent = kan ? `Send ${n(kan)} nu` : "Send nu";
+  $("#mm-planlaeg").disabled = !klar.length || kl8() <= new Date();
+  $("#mm-planlaeg").textContent = `Send ${klar.length ? n(klar.length) + " " : ""}${isNaN(kl8()) ? "mandag" : kl8().toLocaleDateString("da-DK", { weekday: "long" })} kl. 8`;
+  $("#mm-fortryd").hidden = !t("planlagt");
 }
 
-async function send() {
-  const klar = MAILS.filter((m) => m.st === "klar");
-  if (!klar.length || !confirm(`Send mandagsmailen til ${klar.length} ${klar.length === 1 ? "person" : "personer"} nu? Det kan ikke fortrydes.`)) return;
-  $("#mm-send").disabled = $("#mm-forbered").disabled = true;
+// Send nu, eller læg mailene i kø til klokken 8 (planlaeg)
+async function send(planlaeg) {
+  const klar = MAILS.filter((m) => m.st === "klar" || (!planlaeg && m.st === "planlagt"));
+  const hvem = `${klar.length} ${klar.length === 1 ? "person" : "personer"}`;
+  if (!klar.length || !confirm(planlaeg ? `Send mandagsmailen til ${hvem} ${kl8Tekst()}? Du kan fortryde indtil da.` : `Send mandagsmailen til ${hvem} nu? Det kan ikke fortrydes.`)) return;
+  $("#mm-send").disabled = $("#mm-planlaeg").disabled = $("#mm-forbered").disabled = true;
+  const tid = kl8().toISOString().replace(/\.\d{3}Z$/, "Z");
   let ok = 0, fejl = 0;
   for (const [n, m] of klar.entries()) {
-    status(`Sender ${n + 1} af ${klar.length} …`);
-    try { await api("admin/mandagsmail.php", { handling: "send", uge: m.uge, id: m.a.id, emne: m.mail.emne, html: m.mail.html, tekst: m.mail.tekst }); m.st = "sendt"; ok++; }
-    catch (e) { m.st = "fejl"; m.fejl = e.message; fejl++; }
+    status(`${planlaeg ? "Planlægger" : "Sender"} ${n + 1} af ${klar.length} …`);
+    try {
+      const svar = await api("admin/mandagsmail.php", { handling: planlaeg ? "planlaeg" : "send", uge: m.uge, id: m.a.id, tid, emne: m.mail.emne, html: m.mail.html, tekst: m.mail.tekst });
+      m.st = planlaeg && !svar.allerede ? "planlagt" : "sendt"; m.fejl = ""; ok++;
+    } catch (e) { m.st = "fejl"; m.fejl = e.message; fejl++; }
   }
   vis();
-  status(`${ok} ${ok === 1 ? "mail" : "mails"} sendt${fejl ? `, ${fejl} fejlede (se listen)` : ""}.`);
+  status(`${ok} ${ok === 1 ? "mail" : "mails"} ${planlaeg ? `planlagt til ${kl8Tekst()}` : "sendt"}${fejl ? `, ${fejl} fejlede (se listen)` : ""}.`);
   $("#mm-forbered").disabled = false;
 }
 
+async function fortryd() {
+  if (!confirm("Fjern de planlagte mails? Så sendes de ikke.")) return;
+  try {
+    const { fjernet } = await api("admin/mandagsmail.php", { handling: "fortryd", uge: $("#mm-dato").value });
+    for (const m of MAILS) if (m.st === "planlagt") m.st = "klar";
+    vis(); status(`${fjernet} planlagte ${fjernet === 1 ? "mail" : "mails"} fjernet. Intet er sendt.`);
+  } catch (e) { status(e.message); }
+}
+
 $("#mm-forbered").addEventListener("click", forbered);
-$("#mm-send").addEventListener("click", send);
+$("#mm-send").addEventListener("click", () => send(false));
+$("#mm-planlaeg").addEventListener("click", () => send(true));
+$("#mm-fortryd").addEventListener("click", fortryd);
+// Ny dato: forbered igen, så status og knapper passer til den uge
+$("#mm-dato").addEventListener("change", () => { MAILS = []; vis(); status(""); });
 $("#mm-raekker").addEventListener("click", (e) => {
   const i = e.target.getAttribute("data-vis"); if (i == null) return;
   const m = MAILS[+i];

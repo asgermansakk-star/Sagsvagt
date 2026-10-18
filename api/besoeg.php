@@ -44,4 +44,6 @@ http_response_code(204);
 if (function_exists('fastcgi_finish_request')) {
     fastcgi_finish_request();
     try { require_once __DIR__ . '/_push.php'; push_maaske_koer(); } catch (Throwable $e) { error_log('Sagsvagt push: ' . $e->getMessage()); }
+    // Planlagte mandagsmails, hvis tiden er kommet (se api/_mandagsmail.php)
+    try { require_once __DIR__ . '/_mandagsmail.php'; mm_maaske_send(); } catch (Throwable $e) { error_log('Sagsvagt mandagsmail: ' . $e->getMessage()); }
 }
