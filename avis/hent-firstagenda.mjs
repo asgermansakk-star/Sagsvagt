@@ -204,6 +204,13 @@ async function hentKommune(k) {
       console.warn(`  Sprang over ${id}: ${e.message}`);
     }
   }
+  // Nogle kommuner bruger et "møde" med en pladsholderdato som beholder (Albertslunds budgetspørgsmål, udgivet 11/9,
+  // dateret 24/12). Et rigtigt møde lægges ikke ud måneder før; står mødet over 60 dage efter udgivelsen, er det ikke et møde.
+  const pladsholder = (dato, lastmod) => Date.parse(dato) - Date.parse(lastmod) > 60 * 864e5;
+  for (const [sid, s] of Object.entries(gemt.sager)) {
+    const d = gemt.dokumenter[s.kilde.split("id=")[1]];
+    if (d && pladsholder(s.dato, d.lastmod)) delete gemt.sager[sid];
+  }
   // Udvalgsnavne i "Behandling i …" står med versaler i PDF'en; brug stavningen fra udvalgets egne møder, når vi kender den
   for (const s of Object.values(gemt.sager)) for (const a of s.afsnit) {
     const b = a.titel.match(/^Behandling i (.+?) (\d+\. \S+ \d{4})$/);
