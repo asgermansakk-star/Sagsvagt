@@ -991,7 +991,7 @@
   const skrivKnap = (s) => `<button class="ikon" type="button" data-skriv="${esc(s.id)}" aria-label="Skriv et indlæg om sagen" title="Skriv et indlæg om sagen">${SKRIV}</button>`;
   const handl = (s) => `<div class="handl">${skrivKnap(s)}${gemKnap(s)}</div>`;
   // Følger man flere kommuner, står kommunen efter udvalget ("Økonomiudvalget, Fredericia")
-  const hvor = (u, kn) => (lokal(u) ? `${bydelNavn(u)} Lokaludvalg` : u) + (kn ? `, ${kn}` : "");
+  const hvor = (u, kn) => (lokal(u) ? `${bydelNavn(u)} Lokaludvalg` : u) + (kn && !u.includes(kn) ? `, ${kn}` : ""); // ikke "Herning Byråd, Herning"
   // Kommunen står med, når man følger flere, og ved gemte sager fra en kommune, man ikke følger længere
   const kommuneVis = (s) => (FLERE || (s.ks && !VALGTE.includes(s.ks)) ? s.kn : "");
   const kicker = (s) => {
@@ -1005,8 +1005,9 @@
     const t = [...s.m.emner.map((id) => `<span class="tag ${EMNER[id].f}">${esc(EMNER[id].navn)}</span>`), ...s.m.ord.map((o) => `<span class="tag o">${esc(o)}</span>`)];
     return t.length ? `<div class="tags">${t.join("")}</div>` : "";
   };
-  const beslutning = (s) => s.st === "besluttet" && s.ud
-    ? `<div class="decision"><b>Beslutning</b>${esc(s.ud)}${s.sm ? `<span class="votes"><span>For: ${esc(s.sm.for)}</span><span>Imod: ${esc(s.sm.imod)}</span></span>` : ""}</div>` : "";
+  // Uden klart udfald (mest andre kommuner) bruges den korte form af beslutningen (kb)
+  const beslutning = (s) => s.st === "besluttet" && (s.ud || s.kb)
+    ? `<div class="decision"><b>Beslutning</b>${esc(s.ud || (s.kb.length > 220 ? s.kb.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.kb))}${s.ud && s.sm ? `<span class="votes"><span>For: ${esc(s.sm.for)}</span><span>Imod: ${esc(s.sm.imod)}</span></span>` : ""}</div>` : "";
   // Mens avisen er lukket (se .htaccess), linker sagerne til kommunens egen side. Sæt AVIS_AABEN = true, når avisen åbner igen.
   const AVIS_AABEN = true;
   const link = (s) => (AVIS_AABEN ? `../${s.url}` : s.k);

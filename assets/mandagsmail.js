@@ -31,13 +31,15 @@ const klip = (t = "", n) => (t.length > n ? t.slice(0, n).replace(/\s+\S*$/, "")
 const hvor = (u) => (/Lokaludvalg$/.test(u) ? u.replace(/\s*Lokaludvalg$/, "") + " Lokaludvalg" : u);
 
 // ---------- Udvælgelse ----------
+// Fire sager pr. sektion: den vigtigste fuldt ud, de næste tre kort (overskrift og beslutning). Resten ligger i Min avis.
+const VIS = 4;
 export function vaelgSager({ data, profil, idag }) {
-  const ord = (profil.ord || []).map((o) => o.toLowerCase()).filter(Boolean);
+  const ord = (profil.ord || []).map((o) => o.trim()).filter(Boolean);
   const emner = (profil.emner || []).filter((id) => data.emner[id]);
   const vurder = (s) => {
     const tekst = `${s.t} ${s.d}`.toLowerCase();
-    const mE = emner.filter((id) => s.e.includes(id)), mO = ord.filter((o) => tekst.includes(o));
-    const iTitel = emner.filter((id) => s.et.includes(id)).length + ord.filter((o) => s.t.toLowerCase().includes(o)).length;
+    const mE = emner.filter((id) => s.e.includes(id)), mO = ord.filter((o) => tekst.includes(o.toLowerCase()));
+    const iTitel = emner.filter((id) => s.et.includes(id)).length + ord.filter((o) => s.t.toLowerCase().includes(o.toLowerCase())).length;
     const hits = mE.length + mO.length * 2;
     return { ...s, mE, mO, hits, score: s.v * 6 + hits * 4 + iTitel * 8 - Math.max(0, alder(idag, s.dato)) * 0.35 - s.r * 25 };
   };
@@ -47,13 +49,15 @@ export function vaelgSager({ data, profil, idag }) {
   let sket = mine.filter((s) => s.st !== "kommer" && alder(idag, s.dato) >= 0 && alder(idag, s.dato) <= dage);
   if (sket.length < 3) { dage = 14; sket = mine.filter((s) => s.st !== "kommer" && alder(idag, s.dato) >= 0 && alder(idag, s.dato) <= dage); }
   sket.sort((a, b) => b.score - a.score);
+  // Det, politikerne skal tage stilling til, før orienteringer ("Orientering om …", "B-sag - Orientering …"), derefter efter dato
+  const orient = (s) => (/^(?:[A-Z]-sag\s*-\s*)?orientering/i.test(s.t) ? 1 : 0);
   const kommer = mine.filter((s) => s.st === "kommer" && -alder(idag, s.dato) >= 0 && -alder(idag, s.dato) <= 14)
-    .sort((a, b) => a.dato.localeCompare(b.dato) || b.score - a.score);
-  const brugt = new Set([...sket.slice(0, 6), ...kommer.slice(0, 6)].map((s) => s.id));
+    .sort((a, b) => orient(a) - orient(b) || a.dato.localeCompare(b.dato) || b.score - a.score);
+  const brugt = new Set([...sket.slice(0, VIS), ...kommer.slice(0, VIS)].map((s) => s.id));
   const bydel = profil.bydel
-    ? data.sager.filter((s) => s.u === profil.bydel && !s.r && !brugt.has(s.id) && Math.abs(alder(idag, s.dato)) <= 14).map(vurder).slice(0, 3)
+    ? data.sager.filter((s) => s.u === profil.bydel && !s.r && !brugt.has(s.id) && Math.abs(alder(idag, s.dato)) <= 14).map(vurder).slice(0, 2)
     : [];
-  return { besluttet: sket.slice(0, 6), flereBesluttet: Math.max(0, sket.length - 6), kommer: kommer.slice(0, 6), flereKommer: Math.max(0, kommer.length - 6), bydel, dage, emner, ord: profil.ord || [] };
+  return { besluttet: sket.slice(0, VIS), flereBesluttet: Math.max(0, sket.length - VIS), kommer: kommer.slice(0, VIS), flereKommer: Math.max(0, kommer.length - VIS), bydel, dage, emner, ord: profil.ord || [] };
 }
 
 // ---------- Mailen ----------
@@ -62,7 +66,7 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
   const uge = ugenr(idag);
   // Følger modtageren flere kommuner (sagerne har ks/kn fra Min avis eller avis/mandagsmail.mjs), står kommunen efter udvalget
   const flere = new Set(data.sager.map((s) => s.ks).filter(Boolean)).size > 1;
-  const hvorSag = (s) => hvor(s.u) + (flere && s.kn ? `, ${s.kn}` : "");
+  const hvorSag = (s) => hvor(s.u) + (flere && s.kn && !s.u.includes(s.kn) ? `, ${s.kn}` : ""); // ikke "Herning Byråd, Herning"
   const nB = v.besluttet.length + v.flereBesluttet, nK = v.kommer.length + v.flereKommer;
   const navn = (profil.navn || "").trim();
   const tal = (n, en, flere) => `${n === 0 ? "Ingen" : n} ${n === 1 ? en : flere}`;
@@ -71,34 +75,47 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
   const top = v.besluttet[0] || v.kommer[0];
   const preheader = top ? `${top.t}${nB + nK > 1 ? ` og ${nB + nK - 1} sager mere` : ""}.` : "Der er ingen nye sager om dine emner i denne uge.";
 
-  const tag = (id) => { const e = data.emner[id]; const r = e.f === "r"; return `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:6px;background:${r ? C.rosen : C.lyng};color:${r ? C.bordeaux : C.blaek};font:700 11px/1.4 ${SANS};">${esc(e.navn)}</span>`; };
-  const ordTag = (o) => `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:6px;background:${C.nat};color:${C.kalk};font:700 11px/1.4 ${SANS};">${esc(o)}</span>`;
+  const tag = (id) => { const e = data.emner[id]; const r = e.f === "r"; return `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:6px;background:${r ? C.rosen : C.lyng};color:${r ? C.bordeaux : C.blaek};font:700 12px/1.4 ${SANS};">${esc(e.navn)}</span>`; };
+  const ordTag = (o) => `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:6px;background:${C.kalk};box-shadow:inset 0 0 0 1px ${C.rule};color:${C.nat};font:700 12px/1.4 ${SANS};">${esc(o)}</span>`;
   // Stemmetallet står allerede i udfaldet ("med 50 stemmer mod 3"); vi tilføjer kun dem, der undlod
   const stemmer = (s) => (s.tal?.undlod ? ` <b style="white-space:nowrap;">${s.tal.undlod} undlod.</b>` : "");
 
+  // Kort sag: status, overskrift og beslutningen på én linje, uden beskrivelse og mærker
+  const kortSag = (s) => {
+    const status = s.st === "besluttet" ? `<span style="color:${C.vin};font-weight:700;">Besluttet ${kort(s.dato)}</span>`
+      : s.st === "kommer" ? `<span style="color:${C.indigo};font-weight:700;">${esc(stor(dato(s.dato, { weekday: "long", day: "numeric", month: "long" })))}</span>`
+      : `<span style="font-weight:700;">Behandlet ${kort(s.dato)}</span>`;
+    return `<tr><td style="padding:14px 28px 15px;border-top:1px solid ${C.rule};">
+  <p style="margin:0 0 4px;font:600 12px/1.45 ${SANS};color:${C.muted};">${status} · ${esc(hvorSag(s))}</p>
+  <a href="${esc(linkTil(s))}" style="font:600 16px/1.35 ${SERIF};color:${C.nat};text-decoration:none;">${esc(s.t)}</a>
+  ${s.st === "besluttet" && (s.ud || s.kb) ? `<p style="margin:5px 0 0;font:14px/1.5 ${SANS};color:${C.brod};">${esc(klip(s.ud || s.kb, 140))}${s.ud ? stemmer(s) : ""}</p>` : ""}
+</td></tr>`;
+  };
   const sag = (s) => {
     const status = s.st === "besluttet" ? `<span style="color:${C.vin};font-weight:700;">Besluttet ${kort(s.dato)}</span>`
       : s.st === "kommer" ? `<span style="color:${C.indigo};font-weight:700;">På dagsordenen ${esc(dato(s.dato, { weekday: "long", day: "numeric", month: "long" }))}</span>`
       : `<span style="font-weight:700;">Behandlet ${kort(s.dato)}</span>`;
-    const besl = s.st === "besluttet" && s.ud
-      ? `<p style="margin:12px 0 0;padding:9px 12px;background:${C.kalk};border-left:3px solid ${C.vin};font:14px/1.5 ${SANS};color:${C.nat};">${esc(s.ud)}${stemmer(s)}</p>` : "";
+    // Som beslutningen på sagsvagt.dk: en vinrød streg over og ordet "Beslutning"; kort form, når udfaldet ikke er klart
+    const besl = s.st === "besluttet" && (s.ud || s.kb)
+      ? `<p style="margin:14px 0 0;padding:8px 0 0;border-top:2px solid ${C.vin};font:14px/1.5 ${SANS};color:${C.nat};"><b style="display:block;margin-bottom:2px;font:700 12px/1.4 ${SANS};letter-spacing:.06em;text-transform:uppercase;color:${C.vin};">Beslutning</b>${esc(s.ud || klip(s.kb, 220))}${s.ud ? stemmer(s) : ""}</p>` : "";
     return `<tr><td style="padding:18px 28px 20px;border-top:1px solid ${C.rule};">
   <p style="margin:0 0 6px;font:600 12px/1.45 ${SANS};color:${C.muted};">${status} · ${esc(hvorSag(s))}</p>
   <a href="${esc(linkTil(s))}" style="font:600 19px/1.3 ${SERIF};color:${C.nat};text-decoration:none;">${esc(s.t)}</a>
-  ${s.d ? `<p style="margin:8px 0 0;font:15px/1.55 ${SERIF};color:${C.brod};">${esc(klip(s.d, 230))}</p>` : ""}
+  ${s.d ? `<p style="margin:8px 0 0;font:15px/1.55 ${SERIF};color:${C.brod};">${esc(klip(s.d, 170))}</p>` : ""}
   ${besl}
   <div>${(s.mE || []).map(tag).join("")}${(s.mO || []).map(ordTag).join("")}</div>
 </td></tr>`;
   };
-  const sektion = (titel, under, liste, flere) => liste.length ? `<tr><td style="padding:26px 28px 6px;">
-  <p style="margin:0;font:700 12px/1.4 ${SANS};letter-spacing:.08em;text-transform:uppercase;color:${C.nat};">${esc(titel)}</p>
+  // fuld: den første sag vises med beskrivelse og mærker (bydelen vises kun kort)
+  const sektion = (titel, under, liste, flere, fuld = true) => liste.length ? `<tr><td style="padding:26px 28px 6px;">
+  <h2 style="margin:0;font:700 12px/1.4 ${SANS};letter-spacing:.08em;text-transform:uppercase;color:${C.nat};">${esc(titel)}</h2>
   ${under ? `<p style="margin:4px 0 0;font:13px/1.5 ${SANS};color:${C.muted};">${esc(under)}</p>` : ""}
-</td></tr>${liste.map(sag).join("")}${flere ? `<tr><td style="padding:0 28px 6px;font:13px/1.5 ${SANS};color:${C.muted};">Og ${flere} ${flere === 1 ? "sag" : "sager"} mere om dine emner.</td></tr>` : ""}` : "";
+</td></tr>${liste.map((s, i) => (i === 0 && fuld ? sag(s) : kortSag(s))).join("")}${flere ? `<tr><td style="padding:12px 28px 6px;border-top:1px solid ${C.rule};font:13px/1.5 ${SANS};color:${C.muted};">Og ${flere} ${flere === 1 ? "sag" : "sager"} mere om dine emner. <a href="${SITE}min/#sager" style="color:${C.indigo};font-weight:600;">Se dem i Min avis</a></td></tr>` : ""}` : "";
 
   const dineEmner = [...v.emner.map((id) => data.emner[id].navn), ...v.ord].join(", ");
   const ingen = !v.besluttet.length && !v.kommer.length && !v.bydel.length;
   const html = `<!doctype html>
-<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light only"><title>${esc(emne)}</title></head>
+<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light"><meta name="x-apple-disable-message-reformatting"><meta name="format-detection" content="telephone=no, date=no, address=no"><title>${esc(emne)}</title></head>
 <body style="margin:0;padding:0;background:${C.kalk};">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(preheader)}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${C.kalk}" style="background:${C.kalk};"><tr><td align="center" style="padding:24px 12px 40px;">
@@ -118,20 +135,19 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
 </td></tr>
 ${sektion(v.dage === 7 ? "Besluttet i ugen der gik" : "Besluttet de seneste to uger", "", v.besluttet, v.flereBesluttet)}
 ${sektion("Det skal de tage stilling til", "De næste to uger.", v.kommer, v.flereKommer)}
-${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0)}
+${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0, false)}
 <tr><td style="padding:24px 28px 26px;border-top:2px solid ${C.nat};font:12px/1.6 ${SANS};color:${C.muted};">
   Sagsvagt er partineutral og bygger på kommunens egne dagsordener og referater. Læs altid den originale sag, før du handler på den.<br><br>
   Du får denne mail, fordi du har skrevet dig op til Sagsvagt${modtager ? ` med ${esc(modtager)}` : ""}.
-  <a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Ret mine emner")}" style="color:${C.indigo};">Ret dine emner</a> ·
-  <a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Afmeld Sagsvagt")}" style="color:${C.indigo};">Afmeld</a> ·
-  <a href="${SITE}privatliv.html" style="color:${C.indigo};">Privatliv</a>
+  <!-- Linkene på deres egen linje med luft, så de er nemme at ramme med en finger -->
+  <br><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Ret mine emner")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Ret dine emner</a><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Afmeld Sagsvagt")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Afmeld</a><a href="${SITE}privatliv.html" style="display:inline-block;padding:12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Privatliv</a>
 </td></tr>
 </table>
 </td></tr></table>
 </body></html>`;
 
   // Ren tekst til mailprogrammer, der ikke viser HTML
-  const linje = (s) => `- ${s.t}\n  ${s.st === "besluttet" ? `Besluttet ${kort(s.dato)}` : s.st === "kommer" ? `På dagsordenen ${kort(s.dato)}` : `Behandlet ${kort(s.dato)}`}, ${hvorSag(s)}${s.st === "besluttet" && s.ud ? `\n  ${s.ud}${s.tal ? ` ${s.tal.for} for, ${s.tal.imod} imod.` : ""}` : ""}\n  ${linkTil(s)}`;
+  const linje = (s) => `- ${s.t}\n  ${s.st === "besluttet" ? `Besluttet ${kort(s.dato)}` : s.st === "kommer" ? `På dagsordenen ${kort(s.dato)}` : `Behandlet ${kort(s.dato)}`}, ${hvorSag(s)}${s.st === "besluttet" && (s.ud || s.kb) ? `\n  ${s.ud || klip(s.kb, 220)}${s.ud && s.tal ? ` ${s.tal.for} for, ${s.tal.imod} imod.` : ""}` : ""}\n  ${linkTil(s)}`;
   const del = (t, l) => (l.length ? `\n\n${t.toUpperCase()}\n\n${l.map(linje).join("\n\n")}` : "");
   const tekst = `Sagsvagt, uge ${uge}\n\nGod morgen${navn ? `, ${navn}` : ""}.${ingen ? " Der er ingen nye sager om dine emner i denne uge." : ""}`
     + del("Besluttet", v.besluttet) + del("Det skal de tage stilling til", v.kommer) + del(`Fra ${hvor(profil.bydel || "")}`, v.bydel)

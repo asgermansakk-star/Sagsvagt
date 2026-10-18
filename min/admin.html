@@ -28,6 +28,12 @@
   .st.aktiv { background: #cfe3d4; color: #1d5b35; } .st.inviteret { background: var(--lyng); color: var(--blaek); } .st.afmeldt { background: var(--rule); color: var(--muted); } .st.fejl { background: var(--rosen); color: var(--bordeaux); }
   .lille { color: var(--muted); font-size: .8125rem; }
   .mini-knap { font: 600 .78rem var(--sans); background: none; border: 0; color: var(--vin); cursor: pointer; padding: 0; }
+  /* Mandagsmail: forhåndsvisning af én mail i en dialog */
+  #mm-vis { width: min(680px, 96vw); height: min(860px, 92vh); padding: 0; border: 0; border-radius: 12px; background: var(--kalk); }
+  #mm-vis::backdrop { background: rgba(14,15,20,.5); }
+  #mm-vis .mm-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 16px; font-size: .85rem; border-bottom: 1px solid var(--rule); }
+  #mm-ramme { width: 100%; height: calc(100% - 48px); border: 0; background: #fff; }
+  .st.klar { background: var(--lyng); color: var(--blaek); } .st.sendt { background: #cfe3d4; color: #1d5b35; } .st.spring { background: var(--rule); color: var(--muted); }
   details.import { margin: 26px 0 0; border-top: 2px solid var(--nat); padding-top: 12px; }
   details.import summary { font-weight: 700; cursor: pointer; }
   details.import textarea { width: 100%; min-height: 140px; font: inherit; padding: 10px; border: 1.5px solid var(--rule); border-radius: 10px; background: var(--kalk-lys); margin: 10px 0; }
@@ -83,6 +89,21 @@
         <button class="knap" id="push-aktiv" type="button">Slå udsendelse til</button>
         <button class="knap sek" id="push-koer" type="button">Kør udsendelsen nu</button>
       </div>
+    </details>
+    <details class="import" id="mm-boks">
+      <summary id="mm-titel">Mandagsmail</summary>
+      <p class="lille">Laver hver tilmeldts mail ud fra deres kommuner, emner og egne ord, så du kan se dem, før de sendes. Tilmeldte fra kommuner, der ikke er åbne endnu, og tilmeldte uden emner får ingen mail. Er der valgt et område øverst, gælder det også her. Ingen får samme uges mail to gange.</p>
+      <div class="handl-raekke">
+        <label class="lille"><b>Mandag</b> <input type="date" id="mm-dato"></label>
+        <button class="knap sek" id="mm-forbered" type="button">Forbered mails</button>
+        <button class="knap" id="mm-send" type="button" disabled>Send</button>
+      </div>
+      <p class="lille" id="mm-status" role="status" aria-live="polite"></p>
+      <div class="tabel-wrap" id="mm-tabel" hidden><table class="liste">
+        <thead><tr><th>E-mail</th><th>Kommuner</th><th>Mailen</th><th>Status</th><th></th></tr></thead>
+        <tbody id="mm-raekker"></tbody>
+      </table></div>
+      <dialog id="mm-vis" aria-label="Forhåndsvisning af mail"><div class="mm-top"><b id="mm-vis-emne"></b><button class="mini-knap" type="button" id="mm-luk">Luk</button></div><iframe id="mm-ramme" title="Mailen"></iframe></dialog>
     </details>
     <details class="import" id="fb-boks">
       <summary id="fb-titel">Feedback fra Min avis</summary>
@@ -239,6 +260,101 @@
     else { $("#login").hidden = false; $("#login-besked").className = "besked fejl"; $("#login-besked").textContent = "Serveren svarer ikke. Admin-siden virker kun på sagsvagt.dk eller den lokale PHP-server."; }
   });
 })();
+</script>
+<script type="module">
+// Mandagsmailen: henter de tilmeldte, laver hver mail med samme skabelon som forhåndsvisningen i Min avis
+// (assets/mandagsmail.js) og sender dem først, når redaktionen trykker Send. Sagerne hentes fra de samme filer som Min avis.
+import { lavMandagsmail } from "../assets/mandagsmail.js";
+import { profilFor } from "../assets/profil.js";
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const api = (fil, data) => fetch("../api/" + fil, { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data || {}) })
+  .then((r) => r.json().catch(() => ({})).then((j) => { if (!r.ok) throw new Error(j.fejl || "Noget gik galt."); return j; }));
+const hent = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); });
+const SITE = "https://sagsvagt.dk/";
+
+// Næste mandag (eller i dag, hvis det er mandag)
+const d = new Date(); d.setDate(d.getDate() + ((8 - d.getDay()) % 7));
+$("#mm-dato").value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+
+let MAILS = [];
+const status = (t) => { $("#mm-status").textContent = t; };
+const NAVN = { klar: "Klar", sendt: "Sendt", lukket: "Kommune ikke åben", ingenEmner: "Ingen emner", ingenSager: "Ingen sager", udenfor: "Uden for området", fejl: "Fejlede" };
+
+// Én kommunes sager, som Min avis henter dem (København i assets/sager.json, de andre i kommune/<slug>/sager.json)
+const CACHE = new Map();
+const kommune = (slug, navn) => {
+  if (!CACHE.has(slug)) CACHE.set(slug, hent(slug === "koebenhavn" ? "../assets/sager.json" : `../kommune/${slug}/sager.json`)
+    .then((x) => ({ ...x, sager: x.sager.map((s) => ({ et: [], v: 0, r: 0, ...s, ks: slug, kn: navn })) })));
+  return CACHE.get(slug);
+};
+
+async function forbered() {
+  const uge = $("#mm-dato").value;
+  if (!uge) { status("Vælg mandagens dato."); return; }
+  $("#mm-forbered").disabled = $("#mm-send").disabled = true; status("Henter tilmeldte og sager …");
+  try {
+    const [{ modtagere }, aabne] = await Promise.all([api("admin/mandagsmail.php", { handling: "modtagere", uge }), hent("../kommune/aabne.json")]);
+    const slugs = aabne.map((k) => k.slug), navnPaa = Object.fromEntries(aabne.map((k) => [k.slug, k.navn]));
+    const EMNER = (await kommune("koebenhavn", "København")).emner;
+    // Området øverst på siden ("København", "Albertslund" …) begrænser også udsendelsen
+    const omraade = $("#omraade")?.value || "", omrSlug = aabne.find((k) => k.navn === omraade)?.slug;
+    MAILS = [];
+    for (const a of modtagere) {
+      const p = profilFor(a, EMNER, slugs), m = { a, p, uge };
+      if (a.sendt) m.st = "sendt";
+      else if (!p.kommuner.length) m.st = "lukket";
+      else if (omraade && !p.kommuner.includes(omrSlug)) m.st = "udenfor";
+      else if (!p.emner.length && !p.ord.length) m.st = "ingenEmner";
+      if (p.kommuner.length && (p.emner.length || p.ord.length)) {
+        const data = await Promise.all(p.kommuner.map((s) => kommune(s, navnPaa[s])));
+        const samlet = { emner: data[0].emner, sager: data.flatMap((x) => x.sager) };
+        m.mail = lavMandagsmail({ data: samlet, profil: p, idag: uge, modtager: a.email, linkTil: (s) => SITE + s.url });
+        if (!m.st && !m.mail.antal.besluttet && !m.mail.antal.kommer && !m.mail.antal.bydel) m.st = "ingenSager";
+      }
+      m.st ||= "klar";
+      MAILS.push(m);
+    }
+    vis();
+  } catch (e) { status(e.message); }
+  finally { $("#mm-forbered").disabled = false; }
+}
+
+function vis() {
+  const klar = MAILS.filter((m) => m.st === "klar"), t = (st) => MAILS.filter((m) => m.st === st).length;
+  $("#mm-tabel").hidden = !MAILS.length;
+  $("#mm-raekker").innerHTML = MAILS.map((m, i) => `<tr><td>${esc(m.a.email)}</td><td>${esc(m.p.kommuner.length ? m.p.kommuner.join(", ") : m.a.kommuner)}</td>`
+    + `<td>${m.mail ? esc(m.mail.emne) : '<span class="lille">–</span>'}</td><td><span class="st ${m.st === "klar" ? "klar" : m.st === "sendt" ? "sendt" : "spring"}">${esc(NAVN[m.st])}</span>${m.fejl ? `<br><span class="lille">${esc(m.fejl)}</span>` : ""}</td>`
+    + `<td>${m.mail ? `<button class="mini-knap" type="button" data-vis="${i}">Vis</button>` : ""}</td></tr>`).join("");
+  $("#mm-titel").textContent = `Mandagsmail (${klar.length} klar)`;
+  status(`${klar.length} klar til at sende. ${t("sendt")} har allerede fået ugens mail. Springes over: ${t("lukket")} kommune ikke åben, ${t("ingenEmner")} uden emner, ${t("ingenSager")} uden sager${t("udenfor") ? `, ${t("udenfor")} uden for området` : ""}.`);
+  $("#mm-send").disabled = !klar.length;
+  $("#mm-send").textContent = klar.length ? `Send ${klar.length} ${klar.length === 1 ? "mail" : "mails"}` : "Send";
+}
+
+async function send() {
+  const klar = MAILS.filter((m) => m.st === "klar");
+  if (!klar.length || !confirm(`Send mandagsmailen til ${klar.length} ${klar.length === 1 ? "person" : "personer"} nu? Det kan ikke fortrydes.`)) return;
+  $("#mm-send").disabled = $("#mm-forbered").disabled = true;
+  let ok = 0, fejl = 0;
+  for (const [n, m] of klar.entries()) {
+    status(`Sender ${n + 1} af ${klar.length} …`);
+    try { await api("admin/mandagsmail.php", { handling: "send", uge: m.uge, id: m.a.id, emne: m.mail.emne, html: m.mail.html, tekst: m.mail.tekst }); m.st = "sendt"; ok++; }
+    catch (e) { m.st = "fejl"; m.fejl = e.message; fejl++; }
+  }
+  vis();
+  status(`${ok} ${ok === 1 ? "mail" : "mails"} sendt${fejl ? `, ${fejl} fejlede (se listen)` : ""}.`);
+  $("#mm-forbered").disabled = false;
+}
+
+$("#mm-forbered").addEventListener("click", forbered);
+$("#mm-send").addEventListener("click", send);
+$("#mm-raekker").addEventListener("click", (e) => {
+  const i = e.target.getAttribute("data-vis"); if (i == null) return;
+  const m = MAILS[+i];
+  $("#mm-vis-emne").textContent = m.mail.emne; $("#mm-ramme").srcdoc = m.mail.html; $("#mm-vis").showModal();
+});
+$("#mm-luk").addEventListener("click", () => $("#mm-vis").close());
 </script>
 </body>
 </html>
