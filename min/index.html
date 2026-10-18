@@ -357,9 +357,9 @@
     .ed h1 { font-size: 1.875rem; }
     .ed .sum { font-size: 1.0625rem; }
     .tilpas { margin-left: 0; }
-    /* På telefonen skal login-boksen kunne ses uden at scrolle */
+    /* På telefonen kommer forklaringen først, så nye besøgende ved, hvad login er; "Log ind"-knappen hopper ned til boksen */
     .lukket { padding-top: 28px; gap: 28px; }
-    .lukket .login { order: -1; padding: 24px 22px 22px; }
+    .lukket .login { padding: 24px 22px 22px; scroll-margin-top: 16px; }
     .soeg { margin-left: 0; width: 100%; } .soeg input { width: 100%; }
     .mh-nav .konto { margin-left: 0; }
     .to { grid-template-columns: 1fr; }
@@ -424,10 +424,11 @@
         <p class="lead-p">Her samler vi de sager, der handler om dine emner: det, politikerne har besluttet, det, de skal tage stilling til, og det, der sker i din bydel. Vi åbner for login, når testperioden går i gang.</p>
         <div class="knapper">
           <a class="btn moerk" href="../vagt.html?fra=min-avis">Skriv dig op</a>
+          <a class="btn linje" href="#login">Log ind</a>
         </div>
         <p class="app-link" id="app-link" hidden><button type="button">Læg Sagsvagt på hjemmeskærmen som app</button></p>
       </div>
-      <form class="login" novalidate onsubmit="return false" aria-describedby="login-note">
+      <form class="login" id="login" novalidate onsubmit="return false" aria-describedby="login-note">
         <h2>Log ind</h2>
         <p>Vi sender dig et login-link på mail. Ingen adgangskode.</p>
         <label for="login-mail">Din e-mail</label>
@@ -793,7 +794,8 @@
         .then(() => location.reload())
         .catch((err) => { note.className = "fejl"; note.textContent = err.message; knap.disabled = false; });
     };
-    $("#login-mail").focus();
+    // Uden at scrolle: på telefonen står forklaringen over login-boksen
+    $("#login-mail").focus({ preventScroll: true });
   }
 
   function testLogin() {

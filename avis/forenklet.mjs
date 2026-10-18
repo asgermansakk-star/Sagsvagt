@@ -12,7 +12,7 @@ export async function laesForenklet() {
 export function forenkletBoks(s, forenklet, esc) {
   const f = forenklet[s.id];
   if (!f || f.type !== s.type) return "";
-  return `<details class="forenklet">
+  return `<details class="forenklet" open>
           <summary><span class="vis">Forklar sagen enkelt</span><span class="skjul">Skjul den enkle forklaring</span></summary>
           <div class="forenklet-indhold">
             <p class="forenklet-kort">${esc(f.kort)}</p>
