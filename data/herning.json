@@ -70,13 +70,6 @@
    "dato": "2026-09-21",
    "punkter": 7
   },
-  "531f0fb7-bcc5-4979-9071-ca9540068e19": {
-   "lastmod": "2026-09-02",
-   "type": "referat",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "punkter": 14
-  },
   "88b52c7d-dfc7-4dc9-91df-139f8d01deb0": {
    "lastmod": "2026-10-08",
    "type": "dagsorden",
@@ -303,13 +296,6 @@
    "dato": "2026-08-11",
    "punkter": 9
   },
-  "99c991af-64c1-44e8-b63f-0e6e3c89780e": {
-   "lastmod": "2026-10-14",
-   "type": "dagsorden",
-   "udvalg": "Beskæftigelsesudvalget",
-   "dato": "2026-10-20",
-   "punkter": 6
-  },
   "02236614-75ca-4ce2-b4cb-ac3687e079f3": {
    "lastmod": "2026-10-15",
    "type": "dagsorden",
@@ -338,32 +324,42 @@
    "type": "referat",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "punkter": 0,
-   "tomFra": "2026-10-20"
+   "punkter": 10
   },
   "71826c24-24d0-46db-a7eb-31c46c04e283": {
    "lastmod": "2026-10-20",
    "type": "referat",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "punkter": 0,
-   "tomFra": "2026-10-20"
+   "punkter": 9
   },
   "7176e5a5-cb4f-4cb0-b980-febee4e42fcb": {
    "lastmod": "2026-10-21",
    "type": "referat",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "punkter": 0,
-   "tomFra": "2026-10-21"
+   "punkter": 11
   },
   "053669d9-15c1-46b1-9d99-51708fabe0ec": {
    "lastmod": "2026-10-21",
    "type": "referat",
    "udvalg": "Beskæftigelsesudvalget",
    "dato": "2026-10-20",
-   "punkter": 0,
-   "tomFra": "2026-10-21"
+   "punkter": 4
+  },
+  "531f0fb7-bcc5-4979-9071-ca9540068e19": {
+   "lastmod": "2026-09-02",
+   "type": "referat",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "punkter": 12
+  },
+  "9f92dd05-dbfc-42c9-8692-aba4de92fe89": {
+   "lastmod": "2026-10-21",
+   "type": "dagsorden",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "punkter": 10
   }
  },
  "sager": {
@@ -3142,10 +3138,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 på Miljø-, Infrastruktur- og Naturudvalgets område",
    "afsnit": [
     {
@@ -3159,6 +3155,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat budgetopfølgningen pr. 31. august 2026 i øvrigt tages til efterretning og indgår i den samlede budgetopfølgning, som behandles i Økonomi-, Erhvervs- og Uddannelsesudvalget den 2. november 2026 henholdsvis i Byrådet den 10. november 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -3168,10 +3168,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Hastighedsreduktion på vejnettet omkring MCH Messecenter, Herning",
    "afsnit": [
     {
@@ -3185,6 +3185,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat hastigheden reduceres til 60 km/t på vejnettet omkring MCH."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -3194,10 +3198,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Godkendelse af anlægsregnskab til forundersøgelse af vandløbsprojekt i Terkildsbæk, nord for Ørnhøj",
    "afsnit": [
     {
@@ -3215,6 +3219,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -3224,10 +3232,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Grøn Trepart - udledningsgrænser for kvælstof i 2027",
    "afsnit": [
     {
@@ -3241,6 +3249,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat orienteringen om de offentliggjorte udledningsgrænser for kvælstof i 2027 tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
@@ -3250,10 +3262,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Orientering fra møde i Grønt Råd 10. september 2026",
    "afsnit": [
     {
@@ -3267,6 +3279,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
@@ -3276,10 +3292,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Temadrøftelse om mere genbrug og genanvendelse fra genbrugspladserne i Herning Kommune",
    "afsnit": [
     {
@@ -3293,6 +3309,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat udvalget drøfter, hvordan vi kan øge mængden af genbrug og genanvendelse af det affald, der afleveres på genbrugspladserne i Herning Kommune."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Udvalget drøftede, hvordan mængden af genbrug og genanvendelse af det affald, der afleveres på genbrugspladserne i Herning Kommune, kan øges.\nForvaltningen udarbejder på baggrund af drøftelsen analyser og beregninger til kommende udvalgsmøde."
     }
    ],
    "bilag": []
@@ -3302,10 +3322,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Fastsættelse af rottegebyr 2027",
    "afsnit": [
     {
@@ -3319,6 +3339,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at gebyret for opkrævning af rottebekæmpelse for 2027 godkendes at gebyret fremadrettet medtages på takstoversigten, som godkendes ved vedtagelse af Herning Kommunes budget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -3328,10 +3352,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Frigivelse af anlægsbevilling til mindre renoveringsprojekter på ejendomme",
    "afsnit": [
     {
@@ -3349,6 +3373,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat der meddeles anlægsudgiftsbevilling samt tilhørende rådighedsbeløb på 632.000 kr. i 2026 på Serviceområde 03 Kommunale Ejendomme, nyt bevillingsprogram\nat anlægsudgiften finansieres af afsat rådighedsbeløb på 632.000 kr. i 2026 på Serviceområde 03 Kommunale ejendomme, bevillingsprogram 200207 Pulje til renovering af bygninger i Herning Kommune."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -3358,10 +3386,10 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Godkendelse af anlægsregnskab vedr. sprinkling af plejecentre",
    "afsnit": [
     {
@@ -3378,7 +3406,11 @@
     },
     {
      "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet for Vesterled Plejecenter, etablering af sprinkling, serviceareal, godkendes\nat anlægsregnskabet for Vesterled Plejecenter, etablering af sprinkling, boligdel,\n\ngodkendes\nat der optages et endeligt lån på 4.352.710 kr. ved KommuneKredit til finansiering af boligdelen\nat huslejestigningen på 2,6 % tages til efterretning."
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet for Vesterled Plejecenter, etablering af sprinkling, serviceareal, godkendes\nat anlægsregnskabet for Vesterled Plejecenter, etablering af sprinkling, boligdel,\n\ngodkendes at der optages et endeligt lån på 4.352.710 kr. ved KommuneKredit til finansiering af boligdelen at huslejestigningen på 2,6 % tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -3388,15 +3420,15 @@
    "kommune": "Herning",
    "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.herning.dk/vis?id=16856b97-5637-4d4b-9072-a5a257f5109e",
-   "hentet": "2026-10-18T18:42:48.839Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=95dc9dce-74f3-4288-906b-7831947762a3",
+   "hentet": "2026-10-21T10:31:57.837Z",
    "titel": "Underskrift af digital beslutningsprotokol",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nX\n\nSagsbehandler: Øvrige sagsbehandlere: Sagsfremstilling Miljø-, Infrastruktur- og Naturudvalget skal godkende beslutningsprotokollen. Beslutningsprotokollen underskrives ved at trykke på ”Godkend” i First Agenda."
+     "titel": "Beslutning",
+     "tekst": "Beslutningsprotokol underskrevet."
     }
    ],
    "bilag": []
@@ -3602,454 +3634,6 @@
    "nr": 9,
    "kilde": "https://dagsordener.herning.dk/vis?id=9c727ca1-bb02-4af8-a9eb-fbce8aeca414",
    "hentet": "2026-10-18T18:44:47.495Z",
-   "titel": "Underskrift af digital beslutningsprotokol",
-   "afsnit": [
-    {
-     "titel": "Beslutning",
-     "tekst": "Beslutningsprotokol underskrevet."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-1": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-1",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 1,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Godkendelse af anlægsregnskab for renovering af gader og veje i forbindelse med kloakfornyelse... 3 Godkendelse af Midttrafiks forslag til budget 2027 for den kollektive trafik...................................... 5 Orientering om gennemførsel af vandområdeplansprojekter................................................................ 8 Frigivelse af anlægsbevilling til gennemførelse af vandområdeplansprojekt i Rind Å (Ålekisten), no 11 Godkendelse af anlægsregnskab for gennemførsel af vandløbsprojekt i Bæk N for Trøstrup Mark, s 14 Godkendelse af anlægsregnskab til forundersøgelse af vandløbsprojekt i Præstbjerg Bæk, nord for Ø 17 Godkendelse af anlægsregnskab for klima-lavbundsprojekt ved Fejgsø Bæk, øst for Ørnhøj............. 20 Godkendelse af mindre anlæg samt retningslinjer for udlån af kommunale grønne arealer langs Fug 23 Orientering fra møde i Grønt Råd 11. juni 2026................................................................................... 27 Renovationsgebyrer 2027...................................................................................................................... 28 Referat fra Landbrugsrådsmøde 10. juni 2026...................................................................................... 33 Orientering om manglende udledningstilladelser til overløb og regnvandsudløb................................ 35 Landzonetilladelse til etablering af legeplads/tarzanbane til FDF Sunds............................................. 39 Lukket: Asfaltarbejde i Tjørring............................................................................................................ 43 Lukket: Orientering om politianmeldelse............................................................................................. 43 Lukket: Orientering om politianmeldelse............................................................................................. 43 Lukket: Orientering om politianmeldelse............................................................................................. 43 Lukket: Meddelelser.............................................................................................................................. 43 Underskrift af digital beslutningsprotokol............................................................................................ 43",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Der er udarbejdet anlægsregnskab for renovering af gader og veje i forbindelse med kloakfornyelse, pulje 2022 - 2025.\nForvaltningen anbefaler, at anlægsregnskabet godkendes."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Der foreligger anlægsregnskab for profitcenter A270000014 Renovering af gader og veje i forbindelse med kloakfornyelse, pulje 2022 - 2025 på Serviceområde 09 Trafik.\nByrådet bevilgede den 21. juni 2022, punkt 134, 7,107 mio. kr., den 7. marts 2023, punkt 29, 7,228 mio. kr., den 16. april 2024, punkt 74, 7,459 mio. kr. samt den 25. marts 2025, punkt 54, 7,645 mio. kr., i alt 29,439 mio. kr. til renovering af gader og veje i forbindelse med kloakfornyelse.\nDer er gennemført følgende større renoveringer: Renovering af kantsten, fortove, cykelstier og rendestensbrønde i forbindelse med fornyelse af kloaksystemerne i Herning, Aulum, Sunds, Sinding, Vildbjerg, Hammerum og Ilskov.\nDer er tale om både større og mindre renoveringsopgaver. Arbejderne er koordineret med renovering af øvrige vejelementer samt med midler afsat til renovering af gadelys, trafiksikkerhedstiltag og forskønnelsestiltag.\nArbejderne er også koordineret med andre ledningsejere. Nogle projekter er endnu ikke afsluttet, da de strækker sig over flere år."
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Profitcenter\n\nAnlægsprojekt\n\nBevilling kr.\n\nForbrug kr.\n\nForskel kr.\n\nRenovering af\n\ngader og veje\n\nifm. A270000014 kloakering,\n\npulje 2022-\n\nDer er et samlet merforbrug på ca. 936.000 kr.\nUnderskuddet skyldes blandt andet væsentligt højere aktivitet fra Herning Vands side end forventet, hvilket har medført flere tilpasninger, koordinationsopgaver og udførelsesarbejder.\nGenerelle prisstigninger på materialer og entreprenørydelser i anlægsbranchen har også bidraget til meromkostninger.\nHerning Kommune har selv måttet udskifte vejafvandingsledninger på flere strækninger, hvilket ikke var medregnet i det oprindelige budget. Ekstraudgifter til opgravning, retablering, vejopbygning og trafikafvikling har yderligere øget omkostningerne.\nIdet anlægsregnskabet har en væsentlig beløbsmæssig afvigelse, fremsendes det med tilhørende bemærkninger til særskilt godkendelse i byrådet."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet godkendes."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Indstillingen er tiltrådt."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-2": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-2",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 2,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Godkendelse af Midttrafiks forslag til budget 2027 for den kollektive trafik",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Midttrafik har fremsendt forslag til budget 2027 i politisk høring hos bestillerne.\nBemærkninger til forslaget skal fremsendes til Midttrafik senest den 31. oktober 2026 til endelig godkendelse i Midttrafiks bestyrelse.\nForvaltningen anbefaler, at Midttrafiks forslag til budget 2027 for den kollektive trafik i Herning Kommune godkendes."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Busdriften under serviceområde 09 Trafik omfatter udgifter og indtægter for 11 bybusruter, 2 uddannelsesruter, 6 lokalruter inkl. 1 flexbus samt 21 skolebusruter og 10 elever, som er tilbudt taxa, hvoraf 8 benytter tilbuddet i øjeblikket, og 2 elever kun bruger tilbuddet den ene vej.\nDet fremsendte budget indeholder også handicapkørsel, som er taget ud af denne sag og behandles i Social- og Sundhedsudvalget.\nBudget for passagerindtægter i budgetforslag 2027 er på 7,1 mio. kr., hvilket er 0,5 mio. kr. lavere end i budget 2026. Dette skyldes en generel nedjustering af forventningen til 2027 på baggrund af regnskab 2025. I forslaget er ikke indregnet en eventuel forsættelse af HerningFRI. Midttrafik oplyser, at indtægterne forventeligt, hvis HerningFRI forsætter, vil være 3,5 mio. kr. lavere, og dermed et indtægtsbudget på 3,6 mio. kr.\nFor busdriftens operatørudgifter forventes en stigning i omkostningerne på 1,5 mio. kr., hvilket primært skyldes en indeksstigning på 1,1 mio. kr. samt et øget administrativt tillæg som følge af underbudgettering på denne i budget 2026. Modsvarende er der en forventning om et fald i køreplantimer med en mindre omkostning på 0,2 mio. kr.\nFor Flextrafik kørsel forventes en stigning i udgifter på 0,3 mio. kr. Dette skyldes, at der forventes ca. 1.100 flere ture i budget 2027 sammenlignet med budget 2026. Hermed er administrationsomkostningen til Midttrafik for denne del steget som følge af en stigning i antallet af køreplantimer. Fordelingen af budgettet sker på baggrund af køreplantimer, hvorfor et højere aktivitetsniveau medfører en større budgetandel.\n\nSamtidig er der opmærksomhed på kampagnen med gratis lokalbus, som fortsætter resten af 2026, og at der under HerningFRI er udstedt 4.943 kort til målgruppen. Forslag til høringssvar er vedlagt som bilag."
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Med udgangspunkt i ovenstående forudsætninger ser økonomien for den kollektive trafik i 2027 på Serviceområde 09 Trafik ud som følger:\nTabel: Kollektiv trafik - Budget 2026 og budgetforslag 2027\n\nHerning Kommunes samlede udgifter til kollektiv trafik for budget 2027 forventes at udgøre 55,438 mio. kr., hvortil kommer udgifter til taxa til skolekørsel på anslået 0,9 mio. kr. Det afsatte budget til området i 2027 (2026 prisniveau) udgør 55,8 mio. kr., hvilket alt andet lige medfører et forventet merforbrug på ca. 0,54 mio. kr. Fald i passagerindtægter ved en forsættelse af HerningFRI er ikke indregnet.\nPrisfremskrivning af Herning Kommunes budget fastlægges først ved godkendelse af Herning Kommunes budget 2027.\nEfterregulering for regnskab 2026 er ikke indregnet. Beløbet forventes at foreligge medio 2027."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat Midttrafiks forslag til budget 2027 for den kollektive trafik i Herning Kommune godkendes."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Indstillingen er tiltrådt."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-3": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-3",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 3,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Orientering om gennemførsel af vandområdeplansprojekter",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Herning Kommune arbejder med gennemførelse af de vandløbsindsatser, som staten har udpeget i vandområdeplanerne som led i implementering af EU's vandrammedirektiv.\nDer er aktuelt udpeget 96 vandløbsindsatser i Herning Kommune fordelt på Vandområdeplan 2015-2021, Vandområdeplan 2021-2027 og genbesøget af Vandområdeplan 2021-2027. Der er gennemført forundersøgelser for 28 indsatser og realiseret 17 indsatser. Der resterer fortsat 79 indsatser, som skal være realiserede inden 2033.\nHerning Kommune har aktuelt tilsagn til forundersøgelse af 3 indsatser og tilsagn til realisering af 4 indsatser. Samtidig forventes den kommende Vandområdeplan 20272033 (VP4) at tilføre yderligere indsatser.\nForvaltningen anbefaler, at orienteringen tages til efterretning."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Vandområdeplanerne er statens planlægningsredskab til at sikre, at vandløb, søer, kystvande og grundvand opnår god miljøtilstand i overensstemmelse med EU's vandrammedirektiv. Staten finansierer og udpeger de nødvendige indsatser, mens kommunerne har ansvaret for selve gennemførslen af projekterne i vandløbene inden for vandområdeplanernes planperioder. Vandområdeplansprojekterne er dermed en lovbundet kommunal opgave.\nVandløbsprojekterne omfatter blandt andet fjernelse af spærringer, restaurering af vandløb og andre fysiske forbedringer, der skal styrke de økologiske forhold i vandløbene. Projekterne gennemføres som udgangspunkt i to faser bestående af en forundersøgelse og efterfølgende realisering.\nHerning Kommune arbejder aktuelt med vandløbsindsatser fra Vandområdeplan 2015-2021 (VP2), Vandområdeplan 2021-2027 (VP3) og genbesøget af Vandområdeplan 2021-2027 (VP3-II). Der er samlet set udpeget 96 indsatser i Herning Kommune, der skal være realiseret inden 2033.\n\nDet skal dog bemærkes, at vandområdeplanprojekterne finansieres gennem to forskellige tilskudsordninger: en national og en EU-tilskudsordning. EU-tilskudsordningen lukker for modtagelsen af nye ansøgninger i 2027, hvilket vil sige, at alle projekter tilhørende denne tilskudsordning skal være søgt inden da, og at alle udgifter til projekterne senest skal være afholdt og betalt den 31. december 2029 for at være berettiget til EU-støtte. Det drejer sig om ca. 25 ud af de 96 indsatser i Herning Kommune. Forvaltningen vurderer, at det vil blive meget svært at nå dette særskilte krav inden tidsfristen. Forvaltningen håndterer dette ved at førsteprioritere denne projektportefølje og ikke opstarte flere projekter, end kommunen kan nå at få udbetalt støtte til. Derudover må det antages, at resterende EU-projekter overføres til den nationale pulje efterfølgende. Dette er dog ikke udmeldt fra statens side endnu.\nStatus for indsatserne fremgår af nedenstående tabel. Det bemærkes, at projekterne i VP2perioden indeholder enkelte ikke-afsluttede projekter fra den første Vandområdeplan (VP1, 2010-2015). Disse er ikke fremhævet særskilt i tabellen.\n\nVandområdeplan\n\nIndsatser\n\nGennemførte forundersøgelser\n\nGennemførte realiseringer\n\nRest forundersøgelser\n\nRest realiseringer\n\nVP3-II (genbesøg)\n\nI alt\n\nDer er gennemført forundersøgelser for 28 indsatser og realiseret 17 indsatser. Der resterer på nuværende tidspunkt 68 forundersøgelser og 79 realiseringer. Se vedlagte bilag for oversigtskort over Herning Kommune.\nHerning Kommune har aktuelt tilsagn til forundersøgelse af 3 indsatser og tilsagn til realisering af 4 indsatser. Der arbejdes således aktivt med 9 projekter, samtidig med at tidligere projekter afsluttes og afrapporteres.\nDer er desuden stigende overlap mellem vandløbsindsatserne og vådområdeprojekter under Grøn Trepart. Dette giver mulighed for at sammentænke indsatser for vandmiljø, natur og klima, men kan i nogle tilfælde også påvirke tidspunktet for gennemførelse af de enkelte vandplanprojekter og potentielt blive en udfordring i forhold til tidsfristen i 2033.\nForvaltningen forventer, at den kommende Vandområdeplan 2027-2033 (VP4) vil tilføre yderligere indsatser, samtidig med at ikke gennemførte projekter fra tidligere planperioder forventes videreført. Staten har udmeldt, at udkast til vandområdeplanerne for VP4 vil blive\n\nudsendt i 6 måneders offentlig høring den 22. december 2026. Forvaltningen forventer at fremsætte et høringsforslag til politisk behandling sidst på foråret i 2027. Den endelige vedtagelse og offentliggørelse af VP4 sker 22. december 2027."
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Vandområdeplansprojekterne finansieres af staten og EU gennem de gældende tilskudsordninger for vandområdeplansindsatser. Hertil kommer et mindre varierende årligt DUT bidrag, der i 2026 er på 363.000 kr. Tilskuddene dækker udgifter til både forundersøgelser og realisering af projekterne."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat orientering tages til efterretning."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Orienteringen er taget til efterretning."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-4": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-4",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 4,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Frigivelse af anlægsbevilling til gennemførelse af vandområdeplansprojekt i Rind Å (Ålekisten), nord for Arnborg",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "I Vandområdeplan 2021 - 2027 for vandområdedistrikt Jylland og Fyn er det angivet, at der skal fjernes en spærring i Rind Å, da vandløbet ikke opfylder kravet om god økologisk tilstand og fri faunapassage.\nHerning Kommune har gennemført en forundersøgelse af projektet, og i den forbindelse er der lavet et projektforslag.\nAnlægsarbejdet samt detailprojekteringen er fuldt finansieret via den europæiske tilskudsordning for vandløbsrestaurering (EHFAF) i tilknytning til vandområdeplanen. Styrelsen for Fødevarer, Landbrug og Fiskeri har meddelt Herning Kommune tilsagn om tilskud på i alt 7.801.625 kr. til projektet. Kommunen kan søge om udbetaling af tilskuddet, når projektet efter planen er gennemført.\nForvaltningen anbefaler, at der meddeles anlægsindtægts- og anlægsudgiftsbevilling på 7.802.000 kr. til tilskuddet og anlægsarbejdet ved Ålekisten i Rind Å."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "I Vandområdeplan 2021 - 2027 er der i Herning Kommune udpeget en række vandløb eller delstrækninger af vandløb, hvor der skal ske indsatser i form af vandløbsrestaureringsprojekter. Dette gælder blandt andet Ålekisten i Rind Å.\nVandløbsrestaureringsindsatsen skal sikre god økologisk tilstand i vandløbet og skabe bedre levevilkår for fisk, alger, planter og smådyrsfauna. Den primære udfordring ved Ålekisten i Rind Å er manglende faunapassage for fisk. Derfor vil projektet fokusere på at etablere en løsning, der sikrer fri passage og forbedrer fiskenes muligheder for at vandre i vandløbet. Samtidig vil projektet skabe adgang til omkring 103 km sammenhængende vandløbssystem for vandløbets fisk og øvrige fauna.\nDer er tidligere gennemført en forundersøgelse, som indeholder forslag til, hvordan spærringen kan fjernes. Herning Kommune har siden fået tilsagn til at lave et detailprojekt samt at gennemføre anlægsprojektet.\n\nProjektet er fuldt finansieret gennem tilskud bestående af 70 % EU-midler via Den Europæiske Hav-, Fiskeri- og Akvakulturfond og 30 % nationale midler fra Landbrugs- og Fiskeristyrelsen. Projektområdet er beliggende nord for Arnborg. På nedenstående kort er spærringen markeret med en rød prik. Rind Å løber ud i Skjern Å, der er en del af Skjern Å–systemet, som afvander til Ringkøbing Fjord. Projektet har desuden stor synergi med den planlagte fjernelse af spærringen ved Forvirringen i Skjern Å i foråret 2027, idet de to projekter tilsammen vil skabe adgang til mere end 200 km vandløb og dermed væsentligt styrke muligheden for selvreproducerende bestande af vandrende fisk.\nKort: Projektområdet beliggende nord for Arnborg"
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Kommuner kan søge tilskud til dækning af alle udgifter knyttet til forundersøgelser og gennemførelse af projekter via tilskudsordninger for vandløbsrestaureringsprojekter. Forvaltningen har søgt om tilskud og modtaget et tilsagn på 7.801.625 kr. til gennemførelse og detailprojektering af projektet. Tilsagnet dækker anlægsudgifter og detailprojektering af projektet. Forvaltningen anmoder om, at der meddeles henholdsvis anlægsindtægtsbevilling til tilskuddet samt tilsvarende anlægsudgiftsbevilling på 7.802.000 kr. på Serviceområde 04 Grønne områder, nyt profitcenter, Vandområdeplansprojekt Ålekisten – gennemførsel."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at der til tilskuddet meddeles anlægsindtægtsbevilling samt tilhørende rådighedsbeløb på\n\nat der til tilskuddet meddeles anlægsindtægtsbevilling samt tilhørende rådighedsbeløb på 7.802.000 kr. i 2026 på Serviceområde 04 Grønne områder, nyt profitcenter Vandområdeplansprojekt Ålekisten - gennemførsel\nat der til projektet meddeles anlægsudgiftsbevilling samt tilhørende rådighedsbeløb på 7.802.000 kr. i 2026 på Serviceområde 04 Grønne områder, nyt profitcenter Vandområdeplansprojekt Ålekisten - gennemførsel"
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Indstillingen er tiltrådt."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-5": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-5",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 5,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Godkendelse af anlægsregnskab for gennemførsel af vandløbsprojekt i Bæk N for Trøstrup Mark, syd for Timring",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Der er udarbejdet afsluttende anlægsregnskab til projektgennemførsel for vandområdeplansprojektet Bæk N For Trøstrup Mark, syd for Timring.\nProjektet er gennemført som planlagt.\nUdgifterne i projektet er dækket af tilsagn fra Styrelsen for Grøn Arealomlægning og Vandmiljø.\nForvaltningen anbefaler, at anlægsregnskabet godkendes."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Der foreligger anlægsregnskab for gennemførsel af et vandområdeplansprojekt i Bæk N for Trøstrup Mark, profitcenter A220000039 på Serviceområde 04 Grønne Områder.\nByrådet bevilgede den 16. december 2025, punkt 194, 106.000 kr. til gennemførslen af vandområdeplansprojektet i Bæk N for Trøstrup Mark, syd for Timring. Forvaltningen havde forinden modtaget et tilsagn fra Styrelsen for Grøn Arealomlægning og Vandmiljø på ca. samme beløb til projektet.\nProjektet er gennemført som planlagt. Der er etableret en mindre genslyngning af vandløbet, etableret gydebanker, sandfang og udlagt fiskeskjul. Projektet blev udført i februar 2026.\nDer har generelt været positiv lodsejerinteresse gennem hele projektforløbet.\nI projektet er der registreret udgifter for i alt 103.884 kr.\nForvaltningen har ansøgt om og fået godkendt en udbetalingsanmodning på 103.884 kr. til projektet fra Styrelsen for Grøn Arealomlægning og Vandmiljø.\nBæk N for Trøstrup Mark ligger syd for Timring og er en del af Skjern Å-systemet.\n\nKort over projektområdet"
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Profitcenter Anlæg\n\nU/I Bevilling Forbrug Forskel\n\n(kr.)\n\n(kr.)\n\n(kr.)\n\nA220000039 Vandområdeplansprojekt Bæk N for Trøstrup Mark - Gennemførsel\n\nI-\n\nN0\n\nAnlægsregnskabet vil blive optaget i Herning Kommunes årsregnskab og godkendt sammen med det samlede årsregnskab for 2026."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet godkendes."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Indstillingen er tiltrådt."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-6": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-6",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 6,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Godkendelse af anlægsregnskab til forundersøgelse af vandløbsprojekt i Præstbjerg Bæk, nord for Ørnhøj",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Der er udarbejdet afsluttende anlægsregnskab for forundersøgelse af vandområdeplansprojekt ved Præstbjerg Bæk, nord for Ørnhøj.\nForundersøgelsen har vist, at der kan gennemføres et projekt i vandløbet.\nUdgifterne i projektet er dækket af tilsagn fra Styrelsen for Grøn Arealomlægning og Vandmiljø.\nForvaltningen anbefaler, at anlægsregnskabet godkendes."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Der foreligger anlægsregnskab for forundersøgelse af et vandområdeplansprojekt i Præstbjerg Bæk, profitcenter A220000018 på Serviceområde 04 Grønne Områder.\nByrådet bevilgede den 19. december 2023, punkt 212, 88.000 kr. til forundersøgelsen af Præstbjerg Bæk. Forvaltningen havde forinden modtaget et tilsagn fra Styrelsen for Grøn Arealomlægning og Vandmiljø på 87.320 kr. til projektet.\nForundersøgelsen er gennemført som planlagt og resulterede i et projektforslag, der omfatter genslyngning, udlægning af gydebanker, udlægning af skjulesten, etablering af sandfang og udskiftning af en rørbro.\nForslaget er gennemgået med lodsejerne, og der er afholdt besigtigelser med interesserede lodsejere. Der har generelt været en positiv holdning til gennemførelse af projektet.\nNæste trin bliver at gennemføre projektet, når Styrelsen for Grøn Arealomlægning og Vandmiljø forventeligt giver tilsagn til at realisere projektet. Dette vil formentlig ske vinteren 2026/2027.\n\nKort: Projektområdet nord for Ørnhøj"
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Profitcenter Anlæg\n\nU/I Bevilling Forbrug Forskel\n\n(kr.)\n\n(kr.)\n\n(kr.)\n\nA220000018 Vandområdeplansprojekt U i Præstbjerg Bæk, forundersøgelse\n\nN0\n\nForskellen i bevillingen og forbruget skyldes et lavere timeforbrug end forventet.\nAnlægsregnskabet vil blive optaget i Herning Kommunes årsregnskab og godkendt sammen med det samlede årsregnskab for 2026."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet godkendes."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Indstillingen er tiltrådt."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-7": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-7",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 7,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Godkendelse af anlægsregnskab for klima-lavbundsprojekt ved Fejgsø Bæk, øst for Ørnhøj",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Der er udarbejdet afsluttende anlægsregnskab for anlægsprojektet klima-lavbundsprojekt ved Fejgsø Bæk.\nForvaltningen anbefaler, at anlægsregnskabet godkendes."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Der foreligger anlægsregnskab for anlægsprojektet \"Klima-lavbundsprojekt ved Fejgsø Bæk\" på Serviceområde 04 Grønne områder, profitcenter A220000023.\nByrådet bevilgede den 4. oktober 2022, punkt 205, 2.956.000 kr. i anlægsudgifts- og indtægtsbevilling til gennemførelse af et klima-lavbundsprojekt ved Fejgsø Bæk, øst for Ørnhøj.\nDer er gennemført en forundersøgelse for klima-lavbundsprojektet ved Fejgsø (17,2 ha), og projektet er anlagt i august 2025.\nKlima-lavbundsprojektet omfatter følgende projekttiltag:\nAfbrydning af interne dræn Etablering af stuvende stryg Hævning af adgangsvej Etablering af terrænskrab\nProjektets primære formål er at reducere udledningen af drivhusgasser ved udtagning af kulstofrig landbrugsjord. Ved udtagning af kulstofrig landbrugsjord fra dyrkning og genskabelse af naturlig hy​drologi i området ved f.eks. afbrydning af dræn gøres området permanent eller periodevis vådere. De kulstofrige jorde iltes derved ikke længere, og nedbrydnin​gen af den kulstofrige jord bremses, hvorved udledning af drivhusgasser fra området mindskes.\nProjektet er først og fremmest et klimaprojekt og har en drivhusgasreduktion på 13,7 tons\n\nCO2-ækvivalenter/ha/år, svarende til 236 tons CO2 reduktion årligt for hele arealet. Det svarer omtrent til den årlige CO2 binding fra 24 ha ny skov. Den samlede reduktion i kvælstofudledningen fra projektet er på ca. 636 kg N, svarende til 37 kg N/ha, hvilket grundet projektets mindre størrelse svarer til ca. 0,2% af Herning Kommunes forventede andel af indsatsen på N-reduktionen (kvælstof) til Ringkøbing Fjord.\nProjektet er udført i tæt dialog med lodsejerne, der lægger jord til projekto​ mrådet.\n\nDronefoto: Projektområde ved Fejgsø Bæk"
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Herning Kommune har haft følgende udgifter og indtægter i forbindelse med projektet (se økonomitabel).\nUdgifterne omfatter rådgiverydelse i forbindelse med forundersøgelse og detailprojektering, udgifter til entreprenør i forbindelse med anlægsarbejdet og udgifter til aflønning af eget personale.\nProjektet er fuldt finansieret via den statslige støtteordning om tilskud til klimalavbundsprojekter.\n\nProfitcenter Anlæg\n\nBevilling Forbrug\n\nkr.\n\nkr.\n\nForskel kr.\n\nKlima-lavbundsprojekt ved Fejgsø Bæk\n\nN0\n\nØkonomitabel: Klima-lavbundsprojekt Fejgsø Bæk\nDet samlede mindreforbrug skyldes, at projektets omkostninger blev væsentligt mindre end forventet, først og fremmest fordi staten overtog lodsejererstatningen, der indledningsvis indgik i kommunens projektøkonomi.\nForskellen mellem indtægt og udgifter svarende til en merindtægt på 6.745 kr. skyldes, at kommunen, i forbindelse med udbetalingen af midler fra den statslige støtteordning om tilskud til klima-lavbundsprojekter, har fået udbetalt overheads, svarende til 15 % af lønudgifterne til aflønning af kommunens eget personale.\nAnlægsregnskabet vil blive optaget i Herning Kommunes årsregnskab og godkendt sammen med det samlede regnskab for 2026."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet godkendes."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Indstillingen er tiltrådt."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-8": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-8",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 8,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Godkendelse af mindre anlæg samt retningslinjer for udlån af kommunale grønne arealer langs Fuglsang Søfront",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Forvaltningen har modtaget en ansøgning om etablering af en mindre platform på kommunalt areal i den sydlige ende af Fuglsang Søfront. Anlægget skal give adgang til vandet fra promenaden. I den forbindelse har forvaltningen udarbejdet et udkast til retningslinjer for udlån af kommunalt areal langs Søfronten.\nForvaltningen anbefaler, at udvalget tager stilling til, om det ansøgte anlæg og retningslinjerne kan godkendes."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Den private udvikler af det nye boligområde ved Fuglsang Allé, beliggende ved Fuglsang Sø, har ansøgt om at etablere en platform på 1,20 x 3 m med en stige på siden af søens kant (spunsen), så det er muligt at komme i og op af vandet fra den offentlige promenade langs Fuglsang Søfront.\nAnlægget ønskes placeret ud for boligområdets sauna, men vil være frit tilgængeligt for offentligheden.\n\nFoto som viser platformens placering ved Fuglsang Sø\nMed henblik på at fremme brugen af kommunens grønne områder stiller forvaltningen arealer til rådighed for anlæg og arrangementer, så længe de er frit tilgængelige for offentligheden og i øvrigt understøtter områdets karakter og formål samt overholder anden lovgivning og regler, herunder lokalplan, naturbeskyttelseslov og kommunalfuldmagtsreglerne.\nLokalplanen for området, 41.OF20.1., giver blandt andet i anvendelsesbestemmelserne mulighed for, at der kan etableres anlæg til rekreative formål, såsom bade- og bådebroer (§ 3.3).\nFuglsang Sø er beskyttet efter naturbeskyttelseslovens § 3. Forvaltningen vurderer, at platformen som beskrevet i det konkrete tilfælde ikke forudsætter en dispensation.\nI forhold til kommunalfuldmagtsreglerne kan kommunerne vederlagsfrit udleje (det vil sige udlåne) arealer til for eksempel folkeoplysende, kulturelle, sundhedsfremmende, velgørende, politiske eller religiøse aktiviteter, som ikke har kommercielle formål.\nDerudover har forvaltningen foretaget en vurdering af, hvad der i øvrigt kan etableres af anlæg langs Fuglsang Søfront i tilfælde af, at der skulle komme flere ansøgninger. Forvaltningen har udarbejdet et forslag til retningslinjer for anlæg og aktiviteter ved Fuglsang Søfront. Forvaltningen anbefaler, at eventuelt kommende ansøgninger i lighed med den aktuelle ansøgning vil skulle følge disse retningslinjer:\n1. Anlæg skal være frit tilgængeligt for offentligheden og må ikke være til hinder for den frie færdsel på det kommunale areal langs Fuglsang Sø.\n\n2. Der må være maksimalt 6 anlæg langs hele den bebyggede søkant, og der skal være minimum 75 m imellem hvert anlæg.\n3. Anlæg skal placeres i forbindelse med andre bygningsværker henvendt til søen, og anlæggets funktion skal være henvendt til søen.\n4. Anlæg bør formgivnings- og materialemæssigt udformes, så de fremtræder ensartede og samlet kan ses som en sammenhængende helhed, for eksempel ved brug af træ og stål som allerede anvendt i området.\n5. Broer, platforme og lignende må som udgangspunkt have en størrelse på maksimalt 1,5 x 3 m.\n6. For at beskytte vandkvaliteten i søen skal anlæg udføres i miljøvenlige materialer, der ikke medfører risiko for forurening, det vil sige i rent træ uden imprægnering, maling eller lignende eller i NTR-/DK-mærket imprægneret træ. Broer må forsynes med skridsikkert underlag i neutrale, naturlige farver (brun, sort, mørkegrøn m.v.). Der må kun bruges miljøvenlige rengøringsmidler, som ikke indeholder forurenende stoffer, til rengøring af anlæg.\n7. Etablering, drift og fjernelse af et anlæg påhviler initiativtager til eller ejer af anlægget.\n8. Konkrete vederlagsfrie lejeaftaler/udlånsaftaler for anlæg ved Fuglsang Søfront vil, i lighed med andre udlånsaftaler for anlæg på et offentligt grønt område, indeholde vilkår, som skal sikre ovenstående (herunder vilkår om drift og vedligehold, opsigelse af aftale m.m.)\n9. Anlæg kan kun etableres, når de er godkendt af Herning Kommune.\nDet bemærkes, at der gælder særlige retningslinjer for færdsel på søen."
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Der forventes ingen kommunale udgifter til etablering, drift eller fjernelse af det ansøgte anlæg langs Fuglsang Søfront."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat udvalget godkender de foreslåede retningslinjer for etablering af mindre anlæg langs Fuglsang Søfront\n\nat udvalget godkender ansøgningen om etablering af platform med stige placeret ved Fuglsang Søfront ud for matrikel nr. 15bq Tjørring, Herning Jorder, under hensyn til de beskrevne retningslinjer."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Indstillingen er tiltrådt, dog suppleret med mindre præciseringer til afstand og ensartet udformning af anlæg i søen."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-9": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-9",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 9,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Orientering fra møde i Grønt Råd 11. juni 2026",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Der har været holdt møde i Grønt Råd den 11. juni 2026. Forvaltningen anbefaler, at orienteringen tages til efterretning."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Der var 4 punkter på dagsordenen til mødet den 11. juni 2026:\n1. Recertificering af Herning Kommunes klimaplan 2. Tørkeplan 3. Skovrejsning i kommuneplanudpegningerne 4. Grøn Trepart - status Referat fra mødet er vedlagt som bilag."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at orienteringen tages til efterretning."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Orienteringen er taget til efterretning."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-10": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-10",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 10,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Renovationsgebyrer 2027",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Renovationsområdet er gebyrfinansieret og skal \"hvile i sig selv\". Gebyrerne fastsættes derfor ud fra de forventede udgifter.\nFra 2025 skal producenterne betale en del af kommunernes udgifter til indsamling og behandling af emballageaffald, mens kommunerne fortsat skal opkræve betaling via renovationsgebyret for den andel af affaldet, der ikke er emballageaffald. Det er imidlertid usikkert, hvor stor en del af Herning Kommunes udgifter, der bliver dækket af producentansvaret. Samtidig har Herning Kommune indsendt et krav til Skat om tilbagebetaling af moms og afventer stadig afgørelsen på denne sag.\nForvaltningen har på denne baggrund beregnet tre forslag til renovationsgebyrer for 2027. Forslagene tager udgangspunkt i, at producentansvaret dækker henholdsvis 62,5 % eller 95 % af udgifterne til emballageaffald, hvor det tredje forslag også er beregnet med en dækning på 95 %, men hvor der er tilføjet en reduktion i gebyret til øvrige ordninger på 75 kr., som en tilbagebetaling på tidligere for meget indbetalt moms.\nFor en typisk husstand betyder forslagene, at det samlede årlige renovationsgebyr i:\nforslag 1 stiger med 197 kr. til 2.521 kr. ved en dækning på 62,5 %.\nforslag 2 stiger med 75 kr. til 2.399 kr. ved en dækning på 95 %.\nforslag 3 fastholdes på den nuværende samlede pris på 2.324 kr.\nForvaltningen anbefaler, at der vælges ét af de tre forslag til renovationsgebyrer for 2027, at renovationsgebyrerne for erhverv fortsat fastsættes til markedspriser svarende til gebyrerne for private husstande plus 5 %, at kommunale institutioner fortsat opkræves markedspriser for det forbrændingsegnede affald, samt at genbrugspladsgebyret for erhverv forhøjes fra 150 kr. til 200 kr. ekskl. moms pr. besøg, da det nuværende genbrugspladsgebyr ikke dækker de faktiske omkostninger."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Private husstande\nRenovationsgebyrerne for private husstande er opdelt i følgende gebyrer:\nGebyr pr. affaldsbeholder (typisk 2 beholdere pr. husstand) Gebyr til øvrige ordninger (genbrugspladser, glascontainere, storskrald og farligt affald) Gebyr til fælles udgifter (affaldsplan, regulativer og information)\nUdgifterne til affaldsbehandling er generelt stigende. Samtidig er der usikkerhed om, hvor stor en del af udgifterne til emballageaffald der bliver dækket af det udvidede producentansvar. Herning Kommune har indsendt et momskrav til Skat, hvor sagen forventes afgjort senest i 2027.\nProducentansvaret betyder, at producenterne via kollektive ordninger skal betale kommunernes udgifter til indsamling og behandling af emballageaffald. Kommunens øvrige udgifter til affaldsordningerne skal fortsat dækkes af renovationsgebyrerne.\nPå nuværende tidspunkt dækkes 62,5 % af udgifterne til emballageaffald af producentansvaret. Lovgivningen forventes ændret, så en større del af udgifterne bliver dækket, og hvor Herning Kommune forventer at få dækket 95 %. Da den endelige kompensation endnu ikke kendes, ligesom at momskravet endnu ikke er afgjort, er der beregnet tre forslag til renovationsgebyrer for 2027.\nDe nye beregninger af gebyrerne viser, at for at dække de forventede udgifter på renovationsområdet fratrukket kompensationen fra producentansvaret, skal der ske en tilpasning af gebyrerne.\nGebyr for en typisk husstand\nEn typisk husstand har to todelte affaldsbeholdere på hver 240 liter. Gebyret er momsfrit.\nForslag til gebyrer for en typisk husstand fremgår af skemaet nedenfor.\n\nAffaldsgebyrer typisk husstand kr./år\n\nForslag Forslag Forslag\n\n240 l affaldsbeholder til mad- og restaffald - 14 dages tømning\n\n240 l affaldsbeholder til papir/pap + metal/plast/mad- og drikkekartoner - 412 3 ugers tømning\n\nØvrige ordninger (genbrugspladser, glascontainere, storskrald og farligt 801 affald)\n\nFælles udgifter (affaldsplan, regulativer og information)\n\nI alt\n\nÆndring i forhold til 2026\n\nDe tre forslag bygger på følgende forudsætninger:\nForslag 1 er beregnet ud fra, at det udvidede producentansvar dækker 62,5 % af udgifterne til emballageaffaldet, hvilket svarer til den gældende lovgivning.\n\nForslag 2 er beregnet ud fra, at det udvidede producentansvar dækker 95 % af udgifterne til emballageaffaldet, hvilket er et optimistisk, men ikke urealistisk skøn, da Herning Kommune har lave omkostninger på renovationsområdet sammenlignet med andre kommuner.\n\nForslag 3 er beregnet ud fra, at det udvidede producentansvar dækker 95 % af udgifterne til emballageaffaldet samtidig med, at gebyrer til øvrige ordninger reduceres med 75 kr., således at det samlede renovationsgebyr for en typisk husstand fastholdes på samme niveau som i 2026. De 75 kr. svarer til i alt ca. 3,3 mio. kr. og finansieres af den forventede tilbagebetaling af momskravet.\nHerning Kommune havde i 2026 Danmarks laveste samlede renovationsgebyr for en typisk husstand, og selv med de anbefalede reguleringer af gebyrerne forventes Herning Kommune fortsat at være blandt de billigste kommuner.\nForvaltningen anbefaler, at renovationsgebyrerne tilpasses de forventede udgifter, og at der vælges ét af de tre forslag (bilag 1).\nErhvervsaffald\nHerning Kommune har siden 2023 tilbudt virksomheder at få indsamlet visse typer erhvervsaffald, når affaldet i art og mængde svarer til affaldet fra en husstand.\nOrdningen skal tilbydes til markedspriser. Byrådet besluttede den 15. november 2022, punkt 227, at erhverv skal betale et gebyr svarende til gebyret for private husstande plus 5 %. Forsyningstilsynets retningslinjer angiver, at erhverv skal betale den faktiske kostpris plus 5 15 %.\nDet er frivilligt for virksomhederne, om de vil benytte den kommunale affaldsordning eller en privat ordning. Gebyrerne er momspligtige, og der er udarbejdet en særskilt takstoversigt for erhverv. Overskuddet fra tillægget på erhvervsgebyrerne skal overføres til det skattefinansierede område.\n\nForvaltningen anbefaler, at gebyrerne fortsat fastsættes til priserne for private husstande plus 5 %, og at erhvervsgebyrerne i bilag 2 godkendes.\nGenbrugspladsgebyr for erhverv\nErhverv betaler ikke gebyr til øvrige ordninger eller fælles udgifter. I stedet betaler virksomhederne 150 kr. ekskl. moms pr. besøg på genbrugspladserne.\nDette gebyr har været uændret siden 2007. Beregningerne viser, at det nuværende gebyr ikke dækker omkostningerne til erhvervsaffald.\nForvaltningen anbefaler, at gebyret forhøjes til 200 kr. ekskl. moms pr. besøg.\nKommunale institutioner og virksomheder\nAffald fra kommunens egne institutioner og virksomheder skal betragtes som erhvervsaffald.\nForsyningstilsynet har tidligere i en række sager i andre kommuner tydeliggjort, at de kommunale institutioner og virksomheder skal betale markedspriser for det forbrændingsegnede affald. Genanvendeligt affald kan fortsat indsamles til samme priser som for private borgere.\nDer skal derfor fastsættes særskilte gebyrer for det forbrændingsegnede affald (restaffaldet) for de kommunale institutioner og virksomheder.\nForvaltningen anbefaler, at gebyrerne for kommunale institutioner godkendes (bilag 1).\nMomskrav\nHerning Kommune afventer fortsat Skats behandling af det indsendte momskrav. Tilgodehavende moms vil kunne anvendes til takstnedsættelse (forslag 3), kommende investeringer f.eks. renovering af glasstationer, opgraderinger af genbrugspladserne og fremtidig udskiftning af skraldespande og kasser til farligt affald.\nInvesteringerne er ikke medregnet i de foreslåede gebyrer for 2027. Der vil blive fremsendt en særskilt sag herom, når afgørelsen fra Skat foreligger.\nForslag til renovationsgebyrerne for henholdsvis private husstande og kommunale institutioner samt for erhverv vedlægges som bilag."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat der vælges ét af de tre forslag til renovationsgebyrer for private husstande i 2027 jf. takstoversigt for private husstande og kommunale institutioner, bilag 1\nat renovationsgebyrerne for erhverv fastsættes til markedspriser svarende til gebyrerne for de private husstande + 5 % jf. takstoversigt for erhverv, bilag 2\n\nat kommunale institutioner og virksomheder opkræves markedspriser for det forbrændingsegnede affald jf. takstoversigt for private husstande og kommunale institutioner, bilag 1\nat genbrugspladsgebyret for erhverv fastsættes til 200 kr. ekskl. moms pr. besøg."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Udvalget besluttede, at det samlede renovationsgebyr for en typisk husstand fastholdes på samme niveau som i 2026 (forslag 3). Forslaget finansieres af den forventede tilbagebetaling af momskravet i 2027.\nUdvalget besluttede desuden, at renovationsgebyrerne for erhverv fastsættes til markedspriser svarende til gebyrerne for de private husstande + 5 % jf. takstoversigt for erhverv, bilag 2, at kommunale institutioner og virksomheder opkræves markedspriser for det forbrændingsegnede affald jf. takstoversigt for private husstande og kommunale institutioner, bilag 1 samt at genbrugspladsgebyret for erhverv fastsættes til 200 kr. ekskl. moms pr. besøg."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-11": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-11",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 11,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Referat fra Landbrugsrådsmøde 10. juni 2026",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Der har været afholdt Landbrugsrådsmøde den 10. juni 2026. Mødet afholdes 2 gange om året, og det er skiftevis Sagro og Herning Kommune, der står for arrangementet. Dette møde var afholdt hos Sagro. Forvaltningen anbefaler, at referatet tages til efterretning."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "På mødet blev nedenstående punkter gennemgået:\n1. Recertificering af Herning Kommunes klimaplan med fokus på indsatsen Landbrug og arealanvendelse\n2. Læhegn – sagsbehandling og praksis (Herning-Ikast Landboforening) 3. Dræning (Herning-Ikast Landboforening) 4. § 3-områder – grøfter og vandløb (Herning-Ikast Landboforening) 5. Udkast til beredskabsplan ved tørke (Miljø og Klima) 6. Status Grøn Trepart (Natur og Grønne Områder) 7. Grundvandskortlægning og lokale treparter (Herning-Ikast Landboforening) 8. Hegn omkring husdyr/ulvesikret hegn (Familielandbruget VEST-Jylland)\n\n9. Glansbladet hæg – stigende problem (Herning-Ikast Landboforening) Referat og oplæg fra mødet er vedhæftet som bilag."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at udvalget tager referatet til efterretning."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Orienteringen er taget til efterretning."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-12": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-12",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 12,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Orientering om manglende udledningstilladelser til overløb og regnvandsudløb",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Herning Kommune står over for en omfattende opgave med at lovliggøre eksisterende spildevandsudledninger efter miljøministeren udsendte et hyrdebrev til alle landets kommuner i 2021.\nI Herning Kommune mangler der udledningstilladelser til 46 overløb.\nOpgaven kræver betydelige miljøfaglige og juridiske vurderinger og vurderes at medføre et ekstra ressourcebehov.\nForvaltningen vurderer, at opgaven ikke kan løses inden for de eksisterende ressourcer uden væsentlige konsekvenser for øvrige myndighedsopgaver på vand- og spildevandsområdet. Derudover forventes et stort antal tilladelser til udledning af regnvand samt yderligere myndighedsopgaver ved implementeringen af det nye byspildevandsdirektiv (fra 2027) at medføre et øget ressourcebehov.\nForvaltningen anbefaler, at udvalget tager orienteringen til efterretning."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "I brevet fra miljøministeren blev det præciseret, at der skal foreligge gyldige udledningstilladelser til alle udledninger af spildevand, herunder ældre overløbsbygværker og regnvandsudløb. Samtidig blev kommunerne opfordret til i samarbejde med forsyningerne at sikre, at alle udledninger er lovligt reguleret.\nEfterfølgende har Miljøstyrelsen skærpet sin håndhævelsespraksis over for manglende udledningstilladelser, og manglende tilladelser kan i sidste ende medføre indskærpelser og politianmeldelser af spildevandsforsyningerne. Herning Vand A/S har i den forbindelse fået 8 indskærpelser for manglende tilladelser til overløb, hvoraf de 2 er blevet politianmeldt. De seks af indskærpelserne (herunder de to politianmeldte overløb) er afsluttet eller under sagsbehandling.\nRigsrevisionens opfølgning fra februar 2026 viste, at der på landsplan manglede tilladelser til\n\nca. 60 % af overløbene. Opgaven med at lovliggøre eksisterende udledninger er derfor ikke kun en betydelig myndighedsopgave for Herning Kommune, men også for mange andre kommuner.\nStatus i Herning Kommune\nDer er identificeret 60 overløb med manglende eller utilstrækkelige tilladelse i Herning Kommune. Baggrunden for denne række af manglende eller utilstrækkelige tilladelser er, at det har været kutyme tilbage fra amtets tid at meddele udledningstilladelser til overløb blandt andet i selve spildevandsplanen eller før det som en landsvæsenskendelse. Dette er ikke længere gængs praksis på området.\nMiljø-, Infrastruktur- og Naturudvalget er blevet orienteret om de manglende udledningstilladelser flere gange over årene, senest på møde den 15. september 2025.\nStatus for manglende tilladelser til overløb er oplyst af Herning Vand den 9. juli 2026:\n\nType: overløb\n\nAntal\n\nOverløb af opspædet spildevand, der mangler tilladelser\n\nOverløb under nedlæggelse\n\n*De 14 overløb under nedlæggelse forventes ikke meddelt ny tilladelse, idet de udfases som følge af blandt andet vandplanindsatser og igangværende separeringsprojekter."
-    },
-    {
-     "titel": "Vurdering",
-     "tekst": "Udarbejdelse af udledningstilladelser til eksisterende overløb er en omfattende myndighedsopgave.\nKL's og Miljøstyrelsens vejledningsmateriale understreger, at der skal foretages en række miljøfaglige og juridiske vurderinger i forbindelse med hver enkelt afgørelse.\nForvaltningen vurderer derfor, at hovedparten af sagerne må betragtes som komplekse myndighedssager.\nErfaringsmæssigt vurderes ressourceforbruget til:\n\nSagstype\n\nTypisk tidsforbrug\n\nSagstype\n\nTypisk tidsforbrug\n\nMindre regnvandsudledning Udledning med recipientvurdering\n\n10-25 timer 20-50 timer\n\nKompleks tilladelse med habitatvurdering og miljøvurderingsscreening\n\n50+ timer\n\nSåfremt hovedparten af de 46 manglende tilladelser gennemsnitligt kræver 50 timers sagsbehandling, svarer det til minimum 2.300 arbejdstimer i alt. Hvis alle overløbstilladelser skal laves i løbet af 5 år, svarer det til lidt under ½ årsværk. Alternativt vil 1 årsværk i løbet af 2 år kunne lave alle overløbstilladelser (et årsværk er sat til 1.300 timer).\nForvaltningen vurderer derfor, at opgaven ikke kan løses inden for den eksisterende drift uden konsekvenser for øvrige myndighedsopgaver på vand- og spildevandsområdet, f.eks. tilladelser til nyetablerede virksomheder, andre tilladelser til Herning Vand, spildevandstillæg m.v.\nUd over ovenstående opgave er der 139 regnvandsudløb, som mangler udledningstilladelse, og ca. 69 eksisterende tilladelser, hvor de oprindelige forudsætninger vurderes at være overskredet som følge af blandt andet byudvikling og ændrede oplandsforhold.\nDerudover vil der i forbindelse med implementeringen af det nye byspildevandsdirektiv i 2027 komme yderligere opgaver på spildevandsområdet.\nOpgaverne omfatter blandt andet:\nat alle tilslutningstilladelser og udledningstilladelser for renseanlæg skal revurderes hvert tiende år.\nat alle renseanlæg skal have revurderet deres tilladelser i perioden 2027 - 2037.\nat spildevandsplanen skal revideres hvert 6. år.\nImplementering af byspildevandsdirektivet samt de manglende tilladelser til regnvandsudløb forventes dermed fremadrettet at bidrage til et øget ressourcebehov."
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Gennemførelse af opgaverne indenfor de fastsatte tidsfrister vil kræve tilførsel af medarbejderressourcer eller ekstern rådgiverbistand."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat orienteringen om status for manglende udledningstilladelser tages til efterretning."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Orienteringen er taget til efterretning.\nUdvalget ønsker en sag til behandling på kommende udvalgsmøde, hvor der foreligger forslag til løsning og finansiering af en 5 års plan for de manglende tilladelser til overløb."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-13": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-13",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 13,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
-   "titel": "Landzonetilladelse til etablering af legeplads/tarzanbane til FDF Sunds",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "FDF Sunds har den 7. januar 2026 ansøgt om nyopførelse af en legeplads/tarzanbane i den nærliggende skov, \"Hytteskoven\" omkring det allerede etablerede FDF-område med tilhørende kredshus.\nDet er oplyst af foreningen, at der derudover foreligger planer om flere fremtidige udvidelser, herunder mulighed for etablering af bygninger med overnatningsfaciliteter i skoven.\nForvaltningen anbefaler, at der jf. planlovens § 35, stk. 1, gennemføres en landzoneproces for den aktuelle legeplads/tarzanbane."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Projektet omfatter opsætning af forskellige typer af legeredskaber udført i træ, men der er ikke indtænkt konkrete bygninger. Projektet omfatter opstilling af 18 forskellige legeredskaber som et forløb gennem en rute i skoven.\nFDF Sunds har gennem flere år indsamlet midler gennem fonde og fra lokalsamfundet til realisering af projektet. Der er tidligere opført bygninger i området med bidrag fra fondsmidler.\nProjektet vil være tilgængeligt for både foreningen og kommunens borgere.\nNedenfor ses det ansøgte projekt og dets omfang.\n\nFDF Sunds er beliggende i landzone og er hverken omfattet af lokalplan eller en kommuneplanramme.\nDet aktuelle projekts omfang og placering i landzone kræver derfor, at der foreligger en landzonetilladelse, før der kan udstedes byggetilladelse for de ansøgte legeredskaber.\nJf. planlovens § 35, stk. 1, må der i landzone ikke uden tilladelse fra kommunen foretages udstykning, opføres ny bebyggelse eller ske ændringer i anvendelsen af bestående bygninger og ubebyggede arealer. Områder i landzone skal som udgangspunkt friholdes for anden spredt og uplanlagt bebyggelse m.v. end den, der er nødvendig for driften af landbrug, skovbrug og fiskeri. Ud over at værne om natur og landskab er varetagelsen af de primære erhvervsinteresser blandt de hensyn, der ligger bag landzonereglerne. Der er i den konkrete sag drøftet mulighed for udfærdigelse af ny lokalplan til indeholdelse af de fremtidige ønsker for området.\nDet kan oplyses, at forvaltningen i foråret 2025 har givet landzonetilladelse til et mindre lignende projekt omhandlende opførelse af bålhytte, shelter, tarzanbane, hængekøjer og cykelbane på Stokkildhovedvej 5, sydøst for Herning. Dette område er væsentlig mindre og begrænset af omkringliggende grunde og nabobebyggelse, hvor eventuelle fremtidige udvidelsesmuligheder vurderes at være meget begrænsede.\n\nDet er et formål med planloven at sikre en sammenhængende planlægning, der forener de samfundsmæssige interesser i arealanvendelsen, jf. § 1. Der kan tilvejebringes en lokalplan blandt andet for at sagsbehandlingen kan afkortes samt for at kortlægge mulighederne for områdets fremtidige anvendelse. Efter hidtidig praksis lægges stor vægt på lovens almene formål, uanset at den enkelte sags betydning er begrænset. I vurderingen indgår derfor overvejelser om, hvilken betydning afgørelsen kan få for fremtidige lignende sager. Formanden for FDF Sunds har udarbejdet en redegørelse for deres planer og fremtidsmuligheder for området, som er vedlagt i bilag 2. Nedenfor er udklip af hele den matrikel FDF Sunds råder over, hvor det ansøgte projekt skal opføres i den nordlige del.\nForvaltningens vurdering\nDen ansøgte legeplads/tarzanbane opføres i tilknytning til eksisterende bebyggelse i området og i sammenhæng med foreningens aktivitetsområde, og det er derfor vurderingen, at omfanget og størrelsen vil harmonere med området og foreningens idégrundlag. På baggrund af ovenstående ansøgning vurderer forvaltningen, at der kan gives landzonetilladelse til den aktuelle legeplads/tarzanbane."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at der jf. planlovens § 35, stk. 1, gennemføres en landzoneproces for den aktuelle legeplads/tarzanbane."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "Indstillingen er tiltrådt."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-19": {
-   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-19",
-   "kommune": "Herning",
-   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
-   "dato": "2026-08-31",
-   "type": "referat",
-   "nr": 19,
-   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
-   "hentet": "2026-10-18T18:46:45.435Z",
    "titel": "Underskrift af digital beslutningsprotokol",
    "afsnit": [
     {
@@ -6510,10 +6094,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Budgetopfølgning pr. 31. august 2026",
    "afsnit": [
     {
@@ -6531,6 +6115,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER,\nat Børne- og Familieudvalget godkender de anførte bevillingsmæssige ændringer jf. sagsfremstillingen\nat budgetopfølgningen pr. 31. august 2026 i øvrigt tages til efterretning og indgår i den samlede budgetopfølgning, som behandles i Økonomi-, Erhvervs- og Uddannelsesudvalget den 2. november 2026 og henholdsvis i Byrådet den 10. november 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -6540,10 +6128,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Orientering om ekstern analyse for Særligt Tilrettelagt Ungdomsuddannelse (STU)",
    "afsnit": [
     {
@@ -6557,6 +6145,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER\nat orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
@@ -6566,10 +6158,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Godkendelse af pilotprojekt med Civil Praktik",
    "afsnit": [
     {
@@ -6587,6 +6179,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER,\nat igangsættelse af et pilotforsøg med civil praktik på Snejbjerg Skole godkendes,\nat forsøget gennemføres efter den beskrevne model i en toårig afprøvningsperiode, og\nat der gennemføres en evaluering med henblik på efterfølgende politisk stillingtagen til en eventuel permanentgørelse og udbredelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt.\n\nIndstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -6596,10 +6192,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Drøftelse og beslutning vedrørende PC på skoleområdet",
    "afsnit": [
     {
@@ -6613,6 +6209,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER,\nat perspektiver og handlemuligheder drøftes, og\nat der tages beslutning om, hvad der skal arbejdes videre med på henholdsvis kort og længere sigt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet.\nPå kort sigt blev det besluttet at arbejde videre med én pc pr. tre elever i 0.-3. klasse og én pc pr. elev 4.- 9. klasse.\nI forhold til det længere sigte afdækkes yderligere i forhold til pc'ers levetid, forskellige scenarier for antal af pc'er i de forskellige faser i skolen samt forhold vedrørende analoge læremidler."
     }
    ],
    "bilag": []
@@ -6622,10 +6222,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Frigivelse af anlægsbevilling til renovering af madkundskabslokale på Gullestrup Børnecenter",
    "afsnit": [
     {
@@ -6643,6 +6243,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER,\nat udskiftning af defekt gulvbelægning og renovering af madkundskabslokale på Gullestrup Børnecenter godkendes\nat der til renovering af madkundskabslokale på Gullestrup Børnecenter meddeles anlægsudgiftsbevilling samt tilhørende rådighedsbeløb på 770.000 kr. i 2026 på Serviceområde 12 Folke- og Ungdomsskoler, nyt bevillingsprogram\nat anlægsudgiften finansieres af afsat rådighedsbeløb i 2026 på Serviceområde 12 Folkeog Ungdomsskoler, bevillingsprogram 300032 rådighedsbeløb vedr. diverse anlægsarbejder."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -6652,10 +6256,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Godkendelse af anlægsregnskab vedrørende Pulje til projekter 2022-2025",
    "afsnit": [
     {
@@ -6673,6 +6277,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER, at anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -6682,10 +6290,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Godkendelse af anlægsregnskab vedrørende udskiftning af pc-udstyr på skoleområdet",
    "afsnit": [
     {
@@ -6703,6 +6311,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER,\nat anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -6712,10 +6324,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Godkendelse af anlægsregnskab Vestervangskolen bygningsmæssige ændringer ved flytning af SFO",
    "afsnit": [
     {
@@ -6733,6 +6345,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER,\nat anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -6742,10 +6358,10 @@
    "kommune": "Herning",
    "udvalg": "Børne- og Familieudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.herning.dk/vis?id=c3d01236-40e7-4c15-aa6e-5997ad53e946",
-   "hentet": "2026-10-18T21:22:40.482Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
    "titel": "Evt./meddelelser - åbne",
    "afsnit": [
     {
@@ -6755,6 +6371,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER,\nat orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
@@ -7872,10 +7492,10 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.831Z",
    "titel": "Endelige vedtagelse af lokalplan for erhvervsområde ved Baggeskærvej, Herning",
    "afsnit": [
     {
@@ -7889,6 +7509,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nAt lokalplan 14.E7.3 for erhvervsområde ved Baggeskærvej i Herning indstilles til endelig vedtagelse med følgende ændringer:\nat lokalplanforslagets § 1.7 ændres til ”at sikre areal til regnvandshåndtering.”\nat lokalplanforslagets § 3.14 ændres til ”Området må anvendes til anlæg til håndtering og opstuvning af regn- og overfladevand, håndtering af klimaregn samt tekniske anlæg til spildevandshåndtering (fx pumpestationer). Inden for området kan der anlægges vejanlæg til servicering af tekniske anlæg.”\nat lokalplanforslagets § 6.6 udgår.\nat lokalplanforslagets § 6.7 udgår.\n\nat lokalplanforslagets § 9.6 ændres til ” Delområdet indeholder § 3 beskyttede naturtyper, som skal friholdes for bebyggelse, anlæg og oplag. Der kan dog etableres synlige anlæg til håndtering af regn- og overfladevand inden for delområde IV.”\nat der tilføjes en ny bestemmelse i § 9: ”Inden for den på kortbilag 3 viste vejbyggelinje langs Messemotorvejen, herunder vejbyggelinjens højde- og passagetillæg, må der ikke etableres bebyggelse, anlæg, oplag eller indretninger af blivende art.”\nat lokalplanforslagets § 10.1 ændres til ” Der må ikke foretages permanente reguleringer af det naturlige terræn på mere end +/- 1 meter. I forbindelse med regnvandshåndtering og mulighed for afvanding ved gravitation kan der foretages yderligere terrænregulering.”\nat der tilføjes en ny bestemmelse i §14: \"Efter den endelige vedtagelse og offentlige bekendtgørelse af denne lokalplan ophæves lokalplan nr. 14.E6.3, Erhvervsområde ved MCH Messecenter Herning vedtaget 17. november 2015 for den del, der er omfattet af nærværende lokalplan.\"\nat kortbilag 2 revideres, så det areal, der er reserveret til regnvandsbassin samt drift- og vedligeholdelseszone, udgår. Som følge heraf ændres afgrænsningen mellem delområde II og delområde IV.\nat kortbilag 3 revideres med en ny delområdeafgrænsning svarende til delområdeafgrænsningen på kortbilag 2.\nat der i lokalplanens redegørelse under afsnit 1.7 Myndighedstilladelser indarbejdes et afsnit med oplysninger om vejbyggelinjen langs Messemotorvejen, herunder at byggeri og anlæg inden for vejbyggelinjen kræver Vejdirektoratets tilladelse.\nat lokalplanens redegørelse revideres som følge af ovenstående ændringer."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådt"
     }
    ],
    "bilag": []
@@ -7898,10 +7522,10 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.831Z",
    "titel": "Endelig vedtagelse af kommuneplantillæg for delvis ophævelse af lokalplan for golfanlæg",
    "afsnit": [
     {
@@ -7915,6 +7539,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nAt Byplan- og Bosætningsudvalget indstiller tillæg nr. 19 til Herning Kommuneplan 20252036 til endelig vedtagelse med følgende ændringer;\nAt matr. 2bk udgår af ophævelsen, således at den delvise ophævelse alene omfatter matr. 1t."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådt"
     }
    ],
    "bilag": []
@@ -7924,10 +7552,10 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.832Z",
    "titel": "Endelig vedtagelse af delvis ophævelse af lokalplan for golfanlæg nord for Havnstrup",
    "afsnit": [
     {
@@ -7941,6 +7569,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nAt den delvise ophævelse af lokalplan nr. 59.N4.1 for område til idræts- og fritidsformål indstilles til endelig vedtagelse med følgende ændringer;\nAt matr. 2bk udgår af forslaget til ophævelse, således at den delvise ophævelse alene omfatter matr. 1t."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådt"
     }
    ],
    "bilag": []
@@ -7950,10 +7582,10 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.832Z",
    "titel": "Foreløbig vedtagelse af lokalplan for boligområdet Spinkebjerg i Gjellerup",
    "afsnit": [
     {
@@ -7967,6 +7599,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nat udvalget indstiller forslag til lokalplan 32.B6.2 for boligområdet Spinkebjerg i Gjellerup til foreløbig vedtagelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådt"
     }
    ],
    "bilag": []
@@ -7976,10 +7612,10 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.832Z",
    "titel": "Forslag til foreløbig vedtagelse af kommuneplantillæg for et område med offentlig formål i form af bo- og aktivitetstilbud nord for Lillelundvej i Herning",
    "afsnit": [
     {
@@ -7993,6 +7629,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nat forslag til tillæg nr. 13 til Herning Kommuneplan 2025-2036 for et område med offentlig formål i form af bo- og aktivitetstilbud nord for Lillelundvej i Herning foreløbig vedtages."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådt"
     }
    ],
    "bilag": []
@@ -8002,10 +7642,10 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.832Z",
    "titel": "Foreløbig vedtagelse af lokalplan for offentlig formål i form af bo- og aktivitetstilbud nord for Lillelundvej i Herning",
    "afsnit": [
     {
@@ -8019,6 +7659,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nAt forslag til lokalplan nr. 12.OF5.8 for Offentlig formål i form af bo- og aktivitetstilbud nord for Lillelundvej i Herning indstilles til foreløbig vedtagelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådt"
     }
    ],
    "bilag": []
@@ -8028,10 +7672,10 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.832Z",
    "titel": "Nedrivning af bevaringsværdig ejendom Ørre Byvej, Ørre, Herning",
    "afsnit": [
     {
@@ -8045,6 +7689,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nat Byplan- og Bosætningsudvalget tager beslutning om, hvorvidt ejendommen Ørre Byvej 40, Ørre, 7400 Herning, kan nedrives."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Det blev besluttet ikke at give tilladelse til nedrivning.\nKenneth Storm, Rikke Worsøe og Erik Poulsen stemte for at bygningen skulle kunne nedrives."
     }
    ],
    "bilag": []
@@ -8054,10 +7702,10 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.832Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 på Byplan- og bosætningsudvalgets område",
    "afsnit": [
     {
@@ -8070,7 +7718,11 @@
     },
     {
      "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nat Byplan- og Bosætningsudvalget godkender de anførte bevillingsmæssige ændringer jf. sagsfremstillingen,\nat budgetopfølgningen pr. 31. august 2026 tages til efterretning og indgår i den samlede budgetopfølgning, som behandles i henholdsvis Økonomi-, Erhvervs- og Uddannelsesudvalget den 2. november 2026 og i Byrådet den 10. november 2026."
+     "tekst": "DIREKTØREN FOR BY, ERHVERV OG KULTUR INDSTILLER,\nat Byplan- og Bosætningsudvalget godkender de anførte bevillingsmæssige ændringer jf. sagsfremstillingen, at budgetopfølgningen pr. 31. august 2026 tages til efterretning og indgår i den samlede budgetopfølgning, som behandles i henholdsvis Økonomi-, Erhvervs- og Uddannelsesudvalget den 2. november 2026 og i Byrådet den 10. november 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådt"
     }
    ],
    "bilag": []
@@ -8080,17 +7732,12 @@
    "kommune": "Herning",
    "udvalg": "Byplan- og Bosætningsudvalg",
    "dato": "2026-10-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.herning.dk/vis?id=d874a059-3c9f-4a64-aad5-575e709ad8ef",
-   "hentet": "2026-10-18T21:27:18.963Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=71826c24-24d0-46db-a7eb-31c46c04e283",
+   "hentet": "2026-10-21T10:35:03.832Z",
    "titel": "Underskrift af digital beslutningsprotokol",
-   "afsnit": [
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nX\n\nSagsbehandler: Jonna Grønne Øvrige sagsbehandlere: Sagsfremstilling Byplan- og Bosætningsudvalget skal godkende beslutningsprotokollen. Beslutningsprotokollen underskrives ved at trykke på ”Godkendt” i First Agenda."
-    }
-   ],
+   "afsnit": [],
    "bilag": []
   },
   "herning-2026-09-18-byplan-og-bosaetningsudvalg-1": {
@@ -8712,67 +8359,15 @@
    ],
    "bilag": []
   },
-  "herning-2026-10-20-beskaeftigelsesudvalget-1": {
-   "id": "herning-2026-10-20-beskaeftigelsesudvalget-1",
-   "kommune": "Herning",
-   "udvalg": "Beskæftigelsesudvalget",
-   "dato": "2026-10-20",
-   "type": "dagsorden",
-   "nr": 1,
-   "kilde": "https://dagsordener.herning.dk/vis?id=99c991af-64c1-44e8-b63f-0e6e3c89780e",
-   "hentet": "2026-10-18T21:35:58.255Z",
-   "titel": "Orientering om status på udviklingen af den fremtidige social- og beskæftigelsesindsats i Herning.. 3 Budgetopfølgning pr. 31. august 2026 på Beskæftigelsesudvalgets område........................................ 7 Udbud Danskuddannelse 2027.............................................................................................................. 12 Orientering om kapacitetsstyring på herbergs- og forsorgshjemsområdet............................................ 15 Godkendelse af Rammeaftale 2027-2028 på det specialiserede social- og specialundervisningsområ 17 Orientering om centrale nøgletal på social- og beskæftigelsesområdet................................................ 19 Meddelelser til og fra formanden og udvalgets medlemmer................................................................. 20 Generel orientering fra administrationen.............................................................................................. 21 Underskrift af digital beslutningsprotokol............................................................................................ 23",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Beskæftigelsesudvalget orienteres om de foreløbige resultater af den udviklings- og forandringsproces, der er gennemført som led i implementeringen af beskæftigelsesreformen i JobHerning. Med afsæt i udvalgets tidligere godkendte retning, kernefortælling og udviklingsarbejde er der udarbejdet en fælles kerneopgave, værdier og faglige principper, som skal definere den fremtidige social- og beskæftigelsesindsats og understøtte, at flere borgere kommer i arbejde, samtidig med at virksomhedernes behov for arbejdskraft imødekommes.\nAdministrationen giver på mødet en mundtlig præsentation af den nye indsats."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "På møderne den 13. januar (punkt 5), 17. februar (punkt 11), 10. marts (punkt 17), 26. marts (punkt 21) og 28. april 2026 (punkt 31) drøftede og godkendte Beskæftigelsesudvalget retning og kernefortælling for implementeringen af beskæftigelsesreformen i Herning Kommune.\nKernefortællingen tager afsæt i ambitionen om både at sikre virksomhederne kvalificeret arbejdskraft og understøtte, at flere borgere opnår varig tilknytning til arbejdsmarkedet.\nFor at lykkedes med ambitionen har udvalget sat retning gennem disse fem overskrifter:\nStyrke virksomhedernes mulighed for arbejdskraft Større jobfokus – med løntimer som middel til at få flere borgere i job Styrke den digitale tilgængelighed og det digitale jobmatch Større helhed for borgeren på tværs af velfærdsområdet Prioriterer indsatser med størst effekt – både menneskelige og økonomiske\nUdviklingsproces\nPå baggrund af Beskæftigelsesudvalgets drøftelser og den godkendte kernefortælling igangsatte JobHerning i marts 2026 en udviklings- og forandringsproces med henblik på at\n\nomsætte reformens intentioner til den fremtidige organisering og tilrettelæggelse af beskæftigelsesindsatsen.\nProcessen blev indledt med et fællesmøde for samtlige medarbejdere i JobHerning, hvor medarbejdere bidrog med perspektiver på fremtidens indsats. Herefter blev arbejdet videreført i seks tværgående udviklingsgrupper bestående af medarbejdere og ledere fra forskellige fagområder. Udviklingsgrupperne har haft til opgave at formulere anbefalinger til udviklingen af den fremtidige social- og beskæftigelsesindsats.\nArbejdet har været organiseret omkring seks udviklingsspor, som tilsammen udgør de centrale pejlemærker for den fremtidige indsats:\nBorgerinddragelse\nVirksomhedssamarbejde\nDigitaliseret social- og beskæftigelsesindsats\nSynergi mellem social- og beskæftigelsesindsats\nVirkeligheden virker - virksomhedsrettet indsats\nBeskæftigelsesfaglighed\nKerneopgaven\nUdviklingsgrupperne afsluttede deres arbejde i september 2026 og afleverede deres anbefalinger til styregruppen for reformimplementeringen. Anbefalingerne er efterfølgende omsat til en fælles kerneopgave for JobHerning, der skal danne retning for den fremtidige social- og beskæftigelsesindsats.\nDen fælles kerneopgave er:\nAt skabe bæredygtige match mellem borgere og virksomheder.\nMed kerneopgaven som fælles rettesnor er fokus nu rettet mod implementeringen af de anbefalinger og forandringer, der skal omsætte ambitionerne til praksis i den daglige opgaveløsning.\nStatus på implementeringen\nDer arbejdes aktuelt med en medarbejderrettet publikation, som opsamler den fælles retning og kerneopgaven og anbefalingerne fra udviklingsgrupperne. Anbefalingerne omsættes samtidig til konkrete handlinger, som skal understøtte implementeringen. Publikationen præsenteres for medarbejderne på et fællesmøde den 29. oktober 2026, der markerer afslutningen på udviklingsfasen og starten på implementeringsfasen.\nDerudover igangsættes et kompetenceudviklingsforløb med fokus på den fremtidige rolle som beskæftigelseskonsulent. Beskæftigelsesreformen medfører den største faglige og organisatoriske omstilling af beskæftigelsesindsatsen i mange år. For langt de fleste medarbejdere vil reformen betyde nye opgaver, nye samarbejdsformer og nye kompetencekrav. Implementeringen handler derfor ikke alene om at etablere nye indsatser og\n\narbejdsgange, men om at gennemføre en omfattende organisations-, kompetence- og kulturforandring på tværs af JobHerning. Fremover skal beskæftigelseskonsulenterne i højere grad kunne kombinere beskæftigelsesfaglig viden, virksomhedsrettede indsatser, digitale løsninger og et helhedsorienteret samarbejde med borgeren. Formålet med kompetenceudviklingsforløbet er derfor at understøtte medarbejdernes kompetencer i relation til at varetage den nye rolle og sikre et fælles fagligt fundament for den fremtidige indsats. Flere aktører bidrager som ekstern samarbejdspartner til udvikling og gennemførelse af forløbet, som forventes igangsat i vinteren 2026/2027.\nImplementeringen omsættes nu til konkrete forandringer for både medarbejdere, borgere og virksomheder. Det sker blandt andet gennem en styrket virksomhedsservice og øget digital understøttelse af indsatsen.\nSom led i reformen udvikles den virksomhedsrettede indsats fra flere indgange og enkeltstående kontakter til en mere samlet og koordineret virksomhedsservice. Virksomhederne vil opleve én samlet indgang til JobHerning og et tydeligere serviceniveau, som gør det lettere at få hjælp til rekruttering, opkvalificering og fastholdelse af medarbejdere. Samtidig anbefaler udviklingsgrupperne, at der arbejdes videre med en samlet strategisk ramme for indsatsen, der skal understøtte stærkere partnerskaber med virksomheder og styrke samarbejdet om at skabe flere veje til arbejdsmarkedet. Administrationen indstiller på den baggrund, at arbejdet videreføres i den kommende implementeringsfase.\nEndvidere er der allerede iværksat en række digitaliseringsinitiativer, herunder etableringen af JobHerning Digital samt anvendelse af AI-understøttelse i sagsbehandlingen. Digitalisering skal understøtte reformens intention om, at borgere med mindst behov for støtte i højere grad kan modtage en digital indsats, mens medarbejdernes tid målrettes borgere med de mest komplekse behov. Samtidig skal de digitale løsninger bidrage til øget kvalitet, fleksibilitet og tilgængelighed i indsatsen over for både borgere og virksomheder.\nPå udvalgsmødet vil administrationen give en mundtlig præsentation af den nye social- og beskæftigelsesindsats, og fremhæve de lokale politiske valg og prioriteringer i Herning.\nAdministrationen følger løbende implementeringens betydning for medarbejderne tæt. På udvalgsmødet i november 2026 orienteres Beskæftigelsesudvalget derfor om status på implementeringen, herunder medarbejdernes oplevelse af omstillingen, sygefravær og medarbejderomsætning. Repræsentanter fra Sektor-MED vil bidrage med deres perspektiver på den igangværende omstilling."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR SOCIAL, SUNDHED OG BESKÆFTIGELSE INDSTILLER\nat Beskæftigelsesudvalget orienteres om resultatet af udviklingsprocessen\nat Beskæftigelsesudvalget godkender, at der arbejdes videre med en strategi for den virksomhedsrettede indsats og partnerskaber med nye virksomheder\nat Beskæftigelsesudvalget drøfter de næste politiske skridt i omsætningen af beskæftigelsesreformen i kobling til byrådets ambitioner."
-    }
-   ],
-   "bilag": []
-  },
   "herning-2026-10-20-beskaeftigelsesudvalget-2": {
    "id": "herning-2026-10-20-beskaeftigelsesudvalget-2",
    "kommune": "Herning",
    "udvalg": "Beskæftigelsesudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.herning.dk/vis?id=99c991af-64c1-44e8-b63f-0e6e3c89780e",
-   "hentet": "2026-10-18T21:35:58.255Z",
-   "titel": "Budgetopfølgning pr. 31. august 2026 på Beskæftigelsesudvalgets område",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "Administrationen har foretaget budgetopfølgning på baggrund af forbruget pr. 31. august 2026 på Beskæftigelsesudvalgets område.\nOverførslerne fra 2025 er godkendt i Byrådet den 21. april 2026 og indgår dermed i det korrigerede budget pr. 31. august 2025.\nSamlet set forventes der i 2026 i forhold til de korrigerede budgetter inkl. overførsler fra 2025 et merforbrug på 22,1 mio. kr. vedrørende drift.\nOpfølgningen indgår i den samlede budgetopfølgning pr. 31. august 2026, som behandles i Økonomi-, Erhvervs- og Uddannelsesudvalget den 2. november 2026 henholdsvis Byrådet den 10. november 2026."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Budgetopfølgningen er foretaget af administrationen på baggrund af det konstaterede forbrug pr. 31. august 2026.\nI nedenstående tabeller bliver afvigelsen generelt målt som forventet regnskab 2026 (forventet forbrug ved årets afslutning) sammenlignet med det korrigerede budget 2026 pr. 31. august.\nDe afvigelser der beskrives i sagen, er afvigelsen pr. 31. august 2026 ift. det korrigerede budget.\nDriftsudgifter:\nTabel 1: Forventet regnskab 2026 – drift:\n\nSom det fremgår af ovenstående, forventes i 2026 en samlet afvigelse vedrørende drift på 22,1 mio. kr. Afvigelsen dækker over både områder indenfor og henholdsvis udenfor rammestyrin g samt projekter. Specifikation fremgår af tabellen nedenfor. Tabel 2: Forventet afvigelse 2026, drift – fordeling:\nSupplerende opstilling:\nBemærkninger til afvigelserne: Det forventede regnskab på serviceområdet er baseret på følgende forhold og opdelt på udgiftstyper, da finansieringen er forskellig og områderne er underlagt forskellige styringsmekanismer. Servicedriftsudgifter: Servicedriftsudgifter er også på SO17 omfattet af den kommunale serviceramme og sanktionslovgivning med kompensation via bloktilskuddet. Det forventede\n\nregnskab viser et forventet forbrug, der er 7,6 mio. kr. lavere end budgetteret. De væsentligste afvigelser er:\nMindreforbrug på i alt 3,0 mio. kr. vedrørende Uddannelses- og erhvervsvejledning. Mindreforbruget skyldes at der på denne funktion er placeret genbevillinger fra 2025, som ikke forventes fuldt anvendt i 2026.\nMindreforbrug på i alt 2,8 mio. kr. vedrørende FGU. Mindre forbruget skyldes en lavere takst end sidste år og lidt færre FGU-elever end sidste år.\nMindreforbrug på 2,2 mio. kr. vedr. øvrige sociale formål. Mindreforbruget skyldes at der ikke er igangsat nye initiativer fra Beskæftigelsesudvalgets pulje til øvrige sociale formål i løbet af 2026.\nMerforbrug på 2,1 mio. kr. vedrørende §107 botilbud. Merforbruget skyldes en stigning i antallet af forløb, som følge af bevillinger foretaget i 2025. Dog skal dette merforbrug ses i sammenhæng med §110 (forsorgshjem), hvor der er mindreforbrug på 0,4 mio. kr.\nBudgetgaranti og øvrige overførsler i alt: Udgifterne under dette dækker både udgifter, som er dækket under budgetgarantien, hvor kommunerne under ét bliver kompenseret krone for krone for udgifterne, samt øvrige overførsler, der dækker over omkostninger, der dækkes via økonomiaftalen mellem KL og regeringen. Det forventede regnskab viser et forventet forbrug, der er 29,7 mio. kr. højere end budgettet efter udmøntning af midtvejsreguleringen. Udgiftsniveauet i denne opfølgning svarer cirka til den midtvejsvurdering, som KL har opgjort på overførselsudgifterne for Herning Kommune, og som midtvejsreguleringen på 9,9 mio. kr. er udmøntet på baggrund af. De væsentligste afvigelser er:\nMerforbrug på 20,1 mio. kr. på Førtidspension tilkendt før 1/7 2014. Merforbruget skyldes en højere pris pr. ydelsesmodtager end budgetteret og et lidt mindre frafald end budgetteret af ydelsesmodtagere.\nMerforbrug på 10,3 mio. kr. på Sociale formål (STU). Der forventes et merforbrug på STU grundet primært et stigende antal elever.\nMindreforbrug på 5,6 mio. kr. på Ressourceforløb og Jobafklaringsforløb. Mindreforbruget skyldes et lavere antal ydelsesmodtagere i begge forløbstyper.\nMerforbrug på 4,6 mio. kr. på Kontanthjælp mv. Merforbruget skyldes især et større antal i forhold til budgettet af integrationsborgere og kontanthjælpsmodtagere uden for program.\nHjemtagelse af resultattilskud:\nAdministrationen har undersøgt uudnyttet potentiale og derfor indkøbt et nyt system til blandt andet hjemtagelse af resultattilskud på integrationsområdet. De indledende analyser peger på et væsentligt uforløst indtægtspotentiale. Omfanget kvalificeres fortsat og forventes afklaret nærmere i den kommende periode.\nAntal personer på offentlig forsørgelse:\nI nedenstående tabel fremgår antallet af offentligt forsørgede opgjort som fuldtidspersoner, samt enhedspriser. Dels som forudsat ved budgetlægning i det vedtagne budget og dels som\n\nforudsat i det forventede regnskab pr. 31. marts 2026 og 31. august 2026: Administrationen har undersøgt uudnyttet potentiale og derfor indkøbt et nyt system til blandt andet hjemtagelse af resultattilskud på integrationsområdet. De indledende analyser peger på et væsentligt uforløst indtægtspotentiale. Omfanget kvalificeres fortsat og forventes afklaret nærmere i den kommende periode.\nAnlægsudgifter: Tabel 3: Forventet regnskab 2026 – anlæg:\nSom det fremgår af ovenstående, forventes i 2026 en samlet afvigelse vedrørende anlæg på 0 mio. kr. Anlægsbudgettet for Serviceområde 17 vedrører projektet Ny Varmestue, Herberg og Skæve boliger. Anlægsregnskabet blev godkendt på Byrådsmødet den 18. december 2025. Den forventede indtægt pr. 31. august 2026 på 4,2 mio. kr. vedrører statsstøtte til skæve boliger på 4,0 mio. kr. og støtte til opførelse af vaskeri, 0,2 mio. kr. Indtægten er tilgået Herning kommune i april 2026. Bevillingsmæssige ændringer: Der ønskes i forbindelse med budgetopfølgningen pr. 31. august 2026 foretaget følgende bevillingsmæssige ændringer: Opioid Projekt: Som følge af et modtaget tilsagn om yderligere tilskud fra Social- og Boligstyrelsen indstilles\n\ndet, at der meddeles en indtægtsbevilling og en tilsvarende udgiftsbevilling på i alt 1,260 mio. kr. i 2026 under Serviceområde 17 Forsørgelse og Beskæftigelse, funktion 05.28.21, profitcenter 5305030301. Tilskuddet blev behandlet i udvalget den 11. august 2026. I forbindelse med budgetopfølgningen pr. 31. august 2026 ønskes følgende bevillingsmæssige ændringer foretaget:\n\nÅr Beløb\n\nStyrkelse af kommunale alkoholbehandling:\n\nSundheds- og Kirkeministeriet har givet JobHerning, herunder Rusmiddelcentret, tilsagn om et\n\ntilskud. Derfor indstilles det, at der meddeles en indtægtsbevilling og en tilsvarende\n\nudgiftsbevilling på 0,490 mio. kroner i 2026, 2027 og 2028. Tilskuddet for de efterfølgende år\n\nforudsætter dog bevillingens optagelse på finansloven i de enkelte år. Tilskuddet skal gå til\n\ndøgnbehandling af borgere med alkoholproblematik og samtidig psykisk lidelse, så flere kan få\n\net samlet og mere intensivt behandlingsforløb. For mere information er tilsagnet vedhæftet som\n\nbilag. Tilskuddet konteres på funktion 05.38.44, profitcenter 5305030211.\n\nÅr\n\nBeløb\n\nStraksmidler til styrket gadeplan indsats: Social- og Boligstyrelsen har givet JobHerning, herunder Rusmiddelcentret, tilsagn om et tilskud. Tilskuddet skal styrke det udgående og opsøgende gadeplansarbejde i socialpsykiatrien. Tilskuddet lyder på 0,715 mio. kr. i 2026 og 2027. Tilskuddet for 2027 forudsætter dog bevillingens optagelse på finansloven. Formålet med tilskuddet er at styrke det udgående og opsøgende gadeplansarbejde i socialpsykiatrien, så de mest udsatte mennesker får en bedre og mere opsøgende indsats og dermed hurtigt bliver hjulpet videre til de rette tilbud og får den nødvendige hjælp. Orientering om tilskuddet blev behandlet på udvalgsmødet 22. september 2026. Tilskuddet konteres på funktion 05.38.53, profitcenter 5304030001.\n\nÅr Beløb"
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "DIREKTØREN FOR SOCIAL, SUNDHED OG BESKÆFTIGELSE INDSTILLER\nat Beskæftigelsesudvalget godkender de anførte bevillingsmæssige ændringer jf. sagsfremstillingen\nat budgetopfølgningen pr. 31. august 2026 i øvrigt tages til efterretning og indgår i den samlede budgetopfølgning, som behandles i Økonomi-, Erhvervs- og Uddannelsesudvalget den 2. november 2026 og henholdsvis i Byrådet den 10. november 2026."
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-10-20-beskaeftigelsesudvalget-3": {
-   "id": "herning-2026-10-20-beskaeftigelsesudvalget-3",
-   "kommune": "Herning",
-   "udvalg": "Beskæftigelsesudvalget",
-   "dato": "2026-10-20",
-   "type": "dagsorden",
-   "nr": 3,
-   "kilde": "https://dagsordener.herning.dk/vis?id=99c991af-64c1-44e8-b63f-0e6e3c89780e",
-   "hentet": "2026-10-18T21:35:58.255Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=053669d9-15c1-46b1-9d99-51708fabe0ec",
+   "hentet": "2026-10-21T10:35:18.676Z",
    "titel": "Udbud Danskuddannelse 2027",
    "afsnit": [
     {
@@ -8790,6 +8385,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR SOCIAL, SUNDHED OG BESKÆFTIGELSE INDSTILLER\nat Beskæftigelsesudvalget med afsæt i danskuddannelseslovens formål drøfter de\n\noverordnede politiske ambitioner for det kommende udbud at Beskæftigelsesudvalget godkender tids- og procesplan for udbuddet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
     }
    ],
    "bilag": []
@@ -8799,28 +8398,10 @@
    "kommune": "Herning",
    "udvalg": "Beskæftigelsesudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.herning.dk/vis?id=99c991af-64c1-44e8-b63f-0e6e3c89780e",
-   "hentet": "2026-10-18T21:35:58.255Z",
-   "titel": "Meddelelser til og fra formanden og udvalgets medlemmer",
-   "afsnit": [
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nSagsbehandler: Øvrige sagsbehandlere: -"
-    }
-   ],
-   "bilag": []
-  },
-  "herning-2026-10-20-beskaeftigelsesudvalget-7": {
-   "id": "herning-2026-10-20-beskaeftigelsesudvalget-7",
-   "kommune": "Herning",
-   "udvalg": "Beskæftigelsesudvalget",
-   "dato": "2026-10-20",
-   "type": "dagsorden",
-   "nr": 7,
-   "kilde": "https://dagsordener.herning.dk/vis?id=99c991af-64c1-44e8-b63f-0e6e3c89780e",
-   "hentet": "2026-10-18T21:35:58.255Z",
+   "kilde": "https://dagsordener.herning.dk/vis?id=053669d9-15c1-46b1-9d99-51708fabe0ec",
+   "hentet": "2026-10-21T10:35:18.676Z",
    "titel": "Generel orientering fra administrationen",
    "afsnit": [
     {
@@ -8834,24 +8415,28 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR SOCIAL, SUNDHED OG BESKÆFTIGELSE INDSTILLER\nat orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
   },
-  "herning-2026-10-20-beskaeftigelsesudvalget-8": {
-   "id": "herning-2026-10-20-beskaeftigelsesudvalget-8",
+  "herning-2026-10-20-beskaeftigelsesudvalget-7": {
+   "id": "herning-2026-10-20-beskaeftigelsesudvalget-7",
    "kommune": "Herning",
    "udvalg": "Beskæftigelsesudvalget",
    "dato": "2026-10-20",
-   "type": "dagsorden",
-   "nr": 8,
-   "kilde": "https://dagsordener.herning.dk/vis?id=99c991af-64c1-44e8-b63f-0e6e3c89780e",
-   "hentet": "2026-10-18T21:35:58.255Z",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.herning.dk/vis?id=053669d9-15c1-46b1-9d99-51708fabe0ec",
+   "hentet": "2026-10-21T10:35:18.676Z",
    "titel": "Underskrift af digital beslutningsprotokol",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nX\n\nSagsbehandler: -\nØvrige sagsbehandlere: Sagsfremstilling Beskæftigelsesudvalget skal godkende beslutningsprotokollen.\n\nBeslutningsprotokollen underskrives ved at trykke på ”Godkend” i First Agenda."
+     "titel": "Beslutning",
+     "tekst": "Underskrevet"
     }
    ],
    "bilag": []
@@ -9445,6 +9030,644 @@
     }
    ],
    "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-2": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-2",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Orientering om gennemførsel af vandområdeplansprojekter",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Herning Kommune arbejder med gennemførelse af de vandløbsindsatser, som staten har udpeget i vandområdeplanerne som led i implementering af EU's vandrammedirektiv.\nDer er aktuelt udpeget 96 vandløbsindsatser i Herning Kommune fordelt på Vandområdeplan 2015-2021, Vandområdeplan 2021-2027 og genbesøget af Vandområdeplan 2021-2027. Der er gennemført forundersøgelser for 28 indsatser og realiseret 17 indsatser. Der resterer fortsat 79 indsatser, som skal være realiserede inden 2033.\nHerning Kommune har aktuelt tilsagn til forundersøgelse af 3 indsatser og tilsagn til realisering af 4 indsatser. Samtidig forventes den kommende Vandområdeplan 20272033 (VP4) at tilføre yderligere indsatser.\nForvaltningen anbefaler, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Vandområdeplanerne er statens planlægningsredskab til at sikre, at vandløb, søer, kystvande og grundvand opnår god miljøtilstand i overensstemmelse med EU's vandrammedirektiv. Staten finansierer og udpeger de nødvendige indsatser, mens kommunerne har ansvaret for selve gennemførslen af projekterne i vandløbene inden for vandområdeplanernes planperioder. Vandområdeplansprojekterne er dermed en lovbundet kommunal opgave.\nVandløbsprojekterne omfatter blandt andet fjernelse af spærringer, restaurering af vandløb og andre fysiske forbedringer, der skal styrke de økologiske forhold i vandløbene. Projekterne gennemføres som udgangspunkt i to faser bestående af en forundersøgelse og efterfølgende realisering.\nHerning Kommune arbejder aktuelt med vandløbsindsatser fra Vandområdeplan 2015-2021 (VP2), Vandområdeplan 2021-2027 (VP3) og genbesøget af Vandområdeplan 2021-2027 (VP3-II). Der er samlet set udpeget 96 indsatser i Herning Kommune, der skal være realiseret inden 2033.\n\nDet skal dog bemærkes, at vandområdeplanprojekterne finansieres gennem to forskellige tilskudsordninger: en national og en EU-tilskudsordning. EU-tilskudsordningen lukker for modtagelsen af nye ansøgninger i 2027, hvilket vil sige, at alle projekter tilhørende denne tilskudsordning skal være søgt inden da, og at alle udgifter til projekterne senest skal være afholdt og betalt den 31. december 2029 for at være berettiget til EU-støtte. Det drejer sig om ca. 25 ud af de 96 indsatser i Herning Kommune. Forvaltningen vurderer, at det vil blive meget svært at nå dette særskilte krav inden tidsfristen. Forvaltningen håndterer dette ved at førsteprioritere denne projektportefølje og ikke opstarte flere projekter, end kommunen kan nå at få udbetalt støtte til. Derudover må det antages, at resterende EU-projekter overføres til den nationale pulje efterfølgende. Dette er dog ikke udmeldt fra statens side endnu.\nStatus for indsatserne fremgår af nedenstående tabel. Det bemærkes, at projekterne i VP2perioden indeholder enkelte ikke-afsluttede projekter fra den første Vandområdeplan (VP1, 2010-2015). Disse er ikke fremhævet særskilt i tabellen.\n\nVandområdeplan\n\nIndsatser\n\nGennemførte forundersøgelser\n\nGennemførte realiseringer\n\nRest forundersøgelser\n\nRest realiseringer\n\nVP3-II (genbesøg)\n\nI alt\n\nDer er gennemført forundersøgelser for 28 indsatser og realiseret 17 indsatser. Der resterer på nuværende tidspunkt 68 forundersøgelser og 79 realiseringer. Se vedlagte bilag for oversigtskort over Herning Kommune.\nHerning Kommune har aktuelt tilsagn til forundersøgelse af 3 indsatser og tilsagn til realisering af 4 indsatser. Der arbejdes således aktivt med 9 projekter, samtidig med at tidligere projekter afsluttes og afrapporteres.\nDer er desuden stigende overlap mellem vandløbsindsatserne og vådområdeprojekter under Grøn Trepart. Dette giver mulighed for at sammentænke indsatser for vandmiljø, natur og klima, men kan i nogle tilfælde også påvirke tidspunktet for gennemførelse af de enkelte vandplanprojekter og potentielt blive en udfordring i forhold til tidsfristen i 2033.\nForvaltningen forventer, at den kommende Vandområdeplan 2027-2033 (VP4) vil tilføre yderligere indsatser, samtidig med at ikke gennemførte projekter fra tidligere planperioder forventes videreført. Staten har udmeldt, at udkast til vandområdeplanerne for VP4 vil blive\n\nudsendt i 6 måneders offentlig høring den 22. december 2026. Forvaltningen forventer at fremsætte et høringsforslag til politisk behandling sidst på foråret i 2027. Den endelige vedtagelse og offentliggørelse af VP4 sker 22. december 2027."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Vandområdeplansprojekterne finansieres af staten og EU gennem de gældende tilskudsordninger for vandområdeplansindsatser. Hertil kommer et mindre varierende årligt DUT bidrag, der i 2026 er på 363.000 kr. Tilskuddene dækker udgifter til både forundersøgelser og realisering af projekterne."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat orientering tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen er taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-3": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-3",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Frigivelse af anlægsbevilling til gennemførelse af vandområdeplansprojekt i Rind Å (Ålekisten), nord for Arnborg",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I Vandområdeplan 2021 - 2027 for vandområdedistrikt Jylland og Fyn er det angivet, at der skal fjernes en spærring i Rind Å, da vandløbet ikke opfylder kravet om god økologisk tilstand og fri faunapassage.\nHerning Kommune har gennemført en forundersøgelse af projektet, og i den forbindelse er der lavet et projektforslag.\nAnlægsarbejdet samt detailprojekteringen er fuldt finansieret via den europæiske tilskudsordning for vandløbsrestaurering (EHFAF) i tilknytning til vandområdeplanen. Styrelsen for Fødevarer, Landbrug og Fiskeri har meddelt Herning Kommune tilsagn om tilskud på i alt 7.801.625 kr. til projektet. Kommunen kan søge om udbetaling af tilskuddet, når projektet efter planen er gennemført.\nForvaltningen anbefaler, at der meddeles anlægsindtægts- og anlægsudgiftsbevilling på 7.802.000 kr. til tilskuddet og anlægsarbejdet ved Ålekisten i Rind Å."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I Vandområdeplan 2021 - 2027 er der i Herning Kommune udpeget en række vandløb eller delstrækninger af vandløb, hvor der skal ske indsatser i form af vandløbsrestaureringsprojekter. Dette gælder blandt andet Ålekisten i Rind Å.\nVandløbsrestaureringsindsatsen skal sikre god økologisk tilstand i vandløbet og skabe bedre levevilkår for fisk, alger, planter og smådyrsfauna. Den primære udfordring ved Ålekisten i Rind Å er manglende faunapassage for fisk. Derfor vil projektet fokusere på at etablere en løsning, der sikrer fri passage og forbedrer fiskenes muligheder for at vandre i vandløbet. Samtidig vil projektet skabe adgang til omkring 103 km sammenhængende vandløbssystem for vandløbets fisk og øvrige fauna.\nDer er tidligere gennemført en forundersøgelse, som indeholder forslag til, hvordan spærringen kan fjernes. Herning Kommune har siden fået tilsagn til at lave et detailprojekt samt at gennemføre anlægsprojektet.\n\nProjektet er fuldt finansieret gennem tilskud bestående af 70 % EU-midler via Den Europæiske Hav-, Fiskeri- og Akvakulturfond og 30 % nationale midler fra Landbrugs- og Fiskeristyrelsen. Projektområdet er beliggende nord for Arnborg. På nedenstående kort er spærringen markeret med en rød prik. Rind Å løber ud i Skjern Å, der er en del af Skjern Å–systemet, som afvander til Ringkøbing Fjord. Projektet har desuden stor synergi med den planlagte fjernelse af spærringen ved Forvirringen i Skjern Å i foråret 2027, idet de to projekter tilsammen vil skabe adgang til mere end 200 km vandløb og dermed væsentligt styrke muligheden for selvreproducerende bestande af vandrende fisk.\nKort: Projektområdet beliggende nord for Arnborg"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Kommuner kan søge tilskud til dækning af alle udgifter knyttet til forundersøgelser og gennemførelse af projekter via tilskudsordninger for vandløbsrestaureringsprojekter. Forvaltningen har søgt om tilskud og modtaget et tilsagn på 7.801.625 kr. til gennemførelse og detailprojektering af projektet. Tilsagnet dækker anlægsudgifter og detailprojektering af projektet. Forvaltningen anmoder om, at der meddeles henholdsvis anlægsindtægtsbevilling til tilskuddet samt tilsvarende anlægsudgiftsbevilling på 7.802.000 kr. på Serviceområde 04 Grønne områder, nyt profitcenter, Vandområdeplansprojekt Ålekisten – gennemførsel."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at der til tilskuddet meddeles anlægsindtægtsbevilling samt tilhørende rådighedsbeløb på\n\nat der til tilskuddet meddeles anlægsindtægtsbevilling samt tilhørende rådighedsbeløb på 7.802.000 kr. i 2026 på Serviceområde 04 Grønne områder, nyt profitcenter Vandområdeplansprojekt Ålekisten - gennemførsel\nat der til projektet meddeles anlægsudgiftsbevilling samt tilhørende rådighedsbeløb på 7.802.000 kr. i 2026 på Serviceområde 04 Grønne områder, nyt profitcenter Vandområdeplansprojekt Ålekisten - gennemførsel"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-4": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-4",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Godkendelse af anlægsregnskab for gennemførsel af vandløbsprojekt i Bæk N for Trøstrup Mark, syd for Timring",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der er udarbejdet afsluttende anlægsregnskab til projektgennemførsel for vandområdeplansprojektet Bæk N For Trøstrup Mark, syd for Timring.\nProjektet er gennemført som planlagt.\nUdgifterne i projektet er dækket af tilsagn fra Styrelsen for Grøn Arealomlægning og Vandmiljø.\nForvaltningen anbefaler, at anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der foreligger anlægsregnskab for gennemførsel af et vandområdeplansprojekt i Bæk N for Trøstrup Mark, profitcenter A220000039 på Serviceområde 04 Grønne Områder.\nByrådet bevilgede den 16. december 2025, punkt 194, 106.000 kr. til gennemførslen af vandområdeplansprojektet i Bæk N for Trøstrup Mark, syd for Timring. Forvaltningen havde forinden modtaget et tilsagn fra Styrelsen for Grøn Arealomlægning og Vandmiljø på ca. samme beløb til projektet.\nProjektet er gennemført som planlagt. Der er etableret en mindre genslyngning af vandløbet, etableret gydebanker, sandfang og udlagt fiskeskjul. Projektet blev udført i februar 2026.\nDer har generelt været positiv lodsejerinteresse gennem hele projektforløbet.\nI projektet er der registreret udgifter for i alt 103.884 kr.\nForvaltningen har ansøgt om og fået godkendt en udbetalingsanmodning på 103.884 kr. til projektet fra Styrelsen for Grøn Arealomlægning og Vandmiljø.\nBæk N for Trøstrup Mark ligger syd for Timring og er en del af Skjern Å-systemet.\n\nKort over projektområdet"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Profitcenter Anlæg\n\nU/I Bevilling Forbrug Forskel\n\n(kr.)\n\n(kr.)\n\n(kr.)\n\nA220000039 Vandområdeplansprojekt Bæk N for Trøstrup Mark - Gennemførsel\n\nI-\n\nN0\n\nAnlægsregnskabet vil blive optaget i Herning Kommunes årsregnskab og godkendt sammen med det samlede årsregnskab for 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-5": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-5",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Godkendelse af anlægsregnskab til forundersøgelse af vandløbsprojekt i Præstbjerg Bæk, nord for Ørnhøj",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der er udarbejdet afsluttende anlægsregnskab for forundersøgelse af vandområdeplansprojekt ved Præstbjerg Bæk, nord for Ørnhøj.\nForundersøgelsen har vist, at der kan gennemføres et projekt i vandløbet.\nUdgifterne i projektet er dækket af tilsagn fra Styrelsen for Grøn Arealomlægning og Vandmiljø.\nForvaltningen anbefaler, at anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der foreligger anlægsregnskab for forundersøgelse af et vandområdeplansprojekt i Præstbjerg Bæk, profitcenter A220000018 på Serviceområde 04 Grønne Områder.\nByrådet bevilgede den 19. december 2023, punkt 212, 88.000 kr. til forundersøgelsen af Præstbjerg Bæk. Forvaltningen havde forinden modtaget et tilsagn fra Styrelsen for Grøn Arealomlægning og Vandmiljø på 87.320 kr. til projektet.\nForundersøgelsen er gennemført som planlagt og resulterede i et projektforslag, der omfatter genslyngning, udlægning af gydebanker, udlægning af skjulesten, etablering af sandfang og udskiftning af en rørbro.\nForslaget er gennemgået med lodsejerne, og der er afholdt besigtigelser med interesserede lodsejere. Der har generelt været en positiv holdning til gennemførelse af projektet.\nNæste trin bliver at gennemføre projektet, når Styrelsen for Grøn Arealomlægning og Vandmiljø forventeligt giver tilsagn til at realisere projektet. Dette vil formentlig ske vinteren 2026/2027.\n\nKort: Projektområdet nord for Ørnhøj"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Profitcenter Anlæg\n\nU/I Bevilling Forbrug Forskel\n\n(kr.)\n\n(kr.)\n\n(kr.)\n\nA220000018 Vandområdeplansprojekt U i Præstbjerg Bæk, forundersøgelse\n\nN0\n\nForskellen i bevillingen og forbruget skyldes et lavere timeforbrug end forventet.\nAnlægsregnskabet vil blive optaget i Herning Kommunes årsregnskab og godkendt sammen med det samlede årsregnskab for 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-6": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-6",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Godkendelse af anlægsregnskab for klima-lavbundsprojekt ved Fejgsø Bæk, øst for Ørnhøj",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der er udarbejdet afsluttende anlægsregnskab for anlægsprojektet klima-lavbundsprojekt ved Fejgsø Bæk.\nForvaltningen anbefaler, at anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der foreligger anlægsregnskab for anlægsprojektet \"Klima-lavbundsprojekt ved Fejgsø Bæk\" på Serviceområde 04 Grønne områder, profitcenter A220000023.\nByrådet bevilgede den 4. oktober 2022, punkt 205, 2.956.000 kr. i anlægsudgifts- og indtægtsbevilling til gennemførelse af et klima-lavbundsprojekt ved Fejgsø Bæk, øst for Ørnhøj.\nDer er gennemført en forundersøgelse for klima-lavbundsprojektet ved Fejgsø (17,2 ha), og projektet er anlagt i august 2025.\nKlima-lavbundsprojektet omfatter følgende projekttiltag:\nAfbrydning af interne dræn Etablering af stuvende stryg Hævning af adgangsvej Etablering af terrænskrab\nProjektets primære formål er at reducere udledningen af drivhusgasser ved udtagning af kulstofrig landbrugsjord. Ved udtagning af kulstofrig landbrugsjord fra dyrkning og genskabelse af naturlig hy​drologi i området ved f.eks. afbrydning af dræn gøres området permanent eller periodevis vådere. De kulstofrige jorde iltes derved ikke længere, og nedbrydnin​gen af den kulstofrige jord bremses, hvorved udledning af drivhusgasser fra området mindskes.\nProjektet er først og fremmest et klimaprojekt og har en drivhusgasreduktion på 13,7 tons\n\nCO2-ækvivalenter/ha/år, svarende til 236 tons CO2 reduktion årligt for hele arealet. Det svarer omtrent til den årlige CO2 binding fra 24 ha ny skov. Den samlede reduktion i kvælstofudledningen fra projektet er på ca. 636 kg N, svarende til 37 kg N/ha, hvilket grundet projektets mindre størrelse svarer til ca. 0,2% af Herning Kommunes forventede andel af indsatsen på N-reduktionen (kvælstof) til Ringkøbing Fjord.\nProjektet er udført i tæt dialog med lodsejerne, der lægger jord til projekto​ mrådet.\n\nDronefoto: Projektområde ved Fejgsø Bæk"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Herning Kommune har haft følgende udgifter og indtægter i forbindelse med projektet (se økonomitabel).\nUdgifterne omfatter rådgiverydelse i forbindelse med forundersøgelse og detailprojektering, udgifter til entreprenør i forbindelse med anlægsarbejdet og udgifter til aflønning af eget personale.\nProjektet er fuldt finansieret via den statslige støtteordning om tilskud til klimalavbundsprojekter.\n\nProfitcenter Anlæg\n\nBevilling Forbrug\n\nkr.\n\nkr.\n\nForskel kr.\n\nKlima-lavbundsprojekt ved Fejgsø Bæk\n\nN0\n\nØkonomitabel: Klima-lavbundsprojekt Fejgsø Bæk\nDet samlede mindreforbrug skyldes, at projektets omkostninger blev væsentligt mindre end forventet, først og fremmest fordi staten overtog lodsejererstatningen, der indledningsvis indgik i kommunens projektøkonomi.\nForskellen mellem indtægt og udgifter svarende til en merindtægt på 6.745 kr. skyldes, at kommunen, i forbindelse med udbetalingen af midler fra den statslige støtteordning om tilskud til klima-lavbundsprojekter, har fået udbetalt overheads, svarende til 15 % af lønudgifterne til aflønning af kommunens eget personale.\nAnlægsregnskabet vil blive optaget i Herning Kommunes årsregnskab og godkendt sammen med det samlede regnskab for 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat anlægsregnskabet godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-7": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-7",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Godkendelse af mindre anlæg samt retningslinjer for udlån af kommunale grønne arealer langs Fuglsang Søfront",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forvaltningen har modtaget en ansøgning om etablering af en mindre platform på kommunalt areal i den sydlige ende af Fuglsang Søfront. Anlægget skal give adgang til vandet fra promenaden. I den forbindelse har forvaltningen udarbejdet et udkast til retningslinjer for udlån af kommunalt areal langs Søfronten.\nForvaltningen anbefaler, at udvalget tager stilling til, om det ansøgte anlæg og retningslinjerne kan godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den private udvikler af det nye boligområde ved Fuglsang Allé, beliggende ved Fuglsang Sø, har ansøgt om at etablere en platform på 1,20 x 3 m med en stige på siden af søens kant (spunsen), så det er muligt at komme i og op af vandet fra den offentlige promenade langs Fuglsang Søfront.\nAnlægget ønskes placeret ud for boligområdets sauna, men vil være frit tilgængeligt for offentligheden.\n\nFoto som viser platformens placering ved Fuglsang Sø\nMed henblik på at fremme brugen af kommunens grønne områder stiller forvaltningen arealer til rådighed for anlæg og arrangementer, så længe de er frit tilgængelige for offentligheden og i øvrigt understøtter områdets karakter og formål samt overholder anden lovgivning og regler, herunder lokalplan, naturbeskyttelseslov og kommunalfuldmagtsreglerne.\nLokalplanen for området, 41.OF20.1., giver blandt andet i anvendelsesbestemmelserne mulighed for, at der kan etableres anlæg til rekreative formål, såsom bade- og bådebroer (§ 3.3).\nFuglsang Sø er beskyttet efter naturbeskyttelseslovens § 3. Forvaltningen vurderer, at platformen som beskrevet i det konkrete tilfælde ikke forudsætter en dispensation.\nI forhold til kommunalfuldmagtsreglerne kan kommunerne vederlagsfrit udleje (det vil sige udlåne) arealer til for eksempel folkeoplysende, kulturelle, sundhedsfremmende, velgørende, politiske eller religiøse aktiviteter, som ikke har kommercielle formål.\nDerudover har forvaltningen foretaget en vurdering af, hvad der i øvrigt kan etableres af anlæg langs Fuglsang Søfront i tilfælde af, at der skulle komme flere ansøgninger. Forvaltningen har udarbejdet et forslag til retningslinjer for anlæg og aktiviteter ved Fuglsang Søfront. Forvaltningen anbefaler, at eventuelt kommende ansøgninger i lighed med den aktuelle ansøgning vil skulle følge disse retningslinjer:\n1. Anlæg skal være frit tilgængeligt for offentligheden og må ikke være til hinder for den frie færdsel på det kommunale areal langs Fuglsang Sø.\n\n2. Der må være maksimalt 6 anlæg langs hele den bebyggede søkant, og der skal være minimum 75 m imellem hvert anlæg.\n3. Anlæg skal placeres i forbindelse med andre bygningsværker henvendt til søen, og anlæggets funktion skal være henvendt til søen.\n4. Anlæg bør formgivnings- og materialemæssigt udformes, så de fremtræder ensartede og samlet kan ses som en sammenhængende helhed, for eksempel ved brug af træ og stål som allerede anvendt i området.\n5. Broer, platforme og lignende må som udgangspunkt have en størrelse på maksimalt 1,5 x 3 m.\n6. For at beskytte vandkvaliteten i søen skal anlæg udføres i miljøvenlige materialer, der ikke medfører risiko for forurening, det vil sige i rent træ uden imprægnering, maling eller lignende eller i NTR-/DK-mærket imprægneret træ. Broer må forsynes med skridsikkert underlag i neutrale, naturlige farver (brun, sort, mørkegrøn m.v.). Der må kun bruges miljøvenlige rengøringsmidler, som ikke indeholder forurenende stoffer, til rengøring af anlæg.\n7. Etablering, drift og fjernelse af et anlæg påhviler initiativtager til eller ejer af anlægget.\n8. Konkrete vederlagsfrie lejeaftaler/udlånsaftaler for anlæg ved Fuglsang Søfront vil, i lighed med andre udlånsaftaler for anlæg på et offentligt grønt område, indeholde vilkår, som skal sikre ovenstående (herunder vilkår om drift og vedligehold, opsigelse af aftale m.m.)\n9. Anlæg kan kun etableres, når de er godkendt af Herning Kommune.\nDet bemærkes, at der gælder særlige retningslinjer for færdsel på søen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der forventes ingen kommunale udgifter til etablering, drift eller fjernelse af det ansøgte anlæg langs Fuglsang Søfront."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat udvalget godkender de foreslåede retningslinjer for etablering af mindre anlæg langs Fuglsang Søfront\n\nat udvalget godkender ansøgningen om etablering af platform med stige placeret ved Fuglsang Søfront ud for matrikel nr. 15bq Tjørring, Herning Jorder, under hensyn til de beskrevne retningslinjer."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt, dog suppleret med mindre præciseringer til afstand og ensartet udformning af anlæg i søen."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-8": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-8",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 8,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Orientering fra møde i Grønt Råd 11. juni 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der har været holdt møde i Grønt Råd den 11. juni 2026. Forvaltningen anbefaler, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der var 4 punkter på dagsordenen til mødet den 11. juni 2026:\n1. Recertificering af Herning Kommunes klimaplan 2. Tørkeplan 3. Skovrejsning i kommuneplanudpegningerne 4. Grøn Trepart - status Referat fra mødet er vedlagt som bilag."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen er taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-9": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-9",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 9,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Renovationsgebyrer 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Renovationsområdet er gebyrfinansieret og skal \"hvile i sig selv\". Gebyrerne fastsættes derfor ud fra de forventede udgifter.\nFra 2025 skal producenterne betale en del af kommunernes udgifter til indsamling og behandling af emballageaffald, mens kommunerne fortsat skal opkræve betaling via renovationsgebyret for den andel af affaldet, der ikke er emballageaffald. Det er imidlertid usikkert, hvor stor en del af Herning Kommunes udgifter, der bliver dækket af producentansvaret. Samtidig har Herning Kommune indsendt et krav til Skat om tilbagebetaling af moms og afventer stadig afgørelsen på denne sag.\nForvaltningen har på denne baggrund beregnet tre forslag til renovationsgebyrer for 2027. Forslagene tager udgangspunkt i, at producentansvaret dækker henholdsvis 62,5 % eller 95 % af udgifterne til emballageaffald, hvor det tredje forslag også er beregnet med en dækning på 95 %, men hvor der er tilføjet en reduktion i gebyret til øvrige ordninger på 75 kr., som en tilbagebetaling på tidligere for meget indbetalt moms.\nFor en typisk husstand betyder forslagene, at det samlede årlige renovationsgebyr i:\nforslag 1 stiger med 197 kr. til 2.521 kr. ved en dækning på 62,5 %.\nforslag 2 stiger med 75 kr. til 2.399 kr. ved en dækning på 95 %.\nforslag 3 fastholdes på den nuværende samlede pris på 2.324 kr.\nForvaltningen anbefaler, at der vælges ét af de tre forslag til renovationsgebyrer for 2027, at renovationsgebyrerne for erhverv fortsat fastsættes til markedspriser svarende til gebyrerne for private husstande plus 5 %, at kommunale institutioner fortsat opkræves markedspriser for det forbrændingsegnede affald, samt at genbrugspladsgebyret for erhverv forhøjes fra 150 kr. til 200 kr. ekskl. moms pr. besøg, da det nuværende genbrugspladsgebyr ikke dækker de faktiske omkostninger."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Private husstande\nRenovationsgebyrerne for private husstande er opdelt i følgende gebyrer:\nGebyr pr. affaldsbeholder (typisk 2 beholdere pr. husstand) Gebyr til øvrige ordninger (genbrugspladser, glascontainere, storskrald og farligt affald) Gebyr til fælles udgifter (affaldsplan, regulativer og information)\nUdgifterne til affaldsbehandling er generelt stigende. Samtidig er der usikkerhed om, hvor stor en del af udgifterne til emballageaffald der bliver dækket af det udvidede producentansvar. Herning Kommune har indsendt et momskrav til Skat, hvor sagen forventes afgjort senest i 2027.\nProducentansvaret betyder, at producenterne via kollektive ordninger skal betale kommunernes udgifter til indsamling og behandling af emballageaffald. Kommunens øvrige udgifter til affaldsordningerne skal fortsat dækkes af renovationsgebyrerne.\nPå nuværende tidspunkt dækkes 62,5 % af udgifterne til emballageaffald af producentansvaret. Lovgivningen forventes ændret, så en større del af udgifterne bliver dækket, og hvor Herning Kommune forventer at få dækket 95 %. Da den endelige kompensation endnu ikke kendes, ligesom at momskravet endnu ikke er afgjort, er der beregnet tre forslag til renovationsgebyrer for 2027.\nDe nye beregninger af gebyrerne viser, at for at dække de forventede udgifter på renovationsområdet fratrukket kompensationen fra producentansvaret, skal der ske en tilpasning af gebyrerne.\nGebyr for en typisk husstand\nEn typisk husstand har to todelte affaldsbeholdere på hver 240 liter. Gebyret er momsfrit.\nForslag til gebyrer for en typisk husstand fremgår af skemaet nedenfor.\n\nAffaldsgebyrer typisk husstand kr./år\n\nForslag Forslag Forslag\n\n240 l affaldsbeholder til mad- og restaffald - 14 dages tømning\n\n240 l affaldsbeholder til papir/pap + metal/plast/mad- og drikkekartoner - 412 3 ugers tømning\n\nØvrige ordninger (genbrugspladser, glascontainere, storskrald og farligt 801 affald)\n\nFælles udgifter (affaldsplan, regulativer og information)\n\nI alt\n\nÆndring i forhold til 2026\n\nDe tre forslag bygger på følgende forudsætninger:\nForslag 1 er beregnet ud fra, at det udvidede producentansvar dækker 62,5 % af udgifterne til emballageaffaldet, hvilket svarer til den gældende lovgivning.\n\nForslag 2 er beregnet ud fra, at det udvidede producentansvar dækker 95 % af udgifterne til emballageaffaldet, hvilket er et optimistisk, men ikke urealistisk skøn, da Herning Kommune har lave omkostninger på renovationsområdet sammenlignet med andre kommuner.\n\nForslag 3 er beregnet ud fra, at det udvidede producentansvar dækker 95 % af udgifterne til emballageaffaldet samtidig med, at gebyrer til øvrige ordninger reduceres med 75 kr., således at det samlede renovationsgebyr for en typisk husstand fastholdes på samme niveau som i 2026. De 75 kr. svarer til i alt ca. 3,3 mio. kr. og finansieres af den forventede tilbagebetaling af momskravet.\nHerning Kommune havde i 2026 Danmarks laveste samlede renovationsgebyr for en typisk husstand, og selv med de anbefalede reguleringer af gebyrerne forventes Herning Kommune fortsat at være blandt de billigste kommuner.\nForvaltningen anbefaler, at renovationsgebyrerne tilpasses de forventede udgifter, og at der vælges ét af de tre forslag (bilag 1).\nErhvervsaffald\nHerning Kommune har siden 2023 tilbudt virksomheder at få indsamlet visse typer erhvervsaffald, når affaldet i art og mængde svarer til affaldet fra en husstand.\nOrdningen skal tilbydes til markedspriser. Byrådet besluttede den 15. november 2022, punkt 227, at erhverv skal betale et gebyr svarende til gebyret for private husstande plus 5 %. Forsyningstilsynets retningslinjer angiver, at erhverv skal betale den faktiske kostpris plus 5 15 %.\nDet er frivilligt for virksomhederne, om de vil benytte den kommunale affaldsordning eller en privat ordning. Gebyrerne er momspligtige, og der er udarbejdet en særskilt takstoversigt for erhverv. Overskuddet fra tillægget på erhvervsgebyrerne skal overføres til det skattefinansierede område.\n\nForvaltningen anbefaler, at gebyrerne fortsat fastsættes til priserne for private husstande plus 5 %, og at erhvervsgebyrerne i bilag 2 godkendes.\nGenbrugspladsgebyr for erhverv\nErhverv betaler ikke gebyr til øvrige ordninger eller fælles udgifter. I stedet betaler virksomhederne 150 kr. ekskl. moms pr. besøg på genbrugspladserne.\nDette gebyr har været uændret siden 2007. Beregningerne viser, at det nuværende gebyr ikke dækker omkostningerne til erhvervsaffald.\nForvaltningen anbefaler, at gebyret forhøjes til 200 kr. ekskl. moms pr. besøg.\nKommunale institutioner og virksomheder\nAffald fra kommunens egne institutioner og virksomheder skal betragtes som erhvervsaffald.\nForsyningstilsynet har tidligere i en række sager i andre kommuner tydeliggjort, at de kommunale institutioner og virksomheder skal betale markedspriser for det forbrændingsegnede affald. Genanvendeligt affald kan fortsat indsamles til samme priser som for private borgere.\nDer skal derfor fastsættes særskilte gebyrer for det forbrændingsegnede affald (restaffaldet) for de kommunale institutioner og virksomheder.\nForvaltningen anbefaler, at gebyrerne for kommunale institutioner godkendes (bilag 1).\nMomskrav\nHerning Kommune afventer fortsat Skats behandling af det indsendte momskrav. Tilgodehavende moms vil kunne anvendes til takstnedsættelse (forslag 3), kommende investeringer f.eks. renovering af glasstationer, opgraderinger af genbrugspladserne og fremtidig udskiftning af skraldespande og kasser til farligt affald.\nInvesteringerne er ikke medregnet i de foreslåede gebyrer for 2027. Der vil blive fremsendt en særskilt sag herom, når afgørelsen fra Skat foreligger.\nForslag til renovationsgebyrerne for henholdsvis private husstande og kommunale institutioner samt for erhverv vedlægges som bilag."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat der vælges ét af de tre forslag til renovationsgebyrer for private husstande i 2027 jf. takstoversigt for private husstande og kommunale institutioner, bilag 1\nat renovationsgebyrerne for erhverv fastsættes til markedspriser svarende til gebyrerne for de private husstande + 5 % jf. takstoversigt for erhverv, bilag 2\n\nat kommunale institutioner og virksomheder opkræves markedspriser for det forbrændingsegnede affald jf. takstoversigt for private husstande og kommunale institutioner, bilag 1\nat genbrugspladsgebyret for erhverv fastsættes til 200 kr. ekskl. moms pr. besøg."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Udvalget besluttede, at det samlede renovationsgebyr for en typisk husstand fastholdes på samme niveau som i 2026 (forslag 3). Forslaget finansieres af den forventede tilbagebetaling af momskravet i 2027.\nUdvalget besluttede desuden, at renovationsgebyrerne for erhverv fastsættes til markedspriser svarende til gebyrerne for de private husstande + 5 % jf. takstoversigt for erhverv, bilag 2, at kommunale institutioner og virksomheder opkræves markedspriser for det forbrændingsegnede affald jf. takstoversigt for private husstande og kommunale institutioner, bilag 1 samt at genbrugspladsgebyret for erhverv fastsættes til 200 kr. ekskl. moms pr. besøg."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-10": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-10",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 10,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Referat fra Landbrugsrådsmøde 10. juni 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der har været afholdt Landbrugsrådsmøde den 10. juni 2026. Mødet afholdes 2 gange om året, og det er skiftevis Sagro og Herning Kommune, der står for arrangementet. Dette møde var afholdt hos Sagro. Forvaltningen anbefaler, at referatet tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På mødet blev nedenstående punkter gennemgået:\n1. Recertificering af Herning Kommunes klimaplan med fokus på indsatsen Landbrug og arealanvendelse\n2. Læhegn – sagsbehandling og praksis (Herning-Ikast Landboforening) 3. Dræning (Herning-Ikast Landboforening) 4. § 3-områder – grøfter og vandløb (Herning-Ikast Landboforening) 5. Udkast til beredskabsplan ved tørke (Miljø og Klima) 6. Status Grøn Trepart (Natur og Grønne Områder) 7. Grundvandskortlægning og lokale treparter (Herning-Ikast Landboforening) 8. Hegn omkring husdyr/ulvesikret hegn (Familielandbruget VEST-Jylland)\n\n9. Glansbladet hæg – stigende problem (Herning-Ikast Landboforening) Referat og oplæg fra mødet er vedhæftet som bilag."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at udvalget tager referatet til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen er taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-11": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-11",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 11,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Orientering om manglende udledningstilladelser til overløb og regnvandsudløb",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Herning Kommune står over for en omfattende opgave med at lovliggøre eksisterende spildevandsudledninger efter miljøministeren udsendte et hyrdebrev til alle landets kommuner i 2021.\nI Herning Kommune mangler der udledningstilladelser til 46 overløb.\nOpgaven kræver betydelige miljøfaglige og juridiske vurderinger og vurderes at medføre et ekstra ressourcebehov.\nForvaltningen vurderer, at opgaven ikke kan løses inden for de eksisterende ressourcer uden væsentlige konsekvenser for øvrige myndighedsopgaver på vand- og spildevandsområdet. Derudover forventes et stort antal tilladelser til udledning af regnvand samt yderligere myndighedsopgaver ved implementeringen af det nye byspildevandsdirektiv (fra 2027) at medføre et øget ressourcebehov.\nForvaltningen anbefaler, at udvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I brevet fra miljøministeren blev det præciseret, at der skal foreligge gyldige udledningstilladelser til alle udledninger af spildevand, herunder ældre overløbsbygværker og regnvandsudløb. Samtidig blev kommunerne opfordret til i samarbejde med forsyningerne at sikre, at alle udledninger er lovligt reguleret.\nEfterfølgende har Miljøstyrelsen skærpet sin håndhævelsespraksis over for manglende udledningstilladelser, og manglende tilladelser kan i sidste ende medføre indskærpelser og politianmeldelser af spildevandsforsyningerne. Herning Vand A/S har i den forbindelse fået 8 indskærpelser for manglende tilladelser til overløb, hvoraf de 2 er blevet politianmeldt. De seks af indskærpelserne (herunder de to politianmeldte overløb) er afsluttet eller under sagsbehandling.\nRigsrevisionens opfølgning fra februar 2026 viste, at der på landsplan manglede tilladelser til\n\nca. 60 % af overløbene. Opgaven med at lovliggøre eksisterende udledninger er derfor ikke kun en betydelig myndighedsopgave for Herning Kommune, men også for mange andre kommuner.\nStatus i Herning Kommune\nDer er identificeret 60 overløb med manglende eller utilstrækkelige tilladelse i Herning Kommune. Baggrunden for denne række af manglende eller utilstrækkelige tilladelser er, at det har været kutyme tilbage fra amtets tid at meddele udledningstilladelser til overløb blandt andet i selve spildevandsplanen eller før det som en landsvæsenskendelse. Dette er ikke længere gængs praksis på området.\nMiljø-, Infrastruktur- og Naturudvalget er blevet orienteret om de manglende udledningstilladelser flere gange over årene, senest på møde den 15. september 2025.\nStatus for manglende tilladelser til overløb er oplyst af Herning Vand den 9. juli 2026:\n\nType: overløb\n\nAntal\n\nOverløb af opspædet spildevand, der mangler tilladelser\n\nOverløb under nedlæggelse\n\n*De 14 overløb under nedlæggelse forventes ikke meddelt ny tilladelse, idet de udfases som følge af blandt andet vandplanindsatser og igangværende separeringsprojekter."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Udarbejdelse af udledningstilladelser til eksisterende overløb er en omfattende myndighedsopgave.\nKL's og Miljøstyrelsens vejledningsmateriale understreger, at der skal foretages en række miljøfaglige og juridiske vurderinger i forbindelse med hver enkelt afgørelse.\nForvaltningen vurderer derfor, at hovedparten af sagerne må betragtes som komplekse myndighedssager.\nErfaringsmæssigt vurderes ressourceforbruget til:\n\nSagstype\n\nTypisk tidsforbrug\n\nSagstype\n\nTypisk tidsforbrug\n\nMindre regnvandsudledning Udledning med recipientvurdering\n\n10-25 timer 20-50 timer\n\nKompleks tilladelse med habitatvurdering og miljøvurderingsscreening\n\n50+ timer\n\nSåfremt hovedparten af de 46 manglende tilladelser gennemsnitligt kræver 50 timers sagsbehandling, svarer det til minimum 2.300 arbejdstimer i alt. Hvis alle overløbstilladelser skal laves i løbet af 5 år, svarer det til lidt under ½ årsværk. Alternativt vil 1 årsværk i løbet af 2 år kunne lave alle overløbstilladelser (et årsværk er sat til 1.300 timer).\nForvaltningen vurderer derfor, at opgaven ikke kan løses inden for den eksisterende drift uden konsekvenser for øvrige myndighedsopgaver på vand- og spildevandsområdet, f.eks. tilladelser til nyetablerede virksomheder, andre tilladelser til Herning Vand, spildevandstillæg m.v.\nUd over ovenstående opgave er der 139 regnvandsudløb, som mangler udledningstilladelse, og ca. 69 eksisterende tilladelser, hvor de oprindelige forudsætninger vurderes at være overskredet som følge af blandt andet byudvikling og ændrede oplandsforhold.\nDerudover vil der i forbindelse med implementeringen af det nye byspildevandsdirektiv i 2027 komme yderligere opgaver på spildevandsområdet.\nOpgaverne omfatter blandt andet:\nat alle tilslutningstilladelser og udledningstilladelser for renseanlæg skal revurderes hvert tiende år.\nat alle renseanlæg skal have revurderet deres tilladelser i perioden 2027 - 2037.\nat spildevandsplanen skal revideres hvert 6. år.\nImplementering af byspildevandsdirektivet samt de manglende tilladelser til regnvandsudløb forventes dermed fremadrettet at bidrage til et øget ressourcebehov."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Gennemførelse af opgaverne indenfor de fastsatte tidsfrister vil kræve tilførsel af medarbejderressourcer eller ekstern rådgiverbistand."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER,\nat orienteringen om status for manglende udledningstilladelser tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen er taget til efterretning.\nUdvalget ønsker en sag til behandling på kommende udvalgsmøde, hvor der foreligger forslag til løsning og finansiering af en 5 års plan for de manglende tilladelser til overløb."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-12": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-12",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 12,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Landzonetilladelse til etablering af legeplads/tarzanbane til FDF Sunds",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "FDF Sunds har den 7. januar 2026 ansøgt om nyopførelse af en legeplads/tarzanbane i den nærliggende skov, \"Hytteskoven\" omkring det allerede etablerede FDF-område med tilhørende kredshus.\nDet er oplyst af foreningen, at der derudover foreligger planer om flere fremtidige udvidelser, herunder mulighed for etablering af bygninger med overnatningsfaciliteter i skoven.\nForvaltningen anbefaler, at der jf. planlovens § 35, stk. 1, gennemføres en landzoneproces for den aktuelle legeplads/tarzanbane."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Projektet omfatter opsætning af forskellige typer af legeredskaber udført i træ, men der er ikke indtænkt konkrete bygninger. Projektet omfatter opstilling af 18 forskellige legeredskaber som et forløb gennem en rute i skoven.\nFDF Sunds har gennem flere år indsamlet midler gennem fonde og fra lokalsamfundet til realisering af projektet. Der er tidligere opført bygninger i området med bidrag fra fondsmidler.\nProjektet vil være tilgængeligt for både foreningen og kommunens borgere.\nNedenfor ses det ansøgte projekt og dets omfang.\n\nFDF Sunds er beliggende i landzone og er hverken omfattet af lokalplan eller en kommuneplanramme.\nDet aktuelle projekts omfang og placering i landzone kræver derfor, at der foreligger en landzonetilladelse, før der kan udstedes byggetilladelse for de ansøgte legeredskaber.\nJf. planlovens § 35, stk. 1, må der i landzone ikke uden tilladelse fra kommunen foretages udstykning, opføres ny bebyggelse eller ske ændringer i anvendelsen af bestående bygninger og ubebyggede arealer. Områder i landzone skal som udgangspunkt friholdes for anden spredt og uplanlagt bebyggelse m.v. end den, der er nødvendig for driften af landbrug, skovbrug og fiskeri. Ud over at værne om natur og landskab er varetagelsen af de primære erhvervsinteresser blandt de hensyn, der ligger bag landzonereglerne. Der er i den konkrete sag drøftet mulighed for udfærdigelse af ny lokalplan til indeholdelse af de fremtidige ønsker for området.\nDet kan oplyses, at forvaltningen i foråret 2025 har givet landzonetilladelse til et mindre lignende projekt omhandlende opførelse af bålhytte, shelter, tarzanbane, hængekøjer og cykelbane på Stokkildhovedvej 5, sydøst for Herning. Dette område er væsentlig mindre og begrænset af omkringliggende grunde og nabobebyggelse, hvor eventuelle fremtidige udvidelsesmuligheder vurderes at være meget begrænsede.\n\nDet er et formål med planloven at sikre en sammenhængende planlægning, der forener de samfundsmæssige interesser i arealanvendelsen, jf. § 1. Der kan tilvejebringes en lokalplan blandt andet for at sagsbehandlingen kan afkortes samt for at kortlægge mulighederne for områdets fremtidige anvendelse. Efter hidtidig praksis lægges stor vægt på lovens almene formål, uanset at den enkelte sags betydning er begrænset. I vurderingen indgår derfor overvejelser om, hvilken betydning afgørelsen kan få for fremtidige lignende sager. Formanden for FDF Sunds har udarbejdet en redegørelse for deres planer og fremtidsmuligheder for området, som er vedlagt i bilag 2. Nedenfor er udklip af hele den matrikel FDF Sunds råder over, hvor det ansøgte projekt skal opføres i den nordlige del.\nForvaltningens vurdering\nDen ansøgte legeplads/tarzanbane opføres i tilknytning til eksisterende bebyggelse i området og i sammenhæng med foreningens aktivitetsområde, og det er derfor vurderingen, at omfanget og størrelsen vil harmonere med området og foreningens idégrundlag. På baggrund af ovenstående ansøgning vurderer forvaltningen, at der kan gives landzonetilladelse til den aktuelle legeplads/tarzanbane."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR TEKNIK OG MILJØ INDSTILLER, at der jf. planlovens § 35, stk. 1, gennemføres en landzoneproces for den aktuelle legeplads/tarzanbane."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen er tiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-18": {
+   "id": "herning-2026-08-31-miljoe-infrastruktur-og-naturudvalget-18",
+   "kommune": "Herning",
+   "udvalg": "Miljø-, Infrastruktur- og Naturudvalget",
+   "dato": "2026-08-31",
+   "type": "referat",
+   "nr": 18,
+   "kilde": "https://dagsordener.herning.dk/vis?id=531f0fb7-bcc5-4979-9071-ca9540068e19",
+   "hentet": "2026-10-21T10:32:21.564Z",
+   "titel": "Underskrift af digital beslutningsprotokol",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutningsprotokol underskrevet."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-20-boerne-og-familieudvalget-13": {
+   "id": "herning-2026-10-20-boerne-og-familieudvalget-13",
+   "kommune": "Herning",
+   "udvalg": "Børne- og Familieudvalget",
+   "dato": "2026-10-20",
+   "type": "referat",
+   "nr": 13,
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
+   "titel": "Bevaring af kunstværk",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Administrationen har undersøgt 3 mulige muligheder for bevaring af Ugle-mosaikken på Herningsholmskolen.\nDen ene løsning er at skære kunstværket ud og flytte kunstværk i ét stykke. Kunstværket skal efterfølgende konserveres og monteres indendørs på den nye Herningsholmskole.\nDen anden løsning er, at kunstværket bliver stående som en fritstående mur. Her skal kunstværket også konserveres, og der skal laves beskyttelse mod vind og vejr (frost bl.a.).\nDen tredje løsning er at skære kunstværket ud i mindre og mere håndterbare kvadrater. Herefter kan det sammensættes på ny af konservator og monteres indendørs på den nye Herningsholmskole.\nDer er procesrisici ved alle tre løsningsforslag, da der ikke er nogen, der vil tage ansvaret for, hvordan et 70-årigt gammelt murværk med påklæbede glasmosaikker vil arte sig ved en nedtagning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Herningsholmskolen har en karakteristisk Ugle-mosaik på den gamle skole. Forvaltningen har undersøgt, hvordan mosaikken kan bevares/genbruges. Til den opgave er hyret en erfaren konservator, som har bistået forvaltningen med at beskrive de tre mulige løsninger.\nNedenfor ses hovedværket, som er placeret til højre for indgangen til den gamle skolegård:\n\nPå grund af hovedværket størrelsen kan det kun placeres på væggen til venstre for hovedtrappen (mod nord), hvor der også er mange forbipasserende.\n\nI det overdækkede indgangsparti på den gamle skole er der ligeledes nogle ugleunger af samme kunstner på væggen. I de forslåede løsningsmuligheder bevares de ikke af Herning Kommune, men på anbefaling fra konservator, så gennem-fotograferes de til lokalhistorisk arkiv og fragmenter stilles til rådighed for kunsthistorisk forskningsbrug og/eller dokumentation til Horsens Kunstmuseum (der i øvrigt huser Zielers samling).\nDer har været foretaget en afdækning af mulige fonde til finansiering af bevarings- og restaureringsopgaven. På den baggrund anses funding ikke som en farbar vej for dette bevaringsprojekt, da der for det første er få fonde, der vil støtte bevaring og vedligeholdelse af kunstværker, og for det andet, at fondene som hovedregel ikke støtter projekter, der er i gang.\nLøsning 1\nDet vurderes muligt at flytte kunstværket til en placering inde på den nye skole. Dog med en procesrisiko i forbindelse med udskæring og transport mv., da der er tale om et ca. 70-årigt gammelt kunstværk.\nRent teknisk vil kunstværket blive skåret ud i ét stort stykke. Udskæringen sikres med stålrammer og forsidesikring, inden kunstværket løftes med en kran op på transportvogn. Værket vil blive kørt ud på Mørupvej, Herning, hvor kommunen har en hal med stor portåbning. Her vil kunstværket blive restaureret og konserveret, inden kunstværket køres retur og løftes/bugseres til endelig placering på den nye Herningsholmskole.\nDa murværket, som kunstværket sidder på, er gammelt og skrøbeligt, vil transporten og eventuelle skader i den forbindelse være Herning Kommunes ansvar. Kommunen kan tegne transportforsikring, men da kunstværket er ustabilt og værdien - trods alt - er beskeden indtil efter restaureringen og konserveringen, bør man overveje, om forsikringspræmien står mål med mulig forsikringsudbetaling, hvis der sker skader.\nLøsning 2\nDen anden bevaringsmulighed er at lade muren blive stående og nedbryde murværket ovenpå og rundt om værket. Placeringen på grunden er illustreret med blåt i nedenstående (syd for den nye skole eksisterende hal, der er den lyse aftegning mod nord).\n\nZoomet ind, ser placeringen således ud:\nMuren er fri af den nye boldbane mod syd, men vil være placeret hen over den planlagte 100 meter løbebane. Lige nord for muren (i kanten) er der en højdeforskel i terræn på godt 40 cm, hvor der skal placeres en støttemur og siddeplint. Det er ikke muligt med en ny placering af en 100 m. løbebane. Herningsholmskolen kan eventuelt benytte Herning Atletikstadion 15 minutters gang/5 minutters cyklen fra skolen. Ved denne løsningsmulighed skal der gøres opmærksom på:\nRisiko ved sammenbrud ved nedrivning rundt om kunstværket. Risiko med forvitring af værket ved en stand-alone-løsning efterfølgende på grund af fugt og ændret varme-/kulde påvirkning, selvom værket forsøges beskyttet. Murværket er dens form og konstruktion ikke egnet til at stå frit i vejr og vind.\n\nLøsning 3\nMan forsøger løsning 1 i en tilpasset udgave. Det vil sige, at værket forsøges udskåret i mindre kvadrater og efterfølgende sammensættes det på ny indendørs på skolen. Det gør værket mere håndterbart, men sikkerhedsniveauet for, at flere mosaikker bliver beskadiget, er højere.\nVed denne løsningsmulighed skal der gøres opmærksom på:\nSamme som i løsning 1 Mosaikstifterne vil i større omfang kunne blive beskadiget ved opskæring\nDet er undersøgt, hvem rettighedsindehaverne af værket er - og det er Horsens Kunstmuseum. De er ikke kontaktet om muligheden for at omdanne til et eventuelt nyt værk, hvis det viser sig at falde fra hinanden. Den fagprofessionelle vurdering af, hvorvidt det er muligt at omdanne værket til et andet værk, er ikke positiv. For det første, så består værket af ca. 90 % glasmosaikker, der er opsat med en meget hård mørtel. Det vil sige, at en meget stor del af mosaikkerne vil splintre, hvis de forsøges afmonteret/hakket ned. For det andet kan museet afvise, at kunstværket må omdannes til nyt kunstværk grundet deres rettigheder (men de kan ikke afvise, at kunstværket destrueres i forbindelse med nedrivning af bygningen). Det anses derfor ikke som muligt, at lave et nyt kunstprojekt med involvering af eleverne grundet værkets beskaffenhed.\nEt billigere alternativ til løsning 3 (nu og her) kan være, at værket efter nedtagning pakkes ned på paller og gemmes til eftertiden - og til en eventuel senere genopbygning.\nDet er desuden undersøgt, hvorvidt der er givet tilskud fra Statens Kunstfond i forbindelse med opførelsen. Det kan ikke være tilfældet, da denne fond først blev oprettet efter opførelsesåret. På det grundlag må det antages, at værket tilhører Herning Kommune.\nOpgaven omkring bevaring af uglen har en tidsmæssig bagkant. Nedbrydningsarbejdet skal være færdig inden foråret, jævnfør de indgåede kontrakter med totalentreprenøren. Totalentreprenøren kan først etablere/færdiggøre legepladser, boldbaner og øvrige udearealer, når nedrivningen af skolen er tilendebragt.\nAf hensyn til tidsplanen vurderes det ikke muligt for kommunen at afvente en eventuelt længerevarende fondsbehandling uden væsentlige økonomiske konsekvenser for byggeprojektet, herunder risiko for stop eller forsinkelse af nedrivningsarbejdet. En sådan afventning vil desuden medføre væsentlige funktionsmæssige udfordringer som følge af manglende adgang til de store udearealer samt reduceret tilgængelighed til den nye skole."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomien kan skitseres som følgende :\nLøsning 1 er budgetteret til1,1-1,2 mio. kr. Løsning 2 vurderes til at være billigere/samme pris som løsning 1. Løsning 3 er der givet et overslag på ca. 0,4 mio. kr."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "DIREKTØREN FOR BØRN OG UNGE INDSTILLER,\nat der tages beslutning om værket skal bevares og i givet fald hvilken løsningsmodel, der ønskes anvendt\nat orienteringen i øvrigt tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning.\n\nUdvalget besluttede at bevare kunstværket som beskrevet i løsning 3, estimeret til 0,4 mio. kr."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-20-boerne-og-familieudvalget-15": {
+   "id": "herning-2026-10-20-boerne-og-familieudvalget-15",
+   "kommune": "Herning",
+   "udvalg": "Børne- og Familieudvalget",
+   "dato": "2026-10-20",
+   "type": "referat",
+   "nr": 15,
+   "kilde": "https://dagsordener.herning.dk/vis?id=7176e5a5-cb4f-4cb0-b980-febee4e42fcb",
+   "hentet": "2026-10-21T10:34:40.840Z",
+   "titel": "Underskrift af digital beslutningsprotokol",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Protokol underskrevet."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-20-beskaeftigelsesudvalget-5": {
+   "id": "herning-2026-10-20-beskaeftigelsesudvalget-5",
+   "kommune": "Herning",
+   "udvalg": "Beskæftigelsesudvalget",
+   "dato": "2026-10-20",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.herning.dk/vis?id=053669d9-15c1-46b1-9d99-51708fabe0ec",
+   "hentet": "2026-10-21T10:35:18.676Z",
+   "titel": "Meddelelser til og fra formanden og udvalgets medlemmer",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Mulig studietur i foråret 2027 drøftet. Administrationen arbejder videre med konkretisering af indhold af studietur."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-1": {
+   "id": "herning-2026-10-28-aeldreraadet-1",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Godkendelse af referat fra seneste møde",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nSagsbehandler: Øvrige sagsbehandlere: -"
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-2": {
+   "id": "herning-2026-10-28-aeldreraadet-2",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Nyt fra formanden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nSagsbehandler: Øvrige sagsbehandlere: -"
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-3": {
+   "id": "herning-2026-10-28-aeldreraadet-3",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Hvad er Eden?",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "FORMANDEN INDSTILLER,\nat orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-4": {
+   "id": "herning-2026-10-28-aeldreraadet-4",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Orientering om plejecentrene",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Chef for plejecentre og botilbud Gitte Rasmussen deltager i ældrerådsmødet og vil give en generel orientering om hverdagslivet på plejecentrene."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "at orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-5": {
+   "id": "herning-2026-10-28-aeldreraadet-5",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Økonomiorientering",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der orienteres om budgetopfølgningen pr. 31. august 2026, herunder forventningerne til Ældrerådets regnskabsresultat. Mariane Nannerup deltager under punktets behandling."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORMANDEN INDSTILLER, at orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-6": {
+   "id": "herning-2026-10-28-aeldreraadet-6",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Nyt fra rådets medlemmer",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nSagsbehandler: Øvrige sagsbehandlere: Sagsfremstilling Under punktet tilbagemeldinger med nyt fra de politiske udvalg."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-7": {
+   "id": "herning-2026-10-28-aeldreraadet-7",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Nyt fra nedsatte udvalg",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nSagsbehandler: Øvrige sagsbehandlere: Sagsfremstilling Under punktet evalueres temadagen den 1. oktober."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-8": {
+   "id": "herning-2026-10-28-aeldreraadet-8",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Nyt fra seniorrådene",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nSagsbehandler: Øvrige sagsbehandlere: Sagsfremstilling Under punktet evalueres fællesmødet den 5. oktober på Bytoften."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-9": {
+   "id": "herning-2026-10-28-aeldreraadet-9",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Dato for næste møde",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nSagsbehandler: Øvrige sagsbehandlere: -"
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-10-28-aeldreraadet-10": {
+   "id": "herning-2026-10-28-aeldreraadet-10",
+   "kommune": "Herning",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-28",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.herning.dk/vis?id=9f92dd05-dbfc-42c9-8692-aba4de92fe89",
+   "hentet": "2026-10-21T12:00:39.009Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunikation\n\nDIR\n\nBFU\n\nSOS\n\nBSK\n\nKFU\n\nBYB\n\nMIN\n\nØKE\n\nBYR\n\nSagsbehandler: Øvrige sagsbehandlere: -"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -9457,7 +9680,7 @@
    "tjekket": "2026-10-12"
   },
   "https://dagsordener.herning.dk/Sitemap/ForCommittee?committeeId=eff24eae-7f9e-411c-ae90-ad788b163280": {
-   "senest": "2026-10-09",
+   "senest": "2026-10-21",
    "tjekket": "2026-10-21"
   },
   "https://dagsordener.herning.dk/Sitemap/ForCommittee?committeeId=aec68b46-af5a-4d5c-af79-29595ee48b7a": {
@@ -9525,6 +9748,6 @@
    "tjekket": "2026-10-12"
   }
  },
- "opdateret": "2026-10-21T09:37:40.951Z",
+ "opdateret": "2026-10-21T12:10:39.965Z",
  "kommune": "Herning"
 }

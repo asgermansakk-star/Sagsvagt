@@ -113,7 +113,7 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
     if (f) return [f];
     for (const d of titel.matchAll(/\s(\d{1,3})\s+/g)) {
       if (+d[1] < fraSide || +d[1] > tilSide) continue;
-      const a = findTitel(titel.slice(0, d.index), fra, true);
+      const a = findTitel(titel.slice(0, d.index).replace(/\.+$/, ""), fra, true); // "… i Herning.. 3" (for få prikker)
       const b = a && findDele(titel.slice(d.index + d[0].length), a.start, +d[1], tilSide);
       if (b) return [a, ...b];
     }
