@@ -41,4 +41,38 @@ const r3 = parsePdf(tekst(
 assert.deepEqual(r3.punkter.map((p) => [p.nr, p.titel]), [[1, "Laks i Gudenåen 2027-2029"], [2, "Meddelelser"]]);
 assert.equal(r3.punkter[1].afsnit[0].tekst, "Ingen.");
 
+// Gentofte: "1 (Åben) Titel", "Sags ID" på titlens linje, "Beslutninger: <udvalg> den 19. oktober 2026"
+// og en tidligere behandling i samme udvalg ("Udvalg: … Dato: …"), som ikke er mødets egen beslutning
+const g = parsePdf(`REFERAT Økonomiudvalget d. 19-10-2026
+Indholdsfortegnelse
+Garanti for lån i Novafos...... 3 Meddelelser fra formanden...... 5 Underskrift...... 6
+
+1 (Åben) Garanti for lån i Novafos
+Resumé Novafos beder om garanti.
+Tidligere beslutninger:
+Udvalg: Økonomiudvalget Dato: 21-09-2026
+Økonomiudvalget den 21. september 2026 Udsat.
+Beslutninger: Økonomiudvalget den 19. oktober 2026 Anbefales til Kommunalbestyrelsen.
+2 (Åben) Meddelelser fra formanden Sags ID: MOD-2026-00088
+Beslutninger: Økonomiudvalget den 19. oktober 2026 Taget til efterretning.
+3 (Åben) Underskrift Sags ID: MOD-2026-00088
+`);
+assert.deepEqual(g.punkter.map((p) => [p.nr, p.titel]), [[1, "Garanti for lån i Novafos"], [2, "Meddelelser fra formanden"]]);
+assert.deepEqual(g.punkter[0].afsnit.map((a) => a.titel), ["Resumé", "Behandling i Økonomiudvalget 21. september 2026", "Beslutning"]);
+assert.equal(g.punkter[0].afsnit.at(-1).tekst, "Anbefales til Kommunalbestyrelsen.");
+
+// Første titel er afkortet i indholdsfortegnelsen, og første punkt står lige efter den: titlen må ikke tages fra
+// selve indholdsfortegnelsen. Et rigtigt punkt, der hedder "Underskrift på …", må ikke springes over.
+const g2 = parsePdf(`REFERAT Økonomiudvalget d. 19-10-2026
+Indholdsfortegnelse
+Lokalplan for et område ved Schæffergården. Offentlig hø 3 Underskrift på skøder...... 5 Underskrift...... 6
+1 (Åben) Lokalplan for et område ved Schæffergården. Offentlig høring
+Resumé Planen sendes i høring.
+2 (Åben) Underskrift på skøder
+Resumé Borgmesteren underskriver.
+3 (Åben) Underskrift
+`);
+assert.deepEqual(g2.punkter.map((p) => p.titel), ["Lokalplan for et område ved Schæffergården. Offentlig høring", "Underskrift på skøder"]);
+
+
 console.log("parsePdf: alle tjek bestået");

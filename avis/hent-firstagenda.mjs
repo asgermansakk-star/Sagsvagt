@@ -65,7 +65,12 @@ const tabellinje = (l) => { const b = (l.match(/[a-zæøåA-ZÆØÅ]/g) || []).l
 const renTekst = (t) => t.split("\n").filter((l) => !tabellinje(l)).join("\n").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
 
 export function parsePdf(tekst, kendteUdvalg = new Map()) {
-  const t = tekst.replace(/\r/g, "").replace(/\f/g, "\n");
+  // Gentofte skriver "Beslutninger: Økonomiudvalget den 19. oktober 2026" og tidligere behandlinger som
+  // "Udvalg: Byplanudvalget Dato: 05-10-2026"; de omskrives til den almindelige form "BESLUTNING I … DEN dd-mm-åååå"
+  const to = (n) => String(n).padStart(2, "0");
+  const t = tekst.replace(/\r/g, "").replace(/\f/g, "\n")
+    .replace(new RegExp(`Beslutninger:\\s*(.+?) den (\\d{1,2})\\. (${MDR.join("|")}) (\\d{4})`, "g"), (_, u, d, m, y) => `BESLUTNING I ${u} DEN ${to(d)}-${to(MDR.indexOf(m) + 1)}-${y}`)
+    .replace(/(?:Tidligere beslutninger:\s*)?Udvalg:\s*(.+?)\s+Dato:\s*(\d{2}-\d{2}-\d{4})/g, "BESLUTNING I $1 DEN $2");
   // Datoen kan mangle en bindestreg ("2210-2026", "17-092026"), så de er valgfrie
   const hoved = t.match(/^\s*(DAGSORDEN|REFERAT)\s+(.+?)\s+d\.\s*(\d{2})-?(\d{2})-?(\d{4})/m);
   if (!hoved) throw new Error("Kan ikke læse mødets overskrift");
@@ -81,9 +86,11 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   const reIndhold = /(\S[^\n]*?)\s*\.{4,}\s*(\d+)\s*/gy;
   reIndhold.lastIndex = mIndhold.index + mIndhold[0].length;
   while (/\s/.test(t[reIndhold.lastIndex])) reIndhold.lastIndex++;
-  const titler = []; let m;
-  while ((m = reIndhold.exec(t))) titler.push({ titel: m[1].trim(), side: +m[2] });
-  let markoer = reIndhold.lastIndex;
+  const titler = []; let m, slut = reIndhold.lastIndex;
+  while ((m = reIndhold.exec(t))) { titler.push({ titel: m[1].trim(), side: +m[2] }); slut = reIndhold.lastIndex; }
+  // lastIndex nulstilles, når exec fejler, så slutningen gemmes undervejs. Markøren sættes på linjeskiftet før første
+  // punkt, så punktsøgningen ikke rammer selve indholdsfortegnelsen (Gentoftes afkortede første titel gjorde det)
+  let markoer = Math.max(0, t.lastIndexOf("\n", slut - 1));
 
   // Find hvert punkt i rækkefølge; lange titler kan være brudt over flere linjer i selve teksten.
   // Nogle kommuner skriver titlen med versaler og løbenummer foran ("188.ORIENTERINGSSAG: …")
@@ -92,7 +99,8 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   // og i teksten mister pdftotext nogle gange bindestregen mellem årstal ("20272029").
   const findTitel = (titel, fra, afkortet = false) => {
     const ord = titel.split(/\s+/).map(reEsc).join("\\s+").replace(/(\d)-(?=\d)/g, "$1-?");
-    const re = new RegExp(`(^|\\n)(?:\\d+\\.[ \\t]*)?(${ord}${afkortet ? "[^\\n]*" : ""})\\.?[ \\t]*\\n`, "gi");
+    // Gentofte nummererer punkterne "1 (Åben) Titel" og har nogle gange "Sags ID: …" på samme linje som titlen
+    const re = new RegExp(`(^|\\n)(?:\\d+\\.[ \\t]*|\\d+[ \\t]+\\((?:Åben|Lukket)\\)[ \\t]*)?(${ord}${afkortet ? "[^\\n]*?" : ""})\\.?[ \\t]*(?:\\n|(?=Sags ID:))`, "gi");
     re.lastIndex = fra;
     const f = re.exec(t);
     return f && { titel: afkortet ? f[2].trim() : titel, idx: f.index, start: f.index + f[0].length };
@@ -134,7 +142,7 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   const afsnitNavn = (h) => NAVN[h] || h.charAt(0).toUpperCase() + h.slice(1).toLowerCase();
   const punkter = [];
   fund.forEach((p, i) => {
-    if (!p || /^(Lukket\b|Underskriftsark)/i.test(p.titel)) return;
+    if (!p || /^(Lukket\b|Underskrift(sark)?\.?$)/i.test(p.titel)) return; // ikke fx "Underskrift på skøder …"
     // Uden næste punkts overskrift ville kroppen tage det næste punkts tekst med; så springer vi punktet over
     if (fund[i + 1] === null) return;
     const krop = t.slice(p.start, fund[i + 1]?.idx ?? t.length);
@@ -148,7 +156,8 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
         // så avisen ikke forveksler dem med mødets egen afgørelse)
         const navn = kendteUdvalg.get(norm(d[2])) || udenPeriode(d[2]).charAt(0) + udenPeriode(d[2]).slice(1).toLowerCase();
         const dd = dato(d[3], d[4], d[5]);
-        if (norm(d[2]) === norm(udvalg)) afsnit.push({ titel: "Beslutning", tekst });
+        // Samme udvalg på en tidligere dato (fx "Udsat" sidste måned) er en tidligere behandling, ikke dette mødes beslutning
+        if (norm(d[2]) === norm(udvalg) && dd === moededato) afsnit.push({ titel: "Beslutning", tekst });
         else afsnit.push({ titel: `Behandling i ${navn} ${datoTekst(dd)}`, tekst });
       } else {
         // En overskrift, der står flere gange i samme punkt, lægges sammen
