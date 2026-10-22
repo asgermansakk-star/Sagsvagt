@@ -216,6 +216,16 @@
   .valgte { display: flex; flex-wrap: wrap; gap: 6px; }
   .valgte .tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 4px 4px 12px; }
   .valgte .tag button { border: 0; cursor: pointer; width: 32px; height: 32px; border-radius: 6px; background: rgba(14,15,20,.15); color: inherit; font-size: var(--fodnote); line-height: 1; padding: 0; }
+  .flueben { display: flex; gap: 12px; align-items: flex-start; min-height: 44px; padding: 10px 0; font-size: var(--sekundaer); line-height: 1.4; cursor: pointer; }
+  .flueben input { flex: none; width: 24px; height: 24px; margin: 0; accent-color: var(--lyng); cursor: pointer; }
+  .flueben a { color: var(--kalk); }
+  .medlem-felter { display: grid; grid-template-columns: 1fr 120px; gap: 16px; }
+  .medlem-felter[hidden] { display: none; }
+  /* Adgangskode, når en valgt kommune allerede er åben */
+  .konto-felt { display: grid; gap: 8px; }
+  .konto-felt[hidden] { display: none; }
+  .konto-note { margin: 0; font-size: var(--fodnote); opacity: .9; }
+  .valgfri { font-weight: 400; opacity: .75; }
   .send { justify-self: start; }
   .send .spin { width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(14,15,20,.25); border-top-color: var(--nat); display: none; animation: spin .8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
@@ -310,11 +320,8 @@
   <div class="wrap">
     <a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
     <nav aria-label="Hovedmenu">
-      <a href="#proev">Prøv det</a>
       <a href="#saadan">Sådan virker det</a>
       <a href="#spoergsmaal">Spørgsmål</a>
-      <a href="ugen.html">Ugens sager</a>
-      <a href="kommune/">Kommuner</a>
       <a href="index.html">Læs avisen</a>
     </nav>
     <a class="btn btn-lille btn-sekundaer" href="min/">Log ind</a>
@@ -442,6 +449,15 @@
               <option>Studerende</option><option>Lokalpolitiker</option><option>Journalist</option><option>Ejendom, byggeri eller rådgivning</option>
               <option>Forening eller interesseorganisation</option><option>Public affairs eller kommunikation</option><option>Borger</option><option>Andet</option>
             </select>
+          </div>
+          <label class="flueben"><input type="checkbox" id="medlem" name="medlem"> <span>Jeg er 16-30 år og vil også være gratis medlem af <a href="https://saetdagsordenen.dk" target="_blank" rel="noopener">Sæt Dagsordenen</a></span></label>
+          <div class="medlem-felter" id="medlemFelter" hidden>
+            <div class="felt"><label for="navn">Navn</label><input id="navn" name="navn" type="text" autocomplete="name" maxlength="100"></div>
+            <div class="felt"><label for="alder">Alder</label><input id="alder" name="alder" type="number" inputmode="numeric" min="16" max="30"></div>
+          </div>
+          <div class="konto-felt" id="kontoFelt" hidden>
+            <p class="konto-note" id="kontoNote"></p>
+            <div class="felt"><label for="adgangskode">Vælg en adgangskode <span class="valgfri">(valgfri)</span></label><input id="adgangskode" name="adgangskode" type="password" autocomplete="new-password" minlength="10" maxlength="200" placeholder="Mindst 10 tegn"></div>
           </div>
           <button class="btn btn-primaer send" type="submit"><span>Skriv mig op</span><i class="spin"></i></button>
           <p class="form-msg" role="status" aria-live="polite"></p>
@@ -653,7 +669,8 @@
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   /* ---------- Tilmelding ---------- */
-  // Svarer vores server ikke, sendes tilmeldingen via FormSubmit til mansa@sagsvagt.dk (samme adresse som serveren bruger).
+  // Svarer vores server ikke, sendes tilmeldingen via FormSubmits aktiverede alias (kun det er aktiveret; en ny modtager
+  // uden aktivering brød tilmeldingen 10.-11. okt.) med en kopi (_cc) til mansa@sagsvagt.dk, der filtreres til mappen Signup.
   // Afviser FormSubmit alligevel, tilbyder vi en færdigudfyldt mail til mansa@ i stedet.
   const SIGNUP_MAIL = "mansa@sagsvagt.dk";
   const AUTOSVAR = "Tak, fordi du har skrevet dig op til Sagsvagt.\n\n"
@@ -661,9 +678,9 @@
     + "Vil du ændre dine emner eller afmelde dig, så skriv til mansa@sagsvagt.dk.\n"
     + "Sådan behandler vi dine oplysninger: https://sagsvagt.dk/privatliv.html\n\n"
     + "Venlig hilsen\nSagsvagt";
-  const FORM_ENDPOINT = `https://formsubmit.co/ajax/${SIGNUP_MAIL}`;
+  const FORM_ENDPOINT = "https://formsubmit.co/ajax/424d1304258cfcf5d9718ed239d32ff8";
   const mailto = (d) => `mailto:${SIGNUP_MAIL}?subject=${encodeURIComponent("Tilmelding til Sagsvagt")}&body=${encodeURIComponent(
-    `Skriv mig op til Sagsvagt.\n\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n`)}`;
+    `Skriv mig op til Sagsvagt.\n\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n${d.medlem ? `Medlem af Sæt Dagsordenen: ${d.navn}, ${d.alder} år\n` : ""}`)}`;
   // Hvor kom den tilmeldte fra? Del fx sagsvagt.dk/vagt.html?fra=instagram eller ?fra=grupper
   const kilde = (() => {
     // Kom de via avisen, står den første kilde foran, fx "facebook.com > sag"
@@ -734,6 +751,26 @@
       });
     } catch {}
   };
+  // Medlemskab af Sæt Dagsordenen: fluebenet viser Navn og Alder, som så er påkrævet
+  const medlem = $("#medlem"), medlemFelter = $("#medlemFelter");
+  medlem.addEventListener("change", () => {
+    medlemFelter.hidden = !medlem.checked;
+    form.navn.required = form.alder.required = medlem.checked;
+    if (medlem.checked) form.navn.focus();
+  });
+  // Adgangskode med det samme, hvis en af de valgte kommuner allerede er åben (kommune/aabne.json)
+  const kontoFelt = $("#kontoFelt"), kontoNote = $("#kontoNote");
+  let aabne = new Set();
+  fetch("kommune/aabne.json").then((r) => r.json()).then((l) => { aabne = new Set(l.map((k) => k.navn)); visKonto(); }).catch(() => {});
+  const visKonto = () => {
+    const aabneValgte = [...new Set(kommuneDele(form.kommuner.value).map(rigtigKommune).filter((k) => k && aabne.has(k)))];
+    kontoFelt.hidden = !aabneValgte.length;
+    if (!aabneValgte.length) { form.adgangskode.value = ""; return; }
+    const navne = aabneValgte.length > 1 ? `${aabneValgte.slice(0, -1).join(", ")} og ${aabneValgte.at(-1)} er åbne` : `${aabneValgte[0]} er åben`;
+    kontoNote.textContent = `${navne} på Sagsvagt. Vælg en adgangskode, så kan du logge ind og læse Min avis med det samme.`;
+  };
+  form.kommuner.addEventListener("input", visKonto);
+  form.kommuner.addEventListener("change", visKonto);
   const faerdig = () => { card.classList.add("ok"); visHenvisning(form.email.value); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -750,10 +787,29 @@
       msg.className = "form-msg err"; msg.textContent = `Vi kan ikke finde ${ukendte.join(" og ")}. Skriv kommunens navn, fx Aarhus eller Lyngby-Taarbæk.`; form.kommuner.focus(); return;
     }
     kf.classList.remove("bad");
+    if (medlem.checked) {
+      const alder = Number(form.alder.value), fejlFelt = !form.navn.value.trim() ? form.navn : !(Number.isInteger(alder) && alder >= 16 && alder <= 30) ? form.alder : null;
+      [form.navn, form.alder].forEach((el) => el.parentElement.classList.toggle("bad", el === fejlFelt));
+      if (fejlFelt) {
+        msg.className = "form-msg err";
+        msg.textContent = fejlFelt === form.navn ? "Skriv dit navn for at blive medlem af Sæt Dagsordenen." : "Man skal være mellem 16 og 30 år for at blive medlem af Sæt Dagsordenen.";
+        fejlFelt.focus(); return;
+      }
+    }
+    const kode = kontoFelt.hidden ? "" : form.adgangskode.value;
+    if (kode && (kode.length < 10 || kode.toLowerCase() === email.toLowerCase())) {
+      form.adgangskode.parentElement.classList.add("bad");
+      msg.className = "form-msg err"; msg.textContent = kode.length < 10 ? "Adgangskoden skal være på mindst 10 tegn." : "Adgangskoden må ikke være din e-mail.";
+      form.adgangskode.focus(); return;
+    }
+    form.adgangskode.parentElement.classList.remove("bad");
     form.kommuner.value = [...new Set(dele.map(rigtigKommune))].join(", ");
     const data = Object.fromEntries(new FormData(form));
+    if (kode) data.adgangskode = kode; else delete data.adgangskode;
+    data.medlem = medlem.checked;
+    if (!medlem.checked) { delete data.navn; delete data.alder; }
     data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
-    data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table"; data._autoresponse = AUTOSVAR;
+    data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table"; data._cc = SIGNUP_MAIL; data._autoresponse = AUTOSVAR;
     btn.disabled = true; btn.classList.add("busy"); msg.className = "form-msg"; msg.textContent = "";
     // Først vores egen server (api/tilmeld.php gemmer tilmeldingen, så den kan få en invitation til login).
     // Svarer den ikke (fx uden PHP), bruges FormSubmit som før.
@@ -761,10 +817,13 @@
       const egen = await fetch("api/tilmeld.php", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) });
       if ((egen.headers.get("content-type") || "").includes("application/json")) {
         const out = await egen.json().catch(() => ({}));
+        if (egen.ok && out.konto) { location.href = "min/"; return; } // kontoen er oprettet og logget ind
+        if (egen.ok && out.harKonto) { msg.className = "form-msg"; msg.innerHTML = 'Du er allerede skrevet op, så adgangskoden blev ikke gemt. <a href="min/" style="color:var(--kalk)">Log ind</a>, eller brug "Glemt adgangskode" der.'; btn.disabled = false; btn.classList.remove("busy"); return; }
         if (egen.ok) { faerdig(); btn.disabled = false; btn.classList.remove("busy"); return; }
         if (egen.status === 400 || egen.status === 429) { msg.className = "form-msg err"; msg.textContent = out.fejl || "Noget gik galt."; btn.disabled = false; btn.classList.remove("busy"); return; }
       }
     } catch (err) { console.warn("Egen server svarede ikke, bruger FormSubmit:", err.message); }
+    delete data.adgangskode; // adgangskoden må aldrig sendes til FormSubmit
     try {
       const res = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
       const out = await res.json().catch(() => ({}));

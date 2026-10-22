@@ -1,6 +1,7 @@
 <?php
 // Brugeren sletter selv sin konto: tilmelding, profil, gemte sager og links fra mails slettes.
 // Kræver adgangskoden, så en åben computer ikke er nok. Feedback beholdes uden e-mail.
+// Er man også medlem af Sæt Dagsordenen, bliver rækken stående med status 'medlem'.
 declare(strict_types=1);
 require __DIR__ . '/_bootstrap.php';
 
@@ -15,7 +16,10 @@ $db = db();
 $db->prepare('DELETE FROM tokens WHERE abonnent_id = ?')->execute([$b['id']]);
 try { $db->prepare('DELETE FROM push_abonnementer WHERE abonnent_id = ?')->execute([$b['id']]); } catch (PDOException $e) {} // findes kun, når push er brugt
 $db->prepare("UPDATE feedback SET abonnent_id = NULL, email = '' WHERE abonnent_id = ?")->execute([$b['id']]);
-$db->prepare('DELETE FROM abonnenter WHERE id = ?')->execute([$b['id']]);
+// Er man også medlem af Sæt Dagsordenen, slettes kun Sagsvagt-delen: medlemskab, navn, alder, kommuner og adgangskode bliver
+$erMedlem = !empty($b['medlem']);
+if ($erMedlem) $db->prepare("UPDATE abonnenter SET status = 'medlem', profil = NULL, emner = '' WHERE id = ?")->execute([$b['id']]);
+else $db->prepare('DELETE FROM abonnenter WHERE id = ?')->execute([$b['id']]);
 
 // Log ud
 $_SESSION = [];
@@ -24,6 +28,10 @@ setcookie(session_name(), '', ['expires' => time() - 3600, 'path' => $p['path'],
 session_destroy();
 
 // Redaktionen får besked, så adressen også kan fjernes andre steder (fx gamle tilmeldingsmails)
-$linjer = "{$b['email']} har slettet sin konto i Min avis. Kontoen, profilen og tilmeldingen er slettet fra databasen.\n";
+$linjer = $erMedlem
+    ? "{$b['email']} har slettet sin konto i Min avis. Profilen og tilmeldingen til Sagsvagt er slettet, men medlemskabet af Sæt Dagsordenen er bevaret.\n"
+    : "{$b['email']} har slettet sin konto i Min avis. Kontoen, profilen og tilmeldingen er slettet fra databasen.\n";
 @send_mail(TILMELDINGER_TIL, "Konto slettet: {$b['email']}", '<p style="font:14px/1.5 Arial,sans-serif">' . htmlspecialchars($linjer, ENT_QUOTES, 'UTF-8') . '</p>', $linjer);
-svar(200, ['ok' => true]);
+svar(200, ['ok' => true, 'medlem' => $erMedlem, 'besked' => $erMedlem
+    ? 'Din Sagsvagt-konto er slettet. Du er stadig medlem af Sæt Dagsordenen. Vil du også melde dig ud, så skriv til kontakt@saetdagsordenen.dk.'
+    : 'Din konto er slettet.']);

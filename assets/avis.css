@@ -462,3 +462,16 @@ footer.foot a:hover { text-decoration: underline; }
   /* Udvalgslinket over overskrifterne er lille; en usynlig kant gør det lettere at ramme */
   .kicker a { padding: 10px 0; }
 }
+
+/* ---------- Kommunevælgeren i avishovedet og telefonens kommune-fane ---------- */
+.mh-kommune summary { display: block; min-height: 44px; padding: 4px 0; }
+.mh-kommune summary::after { display: none; }
+.mh-kommune b::after { content: ""; display: inline-block; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); margin: 0 2px 4px 9px; }
+.mh-kommune summary:hover b { text-decoration: underline; text-underline-offset: 3px; }
+.mh-kommune > div a[aria-current], .tab-mere > div a[aria-current] { background: rgba(230,223,211,.14); font-weight: 600; }
+.tab-titel { margin: 4px 14px 6px; font-size: var(--fodnote); color: rgba(230,223,211,.6); }
+.tabbar summary span, .tabbar > a span { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* Vejen til den kommune, man sidst valgte, øverst på Københavns forside */
+.din-kommune { margin-top: 16px; margin-bottom: 0; }
+.din-kommune a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: var(--r-knap); background: var(--nat); color: var(--kalk); font-weight: 600; text-decoration: none; }
+.din-kommune a::after { content: "→"; margin-left: 8px; }

@@ -69,6 +69,8 @@ const STOEJ = /^(godkendelse af (dagsorden|referat)|referat og godkendelse|event
 // Rutinesager publiceres, men kommer ikke på forsiden
 const RUTINE = /(forretningsorden|regnskab|økonomi efter budget|bydelspulje|puljeansøgning|status på bydelsplan|mødekalender)|^(henvendelser|henvendelse til|puljeansøgning|ansøgninger til|beslutning om (pulje)?ansøgning|anerkendelsespris|punkter til dagsorden|mødeplan|ændring af forretningsorden|forretningsorden|.*studietur|regnskab|anden regnskabsprognose|aflæggelse af|årsplan|udpegning af|valg af|godkendelse af referat|tredje sag om bevillings|teknisk tilpasning)/i;
 const renTitel = (t) => t.replace(/^[A-ZÆØÅ]-sag:\s*/, "").replace(/^[A-ZÆØÅ]\.\s+/, "")
+  // Andre kommuners udvalgsvej foran titlen ("PBU/ØU/KB - Beslutning om …", "B-sag - …") er intern; den skæres fra
+  .replace(/^[A-ZÆØÅ]{1,6}(?:\/[A-ZÆØÅ]{1,6})+\s*[-–]\s*/, "").replace(/^[A-ZÆØÅ]-sag\s*[-–]\s*/, "").replace(/^Beslutning om\s+/i, "")
   .replace(/^Beslutning(:| vedr\.?)\s+/i, "").replace(/\s+/g, " ").trim().replace(/^./, (c) => c.toUpperCase());
 const erLokaludvalg = (u) => /Lokaludvalg$/.test(u);
 const bydel = (u) => u.replace(/\s*Lokaludvalg$/, "").replace(/^Christianshavns$/, "Christianshavn");
@@ -101,7 +103,16 @@ function berig(s) {
   // forkastet" om et ændringsforslag, derefter budgettet). Der viser vi kun et kort udfald, når der er præcis én
   // afstemning og ingen ændringsforslag; ellers vises beslutningens egen tekst.
   if (!erKK(s) && ([...beslutning.matchAll(hoved)].length + [...beslutning.matchAll(andet)].length !== 1 || /ændringsforslag/i.test(beslutning))) m = null;
-  const udfaldTekst = m ? m[0].trim().replace(/^./, (c) => c.toUpperCase()) : "";
+  // Andre kommuner skriver stemmerne lige før afgørelsen på samme linje ("(A), (B) og Helge Bo Jensen (Ø) Den samlede
+  // indstilling blev godkendt."); navne og partibogstaver foran selve afgørelsen skæres fra
+  // PDF-afkrydsningen "X Supplerende sagsfremstilling x" (også "… X X" og uden X) kan også stå foran
+  const udenStemmer = (t) => t.replace(/(?:\b[xX]\s+)*Supplerende sagsfremstilling(?:\s+[xX]\b)*\s*/g, "").replace(/^(?:[^().]*\([A-ZÆØÅ]{1,2}\)[,\s]*(?:og\s+)?)+/, "");
+  const udfaldTekst = m ? udenStemmer(m[0].trim()).replace(/^./, (c) => c.toUpperCase()) : "";
+  // Uden et klart udfald: den sidste sætning, der siger, hvad der blev besluttet ("Godkendte indstillingen."). Den første
+  // er tit et ændringsforslag eller et mindretal ("(Ø) kunne ikke godkende"), så dem springer vi over.
+  const sidsteUdfald = (t) => t.replace(/(?:\b[xX]\s+)*Supplerende sagsfremstilling(?:\s+[xX]\b)*\s*/g, "").replace(/\s+/g, " ").split(/(?<=[.!?])\s+/)
+    .map((x) => udenStemmer(x).trim()).filter((x) => x.length < 260 && /\b(godkend|vedt[ao]g|anbefal|tiltr[åa]d|forkast|nedstem|oversend|taget til efterretning|besluttede)/i.test(x)
+      && !/ændringsforslag|^\(|kunne ikke|stemte (imod|for)|undlod/i.test(x)).at(-1)?.replace(/^./, (c) => c.toUpperCase()) || "";
   // Partiernes stemmer står lige efter afgørelsen: "For: Ø, F og A\nImod: Å" eller "For stemte: …\nImod stemte: …"
   const hovedAfst = m ? afstemninger(beslutning).find((a) => a.om && m[0].includes(a.om.slice(0, 40))) : null;
   const navne = (l) => l.map((x) => x.b || x.navn).join(", ");
@@ -121,6 +132,8 @@ function berig(s) {
   const videre = find(/^Videre proces/i);
   return {
     ...s, titel, beslutning, udfald: udfaldTekst, stemmer, status, laengde, vaegt, score, rutine, dek,
+    // Kort beslutning til mails og Min avis, når der ikke er et klart udfald (mest andre kommuner)
+    kortBesl: status === "besluttet" && !udfaldTekst ? udenStemmer(sidsteUdfald(beslutning) || kortBeslutning(beslutning, 180)).replace(/^./, (c) => c.toUpperCase()) : "",
     // Stemmetallet hentes fra selve afgørelsen; tidligere afstemninger i referatet kan være om ændringsforslag
     tal: status === "besluttet" && /stemmer mod/i.test(udfaldTekst) ? stemmetal(beslutning.slice(m.index)) : null,
     emner: emnerFor(`${titel} ${dek}`), emnerTitel: emnerFor(titel),
@@ -140,18 +153,20 @@ const publicerbar = (s) => !STOEJ.test(renTitel(s.titel)) && !/fortrolig/i.test(
 // hoved: punkterne i menuen ({ href, navn, id, ikon }). mere: punkterne under "Mere".
 // TOPRAAD: kommunens øverste råd ("Byrådet" eller "Kommunalbestyrelsen"), der står, hvor København har Borgerrepræsentationen.
 const TOPRAAD = new Map();
+// De åbne kommuner udover København ({ navn, slug }), til kommunevælgeren i avishovedet
+const UDGAVER = [];
+// Få punkter: Forside, Emner, Møder og Søg; resten under "Mere". Kommunen skiftes i avishovedet.
 const menuData = (rod, k) => {
   if (!k) return {
     hoved: [
       { href: `${rod}index.html`, navn: "Forside", id: "forside", ikon: "hjem" },
-      { href: `${rod}ugen.html`, navn: "Ugens sager", fane: "Ugen", id: "ugen", ikon: "ugen" },
       { href: `${rod}emne/`, navn: "Emner", id: "emne", ikon: "emner" },
-      { href: `${rod}bydel/`, navn: "Bydele", id: "bydel", ikon: "sted" },
       { href: `${rod}moeder.html`, navn: "Møder", id: "moeder", ikon: "kalender" },
       { href: `${rod}soeg.html`, navn: "Søg", id: "soeg", ikon: "soeg" },
-      { href: `${rod}kommune/`, navn: "Kommuner", id: "kommune", ikon: "kort" },
     ],
     mere: [
+      { href: `${rod}ugen.html`, navn: "Ugens sager", id: "ugen" },
+      { href: `${rod}bydel/`, navn: "Bydele", id: "bydel" },
       { href: `${rod}udvalg/borgerrepraesentationen.html`, navn: "Borgerrepræsentationen", id: "br" },
       { href: `${rod}udvalg/`, navn: "Alle udvalg", id: "udvalg" },
       { href: `${rod}sted/`, navn: "Steder", id: "sted" },
@@ -165,12 +180,11 @@ const menuData = (rod, k) => {
     hoved: [
       { href: `${r}.html`, navn: "Forside", id: "k-forside", ikon: "hjem" },
       { href: `${r}/emne/`, navn: "Emner", id: "k-emne", ikon: "emner" },
-      { href: `${r}/bydel/`, navn: "Bydele", id: "k-bydel", ikon: "sted" },
       { href: `${r}/moeder.html`, navn: "Møder", id: "k-moeder", ikon: "kalender" },
       { href: `${r}/soeg.html`, navn: "Søg", id: "k-soeg", ikon: "soeg" },
-      { href: `${rod}kommune/`, navn: "Kommuner", id: "kommune", ikon: "kort" },
     ],
     mere: [
+      { href: `${r}/bydel/`, navn: "Bydele", id: "k-bydel" },
       ...(top ? [{ href: `${r}/${slug(top)}.html`, navn: top, id: "k-top" }] : []),
       { href: `${r}/udvalg.html`, navn: "Alle udvalg", id: "k-udvalg" },
       { href: `${r}/sted/`, navn: "Steder", id: "k-sted" },
@@ -197,16 +211,24 @@ const IKON = {
   soeg: '<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/>',
   ugen: '<rect x="5" y="8" width="14" height="12" rx="2"/><path d="M7.5 5h9"/>',
   kalender: '<rect x="4" y="5.5" width="16" height="14.5" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/>',
+  sted: '<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/>',
   mere: '<circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/>',
 };
 const ikon = (n) => `<svg class="ti" viewBox="0 0 24 24" aria-hidden="true">${IKON[n]}</svg>`;
+// Kommunevælgeren: de åbne kommuner og en vej til resten. data-kommune bruges til at huske valget (se side()).
+const kommuneValg = (rod, k) => [{ navn: "København", slug: "koebenhavn" }, ...UDGAVER].map((u) =>
+  `<a href="${rod}${u.slug === "koebenhavn" ? "index.html" : `kommune/${u.slug}.html`}" data-kommune="${u.slug}"${cur((k?.slug || "koebenhavn") === u.slug)}>${esc(u.navn)}</a>`)
+  .join("") + `<a href="${rod}kommune/">Alle kommuner</a>`;
 const tabBjaelke = (rod, aktiv, k) => {
   const { hoved, mere } = menuData(rod, k);
-  // København har Ugens sager som fane (Møder ligger så under Mere); de andre kommuner har ikke ugen.html endnu
-  const faner = (hoved.some((m) => m.ikon === "ugen") ? ["hjem", "ugen", "emner", "soeg"] : ["hjem", "emner", "soeg", "kalender"]).map((i) => hoved.find((m) => m.ikon === i));
+  // Telefonen: Forside, Emner, Søg, kommunen og Mere (Møder ligger under Mere)
+  const faner = ["hjem", "emner", "soeg"].map((i) => hoved.find((m) => m.ikon === i));
   const iMere = [...hoved.filter((m) => !faner.includes(m)), ...mere];
   return `<nav class="tabbar" aria-label="Sektioner">
-  ${faner.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${ikon(m.ikon)}<span>${esc(m.fane || m.navn)}</span></a>`).join("\n  ")}
+  ${faner.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${ikon(m.ikon)}<span>${esc(m.navn)}</span></a>`).join("\n  ")}
+  <details class="tab-mere"><summary${cur(aktiv === "kommune")}>${ikon("sted")}<span>${esc(k?.navn || "København")}</span></summary><div>
+    <p class="tab-titel">Skift kommune</p>${kommuneValg(rod, k)}
+  </div></details>
   <details class="tab-mere"><summary${cur(iMere.some((m) => m.id === aktiv))}>${ikon("mere")}<span>Mere</span></summary><div>
     ${iMere.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n    ")}
   </div></details>
@@ -250,11 +272,10 @@ ${LOGO_SYMBOL}
 <header class="masthead to">
   <div class="wrap mh-top">
     <a class="mh-logo" href="${rod}${kommune ? `kommune/${kommune.slug}.html` : "index.html"}" aria-label="Sagsvagt, til forsiden">${logo(196, 60)}</a>
-    ${aktiv === "forside"
-      ? `<p class="mh-edition"><b>${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}</b><br>Uge ${ugenr(IDAG)}</p>`
-      : `<p class="mh-edition"><b>${esc(udgave || "København")}</b><br>Nyt fra byråd og udvalg</p>`}
+    <details class="mh-edition mere mh-kommune"><summary><b>${esc(udgave || "København")}</b><br>${aktiv === "forside"
+      ? `${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}` : "Skift kommune"}</summary><div>${kommuneValg(rod, kommune)}</div></details>
     <div class="mh-handling">
-      <a class="mh-cta" href="${rod}vagt.html?fra=avis#tilmeld">Bliv tester</a>
+      <a class="mh-cta" href="${rod}vagt.html?fra=avis#tilmeld">Skriv dig op</a>
       <a class="mh-ikon" href="${rod}min/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.2 4-4.9 7.2-4.9s5.9 1.7 7.2 4.9"/><circle cx="12" cy="12" r="10.2"/></svg><span>Log ind</span></a>
     </div>
   </div>
@@ -273,7 +294,11 @@ ${indhold}
 </footer>
 <script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
-document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});</script>
+document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});
+/* Husk kommunen (valgt i kommunevælgeren eller åbnet på dens forside); Københavns forside viser så vejen dertil */
+try{var K="svKommune";document.addEventListener("click",function(e){var a=e.target.closest("a[data-kommune]");if(a)localStorage.setItem(K,JSON.stringify({s:a.dataset.kommune,n:a.textContent}))});${aktiv === "k-forside" ? `
+localStorage.setItem(K,${JSON.stringify(JSON.stringify({ s: kommune.slug, n: kommune.navn }))});` : ""}${aktiv === "forside" ? `
+var v=JSON.parse(localStorage.getItem(K)||"null");if(v&&/^[a-z-]+$/.test(v.s)&&v.s!=="koebenhavn"){var p=document.createElement("p"),l=document.createElement("a");p.className="wrap din-kommune";l.href="kommune/"+v.s+".html";l.textContent="Gå til din kommune: "+v.n;p.appendChild(l);document.querySelector("main").prepend(p)}` : ""}}catch(e){}</script>
 </body>
 </html>
 `;
@@ -340,6 +365,8 @@ function kortBeslutning(t, max = 520) {
     if (liste && l && /^[A-ZÆØÅ][^.:!?]*$/.test(l) && l.includes(",")) { l.split(",").map((x) => x.trim()).filter(Boolean).forEach((n) => tal[liste].add(n)); continue; }
     if (!l) { liste = null; linjer.push(""); continue; }
     liste = null;
+    // Mødenoter som "Fraværende: Henrik Hertz (C)" eller "Afbud: …" er ikke en del af beslutningen
+    if (/^(?:fraværende|afbud|ikke til stede)\b[^:]{0,30}:/i.test(l)) continue;
     // Sætning for sætning, for beslutningen og noten kan stå på samme linje ("Tiltrådte indstillingen. X deltog ikke.")
     const ren = l.split(/(?<=[.!?])\s+/).filter((x) => !(PROCEDURE.test(x) && x.length < 200)).join(" ");
     if (ren) linjer.push(ren);
@@ -366,7 +393,7 @@ const beslutningsboks = (s) => s.status === "besluttet"
 const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="paa-mail">
   <h2 class="rubrik">Politik, der rammer dig, hver mandag</h2>
   <p>Vælg det, du går op i, fx boliger, cykler eller natteliv. Så sender vi dig de sager, politikerne har på bordet, forklaret så det giver mening. Det er gratis, og vi søger testere.</p>
-  <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Bliv tester</a>
+  <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Skriv dig op</a>
 </aside>`;
 // "Hvad kan du gøre?": kun det, sagen og reglerne dækker. Byrådets møder er offentlige (styrelseslovens § 10),
 // udvalgenes er lukkede (§ 20). Høringsfristen står i sagen. Uden noget at gøre vises boksen ikke.
@@ -405,7 +432,7 @@ const testerBoks = (s) => {
   return `<aside class="paa-mail tester">
   <h2 class="rubrik">Få ${om} hver mandag</h2>
   <p>Vi læser alle dagsordener, så du ikke skal. Hver mandag får du de sager, der handler om det, du følger. Det er gratis, og vi søger testere i hele Danmark.</p>
-  <a href="../vagt.html?fra=sag${hvad ? `&amp;emne=${encodeURIComponent(hvad)}` : ""}${erKK(s) ? "" : `&amp;kommune=${encodeURIComponent(s.kommune)}`}#tilmeld">Bliv tester</a>
+  <a href="../vagt.html?fra=sag${hvad ? `&amp;emne=${encodeURIComponent(hvad)}` : ""}${erKK(s) ? "" : `&amp;kommune=${encodeURIComponent(s.kommune)}`}#tilmeld">Skriv dig op</a>
 </aside>`;
 };
 // Én linje pr. sag: hvor, overskrift og dato
@@ -416,11 +443,19 @@ async function laesRedaktion() {
   try { return JSON.parse(await readFile(join(ROD, "avis", "redaktion.json"), "utf8")); } catch { return {}; }
 }
 
+// FirstAgenda-PDF'er (fx Herning) har afdelingernes fordelingsliste og sagsbehandleren midt i teksten:
+// "Kommunikation\n\nDIR\n\nBFU …\n\nX\n\nSagsbehandler: Navn\nØvrige sagsbehandlere: …". Den skæres fra.
+const FORDELING = /(?:Kommunikation\s+)?(?:(?<=^|\s)[A-ZÆØÅ]{2,4}\s+){3,}(?:X\s+)*Sagsbehandler:[^\n]*?(?:\n|(?=Øvrige sagsbehandlere:))\s*(?:Øvrige sagsbehandlere:\s*)?/g;
+export const udenFordeling = (t = "") => t.replace(FORDELING, "\n").trim();
+
 // ---------- Sider ----------
 async function main() {
   const filer = (await readdir(join(ROD, "data"))).filter((f) => f.endsWith(".json"));
   const alle = [];
-  for (const f of filer) alle.push(...Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager));
+  for (const f of filer) {
+    const sg = Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager);
+    alle.push(...(f === "kk.json" ? sg : sg.map((s) => ({ ...s, afsnit: (s.afsnit || []).map((a) => ({ ...a, tekst: udenFordeling(a.tekst) })) }))));
+  }
   const red = await laesRedaktion();
   const FORENKLET = await laesForenklet(); // "Forklar sagen enkelt" (avis/forenklet.mjs)
   const alleSager = alle.filter(publicerbar).map(berig).map((s) => {
@@ -435,8 +470,10 @@ async function main() {
     const egne = andre.filter((s) => s.kommune === navn);
     const top = [...new Set(egne.map((s) => s.udvalg))].find((u) => BYRAAD.test(u));
     if (top) TOPRAAD.set(navn, top);
+    if (KOMMUNE[navn]) UDGAVER.push(KOMMUNE[navn]);
     if (KOMMUNE[navn]) KSTED.set(navn, await findKommuneSteder(KOMMUNE[navn], egne, ROD));
   }
+  UDGAVER.sort((a, b) => a.navn.localeCompare(b.navn, "da"));
   console.log(`${alle.length} punkter, ${sager.length} publiceres i København${andre.length ? `, ${andre.length} i andre kommuner` : ""}`);
 
   const H = { ROD, IDAG, SITE_URL, esc, side, kicker, emneLinks, hvorNavn, stor, kortDato, datoTekst, ugedag, slug, saetninger, erLokaludvalg, bydel, vagtBoks, notits, EMNER, MDR, d };
@@ -707,7 +744,7 @@ async function main() {
     emner: Object.fromEntries(Object.entries(EMNER).map(([id, e]) => [id, { navn: e.navn, f: e.f }])),
     moeder: [...kommendeMoeder, ...senesteMoeder].map((m) => ({ dato: m.dato, u: m.udvalg, url: m.url, n: m.antal, referat: m.referat })),
     sager: sager.map((s) => ({
-      id: s.id, t: s.titel, kt: s.kommunensTitel, d: s.dek, u: s.udvalg, dato: s.dato, st: s.status, ud: s.udfald, sm: s.stemmer, tal: s.tal,
+      id: s.id, t: s.titel, kt: s.kommunensTitel, d: s.dek, u: s.udvalg, dato: s.dato, st: s.status, ud: s.udfald, kb: s.kortBesl || undefined, sm: s.stemmer, tal: s.tal,
       e: s.emner, et: s.emnerTitel, url: s.url, k: s.kilde, v: s.vaegt, r: s.rutine ? 1 : 0, x: saetninger(s.afsnit.map((a) => a.tekst).join(" "), 600),
     })),
   }));

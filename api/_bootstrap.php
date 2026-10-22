@@ -81,6 +81,11 @@ function db(): PDO {
         inviteret VARCHAR(25) NULL, adgangskode VARCHAR(255) NULL, profil $tekst NULL, sidst_inde VARCHAR(25) NULL)");
     // mail_fejl: hvornår redaktionen markerede, at mails til adressen kommer retur (kolonnen kom til senere)
     try { $pdo->query('SELECT mail_fejl FROM abonnenter LIMIT 1'); } catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN mail_fejl VARCHAR(25) NULL'); }
+    // Fælles persontabel med foreningen Sæt Dagsordenen: medlem = hvornår man blev medlem (NULL = ikke medlem).
+    // Rækker, der kun er medlemmer, har status 'medlem', så mandagsmail, invitationer, push og login springer dem over.
+    foreach (['medlem' => 'VARCHAR(25) NULL', 'navn' => 'VARCHAR(100) NULL', 'alder' => 'INT NULL'] as $kol => $type) {
+        try { $pdo->query("SELECT $kol FROM abonnenter LIMIT 1"); } catch (PDOException $e) { $pdo->exec("ALTER TABLE abonnenter ADD COLUMN $kol $type"); }
+    }
     $pdo->exec("CREATE TABLE IF NOT EXISTS tokens (
         id $id, abonnent_id INT NOT NULL, type VARCHAR(10) NOT NULL, hash CHAR(64) NOT NULL UNIQUE, udloeber VARCHAR(25) NOT NULL, brugt VARCHAR(25) NULL)");
     $pdo->exec("CREATE TABLE IF NOT EXISTS forsoeg (noegle VARCHAR(200) NOT NULL, tid INT NOT NULL)");
