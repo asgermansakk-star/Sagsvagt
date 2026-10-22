@@ -1,0 +1,370 @@
+{
+ "lavet": "2026-10-22",
+ "kommuner": {
+  "viborg": {
+   "kommune": "Viborg",
+   "moeder": 50,
+   "udvalg": 13,
+   "punkter": 475,
+   "sager": 466,
+   "referater": 412,
+   "udenBeslutning": 1,
+   "nulMoeder": 5,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.viborg.dk/vis?id=d385265f-42de-40db-b689-2df2e75d2cc5"
+   ]
+  },
+  "fredericia": {
+   "kommune": "Fredericia",
+   "moeder": 52,
+   "udvalg": 15,
+   "punkter": 349,
+   "sager": 282,
+   "referater": 278,
+   "udenBeslutning": 19,
+   "nulMoeder": 11,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordner.fredericia.dk/vis?id=b8031444-7736-4c66-8e0e-db187948421b",
+    "https://dagsordner.fredericia.dk/vis?id=0cb3bbc2-336a-4589-a61b-0f76a9ce65c9",
+    "https://dagsordner.fredericia.dk/vis?id=218081fd-a988-46ed-bd8c-bde9ff4fe9df"
+   ]
+  },
+  "albertslund": {
+   "kommune": "Albertslund",
+   "moeder": 46,
+   "udvalg": 14,
+   "punkter": 351,
+   "sager": 260,
+   "referater": 225,
+   "udenBeslutning": 0,
+   "nulMoeder": 9,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": []
+  },
+  "broenderslev": {
+   "kommune": "Brønderslev",
+   "moeder": 48,
+   "udvalg": 14,
+   "punkter": 398,
+   "sager": 301,
+   "referater": 292,
+   "udenBeslutning": 0,
+   "nulMoeder": 8,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": []
+  },
+  "guldborgsund": {
+   "kommune": "Guldborgsund",
+   "moeder": 34,
+   "udvalg": 11,
+   "punkter": 203,
+   "sager": 175,
+   "referater": 175,
+   "udenBeslutning": 0,
+   "nulMoeder": 3,
+   "versaltitler": 20,
+   "nyesteMoede": "2026-10-08",
+   "opdateret": "2026-10-22",
+   "fejl": [
+    "20 titler med versaler"
+   ],
+   "eksempler": []
+  },
+  "herning": {
+   "kommune": "Herning",
+   "moeder": 56,
+   "udvalg": 13,
+   "punkter": 329,
+   "sager": 271,
+   "referater": 255,
+   "udenBeslutning": 1,
+   "nulMoeder": 17,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-22",
+   "fejl": [
+    "17 af 56 møder gav ingen punkter (PDF'en kunne ikke læses)"
+   ],
+   "eksempler": [
+    "https://dagsordener.herning.dk/vis?id=d118d6a5-c7a6-48d6-8527-98379aee7257"
+   ]
+  },
+  "lyngby-taarbaek": {
+   "kommune": "Lyngby-Taarbæk",
+   "moeder": 60,
+   "udvalg": 15,
+   "punkter": 302,
+   "sager": 240,
+   "referater": 240,
+   "udenBeslutning": 28,
+   "nulMoeder": 28,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-08",
+   "opdateret": "2026-10-22",
+   "fejl": [
+    "28 af 60 møder gav ingen punkter (PDF'en kunne ikke læses)"
+   ],
+   "eksempler": [
+    "https://dagsordener.ltk.dk/vis?id=8057f009-49d7-467a-9ef3-f003ff1c0b8f",
+    "https://dagsordener.ltk.dk/vis?id=e523179b-380f-40c6-9d86-e777591e95bf",
+    "https://dagsordener.ltk.dk/vis?id=e42e3947-bc33-4f39-b8e6-8ac4cf13c506"
+   ]
+  },
+  "horsens": {
+   "kommune": "Horsens",
+   "moeder": 51,
+   "udvalg": 18,
+   "punkter": 310,
+   "sager": 287,
+   "referater": 251,
+   "udenBeslutning": 0,
+   "nulMoeder": 7,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": []
+  },
+  "odense": {
+   "kommune": "Odense",
+   "moeder": 40,
+   "udvalg": 8,
+   "punkter": 236,
+   "sager": 200,
+   "referater": 188,
+   "udenBeslutning": 0,
+   "nulMoeder": 10,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": []
+  },
+  "frederiksberg": {
+   "kommune": "Frederiksberg",
+   "moeder": 50,
+   "udvalg": 17,
+   "punkter": 251,
+   "sager": 242,
+   "referater": 241,
+   "udenBeslutning": 30,
+   "nulMoeder": 13,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-05",
+   "opdateret": "2026-10-22",
+   "fejl": [
+    "13 af 50 møder gav ingen punkter (PDF'en kunne ikke læses)"
+   ],
+   "eksempler": [
+    "https://dagsordener.frederiksberg.dk/vis?id=ae9db03c-6ec5-46ca-8306-50a433fe42e9",
+    "https://dagsordener.frederiksberg.dk/vis?id=ae9db03c-6ec5-46ca-8306-50a433fe42e9",
+    "https://dagsordener.frederiksberg.dk/vis?id=c317f0d6-c5b2-48b3-8176-84b48cc57678"
+   ]
+  },
+  "gentofte": {
+   "kommune": "Gentofte",
+   "moeder": 45,
+   "udvalg": 20,
+   "punkter": 212,
+   "sager": 171,
+   "referater": 171,
+   "udenBeslutning": 3,
+   "nulMoeder": 8,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-19",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.gentofte.dk/vis?id=4cc306a9-3a00-466d-8961-38f4245ae769",
+    "https://dagsordener.gentofte.dk/vis?id=bea6f25b-b127-471c-9846-9c8fecac40cb",
+    "https://dagsordener.gentofte.dk/vis?id=48a16074-9679-4134-bb40-b2116c28d2a7"
+   ]
+  },
+  "gladsaxe": {
+   "kommune": "Gladsaxe",
+   "moeder": 51,
+   "udvalg": 15,
+   "punkter": 444,
+   "sager": 375,
+   "referater": 299,
+   "udenBeslutning": 27,
+   "nulMoeder": 7,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.gladsaxe.dk/vis?id=0500f10e-e395-48de-8bbe-d67e557da7b8",
+    "https://dagsordener.gladsaxe.dk/vis?id=2d02c33f-184e-4a85-98ed-ec59a104b8c2",
+    "https://dagsordener.gladsaxe.dk/vis?id=1b9aa07f-2754-48e5-a87d-a324ef7879d1"
+   ]
+  },
+  "herlev": {
+   "kommune": "Herlev",
+   "moeder": 37,
+   "udvalg": 16,
+   "punkter": 306,
+   "sager": 262,
+   "referater": 231,
+   "udenBeslutning": 0,
+   "nulMoeder": 6,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-07",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": []
+  },
+  "roedovre": {
+   "kommune": "Rødovre",
+   "moeder": 41,
+   "udvalg": 10,
+   "punkter": 214,
+   "sager": 163,
+   "referater": 141,
+   "udenBeslutning": 0,
+   "nulMoeder": 4,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": []
+  },
+  "hvidovre": {
+   "kommune": "Hvidovre",
+   "moeder": 39,
+   "udvalg": 10,
+   "punkter": 450,
+   "sager": 395,
+   "referater": 395,
+   "udenBeslutning": 0,
+   "nulMoeder": 5,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-19",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": []
+  },
+  "broendby": {
+   "kommune": "Brøndby",
+   "moeder": 44,
+   "udvalg": 13,
+   "punkter": 124,
+   "sager": 123,
+   "referater": 106,
+   "udenBeslutning": 0,
+   "nulMoeder": 21,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-22",
+   "fejl": [
+    "21 af 44 møder gav ingen punkter (PDF'en kunne ikke læses)"
+   ],
+   "eksempler": []
+  },
+  "taarnby": {
+   "kommune": "Tårnby",
+   "moeder": 40,
+   "udvalg": 13,
+   "punkter": 402,
+   "sager": 321,
+   "referater": 293,
+   "udenBeslutning": 3,
+   "nulMoeder": 6,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.taarnby.dk/vis?id=342ecc12-0821-4c84-9d02-ee438599575a",
+    "https://dagsordener.taarnby.dk/vis?id=b17389df-cd4f-4fb7-ae33-24609a5e8a78",
+    "https://dagsordener.taarnby.dk/vis?id=e9749772-8f61-4f4a-8ba4-2e686a057e04"
+   ]
+  },
+  "dragoer": {
+   "kommune": "Dragør",
+   "moeder": 23,
+   "udvalg": 7,
+   "punkter": 254,
+   "sager": 222,
+   "referater": 207,
+   "udenBeslutning": 3,
+   "nulMoeder": 3,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.dragoer.dk/vis?id=0fb294a4-da9e-4c7e-8f8d-af6ebfdacd06",
+    "https://dagsordener.dragoer.dk/vis?id=ed6b763c-9bb5-402c-92fd-cf9c9a21a7d2",
+    "https://dagsordener.dragoer.dk/vis?id=db23f0ba-1bc9-4769-b6de-ccbb5af09943"
+   ]
+  },
+  "vallensbaek": {
+   "kommune": "Vallensbæk",
+   "moeder": 16,
+   "udvalg": 7,
+   "punkter": 137,
+   "sager": 108,
+   "referater": 108,
+   "udenBeslutning": 3,
+   "nulMoeder": 4,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-07",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.vallensbaek.dk/vis?id=6ab09e87-1ddc-488f-ace8-73577adb8183",
+    "https://dagsordener.vallensbaek.dk/vis?id=b1483f3a-985f-43af-ae92-5abba6a890b4",
+    "https://dagsordener.vallensbaek.dk/vis?id=1ba86a2f-5eb3-4945-9930-c5a65c3f0b03"
+   ]
+  },
+  "hoeje-taastrup": {
+   "kommune": "Høje-Taastrup",
+   "moeder": 36,
+   "udvalg": 11,
+   "punkter": 179,
+   "sager": 107,
+   "referater": 101,
+   "udenBeslutning": 0,
+   "nulMoeder": 4,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": []
+  },
+  "ballerup": {
+   "kommune": "Ballerup",
+   "moeder": 53,
+   "udvalg": 20,
+   "punkter": 508,
+   "sager": 381,
+   "referater": 340,
+   "udenBeslutning": 24,
+   "nulMoeder": 9,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-20",
+   "opdateret": "2026-10-22",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsorden.ballerup.dk/vis?id=4aea1a26-5c01-48be-8ab9-e24ab9a0de70",
+    "https://dagsorden.ballerup.dk/vis?id=9b348329-76c9-4dcc-a6ca-7673e0d765a6",
+    "https://dagsorden.ballerup.dk/vis?id=7f6bd7d8-b8f9-4f0b-8e77-7658d9cf6c78"
+   ]
+  }
+ }
+}
