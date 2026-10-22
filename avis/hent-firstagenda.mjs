@@ -20,7 +20,7 @@ const PAUSE_MS = Number(process.env.PAUSE_MS || 1500);
 const DAGE = Number(process.env.DAGE || 75);
 const PDFTOTEXT = process.env.PDFTOTEXT || "pdftotext";
 // Hæves, når parseren lærer nye PDF-formater; så hentes møder, der før gav nul punkter, igen én gang
-const PARSER = 2;
+const PARSER = 3;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const slug = (s) => s.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa").normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -163,7 +163,7 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
     "SAGENS FORLØB", "KOMMUNIKATION", "VIDERE PROCES", "SAGSRESUMÉ", "SAGSRESUME", "INDSTILLING", "LOVGRUNDLAG", "LØSNINGER", "BESLUTNING", "VURDERING",
     "HISTORIK", "SAGSGANG", "LØSNING", "ØKONOMI", "RESUMÉ", "RESUME", "BILAG"];
   const LINJE = ["Sagsfremstilling", "Sagsbeskrivelse", "Baggrund", "Sagsresumé", "Problemstilling", "Videre proces", "Indstilling", "Beslutning", "Vurdering", "Økonomi", "Resumé", "Resume", "Bilag"];
-  const MARK = new RegExp(`(BESLUTNING I (.+?) (?:DEN|den) (\\d{2})-?(\\d{2})-?(\\d{4})|(?<![A-ZÆØÅa-zæøå])(${OVERSKRIFTER.join("|")})(?![A-ZÆØÅa-zæøå])|(?<=^|\\n)(${LINJE.join("|")})(?=[ \\t]*\\n|\\s+[A-ZÆØÅ][a-zæøå]))`, "g");
+  const MARK = new RegExp(`((?:BESLUTNING(?:ER)?|(?<=^|\\n)Beslutning(?:er)?)(?: [Ii])? (.+?) (?:DEN|[Dd]en) (\\d{2})-?(\\d{2})-?(\\d{4})|(?<![A-ZÆØÅa-zæøå])(${OVERSKRIFTER.join("|")})(?![A-ZÆØÅa-zæøå])|(?<=^|\\n)(${LINJE.join("|")})(?=[ \\t]*\\n|\\s+[A-ZÆØÅ][a-zæøå]))`, "g");
   const NAVN = { RESUME: "Resumé", "RESUMÉ": "Resumé", SAGSRESUME: "Resumé", "SAGSRESUMÉ": "Resumé", Resume: "Resumé", "Sagsresumé": "Resumé",
     SAGSFREMSTILLING: "Sagsfremstilling", SAGSBESKRIVELSE: "Sagsfremstilling", "BESKRIVELSE AF SAGEN": "Sagsfremstilling", Sagsbeskrivelse: "Sagsfremstilling" };
   const afsnitNavn = (h) => NAVN[h] || h.charAt(0).toUpperCase() + h.slice(1).toLowerCase();
@@ -267,6 +267,8 @@ async function hentKommune(k) {
   const enUge = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
   const nye = [...dok].filter(([id, lastmod]) => {
     const d = gemt.dokumenter[id];
+    // Hele kommunen hentes igen én gang, når parseren er hævet siden kommunens sidste fulde hentning
+    if ((gemt.parser || 1) < PARSER) return true;
     return d?.lastmod !== lastmod || (d.punkter === 0 && (d.tomFra || ((d.dato || "") >= enUge ? idag : "")) >= enUge)
       || (d.punkter === 0 && (d.parser || 1) < PARSER); // tomme møder prøves igen, når parseren er forbedret
   });
@@ -328,6 +330,7 @@ async function hentKommune(k) {
     const b = a.titel.match(/^Behandling i (.+?) (\d+\. \S+ \d{4})$/);
     if (b && kendte.has(norm(b[1]))) a.titel = `Behandling i ${kendte.get(norm(b[1]))} ${b[2]}`;
   }
+  gemt.parser = PARSER;
   gemt.opdateret = new Date().toISOString();
   gemt.kommune = k.kommune;
   await mkdir(join(ROD, "data"), { recursive: true });
