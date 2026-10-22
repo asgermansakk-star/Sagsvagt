@@ -9,6 +9,7 @@ import { bygBokse } from "./boks.mjs";
 import { bygKommuner } from "./kommuner.mjs";
 import { soegIndhold, unikTitel, findKommuneSteder } from "./udgave.mjs";
 import { laesForenklet, forenkletBoks } from "./forenklet.mjs";
+import { laesPerspektiv, perspektivBokse } from "./perspektiv.mjs";
 import { sagensVej, vejBoks, bygPartier, bygHoeringer, bygKalendere, bygFeeds, kalenderLink, feedLink } from "./ekstra.mjs";
 
 const ROD = join(import.meta.dirname, "..");
@@ -68,7 +69,7 @@ const renDek = (t, udvalg) => {
 const STOEJ = /^(godkendelse af (dagsorden|referat)|referat og godkendelse|eventuelt|evt\.?$|meddelelser|orientering$|orientering fra|sager til orientering|kommende sager|næste møde|åben spørgetid|borgernes tid|aflæggerbordet|beslutning på fortrolige|fremlæggermappe|rokering i udvalg|borgerbesøg|spørgetid|underskrift)/i;
 // Rutinesager publiceres, men kommer ikke på forsiden
 const RUTINE = /(forretningsorden|regnskab|økonomi efter budget|bydelspulje|puljeansøgning|status på bydelsplan|mødekalender)|^(henvendelser|henvendelse til|puljeansøgning|ansøgninger til|beslutning om (pulje)?ansøgning|anerkendelsespris|punkter til dagsorden|mødeplan|ændring af forretningsorden|forretningsorden|.*studietur|regnskab|anden regnskabsprognose|aflæggelse af|årsplan|udpegning af|valg af|godkendelse af referat|tredje sag om bevillings|teknisk tilpasning)/i;
-const renTitel = (t) => t.replace(/^[A-ZÆØÅ]-sag:\s*/, "").replace(/^[A-ZÆØÅ]\.\s+/, "")
+const renTitel = (t) => t.replace(/^§\s*12\s*[-–]\s*/, "").replace(/^[A-ZÆØÅ]-sag:\s*/, "").replace(/^[A-ZÆØÅ]\.\s+/, "")
   // Andre kommuners udvalgsvej foran titlen ("PBU/ØU/KB - Beslutning om …", "B-sag - …") er intern; den skæres fra
   .replace(/^[A-ZÆØÅ]{1,6}(?:\/[A-ZÆØÅ]{1,6})+\s*[-–]\s*/, "").replace(/^[A-ZÆØÅ]-sag\s*[-–]\s*/, "").replace(/^Beslutning om\s+/i, "")
   .replace(/^Beslutning(:| vedr\.?)\s+/i, "").replace(/\s+/g, " ").trim().replace(/^./, (c) => c.toUpperCase());
@@ -448,16 +449,53 @@ async function laesRedaktion() {
 const FORDELING = /(?:Kommunikation\s+)?(?:(?<=^|\s)[A-ZÆØÅ]{2,4}\s+){3,}(?:X\s+)*Sagsbehandler:[^\n]*?(?:\n|(?=Øvrige sagsbehandlere:))\s*(?:Øvrige sagsbehandlere:\s*)?/g;
 export const udenFordeling = (t = "") => t.replace(FORDELING, "\n").trim();
 
+// Kommunernes interne mærker i titlen: punktnummer (kun når hele kommunen nummererer), Høje-Taastrups "I - "/"A - "
+// og " - ØU", Lyngby-Taarbæks "(Beslutning)" og en dato til sidst ("- 2026-10-01")
+// Titler med versaler (Guldborgsunds "BESLUTNINGSSAG: …") skrives med små bogstaver; ord, der står med stort
+// begyndelsesbogstav i sagens egen tekst (stednavne, firmaer), beholder det.
+const VERSALSAG = /^(?:BESLUTNINGSSAG|ORIENTERINGSSAG|DRØFTELSESSAG|TEMASAG)\s*:\s*/;
+function udenVersaler(t, tekst = "") {
+  if (t.length < 12 || t !== t.toUpperCase() || !/[A-ZÆØÅ]{4}/.test(t)) return t;
+  // Ord fra sagens tekst: står ordet nogensinde med lille, er det et almindeligt ord; ellers beholdes stavningen
+  const smaa = new Set(), store = new Map(), versal = new Set();
+  for (const o of tekst.match(/[A-Za-zÆØÅæøåé]+(?:-[A-Za-zÆØÅæøåé]+)*/g) || []) {
+    if (o === o.toLowerCase()) smaa.add(o);
+    else if (o === o.toUpperCase() && o.length > 1) versal.add(o);
+    else store.set(o.toUpperCase(), o);
+  }
+  const u = t.replace(VERSALSAG, "").split(/(\s+)/).map((o) => {
+    if (/^\s+$/.test(o) || !/[A-ZÆØÅ]/.test(o)) return o;
+    const ren = o.replace(/[^A-ZÆØÅÉ-]/g, ""), lille = ren.toLowerCase();
+    if (versal.has(ren) && ren.length > 1 && !smaa.has(lille)) return o; // forkortelser, der også står med versaler i teksten
+    if (store.has(ren) && !smaa.has(lille)) return o.replace(ren, store.get(ren));
+    return o.toLowerCase();
+  }).join("");
+  return u.replace(/^./, (c) => c.toUpperCase());
+}
+
+export const kommuneTitel = (t, nummereret, tekst) => {
+  let u = udenVersaler(nummereret ? t.replace(/^\d+\.\s+/, "") : t, tekst);
+  u = u.replace(/^[A-ZÆØÅ]\s+[-–]\s+/, "").replace(/^(?:Beslutningssag|Orienteringssag|Drøftelsessag|Temasag)\s*:\s*/i, "").replace(/^Beslutning\s*[-–;:]\s+/, "")
+    .replace(/\s*\((?:Beslutning|Orientering|Drøftelse|Godkendelse|Indstilling)\)\s*$/i, "")
+    .replace(/\s+[-–]\s+(?:\d{4}-\d{2}-\d{2}|\d{2}-\d{2}-\d{4})\s*$/, "")
+    .replace(/\s+[-–]\s+(?:ØU|TU|KB|BR|PMU|ISU|ÆSU|FKU|SBU|BMU|ByR|KMU|BU|SU|EU|AU)\s*$/, "");
+  return u.trim() || t;
+};
+
 // ---------- Sider ----------
 async function main() {
   const filer = (await readdir(join(ROD, "data"))).filter((f) => f.endsWith(".json"));
   const alle = [];
   for (const f of filer) {
     const sg = Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager);
-    alle.push(...(f === "kk.json" ? sg : sg.map((s) => ({ ...s, afsnit: (s.afsnit || []).map((a) => ({ ...a, tekst: udenFordeling(a.tekst) })) }))));
+    // Nogle kommuner nummererer alle punkter i titlen ("4. Beslutning - …", Hvidovre og Høje-Taastrup). Kun når
+    // næsten alle titler i kommunen har nummer, skæres det fra; ellers ville "2. behandling af budget" miste sit tal.
+    const nummereret = f !== "kk.json" && sg.filter((s) => /^\d+\.\s/.test(s.titel)).length > 0.8 * sg.length;
+    alle.push(...(f === "kk.json" ? sg : sg.map((s) => ({ ...s, titel: kommuneTitel(s.titel, nummereret, (s.afsnit || []).map((a) => a.tekst).join("\n")), afsnit: (s.afsnit || []).map((a) => ({ ...a, tekst: udenFordeling(a.tekst) })) }))));
   }
   const red = await laesRedaktion();
   const FORENKLET = await laesForenklet(); // "Forklar sagen enkelt" (avis/forenklet.mjs)
+  const PERSPEKTIV = await laesPerspektiv(); // "Hvad betyder det for dig?" og "For og imod" (avis/perspektiv.mjs)
   const alleSager = alle.filter(publicerbar).map(berig).map((s) => {
     const r = red.sager?.[s.id];
     return r?.overskrift ? { ...s, kommunensTitel: s.titel, titel: r.overskrift.trim(), dek: (r.underrubrik || s.dek).trim() } : s;
@@ -575,6 +613,7 @@ async function main() {
       </header>
       <div class="body">
         ${forklar(kortFortalt(s), esc, 3)}
+        ${perspektivBokse(s, PERSPEKTIV, esc)}
         ${hvadKanDuGoere(s)}
         ${vejBoks(s, vej, H)}
       <!--tester-->

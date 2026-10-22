@@ -475,3 +475,25 @@ footer.foot a:hover { text-decoration: underline; }
 .din-kommune { margin-top: 16px; margin-bottom: 0; }
 .din-kommune a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: var(--r-knap); background: var(--nat); color: var(--kalk); font-weight: 600; text-decoration: none; }
 .din-kommune a::after { content: "→"; margin-left: 8px; }
+
+/* "Hvad betyder det for dig?" og "For og imod" (avis/perspektiv.mjs) */
+.kf.hverdag { box-shadow: inset 3px 0 0 var(--indigo); }
+.hverdag-tekst { margin: 0; font-size: 1.0625rem; line-height: 1.6; }
+.hverdag-hvem { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 14px 0 0; }
+.hverdag-hvem > span:first-child { font-size: var(--fodnote); font-weight: 600; color: var(--muted); margin-right: 4px; }
+.hvem-tag { display: inline-block; padding: 4px 10px; border-radius: 999px; background: var(--kalk); border: 1px solid var(--rule); font-size: var(--fodnote); font-weight: 600; color: var(--blaek); }
+.fi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 4px; }
+.fi-grid > div { background: var(--kalk); border-radius: var(--r-felt); padding: 14px 16px 6px; border-top: 3px solid var(--skifer); }
+.fi-grid > .fi-imod { border-top-color: var(--rubin); }
+.fi-grid h3 { margin: 0 0 8px; font-size: var(--sekundaer); font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
+.fi-for h3 { color: var(--indigo); }
+.fi-imod h3 { color: var(--vin); }
+.fi-grid ul { list-style: none; margin: 0; padding: 0; }
+.fi-grid li { padding: 0 0 12px; margin: 0; }
+.fi-grid li + li { margin-top: 0; padding-top: 12px; border-top: 1px solid var(--rule); }
+.fi-tekst { display: block; font-size: var(--sekundaer); line-height: 1.5; }
+.fi-kilde { display: inline-block; margin-top: 4px; font-size: var(--fodnote); color: var(--muted); }
+.fi-kilde.debat { font-style: italic; }
+.fi-tom { margin: 0 0 10px; font-size: var(--sekundaer); color: var(--muted); }
+.for-imod .kf-mere { margin-top: 14px; }
+@media (max-width: 640px) { .fi-grid { grid-template-columns: 1fr; } }

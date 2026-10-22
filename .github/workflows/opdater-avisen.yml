@@ -42,9 +42,10 @@ jobs:
 
       - run: npm ci
 
-      # Ved push bygger vi bare det, der er i repoet; robotten kører kun på tidsplan/manuelt
+      # Ved push bygger vi bare det, der er i repoet; robotten kører kun på tidsplan/manuelt,
+      # eller når commit-beskeden indeholder [hent]
       - name: Hent nye sager fra kk.dk
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
         run: node avis/hent-kk.mjs
         env:
           SIDER: "2"
@@ -52,13 +53,42 @@ jobs:
       # Andre kommuner (avis/firstagenda.json) hentes som PDF via sitemappet, som robots.txt tillader.
       # Fejler en kommune, opdateres København alligevel.
       - name: Installer pdftotext
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
         run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
 
+      # Find FirstAgenda-portalen for kommuner, vi ikke har endnu (tjekkes højst én gang om ugen pr. kommune),
+      # og åbn de næste BATCH kommuner. Første hentning og første upload af en kommune er tung, derfor i bidder.
+      - name: Find og åbn nye kommuner
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
+        continue-on-error: true
+        run: node avis/find-kommuner.mjs && node avis/aabn-kommuner.mjs
+        env:
+          BATCH: ${{ vars.BATCH || '10' }}
+
+      # Kommunerne hentes ti ad gangen (hver server får stadig kun én forespørgsel ad gangen).
+      # DAGE: hvor langt tilbage en ny kommune hentes første gang.
       - name: Hent nye sager fra andre kommuner (FirstAgenda)
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
         continue-on-error: true
         run: node avis/hent-firstagenda.mjs
+        env:
+          SAMTIDIG: "10"
+          DAGE: "120"
+
+      - name: Kvalitet pr. kommune
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
+        continue-on-error: true
+        run: node avis/kvalitet.mjs
+
+      # "Hvad betyder det for dig?" og "For og imod" til de vigtigste nye sager (avis/perspektiv.mjs).
+      # Kører kun, når hemmeligheden ANTHROPIC_API_KEY er sat. MAKS styrer hvor mange sager pr. kørsel.
+      - name: Skriv For og imod med AI
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
+        continue-on-error: true
+        run: node avis/perspektiv.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAKS: ${{ vars.PERSPEKTIV_MAKS || '120' }}
 
       - name: Byg avisen
         run: node avis/byg.mjs

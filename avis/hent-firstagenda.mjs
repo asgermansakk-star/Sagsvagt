@@ -177,6 +177,23 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   return { type, udvalg, dato: moededato, punkter };
 }
 
+// Gentofte skriver "Beslutninger: Godkendt." sidst i indstillingen, Lyngby-Taarbæk "Beslutning Anbefalet." sidst i
+// økonomiafsnittet. Har et referat intet afsnit med beslutningen, flyttes sådan en hale ud i sit eget afsnit.
+// "Beslutning om …" (lille bogstav efter) og "Beslutningskompetence" rammes ikke. Kan køres igen uden at ændre noget.
+export function udskilBeslutning(s) {
+  const afsnit = s.afsnit || [];
+  if (s.type !== "referat" || !afsnit.length || afsnit.some((a) => /^(Beslutning|Behandling)/.test(a.titel))) return afsnit;
+  const sidst = afsnit.at(-1);
+  const re = /(?<![A-Za-zÆØÅæøå])Beslutning(?:er)?:?[ \t]*\n?[ \t]*(?=[A-ZÆØÅ0-9])/g;
+  let m, fund = null;
+  while ((m = re.exec(sidst.tekst))) fund = m;
+  if (!fund || sidst.tekst.length - fund.index > 1500) return afsnit;
+  const tekst = sidst.tekst.slice(fund.index + fund[0].length).trim();
+  const foer = sidst.tekst.slice(0, fund.index).replace(/\s*Tidligere beslutninger:?\s*$/, "").trim();
+  if (!tekst) return afsnit;
+  return [...afsnit.slice(0, -1), ...(foer ? [{ ...sidst, tekst: foer }] : []), { titel: "Beslutning", tekst }];
+}
+
 // ---------- Én kommune ----------
 async function hentKommune(k) {
   const DATA = join(ROD, "data", `${k.slug}.json`);
@@ -218,10 +235,24 @@ async function hentKommune(k) {
 
   const kendte = new Map(Object.values(gemt.dokumenter).filter((d) => d.udvalg).map((d) => [norm(d.udvalg), d.udvalg]));
   let antal = 0;
+  let fejlGemt = 0;
+  // Teksten fra møder, der ikke kunne læses, gemmes i data/fejl/<kommune>/ (kommer ikke på webhotellet), så parseren
+  // kan rettes ud fra den rigtige PDF-tekst. Højst 5 pr. kommune pr. kørsel.
+  const gemFejl = async (id, tekst, grund) => {
+    if (!tekst || fejlGemt >= 5) return;
+    fejlGemt++;
+    const dir = join(ROD, "data", "fejl", k.slug);
+    await mkdir(dir, { recursive: true });
+    await writeFile(join(dir, `${id}.txt`), `# ${grund}\n# ${k.base}/vis?id=${id}\n\n${tekst.slice(0, 80000)}`);
+  };
   for (const [id, lastmod] of nye) {
+    let tekst = "";
     try {
       const pdf = await hent(`/pdf/GetDagsorden/${id}`, { binaer: true });
-      const m = parsePdf(await pdfTilTekst(pdf), kendte);
+      tekst = await pdfTilTekst(pdf);
+      const m = parsePdf(tekst, kendte);
+      if (!m.punkter.length) await gemFejl(id, tekst, "0 punkter");
+      else await rm(join(ROD, "data", "fejl", k.slug, `${id}.txt`), { force: true });
       // tomFra: hvornår mødet første gang gav nul punkter, så vi kun prøver igen i en uge
       // Mødets gamle punkter fjernes først, så et punkt, der har skiftet nummer eller er sprunget over, ikke bliver hængende
       for (const [sid, s] of Object.entries(gemt.sager)) if (s.kilde === `${k.base}/vis?id=${id}`) delete gemt.sager[sid];
@@ -239,15 +270,20 @@ async function hentKommune(k) {
       console.log(`  ${m.dato} ${m.udvalg} (${m.type}): ${m.punkter.length} punkter`);
     } catch (e) {
       console.warn(`  Sprang over ${id}: ${e.message}`);
+      await gemFejl(id, tekst, e.message);
     }
   }
   // Nogle kommuner bruger et "møde" med en pladsholderdato som beholder (Albertslunds budgetspørgsmål, udgivet 11/9,
   // dateret 24/12). Et rigtigt møde lægges ikke ud måneder før; står mødet over 60 dage efter udgivelsen, er det ikke et møde.
-  const pladsholder = (dato, lastmod) => Date.parse(dato) - Date.parse(lastmod) > 60 * 864e5;
+  // Omvendt lægger nogle kommuner gamle referater op igen (Guldborgsund genudgav møder fra 2024 i august 2026);
+  // et møde, der er over et år ældre end udgivelsen, er arkiv og ikke en nyhed.
+  const pladsholder = (dato, lastmod) => Date.parse(dato) - Date.parse(lastmod) > 60 * 864e5 || Date.parse(lastmod) - Date.parse(dato) > 365 * 864e5;
   for (const [sid, s] of Object.entries(gemt.sager)) {
     const d = gemt.dokumenter[s.kilde.split("id=")[1]];
     if (d && pladsholder(s.dato, d.lastmod)) delete gemt.sager[sid];
   }
+  // Beslutningen står i nogle kommuner inde i sidste afsnit i stedet for under sin egen overskrift
+  for (const s of Object.values(gemt.sager)) s.afsnit = udskilBeslutning(s);
   // Udvalgsnavne i "Behandling i …" står med versaler i PDF'en; brug stavningen fra udvalgets egne møder, når vi kender den
   for (const s of Object.values(gemt.sager)) for (const a of s.afsnit) {
     const b = a.titel.match(/^Behandling i (.+?) (\d+\. \S+ \d{4})$/);
@@ -264,7 +300,13 @@ async function hentKommune(k) {
 if (process.argv[1]?.endsWith("hent-firstagenda.mjs")) {
   const kommuner = JSON.parse(await readFile(join(import.meta.dirname, "firstagenda.json"), "utf8"))
     .filter((k) => k.aktiv && (!process.argv[2] || k.slug === process.argv[2]));
-  for (const k of kommuner) {
-    try { await hentKommune(k); } catch (e) { console.error(`${k.kommune}: ${e.message}`); process.exitCode = 1; }
-  }
+  // Kommunerne ligger på hver sin server, så vi henter flere kommuner ad gangen. Hver server får stadig
+  // kun én forespørgsel ad gangen med pause imellem (klient() ovenfor). SAMTIDIG styrer hvor mange.
+  const SAMTIDIG = Math.max(1, Number(process.env.SAMTIDIG || 10));
+  const koe = [...kommuner];
+  await Promise.all(Array.from({ length: Math.min(SAMTIDIG, koe.length) }, async () => {
+    for (let k; (k = koe.shift()); ) {
+      try { await hentKommune(k); } catch (e) { console.error(`${k.kommune}: ${e.message}`); process.exitCode = 1; }
+    }
+  }));
 }
