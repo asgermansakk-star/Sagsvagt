@@ -29,22 +29,18 @@ function domaener(k) {
   return [...d];
 }
 
-async function hent(url, ms = 12000) {
-  const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), ms);
-  try {
-    const res = await fetch(url, { headers: { "User-Agent": UA, "Accept-Language": "da" }, signal: ctl.signal, redirect: "follow" });
-    return { ok: res.ok, status: res.status, url: res.url, tekst: res.ok ? await res.text() : "" };
-  } catch (e) { return { ok: false, status: 0, fejl: e.cause?.code || e.name }; }
-  finally { clearTimeout(t); }
-}
+// FirstAgenda sender første besøg via /Home/AnonymousAuthentication, som sætter en anonym cookie og sender videre.
+// Derfor bruger vi høsterens klient, der husker cookies (kun kortere pause, da hver host kun får få forespørgsler).
+process.env.PAUSE_MS ??= "300";
+const { klient } = await import("./hent-firstagenda.mjs");
 
-// FirstAgenda sender første besøg via /Home/AnonymousAuthentication; sitemap.xml er tilladt og svarer uden cookie
 async function erFirstAgenda(host) {
-  const sm = await hent(`https://${host}/sitemap.xml`);
-  if (!sm.ok || !/Sitemap\/ForCommittee/i.test(sm.tekst)) return null;
-  const base = new URL(sm.url).origin;
-  const udvalg = (sm.tekst.match(/ForCommittee/gi) || []).length;
-  return { base, udvalg };
+  try {
+    const hent = klient(`https://${host}`);
+    const tekst = await Promise.race([hent("/sitemap.xml"), new Promise((_, nej) => setTimeout(() => nej(new Error("timeout")), 20000))]);
+    if (!/Sitemap\/ForCommittee/i.test(tekst)) return null;
+    return { base: `https://${host}`, udvalg: (tekst.match(/ForCommittee/gi) || []).length };
+  } catch { return null; }
 }
 
 async function findKommune(k) {

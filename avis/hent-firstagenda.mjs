@@ -19,6 +19,8 @@ const UA = "SagsvagtBot/0.1 (+https://sagsvagt.dk/om.html)";
 const PAUSE_MS = Number(process.env.PAUSE_MS || 1500);
 const DAGE = Number(process.env.DAGE || 75);
 const PDFTOTEXT = process.env.PDFTOTEXT || "pdftotext";
+// Hæves, når parseren lærer nye PDF-formater; så hentes møder, der før gav nul punkter, igen én gang
+const PARSER = 2;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const slug = (s) => s.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa").normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -54,7 +56,7 @@ export async function pdfTilTekst(buf) {
 
 const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 // Valgperioden står forskelligt: "(2026-2029)", "2026-2029", "2026 - 2029" eller "2026 2029"
-const udenPeriode = (u) => u.replace(/\s*\(?\d{4}\s*[-–]?\s*\d{4}\)?\s*$/, "").trim();
+const udenPeriode = (u) => u.replace(/\s*[-–]?\s*\(?\d{4}\s*[-–]?\s*\d{4}\)?\s*$/, "").trim();
 const norm = (u) => udenPeriode(u).toUpperCase().replace(/\s+/g, " ");
 const dato = (d, m, y) => `${y}-${m}-${d}`;
 const MDR = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
@@ -72,7 +74,9 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
     .replace(new RegExp(`Beslutninger:\\s*(.+?) den (\\d{1,2})\\. (${MDR.join("|")}) (\\d{4})`, "g"), (_, u, d, m, y) => `BESLUTNING I ${u} DEN ${to(d)}-${to(MDR.indexOf(m) + 1)}-${y}`)
     .replace(/(?:Tidligere beslutninger:\s*)?Udvalg:\s*(.+?)\s+Dato:\s*(\d{2}-\d{2}-\d{4})/g, "BESLUTNING I $1 DEN $2");
   // Datoen kan mangle en bindestreg ("2210-2026", "17-092026"), så de er valgfrie
-  const hoved = t.match(/^\s*(DAGSORDEN|REFERAT)\s+(.+?)\s+d\.\s*(\d{2})-?(\d{2})-?(\d{4})/m);
+  // Lange udvalgsnavne brydes over to linjer ("DAGSORDEN Kultur-, Fritids- &\nFolkesundhedsudvalget d. 26-10-2026")
+  const hoved = t.match(/^\s*(DAGSORDEN|REFERAT)\s+([^\n]+?(?:\n[^\n]+?)?)\s+d\.\s*(\d{2})-?(\d{2})-?(\d{4})/m);
+  if (hoved) hoved[2] = hoved[2].replace(/\s+/g, " ");
   if (!hoved) throw new Error("Kan ikke læse mødets overskrift");
   const type = hoved[1] === "REFERAT" ? "referat" : "dagsorden";
   const udvalg = udenPeriode(hoved[2]);
@@ -83,11 +87,33 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   // (Guldborgsund staver den "Innholdsfortegnelse")
   const mIndhold = t.match(/In[dn]holdsfortegnelse/);
   if (!mIndhold) throw new Error("Ingen indholdsfortegnelse");
-  const reIndhold = /(\S[^\n]*?)\s*\.{4,}\s*(\d+)\s*/gy;
+  const reIndhold = /(\S[^\n]*?)\s*\.{4,}\s*(\d+)(?![.\d])\s*/gy;
   reIndhold.lastIndex = mIndhold.index + mIndhold[0].length;
   while (/\s/.test(t[reIndhold.lastIndex])) reIndhold.lastIndex++;
   const titler = []; let m, slut = reIndhold.lastIndex;
   while ((m = reIndhold.exec(t))) { titler.push({ titel: m[1].trim(), side: +m[2] }); slut = reIndhold.lastIndex; }
+  // Nogle PDF'er (Herning, Ballerup, Albertslund m.fl.) har sidetallene i en kolonne for sig: først alle titler med
+  // prikker, så sidetallene på hver sin linje bagefter. Lange titler kan være brudt over flere linjer før prikkerne.
+  if (!titler.length) {
+    const linjer = t.slice(mIndhold.index + mIndhold[0].length).split("\n");
+    let pos = mIndhold.index + mIndhold[0].length, i = 0, start = "", efterTitel = pos;
+    const tal = [];
+    for (; i < linjer.length; i++) {
+      const l = linjer[i].trim();
+      pos += linjer[i].length + 1;
+      if (!l) continue;
+      const p = l.match(/^(.*?)\s*\.{4,}\s*$/);
+      if (p) { titler.push({ titel: `${start} ${p[1]}`.trim(), side: 0 }); start = ""; efterTitel = pos; continue; }
+      // Gentofte: én titel uden prikker (afkortet, hvis den er lang) og sidetallet på linjen under
+      if (/^\d{1,3}$/.test(l) && !titler.length && start) { titler.push({ titel: start, side: +l, afkortet: true }); tal.push(+l); slut = pos; start = ""; continue; }
+      if (/^\d{1,3}$/.test(l) && titler.length) { tal.push(+l); slut = pos; if (tal.length >= titler.length) break; continue; }
+      if (tal.length || (titler.length && start.length > 300)) break;
+      start = `${start} ${l}`.trim();
+      if (start.length > 300) break;
+    }
+    if (!tal.length) slut = efterTitel;
+    titler.forEach((x, j) => { x.side = tal[j] ?? (tal.at(-1) || 0) + j; });
+  }
   // lastIndex nulstilles, når exec fejler, så slutningen gemmes undervejs. Markøren sættes på linjeskiftet før første
   // punkt, så punktsøgningen ikke rammer selve indholdsfortegnelsen (Gentoftes afkortede første titel gjorde det)
   let markoer = Math.max(0, t.lastIndexOf("\n", slut - 1));
@@ -100,7 +126,7 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   const findTitel = (titel, fra, afkortet = false) => {
     const ord = titel.split(/\s+/).map(reEsc).join("\\s+").replace(/(\d)-(?=\d)/g, "$1-?");
     // Gentofte nummererer punkterne "1 (Åben) Titel" og har nogle gange "Sags ID: …" på samme linje som titlen
-    const re = new RegExp(`(^|\\n)(?:\\d+\\.[ \\t]*|\\d+[ \\t]+\\((?:Åben|Lukket)\\)[ \\t]*)?(${ord}${afkortet ? "[^\\n]*?" : ""})\\.?[ \\t]*(?:\\n|(?=Sags ID:))`, "gi");
+    const re = new RegExp(`(^|\\n)(?:\\d+\\.[ \\t]*|\\d+[ \\t]+[\\(\\[](?:Åben|Lukket)[\\)\\]][ \\t]*|Punkt[ \\t]+\\d+:[ \\t]*)?(${ord}${afkortet ? "[^\\n]*?" : ""})\\.?[ \\t]*(?:\\n|(?=Sags ID:))`, "gi");
     re.lastIndex = fra;
     const f = re.exec(t);
     return f && { titel: afkortet ? f[2].trim() : titel, idx: f.index, start: f.index + f[0].length };
@@ -122,10 +148,11 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   // null = titlen blev ikke fundet; så kender vi ikke slutningen på punktet før.
   // Lukkede punkter står kun i indholdsfortegnelsen, så dem tæller vi bare med i nummereringen.
   const fund = []; let side = 0, nr = 0;
-  for (const { titel, side: s } of titler) {
-    const f = findDele(titel, markoer, side, s);
+  for (const { titel, side: s, afkortet } of titler) {
+    const f = afkortet ? [findTitel(titel, markoer, true)].filter(Boolean) : findDele(titel, markoer, side, s);
+    if (f && !f.length) { nr++; fund.push({ mangler: true, titel }); side = s; continue; }
     if (f) { for (const x of f) fund.push({ ...x, nr: ++nr }); markoer = f.at(-1).start; }
-    else { nr++; if (!/^Lukket\b/i.test(titel)) fund.push(null); }
+    else { nr++; if (!/^Lukket\b/i.test(titel)) fund.push({ mangler: true, titel }); }
     side = s;
   }
 
@@ -135,17 +162,28 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
     "BESLUTNINGSKOMPETENCE", "TIDLIGERE BESLUTNING", "SAGSFREMSTILLING", "STRATEGISK RAMME", "SAGSBESKRIVELSE", "PROBLEMSTILLING", "BORGERPERSPEKTIV",
     "SAGENS FORLØB", "KOMMUNIKATION", "VIDERE PROCES", "SAGSRESUMÉ", "SAGSRESUME", "INDSTILLING", "LOVGRUNDLAG", "LØSNINGER", "BESLUTNING", "VURDERING",
     "HISTORIK", "SAGSGANG", "LØSNING", "ØKONOMI", "RESUMÉ", "RESUME", "BILAG"];
-  const LINJE = ["Sagsfremstilling", "Sagsbeskrivelse", "Sagsresumé", "Problemstilling", "Videre proces", "Indstilling", "Beslutning", "Vurdering", "Økonomi", "Resumé", "Resume", "Bilag"];
+  const LINJE = ["Sagsfremstilling", "Sagsbeskrivelse", "Baggrund", "Sagsresumé", "Problemstilling", "Videre proces", "Indstilling", "Beslutning", "Vurdering", "Økonomi", "Resumé", "Resume", "Bilag"];
   const MARK = new RegExp(`(BESLUTNING I (.+?) (?:DEN|den) (\\d{2})-?(\\d{2})-?(\\d{4})|(?<![A-ZÆØÅa-zæøå])(${OVERSKRIFTER.join("|")})(?![A-ZÆØÅa-zæøå])|(?<=^|\\n)(${LINJE.join("|")})(?=[ \\t]*\\n|\\s+[A-ZÆØÅ][a-zæøå]))`, "g");
   const NAVN = { RESUME: "Resumé", "RESUMÉ": "Resumé", SAGSRESUME: "Resumé", "SAGSRESUMÉ": "Resumé", Resume: "Resumé", "Sagsresumé": "Resumé",
     SAGSFREMSTILLING: "Sagsfremstilling", SAGSBESKRIVELSE: "Sagsfremstilling", "BESKRIVELSE AF SAGEN": "Sagsfremstilling", Sagsbeskrivelse: "Sagsfremstilling" };
   const afsnitNavn = (h) => NAVN[h] || h.charAt(0).toUpperCase() + h.slice(1).toLowerCase();
   const punkter = [];
   fund.forEach((p, i) => {
-    if (!p || /^(Lukket\b|Underskrift(sark)?\.?$)/i.test(p.titel)) return; // ikke fx "Underskrift på skøder …"
-    // Uden næste punkts overskrift ville kroppen tage det næste punkts tekst med; så springer vi punktet over
-    if (fund[i + 1] === null) return;
-    const krop = t.slice(p.start, fund[i + 1]?.idx ?? t.length);
+    if (p.mangler || /^(Lukket\b|Underskrift(sark)?\.?$)/i.test(p.titel)) return; // ikke fx "Underskrift på skøder …"
+    // Mangler næste punkts overskrift (stavet lidt anderledes i teksten), leder vi efter dens første ord på en linje for
+    // sig; ellers stopper vi ved det næste punkt, vi fandt. Uden nogen af delene springes punktet over.
+    let slutIdx = fund[i + 1]?.idx ?? t.length;
+    if (fund[i + 1]?.mangler) {
+      const ord = fund[i + 1].titel.replace(/\.+$/, "").split(/\s+/).slice(0, 4).map(reEsc).join("\\s+");
+      const r = new RegExp(`\\n(?:\\d+\\.\\s*|Punkt\\s+\\d+:\\s*)?${ord}`, "i"), f = r.exec(t.slice(p.start));
+      const naeste = fund.slice(i + 1).find((x) => !x.mangler);
+      if (f) slutIdx = p.start + f.index;
+      else if (naeste) slutIdx = naeste.idx;
+      // Sidste punkt mangler (typisk "Godkendelse af beslutningsprotokol" uden overskrift): tag resten med, men
+      // stop ved en sidefod som "3/3", hvor det næste punkts side begynder
+      else { const fod = /\n\d+\/(\d+)\n/g; let x; while ((x = fod.exec(t.slice(p.start)))) if (x[0].trim().split("/")[0] === x[1]) { slutIdx = p.start + x.index; break; } }
+    }
+    const krop = t.slice(p.start, slutIdx);
     const dele = [...krop.matchAll(MARK)];
     const afsnit = [];
     dele.forEach((d, j) => {
@@ -229,7 +267,8 @@ async function hentKommune(k) {
   const enUge = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
   const nye = [...dok].filter(([id, lastmod]) => {
     const d = gemt.dokumenter[id];
-    return d?.lastmod !== lastmod || (d.punkter === 0 && (d.tomFra || ((d.dato || "") >= enUge ? idag : "")) >= enUge);
+    return d?.lastmod !== lastmod || (d.punkter === 0 && (d.tomFra || ((d.dato || "") >= enUge ? idag : "")) >= enUge)
+      || (d.punkter === 0 && (d.parser || 1) < PARSER); // tomme møder prøves igen, når parseren er forbedret
   });
   console.log(`${k.kommune}: ${udvalgSitemaps.length} udvalg, ${dok.size} møder siden ${fra}, ${nye.length} nye eller ændrede`);
 
@@ -256,7 +295,7 @@ async function hentKommune(k) {
       // tomFra: hvornår mødet første gang gav nul punkter, så vi kun prøver igen i en uge
       // Mødets gamle punkter fjernes først, så et punkt, der har skiftet nummer eller er sprunget over, ikke bliver hængende
       for (const [sid, s] of Object.entries(gemt.sager)) if (s.kilde === `${k.base}/vis?id=${id}`) delete gemt.sager[sid];
-      gemt.dokumenter[id] = { lastmod, type: m.type, udvalg: m.udvalg, dato: m.dato, punkter: m.punkter.length, ...(m.punkter.length ? {} : { tomFra: gemt.dokumenter[id]?.tomFra || idag }) };
+      gemt.dokumenter[id] = { lastmod, type: m.type, udvalg: m.udvalg, dato: m.dato, punkter: m.punkter.length, parser: PARSER, ...(m.punkter.length ? {} : { tomFra: gemt.dokumenter[id]?.tomFra || idag }) };
       for (const p of m.punkter) {
         const sid = `${k.slug}-${m.dato}-${slug(m.udvalg)}-${p.nr}`;
         // Et referat erstatter dagsordenen for samme punkt, men aldrig omvendt
