@@ -27,6 +27,7 @@
    "udvalg": "Økonomiudvalget",
    "dato": "2026-09-09",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-20"
   },
   "8d337022-6ac2-4624-88a8-099aaf4a4302": {
@@ -69,8 +70,8 @@
    "type": "referat",
    "udvalg": "Udsatterådet",
    "dato": "2026-08-27",
-   "punkter": 0,
-   "tomFra": "2026-10-20"
+   "punkter": 8,
+   "parser": 2
   },
   "46724a9e-bc59-40e2-a7d7-6cbc313e06f3": {
    "lastmod": "2026-10-01",
@@ -140,8 +141,8 @@
    "type": "referat",
    "udvalg": "Handicaprådet",
    "dato": "2026-09-24",
-   "punkter": 0,
-   "tomFra": "2026-10-20"
+   "punkter": 10,
+   "parser": 2
   },
   "154b69cc-171d-42c5-930f-c27e7bbbb052": {
    "lastmod": "2026-10-01",
@@ -253,8 +254,8 @@
    "type": "referat",
    "udvalg": "Byrådet",
    "dato": "2026-10-21",
-   "punkter": 0,
-   "tomFra": "2026-10-22"
+   "punkter": 6,
+   "parser": 2
   }
  },
  "sager": {
@@ -3006,12 +3007,17 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.htk.dk/vis?id=4a25b820-3692-4e7e-ba3e-21527d3fe5e7",
-   "hentet": "2026-10-20T16:42:22.673Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=20bc78fd-8296-45bb-a929-3db58facdcb2",
+   "hentet": "2026-10-22T20:07:37.876Z",
    "titel": "1. Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "BYRÅDET DEN 21-10-2026\nGodkendt"
+    }
+   ],
    "bilag": []
   },
   "hoeje-taastrup-2026-10-21-byraadet-2": {
@@ -3019,23 +3025,27 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.htk.dk/vis?id=4a25b820-3692-4e7e-ba3e-21527d3fe5e7",
-   "hentet": "2026-10-20T16:42:22.673Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=20bc78fd-8296-45bb-a929-3db58facdcb2",
+   "hentet": "2026-10-22T20:07:37.876Z",
    "titel": "2. I - Ny cyber- og informationssikkerhedspolitik for Høje-Taastrup Kommune - ØU",
    "afsnit": [
     {
+     "titel": "Baggrund",
+     "tekst": "Høje-Taastrup Kommune har en informationssikkerhedspolitik som overordnet ramme for\narbejdet med beskyttelse af borgernes data og sikker anvendelse af kommunens it-systemer.\nDen nuværende politik blev godkendt af Økonomiudvalget den 23-08-2022.\nSiden den nuværende politik blev godkendt, er kravene og forventningerne til kommunernes\narbejde med cyber- og informationssikkerhed øget betydeligt. Samtidig er kommunens\nkerneopgaver i endnu højere grad blevet afhængige af digitale løsninger, data, leverandører og\nstabile it-systemer. Det gælder blandt andet på velfærdsområderne, i\nmyndighedsbehandlingen, i administrative processer og i den daglige service til borgere og\nvirksomheder.\nMed denne sag fremlægges en ny cyber- og informationssikkerhedspolitik for Høje-Taastrup\nKommune, som erstatter den nuværende informationssikkerhedspolitik. Politikken er opdateret,\nså cyber indgår tydeligere i både titel og indhold, og så den afspejler det aktuelle\ntrusselsbillede og kravene i NIS 2-loven. NIS 2-loven udspringer af EU’s NIS 2-direktiv, som\nskal styrke cybersikkerheden på tværs af EU.\nStyrelsen for Samfundssikkerhed (SAMSIK) har udpeget Direktionen som kommunens\nledelsesorgan efter NIS 2-loven. Direktionen skal derfor fremover godkende kommunens\ncyber- og informationssikkerhedspolitik."
+    },
+    {
      "titel": "Indstilling",
-     "tekst": "at Økonomiudvalget og Byrådet\n1. godkender Høje-Taastrup Kommunes nye cyber- og informationssikkerhedspolitik\n2. tager til efterretning, at Direktionen som kommunens ledelsesorgan efter NIS 2loven fremover har ansvaret for at godkende politikken"
+     "tekst": "at Økonomiudvalget og Byrådet\n1. godkender Høje-Taastrup Kommunes nye cyber- og\ninformationssikkerhedspolitik\n2. tager til efterretning, at Direktionen som kommunens ledelsesorgan efter NIS 2loven fremover har ansvaret for at godkende politikken"
     },
     {
      "titel": "Beslutning",
-     "tekst": "ØKONOMIUDVALGET DEN 07-10-2026 Anbefales."
+     "tekst": "ØKONOMIUDVALGET DEN 07-10-2026\nAnbefales.\n\nBYRÅDET DEN 21-10-2026\nGodkendt."
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Høje-Taastrup Kommunes cyber- og informationssikkerhedspolitik beskriver kommunens overordnede grundlag for sikker anvendelse af digitale systemer og beskyttelse af oplysninger. Politikken er rammesættende for arbejdet med cyber- og informationssikkerhed i kommunen og fungerer som lederes og medarbejderes fælles rettesnor. Politikken har samtidig betydning for borgernes informationssikkerhed i deres kontakt med kommunen. Borgernes henvendelser og kommunens sagsbehandling indebærer ofte behandling af personoplysninger, herunder i mange tilfælde fortrolige eller følsomme oplysninger. Politikken skal derfor være med til at sikre, at borgernes oplysninger behandles og\n\nbeskyttes forsvarligt gennem hele kontakten med kommunen.\nHøje-Taastrup Kommunes cyber- og informationssikkerhedspolitik hviler på fire målsætninger: (1) fortrolighed, (2) integritet, (3) tilgængelighed og (4) lovmedholdelighed. Det betyder, at oplysninger skal behandles fortroligt, at data og systemer skal være korrekte og pålidelige, at digitale tjenester skal være tilgængelige, når der er behov for dem, og at kommunen skal efterleve relevante lovkrav på området.\nPolitikken rummer derudover principper for arbejdet med cyber- og informationssikkerhed. Høje-Taastrup Kommune sidestiller informationssikkerhed med forretningssikkerhed, så arbejdet understøtter stabil drift og levering af vigtige kommunale tjenester. Kommunen prioriterer troværdighed over for borgere og samarbejdspartnere, velafprøvede og forsvarlige løsninger, relevant uddannelse og træning af medarbejdere og ledere samt troværdig og rettidig kommunikation, hvis borgere eller eksterne parter påvirkes af en sikkerhedshændelse. Cyber- og informationssikkerhed er vigtig, fordi kommunens opgaver i stigende grad understøttes af digitale løsninger. Hvis sikkerheden er utilstrækkelig, kan det forstyrre driften, få menneskelige konsekvenser og skade kommunens omdømme. Det kan f.eks. være, hvis oplysninger om borgere kommer i de forkerte hænder, eller hvis vigtige kommunale tjenester såsom hjemmepleje, undervisning eller behandling af ansøgninger om hjælp og støtte ikke kan leveres som følge af systemnedbrud, cyberangreb eller andre digitale hændelser.\nDen nye politik tager udgangspunkt i det aktuelle trusselsbillede, hvor cyberangreb, digital kriminalitet og andre digitale trusler i stigende grad rammer offentlige myndigheder og kan påvirke kommunens oplysninger, it-understøttelse og levering af vigtige kommunale tjenester. Det gør cyber- og informationssikkerhed til en del af kommunens samlede beredskab.\nPolitikken er samtidig opdateret i lyset af NIS 2-loven, som stiller skærpede krav til arbejdet med cyber- og informationssikkerhed. Det betyder blandt andet, at kommunen skal arbejde systematisk og risikobaseret med sikkerhed, have klare rammer for at vurdere risici, håndtere hændelser, sikre fortsat drift og stille krav til leverandører samt sikre en tydelig ledelsesmæssig forankring. Som led i denne forankring har SAMSIK udpeget Direktionen som kommunens ledelsesorgan efter NIS 2-loven. Direktionen har dermed fremadrettet ansvaret for at godkende politikken og føre tilsyn med kommunens gennemførelse af sikkerhedsforanstaltningerne.\nDatabeskyttelsesforordningen stiller krav om, at kommunen som dataansvarlig arbejder med sikkerhed ud fra de risici, der er forbundet med behandlingen af personoplysninger. Det betyder blandt andet, at kommunen skal gennemføre passende tekniske og organisatoriske sikkerhedsforanstaltninger og kunne dokumentere arbejdet med sikkerhed, adgang, behandling af oplysninger og håndtering af brud på persondatasikkerheden.\nSammenhæng til beredskabsindsatsen Cyber- og informationssikkerhed indgår i kommunens samlede beredskab, hvor ITberedskabsplanen er en delplan under den fælles beredskabsplan. Indsatsen organiseres med tydelig ledelse og klare ansvarsområder, så kommunen hurtigt kan reagere og opretholde driften under en kritisk hændelse.\n\nSom en del af beredskabet skal der også på cyber- og informationssikkerhedsområdet udarbejdes handlekort, som beskriver de mest nødvendige handlinger i tilfælde af en krisesituation. Desuden skal plan og handlekort afprøves årligt og suppleres efter behov med andre øvelser. Dermed bliver cyber- og informationssikkerhed en integreret del af kommunens samlede beredskabsindsats."
+     "tekst": "Høje-Taastrup Kommunes cyber- og informationssikkerhedspolitik beskriver kommunens\noverordnede grundlag for sikker anvendelse af digitale systemer og beskyttelse af oplysninger.\nPolitikken er rammesættende for arbejdet med cyber- og informationssikkerhed i kommunen og\nfungerer som lederes og medarbejderes fælles rettesnor.\nPolitikken har samtidig betydning for borgernes informationssikkerhed i deres kontakt med\n\nkommunen. Borgernes henvendelser og kommunens sagsbehandling indebærer ofte\nbehandling af personoplysninger, herunder i mange tilfælde fortrolige eller følsomme\noplysninger. Politikken skal derfor være med til at sikre, at borgernes oplysninger behandles og\nbeskyttes forsvarligt gennem hele kontakten med kommunen.\nHøje-Taastrup Kommunes cyber- og informationssikkerhedspolitik hviler på fire målsætninger:\n(1) fortrolighed, (2) integritet, (3) tilgængelighed og (4) lovmedholdelighed. Det betyder, at\noplysninger skal behandles fortroligt, at data og systemer skal være korrekte og pålidelige, at\ndigitale tjenester skal være tilgængelige, når der er behov for dem, og at kommunen skal\nefterleve relevante lovkrav på området.\nPolitikken rummer derudover principper for arbejdet med cyber- og informationssikkerhed.\nHøje-Taastrup Kommune sidestiller informationssikkerhed med forretningssikkerhed, så\narbejdet understøtter stabil drift og levering af vigtige kommunale tjenester. Kommunen\nprioriterer troværdighed over for borgere og samarbejdspartnere, velafprøvede og forsvarlige\nløsninger, relevant uddannelse og træning af medarbejdere og ledere samt troværdig og\nrettidig kommunikation, hvis borgere eller eksterne parter påvirkes af en sikkerhedshændelse.\nCyber- og informationssikkerhed er vigtig, fordi kommunens opgaver i stigende grad\nunderstøttes af digitale løsninger. Hvis sikkerheden er utilstrækkelig, kan det forstyrre driften,\nfå menneskelige konsekvenser og skade kommunens omdømme. Det kan f.eks. være, hvis\noplysninger om borgere kommer i de forkerte hænder, eller hvis vigtige kommunale tjenester\nsåsom hjemmepleje, undervisning eller behandling af ansøgninger om hjælp og støtte ikke kan\nleveres som følge af systemnedbrud, cyberangreb eller andre digitale hændelser.\nDen nye politik tager udgangspunkt i det aktuelle trusselsbillede, hvor cyberangreb, digital\nkriminalitet og andre digitale trusler i stigende grad rammer offentlige myndigheder og kan\npåvirke kommunens oplysninger, it-understøttelse og levering af vigtige kommunale tjenester.\nDet gør cyber- og informationssikkerhed til en del af kommunens samlede beredskab.\nPolitikken er samtidig opdateret i lyset af NIS 2-loven, som stiller skærpede krav til arbejdet\nmed cyber- og informationssikkerhed. Det betyder blandt andet, at kommunen skal arbejde\nsystematisk og risikobaseret med sikkerhed, have klare rammer for at vurdere risici, håndtere\nhændelser, sikre fortsat drift og stille krav til leverandører samt sikre en tydelig ledelsesmæssig\nforankring.\nSom led i denne forankring har SAMSIK udpeget Direktionen som kommunens ledelsesorgan\nefter NIS 2-loven. Direktionen har dermed fremadrettet ansvaret for at godkende politikken og\nføre tilsyn med kommunens gennemførelse af sikkerhedsforanstaltningerne.\nDatabeskyttelsesforordningen stiller krav om, at kommunen som dataansvarlig arbejder med\nsikkerhed ud fra de risici, der er forbundet med behandlingen af personoplysninger. Det\nbetyder blandt andet, at kommunen skal gennemføre passende tekniske og organisatoriske\nsikkerhedsforanstaltninger og kunne dokumentere arbejdet med sikkerhed, adgang,\nbehandling af oplysninger og håndtering af brud på persondatasikkerheden.\nSammenhæng til beredskabsindsatsen\nCyber- og informationssikkerhed indgår i kommunens samlede beredskab, hvor IT-\n\nberedskabsplanen er en delplan under den fælles beredskabsplan. Indsatsen organiseres med\ntydelig ledelse og klare ansvarsområder, så kommunen hurtigt kan reagere og\nopretholde driften under en kritisk hændelse.\nSom en del af beredskabet skal der også på cyber- og\ninformationssikkerhedsområdet udarbejdes handlekort, som beskriver de mest nødvendige\nhandlinger i tilfælde af en krisesituation. Desuden skal plan og handlekort afprøves årligt og\nsuppleres efter behov med andre øvelser. Dermed bliver cyber- og informationssikkerhed en\nintegreret del af kommunens samlede beredskabsindsats."
     }
    ],
    "bilag": []
@@ -3045,23 +3055,27 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.htk.dk/vis?id=4a25b820-3692-4e7e-ba3e-21527d3fe5e7",
-   "hentet": "2026-10-20T16:42:22.673Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=20bc78fd-8296-45bb-a929-3db58facdcb2",
+   "hentet": "2026-10-22T20:07:37.876Z",
    "titel": "3. I - Valg af selskabsform for det kommunale IT-fællesskab IT29 - ØU",
    "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Regeringen og KL har i økonomiaftalerne for 2026 og 2027 aftalt, at kommunernes basale itdrift i forhold til server- og netværksinfrastruktur skal samles i fælleskommunale ITdriftsenheder, kaldet IT-serviceorganisationer. De nye enheder skal være etableret som\nselskaber senest 01-01-2027.\nDet er desuden regeringens ambition og fremgår af økonomiaftalerne, at ITserviceorganisationerne på et senere tidspunkt også skal overtage større dele af\nkommunernes almindelige IT-service. Regeringen og KL vil gå i videre dialog om den konkrete\nindfrielse af ambitionen frem mod økonomiaftalen for 2028. Formålet er at styrke\ncybersikkerheden gennem professionalisering, øget specialisering og større faglige miljøer.\nKommunerne i Region Hovedstaden, bortset fra Københavns Kommune, samt Solrød\nKommune har besluttet at etablere IT-serviceorganisationen IT29. For Høje-Taastrup\nKommunes vedkommende godkendte Byrådet dette på mødet den 17-06-2026. Valg af\nselskabsform er en nødvendig forudsætning for det videre stiftelsesarbejde.\nDe 29 kommuner i IT29 skal derfor træffe beslutning om selskabsformen for den fælles ITserviceorganisation. På baggrund af en samlet vurdering af fleksibiliteten i forhold til indfasning\naf opgaver og udvidelse af opgaveporteføljen samt den administrative drift og økonomi\nanbefales det, at IT29 etableres som et aktieselskab (A/S). Valget af selskabsform vedrører\nalene den juridiske ramme for organisationen og har ikke betydning for senere beslutninger om\nblandt andet bestyrelsessammensætning og ejerindflydelse på generalforsamlingen."
+    },
     {
      "titel": "Indstilling",
      "tekst": "at Økonomiudvalget og Byrådet godkender, at IT29 etableres som et aktieselskab (A/S)"
     },
     {
      "titel": "Beslutning",
-     "tekst": "ØKONOMIUDVALGET DEN 07-10-2026 Afstemning om sagens indstilling: For stemmer B (1), C (3), F (1), O (1) Undlader at stemme A (1), I (1), Ø (1) Sagen anbefales"
+     "tekst": "ØKONOMIUDVALGET DEN 07-10-2026\nAfstemning om sagens indstilling:\nFor stemmer B (1), C (3), F (1), O (1)\nUndlader at stemme A (1), I (1), Ø (1)\nSagen anbefales\n\nBYRÅDET DEN 21-10-2026\nFor stemte: A, B, C, F, I og O (20)\nUndlod at stemme: Ø (1)\nDermed godkendt"
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Byrådet godkendte på mødet 17-06-2026, at Høje-Taastrup Kommune er en del af ITfællesskabet IT29. Et næste skridt mod etablering af et IT-fællesskab er valg af selskabsform som enten et aktieselskab (A/S) eller et interessentselskab (I/S, §60). En enig kommunaldirektørkreds for de 29 kommuner anbefaler, at IT29 etableres som et aktieselskab (A/S).\nBåde et aktieselskab (A/S) og et kommunalt fællesskab efter kommunestyrelseslovens § 60\n\n(I/S) kan levere de opgaver, der ligger i kommunernes basale it-drift, og på et senere tidspunkt den almindelige IT-service. På baggrund af en juridisk gennemgang baseret på input fra rådgivervirksomheden PwC, Kammeradvokaten og KL vurderer administrationen, at A/Smodellen giver de bedste rammer for etablering og udvikling af IT29.\nVurderingen bygger blandt andet på hensyn til fleksibilitet ved udvidelse af opgaveporteføljen, mulighederne for en fleksibel indfasning af kommunerne, den administrative drift samt økonomiske forhold vedrørende selskabsskat, moms og energiafgifter. Der lægges særligt vægt på tre forhold:\nEt A/S giver større fleksibilitet i forhold til nye opgaver, hvilket er intentionen fra regeringen og i økonomiaftalerne. Hvis kommunerne på et senere tidspunkt skal udvide IT29's opgaveportefølje, kan dette som udgangspunkt ske inden for selskabets eksisterende rammer. I et I/S vil ændringer oftere kræve vedtægtsændringer og efterfølgende godkendelse fra Ankestyrelsen.\nEt A/S giver bedre mulighed for en fleksibel indfasning af opgaverne fra de 29 kommuner. Kommunerne har forskellige udgangspunkter for opgaveoverdragelsen, hvilket har praktisk betydning for etableringsfasen. A/S-modellen giver mulighed for at tilrettelægge indfasningen aftalebaseret og justere den løbende.\nA/S-modellen vurderes samlet set at give enklere rammer for den daglige drift af organisationen og personaleadministrationen. Selvom et A/S skal håndtere selskabsskat og moms, indebærer modellen færre bindinger i forhold til den fremtidige opgaveudvikling og giver det bedste grundlag for selskabets drift.\nFordelene ved et I/S er blandt andet, at selskabet ikke betaler selskabsskat, og at ydelser til ejerkommunerne kan leveres uden moms. Omvendt giver et I/S mindre fleksibilitet ved ændringer i opgaveporteføljen, ejerforhold og indfasning af opgaverne fra kommunerne.\nDe fire øvrige IT-serviceorganisationer på tværs af Danmark har på nuværende tidspunkt valgt selskabsform. Det midtjyske IT-fællesskab, som minder mest om IT29 i størrelse, har valgt A/S. Det har kommunerne i Region Sjælland også, mens kommunerne i henholdsvis Nordjylland og Syddanmark har valgt I/S.\nPå baggrund af en samlet vurdering vurderer administrationen, på linje med administrationerne i de øvrige 28 kommuner, at fordelene ved A/S-modellen vejer tungest. En mere detaljeret oversigt over fordele og ulemper ved A/S og I/S er vedlagt som bilag.\nIndflydelse og styringsmæssige forhold Valget mellem A/S og I/S i denne sag tager alene stilling til den juridiske selskabsform. Valget mellem A/S og I/S har ikke betydning for kommunernes indflydelse på selskabet\n\ngennem repræsentation på generalforsamlingen (øverste myndighed i et aktieselskab) og sammensætningen af bestyrelsen (den øverste ledelse af selskabet). Spørgsmål om bestyrelsessammensætning, stemmeandele og ejerandele m.v. vil blive forelagt Byrådet i en særskilt sag forventeligt i november. Byrådet tager med denne sag således alene stilling til valg af selskabsform."
+     "tekst": "Byrådet godkendte på mødet 17-06-2026, at Høje-Taastrup Kommune er en del af ITfællesskabet IT29. Et næste skridt mod etablering af et IT-fællesskab er valg af selskabsform\nsom enten et aktieselskab (A/S) eller et interessentselskab (I/S, §60). En enig\nkommunaldirektørkreds for de 29 kommuner anbefaler, at IT29 etableres som et aktieselskab\nBåde et aktieselskab (A/S) og et kommunalt fællesskab efter kommunestyrelseslovens § 60\n(I/S) kan levere de opgaver, der ligger i kommunernes basale it-drift, og på et senere tidspunkt\nden almindelige IT-service. På baggrund af en juridisk gennemgang baseret på input fra\nrådgivervirksomheden PwC, Kammeradvokaten og KL vurderer administrationen, at A/Smodellen giver de bedste rammer for etablering og udvikling af IT29.\nVurderingen bygger blandt andet på hensyn til fleksibilitet ved udvidelse af opgaveporteføljen,\nmulighederne for en fleksibel indfasning af kommunerne, den administrative drift samt\nøkonomiske forhold vedrørende selskabsskat, moms og energiafgifter. Der lægges særligt\nvægt på tre forhold:\n\nEt A/S giver større fleksibilitet i forhold til nye opgaver, hvilket er intentionen fra\nregeringen og i økonomiaftalerne. Hvis kommunerne på et senere tidspunkt skal udvide\nIT29's opgaveportefølje, kan dette som udgangspunkt ske inden for selskabets\neksisterende rammer. I et I/S vil ændringer oftere kræve vedtægtsændringer og\nefterfølgende godkendelse fra Ankestyrelsen.\n\nEt A/S giver bedre mulighed for en fleksibel indfasning af opgaverne fra de 29\nkommuner. Kommunerne har forskellige udgangspunkter for opgaveoverdragelsen,\nhvilket har praktisk betydning for etableringsfasen. A/S-modellen giver mulighed for at\ntilrettelægge indfasningen aftalebaseret og justere den løbende.\n\nA/S-modellen vurderes samlet set at give enklere rammer for den daglige drift af\norganisationen og personaleadministrationen. Selvom et A/S skal håndtere selskabsskat\nog moms, indebærer modellen færre bindinger i forhold til den fremtidige\nopgaveudvikling og giver det bedste grundlag for selskabets drift.\n\nFordelene ved et I/S er blandt andet, at selskabet ikke betaler selskabsskat, og at ydelser til\nejerkommunerne kan leveres uden moms. Omvendt giver et I/S mindre fleksibilitet ved\nændringer i opgaveporteføljen, ejerforhold og indfasning af opgaverne fra kommunerne.\nDe fire øvrige IT-serviceorganisationer på tværs af Danmark har på nuværende tidspunkt valgt\nselskabsform. Det midtjyske IT-fællesskab, som minder mest om IT29 i størrelse, har valgt A/S.\nDet har kommunerne i Region Sjælland også, mens kommunerne i henholdsvis Nordjylland og\nSyddanmark har valgt I/S.\n\nPå baggrund af en samlet vurdering vurderer administrationen, på linje med administrationerne\ni de øvrige 28 kommuner, at fordelene ved A/S-modellen vejer tungest. En mere detaljeret\noversigt over fordele og ulemper ved A/S og I/S er vedlagt som bilag.\nIndflydelse og styringsmæssige forhold\nValget mellem A/S og I/S i denne sag tager alene stilling til den juridiske selskabsform.\nValget mellem A/S og I/S har ikke betydning for kommunernes indflydelse på selskabet\ngennem repræsentation på generalforsamlingen (øverste myndighed i et aktieselskab) og\nsammensætningen af bestyrelsen (den øverste ledelse af selskabet). Spørgsmål om\nbestyrelsessammensætning, stemmeandele og ejerandele m.v. vil blive forelagt Byrådet i en\nsærskilt sag forventeligt i november. Byrådet tager med denne sag således alene stilling til valg\naf selskabsform."
     }
    ],
    "bilag": []
@@ -3071,27 +3085,31 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.htk.dk/vis?id=4a25b820-3692-4e7e-ba3e-21527d3fe5e7",
-   "hentet": "2026-10-20T16:42:22.673Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=20bc78fd-8296-45bb-a929-3db58facdcb2",
+   "hentet": "2026-10-22T20:07:37.876Z",
    "titel": "4. I - Investeringsplan beredskab - ØU",
    "afsnit": [
     {
+     "titel": "Baggrund",
+     "tekst": "Høje-Taastrup Kommune arbejder med at styrke kommunens beredskab som følge af det\nskærpede trusselsbillede og behovet for at kunne opretholde kritiske kommunale funktioner\nunder længerevarende hændelser. Arbejdet omfatter blandt andet strømafbrydelser, svigt i\ntelekommunikation og internet samt situationer, hvor kommunens kriseledelse og vigtige\nborgernære funktioner skal kunne fungere under vanskelige forhold.\nDer er på den baggrund udarbejdet en investeringsplan for perioden 2026-2028. Planen\nindeholder investeringer i nødkommunikation, analyse af nødstrøm og internet, krisestabsrum,\nkommunikation til borgerne samt etablering af Driftsbyen som operativ kommandocentral.\nPlanen er en udmøntning af prioriteringsforslag INV01 om cybersikkerhed og beredskab fra\n2026, hvor Byrådet afsatte midler til at robustgøre kommunens beredskab i 2026-2028\nsvarende til I alt 4,2 mio. kr. Dertil er der fra statens side afsat 2,7 mio. kr. i aftale om\ntotalberedskab for 2026."
+    },
+    {
      "titel": "Indstilling",
-     "tekst": "at Økonomiudvalget og Byrådet\n1. godkender investeringsplanen for styrkelse af Høje-Taastrup Kommunes beredskab i perioden 2026-2028,\n2. afsætter yderligere rådighedsbeløb på 2,7 mio. kr. i 2026 finansieret af midler til formålet tilgået kassen i forbindelse med økonomiaftalen for 2027\n3. frigiver 1,97 mio. kr. af det afsatte rådighedsbeløb i 2026 til gennemførelse af investeringsplanens første etape."
+     "tekst": "at Økonomiudvalget og Byrådet\n1. godkender investeringsplanen for styrkelse af Høje-Taastrup Kommunes beredskab i\nperioden 2026-2028,\n2. afsætter yderligere rådighedsbeløb på 2,7 mio. kr. i 2026 finansieret af midler til\nformålet tilgået kassen i forbindelse med økonomiaftalen for 2027\n3. frigiver 1,97 mio. kr. af det afsatte rådighedsbeløb i 2026 til gennemførelse af\ninvesteringsplanens første etape."
     },
     {
      "titel": "Beslutning",
-     "tekst": "ØKONOMIUDVALGET DEN 07-10-2026 Anbefales."
+     "tekst": "ØKONOMIUDVALGET DEN 07-10-2026\nAnbefales.\n\nBYRÅDET DEN 21-10-2026\nGodkendt"
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Direktionen har igangsat et tværgående arbejde med at styrke Høje-Taastrup Kommunes samlede beredskab. Arbejdet tager udgangspunkt i, at kommunen skal kunne videreføre de mest kritiske funktioner, hvis den normale forsyning med strøm, internet og kommunikation svigter. Investeringsplanen omfatter perioden 2026-2028 og har en samlet økonomisk ramme på 7,3 mio. kr. Planen omfatter følgende seks indsatsområder:\nNødkommunikation\nKommunens kriseledelse og centrale driftsfunktioner skal kunne kommunikere, hvis mobiltelefoni og internet ikke fungerer. Der planlægges derfor etableret en løsning med såkaldte SINE-radioer, som middel til nødkommunikation. Den nærmere løsning skal afstemmes med Beredskab 4K og relevante myndigheder. Der foreslås afsat 200.000 kr. til\n\nindkøb af nødkommunikationsudstyr.\nNødstrøm på kritiske kommunale lokationer\nNødstrøm er den økonomisk største og teknisk mest komplekse del af investeringsplanen. Formålet er at sikre, at udvalgte kritiske kommunale bygninger og funktioner kan opretholdes under længerevarende strømafbrydelser. I første omgang gennemføres en teknisk analyse af krav til at etablere nødstrøm på kommunens plejehjem. Herefter skal der træffes beslutning om finansiering og anvendelse af mobile eller fast installerede generatorer og om rækkefølgen for etableringen. Arbejdet skal ses i sammenhæng med kommunens planlægning for udsatte borgere og borgere, som er afhængige af kommunale pleje- og omsorgstilbud. Der foreslås afsat 300.000 kr. til en analyse af området for nødstrøm.\nKrisestabsrum\nKommunens krisestab skal kunne arbejde effektivt under en længerevarende eller kompleks hændelse. Der etableres derfor mulighed for at der kan etableres et krisestabsrum med relevante arbejdspladser, kortmateriale, projektorer, kommunikationsudstyr og øvrigt nødvendigt teknisk udstyr. Indretningen skal understøtte et fælles situationsbillede, dokumentation af beslutninger og koordinering mellem kommunens centre, Beredskab 4K og eksterne myndigheder.\nKommunikation til borgerne\nTydelig og troværdig information til borgerne er væsentlig både i fredstid og under en krise. En velfungerende kommunikation i hverdagen bidrager til at opbygge kendskab til kommunens informationskanaler og tillid til myndighedernes oplysninger. Indsatsen understøtter samtidig principperne om totalberedskab, hvor befolkningens tillid til myndighederne og evne til at handle på baggrund af deres anvisninger er afgørende for samfundets samlede modstandskraft.\nVed længerevarende svigt i strøm, mobiltelefoni eller internet kan kommunens normale digitale kommunikationskanaler være utilgængelige. Der er derfor behov for supplerende muligheder for at kommunikere med borgerne før og under en krise.\nDer afsættes 500.000 kr. i 2027 til etablering af informationsskærme på stationerne i kommunen. Skærmene skal i dagligdagen kunne anvendes til kommunale nyheder og informationer og skal desuden kunne formidle væsentlige beredskabsfaglige informationer og handleanvisninger. Etableringen forudsætter nærmere aftaler med de relevante ejere og leverandører.\nDerudover foreslås opsat skilte, som markerer kommunale kontaktpunkter ved de 11 valgsteder. Kontaktpunkterne skal give borgerne mulighed for at modtage information og komme i kontakt med kommunen, hvis de normale kommunikationskanaler ikke fungerer. Den konkrete aktivering, bemanding og anvendelse af kontaktpunkterne skal nærmere beskrives i kommunens beredskabsplanlægning.\nAnalyse af robust internet\nInternet er vigtigt for at opretholde adgang til nødvendige informationer og muliggøre\n\nkommunikation i en krisesituation. Der afsættes derfor 150.000 kr. i 2026 til en analyse af mulighederne for at gøre kommunens internetforbindelser mere robust. Analysen skal blandt andet belyse sårbarhederne og tekniske mulighederne for at opretholde internetadgang på udvalgte kritiske lokationer - hvis den primære forbindelse sættes ud af drift. På baggrund af analysen udarbejdes et forslag til løsningsmodel og økonomi.\nRobustgørelse af Driftsbyen som central krisestyringsfacilitet\nDriftsbyens administrationsbygning, herunder kontorer og kantine, er udpeget som kommunens operative central ved ekstraordinære hændelser, herunder længerevarende svigt i strøm, vand eller anden kritisk infrastruktur. Driftsbyen skal i sådanne situationer kunne understøtte kommunens centre og enheder med koordinering, logistik og operative funktioner.\n\nDet stiller større krav til elforsyning, kapacitet og forsyningssikkerhed, end de nuværende installationer kan understøtte. Det eksisterende dieselanlæg i Driftsbyen vurderes ikke at have tilstrækkelig kapacitet i forhold til det forventede forbrug ved længerevarende driftsforstyrrelser. Det foreslås derfor udvidet til en kapacitet på 40.000 liter, som er dobbelt størrelse af det nuværende. Deraf følger indkøb af ekstra 20.000 liter diesel. Udover dieselanlæg følger en klargøring af Driftsbyen til nødstrøm i form af opbygning af nye eltavler samt indkøb af 2 nødstrømsgeneratorer.\n\nI alt foreslås en investering på 800.000 kr. i robustgørelse af Driftsbyen som central krisestyringsfacilitet. Investeringen skal sikre, at Driftsbyen kan opretholde nødvendige funktioner under en krise.\nPlanlagte investeringer og aktiviteter – fase 1\n\nIndsatsområde\n\n1. Nødkommunikation 200.000\n\n2. Analyse af Nødstrøm\n\n3. Krisestabsrum\n\n4. Kommunikation til borgerne\n\n5. Analyse af robust internet\n\n6. Kapacitet i Driftsbyen 260.000 540.000\n\nI alt\n\nDe konkrete anskaffelser I fase 1 udgør I alt 1,97 mio. kr. Fordelingen mellem 2026 og 2027 kan blive justeret på baggrund af tekniske undersøgelser, indhentede priser og den endelige prioritering af kritiske funktioner og lokationer. Væsentlige ændringer i investeringsplanens ambitionsniveau eller økonomi vil blive forelagt politisk. Der pågår desuden et arbejde i Beredskab 4K om at afklare samarbejde om fælles kapaciteter,\n\nsom kan anvendes på tværs af de fire ejerkommunerne. Administrationen er derfor opmærksom på at afsøge samarbejdsmuligheder med Greve, Ishøj og Vallensbæk.\nHvad gør andre kommuner? Det er på nuværende tidspunkt svært entydigt at pege på en retning og ambitionsniveau på tværs af kommunerne i Danmark. Høje-Taastrup Kommune deltager i KL-netværk om beredskab og er samtidig medlem af foreningen af danske risikokoordinatorer. I begge fora foregår der sparring og vidensdeling om indsatser på beredskabsområdet. Det er administrationens vurdering, at Høje-Taastrup Kommune arbejder målrettet med at styrke kapaciteten på beredskabsområdet. Det stiller Høje-Taastrup Kommune på et niveau som de fleste kommuner. Enkelte kommuner, bl.a. Hjørring, Kalundborg og Gentofte har allerede foretaget betydelige investeringer i bl.a. nødstrømsanlæg mv., men der vurderes at være tale om relativt få kommuner."
+     "tekst": "Direktionen har igangsat et tværgående arbejde med at styrke Høje-Taastrup Kommunes\nsamlede beredskab. Arbejdet tager udgangspunkt i, at kommunen skal kunne videreføre de\nmest kritiske funktioner, hvis den normale forsyning med strøm, internet og kommunikation\nsvigter. Investeringsplanen omfatter perioden 2026-2028 og har en samlet økonomisk ramme\npå 7,3 mio. kr. Planen omfatter følgende seks indsatsområder:\n\nNødkommunikation\n\nKommunens kriseledelse og centrale driftsfunktioner skal kunne kommunikere, hvis\n\nmobiltelefoni og internet ikke fungerer. Der planlægges derfor etableret en løsning med\nsåkaldte SINE-radioer, som middel til nødkommunikation. Den nærmere løsning skal\nafstemmes med Beredskab 4K og relevante myndigheder. Der foreslås afsat 200.000 kr. til\nindkøb af nødkommunikationsudstyr.\n\nNødstrøm på kritiske kommunale lokationer\n\nNødstrøm er den økonomisk største og teknisk mest komplekse del af investeringsplanen.\nFormålet er at sikre, at udvalgte kritiske kommunale bygninger og funktioner kan opretholdes\nunder længerevarende strømafbrydelser.\nI første omgang gennemføres en teknisk analyse af krav til at etablere nødstrøm på\nkommunens plejehjem. Herefter skal der træffes beslutning om finansiering og anvendelse af\nmobile eller fast installerede generatorer og om rækkefølgen for etableringen. Arbejdet skal\nses i sammenhæng med kommunens planlægning for udsatte borgere og borgere, som er\nafhængige af kommunale pleje- og omsorgstilbud. Der foreslås afsat 300.000 kr. til en analyse\naf området for nødstrøm.\n\nKrisestabsrum\n\nKommunens krisestab skal kunne arbejde effektivt under en længerevarende eller kompleks\nhændelse. Der etableres derfor mulighed for at der kan etableres et krisestabsrum med\nrelevante arbejdspladser, kortmateriale, projektorer, kommunikationsudstyr og øvrigt\nnødvendigt teknisk udstyr. Indretningen skal understøtte et fælles situationsbillede,\ndokumentation af beslutninger og koordinering mellem kommunens centre, Beredskab 4K og\neksterne myndigheder.\n\nKommunikation til borgerne\n\nTydelig og troværdig information til borgerne er væsentlig både i fredstid og under en krise. En\nvelfungerende kommunikation i hverdagen bidrager til at opbygge kendskab til kommunens\ninformationskanaler og tillid til myndighedernes oplysninger. Indsatsen understøtter samtidig\nprincipperne om totalberedskab, hvor befolkningens tillid til myndighederne og evne til at\nhandle på baggrund af deres anvisninger er afgørende for samfundets samlede\nmodstandskraft.\nVed længerevarende svigt i strøm, mobiltelefoni eller internet kan kommunens normale digitale\nkommunikationskanaler være utilgængelige. Der er derfor behov for supplerende muligheder\nfor at kommunikere med borgerne før og under en krise.\nDer afsættes 500.000 kr. i 2027 til etablering af informationsskærme på stationerne i\nkommunen. Skærmene skal i dagligdagen kunne anvendes til kommunale nyheder og\ninformationer og skal desuden kunne formidle væsentlige beredskabsfaglige informationer og\nhandleanvisninger. Etableringen forudsætter nærmere aftaler med de relevante ejere og\nleverandører.\nDerudover foreslås opsat skilte, som markerer kommunale kontaktpunkter ved de 11\nvalgsteder. Kontaktpunkterne skal give borgerne mulighed for at modtage information og\nkomme i kontakt med kommunen, hvis de normale kommunikationskanaler ikke fungerer. Den\nkonkrete aktivering, bemanding og anvendelse af kontaktpunkterne skal nærmere beskrives i\nkommunens beredskabsplanlægning.\n\nAnalyse af robust internet\n\nInternet er vigtigt for at opretholde adgang til nødvendige informationer og muliggøre\nkommunikation i en krisesituation. Der afsættes derfor 150.000 kr. i 2026 til en analyse af\nmulighederne for at gøre kommunens internetforbindelser mere robust. Analysen skal blandt\nandet belyse sårbarhederne og tekniske mulighederne for at opretholde internetadgang på\nudvalgte kritiske lokationer - hvis den primære forbindelse sættes ud af drift. På baggrund af\nanalysen udarbejdes et forslag til løsningsmodel og økonomi.\n\nRobustgørelse af Driftsbyen som central krisestyringsfacilitet\n\nDriftsbyens administrationsbygning, herunder kontorer og kantine, er udpeget som kommunens\noperative central ved ekstraordinære hændelser, herunder længerevarende svigt i strøm, vand\neller anden kritisk infrastruktur. Driftsbyen skal i sådanne situationer kunne understøtte\nkommunens centre og enheder med koordinering, logistik og operative funktioner.\nDet stiller større krav til elforsyning, kapacitet og forsyningssikkerhed, end de nuværende\ninstallationer kan understøtte. Det eksisterende dieselanlæg i Driftsbyen vurderes ikke at have\ntilstrækkelig kapacitet i forhold til det forventede forbrug ved længerevarende driftsforstyrrelser.\nDet foreslås derfor udvidet til en kapacitet på 40.000 liter, som er dobbelt størrelse af det\nnuværende. Deraf følger indkøb af ekstra 20.000 liter diesel. Udover dieselanlæg følger en\nklargøring af Driftsbyen til nødstrøm i form af opbygning af nye eltavler samt indkøb af 2\nnødstrømsgeneratorer.\nI alt foreslås en investering på 800.000 kr. i robustgørelse af Driftsbyen som central\nkrisestyringsfacilitet. Investeringen skal sikre, at Driftsbyen kan opretholde nødvendige\nfunktioner under en krise.\n\nPlanlagte investeringer og aktiviteter – fase 1\nIndsatsområde\n\n1. Nødkommunikation\n\n2. Analyse af Nødstrøm\n3. Krisestabsrum\n\n4. Kommunikation til\nborgerne\n\n5. Analyse af robust\ninternet\n\n6. Kapacitet i Driftsbyen\n\nI alt\n\nDe konkrete anskaffelser I fase 1 udgør I alt 1,97 mio. kr. Fordelingen mellem 2026 og 2027\nkan blive justeret på baggrund af tekniske undersøgelser, indhentede priser og den endelige\nprioritering af kritiske funktioner og lokationer. Væsentlige ændringer i investeringsplanens\n\nambitionsniveau eller økonomi vil blive forelagt politisk.\nDer pågår desuden et arbejde i Beredskab 4K om at afklare samarbejde om fælles kapaciteter,\nsom kan anvendes på tværs af de fire ejerkommunerne. Administrationen er derfor\nopmærksom på at afsøge samarbejdsmuligheder med Greve, Ishøj og Vallensbæk.\nHvad gør andre kommuner?\nDet er på nuværende tidspunkt svært entydigt at pege på en retning og ambitionsniveau på\ntværs af kommunerne i Danmark. Høje-Taastrup Kommune deltager i KL-netværk om\nberedskab og er samtidig medlem af foreningen af danske risikokoordinatorer. I begge fora\nforegår der sparring og vidensdeling om indsatser på beredskabsområdet. Det er\nadministrationens vurdering, at Høje-Taastrup Kommune arbejder målrettet med at styrke\nkapaciteten på beredskabsområdet. Det stiller Høje-Taastrup Kommune på et niveau som de\nfleste kommuner. Enkelte kommuner, bl.a. Hjørring, Kalundborg og Gentofte har allerede\nforetaget betydelige investeringer i bl.a. nødstrømsanlæg mv., men der vurderes at være tale\nom relativt få kommuner."
     },
     {
      "titel": "Økonomi",
-     "tekst": "Der er med budget 2026 afsat samlet 4,6 mio. kr. til styrkelse af kommunens beredskab. Herudover har regeringen i 2026 afsat midler til ekstraordinære kommunale beredskabsindsatser herunder indsatser på ældreområdet. Høje-Taastrup Kommunes andel af disse udgør 2,7 mio. kr., som tilgår kassen i forbindelse med midtvejsreguleringen. Det foreslås, at disse midler anvendes til formålet og afsættes som rådighedsbeløb i 2026 jf. nedenstående tabel.\n\nMio. kr. Kommunalt afsatte midler Statslig finansiering Samlet budget\n\nI alt\n\nDermed vil der samlet set være budgetlagt 7,3 mio. kr. til styrkelse af kommunens beredskab i perioden 2026-2028.\nI fase 1 i 2026 prioriteres blandt andet nødkommunikation, krisestabsrum, analyse af robust internet og investering i kapaciteter i Driftsbyen svarende til I alt 630.000 kr. I 2027 1,34 mio. kr. til analyse af nødstrøm og borgerkommunikation og yderligere udbygning af kapaciteter i Driftsbyen. Til 1. fase søges der derfor frigivet 1,97 mio. kr. Udgifter til drift, vedligeholdelse, abonnementer, brændstof, øvelser og løbende afprøvning skal konkretiseres i forbindelse med valg og anskaffelse af løsningerne. Eventuelle varige driftsudgifter forventes at være minimale i fase 1. I en fase 2, hvor der forventes at skulle foretages større investeringer, er det sandsynligt at der opstår varige driftsudgifter, der er behov for at indarbejde i budgettet som tekniske korrektioner.\nUdgifter til fase 2, herunder særligt nødstrøm, forelægges når de nødvendige analyser er gennemført.\n\nBeredskabskommissionen behandler den 6. oktober en sag om Beredskab 4K skal tilføres 60 pct. af den statslige bevilling på 2,7 mio. kr. i 2026 svarende til 1,6 mio. kr. Det sker med henblik på også at robustgøre beredskab 4K i krisesituationer. I tilfælde af en positiv tilkendegivelse fra Beredskabskommissionens foreslås det indarbejdet i budgettet som en del af 2 budgetopfølgning, som behandles af Byrådet til november."
+     "tekst": "Der er med budget 2026 afsat samlet 4,6 mio. kr. til styrkelse af kommunens beredskab.\nHerudover har regeringen i 2026 afsat midler til ekstraordinære kommunale\nberedskabsindsatser herunder indsatser på ældreområdet. Høje-Taastrup Kommunes\nandel af disse udgør 2,7 mio. kr., som tilgår kassen i forbindelse med\nmidtvejsreguleringen. Det foreslås, at disse midler anvendes til formålet og afsættes som\nrådighedsbeløb i 2026 jf. nedenstående tabel.\nMio. kr.\n\nI alt\n\nKommunalt afsatte midler\n\nStatslig finansiering\n\nSamlet budget\n\nDermed vil der samlet set være budgetlagt 7,3 mio. kr. til styrkelse af kommunens\nberedskab i perioden 2026-2028.\nI fase 1 i 2026 prioriteres blandt andet nødkommunikation, krisestabsrum, analyse af\nrobust internet og investering i kapaciteter i Driftsbyen svarende til I alt 630.000 kr. I 2027\n1,34 mio. kr. til analyse af nødstrøm og borgerkommunikation og yderligere udbygning af\nkapaciteter i Driftsbyen. Til 1. fase søges der derfor frigivet 1,97 mio. kr. Udgifter til drift,\nvedligeholdelse, abonnementer, brændstof, øvelser og løbende afprøvning skal\nkonkretiseres i forbindelse med valg og anskaffelse af løsningerne. Eventuelle varige\ndriftsudgifter forventes at være minimale i fase 1. I en fase 2, hvor der forventes at skulle\nforetages større investeringer, er det sandsynligt at der opstår varige driftsudgifter, der er\nbehov for at indarbejde i budgettet som tekniske korrektioner.\nUdgifter til fase 2, herunder særligt nødstrøm, forelægges når de nødvendige analyser er\n\ngennemført.\nBeredskabskommissionen behandler den 6. oktober en sag om Beredskab 4K skal\ntilføres 60 pct. af den statslige bevilling på 2,7 mio. kr. i 2026 svarende til 1,6 mio. kr. Det\nsker med henblik på også at robustgøre beredskab 4K i krisesituationer. I tilfælde af en\npositiv tilkendegivelse fra Beredskabskommissionens foreslås det indarbejdet i budgettet\nsom en del af 2 budgetopfølgning, som behandles af Byrådet til november."
     }
    ],
    "bilag": []
@@ -3157,29 +3175,12 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.htk.dk/vis?id=4a25b820-3692-4e7e-ba3e-21527d3fe5e7",
-   "hentet": "2026-10-20T16:42:22.673Z",
-   "titel": "12. I - Ældreloven - samarbejde med civilsamfund - ÆSU",
-   "afsnit": [
-    {
-     "titel": "Indstilling",
-     "tekst": "At Ældre- og Sundhedsudvalget, Økonomiudvalget og Byrådet godkender at etablere en fælles pulje på tværs af Ældrelovens § 7 og Servicelovens § 79, inden for den eksisterende budgetramme til Servicelovens § 79 og at målgruppen for puljen er målgruppen for Ældreloven."
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "ÆLDRE- OG SUNDHEDSUDVALGET DEN 30-09-2026 Anbefalet.\n\nØKONOMIUDVALGET DEN 07-10-2026 Anbefales."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Med Ældreloven er kommunen forpligtet til både at samarbejde med og yde støtte til frivillige foreninger på ældreområdet, hvilket er i overensstemmelse med Ældrelovens værdi om et tæt samspil med lokale fællesskaber og civilsamfund.\nAf Ældreloven fremgår det, at kommunen årligt skal fastsætte et beløb til støtte af frivilligt arbejde på ældreområdet.\nHøje-Taastrup Kommune har i forvejen et samarbejde med frivillige foreninger på ældreområdet, f.eks. i Sundhedscenteret og på plejehjem. Derudover yder kommunen også støtte til frivilligt arbejde på ældre- og handicapområdet via Servicelovens § 79 i form af en årlig pulje. Det er primært foreninger på ældreområdet, der søger denne pulje. I 2025 og i 2026 har alle ansøgninger til puljen for § 79 omhandlet Ældrelovens målgruppe.\nAdministrationen anbefaler, at arbejdet med § 7 i Ældreloven sammenkobles og administreres med servicelovens § 79. I tillæg hertil anbefaler administrationen, at målgruppen for puljen afgrænses til Ældrelovens målgruppe, som primært er folkepensionister. I dag er målgruppen\n\nfor servicelovens § 79 foreninger på ældre- og handicapområdet.\nHvis de to paragraffer sammenkobles, vil foreninger, som laver aktiviteter for ældre med handicap, fortsat kunne søge puljen. Foreninger som laver aktiviteter for yngre borgere med fysisk og psykisk handicap, vil kunne søge kommunen om støtte i form af servicelovens § 18 midler.\nÆldre- og Sundhedsudvalget beslutter årligt kriterierne for udmøntning af § 79 midlerne i det kommende år. I december vil Ældre- og Sundhedsudvalget skulle tage stilling til de konkrete kriterier for udmøntningen af puljen i 2027."
-    },
-    {
-     "titel": "Økonomi",
-     "tekst": "Der er i Ældreloven ingen krav til puljens størrelse og sagen har ingen økonomiske konsekvenser, hvis indstillingen om at etablere en fælles pulje godkendes. Administrationen gør opmærksom på, at en reduktion af Servicelovens §79 pulje indgår som prioriteringsforslag i budgetprocessen 2027-30."
-    }
-   ],
+   "kilde": "https://dagsordener.htk.dk/vis?id=20bc78fd-8296-45bb-a929-3db58facdcb2",
+   "hentet": "2026-10-22T20:07:37.876Z",
+   "titel": "14. Underskriftsark Byrådet oktober 2026",
+   "afsnit": [],
    "bilag": []
   },
   "hoeje-taastrup-2026-10-21-byraadet-13": {
@@ -4329,6 +4330,364 @@
     }
    ],
    "bilag": []
+  },
+  "hoeje-taastrup-2026-08-27-udsatteraadet-1": {
+   "id": "hoeje-taastrup-2026-08-27-udsatteraadet-1",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-08-27",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.htk.dk/vis?id=00e8e55c-55d0-4bfe-83c2-e1ca11b575d5",
+   "hentet": "2026-10-22T20:05:42.407Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-08-27-udsatteraadet-2": {
+   "id": "hoeje-taastrup-2026-08-27-udsatteraadet-2",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-08-27",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.htk.dk/vis?id=00e8e55c-55d0-4bfe-83c2-e1ca11b575d5",
+   "hentet": "2026-10-22T20:05:42.407Z",
+   "titel": "Til efterretning - referat fra møde den 11. juni 2026",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Referatet fra foregående møde blev taget til efterretning uden bemærkninger."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-08-27-udsatteraadet-3": {
+   "id": "hoeje-taastrup-2026-08-27-udsatteraadet-3",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-08-27",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.htk.dk/vis?id=00e8e55c-55d0-4bfe-83c2-e1ca11b575d5",
+   "hentet": "2026-10-22T20:05:42.407Z",
+   "titel": "Opfølgning på dialogen på sidste møde om overgangen fra forsorgshjem til egen bolig",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Pkt. 1: Orientering om møde mellem administrationen og Blå Kors Pensionat\nPunktet var en opfølgning på drøftelserne på Udsatterådets seneste møde. Her fremlagde Blå Kors cases\nom overgangen fra forsorgshjem til egen bolig og belyste de udfordringer, der kan opstå i den forbindelse.\nSiden sidste møde er der blevet afholdt et møde med Blå Kors og repræsentanter fra kommunens\nYdelsesservice og Myndighed på socialområdet, som står for den boligsociale anvisning. Formålet var at\ndrøfte tematikkerne i de konkrete cases.\nKommunen redegjorde for, hvordan de gennem det seneste ½-1 år har arbejdet på at styrke et\nhelhedsorienteret perspektiv på borgerne på tværs af de forskellige kommunale fagområder. Formålet er at\nforebygge de situationer, som Blå Kors casene var udtryk for. Der er bl.a. arbejdet med ugentlige møder\nmed medarbejdere fra hhv. Ydelse og Den boligsociale anvisning, hvor konkrete borgere der anvises en\nbolig drøftes for at sikre et samlet blik på borgerens økonomi og støttebehov.\nDerefter præsenterede Blå Kors Pensionat deres oplevelse af, om den ændrede tilgang fra kommunens\nside kan mærkes, hvilket de bekræftede at det kan om end der kun har været få nye sager det sidste stykke\ntid.\n\nPkt. 2 : Dialog om anbefalinger og mulige tiltag\nKommunen præsenterede de to temaer, som de oplever som dilemmafyldte, og som de bad om\nUdsatterådets input til med henblik på evt. at justere kommunens praksis efterfølgende. De to temaer var:\n1) Økonomisk støtte til etablering i egen bolig\n2) Egenbetaling under ophold på forsorgshjem\nUdsatterådet kom med input til de to temaer.\n\nAd 1) Økonomisk støtte til etablering i egen bolig\nDette tema handlede om økonomisk støtte til etablering i egen bolig. Dilemmaet består i at nogle borgere\nmodtager økonomisk støtte til etablering, men bruger pengene til andre formål. Det medfører i nogle\ntilfælde, at borgeren mangler basalt inventar ved indflytningen, hvilket ikke er i tråd med Housing First\ntilgangen.\nRådet drøftede blandt andet:\n• at nogle borgere kan have behov for mere praktisk støtte til etableringen og ikke blot økonomisk støtte.\n• at der kan være behov for at støtte borgerne med indkøbslister eller ledsagelse ved indkøb af inventar,\nså pengene bruges ”på det rigtige”\n• om andre personer eller aktører juridisk set har lov til at modtage eller administrere etableringsydelsen\npå borgerens vegne.\n• om det kunne være en mulighed at anvende standardiserede etableringspakker.\n• om forsorgshjemene kan få udbetalt borgerens etableringsydelse og hjælpe med indkøbene.\n\n• om etableringsudgifter kan indregnes i forsorgshjemenes takst, så udgifterne dækkes på forhånd.\n\nAd 2) Egenbetaling under ophold på forsorgshjem\nDet andet tema handlede om manglende egenbetaling under ophold på forsorgshjem, hvor dilemmaet er at\nborgerne kan bruge deres penge på hvad de vil (selvbestemmelse) og at det betyder at nogle borgere ikke\nbetaler deres egenbetaling, hvilket betyder at borgeren bor gratis under opholdet og derfor oplever et\nbetydeligt mindre økonomisk råderum, når de flytter i egen bolig og skal betale husleje.\nRådet drøftede blandt andet:\n• om kommunen kan administrere dele af borgerens økonomi eller kan trække egenbetalingen direkte fra\nborgerens ydelse.\nKommunen takkede for de gode input og vil undersøge de mulige løsninger nærmere.\nDer blev opfordret til at række ud til andre kommuner med henblik på at indhente erfaringer og undersøge\nmulige løsninger.\n\nRådet følger op på de udfordringer der blev præsenteret på sidste møde og drøfter idéer til\nhandletiltag i overgangen fra forsorgshjem til egen bolig.\nPkt. 1: Orientering om møde mellem administrationen og Blå Kors Pensionat\nAdministrationen og Blå Kors Pensionat orienterer om et møde, der blev holdt den 7. august,\nhvor der blev fulgt op på de problemstillinger, som blev rejst ved seneste møde i\nUdsatterådet. Som led i opfølgningen har Blå Kors Pensionat gennemgået nyere cases, for\nat se om de ændringer kommunen har lavet i deres arbejdsgange inden for det seneste\nhalve år, har haft positiv betydning for borgernes forløb. Derudover orienteres om evt.\nområder, hvor der stadig er dilemmaer, som kan havde betydning i de konkrete borgerforløb.\nPkt. 2 : Dialog om anbefalinger og mulige tiltag\nMed afsæt i casene, som Blå Kors Pensionat præsenterede på sidste møde, samt\norienteringen ovenfor, drøfter rådet hvilke tiltag, der kan sikre en smidigere overgang fra\nforsorgshjem til egen bolig. Rådet drøfter desuden den videre proces."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-08-27-udsatteraadet-4": {
+   "id": "hoeje-taastrup-2026-08-27-udsatteraadet-4",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-08-27",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.htk.dk/vis?id=00e8e55c-55d0-4bfe-83c2-e1ca11b575d5",
+   "hentet": "2026-10-22T20:05:42.407Z",
+   "titel": "Forberedelse af dialogmøde med Arbejdsmarkeds- og Socialudvalget",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Udsatterådet skal deltage i et dialogmøde med Social- og Arbejdsmarkedsudvalget den 9. september, hvor\nder er mulighed for at drøfte budgetforslag vedr. 2027 inden Byrådets budgetbehandling. Rådet modtager\nmaterialet den 2.9. og har mulighed for at afgive høringssvar frem til 23.9.\nRådet besluttede at holde et fysisk formøde, hvor rådet gennemgår de forslag de vurder er relevante for\nUdsatterådets målgrupper og koordinerer sine budskaber til dialogmødet. Dialogmødet kan også omfatte\nandre emner som rådet ønsker at drøfte, men budgettet forventes at være det centrale tema.\n\nRådet forbereder det årlige dialogmøde med Arbejdsmarkeds- og Socialudvalget, som finder\nsted den 9. september 2026. Der er tradition for at dialogmødet bruges til at drøfte\nbudgetmaterialet vedrørende næste års budget. Derfor er dialogmødet lagt tidsmæssigt\ninden Byrådets 1. behandling af budgettet, som finder sted den 10. september.\nBudgetmaterialet offentliggøres den 2. september hvor det sendes direkte til Udsatterådet.\nUdsatterådet kan også vælge at benytte dialogmødet til andre emner. Rådet drøfter de\ntemaer og budskaber, som det ønsker at bringe videre til udvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-08-27-udsatteraadet-5": {
+   "id": "hoeje-taastrup-2026-08-27-udsatteraadet-5",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-08-27",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.htk.dk/vis?id=00e8e55c-55d0-4bfe-83c2-e1ca11b575d5",
+   "hentet": "2026-10-22T20:05:42.407Z",
+   "titel": "Arbejdsgang for udtalelser på rådets vegne",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Rådet drøftede, hvordan arbejdsgangen for fremtidige høringssvar skal tilrettelægges. Det gælder blandt\nandet høringer i forbindelse med sager, der behandles på de politiske møder, som afholdes hver måned.\nDet blev aftalt, at rådets medlemmer sender deres bemærkninger og forslag senest søndagen før\nhøringsfristen, som er mandage kl. 12.00. Administrationen indkalder herefter til et kort Teams-møde\nmandag kl. 9.30-10.00. På mødet gennemgår rådet de indkomne input og beslutter, hvad der skal indgå i\ndet endelige høringssvar.\nAdministrationen bistår med at indkalde til mødet og skrive referat af rådets drøftelser og beslutninger under\nmødet. Administrationen bistår ikke med at formulere eller udarbejde selve høringssvaret, da dette er rådets\nansvar.\n\nDer er opstået usikkerhed om, hvornår udtalelser, høringssvar og andre skrivelser kan\nafgives på vegne af Udsatterådet, og hvordan arbejdsgangen mellem rådets medlemmer\nskal være i den forbindelse. Rådet drøfter og kommer med input til arbejdsgange."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-08-27-udsatteraadet-6": {
+   "id": "hoeje-taastrup-2026-08-27-udsatteraadet-6",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-08-27",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.htk.dk/vis?id=00e8e55c-55d0-4bfe-83c2-e1ca11b575d5",
+   "hentet": "2026-10-22T20:05:42.407Z",
+   "titel": "Høringssager siden sidst",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der har ikke været afgivet høringssager siden Udsatterådets seneste møde.\n\nDer har ikke været høringssager siden Udsatterådets møde den 11. juni 2026."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-08-27-udsatteraadet-7": {
+   "id": "hoeje-taastrup-2026-08-27-udsatteraadet-7",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-08-27",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.htk.dk/vis?id=00e8e55c-55d0-4bfe-83c2-e1ca11b575d5",
+   "hentet": "2026-10-22T20:05:42.407Z",
+   "titel": "Nyt fra medlemmerne",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der var ingen orienteringer fra medlemmerne."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-08-27-udsatteraadet-8": {
+   "id": "hoeje-taastrup-2026-08-27-udsatteraadet-8",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-08-27",
+   "type": "referat",
+   "nr": 8,
+   "kilde": "https://dagsordener.htk.dk/vis?id=00e8e55c-55d0-4bfe-83c2-e1ca11b575d5",
+   "hentet": "2026-10-22T20:05:42.407Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der var desuden en kort drøftelse af mødeformen. Rådet besluttede, at der fremover vælges en ordstyrer\nfor hvert møde."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-1": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-1",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen blev godkendt.\nMille Holm Weinreich,Teamleder for specialrådgivningen BUF deltager på vegne af Thomas Lorentzen."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-2": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-2",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Til efterretning - referat fra Handicaprådsmøde den 21. april 2026",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Sidste referat blev taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-3": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-3",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Sagsbehandlingstider for bevilling af handicapbiler",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet ønskede en status på området for handicapbiler med udgangspunkt i de seneste tal fra\nDanmarks Statistik. Formanden oplyste, at der tidligere er blevet truffet en politisk beslutning om en\nmaksimal sagsbehandlingstid på 26 uger.\nAdministrationen beskrev de generelle arbejdsgange og aktuelle sagsbehandlingstider for handicapbiler og\ntrivselsbiler samt at sagsbehandlingstiden forventes nedbragt fra de aktuelle 12 måneder til cirka 6\nmåneder, som den tidligere har været. Administrationen oplyste, at der generelt er fokus på at prioritere\nansøgninger om handicapbiler fra borgere, for hvem kørsel til uddannelse eller erhverv har en afgørende\nbetydning.\nAdministrationen oplyste, at Høje-Taastrup kommune årligt modtager flere ansøgninger om handicapbil\nsammenlignet med andre kommuner i hovedstadsområdet. Kommunen modtager typisk 23-25 ansøgninger\nom året, og der er allerede registreret 27 ansøgninger i 2026. Det kan der være flere mulige forklaringer på,\nherunder kommunens borgersammensætning, transportmuligheder og socioøkonomiske forhold.\nAdministrationen drøftede målgrupperne for bevilling af handicap- og trivselsbiler, typer af trivselsbiler samt\nbrugen af tro- og loveerklæringer ved genbevilling.\nEt medlem gav udtryk for, at en sagsbehandlingstid på mere end 6 måneder var for lang og efterspurgte en\nkortere sagsbehandlingstid på området.\nHandicaprådet drøftede fremtidige krav om mere miljøvenlige biler. Administrationen oplyste, at der vil være\nmulighed for at få dispensation for de benzindrevne biler, der allerede er bevilget, og at de fleste trivselsbiler\nsom bevilges i dag, er elbiler.\nHandicaprådet ønskede indsigt i afslag på ansøgninger om genbevillinger. Handicaprådet vil rette\nspørgsmålet om afslag på genbevillinger til Arbejdsmarkeds- og Socialudvalget.\n\nDer er offentliggjort nye tal fra Danmarks Statistik for bevilling af handicapbiler 2021-2025.\nPå den baggrund ønsker Handicaprådet en status på udviklingen i sagsbehandlingstiderne.\nHandicaprådet ønsker desuden en orientering om bevilling af trivselshandicapbiler, herunder\neventuelle ændringer på området inden for de seneste 2-3 år, samt kommunens erfaringer\nmed bevilling af elbiler som handicapbiler."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-4": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-4",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Dialogmøde med Arbejdsmarkeds- og Socialudvalget",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet fulgte op på dialogmødet med Arbejdsmarkeds- og Socialudvalget, hvor tre medlemmer af\nHandicaprådet deltog. Formanden oplyste, at Handicaprådet blandt andet rejste problematikken omkring\nnedskæringen i tilskuddet til sundhedsfaglige produkter.\nEmil Viskum oplyste derudover, at budgetforhandlingerne er i deres afsluttende fase. Der er en foreløbig\nforventning om et øget serviceråderum på 25 mio. kr., men beløbet er endnu ikke endeligt afklaret.\n\nHandicaprådet deltog i dialogmøde med Arbejdsmarkeds- og Socialudvalget den 9.\nseptember 2026. På mødet blev der blandt andet drøftet budgetforslaget for 2027-2030, som\ner i høring frem til den 23. september 2026.\nDer gives en tilbagemelding fra mødet."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-5": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-5",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Mødekalender 2027",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet godkendte mødekalenderen for 2027.\n\nHandicaprådet tager stilling til mødekalender for 2027 med udgangspunkt i datoerne\nforeslået i bilag 2"
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-6": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-6",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Borgerrådgiverens beretning v/Bettina Post",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Borgerrådgiveren orienterede om sin funktion, sine opgaver og karakteren af de borgerhenvendelser, der\naktuelt modtages.\nBorgerrådgiveren oplyste, at antallet af borgerhenvendelser allerede nu er lidt højere end tidligere år.\nRådgiveren behandler cirka 1.000 sager årligt. Det gælder blandt andet sager om tabt arbejdsfortjeneste,\nophør af kontanthjælp, specialundervisning, dagbehandlingstilbud og botilbud. Borgerrådgiveren vurderede,\nat omkring halvdelen af henvendelserne i bred forstand vedrører borgere med handicap eller\nfunktionsnedsættelser.\nHandicaprådet drøftede de generelle årsager til det høje antal handicapsager i Høje-Taastrup kommune.\n\nBorgerrådgiverens perspektiver på sagsbehandlingen\nBorgerrådgiveren berørte de generelle udfordringer i sagsbehandlingen i Høje-Taastrup kommune.\nBorgerrådgiveren nævnte, at der kan være særlige udfordringer på områder, hvor der har været stor\nmedarbejderudskiftning og ledelsesmæssig ustabilitet, da det kan påvirke både kvalitet, kontinuitet og læring\ni sagsbehandlingen.\nBorgerrådgiveren pegede samtidig på, at det kan være en fordel, at borgerrådgiveren bliver inddraget\ntidligere i sagsbehandlingsprocessen, da dialogen mellem sagsbehandler, rådgiver og borger i visse tilfælde\nkan styrke fremdriften i sagen.\nHandicaprådet drøftede konsekvenserne for forældre og børn, når sagsbehandlingstiderne på\nbørneområdet er lange, blandt andet i forbindelse med børneudredninger og bevilling af støttetilbud eller\nspecialiserede tilbud. Handicaprådet så gerne, at borgerrådgiveren så nærmere på børneområdet med\nhenblik på at understøtte en tidligere involvering i sagerne. En tidligere involvering af borgerrådgiveren kan\neventuelt imødekomme nogle af udfordringerne og derved forebygge, at der klages over sagsbehandlingen\ntil Ankestyrelsen.\nHandicaprådet drøftede desuden forsyningsforpligtelsen, herunder kommunens muligheder for at finde\negnede tilbud til borgere med særlige behov.\nHandicaprådet drøftede de udfordringer, der kan forekomme i komplekse sager, eksempelvis hvis en borger\ntakker nej til et tilbud, eller hvis den generelle mangel på tilbud på det specialiserede område gør det\nvanskeligt at finde et tilbud, der matcher borgerens behov.\nAdministrationen oplyste, at der i nogle tilfælde kan opstå et dilemma mellem hensynet til\nforsyningsforpligtelsen, prisen og kvaliteten af det enkelte botilbud.\nAdministrationen oplyste, at der aktuelt arbejdes med at afdække årsagerne til forsyningsudfordringerne\ngennem en gennemgang af relevante sager.\nHandicaprådet pegede på muligheden for at styrke den løbende dialog med borgerrådgiveren om relevante\ntemaer.\nHandicaprådet drøftede muligheden for at tage udgangspunkt i borgerrådgiverens beretning som inspiration\ntil kommende temadrøftelser samt at supplere de fem årlige møder med temamøder.\n\nHandicaprådet ønskede blandt andet et temamøde i foråret, der eventuelt kunne omhandle\nforsyningsforpligtelsen.\n\nBorgerrådgiveren orienterer om hovedindholdet og anbefalingerne i beretningen for 2025.\nBeretningen gør status over arbejdet i 2025 og belyser blandt andet udviklingen i\nborgerkontakten, sagsbehandlingen og retssikkerheden i Høje-Taastrup Kommune."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-7": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-7",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Høringssager siden sidst",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet fulgte op på de tre høringssvar, som var afgivet. Formanden oplyste, at der var indgivet\nhøringssvar om permanentgørelse af biltrafik på busbroen. Formanden oplyste, at kommunen har besluttet,\nat biler fortsat må køre på broen. Der blev kort drøftet de trafikale konsekvenser af beslutningen, herunder\nsammenhængen med omlægninger i området og hensynet til busdriften.\nI sagen om kommuneplanen fremhævede formanden, at der arbejdes for at få begrebet universelt design\nskrevet ind. Drøftelsen tog udgangspunkt i, at universelt design handler om at planlægge og indrette\nkommunen, så alle borgere kan bruge byrum, byggeri og løsninger uanset funktionsniveau. Det blev\nunderstreget, at universelt design ikke kun vedrører fysisk tilgængelighed, men også sensoriske og psykiske\nforhold eksempelvis hensyn til borgere med autisme. Handicaprådet pegede på universelt design som et\nvigtigt princip i den videre udvikling af kommunen.\nI høringen om lokalplanen for friplejehjemmet blev der særligt peget på parkeringsforholdene, herunder om\nantallet og placeringen af handicapparkeringspladser er tilstrækkelige.\n\nDer er givet høringssvar til :\n- Plan og Miljøudvalget - Punkt 2 Vejbesigtigelse under afsnit 11 – Permanentgørelse af\nbiltrafik på busbroen.\n- Plan og Miljøudvalget - Høje-Taastrup kommuneplan 2026\nDer er yderligere afgivet bemærkninger til lokalplan for friplejehjem i HT-C"
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-8": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-8",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 8,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Igangværende sager",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der er ingen igangværende sager."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-9": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-9",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 9,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Nyt fra medlemmerne",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Et medlem spurgte til isbryderordningen, herunder om ordningen anvendes, og om kommunen arbejder på\nen øget brug af den. Administrationen oplyste, at kommunen anvender isbryderordningen, og at det vil blive\nundersøgt, om der er planer om at ændre brugen af ordningen.\nHandicaprådet drøftede kort den nye mulighed, som politiet har fået til at anvende en scanner til at\nkontrollere brugen af handicapparkeringskort. Handicaprådet bemærkede, at ordningen kan hjælpe med at\nkontrollere, om et kort er gyldigt, men ikke nødvendigvis løser problemet med misbrug, hvis kortet anvendes\naf andre end den berettigede person."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-09-24-handicapraadet-10": {
+   "id": "hoeje-taastrup-2026-09-24-handicapraadet-10",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-09-24",
+   "type": "referat",
+   "nr": 10,
+   "kilde": "https://dagsordener.htk.dk/vis?id=3da78743-2d8a-429d-994e-e45e7edfe109",
+   "hentet": "2026-10-22T20:06:41.498Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet drøftede Handicapprisen, da der indtil videre kun er modtaget få indstillinger. Handicaprådet\novervejede derfor, om der i år kun skal uddeles én pris. Emil Viskum orienterede om, at der er fundet en\nfrivillig fotograf og indgået en aftale med FGU’s medielinje om videoproduktion. Medlemmerne blev\nopfordret til at videreformidle muligheden for at indstille kandidater til prisen."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-10-21-byraadet-9": {
+   "id": "hoeje-taastrup-2026-10-21-byraadet-9",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-21",
+   "type": "referat",
+   "nr": 9,
+   "kilde": "https://dagsordener.htk.dk/vis?id=20bc78fd-8296-45bb-a929-3db58facdcb2",
+   "hentet": "2026-10-22T20:07:37.876Z",
+   "titel": "12. I - Ældreloven - samarbejde med civilsamfund - ÆSU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Med Ældreloven er kommunerne forpligtede til at yde støtte til frivilligt arbejde på\nældreområdet. Ældreloven giver Byrådet ansvaret for at fastlægge de lokale rammer for\nstøtten. Der er ikke i lovgivningen nogen krav til omfanget af støtten.\nHøje-Taastrup Kommune giver allerede i dag støtte til foreninger indenfor samme målgruppe\nog med samme formål som Ældreloven. Det sker via Servicelovens § 79 i form af en pulje, der\ngiver støtte til foreninger på ældre- og handicapområdet.\nSom led i den løbende implementering af Ældreloven inden 31-12-2026, indstilles det i denne\nsag, at Byrådet etablerer en pulje til støtte af frivilligt arbejde på ældreområdet på tværs af\nÆldrelovens § 7 og Servicelovens § 79 til gavn for borgere indenfor Ældrelovens målgruppe."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Ældre- og Sundhedsudvalget, Økonomiudvalget og Byrådet godkender at etablere en\nfælles pulje på tværs af Ældrelovens § 7 og Servicelovens § 79, inden for den\neksisterende budgetramme til Servicelovens § 79 og at målgruppen for puljen er\nmålgruppen for Ældreloven."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "ÆLDRE- OG SUNDHEDSUDVALGET DEN 30-09-2026\nAnbefalet.\n\nØKONOMIUDVALGET DEN 07-10-2026\nAnbefales.\n\nBYRÅDET DEN 21-10-2026\nGodkendt"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med Ældreloven er kommunen forpligtet til både at samarbejde med og yde støtte til frivillige\nforeninger på ældreområdet, hvilket er i overensstemmelse med Ældrelovens værdi om et tæt\nsamspil med lokale fællesskaber og civilsamfund.\nAf Ældreloven fremgår det, at kommunen årligt skal fastsætte et beløb til støtte af frivilligt\narbejde på ældreområdet.\nHøje-Taastrup Kommune har i forvejen et samarbejde med frivillige foreninger på\nældreområdet, f.eks. i Sundhedscenteret og på plejehjem. Derudover yder kommunen også\nstøtte til frivilligt arbejde på ældre- og handicapområdet via Servicelovens § 79 i form af en\nårlig pulje. Det er primært foreninger på ældreområdet, der søger denne pulje. I 2025 og i 2026\nhar alle ansøgninger til puljen for § 79 omhandlet Ældrelovens målgruppe.\n\nAdministrationen anbefaler, at arbejdet med § 7 i Ældreloven sammenkobles og administreres\nmed servicelovens § 79. I tillæg hertil anbefaler administrationen, at målgruppen for puljen\nafgrænses til Ældrelovens målgruppe, som primært er folkepensionister. I dag er målgruppen\nfor servicelovens § 79 foreninger på ældre- og handicapområdet.\nHvis de to paragraffer sammenkobles, vil foreninger, som laver aktiviteter for ældre med\nhandicap, fortsat kunne søge puljen. Foreninger som laver aktiviteter for yngre borgere med\nfysisk og psykisk handicap, vil kunne søge kommunen om støtte i form af servicelovens § 18\nmidler.\nÆldre- og Sundhedsudvalget beslutter årligt kriterierne for udmøntning af § 79 midlerne i det\nkommende år. I december vil Ældre- og Sundhedsudvalget skulle tage stilling til de konkrete\nkriterier for udmøntningen af puljen i 2027."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er i Ældreloven ingen krav til puljens størrelse og sagen har ingen økonomiske\nkonsekvenser, hvis indstillingen om at etablere en fælles pulje godkendes.\nAdministrationen gør opmærksom på, at en reduktion af Servicelovens §79 pulje indgår\nsom prioriteringsforslag i budgetprocessen 2027-30."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -4401,6 +4760,6 @@
    "tjekket": "2026-10-20"
   }
  },
- "opdateret": "2026-10-22T16:38:18.751Z",
+ "opdateret": "2026-10-22T20:07:37.877Z",
  "kommune": "Høje-Taastrup"
 }

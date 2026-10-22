@@ -105,6 +105,7 @@
    "udvalg": "Huslejenævn",
    "dato": "2026-09-17",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-18"
   },
   "cbaae2b7-d46f-4d58-bc11-4a687cdd9345": {
@@ -113,6 +114,7 @@
    "udvalg": "Huslejenævn",
    "dato": "2026-09-01",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-18"
   },
   "1f5663b1-5f31-41ae-b5b5-50e127ff190c": {
@@ -121,6 +123,7 @@
    "udvalg": "Huslejenævn",
    "dato": "2026-08-13",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-18"
   },
   "f5a8aa73-2011-4a8b-8f48-2aff824b4f6c": {
@@ -129,6 +132,7 @@
    "udvalg": "Huslejenævn",
    "dato": "2026-07-02",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-18"
   },
   "111ceed8-8ac4-45f8-b188-98d4452c1dd1": {
@@ -137,6 +141,7 @@
    "udvalg": "Huslejenævn",
    "dato": "2026-06-18",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-18"
   },
   "1592bd1b-9dd7-4927-8d0f-d9c670af07b3": {
@@ -257,6 +262,7 @@
    "udvalg": "Beboerklagenævn",
    "dato": "2026-10-06",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-18"
   },
   "fb059fcf-93a7-4330-b6cc-d04632f06020": {
@@ -265,6 +271,7 @@
    "udvalg": "Beboerklagenævn",
    "dato": "2026-09-17",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-18"
   },
   "e6934d1c-358f-4fcd-b620-f9682f7ac4dd": {
@@ -273,6 +280,7 @@
    "udvalg": "Beboerklagenævn",
    "dato": "2026-06-24",
    "punkter": 0,
+   "parser": 2,
    "tomFra": "2026-10-18"
   },
   "4a73caaa-151b-4298-8534-1925933c6661": {
@@ -398,16 +406,16 @@
    "type": "dagsorden",
    "udvalg": "Bevillingsnævnet",
    "dato": "2026-10-27",
-   "punkter": 0,
-   "tomFra": "2026-10-22"
+   "punkter": 1,
+   "parser": 2
   },
   "24d77e71-b59f-4732-ad7f-62698c97ac2d": {
    "lastmod": "2026-07-02",
    "type": "referat",
    "udvalg": "Bevillingsnævnet",
    "dato": "2026-06-16",
-   "punkter": 0,
-   "tomFra": "2026-10-22"
+   "punkter": 1,
+   "parser": 2
   }
  },
  "sager": {
@@ -9716,6 +9724,42 @@
     }
    ],
    "bilag": []
+  },
+  "herning-2026-10-27-bevillingsnaevnet-4": {
+   "id": "herning-2026-10-27-bevillingsnaevnet-4",
+   "kommune": "Herning",
+   "udvalg": "Bevillingsnævnet",
+   "dato": "2026-10-27",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.herning.dk/vis?id=b573b2ad-2b31-40ed-b0bb-9160701a4751",
+   "hentet": "2026-10-22T19:59:08.115Z",
+   "titel": "Underskrift af digital beslutningsprotokol",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Bevillingsnævnet skal godkende beslutningsprotokollen.\nBeslutningsprotokollen underskrives ved at trykke på \"godkend\" i First Agenda."
+    }
+   ],
+   "bilag": []
+  },
+  "herning-2026-06-16-bevillingsnaevnet-12": {
+   "id": "herning-2026-06-16-bevillingsnaevnet-12",
+   "kommune": "Herning",
+   "udvalg": "Bevillingsnævnet",
+   "dato": "2026-06-16",
+   "type": "referat",
+   "nr": 12,
+   "kilde": "https://dagsordener.herning.dk/vis?id=24d77e71-b59f-4732-ad7f-62698c97ac2d",
+   "hentet": "2026-10-22T20:01:53.533Z",
+   "titel": "Underskrift af digital beslutningsprotokol",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Bevillingsnævnet skal godkende beslutningsprotokollen.\nBeslutningsprotokollen underskrives ved at trykke på \"godkend\" i First Agenda."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -9796,6 +9840,6 @@
    "tjekket": "2026-10-12"
   }
  },
- "opdateret": "2026-10-22T16:34:08.956Z",
+ "opdateret": "2026-10-22T20:04:41.286Z",
  "kommune": "Herning"
 }

@@ -1,1 +1,436 @@
-{}
+{
+ "aabenraa": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.aabenraa.dk",
+  "udvalg": 38,
+  "tjekket": "2026-10-22"
+ },
+ "aalborg": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "aarhus": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.aarhus.dk",
+  "udvalg": 10,
+  "tjekket": "2026-10-22"
+ },
+ "aeroe": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.aeroekommune.dk",
+  "udvalg": 54,
+  "tjekket": "2026-10-22"
+ },
+ "alleroed": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.alleroed.dk",
+  "udvalg": 25,
+  "tjekket": "2026-10-22"
+ },
+ "assens": {
+  "system": "firstagenda",
+  "base": "https://dagsorden.assens.dk",
+  "udvalg": 18,
+  "tjekket": "2026-10-22"
+ },
+ "billund": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "bornholm": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.bornholm.dk",
+  "udvalg": 85,
+  "tjekket": "2026-10-22"
+ },
+ "egedal": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.egedalkommune.dk",
+  "udvalg": 50,
+  "tjekket": "2026-10-22"
+ },
+ "esbjerg": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.esbjergkommune.dk",
+  "udvalg": 22,
+  "tjekket": "2026-10-22"
+ },
+ "faaborg-midtfyn": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.fmk.dk",
+  "udvalg": 59,
+  "tjekket": "2026-10-22"
+ },
+ "fanoe": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.fanoe.dk",
+  "udvalg": 68,
+  "tjekket": "2026-10-22"
+ },
+ "favrskov": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.favrskov.dk",
+  "udvalg": 19,
+  "tjekket": "2026-10-22"
+ },
+ "faxe": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.faxekommune.dk",
+  "udvalg": 51,
+  "tjekket": "2026-10-22"
+ },
+ "fredensborg": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.fredensborg.dk",
+  "udvalg": 58,
+  "tjekket": "2026-10-22"
+ },
+ "frederikshavn": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.frederikshavn.dk",
+  "udvalg": 59,
+  "tjekket": "2026-10-22"
+ },
+ "frederikssund": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "furesoe": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.furesoe.dk",
+  "udvalg": 38,
+  "tjekket": "2026-10-22"
+ },
+ "glostrup": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "greve": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.greve.dk",
+  "udvalg": 51,
+  "tjekket": "2026-10-22"
+ },
+ "gribskov": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.gribskov.dk",
+  "udvalg": 55,
+  "tjekket": "2026-10-22"
+ },
+ "haderslev": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.haderslev.dk",
+  "udvalg": 50,
+  "tjekket": "2026-10-22"
+ },
+ "halsnaes": {
+  "system": "firstagenda",
+  "base": "https://dagsorden.halsnaes.dk",
+  "udvalg": 35,
+  "tjekket": "2026-10-22"
+ },
+ "hedensted": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "helsingoer": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.helsingor.dk",
+  "udvalg": 73,
+  "tjekket": "2026-10-22"
+ },
+ "hilleroed": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.hillerod.dk",
+  "udvalg": 24,
+  "tjekket": "2026-10-22"
+ },
+ "hjoerring": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.hjoerring.dk",
+  "udvalg": 43,
+  "tjekket": "2026-10-22"
+ },
+ "hoersholm": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.horsholm.dk",
+  "udvalg": 26,
+  "tjekket": "2026-10-22"
+ },
+ "holbaek": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.holbaek.dk",
+  "udvalg": 54,
+  "tjekket": "2026-10-22"
+ },
+ "holstebro": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.holstebro.dk",
+  "udvalg": 29,
+  "tjekket": "2026-10-22"
+ },
+ "ikast-brande": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.ikast-brande.dk",
+  "udvalg": 19,
+  "tjekket": "2026-10-22"
+ },
+ "ishoej": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "jammerbugt": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.jammerbugt.dk",
+  "udvalg": 23,
+  "tjekket": "2026-10-22"
+ },
+ "kalundborg": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.kalundborg.dk",
+  "udvalg": 40,
+  "tjekket": "2026-10-22"
+ },
+ "kerteminde": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.kerteminde.dk",
+  "udvalg": 28,
+  "tjekket": "2026-10-22"
+ },
+ "koege": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.koege.dk",
+  "udvalg": 31,
+  "tjekket": "2026-10-22"
+ },
+ "kolding": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "laesoe": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.laesoe.dk",
+  "udvalg": 37,
+  "tjekket": "2026-10-22"
+ },
+ "langeland": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.langelandkommune.dk",
+  "udvalg": 43,
+  "tjekket": "2026-10-22"
+ },
+ "lejre": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.lejre.dk",
+  "udvalg": 40,
+  "tjekket": "2026-10-22"
+ },
+ "lemvig": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.lemvig.dk",
+  "udvalg": 9,
+  "tjekket": "2026-10-22"
+ },
+ "lolland": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.lolland.dk",
+  "udvalg": 56,
+  "tjekket": "2026-10-22"
+ },
+ "mariagerfjord": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.mariagerfjord.dk",
+  "udvalg": 26,
+  "tjekket": "2026-10-22"
+ },
+ "middelfart": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.middelfart.dk",
+  "udvalg": 20,
+  "tjekket": "2026-10-22"
+ },
+ "morsoe": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "naestved": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.naestved.dk",
+  "udvalg": 47,
+  "tjekket": "2026-10-22"
+ },
+ "norddjurs": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "nordfyn": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.nordfynskommune.dk",
+  "udvalg": 65,
+  "tjekket": "2026-10-22"
+ },
+ "nyborg": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.nyborg.dk",
+  "udvalg": 44,
+  "tjekket": "2026-10-22"
+ },
+ "odder": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.odder.dk",
+  "udvalg": 56,
+  "tjekket": "2026-10-22"
+ },
+ "odsherred": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.odsherred.dk",
+  "udvalg": 59,
+  "tjekket": "2026-10-22"
+ },
+ "randers": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.randers.dk",
+  "udvalg": 82,
+  "tjekket": "2026-10-22"
+ },
+ "rebild": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.rebild.dk",
+  "udvalg": 14,
+  "tjekket": "2026-10-22"
+ },
+ "ringkoebing-skjern": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "ringsted": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.ringsted.dk",
+  "udvalg": 32,
+  "tjekket": "2026-10-22"
+ },
+ "roskilde": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.roskilde.dk",
+  "udvalg": 52,
+  "tjekket": "2026-10-22"
+ },
+ "rudersdal": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.rudersdal.dk",
+  "udvalg": 54,
+  "tjekket": "2026-10-22"
+ },
+ "samsoe": {
+  "system": "firstagenda",
+  "base": "https://dagsorden.samsoe.dk",
+  "udvalg": 30,
+  "tjekket": "2026-10-22"
+ },
+ "silkeborg": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.silkeborg.dk",
+  "udvalg": 30,
+  "tjekket": "2026-10-22"
+ },
+ "skanderborg": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.skanderborg.dk",
+  "udvalg": 39,
+  "tjekket": "2026-10-22"
+ },
+ "skive": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.skive.dk",
+  "udvalg": 48,
+  "tjekket": "2026-10-22"
+ },
+ "slagelse": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.slagelse.dk",
+  "udvalg": 79,
+  "tjekket": "2026-10-22"
+ },
+ "soenderborg": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.sonderborgkommune.dk",
+  "udvalg": 55,
+  "tjekket": "2026-10-22"
+ },
+ "solroed": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.solrod.dk",
+  "udvalg": 14,
+  "tjekket": "2026-10-22"
+ },
+ "soroe": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.soroe.dk",
+  "udvalg": 41,
+  "tjekket": "2026-10-22"
+ },
+ "stevns": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.stevns.dk",
+  "udvalg": 23,
+  "tjekket": "2026-10-22"
+ },
+ "struer": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.struer.dk",
+  "udvalg": 19,
+  "tjekket": "2026-10-22"
+ },
+ "svendborg": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.svendborg.dk",
+  "udvalg": 54,
+  "tjekket": "2026-10-22"
+ },
+ "syddjurs": {
+  "system": "ukendt",
+  "tjekket": "2026-10-22"
+ },
+ "thisted": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.thisted.dk",
+  "udvalg": 41,
+  "tjekket": "2026-10-22"
+ },
+ "toender": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.toender.dk",
+  "udvalg": 40,
+  "tjekket": "2026-10-22"
+ },
+ "varde": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.vardekommune.dk",
+  "udvalg": 25,
+  "tjekket": "2026-10-22"
+ },
+ "vejen": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.vejen.dk",
+  "udvalg": 33,
+  "tjekket": "2026-10-22"
+ },
+ "vejle": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.vejle.dk",
+  "udvalg": 171,
+  "tjekket": "2026-10-22"
+ },
+ "vesthimmerland": {
+  "system": "firstagenda",
+  "base": "https://dagsordener.vesthimmerland.dk",
+  "udvalg": 29,
+  "tjekket": "2026-10-22"
+ },
+ "vordingborg": {
+  "system": "firstagenda",
+  "base": "https://dagsordner.vordingborg.dk",
+  "udvalg": 54,
+  "tjekket": "2026-10-22"
+ }
+}
