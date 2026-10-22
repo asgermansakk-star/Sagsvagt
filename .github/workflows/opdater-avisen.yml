@@ -28,8 +28,9 @@ concurrency:
 jobs:
   opdater:
     runs-on: ubuntu-latest
-    # Første upload er alle ~4.000 filer over FTPS og tager omkring en time. Derefter uploades kun ændrede filer.
-    timeout-minutes: 180
+    # Første upload er alle filer over FTPS og tager timer. Derefter uploades kun ændrede filer. Når mange sider
+    # ændres på én gang (nye kommuner, nyt layout), kan uploaden tage over to timer; derfor 350 minutter (maks. er 360).
+    timeout-minutes: 350
     env:
       FTP_SERVER: ${{ secrets.FTP_SERVER }}
     steps:
