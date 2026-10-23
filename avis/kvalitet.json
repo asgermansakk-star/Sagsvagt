@@ -3,11 +3,11 @@
  "kommuner": {
   "viborg": {
    "kommune": "Viborg",
-   "moeder": 51,
+   "moeder": 52,
    "udvalg": 13,
    "punkter": 358,
    "sager": 346,
-   "referater": 325,
+   "referater": 331,
    "udenBeslutning": 1,
    "nulMoeder": 2,
    "versaltitler": 0,
@@ -39,11 +39,11 @@
   },
   "albertslund": {
    "kommune": "Albertslund",
-   "moeder": 47,
+   "moeder": 51,
    "udvalg": 14,
    "punkter": 300,
-   "sager": 204,
-   "referater": 182,
+   "sager": 210,
+   "referater": 202,
    "udenBeslutning": 0,
    "nulMoeder": 0,
    "versaltitler": 0,
@@ -69,10 +69,10 @@
   },
   "guldborgsund": {
    "kommune": "Guldborgsund",
-   "moeder": 38,
+   "moeder": 39,
    "udvalg": 11,
-   "punkter": 263,
-   "sager": 202,
+   "punkter": 271,
+   "sager": 208,
    "referater": 170,
    "udenBeslutning": 0,
    "nulMoeder": 0,
@@ -84,17 +84,19 @@
   },
   "herning": {
    "kommune": "Herning",
-   "moeder": 56,
+   "moeder": 59,
    "udvalg": 13,
    "punkter": 300,
    "sager": 236,
    "referater": 235,
    "udenBeslutning": 0,
-   "nulMoeder": 12,
+   "nulMoeder": 15,
    "versaltitler": 0,
    "nyesteMoede": "2026-10-21",
    "opdateret": "2026-10-23",
-   "fejl": [],
+   "fejl": [
+    "15 af 59 møder gav ingen punkter (PDF'en kunne ikke læses)"
+   ],
    "eksempler": []
   },
   "lyngby-taarbaek": {
@@ -133,7 +135,7 @@
   },
   "odense": {
    "kommune": "Odense",
-   "moeder": 42,
+   "moeder": 43,
    "udvalg": 8,
    "punkter": 257,
    "sager": 205,
@@ -148,7 +150,7 @@
   },
   "frederiksberg": {
    "kommune": "Frederiksberg",
-   "moeder": 52,
+   "moeder": 53,
    "udvalg": 17,
    "punkter": 201,
    "sager": 180,
@@ -236,10 +238,10 @@
   },
   "hvidovre": {
    "kommune": "Hvidovre",
-   "moeder": 39,
+   "moeder": 48,
    "udvalg": 10,
-   "punkter": 369,
-   "sager": 304,
+   "punkter": 443,
+   "sager": 358,
    "referater": 290,
    "udenBeslutning": 0,
    "nulMoeder": 1,
@@ -268,11 +270,11 @@
   },
   "taarnby": {
    "kommune": "Tårnby",
-   "moeder": 41,
+   "moeder": 43,
    "udvalg": 13,
-   "punkter": 409,
-   "sager": 314,
-   "referater": 288,
+   "punkter": 427,
+   "sager": 323,
+   "referater": 293,
    "udenBeslutning": 2,
    "nulMoeder": 0,
    "versaltitler": 0,
@@ -286,11 +288,11 @@
   },
   "dragoer": {
    "kommune": "Dragør",
-   "moeder": 23,
+   "moeder": 25,
    "udvalg": 7,
-   "punkter": 246,
-   "sager": 211,
-   "referater": 200,
+   "punkter": 264,
+   "sager": 226,
+   "referater": 212,
    "udenBeslutning": 3,
    "nulMoeder": 1,
    "versaltitler": 0,
@@ -391,11 +393,11 @@
   },
   "helsingoer": {
    "kommune": "Helsingør",
-   "moeder": 40,
+   "moeder": 41,
    "udvalg": 15,
    "punkter": 345,
    "sager": 256,
-   "referater": 225,
+   "referater": 226,
    "udenBeslutning": 10,
    "nulMoeder": 0,
    "versaltitler": 0,
@@ -425,7 +427,7 @@
   },
   "hilleroed": {
    "kommune": "Hillerød",
-   "moeder": 48,
+   "moeder": 49,
    "udvalg": 13,
    "punkter": 365,
    "sager": 309,
@@ -493,7 +495,7 @@
   },
   "greve": {
    "kommune": "Greve",
-   "moeder": 36,
+   "moeder": 37,
    "udvalg": 13,
    "punkter": 392,
    "sager": 332,
@@ -508,11 +510,11 @@
   },
   "koege": {
    "kommune": "Køge",
-   "moeder": 31,
+   "moeder": 32,
    "udvalg": 13,
    "punkter": 311,
-   "sager": 224,
-   "referater": 206,
+   "sager": 223,
+   "referater": 209,
    "udenBeslutning": 0,
    "nulMoeder": 0,
    "versaltitler": 0,
@@ -557,18 +559,20 @@
   },
   "gribskov": {
    "kommune": "Gribskov",
-   "moeder": 51,
+   "moeder": 52,
    "udvalg": 16,
    "punkter": 327,
-   "sager": 280,
-   "referater": 242,
-   "udenBeslutning": 0,
+   "sager": 281,
+   "referater": 247,
+   "udenBeslutning": 1,
    "nulMoeder": 0,
    "versaltitler": 0,
    "nyesteMoede": "2026-10-22",
    "opdateret": "2026-10-23",
    "fejl": [],
-   "eksempler": []
+   "eksempler": [
+    "https://dagsordener.gribskov.dk/vis?id=1cbb17e1-fe5b-4d71-be25-82a25d1165d7"
+   ]
   },
   "odsherred": {
    "kommune": "Odsherred",
@@ -610,10 +614,10 @@
   },
   "faxe": {
    "kommune": "Faxe",
-   "moeder": 53,
+   "moeder": 55,
    "udvalg": 19,
-   "punkter": 416,
-   "sager": 317,
+   "punkter": 436,
+   "sager": 327,
    "referater": 284,
    "udenBeslutning": 0,
    "nulMoeder": 0,
@@ -625,11 +629,11 @@
   },
   "holbaek": {
    "kommune": "Holbæk",
-   "moeder": 47,
+   "moeder": 48,
    "udvalg": 17,
    "punkter": 317,
    "sager": 272,
-   "referater": 254,
+   "referater": 260,
    "udenBeslutning": 10,
    "nulMoeder": 1,
    "versaltitler": 0,
@@ -693,10 +697,10 @@
   },
   "slagelse": {
    "kommune": "Slagelse",
-   "moeder": 53,
+   "moeder": 54,
    "udvalg": 20,
    "punkter": 577,
-   "sager": 523,
+   "sager": 524,
    "referater": 483,
    "udenBeslutning": 0,
    "nulMoeder": 6,
@@ -708,10 +712,10 @@
   },
   "soroe": {
    "kommune": "Sorø",
-   "moeder": 25,
+   "moeder": 26,
    "udvalg": 7,
-   "punkter": 183,
-   "sager": 155,
+   "punkter": 195,
+   "sager": 165,
    "referater": 155,
    "udenBeslutning": 0,
    "nulMoeder": 0,
@@ -757,10 +761,10 @@
   },
   "naestved": {
    "kommune": "Næstved",
-   "moeder": 43,
+   "moeder": 45,
    "udvalg": 14,
-   "punkter": 266,
-   "sager": 254,
+   "punkter": 268,
+   "sager": 256,
    "referater": 250,
    "udenBeslutning": 1,
    "nulMoeder": 8,
@@ -789,18 +793,18 @@
   },
   "vordingborg": {
    "kommune": "Vordingborg",
-   "moeder": 39,
+   "moeder": 40,
    "udvalg": 15,
    "punkter": 259,
-   "sager": 212,
-   "referater": 207,
-   "udenBeslutning": 206,
+   "sager": 215,
+   "referater": 215,
+   "udenBeslutning": 214,
    "nulMoeder": 0,
    "versaltitler": 0,
    "nyesteMoede": "2026-10-19",
    "opdateret": "2026-10-23",
    "fejl": [
-    "206 af 207 referater mangler beslutningen"
+    "214 af 215 referater mangler beslutningen"
    ],
    "eksempler": [
     "https://dagsordner.vordingborg.dk/vis?id=97e5be3a-981b-4a6d-b4b3-ff46fcab7e2b",
@@ -810,10 +814,10 @@
   },
   "faaborg-midtfyn": {
    "kommune": "Faaborg-Midtfyn",
-   "moeder": 47,
+   "moeder": 48,
    "udvalg": 12,
-   "punkter": 476,
-   "sager": 344,
+   "punkter": 483,
+   "sager": 349,
    "referater": 338,
    "udenBeslutning": 0,
    "nulMoeder": 3,
@@ -823,12 +827,52 @@
    "fejl": [],
    "eksempler": []
   },
+  "kerteminde": {
+   "kommune": "Kerteminde",
+   "moeder": 40,
+   "udvalg": 13,
+   "punkter": 281,
+   "sager": 197,
+   "referater": 186,
+   "udenBeslutning": 186,
+   "nulMoeder": 0,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-23",
+   "fejl": [
+    "186 af 186 referater mangler beslutningen"
+   ],
+   "eksempler": [
+    "https://dagsordener.kerteminde.dk/vis?id=8e09cc50-15e8-4b03-9ef6-05f8faf825d7",
+    "https://dagsordener.kerteminde.dk/vis?id=8e09cc50-15e8-4b03-9ef6-05f8faf825d7",
+    "https://dagsordener.kerteminde.dk/vis?id=8e09cc50-15e8-4b03-9ef6-05f8faf825d7"
+   ]
+  },
+  "svendborg": {
+   "kommune": "Svendborg",
+   "moeder": 56,
+   "udvalg": 17,
+   "punkter": 391,
+   "sager": 312,
+   "referater": 301,
+   "udenBeslutning": 4,
+   "nulMoeder": 0,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-23",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.svendborg.dk/vis?id=aabe7938-b8fa-483d-a306-aa53eb7afc74",
+    "https://dagsordener.svendborg.dk/vis?id=d4fc072d-d890-439a-aace-c79a47d4f2da",
+    "https://dagsordener.svendborg.dk/vis?id=ce523d19-90db-4c5c-a3d4-97b1faa51f2e"
+   ]
+  },
   "assens": {
    "kommune": "Assens",
-   "moeder": 33,
+   "moeder": 35,
    "udvalg": 10,
-   "punkter": 331,
-   "sager": 232,
+   "punkter": 343,
+   "sager": 237,
    "referater": 231,
    "udenBeslutning": 0,
    "nulMoeder": 0,
@@ -836,6 +880,157 @@
    "nyesteMoede": "2026-10-20",
    "opdateret": "2026-10-23",
    "fejl": [],
+   "eksempler": []
+  },
+  "nyborg": {
+   "kommune": "Nyborg",
+   "moeder": 44,
+   "udvalg": 13,
+   "punkter": 413,
+   "sager": 356,
+   "referater": 283,
+   "udenBeslutning": 282,
+   "nulMoeder": 0,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-15",
+   "opdateret": "2026-10-23",
+   "fejl": [
+    "282 af 283 referater mangler beslutningen"
+   ],
+   "eksempler": [
+    "https://dagsordener.nyborg.dk/vis?id=78d588c6-8bb1-495c-bc91-d1f13db5eb4f",
+    "https://dagsordener.nyborg.dk/vis?id=78d588c6-8bb1-495c-bc91-d1f13db5eb4f",
+    "https://dagsordener.nyborg.dk/vis?id=78d588c6-8bb1-495c-bc91-d1f13db5eb4f"
+   ]
+  },
+  "nordfyn": {
+   "kommune": "Nordfyn",
+   "moeder": 33,
+   "udvalg": 14,
+   "punkter": 301,
+   "sager": 264,
+   "referater": 251,
+   "udenBeslutning": 251,
+   "nulMoeder": 0,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-23",
+   "fejl": [
+    "251 af 251 referater mangler beslutningen"
+   ],
+   "eksempler": [
+    "https://dagsordener.nordfynskommune.dk/vis?id=29b70183-6db1-46ce-bdd1-b726f3526220",
+    "https://dagsordener.nordfynskommune.dk/vis?id=29b70183-6db1-46ce-bdd1-b726f3526220",
+    "https://dagsordener.nordfynskommune.dk/vis?id=29b70183-6db1-46ce-bdd1-b726f3526220"
+   ]
+  },
+  "langeland": {
+   "kommune": "Langeland",
+   "moeder": 31,
+   "udvalg": 16,
+   "punkter": 400,
+   "sager": 309,
+   "referater": 245,
+   "udenBeslutning": 16,
+   "nulMoeder": 0,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-05",
+   "opdateret": "2026-10-23",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.langelandkommune.dk/vis?id=729ac058-02fa-4155-9982-263f9db712ba",
+    "https://dagsordener.langelandkommune.dk/vis?id=289b18e5-073e-4722-a906-8ff67ece9dd1",
+    "https://dagsordener.langelandkommune.dk/vis?id=f898a596-0345-47b0-8d52-e5b7630307b3"
+   ]
+  },
+  "aeroe": {
+   "kommune": "Ærø",
+   "moeder": 32,
+   "udvalg": 13,
+   "punkter": 249,
+   "sager": 195,
+   "referater": 191,
+   "udenBeslutning": 191,
+   "nulMoeder": 1,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-07",
+   "opdateret": "2026-10-23",
+   "fejl": [
+    "191 af 191 referater mangler beslutningen"
+   ],
+   "eksempler": [
+    "https://dagsordener.aeroekommune.dk/vis?id=eac67a53-b89c-48a3-a02d-3e2e8a99a7c4",
+    "https://dagsordener.aeroekommune.dk/vis?id=eac67a53-b89c-48a3-a02d-3e2e8a99a7c4",
+    "https://dagsordener.aeroekommune.dk/vis?id=eac67a53-b89c-48a3-a02d-3e2e8a99a7c4"
+   ]
+  },
+  "haderslev": {
+   "kommune": "Haderslev",
+   "moeder": 67,
+   "udvalg": 20,
+   "punkter": 672,
+   "sager": 513,
+   "referater": 488,
+   "udenBeslutning": 9,
+   "nulMoeder": 0,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-20",
+   "opdateret": "2026-10-23",
+   "fejl": [],
+   "eksempler": [
+    "https://dagsordener.haderslev.dk/vis?id=9b2f43e9-760f-45a5-93c7-208bc6cb41a0",
+    "https://dagsordener.haderslev.dk/vis?id=c766f9f9-8543-4add-8931-5e4da70f5d80",
+    "https://dagsordener.haderslev.dk/vis?id=0241bb75-b2c7-4419-b8fd-9a59263cc015"
+   ]
+  },
+  "soenderborg": {
+   "kommune": "Sønderborg",
+   "moeder": 127,
+   "udvalg": 22,
+   "punkter": 446,
+   "sager": 389,
+   "referater": 376,
+   "udenBeslutning": 0,
+   "nulMoeder": 38,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-21",
+   "opdateret": "2026-10-23",
+   "fejl": [
+    "38 af 127 møder gav ingen punkter (PDF'en kunne ikke læses)"
+   ],
+   "eksempler": []
+  },
+  "toender": {
+   "kommune": "Tønder",
+   "moeder": 43,
+   "udvalg": 12,
+   "punkter": 323,
+   "sager": 274,
+   "referater": 253,
+   "udenBeslutning": 0,
+   "nulMoeder": 2,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-10-22",
+   "opdateret": "2026-10-23",
+   "fejl": [],
+   "eksempler": []
+  },
+  "esbjerg": {
+   "kommune": "Esbjerg",
+   "moeder": 47,
+   "udvalg": 11,
+   "punkter": 2,
+   "sager": 2,
+   "referater": 2,
+   "udenBeslutning": 0,
+   "nulMoeder": 45,
+   "versaltitler": 0,
+   "nyesteMoede": "2026-08-27",
+   "opdateret": "2026-10-23",
+   "fejl": [
+    "45 af 47 møder gav ingen punkter (PDF'en kunne ikke læses)",
+    "Seneste møde er 57 dage gammelt"
+   ],
    "eksempler": []
   },
   "bornholm": {

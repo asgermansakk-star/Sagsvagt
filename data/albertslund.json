@@ -370,6 +370,38 @@
    "dato": "2026-10-31",
    "punkter": 9,
    "parser": 3
+  },
+  "260faca5-1725-4791-b5b2-ad565f5bcfe2": {
+   "lastmod": "2026-10-23",
+   "type": "referat",
+   "udvalg": "Social- og Beskæftigelsesudvalget",
+   "dato": "2026-10-22",
+   "punkter": 11,
+   "parser": 3
+  },
+  "df552118-5881-4e8f-8e44-c5699b1d475b": {
+   "lastmod": "2026-10-23",
+   "type": "referat",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-10-22",
+   "punkter": 7,
+   "parser": 3
+  },
+  "15c56424-22c4-4e25-9e38-9f346cd4c080": {
+   "lastmod": "2026-10-23",
+   "type": "referat",
+   "udvalg": "Børne- Skole- og Uddannelsesudvalget",
+   "dato": "2026-10-21",
+   "punkter": 8,
+   "parser": 3
+  },
+  "996e65f7-2cb4-4a6f-afc9-579b4708abdd": {
+   "lastmod": "2026-10-23",
+   "type": "dagsorden",
+   "udvalg": ".Svar på politikerspørgsmål og øvrige henvendelser",
+   "dato": "2026-10-31",
+   "punkter": 9,
+   "parser": 3
   }
  },
  "sager": {
@@ -3632,10 +3664,10 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU - Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -3645,6 +3677,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Godkendelse af dagsorden."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendte indstillingen.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A), Michael Melchert (I) og Hediye Temiz (B) deltog\nikke under punktet.\nRasmus der er i politisk mesterlære deltog under hele mødet."
     }
    ],
    "bilag": []
@@ -3654,15 +3690,15 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU - Tema om sammenhænge mellem Social- og Beskæftigelsesområdet",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "Supplerende\nsagsfremstilling"
+     "tekst": "Supplerende\nsagsfremstilling\n\nTiltrådte indstillingen.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A), Michael Melchert (I) og Hediye Temiz (B) deltog\nikke under punktet."
     },
     {
      "titel": "Indstilling",
@@ -3688,15 +3724,15 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU/ØU/KB - Beslutning om videre arbejde med sociolance",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "X\n\nX\nX\n\nSupplerende\nsagsfremstilling"
+     "tekst": "X\n\nX\nX\n\nSupplerende\nsagsfremstilling\n\nTiltrådte indstillingen, idet udvalget bemærkede at evt. brug af sociolancen bringes videre\ntil Sundhedsrådet.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A) og Michael Melchert (I) deltog ikke under punktet."
     },
     {
      "titel": "Indstilling",
@@ -3708,11 +3744,11 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "På Kommunalbestyrelsesmødet den 16. juni 2026 blev det indstillet, at forvaltningen\nundersøgte muligheden for, at sociolancen udbredes til at omfatte Albertslund og gerne andre\nvestegnskommuner, og at det skal ske i samarbejde med regionen og andre storkøbenhavnske\nkommuner. Desuden at sagen forelægges for udvalget. Forvaltningen har nu lavet en\nindledende undersøgelse og indstilling.\nFlere steder i landet er sociolancen en del af akutberedskabet, og rykker ud til borgere, der\nbåde har behov for en sundhedsfaglig og en socialfaglig indsats. I perioden 2024 til 2027 har\nRegion Hovedstaden fået puljemidler til at udbrede sociolanceordningen til flere kommuner i\nregionen. I dag kører der bl.a. en sociolance i Københavns Kommune og på Frederiksberg, og\nsom en forsøgsordning, i fem kommuner i Region Sjælland. Forsøgsordningen i Region\n\nSjælland evalueres i løbet af 2027.\nForvaltningen indstiller til, at vi i Albertslund Kommune ikke for nuværende går videre med\netablering af en sociolanceordning\nForvaltningen har i forbindelse med udarbejdelsen af sagen, været i kontakt med\nomegnskommunerne. Der er i øjeblikket ingen af de andre kommuner, der udtrykker ønske om\net samarbejde om en ordning.\nDet er forvaltningens vurdering, at Albertslund Kommune har relevante og dækkende indsatser\ntil målgruppen for sociolanceordningen. Det er desuden forvaltningens vurdering, at\nmålgruppen i Albertslund Kommune er for lille til, at indsatsen vil være økonomisk proportionel.\nSe bilag for nuværende tilbud og indsatser for sociolancens målgruppen, samt uddybning af\nforvaltningens vurdering af behovet for en sociolanceordning.\nPå baggrund af den indledende analyse og erfaringerne fra prøveturene, indstiller forvaltningen\ntil, at vi i Albertslund Kommune ikke for nuværende går videre med etablering af en\nsociolanceordning. Derimod at vi afventer evalueringerne fra de igangværende ordninger. På\nbaggrund af erfaringerne kan kommunen tage stilling til, om der ønskes en sociolanceordning,\neventuelt i samarbejde med andre kommuner.\nHistorik\nAlbertslund Kommune blev i 2024, sammen med de øvrige omegnskommuner, kontaktet af\nadministrationen i Region Hovedstaden og spurgt til interessen for at udbrede sociolancen\nudenfor København og Frederiksberg. Henvendelserne blev drøftet i Kommunekontaktudvalget\n22. november 2024, men der var på det tidspunkt ikke ønske om at gå videre med forslaget.\nKommunen har fået lov til at sende medarbejdere fra bostøtten med på tre prøveture på\nFrederiksberg og i København i løbet af efteråret. Medarbejderne skal køre med sociolancen\nog indhente erfaringer og opmærksomheder ift. potentialet i Albertslund Kommune. De to ture\npå Frederiksberg er kørt. På første tur var medarbejderen med ude på ét opkald om en kendt\nborger, der havde behov for indlæggelse. Her var oplevelsen, at den sundhedsfaglige\nmedarbejder sikrede en hurtigere indlæggelse pga. tydelig kommunikation med personalet i\nakutmodtagelsen. På den anden tur, blev sociolancen ikke kaldt ud, og de brugte derfor tiden\npå opsøgende arbejde på et herberg. Turen i København ligger senere på efteråret.\nOm sociolancen i Region Hovedstaden\nSociolancerne i Region Hovedstaden er et samarbejde imellem Københavns Kommune,\nFrederiksberg Kommune og Region Hovedstadens Akutberedskab. Sociolancen er en del af\nakutberedskabet og rykker ud i de situationer, hvor det kan være vanskeligt at vurdere, om\nborgeren primært har behov for en sundhedsfaglig eller en socialfaglig indsats. Sociolancen\nkan både rykke ud til akutte henvendelser, men laver også opsøgende og forebyggende\narbejde. Sociolancen er bemandet med en socialfaglig medarbejder, der er ansat i og betalt af\nkommunen, samt en sundhedsfaglig medarbejder, der er ansat af Akutberedskabet.\nMålgruppen for sociolancen er en blandet gruppe, der ofte har komplekse sociale og\nsundhedsmæssige udfordringer, f.eks. psykisk sygdom, misbrug af alkohol og stoffer,\nhjemløshed, økonomisk kaos, sociale og kognitive udfordringer m.m. Kompleksiteten gør, at\n\ndet ofte er nødvendigt med et tværfagligt blik på borgeren, for at vurdere, hvilken indsats, der\ner passende, akut og på længere sigt. Sociolancen skal løfte kvaliteten i den opsøgende og\nforebyggende indsats og aflaste det præhospitale beredskab i opgaver, der vurderes at være\naf mere socialfaglig karakter.\nForvaltningen har desuden været i dialog med Region Hovedstaden, som fortæller, at der er\nmulighed for at lave en forsøgsordning, hvor sociolancen kører i en begrænset periode for at\nvurdere behovet.\nSociolanceordning i Albertslund Kommune\nDe nuværende sociolanceordninger opererer efter forskellige modeller:\n1. I Københavns Kommune kører sociolancen alle ugens dage.\n2. I Frederiksberg Kommune kører sociolancen to dage om ugen.\n3. I de fem kommuner i Region Sjælland, kører sociolancen alle hverdage, og hver\nkommune personaledækker kørslen én dag om ugen.\nPå grund af Albertslund Kommunes størrelse, vurderer forvaltningen, at man vil kunne arbejde\nvidere med en model tilsvarende model 2 eller 3.\nI model 2 kan man undersøge mulighederne for et samarbejde med Frederiksberg Kommune,\nhvor sociolancen kan køre en eller to dage om ugen, på dage, hvor den ikke i forvejen kører på\nFrederiksberg. I en sådan model, vil Albertslund personaledække en eller to dages kørsel om\nugen.\nI model 3 kan kommunen undersøge mulighederne for en ordning på tværs af kommuner på\nvestegnen, hvor sociolancen f.eks. kører flere hverdage og dækker de deltagende kommuner. I\nen sådan model, vil Albertslund formentlig skulle personaledække en enkel dag om ugen.\n\nKommunens vision og politikker\nSociolancen bidrager til handicappolitikkens ambition om at møde borgerne ligeværdigt og på\nnye måder, så vi sikrer, at alle, uanset udfordringer, har en indgang til hjælp i kommunen.\nSociolancen vil også bidrage til borgernes oplevelse af en tryg kommune, fordi den bidrager\nmed den rette hjælp til de borgere i bybilledet, som tydeligt har brug for både sundhedsfaglig\nog social hjælp."
+     "tekst": "På Kommunalbestyrelsesmødet den 16. juni 2026 blev det indstillet, at forvaltningen\nundersøgte muligheden for, at sociolancen udbredes til at omfatte Albertslund og gerne andre\nvestegnskommuner, og at det skal ske i samarbejde med regionen og andre storkøbenhavnske\nkommuner. Desuden at sagen forelægges for udvalget. Forvaltningen har nu lavet en\nindledende undersøgelse og indstilling.\nFlere steder i landet er sociolancen en del af akutberedskabet, og rykker ud til borgere, der\nbåde har behov for en sundhedsfaglig og en socialfaglig indsats. I perioden 2024 til 2027 har\nRegion Hovedstaden fået puljemidler til at udbrede sociolanceordningen til flere kommuner i\nregionen. I dag kører der bl.a. en sociolance i Københavns Kommune og på Frederiksberg, og\nsom en forsøgsordning, i fem kommuner i Region Sjælland. Forsøgsordningen i Region\n\nSjælland evalueres i løbet af 2027.\nForvaltningen indstiller til, at vi i Albertslund Kommune ikke for nuværende går videre med\netablering af en sociolanceordning\nForvaltningen har i forbindelse med udarbejdelsen af sagen, været i kontakt med\nomegnskommunerne. Der er i øjeblikket ingen af de andre kommuner, der udtrykker ønske om\net samarbejde om en ordning.\nDet er forvaltningens vurdering, at Albertslund Kommune har relevante og dækkende indsatser\ntil målgruppen for sociolanceordningen. Det er desuden forvaltningens vurdering, at\nmålgruppen i Albertslund Kommune er for lille til, at indsatsen vil være økonomisk proportionel.\nSe bilag for nuværende tilbud og indsatser for sociolancens målgruppen, samt uddybning af\nforvaltningens vurdering af behovet for en sociolanceordning.\nPå baggrund af den indledende analyse og erfaringerne fra prøveturene, indstiller forvaltningen\ntil, at vi i Albertslund Kommune ikke for nuværende går videre med etablering af en\nsociolanceordning. Derimod at vi afventer evalueringerne fra de igangværende ordninger. På\nbaggrund af erfaringerne kan kommunen tage stilling til, om der ønskes en sociolanceordning,\neventuelt i samarbejde med andre kommuner.\nHistorik\nAlbertslund Kommune blev i 2024, sammen med de øvrige omegnskommuner, kontaktet af\nadministrationen i Region Hovedstaden og spurgt til interessen for at udbrede sociolancen\nudenfor København og Frederiksberg. Henvendelserne blev drøftet i Kommunekontaktudvalget\n22. november 2024, men der var på det tidspunkt ikke ønske om at gå videre med forslaget.\nKommunen har fået lov til at sende medarbejdere fra bostøtten med på tre prøveture på\nFrederiksberg og i København i løbet af efteråret. Medarbejderne skal køre med sociolancen\nog indhente erfaringer og opmærksomheder ift. potentialet i Albertslund Kommune. De to ture\npå Frederiksberg er kørt. På første tur var medarbejderen med ude på ét opkald om en kendt\nborger, der havde behov for indlæggelse. Her var oplevelsen, at den sundhedsfaglige\nmedarbejder sikrede en hurtigere indlæggelse pga. tydelig kommunikation med personalet i\nakutmodtagelsen. På den anden tur, blev sociolancen ikke kaldt ud, og de brugte derfor tiden\npå opsøgende arbejde på et herberg. Turen i København ligger senere på efteråret.\nOm sociolancen i Region Hovedstaden\nSociolancerne i Region Hovedstaden er et samarbejde imellem Københavns Kommune,\nFrederiksberg Kommune og Region Hovedstadens Akutberedskab. Sociolancen er en del af\nakutberedskabet og rykker ud i de situationer, hvor det kan være vanskeligt at vurdere, om\nborgeren primært har behov for en sundhedsfaglig eller en socialfaglig indsats. Sociolancen\nkan både rykke ud til akutte henvendelser, men laver også opsøgende og forebyggende\narbejde. Sociolancen er bemandet med en socialfaglig medarbejder, der er ansat i og betalt af\nkommunen, samt en sundhedsfaglig medarbejder, der er ansat af Akutberedskabet.\nMålgruppen for sociolancen er en blandet gruppe, der ofte har komplekse sociale og\nsundhedsmæssige udfordringer, f.eks. psykisk sygdom, misbrug af alkohol og stoffer,\nhjemløshed, økonomisk kaos, sociale og kognitive udfordringer m.m. Kompleksiteten gør, at\ndet ofte er nødvendigt med et tværfagligt blik på borgeren, for at vurdere, hvilken indsats, der\n\ner passende, akut og på længere sigt. Sociolancen skal løfte kvaliteten i den opsøgende og\nforebyggende indsats og aflaste det præhospitale beredskab i opgaver, der vurderes at være\naf mere socialfaglig karakter.\nForvaltningen har desuden været i dialog med Region Hovedstaden, som fortæller, at der er\nmulighed for at lave en forsøgsordning, hvor sociolancen kører i en begrænset periode for at\nvurdere behovet.\nSociolanceordning i Albertslund Kommune\nDe nuværende sociolanceordninger opererer efter forskellige modeller:\n1. I Københavns Kommune kører sociolancen alle ugens dage.\n2. I Frederiksberg Kommune kører sociolancen to dage om ugen.\n3. I de fem kommuner i Region Sjælland, kører sociolancen alle hverdage, og hver\nkommune personaledækker kørslen én dag om ugen.\nPå grund af Albertslund Kommunes størrelse, vurderer forvaltningen, at man vil kunne arbejde\nvidere med en model tilsvarende model 2 eller 3.\nI model 2 kan man undersøge mulighederne for et samarbejde med Frederiksberg Kommune,\nhvor sociolancen kan køre en eller to dage om ugen, på dage, hvor den ikke i forvejen kører på\nFrederiksberg. I en sådan model, vil Albertslund personaledække en eller to dages kørsel om\nugen.\nI model 3 kan kommunen undersøge mulighederne for en ordning på tværs af kommuner på\nvestegnen, hvor sociolancen f.eks. kører flere hverdage og dækker de deltagende kommuner. I\nen sådan model, vil Albertslund formentlig skulle personaledække en enkel dag om ugen.\n\nKommunens vision og politikker\nSociolancen bidrager til handicappolitikkens ambition om at møde borgerne ligeværdigt og på\nnye måder, så vi sikrer, at alle, uanset udfordringer, har en indgang til hjælp i kommunen.\nSociolancen vil også bidrage til borgernes oplevelse af en tryg kommune, fordi den bidrager\nmed den rette hjælp til de borgere i bybilledet, som tydeligt har brug for både sundhedsfaglig\nog social hjælp."
     },
     {
      "titel": "Økonomi",
-     "tekst": "Udgifterne ved at deltage i sociolancesamarbejde i Region Hovedstaden vil være\nlønudgifterne til den socialfaglige medarbejder, der skal køre rundt med sociolancen, og\nandre mindre driftsudgifter.\nI eksemplerne nedenfor er der regnet med en gennemsnitlig løn til den socialfaglige\nmedarbejder på 360 kr. i timen og driftsudgifter for cirka 15.000 kr. om året.\nUdgifterne til bl.a. køretøj og base dækkes af puljemidler fra Sundhedsstyrelsen til\n\nAkutberedskabet i Region Hovedstaden. Midlerne er bevilliget for perioden 2024-2027.\nAlt efter den ønskede model, vil regnestykke se således ud:\n1. Sociolancen kører to dage om ugen i Albertslund Kommune. Her vil prisen blive cirka\n315.000 kr. om året for Albertslund Kommune.\n2. Sociolancen dækkes af flere kommuner og kører alle hverdage. Albertslund\nKommune personaledækker sociolancen én dag om ugen. Her vil prisen blive cirka\n165.000 kr. om året for Albertslund Kommune.\nUanset den ønskede model er det forvaltningens vurdering, at udgifterne ikke kan\ndækkes inden for den nuværende ramme. Det betyder, at en medarbejdere fra\nbostøttekorpset vil skulle tages ud af den nuværende planlægning, de dage, hvor\nsociolancen skal dækkes, eller at der skal ske en opnormering.\n\nLovgrundlag\nServicelovens § 99 om støtte- og kontaktpersoner.\n\nBorgerperspektiv\nSociolancen leverer en tværfaglig støtte til nogle af de mest udsatte borgere, og hjælper med\nat sikre, at borgerne får hjælpen, når problemerne er opstået."
+     "tekst": "Udgifterne ved at deltage i sociolancesamarbejde i Region Hovedstaden vil være\nlønudgifterne til den socialfaglige medarbejder, der skal køre rundt med sociolancen, og\nandre mindre driftsudgifter.\nI eksemplerne nedenfor er der regnet med en gennemsnitlig løn til den socialfaglige\nmedarbejder på 360 kr. i timen og driftsudgifter for cirka 15.000 kr. om året.\nUdgifterne til bl.a. køretøj og base dækkes af puljemidler fra Sundhedsstyrelsen til\nAkutberedskabet i Region Hovedstaden. Midlerne er bevilliget for perioden 2024-2027.\n\nAlt efter den ønskede model, vil regnestykke se således ud:\nSociolancen kører to dage om ugen i Albertslund Kommune. Her vil prisen blive\ncirka 315.000 kr. om året for Albertslund Kommune.\nSociolancen dækkes af flere kommuner og kører alle hverdage. Albertslund\nKommune personaledækker sociolancen én dag om ugen. Her vil prisen blive cirka\n165.000 kr. om året for Albertslund Kommune.\nUanset den ønskede model er det forvaltningens vurdering, at udgifterne ikke kan\ndækkes inden for den nuværende ramme. Det betyder, at en medarbejdere fra\nbostøttekorpset vil skulle tages ud af den nuværende planlægning, de dage, hvor\nsociolancen skal dækkes, eller at der skal ske en opnormering.\n\nLovgrundlag\nServicelovens § 99 om støtte- og kontaktpersoner.\n\nBorgerperspektiv\nSociolancen leverer en tværfaglig støtte til nogle af de mest udsatte borgere, og hjælper med\nat sikre, at borgerne får hjælpen, når problemerne er opstået."
     }
    ],
    "bilag": []
@@ -3722,10 +3758,10 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU/ØU/KB - Beslutning om godkendelse af kvalitetsstandard for botilbud og dagtilbud",
    "afsnit": [
     {
@@ -3734,7 +3770,7 @@
     },
     {
      "titel": "Beslutning",
-     "tekst": "X\n\nSupplerende\nsagsfremstilling"
+     "tekst": "X\n\nSupplerende\nsagsfremstilling\n\nTiltrådte indstillingen, idet titlen ændres til \"Botilbud og Dagtilbud til voksen\".\nUdvalgsnavnet opdateres. Der tilføjes under \"rådgivning og klagemuligheder\"\nborgerrådgiverens kontaktinfo.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A) og Michael Melchert (I) deltog ikke under punktet."
     },
     {
      "titel": "Resumé",
@@ -3756,15 +3792,15 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU - Orientering om uanmeldt tilsyn på Bofællesskabet Humlehusene",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "Supplerende\nsagsfremstilling"
+     "tekst": "Supplerende\nsagsfremstilling\n\nTiltrådte indstillingen.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A) og Michael Melchert (I) deltog ikke under punktet."
     },
     {
      "titel": "Indstilling",
@@ -3790,15 +3826,15 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU - Orientering om udviklingen i sygedagpengemodtagere",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "Supplerende\nsagsfremstilling"
+     "tekst": "Supplerende\nsagsfremstilling\n\nTiltrådte indstillingen.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A) og Michael Melchert (I) deltog ikke under punktet."
     },
     {
      "titel": "Indstilling",
@@ -3824,15 +3860,15 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU - Orientering om hjemløseindsatser i Albertslund",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "Supplerende\nsagsfremstilling"
+     "tekst": "Supplerende\nsagsfremstilling\n\nUdsatte sagen.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A) og Michael Melchert (I) deltog ikke under punktet."
     },
     {
      "titel": "Indstilling",
@@ -3858,10 +3894,10 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU - Orientering fra forpersonen",
    "afsnit": [
     {
@@ -3871,6 +3907,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "A. Orientering fra medlemmerne af rådene, som sidder i udvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A), Michael Melchert (I) og Hediye Temiz (B) deltog\nikke under punktet."
     }
    ],
    "bilag": []
@@ -3880,10 +3920,10 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU - Orientering fra Børn, Sundhed & Velfærd",
    "afsnit": [
     {
@@ -3893,6 +3933,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "A. Opfølgning på spørgsmål stillet til forvaltningen.\nB. Orientering om status på ukrainske flygtninge\nC. Årshjul SBU, 2026\nD. Status på implementering af beskæftigelsesreformen, samt brev til landets borgmestre om\nbeskæftigelsesreformen\nE. Beskæftigelsesoverblik (Oktober 2026) og status på beskæftigelsesindsatsen (Oktober\nF. Notat om ændring af pjecen 'Når dit hjem bliver en arbejdsplads' og revideret pjece 'Når dit\nhjem bliver en arbejdsplads' med ændringsmarkeringer\nG. Orientering om navneændring af foreningshuset beliggende Gymnasievej 1"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A), og Michael Melchert (I) deltog ikke under\npunktet."
     }
    ],
    "bilag": []
@@ -3902,15 +3946,19 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "SBU - Eventuelt",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Eventuelt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet."
     }
    ],
    "bilag": []
@@ -3920,10 +3968,10 @@
    "kommune": "Albertslund",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=65452386-6cdb-4d15-989c-61078fd35780",
-   "hentet": "2026-10-23T00:55:12.743Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=260faca5-1725-4791-b5b2-ad565f5bcfe2",
+   "hentet": "2026-10-23T18:27:48.974Z",
    "titel": "Underskriftsblad",
    "afsnit": [
     {
@@ -3933,6 +3981,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der godkendes digitalt ved mødets afslutning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen.\nNils Jul Gjerlev (C), Akhlaq Ahmad (A) og Michael Melchert (I) deltog ikke under punktet."
     }
    ],
    "bilag": []
@@ -5218,15 +5270,19 @@
    "kommune": "Albertslund",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=1f88310e-c51a-4c12-a137-9ff248ba82c4",
-   "hentet": "2026-10-23T01:06:56.456Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=df552118-5881-4e8f-8e44-c5699b1d475b",
+   "hentet": "2026-10-23T18:28:26.628Z",
    "titel": "KFU - Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Formanden indstiller,\n1. at dagsorden godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen.\nAkhlaq Ahmad (A), Muzafar Ahmed (B) og Nils Jul Gjerlev (C) deltog ikke under punktet."
     }
    ],
    "bilag": []
@@ -5236,15 +5292,15 @@
    "kommune": "Albertslund",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=1f88310e-c51a-4c12-a137-9ff248ba82c4",
-   "hentet": "2026-10-23T01:06:56.456Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=df552118-5881-4e8f-8e44-c5699b1d475b",
+   "hentet": "2026-10-23T18:28:26.628Z",
    "titel": "KFU/ØU/KB - Beslutning om uddeling af Puljen til særligt dyre bevægelsesaktiviteter for ældre",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "x\n\nSupplerende\nsagsfremstilling"
+     "tekst": "x\n\nSupplerende\nsagsfremstilling\n\nGodkendte indstillingen.\n\nAkhlaq Ahmad (A), Muzafar Ahmed (B) og Nils Jul Gjerlev (C) deltog ikke under punktet."
     },
     {
      "titel": "Indstilling",
@@ -5270,10 +5326,10 @@
    "kommune": "Albertslund",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=1f88310e-c51a-4c12-a137-9ff248ba82c4",
-   "hentet": "2026-10-23T01:06:56.456Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=df552118-5881-4e8f-8e44-c5699b1d475b",
+   "hentet": "2026-10-23T18:28:26.628Z",
    "titel": "KFU/ØU/KB - Beslutning om lejeaftale med NEXT om brug af nybygget hal",
    "afsnit": [
     {
@@ -5282,7 +5338,7 @@
     },
     {
      "titel": "Beslutning",
-     "tekst": "x\nx\n\nSupplerende\nsagsfremstilling"
+     "tekst": "x\nx\n\nSupplerende\nsagsfremstilling\n\nTiltrådte indstillingen, idet Kultur- & Fritidsudvalget ønsker en supplerende\nsagsfremstilling med informationer om, om prisen for leje er sammenlignelig med\ntilsvarende leje i andre kommuner og om der er adgang til opbevaring af foreningernes\nudstyr.\nAkhlaq Ahmad (A), Muzafar Ahmed (B) og Nils Jul Gjerlev (C) deltog ikke under punktet."
     },
     {
      "titel": "Resumé",
@@ -5294,7 +5350,7 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Den årlige leje udgør kr. 300.000 og forfalder til betaling årligt pr. 1. januar. Første\nlejebetaling forfalder dog den 1. juli 2028 og udgør et halvt års leje. Parterne har aftalt, at\nlejemålet i perioden 1. januar 2027 til 30. juni 2028 udgør en vederlagsfri periode, hvorfor\nder ikke betales leje i denne periode.\nLejen omfatter almindelige driftsomkostninger, herunder forbrug af el, vand og varme\nsamt sædvanlig rengøring efter brugstidens ophør.\nLejen reguleres årligt med nettoprisindekset.\nVed underskrivelse af kontrakten indbetales der depositum svarende til tre måneders\nleje. Denne udgift finansieres indenfor den nuværende ramme til idrætsfaciliteter i 2026.\nSåfremt lejeaftalen godkendes vil forvaltningen indarbejde udgifterne fra 2028 og frem i\ndet tekniske budget i forbindelse med budgetlægningen for 2028.\n\nLovgrundlag\nFolkeoplysningsloven tilsiger at kommunen skal stille ledige lokaler og faciliteter til rådighed for\nden folkeoplysende aktivitet.\n\nBorgerperspektiv\nVed indgåelse af lejeaftalen vil kapaciteten af idrætsfaciliteter blive udvidet. Det øger\nmuligheden for at flere borgere får mulighed for at kunne dyrke idræt i fællesskaber."
+     "tekst": "Den årlige leje udgør kr. 300.000 og forfalder til betaling årligt pr. 1. januar. Første\nlejebetaling forfalder dog den 1. juli 2028 og udgør et halvt års leje. Parterne har aftalt, at\nlejemålet i perioden 1. januar 2027 til 30. juni 2028 udgør en vederlagsfri periode, hvorfor\nder ikke betales leje i denne periode.\nLejen omfatter almindelige driftsomkostninger, herunder forbrug af el, vand og varme\nsamt sædvanlig rengøring efter brugstidens ophør.\nLejen reguleres årligt med nettoprisindekset.\nVed underskrivelse af kontrakten indbetales der depositum svarende til tre måneders\nleje. Denne udgift finansieres indenfor den nuværende ramme til idrætsfaciliteter i 2026.\nSåfremt lejeaftalen godkendes vil forvaltningen indarbejde udgifterne fra 2028 og frem i\ndet tekniske budget i forbindelse med budgetlægningen for 2028.\n\nLovgrundlag\nFolkeoplysningsloven tilsiger, at kommunen skal stille ledige lokaler og faciliteter til rådighed for\nden folkeoplysende aktivitet.\n\nBorgerperspektiv\nVed indgåelse af lejeaftalen vil kapaciteten af idrætsfaciliteter blive udvidet. Det øger\nmuligheden for, at flere borgere får mulighed for at kunne dyrke idræt i fællesskaber."
     }
    ],
    "bilag": []
@@ -5304,15 +5360,19 @@
    "kommune": "Albertslund",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=1f88310e-c51a-4c12-a137-9ff248ba82c4",
-   "hentet": "2026-10-23T01:06:56.456Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=df552118-5881-4e8f-8e44-c5699b1d475b",
+   "hentet": "2026-10-23T18:28:26.628Z",
    "titel": "KFU - Orientering fra formand",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Konst. direktør for By, Kultur & Miljø indstiller,\n1.at orienteringerne tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendte indstillingen, idet der blev orienteret om fremtidigt møde med Lokalhistorisk\nSamling og om konference om stærke fællesskaber den 8. december 2026.\nAkhlaq Ahmad (A), Muzafar Ahmed (B) og Nils Jul Gjerlev (C) deltog ikke under punktet."
     }
    ],
    "bilag": []
@@ -5322,10 +5382,10 @@
    "kommune": "Albertslund",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=1f88310e-c51a-4c12-a137-9ff248ba82c4",
-   "hentet": "2026-10-23T01:06:56.456Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=df552118-5881-4e8f-8e44-c5699b1d475b",
+   "hentet": "2026-10-23T18:28:26.628Z",
    "titel": "KFU - Orientering fra By, Kultur & Miljø",
    "afsnit": [
     {
@@ -5335,6 +5395,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "A. Opfølgning på spørgsmål stillet til forvaltningen\n- Spørgsmål om udlån af lokaler til foreninger\nB. KFU Årshjul\nC. Status på KFU's puljer\nD. Orientering om navneændring af foreningshuset beliggende Gymnasievej 1\nE. Status på selvbetjent bibliotek"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen.\nAkhlaq Ahmad (A), Muzafar Ahmed (B) og Nils Jul Gjerlev (C) deltog ikke under punktet."
     }
    ],
    "bilag": []
@@ -5344,15 +5408,19 @@
    "kommune": "Albertslund",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=1f88310e-c51a-4c12-a137-9ff248ba82c4",
-   "hentet": "2026-10-23T01:06:56.456Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=df552118-5881-4e8f-8e44-c5699b1d475b",
+   "hentet": "2026-10-23T18:28:26.628Z",
    "titel": "KFU - Eventuelt",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Eventuelt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet."
     }
    ],
    "bilag": []
@@ -5362,10 +5430,10 @@
    "kommune": "Albertslund",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=1f88310e-c51a-4c12-a137-9ff248ba82c4",
-   "hentet": "2026-10-23T01:06:56.456Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=df552118-5881-4e8f-8e44-c5699b1d475b",
+   "hentet": "2026-10-23T18:28:26.628Z",
    "titel": "KFU - Underskriftsblad",
    "afsnit": [
     {
@@ -5375,6 +5443,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der godkendes digitalt ved mødets afslutning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen.\nAkhlaq Ahmad (A), Muzafar Ahmed (B) og Nils Jul Gjerlev (C) deltog ikke under punktet."
     }
    ],
    "bilag": []
@@ -7626,15 +7698,19 @@
    "kommune": "Albertslund",
    "udvalg": "Børne- Skole- og Uddannelsesudvalget",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=c9e07e3e-ad92-42f8-ae62-6dfa943de563",
-   "hentet": "2026-10-23T01:17:06.875Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=15c56424-22c4-4e25-9e38-9f346cd4c080",
+   "hentet": "2026-10-23T18:29:02.278Z",
    "titel": "BSU - Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Forkvinden indstiller,\n1. at dagsordenen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen med den bemærkning at pkt. 3 udgår af dagsordenen."
     }
    ],
    "bilag": []
@@ -7644,15 +7720,15 @@
    "kommune": "Albertslund",
    "udvalg": "Børne- Skole- og Uddannelsesudvalget",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=c9e07e3e-ad92-42f8-ae62-6dfa943de563",
-   "hentet": "2026-10-23T01:17:06.875Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=15c56424-22c4-4e25-9e38-9f346cd4c080",
+   "hentet": "2026-10-23T18:29:02.278Z",
    "titel": "Tema - Dialogmøde med Ungerådet fra AUC",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "Supplerende\nsagsfremstilling"
+     "tekst": "Supplerende\nsagsfremstilling\n\nTiltrådte indstillingen."
     },
     {
      "titel": "Indstilling",
@@ -7678,15 +7754,15 @@
    "kommune": "Albertslund",
    "udvalg": "Børne- Skole- og Uddannelsesudvalget",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=c9e07e3e-ad92-42f8-ae62-6dfa943de563",
-   "hentet": "2026-10-23T01:17:06.875Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=15c56424-22c4-4e25-9e38-9f346cd4c080",
+   "hentet": "2026-10-23T18:29:02.278Z",
    "titel": "BSU - Orientering om unge og knive i Albertslund",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "Supplerende\nsagsfremstilling"
+     "tekst": "Supplerende\nsagsfremstilling\n\nTiltrådte indstillingen."
     },
     {
      "titel": "Indstilling",
@@ -7712,15 +7788,15 @@
    "kommune": "Albertslund",
    "udvalg": "Børne- Skole- og Uddannelsesudvalget",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=c9e07e3e-ad92-42f8-ae62-6dfa943de563",
-   "hentet": "2026-10-23T01:17:06.875Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=15c56424-22c4-4e25-9e38-9f346cd4c080",
+   "hentet": "2026-10-23T18:29:02.278Z",
    "titel": "BSU - Orientering om normeringsopgørelse 2026 (for kalenderåret 2025)",
    "afsnit": [
     {
      "titel": "Beslutning",
-     "tekst": "Supplerende\nsagsfremstilling"
+     "tekst": "Supplerende\nsagsfremstilling\n\nTiltrådte indstillingen."
     },
     {
      "titel": "Indstilling",
@@ -7746,10 +7822,10 @@
    "kommune": "Albertslund",
    "udvalg": "Børne- Skole- og Uddannelsesudvalget",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=c9e07e3e-ad92-42f8-ae62-6dfa943de563",
-   "hentet": "2026-10-23T01:17:06.875Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=15c56424-22c4-4e25-9e38-9f346cd4c080",
+   "hentet": "2026-10-23T18:29:02.278Z",
    "titel": "BSU - Orientering fra forkvinden",
    "afsnit": [
     {
@@ -7759,6 +7835,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "A. Brev til skolebestyrelserne angående karakter ved afgangsprøven.\nB. Mundtlig orientering om skolebestyrelsesseminar d. 3. oktober."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen."
     }
    ],
    "bilag": []
@@ -7768,10 +7848,10 @@
    "kommune": "Albertslund",
    "udvalg": "Børne- Skole- og Uddannelsesudvalget",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=c9e07e3e-ad92-42f8-ae62-6dfa943de563",
-   "hentet": "2026-10-23T01:17:06.875Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=15c56424-22c4-4e25-9e38-9f346cd4c080",
+   "hentet": "2026-10-23T18:29:02.278Z",
    "titel": "BSU - Orientering fra Børn, Sundhed & Velfærd",
    "afsnit": [
     {
@@ -7781,6 +7861,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "A. Opfølgning på spørgsmål stillet til forvaltningen\n- Spørgsmål om Brillesøen\n- Spørgsmål om Børneattester\n- Spørgsmål om loft på 22 elever\nB. Orientering om status på implementering af de fire indsatsområder i programmet Et styrket\nalmenområde.\nC. Orientering om tværgående tendenser fra skoleudviklingssamtaler.\nD. Opfølgning på økonomi og sygefravær på for dagtilbuds- og skoleområdet pr. 30.\nseptember 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen, idet udvalget ønsker at punkt D udsættes til kommende\nudvalgsmøde."
     }
    ],
    "bilag": []
@@ -7790,15 +7874,19 @@
    "kommune": "Albertslund",
    "udvalg": "Børne- Skole- og Uddannelsesudvalget",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=c9e07e3e-ad92-42f8-ae62-6dfa943de563",
-   "hentet": "2026-10-23T01:17:06.875Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=15c56424-22c4-4e25-9e38-9f346cd4c080",
+   "hentet": "2026-10-23T18:29:02.278Z",
    "titel": "BSU - Eventuelt",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Eventuelt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Forvaltningen oplyste, at der snart åbnes for tilmelding til Børne-og Ungetopmødet, som\nfinder sted i januar. Medlemmerne blev opfordret til at melde tilbage, hvem der havde\ninteresse i at deltage."
     }
    ],
    "bilag": []
@@ -7808,15 +7896,19 @@
    "kommune": "Albertslund",
    "udvalg": "Børne- Skole- og Uddannelsesudvalget",
    "dato": "2026-10-21",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=c9e07e3e-ad92-42f8-ae62-6dfa943de563",
-   "hentet": "2026-10-23T01:17:06.875Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=15c56424-22c4-4e25-9e38-9f346cd4c080",
+   "hentet": "2026-10-23T18:29:02.278Z",
    "titel": "Underskriftsblad",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Forkvinden indstiller,\n1. at protokol og deltagelse i mødet godkendes via digitalt underskriftsblad."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tiltrådte indstillingen."
     }
    ],
    "bilag": []
@@ -8870,8 +8962,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "Børne-, Skole- og Uddannelsesudvalget",
    "afsnit": [
     {
@@ -8892,8 +8984,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "Social- og Beskæftigelsesudvalget",
    "afsnit": [
     {
@@ -8914,8 +9006,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "Kultur- og Fritidsudvalget",
    "afsnit": [
     {
@@ -8936,8 +9028,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "Miljø-, Natur- og Byudvalget",
    "afsnit": [
     {
@@ -8946,7 +9038,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "A. Svar til kommunalbestyrelsesmedlem Steen Christiansen (A) om kommunens ansøgning om\nstøtte fra den statslige pulje til videoovervågning samt kortlægning af, hvor der med fordel\nkunne sættes videoovervågning op, 9. februar 2026.\nB. Svar til kommunalbestyrelsesmedlem Dogan Polat (A) om træ på Albertslundvej, 3. februar\nC. Svar til kommunalbestyrelsesmedlem Nils Jul Gjerlev (C) om beskæring af træer på\nGrønningen, marts 2026.\nD. Svar til kommunalbestyrelsesmedlem Steen Christiansen (A) om lugtgener ved Svinepytten,\nE. Svar til kommunalbestyrelsesmedlem Nils Jul Gjerlev (C) om udvidet drift på bus 149, 31.\naugust 2026.\nF. Svar til kommunalbestyrelsesmedlem Steen Christiansen (A), Tina B. Nielsen (O) og\nKristoffer Holm Larsen (O) om omkostninger til indsamling af storskrald\nG. Svar til kommunalbestyrelsesmedlem Ulla Nielsen (A) om græsset i Kongsholmparken\nH. Svar til kommunalbestyrelsesmedlem Steen Christiansen (A) om cykelstativer på\nRoskildevej\nI. Svar til kommunalbestyrelsesmedlem Vivi Nør Jacobsen (F) om midler afsat til \"Sammen om\nKanalgaden\"."
+     "tekst": "A. Svar til kommunalbestyrelsesmedlem Steen Christiansen (A) om kommunens ansøgning om\nstøtte fra den statslige pulje til videoovervågning samt kortlægning af, hvor der med fordel\nkunne sættes videoovervågning op, 9. februar 2026.\nB. Svar til kommunalbestyrelsesmedlem Dogan Polat (A) om træ på Albertslundvej, 3. februar\nC. Svar til kommunalbestyrelsesmedlem Nils Jul Gjerlev (C) om beskæring af træer på\nGrønningen, marts 2026.\nD. Svar til kommunalbestyrelsesmedlem Steen Christiansen (A) om lugtgener ved Svinepytten,\nE. Svar til kommunalbestyrelsesmedlem Nils Jul Gjerlev (C) om udvidet drift på bus 149, 31.\naugust 2026.\nF. Svar til kommunalbestyrelsesmedlem Steen Christiansen (A), Tina B. Nielsen (O) og\nKristoffer Holm Larsen (O) om omkostninger til indsamling af storskrald\nG. Svar til kommunalbestyrelsesmedlem Ulla Nielsen (A) om græsset i Kongsholmparken\nH. Svar til kommunalbestyrelsesmedlem Steen Christiansen (A) om cykelstativer på\nRoskildevej\nI. Svar til kommunalbestyrelsesmedlem Vivi Nør Jacobsen (F) om midler afsat til \"Sammen om\nKanalgaden\".\nJ. Svar til kommunalbestyrelsesmedlem Nils Jul Gjerlev (C) om belysning langs\nGrønningestien."
     }
    ],
    "bilag": []
@@ -8958,8 +9050,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "Plan- og Byudviklingsudvalget",
    "afsnit": [
     {
@@ -8980,8 +9072,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "Ældre- og Sundhedsudvalget",
    "afsnit": [
     {
@@ -9002,8 +9094,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "Økonomiudvalget",
    "afsnit": [
     {
@@ -9024,8 +9116,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "§17,4 Udvalget for digitalisering og beredskab",
    "afsnit": [
     {
@@ -9042,8 +9134,8 @@
    "dato": "2026-10-31",
    "type": "dagsorden",
    "nr": 9,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=3d506abd-0b05-4ad1-af3b-478b81d84a83",
-   "hentet": "2026-10-23T01:22:53.146Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=996e65f7-2cb4-4a6f-afc9-579b4708abdd",
+   "hentet": "2026-10-23T18:29:33.388Z",
    "titel": "§17,4 Udvalget for nye borgere og borgerinddragelse",
    "afsnit": [
     {
@@ -9108,7 +9200,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=dd0c30b2-4c17-45ed-a8e0-f6c8cf54b212": {
-   "senest": "2026-10-09",
+   "senest": "2026-10-23",
    "tjekket": "2026-10-23"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=18f1ce97-6b7e-4019-9b06-3016484fa532": {
@@ -9136,7 +9228,7 @@
    "tjekket": "2026-10-12"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=d2d290f9-a560-46be-8f6c-452bf9c9ed22": {
-   "senest": "2026-10-20",
+   "senest": "2026-10-23",
    "tjekket": "2026-10-23"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=83807772-fd5b-4b89-bf8f-eeba419f151c": {
@@ -9164,7 +9256,7 @@
    "tjekket": "2026-10-12"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=412593bc-f0f1-408c-9a5f-4f8d604fd84f": {
-   "senest": "2026-10-12",
+   "senest": "2026-10-23",
    "tjekket": "2026-10-23"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=b15c9639-6e4f-446c-ae32-bdd917704e5a": {
@@ -9248,7 +9340,7 @@
    "tjekket": "2026-10-12"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=7e3b5d20-8359-4179-9632-a276baebaf42": {
-   "senest": "2026-10-21",
+   "senest": "2026-10-23",
    "tjekket": "2026-10-23"
   },
   "https://dagsordner.albertslund.dk/Sitemap/StaticPages": {
@@ -9256,7 +9348,7 @@
    "tjekket": "2026-10-12"
   }
  },
- "opdateret": "2026-10-23T09:22:52.698Z",
+ "opdateret": "2026-10-23T18:29:33.388Z",
  "kommune": "Albertslund",
  "parser": 3
 }

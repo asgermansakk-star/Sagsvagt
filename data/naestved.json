@@ -351,6 +351,22 @@
    "dato": "2026-08-11",
    "punkter": 6,
    "parser": 3
+  },
+  "196edc45-6ae6-4d98-a349-e6d393258f96": {
+   "lastmod": "2026-10-23",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-10-23",
+   "punkter": 3,
+   "parser": 3
+  },
+  "c99d3ef8-6999-4a84-a7c0-d95e4605613b": {
+   "lastmod": "2026-10-23",
+   "type": "dagsorden",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-27",
+   "punkter": 6,
+   "parser": 3
   }
  },
  "sager": {
@@ -1233,13 +1249,17 @@
    "dato": "2026-10-23",
    "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=3f1da4bc-30d4-486f-8a52-38d6fa8253f6",
-   "hentet": "2026-10-23T09:41:26.987Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=196edc45-6ae6-4d98-a349-e6d393258f96",
+   "hentet": "2026-10-23T18:39:58.493Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "Administrationen indstiller, at dagsordenen godkendes.\n\nØkonomiudvalget 23.10.2026"
+     "tekst": "Administrationen indstiller, at dagsordenen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomiudvalget, 23.10.2026\nGodkendt.\n\nØkonomiudvalget 23.10.2026"
     }
    ],
    "bilag": []
@@ -1251,8 +1271,8 @@
    "dato": "2026-10-23",
    "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=3f1da4bc-30d4-486f-8a52-38d6fa8253f6",
-   "hentet": "2026-10-23T09:41:26.987Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=196edc45-6ae6-4d98-a349-e6d393258f96",
+   "hentet": "2026-10-23T18:39:58.493Z",
    "titel": "Beslutning om godkendelse af forslag til affaldsbudget og gebyrer for 2027",
    "afsnit": [
     {
@@ -1265,7 +1285,7 @@
     },
     {
      "titel": "Beslutning",
-     "tekst": "Teknik- og Klimaudvalget, 29.09.2026\nFraværende: Mikkel Lerrin Schannong (F)\nStedfortræder: Linda Frederiksen (A)\nAd 1-5: Anbefales."
+     "tekst": "Teknik- og Klimaudvalget, 29.09.2026\nFraværende: Mikkel Lerrin Schannong (F)\nStedfortræder: Linda Frederiksen (A)\nAd 1-5: Anbefales.\nØkonomiudvalget, 23.10.2026\nAd 1-5: Anbefales."
     },
     {
      "titel": "Sagsfremstilling",
@@ -1314,13 +1334,13 @@
    "dato": "2026-10-23",
    "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=3f1da4bc-30d4-486f-8a52-38d6fa8253f6",
-   "hentet": "2026-10-23T09:41:26.987Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=196edc45-6ae6-4d98-a349-e6d393258f96",
+   "hentet": "2026-10-23T18:39:58.493Z",
    "titel": "Meddelelser til orientering",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Økonomiudvalget 23.10.2026"
+     "titel": "Beslutning",
+     "tekst": "Økonomiudvalget, 23.10.2026\nIngen meddelelser.\n\nØkonomiudvalget 23.10.2026"
     }
    ],
    "bilag": []
@@ -8946,8 +8966,8 @@
    "dato": "2026-10-27",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a9108628-6760-4cee-83da-e35960aca75e",
-   "hentet": "2026-10-23T09:55:21.541Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=c99d3ef8-6999-4a84-a7c0-d95e4605613b",
+   "hentet": "2026-10-23T18:40:41.466Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -8964,8 +8984,8 @@
    "dato": "2026-10-27",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a9108628-6760-4cee-83da-e35960aca75e",
-   "hentet": "2026-10-23T09:55:21.541Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=c99d3ef8-6999-4a84-a7c0-d95e4605613b",
+   "hentet": "2026-10-23T18:40:41.466Z",
    "titel": "Godkendelse af budget for 2027 for Næstved Havn",
    "afsnit": [
     {
@@ -9011,46 +9031,34 @@
    "dato": "2026-10-27",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a9108628-6760-4cee-83da-e35960aca75e",
-   "hentet": "2026-10-23T09:55:21.541Z",
-   "titel": "Godkendelse af kommissorier for budgettemaanalyser",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=c99d3ef8-6999-4a84-a7c0-d95e4605613b",
+   "hentet": "2026-10-23T18:40:41.466Z",
+   "titel": "Godkendelse af Beredskabsplan 2026",
    "afsnit": [
     {
      "titel": "Resumé",
-     "tekst": "Politisk behandling\nØkonomiudvalget (anbefaler), 19.10.2026\nByrådet (godkender), 27.10.2026\nI budgetaftalen for 2027 er det besluttet, at der skal gennemføres budgettemaanalyser inden for vækstområdet, det\nspecialiserede voksenområde, ældreområdet og dagtilbudsområdet. Analyserne udarbejdes med henblik på at\ndanne grundlag for budgetlægning for 2028 og årene frem.\nVia denne sag anmodes Byrådet om at godkende kommissorier for analyserne."
+     "tekst": "Politisk behandling\nØkonomiudvalget (anbefaler), 19.10.2026\nByrådet (godkender), 27.10.2026\nAdministrationen vil i denne sag fremlægge en ny og opdateret beredskabsplan for Næstved Kommune til Byrådets\ngodkendelse. Beredskabsplanen afløser den tidligere Beredskabsplan 2025, og opfylder hermed kommunens\nansvar jf. Beredskabslovens § 25 for mindst én gang i hver valgperiode at udarbejde og vedtage en overordnet\nberedskabsplan for Næstved Kommune.\nBeredskabsplanen skal godkendes af Byrådet, og vil herefter være gældende i 4 år. Planen skal dog kunne\nrevideres efter behov for at kunne benyttes effektivt under en opstået kritisk hændelse."
     },
     {
      "titel": "Indstilling",
-     "tekst": "Administrationen indstiller, at Byrådet godkender kommissorier for budgettemaanalyser, herunder at\nadministrationen igangsætter analyserne."
+     "tekst": "Administrationen indstiller, at Beredskabsplan 2026 godkendes."
     },
     {
      "titel": "Beslutning",
-     "tekst": "Økonomiudvalget, 19.10.2026\nFraværende: Rune Kristensen (C)\nStedfortræder: Anette Brix (C)\nAnbefales.\nEfter Byrådets behandling sendes kommissorierne til høring i fagudvalgene, inden igangsætning af\nbudgettemaanalyserne."
+     "tekst": "Økonomiudvalget, 19.10.2026\nFraværende: Rune Kristensen (C)\nStedfortræder: Anette Brix (C)\nAnbefales."
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "I budgetaftalen for 2027 er der truffet beslutning om at gennemføre budgettemaanalyser på en række centrale velfærdsog udviklingsområder. Analyserne skal bidrage med viden og perspektiver, der kan understøtte fremtidige politiske\nprioriteringer og sikre et solidt grundlag for den videre udvikling af kommunens tilbud og indsatser, der gennemfører\nbudgettemaanalyser inden for vækstområdet, det specialiserede voksenområde, ældreområdet og dagtilbudsområdet.\nI budgetaftalen er det beskrevet, at budgettemanalysen på vækstområdet skal omhandle vækstinitiativer, som styrker\nkommunens økonomiske bæredygtighed, et stærkere skattegrundlag, flere arbejdspladser og bedre\nkernevelfærd. Administrationens oplæg til kommissorium er vedlagt som bilag 1.\nVidere er det i budgetaftalen beskrevet, at budgettemaanalyserne på det specialiserede voksenområde, ældreområdet\nog dagtilbudsområdet skal danne grundlag for strategiske beslutninger om kapacitet og struktur for områderne, som\nsamtidig øger den faglige kvalitet, styrker attraktive arbejdspladser og skaber en bevægelse mod færre, større og mere\nøkonomisk robuste enheder. Administrationens oplæg til kommissorium for disse fire analyser er vedlagt som bilag 2, 3\nog 4.\nAnalysernes formål samt leverancer er opsummeret i nedenstående skema:\nAnalyse\n\nFormål\n\nLeverancer\n\nVækst\n\nFormålet er at skabe et fælles vidensgrundlag,\nAnalysen skal give:\nder kan understøtte Byrådets prioritering af\nkommunens vækstindsats ved at:\n• viden om befolkningsudvikling, bolig- og\nbyudvikling, erhverv, investeringer,\n• pege på de væsentligste vækstspor og\nomdømme og attraktivitet. Resultatet skal\nkommunale handlemuligheder\nvære et samlet politisk oplæg med\n• vurdere forventede effekter,\nhandlemuligheder, forventede effekter,\nøkonomiske konsekvenser og centrale\nøkonomiske konsekvenser og centrale\ndilemmaer\ndilemmaer, som kan danne grundlag for\n• understøtte politisk prioritering i\nprioriteringer i budget 2028 og årene\nforbindelse med forårsbudgetseminaret\nfrem.\n2027 og budget 2028\nAnalysen skal give:\n\nSpecialiserede\nvoksenområde\n\nBudgettemaanalysen skal bidrage med et\noverblik over ejendomsporteføljen på området\nmed henblik på at kortlægge\nudviklingsmuligheder ift. at udvide\nbotilbudskapaciteten og fremtidssikre området\nbedst muligt.\n\n• En overordnet/foreløbig vurdering og\nanbefalinger til kapacitetsudvidelse – og\nudnyttelse (hvilke ejendomme/matrikler\nskal/kan udvikles, afhændes eller samles,\nprioritering af investeringer, potentialer for\nbesparelser/kvalitetsløft), herunder evt.\nkobling til vurderinger og anbefalinger i\ntilsvarende analyse på ældreområdet.\n• et begrænset antal scenarier med\nanlægs- og driftsøkonomi eller\nhandlemuligheder med fordele, ulemper\nog forudsætninger.\nAnalysen skal give:\n\nÆldreområdet\n\nMed budgettemaanalysen skal\nplejeboliganalysen fra foråret 2026 suppleres\nmed viden om den konkrete\nejendomsportefølje på området med henblik\npå planlægning af kapacitetsudvidelse, og\n-udnyttelse. Dette for at imødekomme\nplejeboligbehovet de kommende år, men også\nfremtidssikre området bedst muligt.\n\n• En vurdering af strategisk understøttelse\naf kerneopgaven (passer bygningerne til\nbehovene nu og fremadrettet?)\n• En overordnet/foreløbig vurdering og\nanbefalinger til kapacitetsudvidelse – og\nudnyttelse (hvilke ejendomme/matrikler\nskal/kan udvikles, afhændes eller samles,\nprioritering af investeringer, potentialer for\nbesparelser/kvalitetsløft), herunder evt.\nkobling til vurderinger og anbefalinger i\ntilsvarende analyse på det specialiserede\nvoksenområde.\n• et begrænset antal scenarier med\nanlægs- og driftsøkonomi eller\nhandlemuligheder med fordele, ulemper\nog forudsætninger.\n\nAnalyser skal give:\n\nDagtilbudsområdet\n\nAnalysen skal give Byrådet et kort og\nanvendeligt beslutningsgrundlag for den\nfremtidige struktur og kapacitet på dagtilbudsog dagplejeområdet. Målet er en geografisk\nbalanceret, fagligt bæredygtig og økonomisk\nrobust struktur, som understøtter kvaliteten i\nde pædagogiske læringsmiljøer.\n\n• et overordnet billede af nuværende og\nfremtidig kapacitet og struktur\n• centrale faglige, økonomiske, geografiske\nog bygningsmæssige\nopmærksomhedspunkter\n• et begrænset antal scenarier med\nanlægs- og driftsøkonomi eller\nhandlemuligheder med fordele, ulemper\nog forudsætninger.\n\nBudgettemaanalyserne gennemføres overvejende med egne ressourcer og vil medføre et betydeligt internt\nressourcetræk i organisationen. Der vil dog ligeledes være behov for at inddrage ekstern konsulentbistand til\nafgrænsede og særligt specialiserede dele af analysearbejdet.\nAnalyserne forventes færdiggjort i foråret 2027 med henblik på præsentation og dialoger i fagudvalgene i løbet af maj og\njuni 2027 samt efterfølgende præsentation og drøftelse på et temamøde i Byrådet. Analyserne skal danne grundlag for\nbudgetlægningen for 2028 og efterfølgende år.\nDe relevante fagudvalg vil blive inddraget undervejs i analysearbejdet. Den nærmere procesplan udarbejdes, når\nkommissorierne er endeligt godkendt."
+     "tekst": "Kommunens nuværende beredskabsplan er udarbejdet i 2025, og blev godkendt i slutningen af det forrige Byråds\nvalgperiode. Af denne årsag skal det nuværende Byråd godkende en ny beredskabsplan i indeværende valgperiode.\nByrådet skal tage stilling til den reviderede Beredskabsplan 2026, som er en opdateret version med nye afsnit, de\nnyeste data samt en ajourført beskrivelse af organisationens opbygning og kontaktpersoner i Direktion, Centre og\nStabe.\nEn kommunal beredskabsplan er et lovpligtigt, styrende dokument, der sikrer, at kommunen kan håndtere kriser, ulykker\nog katastrofer, så vital drift og funktioner opretholdes. Den definerer roller, ansvar, kriseledelse og procedurer for at\nbegrænse skader på borgere, ejendomme og miljø. Beredskabsplaner skal bruges i håndteringen af krisesituationer og\nstyring heraf.\nNæstved Kommune har et ansvar for at samarbejde og koordinere med andre myndigheder og organisationer – både\nhvad angår beredskabsplanlægning og krisestyring. Kriser skal styres med udgangspunkt i klare strategiske hensigter\nog ansvarspræciseringer, der sætter den overordnede retning for indsatsen.\nRedskabet hertil er kommunens overordnede Beredskabsplan.\nDe væsentligste ændringer i den reviderede Beredskabsplan 2025 kan opsummeres i følgende fem hovedpunkter:\n1. Mere fokus på krisestyring- og ledelse\n\nPræcisering af Krisestabens struktur og definerede roller\nSkærpelse af funktioner som tavleføring og logstyring som centrale ledelsesværktøjer\nUdbygning af operationelle Action Cards og bilag\nIndførelse af samlet kommunal kriseledelse med analog drift samt lokalefordeling ved længerevarende kritiske\nhændelser\n\nBeredskabsplan 2026 er vedhæftet sagen - se bilag 1 (er blevet lukket den 20.10.2026)."
     },
     {
      "titel": "Økonomi",
-     "tekst": "Administrationen kan oplyse, at budgettemaanalyserne er besluttet som en del af budgetforliget for 2027.\nVækstanalysen forventes gennemført primært ved anvendelse af interne ressourcer samt ekstern bistand for ca.\n350.000 kr. Den eksterne bistand forventes at kunne finansieres helt eller delvist fra budgettet på Erhverv og\nTurisme. Et evt. yderligere finansieringsbehov afholdes af Direktionens udviklingspulje.\nDe øvrige tre analyser forventes hver at koste 350.000 kr. til ekstern bistand samt et internt ressourceforbrug på 1\nårsværk pr. analyse.\nDen eksterne bistand til de tre struktur- og kapacitetsanalyser foreslås finansieret således:\n• Ca. 500.000 kr. som er resterende midler fra puljen til Velfærdens Fundament\n• 550.000 kr. fra anlægsbudgettet på områderne, da der er tale om analyser, der har et væsentligt\nanlægselement. En konkret mulighed for finansiering kan være under Ældre- og Omsorgsudvalget, hvor der\nårligt er afsat 750.000 kr. til hjemlighed.\nDet bemærkes, at den samlede udgift til ekstern bistand er opgjort til 1,4 mio. kr."
+     "tekst": "Administrationen har ingen yderligere bemærkninger."
     }
    ],
    "bilag": [
     {
-     "navn": "Kommissorium for budgettemaanalyse - vækst 091026",
-     "url": null
-    },
-    {
-     "navn": "Kommissorium for budgettemaanalyse - Specialiserede voksenområde 091026",
-     "url": null
-    },
-    {
-     "navn": "Kommissorium Budgettemaanalyse - Ældreområdet 091026",
-     "url": null
-    },
-    {
-     "navn": "Kommissorium for budgettemaanalyse - dagtilbudsområdet 071026",
+     "navn": "Lukket bilag",
      "url": null
     },
     {
@@ -9101,26 +9109,26 @@
    "dato": "2026-10-27",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a9108628-6760-4cee-83da-e35960aca75e",
-   "hentet": "2026-10-23T09:55:21.541Z",
-   "titel": "Udpegning af et medlem til bestyrelsen i AffaldPlus Affaldsenergi A/S",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=c99d3ef8-6999-4a84-a7c0-d95e4605613b",
+   "hentet": "2026-10-23T18:40:41.466Z",
+   "titel": "Udpegning af et medlem til bestyrelsen i I/S Affald Plus",
    "afsnit": [
     {
      "titel": "Resumé",
-     "tekst": "Politisk behandling\nByrådet (godkender), 27.10.2026\nByrådet skal udpege et nyt medlem til bestyrelsen i AffaldPlus Affaldsenergi A/S, da nuværende medlem er\nforhindret i at varetage hvervet."
+     "tekst": "Politisk behandling\nByrådet (godkender), 27.10.2026\nByrådet skal udpege et nyt medlem til bestyrelsen i I/S Affald Plus, da nuværende medlem er forhindret i at\nvaretage hvervet."
     },
     {
      "titel": "Indstilling",
-     "tekst": "Valggruppe 1 (C+I+O+V+Æ) indstiller følgende:\n\nSüleyman Yücel (V)"
+     "tekst": "Valggruppe 1 (C+I+O+V+Æ) indstiller følgende:\nSüleyman Yücel (V)"
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Byrådet udpegede på det konstituerende møde d. 9. december 2026, efter indstilling fra Valggruppe 1 (C+I+O+V+Æ),\nborgmester Kenneth Sørensen (V) som medlem af bestyrelsen i AffaldPlus Affaldsenergi A/S.\nByrådet kan udpege ét medlem og én personlig stedfortræder til bestyrelsen for AffaldPlus Affaldsenergi A/S, i henhold\ntil vedtægternes § 8.\nDet følger af Ejerbeslutningen for AffaldPlus Affaldsenergi A/S, at ejerkommunerne ønsker den samme\nbestyrelsessammensætning i AffaldPlus Affaldsenergi A/S som i I/S AffaldPlus.\n\nUdpegningen følger den kommunale valgperiode, men er ikke omfattet af det borgerlige ombud.\nBorgmester Kenneth Sørensen har meddelt, at han, for at foretage en skærpet prioritering af Næstved Kommunes\ninteresser, ikke kan fortsætte i AffaldPlus Affaldsenergi A/S bestyrelse.\nByrådet skal derfor udpege et nyt medlem.\nValggruppe 1 (C+I+O+V+Æ) indstiller som nyt medlem af bestyrelsen:\nSüleyman Yücel (V)"
+     "tekst": "Byrådet udpegede på det konstituerende møde d. 9. december 2026, efter indstilling fra Valggruppe 1 (C+I+O+V+Æ),\nborgmester Kenneth Sørensen (V) som medlem af bestyrelsen i I/S AffaldPlus.\nByrådet kan udpege ét medlem og én personlig stedfortræder til bestyrelsen for I/S AffaldPlus. I henhold til\nvedtægternes § 6.2 skal bestyrelsesmedlemmet som udgangspunkt være borgmesteren, men fx Ringsted Kommune\nhar udpeget et medlem som ikke er borgmester.\nUdpegningen følger den kommunale valgperiode, men er ikke omfattet af det borgerlige ombud.\nBorgmester Kenneth Sørensen har meddelt, at han, for at foretage en skærpet prioritering af Næstved Kommunes\ninteresser, ikke kan fortsætte i I/S AffaldPlus bestyrelse.\nByrådet skal derfor udpege et nyt medlem.\nValggruppe 1 (C+I+O+V+Æ) indstiller som nyt medlem af bestyrelsen:\nSüleyman Yücel (V)"
     }
    ],
    "bilag": [
     {
-     "navn": "Vedtægter for AffaldPlus Affaldsenergi AS",
+     "navn": "Vedtægter I-S AffaldPlus 2024",
      "url": null
     },
     {
@@ -11752,6 +11760,96 @@
     }
    ],
    "bilag": []
+  },
+  "naestved-2026-10-27-byraadet-6": {
+   "id": "naestved-2026-10-27-byraadet-6",
+   "kommune": "Næstved",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-27",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.naestved.dk/vis?id=c99d3ef8-6999-4a84-a7c0-d95e4605613b",
+   "hentet": "2026-10-23T18:40:41.466Z",
+   "titel": "Godkendelse af kommissorier for budgettemaanalyser",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Politisk behandling\nØkonomiudvalget (anbefaler), 19.10.2026\nByrådet (godkender), 27.10.2026\nI budgetaftalen for 2027 er det besluttet, at der skal gennemføres budgettemaanalyser inden for vækstområdet, det\nspecialiserede voksenområde, ældreområdet og dagtilbudsområdet. Analyserne udarbejdes med henblik på at\ndanne grundlag for budgetlægning for 2028 og årene frem.\nVia denne sag anmodes Byrådet om at godkende kommissorier for analyserne."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at Byrådet godkender kommissorier for budgettemaanalyser, herunder at\nadministrationen igangsætter analyserne."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomiudvalget, 19.10.2026\nFraværende: Rune Kristensen (C)\nStedfortræder: Anette Brix (C)\nAnbefales.\nEfter Byrådets behandling sendes kommissorierne til høring i fagudvalgene, inden igangsætning af\nbudgettemaanalyserne."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I budgetaftalen for 2027 er der truffet beslutning om at gennemføre budgettemaanalyser på en række centrale velfærdsog udviklingsområder. Analyserne skal bidrage med viden og perspektiver, der kan understøtte fremtidige politiske\nprioriteringer og sikre et solidt grundlag for den videre udvikling af kommunens tilbud og indsatser, der gennemfører\nbudgettemaanalyser inden for vækstområdet, det specialiserede voksenområde, ældreområdet og dagtilbudsområdet.\nI budgetaftalen er det beskrevet, at budgettemanalysen på vækstområdet skal omhandle vækstinitiativer, som styrker\nkommunens økonomiske bæredygtighed, et stærkere skattegrundlag, flere arbejdspladser og bedre\nkernevelfærd. Administrationens oplæg til kommissorium er vedlagt som bilag 1.\nVidere er det i budgetaftalen beskrevet, at budgettemaanalyserne på det specialiserede voksenområde, ældreområdet\nog dagtilbudsområdet skal danne grundlag for strategiske beslutninger om kapacitet og struktur for områderne, som\nsamtidig øger den faglige kvalitet, styrker attraktive arbejdspladser og skaber en bevægelse mod færre, større og mere\nøkonomisk robuste enheder. Administrationens oplæg til kommissorium for disse fire analyser er vedlagt som bilag 2, 3\nog 4.\nAnalysernes formål samt leverancer er opsummeret i nedenstående skema:\nAnalyse\n\nFormål\n\nLeverancer\n\nVækst\n\nFormålet er at skabe et fælles vidensgrundlag,\nAnalysen skal give:\nder kan understøtte Byrådets prioritering af\nkommunens vækstindsats ved at:\n• viden om befolkningsudvikling, bolig- og\nbyudvikling, erhverv, investeringer,\n• pege på de væsentligste vækstspor og\nomdømme og attraktivitet. Resultatet skal\nkommunale handlemuligheder\nvære et samlet politisk oplæg med\n• vurdere forventede effekter,\nhandlemuligheder, forventede effekter,\nøkonomiske konsekvenser og centrale\nøkonomiske konsekvenser og centrale\ndilemmaer\ndilemmaer, som kan danne grundlag for\n• understøtte politisk prioritering i\nprioriteringer i budget 2028 og årene\nforbindelse med forårsbudgetseminaret\nfrem.\n2027 og budget 2028\nAnalysen skal give:\n\nSpecialiserede\nvoksenområde\n\nBudgettemaanalysen skal bidrage med et\noverblik over ejendomsporteføljen på området\nmed henblik på at kortlægge\nudviklingsmuligheder ift. at udvide\nbotilbudskapaciteten og fremtidssikre området\nbedst muligt.\n\n• En overordnet/foreløbig vurdering og\nanbefalinger til kapacitetsudvidelse – og\nudnyttelse (hvilke ejendomme/matrikler\nskal/kan udvikles, afhændes eller samles,\nprioritering af investeringer, potentialer for\nbesparelser/kvalitetsløft), herunder evt.\nkobling til vurderinger og anbefalinger i\ntilsvarende analyse på ældreområdet.\n• et begrænset antal scenarier med\nanlægs- og driftsøkonomi eller\nhandlemuligheder med fordele, ulemper\nog forudsætninger.\nAnalysen skal give:\n\nÆldreområdet\n\nMed budgettemaanalysen skal\nplejeboliganalysen fra foråret 2026 suppleres\nmed viden om den konkrete\nejendomsportefølje på området med henblik\npå planlægning af kapacitetsudvidelse, og\n-udnyttelse. Dette for at imødekomme\nplejeboligbehovet de kommende år, men også\nfremtidssikre området bedst muligt.\n\n• En vurdering af strategisk understøttelse\naf kerneopgaven (passer bygningerne til\nbehovene nu og fremadrettet?)\n• En overordnet/foreløbig vurdering og\nanbefalinger til kapacitetsudvidelse – og\nudnyttelse (hvilke ejendomme/matrikler\nskal/kan udvikles, afhændes eller samles,\nprioritering af investeringer, potentialer for\nbesparelser/kvalitetsløft), herunder evt.\nkobling til vurderinger og anbefalinger i\ntilsvarende analyse på det specialiserede\nvoksenområde.\n• et begrænset antal scenarier med\nanlægs- og driftsøkonomi eller\nhandlemuligheder med fordele, ulemper\nog forudsætninger.\n\nAnalyser skal give:\n\nDagtilbudsområdet\n\nAnalysen skal give Byrådet et kort og\nanvendeligt beslutningsgrundlag for den\nfremtidige struktur og kapacitet på dagtilbudsog dagplejeområdet. Målet er en geografisk\nbalanceret, fagligt bæredygtig og økonomisk\nrobust struktur, som understøtter kvaliteten i\nde pædagogiske læringsmiljøer.\n\n• et overordnet billede af nuværende og\nfremtidig kapacitet og struktur\n• centrale faglige, økonomiske, geografiske\nog bygningsmæssige\nopmærksomhedspunkter\n• et begrænset antal scenarier med\nanlægs- og driftsøkonomi eller\nhandlemuligheder med fordele, ulemper\nog forudsætninger.\n\nBudgettemaanalyserne gennemføres overvejende med egne ressourcer og vil medføre et betydeligt internt\nressourcetræk i organisationen. Der vil dog ligeledes være behov for at inddrage ekstern konsulentbistand til\nafgrænsede og særligt specialiserede dele af analysearbejdet.\nAnalyserne forventes færdiggjort i foråret 2027 med henblik på præsentation og dialoger i fagudvalgene i løbet af maj og\njuni 2027 samt efterfølgende præsentation og drøftelse på et temamøde i Byrådet. Analyserne skal danne grundlag for\nbudgetlægningen for 2028 og efterfølgende år.\nDe relevante fagudvalg vil blive inddraget undervejs i analysearbejdet. Den nærmere procesplan udarbejdes, når\nkommissorierne er endeligt godkendt."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Administrationen kan oplyse, at budgettemaanalyserne er besluttet som en del af budgetforliget for 2027.\nVækstanalysen forventes gennemført primært ved anvendelse af interne ressourcer samt ekstern bistand for ca.\n350.000 kr. Den eksterne bistand forventes at kunne finansieres helt eller delvist fra budgettet på Erhverv og\nTurisme. Et evt. yderligere finansieringsbehov afholdes af Direktionens udviklingspulje.\nDe øvrige tre analyser forventes hver at koste 350.000 kr. til ekstern bistand samt et internt ressourceforbrug på 1\nårsværk pr. analyse.\nDen eksterne bistand til de tre struktur- og kapacitetsanalyser foreslås finansieret således:\n• Ca. 500.000 kr. som er resterende midler fra puljen til Velfærdens Fundament\n• 550.000 kr. fra anlægsbudgettet på områderne, da der er tale om analyser, der har et væsentligt\nanlægselement. En konkret mulighed for finansiering kan være under Ældre- og Omsorgsudvalget, hvor der\nårligt er afsat 750.000 kr. til hjemlighed.\nDet bemærkes, at den samlede udgift til ekstern bistand er opgjort til 1,4 mio. kr."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "Kommissorium for budgettemaanalyse - vækst 091026",
+     "url": null
+    },
+    {
+     "navn": "Kommissorium for budgettemaanalyse - Specialiserede voksenområde 091026",
+     "url": null
+    },
+    {
+     "navn": "Kommissorium Budgettemaanalyse - Ældreområdet 091026",
+     "url": null
+    },
+    {
+     "navn": "Kommissorium for budgettemaanalyse - dagtilbudsområdet 231026",
+     "url": null
+    },
+    {
+     "navn": "Byrådet 27.10.2026",
+     "url": null
+    }
+   ]
+  },
+  "naestved-2026-10-27-byraadet-9": {
+   "id": "naestved-2026-10-27-byraadet-9",
+   "kommune": "Næstved",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-27",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.naestved.dk/vis?id=c99d3ef8-6999-4a84-a7c0-d95e4605613b",
+   "hentet": "2026-10-23T18:40:41.466Z",
+   "titel": "Udpegning af et medlem til bestyrelsen i AffaldPlus Affaldsenergi A/S",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Politisk behandling\nByrådet (godkender), 27.10.2026\nByrådet skal udpege et nyt medlem til bestyrelsen i AffaldPlus Affaldsenergi A/S, da nuværende medlem er\nforhindret i at varetage hvervet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Valggruppe 1 (C+I+O+V+Æ) indstiller følgende:\n\nSüleyman Yücel (V)"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet udpegede på det konstituerende møde d. 9. december 2026, efter indstilling fra Valggruppe 1 (C+I+O+V+Æ),\nborgmester Kenneth Sørensen (V) som medlem af bestyrelsen i AffaldPlus Affaldsenergi A/S.\nByrådet kan udpege ét medlem og én personlig stedfortræder til bestyrelsen for AffaldPlus Affaldsenergi A/S, i henhold\ntil vedtægternes § 8.\nDet følger af Ejerbeslutningen for AffaldPlus Affaldsenergi A/S, at ejerkommunerne ønsker den samme\nbestyrelsessammensætning i AffaldPlus Affaldsenergi A/S som i I/S AffaldPlus.\n\nUdpegningen følger den kommunale valgperiode, men er ikke omfattet af det borgerlige ombud.\nBorgmester Kenneth Sørensen har meddelt, at han, for at foretage en skærpet prioritering af Næstved Kommunes\ninteresser, ikke kan fortsætte i AffaldPlus Affaldsenergi A/S bestyrelse.\nByrådet skal derfor udpege et nyt medlem.\nValggruppe 1 (C+I+O+V+Æ) indstiller som nyt medlem af bestyrelsen:\nSüleyman Yücel (V)"
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "Vedtægter for AffaldPlus Affaldsenergi AS",
+     "url": null
+    },
+    {
+     "navn": "Byrådet 27.10.2026",
+     "url": null
+    }
+   ]
   }
  },
  "sitemaps": {
@@ -11904,7 +12002,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=cb5548f0-6b3b-4744-89f3-63b65c78145e": {
-   "senest": "2026-10-21",
+   "senest": "2026-10-23",
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=106c9584-0eee-45c0-aecc-58d2f0683564": {
@@ -11929,6 +12027,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-10-23T10:00:34.056Z",
+ "opdateret": "2026-10-23T18:40:41.467Z",
  "kommune": "Næstved"
 }
