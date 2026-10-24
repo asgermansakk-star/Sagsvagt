@@ -348,7 +348,7 @@
       <ul class="tryghed" aria-label="Det kan du regne med">
         <li>Gratis i testperioden</li>
         <li>Partineutral</li>
-        <li>Afmeld med ét klik</li>
+        <li>Afmeld fra hver mail</li>
       </ul>
      </div>
       <!-- Tre rigtige sager fra demoen herunder, så man med det samme ser, hvad Sagsvagt finder -->
@@ -427,7 +427,7 @@
           <ul class="fordele">
             <li><span>Gratis, mens vi tester</span></li>
             <li><span>Én mail om ugen, ingen spam</span></li>
-            <li><span>Afmeld med ét klik, når som helst</span></li>
+            <li><span>Afmeld fra mailen, når som helst</span></li>
           </ul>
         </div>
         <form id="form" novalidate>
@@ -466,7 +466,7 @@
         <div class="done" aria-live="polite">
           <svg class="mark" viewBox="0 0 168 224" aria-hidden="true" style="color:var(--kalk)"><use href="#maerke"/></svg>
           <h3>Du er skrevet op.</h3>
-          <p>Vi har sendt dig en kvittering, og vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
+          <p class="done-tekst">Vi har sendt dig en kvittering, og vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
           <p class="tjek">Kan du ikke finde vores mails? Tjek også din mappe med uønsket mail, og markér dem som "Ikke uønsket".</p>
           <div class="henvis" hidden>
             <p class="henvis-titel">Kender du nogen, der også bør følge med?</p>
@@ -771,7 +771,10 @@
   };
   form.kommuner.addEventListener("input", visKonto);
   form.kommuner.addEventListener("change", visKonto);
-  const faerdig = () => { card.classList.add("ok"); visHenvisning(form.email.value); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
+  // bekraeft: serveren har sendt en mail med et link, der skal bruges, før mandagsmailen kommer (dobbelt opt-in)
+  const faerdig = (bekraeft) => {
+    if (bekraeft) { card.querySelector(".done h3").textContent = "Tjek din mail."; card.querySelector(".done-tekst").textContent = "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
+    card.classList.add("ok"); visHenvisning(form.email.value); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = form.email.value.trim(), f = form.email.parentElement;
@@ -819,7 +822,7 @@
         const out = await egen.json().catch(() => ({}));
         if (egen.ok && out.konto) { location.href = "min/"; return; } // kontoen er oprettet og logget ind
         if (egen.ok && out.harKonto) { msg.className = "form-msg"; msg.innerHTML = 'Du er allerede skrevet op, så adgangskoden blev ikke gemt. <a href="min/" style="color:var(--kalk)">Log ind</a>, eller brug "Glemt adgangskode" der.'; btn.disabled = false; btn.classList.remove("busy"); return; }
-        if (egen.ok) { faerdig(); btn.disabled = false; btn.classList.remove("busy"); return; }
+        if (egen.ok) { faerdig(out.bekraeft); btn.disabled = false; btn.classList.remove("busy"); return; }
         if (egen.status === 400 || egen.status === 429) { msg.className = "form-msg err"; msg.textContent = out.fejl || "Noget gik galt."; btn.disabled = false; btn.classList.remove("busy"); return; }
       }
     } catch (err) { console.warn("Egen server svarede ikke, bruger FormSubmit:", err.message); }

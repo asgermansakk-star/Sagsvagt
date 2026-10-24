@@ -1,6 +1,7 @@
 <?php
-// Tilmelding fra sagsvagt.dk: gemmer den tilmeldte, giver redaktionen besked og sender en kvittering.
-// Tilmelder samme e-mail sig igen, opdateres kommuner, emner og rolle.
+// Tilmelding fra sagsvagt.dk: gemmer den tilmeldte, giver redaktionen besked og sender en mail med et link, der bekræfter
+// adressen (dobbelt opt-in). Mandagsmailen sendes først, når linket er brugt (api/bekraeft.php).
+// Tilmelder samme e-mail sig igen, opdateres kommuner, emner og rolle. Var man afmeldt, skal adressen bekræftes igen.
 declare(strict_types=1);
 require __DIR__ . '/_bootstrap.php';
 
@@ -41,7 +42,9 @@ if ($kode !== '') {
 $ny = !$fandtes || $fandtes['status'] === 'medlem';
 $nytMedlem = $medlem && empty($fandtes['medlem']);
 if ($fandtes) {
-    $db->prepare("UPDATE abonnenter SET kommuner = ?, emner = ?, rolle = ?, status = CASE WHEN status IN ('afmeldt', 'medlem') THEN 'tilmeldt' ELSE status END WHERE id = ?")
+    // bekraeftet står først: MySQL bruger de nye værdier i resten af SET, så status og mail_afmeldt skal læses, før de ændres
+    $db->prepare("UPDATE abonnenter SET bekraeftet = CASE WHEN status IN ('afmeldt', 'medlem') OR mail_afmeldt IS NOT NULL THEN NULL ELSE bekraeftet END, mail_afmeldt = NULL,
+        kommuner = ?, emner = ?, rolle = ?, status = CASE WHEN status IN ('afmeldt', 'medlem') THEN 'tilmeldt' ELSE status END WHERE id = ?")
        ->execute([$kommuner, $alleEmner, $rolle, $fandtes['id']]);
 } elseif ($konto) {
     // Ny konto i en åben kommune: aktiv med det samme, og logget ind
@@ -67,7 +70,13 @@ if ($nytMedlem) {
     @send_mail('kontakt@saetdagsordenen.dk', "Nyt medlem af Sæt Dagsordenen: $navn",
         '<pre style="font:14px/1.5 Arial,sans-serif">' . htmlspecialchars($tekstF, ENT_QUOTES, 'UTF-8') . '</pre>', $tekstF, $email);
 }
-if ($ny || $nytMedlem) {
+$q = $db->prepare('SELECT id, bekraeftet FROM abonnenter WHERE email = ?'); $q->execute([$email]);
+$raekke = $q->fetch();
+$bekraeft = $raekke && $raekke['bekraeftet'] === null;
+if ($bekraeft) {
+    // Ny eller tilbage efter afmelding: mail med bekræftelseslinket (og velkomst til en ny konto)
+    @send_bekraeftelse((int)$raekke['id'], $email, $konto, $medlem);
+} elseif ($ny || $nytMedlem) {
     [$html, $tekst] = mail_skabelon($konto ? 'Velkommen til Sagsvagt' : 'Tak, fordi du har skrevet dig op',
         ($konto ? "Din konto er oprettet, og du kan logge ind på Min avis med din e-mail og den adgangskode, du valgte. Du får også én mail hver mandag med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
                 : "Vi giver besked, når din kommune er klar. Derefter får du én mail hver mandag med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n")
@@ -78,4 +87,5 @@ if ($ny || $nytMedlem) {
     @send_mail($email, $konto ? 'Din konto på Sagsvagt' : 'Du er skrevet op til Sagsvagt', $html, $tekst);
 }
 // konto: logget ind og kan gå til Min avis. harKonto: e-mailen fandtes, så en valgt adgangskode blev ikke brugt.
-svar(200, ['ok' => true, 'konto' => $konto, 'harKonto' => $kode !== '' && !$konto]);
+// bekraeft: der er sendt en mail med et link, som skal bruges, før mandagsmailen kommer.
+svar(200, ['ok' => true, 'konto' => $konto, 'harKonto' => $kode !== '' && !$konto, 'bekraeft' => $bekraeft]);

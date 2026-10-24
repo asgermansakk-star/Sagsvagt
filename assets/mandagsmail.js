@@ -9,6 +9,8 @@
 //   linkTil:  (sag) => adresse, som overskriften linker til (kommunens side, mens avisen er lukket)
 //   modtager: e-mailadressen, der står i bunden af mailen
 //   logo:     adressen på logoet (som standard på sagsvagt.dk)
+//   afmeld:   personligt afmeldingslink (api/afmeld.php); uden link står redaktionens mail
+// api/_mandagsmail_lav.php laver den samme mail på serveren. Ret begge; avis/tjek-mandagsmail.mjs sammenligner dem.
 // Giver { emne, preheader, html, tekst, antal }.
 
 const C = {
@@ -74,18 +76,23 @@ const mailTop = ({ emne, preheader, uge, idag, logo }) => `<!doctype html>
   </tr></table>
 </td></tr>
 `;
-const mailBund = (modtager) => `<tr><td style="padding:24px 28px 26px;border-top:2px solid ${C.nat};font:12px/1.6 ${SANS};color:${C.muted};">
+const mailBund = (modtager, afmeld = "") => `<tr><td style="padding:24px 28px 26px;border-top:2px solid ${C.nat};font:12px/1.6 ${SANS};color:${C.muted};">
   Sagsvagt er partineutral og bygger på kommunens egne dagsordener og referater. Læs altid den originale sag, før du handler på den.<br><br>
   Du får denne mail, fordi du har skrevet dig op til Sagsvagt${modtager ? ` med ${esc(modtager)}` : ""}.
   <!-- Linkene på deres egen linje med luft, så de er nemme at ramme med en finger -->
-  <br><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Ret mine emner")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Ret dine emner</a><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Afmeld Sagsvagt")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Afmeld</a><a href="${SITE}privatliv.html" style="display:inline-block;padding:12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Privatliv</a>
+  <br><a href="mailto:${REDAKTION}?subject=${encodeURIComponent("Ret mine emner")}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Ret dine emner</a><a href="${afmeld ? esc(afmeld) : `mailto:${REDAKTION}?subject=${encodeURIComponent("Afmeld Sagsvagt")}`}" style="display:inline-block;padding:12px 18px 12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Afmeld</a><a href="${SITE}privatliv.html" style="display:inline-block;padding:12px 0;line-height:20px;font-weight:600;color:${C.indigo};">Privatliv</a>
 </td></tr>
 </table>
 </td></tr></table>
 </body></html>`;
 
+// Bunden af tekstudgaven: med personligt afmeldingslink, når det findes
+const tekstBund = (afmeld, ret = true) => afmeld
+  ? `\n\n--\nDu får denne mail, fordi du har skrevet dig op til Sagsvagt.\nAfmeld: ${afmeld}${ret ? `\nRet dine emner: ${REDAKTION}` : ""}\n`
+  : `\n\n--\nDu får denne mail, fordi du har skrevet dig op til Sagsvagt. ${ret ? "Afmeld eller ret dine emner: " : "Afmeld: "}${REDAKTION}\n`;
+
 // ---------- Mailen ----------
-export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, modtager = "", logo = `${SITE}assets/mail-logo.png` }) {
+export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, modtager = "", afmeld = "", logo = `${SITE}assets/mail-logo.png` }) {
   const v = vaelgSager({ data, profil, idag });
   const uge = ugenr(idag);
   // Følger modtageren flere kommuner (sagerne har ks/kn fra Min avis eller avis/mandagsmail.mjs), står kommunen efter udvalget
@@ -148,14 +155,14 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
 ${sektion(v.dage === 7 ? "Besluttet i ugen der gik" : "Besluttet de seneste to uger", "", v.besluttet, v.flereBesluttet)}
 ${sektion("Det skal de tage stilling til", "De næste to uger.", v.kommer, v.flereKommer)}
 ${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0, false)}
-` + mailBund(modtager);
+` + mailBund(modtager, afmeld);
 
   // Ren tekst til mailprogrammer, der ikke viser HTML
   const linje = (s) => `- ${s.t}\n  ${s.st === "besluttet" ? `Besluttet ${kort(s.dato)}` : s.st === "kommer" ? `På dagsordenen ${kort(s.dato)}` : `Behandlet ${kort(s.dato)}`}, ${hvorSag(s)}${s.st === "besluttet" && (s.ud || s.kb) ? `\n  ${s.ud || klip(s.kb, 220)}${s.ud && s.tal ? ` ${s.tal.for} for, ${s.tal.imod} imod.` : ""}` : ""}\n  ${linkTil(s)}`;
   const del = (t, l) => (l.length ? `\n\n${t.toUpperCase()}\n\n${l.map(linje).join("\n\n")}` : "");
   const tekst = `Sagsvagt, uge ${uge}\n\nGod morgen${navn ? `, ${navn}` : ""}.${ingen ? " Der er ingen nye sager om dine emner i denne uge." : ""}`
     + del("Besluttet", v.besluttet) + del("Det skal de tage stilling til", v.kommer) + del(`Fra ${hvor(profil.bydel || "")}`, v.bydel)
-    + `\n\n--\nDu får denne mail, fordi du har skrevet dig op til Sagsvagt. Afmeld eller ret dine emner: ${REDAKTION}\n`;
+    + tekstBund(afmeld);
 
   return { emne, preheader, html, tekst, antal: { besluttet: nB, kommer: nK, bydel: v.bydel.length } };
 }
@@ -164,7 +171,7 @@ ${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0
 // Til tilmeldte, hvis kommune ikke er åben endnu (eller som ikke har skrevet en kommune): en kort mail om, at deres
 // kommune er på vej, hvilke kommuner der er åbne, og et link, de kan dele, så kommunen rykker op i køen.
 // kommuner: de navne, de skrev ved tilmeldingen. aabne: navnene på de åbne kommuner.
-export function lavVentemail({ kommuner = [], aabne = [], idag, navn = "", modtager = "", logo = `${SITE}assets/mail-logo.png` }) {
+export function lavVentemail({ kommuner = [], aabne = [], idag, navn = "", modtager = "", afmeld = "", logo = `${SITE}assets/mail-logo.png` }) {
   const uge = ugenr(idag);
   const liste = (l) => (l.length > 1 ? `${l.slice(0, -1).join(", ")} og ${l.at(-1)}` : l[0] || "");
   const hvem = liste(kommuner);
@@ -180,11 +187,11 @@ export function lavVentemail({ kommuner = [], aabne = [], idag, navn = "", modta
   ${aabne.length ? p(`Lige nu følger vi byrådene i ${esc(liste(aabne))}.`) : ""}
   ${hvem ? `<p style="margin:20px 0 0;"><a href="${esc(del)}" style="display:inline-block;padding:12px 20px;border-radius:8px;background:${C.nat};color:${C.kalk};font:700 15px/1.2 ${SANS};text-decoration:none;">Del Sagsvagt med en nabo</a></p>
   <p style="margin:10px 0 0;font:13px/1.5 ${SANS};color:${C.muted};">Jo flere fra ${esc(hvem)}, der skriver sig op, jo før åbner vi.</p>` : ""}
-</td></tr>` + mailBund(modtager);
+</td></tr>` + mailBund(modtager, afmeld);
   const tekst = `Sagsvagt, uge ${uge}\n\nGod morgen${navn ? `, ${navn}` : ""}.\n\n`
     + (hvem ? `Sagsvagt er endnu ikke åben i ${hvem}. Vi åbner kommune for kommune, der hvor flest skriver sig op, og du får besked, så snart ${hvem} er med.\n\nDel Sagsvagt med en nabo: ${del}`
       : "Du har ikke skrevet, hvilken kommune du vil følge. Svar på denne mail med navnet på din kommune, så sætter vi den i køen.")
     + (aabne.length ? `\n\nLige nu følger vi byrådene i ${liste(aabne)}.` : "")
-    + `\n\n--\nDu får denne mail, fordi du har skrevet dig op til Sagsvagt. Afmeld: ${REDAKTION}\n`;
+    + tekstBund(afmeld, false);
   return { emne, preheader, html, tekst, antal: { besluttet: 0, kommer: 0, bydel: 0 }, vente: true };
 }

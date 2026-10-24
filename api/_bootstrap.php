@@ -86,6 +86,12 @@ function db(): PDO {
     foreach (['medlem' => 'VARCHAR(25) NULL', 'navn' => 'VARCHAR(100) NULL', 'alder' => 'INT NULL'] as $kol => $type) {
         try { $pdo->query("SELECT $kol FROM abonnenter LIMIT 1"); } catch (PDOException $e) { $pdo->exec("ALTER TABLE abonnenter ADD COLUMN $kol $type"); }
     }
+    // bekraeftet: hvornår adressen blev bekræftet via linket i mailen (dobbelt opt-in). De, der var skrevet op, før
+    // kolonnen kom, regnes som bekræftet fra deres tilmelding. mail_afmeldt: afmeldt mandagsmailen via linket i en mail.
+    try { $pdo->query('SELECT bekraeftet FROM abonnenter LIMIT 1'); }
+    catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN bekraeftet VARCHAR(25) NULL'); $pdo->exec('UPDATE abonnenter SET bekraeftet = oprettet'); }
+    try { $pdo->query('SELECT mail_afmeldt FROM abonnenter LIMIT 1'); } catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN mail_afmeldt VARCHAR(25) NULL'); }
+    $pdo->exec('CREATE TABLE IF NOT EXISTS indstillinger (noegle VARCHAR(50) NOT NULL PRIMARY KEY, vaerdi VARCHAR(255) NOT NULL)');
     $pdo->exec("CREATE TABLE IF NOT EXISTS tokens (
         id $id, abonnent_id INT NOT NULL, type VARCHAR(10) NOT NULL, hash CHAR(64) NOT NULL UNIQUE, udloeber VARCHAR(25) NOT NULL, brugt VARCHAR(25) NULL)");
     $pdo->exec("CREATE TABLE IF NOT EXISTS forsoeg (noegle VARCHAR(200) NOT NULL, tid INT NOT NULL)");
@@ -153,13 +159,62 @@ function find_token(string $noegle): ?array {
     return $q->fetch() ?: null;
 }
 
+// ---------- Signerede links (afmelding, stop af ugens mail) ----------
+// Links, der skal virke i alle gamle mails, signeres med en hemmelig nøgle, der laves første gang og ligger i databasen.
+function hemmelighed(): string {
+    $db = db();
+    $q = $db->prepare('SELECT vaerdi FROM indstillinger WHERE noegle = ?'); $q->execute(['hemmelighed']);
+    if ($v = $q->fetchColumn()) return (string)$v;
+    try { $db->prepare('INSERT INTO indstillinger (noegle, vaerdi) VALUES (?, ?)')->execute(['hemmelighed', bin2hex(random_bytes(32))]); } catch (PDOException $e) {} // to samtidige
+    $q->execute(['hemmelighed']);
+    return (string)$q->fetchColumn();
+}
+function signatur(string $hvad): string { return substr(hash_hmac('sha256', $hvad, hemmelighed()), 0, 32); }
+function signatur_ok(string $hvad, string $t): bool { return preg_match('/^[a-f0-9]{32}$/', $t) === 1 && hash_equals(signatur($hvad), $t); }
+function afmeld_link(int $id): string { global $K; return $K['site_url'] . "api/afmeld.php?id=$id&t=" . signatur("afmeld:$id"); }
+
+// En lille side i Sagsvagts udseende til links fra mails (afmelding, bekræftelse, stop). $form: valgfri formular med knap.
+function vis_side(string $titel, string $tekst, string $form = ''): never {
+    $e = fn($s) => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
+    header('Content-Type: text/html; charset=utf-8');
+    header('Cache-Control: no-store');
+    header('X-Robots-Tag: noindex');
+    echo '<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">'
+       . '<title>' . $e($titel) . ' – Sagsvagt</title><link rel="stylesheet" href="../assets/fonts/montserrat.css"></head>'
+       . '<body style="margin:0;background:#E6DFD3;font:16px/1.6 Montserrat,Arial,sans-serif;color:#0E0F14;">'
+       . '<main style="max-width:520px;margin:48px auto;padding:28px 24px;background:#EEE8DE;border-radius:10px;">'
+       . '<p style="margin:0 0 18px;font-weight:700;letter-spacing:.04em;"><a href="../" style="color:#0E0F14;text-decoration:none;">Sagsvagt</a></p>'
+       . '<h1 style="margin:0 0 10px;font-size:24px;line-height:1.25;">' . $e($titel) . '</h1><p style="margin:0 0 20px;color:#3E3B40;">' . nl2br($e($tekst)) . '</p>' . $form
+       . '</main></body></html>';
+    exit;
+}
+function knap_form(string $tekst): string {
+    return '<form method="post"><button type="submit" style="font:700 15px Montserrat,Arial,sans-serif;background:#0E0F14;color:#E6DFD3;border:0;border-radius:99px;padding:13px 24px;cursor:pointer;">'
+         . htmlspecialchars($tekst, ENT_QUOTES, 'UTF-8') . '</button></form>';
+}
+
+// Dobbelt opt-in: mail med et link, der bekræfter adressen (api/bekraeft.php). $konto: tilmeldt med adgangskode.
+function send_bekraeftelse(int $id, string $email, bool $konto = false, bool $medlem = false): bool {
+    global $K;
+    $link = $K['site_url'] . 'api/bekraeft.php?t=' . lav_token($id, 'bekraeft', 24 * 14);
+    [$html, $tekst] = mail_skabelon($konto ? 'Velkommen til Sagsvagt' : 'Bekræft, at du vil have Sagsvagt',
+        ($konto ? "Din konto er oprettet, og du kan logge ind på Min avis med din e-mail og den adgangskode, du valgte.\n\nBekræft din e-mail med knappen herunder. Så får du også én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
+                : "Tryk på knappen for at bekræfte, at det er dig, der har skrevet dig op. Derefter får du én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner. Er din kommune ikke åben endnu, giver vi besked, når den er klar.\n\n")
+        . ($medlem ? "Du er også blevet gratis medlem af foreningen Sæt Dagsordenen. Foreningen kan se dit navn, din alder, din e-mail og dine kommuner. Vil du melde dig ud, så skriv til kontakt@saetdagsordenen.dk.\n\n" : '')
+        . "Har du ikke skrevet dig op, så gør ingenting. Så får du ingen mails fra os.",
+        $konto ? 'Bekræft min e-mail' : 'Ja, send mig mandagsmailen', $link,
+        "Du får denne mail, fordi $email er skrevet op til Sagsvagt. Linket virker i 14 dage.");
+    return send_mail($email, $konto ? 'Din konto på Sagsvagt' : 'Bekræft din tilmelding til Sagsvagt', $html, $tekst);
+}
+
 // ---------- Mail ----------
 // 'smtp' sender via Simplys mailserver til hjemmesider (websmtp.simply.com:587) med login til en rigtig mailkonto.
 // Det er nødvendigt, fordi sagsvagt.dk har en streng DMARC-regel (p=reject): mails fra PHP's mail() bliver ikke godkendt
 // med SPF/DKIM og bliver derfor afvist af fx Outlook. 'php' bruger mail() (kun som nødløsning), 'fil' gemmer mailen som
 // .eml-fil (til lokal test).
-// $svarTil: hvem et svar skal gå til (fx brugeren bag en feedback); ellers redaktionens svaradresse
-function send_mail(string $til, string $emne, string $html, string $tekst, string $svarTil = ''): bool {
+// $svarTil: hvem et svar skal gå til (fx brugeren bag en feedback); ellers redaktionens svaradresse.
+// $ekstra: flere headere som ['List-Unsubscribe' => '<…>'] (værdierne laver vi selv; linjeskift fjernes for en sikkerheds skyld)
+function send_mail(string $til, string $emne, string $html, string $tekst, string $svarTil = '', array $ekstra = []): bool {
     global $K;
     $m = $K['mail'];
     $svarTil = ren_email($svarTil) ?: $m['svar_til']; // ren_email afviser linjeskift, så headeren ikke kan manipuleres
@@ -169,11 +224,12 @@ function send_mail(string $til, string $emne, string $html, string $tekst, strin
     $domaene = substr(strrchr($m['fra'], '@'), 1);
     $hoveder = "From: $fraNavn <{$m['fra']}>\r\nReply-To: $svarTil\r\nDate: " . date('r') . "\r\nMessage-ID: <" . bin2hex(random_bytes(16)) . "@$domaene>\r\n"
              . "MIME-Version: 1.0\r\nContent-Type: multipart/alternative; boundary=\"$graense\"\r\n";
+    foreach ($ekstra as $navn => $vaerdi) $hoveder .= preg_replace('/[^A-Za-z-]/', '', (string)$navn) . ': ' . str_replace(["\r", "\n"], '', (string)$vaerdi) . "\r\n";
     $krop = "--$graense\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($tekst))
           . "--$graense\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($html)) . "--$graense--\r\n";
     if ($m['metode'] === 'fil') {
         if (!is_dir($m['mappe'])) mkdir($m['mappe'], 0700, true);
-        $navn = gmdate('Ymd-His') . '-' . preg_replace('/[^a-z0-9]+/', '-', $til) . '.eml';
+        $navn = gmdate('Ymd-His') . '-' . bin2hex(random_bytes(3)) . '-' . preg_replace('/[^a-z0-9]+/', '-', $til) . '.eml'; // flere mails i samme sekund
         return (bool)file_put_contents($m['mappe'] . '/' . $navn, "To: $til\r\nSubject: $emneKodet\r\n$hoveder\r\n$krop");
     }
     if ($m['metode'] === 'smtp') {

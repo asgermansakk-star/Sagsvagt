@@ -1,8 +1,9 @@
 <?php
-// Redaktionen: mandagsmailen. "modtagere" giver de tilmeldte, der kan få ugens mail; "send" sender én mail, som
-// admin-siden har lavet med assets/mandagsmail.js, og husker det, så ingen får samme uges mail to gange.
+// Redaktionen: mandagsmailen. "forhaand" laver ugens mail til hver tilmeldt på serveren (api/_mandagsmail_lav.php, den
+// samme mail som den automatiske udsendelse) og fortæller, om ugen er planlagt eller stoppet. "modtagere" giver de
+// tilmeldte, der kan få ugens mail. "send" sender én mail og husker det, så ingen får samme uges mail to gange.
 // "planlaeg" lægger mailen i kø til et senere tidspunkt (sendes ved første besøg derefter, se api/_mandagsmail.php),
-// og "fortryd" tømmer ugens kø. Intet sendes af sig selv: redaktionen trykker Send eller planlægger på admin-siden.
+// og "fortryd" stopper ugens mail: tømmer køen, også den automatiske, og planlægger den ikke igen.
 declare(strict_types=1);
 require __DIR__ . '/../_bootstrap.php';
 require __DIR__ . '/../_mandagsmail.php';
@@ -26,9 +27,15 @@ if ($handling === 'modtagere') {
     svar(200, ['modtagere' => $q->fetchAll()]);
 }
 
+if ($handling === 'forhaand') {
+    $q = $db->prepare('SELECT planlagt, antal, stoppet FROM mandagsmail_uger WHERE uge = ?'); $q->execute([$uge]);
+    $mails = array_map(fn($m) => ['a' => array_intersect_key($m['a'], array_flip(['id', 'email', 'kommuner', 'sendt', 'planlagt'])), 'type' => $m['type'],
+        'kommuner' => $m['profil']['kommuner'], 'spring' => $m['spring'], 'mail' => array_intersect_key($m['mail'], array_flip(['emne', 'html', 'tekst']))], mm_ugens_mails($db, $uge));
+    svar(200, ['mails' => $mails, 'uge' => $q->fetch() ?: null, 'auto' => mm_kl7($uge)]);
+}
+
 if ($handling === 'fortryd') {
-    $q = $db->prepare('DELETE FROM mandagsmail_koe WHERE uge = ?'); $q->execute([$uge]);
-    svar(200, ['ok' => true, 'fjernet' => $q->rowCount()]);
+    svar(200, ['ok' => true, 'fjernet' => mm_stop($db, $uge)]);
 }
 
 if ($handling === 'send' || $handling === 'planlaeg') {
