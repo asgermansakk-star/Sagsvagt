@@ -216,10 +216,12 @@ const IKON = {
   mere: '<circle cx="5.5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="18.5" cy="12" r="1.3"/>',
 };
 const ikon = (n) => `<svg class="ti" viewBox="0 0 24 24" aria-hidden="true">${IKON[n]}</svg>`;
-// Kommunevælgeren: de åbne kommuner og en vej til resten. data-kommune bruges til at huske valget (se side()).
-const kommuneValg = (rod, k) => [{ navn: "København", slug: "koebenhavn" }, ...UDGAVER].map((u) =>
+// Kommunevælgeren: siden har kun København, den aktuelle kommune og "Alle kommuner". Resten af de åbne kommuner hentes
+// fra kommune/aabne.json, første gang vælgeren åbnes (se side()), så en ny kommune ikke ændrer alle ~17.000 sider.
+// data-kommune bruges til at huske valget.
+const kommuneValg = (rod, k) => [{ navn: "København", slug: "koebenhavn" }, ...(k && k.slug !== "koebenhavn" ? [k] : [])].map((u) =>
   `<a href="${rod}${u.slug === "koebenhavn" ? "index.html" : `kommune/${u.slug}.html`}" data-kommune="${u.slug}"${cur((k?.slug || "koebenhavn") === u.slug)}>${esc(u.navn)}</a>`)
-  .join("") + `<a href="${rod}kommune/">Alle kommuner</a>`;
+  .join("") + `<a href="${rod}kommune/" data-alle>Alle kommuner</a>`;
 const tabBjaelke = (rod, aktiv, k) => {
   const { hoved, mere } = menuData(rod, k);
   // Telefonen: Forside, Emner, Søg, kommunen og Mere (Møder ligger under Mere)
@@ -296,6 +298,8 @@ ${indhold}
 <script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});
+/* Kommunevælgeren henter de åbne kommuner fra kommune/aabne.json første gang, den åbnes (toggle bobler ikke, derfor capture) */
+document.addEventListener("toggle",function(e){var d=e.target,a=d.open&&!d.dataset.hentet&&d.querySelector&&d.querySelector("a[data-alle]");if(!a)return;d.dataset.hentet=1;var rod=a.getAttribute("href").slice(0,-8),nu=d.querySelector("a[data-kommune][aria-current]");nu=nu&&nu.dataset.kommune;fetch(rod+"kommune/aabne.json").then(function(r){return r.json()}).then(function(l){d.querySelectorAll("a[data-kommune]").forEach(function(x){x.remove()});l.forEach(function(u){var x=document.createElement("a");x.href=rod+(u.slug==="koebenhavn"?"index.html":"kommune/"+u.slug+".html");x.dataset.kommune=u.slug;x.textContent=u.navn;if(u.slug===nu)x.setAttribute("aria-current","page");a.parentNode.insertBefore(x,a)})}).catch(function(){d.dataset.hentet=""})},true);
 /* Husk kommunen (valgt i kommunevælgeren eller åbnet på dens forside); Københavns forside viser så vejen dertil */
 try{var K="svKommune";document.addEventListener("click",function(e){var a=e.target.closest("a[data-kommune]");if(a)localStorage.setItem(K,JSON.stringify({s:a.dataset.kommune,n:a.textContent}))});${aktiv === "k-forside" ? `
 localStorage.setItem(K,${JSON.stringify(JSON.stringify({ s: kommune.slug, n: kommune.navn }))});` : ""}${aktiv === "forside" ? `

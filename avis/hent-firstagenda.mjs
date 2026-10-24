@@ -21,6 +21,8 @@ const DAGE = Number(process.env.DAGE || 75);
 const PDFTOTEXT = process.env.PDFTOTEXT || "pdftotext";
 // Hæves, når parseren lærer nye PDF-formater; så hentes møder, der før gav nul punkter, igen én gang
 const PARSER = 3;
+// Under så mange tegn i PDF'en regnes et møde uden punkter for "ikke fyldt ud endnu" og prøves igen i en uge
+const TOM_TEGN = 4000;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const slug = (s) => s.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa").normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -267,12 +269,15 @@ async function hentKommune(k) {
   // Nye eller ændrede møder, og møder der gav nul punkter: kommunen lægger nogle gange mødet op, før dagsordenen er
   // fyldt ud, uden at lastmod ændrer sig bagefter. Dem prøver vi igen i en uge fra første tomme hentning.
   // Møder hentet før tomFra fandtes, prøves kun igen, hvis selve mødet er højst en uge gammelt.
+  // Kun en kort PDF (under TOM_TEGN tegn) tyder på en dagsorden, der ikke er fyldt ud endnu. En lang PDF med nul punkter
+  // er en parserfejl; den hentes først igen, når PARSER hæves, ellers koster den en PDF pr. møde ved hver kørsel.
   const enUge = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
   const nye = [...dok].filter(([id, lastmod]) => {
     const d = gemt.dokumenter[id];
     // Hele kommunen hentes igen én gang, når parseren er hævet siden kommunens sidste fulde hentning
     if ((gemt.parser || 1) < PARSER) return true;
-    return d?.lastmod !== lastmod || (d.punkter === 0 && (d.tomFra || ((d.dato || "") >= enUge ? idag : "")) >= enUge)
+    return d?.lastmod !== lastmod
+      || (d.punkter === 0 && (d.tegn == null || d.tegn < TOM_TEGN) && (d.tomFra || ((d.dato || "") >= enUge ? idag : "")) >= enUge)
       || (d.punkter === 0 && (d.parser || 1) < PARSER); // tomme møder prøves igen, når parseren er forbedret
   });
   console.log(`${k.kommune}: ${udvalgSitemaps.length} udvalg, ${dok.size} møder siden ${fra}, ${nye.length} nye eller ændrede`);
@@ -300,7 +305,7 @@ async function hentKommune(k) {
       // tomFra: hvornår mødet første gang gav nul punkter, så vi kun prøver igen i en uge
       // Mødets gamle punkter fjernes først, så et punkt, der har skiftet nummer eller er sprunget over, ikke bliver hængende
       for (const [sid, s] of Object.entries(gemt.sager)) if (s.kilde === `${k.base}/vis?id=${id}`) delete gemt.sager[sid];
-      gemt.dokumenter[id] = { lastmod, type: m.type, udvalg: m.udvalg, dato: m.dato, punkter: m.punkter.length, parser: PARSER, ...(m.punkter.length ? {} : { tomFra: gemt.dokumenter[id]?.tomFra || idag }) };
+      gemt.dokumenter[id] = { lastmod, type: m.type, udvalg: m.udvalg, dato: m.dato, punkter: m.punkter.length, parser: PARSER, ...(m.punkter.length ? {} : { tomFra: gemt.dokumenter[id]?.tomFra || idag, tegn: tekst.length }) };
       for (const p of m.punkter) {
         const sid = `${k.slug}-${m.dato}-${slug(m.udvalg)}-${p.nr}`;
         // Et referat erstatter dagsordenen for samme punkt, men aldrig omvendt
@@ -315,6 +320,9 @@ async function hentKommune(k) {
     } catch (e) {
       console.warn(`  Sprang over ${id}: ${e.message}`);
       await gemFejl(id, tekst, e.message);
+      // PDF'en blev hentet, men kunne ikke læses: husk mødet som tomt, så det ikke hentes igen ved hver kørsel.
+      // (Fejlede selve hentningen, er tekst tom, og mødet prøves igen næste gang.)
+      if (tekst) gemt.dokumenter[id] = { lastmod, punkter: 0, parser: PARSER, tomFra: gemt.dokumenter[id]?.tomFra || idag, tegn: tekst.length, fejl: e.message.slice(0, 100) };
     }
   }
   // Nogle kommuner bruger et "møde" med en pladsholderdato som beholder (Albertslunds budgetspørgsmål, udgivet 11/9,

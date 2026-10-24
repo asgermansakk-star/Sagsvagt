@@ -2,14 +2,15 @@
 // som lokaludvalg, foreninger og politikere kan sætte ind på deres egen side med en <iframe>.
 // byg.mjs kalder bygBokse(), så boksene bygges sammen med avisen og altid viser de nyeste sager.
 //
-// Boksene hentes fra GitHub Pages (BOKS_URL), ikke fra sagsvagt.dk: Simplys bot-beskyttelse viser en
-// "Checking your browser"-side, der kræver en cookie, og Safari blokerer cookies i en iframe på en anden side.
-// Alle links i boksen går til sagsvagt.dk. Siden boks.html på sagsvagt.dk laver koden, man kopierer.
+// Boksene hentes fra sagsvagt.dk (BOKS_URL). De lå før på GitHub Pages, fordi Simplys bot-beskyttelse viste en
+// "Checking your browser"-side med cookie, som Safari blokerer i en iframe på en anden side. Den side kom ikke længere
+// (tjekket 24/10-2026 med Safari som iframe), og GitHub Pages forsvinder, når repoet bliver privat. Kommer
+// challenge-siden igen, skal Simply undtage /boks/. Siden boks.html på sagsvagt.dk laver koden, man kopierer.
 import { writeFile, mkdir, rm, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { EMNER } from "./beriget.mjs";
 
-const BOKS_URL = (process.env.BOKS_URL || "https://asgermansakk-star.github.io/Sagsvagt/").replace(/\/?$/, "/");
+const BOKS_URL = (process.env.BOKS_URL || "https://sagsvagt.dk/").replace(/\/?$/, "/");
 const MAKS = 8; // så mange sager ligger i hver boks; ?antal= viser færre
 
 export async function bygBokse({ sager, udvalg, lokal, prUdvalg, prEmne }, h) {

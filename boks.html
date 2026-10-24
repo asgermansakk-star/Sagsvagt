@@ -110,12 +110,12 @@
 <script>
 (function () {
   // Boksen viser selv så mange sager, der er plads til i den valgte højde
-  var BOKS = "https://asgermansakk-star.github.io/Sagsvagt/";
+  var BOKS = "https://sagsvagt.dk/";
   var $ = function (s) { return document.querySelector(s); };
   function opdater() {
     var o = $("#bv-hvad").selectedOptions[0], h = $("#bv-hoejde").value, tema = $("#bv-tema").value;
     var q = tema ? "?tema=" + tema : "";
-    // Eksemplet her hentes fra sagsvagt.dk selv; koden peger på kopien uden bot-beskyttelse, så den virker på andre sider
+    // Eksemplet og koden peger begge på sagsvagt.dk
     $("#bv-vis").src = o.value + q; $("#bv-vis").style.height = h + "px";
     $("#bv-kode").value = '<iframe src="' + BOKS + o.value + q + '" title="' + o.dataset.titel + ' – Sagsvagt" style="width:100%;max-width:440px;height:' + h + 'px;border:0" loading="lazy"></iframe>';
     $("#bv-status").textContent = "";
