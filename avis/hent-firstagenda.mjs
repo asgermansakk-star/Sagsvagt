@@ -68,11 +68,14 @@ const renTekst = (t) => t.split("\n").filter((l) => !tabellinje(l)).join("\n").r
 
 export function parsePdf(tekst, kendteUdvalg = new Map()) {
   // Gentofte skriver "Beslutninger: Økonomiudvalget den 19. oktober 2026" og tidligere behandlinger som
-  // "Udvalg: Byplanudvalget Dato: 05-10-2026"; de omskrives til den almindelige form "BESLUTNING I … DEN dd-mm-åååå"
+  // "Udvalg: Byplanudvalget Dato: 05-10-2026"; Morsø, Kerteminde, Nyborg, Nordfyn og Ærø skriver "Aktuel beslutning på
+  // Byrådet 21-10-2026" og tidligere behandlinger som "Beslutning på Direktionen 28-09-2026". Alle omskrives til den
+  // almindelige form "BESLUTNING I … DEN dd-mm-åååå"
   const to = (n) => String(n).padStart(2, "0");
   const t = tekst.replace(/\r/g, "").replace(/\f/g, "\n")
     .replace(new RegExp(`Beslutninger:\\s*(.+?) den (\\d{1,2})\\. (${MDR.join("|")}) (\\d{4})`, "g"), (_, u, d, m, y) => `BESLUTNING I ${u} DEN ${to(d)}-${to(MDR.indexOf(m) + 1)}-${y}`)
-    .replace(/(?:Tidligere beslutninger:\s*)?Udvalg:\s*(.+?)\s+Dato:\s*(\d{2}-\d{2}-\d{4})/g, "BESLUTNING I $1 DEN $2");
+    .replace(/(?:Tidligere beslutninger:\s*)?Udvalg:\s*(.+?)\s+Dato:\s*(\d{2}-\d{2}-\d{4})/g, "BESLUTNING I $1 DEN $2")
+    .replace(/(?<=^|\n)(?:Aktuel b|B)eslutning på ([^\n]+?) (\d{2}-\d{2}-\d{4})(?=[ \t]*\n)/g, "BESLUTNING I $1 DEN $2");
   // Datoen kan mangle en bindestreg ("2210-2026", "17-092026"), så de er valgfrie
   // Lange udvalgsnavne brydes over to linjer ("DAGSORDEN Kultur-, Fritids- &\nFolkesundhedsudvalget d. 26-10-2026")
   const hoved = t.match(/^\s*(DAGSORDEN|REFERAT)\s+([^\n]+?(?:\n[^\n]+?)?)\s+d\.\s*(\d{2})-?(\d{2})-?(\d{4})/m);

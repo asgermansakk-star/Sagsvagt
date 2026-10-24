@@ -204,8 +204,10 @@
   "tjekket": "2026-10-22"
  },
  "kolding": {
-  "system": "ukendt",
-  "tjekket": "2026-10-22"
+  "system": "firstagenda",
+  "base": "https://udvalg.kolding.dk",
+  "udvalg": 76,
+  "tjekket": "2026-10-24"
  },
  "laesoe": {
   "system": "firstagenda",
@@ -250,8 +252,10 @@
   "tjekket": "2026-10-22"
  },
  "morsoe": {
-  "system": "ukendt",
-  "tjekket": "2026-10-22"
+  "system": "firstagenda",
+  "base": "https://dagsordener.mors.dk",
+  "udvalg": 29,
+  "tjekket": "2026-10-24"
  },
  "naestved": {
   "system": "firstagenda",
