@@ -105,6 +105,9 @@ jobs:
             echo "Ingen ændringer at gemme."
           else
             git commit -m "Opdater avisen $(date -u +%Y-%m-%d)"
+            # Nogen kan have pushet til main, mens robotten hentede (kørslen tager timer). Læg robottens commit
+            # ovenpå; ved konflikt i data-filer vinder robottens nyeste hentning.
+            git pull --rebase -X theirs
             git push
           fi
 
