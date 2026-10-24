@@ -1,0 +1,4 @@
+/* Stedkort på sager med et sted (avis/stedkort.mjs). Samme udtryk som .plankort. */
+.stedkort { margin: 22px 0 18px; }
+.stedkort img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
+.stedkort figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }

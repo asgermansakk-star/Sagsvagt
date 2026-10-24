@@ -1,0 +1,59 @@
+/* Stemmegrafik: sagsside (.sg) og listekort (.sg-mini). Bruger variablerne fra assets/avis.css. */
+.sg { margin: 20px 0; padding: 16px; background: var(--kalk-lys); border-radius: var(--r-kort); border: 1px solid var(--rule); }
+.sg p { margin: 0; }
+.sg-udfald { font-size: var(--t3); line-height: 1.3; margin-bottom: 10px !important; }
+.sg-udfald b { font-weight: 700; }
+.sg-ud-for b { color: var(--indigo); }
+.sg-ud-imod b { color: var(--vin); }
+.sg-enig { margin-left: 6px; font: 600 var(--billedtekst)/1 var(--sans); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--rule); border-radius: 99px; padding: 3px 8px; vertical-align: middle; }
+
+/* Søjlen. For = fuld indigo, Imod = vin med skrå streger, Undlod = lys med prikker: betydningen kan læses uden farver */
+.sg-bar { display: flex; height: 22px; border-radius: 6px; overflow: hidden; background: var(--kalk-mork); gap: 2px; }
+.sg-bar > span { min-width: 3px; }
+.sg-for { background: var(--indigo); }
+.sg-imod { background: var(--vin) repeating-linear-gradient(135deg, transparent 0 4px, rgba(255,255,255,.38) 4px 6px); }
+.sg-undlod { background: var(--lyng) radial-gradient(circle, rgba(14,15,20,.45) 1px, transparent 1.4px) 0 0 / 5px 5px; }
+
+.sg-tal { display: flex; flex-wrap: wrap; gap: 4px 16px; list-style: none; margin: 8px 0 0; padding: 0; font-size: var(--fodnote); color: var(--muted); }
+.sg-tal b { color: var(--nat); font-variant-numeric: tabular-nums; }
+.sg-prik { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--indigo); }
+.sg-t-imod .sg-prik { background: var(--vin) repeating-linear-gradient(135deg, transparent 0 2px, rgba(255,255,255,.5) 2px 3px); }
+.sg-t-undlod .sg-prik { background: var(--lyng); }
+
+.sg-grupper { margin-top: 16px; display: grid; gap: 12px; }
+.sg-gh { margin: 0 0 6px; font: 700 var(--billedtekst)/1.2 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.sg-knapper { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.sg-knap { display: inline-flex; align-items: center; justify-content: center; min-width: 32px; height: 32px; padding: 0 8px; border-radius: 8px;
+  background: var(--pf); color: var(--pt); font: 700 var(--fodnote)/1 var(--sans); cursor: default; }
+.sg-knap.sg-person { background: var(--kalk); color: var(--nat); border: 1px solid var(--rule); font-weight: 500; height: auto; min-height: 30px; padding: 5px 10px; line-height: 1.25; }
+.sg-note { margin-top: 12px !important; font-size: var(--billedtekst); color: var(--muted); }
+
+/* Ændringsforslag, mindre */
+.sg-smaa { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.sg-sh { margin-bottom: 10px !important; font: 700 var(--billedtekst)/1.2 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.sg-lille { margin-bottom: 12px; }
+.sg-lh { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; margin-bottom: 5px; font-size: var(--fodnote); }
+.sg-lnavn { font-weight: 600; }
+.sg-lud { color: var(--muted); font-variant-numeric: tabular-nums; }
+.sg-bar-lille { height: 10px; border-radius: 4px; }
+.sg-lknapper { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; }
+.sg-lknapper .sg-gruppe { display: flex; align-items: center; gap: 6px; }
+.sg-lknapper .sg-gh { margin: 0; font-size: 10px; }
+.sg-lknapper .sg-knapper { gap: 3px; }
+.sg-lknapper .sg-knap { min-width: 22px; height: 22px; padding: 0 5px; border-radius: 5px; font-size: 11px; }
+.sg-lknapper .sg-knap.sg-person { height: auto; min-height: 22px; padding: 2px 6px; font-size: 11px; }
+.sg-flere { font-size: var(--billedtekst); color: var(--muted); }
+
+/* Kompakt udgave til listekort */
+.sg-mini { display: inline-flex; align-items: center; gap: 8px; font-size: var(--billedtekst); line-height: 1.2; white-space: nowrap; }
+.sg-bar-mini { width: 64px; height: 8px; border-radius: 3px; gap: 1px; flex: none; }
+.sg-mini-tal { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--nat); }
+
+@media (max-width: 420px) {
+  .sg { padding: 14px 12px; }
+  .sg-knap { min-width: 30px; height: 30px; }
+}
+@media (prefers-reduced-motion: no-preference) { .sg-bar > span { transition: flex-grow .3s var(--ease); } }
+
+.sg-for-hvad { display: block; margin-bottom: 2px; font: 600 var(--billedtekst)/1.2 var(--sans); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.sg-ant { margin-left: 3px; font-size: 9px; font-weight: 600; opacity: .85; vertical-align: super; line-height: 0; }

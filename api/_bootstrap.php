@@ -99,6 +99,10 @@ function db(): PDO {
     $pdo->exec("CREATE TABLE IF NOT EXISTS feedback (
         id $id, abonnent_id INT NULL, email VARCHAR(254) NOT NULL DEFAULT '', vurdering VARCHAR(20) NOT NULL DEFAULT '',
         tekst $tekst NOT NULL, side VARCHAR(100) NOT NULL DEFAULT '', kontakt TINYINT NOT NULL DEFAULT 0, oprettet VARCHAR(25) NOT NULL)");
+    // Læserfotos (api/foto.php): selve billederne ligger i api/_fotos/, status ny/godkendt/afvist
+    $pdo->exec("CREATE TABLE IF NOT EXISTS fotos (
+        id $id, navn VARCHAR(80) NOT NULL, email VARCHAR(254) NOT NULL, sag VARCHAR(160) NOT NULL DEFAULT '', sted VARCHAR(120) NOT NULL DEFAULT '',
+        tekst $tekst NULL, fil VARCHAR(80) NOT NULL, status VARCHAR(12) NOT NULL DEFAULT 'ny', oprettet VARCHAR(25) NOT NULL)");
     return $pdo;
 }
 

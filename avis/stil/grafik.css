@@ -1,0 +1,40 @@
+/* Høringsnedtælling, læserfotos, luftfoto, gadefoto og fotoformularen (avis/grafik.mjs) */
+.frist-maerke { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; font-weight: 600; font-size: .75rem; line-height: 1.6;
+  background: var(--lyng); color: var(--blaek); white-space: nowrap; vertical-align: 1px; }
+.frist-maerke.snart { background: var(--rubin); color: var(--kalk-lys); }
+
+.laeserfoto, .luftfoto, .gadefoto { margin: 22px 0 18px; }
+.laeserfoto img, .luftfoto img, .gadefoto img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
+.laeserfoto figcaption, .luftfoto figcaption, .gadefoto figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
+.send-foto { margin: -8px 0 18px; font-size: var(--fodnote); }
+.send-foto a { color: var(--vin); font-weight: 600; }
+
+.foto-side { padding: 28px 0 48px; }
+.foto-form { display: grid; gap: 14px; margin: 22px 0; padding: 20px 22px; background: var(--kalk-lys); border-radius: var(--r-kort); }
+.foto-form .felt { display: grid; gap: 6px; }
+.foto-form label { font-weight: 600; font-size: var(--fodnote); }
+.foto-form input[type=text], .foto-form input[type=email], .foto-form textarea { font: inherit; padding: 10px 12px; border: 1px solid var(--rule); border-radius: var(--r-felt); background: #fff; }
+.foto-form input[type=file] { font: inherit; }
+.foto-form .tjek { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; line-height: 1.4; }
+.foto-form .tjek input { margin-top: 3px; width: 18px; height: 18px; flex: none; }
+.wrap.smal { max-width: 680px; }
+
+/* Billeder på forsiden og i lister (avis/byg.mjs) */
+.lead-billede { display: block; margin: 0 0 14px; }
+.lead-billede img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; }
+.med-billede { display: flex; gap: 14px; align-items: flex-start; }
+.med-billede > div { flex: 1; min-width: 0; }
+.kort-billede { flex: none; order: 2; margin-top: 4px; }
+.kort-billede img { display: block; width: 96px; height: 64px; object-fit: cover; border-radius: 10px; }
+@media (min-width: 640px) { .kort-billede img { width: 132px; height: 88px; } }
+.emne-figur { margin: 22px 0 18px; }
+
+/* Kort over sagerne (kort.html) og linket til det på forsiden */
+.kort-h { margin-top: 24px; }
+.sagskort { height: 70vh; min-height: 420px; border-radius: 14px; margin: 18px 0 10px; background: var(--kalk-mork); }
+.sagskort .leaflet-popup-content { font: 500 14px/1.4 var(--sans, system-ui); }
+.sagskort .leaflet-popup-content a { color: var(--nat); font-weight: 700; }
+.kort-pop-sted { margin: 0 0 4px !important; color: var(--muted); font-size: 12px; }
+.kort-link { display: flex; gap: 12px; align-items: center; padding: 12px; margin: 0 0 22px; border-radius: var(--r-kort); background: var(--kalk-lys); color: var(--nat); text-decoration: none; font-size: var(--fodnote); line-height: 1.35; }
+.kort-link img { width: 88px; height: 50px; object-fit: cover; border-radius: 8px; flex: none; }
+.kort-link b { font-size: 1rem; }

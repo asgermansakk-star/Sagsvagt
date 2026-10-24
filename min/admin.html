@@ -111,6 +111,11 @@
       <summary id="fb-titel">Feedback fra Min avis</summary>
       <div id="fb-liste"></div>
     </details>
+    <details class="import" id="fotos-boks">
+      <summary id="foto-titel">Læserfotos</summary>
+      <p class="lille">Godkendte fotos vises først på siden, når de er lagt i <code>assets/laeserfotos/&lt;sag-id&gt;.jpg</code> med fotograf og tekst i <code>assets/laeserfotos/index.json</code>. Tryk "Hent billedet" for at gemme det.</p>
+      <div id="foto-liste"></div>
+    </details>
     <details class="import">
       <summary>Læg tilmeldte ind fra mails</summary>
       <p class="lille">Til dem, der skrev sig op, før tilmeldingerne kom i databasen. Kopiér hele tabellen fra en eller flere tilmeldingsmails (kilde, email, kommuner, emner, rolle) og indsæt den her, så kommer alle oplysningerne med. Du kan også bare indsætte e-mailadresser. Findes en adresse allerede, udfyldes kun de felter, der mangler.</p>
@@ -167,6 +172,7 @@
       fyldOmraader();
       vis();
       hentFeedback();
+      hentFotos();
       hentPush();
     });
   }
@@ -197,6 +203,32 @@
       }).join("") : '<p class="lille">Ingen feedback endnu.</p>';
     }).catch(function () {});
   }
+  var FOTOSTATUS = { ny: "Ny", godkendt: "Godkendt", afvist: "Afvist" };
+  function hentFotos() {
+    api("admin/fotos.php").then(function (j) {
+      var l = j.fotos || [];
+      $("#foto-titel").textContent = "Læserfotos (" + l.filter(function (f) { return f.status === "ny"; }).length + " nye af " + l.length + ")";
+      $("#foto-liste").innerHTML = l.length ? l.map(function (f) {
+        return '<div class="fb" data-foto="' + f.id + '"><span class="lille">' + dato(f.oprettet) + " · " + esc(f.navn) + " &lt;" + esc(f.email) + "&gt; · <b>" + esc(FOTOSTATUS[f.status] || f.status) + "</b>"
+          + (f.sag ? ' · <a href="../sag/' + esc(f.sag) + '.html" target="_blank" rel="noopener">' + esc(f.sag) + "</a>" : "") + (f.sted ? " · " + esc(f.sted) : "") + "</span>"
+          + (f.tekst ? "<p>" + esc(f.tekst) + "</p>" : "")
+          + '<p><button type="button" class="btn btn-lille btn-sekundaer" data-foto-vis="' + f.id + '">Hent billedet</button> '
+          + '<button type="button" class="btn btn-lille" data-foto-status="godkendt" data-id="' + f.id + '">Godkend</button> '
+          + '<button type="button" class="btn btn-lille btn-sekundaer" data-foto-status="afvist" data-id="' + f.id + '">Afvis</button></p><div class="foto-vis"></div></div>';
+      }).join("") : '<p class="lille">Ingen læserfotos endnu.</p>';
+    }).catch(function () {});
+  }
+  document.addEventListener("click", function (e) {
+    var v = e.target.closest("[data-foto-vis]");
+    if (v) {
+      api("admin/fotos.php", { handling: "vis", id: +v.dataset.fotoVis }).then(function (j) {
+        v.closest(".fb").querySelector(".foto-vis").innerHTML = '<a href="' + j.data + '" download="' + esc(j.fil) + '"><img src="' + j.data + '" alt="Læserfoto" style="max-width:100%;border-radius:10px;margin-top:8px"></a>';
+      }).catch(function (e) { besked(e.message, "fejl"); });
+      return;
+    }
+    var s = e.target.closest("[data-foto-status]");
+    if (s) api("admin/fotos.php", { handling: "status", id: +s.dataset.id, status: s.dataset.fotoStatus }).then(hentFotos).catch(function (e) { besked(e.message, "fejl"); });
+  });
   function vis() {
     var kunNye = $("#kun-nye").checked;
     $("#raekker").innerHTML = data.filter(function (a) { return iOmraade(a) && (!kunNye || kanInviteres(a)); }).map(function (a) {

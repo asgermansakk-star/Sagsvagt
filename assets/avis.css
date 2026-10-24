@@ -497,3 +497,9 @@ footer.foot a:hover { text-decoration: underline; }
 .fi-tom { margin: 0 0 10px; font-size: var(--sekundaer); color: var(--muted); }
 .for-imod .kf-mere { margin-top: 14px; }
 @media (max-width: 640px) { .fi-grid { grid-template-columns: 1fr; } }
+
+/* Plankort på sager om lokalplaner (avis/plankort.mjs) */
+.plankort { margin: 22px 0 18px; }
+.plankort a { display: block; }
+.plankort img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
+.plankort figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
