@@ -15,6 +15,8 @@ const MM_C = [
 const MM_SANS = "Montserrat, 'Segoe UI', Arial, sans-serif";
 const MM_SITE = 'https://sagsvagt.dk/';
 const MM_REDAKTION = 'mansa@sagsvagt.dk';
+// Mailens billeder (toppen i Mødet-gradienten, sektionsikoner og symbolet i bunden). Mailen skal give mening uden dem.
+const MM_MAIL = MM_SITE . 'assets/mail/';
 const MM_VIS = 4;
 
 // ---------- Små hjælpere (som i JS) ----------
@@ -128,7 +130,7 @@ function mm_mail_top(string $emne, string $preheader, int $uge, string $idag, st
       . '<div style="display:none;max-height:0;overflow:hidden;opacity:0;">' . mm_esc($preheader) . "</div>\n"
       . "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"{$C['kalk']}\" style=\"background:{$C['kalk']};\"><tr><td align=\"center\" style=\"padding:24px 12px 40px;\">\n"
       . "<table role=\"presentation\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;max-width:600px;background:{$C['kalkLys']};border-radius:10px;overflow:hidden;\">\n"
-      . "<tr><td bgcolor=\"{$C['nat']}\" style=\"background:{$C['nat']};background-image:linear-gradient(115deg,{$C['indigo']} 0%,{$C['blaek']} 30%,{$C['nat']} 55%,{$C['bordeaux']} 80%,{$C['vin']} 100%);padding:22px 28px;\">\n"
+      . "<tr><td bgcolor=\"{$C['nat']}\" background=\"" . MM_MAIL . "top.jpg\" style=\"background-color:{$C['nat']};background-image:url(" . MM_MAIL . "top.jpg);background-size:cover;background-position:center;padding:22px 28px;\">\n"
       . "  <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr>\n"
       . '    <td style="line-height:0;"><a href="' . MM_SITE . '" style="text-decoration:none;"><img src="' . mm_esc($logo) . "\" width=\"150\" height=\"35\" alt=\"Sagsvagt\" style=\"display:block;border:0;color:{$C['kalk']};font:700 22px {$S};\"></a></td>\n"
       . "    <td align=\"right\" style=\"font:600 12px/1.5 {$S};color:{$C['kalk']};\">Uge {$uge}<br><span style=\"opacity:.75;font-weight:500;\">" . mm_esc(mm_stor(mm_dato($idag, true))) . "</span></td>\n"
@@ -140,6 +142,7 @@ function mm_mail_bund(string $modtager, string $afmeld = ''): string {
     $C = MM_C; $S = MM_SANS;
     $link = fn($href, $tekst, $pad = '12px 18px 12px 0') => '<a href="' . $href . "\" style=\"display:inline-block;padding:{$pad};line-height:20px;font-weight:600;color:{$C['indigo']};\">{$tekst}</a>";
     return "<tr><td style=\"padding:24px 28px 26px;border-top:2px solid {$C['nat']};font:12px/1.6 {$S};color:{$C['muted']};\">\n"
+      . '  <img src="' . MM_MAIL . "symbol.png\" width=\"23\" height=\"28\" alt=\"\" style=\"display:block;border:0;margin:0 0 14px;\">\n"
       . "  Sagsvagt er partineutral og bygger på kommunens egne dagsordener og referater. Læs altid den originale sag, før du handler på den.<br><br>\n"
       . '  Du får denne mail, fordi du har skrevet dig op til Sagsvagt' . ($modtager !== '' ? ' med ' . mm_esc($modtager) : '') . ".\n"
       . "  <!-- Linkene på deres egen linje med luft, så de er nemme at ramme med en finger -->\n"
@@ -204,10 +207,12 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
           . '  <div>' . implode('', array_map($tag, $s['mE'] ?? [])) . implode('', array_map($ordTag, $s['mO'] ?? [])) . "</div>\n"
           . '</td></tr>';
     };
-    $sektion = function (string $titel, string $under, array $liste, int $flere, bool $fuld = true) use ($C, $S, $sag, $kortSag): string {
+    // Hver sektion har sin farve og sit ikon, som i talrækken: vin = besluttet, indigo = på vej, nat = bydelen
+    $sektion = function (string $titel, string $under, array $liste, int $flere, bool $fuld = true, string $ikon = '', string $farve = MM_C['nat']) use ($C, $S, $sag, $kortSag): string {
         if (!$liste) return '';
-        $h = "<tr><td style=\"padding:26px 28px 6px;\">\n"
-          . "  <h2 style=\"margin:0;font:700 12px/1.4 {$S};letter-spacing:.08em;text-transform:uppercase;color:{$C['nat']};\">" . mm_esc($titel) . "</h2>\n"
+        $h = "<tr><td style=\"padding:22px 28px 8px;border-top:3px solid {$farve};\">\n"
+          . '  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>' . ($ikon !== '' ? '<td valign="middle" style="padding:0 8px 0 0;line-height:0;"><img src="' . MM_MAIL . $ikon . '.png" width="20" height="20" alt="" style="display:block;border:0;"></td>' : '')
+          . "<td valign=\"middle\"><h2 style=\"margin:0;font:700 12px/1.4 {$S};letter-spacing:.08em;text-transform:uppercase;color:{$farve};\">" . mm_esc($titel) . "</h2></td></tr></table>\n"
           . '  ' . ($under !== '' ? "<p style=\"margin:4px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\">" . mm_esc($under) . '</p>' : '') . "\n"
           . '</td></tr>';
         foreach ($liste as $i => $s) $h .= ($i === 0 && $fuld) ? $sag($s) : $kortSag($s);
@@ -218,16 +223,26 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
     $dineEmner = implode(', ', array_merge(array_map(fn($id) => $data['emner'][$id]['navn'], $v['emner']), $v['ord']));
     $ingen = !$v['besluttet'] && !$v['kommer'] && !$v['bydel'];
     $bydelNavn = mm_hvor((string)($profil['bydel'] ?? ''));
+    // Ugens tal er det vigtigste i mailen: store tal i sektionernes farver, med luft imellem
+    $talCelle = fn(int $n, string $en, string $fl, string $under, string $farve, int $b) => "<td width=\"{$b}%\" valign=\"top\" style=\"padding:10px 0 0;border-top:3px solid {$farve};\">\n"
+      . "    <p style=\"margin:0;font:700 34px/1.1 {$S};color:" . ($n ? $farve : $C['muted']) . ";\">{$n}</p>\n"
+      . "    <p style=\"margin:4px 0 0;font:700 13px/1.35 {$S};color:{$C['nat']};\">" . ($n === 1 ? $en : $fl) . "</p>\n"
+      . "    <p style=\"margin:2px 0 0;font:12px/1.4 {$S};color:{$C['muted']};\">" . mm_esc($under) . "</p>\n"
+      . '  </td>';
+    $b = !empty($profil['bydel']) ? 30 : 47;
+    $celler = [$talCelle($nB, 'beslutning', 'beslutninger', $v['dage'] === 7 ? 'i ugen der gik' : 'de seneste to uger', $C['vin'], $b), $talCelle($nK, 'sag på vej', 'sager på vej', 'de næste to uger', $C['indigo'], $b)];
+    if (!empty($profil['bydel'])) $celler[] = $talCelle(count($v['bydel']), 'sag i bydelen', 'sager i bydelen', $bydelNavn, $C['nat'], $b);
+    $talRaekke = "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:20px 0 0;\"><tr>\n"
+      . '  ' . implode('<td width="4%" style="font-size:0;line-height:0;">&nbsp;</td>', $celler) . "\n"
+      . '</tr></table>';
     $html = mm_mail_top($emne, $preheader, $uge, $idag, $logo) . "<tr><td style=\"padding:28px 28px 4px;\">\n"
       . "  <h1 style=\"margin:0;font:600 26px/1.15 {$S};color:{$C['nat']};\">God morgen" . ($navn !== '' ? ', ' . mm_esc($navn) : '') . ".</h1>\n"
-      . "  <p style=\"margin:10px 0 0;font:16px/1.55 {$S};color:{$C['brod']};\">" . ($ingen
-        ? 'Der er ingen nye sager om dine emner i denne uge. Vi holder øje og skriver, når der sker noget.'
-        : ($v['dage'] === 7 ? 'I ugen der gik' : 'De seneste to uger') . " blev der truffet <b style=\"color:{$C['nat']};\">" . mm_lower($tal($nB, 'beslutning', 'beslutninger')) . "</b> om det, du følger, og <b style=\"color:{$C['nat']};\">" . mm_lower($tal($nK, 'sag', 'sager')) . '</b> er på dagsordenen de næste to uger.') . "</p>\n"
-      . '  ' . ($dineEmner !== '' ? "<p style=\"margin:12px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\">Du følger: " . mm_esc($dineEmner) . (!empty($profil['bydel']) ? ' · ' . mm_esc($bydelNavn) : '') . '</p>' : '') . "\n"
+      . '  ' . ($ingen ? "<p style=\"margin:10px 0 0;font:16px/1.55 {$S};color:{$C['brod']};\">Der er ingen nye sager om dine emner i denne uge. Vi holder øje og skriver, når der sker noget.</p>" : $talRaekke) . "\n"
+      . '  ' . ($dineEmner !== '' ? "<p style=\"margin:16px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\">Du følger: " . mm_esc($dineEmner) . (!empty($profil['bydel']) ? ' · ' . mm_esc($bydelNavn) : '') . '</p>' : '') . "\n"
       . "</td></tr>\n"
-      . $sektion($v['dage'] === 7 ? 'Besluttet i ugen der gik' : 'Besluttet de seneste to uger', '', $v['besluttet'], $v['flereBesluttet']) . "\n"
-      . $sektion('Det skal de tage stilling til', 'De næste to uger.', $v['kommer'], $v['flereKommer']) . "\n"
-      . $sektion('Fra ' . $bydelNavn, 'Det sker i din bydel.', $v['bydel'], 0, false) . "\n"
+      . $sektion($v['dage'] === 7 ? 'Besluttet i ugen der gik' : 'Besluttet de seneste to uger', '', $v['besluttet'], $v['flereBesluttet'], true, 'besluttet', $C['vin']) . "\n"
+      . $sektion('Det skal de tage stilling til', 'De næste to uger.', $v['kommer'], $v['flereKommer'], true, 'paa-vej', $C['indigo']) . "\n"
+      . $sektion('Fra ' . $bydelNavn, 'Det sker i din bydel.', $v['bydel'], 0, false, 'bydel', $C['nat']) . "\n"
       . mm_mail_bund($modtager, $afmeld);
 
     // Ren tekst til mailprogrammer, der ikke viser HTML
@@ -257,19 +272,26 @@ function mm_lav_ventemail(array $kommuner, array $aabne, string $idag, string $n
     $preheader = $hvem !== '' ? "Vi giver besked, så snart {$hvem} er åben." : 'Svar på mailen med din kommune, så kommer den i køen.';
     $delLink = MM_SITE . 'vagt.html?fra=mandagsmail' . (isset($kommuner[0]) ? '&kommune=' . rawurlencode($kommuner[0]) : '') . '#tilmeld';
     $p = fn(string $t) => "<p style=\"margin:12px 0 0;font:16px/1.55 {$S};color:{$C['brod']};\">{$t}</p>";
+    // Hvor langt vi er: et stort tal og en bjælke i stedet for en liste, der vokser med hver ny kommune
+    $IALT = 98; $n = count($aabne); $pct = (int)round(100 * $n / $IALT);
+    $fremdrift = $aabne ? "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:22px 0 0;\">\n"
+      . "  <tr><td style=\"padding:0 0 8px;font:700 13px/1.4 {$S};color:{$C['nat']};\"><span style=\"font:700 34px/1.1 {$S};color:{$C['vin']};\">{$n}</span> af {$IALT} kommuner er åbne</td></tr>\n"
+      . "  <tr><td style=\"font-size:0;line-height:0;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"border-radius:5px;overflow:hidden;\"><tr><td width=\"{$pct}%\" height=\"10\" bgcolor=\"{$C['vin']}\" style=\"background:{$C['vin']};font-size:0;line-height:0;\">&nbsp;</td><td height=\"10\" bgcolor=\"{$C['rule']}\" style=\"background:{$C['rule']};font-size:0;line-height:0;\">&nbsp;</td></tr></table></td></tr>\n"
+      . "  <tr><td style=\"padding:8px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\"><a href=\"" . MM_SITE . "kommune/\" style=\"color:{$C['indigo']};font-weight:600;\">Se de åbne kommuner</a></td></tr>\n"
+      . '</table>' : '';
     $html = mm_mail_top($emne, $preheader, $uge, $idag, $logo) . "<tr><td style=\"padding:28px 28px 26px;\">\n"
       . "  <h1 style=\"margin:0;font:600 26px/1.15 {$S};color:{$C['nat']};\">God morgen" . ($navn !== '' ? ', ' . mm_esc($navn) : '') . ".</h1>\n"
       . '  ' . ($hvem !== ''
         ? $p("Sagsvagt er endnu ikke åben i <b style=\"color:{$C['nat']};\">" . mm_esc($hvem) . '</b>. Vi åbner kommune for kommune, der hvor flest skriver sig op, og du får besked, så snart ' . mm_esc($hvem) . ' er med.')
         : $p('Du har ikke skrevet, hvilken kommune du vil følge. Svar på denne mail med navnet på din kommune, så sætter vi den i køen.')) . "\n"
-      . '  ' . ($aabne ? $p('Lige nu følger vi byrådene i ' . mm_esc($liste($aabne)) . '.') : '') . "\n"
+      . "  {$fremdrift}\n"
       . '  ' . ($hvem !== '' ? '<p style="margin:20px 0 0;"><a href="' . mm_esc($delLink) . "\" style=\"display:inline-block;padding:12px 20px;border-radius:8px;background:{$C['nat']};color:{$C['kalk']};font:700 15px/1.2 {$S};text-decoration:none;\">Del Sagsvagt med en nabo</a></p>\n"
         . "  <p style=\"margin:10px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\">Jo flere fra " . mm_esc($hvem) . ', der skriver sig op, jo før åbner vi.</p>' : '') . "\n"
       . '</td></tr>' . mm_mail_bund($modtager, $afmeld);
     $tekst = "Sagsvagt, uge {$uge}\n\nGod morgen" . ($navn !== '' ? ", {$navn}" : '') . ".\n\n"
       . ($hvem !== '' ? "Sagsvagt er endnu ikke åben i {$hvem}. Vi åbner kommune for kommune, der hvor flest skriver sig op, og du får besked, så snart {$hvem} er med.\n\nDel Sagsvagt med en nabo: {$delLink}"
         : 'Du har ikke skrevet, hvilken kommune du vil følge. Svar på denne mail med navnet på din kommune, så sætter vi den i køen.')
-      . ($aabne ? "\n\nLige nu følger vi byrådene i " . $liste($aabne) . '.' : '')
+      . ($aabne ? "\n\nLige nu følger vi byrådene i {$n} af {$IALT} kommuner: " . MM_SITE . 'kommune/' : '')
       . mm_tekst_bund($afmeld, false);
     return ['emne' => $emne, 'preheader' => $preheader, 'html' => $html, 'tekst' => $tekst, 'antal' => ['besluttet' => 0, 'kommer' => 0, 'bydel' => 0], 'vente' => true];
 }
