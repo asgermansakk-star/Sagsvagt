@@ -122,6 +122,10 @@ jobs:
             ./ _deploy/
           echo "Filer til upload: $(find _deploy -type f | wc -l)"
 
+      # Uploaden er delt i bidder med hver sin tilstandsfil. Hver bid gemmer, hvad der ligger på serveren, når den er
+      # færdig, så en kørsel, der rammer tidsgrænsen, ikke starter forfra næste gang. De ~21.500 sagssider og de lige
+      # så mange sags-json'er tager ellers over 5 timer, når alle sider ændres på én gang (nyt layout, 25/10-2026).
+      # Bidderne er udeladt fra hovedtrinnet (der heller ikke sletter dem på serveren, fordi exclude også gælder dér).
       - name: Upload til Simply (FTPS)
         if: env.FTP_SERVER != ''
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
@@ -133,7 +137,142 @@ jobs:
           port: 21
           local-dir: ./_deploy/
           server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}
+          state-name: .ftp-deploy-sync-state.json
           timeout: 120000
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            sag/**
+            assets/sager/**
+
+      - name: Upload sagssider a-g
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/sag/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}sag/
+          state-name: .ftp-state-a-g.json
+          timeout: 120000
+          exclude: |
+            [!a-g]*
+
+      - name: Upload sagssider h-k
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/sag/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}sag/
+          state-name: .ftp-state-h-k.json
+          timeout: 120000
+          exclude: |
+            [!h-k]*
+
+      - name: Upload sagssider l-r
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/sag/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}sag/
+          state-name: .ftp-state-l-r.json
+          timeout: 120000
+          exclude: |
+            [!l-r]*
+
+      - name: Upload sagssider s-z
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/sag/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}sag/
+          state-name: .ftp-state-s-z.json
+          timeout: 120000
+          exclude: |
+            [!s-z]*
+
+      - name: Upload sags-json a-g
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/assets/sager/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}assets/sager/
+          state-name: .ftp-state-a-g.json
+          timeout: 120000
+          exclude: |
+            [!a-g]*
+
+      - name: Upload sags-json h-k
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/assets/sager/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}assets/sager/
+          state-name: .ftp-state-h-k.json
+          timeout: 120000
+          exclude: |
+            [!h-k]*
+
+      - name: Upload sags-json l-r
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/assets/sager/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}assets/sager/
+          state-name: .ftp-state-l-r.json
+          timeout: 120000
+          exclude: |
+            [!l-r]*
+
+      - name: Upload sags-json s-z
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/assets/sager/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}assets/sager/
+          state-name: .ftp-state-s-z.json
+          timeout: 120000
+          exclude: |
+            [!s-z]*
 
       - name: Mangler FTP-oplysninger
         if: env.FTP_SERVER == ''
