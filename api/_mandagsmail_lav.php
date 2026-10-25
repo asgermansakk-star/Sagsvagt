@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 const MM_C = [
     'nat' => '#0E0F14', 'kalk' => '#E6DFD3', 'kalkLys' => '#EEE8DE', 'muted' => '#56535A', 'rule' => '#CFC6B8', 'brod' => '#3E3B40',
-    'vin' => '#8A2430', 'bordeaux' => '#3E0E14', 'rosen' => '#DCA9A5', 'indigo' => '#28377A', 'blaek' => '#0C1430', 'lyng' => '#B7BBD8', 'sten' => '#8D8A86',
+    'vin' => '#8A2430', 'bordeaux' => '#3E0E14', 'rosen' => '#DCA9A5', 'indigo' => '#28377A', 'blaek' => '#0C1430', 'lyng' => '#B7BBD8', 'sten' => '#8D8A86', 'rubin' => '#B04A50',
 ];
 const MM_SANS = "Montserrat, 'Segoe UI', Arial, sans-serif";
 const MM_SITE = 'https://sagsvagt.dk/';
@@ -122,26 +122,28 @@ function mm_vaelg_sager(array $data, array $profil, string $idag): array {
 }
 
 // ---------- Top og bund ----------
-function mm_mail_top(string $emne, string $preheader, int $uge, string $idag, string $logo): string {
+// Toppen: et natkort over modtagerens (første) kommune fra assets/mail/natkort/, ellers Mødet-gradienten. Nat er reserven.
+function mm_mail_top(string $emne, string $preheader, int $uge, string $idag, string $logo, string $kommune = ''): string {
     $C = MM_C; $S = MM_SANS;
+    $bg = MM_MAIL . ($kommune !== '' ? 'natkort/' . $kommune . '.jpg' : 'top.jpg');
     return "<!doctype html>\n"
       . '<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light"><meta name="x-apple-disable-message-reformatting"><meta name="format-detection" content="telephone=no, date=no, address=no"><title>' . mm_esc($emne) . "</title></head>\n"
       . "<body style=\"margin:0;padding:0;background:{$C['kalk']};\">\n"
       . '<div style="display:none;max-height:0;overflow:hidden;opacity:0;">' . mm_esc($preheader) . "</div>\n"
       . "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"{$C['kalk']}\" style=\"background:{$C['kalk']};\"><tr><td align=\"center\" style=\"padding:24px 12px 40px;\">\n"
-      . "<table role=\"presentation\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;max-width:600px;background:{$C['kalkLys']};border-radius:10px;overflow:hidden;\">\n"
-      . "<tr><td bgcolor=\"{$C['nat']}\" background=\"" . MM_MAIL . "top.jpg\" style=\"background-color:{$C['nat']};background-image:url(" . MM_MAIL . "top.jpg);background-size:cover;background-position:center;padding:22px 28px;\">\n"
-      . "  <table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tr>\n"
-      . '    <td style="line-height:0;"><a href="' . MM_SITE . '" style="text-decoration:none;"><img src="' . mm_esc($logo) . "\" width=\"150\" height=\"35\" alt=\"Sagsvagt\" style=\"display:block;border:0;color:{$C['kalk']};font:700 22px {$S};\"></a></td>\n"
-      . "    <td align=\"right\" style=\"font:600 12px/1.5 {$S};color:{$C['kalk']};\">Uge {$uge}<br><span style=\"opacity:.75;font-weight:500;\">" . mm_esc(mm_stor(mm_dato($idag, true))) . "</span></td>\n"
-      . "  </tr></table>\n"
+      . "<table role=\"presentation\" width=\"600\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:100%;max-width:600px;background:{$C['kalk']};border-radius:10px;overflow:hidden;\">\n"
+      . "<tr><td bgcolor=\"{$C['nat']}\" background=\"{$bg}\" style=\"background-color:{$C['nat']};background-image:url({$bg});background-size:cover;background-position:center;padding:32px 24px 30px;\">\n"
+      . '  <a href="' . MM_SITE . '" style="text-decoration:none;"><img src="' . mm_esc($logo) . "\" width=\"120\" height=\"28\" alt=\"Sagsvagt\" style=\"display:block;border:0;color:{$C['kalk']};font:700 20px {$S};\"></a>\n"
+      . "  <p style=\"margin:36px 0 0;font:700 28px/1.05 {$S};letter-spacing:.04em;text-transform:uppercase;color:{$C['kalk']};\">Mandagsmailen</p>\n"
+      . "  <table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:14px 0 12px;\"><tr><td width=\"48\" height=\"3\" bgcolor=\"{$C['rubin']}\" style=\"background:{$C['rubin']};font-size:0;line-height:0;\">&nbsp;</td></tr></table>\n"
+      . "  <p style=\"margin:0;font:500 15px/1.45 {$S};color:{$C['lyng']};\">Uge {$uge}<br>" . mm_esc(mm_stor(mm_dato($idag, true))) . "</p>\n"
       . "</td></tr>\n";
 }
 // $afmeld: personligt link til afmelding (api/afmeld.php). Uden link (fx forhåndsvisning) står redaktionens mail.
 function mm_mail_bund(string $modtager, string $afmeld = ''): string {
     $C = MM_C; $S = MM_SANS;
     $link = fn($href, $tekst, $pad = '12px 18px 12px 0') => '<a href="' . $href . "\" style=\"display:inline-block;padding:{$pad};line-height:20px;font-weight:600;color:{$C['indigo']};\">{$tekst}</a>";
-    return "<tr><td style=\"padding:24px 28px 26px;border-top:2px solid {$C['nat']};font:12px/1.6 {$S};color:{$C['muted']};\">\n"
+    return "<tr><td style=\"padding:34px 28px 28px;font:12px/1.6 {$S};color:{$C['muted']};\">\n"
       . '  <img src="' . MM_MAIL . "symbol.png\" width=\"23\" height=\"28\" alt=\"\" style=\"display:block;border:0;margin:0 0 14px;\">\n"
       . "  Sagsvagt er partineutral og bygger på kommunens egne dagsordener og referater. Læs altid den originale sag, før du handler på den.<br><br>\n"
       . '  Du får denne mail, fordi du har skrevet dig op til Sagsvagt' . ($modtager !== '' ? ' med ' . mm_esc($modtager) : '') . ".\n"
@@ -186,7 +188,7 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
         if ($s['st'] !== 'besluttet' || !$ialt) return '';
         $dele = array_values(array_filter([[$t['for'], $C['nat']], [$t['imod'], $C['sten']], [$t['undlod'] ?? 0, $C['rule']]], fn($d) => $d[0] > 0));
         return '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:10px 0 0;border-radius:5px;overflow:hidden;"><tr>'
-          . implode('<td width="2" style="font-size:0;line-height:0;">&nbsp;</td>', array_map(fn($d) => '<td width="' . (int)round(100 * $d[0] / $ialt) . "%\" height=\"8\" bgcolor=\"{$d[1]}\" style=\"background:{$d[1]};font-size:0;line-height:0;\">&nbsp;</td>", $dele)) . "</tr></table>\n"
+          . implode('<td width="2" style="font-size:0;line-height:0;">&nbsp;</td>', array_map(fn($d) => '<td width="' . (int)round(100 * $d[0] / $ialt) . "%\" height=\"4\" bgcolor=\"{$d[1]}\" style=\"background:{$d[1]};font-size:0;line-height:0;\">&nbsp;</td>", $dele)) . "</tr></table>\n"
           . "  <p style=\"margin:6px 0 0;font:12px/1.4 {$S};color:{$C['muted']};\"><b style=\"color:{$C['nat']};\">{$t['for']}</b> for · <b style=\"color:{$C['nat']};\">{$t['imod']}</b> imod" . (!empty($t['undlod']) ? " · <b style=\"color:{$C['nat']};\">{$t['undlod']}</b> undlod" : '') . '</p>';
     };
 
@@ -195,11 +197,11 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
             : ($s['st'] === 'kommer' ? "<span style=\"color:{$C['indigo']};font-weight:700;\">" . mm_esc(mm_stor(mm_dato($s['dato'], true))) . '</span>'
             : '<span style="font-weight:700;">Behandlet ' . mm_kort($s['dato']) . '</span>');
         $ud = $s['ud'] ?? ''; $kb = $s['kb'] ?? '';
-        return "<tr><td style=\"padding:14px 28px 15px;border-top:1px solid {$C['rule']};\">\n"
+        return "<tr><td style=\"padding:0 22px 10px;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background:{$C['kalkLys']};border-radius:10px;\"><tr><td style=\"padding:16px 20px 17px;\">\n"
           . "  <p style=\"margin:0 0 4px;font:600 12px/1.45 {$S};color:{$C['muted']};\">{$status} · " . mm_esc($hvorSag($s)) . "</p>\n"
           . '  <a href="' . mm_esc($linkTil($s)) . "\" style=\"font:600 16px/1.35 {$S};color:{$C['nat']};text-decoration:none;\">" . mm_esc($s['t']) . "</a>\n"
           . '  ' . ($s['st'] === 'besluttet' && ($ud || $kb) ? "<p style=\"margin:5px 0 0;font:14px/1.5 {$S};color:{$C['brod']};\">" . mm_esc(mm_klip($ud ?: $kb, 140)) . ($ud ? $stemmer($s) : '') . '</p>' : '') . $afst($s) . "\n"
-          . '</td></tr>';
+          . '</td></tr></table></td></tr>';
     };
     $sag = function (array $s) use ($C, $S, $linkTil, $hvorSag, $stemmer, $tag, $ordTag, $afst): string {
         $status = $s['st'] === 'besluttet' ? "<span style=\"color:{$C['vin']};font-weight:700;\">Besluttet " . mm_kort($s['dato']) . '</span>'
@@ -208,24 +210,23 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
         $ud = $s['ud'] ?? ''; $kb = $s['kb'] ?? '';
         $besl = $s['st'] === 'besluttet' && ($ud || $kb)
             ? "<p style=\"margin:14px 0 0;padding:8px 0 0;border-top:2px solid {$C['vin']};font:14px/1.5 {$S};color:{$C['nat']};\"><b style=\"display:block;margin-bottom:2px;font:700 12px/1.4 {$S};letter-spacing:.06em;text-transform:uppercase;color:{$C['vin']};\">Beslutning</b>" . mm_esc($ud ?: mm_klip($kb, 220)) . ($ud ? $stemmer($s) : '') . '</p>' : '';
-        return "<tr><td style=\"padding:18px 28px 20px;border-top:1px solid {$C['rule']};\">\n"
+        return "<tr><td style=\"padding:0 22px 10px;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background:{$C['kalkLys']};border-radius:10px;\"><tr><td style=\"padding:20px 20px 20px;\">\n"
           . "  <p style=\"margin:0 0 6px;font:600 12px/1.45 {$S};color:{$C['muted']};\">{$status} · " . mm_esc($hvorSag($s)) . "</p>\n"
           . '  <a href="' . mm_esc($linkTil($s)) . "\" style=\"font:600 19px/1.3 {$S};color:{$C['nat']};text-decoration:none;\">" . mm_esc($s['t']) . "</a>\n"
           . '  ' . (!empty($s['d']) ? "<p style=\"margin:8px 0 0;font:15px/1.55 {$S};color:{$C['brod']};\">" . mm_esc(mm_klip($s['d'], 170)) . '</p>' : '') . "\n"
           . "  {$besl}" . $afst($s) . "\n"
           . '  <div>' . implode('', array_map($tag, $s['mE'] ?? [])) . implode('', array_map($ordTag, $s['mO'] ?? [])) . "</div>\n"
-          . '</td></tr>';
+          . '</td></tr></table></td></tr>';
     };
     // Hver sektion har sin farve og sit ikon, som i talrækken: vin = besluttet, indigo = på vej, nat = bydelen
     $sektion = function (string $titel, string $under, array $liste, int $flere, bool $fuld = true, string $ikon = '', string $farve = MM_C['nat'], string $top = '') use ($C, $S, $sag, $kortSag): string {
         if (!$liste) return '';
-        $h = "<tr><td style=\"padding:22px 28px 8px;border-top:3px solid {$farve};\">\n"
-          . '  <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>' . ($ikon !== '' ? '<td valign="middle" style="padding:0 8px 0 0;line-height:0;"><img src="' . MM_MAIL . $ikon . '.png" width="20" height="20" alt="" style="display:block;border:0;"></td>' : '')
-          . "<td valign=\"middle\"><h2 style=\"margin:0;font:700 12px/1.4 {$S};letter-spacing:.08em;text-transform:uppercase;color:{$farve};\">" . mm_esc($titel) . "</h2></td></tr></table>\n"
+        $h = "<tr><td style=\"padding:32px 28px 12px;\">\n"
+          . "  <h2 style=\"margin:0;font:700 20px/1.25 {$S};color:{$C['nat']};\">" . mm_esc($titel) . "</h2>\n"
           . '  ' . ($under !== '' ? "<p style=\"margin:4px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\">" . mm_esc($under) . '</p>' : '') . "\n"
           . '</td></tr>' . $top;
         foreach ($liste as $i => $s) $h .= ($i === 0 && $fuld) ? $sag($s) : $kortSag($s);
-        if ($flere) $h .= "<tr><td style=\"padding:12px 28px 6px;border-top:1px solid {$C['rule']};font:13px/1.5 {$S};color:{$C['muted']};\">Og {$flere} " . ($flere === 1 ? 'sag' : 'sager') . ' mere om dine emner. <a href="' . MM_SITE . "min/#sager\" style=\"color:{$C['indigo']};font-weight:600;\">Se dem i Min avis</a></td></tr>";
+        if ($flere) $h .= "<tr><td style=\"padding:4px 28px 6px;font:13px/1.5 {$S};color:{$C['muted']};\">Og {$flere} " . ($flere === 1 ? 'sag' : 'sager') . ' mere om dine emner. <a href="' . MM_SITE . "min/#sager\" style=\"color:{$C['indigo']};font-weight:600;\">Se dem i Min avis</a></td></tr>";
         return $h;
     };
 
@@ -233,8 +234,8 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
     $ingen = !$v['besluttet'] && !$v['kommer'] && !$v['bydel'];
     $bydelNavn = mm_hvor((string)($profil['bydel'] ?? ''));
     // Ugens tal er det vigtigste i mailen: store tal i sektionernes farver, med luft imellem
-    $talCelle = fn(int $n, string $en, string $fl, string $under, string $farve, int $b) => "<td width=\"{$b}%\" valign=\"top\" style=\"padding:10px 0 0;border-top:3px solid {$farve};\">\n"
-      . "    <p style=\"margin:0;font:700 34px/1.1 {$S};color:" . ($n ? $farve : $C['muted']) . ";\">{$n}</p>\n"
+    $talCelle = fn(int $n, string $en, string $fl, string $under, string $farve, int $b) => "<td width=\"{$b}%\" valign=\"top\" style=\"padding:10px 0 0;\">\n"
+      . "    <p style=\"margin:0;font:700 34px/1.1 {$S};color:" . ($n ? $C['nat'] : $C['muted']) . ";\">{$n}</p>\n"
       . "    <p style=\"margin:4px 0 0;font:700 13px/1.35 {$S};color:{$C['nat']};\">" . ($n === 1 ? $en : $fl) . "</p>\n"
       . "    <p style=\"margin:2px 0 0;font:12px/1.4 {$S};color:{$C['muted']};\">" . mm_esc($under) . "</p>\n"
       . '  </td>';
@@ -248,7 +249,7 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
         $fem[] = ['kort' => $UGEDAG[$w], 'lang' => $UGEDAG_LANG[$w], 'nr' => (int)gmdate('j', $t), 'n' => count($l), 'udvalg' => array_values(array_unique(array_map(fn($s) => mm_hvor($s['u']), $l)))];
     }
     $harDage = array_values(array_filter($fem, fn($d) => $d['n'] > 0));
-    $kalender = $harDage ? "<tr><td style=\"padding:4px 28px 18px;\">\n"
+    $kalender = $harDage ? "<tr><td style=\"padding:0 22px 14px;\">\n"
       . '  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>' . implode('', array_map(fn($d) => '<td width="20%" align="center" valign="top" style="padding:0 2px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" bgcolor="' . ($d['n'] ? $C['lyng'] : $C['kalk']) . '" style="padding:8px 2px 10px;border-radius:8px;background:' . ($d['n'] ? $C['lyng'] : $C['kalk']) . ";\">\n"
         . "    <p style=\"margin:0;font:600 11px/1.3 {$S};letter-spacing:.06em;text-transform:uppercase;color:" . ($d['n'] ? $C['blaek'] : $C['muted']) . ";\">{$d['kort']}</p>\n"
         . "    <p style=\"margin:2px 0 0;font:700 20px/1.2 {$S};color:" . ($d['n'] ? $C['indigo'] : $C['muted']) . ";\">{$d['nr']}</p>\n"
@@ -261,11 +262,11 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
     $talRaekke = "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:20px 0 0;\"><tr>\n"
       . '  ' . implode('<td width="4%" style="font-size:0;line-height:0;">&nbsp;</td>', $celler) . "\n"
       . '</tr></table>';
-    $html = mm_mail_top($emne, $preheader, $uge, $idag, $logo) . "<tr><td style=\"padding:28px 28px 4px;\">\n"
+    $html = mm_mail_top($emne, $preheader, $uge, $idag, $logo, (string)($profil['kommuner'][0] ?? '')) . "<tr><td style=\"padding:24px 22px 0;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background:{$C['kalkLys']};border-radius:10px;\"><tr><td style=\"padding:22px 22px 20px;\">\n"
       . "  <h1 style=\"margin:0;font:600 26px/1.15 {$S};color:{$C['nat']};\">God morgen" . ($navn !== '' ? ', ' . mm_esc($navn) : '') . ".</h1>\n"
       . '  ' . ($ingen ? "<p style=\"margin:10px 0 0;font:16px/1.55 {$S};color:{$C['brod']};\">Der er ingen nye sager om dine emner i denne uge. Vi holder øje og skriver, når der sker noget.</p>" : $talRaekke) . "\n"
       . '  ' . ($dineEmner !== '' ? "<p style=\"margin:16px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\">Du følger: " . mm_esc($dineEmner) . (!empty($profil['bydel']) ? ' · ' . mm_esc($bydelNavn) : '') . '</p>' : '') . "\n"
-      . "</td></tr>\n"
+      . "</td></tr></table></td></tr>\n"
       . $sektion($v['dage'] === 7 ? 'Besluttet i ugen der gik' : 'Besluttet de seneste to uger', '', $v['besluttet'], $v['flereBesluttet'], true, 'besluttet', $C['vin']) . "\n"
       . $sektion('Det skal de tage stilling til', 'De næste to uger.', $v['kommer'], $v['flereKommer'], true, 'paa-vej', $C['indigo'], $kalender) . "\n"
       . $sektion('Fra ' . $bydelNavn, 'Det sker i din bydel.', $v['bydel'], 0, false, 'bydel', $C['nat']) . "\n"
