@@ -15,7 +15,7 @@
 
 const C = {
   nat: "#0E0F14", kalk: "#E6DFD3", kalkLys: "#EEE8DE", muted: "#56535A", rule: "#CFC6B8", brod: "#3E3B40",
-  vin: "#8A2430", bordeaux: "#3E0E14", rosen: "#DCA9A5", indigo: "#28377A", blaek: "#0C1430", lyng: "#B7BBD8",
+  vin: "#8A2430", bordeaux: "#3E0E14", rosen: "#DCA9A5", indigo: "#28377A", blaek: "#0C1430", lyng: "#B7BBD8", sten: "#8D8A86",
 };
 const SANS = "Montserrat, 'Segoe UI', Arial, sans-serif";
 const SERIF = SANS; // Montserrat er Sagsvagts eneste skrift
@@ -61,7 +61,7 @@ export function vaelgSager({ data, profil, idag }) {
   const bydel = profil.bydel
     ? data.sager.filter((s) => s.u === profil.bydel && !s.r && !brugt.has(s.id) && Math.abs(alder(idag, s.dato)) <= 14).map(vurder).slice(0, 2)
     : [];
-  return { besluttet: sket.slice(0, VIS), flereBesluttet: Math.max(0, sket.length - VIS), kommer: kommer.slice(0, VIS), flereKommer: Math.max(0, kommer.length - VIS), bydel, dage, emner, ord: profil.ord || [] };
+  return { besluttet: sket.slice(0, VIS), flereBesluttet: Math.max(0, sket.length - VIS), kommer: kommer.slice(0, VIS), flereKommer: Math.max(0, kommer.length - VIS), alleKommer: kommer, bydel, dage, emner, ord: profil.ord || [] };
 }
 
 // Mailens top (logo, uge og dato) og bund (afsender, afmelding), fælles for mandagsmailen og ventelistemailen
@@ -113,6 +113,14 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
   const ordTag = (o) => `<span style="display:inline-block;margin:8px 6px 0 0;padding:3px 9px;border-radius:6px;background:${C.kalk};box-shadow:inset 0 0 0 1px ${C.rule};color:${C.nat};font:700 12px/1.4 ${SANS};">${esc(o)}</span>`;
   // Stemmetallet står allerede i udfaldet ("med 50 stemmer mod 3"); vi tilføjer kun dem, der undlod
   const stemmer = (s) => (s.tal?.undlod ? ` <b style="white-space:nowrap;">${s.tal.undlod} undlod.</b>` : "");
+  // Afstemningen som bjælke, neutral som på sitet: for i nat, imod i sten, undlod i rule (ingen parti- eller farvesejr)
+  const afst = (s) => {
+    const t = s.tal, ialt = t ? t.for + t.imod + (t.undlod || 0) : 0;
+    if (s.st !== "besluttet" || !ialt) return "";
+    const dele = [[t.for, C.nat], [t.imod, C.sten], [t.undlod || 0, C.rule]].filter(([n]) => n > 0);
+    return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:10px 0 0;border-radius:5px;overflow:hidden;"><tr>${dele.map(([n, f]) => `<td width="${Math.round((100 * n) / ialt)}%" height="8" bgcolor="${f}" style="background:${f};font-size:0;line-height:0;">&nbsp;</td>`).join(`<td width="2" style="font-size:0;line-height:0;">&nbsp;</td>`)}</tr></table>
+  <p style="margin:6px 0 0;font:12px/1.4 ${SANS};color:${C.muted};"><b style="color:${C.nat};">${t.for}</b> for · <b style="color:${C.nat};">${t.imod}</b> imod${t.undlod ? ` · <b style="color:${C.nat};">${t.undlod}</b> undlod` : ""}</p>`;
+  };
 
   // Kort sag: status, overskrift og beslutningen på én linje, uden beskrivelse og mærker
   const kortSag = (s) => {
@@ -122,7 +130,7 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
     return `<tr><td style="padding:14px 28px 15px;border-top:1px solid ${C.rule};">
   <p style="margin:0 0 4px;font:600 12px/1.45 ${SANS};color:${C.muted};">${status} · ${esc(hvorSag(s))}</p>
   <a href="${esc(linkTil(s))}" style="font:600 16px/1.35 ${SERIF};color:${C.nat};text-decoration:none;">${esc(s.t)}</a>
-  ${s.st === "besluttet" && (s.ud || s.kb) ? `<p style="margin:5px 0 0;font:14px/1.5 ${SANS};color:${C.brod};">${esc(klip(s.ud || s.kb, 140))}${s.ud ? stemmer(s) : ""}</p>` : ""}
+  ${s.st === "besluttet" && (s.ud || s.kb) ? `<p style="margin:5px 0 0;font:14px/1.5 ${SANS};color:${C.brod};">${esc(klip(s.ud || s.kb, 140))}${s.ud ? stemmer(s) : ""}</p>` : ""}${afst(s)}
 </td></tr>`;
   };
   const sag = (s) => {
@@ -136,16 +144,16 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
   <p style="margin:0 0 6px;font:600 12px/1.45 ${SANS};color:${C.muted};">${status} · ${esc(hvorSag(s))}</p>
   <a href="${esc(linkTil(s))}" style="font:600 19px/1.3 ${SERIF};color:${C.nat};text-decoration:none;">${esc(s.t)}</a>
   ${s.d ? `<p style="margin:8px 0 0;font:15px/1.55 ${SERIF};color:${C.brod};">${esc(klip(s.d, 170))}</p>` : ""}
-  ${besl}
+  ${besl}${afst(s)}
   <div>${(s.mE || []).map(tag).join("")}${(s.mO || []).map(ordTag).join("")}</div>
 </td></tr>`;
   };
   // fuld: den første sag vises med beskrivelse og mærker (bydelen vises kun kort)
   // Hver sektion har sin farve og sit ikon, som i talrækken: vin = besluttet, indigo = på vej, nat = bydelen
-  const sektion = (titel, under, liste, flere, fuld = true, ikon = "", farve = C.nat) => liste.length ? `<tr><td style="padding:22px 28px 8px;border-top:3px solid ${farve};">
+  const sektion = (titel, under, liste, flere, fuld = true, ikon = "", farve = C.nat, top = "") => liste.length ? `<tr><td style="padding:22px 28px 8px;border-top:3px solid ${farve};">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>${ikon ? `<td valign="middle" style="padding:0 8px 0 0;line-height:0;"><img src="${MAIL}${ikon}.png" width="20" height="20" alt="" style="display:block;border:0;"></td>` : ""}<td valign="middle"><h2 style="margin:0;font:700 12px/1.4 ${SANS};letter-spacing:.08em;text-transform:uppercase;color:${farve};">${esc(titel)}</h2></td></tr></table>
   ${under ? `<p style="margin:4px 0 0;font:13px/1.5 ${SANS};color:${C.muted};">${esc(under)}</p>` : ""}
-</td></tr>${liste.map((s, i) => (i === 0 && fuld ? sag(s) : kortSag(s))).join("")}${flere ? `<tr><td style="padding:12px 28px 6px;border-top:1px solid ${C.rule};font:13px/1.5 ${SANS};color:${C.muted};">Og ${flere} ${flere === 1 ? "sag" : "sager"} mere om dine emner. <a href="${SITE}min/#sager" style="color:${C.indigo};font-weight:600;">Se dem i Min avis</a></td></tr>` : ""}` : "";
+</td></tr>${top}${liste.map((s, i) => (i === 0 && fuld ? sag(s) : kortSag(s))).join("")}${flere ? `<tr><td style="padding:12px 28px 6px;border-top:1px solid ${C.rule};font:13px/1.5 ${SANS};color:${C.muted};">Og ${flere} ${flere === 1 ? "sag" : "sager"} mere om dine emner. <a href="${SITE}min/#sager" style="color:${C.indigo};font-weight:600;">Se dem i Min avis</a></td></tr>` : ""}` : "";
 
   const dineEmner = [...v.emner.map((id) => data.emner[id].navn), ...v.ord].join(", ");
   const ingen = !v.besluttet.length && !v.kommer.length && !v.bydel.length;
@@ -156,6 +164,20 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
     <p style="margin:2px 0 0;font:12px/1.4 ${SANS};color:${C.muted};">${esc(under)}</p>
   </td>`;
   const b = profil.bydel ? 30 : 47;
+  // Ugen der kommer: fem dage fra mailens dag med antallet af sager om dine emner og de udvalg, der behandler dem
+  const UGEDAG = ["man", "tir", "ons", "tor", "fre", "lør", "søn"], UGEDAG_LANG = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"];
+  const fem = [0, 1, 2, 3, 4].map((i) => {
+    const t = new Date(dag(idag).getTime() + i * 864e5), iso = t.toISOString().slice(0, 10), l = v.alleKommer.filter((s) => s.dato === iso), w = (t.getUTCDay() + 6) % 7;
+    return { kort: UGEDAG[w], lang: UGEDAG_LANG[w], nr: t.getUTCDate(), n: l.length, udvalg: [...new Set(l.map((s) => hvor(s.u)))] };
+  });
+  const kalender = fem.some((d) => d.n) ? `<tr><td style="padding:4px 28px 18px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>${fem.map((d) => `<td width="20%" align="center" valign="top" style="padding:0 2px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" bgcolor="${d.n ? C.lyng : C.kalk}" style="padding:8px 2px 10px;border-radius:8px;background:${d.n ? C.lyng : C.kalk};">
+    <p style="margin:0;font:600 11px/1.3 ${SANS};letter-spacing:.06em;text-transform:uppercase;color:${d.n ? C.blaek : C.muted};">${d.kort}</p>
+    <p style="margin:2px 0 0;font:700 20px/1.2 ${SANS};color:${d.n ? C.indigo : C.muted};">${d.nr}</p>
+    <p style="margin:3px 0 0;font:600 11px/1.3 ${SANS};color:${d.n ? C.blaek : C.muted};">${d.n ? `${d.n} ${d.n === 1 ? "sag" : "sager"}` : "&ndash;"}</p>
+  </td></tr></table></td>`).join("")}</tr></table>
+  ${fem.filter((d) => d.n).map((d) => `<p style="margin:8px 0 0;font:13px/1.5 ${SANS};color:${C.brod};"><b style="color:${C.nat};">${d.lang} ${d.nr}.</b> ${esc(d.udvalg.slice(0, 3).join(" · "))}${d.udvalg.length > 3 ? ` · +${d.udvalg.length - 3}` : ""}</p>`).join("")}
+</td></tr>` : "";
   const talRaekke = `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:20px 0 0;"><tr>
   ${[talCelle(nB, "beslutning", "beslutninger", v.dage === 7 ? "i ugen der gik" : "de seneste to uger", C.vin, b), talCelle(nK, "sag på vej", "sager på vej", "de næste to uger", C.indigo, b),
     ...(profil.bydel ? [talCelle(v.bydel.length, "sag i bydelen", "sager i bydelen", hvor(profil.bydel), C.nat, b)] : [])].join(`<td width="4%" style="font-size:0;line-height:0;">&nbsp;</td>`)}
@@ -166,7 +188,7 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
   ${dineEmner ? `<p style="margin:16px 0 0;font:13px/1.5 ${SANS};color:${C.muted};">Du følger: ${esc(dineEmner)}${profil.bydel ? ` · ${esc(hvor(profil.bydel))}` : ""}</p>` : ""}
 </td></tr>
 ${sektion(v.dage === 7 ? "Besluttet i ugen der gik" : "Besluttet de seneste to uger", "", v.besluttet, v.flereBesluttet, true, "besluttet", C.vin)}
-${sektion("Det skal de tage stilling til", "De næste to uger.", v.kommer, v.flereKommer, true, "paa-vej", C.indigo)}
+${sektion("Det skal de tage stilling til", "De næste to uger.", v.kommer, v.flereKommer, true, "paa-vej", C.indigo, kalender)}
 ${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0, false, "bydel", C.nat)}
 ` + mailBund(modtager, afmeld);
 
