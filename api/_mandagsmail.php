@@ -14,6 +14,8 @@ function mm_tabeller(PDO $db): void {
         html MEDIUMTEXT NOT NULL, tekst MEDIUMTEXT NOT NULL, send_efter VARCHAR(25) NOT NULL, forsoeg INT NOT NULL DEFAULT 0, PRIMARY KEY (abonnent_id, uge))');
     // Én række pr. uge, den automatiske planlægning har kørt (så den kun kører én gang), og om redaktionen stoppede den
     $db->exec('CREATE TABLE IF NOT EXISTS mandagsmail_uger (uge VARCHAR(10) NOT NULL PRIMARY KEY, planlagt VARCHAR(25) NOT NULL, antal INT NOT NULL DEFAULT 0, stoppet VARCHAR(25) NULL)');
+    // faerdig: hvornår planlægningen blev færdig. Mangler den, døde planlægningen undervejs (kolonnen kom til senere)
+    try { $db->query('SELECT faerdig FROM mandagsmail_uger LIMIT 1'); } catch (PDOException $e) { $db->exec('ALTER TABLE mandagsmail_uger ADD COLUMN faerdig VARCHAR(25) NULL'); }
 }
 
 // Sender én mail og husker det. Markerer først, så to samtidige kørsler ikke sender samme mail to gange.
@@ -105,8 +107,14 @@ function mm_maaske_planlaeg(?DateTimeImmutable $nu = null): void {
     $uge = mm_planlaeg_uge($nu);
     if ($uge === null) return;
     $db = db(); mm_tabeller($db);
-    // Rækken for ugen er en lås: kun det første besøg i vinduet planlægger
-    try { $db->prepare('INSERT INTO mandagsmail_uger (uge, planlagt) VALUES (?, ?)')->execute([$uge, nu()]); } catch (PDOException $e) { return; }
+    // Rækken for ugen er en lås: kun det første besøg i vinduet planlægger. Blev planlægningen aldrig færdig (fx fordi den
+    // døde midt i en upload, hvor filerne på serveren ikke passede sammen), tager et besøg over efter 10 minutter.
+    try { $db->prepare('INSERT INTO mandagsmail_uger (uge, planlagt) VALUES (?, ?)')->execute([$uge, nu()]); }
+    catch (PDOException $e) {
+        $q = $db->prepare('UPDATE mandagsmail_uger SET planlagt = ? WHERE uge = ? AND faerdig IS NULL AND stoppet IS NULL AND planlagt < ?');
+        $q->execute([nu(), $uge, gmdate('Y-m-d\TH:i:s\Z', time() - 600)]);
+        if ($q->rowCount() !== 1) return;
+    }
     @set_time_limit(180);
     $tid = max(mm_kl7($uge), nu());
     $mails = mm_ugens_mails($db, $uge);
@@ -121,7 +129,8 @@ function mm_maaske_planlaeg(?DateTimeImmutable $nu = null): void {
         if (in_array($m['a']['email'], $K['admins'], true)) $proeve = $m + ['egen' => true];
         elseif (!($proeve['egen'] ?? false) && $m['type'] !== 'Venteliste' && $n > ($proeve['n'] ?? -1)) $proeve = $m + ['n' => $n];
     }
-    $db->prepare('UPDATE mandagsmail_uger SET antal = ? WHERE uge = ?')->execute([$antal, $uge]);
+    // Færdig, før prøvemailen sendes, så en fejl derefter ikke giver en ny planlægning og en prøvemail mere
+    $db->prepare('UPDATE mandagsmail_uger SET antal = ?, faerdig = ? WHERE uge = ?')->execute([$antal, nu(), $uge]);
     mm_send_proeve($uge, $antal, $typer, $sprunget, $proeve);
     mm_paamind_bekraeftelse($db);
 }
