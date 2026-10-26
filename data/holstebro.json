@@ -124,13 +124,11 @@
   },
   "451d3255-f5de-4edd-aaf6-cb9f303d7d42": {
    "lastmod": "2026-09-29",
-   "type": "dagsorden",
+   "type": "referat",
    "udvalg": "Profilråd Sønderlandsskolen",
    "dato": "2026-10-06",
-   "punkter": 0,
-   "parser": 3,
-   "tomFra": "2026-10-24",
-   "tegn": 1605
+   "punkter": 6,
+   "parser": 3
   },
   "50598271-1e2f-43df-a256-9a3552c22991": {
    "lastmod": "2026-08-25",
@@ -637,6 +635,32 @@
    "parser": 3,
    "tomFra": "2026-10-25",
    "tegn": 3724
+  },
+  "fcf9d0d5-6170-403b-a374-ab022748cfe8": {
+   "lastmod": "2026-10-19",
+   "type": "dagsorden",
+   "udvalg": "Skolebestyrelsen ved Mejrup Skole",
+   "dato": "2026-10-27",
+   "punkter": 0,
+   "parser": 3,
+   "tomFra": "2026-10-26",
+   "tegn": 1970
+  },
+  "cda9129c-14b5-4631-9406-4f56d650cb2a": {
+   "lastmod": "2026-10-26",
+   "type": "referat",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-09-28",
+   "punkter": 7,
+   "parser": 3
+  },
+  "48871385-ab4d-49e2-8378-5cd7130c73f6": {
+   "lastmod": "2026-07-09",
+   "type": "referat",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-05-13",
+   "punkter": 3,
+   "parser": 3
   }
  },
  "sager": {
@@ -11399,131 +11423,503 @@
     }
    ],
    "bilag": []
+  },
+  "holstebro-2026-10-06-profilraad-soenderlandsskolen-2": {
+   "id": "holstebro-2026-10-06-profilraad-soenderlandsskolen-2",
+   "kommune": "Holstebro",
+   "udvalg": "Profilråd Sønderlandsskolen",
+   "dato": "2026-10-06",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=451d3255-f5de-4edd-aaf6-cb9f303d7d42",
+   "hentet": "2026-10-26T12:21:50.712Z",
+   "titel": "Velkommen til elevrådet (5 min.)",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Velkommen til MiaMaia fra 9.b og Beate fra 7.a"
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-06-profilraad-soenderlandsskolen-3": {
+   "id": "holstebro-2026-10-06-profilraad-soenderlandsskolen-3",
+   "kommune": "Holstebro",
+   "udvalg": "Profilråd Sønderlandsskolen",
+   "dato": "2026-10-06",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=451d3255-f5de-4edd-aaf6-cb9f303d7d42",
+   "hentet": "2026-10-26T12:21:50.712Z",
+   "titel": "Princip for skolerejser (30 min.)",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Forslaget går tilbage til det lille udvalg med de forslag til rettelser som er fremlagt. Der bliver samlet op og så\nkommer det tilbage i profilrådet.\n\nUdkast vedhæftet og bedes læst inden mødet. Pft."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-06-profilraad-soenderlandsskolen-4": {
+   "id": "holstebro-2026-10-06-profilraad-soenderlandsskolen-4",
+   "kommune": "Holstebro",
+   "udvalg": "Profilråd Sønderlandsskolen",
+   "dato": "2026-10-06",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=451d3255-f5de-4edd-aaf6-cb9f303d7d42",
+   "hentet": "2026-10-26T12:21:50.712Z",
+   "titel": "Økonomi + budgetforlig (15 min.)",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet. P.t. går skolen ud med et overskud i året 2026.\nBudgetforlig: Ingen besparelser på folkeskoleområdet."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-06-profilraad-soenderlandsskolen-5": {
+   "id": "holstebro-2026-10-06-profilraad-soenderlandsskolen-5",
+   "kommune": "Holstebro",
+   "udvalg": "Profilråd Sønderlandsskolen",
+   "dato": "2026-10-06",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=451d3255-f5de-4edd-aaf6-cb9f303d7d42",
+   "hentet": "2026-10-26T12:21:50.712Z",
+   "titel": "Orientering fra skolen (10 min.)",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "2/11 kl. 17.00-19.00 vil der være et dialogmøde med profilrådene fra de tre byskoler om skoleordningen i\nHolstebro by.\n19/11 18.30-21.00 er profilrådene inviteret til møde om stærke fællesskaber i Plexus i Idom.\nSkolechefen vil gerne høre hvis der er et medlem fra profilrådene, der kan være med i følgegruppen om\nbredere børnefællesskaber.\nSkolen har haft besøg af Søren Frøstrup Agger for at være i \"praktik\" i tre timer."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-06-profilraad-soenderlandsskolen-6": {
+   "id": "holstebro-2026-10-06-profilraad-soenderlandsskolen-6",
+   "kommune": "Holstebro",
+   "udvalg": "Profilråd Sønderlandsskolen",
+   "dato": "2026-10-06",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=451d3255-f5de-4edd-aaf6-cb9f303d7d42",
+   "hentet": "2026-10-26T12:21:50.712Z",
+   "titel": "Nyt fra profilen (5 min.)",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Begynder at gå i tænkeboks (og i dialog) om Orkester Mester mv. fra kommende skoleår og frem."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-06-profilraad-soenderlandsskolen-7": {
+   "id": "holstebro-2026-10-06-profilraad-soenderlandsskolen-7",
+   "kommune": "Holstebro",
+   "udvalg": "Profilråd Sønderlandsskolen",
+   "dato": "2026-10-06",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=451d3255-f5de-4edd-aaf6-cb9f303d7d42",
+   "hentet": "2026-10-26T12:21:50.712Z",
+   "titel": "Årsplan for profilrådets arbejde (20 min.)",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der skal laves en årsplan for profilrådets arbejde. Der bliver kikket på \"skal\"-ting og ellers må man gerne\nkomme med forslag. Der skal generelt ses på principperne igen.\nKontinuitet i den projektorienterede undervisning.\nSynlighed.\n+ Hannes liste\n\nVi udarbejder en årsplan for, hvilke emner vi vil arbejde med hen over året."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-09-28-tilgaengelighedsudvalget-1": {
+   "id": "holstebro-2026-09-28-tilgaengelighedsudvalget-1",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-09-28",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=cda9129c-14b5-4631-9406-4f56d650cb2a",
+   "hentet": "2026-10-26T12:25:23.819Z",
+   "titel": "Godkendelse af referat fra sidste møde",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Anders Debel\nReferat fra sidste møde i TGU den 13.05.2026 til godkendelse."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Til godkendelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Henning Jepsen og Bent Follesen har meldt fra til dagens møde.\nReferatet godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-09-28-tilgaengelighedsudvalget-2": {
+   "id": "holstebro-2026-09-28-tilgaengelighedsudvalget-2",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-09-28",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=cda9129c-14b5-4631-9406-4f56d650cb2a",
+   "hentet": "2026-10-26T12:25:23.819Z",
+   "titel": "Godkendelse af samarbejdsaftale",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Godkendelse af samarbejdsaftale for TGU.\nVed sidste møde i TGU blev samarbejdsaftalen revideret.\nDen reviderede aftale skal godkendes."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at:\nsamarbejdsaftalen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Henning nævner, at samarbejdsaftalen endnu ikke er drøftet i TGU.\nDet aftales at samarbejdsaftalen godkendes. Hvis det efterfølgende viser sig, at der\nskulle være bemærkninger til aftalen, så medtages de under godkendelse af dagsorden\npå næste møde."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-09-28-tilgaengelighedsudvalget-3": {
+   "id": "holstebro-2026-09-28-tilgaengelighedsudvalget-3",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-09-28",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=cda9129c-14b5-4631-9406-4f56d650cb2a",
+   "hentet": "2026-10-26T12:25:23.819Z",
+   "titel": "Samarbejde med handelslivet om tilgængelighed",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "TGU:\nTGU har endnu ikke fastlagt et arbejdsprogram for de kommende fire år, idet der fortsat\nafventes endelig politisk stillingtagen til den fremtidige sammensætning og indsatsområder.\nTGU har dog allerede aftalt at arbejde med oplysning og samarbejde med handelslivet og\nbutikker om tilgængelighed.\nDer ønskes en drøftelse af, hvordan butikkerne kan understøttes i at have fokus på\ntilgængelighed, samt hvilke bidrag Teknik & Miljø kan levere til indsatsen. TGU giver et oplæg\nom tankerne bag emnet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at:\nmulighederne for samarbejde om tilgængelighed i handelslivet drøftes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kirsten gennemgår en præsentation om samarbejdet med handelslivet vedrørende\ntilgængelighed.\nDeltagerne drøfter handelslivets forskellige roller, hvilket også har været oppe at vende\nmed handelsstandsforeningen. Der lægges vægt på, at det er butiks- og caféejerne, som\nskal være i fokus og kontaktes – frem for at låse dem fast i formelle kasser som\nmyndighed (TM) eller frivillige (TGU).\nGågaderegulativet er fra 2016 og står over for en revision. Intentionerne forbliver de\nsamme, men der kan evt. kigges særskilt på dele af det.\nRegulativet sætter rammerne for, hvad der er tilladt, men kommunen har ikke mulighed\nfor at udstede bøder ved overtrædelser. Her kan TGU og Teknik og Miljø spille en vigtig\nfælles rolle i at føre en god dialog. Anders nævner, at forholdene desuden kan tages op i\n§ 17, stk. 4 udvalget.\nI dag udleveres regulativet ikke automatisk til nye butiksejere. Der er behov for at få dem\norienteret ved opstart, og sagsbehandlingsniveauet (fx i byggesager) bør i højere grad\ninddrage tilgængelighed, hvor det er muligt, ligesom dispensationer kan gives på\nspecifikke vilkår.\nDet giver det største udbytte, at brugerne selv deltager, så handelsstandsforeningen\nhører udfordringerne direkte fra dem, det vedrører.\n\nKirsten spørger ind til regulativer i Ulfborg. Annette siger, at der er tale om dialoger frem\nfor de samme formelle regulativer, men udfordringerne med tilgængelighed kan være de\nsamme. Det bliver foreslået, at indsatsen med at samle handelsstandsforeningen, TGU\nog TM evt. kan afprøves/gøres der.\nNæste skridt aftales at være at invitere formanden for handelsstandsforeningen ind i\ndrøftelsen, hvor TGU’s/ oplæg passer fint ind. Målet er at få skabt en bredere dialog\nmellem handelsstand, TGU og Teknik og Miljø\nAnnette er anker/tovholder fra Teknik og Miljø.\nKirsten og Bent er ankerpersoner fra TGU."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-09-28-tilgaengelighedsudvalget-4": {
+   "id": "holstebro-2026-09-28-tilgaengelighedsudvalget-4",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-09-28",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=cda9129c-14b5-4631-9406-4f56d650cb2a",
+   "hentet": "2026-10-26T12:25:23.819Z",
+   "titel": "Bedre tilgængelighed i kulturelle, sportslige og kirkelige tilbud",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "TGU:\nTGU har endnu ikke fastlagt et arbejdsprogram for de kommende fire år, idet der fortsat\nafventes endelig politisk stillingtagen til den fremtidige sammensætning og indsatsområder.\nTGU har dog allerede aftalt at arbejde med bedre tilgængelighed, nu og i fremtiden, i kulturelle,\nsportslige og kirkelige tilbud, eksempelvis Musikteatret.\nDer ønskes en drøftelse af, hvordan tilgængeligheden kan styrkes, samt hvilke muligheder\nTeknik & Miljø har for at bidrage til indsatsen. TGU giver et kort oplæg om tankerne bag emnet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at:\nmulighederne for samarbejde om bedre tilgængelighed i kulturelle, sportslige og\nkirkelige tilbud drøftes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tilgængelighed handler om meget mere end blot at kunne komme ind ad døren (f.eks.\ntrappelift i Frivilligcentret vs. renovering af toiletter) og have et sted at sidde.\nLydforhold og teleslynger er også tilgængelighed og afgørende for, at alle kan deltage.\nDet nævnes, at der mangler teleslynger mange steder, herunder ved et borgermøde i\nBoksen samt på det nye hotel på Nørreport. Korrekt indkøb og opsætning er vigtig, så\nmidlerne ikke spildes på udstyr, der ikke virker optimalt.\nDet er vigtigt at inddrage de relevante parter – herunder TGU – så tidligt som muligt i\nprocessen, før det er for sent at ændre på forholdene.\nMyndighedskrav og bygherrens ansvar drøftes, herunder at kommunen eller bygherren\nikke altid er herre over alle forhold \"in-house\", men at der stadig er et ansvar for at sikre,\nat vigtige hensyn varetages.\nDialog om tilgængelighed (herunder teleslynger) sættes på dagsorden til møde\nvedrørende sygehusgrunden. Det blev efterfølgende drøftet på mødet den 2/10-2026.\nAnnette nævner, at evaluering af Byrum Nørreport-projektet sættes på dagsorden til\nnæste møde.\nHenning nævner, at Handicapolitikken afventer videre forløb og skal drøftes i\nHandicaprådet.\nTanja undersøger ansvarsforholdene når det drejer sig om bygningsmassen og taler med\nmedarbejdere om mulige fora og samarbejder med rådgivere. Dagsordener fremover vil\n\nhave tilgængelighed og TGU-perspektiver tænkt med.\nMødet afsluttes. Anders takker TGU for deres bidrag og fremhæver, at det er vigtige\ndrøftelser."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-09-28-tilgaengelighedsudvalget-5": {
+   "id": "holstebro-2026-09-28-tilgaengelighedsudvalget-5",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-09-28",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=cda9129c-14b5-4631-9406-4f56d650cb2a",
+   "hentet": "2026-10-26T12:25:23.819Z",
+   "titel": "Evaluering af rundvisning på ny daginstitution i Halgaard d. 05.12.2025",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den 05.12.2025 blev der afholdt en rundvisning på den nye daginstitution i Halgaard.\nRundvisningen havde fokus på offentligt byggeri og indretning af offentlige handicaptoiletter."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at:\nbesøget evalueres."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet udsættes til næste møde."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-09-28-tilgaengelighedsudvalget-6": {
+   "id": "holstebro-2026-09-28-tilgaengelighedsudvalget-6",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-09-28",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=cda9129c-14b5-4631-9406-4f56d650cb2a",
+   "hentet": "2026-10-26T12:25:23.819Z",
+   "titel": "Handicapparkering",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "AV\nPå mødet i TGU den 13. maj 2026 blev en henvendelse fra HandyPark drøftet. Henvendelsen\nomhandler synlighed om handicapforhold i relation til parkering samt handicaptoiletter.\nSom følge af drøftelserne her og i Tilgængelighedsudvalget den 25. juni 2026 om HandyPark\napp og hjemmesiden, har der den 28. august 2026 været afholdt et møde med repræsentanter\nfra Tilgængelighedsudvalget og Teknik & Miljø, hvor emnet om hvordan Holstebro Kommune\nudstiller data om handicapparkering og handicaptoiletter blev drøftet.\nDer vil på mødet blive givet en orientering om ovenstående og hvordan Teknik og Miljø vil\narbejde videre med, hvordan det gøres mere synligt, hvor der er handicapparkering og\nhandicaptoilet i kommunen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet udsættes til næste møde."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-09-28-tilgaengelighedsudvalget-7": {
+   "id": "holstebro-2026-09-28-tilgaengelighedsudvalget-7",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-09-28",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=cda9129c-14b5-4631-9406-4f56d650cb2a",
+   "hentet": "2026-10-26T12:25:23.819Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Eventuelt drøftes.\n\nSupl. Sagsfremstilling\nTil drøftelse."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet under"
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-05-13-tilgaengelighedsudvalget-1": {
+   "id": "holstebro-2026-05-13-tilgaengelighedsudvalget-1",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-05-13",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=48871385-ab4d-49e2-8378-5cd7130c73f6",
+   "hentet": "2026-10-26T12:25:45.859Z",
+   "titel": "Velkomst og præsentation",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "AD\nTeknik og Miljø vil byde velkommen til mødet, hvorefter mødedeltagerne præsenterer sig selv\nog deres baggrund for deltagelse i mødet.\nTeknik og Miljø vil give en overordnet introduktion til opgaver i relation til\nTilgængelighedsudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at:\norienteringen tages til efterretning"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "AD byder velkommen og indleder til en præsentationsrunde.\nPræsentationsrunde:\nAnders Debel (AD) – Direktør i Teknik og Miljø.\nHenning Færmann (HF) - Udpeget af Handicaprådet\nHanne Klausen (HK) - Udpeget af seniorrådet\nHenning Jepsen (HJ) - Udpeget af seniorrådet.\nKirsten Nørgaard (KN) – Muskelsvindfonden - Udpeget af DH.\nBent Follesen (BF) – Scleroseforeningen - Udpeget af DH - Formand for TGU\nTanja Rask Elbæk (TRE) - Chef i TM, for Ejendomme og Stab.\nAnnette Vognbjerg (AV)- Chef i Teknik og Miljø for Trafik, Park og Skov\nTorben Mølgaard (TM) - Chef i Teknik og Miljø for Natur, Miljø og Byggesag.\nHF orienterer om, at TGU afholder møder uden at Teknik og Miljø er til stede og tilføjer at\ndet ikke står nogle steder.\nTeknik og Miljø gennemgår oplæg til roller og opgaver i relation til tilgængelighed.\nOplægget er vedhæftet som bilag.\nI Teknik og Miljø er der forskellige ansvarsområder. I nogle tilfælde er vi bygherre og i\nandre er vi myndighed.\n\nUanset om det er projekter eller myndighedsopgave er der mange ting der skal\nkoordineres.\nDer har været og er fortsat en stigning i kompleksiteten i Teknik og Miljøs opgaver. Der er\nmange fagligheder i Teknik og Miljø, der byder ind i opgaveløsningen.\nAftalen er, at hovedfokus i dette samarbejde er tematiserede drøftelser. Heraf kan det\nbedre implementeres i den daglige opgaveløsning.\nTemaer aftales fra gang til gang. TGU kan melde temaer ind, og gerne i god tid, så\nTeknik og Miljø kan forberede emnet bedst muligt.\nHF oplyser at Handicaprådet har planer om at nedsætte et mindre udvalg der skal se\nnærmere på TGU. Det kan betyde TGU kan få en anden organisering, hvilket kan give\nanledning til at forretningsordenen måske skal tages op igen om et år.\nI TGU er det vedtaget at der skal være en formand, og det er besluttet at det er Bent\nFollesen.\nAD nævner, at det er vigtigt for opgaven at vi informerer hinanden i tide. For år tilbage var\ndet mere enkeltsager, der blev drøftet i dette forum.\nTemadrøftelserne skaber værdi, så beslutningerne der tages i Teknik og Miljø kan\nunderstøttes af drøftelserne fra fællesmøderne.\nTGU spørger om Teknik og Miljø inddrager, eksempelvis tilgængelighedsrevisor.\nAV nævner, at Teknik og Miljø arbejder med tilgængelighed, men har ikke medarbejdere\nder er uddannet inden for området, hvorfor eksterne konsulenter inddrages efter behov."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-05-13-tilgaengelighedsudvalget-2": {
+   "id": "holstebro-2026-05-13-tilgaengelighedsudvalget-2",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-05-13",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=48871385-ab4d-49e2-8378-5cd7130c73f6",
+   "hentet": "2026-10-26T12:25:45.859Z",
+   "titel": "Samarbejdsform og forretningsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der er nedsat et samarbejdsforum mellem Tilgængelighedsudvalget (TGU) og Teknik og Miljø.\nFormålet med samarbejdet er at styrke dialogen om tilgængelighed i forbindelse med byggeog anlægsprojekter i Holstebro Kommune.\nPå TGU‑mødet den 31.01.2025 blev et fornyet grundlag for samarbejdet i form af en\nforretningsorden godkendt.\nForretningsordenen beskriver en samarbejdsmodel med:\nTo årlige faste møder i foråret og efteråret.\nMøderne har primært karakter af temadrøftelser, hvor temaer, der ønskes drøfte, kan\nrejses af både Tilgængelighedsudvalget og Teknik og Miljø.\nAd hoc‑møder i forbindelse med større bygge‑ og anlægsprojekter, hvor TGU inddrages i\nkonkrete drøftelser af tilgængelighed i projektets forberedende fase.\nDa TGU nu har fået en ny sammensætning, vil Teknik og Miljø gennemgå baggrunden for\nforretningsordenen med henblik på en drøftelse, for eventuelle til rettelser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at:\nforretningsordenen drøftes og godkendes med eventuelle til rettelser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Teknik og Miljø har ikke set et behov for at ændre i nuværende forretningsorden.\nHF nævner at forretningsorden er drøftet i TGU.\nTGU har følgende ændringsforslag til forretningsorden/samarbejdsaftale mellem TGU og\nTeknik og Miljø. Ændringsforslag er vedhæftet som bilag.\nNedenstående er drøftede kommentar til ændringsforslag.\nAD: Samarbejdet er en veksling på drøftelser af temaer og konkrete eksempler.\nAV nævner, at TGU til enhver tid kan, række ud til Teknik og Miljø i forhold til en sag,\nenten via mail, opkald eller giv et praj. Henvendelserne kan ske både som enkelt person\n\neller som udvalg.\n\nAD: Er der temaer allerede nu som skal sættes på til næste møde?\n\nKN nævner at TGU har en særlig rolle og derfor er det vigtigt at vide hvordan TGU kan\nhenvende sig til Teknik og Miljø.\nHenvendelser til Teknik og Miljø kan sendes til tm@holstebro.dk eller via giv et praj\napp’en som kan benyttes både via mobil og computer. Giv et praj kan findes via link:\nhttps://www.holstebro.dk/givetpraj\nAD nævner at der i samarbejdsaftalen evt. kan tilføjes et par linjer i starten, der fortæller\nhvilken forståelse samarbejdsaftalen skal læses i og dermed sætter rammen for\nsamarbejdet om målet om at være tidlige og effektive. Det er vigtigt at vi kan henvende\nos til hinanden uden hver gang at skulle henvise til forretningsordenen.\nKN nævner en konkret dispensation, hvor hun skulle læse det meste af sagen, før hun\nnåede sagens kerne og vil derfor gerne have tilføjet et par ekstra linjer først i\ndispensationer, så det er nemt at se hvad det handler om.\nDet besluttes at KN sender dispensationssagen til TM som vil kigge nærmere på sagen.\nAD nævner, at Teknik og Miljø gennemgår ændringer og udsætter vedtagelse af\nforretningsordenen til næste gang.\nHF nævner at der tidligere har været et skriv om at DH gerne må bruge DHs postkasse til\nhenvendelser til TGU, da TGU ikke har en postkasse.\nDet besluttes at TGU forsøger at sætte overstående emne på dagsorden ved næste\nmøde med DH.\nTM nævner, at det er vigtigt at Teknik og Miljø får orienterede de rigtige parter for at en\ntilladelse er gældende. Teknik og Miljø bruger den postkasse der tidligere er meldt tilbage\ntil Teknik og Miljø.\nTGU spørger hvem der sikrer en postkasse til TGU. Elisabeth Haahr er indgangsvinkel\nog kontaktperson.\nDet besluttes at Teknik og Miljø kontakter hende i forhold til oprettelse af postkasse til\nTGU.\nDet ønskes fra TGU, at der på hjemmesiden bliver tilføjet rubrik nederst på siden med\nkontaktoplysninger.\n\nDet besluttes at Teknik og Miljø kontakter Elisabeth Haahr, da opgaven ligger hos\nhende.\nHF nævner, at Handipark har kontaktet TGU.\nHandipark har en app løsning, hvor man kan afkrydse behov som heraf finder frem til\nhvor behovet kan indfries. Løsningen kan kommuner købe sig ind på.\nAV nævner, at der ikke er indgået aftale med dem. Det koster penge.\nTeknik og Miljø har ikke modtaget mange henvendelser fra borgere, om at der mangles\nen sådan løsning.\nVurderingen har derfor været, at det er nice-to-have.\nHF nævner at Handicaprådet har fokus på hvor man finder disse oplysninger.\nAD afslutter mødet og opfordrer TGU til at sende emner ind til temadrøftelser og takker\nfor en god opstart med gode indspil."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-05-13-tilgaengelighedsudvalget-3": {
+   "id": "holstebro-2026-05-13-tilgaengelighedsudvalget-3",
+   "kommune": "Holstebro",
+   "udvalg": "Tilgængelighedsudvalget",
+   "dato": "2026-05-13",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=48871385-ab4d-49e2-8378-5cd7130c73f6",
+   "hentet": "2026-10-26T12:25:45.859Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Eventuelt drøftes."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Til drøftelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingenting"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=367041ee-899b-48d3-b47d-b9574c7206a8": {
    "senest": "2026-09-22",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=c3ae97a4-c858-4fd6-9a86-2f72e254119e": {
    "senest": "2026-09-30",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=38dd67b3-8996-4cb4-b5eb-1b610bee2df4": {
-   "senest": "2026-08-20",
-   "tjekket": "2026-10-25"
+   "senest": "2026-10-19",
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=0f1bd7eb-70c9-4252-8ac8-3150916f7a59": {
    "senest": "2026-10-19",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=3186f607-40bc-4b53-941f-ce0310512ce0": {
    "senest": "2026-09-29",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=9b55f7d0-0b5c-45b0-bf38-5f60632cd328": {
    "senest": "2026-10-06",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=79ebb917-2d47-48f7-9968-e7a7b4919a72": {
    "senest": "2026-10-05",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=fd933be2-8372-471f-a409-a9d0973f0b88": {
    "senest": "2026-09-29",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=e29f5f14-7187-400e-b5e5-8812d6fa40b1": {
    "senest": "2026-10-05",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=cbaadf10-6cbf-4f21-b4d2-aafcff354a7b": {
    "senest": "2026-10-06",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=163d0d13-e5bc-4fd5-afa7-e4668a2ab407": {
    "senest": "2026-09-29",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=3499fdb9-67e9-480a-b5d1-1f4ee16f28d3": {
    "senest": "2026-10-20",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=58e7b3a5-ffae-46bd-bd7e-e3a3ae7de71a": {
    "senest": "2026-08-18",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=92d1a66c-14ed-43a4-ba23-43507f46f998": {
    "senest": "2026-08-07",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=e1080533-07c7-4829-a693-e2831e335b74": {
    "senest": "2026-09-30",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=f8b4e9f3-b582-4de8-8698-37dca8a3165f": {
    "senest": "2026-09-29",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=4d9a8daf-66e1-4e7e-8343-87bbc6017db8": {
    "senest": "2026-09-02",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=c1497bd9-0208-4052-8a36-a0b43530793e": {
    "senest": "2026-10-07",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=bbff13a0-d859-466f-9e65-ba43e943c493": {
    "senest": "2026-10-07",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=1f4b3a87-b167-4bab-b059-349e13670314": {
    "senest": "2026-10-08",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=0a7ba8bb-33a5-4d9f-bfda-13e323a24698": {
    "senest": "2026-09-29",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=0f06f666-6cff-4c0d-ba15-e256f80ff921": {
    "senest": "2026-10-08",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=e212ced3-d561-4394-aa9e-f88baa2e8e77": {
    "senest": "2026-10-21",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=f45020a5-03dc-4277-919b-6408fb352d2e": {
    "senest": "2026-10-20",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=3b683243-f043-487c-9dce-8d1bbf73a155": {
    "senest": "2026-10-15",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=61a47113-4ba8-40b8-b84e-c355856b3515": {
    "senest": "2026-10-06",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=ada9da42-1f7c-4d62-bc61-f5035ba70e67": {
    "senest": "2026-10-02",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=24d333fb-a878-46f3-b662-dbe229c83910": {
    "senest": "2026-10-07",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=712c3db6-c563-4300-acea-0c18cc596dd4": {
    "senest": "2026-10-07",
-   "tjekket": "2026-10-25"
+   "tjekket": "2026-10-26"
   },
   "https://dagsordener.holstebro.dk/Sitemap/StaticPages": {
    "senest": "",
    "tjekket": "2026-10-24"
+  },
+  "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=e93ebd48-9d31-4f5c-8227-f72c1115e630": {
+   "senest": "2026-10-26",
+   "tjekket": "2026-10-26"
   }
  },
  "parser": 3,
- "opdateret": "2026-10-25T20:30:53.931Z",
+ "opdateret": "2026-10-26T12:26:08.758Z",
  "kommune": "Holstebro"
 }
