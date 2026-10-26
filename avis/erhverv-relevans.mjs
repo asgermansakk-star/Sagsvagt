@@ -4,6 +4,7 @@
 //
 // Bedømmelserne ligger i avis/erhverv-relevans.json, én pr. signal (id), og bliver der: et signal bedømmes kun én gang.
 // Nøglen læses fra RELEVANS_NOEGLE (ikke ANTHROPIC_API_KEY), så robottens andre trin ikke kan bruge den ved en fejl.
+// Er nøglen ikke bundet til et arbejdsrum i Anthropic-konsollen, skal arbejdsrummets id stå i RELEVANS_ARBEJDSRUM (wrkspc_…).
 //
 // Kør: RELEVANS_NOEGLE=… node avis/erhverv-relevans.mjs        nye signaler (højst MAKS, standard 3000)
 import { readFile, writeFile } from "node:fs/promises";
@@ -47,7 +48,8 @@ async function main() {
   const koe = indeks.signaler.filter((s) => !vurd[s.id]).sort((a, b) => b.kom - a.kom || b.dato.localeCompare(a.dato)).slice(0, MAKS);
   const raa = new Map();
   const raaFor = async (k) => { if (!raa.has(k)) raa.set(k, await raaSager(k)); return raa.get(k); };
-  const client = new Anthropic({ apiKey: noegle });
+  const arbejdsrum = process.env.RELEVANS_ARBEJDSRUM;
+  const client = new Anthropic({ apiKey: noegle, ...(arbejdsrum && { defaultHeaders: { "anthropic-workspace-id": arbejdsrum } }) });
   let ok = 0, fejl = 0, stop = false, tokensInd = 0, tokensUd = 0;
 
   const bedoem = async (s) => {
@@ -72,7 +74,10 @@ async function main() {
       try { vurd[s.id] = { ...(await bedoem(s)), m: MODEL, d: new Date().toISOString().slice(0, 10) }; ok++; }
       catch (e) {
         fejl++;
-        if (e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError || e instanceof Anthropic.NotFoundError) { stop = true; console.error(`Relevans: ${e.message}`); }
+        // Fejl i nøglen eller opsætningen rammer alle kald ens, så stop i stedet for at prøve alle signaler igennem
+        const opsaetning = e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError || e instanceof Anthropic.NotFoundError
+          || (e instanceof Anthropic.BadRequestError && /workspace|api key/i.test(e.message)) || (ok === 0 && fejl >= 20);
+        if (opsaetning) { if (!stop) console.error(`Relevans stoppet: ${e.message}`); stop = true; }
         else if (e instanceof Anthropic.RateLimitError) { koe.push(s); await new Promise((r) => setTimeout(r, 15000)); }
         else console.error(`Relevans ${s.id}: ${e.message}`);
       }

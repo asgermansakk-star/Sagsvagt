@@ -125,6 +125,7 @@ jobs:
           # Kun relevansbedømmelsen med Claude Haiku 5.5 får en nøgle (Asgers ja 26/10), og den har sin egen hemmelighed, så
           # "Skriv For og imod med AI" (som bruger ANTHROPIC_API_KEY) ikke går i gang. Projektkortene kører stadig uden AI.
           RELEVANS_NOEGLE: ${{ secrets.RELEVANS_NOEGLE }}
+          RELEVANS_ARBEJDSRUM: ${{ vars.RELEVANS_ARBEJDSRUM }}
 
       - name: Gem ændringer i repoet
         run: |
