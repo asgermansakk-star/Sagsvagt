@@ -1303,16 +1303,10 @@
     }).join("") : tom("Der er ingen indlæg endnu. Skriv det første om en sag, du har en holdning til.");
   }
 
-  // Alle indlæg sendes direkte til redaktionen (mansa@sagsvagt.dk) via FormSubmit. Første indsendelse udløser en
-  // aktiveringsmail fra FormSubmit til mansa@; indtil der er klikket "Activate Form", går indlæg ikke igennem,
-  // og skribenten får i stedet en færdigudfyldt mail til redaktionen.
+  // Indlæg sendes til redaktionen (mansa@sagsvagt.dk) via vores egen server (api/indlaeg.php, Simplys mailserver), som også
+  // sender skribenten en kvittering. Lykkes det ikke, får skribenten en færdigudfyldt mail til redaktionen i stedet.
   const REDAKTION = "mansa@sagsvagt.dk";
-  const FORM_ENDPOINT = `https://formsubmit.co/ajax/${REDAKTION}`;
-  const KVITTERING = "Tak for dit indlæg til Sagsvagt.\n\n"
-    + "Redaktionen har modtaget det. Vi læser alle indlæg og skriver til dig, hvis vi bringer dit. Vi kan forkorte indlægget og vælge en anden overskrift.\n\n"
-    + "Har du spørgsmål, så skriv til mansa@sagsvagt.dk.\n"
-    + "Sådan behandler vi dine oplysninger: https://sagsvagt.dk/privatliv.html\n\n"
-    + "Venlig hilsen\nSagsvagt";
+  const FORM_ENDPOINT = "../api/indlaeg.php";
   const MAKS = 2000, MIN = 200, KLADDE = "sv-kladde";
   const dlg = $("#skriv"), sf = $("#skriv-form"), FELTER = ["overskrift", "tekst", "navn", "titel", "by", "email"];
   const taeller = () => { const n = sf.tekst.value.length; $("#taeller").textContent = `${n.toLocaleString("da-DK")} / ${MAKS.toLocaleString("da-DK")} tegn`; $("#taeller").classList.toggle("over", n > MAKS); };
@@ -1347,14 +1341,13 @@
     const data = {
       overskrift: v.overskrift, tekst: v.tekst, navn: v.navn, titel: v.titel, by: v.by, email: v.email,
       sag: sag ? `${sag.t} (${hvor(sag.u, sag.kn)}, ${kort(sag.dato)})` : "Ingen bestemt sag",
-      sag_id: sag ? sag.id : "", sag_link: sag ? new URL(link(sag), location.href).href : "", tegn: v.tekst.length, kilde: "min-avis",
-      _subject: `Nyt indlæg: ${v.overskrift}`, _template: "table", _autoresponse: KVITTERING,
+      sag_id: sag ? sag.id : "", sag_link: sag ? new URL(link(sag), location.href).href : "", bekraeftet: sf.bekraeftet.checked,
     };
     btn.disabled = true; msg.className = "skriv-msg"; msg.textContent = "Sender …";
     try {
-      const res = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
+      const res = await fetch(FORM_ENDPOINT, { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) });
       const out = await res.json().catch(() => ({}));
-      if (!res.ok || String(out.success) === "false") throw new Error(out.message || res.status);
+      if (!res.ok || !out.ok) throw new Error(out.fejl || res.status);
       gemt(KLADDE, {}); sf.reset(); sf.hidden = true; $("#tak").hidden = false; $("#tak .send").focus();
     } catch (err) {
       console.warn("Indlæg fejlede:", err.message);

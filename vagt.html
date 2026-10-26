@@ -792,16 +792,8 @@
   addEventListener("scroll", onScroll, { passive: true }); onScroll();
 
   /* ---------- Tilmelding ---------- */
-  // Svarer vores server ikke, sendes tilmeldingen via FormSubmits aktiverede alias (kun det er aktiveret; en ny modtager
-  // uden aktivering brød tilmeldingen 10.-11. okt.) med en kopi (_cc) til mansa@sagsvagt.dk, der filtreres til mappen Signup.
-  // Afviser FormSubmit alligevel, tilbyder vi en færdigudfyldt mail til mansa@ i stedet.
+  // Svarer vores server ikke, tilbyder vi en færdigudfyldt mail til mansa@sagsvagt.dk. (Før gik den via FormSubmit i USA.)
   const SIGNUP_MAIL = "mansa@sagsvagt.dk";
-  const AUTOSVAR = "Tak, fordi du har skrevet dig op til Sagsvagt.\n\n"
-    + "Vi giver besked, når din kommune er klar. Derefter får du én mail hver mandag kl. 07.00 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
-    + "Vil du ændre dine emner eller afmelde dig, så skriv til mansa@sagsvagt.dk.\n"
-    + "Sådan behandler vi dine oplysninger: https://sagsvagt.dk/privatliv.html\n\n"
-    + "Venlig hilsen\nSagsvagt";
-  const FORM_ENDPOINT = "https://formsubmit.co/ajax/424d1304258cfcf5d9718ed239d32ff8";
   const mailto = (d) => `mailto:${SIGNUP_MAIL}?subject=${encodeURIComponent("Tilmelding til Sagsvagt")}&body=${encodeURIComponent(
     `Skriv mig op til Sagsvagt.\n\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n${d.medlem ? `Medlem af Sæt Dagsordenen: ${d.navn}, ${d.alder} år\n` : ""}`)}`;
   // Hvor kom den tilmeldte fra? Del fx sagsvagt.dk/vagt.html?fra=instagram eller ?fra=grupper
@@ -939,10 +931,9 @@
     data.medlem = medlem.checked;
     if (!medlem.checked) { delete data.navn; delete data.alder; }
     data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
-    data._subject = "Ny tilmelding til Sagsvagt"; data._template = "table"; data._cc = SIGNUP_MAIL; data._autoresponse = AUTOSVAR;
     btn.disabled = true; btn.classList.add("busy"); msg.className = "form-msg"; msg.textContent = "";
-    // Først vores egen server (api/tilmeld.php gemmer tilmeldingen, så den kan få en invitation til login).
-    // Svarer den ikke (fx uden PHP), bruges FormSubmit som før.
+    // Vores egen server (api/tilmeld.php) gemmer tilmeldingen, så den kan få en invitation til login.
+    // Svarer den ikke, får den tilmeldte en færdigudfyldt mail til redaktionen.
     try {
       const egen = await fetch("api/tilmeld.php", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) });
       if ((egen.headers.get("content-type") || "").includes("application/json")) {
@@ -952,18 +943,11 @@
         if (egen.ok) { faerdig(out.bekraeft); btn.disabled = false; btn.classList.remove("busy"); return; }
         if (egen.status === 400 || egen.status === 429) { msg.className = "form-msg err"; msg.textContent = out.fejl || "Noget gik galt."; btn.disabled = false; btn.classList.remove("busy"); return; }
       }
-    } catch (err) { console.warn("Egen server svarede ikke, bruger FormSubmit:", err.message); }
-    delete data.adgangskode; // adgangskoden må aldrig sendes til FormSubmit
-    try {
-      const res = await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(data) });
-      const out = await res.json().catch(() => ({}));
-      if (!res.ok || String(out.success) === "false") throw new Error(out.message || res.status);
-      faerdig();
-    } catch (err) {
-      console.warn("Tilmelding fejlede:", err.message);
-      msg.className = "form-msg err";
-      msg.innerHTML = `Tilmeldingen gik ikke igennem automatisk. <a href="${mailto(data)}" style="color:var(--kalk)">Send den som mail i stedet</a>, så skriver vi dig op.`;
-    } finally { btn.disabled = false; btn.classList.remove("busy"); }
+    } catch (err) { console.warn("Egen server svarede ikke:", err.message); }
+    delete data.adgangskode; // adgangskoden må aldrig stå i en mail
+    msg.className = "form-msg err";
+    msg.innerHTML = `Tilmeldingen gik ikke igennem automatisk. <a href="${mailto(data)}" style="color:var(--kalk)">Send den som mail i stedet</a>, så skriver vi dig op.`;
+    btn.disabled = false; btn.classList.remove("busy");
   });
 })();
 </script>
