@@ -19,6 +19,26 @@ const C = {
 };
 const SANS = "Montserrat, 'Segoe UI', Arial, sans-serif";
 const SERIF = SANS; // Montserrat er Sagsvagts eneste skrift
+// Mørk tilstand: mailprogrammer i mørk tilstand (Apple Mail, Outlook-apps) viser mailen med disse farver i stedet for at farve
+// om på egen hånd. moerk() giver hvert element en klasse ud fra dets egne farver; [data-ogsb]/[data-ogsc] er Outlooks markering
+// af elementer, den har farvet om. Samme tekst og regler som i api/_mandagsmail_lav.php.
+const MOERK_CSS = '<style>:root{color-scheme:light dark;supported-color-schemes:light dark}@media (prefers-color-scheme:dark){.mm-bg{background:#16171D!important}.mm-kort{background:#23242C!important}.mm-streg{background:#3A3B44!important}.mm-lys{background:#E6DFD3!important}.mm-knap{background:#E6DFD3!important;color:#0E0F14!important}.mm-tx{color:#E6DFD3!important}.mm-tx2{color:#CFC7BA!important}.mm-mu{color:#A29CA3!important}.mm-vin{color:#DCA9A5!important}.mm-ind{color:#B7BBD8!important}.mm-vinkant{border-color:#DCA9A5!important}}[data-ogsb] .mm-bg{background:#16171D!important}[data-ogsb] .mm-kort{background:#23242C!important}[data-ogsb] .mm-streg{background:#3A3B44!important}[data-ogsb] .mm-lys{background:#E6DFD3!important}[data-ogsb] .mm-knap{background:#E6DFD3!important}[data-ogsc] .mm-knap{color:#0E0F14!important}[data-ogsc] .mm-tx{color:#E6DFD3!important}[data-ogsc] .mm-tx2{color:#CFC7BA!important}[data-ogsc] .mm-mu{color:#A29CA3!important}[data-ogsc] .mm-vin{color:#DCA9A5!important}[data-ogsc] .mm-ind{color:#B7BBD8!important}[data-ogsc] .mm-vinkant{border-color:#DCA9A5!important}</style>';
+const moerk = (html) => html.replace(/ style="([^"]*)"/g, (m, s) => {
+  const k = [];
+  const bg = (s.match(/(?:^|;)background(?:-color)?:(#[0-9A-F]{6})/) || [])[1] || "";
+  const fg = (s.match(/(?:^|;)color:(#[0-9A-F]{6})/) || [])[1] || "";
+  const knap = bg === C.nat && fg === C.kalk;
+  if (bg && !s.includes("background-image")) {
+    const b = { [C.kalk]: "mm-bg", [C.kalkLys]: "mm-kort", [C.rule]: "mm-streg", [C.nat]: knap ? "mm-knap" : "mm-lys" }[bg] || "";
+    if (b) k.push(b);
+  }
+  if (fg && !knap) {
+    const f = { [C.nat]: "mm-tx", [C.brod]: "mm-tx2", [C.muted]: "mm-mu", [C.vin]: "mm-vin", [C.indigo]: "mm-ind" }[fg] || "";
+    if (f) k.push(f);
+  }
+  if (new RegExp(`border[a-z-]*:[^;]*${C.vin}`).test(s)) k.push("mm-vinkant");
+  return (k.length ? ` class="${k.join(" ")}"` : "") + m;
+});
 const SITE = "https://sagsvagt.dk/";
 const REDAKTION = "mansa@sagsvagt.dk";
 // Mailens billeder (toppen i Mødet-gradienten, sektionsikoner og symbolet i bunden). Mailen skal give mening uden dem.
@@ -67,7 +87,7 @@ export function vaelgSager({ data, profil, idag }) {
 // Mailens top (logo, uge og dato) og bund (afsender, afmelding), fælles for mandagsmailen og ventelistemailen
 // Toppen: et natkort over modtagerens (første) kommune fra assets/mail/natkort/, ellers Mødet-gradienten. Nat er reserven.
 const mailTop = ({ emne, preheader, uge, idag, logo, kommune = "" }) => { const bg = `${MAIL}${kommune ? `natkort/${kommune}.jpg` : "top.jpg"}`; return `<!doctype html>
-<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light"><meta name="x-apple-disable-message-reformatting"><meta name="format-detection" content="telephone=no, date=no, address=no"><title>${esc(emne)}</title></head>
+<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark"><meta name="x-apple-disable-message-reformatting"><meta name="format-detection" content="telephone=no, date=no, address=no"><title>${esc(emne)}</title>${MOERK_CSS}</head>
 <body style="margin:0;padding:0;background:${C.kalk};">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(preheader)}</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="${C.kalk}" style="background:${C.kalk};"><tr><td align="center" style="padding:24px 12px 40px;">
@@ -200,7 +220,7 @@ ${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0
     + del("Besluttet", v.besluttet) + del("Det skal de tage stilling til", v.kommer) + del(`Fra ${hvor(profil.bydel || "")}`, v.bydel)
     + tekstBund(afmeld);
 
-  return { emne, preheader, html, tekst, antal: { besluttet: nB, kommer: nK, bydel: v.bydel.length } };
+  return { emne, preheader, html: moerk(html), tekst, antal: { besluttet: nB, kommer: nK, bydel: v.bydel.length } };
 }
 
 // ---------- Ventelistemailen ----------
@@ -236,5 +256,5 @@ export function lavVentemail({ kommuner = [], aabne = [], idag, navn = "", modta
       : "Du har ikke skrevet, hvilken kommune du vil følge. Svar på denne mail med navnet på din kommune, så sætter vi den i køen.")
     + (aabne.length ? `\n\nLige nu følger vi byrådene i ${aabne.length} af ${IALT} kommuner: ${SITE}kommune/` : "")
     + tekstBund(afmeld, false);
-  return { emne, preheader, html, tekst, antal: { besluttet: 0, kommer: 0, bydel: 0 }, vente: true };
+  return { emne, preheader, html: moerk(html), tekst, antal: { besluttet: 0, kommer: 0, bydel: 0 }, vente: true };
 }

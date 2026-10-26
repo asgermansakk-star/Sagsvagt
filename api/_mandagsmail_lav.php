@@ -18,6 +18,28 @@ const MM_REDAKTION = 'mansa@sagsvagt.dk';
 // Mailens billeder (toppen i Mødet-gradienten, sektionsikoner og symbolet i bunden). Mailen skal give mening uden dem.
 const MM_MAIL = MM_SITE . 'assets/mail/';
 const MM_VIS = 4;
+// Mørk tilstand: mailprogrammer i mørk tilstand (Apple Mail, Outlook-apps) viser mailen med disse farver i stedet for at farve
+// om på egen hånd. mm_moerk() giver hvert element en klasse ud fra dets egne farver; [data-ogsb]/[data-ogsc] er Outlooks markering
+// af elementer, den har farvet om. Samme tekst og regler som i assets/mandagsmail.js.
+const MM_MOERK_CSS = '<style>:root{color-scheme:light dark;supported-color-schemes:light dark}@media (prefers-color-scheme:dark){.mm-bg{background:#16171D!important}.mm-kort{background:#23242C!important}.mm-streg{background:#3A3B44!important}.mm-lys{background:#E6DFD3!important}.mm-knap{background:#E6DFD3!important;color:#0E0F14!important}.mm-tx{color:#E6DFD3!important}.mm-tx2{color:#CFC7BA!important}.mm-mu{color:#A29CA3!important}.mm-vin{color:#DCA9A5!important}.mm-ind{color:#B7BBD8!important}.mm-vinkant{border-color:#DCA9A5!important}}[data-ogsb] .mm-bg{background:#16171D!important}[data-ogsb] .mm-kort{background:#23242C!important}[data-ogsb] .mm-streg{background:#3A3B44!important}[data-ogsb] .mm-lys{background:#E6DFD3!important}[data-ogsb] .mm-knap{background:#E6DFD3!important}[data-ogsc] .mm-knap{color:#0E0F14!important}[data-ogsc] .mm-tx{color:#E6DFD3!important}[data-ogsc] .mm-tx2{color:#CFC7BA!important}[data-ogsc] .mm-mu{color:#A29CA3!important}[data-ogsc] .mm-vin{color:#DCA9A5!important}[data-ogsc] .mm-ind{color:#B7BBD8!important}[data-ogsc] .mm-vinkant{border-color:#DCA9A5!important}</style>';
+function mm_moerk(string $html): string {
+    return preg_replace_callback('/ style="([^"]*)"/', function (array $m): string {
+        $s = $m[1]; $k = [];
+        $bg = preg_match('/(?:^|;)background(?:-color)?:(#[0-9A-F]{6})/', $s, $x) ? $x[1] : '';
+        $fg = preg_match('/(?:^|;)color:(#[0-9A-F]{6})/', $s, $x) ? $x[1] : '';
+        $knap = $bg === MM_C['nat'] && $fg === MM_C['kalk'];
+        if ($bg !== '' && !str_contains($s, 'background-image')) {
+            $b = [MM_C['kalk'] => 'mm-bg', MM_C['kalkLys'] => 'mm-kort', MM_C['rule'] => 'mm-streg', MM_C['nat'] => $knap ? 'mm-knap' : 'mm-lys'][$bg] ?? '';
+            if ($b !== '') $k[] = $b;
+        }
+        if ($fg !== '' && !$knap) {
+            $f = [MM_C['nat'] => 'mm-tx', MM_C['brod'] => 'mm-tx2', MM_C['muted'] => 'mm-mu', MM_C['vin'] => 'mm-vin', MM_C['indigo'] => 'mm-ind'][$fg] ?? '';
+            if ($f !== '') $k[] = $f;
+        }
+        if (preg_match('/border[a-z-]*:[^;]*' . MM_C['vin'] . '/', $s)) $k[] = 'mm-vinkant';
+        return ($k ? ' class="' . implode(' ', $k) . '"' : '') . $m[0];
+    }, $html);
+}
 
 // ---------- Små hjælpere (som i JS) ----------
 function mm_esc(?string $s): string { return htmlspecialchars((string)$s, ENT_COMPAT | ENT_SUBSTITUTE, 'UTF-8'); }
@@ -127,7 +149,7 @@ function mm_mail_top(string $emne, string $preheader, int $uge, string $idag, st
     $C = MM_C; $S = MM_SANS;
     $bg = MM_MAIL . ($kommune !== '' ? 'natkort/' . $kommune . '.jpg' : 'top.jpg');
     return "<!doctype html>\n"
-      . '<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light only"><meta name="supported-color-schemes" content="light"><meta name="x-apple-disable-message-reformatting"><meta name="format-detection" content="telephone=no, date=no, address=no"><title>' . mm_esc($emne) . "</title></head>\n"
+      . '<html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark"><meta name="x-apple-disable-message-reformatting"><meta name="format-detection" content="telephone=no, date=no, address=no"><title>' . mm_esc($emne) . '</title>' . MM_MOERK_CSS . "</head>\n"
       . "<body style=\"margin:0;padding:0;background:{$C['kalk']};\">\n"
       . '<div style="display:none;max-height:0;overflow:hidden;opacity:0;">' . mm_esc($preheader) . "</div>\n"
       . "<table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" bgcolor=\"{$C['kalk']}\" style=\"background:{$C['kalk']};\"><tr><td align=\"center\" style=\"padding:24px 12px 40px;\">\n"
@@ -285,7 +307,7 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
       . $del('Besluttet', $v['besluttet']) . $del('Det skal de tage stilling til', $v['kommer']) . $del('Fra ' . $bydelNavn, $v['bydel'])
       . mm_tekst_bund($afmeld);
 
-    return ['emne' => $emne, 'preheader' => $preheader, 'html' => $html, 'tekst' => $tekst,
+    return ['emne' => $emne, 'preheader' => $preheader, 'html' => mm_moerk($html), 'tekst' => $tekst,
         'antal' => ['besluttet' => $nB, 'kommer' => $nK, 'bydel' => count($v['bydel'])]];
 }
 
@@ -320,7 +342,7 @@ function mm_lav_ventemail(array $kommuner, array $aabne, string $idag, string $n
         : 'Du har ikke skrevet, hvilken kommune du vil følge. Svar på denne mail med navnet på din kommune, så sætter vi den i køen.')
       . ($aabne ? "\n\nLige nu følger vi byrådene i {$n} af {$IALT} kommuner: " . MM_SITE . 'kommune/' : '')
       . mm_tekst_bund($afmeld, false);
-    return ['emne' => $emne, 'preheader' => $preheader, 'html' => $html, 'tekst' => $tekst, 'antal' => ['besluttet' => 0, 'kommer' => 0, 'bydel' => 0], 'vente' => true];
+    return ['emne' => $emne, 'preheader' => $preheader, 'html' => mm_moerk($html), 'tekst' => $tekst, 'antal' => ['besluttet' => 0, 'kommer' => 0, 'bydel' => 0], 'vente' => true];
 }
 
 // ---------- Ugens mail til én tilmeldt (som forbered() på admin-siden) ----------
