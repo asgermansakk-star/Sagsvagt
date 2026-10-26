@@ -39,13 +39,24 @@ if ($up->rowCount() === 0) {
     catch (PDOException $e) { $up->execute([$dato, $sti, $kilde]); } // to samtidige første besøg
 }
 http_response_code(204);
-// Push-beskeder: er sagerne opdateret siden sidst, sendes beskederne nu, efter at svaret til den besøgende er afsendt
-// (robotten kan ikke kalde siden direkte, fordi Simply spærrer for robotter). Se api/_push.php.
-if (function_exists('fastcgi_finish_request')) {
-    fastcgi_finish_request();
-    try { require_once __DIR__ . '/_push.php'; push_maaske_koer(); } catch (Throwable $e) { error_log('Sagsvagt push: ' . $e->getMessage()); }
-    // Mandagsmailen (se api/_mandagsmail.php): søndag fra kl. 18 lægges ugens mails i kø én gang, og planlagte mails sendes,
-    // når tiden er kommet
-    try { require_once __DIR__ . '/_mandagsmail.php'; mm_maaske_planlaeg(); } catch (Throwable $e) { error_log('Sagsvagt mandagsmail (planlægning): ' . $e->getMessage()); }
-    try { require_once __DIR__ . '/_mandagsmail.php'; mm_maaske_send(); } catch (Throwable $e) { error_log('Sagsvagt mandagsmail: ' . $e->getMessage()); }
-}
+// Opgaverne efter svaret: push-beskeder (api/_push.php) og mandagsmailen (api/_mandagsmail.php: søndag fra kl. 18 lægges ugens
+// mails i kø én gang, og planlagte mails sendes, når tiden er kommet). Robotten kan ikke kalde siden direkte, fordi Simply
+// spærrer for robotter, så de kører, når nogen besøger siden. Svaret sendes færdigt først, så den besøgende ikke venter.
+// Har PHP hverken fastcgi_finish_request eller litespeed_finish_request, lukkes forbindelsen med Content-Length: 0 i stedet.
+if (function_exists('fastcgi_finish_request')) fastcgi_finish_request();
+elseif (function_exists('litespeed_finish_request')) litespeed_finish_request();
+else { ignore_user_abort(true); header('Connection: close'); header('Content-Length: 0'); while (ob_get_level() > 0) ob_end_flush(); flush(); }
+@set_time_limit(240);
+// Hver opgave husker, hvornår den sidst kørte, og den seneste fejl, så api/admin/drift.php kan vise det
+$opgave = function (string $navn, callable $f) use ($db): void {
+    $gem = function (string $noegle, string $vaerdi) use ($db): void {
+        $vaerdi = mb_substr($vaerdi, 0, 250);
+        $q = $db->prepare('UPDATE indstillinger SET vaerdi = ? WHERE noegle = ?'); $q->execute([$vaerdi, $noegle]);
+        if ($q->rowCount() === 0) { try { $db->prepare('INSERT INTO indstillinger (noegle, vaerdi) VALUES (?, ?)')->execute([$noegle, $vaerdi]); } catch (PDOException $e) {} }
+    };
+    try { $f(); $gem("drift:$navn", nu()); }
+    catch (Throwable $e) { error_log("Sagsvagt $navn: " . $e->getMessage()); $gem("fejl:$navn", nu() . ' ' . $e->getMessage()); }
+};
+$opgave('push', function () { require_once __DIR__ . '/_push.php'; push_maaske_koer(); });
+$opgave('mm-plan', function () { require_once __DIR__ . '/_mandagsmail.php'; mm_maaske_planlaeg(); });
+$opgave('mm-send', function () { require_once __DIR__ . '/_mandagsmail.php'; mm_maaske_send(); });

@@ -126,8 +126,37 @@ jobs:
       # færdig, så en kørsel, der rammer tidsgrænsen, ikke starter forfra næste gang. De ~21.500 sagssider og de lige
       # så mange sags-json'er tager ellers over 5 timer, når alle sider ændres på én gang (nyt layout, 25/10-2026).
       # Bidderne er udeladt fra hovedtrinnet (der heller ikke sletter dem på serveren, fordi exclude også gælder dér).
+      # Simply svarer af og til "421 Service temporarily unavailable". Hver bid får derfor et nyt forsøg efter 2 minutter.
       - name: Upload til Simply (FTPS)
+        id: upload0
         if: env.FTP_SERVER != ''
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}
+          state-name: .ftp-deploy-sync-state.json
+          timeout: 120000
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            sag/**
+            assets/sager/**
+
+      - name: Vent 2 minutter (Upload til Simply (FTPS))
+        if: steps.upload0.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload til Simply (FTPS) (nyt forsøg)
+        id: upload0b
+        if: steps.upload0.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -147,7 +176,31 @@ jobs:
             assets/sager/**
 
       - name: Upload sagssider a-g
+        id: upload1
         if: env.FTP_SERVER != ''
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/sag/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}sag/
+          state-name: .ftp-state-a-g.json
+          timeout: 120000
+          exclude: |
+            [!a-g]*
+
+      - name: Vent 2 minutter (Upload sagssider a-g)
+        if: steps.upload1.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload sagssider a-g (nyt forsøg)
+        id: upload1b
+        if: steps.upload1.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -163,7 +216,31 @@ jobs:
             [!a-g]*
 
       - name: Upload sagssider h-k
+        id: upload2
         if: env.FTP_SERVER != ''
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/sag/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}sag/
+          state-name: .ftp-state-h-k.json
+          timeout: 120000
+          exclude: |
+            [!h-k]*
+
+      - name: Vent 2 minutter (Upload sagssider h-k)
+        if: steps.upload2.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload sagssider h-k (nyt forsøg)
+        id: upload2b
+        if: steps.upload2.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -179,7 +256,31 @@ jobs:
             [!h-k]*
 
       - name: Upload sagssider l-r
+        id: upload3
         if: env.FTP_SERVER != ''
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/sag/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}sag/
+          state-name: .ftp-state-l-r.json
+          timeout: 120000
+          exclude: |
+            [!l-r]*
+
+      - name: Vent 2 minutter (Upload sagssider l-r)
+        if: steps.upload3.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload sagssider l-r (nyt forsøg)
+        id: upload3b
+        if: steps.upload3.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -195,7 +296,31 @@ jobs:
             [!l-r]*
 
       - name: Upload sagssider s-z
+        id: upload4
         if: env.FTP_SERVER != ''
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/sag/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}sag/
+          state-name: .ftp-state-s-z.json
+          timeout: 120000
+          exclude: |
+            [!s-z]*
+
+      - name: Vent 2 minutter (Upload sagssider s-z)
+        if: steps.upload4.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload sagssider s-z (nyt forsøg)
+        id: upload4b
+        if: steps.upload4.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -211,7 +336,31 @@ jobs:
             [!s-z]*
 
       - name: Upload sags-json a-g
+        id: upload5
         if: env.FTP_SERVER != ''
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/assets/sager/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}assets/sager/
+          state-name: .ftp-state-a-g.json
+          timeout: 120000
+          exclude: |
+            [!a-g]*
+
+      - name: Vent 2 minutter (Upload sags-json a-g)
+        if: steps.upload5.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload sags-json a-g (nyt forsøg)
+        id: upload5b
+        if: steps.upload5.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -227,7 +376,31 @@ jobs:
             [!a-g]*
 
       - name: Upload sags-json h-k
+        id: upload6
         if: env.FTP_SERVER != ''
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/assets/sager/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}assets/sager/
+          state-name: .ftp-state-h-k.json
+          timeout: 120000
+          exclude: |
+            [!h-k]*
+
+      - name: Vent 2 minutter (Upload sags-json h-k)
+        if: steps.upload6.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload sags-json h-k (nyt forsøg)
+        id: upload6b
+        if: steps.upload6.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -243,7 +416,31 @@ jobs:
             [!h-k]*
 
       - name: Upload sags-json l-r
+        id: upload7
         if: env.FTP_SERVER != ''
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/assets/sager/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}assets/sager/
+          state-name: .ftp-state-l-r.json
+          timeout: 120000
+          exclude: |
+            [!l-r]*
+
+      - name: Vent 2 minutter (Upload sags-json l-r)
+        if: steps.upload7.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload sags-json l-r (nyt forsøg)
+        id: upload7b
+        if: steps.upload7.outcome == 'failure'
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -259,7 +456,9 @@ jobs:
             [!l-r]*
 
       - name: Upload sags-json s-z
+        id: upload8
         if: env.FTP_SERVER != ''
+        continue-on-error: true
         uses: SamKirkland/FTP-Deploy-Action@v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -273,6 +472,44 @@ jobs:
           timeout: 120000
           exclude: |
             [!s-z]*
+
+      - name: Vent 2 minutter (Upload sags-json s-z)
+        if: steps.upload8.outcome == 'failure'
+        run: sleep 120
+
+      - name: Upload sags-json s-z (nyt forsøg)
+        id: upload8b
+        if: steps.upload8.outcome == 'failure'
+        continue-on-error: true
+        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./_deploy/assets/sager/
+          server-dir: ${{ vars.FTP_SERVER_DIR || 'public_html/' }}assets/sager/
+          state-name: .ftp-state-s-z.json
+          timeout: 120000
+          exclude: |
+            [!s-z]*
+
+      # Fejlede en bid også i andet forsøg, er kørslen rød (så alarmen ser det). Bidderne gemmer hver deres tilstand,
+      # så næste kørsel fortsætter med det, der mangler.
+      - name: Tjek uploaden
+        if: env.FTP_SERVER != ''
+        run: |
+          if [ "${{ steps.upload0.outcome }}" = failure ] && [ "${{ steps.upload0b.outcome }}" != success ]; then echo "::error::Uploadbid upload0 fejlede to gange"; FEJL=1; fi
+          if [ "${{ steps.upload1.outcome }}" = failure ] && [ "${{ steps.upload1b.outcome }}" != success ]; then echo "::error::Uploadbid upload1 fejlede to gange"; FEJL=1; fi
+          if [ "${{ steps.upload2.outcome }}" = failure ] && [ "${{ steps.upload2b.outcome }}" != success ]; then echo "::error::Uploadbid upload2 fejlede to gange"; FEJL=1; fi
+          if [ "${{ steps.upload3.outcome }}" = failure ] && [ "${{ steps.upload3b.outcome }}" != success ]; then echo "::error::Uploadbid upload3 fejlede to gange"; FEJL=1; fi
+          if [ "${{ steps.upload4.outcome }}" = failure ] && [ "${{ steps.upload4b.outcome }}" != success ]; then echo "::error::Uploadbid upload4 fejlede to gange"; FEJL=1; fi
+          if [ "${{ steps.upload5.outcome }}" = failure ] && [ "${{ steps.upload5b.outcome }}" != success ]; then echo "::error::Uploadbid upload5 fejlede to gange"; FEJL=1; fi
+          if [ "${{ steps.upload6.outcome }}" = failure ] && [ "${{ steps.upload6b.outcome }}" != success ]; then echo "::error::Uploadbid upload6 fejlede to gange"; FEJL=1; fi
+          if [ "${{ steps.upload7.outcome }}" = failure ] && [ "${{ steps.upload7b.outcome }}" != success ]; then echo "::error::Uploadbid upload7 fejlede to gange"; FEJL=1; fi
+          if [ "${{ steps.upload8.outcome }}" = failure ] && [ "${{ steps.upload8b.outcome }}" != success ]; then echo "::error::Uploadbid upload8 fejlede to gange"; FEJL=1; fi
+          exit ${FEJL:-0}
 
       - name: Mangler FTP-oplysninger
         if: env.FTP_SERVER == ''
