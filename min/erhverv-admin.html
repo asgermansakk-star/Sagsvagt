@@ -77,6 +77,7 @@
     <h1>Sagsvagt Erhverv</h1>
     <p class="lille" style="font-size:.9375rem;max-width:46em">Kunder og piloter. Hver kunde får et privat link til sin rapport og (hvis slået til) en mail hver mandag kl. 7. Søndag aften får du en prøvemail med en stop-knap, ligesom mandagsmailen. Kunderne ligger kun i databasen, ikke i repoet.</p>
     <div class="tal" id="tal"></div>
+    <p class="lille" id="tragt" style="font-size:.9375rem;margin:-6px 0 18px"></p>
     <p class="besked" id="besked" role="status"></p>
     <div id="nyt-link" class="link-boks" hidden></div>
     <p><button class="knap" type="button" id="ny-kunde">Ny kunde</button> <button class="knap sek" type="button" id="faktura">Fakturaliste for en måned</button></p>
@@ -141,6 +142,11 @@
       $("#tal").innerHTML = [["Piloter", k.filter(function (x) { return x.status === "proeve"; }).length], ["Aktive kunder", k.filter(function (x) { return x.status === "aktiv"; }).length],
         ["kr./md. i alt", mrr.toLocaleString("da-DK")], ["Besøg i rapporterne", sum("besoeg")], ["Relevante / ikke", sum("ja") + " / " + sum("nej")], ["Mails sendt", sum("mails")]]
         .map(function (x) { return "<div><b>" + esc(x[1]) + "</b>" + esc(x[0]) + "</div>"; }).join("");
+      // Tragten: fra prøve til betalende kunde (det, der viser, om salget virker)
+      var tragt = [["Prøver startet", k.length], ["Bekræftet", k.filter(function (x) { return x.status !== "venter"; }).length],
+        ["Åbnet 3+ gange", k.filter(function (x) { return +x.besoeg >= 3; }).length], ["Har markeret signaler", k.filter(function (x) { return x.ja + x.nej > 0; }).length],
+        ["Bruger pipelinen", k.filter(function (x) { return x.pipeline > 0; }).length], ["Betalende", k.filter(function (x) { return x.status === "aktiv"; }).length]];
+      $("#tragt").innerHTML = "<b>Fra prøve til kunde:</b> " + tragt.map(function (t) { return esc(t[0]) + " <b>" + t[1] + "</b>"; }).join(" → ");
       $("#indeks").textContent = j.genereret ? "Signalindekset er bygget " + tid(j.genereret) + " af robotten (" + j.kommuner.length + " åbne kommuner)." : "Signalindekset findes ikke endnu på serveren. Det bygges ved robottens næste kørsel.";
       var navn = {}; j.kommuner.forEach(function (x) { navn[x.slug] = x.navn; });
       var idag = new Date().toISOString().slice(0, 10), om14 = new Date(Date.now() + 14 * 864e5).toISOString().slice(0, 10);
