@@ -52,14 +52,14 @@ const SYSTEM = `Du læser sager fra danske kommuners dagsordener og referater fo
 Udfyld projektkortet ud fra sagens egen tekst. Skriv kun, hvad teksten siger; brug null, hvis noget ikke står der, og gæt ikke. Beløb skal stå i hele kroner. Nævn aldrig privatpersoner (heller ikke lodsejere eller borgere med navn); kun virksomheder, foreninger og myndigheder. Skriv på dansk, kort og neutralt.`;
 
 // ---------- Tekster ----------
-async function raaSager(slug) {
+export async function raaSager(slug) {
   const fil = join(ROD, "data", slug === "koebenhavn" ? "kk.json" : `${slug}.json`);
   try {
     const d = JSON.parse(await readFile(fil, "utf8"));
     return new Map((Array.isArray(d.sager) ? d.sager : Object.values(d.sager || {})).map((s) => [s.id, s]));
   } catch { return new Map(); }
 }
-function sagsTekst(sig, raa) {
+export function sagsTekst(sig, raa) {
   const r = raa?.get(sig.id);
   const afsnit = r?.afsnit?.length ? r.afsnit.map((a) => `## ${a.titel}\n${a.tekst}`).join("\n\n") : sig.d || "";
   const bilag = r?.bilag?.length ? `\n\n## Bilag (kun titler)\n${r.bilag.map((b) => `- ${b.titel || b.navn || b}`).join("\n")}` : "";

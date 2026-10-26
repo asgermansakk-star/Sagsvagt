@@ -109,18 +109,21 @@ jobs:
 
       # Sagsvagt Erhverv: kommunernes EU-udbud fra TED (data/udbud.json), projektkort til nye signaler og signalindekset til
       # kundernes rapport og mail (api/_erhverv-signaler.json, ikke i repoet). Indekset bygges før og efter kortene.
-      # Ingen AI endnu (Asgers beslutning 26/10): uden ANTHROPIC_API_KEY finder avis/erhverv-fakta.mjs kun beløbet.
+      # Relevansen (1–3) bedømmes af Claude Haiku 5.5; projektkortene kører uden AI (avis/erhverv-fakta.mjs finder kun beløbet).
       # Stederne til kortet slås op i OpenStreetMap og fejler aldrig robotten.
       - name: Sagsvagt Erhverv
         continue-on-error: true
         run: |
           node avis/udbud.mjs
           node avis/signaler.mjs --indeks
+          node avis/erhverv-relevans.mjs
           node avis/erhverv-fakta.mjs
           node avis/erhverv-fakta.mjs --steder 100 || true
           node avis/signaler.mjs --indeks
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://sagsvagt.dk/' }}
+          # Kun relevansbedømmelsen med Claude Haiku 5.5 får nøglen (Asgers ja 26/10). Projektkortene kører stadig uden AI.
+          RELEVANS_NOEGLE: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Gem ændringer i repoet
         run: |

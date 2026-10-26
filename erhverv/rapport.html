@@ -65,7 +65,7 @@ main{padding:28px 0 64px}
 .vurder button[aria-pressed="true"][data-v="ja"]{background:var(--indigo);border-color:var(--indigo);color:var(--kalk)}
 .vurder button[aria-pressed="true"][data-v="nej"]{background:var(--kalk-mork);border-color:var(--kalk-mork);color:var(--nat)}
 .vurder button[aria-pressed="true"][data-f]{background:var(--nat);border-color:var(--nat);color:var(--kalk)}
-.signal.fravalgt{opacity:.55}
+.signal.fravalgt{opacity:.55}.signal.lav{opacity:.72}
 /* Udbud */
 .udbud{padding:18px 0;border-bottom:1px solid var(--rule)}
 .udbud h3{font:700 17px/1.3 var(--sans);margin-bottom:4px}.udbud h3 a{color:var(--nat);text-decoration:none}.udbud h3 a:hover{text-decoration:underline}
@@ -139,6 +139,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     <select id="f-stadie" aria-label="Stadie"></select>
     <select id="f-branche" aria-label="Branche"></select>
     <select id="f-kommune" aria-label="Kommune"></select>
+    <select id="f-relevans" aria-label="Relevans"><option value="">Alle signaler</option><option value="2">Kun relevante</option><option value="3">Kun de vigtigste</option></select>
     <select id="f-sort" aria-label="Sortering"><option value="nyeste">Nyeste først</option><option value="beloeb">Største beløb først</option><option value="tidligst">Tidligste stadie først</option><option value="moede">Næste møde først</option></select>
     <input id="f-soeg" type="search" placeholder="Søg" aria-label="Søg">
   </div>
@@ -239,8 +240,9 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
       var b = Object.keys(brancher).sort(function (x, y) { return brancher[y] - brancher[x]; });
       $("#f-branche").innerHTML = '<option value="">Alle brancher</option>' + b.map(function (x) { return '<option value="' + esc(x) + '">Til ' + esc(x) + " (" + brancher[x] + ")</option>"; }).join("");
       $("#f-branche").classList.toggle("skjult", !b.length);
-      $("#f-sort").innerHTML = '<option value="nyeste">Nyeste først</option><option value="beloeb">Største beløb først</option><option value="tidligst">Tidligste stadie først</option><option value="moede">Næste møde først</option>';
+      $("#f-sort").innerHTML = '<option value="relevans">Mest relevante først</option><option value="nyeste">Nyeste først</option><option value="beloeb">Største beløb først</option><option value="tidligst">Tidligste stadie først</option><option value="moede">Næste møde først</option>';
     }
+    $("#f-relevans").classList.toggle("skjult", fane === "udbud" || !alle.some(function (s) { return s.rv; }));
     $("#f-kommune").innerHTML = '<option value="">Alle kommuner</option>' + k.kommuner.map(function (x) { return '<option value="' + x.slug + '">' + esc(x.navn) + "</option>"; }).join("");
     $("#f-kommune").classList.toggle("skjult", k.kommuner.length < 2);
     $("#f-soeg").placeholder = fane === "udbud" ? "Søg i udbuddene" : "Søg i signalerne";
@@ -264,8 +266,9 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
   var aabentUdbud = function (u) { return u.art === "kommer" || (u.art === "aaben" && (u.frist ? u.frist >= idag : u.dato >= for45)); };
 
   function filtreret() {
-    var t = $("#f-type").value, st = $("#f-stadie").value, br = $("#f-branche").value, ko = $("#f-kommune").value, q = $("#f-soeg").value.trim().toLowerCase();
+    var t = $("#f-type").value, st = $("#f-stadie").value, br = $("#f-branche").value, ko = $("#f-kommune").value, q = $("#f-soeg").value.trim().toLowerCase(), rv = +$("#f-relevans").value || 0;
     var l = alle.filter(function (s) {
+      if (rv && s.rv && s.rv < rv && !s.ty.ord) return false;
       if (fane === "nye" && !erNy(s)) return false;
       if (fane === "kommende" && !(s.kom && s.dato >= idag)) return false;
       if (fane === "relevante" && vurd[s.id] !== "ja") return false;
@@ -282,7 +285,9 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     if (fane === "foelger") { var set = {}; l = l.sort(function (a, b) { return b.dato.localeCompare(a.dato); }).filter(function (s) { return set[s.n] ? false : (set[s.n] = 1); }); }
     var sort = fane === "kommende" ? "moede" : $("#f-sort").value, r = D.meta.raekke;
     var belob = function (s) { return (s.f && s.f.beloeb_kr) || 0; };
-    l.sort(sort === "tidligst" ? function (a, b) { return (r.indexOf(a.sd) + 1 || 9) - (r.indexOf(b.sd) + 1 || 9) || b.dato.localeCompare(a.dato); }
+    var rel = function (s) { return s.ty.ord ? 3 : s.rv || 2; };
+    l.sort(sort === "relevans" ? function (a, b) { return rel(b) - rel(a) || (b.kom - a.kom) || b.dato.localeCompare(a.dato); }
+      : sort === "tidligst" ? function (a, b) { return (r.indexOf(a.sd) + 1 || 9) - (r.indexOf(b.sd) + 1 || 9) || b.dato.localeCompare(a.dato); }
       : sort === "beloeb" ? function (a, b) { return belob(b) - belob(a) || b.dato.localeCompare(a.dato); }
       : sort === "moede" ? function (a, b) { return (b.kom - a.kom) || a.dato.localeCompare(b.dato); }
       : function (a, b) { return b.dato.localeCompare(a.dato); });
@@ -330,9 +335,9 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     var m = D.meta, link = "../" + s.url, st = (m.stadier.find(function (x) { return x.id === s.sd; }) || {}).navn, f = s.f;
     var typer = tyNavne(s).map(function (t) { return /^Søgeord/.test(t) ? '<span class="ord">' + esc(t) + "</span>" : esc(t); }).filter(function (t, i, a) { return a.indexOf(t) === i; }).join(" / ");
     var v = vurd[s.id] || "", fl = s.n && foelg[s.n], nyBeh = fl && s.dato > fl.dato;
-    return '<article class="signal' + (v === "nej" ? " fravalgt" : "") + '" data-id="' + esc(s.id) + '">'
+    return '<article class="signal' + (v === "nej" ? " fravalgt" : s.rv === 1 && !s.ty.ord ? " lav" : "") + '" data-id="' + esc(s.id) + '">'
       + '<a class="sb" href="' + esc(link) + '" tabindex="-1" aria-hidden="true"><img src="../' + esc(s.b) + '" alt="" loading="lazy"></a><div>'
-      + '<p class="kicker">' + (nyBeh ? '<span class="ny blaa">Ny behandling</span>' : erNy(s) ? '<span class="ny">Ny</span>' : "") + '<span class="kn">' + esc(s.kn) + "</span> · " + typer
+      + '<p class="kicker"' + (s.rg ? ' title="' + esc("Relevans " + s.rv + ": " + s.rg) + '"' : "") + ">" + (s.rv === 3 ? '<span class="ny blaa">Vigtig</span>' : "") + (nyBeh ? '<span class="ny blaa">Ny behandling</span>' : erNy(s) ? '<span class="ny">Ny</span>' : "") + '<span class="kn">' + esc(s.kn) + "</span> · " + typer
       + (st ? ' · <span class="st st-' + s.sd + '">' + esc(st) + "</span>" : "") + (s.kom ? ' · <span class="kom">Møde ' + dato(s.dato) + "</span>" : "") + "</p>"
       + '<h3><a href="' + esc(link) + '">' + esc(s.t) + "</a></h3>"
       + chips(f)
@@ -511,7 +516,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     fane = f; vis = 40; if (skift) fyldFiltre(); tegn();
   }
   document.querySelectorAll("[data-fane]").forEach(function (b) { b.addEventListener("click", function () { vaelgFane(b.dataset.fane); if (b.closest(".tal")) document.querySelector(".vaerk").scrollIntoView({ behavior: "smooth" }); }); });
-  ["#f-type", "#f-stadie", "#f-branche", "#f-kommune", "#f-sort"].forEach(function (id) { $(id).addEventListener("change", function () { vis = 40; tegn(); }); });
+  ["#f-type", "#f-stadie", "#f-branche", "#f-kommune", "#f-sort", "#f-relevans"].forEach(function (id) { $(id).addEventListener("change", function () { vis = 40; tegn(); }); });
   $("#f-soeg").addEventListener("input", function () { vis = 40; tegn(); });
   $("#vis-flere").addEventListener("click", function () { vis += 40; tegn(); });
   $("#liste").addEventListener("click", function (e) {

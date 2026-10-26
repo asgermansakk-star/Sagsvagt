@@ -184,11 +184,14 @@ function er_mail_til(array $kunde, string $uge): ?array {
     $fra = date('Y-m-d', strtotime($uge) - 7 * 86400);
     $til14 = date('Y-m-d', strtotime($uge) + 14 * 86400);
     $raekke = array_flip(er_indeks()['raekke'] ?: []);
-    $nye = array_values(array_filter($alle, fn($s) => $s['set'] >= $fra && $s['set'] < $uge && !$s['kom']));
+    // Relevansen (rv, 1–3) er Claude Haiku 5.5's bedømmelse. Mailen tager kun 2–3 med; signaler, der ikke er bedømt endnu,
+    // og kundens egne søgeord kommer altid med.
+    $relevant = fn($s) => isset($s['ty']['ord']) || !isset($s['rv']) || $s['rv'] >= 2;
+    $nye = array_values(array_filter($alle, fn($s) => $s['set'] >= $fra && $s['set'] < $uge && !$s['kom'] && $relevant($s)));
     // De største projekter først (projektkortets relevans), derefter de tidligste stadier
-    usort($nye, fn($a, $b) => (($b['f']['relevans'] ?? 1) <=> ($a['f']['relevans'] ?? 1)) ?: (($raekke[$a['sd']] ?? 9) <=> ($raekke[$b['sd']] ?? 9)) ?: strcmp($b['dato'], $a['dato']));
-    $kommer = array_values(array_filter($alle, fn($s) => $s['kom'] && $s['dato'] >= $uge && $s['dato'] < $til14));
-    usort($kommer, fn($a, $b) => strcmp($a['dato'], $b['dato']));
+    usort($nye, fn($a, $b) => (($b['rv'] ?? 2) <=> ($a['rv'] ?? 2)) ?: (($raekke[$a['sd']] ?? 9) <=> ($raekke[$b['sd']] ?? 9)) ?: strcmp($b['dato'], $a['dato']));
+    $kommer = array_values(array_filter($alle, fn($s) => $s['kom'] && $s['dato'] >= $uge && $s['dato'] < $til14 && $relevant($s)));
+    usort($kommer, fn($a, $b) => strcmp($a['dato'], $b['dato']) ?: (($b['rv'] ?? 2) <=> ($a['rv'] ?? 2)));
     // Sager, kunden følger, der er kommet på en dagsorden eller er behandlet igen siden sidste mandag
     $foelgerNye = array_values(array_filter(er_foelger(db(), $kunde, $alle), fn($f) => $f['ny'] && $f['seneste'] >= $fra));
     $fulgte = array_column($foelgerNye, 'id');

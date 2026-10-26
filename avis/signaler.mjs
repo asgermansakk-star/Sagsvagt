@@ -236,6 +236,9 @@ async function bygIndeks(aabne) {
   try { udbud = JSON.parse(await readFile(join(ROD, "data", "udbud.json"), "utf8")); } catch {}
   let steder = {};
   try { steder = JSON.parse(await readFile(join(import.meta.dirname, "erhverv-steder.json"), "utf8")); } catch {}
+  // Claude Haiku 5.5's bedømmelse af relevans 1–3 (avis/erhverv-relevans.mjs); mangler den, vises signalet som hidtil
+  let relevans = {};
+  try { relevans = JSON.parse(await readFile(join(import.meta.dirname, "erhverv-relevans.json"), "utf8")); } catch {}
   const signalerUd = new Map();
   for (const { slug, navn } of aabne) {
     let k; try { k = await hentKommune(slug, { [slug]: navn }); } catch { continue; }
@@ -252,6 +255,7 @@ async function bygIndeks(aabne) {
       // Første gang filen laves, regnes alt, der allerede er behandlet, som set den dag, det blev behandlet
       set[id] ||= foersteGang && s.st !== "kommer" && s.dato < IDAG ? s.dato : IDAG;
       x.set = set[id];
+      if (relevans[id]) { x.rv = relevans[id].r; x.rg = relevans[id].g; }
       if (fakta[id]) { const { lavet, ...f } = fakta[id]; x.f = f; const p = f.hvor && steder[`${slug}|${f.hvor}`]; if (p) x.geo = [p.lat, p.lon]; }
       signalerUd.set(id, x);
     }
