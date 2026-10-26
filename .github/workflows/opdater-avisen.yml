@@ -68,6 +68,12 @@ jobs:
 
       # Kommunerne hentes ti ad gangen (hver server får stadig kun én forespørgsel ad gangen).
       # DAGE: hvor langt tilbage en ny kommune hentes første gang.
+      # Natkort til toppen af mandagsmailen, forsiden og Min avis for kommuner, der lige er åbnet.
+      # avis/natkort.mjs laver kun de kort, der mangler, og stopper aldrig robotten.
+      - name: Natkort til nye kommuner
+        continue-on-error: true
+        run: node avis/natkort.mjs
+
       - name: Hent nye sager fra andre kommuner (FirstAgenda)
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
         continue-on-error: true
@@ -96,6 +102,21 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://sagsvagt.dk/' }}
 
+      # Sagsvagt Erhverv: kommunernes EU-udbud fra TED (data/udbud.json), projektkort til nye signaler og signalindekset til
+      # kundernes rapport og mail (api/_erhverv-signaler.json, ikke i repoet). Indekset bygges før og efter kortene.
+      # Ingen AI endnu (Asgers beslutning 26/10): uden ANTHROPIC_API_KEY finder avis/erhverv-fakta.mjs kun beløbet.
+      # Stederne til kortet slås op i OpenStreetMap og fejler aldrig robotten.
+      - name: Sagsvagt Erhverv
+        continue-on-error: true
+        run: |
+          node avis/udbud.mjs
+          node avis/signaler.mjs --indeks
+          node avis/erhverv-fakta.mjs
+          node avis/erhverv-fakta.mjs --steder 100 || true
+          node avis/signaler.mjs --indeks
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://sagsvagt.dk/' }}
+
       - name: Gem ændringer i repoet
         run: |
           git config user.name "Sagsvagt-robot"
@@ -111,14 +132,14 @@ jobs:
             git push
           fi
 
-      # Kun de offentlige filer kommer på webhotellet. .htaccess skal med (forside og
+      # Kun de offentlige filer kommer på webhotellet (plan/ er interne noter og bliver hjemme). .htaccess skal med (forside og
       # midlertidig lukning af avisen styres dér); alle andre dotfiler bliver hjemme.
       - name: Saml de offentlige filer
         run: |
           rsync -a --delete \
             --include '/.htaccess' \
             --exclude '.*' --exclude '_deploy' --exclude 'node_modules' \
-            --exclude 'avis' --exclude 'data' --exclude 'package*.json' --exclude 'README.md' \
+            --exclude 'avis' --exclude 'data' --exclude 'plan' --exclude 'package*.json' --exclude 'README.md' \
             ./ _deploy/
           echo "Filer til upload: $(find _deploy -type f | wc -l)"
 

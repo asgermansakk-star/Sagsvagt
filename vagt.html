@@ -95,17 +95,36 @@
   .bar .btn-lille.btn-sekundaer:hover { box-shadow: inset 0 0 0 1.5px var(--kalk); background: rgba(230,223,211,.08); }
 
   /* ---------- Hero: som en avisforside, venstrestillet og ét budskab ---------- */
-  .hero { background: var(--moedet); color: var(--kalk); padding: 136px 0 72px; }
+  /* Natkortet over København (assets/natkort/, plan/mockups/natkort.mjs) under Mødets farver; uden kortet står Mødet alene */
+  .hero { background: linear-gradient(90deg, rgba(14,15,20,.5), rgba(14,15,20,.1) 62%), linear-gradient(135deg, rgba(40,55,122,.55), rgba(14,15,20,.4) 55%, rgba(62,14,20,.6)), url("assets/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet);
+    color: var(--kalk); padding: 136px 0 72px; }
+  .hero .kicker { margin: 0 0 14px; font-size: var(--fodnote); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rosen); }
   .hero h1 { font-size: var(--t-stor); font-weight: 700; letter-spacing: -.03em; line-height: 1.08; max-width: 16ch; }
   .hero .lead { color: rgba(230,223,211,.84); margin: 20px 0 0; max-width: 36em; }
   .hero .handlinger { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
   .hero-gitter { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 64px; align-items: end; }
-  .udklip { border-left: 1px solid rgba(230,223,211,.22); padding-left: 32px; }
-  .udklip h2 { font: 600 var(--fodnote)/1.3 var(--sans); letter-spacing: 0; color: rgba(230,223,211,.72); margin-bottom: 4px; }
-  .udklip ol { list-style: none; margin: 0 0 14px; padding: 0; }
-  .udklip li { font: 600 var(--t3)/1.3 var(--serif); padding: 14px 0; border-bottom: 1px solid rgba(230,223,211,.16); }
-  .udklip li span { display: block; font: 500 var(--billedtekst)/1.4 var(--sans); color: rgba(230,223,211,.66); margin-bottom: 4px; }
-  .udklip a { color: var(--kalk); font-size: var(--sekundaer); font-weight: 600; }
+  /* Fra dagsordenerne: en lille avisforside med én tophistorie og to mindre, med sagernes egne billeder */
+  .udklip { border-left: 1px solid rgba(230,223,211,.22); padding-left: 32px; align-self: start; }
+  .udklip h2 { font: 700 var(--billedtekst)/1.3 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: rgba(230,223,211,.7); margin-bottom: 14px; }
+  .udklip h3 { font: 700 var(--t3)/1.25 var(--sans); letter-spacing: -.01em; margin: 0; }
+  .udklip h3 a { color: var(--kalk); text-decoration: none; font-size: inherit; font-weight: inherit; }
+  .udklip h3 a:hover { text-decoration: underline; }
+  .u-billede { display: block; border-radius: var(--r-kort); overflow: hidden; background: var(--kalk-lys); margin-bottom: 12px; }
+  .u-billede img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  .u-kicker { font-size: var(--billedtekst); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--rosen); margin-bottom: 6px; }
+  .u-meta { font-size: var(--fodnote); color: rgba(230,223,211,.7); margin-top: 6px; }
+  .u-top { padding-bottom: 20px; border-bottom: 1px solid rgba(230,223,211,.2); }
+  .u-top h3 { font-size: var(--t2); }
+  .u-smaa { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px 0 14px; }
+  .u-smaa h3 { font-size: var(--sekundaer); line-height: 1.3; }
+  .u-mere { color: var(--kalk); font-size: var(--sekundaer); font-weight: 600; display: inline-flex; min-height: 44px; align-items: center; }
+  /* Stemmegrafik som på sagssiderne (avis/stil/stemmegrafik.css) */
+  .sg-bar { display: flex; height: 20px; border-radius: 5px; overflow: hidden; background: var(--kalk-mork); gap: 2px; }
+  .sg-for { background: var(--indigo); }
+  .sg-imod { background: var(--vin) repeating-linear-gradient(135deg, transparent 0 4px, rgba(255,255,255,.38) 4px 6px); }
+  .sg-mini { display: flex; align-items: center; gap: 8px; font-size: var(--billedtekst); font-weight: 600; font-variant-numeric: tabular-nums; margin-top: 8px; }
+  .sg-mini .sg-bar { width: 64px; height: 8px; border-radius: 3px; gap: 1px; flex: none; }
+  .paa-moerk .sg-mini .sg-bar { background: rgba(230,223,211,.2); }
   .ugen-link { margin-top: 16px; font-size: var(--sekundaer); }
   .ugen-link a { color: var(--kalk); font-weight: 600; display: inline-flex; min-height: 44px; align-items: center; }
   .find-kommune { margin-top: 28px; max-width: 30em; }
@@ -175,7 +194,7 @@
   .scan.go { animation: scan .8s var(--ease) forwards; } @keyframes scan { from { top: 0; opacity: 1; } to { top: 100%; opacity: 0; } }
 
   .mail { background: var(--kalk-lys); border-radius: var(--r-kort); overflow: hidden; position: sticky; top: 80px; }
-  .mail-top { color: var(--kalk); padding: 14px 20px; display: flex; align-items: center; gap: 12px; background: var(--moedet); }
+  .mail-top { color: var(--kalk); padding: 14px 20px; display: flex; align-items: center; gap: 12px; background: linear-gradient(90deg, rgba(14,15,20,.5), rgba(14,15,20,.1)), url("assets/mail/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet); }
   .mail-top svg { height: 28px; width: auto; }
   .mail-top .meta { margin-left: auto; text-align: right; font-size: var(--billedtekst); line-height: 1.4; opacity: .85; }
   .mail-krop { padding: 20px 20px 8px; }
@@ -183,7 +202,10 @@
   .big-n { font-variant-numeric: tabular-nums; color: var(--vin); min-width: 1.2ch; display: inline-block; }
   .mail-krop > p { margin: 4px 0 14px; color: var(--muted); font-size: var(--sekundaer); }
   .cases { list-style: none; margin: 0; padding: 0; }
-  .case { border-top: 1px solid var(--rule); padding: 14px 0; animation: ind .4s var(--ease) both; animation-delay: var(--delay, 0s); }
+  .case { border-top: 1px solid var(--rule); padding: 14px 0; animation: ind .4s var(--ease) both; animation-delay: var(--delay, 0s);
+    display: grid; grid-template-columns: minmax(0, 1fr) 96px; gap: 0 14px; }
+  .case > div { min-width: 0; }
+  .case > img { width: 96px; height: 64px; object-fit: cover; border-radius: 8px; background: var(--kalk); margin-top: 2px; }
   .case:first-child { border-top: 2px solid var(--nat); }
   @keyframes ind { from { opacity: 0; transform: translateY(8px); } }
   .case .where { font-size: var(--fodnote); color: var(--muted); margin: 0 0 4px; }
@@ -197,6 +219,35 @@
   .mail-fod { padding: 16px 20px 20px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; border-top: 1px solid var(--rule); }
   .mail-fod small { color: var(--muted); font-size: var(--fodnote); max-width: 30ch; }
 
+  /* ---------- Hvem stemte hvad, og hvor bliver der bygget ---------- */
+  .grafik-gitter { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+  .grafik-gitter .g-kicker { font-size: var(--billedtekst); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--rubin); margin-bottom: 8px; }
+  .grafik-gitter h3 { font-size: var(--t2); line-height: 1.2; margin-bottom: 6px; }
+  .grafik-gitter h3 a { color: var(--nat); text-decoration: none; }
+  .grafik-gitter h3 a:hover { text-decoration: underline; }
+  .g-meta { font-size: var(--fodnote); color: var(--muted); margin-bottom: 16px; }
+  .sg { padding: 18px; background: var(--kalk-lys); border-radius: var(--r-kort); border: 1px solid var(--rule); }
+  .sg-udfald { margin-bottom: 12px; font-size: var(--broed); }
+  .sg-udfald b { color: var(--indigo); }
+  .sg-tal { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 10px; font-size: var(--fodnote); color: var(--muted); }
+  .sg-tal b { color: var(--nat); }
+  .sg-prik { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--indigo); }
+  .sg-t-imod .sg-prik { background: var(--vin); }
+  .sg-gh { margin: 16px 0 8px; font-size: var(--billedtekst); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .sg-knapper { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0; padding: 0; }
+  .sg-knap { display: inline-grid; place-items: center; min-width: 34px; height: 34px; padding: 0 8px; border-radius: 8px; background: var(--pf); color: var(--pt); font-weight: 700; font-size: var(--fodnote); }
+  .plankort { margin: 0; }
+  .plankort img { display: block; width: 100%; height: auto; border-radius: var(--r-kort); background: var(--kalk-mork); }
+  .plankort figcaption { font-size: var(--fodnote); color: var(--muted); margin-top: 8px; }
+  .g-laes { display: inline-flex; min-height: 44px; align-items: center; margin-top: 8px; font-weight: 600; }
+
+  /* ---------- Sagsvagt i tal: på natkortet ---------- */
+  .faktabaand { color: var(--kalk); background: linear-gradient(90deg, rgba(14,15,20,.72), rgba(14,15,20,.45)), url("assets/natkort/koebenhavn.jpg") center 30% / cover no-repeat, var(--nat); }
+  .faktabaand .wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding-top: 56px; padding-bottom: 56px; }
+  .faktabaand b { display: block; font-size: clamp(2.5rem, 1.6rem + 3vw, 3.75rem); font-weight: 700; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+  .faktabaand div:first-child b { color: var(--rosen); }
+  .faktabaand span { display: block; margin-top: 10px; font-size: var(--sekundaer); color: rgba(230,223,211,.78); }
+
   /* ---------- Tilmelding ---------- */
   .tilmeld-kort { border-radius: var(--r-stor); color: var(--kalk); padding: 48px; background: var(--moedet);
     display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; }
@@ -204,6 +255,10 @@
   .tilmeld-kort .lead { color: rgba(230,223,211,.84); margin-top: 12px; }
   .fordele { list-style: none; padding: 0; margin: 24px 0 0; font-size: var(--sekundaer); }
   .fordele li { padding: 10px 0; border-top: 1px solid rgba(230,223,211,.2); }
+  .fremdrift { margin-top: 24px; }
+  .fremdrift .linje { height: 6px; border-radius: 3px; background: rgba(230,223,211,.2); overflow: hidden; }
+  .fremdrift .linje i { display: block; height: 100%; width: var(--andel, 73%); background: var(--rosen); border-radius: 3px; }
+  .fremdrift small { display: block; margin-top: 8px; font-size: var(--fodnote); color: rgba(230,223,211,.8); }
   form { display: grid; gap: 16px; align-content: start; }
   .felt label { display: block; font-size: var(--fodnote); font-weight: 600; margin-bottom: 6px; }
   .felt label small { font-weight: 400; opacity: .75; }
@@ -282,13 +337,15 @@
   /* På små skærme kommer resultatet (mailen) først, og den lange liste foldes sammen */
   .vis-alle { display: none; width: 100%; margin-top: 8px; }
   @media (max-width: 900px) {
-    .demo-gitter, .tilmeld-kort, .hero-gitter { grid-template-columns: 1fr; }
-    .udklip { display: none; }
+    .demo-gitter, .tilmeld-kort, .hero-gitter, .grafik-gitter { grid-template-columns: 1fr; }
+    .udklip { border-left: 0; padding-left: 0; border-top: 1px solid rgba(230,223,211,.22); padding-top: 28px; }
+    .grafik-gitter { gap: 56px; }
     .mail { position: relative; top: 0; order: -1; }
     .panel:not(.alle) .feed li:nth-child(n+7) { display: none; }
     .panel:not(.alle) .vis-alle, .panel.alle .vis-alle.skjul { display: inline-flex; }
     .panel.alle .vis-alle:not(.skjul) { display: none; }
-    .trin, .loefter ul { grid-template-columns: 1fr; }
+    .trin, .loefter ul, .faktabaand .wrap { grid-template-columns: 1fr; }
+    .faktabaand .wrap { gap: 24px; padding-top: 40px; padding-bottom: 40px; }
     .tilmeld-kort { padding: 32px 24px; gap: 32px; }
     .bar nav { display: none; }
   }
@@ -303,6 +360,9 @@
     .bar .btn-lille { padding: 8px 12px; }
     .hero .handlinger .btn { width: 100%; }
     .mail-top .meta { display: none; }
+    .case { grid-template-columns: minmax(0, 1fr) 72px; }
+    .case > img { width: 72px; height: 50px; }
+    .u-smaa { gap: 14px; }
   }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
@@ -333,6 +393,7 @@
   <section class="hero paa-moerk" aria-labelledby="hero-h">
     <div class="wrap hero-gitter">
      <div>
+      <p class="kicker">Kommunalpolitik, du kan bruge</p>
       <h1 id="hero-h">Politik, der rammer din hverdag. Én mail om mandagen.</h1>
       <p class="lead">Boliger, busser, cykelstier, klima og natteliv. Sagsvagt læser alt, hvad byrådet og udvalgene behandler, så du ikke skal. Du vælger, hvad du går op i, og får kun de sager, der handler om det, forklaret så det giver mening. Med link til kilden.</p>
       <div class="handlinger">
@@ -354,12 +415,26 @@
       <!-- Tre rigtige sager fra demoen herunder, så man med det samme ser, hvad Sagsvagt finder -->
       <aside class="udklip" aria-labelledby="udklip-h">
         <h2 id="udklip-h">Fra dagsordenerne i København</h2>
-        <ol>
-          <li><span>Klima-, Miljø- og Teknikudvalget · 28. sep.</span>Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027</li>
-          <li><span>Klima-, Miljø- og Teknikudvalget · 28. sep.</span>Fældning af træer i Tingbjerg</li>
-          <li><span>Klima-, Miljø- og Teknikudvalget · 5. okt.</span>Nordlige del af Badstuestræde som sekundær gågade</li>
-        </ol>
-        <a href="#proev">Se 15 sager mere</a>
+        <article class="u-top">
+          <a class="u-billede" href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-10.html" tabindex="-1" aria-hidden="true"><img src="assets/emner/affald.svg" alt=""></a>
+          <p class="u-kicker">Affald · 28. sep.</p>
+          <h3><a href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-10.html">Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027</a></h3>
+          <p class="u-meta">Klima-, Miljø- og Teknikudvalget</p>
+          <div class="sg-mini"><span class="sg-bar" aria-hidden="true"><span class="sg-for" style="flex-grow:7"></span><span class="sg-imod" style="flex-grow:3"></span></span><span>7 for · 3 imod</span></div>
+        </article>
+        <div class="u-smaa">
+          <article>
+            <a class="u-billede" href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-2.html" tabindex="-1" aria-hidden="true"><img src="assets/stedkort/101-tingbjerg.jpg" alt=""></a>
+            <p class="u-kicker">Klima · 28. sep.</p>
+            <h3><a href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-2.html">Fældning af træer i Tingbjerg</a></h3>
+          </article>
+          <article>
+            <a class="u-billede" href="sag/kk-2026-10-05-klima-miljoe-og-teknikudvalget-15.html" tabindex="-1" aria-hidden="true"><img src="assets/emner/trafik.svg" alt=""></a>
+            <p class="u-kicker">Trafik · 5. okt.</p>
+            <h3><a href="sag/kk-2026-10-05-klima-miljoe-og-teknikudvalget-15.html">Nordlige del af Badstuestræde som sekundær gågade</a></h3>
+          </article>
+        </div>
+        <a class="u-mere" href="#proev">Se 15 sager mere</a>
       </aside>
     </div>
   </section>
@@ -418,6 +493,51 @@
     </div>
   </section>
 
+  <section class="afsnit" id="grafik" aria-labelledby="grafik-h">
+    <div class="wrap">
+      <div class="afsnit-hoved">
+        <h2 id="grafik-h">Hvem stemte hvad, og hvor bliver der bygget</h2>
+        <p class="lead">Når politikerne har stemt, ser du resultatet og partierne. Handler sagen om en lokalplan eller et sted, ser du det på kortet. To eksempler fra København.</p>
+      </div>
+      <div class="grafik-gitter">
+        <article>
+          <p class="g-kicker">Trafik · Klima og grønt</p>
+          <h3><a href="sag/kk-2026-10-08-borgerrepraesentationen-4.html">Metro M5: Høring om, hvordan byggeriet skal passe på den beskyttede grønbrogede tudse</a></h3>
+          <p class="g-meta">Borgerrepræsentationen · Besluttet 8. oktober 2026</p>
+          <div class="sg">
+            <p class="sg-udfald"><b>Vedtaget</b> med 50 stemmer for og 3 imod.</p>
+            <span class="sg-bar" aria-hidden="true"><span class="sg-for" style="flex-grow:50"></span><span class="sg-imod" style="flex-grow:3"></span></span>
+            <p class="sg-tal"><span><i class="sg-prik"></i>For <b>50</b></span><span class="sg-t-imod"><i class="sg-prik"></i>Imod <b>3</b></span><span>Undlod <b>0</b></span></p>
+            <p class="sg-gh">Stemte for</p>
+            <ul class="sg-knapper">
+              <li class="sg-knap" style="--pf:#CC4010;--pt:#fff" title="Enhedslisten">Ø</li><li class="sg-knap" style="--pf:#C4175F;--pt:#fff" title="SF">F</li><li class="sg-knap" style="--pf:#C8102E;--pt:#fff" title="Socialdemokratiet">A</li><li class="sg-knap" style="--pf:#00583C;--pt:#fff" title="Det Konservative Folkeparti">C</li><li class="sg-knap" style="--pf:#9A2A8C;--pt:#fff" title="Radikale Venstre">B</li><li class="sg-knap" style="--pf:#0057A8;--pt:#fff" title="Venstre">V</li><li class="sg-knap" style="--pf:#0F7B78;--pt:#fff" title="Liberal Alliance">I</li><li class="sg-knap" style="--pf:#E9C32A;--pt:#14213D" title="Dansk Folkeparti">O</li>
+            </ul>
+            <p class="sg-gh">Stemte imod</p>
+            <ul class="sg-knapper">
+              <li class="sg-knap" style="--pf:#217A35;--pt:#fff" title="Alternativet">Å</li><li class="sg-knap" style="--pf:#8CBF3F;--pt:#14213D" title="Frie Grønne">Q</li>
+            </ul>
+          </div>
+          <a class="g-laes" href="sag/kk-2026-10-08-borgerrepraesentationen-4.html">Læs sagen</a>
+        </article>
+        <article>
+          <p class="g-kicker">Byggeri og lokalplaner</p>
+          <h3><a href="sag/kk-2026-08-20-borgerrepraesentationen-5.html">Lokalplanforslag for Kommunehospitalet II</a></h3>
+          <p class="g-meta">Borgerrepræsentationen · Sendt i offentlig høring</p>
+          <figure class="plankort"><img src="assets/plankort/12188978.jpg" alt="Kort over lokalplanområdet Kommunehospitalet II ved Øster Søgade, markeret med rødt" loading="lazy"><figcaption>Lokalplanens område tegnet ind på kortet. Kort: OpenStreetMap-bidragydere. Plangrænse: Plandata.dk.</figcaption></figure>
+          <a class="g-laes" href="sag/kk-2026-08-20-borgerrepraesentationen-5.html">Læs sagen</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="faktabaand" aria-label="Sagsvagt i tal">
+    <div class="wrap">
+      <div><b>21.000+</b><span>punkter læst fra byråd, udvalg og lokaludvalg</span></div>
+      <div><b class="n-aabne">72</b><span>af 98 kommuner er åbne</span></div>
+      <div><b>07.00</b><span>hver mandag i din indbakke</span></div>
+    </div>
+  </section>
+
   <section class="afsnit" id="tilmeld" aria-labelledby="tilmeld-h">
     <div class="wrap">
       <div class="tilmeld-kort paa-moerk">
@@ -429,6 +549,7 @@
             <li><span>Én mail om ugen, ingen spam</span></li>
             <li><span>Afmeld fra mailen, når som helst</span></li>
           </ul>
+          <div class="fremdrift"><div class="linje"><i id="fremdrift"></i></div><small><span class="n-aabne">72</span> af 98 kommuner er åbne. Din tilmelding rykker din kommune frem.</small></div>
         </div>
         <form id="form" novalidate>
           <input type="hidden" name="kilde" id="kilde">
@@ -492,7 +613,7 @@
         </li>
         <li>
           <h3>Vi læser alt, der bliver lagt ud</h3>
-          <p>Byråd, udvalg og lokaludvalg. Hvert punkt bliver sammenholdt med dine emner, også synonymer. Vi har læst over 4.400 punkter fra byråd og udvalg i ni kommuner.</p>
+          <p>Byråd, udvalg og lokaludvalg. Hvert punkt bliver sammenholdt med dine emner, også synonymer. Vi har læst over 21.000 punkter fra byråd, udvalg og lokaludvalg i <span class="n-aabne">72</span> kommuner.</p>
         </li>
         <li>
           <h3>Én mail hver mandag</h3>
@@ -553,24 +674,24 @@
   };
   const KK = "https://www.kk.dk/dagsordener-og-referater/";
   const SAGER = [
-    { e: ["affald"], d: "28. sep.", u: "Klima-, Miljø- og Teknikudvalget", t: "Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027", r: "Efter forsøg i villaer i 2025 og 2026 skal mad- og restaffald tømmes hver 14. dag i stedet for hver uge.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-28092026/referat/punkt-10" },
-    { e: ["trafik"], d: "30. sep.", u: "Christianshavns Lokaludvalg", t: "Høringssvar om udkast til Trafik- og Byrumsplan Amager", r: "Lokaludvalget godkender sit høringssvar til forvaltningens udkast til en ny trafik- og byrumsplan for Amager.", k: "Christianshavns%20Lokaludvalg/m%C3%B8de-30092026/referat/punkt-7" },
-    { e: ["trafik"], d: "24. sep.", u: "Brønshøj-Husum Lokaludvalg", t: "Udtalelse om forsøg med midlertidig lukning af Brønshøj Kirkevej", r: "Lokaludvalget udtaler sig om et forsøg med at lukke Brønshøj Kirkevej midlertidigt.", k: "Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-14" },
-    { e: ["trafik", "klima"], d: "8. okt.", u: "Indre By Lokaludvalg", t: "Henvendelse om fossilfri og sikker trafik på cykelstierne i Indre By", r: "Lokaludvalget skal godkende en henvendelse til Klima-, Miljø- og Teknikudvalget om fossilfri og sikker trafik på cykelstierne.", k: "Indre%20By%20Lokaludvalg/m%C3%B8de-08102026/dagsorden/punkt-8" },
-    { e: ["klima", "budget"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Forhøjelse af klimabevilling for skybrudsprojekter i Lersøparken", r: "Borgerrepræsentationen skal tage stilling til en større klimabevilling, så skybrudsprojektet i Lersøparken kan gennemføres.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-2" },
-    { e: ["klima"], d: "24. sep.", u: "Bispebjerg Lokaludvalg", t: "Høring vedr. skybrudsprojekt ved Lundehus Kirke", r: "Forvaltningen har sendt fem skybrudsprojekter i høring. Lokaludvalget giver forpersonskabet mandat til at skrive høringssvaret.", k: "Bispebjerg%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-10" },
-    { e: ["klima"], d: "28. sep.", u: "Klima-, Miljø- og Teknikudvalget", t: "Fældning af træer i Tingbjerg", r: "HOFOR skal lægge ny kloak i Tingbjerg, og 138 træer skal fældes, heraf 28 bevaringsværdige. De genplantes bagefter.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-28092026/referat/punkt-2" },
-    { e: ["trafik", "klima"], d: "8. okt.", u: "Borgerrepræsentationen", t: "Metro M5: høring om miljøkonsekvensrapport og grønbroget tudse", r: "Metroselskabet søger tilladelser, så eventuelle fund af den beskyttede grønbrogede tudse kan håndteres under byggeriet af M5.", k: "Borgerrepr%C3%A6sentationen/m%C3%B8de-08102026/referat/punkt-4" },
-    { e: ["bolig"], d: "30. sep.", u: "Christianshavns Lokaludvalg", t: "Forlængelse af tilladelse til 84 midlertidige studieboliger på Refshaleøen", r: "Lokaludvalget tager sit høringssvar om at forlænge tilladelsen til 84 studieboliger på Refshaleøen til efterretning.", k: "Christianshavns%20Lokaludvalg/m%C3%B8de-30092026/referat/punkt-18" },
-    { e: ["bolig"], d: "6. okt.", u: "Sundheds- og Omsorgsudvalget", t: "Principper for valg af Senior Plus Boligområde", r: "Udvalget skal godkende de kriterier, der afgør, hvor kommunens Senior Plus Boligområder skal ligge.", k: "Sundheds-%20og%20Omsorgsudvalget/m%C3%B8de-06102026/referat/punkt-2" },
-    { e: ["byggeri"], d: "24. sep.", u: "Vanløse Lokaludvalg", t: "Indledende høring om tillæg til byplan 85 Bellahøjvej", r: "Høring om bevaring af en bygning på Himmerlandsvej 8 med en tilhørende ny lokalplan.", k: "Vanl%C3%B8se%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-9" },
-    { e: ["byggeri", "bolig"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Erhverv bliver til rækkehuse på Ålholmvej 55, Valby", r: "Udvalget skal tage stilling til, om en villaservitut om antal boliger pr. etage kan fraviges, så erhverv kan blive til rækkehuse.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-9" },
-    { e: ["budget"], d: "1. okt.", u: "Borgerrepræsentationen", t: "Andenbehandling af budgetforslag 2027 og overslagsårene 2028–2030", r: "Borgerrepræsentationens anden og endelige behandling af Københavns budget for 2027.", k: "Borgerrepr%C3%A6sentationen/m%C3%B8de-01102026/referat/punkt-6" },
-    { e: ["skole", "budget"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Optakt til udmøntning af Budget 2027", r: "Udvalget drøfter, hvordan budgetaftalen for 2027 skal omsættes på børne- og ungeområdet.", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-2" },
-    { e: ["skole"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Handleplanskoncept for specialskoler", r: "Udvalget behandler et koncept for handleplaner på kommunens specialskoler.", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-4" },
-    { e: ["skole"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Opfølgning på udvidet åbningstid og weekendåbent i dagtilbud", r: "Opfølgning på længere åbningstid og weekendåbent i kommunens dagtilbud.", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-5" },
-    { e: ["kultur"], d: "24. sep.", u: "Vanløse Lokaludvalg", t: "Borgermøde om bibliotekerne i Københavns Kommune", r: "Vanløse Lokaludvalg bliver medarrangør af et borgermøde om kommunens biblioteker sammen med Amager Vest.", k: "Vanl%C3%B8se%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-17" },
-    { e: ["trafik"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Nordlige del af Badstuestræde som sekundær gågade", r: "Medlemsforslag om, at forvaltningen laver et forslag om at gøre den nordlige del af Badstuestræde op mod Strøget til gågade.", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-15" },
+    { e: ["affald"], d: "28. sep.", u: "Klima-, Miljø- og Teknikudvalget", t: "Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027", r: "Efter forsøg i villaer i 2025 og 2026 skal mad- og restaffald tømmes hver 14. dag i stedet for hver uge.", v: [7, 3], b: "emner/affald.svg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-28092026/referat/punkt-10" },
+    { e: ["trafik"], d: "30. sep.", u: "Christianshavns Lokaludvalg", t: "Høringssvar om udkast til Trafik- og Byrumsplan Amager", r: "Lokaludvalget godkender sit høringssvar til forvaltningens udkast til en ny trafik- og byrumsplan for Amager.", b: "emner/trafik.svg", k: "Christianshavns%20Lokaludvalg/m%C3%B8de-30092026/referat/punkt-7" },
+    { e: ["trafik"], d: "24. sep.", u: "Brønshøj-Husum Lokaludvalg", t: "Udtalelse om forsøg med midlertidig lukning af Brønshøj Kirkevej", r: "Lokaludvalget udtaler sig om et forsøg med at lukke Brønshøj Kirkevej midlertidigt.", b: "emner/trafik.svg", k: "Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-14" },
+    { e: ["trafik", "klima"], d: "8. okt.", u: "Indre By Lokaludvalg", t: "Henvendelse om fossilfri og sikker trafik på cykelstierne i Indre By", r: "Lokaludvalget skal godkende en henvendelse til Klima-, Miljø- og Teknikudvalget om fossilfri og sikker trafik på cykelstierne.", b: "emner/trafik.svg", k: "Indre%20By%20Lokaludvalg/m%C3%B8de-08102026/dagsorden/punkt-8" },
+    { e: ["klima", "budget"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Forhøjelse af klimabevilling for skybrudsprojekter i Lersøparken", r: "Borgerrepræsentationen skal tage stilling til en større klimabevilling, så skybrudsprojektet i Lersøparken kan gennemføres.", b: "stedkort/101-lersoeparken.jpg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-2" },
+    { e: ["klima"], d: "24. sep.", u: "Bispebjerg Lokaludvalg", t: "Høring vedr. skybrudsprojekt ved Lundehus Kirke", r: "Forvaltningen har sendt fem skybrudsprojekter i høring. Lokaludvalget giver forpersonskabet mandat til at skrive høringssvaret.", b: "emner/klima.svg", k: "Bispebjerg%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-10" },
+    { e: ["klima"], d: "28. sep.", u: "Klima-, Miljø- og Teknikudvalget", t: "Fældning af træer i Tingbjerg", r: "HOFOR skal lægge ny kloak i Tingbjerg, og 138 træer skal fældes, heraf 28 bevaringsværdige. De genplantes bagefter.", b: "stedkort/101-tingbjerg.jpg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-28092026/referat/punkt-2" },
+    { e: ["trafik", "klima"], d: "8. okt.", u: "Borgerrepræsentationen", t: "Metro M5: høring om miljøkonsekvensrapport og grønbroget tudse", r: "Metroselskabet søger tilladelser, så eventuelle fund af den beskyttede grønbrogede tudse kan håndteres under byggeriet af M5.", v: [50, 3], b: "emner/trafik.svg", k: "Borgerrepr%C3%A6sentationen/m%C3%B8de-08102026/referat/punkt-4" },
+    { e: ["bolig"], d: "30. sep.", u: "Christianshavns Lokaludvalg", t: "Forlængelse af tilladelse til 84 midlertidige studieboliger på Refshaleøen", r: "Lokaludvalget tager sit høringssvar om at forlænge tilladelsen til 84 studieboliger på Refshaleøen til efterretning.", b: "stedkort/101-refshaleoeen.jpg", k: "Christianshavns%20Lokaludvalg/m%C3%B8de-30092026/referat/punkt-18" },
+    { e: ["bolig"], d: "6. okt.", u: "Sundheds- og Omsorgsudvalget", t: "Principper for valg af Senior Plus Boligområde", r: "Udvalget skal godkende de kriterier, der afgør, hvor kommunens Senior Plus Boligområder skal ligge.", b: "emner/bolig.svg", k: "Sundheds-%20og%20Omsorgsudvalget/m%C3%B8de-06102026/referat/punkt-2" },
+    { e: ["byggeri"], d: "24. sep.", u: "Vanløse Lokaludvalg", t: "Indledende høring om tillæg til byplan 85 Bellahøjvej", r: "Høring om bevaring af en bygning på Himmerlandsvej 8 med en tilhørende ny lokalplan.", b: "stedkort/101-bellahoejvej.jpg", k: "Vanl%C3%B8se%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-9" },
+    { e: ["byggeri", "bolig"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Erhverv bliver til rækkehuse på Ålholmvej 55, Valby", r: "Udvalget skal tage stilling til, om en villaservitut om antal boliger pr. etage kan fraviges, så erhverv kan blive til rækkehuse.", v: [9, 2], b: "emner/byggeri.svg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-9" },
+    { e: ["budget"], d: "1. okt.", u: "Borgerrepræsentationen", t: "Andenbehandling af budgetforslag 2027 og overslagsårene 2028–2030", r: "Borgerrepræsentationens anden og endelige behandling af Københavns budget for 2027.", b: "emner/budget.svg", k: "Borgerrepr%C3%A6sentationen/m%C3%B8de-01102026/referat/punkt-6" },
+    { e: ["skole", "budget"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Optakt til udmøntning af Budget 2027", r: "Udvalget drøfter, hvordan budgetaftalen for 2027 skal omsættes på børne- og ungeområdet.", b: "emner/skole.svg", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-2" },
+    { e: ["skole"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Handleplanskoncept for specialskoler", r: "Udvalget behandler et koncept for handleplaner på kommunens specialskoler.", b: "emner/skole.svg", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-4" },
+    { e: ["skole"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Opfølgning på udvidet åbningstid og weekendåbent i dagtilbud", r: "Opfølgning på længere åbningstid og weekendåbent i kommunens dagtilbud.", b: "emner/skole.svg", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-5" },
+    { e: ["kultur"], d: "24. sep.", u: "Vanløse Lokaludvalg", t: "Borgermøde om bibliotekerne i Københavns Kommune", r: "Vanløse Lokaludvalg bliver medarrangør af et borgermøde om kommunens biblioteker sammen med Amager Vest.", b: "emner/kultur.svg", k: "Vanl%C3%B8se%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-17" },
+    { e: ["trafik"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Nordlige del af Badstuestræde som sekundær gågade", r: "Medlemsforslag om, at forvaltningen laver et forslag om at gøre den nordlige del af Badstuestræde op mod Strøget til gågade.", v: [8, 3], b: "emner/trafik.svg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-15" },
   ];
   const PERSONER = { studerende: ["bolig", "trafik", "klima", "kultur"], politiker: ["budget", "skole", "klima"], journalist: ["trafik", "bolig", "budget"], ejendom: ["byggeri", "bolig"], forening: ["klima", "kultur"] };
 
@@ -645,8 +766,10 @@
     } else {
       cases.innerHTML = hits.map((h, i) => {
         const tags = h.via.map((v) => { const e = EMNER[v.id]; return `<span class="tag" style="--c:${e.c};--cf:${e.cf}">${esc(e.navn)}${v.ord ? ` · "${esc(v.ord)}"` : ""}</span>`; }).join("");
-        return `<li class="case" style="--delay:${reduce ? 0 : i * 0.04}s"><p class="where">${esc(h.s.u)} · ${esc(h.s.d)}</p><h5>${esc(h.s.t)}</h5><p>${esc(h.s.r)}</p>
-          <div class="why"><span style="color:var(--muted)">Matchede</span>${tags}<a href="${KK + h.s.k}" target="_blank" rel="noopener">Læs sagen</a></div></li>`;
+        // Stemmerne som en lille søjle (for blå, imod vin), som i mailen og på sagssiderne
+        const st = h.s.v ? `<div class="sg-mini"><span class="sg-bar" aria-hidden="true"><span class="sg-for" style="flex-grow:${h.s.v[0]}"></span><span class="sg-imod" style="flex-grow:${h.s.v[1]}"></span></span><span>${h.s.v[0]} for · ${h.s.v[1]} imod</span></div>` : "";
+        return `<li class="case" style="--delay:${reduce ? 0 : i * 0.04}s"><div><p class="where">${esc(h.s.u)} · ${esc(h.s.d)}</p><h5>${esc(h.s.t)}</h5><p>${esc(h.s.r)}</p>${st}
+          <div class="why"><span style="color:var(--muted)">Matchede</span>${tags}<a href="${KK + h.s.k}" target="_blank" rel="noopener">Læs sagen</a></div></div><img src="assets/${h.s.b}" alt="" loading="lazy"></li>`;
       }).join("");
     }
     const picked = $("#picked");
@@ -761,7 +884,11 @@
   // Adgangskode med det samme, hvis en af de valgte kommuner allerede er åben (kommune/aabne.json)
   const kontoFelt = $("#kontoFelt"), kontoNote = $("#kontoNote");
   let aabne = new Set();
-  fetch("kommune/aabne.json").then((r) => r.json()).then((l) => { aabne = new Set(l.map((k) => k.navn)); visKonto(); }).catch(() => {});
+  fetch("kommune/aabne.json").then((r) => r.json()).then((l) => {
+    aabne = new Set(l.map((k) => k.navn)); visKonto();
+    $$(".n-aabne").forEach((el) => (el.textContent = l.length));
+    $("#fremdrift").style.setProperty("--andel", `${Math.round((100 * l.length) / 98)}%`);
+  }).catch(() => {});
   const visKonto = () => {
     const aabneValgte = [...new Set(kommuneDele(form.kommuner.value).map(rigtigKommune).filter((k) => k && aabne.has(k)))];
     kontoFelt.hidden = !aabneValgte.length;

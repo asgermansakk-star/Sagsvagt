@@ -58,7 +58,7 @@ export async function kandidater(P = {}) {
   const fra = new Date(Date.now() - 21 * 864e5).toISOString().slice(0, 10);
   const alle = [];
   for (const f of (await readdir(join(ROD, "data"))).filter((f) => f.endsWith(".json"))) {
-    for (const s of Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager)) {
+    for (const s of Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager || {})) {
       if (s.dato < fra || STOEJ.test(s.titel) || /fortrolig|lukket/i.test(s.titel) || laengde(s) < 700) continue;
       if (P[s.id]?.type === s.type) continue;
       // Vigtigst: byråd/økonomiudvalg, sager med økonomi og sager på vej (dagsordener), og lange sager

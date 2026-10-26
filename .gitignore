@@ -1,3 +1,11 @@
-node_modules/
+node_modules
 # Konfiguration med adgangskoder (kun lokalt og på serveren)
 api/_konfig.php
+
+# Sagsvagt Erhvervs signalindeks (bygges af robotten og uploades, men hører ikke til i det offentlige repo)
+api/_erhverv-signaler.json
+# Arbejdsfiler, når projektkort skrives i Claude Code (avis/erhverv-fakta.mjs --udtraek / --indlaes)
+avis/erhverv-fakta-koe.json
+avis/erhverv-fakta-ny.json
+# Interne noter, kunderapporter og salgslister må aldrig i det offentlige repo
+/plan/

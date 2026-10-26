@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sagsvagt Erhverv – se sagen, før den bliver et udbud</title>
+<meta name="description" content="Sagsvagt Erhverv læser alle dagsordener og referater fra 82 kommuner og sender dig de tidlige signaler om lokalplaner, grunde, byggeri, infrastruktur og energi. Hver uge, med link til kommunens eget dokument.">
+<link rel="canonical" href="https://sagsvagt.dk/erhverv.html">
+<meta name="theme-color" content="#0E0F14">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/fonts/montserrat.css">
+<!-- Salgssiden for Sagsvagt Erhverv (HANDLEPLAN-SAGSVAGT.md: produktstigen og segmenterne). Samme stil som forsiden (vagt.html):
+     natkortet bag toppen, avisens kickers og streger, knapper let afrundede. Rapporterne bygges af avis/signaler.mjs. -->
+<style>
+  :root {
+    --nat: #0E0F14; --grafit: #2A2B33; --kalk: #E6DFD3; --kalk-lys: #EEE8DE; --kalk-mork: #D9D1C3; --muted: #56535A; --rule: #CFC6B8;
+    --bordeaux: #3E0E14; --vin: #8A2430; --rubin: #B04A50; --rosen: #DCA9A5; --blaek: #0C1430; --indigo: #28377A; --skifer: #5D6BA8; --lyng: #B7BBD8;
+    --moedet: radial-gradient(80% 110% at 0% 20%, var(--skifer) 0%, var(--indigo) 26%, var(--blaek) 54%, transparent 76%),
+              radial-gradient(75% 100% at 100% 100%, var(--rubin) 0%, var(--vin) 26%, var(--bordeaux) 54%, transparent 78%), var(--nat);
+    --sans: "Montserrat", system-ui, sans-serif; --r-knap: 8px; --r-felt: 12px; --r-kort: 16px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+  body { margin: 0; background: var(--kalk); color: var(--nat); font: 500 1.0625rem/1.55 var(--sans); -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, p { margin: 0; }
+  a { color: var(--indigo); text-underline-offset: 3px; }
+  :focus-visible { outline: 3px solid var(--skifer); outline-offset: 3px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+  .kicker { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rubin); margin-bottom: 10px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 22px; border-radius: var(--r-knap); border: 0; cursor: pointer; font: 700 1rem var(--sans); text-decoration: none; background: var(--nat); color: var(--kalk); }
+  .btn:hover { background: var(--grafit); }
+  .btn-lys { background: var(--kalk); color: var(--nat); }
+  .btn-lys:hover { background: var(--kalk-lys); }
+  .btn-stille { background: transparent; color: var(--kalk); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.45); }
+  .btn-stille:hover { background: rgba(230,223,211,.08); }
+
+  /* Top på natkortet */
+  .top { color: var(--kalk); background: linear-gradient(90deg, rgba(14,15,20,.55), rgba(14,15,20,.1) 62%), linear-gradient(135deg, rgba(40,55,122,.55), rgba(14,15,20,.4) 55%, rgba(62,14,20,.6)), url("assets/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet); }
+  .bar { display: flex; align-items: center; gap: 12px; min-height: 68px; border-bottom: 1px solid rgba(230,223,211,.14); }
+  .logo { display: flex; align-items: center; gap: 10px; margin-right: auto; color: var(--kalk); text-decoration: none; }
+  .logo img { height: 30px; display: block; }
+  .logo span { font: 700 .75rem var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--rosen); padding-left: 10px; border-left: 1px solid rgba(230,223,211,.3); }
+  .bar a.link { color: rgba(230,223,211,.85); text-decoration: none; font: 600 .9375rem var(--sans); padding: 10px 12px; border-radius: 8px; }
+  .bar a.link:hover { color: var(--kalk); background: rgba(230,223,211,.08); }
+  .bar .btn { min-height: 40px; padding: 8px 16px; font-size: .9375rem; }
+  .helt { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 56px; padding: 72px 0 80px; align-items: center; }
+  .helt .kicker { color: var(--rosen); }
+  .helt h1 { font: 800 clamp(2.25rem, 1.4rem + 3.2vw, 3.6rem)/1.04 var(--sans); letter-spacing: -.025em; max-width: 16ch; }
+  .helt .lead { margin: 20px 0 30px; font-size: 1.125rem; color: rgba(230,223,211,.86); max-width: 34em; }
+  .knapper { display: flex; flex-wrap: wrap; gap: 12px; }
+  .tal { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid rgba(230,223,211,.22); margin-top: 36px; max-width: 520px; }
+  .tal div { padding-top: 14px; } .tal div + div { border-left: 1px solid rgba(230,223,211,.22); padding-left: 18px; }
+  .tal b { display: block; font: 800 2.25rem/1 var(--sans); letter-spacing: -.02em; }
+  .tal span { display: block; margin-top: 6px; font-size: .8125rem; color: rgba(230,223,211,.78); }
+  /* Udsnit af en rigtig rapport */
+  .udsnit { background: var(--kalk-lys); color: var(--nat); border-radius: var(--r-kort); padding: 20px 22px 8px; box-shadow: 0 30px 70px -30px rgba(0,0,0,.65); }
+  .udsnit > p { font: 700 .6875rem var(--sans); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+  .sig { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; padding: 14px 0; border-top: 1px solid var(--rule); }
+  .sig img { width: 76px; height: 52px; object-fit: cover; border-radius: 8px; background: var(--kalk-mork); }
+  .sig small { display: block; font: 700 .6875rem/1.4 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .sig small i { font-style: normal; color: var(--indigo); }
+  .sig small em { font-style: normal; color: var(--vin); }
+  .sig b { display: block; font-size: .9375rem; line-height: 1.3; margin-top: 2px; }
+
+  section.afsnit { padding: 88px 0; }
+  section.afsnit + section.afsnit { border-top: 1px solid var(--rule); }
+  .afsnit h2 { font: 800 clamp(1.75rem, 1.2rem + 1.8vw, 2.625rem)/1.1 var(--sans); letter-spacing: -.02em; max-width: 22ch; }
+  .afsnit .intro { margin: 14px 0 36px; max-width: 40em; color: var(--muted); font-size: 1.125rem; }
+
+  /* Produkterne */
+  .produkter { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .produkt { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 22px; padding: 24px; border-radius: var(--r-kort); background: var(--kalk-lys); border: 1px solid var(--rule); }
+  .produkt img { width: 140px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 12px; background: var(--kalk); }
+  .produkt h3 { font: 800 1.375rem/1.2 var(--sans); margin-bottom: 6px; }
+  .produkt .hvem { font-size: .875rem; color: var(--muted); margin-bottom: 12px; }
+  .produkt ul { margin: 0 0 14px; padding-left: 18px; font-size: .9375rem; }
+  .produkt li + li { margin-top: 4px; }
+  .pris { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding-top: 12px; border-top: 1px solid var(--rule); }
+  .pris b { font: 800 1.5rem var(--sans); letter-spacing: -.02em; white-space: nowrap; }
+  .pris span { font-size: .8125rem; color: var(--muted); }
+  .maerke { display: inline-block; padding: 1px 9px; border-radius: 999px; font: 700 .6875rem/1.7 var(--sans); background: var(--lyng); color: var(--blaek); margin-left: 6px; vertical-align: 3px; }
+  .maerke.haand { background: var(--rosen); color: var(--bordeaux); }
+  .pro { margin-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; padding: 20px 24px; border-radius: var(--r-kort); border: 1.5px dashed var(--rule); }
+  .pro p { color: var(--muted); font-size: .9375rem; max-width: 44em; }
+  .pro b { color: var(--nat); }
+
+  /* Pilot */
+  .pilot { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: center; padding: 40px 44px; border-radius: 20px; color: var(--kalk);
+    background: linear-gradient(135deg, rgba(40,55,122,.6), rgba(14,15,20,.55) 55%, rgba(62,14,20,.65)), url("assets/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet); }
+  .pilot .kicker { color: var(--rosen); }
+  .pilot h2 { color: var(--kalk); max-width: 20ch; }
+  .pilot p { margin-top: 12px; color: rgba(230,223,211,.85); max-width: 38em; }
+  .pilot .pris-stor { text-align: right; }
+  .pilot .pris-stor b { display: block; font: 800 3.5rem/1 var(--sans); letter-spacing: -.03em; color: var(--rosen); }
+  .pilot .pris-stor span { font-size: .875rem; color: rgba(230,223,211,.8); }
+
+  /* Sådan virker det og løfter */
+  .trin { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; counter-reset: t; }
+  .trin li { counter-increment: t; border-top: 2px solid var(--nat); padding-top: 16px; }
+  .trin li::before { content: "0" counter(t); display: block; font: 800 3.25rem/1 var(--sans); color: var(--rubin); letter-spacing: -.03em; margin-bottom: 14px; }
+  .trin h3 { font: 800 1.25rem/1.25 var(--sans); margin-bottom: 6px; }
+  .trin p { color: var(--muted); font-size: .9375rem; }
+  .loefter { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 56px; }
+  .loefter div { border-left: 2px solid var(--rubin); padding-left: 14px; font-size: .9375rem; color: var(--muted); }
+  .loefter b { display: block; color: var(--nat); font-size: 1rem; margin-bottom: 2px; }
+
+  /* Book */
+  .book { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 48px; }
+  .book p.intro { margin-bottom: 0; }
+  form { display: grid; gap: 14px; }
+  .to { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  label { display: grid; gap: 6px; font-size: .875rem; font-weight: 700; }
+  input, select, textarea { width: 100%; min-height: 48px; padding: 12px 14px; border: 1.5px solid var(--rule); border-radius: var(--r-felt); background: var(--kalk-lys); font: 500 1rem var(--sans); color: var(--nat); }
+  textarea { min-height: 110px; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--indigo); }
+  .fejl { color: var(--vin); font-weight: 700; font-size: .9375rem; }
+  .fod { font-size: .8125rem; color: var(--muted); }
+
+  .funk { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+  .funk div { padding: 18px 20px; border-radius: var(--r-kort); background: var(--kalk-lys); border: 1px solid var(--rule); font-size: .9375rem; color: var(--muted); }
+  .funk b { display: block; color: var(--nat); font-size: 1.0625rem; margin-bottom: 4px; }
+  .komvalg { display: block; }
+  .valgte { display: flex; flex-wrap: wrap; gap: 6px; min-height: 0; margin-top: -6px; }
+  .valgte button { border: 0; border-radius: 999px; padding: 4px 10px; background: var(--nat); color: var(--kalk); font: 700 .8125rem var(--sans); cursor: pointer; }
+  label.tjek { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; font-size: .875rem; }
+  label.tjek input { width: auto; min-height: 0; margin-top: 4px; }
+  .ok { color: #1d5b35; font-weight: 700; font-size: .9375rem; }
+  footer { background: var(--nat); color: rgba(230,223,211,.72); font-size: .875rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding-top: 32px; padding-bottom: 36px; }
+  footer img { height: 28px; }
+  footer a { color: var(--kalk); }
+
+  @media (max-width: 960px) {
+    .helt, .book { grid-template-columns: 1fr; gap: 40px; }
+    .produkter { grid-template-columns: 1fr; }
+    .funk { grid-template-columns: 1fr 1fr; }
+    .trin { grid-template-columns: 1fr; gap: 28px; }
+    .loefter { grid-template-columns: 1fr 1fr; }
+    .pilot { grid-template-columns: 1fr; }
+    .pilot .pris-stor { text-align: left; }
+    .bar a.link { display: none; }
+  }
+  @media (max-width: 600px) {
+    .wrap { padding: 0 18px; }
+    .helt { padding: 44px 0 56px; }
+    .knapper .btn { width: 100%; }
+    .tal b { font-size: 1.375rem; } .tal span { font-size: .75rem; } .tal div + div { padding-left: 12px; }
+    .produkt { grid-template-columns: 1fr; padding: 20px; }
+    .produkt img { width: 100%; aspect-ratio: 16 / 9; }
+    .pilot { padding: 28px 20px; }
+    .loefter { grid-template-columns: 1fr; }
+    .to { grid-template-columns: 1fr; }
+    .funk { grid-template-columns: 1fr; }
+    section.afsnit { padding: 64px 0; }
+    .logo span { display: none; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <nav class="bar" aria-label="Hovedmenu">
+      <a class="logo" href="./"><img src="assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt"><span>Erhverv</span></a>
+      <a class="link" href="#produkter">Produkter</a>
+      <a class="link" href="#saadan">Sådan virker det</a>
+      <a class="link" href="erhverv/eksempel.html">Eksempel</a>
+      <a class="btn btn-lys" href="#proeve">Prøv gratis</a>
+    </nav>
+    <div class="helt">
+      <div>
+        <p class="kicker">Sagsvagt Erhverv</p>
+        <h1>Se sagen, før den bliver et udbud.</h1>
+        <p class="lead">Lokalplaner, grundsalg, byggeri, veje og energiprojekter står på kommunernes dagsordener måneder før, de bliver til udbud og byggetilladelser. Sagsvagt læser dem alle hver dag og sender dig de signaler, der passer til din forretning. Med link til kommunens eget dokument.</p>
+        <div class="knapper"><a class="btn btn-lys" href="#proeve">Prøv gratis i 14 dage</a><a class="btn btn-stille" href="#book">Book en gennemgang</a></div>
+        <div class="tal"><div><b class="n-aabne">82</b><span>kommuner læst hver dag</span></div><div><b>21.000+</b><span>dagsordens&shy;punkter</span></div><div><b>Mandag</b><span>ny rapport hver uge</span></div></div>
+      </div>
+      <aside class="udsnit" aria-label="Udsnit af en rapport">
+        <p>Udsnit af rapporten for Vejle</p>
+        <div class="sig"><img src="assets/emner/byggeri.svg" alt=""><div><small>Byudvikling og lokalplaner · <i>Idé</i></small><b>Igangsætning af lokalplan nr. 1459, boligområde ved Grundet Skovby</b></div></div>
+        <div class="sig"><img src="assets/emner/klima.svg" alt=""><div><small>Klima og energi · Vedtaget</small><b>Energipark Give</b></div></div>
+        <div class="sig"><img src="assets/emner/trafik.svg" alt=""><div><small>Infrastruktur · <em>På dagsordenen 28. oktober</em></small><b>Anlægsbevilling til klimasikring af Skyttehusvejen i Vejle</b></div></div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="afsnit" id="produkter">
+    <div class="wrap">
+      <p class="kicker">Produkter</p>
+      <h2>Ét abonnement pr. branche</h2>
+      <p class="intro">Vælg de kommuner, du arbejder i. Alle priser er pr. måned ekskl. moms og kan opsiges fra måned til måned. Sagsvagt har CVR-nummer og sender faktura.</p>
+      <div class="produkter">
+        <article class="produkt">
+          <img src="assets/emner/byggeri.svg" alt="">
+          <div>
+            <h3>Tidlige signaler</h3>
+            <p class="hvem">Til developere, rådgivere, arkitekter og erhvervsmæglere</p>
+            <ul><li>Lokalplaner fra idé og indledende høring til endelig vedtagelse</li><li>Grundsalg, byggefelter og kommunale ejendomme</li><li>Byggeri, almene boliger, veje og anlægsbevillinger</li><li>Kommende møder, så du kan nå at reagere</li></ul>
+            <div class="pris"><b>1.500 kr.</b><span>op til 5 kommuner · 2.500 kr. for hele landet</span></div>
+          </div>
+        </article>
+        <article class="produkt">
+          <img src="assets/emner/klima.svg" alt="">
+          <div>
+            <h3>Energiradar</h3>
+            <p class="hvem">Til udviklere af sol, vind, biogas og varme</p>
+            <ul><li>Solparker, vindmøller, biogas og PtX på dagsordenen</li><li>Energiplaner, temaplaner og kommuneplantillæg</li><li>Fjernvarme og varmepumper</li><li>Hvor sagerne står, og hvornår de afgøres</li></ul>
+            <div class="pris"><b>1.500 kr.</b><span>op til 10 kommuner · 2.500 kr. for hele landet</span></div>
+          </div>
+        </article>
+        <article class="produkt">
+          <img src="assets/emner/erhverv.svg" alt="">
+          <div>
+            <h3>Åbner snart <span class="maerke haand">Starter i København</span></h3>
+            <p class="hvem">Til bryggerier, grossister og leverandører til serveringssteder</p>
+            <ul><li>Nye serveringssteder og ejerskifter fra bevillingsnævnets referater</li><li>Adresse, virksomhed og hvornår der åbnes</li><li>Ugentlig liste, klar til at ringe på</li></ul>
+            <div class="pris"><b>499 kr.</b><span>pr. region · 999 kr. for hele landet</span></div>
+          </div>
+        </article>
+        <article class="produkt">
+          <img src="assets/emner/social.svg" alt="">
+          <div>
+            <h3>Organisation</h3>
+            <p class="hvem">Til lokalafdelinger og interesseorganisationer</p>
+            <ul><li>Alle sager om jeres mærkesager i jeres kommuner</li><li>Hvordan byrådet har stemt om dem, sag for sag</li><li>Flere brugere og eksport til regneark</li></ul>
+            <div class="pris"><b>2.000 kr.</b><span>om året · 5.000 kr. med alle kommuner</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="pro"><p><b>Arbejder du alene?</b> Pro giver lokalpolitikere, journalister og foreningsfolk alle kommuner, høringsradaren og Min avis uden grænser.</p><div class="pris" style="border:0;padding:0"><b>249 kr.</b><span>pr. måned</span></div></div>
+    </div>
+  </section>
+
+  <section class="afsnit">
+    <div class="wrap">
+      <div class="pilot">
+        <div>
+          <p class="kicker">Pilot</p>
+          <h2>Prøv Tidlige signaler i tre måneder</h2>
+          <p>Vi bygger rapporten til dine kommuner, gennemgår den første med dig og retter den til din forretning. Fortsætter du ikke, stopper det bare.</p>
+        </div>
+        <div class="pris-stor"><b>750 kr.</b><span>pr. måned i 3 måneder, ekskl. moms</span><br><a class="btn btn-lys" href="#book" data-produkt="Pilot: Tidlige signaler" style="margin-top:16px">Start en pilot</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="afsnit" id="funktioner">
+    <div class="wrap">
+      <p class="kicker">Det får I</p>
+      <h2>Mere end en liste over sager</h2>
+      <p class="intro">Sagsvagt læser hele sagsfremstillingen, ikke kun overskriften, og samler det med kommunernes udbud. Så I kan se, hvor der er forretning, og holde styr på det, I arbejder med.</p>
+      <div class="funk">
+        <div><b>Projektkort på hvert signal</b>Hvad, hvor, hvor stort, hvornår og hvem: beløb, antal boliger, m², tidsplan, frister, aktører og næste skridt, læst ud af kommunens egen tekst.</div>
+        <div><b>Kommunernes udbud</b>Udbud på vej, åbne udbud med tilbudsfrist og hvem der vandt, fra EU's udbudsdatabase for jeres kommuner.</div>
+        <div><b>Pipeline</b>Sæt status på signaler og udbud (undersøger, i kontakt, byder, vundet), skriv noter og fordel ansvaret.</div>
+        <div><b>Følg sagen</b>Få besked i mandagsmailen, når en sag, I følger, kommer på en ny dagsorden.</div>
+        <div><b>Overblik og kort</b>Hvor er pengene, hvem vinder udbuddene, og hvad kommer der af frister. Alle signaler med et sted på kortet.</div>
+        <div><b>Egne søgeord og eksport</b>Hold øje med en vej, et projekt eller et firmanavn, og hent det hele som regneark.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="afsnit" id="saadan">
+    <div class="wrap">
+      <p class="kicker">Sådan virker det</p>
+      <h2>Fra 21.000 dagsordenspunkter til det, der angår dig</h2>
+      <ol class="trin" style="margin-top:36px">
+        <li><h3>Vælg kommuner og branche</h3><p>Fortæl os, hvor du arbejder, og hvad du holder øje med. Vi kan tilføje egne ord, fx en bestemt gade eller et projekt.</p></li>
+        <li><h3>Vi læser alt, hver dag</h3><p>Byråd, udvalg og lokaludvalg. Hvert punkt sorteres efter type og stadie: idé, forslag, høring, vedtaget eller i gang.</p></li>
+        <li><h3>Rapport hver mandag</h3><p>De tidligste signaler står først, med kommende møder øverst og link til både Sagsvagt og kommunens eget dokument.</p></li>
+      </ol>
+      <div class="loefter">
+        <div><b>Kun offentlige kilder</b>Kommunernes egne dagsordener og referater.</div>
+        <div><b>Ingen bilag gengivet</b>Vi refererer kort og linker til kilden.</div>
+        <div><b>Partineutralt</b>Vi viser udfaldet, ikke hvem der skal have ret.</div>
+        <div><b>Opsig hver måned</b>Ingen binding ud over piloten.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="afsnit" id="proeve">
+    <div class="wrap book">
+      <div>
+        <p class="kicker">Prøv gratis</p>
+        <h2>14 dage med jeres egen rapport</h2>
+        <p class="intro">Vælg op til fem kommuner. Når I har bekræftet jeres e-mail, er rapporten klar med det samme, og I får mandagsmailen i prøveperioden. Prøven stopper af sig selv, og der kommer ingen regning.</p>
+      </div>
+      <form id="f-proeve" novalidate>
+        <div class="to">
+          <label>Virksomhed<input id="p-firma" autocomplete="organization" maxlength="120"></label>
+          <label>Dit navn<input id="p-navn" autocomplete="name" maxlength="100"></label>
+        </div>
+        <div class="to">
+          <label>Arbejdsmail<input id="p-email" type="email" autocomplete="email" maxlength="254"></label>
+          <label>Produkt<select id="p-produkt"><option value="signaler">Tidlige signaler</option><option value="energi">Energiradar</option><option value="begge">Begge</option></select></label>
+        </div>
+        <label>Kommuner (op til fem)
+          <span class="komvalg"><input id="p-kommune" list="p-kommuner" placeholder="Skriv en kommune, og tryk Enter" autocomplete="off"><datalist id="p-kommuner"></datalist></span>
+        </label>
+        <p class="valgte" id="p-valgte" aria-live="polite"></p>
+        <label><span>Egne søgeord <span style="font-weight:500;color:var(--muted)">(valgfrit, adskilt med komma)</span></span><input id="p-ord" maxlength="600" placeholder="Fx en vej, et projekt eller et firmanavn"></label>
+        <label class="tjek"><input id="p-samtykke" type="checkbox"><span>Sagsvagt må sende mig rapportlinket og én mail om ugen i prøveperioden. Læs <a href="privatliv.html">hvordan vi behandler oplysningerne</a>.</span></label>
+        <button class="btn" type="submit">Start prøven</button>
+        <p class="fejl" role="alert" hidden></p>
+        <p class="ok" role="status" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="afsnit" id="book">
+    <div class="wrap book">
+      <div>
+        <p class="kicker">Book en gennemgang</p>
+        <h2>Se din egen rapport på 20 minutter</h2>
+        <p class="intro">Skriv, hvilke kommuner og hvilket produkt du er interesseret i. Når du trykker på knappen, åbner din mailapp en færdigskrevet mail til mansa@sagsvagt.dk, som du selv sender. Vi svarer inden for én hverdag med et tidspunkt.</p>
+      </div>
+      <form id="f-book" novalidate>
+        <div class="to">
+          <label>Virksomhed<input id="b-firma" autocomplete="organization" maxlength="120"></label>
+          <label>Dit navn<input id="b-navn" autocomplete="name" maxlength="100"></label>
+        </div>
+        <div class="to">
+          <label>Produkt<select id="b-produkt"><option>Tidlige signaler</option><option>Pilot: Tidlige signaler</option><option>Energiradar</option><option>Åbner snart</option><option>Organisation</option><option>Pro</option></select></label>
+          <label><span>Telefon <span style="font-weight:500;color:var(--muted)">(valgfrit)</span></span><input id="b-tlf" type="tel" autocomplete="tel" maxlength="30"></label>
+        </div>
+        <label>Kommuner og det, du holder øje med<textarea id="b-besked" maxlength="1500" placeholder="Fx Vejle, Fredericia og Kolding. Erhvervsgrunde og lokalplaner for boliger."></textarea></label>
+        <button class="btn" type="submit">Åbn mailen</button>
+        <p class="fejl" role="alert" hidden></p>
+        <p class="fod">Vi bruger kun oplysningerne til at svare dig. Læs <a href="privatliv.html">hvordan vi behandler dine oplysninger</a>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><img src="assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt"><span>Sagsvagt Erhverv · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S · <a href="mailto:mansa@sagsvagt.dk">mansa@sagsvagt.dk</a></span></div></footer>
+
+<script>
+  // Antallet af åbne kommuner kommer fra kommune/aabne.json, så tallet passer
+  fetch("kommune/aabne.json").then((r) => r.json()).then((l) => document.querySelectorAll(".n-aabne").forEach((el) => (el.textContent = l.length))).catch(() => {});
+  // Prøven: kommunerne vælges fra listen over åbne kommuner (kommune/aabne.json), højst fem
+  const valgte = new Map(), $p = (id) => document.getElementById(id);
+  let aabne = [];
+  fetch("kommune/aabne.json").then((r) => r.json()).then((l) => { aabne = l; $p("p-kommuner").innerHTML = l.map((k) => `<option value="${k.navn}">`).join(""); }).catch(() => {});
+  const visValgte = () => { $p("p-valgte").innerHTML = [...valgte].map(([slug, navn]) => `<button type="button" data-slug="${slug}" aria-label="Fjern ${navn}">${navn} ×</button>`).join(""); };
+  const tilfoej = () => {
+    const v = $p("p-kommune").value.trim().toLowerCase(), k = aabne.find((x) => x.navn.toLowerCase() === v);
+    if (k && valgte.size < 5) { valgte.set(k.slug, k.navn); $p("p-kommune").value = ""; visValgte(); }
+  };
+  $p("p-kommune").addEventListener("change", tilfoej);
+  $p("p-kommune").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); tilfoej(); } });
+  $p("p-valgte").addEventListener("click", (e) => { const b = e.target.closest("button"); if (b) { valgte.delete(b.dataset.slug); visValgte(); } });
+  $p("f-proeve").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const fejl = e.target.querySelector(".fejl"), ok = e.target.querySelector(".ok"), knap = e.target.querySelector("button[type=submit]");
+    fejl.hidden = ok.hidden = true;
+    tilfoej();
+    fetch("api/erhverv-proeve.php", { method: "POST", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" },
+      body: JSON.stringify({ firma: $p("p-firma").value, navn: $p("p-navn").value, email: $p("p-email").value, produkt: $p("p-produkt").value,
+        kommuner: [...valgte.keys()], ord: $p("p-ord").value, samtykke: $p("p-samtykke").checked }) })
+      .then((r) => r.json().catch(() => ({})).then((j) => { if (!r.ok) throw new Error(j.fejl || "Det lykkedes ikke. Prøv igen om lidt."); }))
+      .then(() => { ok.textContent = `Tjek din mail (${$p("p-email").value.trim()}), og tryk på knappen for at starte prøven.`; ok.hidden = false; knap.disabled = true; })
+      .catch((err) => { fejl.textContent = err.message; fejl.hidden = false; });
+  });
+  // Pilotknappen vælger piloten i formularen
+  document.querySelectorAll("[data-produkt]").forEach((a) => a.addEventListener("click", () => { document.getElementById("b-produkt").value = a.dataset.produkt; }));
+  // Formularen åbner en færdigskrevet mail; siden sender ikke noget selv
+  document.getElementById("f-book").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const v = (id) => document.getElementById(id).value.trim(), fejl = e.target.querySelector(".fejl");
+    if (!v("b-firma")) { fejl.textContent = "Skriv navnet på virksomheden."; fejl.hidden = false; document.getElementById("b-firma").focus(); return; }
+    fejl.hidden = true;
+    const emne = `Sagsvagt Erhverv: ${v("b-produkt")} til ${v("b-firma")}`;
+    const tekst = `Hej Sagsvagt\n\nVi vil gerne se en gennemgang af ${v("b-produkt")}.\n\nVirksomhed: ${v("b-firma")}\nNavn: ${v("b-navn")}\nTelefon: ${v("b-tlf") || "-"}\n\n${v("b-besked")}\n`;
+    location.href = `mailto:mansa@sagsvagt.dk?subject=${encodeURIComponent(emne)}&body=${encodeURIComponent(tekst)}`;
+  });
+</script>
+</body>
+</html>

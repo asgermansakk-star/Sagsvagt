@@ -497,7 +497,10 @@ async function main() {
   const filer = (await readdir(join(ROD, "data"))).filter((f) => f.endsWith(".json"));
   const alle = [];
   for (const f of filer) {
-    const sg = Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager);
+    // data/ har også andre filer end kommunernes sager (fx udbud.json og erhverv-foerst-set.json); de springes over
+    const indhold = JSON.parse(await readFile(join(ROD, "data", f), "utf8"));
+    if (!indhold.sager) continue;
+    const sg = Object.values(indhold.sager);
     // Nogle kommuner nummererer alle punkter i titlen ("4. Beslutning - …", Hvidovre og Høje-Taastrup). Kun når
     // næsten alle titler i kommunen har nummer, skæres det fra; ellers ville "2. behandling af budget" miste sit tal.
     const nummereret = f !== "kk.json" && sg.filter((s) => /^\d+\.\s/.test(s.titel)).length > 0.8 * sg.length;
@@ -530,6 +533,8 @@ async function main() {
   // Øverst på sagen står plankortet, ellers stedkortet, ellers emnets illustration (assets/emner/).
   const plankort = await bygPlankort(alleSager, H, KOMMUNE);
   const stedKort = await bygStedkort(alleSager, H, KOMMUNE, (s) => (erKK(s) ? stederFor(s) : KSTED.get(s.kommune)?.stederFor(s) || []));
+  // Plankort eller stedkort til Min avis (b i sager.json); uden et kort bruger Min avis emnets tegning
+  H.billedeFil = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || undefined;
   const luftfotos = await bygLuftfotos(plankort, H), gadefotos = await bygGadefotos(stedKort, H), laeserfotos = await laesLaeserfotos(ROD);
   const billedeSti = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || `assets/emner/${emneId(s)}.svg`;
   const topBillede = (s, rod) => plankortFigur(s, plankort, rod, esc) || stedkortFigur(s, stedKort, rod, esc) || `<figure class="emne-figur">${emneBillede(s, rod, { lazy: false })}</figure>`;
@@ -837,7 +842,7 @@ if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})})})();</script>`,
     moeder: [...kommendeMoeder, ...senesteMoeder].map((m) => ({ dato: m.dato, u: m.udvalg, url: m.url, n: m.antal, referat: m.referat })),
     sager: sager.map((s) => ({
       id: s.id, t: s.titel, kt: s.kommunensTitel, d: s.dek, u: s.udvalg, dato: s.dato, st: s.status, ud: s.udfald, kb: s.kortBesl || undefined, sm: s.stemmer, tal: s.tal,
-      e: s.emner, et: s.emnerTitel, url: s.url, k: s.kilde, v: s.vaegt, r: s.rutine ? 1 : 0, x: saetninger(s.afsnit.map((a) => a.tekst).join(" "), 600),
+      e: s.emner, et: s.emnerTitel, url: s.url, k: s.kilde, v: s.vaegt, r: s.rutine ? 1 : 0, b: H.billedeFil(s), x: saetninger(s.afsnit.map((a) => a.tekst).join(" "), 600),
     })),
   }));
 

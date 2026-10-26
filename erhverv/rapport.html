@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0E0F14">
+<title>Din rapport – Sagsvagt Erhverv</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/fonts/montserrat.css">
+<!-- Kundens private rapport i Sagsvagt Erhverv. Nøglen står efter # i linket (erhverv/rapport.html#k=…), så den aldrig sendes
+     til serveren i adressen; siden sender den i et POST til api/erhverv.php. Signalerne, projektkortene og kommunernes EU-udbud
+     bygges hver dag af robotten (avis/signaler.mjs --indeks, avis/erhverv-fakta.mjs, avis/udbud.mjs); kundens egne søgeord og
+     de sager, kunden følger, findes på serveren. Samme udseende som eksempelrapporten. -->
+<style>
+:root{--nat:#0E0F14;--grafit:#2A2B33;--blaek:#0C1430;--indigo:#28377A;--skifer:#5D6BA8;--bordeaux:#3E0E14;--vin:#8A2430;--rubin:#B04A50;--rosen:#DCA9A5;--lyng:#B7BBD8;--kalk:#E6DFD3;--kalk-lys:#EEE8DE;--kalk-mork:#D9D1C3;--rule:#CFC6B8;--muted:#56535A;--sans:"Montserrat",system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--kalk);color:var(--nat);font:500 16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+h1,h2,h3,p{margin:0}a{color:var(--indigo);text-underline-offset:3px}:focus-visible{outline:3px solid var(--skifer);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+button,select,input{font:inherit;color:inherit}
+.btn{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:8px 14px;border-radius:8px;border:1.5px solid var(--rule);background:var(--kalk-lys);font:700 14px var(--sans);cursor:pointer;color:var(--nat);text-decoration:none}
+.btn:hover{border-color:var(--nat)}
+.top{color:var(--kalk);background:linear-gradient(90deg,rgba(14,15,20,.6),rgba(14,15,20,.15) 65%),linear-gradient(135deg,rgba(40,55,122,.55),rgba(14,15,20,.4) 55%,rgba(62,14,20,.6)),var(--natkort,none) center/cover no-repeat,var(--nat);padding:24px 0 36px}
+.brand{display:flex;justify-content:space-between;align-items:center;gap:12px;font:700 14px var(--sans)}
+.brand img{height:26px;display:block}.brand span{font:700 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--rosen)}
+.top .k{margin-top:36px;font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--rosen)}
+.top h1{font:800 clamp(28px,1.3rem + 2.4vw,46px)/1.06 var(--sans);letter-spacing:-.02em;margin:8px 0 10px}
+.top p.u{color:rgba(230,223,211,.86);max-width:46em}
+.pilot{display:inline-block;margin-top:14px;padding:3px 10px;border-radius:999px;background:rgba(220,169,165,.18);color:var(--rosen);font:700 12px var(--sans)}
+.tal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:26px;border-top:1px solid rgba(230,223,211,.22)}
+.tal button{all:unset;cursor:pointer;padding:14px 0 0;display:block}.tal button+button{border-left:1px solid rgba(230,223,211,.22);padding-left:16px}
+.tal button:focus-visible{outline:3px solid var(--lyng);outline-offset:2px}
+.tal b{display:block;font:800 34px/1 var(--sans)}.tal span{display:block;margin-top:6px;font-size:12.5px;color:rgba(230,223,211,.8)}
+/* Værktøjslinjen */
+.vaerk{position:sticky;top:0;z-index:5;background:rgba(230,223,211,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+.vaerk .wrap{display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center;padding-top:12px;padding-bottom:12px}
+.faner{display:flex;gap:4px;flex-wrap:wrap}
+.faner button{border:0;background:none;padding:8px 12px;border-radius:8px;font:700 14px var(--sans);color:var(--muted);cursor:pointer}
+.faner button[aria-pressed="true"]{background:var(--nat);color:var(--kalk)}
+.faner button span{font-weight:600;opacity:.75;margin-left:3px}
+.filtre{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.filtre select,.filtre input{min-height:40px;border:1.5px solid var(--rule);border-radius:8px;background:var(--kalk-lys);padding:6px 10px;font:600 14px var(--sans);max-width:200px}
+.filtre input{width:180px}
+main{padding:28px 0 64px}
+.ingen{padding:40px 0;color:var(--muted)}
+.signal{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.sb img{display:block;width:150px;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:var(--kalk-mork)}
+.kicker{font:700 11.5px/1.5 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.kicker .kn{color:var(--nat)}.st{color:var(--rubin)}.st-ide,.st-forslag{color:var(--indigo)}.kom{color:var(--vin)}.ord{color:var(--vin)}
+.ny{display:inline-block;margin-right:6px;padding:0 7px;border-radius:999px;background:var(--rubin);color:var(--kalk);font:800 10.5px/1.7 var(--sans);letter-spacing:.06em;vertical-align:1px}
+.ny.blaa{background:var(--indigo)}
+.signal h3{font:700 18px/1.3 var(--sans);margin-bottom:4px}.signal h3 a{color:var(--nat);text-decoration:none}.signal h3 a:hover{text-decoration:underline}
+.meta{font-size:13px;color:var(--muted)}.dek{font-size:14.5px;margin-top:8px}.vej{font-size:12.5px;color:var(--muted);margin-top:8px}
+/* Projektkortet */
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 2px}
+.chip{display:inline-block;padding:2px 10px;border-radius:999px;background:var(--kalk-lys);border:1px solid var(--rule);font:700 12.5px/1.7 var(--sans)}
+.chip.kr{background:var(--nat);border-color:var(--nat);color:var(--kalk)}.chip.frist{background:var(--rosen);border-color:var(--rosen);color:var(--bordeaux)}
+.kort{display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 12px;margin-top:10px;padding:10px 12px;border-left:3px solid var(--indigo);background:rgba(238,232,222,.6);border-radius:0 10px 10px 0;font-size:13.5px}
+.kort dt{font-weight:700;color:var(--muted)}.kort dd{margin:0}
+.bund{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:10px}.kilder{font:600 13px var(--sans)}
+.vurder{display:flex;gap:6px;margin-left:auto;flex-wrap:wrap}
+.vurder button{min-height:34px;padding:4px 11px;border-radius:8px;border:1.5px solid var(--rule);background:transparent;font:700 12.5px var(--sans);cursor:pointer;color:var(--muted)}
+.vurder button:hover{border-color:var(--nat);color:var(--nat)}
+.vurder button[aria-pressed="true"][data-v="ja"]{background:var(--indigo);border-color:var(--indigo);color:var(--kalk)}
+.vurder button[aria-pressed="true"][data-v="nej"]{background:var(--kalk-mork);border-color:var(--kalk-mork);color:var(--nat)}
+.vurder button[aria-pressed="true"][data-f]{background:var(--nat);border-color:var(--nat);color:var(--kalk)}
+.signal.fravalgt{opacity:.55}
+/* Udbud */
+.udbud{padding:18px 0;border-bottom:1px solid var(--rule)}
+.udbud h3{font:700 17px/1.3 var(--sans);margin-bottom:4px}.udbud h3 a{color:var(--nat);text-decoration:none}.udbud h3 a:hover{text-decoration:underline}
+.art{color:var(--indigo)}.art-aaben{color:var(--vin)}.art-vundet{color:var(--muted)}
+.mere{display:flex;justify-content:center;padding-top:24px}
+.indstil{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+.boks{background:var(--kalk-lys);border:1px solid var(--rule);border-radius:16px;padding:20px 22px}
+.boks h2{font:800 17px var(--sans);margin-bottom:6px}.boks p{font-size:14px;color:var(--muted)}.boks .btn{margin-top:12px}
+.note{font-size:13px;color:var(--muted);border-left:3px solid var(--rubin);padding:4px 0 4px 12px;margin-top:40px}
+footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:28px 0}footer a{color:var(--kalk)}
+.fejlside{max-width:520px;margin:80px auto;padding:28px 24px;background:var(--kalk-lys);border-radius:12px}
+.fejlside h1{font:800 24px var(--sans);margin-bottom:10px}
+.skjult,[hidden]{display:none!important}
+/* Pipeline, overblik og kort */
+.pl{min-height:34px;border:1.5px solid var(--rule);border-radius:8px;background:transparent;padding:4px 8px;font:700 12.5px var(--sans);color:var(--muted)}
+.pl.sat{background:var(--lyng);border-color:var(--lyng);color:var(--blaek)}
+.kolonner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.kolonne h2{font:800 15px var(--sans);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);border-bottom:2px solid var(--nat);padding-bottom:6px;margin-bottom:8px}
+.kolonne h2 span{color:var(--nat)}
+.plkort{background:var(--kalk-lys);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;margin-bottom:10px;font-size:13.5px}
+.plkort h3{font:700 15px/1.3 var(--sans);margin:2px 0 6px}.plkort h3 a{color:var(--nat);text-decoration:none}
+.plkort textarea,.plkort input{width:100%;border:1.5px solid var(--rule);border-radius:8px;background:#fff;padding:6px 8px;font:500 13px var(--sans);margin-top:6px}
+.plkort textarea{min-height:54px;resize:vertical}.plkort .r{display:flex;gap:6px;align-items:center;margin-top:6px}.plkort .r input{margin:0}
+.lukket{opacity:.7}
+.overblik{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.overblik section{background:var(--kalk-lys);border:1px solid var(--rule);border-radius:16px;padding:18px 20px}
+.overblik h2{font:800 17px var(--sans);margin-bottom:4px}.overblik .lille{font-size:13px;color:var(--muted);margin-bottom:12px}
+.bjaelke{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;font-size:13.5px;margin-bottom:9px}
+.bjaelke i{grid-column:1/-1;display:block;height:7px;border-radius:4px;background:var(--indigo)}.bjaelke.v i{background:var(--vin)}
+.bjaelke b{font-weight:700}.bjaelke span{color:var(--muted);white-space:nowrap}
+.frister li{margin:6px 0;font-size:13.5px}.frister ul{margin:0;padding-left:18px}
+#kortet{height:560px;border-radius:16px;border:1px solid var(--rule);background:var(--kalk-mork)}
+.leaflet-popup-content{font:500 13px/1.45 var(--sans)}.leaflet-popup-content b{display:block;font-size:14px;margin-bottom:3px}
+@media (max-width:820px){.kolonner,.overblik{grid-template-columns:1fr}#kortet{height:440px}.filtre{margin-left:0;width:100%}.filtre select,.filtre input{flex:1 1 140px;max-width:none}.indstil{grid-template-columns:1fr}}
+@media (max-width:640px){.wrap{padding:0 16px}.tal{grid-template-columns:1fr 1fr;gap:14px 0}.tal button:nth-child(3){border-left:0;padding-left:0}.tal b{font-size:28px}
+  .signal{grid-template-columns:76px minmax(0,1fr);gap:12px}.sb img{width:76px;aspect-ratio:1}.signal h3{font-size:16.5px}.vurder{margin-left:0}.vaerk{position:static}
+  .kort{grid-template-columns:1fr}.kort dt{margin-top:4px}
+  .filtre select{flex:1 1 calc(50% - 4px);min-width:0}.filtre input{flex:1 1 100%}.faner button{padding:7px 10px}}
+@media print{.vaerk,.vurder,.mere,.indstil{display:none!important}.top{-webkit-print-color-adjust:exact;print-color-adjust:exact}.signal,.udbud{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div id="indhold" hidden>
+<header class="top"><div class="wrap">
+  <div class="brand"><a href="../erhverv.html"><img src="../assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt"></a><span id="firma"></span></div>
+  <p class="k" id="produkt"></p>
+  <h1 id="titel"></h1>
+  <p class="u" id="under"></p>
+  <span class="pilot" id="pilot" hidden></span>
+  <div class="tal">
+    <button type="button" data-fane="alle"><b id="n-alle">0</b><span>signaler i alt</span></button>
+    <button type="button" data-fane="nye"><b id="n-nye">0</b><span id="nye-tekst">nye siden sidst</span></button>
+    <button type="button" data-fane="kommende"><b id="n-kommende">0</b><span>på kommende møder</span></button>
+    <button type="button" data-fane="udbud"><b id="n-udbud">0</b><span>åbne udbud og udbud på vej</span></button>
+  </div>
+</div></header>
+<div class="vaerk"><div class="wrap">
+  <div class="faner" role="group" aria-label="Vis">
+    <button type="button" data-fane="alle" aria-pressed="true">Signaler</button>
+    <button type="button" data-fane="nye" aria-pressed="false">Nye</button>
+    <button type="button" data-fane="kommende" aria-pressed="false">Kommende møder</button>
+    <button type="button" data-fane="udbud" aria-pressed="false">Udbud</button>
+    <button type="button" data-fane="pipeline" aria-pressed="false">Pipeline <span id="n-pipe"></span></button>
+    <button type="button" data-fane="overblik" aria-pressed="false">Overblik</button>
+    <button type="button" data-fane="kort" aria-pressed="false">Kort</button>
+    <button type="button" data-fane="foelger" aria-pressed="false">Følger <span id="n-foelg"></span></button>
+    <button type="button" data-fane="relevante" aria-pressed="false">Relevante <span id="n-rel"></span></button>
+  </div>
+  <div class="filtre" id="f-signaler">
+    <select id="f-type" aria-label="Type"></select>
+    <select id="f-stadie" aria-label="Stadie"></select>
+    <select id="f-branche" aria-label="Branche"></select>
+    <select id="f-kommune" aria-label="Kommune"></select>
+    <select id="f-sort" aria-label="Sortering"><option value="nyeste">Nyeste først</option><option value="beloeb">Største beløb først</option><option value="tidligst">Tidligste stadie først</option><option value="moede">Næste møde først</option></select>
+    <input id="f-soeg" type="search" placeholder="Søg" aria-label="Søg">
+  </div>
+</div></div>
+<main><div class="wrap">
+  <p class="meta" id="vist" aria-live="polite"></p>
+  <div id="liste"></div>
+  <div class="mere"><button class="btn" type="button" id="vis-flere" hidden>Vis flere</button></div>
+  <div class="indstil">
+    <section class="boks">
+      <h2>Ugentlig mail</h2>
+      <p id="mail-tekst"></p>
+      <button class="btn" type="button" id="mail-knap"></button>
+    </section>
+    <section class="boks">
+      <h2>Brug rapporten</h2>
+      <p>Følg en sag, så får I besked i mandagsmailen, når den kommer på en ny dagsorden. Hent det, I ser, som regneark (åbner i Excel og Numbers), eller udskriv det. Mangler der noget, så skriv til os.</p>
+      <button class="btn" type="button" id="eksport">Hent som regneark</button>
+      <button class="btn" type="button" onclick="print()">Udskriv</button>
+      <a class="btn" id="feedback" href="mailto:mansa@sagsvagt.dk">Skriv til os</a>
+    </section>
+  </div>
+  <p class="note">Signalerne er fundet automatisk i kommunernes egne dagsordener og referater og opdateres hver dag. Projektkortene (beløb, boliger, tidsplan, aktører og næste skridt) er Sagsvagts læsning af hele sagsfremstillingen; tal og datoer står i kommunens dokument, som hvert signal linker til, og bilag er ikke gengivet. Udbuddene kommer fra EU's udbudsdatabase TED og omfatter udbud over EU's tærskelværdier. Jeres markeringer bruger vi kun til at gøre rapporten bedre for jer.</p>
+</div></main>
+<footer><div class="wrap">Sagsvagt Erhverv · CVR 46841514 · <a href="mailto:mansa@sagsvagt.dk">mansa@sagsvagt.dk</a> · Linket er personligt; del det kun i jeres egen virksomhed.</div></footer>
+</div>
+<div class="fejlside" id="fejl" hidden><h1>Linket virker ikke</h1><p id="fejl-tekst"></p><p style="margin-top:14px"><a href="../erhverv.html">Om Sagsvagt Erhverv</a></p></div>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (s) { return document.querySelector(s); };
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var MDR = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
+  var dato = function (d) { var p = String(d).slice(0, 10).split("-"); return +p[2] + ". " + MDR[p[1] - 1]; };
+  var kr = function (x) { return x >= 1e9 ? (x / 1e9).toLocaleString("da-DK", { maximumFractionDigits: 1 }) + " mia. kr." : x >= 1e6 ? (x / 1e6).toLocaleString("da-DK", { maximumFractionDigits: 1 }) + " mio. kr." : Math.round(x).toLocaleString("da-DK") + " kr."; };
+  var idag = new Date().toISOString().slice(0, 10);
+  var noegle = (location.hash.match(/k=([0-9a-f-]+)/) || [])[1] || "";
+  var api = function (data) {
+    data.k = noegle;
+    return fetch("../api/erhverv.php", { method: "POST", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) throw new Error(j.fejl || "Rapporten kunne ikke hentes. Prøv igen om lidt."); return j; }); });
+  };
+  function visFejl(t) { $("#fejl-tekst").textContent = t; $("#fejl").hidden = false; $("#indhold").hidden = true; }
+  if (!noegle) return visFejl("Linket mangler sin nøgle. Brug linket fra jeres mail, eller skriv til mansa@sagsvagt.dk.");
+
+  var D, alle = [], udbud = [], vurd = {}, foelg = {}, pipe = {}, fane = "alle", vis = 40, nyGraense = "";
+  var SAERLIGE = { pipeline: 1, overblik: 1 };
+  var ARTER = { kommer: "Udbud på vej", aaben: "Åbent udbud", vundet: "Tildelt" };
+
+  api({ handling: "rapport" }).then(function (j) {
+    D = j; alle = j.signaler; udbud = j.udbud || []; vurd = j.vurderinger || {};
+    (j.foelger || []).forEach(function (f) { foelg[f.noegle] = f; });
+    (j.pipeline || []).forEach(function (p) { pipe[p.ref] = p; });
+    var k = j.kunde, m = j.meta;
+    // "Nyt" er det, robotten har set siden forrige besøg; første gang (eller over 14 dage siden) de sidste 7 dage
+    var syv = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
+    var forrige = k.forrige ? k.forrige.slice(0, 10) : "";
+    nyGraense = forrige && forrige > new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10) ? forrige : syv;
+    $("#nye-tekst").textContent = nyGraense === forrige ? "nye siden " + dato(forrige) : "nye de sidste 7 dage";
+    document.title = k.firma + " – Sagsvagt Erhverv";
+    $("#firma").textContent = k.firma;
+    $("#produkt").textContent = k.produktnavn;
+    var navne = k.kommuner.map(function (x) { return x.navn; });
+    $("#titel").textContent = navne.length > 3 ? navne.length + " kommuner" : navne.join(", ").replace(/, ([^,]*)$/, " og $1");
+    $("#under").textContent = (navne.length > 3 ? navne.join(", ").replace(/, ([^,]*)$/, " og $1") + ". " : "")
+      + "Sager fra byråd og udvalg de seneste " + m.dage + " dage og kommende møder" + (k.ord.length ? ", alt med jeres søgeord (" + k.ord.join(", ") + ")" : "") + " og kommunernes EU-udbud."
+      + (m.genereret ? " Opdateret " + dato(m.genereret.slice(0, 10)) + "." : "");
+    if (k.status === "proeve") { $("#pilot").hidden = false; $("#pilot").textContent = "Pilot" + (k.proeve_slut ? " til " + dato(k.proeve_slut) : ""); }
+    if (k.kommuner[0]) document.querySelector(".top").style.setProperty("--natkort", 'url("../assets/natkort/' + k.kommuner[0].slug + '.jpg")');
+    $("#feedback").href = "mailto:mansa@sagsvagt.dk?subject=" + encodeURIComponent("Rapporten til " + k.firma);
+    fyldFiltre();
+    visMail(k);
+    $("#indhold").hidden = false;
+    tegn();
+  }).catch(function (e) { visFejl(e.message); });
+
+  // Filtrene skifter indhold mellem signaler og udbud
+  function fyldFiltre() {
+    var m = D.meta, k = D.kunde, typer = {}, brancher = {};
+    $("#f-signaler").classList.toggle("skjult", !!SAERLIGE[fane]);
+    if (fane === "udbud") {
+      var g = D.udbudGrupper, egne = g.produkt;
+      $("#f-type").innerHTML = '<option value="egne">Jeres brancher</option><option value="">Alle udbud</option>' + g.alle.map(function (x) { return '<option value="' + x.id + '">' + esc(x.navn) + "</option>"; }).join("");
+      $("#f-stadie").innerHTML = '<option value="">Åbne og på vej</option><option value="aaben">Åbne udbud</option><option value="kommer">Udbud på vej</option><option value="vundet">Tildelt (vindere)</option><option value="alle">Alle</option>';
+      $("#f-branche").classList.add("skjult");
+      $("#f-sort").innerHTML = '<option value="nyeste">Nyeste først</option><option value="frist">Nærmeste frist først</option><option value="vaerdi">Største værdi først</option>';
+      $("#f-type").dataset.egne = egne.join(",");
+    } else {
+      alle.forEach(function (s) {
+        tyNoegler(s).forEach(function (t) { typer[t] = (typer[t] || 0) + 1; });
+        ((s.f && s.f.muligheder) || []).forEach(function (b) { brancher[b] = (brancher[b] || 0) + 1; });
+      });
+      // Typerne hedder "segment:id" (energi:plan er energiplaner, signaler:plan lokalplaner); søgeord hedder "ord"
+      $("#f-type").innerHTML = '<option value="">Alle typer</option>' + Object.keys(typer).sort(function (a, b) { return a === "ord" ? -1 : b === "ord" ? 1 : (m.typer[a] || a).localeCompare(m.typer[b] || b, "da"); })
+        .map(function (t) { return '<option value="' + esc(t) + '">' + esc(m.typer[t] || t) + " (" + typer[t] + ")</option>"; }).join("");
+      $("#f-stadie").innerHTML = '<option value="">Alle stadier</option>' + m.raekke.map(function (id) { var st = m.stadier.find(function (x) { return x.id === id; }); return st ? '<option value="' + id + '">' + esc(st.navn) + "</option>" : ""; }).join("");
+      var b = Object.keys(brancher).sort(function (x, y) { return brancher[y] - brancher[x]; });
+      $("#f-branche").innerHTML = '<option value="">Alle brancher</option>' + b.map(function (x) { return '<option value="' + esc(x) + '">Til ' + esc(x) + " (" + brancher[x] + ")</option>"; }).join("");
+      $("#f-branche").classList.toggle("skjult", !b.length);
+      $("#f-sort").innerHTML = '<option value="nyeste">Nyeste først</option><option value="beloeb">Største beløb først</option><option value="tidligst">Tidligste stadie først</option><option value="moede">Næste møde først</option>';
+    }
+    $("#f-kommune").innerHTML = '<option value="">Alle kommuner</option>' + k.kommuner.map(function (x) { return '<option value="' + x.slug + '">' + esc(x.navn) + "</option>"; }).join("");
+    $("#f-kommune").classList.toggle("skjult", k.kommuner.length < 2);
+    $("#f-soeg").placeholder = fane === "udbud" ? "Søg i udbuddene" : "Søg i signalerne";
+  }
+
+  function visMail(k) {
+    $("#mail-tekst").textContent = k.mail
+      ? "Hver mandag kl. 7 får " + k.modtagere.join(", ") + " en mail med ugens nye signaler, kommende møder, nye udbud og de sager, I følger."
+      : "Den ugentlige mail er slået fra. Rapporten her opdateres stadig hver dag.";
+    $("#mail-knap").textContent = k.mail ? "Slå mailen fra" : "Slå mailen til";
+  }
+  $("#mail-knap").addEventListener("click", function () {
+    api({ handling: "mail", til: !D.kunde.mail }).then(function (j) { D.kunde.mail = j.mail; visMail(D.kunde); }).catch(function (e) { alert(e.message); });
+  });
+
+  var erNy = function (s) { return s.set >= nyGraense; };
+  function tyNoegler(s) { return Object.keys(s.ty).map(function (seg) { return seg === "ord" ? "ord" : seg + ":" + s.ty[seg]; }); }
+  function tyNavne(s) { return tyNoegler(s).map(function (t) { return t === "ord" ? "Søgeord: " + s.ty.ord : D.meta.typer[t] || t; }); }
+  // Et åbent udbud uden frist i TED regnes som åbent i 45 dage efter offentliggørelsen
+  var for45 = new Date(Date.now() - 45 * 864e5).toISOString().slice(0, 10);
+  var aabentUdbud = function (u) { return u.art === "kommer" || (u.art === "aaben" && (u.frist ? u.frist >= idag : u.dato >= for45)); };
+
+  function filtreret() {
+    var t = $("#f-type").value, st = $("#f-stadie").value, br = $("#f-branche").value, ko = $("#f-kommune").value, q = $("#f-soeg").value.trim().toLowerCase();
+    var l = alle.filter(function (s) {
+      if (fane === "nye" && !erNy(s)) return false;
+      if (fane === "kommende" && !(s.kom && s.dato >= idag)) return false;
+      if (fane === "relevante" && vurd[s.id] !== "ja") return false;
+      if (fane === "foelger" && !(s.n && foelg[s.n])) return false;
+      if (fane === "kort" && !s.geo) return false;
+      if (t && tyNoegler(s).indexOf(t) < 0) return false;
+      if (st && s.sd !== st) return false;
+      if (br && !((s.f && s.f.muligheder) || []).includes(br)) return false;
+      if (ko && s.k !== ko) return false;
+      if (q && (s.t + " " + s.d + " " + s.u + " " + s.kn + " " + JSON.stringify(s.f || "")).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    // Følger man en sag, vises kun dens nyeste behandling
+    if (fane === "foelger") { var set = {}; l = l.sort(function (a, b) { return b.dato.localeCompare(a.dato); }).filter(function (s) { return set[s.n] ? false : (set[s.n] = 1); }); }
+    var sort = fane === "kommende" ? "moede" : $("#f-sort").value, r = D.meta.raekke;
+    var belob = function (s) { return (s.f && s.f.beloeb_kr) || 0; };
+    l.sort(sort === "tidligst" ? function (a, b) { return (r.indexOf(a.sd) + 1 || 9) - (r.indexOf(b.sd) + 1 || 9) || b.dato.localeCompare(a.dato); }
+      : sort === "beloeb" ? function (a, b) { return belob(b) - belob(a) || b.dato.localeCompare(a.dato); }
+      : sort === "moede" ? function (a, b) { return (b.kom - a.kom) || a.dato.localeCompare(b.dato); }
+      : function (a, b) { return b.dato.localeCompare(a.dato); });
+    return l;
+  }
+  function filtreretUdbud() {
+    var t = $("#f-type").value, art = $("#f-stadie").value, ko = $("#f-kommune").value, q = $("#f-soeg").value.trim().toLowerCase();
+    var egne = ($("#f-type").dataset.egne || "").split(",");
+    var l = udbud.filter(function (u) {
+      if (t === "egne" ? !u.g.some(function (g) { return egne.indexOf(g) > -1; }) : t && u.g.indexOf(t) < 0) return false;
+      if (art === "" ? !aabentUdbud(u) : art !== "alle" && u.art !== art) return false;
+      if (ko && u.k.indexOf(ko) < 0) return false;
+      if (q && (u.titel + " " + u.kategori + " " + u.d + " " + u.ordregivere.join(" ") + " " + u.vinder.join(" ")).toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    var sort = $("#f-sort").value;
+    l.sort(sort === "frist" ? function (a, b) { return (a.frist || "9999").localeCompare(b.frist || "9999"); }
+      : sort === "vaerdi" ? function (a, b) { return (b.vaerdi || 0) - (a.vaerdi || 0); }
+      : function (a, b) { return b.dato.localeCompare(a.dato); });
+    return l;
+  }
+
+  function plVaelger(ref, titel) {
+    var p = pipe[ref], st = D.pipelineStatus;
+    return '<select class="pl' + (p ? " sat" : "") + '" data-ref="' + esc(ref) + '" data-titel="' + esc(titel) + '" aria-label="Pipeline"><option value="">' + (p ? "Fjern fra pipeline" : "Til pipeline …") + "</option>"
+      + Object.keys(st).map(function (k) { return '<option value="' + k + '"' + (p && p.status === k ? " selected" : "") + ">" + esc(st[k]) + "</option>"; }).join("") + "</select>";
+  }
+  function chips(f) {
+    if (!f) return "";
+    var c = [];
+    if (f.beloeb_kr) c.push('<span class="chip kr" title="' + esc(f.beloeb_tekst || "") + '">' + kr(f.beloeb_kr) + "</span>");
+    if (f.boliger) c.push('<span class="chip">' + Math.round(f.boliger).toLocaleString("da-DK") + " boliger</span>");
+    if (f.areal_m2) c.push('<span class="chip">' + Math.round(f.areal_m2).toLocaleString("da-DK") + " m²</span>");
+    else if (f.areal_ha) c.push('<span class="chip">' + f.areal_ha.toLocaleString("da-DK") + " ha</span>");
+    if (f.frist && f.frist >= idag) c.push('<span class="chip frist">Frist ' + dato(f.frist) + "</span>");
+    return c.length ? '<div class="chips">' + c.join("") + "</div>" : "";
+  }
+  function projektkort(f) {
+    if (!f || !f.hvad) return "";
+    var r = [["Hvor", f.hvor], ["Beløb", f.beloeb_tekst], ["Tidsplan", f.tidsplan], ["Næste skridt", f.naeste], ["Aktører", (f.aktoerer || []).join(", ")], ["Kan bruges af", (f.muligheder || []).join(", ")]]
+      .filter(function (x) { return x[1]; });
+    return r.length ? '<dl class="kort">' + r.map(function (x) { return "<dt>" + x[0] + "</dt><dd>" + esc(x[1]) + "</dd>"; }).join("") + "</dl>" : "";
+  }
+  function kort(s) {
+    var m = D.meta, link = "../" + s.url, st = (m.stadier.find(function (x) { return x.id === s.sd; }) || {}).navn, f = s.f;
+    var typer = tyNavne(s).map(function (t) { return /^Søgeord/.test(t) ? '<span class="ord">' + esc(t) + "</span>" : esc(t); }).filter(function (t, i, a) { return a.indexOf(t) === i; }).join(" / ");
+    var v = vurd[s.id] || "", fl = s.n && foelg[s.n], nyBeh = fl && s.dato > fl.dato;
+    return '<article class="signal' + (v === "nej" ? " fravalgt" : "") + '" data-id="' + esc(s.id) + '">'
+      + '<a class="sb" href="' + esc(link) + '" tabindex="-1" aria-hidden="true"><img src="../' + esc(s.b) + '" alt="" loading="lazy"></a><div>'
+      + '<p class="kicker">' + (nyBeh ? '<span class="ny blaa">Ny behandling</span>' : erNy(s) ? '<span class="ny">Ny</span>' : "") + '<span class="kn">' + esc(s.kn) + "</span> · " + typer
+      + (st ? ' · <span class="st st-' + s.sd + '">' + esc(st) + "</span>" : "") + (s.kom ? ' · <span class="kom">Møde ' + dato(s.dato) + "</span>" : "") + "</p>"
+      + '<h3><a href="' + esc(link) + '">' + esc(s.t) + "</a></h3>"
+      + chips(f)
+      + '<p class="meta">' + esc(s.u) + " · " + (s.kom ? "møde " : "behandlet ") + dato(s.dato) + (s.ud ? " · " + esc(s.ud) : "") + "</p>"
+      + '<p class="dek">' + esc(f && f.hvad ? f.hvad : s.d) + "</p>"
+      + projektkort(f)
+      + (s.vej && s.vej.length ? '<p class="vej">Sagens vej: ' + s.vej.map(function (b) { return '<a href="../' + esc(b[2]) + '">' + esc(b[0]) + " " + dato(b[1]) + "</a>"; }).join(" → ") + "</p>" : "")
+      + '<div class="bund"><p class="kilder"><a href="' + esc(link) + '">Læs sagen</a>' + (s.kl ? ' · <a href="' + esc(s.kl) + '" rel="nofollow noopener" target="_blank">Kommunens dokument</a>' : "") + "</p>"
+      + '<div class="vurder" role="group" aria-label="Følg og vurdér">' + (s.n ? plVaelger("s:" + s.n, s.t) + '<button type="button" data-f="1" aria-pressed="' + !!fl + '">' + (fl ? "Følger" : "Følg sagen") + "</button>" : "")
+      + '<button type="button" data-v="ja" aria-pressed="' + (v === "ja") + '">Relevant</button><button type="button" data-v="nej" aria-pressed="' + (v === "nej") + '">Ikke relevant</button></div></div>'
+      + "</div></article>";
+  }
+  function udbudKort(u) {
+    var info = [u.vaerdi ? '<span class="chip kr">' + kr(u.vaerdi) + "</span>" : "", u.art === "aaben" && u.frist ? '<span class="chip' + (u.frist >= idag ? " frist" : "") + '">' + (u.frist >= idag ? "Frist " : "Fristen var ") + dato(u.frist) + "</span>" : "",
+      u.vinder.length ? '<span class="chip">Vundet af ' + esc(u.vinder.join(", ")) + "</span>" : ""].join("");
+    return '<article class="udbud"><p class="kicker"><span class="kn">' + esc(u.ordregivere.slice(0, 3).join(", ") + (u.ordregivere.length > 3 ? " m.fl." : "")) + '</span> · <span class="art art-' + u.art + '">' + ARTER[u.art] + "</span> · " + esc(u.kategori) + "</p>"
+      + '<h3><a href="' + esc(u.url) + '" target="_blank" rel="noopener">' + esc(u.titel) + "</a></h3>"
+      + (info ? '<div class="chips">' + info + "</div>" : "")
+      + '<p class="meta">Offentliggjort ' + dato(u.dato) + " i EU's udbudsdatabase (TED)</p>"
+      + (u.d ? '<p class="dek">' + esc(u.d) + "</p>" : "") + '<div class="bund"><div class="vurder">' + plVaelger("u:" + u.id, u.titel) + "</div></div></article>";
+  }
+
+  function tegn() {
+    var np = Object.keys(pipe).filter(function (r) { return ["undersoeger", "kontakt", "byder"].indexOf(pipe[r].status) > -1; }).length;
+    $("#n-pipe").textContent = np ? "(" + np + ")" : "";
+    if (SAERLIGE[fane] || fane === "kort") { opdaterTal(); $("#vis-flere").hidden = true; document.querySelectorAll(".faner button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.fane === fane)); }); }
+    if (fane === "pipeline") return tegnPipeline();
+    if (fane === "overblik") return tegnOverblik();
+    if (fane === "kort") return tegnKort();
+    var u = fane === "udbud", l = u ? filtreretUdbud() : filtreret();
+    opdaterTal();
+    $("#vis-flere").hidden = true;
+    document.querySelectorAll(".faner button").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.fane === fane)); });
+    $("#f-stadie").setAttribute("aria-label", u ? "Slags udbud" : "Stadie");
+    var hvad = u ? "udbud" : "signaler", total = u ? udbud.length : alle.length;
+    $("#vist").textContent = (u ? "Kommunernes EU-udbud" + (D.udbudGrupper.hentet ? ", hentet " + dato(D.udbudGrupper.hentet.slice(0, 10)) : "") + ". " : "") + "Viser " + l.length + " af " + total + " " + hvad;
+    var tom = { relevante: "Ingen signaler er markeret som relevante endnu. Tryk på Relevant ved et signal, så samles de her.",
+      foelger: "I følger ingen sager endnu. Tryk på Følg sagen ved et signal; så står den her, og I får besked i mandagsmailen, når den kommer på en ny dagsorden." };
+    $("#liste").innerHTML = l.length ? l.slice(0, vis).map(u ? udbudKort : kort).join("") : '<p class="ingen">' + (tom[fane] || "Intet passer til filtrene.") + "</p>";
+    $("#vis-flere").hidden = l.length <= vis;
+  }
+  function opdaterTal() {
+    $("#n-alle").textContent = alle.length;
+    $("#n-nye").textContent = alle.filter(erNy).length;
+    $("#n-kommende").textContent = alle.filter(function (s) { return s.kom && s.dato >= idag; }).length;
+    var egne = (D.udbudGrupper.produkt || []);
+    $("#n-udbud").textContent = udbud.filter(function (x) { return aabentUdbud(x) && x.g.some(function (g) { return egne.indexOf(g) > -1; }); }).length;
+    var rel = Object.keys(vurd).filter(function (id) { return vurd[id] === "ja"; }).length;
+    $("#n-rel").textContent = rel ? "(" + rel + ")" : "";
+    var nf = Object.keys(foelg).length; $("#n-foelg").textContent = nf ? "(" + nf + ")" : "";
+  }
+
+  // ---------- Pipeline ----------
+  // Tre aktive kolonner og de afsluttede nedenunder. Note og ansvarlig gemmes, når feltet forlades.
+  function plLink(ref) {
+    if (ref.slice(0, 2) === "u:") { var u = udbud.find(function (x) { return "u:" + x.id === ref; }); return u ? u.url : ""; }
+    var s = alle.filter(function (x) { return "s:" + x.n === ref; }).sort(function (a, b) { return b.dato.localeCompare(a.dato); })[0];
+    return s ? "../" + s.url : "";
+  }
+  function plKort(p) {
+    var st = D.pipelineStatus, link = plLink(p.ref), u = p.ref.slice(0, 2) === "u:";
+    return '<div class="plkort' + (["vundet", "tabt", "droppet"].indexOf(p.status) > -1 ? " lukket" : "") + '" data-ref="' + esc(p.ref) + '">'
+      + '<p class="kicker">' + (u ? "Udbud" : "Signal") + " · opdateret " + dato(p.opdateret) + "</p>"
+      + "<h3>" + (link ? '<a href="' + esc(link) + '"' + (u ? ' target="_blank" rel="noopener"' : "") + ">" + esc(p.titel) + "</a>" : esc(p.titel)) + "</h3>"
+      + plVaelger(p.ref, p.titel)
+      + '<textarea data-felt="note" placeholder="Note, fx hvem I har talt med">' + esc(p.note || "") + "</textarea>"
+      + '<div class="r"><input data-felt="ansvarlig" placeholder="Ansvarlig" value="' + esc(p.ansvarlig || "") + '"></div></div>';
+  }
+  function tegnPipeline() {
+    var st = D.pipelineStatus, l = Object.keys(pipe).map(function (r) { return pipe[r]; });
+    var kol = function (k) { var x = l.filter(function (p) { return p.status === k; }); return '<div class="kolonne"><h2>' + esc(st[k]) + " <span>" + x.length + "</span></h2>" + (x.map(plKort).join("") || '<p class="meta">Ingen endnu.</p>') + "</div>"; };
+    $("#vist").textContent = l.length ? "Jeres pipeline: " + l.length + (l.length === 1 ? " sag" : " sager") + ". Noter og ansvarlig gemmes automatisk og kan ses af alle med linket." : "";
+    $("#liste").innerHTML = l.length
+      ? '<div class="kolonner">' + kol("undersoeger") + kol("kontakt") + kol("byder") + '</div><div class="kolonner" style="margin-top:28px">' + kol("vundet") + kol("tabt") + kol("droppet") + "</div>"
+      : '<p class="ingen">Pipelinen er tom. Vælg "Til pipeline" ved et signal eller et udbud for at holde styr på, hvad I arbejder med. Sager i pipelinen følges automatisk.</p>';
+  }
+  function gemPipeline(ref, ekstra) {
+    var p = pipe[ref] || {};
+    var data = { handling: "pipeline", ref: ref, status: ekstra.status != null ? ekstra.status : p.status, titel: ekstra.titel || p.titel, note: ekstra.note != null ? ekstra.note : p.note || "", ansvarlig: ekstra.ansvarlig != null ? ekstra.ansvarlig : p.ansvarlig || "" };
+    if (data.status) pipe[ref] = { ref: ref, titel: data.titel, status: data.status, note: data.note, ansvarlig: data.ansvarlig, opdateret: new Date().toISOString() };
+    else delete pipe[ref];
+    // Et signal i pipelinen følges automatisk (som på serveren)
+    if (ref.slice(0, 2) === "s:" && ["undersoeger", "kontakt", "byder"].indexOf(data.status) > -1 && !foelg[ref.slice(2)]) {
+      var s = alle.filter(function (x) { return "s:" + x.n === ref; }).sort(function (a, b) { return b.dato.localeCompare(a.dato); })[0];
+      if (s) foelg[s.n] = { noegle: s.n, dato: s.dato };
+    }
+    return api(data).catch(function (e) { alert(e.message); });
+  }
+  document.addEventListener("change", function (e) {
+    var sel = e.target.closest("select.pl"); if (!sel) return;
+    gemPipeline(sel.dataset.ref, { status: sel.value, titel: sel.dataset.titel }).then(tegn);
+  });
+  document.addEventListener("focusout", function (e) {
+    var f = e.target.dataset && e.target.dataset.felt, k = e.target.closest(".plkort"); if (!f || !k) return;
+    var ref = k.dataset.ref, ekstra = {}; ekstra[f] = e.target.value;
+    if (pipe[ref] && pipe[ref][f] !== e.target.value) gemPipeline(ref, ekstra);
+  });
+
+  // ---------- Overblik ----------
+  function bjaelker(l, max, klasse) {
+    return l.map(function (x) { return '<div class="bjaelke ' + (klasse || "") + '"><b>' + esc(x[0]) + "</b><span>" + esc(x[2]) + '</span><i style="width:' + Math.max(2, Math.round(100 * x[1] / max)) + '%"></i></div>'; }).join("");
+  }
+  function tegnOverblik() {
+    var egne = D.udbudGrupper.produkt || [], navn = {};
+    D.kunde.kommuner.forEach(function (k) { navn[k.slug] = k.navn; });
+    // Hvem vinder: tildelinger i jeres brancher, efter samlet kontraktværdi
+    var v = {};
+    udbud.filter(function (u) { return u.art === "vundet" && u.g.some(function (g) { return egne.indexOf(g) > -1; }); }).forEach(function (u) {
+      u.vinder.forEach(function (w) { var x = v[w] = v[w] || { n: 0, kr: 0, sidst: "" }; x.n++; x.kr += (u.vaerdi || 0) / u.vinder.length; if (u.dato > x.sidst) { x.sidst = u.dato; x.titel = u.titel; } });
+    });
+    var vindere = Object.keys(v).sort(function (a, b) { return v[b].kr - v[a].kr || v[b].n - v[a].n; }).slice(0, 10);
+    var vMax = vindere.length ? v[vindere[0]].kr || 1 : 1;
+    // Hvor er pengene: beløb fra projektkortene pr. kommune og pr. type
+    var pk = {}, pt = {}, boliger = 0, med = 0;
+    alle.forEach(function (s) {
+      var f = s.f || {}; if (f.boliger) boliger += f.boliger;
+      if (!f.beloeb_kr) return; med++;
+      pk[s.kn] = (pk[s.kn] || 0) + f.beloeb_kr;
+      tyNavne(s).forEach(function (t) { if (!/^Søgeord/.test(t)) pt[t] = (pt[t] || 0) + f.beloeb_kr; });
+    });
+    var sorter = function (o) { return Object.keys(o).sort(function (a, b) { return o[b] - o[a]; }).map(function (k) { return [k, o[k], kr(o[k])]; }); };
+    var ko = sorter(pk), ty = sorter(pt);
+    // Frister de næste 45 dage: udbud og høringer
+    var om45 = new Date(Date.now() + 45 * 864e5).toISOString().slice(0, 10), fr = [];
+    udbud.forEach(function (u) { if (u.art === "aaben" && u.frist && u.frist >= idag && u.frist <= om45 && u.g.some(function (g) { return egne.indexOf(g) > -1; })) fr.push([u.frist, "Tilbud", u.titel, u.url, true]); });
+    alle.forEach(function (s) { if (s.f && s.f.frist && s.f.frist >= idag && s.f.frist <= om45) fr.push([s.f.frist, "Frist", s.t, "../" + s.url, false]); });
+    fr.sort(function (a, b) { return a[0].localeCompare(b[0]); });
+    $("#vist").textContent = "Overblik over jeres kommuner. Beløbene er fra projektkortene (" + med + " af " + alle.length + " signaler har et beløb); udbuddene fra EU's udbudsdatabase.";
+    $("#liste").innerHTML = '<div class="overblik">'
+      + '<section><h2>Hvem vinder udbuddene</h2><p class="lille">Tildelte EU-udbud i jeres brancher de seneste 5 måneder, efter samlet kontraktværdi.</p>'
+      + (vindere.length ? bjaelker(vindere.map(function (w) { return [w, v[w].kr, (v[w].kr ? kr(v[w].kr) + " · " : "") + v[w].n + (v[w].n === 1 ? " kontrakt" : " kontrakter")]; }), vMax, "v") : '<p class="meta">Ingen tildelinger i perioden.</p>') + "</section>"
+      + '<section><h2>Kommende frister</h2><p class="lille">Tilbudsfrister i jeres brancher og frister fra sagerne de næste 45 dage.</p>'
+      + (fr.length ? '<ul class="frister">' + fr.slice(0, 14).map(function (x) { return "<li><b>" + dato(x[0]) + "</b> · " + x[1] + ': <a href="' + esc(x[3]) + '"' + (x[4] ? ' target="_blank" rel="noopener"' : "") + ">" + esc(x[2]) + "</a></li>"; }).join("") + "</ul>" : '<p class="meta">Ingen frister de næste 45 dage.</p>') + "</section>"
+      + '<section><h2>Hvor er pengene</h2><p class="lille">Beløb i signalerne pr. kommune' + (boliger ? ", i alt " + Math.round(boliger).toLocaleString("da-DK") + " boliger nævnt" : "") + ".</p>"
+      + (ko.length ? bjaelker(ko, ko[0][1]) : '<p class="meta">Ingen beløb endnu.</p>') + "</section>"
+      + '<section><h2>Pengene pr. type</h2><p class="lille">Samme beløb fordelt på signalernes typer.</p>' + (ty.length ? bjaelker(ty.slice(0, 8), ty[0][1]) : "") + "</section>"
+      + "</div>";
+  }
+
+  // ---------- Kort ----------
+  // Leaflet hentes først, når fanen åbnes (som avisens kort.html); signaler med et sted fra projektkortet vises
+  var kortet = null, lag = null;
+  function hentLeaflet() {
+    return new Promise(function (ok, fejl) {
+      if (window.L) return ok();
+      var c = document.createElement("link"); c.rel = "stylesheet"; c.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"; c.integrity = "sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="; c.crossOrigin = ""; document.head.appendChild(c);
+      var j = document.createElement("script"); j.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"; j.integrity = "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="; j.crossOrigin = ""; j.onload = ok; j.onerror = fejl; document.head.appendChild(j);
+    });
+  }
+  function tegnKort() {
+    var l = filtreret();
+    $("#vist").textContent = l.length + " signaler med et sted fra projektkortet. Blå: idé, forslag eller høring. Rød: vedtaget eller i gang. Filtrene virker også her.";
+    if (!document.getElementById("kortet")) $("#liste").innerHTML = '<div id="kortet" role="region" aria-label="Kort over signalerne"></div>';
+    hentLeaflet().then(function () {
+      if (!kortet) {
+        kortet = L.map("kortet", { scrollWheelZoom: false });
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 18, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(kortet);
+      }
+      if (lag) lag.remove();
+      lag = L.layerGroup().addTo(kortet);
+      var g = [];
+      l.forEach(function (s) {
+        var tidlig = { ide: 1, forslag: 1, hoering: 1 }[s.sd], f = s.f || {};
+        L.circleMarker(s.geo, { radius: f.beloeb_kr > 5e7 ? 11 : f.beloeb_kr > 5e6 ? 9 : 7, weight: 2, color: "#fff", fillColor: tidlig ? "#28377A" : "#8A2430", fillOpacity: .9 })
+          .bindPopup("<b>" + esc(s.t) + "</b>" + esc(s.kn + " · " + (f.hvor || "")) + (f.beloeb_kr ? "<br>" + kr(f.beloeb_kr) : "") + (f.boliger ? " · " + Math.round(f.boliger) + " boliger" : "") + '<br><a href="../' + esc(s.url) + '">Læs sagen</a>')
+          .addTo(lag);
+        g.push(s.geo);
+      });
+      setTimeout(function () { kortet.invalidateSize(); if (g.length) kortet.fitBounds(g, { padding: [30, 30], maxZoom: 13 }); else kortet.setView([56.1, 10.4], 7); }, 50);
+    }).catch(function () { $("#liste").innerHTML = '<p class="ingen">Kortet kunne ikke hentes. Prøv igen om lidt.</p>'; });
+  }
+
+  function vaelgFane(f) {
+    var skift = (f === "udbud") !== (fane === "udbud") || !!SAERLIGE[f] !== !!SAERLIGE[fane];
+    if (fane === "kort" && f !== "kort") { if (kortet) { kortet.remove(); kortet = null; lag = null; } }
+    fane = f; vis = 40; if (skift) fyldFiltre(); tegn();
+  }
+  document.querySelectorAll("[data-fane]").forEach(function (b) { b.addEventListener("click", function () { vaelgFane(b.dataset.fane); if (b.closest(".tal")) document.querySelector(".vaerk").scrollIntoView({ behavior: "smooth" }); }); });
+  ["#f-type", "#f-stadie", "#f-branche", "#f-kommune", "#f-sort"].forEach(function (id) { $(id).addEventListener("change", function () { vis = 40; tegn(); }); });
+  $("#f-soeg").addEventListener("input", function () { vis = 40; tegn(); });
+  $("#vis-flere").addEventListener("click", function () { vis += 40; tegn(); });
+  $("#liste").addEventListener("click", function (e) {
+    var b = e.target.closest(".vurder button"); if (!b) return;
+    var art = b.closest(".signal"), id = art.dataset.id, s = alle.find(function (x) { return x.id === id; });
+    if (b.dataset.f) {
+      var til = !foelg[s.n];
+      if (til) foelg[s.n] = { noegle: s.n, dato: s.dato }; else delete foelg[s.n];
+      tegn();
+      return api({ handling: "foelg", id: id, til: til }).catch(function (err) { if (til) delete foelg[s.n]; tegn(); alert(err.message); });
+    }
+    var v = vurd[id] === b.dataset.v ? "" : b.dataset.v, foer = vurd[id];
+    if (v) vurd[id] = v; else delete vurd[id];
+    art.classList.toggle("fravalgt", v === "nej");
+    art.querySelectorAll(".vurder [data-v]").forEach(function (x) { x.setAttribute("aria-pressed", String(x.dataset.v === v)); });
+    var rel = Object.keys(vurd).filter(function (x) { return vurd[x] === "ja"; }).length; $("#n-rel").textContent = rel ? "(" + rel + ")" : "";
+    api({ handling: "vurder", id: id, v: v }).catch(function (err) { if (foer) vurd[id] = foer; else delete vurd[id]; tegn(); alert(err.message); });
+  });
+  // Regnearket: det, der er filtreret frem, med semikolon og BOM, så Excel på dansk åbner det rigtigt
+  $("#eksport").addEventListener("click", function () {
+    var m = D.meta, celle = function (x) { x = String(x == null ? "" : x); return /[";\n]/.test(x) ? '"' + x.replace(/"/g, '""') + '"' : x; }, rk;
+    if (fane === "udbud") {
+      rk = [["Ordregiver", "Slags", "Titel", "Kategori", "Offentliggjort", "Frist", "Værdi (kr.)", "Vinder", "Beskrivelse", "Link"]];
+      filtreretUdbud().forEach(function (u) { rk.push([u.ordregivere.join(", "), ARTER[u.art], u.titel, u.kategori, u.dato, u.frist, u.vaerdi, u.vinder.join(", "), u.d, u.url]); });
+    } else {
+      rk = [["Kommune", "Type", "Stadie", "Titel", "Udvalg", "Dato", "Kommende møde", "Projektet", "Hvor", "Beløb (kr.)", "Boliger", "Areal m²", "Tidsplan", "Frist", "Næste skridt", "Aktører", "Udfald", "Sagsvagt", "Kommunens dokument", "Relevant", "Følger"]];
+      filtreret().forEach(function (s) {
+        var f = s.f || {};
+        rk.push([s.kn, tyNavne(s).join(" / "), (m.stadier.find(function (x) { return x.id === s.sd; }) || {}).navn || "", s.t, s.u, s.dato, s.kom ? "ja" : "", f.hvad || s.d, f.hvor, f.beloeb_kr, f.boliger, f.areal_m2,
+          f.tidsplan, f.frist, f.naeste, (f.aktoerer || []).join(", "), s.ud, new URL("../" + s.url, location.href).href, s.kl, vurd[s.id] === "ja" ? "ja" : vurd[s.id] === "nej" ? "nej" : "", s.n && foelg[s.n] ? "ja" : ""]);
+      });
+    }
+    var blob = new Blob(["﻿" + rk.map(function (r) { return r.map(celle).join(";"); }).join("\r\n")], { type: "text/csv;charset=utf-8" });
+    var a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+    a.download = "sagsvagt-erhverv-" + (fane === "udbud" ? "udbud-" : "") + idag + ".csv"; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  });
+})();
+</script>
+</body>
+</html>

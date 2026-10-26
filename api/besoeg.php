@@ -60,3 +60,5 @@ $opgave = function (string $navn, callable $f) use ($db): void {
 $opgave('push', function () { require_once __DIR__ . '/_push.php'; push_maaske_koer(); });
 $opgave('mm-plan', function () { require_once __DIR__ . '/_mandagsmail.php'; mm_maaske_planlaeg(); });
 $opgave('mm-send', function () { require_once __DIR__ . '/_mandagsmail.php'; mm_maaske_send(); });
+// Sagsvagt Erhverv (api/_erhverv.php): samme mønster som mandagsmailen, med egen kø og egen prøvemail
+$opgave('erhverv', function () { require_once __DIR__ . '/_erhverv.php'; er_maaske_planlaeg(); er_maaske_send(); });
