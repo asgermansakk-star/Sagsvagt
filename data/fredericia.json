@@ -435,6 +435,22 @@
    "dato": "2026-10-26",
    "punkter": 8,
    "parser": 3
+  },
+  "a2301fb1-bfbb-4e06-9969-06cd702a3e01": {
+   "lastmod": "2026-10-26",
+   "type": "dagsorden",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-10-27",
+   "punkter": 2,
+   "parser": 3
+  },
+  "b743f837-6b34-427e-934d-65200501374c": {
+   "lastmod": "2026-10-26",
+   "type": "dagsorden",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-27",
+   "punkter": 2,
+   "parser": 3
   }
  },
  "sager": {
@@ -10347,6 +10363,86 @@
     }
    ],
    "bilag": []
+  },
+  "fredericia-2026-10-27-oekonomi-og-erhvervsudvalget-1": {
+   "id": "fredericia-2026-10-27-oekonomi-og-erhvervsudvalget-1",
+   "kommune": "Fredericia",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-10-27",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordner.fredericia.dk/vis?id=a2301fb1-bfbb-4e06-9969-06cd702a3e01",
+   "hentet": "2026-10-26T18:34:22.800Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Økonomi- og Erhvervsudvalget, at:\n1. Dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "fredericia-2026-10-27-oekonomi-og-erhvervsudvalget-3": {
+   "id": "fredericia-2026-10-27-oekonomi-og-erhvervsudvalget-3",
+   "kommune": "Fredericia",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-10-27",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordner.fredericia.dk/vis?id=a2301fb1-bfbb-4e06-9969-06cd702a3e01",
+   "hentet": "2026-10-26T18:34:22.800Z",
+   "titel": "Underskriftsside",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Økonomi- og Erhvervsudvalget skal godkende beslutningsprotokollen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Økonomi- og Erhvervsudvalget skal godkende beslutningsprotokollen.\n\nFor at godkende beslutningsprotokollen, skal hvert medlem underskrive ved at trykke Godkend i\nFirst Agenda."
+    }
+   ],
+   "bilag": []
+  },
+  "fredericia-2026-10-27-byraadet-1": {
+   "id": "fredericia-2026-10-27-byraadet-1",
+   "kommune": "Fredericia",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-27",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordner.fredericia.dk/vis?id=b743f837-6b34-427e-934d-65200501374c",
+   "hentet": "2026-10-26T18:34:50.064Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til byrådet, at:\n1. Dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "fredericia-2026-10-27-byraadet-3": {
+   "id": "fredericia-2026-10-27-byraadet-3",
+   "kommune": "Fredericia",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-27",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordner.fredericia.dk/vis?id=b743f837-6b34-427e-934d-65200501374c",
+   "hentet": "2026-10-26T18:34:50.064Z",
+   "titel": "Underskriftsside",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Byrådet skal godkende beslutningsprotokollen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet skal godkende beslutningsprotokollen.\nFor at godkende beslutningsprotokollen, skal hvert medlem underskrive ved at\ntrykke Godkend i First Agenda."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -10459,7 +10555,7 @@
    "tjekket": "2026-10-26"
   },
   "https://dagsordner.fredericia.dk/Sitemap/ForCommittee?committeeId=12083571-4263-4e0d-bb3b-d75e4e7a5a38": {
-   "senest": "2026-10-06",
+   "senest": "2026-10-26",
    "tjekket": "2026-10-26"
   },
   "https://dagsordner.fredericia.dk/Sitemap/ForCommittee?committeeId=0df3a3fb-d05a-4016-9d5c-ef73b7ea5cd0": {
@@ -10519,7 +10615,7 @@
    "tjekket": "2026-10-13"
   }
  },
- "opdateret": "2026-10-26T12:07:06.653Z",
+ "opdateret": "2026-10-26T18:34:50.065Z",
  "kommune": "Fredericia",
  "parser": 3
 }

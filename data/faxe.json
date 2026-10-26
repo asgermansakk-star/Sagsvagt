@@ -439,6 +439,22 @@
    "dato": "2026-10-29",
    "punkter": 10,
    "parser": 3
+  },
+  "6ba9954e-45d1-4c1e-9092-219ba86ecb05": {
+   "lastmod": "2026-10-26",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-10-26",
+   "punkter": 2,
+   "parser": 3
+  },
+  "d5adfd1f-2a2f-4dd0-a29f-9ea9c9f8a81f": {
+   "lastmod": "2026-10-26",
+   "type": "referat",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-26",
+   "punkter": 2,
+   "parser": 3
   }
  },
  "sager": {
@@ -2885,15 +2901,19 @@
    "kommune": "Faxe",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.faxekommune.dk/vis?id=0f637e00-2e88-4734-91ec-d576b3f0b1aa",
-   "hentet": "2026-10-23T02:39:42.215Z",
+   "kilde": "https://dagsordener.faxekommune.dk/vis?id=6ba9954e-45d1-4c1e-9092-219ba86ecb05",
+   "hentet": "2026-10-26T18:40:54.209Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Økonomiudvalget godkender dagsordenen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nIngen."
     }
    ],
    "bilag": []
@@ -2903,15 +2923,19 @@
    "kommune": "Faxe",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.faxekommune.dk/vis?id=0f637e00-2e88-4734-91ec-d576b3f0b1aa",
-   "hentet": "2026-10-23T02:39:42.215Z",
+   "kilde": "https://dagsordener.faxekommune.dk/vis?id=6ba9954e-45d1-4c1e-9092-219ba86ecb05",
+   "hentet": "2026-10-26T18:40:54.209Z",
    "titel": "Godkendelse af referat",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Økonomiudvalget godkender referatet via digital underskrift\ni First Agenda."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nIngen."
     }
    ],
    "bilag": []
@@ -8925,15 +8949,19 @@
    "kommune": "Faxe",
    "udvalg": "Byrådet",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.faxekommune.dk/vis?id=b7974fcd-5d0e-4b20-b7fe-b369d8992036",
-   "hentet": "2026-10-23T02:53:28.761Z",
+   "kilde": "https://dagsordener.faxekommune.dk/vis?id=d5adfd1f-2a2f-4dd0-a29f-9ea9c9f8a81f",
+   "hentet": "2026-10-26T18:41:22.589Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Byrådet godkender dagsordenen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nNellie Bradsted (V).\nLisette Lind Larsen (A)."
     }
    ],
    "bilag": []
@@ -8943,15 +8971,19 @@
    "kommune": "Faxe",
    "udvalg": "Byrådet",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.faxekommune.dk/vis?id=b7974fcd-5d0e-4b20-b7fe-b369d8992036",
-   "hentet": "2026-10-23T02:53:28.761Z",
+   "kilde": "https://dagsordener.faxekommune.dk/vis?id=d5adfd1f-2a2f-4dd0-a29f-9ea9c9f8a81f",
+   "hentet": "2026-10-26T18:41:22.589Z",
    "titel": "Godkendelse af referat",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Byrådet godkender referatet via digital underskrift i First\nAgenda."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nNellie Bradsted (V).\nLisette Lind Larsen (A)."
     }
    ],
    "bilag": []
@@ -11753,7 +11785,7 @@
    "tjekket": "2026-10-26"
   },
   "https://dagsordener.faxekommune.dk/Sitemap/ForCommittee?committeeId=b17606da-fb5f-4b08-a311-db8971d83a6c": {
-   "senest": "2026-10-22",
+   "senest": "2026-10-26",
    "tjekket": "2026-10-26"
   },
   "https://dagsordener.faxekommune.dk/Sitemap/ForCommittee?committeeId=cbbb7655-6d4e-46e1-9992-e948028dad03": {
@@ -11841,7 +11873,7 @@
    "tjekket": "2026-10-26"
   },
   "https://dagsordener.faxekommune.dk/Sitemap/ForCommittee?committeeId=a5dbffb1-c27c-442b-bc53-8ea3fa6ff889": {
-   "senest": "2026-10-22",
+   "senest": "2026-10-26",
    "tjekket": "2026-10-26"
   },
   "https://dagsordener.faxekommune.dk/Sitemap/ForCommittee?committeeId=f903c2ce-05ce-446c-a02b-e853bc8eb9fd": {
@@ -11870,6 +11902,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-10-26T12:11:23.782Z",
+ "opdateret": "2026-10-26T18:41:22.590Z",
  "kommune": "Faxe"
 }
