@@ -170,7 +170,9 @@ export async function bygKalendere(moeder, h) {
     fold(`X-WR-CALNAME:${icsTekst(navn)}`), "X-WR-TIMEZONE:Europe/Copenhagen", "REFRESH-INTERVAL;VALUE=DURATION:PT12H", ...l.map(begivenhed), "END:VCALENDAR"].join("\r\n") + "\r\n";
   const relevante = moeder.filter((m) => (new Date(h.IDAG) - new Date(m.dato)) / 864e5 <= 90);
   await writeFile(join(h.ROD, "kalender", "alle.ics"), kalender("Sagsvagt: Alle møder i København", relevante));
-  const pr = new Map(); for (const m of relevante) { if (!pr.has(m.udvalg)) pr.set(m.udvalg, []); pr.get(m.udvalg).push(m); }
+  // Alle udvalg får en kalender (også uden møder de sidste 90 dage), fordi udvalgets side altid linker til den
+  const pr = new Map(); for (const m of moeder) if (!pr.has(m.udvalg)) pr.set(m.udvalg, []);
+  for (const m of relevante) pr.get(m.udvalg).push(m);
   for (const [u, l] of pr) await writeFile(join(h.ROD, "kalender", `${h.slug(h.erLokaludvalg(u) ? h.bydel(u) : u)}.ics`), kalender(`Sagsvagt: ${h.hvorNavn(u)}`, l));
 }
 export const kalenderLink = (u, rod, h) => `${rod}kalender/${h.slug(h.erLokaludvalg(u) ? h.bydel(u) : u)}.ics`;

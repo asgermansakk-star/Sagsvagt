@@ -102,6 +102,11 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://sagsvagt.dk/' }}
 
+      # Døde interne links og billeder på det byggede site (avis/linktjek.mjs). Stopper ikke robotten.
+      - name: Linktjek
+        continue-on-error: true
+        run: node avis/linktjek.mjs
+
       # Sagsvagt Erhverv: kommunernes EU-udbud fra TED (data/udbud.json), projektkort til nye signaler og signalindekset til
       # kundernes rapport og mail (api/_erhverv-signaler.json, ikke i repoet). Indekset bygges før og efter kortene.
       # Ingen AI endnu (Asgers beslutning 26/10): uden ANTHROPIC_API_KEY finder avis/erhverv-fakta.mjs kun beløbet.
