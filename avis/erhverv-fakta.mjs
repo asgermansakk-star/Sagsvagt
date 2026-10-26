@@ -73,8 +73,12 @@ export function beloebRegex(tekst) {
   for (const m of tekst.matchAll(rx)) {
     const tal = Number(m[1].replace(/\./g, "").replace(",", "."));
     const enhed = (m[2] || "").toLowerCase();
-    const kr = tal * (/^mia|^milliard/.test(enhed) ? 1e9 : /^mio|^million/.test(enhed) ? 1e6 : /^t|^tusind/.test(enhed) ? 1e3 : 1);
-    if (kr >= 50000 && (!bedst || kr > bedst.kr)) bedst = { kr, tekst: m[0].replace(/\s+/g, " ") };
+    // "13.263.000 mio. kr." i tabeller er kroner med enheden fra kolonneoverskriften: et tal, der allerede er i millioner,
+    // ganges ikke op igen. Det samme for tusinder foran "mia." og "t.kr."
+    const gang = /^mia|^milliard/.test(enhed) ? (tal < 1000 ? 1e9 : 1) : /^mio|^million/.test(enhed) ? (tal < 100000 ? 1e6 : 1) : /^t|^tusind/.test(enhed) ? (tal < 1e6 ? 1e3 : 1) : 1;
+    const kr = tal * gang;
+    // Over 3 mia. kr. er næsten altid et landstal eller et samlet budget i teksten, ikke projektets pris
+    if (kr >= 50000 && kr <= 3e9 && (!bedst || kr > bedst.kr)) bedst = { kr, tekst: m[0].replace(/\s+/g, " ") };
   }
   return bedst;
 }
