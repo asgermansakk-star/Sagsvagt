@@ -289,10 +289,12 @@ function smtp_send(array $s, string $fra, string $til, string $data): void {
 }
 
 // Mail med Sagsvagts udseende og én knap
+// I mørk tilstand får mailen samme mørke farver som mandagsmailen (mm_moerk i api/_mandagsmail_lav.php).
 function mail_skabelon(string $overskrift, string $tekst, string $knap, string $link, string $fod): array {
+    require_once __DIR__ . '/_mandagsmail_lav.php';
     $e = fn($s) => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
-    $html = '<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>'
-      . '<body style="margin:0;padding:0;background:#E6DFD3;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#E6DFD3"><tr><td align="center" style="padding:24px 12px 40px;">'
+    $html = '<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark">' . MM_MOERK_CSS . '</head>'
+      . '<body style="margin:0;padding:0;background:#E6DFD3;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#E6DFD3" style="background:#E6DFD3;"><tr><td align="center" style="padding:24px 12px 40px;">'
       . '<table role="presentation" width="560" cellpadding="0" cellspacing="0" style="width:100%;max-width:560px;background:#EEE8DE;border-radius:10px;overflow:hidden;">'
       . '<tr><td bgcolor="#0E0F14" style="background:#0E0F14;background-image:linear-gradient(115deg,#28377A 0%,#0C1430 30%,#0E0F14 55%,#3E0E14 80%,#8A2430 100%);padding:20px 28px;font:700 22px Montserrat,Arial,sans-serif;color:#E6DFD3;">Sagsvagt</td></tr>'
       . '<tr><td style="padding:28px 28px 8px;"><h1 style="margin:0 0 12px;font:700 22px/1.25 Montserrat,Arial,sans-serif;color:#0E0F14;">' . $e($overskrift) . '</h1>'
@@ -301,5 +303,5 @@ function mail_skabelon(string $overskrift, string $tekst, string $knap, string $
       . '<p style="margin:22px 0 0;font:13px/1.5 Arial,sans-serif;color:#56535A;">Virker knappen ikke, så kopiér linket:<br><span style="word-break:break-all;">' . $e($link) . '</span></p></td></tr>'
       . '<tr><td style="padding:20px 28px 24px;font:12px/1.6 Arial,sans-serif;color:#56535A;">' . $e($fod) . '<br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</td></tr>'
       . '</table></td></tr></table></body></html>';
-    return [$html, "$overskrift\n\n$tekst\n\n$knap: $link\n\n--\n$fod\nSagsvagt · CVR 46841514"];
+    return [mm_moerk($html), "$overskrift\n\n$tekst\n\n$knap: $link\n\n--\n$fod\nSagsvagt · CVR 46841514"];
 }

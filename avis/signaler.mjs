@@ -26,58 +26,74 @@ const dageSiden = (d) => (Date.parse(IDAG) - Date.parse(d)) / 864e5;
 
 // ---------- Hvad er et signal? ----------
 // Typerne i den rækkefølge, de står i rapporten. Første type, der passer, vinder. Ordene er valgt ud fra 21.500 sager i 82
-// kommuner (okt. 2026); \b forhindrer fx "Vindmøllevej" i at blive til energi.
+// kommuner (okt. 2026) og en mærket stikprøve på 150 signaler (26/10, salg/kvalitet/): "Infrastruktur" kræver noget, der
+// ligger i gaden (vej, sti, kryds, plads), og "Boliger og byggeri" kræver et byggeord, så de ikke bliver skraldespande for alt
+// med en anlægsbevilling eller ordet "boliger". Vand og kloak er klima. \b forhindrer fx "Vindmøllevej" i at blive til energi.
+const GADE = "vej|vejen|sti|stier|broen|kryds|torv|plads|pladsen|p-plads|parkering|havn|station|gade|byrum|trafiksikkerhed";
+const BYGNING = "skole|børnehus|børnehave|daginstitution|vuggestue|hal\\b|hallen|plejehjem|plejecenter|bygning|rådhus|bibliotek|svømmehal|idrætsanlæg|botilbud";
 const TYPER = {
   signaler: [
     { id: "plan", navn: "Byudvikling og lokalplaner", om: "Nye bydele, lokalplaner og tillæg: hvad der kan bygges, hvor, og hvornår.",
       rx: /lokalplan|kommuneplantillæg|kommuneplan\b|byplan|planforslag|helhedsplan|byudvikling|byomdannelse|udviklingsplan|masterplan|planstrategi/ },
     { id: "grund", navn: "Grunde og ejendomme", om: "Salg, køb og udbud af kommunens grunde, arealer og bygninger.",
-      rx: /grundsalg|salg af (grund|areal|ejendom|bygning)|køb af (grund|areal|ejendom)|udbud af (grund|areal|ejendom)|erhvervsgrund|erhvervsjord|erhvervsareal|byggegrund|byggefelt|jordkøb|arealoverdragelse|mageskifte|grunde til salg/ },
-    { id: "infra", navn: "Infrastruktur", om: "Veje, cykelstier, kollektiv trafik, havne og større anlæg.",
-      rx: /vejanlæg|vejprojekt|\bletbane|\bmetro\b|cykelsti|trafikplan|\bbro\b|motorvej|rundkørsel|anlægsbevilling|anlægsprojekt|havneudvidelse|parkeringshus|stationsområde/ },
+      rx: /grundsalg|salg af (grund|areal|ejendom|bygning)|køb af (grund|areal|ejendom)|udbud af (grund|areal|ejendom)|erhvervsgrund|erhvervsjord|erhvervsareal|byggegrund|byggefelt|byggemodning|jordkøb|arealoverdragelse|mageskifte|grunde til salg|udvidelse af (bolig|erhvervs)område/ },
+    { id: "energi", navn: "Klima og energi", om: "Sol, vind, varme, biogas, vand og klimatilpasning.",
+      rx: /solcelle|solpark|solenergi|\bvindmølle|vindmøller|energipark|biogas|\bptx\b|power-to-x|varmepumpe|fjernvarme|vedvarende energi|ve-anlæg|skybrud|klimatilpasning|klimasikring|stormflod|kystsikring|oversvømmelse|spildevand|regnvand|separatkloak|kloakering|vådområde|lavbund|udtagning af|udtagningsprojekt|stenrev|elkedel|batteripark/ },
+    { id: "infra", navn: "Infrastruktur", om: "Veje, cykelstier, kollektiv trafik, havne og byrum.",
+      rx: new RegExp(`vejanlæg|vejprojekt|\\bletbane|\\bmetro\\b|cykelsti|trafikplan|(ny|nye|anlæg af|renovering af|udskiftning af|etablering af) .{0,20}\\bbro|motorvej|rundkørsel|krydsombygning|havneudvidelse|parkeringshus|stationsområde|projektforslag (for|af|til) .{0,40}(${GADE})|(anlægsbevilling|anlægsmidler|ombygning|renovering|udvidelse|etablering|anlæg) .{0,60}(${GADE})`) },
     { id: "bolig", navn: "Boliger og byggeri", om: "Nybyggeri, almene boliger, renoveringer og byggeprojekter.",
-      rx: /\bboliger\b|almene? bolig|nybyggeri|byggeprojekt|\bbyggeri\b|ungdomsbolig|seniorbolig|plejebolig|renovering|skolebyggeri|daginstitution.*(byggeri|udvidelse|ny)|ny (skole|daginstitution|børnehave|hal)|friplejehjem|nyt plejehjem|plejeboliger|botilbud.*(ny|ombygning|udvidelse)|(ny|ombygning).*botilbud/ },
-    { id: "energi", navn: "Klima og energi", om: "Sol, vind, varme, biogas og klimatilpasning.",
-      rx: /solcelle|solpark|\bvindmølle(r|park|projekt)?\b|vindmøller|energipark|biogas|\bptx\b|power-to-x|varmepumpe|fjernvarme|vedvarende energi|ve-anlæg|skybrud|klimatilpasning|stormflod|kystsikring|oversvømmelse|spildevandsplan|separatkloak|elkedel|batteripark/ },
+      rx: new RegExp(`skema [abc]\\b|almene? (familie|ungdoms|senior|ældre)?boliger|(opfør|byg|etabler|nye|flere|\\d+) .{0,30}boliger|nybyggeri|byggeprojekt|\\bbyggeri\\b|opførelse af|tilbygning|udbygning af|totalentreprise|hovedentreprise|entrepriseform|licitation|udbudsform|udbudsstrategi|ungdomsbolig|seniorbolig|plejeboliger|friplejehjem|nyt plejehjem|ny (skole|daginstitution|børnehave|hal)|(anlægsbevilling|anlægsmidler|ombygning|renovering|modernisering) .{0,80}(${BYGNING})|(udvidelse|udbygning) af .{0,25}(${BYGNING})|(${BYGNING}).{0,40}(ombygning|renovering|nybyg)`) },
+    { id: "anlaeg", navn: "Andre anlæg", om: "Anlægsbevillinger, renoveringer og nedrivninger, der ikke passer i de andre typer.",
+      rx: /anlægsbevilling|anlægsmidler|anlægsprojekt|renovering|nedrivning|områdefornyelse|landsbyfornyelse|byfornyelse|asfalt|facade/ },
   ],
   energi: [
-    { id: "sol", navn: "Sol og batterier", om: "Solparker, solceller og batterier.", rx: /solcelle|solpark|batteripark|elkedel/ },
-    { id: "vind", navn: "Vind", om: "Vindmøller og vindmølleparker.", rx: /\bvindmølle(r|park|projekt)?\b|vindmøller|kystnær vind/ },
+    { id: "sol", navn: "Sol og batterier", om: "Solparker, solceller og batterier.", rx: /solcelle|solpark|solenergi|batteripark|elkedel/ },
+    { id: "vind", navn: "Vind", om: "Vindmøller og vindmølleparker.", rx: /\bvindmølle|vindmøller|kystnær vind/ },
     { id: "gas", navn: "Biogas og PtX", om: "Biogas, PtX og brint.", rx: /biogas|\bptx\b|power-to-x|brint|metanol/ },
     { id: "varme", navn: "Varme", om: "Fjernvarme, varmepumper og varmeplaner.", rx: /fjernvarme|varmepumpe|varmeplan|overskudsvarme|geotermi/ },
     { id: "plan", navn: "Energiplaner og -parker", om: "Energiparker, temaplaner og VE-anlæg i kommuneplanen.", rx: /energipark|vedvarende energi|ve-anlæg|temaplan|energiplan|energistrategi/ },
   ],
 };
-// Sager, der ligner, men ikke er signaler (personsager, orienteringer om drift, priser og takster)
-const IKKE = /indkvartering|takst|gebyr|tilsynsrapport|ansættelse|personale|klagesag|enkeltsag|ejendomsskat|lønpolitik|budgetopfølgning|regnskab|kunstværk|\bkunst\b|skulptur|navngivning|udsmykning/;
+// Sager, der ligner, men ikke er signaler. Testes kun på titlen: resuméer nævner ofte "personale" eller "budgetopfølgning"
+// i rigtige projekter. Mønstrene fra stikprøven 26/10: dispensationer til enkeltejendomme, besøg og studieture,
+// bevaringsvurderinger, bevillingsteknik og politisk proces.
+const IKKE = /indkvartering|takst|gebyr|tilsynsrapport|ansættelse|personale|klagesag|enkeltsag|ejendomsskat|lønpolitik|budgetopfølgning|regnskab|kunstværk|\bkunst\b|skulptur|navngivning|udsmykning|dispensation.{0,80}(tilbygning|udestue|drivhus|skur\b|fladt tag|grøn rabat|terrænregulering|carport|garage)|lovliggør|afstandskrav til skel|rundvisning|studietur|inspirationstur|besøg (af|hos|på|og)|årligt dialogmøde|bevaringsværdi|^statusorientering$|^orienteringspunkter|bevillingsmæssige ændringer|sammenlægning af bevillinger|^budgetforslag |svar på forslag fra|henvendelse til partierne|^intro(duktion)? til |begrebsafklaring|brugertilfredshed|handicappris|kommunikation om|specialkørsel|kørsel af|stomi|affaldsindsamling|sagsbehandlingstid|inddragelse af omverden|høringsperioden|dialogmøde og bilaterale|plejeboliganalyse|fjernvarmeoplag|fjernvarmekommunikation|stop for konvertering|bosætningsstrategi|bosætningsindsats|kulturarv|arkitekturpris|boligsocial|social masterplan|sociale masterplan|udtrædelse|udtræden|introduktion af|brugerinddragelse|p-fond|lovforslag|udlejningsaftale|delebil|beregningsværktøj|vejnavn|kontrollør|tilskudsmodel|venteliste|lukning af|gadealtan|samværstilbud|aktivitetstilbud|musikforløb|proces og tidsplan|opstart af planstrategi|politikken\b|\bpolitik for|målsætning|omprioritering|revisionsberetning|^budget \d|byggetilladelse|enfamiliehus|dispensation|facadeskilt|\bskilt|spørgsmål ift|borgerdrevne|opfølgningsrapport|beredskab/;
 
 // Stadiet læses af kommunens egne ord. Rækkefølgen er projektets livsløb, så de tidligste står først i rapporten.
+// "Endelig" i titlen vinder over "forslag". "Vedtaget" kræver, at udfaldet eller teksten siger det; ellers "Behandlet".
 const STADIER = [
+  { id: "endelig", navn: "Til endelig vedtagelse", om: "Forslaget er tilbage efter høring og skal vedtages endeligt.", rx: /endelig vedtagelse|endeligt vedtag|endelig godkendelse|\bendelig\b/ },
   { id: "ide", navn: "Idé", om: "Tidlige drøftelser, indledende høring, forundersøgelse og markedsdialog, før der ligger et forslag.",
     rx: /indledende høring|igangsætning af (lokalplan|planlægning)|igangsættelse af (lokalplan|planlægning)|forundersøgelse|markedsdialog|idéoplæg|ideoplæg|principbeslutning|principper for|drøftelse|vision|strategi|screening|igangsættelse af planlægning|planlægning for/ },
-  { id: "forslag", navn: "Forslag", om: "Et konkret forslag eller projekt er til politisk behandling.", rx: /forslag til|projektforslag|planforslag|dispositionsforslag|skitseforslag/ },
+  { id: "forslag", navn: "Forslag", om: "Et konkret forslag eller projekt er til politisk behandling.", rx: /forslag til|projektforslag|planforslag|dispositionsforslag|skitseforslag|skema a\b/ },
   { id: "hoering", navn: "Høring", om: "Forslaget er i offentlig høring eller naboorientering.", rx: /offentlig høring|i høring|høringssvar|naboorientering|høring om|høring af/ },
-  { id: "endelig", navn: "Til endelig vedtagelse", om: "Forslaget er tilbage efter høring og skal vedtages endeligt.", rx: /endelig vedtagelse|endeligt vedtag/ },
-  { id: "igang", navn: "I gang", om: "Anlæg, udbud eller byggeri er sat i gang.", rx: /anlægsbevilling|frigivelse af|udbud|licitation|byggestart|igangsætning|kontrakt|status på|statusorientering/ },
-  { id: "vedtaget", navn: "Vedtaget", om: "Besluttet eller godkendt.", rx: /./ },
+  { id: "igang", navn: "I gang", om: "Anlæg, udbud eller byggeri er sat i gang.", rx: /anlægsbevilling|frigivelse af|udbud|licitation|byggestart|igangsætning|igangsat|påbegyndt|anlægsarbejde|kontrakt|status på|statusorientering|skema [bc]\b/ },
+  { id: "vedtaget", navn: "Vedtaget", om: "Besluttet eller godkendt.", rx: /vedtog|vedtaget|besluttede|godkendt|godkendte|tiltrådt|tiltrådte|anbefalet|anbefalede/ },
+  { id: "behandlet", navn: "Behandlet", om: "Behandlet på et møde, uden at referatet siger, hvad der blev besluttet.", rx: /./ },
 ];
-const RAEKKE = ["ide", "forslag", "hoering", "endelig", "vedtaget", "igang"];
+const RAEKKE = ["ide", "forslag", "hoering", "endelig", "vedtaget", "igang", "behandlet"];
 
 const EMNEBILLEDER = ["aeldre", "affald", "bolig", "budget", "byggeri", "erhverv", "klima", "kultur", "skole", "social", "trafik", "unge"];
-const TYPEBILLEDE = { plan: "byggeri", grund: "byggeri", bolig: "bolig", infra: "trafik", energi: "klima", sol: "klima", vind: "klima", gas: "klima", varme: "klima" };
+const TYPEBILLEDE = { plan: "byggeri", grund: "byggeri", bolig: "bolig", infra: "trafik", anlaeg: "byggeri", energi: "klima", sol: "klima", vind: "klima", gas: "klima", varme: "klima" };
 const billede = (s, type) => SITE + (s.b || `assets/emner/${TYPEBILLEDE[type] || [...(s.e || [])].find((e) => EMNEBILLEDER.includes(e)) || "generel"}.svg`);
 
-// Administrative punkter (valg, repræsentanter, mødeplaner) nævner ofte lokalplaner i teksten uden selv at være et signal
-const ADMIN = /valg af|generel orientering|forperson|formand|repræsentant|gå-hjem|mødeplan|mødekalender|arbejdsgruppe|udpegning|kommissorium|evaluering af (processen|arbejdet)|deltagelse i|invitation|meddelelser|forespørgsel|spørgsmål til/;
+// Administrative punkter (valg af medlemmer, repræsentanter, mødeplaner) nævner ofte lokalplaner uden selv at være et signal.
+// "Valg af entrepriseform" og "udpegning af udviklingsområder" er derimod signaler.
+const ADMIN = /valg af (medlem|repræsentant|formand|næstformand|forperson|stedfortræder|suppleant)|generel orientering|forperson|formand|repræsentant|gå-hjem|mødeplan|mødekalender|arbejdsgruppe|udpegning af (medlem|repræsentant)|kommissorium|evaluering af (processen|arbejdet)|deltagelse i|invitation|meddelelser|forespørgsel|spørgsmål til/;
 function klassificer(s, segment) {
   const titel = `${s.t} ${s.kt || ""}`.toLowerCase(), tekst = `${titel} ${s.d || ""}`.toLowerCase();
-  if (IKKE.test(tekst) || ADMIN.test(titel)) return null;
+  if (IKKE.test(titel) || ADMIN.test(titel)) return null;
   // Overskriften afgør typen; beskrivelsen kun, når overskriften ikke siger noget om det
   const type = TYPER[segment].find((t) => t.rx.test(titel)) || TYPER[segment].find((t) => t.rx.test(tekst));
   if (!type) return null;
-  // Titlen vejer tungest: "Endelig vedtagelse af lokalplan" er til endelig vedtagelse, også hvis resuméet nævner høringen
-  let stadie = STADIER.find((x) => x.id !== "vedtaget" && x.rx.test(titel)) || STADIER.find((x) => x.id !== "vedtaget" && x.rx.test(tekst));
-  if (!stadie) stadie = STADIER.find((x) => x.id === (s.st === "kommer" ? "forslag" : "vedtaget"));
+  // Titlen vejer tungest: "Endelig vedtagelse af lokalplan" er til endelig vedtagelse, også hvis resuméet nævner høringen.
+  // Vedtaget læses af udfaldet (ud/kb) eller teksten; kommende sager er forslag, indtil de er behandlet.
+  const ord = (x) => !["vedtaget", "behandlet"].includes(x.id);
+  let stadie = STADIER.find((x) => ord(x) && x.rx.test(titel)) || STADIER.find((x) => ord(x) && x.rx.test(tekst));
+  if (!stadie) {
+    const udfald = `${s.ud || ""} ${s.kb || ""} ${s.d || ""}`.toLowerCase();
+    stadie = STADIER.find((x) => x.id === (s.st === "kommer" ? "forslag" : STADIER.find((y) => y.id === "vedtaget").rx.test(udfald) ? "vedtaget" : "behandlet"));
+  }
   return { type, stadie };
 }
 
@@ -273,4 +289,6 @@ async function main() {
   for (const r of rapporter) { const ud = await bygRapport(r, navne); console.log(`${ud.fil}: ${ud.antal} signaler`); }
 }
 
-main().catch((e) => { console.error(e.message); process.exit(1); });
+// Klassifikationen kan importeres (fx til kvalitetsmåling); main kører kun, når filen startes direkte
+export { klassificer, sagsNoegle, TYPER, STADIER, IKKE, ADMIN };
+if (import.meta.filename === process.argv[1]) main().catch((e) => { console.error(e.message); process.exit(1); });

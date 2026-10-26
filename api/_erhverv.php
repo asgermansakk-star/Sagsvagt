@@ -30,6 +30,10 @@ function er_tabeller(PDO $db): void {
         ord VARCHAR(1000) NOT NULL DEFAULT '', status VARCHAR(12) NOT NULL DEFAULT 'proeve', proeve_slut VARCHAR(10) NULL, pris INT NULL,
         noter $tekst NULL, mail INT NOT NULL DEFAULT 1, version INT NOT NULL DEFAULT 1, oprettet VARCHAR(25) NOT NULL,
         sidst_set VARCHAR(25) NULL, forrige_set VARCHAR(25) NULL, besoeg INT NOT NULL DEFAULT 0)");
+    // Kom til senere: CVR og hvornår kunden blev betalende (til fakturalisten)
+    foreach (['cvr' => 'VARCHAR(8) NULL', 'aktiv_fra' => 'VARCHAR(10) NULL'] as $kol => $type) {
+        try { $db->query("SELECT $kol FROM erhverv_kunder LIMIT 1"); } catch (PDOException $e) { $db->exec("ALTER TABLE erhverv_kunder ADD COLUMN $kol $type"); }
+    }
     // Kundens vurdering af hvert signal (relevant eller ej): det, piloten skal lære os
     $db->exec('CREATE TABLE IF NOT EXISTS erhverv_vurderinger (kunde_id INT NOT NULL, signal_id VARCHAR(160) NOT NULL, vurdering VARCHAR(4) NOT NULL,
         tid VARCHAR(25) NOT NULL, PRIMARY KEY (kunde_id, signal_id))');
@@ -245,8 +249,8 @@ function er_mail_til(array $kunde, string $uge): ?array {
     }
     if (count($udbud) > 8) $udbudRk .= '<tr><td style="padding:12px 0;border-top:1px solid ' . $C['rule'] . ';font:13px ' . $F . ';color:' . $C['muted'] . ';">… og ' . (count($udbud) - 8) . ' mere i rapporten.</td></tr>';
     $afmeld = er_afmeld_link((int)$kunde['id']);
-    $html = '<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>'
-        . '<body style="margin:0;padding:0;background:' . $C['kalk'] . ';"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="' . $C['kalk'] . '"><tr><td align="center" style="padding:24px 12px 40px;">'
+    $html = '<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark">' . MM_MOERK_CSS . '</head>'
+        . '<body style="margin:0;padding:0;background:' . $C['kalk'] . ';"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="' . $C['kalk'] . '" style="background:' . $C['kalk'] . ';"><tr><td align="center" style="padding:24px 12px 40px;">'
         . '<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;background:' . $C['kalkLys'] . ';border-radius:12px;overflow:hidden;">'
         . '<tr><td bgcolor="' . $C['nat'] . '" style="background:' . $C['nat'] . ';background-image:linear-gradient(115deg,#28377A 0%,#0C1430 30%,#0E0F14 55%,#3E0E14 80%,#8A2430 100%);padding:24px 28px;">'
         . '<p style="margin:0 0 8px;font:700 11px ' . $F . ';letter-spacing:.12em;text-transform:uppercase;color:' . $C['rosen'] . ';">Sagsvagt Erhverv · uge ' . $ugenr . '</p>'
@@ -269,7 +273,7 @@ function er_mail_til(array $kunde, string $uge): ?array {
         . ($kommer ? "PÅ KOMMENDE MØDER\n" . implode("\n", array_map($linje, array_slice($kommer, 0, 10))) . "\n\n" : '')
         . ($udbud ? "NYE UDBUD\n" . implode("\n", array_map(fn($u) => '• ' . $u['titel'] . ($u['frist'] ? ' (frist ' . mm_dato($u['frist']) . ')' : '') . "\n  " . $u['url'], array_slice($udbud, 0, 8))) . "\n\n" : '')
         . "Hele rapporten: $rapport\n\n--\nTil {$kunde['firma']}. Stop de ugentlige mails: $afmeld\nSagsvagt · CVR 46841514";
-    return ['emne' => $emne, 'html' => $html, 'tekst' => $tekst, 'antal' => count($nye) + count($kommer) + count($udbud) + count($foelger)];
+    return ['emne' => $emne, 'html' => mm_moerk($html), 'tekst' => $tekst, 'antal' => count($nye) + count($kommer) + count($udbud) + count($foelger)];
 }
 
 // Sender én kundes mail til alle modtagere og husker det. Svarer 'sendt', 'allerede' eller 'fejl'.

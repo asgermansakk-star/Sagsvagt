@@ -79,7 +79,7 @@
     <div class="tal" id="tal"></div>
     <p class="besked" id="besked" role="status"></p>
     <div id="nyt-link" class="link-boks" hidden></div>
-    <p><button class="knap" type="button" id="ny-kunde">Ny kunde</button></p>
+    <p><button class="knap" type="button" id="ny-kunde">Ny kunde</button> <button class="knap sek" type="button" id="faktura">Fakturaliste for en måned</button></p>
 
     <form id="kunde-form" hidden novalidate>
       <h2 id="form-titel">Ny kunde</h2>
@@ -92,6 +92,7 @@
         <label>Status<select id="k-status"></select></label>
         <label>Pilot til<input id="k-slut" type="date"></label>
         <label>Pris (kr./md. ekskl. moms)<input id="k-pris" type="number" min="0" step="1"></label>
+        <label>CVR<input id="k-cvr" inputmode="numeric" maxlength="8" placeholder="8 cifre"></label>
         <label>Flere modtagere af mailen<input id="k-modtagere" placeholder="kollega@firma.dk, ..."></label>
         <label style="align-content:end"><span><input id="k-mail" type="checkbox" checked style="width:auto"> Ugentlig mail mandag kl. 7</span></label>
         <div class="bred"><label for="k-soeg">Kommuner</label>
@@ -154,6 +155,8 @@
           + "<td>" + (+x.mail ? "Til" : "Fra") + '<div class="lille">' + (x.mails ? x.mails + " sendt, sidst " + dato(x.sidst_mail) : "ingen endnu") + "</div></td>"
           + '<td><div class="handl"><button class="mini-knap" data-h="ret" data-id="' + x.id + '">Ret</button><button class="mini-knap" data-h="link" data-id="' + x.id + '">Link</button>'
           + '<button class="mini-knap" data-h="forhaand" data-id="' + x.id + '">Vis mail</button><button class="mini-knap" data-h="proeve" data-id="' + x.id + '">Prøve til mig</button>'
+          + (x.status === "proeve" || x.status === "venter" || x.status === "pause" ? '<button class="mini-knap" data-h="forlaeng" data-id="' + x.id + '">Forlæng 14 dage</button>' : "")
+          + (x.status !== "aktiv" ? '<button class="mini-knap" data-h="betalende" data-id="' + x.id + '">Gør betalende</button>' : "")
           + '<button class="mini-knap" data-h="nyt_link" data-id="' + x.id + '">Nyt link</button><button class="mini-knap farlig" data-h="slet" data-id="' + x.id + '">Slet</button></div></td></tr>';
       }).join("") : '<tr><td colspan="7" class="lille">Ingen kunder endnu. Opret den første med "Ny kunde".</td></tr>';
     });
@@ -180,7 +183,7 @@
     $("#k-slut").value = x.id ? (x.proeve_slut || "") : new Date(Date.now() + 91 * 864e5).toISOString().slice(0, 10);
     $("#k-pris").value = x.id ? (x.pris == null ? "" : x.pris) : 750;
     $("#k-modtagere").value = x.modtagere || ""; $("#k-mail").checked = x.id ? !!+x.mail : true;
-    $("#k-ord").value = x.ord || ""; $("#k-noter").value = x.noter || "";
+    $("#k-ord").value = x.ord || ""; $("#k-noter").value = x.noter || ""; $("#k-cvr").value = x.cvr || "";
     valgte = {}; String(x.kommuner || "").split(",").filter(Boolean).forEach(function (s) { valgte[s] = 1; });
     $("#k-soeg").value = ""; tegnKommuner();
     $("#kunde-form").hidden = false; $("#k-firma").focus();
@@ -192,7 +195,7 @@
     var ny = !$("#k-id").value;
     er({ handling: "gem", id: +$("#k-id").value || 0, firma: $("#k-firma").value, kontakt: $("#k-kontakt").value, email: $("#k-email").value,
       produkt: $("#k-produkt").value, status: $("#k-status").value, proeve_slut: $("#k-slut").value, pris: $("#k-pris").value,
-      modtagere: $("#k-modtagere").value, mail: $("#k-mail").checked, kommuner: Object.keys(valgte), ord: $("#k-ord").value, noter: $("#k-noter").value })
+      modtagere: $("#k-modtagere").value, mail: $("#k-mail").checked, kommuner: Object.keys(valgte), ord: $("#k-ord").value, noter: $("#k-noter").value, cvr: $("#k-cvr").value.replace(/\D/g, "") })
       .then(function (j) {
         $("#kunde-form").hidden = true;
         besked(ny ? "Kunden er oprettet. Send linket herunder til kunden (fx i din egen mail)." : "Kunden er gemt.", "ok");
@@ -210,6 +213,12 @@
     var b = e.target.closest("[data-h]"); if (!b) return;
     var id = +b.dataset.id, h = b.dataset.h, x = D.kunder.find(function (k) { return k.id == id; });
     if (h === "ret") return aabnForm(x);
+    if (h === "forlaeng") return er({ handling: "forlaeng", id: id }).then(function (j) { besked(x.firma + ": prøven løber nu til " + dato(j.proeve_slut) + ".", "ok"); return hent(); }).catch(function (e) { besked(e.message, "fejl"); });
+    if (h === "betalende") {
+      var pris = prompt("Pris pr. måned ekskl. moms for " + x.firma + " (kr.):", x.pris || 1500); if (!pris) return;
+      var fra = prompt("Betalende fra (ÅÅÅÅ-MM-DD):", new Date().toISOString().slice(0, 10)); if (!fra) return;
+      return er({ handling: "betalende", id: id, pris: +String(pris).replace(/\D/g, ""), fra: fra }).then(function () { besked(x.firma + " er nu betalende kunde.", "ok"); return hent(); }).catch(function (e) { besked(e.message, "fejl"); });
+    }
     if (h === "link") return er({ handling: "link", id: id }).then(function (j) { visLink(j.link); besked("Linket til " + x.firma + ":", "ok"); }).catch(function (e) { besked(e.message, "fejl"); });
     if (h === "nyt_link") { if (confirm("Lav et nyt link til " + x.firma + "? Det gamle link holder op med at virke, også i tidligere mails.")) er({ handling: "nyt_link", id: id }).then(function (j) { visLink(j.link); besked("Nyt link til " + x.firma + ". Det gamle virker ikke længere.", "ok"); }).catch(function (e) { besked(e.message, "fejl"); }); return; }
     if (h === "forhaand") return er({ handling: "forhaand", id: id }).then(function (j) {
@@ -220,6 +229,18 @@
     if (h === "slet" && confirm("Slet " + x.firma + " helt, med vurderinger og mailhistorik? Det kan ikke fortrydes.")) er({ handling: "slet", id: id }).then(function () { besked(x.firma + " er slettet.", "ok"); return hent(); }).catch(function (e) { besked(e.message, "fejl"); });
   });
   $("#mail-luk").addEventListener("click", function () { $("#mail-vis").close(); });
+  // Fakturagrundlag: aktive kunder i måneden som regneark (semikolon og BOM til Excel på dansk). Fakturaerne laves i regnskabsprogrammet.
+  $("#faktura").addEventListener("click", function () {
+    var m = prompt("Hvilken måned (ÅÅÅÅ-MM)?", new Date().toISOString().slice(0, 7)); if (!m) return;
+    er({ handling: "faktura", maaned: m }).then(function (j) {
+      if (!j.antal) return besked("Ingen betalende kunder i " + j.maaned + ".", "");
+      var celle = function (x) { x = String(x == null ? "" : x); return /[";\n]/.test(x) ? '"' + x.replace(/"/g, '""') + '"' : x; };
+      var csv = "\ufeff" + j.linjer.map(function (r) { return r.map(celle).join(";"); }).join("\r\n");
+      var a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+      a.download = "sagsvagt-erhverv-faktura-" + j.maaned + ".csv"; document.body.appendChild(a); a.click(); a.remove();
+      besked(j.antal + " kunder, i alt " + j.sum.toLocaleString("da-DK") + " kr. ekskl. moms for " + j.maaned + ".", "ok");
+    }).catch(function (e) { besked(e.message, "fejl"); });
+  });
 
   $("#login-form").addEventListener("submit", function (e) {
     e.preventDefault();
