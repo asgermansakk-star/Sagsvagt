@@ -149,7 +149,7 @@ jobs:
           rsync -a --delete \
             --include '/.htaccess' \
             --exclude '.*' --exclude '_deploy' --exclude 'node_modules' \
-            --exclude 'avis' --exclude 'data' --exclude 'plan' --exclude 'package*.json' --exclude 'README.md' \
+            --exclude 'avis' --exclude 'data' --exclude 'plan' --exclude '/identitet' --exclude 'package*.json' --exclude 'README.md' \
             ./ _deploy/
           echo "Filer til upload: $(find _deploy -type f | wc -l)"
 
