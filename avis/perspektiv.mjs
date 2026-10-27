@@ -2,23 +2,25 @@
 //
 // Teksterne ligger i avis/perspektiv.json, én pr. sag. De skrives af Claude (AI) ud fra kommunens egen tekst:
 //   - enten i Claude Code (som forenklet.json), eller
-//   - automatisk i GitHub Actions, når hemmeligheden ANTHROPIC_API_KEY er sat (node avis/perspektiv.mjs).
+//   - automatisk i GitHub Actions med Claude Sonnet 5.5, når hemmeligheden RELEVANS_NOEGLE er sat (node avis/perspektiv.mjs,
+//     se avis/claude.mjs). Asger sagde ja 27/10; loftet er 10 sager pr. kørsel (ca. 0,10 dollar), styret af PERSPEKTIV_MAKS.
 // Som forenklet.json vises en tekst kun, når sagen stadig har samme type (dagsorden/referat), som da den blev skrevet.
 //
 // Neutralitet: hvert argument har et grundlag. "sagen" = står i kommunens tekst (forvaltningen, høringssvar, økonomi).
 // "partier" = et parti eller medlem har sagt det i referatet. "debatten" = et almindeligt argument, sagen ikke selv
 // nævner; dem markerer siden tydeligt, og der skal være lige mange for og imod af dem.
 //
-// Kør: node avis/perspektiv.mjs                 (skriv nye med Claude API; kræver ANTHROPIC_API_KEY)
-//      MAKS=20 node avis/perspektiv.mjs         (højst 20 sager i denne kørsel, standard 120)
+// Kør: node avis/perspektiv.mjs                 (skriv nye med Claude API; kræver RELEVANS_NOEGLE)
+//      MAKS=20 node avis/perspektiv.mjs         (højst 20 sager i denne kørsel, standard 10)
 //      node avis/perspektiv.mjs --udtraek 25    (skriv de 25 vigtigste sager uden tekst til avis/perspektiv-koe.json)
 import { readFile, writeFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
+import { klient, opsaetningsfejl, pris } from "./claude.mjs";
 
 const DIR = import.meta.dirname, ROD = join(DIR, "..");
 const FIL = join(DIR, "perspektiv.json");
 const MODEL = process.env.PERSPEKTIV_MODEL || "claude-sonnet-5-5";
-const MAKS = Number(process.env.MAKS || 120);
+const MAKS = Number(process.env.MAKS || 10);
 
 export async function laesPerspektiv() {
   try { return JSON.parse(await readFile(FIL, "utf8")).sager || {}; } catch { return {}; }
@@ -89,15 +91,27 @@ grundlag: "sagen" når argumentet står i kommunens tekst (forvaltningens begrun
 kilde: kort, fx "Forvaltningen", "Høringssvar fra beboerne", "Økonomiafsnittet", "Socialdemokratiet (A)". For "debatten" skriv "Fra debatten".
 Regler: Ingen holdning fra Sagsvagt. Ingen navne på privatpersoner. Ingen oplysninger, der ikke står i sagen, undtagen argumenter med grundlag "debatten". Er sagen ren administration (fx regnskab, udpegning), så giv højst ét argument hver vej og sig det i hverdag. Skriv enkelt dansk uden forvaltningssprog.`;
 
-async function spoerg(s) {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "x-api-key": process.env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-    body: JSON.stringify({ model: MODEL, max_tokens: 1200, system: SYSTEM, messages: [{ role: "user", content: sagsTekst(s) }] }),
+const ARGUMENT = {
+  type: "object", additionalProperties: false, required: ["tekst", "grundlag", "kilde"],
+  properties: { tekst: { type: "string" }, grundlag: { type: "string", enum: ["sagen", "partier", "debatten"] }, kilde: { type: "string" } },
+};
+const SKEMA = {
+  type: "object", additionalProperties: false, required: ["hverdag", "berorer", "for", "imod"],
+  properties: { hverdag: { type: "string" }, berorer: { type: "array", items: { type: "string" } }, for: { type: "array", items: ARGUMENT }, imod: { type: "array", items: ARGUMENT } },
+};
+
+async function spoerg(client, s, forbrug) {
+  const svar = await client.messages.create({
+    model: MODEL,
+    max_tokens: 4000, // plads til adaptiv tænkning foran svaret
+    output_config: { effort: "low", format: { type: "json_schema", schema: SKEMA } },
+    system: SYSTEM,
+    messages: [{ role: "user", content: sagsTekst(s) }],
   });
-  if (!res.ok) throw new Error(`${res.status} ${(await res.text()).slice(0, 200)}`);
-  const svar = (await res.json()).content.map((c) => c.text || "").join("");
-  const json = JSON.parse(svar.slice(svar.indexOf("{"), svar.lastIndexOf("}") + 1));
+  forbrug.ind += svar.usage?.input_tokens || 0; forbrug.ud += svar.usage?.output_tokens || 0;
+  if (svar.stop_reason === "refusal") throw new Error("afvist");
+  if (svar.stop_reason === "max_tokens") throw new Error("svaret blev afkortet");
+  const json = JSON.parse(svar.content.find((b) => b.type === "text")?.text || "{}");
   const ren = (l) => (Array.isArray(l) ? l : []).filter((a) => a?.tekst).slice(0, 4).map((a) => ({ tekst: String(a.tekst).trim(), grundlag: ["sagen", "partier", "debatten"].includes(a.grundlag) ? a.grundlag : "sagen", kilde: String(a.kilde || "").trim() }));
   return { hverdag: String(json.hverdag || "").trim(), berorer: (json.berorer || []).slice(0, 4).map(String), for: ren(json.for), imod: ren(json.imod) };
 }
@@ -113,20 +127,22 @@ if (process.argv[1]?.endsWith("perspektiv.mjs")) {
     const k = (await kandidater(P)).slice(0, Number(process.argv[3] || 25));
     await writeFile(join(DIR, "perspektiv-koe.json"), JSON.stringify(k.map((s) => ({ id: s.id, type: s.type, tekst: sagsTekst(s) })), null, 1));
     console.log(`${k.length} sager skrevet til avis/perspektiv-koe.json`);
-  } else if (!process.env.ANTHROPIC_API_KEY) {
-    console.log("ANTHROPIC_API_KEY er ikke sat; springer For og imod over.");
+  } else if (!klient()) {
+    console.log("RELEVANS_NOEGLE er ikke sat; springer For og imod over.");
   } else {
+    const client = klient();
     const koe = (await kandidater(P)).slice(0, MAKS);
     console.log(`Skriver For og imod til ${koe.length} sager med ${MODEL} …`);
+    const forbrug = { ind: 0, ud: 0 };
     let n = 0, fejl = 0;
     await Promise.all(Array.from({ length: 4 }, async () => {
       for (let s; (s = koe.shift()); ) {
-        try { P[s.id] = { type: s.type, lavet: new Date().toISOString().slice(0, 10), ...(await spoerg(s)) }; n++; }
-        catch (e) { fejl++; console.warn(`  ${s.id}: ${e.message}`); if (fejl > 10) koe.length = 0; }
+        try { P[s.id] = { type: s.type, lavet: new Date().toISOString().slice(0, 10), ...(await spoerg(client, s, forbrug)) }; n++; }
+        catch (e) { fejl++; console.warn(`  ${s.id}: ${e.message}`); if (fejl > 10 || opsaetningsfejl(e, n, fejl)) koe.length = 0; }
         if (n % 20 === 0) await gem(P);
       }
     }));
     await gem(P);
-    console.log(`${n} skrevet, ${fejl} fejl.`);
+    console.log(`For og imod: ${n} skrevet, ${fejl} fejl · ${forbrug.ind} tokens ind, ${forbrug.ud} ud ≈ ${pris(MODEL, forbrug.ind, forbrug.ud).toFixed(2)} dollar`);
   }
 }

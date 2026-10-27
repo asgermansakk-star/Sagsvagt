@@ -4,12 +4,12 @@
 //
 // Bedømmelserne ligger i avis/erhverv-relevans.json, én pr. signal (id), og bliver der: et signal bedømmes kun én gang.
 // Nøglen læses fra RELEVANS_NOEGLE (ikke ANTHROPIC_API_KEY), så robottens andre trin ikke kan bruge den ved en fejl.
-// Er nøglen ikke bundet til et arbejdsrum i Anthropic-konsollen, skal arbejdsrummets id stå i RELEVANS_ARBEJDSRUM (wrkspc_…).
+// Arbejdsrummets id (RELEVANS_ARBEJDSRUM) sendes med af avis/claude.mjs.
 //
 // Kør: RELEVANS_NOEGLE=… node avis/erhverv-relevans.mjs        nye signaler (højst MAKS, standard 3000)
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import Anthropic from "@anthropic-ai/sdk";
+import { klient, opsaetningsfejl, pris as prisFor, Anthropic } from "./claude.mjs";
 import { raaSager, sagsTekst } from "./erhverv-fakta.mjs";
 
 const ROD = join(import.meta.dirname, "..");
@@ -37,19 +37,17 @@ Giv sagen en relevans:
 Bedøm kun ud fra teksten. Svar kort og neutralt.`;
 
 async function main() {
-  const noegle = process.env.RELEVANS_NOEGLE;
   let vurd = {};
   try { vurd = JSON.parse(await readFile(FIL, "utf8")); } catch {}
   const gem = () => writeFile(FIL, JSON.stringify(vurd, null, 0).replace(/},"/g, '},\n"') + "\n");
-  if (!noegle) return console.log("Relevans: ingen RELEVANS_NOEGLE, springes over");
+  const client = klient();
+  if (!client) return console.log("Relevans: ingen RELEVANS_NOEGLE, springes over");
 
   const indeks = JSON.parse(await readFile(join(ROD, "api", "_erhverv-signaler.json"), "utf8"));
   // Kommende møder og de nyeste først, så de vigtigste er bedømt, hvis kørslen stopper undervejs
   const koe = indeks.signaler.filter((s) => !vurd[s.id]).sort((a, b) => b.kom - a.kom || b.dato.localeCompare(a.dato)).slice(0, MAKS);
   const raa = new Map();
   const raaFor = async (k) => { if (!raa.has(k)) raa.set(k, await raaSager(k)); return raa.get(k); };
-  const arbejdsrum = process.env.RELEVANS_ARBEJDSRUM;
-  const client = new Anthropic({ apiKey: noegle, ...(arbejdsrum && { defaultHeaders: { "anthropic-workspace-id": arbejdsrum } }) });
   let ok = 0, fejl = 0, stop = false, tokensInd = 0, tokensUd = 0;
 
   const bedoem = async (s) => {
@@ -74,10 +72,7 @@ async function main() {
       try { vurd[s.id] = { ...(await bedoem(s)), m: MODEL, d: new Date().toISOString().slice(0, 10) }; ok++; }
       catch (e) {
         fejl++;
-        // Fejl i nøglen eller opsætningen rammer alle kald ens, så stop i stedet for at prøve alle signaler igennem
-        const opsaetning = e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError || e instanceof Anthropic.NotFoundError
-          || (e instanceof Anthropic.BadRequestError && /workspace|api key/i.test(e.message)) || (ok === 0 && fejl >= 20);
-        if (opsaetning) { if (!stop) console.error(`Relevans stoppet: ${e.message}`); stop = true; }
+        if (opsaetningsfejl(e, ok, fejl)) { if (!stop) console.error(`Relevans stoppet: ${e.message}`); stop = true; }
         else if (e instanceof Anthropic.RateLimitError) { koe.push(s); await new Promise((r) => setTimeout(r, 15000)); }
         else console.error(`Relevans ${s.id}: ${e.message}`);
       }
@@ -86,8 +81,7 @@ async function main() {
   };
   await Promise.all(Array.from({ length: SAMTIDIG }, arbejder));
   await gem();
-  // Pris efter Haiku 5.5's takst for korte prompts: 0,10 / 0,50 dollar pr. million tokens ind / ud
-  const pris = (tokensInd * 0.1 + tokensUd * 0.5) / 1e6;
+  const pris = prisFor(MODEL, tokensInd, tokensUd);
   console.log(`Relevans: ${ok} bedømt, ${fejl} fejl, ${indeks.signaler.filter((s) => !vurd[s.id]).length} mangler · ${tokensInd} tokens ind, ${tokensUd} ud ≈ ${pris.toFixed(2)} dollar`);
 }
 

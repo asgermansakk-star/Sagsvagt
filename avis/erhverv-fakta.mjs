@@ -4,8 +4,9 @@
 // Kortene ligger i avis/erhverv-fakta.json, ét pr. sag (id), og bliver der: et signal læses kun én gang. Uden AI giver
 // regnestykket herunder stadig beløbet ("1,7 mio. kr."), som kunderne oftest spørger efter.
 //
-// Kør: node avis/erhverv-fakta.mjs                  nye signaler med Claude API (kræver ANTHROPIC_API_KEY; ellers kun beløb)
-//      MAKS=50 node avis/erhverv-fakta.mjs          højst 50 signaler i denne kørsel (standard 200)
+// Kør: node avis/erhverv-fakta.mjs                  nye signaler med relevans 3 med Claude Haiku 5.5 (kræver RELEVANS_NOEGLE,
+//                                                   se avis/claude.mjs); de øvrige og alt uden nøgle får kun beløbet
+//      MAKS=50 node avis/erhverv-fakta.mjs          højst 50 signaler i denne kørsel (standard 800)
 //      node avis/erhverv-fakta.mjs --udtraek vejle kolding   teksterne til de kommuners signaler uden kort
 //                                                   i avis/erhverv-fakta-koe.json (til at skrive kortene i Claude Code)
 //      node avis/erhverv-fakta.mjs --indlaes fil.json        læg kort skrevet i Claude Code ind (samme skema)
@@ -15,12 +16,13 @@
 // kunden linkes altid til kommunens eget dokument.
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import Anthropic from "@anthropic-ai/sdk";
+import { klient, opsaetningsfejl, pris, Anthropic } from "./claude.mjs";
 
 const ROD = join(import.meta.dirname, "..");
 const FIL = join(import.meta.dirname, "erhverv-fakta.json");
-const MODEL = process.env.ERHVERV_MODEL || "claude-opus-5-5";
-const MAKS = Number(process.env.MAKS || 200);
+// Haiku 5.5 (Asgers ja 27/10): ca. 0,30 dollar for de første 673 kort, derefter få cent om ugen
+const MODEL = process.env.ERHVERV_MODEL || "claude-haiku-5-5";
+const MAKS = Number(process.env.MAKS || 800);
 const SAMTIDIG = 4;
 
 export const MULIGHEDER = ["entreprenør", "håndværker", "rådgiver", "arkitekt", "developer", "investor", "mægler", "leverandør", "energi", "drift og service"];
@@ -84,17 +86,15 @@ export function beloebRegex(tekst) {
 }
 
 // ---------- Claude ----------
-async function lavKort(client, sig, raa) {
-  const svar = await client.beta.messages.create({
+async function lavKort(client, sig, raa, forbrug) {
+  const svar = await client.messages.create({
     model: MODEL,
     max_tokens: 4000,
-    // Afviste forespørgsler køres igen på den model, Anthropic anbefaler til den slags afvisning
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
     output_config: { effort: "low", format: { type: "json_schema", schema: SKEMA } },
     system: SYSTEM,
     messages: [{ role: "user", content: sagsTekst(sig, raa) }],
   });
+  forbrug.ind += svar.usage?.input_tokens || 0; forbrug.ud += svar.usage?.output_tokens || 0;
   if (svar.stop_reason === "refusal") throw new Error(`afvist (${svar.stop_details?.category || "ukendt"})`);
   if (svar.stop_reason === "max_tokens") throw new Error("svaret blev afkortet");
   const tekst = svar.content.find((b) => b.type === "text")?.text;
@@ -187,32 +187,39 @@ async function main() {
     return console.log(`Projektkort: ${koe.length} tekster i avis/erhverv-fakta-koe.json`);
   }
 
-  // Uden nøgle: kun beløbet, så rapporten stadig kan vise og sortere efter det
-  if (!process.env.ANTHROPIC_API_KEY) {
+  // Kort med AI kun til signaler, Haiku har givet relevans 3 (avis/erhverv-relevans.json); alle andre får kun beløbet,
+  // så rapporten stadig kan vise og sortere efter det
+  let rv = {};
+  try { rv = JSON.parse(await readFile(join(import.meta.dirname, "erhverv-relevans.json"), "utf8")); } catch {}
+  const client = klient();
+  const tilAI = client ? mangler.filter((s) => rv[s.id]?.r === 3) : [];
+  const ai = new Set(tilAI.map((s) => s.id));
+  {
     let n = 0;
     for (const s of mangler) {
+      if (ai.has(s.id)) continue;
       if (fakta[s.id]) continue;
       const b = beloebRegex(sagsTekst(s, await raaFor(s.k)));
       fakta[s.id] = { kilde: "regex", beloeb_kr: b?.kr ?? null, beloeb_tekst: b?.tekst ?? null };
       n++;
     }
     await gem();
-    return console.log(`Projektkort: ingen ANTHROPIC_API_KEY, så kun beløb for ${n} nye signaler`);
+    if (!client) return console.log(`Projektkort: ingen RELEVANS_NOEGLE, så kun beløb for ${n} nye signaler`);
   }
 
-  const client = new Anthropic();
-  const koe = mangler.slice(0, MAKS);
+  const koe = tilAI.slice(0, MAKS);
+  const forbrug = { ind: 0, ud: 0 };
   let ok = 0, fejl = 0;
   const arbejder = async () => {
     for (let s; (s = koe.shift()); ) {
       try {
-        const r = rensKort(await lavKort(client, s, await raaFor(s.k)));
+        const r = rensKort(await lavKort(client, s, await raaFor(s.k), forbrug));
         if (!r) throw new Error("ugyldigt kort");
         fakta[s.id] = { ...r, kilde: MODEL, lavet: new Date().toISOString().slice(0, 10) };
         ok++;
       } catch (e) {
         fejl++;
-        if (e instanceof Anthropic.AuthenticationError || e instanceof Anthropic.PermissionDeniedError) { koe.length = 0; console.error(`Projektkort: ${e.message}`); }
+        if (opsaetningsfejl(e, ok, fejl)) { if (koe.length) console.error(`Projektkort stoppet: ${e.message}`); koe.length = 0; }
         else if (e instanceof Anthropic.RateLimitError) await new Promise((r) => setTimeout(r, 20000));
         else console.error(`Projektkort ${s.id}: ${e.message}`);
       }
@@ -221,7 +228,7 @@ async function main() {
   };
   await Promise.all(Array.from({ length: SAMTIDIG }, arbejder));
   await gem();
-  console.log(`Projektkort: ${ok} nye (${MODEL}), ${fejl} fejl, ${mangler.length - ok} mangler stadig`);
+  console.log(`Projektkort: ${ok} nye (${MODEL}), ${fejl} fejl, ${tilAI.length - ok} med relevans 3 mangler stadig · ${forbrug.ind} tokens ind, ${forbrug.ud} ud ≈ ${pris(MODEL, forbrug.ind, forbrug.ud).toFixed(2)} dollar`);
 }
 
 if (import.meta.filename === process.argv[1]) main().catch((e) => { console.error(`Projektkort: ${e.message}`); });

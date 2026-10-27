@@ -87,15 +87,16 @@ jobs:
         continue-on-error: true
         run: node avis/kvalitet.mjs
 
-      # "Hvad betyder det for dig?" og "For og imod" til de vigtigste nye sager (avis/perspektiv.mjs).
-      # Kører kun, når hemmeligheden ANTHROPIC_API_KEY er sat. MAKS styrer hvor mange sager pr. kørsel.
+      # "Hvad betyder det for dig?" og "For og imod" til de vigtigste nye sager (avis/perspektiv.mjs) med Claude Sonnet 5.5.
+      # Asgers ja 27/10. Loftet er 10 sager pr. kørsel, ca. 0,10 dollar (variablen PERSPEKTIV_MAKS styrer det).
       - name: Skriv For og imod med AI
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
         continue-on-error: true
         run: node avis/perspektiv.mjs
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          MAKS: ${{ vars.PERSPEKTIV_MAKS || '120' }}
+          RELEVANS_NOEGLE: ${{ secrets.RELEVANS_NOEGLE }}
+          RELEVANS_ARBEJDSRUM: ${{ vars.RELEVANS_ARBEJDSRUM }}
+          MAKS: ${{ vars.PERSPEKTIV_MAKS || '10' }}
 
       - name: Byg avisen
         run: node avis/byg.mjs
@@ -109,7 +110,7 @@ jobs:
 
       # Sagsvagt Erhverv: kommunernes EU-udbud fra TED (data/udbud.json), projektkort til nye signaler og signalindekset til
       # kundernes rapport og mail (api/_erhverv-signaler.json, ikke i repoet). Indekset bygges før og efter kortene.
-      # Relevansen (1–3) bedømmes af Claude Haiku 5.5; projektkortene kører uden AI (avis/erhverv-fakta.mjs finder kun beløbet).
+      # Relevansen (1–3) og projektkortene til signaler med relevans 3 laves af Claude Haiku 5.5; de øvrige får kun beløbet.
       # Stederne til kortet slås op i OpenStreetMap og fejler aldrig robotten.
       - name: Sagsvagt Erhverv
         continue-on-error: true
@@ -122,8 +123,7 @@ jobs:
           node avis/signaler.mjs --indeks
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://sagsvagt.dk/' }}
-          # Kun relevansbedømmelsen med Claude Haiku 5.5 får en nøgle (Asgers ja 26/10), og den har sin egen hemmelighed, så
-          # "Skriv For og imod med AI" (som bruger ANTHROPIC_API_KEY) ikke går i gang. Projektkortene kører stadig uden AI.
+          # Nøglen og arbejdsrummet læses af avis/claude.mjs (Asgers ja 26/10 og 27/10).
           RELEVANS_NOEGLE: ${{ secrets.RELEVANS_NOEGLE }}
           RELEVANS_ARBEJDSRUM: ${{ vars.RELEVANS_ARBEJDSRUM }}
 
