@@ -40,6 +40,9 @@
   .felter .bred { grid-column: 1 / -1; }
   .felter input, .felter select, .felter textarea { font: 500 .9375rem var(--sans); padding: 9px 11px; border: 1.5px solid var(--rule); border-radius: 8px; background: #fff; width: 100%; }
   .felter textarea { min-height: 70px; }
+  .branchevalg { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 6px 0; }
+  .branchevalg label { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; margin: 0; }
+  .branchevalg input { width: auto; }
   .kommunevalg { border: 1.5px solid var(--rule); border-radius: 8px; background: #fff; padding: 8px 10px; }
   .kommunevalg input[type=search] { border: 0; border-bottom: 1px solid var(--rule); border-radius: 0; padding: 4px 2px 8px; margin-bottom: 6px; }
   .kommuneliste { max-height: 170px; overflow: auto; columns: 4 150px; font-weight: 500; font-size: .875rem; }
@@ -98,6 +101,7 @@
         <label style="align-content:end"><span><input id="k-mail" type="checkbox" checked style="width:auto"> Ugentlig mail mandag kl. 7</span></label>
         <div class="bred"><label for="k-soeg">Kommuner</label>
           <div class="kommunevalg"><input type="search" id="k-soeg" placeholder="Find kommune"><div class="kommuneliste" id="k-kommuner"></div><p class="valgte" id="k-valgte"></p></div></div>
+        <div class="bred"><label>Brancher (giver "Til jer" og "Ugens tre vigtigste for jer" i mailen og rapporten)</label><div class="branchevalg" id="k-brancher"></div></div>
         <label class="bred">Egne søgeord (adskilt med komma, mindst 3 tegn), fx en vej, et projekt eller et firmanavn<input id="k-ord" maxlength="1000"></label>
         <label class="bred">Noter (kun til dig)<textarea id="k-noter" maxlength="4000"></textarea></label>
       </div>
@@ -133,6 +137,7 @@
     return er({ handling: "liste" }).then(function (j) {
       D = j; $("#login").hidden = true; $("#panel").hidden = false;
       if (!$("#k-produkt").options.length) {
+        $("#k-brancher").innerHTML = (j.brancher || []).map(function (b) { return '<label><input type="checkbox" value="' + esc(b) + '"> ' + esc(b) + "</label>"; }).join("");
         $("#k-produkt").innerHTML = Object.keys(j.produkter).map(function (p) { return '<option value="' + p + '">' + esc(j.produkter[p]) + "</option>"; }).join("");
         $("#k-status").innerHTML = Object.keys(j.status).map(function (s) { return '<option value="' + s + '">' + esc(j.status[s]) + "</option>"; }).join("");
       }
@@ -154,7 +159,7 @@
         var km = String(x.kommuner).split(",").filter(Boolean).map(function (s) { return navn[s] || s; });
         var slut = x.status === "proeve" && x.proeve_slut ? '<div class="lille' + (x.proeve_slut <= om14 ? " advar" : "") + '">' + (x.proeve_slut < idag ? "udløb " : "til ") + dato(x.proeve_slut) + "</div>" : "";
         return "<tr><td><b>" + esc(x.firma) + '</b><div class="lille">' + esc(x.kontakt) + (x.kontakt ? " · " : "") + esc(x.email) + "</div>" + (x.noter ? '<div class="lille" title="' + esc(x.noter) + '">' + esc(x.noter.slice(0, 80)) + (x.noter.length > 80 ? " …" : "") + "</div>" : "") + "</td>"
-          + "<td>" + esc(j.produkter[x.produkt] || x.produkt) + '<div class="lille">' + esc(km.length > 4 ? km.slice(0, 4).join(", ") + " og " + (km.length - 4) + " til" : km.join(", ")) + "</div>" + (x.ord ? '<div class="lille">Søgeord: ' + esc(x.ord) + "</div>" : "") + "</td>"
+          + "<td>" + esc(j.produkter[x.produkt] || x.produkt) + '<div class="lille">' + esc(km.length > 4 ? km.slice(0, 4).join(", ") + " og " + (km.length - 4) + " til" : km.join(", ")) + "</div>" + (x.ord ? '<div class="lille">Søgeord: ' + esc(x.ord) + "</div>" : "") + (x.brancher ? '<div class="lille">Brancher: ' + esc(x.brancher.replace(/,/g, ", ")) + "</div>" : "") + "</td>"
           + '<td><span class="st ' + x.status + '">' + esc(j.status[x.status]) + "</span>" + slut + (x.pris ? '<div class="lille">' + (+x.pris).toLocaleString("da-DK") + " kr./md.</div>" : "") + "</td>"
           + "<td>" + x.signaler + (x.ord_hits ? '<div class="lille">' + x.ord_hits + " med søgeord</div>" : "") + '<div class="lille">' + x.udbud + " udbud</div></td>"
           + "<td>" + x.besoeg + " besøg" + '<div class="lille">' + (x.sidst_set ? "sidst " + tid(x.sidst_set) : "aldrig åbnet") + "</div>" + (x.ja + x.nej ? '<div class="lille">' + x.ja + " relevante, " + x.nej + " ikke</div>" : "") + (x.foelger ? '<div class="lille">følger ' + x.foelger + " sager</div>" : "") + (x.pipeline ? '<div class="lille">' + x.pipeline + " i pipelinen</div>" : "") + "</td>"
@@ -189,6 +194,8 @@
     $("#k-slut").value = x.id ? (x.proeve_slut || "") : new Date(Date.now() + 91 * 864e5).toISOString().slice(0, 10);
     $("#k-pris").value = x.id ? (x.pris == null ? "" : x.pris) : 750;
     $("#k-modtagere").value = x.modtagere || ""; $("#k-mail").checked = x.id ? !!+x.mail : true;
+    var kb = (x.brancher || "").split(",");
+    $("#k-brancher").querySelectorAll("input").forEach(function (i) { i.checked = kb.indexOf(i.value) >= 0; });
     $("#k-ord").value = x.ord || ""; $("#k-noter").value = x.noter || ""; $("#k-cvr").value = x.cvr || "";
     valgte = {}; String(x.kommuner || "").split(",").filter(Boolean).forEach(function (s) { valgte[s] = 1; });
     $("#k-soeg").value = ""; tegnKommuner();
@@ -201,7 +208,7 @@
     var ny = !$("#k-id").value;
     er({ handling: "gem", id: +$("#k-id").value || 0, firma: $("#k-firma").value, kontakt: $("#k-kontakt").value, email: $("#k-email").value,
       produkt: $("#k-produkt").value, status: $("#k-status").value, proeve_slut: $("#k-slut").value, pris: $("#k-pris").value,
-      modtagere: $("#k-modtagere").value, mail: $("#k-mail").checked, kommuner: Object.keys(valgte), ord: $("#k-ord").value, noter: $("#k-noter").value, cvr: $("#k-cvr").value.replace(/\D/g, "") })
+      modtagere: $("#k-modtagere").value, mail: $("#k-mail").checked, kommuner: Object.keys(valgte), ord: $("#k-ord").value, brancher: Array.prototype.map.call($("#k-brancher").querySelectorAll("input:checked"), function (i) { return i.value; }), noter: $("#k-noter").value, cvr: $("#k-cvr").value.replace(/\D/g, "") })
       .then(function (j) {
         $("#kunde-form").hidden = true;
         besked(ny ? "Kunden er oprettet. Send linket herunder til kunden (fx i din egen mail)." : "Kunden er gemt.", "ok");

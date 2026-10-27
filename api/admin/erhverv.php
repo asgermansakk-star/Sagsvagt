@@ -39,7 +39,7 @@ if ($handling === 'liste') {
             'ord_hits' => count(array_filter($sig, fn($x) => isset($x['ty']['ord']))), 'sidst_mail' => $s[$k['id']]['sendt'] ?? null, 'mails' => (int)($s[$k['id']]['n'] ?? 0), 'foelger' => $f[$k['id']] ?? 0, 'pipeline' => $pl[$k['id']] ?? 0, 'udbud' => count(er_udbud_til($k))];
     }, $kunder);
     $i = er_indeks();
-    svar(200, ['kunder' => $ud, 'kommuner' => $i['kommuner'], 'genereret' => $i['genereret'] ?? null, 'produkter' => ER_PRODUKTER, 'status' => ER_STATUS]);
+    svar(200, ['kunder' => $ud, 'kommuner' => $i['kommuner'], 'genereret' => $i['genereret'] ?? null, 'produkter' => ER_PRODUKTER, 'status' => ER_STATUS, 'brancher' => ER_BRANCHER]);
 }
 
 if ($handling === 'gem') {
@@ -58,13 +58,13 @@ if ($handling === 'gem') {
     $pris = is_numeric($d['pris'] ?? null) ? max(0, min(100000, (int)$d['pris'])) : null;
     $felter = [$firma, trim(mb_substr((string)($d['kontakt'] ?? ''), 0, 100)), $email, implode(', ', $modtagere), $produkt, implode(',', $kommuner), $ord,
         $status, $slut, $pris, mb_substr((string)($d['noter'] ?? ''), 0, 4000), empty($d['mail']) ? 0 : 1,
-        preg_match('/^\d{8}$/', (string)($d['cvr'] ?? '')) ? $d['cvr'] : null];
+        preg_match('/^\d{8}$/', (string)($d['cvr'] ?? '')) ? $d['cvr'] : null, er_rens_brancher($d['brancher'] ?? [])];
     if ($id > 0) {
         $hent($id);
-        $db->prepare('UPDATE erhverv_kunder SET firma = ?, kontakt = ?, email = ?, modtagere = ?, produkt = ?, kommuner = ?, ord = ?, status = ?, proeve_slut = ?, pris = ?, noter = ?, mail = ?, cvr = ? WHERE id = ?')
+        $db->prepare('UPDATE erhverv_kunder SET firma = ?, kontakt = ?, email = ?, modtagere = ?, produkt = ?, kommuner = ?, ord = ?, status = ?, proeve_slut = ?, pris = ?, noter = ?, mail = ?, cvr = ?, brancher = ? WHERE id = ?')
             ->execute([...$felter, $id]);
     } else {
-        $db->prepare('INSERT INTO erhverv_kunder (firma, kontakt, email, modtagere, produkt, kommuner, ord, status, proeve_slut, pris, noter, mail, cvr, oprettet) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
+        $db->prepare('INSERT INTO erhverv_kunder (firma, kontakt, email, modtagere, produkt, kommuner, ord, status, proeve_slut, pris, noter, mail, cvr, brancher, oprettet) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
             ->execute([...$felter, nu()]);
         $id = (int)$db->lastInsertId();
     }

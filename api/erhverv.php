@@ -77,7 +77,7 @@ $navne = array_column($i['kommuner'], 'navn', 'slug');
 svar(200, [
     'kunde' => ['firma' => $kunde['firma'], 'produkt' => $kunde['produkt'], 'produktnavn' => ER_PRODUKTER[$kunde['produkt']] ?? '',
         'kommuner' => array_map(fn($s) => ['slug' => $s, 'navn' => $navne[$s] ?? $s], er_liste((string)$kunde['kommuner'])),
-        'ord' => er_liste((string)$kunde['ord']), 'status' => $kunde['status'], 'proeve_slut' => $kunde['proeve_slut'], 'mail' => (int)$kunde['mail'],
+        'ord' => er_liste((string)$kunde['ord']), 'brancher' => er_brancher($kunde), 'status' => $kunde['status'], 'proeve_slut' => $kunde['proeve_slut'], 'mail' => (int)$kunde['mail'],
         'modtagere' => er_modtagere($kunde), 'forrige' => $forrige],
     'meta' => ['genereret' => $i['genereret'] ?? null, 'dage' => $i['dage'] ?? 90, 'raekke' => $i['raekke'], 'stadier' => $i['stadier'], 'typer' => er_navne()['typer']],
     'signaler' => $signaler = er_signaler_til($kunde),

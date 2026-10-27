@@ -238,7 +238,8 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
         .map(function (t) { return '<option value="' + esc(t) + '">' + esc(m.typer[t] || t) + " (" + typer[t] + ")</option>"; }).join("");
       $("#f-stadie").innerHTML = '<option value="">Alle stadier</option>' + m.raekke.map(function (id) { var st = m.stadier.find(function (x) { return x.id === id; }); return st ? '<option value="' + id + '">' + esc(st.navn) + "</option>" : ""; }).join("");
       var b = Object.keys(brancher).sort(function (x, y) { return brancher[y] - brancher[x]; });
-      $("#f-branche").innerHTML = '<option value="">Alle brancher</option>' + b.map(function (x) { return '<option value="' + esc(x) + '">Til ' + esc(x) + " (" + brancher[x] + ")</option>"; }).join("");
+      var jeres = (k.brancher || []).filter(function (x) { return brancher[x]; });
+      $("#f-branche").innerHTML = '<option value="">Alle brancher</option>' + (jeres.length ? '<option value="jer">Til jer (' + alle.filter(tilJer).length + ")</option>" : "") + b.map(function (x) { return '<option value="' + esc(x) + '">Til ' + esc(x) + " (" + brancher[x] + ")</option>"; }).join("");
       $("#f-branche").classList.toggle("skjult", !b.length);
       $("#f-sort").innerHTML = '<option value="relevans">Mest relevante først</option><option value="nyeste">Nyeste først</option><option value="beloeb">Største beløb først</option><option value="tidligst">Tidligste stadie først</option><option value="moede">Næste møde først</option>';
     }
@@ -263,6 +264,8 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
   function tyNavne(s) { return tyNoegler(s).map(function (t) { return t === "ord" ? "Søgeord: " + s.ty.ord : D.meta.typer[t] || t; }); }
   // Et åbent udbud uden frist i TED regnes som åbent i 45 dage efter offentliggørelsen
   var for45 = new Date(Date.now() - 45 * 864e5).toISOString().slice(0, 10);
+  // "Til jer": projektkortets brancher (Claude Haiku) rammer en af kundens brancher
+  function tilJer(s) { var kb = (D.kunde && D.kunde.brancher) || []; return ((s.f && s.f.muligheder) || []).some(function (x) { return kb.indexOf(x) >= 0; }); }
   var aabentUdbud = function (u) { return u.art === "kommer" || (u.art === "aaben" && (u.frist ? u.frist >= idag : u.dato >= for45)); };
 
   function filtreret() {
@@ -276,7 +279,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
       if (fane === "kort" && !s.geo) return false;
       if (t && tyNoegler(s).indexOf(t) < 0) return false;
       if (st && s.sd !== st) return false;
-      if (br && !((s.f && s.f.muligheder) || []).includes(br)) return false;
+      if (br === "jer" ? !tilJer(s) : br && !((s.f && s.f.muligheder) || []).includes(br)) return false;
       if (ko && s.k !== ko) return false;
       if (q && (s.t + " " + s.d + " " + s.u + " " + s.kn + " " + JSON.stringify(s.f || "")).toLowerCase().indexOf(q) < 0) return false;
       return true;
@@ -285,7 +288,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     if (fane === "foelger") { var set = {}; l = l.sort(function (a, b) { return b.dato.localeCompare(a.dato); }).filter(function (s) { return set[s.n] ? false : (set[s.n] = 1); }); }
     var sort = fane === "kommende" ? "moede" : $("#f-sort").value, r = D.meta.raekke;
     var belob = function (s) { return (s.f && s.f.beloeb_kr) || 0; };
-    var rel = function (s) { return s.ty.ord ? 3 : s.rv || 2; };
+    var rel = function (s) { return (s.ty.ord ? 3 : s.rv || 2) + (tilJer(s) ? 0.5 : 0); };
     l.sort(sort === "relevans" ? function (a, b) { return rel(b) - rel(a) || (b.kom - a.kom) || b.dato.localeCompare(a.dato); }
       : sort === "tidligst" ? function (a, b) { return (r.indexOf(a.sd) + 1 || 9) - (r.indexOf(b.sd) + 1 || 9) || b.dato.localeCompare(a.dato); }
       : sort === "beloeb" ? function (a, b) { return belob(b) - belob(a) || b.dato.localeCompare(a.dato); }
@@ -337,7 +340,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     var v = vurd[s.id] || "", fl = s.n && foelg[s.n], nyBeh = fl && s.dato > fl.dato;
     return '<article class="signal' + (v === "nej" ? " fravalgt" : s.rv === 1 && !s.ty.ord ? " lav" : "") + '" data-id="' + esc(s.id) + '">'
       + '<a class="sb" href="' + esc(link) + '" tabindex="-1" aria-hidden="true"><img src="../' + esc(s.b) + '" alt="" loading="lazy"></a><div>'
-      + '<p class="kicker"' + (s.rg ? ' title="' + esc("Relevans " + s.rv + ": " + s.rg) + '"' : "") + ">" + (s.rv === 3 ? '<span class="ny blaa">Vigtig</span>' : "") + (nyBeh ? '<span class="ny blaa">Ny behandling</span>' : erNy(s) ? '<span class="ny">Ny</span>' : "") + '<span class="kn">' + esc(s.kn) + "</span> · " + typer
+      + '<p class="kicker"' + (s.rg ? ' title="' + esc("Relevans " + s.rv + ": " + s.rg) + '"' : "") + ">" + (tilJer(s) ? '<span class="ny">Til jer</span>' : "") + (s.rv === 3 ? '<span class="ny blaa">Vigtig</span>' : "") + (nyBeh ? '<span class="ny blaa">Ny behandling</span>' : erNy(s) ? '<span class="ny">Ny</span>' : "") + '<span class="kn">' + esc(s.kn) + "</span> · " + typer
       + (st ? ' · <span class="st st-' + s.sd + '">' + esc(st) + "</span>" : "") + (s.kom ? ' · <span class="kom">Møde ' + dato(s.dato) + "</span>" : "") + "</p>"
       + '<h3><a href="' + esc(link) + '">' + esc(s.t) + "</a></h3>"
       + chips(f)

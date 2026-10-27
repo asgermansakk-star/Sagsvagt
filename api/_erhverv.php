@@ -16,6 +16,8 @@ require_once __DIR__ . '/_mandagsmail_lav.php';
 const ER_PRODUKTER = ['signaler' => 'Tidlige signaler', 'energi' => 'Energiradar', 'begge' => 'Tidlige signaler og Energiradar'];
 const ER_STATUS = ['venter' => 'Venter på bekræftelse', 'proeve' => 'Pilot', 'aktiv' => 'Aktiv', 'pause' => 'Pause', 'stoppet' => 'Stoppet'];
 // Kundens pipeline: hvor langt de er med et signal eller et udbud
+// Kundens brancher; samme liste som projektkortets "muligheder" (avis/erhverv-fakta.mjs), som Claude Haiku udfylder pr. signal
+const ER_BRANCHER = ['entreprenør', 'håndværker', 'rådgiver', 'arkitekt', 'developer', 'investor', 'mægler', 'leverandør', 'energi', 'drift og service'];
 const ER_PIPELINE = ['undersoeger' => 'Undersøger', 'kontakt' => 'I kontakt', 'byder' => 'Byder', 'vundet' => 'Vundet', 'tabt' => 'Tabt', 'droppet' => 'Droppet'];
 // Kun piloter og aktive kunder kan åbne rapporten og få mail; en pilot kun til og med sin slutdato (admin kan forlænge den)
 function er_kan(): string { $idag = (new DateTimeImmutable('now', new DateTimeZone('Europe/Copenhagen')))->format('Y-m-d'); return "(status = 'aktiv' OR (status = 'proeve' AND (proeve_slut IS NULL OR proeve_slut >= '$idag')))"; }
@@ -31,7 +33,7 @@ function er_tabeller(PDO $db): void {
         noter $tekst NULL, mail INT NOT NULL DEFAULT 1, version INT NOT NULL DEFAULT 1, oprettet VARCHAR(25) NOT NULL,
         sidst_set VARCHAR(25) NULL, forrige_set VARCHAR(25) NULL, besoeg INT NOT NULL DEFAULT 0)");
     // Kom til senere: CVR og hvornår kunden blev betalende (til fakturalisten)
-    foreach (['cvr' => 'VARCHAR(8) NULL', 'aktiv_fra' => 'VARCHAR(10) NULL'] as $kol => $type) {
+    foreach (['cvr' => 'VARCHAR(8) NULL', 'aktiv_fra' => 'VARCHAR(10) NULL', 'brancher' => 'VARCHAR(300) NULL'] as $kol => $type) {
         try { $db->query("SELECT $kol FROM erhverv_kunder LIMIT 1"); } catch (PDOException $e) { $db->exec("ALTER TABLE erhverv_kunder ADD COLUMN $kol $type"); }
     }
     // Kundens vurdering af hvert signal (relevant eller ej): det, piloten skal lære os
@@ -61,6 +63,10 @@ function er_kunde(PDO $db, string $noegle, bool $kunAktive = true): ?array {
 }
 function er_afmeld_link(int $id): string { global $K; return $K['site_url'] . "api/erhverv-afmeld.php?id=$id&t=" . signatur("erhverv-afmeld:$id"); }
 function er_liste(string $s): array { return array_values(array_filter(array_map('trim', explode(',', $s)), fn($x) => $x !== '')); }
+function er_brancher(array $kunde): array { return array_values(array_intersect(er_liste((string)($kunde['brancher'] ?? '')), ER_BRANCHER)); }
+function er_rens_brancher($v): string { return implode(',', array_values(array_intersect(array_map('strval', is_array($v) ? $v : explode(',', (string)$v)), ER_BRANCHER))); }
+// "Til jer": projektkortet siger, at kundens branche kan få forretning ud af signalet
+function er_til_jer(array $kunde, array $s): bool { return (bool)array_intersect($s['f']['muligheder'] ?? [], er_brancher($kunde)); }
 function er_modtagere(array $kunde): array { return array_values(array_unique(array_filter(array_map('ren_email', array_merge([$kunde['email']], er_liste((string)$kunde['modtagere'])))))); }
 
 // ---------- Signalerne ----------
@@ -187,9 +193,10 @@ function er_mail_til(array $kunde, string $uge): ?array {
     // Relevansen (rv, 1–3) er Claude Haiku 5.5's bedømmelse. Mailen tager kun 2–3 med; signaler, der ikke er bedømt endnu,
     // og kundens egne søgeord kommer altid med.
     $relevant = fn($s) => isset($s['ty']['ord']) || !isset($s['rv']) || $s['rv'] >= 2;
+    $tilJer = fn($s) => er_til_jer($kunde, $s);
     $nye = array_values(array_filter($alle, fn($s) => $s['set'] >= $fra && $s['set'] < $uge && !$s['kom'] && $relevant($s)));
     // De største projekter først (projektkortets relevans), derefter de tidligste stadier
-    usort($nye, fn($a, $b) => (($b['rv'] ?? 2) <=> ($a['rv'] ?? 2)) ?: (($raekke[$a['sd']] ?? 9) <=> ($raekke[$b['sd']] ?? 9)) ?: strcmp($b['dato'], $a['dato']));
+    usort($nye, fn($a, $b) => ($tilJer($b) <=> $tilJer($a)) ?: (($b['rv'] ?? 2) <=> ($a['rv'] ?? 2)) ?: (($raekke[$a['sd']] ?? 9) <=> ($raekke[$b['sd']] ?? 9)) ?: strcmp($b['dato'], $a['dato']));
     $kommer = array_values(array_filter($alle, fn($s) => $s['kom'] && $s['dato'] >= $uge && $s['dato'] < $til14 && $relevant($s)));
     usort($kommer, fn($a, $b) => strcmp($a['dato'], $b['dato']) ?: (($b['rv'] ?? 2) <=> ($a['rv'] ?? 2)));
     // Sager, kunden følger, der er kommet på en dagsorden eller er behandlet igen siden sidste mandag
@@ -200,6 +207,13 @@ function er_mail_til(array $kunde, string $uge): ?array {
     $grupper = er_udbud_grupper((string)$kunde['produkt']);
     $udbud = array_values(array_filter(er_udbud_til($kunde), fn($u) => $u['dato'] >= $fra && $u['dato'] < $uge && array_intersect($u['g'], $grupper)));
     if (!$nye && !$kommer && !$foelger && !$udbud) return null;
+    // Ugens tre vigtigste: relevans 3 med projektkort, kundens brancher først, derefter det største beløb og de kommende møder.
+    // De står øverst og tages ud af listerne nedenfor, så intet står to gange.
+    $vigtige = array_values(array_filter(array_merge($nye, $kommer), fn($s) => ($s['rv'] ?? 0) === 3 && !empty($s['f']['hvad'])));
+    usort($vigtige, fn($a, $b) => ($tilJer($b) <=> $tilJer($a)) ?: ((float)($b['f']['beloeb_kr'] ?? 0) <=> (float)($a['f']['beloeb_kr'] ?? 0)) ?: ($b['kom'] <=> $a['kom']));
+    $vigtige = array_slice($vigtige, 0, 3);
+    $vigtigeId = array_column($vigtige, 'id');
+    $udenVigtige = fn(array $l) => array_values(array_filter($l, fn($s) => !in_array($s['id'], $vigtigeId, true)));
 
     $n = er_navne(); $C = MM_C; $F = MM_SANS; $e = 'mm_esc';
     $kommuner = array_values(array_unique(array_map(fn($s) => $s['kn'], $alle)));
@@ -214,15 +228,16 @@ function er_mail_til(array $kunde, string $uge): ?array {
         if ($s['sd'] !== '') $dele[] = $n['stadier'][$s['sd']] ?? $s['sd'];
         return implode(' · ', $dele);
     };
-    $raekker = function (array $liste, int $max) use ($site, $C, $F, $e, $kicker): string {
+    $raekker = function (array $liste, int $max) use ($site, $C, $F, $e, $kicker, $kunde): string {
         $h = '';
         foreach (array_slice($liste, 0, $max) as $s) {
+            $tilJerTekst = er_til_jer($kunde, $s) ? 'Til jer · ' : '';
             $meta = $s['u'] . ' · ' . ($s['kom'] ? 'møde ' . mm_dato($s['dato'], true) : 'behandlet ' . mm_dato($s['dato'])) . ($s['ud'] !== '' ? ' · ' . $s['ud'] : '');
             $f = $s['f'] ?? [];
             $chips = implode(' · ', array_filter(er_fakta_chips($f)));
             $hvad = ($f['hvad'] ?? '') !== '' ? $f['hvad'] : $s['d'];
             $h .= '<tr><td style="padding:14px 0;border-top:1px solid ' . $C['rule'] . ';">'
-                . '<p style="margin:0 0 4px;font:700 11px/1.4 ' . $F . ';letter-spacing:.06em;text-transform:uppercase;color:' . $C['indigo'] . ';">' . $e($kicker($s)) . '</p>'
+                . '<p style="margin:0 0 4px;font:700 11px/1.4 ' . $F . ';letter-spacing:.06em;text-transform:uppercase;color:' . $C['indigo'] . ';">' . $e($tilJerTekst . $kicker($s)) . '</p>'
                 . '<a href="' . $e($site . $s['url']) . '" style="font:700 16px/1.35 ' . $F . ';color:' . $C['nat'] . ';text-decoration:none;">' . $e($s['t']) . '</a>'
                 . ($chips !== '' ? '<p style="margin:6px 0 0;font:700 13px/1.5 ' . $F . ';color:' . $C['vin'] . ';">' . $e($chips) . '</p>' : '')
                 . '<p style="margin:4px 0 0;font:13px/1.5 ' . $F . ';color:' . $C['muted'] . ';">' . $e(mm_klip($meta, 200)) . '</p>'
@@ -259,9 +274,10 @@ function er_mail_til(array $kunde, string $uge): ?array {
         . '<p style="margin:0 0 8px;font:700 11px ' . $F . ';letter-spacing:.12em;text-transform:uppercase;color:' . $C['rosen'] . ';">Sagsvagt Erhverv · uge ' . $ugenr . '</p>'
         . '<p style="margin:0;font:800 24px/1.2 ' . $F . ';color:' . $C['kalk'] . ';">' . $e(ER_PRODUKTER[$kunde['produkt']] ?? 'Tidlige signaler') . ($hvor ? ' i ' . $e($hvor) : '') . '</p>'
         . '<p style="margin:10px 0 0;font:14px/1.5 ' . $F . ';color:#D6CFC3;">' . $e($intro) . '</p></td></tr>'
+        . ($vigtige ? $afsnit(er_brancher($kunde) ? 'Ugens tre vigtigste for jer' : 'Ugens tre vigtigste', $raekker($vigtige, 3)) : '')
         . ($foelger ? $afsnit('Sager, I følger', $raekker($foelger, 10)) : '')
-        . ($nye ? $afsnit('Nyt i ugen', $raekker($nye, 12)) : '')
-        . ($kommer ? $afsnit('På kommende møder', $raekker($kommer, 10)) : '')
+        . ($udenVigtige($nye) ? $afsnit('Nyt i ugen', $raekker($udenVigtige($nye), 12)) : '')
+        . ($udenVigtige($kommer) ? $afsnit('På kommende møder', $raekker($udenVigtige($kommer), 10)) : '')
         . ($udbud ? $afsnit('Nye udbud fra kommunerne', $udbudRk) : '')
         . '<tr><td style="padding:24px 28px 8px;"><a href="' . $e($rapport) . '" style="display:inline-block;background:' . $C['nat'] . ';color:' . $C['kalk'] . ';font:700 15px ' . $F . ';text-decoration:none;padding:13px 24px;border-radius:8px;">Åbn hele rapporten</a>'
         . '<p style="margin:14px 0 0;font:13px/1.55 ' . $F . ';color:' . $C['muted'] . ';">I rapporten kan du filtrere, eksportere til regneark og markere, hvilke signaler der er relevante for jer. Svar på mailen, hvis noget mangler.</p></td></tr>'
@@ -271,9 +287,10 @@ function er_mail_til(array $kunde, string $uge): ?array {
 
     $linje = fn(array $s) => '• ' . $s['t'] . "\n  " . $kicker($s) . ' · ' . ($s['kom'] ? 'møde ' : '') . mm_dato($s['dato']) . "\n  " . $site . $s['url'];
     $tekst = "Sagsvagt Erhverv uge $ugenr\n$intro\n\n"
+        . ($vigtige ? "UGENS TRE VIGTIGSTE\n" . implode("\n", array_map(fn($s) => $linje($s) . "\n  " . $s['f']['hvad'], $vigtige)) . "\n\n" : '')
         . ($foelger ? "SAGER, I FØLGER\n" . implode("\n", array_map($linje, array_slice($foelger, 0, 10))) . "\n\n" : '')
-        . ($nye ? "NYT I UGEN\n" . implode("\n", array_map($linje, array_slice($nye, 0, 12))) . "\n\n" : '')
-        . ($kommer ? "PÅ KOMMENDE MØDER\n" . implode("\n", array_map($linje, array_slice($kommer, 0, 10))) . "\n\n" : '')
+        . ($udenVigtige($nye) ? "NYT I UGEN\n" . implode("\n", array_map($linje, array_slice($udenVigtige($nye), 0, 12))) . "\n\n" : '')
+        . ($udenVigtige($kommer) ? "PÅ KOMMENDE MØDER\n" . implode("\n", array_map($linje, array_slice($udenVigtige($kommer), 0, 10))) . "\n\n" : '')
         . ($udbud ? "NYE UDBUD\n" . implode("\n", array_map(fn($u) => '• ' . $u['titel'] . ($u['frist'] ? ' (frist ' . mm_dato($u['frist']) . ')' : '') . "\n  " . $u['url'], array_slice($udbud, 0, 8))) . "\n\n" : '')
         . "Hele rapporten: $rapport\n\n--\nTil {$kunde['firma']}. Stop de ugentlige mails: $afmeld\nSagsvagt · CVR 46841514";
     return ['emne' => $emne, 'html' => mm_moerk($html), 'tekst' => $tekst, 'antal' => count($nye) + count($kommer) + count($udbud) + count($foelger)];
