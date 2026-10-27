@@ -327,6 +327,22 @@
    "dato": "2026-10-26",
    "punkter": 10,
    "parser": 3
+  },
+  "994508ce-b0c2-4ba2-aa17-7d146f786556": {
+   "lastmod": "2026-10-27",
+   "type": "referat",
+   "udvalg": "Teknik-, Natur- & Miljøudvalget",
+   "dato": "2026-10-26",
+   "punkter": 8,
+   "parser": 3
+  },
+  "6a662506-d7c3-4149-ab83-fad1579f96fc": {
+   "lastmod": "2026-10-27",
+   "type": "referat",
+   "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
+   "dato": "2026-10-26",
+   "punkter": 10,
+   "parser": 3
   }
  },
  "sager": {
@@ -2224,15 +2240,19 @@
    "kommune": "Guldborgsund",
    "udvalg": "Teknik-, Natur- & Miljøudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=44e34490-99e4-411f-a0bb-af4855d44ef5",
-   "hentet": "2026-10-23T00:45:13.209Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=994508ce-b0c2-4ba2-aa17-7d146f786556",
+   "hentet": "2026-10-27T19:32:12.878Z",
    "titel": "Beslutningssag: Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Direktionen indstiller til Teknik-, Natur- & Miljøudvalget:\n1. at dagsorden godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: René Christensen (M) - Fravær med afbud\nGodkendt."
     }
    ],
    "bilag": []
@@ -2242,10 +2262,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Teknik-, Natur- & Miljøudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=44e34490-99e4-411f-a0bb-af4855d44ef5",
-   "hentet": "2026-10-23T00:45:13.209Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=994508ce-b0c2-4ba2-aa17-7d146f786556",
+   "hentet": "2026-10-27T19:32:12.878Z",
    "titel": "Drøftelsessag: Teknik-, Natur- & Miljøudvalgets handleplan 2026-2029",
    "afsnit": [
     {
@@ -2266,7 +2286,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\n\nHØRING\nIkke relevant.\n\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\n\nHØRING\nIkke relevant."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: René Christensen (M) - Fravær med afbud\nDrøftet.\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -2293,10 +2317,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Teknik-, Natur- & Miljøudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=44e34490-99e4-411f-a0bb-af4855d44ef5",
-   "hentet": "2026-10-23T00:45:13.209Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=994508ce-b0c2-4ba2-aa17-7d146f786556",
+   "hentet": "2026-10-27T19:32:12.878Z",
    "titel": "Beslutningssag: Fortsættelse af planlægning for solcellepark ved Skørringe",
    "afsnit": [
     {
@@ -2317,7 +2341,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\nHØRING\nSåfremt planlægningen fortsættes vil planforslagene og miljøvurderingen blive sendt i høring.\n\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\nHØRING\nSåfremt planlægningen fortsættes vil planforslagene og miljøvurderingen blive sendt i høring."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: René Christensen (M) - Fravær med afbud\nGodkendt.\n\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -2352,10 +2380,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Teknik-, Natur- & Miljøudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=44e34490-99e4-411f-a0bb-af4855d44ef5",
-   "hentet": "2026-10-23T00:45:13.209Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=994508ce-b0c2-4ba2-aa17-7d146f786556",
+   "hentet": "2026-10-27T19:32:12.878Z",
    "titel": "Beslutningssag: Godkendelse af varmeplan 2025",
    "afsnit": [
     {
@@ -2376,7 +2404,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\n\nHØRING\nVarmeplan 2025 har været i offentlig høring i otte uger samt i særskilt høring hos relevante\nvarmeinteressenter. Høringssvarene er samlet i vedlagte hvidbog.\n\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\n\nHØRING\nVarmeplan 2025 har været i offentlig høring i otte uger samt i særskilt høring hos relevante\nvarmeinteressenter. Høringssvarene er samlet i vedlagte hvidbog."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: René Christensen (M) - Fravær med afbud\nGodkendt.\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -2385,11 +2417,11 @@
      "url": null
     },
     {
-     "navn": "Offentlig",
+     "navn": "Varmeplan 2025 TNMU",
      "url": null
     },
     {
-     "navn": "Varmeplan 2025 TNMU",
+     "navn": "Offentlig",
      "url": null
     },
     {
@@ -2403,10 +2435,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Teknik-, Natur- & Miljøudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=44e34490-99e4-411f-a0bb-af4855d44ef5",
-   "hentet": "2026-10-23T00:45:13.209Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=994508ce-b0c2-4ba2-aa17-7d146f786556",
+   "hentet": "2026-10-27T19:32:12.878Z",
    "titel": "Drøftelsessag: Højvandsbeskyttelse Nysted Havn",
    "afsnit": [
     {
@@ -2427,7 +2459,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\n\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: René Christensen (M) - Fravær med afbud\nDrøftet\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -2470,10 +2506,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Teknik-, Natur- & Miljøudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=44e34490-99e4-411f-a0bb-af4855d44ef5",
-   "hentet": "2026-10-23T00:45:13.209Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=994508ce-b0c2-4ba2-aa17-7d146f786556",
+   "hentet": "2026-10-27T19:32:12.878Z",
    "titel": "Orienteringssag: Klimatilpasning - Sakskøbing",
    "afsnit": [
     {
@@ -2494,7 +2530,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\n\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: René Christensen (M) - Fravær med afbud\nTaget til efterretning.\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -2521,15 +2561,19 @@
    "kommune": "Guldborgsund",
    "udvalg": "Teknik-, Natur- & Miljøudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=44e34490-99e4-411f-a0bb-af4855d44ef5",
-   "hentet": "2026-10-23T00:45:13.209Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=994508ce-b0c2-4ba2-aa17-7d146f786556",
+   "hentet": "2026-10-27T19:32:12.878Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Der er orientering om:\n• Sakskøbing Byudvikling – etablering af Sakskøbing Gruppen\nDer er i øjeblikket særligt fokus på etableringen af Sakskøbing Gruppen, som skal bidrage til den videre\nudvikling af Sakskøbing i tæt samarbejde med byen.\nGruppen er nu sammensat med de første seks lokale medlemmer og kan efterfølgende suppleres med\nyderligere medlemmer.\nDet første møde afholdes den 27. oktober 2026 med deltagelse af gruppens medlemmer og den politiske\nfølgegruppe.\nPå mødet præsenteres status for Sakskøbing Byudvikling samt gruppens formål og arbejdsform. Der\nlægges særligt vægt på dialog om byens behov, muligheder og ønsker til den videre udvikling.\nPå et efterfølgende møde vil gruppen tage hul på arbejdet med konkrete projekter og initiativer, herunder\nudviklingen af Fælleshuset i samarbejde med Meyers Madhus, arbejdet med legepladsen samt øvrige\naktiviteter og indsatser under Frie Bymidter.\n\n• Orientering fra udvalgsformanden\n\n• Orientering fra øvrige udvalgsmedlemmer\n\n• Orientering fra administrationen\n- Trafik ved Slotsbryggen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: René Christensen (M) - Fravær med afbud\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -2539,15 +2583,19 @@
    "kommune": "Guldborgsund",
    "udvalg": "Teknik-, Natur- & Miljøudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=44e34490-99e4-411f-a0bb-af4855d44ef5",
-   "hentet": "2026-10-23T00:45:13.209Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=994508ce-b0c2-4ba2-aa17-7d146f786556",
+   "hentet": "2026-10-27T19:32:12.878Z",
    "titel": "Beslutningssag: Kommunikation",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Direktionen indstiller til Teknik-, Natur, & Miljøudvalget:\n1. at beslutte hvad der skal kommunikeres af sager fra udvalgets møde."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: René Christensen (M) - Fravær med afbud\nDrøftet."
     }
    ],
    "bilag": []
@@ -6295,15 +6343,19 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Beslutningssag: Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Direktionen indstiller til Kultur-, Fritids- & Folkesundhedsudvalget:\n1. at dagsorden godkendes"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nFraværdende: Anders Kappel Stausholm grundet arbejde.\nGodkendt."
     }
    ],
    "bilag": []
@@ -6313,15 +6365,19 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "• Besøg hos, og oplæg om Sakskøbing Madskole\n• Status på Guldborgen\n• Pakhuset i Guldborg\n• Status på handleplaner\n• Status på Sakskøbing byudvikling\nUDVALGTE"
+     "tekst": "• Besøg hos, og oplæg om Sakskøbing Madskole\n• Status på Guldborgen\n• Pakhuset i Guldborg\n• Status på handleplaner\n• Status på Sakskøbing byudvikling"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nTaget til efterretning.\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -6340,10 +6396,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Beslutningssag: Udpegning af næstformand",
    "afsnit": [
     {
@@ -6356,11 +6412,15 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Byrådet har godkendt Emma Holms fravær i perioden 5. oktober til 30. november 2026.\nByrådet behandlede og godkendte dette på deres møde den 17. september 2026. Byrådet besluttede at\nAnders Stausholm indtræder som medlem af Byrådet for den nævnte periode og herunder indtræden i\nKultur-, Fritids- & Folkesundhedsudvalget.\nI henhold til §22 i lov om kommunernes styrelse vælger udvalget selv i formand.\nUdvalget kan endvidere vælge en næstformand."
+     "tekst": "Byrådet har godkendt Emma Holms fravær i perioden 5. oktober til 30. november 2026.\nByrådet behandlede og godkendte dette på deres møde den 17. september 2026. Byrådet besluttede at\nAnders Kappel Stausholm indtræder som medlem af Byrådet for den nævnte periode og herunder\nindtræden i Kultur-, Fritids- & Folkesundhedsudvalget.\nI henhold til §22 i lov om kommunernes styrelse vælger udvalget selv i formand.\nUdvalget kan endvidere vælge en næstformand."
     },
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nAnders Kappel Stausholm udpeget som Næstformand."
     }
    ],
    "bilag": []
@@ -6370,10 +6430,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Drøftelsessag: Museum Lolland-Falster - Ny samdriftsaftale 2027-2030",
    "afsnit": [
     {
@@ -6390,7 +6450,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nDrøftet.\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -6433,10 +6497,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Drøftelsessag: Evaluering af Aktiv Sommer 2026 og vision for Aktiv Sommer 2027",
    "afsnit": [
     {
@@ -6453,7 +6517,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nDrøftet.\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -6504,10 +6572,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Beslutningssag: Ansøgning til Landdistriktspuljen 2027",
    "afsnit": [
     {
@@ -6524,7 +6592,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nGodkendt.\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -6559,10 +6631,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Beslutningssag: Børnenes Grundlovsdag i Guldborgsund",
    "afsnit": [
     {
@@ -6579,7 +6651,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\nDer søges på nuværende tidspunkt ikke om økonomisk støtte fra Guldborgsund Kommune. Projektets\nsamlede budget udgør ca. 500.000 kr., og initiativtagerne forventer i første omgang at søge ekstern\nfinansiering, blandt andet gennem Nordea Fondens Medborgerpulje.\nSåfremt der kommer en økonomisk ansøgning fra initiativtagerne, skal disse midler søges i udvalgets\nFOKUS-pulje.\n\nUDVALGTE"
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\nDer søges på nuværende tidspunkt ikke om økonomisk støtte fra Guldborgsund Kommune. Projektets\nsamlede budget udgør ca. 500.000 kr., og initiativtagerne forventer i første omgang at søge ekstern\nfinansiering, blandt andet gennem Nordea Fondens Medborgerpulje.\nSåfremt der kommer en økonomisk ansøgning fra initiativtagerne, skal disse midler søges i udvalgets\nFOKUS-pulje."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nUdvalget godkender, at Guldborgsund Bibliotekerne deltager som aktør.\nUDVALGTE"
     }
    ],
    "bilag": [
@@ -6598,10 +6674,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Beslutningssag: Sælmuseet Favn i Nysted",
    "afsnit": [
     {
@@ -6619,6 +6695,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nGodkendt."
     }
    ],
    "bilag": []
@@ -6628,10 +6708,10 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Orienteringssag: Bocuse d'Or nationale udvælgelseskonkurrence 2027 under Madens Folkemøde",
    "afsnit": [
     {
@@ -6649,6 +6729,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -6658,15 +6742,19 @@
    "kommune": "Guldborgsund",
    "udvalg": "Kultur-, Fritids- & Folkesundhedsudvalget",
    "dato": "2026-10-26",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=5617543c-aa6d-4e2f-ad3a-a174e966bb7c",
-   "hentet": "2026-10-23T00:59:27.815Z",
+   "kilde": "https://dagsordener.guldborgsund.dk/vis?id=6a662506-d7c3-4149-ab83-fad1579f96fc",
+   "hentet": "2026-10-27T19:32:19.181Z",
    "titel": "Beslutningssag: Kommunikation",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Direktionen indstiller til Kultur-, Fritids- & Folkesundhedsudvalget\n1. at beslutte hvad der skal kommunikeres af sager fra udvalgets møde."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Anders Kappel Stausholm (C) - Grundet arbejde\nUddeling fra puljer."
     }
    ],
    "bilag": []
@@ -13441,7 +13529,7 @@
    "tjekket": "2026-10-27"
   },
   "https://dagsordener.guldborgsund.dk/Sitemap/ForCommittee?committeeId=8fbb64fa-6a0c-4977-857f-fae904b42056": {
-   "senest": "2026-10-21",
+   "senest": "2026-10-27",
    "tjekket": "2026-10-27"
   },
   "https://dagsordener.guldborgsund.dk/Sitemap/ForCommittee?committeeId=e7223efe-e6b3-4f05-8438-4e8dc08240a4": {
@@ -13477,7 +13565,7 @@
    "tjekket": "2026-10-27"
   },
   "https://dagsordener.guldborgsund.dk/Sitemap/ForCommittee?committeeId=03d65370-af58-46cf-9f27-b11d94c81103": {
-   "senest": "2026-10-22",
+   "senest": "2026-10-27",
    "tjekket": "2026-10-27"
   },
   "https://dagsordener.guldborgsund.dk/Sitemap/ForCommittee?committeeId=59fa9ba9-d26b-4a85-aec7-0cf5986be0e5": {
@@ -13549,7 +13637,7 @@
    "tjekket": "2026-10-13"
   }
  },
- "opdateret": "2026-10-27T09:49:43.425Z",
+ "opdateret": "2026-10-27T19:32:19.182Z",
  "kommune": "Guldborgsund",
  "parser": 3
 }

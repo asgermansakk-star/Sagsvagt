@@ -451,6 +451,22 @@
    "dato": "2026-10-27",
    "punkter": 2,
    "parser": 3
+  },
+  "202c2196-bc78-48fc-b308-71e5190bf9f7": {
+   "lastmod": "2026-10-27",
+   "type": "referat",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-10-27",
+   "punkter": 2,
+   "parser": 3
+  },
+  "d4ce142e-4a52-49ea-9eda-444db614d6b3": {
+   "lastmod": "2026-10-27",
+   "type": "referat",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-27",
+   "punkter": 2,
+   "parser": 3
   }
  },
  "sager": {
@@ -10369,12 +10385,16 @@
    "kommune": "Fredericia",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordner.fredericia.dk/vis?id=a2301fb1-bfbb-4e06-9969-06cd702a3e01",
-   "hentet": "2026-10-26T18:34:22.800Z",
+   "kilde": "https://dagsordner.fredericia.dk/vis?id=202c2196-bc78-48fc-b308-71e5190bf9f7",
+   "hentet": "2026-10-27T19:32:17.385Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "1. Godkendt."
+    },
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller til Økonomi- og Erhvervsudvalget, at:\n1. Dagsordenen godkendes."
@@ -10387,10 +10407,10 @@
    "kommune": "Fredericia",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordner.fredericia.dk/vis?id=a2301fb1-bfbb-4e06-9969-06cd702a3e01",
-   "hentet": "2026-10-26T18:34:22.800Z",
+   "kilde": "https://dagsordner.fredericia.dk/vis?id=202c2196-bc78-48fc-b308-71e5190bf9f7",
+   "hentet": "2026-10-27T19:32:17.385Z",
    "titel": "Underskriftsside",
    "afsnit": [
     {
@@ -10409,12 +10429,16 @@
    "kommune": "Fredericia",
    "udvalg": "Byrådet",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordner.fredericia.dk/vis?id=b743f837-6b34-427e-934d-65200501374c",
-   "hentet": "2026-10-26T18:34:50.064Z",
+   "kilde": "https://dagsordner.fredericia.dk/vis?id=d4ce142e-4a52-49ea-9eda-444db614d6b3",
+   "hentet": "2026-10-27T19:32:21.696Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "1. Godkendt.\nAfbud: Kirsten Hassing Nielsen (C), Tommy Rachlitz Nielsen (C).\nFraværende: Turan Savas (A)."
+    },
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller til byrådet, at:\n1. Dagsordenen godkendes."
@@ -10427,10 +10451,10 @@
    "kommune": "Fredericia",
    "udvalg": "Byrådet",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordner.fredericia.dk/vis?id=b743f837-6b34-427e-934d-65200501374c",
-   "hentet": "2026-10-26T18:34:50.064Z",
+   "kilde": "https://dagsordner.fredericia.dk/vis?id=d4ce142e-4a52-49ea-9eda-444db614d6b3",
+   "hentet": "2026-10-27T19:32:21.696Z",
    "titel": "Underskriftsside",
    "afsnit": [
     {
@@ -10467,7 +10491,7 @@
    "tjekket": "2026-10-13"
   },
   "https://dagsordner.fredericia.dk/Sitemap/ForCommittee?committeeId=1de4b012-c53c-4cd1-8111-fd16cc7f82a2": {
-   "senest": "2026-10-26",
+   "senest": "2026-10-27",
    "tjekket": "2026-10-27"
   },
   "https://dagsordner.fredericia.dk/Sitemap/ForCommittee?committeeId=461cf99a-8255-463e-a07e-326886d12285": {
@@ -10555,7 +10579,7 @@
    "tjekket": "2026-10-27"
   },
   "https://dagsordner.fredericia.dk/Sitemap/ForCommittee?committeeId=12083571-4263-4e0d-bb3b-d75e4e7a5a38": {
-   "senest": "2026-10-26",
+   "senest": "2026-10-27",
    "tjekket": "2026-10-27"
   },
   "https://dagsordner.fredericia.dk/Sitemap/ForCommittee?committeeId=0df3a3fb-d05a-4016-9d5c-ef73b7ea5cd0": {
@@ -10615,7 +10639,7 @@
    "tjekket": "2026-10-13"
   }
  },
- "opdateret": "2026-10-27T09:49:49.783Z",
+ "opdateret": "2026-10-27T19:32:21.697Z",
  "kommune": "Fredericia",
  "parser": 3
 }
