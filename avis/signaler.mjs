@@ -157,7 +157,7 @@ function rapportHtml({ titel, undertitel, segment, kommuner, alle, eksempel }) {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>${esc(titel)} – Sagsvagt Erhverv</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="${SITE}assets/fonts/montserrat.css">
 <style>
 :root{--nat:#0E0F14;--blaek:#0C1430;--indigo:#28377A;--bordeaux:#3E0E14;--vin:#8A2430;--rubin:#B04A50;--rosen:#DCA9A5;--lyng:#B7BBD8;--kalk:#E6DFD3;--kalk-lys:#EEE8DE;--kalk-mork:#D9D1C3;--rule:#CFC6B8;--muted:#56535A;--sans:Montserrat,system-ui,sans-serif}
 *{box-sizing:border-box}body{margin:0;background:var(--kalk);color:var(--nat);font:500 16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}

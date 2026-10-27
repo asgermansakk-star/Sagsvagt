@@ -41,6 +41,8 @@
 .sagskort .leaflet-popup-content { font: 500 14px/1.4 var(--sans, system-ui); }
 .sagskort .leaflet-popup-content a { color: var(--nat); font-weight: 700; }
 .kort-pop-sted { margin: 0 0 4px !important; color: var(--muted); font-size: 12px; }
+.sagskort .kort-start { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; text-align: center; }
+.sagskort .kort-start p { margin: 0; max-width: 34ch; color: var(--muted); font-size: 14px; }
 .kort-link { display: flex; gap: 12px; align-items: center; padding: 12px; margin: 0 0 22px; border-radius: var(--r-kort); background: var(--kalk-lys); color: var(--nat); text-decoration: none; font-size: var(--fodnote); line-height: 1.35; }
 .kort-link img { width: 88px; height: 50px; object-fit: cover; border-radius: 8px; flex: none; }
 .kort-link b { font-size: 1rem; }

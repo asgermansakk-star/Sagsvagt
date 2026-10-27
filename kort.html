@@ -79,18 +79,20 @@
 <div class="wrap">
   <h1 class="hl kort-h">Hvad sker der i din gade?</h1>
   <p class="dek">136 sager fra de sidste fire måneder, der nævner en gade, en plads, en skole eller en park. Tryk på en nål for at læse sagen.</p>
-  <div id="sagskort" class="sagskort" role="region" aria-label="Kort over sagerne"></div>
+  <div id="sagskort" class="sagskort" role="region" aria-label="Kort over sagerne"><div class="kort-start"><button class="btn" type="button" id="vis-kort">Vis kortet</button><p>Kortet hentes fra OpenStreetMap, når du trykker. Indtil da sender siden ingenting til andre.</p></div></div>
   <p class="lille">Kort: © <a href="https://www.openstreetmap.org/copyright" rel="nofollow">OpenStreetMap</a>-bidragydere. Stedet er fundet ud fra sagens tekst og kan være upræcist.</p>
 </div>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script>(function(){var k=L.map("sagskort",{scrollWheelZoom:false}).setView([55.676,12.568],12);
+<link rel="stylesheet" href="assets/leaflet/leaflet.css">
+<script src="assets/leaflet/leaflet.js"></script>
+<script>/* Kortfliserne hentes først fra OpenStreetMap, når man trykker "Vis kortet" (ingen opslag hos andre uden et klik) */
+document.getElementById("vis-kort").addEventListener("click",function(){var f=document.getElementById("sagskort");f.innerHTML="";
+var k=L.map(f,{scrollWheelZoom:false}).setView([55.676,12.568],12);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(k);
 function e(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 fetch("assets/kort-sager.json").then(function(r){return r.json()}).then(function(l){var g=[];l.forEach(function(s){
 var m=L.circleMarker([s.lat,s.lon],{radius:8,weight:2,color:"#fff",fillColor:s.status==="kommer"?"#28377A":"#8A2430",fillOpacity:.9}).addTo(k);
 m.bindPopup('<p class="kort-pop-sted">'+e(s.sted)+" · "+e(s.hvor)+'</p><a href="'+e(s.url)+'">'+e(s.titel)+"</a>");g.push([s.lat,s.lon])});
-if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})})})();</script>
+if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})})},{once:true});</script>
 </main>
 <footer class="foot">
   <div class="wrap">
