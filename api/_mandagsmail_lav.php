@@ -159,6 +159,8 @@ function mm_mail_top(string $emne, string $preheader, int $uge, string $idag, st
       . "  <p style=\"margin:36px 0 0;font:700 28px/1.05 {$S};letter-spacing:.04em;text-transform:uppercase;color:{$C['kalk']};\">Mandagsmailen</p>\n"
       . "  <table role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"margin:14px 0 12px;\"><tr><td width=\"48\" height=\"3\" bgcolor=\"{$C['rubin']}\" style=\"background:{$C['rubin']};font-size:0;line-height:0;\">&nbsp;</td></tr></table>\n"
       . "  <p style=\"margin:0;font:500 15px/1.45 {$S};color:{$C['lyng']};\">Uge {$uge}<br>" . mm_esc(mm_stor(mm_dato($idag, true))) . "</p>\n"
+      // Natkortet er lavet af OpenStreetMap-fliser (ODbL), så kilden står under datoen
+      . ($kommune !== '' ? "  <p style=\"margin:18px 0 0;font:500 10px/1.2 {$S};color:{$C['lyng']};\">Kort: © OpenStreetMap-bidragydere</p>\n" : '')
       . "</td></tr>\n";
 }
 // $afmeld: personligt link til afmelding (api/afmeld.php). Uden link (fx forhåndsvisning) står redaktionens mail.

@@ -26,7 +26,7 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
   <h1>Søg i sagerne</h1>
   <p class="intro">Søg i overskrifter, resuméer og udvalg i alle ${antal.toLocaleString("da-DK")} sager fra ${escJs(aktiv)}.</p>
   <form class="soeg-felt" role="search" onsubmit="return false"><input type="search" id="q" placeholder="fx cykelsti, skole eller budget" aria-label="Søg i sagerne" autocomplete="off">${vaelger}</form>
-  <ul class="chips" id="emnefilter"><li><a href="#" data-emne="" aria-current="page">Alle emner</a></li>${Object.entries(emner).map(([id, e]) => `<li><a href="#" data-emne="${id}">${escJs(e.navn)}</a></li>`).join("")}</ul>
+  <ul class="chips" id="emnefilter" aria-label="Vis kun ét emne"><li><button type="button" data-emne="" aria-pressed="true">Alle emner</button></li>${Object.entries(emner).map(([id, e]) => `<li><button type="button" data-emne="${id}" aria-pressed="false">${escJs(e.navn)}</button></li>`).join("")}</ul>
   <p class="intro" id="antal" aria-live="polite"></p>
   <div id="resultater"></div>
 </div></div>
@@ -35,8 +35,8 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
   .soeg-felt input { flex: 1 1 260px; }
   .soeg-kommune { display: flex; align-items: center; gap: 10px; font-size: var(--sekundaer); font-weight: 600; margin-bottom: 16px; }
   /* Samme udseende som søgefeltet */
-  .soeg-kommune select { min-height: 52px; padding: 0 40px 0 16px; border: 0; box-shadow: inset 0 0 0 1.5px var(--rule); border-radius: var(--r-felt); background: var(--kalk-lys) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230E0F14' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 16px center; appearance: none; font: 500 var(--broed) var(--sans); color: var(--nat); cursor: pointer; }
-  .soeg-kommune select:focus { outline: none; box-shadow: inset 0 0 0 2px var(--indigo); }
+  .soeg-kommune select { min-height: 52px; padding: 0 40px 0 16px; border: 0; box-shadow: inset 0 0 0 1.5px var(--felt-kant); border-radius: var(--r-felt); background: var(--kalk-lys) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%230E0F14' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 16px center; appearance: none; font: 500 var(--broed) var(--sans); color: var(--nat); cursor: pointer; }
+  .soeg-kommune select:focus { outline: 3px solid var(--skifer); outline-offset: 2px; box-shadow: inset 0 0 0 2px var(--indigo); }
 </style>
 <script>
 (function () {
@@ -45,8 +45,10 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
   var esc = function (s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var dato = function (iso) { return new Date(iso + "T12:00:00Z").toLocaleDateString("da-DK", { timeZone: "UTC", day: "numeric", month: "long", year: "numeric" }); };
   var status = function (s) { return s.st === "besluttet" ? '<span class="status besluttet">Besluttet ' + dato(s.dato) + "</span>" : s.st === "kommer" ? '<span class="status kommer">På dagsordenen ' + dato(s.dato) + "</span>" : '<span class="status">Behandlet ' + dato(s.dato) + "</span>"; };
+  // Skriver man, før sagerne er hentet, står der tre sager i skeletform, til de er der
+  var SKELET = Array(3).fill('<article aria-hidden="true"><span class="skelet skelet-linje" style="width: 30%"></span><span class="skelet" style="height: 24px; margin: 8px 0"></span><span class="skelet skelet-linje"></span><span class="skelet skelet-linje" style="width: 70%"></span></article>').join("");
   function vis() {
-    if (!data) return;
+    if (!data) { if (q.value.trim() || emne) { antal.textContent = "Henter sagerne …"; ud.innerHTML = SKELET; } return; }
     var ord = q.value.trim().toLowerCase().split(/\\s+/).filter(Boolean);
     if (!ord.length && !emne) { antal.textContent = ""; ud.innerHTML = ""; return; }
     var hits = data.sager.filter(function (s) {
@@ -61,9 +63,9 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
     }).join("");
   }
   var t0; q.addEventListener("input", function () { clearTimeout(t0); t0 = setTimeout(vis, 120); });
+  function vaelgEmne(b) { document.querySelectorAll("#emnefilter button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); }
   document.getElementById("emnefilter").addEventListener("click", function (e) {
-    var a = e.target.closest("a[data-emne]"); if (!a) return; e.preventDefault(); emne = a.getAttribute("data-emne");
-    document.querySelectorAll("#emnefilter a").forEach(function (x) { x.toggleAttribute("aria-current", x === a); if (x === a) x.setAttribute("aria-current", "page"); }); vis();
+    var b = e.target.closest("button[data-emne]"); if (!b) return; emne = b.getAttribute("data-emne"); vaelgEmne(b); vis();
   });
   // Skift kommune, og tag søgeordet og emnet med
   var kv = document.getElementById("kommune-valg");
@@ -73,7 +75,7 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
   });
   var u = new URLSearchParams(location.search);
   if (u.get("q")) q.value = u.get("q");
-  if (u.get("emne")) { var ea = document.querySelector('#emnefilter a[data-emne="' + u.get("emne").replace(/[^a-z0-9-]/g, "") + '"]'); if (ea) { emne = ea.getAttribute("data-emne"); document.querySelectorAll("#emnefilter a").forEach(function (x) { x.toggleAttribute("aria-current", x === ea); }); } }
+  if (u.get("emne")) { var eb = document.querySelector('#emnefilter button[data-emne="' + u.get("emne").replace(/[^a-z0-9-]/g, "") + '"]'); if (eb) { emne = eb.getAttribute("data-emne"); vaelgEmne(eb); } }
   fetch(${JSON.stringify(data)}).then(function (r) { return r.json(); }).then(function (d) { data = d; vis(); })
     .catch(function () { antal.textContent = "Søgningen kunne ikke hentes lige nu."; });
   q.focus();

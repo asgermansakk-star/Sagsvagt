@@ -23,8 +23,6 @@
   .knap { margin-top: 18px; width: 100%; font: 700 1rem var(--sans); padding: 13px; border: 0; border-radius: 8px; background: var(--nat); color: var(--kalk); cursor: pointer; }
   .knap:disabled { opacity: .5; cursor: wait; }
   .besked { font: 600 .9375rem/1.5 var(--sans) !important; margin-top: 14px !important; }
-  .besked.fejl { color: var(--vin) !important; }
-  .besked.ok { color: #1d5b35 !important; }
   .styrke { height: 6px; border-radius: 8px; background: var(--kalk-lys); margin-top: 8px; overflow: hidden; }
   .styrke span { display: block; height: 100%; width: 0; background: var(--vin); transition: width .2s, background .2s; }
 </style>
@@ -82,7 +80,7 @@
 
   $("#k1").addEventListener("input", function () {
     var v = this.value, p = Math.min(100, v.length * 6 + (/[A-ZÆØÅ]/.test(v) ? 10 : 0) + (/\d/.test(v) ? 10 : 0) + (/\s/.test(v) ? 10 : 0));
-    $("#styrke").style.width = p + "%"; $("#styrke").style.background = p >= 80 ? "#1d5b35" : p >= 60 ? "#28377A" : "#8A2430";
+    $("#styrke").style.width = p + "%"; $("#styrke").style.background = p >= 80 ? "#28377A" : p >= 60 ? "#5D6BA8" : "#8A2430";
   });
   $("#saet").addEventListener("submit", function (e) {
     e.preventDefault();

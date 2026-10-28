@@ -55,8 +55,7 @@
     .status dd { margin-bottom:6px; }
   }
 </style>
-<script>try{var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;if(!sessionStorage.getItem("svKilde")&&(f||r&&r!==location.hostname))sessionStorage.setItem("svKilde",(f||r).slice(0,60))}catch(e){}</script>
-<script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1")fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:sessionStorage.getItem("svKilde")||""})})}catch(e){}</script>
+<script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1"){var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:(f||(r&&r!==location.hostname?r:"")).slice(0,60)})})}}catch(e){}</script>
 </head>
 <body>
 <p class="back"><a href="./">Tilbage til Sagsvagt</a></p>

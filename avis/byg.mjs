@@ -271,11 +271,11 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
 <link rel="stylesheet" href="${rod}assets/fonts/montserrat.css">
 <link rel="stylesheet" href="${rod}assets/avis.css">
 <link rel="stylesheet" href="${rod}assets/grafik.css">
-<script>try{var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;if(!sessionStorage.getItem("svKilde")&&(f||r&&r!==location.hostname))sessionStorage.setItem("svKilde",(f||r).slice(0,60))}catch(e){}</script>
-<script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1")fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:sessionStorage.getItem("svKilde")||""})})}catch(e){}</script>
+<script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1"){var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:(f||(r&&r!==location.hostname?r:"")).slice(0,60)})})}}catch(e){}</script>
 <link rel="alternate" type="application/rss+xml" title="Sagsvagt: København" href="${SITE_URL}feed/alle.xml">
 </head>
 <body>
+<a class="spring" href="#indhold">Spring til indholdet</a>
 ${LOGO_SYMBOL}
 <!-- Avishovedet i to etager (som en trykt avis): logo og udgave øverst, sektionerne centreret på en række for sig -->
 <header class="masthead to">
@@ -292,7 +292,7 @@ ${LOGO_SYMBOL}
   </div></nav>
 </header>
 ${tabBjaelke(rod, aktiv, kommune)}
-<main>
+<main id="indhold">
 ${indhold}
 </main>
 <footer class="foot">
@@ -684,14 +684,15 @@ async function main() {
       titel: `${lu ? `${navn}: Nyt fra lokaludvalget` : navn} – Sagsvagt`,
       beskrivelse: `Sager og beslutninger fra ${lu ? `${navn} Lokaludvalg` : `${navn} i Københavns Kommune`}, hentet fra de officielle dagsordener og referater.`,
       sti, rod: "../", aktiv: u === "Borgerrepræsentationen" ? "br" : lu ? "bydel" : "udvalg",
-      indhold: `<div class="wrap"><div class="listing"><h1>${esc(lu ? `${navn}` : navn)}</h1><p class="intro">${lu ? `Sager fra ${esc(navn)} Lokaludvalg i Københavns Kommune.` : `Sager fra ${esc(navn)} i Københavns Kommune.`}</p><p class="abonner"><a href="${kalenderLink(u, "../", H)}">Føj møderne til din kalender</a> · <a href="${feedLink(u, "../", H)}">RSS</a></p>${prUdvalg.get(u).map((s) => liste(s)).join("\n")}</div></div>`,
+      indhold: `<div class="wrap"><div class="listing"><h1>${esc(lu ? `${navn}` : navn)}</h1>${lu ? `<p class="intro">Lokaludvalg i Københavns Kommune.</p>` : ""}<p class="abonner"><a href="${kalenderLink(u, "../", H)}">Føj møderne til din kalender</a> · <a href="${feedLink(u, "../", H)}">RSS</a></p>${prUdvalg.get(u).map((s) => liste(s)).join("\n")}</div></div>`,
     }));
   }
-  const oversigt = (titel, intro, navne, mappe, aktiv) => side({
+  // visIntro: false, når introen kun gentager overskriften (den bruges stadig som beskrivelse til søgemaskiner)
+  const oversigt = (titel, intro, navne, mappe, aktiv, visIntro = true) => side({
     titel: `${titel} – Sagsvagt`, beskrivelse: intro, sti: `${mappe}/`, rod: "../", aktiv,
-    indhold: `<div class="wrap"><div class="listing"><h1>${titel}</h1><p class="intro">${intro}</p><ul class="chips">${navne.map((u) => `<li><a href="${slug(mappe === "bydel" ? bydel(u) : u)}.html">${esc(mappe === "bydel" ? bydel(u) : u)} <span style="opacity:.6">(${prUdvalg.get(u).length})</span></a></li>`).join("")}</ul></div></div>`,
+    indhold: `<div class="wrap"><div class="listing"><h1>${titel}</h1>${visIntro ? `<p class="intro">${intro}</p>` : ""}<ul class="chips">${navne.map((u) => `<li><a href="${slug(mappe === "bydel" ? bydel(u) : u)}.html">${esc(mappe === "bydel" ? bydel(u) : u)} <span style="opacity:.6">(${prUdvalg.get(u).length})</span></a></li>`).join("")}</ul></div></div>`,
   });
-  await writeFile(join(ROD, "udvalg", "index.html"), oversigt("Udvalg i Københavns Kommune", "Borgerrepræsentationen og de stående udvalg.", udvalg, "udvalg", "udvalg"));
+  await writeFile(join(ROD, "udvalg", "index.html"), oversigt("Udvalg i Københavns Kommune", "Borgerrepræsentationen og de stående udvalg.", udvalg, "udvalg", "udvalg", false));
   await writeFile(join(ROD, "bydel", "index.html"), oversigt("Bydele i København", "Hver bydel har et lokaludvalg, som behandler sager om byrum, trafik, puljer og høringer i lokalområdet.", lokal, "bydel", "bydel"));
 
   // Emnesider
@@ -701,13 +702,13 @@ async function main() {
     await writeFile(join(ROD, "emne", `${id}.html`), side({
       titel: `${e.navn} – Sagsvagt`, beskrivelse: `Sager om ${e.navn.toLowerCase()} fra byråd, udvalg og lokaludvalg i København.`,
       sti: `emne/${id}.html`, rod: "../", aktiv: "emne",
-      indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>${esc(e.navn)}</h1><p class="intro">${prEmne[id].length} sager fra Borgerrepræsentationen, udvalgene og lokaludvalgene i København, nyeste først.</p><p class="abonner"><a href="../feed/emne-${id}.xml">RSS for ${esc(e.navn.toLowerCase())}</a></p>${emneChips(id)}${prEmne[id].map((s) => liste(s, true)).join("\n")}</div></div>`,
+      indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>${esc(e.navn)}</h1><p class="intro">${prEmne[id].length} sager, nyeste først.</p><p class="abonner"><a href="../feed/emne-${id}.xml">RSS for ${esc(e.navn.toLowerCase())}</a></p>${emneChips(id)}${prEmne[id].map((s) => liste(s, true)).join("\n")}</div></div>`,
     }));
   }
   await writeFile(join(ROD, "emne", "index.html"), side({
     titel: "Emner – Sagsvagt", beskrivelse: "Find sagerne fra Københavns byråd, udvalg og lokaludvalg efter emne.", sti: "emne/", rod: "../", aktiv: "emne",
     // Som sektionerne i en avis: hvert emne med sine seneste sager
-    indhold: `<div class="wrap"><div class="emne-oversigt"><h1>Emner</h1><p class="intro">Sagerne fra Borgerrepræsentationen, udvalgene og lokaludvalgene, sorteret efter emne. En sag kan handle om flere emner.</p>
+    indhold: `<div class="wrap"><div class="emne-oversigt"><h1>Emner</h1><p class="intro">En sag kan handle om flere emner.</p>
 <div class="emne-gitter">${Object.entries(EMNER).map(([id, e]) => `<section aria-labelledby="em-${id}"><h2 id="em-${id}" class="rubrik"><a href="${id}.html" class="emne-navn">${esc(e.navn)}</a> <a href="${id}.html">${prEmne[id].length} sager</a></h2><ul class="notitser">${unikTitel(prEmne[id]).slice(0, 4).map((s) => notits(s, "../")).join("")}</ul></section>`).join("")}</div></div></div>`,
   }));
 
@@ -795,21 +796,23 @@ async function main() {
     titel: "Kort over sagerne i København – Sagsvagt", beskrivelse: "Se på kortet, hvad politikerne i København beslutter om din gade, skole og park.", sti: "kort.html", rod: "",
     indhold: `<div class="wrap">
   <h1 class="hl kort-h">Hvad sker der i din gade?</h1>
-  <p class="dek">${paaKort.length} sager fra de sidste fire måneder, der nævner en gade, en plads, en skole eller en park. Tryk på en nål for at læse sagen.</p>
+  <p class="dek">${paaKort.length} sager fra de sidste fire måneder, der nævner en gade, en plads, en skole eller en park. Tryk på en nål for at læse sagen, eller se dem som liste under kortet.</p>
   <div id="sagskort" class="sagskort" role="region" aria-label="Kort over sagerne"><div class="kort-start"><button class="btn" type="button" id="vis-kort">Vis kortet</button><p>Kortet hentes fra OpenStreetMap, når du trykker. Indtil da sender siden ingenting til andre.</p></div></div>
+  <p class="kort-noegle"><span class="kn-kommer">Kommer op</span><span class="kn-besluttet">Besluttet</span></p>
+  <details class="kort-liste"><summary>Se de ${paaKort.length} sager som liste</summary><ul>${[...paaKort].sort((a, b) => a.sted.localeCompare(b.sted, "da") || b.dato.localeCompare(a.dato)).map((s) => `<li><a href="${esc(s.url)}">${esc(s.titel)}</a><span>${esc(s.sted)} · ${esc(s.hvor)} · ${s.status === "kommer" ? "Kommer op" : "Besluttet"} ${datoTekst(s.dato)}</span></li>`).join("")}</ul></details>
   <p class="lille">Kort: © <a href="https://www.openstreetmap.org/copyright" rel="nofollow">OpenStreetMap</a>-bidragydere. Stedet er fundet ud fra sagens tekst og kan være upræcist.</p>
 </div>
 <link rel="stylesheet" href="assets/leaflet/leaflet.css">
 <script src="assets/leaflet/leaflet.js"></script>
 <script>/* Kortfliserne hentes først fra OpenStreetMap, når man trykker "Vis kortet" (ingen opslag hos andre uden et klik) */
-document.getElementById("vis-kort").addEventListener("click",function(){var f=document.getElementById("sagskort");f.innerHTML="";
+document.getElementById("vis-kort").addEventListener("click",function(){var f=document.getElementById("sagskort");f.innerHTML="";f.classList.add("henter");f.setAttribute("aria-busy","true");
 var k=L.map(f,{scrollWheelZoom:false}).setView([55.676,12.568],12);
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(k);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).on("load",function(){f.classList.remove("henter");f.removeAttribute("aria-busy")}).addTo(k);
 function e(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 fetch("assets/kort-sager.json").then(function(r){return r.json()}).then(function(l){var g=[];l.forEach(function(s){
 var m=L.circleMarker([s.lat,s.lon],{radius:8,weight:2,color:"#fff",fillColor:s.status==="kommer"?"#28377A":"#8A2430",fillOpacity:.9}).addTo(k);
 m.bindPopup('<p class="kort-pop-sted">'+e(s.sted)+" · "+e(s.hvor)+'</p><a href="'+e(s.url)+'">'+e(s.titel)+"</a>");g.push([s.lat,s.lon])});
-if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})})},{once:true});</script>`,
+if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})}).catch(function(){var p=document.createElement("p");p.className="besked fejl";p.textContent="Sagerne kunne ikke hentes til kortet lige nu. Prøv igen om lidt.";f.after(p)})},{once:true});</script>`,
   }));
   // Stilarterne til grafikken ligger i avis/stil/*.css og samles i assets/grafik.css
   const stilFiler = (await readdir(join(ROD, "avis", "stil"))).filter((f) => f.endsWith(".css")).sort();

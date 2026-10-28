@@ -20,12 +20,11 @@
   .knap.sek { background: transparent; color: var(--nat); box-shadow: inset 0 0 0 1.5px var(--nat); }
   .knap:disabled { opacity: .45; cursor: not-allowed; }
   .besked { font-weight: 600; font-size: .9375rem; margin: 0 0 14px; }
-  .besked.ok { color: #1d5b35; } .besked.fejl { color: var(--vin); }
   table.liste { width: 100%; border-collapse: collapse; font-size: .875rem; }
   table.liste th, table.liste td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
   table.liste thead th { font-size: .75rem; color: var(--muted); border-bottom: 2px solid var(--nat); white-space: nowrap; }
   .st { font-size: .72rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; background: var(--kalk-lys); white-space: nowrap; }
-  .st.aktiv { background: #cfe3d4; color: #1d5b35; } .st.inviteret { background: var(--lyng); color: var(--blaek); } .st.afmeldt { background: var(--rule); color: var(--muted); } .st.fejl { background: var(--rosen); color: var(--bordeaux); }
+  .st.aktiv { background: var(--ok-flade); color: var(--ok); } .st.inviteret { background: var(--lyng); color: var(--blaek); } .st.afmeldt { background: var(--rule); color: var(--muted); } .st.fejl { background: var(--rosen); color: var(--bordeaux); }
   .lille { color: var(--muted); font-size: .8125rem; }
   .mini-knap { font: 600 .78rem var(--sans); background: none; border: 0; color: var(--vin); cursor: pointer; padding: 0; }
   /* Mandagsmail: forhåndsvisning af én mail i en dialog */
@@ -33,7 +32,7 @@
   #mm-vis::backdrop { background: rgba(14,15,20,.5); }
   #mm-vis .mm-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 16px; font-size: .85rem; border-bottom: 1px solid var(--rule); }
   #mm-ramme { width: 100%; height: calc(100% - 48px); border: 0; background: #fff; }
-  .st.klar { background: var(--lyng); color: var(--blaek); } .st.sendt { background: #cfe3d4; color: #1d5b35; } .st.spring { background: var(--rule); color: var(--muted); }
+  .st.klar { background: var(--lyng); color: var(--blaek); } .st.sendt { background: var(--ok-flade); color: var(--ok); } .st.spring { background: var(--rule); color: var(--muted); }
   details.import { margin: 26px 0 0; border-top: 2px solid var(--nat); padding-top: 12px; }
   details.import summary { font-weight: 700; cursor: pointer; }
   details.import textarea { width: 100%; min-height: 140px; font: inherit; padding: 10px; border: 1.5px solid var(--rule); border-radius: 10px; background: var(--kalk-lys); margin: 10px 0; }

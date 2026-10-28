@@ -146,7 +146,7 @@ export async function bygHoeringer(sager, h, o = {}) {
     indhold: `<div class="wrap"><div class="listing hoeringer">
   <h1>Høringer</h1>
   <p class="intro">Når et forslag er i høring, kan alle sende kommentarer til kommunen, før det bliver endeligt vedtaget. Her er de sager, hvor referaterne nævner en høring. Selve høringerne og hvordan du svarer, finder du på <a href="${h.esc(web)}" rel="nofollow">${h.esc(web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>${kommune ? " under høringer" : ""}.</p>
-  ${sektion("Åbne høringer", "Med fristen fra sagen.", aabne, true)}
+  ${sektion("Åbne høringer", "", aabne, true)}
   ${sektion("Besluttet at sende i høring", "De seneste 60 dage. Fristen står i høringen hos kommunen.", sendes, false)}
   ${sektion("Skal behandles", "Forslag på kommende møder, som lægger op til en høring.", kommer, false)}
   ${sektion("Afsluttede høringer", "", lukket, true)}

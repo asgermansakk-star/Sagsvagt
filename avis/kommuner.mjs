@@ -70,7 +70,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
       await writeFile(join(ROD, sti), side({
         titel: `${u}, ${k.kommune} – Sagsvagt`, beskrivelse: `Sager og beslutninger fra ${u} i ${k.kommune}, hentet fra kommunens dagsordener og referater.`,
         sti, rod: "../../", aktiv: "k-udvalg", kommune: k,
-        indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="../${k.slug}.html">${esc(k.navn)}</a></p><h1>${esc(u)}</h1><p class="intro">Sager fra ${esc(u)} i ${esc(k.kommune)}, nyeste først.</p>${prUdvalg[u].sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr).map((s) => `<article>${kicker(s, "../../", false)}<h2 class="hl"><a href="../../${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 200))}</p>` : ""}</article>`).join("\n")}</div></div>`,
+        indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="../${k.slug}.html">${esc(k.navn)}</a></p><h1>${esc(u)}</h1>${prUdvalg[u].sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr).map((s) => `<article>${kicker(s, "../../", false)}<h2 class="hl"><a href="../../${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 200))}</p>` : ""}</article>`).join("\n")}</div></div>`,
       }));
     }
 

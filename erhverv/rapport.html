@@ -22,6 +22,7 @@ button,select,input{font:inherit;color:inherit}
 .btn{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:8px 14px;border-radius:8px;border:1.5px solid var(--rule);background:var(--kalk-lys);font:700 14px var(--sans);cursor:pointer;color:var(--nat);text-decoration:none}
 .btn:hover{border-color:var(--nat)}
 .top{color:var(--kalk);background:linear-gradient(90deg,rgba(14,15,20,.6),rgba(14,15,20,.15) 65%),linear-gradient(135deg,rgba(40,55,122,.55),rgba(14,15,20,.4) 55%,rgba(62,14,20,.6)),var(--natkort,none) center/cover no-repeat,var(--nat);padding:24px 0 36px}
+.top{position:relative}.top::after{content:"Kort: © OpenStreetMap-bidragydere";position:absolute;right:12px;bottom:6px;font:500 10px/1.2 var(--sans);color:rgba(230,223,211,.7);pointer-events:none}
 .brand{display:flex;justify-content:space-between;align-items:center;gap:12px;font:700 14px var(--sans)}
 .brand img{height:26px;display:block}.brand span{font:700 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--rosen)}
 .top .k{margin-top:36px;font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--rosen)}
@@ -47,8 +48,8 @@ main{padding:28px 0 64px}
 .signal{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding:20px 0;border-bottom:1px solid var(--rule)}
 .sb img{display:block;width:150px;aspect-ratio:16/10;object-fit:cover;border-radius:12px;background:var(--kalk-mork)}
 .kicker{font:700 11.5px/1.5 var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
-.kicker .kn{color:var(--nat)}.st{color:var(--rubin)}.st-ide,.st-forslag{color:var(--indigo)}.kom{color:var(--vin)}.ord{color:var(--vin)}
-.ny{display:inline-block;margin-right:6px;padding:0 7px;border-radius:999px;background:var(--rubin);color:var(--kalk);font:800 10.5px/1.7 var(--sans);letter-spacing:.06em;vertical-align:1px}
+.kicker .kn{color:var(--nat)}.st{color:var(--vin)}.st-ide,.st-forslag{color:var(--indigo)}.kom{color:var(--vin)}.ord{color:var(--vin)}
+.ny{display:inline-block;margin-right:6px;padding:0 7px;border-radius:999px;background:var(--vin);color:var(--kalk);font:800 10.5px/1.7 var(--sans);letter-spacing:.06em;vertical-align:1px}
 .ny.blaa{background:var(--indigo)}
 .signal h3{font:700 18px/1.3 var(--sans);margin-bottom:4px}.signal h3 a{color:var(--nat);text-decoration:none}.signal h3 a:hover{text-decoration:underline}
 .meta{font-size:13px;color:var(--muted)}.dek{font-size:14.5px;margin-top:8px}.vej{font-size:12.5px;color:var(--muted);margin-top:8px}
@@ -106,9 +107,27 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
   .kort{grid-template-columns:1fr}.kort dt{margin-top:4px}
   .filtre select{flex:1 1 calc(50% - 4px);min-width:0}.filtre input{flex:1 1 100%}.faner button{padding:7px 10px}}
 @media print{.vaerk,.vurder,.mere,.indstil{display:none!important}.top{-webkit-print-color-adjust:exact;print-color-adjust:exact}.signal,.udbud{break-inside:avoid}}
+  .spring { position: absolute; left: 16px; top: -64px; z-index: 60; padding: 10px 16px; border-radius: 8px; background: #E6DFD3; color: #0E0F14; font-weight: 600; text-decoration: none; }
+  .spring:focus { top: 12px; }
+/* Skelet af rapporten (top, tal og signaler), mens den hentes */
+.skelet{display:block;border-radius:8px;background:linear-gradient(90deg,var(--kalk-mork) 0 40%,var(--kalk-lys) 50%,var(--kalk-mork) 60% 100%) 0 0/250% 100%;animation:skelet 1.4s ease-in-out infinite}
+.skelet-moerk{background-image:linear-gradient(90deg,rgba(230,223,211,.14) 0 40%,rgba(230,223,211,.26) 50%,rgba(230,223,211,.14) 60% 100%)}
+@keyframes skelet{from{background-position:100% 0}to{background-position:0 0}}
+@media (prefers-reduced-motion:reduce){.skelet{animation:none}}
+.sk-tal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}.sk-signal{display:grid;grid-template-columns:150px minmax(0,1fr);gap:18px;padding:22px 0;border-bottom:1px solid var(--rule)}.sk-signal div{display:grid;gap:8px;align-content:start}
+@media (max-width:640px){.sk-tal{grid-template-columns:repeat(2,minmax(0,1fr))}.sk-signal{grid-template-columns:1fr}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 </style>
 </head>
 <body>
+<a class="spring" href="#rapport">Spring til indholdet</a>
+<div id="rapport-skelet" aria-busy="true"><p class="sr" role="status">Henter rapporten …</p>
+<header class="top" aria-hidden="true"><div class="wrap" style="display:grid;gap:12px">
+  <span class="skelet skelet-moerk" style="height:28px;width:150px"></span><span class="skelet skelet-moerk" style="height:36px;width:min(100%,460px)"></span><span class="skelet skelet-moerk" style="height:16px;width:min(100%,320px)"></span>
+  <div class="sk-tal"><span class="skelet skelet-moerk" style="height:64px"></span><span class="skelet skelet-moerk" style="height:64px"></span><span class="skelet skelet-moerk" style="height:64px"></span><span class="skelet skelet-moerk" style="height:64px"></span></div>
+</div></header>
+<div class="wrap" aria-hidden="true"><div class="sk-signal"><span class="skelet" style="aspect-ratio:16/10;border-radius:12px"></span><div><span class="skelet" style="height:12px;width:40%"></span><span class="skelet" style="height:22px"></span><span class="skelet" style="height:14px;width:80%"></span></div></div><div class="sk-signal"><span class="skelet" style="aspect-ratio:16/10;border-radius:12px"></span><div><span class="skelet" style="height:12px;width:40%"></span><span class="skelet" style="height:22px"></span><span class="skelet" style="height:14px;width:80%"></span></div></div><div class="sk-signal"><span class="skelet" style="aspect-ratio:16/10;border-radius:12px"></span><div><span class="skelet" style="height:12px;width:40%"></span><span class="skelet" style="height:22px"></span><span class="skelet" style="height:14px;width:80%"></span></div></div></div>
+</div>
 <div id="indhold" hidden>
 <header class="top"><div class="wrap">
   <div class="brand"><a href="../erhverv.html"><img src="../assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt"></a><span id="firma"></span></div>
@@ -145,7 +164,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     <input id="f-soeg" type="search" placeholder="Søg" aria-label="Søg">
   </div>
 </div></div>
-<main><div class="wrap">
+<main id="rapport"><div class="wrap">
   <p class="meta" id="vist" aria-live="polite"></p>
   <div id="liste"></div>
   <div class="mere"><button class="btn" type="button" id="vis-flere" hidden>Vis flere</button></div>
@@ -184,7 +203,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     return fetch("../api/erhverv.php", { method: "POST", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) })
       .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) throw new Error(j.fejl || "Rapporten kunne ikke hentes. Prøv igen om lidt."); return j; }); });
   };
-  function visFejl(t) { $("#fejl-tekst").textContent = t; $("#fejl").hidden = false; $("#indhold").hidden = true; }
+  function visFejl(t) { $("#fejl-tekst").textContent = t; $("#fejl").hidden = false; $("#indhold").hidden = true; $("#rapport-skelet").hidden = true; }
   if (!noegle) return visFejl("Linket mangler sin nøgle. Brug linket fra jeres mail, eller skriv til mansa@sagsvagt.dk.");
 
   var D, alle = [], udbud = [], vurd = {}, foelg = {}, pipe = {}, fane = "alle", vis = 40, nyGraense = "";
@@ -214,7 +233,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     $("#feedback").href = "mailto:mansa@sagsvagt.dk?subject=" + encodeURIComponent("Rapporten til " + k.firma);
     fyldFiltre();
     visMail(k);
-    $("#indhold").hidden = false;
+    $("#indhold").hidden = false; $("#rapport-skelet").hidden = true;
     tegn();
   }).catch(function (e) { visFejl(e.message); });
 
@@ -477,7 +496,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
       + (fr.length ? '<ul class="frister">' + fr.slice(0, 14).map(function (x) { return "<li><b>" + dato(x[0]) + "</b> · " + x[1] + ': <a href="' + esc(x[3]) + '"' + (x[4] ? ' target="_blank" rel="noopener"' : "") + ">" + esc(x[2]) + "</a></li>"; }).join("") + "</ul>" : '<p class="meta">Ingen frister de næste 45 dage.</p>') + "</section>"
       + '<section><h2>Hvor er pengene</h2><p class="lille">Beløb i signalerne pr. kommune' + (boliger ? ", i alt " + Math.round(boliger).toLocaleString("da-DK") + " boliger nævnt" : "") + ".</p>"
       + (ko.length ? bjaelker(ko, ko[0][1]) : '<p class="meta">Ingen beløb endnu.</p>') + "</section>"
-      + '<section><h2>Pengene pr. type</h2><p class="lille">Samme beløb fordelt på signalernes typer.</p>' + (ty.length ? bjaelker(ty.slice(0, 8), ty[0][1]) : "") + "</section>"
+      + '<section><h2>Pengene pr. type</h2>' + (ty.length ? bjaelker(ty.slice(0, 8), ty[0][1]) : "") + "</section>"
       + "</div>";
   }
 

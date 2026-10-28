@@ -58,9 +58,9 @@ export function fotoSideIndhold(esc) {
 </div>
 <script>(function(){var q=new URLSearchParams(location.search),f=document.getElementById("foto-form"),s=document.getElementById("f-svar");
 document.getElementById("f-sag").value=q.get("sag")||"";if(q.get("sted"))document.getElementById("f-sted").value=q.get("sted");
-f.addEventListener("submit",function(e){e.preventDefault();if(!f.reportValidity())return;var b=f.querySelector("button");b.disabled=true;s.textContent="Sender …";
+f.addEventListener("submit",function(e){e.preventDefault();if(!f.reportValidity())return;var b=f.querySelector("button");b.disabled=true;s.className="lille";s.textContent="Sender …";
 fetch("api/foto.php",{method:"POST",credentials:"same-origin",headers:{"X-Sagsvagt":"api"},body:new FormData(f)}).then(function(r){return r.json().then(function(j){if(!r.ok)throw new Error(j.fejl||"Det gik ikke");})})
-.then(function(){f.reset();s.textContent="Tak! Vi kigger på billedet og skriver, hvis vi bruger det.";}).catch(function(e){s.textContent=e.message;}).finally(function(){b.disabled=false;});});})();</script>`;
+.then(function(){f.reset();s.className="besked ok";s.textContent="Tak! Vi kigger på billedet og skriver, hvis vi bruger det.";}).catch(function(e){s.className="besked fejl";s.textContent=e.message;}).finally(function(){b.disabled=false;});});})();</script>`;
 }
 
 // ---------- Luftfoto (Klimadatastyrelsen) ----------

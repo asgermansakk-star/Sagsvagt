@@ -163,6 +163,7 @@ function rapportHtml({ titel, undertitel, segment, kommuner, alle, eksempel }) {
 *{box-sizing:border-box}body{margin:0;background:var(--kalk);color:var(--nat);font:500 16px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
 h1,h2,h3,p{margin:0}a{color:var(--indigo);text-underline-offset:3px}.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
 .top{color:var(--kalk);background:linear-gradient(90deg,rgba(14,15,20,.55),rgba(14,15,20,.15) 65%),linear-gradient(135deg,rgba(40,55,122,.55),rgba(14,15,20,.4) 55%,rgba(62,14,20,.6)),url("${esc(natkort)}") center/cover no-repeat,var(--nat);padding:28px 0 40px}
+.top{position:relative}.top::after{content:"Kort: © OpenStreetMap-bidragydere";position:absolute;right:12px;bottom:6px;font:500 10px/1.2 var(--sans);color:rgba(230,223,211,.7);pointer-events:none}
 .brand{display:flex;justify-content:space-between;align-items:center;font:700 14px var(--sans);opacity:.9}.brand span{font:700 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--rosen)}
 .top .k{margin-top:40px;font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--rosen)}
 .top h1{font:800 clamp(30px,1.4rem + 2.6vw,48px)/1.06 var(--sans);letter-spacing:-.02em;margin:8px 0 12px}

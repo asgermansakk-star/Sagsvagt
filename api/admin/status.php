@@ -13,7 +13,7 @@ if (($d['handling'] ?? '') === 'slet') {
     try { $db->prepare('DELETE FROM push_abonnementer WHERE abonnent_id = ?')->execute([$id]); } catch (PDOException $e) {}
     $db->prepare('DELETE FROM abonnenter WHERE id = ? AND email <> ?')->execute([$id, $admin['email']]);
 } elseif (($d['handling'] ?? '') === 'afmeld') {
-    $db->prepare("UPDATE abonnenter SET status = 'afmeldt', adgangskode = NULL WHERE id = ? AND email <> ?")->execute([$id, $admin['email']]);
+    $db->prepare("UPDATE abonnenter SET status = 'afmeldt', adgangskode = NULL, mail_afmeldt = COALESCE(mail_afmeldt, ?) WHERE id = ? AND email <> ?")->execute([nu(), $id, $admin['email']]); // api/_sletning.php sletter 30 dage efter
     $db->prepare('UPDATE tokens SET brugt = ? WHERE abonnent_id = ? AND brugt IS NULL')->execute([nu(), $id]);
     try { $db->prepare('DELETE FROM push_abonnementer WHERE abonnent_id = ?')->execute([$id]); } catch (PDOException $e) {}
 } elseif (($d['handling'] ?? '') === 'ret_email') {

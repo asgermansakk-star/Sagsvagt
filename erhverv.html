@@ -19,7 +19,13 @@
     --moedet: radial-gradient(80% 110% at 0% 20%, var(--skifer) 0%, var(--indigo) 26%, var(--blaek) 54%, transparent 76%),
               radial-gradient(75% 100% at 100% 100%, var(--rubin) 0%, var(--vin) 26%, var(--bordeaux) 54%, transparent 78%), var(--nat);
     --sans: "Montserrat", system-ui, sans-serif; --r-knap: 8px; --r-felt: 12px; --r-kort: 16px;
+    /* Statusfarver som på resten af Sagsvagt (assets/avis.css) */
+    --fejl: var(--vin); --fejl-flade: #F3DEDB; --ok: var(--indigo); --ok-flade: #DCDFEE; --felt-kant: #7E7A76;
   }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }
+  [hidden] { display: none !important; }
+  .spring { position: absolute; left: 16px; top: -64px; z-index: 60; padding: 10px 16px; border-radius: var(--r-knap); background: var(--kalk); color: var(--nat); font-weight: 600; }
+  .spring:focus { top: 12px; }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; scroll-padding-top: 80px; }
   body { margin: 0; background: var(--kalk); color: var(--nat); font: 500 1.0625rem/1.55 var(--sans); -webkit-font-smoothing: antialiased; }
@@ -27,7 +33,7 @@
   a { color: var(--indigo); text-underline-offset: 3px; }
   :focus-visible { outline: 3px solid var(--skifer); outline-offset: 3px; }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-  .kicker { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rubin); margin-bottom: 10px; }
+  .kicker { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--vin); margin-bottom: 10px; } /* Rubin er for svag som lille tekst på kalk */
   .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 22px; border-radius: var(--r-knap); border: 0; cursor: pointer; font: 700 1rem var(--sans); text-decoration: none; background: var(--nat); color: var(--kalk); }
   .btn:hover { background: var(--grafit); }
   .btn-lys { background: var(--kalk); color: var(--nat); }
@@ -85,6 +91,9 @@
   .pro p { color: var(--muted); font-size: .9375rem; max-width: 44em; }
   .pro b { color: var(--nat); }
 
+  /* Natkortene er lavet af OpenStreetMap-fliser, så kilden står i hjørnet (ODbL) */
+  .top, .pilot { position: relative; }
+  .top::after, .pilot::after { content: "Kort: © OpenStreetMap-bidragydere"; position: absolute; right: 12px; bottom: 6px; font: 500 10px/1.2 var(--sans); color: rgba(230,223,211,.7); pointer-events: none; }
   /* Pilot */
   .pilot { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: center; padding: 40px 44px; border-radius: 20px; color: var(--kalk);
     background: linear-gradient(135deg, rgba(40,55,122,.6), rgba(14,15,20,.55) 55%, rgba(62,14,20,.65)), url("assets/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet); }
@@ -111,10 +120,15 @@
   form { display: grid; gap: 14px; }
   .to { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   label { display: grid; gap: 6px; font-size: .875rem; font-weight: 700; }
-  input, select, textarea { width: 100%; min-height: 48px; padding: 12px 14px; border: 1.5px solid var(--rule); border-radius: var(--r-felt); background: var(--kalk-lys); font: 500 1rem var(--sans); color: var(--nat); }
+  input, select, textarea { width: 100%; min-height: 48px; padding: 12px 14px; border: 1.5px solid var(--felt-kant); border-radius: var(--r-felt); background: var(--kalk-lys); font: 500 1rem var(--sans); color: var(--nat); }
   textarea { min-height: 110px; }
-  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--indigo); }
-  .fejl { color: var(--vin); font-weight: 700; font-size: .9375rem; }
+  input:focus, select:focus, textarea:focus { outline: 3px solid var(--skifer); outline-offset: 2px; border-color: var(--indigo); }
+  .fejl, .ok { display: flex; gap: 10px; align-items: flex-start; padding: 10px 14px; border-radius: var(--r-knap); font-weight: 700; font-size: .9375rem; }
+  .fejl { color: var(--fejl); background: var(--fejl-flade); }
+  .ok { color: var(--ok); background: var(--ok-flade); }
+  .fejl::before, .ok::before { flex: none; width: 1.2em; text-align: center; }
+  .fejl::before { content: "!"; }
+  .ok::before { content: "✓"; }
   .fod { font-size: .8125rem; color: var(--muted); }
 
   .funk { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
@@ -122,10 +136,9 @@
   .funk b { display: block; color: var(--nat); font-size: 1.0625rem; margin-bottom: 4px; }
   .komvalg { display: block; }
   .valgte { display: flex; flex-wrap: wrap; gap: 6px; min-height: 0; margin-top: -6px; }
-  .valgte button { border: 0; border-radius: 999px; padding: 4px 10px; background: var(--nat); color: var(--kalk); font: 700 .8125rem var(--sans); cursor: pointer; }
+  .valgte button { border: 0; border-radius: 999px; min-height: 44px; padding: 4px 14px; background: var(--nat); color: var(--kalk); font: 700 .8125rem var(--sans); cursor: pointer; }
   label.tjek { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; font-size: .875rem; }
   label.tjek input { width: auto; min-height: 0; margin-top: 4px; }
-  .ok { color: #1d5b35; font-weight: 700; font-size: .9375rem; }
   footer { background: var(--nat); color: rgba(230,223,211,.72); font-size: .875rem; }
   footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding-top: 32px; padding-bottom: 36px; }
   footer img { height: 28px; }
@@ -158,6 +171,7 @@
 </style>
 </head>
 <body>
+<a class="spring" href="#indhold">Spring til indholdet</a>
 <header class="top">
   <div class="wrap">
     <nav class="bar" aria-label="Hovedmenu">
@@ -185,7 +199,7 @@
   </div>
 </header>
 
-<main>
+<main id="indhold">
   <section class="afsnit" id="produkter">
     <div class="wrap">
       <p class="kicker">Produkter</p>
@@ -355,13 +369,14 @@
     e.preventDefault();
     const fejl = e.target.querySelector(".fejl"), ok = e.target.querySelector(".ok"), knap = e.target.querySelector("button[type=submit]");
     fejl.hidden = ok.hidden = true;
+    knap.disabled = true; knap.textContent = "Sender …";
     tilfoej();
     fetch("api/erhverv-proeve.php", { method: "POST", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" },
       body: JSON.stringify({ firma: $p("p-firma").value, navn: $p("p-navn").value, email: $p("p-email").value, produkt: $p("p-produkt").value,
         kommuner: [...valgte.keys()], ord: $p("p-ord").value, samtykke: $p("p-samtykke").checked }) })
       .then((r) => r.json().catch(() => ({})).then((j) => { if (!r.ok) throw new Error(j.fejl || "Det lykkedes ikke. Prøv igen om lidt."); }))
-      .then(() => { ok.textContent = `Tjek din mail (${$p("p-email").value.trim()}), og tryk på knappen for at starte prøven.`; ok.hidden = false; knap.disabled = true; })
-      .catch((err) => { fejl.textContent = err.message; fejl.hidden = false; });
+      .then(() => { ok.textContent = `Tjek din mail (${$p("p-email").value.trim()}), og tryk på knappen for at starte prøven.`; ok.hidden = false; knap.textContent = "Sendt"; })
+      .catch((err) => { fejl.textContent = err.message; fejl.hidden = false; knap.disabled = false; knap.textContent = "Start prøven"; });
   });
   // Pilotknappen vælger piloten i formularen
   document.querySelectorAll("[data-produkt]").forEach((a) => a.addEventListener("click", () => { document.getElementById("b-produkt").value = a.dataset.produkt; }));

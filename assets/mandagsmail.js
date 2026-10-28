@@ -97,7 +97,7 @@ const mailTop = ({ emne, preheader, uge, idag, logo, kommune = "" }) => { const 
   <p style="margin:36px 0 0;font:700 28px/1.05 ${SANS};letter-spacing:.04em;text-transform:uppercase;color:${C.kalk};">Mandagsmailen</p>
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:14px 0 12px;"><tr><td width="48" height="3" bgcolor="${C.rubin}" style="background:${C.rubin};font-size:0;line-height:0;">&nbsp;</td></tr></table>
   <p style="margin:0;font:500 15px/1.45 ${SANS};color:${C.lyng};">Uge ${uge}<br>${esc(stor(dato(idag, { weekday: "long", day: "numeric", month: "long" })))}</p>
-</td></tr>
+${kommune ? `  <p style="margin:18px 0 0;font:500 10px/1.2 ${SANS};color:${C.lyng};">Kort: © OpenStreetMap-bidragydere</p>\n` : ""}</td></tr>
 `; };
 const mailBund = (modtager, afmeld = "") => `<tr><td style="padding:34px 28px 28px;font:12px/1.6 ${SANS};color:${C.muted};">
   <img src="${MAIL}symbol.png" width="23" height="28" alt="" style="display:block;border:0;margin:0 0 14px;">
