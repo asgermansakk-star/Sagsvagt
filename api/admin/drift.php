@@ -39,7 +39,9 @@ svar(200, [
         'seneste_fejl' => array_filter($ind, fn($k) => str_starts_with($k, 'fejl:'), ARRAY_FILTER_USE_KEY)],
     'mandagsmail' => ['denne' => $uge('mandagsmail', $denne), 'naeste' => $uge('mandagsmail', $naeste)],
     'erhverv' => ['denne' => $uge('erhverv', $denne), 'naeste' => $uge('erhverv', $naeste),
-        'kunder' => (int)($en("SELECT COUNT(*) n FROM erhverv_kunder WHERE status IN ('proeve', 'aktiv')")['n'] ?? 0)],
+        'kunder' => (int)($en("SELECT COUNT(*) n FROM erhverv_kunder WHERE status IN ('proeve', 'aktiv')")['n'] ?? 0),
+        // Bookinger fra salgssiden de sidste 7 dage, så alarmen kan give besked om hver ny (firma og produkt, ingen adresser)
+        'henvendelser' => $rk('SELECT id, firma, produkt, oprettet FROM erhverv_henvendelser WHERE oprettet >= ? ORDER BY id', [gmdate('Y-m-d\TH:i:s\Z', time() - 7 * 86400)])],
     'filer' => ['sager' => $alder('assets/sager.json'), 'aabne' => $alder('kommune/aabne.json'), 'erhverv_signaler' => $alder('api/_erhverv-signaler.json'), 'udbud' => $alder('data/udbud.json')],
     'besoeg' => ['seneste_dag' => $besoeg['d'] ?? null, 'i_dag' => (int)($besoeg['i_dag'] ?? 0)],
 ]);

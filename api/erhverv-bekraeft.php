@@ -1,6 +1,6 @@
 <?php
 // Bekræftelseslinket i mailen fra den selvbetjente prøve (?id=…&t=…, signeret). GET viser en side med én knap, så
-// sikkerhedsscannere, der åbner links i mails, ikke starter prøven; POST starter prøven på 14 dage, viser rapportlinket,
+// sikkerhedsscannere, der åbner links i mails, ikke starter prøven; POST starter prøven på 30 dage, viser rapportlinket,
 // sender det på mail og giver redaktionen besked.
 declare(strict_types=1);
 require __DIR__ . '/_bootstrap.php';
@@ -28,4 +28,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     @send_mail(TILMELDINGER_TIL, "Erhverv: ny prøve fra {$k['firma']}", '<pre style="font:14px/1.5 Arial,sans-serif">' . htmlspecialchars($t, ENT_QUOTES, 'UTF-8') . '</pre>', $t, (string)$k['email']);
     vis_side('Prøven er startet', "Rapporten for {$k['firma']} er klar og kører til og med " . mm_dato($slut) . ". Vi har også sendt linket på mail.", $aabn($k));
 }
-vis_side('Start prøven?', "Start 14 dages gratis prøve på Sagsvagt Erhverv for {$k['firma']}.", knap_form('Start prøven'));
+vis_side('Start prøven?', "Start " . ER_PROEVE_DAGE . " dages gratis prøve på Sagsvagt Erhverv for {$k['firma']}.", knap_form('Start prøven'));

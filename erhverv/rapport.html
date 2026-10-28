@@ -228,7 +228,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
     $("#under").textContent = (navne.length > 3 ? navne.join(", ").replace(/, ([^,]*)$/, " og $1") + ". " : "")
       + "Sager fra byråd og udvalg de seneste " + m.dage + " dage og kommende møder" + (k.ord.length ? ", alt med jeres søgeord (" + k.ord.join(", ") + ")" : "") + " og kommunernes EU-udbud."
       + (m.genereret ? " Opdateret " + dato(m.genereret.slice(0, 10)) + "." : "");
-    if (k.status === "proeve") { $("#pilot").hidden = false; $("#pilot").textContent = "Pilot" + (k.proeve_slut ? " til " + dato(k.proeve_slut) : ""); }
+    if (k.status === "proeve") { $("#pilot").hidden = false; $("#pilot").textContent = "Gratis prøve" + (k.proeve_slut ? " til " + dato(k.proeve_slut) : ""); }
     if (k.kommuner[0]) document.querySelector(".top").style.setProperty("--natkort", 'url("../assets/natkort/' + k.kommuner[0].slug + '.jpg")');
     $("#feedback").href = "mailto:mansa@sagsvagt.dk?subject=" + encodeURIComponent("Rapporten til " + k.firma);
     fyldFiltre();

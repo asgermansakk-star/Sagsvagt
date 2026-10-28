@@ -1,6 +1,6 @@
 <?php
 // Selvbetjent prøve på Sagsvagt Erhverv fra salgssiden (erhverv.html). Opretter kunden med status 'venter' og sender en mail
-// med et bekræftelseslink (api/erhverv-bekraeft.php); først når adressen er bekræftet, starter prøven på 14 dage, og kunden
+// med et bekræftelseslink (api/erhverv-bekraeft.php); først når adressen er bekræftet, starter prøven på 30 dage, og kunden
 // får sit rapportlink. Mailen sendes kun, fordi personen selv har bedt om prøven (som tilmeldingen til avisen).
 // Samme svar, uanset om adressen findes i forvejen, så ingen kan teste, hvem der er kunde.
 declare(strict_types=1);
@@ -34,7 +34,7 @@ if ($k['status'] === 'venter') {
     $id = (int)$k['id']; $v = (int)$k['version'];
     $link = $K['site_url'] . "api/erhverv-bekraeft.php?id=$id&t=" . signatur("erhverv-bekraeft:$id:$v");
     [$html, $tekst] = mail_skabelon('Bekræft jeres prøve på Sagsvagt Erhverv',
-        "Tryk på knappen for at starte 14 dages gratis prøve for {$k['firma']}. Så får I med det samme et link til jeres rapport, og hver mandag kl. 7 en mail med ugens nye signaler og udbud.\n\nPrøven stopper af sig selv. Der kommer ingen regning.",
+        "Tryk på knappen for at starte " . ER_PROEVE_DAGE . " dages gratis prøve for {$k['firma']}. Så får I med det samme et link til jeres rapport, og hver mandag kl. 7 en mail med ugens nye signaler og udbud.\n\nPrøven stopper af sig selv. Der kommer ingen regning.",
         'Start prøven', $link, "Du får denne mail, fordi $email har bedt om en prøve på sagsvagt.dk/erhverv.html. Har du ikke det, så gør ingenting.");
     send_mail($email, 'Bekræft jeres prøve på Sagsvagt Erhverv', $html, $tekst);
 } else {

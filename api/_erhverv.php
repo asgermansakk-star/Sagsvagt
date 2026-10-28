@@ -21,7 +21,7 @@ const ER_BRANCHER = ['entreprenør', 'håndværker', 'rådgiver', 'arkitekt', 'd
 const ER_PIPELINE = ['undersoeger' => 'Undersøger', 'kontakt' => 'I kontakt', 'byder' => 'Byder', 'vundet' => 'Vundet', 'tabt' => 'Tabt', 'droppet' => 'Droppet'];
 // Kun piloter og aktive kunder kan åbne rapporten og få mail; en pilot kun til og med sin slutdato (admin kan forlænge den)
 function er_kan(): string { $idag = (new DateTimeImmutable('now', new DateTimeZone('Europe/Copenhagen')))->format('Y-m-d'); return "(status = 'aktiv' OR (status = 'proeve' AND (proeve_slut IS NULL OR proeve_slut >= '$idag')))"; }
-const ER_PROEVE_DAGE = 14;
+const ER_PROEVE_DAGE = 30;
 
 function er_tabeller(PDO $db): void {
     $id = $db->getAttribute(PDO::ATTR_DRIVER_NAME) === 'sqlite' ? 'INTEGER PRIMARY KEY AUTOINCREMENT' : 'INT AUTO_INCREMENT PRIMARY KEY';
@@ -49,6 +49,9 @@ function er_tabeller(PDO $db): void {
         PRIMARY KEY (kunde_id, uge))');
     $db->exec("CREATE TABLE IF NOT EXISTS erhverv_koe (kunde_id INT NOT NULL, uge VARCHAR(10) NOT NULL, emne VARCHAR(255) NOT NULL, html $tekst NOT NULL,
         tekst $tekst NOT NULL, antal INT NOT NULL DEFAULT 0, send_efter VARCHAR(25) NOT NULL, forsoeg INT NOT NULL DEFAULT 0, PRIMARY KEY (kunde_id, uge))");
+    // "Book en gennemgang" fra salgssiden (api/erhverv-book.php)
+    $db->exec("CREATE TABLE IF NOT EXISTS erhverv_henvendelser (id $id, firma VARCHAR(120) NOT NULL, navn VARCHAR(100) NOT NULL DEFAULT '',
+        email VARCHAR(254) NOT NULL, tlf VARCHAR(30) NOT NULL DEFAULT '', produkt VARCHAR(40) NOT NULL, besked $tekst NULL, oprettet VARCHAR(25) NOT NULL)");
     $db->exec('CREATE TABLE IF NOT EXISTS erhverv_uger (uge VARCHAR(10) NOT NULL PRIMARY KEY, planlagt VARCHAR(25) NOT NULL, antal INT NOT NULL DEFAULT 0, stoppet VARCHAR(25) NULL)');
 }
 

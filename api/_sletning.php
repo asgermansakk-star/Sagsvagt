@@ -26,6 +26,8 @@ function slet_maaske_koer(): int {
     if (substr((string)$q->fetchColumn(), 0, 10) === substr(nu(), 0, 10)) return 0; // kørt i dag
     // IP-adresser fra begraens() (tabellen forsoeg) ryddes også, når der kommer nye forsøg; her for en sikkerheds skyld
     $db->prepare('DELETE FROM forsoeg WHERE tid < ?')->execute([time() - 86400]);
+    // Bookinger fra erhverv.html slettes efter et år (privatliv.html); tabellen findes først, når den er brugt
+    try { $db->prepare('DELETE FROM erhverv_henvendelser WHERE oprettet < ?')->execute([gmdate('Y-m-d\TH:i:s\Z', time() - 365 * 86400)]); } catch (PDOException $e) {}
     $db->exec("UPDATE abonnenter SET mail_afmeldt = '" . nu() . "' WHERE status = 'afmeldt' AND mail_afmeldt IS NULL");
     $graense = gmdate('Y-m-d\TH:i:s\Z', time() - SLET_EFTER_DAGE * 86400);
     $q = $db->prepare("SELECT id, medlem FROM abonnenter WHERE status = 'afmeldt' AND mail_afmeldt < ?"); $q->execute([$graense]);
