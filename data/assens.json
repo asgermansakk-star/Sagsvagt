@@ -303,6 +303,38 @@
    "dato": "2026-10-28",
    "punkter": 9,
    "parser": 3
+  },
+  "956783a3-862e-4cfc-b50c-3d291ce4c1ac": {
+   "lastmod": "2026-10-28",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-10-28",
+   "punkter": 3,
+   "parser": 3
+  },
+  "13af68a8-c2a4-4237-a33b-e8e0f6699b11": {
+   "lastmod": "2026-10-28",
+   "type": "dagsorden",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-02",
+   "punkter": 7,
+   "parser": 3
+  },
+  "bd8cdefd-11a3-49d4-b74c-1ba10835260e": {
+   "lastmod": "2026-10-28",
+   "type": "dagsorden",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "punkter": 12,
+   "parser": 3
+  },
+  "8409bada-d674-4193-ab61-ad6639628bd0": {
+   "lastmod": "2026-10-28",
+   "type": "dagsorden",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-28",
+   "punkter": 9,
+   "parser": 3
   }
  },
  "sager": {
@@ -8610,12 +8642,17 @@
    "kommune": "Assens",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsorden.assens.dk/vis?id=9cf1cc89-01ec-4030-8a77-0bb133077150",
-   "hentet": "2026-10-23T18:36:25.416Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=956783a3-862e-4cfc-b50c-3d291ce4c1ac",
+   "hentet": "2026-10-28T19:44:48.159Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen godkendt."
+    }
+   ],
    "bilag": []
   },
   "assens-2026-10-28-oekonomiudvalget-3": {
@@ -8623,12 +8660,17 @@
    "kommune": "Assens",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsorden.assens.dk/vis?id=9cf1cc89-01ec-4030-8a77-0bb133077150",
-   "hentet": "2026-10-23T18:36:25.416Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=956783a3-862e-4cfc-b50c-3d291ce4c1ac",
+   "hentet": "2026-10-28T19:44:48.159Z",
    "titel": "Orientering",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Borgmester Søren Steen Andersen er udpeget af Erhvervsministeren til at sidde i bestyrelsen\nfor Danmarks Erhvervsfremme.\nOrientering om at lokale aviser, hvori Assens Kommune indrykker ”Kommunen informerer”\nfremadrettet kræver, at borgerne accepterer ja tak til reklamer for modtagelse.\nOrientering om opfølgning på møde med Assens Fjernvarme."
+    }
+   ],
    "bilag": []
   },
   "assens-2026-10-28-oekonomiudvalget-4": {
@@ -8636,12 +8678,17 @@
    "kommune": "Assens",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsorden.assens.dk/vis?id=9cf1cc89-01ec-4030-8a77-0bb133077150",
-   "hentet": "2026-10-23T18:36:25.416Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=956783a3-862e-4cfc-b50c-3d291ce4c1ac",
+   "hentet": "2026-10-28T19:44:48.159Z",
    "titel": "Oplæsning af referat",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Afbud: Lone Akselsen, Pia Offer Madsen\n\nOplæsning af referat"
+    }
+   ],
    "bilag": []
   },
   "assens-2026-10-28-byraadet-1": {
@@ -8651,8 +8698,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -8669,8 +8716,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Ansøgning om kommunegaranti Assens Fjernvarme Produktion A/S",
    "afsnit": [
     {
@@ -8699,8 +8746,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Etablering af § 60-fællesskab til server- og netværksdrift i Syddanmark",
    "afsnit": [
     {
@@ -8725,8 +8772,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Omdannelse af Nordre Havnevej - indledende undersøgelse af silo",
    "afsnit": [
     {
@@ -8755,8 +8802,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Endelig vedtagelse af Planstrategi 2026",
    "afsnit": [
     {
@@ -8785,8 +8832,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Godkendelse af kvalitetsstandard for ledsageordning",
    "afsnit": [
     {
@@ -8815,8 +8862,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Orientering",
    "afsnit": [
     {
@@ -8833,8 +8880,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Spørgetid",
    "afsnit": [
     {
@@ -8851,8 +8898,8 @@
    "dato": "2026-10-28",
    "type": "dagsorden",
    "nr": 9,
-   "kilde": "https://dagsorden.assens.dk/vis?id=3aaa22a4-12ad-4ef9-83d2-bff958657ec6",
-   "hentet": "2026-10-28T10:43:59.107Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=8409bada-d674-4193-ab61-ad6639628bd0",
+   "hentet": "2026-10-28T19:45:12.318Z",
    "titel": "Oplæsning af referat",
    "afsnit": [
     {
@@ -8874,11 +8921,451 @@
    "titel": "Oplæsning af referat",
    "afsnit": [],
    "bilag": []
+  },
+  "assens-2026-11-02-sundheds-og-aeldreudvalget-1": {
+   "id": "assens-2026-11-02-sundheds-og-aeldreudvalget-1",
+   "kommune": "Assens",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsorden.assens.dk/vis?id=13af68a8-c2a4-4237-a33b-e8e0f6699b11",
+   "hentet": "2026-10-28T19:44:56.468Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "assens-2026-11-02-sundheds-og-aeldreudvalget-2": {
+   "id": "assens-2026-11-02-sundheds-og-aeldreudvalget-2",
+   "kommune": "Assens",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsorden.assens.dk/vis?id=13af68a8-c2a4-4237-a33b-e8e0f6699b11",
+   "hentet": "2026-10-28T19:44:56.468Z",
+   "titel": "3. totalopfølgning 2026 - Sundheds- og Ældreudvalget",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at 3. totalopfølgning 2026 tages til efterretning, og at der indstilles\nfølgende:\nDer søges på drift om en negativ tillægsbevilling på 110.000 kr. til Sundhedspleje og\nforebyggelse i forbindelse med fordeling af budget vedrørende Kræftplan V. Dette\nmodsvares af en tilsvarende tillægsbevilling under Børn- og Skoleudvalget.\n\nBeslutningstema\nDer gennemføres tre totalopfølgninger i 2026. 3. totalopfølgning foretages pr. 30. september\n2026, og forelægges her til politisk behandling."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Totalopfølgningen omfatter drift og anlæg.\nDRIFT\nSamlet set viser 3. totalopfølgning for Sundheds- og Ældreudvalget, at der forventes et\nmerforbrug på 2.169.000 kr.\nDer forventes mindreforbrug på 4.112.000 vedrørende Sundhed, Forebyggelse og Ældre,\nmindreforbrug på 1.047.000 kr. vedrørende sikringsydelser og mindreforbrug på 429.000 kr.\nvedrørende socialområdet. Der forventes omvendt merforbrug på 7.757.000 kr. vedrørende\nÆldre og Rehabilitering.\nDet samlede merforbrug på områder med overførselsadgang under Sundheds- og\nÆldreudvalget udgør 4.620.000 kr.\nFor områder uden overførselsadgang forventes et mindreforbrug på 1.925.000 kr., og for\noverførselsudgifter forventes et mindreforbrug på 526.000 kr.\nDet samlede resultat for 3. totalopfølgning på tværs af udvalg, viser et mindreforbrug til drift på\n75.602.000 kr. En del af mindreforbruget er disponeret i forbindelse med budgetlægningen for\n2027-2030, og på baggrund heraf søges 25.241.000 kr. tilført kassebeholdningen ved 3.\ntotalopfølgning. Der er områder med merforbrug, men i lyset af det samlede mindreforbrug på\ndrift, hvoraf en større del vedrører overførselsudgifter og områder uden overførselsadgang,\nsamt et intakt budgetværn, er der på nuværende tidspunkt ikke behov for at gennemføre\nudgiftsreducerende tiltag, for at finansiere områder med merforbrug.\nANLÆG\nDer forventes et mindreforbrug på 9.650.000 kr. i forhold til det korrigerede budget. Det\nforventede forbrug for året er på 6.148.000 kr., svarende til 38,92 % af det korrigerede budget\npå 15.798.000 kr. Der forventes overført et mindreforbrug på 9.650.000 kr. til 2027.\nTotalopfølgningen for drift og anlæg er yderligere beskrevet i vedlagte bilag.\n\nLovgrundlag\nStyrelseslovens §40."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "DRIFT\n\nForventet\nregnskab\n\nKorr.\nbudget\n\nOprindeligt\nbudget\n\nAfvigelse\ntil korr.\nbudget\n\nTillægsbevilling\nsøges\n\nOverførsel til\n\nSÆU - med\noverførselsadgang\n\nSÆU - uden\noverførselsadgang\n\nOverførselsudgifter\n\nForventet\nregnskab\n\nKorr.\nbudget\n\nSÆU drift i alt\nANLÆG\n\nOprindeligt\nbudget\n\nAfvigelse\ntil korr.\nbudget\n\nTillægsbevilling\nsøges\n\nOverførsel til\n\nSundhed og ældre\n\nSÆU anlæg i alt\n\nBeslutningskompetence\nByrådet."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-sundheds-og-aeldreudvalget-4": {
+   "id": "assens-2026-11-02-sundheds-og-aeldreudvalget-4",
+   "kommune": "Assens",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsorden.assens.dk/vis?id=13af68a8-c2a4-4237-a33b-e8e0f6699b11",
+   "hentet": "2026-10-28T19:44:56.468Z",
+   "titel": "Status vedr. faste læger på botilbud",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Sundhed, Ældre og Beskæftigelse indstiller, at orienteringen om faste læger på\nbotilbud tages til efterretning.\n\nBeslutningstema\nOrientering om faste læger på længerevarende botilbud efter serviceloven og botilbud efter\nalmenboligloven med støtte efter serviceloven.\nFaste læger på botilbud er et supplement til sundhedstjek til beboere på botilbud."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Faste læger på botilbud trådte i kraft i 2025.\nFaste læger på botilbud har til opgave at varetage sundhedsfaglig rådgivning, undervisning af\nbotilbuddets personalegruppe, samt samarbejdsmøder ift. sundhedsfaglige problemstillinger af\ngenerisk karakter. Formålet er at medvirke til at reducere omfanget af uhensigtsmæssige\nindlæggelser og genindlæggelser blandt en målgruppe, som har høj forekomst af somatiske\nproblemstillinger og multisygdom.\nOrdningen omfatter, at den faste læge yder sundhedsfaglig rådgivning og vejledning til\npersonalet på botilbuddet i op til 3 timer pr. måned.\nDet er de enkelte botilbud, der indgår aftaler med lægerne om at varetage funktionen.\nAlle Assens Kommunes botilbud har en fast læge, bortset fra et mindre botilbud, hvor det ikke\nværet muligt at finde et lægehus med den nødvendige kapacitet til at varetage funktionen.\nRegion Syddanmark har netop givet dispensation til, at der kan indgås aftale med en\npraktiserende læge, som også er botilbudslæge et andet sted, og det forventes, at der inden\nfor kort tid kan indgås en aftale herom.\nFaste læger på botilbud understøtter Assens Kommunes sundhedspolitik, som bl.a. sætter\nfokus på at reducere ulighed i sundhed. Faste læger på botilbud er desuden i\noverensstemmelse Sundheds- og Ældreudvalgets fokusområde ”Rehabilitering som\nparadigme”."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Udgifter til honorar afholdes af regionen.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-sundheds-og-aeldreudvalget-7": {
+   "id": "assens-2026-11-02-sundheds-og-aeldreudvalget-7",
+   "kommune": "Assens",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsorden.assens.dk/vis?id=13af68a8-c2a4-4237-a33b-e8e0f6699b11",
+   "hentet": "2026-10-28T19:44:56.468Z",
+   "titel": "Dialogmøder med Ældrerådet i 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Sundhed, Ældre og Beskæftigelse indstiller, at datoer for afholdelse af\ndialogmøder med Ældrerådet i 2027 besluttes.\n\nBeslutningstema\nSamarbejde med Ældrerådet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formand for Sundheds- og Ældreudvalget har aftalt med formand for Ældrerådet, at\nÆldrerådet inviteres til to dialogmøder om året.\nAdministrationens forslag er, at afvikle møderne i 2027 i forlængelse af udvalgsmøderne i\ntidsrummet kl. 13.00-14.00.\nMøder i Sundheds- og Ældreudvalget i 2027:\n\n11. januar\n1. februar\n1. marts\n5. april\n3. maj\n7. juni\n16. august\n6. september\n4. oktober\n1. november\n29.november.\n\nDialogmøder med Ældrerådet understøtter temaet: ”Det gode liv skaber vi sammen” i Vision\n2030 samt fokusområdet: ”Frivillighed og lokalsamfund” i Sundheds- og Ældreudvalgets\n”Strategi og fokusområder”.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-sundheds-og-aeldreudvalget-8": {
+   "id": "assens-2026-11-02-sundheds-og-aeldreudvalget-8",
+   "kommune": "Assens",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsorden.assens.dk/vis?id=13af68a8-c2a4-4237-a33b-e8e0f6699b11",
+   "hentet": "2026-10-28T19:44:56.468Z",
+   "titel": "Vejen til hverdagslivet - Peer Partnerskabet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Sundhed, Ældre og Beskæftigelse indstiller, at udvalget træffer beslutning om, at\nder ikke indgås aftale med Peer Partnerskabet om indsatsen ”Vejen til hverdagslivet”.\n\nBeslutningstema\nSamarbejdsaftale om indsatsen ”Vejen til hverdagslivet”."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Beskæftigelsesudvalget og Sundheds- og Ældreudvalget traf på møder den 3. og 4. august\n2026 beslutning om, at Assens Kommune skulle indgå aftale med Peer Partnerskabet om\nindsatsen ”Vejen til hverdagslivet”.\nBeslutningen blev truffet på baggrund af en model, der på daværende tidspunkt var støttet af\nden Sociale Investeringsfond.\nPeer Partnerskabet har efterfølgende oplyst, at den Sociale Investeringsfond har trukket sig fra\nsamarbejdet, hvorfor forudsætningerne for den oprindelige beslutning ikke længere er til stede.\nPeer Partnerskabet har fremsendt alternativ finansieringsmodel, der lægger udgiften direkte på\nkommunen.\nAdministrationen indstiller derfor til beslutning, at der ikke arbejdes videre med initiativet.\nSagen behandles ligeledes i Beskæftigelsesudvalget.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-sundheds-og-aeldreudvalget-9": {
+   "id": "assens-2026-11-02-sundheds-og-aeldreudvalget-9",
+   "kommune": "Assens",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsorden.assens.dk/vis?id=13af68a8-c2a4-4237-a33b-e8e0f6699b11",
+   "hentet": "2026-10-28T19:44:56.468Z",
+   "titel": "Orientering",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Status på temaaften den 11. november 2026\n2. Status på organisering og chefrekruttering\n3. Orientering om takster i Det Gode Måltid\n4. Politisk workshop om rammeaftalen 2027-2028 for det specialiserede socialområde og\nspecialundervisningsområdet\nTilmelding til sekretær for Sundhed, Ældre og Beskæftigelse senest mandag 14. december"
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-sundheds-og-aeldreudvalget-10": {
+   "id": "assens-2026-11-02-sundheds-og-aeldreudvalget-10",
+   "kommune": "Assens",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsorden.assens.dk/vis?id=13af68a8-c2a4-4237-a33b-e8e0f6699b11",
+   "hentet": "2026-10-28T19:44:56.468Z",
+   "titel": "Oplæsning af referat",
+   "afsnit": [],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-1": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-1",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, Land og Kultur indstiller, at orientering om Assens Bibliotekernes\nhandleplaner tages til efterretning.\n\nBeslutningstema\nKulturstrategien skal danne grundlag for konkrete handlingsplaner, driftsaftaler med\nkulturinstitutioner, kriterier for puljer mv samt for samspil med Sundhedspolitik, Børne- og\nUngepolitik, Turismestrategi, Klimastrategi og andre strategier og politikker, hvor det er muligt\nDe kommunale institutioner på kulturområdet har derfor udarbejdet handleplaner, som\nbeskriver særlige indsatser for 2027 og frem."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Handleplanerne for Assens Bibliotek tager særligt i afsnittet i kulturstrategien vedrørende ”Livet\ni lokalsamfundene og byerne, kultur- og litteraturformidling”\nFor at øge kunstens lokale og folkelige forankring og understøtte det frivillige engagement er\ndet et indsatsområde for strategien at gøre kunst og kultur lettere tilgængelige for endnu flere\nborgere, ved at bringe kulturlivet ud til steder, hvor livet leves, og folk har deres daglige gang.\nDet kan være i byrum, på arbejdspladser eller på institutioner af alle slags, eksempelvis\ndagtilbud, skoler, bosteder, aktivitetscentre og plejecentre, og det kan omfatte alle typer af\nkultur, fra gadeteaterforestillinger og kunstperformances til fællessang, højtlæsning, bogcafeer\nog udstillinger. Kulturlivet indgår som en naturlig del af bylivet og bidrager sammen med andre,\nfolkelige og forretningsmæssige, aktiviteter til at skabe attraktive by- og landsbysamfund.\nAssens Bibliotekerne er en aktiv medspiller i at skabe attraktive by- og landsbysamfund, blandt\nandet gennem samarbejde med andre områder, eksempelvis børne- og ungeområdet, og\ngennem aktiviteter, der spejler samfundsmæssige udfordringer som klima, sundhed og\ndigitalisering.\nDe seks fysiske biblioteker har hver sit præg, båret af lokalområdets særlige kvaliteter og\nkarakteristika, og fungerer som lokalt baserede kulturelle mødesteder. De igangsætter selv\naktiviteter, indgår i samarbejder med andre kulturaktører, institutioner og foreninger, eller giver\nblot rum for fællesskaber i lokalområdet.\nBibliotekets kerneopgave er læsekultur og litteratur. Læsning er som basis for læring og\nudvikling en grundkompetence i vores samfund. Samtidig styrker læsning og litteratur det\nmellemmenneskelige samvær og fællesskabet gennem at skabe forståelse for, at verden kan\nse helt anderledes ud i andres øjne end i ens egne. Ved fremme af læsekulturen bygges et\nfundament for dannelse og oplysning, som grundlag for at borgerne kan uddanne sig, udvikle\nsig og aktivt indgå i fællesskabet og samfundet. I Assens Kommune sker det lokalt i de enkelte\nbysamfund.\nDer gives en orientering om handleplanerne i mødet. Handleplaner for 2027 er:\n\n1. Styrkelse af læsekultur\n2. Fremme potentialet for kulturelt mødested på bibliotekerne\n3. Partnerskaber\nHandleplanerne for 2026 er:\n\n1. Samarbejder om børn og unge: skolebørns læsekultur\n2. Udviklingstiltag med fokus på sundhed: Læsevenner og Litterært apotek\n3. Bibliotek og den digitale tidsalder – AI og nye arrangementer m.m.\n4. Bibliotek og lokal forankring – borgerinddragelse og udvikling i Glamsbjerg\n5. Styrket kommunikationsindsats\n\nLovgrundlag\nBiblioteksloven"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Ingen\n\nBeslutningskompetence\nKultur- og Fritidsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-3": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-3",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "3. totalopfølgning 2026 - Kultur- og Fritidsudvalget",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at 3. totalopfølgning 2026 tages til efterretning.\n\nBeslutningstema\nDer gennemføres tre totalopfølgninger i 2026. 3. totalopfølgning foretages pr. 30. september\n2026, og forelægges her til politisk behandling."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Totalopfølgningen omfatter drift og anlæg.\nDRIFT\nSamlet set viser 3. totalopfølgning for Kultur- og Fritidsudvalget, at der forventes et\nmindreforbrug på 8.516.000 kr.\nDer forventes mindreforbrug på 4.503.000 kr. vedrørende kultur og turisme, mindreforbrug på\n3.170.000 kr. vedrørende fritidsområdet, mindreforbrug på 659.000 kr. vedrørende\nlokalsamfund og aktivt medborgerskab samt mindreforbrug på 184.000 kr. vedrørende frivilligt\nsocialt arbejde.\nDet samlede mindreforbrug på områder med overførselsadgang under Kultur- og\nFritidsudvalget udgør 7.969.000 kr., mens det forventede mindreforbrug på områder uden\noverførselsadgang udgør 547.000 kr.\nDet samlede resultat for 3. totalopfølgning på tværs af udvalg, viser et mindreforbrug til drift på\n75.602.000 kr. En del af mindreforbruget er disponeret i forbindelse med budgetlægningen for\n2027-2030, og på baggrund heraf søges 25.241.000 kr. tilført kassebeholdningen ved 3.\ntotalopfølgning. Der er områder med merforbrug, men i lyset af det samlede mindreforbrug på\ndrift, hvoraf en større del vedrører overførselsudgifter og områder uden overførselsadgang,\nsamt et intakt budgetværn, er der på nuværende tidspunkt ikke behov for at gennemføre\nudgiftsreducerende tiltag, for at finansiere områder med merforbrug.\nANLÆG\nDer forventes et mindreforbrug på 7.862.000 kr. i forhold til det korrigerede budget. Det\nforventede forbrug for året er på 14.754.000 kr., hvilket svarer til 65,24 % af det korrigerede\nbudget på 22.616.000 kr. Der forventes overført et mindreforbrug på 7.862.000 kr. til 2027.\nTotalopfølgningen for drift og anlæg er yderligere beskrevet i vedlagte bilag.\n\nLovgrundlag\nStyrelseslovens §40."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "DRIFT\n\nForventet\nregnskab\n\nKorr.\nbudget\n\nOprindeligt\nbudget\n\nAfvigelse\ntil korr.\nbudget\n\nTillægsbevilling\nsøges\n\nOverførsel til\n\nKFU - med\noverførselsadgang\n\nKFU - uden\noverførselsadgang\n\nOverførselsudgifter\n\nOprindeligt\nbudget\n\nAfvigelse\ntil korr.\nbudget\n\nKFU drift i alt\nANLÆG\n\nForventet\nregnskab\n\nKulturelle forhold\n\nKorr.\nbudget\n\nTillægsbevilling\nsøges\n\nOverførsel til\n\nFritidsområdet\n\nNatur og Turisme\n\nKFU anlæg i alt\n\nBeslutningskompetence\nKultur- og Fritidsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-4": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-4",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Kulturregion Fyn - indsatsområder",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, land og Kultur indstiller, at indsatsområderne prioriteres på følgende måde:\n2. Kultur, sundhed, trivsel og fællesskaber\n4. Kultur, natur og landskaber\n3. Kulturarv, lokale fællesskaber og stedbaserede kulturmiljøer\n1. Børn, unge, dannelse og deltagelse\n\nBeslutningstema\nKulturregion Fyn er et samarbejde mellem ni fynske kommuner, der arbejder for at understøtte\ntværkommunale kulturprojekter og styrke kvaliteten og tilgængeligheden af de fynske\nkulturtilbud.\nKulturregion Fyns politiske styregruppe skal beslutte hvilke kulturindsatser der skal\niværksættes i en kommende flerårig aftale mellem kommunerne gældende i perioden 20272029 på baggrund af input fra de lokale drøftelser i medlemskommunerne."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kulturregion Fyns arbejde er bygget op om flerårige indsatser. Der skal nu udvælges\nindsatsområder for de kommende tre år. I den forbindelse er der indhentet ønsker fra\nmedlemskommuner og kulturaktører, og på baggrund af drøftelser i den politiske styregruppe\ner der opstillet fire forslag til indsatsområder.\nUdvalget skal prioritere indsatsområderne ved at angive en rækkefølge for de fire forslag til\nindsatsområder. Desuden kan udvalget drøfte de indholdselementer under hvert\nindsatsområde, som er mest relevante at arbejde med i en tværkommunal kontekst, samt\nudpege de målgrupper, udvalget ønsker primært skal have gavn af indsatsområderne.\nForslagene kan vurderes ud fra Assens Kommunes kulturstrategi. I kulturstrategien står der\nikke samme direkte målgruppearbejde omkring unge, som det er beskrevet i kulturregionens\nforslag. I stedet kunne dette indgå som en tværgående målgruppe i alle kulturregionens\nindsatser. De øvrige tre forslag er alle relevante i forhold til kulturstrategien, hvor dog særligt\nsundhed/trivsel (2) taler ind i kulturstrategiens og kulturpolitikkens overordnede tema, mens\nnatur/landskaber (4) er et selvstændigt indsatsområde i kulturstrategien og kulturarv/lokale\nfællesskaber (3) indgår i flere indsatsområder og tværgående temaer. På den baggrund kunne\nen rangering være forslag 2, 4 og 3, mens 1 gøres tværgående.\nForslag til de fire indsatsområder:\n1. Børn, unge, dannelse og deltagelse\nForslagene fra medlemskommuner og kulturaktører peger på en bred interesse for at styrke\nbørn og unges adgang til kunst og kultur samt deres muligheder for selv at deltage aktivt i\nkulturlivet. Forslagene spænder fra kulturel dannelse og kreative fællesskaber til\ntalentudvikling, vækstlag og unges rolle som medskabere af kultur. Samtidig er der fokus på at\nskabe mere lige adgang til kulturelle oplevelser og på at styrke sammenhængen mellem\n\nkulturinstitutioner, skoler, fritidsliv og unge kulturmiljøer.\n2. Kultur, sundhed, trivsel og fællesskaber\nForslagene fra medlemskommuner og kulturaktører peger på et ønske om at bygge videre på\nde erfaringer, der er opnået gennem den nuværende kulturaftale. Flere aktører ser et\npotentiale for at gå fra udvikling og afprøvning af kulturbaserede trivselsindsatser til øget\nudbredelse, forankring og stærkere samarbejde med social- og sundhedsområdet. Samtidig\nfremhæves kulturens rolle som medspiller i arbejdet med trivsel, fællesskab, mental sundhed\nog livskvalitet for borgere i forskellige livssituationer.\n3. Kulturarv, lokale fællesskaber og stedbaserede kulturmiljøer\nIndsatsområdet forener kulturarv, lokale fællesskaber og stedbaserede kulturmiljøer for at\nudvikle nye måder at skabe lokale mødesteder, fælles fortællinger og stærke kulturmiljøer på\ntværs af Fyn og øsamfundene. Forslagene fra medlemskommuner og kulturaktører peger på et\nønske om at bringe lokale identiteter, fynske særkender, dialekter og kulturmiljøer i spil som\nafsæt for formidling, borgerinddragelse og levende lokalsamfund.\n4. Kultur, natur og landskaber\nForslagene fra medlemskommuner og kulturaktører peger på et ønske om at bringe kultur og\nnatur tættere sammen og bygge videre på erfaringerne fra Kulturregion Fyns indsatsområde\nKultur i Natur. Natur, kystlandskaber og ø-liv fremhæves som særlige fynske styrkepositioner\nog som afsæt for kulturelle oplevelser, fælles fortællinger og nye samarbejder på tværs af\nkultur-, natur- og turismeområdet. Indsatsområdet taler samtidig ind i nationale og\ninternationale strømninger med et voksende fokus på klima, biodiversitet, naturforståelse og\nlysten til at dyrke naturen.\nIndsatsområderne, deres indhold og målgrupper er yderligere beskrevet i bilaget.\nPå baggrund af udvalgets prioriteringer vil administrationen identificere centrale aktører i\nAssens Kommune, som kan være med til at løfte indsatsområderne i det videre arbejde.\n\nLovgrundlag\nKommunalfuldmagten"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Ingen\n\nBeslutningskompetence\nKultur- og Fritidsudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-5": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-5",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Godkendelse af driftsaftaler på kulturområdet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, Land og Kultur indstiller, at driftsaftaler for perioden 2027-2030 mellem\nAssens Kommune og følgende kulturinstitutioner godkendes:\n\nDanmarks Fugle Zoo\nFrøbjerg Festspil\nMuseum Vestfyn\nMusik På Industrien\nSangkraft Assens\nTerrariet\nVestfyns Teater\n\nBeslutningstema\nI forlængelse af den nuværende kulturpolitiks vedtagelse i 2020 blev der i 2021 etableret\ndriftsaftaler med de otte ikke-kommunale kulturinstitutioner og -foreninger i Assens Kommune,\nder modtager de største kommunale tilskud. De syv ovennævnte aktørers driftsaftaler udløber\nved udgangen af 2026. Derfor er der i sommeren og efteråret 2026 gennemført dialogforløb\nmed aktørerne, hvilket har resulteret i en række forslag til aftaler, som nu forelægges Kultur- og\nFritidsudvalget til godkendelse.\nTobaksgaarden har siden 2017 haft 4-årige driftsaftaler, der følger perioden for den regionale\nspillestedsaftale. Tobaksgaardens nuværende driftsaftale udløber først ved udgangen af 2028\nog er derfor ikke med i denne runde."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "En grundlæggende ambition i Assens Kommunes Kulturpolitik er at udvikle en særlig\nsamarbejdskultur - både mellem kulturaktørerne indbyrdes og mellem aktørerne og Assens\nKommune. Driftsaftaler er et vigtigt element i samarbejdet mellem kulturinstitutionerne og\nAssens Kommune, idet de blandt andet tydeliggør såvel forventninger som konkrete aftaler og\nskaber rammer for en løbende dialog.\nDe nye forslag til driftsaftaler er - ligesom de tidligere – bygget op over en fælles skabelon.\nDe væsentligste fornyelser ligger i afsnit 3. Assens Kommunes mål og forventninger i\naftaleperioden og afsnit 4. Særlige fokusområder for aktør, idet disse to afsnit er gjort mere\nfremadrettede end i de tidligere aftaler.\nSærlige opmærksomhedspunkter angående de enkelte aftaler:\nMuseum Vestfyn\nTilskudsbeløbet er forhøjet med 200.000 kr. som er hentet fra den nu nedlagte pulje Kultur til\n\nalle børn og unge, og som er øremærket til skoletjeneste\nTillægsaftalen om drift af stadsarkiv forlænges med et år, til den 31. december 2027, med\nsamme økonomi som den nuværende.\nMusik På Industrien:\nTilskudsbeløbet er forhøjet med 40.000 kr., hentet fra Kulturpuljen og øremærket til festivalen\nMusik Midt I Aarup, som afholdes af Musik På Industrien, og som i en længere årrække hvert\når har fået tilskud fra Kulturpuljen. At gøre tilskuddet til en del af driftsaftalen er en del af den\nforenkling, der blev vedtaget i forbindelse med udvalgssag 7. september 2026 om Kulturpuljer\nog kulturtilskud fra 2027 og frem, jævnfør økonomibilaget i den pågældende sag.\nVestfyns Teater\nBeløb til teater på skolerne er indskrevet i aftalen. Midlerne kommer fra den nu nedlagte pulje\nKultur til alle børn og unge samt Assens Kommunes børneteaterkonto.\nAftaleudkastene er godkendt af kulturaktørerne og er vedlagt som bilag.\nFlere af aktørerne har udtrykt ønsker om forøgelse af deres tilskud. Følgende har sat\nspecifikke beløb på ønskerne:\nDanmarks Fugle Zoo: 200.000 kr. (fra 359.783 kr. til 559.783 kr.)\nFrøbjerg Festspil: 35.000 kr. (fra 115.000 kr. til 150.000 kr.)\n\nAktørerne er blevet orienteret om, at de har mulighed for at fremsende budgetønsker til næste\nårs budgetforhandlinger vedrørende 2028 og frem.\n\nLovgrundlag\nKommunalfuldmagten."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Driftsaftalerne er forhandlet med udgangspunkt i den nuværende økonomiske ramme, hvilket\naktørerne er blevet gjort opmærksomme på.\nSom led i den forenkling, der på udvalgsmødet i september 2026 blev gennemført i forbindelse\nmed omstruktureringen af kulturpuljer og -tilskud, er alle den enkelte aktørs tilskud nu\nindskrevet i aktørens driftsaftale. Det betyder, at tilskud, der tidligere skulle ansøges om, nu er\ngjort permanente. Til gengæld kan kulturaktører med driftsaftaler ikke længere være\nhovedansøgere i projekter til Kulturpuljen, jævnfør retningslinjerne for puljen.\n\nBeslutningskompetence\nKultur- og Fritidsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-6": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-6",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Renoveringspulje til udendørs idræts- og fritidsanlæg 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, Land og Kultur indstiller, at;\nmidlerne til Renoveringspulje til udendørs idræts- og fritidsanlæg 2027 frigives\nvedligehold og reparation af kunstværker ejet af Assens Kommune i det offentlige rum\npå arealer, hvor andre ikke har driftsansvaret, tilføjes puljen.\n\nBeslutningstema\nI anlægsbudgettet for 2027 er der som de foregående år afsat en økonomisk ramme til\nudførelse af opgaver på udendørs faciliteter, der anvendes til idræt- og fritidsformål og som\nikke kan afholdes indenfor driftsbudgettet til disse anlæg."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ifølge kriterierne for puljen anvendes Renoveringspulje til udendørs idræts- og fritidsanlæg til\nblandt andet;\nOpsætning af nye og renovering af eksisterende boldhegn\nNye lysanlæg og renovering af eksisterende lysanlæg.\nStørre renoveringsopgaver af belægning på kunstgræsbane og tennisbaner\nDræningsopgaver på fodboldbaner i kommunen\nFaciliteter til selvorganiserede aktiviteter, f.eks. udendørs motionsmuligheder,\nskaterområder mv.\n\nI praksis vurderes og prioriteres ønsker og behov i et tæt samarbejde mellem Kultur og\nSekretariat, Entreprenørgården, Vej og Trafik og foreningerne.\nI 2026 er blandet andet følgende opgaver udført:\nBeskæring af grønne hegn/træer m.m. omkring fodboldbaner.\nDræn Vissenbjerg Bred Motorklub\nLys mellem kampbane og træningsbaner Assens FC\nLysanlæg udskiftning til LED pærer Jordløse Boldklub\nRenovering af trapper til kommunalt ejet omklædningsrum Glamsbjerg IF\nLysanlæg udskiftning af pærer BK Vestfyn\nDræn Tommerup BK\nNedtagning af demonterede lysmaster Tommerup BK\nNedtagning af lysanlæg Aarup Boldklub\nHerudover planlægges med renovering af boldhegn i Brylle og projekt vedr.\n\nseparatkloakering i Aarup\n\nRundt omkring i Assens Kommune er der en del kunstværker i det offentlige rum.\nKunstværkernes fysiske placering har betydning for, hvem der har ansvaret for dem. Ved\nkunstværker placeret på havneområdet, påhviler ansvaret Havnen. Ved kunstværker placeret\nved offentlige bygninger påhviler disse bygningsejerne. Kommunalt ejede kunstværker placeret\npå øvrige offentlige, men ikke private arealer, er der pt. ingen aftale omkring.\nDet foreslås, at Renoveringspulje fremover også kan anvendes til vedligehold og reparation af\nkommunalt ejede kunstværker i det offentlige rum på arealer, hvor andre ikke har\ndriftsansvaret. Der indhentes ekstern bistand til denne opgave, da Entreprenørgården\nvurderer, at opgaverne ligger udenfor deres kompetenceområde.\n\nLovgrundlag\nKommunalfuldmagten."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "I 2026 er der afsat 750.000 kr. til puljen. Dertil kommer overførte midler fra 2025, således at\nder i alt er 1.252.000 kr. til rådighed i 2026. Der forventes et forbrug på 900.000 kr.\nI 2027 er der afsat 750.000 kr. til puljen.\n\nBeslutningskompetence\nKultur- og Fritidsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-8": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-8",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Ekstraordinært tilskud til selvejende haller 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, Land og Kultur indstiller, at:\n\nGlamsbjerg Fritidscenter modtager ekstraordinært tilskud på 327.000 kr.\nDet ekstraordinære tilskud finansieres indenfor rammerne af det eksisterende budget\n2027 til hallerne.\n\nBeslutningstema\nByrådet godkendte den 27. august 2025 at tilskuddet til de selvejende haller fremover\nberegnes ud fra gældende haltilskudsmodel uden fastlåsning på 2019-niveau for Glamsbjerg\nFritidscenter og Ebberup Hallerne. Samt at der indenfor budget 2026 til hallerne skulle\nreserveres en ramme til eventuelt likviditetstilskud. Ebberup Hallerne ansøgte om og blev\nbevilget 80.000 kr. Glamsbjerg Fritidscenter ansøgte om og blev bevilget 327.000 kr.\nIndenfor budget 2027 reserveres der ligeledes en økonomisk ramme til eventuelt\nlikviditetstilskud til de selvejende haller, der ansøger om dette."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I Assens Kommune modtager de 5 selvejende haller; Brylle Fritidscenter, Ebberup Hallerne,\nGlamsbjerg Fritidscenter, Salbrovadhallen og Aarup Fritidscenter et grundtilskud, et\naktivitetstilskud for forenings- og skoletimer samt evt. et finanstilskud.\nAlle selvejende haller har modtaget beregning af tilskud for 2027 og er informeret om\nmuligheden for at søge ekstraordinært tilskud, såfremt de forventer likviditetsudfordringer i\nAdministrationen har været i dialog med de selvejende haller omkring dette. Ebberup Hallerne\nmeddeler, at de ikke vil søge i år.\nDer er modtaget ansøgning fra Glamsbjerg Fritidscenter. De søger om 327.000 kr.\nAdministrationen har fået deres ansøgning uddybet. Se bilag. Økonomi har endvidere\ngennemgået likviditetsbudgettet og bekræfter, at det er det korrekte tilskudsbeløb, der er anført\nsamt at likviditetsbudgettet er udarbejdet uden det ekstraordinære tilskud indregnet.\nGlamsbjerg Fritidscenters ansøgning på 327.000 kr. kan imødekommes indenfor budget 2027,\nda der er et beregnet restbeløb på 627.299 kr. Der vil med det ekstraordinære tilskud stadig\nvære økonomisk råderum til regulering af aktivitetstimer for 2026 samt det ikke-disponerede\nbeløb til Glamsbjerg Friluftsbad.\nDet ekstraordinære tilskud for 2027 udbetales 1/1-2027.\n\nLovgrundlag\nKommunalfuldmagten."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Beslutningskompetence\nKultur- og Fritidsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-9": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-9",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Status og tilskud til Frivilligcenter Assens for at implementere Socialkompas.dk",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, Land og Kultur indstiller, at status for brug af Socialkompas.dk i Assens\nKommune tages til efterretning.\n\nBeslutningstema\nUdvalget tager status om brug af Socialkompas.dk til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På udvalgets møde den 7. september 2026 præsenterede Frivilligcenter Assens en status for\ncentrets arbejde med at udbrede og implementere Socialkompas.dk i Assens Kommune.\nUdvalget tog orienteringen til efterretning, og bad frivilligcentret om opfølgning på brugen af\nplatformen til nærværende møde.\nFrivilligcentret har udarbejdet en opfølgning, som fremgår af bilag 1. Nedenfor fremhæves\ncentrale pointer fra bilaget.\n\nPr. 1. oktober 2026 indeholder Socialkompas 118 lokale tilbud og 146 landsdækkende\ntilbud. I 2026 er der oprettet 82 nye tilbud, og platformen har haft 2.119 besøg og 2.462\nvisninger af tilbud.\nDer gives eksempler på, hvordan borgere via Socialkompas.dk er blevet hjulpet videre til\nfællesskaber eller som frivillige.\nFrivilligcentret vurderer, at implementeringen og udbredelsen af Socialkompas.dk hidtil er\ngået godt og at centret fremadrettet kan overtage ansvaret for den løbende vedligeholdelse\nsamt udbredelse til kommunale medarbejdere og institutioner.\nEn styrket og varig finansiering vurderes nødvendig for at øge kendskabet til\nSocialkompas.dk, udvide antallet af tilbud og sikre fortsat anvendelse blandt borgere,\nforeninger og fagpersoner.\nSocialkompas.dk bidrager til et samlet overblik over tilbud og fællesskaber, hvilket er\nsærligt relevant i lyset af øget fokus på samarbejdet mellem kommune og civilsamfund,\neksempelvis i forbindelse med Ældrereformen, Sundhedsreformen, Ungeløftet og\nberedskabsområdet.\n\nAdministrationen har hidtil samarbejdet med frivilligcentret om Socialkompas.dk, men\nfremadrettet vil alle opgaver vedrørende platformen samles hos frivilligcentret. Formålet er at\nstyrke indsatsen og skabe større sammenhæng i arbejdet med platformen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Assens Kommune har ikke udgifter til drift af domænet. Siden Socialkompas.dk blev etableret i\nAssens Kommune i 2024, har Frivilligcenter Assens modtaget midler øremærket centrets\narbejde med at udbrede og implementere platformen. Centret har i 2025 og 2026 modtaget\n30.000 kr. årligt.\nBeslutning om tilskud til Frivilligcenter Assens øremærket deres arbejde med Socialkompas,\n\ntræffes i sagen om indgåelse af ny samarbejdsaftale mellem Assens Kommune og\nFrivilligcenter Assens. Sagen er på dagsordenen til nærværende møde.\n\nBeslutningskompetence\nKultur- og Fritidsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-10": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-10",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Indgåelse af ny samarbejdsaftale mellem Assens Kommune og Frivilligcenter Assens",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, Land og Kultur indstiller, at:\nny samarbejdsaftale mellem Assens Kommune og Frivilligcenter Assens godkendes.\ntilskud til særlige indsatser beskrevet i ny samarbejdsaftale besluttes.\n\nBeslutningstema\nDen nuværende samarbejdsaftale udløber den 31. december 2026 og en ny aftale skal indgås\nmellem fagudvalget og Frivilligcenter Assens. I aftalen beskrives en række særlige indsatser.\nØkonomi til indsatserne besluttes i forbindelse med indgåelse af ny samarbejdsaftale på\nnærværende møde."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Frivilligcenter Assens blev etableret i foråret 2023 og har til formål at støtte, udvikle og fremme\nfrivilligt arbejde og frivillige foreninger og grupper med et socialt sigte i Assens Kommune.\nDerudover at medvirke til at motivere flere til at blive frivillige og understøtte en\nhelhedsorienteret social indsats blandt borgerne i Assens Kommune. Dette gøres gennem\nbrobygning mellem foreninger, kommunen og andre relevante aktører.\nProces om indgåelse af ny samarbejdsaftale blev påbegyndt i foråret 2026 og administrationen\nhar afholdt møder med frivilligcentret om form og indhold for kommende aftale. Frivilligcentret\nhar ingen bemærkninger til vedhæftede samarbejdsaftale (bilag 1).\nEn ny samarbejdsaftale indgås mellem Kultur- og Fritidsudvalget og Frivilligcenter Assens på\nnærværende møde, idet en ny aftale skal indgås inden den 15. november 2026, hvor\nfrivilligcentret senest skal ansøge Social- og Boligstyrelsen om tilskud for 2027.\nFrivilligcentret skal årligt ansøge Social- og Boligstyrelsen om tilskud for det kommende år.\nStyrelsens tilskud forudsættes af, at Assens Kommune som minimum yder et tilsvarende\ntilskud.\nI den kommende samarbejdsaftale (bilag 1) er der, som i de to tidligere aftaler, beskrevet en\nrække kerneopgaver, som blandt andet omhandler, at frivilligcentret skal understøtte lokale\nforeninger og fællesskaber, hjælp til rekruttering af frivillige m.m.\nSom noget nyt, er der - udover kerneopgaver, indskrevet særlige indsatsområder. Formålet er,\nat muliggøre indgåelse af aftale om projekter eller indsatser, som ligger i forlængelse af\nfrivilligcentrets angivne kerneopgaver. Frivilligcentret kan dermed indgå aftaler, hvor vilkår,\nressourcer og økonomi afklares. I bilag 1, pkt. 5.2 er en række indsatser beskrevet.\nAssens Kommune yder et grundtilskud på 400.000 kr. årligt til Frivilligcenter Assens og\nadministrationen anbefaler, at der ud over tilskuddet afsættes 160.000 kr. årligt til indsatserne:\nSocialkompas.dk, flere aktiviteter på Søndergade 57, 5620 Glamsbjerg, beredskab og\n\nsamfundssikkerhed samt frivilligfesten."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Det samlede tilskud til særlige indsatser, som indgås i forbindelse med ny samarbejdsaftale,\nudgør i alt 160.000 kr. årligt og fordeler sig således: Socialkompas.dk: 60.000 kr., mere aktivitet\nog øget brug af lokaler Søndergade 57,5620 Glamsbjerg: 20.000 kr., Beredskab og\nSamfundssikkerhed: 20.000 kr., Frivilligfest:60.000 kr.\nBeløbet PL-reguleres årligt og foreslås finansieret inden for budgettet til\nLokalsamfundsudvikling og Aktivt Medborgerskab.\nTilskuddet til særlige indsatser ydes som et supplement til kommunens medfinansiering af\nfrivilligcentret, som udgør 400.000 kr. årligt, heraf 70.000 kr. til lokaleleje. Beløbet PLreguleres. Det kommunale tilskud er fastlagt ved beslutning i Medborgerskab-, Kultur- og\nBeskæftigelsesudvalget den 3. november 2025.\n\nBeslutningskompetence\nKultur- og Fritidsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-11": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-11",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Tillægsaftale Destination Fyn 2027 - turisme",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, Land og Kultur indstiller, at tillægsaftalen med Destination Fyn på\nturismeområdet, gældende for 2027, godkendes.\n\nBeslutningstema\nSom følge af lovgivning på erhvervs- og turismeområdet, indgår Assens Kommune\ntillægsaftale med Destination Fyn, som er en del af Erhvervshus Fyn, der sikrer, at den lokale\nturismeservice kan varetages. Tillægsaftalen for 2026 udløber ved årsskiftet, og der\nforelægges derfor en ny aftale for 2027 til godkendelse."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det følger af Erhvervsfremmeloven, at et turismedestinationsselskab har det overordnede\nansvar for destinationsudvikling i et område, og er den operatør, der varetager den lokale\nturismefremmeindsats i de deltagende kommuner. Det betyder, at Assens Kommune skal\nindgå aftale med Destination Fyn om løsningen af den lokale turismefremmeindsats.\nTillægsaftalen for 2027 viderefører indholdet i den eksisterende aftale fra 2026 inden for den\nfælles fynske strategi, strategiske projekter, taktiske samarbejder og operationelle aktiviteter.\nTillægsaftalen for 2027 sikrer, at turismeopgaven både koordineres med den fynske\ndestinationsudvikling og tilpasses de lokale behov og tilvejebringes lokalt i Assens Kommune,\nidet Destination Fyn indgår entreprenøraftale med Udvikling Assens om at varetage opgaven.\nMed udgangspunkt i Destination Fyns arbejdsopgaver forventes den lokale enhed at udføre\nopgaverne i tæt koordination med Destination Fyn. Det forventes, at den lokale enhed er\nbemandet med kompetencer til at kunne løfte opgaverne og desuden deltager aktivt i diverse\nkoordineringsgrupper og arbejdsgrupper.\nHvor hovedaftalen og bilag 1 er den samme som tidligere er der i bilag 2, som beskriver de\nkonkrete leverancespecifikationer foretaget ændringer i forhold til tidligere. Dette skyldes et\nønske om at præcisere aftaler og forventninger inden for de turismeopgaver, som Assens\nKommune ønsker udviklet i 2027. I 2027 skal der operationelt være et særligt fokus på\nformidling over for turister i hele Assens kommune, herunder styrkelse af synlighed af\nattraktioner, natur, vandre- og cykeltilbud.\nTaktiske aktiviteter:\nMedvirke til at identificere og udvikle nye lokale turismeprojekter i tråd med den fælles\nfynske strategi.\nAssistere med implementering og formidling af fælles fynske indsatsområder i eget\nlokalområde – fx Bike Island, HIKE Fyn og lign.\nHave jævnlig kontakt med det lokale turismeerhverv og understøtte deres udvikling.\n\nOperative aktiviteter:\n\nKomme med lokalt input til den fælles fynske markedsføringsindsats.\nDrifte den lokale hjemmesideplatform på 3 sprog & vedligeholde egne SoMe kanaler –\nherunder sikre sammenhæng med fælles fynske kampagner.\nYde lokal turismeservice herunder dialog og sparring med turismevirksomhederne.\nAssistere med PR-indsatsen og turoperatørsamarbejde ift. lokale indsatser.\nKomme med input til placering af infotavler og hvilke cykelruter der skal være på\ninfotavlerne for cykelnetværket, formidle cykelnettet til borgere og turister samt lægge\nalle nye cykelruter, herunder Assens Kommunes ønsker, ind i cykelnet-planlæggeren.\nDeltagelse i styregruppen i det fælles arbejde med SFU. Assens Kommune har\nprojektledelsesopgaven inden for berørte myndighedsområder m.m. i den forbindelse.\nAnsvarlig for gennemførelse af Assens for fulde sejl 2027 og evalueringen heraf\nUdvikle, gennemføre og samarbejde med ”VANDVID - Danmark under overfladen” om\nmarkedsføringsindsats og varetagelse af advisory board.\n\nOvenstående kan danne grundlag for fremadrettede afrapporteringer og drøftelser af de lokale\nturismeindsatser.\n\nLovgrundlag\nLov om erhvervsfremme, Lov om dansk turisme og efterfølgende aftale om og fortolkning af\nprincipper for konsolidering af turismedestinationer mellem Regeringen og KL."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Tilskuddet udgør i alt kr. 1.015.703,00 ekskl. moms.\n\nBeslutningskompetence\nKultur- og Fritidsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-12": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-12",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Forsøgsperioden for Frie Bymidter - orientering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for By, Land og Kultur indstiller, at orientering om forsøgsperioden for projektet Frie\nBymidter tages til efterretning.\n\nBeslutningstema\nKultur- og fritidsudvalget orienteres om ændringen af forsøgsperioden for Frie Bymidter samt\nom status på forsøget."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Assens Kommune er udpeget som én af i alt 14 kommuner, der deltager i projektet Frie\nBymidter. I 2026 er det andet byrumsforsøg blevet gennemført over 12 uger hen over\nsommeren med fokus på blandt andet trafikregulering, anvendelse af den nye mobilscene samt\net aktivitetsprogram.\nDer gives en kort status med udgangspunkt i den igangværende evalueringsproces for\nforsøgsåret 2026 samt en orientering om planen for udarbejdelsen af\nmidtvejsevalueringsrapporten, der offentliggøres den 1. februar 2027. Den samlede evaluering\npræsenteres for Kultur- og Fritidsudvalget på udvalgsmødet i februar 2027.\nKerneelementerne i projektet Frie Bymidter er at afprøve fremtidige løsninger for forbindelsen\nmellem Midtermolen og midtbyen. Dette er imidlertid ikke muligt, før Vandvid er færdigbygget.\nByggeriet er blevet forsinket og forventes derfor ikke at stå klar til den planlagte forsøgsperiode\ni sommeren 2027.\nDerfor lægges der op til, at forsøgsåret 2027 gennemføres som et minimumsforsøg, og at der\ngennemføres et ekstra forsøgsår i 2028, hvilket er inden for den oprindelige fastsatte\nforsøgsperioden til 2028. På dette tidspunkt forventes oplevelsescenteret Vandvid at være\nfærdigt og i fuld drift, således at forbindelsen mellem midtermolen og midtbyen kan afprøves.\nUdvidelsen af forsøgsperioden skal gennemføres inden for den eksisterende budgetramme.\nFor at sikre, at der er tilstrækkelige midler til et forsøg i 2028, vil der kun blive anvendt et\nabsolut minimum af midler på forsøget i 2027.\nForsøgsår 2027\nBylivsindsatsen i 2027 vil være på et minimum. Der arbejdes med mulighed for afspærring af\nveje i en eksempelvis 6ugers periode med minimal opstilling af inventar (primært borde og\nbænke samt evt. scene) på torvet / Østergade eller anden zone. Der etableres ikke\nudsmykning, aktivitetsindsatser eller lignende.\nForsøgsår 2028\nByrumsforsøget vil igen afprøve forskellige tilgange til inddragelse af lokale aktører.\nIndholdsmæssigt vil forsøget tage udgangspunkt i erfaringerne fra 2025, 2026 og 2027,\n\nherunder anvendelsen af scene, byrumsmøbler og øvrigt byrumsinventar.\nFokus vil være på aktivering af torvet og sammenhængen mellem torvet, havnen, Vandvid\nsamt Østergade/Willemoesgade i sommerperioden. Den konkrete forsøgsplan og den endelige\nforsøgsperiode fastlægges på et senere tidspunkt.\n\nLovgrundlag\nLov om forsøgsordning for frie bymidter og offentlige veje, §§ 15 og 18."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Midlerne til Frie Bymidter blev udmøntet den 20. januar 2025. Projektet gennemføres med\nstatslig støtte, hvor staten finansierer 60 % af forsøgsprojektet.\nUdvidelsen af forsøgsperioden til fire år påvirker ikke den budgetramme, der er afsat til\nprojektet."
+    }
+   ],
+   "bilag": []
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-14": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-14",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Orientering",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Ebberuphallernes parkeringsplads\nEbberuphallerne har informeret om, at de har sparet sammen til et nyt slidlag asfalt og dette\narbejde vil blive udført i løbet af de næste par måneder. I samme ombæring vil der blive lagt ny\nvandledning på tværs af parkeringspladsen i samarbejde med vandværket.\n2. Beredskab\nDen 29. september afholdt Assens Kommune dialogmøde om lokalt beredskab med deltagelse\naf 22 lokalråd og borgergrupper, lokale Røde Kors afdelinger og Frivilligcenter Assens.\nFokus var på, hvordan lokalsamfund og organisationer kan styrke deres beredskab, hjælpe\nhinanden og sikre lokalt samarbejde. Mødet var en opfølgning på et lignende møde den 4. maj\n3. Ambassadørordningen i Assens Kommune\nDer gives en overordnet orientering omkring By- og landsbyambassadørordningen i Assens\nKommune."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "4. Borgergrupper i Assens Kommune",
+     "url": null
+    },
+    {
+     "navn": "Der gives en kort beskrivelse af borgergrupper, borgerforeninger mv. i Assens Kommune.",
+     "url": null
+    }
+   ]
+  },
+  "assens-2026-11-02-kultur-og-fritidsudvalget-15": {
+   "id": "assens-2026-11-02-kultur-og-fritidsudvalget-15",
+   "kommune": "Assens",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-02",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsorden.assens.dk/vis?id=bd8cdefd-11a3-49d4-b74c-1ba10835260e",
+   "hentet": "2026-10-28T19:45:05.714Z",
+   "titel": "Oplæsning af referat",
+   "afsnit": [],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=bb85158e-bde5-4e9a-843f-b001ae8832cf": {
-   "senest": "2026-10-23",
+   "senest": "2026-10-28",
    "tjekket": "2026-10-28"
   },
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=676c7c98-f559-4184-a429-3c03f508a08e": {
@@ -8894,7 +9381,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=688c6d8a-c3fe-4328-90fb-9b32383db956": {
-   "senest": "2026-10-06",
+   "senest": "2026-10-28",
    "tjekket": "2026-10-28"
   },
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=c8259625-6b0d-49df-a842-ac7379083c3b": {
@@ -8922,7 +9409,7 @@
    "tjekket": "2026-10-28"
   },
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=f5d373bb-ae44-40a6-9cba-3c5b9d1d74c1": {
-   "senest": "2026-10-06",
+   "senest": "2026-10-28",
    "tjekket": "2026-10-28"
   },
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=2fb6857c-be7e-47fb-bf8a-11539098ca4a": {
@@ -8955,6 +9442,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-10-28T10:43:59.108Z",
+ "opdateret": "2026-10-28T19:45:12.319Z",
  "kommune": "Assens"
 }
