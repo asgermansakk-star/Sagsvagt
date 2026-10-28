@@ -650,7 +650,7 @@ async function main() {
         <details class="hel-sag">
           <summary>Læs hele sagen <span>Kommunens egen tekst</span></summary>
         ${forklar(krop.map((a) => `<h2>${esc(a.titel)}</h2>\n${afsnitTilHtml(a.tekst)}`).join("\n") + (s.status === "besluttet" ? `<h2 id="beslutning">Beslutning</h2>\n${afsnitTilHtml(s.beslutning)}` : ""), esc)}
-        ${s.bilag.length ? `<h2>Bilag</h2><ul class="files">${s.bilag.map((b) => `<li>${b.url ? `<a href="${esc(b.url)}" rel="nofollow">${esc(b.navn)}</a>` : esc(b.navn)}</li>`).join("")}</ul>` : ""}
+        ${s.bilag.length ? `<h2>Bilag</h2><ul class="files">${s.bilag.map((b) => `<li>${/^https?:\/\//i.test(b.url || "") ? `<a href="${esc(b.url)}" rel="nofollow">${esc(b.navn)}</a>` : esc(b.navn)}</li>`).join("")}</ul>` : ""}
         </details>
         <p class="source">Kilde: ${esc(kommunensNavn(s))}, ${esc(s.udvalg)}, ${s.type === "referat" ? "referat" : "dagsorden"} fra mødet ${ugedag(s.dato)} ${datoTekst(s.dato)}, punkt ${s.nr}. <a href="${esc(s.kilde)}" rel="nofollow">Læs den originale sag hos kommunen</a>.</p>
       </div>
@@ -666,7 +666,7 @@ async function main() {
     </aside>
   </div>
 </div>
-<script type="application/ld+json">${JSON.stringify(jsonld)}</script>${DEL_SCRIPT}${AABN_SCRIPT}`;
+<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>${DEL_SCRIPT}${AABN_SCRIPT}`;
     await writeFile(join(ROD, s.url), side({
       titel: `${s.titel} – Sagsvagt`, beskrivelse: s.dek || `${s.udvalg}, ${datoTekst(s.dato)}`,
       sti: s.url, rod: "../", indhold, ogType: "article", ogBillede: delebilleder.get(s.id), kommune: erKK(s) ? null : KOMMUNE[s.kommune],

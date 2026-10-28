@@ -246,7 +246,7 @@
     var m = prompt("Hvilken måned (ÅÅÅÅ-MM)?", new Date().toISOString().slice(0, 7)); if (!m) return;
     er({ handling: "faktura", maaned: m }).then(function (j) {
       if (!j.antal) return besked("Ingen betalende kunder i " + j.maaned + ".", "");
-      var celle = function (x) { x = String(x == null ? "" : x); return /[";\n]/.test(x) ? '"' + x.replace(/"/g, '""') + '"' : x; };
+      var celle = function (x) { x = String(x == null ? "" : x); if (/^[=+\-@\t\r]/.test(x)) x = "'" + x; return /[";\n]/.test(x) ? '"' + x.replace(/"/g, '""') + '"' : x; };
       var csv = "\ufeff" + j.linjer.map(function (r) { return r.map(celle).join(";"); }).join("\r\n");
       var a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
       a.download = "sagsvagt-erhverv-faktura-" + j.maaned + ".csv"; document.body.appendChild(a); a.click(); a.remove();

@@ -94,11 +94,18 @@ function push_krypter(string $tekst, string $ua_offentlig_b64, string $auth_b64)
     return $salt . pack('N', 4096) . chr(65) . $as_raa . $krypto . $tag;
 }
 
+// Browsernes push-tjenester (Chrome/Edge/Android, Firefox, Safari/iOS, Windows)
+function push_vaert_ok(string $vaert): bool {
+    return in_array($vaert, ['fcm.googleapis.com', 'android.googleapis.com', 'updates.push.services.mozilla.com', 'web.push.apple.com'], true)
+        || preg_match('~^[a-z0-9-]+\.(push\.services\.mozilla\.com|push\.apple\.com|notify\.windows\.com)$~', $vaert) === 1;
+}
+
 // Sender én besked. Svarer med HTTP-koden fra push-tjenesten (201 = modtaget, 404/410 = abonnementet findes ikke mere)
 function push_send(array $ab, array $besked): int {
+    if (!preg_match('~^https://([a-z0-9.-]+)/~i', $ab['endpoint'], $m) || !push_vaert_ok(strtolower($m[1]))) return 410; // gamle abonnementer uden for listen fjernes
     $krop = push_krypter(json_encode($besked, JSON_UNESCAPED_UNICODE), $ab['p256dh'], $ab['auth']);
     $ctx = stream_context_create(['http' => [
-        'method' => 'POST', 'ignore_errors' => true, 'timeout' => 15,
+        'method' => 'POST', 'ignore_errors' => true, 'timeout' => 15, 'follow_location' => 0, 'max_redirects' => 0,
         'header' => "Content-Type: application/octet-stream\r\nContent-Encoding: aes128gcm\r\nTTL: 86400\r\nUrgency: normal\r\n"
                   . 'Authorization: ' . vapid_hoved($ab['endpoint']) . "\r\nContent-Length: " . strlen($krop) . "\r\n",
         'content' => $krop,

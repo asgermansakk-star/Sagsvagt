@@ -51,6 +51,11 @@ function afsnit($, root) {
   return ud.map((a) => ({ titel: a.titel, tekst: a.tekst.join("\n\n").replace(new RegExp("^" + a.titel + "\\s*"), "") }));
 }
 
+// Kun almindelige webadresser (et javascript:-link fra kommunens side må aldrig ende som link på Sagsvagt)
+function webadresse(href) {
+  try { const u = new URL(href, BASE); return /^https?:$/.test(u.protocol) ? u.href : null; } catch { return null; }
+}
+
 async function hentPunkt(url) {
   const $ = await hent(url);
   const titel = ren($("h1.page-title").text());
@@ -58,7 +63,7 @@ async function hentPunkt(url) {
   const dele = afsnit($, root.length ? root : $("main"));
   const bilag = $(".file-link").map((_, e) => {
     const a = $(e).is("a") ? $(e) : $(e).closest("a");
-    return { navn: ren($(e).find(".file-link-text").text() || $(e).text()), url: a.attr("href") ? new URL(a.attr("href"), BASE).href : null };
+    return { navn: ren($(e).find(".file-link-text").text() || $(e).text()), url: webadresse(a.attr("href")) };
   }).get().filter((b) => b.navn);
   return { titel, afsnit: dele, bilag };
 }

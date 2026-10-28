@@ -83,7 +83,8 @@ function db(): PDO {
     try { $pdo->query('SELECT mail_fejl FROM abonnenter LIMIT 1'); } catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN mail_fejl VARCHAR(25) NULL'); }
     // Fælles persontabel med foreningen Sæt Dagsordenen: medlem = hvornår man blev medlem (NULL = ikke medlem).
     // Rækker, der kun er medlemmer, har status 'medlem', så mandagsmail, invitationer, push og login springer dem over.
-    foreach (['medlem' => 'VARCHAR(25) NULL', 'navn' => 'VARCHAR(100) NULL', 'alder' => 'INT NULL'] as $kol => $type) {
+    // medlem_venter: har bedt om at blive medlem, men har ikke bekræftet e-mailen endnu (medlem sættes, når linket bruges)
+    foreach (['medlem' => 'VARCHAR(25) NULL', 'navn' => 'VARCHAR(100) NULL', 'alder' => 'INT NULL', 'medlem_venter' => 'VARCHAR(25) NULL'] as $kol => $type) {
         try { $pdo->query("SELECT $kol FROM abonnenter LIMIT 1"); } catch (PDOException $e) { $pdo->exec("ALTER TABLE abonnenter ADD COLUMN $kol $type"); }
     }
     // bekraeftet: hvornår adressen blev bekræftet via linket i mailen (dobbelt opt-in). De, der var skrevet op, før
@@ -108,12 +109,19 @@ function db(): PDO {
 
 // Begrænser forsøg: højst $max pr. $sek sekunder pr. nøgle (fx login pr. e-mail og pr. IP)
 function begraens(string $noegle, int $max, int $sek): void {
+    if (for_mange($noegle, $max, $sek)) fejl(429, 'For mange forsøg. Vent lidt, og prøv igen.');
+    noter_forsoeg($noegle);
+}
+// Tjek og notér hver for sig, når kun mislykkede forsøg skal tælle (login pr. e-mail: ellers kan en fremmed spærre en andens konto)
+function for_mange(string $noegle, int $max, int $sek): bool {
     $db = db(); $t = time();
     $db->prepare('DELETE FROM forsoeg WHERE tid < ?')->execute([$t - 86400]);
     $q = $db->prepare('SELECT COUNT(*) FROM forsoeg WHERE noegle = ? AND tid > ?'); $q->execute([$noegle, $t - $sek]);
-    if ((int)$q->fetchColumn() >= $max) fejl(429, 'For mange forsøg. Vent lidt, og prøv igen.');
-    $db->prepare('INSERT INTO forsoeg (noegle, tid) VALUES (?, ?)')->execute([$noegle, $t]);
+    return (int)$q->fetchColumn() >= $max;
 }
+function noter_forsoeg(string $noegle): void { db()->prepare('INSERT INTO forsoeg (noegle, tid) VALUES (?, ?)')->execute([$noegle, time()]); }
+// Login sammenligner med denne hash, når e-mailen ikke findes, så svartiden er den samme (én bcrypt i begge tilfælde)
+const DUMMY_HASH = '$2y$12$GKzZliaJnZy1D7eeUmI0qO4M7TS3Mps.EbOIjuVaMbVGs1P89nZ8S';
 
 // ---------- Sessioner ----------
 function start_session(): void {
@@ -202,9 +210,9 @@ function send_bekraeftelse(int $id, string $email, bool $konto = false, bool $me
     global $K;
     $link = $K['site_url'] . 'api/bekraeft.php?t=' . lav_token($id, 'bekraeft', 24 * 14);
     [$html, $tekst] = mail_skabelon($konto ? 'Velkommen til Sagsvagt' : 'Bekræft, at du vil have Sagsvagt',
-        ($konto ? "Din konto er oprettet, og du kan logge ind på Min avis med din e-mail og den adgangskode, du valgte.\n\nBekræft din e-mail med knappen herunder. Så får du også én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
+        ($konto ? "Bekræft din e-mail med knappen herunder. Så er din konto klar, og du kan logge ind på Min avis med din e-mail og den adgangskode, du valgte. Du får også én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
                 : "Tryk på knappen for at bekræfte, at det er dig, der har skrevet dig op. Derefter får du én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner. Er din kommune ikke åben endnu, giver vi besked, når den er klar.\n\n")
-        . ($medlem ? "Du er også blevet gratis medlem af foreningen Sæt Dagsordenen. Foreningen kan se dit navn, din alder, din e-mail og dine kommuner. Vil du melde dig ud, så skriv til kontakt@saetdagsordenen.dk.\n\n" : '')
+        . ($medlem ? "Når du bekræfter, bliver du også gratis medlem af foreningen Sæt Dagsordenen. Foreningen kan se dit navn, din alder, din e-mail og dine kommuner. Vil du melde dig ud, så skriv til kontakt@saetdagsordenen.dk.\n\n" : '')
         . "Har du ikke skrevet dig op, så gør ingenting. Så får du ingen mails fra os.",
         $konto ? 'Bekræft min e-mail' : 'Ja, send mig mandagsmailen', $link,
         "Du får denne mail, fordi $email er skrevet op til Sagsvagt. Linket virker i 14 dage.");

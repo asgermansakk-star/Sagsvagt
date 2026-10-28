@@ -143,11 +143,11 @@ jobs:
           fi
 
       # Kun de offentlige filer kommer på webhotellet (plan/ er interne noter og bliver hjemme). .htaccess skal med (forside og
-      # midlertidig lukning af avisen styres dér); alle andre dotfiler bliver hjemme.
+      # midlertidig lukning af avisen styres dér), og api/.htaccess lukker for api/_*-filerne; alle andre dotfiler bliver hjemme.
       - name: Saml de offentlige filer
         run: |
           rsync -a --delete \
-            --include '/.htaccess' \
+            --include '/.htaccess' --include '/api/.htaccess' \
             --exclude '.*' --exclude '_deploy' --exclude 'node_modules' \
             --exclude 'avis' --exclude 'data' --exclude 'plan' --exclude '/identitet' --exclude 'package*.json' --exclude 'README.md' \
             ./ _deploy/

@@ -899,7 +899,7 @@
     kontoFelt.hidden = !aabneValgte.length;
     if (!aabneValgte.length) { form.adgangskode.value = ""; return; }
     const navne = aabneValgte.length > 1 ? `${aabneValgte.slice(0, -1).join(", ")} og ${aabneValgte.at(-1)} er åbne` : `${aabneValgte[0]} er åben`;
-    kontoNote.textContent = `${navne} på Sagsvagt. Vælg en adgangskode, så kan du logge ind og læse Min avis med det samme.`;
+    kontoNote.textContent = `${navne} på Sagsvagt. Vælg en adgangskode, så kan du logge ind på Min avis, når du har bekræftet din e-mail.`;
   };
   form.kommuner.addEventListener("input", visKonto);
   form.kommuner.addEventListener("change", visKonto);
@@ -951,8 +951,6 @@
       const egen = await fetch("api/tilmeld.php", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) });
       if ((egen.headers.get("content-type") || "").includes("application/json")) {
         const out = await egen.json().catch(() => ({}));
-        if (egen.ok && out.konto) { location.href = "min/"; return; } // kontoen er oprettet og logget ind
-        if (egen.ok && out.harKonto) { msg.className = "form-msg"; msg.innerHTML = 'Du er allerede skrevet op, så adgangskoden blev ikke gemt. <a href="min/" style="color:var(--kalk)">Log ind</a>, eller brug "Glemt adgangskode" der.'; btn.disabled = false; btn.classList.remove("busy"); return; }
         if (egen.ok) { faerdig(out.bekraeft); btn.disabled = false; btn.classList.remove("busy"); return; }
         if (egen.status === 400 || egen.status === 429) { msg.className = "form-msg err"; msg.textContent = out.fejl || "Noget gik galt."; btn.disabled = false; btn.classList.remove("busy"); return; }
       }

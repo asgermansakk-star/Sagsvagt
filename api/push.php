@@ -17,8 +17,9 @@ if ($handling === 'til') {
     begraens('push-til:' . $b['id'], 20, 3600);
     $a = $d['abonnement'] ?? [];
     $endpoint = (string)($a['endpoint'] ?? ''); $p256dh = (string)($a['keys']['p256dh'] ?? ''); $auth = (string)($a['keys']['auth'] ?? '');
-    // Kun rigtige push-tjenester (https), og nøglerne skal have den rigtige længde
-    if (!preg_match('~^https://[a-z0-9.-]+(:\d+)?/~i', $endpoint) || strlen($endpoint) > 1000) fejl(400, 'Ugyldigt abonnement');
+    // Kun browsernes egne push-tjenester (https, standardport), og nøglerne skal have den rigtige længde. Ellers kunne
+    // serveren bruges til at sende forespørgsler til adresser, den ikke burde kontakte.
+    if (strlen($endpoint) > 1000 || !preg_match('~^https://([a-z0-9.-]+)/~i', $endpoint, $m) || !push_vaert_ok(strtolower($m[1]))) fejl(400, 'Ugyldigt abonnement');
     if (strlen(b64u_dec($p256dh)) !== 65 || strlen(b64u_dec($auth)) !== 16) fejl(400, 'Ugyldigt abonnement');
     $h = hash('sha256', $endpoint);
     $db->prepare('DELETE FROM push_abonnementer WHERE endpoint_hash = ?')->execute([$h]);

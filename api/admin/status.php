@@ -3,15 +3,16 @@
 // ret e-mailadressen eller markér, at mails til adressen kommer retur.
 declare(strict_types=1);
 require __DIR__ . '/../_bootstrap.php';
+require __DIR__ . '/../_sletning.php';
 
 $d = kraev_post();
 $admin = kraev_admin();
 $id = (int)($d['id'] ?? 0);
 $db = db();
 if (($d['handling'] ?? '') === 'slet') {
-    $db->prepare('DELETE FROM tokens WHERE abonnent_id = ?')->execute([$id]);
-    try { $db->prepare('DELETE FROM push_abonnementer WHERE abonnent_id = ?')->execute([$id]); } catch (PDOException $e) {}
-    $db->prepare('DELETE FROM abonnenter WHERE id = ? AND email <> ?')->execute([$id, $admin['email']]);
+    // Alt om personen (links, push, mailkø og -historik, e-mailen på feedback), som når afmeldte slettes efter 30 dage
+    $q = $db->prepare('SELECT id FROM abonnenter WHERE id = ? AND email <> ?'); $q->execute([$id, $admin['email']]);
+    if ($q->fetchColumn()) slet_abonnent($db, $id, false);
 } elseif (($d['handling'] ?? '') === 'afmeld') {
     $db->prepare("UPDATE abonnenter SET status = 'afmeldt', adgangskode = NULL, mail_afmeldt = COALESCE(mail_afmeldt, ?) WHERE id = ? AND email <> ?")->execute([nu(), $id, $admin['email']]); // api/_sletning.php sletter 30 dage efter
     $db->prepare('UPDATE tokens SET brugt = ? WHERE abonnent_id = ? AND brugt IS NULL')->execute([nu(), $id]);

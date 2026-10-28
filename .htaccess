@@ -3,6 +3,10 @@
 DirectoryIndex vagt.html index.html
 # Egen side for adresser, der ikke findes (bygges af avis/byg.mjs)
 ErrorDocument 404 /404.html
+# Skjulte filer (fx uploadrobottens .ftp-*-tilstandsfiler) og PHP's fejllog kan ikke hentes udefra
+<FilesMatch "^(\..+|error_log)$">
+  Require all denied
+</FilesMatch>
 
 # Avisen er åben igen fra 12. okt. 2026 efter ejerens ønske, så Google og delte links kan finde sagerne.
 # Hver sag beder læseren om at blive tester. Min avis (min/) er stadig lukket bag login.
