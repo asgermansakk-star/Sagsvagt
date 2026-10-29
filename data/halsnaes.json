@@ -287,6 +287,30 @@
    "dato": "2026-10-23",
    "punkter": 9,
    "parser": 3
+  },
+  "5ff4a4b4-1c16-426c-95d6-17e2886fc90f": {
+   "lastmod": "2026-10-29",
+   "type": "referat",
+   "udvalg": "Udvalget for Social og Beskæftigelse",
+   "dato": "2026-10-28",
+   "punkter": 2,
+   "parser": 3
+  },
+  "091fdb09-5f04-47c4-8370-e100c394de27": {
+   "lastmod": "2026-10-29",
+   "type": "referat",
+   "udvalg": "Udvalget for Kultur og Idræt",
+   "dato": "2026-10-27",
+   "punkter": 11,
+   "parser": 3
+  },
+  "ebc14a2c-573a-428d-b918-dda21f20e035": {
+   "lastmod": "2026-10-29",
+   "type": "referat",
+   "udvalg": "Udvalget for Klima, Natur og Demokrati",
+   "dato": "2026-10-28",
+   "punkter": 7,
+   "parser": 3
   }
  },
  "sager": {
@@ -1777,12 +1801,17 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Social og Beskæftigelse",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=182958f6-f503-4f5d-8ca8-520f3a0d9f01",
-   "hentet": "2026-10-23T02:33:49.230Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=5ff4a4b4-1c16-426c-95d6-17e2886fc90f",
+   "hentet": "2026-10-29T11:02:01.741Z",
    "titel": "Godkendelse af dagsordenen",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen godkendt\nFraværende:\nHenrik Tolstrup (A) og Annette Westh (A)"
+    }
+   ],
    "bilag": []
   },
   "halsnaes-2026-10-28-udvalget-for-social-og-beskaeftigelse-3": {
@@ -1790,12 +1819,17 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Social og Beskæftigelse",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=182958f6-f503-4f5d-8ca8-520f3a0d9f01",
-   "hentet": "2026-10-23T02:33:49.230Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=5ff4a4b4-1c16-426c-95d6-17e2886fc90f",
+   "hentet": "2026-10-29T11:02:01.741Z",
    "titel": "Orientering fra formanden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der var ingen orienteringer\nFraværende:\nHenrik Tolstrup (A) og Annette Westh (A)"
+    }
+   ],
    "bilag": []
   },
   "halsnaes-2026-09-23-udvalget-for-social-og-beskaeftigelse-1": {
@@ -3411,12 +3445,17 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Godkendelse af dagsordenen",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen godkendt"
+    }
+   ],
    "bilag": []
   },
   "halsnaes-2026-10-27-udvalget-for-kultur-og-idraet-2": {
@@ -3424,10 +3463,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Dialogmøde med Gjethuset",
    "afsnit": [
     {
@@ -3439,8 +3478,12 @@
      "tekst": "Udvalget for Kultur og Idræt."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling taget til efterretning"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Gjethuset er inviteret til dialog med Udvalget for Kultur og Idræt . Direktør Betina Louise\nKimergård giver en status på aktiviteter og drift af Gjethuset.\nSom en af kommunens væsentlige kulturinstitutioner er Gjethuset en tæt samarbejdspartner\nfor kommunen og administrationen. De har en plads i ERFA-gruppen på kulturområdet ligesom\nde er en del af Erasmus+-konsortiet, der understøtter udviklingen af vores kulturinstitutioner. Til\nStålmanden har Gjethuset i en årrække været en væsentlig aktør i planlægningen af\npublikumsområdet, ligesom de er en aktiv aktør i Åben Skole-regi. I 2025 etablerede Gjethuset\nungeforeningen GLIMT, som opfølgning på afholdelse af RÅ Festival – ungefestivalen i det\nregionale kultursamarbejde Kulturmetropolen. GLIMT arbejder med ungedrevet kultur, bl.a.\nstøttet af Visionspuljen 2026. Seneste udvikling er etablering af en ny scene i Nordfløjen støttet\naf Nordea-fonden. Scenen er skabt til de mindre formater, hvor bl.a. en del af GLIMTs\narrangementer skal præsenteres.\nGjethusets strategi 2022-2032 er vedlagt som bilag.\nBaggrund:\nGjethuset er Danmarks ældste industribygning, som oprindeligt blev opført som kanonstøberi i\n1760'erne. Siden 1990 har Gjethuset været kulturhus. Det drives som selvejende institution af\nFonden Gjethuset og modtager årligt et tilskud fra Halsnæs Kommune. De kulturelle aktiviteter\ner hjertet af Gjethuset. Der præsenteres et alsidigt program indenfor bl.a. musik, teater og\nkunst med arrangementer for børn, unge og voksne i alle aldre.\n\nLov- og plangrundlag\nOverenskomst mellem Halsnæs Kommune og Fonden Gjethuset 2024-2029."
+     "tekst": "Gjethuset er inviteret til dialog med Udvalget for Kultur og Idræt . Direktør Betina Louise\nKimergård giver en status på aktiviteter og drift af Gjethuset.\nSom en af kommunens væsentlige kulturinstitutioner er Gjethuset en tæt samarbejdspartner\nfor kommunen og administrationen. De har en plads i ERFA-gruppen på kulturområdet ligesom\nde er en del af Erasmus+-konsortiet, der understøtter udviklingen af vores kulturinstitutioner. Til\nStålmanden har Gjethuset i en årrække været en væsentlig aktør i planlægningen af\npublikumsområdet, ligesom de er en aktiv aktør i Åben Skole-regi. I 2025 etablerede Gjethuset\nungeforeningen GLIMT, som opfølgning på afholdelse af RÅ Festival – ungefestivalen i det\nregionale kultursamarbejde Kulturmetropolen. GLIMT arbejder med ungedrevet kultur, bl.a.\nstøttet af Visionspuljen 2026. Seneste udvikling er etablering af en ny scene i Nordfløjen støttet\naf Nordea-fonden. Scenen er skabt til de mindre formater, hvor bl.a. en del af GLIMTs\narrangementer skal præsenteres.\nGjethusets strategi 2022-2032 er vedlagt som bilag.\nBaggrund:\nGjethuset er Danmarks ældste industribygning, som oprindeligt blev opført som kanonstøberi i\n1760'erne. Siden 1990 har Gjethuset været kulturhus. Det drives som selvejende institution af\nFonden Gjethuset og modtager årligt et tilskud fra Halsnæs Kommune. De kulturelle aktiviteter\ner hjertet af Gjethuset. Der præsenteres et alsidigt program indenfor bl.a. musik, teater og\nkunst med arrangementer for børn, unge og voksne i alle aldre.\n\nLov- og plangrundlag\nOverenskomst mellem Halsnæs Kommune og Fonden Gjethuset 2024-2029.\n\nOverenskomst mellem Halsnæs Kommune og Fonden Gjethuset 2024-2029."
     },
     {
      "titel": "Økonomi",
@@ -3454,10 +3497,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "MÆRK - fælles kulturinitiativ",
    "afsnit": [
     {
@@ -3467,6 +3510,10 @@
     {
      "titel": "Beslutningskompetence",
      "tekst": "Udvalget for Kultur og idræt"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling taget til efterretning"
     },
     {
      "titel": "Sagsfremstilling",
@@ -3484,10 +3531,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Anvendelse af regionale midler til kultur",
    "afsnit": [
     {
@@ -3499,8 +3546,12 @@
      "tekst": "Byrådet"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling anbefales\n\nFRA FAGUDVALG\nDirektionens indstilling anbefales"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Med aftalen om sundhedsreformen overføres de midler, regionerne i dag bruger på\nkulturområdet til kommunerne via bloktilskuddet fra 2027. Beløbet er for Halsnæs Kommune\n167.000 kr. Da midlerne er tildelt via bloktilskuddet, er det op til kommunen at beslutte hvorvidt\nmidlerne udmøntes, eller om de tilføres kassebeholdningen.\nMidlernes anvendelse i regionen\nDe regionale kulturmidler har været anvendt på forskellig vis rundt om i landet. I Region\nHovedstaden er kulturmidlerne uddelt via en kulturpulje med afsæt i den regionale\nudviklingsstrategi. Her har fokus været at understøtte et mangfoldigt kulturliv, der styrker\nadgangen til kulturelle oplevelser, hvor mangfoldigheden og fællesskabet kan blomstre, og\nhvor kulturen bidrager til aktive og sunde borgere, der trives både fysisk og mentalt.\nAdministrationens forslag om at anvende midlerne til udmøntning af kulturpolitikken ligger i\nnaturlig forlængelse heraf, idet kulturindsatserne samtidig forventes at bidrage til sundhed,\ntrivsel og stærke fællesskaber blandt kommunens borgere.\nForslag til anvendelse i Halsnæs Kommune\nAdministrationen foreslår med denne sag, at midlerne fremover afsættes til initiativer der\nudmønter Halsnæs Kommunes kulturpolitik – i tråd med midlernes hidtidige anvendelse i\nregionen og en ambition fra Udvalget for Kultur og Idræt om at sætte øget handling bag\nkulturpolitikken.\n\nKulturpolitikken blev vedtaget i oktober 2023 og er udmøntet inden for eksisterende\nbudgetramme. En allokering af de regionale midler til arbejdet med kulturpolitikken forventes at\nkunne bruges som løftestang til at arbejde mere strategisk og igangsætte nye initiativer, der\nløfter kulturpolitikkens fem temaer.\nSamarbejde om udvikling af kulturindsatser der understøtter sundhed og trivsel\nAfsættes midlerne til kulturpolitikken, vil administrationen samle de kulturinstitutioner, der\nudgjorde projektgruppen bag kulturpolitikken, nemlig Gjethuset, Industrimuseet, Musik- og\nBilledskolen samt Bibliotekerne. Disse vil i fællesskab finde frem til relevante projekter og\ninitiativer. . Såfremt indstillingen godkendes, vil Udvalget for Kultur og Idræt efterfølgende blive\npræsenteret for en sag om de konkrete initiativer. Initiativerne kunne eksempelvis være et\nsundhedskor, som drives i samarbejde mellem Sundhedsafdelingen i Halsnæs Kommune,\nMusik- og Billedskolen, Sangens Hus og lokale aktører og kulturforløb for kvinder og børn i\nsamarbejde mellem Gjethuset og Frederiksværk Krisecenter. Begge initiativer understøtter\nkulturpolitikkens ambition om trivsel, deltagelse og fællesskaber gennem kultur.\n\nLov- og plangrundlag\nForårsaftale 2025 om implementering af sundhedsreformen (vedlagt som bilag)\nHalsnæs Kommunes Kulturpolitik\n\nKonsekvenser\nAnvendes de tidligere regionale midler fremover til initiativer, der omsætter kulturpolitikken i\npraksis, vil det give mulighed for at realisere kulturelle aktiviteter og projekter inden for\nkulturpolitikkens temaer til gavn for kommunens borgere. Aktiviteter, som det ikke er muligt at\nrealisere i dag. Midlerne forventes også at kunne bruges som fornyet energi i kulturpolitikken\nog være anledning til at kulturinstitutioner og forvaltning arbejder strategisk med\nkulturpolitikkens temaer."
+     "tekst": "Med aftalen om sundhedsreformen overføres de midler, regionerne i dag bruger på\nkulturområdet til kommunerne via bloktilskuddet fra 2027. Beløbet er for Halsnæs Kommune\n167.000 kr. Da midlerne er tildelt via bloktilskuddet, er det op til kommunen at beslutte hvorvidt\nmidlerne udmøntes, eller om de tilføres kassebeholdningen.\nMidlernes anvendelse i regionen\nDe regionale kulturmidler har været anvendt på forskellig vis rundt om i landet. I Region\nHovedstaden er kulturmidlerne uddelt via en kulturpulje med afsæt i den regionale\nudviklingsstrategi. Her har fokus været at understøtte et mangfoldigt kulturliv, der styrker\nadgangen til kulturelle oplevelser, hvor mangfoldigheden og fællesskabet kan blomstre, og\nhvor kulturen bidrager til aktive og sunde borgere, der trives både fysisk og mentalt.\nAdministrationens forslag om at anvende midlerne til udmøntning af kulturpolitikken ligger i\nnaturlig forlængelse heraf, idet kulturindsatserne samtidig forventes at bidrage til sundhed,\n\ntrivsel og stærke fællesskaber blandt kommunens borgere.\nForslag til anvendelse i Halsnæs Kommune\nAdministrationen foreslår med denne sag, at midlerne fremover afsættes til initiativer der\nudmønter Halsnæs Kommunes kulturpolitik – i tråd med midlernes hidtidige anvendelse i\nregionen og en ambition fra Udvalget for Kultur og Idræt om at sætte øget handling bag\nkulturpolitikken.\nKulturpolitikken blev vedtaget i oktober 2023 og er udmøntet inden for eksisterende\nbudgetramme. En allokering af de regionale midler til arbejdet med kulturpolitikken forventes at\nkunne bruges som løftestang til at arbejde mere strategisk og igangsætte nye initiativer, der\nløfter kulturpolitikkens fem temaer.\nSamarbejde om udvikling af kulturindsatser der understøtter sundhed og trivsel\nAfsættes midlerne til kulturpolitikken, vil administrationen samle de kulturinstitutioner, der\nudgjorde projektgruppen bag kulturpolitikken, nemlig Gjethuset, Industrimuseet, Musik- og\nBilledskolen samt Bibliotekerne. Disse vil i fællesskab finde frem til relevante projekter og\ninitiativer. . Såfremt indstillingen godkendes, vil Udvalget for Kultur og Idræt efterfølgende blive\npræsenteret for en sag om de konkrete initiativer. Initiativerne kunne eksempelvis være et\nsundhedskor, som drives i samarbejde mellem Sundhedsafdelingen i Halsnæs Kommune,\nMusik- og Billedskolen, Sangens Hus og lokale aktører og kulturforløb for kvinder og børn i\nsamarbejde mellem Gjethuset og Frederiksværk Krisecenter. Begge initiativer understøtter\nkulturpolitikkens ambition om trivsel, deltagelse og fællesskaber gennem kultur.\n\nLov- og plangrundlag\nForårsaftale 2025 om implementering af sundhedsreformen (vedlagt som bilag)\nHalsnæs Kommunes Kulturpolitik\n\nKonsekvenser\nAnvendes de tidligere regionale midler fremover til initiativer, der omsætter kulturpolitikken i\npraksis, vil det give mulighed for at realisere kulturelle aktiviteter og projekter inden for\nkulturpolitikkens temaer til gavn for kommunens borgere. Aktiviteter, som det ikke er muligt at\nrealisere i dag. Midlerne forventes også at kunne bruges som fornyet energi i kulturpolitikken\nog være anledning til at kulturinstitutioner og forvaltning arbejder strategisk med\nkulturpolitikkens temaer."
     },
     {
      "titel": "Økonomi",
@@ -3514,10 +3565,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Supplerende pulje til faste årlige tilskud 2026",
    "afsnit": [
     {
@@ -3529,12 +3580,16 @@
      "tekst": "Udvalget for Kultur og Idræt"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling godkendt"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Byrådet besluttede den 10. oktober 2019, pkt. 363, at fastfryse det økonomiske tilskud til de foreninger og\naktører, som modtager et fast årligt tilskud. Aftalerne med foreninger, der modtager et fast årligt tilskud,\nstammer alle fra før kommunesammenlægningen. Puljen er etableret for at give foreningerne, der\nmodtager et fast årligt tilskud, muligheden for at genforhandle og opjustere deres tilskud, så det svarer til\nnuværende pris- og lønfremskrivning. Nogle foreninger oplever, at udgifterne, inden for de oprindelige\nrammer af deres aftale med kommunen, stiger i takt med pris- og lønfremskrivning.\nPuljen blev sidst uddelt 30. marts 2022. Den resterende pulje i 2026 er på 22.549 kr., og pris- og\nlønfremskrives hvert år med to ansøgningsfrister hhv. 1. februar og 1. august. Foreningerne kan søge om\nsupplerende tilskud gennem puljen for et år eller permanent, så længe puljen er etableret.\nPuljen er fastsat, så udgifterne skal svare til det konkrete behov, som foreningerne har. Derfor søger\nnogle foreninger kun en etårig bevilling, da udgiftsposterne ikke kan fastsættes før efterfølgende år.\nTidligere bevillinger af puljen findes i økonomiafsnittet.\nKriterier for at søge puljen er:\nKun foreninger, der modtager et fast årligt tilskud kan søge puljen.\nForeningerne skal indsende ansøgning, den originale rammeaftale, samt anden dokumentation af\nrelevans for ansøgningen.\nAnsøgning\nForeningen har indsendt ansøgningsskema, originale rammeaftale og eventuelle bilag (bilag 1 og 2).\n\nForening\n\nAnsøgt beløb\n\nPeriode\n\nAdministrationens\nvurdering af, om\nansøgningen lever op\ntil puljens kriterier\n\nFrederiksværk\nMusikfestival\n\nPermanent.\n\nJa. Musikfestivalen\nbenytter Gjethuset til\nafholdelse, hvor der\nde seneste år har\nværet prisstigning på\nleje af lokaler.\n\nKonsekvenser\nMed disponering af midlerne til foreningen, vil foreningens økonomiske tilskud svare til deres\nfaste udgifter.\n\nHøring, dialog og formidling\nForeningerne, der modtager et fast årligt tilskud, er informereret om puljen og dens kriterier, og\nat de har mulighed for sparring og dialog med administrationen om en eventuel ansøgning.\nDog har der ingen henvendelser været i 2024 og 2025. Ved næste års budgetproces skal alle\nforeningers, som modtager et fast årligt tilskud, have PL fremskrevet deres tilskud som\nfastfryses for en 4-årig periode. Det fremgår af Byrådets beslutning den 10. oktober 2019."
+     "tekst": "Byrådet besluttede den 10. oktober 2019, pkt. 363, at fastfryse det økonomiske tilskud til de foreninger og\naktører, som modtager et fast årligt tilskud. Aftalerne med foreninger, der modtager et fast årligt tilskud,\nstammer alle fra før kommunesammenlægningen. Puljen er etableret for at give foreningerne, der\nmodtager et fast årligt tilskud, muligheden for at genforhandle og opjustere deres tilskud, så det svarer til\nnuværende pris- og lønfremskrivning. Nogle foreninger oplever, at udgifterne, inden for de oprindelige\nrammer af deres aftale med kommunen, stiger i takt med pris- og lønfremskrivning.\nPuljen blev sidst uddelt 30. marts 2022. Den resterende pulje i 2026 er på 22.549 kr., og pris- og\nlønfremskrives hvert år med to ansøgningsfrister hhv. 1. februar og 1. august. Foreningerne kan søge om\nsupplerende tilskud gennem puljen for et år eller permanent, så længe puljen er etableret.\nPuljen er fastsat, så udgifterne skal svare til det konkrete behov, som foreningerne har. Derfor søger\nnogle foreninger kun en etårig bevilling, da udgiftsposterne ikke kan fastsættes før efterfølgende år.\nTidligere bevillinger af puljen findes i økonomiafsnittet.\nKriterier for at søge puljen er:\nKun foreninger, der modtager et fast årligt tilskud kan søge puljen.\nForeningerne skal indsende ansøgning, den originale rammeaftale, samt anden dokumentation af\nrelevans for ansøgningen.\nAnsøgning\nForeningen har indsendt ansøgningsskema, originale rammeaftale og eventuelle bilag (bilag 1 og 2).\n\nForening\n\nAnsøgt beløb\n\nFrederiksværk\nMusikfestival\n\nPeriode\n\nAdministrationens\nvurdering af, om\nansøgningen lever op\ntil puljens kriterier\n\nPermanent.\n\nJa. Musikfestivalen\nbenytter Gjethuset til\nafholdelse, hvor der\nde seneste år har\nværet prisstigning på\nleje af lokaler.\n\nKonsekvenser\nMed disponering af midlerne til foreningen, vil foreningens økonomiske tilskud svare til deres\nfaste udgifter.\n\nHøring, dialog og formidling\nForeningerne, der modtager et fast årligt tilskud, er informereret om puljen og dens kriterier, og\nat de har mulighed for sparring og dialog med administrationen om en eventuel ansøgning.\nDog har der ingen henvendelser været i 2024 og 2025. Ved næste års budgetproces skal alle\nforeningers, som modtager et fast årligt tilskud, have PL fremskrevet deres tilskud som\nfastfryses for en 4-årig periode. Det fremgår af Byrådets beslutning den 10. oktober 2019."
     },
     {
      "titel": "Økonomi",
-     "tekst": "Midler der gives permanent løber så længe puljen er etableret og beløbet lægges ind\nsom fast tillæg til ansøgers faste årlige tilskud. Disponeres midlerne som indstillet i\nsagen, vil der være 2.549 kr. tilbage i puljen for 2026.\nDisponerede\n\nFrederiksværk\nMusikfestival\nMelby Mølles\nbevarelse\n\nHundested\nRoklub\n\nStøbeskeen\n\nHundested\nBillard Klub\nResterende\nPuljemidler\n\ntil uddeling\nfrem.\n\nDer gøres opmærksom på, at der i fremtiden kan indkomme ansøgninger som ikke kan\nimødekommes med det resterende puljebeløb. Puljen bør derfor revurderes ved næste\nbudget.\nDe midler, som foreningerne søger fra puljen, er det faktiske tilskud, som ansøger\nmodtager og ikke den kommunale udgift grundet positivlistemoms. Den kommunale udgift\nkan derfor være lavere end tilskuddet angivet her. Dette afhænger af den konkrete\naktivitet, som tilskudsmodtageren udfører."
+     "tekst": "Midler der gives permanent løber så længe puljen er etableret og beløbet lægges ind\nsom fast tillæg til ansøgers faste årlige tilskud. Disponeres midlerne som indstillet i\nsagen, vil der være 2.549 kr. tilbage i puljen for 2026.\nDisponerede\n\nFrederiksværk\nMusikfestival\nMelby Mølles\nbevarelse\n\nHundested\nRoklub\n\nStøbeskeen\n\nHundested\nBillard Klub\n\nResterende\nPuljemidler\n\ntil uddeling\nfrem.\n\nDer gøres opmærksom på, at der i fremtiden kan indkomme ansøgninger som ikke kan\nimødekommes med det resterende puljebeløb. Puljen bør derfor revurderes ved næste\nbudget.\nDe midler, som foreningerne søger fra puljen, er det faktiske tilskud, som ansøger\nmodtager og ikke den kommunale udgift grundet positivlistemoms. Den kommunale udgift\nkan derfor være lavere end tilskuddet angivet her. Dette afhænger af den konkrete\naktivitet, som tilskudsmodtageren udfører."
     }
    ],
    "bilag": []
@@ -3544,10 +3599,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Ændringer til mødeplaner 2026-2029",
    "afsnit": [
     {
@@ -3559,8 +3614,12 @@
      "tekst": "Udvalget for Plan og Byg, Udvalget for Sundhed og Ældre, Udvalget for Skole,\nUddannelse og Dagtilbud, Udvalget for Kultur og Idræt, Udvalget for Klima, Natur og\nDemokrati og Udvalget for Social og Beskæftigelse"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling godkendt\n\nFRA FAGUDVALG\nBeslutning fra Udvalget for Plan og Byg, den 26. oktober 2026, punkt 79:\nDirektionens indstilling godkendt\nBeslutning fra Udvalget for Sundhed og Ældre, den 26. oktober 2026, punkt 82:\nDirektionens indstilling godkendt\nBeslutning fra Udvalget for Skole, Uddannelse og Dagtilbud, den 27. oktober 2026,\npunkt 83:\nDirektionens indstilling godkendt"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Der er ændringer i forhold til aflevering af kommunens årsregnskab, som påvirker møderne i\napril 2027 og 2028, da byrådsmøderne skal ligge så tæt på 30. april som muligt og derved\nogså rykker på fagudvalgsmøderne.\nByrådet og Økonomiudvalget har godkendt justeringerne på foregående møder. Møder i alle\nfagudvalg, foreslås flyttet som en konsekvens af, at møderne i byrådet bliver rykket.\nÆndringerne er markeret med grøn.\nUdvalget for Plan og Byg mødeplan:\n\n2. marts\n13. april\n11. maj\n1. juni\n17. august\n21. september\n26. oktober\n23. november\n\n11. januar\n1. marts\n12. april (ændret fra 5. april)\n3. maj\n7. juni\n16. august\n27. september (ændret fra 20. september)\n1. november\n29. november\n\n10. januar\n6. marts\n3. april (ændret fra 24. april)\n15. maj\n6. juni\n21. august\n25. september\n30. oktober\n27. november\n\n15. januar\n5. marts\n9. april\n7. maj\n28. maj (ændret fra 4. juni)\n20. august\n24. september\n31. oktober\n26. november\n\nUdvalget for Sundhed og Ældre mødeplan:\n\n2. marts\n13. april\n11. maj\n1. juni\n17. august\n21. september\n26. oktober\n23. november\n\n11. januar\n1. marts\n12. april (ændret fra 5. april)\n3. maj\n7. juni\n16. august\n27. september (ændret fra 20. september)\n1. november\n29. november\n\n10. januar\n6. marts\n3. april (ændret fra 24. april)\n15. maj\n6. juni\n21. august\n25. september\n30. oktober\n27. november\n\n15. januar\n5. marts\n9. april\n7. maj\n28. maj (ændret fra 4. juni)\n20. august\n24. september\n31. oktober\n26. november\n\nUdvalget for Skole, Uddannelse og Dagtilbud mødeplan:\n\n3. marts\n14. april\n12. maj\n2. juni\n18. august\n22. september\n27. oktober\n24. november\n\n12. januar\n2. marts\n13. april (ændret fra 6. april)\n4. maj\n8. juni\n17. august\n28. september (ændret fra 21. september)\n2. november\n30. november\n\n11. januar\n7. marts\n4. april (ændret fra 25. april)\n16. maj\n7. juni\n22. august\n26. september\n31. oktober\n28. november\n\n16. januar\n6. marts\n10. april\n8. maj\n29. maj (ændret fra 6. juni)\n21. august\n25. september\n30. oktober\n27. november\n\nUdvalget for Kultur og Idræt mødeplan:\n\n3. marts\n14. april\n12. maj\n2. juni\n18. august\n22. september\n27. oktober\n24. november\n\n12. januar\n2. marts\n13. april (ændret fra 6. april)\n4. maj\n8. juni\n17. august\n28. september (ændret fra 21. september)\n2. november\n30. november\n\n11. januar\n7. marts\n4. april (ændret fra 25. april)\n16. maj\n7. juni\n22. august\n26. september\n31. oktober\n28. november\n\n16. januar\n6. marts\n10. april\n8. maj\n29. maj (ændret fra 6. juni)\n21. august\n25. september\n30. oktober\n27. november\n\nUdvalget for Klima, Natur og Demokrati mødeplan:\n\n4. marts\n15. april\n13. maj\n3. juni\n19. august\n23. september\n28. oktober\n25. november\n\n13. januar\n3. marts\n14. april (ændret fra 7. april)\n5. maj\n9. juni\n18. august\n29. september (ændret fra 22. september)\n3. november\n1. december\n\n12. januar\n8. marts\n5. april (ændret fra 26. april)\n17. maj\n8. juni\n23. august\n27. september\n1. november\n29. november\n\n17. januar\n7. marts\n11. april\n9. maj\n30. maj (ændret fra 6. juni)\n22. august\n26. september\n31. oktober\n28. november\n\nUdvalget for Social og Beskæftigelse mødeplan:\n\n4. marts\n15. april\n13. maj\n3. juni\n19. august\n23. september\n28. oktober\n25. november\n\n13. januar\n3. marts\n14. april (ændret fra 7. april)\n5. maj\n9. juni\n18. august\n29. september (ændret fra 22. september)\n3. november\n1. december\n\n12. januar\n8. marts\n5. april (ændret fra 26. april)\n17. maj\n8. juni\n23. august\n27. september\n1. november\n29. november\n\n17. januar\n7. marts\n11. april\n9. maj\n30. maj (ændret fra 6. juni)\n22. august\n26. september\n31. oktober\n28. november"
+     "tekst": "Der er ændringer i forhold til aflevering af kommunens årsregnskab, som påvirker møderne i\napril 2027 og 2028, da byrådsmøderne skal ligge så tæt på 30. april som muligt og derved\nogså rykker på fagudvalgsmøderne.\nByrådet og Økonomiudvalget har godkendt justeringerne på foregående møder. Møder i alle\nfagudvalg, foreslås flyttet som en konsekvens af, at møderne i byrådet bliver rykket.\nÆndringerne er markeret med grøn.\n\nUdvalget for Plan og Byg mødeplan:\n\n2. marts\n13. april\n11. maj\n1. juni\n17. august\n21. september\n26. oktober\n23. november\n\n11. januar\n1. marts\n12. april (ændret fra 5. april)\n3. maj\n7. juni\n16. august\n27. september (ændret fra 20. september)\n1. november\n29. november\n\n10. januar\n6. marts\n3. april (ændret fra 24. april)\n15. maj\n6. juni\n21. august\n25. september\n30. oktober\n27. november\n\n15. januar\n5. marts\n9. april\n7. maj\n28. maj (ændret fra 4. juni)\n20. august\n24. september\n31. oktober\n26. november\n\nUdvalget for Sundhed og Ældre mødeplan:\n\n2. marts\n13. april\n11. maj\n1. juni\n17. august\n21. september\n26. oktober\n23. november\n\n11. januar\n1. marts\n12. april (ændret fra 5. april)\n3. maj\n7. juni\n16. august\n27. september (ændret fra 20. september)\n1. november\n29. november\n\n10. januar\n6. marts\n3. april (ændret fra 24. april)\n15. maj\n6. juni\n21. august\n25. september\n30. oktober\n27. november\n\n15. januar\n5. marts\n9. april\n7. maj\n28. maj (ændret fra 4. juni)\n20. august\n24. september\n31. oktober\n26. november\n\nUdvalget for Skole, Uddannelse og Dagtilbud mødeplan:\n\n3. marts\n14. april\n12. maj\n2. juni\n18. august\n22. september\n27. oktober\n24. november\n\n12. januar\n2. marts\n13. april (ændret fra 6. april)\n4. maj\n8. juni\n17. august\n28. september (ændret fra 21. september)\n2. november\n30. november\n\n11. januar\n7. marts\n4. april (ændret fra 25. april)\n16. maj\n7. juni\n22. august\n26. september\n31. oktober\n28. november\n\n16. januar\n6. marts\n10. april\n8. maj\n29. maj (ændret fra 6. juni)\n21. august\n25. september\n30. oktober\n27. november\n\nUdvalget for Kultur og Idræt mødeplan:\n\n3. marts\n14. april\n12. maj\n2. juni\n18. august\n22. september\n27. oktober\n24. november\n\n12. januar\n2. marts\n13. april (ændret fra 6. april)\n4. maj\n8. juni\n17. august\n28. september (ændret fra 21. september)\n2. november\n30. november\n\n11. januar\n7. marts\n4. april (ændret fra 25. april)\n16. maj\n7. juni\n22. august\n26. september\n31. oktober\n28. november\n\n16. januar\n6. marts\n10. april\n8. maj\n29. maj (ændret fra 6. juni)\n21. august\n25. september\n30. oktober\n27. november\n\nUdvalget for Klima, Natur og Demokrati mødeplan:\n\n4. marts\n15. april\n13. maj\n3. juni\n19. august\n23. september\n28. oktober\n25. november\n\n13. januar\n3. marts\n14. april (ændret fra 7. april)\n5. maj\n9. juni\n18. august\n29. september (ændret fra 22. september)\n3. november\n1. december\n\n12. januar\n8. marts\n5. april (ændret fra 26. april)\n17. maj\n8. juni\n23. august\n27. september\n1. november\n29. november\n\n17. januar\n7. marts\n11. april\n9. maj\n30. maj (ændret fra 6. juni)\n22. august\n26. september\n31. oktober\n28. november\n\nUdvalget for Social og Beskæftigelse mødeplan:\n\n4. marts\n15. april\n13. maj\n3. juni\n19. august\n23. september\n28. oktober\n25. november\n\n13. januar\n3. marts\n14. april (ændret fra 7. april)\n5. maj\n9. juni\n18. august\n29. september (ændret fra 22. september)\n3. november\n1. december\n\n12. januar\n8. marts\n5. april (ændret fra 26. april)\n17. maj\n8. juni\n23. august\n27. september\n1. november\n29. november\n\n17. januar\n7. marts\n11. april\n9. maj\n30. maj (ændret fra 6. juni)\n22. august\n26. september\n31. oktober\n28. november"
     },
     {
      "titel": "Økonomi",
@@ -3574,10 +3633,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Orientering om Erasmus+",
    "afsnit": [
     {
@@ -3589,8 +3648,12 @@
      "tekst": "Udvalget for Kultur og Idræt."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling taget til efterretning"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Siden januar 2025 har Halsnæs Kommune været Erasmus+-akkrediteret.\nErasmus+ er EU’s uddannelsesprogram og akkrediteringen er givet på voksenområdet (18+) til\net konsortium bestående af kommunen (Kultur, Idræt og Demokrati), Musik- og Billedskolen,\nHalsnæs Bibliotekerne, Gjethuset og Industrimuseet Frederiks Værk. Formålet med\nakkrediteringen er at blive bedre til at inkludere svagere målgrupper i vores kulturtilbud i\nkommunen.\nAkkrediteringen giver os mulighed for årligt at anmode om penge fra EU til at tage på\nlæringsophold i Europa for at opkvalificere og efteruddanne medarbejdere på\nkulturinstitutionerne og fra Kultur, Idræt og Demokrati. Dette for at opnå nye og flere\nkompetencer til arbejdet med at sikre flere målgrupper adgang til kulturinstitutionerne.\nAkkrediteringen løber til og med 2027 og herefter kan Halsnæs Kommune ansøge om at få\nden forlænget.\nTil projektperioden 1. juni 2025 – 31. august 2026 har Halsnæs Kommune modtaget 416.000\nkr. (55630€) fra EU.\nTil projektperioden 1. juni 2026 – 31. august 2027 har Halsnæs Kommune modtaget 248.000\nDer er ingen medfinansiering fra kommunen og alle aktiviteter finansieres 100 % af EU.\nI første periode i 2025-2026 har vi som konsortium (ovenstående kulturinstitutioner samt Kultur,\nIdræt og Demokrati) været i Barcelona på et læringsophold ved Palau de la Música – en\nUNESCO-udpeget koncertsal – hvor vi fik både en fyldestgørende og spændende introduktion\ntil stedet og til det indhold, som fylder huset i det daglige. Det er en professionel koncertsal,\nsom også har en vigtig social parallel, der arbejder meget helhedsorienteret med at inkludere\nsårbare målgrupper i deres kulturtilbud. Konsortiet fik bl.a. indblik i Palau de la Músicas sociale\n\nmusikprogrammer, hvor musik bruges som en aktiv social løftestang for mennesker, der\nbefinder sig på kanten af samfundet. Et af de mest markante læringspunkter var den\ngrundlæggende tilgang: Kultur forstås som en adgang til fællesskab og deltagelse – ikke som\nnoget, der kræver bestemte forudsætninger for at kunne være med.\nI tillæg til konsortieturen har Musik- og Billedskolen haft to lærere på kursus i Tyskland, hvor de\nbl.a. fordybede sig i nye undervisningsmetoder til kor og solosang, og Halsnæs Bibliotekerne\nhar haft fire medarbejdere på læringsophold i Italien, hvor de over flere dage fulgte\nbiblioteksansatte og bl.a. blev klogere på, hvordan de dér arbejder med inklusion af flere\nvoksne målgrupper i deres bibliotekstilbud.\nForventningen er, at læringsopholdene giver kulturformidlerne og sangunderviserne nye\nredskaber til at arbejde med inklusion af svagere målgrupper i deres kulturtilbud.\nKonsortiekoordinatoren som er forankret i Kultur, Idræt og Demokrati skal på kursus i Spanien i\nefteråret for at lære om større EU-projekter og hvordan de planlægges og udføres, og hele\nkonsortiet planlægger en fælles tur i maj 2027, hvor fokus fortsat vil være på, hvordan\nkulturinstitutioner kan inkludere flere målgrupper i deres tilbud. Derudover arbejder samtlige af\nkonsortiemedlemmerne på at planlægge læringsophold for deres medarbejdere i det\nkommende år."
+     "tekst": "Siden januar 2025 har Halsnæs Kommune været Erasmus+-akkrediteret.\nErasmus+ er EU’s uddannelsesprogram og akkrediteringen er givet på voksenområdet (18+) til\net konsortium bestående af kommunen (Kultur, Idræt og Demokrati), Musik- og Billedskolen,\nHalsnæs Bibliotekerne, Gjethuset og Industrimuseet Frederiks Værk. Formålet med\nakkrediteringen er at blive bedre til at inkludere svagere målgrupper i vores kulturtilbud i\nkommunen.\nAkkrediteringen giver os mulighed for årligt at anmode om penge fra EU til at tage på\nlæringsophold i Europa for at opkvalificere og efteruddanne medarbejdere på\nkulturinstitutionerne og fra Kultur, Idræt og Demokrati. Dette for at opnå nye og flere\nkompetencer til arbejdet med at sikre flere målgrupper adgang til kulturinstitutionerne.\nAkkrediteringen løber til og med 2027 og herefter kan Halsnæs Kommune ansøge om at få\nden forlænget.\nTil projektperioden 1. juni 2025 – 31. august 2026 har Halsnæs Kommune modtaget 416.000\nkr. (55630€) fra EU.\nTil projektperioden 1. juni 2026 – 31. august 2027 har Halsnæs Kommune modtaget 248.000\nDer er ingen medfinansiering fra kommunen og alle aktiviteter finansieres 100 % af EU.\nI første periode i 2025-2026 har vi som konsortium (ovenstående kulturinstitutioner samt Kultur,\nIdræt og Demokrati) været i Barcelona på et læringsophold ved Palau de la Música – en\n\nUNESCO-udpeget koncertsal – hvor vi fik både en fyldestgørende og spændende introduktion\ntil stedet og til det indhold, som fylder huset i det daglige. Det er en professionel koncertsal,\nsom også har en vigtig social parallel, der arbejder meget helhedsorienteret med at inkludere\nsårbare målgrupper i deres kulturtilbud. Konsortiet fik bl.a. indblik i Palau de la Músicas sociale\nmusikprogrammer, hvor musik bruges som en aktiv social løftestang for mennesker, der\nbefinder sig på kanten af samfundet. Et af de mest markante læringspunkter var den\ngrundlæggende tilgang: Kultur forstås som en adgang til fællesskab og deltagelse – ikke som\nnoget, der kræver bestemte forudsætninger for at kunne være med.\nI tillæg til konsortieturen har Musik- og Billedskolen haft to lærere på kursus i Tyskland, hvor de\nbl.a. fordybede sig i nye undervisningsmetoder til kor og solosang, og Halsnæs Bibliotekerne\nhar haft fire medarbejdere på læringsophold i Italien, hvor de over flere dage fulgte\nbiblioteksansatte og bl.a. blev klogere på, hvordan de dér arbejder med inklusion af flere\nvoksne målgrupper i deres bibliotekstilbud.\nForventningen er, at læringsopholdene giver kulturformidlerne og sangunderviserne nye\nredskaber til at arbejde med inklusion af svagere målgrupper i deres kulturtilbud.\nKonsortiekoordinatoren som er forankret i Kultur, Idræt og Demokrati skal på kursus i Spanien i\nefteråret for at lære om større EU-projekter og hvordan de planlægges og udføres, og hele\nkonsortiet planlægger en fælles tur i maj 2027, hvor fokus fortsat vil være på, hvordan\nkulturinstitutioner kan inkludere flere målgrupper i deres tilbud. Derudover arbejder samtlige af\nkonsortiemedlemmerne på at planlægge læringsophold for deres medarbejdere i det\nkommende år."
     },
     {
      "titel": "Økonomi",
@@ -3604,11 +3667,11 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
-   "titel": "Nye medlemmer til Industrimuseet Frederik Værk og Knud Rasmussens Hus bestyrelse",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
+   "titel": "Nye medlemmer til Industrimuseet Frederiks Værk og Knud Rasmussens Hus' bestyrelse",
    "afsnit": [
     {
      "titel": "Indstilling",
@@ -3619,8 +3682,12 @@
      "tekst": "Byrådet"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling anbefales"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Industrimuseet Frederiks Værk og Knud Rasmussens Hus er en selvejende institution med en\nbestyrelse, der udpeges hvert fjerde år. Som museets primære økonomiske bidragsyder er det\nHalsnæs Kommune, der udpeger museets bestyrelse. Den siddende bestyrelse tiltrådte 1.\njanuar 2024 og er således udpeget frem til udgangen af 2027. Formand Michael Launborg\nsamt bestyrelsesmedlem Christian Willumsen har af personlige årsager valgt at trække sig,\nhvorfor der skal udpeges to nye bestyrelsesmedlemmer for den resterende del af perioden.\n§10 i Museets vedtægt beskriver bestyrelsens sammensætning som følger:\nStk. 2 Museets bestyrelse udpeges af Halsnæs Kommunes Byråd efter indstilling fra det til\nenhver tid relevante fagudvalg.\nStk. 3 Museets bestyrelse består af 7 medlemmer. To udpeget af Halsnæs Byråds midte.\nResten af bestyrelsen skal bestå af medlemmer med relevante kompetencer fra institutioner,\norganisationer og foreninger.\nStk. 4 Bestyrelsens medlemmer udpeges/vælges for fire (4) år.\nStk. 5 Bestyrelsen konstituerer sig med formand og næstformand valgt blandt de ikke\npolitiske medlemmer.\nRamme for udvælgelse:\nDer er ved udvælgelsen af medlemmer til museets bestyrelse taget hensyn til Slots- og\n\nKulturstyrelsens anbefalinger om, at:\nBestyrelsen rummer tilsammen fx ledelsesmæssige, politiske, forretningsmæssige,\njuridiske, økonomiske og kommunikations kompetencer samt faglige kompetencer inden\nfor museets ansvarsområde.\nBestyrelsen sammensættes under hensyn til, at bestyrelsen afspejler den\nsamfundsmæssige mangfoldighed i forhold til køn, alder, etnicitet m.v.\nFølgende kandidater foreslås som nye bestyrelsesmedlemmer:\nErik Brandt Dam\nTorben Skaaning\nSe CV blad i bilag for yderligere info om kandidaterne.\n\nLov- og plangrundlag\nMuseumsloven med tilhørende bekendtgørelser, Ligestillingsloven og Kulturministeriets\nanbefalinger for god ledelse i selvejende kulturinstitutioner.\n\nKonsekvenser\nMuseets nye bestyrelsesmedlemmer vælges frem til udgangen af 2027 og vil tiltræde ved\nførstkommende bestyrelsesmøde efter Byrådets udpegning."
+     "tekst": "Industrimuseet Frederiks Værk og Knud Rasmussens Hus er en selvejende institution med en\nbestyrelse, der udpeges hvert fjerde år. Som museets primære økonomiske bidragsyder er det\nHalsnæs Kommune, der udpeger museets bestyrelse. Den siddende bestyrelse tiltrådte 1.\njanuar 2024 og er således udpeget frem til udgangen af 2027. Formand Michael Launborg\nsamt bestyrelsesmedlem Christian Willumsen har af personlige årsager valgt at trække sig,\nhvorfor der skal udpeges to nye bestyrelsesmedlemmer for den resterende del af perioden.\n§10 i Museets vedtægt beskriver bestyrelsens sammensætning som følger:\nStk. 2 Museets bestyrelse udpeges af Halsnæs Kommunes Byråd efter indstilling fra det til\nenhver tid relevante fagudvalg.\nStk. 3 Museets bestyrelse består af 7 medlemmer. To udpeget af Halsnæs Byråds midte.\nResten af bestyrelsen skal bestå af medlemmer med relevante kompetencer fra institutioner,\norganisationer og foreninger.\nStk. 4 Bestyrelsens medlemmer udpeges/vælges for fire (4) år.\nStk. 5 Bestyrelsen konstituerer sig med formand og næstformand valgt blandt de ikke\npolitiske medlemmer.\n\nRamme for udvælgelse:\nDer er ved udvælgelsen af medlemmer til museets bestyrelse taget hensyn til Slots- og\nKulturstyrelsens anbefalinger om, at:\nBestyrelsen rummer tilsammen fx ledelsesmæssige, politiske, forretningsmæssige,\njuridiske, økonomiske og kommunikations kompetencer samt faglige kompetencer inden\nfor museets ansvarsområde.\nBestyrelsen sammensættes under hensyn til, at bestyrelsen afspejler den\nsamfundsmæssige mangfoldighed i forhold til køn, alder, etnicitet m.v.\nFølgende kandidater foreslås som nye bestyrelsesmedlemmer:\nErik Brandt Dam\nTorben Skaaning\nSe CV blad i bilag for yderligere info om kandidaterne.\n\nLov- og plangrundlag\nMuseumsloven med tilhørende bekendtgørelser, Ligestillingsloven og Kulturministeriets\nanbefalinger for god ledelse i selvejende kulturinstitutioner.\n\nKonsekvenser\nMuseets nye bestyrelsesmedlemmer vælges frem til udgangen af 2027 og vil tiltræde ved\nførstkommende bestyrelsesmøde efter Byrådets udpegning."
     },
     {
      "titel": "Økonomi",
@@ -3634,10 +3701,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Forlængelse af projektperiode for projekt finansieret af visionspuljen",
    "afsnit": [
     {
@@ -3649,8 +3716,12 @@
      "tekst": "Udvalget for Kultur og Idræt."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Annette Westh (A), Mads Vergo (A), René Hansen (A), Frederik Germann (C) og Thomas\nMøller Nielsen (V) stemte imod indstillingen.\nAnnette Westh (A), Mads Vergo (A), René Hansen (A) og Thomas Møller Nielsen (V)\nstillede et ændringsforslag om, at pengene i stedet for at tilfalde kommunekassen føres\ntilbage til visionspuljen og udmøntes på udvalgets møde i november ud fra tidligere\nansøgninger til puljen.\nFor stemte: Annette Westh (A), Mads Vergo (A), René Hansen (A) og Thomas Møller\nNielsen (V)\nImod stemte: Frederik Germann (C), Olaf Johannes Prien (F) og Thue Lundgaard (Ø)\nMindretalsudtalelse fra Frederik Germann (C): C stemmer i mod, da C ønsker, at\npengene går tilbage i kommunekassen\nMindretalsudtalelse fra Olaf Johannes Prien (F) og Thue Lundgaard (Ø): F og Ø stemmer\nimod, da partierne ønsker, at pengene tilfalder kunstnerne og projektet udskydes."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Ved ansøgning om forlængelse af tilsagn på Visionspuljeprojekter er følgende kriterier tidligere\nanlagt:\nProjekter skal pege på en rimelig grund til forlængelsen.\nÆndringer i projektet skal falde inden for samme formål som det oprindeligt ansøgte.\nDet skal være realistisk, at projektet kan gennemføres.\nDer gives forlængelse i maksimalt op til to år.\nOut Of Office modtog i 2025 et tilskud på 55.000 kr. fra Visionspuljen til projektet\nKunstlegepladsen (se bilag 1).\nOut Of Office søger om forlængelse af projektperioden, da det har vist sig vanskeligt og\ntidskrævende at opnå de nødvendige tilladelser til at etablere kunstlegepladsen. Projektet har\nderfor ikke kunnet igangsættes som oprindeligt planlagt.\nAnsøger ønsker samtidig at justere projektets format. Det oprindelige formål om at skabe\nmøder mellem børn, publikum og kunst gennem leg, interaktion og medskabelse fastholdes,\nmen projektet får en mere procesorienteret og deltagende karakter.\nFire kunstnere skal i samarbejde med børn fra lokale daginstitutioner udvikle kunstneriske\ninstallationer. Børnene bliver dermed aktive deltagere i udviklingen af værkerne frem for alene\nat være publikum.\nInstallationerne etableres efterfølgende på MEJERIET, der i forbindelse med projektet\nmidlertidigt omdannes til KUNSTNERIET. Værkerne skal fortsat invitere til leg og deltagelse og\nkunne udvikle og forandre sig gennem publikums interaktion. KUNSTNERIET vil være åbent\nfor institutioner på udvalgte hverdage og for offentligheden i udvalgte weekender med gratis\nadgang.\n\nAdministrationens vurdering:\nAdministrationen vurderer, at der er en rimelig begrundelse for at forlænge projektperioden, da\nudfordringer med de nødvendige tilladelser har betydet, at projektet ikke har kunnet\ngennemføres som oprindeligt planlagt.\nDet vurderes desuden, at det justerede projekt fortsat ligger inden for formålet med den\noprindelige bevilling. Projektet ændrer karakter fra etableringen af en kunstlegeplads til et mere\nprocesorienteret og deltagende kunstprojekt, men fastholder fokus på børns og publikums\naktive møde med kunst gennem leg, interaktion og medskabelse.\nAdministrationen vurderer samtidig, at inddragelsen af lokale daginstitutioner og finansieringen\ngennem Huskunstnerordningen understøtter projektets gennemførlighed.\nAdministrationen anbefaler på den baggrund, at projektperioden forlænges, og at ændringen af\nprojektets format godkendes.\n\nLov- og plangrundlag\nKommunalfuldmagten.\n\nKonsekvenser\nMulighed for gennemførsel af projektet hos Out Of Office med betydning for borgerne i\nHalsnæs.\n\nHøring, dialog og formidling\nAdministrationen har været i dialog med ansøger om årsag til forlængelse af tilsagn fra\nVisionspuljen. På baggrund af beslutning på mødet vil administrationen give skriftlig\nmeddelelse om en toårig forlængelse af tilsagn om støtte."
+     "tekst": "Ved ansøgning om forlængelse af tilsagn på Visionspuljeprojekter er følgende kriterier tidligere\nanlagt:\nProjekter skal pege på en rimelig grund til forlængelsen.\nÆndringer i projektet skal falde inden for samme formål som det oprindeligt ansøgte.\nDet skal være realistisk, at projektet kan gennemføres.\nDer gives forlængelse i maksimalt op til to år.\n\nOut Of Office modtog i 2025 et tilskud på 55.000 kr. fra Visionspuljen til projektet\nKunstlegepladsen (se bilag 1).\nOut Of Office søger om forlængelse af projektperioden, da det har vist sig vanskeligt og\ntidskrævende at opnå de nødvendige tilladelser til at etablere kunstlegepladsen. Projektet har\nderfor ikke kunnet igangsættes som oprindeligt planlagt.\nAnsøger ønsker samtidig at justere projektets format. Det oprindelige formål om at skabe\nmøder mellem børn, publikum og kunst gennem leg, interaktion og medskabelse fastholdes,\nmen projektet får en mere procesorienteret og deltagende karakter.\nFire kunstnere skal i samarbejde med børn fra lokale daginstitutioner udvikle kunstneriske\ninstallationer. Børnene bliver dermed aktive deltagere i udviklingen af værkerne frem for alene\nat være publikum.\nInstallationerne etableres efterfølgende på MEJERIET, der i forbindelse med projektet\nmidlertidigt omdannes til KUNSTNERIET. Værkerne skal fortsat invitere til leg og deltagelse og\nkunne udvikle og forandre sig gennem publikums interaktion. KUNSTNERIET vil være åbent\nfor institutioner på udvalgte hverdage og for offentligheden i udvalgte weekender med gratis\nadgang.\nAdministrationens vurdering:\nAdministrationen vurderer, at der er en rimelig begrundelse for at forlænge projektperioden, da\nudfordringer med de nødvendige tilladelser har betydet, at projektet ikke har kunnet\ngennemføres som oprindeligt planlagt.\nDet vurderes desuden, at det justerede projekt fortsat ligger inden for formålet med den\noprindelige bevilling. Projektet ændrer karakter fra etableringen af en kunstlegeplads til et mere\nprocesorienteret og deltagende kunstprojekt, men fastholder fokus på børns og publikums\naktive møde med kunst gennem leg, interaktion og medskabelse.\nAdministrationen vurderer samtidig, at inddragelsen af lokale daginstitutioner og finansieringen\ngennem Huskunstnerordningen understøtter projektets gennemførlighed.\nAdministrationen anbefaler på den baggrund, at projektperioden forlænges, og at ændringen af\nprojektets format godkendes.\n\nLov- og plangrundlag\nKommunalfuldmagten.\n\nKonsekvenser\nMulighed for gennemførsel af projektet hos Out Of Office med betydning for borgerne i\nHalsnæs.\n\nHøring, dialog og formidling\nAdministrationen har været i dialog med ansøger om årsag til forlængelse af tilsagn fra\n\nVisionspuljen. På baggrund af beslutning på mødet vil administrationen give skriftlig\nmeddelelse om en toårig forlængelse af tilsagn om støtte."
     },
     {
      "titel": "Økonomi",
@@ -3664,10 +3735,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Status på puljer",
    "afsnit": [
     {
@@ -3677,6 +3748,10 @@
     {
      "titel": "Beslutningskompetence",
      "tekst": "Udvalget for Kultur og Idræt"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling taget til efterretning"
     },
     {
      "titel": "Sagsfremstilling",
@@ -3694,12 +3769,17 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Kultur og Idræt",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=3a5bf81f-f431-4824-952c-6a8cab4bdc66",
-   "hentet": "2026-10-23T02:38:48.472Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=091fdb09-5f04-47c4-8370-e100c394de27",
+   "hentet": "2026-10-29T11:03:49.493Z",
    "titel": "Orientering fra formanden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Formandens orientering taget til efterretning"
+    }
+   ],
    "bilag": []
   },
   "halsnaes-2026-09-22-udvalget-for-kultur-og-idraet-1": {
@@ -4123,12 +4203,17 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Klima, Natur og Demokrati",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=eadac3ee-d498-41f5-b999-72b363f2a4fc",
-   "hentet": "2026-10-23T02:40:26.312Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=ebc14a2c-573a-428d-b918-dda21f20e035",
+   "hentet": "2026-10-29T11:04:59.716Z",
    "titel": "Godkendelse af dagsordenen",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen godkendt"
+    }
+   ],
    "bilag": []
   },
   "halsnaes-2026-10-28-udvalget-for-klima-natur-og-demokrati-2": {
@@ -4136,10 +4221,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Klima, Natur og Demokrati",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=eadac3ee-d498-41f5-b999-72b363f2a4fc",
-   "hentet": "2026-10-23T02:40:26.312Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=ebc14a2c-573a-428d-b918-dda21f20e035",
+   "hentet": "2026-10-29T11:04:59.716Z",
    "titel": "Principbeslutning om vilje til at ekspropriere arealer til regnvandsbassiner ved Ullerup Å",
    "afsnit": [
     {
@@ -4151,8 +4236,12 @@
      "tekst": "Byrådet."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "1. Direktionens indstilling anbefales\n2. Udvalget for Klima, Natur og Demokrati indstiller til byrådet, at Henrik Tolstrup (A)\nudpeges som repræsentant til jf. vejloven til at lede og deltage i åstedsforretninger.\nSarah Lindemann Thøgersen udpeges som suppleant."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Punktet omhandler etablering af regnvandsbassiner før udledning til Ullerup Å. Projektet vil\nforbedre miljøforholdene i området ved at forbedre rensning og reducere\nopstuvning/oversvømmelser i området, som beskrevet i tillægget til spildevandsplanen.\nProjektet bidrager ligeledes til en øget rekreativ værdi af området og forbedrer på denne måde\nforholdene på flere niveauer.\nByrådet godkendte den 6. februar 2025 tillæg 2 til kommunens spildevandsplan 2022-2032.\nTillægget skaber det planmæssige grundlag for at forbedre afvandingsforholdene og etablere\nbassinerne.\nProjektet vedrørende Ullerup Å omfatter bl.a. etablering af tre regnvandsbassiner med\ntilhørende ledningsanlæg, reguleringsbygværker og adgangsforhold. Bassinerne skal sikre\nøget forsinkelse og forbedret rensning af regnvand fra kloakoplandene UL01, HU13 og LY04\ninden udledning til Ullerup Å, (se bilag 1 for et kort over området).\nProjektets gennemførelse forudsætter erhvervelse af rettigheder over arealer på en række\nprivate ejendomme. Omfanget af rettighedserhvervelsen varierer afhængigt af anlægstype og\nfunktion.\nFor de arealer, hvor der skal etableres permanente anlæg (regnvandsbassiner, bygværker\nmv.), er der brug for at sikre arealerhvervelse.\n\nFor de arealer, hvor der skal etableres ledningsanlæg, tekniske grøfter og driftsveje, er der\nbrug for at pålægge servitutter, der sikrer 1) etablering og drift af anlæg, 2) adgang for tilsyn og\nvedligehold og 3) begrænsninger i arealanvendelsen.\nFor de midlertidige arbejdsarealer vil der i anlægsfasen være behov for midlertidig råderet over\narealer til henstilling af materiel, oplagring af jord samt øvrige anlægsrelaterede aktiviteter.\nDe planlagte areal- og rettighedserhvervelser samt anlægsarbejde, herunder adgangsforhold,\nomfatter matr.nr. 7bd, 7ck, 7ci, 7ay Ullerup By, Torup samt matr.nr. 2b og 5a St. Karlsminde\nBy, Torup. Adgangsveje vil berøre eksisterende private veje på matr.nr. 7a og 7aq, samt 7aæ\nUllerup By, Torup langs deres skellinjer. Bilag 1 er et oversigtskort over området med\nangivelse af matrikelnumre.\nTillægget til spildevandsplanen tilvejebringer grundlaget for, at Halsnæs Forsyning kan indgå\nfrivillige aftaler med grundejere om de nødvendige areal- og rettighedserhvervelser. Af hensyn\ntil projektets fremdrift er det imidlertid væsentligt, at der foreligger mulighed for at gennemføre\nprojektet ved ekspropriation, såfremt det ikke lykkes at opnå frivillige aftaler. Halsnæs\nForsynings anmodning om stillingtagen til ekspropriationsvilje er vedlagt som bilag 2.\nEn principbeslutning forventes desuden at understøtte indgåelsen af frivillige aftaler, idet disse\nhar den betydning, at aftalerne kan indgås på ekspropriationslignende vilkår. En eventuel\nekspropriation skal gennemføres af Halsnæs Kommune på baggrund af en forudgående\nprincipbeslutning om ekspropriationsvilje. Bliver en ekspropriation, mod forventning, nødvendig\nvil det kræve endnu en politisk behandling. Halsnæs Kommune er forpligtet til at tage stilling til\nspørgsmål om ekspropriation på vegne af forsyningen, såfremt forsyningen anmoder herom.\nSåfremt byrådet godkender principbeslutningen om ekspropriationsvilje vil Halsnæs Forsyning\nigangsætte dialog med de berørte lodsejere om muligheder for at erhverve arealerne. Derefter\nindkaldes de berørte lodsejere til åstedsforretning for afklaring af, hvorvidt det er muligt at nå til\nenighed om en aftale.\nEkspropriation er et værktøj til, at Halsnæs Forsyning kan erhverve et areal, der tilhører privat\nejendom mod fuld erstatning. Byrådets beslutning om ekspropriationsvilje anvendes kun, hvor\ndet vurderes nødvendigt for, at projektet ved Ullerup Å kan realiseres.\nDet er kommunen, der om nødvendigt foretager ekspropriationen. Der bliver først tale om reel\nekspropriation, når byrådet træffer beslutning om erhvervelse, hvor det ikke har været muligt at\nnå til enighed med ejeren. Byrådet vil i denne situation blive forelagt sagen igen med henblik\npå at tiltræde indgåede aftaler og træffe beslutning om ekspropriation i de tilfælde, hvor en\naftale ikke har kunnet opnås.\nDet er nødvendigt, at byrådet udpeger en repræsentant og en suppleant til at lede og deltage i\nåstedsforretningerne, da åstedsforretningerne afholdes i henhold til vejlovens kapitel 10. Det\nmedlem byrådet tidligere har udpeget til ekspropriationskommissionen efter\nekspropriationsprocesloven, er udelukkende udpeget såfremt staten skal ekspropriere.\nPlanlægning af en eventuel åstedsforretning vil være et samarbejde mellem Halsnæs\nForsyning og Halsnæs Kommune.\n\nLov- og plangrundlag\nMiljøbeskyttelsesloven (BEK nr. 1742 af 22/12 2022).\nVejloven (BEK nr. 435 af 24. april 2024).\n\nKonsekvenser\nByrådets principbeslutning om ekspropriationsvilje vil sikre, at projektet kan gennemføres.\n\nHøring, dialog og formidling\nHalsnæs Forsyning afholder møder med alle berørte lodsejere."
+     "tekst": "Punktet omhandler etablering af regnvandsbassiner før udledning til Ullerup Å. Projektet vil\nforbedre miljøforholdene i området ved at forbedre rensning og reducere\nopstuvning/oversvømmelser i området, som beskrevet i tillægget til spildevandsplanen.\nProjektet bidrager ligeledes til en øget rekreativ værdi af området og forbedrer på denne måde\nforholdene på flere niveauer.\nByrådet godkendte den 6. februar 2025 tillæg 2 til kommunens spildevandsplan 2022-2032.\nTillægget skaber det planmæssige grundlag for at forbedre afvandingsforholdene og etablere\nbassinerne.\nProjektet vedrørende Ullerup Å omfatter bl.a. etablering af tre regnvandsbassiner med\ntilhørende ledningsanlæg, reguleringsbygværker og adgangsforhold. Bassinerne skal sikre\nøget forsinkelse og forbedret rensning af regnvand fra kloakoplandene UL01, HU13 og LY04\n\ninden udledning til Ullerup Å, (se bilag 1 for et kort over området).\nProjektets gennemførelse forudsætter erhvervelse af rettigheder over arealer på en række\nprivate ejendomme. Omfanget af rettighedserhvervelsen varierer afhængigt af anlægstype og\nfunktion.\nFor de arealer, hvor der skal etableres permanente anlæg (regnvandsbassiner, bygværker\nmv.), er der brug for at sikre arealerhvervelse.\nFor de arealer, hvor der skal etableres ledningsanlæg, tekniske grøfter og driftsveje, er der\nbrug for at pålægge servitutter, der sikrer 1) etablering og drift af anlæg, 2) adgang for tilsyn og\nvedligehold og 3) begrænsninger i arealanvendelsen.\nFor de midlertidige arbejdsarealer vil der i anlægsfasen være behov for midlertidig råderet over\narealer til henstilling af materiel, oplagring af jord samt øvrige anlægsrelaterede aktiviteter.\nDe planlagte areal- og rettighedserhvervelser samt anlægsarbejde, herunder adgangsforhold,\nomfatter matr.nr. 7bd, 7ck, 7ci, 7ay Ullerup By, Torup samt matr.nr. 2b og 5a St. Karlsminde\nBy, Torup. Adgangsveje vil berøre eksisterende private veje på matr.nr. 7a og 7aq, samt 7aæ\nUllerup By, Torup langs deres skellinjer. Bilag 1 er et oversigtskort over området med\nangivelse af matrikelnumre.\nTillægget til spildevandsplanen tilvejebringer grundlaget for, at Halsnæs Forsyning kan indgå\nfrivillige aftaler med grundejere om de nødvendige areal- og rettighedserhvervelser. Af hensyn\ntil projektets fremdrift er det imidlertid væsentligt, at der foreligger mulighed for at gennemføre\nprojektet ved ekspropriation, såfremt det ikke lykkes at opnå frivillige aftaler. Halsnæs\nForsynings anmodning om stillingtagen til ekspropriationsvilje er vedlagt som bilag 2.\nEn principbeslutning forventes desuden at understøtte indgåelsen af frivillige aftaler, idet disse\nhar den betydning, at aftalerne kan indgås på ekspropriationslignende vilkår. En eventuel\nekspropriation skal gennemføres af Halsnæs Kommune på baggrund af en forudgående\nprincipbeslutning om ekspropriationsvilje. Bliver en ekspropriation, mod forventning, nødvendig\nvil det kræve endnu en politisk behandling. Halsnæs Kommune er forpligtet til at tage stilling til\nspørgsmål om ekspropriation på vegne af forsyningen, såfremt forsyningen anmoder herom.\nSåfremt byrådet godkender principbeslutningen om ekspropriationsvilje vil Halsnæs Forsyning\nigangsætte dialog med de berørte lodsejere om muligheder for at erhverve arealerne. Derefter\nindkaldes de berørte lodsejere til åstedsforretning for afklaring af, hvorvidt det er muligt at nå til\nenighed om en aftale.\nEkspropriation er et værktøj til, at Halsnæs Forsyning kan erhverve et areal, der tilhører privat\nejendom mod fuld erstatning. Byrådets beslutning om ekspropriationsvilje anvendes kun, hvor\ndet vurderes nødvendigt for, at projektet ved Ullerup Å kan realiseres.\nDet er kommunen, der om nødvendigt foretager ekspropriationen. Der bliver først tale om reel\nekspropriation, når byrådet træffer beslutning om erhvervelse, hvor det ikke har været muligt at\nnå til enighed med ejeren. Byrådet vil i denne situation blive forelagt sagen igen med henblik\npå at tiltræde indgåede aftaler og træffe beslutning om ekspropriation i de tilfælde, hvor en\naftale ikke har kunnet opnås.\n\nDet er nødvendigt, at byrådet udpeger en repræsentant og en suppleant til at lede og deltage i\nåstedsforretningerne, da åstedsforretningerne afholdes i henhold til vejlovens kapitel 10. Det\nmedlem byrådet tidligere har udpeget til ekspropriationskommissionen efter\nekspropriationsprocesloven, er udelukkende udpeget såfremt staten skal ekspropriere.\nPlanlægning af en eventuel åstedsforretning vil være et samarbejde mellem Halsnæs\nForsyning og Halsnæs Kommune.\n\nLov- og plangrundlag\nMiljøbeskyttelsesloven (BEK nr. 1742 af 22/12 2022).\nVejloven (BEK nr. 435 af 24. april 2024).\n\nKonsekvenser\nByrådets principbeslutning om ekspropriationsvilje vil sikre, at projektet kan gennemføres.\n\nHøring, dialog og formidling\nHalsnæs Forsyning afholder møder med alle berørte lodsejere."
     },
     {
      "titel": "Økonomi",
@@ -4166,10 +4255,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Klima, Natur og Demokrati",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=eadac3ee-d498-41f5-b999-72b363f2a4fc",
-   "hentet": "2026-10-23T02:40:26.312Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=ebc14a2c-573a-428d-b918-dda21f20e035",
+   "hentet": "2026-10-29T11:04:59.716Z",
    "titel": "Opdatering af regulativer for husholdningsaffald og erhvervsaffald",
    "afsnit": [
     {
@@ -4181,8 +4270,12 @@
      "tekst": "Byrådet."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling anbefales"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Regulativerne for husholdningsaffald og erhvervsaffald er kommunens lokale regelsæt, som\nomsætter de nationale love og bekendtgørelser på affaldsområdet til konkrete anvisninger for\nborgere og virksomheder i Halsnæs Kommune. Regulativerne beskriver de regler, som borgere\nog virksomheder skal følge og er grundlag for de afgørelser og evt. håndhævelser, som\nkommunens administration foretager, hvis borgere eller virksomheder ikke behandler deres\naffald i overensstemmelse med reglerne.\nDer er foretaget en række opdateringer af de to regulativer, som blev vedtaget i 2022.\nÆndringerne fremgår i vedhæftede bilag. Renskrevne udgaver af de opdaterede regulativer for\nhenholdsvis husholdningsaffald og erhvervsaffald er vedlagt i bilag 1 og 2, mens de\nindarbejdede ændringer i regulativerne fremgår med ændringsskrift i henholdsvis bilag 3 og\nbilag 4.\nBlandt de vigtigste opdateringer i regulativerne kan følgende fremhæves:\nRegulativ for Husholdningsaffald:\n\nDet er indarbejdet som en gennemgående ændring, at kommunikation til borgere om\n\ntømningstidspunkter sker via Halsnæs Forsynings App. Pt. anvendes app'en 'Perfect\nWaste'.\nDer er i \"Ordning for genbrugspladserne\" indført en begrænsning på aflevering af maks.\n10 asbestplader. Denne ændring skyldes, at borgere udelukkende må udskifte et par\nasbestplader selv. Hvis hele taget skal udskiftes, skal det udføres af autoriseret\npersonale og afleveres til modtageranlæg, der er godkendt til at håndtere asbesten.\nBeskrivelsen af ordning for bygge- og anlægsaffald er opdateret og præciseret ift.\nordningens indhold. Bl.a. fremgår det nu, at bygherre har pligt til at anmelde byggeaffald,\nnår den samlede mængde er på mere end 1 ton, samt at der er nye øgede krav om\nselektiv nedrivning af bygninger, når nedrivningen er på mere end 250 m2 etageareal.\n”Ordning for stort kasseret indbo m.m.” er den tidligere storskraldsordning, der har fået et\nmere tidssvarende navn, og hvor ”storskrald” bliver nye ressourcer eller direkte genbrug.\nBeskrivelsen af ordningen er præciseret, og fremadrettet kan der gennemføres forskellige\nforsøgsordninger med henblik på at øge genbrug fremfor udsmidning.\nRegulativ for Erhvervsaffald:\n\nDet er præciseret, at virksomhederne skal kunne dokumentere korrekt affaldssortering og\nordninger, når Halsnæs Kommune gennemfører de lovmæssige affaldstilsyn.\n\"Ordning for ikke-genanvendeligt farligt affald\" og \"Ordning for klinisk risikoaffald\" er rettet\nog præciseret. Fremadrettet får virksomhederne valgmuligheden mellem enten at træffe\naftale med en affaldstransportør eller at tilmelde sig Halsnæs Kommunes henteordning.\nVirksomhederne skal sikre sig, at aftalen er skriftlig, samt at affaldstransportøren eller indsamleren er registreret i Affaldsregistret, så korrekt håndtering kan dokumenteres\noverfor kommunen.\n\nLov- og plangrundlag\nMiljøbeskyttelsesloven,\nAffaldsbekendtgørelsen, BEK nr. 1749 af 30. december 2024,\nAffaldsaktørbekendtgørelsen, BEK nr 1743 af 30/12/2024,\nEmballagebekendtgørelsen, BEK nr 1146 af 29/09/2025,\nBekendtgørelse om håndtering af affald og materialer fra bygge- og nedrivningsarbejde BEK\nAffaldstilsynsbekendtgørelsen, BEK nr 1221 af 22/11/2024,\nBekendtgørelse om asbest i arbejdsmiljøet, BEK nr 1328 af 19/11/2025.\n\nKonsekvenser\nDe to regulativer er opdaterede, så de indeholder et retvisende grundlag, der er i\noverensstemmelse med gældende lovgivning.\n\nHøring, dialog og formidling\nHalsnæs Forsyning har været inddraget i udarbejdelsen af de reviderede regulativer. Begge\nregulativer skal i 4 ugers høring før endelig vedtagelse."
+     "tekst": "Regulativerne for husholdningsaffald og erhvervsaffald er kommunens lokale regelsæt, som\nomsætter de nationale love og bekendtgørelser på affaldsområdet til konkrete anvisninger for\nborgere og virksomheder i Halsnæs Kommune. Regulativerne beskriver de regler, som borgere\nog virksomheder skal følge og er grundlag for de afgørelser og evt. håndhævelser, som\nkommunens administration foretager, hvis borgere eller virksomheder ikke behandler deres\naffald i overensstemmelse med reglerne.\nDer er foretaget en række opdateringer af de to regulativer, som blev vedtaget i 2022.\nÆndringerne fremgår i vedhæftede bilag. Renskrevne udgaver af de opdaterede regulativer for\nhenholdsvis husholdningsaffald og erhvervsaffald er vedlagt i bilag 1 og 2, mens de\nindarbejdede ændringer i regulativerne fremgår med ændringsskrift i henholdsvis bilag 3 og\nbilag 4.\nBlandt de vigtigste opdateringer i regulativerne kan følgende fremhæves:\n\nRegulativ for Husholdningsaffald:\n\nDet er indarbejdet som en gennemgående ændring, at kommunikation til borgere om\ntømningstidspunkter sker via Halsnæs Forsynings App. Pt. anvendes app'en 'Perfect\nWaste'.\nDer er i \"Ordning for genbrugspladserne\" indført en begrænsning på aflevering af maks.\n10 asbestplader. Denne ændring skyldes, at borgere udelukkende må udskifte et par\nasbestplader selv. Hvis hele taget skal udskiftes, skal det udføres af autoriseret\npersonale og afleveres til modtageranlæg, der er godkendt til at håndtere asbesten.\nBeskrivelsen af ordning for bygge- og anlægsaffald er opdateret og præciseret ift.\nordningens indhold. Bl.a. fremgår det nu, at bygherre har pligt til at anmelde byggeaffald,\nnår den samlede mængde er på mere end 1 ton, samt at der er nye øgede krav om\nselektiv nedrivning af bygninger, når nedrivningen er på mere end 250 m2 etageareal.\n”Ordning for stort kasseret indbo m.m.” er den tidligere storskraldsordning, der har fået et\nmere tidssvarende navn, og hvor ”storskrald” bliver nye ressourcer eller direkte genbrug.\nBeskrivelsen af ordningen er præciseret, og fremadrettet kan der gennemføres forskellige\nforsøgsordninger med henblik på at øge genbrug fremfor udsmidning.\nRegulativ for Erhvervsaffald:\n\nDet er præciseret, at virksomhederne skal kunne dokumentere korrekt affaldssortering og\nordninger, når Halsnæs Kommune gennemfører de lovmæssige affaldstilsyn.\n\"Ordning for ikke-genanvendeligt farligt affald\" og \"Ordning for klinisk risikoaffald\" er rettet\nog præciseret. Fremadrettet får virksomhederne valgmuligheden mellem enten at træffe\naftale med en affaldstransportør eller at tilmelde sig Halsnæs Kommunes henteordning.\nVirksomhederne skal sikre sig, at aftalen er skriftlig, samt at affaldstransportøren eller indsamleren er registreret i Affaldsregistret, så korrekt håndtering kan dokumenteres\noverfor kommunen.\n\nLov- og plangrundlag\nMiljøbeskyttelsesloven,\nAffaldsbekendtgørelsen, BEK nr. 1749 af 30. december 2024,\nAffaldsaktørbekendtgørelsen, BEK nr 1743 af 30/12/2024,\nEmballagebekendtgørelsen, BEK nr 1146 af 29/09/2025,\nBekendtgørelse om håndtering af affald og materialer fra bygge- og nedrivningsarbejde BEK\nAffaldstilsynsbekendtgørelsen, BEK nr 1221 af 22/11/2024,\nBekendtgørelse om asbest i arbejdsmiljøet, BEK nr 1328 af 19/11/2025.\n\nKonsekvenser\n\nDe to regulativer er opdaterede, så de indeholder et retvisende grundlag, der er i\noverensstemmelse med gældende lovgivning.\n\nHøring, dialog og formidling\nHalsnæs Forsyning har været inddraget i udarbejdelsen af de reviderede regulativer. Begge\nregulativer skal i 4 ugers høring før endelig vedtagelse."
     },
     {
      "titel": "Økonomi",
@@ -4196,10 +4289,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Klima, Natur og Demokrati",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=eadac3ee-d498-41f5-b999-72b363f2a4fc",
-   "hentet": "2026-10-23T02:40:26.312Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=ebc14a2c-573a-428d-b918-dda21f20e035",
+   "hentet": "2026-10-29T11:04:59.716Z",
    "titel": "Ændringer til mødeplaner 2026-2029",
    "afsnit": [
     {
@@ -4209,6 +4302,10 @@
     {
      "titel": "Beslutningskompetence",
      "tekst": "Udvalget for Plan og Byg, Udvalget for Sundhed og Ældre, Udvalget for Skole,\nUddannelse og Dagtilbud, Udvalget for Kultur og Idræt, Udvalget for Klima, Natur og\nDemokrati og Udvalget for Social og Beskæftigelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Direktionens indstilling godkendt\n\nFRA FAGUDVALG\nBeslutning fra Udvalget for Plan og Byg, den 26. oktober 2026, punkt 79:\nDirektionens indstilling godkendt\n\nBeslutning fra Udvalget for Sundhed og Ældre, den 26. oktober 2026, punkt 82:\nDirektionens indstilling godkendt\n\nBeslutning fra Udvalget for Skole, Uddannelse og Dagtilbud, den 27. oktober 2026,\npunkt 83:\nDirektionens indstilling godkendt\n\nBeslutning fra Udvalget for Kultur og Idræt, den 27. oktober 2026, punkt 72:\nDirektionens indstilling godkendt"
     },
     {
      "titel": "Sagsfremstilling",
@@ -4226,10 +4323,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Klima, Natur og Demokrati",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=eadac3ee-d498-41f5-b999-72b363f2a4fc",
-   "hentet": "2026-10-23T02:40:26.312Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=ebc14a2c-573a-428d-b918-dda21f20e035",
+   "hentet": "2026-10-29T11:04:59.716Z",
    "titel": "Den grønne Ildsjælepris 2026",
    "afsnit": [
     {
@@ -4241,8 +4338,12 @@
      "tekst": "Udvalget for Klima, Natur og Demokrati."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Udvalget har besluttet, hvem der skal modtage den grønne ildsjælepris i 2026."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Den grønne Ildsjælepris blev startet op i 2019 for at anerkende den store indsats, som lokale\nildsjæle udfører i Halsnæs Kommune inden for klima, natur og miljøområdet. Prisen havde\ntidligere udelukkende fokus på den frivillige indsats, hvor modtagere af prisen ikke måtte få\nvederlag for ildsjæle-indsatsen. Da der i Halsnæs Kommune også er ildsjæle, der udfører en\nsærlig indsats inden for klima, natur og miljø-området enten i deres job eller i deres fritid, men\ninden for deres arbejdsområde, blev kriterierne for tildeling af prisen revideret, så disse\nmennesker ligeledes kan indstilles som modtagere af prisen. Dette gælder eksempelvis\nvirksomheder og institutioner som fx. gymnasier, skoler og børnehaver. Kriterierne fremgår af\nbilag 1.\nPå baggrund af Grønt Råds indstilling skal Udvalget for Klima, Natur og Demokrati beslutte,\nhvem der skal tildeles prisen i år. Grønt Råds forslag fremgår af bilag 2.\nDe tidligere år er prisen gået til:\n2019: Halsnæs Affaldshelte, repræsenteret ved Annemette R. Eriksen. Prisen blev\nanvendt til indkøb af udstyr til affaldsopsamlingen\n2020: Ebbe Vitt Jensen og Knud Pedersen. Begge tidligere formænd i DN. Prisen blev\nanvendt til oprensning af vandhul i Ullerup Skov\n2021: Hunderevets Venner. Prisen blev anvendt til etablering af rekreative faciliteter ved\nkysten i Hundested\n2022: Halsnæs Naturklub, repræsenteret ved formand Jim Karlstrøm Jensen. Prisen blev\nanvendt til etablering af kvashegn og beplantning til dyrelivet og til brug i undervisningen\n2023: Arrenæs Græsningslaug. Græsningslauget anvendte prisen til arrangement på\n\nNaturens Dag\n2024: Prisen blev ikke uddelt\n2025: Foreningen Ågabets Bevarelse. Prisen er endnu ikke anvendt. Sølager\nVærkstederne. Prisen blev anvendt på formidlingsskilte.\n\nHøring, dialog og formidling\nVia kommunens hjemmeside samt Facebookside er lokale blevet inviteret til at sende forslag til\nmodtagere af Den grønne Ildsjælepris."
+     "tekst": "Den grønne Ildsjælepris blev startet op i 2019 for at anerkende den store indsats, som lokale\nildsjæle udfører i Halsnæs Kommune inden for klima, natur og miljøområdet. Prisen havde\ntidligere udelukkende fokus på den frivillige indsats, hvor modtagere af prisen ikke måtte få\nvederlag for ildsjæle-indsatsen. Da der i Halsnæs Kommune også er ildsjæle, der udfører en\nsærlig indsats inden for klima, natur og miljø-området enten i deres job eller i deres fritid, men\ninden for deres arbejdsområde, blev kriterierne for tildeling af prisen revideret, så disse\nmennesker ligeledes kan indstilles som modtagere af prisen. Dette gælder eksempelvis\nvirksomheder og institutioner som fx. gymnasier, skoler og børnehaver. Kriterierne fremgår af\nbilag 1.\nPå baggrund af Grønt Råds indstilling skal Udvalget for Klima, Natur og Demokrati beslutte,\nhvem der skal tildeles prisen i år. Grønt Råds forslag fremgår af bilag 2.\nDe tidligere år er prisen gået til:\n2019: Halsnæs Affaldshelte, repræsenteret ved Annemette R. Eriksen. Prisen blev\nanvendt til indkøb af udstyr til affaldsopsamlingen\n2020: Ebbe Vitt Jensen og Knud Pedersen. Begge tidligere formænd i DN. Prisen blev\nanvendt til oprensning af vandhul i Ullerup Skov\n2021: Hunderevets Venner. Prisen blev anvendt til etablering af rekreative faciliteter ved\nkysten i Hundested\n\n2022: Halsnæs Naturklub, repræsenteret ved formand Jim Karlstrøm Jensen. Prisen blev\nanvendt til etablering af kvashegn og beplantning til dyrelivet og til brug i undervisningen\n2023: Arrenæs Græsningslaug. Græsningslauget anvendte prisen til arrangement på\nNaturens Dag\n2024: Prisen blev ikke uddelt\n2025: Foreningen Ågabets Bevarelse. Prisen er endnu ikke anvendt. Sølager\nVærkstederne. Prisen blev anvendt på formidlingsskilte.\n\nHøring, dialog og formidling\nVia kommunens hjemmeside samt Facebookside er lokale blevet inviteret til at sende forslag til\nmodtagere af Den grønne Ildsjælepris."
     },
     {
      "titel": "Økonomi",
@@ -4256,10 +4357,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Klima, Natur og Demokrati",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=eadac3ee-d498-41f5-b999-72b363f2a4fc",
-   "hentet": "2026-10-23T02:40:26.312Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=ebc14a2c-573a-428d-b918-dda21f20e035",
+   "hentet": "2026-10-29T11:04:59.716Z",
    "titel": "Orientering fra formanden",
    "afsnit": [
     {
@@ -4269,6 +4370,10 @@
     {
      "titel": "Beslutningskompetence",
      "tekst": "Udvalget for Klima, Natur og Demokrati."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Formandens orientering taget til efterretning"
     }
    ],
    "bilag": []
@@ -4278,10 +4383,10 @@
    "kommune": "Halsnæs",
    "udvalg": "Udvalget for Klima, Natur og Demokrati",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsorden.halsnaes.dk/vis?id=eadac3ee-d498-41f5-b999-72b363f2a4fc",
-   "hentet": "2026-10-23T02:40:26.312Z",
+   "kilde": "https://dagsorden.halsnaes.dk/vis?id=ebc14a2c-573a-428d-b918-dda21f20e035",
+   "hentet": "2026-10-29T11:04:59.716Z",
    "titel": "Ny mødedato",
    "afsnit": [
     {
@@ -4291,6 +4396,10 @@
     {
      "titel": "Beslutningskompetence",
      "tekst": "Udvalget for Klima, Natur og Demokrati"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Oprindeligt mødetidspunkt fastholdes."
     },
     {
      "titel": "Økonomi",
@@ -6674,7 +6783,7 @@
  "sitemaps": {
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=8360559b-a5a0-4309-abac-4c9dc367fa85": {
    "senest": "2025-12-19",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=4cf0a885-3a6d-4cf6-86a7-11967a211c8c": {
    "senest": "2025-09-27",
@@ -6682,19 +6791,19 @@
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=0793f1ba-f9aa-4be6-9401-1ae0225f324a": {
    "senest": "2026-10-02",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=9addfd9f-9a8c-4eb6-9a35-3306a30787c4": {
    "senest": "2025-12-08",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=3f1718dc-201b-4893-85c1-6a499211766b": {
    "senest": "2026-09-09",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=308a95bd-2df6-459a-8bf2-f8cd04edc29d": {
    "senest": "2025-12-02",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=26ec6d3a-76bd-4b89-be4f-8cdc62b14d05": {
    "senest": "2025-09-27",
@@ -6702,19 +6811,19 @@
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=ae898916-ec4c-42f3-8b6b-1c529c34cadb": {
    "senest": "2026-10-28",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=c9fcb427-f730-4183-aceb-a8b341368cf6": {
    "senest": "2025-09-27",
    "tjekket": "2026-10-23"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=04314088-2d1d-4a69-a794-618b6dbf47da": {
-   "senest": "2026-10-22",
-   "tjekket": "2026-10-28"
+   "senest": "2026-10-29",
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=dcad6910-4910-4716-8837-20d8f206a1f9": {
    "senest": "2025-12-02",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=c409bff0-b2b3-434e-b8c7-32fa25ce3ca1": {
    "senest": "2025-09-27",
@@ -6722,15 +6831,15 @@
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=8d135a8a-40cf-4365-902b-2c6ec0e1396e": {
    "senest": "2026-10-28",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=273323f0-99a2-4d71-b8aa-3d266d9ef980": {
    "senest": "2025-12-02",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=af8d380a-d823-4303-8e17-17bc1a631ab1": {
    "senest": "2026-10-28",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=0287e29a-2095-480a-ad6d-91fb47317a7d": {
    "senest": "2025-09-27",
@@ -6738,27 +6847,27 @@
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=adc30319-a2ae-4047-913f-7795750a4f97": {
    "senest": "2025-12-04",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=d7dcc222-e9f9-4639-b8cb-85ab106f2e1f": {
    "senest": "2025-09-27",
    "tjekket": "2026-10-23"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=7954b360-fa39-4d7b-b1e0-7841d412fc75": {
-   "senest": "2026-10-21",
-   "tjekket": "2026-10-28"
+   "senest": "2026-10-29",
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=e095749f-4f08-4e25-a398-38c427159782": {
    "senest": "2025-12-03",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=9bc88c8c-19ad-4b33-ae90-5272971c97ef": {
-   "senest": "2026-10-22",
-   "tjekket": "2026-10-28"
+   "senest": "2026-10-29",
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=d9d414b7-cd76-454f-94bb-80e441745b52": {
    "senest": "2025-12-04",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=3174c0fd-a2cb-4a7c-bb48-7991e75157b8": {
    "senest": "2025-09-27",
@@ -6766,7 +6875,7 @@
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=fd38b1d8-5d8c-4ff5-8d48-99daf0468e38": {
    "senest": "2025-12-16",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=edfc5a64-24d0-42e3-94c0-8da3750c260f": {
    "senest": "2021-12-21",
@@ -6774,27 +6883,27 @@
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=e5347719-3c77-4cfa-8fed-1efd32fceed9": {
    "senest": "2025-11-28",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=8d1a3135-d7b5-4c74-b6d5-4afe9ec197d6": {
    "senest": "2026-10-20",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=5cf339c6-2085-4bcc-a022-c4df9a190890": {
    "senest": "2026-10-28",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=84cf9d07-f926-4825-b17e-21a857873799": {
    "senest": "2025-12-09",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=8c5fdce6-e0b2-464d-90c6-d1e0a6662b6f": {
    "senest": "2026-10-02",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=dcb407d3-17f3-4c1c-b6b3-6f027fa54e38": {
    "senest": "2025-12-19",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=88d5e8c5-beb8-4079-b3d1-741b9a6eeb8f": {
    "senest": "2025-09-27",
@@ -6802,15 +6911,15 @@
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=8fd816d7-d025-4eae-b02e-1bf4467b7943": {
    "senest": "2026-10-09",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=4efac6e2-68df-407c-8782-f4adcba675f6": {
    "senest": "2026-09-18",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/ForCommittee?committeeId=42bc5fd1-e089-4136-bc30-024e9f4c76e9": {
    "senest": "2025-11-27",
-   "tjekket": "2026-10-28"
+   "tjekket": "2026-10-29"
   },
   "https://dagsorden.halsnaes.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -6818,6 +6927,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-10-28T19:42:53.599Z",
+ "opdateret": "2026-10-29T11:04:59.717Z",
  "kommune": "Halsnæs"
 }
