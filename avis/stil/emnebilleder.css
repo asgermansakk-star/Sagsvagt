@@ -1,5 +1,4 @@
 /* Emneillustrationer. Kan lægges bagerst i assets/avis.css. */
 .emnebillede { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 14px; object-fit: cover; background: var(--kalk-lys, #EEE8DE); }
 .emnebillede.lille { flex: none; width: 96px; height: 54px; border-radius: 8px; }
-.emnebillede.lille.hoejre { float: right; margin: 0 0 6px 12px; }
 @media (min-width: 640px) { .emnebillede.lille { width: 128px; height: 72px; } }

@@ -13,7 +13,6 @@ import { UA, px, xml, vent, C, KORTKILDE, TONE_DEFS, hentFliser, indlaesSkrift, 
 const W = 800, H = 450;
 const NOMINATIM = "https://nominatim.openstreetmap.org/search";
 const CREDIT = "Kort: © OpenStreetMap-bidragydere · Sagsvagt";
-let sidste = new Map();
 
 const slugNavn = (n) => n.toLowerCase().replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "sted";
 const kodeFor = (s, KOMMUNE) => (!s.kommune || s.kommune === "København") ? 101 : KOMMUNE[s.kommune]?.kode;
@@ -117,7 +116,6 @@ async function tegn(k, navn, kommuneNavn, maal) {
 // Returnerer Map(sagsId → { fil, sted, lat, lon, kommune }). fil er null, hvis kortet endnu ikke er tegnet (loftet nåede).
 export async function bygStedkort(sager, h, KOMMUNE, stederFor) {
   const ud = new Map();
-  sidste = ud;
   if (process.env.STEDKORT === "0") return ud;
   const mappe = join(h.ROD, "assets", "stedkort");
   await mkdir(mappe, { recursive: true });
@@ -142,7 +140,7 @@ export async function bygStedkort(sager, h, KOMMUNE, stederFor) {
         if (r === null) { continue; }                                   // netfejl: gem ikke et hul
         koord[nøgle] = vaelg(navn, r, kommune) || { hul: true };
       }
-      if (!koord[nøgle].hul) { valgt = { navn, nøgle, k: koord[nøgle] }; break; }
+      if (!koord[nøgle].hul) { valgt = { navn, k: koord[nøgle] }; break; }
     }
     if (!valgt) continue;
     const fil = `${kode}-${slugNavn(valgt.navn)}.jpg`, sti = join(mappe, fil);
@@ -160,9 +158,6 @@ export async function bygStedkort(sager, h, KOMMUNE, stederFor) {
   console.log(`Stedkort: ${[...ud.values()].filter((v) => v.fil).length} af ${ud.size} sager med koordinat har kort (${nyeKort} nye, ${nyeOpslag} nye opslag, ${fejl} fejl; ${Object.keys(koord).length} steder i cachen, ${hul} uden fund).`);
   return ud;
 }
-
-// Alle sager med koordinat fra seneste bygStedkort, til en oversigtsside med nåle: Map(sagsId → { sted, lat, lon, kommune, fil })
-export const alleKoordinater = () => sidste;
 
 // Figuren på sagssiden (rod: "../" fra sag/ og min/)
 export function stedkortFigur(s, kort, rod, esc) {

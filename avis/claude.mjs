@@ -7,10 +7,6 @@ import Anthropic from "@anthropic-ai/sdk";
 
 export { Anthropic };
 
-export function harNoegle() {
-  return Boolean(process.env.RELEVANS_NOEGLE || process.env.ANTHROPIC_API_KEY);
-}
-
 export function klient() {
   const apiKey = process.env.RELEVANS_NOEGLE || process.env.ANTHROPIC_API_KEY;
   if (!apiKey) return null;

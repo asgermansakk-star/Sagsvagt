@@ -1,5 +1,5 @@
 <?php
-// Redaktionen: send invitation til de valgte (ids) eller alle, der ikke har oprettet en adgangskode endnu (alle: true).
+// Redaktionen: send invitation til de valgte (ids), der ikke har oprettet en adgangskode endnu.
 // Linket virker i 7 dage. Højst 200 pr. gang, så serveren ikke sender for mange mails på én gang.
 declare(strict_types=1);
 require __DIR__ . '/../_bootstrap.php';
@@ -7,14 +7,10 @@ require __DIR__ . '/../_bootstrap.php';
 $d = kraev_post();
 kraev_admin();
 $db = db();
-if (!empty($d['alle'])) {
-    $l = $db->query("SELECT id, email FROM abonnenter WHERE status IN ('tilmeldt', 'inviteret') AND mail_fejl IS NULL ORDER BY oprettet LIMIT 200")->fetchAll();
-} else {
-    $ids = array_values(array_filter(array_map('intval', is_array($d['ids'] ?? null) ? $d['ids'] : [])));
-    if (!$ids) fejl(400, 'Vælg mindst én.');
-    $q = $db->prepare('SELECT id, email FROM abonnenter WHERE status IN (\'tilmeldt\', \'inviteret\') AND mail_fejl IS NULL AND id IN (' . implode(',', array_fill(0, count($ids), '?')) . ') LIMIT 200');
-    $q->execute(array_slice($ids, 0, 200)); $l = $q->fetchAll();
-}
+$ids = array_values(array_filter(array_map('intval', is_array($d['ids'] ?? null) ? $d['ids'] : [])));
+if (!$ids) fejl(400, 'Vælg mindst én.');
+$q = $db->prepare('SELECT id, email FROM abonnenter WHERE status IN (\'tilmeldt\', \'inviteret\') AND mail_fejl IS NULL AND id IN (' . implode(',', array_fill(0, count($ids), '?')) . ') LIMIT 200');
+$q->execute(array_slice($ids, 0, 200)); $l = $q->fetchAll();
 $sendt = []; $fejlede = [];
 foreach ($l as $a) {
     $link = $K['site_url'] . 'min/adgang.html?token=' . lav_token((int)$a['id'], 'opret', 24 * 7);

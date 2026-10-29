@@ -11,7 +11,6 @@ import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const DIR = import.meta.dirname;
-const UA = "SagsvagtBot/0.1 (+https://sagsvagt.dk/om.html)";
 const PRAEFIKS = ["dagsordener", "dagsordner", "dagsorden", "dagsordener-referater", "dagsordenerogreferater", "referater", "politik", "moeder", "udvalg"];
 const idag = new Date().toISOString().slice(0, 10);
 const enUge = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);

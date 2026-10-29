@@ -20,7 +20,6 @@
 <link rel="stylesheet" href="../assets/grafik-laes.css">
 <style>
   /* Min avis: brugerens egen udgave. Bygger på avis.css og tilføjer kun det, der er særligt for siden. */
-  [hidden] { display: none !important; }
   /* Menuen: siderne på én linje, det personlige i "Konto" yderst til højre */
   .mh-logo { gap: 10px; }
   .mh-min { font-size: var(--fodnote); font-weight: 600; letter-spacing: .02em; padding: 3px 8px; border-radius: 6px; background: rgba(230,223,211,.14); color: var(--kalk); white-space: nowrap; }
@@ -61,7 +60,7 @@
   .login small { display: block; margin-top: 12px; font-size: .8125rem; color: rgba(230,223,211,.7); }
 
   /* Udgavens top */
-  .ed { padding: 34px 0 22px; border-bottom: 2px solid var(--nat); }
+  .ed { padding: 22px 0; border-bottom: 2px solid var(--nat); }
   .ed h1 { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 4.2vw, 3rem); line-height: 1.06; letter-spacing: -.022em; margin: 0; }
   .ed .sum { font-family: var(--serif); font-size: 1.25rem; line-height: 1.5; color: #3E3B40; margin: 8px 0 0; max-width: 46em; }
   .ed .sum b { color: var(--nat); font-weight: 600; }
@@ -126,8 +125,6 @@
   .gem[aria-pressed="true"] { color: var(--vin); }
   .ikon svg { width: 18px; height: 18px; }
   .kort .kicker { padding-right: 72px; min-height: 30px; }
-  .decision .votes { display: flex; flex-wrap: wrap; gap: 2px 14px; margin-top: 6px; font-size: var(--fodnote); color: var(--muted); }
-  .lead .hl { font-size: clamp(1.8rem, 3.6vw, 2.6rem); }
   .tom { font-family: var(--serif); color: var(--muted); padding: 16px 0; margin: 0; }
   .dag { font-size: .78rem; font-weight: 700; color: var(--indigo); text-transform: uppercase; letter-spacing: .06em; margin: 18px 0 2px; }
   .dag:first-of-type { margin-top: 10px; }
@@ -143,7 +140,7 @@
   .soeg input { font: inherit; font-size: .9375rem; padding: 9px 14px 9px 36px; border: 1.5px solid var(--felt-kant); border-radius: 8px; background: var(--kalk-lys); width: 260px; max-width: 100%; }
   .soeg svg { position: absolute; left: 13px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; color: var(--muted); }
   .liste { list-style: none; margin: 0; padding: 0; }
-  .liste li { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 20px; }
+  .liste li { padding: 16px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 4px 20px; }
   .liste .hl { font-size: 1.1875rem; line-height: 1.25; }
   .liste .dek { font-size: .9688rem; line-height: 1.5; margin-top: 4px; }
   .liste .tags { margin-top: 8px; }
@@ -169,12 +166,10 @@
   .m-andre a { color: var(--indigo); }
   .mail-knap { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border: 1.5px solid var(--nat); border-radius: 8px; background: transparent; color: var(--nat); cursor: pointer; }
   .mail-knap:hover { background: var(--nat); color: var(--kalk); }
-  dialog.mail-dlg { width: min(760px, calc(100vw - 24px)); }
   .mail-ramme { display: block; width: 100%; height: min(72dvh, 900px); border: 0; background: #E6DFD3; }
   .mail-note { margin: 0; padding: 12px 24px 16px; font-size: .8125rem; color: var(--muted); border-top: 1px solid var(--rule); }
 
   /* Læs sagen */
-  dialog.laes-dlg { width: min(860px, calc(100vw - 24px)); }
   .laes-top-knapper { display: flex; gap: 4px; align-items: center; }
   .laes-top-knapper .ikon { color: var(--kalk); }
   .laes-top-knapper .ikon:hover { background: rgba(230,223,211,.14); color: var(--kalk); }
@@ -217,7 +212,7 @@
   .skriv-boks button:hover { background: var(--rosen); }
 
   .app-link { margin: 18px 0 0; }
-  .app-link button:focus-visible, .velkommen .v-link:focus-visible, .velkommen .v-luk:focus-visible, .strimmel button:focus-visible { outline: 3px solid var(--skifer); outline-offset: 2px; } /* all: unset fjerner ellers fokusringen */
+  .app-link button:focus-visible, .velkommen .v-link:focus-visible, .velkommen .v-luk:focus-visible { outline: 3px solid var(--skifer); outline-offset: 2px; } /* all: unset fjerner ellers fokusringen */
   .mh-nav .konto button:focus-visible { outline: 3px solid var(--lyng); outline-offset: -3px; }
   .app-link button { all: unset; cursor: pointer; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; min-height: 44px; display: inline-flex; align-items: center; }
   .app-trin h3 { font-size: 1rem; margin: 0 0 8px; }
@@ -351,7 +346,6 @@
   .strimmel [aria-pressed="true"] small { color: var(--vin); }
   .strimmel [aria-pressed="true"] i { color: var(--muted); }
   .ugen-note { margin: 10px 0 0; font-size: .8125rem; color: rgba(230,223,211,.72); }
-  .ed { padding-top: 22px; }
   .m-moede.markeret .dag { background: var(--lyng); color: var(--blaek); border-radius: 6px; padding: 2px 8px; margin-left: -8px; display: inline-block; }
 
   /* ---------- Billeder på sagerne: plankort, stedkort eller emnets tegning, som i avisen ---------- */
@@ -422,23 +416,18 @@
   }
   @media (max-width: 720px) {
     body.har-nav { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+    /* Lys tab-bjælke som i nyhedsapps: den aktive fane mørk med en streg over, de andre grå */
     .masthead .mh-nav { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; order: 0; flex-basis: auto; margin: 0; display: flex; justify-content: space-around; gap: 0;
-      padding: 6px 4px calc(6px + env(safe-area-inset-bottom)); overflow: visible; background: #0e0f14; border-top: 1px solid rgba(230,223,211,.14); }
-    .masthead .mh-nav > a, .masthead .mh-nav .konto summary { flex: 1 1 0; position: relative; flex-direction: column; justify-content: center; gap: 3px; min-height: 56px; padding: 4px 2px; font-size: .6875rem; font-weight: 600; border-radius: 10px; opacity: .72; }
-    .masthead .mh-nav > a[aria-current], .masthead .mh-nav .konto.aktiv summary { opacity: 1; background: rgba(230,223,211,.12); }
+      padding: 6px 4px calc(6px + env(safe-area-inset-bottom)); overflow: visible; background: #F6F2EA; border-top: 1px solid var(--rule); }
+    .masthead .mh-nav > a, .masthead .mh-nav .konto summary { flex: 1 1 0; position: relative; flex-direction: column; justify-content: center; gap: 3px; min-height: 56px; padding: 4px 2px; font-size: .6875rem; font-weight: 600; border-radius: 10px; color: var(--nat); opacity: .55; }
     .mh-nav .ni { display: block; width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
     .mh-nav > a[aria-current] .ni { stroke-width: 2.2; }
-    .mh-nav .kun-stor { display: none !important; }
-    .mh-nav .kun-lille { display: flex !important; }
     .nav-antal { position: absolute; top: 2px; left: calc(50% + 6px); min-width: 18px; height: 18px; font-size: .65rem; padding: 0 5px; }
     .mh-nav .konto { margin: 0; flex: 1 1 0; display: flex; position: static; }
     .mh-nav .konto summary::after { display: none; }
     .initial { width: 22px; height: 22px; font-size: .72rem; }
     .initial:empty { display: block; width: 22px; height: 22px; background: none; border: 1.8px solid currentColor; }
     .mh-nav .konto > div { position: fixed; left: 12px; right: 12px; top: auto; bottom: calc(80px + env(safe-area-inset-bottom)); min-width: 0; }
-    /* Lys tab-bjælke som i nyhedsapps: den aktive fane mørk med en streg over, de andre grå */
-    .masthead .mh-nav { background: #F6F2EA; border-top: 1px solid var(--rule); }
-    .masthead .mh-nav > a, .masthead .mh-nav .konto summary { color: var(--nat); opacity: .55; }
     .masthead .mh-nav > a[aria-current], .masthead .mh-nav .konto.aktiv summary, .masthead .mh-nav .konto[open] summary { opacity: 1; background: none; border-radius: 0; box-shadow: inset 0 2px 0 var(--nat); font-weight: 700; }
     .mh-nav .initial { background: var(--nat); color: var(--kalk); }
     .mh-nav .nav-antal { background: var(--vin); color: #fff; }
@@ -465,7 +454,6 @@
     .mine { flex-wrap: nowrap; overflow-x: auto; margin: 16px -16px 0; padding: 0 16px 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
     .mine::-webkit-scrollbar { display: none; }
     .mine > * { flex: none; }
-    .ed { padding-top: 22px; }
     .ed h1 { font-size: 1.875rem; }
     .ed .sum { font-size: 1.0625rem; }
     .tilpas { margin-left: 0; }
@@ -543,14 +531,7 @@
         </div>
         <p class="app-link" id="app-link" hidden><button type="button">Læg Sagsvagt på hjemmeskærmen som app</button></p>
       </div>
-      <form class="login" id="login" novalidate onsubmit="return false" aria-describedby="login-note">
-        <h2>Log ind</h2>
-        <p>Vi sender dig et login-link på mail. Ingen adgangskode.</p>
-        <label for="login-mail">Din e-mail</label>
-        <input id="login-mail" type="email" autocomplete="email" placeholder="navn@eksempel.dk" disabled>
-        <button type="submit" disabled>Send login-link</button>
-        <small id="login-note">Login er ikke åbnet endnu.</small>
-      </form>
+      <form class="login" id="login" novalidate onsubmit="return false" aria-describedby="login-note"></form>
     </div>
   </div>
 
@@ -614,7 +595,7 @@
             <input id="p-ord" placeholder="fx Lersøparken, Valby Langgade">
             <p class="hint">Adskil med komma. Vi finder sager, hvor ordene står, også inde i sagsteksten.</p>
           </div>
-          <div class="slut"><span id="p-gemmes">Dine valg gemmes kun i denne browser, indtil login er klar.</span><span class="knapper-h"><button type="button" id="p-nulstil">Nulstil</button><button type="button" id="p-slet" hidden>Slet min konto</button><button type="button" id="p-gem" class="p-gem">Gem</button></span></div>
+          <div class="slut"><span id="p-gemmes">Dine valg gemmes på din konto, så de følger dig mellem computer og telefon.</span><span class="knapper-h"><button type="button" id="p-nulstil">Nulstil</button><button type="button" id="p-slet" hidden>Slet min konto</button><button type="button" id="p-gem" class="p-gem">Gem</button></span></div>
         </form>
       </section>
 
@@ -819,7 +800,7 @@
 (async () => {
   const $ = (s) => document.querySelector(s);
   // Appen: service workeren registreres med det samme (også på login-siden), så appen kan installeres og virker uden net
-  if ("serviceWorker" in navigator && !/github\.io$/.test(location.hostname)) navigator.serviceWorker.register("../sw.js", { scope: "../" }).catch(() => {});
+  if ("serviceWorker" in navigator) navigator.serviceWorker.register("../sw.js", { scope: "../" }).catch(() => {});
   // Chrome sender tilbuddet om at installere tidligt; det gemmes, til man trykker "Installér appen" i Konto
   // "Installér appen" (i Konto og under login) vises kun i browseren, ikke i den installerede app. Android og computerens
   // Chrome viser deres egen installationsboks; iPhone kræver Del → Føj til hjemmeskærm, som dialogen forklarer.
@@ -885,36 +866,23 @@
   const gemt = (k, v) => { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch { return null; } };
 
   /* ---------- Adgang ----------
-     Rigtigt login: serveren (api/mig.php) siger, hvem der er logget ind. server er { email, profil, admin } når man er logget ind,
-     false når serveren svarer, men man ikke er logget ind, og null når der ikke er nogen server (fx den statiske testserver).
-     Uden server bruges den gamle forpremiere: min/?adgang=forpremiere (luk igen med ?adgang=luk). */
+     Serveren (api/mig.php) siger, hvem der er logget ind: server er { email, profil, admin }, når man er logget ind,
+     og ellers false (også når serveren ikke svarer, så login-boksen vises og selv siger, hvad der er galt). */
   const api = (fil, data) => fetch(`../api/${fil}`, { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data || {}) })
     .then((r) => r.json().catch(() => ({})).then((j) => { if (!r.ok) throw new Error(j.fejl || "Noget gik galt. Prøv igen."); return j; }));
-  let server = null;
+  let server = false;
   try {
     const r = await fetch("../api/mig.php", { credentials: "same-origin", cache: "no-store" });
-    if ((r.headers.get("content-type") || "").includes("application/json")) server = r.ok ? await r.json() : false;
-  } catch { server = null; }
-  const q = new URLSearchParams(location.search);
-  if (q.get("adgang") === "forpremiere") gemt("sv-adgang", true);
-  if (q.get("adgang") === "luk") gemt("sv-adgang", false);
-  if (q.has("adgang")) history.replaceState(null, "", location.pathname + location.hash);
-  // Testlogin: på din egen computer (localhost) virker login-boksen med samme flow som det rigtige login via
-  // mail-link. Brugeren gemmes kun i browseren. På sagsvagt.dk er boksen slået fra, indtil der er et rigtigt login.
-  const LOKAL = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
-  const bruger = server ? { email: server.email } : server === false ? null : gemt("sv-bruger");
-  const aaben = server !== null ? !!server : !!(bruger && bruger.email) || gemt("sv-adgang") === true || q.get("adgang") === "forpremiere";
-  document.querySelectorAll("[data-aaben]").forEach((el) => (el.hidden = !aaben));
+    if (r.ok && (r.headers.get("content-type") || "").includes("application/json")) server = await r.json();
+  } catch {}
   // Menuen vises først, når man er logget ind (før det er der kun forsiden med login)
-  $("#min-nav").hidden = !aaben; document.body.classList.toggle("har-nav", aaben);
-  if (!aaben) { $("#indlaes").hidden = true; $("#lukket").hidden = false; if (server === false) rigtigLogin(); else if (LOKAL) testLogin(); return; }
-  $("#logud").title = bruger?.email ? `Logget ind som ${bruger.email}` : "Luk Min avis igen";
-  $("#logud").addEventListener("click", () => {
-    if (server) { api("logud.php").finally(() => (location.href = location.pathname)); return; }
-    gemt("sv-bruger", null); gemt("sv-adgang", false); location.href = location.pathname;
-  });
+  $("#min-nav").hidden = !server; document.body.classList.toggle("har-nav", !!server);
+  if (!server) { $("#indlaes").hidden = true; $("#lukket").hidden = false; rigtigLogin(); return; }
+  const bruger = { email: server.email }, q = new URLSearchParams(location.search);
+  $("#logud").title = `Logget ind som ${server.email}`;
+  $("#logud").addEventListener("click", () => { api("logud.php").finally(() => (location.href = location.pathname)); });
   // Redaktionen får et link til oversigten over tilmeldte
-  $("#admin-link").hidden = !server?.admin;
+  $("#admin-link").hidden = !server.admin;
 
   // Login med e-mail og adgangskode (adgangskoden oprettes via linket i invitationen)
   function rigtigLogin() {
@@ -938,22 +906,6 @@
     $("#login-mail").focus({ preventScroll: true });
   }
 
-  function testLogin() {
-    const f = $(".login"), inp = $("#login-mail"), btn = $(".login button"), note = $("#login-note");
-    inp.disabled = btn.disabled = false;
-    note.textContent = "Testlogin: virker kun på din egen computer, indtil det rigtige login er bygget.";
-    f.onsubmit = (e) => {
-      e.preventDefault();
-      const email = inp.value.trim().toLowerCase();
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { note.className = "fejl"; note.textContent = "Skriv en gyldig e-mailadresse."; inp.focus(); return; }
-      f.innerHTML = `<h2>Tjek din mail</h2><p>Vi har sendt et login-link til <b>${esc(email)}</b>. Linket virker i 15 minutter.</p>`
-        + `<button type="button" id="aabn-link">Åbn login-linket</button>`
-        + `<small>Lokal test: knappen svarer til at klikke på linket i mailen. <a href="#" id="andet" style="color:inherit">Brug en anden e-mail</a></small>`;
-      $("#aabn-link").focus();
-      $("#aabn-link").onclick = () => { gemt("sv-bruger", { email, loggetInd: new Date().toISOString() }); location.reload(); };
-      $("#andet").onclick = (ev) => { ev.preventDefault(); location.reload(); };
-    };
-  }
 
   /* ---------- Emner ----------
      Emnerne og hvilke sager de dækker kommer fra avisen (avis/beriget.mjs) via assets/sager.json:
@@ -1054,18 +1006,18 @@
   // Hver tegning får sine egne id'er, så gradienten virker, selv om ikonet står flere steder på siden
   let ikonNr = 0;
   const ikonSvg = (id) => `<svg viewBox="0 0 32 32" aria-hidden="true">${IKONER[id][1](++ikonNr)}</svg>`;
-  const forbogstav = () => (profil.navn.trim() || bruger?.email || "").charAt(0).toUpperCase();
+  const forbogstav = () => (profil.navn.trim() || bruger.email || "").charAt(0).toUpperCase();
   const tegnAvatar = () => { $("#konto-initial").innerHTML = IKONER[profil.ikon] ? ikonSvg(profil.ikon) : esc(forbogstav()); };
-  const PKEY = bruger?.email ? `sv-profil:${bruger.email}` : "sv-profil";
+  const PKEY = `sv-profil:${bruger.email}`;
   // Med login ligger profilen på serveren og følger brugeren mellem computer og telefon; browseren har en kopi
-  let profil = { ...STANDARD, ...((server && server.profil) || gemt(PKEY) || gemt("sv-profil") || {}) };
+  let profil = { ...STANDARD, ...(server.profil || gemt(PKEY) || gemt("sv-profil") || {}) };
   // Før kunne man kun vælge én kommune (profil.kommune); nu er det en liste
   if (!Array.isArray(profil.kommuner) || (!profil.kommuner.length && profil.kommune)) profil.kommuner = profil.kommune ? [profil.kommune] : [];
   delete profil.kommune;
   let tGem;
   const gem = () => {
     gemt(PKEY, profil);
-    if (server) { clearTimeout(tGem); tGem = setTimeout(() => api("profil.php", profil).catch((e) => console.warn("Profilen blev ikke gemt:", e.message)), 600); }
+    clearTimeout(tGem); tGem = setTimeout(() => api("profil.php", profil).catch((e) => console.warn("Profilen blev ikke gemt:", e.message)), 600);
   };
 
   /* ---------- Dato ---------- */
@@ -1107,7 +1059,7 @@
      Et øjebliksbillede af sagerne (id → status) gemmes i browseren. Et nyt besøg er en pause på over 3 timer, og vi
      sammenligner altid med forrige besøg, så "nyt" kun er det, der faktisk er kommet til eller har skiftet status.
      shortcut: billedet ligger pr. enhed (profil.php gemmer kun faste felter); flyt det til serveren, hvis folk savner det på tværs af enheder. */
-  const SKEY = `sv-sidst:${bruger?.email || ""}`;
+  const SKEY = `sv-sidst:${bruger.email}`;
   const STK = { kommer: "k", besluttet: "b", behandlet: "h" };
   let SIDST = null;
   function sidstBesoeg() {
@@ -1159,9 +1111,7 @@
   // Billedet: plankortet eller stedkortet fra avisen (b i sager.json), ellers emnets tegning, som på sagssiderne
   const EMNEBILLEDER = new Set(["aeldre", "affald", "bolig", "budget", "byggeri", "erhverv", "klima", "kultur", "skole", "social", "trafik", "unge"]);
   const billede = (s) => `../${s.b || `assets/emner/${[...(s.et || []), ...(s.e || [])].find((id) => EMNEBILLEDER.has(id)) || "generel"}.svg`}`;
-  // Mens avisen er lukket (se .htaccess), linker sagerne til kommunens egen side. Sæt AVIS_AABEN = true, når avisen åbner igen.
-  const AVIS_AABEN = true;
-  const link = (s) => (AVIS_AABEN ? `../${s.url}` : s.k);
+  const link = (s) => `../${s.url}`;
   // Når avisen er åben, får menuen et link til den. Mens den er lukket, ville linket sende folk til tilmeldingssiden.
   const billedeLink = (s) => `<a class="kort-billede" href="${link(s)}" data-laes="${esc(s.id)}" tabindex="-1" aria-hidden="true"><img src="${billede(s)}" alt="" loading="lazy"></a>`;
   const kortet = (s, slags) => {
@@ -1206,7 +1156,7 @@
       + (IKKE_AABEN.tilbage ? ", så du ser København indtil da." : `. Vi giver besked, når ${IKKE_AABEN.navne.length > 1 ? "de åbner" : "den åbner"}.`);
     tegnTop(nBesl, nKom, kommende);
     $("#udgave").innerHTML = `<b>${esc(stor(dato(IDAG, { weekday: "long", day: "numeric", month: "long", year: "numeric" })))}</b><br>Din udgave · uge ${ugenr(IDAG)}`;
-    $("#konto-mail").textContent = bruger?.email ? `Logget ind som ${bruger.email}` : "";
+    $("#konto-mail").textContent = `Logget ind som ${bruger.email}`;
     tegnAvatar();
     tegnMine();
 
@@ -1346,7 +1296,7 @@
     $("#i-sag").value = valgt ? id : "";
     const k = gemt(KLADDE) || {};
     for (const n of FELTER) if (k[n] && !sf[n].value) sf[n].value = k[n];
-    if (!sf.email.value && bruger?.email) sf.email.value = bruger.email;
+    if (!sf.email.value) sf.email.value = bruger.email;
     sf.hidden = false; $("#tak").hidden = true; $("#skriv-msg").textContent = ""; taeller();
     dlg.showModal();
     (valgt ? sf.overskrift : sf.sag).focus();
@@ -1419,12 +1369,6 @@
       ind.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener("click", (e) => {
         e.preventDefault(); ind.querySelector(a.getAttribute("href"))?.scrollIntoView({ block: "start" });
       }));
-      if (!AVIS_AABEN) ind.querySelectorAll("a[href]").forEach((a) => {
-        const u = new URL(a.getAttribute("href"), location.href);
-        if (u.origin === location.origin && /^\/(sag|udvalg|bydel|emne)\//.test(u.pathname)) {
-          const sp = document.createElement("span"); sp.className = a.className; sp.append(...a.childNodes); a.replaceWith(sp);
-        }
-      });
       ind.scrollTop = 0; d.scrollTop = 0;
     } catch (err) {
       ind.innerHTML = `<p class="tom">Sagen kunne ikke hentes. <a href="${esc(s.k || link(s))}" rel="nofollow">Læs den hos kommunen</a>.</p>`;
@@ -1438,7 +1382,7 @@
     const { lavMandagsmail } = await import("../assets/mandagsmail.js");
     const d = new Date(); d.setDate(d.getDate() + ((8 - d.getDay()) % 7));
     const mandag = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-    const mail = lavMandagsmail({ data: DATA, profil, idag: mandag, modtager: bruger?.email || "", linkTil: link, logo: new URL("../assets/mail-logo.png", location.href).href });
+    const mail = lavMandagsmail({ data: DATA, profil, idag: mandag, modtager: bruger.email, linkTil: link, logo: new URL("../assets/mail-logo.png", location.href).href });
     $("#mail-emne").textContent = `Emne: ${mail.emne}`;
     $("#mail-ramme").srcdoc = mail.html;
   }
@@ -1516,7 +1460,7 @@
     const b = $("#p-gem"), note = $("#p-gemmes"), foer = note.textContent;
     clearTimeout(tGem); gemt(PKEY, profil); b.disabled = true;
     try {
-      if (server) await api("profil.php", profil);
+      await api("profil.php", profil);
       note.textContent = "Gemt."; b.textContent = "Gemt";
       setTimeout(() => { if (!$("#panel").hidden) vend(); note.textContent = foer; b.textContent = "Gem"; scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }, 900);
     } catch (err) {
@@ -1538,13 +1482,13 @@
     byggeri: /bygg|lokalplan|byplan/, skole: /skole|børn|dagtilbud|uddannelse/, aeldre: /ældre|sundhed|pleje/, social: /social|udsat|hjemløs/,
     budget: /budget|økonomi/, kultur: /kultur|fritid|idræt|bibliotek/, erhverv: /erhverv|job|arbejdsmarked/ };
   function forudfyld() {
-    const t = (server?.tilmelding?.emner || "").toLowerCase();
+    const t = (server.tilmelding?.emner || "").toLowerCase();
     const emner = Object.keys(EMNER).filter((id) => t.includes(EMNER[id].navn.toLowerCase()) || NOEGLEORD[id]?.test(t));
     if (emner.length) { profil.emner = emner; gem(); }
     return emner.map((id) => EMNER[id].navn);
   }
   function visVelkomst(forud) {
-    if (!server || profil.velkommen) return;
+    if (profil.velkommen) return;
     // Emnenavnene indeholder selv "og" (Skoler og børn), så de skrives som en liste med kommaer
     $("#velkommen-forud").textContent = forud.length ? `(vi har valgt ${forud.join(", ").toLowerCase()} ud fra din tilmelding)` : "";
     $("#velkommen").hidden = false;
@@ -1554,7 +1498,7 @@
   $("#velkommen-fb").addEventListener("click", () => aabnFeedback());
 
   /* ---------- Feedback ----------
-     Gemmes i databasen og sendes til redaktionen (api/feedback.php). Uden server åbnes en færdigudfyldt mail. */
+     Gemmes i databasen og sendes til redaktionen (api/feedback.php). */
   const fbDlg = $("#fb"), fbForm = $("#fb-form");
   function aabnFeedback() {
     fbForm.hidden = false; $("#fb-tak").hidden = true; $("#fb-msg").textContent = "";
@@ -1573,7 +1517,6 @@
     const msg = $("#fb-msg"), btn = $(".send", fbForm), tekst = fbForm.tekst.value.trim();
     if (tekst.length < 3) { msg.className = "skriv-msg fejl"; msg.textContent = "Skriv et par ord om, hvad du synes."; fbForm.tekst.focus(); return; }
     const data = { tekst, vurdering: fbForm.vurdering.value, kontakt: fbForm.kontakt.checked, side: `${SIDER[location.hash.slice(1)] || "Min avis"} · ${innerWidth} px bred skærm` };
-    if (!server) { location.href = `mailto:${REDAKTION}?subject=${encodeURIComponent("Feedback til Min avis")}&body=${encodeURIComponent(tekst)}`; return; }
     btn.disabled = true; msg.className = "skriv-msg"; msg.textContent = "Sender …";
     api("feedback.php", data)
       .then(() => { fbForm.reset(); fbForm.hidden = true; $("#fb-tak").hidden = false; $("#fb-tak .send").focus(); })
@@ -1583,10 +1526,7 @@
 
   /* ---------- Slet konto ----------
      Kun med rigtigt login. Redaktionens egen konto kan ikke slettes herfra. */
-  if (server) {
-    $("#p-gemmes").textContent = "Dine valg gemmes på din konto, så de følger dig mellem computer og telefon.";
-    $("#p-slet").hidden = !!server.admin;
-  }
+  $("#p-slet").hidden = !!server.admin;
   $("#p-slet").addEventListener("click", () => { $("#slet-msg").textContent = ""; $("#slet-kode").value = ""; $("#slet").showModal(); $("#slet-kode").focus(); });
   $("#slet").addEventListener("click", (e) => { if (e.target === $("#slet")) $("#slet").close(); });
   $("#slet-form").addEventListener("submit", (e) => {
@@ -1597,7 +1537,6 @@
     api("slet-konto.php", { adgangskode: $("#slet-kode").value })
       .then(() => {
         [PKEY, "sv-profil", KLADDE, "sv-bruger", "sv-adgang"].forEach((k) => { try { localStorage.removeItem(k); } catch {} });
-        document.querySelectorAll("[data-aaben]").forEach((el) => (el.hidden = true));
         $("#main").innerHTML = `<div class="wrap"><div class="lukket" style="display:block"><h1>Din konto er slettet.</h1>`
           + `<p class="lead-p">Vi har slettet din e-mail, din tilmelding og alt, hvad du har valgt i Min avis. Tak, fordi du prøvede Sagsvagt.</p>`
           + `<a class="btn moerk" href="../vagt.html">Til forsiden</a></div></div>`;
@@ -1614,7 +1553,7 @@
   // De åbne kommuner står i kommune/aabne.json (avis/kommuner.mjs); Københavns sager ligger i assets/sager.json.
   const slugAf = (t) => t.toLowerCase().replace(/\s+kommunes?$/, "").replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const ALIAS = { kbh: "koebenhavn", koebenhavns: "koebenhavn", lyngby: "lyngby-taarbaek", taastrup: "hoeje-taastrup" };
-  const oensket = (q.get("kommune") || server?.tilmelding?.kommuner || "").split(/,|\/|\s+og\s+/i)
+  const oensket = (q.get("kommune") || server.tilmelding?.kommuner || "").split(/,|\/|\s+og\s+/i)
     .map((t) => ({ navn: stor(t.trim().replace(/\s+kommunes?$/i, "")), slug: ALIAS[slugAf(t)] || slugAf(t) })).filter((k) => k.slug);
   const erAaben = (slug) => AABNE.some((a) => a.slug === slug);
   const navnPaa = (slug) => AABNE.find((a) => a.slug === slug)?.navn || slug;
@@ -1691,7 +1630,7 @@
       IKKE_AABEN = lukkede.length ? { navne: lukkede.map((o) => o.navn), tilbage: !fraTilmelding.length } : null;
       await brugKommuner(slugs);
       SIDST = sidstBesoeg();
-      const forud = server && !server.profil ? forudfyld() : [];
+      const forud = !server.profil ? forudfyld() : [];
       $("#indlaes").hidden = true; $("#avis").hidden = false;
       fyldPanel(); tegn(); visSide(); visVelkomst(forud); hentFund();
     })

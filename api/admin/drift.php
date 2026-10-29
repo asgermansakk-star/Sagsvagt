@@ -23,7 +23,6 @@ $naeste = $nu->modify('monday next week')->format('Y-m-d');
 $uge = function (string $prefix, string $uge) use ($en): array {
     $u = $en("SELECT * FROM {$prefix}_uger WHERE uge = ?", [$uge]);
     $koe = $en("SELECT COUNT(*) n FROM {$prefix}_koe WHERE uge = ?", [$uge]);
-    $id = $prefix === 'mandagsmail' ? 'abonnent_id' : 'kunde_id';
     $sendt = $en("SELECT COUNT(*) n, MIN(sendt) foerste, MAX(sendt) sidste FROM {$prefix}_sendt WHERE uge = ?", [$uge]);
     return ['uge' => $uge, 'planlagt' => $u['planlagt'] ?? null, 'faerdig' => $u['faerdig'] ?? null, 'antal' => isset($u['antal']) ? (int)$u['antal'] : null,
         'stoppet' => $u['stoppet'] ?? null, 'i_koe' => (int)($koe['n'] ?? 0), 'sendt' => (int)($sendt['n'] ?? 0), 'foerste_sendt' => $sendt['foerste'] ?? null, 'sidste_sendt' => $sendt['sidste'] ?? null];

@@ -78,7 +78,7 @@ function mm_aabne(): array { return json_decode((string)@file_get_contents(dirna
 
 // Ugens mail til hver tilmeldt, som admin-siden viser dem. Springer over: dem, der allerede har fået eller har en planlagt
 // mail til ugen, mails uden sager, og ventelistemails til dem, der har fået en mail inden for 4 uger.
-function mm_ugens_mails(PDO $db, string $uge, bool $medAfmeld = true): array {
+function mm_ugens_mails(PDO $db, string $uge): array {
     require_once __DIR__ . '/_mandagsmail_lav.php';
     $aabne = mm_aabne();
     if (!$aabne) return [];
@@ -90,7 +90,7 @@ function mm_ugens_mails(PDO $db, string $uge, bool $medAfmeld = true): array {
     $ud = [];
     $fireUger = gmdate('Y-m-d\TH:i:s\Z', strtotime("$uge 00:00:00 UTC") - 27 * 86400);
     foreach ($q->fetchAll() as $a) {
-        $m = mm_mail_til($a, $uge, $aabne, 'mm_hent_kommune', $medAfmeld ? afmeld_link((int)$a['id']) : '');
+        $m = mm_mail_til($a, $uge, $aabne, 'mm_hent_kommune', afmeld_link((int)$a['id']));
         $n = $m['mail']['antal'];
         $m['spring'] = $a['sendt'] ? 'har fået ugens mail' : ($a['planlagt'] ? 'er allerede planlagt'
             : ($m['type'] === 'Venteliste' ? (($a['sidst'] ?? '') >= $fireUger ? 'ventelistemail inden for 4 uger' : '')

@@ -1,13 +1,11 @@
-// Mindre grafik til sagerne: høringsnedtælling, læserfotos, luftfoto og gadefoto.
-// Luftfoto (Klimadatastyrelsen, frie data) og gadefoto (Mapillary, CC BY-SA 4.0) kræver hver en gratis nøgle:
+// Mindre grafik til sagerne: høringsnedtælling, læserfotos og luftfoto.
+// Luftfoto (Klimadatastyrelsen, frie data) kræver en gratis nøgle:
 //   DATAFORSYNINGEN_TOKEN  fra dataforsyningen.dk (Min side › Tokens)   LUFTFOTO_LAG (standard orto_foraar)
-//   MAPILLARY_TOKEN        fra mapillary.com/dashboard/developers (client token)
-// Uden nøgle springes de over. Se ../../jura-billeder.md for kildeangivelser og ret til brug.
+// Uden nøgle springes det over. Se ../../jura-billeder.md for kildeangivelser og ret til brug.
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 
-const UA = "Sagsvagt/1.0 (+https://sagsvagt.dk/om.html)";
 const dage = (fra, til) => Math.round((Date.parse(til) - Date.parse(fra)) / 864e5);
 
 // ---------- Høringsnedtælling ----------
@@ -35,7 +33,7 @@ export function laeserfotoFigur(s, fotos, rod, esc) {
 export const sendFotoLink = (s, sted, rod, esc) =>
   `<p class="send-foto"><a href="${rod}foto.html?sag=${encodeURIComponent(s.id)}${sted ? `&amp;sted=${encodeURIComponent(sted)}` : ""}">Har du et billede fra ${sted ? esc(sted) : "stedet"}? Send det til os</a></p>`;
 
-export function fotoSideIndhold(esc) {
+export function fotoSideIndhold() {
   return `<div class="wrap smal">
   <article class="foto-side">
     <h1 class="hl">Send et billede til Sagsvagt</h1>
@@ -114,44 +112,4 @@ export function luftfotoFigur(s, l, rod, esc) {
   const k = l.get(s.id);
   return k ? `<figure class="luftfoto"><img src="${rod}${k.fil}" width="1200" height="800" loading="lazy" alt="Luftfoto af området for ${esc(k.plannavn)}">
           <figcaption>Sådan ser området ud fra luften i dag. Luftfoto: Klimadatastyrelsen, Ortofoto forår. Plangrænse: Plandata.dk.</figcaption></figure>` : "";
-}
-
-// ---------- Gadefoto (Mapillary) ----------
-// Nærmeste åbne gadefoto ved sagens sted (ansigter og nummerplader er sløret af Mapillary). Licens CC BY-SA 4.0 med kreditering.
-export async function bygGadefotos(stedkort, h) {
-  const token = process.env.MAPILLARY_TOKEN, ud = new Map();
-  if (!token) return ud;
-  const mappe = join(h.ROD, "assets", "gadefoto");
-  await mkdir(mappe, { recursive: true });
-  const indeksSti = join(mappe, "index.json");
-  const indeks = existsSync(indeksSti) ? JSON.parse(await readFile(indeksSti, "utf8")) : {};
-  let nye = 0;
-  for (const [id, k] of stedkort) {
-    if (k.lat == null) continue;
-    const noegle = `${k.lat.toFixed(4)},${k.lon.toFixed(4)}`;
-    if (!(noegle in indeks)) {
-      if (nye >= +(process.env.MAKS_GADEFOTO || 40)) continue;
-      const d = 0.0006, bbox = [k.lon - d, k.lat - d, k.lon + d, k.lat + d].join(",");
-      try {
-        const r = await fetch(`https://graph.mapillary.com/images?access_token=${token}&fields=id,thumb_1024_url,captured_at,creator&bbox=${bbox}&limit=5`, { headers: { "User-Agent": UA } });
-        const j = await r.json();
-        const bedst = (j.data || []).sort((a, b) => (b.captured_at || 0) - (a.captured_at || 0))[0];
-        if (bedst?.thumb_1024_url) {
-          const fil = `assets/gadefoto/${bedst.id}.jpg`;
-          await writeFile(join(h.ROD, fil), Buffer.from(await (await fetch(bedst.thumb_1024_url)).arrayBuffer()));
-          indeks[noegle] = { fil, id: bedst.id, fotograf: bedst.creator?.username || "Mapillary-bidragyder", aar: bedst.captured_at ? new Date(bedst.captured_at).getFullYear() : null };
-        } else indeks[noegle] = null;
-        nye++;
-      } catch (e) { console.warn(`Gadefoto: ${k.sted}: ${e.message}`); continue; }
-    }
-    if (indeks[noegle]) ud.set(id, { ...indeks[noegle], sted: k.sted });
-  }
-  await writeFile(indeksSti, JSON.stringify(indeks, null, 1));
-  console.log(`Gadefoto: ${ud.size} sager (${nye} nye opslag).`);
-  return ud;
-}
-export function gadefotoFigur(s, g, rod, esc) {
-  const k = g.get(s.id);
-  return k ? `<figure class="gadefoto"><a href="https://www.mapillary.com/app/?pKey=${esc(k.id)}" target="_blank" rel="noopener nofollow"><img src="${rod}${k.fil}" loading="lazy" alt="Gadefoto fra ${esc(k.sted)}"></a>
-          <figcaption>${esc(k.sted)}${k.aar ? ` (${k.aar})` : ""}. Foto: ${esc(k.fotograf)} via Mapillary, CC BY-SA 4.0.</figcaption></figure>` : "";
 }

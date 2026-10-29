@@ -8,11 +8,6 @@ ErrorDocument 404 /404.html
   Require all denied
 </FilesMatch>
 
-# Avisen er åben igen fra 12. okt. 2026 efter ejerens ønske, så Google og delte links kan finde sagerne.
-# Hver sag beder læseren om at blive tester. Min avis (min/) er stadig lukket bag login.
-# For at lukke avisen igen: fjern # foran linjen herunder.
-# RedirectMatch 302 ^/(index\.html|om\.html|soeg\.html|moeder\.html|partier\.html|hoeringer\.html|sag/.*|udvalg/.*|bydel/.*|emne/.*|kalender/.*|feed/.*)$ /
-
 # Sikkerhed i browseren. IfModule gør, at siden stadig virker, hvis serveren mangler mod_headers.
 <IfModule mod_headers.c>
   # Brug altid https (et halvt år ad gangen)

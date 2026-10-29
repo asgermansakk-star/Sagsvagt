@@ -157,7 +157,7 @@ export async function bygHoeringer(sager, h, o = {}) {
 // ---------- Kalendere ----------
 // Én kalenderfil pr. udvalg og én med alle møder. Møderne er heldagsbegivenheder, fordi referaterne ikke har klokkeslæt.
 const icsTekst = (t) => String(t).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
-const fold = (l) => { const b = Buffer.from(l, "utf8"); if (b.length <= 74) return l; const ud = []; let i = 0, s = ""; for (const c of l) { if (Buffer.byteLength(s + c) > (ud.length ? 73 : 74)) { ud.push(s); s = ""; } s += c; i++; } ud.push(s); return ud.join("\r\n "); };
+const fold = (l) => { const b = Buffer.from(l, "utf8"); if (b.length <= 74) return l; const ud = []; let s = ""; for (const c of l) { if (Buffer.byteLength(s + c) > (ud.length ? 73 : 74)) { ud.push(s); s = ""; } s += c; } ud.push(s); return ud.join("\r\n "); };
 export async function bygKalendere(moeder, h) {
   await rm(join(h.ROD, "kalender"), { recursive: true, force: true }); await mkdir(join(h.ROD, "kalender"), { recursive: true });
   const begivenhed = (m) => {

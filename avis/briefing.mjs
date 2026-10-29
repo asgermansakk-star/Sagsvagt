@@ -3,7 +3,8 @@
 // Kør: node avis/briefing.mjs                  (alle kommende møder)
 //      node avis/briefing.mjs "Børne"          (kun møder i udvalg, hvis navn indeholder teksten)
 // Bygger på assets/sager.json og sagsfragmenterne i assets/sager/ (begge laves af byg.mjs), så briefingen og
-// avisen altid siger det samme. HTML og PDF gemmes i ../briefinger/. PDF laves med Microsoft Edge, hvis den findes.
+// avisen altid siger det samme. HTML og PDF gemmes i ../briefinger/. PDF laves med Chrome eller Edge, hvis en af dem findes
+// (Vivaldi kan ikke: den bliver hængende uden at lave PDF'en). Ellers: åbn HTML-filen og vælg Udskriv › Gem som PDF.
 import { readFile, writeFile, mkdir, access } from "node:fs/promises";
 import { join } from "node:path";
 import { pathToFileURL } from "node:url";
@@ -11,7 +12,8 @@ import { execFileSync } from "node:child_process";
 
 const ROD = join(import.meta.dirname, "..");
 const UD = join(ROD, "..", "briefinger");
-const EDGE = "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe";
+const BROWSERE = ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+  "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"];
 const MDR = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"];
 const DAGE = ["søndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag"];
 const esc = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -109,9 +111,9 @@ body { background: #fff0; display: block; min-height: 0; }
   await writeFile(htmlFil, html);
   let pdf = "";
   try {
-    await access(EDGE);
-    execFileSync(EDGE, ["--headless=new", "--disable-gpu", "--no-pdf-header-footer", "--virtual-time-budget=6000", `--print-to-pdf=${join(UD, `${navn}.pdf`)}`, pathToFileURL(htmlFil).href], { stdio: "ignore", timeout: 60000 });
+    const browser = await Promise.any(BROWSERE.map((b) => access(b).then(() => b)));
+    execFileSync(browser, ["--headless=new", "--disable-gpu", "--no-pdf-header-footer", "--virtual-time-budget=6000", `--print-to-pdf=${join(UD, `${navn}.pdf`)}`, pathToFileURL(htmlFil).href], { stdio: "ignore", timeout: 60000 });
     pdf = ` + PDF`;
-  } catch { pdf = " (PDF ikke lavet: Microsoft Edge blev ikke fundet)"; }
+  } catch { pdf = " (PDF ikke lavet: Chrome eller Edge blev ikke fundet; åbn HTML-filen og gem den som PDF)"; }
   console.log(`${titel}: ${vigtige.length} punkter, ${rutine.length} rutinesager → ${navn}.html${pdf}`);
 }

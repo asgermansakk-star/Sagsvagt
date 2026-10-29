@@ -25,7 +25,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
   const tilmeld = (k) => `../vagt.html?kommune=${encodeURIComponent(k.navn)}&amp;fra=kommune-${k.slug}#tilmeld`;
   // København går direkte til avisens forside, ligesom de andre åbne kommuner går direkte til deres egen avis
   const kHref = (k) => (k.slug === "koebenhavn" ? "../index.html" : `${k.slug}.html`);
-  const chips = (liste, aktiv) => `<ul class="chips">${liste.map((k) => `<li><a href="${kHref(k)}"${k.slug === aktiv ? ' aria-current="page"' : ""}>${esc(k.navn)}${AABNE.has(k.slug) ? ' <span class="aaben">åben</span>' : ""}</a></li>`).join("")}</ul>`;
+  const chips = (liste) => `<ul class="chips">${liste.map((k) => `<li><a href="${kHref(k)}">${esc(k.navn)}${AABNE.has(k.slug) ? ' <span class="aaben">åben</span>' : ""}</a></li>`).join("")}</ul>`;
   // De nyeste vigtige sager fra København som eksempel på, hvad man får
   const eksempler = sager.filter((s) => s.status !== "kommer" && s.vaegt >= 2 && !s.rutine).slice(0, 4);
   const eksempel = `<ul class="notitser">${eksempler.map((s) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</span> <a href="../${s.url}">${esc(s.titel)}</a> <span class="nh-dato">${kortDato(s.dato)}</span></li>`).join("")}</ul>`;
@@ -46,7 +46,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
   const { kicker, saetninger, ugedag, datoTekst, stor, slug, vagtBoks, notits } = h;
   const kommuneSider = [];
   const spred = (liste, n, max) => { const talt = {}; const ud = []; for (const s of liste) { if (ud.length >= n) break; if ((talt[s.udvalg] = (talt[s.udvalg] || 0) + 1) <= max) ud.push(s); } return ud; };
-  const egenSide = async (k, egne, naboer) => {
+  const egenSide = async (k, egne) => {
     const afholdt = egne.filter((s) => s.status !== "kommer");
     // Samme sag behandles ofte først i et udvalg og så i byrådet; på forsiden står den kun én gang (den vigtigste)
     const set = new Set(), unik = (l) => l.filter((s) => { const t = s.titel.toLowerCase(); if (set.has(t)) return false; set.add(t); return true; });
@@ -121,7 +121,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
       await writeFile(join(ROD, "kommune", "koebenhavn.html"), `<!doctype html><html lang="da"><head><meta charset="utf-8"><title>Sagsvagt i København</title><link rel="canonical" href="${h.SITE_URL}index.html"><meta http-equiv="refresh" content="0; url=../index.html"><meta name="robots" content="noindex"></head><body><p><a href="../index.html">Gå til Sagsvagt i København</a></p></body></html>`);
       continue;
     }
-    const indhold = egne.length ? await egenSide(k, egne, naboer)
+    const indhold = egne.length ? await egenSide(k, egne)
       : `<div class="wrap"><div class="listing kommune-side">
   <p class="kicker"><a href="./">Alle kommuner</a> · Region ${esc(k.region)}</p>
   <h1>Sagsvagt i ${esc(k.navn)}</h1>

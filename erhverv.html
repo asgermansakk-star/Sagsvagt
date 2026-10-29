@@ -380,8 +380,6 @@
       .then(() => { ok.textContent = `Tjek din mail (${$p("p-email").value.trim()}), og tryk på knappen for at starte prøven.`; ok.hidden = false; knap.textContent = "Sendt"; })
       .catch((err) => { fejl.textContent = err.message; fejl.hidden = false; knap.disabled = false; knap.textContent = "Start prøven"; });
   });
-  // Knapper med data-produkt vælger produktet i bookingformularen
-  document.querySelectorAll("[data-produkt]").forEach((a) => a.addEventListener("click", () => { document.getElementById("b-produkt").value = a.dataset.produkt; }));
   // Bookingen gemmes på serveren (api/erhverv-book.php), som sender den til redaktionen
   document.getElementById("f-book").addEventListener("submit", (e) => {
     e.preventDefault();

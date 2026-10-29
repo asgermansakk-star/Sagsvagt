@@ -297,5 +297,5 @@ async function main() {
 }
 
 // Klassifikationen kan importeres (fx til kvalitetsmåling); main kører kun, når filen startes direkte
-export { klassificer, sagsNoegle, TYPER, STADIER, IKKE, ADMIN };
+export { klassificer };
 if (import.meta.filename === process.argv[1]) main().catch((e) => { console.error(e.message); process.exit(1); });

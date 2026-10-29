@@ -7,7 +7,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
-import { hent, vent, px, xml, C, KORTKILDE, TONE_DEFS, hentFliser, indlaesSkrift, svgTilJpeg } from "./kortbase.mjs";
+import { hent, px, xml, C, KORTKILDE, TONE_DEFS, hentFliser, indlaesSkrift, svgTilJpeg } from "./kortbase.mjs";
 
 const W = 1200, H_ = 800;
 const WFS = "https://geoserver.plandata.dk/geoserver/wfs";
@@ -19,7 +19,7 @@ const ord = (t) => (t || "").toLowerCase().replace(/[‐–—-]/g, " ").replace
 const tillaegNr = (t) => { const m = (t || "").toLowerCase().match(/tillæg\s*(?:nr\.?\s*)?(\d+)/); return m ? +m[1] : null; };
 const erPlansag = (s) => /lokalplan/i.test(s.titel || "");
 
-export function findPlan(s, planer) {
+function findPlan(s, planer) {
   const titelOrd = new Set(ord(s.titel)), tT = tillaegNr(s.titel);
   const forslagIOrd = /forslag|høring|hoering/i.test(s.titel);
   let bedst = null, bedstPoint = 0;

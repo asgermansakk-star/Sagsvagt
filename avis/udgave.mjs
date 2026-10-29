@@ -105,7 +105,7 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner, slug }) {
 }
 
 // Kompakt udgave af sagerne til søgningen (samme felter, som søgningen bruger i Københavns assets/sager.json)
-export const soegData = (sager, EMNER, saetninger) => ({
+const soegData = (sager, EMNER, saetninger) => ({
   emner: Object.fromEntries(Object.entries(EMNER).map(([id, e]) => [id, { navn: e.navn, f: e.f }])),
   sager: sager.map((s) => ({ id: s.id, t: s.titel, d: s.dek, u: s.udvalg, dato: s.dato, st: s.status, e: s.emner, url: s.url, x: saetninger(s.afsnit.map((a) => a.tekst).join(" "), 600) })),
 });
@@ -121,7 +121,7 @@ export async function bygUdgave(k, egne, raa, valg, h, ks, top) {
   const R = `kommune/${k.slug}`, stier = [];
   await mkdir(join(ROD, R, "emne"), { recursive: true });
   const skriv = async (sti, s) => { stier.push(sti.replace(/index\.html$/, "")); await writeFile(join(ROD, sti), side({ ...s, sti: sti.replace(/index\.html$/, ""), kommune: k })); };
-  const liste = (s, rod, medUdvalg = false) => `<article>${kicker(s, rod, medUdvalg)}<h2 class="hl"><a href="${rod}${s.url}">${esc(s.titel)}</a></h2><p class="dek">${esc(saetninger(s.dek, 200))}</p></article>`;
+  const liste = (s, rod) => `<article>${kicker(s, rod, true)}<h2 class="hl"><a href="${rod}${s.url}">${esc(s.titel)}</a></h2><p class="dek">${esc(saetninger(s.dek, 200))}</p></article>`;
   const udvalgUrl = (u) => `${slug(u)}.html`; // fra kommune/<navn>/
 
   // Emner: oversigt med hvert emnes seneste sager, og en side pr. emne
@@ -130,7 +130,7 @@ export async function bygUdgave(k, egne, raa, valg, h, ks, top) {
   for (const [id, e] of Object.entries(EMNER)) {
     await skriv(`${R}/emne/${id}.html`, {
       titel: `${e.navn}, ${k.navn} – Sagsvagt`, beskrivelse: `Sager om ${e.navn.toLowerCase()} fra byrådet og udvalgene i ${k.kommune}.`, rod: "../../../", aktiv: "k-emne",
-      indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>${esc(e.navn)}</h1><p class="intro">${prEmne[id].length} sager fra byrådet og udvalgene i ${esc(k.kommune)}, nyeste først.</p>${emneChips(id)}${prEmne[id].length ? prEmne[id].map((s) => liste(s, "../../../", true)).join("\n") : `<p class="intro">Der er ingen sager om ${esc(e.navn.toLowerCase())} fra de seneste måneder.</p>`}</div></div>`,
+      indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>${esc(e.navn)}</h1><p class="intro">${prEmne[id].length} sager fra byrådet og udvalgene i ${esc(k.kommune)}, nyeste først.</p>${emneChips(id)}${prEmne[id].length ? prEmne[id].map((s) => liste(s, "../../../")).join("\n") : `<p class="intro">Der er ingen sager om ${esc(e.navn.toLowerCase())} fra de seneste måneder.</p>`}</div></div>`,
     });
   }
   await skriv(`${R}/emne/index.html`, {

@@ -6,7 +6,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 
-const ROD = join(import.meta.dirname, "..");
 const SPEJLE = ["https://overpass-api.de/api/interpreter", "https://overpass.kumi.systems/api/interpreter"];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 

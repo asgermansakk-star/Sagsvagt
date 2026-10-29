@@ -3,7 +3,7 @@
 // Det er ikke en test, der fejler kørslen; det er en liste over, hvor parseren skal forbedres.
 //
 // Kør: node avis/kvalitet.mjs
-import { readFile, writeFile, readdir, appendFile } from "node:fs/promises";
+import { readFile, writeFile, appendFile } from "node:fs/promises";
 import { join } from "node:path";
 
 const ROD = join(import.meta.dirname, "..");

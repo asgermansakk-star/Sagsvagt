@@ -89,7 +89,7 @@ export const iHoering = (tekst = "") => /(sendes|udsendes|sende|udsendelse|sendt
 
 // ---------- Ordforklaringer ----------
 // Forklares første gang, ordet står i sagsteksten. Nøglen er et regulært udtryk (uden flag), værdien forklaringen.
-export const ORDBOG = [
+const ORDBOG = [
   ["indstilling(?:en)?", "Forvaltningens forslag til, hvad politikerne skal beslutte."],
   ["medlemsforslag(?:et)?", "Et forslag, som et eller flere politikere selv har stillet, i stedet for forvaltningen."],
   ["ændringsforslag(?:et)?", "Et forslag om at ændre indstillingen. Det stemmes der om, før selve sagen afgøres."],

@@ -1,5 +1,5 @@
 // Mandagsmailen: den ugentlige mail med sagerne om modtagerens emner.
-// Bruges både i browseren (Min avis viser din egen mail) og i Node (avis/mandagsmail.mjs laver mails til udsendelse).
+// Bruges i browseren (Min avis viser din egen mail) og i Node (avis/tjek-mandagsmail.mjs sammenligner med serverens mail).
 // Mailen er bygget med tabeller og inline-styling, så den ser rigtig ud i Gmail, Outlook og Apple Mail.
 //
 //   lavMandagsmail({ data, profil, idag, linkTil, modtager })
@@ -120,7 +120,7 @@ const tekstBund = (afmeld, ret = true) => afmeld
 export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, modtager = "", afmeld = "", logo = `${SITE}assets/mail-logo.png` }) {
   const v = vaelgSager({ data, profil, idag });
   const uge = ugenr(idag);
-  // Følger modtageren flere kommuner (sagerne har ks/kn fra Min avis eller avis/mandagsmail.mjs), står kommunen efter udvalget
+  // Følger modtageren flere kommuner (sagerne har ks/kn fra Min avis), står kommunen efter udvalget
   const flere = new Set(data.sager.map((s) => s.ks).filter(Boolean)).size > 1;
   const hvorSag = (s) => hvor(s.u) + (flere && s.kn && !s.u.includes(s.kn) ? `, ${s.kn}` : ""); // ikke "Herning Byråd, Herning"
   const nB = v.besluttet.length + v.flereBesluttet, nK = v.kommer.length + v.flereKommer;
@@ -171,8 +171,7 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
 </td></tr></table></td></tr>`;
   };
   // fuld: den første sag vises med beskrivelse og mærker (bydelen vises kun kort)
-  // Hver sektion har sin farve og sit ikon, som i talrækken: vin = besluttet, indigo = på vej, nat = bydelen
-  const sektion = (titel, under, liste, flere, fuld = true, ikon = "", farve = C.nat, top = "") => liste.length ? `<tr><td style="padding:32px 28px 12px;">
+  const sektion = (titel, under, liste, flere, fuld = true, top = "") => liste.length ? `<tr><td style="padding:32px 28px 12px;">
   <h2 style="margin:0;font:700 20px/1.25 ${SANS};color:${C.nat};">${esc(titel)}</h2>
   ${under ? `<p style="margin:4px 0 0;font:13px/1.5 ${SANS};color:${C.muted};">${esc(under)}</p>` : ""}
 </td></tr>${top}${liste.map((s, i) => (i === 0 && fuld ? sag(s) : kortSag(s))).join("")}${flere ? `<tr><td style="padding:4px 28px 6px;font:13px/1.5 ${SANS};color:${C.muted};">Og ${flere} ${flere === 1 ? "sag" : "sager"} mere om dine emner. <a href="${SITE}min/#sager" style="color:${C.indigo};font-weight:600;">Se dem i Min avis</a></td></tr>` : ""}` : "";
@@ -209,9 +208,9 @@ export function lavMandagsmail({ data, profil = {}, idag, linkTil = (s) => s.k, 
   ${ingen ? `<p style="margin:10px 0 0;font:16px/1.55 ${SERIF};color:${C.brod};">Der er ingen nye sager om dine emner i denne uge. Vi holder øje og skriver, når der sker noget.</p>` : talRaekke}
   ${dineEmner ? `<p style="margin:16px 0 0;font:13px/1.5 ${SANS};color:${C.muted};">Du følger: ${esc(dineEmner)}${profil.bydel ? ` · ${esc(hvor(profil.bydel))}` : ""}</p>` : ""}
 </td></tr></table></td></tr>
-${sektion(v.dage === 7 ? "Besluttet i ugen der gik" : "Besluttet de seneste to uger", "", v.besluttet, v.flereBesluttet, true, "besluttet", C.vin)}
-${sektion("Det skal de tage stilling til", "De næste to uger.", v.kommer, v.flereKommer, true, "paa-vej", C.indigo, kalender)}
-${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0, false, "bydel", C.nat)}
+${sektion(v.dage === 7 ? "Besluttet i ugen der gik" : "Besluttet de seneste to uger", "", v.besluttet, v.flereBesluttet, true)}
+${sektion("Det skal de tage stilling til", "De næste to uger.", v.kommer, v.flereKommer, true, kalender)}
+${sektion(`Fra ${hvor(profil.bydel || "")}`, "Det sker i din bydel.", v.bydel, 0, false)}
 ` + mailBund(modtager, afmeld);
 
   // Ren tekst til mailprogrammer, der ikke viser HTML

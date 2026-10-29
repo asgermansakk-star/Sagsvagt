@@ -33,6 +33,14 @@ const r2 = parsePdf(tekst(
 assert.deepEqual(r2.punkter.map((p) => [p.nr, p.titel]), [[3, "Punkt C"]]);
 assert.ok(!JSON.stringify(r2.punkter).includes("Tekst B"));
 
+// Et lukket punkt har ingen tekst i PDF'en: punktet før beholder sin egen tekst og stopper ved det næste
+const r2b = parsePdf(tekst(
+  "Punkt A...... 3 Lukket: Køb af grund...... 5 Punkt C...... 7",
+  punkt("Punkt A", "Tekst A.") + punkt("Punkt C", "Tekst C."),
+));
+assert.deepEqual(r2b.punkter.map((p) => [p.nr, p.titel]), [[1, "Punkt A"], [3, "Punkt C"]]);
+assert.equal(r2b.punkter[0].afsnit.at(-1).tekst, "Tekst A.");
+
 // Årstal uden bindestreg i teksten, og et lukket punkt, der kun står i indholdsfortegnelsen
 const r3 = parsePdf(tekst(
   "Laks i Gudenåen 2027-2029...... 3 Meddelelser...... 5 Lukket: Ejendomssag...... 6 Underskriftsark...... 6",

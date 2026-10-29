@@ -10,7 +10,6 @@
 <link rel="stylesheet" href="../assets/avis.css">
 <style>
   /* Redaktionens oversigt over tilmeldte og invitationer. Kræver login som redaktør (admins i api/_konfig.php). */
-  [hidden] { display: none !important; }
   .side-admin { padding-top: 30px; padding-bottom: 64px; }
   .side-admin h1 { font-size: clamp(1.8rem, 3.4vw, 2.4rem); letter-spacing: -.03em; margin: 0 0 6px; }
   .tal { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 16px 0 22px; font-size: .9375rem; }
@@ -134,6 +133,20 @@
   var dato = function (iso) { return iso ? new Date(iso).toLocaleDateString("da-DK", { day: "numeric", month: "short", year: "numeric" }) : ""; };
   var NAVN = { tilmeldt: "Tilmeldt", inviteret: "Inviteret", aktiv: "Har konto", afmeldt: "Afmeldt" };
   var data = [];
+  // Henvisninger: kilden "ven-xxxxxx" er de første 6 tegn af SHA-256 af den e-mail, der delte linket (som i vagt.html)
+  var VEN = {};
+  function findHenvisere() {
+    if (!window.crypto || !crypto.subtle) return;
+    Promise.all(data.map(function (a) {
+      return crypto.subtle.digest("SHA-256", new TextEncoder().encode(a.email.trim().toLowerCase())).then(function (h) {
+        return [Array.prototype.map.call(new Uint8Array(h).slice(0, 3), function (x) { return x.toString(16).padStart(2, "0"); }).join(""), a.email];
+      });
+    })).then(function (l) { VEN = {}; l.forEach(function (x) { VEN[x[0]] = x[1]; }); vis(); });
+  }
+  function kildeTekst(k) {
+    var m = /^ven-([0-9a-f]{6})$/.exec(k);
+    return esc(k) + (m && VEN[m[1]] ? " · delt af " + esc(VEN[m[1]]) : "");
+  }
   function besked(t, k) { var b = $("#besked"); b.className = "besked " + (k || ""); b.textContent = t; }
 
   // Område: kommunerne skrives frit ved tilmeldingen ("Kbh", "Københavns Kommune", "Frederiksberg og København"),
@@ -170,6 +183,7 @@
         .map(function (x) { return "<div><b>" + x[1] + "</b>" + x[0] + "</div>"; }).join("");
       fyldOmraader();
       vis();
+      findHenvisere();
       hentFeedback();
       hentFotos();
       hentPush();
@@ -208,7 +222,7 @@
       var l = j.fotos || [];
       $("#foto-titel").textContent = "Læserfotos (" + l.filter(function (f) { return f.status === "ny"; }).length + " nye af " + l.length + ")";
       $("#foto-liste").innerHTML = l.length ? l.map(function (f) {
-        return '<div class="fb" data-foto="' + f.id + '"><span class="lille">' + dato(f.oprettet) + " · " + esc(f.navn) + " &lt;" + esc(f.email) + "&gt; · <b>" + esc(FOTOSTATUS[f.status] || f.status) + "</b>"
+        return '<div class="fb"><span class="lille">' + dato(f.oprettet) + " · " + esc(f.navn) + " &lt;" + esc(f.email) + "&gt; · <b>" + esc(FOTOSTATUS[f.status] || f.status) + "</b>"
           + (f.sag ? ' · <a href="../sag/' + esc(f.sag) + '.html" target="_blank" rel="noopener">' + esc(f.sag) + "</a>" : "") + (f.sted ? " · " + esc(f.sted) : "") + "</span>"
           + (f.tekst ? "<p>" + esc(f.tekst) + "</p>" : "")
           + '<p><button type="button" class="btn btn-lille btn-sekundaer" data-foto-vis="' + f.id + '">Hent billedet</button> '
@@ -233,7 +247,7 @@
     $("#raekker").innerHTML = data.filter(function (a) { return iOmraade(a) && (!kunNye || kanInviteres(a)); }).map(function (a) {
       var kanInv = kanInviteres(a);
       return "<tr><td>" + (kanInv ? '<input type="checkbox" class="valg" value="' + a.id + '" aria-label="Vælg ' + esc(a.email) + '">' : "") + "</td>"
-        + "<td>" + esc(a.email) + (a.kilde ? '<br><span class="lille">' + esc(a.kilde) + "</span>" : "") + "</td>"
+        + "<td>" + esc(a.email) + (a.kilde ? '<br><span class="lille">' + kildeTekst(a.kilde) + "</span>" : "") + "</td>"
         + '<td><span class="st ' + esc(a.status) + '">' + esc(NAVN[a.status] || a.status) + "</span>" + (a.inviteret && a.status === "inviteret" ? '<br><span class="lille">' + dato(a.inviteret) + "</span>" : "") + (a.sidst_inde ? '<br><span class="lille">Sidst inde ' + dato(a.sidst_inde) + "</span>" : "") + (a.mail_fejl ? '<br><span class="st fejl" title="Markeret ' + dato(a.mail_fejl) + '">Mail kom retur</span>' : "") + "</td>"
         + "<td>" + esc(a.kommuner) + (a.emner ? '<br><span class="lille">' + esc(a.emner) + "</span>" : "") + "</td>"
         + "<td>" + esc(a.rolle) + "</td><td>" + dato(a.oprettet) + "</td>"

@@ -176,14 +176,16 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
   fund.forEach((p, i) => {
     if (p.mangler || /^(Lukket\b|Underskrift(sark)?\.?$)/i.test(p.titel)) return; // ikke fx "Underskrift på skøder …"
     // Mangler næste punkts overskrift (stavet lidt anderledes i teksten), leder vi efter dens første ord på en linje for
-    // sig; ellers stopper vi ved det næste punkt, vi fandt. Uden nogen af delene springes punktet over.
+    // sig. Er det manglende punkt lukket, har det ingen tekst, så vi stopper ved det næste punkt, vi fandt. Er det åbent,
+    // står dets tekst et sted imellem, og så springes punktet over i stedet for at få det næste punkts tekst med.
     let slutIdx = fund[i + 1]?.idx ?? t.length;
     if (fund[i + 1]?.mangler) {
       const ord = fund[i + 1].titel.replace(/\.+$/, "").split(/\s+/).slice(0, 4).map(reEsc).join("\\s+");
       const r = new RegExp(`\\n(?:\\d+\\.\\s*|Punkt\\s+\\d+:\\s*)?${ord}`, "i"), f = r.exec(t.slice(p.start));
       const naeste = fund.slice(i + 1).find((x) => !x.mangler);
       if (f) slutIdx = p.start + f.index;
-      else if (naeste) slutIdx = naeste.idx;
+      else if (naeste && /^Lukket\b/i.test(fund[i + 1].titel)) slutIdx = naeste.idx;
+      else if (naeste) return;
       // Sidste punkt mangler (typisk "Godkendelse af beslutningsprotokol" uden overskrift): tag resten med, men
       // stop ved en sidefod som "3/3", hvor det næste punkts side begynder
       else { const fod = /\n\d+\/(\d+)\n/g; let x; while ((x = fod.exec(t.slice(p.start)))) if (x[0].trim().split("/")[0] === x[1]) { slutIdx = p.start + x.index; break; } }
@@ -223,7 +225,7 @@ export function parsePdf(tekst, kendteUdvalg = new Map()) {
 // Gentofte skriver "Beslutninger: Godkendt." sidst i indstillingen, Lyngby-Taarbæk "Beslutning Anbefalet." sidst i
 // økonomiafsnittet. Har et referat intet afsnit med beslutningen, flyttes sådan en hale ud i sit eget afsnit.
 // "Beslutning om …" (lille bogstav efter) og "Beslutningskompetence" rammes ikke. Kan køres igen uden at ændre noget.
-export function udskilBeslutning(s) {
+function udskilBeslutning(s) {
   const afsnit = s.afsnit || [];
   if (s.type !== "referat" || !afsnit.length || afsnit.some((a) => /^(Beslutning|Behandling)/.test(a.titel))) return afsnit;
   const sidst = afsnit.at(-1);

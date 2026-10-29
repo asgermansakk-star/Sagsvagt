@@ -25,11 +25,11 @@ const MODEL = process.env.ERHVERV_MODEL || "claude-haiku-5-5";
 const MAKS = Number(process.env.MAKS || 800);
 const SAMTIDIG = 4;
 
-export const MULIGHEDER = ["entreprenør", "håndværker", "rådgiver", "arkitekt", "developer", "investor", "mægler", "leverandør", "energi", "drift og service"];
+const MULIGHEDER = ["entreprenør", "håndværker", "rådgiver", "arkitekt", "developer", "investor", "mægler", "leverandør", "energi", "drift og service"];
 // Strukturerede output: alle felter skal være med; null, når sagen ikke siger det
 const tekstEllerNull = { anyOf: [{ type: "string" }, { type: "null" }] };
 const talEllerNull = { anyOf: [{ type: "number" }, { type: "null" }] };
-export const SKEMA = {
+const SKEMA = {
   type: "object",
   additionalProperties: false,
   required: ["hvad", "hvor", "beloeb_kr", "beloeb_tekst", "boliger", "areal_m2", "areal_ha", "tidsplan", "frist", "aktoerer", "naeste", "muligheder", "relevans"],
@@ -69,7 +69,7 @@ export function sagsTekst(sig, raa) {
 }
 
 // Beløb uden AI: det største "x mio. kr." / "x mia. kr." / "x kr." i teksten
-export function beloebRegex(tekst) {
+function beloebRegex(tekst) {
   let bedst = null;
   const rx = /(\d{1,3}(?:\.\d{3})*(?:,\d+)?)\s*(mia\.?|mio\.?|millioner|milliarder|t\.?\s?kr\.?|tusind)?\s*kr\b/gi;
   for (const m of tekst.matchAll(rx)) {
@@ -103,7 +103,7 @@ async function lavKort(client, sig, raa, forbrug) {
 }
 
 // Et kort skal have de rigtige felter og typer, uanset om det kommer fra API'et eller fra en fil
-export function rensKort(k) {
+function rensKort(k) {
   if (!k || typeof k !== "object" || typeof k.hvad !== "string") return null;
   const tal = (x) => (typeof x === "number" && isFinite(x) && x >= 0 ? x : null);
   const tekst = (x, n = 200) => (typeof x === "string" && x.trim() ? x.trim().slice(0, n) : null);

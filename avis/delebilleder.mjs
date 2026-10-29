@@ -14,7 +14,7 @@ const C = { nat: "#0E0F14", kalk: "#E6DFD3", rosen: "#DCA9A5", lyng: "#B7BBD8", 
   skifer: "#5D6BA8", indigo: "#28377A", rubin: "#B04A50", vin: "#8A2430" };
 const xml = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-export async function bygDelebilleder(sager, h, billedeSti = null) {
+export async function bygDelebilleder(sager, h, billedeSti) {
   const fonte = join(h.ROD, "avis", "fonte");
   const bredde = { 500: JSON.parse(await readFile(join(fonte, "Montserrat-Medium.json"), "utf8")), 700: JSON.parse(await readFile(join(fonte, "Montserrat-Bold.json"), "utf8")) };
   const maal = (t, str, vaegt) => [...t].reduce((n, c) => n + (bredde[vaegt][c] ?? 620), 0) * str / 1000;
@@ -36,7 +36,7 @@ export async function bygDelebilleder(sager, h, billedeSti = null) {
 
   const PX = 720; // billedet fylder fra PX til højre kant
   for (const s of udvalgte) {
-    const bSti = billedeSti?.(s), TW = bSti ? PX - M - 40 : B - 2 * M;
+    const bSti = billedeSti(s), TW = bSti ? PX - M - 40 : B - 2 * M;
     // Overskriften: største skrift, hvor den kan stå på højst fire linjer
     let str = 62, linjer;
     for (str of bSti ? [54, 48, 43, 39, 35] : [62, 56, 50, 45, 40]) { linjer = ombryd(s.titel, str, 700, TW); if (linjer.length <= 4) break; }

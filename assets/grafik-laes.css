@@ -1,7 +1,6 @@
 
 .laes-indhold .emnebillede { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 14px; object-fit: cover; background: var(--kalk-lys, #EEE8DE); }
 .laes-indhold .emnebillede.lille { flex: none; width: 96px; height: 54px; border-radius: 8px; }
-.laes-indhold .emnebillede.lille.hoejre { float: right; margin: 0 0 6px 12px; }
 @media (min-width: 640px) { .laes-indhold .emnebillede.lille { width: 128px; height: 72px; } }
 
 
@@ -9,9 +8,9 @@
   background: var(--lyng); color: var(--blaek); white-space: nowrap; vertical-align: 1px; }
 .laes-indhold .frist-maerke.snart { background: var(--rubin); color: var(--kalk-lys); }
 
-.laes-indhold .laeserfoto, .laes-indhold .luftfoto, .laes-indhold .gadefoto { margin: 22px 0 18px; }
-.laes-indhold .laeserfoto img, .laes-indhold .luftfoto img, .laes-indhold .gadefoto img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
-.laes-indhold .laeserfoto figcaption, .laes-indhold .luftfoto figcaption, .laes-indhold .gadefoto figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
+.laes-indhold .laeserfoto, .laes-indhold .luftfoto { margin: 22px 0 18px; }
+.laes-indhold .laeserfoto img, .laes-indhold .luftfoto img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
+.laes-indhold .laeserfoto figcaption, .laes-indhold .luftfoto figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
 .laes-indhold .send-foto { margin: -8px 0 18px; font-size: var(--fodnote); }
 .laes-indhold .send-foto a { color: var(--vin); font-weight: 600; }
 

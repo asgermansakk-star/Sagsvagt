@@ -244,8 +244,7 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
           . '  <div>' . implode('', array_map($tag, $s['mE'] ?? [])) . implode('', array_map($ordTag, $s['mO'] ?? [])) . "</div>\n"
           . '</td></tr></table></td></tr>';
     };
-    // Hver sektion har sin farve og sit ikon, som i talrækken: vin = besluttet, indigo = på vej, nat = bydelen
-    $sektion = function (string $titel, string $under, array $liste, int $flere, bool $fuld = true, string $ikon = '', string $farve = MM_C['nat'], string $top = '') use ($C, $S, $sag, $kortSag): string {
+    $sektion = function (string $titel, string $under, array $liste, int $flere, bool $fuld = true, string $top = '') use ($C, $S, $sag, $kortSag): string {
         if (!$liste) return '';
         $h = "<tr><td style=\"padding:32px 28px 12px;\">\n"
           . "  <h2 style=\"margin:0;font:700 20px/1.25 {$S};color:{$C['nat']};\">" . mm_esc($titel) . "</h2>\n"
@@ -293,9 +292,9 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
       . '  ' . ($ingen ? "<p style=\"margin:10px 0 0;font:16px/1.55 {$S};color:{$C['brod']};\">Der er ingen nye sager om dine emner i denne uge. Vi holder øje og skriver, når der sker noget.</p>" : $talRaekke) . "\n"
       . '  ' . ($dineEmner !== '' ? "<p style=\"margin:16px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\">Du følger: " . mm_esc($dineEmner) . (!empty($profil['bydel']) ? ' · ' . mm_esc($bydelNavn) : '') . '</p>' : '') . "\n"
       . "</td></tr></table></td></tr>\n"
-      . $sektion($v['dage'] === 7 ? 'Besluttet i ugen der gik' : 'Besluttet de seneste to uger', '', $v['besluttet'], $v['flereBesluttet'], true, 'besluttet', $C['vin']) . "\n"
-      . $sektion('Det skal de tage stilling til', 'De næste to uger.', $v['kommer'], $v['flereKommer'], true, 'paa-vej', $C['indigo'], $kalender) . "\n"
-      . $sektion('Fra ' . $bydelNavn, 'Det sker i din bydel.', $v['bydel'], 0, false, 'bydel', $C['nat']) . "\n"
+      . $sektion($v['dage'] === 7 ? 'Besluttet i ugen der gik' : 'Besluttet de seneste to uger', '', $v['besluttet'], $v['flereBesluttet'], true) . "\n"
+      . $sektion('Det skal de tage stilling til', 'De næste to uger.', $v['kommer'], $v['flereKommer'], true, $kalender) . "\n"
+      . $sektion('Fra ' . $bydelNavn, 'Det sker i din bydel.', $v['bydel'], 0, false) . "\n"
       . mm_mail_bund($modtager, $afmeld);
 
     // Ren tekst til mailprogrammer, der ikke viser HTML

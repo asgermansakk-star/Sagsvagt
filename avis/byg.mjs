@@ -8,7 +8,7 @@ import { bygPlankort, plankortFigur } from "./plankort.mjs";
 import { bygStedkort, stedkortFigur } from "./stedkort.mjs";
 import { emneBillede, emneId } from "./emnebilleder.mjs";
 import { stemmeGrafik, stemmeMini } from "./stemmegrafik.mjs";
-import { hoeringsMaerke, laesLaeserfotos, laeserfotoFigur, sendFotoLink, fotoSideIndhold, bygLuftfotos, luftfotoFigur, bygGadefotos, gadefotoFigur } from "./grafik.mjs";
+import { hoeringsMaerke, laesLaeserfotos, laeserfotoFigur, sendFotoLink, fotoSideIndhold, bygLuftfotos, luftfotoFigur } from "./grafik.mjs";
 import { findSteder, stedLinks, bygSteder, delRad, DEL_SCRIPT } from "./steder.mjs";
 import { bygBokse } from "./boks.mjs";
 import { bygKommuner } from "./kommuner.mjs";
@@ -44,11 +44,6 @@ const d = (iso) => new Date(iso + "T12:00:00Z");
 const datoTekst = (iso) => `${d(iso).getUTCDate()}. ${MDR[d(iso).getUTCMonth()]} ${d(iso).getUTCFullYear()}`;
 const kortDato = (iso) => `${d(iso).getUTCDate()}. ${MDR[d(iso).getUTCMonth()]}`;
 const ugedag = (iso) => DAGE[d(iso).getUTCDay()];
-function ugenr(iso) {
-  const t = d(iso); const dag = (t.getUTCDay() + 6) % 7; t.setUTCDate(t.getUTCDate() - dag + 3);
-  const f = new Date(Date.UTC(t.getUTCFullYear(), 0, 4));
-  return 1 + Math.round(((t - f) / 864e5 - 3 + ((f.getUTCDay() + 6) % 7)) / 7);
-}
 // Sætter rod foran hver selektor i et stilark (også inde i @media), så reglerne kun gælder inde i rod
 const kunInde = (css, rod) => css.replace(/\/\*[\s\S]*?\*\//g, "")
   .replace(/(^|[{}])(\s*)([^{}@]+?)(\s*\{)/g, (m, f, ws, sel, b) => `${f}${ws}${sel.split(",").map((x) => `${rod} ${x.trim()}`).join(", ")}${b}`);
@@ -140,7 +135,7 @@ function berig(s) {
   const indst = find(/^Indstilling/)?.tekst || "";
   const videre = find(/^Videre proces/i);
   return {
-    ...s, titel, beslutning, udfald: udfaldTekst, stemmer, status, laengde, vaegt, score, rutine, dek,
+    ...s, titel, beslutning, udfald: udfaldTekst, stemmer, status, vaegt, score, rutine, dek,
     // Kort beslutning til mails og Min avis, når der ikke er et klart udfald (mest andre kommuner)
     kortBesl: status === "besluttet" && !udfaldTekst ? udenStemmer(sidsteUdfald(beslutning) || kortBeslutning(beslutning, 180)).replace(/^./, (c) => c.toUpperCase()) : "",
     // Stemmetallet hentes fra selve afgørelsen; tidligere afstemninger i referatet kan være om ændringsforslag
@@ -162,8 +157,6 @@ const publicerbar = (s) => !STOEJ.test(renTitel(s.titel)) && !/fortrolig/i.test(
 // hoved: punkterne i menuen ({ href, navn, id, ikon }). mere: punkterne under "Mere".
 // TOPRAAD: kommunens øverste råd ("Byrådet" eller "Kommunalbestyrelsen"), der står, hvor København har Borgerrepræsentationen.
 const TOPRAAD = new Map();
-// De åbne kommuner udover København ({ navn, slug }), til kommunevælgeren i avishovedet
-const UDGAVER = [];
 // Få punkter: Forside, Emner, Møder og Søg; resten under "Mere". Kommunen skiftes i avishovedet.
 const menuData = (rod, k) => {
   if (!k) return {
@@ -333,15 +326,13 @@ const emneLinks = (s, rod) => s.emner.length
   ? `<p class="emner">${s.emner.map((id) => `<a class="emne-tag ${EMNER[id].f}" href="${rod}${emneSti(s)}${id}.html">${esc(EMNER[id].navn)}</a>`).join("")}</p>` : "";
 
 // Afstemning: bjælke med stemmetal og partierne med navn. Alle partier vises ens (partineutralt).
-const bogstaver = (tekst) => deltagere(tekst).map((p) => (p.b ? `<abbr title="${esc(p.navn)}">${esc(p.b)}</abbr>` : esc(p.navn))).join(", ");
 const partiListe = (tekst) => deltagere(tekst).map((p) => `<span class="parti">${p.b ? `<b>${esc(p.b)}</b> ` : ""}${esc(p.navn)}</span>`).join("");
-function afstemning(s, kompakt = false) {
+function afstemning(s) {
   const t = s.tal, st = s.stemmer;
   if (!t && !st) return "";
   const bjaelke = t && t.for + t.imod + (t.undlod || 0) > 0
     ? `<div class="afst-bar" role="img" aria-label="${t.for} for, ${t.imod} imod${t.undlod ? `, ${t.undlod} undlod` : ""}"><span class="for" style="flex:${t.for}"></span><span class="imod" style="flex:${t.imod}"></span>${t.undlod ? `<span class="undl" style="flex:${t.undlod}"></span>` : ""}</div>`
       + `<p class="afst-tal"><span><b>${t.for}</b> for</span><span><b>${t.imod}</b> imod</span>${t.undlod != null ? `<span><b>${t.undlod}</b> undlod</span>` : ""}</p>` : "";
-  if (kompakt) return `<div class="afst kompakt">${bjaelke}${st ? `<p class="afst-bogst">For: ${bogstaver(st.for)}<br>Imod: ${bogstaver(st.imod)}</p>` : ""}</div>`;
   return `<div class="afst">${bjaelke}${st ? `<dl class="afst-p"><div><dt>For</dt><dd>${partiListe(st.for)}</dd></div><div><dt>Imod</dt><dd>${partiListe(st.imod)}</dd></div>${st.undlod ? `<div><dt>Undlod</dt><dd>${partiListe(st.undlod)}</dd></div>` : ""}</dl>` : ""}</div>`;
 }
 
@@ -400,10 +391,6 @@ function kortBeslutning(t, max = 520) {
 const AABN_SCRIPT = `<script>function aabnSag(){var e=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1))),d=e&&e.closest("details");if(d&&!d.open){d.open=true;e.scrollIntoView()}}addEventListener("hashchange",aabnSag);aabnSag()</script>`;
 const helBeslutning = (s, vist) => s.beslutning.replace(/\s+/g, " ").length > vist.length + 40 ? `<span class="kf-forkortet">Beslutningen er forkortet her. <a class="kf-mere-link" href="#beslutning">Læs hele beslutningen</a></span>` : "";
 
-const beslutningsboks = (s) => s.status === "besluttet"
-  ? `<div class="decision"><b>Beslutning</b>${esc(s.udfald || kortBeslutning(s.beslutning, 360))}${afstemning(s, true)}</div>`
-  : s.status === "kommer" ? `<div class="decision kommer"><b>Til beslutning ${ugedag(s.dato)} ${datoTekst(s.dato)}</b>${esc(saetninger((s.afsnit.find((a) => /^Indstilling/.test(a.titel))?.tekst || "Sagen er på dagsordenen.").replace(/^[^\n]*indstiller[^\n]*\n*/i, ""), 220))}</div>` : "";
-
 const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="paa-mail">
   <h2 class="rubrik">Politik, der rammer dig, hver mandag</h2>
   <p>Vælg det, du går op i, fx boliger, cykler eller natteliv. Så sender vi dig de sager, politikerne har på bordet, forklaret så det giver mening. Det er gratis, og vi søger testere.</p>
@@ -450,7 +437,7 @@ const testerBoks = (s) => {
 </aside>`;
 };
 // Én linje pr. sag: hvor, overskrift og dato
-const notits = (s, rod = "", medDato = true) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg.replace(/udvalget$/, "udvalget"))}</span> <a href="${rod}${s.url}">${esc(s.titel)}</a>${medDato ? ` <span class="nh-dato">${kortDato(s.dato)}</span>` : ""}</li>`;
+const notits = (s, rod = "") => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg.replace(/udvalget$/, "udvalget"))}</span> <a href="${rod}${s.url}">${esc(s.titel)}</a> <span class="nh-dato">${kortDato(s.dato)}</span></li>`;
 
 // Redaktionen: din leder, dine overskrifter og ugens tophistorie (avis/redaktion.json, redigeres med avis/redaktion.html)
 async function laesRedaktion() {
@@ -460,7 +447,7 @@ async function laesRedaktion() {
 // FirstAgenda-PDF'er (fx Herning) har afdelingernes fordelingsliste og sagsbehandleren midt i teksten:
 // "Kommunikation\n\nDIR\n\nBFU …\n\nX\n\nSagsbehandler: Navn\nØvrige sagsbehandlere: …". Den skæres fra.
 const FORDELING = /(?:Kommunikation\s+)?(?:(?<=^|\s)[A-ZÆØÅ]{2,4}\s+){3,}(?:X\s+)*Sagsbehandler:[^\n]*?(?:\n|(?=Øvrige sagsbehandlere:))\s*(?:Øvrige sagsbehandlere:\s*)?/g;
-export const udenFordeling = (t = "") => t.replace(FORDELING, "\n").trim();
+const udenFordeling = (t = "") => t.replace(FORDELING, "\n").trim();
 
 // Kommunernes interne mærker i titlen: punktnummer (kun når hele kommunen nummererer), Høje-Taastrups "I - "/"A - "
 // og " - ØU", Lyngby-Taarbæks "(Beslutning)" og en dato til sidst ("- 2026-10-01")
@@ -486,7 +473,7 @@ function udenVersaler(t, tekst = "") {
   return u.replace(/^./, (c) => c.toUpperCase());
 }
 
-export const kommuneTitel = (t, nummereret, tekst) => {
+const kommuneTitel = (t, nummereret, tekst) => {
   let u = udenVersaler(nummereret ? t.replace(/^\d+\.\s+/, "") : t, tekst);
   u = u.replace(/^[A-ZÆØÅ]\s+[-–]\s+/, "").replace(/^(?:Beslutningssag|Orienteringssag|Drøftelsessag|Temasag)\s*:\s*/i, "").replace(/^Beslutning\s*[-–;:]\s+/, "")
     .replace(/\s*\((?:Beslutning|Orientering|Drøftelse|Godkendelse|Indstilling)\)\s*$/i, "")
@@ -524,24 +511,22 @@ async function main() {
     const egne = andre.filter((s) => s.kommune === navn);
     const top = [...new Set(egne.map((s) => s.udvalg))].find((u) => BYRAAD.test(u));
     if (top) TOPRAAD.set(navn, top);
-    if (KOMMUNE[navn]) UDGAVER.push(KOMMUNE[navn]);
     if (KOMMUNE[navn]) KSTED.set(navn, await findKommuneSteder(KOMMUNE[navn], egne, ROD));
   }
-  UDGAVER.sort((a, b) => a.navn.localeCompare(b.navn, "da"));
   console.log(`${alle.length} punkter, ${sager.length} publiceres i København${andre.length ? `, ${andre.length} i andre kommuner` : ""}`);
 
   const H = { ROD, IDAG, SITE_URL, esc, side, kicker, emneLinks, hvorNavn, stor, kortDato, datoTekst, ugedag, slug, saetninger, erLokaludvalg, bydel, vagtBoks, notits, EMNER, MDR, d };
   const { prSted, stederFor } = await findSteder(sager, ROD); // gader, pladser og parker (avis/steder.mjs)
-  // Grafik: plankort (lokalplaner), stedkort (gader og steder), luftfoto og gadefoto (kun med nøgler), godkendte læserfotos.
+  // Grafik: plankort (lokalplaner), stedkort (gader og steder), luftfoto (kun med nøgle), godkendte læserfotos.
   // Øverst på sagen står plankortet, ellers stedkortet, ellers emnets illustration (assets/emner/).
   const plankort = await bygPlankort(alleSager, H, KOMMUNE);
   const stedKort = await bygStedkort(alleSager, H, KOMMUNE, (s) => (erKK(s) ? stederFor(s) : KSTED.get(s.kommune)?.stederFor(s) || []));
   // Plankort eller stedkort til Min avis (b i sager.json); uden et kort bruger Min avis emnets tegning
   H.billedeFil = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || undefined;
-  const luftfotos = await bygLuftfotos(plankort, H), gadefotos = await bygGadefotos(stedKort, H), laeserfotos = await laesLaeserfotos(ROD);
+  const luftfotos = await bygLuftfotos(plankort, H), laeserfotos = await laesLaeserfotos(ROD);
   const billedeSti = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || `assets/emner/${emneId(s)}.svg`;
   const topBillede = (s, rod) => plankortFigur(s, plankort, rod, esc) || stedkortFigur(s, stedKort, rod, esc) || `<figure class="emne-figur">${emneBillede(s, rod, { lazy: false })}</figure>`;
-  const flereBilleder = (s, rod) => luftfotoFigur(s, luftfotos, rod, esc) + gadefotoFigur(s, gadefotos, rod, esc) + laeserfotoFigur(s, laeserfotos, rod, esc)
+  const flereBilleder = (s, rod) => luftfotoFigur(s, luftfotos, rod, esc) + laeserfotoFigur(s, laeserfotos, rod, esc)
     + (stedKort.get(s.id)?.sted || plankort.get(s.id) ? sendFotoLink(s, stedKort.get(s.id)?.sted || plankort.get(s.id)?.plannavn, rod, esc) : "");
   const lilleBillede = (s, rod) => `<a class="kort-billede" href="${rod}${s.url}" tabindex="-1" aria-hidden="true"><img class="emnebillede lille" src="${rod}${billedeSti(s)}" alt="" loading="lazy"></a>`;
   for (const dir of ["sag", "udvalg", "bydel", "emne"]) { await rm(join(ROD, dir), { recursive: true, force: true }); await mkdir(join(ROD, dir), { recursive: true }); }
@@ -825,7 +810,7 @@ if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})}).catch(function(){var p
   // Min avis har sine egne klasser med samme navne (kort-billede, sg-…, felt), som hele grafik.css ville ødelægge.
   await writeFile(join(ROD, "assets", "grafik-laes.css"), kunInde(grafikCss, ".laes-indhold"));
   await writeFile(join(ROD, "foto.html"), side({
-    titel: "Send et billede – Sagsvagt", beskrivelse: "Send et billede fra et sted, politikerne beslutter noget om. Vi viser det med dit navn.", sti: "foto.html", rod: "", indhold: fotoSideIndhold(esc),
+    titel: "Send et billede – Sagsvagt", beskrivelse: "Send et billede fra et sted, politikerne beslutter noget om. Vi viser det med dit navn.", sti: "foto.html", rod: "", indhold: fotoSideIndhold(),
   }));
   await writeFile(join(ROD, "om.html"), side({
     titel: "Om Sagsvagt", beskrivelse: "Sagsvagt gør det let at følge med i, hvad politikerne i din kommune beslutter.", sti: "om.html", rod: "", aktiv: "om",

@@ -21,9 +21,7 @@ $hent = function (int $id) use ($db): array {
     $q = $db->prepare('SELECT * FROM erhverv_kunder WHERE id = ?'); $q->execute([$id]);
     return $q->fetch() ?: fejl(404, 'Kunden findes ikke.');
 };
-$mandag = function () use ($d): string {
-    $u = (string)($d['uge'] ?? '');
-    if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $u)) return $u;
+$mandag = function (): string {
     return (new DateTimeImmutable('now', new DateTimeZone('Europe/Copenhagen')))->modify('monday next week')->format('Y-m-d');
 };
 

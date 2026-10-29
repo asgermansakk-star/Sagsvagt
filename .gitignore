@@ -8,6 +8,5 @@ api/_erhverv-signaler.json
 api/_ord-*.txt
 # Arbejdsfiler, når projektkort skrives i Claude Code (avis/erhverv-fakta.mjs --udtraek / --indlaes)
 avis/erhverv-fakta-koe.json
-avis/erhverv-fakta-ny.json
 # Interne noter, kunderapporter og salgslister må aldrig i det offentlige repo
 /plan/

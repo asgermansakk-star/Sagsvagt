@@ -6,7 +6,8 @@
 #   FTP_SERVER    ftp.simply.com (port 21, FTPS)
 #   FTP_USERNAME  FTP-brugernavnet fra Simply
 #   FTP_PASSWORD  FTP-adgangskoden fra Simply
-# Valgfri variabel FTP_SERVER_DIR (standard: public_html/).
+# Valgfri variabel FTP_SERVER_DIR (standard: public_html/). Valgfrie hemmeligheder: RELEVANS_NOEGLE (AI-tekster)
+# og DATAFORSYNINGEN_TOKEN (luftfoto af lokalplanerne).
 name: Opdater avisen
 
 on:
@@ -43,6 +44,13 @@ jobs:
 
       - run: npm ci
 
+      # Selvtjek af PDF-parseren (avis/tjek-parsepdf.mjs). Består den ikke, hentes der ikke nye møder fra de andre kommuner,
+      # så en ødelagt parser ikke giver sagerne forkert tekst. Resten af avisen opdateres, og kørslen bliver rød til sidst.
+      - name: Tjek PDF-parseren
+        id: parser
+        continue-on-error: true
+        run: node avis/tjek-parsepdf.mjs
+
       # Ved push bygger vi bare det, der er i repoet; robotten kører kun på tidsplan/manuelt,
       # eller når commit-beskeden indeholder [hent]
       - name: Hent nye sager fra kk.dk
@@ -66,16 +74,16 @@ jobs:
         env:
           BATCH: ${{ vars.BATCH || '10' }}
 
-      # Kommunerne hentes ti ad gangen (hver server får stadig kun én forespørgsel ad gangen).
-      # DAGE: hvor langt tilbage en ny kommune hentes første gang.
       # Natkort til toppen af mandagsmailen, forsiden og Min avis for kommuner, der lige er åbnet.
       # avis/natkort.mjs laver kun de kort, der mangler, og stopper aldrig robotten.
       - name: Natkort til nye kommuner
         continue-on-error: true
         run: node avis/natkort.mjs
 
+      # Kommunerne hentes ti ad gangen (hver server får stadig kun én forespørgsel ad gangen).
+      # DAGE: hvor langt tilbage en ny kommune hentes første gang.
       - name: Hent nye sager fra andre kommuner (FirstAgenda)
-        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
+        if: steps.parser.outcome == 'success' && (github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]'))
         continue-on-error: true
         run: node avis/hent-firstagenda.mjs
         env:
@@ -98,10 +106,13 @@ jobs:
           RELEVANS_ARBEJDSRUM: ${{ vars.RELEVANS_ARBEJDSRUM }}
           MAKS: ${{ vars.PERSPEKTIV_MAKS || '10' }}
 
+      # Luftfoto af lokalplanernes område (avis/grafik.mjs) kræver en gratis nøgle fra dataforsyningen.dk.
+      # Uden hemmeligheden DATAFORSYNINGEN_TOKEN springes de over.
       - name: Byg avisen
         run: node avis/byg.mjs
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://sagsvagt.dk/' }}
+          DATAFORSYNINGEN_TOKEN: ${{ secrets.DATAFORSYNINGEN_TOKEN }}
 
       # Ordindeks til søgning i hele sagsteksten: api/_ord-<kommune>.txt, som api/soeg.php og mandagsmailen slår op i.
       # Bygges fra data/ og sager.json efter avisen og ligger ikke i repoet. Stopper ikke robotten.
@@ -551,3 +562,9 @@ jobs:
       - name: Mangler FTP-oplysninger
         if: env.FTP_SERVER == ''
         run: echo "::warning::FTP_SERVER er ikke sat, så avisen blev ikke uploadet til sagsvagt.dk."
+
+      - name: PDF-parseren bestod ikke sit selvtjek
+        if: steps.parser.outcome == 'failure'
+        run: |
+          echo "::error::avis/tjek-parsepdf.mjs fejlede, så der blev ikke hentet nye møder fra de andre kommuner."
+          exit 1

@@ -1,9 +1,9 @@
 // Stemmegrafik: søjle med For / Imod / Undlod og partiknapper. Ren HTML, ingen JS. Stil i stil/stemmegrafik.css.
-// Input er en (beriget) sag; der bruges s.beslutning (eller s.afstemninger, hvis den allerede er udregnet) og s.tal.
-import { afstemninger, stemmetal, PARTIER } from "./beriget.mjs";
+// Input er en beriget sag (byg.mjs); der bruges s.afstemninger og s.tal.
+import { stemmetal, PARTIER } from "./beriget.mjs";
 
 // Kendte partifarver (baggrund på knappen). Tekstfarven vælges ud fra kontrast, se tekstFarve().
-export const PARTIFARVER = {
+const PARTIFARVER = {
   A: "#C8102E", // Socialdemokratiet, rød
   B: "#9A2A8C", // Radikale Venstre, lilla-magenta
   C: "#00583C", // Konservative, mørkegrøn
@@ -26,7 +26,7 @@ const lum = (hex) => {
 };
 const kontrast = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
 // Hvid tekst hvis den kan læses (mindst 4,5:1), ellers mørk
-export const tekstFarve = (bg) => (kontrast(bg, "#FFFFFF") >= 4.5 ? "#FFFFFF" : MORK_TEKST);
+const tekstFarve = (bg) => (kontrast(bg, "#FFFFFF") >= 4.5 ? "#FFFFFF" : MORK_TEKST);
 
 // ---------- Udlæsning af en afstemning ----------
 const TAL = /^(\d+)\s+(?:personer?|medlemmer?|stemmer?)$/i;
@@ -90,7 +90,7 @@ const lang = (v) => {
 
 // Hovedafstemningen: den sidste, der ikke er et ændringsforslag; findes ingen, er det den sidste
 function vælg(s) {
-  const rå = s.afstemninger || afstemninger(s.beslutning || "");
+  const rå = s.afstemninger;
   if (!rå.length) return null;
   const alle = rå.map((a) => læs(a, null));
   let hoved = [...alle].reverse().find((v) => !v.aendring) || alle.at(-1);
@@ -111,7 +111,7 @@ const bar = (v, cls, esc) => {
 const grupper = (v, esc) => [["for", "For"], ["imod", "Imod"], ["undlod", "Undlod"]].filter(([k]) => v.lister[k].length)
   .map(([k, navn]) => `<div class="sg-gruppe sg-g-${k}"><h4 class="sg-gh">${navn}</h4><ul class="sg-knapper">${v.lister[k].map((x) => knap(x, esc)).join("")}</ul></div>`).join("");
 
-export function stemmeGrafik(s, esc = (x) => x) {
+export function stemmeGrafik(s, esc) {
   const r = vælg(s); if (!r) return "";
   const v = r.hoved, { for: f, imod: i, undlod: u } = v.tal;
   if (f + i + (u || 0) === 0) return "";
@@ -133,7 +133,7 @@ ${små ? `<div class="sg-smaa"><p class="sg-sh">${v.aendring ? "Andre afstemning
 </section>`;
 }
 
-export function stemmeMini(s, esc = (x) => x) {
+export function stemmeMini(s, esc) {
   const r = vælg(s); if (!r) return "";
   const v = r.hoved, { for: f, imod: i, undlod: u } = v.tal;
   if (f + i + (u || 0) === 0 || v.aendring) return ""; // kun ændringsforslag stemt: sagens udfald kendes ikke

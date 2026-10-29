@@ -1,11 +1,11 @@
-/* Høringsnedtælling, læserfotos, luftfoto, gadefoto og fotoformularen (avis/grafik.mjs) */
+/* Høringsnedtælling, læserfotos, luftfoto og fotoformularen (avis/grafik.mjs) */
 .frist-maerke { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; font-weight: 600; font-size: .75rem; line-height: 1.6;
   background: var(--lyng); color: var(--blaek); white-space: nowrap; vertical-align: 1px; }
 .frist-maerke.snart { background: var(--rubin); color: var(--kalk-lys); }
 
-.laeserfoto, .luftfoto, .gadefoto { margin: 22px 0 18px; }
-.laeserfoto img, .luftfoto img, .gadefoto img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
-.laeserfoto figcaption, .luftfoto figcaption, .gadefoto figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
+.laeserfoto, .luftfoto { margin: 22px 0 18px; }
+.laeserfoto img, .luftfoto img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
+.laeserfoto figcaption, .luftfoto figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
 .send-foto { margin: -8px 0 18px; font-size: var(--fodnote); }
 .send-foto a { color: var(--vin); font-weight: 600; }
 

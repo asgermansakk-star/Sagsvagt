@@ -8,7 +8,7 @@ import jpeg from "jpeg-js";
 
 export const UA = "Sagsvagt-plankort/1.0 (+https://sagsvagt.dk/om.html)";
 // PLANKORT_FLISER kan pege på en anden fliseserver ({z}/{x}/{y}, fx egne fliser eller Dataforsyningen)
-export const FLISER = process.env.PLANKORT_FLISER || "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
+const FLISER = process.env.PLANKORT_FLISER || "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 export const KORTKILDE = process.env.PLANKORT_FLISER ? (process.env.PLANKORT_KILDE || "Kort: se kildeangivelse") : "Kort: © OpenStreetMap-bidragydere";
 export const C = { nat: "#0E0F14", kalk: "#E6DFD3", lyng: "#B7BBD8", rubin: "#B04A50", vin: "#8A2430", muted: "#56535A", kalkLys: "#EEE8DE" };
 export const xml = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

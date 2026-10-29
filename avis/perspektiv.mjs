@@ -55,7 +55,7 @@ const STOEJ = /^(\d+\.\s*)?(godkendelse af (dagsorden|referat)|eventuelt|meddele
 const TOP = /(borgerrepræsentation|kommunalbestyrelse|byråd|økonomiudvalg)/i;
 const laengde = (s) => (s.afsnit || []).reduce((n, a) => n + a.tekst.length, 0);
 
-export async function kandidater(P = {}) {
+async function kandidater(P = {}) {
   const idag = new Date().toISOString().slice(0, 10);
   const fra = new Date(Date.now() - 21 * 864e5).toISOString().slice(0, 10);
   const alle = [];

@@ -4,7 +4,7 @@
 import { readFile, writeFile, rm, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 
-export const MIN_SAGER = 2; // færre giver en tynd side, der bare gentager sagen
+const MIN_SAGER = 2; // færre giver en tynd side, der bare gentager sagen
 
 // Finder stederne i sagens titel og resumé. Længste navn vinder, så "Lille Langebro" ikke også tæller som "Langebro".
 // navne: stednavnene (standard: Københavns fra avis/steder-kk.json). min: hvor mange sager et sted skal have.
@@ -38,9 +38,9 @@ export async function bygSteder(prSted, H, o = {}) {
   const { mappe = "sted", kommune = null, hvor = "København", aktiv = "sted", fra = "sted", hvem = "Borgerrepræsentationen, udvalgene og lokaludvalgene",
     titel = "Steder", indexTitel = "Steder i København – Sagsvagt", indexBeskrivelse = "Gader, pladser, parker og kvarterer i København og de politiske sager, der handler om dem.",
     indexIntro = "Gader, pladser, parker og kvarterer, som politikerne i København har haft på dagsordenen flere gange. Find din gade, og se, hvad der er besluttet.",
-    alle = "Alle steder", ryd = true } = o;
+    alle = "Alle steder" } = o;
   const rod = "../".repeat(mappe.split("/").length);
-  if (ryd) await rm(join(ROD, mappe), { recursive: true, force: true });
+  await rm(join(ROD, mappe), { recursive: true, force: true });
   await mkdir(join(ROD, mappe), { recursive: true });
   const steder = [...prSted.keys()].sort((a, b) => a.localeCompare(b, "da"));
   const KILDE = `<p class="kilde-osm">Stednavne fra OpenStreetMap (© OpenStreetMap-bidragydere). Sagerne kommer fra kommunens dagsordener og referater.</p>`;

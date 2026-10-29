@@ -1,7 +1,7 @@
 <?php
 // Redaktionen: mandagsmailen. "forhaand" laver ugens mail til hver tilmeldt på serveren (api/_mandagsmail_lav.php, den
-// samme mail som den automatiske udsendelse) og fortæller, om ugen er planlagt eller stoppet. "modtagere" giver de
-// tilmeldte, der kan få ugens mail. "send" sender én mail og husker det, så ingen får samme uges mail to gange.
+// samme mail som den automatiske udsendelse) og fortæller, om ugen er planlagt eller stoppet.
+// "send" sender én mail og husker det, så ingen får samme uges mail to gange.
 // "planlaeg" lægger mailen i kø til et senere tidspunkt (sendes ved første besøg derefter, se api/_mandagsmail.php),
 // og "fortryd" stopper ugens mail: tømmer køen, også den automatiske, og planlægger den ikke igen.
 declare(strict_types=1);
@@ -19,14 +19,6 @@ if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $uge)) fejl(400, 'Vælg mandagens dato.
 $KAN = MM_KAN;
 
 $handling = (string)($d['handling'] ?? '');
-if ($handling === 'modtagere') {
-    $q = $db->prepare("SELECT a.id, a.email, a.kommuner, a.emner, a.status, a.profil, m.sendt, k.send_efter AS planlagt
-        FROM abonnenter a LEFT JOIN mandagsmail_sendt m ON m.abonnent_id = a.id AND m.uge = ?
-        LEFT JOIN mandagsmail_koe k ON k.abonnent_id = a.id AND k.uge = ? WHERE $KAN ORDER BY a.oprettet");
-    $q->execute([$uge, $uge]);
-    svar(200, ['modtagere' => $q->fetchAll()]);
-}
-
 if ($handling === 'forhaand') {
     $q = $db->prepare('SELECT planlagt, antal, stoppet FROM mandagsmail_uger WHERE uge = ?'); $q->execute([$uge]);
     $mails = array_map(fn($m) => ['a' => array_intersect_key($m['a'], array_flip(['id', 'email', 'kommuner', 'sendt', 'planlagt'])), 'type' => $m['type'],
