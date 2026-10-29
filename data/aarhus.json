@@ -553,6 +553,38 @@
    "dato": "2026-10-28",
    "punkter": 8,
    "parser": 3
+  },
+  "850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d": {
+   "lastmod": "2026-10-29",
+   "type": "dagsorden",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "punkter": 15,
+   "parser": 3
+  },
+  "1537f77d-eb1e-4136-a2ab-3504b3af073e": {
+   "lastmod": "2026-10-29",
+   "type": "referat",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-10-28",
+   "punkter": 11,
+   "parser": 3
+  },
+  "84d7049d-d7ea-4cd4-a4e5-80d3708498b2": {
+   "lastmod": "2026-10-29",
+   "type": "referat",
+   "udvalg": "Sundheds- og Omsorgsudvalget",
+   "dato": "2026-10-28",
+   "punkter": 10,
+   "parser": 3
+  },
+  "cc513dea-e8f1-476b-9fef-629c66e4a84c": {
+   "lastmod": "2026-10-29",
+   "type": "dagsorden",
+   "udvalg": "Magistraten",
+   "dato": "2026-11-03",
+   "punkter": 3,
+   "parser": 3
   }
  },
  "sager": {
@@ -3299,12 +3331,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nPunkt 8 ”Status på AI” behandles under punkt 3, ”Nyt fra stadsdirektøren”.\nDagsordenen blev herefter godkendt uden bemærkninger."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-2": {
@@ -3312,12 +3349,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Referat fra mødet den 30. september 2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer var ingen bemærkninger til referatet."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-3": {
@@ -3325,12 +3367,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Nyt fra Stadsdirektøren",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nMichael Christensen, Gitte Sturm og Anette Poulsen deltog i forvaltningens orientering\nom status på lufthavnen.\nForvaltningen orienterede herefter om status på AI i Aarhus Kommune, herunder\nudviklingen i konkret anvendelse og tilpasning af sektorlovgivningen. Endelig orienterede\nforvaltningen om status vedrørende kørselskontoret."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-4": {
@@ -3338,12 +3385,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Orientering om budget 2027",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede om proces og forslag til udmøntning af de besparelser i\nBorgmesterens Afdeling, som følger af budget 2027. Udvalget tog orienteringen til\nefterretning."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-5": {
@@ -3351,10 +3403,10 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Svar på forslag fra RV om etablering af tech-startup rugekasse i Aarhus",
    "afsnit": [
     {
@@ -3363,7 +3415,7 @@
     },
     {
      "titel": "Resumé",
-     "tekst": "Radikale Venstre foreslår at etablere en midlertidig non-profit tech-startup rugekasse i en\nledig kommunal ejendom med lav eller ingen husleje. Aarhus Kommune kan ikke lovligt\nstille lokaler til rådighed gratis eller til reduceret husleje, men kan udleje midlertidigt\nubenyttede lokaler på markedsvilkår.\nForvaltningen har identificeret en relevant bygning. Da der ikke er afsat midler til\nvedligeholdelse og fornyelse, vil anvendelse af bygningen kræve, at udlejning sker til én\nprimær lejer med ret til fremleje, og hvor vedligeholdelse og risici påhviler den primære\nlejer, eller at der afsættes midler. Den udlejningspraksis vurderes ikke forenelig med\nmålgruppens økonomiske forudsætninger.\nEn indledende afdækning peger desuden på eksisterende tilbud med ledig kapacitet,\nhvorfor en nærmere behovsafklaring anbefales inden nye tilbud etableres.\n\nDet indstilles, at forslaget om en tech-startup rugekasse i en ledig kommunal ejendom\nmed lav eller ingen husleje afvises, men at forslagets perspektiver inddrages i arbejdet\nmed en ny erhvervsstrategi.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) Beslutningsforslaget afvises med baggrund i, at det ikke er lovligt for kommunen at\netablere en tech-startup rugekasse i en ledig kommunal ejendom med lav eller ingen\nhusleje.\nAt 2) Forslagets perspektiver inddrages i arbejdet med den nye erhvervsstrategi med\nhenblik på at afklare behovet og muligheden for etablering af nye innovationsmiljø-er,\neventuelt i samarbejde med relevante aktører og eksisterende miljøer.\nSAGSFORLØB:"
+     "tekst": "Radikale Venstre foreslår at etablere en midlertidig non-profit tech-startup rugekasse i en\nledig kommunal ejendom med lav eller ingen husleje. Aarhus Kommune kan ikke lovligt\nstille lokaler til rådighed gratis eller til reduceret husleje, men kan udleje midlertidigt\nubenyttede lokaler på markedsvilkår.\nForvaltningen har identificeret en relevant bygning. Da der ikke er afsat midler til\nvedligeholdelse og fornyelse, vil anvendelse af bygningen kræve, at udlejning sker til én\n\nprimær lejer med ret til fremleje, og hvor vedligeholdelse og risici påhviler den primære\nlejer, eller at der afsættes midler. Den udlejningspraksis vurderes ikke forenelig med\nmålgruppens økonomiske forudsætninger.\nEn indledende afdækning peger desuden på eksisterende tilbud med ledig kapacitet,\nhvorfor en nærmere behovsafklaring anbefales inden nye tilbud etableres.\nDet indstilles, at forslaget om en tech-startup rugekasse i en ledig kommunal ejendom\nmed lav eller ingen husleje afvises, men at forslagets perspektiver inddrages i arbejdet\nmed en ny erhvervsstrategi.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) Beslutningsforslaget afvises med baggrund i, at det ikke er lovligt for kommunen at\netablere en tech-startup rugekasse i en ledig kommunal ejendom med lav eller ingen\nhusleje.\nAt 2) Forslagets perspektiver inddrages i arbejdet med den nye erhvervsstrategi med\nhenblik på at afklare behovet og muligheden for etablering af nye innovationsmiljø-er,\neventuelt i samarbejde med relevante aktører og eksisterende miljøer.\nSAGSFORLØB"
     },
     {
      "titel": "Behandling i Aarhus Byråd 3. juni 2026",
@@ -3385,12 +3437,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Temadrøftelse om boligpolitik",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede om udviklingen på boligmarkedet i Aarhus og kommunens\nmuligheder på boligområdet.\nUdvalget drøftede herefter sagen. Følgende temaer blev nævnt i den forbindelse: ”Oslomodellen”, etablering af flere ejerboliger og familieboliger, afvikling af udsatte\nboligområder, kontrol med Airbnb, andelen af andelsboliger, omdannelse af eksisterende\nbygningsmasse til beboelse og udvikling af arealer i oplandsbyer."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-7": {
@@ -3398,12 +3455,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Oplæg fra VisitAarhus",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nPia Lange Christensen, direktør for VisitAarhus, orienterede om det arbejde som\nVisitAarhus laver.\nUdvalget drøftede herefter sagen og nævnte følgende aspekter af turismeindsatsen:\nSportsturisme, krydstogtsturisme, konsekvenser ved Airbnb, borgeropbakning til turismen\nog kulturlivets betydning."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-8": {
@@ -3411,12 +3473,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Status på AI",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDagsordenspunktets indhold blev behandlet under punkt 3."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-9": {
@@ -3424,12 +3491,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Skriftlige orienteringer",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer var ingen bemærkninger til dagsordenspunktet."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-10": {
@@ -3437,12 +3509,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Sager på vej",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer var ingen bemærkninger til dagsordenspunktet."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-oekonomi-og-erhvervsudvalget-12": {
@@ -3450,12 +3527,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=f16f68f3-40b9-43d0-940f-35888ed9f6dd",
-   "hentet": "2026-10-28T10:47:56.755Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1537f77d-eb1e-4136-a2ab-3504b3af073e",
+   "hentet": "2026-10-29T19:53:01.615Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede om en konkret sag."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-09-30-oekonomi-og-erhvervsudvalget-1": {
@@ -4165,12 +4247,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.193Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nGodkendt."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-2": {
@@ -4178,12 +4265,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Godkendelse af referat fra seneste møde",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nTaget til efterretning."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-3": {
@@ -4191,12 +4283,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Velkommen til Gitte Sturm",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nGitte blev budt velkommen af udvalget."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-4": {
@@ -4204,12 +4301,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Opsamling på studietur",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede og udvalget gav input til yderligere temaer, der kan følges op\npå (faglige frisættelse af teams, gode rammer for demensramte i landsby (eventuelt. via\nboligplanen), smarthouse/nye hjælpemidler og profilplejehjem) samt refleksioner over\nturen som helhed."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-5": {
@@ -4217,12 +4319,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Status på ældrelov",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nUdvalget blev orienteret af forvaltningen, jf. vedlagte præsentation. Sagen kommer i\nbyrådet i december måned, og så vil udvalget få en rolle med at følge op derpå. Der kan\ntages indikatorer/temaer ud til senere opfølgning på udvalgsmøder. Det vil desuden blive\nfremlagt for udvalget, hvilke dele af Ældreloven man skal følge op på. Derudover er\norganisationsanalysen på vej, som udvalget vil få nærmere information om."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-6": {
@@ -4230,12 +4337,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Samarbejdsaftale med En for holdet",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nUdvalget blev orienteret af forvaltningen, jf. vedlagte præsentation. Udvalget drøftede\nsagen og læringen fra den. Udvalget vil gerne på senere tidspunkt have en bredere\norientering om partnerskaber generelt, og forvaltningen vil desuden inkludere emnet i\nårlig redegørelse for udvalget samt lave fx kvartalsvis redegørelse til udvalget om aftaler\npå vej."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-7": {
@@ -4243,12 +4355,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Rehabiliteringshøjskolen",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nUdvalget blev orienteret af forvaltningen, jf. vedlagte præsentation, og udvalget drøftede\nsagen. Forvaltningen laver brev om de alternative tilbud, som aktivisterne blev orienteret\nom, til samtlige brugere af rehabiliteringstilbuddet. Udvalget orienteres nærmere herom."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-8": {
@@ -4256,12 +4373,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Folkehuse - cafeanalyse og nye samarbejder",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nUdvalget blev orienteret af forvaltningen, jf. vedlagte præsentation, og gav input til og\npolitiske pejlinger på fremtidig cafédrift og samarbejdet med nye aktører."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-9": {
@@ -4269,12 +4391,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Kommende møder og indstillinger",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nIngen bemærkninger."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-10-28-sundheds-og-omsorgsudvalget-10": {
@@ -4282,12 +4409,17 @@
    "kommune": "Aarhus",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-10-28",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=cec69d02-ea19-471c-81f1-86569bcaeef7",
-   "hentet": "2026-10-26T12:22:37.194Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=84d7049d-d7ea-4cd4-a4e5-80d3708498b2",
+   "hentet": "2026-10-29T19:53:07.288Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nNæste møde: Der afholdes fællesmødet med Ældrerådet om profilplejehjem."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-09-29-sundheds-og-omsorgsudvalget-1": {
@@ -10540,19 +10672,432 @@
     }
    ],
    "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-1": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-1",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-3": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-3",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Svar på forslag fra Børne- og ungebyrådet om mere støtte til socialt og fagligt udsatte elever",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "FRA MAGISTRATSAFDELINGEN FOR BØRN OG UNGE"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Børne- og ungebyrådet har fremsendt forslag om mere støtte til socialt og fagligt udsatte\nelever ved at:\n1. Øge støtten til udsatte elever ved at\na. Indføre en akutskole i Aarhus Kommune for de mest udsatte og udadreagerende\nelever\nb. Øge ressourcerne lokalt til specialtilbud på skolerne\n2. Indføre flere tests og mere hjælp til ordblinde i den mellemste gule zone.\nPå byrådsmødet den 17. juni 2026 blev det besluttet at fremsende forslaget til\nMagistratsafdelingen for Børn og Unge til besvarelse.\nMålgruppen af udsatte og sårbare børn og unge er en kendt udfordring i Aarhus\nKommune, og Børn og Unge arbejder kontinuerligt med at understøtte eleverne lokalt på\nskolerne.\nBørn og Unge følger Undervisningsministeriets vejledning, hvor Ordblindetesten kun må\ngennemføres én gang. Derfor kan der ikke indføres en ekstra test for elever i den gule\nkategori. Skolerne understøttes løbende af læsekonsulenter.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) Aarhus Kommune fortsat arbejder for at understøtte kommunens mest sårbare og\nudsatte børn og unge, bl.a. gennem udvidelsen af Kaløvigskolen i overensstemmelse\nmed budgetforliget 2027-2030.\nAt 2) Byrådet tager til efterretning at der med budgetforliget 2027-2023 er afsat et\nøkonomisk råderum til skolerne til at prioritere lokale tiltag.\nAt 3) Aarhus Kommune fortsat følger Undervisningsministeriets faglige vejledning til\nOrdblindetesten, samtidig med at skolernes understøttelse af målgruppen fortsat styrkes\ngennem opfølgning og kompetenceudvikling.\n\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Aarhus Byråd 17. juni 2026",
+     "tekst": "Punktnummer: 19\nFremsendes til Magistratsafdelingen for Børn og Unge med henblik på udarbejdelse af en\nindstilling, jf. byrådets vedtagelse i mødet den 17. juni 2026 om magistratsbehandling af\nforslaget.\nSagen bedes tilbagesendt byrådet via Magistraten."
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 15\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Magistratsafdelingen for Børn og Unges indstilling af\n6. oktober 2026.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-4": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-4",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Svar på forslag fra EL, LA, DD og DF om et fælles opgør med magistratstyret",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "FRA BORGMESTERENS AFDELING"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Indstillingen behandler beslutningsforslag fra EL, LA, DD og DF samt besvarer spørgsmål\nfra byrådets drøftelse af 17. juni 2026.\nDet vurderes, at det ikke umiddelbart er muligt at indføre samme styreform som i Oslo\nKommune. Det vurderes desuden, at der er fordele og ulemper ved alle kommunale\nstyreformer, og at det er vanskeligt at estimere gevinster og omkostninger forbundet med\nen evt. ændring af styreform i Aarhus Kommune.\nDer kan forventes et vist provenu på sigt, men størrelsen vil afhænge af, hvilken ny\nstyreform man sammenligner magistratsstyret med.\nHvis byrådet ønsker en politisk forankret proces, har Aarhus Kommune tradition for at\nforankre processen i et opgaveudvalg (§ 17, stk. 4).\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) byrådet tager de mulige styreformer til efterretning, som beskrevet i bilag 2 og 3\nAt 2) byrådet tager de efterspurgte relevante betænkninger, rapporter og belysninger til\nefterretning (bilag 5-16), som beskrevet i bilag 2 og 4.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Aarhus Byråd 17. juni 2026",
+     "tekst": "Punktnummer: 20\nFremsendes til Borgmesterens Afdeling med henblik på udarbejdelse af en indstilling, jf.\nbyrådets vedtagelse i mødet den 17. juni 2026 om magistratsbehandling af forslaget.\nSagen bedes tilbagesendt byrådet via Magistraten."
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 3\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Borgmesterens Afdelings indstilling af 30. september\nDanmarksdemokraterne, Enhedslisten de Rød-Grønne og Liberal Alliance tog forbehold.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-5": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-5",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Svar på forslag fra RV om etablering af tech-startup rugekasse i Aarhus",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "FRA BORGMESTERENS AFDELING OG MAGISTRATSAFDELINGEN\nFOR TEKNIK OG MILJØ"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Radikale Venstre foreslår at etablere en midlertidig non-profit tech-startup rugekasse i en\nledig kommunal ejendom med lav eller ingen husleje. Aarhus Kommune kan ikke lovligt\nstille lokaler til rådighed gratis eller til reduceret husleje, men kan udleje midlertidigt\nubenyttede lokaler på markedsvilkår.\nForvaltningen har identificeret en relevant bygning. Da der ikke er afsat midler til\nvedligeholdelse og fornyelse, vil anvendelse af bygningen kræve, at udlejning sker til én\nprimær lejer med ret til fremleje, og hvor vedligeholdelse og risici påhviler den primære\nlejer, eller at der afsættes midler. Den udlejningspraksis vurderes ikke forenelig med\nmålgruppens økonomiske forudsætninger.\nEn indledende afdækning peger desuden på eksisterende tilbud med ledig kapacitet,\nhvorfor en nærmere behovsafklaring anbefales inden nye tilbud etableres.\n\nDet indstilles, at forslaget om en tech-startup rugekasse i en ledig kommunal ejendom\nmed lav eller ingen husleje afvises, men at forslagets perspektiver inddrages i arbejdet\nmed en ny erhvervsstrategi.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) Beslutningsforslaget afvises med baggrund i, at det ikke er lovligt for kommunen at\netablere en tech-startup rugekasse i en ledig kommunal ejendom med lav eller ingen\nhusleje.\nAt 2) Forslagets perspektiver inddrages i arbejdet med den nye erhvervsstrategi med\nhenblik på at afklare behovet og muligheden for etablering af nye innovationsmiljø-er,\neventuelt i samarbejde med relevante aktører og eksisterende miljøer.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Aarhus Byråd 3. juni 2026",
+     "tekst": "Punktnummer: 16\nFremsendes til Borgmesterens Afdeling og Magistratsafdelingen for Teknik og Miljø med\nhenblik på udarbejdelse af en indstilling, jf. byrådets vedtagelse i mødet den 3. juni 2026\nom magistratsbehandling af forslaget.\nSagen bedes tilbagesendt byrådet via Magistraten."
+    },
+    {
+     "titel": "Behandling i Magistraten 29. september 2026",
+     "tekst": "Punktnummer: 12\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 29.\nseptember 2026 anbefaler, at byrådet tiltræder Borgmesterens Afdelings og\nMagistratsafdelingen for Teknik og Miljøs indstilling af 21. september 2026.\nRådmand for Magistratsafdelingen for Kultur og Borgerservice, Jesper Kjeldsen og\nRådmand for Magistratsafdelingen for Sundhed og Omsorg, Metin Lindved Aydin deltog\nikke i sagens behandling."
+    },
+    {
+     "titel": "Behandling i Aarhus Byråd 7. oktober 2026",
+     "tekst": "Punktnummer: 13\nFremsendes til Økonomi- og Erhvervsudvalget til behandling i henhold til beslutning i\nbyrådets møde den 7. oktober 2026."
+    },
+    {
+     "titel": "Behandling i Økonomi- og Erhvervsudvalget 28. oktober 2026",
+     "tekst": "Punktnummer: 5\nUdvalget kunne enstemmigt tiltræde indstillingen i overensstemmelse med Magistratens\nanbefaling.\nHüseyin Arac var forhindret i at deltage i udvalgets behandling af sagen."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-6": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-6",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Godkendelse af Rammeaftale 2027-28",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunerne og regionen i Midtjylland indgår hvert andet år en rammeaftale om\nsamarbejdet på det specialiserede social- og specialundervisningsområde.\nKommunekontaktrådet i Midtjylland (KKR Midtjylland) har på et møde den 1. september\n2026 godkendt udkast til Rammeaftale 2027-28 og anbefaler, at rammeaftalen\ngodkendes i de midtjyske byråd og i regionsrådet.\nI Rammeaftale 2027-28 sætter de midtjyske kommuner særligt fokus på\nudviklingsområdet ”Borgere med komplekse udfordringer”. Herunder indgår desuden en\naftale om, at taksterne ikke kan stige i perioden 2027-28.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) byrådet tiltræder Rammeaftale 2027-28 som forelagt, jf. bilag 1.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 4\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Borgmesterens Afdelings og Magistratsafdelingen for\nSociale Forhold og Beskæftigelses indstilling af 19. oktober 2026.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-7": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-7",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Udmøntning af akutmidler på beredskabsområdet",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Regeringen har afsat 270 mio. kr. til en akutpakke på beredskabsområdet i kommunerne.\nAarhus Kommunes andel heraf udgør 16,7 mio. kr., som modtages i forbindelse med Lovog Cirkulæreprogrammet for 2026. Midlerne er et engangsbeløb og er anlægsmidler.\nDe 16,7 mio. kr. foreslås fordelt med 9,8 mio. kr. til Østjylland Brandvæsen og 3,1 mio. kr.\ntil ældreområdet i Sundhed Omsorg. 3,8 mio. kr. afsættes i Borgmesterens Afdeling til en\ntværgående beredskabspulje i Aarhus Kommune, som fordeles af Direktørgruppen.\nFordelingen af midlerne følger tilkendegivelser fra Kommunernes Landsforening om\nfordeling af midlerne.\nDe 9,8 mio. kr. til Østjyllands Brandvæsen anvendes til bl.a. forøget kapacitet til\nnødindkvartering, nødstrømsforsyning, udstyr til sikkerhedshændelser og materiel til\nhåndtering af klimahændelser.\nDe 3,1 mio. kr. på ældreområdet anvendes til etablering af nødstrøm på plejehjem m.v.\nDen tværgående beredskabspulje på 3,8 mio. kr. vil jf. temadrøftelse i Økonomi- og\nErhvervsudvalget 29. april 2026 f.eks. kunne anvendes til indkøb af powerstations til\nplejehjem og bosteder, varmekilder, nye kommunikationsløsninger etc.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) Der oprettes en KB-bevilling ”KB Beredskab akutpakke 2026” under Borgmesterens\nAfdeling med et rådighedsbeløb på 16.740.000 kr., som finansieres af Lov- og Cirkulæreprogrammet 2026.\nAt 2) Der godkendes en anlægsbevilling på 16.740.000 kr. til ”KB Beredskab akutpakke\nAt 3) Midlerne fordeles i 2026 til Østjyllands Brandvæsen (9,8 mio. kr.), Sundhed og\nOmsorg (3,1 mio. kr.) og Borgmesterens Afdeling (3,8 mio. kr.).\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 5\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Borgmesterens Afdelings, Magistratsafdelingen for\nTeknik og Miljøs og Magistratsafdelingen for Sundhed og Omsorgs indstilling af 22.\nseptember 2026.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-8": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-8",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Opfølgning på hjemløseområdet 2025",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Antallet af hjemløse i Aarhus er ifølge VIVEs seneste hjem-løsetælling 492 personer,\nhvilket er et fald på 64 personer (11,5 %) siden tællingen i 2024. Faldet indikerer, at\nSociale Forhold og Beskæftigelses Housing First-strategi virker. Mange hjemløse har fået\nbolig og modtager støtte. Trods den positive udvikling er byrådets mål om maksimalt 300\nhjemløse, heraf 100 hjemløse i alderen 18-29 år, ikke nået. På den baggrund indstilles\ndet, at Social- og Beskæftigelsesudvalget drøfter, om målsætningerne på området\nafspejler byrådets ambitionsniveau for området.\nSociale Forhold og Beskæftigelses egne data viser også, at udviklingen går den rette vej.\n93% af alle aarhusianere, der i løbet af 2025 har været på et forsorgstilbud, havde en\nplan for en relevant boligløsning og den rette støtte.\nSamtidig har 92% af alle borgere, der kommer i bolig og modtager støtte, stadig en bolig\nefter et år. Desuden er målet om en stigende tilknytning til arbejdsmarkedet opnået.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) byrådet tager opfølgningen på hjemløseområdet til efterretning\nAt 2) målene på hjemløseområdet drøftes i Social- og Beskæftigelsesudvalget i\nforbindelse med rådmanden for Sociale Forhold og Beskæftigelses præsentation af\nMasterplan for hjemløseområdet i Aarhus 2027-2030.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 6\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Magistratsafdelingen for Sociale Forhold og\nBeskæftigelses indstilling af 25. september 2026.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-9": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-9",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Anlægsregnskab for Energirenovering af vejbelysning, del II",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Teknik og Miljø aflægger anlægsregnskab for Energirenovering af vejbelysning – del II.\nAnlægsprojektet har omfattet udskiftning af de resterende energiineffektive gadelamper i\nAarhus Kommune med LED-belysning samt projektet Lys på Aarhus, der omfatter\nsærlige lysprojekter i udvalgte byrum med fokus på tryghed, identitet og oplevelsesværdi.\nAnlægsregnskabet viser et nettoforbrug på 99,1 mio. kr.\nSammenholdt med anlægsbevillingen på 129,9 mio. kr. udgør mindreforbruget 30,6 mio.\nkr. efter korrektion for en mindreindtægt på 0,15 mio. kr. Sammenholdt med det\ngældende rådighedsbeløb udgør mindreforbruget 32,2 mio. kr. Forskellen mellem de to\nopgørelser skyldes pris-fremskrivninger.\nProjektet blev i 2021 finansieret som et driftsfinansieret anlæg på baggrund af\ndriftsbesparelse på elforbruget. Da projektet afsluttes med et restbudget, nedskrives den\nårlige driftsfinansiering med 2,25 mio. kr. i den resterende del af den 20-årige\nafdragsperiode. De frigivne midler tilbageføres til ordinære drift, hvor de skal prioriteres i\nforhold til servicerammen for de kommende år.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) anlægsregnskabet for Energirenovering af vejbelysning - del II godkendes med de\nanførte afvigelser fra bevillingen.\nAt 2) driftsbudgettet for vejbelysningen opjusteres med 2,25 mio. kr. årligt i den\nresterende finansieringsperiode.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 7\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Magistratsafdelingen for Teknik og Miljøs indstilling af\n1. oktober 2026.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-10": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-10",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Kommuneplantillæg nr. 5 - vurdering af enkeltbygningers bevaringsværdi (1-4)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommuneplantillæg nr. 5 gælder en udpegning af bevaringsværdige ejendomme indenfor\nLokalsamfund Åby. Det indstilles med dette tillæg, at 1081 ud af i alt 2329 registrerede\nbygninger i området udpeges som bevaringsværdige.\nFormålet med at udpege bevaringsværdige bygninger er at rette en opmærksomhed på\nbygningskulturen som et identitetsskabende udgangspunkt for kommunens udvikling.\nFor at en bygning kan opnå myndighedsstatus som bevaringsværdig, skal den optages i\nkommuneplanen via tillæg.\nDer er i høringsperioden modtaget 16 høringssvar, heraf 1 fra myndighed, 1 fra\nvirksomhed og 14 fra privatpersoner. Høringssvarene er besvaret enkeltvis.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) Forslag til Tillæg nr. 5 til kommuneplan 2025 vedtages endeligt med ændringer, jf.\nafsnit 5.1\nAt 2) Indsigelser besvares, som det fremgår af indstillingens afsnit 5.2.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 8\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Magistratsafdelingen for Teknik og Miljøs indstilling af\n29. september 2026.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling"
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-11": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-11",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Forslag til Tillæg nr. 29 til Kommuneplan 2025, Vurdering af enkeltbygningers bevaringsværdi",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommuneplantillæg nr. 29 omhandler udpegning af bevaringsværdige ejendomme\nindenfor Lokalsamfund Hasle, Brabrand, Gellerup og Årslev. Tillægget omfatter\nbygninger, som er opført før 1970.\nDer er afsat midler ved budgetforlig 2022 samt 2025 til en vurdering af bevaringsværdier\nfor alle ejendomme opført til og med 1969. Projektet skal realiseres over en periode fra\n2022 – 2029. Herefter skal ske en vurdering hvert 5. år af bygninger, der er opført fra og\nFormålet med at udpege bevaringsværdige bygninger er at rette en opmærksomhed på\nbygningskulturen som et identitetsskabende udgangspunkt for kommunens udvikling.\nFor at en bygning kan opnå myndighedsstatus som bevaringsværdig, skal denne optages\ni kommuneplanen eller i en lokalplan med bevaringsbestemmelser. Med tillægget\nforeslås, at 932 bygninger udpeges som bevaringsværdige ud af 3473 registrerede\nbygninger indenfor Hasle, Brabrand, Gellerup og Årslevs afgrænsning.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) Forslag til kommuneplantillæg nr. 29 godkendes til offentlig fremlæggelse.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 9\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Magistratsafdelingen for Teknik og Miljøs indstilling af\n29. september 2026.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-12": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-12",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Lokalplan 1165, Frydenlund Centret - Endelig",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Lokalplanområdet er hovedsageligt privatejet, har en størrelse på ca. 12.700 m2 og ligger\nved Viborgvej, Frydenlunds Allé og Haslevangsvej.\nLokalplanen er udarbejdet efter anmodning fra de private grundejere med formål om at\netablere tre bebyggelser langs Viborgvej, som involverer en revitalisering af Frydenlund\nCentret. Planen muliggør op til 23.040 m² bebyggelse, fordelt i tre delområder. Der kan\nopføres maksimalt 294 boliger og 3.000 m2 butikker.\nDer er udarbejdet et kommuneplantillæg, som øger byggemuligheden og ændrer\nanvendelsen, og der foreligger forslag til udbygningsaftaler med projektudviklerne.\nPlanforslagene har været i offentlig høring fra 1. juli til 9. september 2025 og igen fra 23.\napril til den 18. juni 2026. I anden høring er der modtaget 41 høringssvar med\nbemærkninger om bl.a. kritik af processen, parkering, trafik, indblik, tilpasning til\nomgivelserne og den overordnede byudvikling ved Frydenlund Centret.\nTeknik og Miljø foreslår mindre ændringer, som beskrevet i bilag 5.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) forslag til Tillæg 22 til Kommuneplan 2025 vedtages endeligt\nAt 2) forslag til Lokalplan 1165 vedtages endeligt med de ændringer, der fremgår af bilag\nAt 3) sammenfattende redegørelse om miljøvurdering godkendes (bilag 2)\nAt 4) forslag til udbygningsaftale godkendes (bilag 3)\nAt 5) høringssvar besvares, som det fremgår af bilag 5\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 10\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Magistratsafdelingen for Teknik og Miljøs indstilling af\n5. oktober 2026.\nSocialistisk Folkeparti, Liberal Alliance, Enhedslisten de Rød-Grønne og\nDanmarksdemokraterne tog forbehold.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-13": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-13",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Lokalplan 1230, parcelhusgrunde i Kolt-Hasselager - Forslag",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der er udarbejdet forslag til en lokalplan og et kommune-plantillæg på et kommunalt ejet\nareal ved Kolt Østervej og Koltvej i Kolt-Hasselager.\nLokalplanen giver mulighed for udstykning af 28 parcelhusgrunde og mindre justeringer\naf kommuneplanrammernes afgrænsninger.\nDet er vurderingen, at planforslagene imødekommer efterspørgsel på parcelhusgrunde i\nområdet og et borgerøn-ske om mødested i Bavnehøjparken.\nDet skal besluttes at sende planforslagene i offentlig høring i 8 uger.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) forslag til lokalplan 1230 og tilhørende forslag til tillæg 19 til Kommuneplan 2025\ngodkendes til offentlig fremlæggelse.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 11\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Magistratsafdelingen for Teknik og Miljøs indstilling af\n11. september 2026.\nSocialistisk Folkeparti, Liberal Alliance, Enhedslisten de Rød-Grønne,\nDanmarksdemokraterne, Radikale Venstre og Venstre tog forbehold.\nMagistratsafdelingen for Teknik og Miljø udarbejder notat om jordbundsforhold i\nFælleden, samt notat om muligt magelæg i forbindelse med brug af grønne\nområder/boldbaner\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-14": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-14",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Svar på forslag fra SF om handleplan for grønne facader og tage i Aarhus",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "FRA MAGISTRATSAFDELINGEN FOR TEKNIK OG MILJØ"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "SF har stillet forslag om, at Aarhus Kommune skal udarbejde en handleplan for grønne\nfacader og tage. Med forslaget ønskes det, at der fastsættes konkrete og tidsbestemte\nmålsætninger, og at planen rummer virkemidler som incitamenter, vejledning og\ndemonstrationsprojekter.\nDer er allerede vedtaget en bred vifte af initiativer, som understøtter disse grønne\nelementer i byudviklingen, herunder særligt Grøn Norm, kommuneplantillægget Et\ngrønnere Aarhus med mere blåt og Politik for Bykvalitet og Arkitektur.\nDet vurderes, at forslagets intentioner kan imødekommes ved at supplere allerede\nvedtagne politikker med informationsmateriale, der viser eksempler og giver konkrete råd\nom etablering og vedligehold af begrønnede facader, tage og gårdrum. Samtidig foreslås\ndet, at der i den kommende byrådsperiode gennemføres en opdatering af Grøn Norm\nmed henblik på at vurdere og eventuelt justere beregningsgrundlag og pointværdier for\ngrønne tage og facader.\nBESLUTNINGSPUNKTER\nDet indstilles:\n1) at beslutningsforslaget om udarbejdelse af handleplan for grønne tage og facader ikke\ntiltrædes,\n2) at der, som supplement til arkitekturpolitikken, udarbejdes materiale med eksempler og\nkonkrete råd om etablering og vedligeholdelse af grønne facader, tage og gårdrum,\n3) at der som opfølgning på Kommuneplan 2025 foretages en opdatering af Grøn Norm\nmed henblik på at vurdere og eventuelt justere beregningsgrundlag og pointværdier,\nherunder for grønne tage og facader.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Aarhus Byråd 13. august 2025",
+     "tekst": "Punktnummer: 5\nFremsendes til Magistratsafdelingen for Teknik og Miljø med henblik på udarbejdelse af\nen indstilling, jf. byrådets vedtagelse i mødet den 13. august 2025 om\nmagistratsbehandling af forslaget.\nSagen bedes tilbagesendt byrådet via Magistraten.\nÆndringsforslaget fra Alternativets byrådsgruppe af 13. august 2025 blev ikke tiltrådt."
+    },
+    {
+     "titel": "Behandling i Magistraten 4. november 2025",
+     "tekst": "Punktnummer: 9\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 4. november\n2025 anbefaler, at byrådet tiltræder Magistratsafdelingen for Teknik og Miljøs indstilling af\n22. oktober 2025.\nSocialistisk Folkeparti henholder sig det til oprindelige forslag.\nThure Hastrup var forhindret i at deltage i sagens behandling."
+    },
+    {
+     "titel": "Behandling i Aarhus Byråd 12. november 2025",
+     "tekst": "Punktnummer: 23\nFremsendes til Teknisk Udvalg til behandling i henhold til beslutning i byrådets møde den\n12. november 2025."
+    },
+    {
+     "titel": "Behandling i By- og Planudvalget 30. september 2026",
+     "tekst": "Punktnummer: 3\nUdvalget besluttede at udsætte sagens behandling til næste møde. Eventuelle spørgsmål\ntil sagen kan fremsendes til forvaltningen. Udvalget efterspurgte desuden materiale fra\nlignende beslutningsforslag fra Venstre og SF fra 2018/2019."
+    },
+    {
+     "titel": "Behandling i By- og Planudvalget 28. oktober 2026",
+     "tekst": "Punktnummer: 5\nEt flertal i udvalget kunne tiltræde indstillingen i overensstemmelse med Magistratens\nanbefaling.\nKristian Sommer, Anette Poulsen, Gert Bjerregaard og Thomas Kastrup Christensen\nkunne tiltræde indstillingen.\nLiv Gro Jensen, Albert Rosenkrantz Conradsen og Isabella Heilmann kunne ikke tiltræde\nindstillingen men kunne henholde sig til det oprindelige forslag."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-15": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-15",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Reviderede vedtægter for Teatret Svalegangen",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Teatret Svalegangen ønsker at ændre sin bestyrelsesudpegning. Fremover vil flere\nmedlemmer udpeges efter indstilling fra et nomineringsudvalg, og de byrådsudpegede\nmedlemmer udgår. Teatret Svalegangen ønsker en bestyrelsessammensætning, der i\nhøjere grad baseres på kompetencer end den nuværende interessebaserede udpegning.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) At de nye vedtægter for Teatret Svalegangen godkendes.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Borgmesterens Afdeling har ingen bemærkninger til\nindstillingen.\nSAGSFORLØB:"
+    },
+    {
+     "titel": "Behandling i Magistraten 27. oktober 2026",
+     "tekst": "Punktnummer: 13\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Magistratsafdelingen for Kultur og Borgerservices\nindstilling af 9. oktober 2026.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper Kjeldsen forhindret i at deltage i sagens behandling."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-04-aarhus-byraad-16": {
+   "id": "aarhus-2026-11-04-aarhus-byraad-16",
+   "kommune": "Aarhus",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=850f3bb0-fb74-49f0-a7c0-ab0fcef28c0d",
+   "hentet": "2026-10-29T19:52:54.993Z",
+   "titel": "Forslag fra EL om indførelse af §14 forbud i lokalplan 1208",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGSFORSLAG FRA EL\nAd 1) Teknik og Miljø skal udarbejde bevarende lokalplan for lokalplan 1208 med hensigt\nat bevare store dele af den eksisterende bygningsmasse.\nLokalplanen skal udarbejdes på baggrund af de juridiske forhold, der udspringer fra\ndommen i Østre Landsret.\nHvis beboerne ikke får medhold i sagen, skal blokken transformeres til andre boligformer\nmed § 14 forbuddet. Hvis Østre Landsret til gengæld giver beboerne medhold i deres\nsag, bliver lokalplan 1208 og dermed § 14 forbuddet underkendt.\nBaggrund for forslaget:\nEn boligblok i lokalplan 1208 står til nedrivning, da en beboer nyligt er flyttet ud. Sanering\naf blokken er påbegyndt og derfor vil der ikke gå længe før det reelle nedrivningsarbejde\ngår i gang.\nLandsretten fører sag d. 6 og 9 november vdr. parallelsamfundsloven. Med så kort tid til\nen dom er det afgørende at arbejde ud fra et forsigtighedshensyn, og ikke rive blokke\nned, før vi om et par måneder står med en endelig dom, som vi forventer at have inden\njul.\nFlere partier i byrådssalen ønskede i februar at se en dom før der kunne tages stilling. Nu\nrisikerer nedrivningen af den pågældende blok at overhale Østre Landsret indenom.\nAf hensyn til klima og bevaring af vores eksisterende boligmasse, foreslår Enhedslisten\nat bevare og omdanne blokkene i lokalplan 1208 med et § 14 forbud i overensstemmelse\nmed regeringsgrundlagets “bevar eller forklar”-princip.\nNedrivningerne i Gellerup er vurderet til at være 300 procent mere klimabelastende end\nrenovering. Det giver derfor ingen mening at rive helt fine og energieffektive lejligheder\nned.\nDet er en sejr for klimaet, at bygningernes fundament bliver stående uanset hvilke\nbeboere der bor i dem. Er der ikke vilje til at fastholde almene boliger i Gellerup, tager\nEnhedslisten det til efterretning, og stiller dermed dette forslag om §14 forbud for at\nbevare boligblokken og transformere til andre boligformer.\nUanset om man er for omdannelserne i Gellerup eller ej, er det ansvarlig boligpolitik at\nundvige erstatningsansvar fra kommunen og store CO2 udledninger. Det\nforsigtighedsprincip, som kommunens advokat tidligere har vurderet, at kommunen kan\nanlægge, bør vi tage i brug nu. Særligt når der er meget, der tyder på, at dommen lander\ninden for direkte eller indirekte diskrimination.\nEnhedslisten ønsker at udnytte vores eksisterende bygningsmasse og gøre politik muligt,\nselvom vi ville ønske at resten af byrådet også ville bevare de almene boliger.\nIsabella Heilmann (ordfører)\nJeppe Ulrich Lomholt\nSarah Jarsbo."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-03-magistraten-1": {
+   "id": "aarhus-2026-11-03-magistraten-1",
+   "kommune": "Aarhus",
+   "udvalg": "Magistraten",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=cc513dea-e8f1-476b-9fef-629c66e4a84c",
+   "hentet": "2026-10-29T19:53:13.629Z",
+   "titel": "Referat fra Magistratens møde den 27. oktober 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "aarhus-2026-11-03-magistraten-2": {
+   "id": "aarhus-2026-11-03-magistraten-2",
+   "kommune": "Aarhus",
+   "udvalg": "Magistraten",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=cc513dea-e8f1-476b-9fef-629c66e4a84c",
+   "hentet": "2026-10-29T19:53:13.629Z",
+   "titel": "Opfølgning på serviceudgifter oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Magistraten har løbende gennem 2026 fået opfølgninger på kommunens forventede\nserviceudgifter, da der tidligt på året blev konstateret en udvikling i serviceudgifterne, som\nkunne føre til en større overskridelse af kommunens serviceramme med en risiko for\nøkonomiske sanktioner.\nI marts blev det besluttet i byrådet, at der på tværs af kommunen skulle indføres en\nsolidarisk opsparing og måltal for hver enkelt afdeling, som angav et loft på forbruget,\nmhp. at sikre en overholdelse af servicerammen.\nDe løbende opfølgninger består af prognoser for udviklingen samt afdelingernes egne\nforventninger til udgiftsniveauet for i år.\nDer har været arbejdet med forbrugstilbageholdenhed, og de seneste prognoser\nforventer, at kommunen samlet set pga. opbremsningen lander under servicerammen. Da\nsamme er gældende for prognoserne på landsplan, foreslås det at ophæve\nopbremsningen for at give mulighed for almindeligt forbrug i resten af 2026.\nDette skal sikre, at der ikke sker større unødvendig opsparing, da servicerammen\nforventeligt også vil være under pres de kommende år.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) opfølgning på forventede serviceudgifter i 2026 tages til efterretning.\nAt 2) der på baggrund af udviklingen i serviceudgifter og generel\nforbrugstilbageholdenhed sker en normalisering og hermed fjernes krav om tvungen\nopsparing for resten af 2026."
+    }
+   ],
+   "bilag": []
+  },
+  "aarhus-2026-11-03-magistraten-3": {
+   "id": "aarhus-2026-11-03-magistraten-3",
+   "kommune": "Aarhus",
+   "udvalg": "Magistraten",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=cc513dea-e8f1-476b-9fef-629c66e4a84c",
+   "hentet": "2026-10-29T19:53:13.629Z",
+   "titel": "Eventuelt",
+   "afsnit": [],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=ca5d760a-c7dd-4ee8-b29b-41e51d8a94b7": {
-   "senest": "2026-10-23",
+   "senest": "2026-10-29",
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=022a7fed-c258-4e8f-bcef-9907791f4c70": {
-   "senest": "2026-10-28",
+   "senest": "2026-10-29",
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=cc536006-94ff-4d59-9a74-5165a7b7007a": {
-   "senest": "2026-10-26",
+   "senest": "2026-10-29",
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=e301ea5c-c6c3-4b34-92ee-330d63828fb6": {
@@ -10564,7 +11109,7 @@
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=f00551e6-8b74-4aba-a4af-3bc4228ce661": {
-   "senest": "2026-10-27",
+   "senest": "2026-10-29",
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=31c2be8b-8f63-4eb4-9bb7-3cdeca4a8a0a": {
@@ -10589,6 +11134,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-10-29T11:09:08.717Z",
+ "opdateret": "2026-10-29T19:53:17.645Z",
  "kommune": "Aarhus"
 }

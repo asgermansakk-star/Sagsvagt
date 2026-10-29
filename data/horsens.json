@@ -446,6 +446,38 @@
    "dato": "2026-11-03",
    "punkter": 11,
    "parser": 3
+  },
+  "999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07": {
+   "lastmod": "2026-10-29",
+   "type": "referat",
+   "udvalg": "Handicapråd",
+   "dato": "2026-10-22",
+   "punkter": 9,
+   "parser": 3
+  },
+  "5091bf49-894e-4f88-8701-4dc76cd5d9ba": {
+   "lastmod": "2026-10-29",
+   "type": "dagsorden",
+   "udvalg": "Skole-, Unge- og Uddannelsesudvalget",
+   "dato": "2026-11-04",
+   "punkter": 4,
+   "parser": 3
+  },
+  "7818bf77-dac2-4684-8559-9408ace41388": {
+   "lastmod": "2026-10-29",
+   "type": "dagsorden",
+   "udvalg": "Plan- og Vejudvalget",
+   "dato": "2026-11-03",
+   "punkter": 7,
+   "parser": 3
+  },
+  "bf17099e-abd4-471f-b4d4-315966e3c2aa": {
+   "lastmod": "2026-10-29",
+   "type": "dagsorden",
+   "udvalg": "Børne- og Dagtilbudsudvalget",
+   "dato": "2026-11-04",
+   "punkter": 2,
+   "parser": 3
   }
  },
  "sager": {
@@ -2168,12 +2200,17 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Godkendelse af dagsorden (13:00 - 13:05)",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet godkendte dagsordenen."
+    }
+   ],
    "bilag": []
   },
   "horsens-2026-10-22-handicapraad-2": {
@@ -2181,19 +2218,23 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Tema: Voksen Socialområdet (13.05 - 14.30)",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Administrationen holder oplæg om voksen-socialområdet, herunder:\nVisitationsproceduren for handicapbiler\nBPA\nnye botilbud og fællesskaber\nTilbudsportalen og private bosteder.\nTemamødet forestås af sagsbehandler Sara Ålykke Jensen og Økonomi- og\nAdministrationschef Søren Grotkær.\nVed temamødet deltager sagsbehandler Sara Ålykke Jensen."
+     "tekst": "Administrationen holder oplæg om voksen-socialområdet, herunder:\nVisitationsproceduren for handicapbiler\nBPA\nNye botilbud og fællesskaber\nTilbudsportalen og private bosteder\nTemamødet forestås af sagsbehandler Sara Ålykke Jensen og økonomi- og\nadministrationschef Søren Grotkær.\nVed temamødet deltager sagsbehandler Sara Ålykke Jensen og sagsbehandler Trine Holst\nJensen."
     },
     {
      "titel": "Indstilling",
-     "tekst": "Administrationen indstiller, at\n1. Handicaprådet drøfter temaet voksen socialområdet."
+     "tekst": "Administrationen indstiller, at\n1. Handicaprådet drøfter temaet voksen-socialområdet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet tog oplægget til efterretning og drøftede de rejste temaer."
     }
    ],
    "bilag": []
@@ -2203,15 +2244,19 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Evaluering af temamøde og input til dagsorden for kommende temamøde (14.30 - 14.40)",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Dagens temamøde afsluttes med en fælles evaluering af temaet.\nVed næste Handicaprådsmøde er temaet jf. årshjulet \"Kultur og Fritid\". Der gives input til\ntemamødets dagsorden, og hvilke emner der ønskes behandlet under temaet. Handicaprådet\nkan også komme med forslag til oplægsholdere eller andre bidragsydere til at belyse temaet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet evaluerede dagens tema og mødets afholdelse. Der blev udtrykt\ntilfredshed med dagens oplæg og indhold.\nTil temamødet den 17. december ønsker Handicaprådet at drøfte:\nHvor meget tilgængelighed bliver vægtet\nHvordan og hvor man søger rådgivning, når man planlægger nye haller, sociale\nmødesteder, anbringelse af statuer, indretning af parker og pladser,\nkulturinstitutioner og koncertsteder."
     }
    ],
    "bilag": []
@@ -2221,10 +2266,10 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Ansøgning til Tilgængelighedspuljen (14.40 - 14.50)",
    "afsnit": [
     {
@@ -2234,6 +2279,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at\n1. Handicaprådet afgør hvorvidt ansøgningen skal imødekommes eller ej."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet besluttede at imødekomme ansøgningen delvist med 10.000 kr.\nHandicaprådet ønsker at ansøger deler resultatet og denne mulighed for at søge tilskud,\nf.eks. på de sociale medier. Muligheden for tilskud skal være en motivationsfaktor for\nandre, der ønsker at øge tilgængeligheden.\nHandicaprådet ønsker på denne måde at udbrede kendskabet til Tilgængelighedspuljen\nog fremme udviklingen med øget tilgængelighed i form af f.eks. automatisk døråbner,\nramper mv."
     }
    ],
    "bilag": []
@@ -2243,10 +2292,10 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Dialogmøde med Social- og Sundhedsudvalget (14.50 - 15.00)",
    "afsnit": [
     {
@@ -2256,6 +2305,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at\n1. Handicaprådet drøfter tema for dialogmøde med Social- og Sundhedsudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet er i gang med at drøfte forskellige emner til dialogmødet.\nHandicaprådet fremsender emner senest den 5. november.\nDer er fra tidligere dialogmøder positiv erfaring med, at et oplæg giver et godt\nudgangspunkt for dialog."
     }
    ],
    "bilag": []
@@ -2265,19 +2318,23 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Tidsfrister (15.00-15.15)",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Der gives et kort oplæg om de overordnede principper for, hvordan tidsfrister for\nsagsbehandling fastsættes.\nFormålet er at give et indblik i, hvordan man fastsætter, hvor lang tid det bør tage at behandle\nforskellige typer af sager, og hvilke hensyn der indgår i fastsættelsen af tidsfrister.\nOplægget vil også komme ind på forskelle i tidsfristerne mellem kommunerne.\nVed oplægget deltager stabskonsulent Mette Lessel og leder af Strategi og Udvikling Jesper\nVilladsen."
+     "tekst": "Der gives et kort oplæg om de overordnede principper for, hvordan tidsfrister for\nsagsbehandling fastsættes.\nFormålet er at give et indblik i, hvordan man fastsætter, hvor lang tid det bør tage at behandle\nforskellige typer af sager, og hvilke hensyn der indgår i fastsættelsen af tidsfrister.\nOplægget vil også komme ind på forskelle i tidsfristerne mellem kommunerne."
     },
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller at\n1. Handicaprådet tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet tog orienteringen til efterretning."
     }
    ],
    "bilag": []
@@ -2287,10 +2344,10 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Aflastningstilbud Ternevej (15.15- 15.20)",
    "afsnit": [
     {
@@ -2300,6 +2357,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller at\n1. Handicaprådet tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet tog orienteringen til efterretning."
     }
    ],
    "bilag": []
@@ -2309,10 +2370,10 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Årlig afrapportering velfærdsteknologi (15.20 - 15.25)",
    "afsnit": [
     {
@@ -2322,6 +2383,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at\n1. Handicaprådet tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Handicaprådet tog orienteringen til efterretning."
     }
    ],
    "bilag": []
@@ -2331,15 +2396,19 @@
    "kommune": "Horsens",
    "udvalg": "Handicapråd",
    "dato": "2026-10-22",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.horsens.dk/vis?id=f095d091-53eb-474b-89bc-c3a47031379f",
-   "hentet": "2026-10-23T00:47:57.945Z",
+   "kilde": "https://dagsordener.horsens.dk/vis?id=999cb2bf-cb7b-4cf0-a2cf-fdce8cf66a07",
+   "hentet": "2026-10-29T19:44:39.073Z",
    "titel": "Gensidig orientering (15.25 - 15.30)",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Høring Kvalitetstandarder\nOrientering fra Social- og Sundhedsudvalgets dagsordener."
+     "tekst": "Høring Kvalitetstandarder\nOrientering fra Social- og Sundhedsudvalgets dagsordener\nProjektsamarbejde med Fællesskabet Glad\nPraksisbesøg"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "De ovenstående punkter blev taget til efterretning.\nHandicaprådet efterspurgte mere information om kommende praksisbesøg. Næste\npraksisbesøg er hos Aktivitet og Fællesskab Gnisten og botilbuddet Tingstedet i\nBrædstrup den 25. november 2026.\nAktuel oversigt over praksisbesøg er vedlagt som bilag."
     }
    ],
    "bilag": []
@@ -10544,6 +10613,336 @@
     }
    ],
    "bilag": []
+  },
+  "horsens-2026-11-04-skole-unge-og-uddannelsesudvalget-1": {
+   "id": "horsens-2026-11-04-skole-unge-og-uddannelsesudvalget-1",
+   "kommune": "Horsens",
+   "udvalg": "Skole-, Unge- og Uddannelsesudvalget",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=5091bf49-894e-4f88-8701-4dc76cd5d9ba",
+   "hentet": "2026-10-29T19:44:44.876Z",
+   "titel": "SUU Drøftelse af indhold til ny strategi",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Skole-, Unge- og Uddannelsesudvalget orienteres om status på strategien for Flere unge\ni erhvervsuddannelse 2021-2025.\nUngerådet deltager under punktet, hvor de fortæller om Ungerådets arbejde og deler\nderes betragtninger i forhold til, hvad der fylder hos de unge, når de skal vælge en\nungdomsuddannelse. Efterfølgende drøfter Skole-, Unge- og Uddannelsesudvalget\nindhold til en ny strategi på området.\nSagen afsluttes i Skole-, Unge- og Uddannelsesudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at\n1. Skole-, Unge- og Uddannelsesudvalget tager orienteringen til efterretning.\n2. Skole-, Unge- og Uddannelsesudvalget drøfter indhold til ny strategi."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Skole-, Unge- og Uddannelsesudvalget orienteres om status på strategien for Flere unge i\nerhvervsuddannelse 2021-2025 og drøfter mulige retninger for en ny strategi.\nI 2017 vedtog Horsens Kommune sin første strategi for at få flere unge til at vælge en\nerhvervsuddannelse. Siden da er arbejdet med erhvervsuddannelser blevet styrket i\nfolkeskolen og vejledningen, samtidig med at samarbejdet med erhvervsuddannelserne og\nvirksomhederne er blevet udbygget.\nStrategiperioden 2021-2025 er afsluttet, og der er udarbejdet en opfølgning på strategien.\nOpfølgningen fremgår nedenfor og viser status på strategiens tre målsætninger og udviklingen\npå området. På mødet uddybes resultaterne af opfølgningen, som skal danne grundlag for\nudvalgets drøftelse af det videre arbejde og mulige retninger for en ny strategi.\nTabel 1: Målsætninger for strategiperioden 2021-2025 og status for 2026.\nMålsætninger\n\nStatus 2026\n\nMål 1: Mindst 30 % af de elever fra\n\nI 2026 ligger andelen på 30 %, og måltallet er\n\nkommunale skoler i Horsens\n\nderved nået.\n\nKommune, der ansøger om optagelse\npå en ungdomsuddannelse direkte\nefter 9. eller 10. klasse, vælger en\nerhvervsuddannelse.\nMål 2: En større andel af de unge i\n\nI 2021 hvor strategiens måltal blev fastsat lå\n\nHorsens Kommune, som optages på\n\nandelen af de unge i Horsens Kommune, som\n\nen erhvervsuddannelse, skal vælge\n\nvælger ’Omsorg, sundhed og pædagogik’ på\n\n’Omsorg, sundhed og pædagogik’.\n\n9,6 %. Andelen ligger i 2026 på 10,2 %, og\nderved er andelen en smule over niveauet i\n\nMål 3: I 2030 skal mindst 90 % af de\n\nData foreligger ikke.\n\n25-årige have gennemført en\nungdomsuddannelse (nationalt mål).\n\nEfterfølgende deltager repræsentanter fra Ungerådet, hvor de både giver en status på\nUngerådes arbejde i skole-/studieåret 2026/2027 og fortæller Skole-, Unge- og\nUddannelsesudvalget om, hvad der fylder hos de unge, når de skal vælge en\nungdomsuddannelse.\nSlutteligt inviteres udvalget til at drøfte, hvad en ny strategi for området kunne indeholde.\nBeskrivelse af Ungerådet Horsens\nMålet med Ungerådet Horsens er at sikre, at unge har indflydelse på de beslutninger, som\nvedrører dem. Dette med særligt fokus på at skabe større sammenhæng mellem Horsens\nKommune og ungdomsuddannelserne samt give indsigt i og forståelse for demokratiske\nprocesser.\nUngerådet består af op til 37 medlemmer med stemmeret i rådet, og er for unge i alderen 15 til\nog med 29 år, der bor eller uddanner sig i Horsens.\nUngerådets fokusområder 2025/2026\nI 2025/2026 har der været omkring 15 aktive medlemmer, og der blev afholdt syv officielle\nmøder bl.a. på Rådhuset, VIA University College, Sund By og Platform K samt ekstra møder i\narbejdsgrupperne. De overordnede fokusområder i Ungerådets arbejde 2025/2026 var politik,\nevents og kommunikation, herunder har der bl.a. været fokus på transport,\nbæredygtighed/klima, handicap, psykiatri og sundhed, uddannelse og job, kulturliv,\nkommunalvalg og natteliv.\n/ BS & HEK"
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-04-skole-unge-og-uddannelsesudvalget-3": {
+   "id": "horsens-2026-11-04-skole-unge-og-uddannelsesudvalget-3",
+   "kommune": "Horsens",
+   "udvalg": "Skole-, Unge- og Uddannelsesudvalget",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=5091bf49-894e-4f88-8701-4dc76cd5d9ba",
+   "hentet": "2026-10-29T19:44:44.876Z",
+   "titel": "SUU Implementering af beskæftigelsesreform på ungeområdet",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I løbet af 2026 og 2027 implementeres beskæftigelsesreformen, som medfører\nvæsentlige ændringer i kommunernes varetagelse af beskæftigelsesindsatsen.\nSkole-, Unge- og Uddannelsesudvalget orienteres om status på implementeringen af\nbeskæftigelsesreformen på ungeområdet.\nSagen afsluttes i Skole-, Unge- og Uddannelsesudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at\n1. Skole-, Unge- og Uddannelsesudvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med beskæftigelsesreformen følger en ændret varetagelse af kommunernes\nbeskæftigelsesindsats. Reformen implementeres løbende i 2026 og 2027 og lægger op til en\nbeskæftigelsesindsats, som skal bygge på frisættelse, forenkling og værdighed.\nEt centralt element i beskæftigelsesreformen er at give mere frihed til borgere, der kan selv, og\nat udsatte borgere skal mødes med en højere grad af tillid og værdighed. Reformen medfører\nbl.a. færre krav om antallet af samtaler med ledige samt større frihed til, at kommunerne kan\ntilrettelægge indsatsen efter lokale forhold og den enkelte borgers behov."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Med reformen skal udgifterne til beskæftigelsesindsatsen på landsplan reduceres med 2,7 mia.\nkr. varigt.\nI Horsens Kommune medfører beskæftigelsesreformen, at Ungdomscentret skal reducere\nudgifterne med 9,2 mio. kr. varigt, når reformen er fuldt indfaset. Som led i den gradvise\nimplementering skal Ungdomscentret reducere udgifterne med 3 mio. kr. i 2026. Reduktionen i\n2026 finansieres af tidligere års uforbrugte midler på området samt løbende tilpasninger.\nStatus på implementering og den videre proces\nSkole-, Unge- og Uddannelsesudvalget godkendte på udvalgsmøde i marts 2026 nogle\npejlemærker for fremtidens beskæftigelsesindsats for unge. Pejlemærkerne er vedlagt som\nbilag.\nPå baggrund af pejlemærket blev der nedsat tre tværfaglige arbejdsgrupper, som har\nudarbejdet anbefalinger til, hvordan beskæftigelsesreformens overordnede rammer kan\nomsættes til praksis i Horsens Kommune med fokus på hhv. målgrupper, tilbud og ny\n\nbeskæftigelsesfaglighed.\nAnbefalingerne indgår nu i det videre arbejde med implementeringen af\nbeskæftigelsesreformen.\n/ BS"
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-04-skole-unge-og-uddannelsesudvalget-4": {
+   "id": "horsens-2026-11-04-skole-unge-og-uddannelsesudvalget-4",
+   "kommune": "Horsens",
+   "udvalg": "Skole-, Unge- og Uddannelsesudvalget",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=5091bf49-894e-4f88-8701-4dc76cd5d9ba",
+   "hentet": "2026-10-29T19:44:44.876Z",
+   "titel": "SUU Orienteringspunkt",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at\n1. Skole-, Unge- og Uddannelsesudvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Besvarelse af spørgsmål"
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-04-skole-unge-og-uddannelsesudvalget-5": {
+   "id": "horsens-2026-11-04-skole-unge-og-uddannelsesudvalget-5",
+   "kommune": "Horsens",
+   "udvalg": "Skole-, Unge- og Uddannelsesudvalget",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=5091bf49-894e-4f88-8701-4dc76cd5d9ba",
+   "hentet": "2026-10-29T19:44:44.876Z",
+   "titel": "SUU Underskriftsark - Skole,- Unge- og Uddannelsesudvalget",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Underskrift til beslutningsprotokol."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "For at godkende og underskrive beslutningsprotokollen, skal mødedeltagerne klikke på\n\"godkend\"."
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-03-plan-og-vejudvalget-2": {
+   "id": "horsens-2026-11-03-plan-og-vejudvalget-2",
+   "kommune": "Horsens",
+   "udvalg": "Plan- og Vejudvalget",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=7818bf77-dac2-4684-8559-9408ace41388",
+   "hentet": "2026-10-29T19:44:52.317Z",
+   "titel": "PV Genbehandling af igangsætningssag af planlægning for boliger, Havremarken, Gedved Nord",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Plan- og Vejudvalget vedtog den 3. juni 2025 at igangsætte planlægningen for et\nboligområde i Havremarken, Gedved Nord med den ændring, at området kun skulle\nindeholde åben-lav beboelse.\nEfter dialog med udvikler fremlægges nu et forslag om at igangsætte planlægningen for\net område, der rummer både tæt-lav og åben-lav bebyggelse, der indpasses i områdets\nsærlige og attraktive landskab.\nFormålet med planlægningen er at skabe mulighed for udstykning til boligformål i den\nnordligste del af Gedved.\nLokalplanen understøtter Horsens Kommunes mål, om at skabe attraktive boligområder\nmed varierede boligformer og plads til forskellige livsformer og livsfaser. Samtidig\nbidrager lokalplanen til kommunens ønske om at tænke planlægningsmuligheder for\nboliger ind i hele kommunen, herunder i oplandsbyerne, jf. Plan- og Vejudvalgets\narbejdsgrundlag 2026–2029.\nSagen afgøres af Plan- og Vejudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at\n1. Plan- og Vejudvalget godkender administrationens anbefalinger til planlægningens\nformål og indhold i forbindelse med igangsætning af planlægning for boliger,\nHavremarken, Gedved."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Baggrund og formål\nEn privat udvikler har på vegne af lodsejer fremsendt ønske om lokalplanlægning for et område\nudlagt til boliger.\nDen 3. juni 2025 behandlede Plan- og Vejudvalget igangsætningen for indeværende\nlokalplanområde. Projektet indeholdte 60 rækkehuse, der skulle etableres i delområde 1 (se\noversigtskort), som lokalplanen skulle være byggeretsgivende for.\nLokalplanen skulle således ikke være byggeretsgivende for den resterende del af området.\nEt flertal i Plan- og Vejudvalget besluttede på daværende tidspunkt at igangsætte\nplanlægningen, men med den ændring, at der udelukkende skulle opføres åben-lav\nbebyggelse.\n\nAdministrationen har haft opfølgende dialog med udvikler, som har udvidet projektet til at\nomfatte planlægning for hele området (d.v.s. både delområde 1 og 2). Projektet rummer nu\nbåde åben-lav og tæt-lav bebyggelse og planen er byggeretsgivende for hele planområdet.\nHorsens Kommune ønsker, at hele lokalplanområdet realiseres samtidig. Der vil derfor i videst\nmuligt omfang blive indarbejdet bestemmelser i lokalplanen, der fastlægger vilkår om, at\nbyggemodningen for hele området skal være etableret, før boligerne kan ibrugtages.\nLokalplanområdet er 11,5 ha og ligger i den nordligste del af Gedved i forlængelse af den\neksisterende vej, Korntoften.\n\nFigur 1: Oversigtskort, lokalplanafgrænsningen for boliger, Havremarken, Gedved nord\n\nFigur 2: Oversigtskort med delområde 1 og delområde 2\n\nLokalplanens indhold\nPlanlægningen skal give mulighed for at etablere et område, hvor der kan bygges fritliggende\nenfamiliehuse (åben-lav bebyggelse) samt række-, dobbelt-, klyngehuse (tæt-lav bebyggelse).\nDer gives mulighed for byggeri i 1-2 etager.\nCentralt i området udlægges et stort areal til grønne fællesarealer med mulighed for\nstiforbindelser, ophold og håndtering af regnvand. Det grønne fællesareal skal fungere som\nbindeleddet mellem lokalplanens delområder og den eksisterende bebyggelse ved Korntoften.\nTerrænregulering vil kun være muligt i begrænset omfang af hensyn til de geologiske forhold\nog for at bevare områdets landskabelige karakter.\nBygningshøjderne skal disponeres efter en overordnet struktur, der sikrer en gradvis\nnedtrapning mod det åbne land, der er en del af det bevaringsværdige landskab Gedved\nBakkelandskab.\nPlanlægningen skal inddele området i to delområder, der begge overgår til byzone.\nInden for delområde 1 ønsker bygherre at etablere 91 tæt-lav boliger. Herunder 20\ndobbelthuse, 35 rækkehuse med gavlmotiv og 36 rækkehuse med længemotiv.\nInden for delområde 2 ønsker bygherre at etablere 49 åben-lav boliger. Delområde 2 rummer\ndesuden areal til vandhåndtering og grønne fællesområder.\nDet er administrationens vurdering, at området kan bære den tættere bebyggelse, uden at gå\npå kompromis med de landskabelige kvaliteter, som stedet rummer.\nSammenhæng til arkitekturpolitikken – Rum for mennesker\nStyrk hele Horsens\nUdbygningen af Gedved skal ske som en naturlig og harmonisk forlængelse af de eksisterende\nboligområder i den nordlige del af byen.\nAfslutningen af vejen i den forudgående udstykning danner et naturligt afsæt for en\nvidereførelse af vejforløbet i den nye udstykning. På den måde tager planlægningen afsæt i\nden eksisterende bystruktur og understøtter en sammenhængende udvikling af Gedved.\nVær en god nabo\nOmrådets udformning skal understøtte fællesskab og skabe attraktive udendørs\nopholdsarealer med mulighed for leg, bevægelse og ophold.\nBestemmelser om bebyggelsens højde og etageantal skal medvirke til, at den nye bebyggelse\nindpasses i områdets eksisterende skala og tager hensyn til de omkringliggende boliger og\nomgivelser.\nByg til hverdagslivet\nGode stiforbindelser skal understøtte en aktiv og bæredygtig hverdag, ved at skabe gode\nmuligheder for at gå og cykle og dermed gøre det lettere at vælge aktive transportformer.\n\nVed at udlægge delområder med forskellige bygningstyper skabes mulighed for forskellige\nboligformer, der kan imødekomme forskellige behov og livsfaser.\nMiljø og klima\nRegnvandshåndtering indarbejdes som en naturlig del af områdets grønne struktur, ud fra\nstedets identitet og naturlige terræn.\nFrafaldserklæring/overtagelsespligt\nLokalplanområdet er privatejet og overføres fra land- til byzone. Det er aftalt med\nejendomsudvikler, på vegne af ejer, at der underskrives en frafaldserklæring.\nAdministrationen anbefaler\nAdministrationen anbefaler, at der udarbejdes et forslag til en lokalplan med udgangspunkt i\nadministrationens anbefalinger herunder.\nI den videre planlægning skal der særligt arbejdes med, at:\nskabe en attraktiv fordeling mellem tæt-lav og åben-lav boligbebyggelserne\nområdets landskabelige karakter bevares, ved at tage udgangspunkt i det eksisterende\nterræn, beplantning og landskabets naturlige strukturer\nder fastsættes bestemmelser om bygningshøjde og etageantal\nder etableres gode vej- og stiforbindelser, der skaber sammenhæng til de eksisterende\nveje og stier i området og til de nærliggende rekreative arealer\nkantzonerne mellem boliger og vej bearbejdes, så området fremstår harmonisk og\nindbydende\nboligerne placeres, så bebyggelsen får et åbent og luftigt udtryk\nbassiner og strømningsveje til håndtering af skybrudsvand placeres og udformes, så de\nindgår som positive elementer i landskabet og samtidig understøtter områdets\nbiodiversitet\nder udarbejdes en samlet plan for regnvandshåndtering, herunder dimensionering af\nløsningerne i de enkelte delområder\n/JCPA"
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-03-plan-og-vejudvalget-3": {
+   "id": "horsens-2026-11-03-plan-og-vejudvalget-3",
+   "kommune": "Horsens",
+   "udvalg": "Plan- og Vejudvalget",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=7818bf77-dac2-4684-8559-9408ace41388",
+   "hentet": "2026-10-29T19:44:52.317Z",
+   "titel": "PV Anlægsbevilling, færdiggørelse af byggemodninger 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I takt med, at områder, hvor der er udført kommunale byggemodninger, er fuldt\nudbyggede, skal områderne færdiggøres ved eksempelvis at anlægge slidlag, kantsten\nog beplantning.\nI denne sag søges anlægsbevilling og rådighedsbeløb til færdiggørelse af kommunale\nbyggemodninger ved Nørrestrand, Brædstrup og Sdr. Vissing.\nSagen afgøres af Byrådet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at\n1. Byrådet godkender, at de beskrevne projekter for færdiggørelserne gennemføres.\n2. Byrådet giver en anlægsbevilling med tilhørende rådighedsbeløb på 7,0 mio. kr. i\n2027 til færdiggørelserne. Rådighedsbeløbet finansieres af puljen til byggemodninger"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Flere steder i Horsens Kommune er der udført byggemodninger, hvor områderne nu er fuldt\nudbyggede og afventer en endelig færdiggørelse inden områderne kan overdrages til\ngrundejerforeningerne.\nSom led i at der er opført huse, hvor tungt maskineri og lastbiler har kørt ind og ud af\nområderne, er der eksempelvis endnu ikke anlagt slidlag eller sat kantsten. Nogle steder\nmangler der også beplantning af områderne.\nMed denne sag foreslår administrationen at etablere og færdiggøre de forhold, der mangler\nved byggemodningerne. Horsens Kommune har de senere år fået færdiggjort mange områder\nog det er nu de sidste områder, der udestår at blive færdiggjort.\nPå den baggrund har administrationen udarbejdet en oversigt over de sidste kommunale\nbyggemodninger, der er etableret og, der fortsat mangler at blive færdiggjort.\nFølgende byggemodninger mangler færdiggørelse:\nNørrestrand\nGeorg Walther Andersens Vænge\nHenning Grønlund Carlsens Vænge\nEigil Fussings Vænge\n\nVictor Fussing Rasmussens Vænge\nBrædstrup\nRing Søpark stamvej\nSdr. Vissing\nBytoften\nFølgende byggemodninger er færdiggjort eller bliver færdiggjort i 2026:\nHatting\nKvistvænget\nBiegårds Allé\nValborgs Vænge\nBygholm Bakker\nBjørnshave\nGedved\nNOVA (Resten af Egeskovvej og Lille Gedved)\nØsterhåb Vest\nDruehylden\nKaprifolien\nSkovkanten (stamvej)\nHøjagergårdsvej\nBrommevej\nDryasvej\nRenrosen\nBrædstrup\nRing Søpark"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der søges en samlet anlægsbevilling med tilhørende rådighedsbeløb på 7,0 mio. kr. i 2027 til\nfærdiggørelser af de konkrete byggemodninger, der mangler færdiggørelse.\nRådighedsbeløbet finansieres af puljen til byggemodninger i 2027. Herefter vil der være 10\nmio. kr. i puljen til byggemodninger i 2027.\nAf det samlede rådighedsbeløb på 7,0 mio. kr. er der afsat 0,5 mio. kr. til intern projektering.\n\nAdministrationen forventer i de kommende år færre færdiggørelser af byggemodninger end det\nhidtil har været tilfældet. Det skyldes blandt andet, at der udføres flere private udstykninger og,\nfordi administrationen har færdiggjort områder i forbindelse med den oprindelige\nbyggemodning, fremfor at afvente til området er endeligt færdigudbygget.\nAfledt drift\nDer er tidligere tilført afledte driftsmidler til vedligeholdelse af de konkrete byggemodninger.\nEfter færdiggørelse overdrages byggemodningerne til de respektive grundejerforeninger,\nhvorefter kommunens driftsforpligtelse ophører.\nPå den baggrund tilbageføres budget til afledt drift på 0,17 mio. kr. årligt fra 2028 fra Trafik og\nVejs samt Natur, Miljø og Klimas driftsområder til puljen for afledt drift under Økonomi- og\nErhvervsudvalget. Ændringen indarbejdes i budgetlægningen for 2028.\n/ALYHA"
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-03-plan-og-vejudvalget-4": {
+   "id": "horsens-2026-11-03-plan-og-vejudvalget-4",
+   "kommune": "Horsens",
+   "udvalg": "Plan- og Vejudvalget",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=7818bf77-dac2-4684-8559-9408ace41388",
+   "hentet": "2026-10-29T19:44:52.317Z",
+   "titel": "PV Forslag fra Liberal Alliance, beslutning om igangsættelse af analyse vedr. ny vejforbindelse",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Jakob Bille, Liberal Alliance, har anmodet om, at udvalget beslutter at igangsætte en\nsamlet trafikal og infrastrukturel analyse af området omkring den planlagte nye\nvejforbindelse nord om Horsens.\nSagen afgøres af Plan- og Vejudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Liberal Alliance indstiller, at\n1. Plan- og Vejudvalget beslutter, at der skal igangsættes en samlet trafikal og\ninfrastrukturel analyse af området omkring den planlagte nye vejforbindelse nord om\nHorsens, der i Mobilitetsplan 2035 er beskrevet som V18 - Serridslevvej."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Jakob Bille, Liberal Alliance fremsender følgende forslag:\n\"Forslag til Mobilitetsplan 2035.\nLiberal Alliance foreslår, at der igangsættes en samlet trafikal og infrastrukturel analyse af\nområdet omkring den planlagte, nye vejforbindelse nord om Horsens, som i dag er beskrevet\nsom V18 – Serridslevvej i Mobilitetsplan 2035.\nAnalysen skal bredt undersøge alternative linjeføringer og sammenholde dem med den\neksisterende Værvej/Serridslevvej-løsning.\nDer lægges særlig vægt på sammenhængen med den planlagte byudvikling i Nørrestrand, da\nen afklaring af linjeføringen af den fremtidige nordlige forbindelsesvej er en forudsætning, for at\nkunne planlægge og realisere udviklingen her.\nAnalysen bør belyse nuværende og fremtidige trafikmængder, kapacitet, sammenhæng i\nvejnettet samt konsekvenser for borgere, erhverv, miljø og anlægsøkonomi.\nAnalysen skal indgå i en samlet revurdering af prioriteringslisten for vejprojekter angivet i\nMobilitetsplan 2035.\""
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-03-plan-og-vejudvalget-5": {
+   "id": "horsens-2026-11-03-plan-og-vejudvalget-5",
+   "kommune": "Horsens",
+   "udvalg": "Plan- og Vejudvalget",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=7818bf77-dac2-4684-8559-9408ace41388",
+   "hentet": "2026-10-29T19:44:52.317Z",
+   "titel": "PV Forslag fra Venstre, drøftelse vedr. udvidelse af Silkeborgvej",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Martin Ravn, Venstre, har anmodet om, at udvalget drøfter forholdene for en udvidelse af\nSilkeborgvej til tre spor mellem Bygholm Bakker og Schüttesvej.\nSagen afgøres af Plan- og Vejudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Venstre indstiller, at\n1. Plan- og Vejudvalget drøfter problemstillingen og beder administrationen vende\ntilbage, med en vurdering af en udvidelse af Silkeborgvej til tre spor mellem Bygholm\nBakker og Schüttesvej med to spor ind mod Horsens og ét spor ud af byen.\nVurderingen skal omfatte projektets trafikale effekt, mulighederne for gennemførelse\nsamt et overslag over anlægsøkonomien."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Martin Ravn, Venstre fremsender følgende forslag:\n\"Vejdirektoratet har færdiggjort vejanlægget ved motorvejstilslutningen ved Lund og\nSilkeborgvej er nu udvidet til fire spor frem til lyskrydset ved Bygholm Bakker.\nTrafikken omkring motorvejstilslutningen afvikles nu smidigt, men der er fortsat kødannelse på\nstrækningen fra Bygholm Bakker ind mod lyskrydset ved Schüttesvej/Skanderborgvej.\nJørgen Korshøj og jeg foreslog i januar at fremrykke udvidelsen af denne strækning til fire spor\nog fremrykke projektet i mobilitetsplanen. Forslaget blev ikke vedtaget.\nPå den baggrund ønskes en drøftelse af muligheden for at udvide strækningen til tre spor med\nét spor ud af Horsens og to sammenhængende spor ind mod krydset ved Schüttesvej.\nFormålet er at forbedre trafikafviklingen ind mod byen og sikre en bedre udnyttelse af begge\nsvingbaner ved krydset.\""
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-03-plan-og-vejudvalget-6": {
+   "id": "horsens-2026-11-03-plan-og-vejudvalget-6",
+   "kommune": "Horsens",
+   "udvalg": "Plan- og Vejudvalget",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=7818bf77-dac2-4684-8559-9408ace41388",
+   "hentet": "2026-10-29T19:44:52.317Z",
+   "titel": "PV Orientering om forbedring af cykelstier, 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forligspartierne bestående af Socialdemokratiet, Socialistisk Folkeparti, Radikale\nVenstre, Dansk Folkeparti, Enhedslisten, Irene Simonsen og Venstre har i særtillæg til\nbudgetaftale 2024, 2025 og 2026 besluttet at afsætte 5 mio. kr. til forbedringer af\ncykelstinettet i Horsens by.\nAdministrationen gennemførte en undersøgelse i juni 2026, hvor borgere havde mulighed\nfor at komme med forslag til justeringer på cykelstinettet i 2026, for at forbedre\nfremkommeligheden i Horsens by.\nAdministration har udvalgt projektet med nye cykelstier langs Bjerrevej mellem Tyrstedvej\nog Kirkevej til udførelse i 2027.\nSagen afsluttes i Plan- og Vejudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at\n1. Plan- og Vejudvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I forbindelse med budgetforhandlingerne for 2025 blev det besluttet, at der skulle laves\nforbedringer af cykelstinettet i Horsens by.\nDer blev afsat i alt 5 mio. kr. til fordeling i år 2025 og 2026.\nI 2025 blev der brugt 3 mio. kr. på forbedringer på følgende steder:\nTernevej, opgradering af grussti ved eksisterende cykelstier\nRingvejen\nNiels Gyldings Gade (køreretning øst umiddelbart efter broen), forbedring af hældninger\nog fald på cykelstien\nHøgh Guldbergs Gade (mellem Grønlandsvej og Ove Jensens Alle)\nØrnstrupvej til Kløverbakken med asfalt, opgradering af grussti med asfalt\nSchüttesvej, omlægning af op- og nedkørsler samt udretning af cykelsti\nTeglgårdsvej og Solvej, etablering af gennembrud i heller\nFjordparken, nyt slidlag på cykelstier\n\nOversigtskort cykelstipulje, 2025\nPå baggrund af et ønske fra Plan- og Vejudvalget gennemførte administrationen en\nundersøgelse i juni 2026, hvor borgere havde mulighed for at komme med forslag til, hvilke\ntiltag på cykelstinettet i 2026, der kunne forbedre fremkommeligheden.\nDer er indkommet 66 forslag, der er vedlagt som bilag. Flere forslag går på forbedringer af\ncykelstinettet udenfor Horsens by. Disse forslag bliver medtaget i det videre arbejde med\nprioritering af trafiksikkerhedsprojekter.\nDerudover er flere forslag ikke konkrete og dem er der derfor ikke blevet arbejdet yderligere\nmed. De resterende forslag er blevet gennemgået af administrationen.\nEt forslag er gået igen flere gange, hvilket omhandler reelle cykelstier på Bjerrevej mellem\nTyrstedvej og Kirkevej. På nuværende tidspunkt er der blot cykelbaner på en strækning af ca.\n200 meter. I begge ender tilslutter cykelbanerne reelle cykelstier og projektet er også en del af\nMobilitetsplan 2035 at få en sammenhængende cykelstistrækning.\nDerfor anvendes de resterende penge fra puljen på nye cykelstier langs Bjerrevej. Langs\nstrækningen i dag, er der eksisterende cykelbaner og vejskellet er placeret et stykke fra dem.\nDet vurderes derfor ikke nødvendigt at erhverve arealer til projektet. Da projektet skal\nprojekteres, vil udførelsen først ske i 2027.\n/ALYHA"
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-03-plan-og-vejudvalget-7": {
+   "id": "horsens-2026-11-03-plan-og-vejudvalget-7",
+   "kommune": "Horsens",
+   "udvalg": "Plan- og Vejudvalget",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=7818bf77-dac2-4684-8559-9408ace41388",
+   "hentet": "2026-10-29T19:44:52.317Z",
+   "titel": "PV Orientering fra formanden og administrationen",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Orientering fra formanden og administrationen.\nSagen afsluttes i Plan- og Vejudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at\n1. Plan- og Vejudvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Orientering om:\nPunkt fra Kultur- og Fritidsudvalget vedr. Kulturgården i Horsens midtby\n/BE"
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-03-plan-og-vejudvalget-8": {
+   "id": "horsens-2026-11-03-plan-og-vejudvalget-8",
+   "kommune": "Horsens",
+   "udvalg": "Plan- og Vejudvalget",
+   "dato": "2026-11-03",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=7818bf77-dac2-4684-8559-9408ace41388",
+   "hentet": "2026-10-29T19:44:52.317Z",
+   "titel": "Underskriftsark - Plan- og Vejudvalget, 3.11.2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Underskrift af beslutningsprotokol."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "For at godkende og underskrive beslutningsprotokollen, skal mødedeltagerne klikke på\n\"godkend\"."
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-04-boerne-og-dagtilbudsudvalget-1": {
+   "id": "horsens-2026-11-04-boerne-og-dagtilbudsudvalget-1",
+   "kommune": "Horsens",
+   "udvalg": "Børne- og Dagtilbudsudvalget",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=bf17099e-abd4-471f-b4d4-315966e3c2aa",
+   "hentet": "2026-10-29T19:44:57.337Z",
+   "titel": "BD Godkendelse af Børne- og Dagtilbudsudvalgets arbejdsgrundlag 2026-2029",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "På baggrund af en workshop med Børne- og Dagtilbudsudvalget i april 2026 har\nadministrationen udarbejdet et udkast til udvalgets arbejdsgrundlag for 2026-2029.\nArbejdsgrundlaget skal være Børne- og Dagtilbudsudvalgets afsæt for det politiske\narbejde de kommende fire år.\nMed denne sag indstilles til, at Børne- og Dagtilbudsudvalget godkender\narbejdsgrundlaget 2026-2029.\nSagen afgøres af Børne- og Dagtilbudsudvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at\n1. Børne- og Dagtilbudsudvalget godkender udvalgets arbejdsgrundlag 2026-2029."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet har udarbejdet et arbejdsgrundlag for byrådsperioden 2026-2029. I forlængelse heraf\nskal fagudvalgene udarbejde arbejdsgrundlag, der skal være med til at omsætte Byrådets\narbejdsgrundlag til mere specifikke ambitioner og konkrete mål på de enkelte fagområder. Det\ner dermed Byrådets arbejdsgrundlag, der danner rammen for udvalgenes arbejdsgrundlag.\nDen 14. april mødtes Børne- og Dagtilbudsudvalget til en workshop, hvor udvalget påbegyndte\nudarbejdelsen af et fælles arbejdsgrundlag for udvalgets område i byrådsperioden 2026-2029.\nPå baggrund af de input og drøftelser, der var på workshoppen, har administrationen\nudarbejdet et udkast til arbejdsgrundlag, som udvalget har haft mulighed for at give skriftlige\nkommentarer på. Et tilrettet udkast til arbejdsgrundlag blev derefter drøftet på udvalgets møde\nden 7. oktober 2026, og arbejdsgrundlaget fremsendes nu til godkendelse.\nArbejdsgrundlaget indeholder fire overordnede målsætninger for børne- og dagtilbudsområdet i\nHorsens Kommune:\nAlle børn og familier skal opleve høj kvalitet i vores tilbud\nStærke børnefællesskaber\nSundhed for alle børn\nAlle børn og forældre skal mødes med tydelige forventninger\nBørne- og Dagtilbudsudvalgets arbejdsgrundlag 2026-2029 er vedlagt som bilag.\n\nEfter godkendelsen af arbejdsgrundlaget fremsendes det til Byrådet til orientering.\n/MFKJ"
+    }
+   ],
+   "bilag": []
+  },
+  "horsens-2026-11-04-boerne-og-dagtilbudsudvalget-3": {
+   "id": "horsens-2026-11-04-boerne-og-dagtilbudsudvalget-3",
+   "kommune": "Horsens",
+   "udvalg": "Børne- og Dagtilbudsudvalget",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.horsens.dk/vis?id=bf17099e-abd4-471f-b4d4-315966e3c2aa",
+   "hentet": "2026-10-29T19:44:57.337Z",
+   "titel": "BD Underskriftsark - Børne- og Dagtilbudsudvalget",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Underskrift til beslutningsprotokol."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "For at godkende og underskrive beslutningsprotokollen, skal mødedeltagerne klikke på\n\"godkend\"."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -10560,7 +10959,7 @@
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.horsens.dk/Sitemap/ForCommittee?committeeId=2d7c2ecc-62d5-4d92-8fd0-90c4b21bd657": {
-   "senest": "2026-10-12",
+   "senest": "2026-10-29",
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.horsens.dk/Sitemap/ForCommittee?committeeId=59af5876-c87e-4936-90c7-86141cfa2202": {
@@ -10604,11 +11003,11 @@
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.horsens.dk/Sitemap/ForCommittee?committeeId=7d56c723-7b34-469a-ad4b-2229c005a448": {
-   "senest": "2026-10-08",
+   "senest": "2026-10-29",
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.horsens.dk/Sitemap/ForCommittee?committeeId=059ec0e6-e2ff-46ff-8b47-52541658395d": {
-   "senest": "2026-10-02",
+   "senest": "2026-10-29",
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.horsens.dk/Sitemap/ForCommittee?committeeId=32969537-4fac-4c2f-acd6-d6b9aa5d50aa": {
@@ -10624,7 +11023,7 @@
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.horsens.dk/Sitemap/ForCommittee?committeeId=66caf3d9-eab2-4965-af1c-d0f0a252e295": {
-   "senest": "2026-10-08",
+   "senest": "2026-10-29",
    "tjekket": "2026-10-29"
   },
   "https://dagsordener.horsens.dk/Sitemap/ForCommittee?committeeId=f08bed38-b7bc-4e27-93c4-a731b94a2038": {
@@ -10644,7 +11043,7 @@
    "tjekket": "2026-10-12"
   }
  },
- "opdateret": "2026-10-29T10:57:29.243Z",
+ "opdateret": "2026-10-29T19:44:57.338Z",
  "kommune": "Horsens",
  "parser": 3
 }
