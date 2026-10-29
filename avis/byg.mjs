@@ -49,6 +49,9 @@ function ugenr(iso) {
   const f = new Date(Date.UTC(t.getUTCFullYear(), 0, 4));
   return 1 + Math.round(((t - f) / 864e5 - 3 + ((f.getUTCDay() + 6) % 7)) / 7);
 }
+// Sætter rod foran hver selektor i et stilark (også inde i @media), så reglerne kun gælder inde i rod
+const kunInde = (css, rod) => css.replace(/\/\*[\s\S]*?\*\//g, "")
+  .replace(/(^|[{}])(\s*)([^{}@]+?)(\s*\{)/g, (m, f, ws, sel, b) => `${f}${ws}${sel.split(",").map((x) => `${rod} ${x.trim()}`).join(", ")}${b}`);
 const afsnitTilHtml = (tekst) => tekst.split(/\n{2,}/).map((p) => `<p>${esc(p).replace(/\n/g, "<br>")}</p>`).join("\n");
 // Forkorter til hele sætninger. Den første sætning må gerne være lidt længere end max, hellere end at blive klippet over.
 // En sætning slutter ved . ? ! efterfulgt af stort bogstav (så "jf." og "bl.a." ikke tæller).
@@ -761,7 +764,7 @@ async function main() {
   const soegValg = [{ navn: "København", href: "soeg.html" }, ...udgaver.map((k) => ({ navn: k.navn, href: `kommune/${k.slug}/soeg.html` }))];
   await writeFile(join(ROD, "soeg.html"), side({
     titel: "Søg i sagerne – Sagsvagt", beskrivelse: "Søg i alle sager fra Københavns byråd, udvalg og lokaludvalg.", sti: "soeg.html", rod: "", aktiv: "soeg",
-    indhold: soegIndhold({ rod: "", data: "assets/sager.json", antal: sager.length, valg: soegValg, aktiv: "København", emner: EMNER }),
+    indhold: soegIndhold({ rod: "", data: "assets/sager.json", antal: sager.length, valg: soegValg, aktiv: "København", emner: EMNER, slug: "koebenhavn" }),
   }));
 
   // Partier, høringer, kalendere og RSS (avis/ekstra.mjs)
@@ -816,7 +819,11 @@ if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})}).catch(function(){var p
   }));
   // Stilarterne til grafikken ligger i avis/stil/*.css og samles i assets/grafik.css
   const stilFiler = (await readdir(join(ROD, "avis", "stil"))).filter((f) => f.endsWith(".css")).sort();
-  await writeFile(join(ROD, "assets", "grafik.css"), (await Promise.all(stilFiler.map((f) => readFile(join(ROD, "avis", "stil", f), "utf8")))).join("\n"));
+  const grafikCss = (await Promise.all(stilFiler.map((f) => readFile(join(ROD, "avis", "stil", f), "utf8")))).join("\n");
+  await writeFile(join(ROD, "assets", "grafik.css"), grafikCss);
+  // Samme stilarter til sagsvinduet i Min avis (min/index.html), hvor hver regel kun gælder inde i .laes-indhold.
+  // Min avis har sine egne klasser med samme navne (kort-billede, sg-…, felt), som hele grafik.css ville ødelægge.
+  await writeFile(join(ROD, "assets", "grafik-laes.css"), kunInde(grafikCss, ".laes-indhold"));
   await writeFile(join(ROD, "foto.html"), side({
     titel: "Send et billede – Sagsvagt", beskrivelse: "Send et billede fra et sted, politikerne beslutter noget om. Vi viser det med dit navn.", sti: "foto.html", rod: "", indhold: fotoSideIndhold(esc),
   }));

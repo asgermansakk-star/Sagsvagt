@@ -17,6 +17,7 @@
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="stylesheet" href="../assets/fonts/montserrat.css">
 <link rel="stylesheet" href="../assets/avis.css">
+<link rel="stylesheet" href="../assets/grafik-laes.css">
 <style>
   /* Min avis: brugerens egen udgave. Bygger på avis.css og tilføjer kun det, der er særligt for siden. */
   [hidden] { display: none !important; }
@@ -611,7 +612,7 @@
           <div>
             <label for="p-ord">Dine egne ord</label>
             <input id="p-ord" placeholder="fx Lersøparken, Valby Langgade">
-            <p class="hint">Adskil med komma. Vi finder sager, hvor ordene står.</p>
+            <p class="hint">Adskil med komma. Vi finder sager, hvor ordene står, også inde i sagsteksten.</p>
           </div>
           <div class="slut"><span id="p-gemmes">Dine valg gemmes kun i denne browser, indtil login er klar.</span><span class="knapper-h"><button type="button" id="p-nulstil">Nulstil</button><button type="button" id="p-slet" hidden>Slet min konto</button><button type="button" id="p-gem" class="p-gem">Gem</button></span></div>
         </form>
@@ -1086,10 +1087,12 @@
   const lokal = (u) => /Lokaludvalg$/.test(u);
   const bydelNavn = (u) => u.replace(/\s*Lokaludvalg$/, "");
 
+  // FUND: for hvert af dine ord (små bogstaver) de sager (id → true), der nævner det et sted i hele teksten (api/soeg.php)
+  let FUND = {}, FUND_FOR = "";
   const match = (s) => {
     const tekst = `${s.t} ${s.d}`.toLowerCase();
     const emner = profil.emner.filter((id) => s.e.includes(id));
-    const ord = profil.ord.filter((o) => o && tekst.includes(o.toLowerCase()));
+    const ord = profil.ord.filter((o) => o && (tekst.includes(o.toLowerCase()) || !!FUND[o.toLowerCase()]?.[s.id]));
     return { emner, ord };
   };
   const vurder = (s) => {
@@ -1522,7 +1525,7 @@
     } finally { b.disabled = false; }
   });
   $("#p-navn").addEventListener("input", (e) => { profil.navn = e.target.value.slice(0, 40); gem(); tegn(); });
-  $("#p-ord").addEventListener("change", (e) => { profil.ord = e.target.value.split(",").map((o) => o.trim()).filter((o) => o.length > 1).slice(0, 12); gem(); tegn(); });
+  $("#p-ord").addEventListener("change", (e) => { profil.ord = e.target.value.split(",").map((o) => o.trim()).filter((o) => o.length > 1).slice(0, 12); gem(); tegn(); hentFund(); });
   $("#p-bydel").addEventListener("change", (e) => { profil.bydel = e.target.value; gem(); tegn(); });
   $("#p-kommuner").addEventListener("change", (e) => skiftKommuner(e.target));
   $("#p-ikon").addEventListener("change", (e) => { profil.ikon = e.target.value; gem(); tegnAvatar(); });
@@ -1639,6 +1642,24 @@
     profil.emner = profil.emner.filter((id) => EMNER[id]);
     if (profil.bydel && !SAGER.some((s) => s.u === profil.bydel)) profil.bydel = "";
   }
+  // Dine ord søges også i hele sagsteksten. Serveren svarer med sagernes plads i kommunens sager.json; passer antallet
+  // ikke (indekset er fra en anden kørsel), bruges kun overskrift og resumé. Avisen tegnes igen, når fundene er her.
+  async function hentFund() {
+    const ord = profil.ord.filter(Boolean), noegle = `${VALGTE.join(",")}|${ord.join("|")}`;
+    if (noegle === FUND_FOR) return;
+    FUND_FOR = noegle;
+    const fund = {};
+    if (ord.length) await Promise.all(VALGTE.map(async (slug) => {
+      try {
+        const [d, r] = await Promise.all([hentKommune(slug), fetch(`../api/soeg.php?k=${encodeURIComponent(slug)}&o=${encodeURIComponent(ord.join("|"))}`).then((x) => (x.ok ? x.json() : null))]);
+        if (!r || r.n !== d.sager.length) return;
+        for (const [o, pladser] of Object.entries(r.o)) for (const i of pladser) if (d.sager[i]) (fund[o.toLowerCase()] ||= {})[d.sager[i].id] = true;
+      } catch (e) { console.warn("Søgning i sagsteksten:", e.message); }
+    }));
+    if (noegle !== FUND_FOR) return; // ordene eller kommunerne er skiftet imens
+    FUND = fund; DATA.fund = fund;
+    if (!$("#avis").hidden) tegn();
+  }
   // Skift kommuner under Tilpas: hent de nye sager uden at genindlæse siden. Mindst én kommune skal være valgt.
   async function skiftKommuner(inp) {
     const boks = $("#p-kommuner"), note = $("#p-kommuner-hint"), tekst = "Avisen viser sagerne fra de kommuner, du vælger. Vi åbner flere løbende.";
@@ -1649,7 +1670,7 @@
     try {
       await brugKommuner(slugs);
       profil.kommuner = slugs; IKKE_AABEN = null; gem();
-      fyldPanel(); tegn(); visSide();
+      fyldPanel(); tegn(); visSide(); hentFund();
       note.textContent = tekst;
     } catch (err) {
       console.warn(err); inp.checked = !inp.checked;
@@ -1672,7 +1693,7 @@
       SIDST = sidstBesoeg();
       const forud = server && !server.profil ? forudfyld() : [];
       $("#indlaes").hidden = true; $("#avis").hidden = false;
-      fyldPanel(); tegn(); visSide(); visVelkomst(forud);
+      fyldPanel(); tegn(); visSide(); visVelkomst(forud); hentFund();
     })
     .catch((err) => { console.warn(err); $("#indlaes").className = "wrap"; $("#indlaes").removeAttribute("aria-busy"); $("#indlaes").innerHTML = `<p class="besked fejl" style="margin: 64px 0">Vi kunne ikke hente sagerne lige nu. Prøv igen om lidt.</p>`; });
 })();

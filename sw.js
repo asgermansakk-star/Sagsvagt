@@ -2,10 +2,10 @@
 // Registreres kun fra Min avis. Sider og sager hentes altid fra nettet først og gemmes som reserve;
 // layout, skrift og ikoner gemmes og opdateres i baggrunden. /api/ (login og profil) gemmes aldrig.
 // Ret VERSION, når listen herunder ændres, så gamle kopier ryddes væk.
-const VERSION = "sagsvagt-v5";
+const VERSION = "sagsvagt-v6";
 const FAST = `${VERSION}-fast`, SIDER = `${VERSION}-sider`;
 const GRUNDLAG = [
-  "/min/", "/offline.html", "/assets/avis.css", "/assets/fonts/montserrat.css", "/assets/fonts/montserrat-latin.woff2",
+  "/min/", "/offline.html", "/assets/avis.css", "/assets/grafik-laes.css", "/assets/fonts/montserrat.css", "/assets/fonts/montserrat-latin.woff2",
   "/favicon.svg", "/icon-192.png", "/apple-touch-icon.png", "/site.webmanifest",
 ];
 const MAKS_SIDER = 80;

@@ -103,6 +103,12 @@ jobs:
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://sagsvagt.dk/' }}
 
+      # Ordindeks til søgning i hele sagsteksten: api/_ord-<kommune>.txt, som api/soeg.php og mandagsmailen slår op i.
+      # Bygges fra data/ og sager.json efter avisen og ligger ikke i repoet. Stopper ikke robotten.
+      - name: Ordindeks
+        continue-on-error: true
+        run: node avis/ordindeks.mjs
+
       # Døde interne links og billeder på det byggede site (avis/linktjek.mjs). Stopper ikke robotten.
       - name: Linktjek
         continue-on-error: true

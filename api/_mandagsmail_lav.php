@@ -7,6 +7,7 @@
 //   mm_lav_mandagsmail($data, $profil, $idag, $modtager, $afmeld)      → ['emne', 'preheader', 'html', 'tekst', 'antal']
 //   mm_lav_ventemail($kommuner, $aabne, $idag, $navn, $modtager, $afmeld)
 declare(strict_types=1);
+require_once __DIR__ . '/_ord.php';
 
 const MM_C = [
     'nat' => '#0E0F14', 'kalk' => '#E6DFD3', 'kalkLys' => '#EEE8DE', 'muted' => '#56535A', 'rule' => '#CFC6B8', 'brod' => '#3E3B40',
@@ -111,11 +112,12 @@ function mm_skrevne(?string $t): array {
 function mm_vaelg_sager(array $data, array $profil, string $idag): array {
     $ord = array_values(array_filter(array_map('trim', $profil['ord'] ?? []), fn($o) => $o !== ''));
     $emner = array_values(array_filter($profil['emner'] ?? [], fn($id) => isset($data['emner'][$id])));
-    $vurder = function (array $s) use ($ord, $emner, $idag): array {
+    $fund = $data['fund'] ?? []; // søgeord → sager (id), der nævner det i hele teksten (api/_ord.php)
+    $vurder = function (array $s) use ($ord, $emner, $idag, $fund): array {
         $tekst = mm_lower(($s['t'] ?? '') . ' ' . ($s['d'] ?? ''));
         $titel = mm_lower($s['t'] ?? '');
         $mE = array_values(array_filter($emner, fn($id) => in_array($id, $s['e'] ?? [], true)));
-        $mO = array_values(array_filter($ord, fn($o) => str_contains($tekst, mm_lower($o))));
+        $mO = array_values(array_filter($ord, fn($o) => str_contains($tekst, mm_lower($o)) || isset($fund[mm_lower($o)][$s['id']])));
         $iTitel = count(array_filter($emner, fn($id) => in_array($id, $s['et'] ?? [], true))) + count(array_filter($ord, fn($o) => str_contains($titel, mm_lower($o))));
         $hits = count($mE) + count($mO) * 2;
         return $s + ['mE' => $mE, 'mO' => $mO, 'hits' => $hits,
@@ -358,12 +360,14 @@ function mm_mail_til(array $a, string $uge, array $aabne, callable $hent, string
             'mail' => mm_lav_ventemail(mm_skrevne($a['kommuner'] ?? ''), array_column($aabne, 'navn'), $uge, $p['navn'], (string)$a['email'], $afmeld)];
     }
     $udenEmner = !$p['emner'] && !$p['ord'];
-    $sager = []; $emner = null;
+    $sager = []; $emner = null; $fund = [];
     foreach ($p['kommuner'] as $slug) {
         $x = $hent($slug); $emner ??= $x['emner'];
         foreach ($x['sager'] as $s) $sager[] = array_merge(['et' => [], 'v' => 0, 'r' => 0], $s, ['ks' => $slug, 'kn' => $navnPaa[$slug] ?? $slug]);
+        // Søgeordene findes også inde i sagsteksten (ordindekset), ikke kun i overskrift og resumé
+        foreach (ord_fund($slug, $p['ord'], $x['sager']) as $o => $ids) $fund[$o] = ($fund[$o] ?? []) + $ids;
     }
-    $mail = mm_lav_mandagsmail(['emner' => $emner, 'sager' => $sager], $udenEmner ? ['emner' => array_keys($EMNER)] + $p : $p, $uge, (string)$a['email'], $afmeld);
+    $mail = mm_lav_mandagsmail(['emner' => $emner, 'sager' => $sager, 'fund' => $fund], $udenEmner ? ['emner' => array_keys($EMNER)] + $p : $p, $uge, (string)$a['email'], $afmeld);
     if ($udenEmner) $mail['emne'] = preg_replace('/ om dine emner$/u', ' i din kommune', $mail['emne']);
     return ['type' => $udenEmner ? 'Sager (alle emner)' : 'Sager', 'profil' => $p, 'mail' => $mail];
 }

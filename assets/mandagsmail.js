@@ -3,7 +3,8 @@
 // Mailen er bygget med tabeller og inline-styling, så den ser rigtig ud i Gmail, Outlook og Apple Mail.
 //
 //   lavMandagsmail({ data, profil, idag, linkTil, modtager })
-//   data:     indholdet af assets/sager.json ({ emner, sager })
+//   data:     indholdet af assets/sager.json ({ emner, sager }). data.fund (valgfri): for hvert søgeord med små bogstaver de sager
+//             (id → true), der nævner det et sted i hele teksten (api/soeg.php); uden fund søges kun i overskrift og resumé
 //   profil:   { navn, emner: ["trafik", …], ord: ["Lersøparken", …], bydel: "Valby Lokaludvalg" }
 //   idag:     "2026-10-12" (mandagen, mailen sendes)
 //   linkTil:  (sag) => adresse, som overskriften linker til (kommunens side, mens avisen er lukket)
@@ -62,7 +63,7 @@ export function vaelgSager({ data, profil, idag }) {
   const emner = (profil.emner || []).filter((id) => data.emner[id]);
   const vurder = (s) => {
     const tekst = `${s.t} ${s.d}`.toLowerCase();
-    const mE = emner.filter((id) => s.e.includes(id)), mO = ord.filter((o) => tekst.includes(o.toLowerCase()));
+    const mE = emner.filter((id) => s.e.includes(id)), mO = ord.filter((o) => tekst.includes(o.toLowerCase()) || !!data.fund?.[o.toLowerCase()]?.[s.id]);
     const iTitel = emner.filter((id) => s.et.includes(id)).length + ord.filter((o) => s.t.toLowerCase().includes(o.toLowerCase())).length;
     const hits = mE.length + mO.length * 2;
     return { ...s, mE, mO, hits, score: s.v * 6 + hits * 4 + iTitel * 8 - Math.max(0, alder(idag, s.dato)) * 0.35 - s.r * 25 };

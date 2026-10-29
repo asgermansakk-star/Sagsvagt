@@ -15,6 +15,30 @@ const fil = (slug) => join(ROD, slug === "koebenhavn" ? "assets/sager.json" : `k
 const CACHE = new Map();
 const hent = async (slug) => { if (!CACHE.has(slug)) CACHE.set(slug, JSON.parse(await readFile(fil(slug), "utf8"))); return CACHE.get(slug); };
 
+// Søgeord i hele sagsteksten, som ord_fund i api/_ord.php, men ved at læse hele ordindekset (avis/ordindeks.mjs)
+const INDEKS = new Map(), MAKS_LINJER = 3000;
+const indeks = (slug) => {
+  if (!INDEKS.has(slug)) INDEKS.set(slug, readFile(join(ROD, "api", `_ord-${slug}.txt`), "utf8")
+    .then((t) => { const [hoved, ...l] = t.trimEnd().split("\n"); return { n: +hoved.slice(1), l: l.map((x) => x.split("\t")) }; }).catch(() => null));
+  return INDEKS.get(slug);
+};
+const ordAf = (t) => [...new Set(t.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((o) => o.length > 1 && !/^\d+$/.test(o)))];
+async function fundFor(slug, soegeord, sager) {
+  const ix = await indeks(slug), ud = {};
+  if (!ix || ix.n !== sager.length) return ud;
+  for (const s of soegeord.map((x) => x.trim()).filter(Boolean)) {
+    let f = null;
+    for (const o of ordAf(s).slice(0, 6)) {
+      const linjer = ix.l.filter(([w]) => (o.length < 3 ? w === o : w.startsWith(o))).slice(0, MAKS_LINJER);
+      const m = new Set(linjer.flatMap(([, t]) => t.split(",").map(Number)));
+      f = f === null ? m : new Set([...f].filter((i) => m.has(i)));
+      if (!f.size) break;
+    }
+    for (const i of f || []) if (sager[i]) (ud[s.toLowerCase()] ||= {})[sager[i].id] = true;
+  }
+  return ud;
+}
+
 // Forskellige slags tilmeldte: Min avis-profil, fritekst, egne ord, bydel, flere kommuner, ingen åben kommune, ingen emner
 const enAf = (...s) => s.find((x) => aabne.some((k) => k.slug === x)) || aabne[1].slug;
 const p = (o) => JSON.stringify(o);
@@ -41,7 +65,9 @@ async function jsMail(a, uge) {
   if (!pr.kommuner.length) return lavVentemail({ kommuner: skrevne(a.kommuner), aabne: aabne.map((k) => k.navn), idag: uge, navn: pr.navn, modtager: a.email, afmeld: AFMELD });
   const udenEmner = !pr.emner.length && !pr.ord.length;
   const data = await Promise.all(pr.kommuner.map(async (s) => { const x = await hent(s); return { ...x, sager: x.sager.map((y) => ({ et: [], v: 0, r: 0, ...y, ks: s, kn: navnPaa[s] })) }; }));
-  const m = lavMandagsmail({ data: { emner: data[0].emner, sager: data.flatMap((x) => x.sager) }, profil: udenEmner ? { ...pr, emner: Object.keys(EMNER) } : pr, idag: uge, modtager: a.email, afmeld: AFMELD, linkTil: (s) => SITE + s.url });
+  const fund = {};
+  for (const s of pr.kommuner) for (const [o, ids] of Object.entries(await fundFor(s, pr.ord, (await hent(s)).sager))) fund[o] = { ...fund[o], ...ids };
+  const m = lavMandagsmail({ data: { emner: data[0].emner, sager: data.flatMap((x) => x.sager), fund }, profil: udenEmner ? { ...pr, emner: Object.keys(EMNER) } : pr, idag: uge, modtager: a.email, afmeld: AFMELD, linkTil: (s) => SITE + s.url });
   return udenEmner ? { ...m, emne: m.emne.replace(/ om dine emner$/, " i din kommune") } : m;
 }
 

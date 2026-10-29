@@ -20,11 +20,11 @@ const escJs = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "
 
 // Søgesiden. rod: vej til sidens rod. data: adressen på sagerne (JSON). valg: [{ navn, href }] for kommunevælgeren,
 // href fra roden. aktiv: den valgte kommune. emner: { id: { navn } }.
-export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
+export function soegIndhold({ rod, data, antal, valg, aktiv, emner, slug }) {
   const vaelger = valg.length > 1 ? `<label class="soeg-kommune"><span>Kommune</span><select id="kommune-valg" aria-label="Vælg kommune">${valg.map((v) => `<option value="${escJs(rod + v.href)}"${v.navn === aktiv ? " selected" : ""}>${escJs(v.navn)}</option>`).join("")}</select></label>` : "";
   return `<div class="wrap"><div class="listing soeg-side">
   <h1>Søg i sagerne</h1>
-  <p class="intro">Søg i overskrifter, resuméer og udvalg i alle ${antal.toLocaleString("da-DK")} sager fra ${escJs(aktiv)}.</p>
+  <p class="intro">Søg i overskrifter, resuméer og hele sagsteksten i alle ${antal.toLocaleString("da-DK")} sager fra ${escJs(aktiv)}.</p>
   <form class="soeg-felt" role="search" onsubmit="return false"><input type="search" id="q" placeholder="fx cykelsti, skole eller budget" aria-label="Søg i sagerne" autocomplete="off">${vaelger}</form>
   <ul class="chips" id="emnefilter" aria-label="Vis kun ét emne"><li><button type="button" data-emne="" aria-pressed="true">Alle emner</button></li>${Object.entries(emner).map(([id, e]) => `<li><button type="button" data-emne="${id}" aria-pressed="false">${escJs(e.navn)}</button></li>`).join("")}</ul>
   <p class="intro" id="antal" aria-live="polite"></p>
@@ -40,8 +40,10 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
 </style>
 <script>
 (function () {
-  var ROD = ${JSON.stringify(rod)};
+  var ROD = ${JSON.stringify(rod)}, SLUG = ${JSON.stringify(slug)};
   var q = document.getElementById("q"), ud = document.getElementById("resultater"), antal = document.getElementById("antal"), emne = "", data = null;
+  // Fund i hele sagsteksten (api/soeg.php): pladserne i data.sager for søgningen fuld.q. Overskrift og resumé søges her i siden.
+  var fuld = { q: "", i: null }, henter = null;
   var esc = function (s) { return String(s || "").replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var dato = function (iso) { return new Date(iso + "T12:00:00Z").toLocaleDateString("da-DK", { timeZone: "UTC", day: "numeric", month: "long", year: "numeric" }); };
   var status = function (s) { return s.st === "besluttet" ? '<span class="status besluttet">Besluttet ' + dato(s.dato) + "</span>" : s.st === "kommer" ? '<span class="status kommer">På dagsordenen ' + dato(s.dato) + "</span>" : '<span class="status">Behandlet ' + dato(s.dato) + "</span>"; };
@@ -51,18 +53,36 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
     if (!data) { if (q.value.trim() || emne) { antal.textContent = "Henter sagerne …"; ud.innerHTML = SKELET; } return; }
     var ord = q.value.trim().toLowerCase().split(/\\s+/).filter(Boolean);
     if (!ord.length && !emne) { antal.textContent = ""; ud.innerHTML = ""; return; }
-    var hits = data.sager.filter(function (s) {
+    var iTekst = fuld.q === q.value.trim() && fuld.i ? fuld.i : {};
+    var hits = data.sager.filter(function (s, i) {
       if (emne && s.e.indexOf(emne) < 0) return false;
       var t = (s.t + " " + s.d + " " + s.x + " " + s.u).toLowerCase();
-      return ord.every(function (o) { return t.indexOf(o) >= 0; });
+      s.iTekst = false;
+      if (ord.every(function (o) { return t.indexOf(o) >= 0; })) return true;
+      return (s.iTekst = !!iTekst[i]);
     });
     antal.textContent = hits.length ? hits.length.toLocaleString("da-DK") + (hits.length === 1 ? " sag" : " sager") + (hits.length > 60 ? ". Viser de 60 nyeste." : "") : "Ingen sager matcher søgningen.";
     ud.innerHTML = hits.slice(0, 60).map(function (s) {
-      return '<article><p class="kicker">' + status(s) + ", " + esc(s.u) + '</p><h2 class="hl"><a href="' + esc(ROD + s.url) + '">' + esc(s.t) + '</a></h2><p class="dek">' + esc(s.d.length > 200 ? s.d.slice(0, 200).replace(/\\s+\\S*$/, "") + " …" : s.d) + "</p>"
+      return '<article><p class="kicker">' + status(s) + ", " + esc(s.u) + (s.iTekst ? ' · <span class="i-tekst">Nævnt i sagsteksten</span>' : "") + '</p><h2 class="hl"><a href="' + esc(ROD + s.url) + '">' + esc(s.t) + '</a></h2><p class="dek">' + esc(s.d.length > 200 ? s.d.slice(0, 200).replace(/\\s+\\S*$/, "") + " …" : s.d) + "</p>"
         + (s.e.length ? '<p class="emner">' + s.e.map(function (id) { var e = data.emner[id]; return '<a class="emne-tag ' + e.f + '" href="emne/' + id + '.html">' + esc(e.navn) + "</a>"; }).join("") + "</p>" : "") + "</article>";
     }).join("");
   }
-  var t0; q.addEventListener("input", function () { clearTimeout(t0); t0 = setTimeout(vis, 120); });
+  // Hele teksten søges på serveren, når et af ordene har mindst tre bogstaver
+  function hentFuld() {
+    var v = q.value.trim();
+    if (henter) henter.abort();
+    if (!SLUG || !/[^\\s]{3}/.test(v) || v === fuld.q) return;
+    henter = new AbortController();
+    fetch(ROD + "api/soeg.php?k=" + encodeURIComponent(SLUG) + "&q=" + encodeURIComponent(v), { signal: henter.signal })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (r) {
+        if (!r || v !== q.value.trim()) return;
+        // Er indekset fra en anden kørsel end sagerne, passer pladserne ikke, og så nøjes vi med overskrift og resumé
+        if (data && r.n !== data.sager.length) return;
+        fuld = { q: v, i: {}, n: r.n }; r.i.forEach(function (i) { fuld.i[i] = true; }); vis();
+      }).catch(function () {});
+  }
+  var t0, t1; q.addEventListener("input", function () { clearTimeout(t0); clearTimeout(t1); t0 = setTimeout(vis, 120); t1 = setTimeout(hentFuld, 300); });
   function vaelgEmne(b) { document.querySelectorAll("#emnefilter button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); }); }
   document.getElementById("emnefilter").addEventListener("click", function (e) {
     var b = e.target.closest("button[data-emne]"); if (!b) return; emne = b.getAttribute("data-emne"); vaelgEmne(b); vis();
@@ -76,8 +96,9 @@ export function soegIndhold({ rod, data, antal, valg, aktiv, emner }) {
   var u = new URLSearchParams(location.search);
   if (u.get("q")) q.value = u.get("q");
   if (u.get("emne")) { var eb = document.querySelector('#emnefilter button[data-emne="' + u.get("emne").replace(/[^a-z0-9-]/g, "") + '"]'); if (eb) { emne = eb.getAttribute("data-emne"); vaelgEmne(eb); } }
-  fetch(${JSON.stringify(data)}).then(function (r) { return r.json(); }).then(function (d) { data = d; vis(); })
+  fetch(${JSON.stringify(data)}).then(function (r) { return r.json(); }).then(function (d) { data = d; if (fuld.n && fuld.n !== d.sager.length) fuld = { q: "", i: null }; vis(); })
     .catch(function () { antal.textContent = "Søgningen kunne ikke hentes lige nu."; });
+  hentFuld();
   q.focus();
 })();
 </script>`;
@@ -195,7 +216,7 @@ export async function bygUdgave(k, egne, raa, valg, h, ks, top) {
   await writeFile(join(ROD, R, "sager.json"), JSON.stringify(data));
   await skriv(`${R}/soeg.html`, {
     titel: `Søg i sagerne, ${k.navn} – Sagsvagt`, beskrivelse: `Søg i alle sager fra byrådet og udvalgene i ${k.kommune}.`, rod: "../../", aktiv: "k-soeg",
-    indhold: soegIndhold({ rod: "../../", data: "sager.json", antal: egne.length, valg, aktiv: k.navn, emner: EMNER }),
+    indhold: soegIndhold({ rod: "../../", data: "sager.json", antal: egne.length, valg, aktiv: k.navn, emner: EMNER, slug: k.slug }),
   });
   return stier;
 }
