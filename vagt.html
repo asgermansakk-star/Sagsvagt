@@ -282,7 +282,6 @@
   .konto-felt { display: grid; gap: 8px; }
   .konto-felt[hidden] { display: none; }
   .konto-note { margin: 0; font-size: var(--fodnote); opacity: .9; }
-  .valgfri { font-weight: 400; opacity: .75; }
   .send { justify-self: start; }
   .send .spin { width: 16px; height: 16px; border-radius: 50%; border: 2px solid rgba(14,15,20,.25); border-top-color: var(--nat); display: none; animation: spin .8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
@@ -583,7 +582,7 @@
           </div>
           <div class="konto-felt" id="kontoFelt" hidden>
             <p class="konto-note" id="kontoNote"></p>
-            <div class="felt"><label for="adgangskode">Vælg en adgangskode <span class="valgfri">(valgfri)</span></label><input id="adgangskode" name="adgangskode" type="password" autocomplete="new-password" minlength="10" maxlength="200" placeholder="Mindst 10 tegn"></div>
+            <div class="felt"><label for="adgangskode">Vælg en adgangskode</label><input id="adgangskode" name="adgangskode" type="password" autocomplete="new-password" minlength="10" maxlength="200" placeholder="Mindst 10 tegn"></div>
           </div>
           <button class="btn btn-primaer send" type="submit"><span>Skriv mig op</span><i class="spin"></i></button>
           <p class="form-msg" role="status" aria-live="polite"></p>
@@ -929,10 +928,11 @@
         fejlFelt.focus(); return;
       }
     }
+    visKonto();
     const kode = kontoFelt.hidden ? "" : form.adgangskode.value;
-    if (kode && (kode.length < 10 || kode.toLowerCase() === email.toLowerCase())) {
+    if (!kontoFelt.hidden && (kode.length < 10 || kode.toLowerCase() === email.toLowerCase())) {
       form.adgangskode.parentElement.classList.add("bad");
-      msg.className = "form-msg err"; msg.textContent = kode.length < 10 ? "Adgangskoden skal være på mindst 10 tegn." : "Adgangskoden må ikke være din e-mail.";
+      msg.className = "form-msg err"; msg.textContent = !kode ? "Vælg en adgangskode på mindst 10 tegn, så du kan logge ind på Min avis." : kode.length < 10 ? "Adgangskoden skal være på mindst 10 tegn." : "Adgangskoden må ikke være din e-mail.";
       form.adgangskode.focus(); return;
     }
     form.adgangskode.parentElement.classList.remove("bad");
@@ -950,6 +950,8 @@
       if ((egen.headers.get("content-type") || "").includes("application/json")) {
         const out = await egen.json().catch(() => ({}));
         if (egen.ok) { faerdig(out.bekraeft); btn.disabled = false; btn.classList.remove("busy"); return; }
+        // Serveren kræver en adgangskode, selvom siden ikke kunne hente listen over åbne kommuner: vis feltet
+        if (out.kraever_kode) { kontoFelt.hidden = false; form.adgangskode.focus(); }
         if (egen.status === 400 || egen.status === 429) { msg.className = "form-msg err"; msg.textContent = out.fejl || "Noget gik galt."; btn.disabled = false; btn.classList.remove("busy"); return; }
       }
     } catch (err) { console.warn("Egen server svarede ikke:", err.message); }

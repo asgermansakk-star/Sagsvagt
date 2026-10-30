@@ -522,9 +522,9 @@
   <div class="wrap" id="lukket" hidden>
     <div class="lukket">
       <div>
-        <p class="kicker"><span class="status kommer">Kommer snart</span></p>
+        <p class="kicker"><span class="status kommer">Log ind</span></p>
         <h1>Din egen udgave af Sagsvagt.</h1>
-        <p class="lead-p">Her samler vi de sager, der handler om dine emner: det, politikerne har besluttet, det, de skal tage stilling til, og det, der sker i din bydel. Vi åbner for login, når testperioden går i gang.</p>
+        <p class="lead-p">Her samler vi de sager, der handler om dine emner: det, politikerne har besluttet, det, de skal tage stilling til, og det, der sker i din bydel. Log ind med den e-mail, du er skrevet op med.</p>
         <div class="knapper">
           <a class="btn moerk" href="../vagt.html?fra=min-avis">Skriv dig op</a>
           <a class="btn linje" href="#login">Log ind</a>
@@ -886,14 +886,12 @@
 
   // Login med e-mail og adgangskode (adgangskoden oprettes via linket i invitationen)
   function rigtigLogin() {
-    $(".lukket .kicker").innerHTML = `<span class="status kommer">Log ind</span>`;
-    $(".lukket .lead-p").textContent = "Her samler vi de sager, der handler om dine emner: det, politikerne har besluttet, det, de skal tage stilling til, og det, der sker i din bydel. Log ind med den e-mail, du er skrevet op med.";
     const f = $(".login");
     f.innerHTML = `<h2>Log ind</h2>
       <label for="login-mail">Din e-mail</label><input id="login-mail" type="email" autocomplete="email" placeholder="navn@eksempel.dk">
       <label for="login-kode" style="margin-top:12px">Adgangskode</label><input id="login-kode" type="password" autocomplete="current-password">
       <button type="submit">Log ind</button>
-      <small id="login-note"><a href="adgang.html" style="color:inherit">Glemt adgangskode?</a> Har du fået en invitation, så opret din adgangskode via linket i mailen. Kan du ikke finde den, så tjek også din mappe med uønsket mail.</small>`;
+      <small id="login-note"><a href="adgang.html" style="color:inherit">Glemt adgangskode?</a> Brug også det link, hvis du er skrevet op, men ikke har valgt en adgangskode endnu. Vi sender dig en mail. Kan du ikke finde den, så tjek din mappe med uønsket mail.</small>`;
     f.onsubmit = (e) => {
       e.preventDefault();
       const note = $("#login-note"), knap = f.querySelector("button");

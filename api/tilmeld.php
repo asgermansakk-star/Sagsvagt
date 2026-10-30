@@ -30,16 +30,19 @@ $db = db();
 $q = $db->prepare('SELECT id, status, medlem, bekraeftet, mail_afmeldt FROM abonnenter WHERE email = ?'); $q->execute([$email]);
 $fandtes = $q->fetch();
 
-// Adgangskode ved tilmelding: kun når mindst én af kommunerne er åben, og kun for en ny e-mail. En eksisterende
-// tilmelding eller konto får aldrig en ny adgangskode herfra (så ingen kan overtage en andens); den bruger "Glemt adgangskode".
+// Adgangskode ved tilmelding: påkrævet, når mindst én af kommunerne er åben, så ingen ender med en tilmelding uden konto.
+// Kravet gælder også en e-mail, der findes i forvejen, så svaret ikke afslører, hvem der er skrevet op. Kun en ny e-mail får koden gemt:
+// en eksisterende tilmelding eller konto får aldrig en ny adgangskode herfra (så ingen kan overtage en andens); den bruger "Glemt adgangskode".
 $kode = (string)($d['adgangskode'] ?? '');
 $konto = false;
+$aabne = array_column(json_decode((string)@file_get_contents(__DIR__ . '/../kommune/aabne.json'), true) ?: [], 'navn');
+$iAaben = (bool)array_intersect(array_map('trim', explode(',', $kommuner)), $aabne);
+if ($kode === '' && $iAaben) svar(400, ['fejl' => 'Vælg en adgangskode på mindst 10 tegn, så du kan logge ind på Min avis.', 'kraever_kode' => true]);
 if ($kode !== '') {
     if (mb_strlen($kode) < 10) fejl(400, 'Adgangskoden skal være på mindst 10 tegn.');
     if (mb_strlen($kode) > 200) fejl(400, 'Adgangskoden er for lang.');
     if (mb_strtolower($kode) === $email) fejl(400, 'Adgangskoden må ikke være din e-mail.');
-    $aabne = array_column(json_decode((string)@file_get_contents(__DIR__ . '/../kommune/aabne.json'), true) ?: [], 'navn');
-    if (!array_intersect(array_map('trim', explode(',', $kommuner)), $aabne)) fejl(400, 'Du kan vælge en adgangskode, når en af dine kommuner er åben.');
+    if (!$iAaben) fejl(400, 'Du kan vælge en adgangskode, når en af dine kommuner er åben.');
     $konto = !$fandtes;
 }
 // Ny på Sagsvagt: ingen række, eller en række, der indtil nu kun var foreningsmedlem
