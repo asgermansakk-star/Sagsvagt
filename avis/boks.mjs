@@ -115,7 +115,7 @@ export async function bygBokse({ sager, udvalg, lokal, prUdvalg, prEmne }, h) {
   await writeFile(join(ROD, "boks.html"), side({
     titel: "Sæt Sagsvagt på din hjemmeside – Sagsvagt",
     beskrivelse: "Vis de nyeste sager fra din bydel, dit udvalg eller dit emne på din egen hjemmeside. Gratis, og den opdaterer sig selv.",
-    sti: "boks.html", rod: "", aktiv: "om",
+    sti: "boks.html", rod: "", aktiv: "boks",
     indhold: `<div class="wrap"><div class="listing boks-side">
   <h1>Sæt Sagsvagt på din hjemmeside</h1>
   <p class="intro">Vis de nyeste sager fra din bydel, dit udvalg eller dit emne på din egen hjemmeside. Boksen opdaterer sig selv hver dag, når kommunen lægger nye dagsordener og referater ud. Den er gratis og bruger hverken cookies eller sporing.</p>
@@ -161,6 +161,9 @@ export async function bygBokse({ sager, udvalg, lokal, prUdvalg, prEmne }, h) {
     $("#bv-kode").value = '<iframe src="' + BOKS + o.value + q + '" title="' + o.dataset.titel + ' – Sagsvagt" style="width:100%;max-width:440px;height:' + h + 'px;border:0" loading="lazy"></iframe>';
     $("#bv-status").textContent = "";
   }
+  // Links fra emne-, udvalgs- og bydelssider vælger den rigtige boks på forhånd (boks.html?vis=boks/emne/trafik.html)
+  var vis = new URLSearchParams(location.search).get("vis");
+  if (vis && [].some.call($("#bv-hvad").options, function (o) { return o.value === vis; })) $("#bv-hvad").value = vis;
   ["#bv-hvad", "#bv-hoejde", "#bv-tema"].forEach(function (s) { $(s).addEventListener("change", opdater); });
   $("#bv-kopier").addEventListener("click", function () {
     var k = $("#bv-kode"); k.select();

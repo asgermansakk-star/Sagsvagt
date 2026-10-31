@@ -93,9 +93,16 @@
   .bar .btn-lille.btn-sekundaer:hover { box-shadow: inset 0 0 0 1.5px var(--kalk); background: rgba(230,223,211,.08); }
 
   /* ---------- Hero: som en avisforside, venstrestillet og ét budskab ---------- */
-  /* Natkortet over København (assets/natkort/, plan/mockups/natkort.mjs) under Mødets farver; uden kortet står Mødet alene */
-  .hero { background: linear-gradient(90deg, rgba(14,15,20,.5), rgba(14,15,20,.1) 62%), linear-gradient(135deg, rgba(40,55,122,.55), rgba(14,15,20,.4) 55%, rgba(62,14,20,.6)), url("assets/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet);
+  /* En film af avisen, der ruller stille i baggrunden (assets/video/, mørk udgave så teksten kan læses; stillbillede uden bevægelse), under Mødets farver */
+  .hero { position: relative; overflow: hidden; background: var(--nat); isolation: isolate;
     color: var(--kalk); padding: 136px 0 72px; }
+  .hero-film { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+  .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(14,15,20,.84), rgba(14,15,20,.66) 58%, rgba(14,15,20,.5)), linear-gradient(135deg, rgba(40,55,122,.45), rgba(14,15,20,.1) 55%, rgba(62,14,20,.5)); }
+  .film-pause { position: absolute; right: 16px; bottom: 16px; width: 44px; height: 44px; display: none; place-items: center; border: 0; border-radius: 50%; background: rgba(14,15,20,.7); color: var(--kalk); cursor: pointer; }
+  .film-pause.vis { display: grid; }
+  .film-pause svg { width: 18px; height: 18px; fill: currentColor; }
+  .hero .erhverv-linje { margin: 20px 0 0; font-size: var(--sekundaer); color: rgba(230,223,211,.84); }
+  .hero .erhverv-linje a { color: var(--kalk); font-weight: 600; }
   .hero .kicker { margin: 0 0 14px; font-size: var(--fodnote); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rosen); }
   .hero h1 { font-size: var(--t-stor); font-weight: 700; letter-spacing: -.03em; line-height: 1.08; max-width: 16ch; }
   .hero .lead { color: rgba(230,223,211,.84); margin: 20px 0 0; max-width: 36em; }
@@ -239,11 +246,38 @@
   .plankort figcaption { font-size: var(--fodnote); color: var(--muted); margin-top: 8px; }
   .g-laes { display: inline-flex; min-height: 44px; align-items: center; margin-top: 8px; font-weight: 600; }
 
-  /* Natkortene er lavet af OpenStreetMap-fliser, så kilden står i hjørnet (ODbL) */
-  .hero, .faktabaand, .mail-top { position: relative; }
-  .hero::after, .faktabaand::after, .mail-top::after { content: "Kort: © OpenStreetMap-bidragydere"; position: absolute; right: 12px; bottom: 6px; font: 500 10px/1.2 var(--sans); color: rgba(230,223,211,.7); pointer-events: none; }
-  /* ---------- Sagsvagt i tal: på natkortet ---------- */
-  .faktabaand { color: var(--kalk); background: linear-gradient(90deg, rgba(14,15,20,.72), rgba(14,15,20,.45)), url("assets/natkort/koebenhavn.jpg") center 30% / cover no-repeat, var(--nat); }
+  /* Mailens natkort er lavet af OpenStreetMap-fliser, så kilden står i hjørnet (ODbL) */
+  .mail-top { position: relative; }
+  .mail-top::after { content: "Kort: © OpenStreetMap-bidragydere"; position: absolute; right: 12px; bottom: 6px; font: 500 10px/1.2 var(--sans); color: rgba(230,223,211,.7); pointer-events: none; }
+  /* ---------- Kortet over sagerne ---------- */
+  .kortflade { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); border-radius: var(--r-kort); overflow: hidden; background: var(--nat); color: var(--kalk); }
+  .sk-kort { position: relative; line-height: 0; cursor: pointer; }
+  .sk-kort img { width: 100%; height: auto; display: block; }
+  .sk-kort svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .sk-kort circle { fill: var(--rubin); stroke: var(--kalk); stroke-width: 5; }
+  .sk-kort circle.kommer { fill: var(--skifer); }
+  .sk-kort circle.valgt { fill: var(--kalk); stroke: var(--nat); stroke-width: 10; }
+  .sk-kilde { position: absolute; right: 8px; bottom: 6px; font: 500 10px/1.2 var(--sans); color: rgba(230,223,211,.75); }
+  .sk-sag { display: flex; flex-direction: column; gap: 12px; padding: 28px 24px; }
+  .sk-sted { margin: 0; font-size: var(--fodnote); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--rosen); }
+  .sk-sag h3 { font-size: var(--t2); line-height: 1.25; }
+  .sk-sag h3 a { color: inherit; }
+  .sk-info { margin: 0; font-size: var(--sekundaer); color: rgba(230,223,211,.78); }
+  .sk-skift { display: flex; gap: 8px; margin-top: auto; padding-top: 8px; }
+  .sk-skift button { flex: 1; min-height: 44px; border: 0; border-radius: var(--r-knap); background: rgba(230,223,211,.12); color: var(--kalk); font: 600 var(--sekundaer) var(--sans); cursor: pointer; }
+  .sk-skift button:hover { background: rgba(230,223,211,.2); }
+  .sk-noegle { display: flex; gap: 16px; margin: 0; font-size: var(--fodnote); color: rgba(230,223,211,.78); }
+  .sk-noegle span::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 50%; background: var(--rubin); }
+  .sk-noegle span:first-child::before { background: var(--skifer); }
+  /* ---------- Til virksomheder og foreninger ---------- */
+  .to-veje { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .to-veje a { display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: var(--r-kort); background: var(--nat); color: var(--kalk); text-decoration: none; }
+  .to-veje a:hover { background: var(--grafit); }
+  .to-veje b { font-size: var(--t2); letter-spacing: -.02em; }
+  .to-veje span { font-size: var(--sekundaer); color: rgba(230,223,211,.8); }
+  .to-veje em { margin-top: auto; padding-top: 8px; font-style: normal; font-weight: 600; font-size: var(--sekundaer); }
+  /* ---------- Sagsvagt i tal ---------- */
+  .faktabaand { color: var(--kalk); background: var(--moedet), var(--nat); }
   .faktabaand .wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding-top: 56px; padding-bottom: 56px; }
   .faktabaand b { display: block; font-size: clamp(2.5rem, 1.6rem + 3vw, 3.75rem); font-weight: 700; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
   .faktabaand div:first-child b { color: var(--rosen); }
@@ -349,6 +383,7 @@
     .faktabaand .wrap { gap: 24px; padding-top: 40px; padding-bottom: 40px; }
     .tilmeld-kort { padding: 32px 24px; gap: 32px; }
     .bar nav { display: none; }
+    .kortflade, .to-veje { grid-template-columns: 1fr; }
   }
   @media (max-width: 520px) {
     .wrap { padding: 0 16px; }
@@ -385,8 +420,10 @@
     <a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
     <nav aria-label="Hovedmenu">
       <a href="#saadan">Sådan virker det</a>
+      <a href="#kort">Kort</a>
       <a href="#spoergsmaal">Spørgsmål</a>
       <a href="index.html">Læs avisen</a>
+      <a href="erhverv.html">Erhverv</a>
     </nav>
     <a class="btn btn-lille btn-sekundaer" href="min/">Log ind</a>
     <a class="btn btn-lille btn-lys" href="#tilmeld">Skriv dig op</a>
@@ -395,6 +432,8 @@
 
 <main id="indhold">
   <section class="hero paa-moerk" aria-labelledby="hero-h">
+    <video class="hero-film" id="hero-film" muted loop playsinline preload="none" poster="assets/video/avisen.jpg" aria-hidden="true" tabindex="-1"></video>
+    <button class="film-pause" id="film-pause" type="button" aria-label="Sæt filmen på pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
     <div class="wrap hero-gitter">
      <div>
       <p class="kicker">Kommunalpolitik, du kan bruge</p>
@@ -415,6 +454,7 @@
         <li>Partineutral</li>
         <li>Afmeld fra hver mail</li>
       </ul>
+      <p class="erhverv-linje">Arbejder du med ejendom, byggeri eller rådgivning? <a href="erhverv.html">Se Sagsvagt Erhverv</a></p>
      </div>
       <!-- Tre rigtige sager fra demoen herunder, så man med det samme ser, hvad Sagsvagt finder -->
       <aside class="udklip" aria-labelledby="udklip-h">
@@ -440,6 +480,32 @@
         </div>
         <a class="u-mere" href="#proev">Se 15 sager mere</a>
       </aside>
+    </div>
+  </section>
+
+  <section class="afsnit" id="kort" aria-labelledby="kort-h">
+    <div class="wrap">
+      <div class="afsnit-hoved">
+        <h2 id="kort-h">Hvad sker der i din gade?</h2>
+        <p class="lead">Sagerne fra København de sidste fire måneder, sat på et kort efter gade, skole og park. Tryk på en prik.</p>
+      </div>
+      <div class="kortflade">
+        <div class="sk-kort" id="sagskort-flade">
+          <img src="assets/sagskort.jpg" width="1400" height="1202" alt="" loading="lazy">
+          <svg viewBox="0 0 2400 2060" aria-hidden="true"></svg>
+          <span class="sk-kilde">Kort: © OpenStreetMap-bidragydere</span>
+        </div>
+        <div class="sk-sag">
+          <div aria-live="polite">
+            <p class="sk-sted" id="sk-sted">København</p>
+            <h3 id="sk-titel"><a href="kort.html">Se sagerne på kortet</a></h3>
+            <p class="sk-info" id="sk-info"></p>
+          </div>
+          <p class="sk-noegle"><span>Kommer op</span><span>Besluttet</span></p>
+          <div class="sk-skift" id="sk-skift" hidden><button type="button" id="sk-forrige">Forrige sag</button><button type="button" id="sk-naeste">Næste sag</button></div>
+          <a class="btn btn-lys" href="kort.html">Se hele kortet</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -647,12 +713,21 @@
       </div>
     </div>
   </section>
+  <section class="afsnit" id="andre" aria-labelledby="andre-h">
+    <div class="wrap">
+      <div class="afsnit-hoved"><h2 id="andre-h">Til virksomheder og foreninger</h2></div>
+      <div class="to-veje">
+        <a href="erhverv.html"><b>Sagsvagt Erhverv</b><span>Se byggerier, lokalplaner og udbud i kommunerne, før de bliver offentligt udbudt.</span><em>Se produkter og priser</em></a>
+        <a href="boks.html"><b>Sæt Sagsvagt på din hjemmeside</b><span>En gratis boks med de nyeste sager fra din bydel, dit udvalg eller dit emne. Den opdaterer sig selv.</span><em>Hent koden</em></a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="wrap">
     <svg class="logo-svg" viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg>
-    <a href="eksempel.html">Eksempel på en mail</a><a href="privatliv.html">Privatliv</a>
+    <a href="eksempel.html">Eksempel på en mail</a><a href="kort.html">Kort over sagerne</a><a href="erhverv.html">Sagsvagt Erhverv</a><a href="boks.html">Sæt Sagsvagt på din hjemmeside</a><a href="privatliv.html">Privatliv</a>
     <a href="mailto:mansa@sagsvagt.dk">mansa@sagsvagt.dk</a>
     <span class="firma">Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
@@ -663,6 +738,62 @@
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  /* ---------- Filmen af avisen: kun når man ikke har bedt om mindre bevægelse eller mindre data ---------- */
+  (() => {
+    const film = $("#hero-film"), knap = $("#film-pause");
+    if (reduce || navigator.connection?.saveData) return;
+    const ikon = { pause: '<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>', spil: '<path d="M8 5l11 7-11 7z"/>' };
+    film.addEventListener("playing", () => knap.classList.add("vis"), { once: true });
+    knap.addEventListener("click", () => {
+      const paa = film.paused;
+      if (paa) film.play(); else film.pause();
+      knap.setAttribute("aria-label", paa ? "Sæt filmen på pause" : "Afspil filmen");
+      knap.querySelector("svg").innerHTML = paa ? ikon.pause : ikon.spil;
+    });
+    film.src = `assets/video/avisen${innerWidth <= 700 ? "-mobil" : ""}.mp4`;
+    film.play().catch(() => {});
+  })();
+
+  /* ---------- Kortet over sagerne: prikker fra assets/kort-sager.json på vores eget kortbillede, intet hentes hos andre ---------- */
+  (() => {
+    const flade = $("#sagskort-flade"), Z = 256 * 2 ** 14;
+    const pos = (lon, lat) => { const r = lat * Math.PI / 180; return [(lon + 180) / 360 * Z, (1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2 * Z]; };
+    const [cx, cy] = pos(12.5525, 55.675);
+    const start = () => fetch("assets/kort-sager.json").then((r) => r.json()).then((alle) => {
+      // Kommende sager først, derefter de nyeste
+      const l = alle.map((s) => { const [x, y] = pos(s.lon, s.lat); return { ...s, x: x - cx + 1200, y: y - cy + 1030 }; })
+        .filter((s) => s.x > 0 && s.y > 0 && s.x < 2400 && s.y < 2060)
+        .sort((a, b) => (b.status === "kommer") - (a.status === "kommer") || b.dato.localeCompare(a.dato));
+      if (!l.length) return;
+      const svg = $("svg", flade);
+      svg.innerHTML = [...l].reverse().map((s) => `<circle cx="${s.x.toFixed(0)}" cy="${s.y.toFixed(0)}" r="22" class="${s.status === "kommer" ? "kommer" : ""}" data-i="${l.indexOf(s)}"/>`).join("");
+      let valgt = 0;
+      const vis = (i) => {
+        valgt = (i + l.length) % l.length;
+        const s = l[valgt];
+        $("#sk-sted").textContent = `${s.sted} · ${s.hvor}`;
+        $("#sk-titel").innerHTML = `<a href="${esc(s.url)}">${esc(s.titel)}</a>`;
+        $("#sk-info").textContent = `${s.status === "kommer" ? "Kommer op" : "Besluttet"} ${new Date(s.dato).toLocaleDateString("da-DK", { day: "numeric", month: "long" })}`;
+        $$("circle", svg).forEach((c) => c.classList.toggle("valgt", +c.dataset.i === valgt));
+        const c = svg.querySelector(`[data-i="${valgt}"]`); svg.append(c);
+      };
+      // Et tryk vælger den nærmeste prik, så de små prikker også kan rammes med en finger
+      flade.addEventListener("click", (e) => {
+        const b = svg.getBoundingClientRect(), x = (e.clientX - b.left) / b.width * 2400, y = (e.clientY - b.top) / b.height * 2060;
+        let bedst = 0, min = Infinity;
+        l.forEach((s, i) => { const d = (s.x - x) ** 2 + (s.y - y) ** 2; if (d < min) { min = d; bedst = i; } });
+        vis(bedst);
+      });
+      $("#sk-forrige").addEventListener("click", () => vis(valgt - 1));
+      $("#sk-naeste").addEventListener("click", () => vis(valgt + 1));
+      $("#sk-skift").hidden = false;
+      vis(0);
+    }).catch(() => {});
+    if (!("IntersectionObserver" in window)) return void start();
+    const o = new IntersectionObserver((e) => { if (e[0].isIntersecting) { o.disconnect(); start(); } }, { rootMargin: "400px" });
+    o.observe(flade);
+  })();
 
   /* ---------- Emner (rød og blå på skift) og synonymer ---------- */
   const R = { c: "var(--rosen)", cf: "var(--bordeaux)", hl: "var(--rosen)" }, B = { c: "var(--lyng)", cf: "var(--blaek)", hl: "var(--lyng)" };

@@ -16,6 +16,7 @@ import { soegIndhold, unikTitel, findKommuneSteder } from "./udgave.mjs";
 import { laesForenklet, forenkletBoks } from "./forenklet.mjs";
 import { laesPerspektiv, perspektivBokse } from "./perspektiv.mjs";
 import { sagensVej, vejBoks, bygPartier, bygHoeringer, bygKalendere, bygFeeds, kalenderLink, feedLink } from "./ekstra.mjs";
+import { px } from "./kortbase.mjs";
 
 const ROD = join(import.meta.dirname, "..");
 const SITE_URL = (process.env.SITE_URL || "https://sagsvagt.dk/").replace(/\/?$/, "/");
@@ -163,6 +164,7 @@ const menuData = (rod, k) => {
     hoved: [
       { href: `${rod}index.html`, navn: "Forside", id: "forside", ikon: "hjem" },
       { href: `${rod}emne/`, navn: "Emner", id: "emne", ikon: "emner" },
+      { href: `${rod}kort.html`, navn: "Kort", id: "kort", ikon: "sted" },
       { href: `${rod}moeder.html`, navn: "Møder", id: "moeder", ikon: "kalender" },
       { href: `${rod}soeg.html`, navn: "Søg", id: "soeg", ikon: "soeg" },
     ],
@@ -175,6 +177,8 @@ const menuData = (rod, k) => {
       { href: `${rod}hoeringer.html`, navn: "Høringer", id: "hoeringer" },
       { href: `${rod}partier.html`, navn: "Sådan stemmer partierne", id: "partier" },
       { href: `${rod}om.html`, navn: "Om Sagsvagt", id: "om" },
+      { href: `${rod}boks.html`, navn: "Sæt på din hjemmeside", id: "boks" },
+      { href: `${rod}erhverv.html`, navn: "Sagsvagt Erhverv", id: "erhverv" },
     ],
   };
   const r = `${rod}kommune/${k.slug}`, top = TOPRAAD.get(k.navn);
@@ -193,6 +197,7 @@ const menuData = (rod, k) => {
       { href: `${r}/hoeringer.html`, navn: "Høringer", id: "k-hoeringer" },
       { href: `${r}/partier.html`, navn: "Sådan stemmer partierne", id: "k-partier" },
       { href: `${rod}om.html`, navn: "Om Sagsvagt", id: "om" },
+      { href: `${rod}erhverv.html`, navn: "Sagsvagt Erhverv", id: "erhverv" },
     ],
   };
 };
@@ -280,6 +285,7 @@ ${LOGO_SYMBOL}
     <details class="mh-edition mere mh-kommune"><summary><b>${esc(udgave || "København")}</b><br>${aktiv === "forside"
       ? `${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}` : "Skift kommune"}</summary><div>${kommuneValg(rod, kommune)}</div></details>
     <div class="mh-handling">
+      <a class="mh-erhverv" href="${rod}erhverv.html">Erhverv</a>
       <a class="mh-cta" href="${rod}vagt.html?fra=avis#tilmeld">Skriv dig op</a>
       <a class="mh-ikon" href="${rod}min/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.2 4-4.9 7.2-4.9s5.9 1.7 7.2 4.9"/><circle cx="12" cy="12" r="10.2"/></svg><span>Log ind</span></a>
     </div>
@@ -294,7 +300,7 @@ ${indhold}
 <footer class="foot">
   <div class="wrap">
     ${logo(110, 34)}
-    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a> · <a href="${rod}boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="${rod}privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
+    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a> · <a href="${rod}erhverv.html">Sagsvagt Erhverv</a> · <a href="${rod}boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="${rod}privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
 </footer>
 <script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
@@ -546,6 +552,13 @@ async function main() {
   const tt = (s) => s.titel.toLowerCase();
   const anden = spred(unikTitel(nyheder.filter((s) => s !== top && tt(s) !== tt(top) && !erLokaludvalg(s.udvalg))), 9, 2);
   const mellem = anden.slice(0, 3);
+  // Kort over sagerne: Københavns sager fra de sidste 120 dage med et sted, som nåle (kort.html + assets/kort-sager.json)
+  const paaKort = sager.filter((s) => stedKort.get(s.id)?.lat != null && (d(IDAG) - d(s.dato)) / 864e5 <= 120)
+    .map((s) => { const k = stedKort.get(s.id); return { lat: +k.lat.toFixed(5), lon: +k.lon.toFixed(5), sted: k.sted, titel: s.titel, url: s.url, dato: s.dato, status: s.status, hvor: hvorNavn(s.udvalg), emne: emneId(s) }; });
+  // Sagernes prikker på forsidens kort (assets/sagskort.jpg, avis/sagskort.mjs): samme ramme som billedet, kun dem inden for den
+  const SAGSKORT = { z: 14, x0: px(12.5525, 55.675, 14)[0] - 1200, y0: px(12.5525, 55.675, 14)[1] - 1030, W: 2400, H: 2060 };
+  const prikker = paaKort.map((s) => { const [x, y] = px(s.lon, s.lat, SAGSKORT.z); return { x: x - SAGSKORT.x0, y: y - SAGSKORT.y0, kommer: s.status === "kommer" }; })
+    .filter((p) => p.x > 0 && p.y > 0 && p.x < SAGSKORT.W && p.y < SAGSKORT.H);
   const brugt = new Set([top, ...anden]);
   const bydele = spred(nyheder.filter((s) => erLokaludvalg(s.udvalg) && !brugt.has(s)), 6, 2);
   bydele.forEach((s) => brugt.add(s));
@@ -573,6 +586,10 @@ async function main() {
       <div class="mellem">
         ${mellem.map((s) => `<article class="med-billede">${lilleBillede(s, "")}<div>${kicker(s, "")}<h2 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 190))}</p>` : ""}${stemmeMini(s, esc)}</div></article>`).join("\n        ")}
       </div>
+      <a class="kort-band" href="kort.html">
+        <span class="kb-kort"><img src="assets/sagskort.jpg" width="1400" height="1202" alt="" loading="lazy"><svg viewBox="0 0 ${SAGSKORT.W} ${SAGSKORT.H}" aria-hidden="true">${prikker.map((p) => `<circle cx="${p.x.toFixed(0)}" cy="${p.y.toFixed(0)}" r="24" class="${p.kommer ? "kommer" : ""}"/>`).join("")}</svg></span>
+        <span class="kb-tekst"><span class="rubrik">Kort over sagerne</span><b>Hvad sker der i din gade?</b><span>${paaKort.length} sager fra de sidste fire måneder i København, sat på et kort efter gade, skole og park.</span><span class="kb-knap">Se kortet</span></span>
+      </a>
       <section class="kortnyt" aria-labelledby="h-kort">
         <h2 id="h-kort" class="rubrik">Kort nyt</h2>
         <ul>${kortNyt.map((s) => notits(s)).join("")}</ul>
@@ -581,9 +598,13 @@ async function main() {
     <div class="rail">
       ${vagtBoks("")}
       <section aria-labelledby="h-bydele">
-        <a class="kort-link" href="kort.html"><img src="assets/emner/generel.svg" alt=""><span>Se sagerne på et kort<br><b>Hvad sker der i din gade?</b></span></a>
         <h2 id="h-bydele" class="rubrik">Fra bydelene <a href="bydel/">Alle bydele</a></h2>
         <ul class="notitser">${bydele.map((s) => notits(s)).join("")}</ul>
+      </section>
+      <section class="til-andre" aria-labelledby="h-andre">
+        <h2 id="h-andre" class="rubrik">Til virksomheder og foreninger</h2>
+        <a href="erhverv.html"><b>Sagsvagt Erhverv</b><span>Se byggerier, lokalplaner og udbud, før de bliver offentligt udbudt.</span></a>
+        <a href="boks.html"><b>Sæt Sagsvagt på din hjemmeside</b><span>Gratis boks med de nyeste sager. Vælg emne, kopiér koden.</span></a>
       </section>
       <section aria-labelledby="h-kommer">
         <h2 id="h-kommer" class="rubrik">Kalender <a href="moeder.html">Alle møder</a></h2>
@@ -672,7 +693,7 @@ async function main() {
       titel: `${lu ? `${navn}: Nyt fra lokaludvalget` : navn} – Sagsvagt`,
       beskrivelse: `Sager og beslutninger fra ${lu ? `${navn} Lokaludvalg` : `${navn} i Københavns Kommune`}, hentet fra de officielle dagsordener og referater.`,
       sti, rod: "../", aktiv: u === "Borgerrepræsentationen" ? "br" : lu ? "bydel" : "udvalg",
-      indhold: `<div class="wrap"><div class="listing"><h1>${esc(lu ? `${navn}` : navn)}</h1>${lu ? `<p class="intro">Lokaludvalg i Københavns Kommune.</p>` : ""}<p class="abonner"><a href="${kalenderLink(u, "../", H)}">Føj møderne til din kalender</a> · <a href="${feedLink(u, "../", H)}">RSS</a></p>${prUdvalg.get(u).map((s) => liste(s)).join("\n")}</div></div>`,
+      indhold: `<div class="wrap"><div class="listing"><h1>${esc(lu ? `${navn}` : navn)}</h1>${lu ? `<p class="intro">Lokaludvalg i Københavns Kommune.</p>` : ""}<p class="abonner"><a href="${kalenderLink(u, "../", H)}">Føj møderne til din kalender</a> · <a href="${feedLink(u, "../", H)}">RSS</a> · <a href="../boks.html?vis=boks/${lu ? `bydel/${slug(bydel(u))}` : `udvalg/${slug(u)}`}.html">Sæt på din hjemmeside</a></p>${prUdvalg.get(u).map((s) => liste(s)).join("\n")}</div></div>`,
     }));
   }
   // visIntro: false, når introen kun gentager overskriften (den bruges stadig som beskrivelse til søgemaskiner)
@@ -690,7 +711,7 @@ async function main() {
     await writeFile(join(ROD, "emne", `${id}.html`), side({
       titel: `${e.navn} – Sagsvagt`, beskrivelse: `Sager om ${e.navn.toLowerCase()} fra byråd, udvalg og lokaludvalg i København.`,
       sti: `emne/${id}.html`, rod: "../", aktiv: "emne",
-      indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>${esc(e.navn)}</h1><p class="intro">${prEmne[id].length} sager, nyeste først.</p><p class="abonner"><a href="../feed/emne-${id}.xml">RSS for ${esc(e.navn.toLowerCase())}</a></p>${emneChips(id)}${prEmne[id].map((s) => liste(s, true)).join("\n")}</div></div>`,
+      indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>${esc(e.navn)}</h1><p class="intro">${prEmne[id].length} sager, nyeste først.</p><p class="abonner"><a href="../feed/emne-${id}.xml">RSS for ${esc(e.navn.toLowerCase())}</a> · <a href="../boks.html?vis=boks/emne/${id}.html">Sæt på din hjemmeside</a></p>${emneChips(id)}${prEmne[id].map((s) => liste(s, true)).join("\n")}</div></div>`,
     }));
   }
   await writeFile(join(ROD, "emne", "index.html"), side({
@@ -776,12 +797,9 @@ async function main() {
   // Om-side (med de åbne kommuner: "Albertslund, Brønderslev … og Viborg")
   const aabneNavne = udgaver.map((k) => k.navn);
   const aabneTekst = aabneNavne.length > 1 ? `${aabneNavne.slice(0, -1).join(", ")} og ${aabneNavne.at(-1)}` : aabneNavne[0] || "flere kommuner";
-  // Kort over sagerne: Københavns sager fra de sidste 120 dage med et sted, som nåle (kort.html + assets/kort-sager.json)
-  const paaKort = sager.filter((s) => stedKort.get(s.id)?.lat != null && (d(IDAG) - d(s.dato)) / 864e5 <= 120)
-    .map((s) => { const k = stedKort.get(s.id); return { lat: +k.lat.toFixed(5), lon: +k.lon.toFixed(5), sted: k.sted, titel: s.titel, url: s.url, dato: s.dato, status: s.status, hvor: hvorNavn(s.udvalg), emne: emneId(s) }; });
   await writeFile(join(ROD, "assets", "kort-sager.json"), JSON.stringify(paaKort));
   await writeFile(join(ROD, "kort.html"), side({
-    titel: "Kort over sagerne i København – Sagsvagt", beskrivelse: "Se på kortet, hvad politikerne i København beslutter om din gade, skole og park.", sti: "kort.html", rod: "",
+    titel: "Kort over sagerne i København – Sagsvagt", beskrivelse: "Se på kortet, hvad politikerne i København beslutter om din gade, skole og park.", sti: "kort.html", rod: "", aktiv: "kort",
     indhold: `<div class="wrap">
   <h1 class="hl kort-h">Hvad sker der i din gade?</h1>
   <p class="dek">${paaKort.length} sager fra de sidste fire måneder, der nævner en gade, en plads, en skole eller en park. Tryk på en nål for at læse sagen, eller se dem som liste under kortet.</p>
@@ -851,7 +869,7 @@ if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})}).catch(function(){var p
   // Sitemap og robots
   const stedUrls = await bygSteder(prSted, H);
   console.log(`${stedUrls.length - 1} stedsider`);
-  const urls = [...stedUrls, "", "index.html", "om.html", "boks.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), "kommune/", ...kommuner.filter((k) => k.slug !== "koebenhavn").map((k) => `kommune/${k.slug}.html`), ...kommuneSider, ...alleSager.map((s) => s.url)];
+  const urls = [...stedUrls, "", "index.html", "om.html", "boks.html", "kort.html", "erhverv.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), "kommune/", ...kommuner.filter((k) => k.slug !== "koebenhavn").map((k) => `kommune/${k.slug}.html`), ...kommuneSider, ...alleSager.map((s) => s.url)];
   await writeFile(join(ROD, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE_URL}${u}</loc></url>`).join("\n")}\n</urlset>\n`);
   await writeFile(join(ROD, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
   console.log(`Byggede forside, ${sager.length} sager, ${udvalg.length} udvalg, ${lokal.length} bydele, ${Object.keys(EMNER).length} emner, ${antalBokse} bokse`);

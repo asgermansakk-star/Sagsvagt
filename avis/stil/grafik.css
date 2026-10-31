@@ -27,6 +27,36 @@
 .kort-billede { flex: none; order: 2; margin-top: 4px; }
 .kort-billede img { display: block; width: 96px; height: 64px; object-fit: cover; border-radius: 10px; }
 @media (min-width: 640px) { .kort-billede img { width: 132px; height: 88px; } }
+/* Tre kolonner på forsiden er for smalle til billede ved siden af teksten, så billedet står øverst */
+@media (min-width: 961px) {
+  .mellem .med-billede { flex-direction: column; gap: 12px; }
+  .mellem .med-billede > div { flex: none; width: 100%; }
+  .mellem .kort-billede { order: 0; width: 100%; margin-top: 0; }
+  .mellem .kort-billede img { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+  .mellem .hl, .mellem .kicker, .mellem .dek { hyphens: auto; overflow-wrap: anywhere; }
+}
+/* Kortet over sagerne på avisens forside (billedet og prikkerne har samme ramme) */
+.kort-band { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 6fr); margin: 28px 0; border-radius: var(--r-kort); overflow: hidden; background: var(--nat); color: var(--kalk); text-decoration: none; }
+.kb-kort { position: relative; display: block; line-height: 0; }
+.kb-kort img { width: 100%; height: auto; display: block; }
+.kb-kort svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.kb-kort circle { fill: #B04A50; stroke: #E6DFD3; stroke-width: 6; }
+.kb-kort circle.kommer { fill: #5D6BA8; }
+.kb-tekst { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; padding: 24px; font-size: var(--sekundaer); line-height: 1.45; }
+.kb-tekst .rubrik { color: #DCA9A5; margin: 0; border: 0; padding: 0; }
+.kb-tekst b { font-size: 1.5rem; line-height: 1.15; letter-spacing: -.02em; }
+.kb-knap { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; margin-top: 6px; border-radius: var(--r-knap); background: var(--kalk); color: var(--nat); font-weight: 600; }
+.kort-band:hover .kb-knap { background: var(--kalk-lys); }
+@media (max-width: 640px) { .kort-band { grid-template-columns: 1fr; } }
+/* Veje ind til Erhverv og boksen */
+.til-andre a { display: block; padding: 12px 0; border-top: 1px solid var(--rule); color: inherit; text-decoration: none; line-height: 1.4; }
+.til-andre a:first-of-type { border-top: 0; padding-top: 0; }
+.til-andre b { display: block; }
+.til-andre a:hover b { text-decoration: underline; }
+.til-andre span { display: block; margin-top: 2px; font-size: var(--fodnote); color: var(--muted); }
+.mh-erhverv { display: inline-flex; align-items: center; min-height: 44px; font-size: var(--sekundaer); font-weight: 500; color: inherit; text-decoration: none; opacity: .88; }
+.mh-erhverv:hover { opacity: 1; text-decoration: underline; }
+@media (max-width: 760px) { .mh-erhverv { display: none; } }
 .emne-figur { margin: 22px 0 18px; }
 
 /* Kort over sagerne (kort.html) og linket til det på forsiden */
