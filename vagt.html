@@ -751,7 +751,8 @@
       knap.setAttribute("aria-label", paa ? "Sæt filmen på pause" : "Afspil filmen");
       knap.querySelector("svg").innerHTML = paa ? ikon.pause : ikon.spil;
     });
-    film.src = `assets/video/avisen${innerWidth <= 700 ? "-mobil" : ""}.mp4`;
+    // Den stående udgave, når feltet er højere end bredt (telefon og tablet på højkant), ellers bliver den brede film meget forstørret
+    film.src = `assets/video/avisen${film.parentElement.offsetHeight > film.parentElement.offsetWidth ? "-mobil" : ""}.mp4`;
     film.play().catch(() => {});
   })();
 
