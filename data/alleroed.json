@@ -255,6 +255,14 @@
    "dato": "2026-10-27",
    "punkter": 6,
    "parser": 3
+  },
+  "f540e825-1b15-40a5-82d8-c2fa11862ae3": {
+   "lastmod": "2026-11-02",
+   "type": "dagsorden",
+   "udvalg": "Miljø-, Erhvervs- og Byudvalget",
+   "dato": "2026-11-05",
+   "punkter": 2,
+   "parser": 3
   }
  },
  "sager": {
@@ -9016,6 +9024,37 @@
     }
    ],
    "bilag": []
+  },
+  "alleroed-2026-11-05-miljoe-erhvervs-og-byudvalget-1": {
+   "id": "alleroed-2026-11-05-miljoe-erhvervs-og-byudvalget-1",
+   "kommune": "Allerød",
+   "udvalg": "Miljø-, Erhvervs- og Byudvalget",
+   "dato": "2026-11-05",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=f540e825-1b15-40a5-82d8-c2fa11862ae3",
+   "hentet": "2026-11-02T22:52:43.221Z",
+   "titel": "Bemærkninger til dagsordenen",
+   "afsnit": [],
+   "bilag": []
+  },
+  "alleroed-2026-11-05-miljoe-erhvervs-og-byudvalget-2": {
+   "id": "alleroed-2026-11-05-miljoe-erhvervs-og-byudvalget-2",
+   "kommune": "Allerød",
+   "udvalg": "Miljø-, Erhvervs- og Byudvalget",
+   "dato": "2026-11-05",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=f540e825-1b15-40a5-82d8-c2fa11862ae3",
+   "hentet": "2026-11-02T22:52:43.221Z",
+   "titel": "Meddelelser",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Punkttype\nOrientering."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -9056,7 +9095,7 @@
    "tjekket": "2026-11-02"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=8dfd5dad-a558-4e08-921e-75670b364740": {
-   "senest": "2026-10-29",
+   "senest": "2026-11-02",
    "tjekket": "2026-11-02"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=29970e29-f121-4587-8d8b-94079d878847": {
@@ -9120,7 +9159,7 @@
    "tjekket": "2026-10-22"
   }
  },
- "opdateret": "2026-11-02T12:24:25.944Z",
+ "opdateret": "2026-11-02T22:52:43.222Z",
  "kommune": "Allerød",
  "parser": 3
 }
