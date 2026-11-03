@@ -2,188 +2,216 @@
  "om": "For og imod samt betydning i hverdagen, skrevet af Claude (AI) ud fra kommunens egen tekst. 'type' er dagsorden eller referat: teksten vises kun, når sagen stadig har samme type.",
  "sager": {
   "kk-2026-10-27-økonomiudvalget-17": {
-   "type": "dagsorden",
-   "hverdag": "Bor du i villa eller rækkehus i København, bliver din skraldespand til mad- og restaffald tømt hver anden uge hele året fra sommeren 2027, også i juni, juli og august. Til gengæld falder dit affaldsgebyr med ca. 218 kr. om året. Bor du i lejlighed, ændrer det ikke noget for dig.",
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Bor du i villa i København, bliver din mad- og restaffald fra sommeren 2027 tømt hver 14. dag hele året. Hidtil er der tømt hver uge i juni, juli og august. Det giver ca. 218 kr. mindre i affaldsgebyr om året for en villa, og bor du i etagebolig, er besparelsen meget lille. Økonomiudvalget skal kun give en erklæring om økonomien, inden Borgerrepræsentationen beslutter.",
    "berorer": [
     "Villaejere i København",
-    "Rækkehuse og enfamiliehuse"
+    "Husholdninger i etageboliger",
+    "Renovationsmedarbejdere hos ARC"
    ],
    "for": [
     {
-     "tekst": "Sparer kommunen ca. 8,5 mio. kr. om året og giver villaejere et lavere affaldsgebyr.",
+     "tekst": "Sparer ca. 8,5 mio. kr. om året og ca. 22.000 kørte km. For en villa svarer det til ca. 218 kr. årligt.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet"
+    },
+    {
+     "tekst": "Forsøgene i 2025 og 2026 gav ikke flere henvendelser end tidligere år, og ARC har ikke set problemer med arbejdsmiljøet.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Forsøgene i 2025 og 2026 gav ikke flere henvendelser om affald end i årene før.",
+     "tekst": "Giver ens tømning hele året, som i Frederiksberg, Dragør og Hvidovre. Ingen ejendomme var tilmeldt tilkøb af ugetømning i Frederiksberg i 2026.",
      "grundlag": "sagen",
-     "kilde": "Evalueringen af forsøgene"
+     "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Skraldemændenes arbejdsmiljø blev ikke dårligere under forsøgene.",
-     "grundlag": "sagen",
-     "kilde": "ARC"
+     "tekst": "Sender ikke skraldebilen dobbelt så ofte, hvis der ikke er behov for det.",
+     "grundlag": "partier",
+     "kilde": "Liberal Alliance (I)"
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Kan give lugtgener og tiltrække skadedyr, når affaldet ligger op til 14 dage i sommervarmen.",
+     "grundlag": "partier",
+     "kilde": "Det Konservative Folkeparti (C)"
     },
     {
-     "tekst": "Frederiksberg, Dragør og Hvidovre tømmer allerede hver 14. dag hele året.",
+     "tekst": "Mange af forsøgets henvendelser handlede om reelle problemer med lugt, skadedyr og uhygiejne, ikke kun frygt for dem.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Familier med meget affald, fx med små børn, kan have svært ved at nøjes med tømning hver 14. dag om sommeren.",
+     "grundlag": "debatten",
+     "kilde": "Fra debatten"
+    },
+    {
+     "tekst": "Gør det ikke muligt at betale for ekstra tømning før tidligst 2028, da der ikke er en takst og systemerne ikke kan det endnu.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    }
+   ]
+  },
+  "kk-2026-10-27-økonomiudvalget-13": {
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Bor du ved Dronningensgade (Christianshavn), Frejasgade eller Heimdalsgade (Nørrebro), Teglværksgade (Østerbro) eller Tullinsgade og Valdemarsgade (Vesterbro), kan din gade få plantekummer, bænke og mere ro på trafikken. Der nedlægges 46 p-pladser, som erstattes af lejede pladser 250-1500 m væk. Sagen frigiver 7,0 mio. kr., og den første bylivsgade ventes klar senest i 3. kvartal 2027 og resten frem mod vinteren 2027.",
+   "berorer": [
+    "Beboere i de seks gader",
+    "Bilister med parkering i områderne",
+    "Borgergrupper bag projektidéerne"
+   ],
+   "for": [
+    {
+     "tekst": "Giver grønnere gader med mødesteder, siddepladser og roligere trafik, som borgergrupperne selv har ønsket.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Har opbakning: alle seks borgergrupper er positive, og lokaludvalgene er positive eller har ingen bemærkninger.",
+     "grundlag": "sagen",
+     "kilde": "Høringssvar fra borgergrupper og lokaludvalg"
+    },
+    {
+     "tekst": "Fælder ingen træer, og nedlagte p-pladser erstattes af lejede pladser i private p-anlæg.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     }
    ],
    "imod": [
     {
-     "tekst": "Flere borgere oplevede lugt og skadedyr om sommeren under forsøget i 2026.",
-     "grundlag": "sagen",
-     "kilde": "Borgerhenvendelser"
-    },
-    {
-     "tekst": "Man kan ikke længere vælge ugentlig tømning om sommeren, heller ikke mod betaling, før en ny takst er lavet.",
-     "grundlag": "sagen",
-     "kilde": "Politisk handlerum"
-    },
-    {
-     "tekst": "Besparelsen er lille for den enkelte husstand i forhold til generne i varme perioder.",
-     "grundlag": "debatten",
-     "kilde": "Fra debatten"
-    }
-   ],
-   "lavet": "2026-10-22"
-  },
-  "kk-2026-10-27-økonomiudvalget-13": {
-   "type": "dagsorden",
-   "hverdag": "Seks gader får plantekummer, bænke og roligere trafik: Dronningensgade, Frejasgade, Heimdalsgade, Teglværksgade, Tullinsgade og Valdemarsgade. Bor du der, forsvinder 46 parkeringspladser i alt, men de erstattes af lejede pladser i p-anlæg 250 til 1.500 meter væk.",
-   "berorer": [
-    "Beboere i de seks gader",
-    "Bilister, der parkerer i gaderne",
-    "Christianshavn, Nørrebro, Østerbro og Vesterbro"
-   ],
-   "for": [
-    {
-     "tekst": "Giver mere grønt, flere steder at sidde og roligere trafik i gaderne.",
+     "tekst": "Nedlægger 46 p-pladser, og erstatningspladserne ligger op til 1500 m fra de nedlagte.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Idéerne kommer fra borgergrupper, og både de og lokaludvalgene er positive.",
+     "tekst": "Koster 0,7 mio. kr. om året i tabte parkeringsindtægter og 2,4 mio. kr. om året i drift fra 2028.",
      "grundlag": "sagen",
-     "kilde": "Høringen"
+     "kilde": "Økonomiafsnittet"
     },
     {
-     "tekst": "Pengene, 7 mio. kr., er allerede afsat i Budget 2025.",
+     "tekst": "Beboere og erhvervsdrivende bør høres direkte, fx via e-Boks, og nedlagte pladser bør erstattes 1 til 1 permanent.",
+     "grundlag": "partier",
+     "kilde": "Det Konservative Folkeparti (C)"
+    },
+    {
+     "tekst": "Plantekummer og bænke er for standardiserede og midlertidige; der bør satses mere på permanent begrønning, der passer til hver gade.",
+     "grundlag": "partier",
+     "kilde": "Radikale Venstre (B)"
+    }
+   ]
+  },
+  "kk-2026-10-27-økonomiudvalget-14": {
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Cykler eller går du ved Lille Langebros landing på Christianshavn, bliver krydsningen mere overskuelig med nye midterheller og en flyttet cykelsti-tilslutning. På Langebrogade bliver der cykelgade, og 11 p-pladser nedlægges, så der ikke er erstatning i gadeplan. Anlægsstart er 2. kvartal 2027, og det er planlagt at tage det i brug 4. kvartal 2027; 3,6 mio. kr. frigives. Økonomiudvalget skulle kun godkende en erklæring om økonomi og sendte sagen videre til Borgerrepræsentationen.",
+   "berorer": [
+    "Cyklister og gående ved Lille Langebro",
+    "Beboere på Langebrogade, Christianshavn",
+    "Bilister, der parkerer på Langebrogade"
+   ],
+   "for": [
+    {
+     "tekst": "Giver mere trafiksikre og trygge forhold for cyklister og gående ved brolandingen, bl.a. med afmærkning og midterheller, uden at bilisters fremkommelighed ændres.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Har opbakning fra Christianshavns og Amager Vest Lokaludvalg, som begge er positive over for løsningen.",
+     "grundlag": "sagen",
+     "kilde": "Høringssvar fra lokaludvalgene"
+    },
+    {
+     "tekst": "Ser sagen som første skridt mod en cykelgade på hele Langebrogade og en sammenhængende forbindelse mod Amager Boulevard.",
+     "grundlag": "partier",
+     "kilde": "Radikale Venstre (B)"
+    },
+    {
+     "tekst": "Er finansieret af Budget 2025, og udgifterne skal holdes inden for udvalgets eksisterende anlægsmåltal og budgetramme.",
      "grundlag": "sagen",
      "kilde": "Økonomiafsnittet"
     }
    ],
    "imod": [
     {
-     "tekst": "46 parkeringspladser forsvinder fra gaderne, og erstatningspladserne kan ligge op til 1,5 km væk.",
+     "tekst": "Nedlægger alle 11 p-pladser på strækningen uden erstatningsparkering i gadeplan.",
      "grundlag": "sagen",
      "kilde": "Parkeringsafsnittet"
     },
     {
-     "tekst": "Rammen for nedlagte p-pladser skal udvides fra 70 til 80 for at få plads til alle seks projekter.",
-     "grundlag": "sagen",
-     "kilde": "Parkeringsafsnittet"
+     "tekst": "Giver ikke cyklisterne så god fremkommelighed som det alternative forslag, som prioriterer den mest trafikerede retning mellem Islands Brygge og Lille Langebro.",
+     "grundlag": "partier",
+     "kilde": "Radikale Venstre (B)"
     },
     {
-     "tekst": "Erstatningspladserne er kun lejet til og med 2028.",
-     "grundlag": "sagen",
-     "kilde": "Parkeringsafsnittet"
-    }
-   ],
-   "lavet": "2026-10-22"
-  },
-  "kk-2026-10-27-økonomiudvalget-14": {
-   "type": "dagsorden",
-   "hverdag": "Cykler du over Lille Langebro, bliver det mere overskueligt at komme til og fra broen ved Langebrogade, og Langebrogade bliver cykelgade med bedre lys. Parkerer du på den korte strækning af Langebrogade, forsvinder 11 pladser, og der kommer ingen erstatning i gaden.",
-   "berorer": [
-    "Cyklister og gående over Lille Langebro",
-    "Beboere på Langebrogade"
-   ],
-   "for": [
-    {
-     "tekst": "Gør det tryggere for cyklister og gående ved brolandingen, hvor mange retninger krydser hinanden i dag.",
+     "tekst": "Fjerner overkørslen til Kalvebod Bastion over for brolandingen, så adgangen flyttes 60 meter ned ad gaden.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Der kører langt flere cykler end biler på Langebrogade, så den egner sig til cykelgade.",
-     "grundlag": "sagen",
-     "kilde": "Forvaltningen"
-    },
-    {
-     "tekst": "Lokaludvalgene på Christianshavn og i Amager Vest støtter løsningen.",
-     "grundlag": "sagen",
-     "kilde": "Høringssvar"
-    },
-    {
-     "tekst": "Ændrer ikke noget for bilisternes fremkommelighed.",
+     "tekst": "Afhænger af dispensation fra fortidsmindebeskyttelseslinjen, som først forventes afgjort ultimo 2026.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     }
-   ],
-   "imod": [
-    {
-     "tekst": "Alle 11 parkeringspladser på strækningen nedlægges uden erstatning i gadeplan.",
-     "grundlag": "sagen",
-     "kilde": "Parkeringsafsnittet"
-    },
-    {
-     "tekst": "Lokaludvalgene frygter stadig kaos med cyklister til og fra Cirkelbroen, og det løses ikke i projektet.",
-     "grundlag": "sagen",
-     "kilde": "Høringssvar"
-    },
-    {
-     "tekst": "Projektet afventer dispensation for den fredede Kalvebod Bastion.",
-     "grundlag": "sagen",
-     "kilde": "Forvaltningen"
-    }
-   ],
-   "lavet": "2026-10-22"
+   ]
   },
   "kk-2026-10-27-økonomiudvalget-16": {
-   "type": "dagsorden",
-   "hverdag": "Toldbodgade ved Amalienborg bliver ikke ensrettet alligevel, fordi politiet sagde nej. I stedet får gaden cykelstier i begge retninger nord for Sankt Annæ Plads, og al parkering på den strækning forsvinder. Hop on-Hop off-busserne kan stadig køre i gaden, men får ikke et stop der. Buslinje 26 kører som i dag.",
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Bor eller kører du på Toldbodgade, får du cykelstier i begge retninger nord for Sankt Annæ Plads, og gaden bliver ved med at have trafik begge veje. Til gengæld nedlægges 96 p-pladser i gaden, men ni pladser syd for Sankt Annæ Plads bevares. Arbejdet starter i andet halvår af 2027, og gaden forventes klar i januar 2029. Selve sagen i Økonomiudvalget er en formel erklæring om, at udgifterne skal holdes inden for Klima-, Miljø- og Teknikudvalgets rammer.",
    "berorer": [
-    "Beboere og bilister i Frederiksstaden",
-    "Cyklister langs havnen",
-    "Turistbusser"
+    "Beboere i Toldbodgade",
+    "Cyklister og gående i Toldbodgade",
+    "Turistbusser og busselskaber",
+    "Brugere af buslinje 26"
    ],
    "for": [
     {
-     "tekst": "Gaden opleves i dag som utryg for cyklister og gående på grund af parkerede biler, turistbusser og manglende cykelstier.",
+     "tekst": "Giver cykelstier i begge retninger og mere entydige trafikforhold, så gaden bliver tryggere for gående, cyklister, biler og turistbusser.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Buslinje 26 kan blive på sin rute, fordi gaden bevarer trafik i begge retninger.",
+     "tekst": "Fastholder dobbeltrettet trafik, så buslinje 26 ikke skal omlægges, som ensretning ellers ville kræve.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Indre By Lokaludvalg ser løsningen som en forbedring af det oprindelige projekt.",
+     "tekst": "Indre By Lokaludvalg ser den reviderede løsning som en forbedring i forhold til det oprindeligt vedtagne projekt.",
      "grundlag": "sagen",
-     "kilde": "Høringssvar"
+     "kilde": "Høringssvar fra Indre By Lokaludvalg"
+    },
+    {
+     "tekst": "Øger trygheden for fodgængere, cyklister og turister, og det er muligt at finde erstatningsparkering.",
+     "grundlag": "partier",
+     "kilde": "Socialdemokratiet (A)"
     }
    ],
    "imod": [
     {
-     "tekst": "Al parkering nord for Sankt Annæ Plads nedlægges, og de fleste høringssvar ønsker parkeringen bevaret.",
+     "tekst": "Nedlægger 96 p-pladser, herunder handicap-, ambassade- og taxipladser. Hovedparten af høringssvarene ønsker at bevare parkering.",
      "grundlag": "sagen",
-     "kilde": "Høringssvar fra borgere"
+     "kilde": "Høringssvar og forvaltningen"
     },
     {
-     "tekst": "Det brede fortov langs Amaliehaven bliver smallere for at give plads til cykelstien.",
-     "grundlag": "sagen",
-     "kilde": "Forvaltningen"
+     "tekst": "Gør hverdagen mere besværlig for familier i Toldbodgade og skaber øget trængsel og trafikkaos i hele Frederiksstaden.",
+     "grundlag": "partier",
+     "kilde": "Det Konservative Folkeparti (C)"
     },
     {
-     "tekst": "Lokaludvalget savner en samlet plan for turistbusserne i området, og der kommer intet nyt stoppested.",
+     "tekst": "Giver intet stoppested for Hop on-Hop off-busser i Toldbodgade, og turistbusserne får ikke løst deres udfordringer.",
      "grundlag": "sagen",
-     "kilde": "Høringssvar"
+     "kilde": "Høringssvar fra Dansk Erhverv og Dansk Persontransport"
+    },
+    {
+     "tekst": "Kritik af sagsbehandlingen og manglende dokumentation af data og analyser i høringssvarene.",
+     "grundlag": "sagen",
+     "kilde": "Høringssvar fra borgere og foreninger"
     }
-   ],
-   "lavet": "2026-10-22"
+   ]
   },
   "kk-2026-10-27-økonomiudvalget-24": {
    "type": "dagsorden",
@@ -1614,51 +1642,41 @@
    ]
   },
   "kk-2026-10-27-økonomiudvalget-4": {
-   "type": "dagsorden",
-   "lavet": "2026-10-27",
-   "hverdag": "Sagen flytter penge mellem budgetposter i Københavns Kommune, og de fleste ændringer er tekniske. Du mærker mest, at der frigives 9,9 mio. kr. til toiletrenovering på Husum Skole, Højdevangens Skole og Vesterbro Ny Skole. Kommunen bruger også 534,9 mio. kr. i 2026 på fordrevne fra Ukraine, mens kassen samlet øges med 329,4 mio. kr.",
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Sagen flytter penge rundt i Københavns budget og er mest teknisk. Du mærker det kun, hvis du har børn på Husum Skole, Højdevangens Skole eller Vesterbro Ny Skole: der frigives 9,9 mio. kr. til at renovere skolernes toiletter. Derudover sættes 534,9 mio. kr. af til udgifter til indkvartering mv. af fordrevne fra Ukraine i 2026.",
    "berorer": [
-    "Elever og ansatte på Husum Skole, Højdevangens Skole og Vesterbro Ny Skole",
+    "Elever og forældre på Husum Skole, Højdevangens Skole og Vesterbro Ny Skole",
     "Fordrevne fra Ukraine i København",
     "Bilister med beboerlicens eller betalingsparkering"
    ],
    "for": [
     {
-     "tekst": "Giver nye toiletter på tre skoler, fordi der frigives 9,9 mio. kr. til renovering.",
+     "tekst": "Frigiver 9,9 mio. kr. til toiletrenovering på tre skoler, fordi projekterne er tilstrækkeligt belyst og af mindre omfang.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Gør budgettet i overensstemmelse med det faktiske forbrug, så pengene står de rigtige steder.",
+     "tekst": "Sikrer, at budgettet passer til det faktiske forbrug, fx ved at flytte driften af pædagogisk it fra Børne- og Ungdomsforvaltningen til Økonomiforvaltningen.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Frigiver 32,4 mio. kr. til kassen, fordi Ukraine-udgifterne forventes lavere end de 567,3 mio. kr., der var reserveret.",
+     "tekst": "Ukraine-udgifterne ventes at blive 32,4 mio. kr. lavere end de 567,3 mio. kr., der var sat af i kassen, så der frigives penge.",
      "grundlag": "sagen",
-     "kilde": "Økonomiafsnittet"
-    },
-    {
-     "tekst": "Øger den reelle kasse med 329,4 mio. kr., hvilket giver rum til senere prioriteringer.",
-     "grundlag": "sagen",
-     "kilde": "Økonomiafsnittet"
+     "kilde": "Forvaltningen"
     }
    ],
    "imod": [
     {
-     "tekst": "Parkeringsindtægterne er lavere end budgetteret og trækker 42,0 mio. kr. fra servicemåltallet i 2026.",
+     "tekst": "Parkeringsindtægterne er 42,0 mio. kr. lavere i 2026, fordi der er færre indtægter fra betalingstimer og beboerlicenser, og det trækker på servicemåltallet.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Ukraine-udgifterne på 534,9 mio. kr. lægger beslag på store beløb, som ikke kan bruges andre steder.",
+     "tekst": "Beskæftigelsesområdet har merudgifter på overførsler på 36,7 mio. kr., som kræver, at budgettet opjusteres.",
      "grundlag": "sagen",
-     "kilde": "Økonomiafsnittet"
-    },
-    {
-     "tekst": "Mange omplaceringer er samlet i én sag, så det kan være svært for borgere at gennemskue enkeltposterne.",
-     "grundlag": "debatten",
-     "kilde": "Fra debatten"
+     "kilde": "Forvaltningen"
     }
    ]
   },
@@ -1746,50 +1764,49 @@
    ]
   },
   "kk-2026-10-27-økonomiudvalget-12": {
-   "type": "dagsorden",
-   "lavet": "2026-10-27",
-   "hverdag": "Bor du i Husum Nord i Brønshøj-Husum, skal der bruges 54,4 mio. kr. frem til 2031 på bl.a. tryggere krydsninger og stier, nye mødesteder som Arildsgårdparken, kunst og kultur samt grønne projekter. Selve sagen i Økonomiudvalget er en formel erklæring om, at pengene holdes inden for Klima-, Miljø- og Teknikudvalgets rammer. Der afsættes også 0,4 mio. kr. om året til drift af de nye anlæg.",
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Økonomiudvalget har kun godkendt en erklæring om, at pengene skal holdes inden for Klima-, Miljø- og Teknikudvalgets rammer, og sendt sagen videre til Borgerrepræsentationen. Selve planen betyder, at der frem mod 2031 bruges 54,4 mio. kr. i Husum Nord på bl.a. trygge krydsninger, mødesteder som Arildsgårdparken, kunst og kultur og grønne projekter. Bor du i kvarteret, kan du på sigt mærke ændringer ved Frederikssundsvej, Husum Station og Bystævnet.",
    "berorer": [
     "Beboere i Husum Nord",
-    "Beboere i de almene boligafdelinger",
-    "Fodgængere og cyklister ved Frederikssundsvej og Husum Station",
-    "Lokale foreninger og aktører"
+    "Beboere i de almene boligafdelinger (FSB og AAB)",
+    "Gående og cyklister ved Frederikssundsvej og Husum Station"
    ],
    "for": [
     {
-     "tekst": "Kan gøre kvarteret mere trygt og sammenhængende med bedre krydsninger, stier og forbindelser, hvor kun 71 % føler sig trygge mod 88 % i København.",
+     "tekst": "Giver tryggere krydsninger og stier, der gør det lettere at komme til og fra kvarteret, som i dag er præget af fysiske barrierer.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Bygger på tæt dialog med beboere og lokale aktører og følger op på forandringsplanen og de store renoveringer i området.",
+     "tekst": "Svarer på lav tryghed: 71 % i området føler sig trygge mod 88 % i København som helhed.",
+     "grundlag": "sagen",
+     "kilde": "Tryghedsundersøgelsen 2025 i sagen"
+    },
+    {
+     "tekst": "Bygger på dialog med borgere og aktører og følger op på renoveringer og udvikling af Bystævneparken i området.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Kan trække yderligere penge til, fordi en del af projekterne kan få medfinansiering, og udvalget løbende følger med i en midtvejsstatus i 2028.",
+     "tekst": "Planen kan tilpasses undervejs og kan tiltrække ekstra finansiering til projekter.",
      "grundlag": "sagen",
-     "kilde": "Økonomiafsnittet"
-    },
-    {
-     "tekst": "Støttes af Liberal Alliance, som stemmer for indstillingen.",
-     "grundlag": "partier",
-     "kilde": "Liberal Alliance (I)"
+     "kilde": "Forvaltningen"
     }
    ],
    "imod": [
     {
-     "tekst": "Bruger for mange penge på kultur og kunst frem for konkrete fysiske forbedringer som forbindelser, byrum og belysning.",
+     "tekst": "Bruger for lidt på konkrete fysiske forbedringer som forbindelser, byrum og belysning og for meget på kultur og kunst.",
      "grundlag": "partier",
      "kilde": "Liberal Alliance (I)"
     },
     {
-     "tekst": "Giver løbende udgifter på 0,4 mio. kr. om året til drift af de nye anlæg.",
+     "tekst": "Koster 0,4 mio. kr. om året i afledt drift, som skal findes i kommunens budget.",
      "grundlag": "sagen",
      "kilde": "Økonomiafsnittet"
     },
     {
-     "tekst": "Indsatserne kan ændre sig undervejs, så det er uvist præcis, hvad de 54,4 mio. kr. ender med at give.",
+     "tekst": "Indsatserne kan ændre sig undervejs, så det er uvist, præcis hvad pengene ender med at give.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     }
@@ -1850,55 +1867,55 @@
    ]
   },
   "kk-2026-10-27-økonomiudvalget-11": {
-   "type": "dagsorden",
-   "lavet": "2026-10-27",
-   "hverdag": "Sagen sender et forslag om nybyggeri ved København Syd station i otte ugers offentlig høring, så der er ikke noget, du mærker endnu. Bliver planen vedtaget, kan der komme op til 43.715 m2 nyt byggeri med boliger, hotel og kontorer, et højhus på ca. 99 m (op til 106 m med teknik) og ca. 2.000 cykelparkeringspladser. Bor du tæt på, kan du sige din mening i høringen og på et borgermøde; endelig vedtagelse forventes i 2. kvartal 2027.",
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Forslaget sendes i otte ugers offentlig høring, så du kan give din mening til kende. Det åbner for nybyggeri ved København Syd med boliger (25 % almene), hotel og kontorer, et højhus på ca. 99 m (op til 106 m med teknik), cykelrute og 80 % færre p-pladser end normen. Bor du i Valby, kan du møde op til borgermødet under høringen; endelig vedtagelse ventes i 2. kvartal 2027.",
    "berorer": [
-    "Naboer til København Syd i Valby",
-    "Brugere af København Syd station",
+    "Naboer og beboere i Valby",
+    "Pendlere og cyklister ved København Syd",
     "Elever og ansatte på Sukkertoppen Gymnasium",
-    "Boligsøgende, herunder unge og dem der søger almen bolig"
+    "Boligsøgende, især unge og almene"
    ],
    "for": [
     {
-     "tekst": "Giver mindst 25 % almene boliger, ca. 4.600 m2, herunder familieboliger og ungdomsboliger, fordi skoledistriktet har under 30 % almene familieboliger.",
+     "tekst": "Giver ca. 4.600 m2 almene boliger, herunder familieboliger, små boliger til boligsocial anvisning og ungdomsboliger.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Bidrager med 146 mio. kr. til Cityringens metrostation; en mindre plan kan give et hul i Metroselskabets budget.",
+     "tekst": "Fortætter tæt på et af hovedstadens vigtigste trafikknudepunkter og bidrager med 146 mio. kr. til metrostationen, som loven kræver.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Giver mange nye boliger og arbejdspladser tæt på et af hovedstadens vigtigste trafikknudepunkter, og højt byggeri er derfor oplagt.",
+     "tekst": "Sikrer ca. 2.000 cykelparkeringspladser, en grøn cykelrute og mindst 122 nye træer.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Gør det oplagt at bygge både tæt og højt, fordi området ligger ved et vigtigt knudepunkt for kollektiv trafik.",
      "grundlag": "partier",
      "kilde": "Liberal Alliance (I)"
-    },
-    {
-     "tekst": "Giver ca. 2.000 nye cykelpladser og en grøn cykelrute, og nye fælles opholdsarealer til beboere og gymnasiet hvor der i dag er parkering.",
-     "grundlag": "sagen",
-     "kilde": "Forvaltningen"
     }
    ],
    "imod": [
     {
-     "tekst": "Giver meget tæt og højt byggeri på et lille område, så det kan være svært at skabe gode udearealer til boliger.",
+     "tekst": "Er et meget tæt og højt byggeri på et lille område, hvor det kan være svært at skabe gode udearealer.",
      "grundlag": "sagen",
      "kilde": "Høringssvar fra lokaludvalgene"
     },
     {
-     "tekst": "Giver en lav biofaktor på 0,18 og kun ca. 8,1 % kronedække efter 15 år, fordi meget af området er belagt.",
+     "tekst": "Giver kun en biofaktor på 0,18 og ca. 8,1 % kronedække efter 15 år, fordi meget af arealet er belagt.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Skaber risiko for støj for nye boliger i et støjplaget område, så der kræves tilstrækkelig støjdæmpning.",
+     "tekst": "Indebærer en dyr og klimabelastende parkeringskælder ved et vigtigt trafikknudepunkt.",
      "grundlag": "partier",
-     "kilde": "Det Konservative Folkeparti (C)"
+     "kilde": "Alternativet (Å)"
     },
     {
-     "tekst": "Reducerer parkeringskravet med ca. 80 %, hvilket de konservative mener er for lidt parkering; de vil have 1 plads pr. 150 m2 bolig.",
+     "tekst": "Placerer boliger i et støjplaget område, så der kræves tilstrækkelig støjdæmpning.",
      "grundlag": "partier",
      "kilde": "Det Konservative Folkeparti (C)"
     }
@@ -3043,44 +3060,39 @@
    ]
   },
   "morsoe-2026-11-03-kommunalbestyrelsen-5": {
-   "type": "dagsorden",
-   "lavet": "2026-10-29",
-   "hverdag": "Bor du ved Akacievej 5-41 i Nykøbing, afgør sagen, om kommunen eller I selv skal løse kloakproblemerne på de blinde sideveje. Bliver vejene offentlige, bruges de afsatte 350.000 kr. på nye faskiner og asfalt, og driften koster kommunen ca. 25.000 kr. om året. Teknik og Miljø og Økonomiudvalget har indstillet, at vejene registreres som offentlige.",
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Bor du ved Akacievej 5-41 i Nykøbing, er de blinde sideveje nu besluttet registreret som offentlige veje. Så er det kommunen og ikke grundejerforeningen, der skal løse kloakproblemerne. Kommunen bruger 350.000 kr. på nye faskiner og asfalt og skal have ca. 25.000 kr. ekstra om året i drift.",
    "berorer": [
     "Grundejere ved Akacievej 5-41 i Nykøbing",
     "Akacievejs Grundejerforening",
-    "Andre med lignende private fællesveje i Morsø"
+    "Morsø Kommunes driftsbudget"
    ],
    "for": [
     {
-     "tekst": "Giver grundejerne medhold: vejene er i en årrække administreret som offentlige, og ejendomsoplysningsskemaerne vurderes udfyldt korrekt.",
+     "tekst": "Giver grundejerne medhold: Vejene har gennem en årrække været administreret som offentlige, og ejendomsoplysningsskemaerne vurderes udfyldt korrekt.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Har støtte fra ekstern juridisk rådgiver, som vurderer, at de nye oplysninger kan begrunde en ændret vurdering af vejenes status.",
+     "tekst": "Har støtte i en ekstern juridisk rådgiver, som vurderer, at de nye oplysninger kan begrunde en ændret vurdering af vejenes status.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Løser kloakproblemerne ved at lade kommunen tage ansvaret og bruge de afsatte 350.000 kr. på faskiner og asfalt.",
-     "grundlag": "sagen",
-     "kilde": "Økonomiafsnittet"
-    },
-    {
-     "tekst": "Undgår en tvist om, hvorvidt kommunen har givet forkerte oplysninger ved boligkøb, og om erstatning til de enkelte grundejere.",
+     "tekst": "Undgår en strid om erstatning, fordi grundejerne ellers kunne hævde, at kommunen gav forkerte oplysninger ved køb og salg.",
      "grundlag": "sagen",
      "kilde": "Økonomiafsnittet"
     }
    ],
    "imod": [
     {
-     "tekst": "Mangler dokumentation for en beslutning om at optage vejene som offentlige efter vejlovens § 15, og vejene er ikke udskilt i matriklen.",
+     "tekst": "Mangler skriftlig dokumentation for, at kommunen har besluttet at optage vejene som offentlige, jf. vejlovens § 15.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Vejene er godkendt som private fællesveje i udstykningssagen fra 1975 og ejes af grundejerforeningen ifølge den tinglyste deklaration.",
+     "tekst": "Går imod tidligere afslag: Vejene er udlagt som private fællesveje, ejes af grundejerforeningen og er ikke udskilt i matriklen.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
     },
@@ -3090,7 +3102,7 @@
      "kilde": "Forvaltningen"
     },
     {
-     "tekst": "Koster kommunen ca. 25.000 kr. ekstra om året i drift.",
+     "tekst": "Koster 25.000 kr. ekstra om året i drift, som skal findes på budgettet.",
      "grundlag": "sagen",
      "kilde": "Økonomiafsnittet"
     }
@@ -6894,6 +6906,104 @@
      "tekst": "Øger rammen fra 400 til 600 mio. kr. og forlænger løbetiden fra et til fem år, så den samlede risiko vokser.",
      "grundlag": "sagen",
      "kilde": "Forvaltningen"
+    }
+   ]
+  },
+  "kk-2026-10-27-økonomiudvalget-25": {
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Cykler du på Nørrebroruten, hvor den krydser Hillerødgade, bliver krydsningen bygget om med nye heller, så du kan krydse i etaper. Cykelsti og fortov på Hillerødgade bliver smallere, så du skal sætte farten lidt ned. Anlægget forventes taget i brug i 2027 og koster 2,4 mio. kr., hvoraf staten betaler 1,3 mio. kr.",
+   "berorer": [
+    "Cyklister på Nørrebroruten og Hillerødgade",
+    "Fodgængere ved Hillerødgade og Nørrebroparken",
+    "Bilister på Hillerødgade"
+   ],
+   "for": [
+    {
+     "tekst": "Giver cyklister bedre venteplads og tydeligere vigepligt, så de kan krydse Hillerødgade i etaper med bedre flow.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Øger trafiksikkerheden, fordi den smallere cykelsti får cyklisterne til at sænke farten i krydsningen.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Rammer ikke bilisters fremkommelighed og ændrer ikke antallet af træer eller parkeringspladser.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Har opbakning fra Nørrebro Lokaludvalg, som kalder løsningen den bedst mulige.",
+     "grundlag": "sagen",
+     "kilde": "Høringssvar fra Nørrebro Lokaludvalg"
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Forringer fremkommeligheden en smule for cyklister på Hillerødgade, fordi cykelstien indsnævres.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Løser ikke alle problemer i myldretiden ifølge lokaludvalget, som ønskede torontoanlæg med advarselslys.",
+     "grundlag": "sagen",
+     "kilde": "Høringssvar fra Nørrebro Lokaludvalg"
+    },
+    {
+     "tekst": "Er ikke en signalreguleret krydsning, som et mindretal i lokaludvalget foretrak.",
+     "grundlag": "sagen",
+     "kilde": "Mindretalsudtalelse i lokaludvalget"
+    },
+    {
+     "tekst": "Går lidt ind i det fredede område ved Nørrebroparken og kræver hensyn til fredede træer og flagermus.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    }
+   ]
+  },
+  "kk-2026-10-27-økonomiudvalget-27": {
+   "type": "referat",
+   "lavet": "2026-11-03",
+   "hverdag": "Skybrudsprojektet i Lersøparken bliver 14,8 mio. kr. dyrere (ca. 13 %), og regningen lægges på spildevandstaksterne, så du som borger i København betaler via din spildevandsregning. Bor du syd eller øst for Bispebjerg Bakke, skal projektet mindske risikoen for oversvømmelser. Anlægsarbejdet forventes at starte i december 2026.",
+   "berorer": [
+    "Beboere syd og øst for Bispebjerg Bakke",
+    "Brugere af Lersøparken",
+    "Københavnere, der betaler spildevandstakst"
+   ],
+   "for": [
+    {
+     "tekst": "Gør det muligt at gennemføre projektet, som skal forebygge oversvømmelser og håndtere ca. 16.500 m3 regnvand. Uden forhøjelsen kan det ikke realiseres på de nuværende vilkår.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Undgår, at kommunens skattekroner skal dække de allerede brugte midler, hvis entreprisen ikke startes inden 2027, og at udbuddet skal gentages.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Genskaber den oprindelige Lersø og styrker biodiversiteten, så parken bliver mere attraktiv for borgerne.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Giver en takststigning for borgerne, fordi forhøjelsen betales via spildevandstaksterne.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Viser, at tidlige beregninger fra 2016 var for lave. Ca. 76 % af stigningen skyldes uforudsete forhold som forurenet jord og en ukendt ledning.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen"
+    },
+    {
+     "tekst": "Kommunen mellemfinansierer udgiften via byggekredit i op til 25 år, før HOFOR har betalt den tilbage.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet"
     }
    ]
   }
