@@ -99,6 +99,15 @@ jobs:
         env:
           DAGE: "120"
 
+      # Kommuner med dagsordenerne på egen hjemmeside (avis/hent-kommunesider.mjs: Frederikssund, Hedensted, Aalborg,
+      # Ringkøbing-Skjern og Norddjurs). Norddjurs' punkter er PDF'er, så pdftotext skal være installeret (trinnet ovenfor).
+      - name: Hent nye sager fra andre kommuner (egne hjemmesider)
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
+        continue-on-error: true
+        run: node avis/hent-kommunesider.mjs
+        env:
+          DAGE: "120"
+
       - name: Kvalitet pr. kommune
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
         continue-on-error: true

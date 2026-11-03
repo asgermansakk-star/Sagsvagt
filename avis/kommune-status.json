@@ -6,8 +6,9 @@
   "tjekket": "2026-10-22"
  },
  "aalborg": {
-  "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "system": "kommuneside",
+  "base": "https://apps.aalborgkommune.dk",
+  "tjekket": "2026-11-04"
  },
  "aarhus": {
   "system": "firstagenda",
@@ -34,8 +35,10 @@
   "tjekket": "2026-10-22"
  },
  "billund": {
-  "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "system": "meetingsplus",
+  "base": "https://billund.meetingsplus.dk",
+  "blokeret": "robots.txt forbyder alle robotter (Disallow: /)",
+  "tjekket": "2026-11-04"
  },
  "bornholm": {
   "system": "firstagenda",
@@ -92,8 +95,9 @@
   "tjekket": "2026-10-22"
  },
  "frederikssund": {
-  "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "system": "kommuneside",
+  "base": "https://www.frederikssund.dk",
+  "tjekket": "2026-11-04"
  },
  "furesoe": {
   "system": "firstagenda",
@@ -131,8 +135,9 @@
   "tjekket": "2026-10-22"
  },
  "hedensted": {
-  "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "system": "kommuneside",
+  "base": "https://www.hedensted.dk",
+  "tjekket": "2026-11-04"
  },
  "helsingoer": {
   "system": "firstagenda",
@@ -178,7 +183,8 @@
  },
  "ishoej": {
   "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "blokeret": "ishoj.dk er bag Cloudflares robotbeskyttelse",
+  "tjekket": "2026-11-04"
  },
  "jammerbugt": {
   "system": "firstagenda",
@@ -265,8 +271,9 @@
   "tjekket": "2026-10-22"
  },
  "norddjurs": {
-  "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "system": "kommuneside",
+  "base": "https://norddjurs.meetingsplus.dk",
+  "tjekket": "2026-11-04"
  },
  "nordfyn": {
   "system": "firstagenda",
@@ -305,8 +312,9 @@
   "tjekket": "2026-10-22"
  },
  "ringkoebing-skjern": {
-  "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "system": "kommuneside",
+  "base": "https://www.rksk.dk",
+  "tjekket": "2026-11-04"
  },
  "ringsted": {
   "system": "firstagenda",

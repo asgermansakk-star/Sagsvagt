@@ -68,7 +68,8 @@ await Promise.all(Array.from({ length: 12 }, async () => {
       fundet++;
       console.log(`  ✓ ${k.navn}: ${r.base} (${r.udvalg} udvalg)`);
     } else {
-      status[k.slug] = { system: "ukendt", tjekket: idag };
+      // Det, vi ved i forvejen (fx Billunds MeetingsPlus, som robots.txt lukker for robotter), bevares
+      status[k.slug] = { system: "ukendt", ...status[k.slug], tjekket: idag };
       console.log(`  – ${k.navn}: ingen FirstAgenda-portal fundet`);
     }
   }
