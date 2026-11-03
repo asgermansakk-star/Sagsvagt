@@ -1291,6 +1291,54 @@
    "dato": "2026-11-04",
    "punkter": 10,
    "parser": 3
+  },
+  "9a7854bd-5ea9-4c7d-b046-0001dd3d0102": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Ungdomsrådet",
+   "dato": "2026-11-02",
+   "punkter": 8,
+   "parser": 3
+  },
+  "8f6739fa-ebcc-460e-b4f8-b75f3d503144": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Kultur-, Handel- og Turismeudvalget",
+   "dato": "2026-11-03",
+   "punkter": 15,
+   "parser": 3
+  },
+  "0b2f817a-5628-4dab-b5b8-4c9cd8953912": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Integrationsråd",
+   "dato": "2026-10-29",
+   "punkter": 5,
+   "parser": 3
+  },
+  "fe94b9a1-7fd6-42e5-b223-c5ae270c84fb": {
+   "lastmod": "2026-11-03",
+   "type": "dagsorden",
+   "udvalg": "Idræt- og Fritidsudvalget",
+   "dato": "2026-11-04",
+   "punkter": 14,
+   "parser": 3
+  },
+  "eb1eb1b0-0a40-41fc-acbc-c8d245fd9518": {
+   "lastmod": "2026-11-03",
+   "type": "dagsorden",
+   "udvalg": "Byudvikling-, Landdistrikter- og Infrastrukturudvalget",
+   "dato": "2026-11-03",
+   "punkter": 6,
+   "parser": 3
+  },
+  "7dd8fbee-0bec-414f-9212-887c78cee4b5": {
+   "lastmod": "2026-11-03",
+   "type": "dagsorden",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "punkter": 9,
+   "parser": 3
   }
  },
  "sager": {
@@ -6466,15 +6514,19 @@
    "kommune": "Sønderborg",
    "udvalg": "Integrationsråd",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=c1884384-5609-47f8-8ae8-c1287dbbd89a",
-   "hentet": "2026-10-23T19:47:22.286Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=0b2f817a-5628-4dab-b5b8-4c9cd8953912",
+   "hentet": "2026-11-03T14:56:16.168Z",
    "titel": "1. Godkendelse af dagsorden 29. oktober 2026",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller til Integrationsrådet at godkende\ndagsorden."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -6484,10 +6536,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Integrationsråd",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=c1884384-5609-47f8-8ae8-c1287dbbd89a",
-   "hentet": "2026-10-23T19:47:22.286Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=0b2f817a-5628-4dab-b5b8-4c9cd8953912",
+   "hentet": "2026-11-03T14:56:16.168Z",
    "titel": "2. Besøg af formanden for Erhverv- og Arbejdsmarkedsudvalget",
    "afsnit": [
     {
@@ -6497,6 +6549,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller til Integrationsrådet at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -6506,10 +6562,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Integrationsråd",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=c1884384-5609-47f8-8ae8-c1287dbbd89a",
-   "hentet": "2026-10-23T19:47:22.286Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=0b2f817a-5628-4dab-b5b8-4c9cd8953912",
+   "hentet": "2026-11-03T14:56:16.168Z",
    "titel": "5. Drøftelse af initiativer til at styrke Integrationsrådets synlighed",
    "afsnit": [
     {
@@ -6523,6 +6579,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Integrationsrådet drøftede på mødet den 27. august 2026, hvordan rådets synlighed kan styrkes. Punktet blev\noptaget på dagsordenen efter anmodning fra rådsmedlem Andreea Elena Tibuleac, der repræsenterer\ndaginstitutionsbestyrelserne i Sønderborg Kommune.\n\nPå mødet drøftede rådet forskellige muligheder og besluttede at genoptage sagen på mødet i oktober 2026.\n\nFormålet med drøftelsen er at skabe større opmærksomhed om Integrationsrådets arbejde samt styrke rådets\nmuligheder for at indsamle viden, perspektiver og erfaringer om integration i Sønderborg Kommune.\n\nSom oplæg til drøftelsen kan følgende initiativer indgå:\nIndsamling af integrationsperspektiver fra rådets netværk og fagområder med henblik på at identificere\naktuelle udfordringer og udviklingstendenser.\nDialog med Frivillighedens Hus om integration og civilsamfundets rolle i integrationsindsatsen.\nStyrket borgerdialog gennem Integrationsrådets fælles postkasse og eventuelle\nspørgeskemaundersøgelser blandt borgere.\nUdarbejdelse af årlige anbefalinger til Byrådet om integration i Sønderborg Kommune.\nAndre initiativer, der kan styrke Integrationsrådets synlighed og relevans.\n\nPå baggrund af drøftelsen kan Integrationsrådet prioritere de initiativer, som rådet ønsker at arbejde videre med i\nden kommende periode."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev udsat til møde den 25. februar 2026."
     }
    ],
    "bilag": []
@@ -6532,10 +6592,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Integrationsråd",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=c1884384-5609-47f8-8ae8-c1287dbbd89a",
-   "hentet": "2026-10-23T19:47:22.286Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=0b2f817a-5628-4dab-b5b8-4c9cd8953912",
+   "hentet": "2026-11-03T14:56:16.168Z",
    "titel": "6. Drøftelse af Integrationsrådets deltagelse på Kultur- og Idrætsnatten 2026",
    "afsnit": [
     {
@@ -6549,6 +6609,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kultur- og Idrætsnatten i Sønderborg fandt sted fredag den 4. september 2026. Integrationsrådet deltog med en\nstand og uddelte årets Brobyggerprisen.\n\nIntegrationsrådet skal evaluere sin deltagelse i Kultur- og Idrætsnatten 2026, herunder både tilstedeværelsen med\nen stand og uddelingen af Brobyggerprisen. Evalueringen skal bidrage til at afklare, om rådet ønsker at deltage i\narrangementet fremadrettet, og i givet fald i hvilken form."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet. Forvaltningen udarbejder et notat med rådets drøftelser til brug for deltagelse på Kultur- og\nIdrætsnatten i 2027."
     }
    ],
    "bilag": []
@@ -6558,10 +6622,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Integrationsråd",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=c1884384-5609-47f8-8ae8-c1287dbbd89a",
-   "hentet": "2026-10-23T19:47:22.286Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=0b2f817a-5628-4dab-b5b8-4c9cd8953912",
+   "hentet": "2026-11-03T14:56:16.168Z",
    "titel": "7. Generel orientering - oktober 2026",
    "afsnit": [
     {
@@ -6571,6 +6635,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller til Integrationsrådet at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -16782,15 +16850,19 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "1. Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller til Kultur-, Handel- og Turismeudvalget at godkende\ndagsordenen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -16800,10 +16872,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "2. Orientering om Sønderborg Musikskole",
    "afsnit": [
     {
@@ -16817,6 +16889,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Sønderborg Musikskole tilbyder undervisning inden for de praktisk-musiske fag, musical og performance via\nPerformance Akademi Sønderborg samt klassisk ballet og moderne dans via Sønderjyllands Danseakademi.\n\nJf. Sønderborg Musikskoles vedtægter har musikskolen til formål:\nGennem udvikling af elevernes kreative evner inden for musikalsk og scenisk udtryk at skabe\nforudsætninger for livslang, aktiv deltagelse i musiklivet som udøvere og lyttere\n\nAt bibringe den enkelte elev instrumentale/vokale og sceniske færdigheder som forudsætning for personlig\nmusikalsk og kreativ udfoldelse, såvel i fællesskab med andre som individuelt, idet der tages hånd om den\nenkeltes forudsætninger og talent\n\nGennem beskæftigelse med musik og scenekunst at medvirke til elevernes personlighedsudvikling, samt\nøge deres forståelse af sig selv som en del af et fællesskab\n\nAt virke til fremme af det lokale musik- og kulturmiljø\n\nMusikskoleleder Allan Ørslev og formand for bestyrelsen for Sønderborg Musikskole Søren Wang Mogensen\ndeltager under punktet for at orientere om musikskolens virke og den aktuelle status på de aktiviteter, der bygger\npå Masterplan Sønderborg Musikskole 2019-2027 – herunder inden for områderne MGK (Musikalsk Grundkursus),\nPerformance Akademi Sønderborg og Sønderjyllands Danseakademi.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en orienteringssag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nFraværende:\nKim Bækdal Agerley"
     }
    ],
    "bilag": []
@@ -16826,10 +16902,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "3. Godkendelse af medfinansiering af ompolstring stole på Sønderborg Musikskole",
    "afsnit": [
     {
@@ -16843,6 +16919,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Stolene i koncertsalen i Sønderborg Musikskole står til at skulle renoveres. Stolene stammer fra bygningens\nopførelse i 1977 og indgår som en del af salens akustiske regulering. Ifølge Musikskolen er polstringen flere steder\nslidt, skumfyldet nedbrudt, og enkelte sæder og ryglæn er løse. Projektet omfatter 218 fastmonterede stole og 80\nløse stole. Musikskolen oplyser at, den samlede projektsum foreløbigt er anslået til ca. 450.000 kr. på baggrund af\net overslag fra en lokal møbelpolstrer.\n\nMusikhuset på Skovvej blev opført i 1977 som prøvesal for Sønderjyllands Symfoniorkester. Sønderborg\nMusikskole overtog bygningen i 2007, og der er ikke foretaget væsentlige ændringer af koncertsalens\npublikumsfaciliteter siden opførelsen.\n\nKoncertsalen er et centralt rum for Musikskolens aktiviteter. Salen anvendes til undervisning, prøver, koncerter og\ntalentudvikling og danner samtidig ramme om arrangementer for eksterne aktører. Der afholdes årligt omkring 50\nkoncerter i salen, ligesom lokalet anvendes til større møder og arrangementer for kommunen. Salen understøtter\nsærligt kor, kammermusik og mindre akustiske ensembler og udgør dermed en væsentlig kulturfacilitet i\nkommunen.\n\nUd over den foreslåede kommunale medfinansiering på 130.000 kr. vil Musikskolen forsøge at tilvejebringe den\nresterende finansiering gennem fondsansøgninger.\n\nI 2026 er der gennemført en række forbedringer af salen, herunder etablering af nyt AV-udstyr og moltonbagtæppe\nmed mulighed for mørklægning. Ompolstring af stolene vil supplere disse forbedringer og bidrage til at opgradere\nkoncertsalens samlede rammer.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet 130.000 kr. afholdes inden\nfor den eksisterende pulje til kulturelle anlæg."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -16852,10 +16932,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "4. Godkendelse af udmøntning af midler til talentudviklingsindsatser i 2027",
    "afsnit": [
     {
@@ -16869,6 +16949,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "I august 2021 godkendte Udvalget for Kultur, Idræt, Handel og Turisme Sønderborg Kommunes profil for\nbæredygtig talentudvikling. Som led i det øgede fokus på talentudvikling blev der i budgetaftalen 2022-2025 afsat\nen årlig pulje på 250.000 kr. (2022-tal) til at støtte udvikling og realisering af talentsatsningen i Sønderborg\nKommune. De afsatte midler løber ud i årene.\n\nI forlængelse af kommunalvalget i 2025 og den efterfølgende opdeling af kultur- og idrætsområdet i hvert sit\nfagudvalg blev det i april 2026 godkendt i henholdsvis Kultur-, Handel- og Turismeudvalget og Idræt- og\nFritidsudvalget, at økonomien i puljen til talentudviklingsindsatser blev ligeligt fordelt mellem de to udvalg. I 2026\nlyder puljen på 285.560 kr. Der er således 142.780 kr. til uddeling til foreninger og andre aktører, som arbejder med\ntalentudvikling på kulturområdet.\n\nKriterierne for tilskud til talentudviklingsindsatser:\n1. Indsatsen understøtter Sønderborg Kommunes profil for bæredygtig talentudvikling.\n2. Der er tale om en fokuseret indsats med et konkret og tydeligt mål inden for talentudvikling.\n\n3. Talentudvikling er synligt forankret i ansøgers grundlæggende virke – fx i formål, vedtægt, strategi og/eller\nindsatsområde.\n4. Ansøger har beskrevet et koncept for talentudvikling.\n\nKriterierne tager afsæt i Sønderborg Kommunes profil for bæredygtig talentudvikling, som kan ses i bilag.\n\nForeninger og andre aktører, som arbejder med talentudvikling, har mulighed for at søge støtte via de afsatte\nmidler til talentsatsningen i Sønderborg Kommune. Ved ansøgningsfristens udløb den 1. oktober 2026 var der\nindkommet én ansøgning fra Sønderjyllands Kunstskole.\n\nPå baggrund af en samlet vurdering har forvaltningen udarbejdet et forslag til udmøntning af midlerne til\ntalentudviklingsindsatser i 2027. I forvaltningens forslag bevilges hele beløbet på 142.780 kr. til den\nstøtteberettigede ansøger.\n\nForvaltningens forslag til udmøntning af midler til talentudviklingsindsatser i 2027:\nAnsøger\nSønderjyllands\nKunstskole\n\nAnsøgt beløb\nÅrligt i 2027,"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -16878,10 +16962,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "5. Godkendelse af tilskud til udviklingsplan for Gråsten Æblefestival",
    "afsnit": [
     {
@@ -16895,6 +16979,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Gråsten Æblefestival afvikles hvert år den sidste weekend i september. Festivalen tager udgangspunkt i fejringen\naf Danmarks nationalæble, Gråstenæblet, og tiltrækker hvert år op mod 10.000 besøgende. Over tre dage kan\ngæster med omdrejningspunkt i æblet nyde spise- og drikkeoplevelser, boder med lokale fødevarer, kunst og\nkunsthåndværk, aktiviteter for hele familien samt musik og hygge i Gråsten. I 2024 kunne festivalen fejre tiårs\njubilæum.\n\nByrådet godkendte den 26. november 2025 Masterplan for Gråsten-området 2026-2035. Masterplanen er\nudarbejdet med ekstern hjælp og bygger ovenpå den tidligere Masterplan for Gråsten-området 2015-2025. De\nanbefalede aktiviteter og handlinger i masterplanen er i overensstemmelse med de vedtagne kommunale strategier\ninden for erhvervs-, bosætnings-, turisme- og byudviklingsområdet. Et af masterplanens udviklingsspor (spor 3)\n\nvedrører udnyttelse af den unikke royale styrkeposition og potentialet i Gråstenæblet. Æblefestivalen er i den\nsammenhæng angivet som et signaturevent med stort udviklingspotentiale.\n\nForvaltningen vurderer også, at der ligger et fortsat stort potentiale i festivalen, hvilket en målrettet udviklingsplan\nkan være med til at forløse. Styregruppen bag Gråsten Æblefestival og Gråsten Forum har samme opfattelse.\nArbejdet for en udviklingsplan igangsættes derfor under projektet Det Kongelige Spisekammer og det\npotentialenotat, som blev godkendt i Kultur-, Handel- og Turismeudvalget i oktober 2026.\n\nMed udgangspunkt i byens royale islæt, som sommerresidens for kongefamilien, og en stærk fødevarefortælling\nsymboliseret i Gråsten-æblet og synliggjort i køkkenhaven som forsyningskammer til kongehuset, skal projektet\nomsætte byens stedbundne potentialer til løftestang for en større egnsudvikling i Gråsten. Udviklingsplanen får\nherudover direkte ophæng til spor 3 i Masterplan for Gråsten-området.\n\nGråsten Æblefestival har tidligere modtaget støtte fra Gråsten Forum på 120.000 kr. til afvikling og udvikling af\nÆblefestivalen. Støtten fra Gråsten Forum blev reduceret med 50 pct. i 2026, hvorfor Kultur-, Handel- og\nTurismeudvalget bevilgede 60.000 kr. til Æblefestivalen den 5. maj 2026 for at kunne opretholde og videreudvikle\nfestivalens niveau og aktiviteter.\n\nI forbindelse med sagsbehandlingen anbefalede forvaltningen, at udviklingsplanen bruges til at afklare de\nfremtidige rammer samt organisering af festivalen. Masterplan for Gråsten-området 2026-2035 angiver, at\nudviklingsplanen skal indeholde en femårig strategi og handlingsplan for Gråsten Æblefestival, som skal bidrage til\nat indfri målsætningen om 50.000 besøgende.\n\nStyregruppen bag Gråsten Æblefestival og Gråsten Forum ønsker at udskille festivalen fra forums arbejde, så\nfestivalen kommer til at stå på egne ben med egen selvstændige økonomi. Gråsten Forum trækker derfor deres\nøkonomiske bidrag til festivalen fra 2027.\n\nMed det afsæt foreslår forvaltningen, at der afsættes 150.000 kr. til udarbejdelse af en udviklingsplan for Gråsten\nÆblefestival i 2026. Udviklingsplanen skal anvise muligheder og tiltag, som bidrager til, at Æblefestivalen kan\nudvikle sig i de kommende år og indfri ambitionen om 50.000 besøgende. Samtidig foreslår forvaltningen, at\nudvalget godkender en fremtidig bevilling til Gråsten Æblefestival i 2027 og 2028, hvorved ambitioner og tiltag i\nudviklingsplanen kan realiseres.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet 150.000 kr. i 2026 samt\n150.000 kr. i hvert af årene 2027 og 2028 finansieres inden for eksisterende afsatte midler."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt. Tilskuddet på 150.000 kr. i 2027 og 2028 udbetales først, når Gråsten Æblefestival har etableret\nsig som en selvstændig forening.\n\nKim Bækdal Agerley blev erklæret inhabil og deltog derfor ikke i behandlingen af punktet.\nFraværende:\nKim Bækdal Agerley"
     }
    ],
    "bilag": []
@@ -16904,10 +16992,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "6. Godkendelse af kitesurfingfaciliteter ved Drejet",
    "afsnit": [
     {
@@ -16921,6 +17009,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "I budgetaftalen 2018-2021 blev der afsat 200.000 kr. til udvikling af Sydals/Kegnæs som lokation for kitesurfing\nsamt til forbedring af faciliteterne i området. Midlerne er endnu ikke blevet udmøntet og er derfor løbende blevet\noverført. Forvaltningen har sideløbende undersøgt forskellige muligheder for at forbedre forholdene for kitesurfere\nved Sydals/Kegnæs.\n\nUdvalget for Erhverv og Grøn Vækst drøftede den 8. december 2022 udmøntningen af midlerne. Drøftelsen tog\nafsæt i forvaltningens undersøgelser af basale faciliteter i området samt områdets udviklingsmuligheder.\nUndersøgelserne viste overordnet set, at der allerede var et tilfredsstillende niveau af basale faciliteter, samtidig\nmed at mulighederne for yderligere udvikling var begrænsede.\n\nForvaltningen undersøgte desuden muligheden for at udvide parkeringspladsen ved Drejet på Kegnæs samt\ntrafiksikkerheden ved Drejby Strand camping. Myndighedsscreeningen viste, at en udvidelse af parkeringspladsen\nikke kunne tillades som følge af beskyttelsen af det fredede fortidsminde Kegborg og det omkringliggende\nengområde. Områdets placering inden for strandbeskyttelseslinjen indebar desuden, at en udvidelse ville kræve\ndispensation fra Kystdirektoratet. Desuden blev trafikken ved Drejby Strand camping vurderet til overordnet set at\nvære sikker.\n\nPå mødet den 13. april 2023 blev Udvalget for Erhverv og Grøn Vækst orienteret om undersøgelserne.\nForvaltningen blev i forlængelse heraf bedt om at undersøge muligheden for at anlægge en toilettilbygning med\nklargøring til udebruser til den eksisterende toiletbygning ved parkeringspladsen ved Drejet. Den daværende\nundersøgelse viste, at en tilbygning på under 25 m² ikke ville kræve byggetilladelse. Der ville dog fortsat skulle\ntages stilling til håndtering af spildevand og regnvand samt indhentes de nødvendige tilladelser og dispensationer.\n\nAnlægsudgiften til en toilettilbygning med klargøring til udebruser blev på daværende tidspunkt vurderet til ca.\n190.000 kr. eksklusive moms og uforudsete udgifter. De årlige driftsudgifter blev vurderet til ca. 25.000 kr., og der\nvar ikke afsat finansiering til den løbende drift. Samtidig viste en undersøgelse, at den eksisterende toiletbygning\nvar velbesøgt.\n\nPå baggrund af de samlede undersøgelser foreslog forvaltningen den 8. juni 2023, at der ikke blev arbejdet videre\nmed anlægget, og at det blev indstillet til lukning. Udvalget for Erhverv og Grøn Vækst godkendte ikke indstillingen,\nmen besluttede på mødet at igangsætte arbejdet med etablering af et ekstra toilet med klargøring til udebruser ved\nDrejet på Kegnæs.\n\nEn efterfølgende undersøgelse fra forvaltningen Teknik, Miljø og Bæredygtighed vist, at anlægsudgiften til en\ntoilettilbygning med klargøring til udebruser væsentligt overstiger de afsatte 200.000 kr. Projektet kan derfor ikke\ngennemføres inden for den eksisterende økonomiske ramme. Forvaltningen Teknik, Miljø og Bæredygtighed har\nderfor undersøgt alternative løsningsmodeller og vurderer, at en løsning indeholdende en udebruser med\nafskærmning ved den eksisterende toiletbygning vil kunne etableres inden for den afsatte ramme. I tillæg til\netableringsudgifter er der årlige udgifter i størrelsesordenen 5.000 kr. forbundet med driften af en udebruser med\nafskærmning.\n\nForvaltningen anbefaler på den baggrund, at Kultur-, Handel- og Turismeudvalget godkender, at de afsatte midler\nanvendes til etablering af en udebruser med afskærmning ved den eksisterende toiletbygning. Anlægget af en\nudebruser med afskærmning forudsætter, at de nødvendige myndighedstilladelser opnås, herunder dispensation\nhos Kystdirektoratet. Endvidere anbefaler forvaltningen, at udvalget godkender, at de årlige driftsudgifter på ca.\n5.000 kr. årligt finansieres inden for udvalgets ramme.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet finansiering sker inden for\nde afsatte midler til kitesurfing. De afledte driftsomkostninger på ca. 5.000 kr. årligt, finansieres inden for udvalgets\neksisterende ramme."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -16930,10 +17022,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "8. Godkendelse af 3. bevillingsrevision 2026",
    "afsnit": [
     {
@@ -16946,7 +17038,11 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Der sker opfølgning af økonomi i de månedlige ledelsesinformationer (LIS), hvor afvigelser og forventet regnskab\nforelægges til orientering for fagudvalg, Økonomi- og Strategiudvalget og Byrådet. Ud over den månedlige\nopfølgning på ledelsesinformationen, foretages der årligt et antal bevillingsrevisioner.\n\nØkonomi- og Strategiudvalget har, i forbindelse med godkendelse af budgethandleplanen 2027-2030 i marts 2026,\nbesluttet, at der foretages tre bevillingsrevisioner for 2026. Ved bevillingsrevisionerne træffes der beslutning om de\nbevillingsmæssige ændringer, som blandt andet fremgår af de månedlige ledelsesinformationer.\n\nBevillingsrevisionerne i 2026 forelægges politisk på følgende tidspunkter:\nFørste bevillingsrevision\n\nUge 15 (april)\n\nFagudvalg\n\nAnden bevillingsrevision\n\nTredje bevillingsrevision\n\n22. april\n\nØkonomi- og Strategiudvalg\n\n29. april\n\nByråd\n\nUge 33 (august)\n\nFagudvalg\n\n19. august\n\nØkonomi- og Strategiudvalg\n\n25. august\n\nByråd\n\nUge 45 (november)\n\nFagudvalg\n\n18. november\n\nØkonomi- og Strategiudvalg\n\n25. november\n\nByråd\n\nDirektionens forslag til den samlede bevillingsrevision er vedlagt. Forslaget er udarbejdet med henblik på at udgifter\nog indtægter balancerer. Det samlede resultat viser, at kassebeholdningen, set over årene 2026-2030, øges med\n0,309 mio. kr.\n\nBevillingsniveauet på driften er på det enkelte politikområde inden for hvert udvalg. Flytning af budgetter mellem\npolitikområder, både inden for eget udvalg og mellem de enkelte udvalg, skal ligeledes forelægges ved\nbevillingsrevisionerne.\n\nForvaltningerne har nedenstående ændringer til det korrigerede budget.\n\nDrift:\nPolitikområde 4 Turisme\n0,250 mio. kr. til projektet Rekreativ cykling forskydes til 2027. Projektet forventes først færdigt i 2027.\n\nPolitikområdet 10 Kultur\n0,180 mio. kr. til eventet Unge spot på Verdensmål under tilbagevendende events forskydes til 2027.\nEventet har ændret koncept og dermed udskydes afholdelsen til 2027.\n0,475 mio. kr. til Sønderborg Teater forskydes til 2027 til en delrenovering af foyeren.\n\nFlytning mellem politikområder/udvalg:\n0,012 mio. kr. reduceres fra 2027 til en besparelse på kaffeordningen.\n0,049 mio. kr. tilføres i 2026 til lokal lønudmøntning.\n\nAnlæg:\nIngen ændringer.\n\nDerudover er der enkelte omplaceringer under bagatelgrænse på 50.000 kr. mellem udvalgene, som håndteres\nadministrativt (SSH, KHT, BLI, NKM og ØS).\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen medfører nedenstående bevillingsmæssige konsekvenser:\nBevillingspåtegning (i 1.000 kr.)\n\nDrift\n\nPolitik\n\nBudget\n\nOverslags år\n\nOverslags år\n\nOverslags år\n\nområde\n\når\n\nAnlæg/\nRådighedsbeløb\nFinansiering via:\nDrift andetsteds\nAfsat rådighedsbeløb\nLåneoptagelse\nAfdrag og renter af\nnye lån\nKassebeholdning"
+     "tekst": "Der sker opfølgning af økonomi i de månedlige ledelsesinformationer (LIS), hvor afvigelser og forventet regnskab\nforelægges til orientering for fagudvalg, Økonomi- og Strategiudvalget og Byrådet. Ud over den månedlige\nopfølgning på ledelsesinformationen, foretages der årligt et antal bevillingsrevisioner.\n\nØkonomi- og Strategiudvalget har, i forbindelse med godkendelse af budgethandleplanen 2027-2030 i marts 2026,\nbesluttet, at der foretages tre bevillingsrevisioner for 2026. Ved bevillingsrevisionerne træffes der beslutning om de\nbevillingsmæssige ændringer, som blandt andet fremgår af de månedlige ledelsesinformationer.\n\nBevillingsrevisionerne i 2026 forelægges politisk på følgende tidspunkter:\nFørste bevillingsrevision\n\nUge 15 (april)\n\nFagudvalg\n\nAnden bevillingsrevision\n\nTredje bevillingsrevision\n\n22. april\n\nØkonomi- og Strategiudvalg\n\n29. april\n\nByråd\n\nUge 33 (august)\n\nFagudvalg\n\n19. august\n\nØkonomi- og Strategiudvalg\n\n25. august\n\nByråd\n\nUge 45 (november)\n\nFagudvalg\n\n18. november\n\nØkonomi- og Strategiudvalg\n\n25. november\n\nByråd\n\nDirektionens forslag til den samlede bevillingsrevision er vedlagt. Forslaget er udarbejdet med henblik på at udgifter\nog indtægter balancerer. Det samlede resultat viser, at kassebeholdningen, set over årene 2026-2030, øges med\n0,309 mio. kr.\n\nBevillingsniveauet på driften er på det enkelte politikområde inden for hvert udvalg. Flytning af budgetter mellem\npolitikområder, både inden for eget udvalg og mellem de enkelte udvalg, skal ligeledes forelægges ved\nbevillingsrevisionerne.\n\nForvaltningerne har nedenstående ændringer til det korrigerede budget.\n\nDrift:\nPolitikområde 4 Turisme\n0,250 mio. kr. til projektet Rekreativ cykling forskydes til 2027. Projektet forventes først færdigt i 2027.\n\nPolitikområdet 10 Kultur\n0,180 mio. kr. til eventet Unge spot på Verdensmål under tilbagevendende events forskydes til 2027.\nEventet har ændret koncept og dermed udskydes afholdelsen til 2027.\n0,475 mio. kr. til Sønderborg Teater forskydes til 2027 til en delrenovering af foyeren.\n\nFlytning mellem politikområder/udvalg:\n0,012 mio. kr. reduceres fra 2027 til en besparelse på kaffeordningen.\n0,049 mio. kr. tilføres i 2026 til lokal lønudmøntning.\n\nAnlæg:\nIngen ændringer.\n\nDerudover er der enkelte omplaceringer under bagatelgrænse på 50.000 kr. mellem udvalgene, som håndteres\nadministrativt (SSH, KHT, BLI, NKM og ØS).\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen medfører nedenstående bevillingsmæssige konsekvenser:\nBevillingspåtegning (i 1.000 kr.)\nPolitik\n\nBudget\n\nOverslags år\n\nOverslags år\n\nOverslags år\n\nområde\n\når\n\nDrift\n\nAnlæg/\nRådighedsbeløb\nFinansiering via:\nDrift andetsteds\nAfsat rådighedsbeløb\nLåneoptagelse\nAfdrag og renter af\nnye lån\nKassebeholdning"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Udvalget anbefaler indstillingen."
     }
    ],
    "bilag": []
@@ -16956,10 +17052,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "9. Drøftelse af oplæg for den videre proces for udvikling af Øvre Perlegade",
    "afsnit": [
     {
@@ -16973,6 +17069,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Udviklingen af Rønhaveplads og Øvre Perlegade har været genstand for en række analyser, strategier og\nudviklingsprojekter gennem de seneste 15 år. Fælles for arbejdet har været ønsket om at styrke byliv, handel,\nopholdsmuligheder og forbindelsen mellem bymidten og havnen.\n\nSiden 2010’erne har ændrede handels- og forbrugsmønstre påvirket den nordlige del af bymidten, herunder Øvre\nPerlegade og Rønhaveplads. Udviklingen skyldes blandt andet øget nethandel og ændrede kundestrømme i\nSønderborg by. Flere analyser og strategier for Sønderborg Bymidte, jf. bilag, har derfor peget på behovet for at\nstyrke området gennem flere aktiviteter, oplevelser, opholdsmuligheder og en tættere kobling mellem handel, kultur\nog byliv.\n\nSom led heri gennemførte Sønderborg Kommune i 2021-2022 en borgerproces, som resulterede i tre principskitser\nfor udviklingen af Rønhaveplads. Principskitserne blev behandlet politisk i august 2022, men der blev ikke truffet\nbeslutning om realisering af et projekt, hvorefter arbejdet blev sat i bero.\n\nI de seneste år har lokale aktører arbejdet videre med områdets udvikling. Dette har blandt andet resulteret i en\nudviklings- og handleplan for området omkring Rønhaveplads, Bryggertorvet og den øvre del af Perlegade med\nfokus på byliv, kultur, handel og ophold.\n\nDen 25. august 2026 blev der afholdt et fælles fyraftensmøde mellem formandskaberne for Byudvikling-,\nLanddistrikter- og Infrastrukturudvalget samt Kultur-, Handel- og Turismeudvalget, forvaltningen, Vores Sønderborg\nog repræsentanter fra den lokale arbejdsgruppe. På mødet blev der peget på behovet for at styrke\nsammenhængen mellem byliv, kultur, handel og opholdsmuligheder i området. Der blev ligeledes efterspurgt større\nklarhed om områdets fremtidige udvikling og de fysiske rammer for aktiviteter og arrangementer.\n\nDen 1. september 2026 drøftede Kultur-, Handel- og Turismeudvalget samt Byudvikling-, Landdistrikter- og\nInfrastrukturudvalget områdets udviklingsmuligheder. Drøftelsen viste opbakning til at arbejde videre med\nudviklingen af området, men også behov for en fælles proces, yderligere politisk afklaring og fortsat dialog med\nområdets aktører.\n\nMed budgetaftalen for 2027-2030 er der afsat 1,5 mio. kr. til udvikling af området samt etablering af offentlige\ntoiletfaciliteter ved Rønhaveplads. Bevillingen skal ses i sammenhæng med de tidligere afsatte 1,5 mio. kr. til en\nlegeplads i budgetaftalen 2026-2029. Det fremgår samtidig af budgetaftalen, at midlerne først frigives, når der\nforeligger en endelig plan for området.\n\nPå baggrund af drøftelserne blev forvaltningen bedt om at udarbejde et forslag til den videre proces, herunder\nhvordan der kan skabes en fælles retning for områdets udvikling samt sikres fortsat dialog med lokale aktører.\nForvaltningen forslår følgende proces. Se bilag for grafisk version.\n\nQ4 2026: Politisk informationsmøde\nInformationsmøde for Byudvikling-, Landdistrikter- og Infrastrukturudvalget og Kultur-, Handel- og Turismeudvalget.\nPå mødet orienteres udvalgene om rammerne for udviklingsmulighederne.\n\nQ1 2027: Workshop med lokale aktører\nWorkshop med blandt andet Vores Sønderborg, den lokale arbejdsgruppe, Deutsches Museum Nordschleswig,\n\nøvrige erhvervsdrivende i området samt beboere, hvis ejendomme grænser op til projektområdet. Her indsamles\nlokale perspektiver, ønsker og idéer til områdets udvikling, herunder forslag til aktiviteter, ophold og events.\n\nQ1 2027: Møde mellem formandskaberne\nOpsamling efter workshop med lokale aktører og drøftelse af det videre arbejde.\n\nQ1 2027: Helhedsplan udarbejdes\nHelhedsplanen udarbejdes på baggrund af de politiske drøftelser og input fra lokale aktører.\n\nQ2 2027: Præsentation for lokale aktører\nUdkast til helhedsplan præsenteres for de involverede aktører med henblik på kvalificering af det endelige forslag.\n\nQ2 2027: Politisk behandling\nHelhedsplanen præsenteres for udvalgene med henblik på politisk stillingtagen til den videre realisering.\n\nQ3 2027: Anlægsfase kan igangsættes\nEfter politisk godkendelse kan de afsatte anlægsmidler til offentligt toilet og legeplads anvendes til realisering af de\nførste tiltag. Der er ikke afsat midler til drift og vedligeholdelse af faciliteterne.\n\nForvaltningen vurderer, at processen vil skabe et fælles grundlag for områdets videre udvikling. Såfremt alle\ninitiativer ikke kan realiseres inden for den eksisterende finansiering, kan udviklingen gennemføres i flere faser over\nen årrække. Det afgørende er, at der etableres et fælles målbillede for området, så kommende investeringer og\nprojekter understøtter den samme overordnede vision og udviklingsretning for Øvre Perlegade, Bryggertorvet og\nRønhaveplads.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en drøftelsessag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet med følgende bemærkninger:\nUdvalget ønsker en åben dialog med borgere og aktører i forbindelse med den forslåede workshop\nsom kan danne udgangspunkt for den videre proces og fortsatte udvikling af Øvre Perlegade,\nherunder Rønhaveplads.\nUdviklingen af området skal tage afsæt i konkrete perspektiver fra borgere og aktører, sådan at det\nafspejler de fælles ønsker, der er for området."
     }
    ],
    "bilag": []
@@ -16982,10 +17082,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "10. Drøftelse af udkast til en ny kulturpolitik",
    "afsnit": [
     {
@@ -16999,6 +17099,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kulturkompasset Sønderborg2025 udløb med udgangen af 2025, og der er derfor primo 2026 igangsat et arbejde\nmed en ny kulturpolitik for Sønderborg Kommune. Udgangspunktet er, at en ny kulturpolitik bygger ovenpå\nerfaringerne fra arbejdet med Kulturkompasset, og at den bliver underbygget med tilgængelige data.\n\nPå mødet i Kultur-, Handel- og Turismeudvalget den 3. februar 2026 godkendte udvalget procesplanen for arbejdet\nmed kulturpolitikken. I 1. halvår af 2026 har udvalget på udvalgsmøderne fået en introduktion til kulturområdet,\nhvilket har medvirket til at give et overordnet billede af kulturområdet. Sideløbende hermed har forvaltningen\nfaciliteret en inddragende proces, hvor kulturaktører, kommunale medarbejdere og borgere har haft mulighed for at\ngive deres input til en ny kulturpolitik gennem fire kulturdebatter i april 2026 og dialogmøder i maj-juni 2026. Alle\ninteresserede dertil haft mulighed for at give deres input via en kommunal hjemmeside.\n\nProcessen har haft fokus på at afklare det politiske ambitionsniveau og sikre, at ambitionerne kan understøttes\n\norganisatorisk og ressourcemæssigt. Derudover at politikken skal muliggøre synergier i forhold til andre politikker\nog planer samt i relation Byrådets Vision 2026-2029, kommunens fyrtårne samt DGI Landsstævne 2029 i\nSønderborg.\n\nKultur-, Handel- og Turismeudvalget drøftede fokusområder for en kommende kulturpolitik på udvalgsmødet den 2.\njuni 2026. Dernæst drøftede udvalget de store linjer i en ny kulturpolitik på et arbejdsmøde den 13. august 2026\nmed afsæt i de samlede input fra den inddragende proces, Kulturprofilanalysen og opsamlingen på\n”Kulturkompasset Sønderborg2025”.\n\nPå udvalgsmødet den 1. september 2026 drøftede udvalget kulturpolitiske principper, vision og fokusområder for\nkulturpolitikken ud fra et samlet oplæg fra den inddragende proces, der peger på en fælles interesse i at ville styrke\nkulturlivet ved at arbejde for et stærkere samarbejde, større synlighed, at nå flere målgrupper og skabe større effekt\naf indsatserne.\n\nMed afsæt i udvalgets samlede drøftelse har forvaltningen udarbejdet et udkast til en ny kulturpolitik for Sønderborg\nKommune gældende for perioden 2027-2036 med visionen ”Vi vil have flere med”. Kulturpolitikken fastsætter\nfølgende fire kulturpolitiske principper og fire strategiske indsatsområder som retningsgivende for udmøntningen af\nkulturpolitikken:\nKulturpolitiske\nprincipper\n\n1. Vi er ambitiøse og visionære\n2. Vi ønsker høj kvalitet og værdiskabelse\n3. Vi styrker synligheden og formidlingen\n4. Vi samarbejder tæt med aktører og partnere\n\nStrategiske\nindsatsområder\n\n1. Skaberkraft og sammenhæng\n2. Grænselandet og kulturarven\n3. Kulturoplevelser i særklasse\n4. Kultur for flere\n\nSamlet set skal de kulturpolitiske principper og de strategiske indsatsområder sætte retningen og bidrage til at\nigangsætte handlinger, der kan understøtte ambitionen og indfri visionen for kulturområdets udvikling i Sønderborg\nKommune gennem de kommende ti år.\n\nUdkastet til kulturpolitikken ”Vi vil have flere med – Kulturpolitik for Sønderborg Kommune 2027-2036” har været\nsendt til kommentering blandt medarbejdere i forvaltningerne samt kulturaktører, hvilket afspejles i det udkast, der\nnu foreligger til politisk drøftelse.\n\nDen videre politiske proces:\n\nNovember: Drøftelse af udkast til en ny kulturpolitik i Kultur-, Handel- og Turismeudvalget\nDecember: Kultur-, Handel- og Turismeudvalget indstiller til Byrådet at godkende kulturpolitikken\nFra primo 2027: Implementering af kulturpolitikken i kommunen i samarbejde med aktører og partnere\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en drøftelsessag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -17008,10 +17112,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "11. Drøftelse af forslag til ny puljestruktur på kulturområdet",
    "afsnit": [
     {
@@ -17025,6 +17129,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Puljerne på kulturområdet har forskellige formål, målgrupper og procedurer. Kultur-, Handel- og Turismeudvalget\nhar tidligere ønsket en samlet gennemgang af puljerne og havde på mødet den 3. marts 2026 en indledende\ndrøftelse af principper og retningslinjer for den fremtidige puljestruktur. En samlet gennemgang af puljerne giver\nmulighed for at vurdere puljerne i sammenhæng og skabe en mere enkel, gennemsigtig og tidssvarende struktur\nfor ansøgere, forvaltning og udvalg.\n\nForvaltningen har kortlagt de eksisterende puljers formål, økonomiske rammer, målgrupper, ansøgningsfrister samt\nbeslutningsniveauer og forelægger på den baggrund et samlet oplæg til en ny puljestruktur på kulturområdet.\nOplægget samler puljerne i én overordnet ramme og skal give udvalget et tydeligt grundlag for at drøfte puljernes\nformål, økonomi, målgrupper, ansøgningskriterier og politiske behandling. Kortlægningen danner dermed grundlag\nfor at afgrænse de centrale spørgsmål, som bør drøftes politisk, inden den fremtidige puljestruktur og de tilhørende\nkriterier fastlægges.\n\nForvaltningen har fastlagt følgende principper for den foreslåede puljestruktur:\nEnkelhed og overskuelighed: Puljerne afgrænses tydeligt efter formål og målgruppe.\nGennemsigtighed for ansøgere: Det skal være tydeligt, hvad der kan søges til, hvornår der kan søges, og\n\nhvordan ansøgninger behandles.\nTydelig ansvarsplacering: Det skal fremgå hvilke ansøgninger, der behandles administrativt og hvilke, der\nforelægges politisk.\nPolitisk prioritering: Strukturen skal give mulighed for at prioritere puljemidler strategisk og i sammenhæng.\nForskellige behov: Strukturen skal kunne understøtte kulturelle arrangementer, talentudvikling,\ntidsbegrænsede indsatser og kulturelle anlæg.\nSammenhæng med kulturpolitikken: De endelige kriterier tilpasses den kommende kulturpolitik.\n\nNuværende puljestruktur på kulturområdet:\nPulje/arbejdstitel\n\nOverordnet formål\n\nFrister og kriterier\n\nØkonomisk\nramme (2026)\n\nPuljen til kulturelle\n\nStøtte til aktiviteter, som\n\narrangementer og\n\nsynliggør, styrker og\n\nevents\n\nunderstøtter et godt sted\nat leve, et stærkt\nkulturmiljø på tværs og\nhotspot for børn og unge.\n\nKan søges løbende.\n\nPuljen kan søges af borgere og\nforeninger bosiddende både i\nog uden for Sønderborg\nKommune til støtte af et\nkulturelt arrangement eller\nevent med udgangspunkt i \"det\ngode liv\", der afholdes i\nSønderborg Kommune.\n\nStrategiske indsatser\n\nTalentsatsning\n\nDrift af kulturelle tilbud.\n\nTilskud til kulturelle\ntalentsatsning\n\nTidligere: Kulturelle Fyrtårne\n\nSamlet: 289.365\n\nog udvalgets driftspulje\n\nkr.\n\n1 årlig ansøgningsfrist.\n\nKriterier: Jf. Kriterier for tilskud\ntil talentudviklingsindsatser i\nSønderborg Kommune.\n\nPuljen til kulturelle\n\nKulturelle anlæg og\n\nanlæg\n\ninvesteringer\n\nPuljen kan ikke søges direkte.\n\nUdvalget fordeler midlerne.\n\nOplæg til ny samlet puljestruktur:\nPulje/arbejdstitel\n\nOverordnet formål\n\nFrister og kriterier\n\nØkonomisk\nramme\n\nPuljen til kulturelle\n\nStøtte kulturelle\n\nTre årlige ansøgningsfrister.\n\narrangementer og\n\naktiviteter og events\n\nAnsøgninger forelægges\n\nevents\n\nudvalget samlet med\nvurderingsskema, samt\nindstilling fra forvaltningen.\nKriterier udarbejdes på baggrund\naf den nye kulturpolitik.\n\nPulje til kulturelle\n\nTalentudvikling og\n\nindsatser\n\ntidsbegrænsede\nudviklings- eller\ndriftsindsatser\n\nIngen frister eller kriterier.\n\nSamlet: 430.000\nkr.\n\nEt beløb som udvalget råder\nover til strategiske indsatser.\n\nStrategiske Indsatser og\nTalentsatning\nsammenlægges til ny\npulje.\nPuljen til kulturelle\n\nKulturelle anlæg og\n\nUdvalget drøfter, om puljen\n\nanlæg\n\ninvesteringer\n\nfortsat skal prioriteres til\n\nBasisbudget:\n\nkonkrete formål eller være åben\nog søgbar. Eventuelt med to-tre\nårlige ansøgningsfrister.\n\nForvaltningen lægger op til, at udvalget drøfter oplægget til en ny puljestruktur med et overordnet og tværgående\nfokus. De endelige puljenavne, kriterier, ansøgningsfrister, budgetfordelinger og administrative processer\nudarbejdes efterfølgende på baggrund af udvalgets drøftelser og den kommende kulturpolitik og forelægges til\nudvalgets beslutning.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en drøftelsessag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -17034,10 +17142,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "12. Drøftelse af prioriterede tilskudsmodtagere",
    "afsnit": [
     {
@@ -17051,6 +17159,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kultur-, Handel- og Turismeudvalget godkendte den 5. maj 2026 en foreløbig puljestruktur på kulturområdet for\n2026. I den forbindelse ønskede udvalget indblik i de prioriterede tilskudsmodtager, der får et fast årligt tilskud eller\nstøtte i en aftalt flerårig periode. Tilskuddene kan være besluttet med forskellig varighed og på forskelligt\nbevillingsgrundlag. Finansieringsgrundlaget har betydning for, om midlerne ved et eventuelt ophør igen kan indgå i\nudvalgets prioritering, eller om de udløber og forsvinder fra budgetområdet.\n\nForvaltningen har derfor udarbejdet et samlet overblik over bevilgede ansøgninger i puljerne kulturelle\narrangementer og events, kulturelle anlæg, talentsatsning samt strategiske indsatser, der får et tilskud for en\nflerårig periode på kulturområdet. Oversigten tydeliggør tilskuddets størrelse og varighed, samt hvilken pulje hvorfra\nfinansieringen er sket.\n\nOverblik over tilskudsmodtagere:\nTilskudsmodtager\n\nBeløb\n\nFast\n\nPulje\n\ntilskud\nBack to the Roots\n\nNej\n\nKulturelle Arrangementer og Events\n\nBørnefestivalen i Sønderborg\n\nJa – indtil\n\nKulturelle Arrangementer og Events\n\nDet Sønderjyske Sangcenter\n\nJa\n\nStrategiske indsatser\n\nDet Sønderjyske Sangcenter Cafésang\n\nNej\n\nKulturelle Arrangementer og Events\n\nDybbøldagen\n\nJa – indtil\n\nKulturelle Fyrtårne; Strategiske indsatser\n\nFonden Jollmands Gaard\n\nJa – indtil\n\nDriftspulje; Strategiske indsatser\n\nGarn uden Grænser\n\nNej\n\nKulturelle Arrangementer og Events\n\nHertugbyens Bevaringsforening\n\nJa – indtil\n\nDriftspulje; Strategiske indsatser\n\nLandsbygruppen for Tandslet Sogn\n\nJa – indtil\n\nDriftspulje; Strategiske indsatser\n\nPro Musica\n\nNej\n\nKulturelle Arrangementer og Events\n\nSjov og Musik\n\nNej\n\nKulturelle Arrangementer og Events\n\nSkovby Landsbylaug / Skovby By Night\n\nNej\n\nKulturelle Fyrtårne; Kulturelle Arrangementer\nog Events\n\nSønderborg Borgerforening / Skyttefest\n\nNej\n\nKulturelle Arrangementer og Events\n\nSønderborg Garden\n\nJa\n\nKulturelle Fyrtårne; Strategiske indsatser\n\nSønderborg Korenes Forårskoncert\n\nNej\n\nKulturelle Arrangementer og Events\n\nSønderborg Musikforening\n\nNej\n\nKulturelle Arrangementer og Events\n\nAlssundorkestret\n\nNej\n\nKulturelle Arrangementer og Events\n\nKvindekomiteen\n\nNej\n\nKulturelle Arrangementer og Events\n\nPiratshow\n\nNej\n\nKulturelle Arrangementer og Events\n\nHofrådens Hus S/I (projektet Hofrådens\n\nJa – indtil\n\nKulturelle Anlæg\n\nBakhus)\n\nOversigten giver et samlet billede af de eksisterende tilskudsforpligtelser og finansieringens karakter. Formålet er at\ngive udvalget et samlet overblik over de midler, der uddeles på området, og kan danne baggrund for udvalgets\n\ndrøftelse af, om de nuværende prioriteringer fortsat skal være retningsgivende, eller om der er behov for justeringer\nfremadrettet.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en drøftelsessag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -17060,10 +17172,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "13. Drøftelse af prioritering af midler afsat til Handleplan for Events i 2027",
    "afsnit": [
     {
@@ -17081,6 +17193,10 @@
     {
      "titel": "Baggrund",
      "tekst": "1) Værdiskabende\n\nGadeteaterfestival\n\nMedfinansiering af gadeteaterfestival,\n\nevents\n\nBeløb\n\nsom har været afviklet i Sønderborg\nKommune tidligere med positive\ntilbagemeldinger. Det er et event, som\nkan afvikles med eksisterende\nressourcer, da det er velkendt og bygger\npå samarbejde med eksterne partnere.\nDet rammer en bred målgruppe og\nvurderes at have en høj værdi for\npengene.\n\n2. Tværgående\n\nTrafikofficials\n\nsamarbejde\n\nDer er et stigende behov for flere frivillige\n\nuddannede trafikofficiels, når kommune\neller lokale aktører afvikler events på\ngrund af stigende krav. Midlerne skal gå\ntil uddannelse.\n\n3. Fysisk\n\nWorkshops/\n\neventhåndtering\n\nkompetenceudvikling\n\nKravet til eventaktører er blevet større fra\n\nbåde publikum og myndigheder. For at\nsikre et højt niveau blandt\neventarrangører foreslås der afsat midler\ntil workshops og kompetenceudvikling.\n\n6. Strategisk\n\nEventfolder og\n\nI forlængelse udvalgets drøftelser\n\neventkommunikation\n\nSonderborg.dk\n\nomkring styrket kommunikation, foreslås\nder afsat midler til at kunne fortsætte\nudvikling af eventfolderen samt styrkelse\naf indsatser koblet til Sonderborg.dk\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet udsættes til udvalgets møde i december 2026."
     }
    ],
    "bilag": []
@@ -17090,10 +17206,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "14. Orientering om status på udmøntningsplan 2026-2029",
    "afsnit": [
     {
@@ -17107,6 +17223,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Byrådet godkendte den 24. september 2025 budgettet for 2026 og overslagsårene 2027-2029. Budgetaftalen\nindeholder en række politiske prioriteringer understøttet af budgetudvidelser. Herudover er der med budgetaftalen\nbesluttet en række øvrige elementer uden direkte tilknytning til budgettet. Det drejer sig om forskellige områder, der\nønskes analyseret og/eller styrket gennem særlig opmærksomhed i budgetperioden.\n\nMed henblik på den fremadrettede udmøntning af budgettets elementer godkendte Økonomiudvalget den 12.\nnovember 2025 udmøntningsplanen. Status på udmøntningsplanen vil blive fremlagt for Økonomi- og\nStrategiudvalget første gang den 18. februar 2026 og herefter i april, august, oktober og\ndecember. Fagudvalgene orienteres første gang på marts-møderne i 2026 og herefter i maj, september og\nnovember.\n\nUdover elementerne for budgettet for 2026, indeholder orienteringen også de uafsluttede elementer fra tidligere\nudmøntningsplaner. Status på udmøntningsplanens enkelte elementer fremgår af bilag.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en orienteringssag.\nSagen omhandler status på allerede vedtagne budgetelementer."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -17116,10 +17236,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "15. Orientering om ledelsesinformation - september 2026",
    "afsnit": [
     {
@@ -17133,6 +17253,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Opfølgning på ledelsesinformation 2026 for Kultur-, Handel- og Turismeudvalgets politikområder sker hver måned,\nhvor der gives en status og en forventning til årets resultat.\n\nStatus driftsøkonomi:\nForvaltningen forventer på nuværende tidspunkt et budget i balance ved årets udgang.\n\nStatus på områder under Økonomi- og Strategiudvalget:\nForvaltningen forventer på nuværende tidspunkt et budget i balance ved årets udgang.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en orienteringssag.\nForvaltningen forventer et budget i balance ved årets udgang."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -17142,19 +17266,23 @@
    "kommune": "Sønderborg",
    "udvalg": "Kultur-, Handel- og Turismeudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=1189185a-6fd2-4510-8613-2ea4ce6c7d66",
-   "hentet": "2026-10-30T19:37:49.186Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=8f6739fa-ebcc-460e-b4f8-b75f3d503144",
+   "hentet": "2026-11-03T14:56:10.828Z",
    "titel": "16. Generel orientering",
    "afsnit": [
     {
      "titel": "Resumé",
-     "tekst": "Orientering fra formanden\nUdpegning til fora\nÅbning af pulje til medfinansering af opførelse af statuer af navngivne kvinder i det offentlige rum\n\nOrientering fra medlemmer\n\nOrientering fra direktøren\nUdenlandske vielser"
+     "tekst": "Orientering fra formanden\nUdpegning til fora\nÅbning af pulje til medfinansering af opførelse af statuer af navngivne kvinder i det offentlige rum\n\nOrientering fra medlemmer\n\nOrientering fra direktøren"
     },
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller til Kultur-, Handel- og Turismeudvalget at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -17386,10 +17514,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Ungdomsrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=ba3f18c8-f771-4123-86ae-98bb96c8523b",
-   "hentet": "2026-10-30T19:34:54.605Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=9a7854bd-5ea9-4c7d-b046-0001dd3d0102",
+   "hentet": "2026-11-03T14:56:01.576Z",
    "titel": "1. Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -17403,6 +17531,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kan dagsordenen godkendes?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -17412,10 +17544,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Ungdomsrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=ba3f18c8-f771-4123-86ae-98bb96c8523b",
-   "hentet": "2026-10-30T19:34:54.605Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=9a7854bd-5ea9-4c7d-b046-0001dd3d0102",
+   "hentet": "2026-11-03T14:56:01.576Z",
    "titel": "2. Meddelelser fra forperson",
    "afsnit": [
     {
@@ -17429,6 +17561,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Meddelelser fra forperson."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning"
     }
    ],
    "bilag": []
@@ -17438,10 +17574,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Ungdomsrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=ba3f18c8-f771-4123-86ae-98bb96c8523b",
-   "hentet": "2026-10-30T19:34:54.605Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=9a7854bd-5ea9-4c7d-b046-0001dd3d0102",
+   "hentet": "2026-11-03T14:56:01.576Z",
    "titel": "3. Tak for sidst!",
    "afsnit": [
     {
@@ -17455,6 +17591,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der har været møde med Sundhed-, Unge- og Forebyggelsesudvalget, hvor vi lavede mad.\nDet var et godt og hyggeligt møde.\nHvad var jeres oplevelse?\nFik i noget ud af mødet?\nEr der noget, vi bør gøre anderledes næste gang?\nAndre reflektioner?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet"
     }
    ],
    "bilag": []
@@ -17464,10 +17604,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Ungdomsrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=ba3f18c8-f771-4123-86ae-98bb96c8523b",
-   "hentet": "2026-10-30T19:34:54.605Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=9a7854bd-5ea9-4c7d-b046-0001dd3d0102",
+   "hentet": "2026-11-03T14:56:01.576Z",
    "titel": "4. Intro til kommune",
    "afsnit": [
     {
@@ -17481,6 +17621,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Lykke giver en overordnet indføring til kommunen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet"
     }
    ],
    "bilag": []
@@ -17490,10 +17634,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Ungdomsrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=ba3f18c8-f771-4123-86ae-98bb96c8523b",
-   "hentet": "2026-10-30T19:34:54.605Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=9a7854bd-5ea9-4c7d-b046-0001dd3d0102",
+   "hentet": "2026-11-03T14:56:01.576Z",
    "titel": "5. Kulturpolitik i høring",
    "afsnit": [
     {
@@ -17507,6 +17651,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Sønderborg Ungdomsråd har været involveret i udarbejdelsen af Sønderborg Kommunes nye Kulturpolitik. Den\nsendes nu i høring og rådet er indbudt til at give et høringsvar."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet"
     }
    ],
    "bilag": []
@@ -17516,10 +17664,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Ungdomsrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=ba3f18c8-f771-4123-86ae-98bb96c8523b",
-   "hentet": "2026-10-30T19:34:54.605Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=9a7854bd-5ea9-4c7d-b046-0001dd3d0102",
+   "hentet": "2026-11-03T14:56:01.576Z",
    "titel": "6. Rekruttering",
    "afsnit": [
     {
@@ -17533,6 +17681,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Flere unge bør vide, at Sønderborg Ungdomsråd eksisterer. Hvordan kan vi gøre dette?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet"
     }
    ],
    "bilag": []
@@ -17542,10 +17694,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Ungdomsrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=ba3f18c8-f771-4123-86ae-98bb96c8523b",
-   "hentet": "2026-10-30T19:34:54.605Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=9a7854bd-5ea9-4c7d-b046-0001dd3d0102",
+   "hentet": "2026-11-03T14:56:01.576Z",
    "titel": "7. Julemusikbingo",
    "afsnit": [
     {
@@ -17559,6 +17711,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Dato:\nIndhold:\nAnsvarlig:\nHvem er med:\nSkal der købes noget?:\nSponsorgaver:\nAndet:"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet"
     }
    ],
    "bilag": []
@@ -17568,10 +17724,10 @@
    "kommune": "Sønderborg",
    "udvalg": "Ungdomsrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=ba3f18c8-f771-4123-86ae-98bb96c8523b",
-   "hentet": "2026-10-30T19:34:54.605Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=9a7854bd-5ea9-4c7d-b046-0001dd3d0102",
+   "hentet": "2026-11-03T14:56:01.576Z",
    "titel": "8. Juleafslutning",
    "afsnit": [
     {
@@ -17585,6 +17741,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Skal vi afholde juleafslutning? Hvornår? Hvad skal vi lave?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet"
     }
    ],
    "bilag": []
@@ -18487,8 +18647,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "1. Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -18505,8 +18665,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "2. Orientering om USA's herrelandshold i håndbold",
    "afsnit": [
     {
@@ -18531,8 +18691,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "3. Orientering om status på den boligsociale helhedsplan 2025-2029",
    "afsnit": [
     {
@@ -18557,8 +18717,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "4. Godkendelse af etablering af forsøgsordning med playmakere",
    "afsnit": [
     {
@@ -18583,8 +18743,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "5. Godkendelse af Sønderborg Kommunes deltagelse i Tour de Sønderborg 2027",
    "afsnit": [
     {
@@ -18609,8 +18769,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "6. Godkendelse af udmøntning af midler til talentudviklingsindsatser i 2027",
    "afsnit": [
     {
@@ -18635,8 +18795,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "7. Godkendelse af fordeling af midler til talentsatsning",
    "afsnit": [
     {
@@ -18661,8 +18821,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "8. Godkendelse af nye tider til offentlig morgensvømning i Humlehøj Svømmehal",
    "afsnit": [
     {
@@ -18687,8 +18847,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 10,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "10. Godkendelse af 3. bevillingsrevision 2026",
    "afsnit": [
     {
@@ -18713,8 +18873,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 11,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "11. Drøftelse af forslag til ny puljestruktur i Idræt- og Fritidsudvalget",
    "afsnit": [
     {
@@ -18739,8 +18899,8 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 12,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
    "titel": "12. Drøftelse af prioriterede tilskudsmodtagere",
    "afsnit": [
     {
@@ -18791,17 +18951,21 @@
    "dato": "2026-11-04",
    "type": "dagsorden",
    "nr": 15,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=04b7ca4d-7c41-47e7-a8e2-0ced274bdb12",
-   "hentet": "2026-10-30T19:37:59.686Z",
-   "titel": "16. Generel orientering",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
+   "titel": "16. Orientering om ledelsesinformation - september 2026",
    "afsnit": [
     {
      "titel": "Resumé",
-     "tekst": "Orientering fra formanden\n\nOrientering fra medlemmer\n\nOrientering fra direktøren\nAnalyse af udendørsarealer"
+     "tekst": "Ledelsesinformationen giver et overblik over, hvordan økonomien og aktiviteterne ser ud for det enkelte udvalg i\nløbet af året. Forvaltningen forventer på nuværende tidspunkt et budget i balance ved årets udgang.\n\nIdræt- og Fritidsudvalget orienteres om status."
     },
     {
      "titel": "Indstilling",
-     "tekst": "Forvaltningen indstiller til Idræt- og Fritidsudvalget at tage\norienteringen til efterretning.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en orienteringssag."
+     "tekst": "Forvaltningen indstiller til Idræt- og Fritidsudvalget at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Opfølgning på ledelsesinformation 2026 for Idræt- og Fritidsudvalgets område sker hver måned, hvor der gives en\nstatus og en forventning til årets resultat.\n\nStatus driftsøkonomi:\nForvaltningen forventer på nuværende tidspunkt et budget i balance ved årets udgang.\n\nStatus på områder under Økonomi- og Strategiudvalget:\nForvaltningen forventer på nuværende tidspunkt et budget i balance ved årets udgang.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en orienteringssag."
     }
    ],
    "bilag": []
@@ -19148,8 +19312,8 @@
    "dato": "2026-11-03",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=5ef9ba38-6590-4c97-9de3-dbf38fc1dc3d",
-   "hentet": "2026-10-30T19:38:21.474Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=eb1eb1b0-0a40-41fc-acbc-c8d245fd9518",
+   "hentet": "2026-11-03T14:56:33.044Z",
    "titel": "1. Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -19162,7 +19326,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Udviklingen af Rønhaveplads og Øvre Perlegade har været genstand for en række analyser, strategier og\nudviklingsprojekter gennem de seneste 15 år. Fælles for arbejdet har været ønsket om at styrke byliv, handel,\nopholdsmuligheder og forbindelsen mellem bymidten og havnen.\n\nSiden 2010’erne har ændrede handels- og forbrugsmønstre påvirket den nordlige del af bymidten, herunder Øvre\nPerlegade og Rønhaveplads. Udviklingen skyldes blandt andet øget nethandel og ændrede kundestrømme i\nSønderborg by. Flere analyser og strategier for Sønderborg Bymidte (se bilag) har derfor peget på behovet for at\nstyrke området gennem flere aktiviteter, oplevelser, opholdsmuligheder og en tættere kobling mellem handel, kultur\nog byliv.\n\nSom led heri gennemførte Sønderborg Kommune i 2021-2022 en borgerproces, som resulterede i tre principskitser\nfor udviklingen af Rønhaveplads. Principskitserne blev behandlet politisk i august 2022, men der blev ikke truffet\nbeslutning om realisering af et projekt, hvorefter arbejdet blev sat i bero.\n\nI de seneste år har lokale aktører arbejdet videre med områdets udvikling. Dette har blandt andet resulteret i en\nudviklings- og handleplan for området omkring Rønhaveplads, Bryggertorvet og den øvre del af Perlegade med\nfokus på byliv, kultur, handel og ophold.\n\nDen 25. august 2026 blev der afholdt et fælles fyraftensmøde mellem formandskaberne for Byudvikling-,\nLanddistrikter- og Infrastrukturudvalget samt Kultur-, Handel- og Turismeudvalget, forvaltningen, Vores Sønderborg\nog repræsentanter fra den lokale arbejdsgruppe. På mødet blev der peget på behovet for at styrke\nsammenhængen mellem byliv, kultur, handel og opholdsmuligheder i området. Der blev ligeledes efterspurgt større\nklarhed om områdets fremtidige udvikling og de fysiske rammer for aktiviteter og arrangementer.\n\nDen 1. september 2026 drøftede Kultur-, Handel- og Turismeudvalget samt Byudvikling-, Landdistrikter- og\nInfrastrukturudvalget områdets udviklingsmuligheder. Drøftelsen viste opbakning til at arbejde videre med\nudviklingen af området, men også behov for en fælles proces, yderligere politisk afklaring og fortsat dialog med\nområdets aktører.\n\nMed budgetaftalen for 2027-2030 er der afsat 1,5 mio. kr. til udvikling af området samt etablering af offentlige\ntoiletfaciliteter ved Rønhaveplads. Bevillingen skal ses i sammenhæng med de tidligere afsatte 1,5 mio. kro til en\nlegeplads. Det fremgår samtidig af budgetaftalen, at midlerne først frigives, når der foreligger en endelig plan for\nområdet.\n\nPå baggrund af drøftelserne blev forvaltningen bedt om at udarbejde et forslag til den videre proces, herunder\nhvordan der kan skabes en fælles retning for områdets udvikling samt sikres fortsat dialog med lokale aktører.\n\nKultur-, Handel og Turismeudvalget drøfter oplægget på udvalgets møde den 3. november 2027.\n\nForvaltningen forslår følgende proces. Se bilag for grafisk version.\n\nQ4 2026 – Politisk informationsmøde\nInformationsmøde for Byudvikling-, Landdistrikter- og Infrastrukturudvalget og Kultur-, Handel- og Turismeudvalget.\nPå mødet orienteres udvalgene om rammerne for udviklingsmulighederne.\n\nQ1 2027 – Workshop med lokale aktører\nWorkshop med blandt andet Vores Sønderborg, den lokale arbejdsgruppe, Deutsches Museum Nordschleswig,\nøvrige erhvervsdrivende i området samt beboere, hvis ejendomme grænser op til projektområdet.\nHer indsamles lokale perspektiver, ønsker og idéer til områdets udvikling, herunder forslag til aktiviteter, ophold og\nevents.\n\nQ1 2027 – Møde mellem formandskaberne\nOpsamling efter workshop med lokale aktører og drøftelse af det videre arbejde.\n\nQ1 2027 – Helhedsplan udarbejdes\nHelhedsplanen udarbejdes på baggrund af de politiske drøftelser og input fra lokale aktører.\n\nQ2 2027 – Præsentation for lokale aktører\nUdkast til helhedsplan præsenteres for de involverede aktører med henblik på kvalificering af det endelige forslag.\n\nQ2 2027 – Politisk behandling\nHelhedsplanen præsenteres for udvalgene med henblik på politisk stillingtagen til den videre realisering.\n\nQ3 2027 – Anlægsfase kan igangsættes\nEfter politisk godkendelse kan de afsatte anlægsmidler til offentligt toilet og legeplads anvendes til realisering af de\nførste tiltag. Der er ikke afsat midler til drift og vedligeholdelse af faciliteterne.\n\nForvaltningen vurderer, at processen vil skabe et fælles grundlag for områdets videre udvikling. Såfremt alle\ninitiativer ikke kan realiseres inden for den eksisterende finansiering, kan udviklingen gennemføres i flere faser over\nen årække. Det afgørende er, at der etableres et fælles målbillede for området, så kommende investeringer og\nprojekter understøtter den samme overordnede vision og udviklingsretning for Øvre Perlegade, Bryggertorvet og\nRønhaveplads.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en drøftelsessag."
+     "tekst": "Udviklingen af Rønhaveplads og Øvre Perlegade har været genstand for en række analyser, strategier og\nudviklingsprojekter gennem de seneste 15 år. Fælles for arbejdet har været ønsket om at styrke byliv, handel,\nopholdsmuligheder og forbindelsen mellem bymidten og havnen.\n\nSiden 2010’erne har ændrede handels- og forbrugsmønstre påvirket den nordlige del af bymidten, herunder Øvre\nPerlegade og Rønhaveplads. Udviklingen skyldes blandt andet øget nethandel og ændrede kundestrømme i\nSønderborg by. Flere analyser og strategier for Sønderborg Bymidte (se bilag) har derfor peget på behovet for at\nstyrke området gennem flere aktiviteter, oplevelser, opholdsmuligheder og en tættere kobling mellem handel, kultur\nog byliv.\n\nSom led heri gennemførte Sønderborg Kommune i 2021-2022 en borgerproces, som resulterede i tre principskitser\nfor udviklingen af Rønhaveplads. Principskitserne blev behandlet politisk i august 2022, men der blev ikke truffet\nbeslutning om realisering af et projekt, hvorefter arbejdet blev sat i bero.\n\nI de seneste år har lokale aktører arbejdet videre med områdets udvikling. Dette har blandt andet resulteret i en\nudviklings- og handleplan for området omkring Rønhaveplads, Bryggertorvet og den øvre del af Perlegade med\nfokus på byliv, kultur, handel og ophold.\n\nDen 25. august 2026 blev der afholdt et fælles fyraftensmøde mellem formandskaberne for Byudvikling-,\nLanddistrikter- og Infrastrukturudvalget samt Kultur-, Handel- og Turismeudvalget, forvaltningen, Vores Sønderborg\nog repræsentanter fra den lokale arbejdsgruppe. På mødet blev der peget på behovet for at styrke\nsammenhængen mellem byliv, kultur, handel og opholdsmuligheder i området. Der blev ligeledes efterspurgt større\nklarhed om områdets fremtidige udvikling og de fysiske rammer for aktiviteter og arrangementer.\n\nDen 1. september 2026 drøftede Kultur-, Handel- og Turismeudvalget samt Byudvikling-, Landdistrikter- og\nInfrastrukturudvalget områdets udviklingsmuligheder. Drøftelsen viste opbakning til at arbejde videre med\nudviklingen af området, men også behov for en fælles proces, yderligere politisk afklaring og fortsat dialog med\nområdets aktører.\n\nMed budgetaftalen for 2027-2030 er der afsat 1,5 mio. kr. til udvikling af området samt etablering af offentlige\ntoiletfaciliteter ved Rønhaveplads. Bevillingen skal ses i sammenhæng med de tidligere afsatte 1,5 mio. kro til en\nlegeplads. Det fremgår samtidig af budgetaftalen, at midlerne først frigives, når der foreligger en endelig plan for\nområdet.\n\nPå baggrund af drøftelserne blev forvaltningen bedt om at udarbejde et forslag til den videre proces, herunder\nhvordan der kan skabes en fælles retning for områdets udvikling samt sikres fortsat dialog med lokale aktører.\n\nKultur-, Handel og Turismeudvalget drøfter oplægget på udvalgets møde den 3. november 2027.\n\nForvaltningen forslår følgende proces. Se bilag for grafisk version.\n\nQ4 2026 – Politisk informationsmøde\nInformationsmøde for Byudvikling-, Landdistrikter- og Infrastrukturudvalget og Kultur-, Handel- og Turismeudvalget.\nPå mødet orienteres udvalgene om rammerne for udviklingsmulighederne.\n\nQ1 2027 – Workshop med lokale aktører\nWorkshop med blandt andet Vores Sønderborg, den lokale arbejdsgruppe, Deutsches Museum Nordschleswig,\nøvrige erhvervsdrivende i området samt beboere, hvis ejendomme grænser op til projektområdet.\nHer indsamles lokale perspektiver, ønsker og idéer til områdets udvikling, herunder forslag til aktiviteter, ophold og\nevents.\n\nQ1 2027 – Møde mellem formandskaberne\nOpsamling efter workshop med lokale aktører og drøftelse af det videre arbejde.\n\nQ1 2027 – Helhedsplan udarbejdes\nHelhedsplanen udarbejdes på baggrund af de politiske drøftelser og input fra lokale aktører.\n\nQ2 2027 – Præsentation for lokale aktører\nUdkast til helhedsplan præsenteres for de involverede aktører med henblik på kvalificering af det endelige forslag.\n\nQ2 2027 – Politisk behandling\nHelhedsplanen præsenteres for udvalgene med henblik på politisk stillingtagen til den videre realisering.\n\nQ3 2027 – Anlægsfase kan igangsættes\nEfter politisk godkendelse kan de afsatte anlægsmidler til offentligt toilet og legeplads anvendes til realisering af de\nførste tiltag. Der er ikke afsat midler til drift og vedligeholdelse af faciliteterne.\n\nForvaltningen vurderer, at processen vil skabe et fælles grundlag for områdets videre udvikling. Såfremt alle\ninitiativer ikke kan realiseres inden for den eksisterende finansiering, kan udviklingen gennemføres i flere faser over\nen årække. Det afgørende er, at der etableres et fælles målbillede for området, så kommende investeringer og\nprojekter understøtter den samme overordnede vision og udviklingsretning for Øvre Perlegade, Bryggertorvet og\nRønhaveplads.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en drøftelsessag.\n\nSupplerende sagsfremstilling til Byudvikling-, Landdistrikter- og Infrastrukturudvalget den 3.\nnovember 2026\n\nKultur-, Handel- og Turismeudvalget har drøftet processen på mødet den 3. november 2026 og har følgende\nbemærkninger til sagen:\n\nUdvalget ønsker en åben dialog med borgere og aktører i forbindelse med den forslåede workshop, som\nkan danne udgangspunkt for den videre proces og fortsatte udvikling af Øvre Perlegade, herunder\nRønhaveplads.\nUdviklingen af området skal tage afsæt i konkrete perspektiver fra borgere og aktører, sådan at det\nafspejler de fælles ønsker, der er for området.\n\nBemærkningerne fra Kultur-, Handel- og Turismeudvalget forelægges Byudvikling-, Landdistrikter- og\nInfrastrukturudvalget forud for udvalgets behandling af sagen."
     }
    ],
    "bilag": []
@@ -19174,8 +19338,8 @@
    "dato": "2026-11-03",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=5ef9ba38-6590-4c97-9de3-dbf38fc1dc3d",
-   "hentet": "2026-10-30T19:38:21.474Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=eb1eb1b0-0a40-41fc-acbc-c8d245fd9518",
+   "hentet": "2026-11-03T14:56:33.044Z",
    "titel": "4. Godkendelse af anvendelse af bystrategiske midler til projekt i Skratmosen, Sønderborg",
    "afsnit": [
     {
@@ -19204,8 +19368,8 @@
    "dato": "2026-11-03",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=5ef9ba38-6590-4c97-9de3-dbf38fc1dc3d",
-   "hentet": "2026-10-30T19:38:21.474Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=eb1eb1b0-0a40-41fc-acbc-c8d245fd9518",
+   "hentet": "2026-11-03T14:56:33.044Z",
    "titel": "7. Godkendelse af 3. bevillingsrevision 2026",
    "afsnit": [
     {
@@ -19230,8 +19394,8 @@
    "dato": "2026-11-03",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=5ef9ba38-6590-4c97-9de3-dbf38fc1dc3d",
-   "hentet": "2026-10-30T19:38:21.474Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=eb1eb1b0-0a40-41fc-acbc-c8d245fd9518",
+   "hentet": "2026-11-03T14:56:33.044Z",
    "titel": "8. Orientering om ledelsesinformation 2026 - ultimo september",
    "afsnit": [
     {
@@ -19256,8 +19420,8 @@
    "dato": "2026-11-03",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=5ef9ba38-6590-4c97-9de3-dbf38fc1dc3d",
-   "hentet": "2026-10-30T19:38:21.474Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=eb1eb1b0-0a40-41fc-acbc-c8d245fd9518",
+   "hentet": "2026-11-03T14:56:33.044Z",
    "titel": "9. Orientering om status på udmøntningsplan 2026-2029",
    "afsnit": [
     {
@@ -19282,8 +19446,8 @@
    "dato": "2026-11-03",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=5ef9ba38-6590-4c97-9de3-dbf38fc1dc3d",
-   "hentet": "2026-10-30T19:38:21.474Z",
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=eb1eb1b0-0a40-41fc-acbc-c8d245fd9518",
+   "hentet": "2026-11-03T14:56:33.044Z",
    "titel": "10. Generel orientering",
    "afsnit": [
     {
@@ -19553,60 +19717,330 @@
     }
    ],
    "bilag": []
+  },
+  "soenderborg-2026-11-04-idraet-og-fritidsudvalget-13": {
+   "id": "soenderborg-2026-11-04-idraet-og-fritidsudvalget-13",
+   "kommune": "Sønderborg",
+   "udvalg": "Idræt- og Fritidsudvalget",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
+   "titel": "13. Drøftelse af model for fordeling af faste tider i haller",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I forbindelse med fordelingen af haltider for sæson 2026/2027 har forvaltningen og Fritidsrådet modtaget en række\nhenvendelser fra foreninger, som oplever udfordringer med den nuværende fordeling af haltider i Sønderborg by.\nPå den baggrund drøftede Fritidsrådet den 21. oktober 2026 den nuværende model for fordeling af faste haltider\nsamt mulige justeringer.\n\nMed afsæt i de modtagne henvendelser og Fritidsrådets drøftelser lægger forvaltningen op til, at Idræt- og\nFritidsudvalget drøfter principperne for en fremtidig model for fordeling af haltider.\n\nSagen har sammenhæng til Byrådets Vision 2026-2029 om, at alle skal have mulighed for at være en del af et\nfællesskab og opleve, at de kan bidrage og have værdi for andre."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Idræt- og Fritidsudvalget at drøfte\nmodel for fordeling af faste tider i haller."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I maj og juni 2026 modtog forvaltningen og Fritidsrådet en række henvendelser fra foreninger i forbindelse med\nfordelingen af haltider for sæson 2026/2027. Henvendelserne vedrørte særligt fordelingen i Sønderborg by. Flere\nforeninger oplevede, at de ikke havde fået tilstrækkelig haltid til deres aktiviteter, enten som følge af færre tildelte\ntimer end tidligere eller på grund af et øget antal hold. Samlet blev der efterspurgt yderligere otte haltimer.\n\nForvaltningen vurderer, at henvendelserne giver anledning til en nærmere vurdering af den nuværende\nfordelingsmodel. Fritidsrådet drøftede problemstillingerne den 21. oktober 2026, og forvaltningen forelægger nu\nIdræt- og Fritidsudvalget et udkast til en justeret model med henblik på politisk drøftelse. Udkastet indeholder\nfølgende hovedelementer:\n\nHørup og Sundeved indgår i den fælles fordelingsmodel\nEn gennemgang viser, at der aktuelt er 14 ledige timer i Sundeved Hallerne og Hørup Hallerne. Data fra\nHallMonitor viser samtidig, at disse haller havde den laveste aktivitet blandt de undersøgte haller i sæson\n2025/2026. Det kan derfor overvejes at lade de fire haller i Hørup og Sundeved indgå i den samme pointbaserede\nfordelingsmodel som hallerne i Sønderborg by. Det vil udvide den samlede kapacitet, som foreningerne kan søge\ntider i, og samtidig skabe et mere ensartet grundlag for fordelingen. Modellen indebærer, at foreninger, der\nanvender hallerne i Hørup og Sundeved, fremover skal indsende medlemstal for de enkelte hold på samme vilkår\nsom øvrige foreninger i modellen.\n\nNærhedsprincip for børn\n\nSom en del af modellen foreslås det, at nærhed prioriteres for børn til og med 12 år. Det betyder eksempelvis, at\nlokale hold med børn til og med 12 år prioriteres til tider i deres nærområde, før tiderne fordeles til foreninger uden\nfor området.\n\nBedre udnyttelse af haller med mulighed for harpiks\nVed at inddrage hallerne i Hørup og Sundeved i modellen øges samtidig adgangen til haller, hvor brug af harpiks er\ntilladt. Det kan bidrage til at imødekomme kapacitetspresset for håndbolden i Sønderborg by.\n\nSeniorfodbold\nDen nuværende pointmodel giver ikke seniorfodbold adgang til haltider i den første fordelingsrunde. Seniorfodbold\nkan efter de gældende retningslinjer tildeles ledige tider efter 1. oktober. Hvis hallerne i Hørup og Sundeved\nomfattes af samme model, vil dette princip også gælde her. Det kan frigive yderligere kapacitet til de aktiviteter, der\nprioriteres i den ordinære fordeling.\n\nKløvermark Hallen og parasport\nSom en del af udkastet foreslås det desuden at give Kløvermark Hallen en særlig funktion som samlingspunkt for\nparasport med behov for en idrætshal. Øvrige foreninger vil fortsat kunne tildeles tider i hallen. Det foreslås\nsamtidig, at folkeoplysende foreningers parasportshold sikres mulighed for op til to timers samlet træning pr. hold\nuafhængigt af deltagerantal. Fordelingen vil fortsat indgå i den samlede årlige halfordeling.\n\nPå baggrund af Idræt- og Fritidsudvalgets drøftelse vil forvaltningen udarbejde et forslag til reviderede\nretningslinjer, som forelægges udvalget til politisk behandling i december 2026. Eventuelle ændringer vil kunne\ntræde i kraft ved fordelingen af haltider for sæson 2027/2028.\n\nDerudover kan der på et senere tidspunkt tages politisk stilling til mere grundlæggende principper for fordelingen,\nherunder:\nPrioritering mellem forskellige aldersgrupper\nPrioritering mellem bredde- og talentidræt\nMuligheden for idrætsspecifikke haller\nEventuel brugerbetaling som redskab til bedre udnyttelse af tildelte tider\n\nEventuelle ændringer på disse områder vil kunne behandles særskilt og vil tidligst kunne få virkning fra sæson\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en drøftelsessag."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-04-idraet-og-fritidsudvalget-16": {
+   "id": "soenderborg-2026-11-04-idraet-og-fritidsudvalget-16",
+   "kommune": "Sønderborg",
+   "udvalg": "Idræt- og Fritidsudvalget",
+   "dato": "2026-11-04",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=fe94b9a1-7fd6-42e5-b223-c5ae270c84fb",
+   "hentet": "2026-11-03T14:56:26.068Z",
+   "titel": "17. Generel orientering",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Orientering fra formanden\n\nOrientering fra medlemmer\n\nOrientering fra direktøren\nAnalyse af udendørsarealer"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Idræt- og Fritidsudvalget at tage\norienteringen til efterretning.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser, idet det er en orienteringssag."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-1": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-1",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "1. Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at godkende\ndagsordenen."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-2": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-2",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "2. Orientering om ny beredskabschef",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Jacob Edemann Jørgensen er ansat som ny beredskabschef i Sønderborg Kommune med tiltrædelse den 1.\nnovember 2026. Han kommer med 17 års erfaring fra Forsvaret og en bred baggrund inden for blandt andet\noperativt beredskab, krisestyring, strategisk udvikling, politisk betjening og ledelse.\n\nSom beredskabschef får Jacob Edemann Jørgensen ansvaret for Beredskab Sønderborg samt Vagtcentralen,\nparkeringskontrollen i tre sønderjyske kommuner og Flådestyring. Han bliver samtidig en del af ledelsen i Drift og\nBeredskab Sønderborg."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Jacob Edemann Jørgensen er orlogskaptajn og har gennem sin karriere arbejdet med både operative og\nstrategiske beredskabsopgaver. Han har blandt andet erfaring fra Forsvarsministeriet, Forsvarskommandoen og\nSøværnet.\n\nHan har desuden ledelseserfaring med ansvar for medarbejdere, økonomi og budgetter. Den operative erfaring\nomfatter blandt andet tjeneste som operationsofficer og medlem af skibsledelsen på fregatten Niels Juel samt\nopgaver inden for det nationale maritime redningsberedskab.\n\nBeredskab Sønderborg bygger på et tæt samspil mellem fastansatte, deltidsansatte, frivillige enheder og de\nfrivillige brandværn. Den nye beredskabschef skal være med til at styrke samarbejdet og skabe fælles retning på\ntværs af fagligheder, roller og kulturer.\n\nUd over beredskabet omfatter ledelsesansvaret Vagtcentralen, parkeringskontrollen i tre sønderjyske kommuner og\nFlådestyring, som driver og koordinerer Sønderborg Kommunes cirka 450 køretøjer.\n\nBeredskabschefen bliver desuden en del af ledelsen i Drift og Beredskab Sønderborg med ansvar for blandt andet\nledelse, økonomi, politisk betjening og udviklingen af kommunens samlede robusthed.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-3": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-3",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "3. Orientering om status for den Risikobaserede Dimensionering 2026-2029 (RBD)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Formålet med den Risikobaserede Dimensionering (RBD) er at Beredskab Sønderborg skal kunne yde en\nforsvarlig forebyggende, begrænsende og afhjælpende indsats i forbindelse med skader på personer, ejendomme\nog miljø ved ulykker og katastrofer eller overhængende fare herfor.\n\nBeredskabskommissionen blev den 3. juni 2026 orienteret om planen for RBD 2026-2029, som Byrådet havde\ngodkendt den 29. april 2026. Den 8. september 2026 blev Beredskabskommissionen orienteret om\nBeredskabsstyrelsens foreløbige udtalelse til planen.\n\nSiden sidste møde i Beredskabskommissionen, har Beredskabsstyrelsen afgivet sin endelige udtalelse den 22.\nseptember 2026. Styrelsen vurderer samlet set, at Beredskab Sønderborg med den planlagte organisering,\nbemanding og materiel kan håndtere både almindelige udrykninger og større, ekstraordinære hændelser på en\nforsvarlig måde. Den endelige udtalelse ændrer ikke planens overordnede indhold, men indeholder en række\nanbefalinger til præciseringer og yderligere analyser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Beredskabsstyrelsens endelige udtalelse understøtter udkastet som Beredskab Sønderborg modtog den 24.\naugust 2026, idet Styrelsen fremhæver, at kommunens kortlægning og beskrivelse af de lokale risici er grundig og\nunderstøttet af relevante GIS-kort.\n\nBeredskabsstyrelsen vurderer, at der overordnet er sammenhæng mellem kommunens risikobillede og det\nplanlagte serviceniveau for redningsberedskabet, og at Beredskab Sønderborg vil kunne yde en forsvarlig indsats.\n\nUdtalelsen indeholder samtidig en række anbefalinger, herunder om at supplere planen med oplysninger om\nkapaciteten ved større indkvarteringshændelser og et bedre datagrundlag for behovet for vand til brandslukning.\nAnbefalingerne indarbejdes i plan for RBD 2030-2033.\n\nBeredskabsstyrelsen anmoder derudover kommunen om senest den 31. marts 2027 at fremsende to redegørelser:\nén om responstiden, når den planlagte brandstation ikke kan stille med den forudsatte udrykningssammensætning,\nog én om monitorering og analyse af den nuværende organisering af indsatsledervagten. Beredskab Sønderborg\nskal nu faktatjekke udtalelsen, iværksætte den nødvendige monitorering og udarbejde redegørelserne inden fristen.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-4": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-4",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "4. Orientering om tildelt akutpulje",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Regeringen og KL har afsat en ekstraordinær pulje til at styrke kommunernes beredskab i 2026. Midlerne skal\nblandt andet anvendes til nødvendigt materiel og kapacitet, så kommunerne bedre kan opretholde kritiske\nfunktioner ved kriser og længerevarende hændelser. Sønderborg Kommune modtager ca. 3,3 mio. kr. fra puljen.\nHeraf er 2,5 mio. kr. disponeret til sundhedsberedskab og forberedende indkøb på Social-, Senior- og\nHandicapområdet, mens ca. 0,8 mio. kr. er tilbage til øvrige beredskabsformål.\n\nBeredskabskommissionen orienteres om fordelingen af de økonomiske midler og om, hvilken betydning det kan få\nfor kommunens øvrige behov for beredskabsmateriel.\n\nSagen understøtter Byrådets Vision om et godt liv, idet et robust kommunalt beredskab bidrager til at beskytte\nborgere og opretholde kritiske funktioner under kriser og længerevarende hændelser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Som led i aftalen om kommunernes økonomi er der på landsplan afsat 270 mio. kr. i 2026 til ekstraordinære\nkommunale beredskabsindsatser. Pengene fordeles til kommunerne efter reglerne om Det Udvidede\nTotalbalanceprincip, også kaldet DUT. Princippet indebærer, at kommunerne kompenseres økonomisk, når nye\neller ændrede statslige krav medfører kommunale udgifter. Sønderborg Kommunes andel udgør ca. 3,3 mio. kr.\n\nFormålet med den ekstraordinære bevilling er at styrke kommunernes evne til at håndtere kriser og opretholde\nkritiske funktioner. Ifølge KL skal hovedparten af midlerne anvendes til materiel og kapacitet, der kan gøre de\nkommunale beredskaber mere robuste og skalerbare. Det kan eksempelvis være nødstrømsanlæg, generatorer,\nbatteriløsninger, kommunikationsudstyr, maskiner, forsyninger eller andre løsninger, som er nødvendige, hvis den\nnormale drift bliver afbrudt.\n\nAf den nationale pulje er 50 mio. kr. målrettet til beredskabsindsatser på ældreområdet i landets kommuner. Det\nsvarer til ca. 19 pct. af den samlede pulje.\n\nI Sønderborg Kommune er 2,5 mio. kr. af de ca. 3,3 mio. kr. imidlertid disponeret til sundhedsberedskab og\nforberedende indkøb under Social-, Senior- og Handicapudvalget. Beløbet blev afsat i forbindelse med 3.\nbevillingsrevision 2025 og er efterfølgende besluttet finansieret af de statslige beredskabsmidler for 2026. Herefter\ner der resterende 0,8 mio. kr. til andre kommunale beredskabsbehov.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-6": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-6",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "6. Orientering om det øgede trusselsbillede",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Direktionen besluttede den 5. oktober 2026 at prioritere en gennemgang og efter behov opdatering af\nberedskabsplanerne for strømsvigt på udvalgte kritiske områder. Arbejdet skal være gennemført senest den 31.\nmarts 2027.\n\nBeredskabskommissionen orienteres om baggrunden for indsatsen og den videre proces. Ministerens brev,\nSAMSIK’s trusselsvurdering og kommunens detaljerede prioriteringsliste er vedlagt som bilag.\n\nSagen understøtter Byrådets Vision om et godt liv, idet et robust kommunalt beredskab bidrager til at beskytte\nborgere og opretholde kritiske funktioner under kriser og længerevarende hændelser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Forsvarets Efterretningstjeneste (FE), Politiets Efterretningstjeneste (PET) og Styrelsen for Samfundssikkerhed\n(SAMSIK) offentliggjorde den 24. september 2026 nye trusselsvurderinger. Vurderingerne peger på en intensiveret\nrussisk hybridkrig mod Vesten, herunder Danmark, og en øget risiko for blandt andet sabotage og destruktive\ncyberangreb.\n\nSAMSIK har på den baggrund hævet trusselsniveauet for destruktive cyberangreb fra middel til høj, og\nkommunerne er blevet opfordret til at gennemgå og efter behov opdatere relevante beredskabsplaner. Det\nskærpede trusselsbillede og opfordringen til kommunerne er nærmere beskrevet i ministerens brev i bilag 1 og\nSAMSIK’s trusselsvurdering i bilag 2.\n\nIfølge trusselsvurderingerne kan de russiske cyberangreb omfatte angreb mod kommunale institutioner eller kritisk\ninfrastruktur og medføre længerevarende nedbrud på eksempelvis el-, tele-, data- og vandforsyningen. Da\nkommunens kritiske funktioner er afhængige af strøm, kan et længerevarende og utilstrækkeligt håndteret\nstrømsvigt få væsentlige konsekvenser, særligt for sårbare borgere.\n\nPrioritering af strømsvigt\nDirektionen har på den baggrund besluttet, at udvalgte afdelinger skal gennemgå og efter behov opdatere deres\nberedskabsplaner for strømsvigt. Arbejdet skal i første omgang omfatte de kommunale områder, der varetager\nkritiske funktioner, systemer, krisestyring og krisekommunikation.\n\nFølgende områder er prioriteret:\nOmsorg og Udvikling: plejecentre, botilbud samt hjemme- og sygeplejen.\nTeknik, Miljø og Bæredygtighed: krisestyring, drikkevand og spildevand.\nBørn, Uddannelse og Sundhed: det psykosociale beredskab.\nØkonomi: IT.\nKommunaldirektørens Stabe: kommunikation.\n\nDen nærmere opgavebeskrivelse, herunder konkrete aktiviteter inden for hvert fokusområde, fremgår af\nkommunens prioriteringsliste i bilag 3.\n\nArbejdet gennemføres af de ansvarlige medarbejdere med støtte fra kommunens beredskabsplanlæggere og\nfortsætter frem til den 31. marts 2027. Herefter samles en status til Direktionen, som samtidig får forelagt en\nprioriteringsliste for de efterfølgende seks måneders beredskabsplanlægning.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-7": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-7",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "7. Orientering om beredskabsplanlægning",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Beredskabskommissionen orienteres om status for den ’’Generelle beredskabsplan 2026-2029’’, som fastlægger\nhvornår og hvordan kommunen aktiverer sin krisestyring i forbindelse med større hændelser og opstået kriser.\n\nTil planen udarbejdes bilaget ”Politik for fortsat drift 2026-2029”, der beskriver, hvordan kommunen har organiseret\narbejdet med beredskabsplanlægning.\n\nDen generelle beredskabsplan er sendt til kommentering hos Styrelsen for Samfundssikkerhed (SAMSIK), og\ntidsplanen frem mod Byrådets endelige godkendelse den 22. december 2026 følges indtil videre.\n\nSagen understøtter Byrådets vision om et godt liv ved at styrke kommunens samlede beredskab og sikre, at\nkritiske kommunale funktioner kan opretholdes under større hændelser, kriser og længerevarende\ndriftsforstyrrelser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den Generelle beredskabsplan 2026-2029 blev sendt til SAMSIK den 16. september 2026. Den forventede\nbehandlingstid hos SAMSIK er seks uger.\n\nTidsplan for videre behandling og endelig godkendelse:\n16. september 2026: Planen er sendt til SAMSIK til kommentering. Kommentarer og rettelser fra SAMSIK\nindarbejdes.\n3. november 2026: Planen sendes i intern høring i forvaltningerne. Kommentarer og rettelser indarbejdes.\n24. november 2026: Planen sendes til behandling i Direktionen og Økonomi- og Strategiudvalget.\nEventuelle kommentarer og rettelser indarbejdes.\n22. december 2026: Planen sendes til Byrådet med henblik på endelig godkendelse.\n\nSideløbende arbejdes der med bilaget ”Politik for fortsat drift”. Bilaget skal vedlægges den generelle\nberedskabsplan og fastlægger, hvordan Sønderborg Kommune har organiseret arbejdet med\nberedskabsplanlægning, herunder hvem der har ansvaret for dette arbejde i kommunen, og retningslinjerne for\nberedskabsplaner og øvelser. ’’Politik for fortsat drift’’ følger samme tidsplan som den generelle beredskabsplan.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-8": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-8",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "8. Orientering om status for de 12 brandstationer",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Beredskabets operative leder orienterer om status på de 12 brandstationer."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Forvaltningen orienterer om relevante parametre, der er afgørende for robustheden.\n\nNøgletallene vil blive gennemgået på mødet.\n\nDer afgives status på de enkelte stationers robusthed og evne til at honorere\nsamarbejdskontrakten vedrørende mandskab, afgangstider og uddannelsesniveau.\n\nStationerne er gensidigt forpligtede til at dække udfordrede områder, så det har minimal\nindvirkning på evnen til at opretholde beredskabet.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-9": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-9",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "9. Orientering om økonomiopfølgning - status ultimo september 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Økonomiopfølgningen giver en status på, hvordan økonomien ser ud for Beredskab Sønderborg.\n\nDer forventes balance ved årets udgang.\n\nVed denne orientering gives der ligeledes status på anlægsvirksomheden."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at tage\norienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der afgives status på økonomien, samt forventning til årets resultat fire gange årligt på Beredskabskommissionens\nmøder.\n\nDer forventes balance ved årets udgang.\n\nResultatet for Beredskab Sønderborg ultimo september 2026 viser et forbrug på 12,294 mio. kr. Dette svarer til\n65,33 pct. af det korrigerede budget, som udgør 18,818 mio. kr.\n\nBevillingsmæssige konsekvenser\nØkonomiforvaltningen oplyser, at sagen ikke har bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "soenderborg-2026-11-10-beredskabskommission-10": {
+   "id": "soenderborg-2026-11-10-beredskabskommission-10",
+   "kommune": "Sønderborg",
+   "udvalg": "Beredskabskommission",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.sonderborgkommune.dk/vis?id=7dd8fbee-0bec-414f-9212-887c78cee4b5",
+   "hentet": "2026-11-03T14:56:39.026Z",
+   "titel": "10. Generel orientering",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Orientering fra formanden\n\nOrientering fra politidirektøren\n\nOrientering fra øvrige medlemmer\n\nOrientering fra Beredskab Sønderborg\n1. Hændelser på Huholt Skole under øvelse\n2. Status på ansættelsesproces\nOperativ leder\nLeder af Vagtcentralen\n3. Politik for fortsat drift."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller til Beredskabskommissionen at tage\norienteringen til efterretning."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=ff4763bf-3a01-409f-aadc-6c3da28c15b8": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=d41a0991-036b-4b7d-bc6e-4478b5e7c3f2": {
-   "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=392b89ce-0538-44cf-b8be-3ae4742e5498": {
    "senest": "2026-10-27",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=069c4f26-40be-406f-b7dd-e8dc462e6355": {
    "senest": "2026-02-27",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=041a140a-9509-4e83-9939-db05455bc7a3": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=64faf7e9-d412-43e5-a1a3-60579970812f": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=8b713086-267c-418a-8519-5df4de08f2da": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=8dd50bb6-aced-43bd-a246-3f49225843a4": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=a294ef4b-c0c9-4705-95d6-3e381c43d90e": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=56069540-1769-4ad5-a5e4-a3734513612a": {
    "senest": "2025-12-12",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=da2a514f-2b31-48e0-a5fa-ea8b29087386": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=ed2236b8-8e9a-4cda-bf4b-e3020396afe7": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=e4fc35f5-6528-4803-a2aa-b608636650d4": {
    "senest": "2025-12-16",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=bfd48ca0-6d1d-4912-8045-9cdbe8b725fd": {
    "senest": "2025-09-27",
@@ -19634,103 +20068,103 @@
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=b0a3d8fe-7c99-4be0-98ad-8b6dc0c4d9d9": {
    "senest": "2026-10-31",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=04da656e-dd9d-4526-a276-b9e07d0febf5": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=5fe0c0aa-2bfc-4d78-9fe7-400ea6ca2d67": {
-   "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=d9e6a18f-a245-4187-adce-f7ebfe7d7e83": {
    "senest": "2026-06-04",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=a92f5ca0-5704-4509-8995-fd65991feb37": {
-   "senest": "2026-10-21",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=a761205d-2f31-46d2-85a9-e60eeb0e1bb2": {
-   "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=fb738bd8-1272-4b12-98bb-5f8fbaf55992": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=e3d67ef2-1237-4540-a1c0-b65592ba5382": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=d0959141-68da-439b-8064-cb378db2ddfe": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=6c55b04e-2713-4fbb-ab53-922e8d9ab953": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=6ca8e8d6-5c34-4294-bd48-113f2e9323d2": {
-   "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=e97adb8b-a1e8-468f-9186-2ee19d439d5f": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=c33d893a-50c7-43d9-85c2-a08f71cf515f": {
-   "senest": "2026-09-09",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=ab57caab-f709-4956-b6d0-e3af569379b3": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=bbfa65b4-b2d1-47f1-b54a-4a12d1c9cb2e": {
    "senest": "2025-11-07",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=0b69e1fa-6d46-4f83-b7f0-3a617dd5c7d3": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=9110fdc1-8787-4fd0-b676-533897cdc394": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=33abbda0-b410-442e-bf37-23eb9c192517": {
    "senest": "2025-12-12",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=4864b627-d1fa-465d-baf8-c8dc1c3a023a": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=cd077602-3284-4f3c-a5c9-cb1aa9ac5d05": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=4d057dae-0b7c-4028-86aa-d29a6f4a0026": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=20d61ed7-b2c1-4a78-817e-2e48cd961aac": {
    "senest": "2026-10-15",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=6b78e9e6-3f9d-4234-b915-d5ba2939be81": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=b49783da-5bc8-4f80-b4d0-20ef814fa592": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=d306c35b-7958-4f5a-a2ce-2e03e343e770": {
    "senest": "2026-10-15",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=7d069885-ec78-4d09-a609-533caf20092d": {
    "senest": "2025-09-27",
@@ -19770,11 +20204,11 @@
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=2c6c4495-ceeb-4d36-830b-b8dcd41a39e5": {
    "senest": "2026-10-07",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/ForCommittee?committeeId=f53a9ea8-bf61-4240-af77-24b8d215bebe": {
    "senest": "2026-10-07",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.sonderborgkommune.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -19782,6 +20216,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-02T22:57:02.693Z",
+ "opdateret": "2026-11-03T14:56:39.029Z",
  "kommune": "Sønderborg"
 }

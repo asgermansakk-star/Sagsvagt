@@ -431,6 +431,22 @@
    "dato": "2026-11-02",
    "punkter": 16,
    "parser": 3
+  },
+  "b1115ee4-a66a-414c-b93e-fe622766b8b0": {
+   "lastmod": "2026-11-03",
+   "type": "dagsorden",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-11-09",
+   "punkter": 10,
+   "parser": 3
+  },
+  "27ca53b3-6353-461c-bb69-854425ab4163": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget",
+   "dato": "2026-11-02",
+   "punkter": 6,
+   "parser": 3
   }
  },
  "sager": {
@@ -13066,15 +13082,19 @@
    "kommune": "Hjørring",
    "udvalg": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=0cfe55d8-5b82-4267-96ad-b2f383181247",
-   "hentet": "2026-10-29T11:14:50.029Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=27ca53b3-6353-461c-bb69-854425ab4163",
+   "hentet": "2026-11-03T15:03:27.045Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Godkendelse af dagsorden."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Arbejdsmarkeds- Erhvervs- og Uddannelsesudvalget godkendte dagsordenen."
     }
    ],
    "bilag": []
@@ -13084,10 +13104,10 @@
    "kommune": "Hjørring",
    "udvalg": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=0cfe55d8-5b82-4267-96ad-b2f383181247",
-   "hentet": "2026-10-29T11:14:50.029Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=27ca53b3-6353-461c-bb69-854425ab4163",
+   "hentet": "2026-11-03T15:03:27.045Z",
    "titel": "Godkendelse af udmøntningsplan for budget 2027-2030",
    "afsnit": [
     {
@@ -13105,6 +13125,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRNE- OG ARBEJDSMARKEDSFORVALTNINGEN\nINDSTILLER\nat Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget godkender forslag til\nudmøntningsplan for elementerne i budgetforliget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget godkendte forslag til\nudmøntningsplan for elementerne i budgetforliget.\nUdvalget besluttede endvidere, at udviklingen i forsørgelsesudgifterne - som følge af\n\ntilpasningen af Hjørring-modellen - følges tæt."
     }
    ],
    "bilag": [
@@ -13123,10 +13147,10 @@
    "kommune": "Hjørring",
    "udvalg": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=0cfe55d8-5b82-4267-96ad-b2f383181247",
-   "hentet": "2026-10-29T11:14:50.029Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=27ca53b3-6353-461c-bb69-854425ab4163",
+   "hentet": "2026-11-03T15:03:27.045Z",
    "titel": "Økonomirapport 2 2026 - Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalgets område",
    "afsnit": [
     {
@@ -13144,6 +13168,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRNE- OG ARBEJDSMARKEDSFORVALTNINGEN INDSTILLER\nat Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget godkender ansøgte omplaceringer inden for\nsektorområderne jævnfør bilag 2\nat Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget godkender Økonomirapport 2 og oversender til videre\nbehandling i Økonomiudvalg og Byråd, herunder ansøgte tillægsbevillinger jævnfør bilag 2."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget godkendte indstillingerne."
     }
    ],
    "bilag": [
@@ -13162,10 +13190,10 @@
    "kommune": "Hjørring",
    "udvalg": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=0cfe55d8-5b82-4267-96ad-b2f383181247",
-   "hentet": "2026-10-29T11:14:50.029Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=27ca53b3-6353-461c-bb69-854425ab4163",
+   "hentet": "2026-11-03T15:03:27.045Z",
    "titel": "Status for henvendelsen fra Københavns Kommune om modtagelse af ukrainske flygtninge",
    "afsnit": [
     {
@@ -13183,6 +13211,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRNE- OG ARBEJDSMARKEDSFORVALTNINGEN\nINDSTILLER\nat Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget tager orienteringen til\nefterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget tog orienteringen til efterretning."
     }
    ],
    "bilag": []
@@ -13192,10 +13224,10 @@
    "kommune": "Hjørring",
    "udvalg": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=0cfe55d8-5b82-4267-96ad-b2f383181247",
-   "hentet": "2026-10-29T11:14:50.029Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=27ca53b3-6353-461c-bb69-854425ab4163",
+   "hentet": "2026-11-03T15:03:27.045Z",
    "titel": "Månedsstatistik på Arbejdsmarkedsområdet - september 2026",
    "afsnit": [
     {
@@ -13213,6 +13245,10 @@
     {
      "titel": "Indstilling",
      "tekst": "DIREKTØREN FOR BØRNE- OG ARBEJDSMARKEDSFORVALTNINGEN\nINDSTILLER\nat Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget drøfter månedsstatistikken"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget drøftede månedsstatistikken.\n\nArbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget drøftede månedsstatistikken."
     }
    ],
    "bilag": [
@@ -13227,15 +13263,15 @@
    "kommune": "Hjørring",
    "udvalg": "Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=0cfe55d8-5b82-4267-96ad-b2f383181247",
-   "hentet": "2026-10-29T11:14:50.029Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=27ca53b3-6353-461c-bb69-854425ab4163",
+   "hentet": "2026-11-03T15:03:27.045Z",
    "titel": "Orientering, Arbejdsmarkeds-, Erhvervs- og Uddannelsesudvalget",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Formanden\n\nMedlemmerne\n\nForvaltningen\nOrienterer om en konkret personsag\nBilag: Invitation til uddannelsesmesse"
+     "tekst": "Formanden\nOrienterede om Uddannelsesmessen\nOrienterede om KL's repræsentantskabsmøde\nOrienterede om KL's Jobcamp den 12. og 13. november\nOrienterede om status for arbejdet med etablering af LAR\nOrienterede om en anonym henvendelse til udvalget\n\nMedlemmerne\n\nForvaltningen\nOrienterede om en konkret personsag\nBilag: Invitation til uddannelsesmesse"
     }
    ],
    "bilag": []
@@ -14228,8 +14264,8 @@
    "dato": "2026-11-09",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
    "titel": "Mødedeltagere",
    "afsnit": [
     {
@@ -14246,8 +14282,8 @@
    "dato": "2026-11-09",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
    "titel": "Status på implementering af ældrelov",
    "afsnit": [
     {
@@ -14264,8 +14300,8 @@
    "dato": "2026-11-09",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
    "titel": "Økonomi i sundhedsreformen og konsekvenser for Hjørring Kommune",
    "afsnit": [
     {
@@ -14282,13 +14318,13 @@
    "dato": "2026-11-09",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
-   "titel": "Budget 2027-2030",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
+   "titel": "Projekt Bro til fællesskab",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Punkt fra Kirsten Holst\nBudget 2027 - 2030 er vedtaget.\nÆldrerådet tager en drøftelse af, hvad budgettet har af konsekvenser for ældre borgere. Og i\nden sammenhæng, hvad skal ældrerådet fokusere på angående budgetvedtagelsen for 2027."
+     "tekst": "Punkt fra Kai Kruchov Madsen\nEr der frigivet 1,6 Mill til projektet?\nI så fald hvornår starter projektet?\nHvem skal repræsentere fra ældrerådet?"
     }
    ],
    "bilag": []
@@ -14300,13 +14336,13 @@
    "dato": "2026-11-09",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
-   "titel": "Projekt Bro til fællesskab",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
+   "titel": "Ældrerådets årsberetning for 2026",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Punkt fra Kai Kruchov Madsen\nEr der frigivet 1,6 Mill til projektet?\nI så fald hvornår starter projektet?\nHvem skal repræsentere fra ældrerådet?"
+     "tekst": "Punkt fra Kirsten Holst\nSkal det være samme procedure og i samme form som tidligere år?\nÅrsberetningen for 2025 er vedlagt som bilag."
     }
    ],
    "bilag": []
@@ -14318,26 +14354,8 @@
    "dato": "2026-11-09",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
-   "titel": "Ældrerådets årsberetning for 2026",
-   "afsnit": [
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Punkt fra Kirsten Holst\nSkal det være samme procedure og i samme form som tidligere år?\nÅrsberetningen for 2025 er vedlagt som bilag."
-    }
-   ],
-   "bilag": []
-  },
-  "hjoerring-2026-11-09-aeldreraadet-8": {
-   "id": "hjoerring-2026-11-09-aeldreraadet-8",
-   "kommune": "Hjørring",
-   "udvalg": "Ældrerådet",
-   "dato": "2026-11-09",
-   "type": "dagsorden",
-   "nr": 8,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
    "titel": "Orientering om brugertilfredshedsundersøgelser på ældreområdet 2026/2027",
    "afsnit": [
     {
@@ -14372,15 +14390,15 @@
     }
    ]
   },
-  "hjoerring-2026-11-09-aeldreraadet-9": {
-   "id": "hjoerring-2026-11-09-aeldreraadet-9",
+  "hjoerring-2026-11-09-aeldreraadet-8": {
+   "id": "hjoerring-2026-11-09-aeldreraadet-8",
    "kommune": "Hjørring",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-09",
    "type": "dagsorden",
-   "nr": 9,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
+   "nr": 8,
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
    "titel": "Nyt fra udvalgene",
    "afsnit": [
     {
@@ -14390,15 +14408,15 @@
    ],
    "bilag": []
   },
-  "hjoerring-2026-11-09-aeldreraadet-10": {
-   "id": "hjoerring-2026-11-09-aeldreraadet-10",
+  "hjoerring-2026-11-09-aeldreraadet-9": {
+   "id": "hjoerring-2026-11-09-aeldreraadet-9",
    "kommune": "Hjørring",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-09",
    "type": "dagsorden",
-   "nr": 10,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
+   "nr": 9,
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
    "titel": "Orientering",
    "afsnit": [
     {
@@ -14412,6 +14430,24 @@
    ],
    "bilag": []
   },
+  "hjoerring-2026-11-09-aeldreraadet-10": {
+   "id": "hjoerring-2026-11-09-aeldreraadet-10",
+   "kommune": "Hjørring",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-11-09",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
+   "titel": "Punkter til kommende møder",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "December 2026:\nMøde Planlægning af besøg på Havglimt, og øvrige relevante steder i Hjørring Kommune\nrelateret til ældrerådet\nVisionsemner i 2027 – 2029 (se punkt 7 den 8. august 2026)\nJanuar 2027:\nDemensindsats i Hjørring Kommune\nBudget 2027-2023 og ældrerådets fokus\nBrevet ang. forebyggende hjemmebesøg.\nFebruar 2027:\nOrientering om Havgården og frivillige"
+    }
+   ],
+   "bilag": []
+  },
   "hjoerring-2026-11-09-aeldreraadet-11": {
    "id": "hjoerring-2026-11-09-aeldreraadet-11",
    "kommune": "Hjørring",
@@ -14419,13 +14455,13 @@
    "dato": "2026-11-09",
    "type": "dagsorden",
    "nr": 11,
-   "kilde": "https://dagsordener.hjoerring.dk/vis?id=4026d266-0ac5-4dcd-86da-b72db2c850ec",
-   "hentet": "2026-11-02T12:36:26.363Z",
-   "titel": "Punkter til kommende møder",
+   "kilde": "https://dagsordener.hjoerring.dk/vis?id=b1115ee4-a66a-414c-b93e-fe622766b8b0",
+   "hentet": "2026-11-03T15:03:18.155Z",
+   "titel": "Evt",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "December 2026:\nMøde Planlægning af besøg på Havglimt, og øvrige relevante steder i Hjørring Kommune\nrelateret til ældrerådet\nVisionsemner i 2027 – 2029 (se punkt 7 den 8. august 2026)\nJanuar 2027:\nDemensindsats i Hjørring Kommune\nBudget 2027-2023 og ældrerådets fokus\nBrevet ang. forebyggende hjemmebesøg.\n\nFebruar 2027:\nOrintering om Havgården og frivillige\nMarts 2027:"
+     "tekst": "Evt.\nINFO: Fra Sundheds,- Ældre- og Handicapudvalgs referat. Dialogmøderne med Ældrerådet i\n2027 er den 13. april 2027"
     }
    ],
    "bilag": []
@@ -15360,27 +15396,27 @@
  "sitemaps": {
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=9c1345e5-454c-49f4-8650-a1f2674e9b3f": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=56c8b962-3ccf-4448-abc1-509ff58c1628": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=56e1196c-e564-433d-bc09-9850b2602fd4": {
    "senest": "2021-12-09",
    "tjekket": "2026-10-25"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=2cfd32f8-f3b0-41f8-a390-ad05ca86960c": {
-   "senest": "2026-11-02",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=17f8a3bf-4690-4ac5-b038-1f1e4027a637": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=61eb1d71-126b-4028-a2d4-1af5c6f0f36e": {
    "senest": "2026-09-25",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=d73722db-703f-4896-9bf8-124eb82183d0": {
    "senest": "2025-10-14",
@@ -15388,11 +15424,11 @@
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=dc4b886e-72fa-4a70-9983-777fa325e641": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=75684a66-97a7-4589-8886-fbd9e0742be7": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=8b6d3012-31f1-4e04-9255-9d8c804d11bb": {
    "senest": "2021-12-02",
@@ -15400,7 +15436,7 @@
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=697c60c2-5a9c-424e-b1a9-bd783c289eba": {
    "senest": "2025-12-16",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=56ffe41b-e19a-46b7-84ea-a564f9e6fcd4": {
    "senest": "2021-12-15",
@@ -15408,31 +15444,31 @@
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=20ea7026-c7b4-4db0-9e1c-a97831baef2d": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=b7d3e52a-4556-4665-a5c4-bd6cfa32a759": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=10326343-23d7-496a-b134-f9628298536d": {
    "senest": "2025-11-28",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=c47e41ba-34ce-4f76-bc81-34b411d2e664": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=e20807db-fd08-4bac-9c3b-559c70424dd4": {
    "senest": "2025-11-12",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=c4948d72-9a86-4179-b1bb-b98a1bdca505": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=a1560fc7-ed86-49f8-b07b-0b75cde93db4": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=0036443e-6ef2-4d8d-90f4-4f24a2ea429d": {
    "senest": "2021-12-16",
@@ -15440,39 +15476,39 @@
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=233148ca-81f4-4978-9ad7-723067637d2e": {
    "senest": "2025-11-18",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=b19b3db0-7725-40ca-8abc-44384e31dc1e": {
    "senest": "2026-10-12",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=0cbf63c9-2f14-4e64-9f3c-bf6b5bfd1bc5": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=15083409-b1dc-496a-a305-2ac44b01fe33": {
    "senest": "2026-10-21",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=3ded08f1-c05e-4923-a828-7658189c0d6c": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=6d1a1af8-ec90-43a2-8318-863a438ba481": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=2e5ed527-1768-4eec-9a24-f5db4ead7937": {
    "senest": "2021-12-20",
    "tjekket": "2026-10-25"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=40b5305f-1411-4af0-947f-b8d5c9c15e54": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=51648276-b6de-4afd-9f4e-42a0de8e44f1": {
    "senest": "2025-12-01",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.hjoerring.dk/Sitemap/ForCommittee?committeeId=eea62931-10f1-4ccd-84ae-d012d4b4bb0a": {
    "senest": "2021-11-30",
@@ -15484,6 +15520,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-02T23:03:55.409Z",
+ "opdateret": "2026-11-03T15:03:27.047Z",
  "kommune": "Hjørring"
 }

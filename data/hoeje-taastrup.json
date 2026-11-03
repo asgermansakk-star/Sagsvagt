@@ -360,6 +360,22 @@
    "dato": "2026-11-03",
    "punkter": 4,
    "parser": 3
+  },
+  "c823b5f7-9f43-40c6-8ae2-9f149ed96fd8": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-10-29",
+   "punkter": 2,
+   "parser": 3
+  },
+  "72ae4ff9-fde1-47b3-b15e-6bca7d503901": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Byrådet",
+   "dato": "2026-10-29",
+   "punkter": 4,
+   "parser": 3
   }
  },
  "sager": {
@@ -5360,12 +5376,17 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.htk.dk/vis?id=580e92fd-56a9-4b1d-a63a-04beac448cb4",
-   "hentet": "2026-10-29T19:44:44.057Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=c823b5f7-9f43-40c6-8ae2-9f149ed96fd8",
+   "hentet": "2026-11-03T14:50:36.973Z",
    "titel": "1. Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
+    }
+   ],
    "bilag": []
   },
   "hoeje-taastrup-2026-10-29-oekonomiudvalget-4": {
@@ -5373,12 +5394,17 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.htk.dk/vis?id=580e92fd-56a9-4b1d-a63a-04beac448cb4",
-   "hentet": "2026-10-29T19:44:44.057Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=c823b5f7-9f43-40c6-8ae2-9f149ed96fd8",
+   "hentet": "2026-11-03T14:50:36.973Z",
    "titel": "4. Underskriftsark Økonomiudvalget 29-10-2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Afbud: Lars Prier\n\n4. Underskriftsark Økonomiudvalget 29-10-2026"
+    }
+   ],
    "bilag": []
   },
   "hoeje-taastrup-2026-11-04-aeldre-og-sundhedsudvalget-2": {
@@ -5977,10 +6003,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.htk.dk/vis?id=3954bdcb-dc92-47c3-bd5d-19868c9ae9ff",
-   "hentet": "2026-10-29T19:45:24.192Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=72ae4ff9-fde1-47b3-b15e-6bca7d503901",
+   "hentet": "2026-11-03T14:50:41.932Z",
    "titel": "1. Indkaldelse af stedfortræder for Lars Prier til Byrådet 29-10-2026",
    "afsnit": [
     {
@@ -5990,6 +6016,10 @@
     {
      "titel": "Indstilling",
      "tekst": "At Byrådet godkender, at Else Stockholm kan indtræde som medlem af Byrådet som\nstedfortræder for Lars Prier til Byrådets møde 29-10-2026"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     },
     {
      "titel": "Sagsfremstilling",
@@ -6003,10 +6033,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.htk.dk/vis?id=3954bdcb-dc92-47c3-bd5d-19868c9ae9ff",
-   "hentet": "2026-10-29T19:45:24.192Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=72ae4ff9-fde1-47b3-b15e-6bca7d503901",
+   "hentet": "2026-11-03T14:50:41.932Z",
    "titel": "2. Indkaldelse af stedfortræder for Flemming Hansen til Byrådet 29-10-2026",
    "afsnit": [
     {
@@ -6016,6 +6046,10 @@
     {
      "titel": "Indstilling",
      "tekst": "At Byrådet godkender, at Henrik Pangel kan indtræde som medlem af Byrådet som\nstedfortræder for Flemming Hansen til Byrådets møde 29-10-2026\n\nAt Byrådet godkender, at Henrik Pangel kan indtræde som medlem af Byrådet som\nstedfortræder for Flemming Hansen til Byrådets møde 29-10-2026"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     },
     {
      "titel": "Sagsfremstilling",
@@ -6029,12 +6063,17 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.htk.dk/vis?id=3954bdcb-dc92-47c3-bd5d-19868c9ae9ff",
-   "hentet": "2026-10-29T19:45:24.192Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=72ae4ff9-fde1-47b3-b15e-6bca7d503901",
+   "hentet": "2026-11-03T14:50:41.932Z",
    "titel": "3. Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "hoeje-taastrup-2026-10-29-byraadet-6": {
@@ -6042,12 +6081,17 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-10-29",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.htk.dk/vis?id=3954bdcb-dc92-47c3-bd5d-19868c9ae9ff",
-   "hentet": "2026-10-29T19:45:24.192Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=72ae4ff9-fde1-47b3-b15e-6bca7d503901",
+   "hentet": "2026-11-03T14:50:41.932Z",
    "titel": "6. Underskriftsark Byrådet 29-10-2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Afbud: Lars Prier, Flemming Hansen, Hugo Hammel\n\n6. Underskriftsark Byrådet 29-10-2026"
+    }
+   ],
    "bilag": []
   },
   "hoeje-taastrup-2026-11-04-arbejdsmarkeds-og-socialudvalget-2": {
@@ -6213,24 +6257,24 @@
  },
  "sitemaps": {
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=949d023d-64b9-4825-978c-6d1879ffee65": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=2b656e2c-fab1-44ca-9555-700290e49381": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=352d73ac-106c-4981-90d2-51896ae6bd6c": {
    "senest": "2026-09-18",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=57170dde-e287-4955-a743-d748f8b35cb6": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=bc99f168-da61-4e5f-ae32-5b26c8a30d68": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=b8de545a-6e30-4409-80d6-3292f8015e13": {
    "senest": "2025-01-30",
@@ -6238,11 +6282,11 @@
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=994eeb57-080b-4903-9434-fe556ddd884f": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=935c3e20-2469-438c-ac1a-76e6053c501d": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=985766d2-4c03-43b2-83cd-01cb816b6855": {
    "senest": "",
@@ -6250,23 +6294,23 @@
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=914a09fa-f7ad-4a92-86a8-3db001c1f01b": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=dc020fa4-040f-40d6-a1ba-83844a6ee5cc": {
    "senest": "2026-09-24",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=ce683df4-0beb-473c-abb1-b81860a31028": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=859aeec8-3269-453b-982a-47abcc088dff": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=577dd2a0-8721-46f2-850a-42aeb5a86325": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=3458c30d-7281-4c6a-bafe-4e758f1b744c": {
    "senest": "2025-09-27",
@@ -6281,7 +6325,7 @@
    "tjekket": "2026-10-20"
   }
  },
- "opdateret": "2026-11-02T22:52:14.872Z",
+ "opdateret": "2026-11-03T14:50:41.933Z",
  "kommune": "Høje-Taastrup",
  "parser": 3
 }

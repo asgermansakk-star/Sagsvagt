@@ -447,6 +447,42 @@
    "dato": "2026-11-03",
    "punkter": 5,
    "parser": 3
+  },
+  "e730f2bc-9e6f-4ad1-9ea9-428934b34a49": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-10-14",
+   "punkter": 0,
+   "parser": 3,
+   "tomFra": "2026-11-03",
+   "tegn": 6066
+  },
+  "5daaa6dd-fcd0-4f05-8eab-f600c272c9e5": {
+   "lastmod": "2026-11-03",
+   "type": "dagsorden",
+   "udvalg": "Integrationsrådet",
+   "dato": "2026-11-19",
+   "punkter": 0,
+   "parser": 3,
+   "tomFra": "2026-11-03",
+   "tegn": 3695
+  },
+  "594e0f69-afa8-4d25-8811-2d6ac08ab845": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Ældre- og Omsorgsudvalget",
+   "dato": "2026-11-02",
+   "punkter": 13,
+   "parser": 3
+  },
+  "8fc52146-6751-473c-b542-3a27d80bae76": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Forebyggelses- og Sundhedsudvalget",
+   "dato": "2026-11-02",
+   "punkter": 8,
+   "parser": 3
   }
  },
  "sager": {
@@ -11944,15 +11980,19 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at dagsordenen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nGodkendt."
     },
     {
      "titel": "Sagsfremstilling",
@@ -11966,10 +12006,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Dialogmøde med Ældrerådet",
    "afsnit": [
     {
@@ -11981,25 +12021,38 @@
      "tekst": "Administrationen indstiller, at punkter drøftes."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nDrøftet."
+    },
+    {
      "titel": "Sagsfremstilling",
      "tekst": "Ældrerådet ønsker følgende punkter drøftet:\n\nTilsynsrapporter, (offentliggørelse)\nkvalitetsstandarder\nintentioner for inddragelse af frivillige og civilsamfundet\nresultat af temadrøftelser vedr. boliger til seniorer\nforberedelse af kommende budgetter\nfortsatte forventninger til samarbejdet med Ældrerådet\n\nFra Ældrerådet deltager:\nLeila Frandsen, formand\nCharlotte Haufort Hansen, 1. næstformand\nBente Gaarhøj Johansen, 2. næstformand\nLeo Andersen, regnskabsansvarlig\nLene Nedergaard, medlem\nLars Høgh Sørensen, medlem\nKarin Højen Johannesen, medlem\nMeta Beldring, medlem\nKaja Pedersen, medlem\nKristian Medholdt, medlem\nUffe Tvede Hansen, medlem\nSusan Mortensen, sekretær"
     },
     {
      "titel": "Økonomi",
-     "tekst": "Administrationen har ingen bemærkninger.\n\nÆldre- og Omsorgsudvalget 02.11.2026"
+     "tekst": "Administrationen har ingen bemærkninger."
     }
    ],
-   "bilag": []
+   "bilag": [
+    {
+     "navn": "Bemærkninger fra Ældrerådet til Udvalgsmødet den 2. November 2026",
+     "url": null
+    },
+    {
+     "navn": "Ældre- og Omsorgsudvalget 02.11.2026",
+     "url": null
+    }
+   ]
   },
   "naestved-2026-11-02-aeldre-og-omsorgsudvalget-3": {
    "id": "naestved-2026-11-02-aeldre-og-omsorgsudvalget-3",
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Behandling af budgetkontrol pr. 1. september 2026",
    "afsnit": [
     {
@@ -12011,12 +12064,16 @@
      "tekst": "Administrationen indstiller, at\n1. budgetopfølgning pr. 1. september 2026 på drift godkendes\n2. udvalget anbefaler flytning af 16 mio.kr. fra KMF (Kommunalmedfinansiering) til politikområde Ældre til\ndækning af ændret regnskabsprincip\n3. udvalget anbefaler flytning af 6,275 mio.kr. vedr. efterregulering for 2025 for KMF fra udvalget til\nPolitikområde Finansiering under Økonomiudvalget\n4. at der gives anlægsbevilling og frigives rådighedsbeløb på 3,5 mio. kr. til Reetablering af 9 boliger og\netablering af kontorfaciliteter på Marskvej\n5. at der gives anlægsbevilling og frigives rådighedsbeløb på 6,5 mio. kr. til udvidelse af eksisterende §108\ntilbud med 3 nye boliger."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nAd. 1-5 godkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Der udarbejdes tre større budgetopfølgninger om året som præsenteres for Ældre og omsorgsudvalget. Opfølgningerne\ngennemføres på data pr. 1. marts, 1. maj og 1. september og forelægges udvalget i hhv. april, juni og november.\nOpfølgningen omfatter både drift og anlæg på udvalgets område.\nBudgetopfølgningen pr. 1. september viser et forventet overskud på driften på 15 mio. kr. for kommunen samlet. Det er\nen forbedring siden sidste budgetopfølgning på ca. 92 mio. kr., hvor de ca. 34 mio. kr. var forventet som følge af de\nopbremsende tiltag, der blev besluttet i forbindelse med budgetopfølgningen pr. 1. maj. Den øvrige forbedring kan blandt\nandet henføres til en bedre økonomisk udvikling på ældreområdet, Skole og PPR samt Børn og Unge og til gevinsten\nved ophør af den kommunale medfinansiering af sundhedsvæsenet. Den positive udvikling er også et resultat af\nmålrettede indsatser på tværs af kommunen, hvor der har været fokus på økonomisk balance, prioritering af\nressourcerne og fastholdelse af servicen til borgerne. Der er dog fortsat betydelige forskelle mellem de enkelte\nbudgetområder, og flere områder forventer underskud. Servicerammen forventes fortsat overskredet, og der er derfor\nfortsat behov for en stram økonomisk styring, men derudover iværksættes der ikke yderligere tiltag for\nbudgetoverholdelse.\n\nVed budgetopfølgningen pr. 1. maj blev der besluttet opbremsende tiltag for i alt 34 mio. kr. på tværs af alle områder. De\n34 mio. kr. fra de opbremsende tiltag er placeret i pulje under Økonomiudvalget. Puljen er primært tiltænkt at medgå til\ndækning af underskud på Ældre- og Omsorgsudvalget. Puljen fordeles i forbindelse med regnskabsopgørelsen.\nDrift\nBudgetopfølgningen pr. 1. september 2026 viser, at på Ældre og omsorgsudvalget forventes et regnskabsresultat på\n25,7 mio. kr. i underskud, hvilket holdt op imod årets budget, svarer til et forventet underskud på 1,66 %.\nRegnskabsforventningen er forbedret med 18,9 mio. kr. siden budgetopfølgningen pr. 1. maj 2026.\nOpfølgningen er fordelt med et underskud på begge udvalgets områder. På Ældreområdet har der været en forbedring\npå 18,6 mio. kr. siden budgetopfølgningen pr. 1. maj 2026, mens der på Handicap og Psykiatriområdet har været en\nforbedring på 0,3 mio.kr. siden budgetkontrollen pr. 1. maj 2026.\nTabel 1: Økonomisk oversigt\nPolitikområde\n\nÆldreområdet\nHandicap og\nPsykiatriområdet\nI alt\n\nForventet regnskab\n\nBudget\n\nAfvigelse\n(eller over- eller\nunderskud)\n\nBankbeholdning\n(overførsel fra\n\nI henhold til Næstved Kommunes økonomistyringsregler opgøres over- og underskud fra 2025 på fagområder og\nvirksomheder i forbindelse med regnskabsafslutningen og indgår efter Byrådets godkendelse af overførslerne i marts i\nen særskilt bankbeholdning tilknyttet disse.\nØkonomien i 2026 består dermed af to elementer: det ordinære budget for 2026 samt bankbeholdningen, der udgøres af\nde godkendte overførsler fra 2025. Budgetopfølgningen viser det samlede resultat for fagområder og virksomheder.\nI nedenstående beskrives væsentlige afvigelser ved budgetopfølgningen pr. 1. september. Der henvises til bilag for en\nnærmere beskrivelse af de enkelte områder.\nÆldreområdet\nPolitikområde Ældre forventer et samlet underskud på 8,2 mio.kr., hvilket er en forbedring på 18,6 mio.kr. i forhold til\nopfølgningen pr. 1. maj. Underskuddet er opdelt med underskud på fagområdet med og overskud på virksomhederne.\nUdviklingen fra sidste opfølgning er mere underskud på fagområdet og mere overskud på virksomhederne.\nForbedringen skyldes hovedsagelig tilbageholdenhed i driften, driftstilpasninger som udvalget besluttede 20. april som\nhar haft en hurtigere effekt end forudsat. Virksomhederne har ydet en stor indsat for at fastholde det lave sygefravær,\ntilbageholdenhed med kurser og uddannelse. Det er en forudsætning for vurderingen af underskuddet på 8,2 mio.kr., at\nvirksomhederne fortsætter denne tilbageholdenhed og de gennemførte driftstilpasninger, samt sikrer det nuværende\nlave sygefravær resten af 2026 ellers vil underskuddet stige.\nÆldreområdet er fortsat udfordret af overgangen til de nye pleje- og omsorgsforløb, hvilket betyder, at grundlaget for en\nretvisende prognose og økonomistyring endnu ikke er fuldt etableret. Administrationen arbejder fortsat tæt sammen med\nKomponent, myndighed og virksomheder om at få etableret de nødvendige systemer.\nVed budgetkontrollen pr. 1. maj var en af årsagsforklaringerne underskud på budgettet til elever, som følge af et højere\noptag end forudsat ved budgetlægningen. Det samlede forventede underskud på 8,2 mio.kr. skyldes derfor primært\nunderskud på elever. Det er dog en række overskud og underskud på de øvrige aktivitetsområder, som udligner\nhinanden. Der henvises til bilag for en gennemgang.\n\nÆndring af regnskabspraksis for køb af pladser i andre kommuner:\nNæstved Kommune har udgifter til Næstved-borgere, der har en plads i en anden kommune inden for ældreområdet.\nKommunen har i en årrække betalt nogle af regningerne forskudt af det normale regnskabsår. Det vil sige, at nogle af de\nregninger, som er kommet i november og december året før er blevet betalt i ”for-supplements-perioden” for det\nefterfølgende år. Regningerne er blevet betalt til de andre kommuner, men ikke alle regninger har været bogført i det\nrette år. Selvom der har været skubbet regninger fra de ene år til det andet, har der i det enkelte regnskabsår været\nbetalt regninger for 12 måneder, altså svarende til et helt år. Kommunens revision har tidligere spurgt til dette forhold, og\nde har accepteret at kommunen har betalt regninger, svarende til 12 måneder i det enkelte regnskabsår.\nPeriodiseringen af regningerne svarer til ca. 15,8 mio. kr. Det vil sige, at der har været betalt regninger for ca. 15,8 mio.\nkr. i 2026, som vedrører 2025. Det er hensigtsmæssigt og mest rigtigt i forhold til god bogførings- og regnskabspraksis,\nsamt økonomistyringen, at betale regninger i det år udgifterne falder.\nI forbindelse med ophør af Aktivitetsbestemt medfinansiering (KMF) fra 1/1-2027, får kommunerne eftergivet 3\nmåneders betaling af KMF. Disse måneder bliver normalt betalt året efter at udgifterne er afholdt, da regningerne fra\nregionen ikke kan nå at komme med i indeværende års regnskab. Det vil sige i 2027, efter ophør af KMF. Kommunerne\nhar ikke budget til disse udgifter i 2027, og regeringen har derfor besluttet at eftergive de tre måneders betalinger.\nNæstved Kommune har dog budgetteret med den ene af de tre måneder i 2026, da vi normalt kun har skubbet to af de\ntre måneder til året efter. Der er derfor en måneds lavere forbrug i 2026 på KMD, svarende til 30 mio. kr.\nDerfor anbefaler administrationen, at praksis ændres og at der ikke fremover overføres regninger mellem kalenderår,\nudover almindelig periodisering. Administrationen anbefaler, at det ikke anvendte budget i 2026 til KMF delvist anvendes\ntil at korrigere periodiseringen af udgifterne på ældreområdet. Det betyder at regninger for ca. 16 mio. kr., der efter\nnuværende praksis skulle være skubbet til 2027, betales i 2026 af budgettet til KMF\nHandicap og Psykiatri området\nPolitikområde Handicap og Psykiatri forventer et samlet underskud på 17,6 mio.kr., hvilket er en forbedring på 0,3\nmio.kr. i forhold til budgetkontrollen pr. 1. maj.\nForbedringen er sammensat af en stigning i underskuddet på fagområderne fra 16,9 mio.kr. til 17,9 mio.kr., mens der\nhar været en samlet forbedring på virksomhederne med 1,3 mio.kr.\nOmrådet modtager i henhold til gældende lovgivning refusionsindtægter fra staten for blandet andet udgifter til\nforsorgshjem efter § 110 i serviceloven. Her er vurderet et mindre fald i forhold til opfølgningen pr. 1. maj. Der er\nligeledes indtægter for refusion for særlig dyre borgere. Her er vurderingen pr. 1/9 i forhold til 1. maj stigende indtægter.\nSamtidig vurderes udgifterne til køb af eksterne tilbud til § 85 tilbud at være stigende, men der har været faldende\nudgifter til § 107 og 108, midlertidige og længerevarende tilbud i forhold til 1. maj.\nDet samlede underskud på 17,6 mio.kr. skyldes som beskrevet i opfølgningen 1. marts og 1. maj følgende:\n1: De 18-årige starter på området den dag de fylder 18 år. Budgettet tilpasses ikke automatisk med den tilhørende årlige\nudgift. I henhold til gældende økonomistyringsregler foregår tilpasninger af budgettet ved en konkret beregning af\nforventet antal x pris pr. enhed.\n2: Der har været en udgiftsstigning i forhold til sidste år for de borgere, som er født i perioden 1925 til 2006, primært til\ndækning af udgifter til længere varende tilbud.\nFor virksomhederne har der været en forbedring på 1,3 mio.kr., primært fordi en af virksomhederne har øget\noverskuddet, mens virksomhederne med underskud har nedbragt underskuddet.\nKommunal MedFinansiering af sundhedsudgifterne (KMF)\nUdvalget hæfter ikke for et underskud på KMF, ligesom udvalget heller ikke kan disponere over et overskud. Budgettet\nog resultatet indgår derfor ikke i oversigterne.\n\nRegeringen har besluttet at videreføre fastfrysningen af den kommunale medfinansiering i 2026.\nEfterregulering KMF vedr. 2025. Næstved Kommune forventes pt. at skulle tilbagebetale ca. 6,275 mio. kr. I\nbudgetopfølgningen 1. september overføres budget til politikområde Finansiering, da udgiften jf. reglerne skal bogføres\nder.\nKMF ophører fra 1-1-2027:\nDa KMF ophører fra og med 2027, er regeringen og KL enige om at eftergive den del af betalingen der vedrører 2026,\nmen betales i 2027. I Næstved Kommune er en andel af denne betaling, budgetlagt i regnskab 2026, hvorfor det\nforventede overskud stiger fra 4,2 mio. kr. til ca. 34,8 mio. kr. Desuden sker der ekstraordinært en overførsel til\npolitikområde Ældre på 16 mio.kr, hvorefter overskuddet reduceres til ca. 18,8 mio.kr. Overførslen besluttes\nekstraordinært i Byrådet i forbindelse med behandling af den samlede budgetkontrol. Baggrunden for overførslen er\nbeskrevet i ovenstående afsnit om Ændring af regnskabspraksis for køb af pladser i andre kommuner, under\nældreområdet.\nOpfølgning på driftstilpasningsforslag\nUdvalget vedtog på mødet den 20. april en række driftstilpasningsforslag med virkning for både 2026 og 2027.\nAdministrationen har i bilag 4 udarbejdet en oversigt over status for implementering af forslagene. Bilaget indeholder en\nkort gennemgang af alle forslag med status. Såfremt forslagene endnu ikke er gennemført vil der fremgå en kort\nbeskrivelse af, hvorfor det ikke er gennemført.\nAnlæg\nÆldre- og Omsorgsudvalget har i forbindelse med budgetopfølgningen pr. 1. marts 2026 behandlet en række\ndriftstilpasninger på Handicap og Psykiatri, og udvalget har i den forbindelse behov for finansiering til at igangsættelse af\nto investeringsprojekter.\n1) Reetablering af 9 boliger og etablering af kontorfaciliteter på Marskvej til 3,5 mio. kr.\nFor at imødekomme et stigende behov for midlertidige botilbud efter Servicelovens §107 foreslås det at udvide\nkapaciteten med 5 interne pladser. Udvidelsen muliggør, at kommunen i højere grad kan anvende egne pladser frem for\neksterne leverandører, hvilket vil medføre en varig reduktion i de samlede udgifter pr. borger.\n2) Udvidelse af et eksisterende §108-tilbud gennem opførelse af en tilbygning med 3 nye boliger til 6,5 mio. kr.\nKommunen oplever stigende udgifter til køb af eksterne pladser på det specialiserede socialområde, særligt for borgere\nmed meget omfattende støttebehov og komplekse funktionsnedsættelser.\nForslaget indebærer en fysisk udvidelse af et eksisterende §108-tilbud gennem opførelse af en tilbygning med 3 nye\nboliger, der målrettes borgere med meget høje støttebehov.\nØkonomiudvalget har den 18/5 godkendt finansieringen af de to anlægsprojekter. Finansieringen tages fra\nanlægsbudget til parkeringshus i Rådmandshaven, men der skal gives anlægsbevillinger og frigives rådighedsbeløb af\nbyrådet. Indstillingspunkterne indgår derfor alene i denne sag for at få de nødvendige bevillingerne korrekt besluttet i\nÆOU, ØK og Byrådet."
+     "tekst": "Der udarbejdes tre større budgetopfølgninger om året som præsenteres for Ældre og omsorgsudvalget. Opfølgningerne\ngennemføres på data pr. 1. marts, 1. maj og 1. september og forelægges udvalget i hhv. april, juni og november.\nOpfølgningen omfatter både drift og anlæg på udvalgets område.\nBudgetopfølgningen pr. 1. september viser et forventet overskud på driften på 15 mio. kr. for kommunen samlet. Det er\nen forbedring siden sidste budgetopfølgning på ca. 92 mio. kr., hvor de ca. 34 mio. kr. var forventet som følge af de\nopbremsende tiltag, der blev besluttet i forbindelse med budgetopfølgningen pr. 1. maj. Den øvrige forbedring kan blandt\nandet henføres til en bedre økonomisk udvikling på ældreområdet, Skole og PPR samt Børn og Unge og til gevinsten\nved ophør af den kommunale medfinansiering af sundhedsvæsenet. Den positive udvikling er også et resultat af\nmålrettede indsatser på tværs af kommunen, hvor der har været fokus på økonomisk balance, prioritering af\n\nressourcerne og fastholdelse af servicen til borgerne. Der er dog fortsat betydelige forskelle mellem de enkelte\nbudgetområder, og flere områder forventer underskud. Servicerammen forventes fortsat overskredet, og der er derfor\nfortsat behov for en stram økonomisk styring, men derudover iværksættes der ikke yderligere tiltag for\nbudgetoverholdelse.\nVed budgetopfølgningen pr. 1. maj blev der besluttet opbremsende tiltag for i alt 34 mio. kr. på tværs af alle områder. De\n34 mio. kr. fra de opbremsende tiltag er placeret i pulje under Økonomiudvalget. Puljen er primært tiltænkt at medgå til\ndækning af underskud på Ældre- og Omsorgsudvalget. Puljen fordeles i forbindelse med regnskabsopgørelsen.\nDrift\nBudgetopfølgningen pr. 1. september 2026 viser, at på Ældre og omsorgsudvalget forventes et regnskabsresultat på\n25,7 mio. kr. i underskud, hvilket holdt op imod årets budget, svarer til et forventet underskud på 1,66 %.\nRegnskabsforventningen er forbedret med 18,9 mio. kr. siden budgetopfølgningen pr. 1. maj 2026.\nOpfølgningen er fordelt med et underskud på begge udvalgets områder. På Ældreområdet har der været en forbedring\npå 18,6 mio. kr. siden budgetopfølgningen pr. 1. maj 2026, mens der på Handicap og Psykiatriområdet har været en\nforbedring på 0,3 mio.kr. siden budgetkontrollen pr. 1. maj 2026.\nTabel 1: Økonomisk oversigt\nPolitikområde\n\nÆldreområdet\nHandicap og\nPsykiatriområdet\nI alt\n\nForventet regnskab\n\nBudget\n\nAfvigelse\n(eller over- eller\nunderskud)\n\nBankbeholdning\n(overførsel fra\n\nI henhold til Næstved Kommunes økonomistyringsregler opgøres over- og underskud fra 2025 på fagområder og\nvirksomheder i forbindelse med regnskabsafslutningen og indgår efter Byrådets godkendelse af overførslerne i marts i\nen særskilt bankbeholdning tilknyttet disse.\nØkonomien i 2026 består dermed af to elementer: det ordinære budget for 2026 samt bankbeholdningen, der udgøres af\nde godkendte overførsler fra 2025. Budgetopfølgningen viser det samlede resultat for fagområder og virksomheder.\nI nedenstående beskrives væsentlige afvigelser ved budgetopfølgningen pr. 1. september. Der henvises til bilag for en\nnærmere beskrivelse af de enkelte områder.\nÆldreområdet\nPolitikområde Ældre forventer et samlet underskud på 8,2 mio.kr., hvilket er en forbedring på 18,6 mio.kr. i forhold til\nopfølgningen pr. 1. maj. Underskuddet er opdelt med underskud på fagområdet med og overskud på virksomhederne.\nUdviklingen fra sidste opfølgning er mere underskud på fagområdet og mere overskud på virksomhederne.\nForbedringen skyldes hovedsagelig tilbageholdenhed i driften, driftstilpasninger som udvalget besluttede 20. april som\nhar haft en hurtigere effekt end forudsat. Virksomhederne har ydet en stor indsat for at fastholde det lave sygefravær,\ntilbageholdenhed med kurser og uddannelse. Det er en forudsætning for vurderingen af underskuddet på 8,2 mio.kr., at\nvirksomhederne fortsætter denne tilbageholdenhed og de gennemførte driftstilpasninger, samt sikrer det nuværende\nlave sygefravær resten af 2026 ellers vil underskuddet stige.\nÆldreområdet er fortsat udfordret af overgangen til de nye pleje- og omsorgsforløb, hvilket betyder, at grundlaget for en\nretvisende prognose og økonomistyring endnu ikke er fuldt etableret. Administrationen arbejder fortsat tæt sammen med\nKomponent, myndighed og virksomheder om at få etableret de nødvendige systemer.\n\nVed budgetkontrollen pr. 1. maj var en af årsagsforklaringerne underskud på budgettet til elever, som følge af et højere\noptag end forudsat ved budgetlægningen. Det samlede forventede underskud på 8,2 mio.kr. skyldes derfor primært\nunderskud på elever. Det er dog en række overskud og underskud på de øvrige aktivitetsområder, som udligner\nhinanden. Der henvises til bilag for en gennemgang.\nÆndring af regnskabspraksis for køb af pladser i andre kommuner:\nNæstved Kommune har udgifter til Næstved-borgere, der har en plads i en anden kommune inden for ældreområdet.\nKommunen har i en årrække betalt nogle af regningerne forskudt af det normale regnskabsår. Det vil sige, at nogle af de\nregninger, som er kommet i november og december året før er blevet betalt i ”for-supplements-perioden” for det\nefterfølgende år. Regningerne er blevet betalt til de andre kommuner, men ikke alle regninger har været bogført i det\nrette år. Selvom der har været skubbet regninger fra de ene år til det andet, har der i det enkelte regnskabsår været\nbetalt regninger for 12 måneder, altså svarende til et helt år. Kommunens revision har tidligere spurgt til dette forhold, og\nde har accepteret at kommunen har betalt regninger, svarende til 12 måneder i det enkelte regnskabsår.\nPeriodiseringen af regningerne svarer til ca. 15,8 mio. kr. Det vil sige, at der har været betalt regninger for ca. 15,8 mio.\nkr. i 2026, som vedrører 2025. Det er hensigtsmæssigt og mest rigtigt i forhold til god bogførings- og regnskabspraksis,\nsamt økonomistyringen, at betale regninger i det år udgifterne falder.\nI forbindelse med ophør af Aktivitetsbestemt medfinansiering (KMF) fra 1/1-2027, får kommunerne eftergivet 3\nmåneders betaling af KMF. Disse måneder bliver normalt betalt året efter at udgifterne er afholdt, da regningerne fra\nregionen ikke kan nå at komme med i indeværende års regnskab. Det vil sige i 2027, efter ophør af KMF. Kommunerne\nhar ikke budget til disse udgifter i 2027, og regeringen har derfor besluttet at eftergive de tre måneders betalinger.\nNæstved Kommune har dog budgetteret med den ene af de tre måneder i 2026, da vi normalt kun har skubbet to af de\ntre måneder til året efter. Der er derfor en måneds lavere forbrug i 2026 på KMD, svarende til 30 mio. kr.\nDerfor anbefaler administrationen, at praksis ændres og at der ikke fremover overføres regninger mellem kalenderår,\nudover almindelig periodisering. Administrationen anbefaler, at det ikke anvendte budget i 2026 til KMF delvist anvendes\ntil at korrigere periodiseringen af udgifterne på ældreområdet. Det betyder at regninger for ca. 16 mio. kr., der efter\nnuværende praksis skulle være skubbet til 2027, betales i 2026 af budgettet til KMF\nHandicap og Psykiatri området\nPolitikområde Handicap og Psykiatri forventer et samlet underskud på 17,6 mio.kr., hvilket er en forbedring på 0,3\nmio.kr. i forhold til budgetkontrollen pr. 1. maj.\nForbedringen er sammensat af en stigning i underskuddet på fagområderne fra 16,9 mio.kr. til 17,9 mio.kr., mens der\nhar været en samlet forbedring på virksomhederne med 1,3 mio.kr.\nOmrådet modtager i henhold til gældende lovgivning refusionsindtægter fra staten for blandet andet udgifter til\nforsorgshjem efter § 110 i serviceloven. Her er vurderet et mindre fald i forhold til opfølgningen pr. 1. maj. Der er\nligeledes indtægter for refusion for særlig dyre borgere. Her er vurderingen pr. 1/9 i forhold til 1. maj stigende indtægter.\nSamtidig vurderes udgifterne til køb af eksterne tilbud til § 85 tilbud at være stigende, men der har været faldende\nudgifter til § 107 og 108, midlertidige og længerevarende tilbud i forhold til 1. maj.\nDet samlede underskud på 17,6 mio.kr. skyldes som beskrevet i opfølgningen 1. marts og 1. maj følgende:\n1: De 18-årige starter på området den dag de fylder 18 år. Budgettet tilpasses ikke automatisk med den tilhørende årlige\nudgift. I henhold til gældende økonomistyringsregler foregår tilpasninger af budgettet ved en konkret beregning af\nforventet antal x pris pr. enhed.\n2: Der har været en udgiftsstigning i forhold til sidste år for de borgere, som er født i perioden 1925 til 2006, primært til\ndækning af udgifter til længere varende tilbud.\nFor virksomhederne har der været en forbedring på 1,3 mio.kr., primært fordi en af virksomhederne har øget\noverskuddet, mens virksomhederne med underskud har nedbragt underskuddet.\n\nKommunal MedFinansiering af sundhedsudgifterne (KMF)\nUdvalget hæfter ikke for et underskud på KMF, ligesom udvalget heller ikke kan disponere over et overskud. Budgettet\nog resultatet indgår derfor ikke i oversigterne.\nRegeringen har besluttet at videreføre fastfrysningen af den kommunale medfinansiering i 2026.\nEfterregulering KMF vedr. 2025. Næstved Kommune forventes pt. at skulle tilbagebetale ca. 6,275 mio. kr. I\nbudgetopfølgningen 1. september overføres budget til politikområde Finansiering, da udgiften jf. reglerne skal bogføres\nder.\nKMF ophører fra 1-1-2027:\nDa KMF ophører fra og med 2027, er regeringen og KL enige om at eftergive den del af betalingen der vedrører 2026,\nmen betales i 2027. I Næstved Kommune er en andel af denne betaling, budgetlagt i regnskab 2026, hvorfor det\nforventede overskud stiger fra 4,2 mio. kr. til ca. 34,8 mio. kr. Desuden sker der ekstraordinært en overførsel til\npolitikområde Ældre på 16 mio.kr, hvorefter overskuddet reduceres til ca. 18,8 mio.kr. Overførslen besluttes\nekstraordinært i Byrådet i forbindelse med behandling af den samlede budgetkontrol. Baggrunden for overførslen er\nbeskrevet i ovenstående afsnit om Ændring af regnskabspraksis for køb af pladser i andre kommuner, under\nældreområdet.\nOpfølgning på driftstilpasningsforslag\nUdvalget vedtog på mødet den 20. april en række driftstilpasningsforslag med virkning for både 2026 og 2027.\nAdministrationen har i bilag 4 udarbejdet en oversigt over status for implementering af forslagene. Bilaget indeholder en\nkort gennemgang af alle forslag med status. Såfremt forslagene endnu ikke er gennemført vil der fremgå en kort\nbeskrivelse af, hvorfor det ikke er gennemført.\nAnlæg\nÆldre- og Omsorgsudvalget har i forbindelse med budgetopfølgningen pr. 1. marts 2026 behandlet en række\ndriftstilpasninger på Handicap og Psykiatri, og udvalget har i den forbindelse behov for finansiering til at igangsættelse af\nto investeringsprojekter.\n1) Reetablering af 9 boliger og etablering af kontorfaciliteter på Marskvej til 3,5 mio. kr.\nFor at imødekomme et stigende behov for midlertidige botilbud efter Servicelovens §107 foreslås det at udvide\nkapaciteten med 5 interne pladser. Udvidelsen muliggør, at kommunen i højere grad kan anvende egne pladser frem for\neksterne leverandører, hvilket vil medføre en varig reduktion i de samlede udgifter pr. borger.\n2) Udvidelse af et eksisterende §108-tilbud gennem opførelse af en tilbygning med 3 nye boliger til 6,5 mio. kr.\nKommunen oplever stigende udgifter til køb af eksterne pladser på det specialiserede socialområde, særligt for borgere\nmed meget omfattende støttebehov og komplekse funktionsnedsættelser.\nForslaget indebærer en fysisk udvidelse af et eksisterende §108-tilbud gennem opførelse af en tilbygning med 3 nye\nboliger, der målrettes borgere med meget høje støttebehov.\nØkonomiudvalget har den 18/5 godkendt finansieringen af de to anlægsprojekter. Finansieringen tages fra\nanlægsbudget til parkeringshus i Rådmandshaven, men der skal gives anlægsbevillinger og frigives rådighedsbeløb af\nbyrådet. Indstillingspunkterne indgår derfor alene i denne sag for at få de nødvendige bevillingerne korrekt besluttet i\nÆOU, ØK og Byrådet."
     },
     {
      "titel": "Økonomi",
-     "tekst": "Udvalgenes budgetopfølgning pr. 1. september 2026 samles til én samlet budgetopfølgningssag til\nØkonomiudvalget og Byrådet, som behandles i Økonomiudvalget den 16. november 2026 og i Byrådet den 24.\nnovember 2026.\n\nBevillingsændringer på driften medfører en op/nedjustering af driftsbudgettet på udvalgets område med X.\nÆndringen er samlet set udgiftsneutral for kommunen."
+     "tekst": "Udvalgenes budgetopfølgning pr. 1. september 2026 samles til én samlet budgetopfølgningssag til\nØkonomiudvalget og Byrådet, som behandles i Økonomiudvalget den 16. november 2026 og i Byrådet den 24.\nnovember 2026.\nBevillingsændringer på driften medfører en op/nedjustering af driftsbudgettet på udvalgets område med X.\nÆndringen er samlet set udgiftsneutral for kommunen."
     }
    ],
    "bilag": [
@@ -12037,6 +12094,10 @@
      "url": null
     },
     {
+     "navn": "Præsentation af budgetopfølgning pr. 1 September 2026-ÆOU",
+     "url": null
+    },
+    {
      "navn": "Ældre- og Omsorgsudvalget 02.11.2026",
      "url": null
     }
@@ -12047,10 +12108,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Drøftelse af kommissorier for budgettemaanalyser i budgetaftalen for 2027",
    "afsnit": [
     {
@@ -12060,6 +12121,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at udvalget drøfter de for udvalget relevante kommissorier og afgiver eventuelle\nbemærkninger til det videre arbejde."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nDrøftet.\nUdvalget ønsker at sætte emnet boliger til seniorer og borgere indenfor Handicap og Psykiatri på dagsorden som\ntemadrøftelser i første halvår 2027og efterfølgende inddragelse af Byrådet på et byrådstemamøde."
     },
     {
      "titel": "Sagsfremstilling",
@@ -12098,10 +12163,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Godkendelse af bevilling til mentor til elever med udfordrede læringsforudsætninger",
    "afsnit": [
     {
@@ -12111,6 +12176,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at bevillingen fra Undervisningsministeriet (Styrelsen for Undervisning og Kvalitet)\ngodkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nGodkendt."
     },
     {
      "titel": "Sagsfremstilling",
@@ -12128,10 +12197,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Godkendelse af takst for tøjvask hos hjemmeboende borgere",
    "afsnit": [
     {
@@ -12143,8 +12212,12 @@
      "tekst": "Administrationen indstiller, at takster for tøjvask ved hjemmeboende borgere godkendes."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nAnbefales."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Ældre- og Omsorgsudvalget godkendte i april 2026 to driftstilpasningsforslag omkring tøjvask, der samlet skal bidrage\nmed 720.000 kr. til området. Besparelsen er beregnet ud fra fordelingen af borgere med tøjvask samt hyppigheden af\ntøjvask, da tøjvask lå under Serviceloven. Dette er seneste tal for antallet, da tøjvask i dag er indeholdt i forløb efter\nÆldreloven. Beregningen tog desuden udgangspunkt i andre kommuners takster samt daværende kendskab til\nudgifterne ved ekstern leverandør.\nDriftstilpasningen har krævet et udbud af tøjvask, der nu er afsluttet, og ordningen starter op 15. januar 2026. Byrådet\nskal godkende taksterne for tøjvask i eget hjem. Taksterne skal blandt andet dække forbrugsudgifter som el, vand og\nvaskemiddel samt transport. Såfremt borger ikke opkræves en takst, vil kommunen overkompensere borgerne i\nforbindelse med tøjvask.\nAdministrationen har undersøgt takster i andre kommuner, og der viser sig en forskel i, hvordan man fastlægger\ntaksterne. Nogle kommuner har samme takst uanset tøjmængde og hyppighed, mens andre kommuner har lagt et loft\nover taksterne eller dækker udgifterne til transport. I administrationens forslag nedenfor betaler borgerne for både\nforbrug og transport.\nAdministrationen anbefaler følgende takster for at opnå den besluttede besparelse:\nHyppighed og mængde\n\nTakst pr måned\n\n1-8 kg tøj v. levering/afhentning hver 2. uge (for enlige) kr. 186\n1-12 kg tøj v. levering/afhentning hver 2. uge (for par)\n\n1-8 kg v. levering/afhentning hver uge (for enlige)\n\n1-12 kg v. levering/afhentning hver uge (for par)\n\nByrådet skal godkende taksterne, der fremadrettet skal indgå i det kommunale takstblad."
+     "tekst": "Ældre- og Omsorgsudvalget godkendte i april 2026 to driftstilpasningsforslag omkring tøjvask, der samlet skal bidrage\nmed 720.000 kr. til området. Besparelsen er beregnet ud fra fordelingen af borgere med tøjvask samt hyppigheden af\ntøjvask, da tøjvask lå under Serviceloven. Dette er seneste tal for antallet, da tøjvask i dag er indeholdt i forløb efter\nÆldreloven. Beregningen tog desuden udgangspunkt i andre kommuners takster samt daværende kendskab til\nudgifterne ved ekstern leverandør.\nDriftstilpasningen har krævet et udbud af tøjvask, der nu er afsluttet, og ordningen starter op 15. januar 2027. Byrådet\nskal godkende taksterne for tøjvask i eget hjem. Taksterne skal blandt andet dække forbrugsudgifter som el, vand og\nvaskemiddel samt transport. Såfremt borger ikke opkræves en takst, vil kommunen overkompensere borgerne i\nforbindelse med tøjvask.\nAdministrationen har undersøgt takster i andre kommuner, og der viser sig en forskel i, hvordan man fastlægger\ntaksterne. Nogle kommuner har samme takst uanset tøjmængde og hyppighed, mens andre kommuner har lagt et loft\nover taksterne eller dækker udgifterne til transport. I administrationens forslag nedenfor betaler borgerne for både\nforbrug og transport.\nAdministrationen anbefaler følgende takster for at opnå den besluttede besparelse:\nHyppighed og mængde\n\nTakst pr måned\n\n1-8 kg tøj v. levering/afhentning hver 2. uge (for enlige) kr. 186\n1-12 kg tøj v. levering/afhentning hver 2. uge (for par)\n\n1-8 kg v. levering/afhentning hver uge (for enlige)\n\n1-12 kg v. levering/afhentning hver uge (for par)\n\nByrådet skal godkende taksterne, der fremadrettet skal indgå i det kommunale takstblad."
     },
     {
      "titel": "Økonomi",
@@ -12158,10 +12231,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Godkendelse af Center for Døve som arbejdsgiver for kontaktpersoner efter servicelovens § 98",
    "afsnit": [
     {
@@ -12173,8 +12246,12 @@
      "tekst": "Administrationen indstiller, at Center for Døve (CFD) fremover varetager arbejdsgiverfunktionen for kontaktpersoner\nefter servicelovens § 98 i Næstved Kommune."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nGodkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Efter servicelovens § 98 skal kommunen tilbyde en særlig kontaktperson til borgere med erhvervet døvblindhed.\nKontaktpersonen understøtter blandt andet borgerens muligheder for kommunikation, ledsagelse og deltagelse i\nsamfundslivet.\nI Næstved Kommune modtager 8 borgere i 2026 støtte efter § 98, og der har i løbet af året været ansat 12\nkontaktpersoner. Antallet af borgere og kontaktpersoner varierer fra år til år, og den enkelte borger kan have flere\nkontaktpersoner tilknyttet.\nNæstved Kommune har en rammeaftale med Center For Døve (CFD), som er en landsdækkende, selvejende\nnonprofitorganisation med specialiseret viden om døvblindhed. CFD varetager specialrådgivning, introduktion og\noplæring af kontaktpersoner, løbende undervisning, vejledning, supervision og opfølgning på ordningerne. CFD bistår\ndesuden med rekruttering og matchning mellem borgere og kontaktpersoner, som efterfølgende ansættes i Næstved\nKommune.\nEn gennemgang af den nuværende organisering har vist behov for en mere sammenhængende og systematisk\nvaretagelse af arbejdsgiveropgaverne, herunder personaleledelse, ansættelsesforhold og lønadministration.\nForslag til fremtidig organisering\nAdministrationen foreslår, at CFD fremover overtager arbejdsgiverfunktionen for samtlige kontaktpersoner efter\nservicelovens § 98.\nCFD vil dermed samle den faglige understøttelse og arbejdsgiverfunktionen og varetage ansættelse, lønudbetaling,\npersonaleledelse, arbejdstidsregistrering og øvrig personaleadministration. Kontaktpersonerne vil blive ansat efter\nCFD's overenskomst med FOA. Næstved Kommune vil fortsat have myndighedsansvaret, herunder visitation og\nbevilling af støtte efter § 98. Ifølge CFD anvendes arbejdsgiverordningen allerede af fem kommuner: Ringsted,\nLyngby-Taarbæk, Odder, Rudersdal og Hørsholm.\n\nVed politisk godkendelse vil administrationen arbejde for at gennemføre overgangen hurtigst muligt under hensyntagen\ntil de eksisterende ansættelsesforhold."
+     "tekst": "Efter servicelovens § 98 skal kommunen tilbyde en særlig kontaktperson til borgere med erhvervet døvblindhed.\nKontaktpersonen understøtter blandt andet borgerens muligheder for kommunikation, ledsagelse og deltagelse i\nsamfundslivet.\nI Næstved Kommune modtager 8 borgere i 2026 støtte efter § 98, og der har i løbet af året været ansat 12\nkontaktpersoner. Antallet af borgere og kontaktpersoner varierer fra år til år, og den enkelte borger kan have flere\nkontaktpersoner tilknyttet.\nNæstved Kommune har en rammeaftale med Center For Døve (CFD), som er en landsdækkende, selvejende\nnonprofitorganisation med specialiseret viden om døvblindhed. CFD varetager specialrådgivning, introduktion og\noplæring af kontaktpersoner, løbende undervisning, vejledning, supervision og opfølgning på ordningerne. CFD bistår\ndesuden med rekruttering og matchning mellem borgere og kontaktpersoner, som efterfølgende ansættes i Næstved\nKommune.\nEn gennemgang af den nuværende organisering har vist behov for en mere sammenhængende og systematisk\nvaretagelse af arbejdsgiveropgaverne, herunder personaleledelse, ansættelsesforhold og lønadministration.\nForslag til fremtidig organisering\nAdministrationen foreslår, at CFD fremover overtager arbejdsgiverfunktionen for samtlige kontaktpersoner efter\nservicelovens § 98.\n\nCFD vil dermed samle den faglige understøttelse og arbejdsgiverfunktionen og varetage ansættelse, lønudbetaling,\npersonaleledelse, arbejdstidsregistrering og øvrig personaleadministration. Kontaktpersonerne vil blive ansat efter\nCFD's overenskomst med FOA. Næstved Kommune vil fortsat have myndighedsansvaret, herunder visitation og\nbevilling af støtte efter § 98. Ifølge CFD anvendes arbejdsgiverordningen allerede af fem kommuner: Ringsted,\nLyngby-Taarbæk, Odder, Rudersdal og Hørsholm.\nVed politisk godkendelse vil administrationen arbejde for at gennemføre overgangen hurtigst muligt under hensyntagen\ntil de eksisterende ansættelsesforhold."
     },
     {
      "titel": "Økonomi",
@@ -12197,10 +12274,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Godkendelse af videre proces for arbejdsgrundlag",
    "afsnit": [
     {
@@ -12212,8 +12289,12 @@
      "tekst": "Administrationen indstiller, at\n1. den videre proces for arbejdsgrundlaget godkendes\n2. at topmødet afholdes d. 13. maj 2027"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nAd. 1: Godkendt. Udvalget har tilsluttet sig temadrøftelsen den 30. november med supplerende deltagelse af\nbrobyggerne. At udvalget prioriterer tværgående dialog med relevante stående udvalg. Udvalget er enige i de\nudpegede temaer, og ønsker at udsætte opsamling i marts og i stedet erstatte med udvalgte temadrøftelser.\nAd. 2: Udvalget ønsker at udskyde topmødet."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Ældre- og Omsorgsudvalget har udvalgt, hvilke temaer der skal danne grundlag for det videre arbejde med\narbejdsgrundlaget. Nedenfor skitseres forslag til proces for det videre arbejde med arbejdsgrundlaget. I bilaget findes en\ntidslinje.\nFælles temadrøftelse mellem ÆOU og FSU (november)\nÆldre- og Omsorgsudvalget og Forebyggelses- og Sundhedsudvalget valgte begge temaet \"Frivillighed og\nCivilsamfund\", og administrationen anbefaler derfor, at udvalgene har en fælles temadrøftelse mellem udvalgene d. 30.\nnovember kl. 12-13.30. Da temaet har stor snitflade med Kultur-, Fritid og Lokaldemokratiudvalget, foreslår\nadministrationen, at dette udvalg inviteres med til temadrøftelsen.\nTemadrøftelsen starter med et oplæg fra en oplægsholder, hvorefter udvalgene får mulighed for at drøfte temaet.\nAdministrationen foreslår, at repræsentanter fra Ældrerådet, Handicaprådet, Frivilligrådet samt Fritidsudvalget deltager i\ndrøftelsen. Desuden inviteres Frivilligcenteret til drøftelsen.\nTemadrøftelser på udvalgsmøder (januar)\nUdvalget drøfter temaet \"Værdighed, nærhed og livskvalitet\" på udvalgsmødet d. 4. januar, og temaet \"Mental trivsel\" d.\n30. januar. Temadrøftelserne starter med et oplæg fra oplægsholder, hvorefter udvalget får mulighed for at drøfte\ntemaet. Administrationen foreslår, at repræsentanter fra Ældre-, Handicap- og udsatterådet deltager i drøftelserne.\nOpsamling (marts)\nUdvalget får mulighed for at samle op på temadrøftelserne.\nTopmøde (maj)\nAdministrationen foreslår, at Ældre- og Omsorgsudvalget og Forebyggelses- og Sundhedsudvalget afholderet fælles\ntopmøde d. 13. maj 2027. Programmet for topmødet vil være todelt, hvor første halvdel af dagen vil omhandle temaet\nLighed i sundhed, mens anden halvdel vil omhandle Forebyggelse og rehabilitering. Programmet vil blive planlagt med\n\nfokus på udvalgenes bredde i målgrupper og opgaver. De resterende medlemmer fra byrådet inviteres med, da\ntemaerne er relevante for flere af de andre fagudvalg, og fremadrettet handling er afhængig af samarbejde på tværs.\nDesuden kan relevante ledere og medarbejdere m.fl. inviteres med."
+     "tekst": "Ældre- og Omsorgsudvalget har udvalgt, hvilke temaer der skal danne grundlag for det videre arbejde med\narbejdsgrundlaget. Nedenfor skitseres forslag til proces for det videre arbejde med arbejdsgrundlaget. I bilaget findes en\ntidslinje.\nFælles temadrøftelse mellem ÆOU og FSU (november)\nÆldre- og Omsorgsudvalget og Forebyggelses- og Sundhedsudvalget valgte begge temaet \"Frivillighed og\nCivilsamfund\", og administrationen anbefaler derfor, at udvalgene har en fælles temadrøftelse mellem udvalgene d. 30.\nnovember kl. 12-13.30. Da temaet har stor snitflade med Kultur-, Fritid og Lokaldemokratiudvalget, foreslår\nadministrationen, at dette udvalg inviteres med til temadrøftelsen.\nTemadrøftelsen starter med et oplæg fra en oplægsholder, hvorefter udvalgene får mulighed for at drøfte temaet.\nAdministrationen foreslår, at repræsentanter fra Ældrerådet, Handicaprådet, Frivilligrådet samt Fritidsudvalget deltager i\ndrøftelsen. Desuden inviteres Frivilligcenteret til drøftelsen.\nTemadrøftelser på udvalgsmøder (januar)\nUdvalget drøfter temaet \"Værdighed, nærhed og livskvalitet\" på udvalgsmødet d. 4. januar, og temaet \"Mental trivsel\" d.\n30. januar. Temadrøftelserne starter med et oplæg fra oplægsholder, hvorefter udvalget får mulighed for at drøfte\ntemaet. Administrationen foreslår, at repræsentanter fra Ældre-, Handicap- og udsatterådet deltager i drøftelserne.\n\nOpsamling (marts)\nUdvalget får mulighed for at samle op på temadrøftelserne.\nTopmøde (maj)\nAdministrationen foreslår, at Ældre- og Omsorgsudvalget og Forebyggelses- og Sundhedsudvalget afholderet fælles\ntopmøde d. 13. maj 2027. Programmet for topmødet vil være todelt, hvor første halvdel af dagen vil omhandle temaet\nLighed i sundhed, mens anden halvdel vil omhandle Forebyggelse og rehabilitering. Programmet vil blive planlagt med\nfokus på udvalgenes bredde i målgrupper og opgaver. De resterende medlemmer fra byrådet inviteres med, da\ntemaerne er relevante for flere af de andre fagudvalg, og fremadrettet handling er afhængig af samarbejde på tværs.\nDesuden kan relevante ledere og medarbejdere m.fl. inviteres med."
     },
     {
      "titel": "Økonomi",
@@ -12236,10 +12317,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Godkendelse af udkast til ny partnerskabsaftale med Frivilligcenter Næstved fra 2027",
    "afsnit": [
     {
@@ -12251,8 +12332,12 @@
      "tekst": "Administrationen indstiller, at udvalget godkender udkast til ny partnerskabsaftale med Frivilligcenter Næstved for\nperioden 2027-2028 med administrationens anbefalinger i forhold til uenighedspunkter, således at:\n1. Frivilligcentret får det administrative ansvar for Frivilligkonferencen\n2. Frivilligcentret får det administrative ansvar for Det Tværgående Dialogmøde\n3. Partnerskabsaftalens løbetid bliver 2 år."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nAd. 1: Godkendt\nAd. 2: Godkendt\nAd. 3: Godkendt\nMikkel Lerrin Schannong (F) stemmer imod pkt. 1-3, da han ikke kan støtte indstillingspunkterne, fordi en toårig\naftale giver for usikre rammer for en fast samarbejdspartner. Opgaven vedrørende gældsrådgivningen bør fremgå\ntydeligere som en opgave, Frivilligcenteret har påtaget sig, og ikke i et samarbejde med kommunen."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Med udgangspunkt i temadrøftelse på Ældre- og Omsorgsudvalgets møde 24.08.2026 og dialog med Frivilligcenter\nNæstved har Administrationen udarbejdet udkast til ny partnerskabsaftale mellem Frivilligcenter Næstved og Næstved\nKommune til godkendelse i Udvalget (bilag 1 og 2: Ny partnerskabsaftale NK-FC 2027-2028, Ny partnerskabsaftale med\nkorrektur, og Frivilligcentrets kommentarer til aftaleudkastet).\nGrundlæggende har både Frivilligcentret og Administrationen været tilfredse med den gældende partnerskabsaftale. I\nden version af aftaleudkastet, der har synlige korrekturer, er der dog rettelser og tilføjelser (bilag: Ny partnerskabsaftale\nmed korrektur). Det meste skyldes dels opstramninger med henblik på at skabe overskuelighed og mere læsevenlige,\nletforståelige og ordrette formuleringer, dels opdateringer af partsnavne, datoer og økonomi. Derudover er der enkelte\nstørre ændringer.\nFælles vision om at få flere med i frivillige fællesskaber - men hvor mange opgaver?\nFrivilligcentret er en vigtig partner i Kommunens samarbejde med Civilsamfundet, fordi Frivilligcentret både selv er med\ntil og understøtter mange civile aktører, der løser opgaver, som det offentlige ikke formår. Af hensyn til tydelighed er den\nnye aftale tilføjet den række opgaver, som Frivilligcentret løser ud over deres primære opgaver, og som understøtter\nKommunens vision om at få flere med i frivillige fællesskaber (bilag 3: Ny partnerskabsaftale NK-FC 2027-2028, § 5,\nafsnittet 'Opgaver i samarbejde mellem Frivilligcenter Næstved og Næstved Kommune').\nI forbindelse med valget af de opgaver, som er ud over Frivilligcentrets primære opgaver, er Frivilligcentrets hidtidige\nsekretærfunktion for Næstved Frivilligråd skrevet ud af aftalen (bilag 3: Ny partnerskabsaftale NK-FC 2027-2028, § 5,\nafsnittet 'Frivilligcenter Næstved udfylder sin rolle bl.a. ved at:'). I stedet er administration af Trelleborg Fondens Pris til\ndet Frivillige Sociale Arbejde skrevet ind.\nI listen over de opgaver, som er ud over Frivilligcentrets primære opgaver, er der desuden indskrevet yderligere 2\nopgaver, som der dog er uenighed om (bilag 4: Uenighedsbilag). Det er Administrationens opfattelse, at Frivilligcentret\n\nmed Kommunens merbevilling på 500.000 kr. årligt fra 2026 kan varetage de opgaver, der er skrevet ind i\naftaleudkastet.\nHvor lang løbetid skal partnerskabsaftalen have?\nI aftaleudkastets § 8 er der indskrevet en løbetid på 2 år, men der er uenighed om, hvor lang partnerskabsaftalens\nløbetid skal være (bilag 4: Uenighedsbilag). Administrationen anbefaler en 2-årig aftale for at give et kommende udvalg\nmulighed for at sætte sit præg på en aftale, der kommer til at virke i deres udvalgsperiode, og for at skabe bedre\nopsigelsesvilkår set i lyset af Næstved Kommunes generelle økonomiske situation. Aftalen kan fortsætte uændret, hvis\nder ikke er behov for ændringer til en ny periode.\nImødekommenhed på opsigelsesvarsel\nDet normale opsigelsesvarsel i tilsvarende aftaler er 6 måneder. Næstved Kommune har dog hidtil imødekommet\nFrivilligcentrets ønske om 12 måneders opsigelsesvarsel af hensyn til ansættelseskontrakter og andre aftaler. I udkastet\ntil ny partnerskabsaftale er opsigelsesvarslet på 12 måneder. Administrationen indstiller, at\nUdvalget fortsat imødekommer dette ønske.\nStabilt økonomisk grundlag\nIfølge aftaleudkastet videreføres aftalens økonomi på det nuværende niveau med årlige pris- og lønfremskrivninger.\nDialog og inddragelse\nI processen med udarbejdelsen af den nye partnerskabsaftale har Administrationen holdt dialogmøde med\nFrivilligcentret, og udkast til aftalen har været til kommentering i Frivilligcentrets bestyrelse. Frivilligcentrets bidrag er\nindarbejdet enten i selve aftaleudkastet, eller i nærværende sagsfremstilling og tilhørende bilag.\nForhandlingerne mellem Frivilligcentret og Administrationen har været konstruktiv, og Frivilligcentrets bestyrelse bakker\nop om aftaleudkastet."
+     "tekst": "Med udgangspunkt i temadrøftelse på Ældre- og Omsorgsudvalgets møde 24.08.2026 og dialog med Frivilligcenter\nNæstved har Administrationen udarbejdet udkast til ny partnerskabsaftale mellem Frivilligcenter Næstved og Næstved\nKommune til godkendelse i Udvalget (bilag 1 og 2: Ny partnerskabsaftale NK-FC 2027-2028, Ny partnerskabsaftale med\nkorrektur, og Frivilligcentrets kommentarer til aftaleudkastet).\nGrundlæggende har både Frivilligcentret og Administrationen været tilfredse med den gældende partnerskabsaftale. I\nden version af aftaleudkastet, der har synlige korrekturer, er der dog rettelser og tilføjelser (bilag: Ny partnerskabsaftale\nmed korrektur). Det meste skyldes dels opstramninger med henblik på at skabe overskuelighed og mere læsevenlige,\nletforståelige og ordrette formuleringer, dels opdateringer af partsnavne, datoer og økonomi. Derudover er der enkelte\nstørre ændringer.\nFælles vision om at få flere med i frivillige fællesskaber - men hvor mange opgaver?\nFrivilligcentret er en vigtig partner i Kommunens samarbejde med Civilsamfundet, fordi Frivilligcentret både selv er med\ntil og understøtter mange civile aktører, der løser opgaver, som det offentlige ikke formår. Af hensyn til tydelighed er den\nnye aftale tilføjet den række opgaver, som Frivilligcentret løser ud over deres primære opgaver, og som understøtter\n\nKommunens vision om at få flere med i frivillige fællesskaber (bilag 3: Ny partnerskabsaftale NK-FC 2027-2028, § 5,\nafsnittet 'Opgaver i samarbejde mellem Frivilligcenter Næstved og Næstved Kommune').\nI forbindelse med valget af de opgaver, som er ud over Frivilligcentrets primære opgaver, er Frivilligcentrets hidtidige\nsekretærfunktion for Næstved Frivilligråd skrevet ud af aftalen (bilag 3: Ny partnerskabsaftale NK-FC 2027-2028, § 5,\nafsnittet 'Frivilligcenter Næstved udfylder sin rolle bl.a. ved at:'). I stedet er administration af Trelleborg Fondens Pris til\ndet Frivillige Sociale Arbejde skrevet ind.\nI listen over de opgaver, som er ud over Frivilligcentrets primære opgaver, er der desuden indskrevet yderligere 2\nopgaver, som der dog er uenighed om (bilag 4: Uenighedsbilag). Det er Administrationens opfattelse, at Frivilligcentret\nmed Kommunens merbevilling på 500.000 kr. årligt fra 2026 kan varetage de opgaver, der er skrevet ind i\naftaleudkastet.\nHvor lang løbetid skal partnerskabsaftalen have?\nI aftaleudkastets § 8 er der indskrevet en løbetid på 2 år, men der er uenighed om, hvor lang partnerskabsaftalens\nløbetid skal være (bilag 4: Uenighedsbilag). Administrationen anbefaler en 2-årig aftale for at give et kommende udvalg\nmulighed for at sætte sit præg på en aftale, der kommer til at virke i deres udvalgsperiode, og for at skabe bedre\nopsigelsesvilkår set i lyset af Næstved Kommunes generelle økonomiske situation. Aftalen kan fortsætte uændret, hvis\nder ikke er behov for ændringer til en ny periode.\nImødekommenhed på opsigelsesvarsel\nDet normale opsigelsesvarsel i tilsvarende aftaler er 6 måneder. Næstved Kommune har dog hidtil imødekommet\nFrivilligcentrets ønske om 12 måneders opsigelsesvarsel af hensyn til ansættelseskontrakter og andre aftaler. I udkastet\ntil ny partnerskabsaftale er opsigelsesvarslet på 12 måneder. Administrationen indstiller, at\nUdvalget fortsat imødekommer dette ønske.\nStabilt økonomisk grundlag\nIfølge aftaleudkastet videreføres aftalens økonomi på det nuværende niveau med årlige pris- og lønfremskrivninger.\nDialog og inddragelse\nI processen med udarbejdelsen af den nye partnerskabsaftale har Administrationen holdt dialogmøde med\nFrivilligcentret, og udkast til aftalen har været til kommentering i Frivilligcentrets bestyrelse. Frivilligcentrets bidrag er\nindarbejdet enten i selve aftaleudkastet, eller i nærværende sagsfremstilling og tilhørende bilag.\nForhandlingerne mellem Frivilligcentret og Administrationen har været konstruktiv, og Frivilligcentrets bestyrelse bakker\nop om aftaleudkastet."
     },
     {
      "titel": "Økonomi",
@@ -12287,10 +12372,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Orientering om investeringscases",
    "afsnit": [
     {
@@ -12303,11 +12388,11 @@
     },
     {
      "titel": "Beslutning",
-     "tekst": "Beskæftigelses-, Erhvervs- og Turismeudvalget, 05.10.2026\nFraværende: Marc Hvenegaard (C)\nStedfortræder: Anette Brix (C).\nTil efterretning."
+     "tekst": "Beskæftigelses-, Erhvervs- og Turismeudvalget, 05.10.2026\nFraværende: Marc Hvenegaard (C)\nStedfortræder: Anette Brix (C).\nTil efterretning.\nÆldre- og Omsorgsudvalget, 02.11.2026\nTil efterretning."
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Beskæftigelses-, Erhvervs- og Turismeudvalget har efterspurgt oplæg til investeringscases forud for\nbudgetforhandlingerne. Herunder beskrives følgende tre investeringscases:\n1. Målrettet indsats for sygemeldte dagpengemodtagere\n2. Fælles §82 gruppeforløb mellem Center for Handicap og Psykiatri (CHP) og Center for Arbejdsmarked (CAM)\n3. Omsorgsakademiet - bro mellem ledige borgere og kommunens fremtidige SOSU-medarbejdere\nBusinesscasene kan læses i deres fulde længde og med de mere præcise beregninger i bilag 1.\nForslag 1. Målrettet indsats for sygemeldte dagpengemodtagere\nBusinesscasen handler om en tidligere og mere samlet indsats for borgere, der bliver sygemeldt fra A-dagpenge. Målet\ner at forebygge lange forløb på sygedagpenge og mindske risikoen for gentagne sygemeldinger.\nIndsatsen organiseres på tværs af A-dagpenge- og sygedagpengeområdet, så borgeren får et mere sammenhængende\nforløb. Der følges hurtigt og systematisk op, så borgeren hurtigere kan vende tilbage til arbejde eller fastholde kontakten\ntil arbejdsmarkedet med de nødvendige hensyn.\nDen økonomiske forventning er, at selv små forbedringer i varigheden kan have betydning for kommunens udgifter.\nEffekten følges årligt, og indsatsen vurderes igen i 2028.\n\nLøn kt. 05\n\nPolitikområde\nArbejdsmarked\n\nOverførsler/service\nOverførsler\n\nLøn kt. 06\n\nYdelser\nreduktion\nNettogevinst\n\nAdministration\n(CAM)\nArbejdsmarked\n\nService\nOverførsler\n\nForslag 2. Fælles §82 gruppeforløb mellem CHP og CAM\nBusinesscasen handler om et fælles gruppeforløb for aktivitetsparate borgere med psykiske eller sociale\nudfordringer. Målgruppen er borgere, som kan have behov for støtte i hverdagen, og som samtidig har mulighed for at\nkomme tættere på job eller uddannelse. Forløbet varer seks måneder og har fokus på hverdagsmestring, sundhed,\njobmål , praktik og løntimer. Formålet er at give borgerne bedre støtte og skabe hurtigere progression.\nDet kan på sigt føre til kortere tid på offentlig forsørgelse og mindre behov for individuel støtte efter servicelovens §85.\nDer forventes en årlig investering på ca. 900.000 kr. til medarbejderressourcer. De økonomiske beregninger er\nforeløbige og afhænger af mere viden om målgruppen. Effekten følges årligt, og indsatsen vurderes igen i 2028.\n\nYdelser\nreduktion\n§85 reduktion\n\nNettogevinst\n\nLøn kt. 05\nLøn kt. 06\n\nPolitikområde\nArbejdsmarked\nAdministration\n(CHP)\nArbejdsmarked\n\nOverførsler/service\nOverførsler\nService\n\nHandicap og\nPsykiatri\n\nService\n\nOverførsler\n\nForslag 3. Omsorgsakademiet - bro mellem ledige borgere og kommunens fremtidige SOSU-medarbejdere\nBusinesscasen handler om at etablere Omsorgsakademiet som et pilotprojekt mellem Center for Arbejdsmarked og\nCenter for Sundhed og Ældre. Formålet er at give ledige borgere en praktisk vej ind i omsorgsfaget og samtidig støtte\nrekrutteringen til ældreområdet.\nBorgerne skal gennem undervisning, træning og opgaver på aktivitetscentre og plejecentre afklare deres motivation,\narbejdsevne og mulighed for job eller uddannelse. Pilotprojektet er målrettet 30 visiterede borgere, hvor 24 forventes at\ndeltage. Succesen måles blandt andet på, om deltagere går videre til SOSU-uddannelse, job, praktik eller løntilskud og\nfastholdes efter 12 måneder.\nØkonomien er beregnet ud fra mulige besparelser i Center for Arbejdsmarked. Eventuelle gevinster og udgifter på\nældreområdet er ikke fuldt medregnet, da de er mere usikre. Effekten følges årligt, og indsatsen vurderes igen i 2028.\n\nLøn kt. 05\nLøn kt. 06\nLøn\nældreområde\nYdelser\nreduktion\nNettogevinst\nDen videre proces\n\nPolitikområde\nArbejdsmarked\nAdministration (CAM)\nÆldre/Administration\n(CSA)\nArbejdsmarked\n\nOverførsler/service\nOverførsler\nService\nService\nOverførsler\n\nAlle tre investeringscases er med i budgetaftalen for 2027, der skal godkendes endeligt på det kommende byrådsmøde\ntirsdag den 6. oktober. Administrationen vil efterfølgende udarbejde en konkret sagsfremstilling på hver enkelt vedtagne\nbusinesscase.\nUdvalget vil få forelagt status en gang årligt i forhold til at følge effekten. Senest i 2028 kan udvalget tage stilling til, om\nden eller de vedtagne investeringscass har den ønskede effekt."
+     "tekst": "Beskæftigelses-, Erhvervs- og Turismeudvalget har efterspurgt oplæg til investeringscases forud for\nbudgetforhandlingerne. Herunder beskrives følgende tre investeringscases:\n1. Målrettet indsats for sygemeldte dagpengemodtagere\n2. Fælles §82 gruppeforløb mellem Center for Handicap og Psykiatri (CHP) og Center for Arbejdsmarked (CAM)\n3. Omsorgsakademiet - bro mellem ledige borgere og kommunens fremtidige SOSU-medarbejdere\nBusinesscasene kan læses i deres fulde længde og med de mere præcise beregninger i bilag 1.\nForslag 1. Målrettet indsats for sygemeldte dagpengemodtagere\nBusinesscasen handler om en tidligere og mere samlet indsats for borgere, der bliver sygemeldt fra A-dagpenge. Målet\ner at forebygge lange forløb på sygedagpenge og mindske risikoen for gentagne sygemeldinger.\nIndsatsen organiseres på tværs af A-dagpenge- og sygedagpengeområdet, så borgeren får et mere sammenhængende\nforløb. Der følges hurtigt og systematisk op, så borgeren hurtigere kan vende tilbage til arbejde eller fastholde kontakten\ntil arbejdsmarkedet med de nødvendige hensyn.\nDen økonomiske forventning er, at selv små forbedringer i varigheden kan have betydning for kommunens udgifter.\nEffekten følges årligt, og indsatsen vurderes igen i 2028.\n\nPolitikområde\n\nOverførsler/service\n\nLøn kt. 05\nLøn kt. 06\n\nYdelser\nreduktion\nNettogevinst\n\nArbejdsmarked\nAdministration\n(CAM)\nArbejdsmarked\n\nOverførsler\nService\nOverførsler\n\nForslag 2. Fælles §82 gruppeforløb mellem CHP og CAM\nBusinesscasen handler om et fælles gruppeforløb for aktivitetsparate borgere med psykiske eller sociale\nudfordringer. Målgruppen er borgere, som kan have behov for støtte i hverdagen, og som samtidig har mulighed for at\nkomme tættere på job eller uddannelse. Forløbet varer seks måneder og har fokus på hverdagsmestring, sundhed,\njobmål , praktik og løntimer. Formålet er at give borgerne bedre støtte og skabe hurtigere progression.\nDet kan på sigt føre til kortere tid på offentlig forsørgelse og mindre behov for individuel støtte efter servicelovens §85.\nDer forventes en årlig investering på ca. 900.000 kr. til medarbejderressourcer. De økonomiske beregninger er\nforeløbige og afhænger af mere viden om målgruppen. Effekten følges årligt, og indsatsen vurderes igen i 2028.\n\nYdelser\nreduktion\n§85 reduktion\n\nNettogevinst\n\nLøn kt. 05\nLøn kt. 06\n\nPolitikområde\nArbejdsmarked\nAdministration\n(CHP)\nArbejdsmarked\n\nOverførsler/service\nOverførsler\nService\n\nHandicap og\nPsykiatri\n\nService\n\nOverførsler\n\nForslag 3. Omsorgsakademiet - bro mellem ledige borgere og kommunens fremtidige SOSU-medarbejdere\nBusinesscasen handler om at etablere Omsorgsakademiet som et pilotprojekt mellem Center for Arbejdsmarked og\nCenter for Sundhed og Ældre. Formålet er at give ledige borgere en praktisk vej ind i omsorgsfaget og samtidig støtte\nrekrutteringen til ældreområdet.\nBorgerne skal gennem undervisning, træning og opgaver på aktivitetscentre og plejecentre afklare deres motivation,\narbejdsevne og mulighed for job eller uddannelse. Pilotprojektet er målrettet 30 visiterede borgere, hvor 24 forventes at\ndeltage. Succesen måles blandt andet på, om deltagere går videre til SOSU-uddannelse, job, praktik eller løntilskud og\nfastholdes efter 12 måneder.\nØkonomien er beregnet ud fra mulige besparelser i Center for Arbejdsmarked. Eventuelle gevinster og udgifter på\nældreområdet er ikke fuldt medregnet, da de er mere usikre. Effekten følges årligt, og indsatsen vurderes igen i 2028.\n\nLøn kt. 05\nLøn kt. 06\nLøn\nældreområde\nYdelser\nreduktion\nNettogevinst\nDen videre proces\n\nPolitikområde\nArbejdsmarked\nAdministration (CAM)\n\nOverførsler/service\nOverførsler\nService\n\nService\n\nÆldre/Administration\n(CSA)\nArbejdsmarked\n\nOverførsler\n\nAlle tre investeringscases er med i budgetaftalen for 2027, der skal godkendes endeligt på det kommende byrådsmøde\ntirsdag den 6. oktober. Administrationen vil efterfølgende udarbejde en konkret sagsfremstilling på hver enkelt vedtagne\nbusinesscase.\nUdvalget vil få forelagt status en gang årligt i forhold til at følge effekten. Senest i 2028 kan udvalget tage stilling til, om\nden eller de vedtagne investeringscass har den ønskede effekt."
     },
     {
      "titel": "Økonomi",
@@ -12330,10 +12415,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Orientering vedr. Hjemløsetælling 2026",
    "afsnit": [
     {
@@ -12345,8 +12430,12 @@
      "tekst": "Administrationen indstiller, at udvalget tager orienteringen til efterretning."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nTil efterretning."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Den seneste nationale hjemløsetælling fra VIVE – Det Nationale Forsknings- og Analysecenter for Velfærd viser, at\nantallet af borgere i hjemløshed med hjemkommune i Næstved Kommune er faldet fra 120 personer i 2024 til 105\npersoner i 2026. Det svarer til et fald på 15 personer eller 12,5 %.\nUdviklingen sker på trods af, at hjemløsheden samlet set er steget i Region Sjælland fra 855 til 899 personer i samme\nperiode. Næstved Kommune adskiller sig således positivt fra den regionale udvikling.\nDet er vigtigt at være opmærksom på, at VIVE's hjemløsetælling er en øjebliksregistrering foretaget i en afgrænset uge,\nog at der derfor altid vil være en vis statistisk usikkerhed forbundet med udviklingen. Udviklingen skal derfor ses som en\nindikator for retningen i hjemløsheden snarere end som et eksakt mål for det samlede antal borgere, der oplever\nhjemløshed i løbet af året.\nFaldet i antallet af borgere i hjemløshed i Næstved Kommune fra 2024 til 2026 vurderes at være resultatet af flere\nsamtidige indsatser.\nHovedsageligt det målrettede arbejde med Housing First-tilgangen igennem en årrække har været med til at skærpe\narbejdet med hjemløse borgere. Housing First er en tilgang, hvor borgere i hjemløshed så tidligt som muligt tilbydes en\npermanent bolig kombineret med individuelt tilpasset støtte. Erfaringer viser, at en tidlig etablering i egen bolig øger\nsandsynligheden for, at borgeren kan skabe en stabil livssituation og fastholde boligen på længere sigt.\nSamtidig har der været et stort fokus på det tværfaglige samarbejde mellem socialområdet, psykiatrien,\nmisbrugsområdet, beskæftigelsesindsatsen, boligorganisationer og civilsamfundsaktører. Næstved gennemgik for et par\når siden et frivilligt Task Force forløb med Social- og Boligstyrelsen, hvor netop samarbejdet på tværs af\nmyndighedsområder var et af indsatsområderne.\nEn væsentlig forklaring på den positive udvikling kan også findes i de muligheder for bostøtte efter servicelovens § 85a,\nsom blev indført som led i hjemløsereformen.\nMed §85a fik kommunerne mulighed for at tilbyde specialiseret social støtte til borgere med særlige sociale problemer\nmed det formål at hjælpe dem til at opnå og fastholde egen bolig. Udgangspunktet er, at en permanent bolig udgør\n\nfundamentet for den videre sociale indsats, og at den nødvendige støtte gives i borgerens eget hjem frem for på\nmidlertidige botilbud. Støtten efter § 85a tager udgangspunkt i den enkelte borgers ressourcer, ønsker og behov og kan\nblandt andet omfatte hjælp til etablering og fastholdelse af bolig, støtte til kontakt med offentlige myndigheder,\nhåndtering af økonomi, opbygning af sociale relationer samt koordinering af indsatser på tværs af forskellige sektorer.\nFormålet er at skabe grundlag for øget selvstændighed, forbedret livskvalitet og varig boligfastholdelse.\nI forbindelse med § 85a anvendes især metoderne CTI (Critical Time Intervention) og ICM (Intensive Case\nManagement). CTI anvendes primært i forbindelse med kritiske overgange, eksempelvis når en borger flytter fra\nherberg, forsorgshjem eller anden ustabil boligsituation til egen bolig. Indsatsen er intensiv og tidsbegrænset og\ngennemføres over ni måneder. Formålet er at understøtte en vellykket overgang til egen bolig, etablere relevante\nstøttestrukturer omkring borgeren og sikre, at borgeren opnår den stabilitet, der er nødvendig for at kunne fastholde\nboligen efter støtteforløbets afslutning.\nICM anvendes over for borgere med mere komplekse og langvarige støttebehov. Her fungerer en fast medarbejder som\ngennemgående koordinator og sikrer sammenhæng mellem borgerens kontakt til blandt andet psykiatrien,\nmisbrugsbehandlingen, sundhedsvæsenet, beskæftigelsesområdet og øvrige sociale tilbud. I modsætning til CTI er ICM\nikke tidsbegrænset, men kan fortsætte så længe, der er behov for indsatsen. Formålet er både at understøtte\nboligfastholdelse og at skabe sammenhæng i de mange indsatser, som ofte er nødvendige for borgere med komplekse\nproblemstillinger.\nI 2026 er der nystartet 15 CTI og 10 ICM i Næstved Kommune. 21 af de 25 borgere kommer fra et forsorgshjem og er\nnu flyttet i egen bolig med støtte."
+     "tekst": "Den seneste nationale hjemløsetælling fra VIVE – Det Nationale Forsknings- og Analysecenter for Velfærd viser, at\nantallet af borgere i hjemløshed med hjemkommune i Næstved Kommune er faldet fra 120 personer i 2024 til 105\npersoner i 2026. Det svarer til et fald på 15 personer eller 12,5 %.\nUdviklingen sker på trods af, at hjemløsheden samlet set er steget i Region Sjælland fra 855 til 899 personer i samme\nperiode. Næstved Kommune adskiller sig således positivt fra den regionale udvikling.\nDet er vigtigt at være opmærksom på, at VIVE's hjemløsetælling er en øjebliksregistrering foretaget i en afgrænset uge,\nog at der derfor altid vil være en vis statistisk usikkerhed forbundet med udviklingen. Udviklingen skal derfor ses som en\nindikator for retningen i hjemløsheden snarere end som et eksakt mål for det samlede antal borgere, der oplever\nhjemløshed i løbet af året.\nFaldet i antallet af borgere i hjemløshed i Næstved Kommune fra 2024 til 2026 vurderes at være resultatet af flere\nsamtidige indsatser.\nHovedsageligt det målrettede arbejde med Housing First-tilgangen igennem en årrække har været med til at skærpe\narbejdet med hjemløse borgere. Housing First er en tilgang, hvor borgere i hjemløshed så tidligt som muligt tilbydes en\npermanent bolig kombineret med individuelt tilpasset støtte. Erfaringer viser, at en tidlig etablering i egen bolig øger\nsandsynligheden for, at borgeren kan skabe en stabil livssituation og fastholde boligen på længere sigt.\nSamtidig har der været et stort fokus på det tværfaglige samarbejde mellem socialområdet, psykiatrien,\nmisbrugsområdet, beskæftigelsesindsatsen, boligorganisationer og civilsamfundsaktører. Næstved gennemgik for et par\når siden et frivilligt Task Force forløb med Social- og Boligstyrelsen, hvor netop samarbejdet på tværs af\nmyndighedsområder var et af indsatsområderne.\n\nEn væsentlig forklaring på den positive udvikling kan også findes i de muligheder for bostøtte efter servicelovens § 85a,\nsom blev indført som led i hjemløsereformen.\nMed §85a fik kommunerne mulighed for at tilbyde specialiseret social støtte til borgere med særlige sociale problemer\nmed det formål at hjælpe dem til at opnå og fastholde egen bolig. Udgangspunktet er, at en permanent bolig udgør\nfundamentet for den videre sociale indsats, og at den nødvendige støtte gives i borgerens eget hjem frem for på\nmidlertidige botilbud. Støtten efter § 85a tager udgangspunkt i den enkelte borgers ressourcer, ønsker og behov og kan\nblandt andet omfatte hjælp til etablering og fastholdelse af bolig, støtte til kontakt med offentlige myndigheder,\nhåndtering af økonomi, opbygning af sociale relationer samt koordinering af indsatser på tværs af forskellige sektorer.\nFormålet er at skabe grundlag for øget selvstændighed, forbedret livskvalitet og varig boligfastholdelse.\nI forbindelse med § 85a anvendes især metoderne CTI (Critical Time Intervention) og ICM (Intensive Case\nManagement). CTI anvendes primært i forbindelse med kritiske overgange, eksempelvis når en borger flytter fra\nherberg, forsorgshjem eller anden ustabil boligsituation til egen bolig. Indsatsen er intensiv og tidsbegrænset og\ngennemføres over ni måneder. Formålet er at understøtte en vellykket overgang til egen bolig, etablere relevante\nstøttestrukturer omkring borgeren og sikre, at borgeren opnår den stabilitet, der er nødvendig for at kunne fastholde\nboligen efter støtteforløbets afslutning.\nICM anvendes over for borgere med mere komplekse og langvarige støttebehov. Her fungerer en fast medarbejder som\ngennemgående koordinator og sikrer sammenhæng mellem borgerens kontakt til blandt andet psykiatrien,\nmisbrugsbehandlingen, sundhedsvæsenet, beskæftigelsesområdet og øvrige sociale tilbud. I modsætning til CTI er ICM\nikke tidsbegrænset, men kan fortsætte så længe, der er behov for indsatsen. Formålet er både at understøtte\nboligfastholdelse og at skabe sammenhæng i de mange indsatser, som ofte er nødvendige for borgere med komplekse\nproblemstillinger.\nI 2026 er der nystartet 15 CTI og 10 ICM i Næstved Kommune. 21 af de 25 borgere kommer fra et forsorgshjem og er\nnu flyttet i egen bolig med støtte."
     },
     {
      "titel": "Økonomi",
@@ -12360,10 +12449,10 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Orientering om udmøntning af budgetforlig for 2027 på udvalgets område",
    "afsnit": [
     {
@@ -12375,8 +12464,12 @@
      "tekst": "Administrationen indstiller, at udvalget tager orienteringen til efterretning."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\nTil efterretning."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Baggrund for sagen\nBudgetaftalen »Ansvarligt budget med fokus på kernevelfærden – Budgetaftale 2027« blev indgået den 23. september\n2026 af forligspartierne Venstre, Det Konservative Folkeparti, Liberal Alliance, Dansk Folkeparti,\nDanmarksdemokraterne og Githa Nelander.\nMed det formål at komme hurtigt i gang med at udmønte aftalens indsatser er udarbejdet en oversigt, som identificerer\nalle indsatser i budgetforliget. Oversigten viser blandt andet, hvilket udvalg, der er ansvarlig for den enkelte indsats og\nhvilke indsatser det foreslås, at der følges op på. Den samlede oversigt er vedhæftet sagen som bilag 2.\nHerudover er udarbejdet et bilag, som viser indsatser på udvalgets område. Oversigten kan findes i bilag 1.\n\nHvad sker der herefter?\nEfter der i november er gennemført en orientering af alle udvalg om udmøntning af indsatser i budgetforliget for 2027, så\nvil der i udvalget blive fremlagt implementeringssager på de større konkrete indsatser fra budgetforliget, som udvalget\nhar ansvar for. Det sker i december 2026.\n\nOpfølgning på budgetforliget 2027\nSom hidtil skal der følges op på implementeringen af indsatserne fra budgetforliget. Det er vurderingen, at der skal\ngennemføres to opfølgninger på budgetforliget – én om foråret og én om efteråret – samt en afsluttende opfølgning, når\nåret er gået. Opfølgningerne forelægges politisk samtidig med budgetopfølgningerne. Fagudvalgene får forelagt\nopfølgningen på de indsatser, som de hver især er ansvarlige for, inden den samlede opfølgning på budgetforliget\nfremlægges for Økonomiudvalget.\n\nDet er langt fra alle indsatser, der skal følges op på. En række indsatser er af teknisk karakter, eksempelvis en reduktion\naf en pulje med et givent beløb. Det fremgår af bilaget, hvilke indsatser der skal følges op på. Der skal heller ikke følges\nop på budgetforligets anlægsindsatser, da der er særskilte procedurer for opfølgning på disse via budgetopfølgningerne."
+     "tekst": "Baggrund for sagen\nBudgetaftalen »Ansvarligt budget med fokus på kernevelfærden – Budgetaftale 2027« blev indgået den 23. september\n2026 af forligspartierne Venstre, Det Konservative Folkeparti, Liberal Alliance, Dansk Folkeparti,\nDanmarksdemokraterne og Githa Nelander.\nMed det formål at komme hurtigt i gang med at udmønte aftalens indsatser er udarbejdet en oversigt, som identificerer\nalle indsatser i budgetforliget. Oversigten viser blandt andet, hvilket udvalg, der er ansvarlig for den enkelte indsats og\nhvilke indsatser det foreslås, at der følges op på. Den samlede oversigt er vedhæftet sagen som bilag 2.\nHerudover er udarbejdet et bilag, som viser indsatser på udvalgets område. Oversigten kan findes i bilag 1.\n\nHvad sker der herefter?\nEfter der i november er gennemført en orientering af alle udvalg om udmøntning af indsatser i budgetforliget for 2027, så\nvil der i udvalget blive fremlagt implementeringssager på de større konkrete indsatser fra budgetforliget, som udvalget\nhar ansvar for. Det sker i december 2026.\n\nOpfølgning på budgetforliget 2027\nSom hidtil skal der følges op på implementeringen af indsatserne fra budgetforliget. Det er vurderingen, at der skal\ngennemføres to opfølgninger på budgetforliget – én om foråret og én om efteråret – samt en afsluttende opfølgning, når\nåret er gået. Opfølgningerne forelægges politisk samtidig med budgetopfølgningerne. Fagudvalgene får forelagt\n\nopfølgningen på de indsatser, som de hver især er ansvarlige for, inden den samlede opfølgning på budgetforliget\nfremlægges for Økonomiudvalget.\nDet er langt fra alle indsatser, der skal følges op på. En række indsatser er af teknisk karakter, eksempelvis en reduktion\naf en pulje med et givent beløb. Det fremgår af bilaget, hvilke indsatser der skal følges op på. Der skal heller ikke følges\nop på budgetforligets anlægsindsatser, da der er særskilte procedurer for opfølgning på disse via budgetopfølgningerne."
     },
     {
      "titel": "Økonomi",
@@ -12403,12 +12496,16 @@
    "kommune": "Næstved",
    "udvalg": "Ældre- og Omsorgsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=c22a190b-f6d1-4f5a-aafb-ac503357728e",
-   "hentet": "2026-10-29T19:49:45.154Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=594e0f69-afa8-4d25-8811-2d6ac08ab845",
+   "hentet": "2026-11-03T14:55:40.760Z",
    "titel": "Meddelelser til orientering",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Ældre- og Omsorgsudvalget, 02.11.2026\n\nOrientering til efterretning.\nOrientering til efterretning.\nDen 27/1 kl. 16.00 afholdes dialogmøde i Nord/Vest\nOrientering til efterretning."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Status på friplejehjem.\nOrientering fra sundhedsrådsmøde.\nNye datoforslag for dialogmøde i Nord/Vest, den 19/1, 27/1, 2/2 eller 3/2.\nSæt kryds i kalenderen: Frivilligkonference af holdes den 26. maj 2027.\n\nÆldre- og Omsorgsudvalget 02.11.2026"
@@ -12421,15 +12518,19 @@
    "kommune": "Næstved",
    "udvalg": "Forebyggelses- og Sundhedsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a51e92dc-58e7-4f67-b5f1-68ae5fa8ff18",
-   "hentet": "2026-10-29T19:49:59.734Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=8fc52146-6751-473c-b542-3a27d80bae76",
+   "hentet": "2026-11-03T14:55:46.210Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at dagsordenen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Forebyggelses- og Sundhedsudvalget, 02.11.2026\nGodkendt."
     },
     {
      "titel": "Sagsfremstilling",
@@ -12443,10 +12544,10 @@
    "kommune": "Næstved",
    "udvalg": "Forebyggelses- og Sundhedsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a51e92dc-58e7-4f67-b5f1-68ae5fa8ff18",
-   "hentet": "2026-10-29T19:49:59.734Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=8fc52146-6751-473c-b542-3a27d80bae76",
+   "hentet": "2026-11-03T14:55:46.210Z",
    "titel": "Dialogmøde med Ældrerådet",
    "afsnit": [
     {
@@ -12458,25 +12559,38 @@
      "tekst": "Administrationen indstiller, at punkter drøftes."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Forebyggelses- og Sundhedsudvalget, 02.11.2026\nDrøftet."
+    },
+    {
      "titel": "Sagsfremstilling",
      "tekst": "Ældrerådet ønsker følgende punkter drøftet:\n\nresultat af temadrøftelser vedr. arbejdet med mental sundhed\nintentioner for inddragelse af frivillige og civilsamfundet\nopdateret plan for Sundhedsbyen\nplan for forebyggende hjemmebesøg\nfortsatte forventninger til samarbejdet med Ældrerådet\n\nFra Ældrerådet deltager:\nLeila Frandsen, formand\nCharlotte Haufort Hansen, 1. næstformand\nBente Gaarhøj Johansen, 2. næstformand\nLeo Andersen, regnskabsansvarlig\nLene Nedergaard, medlem\nLars Høgh Sørensen, medlem\nKarin Højen Johannesen, medlem\nMeta Beldring, medlem\nKaja Pedersen, medlem\nKristian Medholdt, medlem\nUffe Tvede Hansen, medlem\nSusan Mortensen, sekretær"
     },
     {
      "titel": "Økonomi",
-     "tekst": "Administrationen har ingen bemærkninger.\n\nForebyggelses- og Sundhedsudvalget 02.11.2026"
+     "tekst": "Administrationen har ingen bemærkninger."
     }
    ],
-   "bilag": []
+   "bilag": [
+    {
+     "navn": "Forebyggelse Ældrelovens §4 Oktober 2026",
+     "url": null
+    },
+    {
+     "navn": "Forebyggelses- og Sundhedsudvalget 02.11.2026",
+     "url": null
+    }
+   ]
   },
   "naestved-2026-11-02-forebyggelses-og-sundhedsudvalget-3": {
    "id": "naestved-2026-11-02-forebyggelses-og-sundhedsudvalget-3",
    "kommune": "Næstved",
    "udvalg": "Forebyggelses- og Sundhedsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a51e92dc-58e7-4f67-b5f1-68ae5fa8ff18",
-   "hentet": "2026-10-29T19:49:59.734Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=8fc52146-6751-473c-b542-3a27d80bae76",
+   "hentet": "2026-11-03T14:55:46.210Z",
    "titel": "Dialogmøde om Næstved Sygehus og Sundhedsby Næstved",
    "afsnit": [
     {
@@ -12488,25 +12602,38 @@
      "tekst": "Administrationen indstiller, at udvalget tager oplæg og drøftelse til orientering."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Forebyggelses- og Sundhedsudvalget, 02.11.2026\nTil efterretning."
+    },
+    {
      "titel": "Sagsfremstilling",
      "tekst": "Kresten Dørup, Anne Grethe Larsen og Jesper Gyllenborg besøger udvalget og orienterer bl.a. om status på\nudarbejdelsen af den regionale sundhedsplan, herunder hospitalsplanen for Region Øst. Orienteringen giver udvalget et\naktuelt indblik i regionens arbejde med den fremtidige tilrettelæggelse og udvikling af sundhedsvæsenet.\nI forlængelse heraf præsenteres regionens perspektiver på den videre udvikling af Sundhedsby Næstved. Der vil bl.a.\nvære fokus på status for de nuværende regionale aktiviteter på sygehusmatriklen samt perspektiverne for kommende\nregionale aktiviteter. Besøget giver dermed anledning til en dialog om Sundhedsby Næstved og dens rolle i den\nfremtidige udvikling af sundhedstilbuddene."
     },
     {
      "titel": "Økonomi",
-     "tekst": "Administrationen har ingen bemærkninger.\n\nForebyggelses- og Sundhedsudvalget 02.11.2026"
+     "tekst": "Administrationen har ingen bemærkninger."
     }
    ],
-   "bilag": []
+   "bilag": [
+    {
+     "navn": "Præsentation",
+     "url": null
+    },
+    {
+     "navn": "Forebyggelses- og Sundhedsudvalget 02.11.2026",
+     "url": null
+    }
+   ]
   },
   "naestved-2026-11-02-forebyggelses-og-sundhedsudvalget-4": {
    "id": "naestved-2026-11-02-forebyggelses-og-sundhedsudvalget-4",
    "kommune": "Næstved",
    "udvalg": "Forebyggelses- og Sundhedsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a51e92dc-58e7-4f67-b5f1-68ae5fa8ff18",
-   "hentet": "2026-10-29T19:49:59.734Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=8fc52146-6751-473c-b542-3a27d80bae76",
+   "hentet": "2026-11-03T14:55:46.210Z",
    "titel": "Behandling af budgetopfølgning pr. 1. september 2026",
    "afsnit": [
     {
@@ -12518,8 +12645,12 @@
      "tekst": "Administrationen indstiller, at budgetopfølgning pr. 1. september 2026 på drift og anlæg godkendes."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Forebyggelses- og Sundhedsudvalget, 02.11.2026\nFraværende: Jette Leth Buhl (F)\nGodkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Der udarbejdes tre større budgetopfølgninger om året som præsenteres for Forebyggelses- og Sundhedsudvalget.\nOpfølgningerne gennemføres på data pr. 1. marts, 1. maj og 1. september og forelægges udvalget i hhv. april, juni og\nnovember. Opfølgningen omfatter både drift og anlæg på udvalgets område.\nSamlet økonomisk status for kommunen pr. 1. september\nBudgetopfølgningen pr. 1. september viser et forventet overskud på driften på 15 mio. kr. for kommunen samlet. Det er\nen forbedring siden sidste budgetopfølgning på ca. 92 mio. kr., hvor de ca. 34 mio. kr. var forventet som følge af de\nopbremsende tiltag, der blev besluttet i forbindelse med budgetopfølgningen pr. 1. maj. Den øvrige forbedring kan blandt\nandet henføres til en bedre økonomisk udvikling på ældreområdet, Skole og PPR samt Børn og Unge og til gevinsten\nved ophør af den kommunale medfinansiering af sundhedsvæsenet. Den positive udvikling er også et resultat af\nmålrettede indsatser på tværs af kommunen, hvor der har været fokus på økonomisk balance, prioritering af\nressourcerne og fastholdelse af servicen til borgerne. Der er dog fortsat betydelige forskelle mellem de enkelte\nbudgetområder, og flere områder forventer underskud. Servicerammen forventes fortsat overskredet, og der er derfor\nfortsat behov for en stram økonomisk styring, men derudover iværksættes der ikke yderligere tiltag for\nbudgetoverholdelse.\nVed budgetopfølgningen pr. 1. maj blev der besluttet opbremsende tiltag for i alt 34 mio. kr. på tværs af alle områder. De\n34 mio. kr. fra de opbremsende tiltag er placeret i pulje under Økonomiudvalget. Puljen er primært tiltænkt at medgå til\ndækning af underskud på Ældre- og Omsorgsudvalget. Puljen fordeles i forbindelse med regnskabsopgørelsen.\nDrift\n\nBudgetopfølgningen pr. 1. september 2026 viser, at på Forebyggelses- og Sundhedsudvalget forventes et\nregnskabsresultat på 131,7 mio. kr., hvilket holdt op imod indeværende års budget, svarer til et forventet underskud på\n0,4 %. Regnskabsforventningen er forbedret med 1,3 mio. kr. siden budgetopfølgningen pr. 1. maj 2026.\nTabel 1: Økonomisk oversigt\nPolitikområde\n\nForventet regnskab\n\nForebyggelse og\nSundhed\nI alt\n\nBudget\n\nAfvigelse\n(eller over- eller\nunderskud)\n\nBank- beholdning\n(overførsel fra\n\nI 1.000 kr. og i afvigelse er - = underskud\nI henhold til Næstved Kommunes økonomistyringsregler opgøres over- og underskud fra 2025 på fagområder og\nvirksomheder i forbindelse med regnskabsafslutningen og indgår efter Byrådets godkendelse af overførslerne i marts i\nen særskilt bankbeholdning tilknyttet disse.\nØkonomien i 2026 består dermed af to elementer: det ordinære budget for 2026 samt bankbeholdningen, der udgøres af\nde godkendte overførsler fra 2025. Budgetopfølgningen viser det samlede resultat for fagområder og virksomheder.\nI nedenstående beskrives væsentlige afvigelser ved budgetopfølgningen pr. 1. september. Der henvises til bilag 1 for en\nnærmere beskrivelse af de enkelte områder.\nForebyggelse og Sundhed\nPolitikområde Forebyggelse og Sundhed forventer et samlet underskud på 0,5 mio.kr.\nVurderingen består af 6-8 måneders forbrug samt erfaring fra tidligere år, og er derfor fortsat behæftet med en vis\nusikkerhed.\nDer forventes et overskud på 0,45 mio. kr. på fagområdet, fordelt på overskud på aktiviteterne Genoptræning efter\nSundhedsloven og Vederlagsfri fysioterapi samt et underskud på madservice. Budgetansvaret vedrørende\nprivatleverandører af madservice til borgere i eget hjem, flyttes til fagområdet hvor opfølgnings- og kontraktansvaret\nogså er placeret.\nSundhedscentret forventer at bruge ca. 0,5 mio. kr. af deres bankindestående, hvilket er en nedjustering fra sidste\nbudgetopfølgning med ca. 1,2 mio. kr., og det sker bl.a. som følge af pålagt mindreforbrug i årets start, tildeling af midler\nsidst på året og regulering af lønbudgetter.\nTandplejen forventer at bruge 0,4 mio. kr. af deres bankindestående i forbindelse med tandreguleringsområdet. Hvilket\ner en nedjustering fra sidste budgetopfølgning med 0,4 mio. kr., da det forventes at en del flere af betalingerne til\nprivatklinikker forskydes ind i næste år.\nPolitikområdet har bankbeholdning fra tidligere års overskud. Denne giver mulighed for at håndtere den forventede\nnegative driftsafvigelse i 2026, og der er således tale om en planlagt anvendelse af opsparede midler snarere end et\negentligt underskud.\nAnlæg\nPå udvalgets område forventes overførsel på ca. 0,8 mio. kr. til 2027 til færdiggørelse i 2027. Det forventede forbrug for\nåret er på ca. 0,9 mio. kr. og det korrigerede budget er på 1,7 mio. kr.\nBudgetopfølgningen pr. 1. september på de enkelte anlægsprojekter kan ses i bilag 2 og som anbefales i denne sag."
+     "tekst": "Der udarbejdes tre større budgetopfølgninger om året som præsenteres for Forebyggelses- og Sundhedsudvalget.\nOpfølgningerne gennemføres på data pr. 1. marts, 1. maj og 1. september og forelægges udvalget i hhv. april, juni og\nnovember. Opfølgningen omfatter både drift og anlæg på udvalgets område.\nSamlet økonomisk status for kommunen pr. 1. september\nBudgetopfølgningen pr. 1. september viser et forventet overskud på driften på 15 mio. kr. for kommunen samlet. Det er\nen forbedring siden sidste budgetopfølgning på ca. 92 mio. kr., hvor de ca. 34 mio. kr. var forventet som følge af de\nopbremsende tiltag, der blev besluttet i forbindelse med budgetopfølgningen pr. 1. maj. Den øvrige forbedring kan blandt\nandet henføres til en bedre økonomisk udvikling på ældreområdet, Skole og PPR samt Børn og Unge og til gevinsten\nved ophør af den kommunale medfinansiering af sundhedsvæsenet. Den positive udvikling er også et resultat af\nmålrettede indsatser på tværs af kommunen, hvor der har været fokus på økonomisk balance, prioritering af\nressourcerne og fastholdelse af servicen til borgerne. Der er dog fortsat betydelige forskelle mellem de enkelte\nbudgetområder, og flere områder forventer underskud. Servicerammen forventes fortsat overskredet, og der er derfor\nfortsat behov for en stram økonomisk styring, men derudover iværksættes der ikke yderligere tiltag for\nbudgetoverholdelse.\n\nVed budgetopfølgningen pr. 1. maj blev der besluttet opbremsende tiltag for i alt 34 mio. kr. på tværs af alle områder. De\n34 mio. kr. fra de opbremsende tiltag er placeret i pulje under Økonomiudvalget. Puljen er primært tiltænkt at medgå til\ndækning af underskud på Ældre- og Omsorgsudvalget. Puljen fordeles i forbindelse med regnskabsopgørelsen.\nDrift\nBudgetopfølgningen pr. 1. september 2026 viser, at på Forebyggelses- og Sundhedsudvalget forventes et\nregnskabsresultat på 131,7 mio. kr., hvilket holdt op imod indeværende års budget, svarer til et forventet underskud på\n0,4 %. Regnskabsforventningen er forbedret med 1,3 mio. kr. siden budgetopfølgningen pr. 1. maj 2026.\nTabel 1: Økonomisk oversigt\nPolitikområde\n\nForventet regnskab\n\nForebyggelse og\nSundhed\nI alt\n\nBudget\n\nAfvigelse\n(eller over- eller\nunderskud)\n\nBank- beholdning\n(overførsel fra\n\nI 1.000 kr. og i afvigelse er - = underskud\nI henhold til Næstved Kommunes økonomistyringsregler opgøres over- og underskud fra 2025 på fagområder og\nvirksomheder i forbindelse med regnskabsafslutningen og indgår efter Byrådets godkendelse af overførslerne i marts i\nen særskilt bankbeholdning tilknyttet disse.\nØkonomien i 2026 består dermed af to elementer: det ordinære budget for 2026 samt bankbeholdningen, der udgøres af\nde godkendte overførsler fra 2025. Budgetopfølgningen viser det samlede resultat for fagområder og virksomheder.\nI nedenstående beskrives væsentlige afvigelser ved budgetopfølgningen pr. 1. september. Der henvises til bilag 1 for en\nnærmere beskrivelse af de enkelte områder.\nForebyggelse og Sundhed\nPolitikområde Forebyggelse og Sundhed forventer et samlet underskud på 0,5 mio.kr.\nVurderingen består af 6-8 måneders forbrug samt erfaring fra tidligere år, og er derfor fortsat behæftet med en vis\nusikkerhed.\nDer forventes et overskud på 0,45 mio. kr. på fagområdet, fordelt på overskud på aktiviteterne Genoptræning efter\nSundhedsloven og Vederlagsfri fysioterapi samt et underskud på madservice. Budgetansvaret vedrørende\nprivatleverandører af madservice til borgere i eget hjem, flyttes til fagområdet hvor opfølgnings- og kontraktansvaret\nogså er placeret.\nSundhedscentret forventer at bruge ca. 0,5 mio. kr. af deres bankindestående, hvilket er en nedjustering fra sidste\nbudgetopfølgning med ca. 1,2 mio. kr., og det sker bl.a. som følge af pålagt mindreforbrug i årets start, tildeling af midler\nsidst på året og regulering af lønbudgetter.\nTandplejen forventer at bruge 0,4 mio. kr. af deres bankindestående i forbindelse med tandreguleringsområdet. Hvilket\ner en nedjustering fra sidste budgetopfølgning med 0,4 mio. kr., da det forventes at en del flere af betalingerne til\nprivatklinikker forskydes ind i næste år.\nPolitikområdet har bankbeholdning fra tidligere års overskud. Denne giver mulighed for at håndtere den forventede\nnegative driftsafvigelse i 2026, og der er således tale om en planlagt anvendelse af opsparede midler snarere end et\negentligt underskud.\n\nAnlæg\nPå udvalgets område forventes overførsel på ca. 0,8 mio. kr. til 2027 til færdiggørelse i 2027. Det forventede forbrug for\nåret er på ca. 0,9 mio. kr. og det korrigerede budget er på 1,7 mio. kr.\nBudgetopfølgningen pr. 1. september på de enkelte anlægsprojekter kan ses i bilag 2 og som anbefales i denne sag."
     },
     {
      "titel": "Økonomi",
@@ -12536,6 +12667,10 @@
      "url": null
     },
     {
+     "navn": "Præsentation af budgetopfølgning pr 1.9.26",
+     "url": null
+    },
+    {
      "navn": "Forebyggelses- og Sundhedsudvalget 02.11.2026",
      "url": null
     }
@@ -12546,10 +12681,10 @@
    "kommune": "Næstved",
    "udvalg": "Forebyggelses- og Sundhedsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a51e92dc-58e7-4f67-b5f1-68ae5fa8ff18",
-   "hentet": "2026-10-29T19:49:59.734Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=8fc52146-6751-473c-b542-3a27d80bae76",
+   "hentet": "2026-11-03T14:55:46.210Z",
    "titel": "Godkendelse af fritvalgspriser madservice 2027",
    "afsnit": [
     {
@@ -12561,8 +12696,12 @@
      "tekst": "Administrationen indstiller, at fritvalgspriserne for madservice godkendes."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Forebyggelses- og Sundhedsudvalget, 02.11.2026\nFraværende: Jette Leth Buhl (F)\nAnbefales."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Byrådet skal mindst én gang årligt fastsætte fritvalgspriser til afregning af leverandører af madservice.\nBeregningen af fritvalgspriserne for madserviceordningen er foretaget ved benyttelse af BDO’s beregningsmodel.\nPrisberegningen har ingen betydning for borgernes betaling for mad, men er udelukkende til fastsættelse af kommunens\nafregning med private leverandører. Eksempelvis var borgernes pris for en hovedret 50,00 kr. i 2026.\nBorgernes tilbud er fastsat i Ældreloven §13. Ældreloven finder, jf. §2 anvendelse for personer, der har nået\nfolkepensionsalderen, men også for personer, hvis behov vurderes at svare til personer, der har nået\nfolkepensionsalderen, hvorfor fritvalgspriserne fastsættes i forhold til Ældreloven.\nAfregning af private leverandører er fastsat i Ældrelovens §19 og Ældreministeriets bekendtgørelse nr. 594 af\n29.05.2025. Og fast overheadsats er fastsat i Ældreministeriets bekendtgørelse nr. 595 af 27.05.2025 til 3,6 pct. for\nmadservice.\nSagens fritvalgspriser er budgettakster og eventuel efterregulering af over- og underskud overfor de private\nleverandører foretages administrativt.\nNedenfor er udarbejdet fritvalgspriser pr. ydelseskategori gældende for 2027, og nuværende fritvalgspriser for 2026 er\nligeledes angivet:\n\nPriser inkl. levering\nHovedret med levering\nHoved- og biret med levering\n\nKosttype\nNormal\nNormal\n\nKr. pr. stk.\n\nKr. pr. stk.\n\nFrokostpakke med levering\nHovedret, biret og frokostpakke\n\nNormal\nNormal\n\nHovedret med levering\nHoved- og biret med levering\nFrokostpakke med levering\nHovedret, biret og frokostpakke\n\nDiæt\nDiæt\nDiæt\nDiæt\n\nPriser ekskl. levering\nHovedret uden levering\nHoved- og biret uden levering\nFrokostpakke uden levering\nHovedret, biret og frokostpakke\n\nKosttype\nNormal\nNormal\nNormal\nNormal\n\nHovedret uden levering\n\nDiæt\n\nHoved- og biret uden levering\nFrokostpakke uden levering\nHovedret, biret og frokostpakke\n\nDiæt\nDiæt\nDiæt\n\nKr. pr. stk.\n\nKr. pr. stk.\n\nPrivate leverandører\nI øjeblikket er der to private leverandører i Næstved Kommune. Ud af borgerne der får madservice i eget hjem, får 33%\naf borgerne levering fra de private leverandører."
+     "tekst": "Byrådet skal mindst én gang årligt fastsætte fritvalgspriser til afregning af leverandører af madservice.\nBeregningen af fritvalgspriserne for madserviceordningen er foretaget ved benyttelse af BDO’s beregningsmodel.\nPrisberegningen har ingen betydning for borgernes betaling for mad, men er udelukkende til fastsættelse af kommunens\nafregning med private leverandører. Eksempelvis var borgernes pris for en hovedret 50,00 kr. i 2026.\nBorgernes tilbud er fastsat i Ældreloven §13. Ældreloven finder, jf. §2 anvendelse for personer, der har nået\nfolkepensionsalderen, men også for personer, hvis behov vurderes at svare til personer, der har nået\nfolkepensionsalderen, hvorfor fritvalgspriserne fastsættes i forhold til Ældreloven.\nAfregning af private leverandører er fastsat i Ældrelovens §19 og Ældreministeriets bekendtgørelse nr. 594 af\n29.05.2025. Og fast overheadsats er fastsat i Ældreministeriets bekendtgørelse nr. 595 af 27.05.2025 til 3,6 pct. for\nmadservice.\nSagens fritvalgspriser er budgettakster og eventuel efterregulering af over- og underskud overfor de private\nleverandører foretages administrativt.\n\nNedenfor er udarbejdet fritvalgspriser pr. ydelseskategori gældende for 2027, og nuværende fritvalgspriser for 2026 er\nligeledes angivet:\n\nPriser inkl. levering\nHovedret med levering\nHoved- og biret med levering\nFrokostpakke med levering\nHovedret, biret og frokostpakke\n\nKosttype\nNormal\nNormal\nNormal\nNormal\n\nHovedret med levering\nHoved- og biret med levering\nFrokostpakke med levering\nHovedret, biret og frokostpakke\n\nDiæt\nDiæt\nDiæt\nDiæt\n\nPriser ekskl. levering\nHovedret uden levering\nHoved- og biret uden levering\nFrokostpakke uden levering\nHovedret, biret og frokostpakke\n\nKosttype\nNormal\nNormal\nNormal\nNormal\n\nHovedret uden levering\nHoved- og biret uden levering\nFrokostpakke uden levering\nHovedret, biret og frokostpakke\n\nDiæt\nDiæt\nDiæt\nDiæt\n\nKr. pr. stk.\n\nKr. pr. stk.\n\nKr. pr. stk.\n\nKr. pr. stk.\n\nPrivate leverandører\nI øjeblikket er der to private leverandører i Næstved Kommune. Ud af borgerne der får madservice i eget hjem, får 33%\naf borgerne levering fra de private leverandører."
     },
     {
      "titel": "Økonomi",
@@ -12585,10 +12724,10 @@
    "kommune": "Næstved",
    "udvalg": "Forebyggelses- og Sundhedsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a51e92dc-58e7-4f67-b5f1-68ae5fa8ff18",
-   "hentet": "2026-10-29T19:49:59.734Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=8fc52146-6751-473c-b542-3a27d80bae76",
+   "hentet": "2026-11-03T14:55:46.210Z",
    "titel": "Godkendelse af videre proces for arbejdsgrundlag",
    "afsnit": [
     {
@@ -12600,8 +12739,12 @@
      "tekst": "Administrationen indstiller, at\n1. den videre proces for arbejdsgrundlaget godkendes\n2. topmødet afholdes den 13. maj 2027"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Forebyggelses- og Sundhedsudvalget, 02.11.2026\nFraværende: Jette Leth Buhl (F)\nAd. 1:Udvalget tilslutter sig temadrøftelsen den 30. november, med supplerende deltagelse af brobyggerne og\nfolkesundhedskonsulenter. Udvalget ønsker en drøftelse med ÆOU om den videre proces.\nDen videre behandling af sagen udsættes til et andet møde og fastlæggelse af topmødet afventer drøftelsen med\nOmsorgs- og Forebyggelsesudvalget."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Forebyggelses- og Sundhedsudvalget har udvalgt, hvilke temaer der skal danne grundlag for det videre arbejde med\narbejdsgrundlaget. Nedenfor skitseres forslag til proces for det videre arbejde med arbejdsgrundlaget. I bilaget findes en\ntidslinje.\n\nFælles temadrøftelse mellem ÆOU og FSU (november)\nÆldre- og Omsorgsudvalget og Forebyggelses- og Sundhedsudvalget valgte begge temaet \"Frivillighed og\nCivilsamfund\", og administrationen anbefaler derfor, at udvalgene har en fælles temadrøftelse mellem udvalgene d. 30.\nnovember kl. 12-13.30. Da temaet har stor snitflade med Kultur-, Fritid og Lokaldemokratiudvalget, foreslår\nadministrationen, at dette udvalg inviteres med til temadrøftelsen.\nTemadrøftelsen starter med et oplæg fra en oplægsholder, hvorefter udvalgene får mulighed for at drøfte temaet.\nAdministrationen foreslår, at repræsentanter fra Ældrerådet, Handicaprådet, Frivilligrådet samt Fritidsudvalget deltager i\ndrøftelsen. Desuden inviteres Frivilligcenteret til drøftelsen.\n\nTemadrøftelser på udvalgsmøder (januar)\nUdvalget drøfter temaet \"Et stærkt og nært sundhedsvæsen\" på udvalgsmødet d. 4. januar, og temaet \"Mental trivsel\" d.\n30. januar. Temadrøftelserne vil starte med et oplæg fra oplægsholder, hvorefter udvalget vil have mulighed for at drøfte\ntemaet.\nTil teamdrøftelsen om \"Et stærkt og nært sundhedsvæsen\" foreslår administrationen at invitere Børne- Skole- og\nUddannelsesudvalget, Kultur-, Fritid og Lokaldemokratiudvalget, Beskæftigelses,- Erhvervs- og Turismeudvalget, Ældreog Omsorgsudvalget samt repræsentanter fra Midt- og Vestsjællands Hospital til at deltage i drøftelsen.\nTil temadrøftelsen om \"Mental trivsel\" foreslår administrationen, at repræsentanter fra Ungerådet, Børne- Skole- og\nUddannelsesudvalget og Ungdomsskolen inviteres til at deltage i drøftelsen.\n\nOpsamling (marts)\n\nUdvalget får mulighed for at samle op på temadrøftelserne.\n\nTopmøde (maj)\nAdministrationen foreslår, at Ældre- og Omsorgsudvalget og Forebyggelses- og Sundhedsudvalget afholder et fælles\ntopmøde d. 13. maj 2027. Programmet for topmødet vil være todelt, hvor første halvdel af dagen vil omhandle temaet\nLighed i sundhed, mens anden halvdel vil omhandle Forebyggelse og rehabilitering. Programmet vil blive planlagt med\nfokus på udvalgenes bredde i målgrupper og opgaver. De resterende medlemmer fra byrådet inviteres med, da\ntemaerne er relevante for flere af de andre fagudvalg, og fremadrettet handling er afhængig af samarbejde på tværs.\nDesuden kan relevante ledere og medarbejdere m.fl. inviteres med."
+     "tekst": "Forebyggelses- og Sundhedsudvalget har udvalgt, hvilke temaer der skal danne grundlag for det videre arbejde med\narbejdsgrundlaget. Nedenfor skitseres forslag til proces for det videre arbejde med arbejdsgrundlaget. I bilaget findes en\ntidslinje.\n\nFælles temadrøftelse mellem ÆOU og FSU (november)\nÆldre- og Omsorgsudvalget og Forebyggelses- og Sundhedsudvalget valgte begge temaet \"Frivillighed og\nCivilsamfund\", og administrationen anbefaler derfor, at udvalgene har en fælles temadrøftelse mellem udvalgene d. 30.\nnovember kl. 12-13.30. Da temaet har stor snitflade med Kultur-, Fritid og Lokaldemokratiudvalget, foreslår\nadministrationen, at dette udvalg inviteres med til temadrøftelsen.\nTemadrøftelsen starter med et oplæg fra en oplægsholder, hvorefter udvalgene får mulighed for at drøfte temaet.\nAdministrationen foreslår, at repræsentanter fra Ældrerådet, Handicaprådet, Frivilligrådet samt Fritidsudvalget deltager i\ndrøftelsen. Desuden inviteres Frivilligcenteret til drøftelsen.\n\nTemadrøftelser på udvalgsmøder (januar)\n\nUdvalget drøfter temaet \"Et stærkt og nært sundhedsvæsen\" på udvalgsmødet d. 4. januar, og temaet \"Mental trivsel\" d.\n30. januar. Temadrøftelserne vil starte med et oplæg fra oplægsholder, hvorefter udvalget vil have mulighed for at drøfte\ntemaet.\nTil teamdrøftelsen om \"Et stærkt og nært sundhedsvæsen\" foreslår administrationen at invitere Børne- Skole- og\nUddannelsesudvalget, Kultur-, Fritid og Lokaldemokratiudvalget, Beskæftigelses,- Erhvervs- og Turismeudvalget, Ældreog Omsorgsudvalget samt repræsentanter fra Midt- og Vestsjællands Hospital til at deltage i drøftelsen.\nTil temadrøftelsen om \"Mental trivsel\" foreslår administrationen, at repræsentanter fra Ungerådet, Børne- Skole- og\nUddannelsesudvalget og Ungdomsskolen inviteres til at deltage i drøftelsen.\n\nOpsamling (marts)\nUdvalget får mulighed for at samle op på temadrøftelserne.\n\nTopmøde (maj)\nAdministrationen foreslår, at Ældre- og Omsorgsudvalget og Forebyggelses- og Sundhedsudvalget afholder et fælles\ntopmøde d. 13. maj 2027. Programmet for topmødet vil være todelt, hvor første halvdel af dagen vil omhandle temaet\nLighed i sundhed, mens anden halvdel vil omhandle Forebyggelse og rehabilitering. Programmet vil blive planlagt med\nfokus på udvalgenes bredde i målgrupper og opgaver. De resterende medlemmer fra byrådet inviteres med, da\ntemaerne er relevante for flere af de andre fagudvalg, og fremadrettet handling er afhængig af samarbejde på tværs.\nDesuden kan relevante ledere og medarbejdere m.fl. inviteres med."
     },
     {
      "titel": "Økonomi",
@@ -12624,10 +12767,10 @@
    "kommune": "Næstved",
    "udvalg": "Forebyggelses- og Sundhedsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a51e92dc-58e7-4f67-b5f1-68ae5fa8ff18",
-   "hentet": "2026-10-29T19:49:59.734Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=8fc52146-6751-473c-b542-3a27d80bae76",
+   "hentet": "2026-11-03T14:55:46.210Z",
    "titel": "Orientering om udmøntning af budgetforlig for 2027 på udvalgets område",
    "afsnit": [
     {
@@ -12639,8 +12782,12 @@
      "tekst": "Administrationen indstiller, at udvalget tager orienteringen til efterretning."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Forebyggelses- og Sundhedsudvalget, 02.11.2026\nFraværende: Jette Leth Buhl (F)\nTil efterretning."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Baggrund for sagen\nBudgetaftalen »Ansvarligt budget med fokus på kernevelfærden – Budgetaftale 2027« blev indgået den 23. september\n2026 af forligspartierne Venstre, Det Konservative Folkeparti, Liberal Alliance, Dansk Folkeparti,\nDanmarksdemokraterne og Githa Nelander.\nMed det formål at komme hurtigt i gang med at udmønte aftalens indsatser er udarbejdet en oversigt, som identificerer\nalle indsatser i budgetforliget. Oversigten viser blandt andet, hvilket udvalg, der er ansvarlig for den enkelte indsats og\nhvilke indsatser det foreslås, at der følges op på. Den samlede oversigt er vedhæftet sagen som bilag 2.\nHerudover er udarbejdet et bilag, som viser indsatser på udvalgets område. Oversigten kan findes i bilag 1.\n\nHvad sker der herefter?\nEfter der i november er gennemført en orientering af alle udvalg om udmøntning af indsatser i budgetforliget for 2027, så\nvil der i udvalget blive fremlagt implementeringssager på de større konkrete indsatser fra budgetforliget, som udvalget\nhar ansvar for. Det sker i december 2026.\n\nOpfølgning på budgetforliget 2027\nSom hidtil skal der følges op på implementeringen af indsatserne fra budgetforliget. Det er vurderingen, at der skal\ngennemføres to opfølgninger på budgetforliget – én om foråret og én om efteråret – samt en afsluttende opfølgning, når\nåret er gået. Opfølgningerne forelægges politisk samtidig med budgetopfølgningerne. Fagudvalgene får forelagt\nopfølgningen på de indsatser, som de hver især er ansvarlige for, inden den samlede opfølgning på budgetforliget\nfremlægges for Økonomiudvalget.\n\nDet er langt fra alle indsatser, der skal følges op på. En række indsatser er af teknisk karakter, eksempelvis en reduktion\naf en pulje med et givent beløb. Det fremgår af bilaget, hvilke indsatser der skal følges op på. Der skal heller ikke følges\nop på budgetforligets anlægsindsatser, da der er særskilte procedurer for opfølgning på disse via budgetopfølgningerne."
+     "tekst": "Baggrund for sagen\nBudgetaftalen »Ansvarligt budget med fokus på kernevelfærden – Budgetaftale 2027« blev indgået den 23. september\n2026 af forligspartierne Venstre, Det Konservative Folkeparti, Liberal Alliance, Dansk Folkeparti,\nDanmarksdemokraterne og Githa Nelander.\nMed det formål at komme hurtigt i gang med at udmønte aftalens indsatser er udarbejdet en oversigt, som identificerer\nalle indsatser i budgetforliget. Oversigten viser blandt andet, hvilket udvalg, der er ansvarlig for den enkelte indsats og\nhvilke indsatser det foreslås, at der følges op på. Den samlede oversigt er vedhæftet sagen som bilag 2.\nHerudover er udarbejdet et bilag, som viser indsatser på udvalgets område. Oversigten kan findes i bilag 1.\n\nHvad sker der herefter?\nEfter der i november er gennemført en orientering af alle udvalg om udmøntning af indsatser i budgetforliget for 2027, så\nvil der i udvalget blive fremlagt implementeringssager på de større konkrete indsatser fra budgetforliget, som udvalget\nhar ansvar for. Det sker i december 2026.\n\nOpfølgning på budgetforliget 2027\n\nSom hidtil skal der følges op på implementeringen af indsatserne fra budgetforliget. Det er vurderingen, at der skal\ngennemføres to opfølgninger på budgetforliget – én om foråret og én om efteråret – samt en afsluttende opfølgning, når\nåret er gået. Opfølgningerne forelægges politisk samtidig med budgetopfølgningerne. Fagudvalgene får forelagt\nopfølgningen på de indsatser, som de hver især er ansvarlige for, inden den samlede opfølgning på budgetforliget\nfremlægges for Økonomiudvalget.\nDet er langt fra alle indsatser, der skal følges op på. En række indsatser er af teknisk karakter, eksempelvis en reduktion\naf en pulje med et givent beløb. Det fremgår af bilaget, hvilke indsatser der skal følges op på. Der skal heller ikke følges\nop på budgetforligets anlægsindsatser, da der er særskilte procedurer for opfølgning på disse via budgetopfølgningerne."
     },
     {
      "titel": "Økonomi",
@@ -12667,12 +12814,16 @@
    "kommune": "Næstved",
    "udvalg": "Forebyggelses- og Sundhedsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.naestved.dk/vis?id=a51e92dc-58e7-4f67-b5f1-68ae5fa8ff18",
-   "hentet": "2026-10-29T19:49:59.734Z",
+   "kilde": "https://dagsordener.naestved.dk/vis?id=8fc52146-6751-473c-b542-3a27d80bae76",
+   "hentet": "2026-11-03T14:55:46.210Z",
    "titel": "Meddelelser til orientering",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Forebyggelses- og Sundhedsudvalget, 02.11.2026\nFraværende: Jette Leth Buhl (F)\nOrientering til efterretning"
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "1. Orientering fra Sundhedrådsmøde.\n\nForebyggelses- og Sundhedsudvalget 02.11.2026"
@@ -12961,80 +13112,80 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=23a6e12e-e08d-4025-9033-d296808e16c5": {
-   "senest": "2026-09-24",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=dc44405e-d193-4691-9b16-e4cf8e55bda3": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=63952909-ef6b-46f6-a241-8d3b3b2f4271": {
    "senest": "2025-09-27",
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=6577d551-c03e-43fb-9305-3016f4bb84dd": {
-   "senest": "2026-08-31",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=1a3b6436-d58e-4fab-8b41-9b7bfe7629ba": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=b9265faf-5e48-449b-889a-ef905c566163": {
    "senest": "2026-10-09",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=384f5e59-91f9-476c-8345-f04dd1ef032a": {
    "senest": "2026-02-25",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=b1e67502-5cec-4991-941b-d171bff3f912": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=bd8fc4c5-d2ec-4a67-9045-29440d8a03a4": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=b6793f6f-e9b9-46d8-9420-c37b77c9a102": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=9866417b-c39d-4f31-a809-7d1334bf57ae": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=8c157278-d1d0-4a3e-911c-a07dd996c3cc": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=d9d04daf-f6bc-45bc-8f29-cf32e0bbc1aa": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=6e45b7a0-8cb3-42c5-a522-bf6f3fd01ffd": {
    "senest": "2026-10-06",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=0d36a7d4-057e-4bd1-bb32-04c9c12d0e38": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=7dedac70-7665-4954-8abc-01c0116335df": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=e26890bf-1aba-4605-aef0-1f1a6a17967e": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=53bb07fb-3b9f-4844-8835-da2f78b17e50": {
    "senest": "2026-10-05",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=ab020645-e0bf-42cc-b556-81da34ae7dee": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=61fd7672-2c06-4cdf-8e09-1ecc0a8b839b": {
    "senest": "2021-12-08",
@@ -13042,19 +13193,19 @@
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=0877f0f8-9608-472b-9d98-b65e69d87832": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=cb5548f0-6b3b-4744-89f3-63b65c78145e": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=106c9584-0eee-45c0-aecc-58d2f0683564": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=0bc86be8-ff42-45b1-8dc1-2163333a9a4b": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.naestved.dk/Sitemap/ForCommittee?committeeId=c1ebfcdf-7ac2-4152-82d7-c4fa568ce016": {
    "senest": "2025-10-23",
@@ -13070,6 +13221,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-02T22:56:45.961Z",
+ "opdateret": "2026-11-03T14:55:46.211Z",
  "kommune": "Næstved"
 }

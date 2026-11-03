@@ -642,6 +642,30 @@
    "dato": "2026-10-28",
    "punkter": 13,
    "parser": 3
+  },
+  "8cda884e-5b96-4163-9a8b-7578a4881b20": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-11-03",
+   "punkter": 10,
+   "parser": 3
+  },
+  "1329ac8e-c6d7-43b1-a665-123cf2b3e1bd": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Politikerspørgsmål 2026",
+   "dato": "2026-11-01",
+   "punkter": 2,
+   "parser": 3
+  },
+  "ffccb308-216a-4c08-a1cf-2896cc84282d": {
+   "lastmod": "2026-11-03",
+   "type": "referat",
+   "udvalg": "Politikerspørgsmål 2026",
+   "dato": "2026-10-01",
+   "punkter": 7,
+   "parser": 3
   }
  },
  "sager": {
@@ -9001,8 +9025,8 @@
    "dato": "2026-10-01",
    "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=7230f087-561e-49a8-8501-25e9a8037734",
-   "hentet": "2026-10-29T19:43:54.698Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=ffccb308-216a-4c08-a1cf-2896cc84282d",
+   "hentet": "2026-11-03T14:50:03.619Z",
    "titel": "Svar: Freja Fischer-Møller (F) - Forhold for cyklister - 2026-10-01",
    "afsnit": [
     {
@@ -9037,8 +9061,8 @@
    "dato": "2026-10-01",
    "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=7230f087-561e-49a8-8501-25e9a8037734",
-   "hentet": "2026-10-29T19:43:54.698Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=ffccb308-216a-4c08-a1cf-2896cc84282d",
+   "hentet": "2026-11-03T14:50:03.619Z",
    "titel": "Svar: ØK - faglokaler på kommunens skoler - 2026-10-01",
    "afsnit": [
     {
@@ -9055,8 +9079,8 @@
    "dato": "2026-10-01",
    "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=7230f087-561e-49a8-8501-25e9a8037734",
-   "hentet": "2026-10-29T19:43:54.698Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=ffccb308-216a-4c08-a1cf-2896cc84282d",
+   "hentet": "2026-11-03T14:50:03.619Z",
    "titel": "Svar: Cecilie Lindahl (B) - Fritidstilbud på ældreområdet - 2026-10-09",
    "afsnit": [
     {
@@ -18009,12 +18033,17 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nNiels Haxthausen (F) var fraværende under punktet."
+    }
+   ],
    "bilag": []
   },
   "lyngby-taarbaek-2026-11-03-aeldre-og-sundhedsudvalget-2": {
@@ -18022,10 +18051,10 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "2. Budgetopfølgning 2026 (Orientering)",
    "afsnit": [
     {
@@ -18041,12 +18070,16 @@
      "tekst": "Ældre- og Sundhedsudvalget orienteres."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet.\nNiels Haxthausen (F) var fraværende under punktet."
+    },
+    {
      "titel": "Problemstilling",
      "tekst": "Der skal gives en status for det samlede forventede regnskab for året i kommunen, og\nfagudvalget orienteres hermed om status på eget område."
     },
     {
      "titel": "Løsninger",
-     "tekst": "Der følges op på forventet regnskab i forhold til korrigeret budget. På Ældre- og\nSundhedsudvalget er der bevillinger, der vedrører service og overførsler mv.\nService\n\nDer rammestyres på servicerammen, og udvalgene skal således - ved evt. merforbrug - skabe\nbalance på udvalgets serviceramme via modgående initiativer. Der gives altså som\nudgangspunkt ikke tillægsbevillinger på service i løbet af året. En samlet overskridelse af\nservicerammen kan medføre en sanktionering af Lyngby-Taarbæk Kommune.\nRammestyringen er derfor en vigtig forudsætning for overholdelse af den samlede\nserviceramme.\nDer forventes samlet set et mindreforbrug på 15,7 mio. kr. på Ældre- og Sundhedsudvalgets\nserviceramme i 2026:\nÆldre- og Sundhedsudvalget\nÆldre\nSundhed\nI alt\n(+) angiver merforbrug og (-) angiver mindreforbrug\n\nVedtaget\nbudget\n\nKorrigeret\nbudget\n\nForventet\nregnskab\n\nAfvigelse til\nkorr. budget\n\nDet forventede resultat er udtryk for en forbedring på 10 mio. kr. siden 1. Budgetopfølgning,\nsom primært kan henføres til en forbedring på Ældre, hvor der blev forventet et mindreforbrug\npå 1,1 mio. kr. ved 1. Budgetopfølgning.\nÆldre\n\nDet samlede forventede mindreforbrug på 9,1 mio. kr. kan især henføres til en række\nmindreforbrug på Centrale opgaver, herunder vedrørende uddannelse af elever, indsatser\nunder FOA Partnerskabsaftalen, tomgangshusleje på Lystoftebakken, eksterne puljemidler til\nudvikling af faste teams i hjemmeplejen samt køb og salg af plejeboliger/hjemmepleje mellem\nkommuner.\nCentrale opgaver\nDer forventes et samlet mindreforbrug på 7,7 mio. kr. vedrørende Centrale opgaver. Det\nvedrører:\n3,4 mio. kr. i forventet mindreforbrug vedrørende Faglig Kvalitet og Uddannelse primært\nsom følge af lavere udgifter til aflønning af SOSU-elever.\n3,0 mio. kr. i forventet mindreforbrug vedrørende IT, drift og udvikling primært vedrørende\nindsatser under FOA Partnerskabsaftalen (kontinuitetstillæg (0,6 mio. kr.), fastholdelsesog nærværsmedarbejdere (0,5 mio. kr.) samt seniorinitiativer (0,2 mio. kr.)). Derudover\nvedrører mindreforbruget tomgangshusleje på Lystoftebakken.\n2,6 mio. kr. i forventet mindreforbrug vedrørende køb og salg af plejeboligpladser mv.\nKøb og salg er vanskeligt at forudsige, da der er frit valg på området.\n1,0 mio. kr. i forventet mindreforbrug vedrørende eksterne puljemidler til udvikling af faste\nteams i hjemmeplejen.\n0,3 mio. kr. i forventet mindreforbrug vedrørende hjælpemidler, som skyldes en række\nmer- og mindreforbrug fordelt over området.\n2,4 mio. kr. i forventet merforbrug vedrørende befordring, plejevederlag m.m., blandt\nandet som følge af forventet merforbrug på plejevederlag, § 96-hjælp (BPA-ordninger)\nsamt kørsel til aktivitetscentre. Der var et overført merforbrug fra 2025\n0,2 mio. kr. i forventet merforbrug vedrørende Visitationen.\nHjemme- og sygepleje, Myndighed\nHjemme- og sygepleje, Myndighed. omfatter puljerne til køb af hjemme- og sygeplejeydelser\nhos den kommunale og private leverandør samt indkøbsordning og tøjvask, ligesom der i år\nligger budget fra kvalitetsløft af ældreplejen vedrørende omsorgsbesøg. Der forventes et\nbeskedent mindreforbrug på 0,1 mio. kr., som er sammensat som følger:\n1,5 mio. kr. i forventet merforbrug på hjemmeplejepuljen, som kan henføres til højere\ntyngde end budgetlagt, især først på året. Der er iværksat løbende opfølgning på hvad,\nder leveres i de enkelte forløb, som skal sikre, at borgerne er visiteret til det rette forløb.\n\n1,6 mio. kr. i forventet mindreforbrug vedrørende sygeplejepuljen. Mindreforbruget kan\nblandt andet henføres til, at den kommunale hjemmepleje har arbejdet målrettet med at\ntilpasse og afslutte ydelser, så der leveres efter borgernes behov.\nPlejehjem og hjemmeplejen\nDer forventes balance på to plejehjem og mindre mindreforbrug på de tre øvrige plejehjem. Det\ner en meget positiv udvikling set i forhold til tidligere år.\nDer forventes balance i hjemmeplejen. Et væsentligt bidrag hertil er hjemmeplejens målrettede\nindsats for at nedbringe forbruget af eksterne vikarer i år. I efteråret 2025 var der i perioder\nmere end 50 eksterne vikarer i fremmøde pr. dag – svarende til mere end hver tredje af de\ngodt 140 hjemmeplejeruter, der i gennemsnit køres dagligt. Til sammenligning er antallet i dag\n20-25 vikarer i fremmøde pr. dag, og der forventes nu et forbrug på mellem 24-25 mio. kr.\nsvarende til en reduktion på 16-17 mio. kr. i forhold til 2025, jf. bilag 3.\nSundhed\n\nDer forventes et samlet mindreforbrug på 6,6 mio. kr., som er sammensat på følgende måde:\n4,0 mio. kr. i forventet mindreforbrug vedrørende Sundhedscentret, herunder blandt andet\nvederlagsfri fysioterapi, respiratorbehandling i hjemmet, hjerneskadeindsatser, styrket\nforebyggelse og hospice m.m.\n2,2 mio. kr. i forventet mindreforbrug til færdigbehandlede patienter. Hurtig hjemtagning af\nfærdigbehandlede patienter fra sygehuset holder udgifterne nede.\n0,4 mio. kr. i forventet mindreforbrug på aktivitets- og frivillighedsområdet grundet\nvakancer\nTrænings- og Rehabiliteringscentret forventer balance.\nFra 2027 og frem overdrages udover 40 midlertidige døgnpladser også opgaverne med\nspecialiseret ambulant genoptræning og hjerneskadeindsatser til regionen. Det forventes\nderfor, at det hidtidige mindreforbrug på Sundhedscentrets område vil blive reduceret fra 2027\nog frem. Hertil kommer, at budgettet til respiratorbehandling i hjemmet er nedskrevet med 0,5\nmio. kr. fra 2027, idet der har været et strukturelt mindreforbrug siden 2022. Midlerne anvendes\ntil medfinansiering af sundhedsreformens konsekvenser.\nOverførsler mv.\n\nOverførsler mv. er bevillinger, der ligger uden for servicerammen og generelt er svært styrbare\nområder. Ofte er områderne påvirket af andre forhold, og kommunen kan ikke selv beslutte\nserviceniveauet. Både mer- og mindreforbrug på ikke-servicebevillinger har modpost på\nkassen – dvs. at eventuelle merforbrug finansieres af kassen, ligesom mindreforbrug tilgår\nkassen.\nPå Ældre- og Sundhedsudvalgets ’Overførsler mv.’ forventes balance i 2026.\n\nÆldre- og Sundhedsudvalget\nKommunal medfinansiering (ikke service)\nI alt\n(+) angiver merforbrug og (-) angiver mindreforbrug\n\nVedtaget\nbudget\n\nKorrigeret\nbudget\n\nForventet\nregnskab\n\nAfvigelse til\nkorr. budget\n\nDer forventes balance på den kommunale medfinansiering, der har været fastfrosset siden\n2019, hvormed den endelige afregning for året allerede er kendt. Fra 2027 bortfalder den\nkommunale medfinansiering af sundhedsvæsenet.\nOpfølgningen på de enkelte aktivitetsområder er nærmere beskrevet i vedlagte bilag 1 og 2."
+     "tekst": "Der følges op på forventet regnskab i forhold til korrigeret budget. På Ældre- og\nSundhedsudvalget er der bevillinger, der vedrører service og overførsler mv.\nService\n\nDer rammestyres på servicerammen, og udvalgene skal således - ved evt. merforbrug - skabe\nbalance på udvalgets serviceramme via modgående initiativer. Der gives altså som\nudgangspunkt ikke tillægsbevillinger på service i løbet af året. En samlet overskridelse af\nservicerammen kan medføre en sanktionering af Lyngby-Taarbæk Kommune.\nRammestyringen er derfor en vigtig forudsætning for overholdelse af den samlede\nserviceramme.\nDer forventes samlet set et mindreforbrug på 15,7 mio. kr. på Ældre- og Sundhedsudvalgets\nserviceramme i 2026:\n\nÆldre- og Sundhedsudvalget\nÆldre\nSundhed\nI alt\n(+) angiver merforbrug og (-) angiver mindreforbrug\n\nVedtaget\nbudget\n\nKorrigeret\nbudget\n\nForventet\nregnskab\n\nAfvigelse til\nkorr. budget\n\nDet forventede resultat er udtryk for en forbedring på 10 mio. kr. siden 1. Budgetopfølgning,\nsom primært kan henføres til en forbedring på Ældre, hvor der blev forventet et mindreforbrug\npå 1,1 mio. kr. ved 1. Budgetopfølgning.\nÆldre\n\nDet samlede forventede mindreforbrug på 9,1 mio. kr. kan især henføres til en række\nmindreforbrug på Centrale opgaver, herunder vedrørende uddannelse af elever, indsatser\nunder FOA Partnerskabsaftalen, tomgangshusleje på Lystoftebakken, eksterne puljemidler til\nudvikling af faste teams i hjemmeplejen samt køb og salg af plejeboliger/hjemmepleje mellem\nkommuner.\nCentrale opgaver\nDer forventes et samlet mindreforbrug på 7,7 mio. kr. vedrørende Centrale opgaver. Det\nvedrører:\n3,4 mio. kr. i forventet mindreforbrug vedrørende Faglig Kvalitet og Uddannelse primært\nsom følge af lavere udgifter til aflønning af SOSU-elever.\n3,0 mio. kr. i forventet mindreforbrug vedrørende IT, drift og udvikling primært vedrørende\nindsatser under FOA Partnerskabsaftalen (kontinuitetstillæg (0,6 mio. kr.), fastholdelsesog nærværsmedarbejdere (0,5 mio. kr.) samt seniorinitiativer (0,2 mio. kr.)). Derudover\nvedrører mindreforbruget tomgangshusleje på Lystoftebakken.\n2,6 mio. kr. i forventet mindreforbrug vedrørende køb og salg af plejeboligpladser mv.\nKøb og salg er vanskeligt at forudsige, da der er frit valg på området.\n1,0 mio. kr. i forventet mindreforbrug vedrørende eksterne puljemidler til udvikling af faste\nteams i hjemmeplejen.\n0,3 mio. kr. i forventet mindreforbrug vedrørende hjælpemidler, som skyldes en række\nmer- og mindreforbrug fordelt over området.\n2,4 mio. kr. i forventet merforbrug vedrørende befordring, plejevederlag m.m., blandt\nandet som følge af forventet merforbrug på plejevederlag, § 96-hjælp (BPA-ordninger)\nsamt kørsel til aktivitetscentre. Der var et overført merforbrug fra 2025\n0,2 mio. kr. i forventet merforbrug vedrørende Visitationen.\nHjemme- og sygepleje, Myndighed\nHjemme- og sygepleje, Myndighed. omfatter puljerne til køb af hjemme- og sygeplejeydelser\nhos den kommunale og private leverandør samt indkøbsordning og tøjvask, ligesom der i år\n\nligger budget fra kvalitetsløft af ældreplejen vedrørende omsorgsbesøg. Der forventes et\nbeskedent mindreforbrug på 0,1 mio. kr., som er sammensat som følger:\n1,5 mio. kr. i forventet merforbrug på hjemmeplejepuljen, som kan henføres til højere\ntyngde end budgetlagt, især først på året. Der er iværksat løbende opfølgning på hvad,\nder leveres i de enkelte forløb, som skal sikre, at borgerne er visiteret til det rette forløb.\n1,6 mio. kr. i forventet mindreforbrug vedrørende sygeplejepuljen. Mindreforbruget kan\nblandt andet henføres til, at den kommunale hjemmepleje har arbejdet målrettet med at\ntilpasse og afslutte ydelser, så der leveres efter borgernes behov.\nPlejehjem og hjemmeplejen\nDer forventes balance på to plejehjem og mindre mindreforbrug på de tre øvrige plejehjem. Det\ner en meget positiv udvikling set i forhold til tidligere år.\nDer forventes balance i hjemmeplejen. Et væsentligt bidrag hertil er hjemmeplejens målrettede\nindsats for at nedbringe forbruget af eksterne vikarer i år. I efteråret 2025 var der i perioder\nmere end 50 eksterne vikarer i fremmøde pr. dag – svarende til mere end hver tredje af de\ngodt 140 hjemmeplejeruter, der i gennemsnit køres dagligt. Til sammenligning er antallet i dag\n20-25 vikarer i fremmøde pr. dag, og der forventes nu et forbrug på mellem 24-25 mio. kr.\nsvarende til en reduktion på 16-17 mio. kr. i forhold til 2025, jf. bilag 3.\nSundhed\n\nDer forventes et samlet mindreforbrug på 6,6 mio. kr., som er sammensat på følgende måde:\n4,0 mio. kr. i forventet mindreforbrug vedrørende Sundhedscentret, herunder blandt andet\nvederlagsfri fysioterapi, respiratorbehandling i hjemmet, hjerneskadeindsatser, styrket\nforebyggelse og hospice m.m.\n2,2 mio. kr. i forventet mindreforbrug til færdigbehandlede patienter. Hurtig hjemtagning af\nfærdigbehandlede patienter fra sygehuset holder udgifterne nede.\n0,4 mio. kr. i forventet mindreforbrug på aktivitets- og frivillighedsområdet grundet\nvakancer\nTrænings- og Rehabiliteringscentret forventer balance.\nFra 2027 og frem overdrages udover 40 midlertidige døgnpladser også opgaverne med\nspecialiseret ambulant genoptræning og hjerneskadeindsatser til regionen. Det forventes\nderfor, at det hidtidige mindreforbrug på Sundhedscentrets område vil blive reduceret fra 2027\nog frem. Hertil kommer, at budgettet til respiratorbehandling i hjemmet er nedskrevet med 0,5\nmio. kr. fra 2027, idet der har været et strukturelt mindreforbrug siden 2022. Midlerne anvendes\ntil medfinansiering af sundhedsreformens konsekvenser.\nOverførsler mv.\n\nOverførsler mv. er bevillinger, der ligger uden for servicerammen og generelt er svært styrbare\nområder. Ofte er områderne påvirket af andre forhold, og kommunen kan ikke selv beslutte\n\nserviceniveauet. Både mer- og mindreforbrug på ikke-servicebevillinger har modpost på\nkassen – dvs. at eventuelle merforbrug finansieres af kassen, ligesom mindreforbrug tilgår\nkassen.\nPå Ældre- og Sundhedsudvalgets ’Overførsler mv.’ forventes balance i 2026.\nÆldre- og Sundhedsudvalget\nKommunal medfinansiering (ikke service)\nI alt\n(+) angiver merforbrug og (-) angiver mindreforbrug\n\nVedtaget\nbudget\n\nKorrigeret\nbudget\n\nForventet\nregnskab\n\nAfvigelse til\nkorr. budget\n\nDer forventes balance på den kommunale medfinansiering, der har været fastfrosset siden\n2019, hvormed den endelige afregning for året allerede er kendt. Fra 2027 bortfalder den\nkommunale medfinansiering af sundhedsvæsenet.\nOpfølgningen på de enkelte aktivitetsområder er nærmere beskrevet i vedlagte bilag 1 og 2."
     },
     {
      "titel": "Strategisk ramme",
@@ -18068,10 +18101,10 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Status på implementeringen af Budgetaftalen 2025-28 og 2026-29 (Orientering)",
    "afsnit": [
     {
@@ -18087,12 +18120,16 @@
      "tekst": "Ældre- og Sundhedsudvalget orienteres.\nTeknik- og Miljøudvalget orienteres.\nBørne- og Skoleudvalget orienteres.\nByplanudvalget orienteres.\nKultur- og Fritidsudvalget orienteres.\nSocial- og Beskæftigelsesudvalget orienteres.\nØkonomiudvalget orienteres."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet.\nNiels Haxthausen (F) var fraværende under punktet."
+    },
+    {
      "titel": "Problemstilling",
      "tekst": "Økonomiudvalget godkendte den 7. november 2024 forvaltningens forslag til en procesplan for\nudmøntningen af den 2-årige budgetaftale 2025-28. Samtidig blev det besluttet, at der løbende\nskal gives status på implementeringen af budgetaftalen i forbindelse med de årlige\nbudgetopfølgninger, jf. også budgetaftalen 2025-28. Ved 2. behandlingen af budget 2026-29\nblev der desuden besluttet et tillæg til budgetaftalen.\nPå den baggrund er der i forbindelse med budgetopfølgningerne løbende givet status på\nbudgetaftalen 2025-28 og tillægget til aftalen. Denne sag indeholder den 4. status på\nbudgetaftalen samt status på tillægget til aftalen."
     },
     {
      "titel": "Løsninger",
-     "tekst": "Status for implementeringen af aftalepunkterne i budgetaftalen 2025-28 er vedlagt (bilag 1).\nOversigten omfatter de indsatser, som skal forelægges politisk, herunder budgetaftalens\nhensigtserklæringer. Oversigten er opdelt på områderne, som de fremgår af budgetaftalen.\nSidst i oversigten er desuden vist en status på tillæg til budgetaftalen besluttet i forbindelse\n\nmed budget 2026-29.\nDe fleste af indsatserne er udmøntet eller i fremdrift efter procesplanen for den politiske\nbehandling (markeret med grøn). Nogle af de behandlede sager skal som led i udmøntningen\nforelægges på ny. Indsatser, som er behandlet senere end oprindeligt planlagt, men ellers er i\nfremdrift eller implementeret som forudsat i budgetaftalen, er ligeledes markeret med grøn.\nIndsatser som er forelagt politisk, men hvor implementeringen er forsinket eller ændret\nvæsentligt i forhold til de oprindelige forudsætninger ved budgetaftalen 2025-28, er markeret\nmed gul. Samlet er i alt fem indsatser markeret med gul. Det drejer sig om ”Oprettelsen af\ninternationalt spor på Lindegårdsskolen”, ”Anvendelsen af Kaningården (H)”, \"Fortsættelse af\nallerede igangsat arbejde vedrørende civilsamfund og frivillighed\", \"Løft af Pulje til Byliv og\nkultur\" og ”Potentialer i snitfladen mellem socialområdet og ældreområdet”.\nDet bemærkes, at enkelte af aftaleelementerne – fx ”Pulje til tilgængelighedstiltag – herunder i\nLyngby Idrætsby” og ”Fremrykning af ejendomsvedligehold” – har været forelagt for flere\nudvalg end oprindeligt forudsat i procesplanen for udmøntningen af budgetaftalen."
+     "tekst": "Status for implementeringen af aftalepunkterne i budgetaftalen 2025-28 er vedlagt (bilag 1).\nOversigten omfatter de indsatser, som skal forelægges politisk, herunder budgetaftalens\nhensigtserklæringer. Oversigten er opdelt på områderne, som de fremgår af budgetaftalen.\nSidst i oversigten er desuden vist en status på tillæg til budgetaftalen besluttet i forbindelse\nmed budget 2026-29.\nDe fleste af indsatserne er udmøntet eller i fremdrift efter procesplanen for den politiske\nbehandling (markeret med grøn). Nogle af de behandlede sager skal som led i udmøntningen\nforelægges på ny. Indsatser, som er behandlet senere end oprindeligt planlagt, men ellers er i\nfremdrift eller implementeret som forudsat i budgetaftalen, er ligeledes markeret med grøn.\nIndsatser som er forelagt politisk, men hvor implementeringen er forsinket eller ændret\nvæsentligt i forhold til de oprindelige forudsætninger ved budgetaftalen 2025-28, er markeret\nmed gul. Samlet er i alt fem indsatser markeret med gul. Det drejer sig om ”Oprettelsen af\ninternationalt spor på Lindegårdsskolen”, ”Anvendelsen af Kaningården (H)”, \"Fortsættelse af\nallerede igangsat arbejde vedrørende civilsamfund og frivillighed\", \"Løft af Pulje til Byliv og\nkultur\" og ”Potentialer i snitfladen mellem socialområdet og ældreområdet”.\nDet bemærkes, at enkelte af aftaleelementerne – fx ”Pulje til tilgængelighedstiltag – herunder i\nLyngby Idrætsby” og ”Fremrykning af ejendomsvedligehold” – har været forelagt for flere\nudvalg end oprindeligt forudsat i procesplanen for udmøntningen af budgetaftalen."
     },
     {
      "titel": "Strategisk ramme",
@@ -18114,10 +18151,10 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Opsamling sundhedsstrategien 2026 (Beslutning)",
    "afsnit": [
     {
@@ -18133,12 +18170,16 @@
      "tekst": "Ældre- og Sundhedsudvalget orienteres om indstillingspunkt 1 og anbefaler indstillingspunkt 2.\nBørne- og Skoleudvalget orienteres om indstillingspunkt 1 og anbefaler indstillingspunkt 2.\nSocial- og Beskæftigelsesudvalget orienteres om indstillingspunkt 1 og anbefaler\nindstillingspunkt 2.\nØkonomiudvalget anbefaler indstillingspunkt 2.\nKommunalbestyrelsen beslutter indstillingspunkt 2."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Ad 1) Orientering givet.\nAd 2) Anbefalet.\nNiels Haxthausen (F) var fraværende under punktet."
+    },
+    {
      "titel": "Problemstilling",
-     "tekst": "Handleplanen for Sundhedsstrategien består af 14 indsatser:\n1. Forebyggende indsats på almenområdet (E)\n2. Understøttelse af far-barn-relationen (E)\n3. Børn som pårørende\n4. Sammen om trivsel i udskoling (E)\n5. Inspirationskatalog til undervisere i grundskolen\n6. Forebyggelse af alkohol (E)\n7. Forebyggelse af tobak og andre nikotinprodukter\n8. Supplerende seksualundervisning (E)\n9. Forebyggende undervisning om stoffer\n10. Temamøder for forældre til teenagere (E)\n\n11. Mentorforløb til unge (E)\n12. Tværgående udviklingsnetværk\n13. Kompetenceudvikling af frivillige og kommunale aktører\n14. Udvikling af lokale fællesskaber\nKommunalbestyrelsen godkendte den 20. februar 2025 en plan for at understøtte igangværende\nindsatser i handleplaner frem til udgangen af 2026. På møde den 14. marts 2024 i Forebyggelseog Socialudvalget blev forvaltningens oplæg til evaluering drøftet. Udvalget bemærkede, at det\nskulle prioriteres at evaluere 7 enkelte indsatser mere i dybden og dermed ikke evaluere\nsamtlige indsatser. De 7 indsatser er markeret med (E) ovenfor. Ved indsats 4 har det ikke været\nmuligt at indhente data om evaluering. Evaluering af de 6 andre indsatser er beskrevet i\nløsningsafsnittet.\nMed Sundhedsreformen fra 2024 følger en folkesundhedslov. Lovgivningsarbejdet er på grund af\nfolketingsvalget i foråret 2026 blevet forsinket. Den nye lovgivning træder forventelig i kraft i\nsommeren 2027. Det er en mulighed at videreføre udvalgte af de igangværende indsatser i\nSom en del af beslutningen om ophør af Sundhedsstrategien blev også nedlagt en stilling som\ntværgående projektleder. De frigivne midler blev allokeret til en styrket forebyggelse, og Ældreog Sundhedsudvalget prioriterede efterfølgende at styrke demensindsatsen, herunder særligt\nmed fokus på at støtte de pårørende. Demensindsatsen indgår ikke som en særskilt indsats i\nhandleplanen for Sundhedsstrategien. Evaluering af demensindsatsen fremgår af en særskilt\nsag på indeværende dagsorden."
+     "tekst": "Handleplanen for Sundhedsstrategien består af 14 indsatser:\n1. Forebyggende indsats på almenområdet (E)\n2. Understøttelse af far-barn-relationen (E)\n3. Børn som pårørende\n4. Sammen om trivsel i udskoling (E)\n5. Inspirationskatalog til undervisere i grundskolen\n\n6. Forebyggelse af alkohol (E)\n7. Forebyggelse af tobak og andre nikotinprodukter\n8. Supplerende seksualundervisning (E)\n9. Forebyggende undervisning om stoffer\n10. Temamøder for forældre til teenagere (E)\n11. Mentorforløb til unge (E)\n12. Tværgående udviklingsnetværk\n13. Kompetenceudvikling af frivillige og kommunale aktører\n14. Udvikling af lokale fællesskaber\nKommunalbestyrelsen godkendte den 20. februar 2025 en plan for at understøtte igangværende\nindsatser i handleplaner frem til udgangen af 2026. På møde den 14. marts 2024 i Forebyggelseog Socialudvalget blev forvaltningens oplæg til evaluering drøftet. Udvalget bemærkede, at det\nskulle prioriteres at evaluere 7 enkelte indsatser mere i dybden og dermed ikke evaluere\nsamtlige indsatser. De 7 indsatser er markeret med (E) ovenfor. Ved indsats 4 har det ikke været\nmuligt at indhente data om evaluering. Evaluering af de 6 andre indsatser er beskrevet i\nløsningsafsnittet.\nMed Sundhedsreformen fra 2024 følger en folkesundhedslov. Lovgivningsarbejdet er på grund af\nfolketingsvalget i foråret 2026 blevet forsinket. Den nye lovgivning træder forventelig i kraft i\nsommeren 2027. Det er en mulighed at videreføre udvalgte af de igangværende indsatser i\nSom en del af beslutningen om ophør af Sundhedsstrategien blev også nedlagt en stilling som\ntværgående projektleder. De frigivne midler blev allokeret til en styrket forebyggelse, og Ældreog Sundhedsudvalget prioriterede efterfølgende at styrke demensindsatsen, herunder særligt\nmed fokus på at støtte de pårørende. Demensindsatsen indgår ikke som en særskilt indsats i\nhandleplanen for Sundhedsstrategien. Evaluering af demensindsatsen fremgår af en særskilt\nsag på indeværende dagsorden."
     },
     {
      "titel": "Løsninger",
-     "tekst": "Forvaltningen har samlet op på resultater og erfaringer med indsatserne i handleplanen for\nSundhedsstrategien. Et samlet overblik over indsatserne er bilagt (bilag 1).\nIndsats 1 i handleplanen: Forebyggende indsats på almenområdet\n\nFormålet med indsatsen er at give fagmedarbejdere og forældre i dagtilbud og skoler viden og\nspecialpædagogiske redskaber til at håndtere trivselsudfordringer hos børn og unge. Der har\nværet afholdt 6 kurser for fagpersoner i \"Forstå børn med autisme og ADHD\", og 4 kurser i\n\"Udvikling og handleplaner\". Der er ikke foretaget systematisk evaluering af effekten, men\nfagpersoner har evalueret udbyttet af kurserne. 92 % af fagpersonerne vurderer at udbyttet har\nværet godt eller virkelig godt. Fagpersonerne fremhæver især, at kurserne bidrager til en fælles\nforståelsesramme og et fælles vidensgrundlag. I skoleåret 2026/27 afholdes forældretilbuddet\n\"hvordan støtter jeg mit barn, når det bliver svært\".\nIndsats 2 i handleplanen: Understøttelse af far-barn-relationen\n\nDer har i 2024-2026 været gennemført et gruppeforløb årligt i samarbejde mellem\nsundhedsplejen og Familiecentret i Center for Social Indsats. På de 3 forløb har i alt 22 fædre\nhar deltaget. Efter hvert forløb er fædrenes udbytte af forløbet systematisk evalueret.\n\nEvalueringen viser, at fædrene har oplevet tilbuddet som relevant og nødvendigt. Fædrene har\nisær fremhævet, at forløbet har bidraget til at skabe mere realistiske forventninger til dem selv,\nøget deres forståelse for forældreskabets udfordringer, og givet dem et godt udbytte af at kunne\nspejle sig i andre fædre. Som en del af indsatsen er der også etableret samarbejdet med BABA\n(ordet for \"far\" på en lang række sprog), som er et tilbud under civilsamfundsorganisationen\nFonden for socialt ansvar, målrettet fædre. Sundhedsplejen henviser til BABA's tilbud, når det er\nrelevant.\nIndsats 6 i handleplanen: Forebyggelse af alkohol\n\nFormålet med indsatsen er at forebygge alkoholindtag blandt unge. Der er uddannet 6 lokale\nungeguider, som er blevet uddannet i at formidle viden og facilitere dialog mellem de unge og\nderes forældre. Der er over 3 år afholdt dialogmøder hvert skoleår for elever og forældre på 7 af\nkommunens skoler. I skoletiden er der faciliteret dialoger med elever klassevis, mens der samme\naften er faciliteret dialoger med forældre i samlet gruppe. I forlængelse af arrangementerne har\n179 elever og 248 forældre svaret på en evaluering af dialogmøderne. Evalueringen viser, at 70\n% af de unge oplever større styrke til at sige nej til alkohol, blandt andet fordi de gennem\ndialogmøderne har fået ændret deres opfattelse af, hvor meget andre unge drikker.\nDialogmøderne har givet hovedparten af de unge ny viden om alkohols negative virkning på\nkroppen. Det samme ses hos forældrene, hvor 82 % angiver, at de har fået ny viden om alkohol.\nEt vigtigt resultat af indsatsen er, at 90 % af forældrene oplever, at de efter dialogmøderne har\nfået inspiration til at tale med deres børn om alkohol. Det underbygges af, at 96 % af de unge\noplever, at forældrene har lyttet til deres holdning, og det billede går igen ved, at 98 % af\nforældrene siger, at de kan anvende unges råd til forældrene. Forældrene tilkendegiver også, at\nde oplever en øget dialog mellem forældrene i klassen om de unge og alkohol.\nIndsats 8 i handleplanen: Supplerende seksualundervisning\n\nDet har været et ønske fra skolernes side at supplere den obligatoriske seksualundervisning\nmed undervisning af ung-til-unge formidler, som har større viden om de emner, som unge er\noptaget af, samt at ung-til-unge formidlere er mere i øjenhøjde med eleverne. Der er i\nsamarbejde med Sex og Samfund afholdt undervisningsforløb i 11 klasser i skoleåret 2024-2025\nog i 9 klasser i skoleåret 2025-26. Evalueringen er foretaget af Sex og Samfund, og i skoleåret\n2024-2025 har 62 svaret på evalueringen og i 2025-2026 har 44 elever svaret på evalueringen det vil sige at evalueringen bygger på besvarelser fra 106 elever i alt. Samlet set peger\nevalueringen på et positiv udbytte af undervisningen. Ud af de 106 elever vurderer 89 %\nundervisningen som god eller meget god. Ca. 87 % oplever at have lært noget nyt og over to\ntredjedele af eleverne oplever, at undervisningen er anvendelig.\nIndsats 10 i handleplanen: Temamøder for forældre til teenagere\n\nFormålet er gennem temamøder at ruste forældre til at støtte deres teenagers trivsel og\nsundhed. Der er over 3 år afholdt 6 temamøder. De seneste to møder har været afholdt i\nsamarbejde med Furesø og Rudersdal Kommuner samt Headspace Lyngby-Taarbæk med god\nerfaring. Samlet har over 700 forældre deltaget i temamøderne. Der har især været stor\ninteresse for emner som digital dannelse og perfekthedskultur. Der har ikke været gennemført\nspørgeskemaundersøgelse.\n\nIndsats 11 i handleplanen: Mentorforløb til unge\n\nUddannelse og tilknytning til arbejdsmarkedet er en beskyttende faktor i forhold til sundhed.\nFormålet med indsatsen er at give et tilbud om håndholdt støtte i overgangen mellem grundskole\nog ungdomsuddannelse til unge. Evalueringen viser, at i alt 57 unge har fået et mentorforløb, og\nheraf er 88 % fortsat i uddannelse ved afslutning af forløbet. Ca. 5 % er i stedet for uddannelse\nkommet i arbejde eller praktik. Det vil sige, at mentorstøtte bidrager til, at unge fortsætter i\nuddannelse eller kommer videre efter frafaldstruede forløb.\nOpsummering\n\nDe seks beskrevne indsatser, der er evalueret, er også de indsatser, som har vist sig at være\nbedst forankret i driften. Da det konkrete indhold af folkesundhedsloven endnu er ukendt, og\nsundhedsfremmemidlerne derfor ikke er allokeret til nye tværgående indsatser, foreslår\nforvaltningen, at ovenstående indsatser understøttes i 2027 med samme beløb som tildelt i 2026."
+     "tekst": "Forvaltningen har samlet op på resultater og erfaringer med indsatserne i handleplanen for\nSundhedsstrategien. Et samlet overblik over indsatserne er bilagt (bilag 1).\nIndsats 1 i handleplanen: Forebyggende indsats på almenområdet\n\nFormålet med indsatsen er at give fagmedarbejdere og forældre i dagtilbud og skoler viden og\nspecialpædagogiske redskaber til at håndtere trivselsudfordringer hos børn og unge. Der har\nværet afholdt 6 kurser for fagpersoner i \"Forstå børn med autisme og ADHD\", og 4 kurser i\n\"Udvikling og handleplaner\". Der er ikke foretaget systematisk evaluering af effekten, men\nfagpersoner har evalueret udbyttet af kurserne. 92 % af fagpersonerne vurderer at udbyttet har\nværet godt eller virkelig godt. Fagpersonerne fremhæver især, at kurserne bidrager til en fælles\nforståelsesramme og et fælles vidensgrundlag. I skoleåret 2026/27 afholdes forældretilbuddet\n\n\"hvordan støtter jeg mit barn, når det bliver svært\".\nIndsats 2 i handleplanen: Understøttelse af far-barn-relationen\n\nDer har i 2024-2026 været gennemført et gruppeforløb årligt i samarbejde mellem\nsundhedsplejen og Familiecentret i Center for Social Indsats. På de 3 forløb har i alt 22 fædre\nhar deltaget. Efter hvert forløb er fædrenes udbytte af forløbet systematisk evalueret.\nEvalueringen viser, at fædrene har oplevet tilbuddet som relevant og nødvendigt. Fædrene har\nisær fremhævet, at forløbet har bidraget til at skabe mere realistiske forventninger til dem selv,\nøget deres forståelse for forældreskabets udfordringer, og givet dem et godt udbytte af at kunne\nspejle sig i andre fædre. Som en del af indsatsen er der også etableret samarbejdet med BABA\n(ordet for \"far\" på en lang række sprog), som er et tilbud under civilsamfundsorganisationen\nFonden for socialt ansvar, målrettet fædre. Sundhedsplejen henviser til BABA's tilbud, når det er\nrelevant.\nIndsats 6 i handleplanen: Forebyggelse af alkohol\n\nFormålet med indsatsen er at forebygge alkoholindtag blandt unge. Der er uddannet 6 lokale\nungeguider, som er blevet uddannet i at formidle viden og facilitere dialog mellem de unge og\nderes forældre. Der er over 3 år afholdt dialogmøder hvert skoleår for elever og forældre på 7 af\nkommunens skoler. I skoletiden er der faciliteret dialoger med elever klassevis, mens der samme\naften er faciliteret dialoger med forældre i samlet gruppe. I forlængelse af arrangementerne har\n179 elever og 248 forældre svaret på en evaluering af dialogmøderne. Evalueringen viser, at 70\n% af de unge oplever større styrke til at sige nej til alkohol, blandt andet fordi de gennem\ndialogmøderne har fået ændret deres opfattelse af, hvor meget andre unge drikker.\nDialogmøderne har givet hovedparten af de unge ny viden om alkohols negative virkning på\nkroppen. Det samme ses hos forældrene, hvor 82 % angiver, at de har fået ny viden om alkohol.\nEt vigtigt resultat af indsatsen er, at 90 % af forældrene oplever, at de efter dialogmøderne har\nfået inspiration til at tale med deres børn om alkohol. Det underbygges af, at 96 % af de unge\noplever, at forældrene har lyttet til deres holdning, og det billede går igen ved, at 98 % af\nforældrene siger, at de kan anvende unges råd til forældrene. Forældrene tilkendegiver også, at\nde oplever en øget dialog mellem forældrene i klassen om de unge og alkohol.\nIndsats 8 i handleplanen: Supplerende seksualundervisning\n\nDet har været et ønske fra skolernes side at supplere den obligatoriske seksualundervisning\nmed undervisning af ung-til-unge formidler, som har større viden om de emner, som unge er\noptaget af, samt at ung-til-unge formidlere er mere i øjenhøjde med eleverne. Der er i\nsamarbejde med Sex og Samfund afholdt undervisningsforløb i 11 klasser i skoleåret 2024-2025\nog i 9 klasser i skoleåret 2025-26. Evalueringen er foretaget af Sex og Samfund, og i skoleåret\n2024-2025 har 62 svaret på evalueringen og i 2025-2026 har 44 elever svaret på evalueringen det vil sige at evalueringen bygger på besvarelser fra 106 elever i alt. Samlet set peger\nevalueringen på et positiv udbytte af undervisningen. Ud af de 106 elever vurderer 89 %\nundervisningen som god eller meget god. Ca. 87 % oplever at have lært noget nyt og over to\ntredjedele af eleverne oplever, at undervisningen er anvendelig.\nIndsats 10 i handleplanen: Temamøder for forældre til teenagere\n\nFormålet er gennem temamøder at ruste forældre til at støtte deres teenagers trivsel og\nsundhed. Der er over 3 år afholdt 6 temamøder. De seneste to møder har været afholdt i\nsamarbejde med Furesø og Rudersdal Kommuner samt Headspace Lyngby-Taarbæk med god\nerfaring. Samlet har over 700 forældre deltaget i temamøderne. Der har især været stor\ninteresse for emner som digital dannelse og perfekthedskultur. Der har ikke været gennemført\nspørgeskemaundersøgelse.\nIndsats 11 i handleplanen: Mentorforløb til unge\n\nUddannelse og tilknytning til arbejdsmarkedet er en beskyttende faktor i forhold til sundhed.\nFormålet med indsatsen er at give et tilbud om håndholdt støtte i overgangen mellem grundskole\nog ungdomsuddannelse til unge. Evalueringen viser, at i alt 57 unge har fået et mentorforløb, og\nheraf er 88 % fortsat i uddannelse ved afslutning af forløbet. Ca. 5 % er i stedet for uddannelse\nkommet i arbejde eller praktik. Det vil sige, at mentorstøtte bidrager til, at unge fortsætter i\nuddannelse eller kommer videre efter frafaldstruede forløb.\nOpsummering\n\nDe seks beskrevne indsatser, der er evalueret, er også de indsatser, som har vist sig at være\nbedst forankret i driften. Da det konkrete indhold af folkesundhedsloven endnu er ukendt, og\nsundhedsfremmemidlerne derfor ikke er allokeret til nye tværgående indsatser, foreslår\nforvaltningen, at ovenstående indsatser understøttes i 2027 med samme beløb som tildelt i 2026."
     },
     {
      "titel": "Strategisk ramme",
@@ -18146,7 +18187,7 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Sundhedsstrategien og den tilhørende handleplan ophører ved udgangen af 2026. Der er varigt\nafsat 280.000 kr. årligt til aktiviteter under Sundhedsstrategien. På baggrund af forsinkelsen af\nden kommende folkesundhedslov lægger forvaltningen op til, at seks af handleplanens 14\nindsatser videreføres i 2027 inden for den eksisterende økonomiske ramme.\nDer er på landsplan afsat 250 mio. kr. årligt fra 2027 til at styrke kommunernes\nforebyggelsesarbejde i forbindelse med den kommende folkesundhedslov. Det er endnu\nuafklaret, hvordan midlerne udmøntes, og i hvilket omfang de videreførte indsatser vil være\nomfattet af loven. De bevillingsmæssige ændringer er af mere teknisk karakter og har ingen\nkassemæssig påvirkning.\nTabel til bevillingsmæssige ændringer:\nt. kr. i 2026 p/l\n\nUdvalg /\nAktivitetsområde\n\nVarig?\nja/nej\n\nForebyggende indsats på Børne- og\nSkoleudvalget / Skoler 0\nalmenområdet, PPR\nog Klubber\n\nNej\n\nBørne- og\nUnderstøttelse af far-barnSkoleudvalget /\nrelationen, Sundhedsplejen\nDagtilbud\n\nNej\n\nSocial- og\nBeskæftigelsesudvalget/ 0\nUngeindsats\nTemamøder til forældre til Børne- og\nteenagere,\nSkoleudvalget / Skoler 0\nUngdomsskolen\nog Klubber\nSocial- og\nMentorstøtte til unge,\nBeskæftigelsesudvalget/ 0\nUngeenheden\nUngeindsats\nÆldre- og\nSundhedscentret\nSundhedsudvalget /\nSundhed\nI alt\nForebyggelse af\nalkohol, Ungeenheden\n\nNej\n\nNej\n\nNej\n\nNej\n\nNej\n\nNote: Indsatsen vedrørende supplerende seksualundervisning er forankret i Sundhedscentret og\nkræver derfor ingen bevillingsmæssige ændringer."
+     "tekst": "Sundhedsstrategien og den tilhørende handleplan ophører ved udgangen af 2026. Der er varigt\nafsat 280.000 kr. årligt til aktiviteter under Sundhedsstrategien. På baggrund af forsinkelsen af\nden kommende folkesundhedslov lægger forvaltningen op til, at seks af handleplanens 14\nindsatser videreføres i 2027 inden for den eksisterende økonomiske ramme.\nDer er på landsplan afsat 250 mio. kr. årligt fra 2027 til at styrke kommunernes\nforebyggelsesarbejde i forbindelse med den kommende folkesundhedslov. Det er endnu\nuafklaret, hvordan midlerne udmøntes, og i hvilket omfang de videreførte indsatser vil være\nomfattet af loven. De bevillingsmæssige ændringer er af mere teknisk karakter og har ingen\nkassemæssig påvirkning.\nTabel til bevillingsmæssige ændringer:\nt. kr. i 2026 p/l\n\nUdvalg /\nAktivitetsområde\n\nVarig?\nja/nej\n\nBørne- og\nForebyggende indsats på\nSkoleudvalget / Skoler 0\nalmenområdet, PPR\nog Klubber\nBørne- og\nUnderstøttelse af far-barnSkoleudvalget /\nrelationen, Sundhedsplejen\nDagtilbud\nSocial- og\nForebyggelse af\nBeskæftigelsesudvalget/ 0\nalkohol, Ungeenheden\nUngeindsats\nTemamøder til forældre til Børne- og\nteenagere,\nSkoleudvalget / Skoler 0\nUngdomsskolen\nog Klubber\nSocial- og\nMentorstøtte til unge,\nBeskæftigelsesudvalget/ 0\nUngeenheden\nUngeindsats\nÆldre- og\nSundhedscentret\nSundhedsudvalget /\nSundhed\nI alt\n\nNej\n\nNej\n\nNej\n\nNej\n\nNej\n\nNej\n\nNej\n\nNote: Indsatsen vedrørende supplerende seksualundervisning er forankret i Sundhedscentret og\nkræver derfor ingen bevillingsmæssige ændringer."
     },
     {
      "titel": "Videre proces",
@@ -18160,10 +18201,10 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Styrket demensindsats - evaluering (Beslutning)",
    "afsnit": [
     {
@@ -18179,12 +18220,16 @@
      "tekst": "Ældre- og Sundhedsudvalget beslutter."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nNiels Haxthausen (F) var fraværende under punktet."
+    },
+    {
      "titel": "Problemstilling",
-     "tekst": "I Budget 2025-2028 blev afsat 452.000 kr. i 2025 og 775.000 kr. i 2026 til en styrket\nforebyggelsesindsats. Ældre- og Sundhedsudvalget besluttede den 10. marts 2026 at prioritere\ntre konkrete indsatser på demensområdet med særlig fokus på støtte til pårørende.\nNår der først blev truffet beslutning om midlernes anvendelse relativt sent efter vedtagelsen af\nBudget 2025-2028 beror det på, at processen frem til den endelige beslutning har omfattet flere\nprocestrin. Først blev gennemført en fælles temadrøftelse for Forebyggelses- og\nSocialudvalget, Ældre- og Omsorgsudvalget samt Seniorrådet i starten af 2025. Disse\ndrøftelser indgik i forvaltningens oplæg med fire forskellige forslag, der blev drøftet i\nForebyggelses- og Socialudvalget i juni 2025. Udvalget ønskede to af forslagene yderlig\nkvalificeret. Disse to forslag blev i august 2025 drøftet, og udvalget besluttede, at der skulle\narbejdes videre med en styrket demensindsats. Da udvalget ønskede et særligt fokus på de\npårørende, igangsatte forvaltningen en undersøgelse blandt pårørende til borgere med\ndemenssygdom. Resultaterne blev præsenteret for det nye Ældre- og Sundhedsudvalg i januar\n2026, og efterfølgende blev de konkrete indsatser godkendt i marts 2026.\nDe tre prioriterede indsatser er:\n1. Fysiske og kognitive træningstilbud til borgere med demenssygdom\n2. Aktivitetstilbud til borgere med mild demenssygdom\n3. Åben og fleksibel rådgivning til borgere med demenssygdom og deres pårørende\nForventningen til indsatserne er, at de samlet set forebygger udviklingen i demenssygdommen,\nså mennesket med demenssygdom kan bevare sine funktioner i længere tid. Det forebygger\n\nogså presset på de pårørende. Indsatserne forventes også at bidrage til at opbygge ressourcer\nfor de pårørende til at mestre hverdagen med demenssygdom i familien. Den samlede\ndemensindsats, som disse tre indsatser supplerer, blev forelagt Ældre- og Sundhedsudvalget\nden 9. juni 2026.\nForvaltningens evaluering af de igangsatte indsatser fremgår af afsnit om Løsninger."
+     "tekst": "I Budget 2025-2028 blev afsat 452.000 kr. i 2025 og 775.000 kr. i 2026 til en styrket\nforebyggelsesindsats. Ældre- og Sundhedsudvalget besluttede den 10. marts 2026 at prioritere\ntre konkrete indsatser på demensområdet med særlig fokus på støtte til pårørende.\nNår der først blev truffet beslutning om midlernes anvendelse relativt sent efter vedtagelsen af\nBudget 2025-2028 beror det på, at processen frem til den endelige beslutning har omfattet flere\nprocestrin. Først blev gennemført en fælles temadrøftelse for Forebyggelses- og\nSocialudvalget, Ældre- og Omsorgsudvalget samt Seniorrådet i starten af 2025. Disse\ndrøftelser indgik i forvaltningens oplæg med fire forskellige forslag, der blev drøftet i\nForebyggelses- og Socialudvalget i juni 2025. Udvalget ønskede to af forslagene yderlig\nkvalificeret. Disse to forslag blev i august 2025 drøftet, og udvalget besluttede, at der skulle\narbejdes videre med en styrket demensindsats. Da udvalget ønskede et særligt fokus på de\npårørende, igangsatte forvaltningen en undersøgelse blandt pårørende til borgere med\ndemenssygdom. Resultaterne blev præsenteret for det nye Ældre- og Sundhedsudvalg i januar\n2026, og efterfølgende blev de konkrete indsatser godkendt i marts 2026.\nDe tre prioriterede indsatser er:\n1. Fysiske og kognitive træningstilbud til borgere med demenssygdom\n2. Aktivitetstilbud til borgere med mild demenssygdom\n\n3. Åben og fleksibel rådgivning til borgere med demenssygdom og deres pårørende\nForventningen til indsatserne er, at de samlet set forebygger udviklingen i demenssygdommen,\nså mennesket med demenssygdom kan bevare sine funktioner i længere tid. Det forebygger\nogså presset på de pårørende. Indsatserne forventes også at bidrage til at opbygge ressourcer\nfor de pårørende til at mestre hverdagen med demenssygdom i familien. Den samlede\ndemensindsats, som disse tre indsatser supplerer, blev forelagt Ældre- og Sundhedsudvalget\nden 9. juni 2026.\nForvaltningens evaluering af de igangsatte indsatser fremgår af afsnit om Løsninger."
     },
     {
      "titel": "Løsninger",
-     "tekst": "1. Fysiske og kognitive træningstilbud til borgere med demenssygdom\n\nIndsatsen har til formål at understøtte borgerne med demens i at bevare deres funktionsevne,\nselvstændighed og livskvalitet længst muligt gennem målrettede fysiske og kognitive\ntræningstilbud. Der er etableret to tilbud, Hjerneboost og Hjernesporet, som henholdsvis\nfokuserer på fysisk træning og kognitiv stimulation. Begge tilbud er oprettet på baggrund af\nevidensbaseret viden og foregår på Trænings- og Rehabiliteringscentret.\nEvalueringerne blandt deltagere og pårørende viser høj tilfredshed med tilbuddet. Deltagerne\noplever øget energi, bedre trivsel og værdi ved at indgå i et fællesskab med andre i samme\nsituation. De pårørende vurderer tilbuddene som relevante og meningsfulde og bekræfter, at\nderes nære har fået mere energi og er i bedre humør. Resultater peger samtidig på, at\ntilbuddene ikke alene understøtter fysiske og kognitive funktioner, men også bidrager positivt til\nsocialt samvær og livskvalitet. Evalueringen peger også på, at målgruppen har stor gavn af\nmuligheden for transport til aktiviteterne, og de pårørende oplever, at transportmuligheden\naflaster dem.\nEvalueringen er foretaget med spørgeskema til seks deltagere på holdene, mens tre pårørende\ner blevet interviewet.\nSamlet vurderes indsatsen at have opfyldt sit formål og udgør et værdifuldt supplement til\nkommunens øvrige tilbud. Videreførelse forudsætter finansiering af terapeutfunktioner og\nkørselsudgifter.\n2. Aktivitetstilbud til borgere med mild demenssygdom - Tirsdagsklubben\n\nIndsatsen har til formål at udvikle aktivitetstilbud målrettet borgere med mild til moderat\ndemenssygdom, som ofte ikke oplever det eksisterende tilbud i Samværsgruppen (dagtilbud\nfor borgere med hukommelsesproblemer, eller en demensdiagnose) som relevante. På\nbaggrund af arbejdet med målgruppeafklaring, visitering og tilrettelæggelse, er\nTirsdagsklubben etableret pr. 1. september 2026. Tirsdagsklubben holder til på Bauneporten,\nsammen med Aktivitetscentret. Kort efter opstart er alle syv pladser besat, hvilket indikerer, at\ntilbuddet imødekommer behovet blandt målgruppen. Aktiviteterne i Tirsdagsklubben\nfastlægges i samarbejde med deltagerne, og kan eksempelvis indeholde samtale, spil, gåture\neller andet som deltagerne er interesseret i.\nDa tilbuddet fortsat er i en tidlig opstartsperiode, foreligger der endnu ikke et tilstrækkeligt\ngrundlag for evaluering af deltagernes og de pårørendes oplevede udbytte. De foreløbige\nerfaringer peger på behov for fortsat fokus på rekruttering og udvikling af tilbuddet, så tilbuddet\n\ni højere grad henvender sig til de borgere, det er tiltænkt. Der gennemføres en nærmere\nevaluering, når Tirsdagsklubben har været i drift i længere tid.\n3. Åben og fleksibel rådgivning til borgere med demenssygdom og deres pårørende\n\nIndsatsen har til formål at forbedre støtte til borgere med demens og deres pårørende gennem\ntidligere rådgivning, øget adgang til viden og en mere fleksibel og behovsorienteret indsats.\nDer er gennemført en række initiativer, herunder udvidet telefontid i Demensteamet, afprøvning\naf åben rådgivning på biblioteket, øget fleksibilitet i kursustilbud til pårørende, udvikling af\ndigitale læringsmuligheder samt forbedret information på kommunens hjemmeside.\nErfaringer viser, at særligt den åbne rådgivning har bidraget til at skabe kontakt til borgere og\npårørende, som ikke tidligere havde benyttet kommunens demensfaglige tilbud, og dermed\nunderstøttet tidligere opsporing og vejledning. Samtidig er der skabt et bedre grundlag for at\nmålrette tilbud efter borgere og pårørendes individuelle behov samt løbende kvalitetsudvikling\ngennem systematisk dataregistrering.\nSamlet vurderes rådgivningsindsatsen at have styrket tilgængeligheden til rådgivning og støtte\nsamt understøttet udviklingen af en mere sammenhængende, fleksibel og behovsorienteret\ndemensindsats. Flere initiativer er fortsat under implementering, men de foreløbige erfaringer\ner positive og taler for en videreførelse af indsatsen.\nDen samlede evaluering for alle 3 indsatser er bilagt (bilag 1).\nSamlet vurdering\n\nEvalueringen viser, at midlerne til den styrkede demensindsats har bidraget til at udvikle og\nafprøve indsatser, som samlet understøtter en mere sammenhængende, tilgængelig og\nbehovsorienteret støtte til borgere med demenssygdom og deres pårørende. Særligt træningsog rådgivningsindsatserne har vist positive resultater, mens aktivitetstilbuddet fortsat er under\nudvikling. På baggrund af de opnåede erfaringer, samt at indsatser først blev besluttet i foråret\n2026, anbefaler forvaltningen, at indsatserne videreføres og videreudvikles med henblik på at\nfastholde og styrke støtten til borgere med demenssygdom og deres pårørende."
+     "tekst": "1. Fysiske og kognitive træningstilbud til borgere med demenssygdom\n\nIndsatsen har til formål at understøtte borgerne med demens i at bevare deres funktionsevne,\nselvstændighed og livskvalitet længst muligt gennem målrettede fysiske og kognitive\ntræningstilbud. Der er etableret to tilbud, Hjerneboost og Hjernesporet, som henholdsvis\nfokuserer på fysisk træning og kognitiv stimulation. Begge tilbud er oprettet på baggrund af\nevidensbaseret viden og foregår på Trænings- og Rehabiliteringscentret.\nEvalueringerne blandt deltagere og pårørende viser høj tilfredshed med tilbuddet. Deltagerne\noplever øget energi, bedre trivsel og værdi ved at indgå i et fællesskab med andre i samme\nsituation. De pårørende vurderer tilbuddene som relevante og meningsfulde og bekræfter, at\nderes nære har fået mere energi og er i bedre humør. Resultater peger samtidig på, at\ntilbuddene ikke alene understøtter fysiske og kognitive funktioner, men også bidrager positivt til\nsocialt samvær og livskvalitet. Evalueringen peger også på, at målgruppen har stor gavn af\nmuligheden for transport til aktiviteterne, og de pårørende oplever, at transportmuligheden\naflaster dem.\nEvalueringen er foretaget med spørgeskema til seks deltagere på holdene, mens tre pårørende\ner blevet interviewet.\nSamlet vurderes indsatsen at have opfyldt sit formål og udgør et værdifuldt supplement til\nkommunens øvrige tilbud. Videreførelse forudsætter finansiering af terapeutfunktioner og\nkørselsudgifter.\n2. Aktivitetstilbud til borgere med mild demenssygdom - Tirsdagsklubben\n\nIndsatsen har til formål at udvikle aktivitetstilbud målrettet borgere med mild til moderat\ndemenssygdom, som ofte ikke oplever det eksisterende tilbud i Samværsgruppen (dagtilbud\nfor borgere med hukommelsesproblemer, eller en demensdiagnose) som relevante. På\nbaggrund af arbejdet med målgruppeafklaring, visitering og tilrettelæggelse, er\nTirsdagsklubben etableret pr. 1. september 2026. Tirsdagsklubben holder til på Bauneporten,\nsammen med Aktivitetscentret. Kort efter opstart er alle syv pladser besat, hvilket indikerer, at\ntilbuddet imødekommer behovet blandt målgruppen. Aktiviteterne i Tirsdagsklubben\nfastlægges i samarbejde med deltagerne, og kan eksempelvis indeholde samtale, spil, gåture\n\neller andet som deltagerne er interesseret i.\nDa tilbuddet fortsat er i en tidlig opstartsperiode, foreligger der endnu ikke et tilstrækkeligt\ngrundlag for evaluering af deltagernes og de pårørendes oplevede udbytte. De foreløbige\nerfaringer peger på behov for fortsat fokus på rekruttering og udvikling af tilbuddet, så tilbuddet\ni højere grad henvender sig til de borgere, det er tiltænkt. Der gennemføres en nærmere\nevaluering, når Tirsdagsklubben har været i drift i længere tid.\n3. Åben og fleksibel rådgivning til borgere med demenssygdom og deres pårørende\n\nIndsatsen har til formål at forbedre støtte til borgere med demens og deres pårørende gennem\ntidligere rådgivning, øget adgang til viden og en mere fleksibel og behovsorienteret indsats.\nDer er gennemført en række initiativer, herunder udvidet telefontid i Demensteamet, afprøvning\naf åben rådgivning på biblioteket, øget fleksibilitet i kursustilbud til pårørende, udvikling af\ndigitale læringsmuligheder samt forbedret information på kommunens hjemmeside.\nErfaringer viser, at særligt den åbne rådgivning har bidraget til at skabe kontakt til borgere og\npårørende, som ikke tidligere havde benyttet kommunens demensfaglige tilbud, og dermed\nunderstøttet tidligere opsporing og vejledning. Samtidig er der skabt et bedre grundlag for at\nmålrette tilbud efter borgere og pårørendes individuelle behov samt løbende kvalitetsudvikling\ngennem systematisk dataregistrering.\nSamlet vurderes rådgivningsindsatsen at have styrket tilgængeligheden til rådgivning og støtte\nsamt understøttet udviklingen af en mere sammenhængende, fleksibel og behovsorienteret\ndemensindsats. Flere initiativer er fortsat under implementering, men de foreløbige erfaringer\ner positive og taler for en videreførelse af indsatsen.\nDen samlede evaluering for alle 3 indsatser er bilagt (bilag 1).\nSamlet vurdering\n\nEvalueringen viser, at midlerne til den styrkede demensindsats har bidraget til at udvikle og\nafprøve indsatser, som samlet understøtter en mere sammenhængende, tilgængelig og\nbehovsorienteret støtte til borgere med demenssygdom og deres pårørende. Særligt træningsog rådgivningsindsatserne har vist positive resultater, mens aktivitetstilbuddet fortsat er under\nudvikling. På baggrund af de opnåede erfaringer, samt at indsatser først blev besluttet i foråret\n2026, anbefaler forvaltningen, at indsatserne videreføres og videreudvikles med henblik på at\nfastholde og styrke støtten til borgere med demenssygdom og deres pårørende."
     },
     {
      "titel": "Strategisk ramme",
@@ -18192,7 +18237,7 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Tabel 1. Budget og forbrug for den styrkede demensindsats i 2025 og 2026\n\nBudget\n\nForbrug\n\nMindreforbrug 452.000\n\nNote: Budgettet for 2026 er inkl overførslen fra 2025, på de 452.000 kr. Forbruget for 2026 er det forventede\nforbrug.\n\nMidlerne blev afsat som budgetaftalemidler i 2025-2028, men beslutningen om prioritering af\nindsatserne blev først truffet den 10. marts 2026. Det medførte, at midlerne ikke blev anvendt i\n2025 og kun delvist brugt i 2026.\nMindreforbruget i 2026 forventes at udgøre 735.000 kr., da midlerne ikke forventes anvendt\nfuldt ud inden årets udgang. En fortsættelse af fysisk og kognitiv træning, kørsel til forløbene\nsamt kommende digitale læringsforløb forudsætter finansiering efter 2026. Budgetaftalemidler\nbliver som udgangspunkt overført særskilt i budgetperioden. Det endelige beløb opgøres ved\nregnskabsafslutningen og håndteres i regnskabssagen for 2026.\nDe øvrige indsatser forventes at kunne videreføres inden for den eksisterende økonomi, når de\ner etableret.\nSagen har ingen bevillingsmæssige konsekvenser."
+     "tekst": "Tabel 1. Budget og forbrug for den styrkede demensindsats i 2025 og 2026\nBudget\n\nForbrug\n\nMindreforbrug 452.000\n\nNote: Budgettet for 2026 er inkl overførslen fra 2025, på de 452.000 kr. Forbruget for 2026 er det forventede\nforbrug.\n\nMidlerne blev afsat som budgetaftalemidler i 2025-2028, men beslutningen om prioritering af\nindsatserne blev først truffet den 10. marts 2026. Det medførte, at midlerne ikke blev anvendt i\n2025 og kun delvist brugt i 2026.\nMindreforbruget i 2026 forventes at udgøre 735.000 kr., da midlerne ikke forventes anvendt\nfuldt ud inden årets udgang. En fortsættelse af fysisk og kognitiv træning, kørsel til forløbene\nsamt kommende digitale læringsforløb forudsætter finansiering efter 2026. Budgetaftalemidler\nbliver som udgangspunkt overført særskilt i budgetperioden. Det endelige beløb opgøres ved\nregnskabsafslutningen og håndteres i regnskabssagen for 2026.\nDe øvrige indsatser forventes at kunne videreføres inden for den eksisterende økonomi, når de\ner etableret.\nSagen har ingen bevillingsmæssige konsekvenser."
     },
     {
      "titel": "Videre proces",
@@ -18206,10 +18251,10 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Tilgængelighedsforum (Beslutning) (Genforelæggelse)",
    "afsnit": [
     {
@@ -18229,12 +18274,16 @@
      "tekst": "Forvaltningen vil indkalde til et opstart- og konstitueringsmøde mhp. at tale form og indhold og\nvælge formandskab blandt forummets medlemmer.\nForvaltningen vil også, i samarbejde med formandskabet, planlægge en evaluering af\nforummet når Tilgængelighedsforum har kørt et år.\nEventuelle høringssvar til den nye model fra rådene vil blive eftersendt.\n\nBesluttes det at forankre tilgængelighedsforum i Handicaprådet, går forvaltningen i dialog med\nHandicaprådet og Seniorrådet om en gangbar model for rådgivning om tilgængelighedshensyn\ni fremtiden. Hvis det besluttes at fastholde beslutningen om at nedsætte et\nTilgængelighedsforum, udarbejder forvaltningen et oplæg til budgetforhandlingerne i\nseptember 2026.\nSåfremt der ikke nedsættes et Tilgængelighedsforum, vil Handleplanen for tilgængelighed\n(bilag 1) skulle revideres."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Anbefalet.\nNiels Haxthausen (F) var fraværende under punktet."
+    },
+    {
      "titel": "Problemstilling",
-     "tekst": "På baggrund af Kommunalbestyrelsens beslutning af 11. december 2025, har forvaltningen\nnærmere undersøgt ”Gentoftemodellen” og koordineret internt ift. understøttelse af modellen,\nsom i Gentofte består af:\nEt forum, der mødes seks gange årligt (heraf to ekskursioner) og består af:\nTo medlemmer af Handicaprådet,\nTo medlemmer af Seniorrådet,\nFire medlemmer fra det tekniske område (forvaltningen).\nEn handleplan for tilgængelighed med et tilknyttet budget på 2,9 mio. kr., hvilket svarer til\n2,2. mio. kr. for Lyngby-Taarbæk Kommune (beregnet på indbyggertal).\nPuljen skal anvendes til supplerende tiltag og ikke medfinansiering af obligatoriske tiltag i\nanlægssager eller til drift og vedligehold.\nForummet disponerer over puljemidlerne og behandler indkomne forslag og sætter selv\nprojekter i gang.\nForummet rådgiver forvaltningen om tilgængelighedshensyn.\nI forvaltningens sagsoplysningsproces er det således blevet klart, at det er forbundet med et\nvæsentligt større ressourceforbrug end først antaget.\nForud for indeværende sag, har forvaltningen ikke estimeret det eksakte ressourcetræk, men\nda opgaven består i at understøtte møder hver anden måned, budgetstyring- og opfølgning\nsamt forvaltning af små og større indsatser iværksat for puljemidlerne, forventes det, at det vil\nvære forbundet med et markant ressourceforbrug. Såfremt det bliver besluttet at nedsætte et\nselvstændigt forum, vil forvaltningen komme med et konkret estimat."
+     "tekst": "På baggrund af Kommunalbestyrelsens beslutning af 11. december 2025, har forvaltningen\nnærmere undersøgt ”Gentoftemodellen” og koordineret internt ift. understøttelse af modellen,\nsom i Gentofte består af:\nEt forum, der mødes seks gange årligt (heraf to ekskursioner) og består af:\nTo medlemmer af Handicaprådet,\nTo medlemmer af Seniorrådet,\nFire medlemmer fra det tekniske område (forvaltningen).\nEn handleplan for tilgængelighed med et tilknyttet budget på 2,9 mio. kr., hvilket svarer til\n2,2. mio. kr. for Lyngby-Taarbæk Kommune (beregnet på indbyggertal).\nPuljen skal anvendes til supplerende tiltag og ikke medfinansiering af obligatoriske tiltag i\nanlægssager eller til drift og vedligehold.\nForummet disponerer over puljemidlerne og behandler indkomne forslag og sætter selv\nprojekter i gang.\nForummet rådgiver forvaltningen om tilgængelighedshensyn.\nI forvaltningens sagsoplysningsproces er det således blevet klart, at det er forbundet med et\nvæsentligt større ressourceforbrug end først antaget.\nForud for indeværende sag, har forvaltningen ikke estimeret det eksakte ressourcetræk, men\nda opgaven består i at understøtte møder hver anden måned, budgetstyring- og opfølgning\nsamt forvaltning af små og større indsatser iværksat for puljemidlerne, forventes det, at det vil\nvære forbundet med et markant ressourceforbrug. Såfremt det bliver besluttet at nedsætte et\n\nselvstændigt forum, vil forvaltningen komme med et konkret estimat."
     },
     {
      "titel": "Løsninger",
-     "tekst": "Tilgængelighedsforum som del af Handicaprådet\n\nForvaltningen foreslår i stedet for et selvstændigt Tilgængelighedsforum, at den løbende\nrådgivning på tilgængelighedsområdet placeres hos Handicaprådet, dette suppleret af\nSeniorrådet, gennem høringssvar.\nHertil foreslås det, at forvaltningen i samarbejde med repræsentanter fra Handicaprådet og\nSeniorrådet forbereder et årligt temamøde, hvor forvaltningens afdelinger for Trafik- og\nMobilitet, Arkitektur og Byggeri samt Digitalisering, Infrastruktur og Anlæg deltager. På disse\ntemamøder skal fokus blandt andet være at drøfte og kortlægge konkrete\ntilgængelighedsudfordringer i kommunen, herunder opfølgning på handleplanen for\nTilgængelighed.\nDerudover kan forvaltningen på disse temamøder præsentere Handicap- og Seniorrådet for\nkonkrete projekter med særlige problemstillinger vedrørende tilgængelighedsforhold i anlægsog trafikprojekt, hvor der eksempelvis er behov for dispensation eller lignende.\nDisse retningslinjer for hvordan tilgængelighed tænkes ind i kommunens bygge- og\nanlægsprojekter, vil forvaltningen udarbejde i regi af temamøderne. Retningslinjerne vil tage\nudgangspunkt i statens anbefalinger og gældende best practice på området med henblik på at\nsikre en ensartet og systematisk tilgang til tilgængelighed i kommunens projekter.\nDenne model indebærer også et øget ressourcetræk fra forvaltningen. Dog forventes det\nmindre end et selvstændigt Tilgængelighedsforum.\nNedsættelse af et Tilgængelighedsforum\nØnskes det fortsat at nedsætte et særskilt tilgængelighedsforum, vil det kunne bestå af\nmedarbejdere fra Trafik og Mobilitet, Arkitektur og Byggeri samt Digitalisering, Infrastruktur og\nAnlæg, medlemmer af Handicaprådet og Seniorrådet samt to medlemmer udpeget af\nKommunalbestyrelsen.\nForummets opgave vil være at drøfte tilgængelighedsudfordringer i Lyngby-Taarbæk\nKommune, herunder følge op på handleplanen samt at kommentere på og komme med\nanbefalinger til kommunens løbende projekter inden for byggeri, rekreative områder og veje.\nForummet vil dermed kunne bidrage til en tidlig og løbende inddragelse i konkrete projekter,\nmens Handicaprådet fortsat vil varetage den lovpligtige høringsrolle i de sager, hvor dette\nfølger af lovgivningen. I givet fald denne løsning vælges, vil forvaltningen foreslå, at forrummet\ni første omgang tænkes at afholde et til to årlige temamøde(r).\nHvis der etableres en særskilt tilgængelighedspulje, kan tilgængelighedsforummet ligeledes\nrådgive Økonomiudvalget om anvendelsen af puljemidlerne.\nForvaltningen vurderer imidlertid, at spørgsmålet om en eventuel pulje bør afvente, da der på\nnuværende tidspunkt ikke kan peges på finansiering. Dertil bemærket, at det administrative\nressourceforbrug til sekretariatsbetjening, koordinering, mødeforberedelse, opfølgning på\nanbefalinger samt administration af puljen heller ikke foreligger. En tilsvarende model i LyngbyTaarbæk Kommune vil derfor ligeledes kræve, at der afsættes yderligere administrative\nressourcer af til disse opgaver."
+     "tekst": "Tilgængelighedsforum som del af Handicaprådet\nForvaltningen foreslår i stedet for et selvstændigt Tilgængelighedsforum, at den løbende\nrådgivning på tilgængelighedsområdet placeres hos Handicaprådet, dette suppleret af\nSeniorrådet, gennem høringssvar.\nHertil foreslås det, at forvaltningen i samarbejde med repræsentanter fra Handicaprådet og\nSeniorrådet forbereder et årligt temamøde, hvor forvaltningens afdelinger for Trafik- og\nMobilitet, Arkitektur og Byggeri samt Digitalisering, Infrastruktur og Anlæg deltager. På disse\ntemamøder skal fokus blandt andet være at drøfte og kortlægge konkrete\ntilgængelighedsudfordringer i kommunen, herunder opfølgning på handleplanen for\nTilgængelighed.\nDerudover kan forvaltningen på disse temamøder præsentere Handicap- og Seniorrådet for\nkonkrete projekter med særlige problemstillinger vedrørende tilgængelighedsforhold i anlægsog trafikprojekt, hvor der eksempelvis er behov for dispensation eller lignende.\nDisse retningslinjer for hvordan tilgængelighed tænkes ind i kommunens bygge- og\nanlægsprojekter, vil forvaltningen udarbejde i regi af temamøderne. Retningslinjerne vil tage\nudgangspunkt i statens anbefalinger og gældende best practice på området med henblik på at\nsikre en ensartet og systematisk tilgang til tilgængelighed i kommunens projekter.\nDenne model indebærer også et øget ressourcetræk fra forvaltningen. Dog forventes det\nmindre end et selvstændigt Tilgængelighedsforum.\nNedsættelse af et Tilgængelighedsforum\nØnskes det fortsat at nedsætte et særskilt tilgængelighedsforum, vil det kunne bestå af\nmedarbejdere fra Trafik og Mobilitet, Arkitektur og Byggeri samt Digitalisering, Infrastruktur og\nAnlæg, medlemmer af Handicaprådet og Seniorrådet samt to medlemmer udpeget af\nKommunalbestyrelsen.\nForummets opgave vil være at drøfte tilgængelighedsudfordringer i Lyngby-Taarbæk\nKommune, herunder følge op på handleplanen samt at kommentere på og komme med\nanbefalinger til kommunens løbende projekter inden for byggeri, rekreative områder og veje.\nForummet vil dermed kunne bidrage til en tidlig og løbende inddragelse i konkrete projekter,\nmens Handicaprådet fortsat vil varetage den lovpligtige høringsrolle i de sager, hvor dette\nfølger af lovgivningen. I givet fald denne løsning vælges, vil forvaltningen foreslå, at forrummet\ni første omgang tænkes at afholde et til to årlige temamøde(r).\nHvis der etableres en særskilt tilgængelighedspulje, kan tilgængelighedsforummet ligeledes\nrådgive Økonomiudvalget om anvendelsen af puljemidlerne.\nForvaltningen vurderer imidlertid, at spørgsmålet om en eventuel pulje bør afvente, da der på\nnuværende tidspunkt ikke kan peges på finansiering. Dertil bemærket, at det administrative\n\nressourceforbrug til sekretariatsbetjening, koordinering, mødeforberedelse, opfølgning på\nanbefalinger samt administration af puljen heller ikke foreligger. En tilsvarende model i LyngbyTaarbæk Kommune vil derfor ligeledes kræve, at der afsættes yderligere administrative\nressourcer af til disse opgaver."
     },
     {
      "titel": "Strategisk ramme",
@@ -18252,10 +18301,10 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Fordeling af økonomi til Sundhedsråd Københavns Omegn Nord (Orientering)",
    "afsnit": [
     {
@@ -18271,12 +18320,16 @@
      "tekst": "Ældre- og Sundhedsudvalget orienteres."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet.\nNiels Haxthausen (F) var fraværende under punktet."
+    },
+    {
      "titel": "Problemstilling",
      "tekst": "Den 3. september 2026 er der indgået politisk aftale i det Forberedende Regionsråd Østdanmark\nvedrørende budgettet for 2027-2030. Forvaltningen orienterer om den del af budgettet, der\nomhandler fordeling af økonomi mellem sundhedsrådene til at varetage de nye opgaver, der flyttes\nfra kommuner til regioner den 1. januar 2027 som følge af sundhedsreformen. Opgaverne er de\nmidlertidige pladser, patientrettet forebyggelse, akutsygepleje samt den specialiserede\nrehabilitering.\nDet Forberedende Regionsråd fastsatte i januar 2026 en grundbevilling for 2027 til de enkelte\nsundhedsråd til at løse de kommende opgaver. Grundbevillingen tager udgangspunkt i de indtægtsog udgiftsniveauer, som kommunerne indberettede og blev fastsat for at sikre en stabil drift for\nborgere og personale i overgangen fra 1. januar 2027.\nDe midler, der er fordelt, er henholdsvis midlerne til kvalitetsløft, som blev givet som en del af\nAftalen om Sundhedsreformen 2024 inkl. DUT-midler (Det Udvidede Totalbalanceprincip) samt\nmidler fra økonomiaftalen 2026, der blev givet til regionerne til at understøtte de nye opgaver.\nDet har været en præmis i budgetforhandlingerne, at de enkelte sundhedsråd som minimum skulle\nhave den fastsatte grundbevilling i hele budgetperioden."
     },
     {
      "titel": "Løsninger",
-     "tekst": "For Sundhedsråd Københavns Omegn Nord, som Lyngby-Taarbæk Kommune er en del af, er\ngrundbevillingen 420 mio. kr. Af nedenstående tabel fremgår fordelingen mellem de seks\nsundhedsråd i den kommende Region Østdanmark i perioden 2027-2030. Niveauet for\ngrundbevillingen fremgår af første kolonne. For Sundhedsråd Københavns Omegn Nord betyder\ndet, at der med denne budgetaftale ikke tildeles yderligere midler til driften af de nye opgaver.\n\nBeløb\nGrundbevilling\nFordeling af\nårige\n(mio. (mio. (mio. (mio. fordeling i\n(mio. kr.)\nsygdomstyngden i 2030\nkr.)\nkr.)\nkr.)\nkr.)\n(faktiske\nkr.)\nMidt- og\nVestsjælland\n\nØstsjælland\nog Øerne\n\nNordsjælland\n\nKøbenhavns\nOmegn Nord\n\nAmager og\nVestegnen\n\nHovedstaden\n\nRegion\nØstdanmark\ni alt\n\nDer er tilbageholdt 15 mio. kr. til den specialiserede rehabilitering, som ikke er uddelt. Det er fordi,\nder arbejdes hen imod en fælles løsning i hele Region Østdanmark til at varetage fx rehabilitering af\npatienter med komplekse følger af erhvervet hjerneskade. I Lyngby-Taarbæk Kommune bliver\nrehabilitering af denne patientgruppe varetaget på private døgnrehabiliteringstilbud, som fx\nVejlefjord.\nDer er også tilbageholdt lidt under 100 mio. kr., som skal finansiere de centrale opgaver i Region\nØstdanmark, der følger med opgaveflyttet. Det er blandt andet øgede udgifter til IT, ejendomsdrift\nsamt logistik og transport mellem flere matrikler.\nDet er blevet besluttet, at midlerne fra økonomiaftalen 2026 udelukkende skal tildeles\nSundhedsrådene Midt- og Vestsjælland samt Østsjælland og øerne. Hvert af disse to sundhedsråd\nfår et varigt løft af deres bevilling på 75 mio. kr.\nMidlerne, der er givet til kvalitetsløft i Aftalen om sundhedsreformen 2024, er på baggrund af de\npolitiske forhandlinger blevet fordelt ud fra et princip om, at grundbevillingen skal matche\nsygdomstyngden. Sygdomstyngden angiver områdets relative andel af det samlede behov for\nsundhedsindsatser. Samtidig er det også et princip, at alle sundhedsråd skal have en bevilling, der\nudgør mindst 4.000 kr. pr. borger over 65 år.\nFor Københavns Omegn Nord udgør de tildelte midler 16 % af det samlede beløb for alle seks\nsundhedsråd, mens områdets andel af den samlede sygdomstyngde udgør 13 %. Det vil sige, at\nselvom Sundhedsråd Københavns Omegn Nord ikke er tilført flere midler, ligger procenten af tildelte\nmidler noget højere end sygdomsprocenten. Da det indledende princip om, at bevillingen til og med\n\n2030 skal matche kommunernes indberettede økonomiske niveau, er bevillingen ikke blevet\nnedjusteret i budgetforhandlingerne.\nBevillingen skal konkret dække regionens nye opgaver vedrørende sundheds- og omsorgspladser,\nakutsygeplejen samt patientrettet forebyggelse, så disse lever op til de faglige minimumskrav, som\ner beskrevet i kvalitetsstandarderne. Derudover skal midlerne også dække følgende nye lovbundne\ntiltag på sundheds- og omsorgspladser:\nAfskaffelse af brugerbetaling\nVederlagsfri medicin\nKørsel fra hospital til plads\nFrit valg af plads.\nLægedækning\nDerudover kommer der nationale kronikerpakker (patientrettet forebyggelse) samt etablering af\nudegående hjemmebehandlingsteams fra hospitalet, som også skal finansieres inden for samme\nbevilling.\nBudgetaftalen indebærer, at sundhedsrådet som udgangspunkt fastholder sin grundbevilling,\nsamtidig med at der skal løses nye lovbundne opgaver inden for den samlede økonomi. Der kan\nderfor blive behov for at flytte ressourcer imellem de overflyttede opgaver og tilpasse kapaciteten til\nden økonomi, der er til rådighed.\nPå møde i Sundhedsråd Københavns Omegn Nord den 25. september 2026 blev det på baggrund\naf ovenstående drøftet, at budgetaftalen umiddelbart ligner en bevarelse af det nuværende\nbevillingsniveau, men realiteten er, at der skal varetages en række nye opgaver for samme bevilling\nmed mindre, at Sundhedsrådet beslutter at omfordele midler fra hospitalets drift til de nye opgaver.\nSundhedsrådet har derfor bedt om en nærmere orientering om de lokale konsekvenser af\nbudgetaftalens økonomi for Københavns Omegn Nord."
+     "tekst": "For Sundhedsråd Københavns Omegn Nord, som Lyngby-Taarbæk Kommune er en del af, er\ngrundbevillingen 420 mio. kr. Af nedenstående tabel fremgår fordelingen mellem de seks\nsundhedsråd i den kommende Region Østdanmark i perioden 2027-2030. Niveauet for\ngrundbevillingen fremgår af første kolonne. For Sundhedsråd Københavns Omegn Nord betyder\n\ndet, at der med denne budgetaftale ikke tildeles yderligere midler til driften af de nye opgaver.\n\nBeløb\nGrundbevilling\nFordeling af\nårige\n(mio. (mio. (mio. (mio. fordeling i\n(mio. kr.)\nsygdomstyngden i 2030\nkr.)\nkr.)\nkr.)\nkr.)\n(faktiske\nkr.)\nMidt- og\nVestsjælland\n\nØstsjælland\nog Øerne\n\nNordsjælland\n\nKøbenhavns\nOmegn Nord\n\nAmager og\nVestegnen\n\nHovedstaden\n\nRegion\nØstdanmark\ni alt\n\nDer er tilbageholdt 15 mio. kr. til den specialiserede rehabilitering, som ikke er uddelt. Det er fordi,\nder arbejdes hen imod en fælles løsning i hele Region Østdanmark til at varetage fx rehabilitering af\npatienter med komplekse følger af erhvervet hjerneskade. I Lyngby-Taarbæk Kommune bliver\nrehabilitering af denne patientgruppe varetaget på private døgnrehabiliteringstilbud, som fx\nVejlefjord.\nDer er også tilbageholdt lidt under 100 mio. kr., som skal finansiere de centrale opgaver i Region\nØstdanmark, der følger med opgaveflyttet. Det er blandt andet øgede udgifter til IT, ejendomsdrift\nsamt logistik og transport mellem flere matrikler.\nDet er blevet besluttet, at midlerne fra økonomiaftalen 2026 udelukkende skal tildeles\nSundhedsrådene Midt- og Vestsjælland samt Østsjælland og øerne. Hvert af disse to sundhedsråd\nfår et varigt løft af deres bevilling på 75 mio. kr.\nMidlerne, der er givet til kvalitetsløft i Aftalen om sundhedsreformen 2024, er på baggrund af de\npolitiske forhandlinger blevet fordelt ud fra et princip om, at grundbevillingen skal matche\nsygdomstyngden. Sygdomstyngden angiver områdets relative andel af det samlede behov for\nsundhedsindsatser. Samtidig er det også et princip, at alle sundhedsråd skal have en bevilling, der\nudgør mindst 4.000 kr. pr. borger over 65 år.\nFor Københavns Omegn Nord udgør de tildelte midler 16 % af det samlede beløb for alle seks\n\nsundhedsråd, mens områdets andel af den samlede sygdomstyngde udgør 13 %. Det vil sige, at\nselvom Sundhedsråd Københavns Omegn Nord ikke er tilført flere midler, ligger procenten af tildelte\nmidler noget højere end sygdomsprocenten. Da det indledende princip om, at bevillingen til og med\n2030 skal matche kommunernes indberettede økonomiske niveau, er bevillingen ikke blevet\nnedjusteret i budgetforhandlingerne.\nBevillingen skal konkret dække regionens nye opgaver vedrørende sundheds- og omsorgspladser,\nakutsygeplejen samt patientrettet forebyggelse, så disse lever op til de faglige minimumskrav, som\ner beskrevet i kvalitetsstandarderne. Derudover skal midlerne også dække følgende nye lovbundne\ntiltag på sundheds- og omsorgspladser:\nAfskaffelse af brugerbetaling\nVederlagsfri medicin\nKørsel fra hospital til plads\nFrit valg af plads.\nLægedækning\nDerudover kommer der nationale kronikerpakker (patientrettet forebyggelse) samt etablering af\nudegående hjemmebehandlingsteams fra hospitalet, som også skal finansieres inden for samme\nbevilling.\nBudgetaftalen indebærer, at sundhedsrådet som udgangspunkt fastholder sin grundbevilling,\nsamtidig med at der skal løses nye lovbundne opgaver inden for den samlede økonomi. Der kan\nderfor blive behov for at flytte ressourcer imellem de overflyttede opgaver og tilpasse kapaciteten til\nden økonomi, der er til rådighed.\nPå møde i Sundhedsråd Københavns Omegn Nord den 25. september 2026 blev det på baggrund\naf ovenstående drøftet, at budgetaftalen umiddelbart ligner en bevarelse af det nuværende\nbevillingsniveau, men realiteten er, at der skal varetages en række nye opgaver for samme bevilling\nmed mindre, at Sundhedsrådet beslutter at omfordele midler fra hospitalets drift til de nye opgaver.\nSundhedsrådet har derfor bedt om en nærmere orientering om de lokale konsekvenser af\nbudgetaftalens økonomi for Københavns Omegn Nord."
     },
     {
      "titel": "Strategisk ramme",
@@ -18298,15 +18351,19 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "1. Referat af seneste møde i Sundhedsråd Københavns omegn Nord\n\nSundhedsrådet i Københavns Omegn Nord holdt møde den 25. september 2026. Referatet af\nmødet er bilagt (bilag 1).\n2. Information til Ældre- og Sundhedsudvalget om Ældretilsyn - ny arbejdsgang\n\nFremadrettet vil arbejdsgangen vedrørende information til Ældre- og Sundhedsudvalget om\ngennemførte ældretilsyn være sådan, at udvalget bliver informeret mundtligt om resultatet af\ntilsynet på det førstkommende møde efter tilsynet. Når tilsynsrapporterne udgives, vil de blive\nforelagt udvalget som vanligt med en sagsfremstilling og med rapporten som bilag. Efter\nudvalgsmødet vil tilsynsrapporterne blive lagt på kommunens hjemmeside. Rapporterne\nlægges ikke, som tidligere, på First Agenda. Herved spares en administrativ proces.\n3. Samarbejdsaftale om levering af mad på sundheds- og omsorgspladser\n\nRegion Østdanmark overtager pr. 1. januar driften af Lyngby-Taarbæk Kommunes 40\nmidlertidige døgnpladser på Trænings- og Rehabiliteringscentret, som fremover benævnes\nsundheds- og omsorgspladser. Pladserne får i dag leveret mad fra produktionskøkkenet på\nTrænings- og Rehabiliteringscentret (som efter 1. januar kommer til at hedde Sundhedscenter\nLyngby-Taarbæk). Køkkenet producerer også mad til cafeen på Trænings- og\nRehabiliteringscentret. Der er nu udarbejdet en samarbejdsaftale, som betyder, at pladserne\nkan få leveret mad fra køkkenet. Aftalen sikrer dermed også, at caféen på Sundhedscenter\nLyngby-Taarbæk fortsat kan fungere og tilbyde varm mad mv. Caféen benyttes dagligt af ældre\nborgere fra lokalområdet. Sagen behandles på Økonomiudvalgets møde den 12. september\n2026 og Kommunalbestyrelsens møde den 19. november 2026.\n4. Ledelsesinformation\n\nLedelsesinformationsrapporter for henholdsvis den borgerettede aktivitet og personale er\nvedhæftet (bilag). Begge rapporter indeholder data til og med september 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet.\nNiels Haxthausen (F) var fraværende under punktet."
     }
    ],
    "bilag": []
@@ -18316,15 +18373,19 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Kommende sager",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Listen over kommende sager på vej er et planlægningsredskab for kommende møder.\nFølgende sager er planlagt til de kommende møder:\nTilskud til frivilligt arbejde på ældreområdet - tildeling af §7-midler (Beslutning)\nKvalitetsstandarder under Serviceloven (Beslutning)\nTemaer i ledelsesinformationsmateriale - justering (Beslutning)\nKvalitetsudvikling i ældreplejen - status (Orientering)\nÆldretilsyn i Hjemmeplejen Brede (Orientering)\nForvaltningen bemærker, at de nævnte sager kan flytte datoer, nye kan komme til og varslede\nsager kan blive uaktuelle og udgå."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet.\nNiels Haxthausen (F) var fraværende under punktet."
     }
    ],
    "bilag": []
@@ -18334,12 +18395,17 @@
    "kommune": "Lyngby-Taarbæk",
    "udvalg": "Ældre- og Sundhedsudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=40718292-931c-4412-bd93-6d0d13e1a28b",
-   "hentet": "2026-10-29T10:55:41.709Z",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=8cda884e-5b96-4163-9a8b-7578a4881b20",
+   "hentet": "2026-11-03T14:49:48.571Z",
    "titel": "Underskrift af protokol",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nNiels Haxthausen (F) var fraværende under punktet."
+    }
+   ],
    "bilag": []
   },
   "lyngby-taarbaek-2026-11-05-social-og-beskaeftigelsesudvalget-1": {
@@ -20137,13 +20203,13 @@
    "dato": "2026-10-01",
    "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=7230f087-561e-49a8-8501-25e9a8037734",
-   "hentet": "2026-10-29T19:43:54.698Z",
-   "titel": "Svar: John Tefke (C) - Belysning på skolevej - 2026-10-27",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=ffccb308-216a-4c08-a1cf-2896cc84282d",
+   "hentet": "2026-11-03T14:50:03.619Z",
+   "titel": "Svar: Troels Bennike (I) - Uddybende spørgsmål vedr. Renserigrunden i Taarbæk - 2026-10-26",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "POLITIKERSPØRGSMÅL\nJohn Tefke (C) har 27. oktober 2026 stillet følgende spørgsmål:\n\nPå Nøjsomhedsvej er belysningen kun i den sydlige side af vejen. Nøjsomhedsvej er en\nskolevej\nDer arbejdes i øjeblikket med vandledningerne, på stykket mellem Rundkørslen og\nDanmarksvej på den sydlige side af vejen og derfor kan man ikke benytte cykelstien.\nDet betyder at alle cyklister må over i den anden side.\nLTK har oprindelig skruet lidt ned for lysstyrken at spare hensyn. På grund af lednings\narbejder har man nu også nedtaget enkelte lysmaster, hvilket gør belysningen meget tvivlsom.\nHvad kan kan forvaltningen gøre for at sikre, skolevejen forbliver med rimelig belysning\narbejde skal pågå til april måned?\n\nFORVALTNINGENS SVAR\nForvaltningen har svaret:\n\nForvaltnignen er opmærksomme på problemet, og i dialog med entreprenøren. Det er\nforvaltningens forventning, at der i uge 44 opsættes midlertidig belysning så det igen bliver\ntrygt at færdes på strækningen i de mørke perioder. I den første periode vil den midlertidige\nbelysning blive forsynet via en støjsvag generator, da der ikke umiddelbart kan skaffes adgang\ntil elnettet i den nordlige vejside. Entreprenøren arbejder i den kommende tid sammen med\nforvaltningen på at skaffe adgang til strøm, så generatoren kan fjernes.\nMÅ OFFENTLIGGØRES\nJa"
+     "tekst": "POLITIKERSPØRGSMÅL\nTroels Bennike (I) har 26. oktober stillet følgende uddybende spørgsmål:\n\nTak for forvaltningens besvarelse af vores politikerspørgsmål og for Region Hovedstadens\nbidrag til at belyse sagen. Svarene giver en god afklaring af ansvarsforholdene, men efterlader\nefter min opfattelse også nogle væsentlige spørgsmål om den fremtidige håndtering af\nforureningen.\n\nDet er særligt bekymrende, at forureningen allerede har spredt sig til naboejendomme, og at\nregionen har vurderet, at der er risiko for indeluften i to boliger.\n\nMed kommunalbestyrelsens beslutning om ikke at give dispensation til det foreslåede\nbyggeprojekt mener jeg derfor, at det er relevant at få belyst, hvilke muligheder der nu er for at\nbegrænse forureningen og forhindre yderligere spredning.\n\nJeg har derfor fire supplerende spørgsmål, som jeg håber, forvaltningen vil være behjælpelig\nmed at forelægge Region Hovedstaden, så vi får et bedre grundlag for at forstå situationen og\nmulighederne fremadrettet.\n\nSpørgsmål 1 – den fortsatte spredning\nHvordan vurderer Region Hovedstaden risikoen for fortsat spredning fra kildegrunden Taarbæk\nStrandvej 54 til omkringliggende boligejendomme, og hvilke undersøgelser eller målinger ligger\ntil grund for den aktuelle vurdering, når der ikke været lavet undersøgelser siden 2022?\n\nSpørgsmål 2 – indsatsen på kildegrunden\nNår det er dokumenteret, at forureningen har spredt sig til naboejendomme, hvoraf to er\nprioriteret i den offentlige indsats på grund af risiko for indeluften, hvad er da den miljøfaglige\nbegrundelse for, at overvågningen på selve kildegrunden er indstillet? Er der planlagt\nyderligere overvågning eller foranstaltninger, som skal begrænse spredningen ved kilden?\n\nSpørgsmål 3 – konsekvenserne af dispensationsafslaget\n\nKan forvaltningen i samarbejde med Region Hovedstaden redegøre for, hvilke miljømæssige\nmuligheder der bortfalder eller vanskeliggøres som følge af kommunalbestyrelsens afvisning af\ndispensationen, herunder mulighederne for privatfinansieret oprensning og\nafværgeforanstaltninger?\n\nSpørgsmål 4 – fremtidig håndtering\nHvilke realistiske muligheder ser forvaltningen og regionen for at reducere forureningen på\nkildegrunden, hvis ejeren ikke gennemfører et byggeprojekt, og hvilke offentlige udgifter og\ntidshorisonter vil sådanne løsninger forventeligt indebære?\n\nFORVALTNINGENS SVAR\nVedr. besvarelse:\n\nRegion Hovedstaden vil besvare disse spørgsmål direkte til politikeren.\nMÅ OFFENTLIGGØRES\nJa"
     }
    ],
    "bilag": []
@@ -21138,13 +21204,13 @@
    "dato": "2026-10-01",
    "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.ltk.dk/vis?id=7230f087-561e-49a8-8501-25e9a8037734",
-   "hentet": "2026-10-29T19:43:54.698Z",
-   "titel": "Svar: Troels Bennike (I) - Uddybende spørgsmål vedr. Renserigrunden i Taarbæk - 2026-10-26",
+   "kilde": "https://dagsordener.ltk.dk/vis?id=ffccb308-216a-4c08-a1cf-2896cc84282d",
+   "hentet": "2026-11-03T14:50:03.619Z",
+   "titel": "Spørgsmål: Simon Pihl Sørensen (S) - Indkøb uden for SKI - 2026-10-23",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "POLITIKERSPØRGSMÅL\nTroels Bennike (I) har 26. oktober stillet følgende uddybende spørgsmål:\n\nTak for forvaltningens besvarelse af vores politikerspørgsmål og for Region Hovedstadens\nbidrag til at belyse sagen. Svarene giver en god afklaring af ansvarsforholdene, men efterlader\nefter min opfattelse også nogle væsentlige spørgsmål om den fremtidige håndtering af\nforureningen.\n\nDet er særligt bekymrende, at forureningen allerede har spredt sig til naboejendomme, og at\nregionen har vurderet, at der er risiko for indeluften i to boliger.\n\nMed kommunalbestyrelsens beslutning om ikke at give dispensation til det foreslåede\nbyggeprojekt mener jeg derfor, at det er relevant at få belyst, hvilke muligheder der nu er for at\nbegrænse forureningen og forhindre yderligere spredning.\n\nJeg har derfor fire supplerende spørgsmål, som jeg håber, forvaltningen vil være behjælpelig\nmed at forelægge Region Hovedstaden, så vi får et bedre grundlag for at forstå situationen og\nmulighederne fremadrettet.\n\nSpørgsmål 1 – den fortsatte spredning\nHvordan vurderer Region Hovedstaden risikoen for fortsat spredning fra kildegrunden Taarbæk\nStrandvej 54 til omkringliggende boligejendomme, og hvilke undersøgelser eller målinger ligger\ntil grund for den aktuelle vurdering, når der ikke været lavet undersøgelser siden 2022?\n\nSpørgsmål 2 – indsatsen på kildegrunden\nNår det er dokumenteret, at forureningen har spredt sig til naboejendomme, hvoraf to er\nprioriteret i den offentlige indsats på grund af risiko for indeluften, hvad er da den miljøfaglige\nbegrundelse for, at overvågningen på selve kildegrunden er indstillet? Er der planlagt\nyderligere overvågning eller foranstaltninger, som skal begrænse spredningen ved kilden?\n\nSpørgsmål 3 – konsekvenserne af dispensationsafslaget\n\nKan forvaltningen i samarbejde med Region Hovedstaden redegøre for, hvilke miljømæssige\nmuligheder der bortfalder eller vanskeliggøres som følge af kommunalbestyrelsens afvisning af\ndispensationen, herunder mulighederne for privatfinansieret oprensning og\nafværgeforanstaltninger?\n\nSpørgsmål 4 – fremtidig håndtering\nHvilke realistiske muligheder ser forvaltningen og regionen for at reducere forureningen på\nkildegrunden, hvis ejeren ikke gennemfører et byggeprojekt, og hvilke offentlige udgifter og\ntidshorisonter vil sådanne løsninger forventeligt indebære?\n\nFORVALTNINGENS SVAR\nVedr. besvarelse:\n\nRegion Hovedstaden vil besvare disse spørgsmål direkte til politikeren.\nMÅ OFFENTLIGGØRES\nJa"
+     "tekst": "POLITIKERSPØRGSMÅL\nSimon Pihl Sørensen (S) har 23. oktober 2026 stillet følgende spørgsmål:\n\nI en lang række tilfælde er det billigere for institutioner mv at købe uden for SKI. Hvilke regler\ngælder for at indhente det mest prisbillige tilbud, og i givet fald hvor meget må der købes uden\nfor SKI-aftalerne ?"
     }
    ],
    "bilag": []
@@ -21225,12 +21291,84 @@
     }
    ],
    "bilag": []
+  },
+  "lyngby-taarbaek-2026-11-01-politikerspoergsmaal-2026-1": {
+   "id": "lyngby-taarbaek-2026-11-01-politikerspoergsmaal-2026-1",
+   "kommune": "Lyngby-Taarbæk",
+   "udvalg": "Politikerspørgsmål 2026",
+   "dato": "2026-11-01",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.ltk.dk/vis?id=1329ac8e-c6d7-43b1-a665-123cf2b3e1bd",
+   "hentet": "2026-11-03T14:49:52.827Z",
+   "titel": "Spørgsmål: Christian Bardram (C) - Varme i kunstgræsbane ved Virumgård - 2026-11-02",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "POLITIKERSPØRGSMÅL\nChristian Bardram (C) har 2. november 2026 stillet følgende spørgsmål:\n\nKan forvaltningen oplyse, hvor meget det vil koste i anlæg at etablere varme i kunstgræsbanen\n(bane 1) på Virumgårds jorder, hvis denne skal genanlægges, og hvad det vil koste i årlig drift?\n\nMÅ OFFENTLIGGØRES\nJa"
+    }
+   ],
+   "bilag": []
+  },
+  "lyngby-taarbaek-2026-11-01-politikerspoergsmaal-2026-4": {
+   "id": "lyngby-taarbaek-2026-11-01-politikerspoergsmaal-2026-4",
+   "kommune": "Lyngby-Taarbæk",
+   "udvalg": "Politikerspørgsmål 2026",
+   "dato": "2026-11-01",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.ltk.dk/vis?id=1329ac8e-c6d7-43b1-a665-123cf2b3e1bd",
+   "hentet": "2026-11-03T14:49:52.827Z",
+   "titel": "Svar - ÆSU - Indsatsen \"Sammen om trivsel\" - 2026-11-03",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "POLITIKERSPØRGSMÅL\nÆSU har 3. november 2026 stillet følgende spørgsmål:\n\nÆldre- og Sundhedsudvalget behandlede den 3. november sagen ”Opsamling\nsundhedsstrategien 2026” og efterspurgte i sammenhæng hermed at få uddybet information\nvedrørende indsats 4: Sammen om trivsel, herunder økonomi mv., forud for behandlingen af\nden samme sag i Børne- og Skoleudvalget.\nFORVALTNINGENS SVAR\nForvaltningen har svaret:\n\nUdgangspunktet for indsatsen er, at undersøgelser viser, at trivslen generelt falder, når\neleverne kommer i udskolingen. Til forebyggelse af mistrivsel, understøttelse af den enkeltes\nmestringskompetence og styrkelse af fællesskabet i klassen blev derfor besluttet at afprøve et\nklassebaseret elevforløb på én enkelt skole til vurdering af effekt og overførbarhed.\nI samarbejde med Heldagsskolen er i skoleåret 2024-2025 afprøvet det klassebaserede\nelevforløb ’Basal – sammen om trivsel’ i udskolingen. I forløbet indgår, at eleverne gennem\nøvelser, spil og dialog tilegner sig konkrete værktøjer og viden om mestring, mentalisering,\ntankemønstre, konflikthåndtering, håndtering af vanskelige følelser mm. Klassen arbejder også\nmed emner som bekymringer, relationer, pres og præstationer, følelser, søvn og andet, der\noptager dem. Konceptet ’Basal- sammen om trivsel’ er udviklet af Komiteen for\nSundhedsoplysning, der udbyder de evidensbaserede ’Lær-at-tackle’ kurser, som er kendt fra\nsundhedsområdet.\nDer blev i 2024 afsat 5.000 kr. til vikardækning i forbindelse med 2-dages kompetenceudvikling\naf medarbejdere i brug af konceptet. Kompetenceudviklingen og brug af materialer var gratis\nindtil udgangen af 2024 og varetages af Komiteen for Sundhedsoplysning.\nForvaltningen har den 3. november 2026 via telefonsamtale med Komiteen for\nSundhedsoplysning fået oplyst, at det fortsat er gratis for skolerne at deltage det første år, hvor\nman får uddannet 3 medarbejdere pr. skole til at kunne facilitere/undervise i konceptet. Hvis\nskolerne ønsker at fortsætte med at bruge konceptet efter det første skoleår, koster det 1.450\nkr. pr. skole pr. år. Dertil kommer udgifter til vikardækning.\nHvis Lyngby-Taarbæk Kommune ønsker at give alle skoler adgang, kan der indgås en aftale,\nhvor uddannelsesprisen pr. skole vil være mindre.\nEn succesfuld implementering af indsatsen forudsætter, at skolerne prioriterer at allokere\nressourcer til at få medarbejdere på kursus i ”Basal – sammen om trivsel” samt prioriterer at få\nforløbet med eleverne ind i planlægningen af skoleårets aktiviteter. Konceptet har i LyngbyTaarbæk som nævnt været afprøvet på Heldagsskolen (det specialiserede skoleområde).\nErfaringer fra dette forløb viser, at materialet vil skulle tilpasses, hvis det skal videreføres på\ndet specialiserede område, idet konceptet vurderes at være udviklet med henblik på det\n\nalmene område i udskolingen.\nDer kan læses yderlige om konceptet på www.sammenomtrivsel.dk\nDer er samlet 280.00 kr. i sundhedsfremmepuljen i 2027 (varige midler afsat til\nsundhedsstrategien). Udover de beløb, der er skrevet ind i sagen, og som skal flyttes mellem\nudvalg, resterer ca. 35.000 kr. i Sundhedscentret, som finansierer den supplerende\nseksualundervisning (indsats 8). Puljen er således fuldt ud disponeret, hvis\nKommunalbestyrelsen tiltræder forvaltningens indstilling.\nMÅ OFFENTLIGGØRES\nJa"
+    }
+   ],
+   "bilag": []
+  },
+  "lyngby-taarbaek-2026-10-01-politikerspoergsmaal-2026-7": {
+   "id": "lyngby-taarbaek-2026-10-01-politikerspoergsmaal-2026-7",
+   "kommune": "Lyngby-Taarbæk",
+   "udvalg": "Politikerspørgsmål 2026",
+   "dato": "2026-10-01",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.ltk.dk/vis?id=ffccb308-216a-4c08-a1cf-2896cc84282d",
+   "hentet": "2026-11-03T14:50:03.619Z",
+   "titel": "Svar: Christian Winther (C) - Genopretning af legepladser v. Engelsborgskolen - 2026-10-25",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "POLITIKERSPØRGSMÅL\nChristian Winther (C) har 25. oktober 2026 stillet følgende spørgsmål:\n\nI forbindelse med Budget 2027 var der indmeldt et budgetbehov til genopretning af\nlegepladserne på Fuglsanggårdsskolen og Engelsborgskolen på samlet 10 mio. kr.\nDer blev afsat penge til Fuglsanggårdsskolen i 2028. Hvad er der afsat penge til på\nEngelsborgskolen, og er der afsat penge til at kunne erstatte de tidligere skaterramper med\nnye (anslået pris: 75.000 kr)?\n\nFORVALTNINGENS SVAR\nForvaltningen har svaret:\n\nDer er ikke afsat særskilte midler i budgetforslaget til en renovering af legepladsen på\nEngelsborgskolen eller til nyt skateudstyr.\nDer er udarbejdet et ideoplæg til udbygningsplan af Engelsborgskolen. I det valgte scenarie for\nskoleprojektet er der afsat 1,5 mio. kr. til udearealer. Midlerne går til de nødvendige arbejder til\nblandt andet reetablering efter nedtagning af byggeplads samt til at efterleve lovkrav,\neksempelvis niveaufri adgang. De er således ikke afsat til en generel renovering af skolens\nlege- og udearealer.\nKlubben har fjernet det tidligere skateudstyr i oktober 2025, fordi det var blevet for farligt at\nbruge. Klubben har søgt Nordea Fonden om støtte til nyt udstyr og vil selv finansiere det\nresterende beløb. Der er således ikke afsat midler til de anslåede 75.000 kr., men klubben\narbejder videre med at finde finansiering.\nMÅ OFFENTLIGGØRES\nJa"
+    }
+   ],
+   "bilag": []
+  },
+  "lyngby-taarbaek-2026-10-01-politikerspoergsmaal-2026-11": {
+   "id": "lyngby-taarbaek-2026-10-01-politikerspoergsmaal-2026-11",
+   "kommune": "Lyngby-Taarbæk",
+   "udvalg": "Politikerspørgsmål 2026",
+   "dato": "2026-10-01",
+   "type": "referat",
+   "nr": 11,
+   "kilde": "https://dagsordener.ltk.dk/vis?id=ffccb308-216a-4c08-a1cf-2896cc84282d",
+   "hentet": "2026-11-03T14:50:03.619Z",
+   "titel": "Svar: John Tefke (C) - Belysning på skolevej - 2026-10-27",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "POLITIKERSPØRGSMÅL\nJohn Tefke (C) har 27. oktober 2026 stillet følgende spørgsmål:\n\nPå Nøjsomhedsvej er belysningen kun i den sydlige side af vejen. Nøjsomhedsvej er en\nskolevej\nDer arbejdes i øjeblikket med vandledningerne, på stykket mellem Rundkørslen og\nDanmarksvej på den sydlige side af vejen og derfor kan man ikke benytte cykelstien.\nDet betyder at alle cyklister må over i den anden side.\nLTK har oprindelig skruet lidt ned for lysstyrken at spare hensyn. På grund af lednings\narbejder har man nu også nedtaget enkelte lysmaster, hvilket gør belysningen meget tvivlsom.\nHvad kan kan forvaltningen gøre for at sikre, skolevejen forbliver med rimelig belysning\narbejde skal pågå til april måned?\n\nFORVALTNINGENS SVAR\nForvaltningen har svaret:\n\nForvaltnignen er opmærksomme på problemet, og i dialog med entreprenøren. Det er\nforvaltningens forventning, at der i uge 44 opsættes midlertidig belysning så det igen bliver\ntrygt at færdes på strækningen i de mørke perioder. I den første periode vil den midlertidige\nbelysning blive forsynet via en støjsvag generator, da der ikke umiddelbart kan skaffes adgang\ntil elnettet i den nordlige vejside. Entreprenøren arbejder i den kommende tid sammen med\nforvaltningen på at skaffe adgang til strøm, så generatoren kan fjernes.\nMÅ OFFENTLIGGØRES\nJa"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=a68c4641-3b68-4339-afed-7f8efc53ba28": {
    "senest": "2026-10-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=77d191af-c1fe-49fc-a466-e14287eb6df9": {
    "senest": "2025-09-27",
@@ -21241,20 +21379,20 @@
    "tjekket": "2026-10-13"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=3a58b75d-1bd2-4404-bc2b-19998a54be75": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=ef0d5953-5b5f-4eb5-9488-aba2a9878aed": {
    "senest": "2025-11-28",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=c958007a-587c-4ca4-9f77-34d0129feade": {
    "senest": "2025-12-08",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=554a13ff-330d-4670-af07-dd17b4221533": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=53ebf096-06d0-46d2-a67a-ba17d140a4e8": {
    "senest": "2025-09-27",
@@ -21274,15 +21412,15 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=f5a047f1-c059-48ba-aad6-667bd6314fde": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=cbc75125-25e1-415b-b303-f41ce18950b4": {
    "senest": "2025-11-27",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=ae22cc2b-6ea9-4151-a2b1-5f52b5429fd6": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=f28b8273-7d7d-4e91-a372-be3403d07b03": {
    "senest": "",
@@ -21297,12 +21435,12 @@
    "tjekket": "2026-10-13"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=ea02516b-877e-4750-9a19-5c5b31be9769": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-02"
+   "senest": "2026-11-03",
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=2a719102-ef40-41ce-9023-8ec1b97a6b40": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=c81afdd9-fbac-4ada-b4a7-af263a2612d8": {
    "senest": "2025-01-10",
@@ -21314,11 +21452,11 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=419a62b0-11fa-4eaa-b07f-190a850466d7": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=ca325c9c-936d-4583-90e0-02b4936350e5": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=e2cdc9d4-61a3-4eee-ae99-ac300975228f": {
    "senest": "2025-09-27",
@@ -21330,7 +21468,7 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=fd8548eb-5a2e-4565-8a00-d8d70458c9f4": {
    "senest": "2026-10-09",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=dcf5f26b-3b24-4d8f-9d1f-3db5938267b3": {
    "senest": "2017-12-21",
@@ -21350,11 +21488,11 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=a3e32ab7-5710-4c82-bad4-71dfff137577": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=ba91ad0b-52b9-4523-b161-05cf1cb416c3": {
    "senest": "2025-12-14",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=c50cf6b3-5471-4c85-93cf-057370afac34": {
    "senest": "2025-09-27",
@@ -21366,15 +21504,15 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=5562ee35-5f01-4ae8-9dbf-91b3f309a50f": {
    "senest": "2025-11-28",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=daa9d056-d9cc-4745-9c4f-d85ae63e503b": {
    "senest": "2026-10-08",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=603dce60-ba59-4ffc-ab5f-81309167a43c": {
    "senest": "2025-11-14",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=36735adf-b1f5-42db-9e06-1ea32892f4e0": {
    "senest": "2025-09-27",
@@ -21382,7 +21520,7 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=94105d9c-2ce7-4155-b323-50df9c80e6dc": {
    "senest": "2025-11-27",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=f2de834f-66d3-424b-9e27-ba5c143e821f": {
    "senest": "2025-09-27",
@@ -21394,15 +21532,15 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=dadbada8-0e62-4878-a02c-005b82c534ed": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=a4c45ee5-5ef5-4c82-84cd-69d1e54c3cee": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=be99d7dc-e862-40cc-b90b-47d71219bed8": {
    "senest": "2025-11-28",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=560fddbc-d9d0-49c2-844e-6b8386f39dac": {
    "senest": "2025-09-27",
@@ -21422,11 +21560,11 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=268ce297-e80b-442a-8cfa-7bc499f3bee6": {
    "senest": "2026-08-27",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=a0e0b8b7-1366-4cd4-b697-e44cee102df1": {
    "senest": "2026-08-27",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=e176b931-92d0-4a22-8c0b-506aeddd35e8": {
    "senest": "2025-08-14",
@@ -21434,7 +21572,7 @@
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=2a88b9e9-0495-4b65-a342-8b8989599212": {
    "senest": "2026-10-09",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-03"
   },
   "https://dagsordener.ltk.dk/Sitemap/ForCommittee?committeeId=ee0ec91c-7890-4483-9618-2f811822d2bf": {
    "senest": "2020-10-08",
@@ -21445,7 +21583,7 @@
    "tjekket": "2026-10-13"
   }
  },
- "opdateret": "2026-11-02T22:51:47.522Z",
+ "opdateret": "2026-11-03T14:50:03.621Z",
  "kommune": "Lyngby-Taarbæk",
  "parser": 3
 }
