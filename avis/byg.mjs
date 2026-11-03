@@ -202,13 +202,15 @@ const menuData = (rod, k) => {
   };
 };
 const cur = (on) => (on ? ' aria-current="page"' : "");
+// data-id kun i de fælles filer (rod "/"), hvor siden selv markerer sit punkt; sider med eget hoved er uændrede
+const did = (rod, id) => (rod === "/" ? ` data-id="${id}"` : "");
 // Computerens menu: alle hovedpunkter og "Mere" som rullemenu
 const menu = (rod, aktiv, k) => {
   const { hoved, mere } = menuData(rod, k);
   return `
-      ${hoved.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n      ")}
+      ${hoved.map((m) => `<a href="${m.href}"${did(rod, m.id)}${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n      ")}
       <details class="mere"><summary${cur(mere.some((m) => m.id === aktiv))}>Mere</summary><div>
-        ${mere.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n        ")}
+        ${mere.map((m) => `<a href="${m.href}"${did(rod, m.id)}${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n        ")}
       </div></details>`;
 };
 // Telefonens tab-bjælke i bunden: de fire vigtigste og "Mere" med resten, som i Min avis
@@ -234,19 +236,65 @@ const tabBjaelke = (rod, aktiv, k) => {
   const faner = ["hjem", "emner", "soeg"].map((i) => hoved.find((m) => m.ikon === i));
   const iMere = [...hoved.filter((m) => !faner.includes(m)), ...mere];
   return `<nav class="tabbar" aria-label="Sektioner">
-  ${faner.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${ikon(m.ikon)}<span>${esc(m.navn)}</span></a>`).join("\n  ")}
-  <details class="tab-mere"><summary${cur(aktiv === "kommune")}>${ikon("sted")}<span>${esc(k?.navn || "København")}</span></summary><div>
+  ${faner.map((m) => `<a href="${m.href}"${did(rod, m.id)}${cur(aktiv === m.id)}>${ikon(m.ikon)}<span>${esc(m.navn)}</span></a>`).join("\n  ")}
+  <details class="tab-mere"><summary${did(rod, "kommune")}${cur(aktiv === "kommune")}>${ikon("sted")}<span>${esc(k?.navn || "København")}</span></summary><div>
     <p class="tab-titel">Skift kommune</p>${kommuneValg(rod, k)}
   </div></details>
   <details class="tab-mere"><summary${cur(iMere.some((m) => m.id === aktiv))}>${ikon("mere")}<span>Mere</span></summary><div>
-    ${iMere.map((m) => `<a href="${m.href}"${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n    ")}
+    ${iMere.map((m) => `<a href="${m.href}"${did(rod, m.id)}${cur(aktiv === m.id)}>${esc(m.navn)}</a>`).join("\n    ")}
   </div></details>
 </nav>`;
 };
 
+// Avishovedet og sidefoden. På de fleste sider sætter serveren dem ind fra en fælles fil (del/, server-side include),
+// så en ændring i menuen kun kræver én fil uploadet pr. kommune i stedet for alle sider. Forsiderne har dem stadig selv,
+// fordi deres hoved viser dagens dato. Serveren skal kunne sætte filerne ind (.htaccess: Options +Includes),
+// og del/ skal ligge på serveren, før siderne bruger dem; derfor skrives del/ altid, og siderne bruger dem kun, når
+// SIDER_MED_FAELLES er sand. FAELLES=0/1 i miljøet tilsidesætter den (fx FAELLES=0 for at bygge alle sider som før).
+const SIDER_MED_FAELLES = false;
+const FAELLES = process.env.FAELLES ? process.env.FAELLES !== "0" : SIDER_MED_FAELLES;
+const delteHoveder = new Map();
+const avishoved = (rod, aktiv, kommune) => `${LOGO_SYMBOL}
+<!-- Avishovedet i to etager (som en trykt avis): logo og udgave øverst, sektionerne centreret på en række for sig -->
+<header class="masthead to">
+  <div class="wrap mh-top">
+    <a class="mh-logo" href="${rod}${kommune ? `kommune/${kommune.slug}.html` : "index.html"}" aria-label="Sagsvagt, til forsiden">${logo(196, 60)}</a>
+    <details class="mh-edition mere mh-kommune"><summary><b>${esc(kommune?.navn || "København")}</b><br>${aktiv === "forside"
+      ? `${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}` : "Skift kommune"}</summary><div>${kommuneValg(rod, kommune)}</div></details>
+    <div class="mh-handling">
+      <a class="mh-erhverv" href="${rod}erhverv.html">Erhverv</a>
+      <a class="mh-cta" href="${rod}vagt.html?fra=avis#tilmeld">Skriv dig op</a>
+      <a class="mh-ikon" href="${rod}min/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.2 4-4.9 7.2-4.9s5.9 1.7 7.2 4.9"/><circle cx="12" cy="12" r="10.2"/></svg><span>Log ind</span></a>
+    </div>
+  </div>
+  <nav class="mh-nav" aria-label="Hovedmenu"><div class="wrap">${menu(rod, aktiv, kommune)}
+  </div></nav>
+</header>
+${tabBjaelke(rod, aktiv, kommune)}
+`;
+const sidefod = (rod) => `<footer class="foot">
+  <div class="wrap">
+    ${logo(110, 34)}
+    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a> · <a href="${rod}erhverv.html">Sagsvagt Erhverv</a> · <a href="${rod}boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="${rod}privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
+  </div>
+</footer>
+`;
+// De fælles filer: ét hoved pr. kommune, der har sider, og én sidefod. Links går fra roden (/), så de virker i alle mapper.
+async function bygFaelles() {
+  await rm(join(ROD, "del"), { recursive: true, force: true });
+  await mkdir(join(ROD, "del"), { recursive: true });
+  for (const [slugK, k] of delteHoveder) await writeFile(join(ROD, "del", `hoved-${slugK}.html`), avishoved("/", "", k));
+  await writeFile(join(ROD, "del", "fod.html"), sidefod("/"));
+  // Prøveside til at tjekke, at serveren sætter filerne ind: https://sagsvagt.dk/del/proeve.html skal vise sidefoden
+  await writeFile(join(ROD, "del", "proeve.html"), `<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Prøve</title>\n<!--#include virtual="/del/fod.html" -->\n`);
+  console.log(`Fælles filer: ${delteHoveder.size} avishoveder og én sidefod i del/ (${FAELLES ? "siderne bruger dem" : "siderne bruger dem ikke endnu"})`);
+}
+
 function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "website", ogBillede = "", kommune = null }) {
   const canonical = SITE_URL + sti;
   const udgave = kommune?.navn || "";
+  const kanDele = aktiv !== "forside" && aktiv !== "k-forside", faelles = FAELLES && kanDele;
+  if (kanDele) delteHoveder.set(kommune?.slug || "koebenhavn", kommune);
   return `<!doctype html>
 <html lang="da">
 <head>
@@ -275,35 +323,14 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
 <script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1"){var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:(f||(r&&r!==location.hostname?r:"")).slice(0,60)})})}}catch(e){}</script>
 <link rel="alternate" type="application/rss+xml" title="Sagsvagt: København" href="${SITE_URL}feed/alle.xml">
 </head>
-<body>
+<body${faelles && aktiv ? ` data-aktiv="${esc(aktiv)}"` : ""}>
 <a class="spring" href="#indhold">Spring til indholdet</a>
-${LOGO_SYMBOL}
-<!-- Avishovedet i to etager (som en trykt avis): logo og udgave øverst, sektionerne centreret på en række for sig -->
-<header class="masthead to">
-  <div class="wrap mh-top">
-    <a class="mh-logo" href="${rod}${kommune ? `kommune/${kommune.slug}.html` : "index.html"}" aria-label="Sagsvagt, til forsiden">${logo(196, 60)}</a>
-    <details class="mh-edition mere mh-kommune"><summary><b>${esc(udgave || "København")}</b><br>${aktiv === "forside"
-      ? `${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}` : "Skift kommune"}</summary><div>${kommuneValg(rod, kommune)}</div></details>
-    <div class="mh-handling">
-      <a class="mh-erhverv" href="${rod}erhverv.html">Erhverv</a>
-      <a class="mh-cta" href="${rod}vagt.html?fra=avis#tilmeld">Skriv dig op</a>
-      <a class="mh-ikon" href="${rod}min/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.2 4-4.9 7.2-4.9s5.9 1.7 7.2 4.9"/><circle cx="12" cy="12" r="10.2"/></svg><span>Log ind</span></a>
-    </div>
-  </div>
-  <nav class="mh-nav" aria-label="Hovedmenu"><div class="wrap">${menu(rod, aktiv, kommune)}
-  </div></nav>
-</header>
-${tabBjaelke(rod, aktiv, kommune)}
-<main id="indhold">
+${faelles ? `<!--#include virtual="/del/hoved-${kommune?.slug || "koebenhavn"}.html" -->\n` : avishoved(rod, aktiv, kommune)}<main id="indhold">
 ${indhold}
 </main>
-<footer class="foot">
-  <div class="wrap">
-    ${logo(110, 34)}
-    <span>Sagsvagt bygger på kommunernes offentlige dagsordener og referater. Læs altid den originale sag. <a href="${rod}om.html">Om Sagsvagt</a> · <a href="${rod}erhverv.html">Sagsvagt Erhverv</a> · <a href="${rod}boks.html">Sæt Sagsvagt på din hjemmeside</a> · <a href="${rod}privatliv.html">Privatliv</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
-  </div>
-</footer>
-<script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+${faelles ? `<!--#include virtual="/del/fod.html" -->\n` : sidefod(rod)}<script>${faelles && aktiv ? `/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
+(function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+` : ""}/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});
 /* Kommunevælgeren henter de åbne kommuner fra kommune/aabne.json første gang, den åbnes (toggle bobler ikke, derfor capture) */
@@ -871,7 +898,8 @@ if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})}).catch(function(){var p
   console.log(`${stedUrls.length - 1} stedsider`);
   const urls = [...stedUrls, "", "index.html", "om.html", "boks.html", "kort.html", "erhverv.html", "soeg.html", "moeder.html", "partier.html", "hoeringer.html", "udvalg/", "bydel/", "emne/", ...Object.keys(EMNER).map((id) => `emne/${id}.html`), ...[...udvalg].map((u) => `udvalg/${slug(u)}.html`), ...lokal.map((u) => `bydel/${slug(bydel(u))}.html`), "kommune/", ...kommuner.filter((k) => k.slug !== "koebenhavn").map((k) => `kommune/${k.slug}.html`), ...kommuneSider, ...alleSager.map((s) => s.url)];
   await writeFile(join(ROD, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${SITE_URL}${u}</loc></url>`).join("\n")}\n</urlset>\n`);
-  await writeFile(join(ROD, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}sitemap.xml\n`);
+  await bygFaelles();
+  await writeFile(join(ROD, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /del/\nSitemap: ${SITE_URL}sitemap.xml\n`);
   console.log(`Byggede forside, ${sager.length} sager, ${udvalg.length} udvalg, ${lokal.length} bydele, ${Object.keys(EMNER).length} emner, ${antalBokse} bokse`);
 }
 

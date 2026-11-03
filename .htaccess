@@ -1,6 +1,11 @@
 # Forsiden på sagsvagt.dk er tilmeldingssiden (vagt.html). Avisens forside ligger på /index.html.
 # Undermapper (udvalg/, bydel/, min/) har ingen vagt.html og viser derfor deres index.html som før.
 DirectoryIndex vagt.html index.html
+# Fælles avishoved og sidefod (del/, bygges af avis/byg.mjs): serveren sætter dem ind i siderne (server-side include),
+# så en ændring i menuen kun kræver de små filer i del/ uploadet. Præcis disse to linjer er testet hos Simply 3/11-2026
+# (en forkert Options-linje giver fejl 500 på hele sitet). Sidernes tekst er escapet, så den kan ikke indeholde direktiver.
+Options +Includes
+AddOutputFilter INCLUDES .html
 # Egen side for adresser, der ikke findes (bygges af avis/byg.mjs)
 ErrorDocument 404 /404.html
 # Skjulte filer (fx uploadrobottens .ftp-*-tilstandsfiler) og PHP's fejllog kan ikke hentes udefra
