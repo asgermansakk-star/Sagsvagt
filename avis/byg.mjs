@@ -251,7 +251,7 @@ const tabBjaelke = (rod, aktiv, k) => {
 // fordi deres hoved viser dagens dato. Serveren skal kunne sætte filerne ind (.htaccess: Options +Includes),
 // og del/ skal ligge på serveren, før siderne bruger dem; derfor skrives del/ altid, og siderne bruger dem kun, når
 // SIDER_MED_FAELLES er sand. FAELLES=0/1 i miljøet tilsidesætter den (fx FAELLES=0 for at bygge alle sider som før).
-const SIDER_MED_FAELLES = false;
+const SIDER_MED_FAELLES = true;
 const FAELLES = process.env.FAELLES ? process.env.FAELLES !== "0" : SIDER_MED_FAELLES;
 const delteHoveder = new Map();
 const avishoved = (rod, aktiv, kommune) => `${LOGO_SYMBOL}
