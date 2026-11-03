@@ -102,8 +102,9 @@
   "tjekket": "2026-10-22"
  },
  "glostrup": {
-  "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "system": "aabendagsorden",
+  "base": "https://dagsorden.glostrup.dk",
+  "tjekket": "2026-11-03"
  },
  "greve": {
   "system": "firstagenda",
@@ -392,8 +393,9 @@
   "tjekket": "2026-10-22"
  },
  "syddjurs": {
-  "system": "ukendt",
-  "tjekket": "2026-10-30"
+  "system": "aabendagsorden",
+  "base": "https://aabendagsorden.syddjurs.dk",
+  "tjekket": "2026-11-03"
  },
  "thisted": {
   "system": "firstagenda",

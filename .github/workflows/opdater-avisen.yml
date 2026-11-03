@@ -90,6 +90,15 @@ jobs:
           SAMTIDIG: "10"
           DAGE: "120"
 
+      # Kommuner med Åben Dagsorden (Glostrup og Syddjurs) læses som HTML fra portalen, ikke som PDF,
+      # så de hentes også, når PDF-parseren fejler.
+      - name: Hent nye sager fra andre kommuner (Åben Dagsorden)
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
+        continue-on-error: true
+        run: node avis/hent-aabendagsorden.mjs
+        env:
+          DAGE: "120"
+
       - name: Kvalitet pr. kommune
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
         continue-on-error: true

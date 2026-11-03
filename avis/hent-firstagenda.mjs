@@ -354,7 +354,8 @@ async function hentKommune(k) {
 // Køres som script (ikke når parsePdf importeres i en test)
 if (process.argv[1]?.endsWith("hent-firstagenda.mjs")) {
   const kommuner = JSON.parse(await readFile(join(import.meta.dirname, "firstagenda.json"), "utf8"))
-    .filter((k) => k.aktiv && (!process.argv[2] || k.slug === process.argv[2]));
+    // Kommuner med "system" (fx "aabendagsorden") har deres egen hentning
+    .filter((k) => k.aktiv && !k.system && (!process.argv[2] || k.slug === process.argv[2]));
   // Kommunerne ligger på hver sin server, så vi henter flere kommuner ad gangen. Hver server får stadig
   // kun én forespørgsel ad gangen med pause imellem (klient() ovenfor). SAMTIDIG styrer hvor mange.
   const SAMTIDIG = Math.max(1, Number(process.env.SAMTIDIG || 10));
