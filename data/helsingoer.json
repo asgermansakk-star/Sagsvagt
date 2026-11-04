@@ -495,6 +495,14 @@
    "dato": "2026-11-11",
    "punkter": 9,
    "parser": 3
+  },
+  "1dba3223-2e6d-4b2a-8fcd-1c2068dbf62a": {
+   "lastmod": "2026-11-04",
+   "type": "dagsorden",
+   "udvalg": "By-, Plan- og Trafikudvalget",
+   "dato": "2026-11-05",
+   "punkter": 1,
+   "parser": 3
   }
  },
  "sager": {
@@ -10139,13 +10147,17 @@
    "dato": "2026-11-05",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=ce80ba38-2bd0-47bd-adf4-2907f78cebca",
-   "hentet": "2026-10-29T10:59:23.819Z",
-   "titel": "Beslutning: Godkendelse af dagsorden",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=1dba3223-2e6d-4b2a-8fcd-1c2068dbf62a",
+   "hentet": "2026-11-04T20:56:17.331Z",
+   "titel": "Beslutning: Evaluering af By, Plan og Trafikudvalgets studietur 2026",
    "afsnit": [
     {
+     "titel": "Indstilling",
+     "tekst": "Center for By, Land og Vand indstiller,\nat udvalget drøfter studieturen."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Sagen afgøres i:\nBy-, Plan- og Trafikudvalget 2026-2029"
+     "tekst": "Utrecht er blevet anerkendt for sine innovative tilgange til byudvikling, en balance mellem\nvækst, bæredygtighed og livskvalitet, hvilket har gjort byen til en model for andre hollandske og\neuropæiske byer. Utrecht har en befolkning på cirka 360.000 indbyggere fordelt på 10\ndistrikter. Udvalget fik indblik i udvalgte projekter og temaer, som kunne inspirere til arbejdet i\nHelsingør kommune.\nOverordnet set blev udvalget præsenteret for tre temaer:\nHvordan man kan fortætte ved stationsmiljøer og generelt uden mere biltrafik og ved at\nudvikle den kollektive transport samt cykelnetværket.\nHvordan man kan genbruge industriarv i stedet for at rive ned, jf. også Kulturværftet i\nHelsingør.\nTur til den mindre by Zaandam. Byen ligger ca. en times kørsel fra Amsterdam, ligesom\nHelsingør i forhold til København. Zaandam har genopbygget sit centrum omkring\nstationen og vandet med en tydelig lokal identitet. Grønne såkaldte ”zaanske” træhuse\ner brugt som arkitektonisk motiv. Byudviklingen er bl.a. foregået i samarbejde med\nforskellige borgergrupper og andre partnere\n\nUdvalget vil på mødet drøfte udbyttet af turen samt evaluerer på oplæg samt eventuelle\ntemaer, som kan inspirere til udvalgets samt administrationens fremadrettede arbejde i\nHelsingør.\n\nRetsgrundlag\nIngen bemærkninger.\n\nRelation til vision og tværgående politikker\nVision 2030 for Helsingør Kommune\n\nØkonomi/Personaleforhold\nSagen har ikke afledte konsekvenser for økonomi og personaleforhold.\n\nKommunikation/Høring/Borgerinddragelse\nSagen giver ikke anledning til særskilt kommunikation/høring/borgerinddragelse."
     }
    ],
    "bilag": []
@@ -11053,7 +11065,7 @@
    "tjekket": "2026-10-22"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=d8e9ad23-7b08-4513-9631-847de343f53d": {
-   "senest": "2026-10-29",
+   "senest": "2026-11-04",
    "tjekket": "2026-11-04"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=f3c25388-96c2-42d3-84bf-5ab82f214db0": {
@@ -11113,7 +11125,7 @@
    "tjekket": "2026-10-22"
   }
  },
- "opdateret": "2026-11-04T12:11:01.521Z",
+ "opdateret": "2026-11-04T20:56:17.332Z",
  "kommune": "Helsingør",
  "parser": 3
 }
