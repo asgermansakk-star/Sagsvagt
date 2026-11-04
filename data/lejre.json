@@ -377,6 +377,38 @@
    "dato": "2026-11-02",
    "punkter": 12,
    "parser": 3
+  },
+  "b815f5f7-a709-4766-a0ec-23e3494ecfbd": {
+   "lastmod": "2026-11-04",
+   "type": "referat",
+   "udvalg": "Udvalget for Trafik, Miljø & Byggeri",
+   "dato": "2026-11-03",
+   "punkter": 3,
+   "parser": 3
+  },
+  "c019f54f-6fd3-49e4-9cdc-6ea1801b5853": {
+   "lastmod": "2026-11-04",
+   "type": "referat",
+   "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
+   "dato": "2026-11-03",
+   "punkter": 8,
+   "parser": 3
+  },
+  "8fddf2e5-cb4d-4091-8dd8-f1ebe086a7ef": {
+   "lastmod": "2026-11-04",
+   "type": "referat",
+   "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
+   "dato": "2026-11-03",
+   "punkter": 3,
+   "parser": 3
+  },
+  "141f9ec1-1d77-41dc-b6c3-b164063d0550": {
+   "lastmod": "2026-11-04",
+   "type": "referat",
+   "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
+   "dato": "2026-11-03",
+   "punkter": 7,
+   "parser": 3
   }
  },
  "sager": {
@@ -11358,12 +11390,17 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Trafik, Miljø & Byggeri",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=ee41a6c9-496e-4586-9e81-b8f634676c5c",
-   "hentet": "2026-10-26T18:41:51.488Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=b815f5f7-a709-4766-a0ec-23e3494ecfbd",
+   "hentet": "2026-11-04T12:12:23.410Z",
    "titel": "TMB - Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud: Grethe Nørtoft Saabye"
+    }
+   ],
    "bilag": []
   },
   "lejre-2026-11-03-udvalget-for-trafik-miljoe-byggeri-2": {
@@ -11371,15 +11408,31 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Trafik, Miljø & Byggeri",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=ee41a6c9-496e-4586-9e81-b8f634676c5c",
-   "hentet": "2026-10-26T18:41:51.488Z",
-   "titel": "TMB - Orientering november 2026",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=b815f5f7-a709-4766-a0ec-23e3494ecfbd",
+   "hentet": "2026-11-04T12:12:23.410Z",
+   "titel": "EKLT/TMB - Fælles temamøde om mål for klimaneutralitet",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen tiltrådt.\nAfbud: Grethe Nørtoft Saabye"
+    },
+    {
      "titel": "Resumé",
-     "tekst": "A. Servicemålsstatistik 3. kvartal 2026\nSagsbehandlingstiderne for 3. kvartal 2026 er opgjort og kan ses nedenfor.\nOpgørelsen viser den gennemsnitlige sagsbehandlingstid. Sagsbehandlingstiderne beregnes i henhold til\nservicemålaftalen mellem regeringen og KL og i forhold til de sagsbehandlingsmål, der er fastsat i Lejre Kommune.\nFor de sager, der ikke er omfattet af KL's servicemålssager, beregnes sagsbehandlingstiden fra fyldestgørende materiale\ner modtaget, til afgørelse er truffet.\nI kolonnen ”Udvikling ift. året før” betyder ”pil ned”, at sagsbehandlingstiden er gået ned, det vil sige blevet kortere.\nI kolonnen ”Status” markeres med farve, om servicemål henholdsvis lokale eller nationale er opfyldt. Rød er ikke opfyldt\nog grøn er opfyldt.\nI kolonnen ”Procent overholdt” refereres til KL servicemål, hvor der er et KL servicemål. For de øvrige refereres til\nservicemål fastsat i Lejre Kommune."
+     "tekst": "Lejre Kommune skal ifølge Klimaplan 2025 fastsætte en målsætning for klimaneutralitet\nfor kommunen som virksomhed.\nFormålet med temadrøftelsen er at give udvalgene et fælles grundlag for de videre\npolitiske drøftelser ved at introducere centrale begreber, metoder og modeller for\nklimaneutralitet.\nTemadrøftelsen skal danne grundlag for det videre arbejde med et oplæg til politisk\nbehandling i foråret 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller:\n1. at temadrøftelsen om målsætning for klimaneutralitet for Lejre Kommune som virksomhed gennemføres."
+    },
+    {
+     "titel": "Beslutningskompetence",
+     "tekst": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme\nUdvalget for Teknik, Miljø & Byggeri."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Lejre Kommune skal ifølge Klimaplan 2025 fastsætte et mål for CO2-neutralitet for kommunen som virksomhed. Den 11. august\n2026 (punkt 8) besluttede Udvalget for Erhverv, Klima, Lokal udvikling & Turisme samt Udvalget for Teknik, Miljø og Byggeri at\nafholde en fælles temadrøftelse om målsætningen for klimaneutralitet i november 2026. Temadrøftelsen skal danne grundlag\nfor, at der i foråret 2027 kan vedtages en målsætning.\nKlimaplan 2025 beskriver 26 handlinger, som har til formål at reducere klimaaftrykket fra kommunens drift. Der er indsatser i\nforhold til både bygninger, transport, vejanlæg og –belysning, affald, indkøb og forbrug, kommunale køkkener, ledelse og\nstrukturelle tiltag samt kommunale arealer. En målsætning for CO2-neutralitet vil samle alle disse handlinger under én\nmålsætning og fastsætte ambitionsniveau og tempo for dette arbejde.\nFormålet med temadrøftelsen er at introducere de forskellige begreber og måder at opgøre klimaneutralitet og indlede\ndrøftelserne af kommunens ambitioner for og metoder til at opnå CO2-neutralitet.\nVed temadrøftelsen vil de principielle og metodiske spørgsmål omkring klimaneutralitet blive introduceret, og der fremlægges\nerfaringer og modeller fra andre kommuner. Der vil desuden blive givet eksempler på, hvordan en målsætning for CO2-\n\nneutralitet kan understøttes af organisatoriske strukturer og økonomiske incitamenter.\nUdvalgene kan blandt andet drøfte, hvilke områder (scopes), der skal indgå i målsætningen for klimaneutralitet, hvilket mål-år,\nder skal sigtes efter samt, hvilke kompensationsordninger og/eller interne økonomiske incitamenter, der kan understøtte\nindfrielse af målet, som udvalgene ønsker undersøgt nærmere.\n\nAdministrationens vurdering\nEn målsætning for klimaneutralitet kan skabe en fælles strategisk retning for kommunens\narbejde med at reducere klimaaftrykket fra egen drift. Det indbefatter en række metodiske og\npolitiske valg vedrørende afgrænsning, ambitionsniveau, tidshorisont, styringsmekanismer og\neventuel anvendelse af CO₂-kompensation. Administrationen vurderer derfor, at der er behov\nfor en indledende politisk drøftelse af disse spørgsmål, før der udarbejdes et konkret forslag til\nmålsætning og en implementeringsmodel.\nVurdering af klimapåvirkning\nTemadrøftelsen har ingen direkte klimapåvirkning. En senere politisk vedtagelse af en\nmålsætning for klimaneutralitet forventes at understøtte reduktion af klimaaftrykket fra Lejre\nKommunes drift.\n\nØkonomi og finansiering\nTemadrøftelsen har ingen direkte økonomiske konsekvenser. En senere beslutning om\nmålsætning for klimaneutralitet samt valg af styringsmekanismer og eventuelle\nkompensationsordninger kan have økonomiske konsekvenser. Disse vil blive belyst i\nforbindelse med den politiske behandling af et konkret forslag.\n\nSagens forløb\n03/11/2026 Udvalget for Erhverv, Klima, Lokal udvikling & Turisme - 2026-2029\nBeslutning ikke frigivet"
     }
    ],
    "bilag": []
@@ -11389,29 +11442,12 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Trafik, Miljø & Byggeri",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=ee41a6c9-496e-4586-9e81-b8f634676c5c",
-   "hentet": "2026-10-26T18:41:51.488Z",
-   "titel": "EKLT/TMB - Status på implementering af Grøn Trepart i Lejre Kommune",
-   "afsnit": [
-    {
-     "titel": "Resumé",
-     "tekst": "I denne sag fremlægges den halvårlige status på implementeringen af Grøn Trepart i Lejre Kommune.\nLejre Kommune er i gang med at implementere Omlægningsplanen for Grøn Trepart og har igangsat en række projekter\nsom led heri.\nUdvalget for Erhverv, Klima, Lokal udvikling & Turisme og Udvalget for Trafik, Miljø & Byggeri blev orienteret om status\nfor arbejdet i grøn trepart på et fælles udvalgsmøde den 5. maj 2026, pkt. 2. Udvalgene besluttede at få en halvårlig\nstatus."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "Direktionen indstiller:\n1. at status på implementeringen af Omlægningsplanen i Lejre Kommune tages til efterretning."
-    },
-    {
-     "titel": "Beslutningskompetence",
-     "tekst": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme.\nUdvalget for Trafik, Miljø & Byggeri."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Fremdrift i projekterne\nOmlægningsplanen er dynamisk og rummer på nuværende tidspunkt 63 projekter. Projekterne er udpeget i forskellige\nkategorier, herunder permanent ekstensivering, kvælstofvådområder, fosforvådområder, skovrejsning, lavbundsprojekter,\nminivådområder samt kategorien øvrige, som blandt andet dækker over ådale, sammenhængende natur samt muligheder for at\nkombinere forskellige tilskudsordninger.\nEfterhånden som projekterne udvikler sig, kan et projekt skifte kategori. For eksempel er en del af udpegningen for Ørbækken\n(projekt nr. 5, Bilag 1) i kategorien 'øvrige' ændret til kategorien 'lavbundsprojekt' (projekt nr. 5a, Bilag 1), idet der er ansøgt om\ntilsagn til igangsættelse af forundersøgelse for den kulstofrige del af udpegningen ved Ørbækken. På samme måde er\nprojekterne omkring Osted Hestehave (projekt nr. 19, 20 og 28) samlet til et stort lavbundsprojekt med projektnummer 27a.\nDerfor 'udgår' projekterne 19, 20 og 28 af oversigten i bilag 1. Modningen af projektet ved Osted Hestehave betyder, at nye\nlodsejere får jord i omlægningsplanen. Disse lodsejere bliver orienteret via e-boks. Således kvalificeres og opdateres\nomlægningsplanens projekter i takt med, at viden og vilkår ændrer sig. Særligt kategorien 'øvrige' vil ændre kategori,\nefterhånden som konkrete indsatser og behov identificeres.\nProjekterne befinder sig på forskellige stadier. Stadierne forløber fra indledningsvis at være et indtegnet skitseprojekt i\nomlægningsplanen til at ende som et etableret projekt. Projekternes stadie kan ses i kolonnen “projektstatus” i bilag 1. Figuren\nnedenfor viser fremdriften i projekterne i Lejre Kommune, hvor flere rykker fra 'skitseprojekt – ikke igangsat' til 'forundersøgelse\nansøgt', fra 'forundersøgelse ansøgt' til 'forundersøgelse igangsat' og så fremdeles.\n\nFigur 1: Fremdrift i omlægningen under grøn trepart. Figuren viser projekterne i omlægningsplanens forskellige stadier.\nSøjlernes farver illustrerer status i henholdsvis april 2026 og september 2026 og det totale antal projekter i omlægningsplanen.\nLejre Kommune har ved denne statusrapport sat gang i ni forundersøgelser (jf. bilag 1), som fordeler sig i kommunens geografi.\nAdministrationen oplever et godt samarbejde med både rådgivere, udtagningskonsulenter og lodsejere om de respektive\nomlægningsprojekter. Det forventes, at flere forundersøgelser vil blive afsluttet i perioden frem mod næste status-afrapportering\ntil maj 2027, herunder Vejlemølle ådal (projekt nr. 10) og fast-track projekterne (projekt nr. 40, 52 og 53). På baggrund af\nforundersøgelsernes resultater - både de tekniske og de ejendomsmæssige - skal kommunen vurdere, hvorvidt der kan gives\nmyndighedsgodkendelse til projektet. Hvis et projekt vurderes teknisk muligt, der er opbakning blandt lodsejerne, og der er\nmyndighedsgodkendelse til detailprojekteringen, kan kommunen (eller anden myndighed) søge om tilsagn og finansiering til\netablering hos Styrelsen for Grøn Arealomlægning og Vandmiljø.\nSiden statusrapporten i maj er to projekter blevet etableret. Det drejer sig om projekterne omkring klimaskoven i Hvalsø, som\nblev indviet i maj 2026.\nTo nye områder ansøgt til forundersøgelse\nLejre Kommune har ved den aktuelle vådområdeordning ansøgt Styrelsen for Grøn Arealomlægning og Vandmiljø om tilsagn til\nat igangsætte forundersøgelse af yderligere to lavbundsprojekter, henholdsvis projekt nr. 5a i Bilag 1, 'Lavbundsprojekt Store\nKarleby/Kirke Hyllinge', samt projekt nummer 27a i Bilag 1, som er et samlet projektområde for 'Osted Hestehave, Kastholm og\nÅsholm'. De to ansøgte projektområder rummer begge store kulstofrige lavbundsarealer og er dermed centrale områder i\nrealiseringen af klimamålet under Grøn Trepart samt Lejre Kommunes klimaplan. I 'Aftale om et Grønt Danmark’ er ambitionen,\nat udtagning af alle lavbundsjorde skal være gennemført i 2030. Gennemføres alle projekter, der har en lavbundsindsats og\nsom på nuværende tidspunkt er ansøgt eller igangsat, udtages omkring 250 ha lavbund.\nMinivådområder\nI Lejre Kommune er der ansøgt om etablering af 10 minivådområder, og der er desuden indsendt orientering om planlægning af\n\nyderligere fire områder. Kommunen varetager den nødvendige myndighedsbehandling i forbindelse med etableringen, herunder\neksempelvis landzone- og jordreguleringstilladelser. Alle undersøgelser, finansiering og etableringsarbejder med videre\nvaretages af lodsejer, udtagningskonsulenter og den tilknyttede tilskudsordning. Det betyder, at minivådområder i Figur 1 rykker\ndirekte fra stadie 'Skitseprojekt - ikke igangsat' til 'Etablering - ansøgt eller igangsat' og senere ‘Etablering’. Dette forklarer den\nstore stigning fra april til september 2026 i kolonnen 'Etablering - ansøgt eller igangsat' i Figur 1.\nMinivådområder etableres typisk som mindre anlæg i landskabet (< 1 ha), der opsamler og renser drænvand fra\nlandbrugsarealer for kvælstof og fosfor, før vandet ledes videre til vandløb, søer og fjorde. Etableringen sker typisk på initiativ af\nen lodsejer, som ønsker at reducere udledningen fra et større drænopland og samtidig bidrage til opfyldelsen af statens krav\nom reduktion af udledningen af næringsstoffer.\nSkovpotentialeanalyse\nI 'Aftale om et Grønt Danmark’ er målet, at der på nationalt plan rejses 250.000 ha ny skov inden 2045. Kommunalbestyrelsen i\nLejre Kommune har med vedtagelsen af Klimaplan 2025 besluttet, at der som minimum skal rejses 960 ha skov frem mod\n2045. Et led i realiseringen af Klimaplanen er at få gennemført en skovpotentialeanalyse. Lejre Kommune har indhentet tilbud\npå udarbejdelsen af en skovpotentialeanalyse for hele kommunen og har netop udvalgt den rådgiver, der skal stå for arbejdet.\nAnalysen er planlagt til at være færdiggjort i februar 2027.\nSkovpotentialeanalysen skal skabe et overordnet plangrundlag og udpege arealer og områder, hvor der kan rejses skov,\nsamtidig med at der tages hensyn til CO₂-reduktion, biodiversitet, grundvandsbeskyttelse, landskabelige kvaliteter, borgernes\nadgang til naturen, landbrugsdriften, levesteder for dyr, planter og insekter samt beskyttelsen af fjorde, åer og søer.\nPotentielt signaturprojekt ved Elverdamså\nNaturstyrelsen leder den igangværende analyse af, om Elverdamsåen skal udvælges som signaturprojekt under Den Grønne\nTrepart. Analysen udarbejdes af Naturstyrelsen i tæt samarbejde med de berørte kommuner og lokale treparter i seks udvalgte\nområder i Danmark. Herefter vil det være op til aftalekredsen bag 'Aftale om et Grønt Danmark' at beslutte, om der skal\narbejdes videre med et signaturprojekt ved Elverdamsåen.\nAnalyseområdet omfatter ca. 9.000-10.000 ha på tværs af kommunegrænserne mellem Lejre, Holbæk og Ringsted Kommuner.\nAnalysen baserer sig på eksisterende data og udføres af forskningsprojektet TRANSFORM, som ledes af Københavns\nUniversitet. Analysen skal være færdig inden udgangen af 2026, og beslutningen om udvælgelse af signaturprojekter i\nDanmark, herunder Elverdamsåen, forventes truffet primo 2027. Naturstyrelsen har afholdt informationsmøde den 7. oktober\n2026 for lodsejere og interesserede borgere.\nSamarbejdsmodel for Langvad Å-systemet - støttet af 15. Juni Fonden\nLejre Kommune har modtaget midler fra 15. Juni Fonden til at forberede et storskala-projekt for Langvad Å-systemet.\nProjektet er et samarbejde mellem Lejre Kommune, Roskilde Kommune og Nationalparken Skjoldungernes Land.\nProjektmidlerne skal bruges til en tværkommunal projektansættelse, der skal undersøge mulighederne for at udnytte\nnaturpotentialet i Langvad Å-systemet, reducere kvælstofudledningen til Roskilde Fjord, udtagning af lavbundsjorde og herved\nbidrage til at realisere Lejre Kommunes omlægningsplan samt klimaplan. Projektperioden er fra januar 2027 til foråret 2028.\nProjektperioden skal ses som første fase i et længerevarende arbejde for udviklingen af Langvad Å-systemet.\nKapacitetsopbygning i samarbejde med andre små kommuner - støtte fra KL\nLejre Kommune har sammen med Samsø og Odsherred Kommuner modtaget tilsagn om støtte fra KL's pulje til\nkapacitetsopbygning i små og mindre kommuner. Projektet skal styrke arbejdet med arealomlægning i forbindelse med Grøn\nTrepart. Midlerne skal bruges til at styrke lodsejerdialog, facilitere lokale processer og skabe fremdrift i forundersøgelser og\ngennemførelse af kvælstof- og lavbundsprojekter i Lejre Kommune. Kommunerne vil samtidig etablere et samarbejde om\nvidendeling, erfaringsudveksling og udvikling af fælles metoder til arealomlægning.\n\nOrientering af udvalget for Grøn Trepart i Lejre\nStatus for arbejdet med Grøn Trepart og implementeringen af omlægningsplanen har været forelagt § 17, stk. 4-udvalget for\nGrøn Trepart i Lejre på mødet den 7. oktober 2026. § 17m stk. 4-udvalget er blevet orienteret om fremdriften i projekterne, de\nigangsatte forundersøgelser samt de væsentligste udviklinger siden seneste statusrapport. § 17, stk. 4-udvalgets drøftelser og\nperspektiver indgår som en del af det videre arbejde med realiseringen af omlægningsplanen.\nDet fortsatte arbejde med grøn trepart\nLejre Kommune har siden vedtagelsen af omlægningsplanen løbende igangsat en række projekter (jf. bilag 1), som forventes at\noptage den administrative kapacitet i de kommende år. Yderligere ansøgninger og deraf følgende tilskud kan på sigt muligvis\nfinansiere flere administrative ressourcer til udvikling og projektledelse af omlægningsprojekter.\nUd over projektledelsen medfører projekterne et betydeligt ressourceforbrug i andre dele af administrationen, herunder\ntværfaglig sparring, intern koordinering og myndighedsbehandling. Da der ikke kan opnås tilskud til myndighedsopgaver via de\nstatslige tilskudsordninger, er det derfor væsentligt, i forbindelse med prioritering af projekter i omlægningsplanen, at opstarte\nen passende mængde nye projekter. Dermed sikres fremdrift, og unødige flaskehalse undgås så vidt muligt, når Lejre\nKommune skal understøtte processen fra opstart til realisering af nye omlægningsprojekter.\n\nAdministrationens vurdering\nAdministrationen vurderer, at der er god fremdrift i arbejdet med omlægningsprojekterne i Lejre\nKommunes omlægningsplan. Flere projekter er rykket til næste fase, ni forundersøgelser er\nigangsat, og der er etableret nye natur- og klimaindsatser, herunder klimaskovsprojekterne ved\nHvalsø. De ansøgte lavbundsprojekter, det stigende antal minivådområder samt\nigangsættelsen af en skovpotentialeanalyse understøtter kommunens bidrag til\nmålsætningerne i Grøn Trepart og Klimaplan 2025.\nAdministrationen vurderer samtidig, at den fortsatte fremdrift forudsætter en balanceret\nprioritering af nye projekter, så den nødvendige myndighedsbehandling, koordinering og\nprojektledelse kan gennemføres uden at skabe flaskehalse i den videre realisering af\nindsatserne.\n\nØkonomi og finansiering\nFinansieringen af projekterne varierer afhængigt af de anvendte virkemidler og de tilhørende tilskudsordninger. For projekter\nmed virkemidler som kvælstofvådområder, fosforvådområder, minivådområder, permanent ekstensivering, lavbundsprojekter og\nskovrejsning dækker statslige tilskudsordninger alle udgifter til både forundersøgelse og efterfølgende etablering.\nFor indsatser til natur er der begrænsede målrettede statslige tilskudsordninger. Der findes heller ikke statslige ordninger til\nstørre helhedsprojekter. Finansiering til dette skal findes via fonde og bidrag fra private aktører.\n\nSagens forløb\n03/11/2026 Udvalget for Erhverv, Klima, Lokal udvikling & Turisme - 2026-2029\nBeslutning ikke frigivet"
-    }
-   ],
+   "kilde": "https://dagsordener.lejre.dk/vis?id=b815f5f7-a709-4766-a0ec-23e3494ecfbd",
+   "hentet": "2026-11-04T12:12:23.410Z",
+   "titel": "TMB - Godkendelse af referat",
+   "afsnit": [],
    "bilag": []
   },
   "lejre-2026-11-03-udvalget-for-job-arbejdsmarked-integration-1": {
@@ -11419,12 +11455,17 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=b9721cb6-8975-457b-afbb-b372fadcc150",
-   "hentet": "2026-10-26T12:14:29.453Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=c019f54f-6fd3-49e4-9cdc-6ea1801b5853",
+   "hentet": "2026-11-04T12:12:29.745Z",
    "titel": "JAI - Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud: Tina Mandrup"
+    }
+   ],
    "bilag": []
   },
   "lejre-2026-11-03-udvalget-for-job-arbejdsmarked-integration-2": {
@@ -11432,12 +11473,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=b9721cb6-8975-457b-afbb-b372fadcc150",
-   "hentet": "2026-10-26T12:14:29.453Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=c019f54f-6fd3-49e4-9cdc-6ea1801b5853",
+   "hentet": "2026-11-04T12:12:29.745Z",
    "titel": "JAI - Virksomhedsbesøg ved System Transport A/S",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nAfbud: Tina Mandrup"
+    },
     {
      "titel": "Resumé",
      "tekst": "På udvalgets møde den 8. september 2026 (sag 4), besluttede udvalget at afholde et virksomhedsbesøg på System\nTransport.\nI denne sag præsenteres udvalget kort for virksomheden System Transport.\nUdvalget bedes tage præsentationen til efterretning."
@@ -11452,7 +11497,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Udvalget besluttede på deres møde den 8. september 2026 (sag 4) at afholde et virksomhedsbesøg hos System Transport.\nSystem Transport A/S er en dansk virksomhed inden for transport- og logistikbranchen. Virksomheden blev grundlagt i 1979 og\narbejder i dag med en bred vifte af logistik- og transportydelser.\nVirksomhedens aktiviteter omfatter blandt andet lager og logistik, distribution og transport. De har egne biler og chauffører, men\ntilbyder desuden transportløsninger med sø-, luft- og togfragt.\nSystem Transport har flere lokationer med afdelinger i Herning, Vejle og Øm. Samlet set har virksomheden ifølge CVR\nregisteret cirka 250 ansatte, mens afdelingen i Øm har knapt 80 ansatte i juli måned 2026.\nSystem Transport har i foråret 2026 henvendt sig med et ønske om et større fremtidigt samarbejde med Jobcenter Lejre. I\nperioden 2019 – 2021 har System Transport haft flere virksomhedspraktikanter, og i sommeren 2026 blev der i samarbejde\nmed Jobcenter Lejre etableret en virksomhedspraktik, der efterfølgende er resulteret i et fleksjob i samme virksomhed.\nPå virksomhedsbesøget vil udvalget modtage en rundvisning på System Transports afdeling i Øm.\n\nAdministrationens vurdering\nDet er administrationens vurdering, at virksomhedsbesøget kan være med til at øge udvalgets\nkendskab til lokale virksomheder, og er et vigtigt redskab i at styrke dialogen og samarbejdet\nmed de lokale virksomheder.\nVirksomhedsbesøget kan desuden bidrage til at identificere potentialer for vækst,\nbeskæftigelse og uddannelsessamarbejde med lokale virksomheder."
+     "tekst": "Udvalget besluttede på deres møde den 8. september 2026 (sag 4) at afholde et virksomhedsbesøg hos System Transport.\nSystem Transport A/S er en dansk virksomhed inden for transport- og logistikbranchen. Virksomheden blev grundlagt i 1979 og\narbejder i dag med en bred vifte af logistik- og transportydelser.\nVirksomhedens aktiviteter omfatter blandt andet lager og logistik, distribution og transport. De har egne biler og chauffører, men\ntilbyder desuden transportløsninger med sø-, luft- og togfragt.\nSystem Transport har flere lokationer med afdelinger i Herning, Vejle og Øm. Samlet set har virksomheden ifølge CVR\nregisteret cirka 250 ansatte, mens afdelingen i Øm har knapt 80 ansatte i juli måned 2026.\nSystem Transport har i foråret 2026 henvendt sig med et ønske om et større fremtidigt samarbejde med Jobcenter Lejre. I\nperioden 2019 – 2021 har System Transport haft flere virksomhedspraktikanter, og i sommeren 2026 blev der i samarbejde\nmed Jobcenter Lejre etableret en virksomhedspraktik, der efterfølgende er resulteret i et fleksjob i samme virksomhed.\nPå virksomhedsbesøget vil udvalget modtage en rundvisning på System Transports afdeling i Øm.\n\nAdministrationens vurdering\nDet er administrationens vurdering, at virksomhedsbesøget kan være med til at øge udvalgets\nkendskab til lokale virksomheder, og er et vigtigt redskab i at styrke dialogen og samarbejdet\nmed de lokale virksomheder.\n\nVirksomhedsbesøget kan desuden bidrage til at identificere potentialer for vækst,\nbeskæftigelse og uddannelsessamarbejde med lokale virksomheder."
     }
    ],
    "bilag": []
@@ -11462,12 +11507,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=b9721cb6-8975-457b-afbb-b372fadcc150",
-   "hentet": "2026-10-26T12:14:29.453Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=c019f54f-6fd3-49e4-9cdc-6ea1801b5853",
+   "hentet": "2026-11-04T12:12:29.745Z",
    "titel": "JAI - Introduktion til den virksomhedsrettede indsats",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nPræsentationen fra mødet er vedlagt referatet som bilag.\n\nAfbud: Tina Mandrup"
+    },
     {
      "titel": "Resumé",
      "tekst": "Administrationen giver en mundtlig introduktion til Jobcenter Lejres virksomhedsrettede indsats. Afdelingsleder Christian\nLaurvig Scharff holder oplæg.\nPræsentationen fra mødet vedlægges som referatet som bilag."
@@ -11492,12 +11541,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=b9721cb6-8975-457b-afbb-b372fadcc150",
-   "hentet": "2026-10-26T12:14:29.453Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=c019f54f-6fd3-49e4-9cdc-6ea1801b5853",
+   "hentet": "2026-11-04T12:12:29.745Z",
    "titel": "JAI - Status på beskæftigelsesreformen - Status på kompetenceudviklingsforløb",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nAfbud: Tina Mandrup"
+    },
     {
      "titel": "Resumé",
      "tekst": "I denne sag præsenteres udvalget for en status på kompetenceudviklingsforløbet, der er iværksat i Jobcenter Lejre som\nfølge af beskæftigelsesreformen.\nUdvalget bedes tage orienteringen til efterretning."
@@ -11512,7 +11565,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Beskæftigelsesreformen skaber mulighed for, at jobcentrene i højere grad kan tilrettelægge individuelt tilpassede forløb for en\nstor gruppe af borgere. Det giver mulighed for at tage større hensyn til den enkelte borgers situation, ressourcer og behov frem\nfor at arbejde ud fra de proceskrav, der hidtil har domineret beskæftigelsesområdet.\nDen øgede fleksibilitet stiller nye og anderledes krav til medarbejdernes faglighed og kompetencer, idet der fremadrettet ikke\narbejdes ud fra fastlagte proceskrav, men i stedet i langt højere grad skal arbejdes ud fra en faglig vurdering. Disse ændringer\nstiller øgede krav til opkvalificering af medarbejdere og ledere, og derfor er der iværksat en kompetenceudviklingsplan i\nJobcenter Lejre.\nJobcenter Lejre har modtaget puljemidler fra Styrelsen for Arbejdsmarked & Rekruttering til at opkvalificere medarbejdere og\nledere som led i beskæftigelsesreformen.\nKompetenceudviklingen i Jobcenteret foregår i flere spor - både internt og eksternt. Internt i Jobcenteret er der i perioden maj til\nseptember afholdt udviklingsdage med de enkelte teams med fokus på at styrke den beskæftigelsesfaglige vurdering og\nvurderingen af, hvad en borger har behov for i sit forløb med jobcenteret.\nI september og oktober 2026 indgår ledergruppen i udviklingsforløb i samarbejde med Stevns Kommune med fokus på,\nhvordan man leder bedre på faglighed fremfor proceskrav. Formålet er at synliggøre de strukturer, der i dag former praksis og\nidentificere organisationsprincipper, der understøtter faglig dømmekraft og effektiv drift. Udviklingsforløbet afvikles over to dage\nog faciliteres af Carelink. Efter de to dage arbejdes videre med udviklingsforløb internt i ledergruppen i jobcenteret.\nI oktober og november 2026 afholdes et kompetenceudviklingsforløb for medarbejderne i jobcenteret, som faciliteres af firmaet\nIndsats. Forløbet afholdes på fire halve dage, hvor der for hver gang vil være et forskelligt fokus. Temaerne omhandler\neksempelvis det lokale arbejdsmarked, og hvordan nye teknologier, herunder AI, påvirker arbejdsmarkedet fremadrettet.\nDerudover vil der være temaer om, hvordan man kan være med at identificere borgerens ressourcer, kompetencer,\nhelbredsmæssige begrænsninger og finde realistiske veje tilbage mod arbejdsmarkedet.\nUltimo 2027 forventes det, at der iværksættes et kompetenceløft for medarbejdere i forhold til brugen af det digitale værktøj,\n\nCandeno, i jobcenteret. Værktøjet giver mulighed for små korte digitale kurser til for eksempel CV eller mestringskurser til\nborgere med belastningsreaktioner. Kompetenceudviklingsforløbet har fokus på, hvordan medarbejderne bedst får brugt\nværktøjet i samtalen med borgeren.\nKompetenceudviklingen tilrettelægges under hensyntagen til den fortsatte implementering af regelændringerne som følge af\nbeskæftigelsesreformen, omorganiseringen i jobcenteret samt, at reduktionen af antallet af medarbejdere nu er fuldt\nimplementeret. Det medfører et aktuelt ressourcemæssigt pres, der har betydning for mulighederne for at frigøre\nmedarbejdertid til kompetenceudvikling og samtidig opretholde den nødvendige drift og videre implementering af\nbeskæftigelsesreformen.\n\nAdministrationens vurdering\nAdministrationen vurderer, at de igangsatte kompetenceudviklingsforløb er et vigtigt element i arbejdet med at styrke den\nfaglige kvalitet i Jobcenter Lejre og understøtter intentionen med Beskæftigelsesreformen.\nAdministrationen vurderer, at kompetenceudviklingsforløbene bidrager til at ruste både medarbejdere og ledere til de nye\nfaglige krav. De forskellige forløb har fokus på centrale elementer i den fremtidige beskæftigelsesindsats, herunder den\nbeskæftigelsesfaglige vurdering, faglig ledelse og et øget kendskab til det lokale arbejdsmarked.\nKompetenceudviklingen har værdi både på medarbejder- og organisationsniveau, idet det fælles faglige fundament styrkes\nyderligere.\n\nØkonomi og finansiering\nKompetenceudviklingsforløbene finansieres af puljemidler udmeldt af Styrelsen for\nArbejdsmarked & Rekruttering (STAR) samt egne midler."
+     "tekst": "Beskæftigelsesreformen skaber mulighed for, at jobcentrene i højere grad kan tilrettelægge individuelt tilpassede forløb for en\nstor gruppe af borgere. Det giver mulighed for at tage større hensyn til den enkelte borgers situation, ressourcer og behov frem\nfor at arbejde ud fra de proceskrav, der hidtil har domineret beskæftigelsesområdet.\nDen øgede fleksibilitet stiller nye og anderledes krav til medarbejdernes faglighed og kompetencer, idet der fremadrettet ikke\narbejdes ud fra fastlagte proceskrav, men i stedet i langt højere grad skal arbejdes ud fra en faglig vurdering. Disse ændringer\nstiller øgede krav til opkvalificering af medarbejdere og ledere, og derfor er der iværksat en kompetenceudviklingsplan i\nJobcenter Lejre.\nJobcenter Lejre har modtaget puljemidler fra Styrelsen for Arbejdsmarked & Rekruttering til at opkvalificere medarbejdere og\nledere som led i beskæftigelsesreformen.\nKompetenceudviklingen i Jobcenteret foregår i flere spor - både internt og eksternt. Internt i Jobcenteret er der i perioden maj til\nseptember afholdt udviklingsdage med de enkelte teams med fokus på at styrke den beskæftigelsesfaglige vurdering og\nvurderingen af, hvad en borger har behov for i sit forløb med jobcenteret.\nI september og oktober 2026 indgår ledergruppen i udviklingsforløb i samarbejde med Stevns Kommune med fokus på,\nhvordan man leder bedre på faglighed fremfor proceskrav. Formålet er at synliggøre de strukturer, der i dag former praksis og\nidentificere organisationsprincipper, der understøtter faglig dømmekraft og effektiv drift. Udviklingsforløbet afvikles over to dage\nog faciliteres af Carelink. Efter de to dage arbejdes videre med udviklingsforløb internt i ledergruppen i jobcenteret.\nI oktober og november 2026 afholdes et kompetenceudviklingsforløb for medarbejderne i jobcenteret, som faciliteres af firmaet\n\nIndsats. Forløbet afholdes på fire halve dage, hvor der for hver gang vil være et forskelligt fokus. Temaerne omhandler\neksempelvis det lokale arbejdsmarked, og hvordan nye teknologier, herunder AI, påvirker arbejdsmarkedet fremadrettet.\nDerudover vil der være temaer om, hvordan man kan være med at identificere borgerens ressourcer, kompetencer,\nhelbredsmæssige begrænsninger og finde realistiske veje tilbage mod arbejdsmarkedet.\nUltimo 2027 forventes det, at der iværksættes et kompetenceløft for medarbejdere i forhold til brugen af det digitale værktøj,\nCandeno, i jobcenteret. Værktøjet giver mulighed for små korte digitale kurser til for eksempel CV eller mestringskurser til\nborgere med belastningsreaktioner. Kompetenceudviklingsforløbet har fokus på, hvordan medarbejderne bedst får brugt\nværktøjet i samtalen med borgeren.\nKompetenceudviklingen tilrettelægges under hensyntagen til den fortsatte implementering af regelændringerne som følge af\nbeskæftigelsesreformen, omorganiseringen i jobcenteret samt, at reduktionen af antallet af medarbejdere nu er fuldt\nimplementeret. Det medfører et aktuelt ressourcemæssigt pres, der har betydning for mulighederne for at frigøre\nmedarbejdertid til kompetenceudvikling og samtidig opretholde den nødvendige drift og videre implementering af\nbeskæftigelsesreformen.\n\nAdministrationens vurdering\nAdministrationen vurderer, at de igangsatte kompetenceudviklingsforløb er et vigtigt element i arbejdet med at styrke den\nfaglige kvalitet i Jobcenter Lejre og understøtter intentionen med Beskæftigelsesreformen.\nAdministrationen vurderer, at kompetenceudviklingsforløbene bidrager til at ruste både medarbejdere og ledere til de nye\nfaglige krav. De forskellige forløb har fokus på centrale elementer i den fremtidige beskæftigelsesindsats, herunder den\nbeskæftigelsesfaglige vurdering, faglig ledelse og et øget kendskab til det lokale arbejdsmarked.\nKompetenceudviklingen har værdi både på medarbejder- og organisationsniveau, idet det fælles faglige fundament styrkes\nyderligere.\n\nØkonomi og finansiering\nKompetenceudviklingsforløbene finansieres af puljemidler udmeldt af Styrelsen for\nArbejdsmarked & Rekruttering (STAR) samt egne midler."
     }
    ],
    "bilag": []
@@ -11522,12 +11575,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=b9721cb6-8975-457b-afbb-b372fadcc150",
-   "hentet": "2026-10-26T12:14:29.453Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=c019f54f-6fd3-49e4-9cdc-6ea1801b5853",
+   "hentet": "2026-11-04T12:12:29.745Z",
    "titel": "JAI - Ny model for fordeling af fordrevne fra Ukraine",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nAfbud: Tina Mandrup"
+    },
     {
      "titel": "Resumé",
      "tekst": "I denne sag præsenteres Udvalget for Job, Arbejdsmarked & Integration for en ny\nfordelingsmodel for personer fra Ukraine med ophold efter særloven.\nDen ændrede model medfører, at Lejre Kommune fremadrettet skal modtage en\nforholdsmæssig større andel."
@@ -11542,7 +11599,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Udlændinge- og Integrationsministeriet har i september 2026 offentliggjort en ændring af modellen for fordeling af fordrevne fra\nUkraine til landets kommuner. Formålet med den ændrede fordelingsmodel er at skabe en mere balanceret fordeling mellem\nkommunerne, idet den nye model tager større hensyn til, hvor mange ikke-vestlige indvandrere, der allerede bor i de enkelte\nkommuner. Fordelingen beregnes fremover i grupper á 5.000 personer fremfor 10.000.\nFor Lejre Kommune betyder den nye fordelingsmodel, at kommunens forholdsmæssige andel ændres. Efter den hidtidige\nmodel skulle Lejre Kommune modtage 25 fordrevne fra Ukraine for hver 5.000 fordrevne, der skulle tildeles kommunen. Efter\nden nye model skal Lejre Kommune modtage 32 fordrevne pr. 5.000 personer.\nI 2025 blev der tildelt ca. 13.500 opholdstilladelser efter særloven i Danmark, men det forventes at færre vil få ophold efter\nsærloven fremadrettet. Når personer får opholdstilladelse efter særloven, visiteres de til en kommune, som herefter overtager\nintegrationsansvaret og en boligforpligtigelse for vedkommende.\nBoligforpligtigelse\nFordrevne, der visiteres til Lejre Kommune, indkvarteres i første omgang i en midlertidig bolig, indtil der kan findes en egnet\npermanent bolig. Den midlertidige indkvartering skal dermed fungere som en overgangsløsning.\nDen ændrede fordelingsmodel medfører, at Lejre Kommune fremover kan forvente at modtage en større andel af de fordrevne\nfra Ukraine, hvilket også må forventes at medføre et yderligere pres på de midlertidige indkvarteringer. Presset på de\nmidlertidige boliger afhænger ikke kun af antallet af nyvisiterede flygtninge, men også af hvor hurtigt der kan findes egnede\npermanente boliger. Der er ikke formelle krav til det permanente boligtilbud, men det skal vurderes egnet til at understøtte\nborgerens integration og gennemførelse af borgerens integrationsprogram, hvilket blandt andet handler om, at der skal være en\nrimelig adgang til offentlig transport.\nAllerede nu oplever Lejre Kommune udfordringer med at have tilstrækkeligt med midlertidige boliger. Derfor har\nadministrationen haft fokus på at sikre en tydelig og ensartet praksis for overgangen fra midlertidig til permanent bolig. Som led\nheri er praksis blevet tydeliggjort, således at borgere tilbydes én egnet permanent bolig. Det betyder også, at kommunen\n\ndermed har opfyldt sin boligforpligtigelse. Hvis vedkommende ikke ønsker at tage imod den permanente bolig, som kommunen\nstiller til rådighed, vil man fremadrettet selv være ansvarlige for at finde en anden bolig, og skal dermed fraflytte det midlertidige\nboligtilbud. Flygtningene har desuden altid mulighed for selv at finde et boligtilbud uden kommunal støtte.\nFormålet med denne praksis er at sikre en hensigtsmæssig anvendelse af kommunens begrænsede antal midlertidige boliger\nog samtidigt skabe en klar og forudsigelig ramme for borgerne i forbindelse med overgangen til permanent bolig.\nUdover tydeliggørelse af praksis undersøger administrationen også muligheden for at ombygge en ejendom, som tidligere har\nværet anvendt til akutboliger. Det forventes, at den ombyggede ejendom vil indgå i antallet af midlertidige boliger og på sigt skal\nvære med til at udfase antallet af midlertidige boliger hos private værter.\n\nAdministrationens vurdering\nAdministrationen vurderer, at den ændrede fordelingsmodel for fordrevne fra Ukraine vil\nmedføre, at Lejre Kommune skal modtage en større andel fordrevne, hvilket vil medføre et\nøget pres på kommunens midlertidige boligindkvartering. Dog er der allerede nu foretaget\nhandlinger, der skal imødegå det øgede pres.\n\nØkonomi og finansiering\nDet er endnu uvist, hvilke økonomiske konsekvenser den ændrede fordelingsmodel har for\nLejre Kommune."
+     "tekst": "Udlændinge- og Integrationsministeriet har i september 2026 offentliggjort en ændring af modellen for fordeling af fordrevne fra\nUkraine til landets kommuner. Formålet med den ændrede fordelingsmodel er at skabe en mere balanceret fordeling mellem\nkommunerne, idet den nye model tager større hensyn til, hvor mange ikke-vestlige indvandrere, der allerede bor i de enkelte\nkommuner. Fordelingen beregnes fremover i grupper á 5.000 personer fremfor 10.000.\nFor Lejre Kommune betyder den nye fordelingsmodel, at kommunens forholdsmæssige andel ændres. Efter den hidtidige\nmodel skulle Lejre Kommune modtage 25 fordrevne fra Ukraine for hver 5.000 fordrevne, der skulle tildeles kommunen. Efter\nden nye model skal Lejre Kommune modtage 32 fordrevne pr. 5.000 personer.\nI 2025 blev der tildelt ca. 13.500 opholdstilladelser efter særloven i Danmark, men det forventes at færre vil få ophold efter\nsærloven fremadrettet. Når personer får opholdstilladelse efter særloven, visiteres de til en kommune, som herefter overtager\nintegrationsansvaret og en boligforpligtigelse for vedkommende.\nBoligforpligtigelse\nFordrevne, der visiteres til Lejre Kommune, indkvarteres i første omgang i en midlertidig bolig, indtil der kan findes en egnet\npermanent bolig. Den midlertidige indkvartering skal dermed fungere som en overgangsløsning.\nDen ændrede fordelingsmodel medfører, at Lejre Kommune fremover kan forvente at modtage en større andel af de fordrevne\nfra Ukraine, hvilket også må forventes at medføre et yderligere pres på de midlertidige indkvarteringer. Presset på de\nmidlertidige boliger afhænger ikke kun af antallet af nyvisiterede flygtninge, men også af hvor hurtigt der kan findes egnede\npermanente boliger. Der er ikke formelle krav til det permanente boligtilbud, men det skal vurderes egnet til at understøtte\n\nborgerens integration og gennemførelse af borgerens integrationsprogram, hvilket blandt andet handler om, at der skal være en\nrimelig adgang til offentlig transport.\nAllerede nu oplever Lejre Kommune udfordringer med at have tilstrækkeligt med midlertidige boliger. Derfor har\nadministrationen haft fokus på at sikre en tydelig og ensartet praksis for overgangen fra midlertidig til permanent bolig. Som led\nheri er praksis blevet tydeliggjort, således at borgere tilbydes én egnet permanent bolig. Det betyder også, at kommunen\ndermed har opfyldt sin boligforpligtigelse. Hvis vedkommende ikke ønsker at tage imod den permanente bolig, som kommunen\nstiller til rådighed, vil man fremadrettet selv være ansvarlige for at finde en anden bolig, og skal dermed fraflytte det midlertidige\nboligtilbud. Flygtningene har desuden altid mulighed for selv at finde et boligtilbud uden kommunal støtte.\nFormålet med denne praksis er at sikre en hensigtsmæssig anvendelse af kommunens begrænsede antal midlertidige boliger\nog samtidigt skabe en klar og forudsigelig ramme for borgerne i forbindelse med overgangen til permanent bolig.\nUdover tydeliggørelse af praksis undersøger administrationen også muligheden for at ombygge en ejendom, som tidligere har\nværet anvendt til akutboliger. Det forventes, at den ombyggede ejendom vil indgå i antallet af midlertidige boliger og på sigt skal\nvære med til at udfase antallet af midlertidige boliger hos private værter.\n\nAdministrationens vurdering\nAdministrationen vurderer, at den ændrede fordelingsmodel for fordrevne fra Ukraine vil\nmedføre, at Lejre Kommune skal modtage en større andel fordrevne, hvilket vil medføre et\nøget pres på kommunens midlertidige boligindkvartering. Dog er der allerede nu foretaget\nhandlinger, der skal imødegå det øgede pres.\n\nØkonomi og finansiering\nDet er endnu uvist, hvilke økonomiske konsekvenser den ændrede fordelingsmodel har for\nLejre Kommune."
     }
    ],
    "bilag": []
@@ -11552,12 +11609,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=b9721cb6-8975-457b-afbb-b372fadcc150",
-   "hentet": "2026-10-26T12:14:29.453Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=c019f54f-6fd3-49e4-9cdc-6ea1801b5853",
+   "hentet": "2026-11-04T12:12:29.745Z",
    "titel": "JAI - Udpegning af vinder af Lejre Kommunes Rummelighedspris 2026",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Udvalget udpegede en vinder af Rummelighedspris 2026.\nAfbud: Tina Mandrup"
+    },
     {
      "titel": "Resumé",
      "tekst": "Udvalget besluttede på mødet den 5. september 2026, sag nr. 5, at uddele Lejre\nKommunes Rummelighedspris 2026.\nI denne sag præsenteres de indkomne indstillinger med henblik på, at udvalget skal\nudpege en vinder.\nDer er modtaget 8 indstillinger vedrørende 6 virksomheder."
@@ -11572,7 +11633,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Lejre Kommunes Rummelighedspris uddeles til virksomheder hjemmehørende i Lejre Kommune, der opfylder et eller flere af\nnedenstående kriterier:\nAt virksomheden har bidraget til (udviklingen af) det rummelige arbejdsmarked for borgere bosiddende i Lejre\nKommune\nAt virksomheden har bidraget til udvikling i beskæftigelsen\nAt virksomheden har integreret personer, der har haft svært ved at finde fodfæste på arbejdsmarkedet\nAt virksomheden har hjulpet integrationsborgere i virksomhedspraktik, job med løntilskud eller i ordinære job\nAt virksomheden har ansat medarbejdere i job på særlige vilkår, eksempelvis skånejob eller fleksjob\nAt virksomheden har oprettet uddannelsesplads(er) for unge\nAt virksomheden har gjort en særlig indsats for at fastholde medarbejdere, som er, eller var, i fare for at miste jobbet\nDer har været lagt vægt på, at virksomhedens indsats ikke behøver at have været et større projekt, men at det vigtigste er, at\nindsatsen har fastholdt medarbejdere i job eller integreret medarbejdere i virksomheden.\nAdministrationen har annonceret i lokalavisen samt på Facebook.\nVed ansøgningsfristens udløb er modtaget 8 indstillinger vedrørende 6 virksomheder.\nKandidaterne er:\nArgo Torkilstrup\nRema 1000 Hvalsø\n\nRema 1000 Kirke Hyllinge\nRema 1000 Gevninge\nCircle K i Kirke Såby\nMB service og autoteknik\nIndstillingerne er vedlagt som bilag. Indstillingerne indeholder beskrivelser af personer og ansatte af personfølsom karakter.\nBilaget er derfor lukket.\nDen videre proces for overrækkelse af prisen:\n3. november 2026\n\nUdvalget udpeger en vinder af Rummelighedsprisen 2026\n\n4.-5. november 2026\n\nUdvalgsformanden kontakter vinderen.\n\n6.-13.november2026\n\nAdministrationen aftaler herefter dato for prisoverrækkelse med vinderen.\n\nNovember/december 2026\n\nPrisoverrækkelse\n\nØkonomi og finansiering\nSom besluttet på udvalgets møde den 8. september 2026, sag nr. 5, afholdes udgiften til\nannoncering, selve prisen og traktement i forbindelse med prisoverrækkelsen af udvalgets\nbudget i 2026. I alt 9.000 kr."
+     "tekst": "Lejre Kommunes Rummelighedspris uddeles til virksomheder hjemmehørende i Lejre Kommune, der opfylder et eller flere af\nnedenstående kriterier:\nAt virksomheden har bidraget til (udviklingen af) det rummelige arbejdsmarked for borgere bosiddende i Lejre\nKommune\nAt virksomheden har bidraget til udvikling i beskæftigelsen\nAt virksomheden har integreret personer, der har haft svært ved at finde fodfæste på arbejdsmarkedet\nAt virksomheden har hjulpet integrationsborgere i virksomhedspraktik, job med løntilskud eller i ordinære job\nAt virksomheden har ansat medarbejdere i job på særlige vilkår, eksempelvis skånejob eller fleksjob\nAt virksomheden har oprettet uddannelsesplads(er) for unge\nAt virksomheden har gjort en særlig indsats for at fastholde medarbejdere, som er, eller var, i fare for at miste jobbet\nDer har været lagt vægt på, at virksomhedens indsats ikke behøver at have været et større projekt, men at det vigtigste er, at\nindsatsen har fastholdt medarbejdere i job eller integreret medarbejdere i virksomheden.\nAdministrationen har annonceret i lokalavisen samt på Facebook.\n\nVed ansøgningsfristens udløb er modtaget 8 indstillinger vedrørende 6 virksomheder.\nKandidaterne er:\nArgo Torkilstrup\nRema 1000 Hvalsø\nRema 1000 Kirke Hyllinge\nRema 1000 Gevninge\nCircle K i Kirke Såby\nMB service og autoteknik\nIndstillingerne er vedlagt som bilag. Indstillingerne indeholder beskrivelser af personer og ansatte af personfølsom karakter.\nBilaget er derfor lukket.\nDen videre proces for overrækkelse af prisen:\n3. november 2026\n\nUdvalget udpeger en vinder af Rummelighedsprisen 2026\n\n4.-5. november 2026\n\nUdvalgsformanden kontakter vinderen.\n\n6.-13.november2026\n\nAdministrationen aftaler herefter dato for prisoverrækkelse med vinderen.\n\nNovember/december 2026\n\nPrisoverrækkelse\n\nØkonomi og finansiering\nSom besluttet på udvalgets møde den 8. september 2026, sag nr. 5, afholdes udgiften til\nannoncering, selve prisen og traktement i forbindelse med prisoverrækkelsen af udvalgets\nbudget i 2026. I alt 9.000 kr."
     }
    ],
    "bilag": []
@@ -11582,12 +11643,17 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=b9721cb6-8975-457b-afbb-b372fadcc150",
-   "hentet": "2026-10-26T12:14:29.453Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=c019f54f-6fd3-49e4-9cdc-6ea1801b5853",
+   "hentet": "2026-11-04T12:12:29.745Z",
    "titel": "JAI - Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet under dette punkt.\nAfbud: Tina Mandrup"
+    }
+   ],
    "bilag": []
   },
   "lejre-2026-11-03-udvalget-for-job-arbejdsmarked-integration-8": {
@@ -11595,10 +11661,10 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Job, Arbejdsmarked & Integration",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=b9721cb6-8975-457b-afbb-b372fadcc150",
-   "hentet": "2026-10-26T12:14:29.453Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=c019f54f-6fd3-49e4-9cdc-6ea1801b5853",
+   "hentet": "2026-11-04T12:12:29.745Z",
    "titel": "JAI - Godkendelse af referat",
    "afsnit": [],
    "bilag": []
@@ -11608,12 +11674,17 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=c98fe1a7-bdb8-4226-83a5-378d1247c1b3",
-   "hentet": "2026-10-26T18:43:13.494Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=141f9ec1-1d77-41dc-b6c3-b164063d0550",
+   "hentet": "2026-11-04T12:12:41.484Z",
    "titel": "EKLT - Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "lejre-2026-11-03-udvalget-for-erhverv-klima-lokal-udvikling-turisme-2": {
@@ -11621,12 +11692,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=c98fe1a7-bdb8-4226-83a5-378d1247c1b3",
-   "hentet": "2026-10-26T18:43:13.494Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=141f9ec1-1d77-41dc-b6c3-b164063d0550",
+   "hentet": "2026-11-04T12:12:41.484Z",
    "titel": "EKLT - Orientering november 2026",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
+    },
     {
      "titel": "Resumé",
      "tekst": "A. Evaluering af Klimaugen\nI år var det sjette gang, der blev afholdt Klimauge i Lejre Kommune. I Lejre Kommunes klimaplan, handling 6.1, indgår\nen årlig Klimauge. Formålet med Klimaugen er at sikre involvering, koordinering og formidling af klimaomstillingen.\nUdvalget for Erhverv, Klima, Lokal udvikling & Turisme besluttede den 14. april 2026, sag nr. 4, at Lejre Kommune\nskulle afholde Klimauge i 2026 fra den 4. - 13. september.\nI forbindelse med årets klimauge har borgere, foreninger og virksomheder kunnet søge op til 8.000 kr. til et\nklimaarrangement. I år var tre temaer udvalgt. Klimaarrangementer, der understøttede de udvalgte temaer, havde en\nfordel i vurderingen af ansøgninger. Temaerne var: A) Fællesskaber om energi og varme, B) Landskab, natur og klima,\nC) Børn, unge og klimaomstilling. Alle temaer var repræsenteret i ansøgningerne til Klimaugepuljen.\nSamlet set har lokale arrangører under Klimaugen 2026 opnået tilsagn for 77.250 kr. fordelt på 11 arrangementer med\nen geografisk spredning på tværs af hele Lejre Kommune (bilag 1). Af de 109.300 kr. i puljen, er der dermed 32.050 kr.\ntil rest. Heraf anvendes ca. 25.000 kr. på kommunikationsindsatser i forbindelse med klimaugen. Blandt andet er der i år\ninvesteret i bannere, som kan genbruges over flere år.\nDertil kommer en række klimaarrangementer, som ikke har søgt støtte samt Lejre Kommunes egne\nklimaarrangementer. I alt var der 27 arrangementer på programmet (bilag 2). Udover arrangementer i det officielle\nprogram deltog flere af kommunens folkeskoler i Klimaugen 2026 med undervisning om natur og grøn omstilling. Blandt\nandet havde Hvalsø Skole arrangeret et verdenskor med omkring 50 børn fra Lejre Kommune, der sammen med børn\nfra Nepal, Zimbabwe, Tanzania, Færøerne, Østrig, Tyskland og Holland åbnede Klimaugen med sange om håb.\n\nB. Orientering om iværksætterugen - uge 46\nSom led i den erhvervspolitiske handlingsplan for 2026 gennemføres i uge 46 Lejre Kommunes iværksætteruge. Det\nsker netop i denne uge, fordi det også er den nationale iværksætteruge. Der vil være en række aktiviteter i løbet af\nugen. Det gælder arrangement med Erhvervshus Sjælland, vi er tilstede på bibliotekerne i kommunen,\nerhvervskonferencen ERKO26 med fokus på iværksætteri og entreprenørskab samt et sneak peak arrangement i det\nkommende kontorfællesskab Kobl på Søtorvet i Hvalsø.\nBilag med aktiviteterne i uge 46 er vedhæftet (bilag 3).\n\nC. Orientering om erhvervskonferencen ERKO26 den 12. november 2026\nDer gives en mundtlig status på planlægning og gennemførelse af erhvervskonferencen ERKO26 på Ledreborg Slot den\n12. november 2026.\n\nD. Orientering fra mødet i Erhvervsrådet den 29. oktober 2026\nDer gives en mundtlig orientering om drøftelserne på Erhvervsrådets møde den 29. oktober 2026, hvor fokus var\ndrøftelse af udkast til erhvervspolitisk handlingsplan for 2027."
@@ -11639,12 +11714,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=c98fe1a7-bdb8-4226-83a5-378d1247c1b3",
-   "hentet": "2026-10-26T18:43:13.494Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=141f9ec1-1d77-41dc-b6c3-b164063d0550",
+   "hentet": "2026-11-04T12:12:41.484Z",
    "titel": "EKLT - Besøg fra Erhvervshus Sjælland",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
+    },
     {
      "titel": "Resumé",
      "tekst": "Erhvervshus Sjælland er en tæt samarbejdspartner for den lokale erhvervsservice i Lejre\nKommune.\nDerfor afholder Udvalget for Erhverv, Klima, Lokal udvikling & Turisme et årligt møde med\ndirektøren for Erhvervshus Sjælland.\nPå mødet gives en status for samarbejdet og det kommende års samarbejde drøftes."
@@ -11659,7 +11738,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Erhvervshus Sjælland er en tæt samarbejdspartner for den lokale erhvervsservice i Lejre\nKommune. Derfor afholder Udvalget for Erhverv, Klima, Lokal udvikling & Turisme et årligt\nstatusmøde med direktøren for Erhvervshus Sjælland, Line Fossing Riel.\nErhvervshus Sjælland er regional erhvervsfremmeoperatør og varetager opgaver vedrørende\nrådgivning af virksomheder og administration af puljemidler fra blandt andet EU. Lejre\nKommune medfinansierer lovpligtigt Erhvervshus Sjælland på basis af indbyggertal med ca.\n900.000 kr. i 2026 fra erhvervsbudgettet.\nMødets formål er at få en status på erhvervshusets aktiviteter og drøfte samarbejdet med\nerhvervshuset. Det forventes, at direktøren vil præsentere erhvervshuset, deres tilbud til\nvirksomhederne, resultater samt mulighederne for fælles samarbejde med den lokale\nerhvervsservice i 2027. Herefter vil der være spørgsmål og dialog.\nDer har været en stor nedgang i de puljemidler, Erhvervshus Sjælland har til rådighed i 2026,\nhvilket betyder, at det ikke bliver muligt at nå de mål, der er opstillet i Lejre Kommunes\nerhvervspolitiske handlingsplan for 2026 i forhold til tiltrækning af puljemidler med videre til\nvirksomheder i kommunen."
+     "tekst": "Erhvervshus Sjælland er en tæt samarbejdspartner for den lokale erhvervsservice i Lejre\nKommune. Derfor afholder Udvalget for Erhverv, Klima, Lokal udvikling & Turisme et årligt\nstatusmøde med direktøren for Erhvervshus Sjælland, Line Fossing Riel.\nErhvervshus Sjælland er regional erhvervsfremmeoperatør og varetager opgaver vedrørende\nrådgivning af virksomheder og administration af puljemidler fra blandt andet EU. Lejre\nKommune medfinansierer lovpligtigt Erhvervshus Sjælland på basis af indbyggertal med ca.\n900.000 kr. i 2026 fra erhvervsbudgettet.\nMødets formål er at få en status på erhvervshusets aktiviteter og drøfte samarbejdet med\nerhvervshuset. Det forventes, at direktøren vil præsentere erhvervshuset, deres tilbud til\nvirksomhederne, resultater samt mulighederne for fælles samarbejde med den lokale\nerhvervsservice i 2027. Herefter vil der være spørgsmål og dialog.\nDer har været en stor nedgang i de puljemidler, Erhvervshus Sjælland har til rådighed i 2026,\nhvilket betyder, at det ikke bliver muligt at nå de mål, der er opstillet i Lejre Kommunes\n\nerhvervspolitiske handlingsplan for 2026 i forhold til tiltrækning af puljemidler med videre til\nvirksomheder i kommunen."
     }
    ],
    "bilag": []
@@ -12414,12 +12493,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=c98fe1a7-bdb8-4226-83a5-378d1247c1b3",
-   "hentet": "2026-10-26T18:43:13.494Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=141f9ec1-1d77-41dc-b6c3-b164063d0550",
+   "hentet": "2026-11-04T12:12:41.484Z",
    "titel": "EKLT - Proces for vedvarende energi i Lejre Kommune",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingerne tiltrådt."
+    },
     {
      "titel": "Resumé",
      "tekst": "Lejre Kommune har en målsætning om 225 GWh/år ny vedvarende energi (VE) inden\n2035, og Kommuneplan 2025 beskriver blandt andet processen for inddragelse af\nlokalsamfundene omkring nye VE-anlæg.\nPå baggrund af ny vejledning om lovlige hensyn ved planlægning for VE, ændrede\nmarkedsvilkår og ny viden om borgerinddragelse foreslås en justeret proces for nye VEanlæg. Kommunalbestyrelsen blev introduceret til emnet på temamøde den 20. april\nMed denne sag forelægges forslag til Lejremodellen for vedvarende energianlæg til\npolitisk behandling. Modellen beskriver, hvordan Lejre Kommune rammesætter og\nfaciliterer dialogen og samspillet mellem lokalsamfund, opstiller og kommune om\nudviklingen af potentielle nye VE-anlæg."
@@ -12434,7 +12517,7 @@
     },
     {
      "titel": "Baggrund",
-     "tekst": "Lejre Kommune har med Klimaplan 2025 vedtaget en målsætning om 225 GWh/år ny VE-produktion i 2035. Kommuneplan\n2025 udpeger egnede områder til vindmøller og solcelleanlæg og beskriver en overordnet proces, der skal sikre lokal\ninddragelse og værdiskabelse i forbindelse med planlægning af nye VE-anlæg (se bilag 1).\nSiden vedtagelsen af Kommuneplan 2025 har Plan- og Landdistriktsstyrelsen udgivet en ny vejledning om lovlige hensyn ved\nplanlægning for VE (se bilag 2), og markedsvilkårene for VE-anlæg har ændret sig. Desuden er der skabt yderligere erfaringer\nog viden om, hvordan kommuner kan rammesætte og facilitere VE-processer, så VE-anlæg kan medvirke til lokal udvikling.\nPå den baggrund har administrationen udarbejdet et forslag til en justeret og mere konkret proces for nye VE-anlæg i Lejre\nKommune, kaldet Lejremodellen for vedvarende energianlæg (se bilag 3 og 4). Modellen viderefører intentionerne i\nKommuneplan 2025 om lokal inddragelse og værdiskabelse, men tilpasses de gældende planmæssige rammer og den nyeste\nviden om VE-processer.\nLokalsamfundsperspektiv: Inddragelse og lokal værdiskabelse\nStaten har vedtaget en række obligatoriske kompensationsordninger, der skal tilgodese tætte naboer til nye VE-anlæg, som\noplever forringelse af bygningers økonomiske værdi eller brugs-værdi på grund af anlægget. Det er desuden obligatorisk, at VE-\n\nopstillere ved nettilslutning indbetaler et engangsbeløb afhængigt af anlæggets kapacitet til en Grøn Pulje, som skal tilgodese\nlokale udviklingsprojekter.\nKommuner har mulighed for, som supplement til den generelle planproces for VE-anlæg, at rammesætte og facilitere\ninddragelse af lokalsamfund omkring VE-anlæg. Overordnet viser forskningen og erfaringerne fra andre kommuner gennem de\nsenere år, at VE-anlæg kan opnå større lokal opbakning og bidrage til lokal udvikling, når procesdesignet er karakteriseret ved\ntidlig og helhedsorienteret inddragelse i planlægningen; tydelig forpligtelse af opstiller til at indgå i dialog med lokalsamfund;\nkommunal rammesætning og understøttelse af dialogen; samt transparens omkring processen.\nOpstillerperspektiv: Markedet for vedvarende energianlæg\nSiden vedtagelsen af Kommuneplan 2025 har markedet for VE og teknologierne udviklet sig, og der er gjort flere erfaringer med\nVE-processer. Administrationen har derfor været i dialog med en række forskellige VE-opstillere for at høre til deres oplevelse\naf mulighederne for at opstille VE i Lejre Kommune.\nIfølge opstillerne er det blevet vanskeligere at få økonomien til at hænge sammen, blandt andet på grund af lave elpriser og\nhøje tilslutningsomkostninger. I forhold til solcelleanlæg betyder det blandt andet, at batterianlæg opfattes som forudsætning for,\nat et anlæg er rentabelt, og at minimumsarealet er 50-100 hektar, hvilket er højere end tidligere. I forhold til vindmøller kan flere\nopstillere ikke forestille sig vindmøller på under 150 meter. Afstanden til nettilslutning kan for både solceller og vindmøller være\nafgørende for økonomien.\nOpstillerne efterspørger færre tekniske detailkrav og større fleksibilitet i projektudformningen med henblik på at afklare dette\ngennem dialog mellem opstiller, lokalsamfund og kommune. Opstillerne hilser en veltilrettelagt dialog med krav til opstillerne\nvelkommen, og efterspørger forudsigelighed i den kommunale proces, herunder politisk vedholdenhed i forhold til at\ngennemføre planlagte processer, også hvis der kommer modstand.\nOplæg til Lejremodel for vedvarende energianlæg\nPå baggrund af ovenstående samt procesbeskrivelsen i Kommuneplan 2025 har administrationen udarbejdet et forslag til en\nLejremodel for vedvarende energianlæg (se bilag 3 og 4). Grundlæggende er tilgangen den samme som i Kommuneplan 2025,\ndog med følgende overordnede, metodiske ændringer:\nFra faste kriterier til dialog og inddragelse: I procesbeskrivelsen i Kommuneplan 2025 er opstillet en række kriterier for VEanlæg (se bilag 1, side 8-9). Plan- og Landdistriktsstyrelsens “Vejledning i lovlige hensyn ved planlægning af VE-anlæg” fra\ndecember 2025 (se bilag 2), fastslår, at det ikke er lovlige hensyn at stille krav om blandt andet lokal opbakning, kompensation\naf naboer udover de obligatoriske ordninger og lokalt medejerskab. Samtidig viser erfaringerne fra andre kommuner, at der er\nstor forskel på, hvilke ønsker lokalsamfund omkring et VE-anlæg har til merværdier i forbindelse med projektet. Oplægget til\nLejremodellen beskriver fortsat nogle overordnede værdier, som Lejre Kommune ønsker afspejlet i nye VE-anlæg (se bilag 1),\nmen flytter vægten fra på forhånd definerede kriterier for VE-anlæg til en solid inddragelse af lokalsamfundet.\nI Lejremodellen tager kommunen en aktiv rolle i at rammesætte og understøtte dialogfasen, blandt andet ved at stille\nkonsulentbistand til rådighed for lokalsamfundet. Inddragelsen sker forud for eventuel igangsættelse af lokalplanproces.\nHermed kan dialogfasen have et bredere fokus end selve lokalplanområdet og møde lokalsamfundet omkring et eventuelt nyt\nVE-anlæg i en helhedsorienteret dialog om udviklingen af området. Beslutningen om igangsættelse af lokalplanproces kan\ntræffes på baggrund af blandt andet forløbet af denne dialog.\nTidlig politisk inddragelse: I procesbeskrivelsen i Kommuneplan 2025 kommer et potentielt nyt VE-anlæg først til politisk\nbehandling, når der skal træffes beslutning om eventuel igangsættelse af lokalplan og kommuneplantillæg. Det er imidlertid\nadministrationens vurdering, at der allerede er brug for politisk stillingtagen til, om der skal igangsættes en dialogfase. En\npolitisk beslutning om igangsættelse af en dialogfase forpligter ikke Lejre Kommune til siden at igangsætte lokalplan- og\nkommuneplanproces for projektet. Formålet er at sikre, at der ikke bruges ressourcer på et projekt, som ikke har politisk\nopbakning i udgangspunktet, samt at skabe transparens og tryghed for alle parter omkring den kommende proces.\n\nHvis Udvalget for Erhverv, Klima, Lokal udvikling & Turisme samt Udvalget for Trafik, Miljø & Byggeri træffer beslutning om at\nigangsætte en tidlig, helhedsorienteret inddragelse af lokalsamfundet i bred forstand, kræver det, at Lejre Kommune afsætter\nbåde medarbejderressourcer og økonomi til eksterne konsulenter.\n\nAdministrationens vurdering\nAdministrationen har som grundlag for forslaget til Lejremodellen for vedvarende energianlæg foretaget en omfattende research\nom nyeste viden og erfaringer om VE-processer, og har været i dialog med forskere, rådgivere, medarbejdere i andre\nkommuner samt opstillere.\nAdministrationen vurderer, at forslaget er i tråd med intentionerne om borgerinddragelse i forbindelse med Plan- og\nBæredygtighedsstrategi 2023 og Kommuneplan 2025 om lokal inddragelse i VE-anlæg. Processen tager samtidigt højde for\nVE-opstilleres behov for gennemsigtighed og konsekvens i procesdesignet samt kommunalt engagement i dialog med både\nopstillere og borgere. Det er derfor samlet set administrationens vurdering, at den foreslåede proces indenfor rammerne af\nPlanloven og Kommuneplan 2025 skaber de bedst mulige betingelser for at nå målsætningen om 225 GWh/år ny VE i Lejre\nKommune senest i 2035.\nVejledningen fra Plan- og Landdistriktsstyrelsen betyder, at der skal ske mindre ændringer i Kommuneplanens kapitel 5.2 om\nEnergiforsyning (se bilag 1), særligt det afsnit, der beskriver den overordnede procedure for inddragelse af naboer og\ninteressenter i planlægningen for VE-anlæg. Den type af justeringer håndteres typisk ved næstkommende\nkommuneplanrevision.\nFor at være mere tydelig over for naboer og opstillere kan det overvejes, om der skal udarbejdes et kommuneplantillæg, der\ntilpasser proceduren til den foreslåede Lejremodel. Et kommuneplantillæg kan eksempelvis udarbejdes i forbindelse med det\nnæstkommende VE-projekt, der ønskes realiseret i Lejre Kommune. Her vil det også være muligt at genvurdere de tekniske\nkrav, der er fastsat i retningslinjerne på baggrund af dialogen med opstillerne og selvfølgelig det, der aftales i dialogen om det\nkonkrete VE-projekt.\nHjemmeside om vedvarende energi\nFor at et muligt VE-projekt ikke skal bremses af eventuel udarbejdelse af nyt kommuneplantillæg eller ny kommuneplan,\nforeslår administrationen, at den nye Lejremodel for VE kommunikeres på en ny hjemmeside. Administrationen har udarbejdet\net forslag hertil, som informerer grundigt om rammer og proces for nye VE-anlæg i Lejre Kommune.\nHjemmesiden skal blandt andet fungere som afsæt for dialog med opstillere og give borgerne indsigt i, hvordan og hvornår de\nkan forvente at blive inddraget i forbindelse med nye VE-anlæg. Kommunalbestyrelsen gives eksklusiv adgang til hjemmesiden,\nsom justeres og offentliggøres efter denne sag.\nI Klimaplan 2025 er der fokus på, at Lejre Kommune understøtter energifællesskaber og fælles varmeløsninger blandt private\nog erhverv (handling 1.1 og 1.5 i Klimaplan 2025). Administrationen anbefaler derfor, at Lejre Kommune er åben overfor VEprojekter udenfor positivområder, hvis borgerdrevne energifællesskaber har interesse herfor, og at dette kommunikeres på\nhjemmesiden.\n\nDer er ændringer i teknologi og markedsvilkår (se afsnittet “Opstillerperspektiv: Markedet for vedvarende\nenergianlæg”). For at øge sandsynligheden for at få etableret VE, vurderer administrationen, at det er\nhensigtsmæssigt at kommunikere på hjemmesiden, at Lejre Kommune er åben for dialog om afvigelser fra\nKommuneplan 2025. Hermed gives et signal til opstillerne om, at selv om de er udenfor kerneområdet af det, der\ninviteres til fra kommunen, kan de henvende sig. Så bliver der anledning til en dialog, hvor kommunen kan vurdere,\nom det konkret kan tillades. Det kan eksempelvis være, hvis der er tungtvejende faglige argumenter for at øge\nhøjden på vindmøller eller areal af solceller.\n\nOvenstående er alene et signal om åbenhed for dialog og ændrer ikke på Kommuneplan 2025. Den videre dialog\nsker i givet fald via Lejremodellen for vedvarende energianlæg, hvor det er Udvalget for Erhverv, Klima, Lokal\nudvikling & Turisme samt Udvalget for Trafik, Miljø & Byggeri, der træffer beslutning om, om der skal igangsættes\ndialogfase for et givet projektforslag (jf. trin 3, bilag 3). Afvigelser fra krav og retningslinjer i Kommuneplan 2025 for\nkonkrete VE-projekter kræver godkendelse af Kommunalbestyrelsen i et kommuneplantillæg.\nVurdering af klimapåvirkning\nSagen har i sig selv ikke en klimapåvirkning, men understøtter udbygningen af vedvarende energianlæg.\nUdbygningen af vindmøller og solceller på land er vigtig for at nå den nationale målsætning om, at elproduktionen skal være\nfossilfri i 2030. Hvis VE-produktionen jævnfør målsætningen i Klimaplan 2025 udvides med 225 GWh/år, bidrager Lejre\nKommune til det fossilfri elsystem, der er en forudsætning for at nå målsætningen om 70 % af CO2-udledningen i samme plan.\nDet fossilfri elsystem er beregnet til at bidrage med en CO2-reduktion på 16.000 ton ud af de 81.000 ton, der skal reduceres\n\nØkonomi og finansiering\nSagen har ikke i sig selv økonomiske konsekvenser. Hvis Udvalget for Erhverv, Klima, Lokal Udvikling & Turisme samt\nUdvalget for Trafik, Miljø & Byggeri beslutter at igangsætte en dialogfase for et konkret VE-anlæg, vil det indebære et behov for\nat prioritere medarbejderressourcer og afsætte midler til ekstern konsulentbistand. Udgiften hertil forventes, afhængigt af\nprojektets størrelse og kompleksitet, at udgøre 250.000-500.000 kr. De nødvendige bevillinger vil blive søgt og finansieret, når\net konkret projekt er aktuelt.\nVed etablering af nye VE-anlæg er der to ordninger, som udløser økonomisk tilskud til gavn for både lokalsamfund og\nkommune:\nGrøn pulje er en obligatorisk ordning under VE-loven, hvor opstiller ved nettilslutning betaler et beløb afhængigt af\nanlæggets kapacitet. Midlerne administreres af kommunen og kan søges til projekter, der gavner naboer og\nlokalsamfund. Kommunen kan anvende op til 8 % af de indbetalte midler til administration af ordningen.\nKommunalbestyrelsen vil få forelagt en sag om beslutning om udmøntning af Grøn Pulje primo 2027.\nVE-tilskud til kommuner er en statsligt finansieret tilskudsordning, hvor der i 2026-2035 årligt fordeles 200 mio. kr. til\nkommuner, der bidrager til udbygningen af vedvarende energi. Tilskuddet fordeles blandt andet ud fra nytilsluttet VEkapacitet og eksisterende VE-produktion. Det udbetales direkte til kommunen og er ikke øremærket bestemte formål."
+     "tekst": "Lejre Kommune har med Klimaplan 2025 vedtaget en målsætning om 225 GWh/år ny VE-produktion i 2035. Kommuneplan\n2025 udpeger egnede områder til vindmøller og solcelleanlæg og beskriver en overordnet proces, der skal sikre lokal\ninddragelse og værdiskabelse i forbindelse med planlægning af nye VE-anlæg (se bilag 1).\nSiden vedtagelsen af Kommuneplan 2025 har Plan- og Landdistriktsstyrelsen udgivet en ny vejledning om lovlige hensyn ved\nplanlægning for VE (se bilag 2), og markedsvilkårene for VE-anlæg har ændret sig. Desuden er der skabt yderligere erfaringer\nog viden om, hvordan kommuner kan rammesætte og facilitere VE-processer, så VE-anlæg kan medvirke til lokal udvikling.\nPå den baggrund har administrationen udarbejdet et forslag til en justeret og mere konkret proces for nye VE-anlæg i Lejre\nKommune, kaldet Lejremodellen for vedvarende energianlæg (se bilag 3 og 4). Modellen viderefører intentionerne i\nKommuneplan 2025 om lokal inddragelse og værdiskabelse, men tilpasses de gældende planmæssige rammer og den nyeste\nviden om VE-processer.\n\nLokalsamfundsperspektiv: Inddragelse og lokal værdiskabelse\nStaten har vedtaget en række obligatoriske kompensationsordninger, der skal tilgodese tætte naboer til nye VE-anlæg, som\noplever forringelse af bygningers økonomiske værdi eller brugs-værdi på grund af anlægget. Det er desuden obligatorisk, at VEopstillere ved nettilslutning indbetaler et engangsbeløb afhængigt af anlæggets kapacitet til en Grøn Pulje, som skal tilgodese\nlokale udviklingsprojekter.\nKommuner har mulighed for, som supplement til den generelle planproces for VE-anlæg, at rammesætte og facilitere\ninddragelse af lokalsamfund omkring VE-anlæg. Overordnet viser forskningen og erfaringerne fra andre kommuner gennem de\nsenere år, at VE-anlæg kan opnå større lokal opbakning og bidrage til lokal udvikling, når procesdesignet er karakteriseret ved\ntidlig og helhedsorienteret inddragelse i planlægningen; tydelig forpligtelse af opstiller til at indgå i dialog med lokalsamfund;\nkommunal rammesætning og understøttelse af dialogen; samt transparens omkring processen.\nOpstillerperspektiv: Markedet for vedvarende energianlæg\nSiden vedtagelsen af Kommuneplan 2025 har markedet for VE og teknologierne udviklet sig, og der er gjort flere erfaringer med\nVE-processer. Administrationen har derfor været i dialog med en række forskellige VE-opstillere for at høre til deres oplevelse\naf mulighederne for at opstille VE i Lejre Kommune.\nIfølge opstillerne er det blevet vanskeligere at få økonomien til at hænge sammen, blandt andet på grund af lave elpriser og\nhøje tilslutningsomkostninger. I forhold til solcelleanlæg betyder det blandt andet, at batterianlæg opfattes som forudsætning for,\nat et anlæg er rentabelt, og at minimumsarealet er 50-100 hektar, hvilket er højere end tidligere. I forhold til vindmøller kan flere\nopstillere ikke forestille sig vindmøller på under 150 meter. Afstanden til nettilslutning kan for både solceller og vindmøller være\nafgørende for økonomien.\nOpstillerne efterspørger færre tekniske detailkrav og større fleksibilitet i projektudformningen med henblik på at afklare dette\ngennem dialog mellem opstiller, lokalsamfund og kommune. Opstillerne hilser en veltilrettelagt dialog med krav til opstillerne\nvelkommen, og efterspørger forudsigelighed i den kommunale proces, herunder politisk vedholdenhed i forhold til at\ngennemføre planlagte processer, også hvis der kommer modstand.\nOplæg til Lejremodel for vedvarende energianlæg\nPå baggrund af ovenstående samt procesbeskrivelsen i Kommuneplan 2025 har administrationen udarbejdet et forslag til en\nLejremodel for vedvarende energianlæg (se bilag 3 og 4). Grundlæggende er tilgangen den samme som i Kommuneplan 2025,\ndog med følgende overordnede, metodiske ændringer:\nFra faste kriterier til dialog og inddragelse: I procesbeskrivelsen i Kommuneplan 2025 er opstillet en række kriterier for VEanlæg (se bilag 1, side 8-9). Plan- og Landdistriktsstyrelsens “Vejledning i lovlige hensyn ved planlægning af VE-anlæg” fra\ndecember 2025 (se bilag 2), fastslår, at det ikke er lovlige hensyn at stille krav om blandt andet lokal opbakning, kompensation\naf naboer udover de obligatoriske ordninger og lokalt medejerskab. Samtidig viser erfaringerne fra andre kommuner, at der er\nstor forskel på, hvilke ønsker lokalsamfund omkring et VE-anlæg har til merværdier i forbindelse med projektet. Oplægget til\nLejremodellen beskriver fortsat nogle overordnede værdier, som Lejre Kommune ønsker afspejlet i nye VE-anlæg (se bilag 1),\nmen flytter vægten fra på forhånd definerede kriterier for VE-anlæg til en solid inddragelse af lokalsamfundet.\nI Lejremodellen tager kommunen en aktiv rolle i at rammesætte og understøtte dialogfasen, blandt andet ved at stille\nkonsulentbistand til rådighed for lokalsamfundet. Inddragelsen sker forud for eventuel igangsættelse af lokalplanproces.\nHermed kan dialogfasen have et bredere fokus end selve lokalplanområdet og møde lokalsamfundet omkring et eventuelt nyt\nVE-anlæg i en helhedsorienteret dialog om udviklingen af området. Beslutningen om igangsættelse af lokalplanproces kan\ntræffes på baggrund af blandt andet forløbet af denne dialog.\nTidlig politisk inddragelse: I procesbeskrivelsen i Kommuneplan 2025 kommer et potentielt nyt VE-anlæg først til politisk\nbehandling, når der skal træffes beslutning om eventuel igangsættelse af lokalplan og kommuneplantillæg. Det er imidlertid\nadministrationens vurdering, at der allerede er brug for politisk stillingtagen til, om der skal igangsættes en dialogfase. En\n\npolitisk beslutning om igangsættelse af en dialogfase forpligter ikke Lejre Kommune til siden at igangsætte lokalplan- og\nkommuneplanproces for projektet. Formålet er at sikre, at der ikke bruges ressourcer på et projekt, som ikke har politisk\nopbakning i udgangspunktet, samt at skabe transparens og tryghed for alle parter omkring den kommende proces.\nHvis Udvalget for Erhverv, Klima, Lokal udvikling & Turisme samt Udvalget for Trafik, Miljø & Byggeri træffer beslutning om at\nigangsætte en tidlig, helhedsorienteret inddragelse af lokalsamfundet i bred forstand, kræver det, at Lejre Kommune afsætter\nbåde medarbejderressourcer og økonomi til eksterne konsulenter.\n\nAdministrationens vurdering\nAdministrationen har som grundlag for forslaget til Lejremodellen for vedvarende energianlæg foretaget en omfattende research\nom nyeste viden og erfaringer om VE-processer, og har været i dialog med forskere, rådgivere, medarbejdere i andre\nkommuner samt opstillere.\nAdministrationen vurderer, at forslaget er i tråd med intentionerne om borgerinddragelse i forbindelse med Plan- og\nBæredygtighedsstrategi 2023 og Kommuneplan 2025 om lokal inddragelse i VE-anlæg. Processen tager samtidigt højde for\nVE-opstilleres behov for gennemsigtighed og konsekvens i procesdesignet samt kommunalt engagement i dialog med både\nopstillere og borgere. Det er derfor samlet set administrationens vurdering, at den foreslåede proces indenfor rammerne af\nPlanloven og Kommuneplan 2025 skaber de bedst mulige betingelser for at nå målsætningen om 225 GWh/år ny VE i Lejre\nKommune senest i 2035.\nVejledningen fra Plan- og Landdistriktsstyrelsen betyder, at der skal ske mindre ændringer i Kommuneplanens kapitel 5.2 om\nEnergiforsyning (se bilag 1), særligt det afsnit, der beskriver den overordnede procedure for inddragelse af naboer og\ninteressenter i planlægningen for VE-anlæg. Den type af justeringer håndteres typisk ved næstkommende\nkommuneplanrevision.\nFor at være mere tydelig over for naboer og opstillere kan det overvejes, om der skal udarbejdes et kommuneplantillæg, der\ntilpasser proceduren til den foreslåede Lejremodel. Et kommuneplantillæg kan eksempelvis udarbejdes i forbindelse med det\nnæstkommende VE-projekt, der ønskes realiseret i Lejre Kommune. Her vil det også være muligt at genvurdere de tekniske\nkrav, der er fastsat i retningslinjerne på baggrund af dialogen med opstillerne og selvfølgelig det, der aftales i dialogen om det\nkonkrete VE-projekt.\nHjemmeside om vedvarende energi\nFor at et muligt VE-projekt ikke skal bremses af eventuel udarbejdelse af nyt kommuneplantillæg eller ny kommuneplan,\nforeslår administrationen, at den nye Lejremodel for VE kommunikeres på en ny hjemmeside. Administrationen har udarbejdet\net forslag hertil, som informerer grundigt om rammer og proces for nye VE-anlæg i Lejre Kommune.\nHjemmesiden skal blandt andet fungere som afsæt for dialog med opstillere og give borgerne indsigt i, hvordan og hvornår de\nkan forvente at blive inddraget i forbindelse med nye VE-anlæg. Kommunalbestyrelsen gives eksklusiv adgang til hjemmesiden,\nsom justeres og offentliggøres efter denne sag.\nI Klimaplan 2025 er der fokus på, at Lejre Kommune understøtter energifællesskaber og fælles varmeløsninger blandt private\nog erhverv (handling 1.1 og 1.5 i Klimaplan 2025). Administrationen anbefaler derfor, at Lejre Kommune er åben overfor VEprojekter udenfor positivområder, hvis borgerdrevne energifællesskaber har interesse herfor, og at dette kommunikeres på\nhjemmesiden.\n\nDer er ændringer i teknologi og markedsvilkår (se afsnittet “Opstillerperspektiv: Markedet for vedvarende\nenergianlæg”). For at øge sandsynligheden for at få etableret VE, vurderer administrationen, at det er\nhensigtsmæssigt at kommunikere på hjemmesiden, at Lejre Kommune er åben for dialog om afvigelser fra\nKommuneplan 2025. Hermed gives et signal til opstillerne om, at selv om de er udenfor kerneområdet af det, der\ninviteres til fra kommunen, kan de henvende sig. Så bliver der anledning til en dialog, hvor kommunen kan vurdere,\n\nom det konkret kan tillades. Det kan eksempelvis være, hvis der er tungtvejende faglige argumenter for at øge\nhøjden på vindmøller eller areal af solceller.\nOvenstående er alene et signal om åbenhed for dialog og ændrer ikke på Kommuneplan 2025. Den videre dialog\nsker i givet fald via Lejremodellen for vedvarende energianlæg, hvor det er Udvalget for Erhverv, Klima, Lokal\nudvikling & Turisme samt Udvalget for Trafik, Miljø & Byggeri, der træffer beslutning om, om der skal igangsættes\ndialogfase for et givet projektforslag (jf. trin 3, bilag 3). Afvigelser fra krav og retningslinjer i Kommuneplan 2025 for\nkonkrete VE-projekter kræver godkendelse af Kommunalbestyrelsen i et kommuneplantillæg.\nVurdering af klimapåvirkning\nSagen har i sig selv ikke en klimapåvirkning, men understøtter udbygningen af vedvarende energianlæg.\nUdbygningen af vindmøller og solceller på land er vigtig for at nå den nationale målsætning om, at elproduktionen skal være\nfossilfri i 2030. Hvis VE-produktionen jævnfør målsætningen i Klimaplan 2025 udvides med 225 GWh/år, bidrager Lejre\nKommune til det fossilfri elsystem, der er en forudsætning for at nå målsætningen om 70 % af CO2-udledningen i samme plan.\nDet fossilfri elsystem er beregnet til at bidrage med en CO2-reduktion på 16.000 ton ud af de 81.000 ton, der skal reduceres\n\nØkonomi og finansiering\nSagen har ikke i sig selv økonomiske konsekvenser. Hvis Udvalget for Erhverv, Klima, Lokal Udvikling & Turisme samt\nUdvalget for Trafik, Miljø & Byggeri beslutter at igangsætte en dialogfase for et konkret VE-anlæg, vil det indebære et behov for\nat prioritere medarbejderressourcer og afsætte midler til ekstern konsulentbistand. Udgiften hertil forventes, afhængigt af\nprojektets størrelse og kompleksitet, at udgøre 250.000-500.000 kr. De nødvendige bevillinger vil blive søgt og finansieret, når\net konkret projekt er aktuelt.\nVed etablering af nye VE-anlæg er der to ordninger, som udløser økonomisk tilskud til gavn for både lokalsamfund og\nkommune:\nGrøn pulje er en obligatorisk ordning under VE-loven, hvor opstiller ved nettilslutning betaler et beløb afhængigt af\nanlæggets kapacitet. Midlerne administreres af kommunen og kan søges til projekter, der gavner naboer og\nlokalsamfund. Kommunen kan anvende op til 8 % af de indbetalte midler til administration af ordningen.\nKommunalbestyrelsen vil få forelagt en sag om beslutning om udmøntning af Grøn Pulje primo 2027.\nVE-tilskud til kommuner er en statsligt finansieret tilskudsordning, hvor der i 2026-2035 årligt fordeles 200 mio. kr. til\nkommuner, der bidrager til udbygningen af vedvarende energi. Tilskuddet fordeles blandt andet ud fra nytilsluttet VEkapacitet og eksisterende VE-produktion. Det udbetales direkte til kommunen og er ikke øremærket bestemte formål."
     }
    ],
    "bilag": []
@@ -12444,12 +12527,16 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=c98fe1a7-bdb8-4226-83a5-378d1247c1b3",
-   "hentet": "2026-10-26T18:43:13.494Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=141f9ec1-1d77-41dc-b6c3-b164063d0550",
+   "hentet": "2026-11-04T12:12:41.484Z",
    "titel": "EKLT/TMB - Status på implementering af Grøn Trepart i Lejre Kommune",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
+    },
     {
      "titel": "Resumé",
      "tekst": "I denne sag fremlægges den halvårlige status på implementeringen af Grøn Trepart i Lejre Kommune.\nLejre Kommune er i gang med at implementere Omlægningsplanen for Grøn Trepart og har igangsat en række projekter\nsom led heri.\nUdvalget for Erhverv, Klima, Lokal udvikling & Turisme og Udvalget for Trafik, Miljø & Byggeri blev orienteret om status\nfor arbejdet i grøn trepart på et fælles udvalgsmøde den 5. maj 2026, pkt. 2. Udvalgene besluttede at få en halvårlig\nstatus."
@@ -12464,7 +12551,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Fremdrift i projekterne\nOmlægningsplanen er dynamisk og rummer på nuværende tidspunkt 63 projekter. Projekterne er udpeget i forskellige\nkategorier, herunder permanent ekstensivering, kvælstofvådområder, fosforvådområder, skovrejsning, lavbundsprojekter,\nminivådområder samt kategorien øvrige, som blandt andet dækker over ådale, sammenhængende natur samt muligheder for at\nkombinere forskellige tilskudsordninger.\nEfterhånden som projekterne udvikler sig, kan et projekt skifte kategori. For eksempel er en del af udpegningen for Ørbækken\n(projekt nr. 5, Bilag 1) i kategorien 'øvrige' ændret til kategorien 'lavbundsprojekt' (projekt nr. 5a, Bilag 1), idet der er ansøgt om\ntilsagn til igangsættelse af forundersøgelse for den kulstofrige del af udpegningen ved Ørbækken. På samme måde er\nprojekterne omkring Osted Hestehave (projekt nr. 19, 20 og 28) samlet til et stort lavbundsprojekt med projektnummer 27a.\nDerfor 'udgår' projekterne 19, 20 og 28 af oversigten i bilag 1. Modningen af projektet ved Osted Hestehave betyder, at nye\nlodsejere får jord i omlægningsplanen. Disse lodsejere bliver orienteret via e-boks. Således kvalificeres og opdateres\nomlægningsplanens projekter i takt med, at viden og vilkår ændrer sig. Særligt kategorien 'øvrige' vil ændre kategori,\nefterhånden som konkrete indsatser og behov identificeres.\nProjekterne befinder sig på forskellige stadier. Stadierne forløber fra indledningsvis at være et indtegnet skitseprojekt i\nomlægningsplanen til at ende som et etableret projekt. Projekternes stadie kan ses i kolonnen “projektstatus” i bilag 1. Figuren\nnedenfor viser fremdriften i projekterne i Lejre Kommune, hvor flere rykker fra 'skitseprojekt – ikke igangsat' til 'forundersøgelse\nansøgt', fra 'forundersøgelse ansøgt' til 'forundersøgelse igangsat' og så fremdeles.\n\nFigur 1: Fremdrift i omlægningen under grøn trepart. Figuren viser projekterne i omlægningsplanens forskellige stadier.\nSøjlernes farver illustrerer status i henholdsvis april 2026 og september 2026 og det totale antal projekter i omlægningsplanen.\nLejre Kommune har ved denne statusrapport sat gang i ni forundersøgelser (jf. bilag 1), som fordeler sig i kommunens geografi.\nAdministrationen oplever et godt samarbejde med både rådgivere, udtagningskonsulenter og lodsejere om de respektive\nomlægningsprojekter. Det forventes, at flere forundersøgelser vil blive afsluttet i perioden frem mod næste status-afrapportering\ntil maj 2027, herunder Vejlemølle ådal (projekt nr. 10) og fast-track projekterne (projekt nr. 40, 52 og 53). På baggrund af\nforundersøgelsernes resultater - både de tekniske og de ejendomsmæssige - skal kommunen vurdere, hvorvidt der kan gives\nmyndighedsgodkendelse til projektet. Hvis et projekt vurderes teknisk muligt, der er opbakning blandt lodsejerne, og der er\nmyndighedsgodkendelse til detailprojekteringen, kan kommunen (eller anden myndighed) søge om tilsagn og finansiering til\netablering hos Styrelsen for Grøn Arealomlægning og Vandmiljø.\nSiden statusrapporten i maj er to projekter blevet etableret. Det drejer sig om projekterne omkring klimaskoven i Hvalsø, som\nblev indviet i maj 2026.\nTo nye områder ansøgt til forundersøgelse\nLejre Kommune har ved den aktuelle vådområdeordning ansøgt Styrelsen for Grøn Arealomlægning og Vandmiljø om tilsagn til\nat igangsætte forundersøgelse af yderligere to lavbundsprojekter, henholdsvis projekt nr. 5a i Bilag 1, 'Lavbundsprojekt Store\nKarleby/Kirke Hyllinge', samt projekt nummer 27a i Bilag 1, som er et samlet projektområde for 'Osted Hestehave, Kastholm og\nÅsholm'. De to ansøgte projektområder rummer begge store kulstofrige lavbundsarealer og er dermed centrale områder i\nrealiseringen af klimamålet under Grøn Trepart samt Lejre Kommunes klimaplan. I 'Aftale om et Grønt Danmark’ er ambitionen,\nat udtagning af alle lavbundsjorde skal være gennemført i 2030. Gennemføres alle projekter, der har en lavbundsindsats og\nsom på nuværende tidspunkt er ansøgt eller igangsat, udtages omkring 250 ha lavbund.\nMinivådområder\nI Lejre Kommune er der ansøgt om etablering af 10 minivådområder, og der er desuden indsendt orientering om planlægning af\n\nyderligere fire områder. Kommunen varetager den nødvendige myndighedsbehandling i forbindelse med etableringen, herunder\neksempelvis landzone- og jordreguleringstilladelser. Alle undersøgelser, finansiering og etableringsarbejder med videre\nvaretages af lodsejer, udtagningskonsulenter og den tilknyttede tilskudsordning. Det betyder, at minivådområder i Figur 1 rykker\ndirekte fra stadie 'Skitseprojekt - ikke igangsat' til 'Etablering - ansøgt eller igangsat' og senere ‘Etablering’. Dette forklarer den\nstore stigning fra april til september 2026 i kolonnen 'Etablering - ansøgt eller igangsat' i Figur 1.\nMinivådområder etableres typisk som mindre anlæg i landskabet (< 1 ha), der opsamler og renser drænvand fra\nlandbrugsarealer for kvælstof og fosfor, før vandet ledes videre til vandløb, søer og fjorde. Etableringen sker typisk på initiativ af\nen lodsejer, som ønsker at reducere udledningen fra et større drænopland og samtidig bidrage til opfyldelsen af statens krav\nom reduktion af udledningen af næringsstoffer.\nSkovpotentialeanalyse\nI 'Aftale om et Grønt Danmark’ er målet, at der på nationalt plan rejses 250.000 ha ny skov inden 2045. Kommunalbestyrelsen i\nLejre Kommune har med vedtagelsen af Klimaplan 2025 besluttet, at der som minimum skal rejses 960 ha skov frem mod\n2045. Et led i realiseringen af Klimaplanen er at få gennemført en skovpotentialeanalyse. Lejre Kommune har indhentet tilbud\npå udarbejdelsen af en skovpotentialeanalyse for hele kommunen og har netop udvalgt den rådgiver, der skal stå for arbejdet.\nAnalysen er planlagt til at være færdiggjort i februar 2027.\nSkovpotentialeanalysen skal skabe et overordnet plangrundlag og udpege arealer og områder, hvor der kan rejses skov,\nsamtidig med at der tages hensyn til CO₂-reduktion, biodiversitet, grundvandsbeskyttelse, landskabelige kvaliteter, borgernes\nadgang til naturen, landbrugsdriften, levesteder for dyr, planter og insekter samt beskyttelsen af fjorde, åer og søer.\nPotentielt signaturprojekt ved Elverdamså\nNaturstyrelsen leder den igangværende analyse af, om Elverdamsåen skal udvælges som signaturprojekt under Den Grønne\nTrepart. Analysen udarbejdes af Naturstyrelsen i tæt samarbejde med de berørte kommuner og lokale treparter i seks udvalgte\nområder i Danmark. Herefter vil det være op til aftalekredsen bag 'Aftale om et Grønt Danmark' at beslutte, om der skal\narbejdes videre med et signaturprojekt ved Elverdamsåen.\nAnalyseområdet omfatter ca. 9.000-10.000 ha på tværs af kommunegrænserne mellem Lejre, Holbæk og Ringsted Kommuner.\nAnalysen baserer sig på eksisterende data og udføres af forskningsprojektet TRANSFORM, som ledes af Københavns\nUniversitet. Analysen skal være færdig inden udgangen af 2026, og beslutningen om udvælgelse af signaturprojekter i\nDanmark, herunder Elverdamsåen, forventes truffet primo 2027. Naturstyrelsen har afholdt informationsmøde den 7. oktober\n2026 for lodsejere og interesserede borgere.\nSamarbejdsmodel for Langvad Å-systemet - støttet af 15. Juni Fonden\nLejre Kommune har modtaget midler fra 15. Juni Fonden til at forberede et storskala-projekt for Langvad Å-systemet.\nProjektet er et samarbejde mellem Lejre Kommune, Roskilde Kommune og Nationalparken Skjoldungernes Land.\nProjektmidlerne skal bruges til en tværkommunal projektansættelse, der skal undersøge mulighederne for at udnytte\nnaturpotentialet i Langvad Å-systemet, reducere kvælstofudledningen til Roskilde Fjord, udtagning af lavbundsjorde og herved\nbidrage til at realisere Lejre Kommunes omlægningsplan samt klimaplan. Projektperioden er fra januar 2027 til foråret 2028.\nProjektperioden skal ses som første fase i et længerevarende arbejde for udviklingen af Langvad Å-systemet.\nKapacitetsopbygning i samarbejde med andre små kommuner - støtte fra KL\nLejre Kommune har sammen med Samsø og Odsherred Kommuner modtaget tilsagn om støtte fra KL's pulje til\nkapacitetsopbygning i små og mindre kommuner. Projektet skal styrke arbejdet med arealomlægning i forbindelse med Grøn\nTrepart. Midlerne skal bruges til at styrke lodsejerdialog, facilitere lokale processer og skabe fremdrift i forundersøgelser og\ngennemførelse af kvælstof- og lavbundsprojekter i Lejre Kommune. Kommunerne vil samtidig etablere et samarbejde om\nvidendeling, erfaringsudveksling og udvikling af fælles metoder til arealomlægning.\n\nOrientering af udvalget for Grøn Trepart i Lejre\nStatus for arbejdet med Grøn Trepart og implementeringen af omlægningsplanen har været forelagt § 17, stk. 4-udvalget for\nGrøn Trepart i Lejre på mødet den 7. oktober 2026. § 17m stk. 4-udvalget er blevet orienteret om fremdriften i projekterne, de\nigangsatte forundersøgelser samt de væsentligste udviklinger siden seneste statusrapport. § 17, stk. 4-udvalgets drøftelser og\nperspektiver indgår som en del af det videre arbejde med realiseringen af omlægningsplanen.\nDet fortsatte arbejde med grøn trepart\nLejre Kommune har siden vedtagelsen af omlægningsplanen løbende igangsat en række projekter (jf. bilag 1), som forventes at\noptage den administrative kapacitet i de kommende år. Yderligere ansøgninger og deraf følgende tilskud kan på sigt muligvis\nfinansiere flere administrative ressourcer til udvikling og projektledelse af omlægningsprojekter.\nUd over projektledelsen medfører projekterne et betydeligt ressourceforbrug i andre dele af administrationen, herunder\ntværfaglig sparring, intern koordinering og myndighedsbehandling. Da der ikke kan opnås tilskud til myndighedsopgaver via de\nstatslige tilskudsordninger, er det derfor væsentligt, i forbindelse med prioritering af projekter i omlægningsplanen, at opstarte\nen passende mængde nye projekter. Dermed sikres fremdrift, og unødige flaskehalse undgås så vidt muligt, når Lejre\nKommune skal understøtte processen fra opstart til realisering af nye omlægningsprojekter.\n\nAdministrationens vurdering\nAdministrationen vurderer, at der er god fremdrift i arbejdet med omlægningsprojekterne i Lejre\nKommunes omlægningsplan. Flere projekter er rykket til næste fase, ni forundersøgelser er\nigangsat, og der er etableret nye natur- og klimaindsatser, herunder klimaskovsprojekterne ved\nHvalsø. De ansøgte lavbundsprojekter, det stigende antal minivådområder samt\nigangsættelsen af en skovpotentialeanalyse understøtter kommunens bidrag til\nmålsætningerne i Grøn Trepart og Klimaplan 2025.\nAdministrationen vurderer samtidig, at den fortsatte fremdrift forudsætter en balanceret\nprioritering af nye projekter, så den nødvendige myndighedsbehandling, koordinering og\nprojektledelse kan gennemføres uden at skabe flaskehalse i den videre realisering af\nindsatserne.\n\nØkonomi og finansiering\nFinansieringen af projekterne varierer afhængigt af de anvendte virkemidler og de tilhørende tilskudsordninger. For projekter\nmed virkemidler som kvælstofvådområder, fosforvådområder, minivådområder, permanent ekstensivering, lavbundsprojekter og\nskovrejsning dækker statslige tilskudsordninger alle udgifter til både forundersøgelse og efterfølgende etablering.\nFor indsatser til natur er der begrænsede målrettede statslige tilskudsordninger. Der findes heller ikke statslige ordninger til\nstørre helhedsprojekter. Finansiering til dette skal findes via fonde og bidrag fra private aktører."
+     "tekst": "Fremdrift i projekterne\nOmlægningsplanen er dynamisk og rummer på nuværende tidspunkt 63 projekter. Projekterne er udpeget i forskellige\nkategorier, herunder permanent ekstensivering, kvælstofvådområder, fosforvådområder, skovrejsning, lavbundsprojekter,\nminivådområder samt kategorien øvrige, som blandt andet dækker over ådale, sammenhængende natur samt muligheder for at\nkombinere forskellige tilskudsordninger.\nEfterhånden som projekterne udvikler sig, kan et projekt skifte kategori. For eksempel er en del af udpegningen for Ørbækken\n(projekt nr. 5, Bilag 1) i kategorien 'øvrige' ændret til kategorien 'lavbundsprojekt' (projekt nr. 5a, Bilag 1), idet der er ansøgt om\ntilsagn til igangsættelse af forundersøgelse for den kulstofrige del af udpegningen ved Ørbækken. På samme måde er\nprojekterne omkring Osted Hestehave (projekt nr. 19, 20 og 28) samlet til et stort lavbundsprojekt med projektnummer 27a.\nDerfor 'udgår' projekterne 19, 20 og 28 af oversigten i bilag 1. Modningen af projektet ved Osted Hestehave betyder, at nye\nlodsejere får jord i omlægningsplanen. Disse lodsejere bliver orienteret via e-boks. Således kvalificeres og opdateres\nomlægningsplanens projekter i takt med, at viden og vilkår ændrer sig. Særligt kategorien 'øvrige' vil ændre kategori,\nefterhånden som konkrete indsatser og behov identificeres.\nProjekterne befinder sig på forskellige stadier. Stadierne forløber fra indledningsvis at være et indtegnet skitseprojekt i\nomlægningsplanen til at ende som et etableret projekt. Projekternes stadie kan ses i kolonnen “projektstatus” i bilag 1. Figuren\nnedenfor viser fremdriften i projekterne i Lejre Kommune, hvor flere rykker fra 'skitseprojekt – ikke igangsat' til 'forundersøgelse\n\nansøgt', fra 'forundersøgelse ansøgt' til 'forundersøgelse igangsat' og så fremdeles.\n\nFigur 1: Fremdrift i omlægningen under grøn trepart. Figuren viser projekterne i omlægningsplanens forskellige stadier.\nSøjlernes farver illustrerer status i henholdsvis april 2026 og september 2026 og det totale antal projekter i omlægningsplanen.\nLejre Kommune har ved denne statusrapport sat gang i ni forundersøgelser (jf. bilag 1), som fordeler sig i kommunens geografi.\nAdministrationen oplever et godt samarbejde med både rådgivere, udtagningskonsulenter og lodsejere om de respektive\nomlægningsprojekter. Det forventes, at flere forundersøgelser vil blive afsluttet i perioden frem mod næste status-afrapportering\ntil maj 2027, herunder Vejlemølle ådal (projekt nr. 10) og fast-track projekterne (projekt nr. 40, 52 og 53). På baggrund af\nforundersøgelsernes resultater - både de tekniske og de ejendomsmæssige - skal kommunen vurdere, hvorvidt der kan gives\nmyndighedsgodkendelse til projektet. Hvis et projekt vurderes teknisk muligt, der er opbakning blandt lodsejerne, og der er\nmyndighedsgodkendelse til detailprojekteringen, kan kommunen (eller anden myndighed) søge om tilsagn og finansiering til\netablering hos Styrelsen for Grøn Arealomlægning og Vandmiljø.\nSiden statusrapporten i maj er to projekter blevet etableret. Det drejer sig om projekterne omkring klimaskoven i Hvalsø, som\nblev indviet i maj 2026.\nTo nye områder ansøgt til forundersøgelse\nLejre Kommune har ved den aktuelle vådområdeordning ansøgt Styrelsen for Grøn Arealomlægning og Vandmiljø om tilsagn til\nat igangsætte forundersøgelse af yderligere to lavbundsprojekter, henholdsvis projekt nr. 5a i Bilag 1, 'Lavbundsprojekt Store\nKarleby/Kirke Hyllinge', samt projekt nummer 27a i Bilag 1, som er et samlet projektområde for 'Osted Hestehave, Kastholm og\nÅsholm'. De to ansøgte projektområder rummer begge store kulstofrige lavbundsarealer og er dermed centrale områder i\nrealiseringen af klimamålet under Grøn Trepart samt Lejre Kommunes klimaplan. I 'Aftale om et Grønt Danmark’ er ambitionen,\nat udtagning af alle lavbundsjorde skal være gennemført i 2030. Gennemføres alle projekter, der har en lavbundsindsats og\nsom på nuværende tidspunkt er ansøgt eller igangsat, udtages omkring 250 ha lavbund.\n\nMinivådområder\nI Lejre Kommune er der ansøgt om etablering af 10 minivådområder, og der er desuden indsendt orientering om planlægning af\nyderligere fire områder. Kommunen varetager den nødvendige myndighedsbehandling i forbindelse med etableringen, herunder\neksempelvis landzone- og jordreguleringstilladelser. Alle undersøgelser, finansiering og etableringsarbejder med videre\nvaretages af lodsejer, udtagningskonsulenter og den tilknyttede tilskudsordning. Det betyder, at minivådområder i Figur 1 rykker\ndirekte fra stadie 'Skitseprojekt - ikke igangsat' til 'Etablering - ansøgt eller igangsat' og senere ‘Etablering’. Dette forklarer den\nstore stigning fra april til september 2026 i kolonnen 'Etablering - ansøgt eller igangsat' i Figur 1.\nMinivådområder etableres typisk som mindre anlæg i landskabet (< 1 ha), der opsamler og renser drænvand fra\nlandbrugsarealer for kvælstof og fosfor, før vandet ledes videre til vandløb, søer og fjorde. Etableringen sker typisk på initiativ af\nen lodsejer, som ønsker at reducere udledningen fra et større drænopland og samtidig bidrage til opfyldelsen af statens krav\nom reduktion af udledningen af næringsstoffer.\nSkovpotentialeanalyse\nI 'Aftale om et Grønt Danmark’ er målet, at der på nationalt plan rejses 250.000 ha ny skov inden 2045. Kommunalbestyrelsen i\nLejre Kommune har med vedtagelsen af Klimaplan 2025 besluttet, at der som minimum skal rejses 960 ha skov frem mod\n2045. Et led i realiseringen af Klimaplanen er at få gennemført en skovpotentialeanalyse. Lejre Kommune har indhentet tilbud\npå udarbejdelsen af en skovpotentialeanalyse for hele kommunen og har netop udvalgt den rådgiver, der skal stå for arbejdet.\nAnalysen er planlagt til at være færdiggjort i februar 2027.\nSkovpotentialeanalysen skal skabe et overordnet plangrundlag og udpege arealer og områder, hvor der kan rejses skov,\nsamtidig med at der tages hensyn til CO₂-reduktion, biodiversitet, grundvandsbeskyttelse, landskabelige kvaliteter, borgernes\nadgang til naturen, landbrugsdriften, levesteder for dyr, planter og insekter samt beskyttelsen af fjorde, åer og søer.\nPotentielt signaturprojekt ved Elverdamså\nNaturstyrelsen leder den igangværende analyse af, om Elverdamsåen skal udvælges som signaturprojekt under Den Grønne\nTrepart. Analysen udarbejdes af Naturstyrelsen i tæt samarbejde med de berørte kommuner og lokale treparter i seks udvalgte\nområder i Danmark. Herefter vil det være op til aftalekredsen bag 'Aftale om et Grønt Danmark' at beslutte, om der skal\narbejdes videre med et signaturprojekt ved Elverdamsåen.\nAnalyseområdet omfatter ca. 9.000-10.000 ha på tværs af kommunegrænserne mellem Lejre, Holbæk og Ringsted Kommuner.\nAnalysen baserer sig på eksisterende data og udføres af forskningsprojektet TRANSFORM, som ledes af Københavns\nUniversitet. Analysen skal være færdig inden udgangen af 2026, og beslutningen om udvælgelse af signaturprojekter i\nDanmark, herunder Elverdamsåen, forventes truffet primo 2027. Naturstyrelsen har afholdt informationsmøde den 7. oktober\n2026 for lodsejere og interesserede borgere.\nSamarbejdsmodel for Langvad Å-systemet - støttet af 15. Juni Fonden\nLejre Kommune har modtaget midler fra 15. Juni Fonden til at forberede et storskala-projekt for Langvad Å-systemet.\nProjektet er et samarbejde mellem Lejre Kommune, Roskilde Kommune og Nationalparken Skjoldungernes Land.\nProjektmidlerne skal bruges til en tværkommunal projektansættelse, der skal undersøge mulighederne for at udnytte\nnaturpotentialet i Langvad Å-systemet, reducere kvælstofudledningen til Roskilde Fjord, udtagning af lavbundsjorde og herved\nbidrage til at realisere Lejre Kommunes omlægningsplan samt klimaplan. Projektperioden er fra januar 2027 til foråret 2028.\nProjektperioden skal ses som første fase i et længerevarende arbejde for udviklingen af Langvad Å-systemet.\nKapacitetsopbygning i samarbejde med andre små kommuner - støtte fra KL\nLejre Kommune har sammen med Samsø og Odsherred Kommuner modtaget tilsagn om støtte fra KL's pulje til\nkapacitetsopbygning i små og mindre kommuner. Projektet skal styrke arbejdet med arealomlægning i forbindelse med Grøn\nTrepart. Midlerne skal bruges til at styrke lodsejerdialog, facilitere lokale processer og skabe fremdrift i forundersøgelser og\ngennemførelse af kvælstof- og lavbundsprojekter i Lejre Kommune. Kommunerne vil samtidig etablere et samarbejde om\n\nvidendeling, erfaringsudveksling og udvikling af fælles metoder til arealomlægning.\nOrientering af udvalget for Grøn Trepart i Lejre\nStatus for arbejdet med Grøn Trepart og implementeringen af omlægningsplanen har været forelagt § 17, stk. 4-udvalget for\nGrøn Trepart i Lejre på mødet den 7. oktober 2026. § 17m stk. 4-udvalget er blevet orienteret om fremdriften i projekterne, de\nigangsatte forundersøgelser samt de væsentligste udviklinger siden seneste statusrapport. § 17, stk. 4-udvalgets drøftelser og\nperspektiver indgår som en del af det videre arbejde med realiseringen af omlægningsplanen.\nDet fortsatte arbejde med grøn trepart\nLejre Kommune har siden vedtagelsen af omlægningsplanen løbende igangsat en række projekter (jf. bilag 1), som forventes at\noptage den administrative kapacitet i de kommende år. Yderligere ansøgninger og deraf følgende tilskud kan på sigt muligvis\nfinansiere flere administrative ressourcer til udvikling og projektledelse af omlægningsprojekter.\nUd over projektledelsen medfører projekterne et betydeligt ressourceforbrug i andre dele af administrationen, herunder\ntværfaglig sparring, intern koordinering og myndighedsbehandling. Da der ikke kan opnås tilskud til myndighedsopgaver via de\nstatslige tilskudsordninger, er det derfor væsentligt, i forbindelse med prioritering af projekter i omlægningsplanen, at opstarte\nen passende mængde nye projekter. Dermed sikres fremdrift, og unødige flaskehalse undgås så vidt muligt, når Lejre\nKommune skal understøtte processen fra opstart til realisering af nye omlægningsprojekter.\n\nAdministrationens vurdering\nAdministrationen vurderer, at der er god fremdrift i arbejdet med omlægningsprojekterne i Lejre\nKommunes omlægningsplan. Flere projekter er rykket til næste fase, ni forundersøgelser er\nigangsat, og der er etableret nye natur- og klimaindsatser, herunder klimaskovsprojekterne ved\nHvalsø. De ansøgte lavbundsprojekter, det stigende antal minivådområder samt\nigangsættelsen af en skovpotentialeanalyse understøtter kommunens bidrag til\nmålsætningerne i Grøn Trepart og Klimaplan 2025.\nAdministrationen vurderer samtidig, at den fortsatte fremdrift forudsætter en balanceret\nprioritering af nye projekter, så den nødvendige myndighedsbehandling, koordinering og\nprojektledelse kan gennemføres uden at skabe flaskehalse i den videre realisering af\nindsatserne.\n\nØkonomi og finansiering\nFinansieringen af projekterne varierer afhængigt af de anvendte virkemidler og de tilhørende tilskudsordninger. For projekter\nmed virkemidler som kvælstofvådområder, fosforvådområder, minivådområder, permanent ekstensivering, lavbundsprojekter og\nskovrejsning dækker statslige tilskudsordninger alle udgifter til både forundersøgelse og efterfølgende etablering.\nFor indsatser til natur er der begrænsede målrettede statslige tilskudsordninger. Der findes heller ikke statslige ordninger til\nstørre helhedsprojekter. Finansiering til dette skal findes via fonde og bidrag fra private aktører."
     }
    ],
    "bilag": []
@@ -12474,12 +12561,17 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=c98fe1a7-bdb8-4226-83a5-378d1247c1b3",
-   "hentet": "2026-10-26T18:43:13.494Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=141f9ec1-1d77-41dc-b6c3-b164063d0550",
+   "hentet": "2026-11-04T12:12:41.484Z",
    "titel": "EKLT - Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet under dette punkt."
+    }
+   ],
    "bilag": []
   },
   "lejre-2026-11-03-udvalget-for-erhverv-klima-lokal-udvikling-turisme-7": {
@@ -12487,10 +12579,10 @@
    "kommune": "Lejre",
    "udvalg": "Udvalget for Erhverv, Klima, Lokal udvikling & Turisme",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.lejre.dk/vis?id=c98fe1a7-bdb8-4226-83a5-378d1247c1b3",
-   "hentet": "2026-10-26T18:43:13.494Z",
+   "kilde": "https://dagsordener.lejre.dk/vis?id=141f9ec1-1d77-41dc-b6c3-b164063d0550",
+   "hentet": "2026-11-04T12:12:41.484Z",
    "titel": "EKLT - Godkendelse af referat",
    "afsnit": [],
    "bilag": []
@@ -12803,11 +12895,11 @@
  "sitemaps": {
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=33cf1a7c-f805-4fb7-a51a-d74903d9efc0": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=579c00d8-1aa4-461d-b0bc-a7f8b02219ee": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=884279b8-eb8d-427a-b81e-ef59cd90e3c7": {
    "senest": "2021-12-16",
@@ -12819,11 +12911,11 @@
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=82fb680b-07b5-4b98-829e-f2d1868a3f12": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=f81809c9-0a80-4e4a-be80-69f5766d8279": {
-   "senest": "2026-10-26",
-   "tjekket": "2026-11-03"
+   "senest": "2026-11-04",
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=9746528f-9735-412a-9816-318ec2735438": {
    "senest": "2021-12-17",
@@ -12831,11 +12923,11 @@
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=3bb9951d-4a0f-4e45-b945-f3d40fe85184": {
    "senest": "2026-01-08",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=18f7957e-b4af-4d89-84f1-6ee85d8635af": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=70d15099-2bb5-4ba4-801d-5956768f1d80": {
    "senest": "2021-12-02",
@@ -12843,11 +12935,11 @@
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=5bcc2848-dc69-4c38-b075-a7d7e659c460": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=662741cf-f1be-49eb-9ac9-3236fbd3edef": {
    "senest": "2026-10-26",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=732d626d-1e92-4ed2-85b1-9a9ab6980335": {
    "senest": "2021-12-02",
@@ -12855,23 +12947,23 @@
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=1b5580ff-9ffa-43ed-9718-706142a69be8": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=61f48971-a398-42b1-8eda-d24dd5f4300b": {
-   "senest": "2026-10-26",
-   "tjekket": "2026-11-03"
+   "senest": "2026-11-04",
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=ee1dd5ce-eb5e-4b54-bf24-5d89a2bc58cc": {
    "senest": "2021-12-06",
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=06f62982-c7c5-404d-adb1-a74d28d6fe00": {
-   "senest": "2026-10-26",
-   "tjekket": "2026-11-03"
+   "senest": "2026-11-04",
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=38486385-5200-4e2d-928f-4d3572e7e51d": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=20055371-7d5d-4632-92c8-59dd8a5fa8b2": {
    "senest": "2021-12-03",
@@ -12879,11 +12971,11 @@
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=341c3cef-0fe3-4462-a3e2-8bcebb8fa68a": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=b0e730ce-3477-4866-b819-e8be5d6fa5f1": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=9e2d64d1-489e-4d27-8f45-59aed2e77fee": {
    "senest": "2021-12-02",
@@ -12907,11 +12999,11 @@
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=37dc9477-42d8-4ff1-b903-e128ca6f708b": {
    "senest": "2026-10-27",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=42068d37-692a-418b-a5a9-0feec3f65c10": {
    "senest": "2026-04-24",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=3272d2c1-97ae-44c5-afd5-cf59e4ba8caf": {
    "senest": "2021-12-16",
@@ -12923,23 +13015,23 @@
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=e6a30723-12ea-494a-a6c7-154181bbf0cd": {
    "senest": "2026-09-01",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=a50ecdfa-2002-40bc-a5a5-a7f88e046b2b": {
    "senest": "2026-05-05",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=efbd6bce-9b8b-4d79-ac75-706b0ef1e624": {
    "senest": "2026-06-09",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=1b91c4b6-5ebe-44f3-8d5b-f301e305481c": {
    "senest": "2025-11-20",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=bba8d73f-3c56-4776-b2a4-d5dcdb4b7940": {
    "senest": "2026-09-16",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=a01c094b-0970-4b90-8d04-4369363a43b7": {
    "senest": "2021-09-10",
@@ -12947,19 +13039,19 @@
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=2a0f109f-42a9-4f86-971b-4c343955740c": {
    "senest": "2025-12-22",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=675f6c8b-861a-4489-b336-ab1bcc5640b5": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=687d3f81-3169-4f0a-b6dd-defe0743449a": {
    "senest": "2026-10-12",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/ForCommittee?committeeId=bfcc1c50-e25d-47d0-90c5-8f11abdf58f9": {
    "senest": "2026-09-30",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.lejre.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -12967,6 +13059,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-03T20:37:35.738Z",
+ "opdateret": "2026-11-04T12:12:41.485Z",
  "kommune": "Lejre"
 }

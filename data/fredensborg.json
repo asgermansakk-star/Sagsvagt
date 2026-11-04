@@ -359,6 +359,22 @@
    "dato": "2026-11-02",
    "punkter": 10,
    "parser": 3
+  },
+  "efd10cd9-40d2-4050-b71a-5063c3a21b05": {
+   "lastmod": "2026-11-04",
+   "type": "referat",
+   "udvalg": "Udvalget for Erhverv, Beredskab og Byliv",
+   "dato": "2026-11-03",
+   "punkter": 7,
+   "parser": 3
+  },
+  "22399c44-da99-41b9-be1e-cec3bd9ed50f": {
+   "lastmod": "2026-11-04",
+   "type": "referat",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-03",
+   "punkter": 12,
+   "parser": 3
   }
  },
  "sager": {
@@ -8260,12 +8276,17 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "110. Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen godkendt."
+    }
+   ],
    "bilag": []
   },
   "fredensborg-2026-11-03-boerne-og-skoleudvalget-2": {
@@ -8273,12 +8294,17 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "111. Træffetid",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen mødt."
+    }
+   ],
    "bilag": []
   },
   "fredensborg-2026-11-03-boerne-og-skoleudvalget-3": {
@@ -8286,15 +8312,27 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "112. Godkendelse af budgetrevision pr. 30. september 2026",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Fagudvalg\n1. At ansøgte budgetkorrektioner og det forventede regnskab for fagudvalgets\npolitikområder opgjort pr. 30. september 2026 godkendes.\n\nØkonomiudvalget og Byrådet\n2. At den samlede budgetrevision for perioden 2026-2030 opgjort pr. 30. september\n2026 godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I UDVALGET FOR NATUR, MILJØ OG BÆREDYGTIG UDVIKLING\n\nGodkender administrationens indstillingspunkt 1 og anbefaler administrationens\nindstillingspunkt 2.\n\nI UDVALGET FOR ERHVERV, BEREDSKAB OG BYLIV 2026-2029\nGodkender administrationens indstillingspunkt 1 og anbefaler administrationens\nindstillingspunkt 2."
+    },
+    {
+     "titel": "Behandling i Fritids, og Idrætsudvalget 2. november 2026",
+     "tekst": "Godkender administrationens indstillingspunkt 1 og anbefaler administrationens\nindstillingspunkt 2."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkender administrationens indstillingspunkt 1 og anbefaler administrationens\nindstillingspunkt 2."
     }
    ],
    "bilag": []
@@ -8304,15 +8342,19 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "113. Orientering om økonomisk status på udvalgte dele af Børne - og Skoleudvalgets område",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "1. At udvalget tager orienteringen om udgiftsudviklingen og igangværende tiltag på\nspecialundervisning til efterretning"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefaler administrationens indstilling."
     }
    ],
    "bilag": []
@@ -8322,15 +8364,19 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "114. Godkendelse af projektforslag Fremtidens Dagtilbud Fredensborg",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "At Børne- og Skoleudvalget godkender projektforslag for nyt dagtilbud i Fredensborg.\nAt Børne- og Skoleudvalget tager orientering om håndtering af krav til indeklima til\nefterretning."
+     "tekst": "1. At Børne og Skoleudvalget godkender projektforslag for nyt dagtilbud i\nFredensborg.\n2. At Børne og Skoleudvalget tager orientering om håndtering af krav til indeklima til\nefterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkender administrationens indstillingspunkt 1 og tager indstillingspunkt 2 til\nefterretning."
     }
    ],
    "bilag": []
@@ -8340,10 +8386,10 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "115. Beslutning om håndtering af stigning i elevantal Langebjergskole 2027/28",
    "afsnit": [
     {
@@ -8353,6 +8399,10 @@
     {
      "titel": "Indstilling",
      "tekst": "1. At der gives dispensation til et højere elevtal for børnehaveklassen for skoleåret\n2027/2028 på Langebjergskolen, hvis elevtallet overstiger 26 ved skoleårets\nbegyndelse for at undgå distriktsændring i lyset af det lavere antal distriktsbørn i de\nefterfølgende skoleår."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkender administrationens indstilling."
     }
    ],
    "bilag": []
@@ -8362,15 +8412,19 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "116. Beslutning om revision af skolestyrelsesvedtægt og bilag forud høring",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "1. At forslag til revideret Skolestyrelsesvedtægt (bilag 1) sendes i høring i\nskolebestyrelserne i perioden 4. januar – 22. februar 2026 forud for endelig\ngodkendelse i Byrådet.\n2. At forslag til revideret Bilag til skolestyrelsesvedtægten (bilag 2) sendes i høring i\nskolebestyrelserne i perioden 4. januar – 22. februar 2026 forud for endelig\ngodkendelse i Børne-og Skoleudvalget.\n3. At sagen forelægges til endelig politisk godkendelse i april efter endt høring."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkender administrationens indstillingspunkter 1, 2 og 3."
     }
    ],
    "bilag": []
@@ -8380,15 +8434,19 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "117. Orientering om status på minimumsnormeringer dagtilbud 0-5 år",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "At Børne- og Skoleudvalget tager orienteringen til efterretning."
+     "tekst": "1. At Børne- og Skoleudvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
@@ -8398,15 +8456,19 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "118. Meddelelser fra forpersonen og udvalgets medlemmer",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "At orienteringen tages til efterretning."
+     "tekst": "1. At orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
@@ -8416,15 +8478,19 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "119. Meddelelser fra administrationen",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Beslutningstema\nOrientering om aktuelle sager.\n\nSagsfremstilling og økonomi\nStillingen som ny Centerchef for Skole og dagtilbud er slået op med ansøgningsfrist 8.\nnovember.\n\nKompetence\nBørne – og Skoleudvalget."
+     "titel": "Indstilling",
+     "tekst": "1. At orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
@@ -8434,15 +8500,19 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "120. Sager på vej",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "At orienteringen tages til efterretning."
+     "tekst": "1. At orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen tages til efterretning."
     }
    ],
    "bilag": []
@@ -8452,12 +8522,17 @@
    "kommune": "Fredensborg",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=79ef431d-ef5d-4152-aca4-7a58188d78ae",
-   "hentet": "2026-10-29T10:58:26.819Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=22399c44-da99-41b9-be1e-cec3bd9ed50f",
+   "hentet": "2026-11-04T12:10:23.736Z",
    "titel": "121. Digitalt underskriftblad 03-11-2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt. Vedhæftet som bilag."
+    }
+   ],
    "bilag": []
   },
   "fredensborg-2026-11-03-udvalget-for-erhverv-beredskab-og-byliv-1": {
@@ -8465,12 +8540,17 @@
    "kommune": "Fredensborg",
    "udvalg": "Udvalget for Erhverv, Beredskab og Byliv",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=199fc7bb-000b-498b-860b-da95465148b6",
-   "hentet": "2026-10-29T19:45:47.895Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=efd10cd9-40d2-4050-b71a-5063c3a21b05",
+   "hentet": "2026-11-04T12:10:11.721Z",
    "titel": "95. Træffetid",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "I UDVALGET FOR ERHVERV, BEREDSKAB OG BYLIV 2026-2029\nIngen mødt."
+    }
+   ],
    "bilag": []
   },
   "fredensborg-2026-11-03-udvalget-for-erhverv-beredskab-og-byliv-2": {
@@ -8478,12 +8558,17 @@
    "kommune": "Fredensborg",
    "udvalg": "Udvalget for Erhverv, Beredskab og Byliv",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=199fc7bb-000b-498b-860b-da95465148b6",
-   "hentet": "2026-10-29T19:45:47.895Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=efd10cd9-40d2-4050-b71a-5063c3a21b05",
+   "hentet": "2026-11-04T12:10:11.721Z",
    "titel": "96. Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "I UDVALGET FOR ERHVERV, BEREDSKAB OG BYLIV 2026-2029\nDagsordenen blev godkendt."
+    }
+   ],
    "bilag": []
   },
   "fredensborg-2026-11-03-udvalget-for-erhverv-beredskab-og-byliv-3": {
@@ -8491,15 +8576,23 @@
    "kommune": "Fredensborg",
    "udvalg": "Udvalget for Erhverv, Beredskab og Byliv",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=199fc7bb-000b-498b-860b-da95465148b6",
-   "hentet": "2026-10-29T19:45:47.895Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=efd10cd9-40d2-4050-b71a-5063c3a21b05",
+   "hentet": "2026-11-04T12:10:11.722Z",
    "titel": "97. Godkendelse af budgetrevision pr. 30. september 2026",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Fagudvalg\n1. At ansøgte budgetkorrektioner og det forventede regnskab for fagudvalgets\npolitikområder opgjort pr. 30. september 2026 godkendes.\n\nØkonomiudvalget og Byrådet\n2. At den samlede budgetrevision for perioden 2026-2030 opgjort pr. 30. september\n2026 godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I UDVALGET FOR NATUR, MILJØ OG BÆREDYGTIG UDVIKLING\nGodkender administrationens indstillingspunkt 1 og anbefaler administrationens\nindstillingspunkt 2.\n\nI UDVALGET FOR ERHVERV, BEREDSKAB OG BYLIV 2026-2029\nGodkender administrationens indstillingspunkt 1 og anbefaler administrationens\nindstillingspunkt 2."
+    },
+    {
+     "titel": "Behandling i Fritids, og Idrætsudvalget 2. november 2026",
+     "tekst": "Godkender administrationens indstillingspunkt 1 og anbefaler administrationens\nindstillingspunkt 2."
     }
    ],
    "bilag": []
@@ -8509,15 +8602,23 @@
    "kommune": "Fredensborg",
    "udvalg": "Udvalget for Erhverv, Beredskab og Byliv",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=199fc7bb-000b-498b-860b-da95465148b6",
-   "hentet": "2026-10-29T19:45:47.895Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=efd10cd9-40d2-4050-b71a-5063c3a21b05",
+   "hentet": "2026-11-04T12:10:11.722Z",
    "titel": "98. Beslutning om videreførsel af Copenhagen Sprint",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "1. At udvalgene drøfter og anbefaler overfor Økonomiudvalget, om Fredensborg\nKommune fremover skal deltage i Copenhagen Sprint, og i givet fald\n\n2. At det besluttes om Fredensborg Kommune skal delfinansiere til både cykelløb og\naktiviteter i gennemkørselsbyerne, i alt kr. 210.000, der finansieres via de tre\npuljer, der fra 2027 er slået sammen til Fællesskabspuljen,\n\neller\n\n3. At der udelukkende skal findes finansiering til, at Fredensborg Kommune er\ngennemkørselskommune, i alt kr. 100.000, der finansieres via de tre puljer, der fra\n2027 er slået sammen til Fællesskabspuljen."
+    },
+    {
+     "titel": "Behandling i Fritids, og Idrætsudvalget 2. november 2026",
+     "tekst": "Udvalget drøftede sagen.\nThomas Elgaard (I) fremsatte følgende ændringsforslag:\nAt det anbefales, at Fredensborg Kommune skal deltage i Copenhagen Sprint og\ndelfinansiere til både cykelløb og aktiviteter i gennemkørselsbyerne, i alt kr. 210.000, der\nfinansieres fra centrale midler og ikke puljerne.\nFor stemte: Lars Søndergaard (V), Thomas Elgaard (I) og Steen Løfstrøm (O).\nImod stemte: Marianne Bredgaard (B), Charlotte Sander (A), Karina Venø Jensen (F),\nNikolai Visby Sandbæk (C), Celine Lind Jakobsen (C), Cømert Sonsuz (A).\nFormanden fremsatte følgende afstemningsforslag:\nFredensborg Kommune skal deltage i Copenhagen Sprint og delfinansiere at kommunen\ner gennemkørselskommune, i alt kr. 100.000, der finansieres fra centrale midler og ikke\npuljerne. Tilskud til aktiviteter kan evt. søges særskilt i den kommende Fællesskabspulje.\nFor forslaget stemte: Marianne Bredgaard (B), Charlotte Sander (A), Karina Venø Jensen\n(F), Nikolai Visby Sandbæk (C), Celine Lind Jakobsen (C), Cømert Sonsuz (A).\nImod stemte: Lars Søndergaard (V), Thomas Elgaard (I) og Steen Løfstrøm (O) med den\nbemærkning, at de 210.000 kr. skal tages fra centrale puljer og ikke Fællesskabspuljen.\nDer bør også bevilliges tilskud til aktiviteter ifm. cykelløbet.\nFormandens forslag blev således tiltrådt og det anbefales, at kommunen deltager i\nCopenhagen Sprint og delfinansierer udgifter til gennemkørselskommune, i alt kr.\n100.000, der finansieres fra centrale midler og ikke puljerne."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I UDVALGET FOR ERHVERV, BEREDSKAB OG BYLIV 2026-2029\nUdvalget drøftede sagen.\n\nI forhold til indstillingens punkt 1 anbefaler udvalget, at Fredensborg Kommune deltager i\nCopenhagen Sprint.\nThomas Elgaard (I) fremsatte følgende ændringsforslag: at det anbefales, at Fredensborg\n\nKommune skal deltage i Copenhagen Sprint og delfinansiere til både cykelløb og\naktiviteter i gennemkørselsbyerne, i alt kr. 210.000, der finansieres fra centrale midler og\nikke puljerne.\nFor stemte: Thomas Elgaard (I) og Steen Løfstrøm (O).\nImod stemte: Marianne Bredgaard (B), Cømert Sonsuz (A), Suzan Daoud (A), Jesper\nTvilde (C)\nForslaget faldet dermed.\nThomas Elgaard (I) og Steen Løfstrøm (O) bemærkede, at de 210.000 kr. efter deres\nopfattelse skal tages fra centrale puljer og ikke Fællesskabspuljen. Der bør også\nbevilliges tilskud til aktiviteter ifm. cykelløbet.\nEt enigt udvalg anbefaler, at såfremt der er restmidler af bylivspuljen for 2026, indgår\nmidlerne i finansieringen af Copenhagen Sprint."
     }
    ],
    "bilag": []
@@ -8527,12 +8628,17 @@
    "kommune": "Fredensborg",
    "udvalg": "Udvalget for Erhverv, Beredskab og Byliv",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=199fc7bb-000b-498b-860b-da95465148b6",
-   "hentet": "2026-10-29T19:45:47.895Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=efd10cd9-40d2-4050-b71a-5063c3a21b05",
+   "hentet": "2026-11-04T12:10:11.722Z",
    "titel": "99. Orientering per 3. november 2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "I UDVALGET FOR ERHVERV, BEREDSKAB OG BYLIV 2026-2029\nOrienteringen blev taget til efterretning."
+    }
+   ],
    "bilag": []
   },
   "fredensborg-2026-11-03-udvalget-for-erhverv-beredskab-og-byliv-6": {
@@ -8540,15 +8646,19 @@
    "kommune": "Fredensborg",
    "udvalg": "Udvalget for Erhverv, Beredskab og Byliv",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=199fc7bb-000b-498b-860b-da95465148b6",
-   "hentet": "2026-10-29T19:45:47.895Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=efd10cd9-40d2-4050-b71a-5063c3a21b05",
+   "hentet": "2026-11-04T12:10:11.722Z",
    "titel": "100. Sager på vej 3. november 2026",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "1. At orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I UDVALGET FOR ERHVERV, BEREDSKAB OG BYLIV 2026-2029\nOrienteringen blev taget til efterretning."
     }
    ],
    "bilag": []
@@ -8558,12 +8668,17 @@
    "kommune": "Fredensborg",
    "udvalg": "Udvalget for Erhverv, Beredskab og Byliv",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fredensborg.dk/vis?id=199fc7bb-000b-498b-860b-da95465148b6",
-   "hentet": "2026-10-29T19:45:47.895Z",
+   "kilde": "https://dagsordener.fredensborg.dk/vis?id=efd10cd9-40d2-4050-b71a-5063c3a21b05",
+   "hentet": "2026-11-04T12:10:11.722Z",
    "titel": "101. Digitalt underskriftsblad 3. november 2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "I UDVALGET FOR ERHVERV, BEREDSKAB OG BYLIV 2026-2029\nGodkendt med digitalt underskriftsblad. Vedhæftet som bilag."
+    }
+   ],
    "bilag": []
   },
   "fredensborg-2026-11-04-social-aeldre-og-sundhedsudvalget-1": {
@@ -8751,11 +8866,11 @@
  "sitemaps": {
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=fa505bc6-10d8-427f-b89c-d1dee403eec7": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=d8b2d7e9-3182-4082-be21-157e1723ccd0": {
    "senest": "2025-12-16",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=4f0cd572-2f36-4a86-aaf5-f72b744b489b": {
    "senest": "2025-09-27",
@@ -8775,7 +8890,7 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=e68457f5-ace4-460a-8553-a716bf78fdbf": {
    "senest": "2026-04-28",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=5f05a451-2cf9-48fe-b9f8-a66ffeed81a3": {
    "senest": "2025-09-27",
@@ -8783,31 +8898,31 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=5cbfc01f-cf01-4298-b816-1b5133acdf79": {
    "senest": "2026-10-14",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=eaaa8e6c-d523-4789-af40-e3ec652f8c08": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=3f828dfd-4074-469a-bd84-d2448373be3f": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=96ca2063-1fbf-41e0-a57a-265ce83c3e6f": {
    "senest": "2017-12-13",
    "tjekket": "2026-10-22"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=d57b292f-8bec-43d3-9b9f-9d632e6ef97c": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-03"
+   "senest": "2026-11-04",
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=b63b0c09-b4c5-4130-84f6-a3f218f4c046": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=34ea45b2-8c8c-4a9e-9eaf-42830c2653d2": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=03e7eeed-baa3-419c-a8bd-352224fe3835": {
    "senest": "2025-09-27",
@@ -8819,11 +8934,11 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=693c5a1f-09ee-4371-8002-eb846fbb7e2f": {
    "senest": "2026-10-08",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=b4059209-0da3-4de9-8b2a-09de8eee3967": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=9f0669b2-5995-45d7-aa2b-055de6304a7f": {
    "senest": "2025-09-27",
@@ -8835,11 +8950,11 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=55ff56fb-0c38-4d0f-8267-ab7edd20ef0a": {
    "senest": "2026-09-14",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=e9c61a00-c9f1-47f4-9b36-8abf9d064527": {
    "senest": "2025-12-08",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=9e8f8b6c-6108-460f-a5cf-cd010ab082fb": {
    "senest": "2022-04-28",
@@ -8847,11 +8962,11 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=5122e469-b474-4f2a-abb4-a4a7a93090c0": {
    "senest": "2026-10-07",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=5ae7c16f-eb6a-419d-b885-634aa1556b19": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=8dfe0bc7-9ead-4fa9-8c56-b0f1f6a87081": {
    "senest": "2025-09-27",
@@ -8863,7 +8978,7 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=67085377-795d-4def-b3ce-21cd270a12ba": {
    "senest": "2025-12-08",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=53a6d748-c1b7-44e2-b7c1-34a0f465dd39": {
    "senest": "2025-09-27",
@@ -8871,11 +8986,11 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=b95248fc-deeb-4e5b-a570-3c892eb339ec": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=f2896b05-01fe-4edb-8933-833cc3b6eae3": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=fe1071df-c269-4da2-9815-689c976d4fc9": {
    "senest": "2025-09-27",
@@ -8887,7 +9002,7 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=12be68de-0401-42b3-a644-bf999071262f": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=0b79c960-20b7-48a7-b0df-035905dd2828": {
    "senest": "2017-12-12",
@@ -8895,7 +9010,7 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=f4d82d4f-8c56-4faa-9f50-2dc4006cb5da": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=c3e0f5ab-bd8b-41a1-aecb-9a510f35bb53": {
    "senest": "2025-09-27",
@@ -8915,7 +9030,7 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=c2f66522-d5a9-4fc2-885e-bef78fd583be": {
    "senest": "2026-08-24",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=5bc70d52-4997-41ff-bc45-5b4dbcbc8035": {
    "senest": "2025-10-29",
@@ -8934,12 +9049,12 @@
    "tjekket": "2026-10-22"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=df6eb4a2-4678-4e79-9383-bd3be751e566": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-03"
+   "senest": "2026-11-04",
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=b5baefe9-60c6-4fe7-9d5a-c7dba328b2e0": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=0b26998d-f5e9-4995-8a1a-6af12dec4287": {
    "senest": "2025-09-27",
@@ -8951,11 +9066,11 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=b11aa76e-37eb-4085-bfc3-02119ba9073c": {
    "senest": "2026-10-27",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=d7a85a11-ab5d-47d3-ac47-7b684f3b56e0": {
    "senest": "2026-01-09",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=7294d0a6-8160-4073-bce6-8e040bad784c": {
    "senest": "2025-09-27",
@@ -8975,14 +9090,14 @@
   },
   "https://dagsordener.fredensborg.dk/Sitemap/ForCommittee?committeeId=e99db954-7bc1-48b4-a495-ad787f84ecf3": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-03"
+   "tjekket": "2026-11-04"
   },
   "https://dagsordener.fredensborg.dk/Sitemap/StaticPages": {
    "senest": "",
    "tjekket": "2026-10-22"
   }
  },
- "opdateret": "2026-11-03T20:35:32.045Z",
+ "opdateret": "2026-11-04T12:10:23.738Z",
  "kommune": "Fredensborg",
  "parser": 3
 }
