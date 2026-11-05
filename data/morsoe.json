@@ -249,6 +249,38 @@
    "dato": "2026-11-03",
    "punkter": 6,
    "parser": 3
+  },
+  "bcd86e6e-a9ee-4519-a3ec-91fc935fd02f": {
+   "lastmod": "2026-11-05",
+   "type": "dagsorden",
+   "udvalg": "Udvalget for Teknik og Miljø",
+   "dato": "2026-11-11",
+   "punkter": 7,
+   "parser": 3
+  },
+  "2583a198-b33d-4d98-9b20-df469abfdf56": {
+   "lastmod": "2026-11-05",
+   "type": "dagsorden",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "punkter": 9,
+   "parser": 3
+  },
+  "dc35fe17-5ea4-42e3-8069-7bdee98f18d7": {
+   "lastmod": "2026-11-05",
+   "type": "dagsorden",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "punkter": 17,
+   "parser": 3
+  },
+  "27e2d059-86cb-45b4-b0ea-b2fc5dceacdb": {
+   "lastmod": "2026-11-05",
+   "type": "referat",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-04",
+   "punkter": 12,
+   "parser": 3
   }
  },
  "sager": {
@@ -5921,15 +5953,19 @@
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Orientering ved formand Hanne Haaning",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Det anbefales, at\nOrienteringen tages til efterretning.\n\n1. Seniorrådets fremtidige sammensætning.\n2. Folder om aktiviteter.\n3. Evaluering af offentligt møde på Støberigården den 12. oktober 2026.\n4. Orientering fra møde i Frøslev.\n5. Nyt fra Regionen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1: Seniorrådet drøftede den fremtidige sammensætning af rådet som følge af ændringer i\nmedlemskredsen.\nAd 2: Seniorrådet drøftede folderen og besluttede at arbejde videre med indhold og\nudbredelse.\nAd 3: Seniorrådet vurderede, at mødet på støberigården forløb godt. Der var tilfredshed med\narrangementets indhold og afvikling, men deltagerantallet var lavere end forventet.\nErfaringerne tages med i planlægningen af kommende offentlige møder. Det blev besluttet at\ngentage arrangementet på et senere tidspunkt og fortsat arbejde med at synliggøre\nSeniorrådet ved relevante arrangementer.\nAd 4: Seniorrådet drøftede emnet og tog orienteringen til efterretning.\nAd 5: Seniorrådet tog orienteringen fra Regionen til efterretning. Der er møde med\nRegionen hver anden måned.\nOrienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -5939,15 +5975,19 @@
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Orientering ved Morsø Kommune",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Det anbefales, at\nOrienteringen tages til efterretning.\n\nDer orienteres om:\n1. Høreomsorg.\n2. Kronikercafe.\n3. Relevante punkter fra møde i KLU - Kommunalt Lægeligt Udvalg den 29. oktober 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1: Der blev orienteret om de aktuelle indsatser på området.\nAd 2: Der blev orienteret om erfaringer og status for tilbuddet kronikercafe.\nAd 3: Der blev orienteret om:\nKommunen kan selv visistere til TeleCare KOL\nFra januar bliver egen læge tovholder for kronikere\nNB ældre, Morsø Kommune blev nr. 2 i Nordjylland\nDe forebyggende sygeplejersker har kontakt til bedemændene.\n\nOrienteringen blev taget til efterretning."
     }
    ],
    "bilag": []
@@ -5957,36 +5997,10 @@
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
-   "titel": "Seniorrådets årsplan 2027",
-   "afsnit": [
-    {
-     "titel": "Indstilling",
-     "tekst": "Det anbefales, at\nOrienteringen tages til efterretning.\n\nBehandling\nSeniorrådet (4. november 2026)"
-    },
-    {
-     "titel": "Resumé",
-     "tekst": "Der er udarbejdet udkast til Seniorrådets årsplan for 2027."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Udkastet til Seniorrådets årsplan for 2027 er udarbejdet med forbehold for ændringer, da\nårsplanen skal passe til de politiske og organisatoriske mødeplaner og deadlines.\nSeniorrådet bedes tage stilling til følgende:\nSkal alle seniorrådsmøder afholdes på Jernbanevej?\nSkal tidspunkt og længde på seniorrådsmøderne ændres?\nØnsker Seniorrådet fortsat at deltage i årlige dialogmøder med henholdsvis Udvalget for\nSocial, Sundhed og Beskæftigelse samt Udvalget for Teknik og Miljø?\n\nNår Seniorrådet har har godkendt årsplanen for 2027, med eventuelle ændringer, bookes\nseniorrådsmedlemmerne i Outlook.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nDen godkendte årsplan offentliggøres på Morsø Kommunes hjemmeside."
-    }
-   ],
-   "bilag": []
-  },
-  "morsoe-2026-11-04-seniorraadet-4": {
-   "id": "morsoe-2026-11-04-seniorraadet-4",
-   "kommune": "Morsø",
-   "udvalg": "Seniorrådet",
-   "dato": "2026-11-04",
-   "type": "dagsorden",
-   "nr": 4,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Forretningsorden for Seniorrådet",
    "afsnit": [
     {
@@ -6008,19 +6022,23 @@
     {
      "titel": "Behandling i Seniorrådet 25. august 2026",
      "tekst": "Seniorrådet sender forslag til ændringer til sekretæren, som indskriver de nødvendige\ntilretninger. Den reviderede sendes til godkendelse på Seniorrådsmødet den 3. november"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
   },
-  "morsoe-2026-11-04-seniorraadet-5": {
-   "id": "morsoe-2026-11-04-seniorraadet-5",
+  "morsoe-2026-11-04-seniorraadet-4": {
+   "id": "morsoe-2026-11-04-seniorraadet-4",
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
-   "nr": 5,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Kvalitetsstandard for omsorgstandpleje - 2026",
    "afsnit": [
     {
@@ -6034,6 +6052,40 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kvalitetsstandard for omsorgstandpleje er afstemt med sundhedsloven §§ 131 og 132 samt det\npolitiske godkendte serviceniveau.\nKvalitetsstandarden er ændret under:\nLeverandør - teksten er ændret fra \"Praktiserende tandlæger i Morsø Kommune\" til\n\"Privat leverandør i Morsø Kommune\".\nSærlige forhold - teksten er ændret fra \"Behandling af omsorgstandplejepatienter\nforetages af den privatpraktiserende tandpleje\" til \"Behandling af\nomsorgstandplejepatienter foretages af en privat leverandør\".\n\nDen reviderede kvalitetsstandard er vedhæftet som bilag.\n\nRetsgrundlag\nSundhedsloven §§ 131 og 132.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nDen godkendte kvalitetsstandard offentliggøres på Morsø Kommunes hjemmeside."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen bemærkninger."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-04-seniorraadet-5": {
+   "id": "morsoe-2026-11-04-seniorraadet-5",
+   "kommune": "Morsø",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-04",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
+   "titel": "Revidering af servicerammer på ældreområdet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Det anbefales, at\nDe reviderede servicerammer for Ældrebolig, Plejebolig og Aflastning- og\nafklaringspladser sendes i høring i Senioråd og Handicapråd.\n\nBehandling\nSeniorrådet (4. november 2026)\nHandicaprådet (5. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Kvalitetsstandarden for Pleje- og Ældrebolig samt Afklarings- og aflastningsophold er revideret\nmed henblik på at sikre større tydelighed for borgere, pårørende og medarbejdere. Som led i\nimplementeringen af Ældreloven arbejder Morsø Kommune med at omlægge relevante\nkvalitetsstandarder til servicerammer, der beskriver kommunens serviceniveau og de\noverordnede rammer for tilbuddene.\nI revideringerne er der tale om præciseringer og sproglige tilpasninger, men ikke ændringer i\nserviceniveauet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den tidligere fælles kvalitetsstandard for Pleje- og Ældrebolig er opdelt i to selvstændige\nservicerammer: én for plejeboliger og én for ældreboliger. Opdelingen er foretaget for at\ntydeliggøre forskellene i målgrupperne, hvilket nu fremgår af de respektive\nmålgruppebeskrivelser.\nI servicerammen for afklarings- og aflastningspladser er betegnelsen \"midlertidige pladser\"\nerstattet med \"afklarings- og aflastningspladser\". Herudover er bestemmelserne om\negenbetaling opdateret i overensstemmelse med gældende takster. Målgruppebeskrivelsen er\nuændret, da den fortsat vurderes at være dækkende for de borgere, der forventes at benytte\ntilbuddet, herunder også borgere fra socialområdet.\nDe opdaterede servicerammer træder i kraft pr. 1. januar 2027.\n\nRetsgrundlag\nAlmenboligloven §§ 5, stk.2, 54a, 58a og 58b.\nServiceloven § 84, stk. 2.\nÆldrelovens §§ 16 og 17.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen bemærkninger."
     }
    ],
    "bilag": []
@@ -6043,10 +6095,70 @@
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
+   "titel": "Serviceramme for Daghjemmet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Det anbefales, at\nDen reviderede serviceramme for Daghjemmet sendes i høring i Seniorråd og\nHandicapråd.\n\nBehandling\nSeniorrådet (4. november 2026)\nHandicaprådet (5. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Med ikrafttrædelsen af den nye ældrelov den 1. juli 2025 er der indført nye rammer for\ntilrettelæggelsen af ældreplejen. Som led i implementeringen arbejder Morsø Kommune med at\nomlægge relevante kvalitetsstandarder til servicerammer, der beskriver kommunens\nserviceniveau og de overordnede rammer for tilbuddene.\nDer er udarbejdet en ny serviceramme for Daghjemmet, som beskriver serviceniveauet for\naflastningstilbud samt aktivitets- og samværstilbud. Servicerammen træder i kraft pr. 1. januar"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den eksisterende kvalitetsstandard for Daghjemmet er senest revideret i 2012. Siden da er\ndaghjemmet flyttet til Plejecentret Duelund, og der er sket ændringer i tilbuddets\norganisatoriske og driftsmæssige forhold. Der er derfor behov for en revision, så\nservicerammen afspejler daghjemmets nuværende funktion som et aflastnings- og\naktivitetstilbud samt de gældende vilkår for benyttelse af tilbuddet.\nI servicerammen beskrives målgruppen og kriterierne for visitation til henholdsvis\naflastningstilbud samt aktivitets- og samværstilbud. Herudover præciseres de\nserviceniveauer og forventninger, der knytter sig til tilbuddene.\nSom en del af servicerammen fastlægges der samtidig ensartede retningslinjer for\nbrugerbetaling vedrørende kost og kørsel. Der er desuden indarbejdet bestemmelser om\nbetaling ved afbud og øvrigt fravær, hvilket ikke tidligere har været beskrevet.\nServicerammen træder i kraft pr. 1. januar 2027.\n\nRetsgrundlag\nÆldrelov § 16.\nServicelov § 84 stk. 1 og § 104.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\n\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen bemærkninger."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-04-seniorraadet-7": {
+   "id": "morsoe-2026-11-04-seniorraadet-7",
+   "kommune": "Morsø",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-04",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
+   "titel": "Seniorrådets årsplan 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Det anbefales, at\nOrienteringen tages til efterretning.\n\nBehandling\nSeniorrådet (4. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Der er udarbejdet udkast til Seniorrådets årsplan for 2027."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udkastet til Seniorrådets årsplan for 2027 er udarbejdet med forbehold for ændringer, da\nårsplanen skal passe til de politiske og organisatoriske mødeplaner og deadlines.\nSeniorrådet bedes tage stilling til følgende:\nSkal alle seniorrådsmøder afholdes på Jernbanevej?\nSkal tidspunkt og længde på seniorrådsmøderne ændres?\nØnsker Seniorrådet fortsat at deltage i årlige dialogmøder med henholdsvis Udvalget for\nSocial, Sundhed og Beskæftigelse samt Udvalget for Teknik og Miljø?\n\nNår Seniorrådet har har godkendt årsplanen for 2027, med eventuelle ændringer, bookes\nseniorrådsmedlemmerne i Outlook.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nDen godkendte årsplan offentliggøres på Morsø Kommunes hjemmeside."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Seniorrådet godkendte årsplanen for 2027. Formøderne afholdes fortsat i\nadministrationsbygningen på Jernbanevej. Seniorrådet fortsætter besøgsrunderne på\nkommunens plejecentre og institutioner efter den fremlagte plan for 2027 og 2028, som\nvedhæftes som bilag. De årlige dialogmøder med de politiske udvalg fortsættes.\nMødetidspunkterne er uændrede, bortset fra årets sidste møde, som afholdes i Skovparken kl.\n\n12.30-15.00 med præsentation af maden fra centralkøkkenet."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-04-seniorraadet-8": {
+   "id": "morsoe-2026-11-04-seniorraadet-8",
+   "kommune": "Morsø",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-04",
+   "type": "referat",
+   "nr": 8,
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Orientering om omsorgstandplejen i Morsø Kommune",
    "afsnit": [
     {
@@ -6060,19 +6172,23 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Jf. sundhedslovens § 131 skal kommunen tilbyde omsorgstandpleje til borgere, som ikke er i\nstand til at benytte tandpleje hos privatpraktiserende tandlæge.\nI Morsø Kommunes samarbejde med de privatpraktiserende tandlæger er det hidtil ikke\nlykkedes at tilbyde omsorgstandpleje, medmindre borgerne har været i stand til at møde frem i\nklinikkerne. Tandlægerne har hidtil ikke udtrykt ønske om at yde omsorgstandpleje i borgernes\neget hjem.\nFor at sikre en god proces afholdes et orienteringsmøde med tandlægerne.\nEfterfølgende sendes der et brev til tandlægerne for at sikre, at alle har givet en skriftlig\ntilbagemelding inden et evt. udbud iværksættes.\nHvis de privatpraktiserende tandlæger i deres skriftlige tilbagemeldinger tilkendegiver, at de\nikke ønsker at tilbyde behandlinger i borgernes eget hjem, iværksættes evt. udbud, jf. Udbudsog Indkøbspolitik, og der vil blive lavet aftale med en ekstern leverandør.\nDer er nedsat et visitationsudvalg, og som en del af processen vil der være revisitering i\nforbindelse med en overgang til en evt. privat leverandør.\nUdgifterne ved levering af omsorgstandpleje fra en privat leverandør estimeres at kunne\n\nafholdes inden for det nuværende budget. Der er en årlig egenbetaling på 635 kr.\nEgenbetalingen pris- og lønfremskrives årligt.\n\nRetsgrundlag\nSundhedsloven § 131.\n\nØkonomiske konsekvenser\nØkonomiafdelingen oplyser, at:\nPå nuværende tidspunkt har Morsø Kommune ikke mulighed for at tilbyde omsorgstandpleje til\nborgere i eget hjem. Med en ny aftale vil der dog blive lavet om herpå.\nUmiddelbart vil det betyde flere borgere og dermed højere udgifter til omsorgstandplejen. Det\ner dog blevet vurderet, at der vil være borgere, der ikke længere vil være i målgruppen til\nomsorgstandpleje, da de i dag godt selv kan komme frem til tandlægen. Vurderingen er derfor,\nat budgettet til omsorgstandplejen holder.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
   },
-  "morsoe-2026-11-04-seniorraadet-7": {
-   "id": "morsoe-2026-11-04-seniorraadet-7",
+  "morsoe-2026-11-04-seniorraadet-9": {
+   "id": "morsoe-2026-11-04-seniorraadet-9",
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
-   "nr": 7,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "type": "referat",
+   "nr": 9,
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Orientering om demensstrategi i Morsø Kommune",
    "afsnit": [
     {
@@ -6086,58 +6202,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Siden vedtagelsen af Morsø Kommunes demensstrategi i 2017 er der sket en betydelig\nudvikling på demensområdet, både i forhold til viden, metoder, organisering og forventninger til\nindsatsen for borgere med demens og deres pårørende. I takt med at der bliver flere ældre,\nforventes det også, at der sker en stigning i antallet af borgere som udvikler en\ndemenssygdom. Den gældende demensstrategi afspejler derfor ikke fuldt ud de aktuelle\nrammevilkår og udviklingstendenser på området.\nSamtidig indebærer både Ældrereformen og Sundhedsreformen nye krav, forventninger og\nmuligheder i forhold til tilrettelæggelsen af indsatsen for borgere med demens og\nderes pårørende. Reformerne har fokus på, at borgere med demens modtager den nødvendige\nudredning, pleje og behandling.\nRegeringen forventer at fremlægge en ny national demensplan med initiativer, der skal styrke\nog videreudvikle indsatsen for mennesker med demens og deres pårørende. I\nfinanslovsforslaget er der lagt op til at afsætte 170 mio. kr. årligt fra 2027 over de kommende\nfire år, til området.\nDen kommende nationale demensplan, vil blive præsenteret i 2027 og vil sætte retning og\nmålsætninger for det fremtidige arbejde på demensområdet med betydning for den kommunale\nopgaveløsning. For at sikre sammenhæng mellem nationale og lokale indsatser ønsker Morsø\nKommune at afvente offentliggørelsen af den nationale demensplan inden arbejdet med en ny\nkommunal demensstrategi påbegyndes.\nDen kommende demensstrategi skal overordnet skabe retning for den fortsatte udvikling af\ndemensområdet i Morsø Kommune og understøtte en sammenhængende, helhedsorienteret\n\nindsats for borgere med demens og deres pårørende.\n\nRetsgrundlag\nÆldrereformen.\nAftale om Sundhedsreformen 2025.\nSommeraftale 2026 om implementering af sundhedsreformen.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
-    }
-   ],
-   "bilag": []
-  },
-  "morsoe-2026-11-04-seniorraadet-8": {
-   "id": "morsoe-2026-11-04-seniorraadet-8",
-   "kommune": "Morsø",
-   "udvalg": "Seniorrådet",
-   "dato": "2026-11-04",
-   "type": "dagsorden",
-   "nr": 8,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
-   "titel": "Serviceramme for Daghjemmet",
-   "afsnit": [
-    {
-     "titel": "Indstilling",
-     "tekst": "Det anbefales, at\nOrienteringen tages til efterretning.\n\nBehandling\nSeniorråd (4. november 2026)."
     },
     {
-     "titel": "Resumé",
-     "tekst": "Med ikrafttrædelsen af den nye ældrelov den 1. juli 2025 er der indført nye rammer for\ntilrettelæggelsen af ældreplejen. Som led i implementeringen arbejder Morsø Kommune med at\nomlægge relevante kvalitetsstandarder til servicerammer, der beskriver kommunens\nserviceniveau og de overordnede rammer for tilbuddene.\nDer er udarbejdet en ny serviceramme for Daghjemmet, som beskriver serviceniveauet for\naflastningstilbud samt aktivitets- og samværstilbud. Servicerammen træder i kraft pr. 1. januar"
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Den eksisterende kvalitetsstandard for Daghjemmet er senest revideret i 2012. Siden da er\ndaghjemmet flyttet til Plejecentret Duelund, og der er sket ændringer i tilbuddets\norganisatoriske og driftsmæssige forhold. Der er derfor behov for en revision, så\nservicerammen afspejler daghjemmets nuværende funktion som et aflastnings- og\naktivitetstilbud samt de gældende vilkår for benyttelse af tilbuddet.\nI servicerammen beskrives målgruppen og kriterierne for visitation til henholdsvis\naflastningstilbud samt aktivitets- og samværstilbud. Herudover præciseres de\nserviceniveauer og forventninger, der knytter sig til tilbuddene.\nSom en del af servicerammen fastlægges der samtidig ensartede retningslinjer for\nbrugerbetaling vedrørende kost og kørsel. Der er desuden indarbejdet bestemmelser om\nbetaling ved afbud og øvrigt fravær, hvilket ikke tidligere har været beskrevet.\nServicerammen træder i kraft pr. 1. januar 2027.\n\nRetsgrundlag\nÆldrelov § 16.\nServicelov § 84 stk. 1 og § 104.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nPunktet er til orientering hos Handicaprådet (den 5. november 2026)."
-    }
-   ],
-   "bilag": []
-  },
-  "morsoe-2026-11-04-seniorraadet-9": {
-   "id": "morsoe-2026-11-04-seniorraadet-9",
-   "kommune": "Morsø",
-   "udvalg": "Seniorrådet",
-   "dato": "2026-11-04",
-   "type": "dagsorden",
-   "nr": 9,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
-   "titel": "Revidering af servicerammer på ældreområdet",
-   "afsnit": [
-    {
-     "titel": "Indstilling",
-     "tekst": "Det indstilles, at\nPunktet tages til orientering.\n\nBehandling\nSeniorråd (4. november 2026)."
-    },
-    {
-     "titel": "Resumé",
-     "tekst": "Kvalitetsstandarden for Pleje- og Ældrebolig samt Afklarings- og aflastningsophold er revideret\nmed henblik på at sikre større tydelighed for borgere, pårørende og medarbejdere. Som led i\nimplementeringen af Ældreloven arbejder Morsø Kommune med at omlægge relevante\nkvalitetsstandarder til servicerammer, der beskriver kommunens serviceniveau og de\noverordnede rammer for tilbuddene.\nI revideringerne er der tale om præciseringer og sproglige tilpasninger, men ikke ændringer i\nserviceniveauet."
-    },
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Den tidligere fælles kvalitetsstandard for Pleje- og Ældrebolig er opdelt i to selvstændige\nservicerammer: én for plejeboliger og én for ældreboliger. Opdelingen er foretaget for at\ntydeliggøre forskellene i målgrupperne, hvilket nu fremgår af de respektive\nmålgruppebeskrivelser.\nI servicerammen for afklarings- og aflastningspladser er betegnelsen \"midlertidige pladser\"\nerstattet med \"afklarings- og aflastningspladser\". Herudover er bestemmelserne om\negenbetaling opdateret i overensstemmelse med gældende takster. Målgruppebeskrivelsen er\nuændret, da den fortsat vurderes at være dækkende for de borgere, der forventes at benytte\ntilbuddet, herunder også borgere fra socialområdet.\nDe opdaterede servicerammer træder i kraft pr. 1. januar 2027.\n\nRetsgrundlag\nAlmenboligloven §§ 5, stk.2, 54a, 58a og 58b.\nServiceloven § 84, stk. 2.\nÆldrelovens §§ 16 og 17.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nPunktet er til orientering på Handicaprådet (5. november 2026)."
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -6147,15 +6215,19 @@
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Seniorrådets budget 2026",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Det anbefales, at\nOrienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -6165,15 +6237,19 @@
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Fokus på synliggørelse af Seniorrådet",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Det anbefales, at\nSeniorrådet drøfter ideer og tiltage til at synliggøre Seniorrådets virke."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Seniorrådet drøftede synliggørelse af rådets virke og besluttede at arbejde videre med\nfølgende tiltag:\nUdarbejdelse af en ny folder om Seniorrådets arbejde\nUddeling af folderen på bl.a. biblioteker, aktivitetscentre, Støberigården, Perlen og\nlignende steder\nSamarbejde med Ældre Sagen\nSynliggørelse over for præster og andre lokale aktører\nRekruttering af kandidater til næste seniorrådsvalg\nOplæg om Seniorrådet ved arrangementer i pensionistforeninger\nOplæg ved senioridræt og andre aktiviteter med mange ældre deltagere\nRevision af den eksisterende plakat."
     }
    ],
    "bilag": []
@@ -6183,15 +6259,19 @@
    "kommune": "Morsø",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.mors.dk/vis?id=697807b1-f0c0-4ee4-b681-0b4fd9e25338",
-   "hentet": "2026-10-25T09:26:47.666Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=27e2d059-86cb-45b4-b0ea-b2fc5dceacdb",
+   "hentet": "2026-11-05T21:19:50.175Z",
    "titel": "Eventuelt",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Det anbefales, at\nSeniorrådet byder ind med oplysninger til orientering og eventuelt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Seniorrådet drøftede mærkningen af hjemmeplejebilerne. Efter mødet indhentede Mette\nBjørndal oplysninger fra John Michael Jensen fra Morsø Hjemmepleje, som oplyste, at ældre\nhjemmeplejebiler fortsat har logo, mens nyere biler alene er mærket med Morsø Kommune og\nCVR-nummer. Ændringen er foretaget af hensyn til borgernes privatliv og for at mindske\nsynligheden af, hvem der modtager hjemmehjælp. Der vil i en overgangsperiode være biler\nmed forskellig mærkning."
     }
    ],
    "bilag": []
@@ -8323,6 +8403,860 @@
     }
    ],
    "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-1": {
+   "id": "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-1",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Teknik og Miljø",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.mors.dk/vis?id=bcd86e6e-a9ee-4519-a3ec-91fc935fd02f",
+   "hentet": "2026-11-05T21:19:29.953Z",
+   "titel": "Udvalget for Teknik og Miljø - Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nUdvalget godkender dagsordenen."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-3": {
+   "id": "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-3",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Teknik og Miljø",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.mors.dk/vis?id=bcd86e6e-a9ee-4519-a3ec-91fc935fd02f",
+   "hentet": "2026-11-05T21:19:29.953Z",
+   "titel": "Boligindsatsen - Anmodning om kommunalt opkøb og nedrivning af Næssundvej 353",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nUdvalget for Teknik og Miljø tager henvendelsen fra arbejdsgruppen for Grøn\nBoligrotation til efterretning\nDer ikke afsættes byfornyelsesmidler til erhvervelse og nedrivning af Næssundvej 353,\n7960 Hvidbjerg.\n\nBehandling\nDirektionen (26. oktober 2026)\nUdvalget for Teknik og Miljø (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Arbejdsgruppen for Grøn Boligrotation har på vegne af Hvidbjerg og Omegns Beboerforening\nsamt Landsbyen De 7 Sogne henvendt sig til Udvalget for Teknik og Miljø med opfordring om,\nat Morsø Kommune erhverver ejendommen Næssundvej 353 med henblik på nedrivning.\nBaggrunden er ønsket om at skabe mulighed for realisering af projektet Grøn Boligrotation,\nherunder etablering af nye seniorvenlige boliger i området. Henvendelsen fremgår af bilag 1."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Morsø Kommune har været i dialog med arbejdsgruppen bag Grøn Boligrotation, som arbejder\nfor etablering af energi- og seniorvenlige boliger i Hvidbjerg.\nPå møde med arbejdsgruppen den 23. juni 2026, orienterede administrationen om kommunens\nerhvervelse af Næssundvej 351 med henblik på nedrivning, da ejendommen var vurderet\nkondemnabel og til væsentlig gene for lokalområdet. Det blev samtidig drøftet, om kommunen\nkunne erhverve Næssundvej 353, hvortil administrationen oplyste, at en nærmere dialog\nherom forudsætter et mere konkretiseret projektgrundlag.\nArbejdsgruppen har efterfølgende fremsendt en skriftlig henvendelse til Udvalget for Teknik og\nMiljø, hvori det anføres, at projekt Grøn Boligrotation ikke vil kunne realiseres uden en løsning,\nder indebærer kommunalt opkøb og nedrivning af Næssundvej 353. Arbejdsgruppen vurderer,\nat indsatsen vil understøtte områdets udvikling og muliggøre etableringen af et\nsammenhængende område med seniorvenlige boliger.\nAdministrationen vurderer, at Grøn Boligrotation-projektet understøtter aktuelle behov om at\nsikre ældre en lokal mulighed for at flytte fra store parcelhuse og videre til mindre og mere\nseniorvenlige boliger. Opkøb og nedrivning af ejendommen med henblik på videresalg i et\noffentligt udbud er endvidere en mulighed kommunen kan benytte. Det er imidlertid\nadministrationens vurdering, at projektet for nuværende befinder sig på et overordnet idé- og\nudviklingsstadie, hvor kommunen endnu ikke er præsenteret for et konkret og tilstrækkeligt\nprojektgrundlag, der bl.a. omfatter skitser, beskrivelser og/eller økonomiske beregninger for\nhvordan det samlede projekt vil kunne realiseres.\n\nAdministrationen bemærker desuden, at Næssundvej 353 ikke umiddelbart fremstår i samme\nnedslidte stand som Næssundvej 351, hvorfor administrationen vurderer, at ejendommen ikke i\nsamme grad opfylder de betingelser, der normalt begrunder opkøb og nedrivning efter\nbyfornyelsesloven kapitel 5 A. Kommunen risikerer derved, at der ikke kan opnås statslig\nrefusion til dækning af udgifterne forbundet med et eventuelt opkøb og nedrivning af\nejendommen.\nPå denne baggrund vurderer administrationen, at en kommunal erhvervelse på nuværende\ntidspunkt vil være en relativt omkostningstung byfornyelsesindsats, som på det foreliggende\ngrundlag ikke er en tilstrækkelig sikker og hensigtsmæssig anvendelse af kommunens\nbegrænsede byfornyelsesmidler.\nSlutteligt kan det bemærkes, at administrationen er blevet bekendt med, at Næssundvej 353,\nsom tidligere var udbudt til salg for 245.000 kr., for nylig er taget af markedet, idet ejendommen\nskulle være overgået til en ny ejer. Forholdet vurderes at kunne vanskeliggøre eller indskrænke\nprojektets handlemuligheder.\n\nRetsgrundlag\nSåfremt udvalget ønsker at imødekomme anmodningen om opkøbet og nedrivningen af\nNæssundvej 353, kan arbejdet udføres i overensstemmelse med byfornyelsesloven kapitel 5 A,\nVurderes det imidlertid, at ejendommen grundet begrænset slid ikke opfylder betingelserne for\nopkøb og nedrivning efter bestemmelsen, kan arbejdet i stedet udføres på baggrund af\nbyfornyelsesloven § 98, stk. 2. Dog uden at kommunen kan benytte den statslige refusion til\nfinansieringen.\n\nØkonomiske konsekvenser\nVejledende pris for opkøb og nedrivning anslås til:\nOpkøb\n\nNedrivning\n\nAdministration\n\nUforudsete udgifter (25%)\n\nI alt\n\nSåfremt projektet forudsættes finansieret uden statslig refusion, vurderes det, at indsatsen ikke\nkan realiseres inden for Boligindsatsens budgetramme for 2026 alene. Projektet vil i så fald\nskulle finansieres helt eller delvist via budgettet for By og Land. En eventuel\nbevillingsgodkendelse vil blive fremlagt til budgetopfølgningen i 2027.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nØkonomi og Stab har ingen bemærkninger."
+    },
+    {
+     "titel": "Behandling i Direktionen 26. oktober 2026",
+     "tekst": "Drøftet."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-4": {
+   "id": "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-4",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Teknik og Miljø",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.mors.dk/vis?id=bcd86e6e-a9ee-4519-a3ec-91fc935fd02f",
+   "hentet": "2026-11-05T21:19:29.953Z",
+   "titel": "Ældreboligregnskab 2025, budget 2027 og huslejefastsættelse 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nRegnskaberne for 2025, budgetterne samt huslejefastsættelse i 2027 for de kommunale\nalmene ældreboliger tages til efterretning.\n\nBehandling\nDirektionen (2. november 2026)\nUdvalget for Teknik og Miljø (11. november 2026)\nØkonomiudvalget (18. november 2026)\nKommunalbestyrelsen (24. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Morsø Kommune har fremlagt budgetter og huslejefastsættelse for 2027 til godkendelse i de\nenkelte afdelinger, imens at regnskaberne for 2025 er taget til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I henhold til lov om almene boliger m.v. skal regnskabs-, budget- og huslejefastsættelse for\nkommunale almene ældreboliger ske efter regler, der fastsættes af kommunalbestyrelsen.\nMorsø Kommune administrerer ni afdelinger.\nRegnskab og budget\nFor de enkelte afdelinger opgøres regnskab og budget efter en balancering af\nhuslejeindtægterne i forhold til den enkelte afdelings omkostninger. Omkostningerne består\nblandt andet af lån, henlæggelser til vedligeholdelse, renovation og pedeludgifter. De henlagte\nmidler udgør en opsparing til fremtidig vedligeholdelse samt udgifter i forbindelse med\nfraflytninger. Vedligeholdelsen udføres som udgangspunkt på baggrund af udarbejdede\nvedligeholdelsesplaner.\nBilagene for regnskab 2025 og budget 2027 er vedhæftet. Regnskab og budget er blevet\nfremlagt for beboerne i de enkelte afdelinger.\nBudgetterne for 2027 blev godkendt for alle afdelinger med undtagelse af Duelund, da der ikke\nvar beboer til at underskrive.\nHuslejefastsættelse\nHuslejerne er som tidligere år fastsat ud fra forventede driftsudgifter. Der henvises i øvrigt til\nvedlagte budgetter for yderligere specifikation.\nHuslejeforhøjelser skal varsles med mindst tre måneders varsel, jf. § 10, stk. 1 i\nalmenlejeloven.\nFor 2027 er huslejerne i nedenstående afdelinger:\n\nAfdeling\n(Hele kroner)\nÆldreboliger på landet\n\nHusleje\npr. bolig/mdr.\n\nBeregnet husleje\npr. bolig/mdr.\n\nÆndring til 2027\n\nStøberigården Plejecenter\n\nHvidbjerg Plejecenter\n\nRolstruplund Plejecenter\n\nEnggården Bosted\n\nLupinvej Bosted\n\nDuelund Plejecenter\n\nAsylgade Handicapboliger\nNy Smallegade\n\nDa ingen af afdelingerne overstiger en huslejeændring på mere end 5 %, foretages der ingen\nyderligere behandling for disse.\n\nRetsgrundlag\nLovgivningen, der regulerer de kommunale almene boliger og lejeforhold, omfatter bl.a.:\nAlmenlejeloven, fastsat i LBK nr. 928 af 4. september 2019\nAlmenboligloven, fastsat i LBK nr. 1171 af 11. november 2024.\n\nDisse love danner grundlag for reglerne om regnskab, budget, husleje og varsling af\nhuslejeforhøjelser i de kommunale almene boliger.\n\nØkonomiske konsekvenser\nFastlæggelse af husleje gældende pr. 1. januar 2027.\nHenlæggelser for hver boligafdeling fremgår af regnskaberne for 2025.\nØvrige nøgletal vil være at finde i det samlede bilag: Bilag Nøgletal - Ældreboliger Regnskab\n2025 og Budget 2027.\n\nAndre konsekvenser\nKommunalbestyrelsen fører tilsyn med de almene boligorganisationer. Hvis der opstår tvister,\neller der meddeles påbud, skal disse fremlægges til politisk behandling.\nAdministrationen forudsætter, at regnskaber og budgetter for de kommunale almene\nældreboliger godkendes som en del af den årlige proces, og derfor fremlægges de ikke\nfremadrettet separat. Ved huslejeændringer på over 5 % skal sagen fremlægges til politisk\nbehandling.\n\nI forbindelse med huslejevarsling er der blevet oplyst forkert nuværende og ny husleje på\nBoenheden Lupinvej. Husreguleringen er fortsat den samme, som er fremlagt og underskrevet.\nFejlen er udbedret, og beboer er oplyst om korrekte huslejer.\n\nHøring og kommunikation\nHuslejefastsættelse og Budget 2027 er godkendt af de enkelte afdelinger med undtagelse af\nDuelund, da der ikke var beboer til at underskrive. Regnskaberne for 2025 er taget til\nefterretning.\nØkonomi og Stab har ingen bemærkninger."
+    },
+    {
+     "titel": "Behandling i Direktionen 2. november 2026",
+     "tekst": "Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-5": {
+   "id": "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-5",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Teknik og Miljø",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.mors.dk/vis?id=bcd86e6e-a9ee-4519-a3ec-91fc935fd02f",
+   "hentet": "2026-11-05T21:19:29.953Z",
+   "titel": "Ledelsesinformation pr. 31. oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nLedelsesinformationen drøftes.\n\nBehandling\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)\nUdvalget for Teknik og Miljø (11. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)\nØkonomiudvalget (18. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Der er udarbejdet ledelsesinformation pr. 31. oktober 2026.\nLedelsesinformationen bliver gennemgået på mødet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den udarbejdede ledelsesinformation gennemgås og drøftes.\nForbrugsopgørelserne kan ikke tages som det endelige regnskab, idet supplementperioden\nmangler.\nDer vil ikke være ledelsesinformation på udvalgsmøderne i december måned,\nidet udvalgsmøderne afholdes, inden data indsamles.\n\nRetsgrundlag\nMorsø Kommunes Styringshåndbog.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-9": {
+   "id": "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-9",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Teknik og Miljø",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.mors.dk/vis?id=bcd86e6e-a9ee-4519-a3ec-91fc935fd02f",
+   "hentet": "2026-11-05T21:19:29.953Z",
+   "titel": "Udvalget for Teknik og Miljø - Orienteringer",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrienteringerne tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-10": {
+   "id": "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-10",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Teknik og Miljø",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.mors.dk/vis?id=bcd86e6e-a9ee-4519-a3ec-91fc935fd02f",
+   "hentet": "2026-11-05T21:19:29.953Z",
+   "titel": "Udvalget for Teknik og Miljø - Orienteringer fra Morsø Forsyning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrienteringerne fra Morsø Forsyning tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-12": {
+   "id": "morsoe-2026-11-11-udvalget-for-teknik-og-miljoe-12",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Teknik og Miljø",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.mors.dk/vis?id=bcd86e6e-a9ee-4519-a3ec-91fc935fd02f",
+   "hentet": "2026-11-05T21:19:29.953Z",
+   "titel": "Udvalget for Teknik og Miljø - Godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Godkendelse af referatet."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-1": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-1",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Udvalget for Social, Sundhed og Beskæftigelses godkendelse af dagsordenen",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nDagordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-2": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-2",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Ledelsesinformation pr. 31. oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nLedelsesinformationen drøftes.\n\nBehandling\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)\nUdvalget for Teknik og Miljø (11. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)\nØkonomiudvalget (18. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Der er udarbejdet ledelsesinformation pr. 31. oktober 2026.\nLedelsesinformationen bliver gennemgået på mødet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den udarbejdede ledelsesinformation gennemgås og drøftes.\nForbrugsopgørelserne kan ikke tages som det endelige regnskab, idet supplementperioden\nmangler.\nDer vil ikke være ledelsesinformation på udvalgsmøderne i december måned,\nidet udvalgsmøderne afholdes, inden data indsamles.\n\nRetsgrundlag\nMorsø Kommunes Styringshåndbog.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-4": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-4",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Morsø Kommunes sundhedsprofil 2025",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrienteringen tages til efterretning.\n\nBehandling\nDirektionen (26. oktober 2026)\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Sundhedsprofilen Hvordan har du det? 2025 giver et aktuelt nationalt billede af sundhed, trivsel\nog sundhedsadfærd blandt borgere på 16 år og derover.\nI 2025 blev spørgeskemaet udsendt til 34.700 borgere i Region Nordjylland og opnåede en\nsvarprocent på 41,3%.\nI Morsø Kommune var svarprocenten 40,6 %, hvilket er på niveau med de øvrige nordjyske\nkommuner. Svarprocenten varierer imidlertid betydeligt mellem aldersgrupper og køn. Den er\nlavest blandt de 16-34-årige og højest blandt borgere på 65 år eller derover. Samlet deltog\n45,9 % af kvinderne og 36,9 % af mændene i regionen.\nDen forholdsvis lave og skæve deltagelse indebærer en vis statistisk usikkerhed, særligt ved\nopgørelser på kommuneniveau og i mindre undergrupper. Resultaterne for Morsø Kommune\nbør derfor fortolkes som lokale pejlemærker og ses i sammenhæng med de overordnede\nregionale tendenser."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Rygning\nAndelen af dagligrygere i Region Nordjylland er faldet fra 22 % i 2010 til 10 % i 2025. Siden\n2021 er andelen faldet fra 14 %. Samtidig er andelen af storrygere reduceret fra 11 % i 2010 til\n4 % i 2025. Udviklingen er positiv på tværs af køn og aldersgrupper. Blandt unge ses der dog\net betydeligt forbrug af røgfri nikotinprodukter, som 9 % anvender dagligt.\nMorsø Kommune følger overordnet den regionale udvikling med et markant fald i daglig\nrygning over tid. De kommunale resultater peger således ikke på en væsentligt anderledes\nudvikling end i regionen samlet set.\nAlkohol\nI Region Nordjylland drikker 12 % mere end 10 genstande om ugen. Det er et fald fra 21 % i\n2010. 7 % drikker mindst fem genstande ved samme lejlighed mindst én gang om ugen, mens\n8 % af mændene og 3 % af kvinderne viser tegn på moderate eller svære alkoholproblemer.\nDet høje alkoholforbrug er særlig udbredt blandt mænd, pensionister og unge.\nMorsø Kommunes resultater ligger overordnet tæt på det regionale niveau. Det regionale fald i\n\nalkoholforbruget er derfor også den væsentligste tendens for vurderingen af udviklingen i\nMorsø Kommune.\nKost\nPå kostområdet ses en mindre gunstig regional udvikling. I 2025 har 23 % af nordjyderne en\nlav score på kostskalaen, hvilket indikerer en kost med blandt andet meget fedt og\nbegrænsede mængder frugt, grønt og fisk. Andelen er steget fra 18 % i 2010 og 21 % i 2021.\n35 % vurderer selv deres madvaner som sunde.\nKost er et særligt opmærksomhedspunkt for Morsø Kommune. De lokale resultater viser en\nhøjere andel med lav score på kostskalaen og en lavere andel, der vurderer deres madvaner\nsom sunde, end i regionen samlet. Morsø Kommune er dermed blandt de kommuner, der\nskiller sig negativt ud på kostområdet.\nFysisk aktivitet\nI Region Nordjylland er 19 % fysisk inaktive. Andelen er uændret i forhold til både 2010 og\n2021. Samtidig lever 44 % op til WHO's anbefalinger for fysisk aktivitet, hvilket er en stigning\nsiden 2021. En stor del af de fysisk inaktive borgere ønsker at være mere fysisk aktive.\nI Morsø Kommune er andelen af fysisk inaktive omtrent på niveau med regionen, men en\nlavere andel lever op til WHO's anbefalinger. Morsø Kommune er blandt de kommuner, der\nligger under regionsgennemsnittet på denne indikator.\nVægt\nI Region Nordjylland lever 36 % med moderat overvægt og 22 % med svær overvægt. Andelen\nmed moderat overvægt har været stabil siden 2010. Andelen med svær overvægt er steget\nsiden 2010, men udviklingen er stagneret i 2025. Svær overvægt forekommer hyppigst blandt\nde 45-66-årige og blandt borgere med kortere uddannelse eller uden tilknytning til\narbejdsmarkedet.\nDe kommunale resultater for Morsø peger overordnet i samme retning som\nregionsresultaterne. Vægtområdet er fortsat et relevant opmærksomhedspunkt, men Morsø\nKommune fremhæves ikke blandt de kommuner, der afviger statistisk fra regionsgennemsnittet\nmed hensyn til svær overvægt.\nSøvn\nEn tredjedel af borgerne i Region Nordjylland sover mindre end syv timer i døgnet, mens 18 %\nhar dårlig søvnkvalitet. Andelen med dårlig søvnkvalitet er steget siden 2013. Udfordringerne\nses særligt blandt kvinder, borgere med grundskole som højest fuldførte uddannelse og\nborgere uden for arbejdsmarkedet.\nMorsø Kommunes resultater viser et sammensat billede. En del af borgerne sover mindre end\nsyv timer, men samtidig er andelen, som oplever at få tilstrækkelig søvn til at føle sig udhvilet,\nhøjere end i regionen samlet. Morsø Kommune skiller sig således positivt ud på sidstnævnte\nindikator.\n\nSamlet vurdering\nMorsø Kommune følger på de fleste områder det regionale billede. De mest markante lokale\nopmærksomhedspunkter er kostvaner og andelen, der ikke lever op til anbefalingerne for fysisk\naktivitet. På søvnområdet ses omvendt en positiv lokal tendens, idet flere borgere end regionalt\noplever at få tilstrækkelig søvn til at føle sig udhvilet.\nPå grund af svarprocenten og forskellene i deltagelsen mellem køn og aldersgrupper bør de\nkommunale resultater fortolkes med forsigtighed og primært anvendes til at understøtte de\ntendenser, der ses på regionalt niveau.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 26. oktober 2026",
+     "tekst": "Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-5": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-5",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Orientering om demensstrategi i Morsø Kommune",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrienteringen tages til efterretning.\n\nBehandling\nDirektionen (26. oktober 2026)\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Den nuværende demensstrategi i Morsø Kommune blev vedtaget i 2017 og afspejler ikke i\ntilstrækkelig grad den udvikling, der er sket og sker på demensområdet. Samtidig har\nÆldrereformen og Sundhedsreformen medført nye rammer og forventninger til den kommunale\nindsats på demensområdet.\nRegeringen forventes at fremlægge en ny national demensplan i 2027, hvorefter\nder igangsættes arbejde med en ny demensstrategi for Morsø Kommune. Den kommunale\nstrategi skal understøtte nationale målsætninger og initiativer på området."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Siden vedtagelsen af Morsø Kommunes demensstrategi i 2017 er der sket en betydelig\nudvikling på demensområdet, både i forhold til viden, metoder, organisering og forventninger til\nindsatsen for borgere med demens og deres pårørende.\nI takt med at der bliver flere ældre, forventes det også, at der sker en stigning i antallet af\nborgere der udvikler en demenssygdom. Den gældende demensstrategi afspejler derfor ikke\nfuldt ud de aktuelle rammevilkår og udviklingstendenser på området.\nSamtidig indebærer både Ældrereformen og Sundhedsreformen nye krav, forventninger og\nmuligheder i forhold til tilrettelæggelsen af indsatsen for borgere med demens og\nderes pårørende. Reformerne har fokus på, at borgere med demens modtager den nødvendige\nudredning, pleje og behandling.\nRegeringen forventer at fremlægge en ny national demensplan med initiativer, der skal styrke\nog videreudvikle indsatsen for mennesker med demens og deres pårørende. I\nfinanslovsforslaget er der lagt op til at afsætte 170 mio. kr. årligt fra 2027 over de kommende\nfire år til området. Den kommende nationale demensplan vil blive præsenteret i 2027 og vil\nsætte retning og målsætninger for det fremtidige arbejde på demensområdet med betydning\nfor den kommunale opgaveløsning.\nFor at sikre sammenhæng mellem nationale og lokale indsatser ønsker Morsø Kommune at\nafvente offentliggørelsen af den nationale demensplan inden arbejdet med en ny kommunal\ndemensstrategi påbegyndes.\n\nDen kommende demensstrategi skal overordnet skabe retning for den fortsatte udvikling af\ndemensområdet i Morsø Kommune og understøtte en sammenhængende, helhedsorienteret\nindsats for borgere med demens og deres pårørende.\n\nRetsgrundlag\nÆldrereformen.\nAftale om Sundhedsreformen 2025.\nSommeraftale 2026 om implementering af sundhedsreformen.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nSeniorrådet orienteres."
+    },
+    {
+     "titel": "Behandling i Direktionen 26. oktober 2026",
+     "tekst": "Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-6": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-6",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Status på beskæftigelsesreformen pr. 1. januar 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrienteringen tages til efterretning.\n\nBehandling\nDirektionen (19. oktober 2026)\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Den 9. april 2025 præsenterede regeringen, Liberal Alliance, Konservative Folkeparti, Dansk\nFolkeparti og Radikale Venstre en forenkling af beskæftigelsessystemet i forbindelse med\nAftale om reform af beskæftigelsesindsatsen.\nReformen implementeres løbende i perioden fra 2026 til 2027. I denne periode vil der komme\nændringslove samt en ny hovedlov om en aktiv beskæftigelsesindsats.\nDe første ændringslove trådte i kraft den 1. februar 2026 og den 1. juli 2026. Den\nnye hovedlov træder i kraft den 1. januar 2027."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Initiativerne i Aftale om reform af beskæftigelsesindsatsen fra april 2025 medfører en række\nændringer af Lov om en aktiv beskæftigelsesindsats, der indfases af flere omgange i perioden\nDen sidste fase træder i kraft den 1. januar 2027 i forbindelse med en ny hovedlov om en aktiv\nbeskæftigelsesindsats. Hovedloven medfører følgende:\n\nFem nye målgrupper fremfor 13\nAfskaffelse af jobafklaringsforløb\nStyrket fokus på job i visitationen af kontanthjælpsgruppen\nForenkling af reglerne for unge dagpengemodtagere uden en uddannelse\nStørre frihed i den tidligere indsats for borgere tættere på arbejdsmarkedet\nFremrykket og udvidet afklaring for borgere længere fra arbejdsmarkedet\nAfskaffelse og harmonisering af særregler i beskæftigelsesindsatsen\nNy resultatbaseret opfølgning.\n\nCenter for Beskæftigelse har igangsat arbejdet med implementeringen af den nye hovedlov.\n\nRetsgrundlag\n\nAftale om reform af beskæftigelsesindsatsen.\nForslag til Lov om ændring af lov om en aktiv beskæftigelsesindsats, lov om organisering og\nunderstøttelse af beskæftigelsesindsatsen m.v. og forskellige andre love.\nForslag til Lov om en aktiv beskæftigelsesindsats.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 19. oktober 2026",
+     "tekst": "Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-7": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-7",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Status på plejeboliger, ventelister og daghjem",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nStatus på plejeboliger, ventelister og daghjem tages til efterretning.\n\nBehandling\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Udvalget orienteres om den aktuelle status på plejeboliger, ventelister til plejeboliger samt\nbelægning og kapacitet på daghjemsområdet. De aktuelle opgørelser fremgår af lukket bilag."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Administrationen følger løbende udviklingen på plejebolig- og daghjemsområdet og orienterer\nudvalget om status ved hvert ordinært udvalgsmøde.\nOrienteringen omfatter udviklingen i antallet af ledige og optagede plejeboliger, ventelister til\nplejeboliger samt status på daghjemsområdet. De aktuelle nøgletal og opgørelser fremgår af\ndet lukkede bilag.\nOrienteringen har til formål at give udvalget et løbende overblik over udviklingen på områderne\nog understøtte den politiske opmærksomhed på kapacitet, belægning og efterspørgsel.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-8": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-8",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Orientering fra møder i Sundhedsrådet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrienteringen fra møder i Sundhedsrådet tages til efterretning.\n\nBehandling\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Formanden for Udvalget for Social, Sundhed og Beskæftigelse orienterer om seneste møde i\nSundhedsrådet samt relevante emner og beslutninger med betydning for Morsø Kommune."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sundhedsrådet arbejder med tværsektorielle indsatser og samarbejdet mellem kommuner,\nalmen praksis og sygehusvæsenet.\nPå mødet orienterer formanden for Udvalget for Social, Sundhed og Beskæftigelse om\nrelevante drøftelser, initiativer, beslutninger og udviklingstendenser fra Sundhedsrådets\nseneste møde. Orienteringen har til formål at sikre udvalgets løbende indsigt i arbejdet i\nSundhedsrådet og det tværsektorielle samarbejde på sundhedsområdet.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-9": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-9",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Orientering til Udvalget for Social, Sundhed og Beskæftigelse",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrienteringen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-11": {
+   "id": "morsoe-2026-11-10-udvalget-for-social-sundhed-og-beskaeftigelse-11",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Social, Sundhed og Beskæftigelse",
+   "dato": "2026-11-10",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.mors.dk/vis?id=2583a198-b33d-4d98-9b20-df469abfdf56",
+   "hentet": "2026-11-05T21:19:36.009Z",
+   "titel": "Udvalget for Social, Sundhed og Beskæftigelses godkendelse af referatet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Godkendelse af referatet."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-1": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-1",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Udvalget for Børn, Kultur og Turismes godkendelse af dagsordenen",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nDagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-2": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-2",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Museum Mors - Resultatkontrakt 2027 og tillæg vedr. UNESCO Verdensarv",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOplæg til Resultatkontrakt 2027 mellem Museum Mors og Morsø Kommune godkendes\nOplæg til tillæg til resultatkontrakten vedr. UNESCO Verdensarv og\nVerdensarvssekretariatet godkendes\nMuseumsdirektør Anders Have Espersen og bestyrelsesformand for Museum Mors, Charlotte\nOvergaard giver en årlig opfølgning på museets Vision, Mission og Strategier samt fremlægger\noplæg til Resultatkontrakt 2027 og tillæg vedr. UNESCO Verdensarv på mødet i Udvalget for\nBørn, Kultur og Turisme den 11. november 2026 kl. 14:30.\n\nBehandling\nDirektionen (2. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)\nØkonomiudvalget (18. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Museum Mors indgik sin første resultatkontrakt med Morsø Kommune i 2015, og kontrakterne\ner siden blevet fornyet årligt. Resultatkontrakten for 2027 tager udgangspunkt i museets\nstrategiplan 2024-2028, handlingsplanen efter Slots- og Kulturstyrelsens kvalitetsvurdering i\n2019 samt den nye museumslov, der trådte i kraft i januar 2025.\nI juli 2026 blev molerklinterne i den vestlige Limfjord, herunder Hanklit på Mors, sammen med\nde unikke fiskefossiler udpeget som UNESCO Verdensarv. Udpegningen medfører nye og\nvæsentligt udvidede opgaver for museet inden for formidling, forskning, monitorering,\nvidensdeling og samarbejde med Verdensarvssekretariatet.\nDer er udarbejdet et særskilt tillæg til resultatkontrakten, som beskriver museets opgaver og\nansvar i relation til verdensarven og samarbejde med Verdensarvssekretariatet samt\nUNESCO's Site Manager.\nResultatkontrakten og tillægget er gældende fra 1. januar 2017 til 31. december 2027."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Museum Mors har fremsendt oplæg til resultatkontrakt 2027 og tillæg vedrørende UNESCO\nVerdensarv.\nResultatkontrakten fastlægger mål og indsatser inden for de tre hovedområder i den nye\nmuseumslov: Formidling, vidensudvikling og samlingsudvikling. Der er blandt andet fokus på\nudvikling af museets besøgssteder, styrkelse af forskningsindsatsen, samarbejde med\nuddannelsesinstitutioner, digital registrering og bevaring af samlinger samt videreudvikling af\nFossil- og Molermuseet og arbejdet med etablering af et nyt geologisk museum på Nordmors.\n\nUNESCO-tillægget beskriver de særlige opgaver, som følger af verdensarvsudpegningen.\nOpgaverne omfatter styrket formidling af verdensarven, udvikling af undervisningsforløb,\nforsknings- og videnssamarbejder, bidrag til monitorering og rapportering, faglig understøttelse\naf Verdensarvssekretariatet samt værtsfunktion for sekretariatets aktiviteter på Fossil- og\nMolermuseet.\nTillægget skal sikre, at verdensarvens enestående universelle værdi formidles, dokumenteres\nog forankres lokalt til gavn for borgere, forskere, uddannelsesinstitutioner og besøgende samt\nunderstøtte opfyldelsen af de internationale forpligtelser, der følger af UNESCO-statussen.\n\nRetsgrundlag\nKommunalfuldmagten.\nMuseumsloven LBK nr. 1017 af 07/07/25.\nResultatkontrakten mellem Museum Mors og Morsø Kommune.\nTillæg til resultatkontrakt 2027 vedrørende UNESCO Verdensarv og Verdensarvssekretariatet.\n\nØkonomiske konsekvenser\nMorsø Kommune yder et driftstilskud til Museum Mors på 4.149.144 kr. i 2027.\nDerudover ydes et særskilt tilskud på 850.000 kr. i 2027 til varetagelse af de opgaver, der\nfølger af UNESCO Verdensarven ved Hanklit, herunder formidling, forskning, monitorering,\nbidrag til Verdensarvssekretariatet og faglig understøttelse af UNESCO Site Manager.\nI forbindelse med den politiske behandling i 2024 blev der drøftet et særskilt tilskud på 850.000\nkr. til varetagelse af de opgaver, der følger af UNESCO Verdensarven ved Hanklit. Opgaverne\nomfatter blandt andet formidling, forskning, monitorering, bidrag til Verdensarvssekretariatet\nsamt faglig understøttelse af UNESCO Site Manager.\nAnsøgning om bevillig af dette tilskud fremlægges i forbindelse med budgetopfølgningen pr. 30\nseptember 2026. Budgetopfølgningen behandles af Kommunalbestyrelsen den 15. december.\n\nAndre konsekvenser\nVerdensarvsudpegningen forventes at styrke områdets nationale og internationale synlighed\nsamt bidrage til udvikling af turisme, forskning og undervisning med afsæt i områdets\ngeologiske værdier.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 2. november 2026",
+     "tekst": "Drøftet."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-3": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-3",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Dialogmøde med Skaldyrsfestivalen",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nDialogmødet gennemføres med følgende dagsorden:\nEvaluering af samarbejdsaftalen 2026\nIndledende drøftelse af samarbejdsaftale for 2027.\n\nHenrik Bækkedal og Michael Hansen fra bestyrelsen i foreningen Skaldyrsfestivalen deltager i\nUdvalget for Børn, Kultur og Turismes møde den 11. november 2026 kl. 15.00.\n\nBehandling\nDirektionen (26. oktober 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Udvalget for Børn, Kultur og Turisme godkendte den 12. november 2025 en samarbejdsaftale\nmed Skaldyrsfestivalen for 2026.\nI bilaget ses den gældende samarbejdsaftale for 2026."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Samarbejdsaftalen skal være med til at sikre et stabilt og langsigtet samarbejde med fokus på\nudvikling. Formålet med en samarbejdsaftale er at understøtte, at Skaldyrsfestivalen bliver\nløftet endnu mere kvalitetsmæssigt og turistmæssigt og Morsø Kommunes rolle er klargjort.\nSamarbejdsaftalen for 2026 bygger videre på samarbejdsaftalerne fra perioden 2018-2025.\nSamarbejdsaftalen giver Skaldyrsfestivalen en større mulighed for at nytænke, samt\niværksætte initiativer og indsatser, der udvikler Skaldyrsfestivalen.\nI aftalen for 2026 indgår, at Skaldyrsfestivalen deltager i møder med Morsø Kommune, hvor\nder arbejdes med udviklingen af fremtidens skaldyrsevents på Mors. Der arbejdes for at skabe\nstørre sammenhæng mellem events med skaldyr i foråret og i efteråret.\nTilskuddet har været forhøjet i 2025 og 2026 for at give foreningen mulighed for at få aflastning\ntil centrale opgaver, som er vokset i takt med, at eventet er vokset.\n\nRetsgrundlag\nSamarbejdsaftalen 2026 med Skaldyrsfestivalen.\nKommunalfuldmagten.\n\nØkonomiske konsekvenser\nSamarbejdsaftalen 2026 har været med et tilskud på 350.000 kr. fra Opstarts- og\nudviklingspuljen.\n\nFra 2027 er der afsat fast budget på 300.000 kr. til samarbejdsaftalen med Skaldyrsfestivalen.\nAdministrationen anbefaler, at den kommende aftale bliver 2-årig. Dog vil det være med\nmulighed for økonomisk tilpasning, hvis der er ændringer i forbindelse med budget 2028.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 26. oktober 2026",
+     "tekst": "Drøftet."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-4": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-4",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Status på Ophav Limfjorden - Læring i fjordkanten",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nStatus på Ophav Limfjorden - Læring i fjordkanten tages til efterretning.\n\nProjektleder Tina Morgen deltager i Udvalget for Børn, Kultur og Turismes behandling af sagen\nkl. 15.30 med henblik på at uddybe status på projektet og besvare eventuelle spørgsmål.\n\nBehandling\nDirektionen (26. oktober 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Projektet Ophav Limfjorden - Læring i fjordkanten har til formål at bringe Limfjorden tættere på\nbørn og unge og gøre fjorden til en naturlig del af læringen fra dagtilbud, gennem\ngrundskolen og videre til ungdomsuddannelserne. Gennem praksisnære undervisningsforløb\nskal projektet styrke børn og unges viden om Limfjorden, deres interesse for blandt andet\nnaturvidenskab og klima samt deres tilknytning til lokalområdet.\nProjektet, som løber fra 2022 til 2026 og er finansieret af Novo Nordisk Fonden og Villum\nFonden, er nu i sin afsluttende fase. Ophav er i projektperioden blevet en veletableret del af\nhverdagen i kommunens dagtilbud og skoler. På den baggrund gives der en status på\nprojektets resultater samt Ophavs fremtidige forankring og overgang til drift."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Historik\nOphav Limfjorden - Læring i fjordkanten udspringer af planerne om Ophav Limfjorden\nOplevelsescenter, som i 2018 modtog en finanslovsbevilling. Som en del af det kommende\ncenter var ambitionen, at etablere en læringstjeneste med fokus på Limfjorden.\nMed støtte fra Novo Nordisk Fonden og Villum Fonden igangsatte Morsø Kommune i 2022\nprojektet i samarbejde med VIA University College og DTU Aqua.\nProjektet skal gøre Limfjorden til en naturlig del af børn og unges hverdag gennem\npraksisnære undervisningsforløb, uddannelse af fjordrangere og kompetenceudvikling af\nlærere og pædagoger. Udgangspunktet er, at børn og unge gennem deres opvækst løbende\nmøder Limfjorden både som genstand for læring og som læringsrum.\nStatus\nI forbindelse med fondsansøgningerne blev der opstillet en række mål for projektet. Projektet\nhar på en række centrale områder realiseret eller overgået de oprindelige målsætninger:\nOprindelige mål\n\nOpnåede resultater\n\nUddanne 10 fjordrangere\n\n44 fjordrangere er uddannet, heraf 26 kommunale og\n18 fra frie og private skoler og dagtilbud.\n\nUdvikle 15-20 undervisningsforløb,\nheraf fem med klima som\nomdrejningspunkt\n\nDer er udviklet 45 undervisningsforløb, heraf 11 med\nklima som fokus.\n\nKompetenceløft af 420 lærere og\npædagoger\n\nAlle relevante medarbejdergrupper i kommunens\ndagtilbud og skoler har deltaget i kompetenceudvikling.\n\nEtablere en digital læringsplatform\n\nwww.ophavlaering.dk er etableret med gratis\nundervisningsmaterialer. I 2025 havde platformen\n13.409 sidevisninger og 2.378 brugere.\n\nAlle børn skal mindst én gang årligt\nMålet er realiseret i skoleåret 2025/2026 med ganske få\nbesøge Limfjorden som led i et\nundtagelser.\nundervisningsforløb\nDer er desuden etableret et undervisningslokale på DTU Aqua, som understøtter den\npraksisnære undervisning og giver børn og unge mulighed for at undersøge Limfjorden og\ndens økosystem på tæt hold.\nDTU Aqua og VIA University College har været centrale samarbejdspartnere i udviklingen af\nundervisningsforløb, uddannelsen af fjordrangere og den løbende faglige sparring.\nCenter for Børn og Natur ved Københavns Universitet har fulgt projektet gennem de seneste\nfire år og gennemført en evaluering af projektets resultater og virkning, som fremgår af bilaget.\n\nRetsgrundlag\nDagtilbudsloven og folkeskoleloven.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 26. oktober 2026",
+     "tekst": "Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-5": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-5",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Analyse af eventuelt behov for oprettelse af nyt tilbud til børn og unge",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nPerspektiver, muligheder og opmærksomhedspunkter ved eventuel etablering af et nyt\nkommunalt tilbud til børn og unge drøftes\nUdvalget giver administrationen politiske pejlemærker for det videre arbejde\nDet godkendes at administrationen arbejder videre med at kvalificere en business case,\nsom på et senere tidspunkt forelægges til politisk behandling.\n\nBehandling\nDirektionen (2. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Administrationen har igangsat et indledende arbejde med at undersøge mulighederne for et\nsamlet kommunalt tilbud til børn, unge og familier. Sagen forelægges med henblik på tidlig\npolitisk inddragelse og drøftelse af ambitioner, muligheder og opmærksomhedspunkter, inden\narbejdet med en egentlig business case færdiggøres. Udvalgets input skal danne grundlag for\ndet videre arbejde."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Morsø Kommune står, ligesom mange andre kommuner, over for stigende udfordringer på det\nspecialiserede børn- og ungeområde. Samtidig er der et vedvarende fokus på at sikre tidlige\nindsatser, styrke kvaliteten for børn, unge og familier samt skabe størst mulig effekt af de\nressourcer, der anvendes på området.\nAdministrationen har indledt et analysearbejde af, om Morsø kommune med fordel kan\netablere et kommunalt tilbud.\nTanken er at samle en række indsatser under én fælles ramme og dermed skabe bedre\nmuligheder for både forebyggelse, støtte og anbringelse af relevante forløb, som i dag løses\ngennem eksterne tilbud.\nDer er på nuværende tidspunkt ikke taget stilling til, om et tilbud skal etableres. Der er ligeledes\nikke taget stilling til, hvordan tilbuddet konkret skal organiseres, dimensioneres eller placeres.\nDer er derfor tale om et udviklingsspor, som fortsat er på et tidligt stadie.\nAdministrationen ønsker på nuværende tidspunkt at inddrage udvalget i processen, inden\narbejdet med en egentlig business case færdiggøres. Formålet er at få en politisk drøftelse af,\nhvilke mål og ambitioner der skal være styrende for det videre arbejde.\nEtableringen af et nyt kommunalt tilbud for børn og unge rejser en række strategiske\nspørgsmål:\n\nHvilken rolle ønsker kommunen selv at spille i forhold til forebyggelse, støtte og\nanbringelsesområdet?\nI hvilken grad skal kommunen arbejde for at hjemtage opgaver, der i dag løses af\neksterne leverandører?\nHvilke målgrupper er det særligt vigtigt at skabe tilbud til lokalt?\nHvilken betydning tillægges nærhed til familie, skole, uddannelse og netværk?\nHvordan skal balancen være mellem faglige ambitioner, økonomisk bæredygtighed og\nrisikovillighed?\n\nAdministrationen vurderer, at en eventuel etablering af et tilbud både kan have faglige,\nøkonomiske og organisatoriske perspektiver. Samtidig er der fortsat en række forhold, som\nskal undersøges nærmere, herunder fastlæggelse af ønsket målgruppe, kapacitet, fysisk\nplacering, bemanding, økonomi og forventede effekter.\nUdvalgets politiske pejlemærker vil indgå som et vigtigt grundlag for det videre arbejde,\nsåledes at en eventuel business case afspejler de politiske ønsker og prioriteringer på\nområdet.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nBusiness casen tager udgangspunkt i en række forudsætninger, på baggrund af allerede\neksisterende driftsomkostninger og budgetter. Såfremt man vælger at gå videre med business\ncasen, vil der atter skulle tages højde for om de givne forudsætninger fortsat er aktuelle. Der\nskal fremlægges bevillingsgodkendelse.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 2. november 2026",
+     "tekst": "Drøftet."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-6": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-6",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Lokaletilskud til padelbaner",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nFolkeoplysningsudvalget drøfter og tager stilling til retningslinjer for lokaletilskud til\npadelbaner\nUdvalget for Børn, Kultur og Turisme tager orienteringen til efterretning og godkender\ntilføjelsen til Foreningshåndbogen.\n\nBehandling\nDirektionen (19. oktober 2026)\nFolkeoplysningsudvalget (22. oktober 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Der er kommet en henvendelse fra en kommende padelforening i Morsø Kommune. Aktuelt er\nder ikke beskrevet retningslinjer for padelfaciliteter. Der er derfor udarbejdet et forslag til\nretningslinjer og vilkår for padel.\nPadel er ikke omfattet af lokaletilskudsreglerne i Morsø Kommune, da padelsporten har været\ncentreret omkring Pay&Play koncepter i kommercielle centre. Dermed har der ikke været tale\nom foreningsaktivitet eller folkeoplysende aktivitet og lokaletilskud har ikke været relevant."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der er etableret en padelforening, som vil benytte banerne hos Mors Padel i Nykøbing. Der er\nderfor brug for en afklaring af retningslinjerne for padel.\nIfølge folkeoplysningsbekendtgørelsen §15 stk. 3 er kommuner ikke forpligtet til at yde\nlokaletilskud til lokaler, bortset fra svømmehaller, til hvilken andre samtidig har adgang mod\nbetaling.\nDer er stor forskel på kommuners retningslinjer på området. En del kommuner yder endnu ikke\nlokaletilskud, men stadig flere vælger at støtte området gennem forskellige tilskudsmodeller, da\nmange børn og unge ønsker at være en del af det fællesskab, som padel skaber.\nHvis der ønskes at yde lokaletilskud, kan det f.eks. gøres på følgende måde:\nForslag til retningslinjer\nDefinition af et lokale til padel er en indendørs bane. Der kan derfor ikke søges tilskud til\nudendørs baner eller udendørs baner med overdækning.\nFor at modtage lokaletilskud til padel skal foreningen være godkendt som en folkeoplysende\nforening. Der kan søges tilskud til de timer, som indgår i medlemskabet.\nDa der kan være 4 padelbaner i en hal, foreslås det, at taksten pr. time fastsættes til 1/4 af\n\nKL's takst for haller. I 2027 er denne takst 337,53 kr. Det vil sige, at 1/4 af denne takst er 84,38\nkr.\nEksempel:\nEn forening har 1300 banetimer om året.\n75% i lokaletilskud = 82.270,50 kr.\nHvis foreningen har medlemmer over 25 år, skal beregningsbeløbet reduceres med denne\nprocentandel inden de 75 % tilskud beregnes.\n**Opsummering og tilføjelse til Foreningshåndbogen:\nTilskud ydes kun til faste bookede timer, som indgår i det faste kontingent\nDer ydes kun tilskud til børn og unge under 25 år\nTilskuddet udgør pr. bane 1/4 af KL's takst til haller (337,53 kr. i 2027)\nRetningslinjerne evalueres efter 2 år.\n\nRetsgrundlag\nFolkeoplysningsloven.\n\nØkonomiske konsekvenser\nDet vil medføre øget udgift til lokaletilskud til private lokaler - ca. 82.000 kr.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nDen økonomiske effekt er ikke afklaret, da den vil komme an på ansøgninger, men det\nforventes at blive afholdt indenfor nuværende budget."
+    },
+    {
+     "titel": "Behandling i Direktionen 19. oktober 2026",
+     "tekst": "Drøftet."
+    },
+    {
+     "titel": "Behandling i Folkeoplysningsudvalget 22. oktober 2026",
+     "tekst": "Folkeoplysningsudvalget godkender de forslåede retningslinjer for lokaletilskud til\npadelforeninger."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-7": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-7",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Foreningshåndbog 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nForeningshåndbog 2027 godkendes.\n\nBehandling\nDirektionen (19. oktober 2026)\nFolkeoplysningsudvalget (22. oktober 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Foreningshåndbogen for folkeoplysende foreninger 2027 er udarbejdet efter\nfolkeoplysningslovens bestemmelser og skal hvert år revideres og godkendes for det\nefterfølgende år."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Foreningshåndbogen beskriver generelle retningslinjer og de krav, der gælder for\ngodkendte folkeoplysende foreninger, samt beskrivelse af de puljer, som de kan søge om\nstøtte fra.\nÆndringer i forhold til 2026:\nRegulering af takster\nLovændring §29 stk. 1 - Det er ikke længere et krav, at hele bestyrelsen underskriver\ntilskudsregnskabet. Det er tilstrækkeligt, at de tegningsberettigede\nbestyrelsesmedlemmer underskriver - side 6\nVoksenundervisning - Handicaperklæring kan uploades i Foreningsportalen - side 8\nFritidspas - Der skal ansøges i samme år, som bevillingen finder sted - side 14\nKursustilskud - Der skal ikke længere indsendes kursusplan - side 18\nAktivitetstimer - Definition af en aktivitetstime er uddybet - side 25\nAktivitetsoversigt - Jiu jitsu og boksning er tilføjet - side 28\nGebyr - Morsø Gymnasiums gymnastiksal er slettet og kan ikke længere bookes.\nFlexlokale og skydelokale i Midtmors Sport er tilføjet - side 32\nOversigt over antal baner. Tilføjelse af eksisterende aftale - Sydmors IF passer 1 bane side 36.\n\nRetsgrundlag\nFolkeoplysningsloven.\n\nØkonomiske konsekvenser\nTakster fremskrevet efter gældende regler.\n\nDer opkræves fremover gebyr på flex- og skydelokale, idet de anvendes til aktiviteter på lige\nfod med andre lokaler i Midtmors Sport.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nØkonomi og Stab har ingen bemærkning."
+    },
+    {
+     "titel": "Behandling i Direktionen 19. oktober 2026",
+     "tekst": "Drøftet."
+    },
+    {
+     "titel": "Behandling i Folkeoplysningsudvalget 22. oktober 2026",
+     "tekst": "Godkendt."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-8": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-8",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "BIO Mors - Budget 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nBudget 2027 for BIO Mors godkendes.\n\nBehandling\nDirektionen (2. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "BIO Mors er ejet og drevet af Biografforeningen af 1992. Biografen ledes af bestyrelsen og\ndrives af den daglige leder i samarbejde med frivillige.\nBiografens kernepublikum er primært personer over 50 år samt medlemmer af Biografklub\nDanmark.\nFaldende omsætning og store udsving i publikumstallet, hvilket var en landsækkende tendens,\nbetød, at biografen blev økonomisk udfordret.\nØkonomiudvalgte tiltrådte i december 2022 en beslutning om at godkende de minimis-støtte på\n150.000 kr. til biografen i forbindelse med en samarbejdsaftale gældende i perioden 1. januar\n2023 til 31. december 2023.\nI december 2024 godkendte Økonomiudvalget en årlig de minimis-støtte på 175.000 kr. i en\ntreårig periode fra 2025-2027.\nBevillingen er udmøntet i en samarbejdsaftale mellem BIO Mors og Morsø Kommune. I\nhenhold til aftalen orienteres Udvalget for Børn, Kultur og Turisme hvert år i november\nom biografens budget for det kommende år."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BIO Mors har fremsendt budget for 2027. Budgettet viser samlede udgifter på 2.557.100 kr. og\nsamlede indtægter på 2.559.200 kr., hvilket giver et forventet overskud på 2.100 kr.\n\nRetsgrundlag\nFilmloven §18.\nBekendtgørelse om kommunalt tilskud til biografvirksomhed.\nKommissionens forordning (EU) Nr. 2831/2023 af 13. december 2023 om anvendelse af artikel\n107 og 108 i traktaten om Den Europæiske Unions funktionsmåde på de minimis-støtte\n\nØkonomiske konsekvenser\nDer er bevilget et årligt kommunalt tilskud på 175.000 kr. frem til og med 2027. Spørgsmålet\nom den fremtidige økonomiske understøttelse behandles i 2027.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 2. november 2026",
+     "tekst": "Drøftet."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-9": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-9",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Rammebesparelse på folkeoplysningsområdet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nFolkeoplysningsudvalget drøfter og indstiller rammebesparelsen.\nUdvalget for Børn, Kultur og Turisme tager stilling til udmøntning af rammebesparelsen.\n\nBehandling\nDirektionen (19. oktober 2026)\nFolkeoplysningsudvalget (22. oktober 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "I forbindelse med budgetforlig for 2027 er Folkeoplysningsudvalget blevet pålagt at indstille\nbesparelser på 120.000 kr. inden for udvalgets område."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Administrationen har gennemgået de konti og tilskudsordninger, der hører under\nFolkeoplysningsudvalgets ansvarsområde, med henblik på at identificere\nbesparelsesmuligheder. Der er ved udarbejdelsen af forslagene lagt vægt på at begrænse\nkonsekvenserne for den folkeoplysende aktivitet i kommunen.\nPå den baggrund foreslås følgende besparelser:\nUdviklingspuljen til voksenundervisning reduceres med 10.000 kr.\nAktivitetstilskuddet reduceres med 60.000 kr., svarende til den forventede fremskrivning\npå 2,7 % til budget 2027.\nTalentudviklingspuljen reduceres med 30.000 kr.\nLokaletilskud til private haller og friskoler reduceres med 20.000 kr.\n\nDe foreslåede reduktioner udgør samlet 120.000 kr. og opfylder dermed den\nbesparelsesramme, som er udmeldt til Folkeoplysningsudvalget.\n\nRetsgrundlag\nBudget 2027 og Folkeoplysningsloven.\n\nØkonomiske konsekvenser\nSamlet besparelse 120.000 kr.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\n\nØkonomi og Stab har ingen bemærkninger."
+    },
+    {
+     "titel": "Behandling i Direktionen 19. oktober 2026",
+     "tekst": "Drøftet."
+    },
+    {
+     "titel": "Behandling i Folkeoplysningsudvalget 22. oktober 2026",
+     "tekst": "Folkeoplysningsudvalget indstiller administrationens forslag til besparelse på\nfolkeoplysningsområdet til budget 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-10": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-10",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Data fra Ung Mors vedrørende pædagogisk psykologisk vurdering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nStatus for nedbringelse af ventetiden for udarbejdelse af pædagogiske psykologiske\nvurderinger drøftes.\n\nBehandling\nUdvalget for Børn, Kultur og Turisme (11. november 2026)."
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Sagsbehandlingstiderne i Pædagogisk Psykologisk Rådgivning har gennem en længere\nperiode været under pres, hvilket har medført en øget ventetid på udarbejdelsen af\nPædagogiske Psykologiske Vurderinger (PPV) og indstillinger til psykiatriske\nudredninger. Kommunalbestyrelsen besluttede i budgetaftalen for indeværende år, at afsætte\nekstraordinær økonomi til imødegåelse heraf."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udviklingen omkring ventetiderne for udarbejdelsen af PPV og indstillinger til psykiatriske\nudredninger følges tæt og der udarbejdes lister hver måned som er klar til udsendelse hver den\n4. i måneden.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nDer er afsat 1.750.000 kroner i budgetaftalen for 2026 til nedbringelsen af ventetiden på\nområdet.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-11": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-11",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Ledelsesinformation pr. 31. oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nLedelsesinformationen drøftes.\n\nBehandling\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)\nUdvalget for Teknik og Miljø (11. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)\nØkonomiudvalget (18. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Der er udarbejdet ledelsesinformation pr. 31. oktober 2026.\nLedelsesinformationen bliver gennemgået på mødet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den udarbejdede ledelsesinformation gennemgås og drøftes.\nForbrugsopgørelserne kan ikke tages som det endelige regnskab, idet supplementperioden\nmangler.\nDer vil ikke være ledelsesinformation på udvalgsmøderne i december måned,\nidet udvalgsmøderne afholdes, inden data indsamles.\n\nRetsgrundlag\nMorsø Kommunes Styringshåndbog.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-12": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-12",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Topmødeerklæring mellem Region Nord og Kommunerne i Region Nord",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrientering om topmødeerklæring \"Børn og unge i Nordjylland skal trives bedre - og have\nhjælp, når mistrivsel truer\" indgået mellem Region Nord og de 11 nordjyske kommuner,\ntages til efterretning\n\nBehandling\nUdvalget for Social, Sundhed og Beskæftigelse (10. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Den 23. oktober 2026 blev der afholdt politisk topmøde mellem Region Nordjylland og de\n11 nordjyske kommune hvor parterne sammen bl.a. havde til opgave, at finde et fælles afsæt\nfor, hvordan man løser udfordringen med den stigende mistrivsel blandt børn og unge, og\nhvordan børn og unge sikres hurtig hjælp.\nPå topmødet blev der indgået en topmødeerklæring, hvori Region Nordjylland og de 11\nnordjyske kommuner forpligter sig til i fællesskab at styrke indsatsen for børn og unge.\nErklæringen omfatter såvel forebyggelse, tidlig og hurtig hjælp, udredning og behandling som\nstyrket sammenhæng og koordinering på tværs af sektorer og myndigheder."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Af vedlagte topmødeerklæring fremgår det bl.a. at alle parter forpligter sig til at:\nStyrke den tidlige og forebyggende indsats for børn og unges mentale trivsel\nSikre lettere og hurtigere adgang til hjælp, herunder de lettilgængelige tilbud i\nkommunerne\nStyrke udrednings- og behandlingskapaciteten i børne og ungdomspsykiatrien\nSkabe bedre sammenhæng mellem indsatserne, så børn, unge og familier oplever\nsammenhængende forløb frem for i for høj grad selv at skulle finde vej mellem forskellige\ntilbud.\n\nKommunerne og Region Nordjylland har i fællesskab sat et mål om at nordjyske børn, unge og\nfamilier i de kommende år skal opleve mærkbare forbedringer på områderne. Kommunerne og\nregionen forpligter sig til at prioritere indsatsen, løfte opgaven i fællesskab og løbende følge\nudviklingen på politisk niveau.\nTopmødeerklæringen af 23. oktober 2026 vedlægges som bilag.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nIntet at beærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-13": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-13",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Opfølgning på handleplaner vedrørende den uvildige undersøgelse af PPR- og Familieområdet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nUdvalget for Børn, Kultur og Turisme tager orienteringen om status på handleplanerne\nvedrørende den uvildige undersøgelse af PPR- og Familieområdet til efterretning.\n\nBehandling\nDirektionen (2. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Udvalget orienteres løbende om status på implementeringen af de administrative handleplaner,\nder er udarbejdet på baggrund af den uvildige undersøgelse af PPR- og Familieområdet.\nStatus på de enkelte initiativer fremgår af vedlagte handleplansoversigt."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I forlængelse af den uvildige undersøgelse af PPR- og Familieområdet er der udarbejdet\nadministrative handleplaner, der skal understøtte den fortsatte udvikling af området og\nimplementeringen af undersøgelsens anbefalinger.\nCenter for Børn og Unge følger løbende op på handleplanerne og orienterer udvalget om\nfremdriften. Opfølgningen har til formål at sikre overblik over implementeringen, synliggøre\nresultater og eventuelle udfordringer samt understøtte den politiske indsigt i udviklingen på\nområdet.\nVedlagte handleplansoversigt opdateres forud for hver politisk behandling og udgør grundlaget\nfor den løbende orientering.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nIntet at bemærke.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 2. november 2026",
+     "tekst": "Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-14": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-14",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Afrapportering - Kunstdage ved Limfjorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nAfrapportering på projektet Kunstdage ved Limfjorden tages til efterretning.\n\nBehandling\nDirektionen (26. oktober 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Udvalget for Børn, Kultur og Turisme samt Økonomiudvalget bevilligede i december 2024\n100.000 kr. fra Opstarts- og udviklingspuljen.\nDestination Limfjorden var ansøger. Projektet havde til formål at skabe nye oplevelsestilbud for\nturister i Destination Limfjorden med fokus på kunst.\nKunstdage ved Limfjorden blev gennemført med økonomisk støtte fra LAG Thy-Mors, LAG\nSkive-Viborg, LAG Struer-Holstebro, LAG Småøerne samt kommunerne Morsø, Skive og\nStruer."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Destination Limfjorden gennemførte i 2026 for første gang Kunstdage ved Limfjorden i Kr.\nHimmelfartsferien.\nPå baggrund af den store succes vil Kunstdage ved Limfjorden fremover være en\ntilbagevendende begivenhed, som Destination Limfjorden vil markedsføre som en\nsignaturevent for området.\nAfrapporteringen er vedhæftet som bilag.\n\nRetsgrundlag\nKommunalfuldmagten.\nOpstarts- og udviklingspuljen i Morsø Kommune.\n\nØkonomiske konsekvenser\nTilskuddet er udbetalt til Destination Limfjorden efter, at afrapportering og regnskab er\nmodtaget.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 26. oktober 2026",
+     "tekst": "Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-15": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-15",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Morsø Teaterkreds - Årsregnskab for 2025-2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nRegnskab for Morsø Teaterkreds vedrørende regnskabsår 2025-2026 tages til\nefterretning.\n\nBehandling\nDirektionen (2. november 2026)\nUdvalget for Børn, Kultur og Turisme (11. november 2026)"
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Morsø Teaterkreds har indsendt påtegnet årsregnskab, beretning for sæsonen 20252026 samt beretning vedrørende børneteater for skoleåret 2025-2026 til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Regnskabet for 2025-2026 udviser et negativt resultat på 144.316 kr. I 2024-2025 var\nårsresultatet på 153.807 kr.\nEgenkapitalen er på 556.738 kr. Resultatet er forværret siden sæsonen 2024-2025, hvilket\nskyldes faldende indtægter på baggrund af manglende publikum og succes med årskort.\nI regnskabsåret 2025-2026 modtog Morsø Teaterkreds følgende tilskud fra Morsø Kommune:\nTilskud til Børneteater m.v. på 255.500 kr.\nTilskud til Gruppeteater på 46.500 kr.\nSærligt tilskud på 95.000 kr.\nTilskud på musik på 62.000 kr.\n\nRetsgrundlag\nIntet at bemærke.\n\nØkonomiske konsekvenser\nDet skal bemærkes, at sæson 2025-2026 har givet underskud på 144.316 kr., hvor\nder i sæson 2024-2025 var et overskud på 153.807 kr.\nTil sammenligning var resultatet i 2023-2024 et overskud på 44.907 kr., mens sæsonen 20222023 endte med et underskud på 116.497 kr.\nRegnskabet viser samlet balance på 907.187 kr., hvoraf egenkapitalen udgør 556.137 kr.\n\nAndre konsekvenser\nIntet at bemærke.\n\nHøring og kommunikation\nIntet at bemærke."
+    },
+    {
+     "titel": "Behandling i Direktionen 2. november 2026",
+     "tekst": "Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-16": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-16",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Orientering til Udvalget for Børn, Kultur og Turisme",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at\nOrienteringen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-18": {
+   "id": "morsoe-2026-11-11-udvalget-for-boern-kultur-og-turisme-18",
+   "kommune": "Morsø",
+   "udvalg": "Udvalget for Børn, Kultur og Turisme",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 18,
+   "kilde": "https://dagsordener.mors.dk/vis?id=dc35fe17-5ea4-42e3-8069-7bdee98f18d7",
+   "hentet": "2026-11-05T21:19:43.574Z",
+   "titel": "Udvalget for Børn, Kultur og Turismes godkendelse af referatet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Godkendelse af referatet."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -8355,7 +9289,7 @@
    "tjekket": "2026-10-25"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=e1072248-bc78-4a50-91df-cb0869a3f287": {
-   "senest": "2026-10-21",
+   "senest": "2026-11-05",
    "tjekket": "2026-11-05"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=8d430b1b-b459-42e8-827e-b3277577cbb4": {
@@ -8363,7 +9297,7 @@
    "tjekket": "2026-11-05"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=8589cf31-90e8-48a3-bca0-a6facf995285": {
-   "senest": "2026-10-21",
+   "senest": "2026-11-05",
    "tjekket": "2026-11-05"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=5945fe7c-e46f-40bc-916e-dc0a36f792ab": {
@@ -8371,11 +9305,11 @@
    "tjekket": "2026-11-05"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=6f709f29-54da-4576-8fde-6dba6353b86d": {
-   "senest": "2026-10-22",
+   "senest": "2026-11-05",
    "tjekket": "2026-11-05"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=aeac996c-de49-4e7d-a17e-cae8994f57c9": {
-   "senest": "2026-10-21",
+   "senest": "2026-11-05",
    "tjekket": "2026-11-05"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=da573510-e258-422f-835c-cca9e2ae766e": {
@@ -8448,6 +9382,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-05T12:33:06.444Z",
+ "opdateret": "2026-11-05T21:19:50.176Z",
  "kommune": "Morsø"
 }
