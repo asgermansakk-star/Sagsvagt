@@ -271,6 +271,14 @@
    "dato": "2026-11-10",
    "punkter": 11,
    "parser": 3
+  },
+  "ebf6478e-da1d-4005-889b-073b0a03a77a": {
+   "lastmod": "2026-11-05",
+   "type": "referat",
+   "udvalg": "Miljø-, Erhvervs- og Byudvalget",
+   "dato": "2026-11-05",
+   "punkter": 2,
+   "parser": 3
   }
  },
  "sager": {
@@ -9038,12 +9046,17 @@
    "kommune": "Allerød",
    "udvalg": "Miljø-, Erhvervs- og Byudvalget",
    "dato": "2026-11-05",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.alleroed.dk/vis?id=f540e825-1b15-40a5-82d8-c2fa11862ae3",
-   "hentet": "2026-11-02T22:52:43.221Z",
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=ebf6478e-da1d-4005-889b-073b0a03a77a",
+   "hentet": "2026-11-05T12:24:33.170Z",
    "titel": "Bemærkninger til dagsordenen",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen"
+    }
+   ],
    "bilag": []
   },
   "alleroed-2026-11-05-miljoe-erhvervs-og-byudvalget-2": {
@@ -9051,17 +9064,12 @@
    "kommune": "Allerød",
    "udvalg": "Miljø-, Erhvervs- og Byudvalget",
    "dato": "2026-11-05",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.alleroed.dk/vis?id=f540e825-1b15-40a5-82d8-c2fa11862ae3",
-   "hentet": "2026-11-02T22:52:43.221Z",
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=ebf6478e-da1d-4005-889b-073b0a03a77a",
+   "hentet": "2026-11-05T12:24:33.170Z",
    "titel": "Meddelelser",
-   "afsnit": [
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Punkttype\nOrientering."
-    }
-   ],
+   "afsnit": [],
    "bilag": []
   },
   "alleroed-2026-11-10-oekonomiudvalget-1": {
@@ -9285,11 +9293,11 @@
  "sitemaps": {
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=b466e53c-f2e0-4723-ba7d-a10c92cf8a16": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=f8551f6e-9b7a-456c-82f6-8dd1319f8266": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=475a86e0-7179-4dfd-929d-65b3aac0ecb9": {
    "senest": "2025-09-27",
@@ -9313,27 +9321,27 @@
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=39609a9e-d29b-466f-8a44-00560823ab3e": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=64b2f9dc-39bc-4eb6-b6dc-215152b42c6a": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=8dfd5dad-a558-4e08-921e-75670b364740": {
-   "senest": "2026-11-02",
-   "tjekket": "2026-11-04"
+   "senest": "2026-11-05",
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=29970e29-f121-4587-8d8b-94079d878847": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=c5b70471-2422-405b-8603-5137bde87cb5": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=a8ece604-48f3-44e3-9ec8-778544c60822": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=8be7d2f2-a232-45b0-98a0-98bed48ae16b": {
    "senest": "2017-12-04",
@@ -9349,11 +9357,11 @@
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=c395514c-b962-4507-a807-ecf966c3a5c0": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=f47575f3-d916-498e-a7ea-959d9ecc3b5c": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=9792382b-8a68-4ed9-84e7-801fb87b670e": {
    "senest": "2025-09-27",
@@ -9365,11 +9373,11 @@
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=7c5d1dab-0414-4210-9b68-fb6770e0248b": {
    "senest": "2026-10-09",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=5bd2044a-7ea3-4ff9-82e2-acb2481be028": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=2fb0e59f-081f-4458-8d71-98fc96d11fe9": {
    "senest": "2025-09-27",
@@ -9384,7 +9392,7 @@
    "tjekket": "2026-10-22"
   }
  },
- "opdateret": "2026-11-04T20:55:28.363Z",
+ "opdateret": "2026-11-05T12:24:33.171Z",
  "kommune": "Allerød",
  "parser": 3
 }

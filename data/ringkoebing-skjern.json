@@ -287,6 +287,22 @@
    "dato": "2026-07-30",
    "punkter": 4,
    "hentet": "2026-11-03"
+  },
+  "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15": {
+   "noegle": "6745|referat",
+   "type": "referat",
+   "udvalg": "Klima-, Miljø- og Naturudvalget",
+   "dato": "2026-11-03",
+   "punkter": 8,
+   "hentet": "2026-11-05"
+  },
+  "Økonomi- og Koordinationsudvalget|2026-11-02 08:00": {
+   "noegle": "6744|referat",
+   "type": "referat",
+   "udvalg": "Økonomi- og Koordinationsudvalget",
+   "dato": "2026-11-02",
+   "punkter": 23,
+   "hentet": "2026-11-05"
   }
  },
  "sager": {
@@ -5141,13 +5157,18 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Klima-, Miljø- og Naturudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6740",
-   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 13:00",
-   "hentet": "2026-11-03T23:15:38.538Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6745",
+   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15",
+   "hentet": "2026-11-05T13:04:46.442Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Klima-, Miljø- og Naturudvalget godkendte dagsordenen."
+    }
+   ],
    "bilag": []
   },
   "ringkoebing-skjern-2026-11-03-klima-miljoe-og-naturudvalget-2": {
@@ -5155,11 +5176,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Klima-, Miljø- og Naturudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6740",
-   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 13:00",
-   "hentet": "2026-11-03T23:15:38.538Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6745",
+   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15",
+   "hentet": "2026-11-05T13:04:46.442Z",
    "titel": "Klimaplan A 2027-2030: Retning for klimaspor: Fossilfri energi & elektrificering",
    "afsnit": [
     {
@@ -5181,6 +5202,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Klima-, Natur- og Miljøudvalget:\n\n• Godkender det fremlagte materiale om klimatilpasning (spor 5) og kommunen som virksomhed (spor 6) som grundlag for det videre arbejde med klimaplanen.\n\n• Drøfter klimaplanens vision i lyset af regeringens målsætning om mindst 85 % reduktion af drivhusgasudledningerne i 2035\n\n• Drøfter mål og målsætninger for fossilfri energi og elektrificering og giver signaler til det videre arbejde med klimaplanen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Klima-, Natur- og Miljøudvalget:\n\n• godkendte det fremlagte materiale\n\n• afgav politiske signaler til det videre arbejde\n\n• blev udskudt til næste udvalgsmøde"
     }
    ],
    "bilag": []
@@ -5190,11 +5215,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Klima-, Miljø- og Naturudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6740",
-   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 13:00",
-   "hentet": "2026-11-03T23:15:38.538Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6745",
+   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15",
+   "hentet": "2026-11-05T13:04:46.442Z",
    "titel": "Opfølgning på politikker 2023-2026",
    "afsnit": [
     {
@@ -5216,16 +5241,20 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen fremsender sagen til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Klima-, og Miljø- og Naturudvalget tog orienteringen til efterretning."
     }
    ],
    "bilag": [
     {
      "navn": "Natur og Ressourcepolitikken 2023-2026",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/Klima-,%20Milj%C3%B8-%20og%20Naturudvalget/2026-11-03%2013.00/Dagsorden/Dagsorden/Hjemmeside/2026-10-29%2015.10.14/Attachments/4805695-7711856-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/Klima-,%20Milj%C3%B8-%20og%20Naturudvalget/2026-11-03%2012.15/Dagsorden/Referat/Hjemmeside/2026-11-04%2009.24.32/Attachments/4805695-7711856-1.pdf"
     },
     {
      "navn": "Opfølgning på Natur og Ressourcepolitikken 2026",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/Klima-,%20Milj%C3%B8-%20og%20Naturudvalget/2026-11-03%2013.00/Dagsorden/Dagsorden/Hjemmeside/2026-10-29%2015.10.14/Attachments/4805699-7711859-2.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/Klima-,%20Milj%C3%B8-%20og%20Naturudvalget/2026-11-03%2012.15/Dagsorden/Referat/Hjemmeside/2026-11-04%2009.24.32/Attachments/4805699-7711859-2.pdf"
     }
    ]
   },
@@ -5234,11 +5263,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Klima-, Miljø- og Naturudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6740",
-   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 13:00",
-   "hentet": "2026-11-03T23:15:38.538Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6745",
+   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15",
+   "hentet": "2026-11-05T13:04:46.442Z",
    "titel": "Politikformulering 2027–2030 – Ambitioner og proces",
    "afsnit": [
     {
@@ -5260,6 +5289,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Klima-, Miljø- og Naturudvalget drøfter ambitioner og proces med udgangspunkt i hovedspørgsmålene og giver signaler til administrationen om det videre arbejde."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Klima- og Miljø- og Naturudvalget drøftede punktet og afgav politiske signaler til det videre arbejde."
     }
    ],
    "bilag": []
@@ -5269,11 +5302,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Klima-, Miljø- og Naturudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6740",
-   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 13:00",
-   "hentet": "2026-11-03T23:15:38.538Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6745",
+   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15",
+   "hentet": "2026-11-05T13:04:46.442Z",
    "titel": "Forslag til takster pr. 1. januar 2027 på Klima-, Miljø- og Naturudvalgets skattefinansierede område",
    "afsnit": [
     {
@@ -5295,6 +5328,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller at, Klima-, Miljø- og Naturudvalget og Økonomi -og Koordinationsudvalget anbefaler Byrådet at godkende forslaget til gebyr og timepriser pr. 1. januar 2027."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Klima-, Miljø- og Naturudvalget anbefaler administrationens indstilling godkendt."
     }
    ],
    "bilag": []
@@ -5304,11 +5341,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Klima-, Miljø- og Naturudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6740",
-   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 13:00",
-   "hentet": "2026-11-03T23:15:38.538Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6745",
+   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15",
+   "hentet": "2026-11-05T13:04:46.442Z",
    "titel": "Budgetopfølgning pr. 31. oktober 2026, Klima-, Miljø- og Naturudvalget",
    "afsnit": [
     {
@@ -5330,6 +5367,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at budgetopfølgningen pr. 31. oktober 2026 tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Klima-, Miljø og Naturudvalget tog budgetopfølgningen til efterretning og anbefalede Økonomi- og Koordinationsudvalget samt Byrådet, at udgiften til kystbeskyttelse flyttes fra drift til anlæg, det vil sige der afsættes rådighedsbeløb og gives anlægsbevilling på 12,952 mio. kr. i 2026, finansieret af drift."
     }
    ],
    "bilag": []
@@ -5339,16 +5380,20 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Klima-, Miljø- og Naturudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6740",
-   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 13:00",
-   "hentet": "2026-11-03T23:15:38.538Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6745",
+   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15",
+   "hentet": "2026-11-05T13:04:46.442Z",
    "titel": "Gensidig orientering",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "• Status depot og knuseplads, Novej 41 i Heager"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Klima-, og Miljø- og Naturudvalget tog orienteringen til efterretning."
     }
    ],
    "bilag": []
@@ -5358,19 +5403,95 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Klima-, Miljø- og Naturudvalget",
    "dato": "2026-11-03",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6740",
-   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 13:00",
-   "hentet": "2026-11-03T23:15:38.538Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/klima-miljoe-og-naturudvalget/dagsordener-referater?AgendaID=6745",
+   "moede": "Klima-, Miljø- og Naturudvalget|2026-11-03 12:15",
+   "hentet": "2026-11-05T13:04:46.442Z",
    "titel": "Underskriftsside",
-   "afsnit": [
+   "afsnit": [],
+   "bilag": [
     {
-     "titel": "Beslutning",
-     "tekst": "Kontaktoplysninger\n\nPolitisk Administrativt Sekretariat\n\nVed Fjorden 6\n\n6950\nRingkøbing\n\n99 74 19 89\nviden.strategi@rksk.dk\n\nFik du den rigtige hjælp på denne side?\n\nVil du give en kommentar?\n&times;\nDu har mulighed for at tilføje en kommentar til din bedømmelse af den specifikke side, som du besøger på hjemmesiden.\n\nDet er muligt at give en bedømmelse uden at give en kommentar. Dog er det værdifuldt for os, hvis du vil uddybe din bedømmelse.\n\nVi bruger dine oplysninger/kommentarer til at optimere på www.rksk.dk og forsøger at øge brugeroplevelsen.\n\nDu kan læse mere omkring vores\nprivatlivspolitik her\n.\n\nOBS:\nKommentarer som ikke specifikt er til hjemmesidens indhold/formulering etc. kan ikke forventes besvaret, men skal altid rettes til den afdeling, kommentaren vedrører.\n\nBedømmelse--Vælg bedømmelseMeget dårligDårligNeutralGodMeget god\nKommentar\nE-mailE-mail vil blive brugt til at tage kontakt - hvis der er brug for opfølgende info vedr. din kommentar.\n\nSikkerhed: Hvad er summen af 4 + 5? Skriv svaret med bogstaver\n\nSend min stemme\n\nSidefod\nOplysninger\nRingkøbing-Skjern Kommune\nVed Fjorden 6\n\n6950 Ringkøbing\n\nTlf. 99 74 24 24\nCvr.nr: 29 18 96 09\nKontakt til områder\nSikker mail borger\nSikker mail virksomhed\nSikker mail for samarbejdspartnere\npost@rksk.dk - ikke sikker postkasse!\n\nOm kommunen\n\n• Åbningstider\n\n• Kontakt os\n\n• Tidsbestilling Borgerservice\n\n• Find medarbejder\n\n• Selvbetjening borger\n\n• Selvbetjening erhverv\n\n• EAN-oversigt\n\n• Privatlivspolitik\n\nTilgængelighed\nAdgang med tegn\n\nKlikbart element fra\n\nFå teksten læst op\nTilgængelighedserklæring\n\nNyheder direkte til din e-mail?\n&times;\nJeg accepterer, at Ringkøbing-Skjern Kommune sender nyheder til min e-mailadresse.\nDu modtager et nyhedsbrev, når der er nyt på et af de områder, du har valgt at abonnere på.\n\nDu kan til enhver tid nemt afmelde dit abonnement, hvis du ikke længere finder det relevant.\n\nLæs vores privatlivspolitik her.\nNavn:\n\nEmail:\n\nSikkerhed: Hvad er summen af 4 + 5? Skriv svaret med bogstaver\n\nTilmeld"
+     "navn": "99 74 19 89",
+     "url": "tel:99741989"
+    },
+    {
+     "navn": "viden.strategi@rksk.dk",
+     "url": "mailto:viden.strategi@rksk.dk"
+    },
+    {
+     "navn": "privatlivspolitik her",
+     "url": "https://www.rksk.dk/om-kommunen/organisation/databeskyttelse"
+    },
+    {
+     "navn": "99 74 24 24",
+     "url": "tel:99742424"
+    },
+    {
+     "navn": "Kontakt til områder",
+     "url": "https://www.rksk.dk/om-kommunen/organisation/aabningstider-og-kontakt"
+    },
+    {
+     "navn": "Sikker mail borger",
+     "url": "https://post.borger.dk/send/8eb702a6-86cd-48a9-9e1b-cbf365513aa1/f51d6122-8d2a-4eff-9ffb-e331024a4792/"
+    },
+    {
+     "navn": "Sikker mail virksomhed",
+     "url": "https://virk.dk/digitalpost/new/8eb702a6-86cd-48a9-9e1b-cbf365513aa1/f51d6122-8d2a-4eff-9ffb-e331024a4792/"
+    },
+    {
+     "navn": "Sikker mail",
+     "url": "mailto:sikkerpost@rksk.dk"
+    },
+    {
+     "navn": "post@rksk.dk",
+     "url": "mailto:post@rksk.dk"
+    },
+    {
+     "navn": "Åbningstider",
+     "url": "https://www.rksk.dk/om-kommunen/organisation/aabningstider-og-kontakt/aabnings-og-telefontider"
+    },
+    {
+     "navn": "Kontakt os",
+     "url": "https://www.rksk.dk/om-kommunen/organisation/aabningstider-og-kontakt"
+    },
+    {
+     "navn": "Tidsbestilling Borgerservice",
+     "url": "https://reservation.frontdesksuite.com/rksk/tidsbestilling/Home/Index?Culture=da&PageId=cb4cbf7b-f244-4782-90f6-75171de9c685&ShouldStartReserveTimeFlow=False&ButtonId=00000000-0000-0000-0000-000000000000"
+    },
+    {
+     "navn": "Find medarbejder",
+     "url": "https://www.rksk.dk/om-kommunen/organisation/aabningstider-og-kontakt/find-medarbejder"
+    },
+    {
+     "navn": "Selvbetjening borger",
+     "url": "https://www.rksk.dk/borger/selvbetjening-borger"
+    },
+    {
+     "navn": "Selvbetjening erhverv",
+     "url": "https://www.rksk.dk/erhverv/selvbetjening-erhverv"
+    },
+    {
+     "navn": "EAN-oversigt",
+     "url": "https://www.rksk.dk/erhverv/leverandoer#accordion-2"
+    },
+    {
+     "navn": "Privatlivspolitik",
+     "url": "https://www.rksk.dk/om-kommunen/organisation/databeskyttelse#accordion-8"
+    },
+    {
+     "navn": "Få teksten læst op",
+     "url": "https://www.borger.dk/hjaelp-og-vejledning/hvad-har-du-brug-for-hjaelp-til/borger-dk/teknisk-hjaelp/oplaesning-af-indhold"
+    },
+    {
+     "navn": "Tilgængelighedserklæring",
+     "url": "https://www.was.digst.dk/rksk-dk"
+    },
+    {
+     "navn": "Læs vores privatlivspolitik her.",
+     "url": "https://www.rksk.dk/om-kommunen/organisation/databeskyttelse"
     }
-   ],
-   "bilag": []
+   ]
   },
   "ringkoebing-skjern-2026-09-29-klima-miljoe-og-naturudvalget-1": {
    "id": "ringkoebing-skjern-2026-09-29-klima-miljoe-og-naturudvalget-1",
@@ -12406,13 +12527,18 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.557Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende: Kristian Andersen, Niels Kristian Larsen"
+    }
+   ],
    "bilag": []
   },
   "ringkoebing-skjern-2026-11-02-oekonomi-og-koordinationsudvalget-2": {
@@ -12420,13 +12546,18 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.557Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Budgetlægningsprocedure for perioden 2028 - 2031",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
+    }
+   ],
    "bilag": []
   },
   "ringkoebing-skjern-2026-11-02-oekonomi-og-koordinationsudvalget-3": {
@@ -12434,11 +12565,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Status på madservice",
    "afsnit": [
     {
@@ -12460,12 +12591,16 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Økonomi- og Koordinationsudvalget\n\n• tager stilling til, hvorvidt alternative løsninger for den fremtidige madproduktion skal undersøges\n\n• drøfter om seneste status fra Ejendomscentret om Åkandens levetid og stand giver anledning til en anden beslutning\n\n• præciserer, om udsættelsen af det planlagte udbud skal fastholdes på ét år,\n\n• fastlægger rammerne for den videre proces frem mod en endelig beslutning"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Et flertal i udvalget tilbagesendte sagen til Ældre- og Sundhedsudvalget med en beslutning om, at der arbejdes videre med mulighed 1 og 3. Mads Fuglede kunne ikke tilslutte sig beslutningen.\nFraværende: Kristian Andersen, Lone Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Åkanden – Bygningsmæssige udfordringer - oktober 2026",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4816653-7731517-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4816653-7731517-1.pdf"
     }
    ]
   },
@@ -12474,11 +12609,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Etablering af fælleskommunalt it-driftsselskab for de 19 kommuner i Region Midtjylland",
    "afsnit": [
     {
@@ -12500,44 +12635,48 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Økonomi- og Koordinationsudvalget anbefaler Byrådet at godkende eller tage følgende punkter til efterretning:\n1. Byrådet godkender, at Ringkøbing-Skjern Kommune indgår som medstifter og -ejer af et fælleskommunalt it-driftsselskab (aktieselskab) for de 19 kommuner i Region Midtjylland på grundlag af udkast til vedtægter og stiftelsesdokument, som de fremgår af vedlagte bilag A og bilag B.\n2. Økonomi- og Koordinationsudvalget godkender, at Ringkøbing-Skjern Kommune tiltræder udkast til ejeraftalen og ejerstrategien, som de fremgår af vedlagte bilag C og bilag D.\n3. Byrådet tager oplægget til lovpligtige interne dokumenter til selskabets bestyrelse til efterretning, som de fremgår af vedlagte bilag E (forretningsorden) og bilag F (ejerbog).\n4. Byrådet tager til efterretning, at Byrådet i løbet af 2027 vil blive forelagt beslutning om indskud af yderligere egenkapital til finansiering af selskabets opstart, herunder evt. overtagelse af forpligtigelser, aktiviteter, medarbejdere m.v. samt at der tillægsbevilges et første indskud på 16.021,56 kr. finansieret af staben Personale og digitaliserings driftsbudget under Økonomi- og Koordinationsudvalget.\n5. Byrådet bemyndiger borgmesteren og kommunaldirektøren på kommunens vegne, at gennemføre stiftelsen af selskabet, herunder underskrive nødvendige dokumenter og foretage ikke-væsentlige ændringer, at repræsentere kommunen som ejer i selskabet, herunder på generalforsamlinger, og at fastlægge rammerne for samarbejdet i transitionsperioden.\n6. Byrådet godkender, at kommunens ejerrolle forankres i staben Personale og Digitalisering.\n7. Byrådet godkender et forhøjet budget til projektøkonomien i 2027 fra 4,6 mio. kr. til 10,1 mio. kr. (Bilag I). Ringkøbing-Skjern Kommunes andel er 404.544 kr. Der afsættes rådighedsbeløb i 2027 på 404.544 kr. finansieret af staben Personale og digitaliserings driftsbudget i 2027 under Økonomi- og Koordinationsudvalget. Beløbet anlægsbevilges."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen, Lone Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Bilag A Vedtægter - It-midt AS (udkast 22.10.2026) (clean)",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819141-7735860-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819141-7735860-1.pdf"
     },
     {
      "navn": "Bilag B Stiftelsesdokument - It-midt AS (udkast 22.10.2026) (NY)",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819141-7735861-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819141-7735861-1.pdf"
     },
     {
      "navn": "Bilag C Ejeraftale - It-midt AS (udkast 22.10.2026) (NY)",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819141-7735862-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819141-7735862-1.pdf"
     },
     {
      "navn": "Bilag D Ejerstrategi - It-midt AS (udkast 22.10.2026)",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819141-7735863-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819141-7735863-1.pdf"
     },
     {
      "navn": "Bilag E Forretningsorden - It-midt AS (udkast 22.10.2026) (NY)",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819141-7735864-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819141-7735864-1.pdf"
     },
     {
      "navn": "Bilag F Ejerbog - It-midt AS (udkast 22.10.2026) (NY)",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819391-7736156-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819391-7736156-1.pdf"
     },
     {
      "navn": "Bilag G Forståelsespapir vedrørende ejerindflydelse, bestyrelse og ledelsesstruktur (afventer BLYKA gennemgang)",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819141-7735866-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819141-7735866-1.pdf"
     },
     {
      "navn": "Bilag H - Økonomiske forudsætninger for etableringen af selskabet",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819141-7735867-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819141-7735867-1.pdf"
     },
     {
      "navn": "Bilag I - Samlet overblik for projektøkonomi 2027",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4819141-7735868-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4819141-7735868-1.pdf"
     }
    ]
   },
@@ -12546,11 +12685,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Akutpakke på beredskabsområdet 2026 – udmøntning",
    "afsnit": [
     {
@@ -12572,20 +12711,24 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Plan- og Trafikudvalget samt Økonomi- og Koordinationsudvalget anbefaler Byrådet, at\n\n• godkende at midlerne fra den oprindelige nationale pulje på 220 mio. kr. fordeles efter en 70/30-model, hvor 70 pct. tilføres Brand & Redning MidtVest, og 30 pct. fastholdes i den enkelte kommune,\n\n• kommunens andel af de 220 mio. kr. på 2,035 mio. kr. afsættes under beredskabets driftsområde under Plan- og Trafikudvalget finansieret af kassen med henvisning til at beløbet er tilgået kommunen med midtvejsreguleringen, og\n\n• midlerne fra den supplerende nationale pulje på 50 mio. kr., der er målrettet beredskabsindsatser på ældreområdet, fastholdes fuldt ud i den enkelte kommune. Ringkøbing-Skjern Kommunes andel på de 0,463 mio. kr. tilfalder kassen med midtvejsreguleringen\n\nPlan- og Trafikudvalget 20-10-2026\nPlan- og Trafikudvalget anbefaler administrationens indstilling godkendt.\n\nFraværende: Ole Kjær."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen, Lone Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Udmøntning af akutpakke til behandling i kommunerne",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4792795-7684943-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4792795-7684943-1.pdf"
     },
     {
      "navn": "Udmøntningsaftale om akutpakke",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4792793-7684941-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4792793-7684941-1.pdf"
     },
     {
      "navn": "Faktaark akutakke",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4792791-7684939-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4792791-7684939-1.pdf"
     }
    ]
   },
@@ -12594,11 +12737,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Orientering om status på udvikling af halvøen i Ringkøbing",
    "afsnit": [
     {
@@ -12620,6 +12763,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller at Økonomi- og Koordinationsudvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": []
@@ -12629,11 +12776,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Anmodning om igangsætning af planlægning for ferieboliger på Vestas-halvøen i Ringkøbing",
    "afsnit": [
     {
@@ -12655,16 +12802,20 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Plan- og Trafikudvalget og Økonomi- og Koordinationsudvalget anbefaler Byrådet, at der gives afslag på ansøgningen om igangsætning af planlægning for ferieboliger på Vestas-halvøen.\n\nPlan- og Trafikudvalget 20-10-2026\nPlan- og Trafikudvalget anbefaler administrationens indstilling godkendt med den bemærkning, at udvalget ønsker at kommunen først beslutter de planmæssige betingelser for området.\n\nFraværende: Ole Kjær."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler Plan- og Trafikudvalgets anbefaling godkendt med den bemærkning, at ansøgningen indgår i det videre arbejde sammen med evt. andre projekter.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Bilag 1: Ansøgning",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4800483-7700535-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4800483-7700535-1.pdf"
     },
     {
      "navn": "Bilag 2: Projektmateriale for placering på Vestas-halvø",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4800487-7700539-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4800487-7700539-1.pdf"
     }
    ]
   },
@@ -12673,11 +12824,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Anmodning om udarbejdelse af forslag til Nationalpark Skjern Å",
    "afsnit": [
     {
@@ -12699,20 +12850,24 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Klima-, Miljø- og Naturudvalget og Økonomiudvalget anbefaler Byrådet, at der med udgangspunkt i administrationens anbefalinger sendes en anmodning til miljøministeren om udarbejdelse af et forslag til Nationalpark Skjern Å.\n\nKlima-, Miljø- og Naturudvalget 29-09-2026\nKlima-, Miljø- og Naturudvalget anbefaler administrationens indstilling godkendt med den præcisering, at det skal være frivilligt for den enkelte lodsejer at blive en del af nationalparken.Administrationen indleder dialog med lodsejerne i Damsø og Pumpestation Nord."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler Klima-, Miljø- og Naturudvalgets anbefaling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Bilag 1: Kort forslag Nationalpark Skjern Å",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4789590-7679533-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4789590-7679533-1.pdf"
     },
     {
      "navn": "Bilag 2: Skema nationalparker, naturnationalparker og signaturprojekter",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4782835-7667156-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4782835-7667156-1.pdf"
     },
     {
      "navn": "Bilag 3: Hvordan etableres nationalparker og signaturprojekter",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4788928-7678408-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4788928-7678408-1.pdf"
     }
    ]
   },
@@ -12721,11 +12876,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Offentliggørelse af plangrundlag til forsyningsledninger syd om Ringkøbing Fjord.",
    "afsnit": [
     {
@@ -12747,28 +12902,32 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Klima-, Miljø og Naturudvalget og Økonomi- og Koordinationsudvalget anbefaler Byrådet, at:\n\n• Forslag til Tillæg 1 til spildevandsplan 2024-2031 vedtages og fremlægges i offentlig høring i 8 uger.\n\n• Miljørapport og udkast til projekttilladelse godkendes og fremlægges i offentlig høring.\n\n• Notatet med behandling af bemærkninger fra supplerende foroffentlig høring godkendes og anvendes til besvarelse af bemærkningerne.\n\nKlima-, Miljø- og Naturudvalget 29-09-2026\nKlima-, Miljø- og Naturudvalget anbefaler administrationens indstilling godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Bilag 1: Forslag til spildevandstillæg nr. 1",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4777606-7671706-2.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4777606-7671706-2.pdf"
     },
     {
      "navn": "Bilag 2: Indkomne bemærkninger fra supplerende foroffentlig høring",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4777606-7658064-2.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4777606-7658064-2.pdf"
     },
     {
      "navn": "Bilag 3: Notat med behandling af bemærkninger",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4777606-7658065-2.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4777606-7658065-2.pdf"
     },
     {
      "navn": "Bilag 4: Miljøvurderingsrapport",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4777606-7661563-2.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4777606-7661563-2.pdf"
     },
     {
      "navn": "Bilag 5: Udkast til projekttilladelse",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4777606-7671707-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4777606-7671707-1.pdf"
     }
    ]
   },
@@ -12777,11 +12936,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Behandling af idéer og forslag til erhvervsområde med datacenter ved Stovstrup",
    "afsnit": [
     {
@@ -12803,20 +12962,24 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Plan- og Trafikudvalget anbefaler, at Økonomi- og Koordinationsudvalget godkender at:\n\n• fortsætte planlægningen for energikrævende erhverv ved Stovstrup med udgangspunkt i administrationens anbefalinger.\n\n• notatet med behandling af bemærkninger godkendes og anvendes som svar på de indkomne bemærkninger.\n\nPlan- og Trafikudvalget 20-10-2026\nEt flertal i Plan- og Trafikudvalget anbefaler administrationens indstilling godkendt.\nNiels Rasmussen kunne ikke tilslutte sig flertallets beslutning idet han ønsker planlægningen udsat indtil der er et mere konkret grundlag.\n\nFraværende: Ole Kjær."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Et flertal i Økonomi- og Koordinationsudvalget godkendte administrationens indstilling. Niels Kristian Larsen, Mads Fuglede og Susanne Kristensen stemte imod.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Indkomne bemærkninger",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4802879-7707147-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4802879-7707147-1.pdf"
     },
     {
      "navn": "Notat med behandling af bemærkninger",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4802879-7712146-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4802879-7712146-1.pdf"
     },
     {
      "navn": "Notat: Ansøgers supplerende oplysninger til behandling af høringssvar",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4802879-7707149-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4802879-7707149-1.pdf"
     }
    ]
   },
@@ -12825,11 +12988,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Forslag til takster pr. 1. januar 2027 på Plan -og Trafikudvalgets skattefinansierede område",
    "afsnit": [
     {
@@ -12847,20 +13010,24 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller at, Plan -og Trafikudvalget og Økonomi -og Koordinationsudvalget anbefaler Byrådet at godkende forslaget til takster og gebyrer pr. 1. januar 2027.\n\nPlan- og Trafikudvalget 20-10-2026\nPlan- og Trafikudvalget anbefaler administrationens indstilling godkendt.\n\nFraværende: Ole Kjær."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Havnetakster for 2027 Stauning",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4799955-7697319-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4799955-7697319-1.pdf"
     },
     {
      "navn": "Havnetakster for 2027 Bork",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4799955-7697320-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4799955-7697320-1.pdf"
     },
     {
      "navn": "Havnetakster for 2027 Ringkøbing",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4799955-7697321-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4799955-7697321-1.pdf"
     }
    ]
   },
@@ -12869,11 +13036,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Danmarkskort over omgørelsesprocenter på socialområdet for året 2025",
    "afsnit": [
     {
@@ -12895,28 +13062,32 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Ældre- og Sundhedsudvalget, Børne- og Familieudvalget og Social-, Psykiatri- og Handicapudvalget:\n\n• drøfter statistikken over Ankestyrelsens behandling af klagesager på socialområdet.\n\n• anbefaler Økonomi- og Koordinationsudvalget og Byrådet at drøfte statistikken over Ankestyrelsens behandling af klagesager på socialområdet.\n\nÆldre- og Sundhedsudvalget 07-10-2026\nÆldre- og Sundhedsudvalget drøftede statistikken over Ankestyrelsens behandlingen af klagesager\npå socialområdet. Ældre- og Sundhedsudvalget anbefaler Økonomi- og Koordinationsudvalget at\n\ndrøfte statistikken over Ankestyrelsens behandling af klagesager på socialområdet.\n\nÆldre- og Sundhedsudvalget har modtaget høringssvar fra Ældrerådet d. 6. oktober 2026 (bilagt\nreferatet). Ældre- og Sundhedsudvalget tager høringssvaret til efterretning.\n\nBørne- og Familieudvalget 07-10-2026\nBørne- og Familieudvalget fulgte forvaltningens indstilling.\n\nSocial-, Psykiatri- og Handicapudvalget 08-10-2026\nAdministrationens indstilling blev godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet. Økonomi- og Koordinationsudvalget anbefaler, at Byrådet drøfter statistikken over Ankestyrelsens behandling af klagesager på socialområdet.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Sammenligning af omgørelsesprocenter med tidligere år",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4758001-7624572-3.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4758001-7624572-3.pdf"
     },
     {
      "navn": "Afgørelser inden for børneområdet 2025",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4758010-7624581-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4758010-7624581-1.pdf"
     },
     {
      "navn": "Afgørelser inden for Handicap og Psykiatri og Sundhed og Omsorg i 2025",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4754126-7617979-2.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4754126-7617979-2.pdf"
     },
     {
      "navn": "Høringssvar fra Handicaprådet vedr. Danmarkskortet over omgørelsesprocenter",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4792378-7684187-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4792378-7684187-1.pdf"
     },
     {
      "navn": "Høringssvar fra Ældrerådet vedr. Danmarkskortet over omgørelsesprocenter",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4804806-7710155-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4804806-7710155-1.pdf"
     }
    ]
   },
@@ -12925,11 +13096,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Løft og udvidelse af kapaciteten i socialpsykiatrien",
    "afsnit": [
     {
@@ -12951,6 +13122,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Social-, Psykiatri og Handicapudvalget anbefaler Økonomi- og Koordinationsudvalget og Byrådet, at der tillægsbevilges 1.013.000 kr. i 2026 til Social-, Psykiatri- og Handicapudvalget til implementering af løft og udvidelse af kapaciteten i socialpsykiatrien. Bevillingen fordeles jf. sagsfremstillingen og finansieres af kassebeholdningen med henvisning til, at beløbet er tilgået kommunen med midtvejsreguleringen.\n\nSocial-, Psykiatri- og Handicapudvalget 17-09-2026\nSocial-, Psykiatri- og Handicapudvalget anbefaler Økonomi- og Koordinationsudvalget, at:\n\n• der tillægsbevilges 1.013.000 kr. i 2026 til Social-, Psykiatri- og Handicapudvalget til implementering af løft og udvidelse af kapaciteten i socialpsykiatrien. Bevillingen fordeles jf. sagsfremstillingen og finansieres af kassebeholdningen med henvisning til, at beløbet er tilgået kommunen med midtvejsreguleringen.\n\nFraværende: Niels Rasmussen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": []
@@ -12960,11 +13135,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Godkendelse af Rammeaftale 2027-28 på det sociale område",
    "afsnit": [
     {
@@ -12986,12 +13161,16 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Børne- og Familieudvalget anbefaler Økonomi- og Koordinationsudvalget og Byrådet, at udkast til Rammeaftale 2027-28 godkendes.\nBørne- og Familieudvalget 07-10-2026\nBørne- og Familieudvalget godkendte aftalen.Fraværende: Ole Kjær.\n\nSocial-, Psykiatri- og Handicapudvalget 08-10-2026\nAdministrationens indstilling blev godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Rammeaftale 2027-2028 udkast",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4781300-7664470-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4781300-7664470-1.pdf"
     }
    ]
   },
@@ -13000,11 +13179,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Takster 2027 for handicap- og psykiatriområdet",
    "afsnit": [
     {
@@ -13026,12 +13205,16 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller til Social- Psykiatri- og Handicapudvalget, Økonomi- og Koordinationsudvalget og Byrådet, at\n\n• de vedlagte takster 2027 godkendes\n\n• såfremt Ringkøbing-Skjern Kommunes månedstakst for døgnkost afviger fra Børne-, ældre- og Boligministeriets takst så anvendes Børne-, ældre- og Boligministeriets pris.\n\nSocial-, Psykiatri- og Handicapudvalget 08-10-2026\nAdministrationens indstilling blev godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Kost - og servicepakker 2027, handicap- og psykiatriområdet. - ej webtilgaengelig",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4817280-7732760-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4817280-7732760-1.pdf"
     }
    ]
   },
@@ -13040,11 +13223,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Takster 2027 for ældreområdet",
    "afsnit": [
     {
@@ -13066,12 +13249,16 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller til Ældre- og Sundhedsudvalget, Økonomi - og Koordinationsudvalget og Byrådet, at\n\n• de vedlagte takster 2027 godkendes\n\n• såfremt Ringkøbing-Skjern Kommunes månedstakst for døgnkost samt takst for en portion madservice afviger fra Børne-, ældre- og Boligministeriets takster så anvendes Børne-, ældre- og Boligministeriets pris.\n\nÆldre- og Sundhedsudvalget 07-10-2026\nÆldre- og Sundhedsudvalget godkendte vedlagte takster for 2027.\nÆldre- og Sundhedsudvalget godkendte, at såfremt Ringkøbing-Skjern Kommunes månedstakst for døgnkost samt takst for en portion madservice afviger fra Børne-, ældre- og Boligministeriets takster, så anvendes Børne-, ældre- og Boligministeriets pris.\nSagen sendes videre til Økonomi - og Koordinationsudvalget og Byrådet til godkendelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Bilag 1: Takster 2027, Ældreområdet - ej webtilgaengelig",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4791073-7681958-1.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4791073-7681958-1.pdf"
     }
    ]
   },
@@ -13080,11 +13267,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 17,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Forældrebetalingstakster for 2027 for børn i dagtilbud og skolefritidsordninger",
    "afsnit": [
     {
@@ -13106,12 +13293,16 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at sagen oversendes til Økonomiudvalget og Byrådet med indstilling om,at forældrebetalingstaksterne for 2027 godkendes.\n\nBørne- og Familieudvalget 07-10-2026\nBørne- og Familieudvalget fulgte administrationens indstilling.\n\nFraværende: Ole Kjær."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler administrationens indstilling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": [
     {
      "navn": "Takstforslag 2027 - ej webtilgængelig",
-     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.30/Dagsorden/Dagsorden/Hjemmeside/2026-10-28%2006.56.54/Attachments/4787321-7675752-5.pdf"
+     "url": "https://www.rksk.dk/Edoc/Dagsordenspublicering/%C3%98konomi-%20og%20Koordinationsudvalget/2026-11-02%2008.00/Dagsorden/Referat/Hjemmeside/2026-11-04%2007.25.47/Attachments/4787321-7675752-5.pdf"
     }
    ]
   },
@@ -13120,11 +13311,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 18,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Kommunens styrelsesvedtægt - indkaldelse af stedfortrædere for kortere perioder",
    "afsnit": [
     {
@@ -13146,6 +13337,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at Økonomi- og Koordinationsudvalget:\n\n• Drøfter de tre muligheder og tager stilling til, om styrelsesvedtægtens &sect; 2, stk. 2, skal fastholdes, ophæves eller ændres til at gælde ved forventet lovligt forfald på mindst syv dage.\n\n• Ved valg af en ændring foretager indstilling af den valgte løsning til Byrådet med henblik på to behandlinger af styrelsesvedtægtsændringen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Økonomi- og Koordinationsudvalget anbefaler, at styrelsesvedtægtens paragraf 2, stk. 2 ophæves (mulighed 2).\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": []
@@ -13155,16 +13350,20 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 19,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Byrådets spørgetid - behandling i Økonomi- og Koordinationsudvalget",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Administrationen har modtaget nedenstående spørgsmål, der ønskes besvaret på byrådsmødet den 17. november.\nSpørgsmål 1:\nStefan Lundgaard spørger:\nSpørgsmål til Byrådets spørgetid – hvad blev der af det politiske svar?\nDa Byrådet ændrede reglerne for spørgetid, blev den nye model blandt andet begrundet med:\n“Da alle politiske partier er repræsenteret i udvalget, vil den nye model samtidig sikre, at alle partier får mulighed for indflydelse på svarene.”\nOg videre:\n“I Økonomi- og Koordinationsudvalgets indstilling til Byrådet vil det fremgå, hvilke partier der tilslutter sig en besvarelse, der skal afgives på byrådsmøde. Dette vil fjerne tvivl om, hvorvidt svar gives på vegne af de politiske partier eller blot af borgmesteren eller en udvalgsformand.”\nDet er netop derfor, jeg gerne vil spørge:\nHvordan hænger det sammen med, at spørgsmål til spørgetiden nu kan ende med et administrativt svar i stedet for et politisk svar på Byrådets møde?\nHvis formålet med den nye model var, at alle politiske partier skulle have mulighed for indflydelse på svarene, burde det så ikke netop være et politisk svar, borgeren får?\nOg hvis spørgsmålet blot bliver besvaret administrativt, hvordan får borgeren så at vide, hvad de forskellige politiske partier mener om spørgsmålet?\nDet var jo netop det, den nye model skulle skabe klarhed om.\nJeg vil derfor gerne spørge:\nEr det fortsat Byrådets intention, at spørgetiden skal give borgerne mulighed for at få et politisk svar fra deres valgte politikere – og hvis ja, hvorfor kan et spørgsmål så flyttes til en administrativ besvarelse?\nOg endelig:\nHvordan vil Byrådet evaluere, om den nye ordning faktisk har styrket den politiske dialog mellem borgerne og Byrådet?\n\nSpørgsmål 2:\nSpørgsmålet vedrører beslutningen på byrådsmødet den 6. oktober 2026, punkt 8:\nForoffentlighedsfase for plangrundlag for et biogasanlæg ved Novej 16, Ringkøbing:\nsagsnummer 25-008714\nSpørgsmål:\nHvad er kommunens forventede samlede tidsforbrug og omkostninger ved at fortsætte denne sag frem til næste byrådsbeslutning, på tværs af de involverede afdelinger og inklusive ekstern bistand?\nHvis der ikke foreligger en opgørelse, hvad er borgmesterens bedste begrundede overslag over kommunens tidsforbrug og omkostninger?\nMed de venligste hilsner\nJan K. Pedersen\n\nSpørgsmål 3:\nHej\nTil Ringkøbing-Skjern Kommunes byråd - byrådsmøde den 17.november\nVil byrådet bekræfte, at den kommunale analyse af alternative placeringer af Biogasanlægget ved Novej 16, fuldføres med sammenlignelige kriterier på tværs af lokaliteterne og fremlægges, inden der træffes beslutning om planforslag og miljørapport?\nMed venlig hilsen\nThomas Merker\n\nSpørgsmål 4:\nTil Ringkøbing-Skjern Kommune\nAtt. Byrådet\nSpørgsmål til byrådsmødet 17. November 2026:\n”Kan eller vil byrådet bekræfte, at der før endelig planvedtagelse for et biogasanlæg ved Novej 16 foreligger en ny, samlet analyse for Ringkøbing-Skjern kommune, der indregner reduktionen i antallet af husdyr, andre landbrugs- og biomassefraktioner, samt arealudtagning efter grøn trepart og eksisterende godkendt anlægskapacitet ?”\nMed venlig hilsen\nPer Sunesen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": []
@@ -13174,11 +13373,11 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 20,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Rekruttering til Direktionen - nedsættelse af ansættelsesudvalg",
    "afsnit": [
     {
@@ -13200,6 +13399,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Borgmesteren indstiller, at Økonomi- og Koordinationsudvalget godkender:\n\n• den politiske repræsentation i de to ansættelsesudvalg\n\n• at Kommunaldirektøren udpeger de to fagchefer efter rådføring med Chefforum\n\n• at HovedMED udpeger medlem(mer) udover næstformanden\n\n• at sammensætningen i øvrigt godkendes"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Borgmesterens indstilling godkendt.\nFraværende: Kristian Andersen"
     }
    ],
    "bilag": []
@@ -13209,13 +13412,18 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 21,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Kondemneringssag",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Administrationens indstilling godkendt."
+    }
+   ],
    "bilag": []
   },
   "ringkoebing-skjern-2026-11-02-oekonomi-og-koordinationsudvalget-22": {
@@ -13223,13 +13431,18 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 22,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Gensidig orientering",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering fandt sted.\nFraværende: Kristian Andersen"
+    }
+   ],
    "bilag": []
   },
   "ringkoebing-skjern-2026-11-02-oekonomi-og-koordinationsudvalget-23": {
@@ -13237,18 +13450,13 @@
    "kommune": "Ringkøbing-Skjern",
    "udvalg": "Økonomi- og Koordinationsudvalget",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 23,
-   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6737",
-   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:30",
-   "hentet": "2026-11-03T23:16:05.558Z",
+   "kilde": "https://www.rksk.dk/om-kommunen/politiske-udvalg/oekonomi-og-koordinationsudvalget/dagsordener-referater?AgendaID=6744",
+   "moede": "Økonomi- og Koordinationsudvalget|2026-11-02 08:00",
+   "hentet": "2026-11-05T13:04:48.142Z",
    "titel": "Underskriftsside",
-   "afsnit": [
-    {
-     "titel": "Beslutning",
-     "tekst": "Kontaktoplysninger\n\nPolitisk Administrativt Sekretariat\n\nVed Fjorden 6\n\n6950\nRingkøbing\n\n99 74 19 89\nviden.strategi@rksk.dk\n\nFik du den rigtige hjælp på denne side?\n\nVil du give en kommentar?\n&times;\nDu har mulighed for at tilføje en kommentar til din bedømmelse af den specifikke side, som du besøger på hjemmesiden.\n\nDet er muligt at give en bedømmelse uden at give en kommentar. Dog er det værdifuldt for os, hvis du vil uddybe din bedømmelse.\n\nVi bruger dine oplysninger/kommentarer til at optimere på www.rksk.dk og forsøger at øge brugeroplevelsen.\n\nDu kan læse mere omkring vores\nprivatlivspolitik her\n.\n\nOBS:\nKommentarer som ikke specifikt er til hjemmesidens indhold/formulering etc. kan ikke forventes besvaret, men skal altid rettes til den afdeling, kommentaren vedrører.\n\nBedømmelse--Vælg bedømmelseMeget dårligDårligNeutralGodMeget god\nKommentar\nE-mailE-mail vil blive brugt til at tage kontakt - hvis der er brug for opfølgende info vedr. din kommentar.\n\nSikkerhed: Hvad er summen af 4 + 5? Skriv svaret med bogstaver\n\nSend min stemme\n\nSidefod\nOplysninger\nRingkøbing-Skjern Kommune\nVed Fjorden 6\n\n6950 Ringkøbing\n\nTlf. 99 74 24 24\nCvr.nr: 29 18 96 09\nKontakt til områder\nSikker mail borger\nSikker mail virksomhed\nSikker mail for samarbejdspartnere\npost@rksk.dk - ikke sikker postkasse!\n\nOm kommunen\n\n• Åbningstider\n\n• Kontakt os\n\n• Tidsbestilling Borgerservice\n\n• Find medarbejder\n\n• Selvbetjening borger\n\n• Selvbetjening erhverv\n\n• EAN-oversigt\n\n• Privatlivspolitik\n\nTilgængelighed\nAdgang med tegn\n\nKlikbart element fra\n\nFå teksten læst op\nTilgængelighedserklæring\n\nNyheder direkte til din e-mail?\n&times;\nJeg accepterer, at Ringkøbing-Skjern Kommune sender nyheder til min e-mailadresse.\nDu modtager et nyhedsbrev, når der er nyt på et af de områder, du har valgt at abonnere på.\n\nDu kan til enhver tid nemt afmelde dit abonnement, hvis du ikke længere finder det relevant.\n\nLæs vores privatlivspolitik her.\nNavn:\n\nEmail:\n\nSikkerhed: Hvad er summen af 4 + 5? Skriv svaret med bogstaver\n\nTilmeld"
-    }
-   ],
+   "afsnit": [],
    "bilag": []
   },
   "ringkoebing-skjern-2026-10-09-oekonomi-og-koordinationsudvalget-1": {
@@ -16704,6 +16912,6 @@
    ]
   }
  },
- "opdateret": "2026-11-03T23:16:22.143Z",
+ "opdateret": "2026-11-05T13:04:48.142Z",
  "kommune": "Ringkøbing-Skjern"
 }

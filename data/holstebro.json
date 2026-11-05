@@ -761,10 +761,8 @@
    "type": "referat",
    "udvalg": "Skolebestyrelsen på Tvis Skole",
    "dato": "2026-10-29",
-   "punkter": 0,
-   "parser": 3,
-   "tomFra": "2026-11-02",
-   "tegn": 3461
+   "punkter": 9,
+   "parser": 3
   },
   "87eaa1fc-70c4-4384-b504-f08181ac405e": {
    "lastmod": "2026-11-02",
@@ -836,6 +834,14 @@
    "udvalg": "Holstebro Handicapråd",
    "dato": "2026-10-22",
    "punkter": 11,
+   "parser": 3
+  },
+  "76e71d68-ce0a-4509-8e6f-fc7eb3b54e9e": {
+   "lastmod": "2026-11-05",
+   "type": "referat",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-11-04",
+   "punkter": 2,
    "parser": 3
   }
  },
@@ -12825,10 +12831,10 @@
    "kommune": "Holstebro",
    "udvalg": "Teknisk Udvalg",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.holstebro.dk/vis?id=da7c540b-ff5b-4e48-83b7-4e42679c9660",
-   "hentet": "2026-11-03T14:57:31.538Z",
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=76e71d68-ce0a-4509-8e6f-fc7eb3b54e9e",
+   "hentet": "2026-11-05T12:30:49.357Z",
    "titel": "Forslag til lokalplan nr. 1232, Koblingsstation ved Idomlund",
    "afsnit": [
     {
@@ -12838,6 +12844,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles, at Teknisk Udvalg indstiller til Byrådet, at:\nlokalplanforslaget vedtages og sendes i offentlig høring i 8 uger"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt som indstillet.\nBodil Pedersen (A) deltog ikke ved sagens behandling."
     }
    ],
    "bilag": []
@@ -12847,10 +12857,10 @@
    "kommune": "Holstebro",
    "udvalg": "Teknisk Udvalg",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.holstebro.dk/vis?id=da7c540b-ff5b-4e48-83b7-4e42679c9660",
-   "hentet": "2026-11-03T14:57:31.538Z",
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=76e71d68-ce0a-4509-8e6f-fc7eb3b54e9e",
+   "hentet": "2026-11-05T12:30:49.357Z",
    "titel": "Dispensation fra lokalplan 262 og 369 - Enghaven 10, 7500 Holstebro",
    "afsnit": [
     {
@@ -12860,6 +12870,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles, at:\nder meddeles dispensation fra lokalplan nr. 369 § 6 stk. 4 og det ansøgte\nmaterialevalg godkendes,\nder meddeles dispensation fra lokalplan nr. 262 § 7 stk. 1 og bebyggelsens\nplacering i forhold til øvrige facader godkendes,\nder meddeles dispensation fra lokalplan nr. 262 § 7 stk. 10 og bebyggelsens\nvinduesinddeling godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt som indstillet.\nBodil Pedersen (A) deltog ikke ved sagens behandling."
     }
    ],
    "bilag": []
@@ -13751,124 +13765,286 @@
     }
    ],
    "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-1": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-1",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Meddelelser - Formand",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Morten bød velkommen\nStøtteforeningen afholder diskoaften i forbindelse med BMGP. Det er den sidste lørdag i vinterferien.\nDer har været arbejdsdag i halllen, hvor alt er blevet malet. Juniormesterlæreeleverne var med i processen."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-2": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-2",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Meddelelser - Skoleleder",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Carsten orienterer om personalesituationen.\nCarsten fortæller kort om processen vedr.den nye Multibane.\nVi har lige haft besøg af TCM ift. vores personalekøkken.\nCarsten minder om arrangementet i Plexus d. 19. november.\nVi har være så heldige, at vi har haft besøg af Rasmus Byskov. Det var en virkelig god oplevelse.\nCarsten fortæller om, at der i kommuen er en følgegruppe ift. arbejdet med Bredere Børnefællesskaber. Der\nspørges ud i bestyelsen, om der er nogen herfra, som kan have lyst til at være en del af denne gruppe.\nJesper vil gerne være med.\n\nPersonalesituationen\nOrientering om ny multibane\nOrientering om renovering af personalekøkkenet\nHusk Plexus den 19. november 2026 kl.18.30-21.00\nBesøg fra Kommunaldirektør, Rasmus Byskov.\nEvt. et skolebestyrelsesmedlem i følgegruppen:\nBørne- og Familieudvalget besluttede tilbage i 2025 at nedsættes en følgegruppe til\narbejdet med Bredere Børnefællesskaber.\nFormålet er at drøfte og kvalificere tiltag og status på området. Det er gældende både i\nforhold til spor 1 (Styrkelse af almenområdet) og spor 2 (En økonomisk og transparent\nbudgettildelingsmodel).\nFølgegruppen erstatter øvrige nedsatte arbejdsgrupper og advisory boards vedrørende\nBredere Børnefællesskaber.\nFølgegruppen består af:\n5 forældrerepræsentanter fra skolebestyrelserne\nRepræsentant fra Vestjysk Lærerforening\nRepræsentant fra Skolelederforeningen Holstebro\nRepræsentant fra BUPL MidtVestjylland\nRepræsentant fra Handicaprådet\nRepræsentanter fra F-MED\nFølgegruppen mødes to gange om året til og med med 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-3": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-3",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Meddelelser - SFO leder",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Lisbeth orienterede om personalesituationen.\nJane afslutter snart vejlederuddannelsen.\nVi har fået ansat tre nye medhjælpere i vikariat.\nLisbeth har lige afsluttet endnu et ledelsesmodul.\nLærkereden skal have nyt loft - asbest skal ud. Processen kommer til at presse os, fordi alle lokalerne i\nSFO'en lukkes ned.\nHalloween i Lærkereden om dagen og på Fuglsang om aftenen - der er åbent for hele byen.\n\nPersonalesituationen\nHalloween - Fuglsang og Lærkereden"
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-4": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-4",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Meddelelser - Afdelingsleder",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Lokale valgfag er startet op efter efterårsferien. De lokale valgfag er designet og udtænkt af vores egne\nlærere. Vi glæder os til at følge dem.\nVi har temauge i i uge 47 - 8. klasserne har projektopgave og 9. klasserne er i praktik.\n\nLokale valgfag"
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-5": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-5",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Meddelelser - Øvrige medlemmer",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Jespers spurgte til de nye toiletter.\nMarie-Louise spøger til, om man kan belønne personalet for at løbe stærkt i en presset tid.\nIndskolingen orienterede om, at indskolingen arbejder med læsning.\nVi har et forældrekursus i støbeskeen i matematik.\nVi skal have fotograferet bestyrelsen den 25. november."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-6": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-6",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Meddelelser - Elevråd",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Elevrådsmøde er blevet afholdet.\nElevrådet har tidligere søgt penge fra elevrådsfonden til spil.\nDer er en ny pulje penge, og elevrådet vil gerne søge om penge til flere remedier i madkundskab.\nCarsten og elevrådet vil sammen finde løsninger til undervisning og venskabsklaser\nNet til mål søges i støtteforeningen."
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-7": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-7",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Principper",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Principperne blev ajourført.\n\nVi skal have efterset følgende principper:\nOrdensregler og værdigrundlag, der sikrer trivsel og et godt læringsmiljø:\n1. Ordensregler – herunder mobiltelefoner\n2. Elever, der forlader skolens grund i spisefrikvartererne\n3. Udlevering af medicin og hovedpinepiller\nHvis vi kan nå det, tager vi også principperne omkring SFO og klub.\nhttps://tvisskole.holstebro.dk/bestyrelse/principper"
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-8": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-8",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 8,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Høringsskrivelser - status",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Carsten orienterer bestyrelsen omkring, hvordan det ser ud ift. status med høringssvar.\n\nCarsten orienterer"
+    }
+   ],
+   "bilag": []
+  },
+  "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-9": {
+   "id": "holstebro-2026-10-29-skolebestyrelsen-paa-tvis-skole-9",
+   "kommune": "Holstebro",
+   "udvalg": "Skolebestyrelsen på Tvis Skole",
+   "dato": "2026-10-29",
+   "type": "referat",
+   "nr": 9,
+   "kilde": "https://dagsordener.holstebro.dk/vis?id=1de9bf2f-2af3-4210-bbba-f852745bf4fb",
+   "hentet": "2026-11-05T12:30:38.391Z",
+   "titel": "Skolebestyrelsens holdning til fridage",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Carsten orienterer, at vi her på skolen oplever, at der er mange, som ønsker at afholde ferie uden for\nskolens ferier. Vi ønsker, at høre skolebestyrelsens holdning omkring dette.\nDet forslås, at der laves et princip ift. fravær, hvor det synliggøres hvilke problematikker, som følger af øget\nfravær. Kunne der måske bruge statistikkerne.\nKunne det være en ide, at der laves et standard svar, hvor vi som skole gør opmærksom på problematikken,\nnår det kan gå ud over fællesskabet i klasserne.\nDer drøftes forskellige måder, hvorpå vi bedst kan kommunikere vores holdning til elevernes ekstraordinære\nfrihed.\n\nVi oplever, at elever oftere og oftere bedes fritaget fra undervisning pga. ferie.\n\nPå nuværende tidspunkt i skoleåret 2026-27 har vi givet 308 fridage.\nHvad er skolebestyrelsens holdning til dette?"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=367041ee-899b-48d3-b47d-b9574c7206a8": {
    "senest": "2026-09-22",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=c3ae97a4-c858-4fd6-9a86-2f72e254119e": {
    "senest": "2026-10-27",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=38dd67b3-8996-4cb4-b5eb-1b610bee2df4": {
    "senest": "2026-10-19",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=0f1bd7eb-70c9-4252-8ac8-3150916f7a59": {
    "senest": "2026-10-19",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=3186f607-40bc-4b53-941f-ce0310512ce0": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=9b55f7d0-0b5c-45b0-bf38-5f60632cd328": {
    "senest": "2026-10-06",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=79ebb917-2d47-48f7-9968-e7a7b4919a72": {
    "senest": "2026-10-05",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=fd933be2-8372-471f-a409-a9d0973f0b88": {
    "senest": "2026-09-29",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=e29f5f14-7187-400e-b5e5-8812d6fa40b1": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-04"
+   "senest": "2026-10-05",
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=cbaadf10-6cbf-4f21-b4d2-aafcff354a7b": {
    "senest": "2026-10-06",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=163d0d13-e5bc-4fd5-afa7-e4668a2ab407": {
    "senest": "2026-09-29",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=3499fdb9-67e9-480a-b5d1-1f4ee16f28d3": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=58e7b3a5-ffae-46bd-bd7e-e3a3ae7de71a": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=92d1a66c-14ed-43a4-ba23-43507f46f998": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=e1080533-07c7-4829-a693-e2831e335b74": {
    "senest": "2026-09-30",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=f8b4e9f3-b582-4de8-8698-37dca8a3165f": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=4d9a8daf-66e1-4e7e-8343-87bbc6017db8": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=c1497bd9-0208-4052-8a36-a0b43530793e": {
    "senest": "2026-10-07",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=bbff13a0-d859-466f-9e65-ba43e943c493": {
    "senest": "2026-10-07",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=1f4b3a87-b167-4bab-b059-349e13670314": {
-   "senest": "2026-11-03",
-   "tjekket": "2026-11-04"
+   "senest": "2026-11-05",
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=0a7ba8bb-33a5-4d9f-bfda-13e323a24698": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=0f06f666-6cff-4c0d-ba15-e256f80ff921": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=e212ced3-d561-4394-aa9e-f88baa2e8e77": {
    "senest": "2026-10-27",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=f45020a5-03dc-4277-919b-6408fb352d2e": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=3b683243-f043-487c-9dce-8d1bbf73a155": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=61a47113-4ba8-40b8-b84e-c355856b3515": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=ada9da42-1f7c-4d62-bc61-f5035ba70e67": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=24d333fb-a878-46f3-b662-dbe229c83910": {
    "senest": "2026-10-07",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=712c3db6-c563-4300-acea-0c18cc596dd4": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   },
   "https://dagsordener.holstebro.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -13876,10 +14052,10 @@
   },
   "https://dagsordener.holstebro.dk/Sitemap/ForCommittee?committeeId=e93ebd48-9d31-4f5c-8227-f72c1115e630": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-04"
+   "tjekket": "2026-11-05"
   }
  },
  "parser": 3,
- "opdateret": "2026-11-04T21:01:18.094Z",
+ "opdateret": "2026-11-05T12:30:49.358Z",
  "kommune": "Holstebro"
 }
