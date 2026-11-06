@@ -775,6 +775,22 @@
    "dato": "2026-11-04",
    "punkter": 20,
    "parser": 3
+  },
+  "44e4072d-62f5-4205-bdc3-271c354599d4": {
+   "lastmod": "2026-11-06",
+   "type": "dagsorden",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "punkter": 13,
+   "parser": 3
+  },
+  "7ade8c7f-248b-4262-a74a-9ed1ee62a8c8": {
+   "lastmod": "2026-11-06",
+   "type": "referat",
+   "udvalg": "Fritidsforum",
+   "dato": "2026-10-27",
+   "punkter": 10,
+   "parser": 3
   }
  },
  "sager": {
@@ -3941,12 +3957,17 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.022Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt, men der ønskes at mødelokalet fremgår af indkaldelsen."
+    }
+   ],
    "bilag": []
   },
   "haderslev-2026-10-27-fritidsforum-2": {
@@ -3954,10 +3975,10 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.022Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Forretningsorden tilrettet",
    "afsnit": [
     {
@@ -3967,6 +3988,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Forvaltningen har tilrettet Forretningsorden for Fritidsforum 2026-2030 efter beslutning i\nFritidsforum den 8. september 2026.\nSe vedhæftede."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "OBS, jf. forretningsorden skal dagsorden ud fem hverdage før mødet afholdes."
     }
    ],
    "bilag": []
@@ -3976,10 +4001,10 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.022Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Overdragelsesdokument",
    "afsnit": [
     {
@@ -3989,6 +4014,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Forvaltningen har tilrettet overdragelsesdokument fra Fritidssamvirket, efter bemærkninger i\nreferatet fra Fritidsforums møde den 8. september 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt uden bemærkninger"
     }
    ],
    "bilag": []
@@ -3998,10 +4027,10 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.022Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Mødekalender forummer 2027",
    "afsnit": [
     {
@@ -4019,6 +4048,10 @@
     {
      "titel": "Behandling i Kulturforum 8. oktober 2026",
      "tekst": "Kulturforum besluttede følgende mødedatoer i 2027: 4. februar, 15. marts, 29. april, 25.\nmaj, 22. juni, 31. august, 7. oktober, 23. november, 9. december."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt uden bemærkninger"
     }
    ],
    "bilag": []
@@ -4028,10 +4061,10 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.023Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Fritidsforums Udviklingspulje",
    "afsnit": [
     {
@@ -4041,6 +4074,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Fritidsforums udviklingspulje har til formål at understøtte opstart af nye projekter, aktiviteter og\nforeninger inden for fritidsområdet i. Puljen kan blandt andet anvendes til udvikling af nye\naktiviteter, videreudvikling af eksisterende foreninger samt nødvendige materialer til nye\naktiviteter og foreninger.\nPuljen udgør 28.800 kr. årligt, og ansøgninger behandles løbende af Fritidsforum.\nFritidsforum skal på mødet behandle de første ansøgninger til puljen siden forummets\ntiltrædelse.\nAdministrationen har modtaget to ansøgninger til behandling:\nMusikforeningen Banehuset søger om 20.531,75 kr. til indkøb af aktiviteter og udstyr til en\nnyoprettet ungdomsklub i Sommersted for unge fra 7.-10. klasse. Projektet skal styrke\nfællesskab, trivsel og unges medindflydelse gennem et lokalt fritidstilbud. Der søges blandt\nandet om støtte til sportsudstyr, spil, PlayStation, sækkepuder og øvrige aktiviteter.\nUngdomsklubben har været i drift siden april 2026 og har allerede haft omkring 30 forskellige\nunge besøgende med gennemsnitligt 15 deltagere pr. klubaften. Banehuset bidrager med\nlokaler, faciliteter og et kontant bidrag på 2.000 kr., mens driften varetages af frivillige kræfter\n\nBiavlerforeningen for Haderslev og Omegn søger om 12.717 kr. til indkøb af bidragter og\nhandsker til deltagere på foreningens begynderhold. Formålet er at styrke fastholdelsen af nye\nbiavlere ved at give hver deltager sin egen personlige dragt til brug gennem sæsonen.\nForeningen oplever en svingende og relativt lav fastholdelse af nye medlemmer og vurderer, at\net øget tilhørsforhold til foreningen kan bidrage til stærkere fortsætterhold. Målgruppen er nye\ndeltagere på foreningens begynderkurser. Projektet understøtter udvikling af foreningens\naktivitet og rekruttering af nye medlemmer. Foreningen bidrager ikke med kontante midler, men\n\nmed frivillig arbejdskraft og mentorordning.\n\nVed vurderingen kan Fritidsforum blandt andet lægge vægt på, om ansøgningerne understøtter\npuljens formål om udvikling af nye aktiviteter og initiativer inden for fritidsområdet, samt om\nprojektbeskrivelse, målgruppe og budgetgrundlag er tilstrækkeligt belyst.\nAnsøgningerne er vedlagt som bilag.\n\nØkonomiske forhold\nUdviklingspuljen udgør 28.800 kr. årligt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Banehuset 10.000,- kr. til spil m.m. Afslag til Biavlerforeningen, med opfordring til at søge\nrestmidler i Facilitetspuljen. Thomas Guldbrandt Jensen deltog ikke i behandlingen af\ndette punkt."
     }
    ],
    "bilag": []
@@ -4050,10 +4087,10 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.023Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Royal Run 2027 Haderslev - side events",
    "afsnit": [
     {
@@ -4063,6 +4100,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Royal Run er et landsdækkende motions- og folkefestarrangement, som hvert år samler\nborgere på tværs af alder, baggrund og motionsniveau. Med værtskabet i 2027 får Haderslev\nKommune en enestående mulighed for at markere sig nationalt og samtidig skabe lokale\nfællesskaber og engagement.\nFor at skabe en levende og inkluderende event ønskes et tæt samarbejde med kommunens\nkultur- og foreningsliv. Lokale foreninger, kulturinstitutioner, frivillige grupper og øvrige\nfællesskaber kan bidrage på mange forskellige måder, f.eks. gennem aktiviteter langs ruten,\nmusik- og kulturoplevelser, frivilligindsatser, publikumsaktiviteter eller andre initiativer, der\nunderstøtter folkefesten.\nPå mødet gives der en pitch om hvordan foreninger m.m. kan blive en del af Royal Run 2027,\nog der gives inspiration til, hvordan kultur- og foreningsaktører kan blive en aktiv del af\narrangementet. Forummet inviteres samtidig til at bringe idéer, perspektiver og kontakter i spil,\nså Royal Run kan blive en begivenhed, der skaber værdi og synlighed for hele kommunen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Besøg af Jane Terp. PP medsendes referatet."
     }
    ],
    "bilag": []
@@ -4072,10 +4113,10 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.023Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Kultur- og Fritids Award 2027 – Indstillingsproces og prisbetegnelser",
    "afsnit": [
     {
@@ -4085,6 +4126,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kultur- og Fritids Award er Haderslev Kommunes, ved Kultur- og Fritidsudvalget, årlige\nanerkendelse af de mange frivillige, foreninger og kulturaktører, som yder en særlig indsats for\nkultur- og fritidslivet i kommunen.\nErfaringerne fra de seneste år viser, at den offentlige indstillingsproces har resulteret i et\nbegrænset antal indstillinger til priserne.\nFor at forenkle processen og styrke forummernes rolle foreslås det, at indstillinger til Kultur- og\nFritids Award 2027 fremadrettet sker direkte til de relevante forummer. Foreninger, institutioner\nog øvrige aktører kan indsende forslag via mail til det relevante forum, og forummerne får\nsamtidig selv mulighed for selv at indstille kandidater til priserne. Dog vil der fortsat være\noffentlig indstillingsproces for mesterskabsvindere og foreningsjubilarer.\nForummerne skal behandle indkomne forslag og udvælge kandidater inden for deres\nrespektive prisområder.\nDe nuværende priser og navne er følgende:\n\nFritidsforum – Fritidssamvirkets Pris\nIdrætsforum – Årets Idrætsforening\nKulturforum – Kulturprisen\n\nFællesforum – Årets Unglederpris\nDa samvirkerne er erstattet af forummer, ønskes der en drøftelse af, om prisbetegnelserne\nsamt dens kriterier fortsat er tidssvarende. Forummerne opfordres derfor til at drøfte, om de\neksisterende prisnavne samt prisens kriterier skal fastholdes eller ændres.\nHerudover skal forummerne fortsat indstille kandidater til Kultur og Fritidsudvalgets pris \"Årets\nSkulderklap\".\nForummerne vil ligeledes modtage indstillinger til Årets Foreningsleder. Forummernes opgave\ner at kvalificere, bidrage med indstillinger samt prioritere de indkomne kandidater og fremsende\nderes anbefaling til Kultur- og Fritidsudvalget, som træffer den endelige beslutning om\nmodtageren af prisen.\nDen ændrede proces forventes at:\nreducere den administrative opgave forbundet med awardprocessen,\nskabe et større ejerskab hos forummerne,\nsikre en mere faglig vurdering af de indstillede kandidater,\nsamt understøtte, at relevante kandidater bringes i spil til de enkelte priser.\n\nBilag 1 - Kriterier for priser ved Kultur og Fritids Award opdateret oktober 2026\n\nØkonomiske forhold\nHvert forum afholder selv udgiften til egen pris på 5.000 kr. fra forummets udviklingsmidler.\n\nProcedure\nFritidsforum den 27. oktober 2026\nIdrætsforum¨den 9. november 2026\nFællesforum den 12. november 2026\nKulturforum den 17. november 2026"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Prisens navn skal være ”Fritidsforummets Pris”. Man vil gerne fortsætte med den gamle\nmodel for indstillinger, via Conventus og med som dagsordenspunkt til et forumsmøde."
     }
    ],
    "bilag": []
@@ -4094,10 +4139,10 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.023Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Arrangementer for foreningslivet om demens",
    "afsnit": [
     {
@@ -4107,6 +4152,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "I det forrige budgetforlig blev der afsat midler til afholdelse af dialogmøder, der skulle afsøge,\nhvilke pilotprojekter der skulle afprøves for at gøre Haderslev Kommune demensvenligt.\nDen 3. september 2026 traf Senior- og Sundhedsudvalget en beslutning om, at der skulle\nsættes fokus på at få viden om demens ud i foreningslivet.\nMålgruppen for arrangementerne er idrætsforeninger, sociale foreninger, frivillige og fanklubber\ni Haderslev Kommune.\nFokus er, hvordan man kan være med til at støtte mennesker med demens, så de kan bevare\nen tilknytning til fællesskaber, foreningslivet og idrætsaktiviteter længst muligt.\nFormålet er at give inspiration og redskaber til at skabe mere demensvenlige fællesskaber,\nhvor mennesker med demens fortsat kan være aktive deltagere.\nTidspunkter:\nDen 9. november 2026 kl. 19 - 20:30 kommer Bente Klarlund Pedersen til Haderslev\nDen 16. november 2026 kl. 19 – 20:30 kommer Jacob Birkler til Gram\nDen 2. december 2026 kl. 19 – 20:30 kommer Peter Qvortrup Geisling til Vojens\nDen endelige lokation er ved at blive afklaret, og bliver meldt ud snarest.\nI er meget velkomne til at sprede budskabet til frivillige, foreningslivet og fanklubber.\n\nProcedure\nFritidsforum den 27. oktober 2026"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering om demensarrangementerne og opfordring til at deltage."
     }
    ],
    "bilag": []
@@ -4116,10 +4165,10 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.023Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Orienteringspunkt Fritidsforum oktober 2026",
    "afsnit": [
     {
@@ -4129,6 +4178,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Orientering fra formand, medlemmer og forvaltning.\n\nFælles inspirationsaften for Kultur- og Fritidsudvalget og Forummer"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Rigtig god fælles inspirationsaften med Kultur og Fritids Udvalget og de andre forummer.\nDrøftede hvordan der kunne komme flere foreninger med til foreningsdagen næste år.\nDer arbejdes stadig på at det skal være sidste fredag i august 2027. Fritidsforum er\ninitiativtagere i forhold til Idrætsforum og Kulturforum.\nDer blev nævnt at Forår på Havnen afvikles d.22/5 2027."
     }
    ],
    "bilag": []
@@ -4138,12 +4191,17 @@
    "kommune": "Haderslev",
    "udvalg": "Fritidsforum",
    "dato": "2026-10-27",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=f7d2ee3d-6d76-4ecb-ab1a-878e86f3aae6",
-   "hentet": "2026-10-23T18:48:23.023Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=7ade8c7f-248b-4262-a74a-9ed1ee62a8c8",
+   "hentet": "2026-11-06T12:52:27.979Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet til punktet."
+    }
+   ],
    "bilag": []
   },
   "haderslev-2026-09-08-fritidsforum-1": {
@@ -22075,68 +22133,402 @@
     }
    ],
    "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-1": {
+   "id": "haderslev-2026-11-16-handicapraadet-1",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Formandskabet Handicaprådet indstiller, at:\nHandicaprådet godkender dagsorden af den 16. november 2026."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Godkendelse af dagsorden.\n\nProcedure\nHandicaprådet 16. november 2026."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-2": {
+   "id": "haderslev-2026-11-16-handicapraadet-2",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Velfærdsteknologi på handicapområdet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Formandskabet Handicaprådet indstiller, at:\nHandicaprådet tager orienteringen til efterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Velfærdsteknologiske løsninger er i stigende grad en integreret del af indsatsen på\nhandicapområdet. Teknologi kan bidrage til øget selvstændighed og livskvalitet for borgere\nmed funktionsnedsættelser samt understøtte deltagelse i hverdags-, fritids- og arbejdslivet.\nHandicaprådet orienteres om, hvordan medicinteknologiske løsninger anvendes i praksis i\nHaderslev Kommune. Orienteringen omfatter blandt andet de målgrupper, der kan have gavn\naf løsningerne, samt de erfaringer, der er gjort med implementering og anvendelse.\nDerudover belyses de muligheder, udfordringer og etiske dilemmaer, der kan være forbundet\nmed brugen af teknologierne.\nI forbindelse med orienteringen vil der være mulighed for demonstration af udvalgte\nmedicinteknologiske løsninger.\nOrienteringen giver mulighed for spørgsmål og dialog om erfaringer, udfordringer og\nudviklingsperspektiver på området.\n\nProcedure\nHandicaprådet 16. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-3": {
+   "id": "haderslev-2026-11-16-handicapraadet-3",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Danmarkskort over Ankestyrelsens ankestatistik 2025",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed og Direktøren for Børn og Kultur indstiller, at Social- og\nHandicapudvalget og Børne- og Familieudvalget overfor Haderslev Kommunalbestyrelse\nanbefaler at:\nDanmarkskortene drøftes\n\nFormandskabet Handicaprådet indstiller, at:\nHandicaprådet tager orienteringen til efterretning\n\nFormandskabet Handicaprådet indstiller, at:\nHandicaprådet tager orienteringen til efterretning\n\nProcedure\nHandicaprådet 16. november 2026"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Haderslev Kommune skal træffe afgørelse, hver gang en borger visiteres til hjælp og støtte.\nAfgørelsen er baseret på en konkret og individuel vurdering af borgerens behov for hjælp.\nAfgørelsen handler om indholdet og omfanget af den støtte, som borgeren visiteres til.\nAfgørelsen skal sammen med en klagevejledning sendes til borgeren eller dennes værge.\nBorgeren kan klage til kommunen over afgørelsen, og hvis kommunen holder fast i sin\nafgørelse, skal borgerens klage videresendes til Ankestyrelsens behandling.\nAnkestyrelsen kan i sin behandling af klager foretage sig følgende:\n\nStadfæstelse: betyder, at Ankestyrelsen er enig i kommunens afgørelse.\nHjemvisning: betyder, at Ankestyrelsen sender sagen tilbage til kommunen, der er første\ninstans. Kommunen skal behandle sagen og afgøre den igen.\nÆndring/ophævelse: betyder, at Ankestyrelsen har ophævet kommunens afgørelse.\nAfvisning/henvisning: betyder, at Ankestyrelsen ikke behandler sagen. Det kan for\neksempel være, at borgeren har klaget for sent eller beslutter at opgive klagen.\n\nDanmarkskort over Ankestyrelsens ankestatistik\nAnkestyrelsen udarbejder ankestatistik over sine afgørelser på klagesager. Hvert år i juni\noffentliggør Socialministeriet tre Danmarkskort over ankestatistikken fra året før; et for\nbørnehandicap, et for voksenhandicap og et for hele socialområdet (bilag 1)\nDet enkelte danmarkskort viser antallet af klagesager og omgørelsesprocenten i den enkelte\nkommune. Omgørelsesprocenten viser andelen af klagesager i Ankestyrelsen, som ændres,\nophæves eller hjemvises.\nI tabellen nedenunder vises resultaterne for Haderslev Kommune og alle kommuner i 2025.\nDesuden vises en sammenligning med tallene for 2024.\nHaderslev Kommune\n\nDanmark\n\nAntal afgørelser af\nAnkestyrelsen\n\nAnkestyrelsens\nomgørelsesprocenter\n\nAnkestyrelsens\nomgørelsesprocenter\n\nBørnehandicap\n\nVoksenhandicap\n\nSocialområdet (alle 239\nafgørelser)\n\nPå børnehandicap traf Haderslev Kommune i alt 374 afgørelser i 2025. 23 af afgørelserne blev\npåklaget til Ankestyrelsen. Ud af de 23 afgørelser ændrede eller ophævede Ankestyrelsen 4\nafgørelser og 8 afgørelser blev hjemvist til fornyet behandling i Haderslev kommune. Det giver\nen omgørelsesprocent på 52 %. De øvrige afgørelser stadfæstede Ankestyrelsen.\nPå voksenhandicap traf Haderslev Kommune i alt 180 afgørelser i 2025. 13 af afgørelserne\nblev påklaget til Ankestyrelsen. Ingen af disse afgørelser blev ændret eller ophævet, men 3\nafgørelser blev hjemvist til fornyet behandling i Haderslev kommune. Det giver en\nomgørelsesprocent på 23 %. De øvrige afgørelser stadfæstede Ankestyrelsen.\nFor hele socialområdet estimeres det, at Haderslev Kommune traf 9394 afgørelser i 2025. 239\naf disse afgørelser blev påklaget til Ankestyrelsen. 19 af de 293 afgørelser ændrende eller\nophævede Ankestyrelsen, og 102 af afgørelserne hjemsendte Ankestyrelsens til fornyet\nbehandling i Haderslev Kommune. Det giver en omgørelsesprocent på 41 %. De øvrige\nafgørelser stadfæstede Ankestyrelsen.\n\nProcedure\nSocial- og Handicapudvalget den 7. september 2026\nBørne- og Familieudvalget den 14. september 2026\n\nHaderslev Kommunalbestyrelse den 29. september 2026\nHaderslev Udsatteråd den 20. oktober 2026 (orientering)\nHandicaprådet den 26. oktober 2026 (orientering)"
+    },
+    {
+     "titel": "Behandling i Social- og Handicapudvalget 7. september 2026",
+     "tekst": "Godkendt."
+    },
+    {
+     "titel": "Behandling i Børne- og Familieudvalget 14. september 2026",
+     "tekst": "Udvalget besluttede, at forvaltningen udarbejder et ministerbrev om udfordringer ved\nlovgivningens kompleksitet, arbejdsgange og sagsbehandlingstider i Ankestyrelsen."
+    },
+    {
+     "titel": "Behandling i Haderslev Kommunalbestyrelse 29. september 2026",
+     "tekst": "Drøftet."
+    },
+    {
+     "titel": "Behandling i Haderslev Udsatteråd 20. oktober 2026",
+     "tekst": "Behandlingen af punktet videreføres til møde i Haderslev Udsatteråd den 17. november\n\nSagsresume\nMed afsæt i ovenstående orienteres Handicaprådet om Danmarkskortet."
+    },
+    {
+     "titel": "Behandling i Handicaprådet 26. oktober 2026",
+     "tekst": "Punktet videreføres til møde i Handicaprådet 16. november 2026.\n\nSagsresume\nMed afsæt i ovenstående sagsfremstilling orienteres Handicaprådet om Danmarkskortet.\nOrienteringen gives ved Ellen Enné, afdelingsleder i Myndighed for Handicap og Socialpsykiatri\nsamt af Louise Clausen, faglig leder af Familierådgivningen og Sine Terp, Børne- og\nUngerådgiver, Familierådgivningen."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-4": {
+   "id": "haderslev-2026-11-16-handicapraadet-4",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Årsberetning 2026 - Handicaprådet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Formandskabet Handicaprådet indstiller, at:\nHandicaprådet drøfter udkast til årsberetningen for 2026\nHandicaprådet kommer med evt. nye input til brug for den endelige udgave af\nårsberetningen 2026"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I henhold til vedtægt for Handicaprådet, § 5 \"Handicaprådets opgaver og kompetencer\", skal\nHandicaprådet udarbejde en årsberetning om sit arbejde i det forgangne år.\nMed afsæt i de input, der fremkom på Handicaprådets møde den 21. september 2026, samt\nyderligere forslag tilsendt formanden efterfølgende, er der udarbejdet et foreløbigt udkast til\nHandicaprådets årsberetning for 2026.\nHandicaprådet gives mulighed for at drøfte udkastets indhold og komme med bemærkninger,\nforslag til ændringer samt eventuelle supplerende emner, der ønskes indarbejdet i\nårsberetningen.\nBemærkninger og input, der fremkommer på mødet, indarbejdes i et revideret udkast, som\nforelægges til endelig godkendelse på Handicaprådets møde den 14. december 2026.\nÅrsberetning fremlægges til orientering i Social- og Handicapudvalget samt Haderslev\nKommunalbestyrelse primo 2027.\n\nProcedure\nHandicaprådet 16. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-5": {
+   "id": "haderslev-2026-11-16-handicapraadet-5",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Digital inklusion",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Formandskabet Handicaprådet indstiller at:\nHandicaprådet drøfter og bidrager med input til den videre indsats for styrket digital\ninklusion i Haderslev Kommune"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Borgerservice arbejder aktuelt med en indsats, der skal styrke den digitale inklusion i\nHaderslev Kommune. Formålet er at opnå en bedre forståelse af de udfordringer, borgere\noplever i mødet med digitale løsninger, samt afdække hvordan kommunen bedst kan\nunderstøtte borgere, der har behov for hjælp til digitale selvbetjeningsløsninger.\nI den forbindelse ønsker Borgerservice input til følgende:\nHvilke digitale udfordringer oplever de borgere, I repræsenterer?\nEr der særlige digitale løsninger, som giver anledning til udfordringer?\nHvor søger borgerne hjælp og vejledning i dag?\nOplever I, at der er borgere, som ikke får den nødvendige hjælp og støtte?\nHvilke tilbud, initiativer eller indsatser vurderer I, kan gøre en positiv forskel?\nEksisterende tilbud\n\nHaderslev Kommune tilbyder allerede hjælp og vejledning inden for blandt andet:\nMit ID\nDigital Post\nDigitale fuldmagter\nDigitale selvbetjeningsløsninger\nDigitale ansøgninger og vejledning til offentlige løsninger\n\nDer ønskes samtidig forslag til, hvordan de eksisterende tilbud kan gøres mere synlige,\ntilgængelige og relevante for borgere med behov for støtte.\n\nProcedure\nHandicaprådet 16. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-6": {
+   "id": "haderslev-2026-11-16-handicapraadet-6",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Budgetopfølgning for Handicaprådet - tredje kvartal 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Formandskabet Handicaprådet indstiller, at:\nHandicaprådet tager orienteringen til efterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Budgetopfølgning for Handicaprådet – tredje kvartal 2026:\nBeløb i kr.\n\nBudget 2026\n\nBudgetopfølgning\n30. september 2026\n\nHandicaprådet\n\nMødediæter/kørsel\n\nForplejning\n\nMobilt bredbånd+ licens\n\nHandicapprisen\n\nKonference\n\nRepræsentation\n\nAbonnement\nØvrige aktiviteter\nIndkøb af device\nForbrugsprocent: 59%\nRestbeløb: 35.416 kroner\n\nProcedure\nHandicaprådet 16. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-7": {
+   "id": "haderslev-2026-11-16-handicapraadet-7",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Sidste nyt fra Handicaprådets medlemmer",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Formandskabet Handicaprådet indstiller, at:\nHandicaprådet orienterer hinanden gensidigt"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Handicaprådet orienterer gensidigt hinanden om aktuelle forhold set ud fra et hverdags- og\nbrugerperspektiv.\nDenne gensidige orientering skal skabe et fælles overblik over relevante tendenser og behov\npå handicapområdet og dermed evt. danne grundlag for kommende temaer, drøftelser og\norienteringspunkter for rådets arbejde\nGenoptaget orientering fra mødet den 26. oktober:\nNy stedfortræder forvaltningsrepræsentant – godkendt af Haderslev Kommunalbestyrelse\nden 29. september 2026\n\nFormanden orienterer:\nDen 18. november 2026 klokken 17:00 – 20:00: Orientering om deltagelse i workshop for\nCykelhandlingsplan 2027: 1 deltager\nDen 18. november 2026 klokken 09:00 – 16:00: 4 repræsentanter fra udpegede\nmedlemmer fra DH i Handicaprådet deltager i KL-Social 2026\nHandicapparkering.info - en frivillig netværksgruppe under Dansk Handicap Forbund\n(bilag 1 og 2)\n\nOrientering fra møde i Elbo – Kostråd:\nNy leder ansat\nVedrørende måltidstilbuddet: Menuen er udvidet med flere nye vegetarretter. Som følge\naf de høje råvarepriser er fisk udgået af menuen.\n\nProcedure\nHandicaprådet 16. november 2026."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-8": {
+   "id": "haderslev-2026-11-16-handicapraadet-8",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Kommende møder - herunder årshjul",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Formandskabet Handicaprådet indstiller, at:\nHandicaprådet bidrager med input til kommende mødepunkter."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Handicaprådet bidrager med input til kommende møder.\n\nProcedure\nHandicaprådet 16. november 2026."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-9": {
+   "id": "haderslev-2026-11-16-handicapraadet-9",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Kvalitetsstandarder 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed indstiller, at\nSocial- og Handicapudvalget godkender, at kvalitetsstandarderne sendes i høring\n\nFormanden Handicaprådet indstiller, at:\nHandicaprådets handicaprepræsentanter udarbejder høringssvar til\nkvalitetsstandarder på Social- og Handicapudvalgets område\n\nProcedure\nHandicaprådet 26. oktober 2026\n\nFormandskabet Handicaprådet indstiller, at\nHandicaprådets handicaprepræsentanter godkender kvalitetsstandarder på Socialog Handicapudvalgets område.\n\nProcedure\nHandicaprådet 16. november 2026"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det er målet, at borgerne mødes med respekt, nysgerrighed og empati i den service, der\nleveres af medarbejderne i Social og Sundhed. Den hjælp og støtte Social og Sundhed leverer,\nskal tage udgangspunkt i det, der er mest værdifuldt for den enkelte borger og leveres inden\nfor gældende lovgivning og de økonomiske rammer, der er.\nLangt de fleste mennesker ønsker at bestemme over deres eget liv og leve uafhængigt af\nkommunal hjælp. Det kan dog ikke altid lade sig gøre. Kvalitetsstandarderne beskriver, hvilken\nhjælp, der leveres, når borgerne har vanskeligt ved at klare hverdagens opgaver selv og derfor\nsøger kommunen om hjælp.\nMålet med kvalitetsstanderne er at skabe grundlag for en forventningsafstemning mellem\nborgerne og kommunen omkring behov, ønsker og serviceniveau.\nDet daværende Social- og Handicapudvalg godkendte i 2025 følgende kvalitetsstandarder\ngældende fra 1. januar 2026:\n1. Aflastning udenfor hjemmet\n2. Socialpædagogisk støtte\n4. Borgerstyret personlig assistance\n5. Ledsagelse\n6. Kontaktpersonsordning\n8. Tilbud af behandlingsmæssig karakter\n9. Beskyttet beskæftigelse\n10. Aktivitets- og samværstilbud\n11. Midlertidigt botilbud\n12. Længerevarende botilbud\n\n13. Behandling af misbrug (skal godkendes hvert 2. år (lovbestemt) er godkendt i 2025)\n14. Handicapkørsel\n15. Befordring med individuelle transportmidler\nAlle kvalitetsstandarder, undtagen nr. 13, er vedhæftet som bilag og skal sendes med i\nhøringen i rådene. Der er anbefalet ændringer i kvalitetsstandarderne 1, 2, 4, 11, 12 og 15.\nUdover dette er der sket mindre sproglige justeringer i de øvrige kvalitetsstandarder.\nStørre ændringer, ny tekst og andre tilføjelser er markeret med gult i bilagene.\nTekst, der skal slettes, er markeret med blåt i bilagene. Mindre sproglige justeringer og beløb,\nder er tilpasset/fremskrevet til 2026-niveau, er ikke markeret.\nForvaltningen har udarbejdet et notat med oversigt over ændringerne. Notatet er vedlagt som\nbilag.\nUdover de nævnte kvalitetsstandarder foreslår forvaltningen følgende fire nye\nkvalitetstandarder, som også skal gælde fra 2027:\n3. Socialpædagogisk støtte for personer i hjemløshed eller i risiko for hjemløshed\n(servicelovens § 85a)\n7. Kompensationsydelse (servicelovens § 100)\n16. Krisecenter (servicelovens § 109)\n17. Forsorgshjem (servicelovens § 110)\nKvalitetsstandard 3 Socialpædagogisk støtte for personer i hjemløshed eller i risiko for\nhjemløshed er udarbejdet med baggrund i, at lovgivningen blev ændret 1. oktober 2023. Der er\nnu skabt en tilpas erfaring med visitering efter § 85a til, at forvaltningen har kunne beskrive\nmålgruppe, visitationskriterier og forventninger til omfanget af støtten.\nKvalitetsstandard 7 Kompensationsydelse har tidligere heddet 7 Merudgiftsydelse. Der sket en\nvæsentlig lovgivningsmæssig ændring fra 1. september 2025 omkring servicelovens § 100.\nDer er nu udarbejdet en vejledning fra lovgiver, hvorfor det er muligt at lave en\nkvalitetsstandard for området gældende fra 2027.\nKvalitetsstandard 16 Krisecenter er udarbejdet, da området pr. 1. januar 2026 er overgået til\nSocial- og Handicapudvalgets område. Kvalitetsstandarden har primært til formål at have en\nsynlig forventningsafstemning i samarbejdet med myndigheds, krisecenter og borgere.\nKvalitetsstandard 17 Forsorgshjem er udarbejdet med det formål at have en synlig\nforventningsafstemning i samarbejdet med borgere og forsorgshjem på baggrund af\nlovgivningsændringen den 1. oktober 2023, hvor der er sat fokus på at arbejde aktivt hen mod,\nat borgeren kommer i eget hjem med støtte (housing first).\nDe fire nye kvalitetsstandarder er også vedlagt som bilag.\n\nProcedure\n\nSocial- og Handicapudvalget den 28. september 2026\nHaderslev Udsatteråd 20. oktober 2026 (høring)\nHandicaprådet 26. oktober 2026 (høring)"
+    },
+    {
+     "titel": "Behandling i Social- og Handicapudvalget 28. september 2026",
+     "tekst": "Sendes i høring, dog med undtagelse af kvalitetsstandard 11 – Midlertidigt botilbud &\nkvalitetsstandard 12 – Længerevarende botilbud, som først behandles når der foreligger\nen kvalitetsstandard for Madservice.\nForvaltningen tilpasser bilag 1 – Notat kvalitetsstandarder” til at afspejle dette samt\nudvalgets andre kommentarer.\n\nSagsresume\nMed afsæt i ovenstående sagsfremstilling og beslutning i Social- og Handicapudvalget den 28.\nseptember 2026 sendes kvalitetsstandarder på udvalgets område i høring i Handicaprådet.\nKvalitetsstandard 11 vedrørende ”Midlertidigt botilbud” og kvalitetsstandard 12 vedrørende\n”Længerevarende botilbud”, skal først behandles, når der foreligger en kvalitetsstandard for\nMadservice.\nRedigeret notat med baggrund i drøftelse i Social- og Handicapudvalget den 28. september\n2026 er vedlagt som bilag 18.\nHøringssvarene på kvalitetsstandarderne skal være forvaltningen i hænde senest den 18.\nnovember 2026."
+    },
+    {
+     "titel": "Behandling i Handicaprådet 26. oktober 2026",
+     "tekst": "Handicaprådets handicaprepræsentanter beslutter procedure for proces vedrørende\nudarbejdelse af høringssvar til kvalitetsstandarder.\nGodkendelse af høringssvar på mødet i Handicaprådet den 16. november 2026.\n\nSagsresume\nHandicaprådet godkender høringssvar til kvalitetsstandarder på Social- og Handicapudvalgets\nområde."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-10": {
+   "id": "haderslev-2026-11-16-handicapraadet-10",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Puljer på udvalgets område",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed indstiller, at\nSenior- og Sundhedsudvalget godkender, at puljen efter § 79 i Servicelovens\nnedlukkes og erstattes af en pulje efter § 7 i Ældreloven\nSenior- og Sundhedsudvalget træffer beslutning om ny model for udmøntning af\nmidler efter § 7 i Ældreloven og § 18 i Serviceloven\n\nFormanden Handicaprådet indstiller, at:\n\nHandicaprådets handicaprepræsentanter udarbejder høringssvar til model for\nudmøntning af midlerne for §7 og §18 fra 2027.\n\nProcedure\nHandicaprådet 26. oktober 2026\n\nFormanden Handicaprådet indstiller, at:\nHandicaprådets handicaprepræsentanter godkender høringssvar til model for\nudmøntning af midlerne for §7 og §18\n\nProcedure\nHandicaprådet 16. november 2027"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Senior- og Sundhedsudvalget drøftede på mødet den 13. august 2026 (punkt 96) modeller og\nkriterier for puljerne på udvalgets område. Udvalget gav på det møde udtryk for at §79 puljen\nefter serviceloven, fremover skulle ændres til en pulje efter Ældrelovens §7 Samtidig ønskede\nudvalget at ensrette uddelingsrunderne for midler efter henholdsvis § 18 i serviceloven og § 7 i\nÆldreloven.\nServicelovens § 18 – Kommunalbestyrelsen skal samarbejde med frivillige sociale\norganisationer og foreninger\nKommunalbestyrelsen kan iværksætte eller give tilskud til generelle tilbud med aktiverende og\nforebyggende sigte. Kommunalbestyrelsen skal fastsætte retningslinjer for, hvilke\npersongrupper, der kan benytte tilbuddene.\nServicelovens § 79 - Kommunalbestyrelsen kan iværksætte eller give tilskud til generelle tilbud\nmed aktiverende og forebyggende sigte\nServicelovens § 79 giver kommunen mulighed for at yde generelle tilbud med aktiverende og\nforebyggende sigte. Der kan f.eks. være tale om klubaktiviteter, foredrag eller gymnastik. Disse\ntilbud er fortrinsvis kommunale ydelser, som skal være åbne for alle inden for den målgruppe,\nkommunen definerer og kan udføres af andre, f.eks. frivillige organisationer og foreninger.\nÆldrelovens § 7 Kommunalbestyrelsen skal samarbejde med frivillige sociale organisationer\nog foreninger på ældreområde\nMed ældrelovens ikrafttræden den 1. juli 2025 er kommunens samarbejde med og støtte til\n\nfrivillige organisationer og foreninger på ældreområdet reguleret i ældrelovens § 7. Det betyder,\nat kommunalbestyrelsen er forpligtet til at samarbejde med de frivillige organisationer og\nforeninger på ældreområdet\nI Haderslev Kommune har puljen efter Servicelovens § 79 været øremærket til aktiviteter for\nældre, 60+. På baggrund af ovenstående, anbefales det, at ”kan” puljen efter Servicelovens §\n79 nedlukkes og der i stedet oprettes en pulje efter Ældrelovens § 7, for seniorer 60+ i\nHaderslev Kommune.\nModeller for organiseringen bag puljerne fra 2027:\nModel 1) Frivillighedsforum\nDer oprettes et nyt ”Frivillighedsforum” som består af op til syv valgte medlemmer. De mødes\nén gang årligt, hvor de gennemgår ansøgninger til § 18 puljen og § 7 puljen, og anbefaler\nfordelingen til Senior- og Sundhedsudvalget, som træffer den endelige beslutning.\nSekretariatet i Social og Sundhed betjener frivillighedsforummet.\nDet anbefales, at sammensætning er:\n3 medlemmer fra FrivilligCenter Haderslevs bestyrelse\n1 medlem som repræsentant for frivillige foreninger på kultur- og fritidsområdet\n1 medlem af Seniorrådet\n1 medlem af Handicaprådet\n1 medlem af Haderslev Udsatteråd\n\nDen anbefalede arbejdsgang ved den årlige uddelingsrunde, er:\nSekretariatet kommunikerer om puljerne, modtager ansøgningerne gennem det\nkommunale ansøgningssystem samt tilrettelægger mødet\nFrivillighedsforummet vurderer ansøgningerne ud fra de politisk godkendte kriterier og\nudarbejder en anbefaling for hver pulje\nSenior- og Sundhedsudvalget træffer den endelige afgørelse om bevilling eller afslag\n\nEt fælles forum giver én indgang til puljerne og kan understøtte en ensartet vurdering, en\ntydelig målgruppeafgrænsning og forebyggelse af, at af begge puljer søges til samme aktivitet.\nSammensætningen skal sikre viden om både det frivillige sociale område og seniorområdet.\nHjælp og spørgsmål fra foreninger og frivillige vedrørende puljerne og ansøgningen, rettes til\nFrivilligCenter Haderslev, som understøtter dette.\nFrivillighedsforummet får alene en rådgivende rolle i forhold til uddeling af puljemidler. Den\nendelige afgørelseskompetence forbliver hos Senior- og Sundhedsudvalget.\n\nModel 2) Forvaltningen vurderer om ansøgninger er indenfor kriterierne\nSocial og Sundhedsforvaltningen står for processen frem mod Senior- og Sundhedsudvalget\nbehandling af ansøgningerne for begge puljer. Det vil sige at forvaltningen;\nKommunikerer om puljerne og modtager ansøgningerne gennem det kommunale\nansøgningssystem\nVurderer hvorvidt ansøgninger opfylder de politisk godkendte kriterier\nFremsender et notat til Senior- og Sundhedsudvalget med tydelig markering af, hvilke\nansøgninger der møder kriterier, så udvalget kan træffe beslutning om tildeling af midler\n\nHjælp og spørgsmål fra foreninger og frivillige vedrørende puljerne og ansøgningen, rettes til\nFrivilligCenter Haderslev, som understøtter dette.\n\nProcedure\nSenior- og Sundhedsudvalget den 7. oktober 2026"
+    },
+    {
+     "titel": "Behandling i Senior- og Sundhedsudvalget 7. oktober 2026",
+     "tekst": "Udvalget godkender, at puljen efter § 79 i Servicelovens nedlukkes og erstattes af en\npulje efter § 7 i Ældreloven.\nModel for udmøntning af midlerne sendes i høring i Seniorrådet, Handicaprådet og\nUdsatterådet inden udvalget træffer beslutning om det.\nFraværende:\nJulie Juhler Østergaard\nThies Mathiasen"
+    },
+    {
+     "titel": "Behandling i Haderslev Udsatteråd 20. oktober 2026",
+     "tekst": "Behandlingen af punktet videreføres til møde i Haderslev Udsatteråd den 17. november\n\nSagsresume\nMed afsæt i ovenstående sagsfremstilling og beslutning i Senior- og Sundhedsudvalget den 7.\noktober 2026 udarbejder Handicaprådets handicaprepræsentanter høringssvar til model for\nudmøntning af midlerne for §7 og §18 fra 2027.\nHøringssvar skal være forvaltningen i hænde den 23. november 2026."
+    },
+    {
+     "titel": "Behandling i Handicaprådet 26. oktober 2026",
+     "tekst": "Handicaprådets handicaprepræsentanter beslutter procedure for proces vedrørende\nudarbejdelse af høringssvar til model for udmøntning af midlerne for §7 og §18 2027.\nGodkendelse af høringssvar på mødet i Handicaprådet den 16. november 2026.\n\nSagsresume\nHandicaprådets handicaprepræsentanter godkender høringssvar til model for udmøntning af\nmidlerne for §7 og §18 fra 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-11": {
+   "id": "haderslev-2026-11-16-handicapraadet-11",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Kriterier for puljerne på udvalgets område",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social- og Sundhed indstiller, at\nSenior- og Sundhedsudvalget sender kriterierne i høring\n\nFormanden for Handicaprådet indstiller, at:\nHandicaprådet udarbejder høringssvar til de vedhæftede puljekriterier for §7 og §18\nsamt drøfter og besvarer de spørgsmål, som udvalget har stillet i forbindelse med\nsagens behandling\n\nProcedure\nHandicaprådet 26. oktober 2026\n\nFormandskabet Handicaprådet indstiller, at:\nHandicaprådets handicaprepræsentanter godkender høringssvar til de vedhæftede\nforslag til puljekriterier for §7 og §18 samt til spørgsmål, som udvalget har stillet i\nforbindelse med sagens behandling\n\nProcedure\nHandicaprådet 16. november 2026"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det daværende Senior- og Sundhedsudvalg godkendte den 1. juni 2023 kriterier og rammer for\npuljerne på udvalgets området (punkt 79). De godkendte kriterier er dermed for henholdsvis en\npulje efter Servicelovens § 18 samt Servicelovens § 79.\nSåfremt det, i sag 123 på Senior- og Sundhedsudvalgets dagsorden, godkendes at udvalget\nfremover skal have en pulje for Servicelovens § 18 og Ældrelovens § 7 skal udvalget i denne\nsag tage stilling til kriterierne for puljerne fra 2027 og frem.\nDe nuværende 2026 Kriterier for Servicelovens § 18 pulje og den nuværende Servicelovens §\n79 pulje, er vedhæftet som bilag 1 og 2. Ambitionen for puljerne i 2027 er at forskellene\ntydeliggøres og puljerne fastlægges efter den respektive lovgivning. Jf. sag 123 derudover\nogså at § 79 puljen nedlukkes og der i stedet oprettes en pulje efter Ældrelovens § 7. Udkast til\nkriterier for disse er vedhæftet som bilag 3 og 4.\nForvaltningen har udarbejdet anbefaling til de nye kriterier med inspiration fra puljekriterierne i\nomkringliggende kommuner og med tilpasning til organiseringen i Haderslev Kommune samt\nerfaringer fra, hvordan puljerne anvendes og benyttes lokalt i dag.\nDe nye kriterier indebærer følgende hovedændringer:\nDer fastsættes én årlig ansøgningsrunde for hver pulje. Puljerne åbner som\nudgangspunkt den 1. april med ansøgningsfrist den 1. maj, politisk behandling i juni og\ntilskudsperiode fra den 1. juli.\n§ 7 puljen målrettes 60+ seniorer, samt pårørende, når aktiviteten har et tydeligt formål\nfor seniorerne.\n§ 18 puljen målrettes børn, unge og voksne, med et tydeligt socialt sigte.\n\nBegge puljer får et tydeligt sundhedsfremmende og forebyggende sigte med prioritering af\nåbne fællesskaber, forebyggelse af ensomhed og brede deltagelsesmuligheder.\nDen samme aktivitet og de samme udgifter kan ikke støttes af begge puljer. En organisation\nkan alene søge begge puljer, når aktiviteter, målgrupper og budgetter er klart adskilt.\nKriterierne beskriver tydeligere, hvem der kan søge, hvilke udgifter der kan støttes, hvordan\nansøgningerne prioriteres, og hvilke krav der gælder til afrapportering og tilbagebetaling.\nAfgrænsningen skal gøre det lettere for foreninger og frivillige grupper at vælge den rigtige\npulje og samtidig mindske risikoen for overlap. Hvis en ansøgning er indsendt til den forkerte\npulje, kan ansøgningen efter dialog med ansøgeren flytte den til den korrekte pulje inden den\npolitiske behandling.\nPå baggrund af rådenes høringssvar, præsenteres sagen til endelig beslutning i Senior- og\nSundhedsudvalget.\n\nProcedure\nSenior- og Sundhedsudvalget den 7. oktober 2026\nHaderslev Udsatteråd den 20. oktober 2026 (høring)\nHandicaprådet den 26. oktober 2026 (høring)\nSeniorrådet den 26. oktober 2026 (høring)"
+    },
+    {
+     "titel": "Behandling i Senior- og Sundhedsudvalget 7. oktober 2026",
+     "tekst": "Kriterierne sendes i høring. Udvalget drøftede at det kan specificeres, hvor mange\naktiviteter en forening kan søge til pr. ansøgningsrunde samt muligheden for at have\nårlige temaer for puljerne, som der ønskes rådenes input til.\nFraværende:\nJulie Juhler Østergaard\nThies Mathiasen"
+    },
+    {
+     "titel": "Behandling i Haderslev Udsatteråd 20. oktober 2026",
+     "tekst": "Behandlingen af punktet videreføres til møde i Haderslev Udsatteråd den 17. november\n\nSagsresume\nMed afsæt i ovenstående sagsfremstilling og Senior- og Sundhedsudvalgets beslutning den 7.\noktober 2026 - bedes Handicaprådets handicaprepræsentanter udarbejde høringssvar til de\nvedhæftede forslag til puljekriterier samt drøfte og besvare de spørgsmål, som udvalget har\nstillet i forbindelse med sagens behandling.\n\nProcedure\nHandicaprådet 26. oktober 2026"
+    },
+    {
+     "titel": "Behandling i Handicaprådet 26. oktober 2026",
+     "tekst": "Handicaprådets handicaprepræsentanter beslutter procedure for proces vedrørende\nudarbejdelse af høringssvar til de vedhæftede puljekriterier samt drøfter og besvarer de\nspørgsmål, som udvalget har stillet i forbindelse med sagens behandling.\nGodkendelse af høringssvar på mødet i Handicaprådet den 16. november 2026.\n\nSagsresume\nHandicaprådet godkender høringssvar for kriterier til puljerne §7 og §18."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-12": {
+   "id": "haderslev-2026-11-16-handicapraadet-12",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Eventuelt.\n\nProcedure\nHandicaprådet 16. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-16-handicapraadet-13": {
+   "id": "haderslev-2026-11-16-handicapraadet-13",
+   "kommune": "Haderslev",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=44e4072d-62f5-4205-bdc3-271c354599d4",
+   "hentet": "2026-11-06T12:52:22.871Z",
+   "titel": "Godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Formandskabet Handicaprådet indstiller, at:\nHandicaprådet godkender referat."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Godkendelse af referat.\n\nProcedure\nHandicaprådet 16. november 2026"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=5686a761-c63d-497f-9341-2c7a299e927d": {
    "senest": "2026-06-04",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=1b5573fb-7cd6-4b96-a6b8-75700d4dc1b4": {
    "senest": "2025-12-12",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=81d4c5b9-7cb8-422a-b85b-41aa17a4717b": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=46cdd600-b0d8-41d7-a627-d793abfdf34e": {
    "senest": "2026-06-19",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=359c21b8-4dad-4730-aaca-fffbd21b7e91": {
    "senest": "2026-10-14",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=fed78cc5-03ab-405f-b606-4a168eae9159": {
    "senest": "2026-04-21",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=cf34b35a-ec3d-4df6-b620-79d1c9ac07c2": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=df0d8a35-6def-472f-9896-f936e0fb19e1": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=f93b21ec-4c47-4afe-b6f1-119155d27b3f": {
-   "senest": "2026-10-28",
-   "tjekket": "2026-11-05"
+   "senest": "2026-11-06",
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=12a93602-8cf7-4611-881b-7dae93274ea7": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=de26c5dc-a207-4d37-983f-db7a153ea6e2": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=ed52f85a-0436-47ff-98ef-538426ceba4c": {
    "senest": "2026-02-27",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=3e999a93-10e3-47ee-b555-3428a2a185d5": {
    "senest": "2026-10-02",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=d1054f88-a3a2-457f-8544-31beb3b74413": {
    "senest": "2026-06-08",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=11106f06-c78b-45bc-89f9-9a3a407fe0d2": {
-   "senest": "2026-10-23",
-   "tjekket": "2026-11-05"
+   "senest": "2026-11-06",
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=06099258-950b-4b19-a8be-90592b001d46": {
    "senest": "2025-10-01",
@@ -22144,11 +22536,11 @@
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=e0dfb929-7646-4947-936c-e2abc5fe372a": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=701b02b6-81c9-441b-9370-c0ceece09daa": {
    "senest": "2026-09-14",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=a81323f8-a41c-4c23-ac46-683684eb8cc1": {
    "senest": "2023-10-02",
@@ -22156,83 +22548,83 @@
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=75003c4a-41d9-47f9-b74a-e66ab7441272": {
    "senest": "2026-02-26",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=62bb1136-4ced-4cd8-9201-35ce0e58327d": {
    "senest": "2026-10-21",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=5f377a45-f534-4fde-924a-52fd2f636596": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=ddf91631-6e29-418c-a6ef-26175d31a9da": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=7591453a-8328-4512-81b0-5a1ba4fe67d5": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=461c658c-8d14-489a-bb6e-a199e2290ba2": {
    "senest": "2026-04-23",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=d60fb250-0d85-4a07-b532-3919e8baa288": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=7d71550e-b506-4506-8822-e0458cbfd62d": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=a55135c4-b747-484e-8f56-fb9bf07b2a25": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=c210cf9f-b842-4801-ad37-9269a2f0a243": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=b533e404-45ec-4735-8852-45fc7ca28528": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=c5f611e9-6913-4feb-9d27-35552ad589b1": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=d2ab0ce1-1cee-46d2-b250-02bb385abde4": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=6ddd3c20-8399-45af-923b-5f31853c54ce": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=29551f66-6594-4faf-8b96-70fb736c3c1b": {
    "senest": "2025-12-12",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=b457014f-3815-4ea7-bd39-10b3a5ca691f": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=89231e16-68df-458e-aa80-18fcb50b8e79": {
    "senest": "2026-09-11",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=4a23a63b-b30f-40f3-a880-268914024f26": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=458bd762-380e-41a1-8daa-c871f6bdfc2d": {
    "senest": "2026-02-26",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=0bdaec90-496c-42fb-a921-a22f33734445": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=54ac4984-fb63-4619-add7-eaf53dbfcd77": {
    "senest": "",
@@ -22240,15 +22632,15 @@
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=9d83befc-3f6e-48d7-b1ea-dbac3bcd9bb2": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=f11c38f9-0c12-463c-9eb0-9c5c89c1e6c9": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=cb33a2b5-4073-49f9-bc2a-bb93a89afc12": {
    "senest": "2026-08-20",
-   "tjekket": "2026-11-05"
+   "tjekket": "2026-11-06"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=ba20c785-9b47-4be6-818c-71a8c71cda37": {
    "senest": "2025-11-05",
@@ -22260,6 +22652,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-05T21:17:56.282Z",
+ "opdateret": "2026-11-06T12:52:27.981Z",
  "kommune": "Haderslev"
 }
