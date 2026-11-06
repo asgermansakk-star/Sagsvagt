@@ -258,7 +258,7 @@ const avishoved = (rod, aktiv, kommune) => `${LOGO_SYMBOL}
 <!-- Avishovedet i to etager (som en trykt avis): logo og udgave øverst, sektionerne centreret på en række for sig -->
 <header class="masthead to">
   <div class="wrap mh-top">
-    <a class="mh-logo" href="${rod}${kommune ? `kommune/${kommune.slug}.html` : "index.html"}" aria-label="Sagsvagt, til forsiden">${logo(196, 60)}</a>
+    <a class="mh-logo" href="${rod}index.html" aria-label="Sagsvagt, til forsiden">${logo(196, 60)}</a>
     <details class="mh-edition mere mh-kommune"><summary><b>${esc(kommune?.navn || "København")}</b><br>${aktiv === "forside"
       ? `${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}` : "Skift kommune"}</summary><div>${kommuneValg(rod, kommune)}</div></details>
     <div class="mh-handling">
