@@ -70,7 +70,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
       await writeFile(join(ROD, sti), side({
         titel: `${u}, ${k.kommune} – Sagsvagt`, beskrivelse: `Sager og beslutninger fra ${u} i ${k.kommune}, hentet fra kommunens dagsordener og referater.`,
         sti, rod: "../../", aktiv: "k-udvalg", kommune: k,
-        indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="../${k.slug}.html">${esc(k.navn)}</a></p><h1>${esc(u)}</h1>${prUdvalg[u].sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr).map((s) => `<article>${kicker(s, "../../", false)}<h2 class="hl"><a href="../../${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 200))}</p>` : ""}</article>`).join("\n")}</div></div>`,
+        indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="../${k.slug}.html">${esc(k.navn)}</a></p><h1>${esc(u)}</h1>${prUdvalg[u].sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr).map((s) => `<article>${kicker(s, "../../", false)}<h2 class="hl"><a href="../../${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `` : ""}</article>`).join("\n")}</div></div>`,
       }));
     }
 
@@ -80,7 +80,6 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
       <article class="lead">
         ${kicker(top, R)}
         <h1 class="hl"><a href="${R}${top.url}">${esc(top.titel)}</a></h1>
-        ${top.dek ? `<p class="dek anslag">${esc(saetninger(top.dek, 200))}</p>` : ""}
         ${top.status === "besluttet" && top.udfald ? `<p class="udfald">${esc(top.udfald)}</p>` : top.status === "kommer" ? `<p class="udfald kommer">Til beslutning ${ugedag(top.dato)} ${datoTekst(top.dato)}.</p>` : ""}
       </article>
       <div class="mellem">
@@ -125,7 +124,6 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
       : `<div class="wrap"><div class="listing kommune-side">
   <p class="kicker"><a href="./">Alle kommuner</a> · Region ${esc(k.region)}</p>
   <h1>Sagsvagt i ${esc(k.navn)}</h1>
-  <p class="intro">Sagsvagt læser dagsordener og referater fra byråd og udvalg og sender dig de sager, der handler om det, du følger. Vi er startet i København og åbner kommune for kommune, der hvor flest skriver sig op.</p>
   <div class="kommune-tilmeld"><p><b>Skriv dig op til ${esc(k.navn)}</b>Det er gratis. Du får besked, når Sagsvagt åbner i ${esc(k.kommune)}, og hver tilmelding rykker ${esc(k.navn)} op i køen.</p><a class="btn" href="${tilmeld(k)}">Skriv mig op</a></div>
   <h2>Det får du, når ${esc(k.navn)} åbner</h2>
   <ul class="punkter">
@@ -160,7 +158,6 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
     sti: "kommune/", rod: "../", aktiv: "kommune",
     indhold: `<div class="wrap"><div class="listing kommune-side">
   <h1>Sagsvagt i din kommune</h1>
-  <p class="intro">Sagsvagt er åben i ${esc(aabneTekst)}. Vi åbner kommune for kommune, der hvor flest skriver sig op. Find din kommune, og skriv dig op, så får du besked, når den er klar.</p>
   <label class="k-soeg"><span>Find din kommune</span><input type="search" id="k-soeg" placeholder="Skriv fx Aarhus eller Køge" autocomplete="off"></label>
   <p class="k-ingen" id="k-ingen" hidden>Ingen kommuner passer. Tjek stavemåden.</p>
   ${REGIONER.map((r) => `<section class="region"><h2 class="region-h">Region ${r}</h2>${chips(kommuner.filter((k) => k.region === r).sort((a, b) => a.navn.localeCompare(b.navn, "da")))}</section>`).join("\n  ")}

@@ -59,9 +59,8 @@ export async function bygSteder(prSted, H, o = {}) {
       indhold: `<div class="wrap"><div class="listing">
   <p class="kicker"><a href="./">${esc(alle)}</a></p>
   <h1>${esc(n)}</h1>
-  <p class="intro">${l.length} ${l.length === 1 ? "sag" : "sager"} fra ${esc(hvem)} i ${esc(hvor)}, der handler om ${esc(n)}. Nyeste først.</p>
   ${delRad(`${H.SITE_URL}${mappe}/${slug(n)}.html`, `${n}: det har politikerne besluttet`)}
-  ${l.map((s) => `<article>${kicker(s, rod, true)}<h2 class="hl"><a href="${rod}${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 200))}</p>` : ""}</article>`).join("\n")}
+  ${l.map((s) => `<article>${kicker(s, rod, true)}<h2 class="hl"><a href="${rod}${s.url}">${esc(s.titel)}</a></h2></article>`).join("\n")}
   ${tester}
   ${KILDE}
 </div></div>${DEL_SCRIPT}`,
@@ -74,7 +73,6 @@ export async function bygSteder(prSted, H, o = {}) {
     titel: indexTitel, beskrivelse: indexBeskrivelse, sti: `${mappe}/`, rod, aktiv, kommune,
     indhold: `<div class="wrap"><div class="listing">
   <h1>${esc(titel)}</h1>
-  <p class="intro">${esc(indexIntro)}</p>
   ${steder.length ? Object.entries(grupper).map(([b, ns]) => `<h2 class="sted-bogstav">${esc(b)}</h2><ul class="chips">${ns.map((n) => `<li><a href="${slug(n)}.html">${esc(n)} <span style="opacity:.6">(${prSted.get(n).length})</span></a></li>`).join("")}</ul>`).join("\n") : `<p class="intro">Ingen endnu. Siden fyldes op, efterhånden som der kommer flere sager.</p>`}
   ${KILDE}
 </div></div>`,

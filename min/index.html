@@ -1113,9 +1113,9 @@
   const billedeLink = (s) => `<a class="kort-billede" href="${link(s)}" data-laes="${esc(s.id)}" tabindex="-1" aria-hidden="true"><img src="${billede(s)}" alt="" loading="lazy"></a>`;
   const kortet = (s, slags) => {
     const hl = `<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>`;
-    if (slags === "lead") return `<article class="lead kort">${billedeLink(s)}<div class="kort-tekst">${handl(s)}${kicker(s)}${hl}${s.d ? `<p class="dek">${esc(s.d)}</p>` : ""}${beslutning(s, true)}${tags(s)}</div></article>`;
+    if (slags === "lead") return `<article class="lead kort">${billedeLink(s)}<div class="kort-tekst">${handl(s)}${kicker(s)}${hl}${beslutning(s, true)}${tags(s)}</div></article>`;
     if (slags === "mini") return `<article class="mini kort"><div class="mini-raekke">${billedeLink(s)}<div>${kicker(s)}${hl}${handl(s)}</div></div></article>`;
-    return `<article class="kort">${billedeLink(s)}<div class="kort-tekst">${handl(s)}${kicker(s)}${hl}${s.d ? `<p class="dek">${esc(s.d.length > 180 ? s.d.slice(0, 180).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${s.st === "besluttet" ? stemmer(s) : ""}${tags(s)}</div></article>`;
+    return `<article class="kort">${billedeLink(s)}<div class="kort-tekst">${handl(s)}${kicker(s)}${hl}${s.st === "besluttet" ? stemmer(s) : ""}${tags(s)}</div></article>`;
   };
   const tom = (tekst) => `<p class="tom">${tekst}</p>`;
 
@@ -1343,7 +1343,7 @@
     liste = liste.filter((s) => !s.r || q).sort((a, b) => b.dato.localeCompare(a.dato) || b.score - a.score);
     $("#antal").textContent = q ? `${liste.length} sager matcher "${soeg.trim()}"` : `${liste.length} sager`;
     $("#liste").innerHTML = liste.length
-      ? liste.slice(0, vist).map((s) => `<li>${billedeLink(s)}<div>${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 220 ? s.d.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</div>${handl(s)}</li>`).join("")
+      ? liste.slice(0, vist).map((s) => `<li>${billedeLink(s)}<div>${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${tags(s)}</div>${handl(s)}</li>`).join("")
       : `<li>${tom(q ? "Ingen sager matcher søgningen." : "Ingen sager endnu.")}</li>`;
     $("#flere").hidden = liste.length <= vist;
   }
@@ -1407,7 +1407,7 @@
   function tegnGemte() {
     const g = profil.gemte.map((id) => findSag(id)).filter(Boolean).map(vurder);
     $("#gemte-side-liste").innerHTML = g.length
-      ? g.map((s) => `<li>${billedeLink(s)}<div>${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${s.d ? `<p class="dek">${esc(s.d.length > 220 ? s.d.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.d)}</p>` : ""}${tags(s)}</div>${handl(s)}</li>`).join("")
+      ? g.map((s) => `<li>${billedeLink(s)}<div>${kicker(s)}<h3 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h3>${tags(s)}</div>${handl(s)}</li>`).join("")
       : `<li>${tom("Du har ikke gemt nogen sager endnu. Tryk på stjernen ved en sag for at gemme den.")}</li>`;
   }
 

@@ -427,7 +427,6 @@ const helBeslutning = (s, vist) => s.beslutning.replace(/\s+/g, " ").length > vi
 const fejlLink = (s) => `<p class="ret-fejl">Er noget forkert her? <a href="mailto:mansa@sagsvagt.dk?subject=${encodeURIComponent(`Fejl i sagen: ${s.titel}`.slice(0, 150))}&amp;body=${encodeURIComponent(`${SITE_URL}${s.url}\n\nDet er forkert:\n`)}">Skriv til os</a></p>`;
 const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="paa-mail">
   <h2 class="rubrik">Politik, der rammer dig, hver mandag</h2>
-  <p>Gratis. Du vælger selv emnerne.</p>
   <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Skriv dig op</a>
 </aside>`;
 // "Hvad kan du gøre?": kun det, sagen og reglerne dækker. Byrådets møder er offentlige (styrelseslovens § 10),
@@ -612,7 +611,6 @@ async function main() {
         <a class="lead-billede" href="${top.url}" tabindex="-1" aria-hidden="true"><img class="emnebillede" src="${billedeSti(top)}" alt=""></a>
         ${kicker(top, "")}
         <h1 class="hl"><a href="${top.url}">${esc(top.titel)}</a></h1>
-        ${top.dek ? `<p class="dek anslag">${esc(saetninger(top.dek, 200))}</p>` : ""}
         ${top.status === "besluttet" && top.udfald ? `<p class="udfald">${esc(top.udfald)}</p>` : top.status === "kommer" ? `<p class="udfald kommer">Til beslutning ${ugedag(top.dato)} ${datoTekst(top.dato)}.</p>` : ""}
       </article>
       <div class="mellem">
@@ -620,7 +618,7 @@ async function main() {
       </div>
       <a class="kort-band" href="kort.html">
         <span class="kb-kort"><img src="assets/sagskort.jpg" width="1400" height="1202" alt="" loading="lazy"><svg viewBox="0 0 ${SAGSKORT.W} ${SAGSKORT.H}" aria-hidden="true">${prikker.map((p) => `<circle cx="${p.x.toFixed(0)}" cy="${p.y.toFixed(0)}" r="24" class="${p.kommer ? "kommer" : ""}"/>`).join("")}</svg></span>
-        <span class="kb-tekst"><b>Hvad sker der i din gade?</b><span>${paaKort.length} sager på kortet.</span><span class="kb-knap">Se kortet</span></span>
+        <span class="kb-tekst"><b>Hvad sker der i din gade?</b><span class="kb-knap">Se kortet</span></span>
       </a>
       <section class="kortnyt" aria-labelledby="h-kort">
         <h2 id="h-kort" class="rubrik">Kort nyt</h2>
@@ -667,7 +665,6 @@ async function main() {
       <header>
         ${kicker(s, "../")}
         <h1 class="hl">${esc(s.titel)}</h1>
-        ${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 140))}</p>` : ""}
         ${emneLinks(s, "../")}
         ${topBillede(s, "../")}
         ${flereBilleder(s, "../")}
@@ -710,7 +707,7 @@ async function main() {
   }
 
   // Udvalgs- og bydelssider
-  const liste = (s, medUdvalg = false) => `<article class="med-billede">${lilleBillede(s, "../")}<div>${kicker(s, "../", medUdvalg)}<h2 class="hl"><a href="../${s.url}">${esc(s.titel)}</a></h2><p class="dek">${esc(saetninger(s.dek, 200))}</p>${stemmeMini(s, esc)}</div></article>`;
+  const liste = (s, medUdvalg = false) => `<article class="med-billede">${lilleBillede(s, "../")}<div>${kicker(s, "../", medUdvalg)}<h2 class="hl"><a href="../${s.url}">${esc(s.titel)}</a></h2>${stemmeMini(s, esc)}</div></article>`;
   const udvalg = [...prUdvalg.keys()].filter((u) => !erLokaludvalg(u)).sort((a, b) => (VAEGT[b] ?? 2) - (VAEGT[a] ?? 2) || a.localeCompare(b, "da"));
   const lokal = [...prUdvalg.keys()].filter(erLokaludvalg).sort((a, b) => a.localeCompare(b, "da"));
   for (const u of [...udvalg, ...lokal]) {
@@ -720,13 +717,13 @@ async function main() {
       titel: `${lu ? `${navn}: Nyt fra lokaludvalget` : navn} – Sagsvagt`,
       beskrivelse: `Sager og beslutninger fra ${lu ? `${navn} Lokaludvalg` : `${navn} i Københavns Kommune`}, hentet fra de officielle dagsordener og referater.`,
       sti, rod: "../", aktiv: u === "Borgerrepræsentationen" ? "br" : lu ? "bydel" : "udvalg",
-      indhold: `<div class="wrap"><div class="listing"><h1>${esc(lu ? `${navn}` : navn)}</h1>${lu ? `<p class="intro">Lokaludvalg i Københavns Kommune.</p>` : ""}<p class="abonner"><a href="${kalenderLink(u, "../", H)}">Føj møderne til din kalender</a> · <a href="${feedLink(u, "../", H)}">RSS</a> · <a href="../boks.html?vis=boks/${lu ? `bydel/${slug(bydel(u))}` : `udvalg/${slug(u)}`}.html">Sæt på din hjemmeside</a></p>${prUdvalg.get(u).map((s) => liste(s)).join("\n")}</div></div>`,
+      indhold: `<div class="wrap"><div class="listing"><h1>${esc(lu ? `${navn}` : navn)}</h1><p class="abonner"><a href="${kalenderLink(u, "../", H)}">Føj møderne til din kalender</a> · <a href="${feedLink(u, "../", H)}">RSS</a> · <a href="../boks.html?vis=boks/${lu ? `bydel/${slug(bydel(u))}` : `udvalg/${slug(u)}`}.html">Sæt på din hjemmeside</a></p>${prUdvalg.get(u).map((s) => liste(s)).join("\n")}</div></div>`,
     }));
   }
   // visIntro: false, når introen kun gentager overskriften (den bruges stadig som beskrivelse til søgemaskiner)
   const oversigt = (titel, intro, navne, mappe, aktiv, visIntro = true) => side({
     titel: `${titel} – Sagsvagt`, beskrivelse: intro, sti: `${mappe}/`, rod: "../", aktiv,
-    indhold: `<div class="wrap"><div class="listing"><h1>${titel}</h1>${visIntro ? `<p class="intro">${intro}</p>` : ""}<ul class="chips">${navne.map((u) => `<li><a href="${slug(mappe === "bydel" ? bydel(u) : u)}.html">${esc(mappe === "bydel" ? bydel(u) : u)} <span style="opacity:.6">(${prUdvalg.get(u).length})</span></a></li>`).join("")}</ul></div></div>`,
+    indhold: `<div class="wrap"><div class="listing"><h1>${titel}</h1><ul class="chips">${navne.map((u) => `<li><a href="${slug(mappe === "bydel" ? bydel(u) : u)}.html">${esc(mappe === "bydel" ? bydel(u) : u)} <span style="opacity:.6">(${prUdvalg.get(u).length})</span></a></li>`).join("")}</ul></div></div>`,
   });
   await writeFile(join(ROD, "udvalg", "index.html"), oversigt("Udvalg i Københavns Kommune", "Borgerrepræsentationen og de stående udvalg.", udvalg, "udvalg", "udvalg", false));
   await writeFile(join(ROD, "bydel", "index.html"), oversigt("Bydele i København", "Hver bydel har et lokaludvalg, som behandler sager om byrum, trafik, puljer og høringer i lokalområdet.", lokal, "bydel", "bydel"));
@@ -738,13 +735,13 @@ async function main() {
     await writeFile(join(ROD, "emne", `${id}.html`), side({
       titel: `${e.navn} – Sagsvagt`, beskrivelse: `Sager om ${e.navn.toLowerCase()} fra byråd, udvalg og lokaludvalg i København.`,
       sti: `emne/${id}.html`, rod: "../", aktiv: "emne",
-      indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>${esc(e.navn)}</h1><p class="intro">${prEmne[id].length} sager, nyeste først.</p><p class="abonner"><a href="../feed/emne-${id}.xml">RSS for ${esc(e.navn.toLowerCase())}</a> · <a href="../boks.html?vis=boks/emne/${id}.html">Sæt på din hjemmeside</a></p>${emneChips(id)}${prEmne[id].map((s) => liste(s, true)).join("\n")}</div></div>`,
+      indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="./">Alle emner</a></p><h1>${esc(e.navn)}</h1><p class="abonner"><a href="../feed/emne-${id}.xml">RSS for ${esc(e.navn.toLowerCase())}</a> · <a href="../boks.html?vis=boks/emne/${id}.html">Sæt på din hjemmeside</a></p>${emneChips(id)}${prEmne[id].map((s) => liste(s, true)).join("\n")}</div></div>`,
     }));
   }
   await writeFile(join(ROD, "emne", "index.html"), side({
     titel: "Emner – Sagsvagt", beskrivelse: "Find sagerne fra Københavns byråd, udvalg og lokaludvalg efter emne.", sti: "emne/", rod: "../", aktiv: "emne",
     // Som sektionerne i en avis: hvert emne med sine seneste sager
-    indhold: `<div class="wrap"><div class="emne-oversigt"><h1>Emner</h1><p class="intro">En sag kan handle om flere emner.</p>
+    indhold: `<div class="wrap"><div class="emne-oversigt"><h1>Emner</h1>
 <div class="emne-gitter">${Object.entries(EMNER).map(([id, e]) => `<section aria-labelledby="em-${id}"><h2 id="em-${id}" class="rubrik"><a href="${id}.html" class="emne-navn">${esc(e.navn)}</a> <a href="${id}.html">${prEmne[id].length} sager</a></h2><ul class="notitser">${unikTitel(prEmne[id]).slice(0, 4).map((s) => notits(s, "../")).join("")}</ul></section>`).join("")}</div></div></div>`,
   }));
 
@@ -782,7 +779,6 @@ async function main() {
     sti: "moeder.html", rod: "", aktiv: "moeder",
     indhold: `<div class="wrap"><div class="listing moeder">
   <h1>Møder</h1>
-  <p class="intro">Kommunen offentliggør dagsordenen omkring en uge før mødet. Her ser du de møder, hvor dagsordenen er ude, og de seneste møders beslutninger.</p>
   <p class="abonner"><a href="kalender/alle.ics">Føj alle møder til din kalender</a>. Under hvert udvalg kan du nøjes med dets egne møder.</p>
   <h2 class="sec-h">Kommende møder</h2>
   ${kommendeMoeder.length ? kommendeMoeder.map(moedeKort).join("\n") : `<p class="intro">Der er ingen offentliggjorte dagsordener til kommende møder lige nu.</p>`}
@@ -829,7 +825,6 @@ async function main() {
     titel: "Kort over sagerne i København – Sagsvagt", beskrivelse: "Se på kortet, hvad politikerne i København beslutter om din gade, skole og park.", sti: "kort.html", rod: "", aktiv: "kort",
     indhold: `<div class="wrap">
   <h1 class="hl kort-h">Hvad sker der i din gade?</h1>
-  <p class="dek">${paaKort.length} sager fra de sidste fire måneder, der nævner en gade, en plads, en skole eller en park. Tryk på en nål for at læse sagen, eller se dem som liste under kortet.</p>
   <div id="sagskort" class="sagskort" role="region" aria-label="Kort over sagerne"><div class="kort-start"><button class="btn" type="button" id="vis-kort">Vis kortet</button><p>Kortet hentes fra OpenStreetMap, når du trykker. Indtil da sender siden ingenting til andre.</p></div></div>
   <p class="kort-noegle"><span class="kn-kommer">Kommer op</span><span class="kn-besluttet">Besluttet</span></p>
   <details class="kort-liste"><summary>Se de ${paaKort.length} sager som liste</summary><ul>${[...paaKort].sort((a, b) => a.sted.localeCompare(b.sted, "da") || b.dato.localeCompare(a.dato)).map((s) => `<li><a href="${esc(s.url)}">${esc(s.titel)}</a><span>${esc(s.sted)} · ${esc(s.hvor)} · ${s.status === "kommer" ? "Kommer op" : "Besluttet"} ${datoTekst(s.dato)}</span></li>`).join("")}</ul></details>
