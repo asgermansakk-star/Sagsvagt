@@ -328,18 +328,29 @@
   .form-note { font-size: var(--fodnote); color: rgba(230,223,211,.72); line-height: 1.5; }
   .form-note a { color: var(--kalk); }
   /* Kvitteringen er en side for sig, der dækker hele skærmen (flyttes ud i <body>, når tilmeldingen er gået igennem) */
-  .done { display: none; }
-  .done.vis { display: grid; grid-template-rows: auto 1fr; position: fixed; inset: 0; z-index: 100; overflow-y: auto; overscroll-behavior: contain;
-    color: var(--kalk); background: var(--moedet); background-color: var(--nat); animation: tak-ind .45s ease both; }
+  /* Tilmeldingen er en side for sig, der dækker hele skærmen: den åbnes af alle "Skriv dig op"-knapper (#tilmeld) */
+  .tilmeld-baand { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; padding: 40px 48px;
+    border-radius: var(--r-stor); color: var(--kalk); background: var(--moedet); background-color: var(--nat); }
+  .tilmeld-baand h2 { font-size: var(--t1); }
+  .tilmeld-side { display: grid; grid-template-rows: auto 1fr; position: fixed; inset: 0; z-index: 100; overflow-y: auto; overscroll-behavior: contain;
+    color: var(--kalk); background: var(--moedet); background-color: var(--nat); animation: tak-ind .4s ease both; }
+  .tilmeld-side[hidden] { display: none; }
+  .tilmeld-side.straks { animation: none; } /* åbnet fra et link: vis den med det samme (animationer kan stå stille, mens siden indlæses) */
   @keyframes tak-ind { from { opacity: 0; } }
-  .done .tak-bar { position: static; }
-  .tak-indhold { align-self: center; justify-self: center; width: min(100% - 32px, 34rem); display: grid; gap: 12px; text-align: center; padding: 40px 0 72px; }
+  .tilmeld-side .tak-bar { position: static; }
+  .tilmeld-side .luk { all: unset; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; font-size: 1.75rem; line-height: 1; color: var(--kalk); cursor: pointer; }
+  .tilmeld-side .luk:hover { background: rgba(230,223,211,.1); }
+  .tilmeld-side .luk:focus-visible { outline: 3px solid var(--lyng); outline-offset: 2px; }
+  .tilmeld-side .tilmeld-kort { display: block; align-self: center; justify-self: center; width: min(100% - 32px, 32rem); padding: 32px 0 80px; background: none; border-radius: 0; }
+  .tilmeld-side .tilmeld-kort h2 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem); line-height: 1.1; margin-bottom: 32px; }
+  .tilmeld-side .tilmeld-kort.ok h2 { display: none; }
+  .done { display: none; gap: 12px; text-align: center; }
   .done .mark { width: 72px; margin: 0 auto 12px; }
   .done h3 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem); line-height: 1.1; }
   body.tak-aaben { overflow: hidden; }
   .done p { color: rgba(230,223,211,.8); }
   .done .tjek { margin-top: 8px; font-size: var(--fodnote); color: rgba(230,223,211,.65); }
-  .tilmeld-kort.ok form { display: none; }
+  .tilmeld-kort.ok form { display: none; } .tilmeld-kort.ok .done { display: grid; }
   /* Henvisning: den tilmeldte får sit eget link (?fra=ven-xxxxxx) */
   .henvis { margin-top: 32px; padding-top: 32px; border-top: 1px solid rgba(230,223,211,.2); }
   .henvis[hidden] { display: none; }
@@ -509,12 +520,21 @@
     </div>
   </section>
 
-  <section class="afsnit" id="tilmeld" aria-labelledby="tilmeld-h">
+  <section class="afsnit" aria-labelledby="tilmeld-cta">
     <div class="wrap">
-      <div class="tilmeld-kort paa-moerk">
-        <div>
-          <h2 id="tilmeld-h">Få din første mandagsmail</h2>
-        </div>
+      <div class="tilmeld-baand paa-moerk">
+        <h2 id="tilmeld-cta">Få din første mandagsmail</h2>
+        <a class="btn btn-primaer" href="#tilmeld">Skriv mig op</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="tilmeld-side paa-moerk" id="tilmeld" role="dialog" aria-modal="true" aria-labelledby="tilmeld-h" hidden>
+  <header class="bar tak-bar"><div class="wrap"><a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a><button class="luk" type="button" aria-label="Luk">×</button></div></header>
+      <div class="tilmeld-kort">
+        <h2 id="tilmeld-h">Få din første mandagsmail</h2>
         <form id="form" novalidate>
           <input type="hidden" name="kilde" id="kilde">
           <div class="felt navne"><div><label for="fornavn">Fornavn</label><input id="fornavn" name="fornavn" type="text" autocomplete="given-name" maxlength="40" placeholder=" " required></div><div><label for="efternavn">Efternavn</label><input id="efternavn" name="efternavn" type="text" autocomplete="family-name" maxlength="60" placeholder=" " required></div></div>
@@ -545,8 +565,6 @@
           <p class="form-note">Når du skriver dig op, siger du ja til at få Sagsvagts mail. Vi bruger kun dine oplysninger til det, og du kan afmelde dig når som helst. Læs <a href="privatliv.html">hvordan vi behandler dine oplysninger</a>.</p>
         </form>
         <div class="done" aria-live="polite">
-          <header class="bar tak-bar"><div class="wrap"><a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a><nav aria-label="Videre"><a href="index.html">Læs avisen</a></nav></div></header>
-          <div class="tak-indhold">
           <svg class="mark" viewBox="0 0 168 224" aria-hidden="true" style="color:var(--kalk)"><use href="#maerke"/></svg>
           <h3>Du er skrevet op.</h3>
           <p class="done-tekst">Vi har sendt dig en kvittering, og vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
@@ -556,13 +574,9 @@
             <div class="henvis-rad"><input id="henvisLink" type="text" readonly aria-label="Dit link til Sagsvagt"><button type="button" class="btn btn-lys btn-lille" id="henvisKnap">Kopiér</button></div>
             <p class="henvis-svar" role="status"></p>
           </div>
-          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-</main>
+</div>
 
 <footer>
   <div class="wrap">
@@ -660,11 +674,31 @@
     $("#kommuner").value = kommuneFra;
     if (kommuneFra !== "København") {
       $("#tilmeld-h").textContent = `Få besked, når Sagsvagt åbner i ${kommuneFra}`;
-      $("#tilmeld .lead").textContent = `Sagsvagt er en gratis lokalavis for hele Danmark. Vi åbner kommune for kommune, der hvor flest skriver sig op. Skriv dig op, så rykker ${kommuneFra} op i køen, og du får besked, når den er klar.`;
     }
   }
-  // Demoen bygges efter indlæsning og skubber formularen ned, så hop til den igen, når siden er færdig
-  if (location.hash === "#tilmeld") addEventListener("load", () => $("#tilmeld").scrollIntoView({ block: "start" }));
+  // Tilmeldingssiden: åbnes af alle links til #tilmeld (også fra avisens sider) og lukkes med krydset, Esc eller tilbage-knappen
+  const side = $("#tilmeld");
+  const aabn = (fokus, straks = false) => {
+    if (!side.hidden) return;
+    side.classList.toggle("straks", straks); side.hidden = false;
+    setTimeout(() => side.getAnimations?.().forEach((x) => x.finish()), 600); // står fade-ind stille, vises siden alligevel side.scrollTop = 0; document.body.classList.add("tak-aaben");
+    if (fokus) setTimeout(() => $("#form .aktiv input, #form .aktiv select, #fornavn")?.focus({ preventScroll: true }), 120);
+  };
+  const luk = () => { side.hidden = true; document.body.classList.remove("tak-aaben"); };
+  let skubbet = false; // true, når siden selv har lagt #tilmeld i historikken, så krydset kan gå et skridt tilbage
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest('a[href="#tilmeld"]')) return;
+    e.preventDefault();
+    if (location.hash !== "#tilmeld") { history.pushState(null, "", "#tilmeld"); skubbet = true; }
+    aabn(true);
+  });
+  $(".luk", side).addEventListener("click", () => {
+    if (skubbet) { skubbet = false; history.back(); return; } // popstate lukker siden
+    history.replaceState(null, "", location.pathname + location.search); luk();
+  });
+  addEventListener("popstate", () => { if (location.hash === "#tilmeld") aabn(false, true); else { skubbet = false; luk(); } });
+  addEventListener("keydown", (e) => { if (e.key === "Escape" && !side.hidden) $(".luk", side).click(); });
+  if (location.hash === "#tilmeld") aabn(false, true);
   const form = $("#form"), msg = $(".form-msg", form), btn = $(".send", form), card = $(".tilmeld-kort");
   // Et felt med fejl (.bad) får aria-invalid og peger på fejlbeskeden, så det ikke kun er den røde kant, der viser det
   msg.id = "form-msg";
@@ -712,7 +746,7 @@
   /* ---------- Tilmelding trin for trin: ét felt ad gangen, og knappen lyser op til sidst (se CSS'en) ---------- */
   (() => {
     const tekst = $("span", btn);
-    const trin = () => [...form.querySelectorAll(".felt, .flueben")].filter((el) => !el.closest("[hidden]"));
+    const trin = () => [...form.querySelectorAll(".felt, .flueben")].filter((el) => !el.closest("form [hidden]")); // kun skjulte dele af formularen (hele tilmeldingssiden er skjult, til den åbnes)
     const gyldig = (el) => {
       const i = el.querySelector("input, select"), v = (i.value || "").trim();
       if (i.id === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
@@ -783,8 +817,7 @@
     const done = $(".done");
     if (bekraeft) { done.querySelector("h3").textContent = "Tjek din mail."; done.querySelector(".done-tekst").textContent = "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
     card.classList.add("ok"); visHenvisning(form.email.value);
-    document.body.append(done); done.classList.add("vis"); document.body.classList.add("tak-aaben"); done.scrollTop = 0;
-    done.querySelector(".logo").focus({ preventScroll: true }); };
+    side.scrollTop = 0; done.querySelector("h3").setAttribute("tabindex", "-1"); done.querySelector("h3").focus({ preventScroll: true }); };
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const fornavn = form.fornavn.value.trim(), efternavn = form.efternavn.value.trim(), nf = form.fornavn.closest(".felt");
