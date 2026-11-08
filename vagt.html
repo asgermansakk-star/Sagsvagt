@@ -327,14 +327,21 @@
   .form-msg.ok { color: var(--lyng); } .form-msg.err { color: var(--rosen); }
   .form-note { font-size: var(--fodnote); color: rgba(230,223,211,.72); line-height: 1.5; }
   .form-note a { color: var(--kalk); }
-  .done { display: none; text-align: center; align-content: center; gap: 8px; }
-  .done .mark { width: 64px; margin: 0 auto 8px; }
-  .done h3 { font-size: var(--t2); }
+  /* Kvitteringen er en side for sig, der dækker hele skærmen (flyttes ud i <body>, når tilmeldingen er gået igennem) */
+  .done { display: none; }
+  .done.vis { display: grid; grid-template-rows: auto 1fr; position: fixed; inset: 0; z-index: 100; overflow-y: auto; overscroll-behavior: contain;
+    color: var(--kalk); background: var(--moedet); background-color: var(--nat); animation: tak-ind .45s ease both; }
+  @keyframes tak-ind { from { opacity: 0; } }
+  .done .tak-bar { position: static; }
+  .tak-indhold { align-self: center; justify-self: center; width: min(100% - 32px, 34rem); display: grid; gap: 12px; text-align: center; padding: 40px 0 72px; }
+  .done .mark { width: 72px; margin: 0 auto 12px; }
+  .done h3 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem); line-height: 1.1; }
+  body.tak-aaben { overflow: hidden; }
   .done p { color: rgba(230,223,211,.8); }
   .done .tjek { margin-top: 8px; font-size: var(--fodnote); color: rgba(230,223,211,.65); }
-  .tilmeld-kort.ok form { display: none; } .tilmeld-kort.ok .done { display: grid; }
+  .tilmeld-kort.ok form { display: none; }
   /* Henvisning: den tilmeldte får sit eget link (?fra=ven-xxxxxx) */
-  .henvis { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(230,223,211,.2); text-align: left; }
+  .henvis { margin-top: 32px; padding-top: 32px; border-top: 1px solid rgba(230,223,211,.2); }
   .henvis[hidden] { display: none; }
   .henvis .henvis-titel { font-weight: 600; color: var(--kalk); }
   .henvis-rad { display: flex; gap: 8px; margin-top: 12px; }
@@ -538,15 +545,17 @@
           <p class="form-note">Når du skriver dig op, siger du ja til at få Sagsvagts mail. Vi bruger kun dine oplysninger til det, og du kan afmelde dig når som helst. Læs <a href="privatliv.html">hvordan vi behandler dine oplysninger</a>.</p>
         </form>
         <div class="done" aria-live="polite">
+          <header class="bar tak-bar"><div class="wrap"><a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a><nav aria-label="Videre"><a href="index.html">Læs avisen</a></nav></div></header>
+          <div class="tak-indhold">
           <svg class="mark" viewBox="0 0 168 224" aria-hidden="true" style="color:var(--kalk)"><use href="#maerke"/></svg>
           <h3>Du er skrevet op.</h3>
           <p class="done-tekst">Vi har sendt dig en kvittering, og vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
           <p class="tjek">Kan du ikke finde vores mails? Tjek også din mappe med uønsket mail, og markér dem som "Ikke uønsket".</p>
           <div class="henvis" hidden>
             <p class="henvis-titel">Kender du nogen, der også bør følge med?</p>
-            <p>Send dem dit eget link. Så kan vi se, hvem der kom via dig.</p>
             <div class="henvis-rad"><input id="henvisLink" type="text" readonly aria-label="Dit link til Sagsvagt"><button type="button" class="btn btn-lys btn-lille" id="henvisKnap">Kopiér</button></div>
             <p class="henvis-svar" role="status"></p>
+          </div>
           </div>
         </div>
       </div>
@@ -771,8 +780,11 @@
   })();
   // bekraeft: serveren har sendt en mail med et link, der skal bruges, før mandagsmailen kommer (dobbelt opt-in)
   const faerdig = (bekraeft) => {
-    if (bekraeft) { card.querySelector(".done h3").textContent = "Tjek din mail."; card.querySelector(".done-tekst").textContent = "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
-    card.classList.add("ok"); visHenvisning(form.email.value); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
+    const done = $(".done");
+    if (bekraeft) { done.querySelector("h3").textContent = "Tjek din mail."; done.querySelector(".done-tekst").textContent = "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
+    card.classList.add("ok"); visHenvisning(form.email.value);
+    document.body.append(done); done.classList.add("vis"); document.body.classList.add("tak-aaben"); done.scrollTop = 0;
+    done.querySelector(".logo").focus({ preventScroll: true }); };
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const fornavn = form.fornavn.value.trim(), efternavn = form.efternavn.value.trim(), nf = form.fornavn.closest(".felt");
