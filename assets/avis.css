@@ -240,6 +240,13 @@ p { margin: 0; }
 .kf-mere { margin: 6px 0 0; font-size: var(--fodnote); color: var(--muted); }
 .ret-fejl { margin: 10px 0 0; font-size: var(--fodnote); color: var(--muted); }
 .ret-fejl a { color: var(--nat); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.medier { margin: 24px 0 0; }
+.medier h2 { font-size: var(--t3); margin: 0 0 8px; }
+.medier ul { list-style: none; margin: 0; padding: 0; }
+.medier li { display: flex; flex-direction: column; gap: 2px; padding: 12px 0; border-top: 1px solid var(--rule); }
+.medier li a { color: var(--nat); font-weight: 600; text-decoration: none; }
+.medier li a:hover { text-decoration: underline; }
+.medier li span { font-size: var(--fodnote); color: var(--muted); }
 .kf-videre { display: block; font-size: var(--fodnote); color: var(--muted); margin-top: 2px; }
 /* Hvad kan du gøre?: samme opbygning som Kort fortalt, med en rød streg, så handlingerne skiller sig ud */
 .kf.goer { box-shadow: inset 3px 0 0 var(--vin); }

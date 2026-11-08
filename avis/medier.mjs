@@ -1,6 +1,7 @@
-// "Det skrev medierne" (prøve, 8/11-2026): henter lokale mediers RSS og finder den sag, hver artikel handler om.
+// "Det skrev medierne" (8/11-2026): henter lokale mediers RSS og finder den sag, hver artikel handler om.
 // Kun overskrift, medie, dato og link gemmes (som aftalen med Folketidende § 2.2: ingen tekst eller billeder).
-// Intet vises på sitet endnu; data/medier.json samler artiklerne over tid, fordi feedsene kun har det seneste døgn.
+// Robotten kører den før avis/byg.mjs, som viser artiklerne under sagen. data/medier.json samler artiklerne over tid,
+// fordi feedene kun har det seneste døgn.
 // Brug: node avis/medier.mjs            → henter, matcher og skriver data/medier.json og en rapport
 //       node avis/medier.mjs --fil x.xml → matcher en gemt feed-fil i stedet for at hente (til test)
 import { readFile, writeFile, readdir } from "node:fs/promises";
@@ -28,9 +29,10 @@ const dag = (iso) => Date.parse(iso.slice(0, 10)) / 864e5;
 function laesFeed(xml, feed) {
   return [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].map(([, it]) => {
     const f = (k) => renTekst((it.match(new RegExp(`<${k}>([\\s\\S]*?)</${k}>`)) || [])[1]);
-    const link = f("link"), dato = new Date(f("pubDate")).toISOString().slice(0, 10);
-    return { medie: feed.navn, titel: f("title"), link, dato, kommune: feed.kommune(link), tekst: f("description").slice(0, 600) };
-  }).filter((a) => a.titel && a.link);
+    const link = f("link"), tid = new Date(f("pubDate"));
+    if (!/^https:\/\//.test(link) || isNaN(tid)) return null;
+    return { medie: feed.navn, titel: f("title"), link, dato: tid.toISOString().slice(0, 10), kommune: feed.kommune(link), tekst: f("description").slice(0, 600) };
+  }).filter((a) => a?.titel);
 }
 
 // Sagerne pr. kommune med de ord, der gør dem genkendelige (ordenes vægt: sjældne ord i kommunen tæller mest)
@@ -65,12 +67,21 @@ async function main() {
   try { gemt = JSON.parse(await readFile(UD, "utf8")); } catch {}
   const nye = [];
   for (const feed of FEEDS) {
-    const xml = fil ? await readFile(fil, "utf8") : await (await fetch(feed.url, { headers: { "User-Agent": "Sagsvagt (sagsvagt.dk; mansa@sagsvagt.dk)" } })).text();
-    nye.push(...laesFeed(xml, feed));
+    // Svarer et medie ikke, springes det over denne gang; de gemte artikler bliver liggende
+    try {
+      const svar = fil ? null : await fetch(feed.url, { headers: { "User-Agent": "Sagsvagt (sagsvagt.dk; mansa@sagsvagt.dk)" }, signal: AbortSignal.timeout(20000) });
+      if (svar && !svar.ok) throw new Error(`HTTP ${svar.status}`);
+      nye.push(...laesFeed(fil ? await readFile(fil, "utf8") : await svar.text(), feed));
+    } catch (e) { console.log(`${feed.navn}: kunne ikke hentes (${e.message})`); }
   }
+  // Artikler uden sag fra de sidste 30 dage prøves igen, for sagen kommer ofte først på dagsordenen efter artiklen.
+  // Teksten er ikke gemt, så de prøves kun med overskriften.
+  const idag = new Date().toISOString().slice(0, 10), nyeLinks = new Set(nye.map((a) => a.link));
+  const igen = Object.entries(gemt.artikler).filter(([link, a]) => !a.sag && !nyeLinks.has(link) && dag(idag) - dag(a.dato) <= 30)
+    .map(([link, a]) => ({ ...a, link, tekst: "" }));
   const kommuner = new Map(), slugs = new Set((await readdir(join(ROD, "data"))).map((f) => f.replace(/\.json$/, "")));
   let fundet = 0;
-  for (const a of nye) {
+  for (const a of [...nye, ...igen]) {
     if (!slugs.has(a.kommune)) { console.log(`– ${a.medie}: ${a.titel} (ingen kommune: ${a.kommune})`); continue; }
     if (!kommuner.has(a.kommune)) kommuner.set(a.kommune, await laesKommune(a.kommune));
     const k = kommuner.get(a.kommune);
@@ -83,6 +94,6 @@ async function main() {
   }
   gemt.opdateret = new Date().toISOString();
   await writeFile(UD, JSON.stringify(gemt, null, 1));
-  console.log(`\n${nye.length} artikler, ${fundet} matchet med en sag. ${Object.keys(gemt.artikler).length} artikler i data/medier.json.`);
+  console.log(`\n${nye.length} nye og ${igen.length} prøvet igen, ${fundet} matchet med en sag. ${Object.keys(gemt.artikler).length} artikler i data/medier.json.`);
 }
 main();

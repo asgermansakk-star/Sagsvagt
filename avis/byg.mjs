@@ -464,6 +464,20 @@ function hvadKanDuGoere(s) {
 const notits = (s, rod = "") => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg.replace(/udvalget$/, "udvalget"))}</span> <a href="${rod}${s.url}">${esc(s.titel)}</a> <span class="nh-dato">${kortDato(s.dato)}</span></li>`;
 
 // Redaktionen: din leder, dine overskrifter og ugens tophistorie (avis/redaktion.json, redigeres med avis/redaktion.html)
+// "Det skrev medierne": artikler fra lokale medier, som avis/medier.mjs har koblet til en sag (sag-id → artikler, nyeste først)
+async function laesMedier() {
+  let d;
+  try { d = JSON.parse(await readFile(join(ROD, "data", "medier.json"), "utf8")); } catch { return new Map(); }
+  const m = new Map();
+  for (const [link, a] of Object.entries(d.artikler || {})) if (a.sag && /^https:\/\//.test(link)) (m.get(a.sag) || m.set(a.sag, []).get(a.sag)).push({ ...a, link });
+  for (const l of m.values()) l.sort((x, y) => y.dato.localeCompare(x.dato));
+  return m;
+}
+// Kun overskrift, medie, dato og link, som aftalen med Folketidende (§ 2.2)
+const medieBoks = (s, MEDIER) => {
+  const l = MEDIER.get(s.id);
+  return l ? `<section class="medier" aria-labelledby="medier-h"><h2 id="medier-h">Det skrev medierne</h2><ul>${l.map((a) => `<li><a href="${esc(a.link)}" rel="nofollow noopener">${esc(a.titel)}</a><span>${esc(a.medie)}, ${kortDato(a.dato)}</span></li>`).join("")}</ul></section>` : "";
+};
 async function laesRedaktion() {
   try { return JSON.parse(await readFile(join(ROD, "avis", "redaktion.json"), "utf8")); } catch { return {}; }
 }
@@ -522,6 +536,7 @@ async function main() {
   }
   const red = await laesRedaktion();
   const FORENKLET = await laesForenklet(); // "Forklar sagen enkelt" (avis/forenklet.mjs)
+  const MEDIER = await laesMedier(); // "Det skrev medierne" (avis/medier.mjs)
   const PERSPEKTIV = await laesPerspektiv(); // "Hvad betyder det for dig?" og "For og imod" (avis/perspektiv.mjs)
   const alleSager = alle.filter(publicerbar).map(berig).map((s) => {
     const r = red.sager?.[s.id];
@@ -665,6 +680,7 @@ async function main() {
         ${perspektivBokse(s, PERSPEKTIV, esc)}
         ${hvadKanDuGoere(s)}
         ${vejBoks(s, vej, H)}
+        ${medieBoks(s, MEDIER)}
         <details class="hel-sag">
           <summary>Læs hele sagen <span>Kommunens egen tekst</span></summary>
         ${forklar(krop.map((a) => `<h2>${esc(a.titel)}</h2>\n${afsnitTilHtml(a.tekst)}`).join("\n") + (s.status === "besluttet" ? `<h2 id="beslutning">Beslutning</h2>\n${afsnitTilHtml(s.beslutning)}` : ""), esc)}
