@@ -76,9 +76,9 @@ p.lille { font-size: var(--sekundaer); color: var(--muted); } /* småtekst under
 /* Kortet, mens fliserne hentes, og nøglen til nålenes farver (farven er ikke eneste tegn: der står, hvad den betyder) */
 .sagskort.henter { background: linear-gradient(90deg, var(--kalk-mork) 0 40%, var(--kalk-lys) 50%, var(--kalk-mork) 60% 100%) 0 0 / 250% 100%; animation: skelet 1.4s ease-in-out infinite; }
 .kort-noegle { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 4px; font-size: var(--sekundaer); font-weight: 600; }
-.kort-noegle span::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 50%; border: 2px solid #fff; vertical-align: -1px; }
-.kn-kommer::before { background: var(--indigo); }
-.kn-besluttet::before { background: var(--vin); }
+.kort-noegle span::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 50%; border: 2px solid var(--nat); vertical-align: -1px; }
+.kn-kommer::before { background: var(--lyng); } /* samme farver som prikkerne på det mørke kort */
+.kn-besluttet::before { background: var(--rosen); }
 /* Sagerne på kortet som liste, så de også kan nås med tastatur og skærmlæser */
 .kort-liste { margin: 8px 0 16px; }
 .kort-liste summary { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; cursor: pointer; }

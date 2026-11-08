@@ -804,7 +804,7 @@ var k=L.map(f,{scrollWheelZoom:false}).setView([55.676,12.568],12);
 L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).on("load",function(){f.classList.remove("henter");f.removeAttribute("aria-busy")}).addTo(k);
 function e(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 fetch("assets/kort-sager.json").then(function(r){return r.json()}).then(function(l){var g=[];l.forEach(function(s){
-var m=L.circleMarker([s.lat,s.lon],{radius:8,weight:2,color:"#fff",fillColor:s.status==="kommer"?"#28377A":"#8A2430",fillOpacity:.9}).addTo(k);
+var m=L.circleMarker([s.lat,s.lon],{radius:8,weight:2,color:"#0E0F14",fillColor:s.status==="kommer"?"#B7BBD8":"#DCA9A5",fillOpacity:1}).addTo(k);
 m.bindPopup('<p class="kort-pop-sted">'+e(s.sted)+" · "+e(s.hvor)+'</p><a href="'+e(s.url)+'">'+e(s.titel)+"</a>");g.push([s.lat,s.lon])});
 if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})}).catch(function(){var p=document.createElement("p");p.className="besked fejl";p.textContent="Sagerne kunne ikke hentes til kortet lige nu. Prøv igen om lidt.";f.after(p)})},{once:true});</script>`,
   }));
