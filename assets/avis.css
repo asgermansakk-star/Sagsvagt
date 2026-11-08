@@ -238,6 +238,8 @@ p { margin: 0; }
 .kf ul { margin: 0; padding-left: 18px; }
 .kf li + li { margin-top: 6px; }
 .kf-mere { margin: 6px 0 0; font-size: var(--fodnote); color: var(--muted); }
+.ret-fejl { margin: 10px 0 0; font-size: var(--fodnote); color: var(--muted); }
+.ret-fejl a { color: var(--nat); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .kf-videre { display: block; font-size: var(--fodnote); color: var(--muted); margin-top: 2px; }
 /* Hvad kan du gøre?: samme opbygning som Kort fortalt, med en rød streg, så handlingerne skiller sig ud */
 .kf.goer { box-shadow: inset 3px 0 0 var(--vin); }

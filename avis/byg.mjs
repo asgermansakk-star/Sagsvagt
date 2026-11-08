@@ -422,6 +422,9 @@ function kortBeslutning(t, max = 520) {
 const AABN_SCRIPT = `<script>function aabnSag(){var e=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1))),d=e&&e.closest("details");if(d&&!d.open){d.open=true;e.scrollIntoView()}}addEventListener("hashchange",aabnSag);aabnSag()</script>`;
 const helBeslutning = (s, vist) => s.beslutning.replace(/\s+/g, " ").length > vist.length + 40 ? `<span class="kf-forkortet">Beslutningen er forkortet her. <a class="kf-mere-link" href="#beslutning">Læs hele beslutningen</a></span>` : "";
 
+// "Er noget forkert?" under Kort fortalt (som Ground News' "Does this summary seem wrong?"): en mail til redaktionen
+// med sagens titel og adresse udfyldt. Ingen formular og intet gemt på serveren.
+const fejlLink = (s) => `<p class="ret-fejl">Er noget forkert her? <a href="mailto:mansa@sagsvagt.dk?subject=${encodeURIComponent(`Fejl i sagen: ${s.titel}`.slice(0, 150))}&amp;body=${encodeURIComponent(`${SITE_URL}${s.url}\n\nDet er forkert:\n`)}">Skriv til os</a></p>`;
 const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="paa-mail">
   <h2 class="rubrik">Politik, der rammer dig, hver mandag</h2>
   <p>Gratis. Du vælger selv emnerne.</p>
@@ -657,6 +660,7 @@ async function main() {
       </header>
       <div class="body">
         ${forklar(kortFortalt(s), esc, 3)}
+        ${fejlLink(s)}
         ${stemmeGrafik(s, esc)}
         ${perspektivBokse(s, PERSPEKTIV, esc)}
         ${hvadKanDuGoere(s)}
