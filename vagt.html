@@ -405,9 +405,7 @@
   }
   .spring { position: absolute; left: 16px; top: -64px; z-index: 60; padding: 10px 16px; border-radius: 8px; background: #E6DFD3; color: #0E0F14; font-weight: 600; text-decoration: none; }
   .spring:focus { top: 12px; }
-  /* Enklere forside (8/11): Mødet bag overskriften i stedet for filmen */
-  .hero { background: var(--moedet); }
-  .hero::before { content: none; }
+  /* Enklere forside (8/11): overskriften står midt på filmen */
   .hero-gitter { align-items: center; }
 </style>
 <script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1"){var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:(f||(r&&r!==location.hostname?r:"")).slice(0,60)})})}}catch(e){}</script>
@@ -433,6 +431,8 @@
 
 <main id="indhold">
   <section class="hero paa-moerk" aria-labelledby="hero-h">
+    <video class="hero-film" id="hero-film" muted loop playsinline preload="none" poster="assets/video/avisen.jpg" aria-hidden="true" tabindex="-1"></video>
+    <button class="film-pause" id="film-pause" type="button" aria-label="Sæt filmen på pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
     <div class="wrap hero-gitter">
      <div>
       <h1 id="hero-h">Politik, der rammer din hverdag.</h1>
@@ -542,6 +542,23 @@
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  /* ---------- Filmen af avisen: kun når man ikke har bedt om mindre bevægelse eller mindre data ---------- */
+  (() => {
+    const film = $("#hero-film"), knap = $("#film-pause");
+    if (reduce || navigator.connection?.saveData) return;
+    const ikon = { pause: '<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>', spil: '<path d="M8 5l11 7-11 7z"/>' };
+    film.addEventListener("playing", () => knap.classList.add("vis"), { once: true });
+    knap.addEventListener("click", () => {
+      const paa = film.paused;
+      if (paa) film.play(); else film.pause();
+      knap.setAttribute("aria-label", paa ? "Sæt filmen på pause" : "Afspil filmen");
+      knap.querySelector("svg").innerHTML = paa ? ikon.pause : ikon.spil;
+    });
+    // Den stående udgave, når feltet er højere end bredt (telefon og tablet på højkant), ellers bliver den brede film meget forstørret
+    film.src = `assets/video/avisen${film.parentElement.offsetHeight > film.parentElement.offsetWidth ? "-mobil" : ""}.mp4`;
+    film.play().catch(() => {});
+  })();
 
   // Emnerne fra den gamle demo er væk; tilmeldingen sender stadig feltet valgte_emner (tomt)
   const valgt = new Set(), EMNER = {};
