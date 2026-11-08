@@ -116,7 +116,7 @@ const soegData = (sager, EMNER, saetninger) => ({
 export const unikTitel = (l) => { const set = new Set(); return l.filter((s) => { const t = s.titel.toLowerCase(); if (set.has(t)) return false; set.add(t); return true; }); };
 
 export async function bygUdgave(k, egne, raa, valg, h, ks, top) {
-  const { ROD, IDAG, esc, side, kicker, notits, saetninger, stor, ugedag, datoTekst, slug, EMNER, MDR, d } = h;
+  const { ROD, IDAG, esc, side, kicker, notits, saetninger, stor, ugedag, datoTekst, slug, EMNER, MDR, d, billedeSti } = h;
   const R = `kommune/${k.slug}`, stier = [];
   await mkdir(join(ROD, R, "emne"), { recursive: true });
   const skriv = async (sti, s) => { stier.push(sti.replace(/index\.html$/, "")); await writeFile(join(ROD, sti), side({ ...s, sti: sti.replace(/index\.html$/, ""), kommune: k })); };
@@ -163,13 +163,15 @@ export async function bygUdgave(k, egne, raa, valg, h, ks, top) {
     const meta = m.dato >= IDAG ? `${m.antal} ${m.antal === 1 ? "punkt" : "punkter"} på dagsordenen`
       : m.referat ? `Referat offentliggjort${nBesl ? ` · ${nBesl} ${nBesl === 1 ? "beslutning" : "beslutninger"}` : ""}` : "Referatet er ikke offentliggjort endnu";
     return `<article class="moede">
-  <p class="moede-dato" aria-hidden="true"><b>${d(m.dato).getUTCDate()}</b><span>${MDR[d(m.dato).getUTCMonth()].slice(0, 3)}.</span><span>${ugedag(m.dato).slice(0, 3)}.</span></p>
-  <div>
-    <h3>${prUdvalg[m.udvalg] ? `<a href="${udvalgUrl(m.udvalg)}">${esc(m.udvalg)}</a>` : esc(m.udvalg)}</h3>
-    <p class="moede-meta">${stor(ugedag(m.dato))} ${datoTekst(m.dato)} · ${meta} · <a href="${esc(m.url)}" rel="nofollow">${m.referat ? "Referatet" : "Dagsordenen"} hos kommunen</a></p>
-    ${vis.length ? `<ul class="punkter">${vis.map((s) => `<li><a href="../../${s.url}">${esc(s.titel)}</a>${s.status === "besluttet" && s.udfald ? `<span class="punkt-udfald">${esc(s.udfald)}</span>` : ""}${h.emneLinks(s, "../../")}</li>`).join("")}</ul>` : ""}
-    ${flere || rutine ? `<p class="moede-mere">${[flere && `${flere} ${flere === 1 ? "sag" : "sager"} mere`, rutine && `${rutine} ${rutine === 1 ? "rutinesag" : "rutinesager"}`].filter(Boolean).join(" og ")}. <a href="${udvalgUrl(m.udvalg)}">Se alle sager fra ${esc(m.udvalg)}</a></p>` : ""}
+  <div class="moede-hoved">
+    <p class="moede-dato"><span>${ugedag(m.dato).slice(0, 3)}.</span><b>${d(m.dato).getUTCDate()}</b><span>${MDR[d(m.dato).getUTCMonth()].slice(0, 3)}.</span></p>
+    <div>
+      <h3>${prUdvalg[m.udvalg] ? `<a href="${udvalgUrl(m.udvalg)}">${esc(m.udvalg)}</a>` : esc(m.udvalg)}</h3>
+      <p class="moede-meta">${meta} · <a href="${esc(m.url)}" rel="nofollow">${m.referat ? "Referatet" : "Dagsordenen"} hos kommunen</a></p>
+    </div>
   </div>
+  ${vis.length ? `<div class="gk-liste">${vis.map((s) => `<article class="gk"><a class="gk-billede" href="../../${s.url}" tabindex="-1" aria-hidden="true"><img src="../../${billedeSti(s)}" alt="" loading="lazy"></a>${s.emner.length ? `<span class="emne-tag ${EMNER[s.emner[0]].f}">${esc(EMNER[s.emner[0]].navn)}</span>` : ""}<h4 class="hl"><a href="../../${s.url}">${esc(s.titel)}</a></h4>${s.status === "besluttet" && s.udfald ? `<p class="punkt-udfald">${esc(s.udfald)}</p>` : ""}</article>`).join("")}</div>` : ""}
+    ${flere || rutine ? `<p class="moede-mere">${[flere && `${flere} ${flere === 1 ? "sag" : "sager"} mere`, rutine && `${rutine} ${rutine === 1 ? "rutinesag" : "rutinesager"}`].filter(Boolean).join(" og ")}. <a href="${udvalgUrl(m.udvalg)}">Se alle sager fra ${esc(m.udvalg)}</a></p>` : ""}
 </article>`;
   };
   await skriv(`${R}/moeder.html`, {

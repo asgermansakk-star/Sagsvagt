@@ -28,7 +28,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
   const chips = (liste) => `<ul class="chips">${liste.map((k) => `<li><a href="${kHref(k)}">${esc(k.navn)}${AABNE.has(k.slug) ? ' <span class="aaben">åben</span>' : ""}</a></li>`).join("")}</ul>`;
   // De nyeste vigtige sager fra København som eksempel på, hvad man får
   const eksempler = sager.filter((s) => s.status !== "kommer" && s.vaegt >= 2 && !s.rutine).slice(0, 4);
-  const eksempel = `<ul class="notitser">${eksempler.map((s) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</span> <a href="../${s.url}">${esc(s.titel)}</a> <span class="nh-dato">${kortDato(s.dato)}</span></li>`).join("")}</ul>`;
+  const eksempel = `<ul class="notitser">${eksempler.map((s) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)} <span class="nh-dato">${kortDato(s.dato)}</span></span> <a href="../${s.url}">${esc(s.titel)}</a></li>`).join("")}</ul>`;
   const stil = `<style>
   .kommune-side .kicker a { color: inherit; }
   .kommune-tilmeld { background: var(--moedet); color: var(--kalk); border-radius: 12px; padding: 24px 26px; margin: 26px 0 34px; display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; justify-content: space-between; }

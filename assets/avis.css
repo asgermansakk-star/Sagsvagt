@@ -191,8 +191,10 @@ p { margin: 0; }
 .notitser li:last-child { border-bottom: 0; }
 .kortnyt li a, .notitser li a { text-decoration: none; font-weight: 600; display: inline; padding: 6px 0; margin: -6px 0; } /* større trykflade uden at ændre layoutet */
 .kortnyt li a:hover, .notitser li a:hover { text-decoration: underline; }
-.nh-hvor { display: block; font-size: var(--fodnote); font-weight: 500; color: var(--muted); margin-bottom: 2px; }
-.nh-dato { font-size: var(--fodnote); color: var(--muted); white-space: nowrap; margin-left: 6px; }
+/* Overrubrikken står tydeligt i Vin med datoen på samme linje, så overskriften står for sig selv (8/11) */
+.nh-hvor { display: block; font-size: var(--fodnote); font-weight: 700; color: var(--vin); letter-spacing: .01em; margin-bottom: 4px; }
+.nh-dato { font-size: var(--fodnote); font-weight: 500; color: var(--muted); white-space: nowrap; }
+.nh-hvor .nh-dato::before { content: "· "; }
 
 .rail { padding-top: 4px; }
 .rail section + section { margin-top: 32px; }
@@ -304,14 +306,23 @@ dfn.ord:focus { outline: 2px solid var(--skifer); outline-offset: 2px; }
 
 /* Møder */
 .moeder .sec-h { margin-top: 24px; }
-.moede { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--rule); }
-.moede-dato { margin: 0; text-align: center; background: var(--kalk-lys); border-radius: var(--r-felt); padding: 8px 0 9px; line-height: 1.1; align-self: start; }
-.moede-dato b { display: block; font-size: 1.625rem; letter-spacing: -.02em; }
-.moede-dato span { display: block; font-size: var(--billedtekst); font-weight: 600; color: var(--muted); }
+/* Møderne som kort (8/11): mørk datoflise, udvalget og sagerne med billede som forsidens gitter */
+.moede { background: var(--kalk-lys); border-radius: 16px; padding: 20px; margin: 16px 0; }
+.moede-hoved { display: flex; align-items: center; gap: 16px; }
+.moede-dato { flex: none; width: 64px; margin: 0; text-align: center; background: var(--nat); color: var(--kalk); border-radius: 12px; padding: 8px 0 9px; line-height: 1.1; }
+.moede-dato b { display: block; font-size: 1.75rem; letter-spacing: -.02em; }
+.moede-dato span { display: block; font-size: var(--billedtekst); font-weight: 600; color: rgba(230,223,211,.75); }
 .moede h3 { margin: 0; font-size: var(--t3); }
-.moede h3 a { text-decoration: none; }
+.moede h3 a { text-decoration: none; color: var(--nat); }
 .moede-meta { margin: 4px 0 0; font-size: var(--fodnote); color: var(--muted); }
 .moede-meta a { color: var(--indigo); }
+.moede .gk-liste { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 16px; margin-top: 20px; }
+.moede .gk .hl { font-size: var(--sekundaer); line-height: 1.3; margin: 0; }
+.moede .gk .hl a { color: var(--nat); text-decoration: none; }
+.moede .gk .hl a:hover { text-decoration: underline; }
+.moede .punkt-udfald { margin: 0; }
+@media (max-width: 900px) { .moede .gk-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .moede { padding: 16px; } .moede .gk-liste { grid-template-columns: 1fr; gap: 0; } }
 .punkter { list-style: none; margin: 12px 0 0; padding: 0; }
 .punkter li { padding: 10px 0; border-top: 1px solid var(--rule); font-size: var(--broed); line-height: 1.35; }
 .punkter li a { text-decoration: none; font-weight: 600; }
@@ -391,7 +402,6 @@ footer.foot a:hover { text-decoration: underline; }
   .parti-tabel th, .parti-tabel td { padding: 10px 5px; font-size: var(--fodnote); }
   .parti-tabel .parti { white-space: normal; }
   .pct { min-width: 0; } .pct-bar { display: none; }
-  .moede { grid-template-columns: 56px minmax(0, 1fr); gap: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .001ms !important; animation-duration: .001ms !important; }

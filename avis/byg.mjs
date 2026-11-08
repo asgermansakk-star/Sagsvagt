@@ -470,8 +470,8 @@ function hvadKanDuGoere(s) {
   return `<section class="kf goer" aria-labelledby="goer-h"><h2 id="goer-h">Hvad kan du gøre?</h2><dl>${r.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl></section>`;
 }
 
-// Én linje pr. sag: hvor, overskrift og dato
-const notits = (s, rod = "") => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg.replace(/udvalget$/, "udvalget"))}</span> <a href="${rod}${s.url}">${esc(s.titel)}</a> <span class="nh-dato">${kortDato(s.dato)}</span></li>`;
+// Én linje pr. sag: overrubrik med hvor og dato, derunder overskriften
+const notits = (s, rod = "") => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg.replace(/udvalget$/, "udvalget"))} <span class="nh-dato">${kortDato(s.dato)}</span></span> <a href="${rod}${s.url}">${esc(s.titel)}</a></li>`;
 
 // Redaktionen: din leder, dine overskrifter og ugens tophistorie (avis/redaktion.json, redigeres med avis/redaktion.html)
 // "Det skrev medierne": artikler fra lokale medier, som avis/medier.mjs har koblet til en sag (sag-id → artikler, nyeste først)
@@ -729,13 +729,15 @@ async function main() {
     const meta = m.dato >= IDAG ? `${m.antal} ${m.antal === 1 ? "punkt" : "punkter"} på dagsordenen`
       : m.referat ? `Referat offentliggjort${nBesl ? ` · ${nBesl} ${nBesl === 1 ? "beslutning" : "beslutninger"}` : ""}` : "Referatet er ikke offentliggjort endnu";
     return `<article class="moede">
-  <p class="moede-dato" aria-hidden="true"><b>${d(m.dato).getUTCDate()}</b><span>${MDR[d(m.dato).getUTCMonth()].slice(0, 3)}.</span><span>${ugedag(m.dato).slice(0, 3)}.</span></p>
-  <div>
-    <h3><a href="${udvalgUrl(m.udvalg)}">${esc(hvorNavn(m.udvalg))}</a></h3>
-    <p class="moede-meta">${stor(ugedag(m.dato))} ${datoTekst(m.dato)} · ${meta} · <a href="${esc(m.url)}" rel="nofollow">${m.referat ? "Referatet" : "Dagsordenen"} hos kommunen</a></p>
-    ${vis.length ? `<ul class="punkter">${vis.map((s) => `<li><a href="${s.url}">${esc(s.titel)}</a>${s.status === "besluttet" && s.udfald ? `<span class="punkt-udfald">${esc(s.udfald)}</span>` : ""}${emneLinks(s, "")}</li>`).join("")}</ul>` : ""}
-    ${flere || rutine ? `<p class="moede-mere">${[flere && `${flere} ${flere === 1 ? "sag" : "sager"} mere`, rutine && `${rutine} ${rutine === 1 ? "rutinesag" : "rutinesager"}`].filter(Boolean).join(" og ")}. <a href="${udvalgUrl(m.udvalg)}">Se alle sager fra ${esc(hvorNavn(m.udvalg))}</a></p>` : ""}
+  <div class="moede-hoved">
+    <p class="moede-dato"><span>${ugedag(m.dato).slice(0, 3)}.</span><b>${d(m.dato).getUTCDate()}</b><span>${MDR[d(m.dato).getUTCMonth()].slice(0, 3)}.</span></p>
+    <div>
+      <h3><a href="${udvalgUrl(m.udvalg)}">${esc(hvorNavn(m.udvalg))}</a></h3>
+      <p class="moede-meta">${meta} · <a href="${esc(m.url)}" rel="nofollow">${m.referat ? "Referatet" : "Dagsordenen"} hos kommunen</a></p>
+    </div>
   </div>
+  ${vis.length ? `<div class="gk-liste">${vis.map((s) => `<article class="gk"><a class="gk-billede" href="${s.url}" tabindex="-1" aria-hidden="true"><img src="${billedeSti(s)}" alt="" loading="lazy"></a>${s.emner.length ? `<span class="emne-tag ${EMNER[s.emner[0]].f}">${esc(EMNER[s.emner[0]].navn)}</span>` : ""}<h4 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h4>${s.status === "besluttet" && s.udfald ? `<p class="punkt-udfald">${esc(s.udfald)}</p>` : ""}</article>`).join("")}</div>` : ""}
+    ${flere || rutine ? `<p class="moede-mere">${[flere && `${flere} ${flere === 1 ? "sag" : "sager"} mere`, rutine && `${rutine} ${rutine === 1 ? "rutinesag" : "rutinesager"}`].filter(Boolean).join(" og ")}. <a href="${udvalgUrl(m.udvalg)}">Se alle sager fra ${esc(hvorNavn(m.udvalg))}</a></p>` : ""}
 </article>`;
   };
   await writeFile(join(ROD, "moeder.html"), side({
@@ -743,7 +745,7 @@ async function main() {
     sti: "moeder.html", rod: "", aktiv: "moeder",
     indhold: `<div class="wrap"><div class="listing moeder">
   <h1>Møder</h1>
-  <p class="abonner"><a href="kalender/alle.ics">Føj alle møder til din kalender</a>. Under hvert udvalg kan du nøjes med dets egne møder.</p>
+  <p class="abonner"><a href="kalender/alle.ics">Føj alle møder til din kalender</a></p>
   <h2 class="sec-h">Kommende møder</h2>
   ${kommendeMoeder.length ? kommendeMoeder.map(moedeKort).join("\n") : `<p class="intro">Der er ingen offentliggjorte dagsordener til kommende møder lige nu.</p>`}
   <h2 class="sec-h" style="margin-top:40px">Seneste møder</h2>
