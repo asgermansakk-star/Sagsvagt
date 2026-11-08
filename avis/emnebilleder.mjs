@@ -2,7 +2,7 @@
 // Fra 8/11-2026 er tegningerne lavet i Canva (identitet/canva-emnetegninger.md): assets/emner/<id>.jpg, <id>-2.jpg og <id>-3.jpg.
 // Hver sag får en fast variant ud fra sit id, så samme sag altid har samme billede, men nabosager ikke ligner hinanden.
 // De gamle <id>.svg bliver liggende, fordi Sagsvagt Erhvervs mails (signaler.mjs) og ældre sider bruger dem.
-const VARIANTER = { trafik: 3, bolig: 3, byggeri: 3, klima: 3, skole: 3, budget: 2, affald: 2, social: 2, kultur: 2, aeldre: 2, unge: 2, erhverv: 2, generel: 1 };
+const VARIANTER = { trafik: 3, bolig: 3, byggeri: 3, klima: 3, skole: 3, budget: 2, affald: 2, social: 2, kultur: 2, aeldre: 2, unge: 2, erhverv: 2, generel: 4 };
 const EMNEBILLEDER = new Set(Object.keys(VARIANTER));
 
 // Sagens emne-id. s.emnerTitel (emner fundet i overskriften) går forud for s.emner (overskrift + underrubrik),
