@@ -466,6 +466,29 @@
     .velkommen { padding: 16px 16px 14px; margin-bottom: 22px; font-size: .9375rem; }
     .velkommen h2 { font-size: 1.125rem; }
   }
+
+  /* ---------- Som avisen udefra, med et lidt mere premium udtryk (8/11) ----------
+     Hovedet på to rækker: logo, Min avis og datoen øverst, Konto til højre og siderne centreret nedenunder.
+     Toppen med natkortet er lavere uden tallene, og forsiden er én spalte: tophistorien med stort billede, gitteret og "Vis flere". */
+  @media (min-width: 721px) {
+    .min-hoved .wrap { flex-wrap: wrap; position: relative; column-gap: 18px; }
+    .min-hoved .mh-logo { min-height: 84px; }
+    .min-hoved .mh-edition { display: block; order: 0; text-align: left; padding-left: 18px; border-left: 1px solid rgba(230,223,211,.3); line-height: 1.45; }
+    .min-hoved .mh-nav { order: 3; flex: 0 0 calc(100% + 48px); margin: 0 -24px; justify-content: center; gap: 0 36px; border-top: 1px solid rgba(230,223,211,.14); font-size: 1rem; }
+    .min-hoved .mh-nav > a { min-height: 52px; padding: 0 2px; border-radius: 0; font-weight: 600; opacity: .8; background: none; }
+    .min-hoved .mh-nav > a:hover { opacity: 1; background: none; }
+    .min-hoved .mh-nav > a[aria-current] { opacity: 1; background: none; box-shadow: inset 0 -3px 0 var(--kalk); }
+    .min-hoved .mh-nav .konto { position: absolute; right: 24px; top: 20px; margin: 0; }
+  }
+  .topband { padding: 24px 0 28px; }
+  .topband .ed-tal { display: none; }
+  .min-front { padding: 8px 0 0; }
+  .min-front .lead.kort { display: block; padding-bottom: 0; border-bottom: 0; }
+  .min-front .lead .kort-billede { aspect-ratio: 16 / 9; margin-bottom: 16px; border-radius: 14px; }
+  .min-front .lead .hl { font-size: var(--t-stor); line-height: 1.08; letter-spacing: -.025em; max-width: 24ch; }
+  .min-under { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 8px 0 48px; padding-top: 28px; border-top: 1px solid var(--rule); }
+  .min-under .sec-h { margin-top: 0; }
+  @media (max-width: 900px) { .min-under { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -488,13 +511,13 @@
   i.addEventListener("animationend", function (e) { if (e.target === i) slut(); });
   setTimeout(slut, 2600);
 })();</script>
-<header class="masthead">
+<header class="masthead min-hoved">
   <div class="wrap">
     <div class="mh-row">
       <a class="mh-logo" href="#forside" aria-label="Sagsvagt, Min avis: til din forside"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg><span class="mh-min">Min avis</span></a>
       <p class="mh-edition" id="udgave"></p>
     </div>
-    <!-- Menuen: siderne på én linje og det personlige i "Konto". På telefonen bliver den en fast tab-bjælke i bunden
+    <!-- Menuen: som avisens hoved står siderne centreret på deres egen række og Konto øverst til højre (8/11). På telefonen bliver den en fast tab-bjælke i bunden
          med ikoner, så den kan nås med tommelfingeren; Mandagsmail ligger så under Konto. -->
     <nav class="mh-nav" id="min-nav" aria-label="Min avis" hidden>
       <a href="#forside" data-side="forside" aria-current="page"><svg class="ni" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Forside</span></a>
@@ -569,7 +592,6 @@
           </div>
         </div>
         <section class="seneste siden" id="siden" aria-labelledby="sd-h" hidden></section>
-        <section class="seneste" id="seneste" aria-labelledby="sn-h" hidden></section>
         <div class="mine" id="mine"></div>
         <form class="panel" id="panel" hidden onsubmit="return false">
           <fieldset class="ikoner">
@@ -598,13 +620,9 @@
         </form>
       </section>
 
-      <div class="front" data-visning="forside">
-        <div>
-          <h2 class="sec-h" style="margin-top:2px">Besluttet om dine emner</h2>
-          <div id="besluttet"></div>
-          <p class="se-alle"><a href="#sager">Se alle sager om dine emner →</a></p>
-        </div>
-        <div class="rail">
+      <div class="min-front" data-visning="forside">
+        <div id="besluttet"></div>
+        <div class="min-under">
           <section aria-labelledby="h-kommer">
             <h2 id="h-kommer" class="sec-h">Dine kommende møder</h2>
             <div id="kommer"></div>
@@ -1118,6 +1136,14 @@
     return `<article class="kort">${billedeLink(s)}<div class="kort-tekst">${handl(s)}${kicker(s)}${hl}${s.st === "besluttet" ? stemmer(s) : ""}${tags(s)}</div></article>`;
   };
   const tom = (tekst) => `<p class="tom">${tekst}</p>`;
+  // "Vis flere" under gitteret: de næste VIS sager; knappen forsvinder, når alle er vist (som på avisens forside)
+  const VIS = 12;
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest?.(".vis-flere"); if (!b) return;
+    const l = b.previousElementSibling.querySelectorAll(".gk[hidden]");
+    [...l].slice(0, +b.dataset.vis).forEach((x) => (x.hidden = false));
+    if (l.length <= +b.dataset.vis) b.remove();
+  });
 
   /* ---------- Tegn siden ---------- */
   let fane = "alle", soeg = "", vist = 20;
@@ -1169,26 +1195,24 @@
       + `<p class="sd-sum">${[nyeSiden.length && `${tal(nyeSiden.length, "ny sag", "nye sager")} om dine emner`, skiftet.length && `${tal(skiftet.length, "sag har", "sager har")} skiftet status`].filter(Boolean).join(" · ")}</p>`
       + `<div class="sn-liste">${sidenListe.map(({ s, mrk }) => `<a class="sn-kort" href="${link(s)}" data-laes="${esc(s.id)}"><span class="sn-tid"><span class="sd-mrk">${mrk}</span>${s.m.emner[0] && EMNER[s.m.emner[0]] ? ` · ${esc(EMNER[s.m.emner[0]].navn)}` : ""}</span><b>${esc(s.t)}</b></a>`).join("")}</div>`;
 
-    // Seneste: de nyeste sager om dine emner, med hvor længe siden
-    const siden = (iso) => { const d = Math.round(alder(iso)); return d <= 0 ? "I dag" : d === 1 ? "I går" : d < 7 ? `${d} dage siden` : stor(kort(iso)); };
-    const seneste = [...sket].sort((a, b) => b.dato.localeCompare(a.dato) || b.score - a.score).slice(0, 8);
-    $("#seneste").hidden = seneste.length < 2;
-    $("#seneste").innerHTML = `<h2 class="sn-h" id="sn-h"><span class="sn-prik" aria-hidden="true"></span>Seneste om det, du følger <a href="#sager">Se alle</a></h2>`
-      + `<div class="sn-liste">${seneste.map((s) => `<a class="sn-kort" href="${link(s)}" data-laes="${esc(s.id)}"><span class="sn-tid">${esc(siden(s.dato))}${s.m.emner[0] && EMNER[s.m.emner[0]] ? ` · ${esc(EMNER[s.m.emner[0]].navn)}` : ""}</span><b>${esc(s.t)}</b></a>`).join("")}</div>`;
-
     // Besluttet: én stor historie og et gitter
-    const [top, ...rest] = nye;
+    // Som avisens forside: den vigtigste beslutning med stort billede, og derunder dine sager i et gitter, nyeste først, med "Vis flere"
+    const top = nye[0];
+    const gitter = [...sket].filter((s) => s !== top && !s.r && s.t.toLowerCase() !== top?.t.toLowerCase()).sort((a, b) => b.dato.localeCompare(a.dato) || b.score - a.score)
+      .filter((s, i, l) => l.findIndex((x) => x.t.toLowerCase() === s.t.toLowerCase()) === i).slice(0, 72);
+    const gk = (s, i) => `<article class="gk"${i >= VIS ? " hidden" : ""}><a class="gk-billede" href="${link(s)}" data-laes="${esc(s.id)}" tabindex="-1" aria-hidden="true"><img src="${billede(s)}" alt="" loading="lazy"></a>`
+      + `${s.m.emner[0] && EMNER[s.m.emner[0]] ? `<span class="emne-tag ${EMNER[s.m.emner[0]].f}">${esc(EMNER[s.m.emner[0]].navn)}</span>` : ""}<h2 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h2></article>`;
     $("#besluttet").innerHTML = top
-      ? kortet(top, "lead") + `<div class="second">${rest.slice(0, 6).map((s) => kortet(s)).join("")}</div>`
+      ? kortet(top, "lead") + (gitter.length ? `<section class="gitter" aria-label="Flere sager om dine emner"><div class="gk-liste">${gitter.map(gk).join("")}</div>${gitter.length > VIS ? `<button type="button" class="vis-flere" data-vis="${VIS}">Vis flere</button>` : ""}</section>` : "")
       : tom("Der er ingen nye beslutninger om dine emner endnu. Vælg flere emner, eller tilføj dine egne ord under Tilpas.");
 
     // Kommende møder: dem med sager om dine emner først, de andre som en kort liste
     const moeder = (DATA.moeder || []).filter((m) => m.dato >= IDAG).map((m) => ({ ...m, mine: kommende.filter((s) => s.u === m.u && s.dato === m.dato && s.ks === m.ks) }));
     const medMine = moeder.filter((m) => m.mine.length), andre = moeder.filter((m) => !m.mine.length);
     $("#kommer").innerHTML = !moeder.length ? tom(FLERE ? "Kommunerne har ikke offentliggjort dagsordener til kommende møder endnu." : "Kommunen har ikke offentliggjort dagsordener til kommende møder endnu.")
-      : (medMine.length ? medMine.map((m) => `<div class="m-moede" data-dato="${m.dato}"><p class="dag">${esc(stor(dato(m.dato, { weekday: "long", day: "numeric", month: "long" })))}</p>`
+      : (medMine.length ? medMine.slice(0, 3).map((m) => `<div class="m-moede" data-dato="${m.dato}"><p class="dag">${esc(stor(dato(m.dato, { weekday: "long", day: "numeric", month: "long" })))}</p>`
           + `<p class="m-u"><b>${esc(hvor(m.u, FLERE && m.kn))}</b> · ${m.n} punkter, ${m.mine.length} om dine emner · <a href="${esc(m.url)}" rel="nofollow">Dagsordenen</a></p>`
-          + `${m.mine.slice(0, 4).map((s) => kortet(s, "mini")).join("")}</div>`).join("")
+          + `${m.mine.slice(0, 2).map((s) => kortet(s, "mini")).join("")}</div>`).join("")
         : tom("Ingen af de kommende møder har sager om dine emner."))
       + (andre.length ? `<p class="m-andre">${medMine.length ? "Andre møder" : "Kommende møder"}: ${andre.map((m) => `<a href="${esc(m.url)}" rel="nofollow">${esc(hvor(m.u, FLERE && m.kn))}, ${esc(kort(m.dato))}</a>`).join(" · ")}</p>` : "");
 
