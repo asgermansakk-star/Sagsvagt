@@ -30,15 +30,17 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-soenderborg.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../soenderborg.html">Sønderborg</a></p><h1>Ungdomsrådet</h1><article><p class="kicker"><span class="status besluttet">Besluttet 2. november</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-11-02-ungdomsraadet-3.html">Tak for sidst!</a></h2><p class="dek">Vi har mødtes med Sundhed-, Unge- og Forebyggelsesudvalget til en hyggelig aften.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 2. november</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-11-02-ungdomsraadet-5.html">Kulturpolitik i høring</a></h2><p class="dek">Rådet har modtaget Sønderborg Kommunes nye Kulturpolitik i høring.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 7. september</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-09-07-ungdomsraadet-4.html">Drøftelse og planlægning af uformelt møde med udvalget for Sundhed, Unge og Forebyggelse</a></h2><p class="dek">Ungdomsrådet mødes med SUF d. 19 oktober, kl. 17 – 19 til et uformelt møde.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 7. september</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-09-07-ungdomsraadet-5.html">Invitation til fernisering af Look at Me</a></h2><p class="dek">Ungdomsrådet har modtaget en invitation til ferniseringen af Look at Me</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 7. september</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-09-07-ungdomsraadet-6.html">Langbordsmiddag d. 22 oktober</a></h2><p class="dek">Der afholdes Langbordsmiddag d. 22 oktober på Sønderborghus.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../soenderborg.html">Sønderborg</a></p><h1>Ungdomsrådet</h1><article><p class="kicker"><span class="status besluttet">Besluttet 2. november</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-11-02-ungdomsraadet-3.html">Tak for sidst!</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 2. november</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-11-02-ungdomsraadet-5.html">Kulturpolitik i høring</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 7. september</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-09-07-ungdomsraadet-4.html">Drøftelse og planlægning af uformelt møde med udvalget for Sundhed, Unge og Forebyggelse</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 7. september</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-09-07-ungdomsraadet-5.html">Invitation til fernisering af Look at Me</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 7. september</span></p><h2 class="hl"><a href="../../sag/soenderborg-2026-09-07-ungdomsraadet-6.html">Langbordsmiddag d. 22 oktober</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

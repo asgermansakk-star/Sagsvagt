@@ -30,14 +30,16 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-roskilde.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../roskilde.html">Roskilde</a></p><h1>Klimaråd</h1><article><p class="kicker"><span class="status besluttet">Besluttet 8. september</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-09-08-klimaraad-2.html">Introduktion til RUC, bæredygtig renovering</a></h2><p class="dek">Thomas Budde, Professor RUC har inviteret Klimarådet til at besøge RUC og få en introduktion til den nyligt afsluttede renovering med fokus på bæredygtighed.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 8. september</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-09-08-klimaraad-3.html">Bæredygtighedspuljen - 2. ansøgningsrunde - prioritering af ansøgninger</a></h2><p class="dek">Behandling af ansøgninger til Bæredygtighedspuljen (den store pulje) efter ansøgningsfristen den 7. august.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 8. september</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-09-08-klimaraad-4.html">Opdatering af Klimahandleplan 2024-2026</a></h2><p class="dek">Klimahandleplan 2024-2026 skal opdateres i 2026. Der lægges op til drøftelse i Klimarådet. På baggrund af drøftelsen udarbejdes sag til Klima- og Miljøudvalget.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 8. september</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-09-08-klimaraad-5.html">Klimarådets mødeplan 2027</a></h2><p class="dek">Klimarådet skal fastlægge sin mødeplan i 2027.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../roskilde.html">Roskilde</a></p><h1>Klimaråd</h1><article><p class="kicker"><span class="status besluttet">Besluttet 8. september</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-09-08-klimaraad-2.html">Introduktion til RUC, bæredygtig renovering</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 8. september</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-09-08-klimaraad-3.html">Bæredygtighedspuljen - 2. ansøgningsrunde - prioritering af ansøgninger</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 8. september</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-09-08-klimaraad-4.html">Opdatering af Klimahandleplan 2024-2026</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 8. september</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-09-08-klimaraad-5.html">Klimarådets mødeplan 2027</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

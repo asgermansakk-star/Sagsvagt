@@ -30,14 +30,16 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-herlev.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../herlev.html">Herlev</a></p><h1>Ældrerådet</h1><article><p class="kicker"><span class="status">Behandlet 21. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-21-aeldreraadet-3.html">Fremtidig anvendelse af midlertidige pladser</a></h2><p class="dek">Som følge af sundhedsreformen reduceres Herlev Kommunes nuværende kapacitet på 35 midlertidige opholds- og vurderingspladser fra den 1. januar 2027.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 21. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-21-aeldreraadet-5.html">Tilgængelighedsvandring forår 2026</a></h2><p class="dek">Den 21. maj 2026 blev der afholdt en tilgængelighedsvandring i Elverparken. Der gives en status på opfølgning af de observationer, der blev gjort under vandringen.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 24. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-24-aeldreraadet-3.html">Etablering af tilgængelighedsbrugerpanel</a></h2><p class="dek">Nedsætte et tilgængelighedsbrugerpanel med ophæng i Handicap- og Ældrerådet.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 24. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-24-aeldreraadet-4.html">Orientering om Budgetforslag 2027-2030</a></h2><p class="dek">Budgetforslag 2027-2030 sendes i høring fra den 14. august 2026 til den 2. september 2026 i henhold til tidsplanen for budgetlægningen 2027.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../herlev.html">Herlev</a></p><h1>Ældrerådet</h1><article><p class="kicker"><span class="status">Behandlet 21. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-21-aeldreraadet-3.html">Fremtidig anvendelse af midlertidige pladser</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 21. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-21-aeldreraadet-5.html">Tilgængelighedsvandring forår 2026</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 24. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-24-aeldreraadet-3.html">Etablering af tilgængelighedsbrugerpanel</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 24. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-24-aeldreraadet-4.html">Orientering om Budgetforslag 2027-2030</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

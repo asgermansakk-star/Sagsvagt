@@ -42,7 +42,9 @@
 </div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
-<script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+<script>/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
+/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});
 /* Kommunevælgeren henter de åbne kommuner fra kommune/aabne.json første gang, den åbnes (toggle bobler ikke, derfor capture) */

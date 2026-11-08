@@ -30,11 +30,13 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-naestved.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../naestved.html">Næstved</a></p><h1>Handicapråd</h1><article><p class="kicker"><span class="status">Behandlet 24. august</span></p><h2 class="hl"><a href="../../sag/naestved-2026-08-24-handicapraad-1.html">Referat den 24. august 2026</a></h2><p class="dek">Mødedato 24. august 2026 Sted Teatergade 8, Mødelokale 4 Sagsnr Mødedeltagere Elene Nielsen (formand) Annja Hansen Martin Grangaard Louise Søren, Suppleant for Marianne Linda Frederiksen Bo Gammelgaard Daniel Gottrup Fraværende Tina Wibe Marianne V.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../naestved.html">Næstved</a></p><h1>Handicapråd</h1><article><p class="kicker"><span class="status">Behandlet 24. august</span></p><h2 class="hl"><a href="../../sag/naestved-2026-08-24-handicapraad-1.html">Referat den 24. august 2026</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

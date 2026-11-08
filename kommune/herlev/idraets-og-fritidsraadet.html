@@ -30,13 +30,15 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-herlev.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../herlev.html">Herlev</a></p><h1>Idræts- og Fritidsrådet</h1><article><p class="kicker"><span class="status besluttet">Besluttet 28. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-28-idraets-og-fritidsraadet-1.html">Præsentation af Idræts- og Folkeoplysningsområdet</a></h2><p class="dek">Forvaltningen giver en præsentation af Idræts- og Folkeoplysningsområdet.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 28. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-28-idraets-og-fritidsraadet-2.html">Drøftelse om justering af retningslinjer for lokaletilskud til drift af egne og lejede lokaler</a></h2><p class="dek">Idræts- og Fritidsrådet skal drøfte en tilpasning af retningslinjerne for lokaletilskud til drift af egne og lejede lokaler til godkendte foreninger.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 28. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-28-idraets-og-fritidsraadet-3.html">Præsentation og drøftelse af Foreningsundersøgelse</a></h2><p class="dek">Idræts- og Fritidsrådet besluttede på deres møde den 4. maj 2026 at afsætte midler til en foreningsundersøgelse.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../herlev.html">Herlev</a></p><h1>Idræts- og Fritidsrådet</h1><article><p class="kicker"><span class="status besluttet">Besluttet 28. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-28-idraets-og-fritidsraadet-1.html">Præsentation af Idræts- og Folkeoplysningsområdet</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 28. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-28-idraets-og-fritidsraadet-2.html">Drøftelse om justering af retningslinjer for lokaletilskud til drift af egne og lejede lokaler</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 28. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-28-idraets-og-fritidsraadet-3.html">Præsentation og drøftelse af Foreningsundersøgelse</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

@@ -30,13 +30,15 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-favrskov.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../favrskov.html">Favrskov</a></p><h1>Ældrerådet</h1><article><p class="kicker"><span class="status">Behandlet 21. oktober</span></p><h2 class="hl"><a href="../../sag/favrskov-2026-10-21-aeldreraadet-1.html">Referat</a></h2><p class="dek">1) Morgensang Morgensangen blev afholdt. 2) Godkendelse af dagsordenen Dagsordenen blev godkendt. 3) Bemærkninger til referat fra sidste møde Der var ingen bemærkninger til referatet fra sidste møde. 4) Nyt fra ældrechefen  Omorganisering på ældreområdet Ældrechefen orienterede om omorganiseringen på ældreområdet.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 16. september</span></p><h2 class="hl"><a href="../../sag/favrskov-2026-09-16-aeldreraadet-1.html">Referat</a></h2><p class="dek">1) Morgensang Morgensangen blev afholdt. 2) Godkendelse af dagsordenen Dagsordenen blev godkendt. 3) Bemærkninger til referat fra sidste møde Der var ingen bemærkninger til referatet fra sidste møde. …</p></article>
-<article><p class="kicker"><span class="status">Behandlet 19. august</span></p><h2 class="hl"><a href="../../sag/favrskov-2026-08-19-aeldreraadet-1.html">Referat</a></h2><p class="dek">1) Morgensang 2) Godkendelse af dagsordenen Dagsordenen blev godkendt. 3) Bemærkninger til referat fra sidste møde  Referattype Ældrerådet drøftede referatformen for referater fra Ældrerådets møder.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../favrskov.html">Favrskov</a></p><h1>Ældrerådet</h1><article><p class="kicker"><span class="status">Behandlet 21. oktober</span></p><h2 class="hl"><a href="../../sag/favrskov-2026-10-21-aeldreraadet-1.html">Referat</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 16. september</span></p><h2 class="hl"><a href="../../sag/favrskov-2026-09-16-aeldreraadet-1.html">Referat</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 19. august</span></p><h2 class="hl"><a href="../../sag/favrskov-2026-08-19-aeldreraadet-1.html">Referat</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

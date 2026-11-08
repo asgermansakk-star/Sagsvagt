@@ -33,7 +33,6 @@
 <div class="wrap"><div class="listing kommune-side">
   <p class="kicker"><a href="./">Alle kommuner</a> · Region Hovedstaden</p>
   <h1>Sagsvagt i Ishøj</h1>
-  <p class="intro">Sagsvagt læser dagsordener og referater fra byråd og udvalg og sender dig de sager, der handler om det, du følger. Vi er startet i København og åbner kommune for kommune, der hvor flest skriver sig op.</p>
   <div class="kommune-tilmeld"><p><b>Skriv dig op til Ishøj</b>Det er gratis. Du får besked, når Sagsvagt åbner i Ishøj Kommune, og hver tilmelding rykker Ishøj op i køen.</p><a class="btn" href="../vagt.html?kommune=Ish%C3%B8j&amp;fra=kommune-ishoej#tilmeld">Skriv mig op</a></div>
   <h2>Det får du, når Ishøj åbner</h2>
   <ul class="punkter">
@@ -43,7 +42,7 @@
   </ul>
   <h2>Se, hvordan det ser ud i København</h2>
   <p>Sagsvagt kører allerede i København. Her er nogle af de seneste beslutninger:</p>
-  <ul class="notitser"><li><span class="nh-hvor">Borgerrepræsentationen</span> <a href="../sag/kk-2026-11-05-borgerrepraesentationen-2.html">Tredje anlægsoversigt 2026</a> <span class="nh-dato">5. november</span></li><li><span class="nh-hvor">Sundheds- og Omsorgsudvalget</span> <a href="../sag/kk-2026-11-05-sundheds-og-omsorgsudvalget-2.html">Styringsmuligheder på plejehjemsområdet</a> <span class="nh-dato">5. november</span></li><li><span class="nh-hvor">Borgerrepræsentationen</span> <a href="../sag/kk-2026-11-05-borgerrepraesentationen-3.html">Bevillingsmæssige ændringer og anlægsbevillinger 2025, 3. sag</a> <span class="nh-dato">5. november</span></li><li><span class="nh-hvor">Sundheds- og Omsorgsudvalget</span> <a href="../sag/kk-2026-11-05-sundheds-og-omsorgsudvalget-3.html">Forslag om at afdække mulighederne for at etablere lokalplejehjem i Københavns Kommune</a> <span class="nh-dato">5. november</span></li></ul>
+  <ul class="notitser"><li><span class="nh-hvor">Borgerrepræsentationen <span class="nh-dato">5. november</span></span> <a href="../sag/kk-2026-11-05-borgerrepraesentationen-2.html">Tredje anlægsoversigt 2026</a></li><li><span class="nh-hvor">Sundheds- og Omsorgsudvalget <span class="nh-dato">5. november</span></span> <a href="../sag/kk-2026-11-05-sundheds-og-omsorgsudvalget-2.html">Styringsmuligheder på plejehjemsområdet</a></li><li><span class="nh-hvor">Borgerrepræsentationen <span class="nh-dato">5. november</span></span> <a href="../sag/kk-2026-11-05-borgerrepraesentationen-3.html">Bevillingsmæssige ændringer og anlægsbevillinger 2025, 3. sag</a></li><li><span class="nh-hvor">Sundheds- og Omsorgsudvalget <span class="nh-dato">5. november</span></span> <a href="../sag/kk-2026-11-05-sundheds-og-omsorgsudvalget-3.html">Forslag om at afdække mulighederne for at etablere lokalplejehjem i Københavns Kommune</a></li></ul>
   <p><a href="../index.html">Se Sagsvagt i København</a></p>
   <h2>Indtil da</h2>
   <p>Ishøj Kommune lægger selv dagsordener og referater ud på <a href="https://ishoj.dk/" rel="nofollow">ishoj.dk</a>.</p>
@@ -64,6 +63,8 @@
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

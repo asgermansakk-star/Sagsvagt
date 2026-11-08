@@ -30,17 +30,19 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-herlev.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../herlev.html">Herlev</a></p><h1>Skolerådet</h1><article><p class="kicker"><span class="status besluttet">Besluttet 29. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-29-skoleraadet-1.html">De kommende møder</a></h2><p class="dek">Skolerådet drøfter dagsordenen og indholdet for de kommende møder.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 29. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-29-skoleraadet-2.html">Arbejdet i de enkelte skolebestyrelser</a></h2><p class="dek">Skolebestyrelserne orienterer om hvad der optager dem lige nu på de enkelte skoler.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 29. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-29-skoleraadet-3.html">Anbefalinger om mobil- og skærmbrug for børn og unge</a></h2><p class="dek">Herlev Kommune arbejder med at udvikle anbefalinger om mobil- og skærmbrug for børn og unge.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 31. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-31-skoleraadet-1.html">Valg af formand</a></h2><p class="dek">Skolerådet skal vælge formand for den kommende fire års periode.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 31. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-31-skoleraadet-2.html">Fastsættelse af forretningsorden</a></h2><p class="dek">Skolerådet fastsætter forretningsorden for den kommende periode.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 31. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-31-skoleraadet-3.html">Administrativt budgetforslag for 2027</a></h2><p class="dek">Formanden orienterer om budgetforslag for 2027.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 31. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-31-skoleraadet-4.html">Kommende temaer og emner i Skolerådet</a></h2><p class="dek">Skolerådet drøfter temaer og emner for skolerådets kommende møder.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../herlev.html">Herlev</a></p><h1>Skolerådet</h1><article><p class="kicker"><span class="status besluttet">Besluttet 29. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-29-skoleraadet-1.html">De kommende møder</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 29. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-29-skoleraadet-2.html">Arbejdet i de enkelte skolebestyrelser</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 29. september</span></p><h2 class="hl"><a href="../../sag/herlev-2026-09-29-skoleraadet-3.html">Anbefalinger om mobil- og skærmbrug for børn og unge</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 31. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-31-skoleraadet-1.html">Valg af formand</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 31. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-31-skoleraadet-2.html">Fastsættelse af forretningsorden</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 31. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-31-skoleraadet-3.html">Administrativt budgetforslag for 2027</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 31. august</span></p><h2 class="hl"><a href="../../sag/herlev-2026-08-31-skoleraadet-4.html">Kommende temaer og emner i Skolerådet</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});
