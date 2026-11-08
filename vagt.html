@@ -749,6 +749,14 @@
     // Tryk på det svage felt over det aktive for at rette det; skriver man om i et felt, er man ikke klar længere
     form.addEventListener("click", (e) => { const f = e.target.closest(".forrige"); if (f && !e.target.closest("a")) vis(f); });
     form.addEventListener("input", (e) => { const f = e.target.closest(".aktiv"); if (f) { const l = trin(); const klar = l.indexOf(f) === l.length - 1 && gyldig(f); form.classList.toggle("klar", klar); tekst.textContent = klar ? "Skriv mig op" : "Næste"; } });
+    // Navnetrinnet går selv videre, når efternavnet er skrevet, og man holder en kort pause (ingen knap at trykke på)
+    let navnePause;
+    form.efternavn.addEventListener("input", () => {
+      clearTimeout(navnePause);
+      const f = form.efternavn.closest(".felt");
+      if (!f.classList.contains("aktiv") || !gyldig(f)) return;
+      navnePause = setTimeout(() => { if (aktiv === f && gyldig(f) && document.activeElement === form.efternavn) naeste(); }, 900);
+    });
     // Får tilmeldingen en fejl (fx fra serveren), vises alle felter som før, så fejlen kan rettes
     new MutationObserver(() => {
       if (!msg.classList.contains("err") || !form.classList.contains("trinvis")) return;
