@@ -157,13 +157,14 @@ const publicerbar = (s) => !STOEJ.test(renTitel(s.titel)) && !/fortrolig/i.test(
 // hoved: punkterne i menuen ({ href, navn, id, ikon }). mere: punkterne under "Mere".
 // TOPRAAD: kommunens øverste råd ("Byrådet" eller "Kommunalbestyrelsen"), der står, hvor København har Borgerrepræsentationen.
 const TOPRAAD = new Map();
-// Få punkter: Forside, Emner og Søg; resten under "Mere". Kommunen skiftes i avishovedet.
+// Få punkter: Forside, Emner, Søg og Erhverv; resten under "Mere". Kommunen skiftes i avishovedet.
 const menuData = (rod, k) => {
   if (!k) return {
     hoved: [
       { href: `${rod}index.html`, navn: "Forside", id: "forside", ikon: "hjem" },
       { href: `${rod}emne/`, navn: "Emner", id: "emne", ikon: "emner" },
       { href: `${rod}soeg.html`, navn: "Søg", id: "soeg", ikon: "soeg" },
+      { href: `${rod}erhverv.html`, navn: "Erhverv", id: "erhverv" },
     ],
     mere: [
       { href: `${rod}moeder.html`, navn: "Møder", id: "moeder" },
@@ -176,7 +177,6 @@ const menuData = (rod, k) => {
       { href: `${rod}hoeringer.html`, navn: "Høringer", id: "hoeringer" },
       { href: `${rod}partier.html`, navn: "Sådan stemmer partierne", id: "partier" },
       { href: `${rod}om.html`, navn: "Om Sagsvagt", id: "om" },
-      { href: `${rod}erhverv.html`, navn: "Sagsvagt Erhverv", id: "erhverv" },
     ],
   };
   const r = `${rod}kommune/${k.slug}`, top = TOPRAAD.get(k.navn);
@@ -185,6 +185,7 @@ const menuData = (rod, k) => {
       { href: `${r}.html`, navn: "Forside", id: "k-forside", ikon: "hjem" },
       { href: `${r}/emne/`, navn: "Emner", id: "k-emne", ikon: "emner" },
       { href: `${r}/soeg.html`, navn: "Søg", id: "k-soeg", ikon: "soeg" },
+      { href: `${rod}erhverv.html`, navn: "Erhverv", id: "erhverv" },
     ],
     mere: [
       { href: `${r}/moeder.html`, navn: "Møder", id: "k-moeder" },
@@ -195,7 +196,6 @@ const menuData = (rod, k) => {
       { href: `${r}/hoeringer.html`, navn: "Høringer", id: "k-hoeringer" },
       { href: `${r}/partier.html`, navn: "Sådan stemmer partierne", id: "k-partier" },
       { href: `${rod}om.html`, navn: "Om Sagsvagt", id: "om" },
-      { href: `${rod}erhverv.html`, navn: "Sagsvagt Erhverv", id: "erhverv" },
     ],
   };
 };
