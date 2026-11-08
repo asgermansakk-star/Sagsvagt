@@ -8,7 +8,7 @@ import { bygPlankort, plankortFigur } from "./plankort.mjs";
 import { bygStedkort, stedkortFigur } from "./stedkort.mjs";
 import { emneBillede, emneId } from "./emnebilleder.mjs";
 import { stemmeGrafik, stemmeMini } from "./stemmegrafik.mjs";
-import { hoeringsMaerke, laesLaeserfotos, laeserfotoFigur, sendFotoLink, fotoSideIndhold, bygLuftfotos, luftfotoFigur } from "./grafik.mjs";
+import { hoeringsMaerke, laesLaeserfotos, laeserfotoFigur, fotoSideIndhold, bygLuftfotos, luftfotoFigur } from "./grafik.mjs";
 import { findSteder, stedLinks, bygSteder, delRad, DEL_SCRIPT } from "./steder.mjs";
 import { bygBokse } from "./boks.mjs";
 import { bygKommuner } from "./kommuner.mjs";
@@ -158,17 +158,17 @@ const publicerbar = (s) => !STOEJ.test(renTitel(s.titel)) && !/fortrolig/i.test(
 // hoved: punkterne i menuen ({ href, navn, id, ikon }). mere: punkterne under "Mere".
 // TOPRAAD: kommunens øverste råd ("Byrådet" eller "Kommunalbestyrelsen"), der står, hvor København har Borgerrepræsentationen.
 const TOPRAAD = new Map();
-// Få punkter: Forside, Emner, Møder og Søg; resten under "Mere". Kommunen skiftes i avishovedet.
+// Få punkter: Forside, Emner og Søg; resten under "Mere". Kommunen skiftes i avishovedet.
 const menuData = (rod, k) => {
   if (!k) return {
     hoved: [
       { href: `${rod}index.html`, navn: "Forside", id: "forside", ikon: "hjem" },
       { href: `${rod}emne/`, navn: "Emner", id: "emne", ikon: "emner" },
-      { href: `${rod}kort.html`, navn: "Kort", id: "kort", ikon: "sted" },
-      { href: `${rod}moeder.html`, navn: "Møder", id: "moeder", ikon: "kalender" },
       { href: `${rod}soeg.html`, navn: "Søg", id: "soeg", ikon: "soeg" },
     ],
     mere: [
+      { href: `${rod}moeder.html`, navn: "Møder", id: "moeder" },
+      { href: `${rod}kort.html`, navn: "Kort", id: "kort" },
       { href: `${rod}ugen.html`, navn: "Ugens sager", id: "ugen" },
       { href: `${rod}bydel/`, navn: "Bydele", id: "bydel" },
       { href: `${rod}udvalg/borgerrepraesentationen.html`, navn: "Borgerrepræsentationen", id: "br" },
@@ -177,7 +177,6 @@ const menuData = (rod, k) => {
       { href: `${rod}hoeringer.html`, navn: "Høringer", id: "hoeringer" },
       { href: `${rod}partier.html`, navn: "Sådan stemmer partierne", id: "partier" },
       { href: `${rod}om.html`, navn: "Om Sagsvagt", id: "om" },
-      { href: `${rod}boks.html`, navn: "Sæt på din hjemmeside", id: "boks" },
       { href: `${rod}erhverv.html`, navn: "Sagsvagt Erhverv", id: "erhverv" },
     ],
   };
@@ -186,10 +185,10 @@ const menuData = (rod, k) => {
     hoved: [
       { href: `${r}.html`, navn: "Forside", id: "k-forside", ikon: "hjem" },
       { href: `${r}/emne/`, navn: "Emner", id: "k-emne", ikon: "emner" },
-      { href: `${r}/moeder.html`, navn: "Møder", id: "k-moeder", ikon: "kalender" },
       { href: `${r}/soeg.html`, navn: "Søg", id: "k-soeg", ikon: "soeg" },
     ],
     mere: [
+      { href: `${r}/moeder.html`, navn: "Møder", id: "k-moeder" },
       { href: `${r}/bydel/`, navn: "Bydele", id: "k-bydel" },
       ...(top ? [{ href: `${r}/${slug(top)}.html`, navn: top, id: "k-top" }] : []),
       { href: `${r}/udvalg.html`, navn: "Alle udvalg", id: "k-udvalg" },
@@ -232,7 +231,7 @@ const kommuneValg = (rod, k) => [{ navn: "København", slug: "koebenhavn" }, ...
   .join("") + `<a href="${rod}kommune/" data-alle>Alle kommuner</a>`;
 const tabBjaelke = (rod, aktiv, k) => {
   const { hoved, mere } = menuData(rod, k);
-  // Telefonen: Forside, Emner, Søg, kommunen og Mere (Møder ligger under Mere)
+  // Telefonen: Forside, Emner, Søg, kommunen og Mere
   const faner = ["hjem", "emner", "soeg"].map((i) => hoved.find((m) => m.ikon === i));
   const iMere = [...hoved.filter((m) => !faner.includes(m)), ...mere];
   return `<nav class="tabbar" aria-label="Sektioner">
@@ -255,20 +254,19 @@ const SIDER_MED_FAELLES = true;
 const FAELLES = process.env.FAELLES ? process.env.FAELLES !== "0" : SIDER_MED_FAELLES;
 const delteHoveder = new Map();
 const avishoved = (rod, aktiv, kommune) => `${LOGO_SYMBOL}
-<!-- Avishovedet i to etager (som en trykt avis): logo og udgave øverst, sektionerne centreret på en række for sig -->
-<header class="masthead to">
+<!-- Avishovedet på én række (8/11, enklere): logo og kommune til venstre, menu, knap og login til højre -->
+<header class="masthead to en">
   <div class="wrap mh-top">
     <a class="mh-logo" href="${rod}index.html" aria-label="Sagsvagt, til forsiden">${logo(196, 60)}</a>
     <details class="mh-edition mere mh-kommune"><summary><b>${esc(kommune?.navn || "København")}</b><br>${aktiv === "forside"
       ? `${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}` : "Skift kommune"}</summary><div>${kommuneValg(rod, kommune)}</div></details>
+    <nav class="mh-nav" aria-label="Hovedmenu">${menu(rod, aktiv, kommune)}
+    </nav>
     <div class="mh-handling">
-      <a class="mh-erhverv" href="${rod}erhverv.html">Erhverv</a>
       <a class="mh-cta" href="${rod}vagt.html?fra=avis#tilmeld">Skriv dig op</a>
       <a class="mh-ikon" href="${rod}min/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.2 4-4.9 7.2-4.9s5.9 1.7 7.2 4.9"/><circle cx="12" cy="12" r="10.2"/></svg><span>Log ind</span></a>
     </div>
   </div>
-  <nav class="mh-nav" aria-label="Hovedmenu"><div class="wrap">${menu(rod, aktiv, kommune)}
-  </div></nav>
 </header>
 ${tabBjaelke(rod, aktiv, kommune)}
 `;
@@ -426,7 +424,7 @@ const helBeslutning = (s, vist) => s.beslutning.replace(/\s+/g, " ").length > vi
 
 const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="paa-mail">
   <h2 class="rubrik">Politik, der rammer dig, hver mandag</h2>
-  <p>Vælg det, du går op i, fx boliger, cykler eller natteliv. Så sender vi dig de sager, politikerne har på bordet, forklaret så det giver mening. Det er gratis, og vi søger testere.</p>
+  <p>Gratis. Du vælger selv emnerne.</p>
   <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Skriv dig op</a>
 </aside>`;
 // "Hvad kan du gøre?": kun det, sagen og reglerne dækker. Byrådets møder er offentlige (styrelseslovens § 10),
@@ -459,16 +457,6 @@ function hvadKanDuGoere(s) {
   return `<section class="kf goer" aria-labelledby="goer-h"><h2 id="goer-h">Hvad kan du gøre?</h2><dl>${r.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join("")}</dl></section>`;
 }
 
-// Under sagen: tilbyd at følge netop sagens emne eller bydel. Linket udfylder emnet i tilmeldingen.
-const testerBoks = (s) => {
-  const hvad = erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.emner.length ? EMNER[s.emner[0]].navn : "";
-  const om = erLokaludvalg(s.udvalg) ? `sager fra ${esc(hvad)}` : hvad ? `sager om ${esc(hvad.toLowerCase())}` : "sager som denne";
-  return `<aside class="paa-mail tester">
-  <h2 class="rubrik">Få ${om} hver mandag</h2>
-  <p>Vi læser alle dagsordener, så du ikke skal. Hver mandag får du de sager, der handler om det, du følger. Det er gratis, og vi søger testere i hele Danmark.</p>
-  <a href="../vagt.html?fra=sag${hvad ? `&amp;emne=${encodeURIComponent(hvad)}` : ""}${erKK(s) ? "" : `&amp;kommune=${encodeURIComponent(s.kommune)}`}#tilmeld">Skriv dig op</a>
-</aside>`;
-};
 // Én linje pr. sag: hvor, overskrift og dato
 const notits = (s, rod = "") => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg.replace(/udvalget$/, "udvalget"))}</span> <a href="${rod}${s.url}">${esc(s.titel)}</a> <span class="nh-dato">${kortDato(s.dato)}</span></li>`;
 
@@ -559,8 +547,7 @@ async function main() {
   const luftfotos = await bygLuftfotos(plankort, H), laeserfotos = await laesLaeserfotos(ROD);
   const billedeSti = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || `assets/emner/${emneId(s)}.svg`;
   const topBillede = (s, rod) => plankortFigur(s, plankort, rod, esc) || stedkortFigur(s, stedKort, rod, esc) || `<figure class="emne-figur">${emneBillede(s, rod, { lazy: false })}</figure>`;
-  const flereBilleder = (s, rod) => luftfotoFigur(s, luftfotos, rod, esc) + laeserfotoFigur(s, laeserfotos, rod, esc)
-    + (stedKort.get(s.id)?.sted || plankort.get(s.id) ? sendFotoLink(s, stedKort.get(s.id)?.sted || plankort.get(s.id)?.plannavn, rod, esc) : "");
+  const flereBilleder = (s, rod) => luftfotoFigur(s, luftfotos, rod, esc) + laeserfotoFigur(s, laeserfotos, rod, esc);
   const lilleBillede = (s, rod) => `<a class="kort-billede" href="${rod}${s.url}" tabindex="-1" aria-hidden="true"><img class="emnebillede lille" src="${rod}${billedeSti(s)}" alt="" loading="lazy"></a>`;
   for (const dir of ["sag", "udvalg", "bydel", "emne"]) { await rm(join(ROD, dir), { recursive: true, force: true }); await mkdir(join(ROD, dir), { recursive: true }); }
 
@@ -607,15 +594,15 @@ async function main() {
         <a class="lead-billede" href="${top.url}" tabindex="-1" aria-hidden="true"><img class="emnebillede" src="${billedeSti(top)}" alt=""></a>
         ${kicker(top, "")}
         <h1 class="hl"><a href="${top.url}">${esc(top.titel)}</a></h1>
-        ${top.dek ? `<p class="dek anslag">${esc(saetninger(top.dek, 320))}</p>` : ""}
+        ${top.dek ? `<p class="dek anslag">${esc(saetninger(top.dek, 200))}</p>` : ""}
         ${top.status === "besluttet" && top.udfald ? `<p class="udfald">${esc(top.udfald)}</p>` : top.status === "kommer" ? `<p class="udfald kommer">Til beslutning ${ugedag(top.dato)} ${datoTekst(top.dato)}.</p>` : ""}
       </article>
       <div class="mellem">
-        ${mellem.map((s) => `<article class="med-billede">${lilleBillede(s, "")}<div>${kicker(s, "")}<h2 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 190))}</p>` : ""}${stemmeMini(s, esc)}</div></article>`).join("\n        ")}
+        ${mellem.map((s) => `<article class="med-billede">${lilleBillede(s, "")}<div>${kicker(s, "")}<h2 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h2>${stemmeMini(s, esc)}</div></article>`).join("\n        ")}
       </div>
       <a class="kort-band" href="kort.html">
         <span class="kb-kort"><img src="assets/sagskort.jpg" width="1400" height="1202" alt="" loading="lazy"><svg viewBox="0 0 ${SAGSKORT.W} ${SAGSKORT.H}" aria-hidden="true">${prikker.map((p) => `<circle cx="${p.x.toFixed(0)}" cy="${p.y.toFixed(0)}" r="24" class="${p.kommer ? "kommer" : ""}"/>`).join("")}</svg></span>
-        <span class="kb-tekst"><span class="rubrik">Kort over sagerne</span><b>Hvad sker der i din gade?</b><span>${paaKort.length} sager fra de sidste fire måneder i København, sat på et kort efter gade, skole og park.</span><span class="kb-knap">Se kortet</span></span>
+        <span class="kb-tekst"><b>Hvad sker der i din gade?</b><span>${paaKort.length} sager på kortet.</span><span class="kb-knap">Se kortet</span></span>
       </a>
       <section class="kortnyt" aria-labelledby="h-kort">
         <h2 id="h-kort" class="rubrik">Kort nyt</h2>
@@ -627,11 +614,6 @@ async function main() {
       <section aria-labelledby="h-bydele">
         <h2 id="h-bydele" class="rubrik">Fra bydelene <a href="bydel/">Alle bydele</a></h2>
         <ul class="notitser">${bydele.map((s) => notits(s)).join("")}</ul>
-      </section>
-      <section class="til-andre" aria-labelledby="h-andre">
-        <h2 id="h-andre" class="rubrik">Til virksomheder og foreninger</h2>
-        <a href="erhverv.html"><b>Sagsvagt Erhverv</b><span>Se byggerier, lokalplaner og udbud, før de bliver offentligt udbudt.</span></a>
-        <a href="boks.html"><b>Sæt Sagsvagt på din hjemmeside</b><span>Gratis boks med de nyeste sager. Vælg emne, kopiér koden.</span></a>
       </section>
       <section aria-labelledby="h-kommer">
         <h2 id="h-kommer" class="rubrik">Kalender <a href="moeder.html">Alle møder</a></h2>
@@ -667,13 +649,10 @@ async function main() {
       <header>
         ${kicker(s, "../")}
         <h1 class="hl">${esc(s.titel)}</h1>
-        ${s.dek ? `<p class="dek">${esc(s.dek)}</p>` : ""}
-        ${s.kommunensTitel ? `<p class="kommunens-titel">Kommunens titel: ${esc(s.kommunensTitel)}</p>` : ""}
+        ${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 200))}</p>` : ""}
         ${emneLinks(s, "../")}
-        ${erKK(s) ? stedLinks(stederFor(s), "../", H) : (() => { const ks = KSTED.get(s.kommune), m = `kommune/${KOMMUNE[s.kommune]?.slug}/`; return ks ? stedLinks(ks.byFor(s), "../", H, `${m}bydel/`, "Bydele i sagen:") + stedLinks(ks.stederFor(s), "../", H, `${m}sted/`) : ""; })()}
         ${topBillede(s, "../")}
         ${flereBilleder(s, "../")}
-        <!--del-->
         ${forenkletBoks(s, FORENKLET, esc)}
       </header>
       <div class="body">
@@ -682,20 +661,21 @@ async function main() {
         ${perspektivBokse(s, PERSPEKTIV, esc)}
         ${hvadKanDuGoere(s)}
         ${vejBoks(s, vej, H)}
-      <!--tester-->
         <details class="hel-sag">
           <summary>Læs hele sagen <span>Kommunens egen tekst</span></summary>
         ${forklar(krop.map((a) => `<h2>${esc(a.titel)}</h2>\n${afsnitTilHtml(a.tekst)}`).join("\n") + (s.status === "besluttet" ? `<h2 id="beslutning">Beslutning</h2>\n${afsnitTilHtml(s.beslutning)}` : ""), esc)}
         ${s.bilag.length ? `<h2>Bilag</h2><ul class="files">${s.bilag.map((b) => `<li>${/^https?:\/\//i.test(b.url || "") ? `<a href="${esc(b.url)}" rel="nofollow">${esc(b.navn)}</a>` : esc(b.navn)}</li>`).join("")}</ul>` : ""}
         </details>
-        <p class="source">Kilde: ${esc(kommunensNavn(s))}, ${esc(s.udvalg)}, ${s.type === "referat" ? "referat" : "dagsorden"} fra mødet ${ugedag(s.dato)} ${datoTekst(s.dato)}, punkt ${s.nr}. <a href="${esc(s.kilde)}" rel="nofollow">Læs den originale sag hos kommunen</a>.</p>
+        <p class="source">Kilde: ${esc(kommunensNavn(s))}, ${esc(s.udvalg)}, ${s.type === "referat" ? "referat" : "dagsorden"} fra mødet ${ugedag(s.dato)} ${datoTekst(s.dato)}, punkt ${s.nr}. <a href="${esc(s.kilde)}" rel="nofollow">Læs den originale sag hos kommunen</a>.${s.kommunensTitel ? ` Kommunens titel: ${esc(s.kommunensTitel)}.` : ""}</p>
+        ${erKK(s) ? stedLinks(stederFor(s), "../", H) : (() => { const ks = KSTED.get(s.kommune), m = `kommune/${KOMMUNE[s.kommune]?.slug}/`; return ks ? stedLinks(ks.byFor(s), "../", H, `${m}bydel/`, "Bydele i sagen:") + stedLinks(ks.stederFor(s), "../", H, `${m}sted/`) : ""; })()}
+        <!--del-->
       </div>
     </article>`;
     // Samme artikel som fragment, så Min avis kan vise hele sagen (sag/ og min/ ligger begge ét niveau nede)
-    await writeFile(join(ROD, "assets", "sager", s.url.slice(4)), artikel.replace("<!--tester-->", "").replace("<!--del-->", ""));
+    await writeFile(join(ROD, "assets", "sager", s.url.slice(4)), artikel.replace("<!--del-->", ""));
     const indhold = `<div class="wrap">
   <div class="article">
-    ${artikel.replace("<!--tester-->", testerBoks(s)).replace("<!--del-->", delRad(SITE_URL + s.url, s.titel))}
+    ${artikel.replace("<!--del-->", delRad(SITE_URL + s.url, s.titel))}
     <aside class="side">
       ${vagtBoks("../", "sag", erKK(s) ? "København" : s.kommune)}
       ${relateret.length ? `<h2 class="rubrik">Mere fra ${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</h2>${relateret.map((x) => `<article class="mini">${kicker(x, "../", false)}<h3 class="hl"><a href="../${x.url}">${esc(x.titel)}</a></h3></article>`).join("")}` : ""}

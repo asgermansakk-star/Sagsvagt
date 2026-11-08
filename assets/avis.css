@@ -528,3 +528,19 @@ footer.foot a:hover { text-decoration: underline; }
 .plankort a { display: block; }
 .plankort img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
 .plankort figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
+
+/* ---------- Avishovedet på én række (.masthead.to.en, 8/11) ----------
+   Enklere: menuen står til højre for logo og kommune i stedet for på sin egen række. Telefonen bruger stadig tab-bjælken. */
+.masthead.en .mh-top { min-height: 72px; }
+.masthead.en .mh-nav { display: flex; align-items: stretch; flex: 0 1 auto; margin-left: auto; border-top: 0; gap: 0 28px; font-size: var(--sekundaer); }
+.masthead.en .mh-nav a, .masthead.en .mh-nav summary { min-height: 72px; }
+.masthead.en .mh-nav > a[aria-current] { opacity: 1; box-shadow: inset 0 -3px 0 var(--kalk); }
+.masthead.en .mh-handling { margin-left: 28px; }
+@media (max-width: 900px) {
+  .masthead.en .mh-nav { gap: 0 18px; }
+  .masthead.en .mh-handling { margin-left: 18px; gap: 14px; }
+}
+@media (max-width: 720px) {
+  .masthead.en .mh-nav { display: none; }
+  .masthead.en .mh-handling { margin-left: auto; }
+}

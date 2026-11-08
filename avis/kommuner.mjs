@@ -80,11 +80,11 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
       <article class="lead">
         ${kicker(top, R)}
         <h1 class="hl"><a href="${R}${top.url}">${esc(top.titel)}</a></h1>
-        ${top.dek ? `<p class="dek anslag">${esc(saetninger(top.dek, 320))}</p>` : ""}
+        ${top.dek ? `<p class="dek anslag">${esc(saetninger(top.dek, 200))}</p>` : ""}
         ${top.status === "besluttet" && top.udfald ? `<p class="udfald">${esc(top.udfald)}</p>` : top.status === "kommer" ? `<p class="udfald kommer">Til beslutning ${ugedag(top.dato)} ${datoTekst(top.dato)}.</p>` : ""}
       </article>
       <div class="mellem">
-        ${mellem.map((s) => `<article>${kicker(s, R)}<h2 class="hl"><a href="${R}${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 190))}</p>` : ""}</article>`).join("\n        ")}
+        ${mellem.map((s) => `<article>${kicker(s, R)}<h2 class="hl"><a href="${R}${s.url}">${esc(s.titel)}</a></h2></article>`).join("\n        ")}
       </div>
       <section class="kortnyt" aria-labelledby="h-kort">
         <h2 id="h-kort" class="rubrik">Kort nyt</h2>
