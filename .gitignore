@@ -10,3 +10,7 @@ api/_ord-*.txt
 avis/erhverv-fakta-koe.json
 # Interne noter, kunderapporter og salgslister må aldrig i det offentlige repo
 /plan/
+
+# Testresultater (npm test: Playwright-spor og Lighthouse-rapporter)
+/test-resultater/
+/.lighthouseci/

@@ -1,0 +1,109 @@
+# Testpipelinen for sagsvagt.dk i fire trin: unittest → integrationstest → E2E-test → performancetest.
+# Et trin kører kun, når det forrige er grønt. Kører ved push til alle andre grene end main. På main kører den som
+# første job i "Opdater avisen" (opdater-avisen.yml), så robotten kun henter, bygger og uploader, når alle fire er grønne.
+# Lokalt: npm test (eller ét trin ad gangen: npm run test:unit, test:integration, test:e2e, test:perf).
+name: Test
+
+on:
+  push:
+    branches-ignore: [main]
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    name: 1. Unittest
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Kun koden; de byggede sider og data er ikke nødvendige her
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /avis/
+            /api/
+            /tests/
+            /package.json
+            /package-lock.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run test:unit
+
+  integration:
+    name: 2. Integrationstest
+    needs: unit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # Hele repoet: ordindekset bygges fra data/, og linktjekket læser alle sider
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: php --version
+      - run: npm run test:integration
+
+  e2e:
+    name: 3. E2E-test
+    needs: integration
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      # Det byggede site uden rådata
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /*
+            !/data/
+            !/identitet/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e
+      - name: Gem rapport og spor
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e2e-rapport
+          path: test-resultater/
+          retention-days: 14
+
+  performance:
+    name: 4. Performancetest
+    needs: e2e
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            /*
+            !/data/
+            !/identitet/
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      # Lighthouse bruger den Chrome, der følger med maskinen
+      - run: npm run test:perf
+      - name: Gem Lighthouse-rapporterne
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse
+          path: test-resultater/lighthouse/
+          retention-days: 14

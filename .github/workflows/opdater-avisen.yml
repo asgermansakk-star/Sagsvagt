@@ -1,6 +1,7 @@
 # Henter nye dagsordener og referater, bygger avisen igen og uploader den til
 # sagsvagt.dk hos Simply via FTPS. Kører hver morgen og eftermiddag (dansk tid),
 # når nogen pusher til main, og kan også startes manuelt under "Actions".
+# Først kører testpipelinen (test.yml: unit → integration → E2E → performance). Robotten starter kun, når den er grøn.
 #
 # Kræver tre hemmeligheder (Settings > Secrets and variables > Actions):
 #   FTP_SERVER    ftp.simply.com (port 21, FTPS)
@@ -27,7 +28,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+
   opdater:
+    needs: test
     runs-on: ubuntu-latest
     # Første upload er alle filer over FTPS og tager timer. Derefter uploades kun ændrede filer. Når mange sider
     # ændres på én gang (nye kommuner, nyt layout), kan uploaden tage over to timer; derfor 350 minutter (maks. er 360).
@@ -42,7 +47,8 @@ jobs:
           node-version: 24
           cache: npm
 
-      - run: npm ci
+      # Testværktøjerne (devDependencies) skal ikke bruges af robotten
+      - run: npm ci --omit=dev
 
       # Selvtjek af PDF-parseren (avis/tjek-parsepdf.mjs). Består den ikke, hentes der ikke nye møder fra de andre kommuner,
       # så en ødelagt parser ikke giver sagerne forkert tekst. Resten af avisen opdateres, og kørslen bliver rød til sidst.
