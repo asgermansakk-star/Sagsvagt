@@ -492,7 +492,7 @@
   <div class="wrap">
     <div class="mh-row">
       <a class="mh-logo" href="#forside" aria-label="Sagsvagt, Min avis: til din forside"><svg viewBox="0 0 964.08 300.00" width="168" height="52" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg><span class="mh-min">Min avis</span></a>
-      <p class="mh-edition" id="udgave">Nyt fra byråd, udvalg og lokaludvalg</p>
+      <p class="mh-edition" id="udgave"></p>
     </div>
     <!-- Menuen: siderne på én linje og det personlige i "Konto". På telefonen bliver den en fast tab-bjælke i bunden
          med ikoner, så den kan nås med tommelfingeren; Mandagsmail ligger så under Konto. -->
@@ -890,7 +890,7 @@
       <label for="login-mail">Din e-mail</label><input id="login-mail" type="email" autocomplete="email" placeholder="navn@eksempel.dk">
       <label for="login-kode" style="margin-top:12px">Adgangskode</label><input id="login-kode" type="password" autocomplete="current-password">
       <button type="submit">Log ind</button>
-      <small id="login-note"><a href="adgang.html" style="color:inherit">Glemt adgangskode?</a> Brug også det link, hvis du er skrevet op, men ikke har valgt en adgangskode endnu. Vi sender dig en mail. Kan du ikke finde den, så tjek din mappe med uønsket mail.</small>`;
+      <small id="login-note"><a href="adgang.html" style="color:inherit">Glemt eller ingen adgangskode?</a></small>`;
     f.onsubmit = (e) => {
       e.preventDefault();
       const note = $("#login-note"), knap = f.querySelector("button");
