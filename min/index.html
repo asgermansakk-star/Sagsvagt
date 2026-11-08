@@ -255,7 +255,11 @@
   .sd-mrk { color: var(--vin); font-weight: 700; }
   .sn-h { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; font: 700 1rem/1.2 var(--sans); color: var(--vin); }
   .sn-h a { margin-left: auto; font-size: var(--fodnote); font-weight: 600; color: var(--nat); }
-  .sn-prik { width: 9px; height: 9px; border-radius: 50%; background: var(--vin); box-shadow: 0 0 0 4px rgba(138,36,48,.15); }
+  .sn-prik { position: relative; flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--vin); box-shadow: 0 0 0 4px rgba(138,36,48,.15); }
+  /* Prikken pulserer roligt (en ring breder sig og forsvinder hvert 2,4 sekund); ikke for dem, der har slået bevægelse fra */
+  .sn-prik::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--vin); animation: sn-puls 2.4s ease-out infinite; }
+  @keyframes sn-puls { 0% { transform: scale(1); opacity: .5; } 70%, 100% { transform: scale(3); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .sn-prik::after { animation: none; opacity: 0; } }
   .sn-liste { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; margin: 0 -24px; padding: 0 24px; }
   .sn-liste::-webkit-scrollbar { display: none; }
   .sn-kort { flex: 0 0 min(78%, 290px); scroll-snap-align: start; scroll-margin-left: 24px; padding: 2px 16px 2px 0; margin-right: 16px; border-right: 1px solid var(--rule); color: var(--nat); text-decoration: none; }
@@ -1203,7 +1207,7 @@
     const gk = (s, i) => `<article class="gk"${i >= VIS ? " hidden" : ""}><a class="gk-billede" href="${link(s)}" data-laes="${esc(s.id)}" tabindex="-1" aria-hidden="true"><img src="${billede(s)}" alt="" loading="lazy"></a>`
       + `${s.m.emner[0] && EMNER[s.m.emner[0]] ? `<span class="emne-tag ${EMNER[s.m.emner[0]].f}">${esc(EMNER[s.m.emner[0]].navn)}</span>` : ""}<h2 class="hl"><a href="${link(s)}" data-laes="${esc(s.id)}">${esc(s.t)}</a></h2></article>`;
     $("#besluttet").innerHTML = top
-      ? kortet(top, "lead") + (gitter.length ? `<section class="gitter" aria-label="Flere sager om dine emner"><div class="gk-liste">${gitter.map(gk).join("")}</div>${gitter.length > VIS ? `<button type="button" class="vis-flere" data-vis="${VIS}">Vis flere</button>` : ""}</section>` : "")
+      ? kortet(top, "lead") + (gitter.length ? `<section class="gitter" aria-labelledby="sn-h"><h2 class="sn-h" id="sn-h"><span class="sn-prik" aria-hidden="true"></span>Seneste om det, du følger</h2><div class="gk-liste">${gitter.map(gk).join("")}</div>${gitter.length > VIS ? `<button type="button" class="vis-flere" data-vis="${VIS}">Vis flere</button>` : ""}</section>` : "")
       : tom("Der er ingen nye beslutninger om dine emner endnu. Vælg flere emner, eller tilføj dine egne ord under Tilpas.");
 
     // Kommende møder: dem med sager om dine emner først, de andre som en kort liste
