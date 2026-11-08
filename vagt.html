@@ -303,6 +303,9 @@
   .felt input::placeholder { color: #7A7570; }
   .felt input:focus, .felt select:focus { outline: 3px solid var(--lyng); outline-offset: 2px; box-shadow: inset 0 0 0 2px var(--indigo); } /* tydelig ring uden om feltet på den mørke flade */
   .felt.bad input { box-shadow: inset 0 0 0 2px var(--rosen); }
+  .felt.navne { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; } /* fornavn og efternavn ved siden af hinanden */
+  .felt.navne.bad input:placeholder-shown { box-shadow: inset 0 0 0 2px var(--rosen); }
+  .felt.navne.bad input:not(:placeholder-shown) { box-shadow: none; }
   .valgte { display: flex; flex-wrap: wrap; gap: 6px; }
   .valgte .tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 4px 4px 12px; }
   .valgte .tag button { position: relative; border: 0; cursor: pointer; width: 32px; height: 32px; border-radius: 6px; background: rgba(14,15,20,.15); color: inherit; font-size: var(--fodnote); line-height: 1; padding: 0; }
@@ -507,6 +510,7 @@
         </div>
         <form id="form" novalidate>
           <input type="hidden" name="kilde" id="kilde">
+          <div class="felt navne"><div><label for="fornavn">Fornavn</label><input id="fornavn" name="fornavn" type="text" autocomplete="given-name" maxlength="40" placeholder=" " required></div><div><label for="efternavn">Efternavn</label><input id="efternavn" name="efternavn" type="text" autocomplete="family-name" maxlength="60" placeholder=" " required></div></div>
           <div class="felt"><label for="email">Din e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="navn@eksempel.dk" required></div>
           <!-- Usynligt felt, som kun robotter udfylder (FormSubmit kender også _honey) -->
           <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
@@ -523,7 +527,6 @@
           </div>
           <label class="flueben"><input type="checkbox" id="medlem" name="medlem"> <span>Jeg er 16-30 år og vil også være gratis medlem af <a href="https://saetdagsordenen.dk" target="_blank" rel="noopener">Sæt Dagsordenen</a></span></label>
           <div class="medlem-felter" id="medlemFelter" hidden>
-            <div class="felt"><label for="navn">Navn</label><input id="navn" name="navn" type="text" autocomplete="name" maxlength="100"></div>
             <div class="felt"><label for="alder">Alder</label><input id="alder" name="alder" type="number" inputmode="numeric" min="16" max="30"></div>
           </div>
           <div class="konto-felt" id="kontoFelt" hidden>
@@ -596,7 +599,7 @@
   // Svarer vores server ikke, tilbyder vi en færdigudfyldt mail til mansa@sagsvagt.dk. (Før gik den via FormSubmit i USA.)
   const SIGNUP_MAIL = "mansa@sagsvagt.dk";
   const mailto = (d) => `mailto:${SIGNUP_MAIL}?subject=${encodeURIComponent("Tilmelding til Sagsvagt")}&body=${encodeURIComponent(
-    `Skriv mig op til Sagsvagt.\n\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n${d.medlem ? `Medlem af Sæt Dagsordenen: ${d.navn}, ${d.alder} år\n` : ""}`)}`;
+    `Skriv mig op til Sagsvagt.\n\nNavn: ${d.navn || ""}\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n${d.medlem ? `Medlem af Sæt Dagsordenen: ${d.alder} år\n` : ""}`)}`;
   // Hvor kom den tilmeldte fra? Del fx sagsvagt.dk/vagt.html?fra=instagram eller ?fra=grupper
   const kilde = (() => {
     // ?fra= i adressen eller den side, de kom fra; intet gemmes i browseren (cookiebekendtgørelsen)
@@ -677,8 +680,8 @@
   const medlem = $("#medlem"), medlemFelter = $("#medlemFelter");
   medlem.addEventListener("change", () => {
     medlemFelter.hidden = !medlem.checked;
-    form.navn.required = form.alder.required = medlem.checked;
-    if (medlem.checked) form.navn.focus();
+    form.alder.required = medlem.checked;
+    if (medlem.checked) form.alder.focus();
   });
   // Adgangskode med det samme, hvis en af de valgte kommuner allerede er åben (kommune/aabne.json)
   const kontoFelt = $("#kontoFelt"), kontoNote = $("#kontoNote");
@@ -705,7 +708,7 @@
       const i = el.querySelector("input, select"), v = (i.value || "").trim();
       if (i.id === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
       if (i.id === "kommuner") return !!v && kommuneDele(v).every((k) => rigtigKommune(k));
-      if (i.id === "navn") return !!v;
+      if (i.id === "fornavn") return !!v && !!form.efternavn.value.trim();
       if (i.id === "alder") { const a = Number(v); return Number.isInteger(a) && a >= 16 && a <= 30; }
       if (i.id === "adgangskode") return i.value.length >= 10;
       return true; // emner, "Jeg er" og fluebenet er valgfri
@@ -724,7 +727,9 @@
       if (fokus) setTimeout(() => felt.focus({ preventScroll: true }), reduce ? 0 : 260);
     };
     const naeste = () => {
-      if (!gyldig(aktiv)) { aktiv.classList.remove("bad"); void aktiv.offsetWidth; aktiv.classList.add("bad"); aktiv.querySelector("input, select").focus(); return; }
+      // Navnetrinnet har to felter: Enter i fornavn går til efternavn
+      if (document.activeElement === form.fornavn && form.fornavn.value.trim() && !form.efternavn.value.trim()) { form.efternavn.focus(); return; }
+      if (!gyldig(aktiv)) { aktiv.classList.remove("bad"); void aktiv.offsetWidth; aktiv.classList.add("bad"); ([...aktiv.querySelectorAll("input")].find((i) => !i.value.trim()) || aktiv.querySelector("input, select")).focus(); return; }
       const l = trin(), i = l.indexOf(aktiv);
       if (i < l.length - 1) vis(l[i + 1]);
       else { form.classList.add("klar"); tekst.textContent = "Skriv mig op"; btn.focus({ preventScroll: true }); }
@@ -757,6 +762,12 @@
     card.classList.add("ok"); visHenvisning(form.email.value); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    const fornavn = form.fornavn.value.trim(), efternavn = form.efternavn.value.trim(), nf = form.fornavn.closest(".felt");
+    if (!fornavn || !efternavn) {
+      nf.classList.add("bad");
+      msg.className = "form-msg err"; msg.textContent = "Skriv dit fornavn og efternavn."; (fornavn ? form.efternavn : form.fornavn).focus(); return;
+    }
+    nf.classList.remove("bad");
     const email = form.email.value.trim(), f = form.email.parentElement;
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       f.classList.add("bad");
@@ -771,11 +782,11 @@
     }
     kf.classList.remove("bad");
     if (medlem.checked) {
-      const alder = Number(form.alder.value), fejlFelt = !form.navn.value.trim() ? form.navn : !(Number.isInteger(alder) && alder >= 16 && alder <= 30) ? form.alder : null;
-      [form.navn, form.alder].forEach((el) => el.parentElement.classList.toggle("bad", el === fejlFelt));
+      const alder = Number(form.alder.value), fejlFelt = !(Number.isInteger(alder) && alder >= 16 && alder <= 30) ? form.alder : null;
+      form.alder.parentElement.classList.toggle("bad", !!fejlFelt);
       if (fejlFelt) {
         msg.className = "form-msg err";
-        msg.textContent = fejlFelt === form.navn ? "Skriv dit navn for at blive medlem af Sæt Dagsordenen." : "Man skal være mellem 16 og 30 år for at blive medlem af Sæt Dagsordenen.";
+        msg.textContent = "Man skal være mellem 16 og 30 år for at blive medlem af Sæt Dagsordenen.";
         fejlFelt.focus(); return;
       }
     }
@@ -791,7 +802,8 @@
     const data = Object.fromEntries(new FormData(form));
     if (kode) data.adgangskode = kode; else delete data.adgangskode;
     data.medlem = medlem.checked;
-    if (!medlem.checked) { delete data.navn; delete data.alder; }
+    data.navn = `${fornavn} ${efternavn}`;
+    if (!medlem.checked) delete data.alder;
     data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
     btn.disabled = true; btn.classList.add("busy"); msg.className = "form-msg"; msg.textContent = "";
     // Vores egen server (api/tilmeld.php) gemmer tilmeldingen, så den kan få en invitation til login.

@@ -1029,7 +1029,8 @@
   const tegnAvatar = () => { $("#konto-initial").innerHTML = IKONER[profil.ikon] ? ikonSvg(profil.ikon) : esc(forbogstav()); };
   const PKEY = `sv-profil:${bruger.email}`;
   // Med login ligger profilen på serveren og følger brugeren mellem computer og telefon; browseren har en kopi
-  let profil = { ...STANDARD, ...(server.profil || gemt(PKEY) || gemt("sv-profil") || {}) };
+  // Serverens profil vinder; det, den mangler (fx en profil med kun fornavnet fra tilmeldingen), tages fra browseren
+  let profil = { ...STANDARD, ...(gemt(PKEY) || gemt("sv-profil") || {}), ...(server.profil || {}) };
   // Før kunne man kun vælge én kommune (profil.kommune); nu er det en liste
   if (!Array.isArray(profil.kommuner) || (!profil.kommuner.length && profil.kommune)) profil.kommuner = profil.kommune ? [profil.kommune] : [];
   delete profil.kommune;
