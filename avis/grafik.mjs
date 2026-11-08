@@ -37,7 +37,6 @@ export function fotoSideIndhold() {
   return `<div class="wrap smal">
   <article class="foto-side">
     <h1 class="hl">Send et billede til Sagsvagt</h1>
-    <p class="dek">Bor du tæt på et sted, politikerne beslutter noget om? Et billede fra virkeligheden gør sagen lettere at forstå for alle.</p>
     <form id="foto-form" class="foto-form" novalidate>
       <input type="hidden" name="sag" id="f-sag">
       <div class="felt"><label for="f-foto">Billede (JPEG, PNG eller HEIC, højst 10 MB)</label><input id="f-foto" name="foto" type="file" accept="image/*" required></div>

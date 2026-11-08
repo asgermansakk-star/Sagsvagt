@@ -86,7 +86,6 @@ export async function bygPartier(sager, h, o = {}) {
         return `<td style="--v:${v / 100}" title="${h.esc(PARTIER[x] || x)} og ${h.esc(PARTIER[y] || y)}: enige i ${q.enige} af ${q.n}">${v}</td>`;
       }).join("")}</tr>`).join("") + `</tbody></table></div>`;
     return `<section class="omfang" id="omfang-${id}"${i ? " hidden" : ""} aria-label="${h.esc(navn)}">
-  <p class="intro">${afst.length} ${afst.length === 1 ? "afstemning" : "afstemninger"} med partiernes stemmer.</p>
   ${tabel}
   <h2 class="sec-h" style="margin-top:36px">Hvem stemmer ens?</h2>
   ${matrix}
@@ -136,16 +135,16 @@ export async function bygHoeringer(sager, h, o = {}) {
   const dage = (iso) => Math.round((new Date(iso) - new Date(h.IDAG)) / 864e5);
   const kort = (s, frist) => `<article>${h.kicker(s, rod)}<h2 class="hl"><a href="${rod}${s.url}">${h.esc(s.titel)}</a></h2>`
     + (frist ? `<p class="frist${dage(s.frist) <= 7 ? " snart" : ""}">Høringsfrist ${h.ugedag(s.frist)} ${h.datoTekst(s.frist)}${dage(s.frist) >= 0 ? ` · ${dage(s.frist) === 0 ? "i dag" : `om ${dage(s.frist)} ${dage(s.frist) === 1 ? "dag" : "dage"}`}` : ""}</p>` : "")
-    + `<p class="dek">${h.esc(h.saetninger(s.dek, 200))}</p>${h.emneLinks(s, rod)}</article>`;
+    + `${h.emneLinks(s, rod)}</article>`;
   // Samme sag kan være behandlet i flere udvalg; den står kun én gang (den nyeste behandling)
   const unik = (l) => { const set = new Set(); return [...l].sort((a, b) => b.dato.localeCompare(a.dato)).filter((s) => !set.has(s.titel.toLowerCase()) && set.add(s.titel.toLowerCase())); };
-  const sektion = (titel, intro, l, frist) => { l = l.filter((s) => unik(l).includes(s)); return `<h2 class="sec-h" style="margin-top:34px">${titel}</h2>${intro ? `<p class="intro">${intro}</p>` : ""}${l.length ? l.map((s) => kort(s, frist)).join("\n") : `<p class="intro">Ingen lige nu.</p>`}`; };
+  const sektion = (titel, intro, l, frist) => { l = l.filter((s) => unik(l).includes(s)); return `<h2 class="sec-h" style="margin-top:34px">${titel}</h2>${l.length ? l.map((s) => kort(s, frist)).join("\n") : `<p class="intro">Ingen lige nu.</p>`}`; };
   await writeFile(join(h.ROD, sti), h.side({
     titel: kommune ? `Høringer, ${kommune.navn} – Sagsvagt` : "Høringer – Sagsvagt", beskrivelse: `Forslag fra ${hvor}, som er sendt i høring, og hvornår fristen for at svare udløber.`,
     sti, rod, aktiv, kommune,
     indhold: `<div class="wrap"><div class="listing hoeringer">
   <h1>Høringer</h1>
-  <p class="intro">Når et forslag er i høring, kan alle sende kommentarer til kommunen, før det bliver endeligt vedtaget. Her er de sager, hvor referaterne nævner en høring. Selve høringerne og hvordan du svarer, finder du på <a href="${h.esc(web)}" rel="nofollow">${h.esc(web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>${kommune ? " under høringer" : ""}.</p>
+  <p class="intro">Du svarer på høringerne på <a href="${h.esc(web)}" rel="nofollow">${h.esc(web.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>${kommune ? " under høringer" : ""}.</p>
   ${sektion("Åbne høringer", "", aabne, true)}
   ${sektion("Besluttet at sende i høring", "De seneste 60 dage. Fristen står i høringen hos kommunen.", sendes, false)}
   ${sektion("Skal behandles", "Forslag på kommende møder, som lægger op til en høring.", kommer, false)}
