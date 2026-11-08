@@ -16,7 +16,6 @@ import { soegIndhold, unikTitel, findKommuneSteder } from "./udgave.mjs";
 import { laesForenklet, forenkletBoks } from "./forenklet.mjs";
 import { laesPerspektiv, perspektivBokse } from "./perspektiv.mjs";
 import { sagensVej, vejBoks, bygPartier, bygHoeringer, bygKalendere, bygFeeds, kalenderLink, feedLink } from "./ekstra.mjs";
-import { px } from "./kortbase.mjs";
 
 const ROD = join(import.meta.dirname, "..");
 const SITE_URL = (process.env.SITE_URL || "https://sagsvagt.dk/").replace(/\/?$/, "/");
@@ -254,19 +253,19 @@ const SIDER_MED_FAELLES = true;
 const FAELLES = process.env.FAELLES ? process.env.FAELLES !== "0" : SIDER_MED_FAELLES;
 const delteHoveder = new Map();
 const avishoved = (rod, aktiv, kommune) => `${LOGO_SYMBOL}
-<!-- Avishovedet på én række (8/11, enklere): logo og kommune til venstre, menu, knap og login til højre -->
-<header class="masthead to en">
+<!-- Avishovedet i to etager som Berlingske: logo, kommune, knap og login øverst, de få sektioner centreret nedenunder -->
+<header class="masthead to">
   <div class="wrap mh-top">
     <a class="mh-logo" href="${rod}index.html" aria-label="Sagsvagt, til forsiden">${logo(196, 60)}</a>
     <details class="mh-edition mere mh-kommune"><summary><b>${esc(kommune?.navn || "København")}</b><br>${aktiv === "forside"
       ? `${esc(ugedag(IDAG).replace(/^./, (c) => c.toUpperCase()))} ${datoTekst(IDAG)}` : "Skift kommune"}</summary><div>${kommuneValg(rod, kommune)}</div></details>
-    <nav class="mh-nav" aria-label="Hovedmenu">${menu(rod, aktiv, kommune)}
-    </nav>
     <div class="mh-handling">
       <a class="mh-cta" href="${rod}vagt.html?fra=avis#tilmeld">Skriv dig op</a>
       <a class="mh-ikon" href="${rod}min/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.8 19.5c1.3-3.2 4-4.9 7.2-4.9s5.9 1.7 7.2 4.9"/><circle cx="12" cy="12" r="10.2"/></svg><span>Log ind</span></a>
     </div>
   </div>
+  <nav class="mh-nav" aria-label="Hovedmenu"><div class="wrap">${menu(rod, aktiv, kommune)}
+  </div></nav>
 </header>
 ${tabBjaelke(rod, aktiv, kommune)}
 `;
@@ -328,7 +327,9 @@ ${indhold}
 </main>
 ${faelles ? `<!--#include virtual="/del/fod.html" -->\n` : sidefod(rod)}<script>${faelles && aktiv ? `/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
-` : ""}/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+` : ""}/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
+/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});
 /* Kommunevælgeren henter de åbne kommuner fra kommune/aabne.json første gang, den åbnes (toggle bobler ikke, derfor capture) */
@@ -425,6 +426,16 @@ const helBeslutning = (s, vist) => s.beslutning.replace(/\s+/g, " ").length > vi
 // "Er noget forkert?" under Kort fortalt (som Ground News' "Does this summary seem wrong?"): en mail til redaktionen
 // med sagens titel og adresse udfyldt. Ingen formular og intet gemt på serveren.
 const fejlLink = (s) => `<p class="ret-fejl">Er noget forkert her? <a href="mailto:mansa@sagsvagt.dk?subject=${encodeURIComponent(`Fejl i sagen: ${s.titel}`.slice(0, 150))}&amp;body=${encodeURIComponent(`${SITE_URL}${s.url}\n\nDet er forkert:\n`)}">Skriv til os</a></p>`;
+// Forsidernes tophistorie i én spalte (som Berlingske): stort billede, overskrift og beslutningen i én sætning
+const topHistorie = (s, rod, billede) => `<article class="lead">
+    <a class="lead-billede" href="${rod}${s.url}" tabindex="-1" aria-hidden="true"><img class="emnebillede" src="${rod}${billede(s)}" alt=""></a>
+    ${kicker(s, rod)}
+    <h1 class="hl"><a href="${rod}${s.url}">${esc(s.titel)}</a></h1>
+    ${s.status === "besluttet" && s.udfald ? `<p class="udfald">${esc(s.udfald)}</p>` : s.status === "kommer" ? `<p class="udfald kommer">Til beslutning ${ugedag(s.dato)} ${datoTekst(s.dato)}.</p>` : ""}
+  </article>`;
+// Gitteret under tophistorien (som TV2): billede, emne og overskrift. De første VIS sager vises, og "Vis flere" viser VIS mere ad gangen.
+const VIS = 12;
+const sagGitter = (liste, rod, billede) => liste.length ? `<section class="gitter" aria-label="Flere sager"><div class="gk-liste">${liste.map((s, i) => `<article class="gk"${i >= VIS ? " hidden" : ""}><a class="gk-billede" href="${rod}${s.url}" tabindex="-1" aria-hidden="true"><img src="${rod}${billede(s)}" alt="" loading="lazy"></a>${s.emner.length ? `<span class="emne-tag ${EMNER[s.emner[0]].f}">${esc(EMNER[s.emner[0]].navn)}</span>` : ""}<h2 class="hl"><a href="${rod}${s.url}">${esc(s.titel)}</a></h2></article>`).join("")}</div>${liste.length > VIS ? `<button type="button" class="vis-flere" data-vis="${VIS}">Vis flere</button>` : ""}</section>` : "";
 const vagtBoks = (rod, fra = "avis", kommune = "København") => `<aside class="paa-mail">
   <h2 class="rubrik">Politik, der rammer dig, hver mandag</h2>
   <a href="${rod}vagt.html?fra=${fra}${kommune !== "København" ? `&amp;kommune=${encodeURIComponent(kommune)}` : ""}#tilmeld">Skriv dig op</a>
@@ -553,7 +564,7 @@ async function main() {
   }
   console.log(`${alle.length} punkter, ${sager.length} publiceres i København${andre.length ? `, ${andre.length} i andre kommuner` : ""}`);
 
-  const H = { ROD, IDAG, SITE_URL, esc, side, kicker, emneLinks, hvorNavn, stor, kortDato, datoTekst, ugedag, slug, saetninger, erLokaludvalg, bydel, vagtBoks, notits, EMNER, MDR, d };
+  const H = { ROD, IDAG, SITE_URL, esc, side, kicker, emneLinks, hvorNavn, stor, kortDato, datoTekst, ugedag, slug, saetninger, erLokaludvalg, bydel, vagtBoks, notits, topHistorie, sagGitter, EMNER, MDR, d };
   const { prSted, stederFor } = await findSteder(sager, ROD); // gader, pladser og parker (avis/steder.mjs)
   // Grafik: plankort (lokalplaner), stedkort (gader og steder), luftfoto (kun med nøgle), godkendte læserfotos.
   // Øverst på sagen står plankortet, ellers stedkortet, ellers emnets illustration (assets/emner/).
@@ -563,6 +574,7 @@ async function main() {
   H.billedeFil = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || undefined;
   const luftfotos = await bygLuftfotos(plankort, H), laeserfotos = await laesLaeserfotos(ROD);
   const billedeSti = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || `assets/emner/${emneId(s)}.svg`;
+  H.billedeSti = billedeSti;
   const topBillede = (s, rod) => plankortFigur(s, plankort, rod, esc) || stedkortFigur(s, stedKort, rod, esc) || `<figure class="emne-figur">${emneBillede(s, rod, { lazy: false })}</figure>`;
   const flereBilleder = (s, rod) => luftfotoFigur(s, luftfotos, rod, esc) + laeserfotoFigur(s, laeserfotos, rod, esc);
   const lilleBillede = (s, rod) => `<a class="kort-billede" href="${rod}${s.url}" tabindex="-1" aria-hidden="true"><img class="emnebillede lille" src="${rod}${billedeSti(s)}" alt="" loading="lazy"></a>`;
@@ -571,76 +583,28 @@ async function main() {
   // Forside
   const afholdt = sager.filter((s) => s.status !== "kommer");
   const nyheder = afholdt.filter((s) => s.vaegt > 0 && !s.rutine).sort((a, b) => b.score - a.score);
-  // Højst `max` historier fra samme udvalg, så forsiden ikke kun er ét udvalg
-  const spred = (liste, n, max) => {
-    const talt = {}; const ud = [];
-    for (const s of liste) { if (ud.length >= n) break; if ((talt[s.udvalg] = (talt[s.udvalg] || 0) + 1) <= max) ud.push(s); }
-    return ud;
-  };
+
   // Tophistorien vælger redaktionen, ellers den vigtigste sag
   const top = sager.find((s) => s.id === red.tophistorie) || nyheder[0];
   // Samme sag behandles ofte i flere udvalg; på forsiden står hver overskrift kun én gang
   const tt = (s) => s.titel.toLowerCase();
-  const anden = spred(unikTitel(nyheder.filter((s) => s !== top && tt(s) !== tt(top) && !erLokaludvalg(s.udvalg))), 9, 2);
-  const mellem = anden.slice(0, 3);
   // Kort over sagerne: Københavns sager fra de sidste 120 dage med et sted, som nåle (kort.html + assets/kort-sager.json)
   const paaKort = sager.filter((s) => stedKort.get(s.id)?.lat != null && (d(IDAG) - d(s.dato)) / 864e5 <= 120)
     .map((s) => { const k = stedKort.get(s.id); return { lat: +k.lat.toFixed(5), lon: +k.lon.toFixed(5), sted: k.sted, titel: s.titel, url: s.url, dato: s.dato, status: s.status, hvor: hvorNavn(s.udvalg), emne: emneId(s) }; });
-  // Sagernes prikker på forsidens kort (assets/sagskort.jpg, avis/sagskort.mjs): samme ramme som billedet, kun dem inden for den
-  const SAGSKORT = { z: 14, x0: px(12.5525, 55.675, 14)[0] - 1200, y0: px(12.5525, 55.675, 14)[1] - 1030, W: 2400, H: 2060 };
-  const prikker = paaKort.map((s) => { const [x, y] = px(s.lon, s.lat, SAGSKORT.z); return { x: x - SAGSKORT.x0, y: y - SAGSKORT.y0, kommer: s.status === "kommer" }; })
-    .filter((p) => p.x > 0 && p.y > 0 && p.x < SAGSKORT.W && p.y < SAGSKORT.H);
-  const brugt = new Set([top, ...anden]);
-  const bydele = spred(nyheder.filter((s) => erLokaludvalg(s.udvalg) && !brugt.has(s)), 6, 2);
-  bydele.forEach((s) => brugt.add(s));
-  const kommende = spred(sager.filter((s) => s.status === "kommer" && s.vaegt > 0 && !s.rutine).sort((a, b) => a.dato.localeCompare(b.dato) || b.score - a.score), 7, 2);
-  const brugteTitler = new Set([...brugt].map(tt));
-  const kortNyt = [...anden.slice(3), ...unikTitel(afholdt.filter((s) => !brugt.has(s) && !brugteTitler.has(tt(s)) && s.vaegt > 0 && !s.rutine)).slice(0, 10)];
+  // Under tophistorien: de nyeste vigtige sager i et gitter med "Vis flere" (som TV2), nyeste først
+  const gitter = unikTitel(nyheder.filter((s) => s !== top && tt(s) !== tt(top))).sort((a, b) => b.dato.localeCompare(a.dato) || b.score - a.score).slice(0, 72);
   // Lederen vises i ti dage efter, den er skrevet
   const leder = red.leder?.tekst?.trim() && Math.abs(d(IDAG) - d(red.leder.dato || IDAG)) / 864e5 <= 10 ? red.leder : null;
-  const kalender = {}; for (const s of kommende) (kalender[s.dato] ||= []).push(s);
 
-  const forside = `<div class="wrap">
+  // Forsiden i én spalte som Berlingske: tophistorien med stort billede, gitteret og tilmeldingen
+  const forside = `<div class="wrap forside">
   ${leder ? `<section class="leder" aria-labelledby="leder-h">
     <p class="rubrik">Leder</p>
     <div><h2 id="leder-h">${esc(leder.overskrift || "Ugens overblik")}</h2>${afsnitTilHtml(leder.tekst.trim())}<p class="byline">${esc(leder.navn || "")}${leder.titel ? `, ${esc(leder.titel)}` : ""}</p></div>
   </section>` : ""}
-  <div class="front">
-    <div>
-      <article class="lead">
-        <a class="lead-billede" href="${top.url}" tabindex="-1" aria-hidden="true"><img class="emnebillede" src="${billedeSti(top)}" alt=""></a>
-        ${kicker(top, "")}
-        <h1 class="hl"><a href="${top.url}">${esc(top.titel)}</a></h1>
-        ${top.status === "besluttet" && top.udfald ? `<p class="udfald">${esc(top.udfald)}</p>` : top.status === "kommer" ? `<p class="udfald kommer">Til beslutning ${ugedag(top.dato)} ${datoTekst(top.dato)}.</p>` : ""}
-      </article>
-      <div class="mellem">
-        ${mellem.map((s) => `<article class="med-billede">${lilleBillede(s, "")}<div>${kicker(s, "")}<h2 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h2>${stemmeMini(s, esc)}</div></article>`).join("\n        ")}
-      </div>
-      <a class="kort-band" href="kort.html">
-        <span class="kb-kort"><img src="assets/sagskort.jpg" width="1400" height="1202" alt="" loading="lazy"><svg viewBox="0 0 ${SAGSKORT.W} ${SAGSKORT.H}" aria-hidden="true">${prikker.map((p) => `<circle cx="${p.x.toFixed(0)}" cy="${p.y.toFixed(0)}" r="24" class="${p.kommer ? "kommer" : ""}"/>`).join("")}</svg></span>
-        <span class="kb-tekst"><b>Hvad sker der i din gade?</b><span class="kb-knap">Se kortet</span></span>
-      </a>
-      <section class="kortnyt" aria-labelledby="h-kort">
-        <h2 id="h-kort" class="rubrik">Kort nyt</h2>
-        <ul>${kortNyt.map((s) => notits(s)).join("")}</ul>
-      </section>
-    </div>
-    <div class="rail">
-      ${vagtBoks("")}
-      <section aria-labelledby="h-bydele">
-        <h2 id="h-bydele" class="rubrik">Fra bydelene <a href="bydel/">Alle bydele</a></h2>
-        <ul class="notitser">${bydele.map((s) => notits(s)).join("")}</ul>
-      </section>
-      <section aria-labelledby="h-kommer">
-        <h2 id="h-kommer" class="rubrik">Kalender <a href="moeder.html">Alle møder</a></h2>
-        ${Object.entries(kalender).map(([dag, l]) => {
-          // Ét møde pr. udvalg: udvalget står én gang, punkterne under
-          const pr = {}; for (const s of l) (pr[s.udvalg] ||= []).push(s);
-          return `<p class="kal-dag">${esc(stor(ugedag(dag)))} ${kortDato(dag)}</p>${Object.entries(pr).map(([u, ps]) => `<p class="kal-moede">${esc(hvorNavn(u))}</p><ul class="notitser kal">${ps.map((s) => `<li><a href="${s.url}">${esc(s.titel)}</a></li>`).join("")}</ul>`).join("")}`;
-        }).join("")}
-      </section>
-    </div>
-  </div>
+  ${topHistorie(top, "", billedeSti)}
+  ${sagGitter(gitter, "", billedeSti)}
+  ${vagtBoks("")}
 </div>`;
   await writeFile(join(ROD, "index.html"), side({
     titel: "Sagsvagt – nyt fra byråd og udvalg i København",

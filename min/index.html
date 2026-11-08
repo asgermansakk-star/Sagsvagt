@@ -1147,7 +1147,7 @@
     const tal = (n, en, flere) => `${n === 0 ? "ingen" : n} ${n === 1 ? en : flere}`;
     $("#ed-h").textContent = `${hilsen()}${navn ? `, ${navn}` : ""}.`;
     $("#ed-sum").innerHTML = profil.emner.length || profil.ord.length
-      ? `De seneste 14 dage er der truffet <b>${tal(nBesl, "beslutning", "beslutninger")}</b> om det, du følger. De næste 14 dage er <b>${tal(nKom, "sag", "sager")}</b> på dagsordenen.`
+      ? "" // tallene står i felterne nedenunder, så teksten gentog dem (ingen undertekst, 8/11)
       : "Vælg de emner, du vil følge, så samler vi sagerne her.";
     if (IKKE_AABEN) $("#ed-sum").innerHTML += ` <br>${esc(IKKE_AABEN.navne.join(" og "))} er ikke ${IKKE_AABEN.navne.length > 1 ? "åbne" : "åben"} i Sagsvagt endnu`
       + (IKKE_AABEN.tilbage ? ", så du ser København indtil da." : `. Vi giver besked, når ${IKKE_AABEN.navne.length > 1 ? "de åbner" : "den åbner"}.`);
@@ -1233,7 +1233,7 @@
         + `<small>${esc(dato(iso, { weekday: "short" }).replace(".", ""))}</small><b>${dag(iso).getUTCDate()}</b><i>${punkter ? `${punkter} punkter` : "Ingen møder"}</i>${dine ? `<em aria-hidden="true">${dine}</em>` : ""}</button>`;
     }).join("");
     const iAlt = dage.reduce((a, iso) => a + kommende.filter((s) => s.dato === iso).length, 0);
-    $("#ugen-note").textContent = iAlt ? `${tal(iAlt, "sag", "sager")} om dine emner er markeret med et tal. Tryk på en dag for at se møderne.` : "Ingen af de næste fem dages møder har sager om dine emner endnu.";
+    $("#ugen-note").textContent = iAlt ? "" : "Ingen af de næste fem dages møder har sager om dine emner endnu.";
     const nb = $("#natbund");
     nb.style.setProperty("--natkort", `url("../assets/natkort/${VALGTE[0]}.jpg")`);
     nb.hidden = false; document.body.classList.add("har-natkort");
