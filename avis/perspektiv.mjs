@@ -11,7 +11,7 @@
 // nævner; dem markerer siden tydeligt, og der skal være lige mange for og imod af dem.
 // Dækning (Asger 8/11): hvert argument fra sagen eller referatet har et ordret citat ("daekning"), som scriptet tjekker står
 // i sagens tekst; ellers smides argumentet væk. Nævner et argument et alternativ, skal det sige, hvad alternativet er.
-// Tekster fra før kravet (uden "v": 2) viser kun "Hvad betyder det for dig?", indtil de er skrevet om.
+// Kravet gælder tekster skrevet fra 8/11 ("v": 2); de ældre vises uændret og skrives ikke om (Asger 8/11).
 //
 // Kør: node avis/perspektiv.mjs                 (skriv nye med Claude API; kræver RELEVANS_NOEGLE)
 //      MAKS=20 node avis/perspektiv.mjs         (højst 20 sager i denne kørsel, standard 10)
@@ -42,7 +42,7 @@ export function perspektivBokse(s, P, esc) {
           <p class="hverdag-tekst">${esc(p.hverdag)}</p>
           ${p.berorer?.length ? `<p class="hverdag-hvem"><span>Berører især</span> ${p.berorer.map((b) => `<span class="hvem-tag">${esc(b)}</span>`).join(" ")}</p>` : ""}
         </section>` : "";
-  const forImod = p.v >= 2 && (p.for?.length || p.imod?.length) ? `<section class="kf for-imod" aria-labelledby="fi-h">
+  const forImod = (p.for?.length || p.imod?.length) ? `<section class="kf for-imod" aria-labelledby="fi-h">
           <h2 id="fi-h">For og imod</h2>
           <div class="fi-grid">
             <div class="fi-for"><h3>For</h3>${liste(p.for, "Sagen nævner ingen argumenter for.")}</div>
@@ -65,7 +65,7 @@ async function kandidater(P = {}) {
   for (const f of (await readdir(join(ROD, "data"))).filter((f) => f.endsWith(".json"))) {
     for (const s of Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager || {})) {
       if (s.dato < fra || STOEJ.test(s.titel) || /fortrolig|lukket/i.test(s.titel) || laengde(s) < 700) continue;
-      if (P[s.id]?.type === s.type && P[s.id]?.v >= 2) continue;
+      if (P[s.id]?.type === s.type) continue;
       // Vigtigst: byråd/økonomiudvalg, sager med økonomi og sager på vej (dagsordener), og lange sager
       const score = (TOP.test(s.udvalg) ? 3 : 1) + (s.dato >= idag ? 1 : 0) + Math.min(laengde(s) / 4000, 2) + (/mio\. kr|kr\./.test(JSON.stringify(s.afsnit)) ? 0.5 : 0);
       alle.push({ s, score });
