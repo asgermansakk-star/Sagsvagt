@@ -538,6 +538,9 @@ footer.foot a:hover { text-decoration: underline; }
 .fi-tekst { display: block; font-size: var(--sekundaer); line-height: 1.5; }
 .fi-kilde { display: inline-block; margin-top: 4px; font-size: var(--fodnote); color: var(--muted); }
 .fi-kilde.debat { font-style: italic; }
+/* Dækningen: det ordrette citat fra sagen, som argumentet bygger på (8/11) */
+.fi-daekning { display: block; margin-top: 6px; padding-left: 10px; border-left: 2px solid var(--rule); font-size: var(--fodnote); line-height: 1.45; color: var(--grafit); }
+.fi-daekning::before { content: "“"; } .fi-daekning::after { content: "”"; }
 .fi-tom { margin: 0 0 10px; font-size: var(--sekundaer); color: var(--muted); }
 .for-imod .kf-mere { margin-top: 14px; }
 @media (max-width: 640px) { .fi-grid { grid-template-columns: 1fr; } }

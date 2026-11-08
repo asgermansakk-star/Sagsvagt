@@ -9,6 +9,9 @@
 // Neutralitet: hvert argument har et grundlag. "sagen" = står i kommunens tekst (forvaltningen, høringssvar, økonomi).
 // "partier" = et parti eller medlem har sagt det i referatet. "debatten" = et almindeligt argument, sagen ikke selv
 // nævner; dem markerer siden tydeligt, og der skal være lige mange for og imod af dem.
+// Dækning (Asger 8/11): hvert argument fra sagen eller referatet har et ordret citat ("daekning"), som scriptet tjekker står
+// i sagens tekst; ellers smides argumentet væk. Nævner et argument et alternativ, skal det sige, hvad alternativet er.
+// Tekster fra før kravet (uden "v": 2) viser kun "Hvad betyder det for dig?", indtil de er skrevet om.
 //
 // Kør: node avis/perspektiv.mjs                 (skriv nye med Claude API; kræver RELEVANS_NOEGLE)
 //      MAKS=20 node avis/perspektiv.mjs         (højst 20 sager i denne kørsel, standard 10)
@@ -31,7 +34,7 @@ const GRUNDLAG = { sagen: "Fra sagen", partier: "Fra referatet", debatten: "Fra 
 export function perspektivBokse(s, P, esc) {
   const p = P[s.id];
   if (!p || p.type !== s.type) return "";
-  const arg = (a) => `<li><span class="fi-tekst">${esc(a.tekst)}</span>${a.kilde || a.grundlag ? `<span class="fi-kilde${a.grundlag === "debatten" ? " debat" : ""}">${esc(a.kilde || GRUNDLAG[a.grundlag] || "")}</span>` : ""}</li>`;
+  const arg = (a) => `<li><span class="fi-tekst">${esc(a.tekst)}</span>${a.daekning ? `<q class="fi-daekning">${esc(a.daekning)}</q>` : ""}${a.kilde || a.grundlag ? `<span class="fi-kilde${a.grundlag === "debatten" ? " debat" : ""}">${esc(a.kilde || GRUNDLAG[a.grundlag] || "")}</span>` : ""}</li>`;
   const liste = (l, tom) => (l?.length ? `<ul>${l.map(arg).join("")}</ul>` : `<p class="fi-tom">${tom}</p>`);
   const debat = [...(p.for || []), ...(p.imod || [])].some((a) => a.grundlag === "debatten");
   const hverdag = p.hverdag ? `<section class="kf hverdag" aria-labelledby="hverdag-h">
@@ -39,7 +42,7 @@ export function perspektivBokse(s, P, esc) {
           <p class="hverdag-tekst">${esc(p.hverdag)}</p>
           ${p.berorer?.length ? `<p class="hverdag-hvem"><span>Berører især</span> ${p.berorer.map((b) => `<span class="hvem-tag">${esc(b)}</span>`).join(" ")}</p>` : ""}
         </section>` : "";
-  const forImod = (p.for?.length || p.imod?.length) ? `<section class="kf for-imod" aria-labelledby="fi-h">
+  const forImod = p.v >= 2 && (p.for?.length || p.imod?.length) ? `<section class="kf for-imod" aria-labelledby="fi-h">
           <h2 id="fi-h">For og imod</h2>
           <div class="fi-grid">
             <div class="fi-for"><h3>For</h3>${liste(p.for, "Sagen nævner ingen argumenter for.")}</div>
@@ -62,7 +65,7 @@ async function kandidater(P = {}) {
   for (const f of (await readdir(join(ROD, "data"))).filter((f) => f.endsWith(".json"))) {
     for (const s of Object.values(JSON.parse(await readFile(join(ROD, "data", f), "utf8")).sager || {})) {
       if (s.dato < fra || STOEJ.test(s.titel) || /fortrolig|lukket/i.test(s.titel) || laengde(s) < 700) continue;
-      if (P[s.id]?.type === s.type) continue;
+      if (P[s.id]?.type === s.type && P[s.id]?.v >= 2) continue;
       // Vigtigst: byråd/økonomiudvalg, sager med økonomi og sager på vej (dagsordener), og lange sager
       const score = (TOP.test(s.udvalg) ? 3 : 1) + (s.dato >= idag ? 1 : 0) + Math.min(laengde(s) / 4000, 2) + (/mio\. kr|kr\./.test(JSON.stringify(s.afsnit)) ? 0.5 : 0);
       alle.push({ s, score });
@@ -82,18 +85,20 @@ const sagsTekst = (s) => `Kommune: ${s.kommune || "København"}\nUdvalg: ${s.udv
 // ---------- Claude API ----------
 const SYSTEM = `Du skriver for Sagsvagt, en partineutral, gratis avis om kommunalpolitik for almindelige borgere, også unge.
 Du får én sag fra en kommunes dagsorden eller referat. Svar KUN med JSON i dette format:
-{"hverdag": "...", "berorer": ["..."], "for": [{"tekst": "...", "grundlag": "sagen|partier|debatten", "kilde": "..."}], "imod": [...]}
+{"hverdag": "...", "berorer": ["..."], "for": [{"tekst": "...", "grundlag": "sagen|partier|debatten", "kilde": "...", "daekning": "..."}], "imod": [...]}
 
 hverdag: 2-3 korte sætninger til borgeren i du-form om, hvad sagen konkret betyder i hverdagen: hvad ændrer sig, for hvem, hvornår, og hvad koster det, hvis sagen siger det. Brug tal og steder fra sagen. Skriv betinget, når det kun gælder nogle ("Bor du i …", "Har du børn i …"). Ændrer sagen intet, man mærker, så sig det ligeud og forklar med én sætning, hvad den handler om. Ingen gætterier om tal, der ikke står i sagen.
 berorer: 1-4 korte grupper, der især berøres (fx "Børnefamilier i Vanløse", "Cyklister på Amagerbrogade"). Tom liste, hvis ingen særlige.
-for/imod: 2-4 argumenter hver vej, hver højst 25 ord, skrevet som en påstand ("Giver …", "Koster …"), ikke som et citat.
+for/imod: 2-4 argumenter hver vej, hver højst 35 ord, skrevet som en påstand ("Giver …", "Koster …"), ikke som et citat.
+Peger et argument på et alternativ, et andet forslag, en sammenligning eller en følge ("det alternative forslag", "billigere end", "giver bedre forhold"), så skriv konkret, hvad alternativet er, og hvad forskellen er, fx "Forslaget om cykelsti i begge sider af Langebro ville give cyklister mere plads". Kan sagen ikke sige, hvad alternativet er, så udelad argumentet.
+daekning: et ordret citat på højst 30 ord fra sagens tekst, som argumentet bygger på. Kopiér ordene præcis, som de står, uden at rette eller forkorte midt i. Ved grundlag "debatten" er daekning en tom streng. Findes der intet citat, der dækker påstanden, så udelad argumentet.
 grundlag: "sagen" når argumentet står i kommunens tekst (forvaltningens begrundelse, høringssvar, risici, økonomi, fravalgte alternativer). "partier" når et parti eller medlem har sagt det i referatet (fx protokolbemærkning, ændringsforslag, stemmeforklaring); så er kilde partinavnet med bogstav, fx "Enhedslisten (Ø)". "debatten" kun når sagen ikke selv rummer argumenter den ene vej: et almindeligt, sagligt argument, som modstandere eller tilhængere typisk fremfører om den slags beslutninger. Brug "debatten" lige meget for og imod, og aldrig om personer.
 kilde: kort, fx "Forvaltningen", "Høringssvar fra beboerne", "Økonomiafsnittet", "Socialdemokratiet (A)". For "debatten" skriv "Fra debatten".
 Regler: Ingen holdning fra Sagsvagt. Ingen navne på privatpersoner. Ingen oplysninger, der ikke står i sagen, undtagen argumenter med grundlag "debatten". Er sagen ren administration (fx regnskab, udpegning), så giv højst ét argument hver vej og sig det i hverdag. Skriv enkelt dansk uden forvaltningssprog.`;
 
 const ARGUMENT = {
-  type: "object", additionalProperties: false, required: ["tekst", "grundlag", "kilde"],
-  properties: { tekst: { type: "string" }, grundlag: { type: "string", enum: ["sagen", "partier", "debatten"] }, kilde: { type: "string" } },
+  type: "object", additionalProperties: false, required: ["tekst", "grundlag", "kilde", "daekning"],
+  properties: { tekst: { type: "string" }, grundlag: { type: "string", enum: ["sagen", "partier", "debatten"] }, kilde: { type: "string" }, daekning: { type: "string" } },
 };
 const SKEMA = {
   type: "object", additionalProperties: false, required: ["hverdag", "berorer", "for", "imod"],
@@ -112,7 +117,10 @@ async function spoerg(client, s, forbrug) {
   if (svar.stop_reason === "refusal") throw new Error("afvist");
   if (svar.stop_reason === "max_tokens") throw new Error("svaret blev afkortet");
   const json = JSON.parse(svar.content.find((b) => b.type === "text")?.text || "{}");
-  const ren = (l) => (Array.isArray(l) ? l : []).filter((a) => a?.tekst).slice(0, 4).map((a) => ({ tekst: String(a.tekst).trim(), grundlag: ["sagen", "partier", "debatten"].includes(a.grundlag) ? a.grundlag : "sagen", kilde: String(a.kilde || "").trim() }));
+  // Dækningen skal stå i sagen (bogstaver og tal sammenlignes, så tegnsætning og linjeskift ikke tæller); ellers ryger argumentet
+  const norm = (x) => String(x || "").toLowerCase().replace(/[^a-zæøå0-9]+/g, " ").trim(), kilde = norm(sagsTekst(s));
+  const daekket = (a) => a.grundlag === "debatten" || (norm(a.daekning).split(" ").length >= 4 && kilde.includes(norm(a.daekning)));
+  const ren = (l) => (Array.isArray(l) ? l : []).filter((a) => a?.tekst && daekket(a)).slice(0, 4).map((a) => ({ tekst: String(a.tekst).trim(), grundlag: ["sagen", "partier", "debatten"].includes(a.grundlag) ? a.grundlag : "sagen", kilde: String(a.kilde || "").trim(), daekning: a.grundlag === "debatten" ? "" : String(a.daekning).trim() }));
   return { hverdag: String(json.hverdag || "").trim(), berorer: (json.berorer || []).slice(0, 4).map(String), for: ren(json.for), imod: ren(json.imod) };
 }
 
@@ -137,7 +145,7 @@ if (process.argv[1]?.endsWith("perspektiv.mjs")) {
     let n = 0, fejl = 0;
     await Promise.all(Array.from({ length: 4 }, async () => {
       for (let s; (s = koe.shift()); ) {
-        try { P[s.id] = { type: s.type, lavet: new Date().toISOString().slice(0, 10), ...(await spoerg(client, s, forbrug)) }; n++; }
+        try { P[s.id] = { type: s.type, v: 2, lavet: new Date().toISOString().slice(0, 10), ...(await spoerg(client, s, forbrug)) }; n++; }
         catch (e) { fejl++; console.warn(`  ${s.id}: ${e.message}`); if (fejl > 10 || opsaetningsfejl(e, n, fejl)) koe.length = 0; }
         if (n % 20 === 0) await gem(P);
       }
