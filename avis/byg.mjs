@@ -649,7 +649,7 @@ async function main() {
       <header>
         ${kicker(s, "../")}
         <h1 class="hl">${esc(s.titel)}</h1>
-        ${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 200))}</p>` : ""}
+        ${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 140))}</p>` : ""}
         ${emneLinks(s, "../")}
         ${topBillede(s, "../")}
         ${flereBilleder(s, "../")}

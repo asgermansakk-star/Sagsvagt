@@ -535,7 +535,7 @@ footer.foot a:hover { text-decoration: underline; }
 .masthead.en .mh-nav { display: flex; align-items: stretch; flex: 0 1 auto; margin-left: auto; border-top: 0; gap: 0 28px; font-size: var(--sekundaer); }
 .masthead.en .mh-nav a, .masthead.en .mh-nav summary { min-height: 72px; }
 .masthead.en .mh-nav > a[aria-current] { opacity: 1; box-shadow: inset 0 -3px 0 var(--kalk); }
-.masthead.en .mh-handling { margin-left: 28px; }
+.masthead.en .mh-handling { order: 2; margin-left: 28px; } /* .mh-nav har order 1 fra det gamle hoved */
 @media (max-width: 900px) {
   .masthead.en .mh-nav { gap: 0 18px; }
   .masthead.en .mh-handling { margin-left: 18px; gap: 14px; }
