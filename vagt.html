@@ -407,6 +407,32 @@
   .spring:focus { top: 12px; }
   /* Enklere forside (8/11): overskriften står midt på filmen */
   .hero-gitter { align-items: center; }
+
+  /* ---------- Tilmelding trin for trin (8/11) ----------
+     Ét felt ad gangen: det udfyldte rykker op og bliver svagt (tryk på det for at gå tilbage), feltet før det folder sig sammen,
+     og det næste glider ind nedefra. Til sidst lyser knappen op. Uden JavaScript står alle felter som før. */
+  form.trinvis { display: flex; flex-direction: column; gap: 0; }
+  .trinvis .felt, .trinvis .flueben { max-height: 0; min-height: 0; opacity: 0; margin: 0; padding-top: 0; padding-bottom: 0; overflow: hidden; transform: translateY(18px); pointer-events: none;
+    transition: max-height .45s ease, opacity .35s ease, transform .45s ease, margin .45s ease, padding .45s ease; }
+  .trinvis .aktiv, .trinvis .forrige { max-height: 180px; opacity: 1; margin-bottom: 16px; transform: none; pointer-events: auto; overflow: visible; }
+  .trinvis .flueben.aktiv, .trinvis .flueben.forrige { padding: 10px 0; min-height: 44px; }
+  .trinvis.start .felt, .trinvis.start .flueben { transition: none; }
+  .trinvis .forrige { opacity: .45; cursor: pointer; }
+  .trinvis .forrige:hover { opacity: .75; }
+  .trinvis .medlem-felter, .trinvis .konto-felt { display: block; }
+  .trinvis .medlem-felter[hidden], .trinvis .konto-felt[hidden] { display: none; }
+  .trinvis .konto-felt:not(:has(.aktiv)) .konto-note { display: none; }
+  .trinvis .konto-note { margin: 0 0 12px; }
+  .trinvis:not(.klar) .send { background: rgba(230,223,211,.14); color: var(--kalk); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.35); }
+  .trinvis.klar .send { animation: send-lys 2.2s ease-in-out infinite; }
+  .trinvis .aktiv.bad { animation: trin-ryst .32s; }
+  @keyframes send-lys { 0%, 100% { box-shadow: 0 0 0 0 rgba(230,223,211,0), 0 0 0 0 rgba(176,74,80,0); }
+    50% { box-shadow: 0 0 0 6px rgba(230,223,211,.16), 0 0 30px 8px rgba(176,74,80,.5); } }
+  @keyframes trin-ryst { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+  @media (prefers-reduced-motion: reduce) {
+    .trinvis .felt, .trinvis .flueben { transition: none; }
+    .trinvis.klar .send, .trinvis .aktiv.bad { animation: none; }
+  }
 </style>
 <script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1"){var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:(f||(r&&r!==location.hostname?r:"")).slice(0,60)})})}}catch(e){}</script>
 </head>
@@ -671,6 +697,60 @@
   };
   form.kommuner.addEventListener("input", visKonto);
   form.kommuner.addEventListener("change", visKonto);
+  /* ---------- Tilmelding trin for trin: ét felt ad gangen, og knappen lyser op til sidst (se CSS'en) ---------- */
+  (() => {
+    const tekst = $("span", btn);
+    const trin = () => [...form.querySelectorAll(".felt, .flueben")].filter((el) => !el.closest("[hidden]"));
+    const gyldig = (el) => {
+      const i = el.querySelector("input, select"), v = (i.value || "").trim();
+      if (i.id === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+      if (i.id === "kommuner") return !!v && kommuneDele(v).every((k) => rigtigKommune(k));
+      if (i.id === "navn") return !!v;
+      if (i.id === "alder") { const a = Number(v); return Number.isInteger(a) && a >= 16 && a <= 30; }
+      if (i.id === "adgangskode") return i.value.length >= 10;
+      return true; // emner, "Jeg er" og fluebenet er valgfri
+    };
+    let aktiv = null;
+    const vis = (el, fokus = true) => {
+      const l = trin(), i = l.indexOf(el);
+      l.forEach((x) => x.classList.remove("aktiv", "forrige", "bad"));
+      el.classList.add("aktiv");
+      if (i > 0) l[i - 1].classList.add("forrige");
+      aktiv = el;
+      const sidste = i === l.length - 1 && gyldig(el);
+      form.classList.toggle("klar", sidste);
+      tekst.textContent = sidste ? "Skriv mig op" : "Næste";
+      const felt = el.querySelector("input, select");
+      if (fokus) setTimeout(() => felt.focus({ preventScroll: true }), reduce ? 0 : 260);
+    };
+    const naeste = () => {
+      if (!gyldig(aktiv)) { aktiv.classList.remove("bad"); void aktiv.offsetWidth; aktiv.classList.add("bad"); aktiv.querySelector("input, select").focus(); return; }
+      const l = trin(), i = l.indexOf(aktiv);
+      if (i < l.length - 1) vis(l[i + 1]);
+      else { form.classList.add("klar"); tekst.textContent = "Skriv mig op"; btn.focus({ preventScroll: true }); }
+    };
+    form.classList.add("trinvis", "start"); // "start" slår overgangene fra, så felterne ikke folder sig sammen foran brugeren ved indlæsning
+    form.querySelectorAll(".felt input, .felt select").forEach((i) => i.setAttribute("enterkeyhint", "next"));
+    vis(trin()[0], false); // ingen fokus ved indlæsning, så tastaturet ikke springer op på telefonen
+    void form.offsetWidth; setTimeout(() => form.classList.remove("start"), 50);
+    // Enter og knappen går et trin frem, indtil alt er udfyldt; først da sendes tilmeldingen (fanges før den almindelige afsendelse)
+    form.addEventListener("submit", (e) => {
+      if (!form.classList.contains("trinvis") || form.classList.contains("klar")) return;
+      e.preventDefault(); e.stopImmediatePropagation(); naeste();
+    }, true);
+    // Valg i en liste eller et flueben går selv videre
+    form.rolle.addEventListener("change", () => { if (form.rolle.value) setTimeout(naeste, 250); });
+    $("#medlem").addEventListener("change", (e) => { if (e.target.checked) setTimeout(naeste, 250); });
+    // Tryk på det svage felt over det aktive for at rette det; skriver man om i et felt, er man ikke klar længere
+    form.addEventListener("click", (e) => { const f = e.target.closest(".forrige"); if (f && !e.target.closest("a")) vis(f); });
+    form.addEventListener("input", (e) => { const f = e.target.closest(".aktiv"); if (f) { const l = trin(); const klar = l.indexOf(f) === l.length - 1 && gyldig(f); form.classList.toggle("klar", klar); tekst.textContent = klar ? "Skriv mig op" : "Næste"; } });
+    // Får tilmeldingen en fejl (fx fra serveren), vises alle felter som før, så fejlen kan rettes
+    new MutationObserver(() => {
+      if (!msg.classList.contains("err") || !form.classList.contains("trinvis")) return;
+      form.classList.remove("trinvis", "klar"); tekst.textContent = "Skriv mig op";
+      form.querySelector(".bad input, .bad select")?.focus();
+    }).observe(msg, { attributes: true, attributeFilter: ["class"] });
+  })();
   // bekraeft: serveren har sendt en mail med et link, der skal bruges, før mandagsmailen kommer (dobbelt opt-in)
   const faerdig = (bekraeft) => {
     if (bekraeft) { card.querySelector(".done h3").textContent = "Tjek din mail."; card.querySelector(".done-tekst").textContent = "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
