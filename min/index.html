@@ -1129,7 +1129,7 @@
     ? `<div class="decision"><b>Beslutning</b>${esc(s.ud || (s.kb.length > 220 ? s.kb.slice(0, 220).replace(/\s+\S*$/, "") + " …" : s.kb))}${stemmer(s, stor)}</div>` : "";
   // Billedet: plankortet eller stedkortet fra avisen (b i sager.json), ellers emnets tegning, som på sagssiderne
   const EMNEBILLEDER = new Set(["aeldre", "affald", "bolig", "budget", "byggeri", "erhverv", "klima", "kultur", "skole", "social", "trafik", "unge"]);
-  const billede = (s) => `../${s.b || `assets/emner/${[...(s.et || []), ...(s.e || [])].find((id) => EMNEBILLEDER.has(id)) || "generel"}.svg`}`;
+  const billede = (s) => `../${s.b || `assets/emner/${[...(s.et || []), ...(s.e || [])].find((id) => EMNEBILLEDER.has(id)) || "generel"}.jpg`}`; // s.b har normalt sagens faste variant (avis/emnebilleder.mjs)
   const link = (s) => `../${s.url}`;
   // Når avisen er åben, får menuen et link til den. Mens den er lukket, ville linket sende folk til tilmeldingssiden.
   const billedeLink = (s) => `<a class="kort-billede" href="${link(s)}" data-laes="${esc(s.id)}" tabindex="-1" aria-hidden="true"><img src="${billede(s)}" alt="" loading="lazy"></a>`;

@@ -6,7 +6,7 @@ import { EMNER, emnerFor, deltagere, stemmetal, indstillingPunkter, videreTil, a
 import { bygDelebilleder } from "./delebilleder.mjs";
 import { bygPlankort, plankortFigur } from "./plankort.mjs";
 import { bygStedkort, stedkortFigur } from "./stedkort.mjs";
-import { emneBillede, emneId } from "./emnebilleder.mjs";
+import { emneBillede, emneId, emneFil } from "./emnebilleder.mjs";
 import { stemmeGrafik, stemmeMini } from "./stemmegrafik.mjs";
 import { hoeringsMaerke, laesLaeserfotos, laeserfotoFigur, fotoSideIndhold, bygLuftfotos, luftfotoFigur } from "./grafik.mjs";
 import { findSteder, stedLinks, bygSteder, delRad, DEL_SCRIPT } from "./steder.mjs";
@@ -570,10 +570,10 @@ async function main() {
   // Øverst på sagen står plankortet, ellers stedkortet, ellers emnets illustration (assets/emner/).
   const plankort = await bygPlankort(alleSager, H, KOMMUNE);
   const stedKort = await bygStedkort(alleSager, H, KOMMUNE, (s) => (erKK(s) ? stederFor(s) : KSTED.get(s.kommune)?.stederFor(s) || []));
-  // Plankort eller stedkort til Min avis (b i sager.json); uden et kort bruger Min avis emnets tegning
-  H.billedeFil = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || undefined;
+  // Billedet til Min avis (b i sager.json): plankort, stedkort eller emnets tegning i sagens faste variant
+  H.billedeFil = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || emneFil(s);
   const luftfotos = await bygLuftfotos(plankort, H), laeserfotos = await laesLaeserfotos(ROD);
-  const billedeSti = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || `assets/emner/${emneId(s)}.svg`;
+  const billedeSti = (s) => plankort.get(s.id)?.fil || stedKort.get(s.id)?.fil || emneFil(s);
   H.billedeSti = billedeSti;
   const topBillede = (s, rod) => plankortFigur(s, plankort, rod, esc) || stedkortFigur(s, stedKort, rod, esc) || `<figure class="emne-figur">${emneBillede(s, rod, { lazy: false })}</figure>`;
   const flereBilleder = (s, rod) => luftfotoFigur(s, luftfotos, rod, esc) + laeserfotoFigur(s, laeserfotos, rod, esc);
