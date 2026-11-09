@@ -54,3 +54,12 @@ test("avisen flyder ikke ud over skærmen", async ({ page }) => {
   const bred = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
   expect(bred).toBeLessThanOrEqual(1);
 });
+
+test("tilmeldingen åbner som dialog fra forsidens knap", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator("#tilmeld #form")).toBeHidden();
+  await page.locator('a[href$="#tilmeld"]').first().click();
+  await expect(page.locator("#tilmeld #form")).toBeVisible();
+  // Første trin er fornavnet
+  await expect(page.locator("#tilmeld #fornavn")).toBeVisible();
+});

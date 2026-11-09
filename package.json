@@ -6,8 +6,8 @@
     "hent": "node avis/hent-kk.mjs",
     "byg": "node avis/byg.mjs",
     "opdater": "node avis/hent-kk.mjs && node avis/byg.mjs",
-    "test:unit": "node --test tests/unit/",
-    "test:integration": "node --test tests/integration/",
+    "test:unit": "node --test \"tests/unit/**/*.test.mjs\"",
+    "test:integration": "node --test \"tests/integration/**/*.test.mjs\"",
     "test:e2e": "playwright test",
     "test:perf": "lhci autorun",
     "test": "npm run test:unit && npm run test:integration && npm run test:e2e && npm run test:perf"
