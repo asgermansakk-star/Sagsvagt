@@ -30,12 +30,14 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-broenderslev.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../broenderslev.html">Brønderslev</a></p><h1>Frivilligrådet</h1><article><p class="kicker"><span class="status besluttet">Besluttet 16. september</span></p><h2 class="hl"><a href="../../sag/broenderslev-2026-09-16-frivilligraadet-3.html">Fællesmøde mellem Frivilligrådet og Social- og Handicapudvalget</a></h2><p class="dek">Sagsforløb: FR/SH Der er udarbejdet program til fællesmødet mellem Frivilligrådet og Social- og Handicapudvalget den 16. september 2026.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 5. august</span></p><h2 class="hl"><a href="../../sag/broenderslev-2026-08-05-frivilligraadet-2.html">Frivillig Fredag</a></h2><p class="dek">Sagsforløb: FR Frivilligrådet skal planlægge Frivillig Fredag 2026</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../broenderslev.html">Brønderslev</a></p><h1>Frivilligrådet</h1><article><p class="kicker"><span class="status besluttet">Besluttet 16. september</span></p><h2 class="hl"><a href="../../sag/broenderslev-2026-09-16-frivilligraadet-3.html">Fællesmøde mellem Frivilligrådet og Social- og Handicapudvalget</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 5. august</span></p><h2 class="hl"><a href="../../sag/broenderslev-2026-08-05-frivilligraadet-2.html">Frivillig Fredag</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

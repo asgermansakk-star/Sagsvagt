@@ -130,6 +130,13 @@ jobs:
           RELEVANS_ARBEJDSRUM: ${{ vars.RELEVANS_ARBEJDSRUM }}
           MAKS: ${{ vars.PERSPEKTIV_MAKS || '10' }}
 
+      # "Det skrev medierne" (avis/medier.mjs): lokale mediers RSS matches med sagerne, og kun overskrift, medie, dato og link
+      # gemmes i data/medier.json. Feedene har kun det seneste døgn, så den kører hver gang. Fejler et feed, bygges avisen som før.
+      - name: Find mediernes artikler om sagerne
+        if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')
+        continue-on-error: true
+        run: node avis/medier.mjs
+
       # Luftfoto af lokalplanernes område (avis/grafik.mjs) kræver en gratis nøgle fra dataforsyningen.dk.
       # Uden hemmeligheden DATAFORSYNINGEN_TOKEN springes de over.
       - name: Byg avisen

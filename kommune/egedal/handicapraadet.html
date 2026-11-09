@@ -30,13 +30,15 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-egedal.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../egedal.html">Egedal</a></p><h1>Handicaprådet</h1><article><p class="kicker"><span class="status">Behandlet 1. oktober</span></p><h2 class="hl"><a href="../../sag/egedal-2026-10-01-handicapraadet-1.html">Dagsorden</a></h2><p class="dek">Handicaprådet har tidligere anbefalet, at Egedal Kommune bliver en del af Specialsportsguiden, så borgerne nemmere kan orientere sig om de relevante tilbud, der findes i kommunen.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 2. september</span></p><h2 class="hl"><a href="../../sag/egedal-2026-09-02-handicapraadet-1.html">Referat</a></h2><p class="dek">Budgetforslag 2027-2030 bliver sendt i offentlig høring mandag den 31. august frem til fredag den 11. september 2026. Budgetforslaget vil fremgå af kommunens hjemmeside.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 18. juni</span></p><h2 class="hl"><a href="../../sag/egedal-2026-06-18-handicapraadet-1.html">Referat</a></h2><p class="dek">Handicaprådet ønsker en status på etablering af to nye botilbud henholdsvis Engbo i Ølstykke og Solkrogen i Stenløse.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../egedal.html">Egedal</a></p><h1>Handicaprådet</h1><article><p class="kicker"><span class="status">Behandlet 1. oktober</span></p><h2 class="hl"><a href="../../sag/egedal-2026-10-01-handicapraadet-1.html">Dagsorden</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 2. september</span></p><h2 class="hl"><a href="../../sag/egedal-2026-09-02-handicapraadet-1.html">Referat</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 18. juni</span></p><h2 class="hl"><a href="../../sag/egedal-2026-06-18-handicapraadet-1.html">Referat</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

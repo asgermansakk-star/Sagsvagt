@@ -33,14 +33,13 @@
 <div class="wrap"><div class="listing">
   <p class="kicker"><a href="./">Alle steder</a></p>
   <h1>Slotsgade</h1>
-  <p class="intro">2 sager fra byrådet og udvalgene i Brønderslev Kommune, der handler om Slotsgade. Nyeste først.</p>
   <div class="del-rad" data-url="https://sagsvagt.dk/kommune/broenderslev/sted/slotsgade.html?fra=del" data-titel="Slotsgade: det har politikerne besluttet">
   <button type="button" class="del-knap" hidden>Del</button>
   <a class="del-knap" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsagsvagt.dk%2Fkommune%2Fbroenderslev%2Fsted%2Fslotsgade.html%3Ffra%3Dfb-del" target="_blank" rel="noopener">Del på Facebook</a>
   <span class="del-svar" role="status"></span>
 </div>
-  <article><p class="kicker"><span class="status besluttet">Besluttet 5. oktober</span>, <a href="../../../kommune/broenderslev/teknisk-udvalg.html">Teknisk Udvalg, Brønderslev</a></p><h2 class="hl"><a href="../../../sag/broenderslev-2026-10-05-teknisk-udvalg-7.html">Tilskud til bygningsfornyelse</a></h2><p class="dek">Sagsforløb: TU Brønderslev Kommune har i forbindelse med ansøgningsrunden den 31. august 2026 modtaget 3 ansøgninger om tilskud til facaderenovering, som kan opfylde betingelserne i byfornyelsesloven for at kunne modtage støtte.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 17. august</span>, <a href="../../../kommune/broenderslev/teknisk-udvalg.html">Teknisk Udvalg, Brønderslev</a></p><h2 class="hl"><a href="../../../sag/broenderslev-2026-08-17-teknisk-udvalg-4.html">Arkitektonisk udtryk for Rema 1000 ved Slotsgade, Dronninglund</a></h2><p class="dek">Sagsforløb: TU Byrådet besluttede den 25. marts 2026, punkt 8, at igangsætte planlægning for en ny dagligvarebutik ved Slotsgade, Dronninglund, med et vilkår om, at projektet skal undergå en arkitektonisk tilpasning.</p></article>
+  <article><p class="kicker"><span class="status besluttet">Besluttet 5. oktober</span>, <a href="../../../kommune/broenderslev/teknisk-udvalg.html">Teknisk Udvalg, Brønderslev</a></p><h2 class="hl"><a href="../../../sag/broenderslev-2026-10-05-teknisk-udvalg-7.html">Tilskud til bygningsfornyelse</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 17. august</span>, <a href="../../../kommune/broenderslev/teknisk-udvalg.html">Teknisk Udvalg, Brønderslev</a></p><h2 class="hl"><a href="../../../sag/broenderslev-2026-08-17-teknisk-udvalg-4.html">Arkitektonisk udtryk for Rema 1000 ved Slotsgade, Dronninglund</a></h2></article>
   <aside class="paa-mail tester">
   <h2 class="rubrik">Få besked, når Slotsgade er på dagsordenen</h2>
   <p>Sagsvagt læser alle dagsordener fra byråd og udvalg. Skriv dig op, så får du en kort mail hver mandag med de sager, du følger. Vi søger testere i hele Danmark. Det er gratis.</p>
@@ -52,6 +51,8 @@
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

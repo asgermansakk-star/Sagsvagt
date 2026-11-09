@@ -30,14 +30,16 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-norddjurs.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../norddjurs.html">Norddjurs</a></p><h1>Frivilligrådet</h1><article><p class="kicker"><span class="status">Behandlet 14. september</span></p><h2 class="hl"><a href="../../sag/norddjurs-2026-09-14-frivilligraadet-2.html">Udarbejdelse af høringssvar til budget 2027-2030</a></h2><p class="dek">Formanden indstiller, at Frivilligrådet udarbejder et høringssvar til Budget 2027-2030.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 14. september</span></p><h2 class="hl"><a href="../../sag/norddjurs-2026-09-14-frivilligraadet-3.html">Årets Frivillig 2026 og Norddjurs Awards</a></h2><p class="dek">Formanden indstiller, at punktet drøftes.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 14. september</span></p><h2 class="hl"><a href="../../sag/norddjurs-2026-09-14-frivilligraadet-4.html">Planlægning af valg til Frivilligrådet</a></h2><p class="dek">Formanden indstiller, at følgende punkter drøftes: 1. Sted for afholdelse 2. Underholdning/oplæg 3. Rekruttering af medlemmer til de enkelte kategorier.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 14. september</span></p><h2 class="hl"><a href="../../sag/norddjurs-2026-09-14-frivilligraadet-5.html">Frivilligrådets arbejdsplan</a></h2><p class="dek">Formanden indstiller, at: 1. arbejdsplanen godkendes. 2. forslag til punkter til dagsordenen drøftes.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../norddjurs.html">Norddjurs</a></p><h1>Frivilligrådet</h1><article><p class="kicker"><span class="status">Behandlet 14. september</span></p><h2 class="hl"><a href="../../sag/norddjurs-2026-09-14-frivilligraadet-2.html">Udarbejdelse af høringssvar til budget 2027-2030</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 14. september</span></p><h2 class="hl"><a href="../../sag/norddjurs-2026-09-14-frivilligraadet-3.html">Årets Frivillig 2026 og Norddjurs Awards</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 14. september</span></p><h2 class="hl"><a href="../../sag/norddjurs-2026-09-14-frivilligraadet-4.html">Planlægning af valg til Frivilligrådet</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 14. september</span></p><h2 class="hl"><a href="../../sag/norddjurs-2026-09-14-frivilligraadet-5.html">Frivilligrådets arbejdsplan</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

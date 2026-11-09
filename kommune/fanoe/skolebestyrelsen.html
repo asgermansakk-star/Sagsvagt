@@ -30,17 +30,19 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-fanoe.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../fanoe.html">Fanø</a></p><h1>Skolebestyrelsen</h1><article><p class="kicker"><span class="status besluttet">Besluttet 27. august</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-08-27-skolebestyrelsen-2.html">Introduktion til skolebestyrelsens arbejde</a></h2><p class="dek">Til orientering</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 27. august</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-08-27-skolebestyrelsen-3.html">Hvad går bestyrelsen i gang med først – oplagte temaer/forslag</a></h2><p class="dek">Til drøftelse</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 27. august</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-08-27-skolebestyrelsen-5.html">Eventuel deltagelse i Skole og Forældres landsmøde i november</a></h2><p class="dek">Til vedtagelse</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 29. april</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-04-29-skolebestyrelsen-4.html">Status på arbejdet med Fanø Skoles værdier – hvad er næste skridt</a></h2><p class="dek">Til drøftelse</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 11. marts</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-03-11-skolebestyrelsen-2.html">Elevrådets punkt</a></h2><p class="dek">Til orientering</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 11. marts</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-03-11-skolebestyrelsen-4.html">Fanø Skoles værdier</a></h2><p class="dek">Til drøftelse</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 11. marts</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-03-11-skolebestyrelsen-5.html">Valg til skolebestyrelsen forår 2026</a></h2><p class="dek">Til orientering</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../fanoe.html">Fanø</a></p><h1>Skolebestyrelsen</h1><article><p class="kicker"><span class="status besluttet">Besluttet 27. august</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-08-27-skolebestyrelsen-2.html">Introduktion til skolebestyrelsens arbejde</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 27. august</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-08-27-skolebestyrelsen-3.html">Hvad går bestyrelsen i gang med først – oplagte temaer/forslag</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 27. august</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-08-27-skolebestyrelsen-5.html">Eventuel deltagelse i Skole og Forældres landsmøde i november</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 29. april</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-04-29-skolebestyrelsen-4.html">Status på arbejdet med Fanø Skoles værdier – hvad er næste skridt</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 11. marts</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-03-11-skolebestyrelsen-2.html">Elevrådets punkt</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 11. marts</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-03-11-skolebestyrelsen-4.html">Fanø Skoles værdier</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 11. marts</span></p><h2 class="hl"><a href="../../sag/fanoe-2026-03-11-skolebestyrelsen-5.html">Valg til skolebestyrelsen forår 2026</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

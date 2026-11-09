@@ -30,12 +30,14 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-egedal.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../egedal.html">Egedal</a></p><h1>Psykiatriråd</h1><article><p class="kicker"><span class="status">Behandlet 1. september</span></p><h2 class="hl"><a href="../../sag/egedal-2026-09-01-psykiatriraad-1.html">Referat</a></h2><p class="dek">Præsentationsrunde, hvor hver kort præsenterer sig selv ift. hvad de er optaget af i hverdagen samt hvilke forventninger de har til samarbejdet i Psykiatrirådet og hvor de ser, de kan bidrage ind i arbejdet.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 4. juni</span></p><h2 class="hl"><a href="../../sag/egedal-2026-06-04-psykiatriraad-1.html">Referat</a></h2><p class="dek">Psykiatrirådet ønsker en gennemgang af, hvilke støttetilbud der tilbydes forældre før og under anbringelse af deres barn. Tine Vesterby orienterer om de forskellige tilbud, der tilbydes.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../egedal.html">Egedal</a></p><h1>Psykiatriråd</h1><article><p class="kicker"><span class="status">Behandlet 1. september</span></p><h2 class="hl"><a href="../../sag/egedal-2026-09-01-psykiatriraad-1.html">Referat</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 4. juni</span></p><h2 class="hl"><a href="../../sag/egedal-2026-06-04-psykiatriraad-1.html">Referat</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

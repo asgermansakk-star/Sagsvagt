@@ -33,16 +33,15 @@
 <div class="wrap"><div class="listing">
   <p class="kicker"><a href="./">Alle steder</a></p>
   <h1>Nordhavn</h1>
-  <p class="intro">4 sager fra Borgerrepræsentationen, udvalgene og lokaludvalgene i København, der handler om Nordhavn. Nyeste først.</p>
   <div class="del-rad" data-url="https://sagsvagt.dk/sted/nordhavn.html?fra=del" data-titel="Nordhavn: det har politikerne besluttet">
   <button type="button" class="del-knap" hidden>Del</button>
   <a class="del-knap" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsagsvagt.dk%2Fsted%2Fnordhavn.html%3Ffra%3Dfb-del" target="_blank" rel="noopener">Del på Facebook</a>
   <span class="del-svar" role="status"></span>
 </div>
-  <article><p class="kicker"><span class="status">Behandlet 23. september</span>, <a href="../bydel/oesterbro.html">Østerbro Lokaludvalg</a></p><h2 class="hl"><a href="../sag/kk-2026-09-23-oesterbro-lokaludvalg-8.html">Støtteerklæring til Idrætsnetværk Østerbro &amp; Nordhavn</a></h2><p class="dek">Baggrund for Idrætsnetværket Østerbro Lokaludvalg har tidligere foretaget undersøgelser blandt Østerbros borgere, der har vist, at bydelens borgere ikke mener der er nok idrætsfaciliteter på Østerbro.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 22. juni</span>, <a href="../udvalg/klima-miljoe-og-teknikudvalget.html">Klima-, Miljø- og Teknikudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-06-22-klima-miljoe-og-teknikudvalget-11.html">Dispensationer fra lokalplan til terrænregulering ved Tunnelfabrikken, Nordhavn</a></h2><p class="dek">Udvalget blev den 13. april 2026 orienteret om terrænreguleringen.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 19. juni</span>, <a href="../udvalg/kultur-fritids-og-borgerserviceudvalget.html">Kultur-, Fritids- og Borgerserviceudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-06-19-kultur-fritids-og-borgerserviceudvalget-6.html">Halkompleks og kulturhus i Nordhavn</a></h2><p class="dek">I Budget 2022 blev det besluttet at afsøge mulighederne for et halkompleks med en svømmehal i Nordhavn.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 1. juni</span>, <a href="../udvalg/klima-miljoe-og-teknikudvalget.html">Klima-, Miljø- og Teknikudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-06-01-klima-miljoe-og-teknikudvalget-2.html">Godkendelse af varmeprojekt: Integreret varmeforsyning til Unicef Campus 4, Nordhavn</a></h2><p class="dek">Klima-, Miljø- og Teknikudvalget skal tage stilling til, om By &amp; Havns ansøgning om at anvende vedvarende energi til opvarmning af Unicef Campus 4 i Nordhavn kan godkendes.</p></article>
+  <article><p class="kicker"><span class="status">Behandlet 23. september</span>, <a href="../bydel/oesterbro.html">Østerbro Lokaludvalg</a></p><h2 class="hl"><a href="../sag/kk-2026-09-23-oesterbro-lokaludvalg-8.html">Støtteerklæring til Idrætsnetværk Østerbro &amp; Nordhavn</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 22. juni</span>, <a href="../udvalg/klima-miljoe-og-teknikudvalget.html">Klima-, Miljø- og Teknikudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-06-22-klima-miljoe-og-teknikudvalget-11.html">Dispensationer fra lokalplan til terrænregulering ved Tunnelfabrikken, Nordhavn</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 19. juni</span>, <a href="../udvalg/kultur-fritids-og-borgerserviceudvalget.html">Kultur-, Fritids- og Borgerserviceudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-06-19-kultur-fritids-og-borgerserviceudvalget-6.html">Halkompleks og kulturhus i Nordhavn</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 1. juni</span>, <a href="../udvalg/klima-miljoe-og-teknikudvalget.html">Klima-, Miljø- og Teknikudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-06-01-klima-miljoe-og-teknikudvalget-2.html">Godkendelse af varmeprojekt: Integreret varmeforsyning til Unicef Campus 4, Nordhavn</a></h2></article>
   <aside class="paa-mail tester">
   <h2 class="rubrik">Få besked, når Nordhavn er på dagsordenen</h2>
   <p>Sagsvagt læser alle dagsordener fra byråd, udvalg og lokaludvalg. Skriv dig op, så får du en kort mail hver mandag med de sager, du følger. Vi søger testere i hele Danmark. Det er gratis.</p>
@@ -54,6 +53,8 @@
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

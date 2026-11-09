@@ -33,7 +33,6 @@
 <div class="wrap smal">
   <article class="foto-side">
     <h1 class="hl">Send et billede til Sagsvagt</h1>
-    <p class="dek">Bor du tæt på et sted, politikerne beslutter noget om? Et billede fra virkeligheden gør sagen lettere at forstå for alle.</p>
     <form id="foto-form" class="foto-form" novalidate>
       <input type="hidden" name="sag" id="f-sag">
       <div class="felt"><label for="f-foto">Billede (JPEG, PNG eller HEIC, højst 10 MB)</label><input id="f-foto" name="foto" type="file" accept="image/*" required></div>
@@ -57,7 +56,9 @@ fetch("api/foto.php",{method:"POST",credentials:"same-origin",headers:{"X-Sagsva
 .then(function(){f.reset();s.className="besked ok";s.textContent="Tak! Vi kigger på billedet og skriver, hvis vi bruger det.";}).catch(function(e){s.className="besked fejl";s.textContent=e.message;}).finally(function(){b.disabled=false;});});})();</script>
 </main>
 <!--#include virtual="/del/fod.html" -->
-<script>/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+<script>/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
+/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});
 /* Kommunevælgeren henter de åbne kommuner fra kommune/aabne.json første gang, den åbnes (toggle bobler ikke, derfor capture) */

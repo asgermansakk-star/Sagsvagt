@@ -76,9 +76,9 @@ p.lille { font-size: var(--sekundaer); color: var(--muted); } /* småtekst under
 /* Kortet, mens fliserne hentes, og nøglen til nålenes farver (farven er ikke eneste tegn: der står, hvad den betyder) */
 .sagskort.henter { background: linear-gradient(90deg, var(--kalk-mork) 0 40%, var(--kalk-lys) 50%, var(--kalk-mork) 60% 100%) 0 0 / 250% 100%; animation: skelet 1.4s ease-in-out infinite; }
 .kort-noegle { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 10px 0 4px; font-size: var(--sekundaer); font-weight: 600; }
-.kort-noegle span::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 50%; border: 2px solid #fff; vertical-align: -1px; }
-.kn-kommer::before { background: var(--indigo); }
-.kn-besluttet::before { background: var(--vin); }
+.kort-noegle span::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 50%; border: 2px solid var(--nat); vertical-align: -1px; }
+.kn-kommer::before { background: var(--lyng); } /* samme farver som prikkerne på det mørke kort */
+.kn-besluttet::before { background: var(--rosen); }
 /* Sagerne på kortet som liste, så de også kan nås med tastatur og skærmlæser */
 .kort-liste { margin: 8px 0 16px; }
 .kort-liste summary { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; cursor: pointer; }
@@ -191,8 +191,10 @@ p { margin: 0; }
 .notitser li:last-child { border-bottom: 0; }
 .kortnyt li a, .notitser li a { text-decoration: none; font-weight: 600; display: inline; padding: 6px 0; margin: -6px 0; } /* større trykflade uden at ændre layoutet */
 .kortnyt li a:hover, .notitser li a:hover { text-decoration: underline; }
-.nh-hvor { display: block; font-size: var(--fodnote); font-weight: 500; color: var(--muted); margin-bottom: 2px; }
-.nh-dato { font-size: var(--fodnote); color: var(--muted); white-space: nowrap; margin-left: 6px; }
+/* Overrubrikken står tydeligt i Vin med datoen på samme linje, så overskriften står for sig selv (8/11) */
+.nh-hvor { display: block; font-size: var(--fodnote); font-weight: 700; color: var(--vin); letter-spacing: .01em; margin-bottom: 4px; }
+.nh-dato { font-size: var(--fodnote); font-weight: 500; color: var(--muted); white-space: nowrap; }
+.nh-hvor .nh-dato::before { content: "· "; }
 
 .rail { padding-top: 4px; }
 .rail section + section { margin-top: 32px; }
@@ -238,6 +240,15 @@ p { margin: 0; }
 .kf ul { margin: 0; padding-left: 18px; }
 .kf li + li { margin-top: 6px; }
 .kf-mere { margin: 6px 0 0; font-size: var(--fodnote); color: var(--muted); }
+.ret-fejl { margin: 10px 0 0; font-size: var(--fodnote); color: var(--muted); }
+.ret-fejl a { color: var(--nat); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.medier { margin: 24px 0 0; }
+.medier h2 { font-size: var(--t3); margin: 0 0 8px; }
+.medier ul { list-style: none; margin: 0; padding: 0; }
+.medier li { display: flex; flex-direction: column; gap: 2px; padding: 12px 0; border-top: 1px solid var(--rule); }
+.medier li a { color: var(--nat); font-weight: 600; text-decoration: none; }
+.medier li a:hover { text-decoration: underline; }
+.medier li span { font-size: var(--fodnote); color: var(--muted); }
 .kf-videre { display: block; font-size: var(--fodnote); color: var(--muted); margin-top: 2px; }
 /* Hvad kan du gøre?: samme opbygning som Kort fortalt, med en rød streg, så handlingerne skiller sig ud */
 .kf.goer { box-shadow: inset 3px 0 0 var(--vin); }
@@ -295,14 +306,23 @@ dfn.ord:focus { outline: 2px solid var(--skifer); outline-offset: 2px; }
 
 /* Møder */
 .moeder .sec-h { margin-top: 24px; }
-.moede { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--rule); }
-.moede-dato { margin: 0; text-align: center; background: var(--kalk-lys); border-radius: var(--r-felt); padding: 8px 0 9px; line-height: 1.1; align-self: start; }
-.moede-dato b { display: block; font-size: 1.625rem; letter-spacing: -.02em; }
-.moede-dato span { display: block; font-size: var(--billedtekst); font-weight: 600; color: var(--muted); }
+/* Møderne som kort (8/11): mørk datoflise, udvalget og sagerne med billede som forsidens gitter */
+.moede { background: var(--kalk-lys); border-radius: 16px; padding: 20px; margin: 16px 0; }
+.moede-hoved { display: flex; align-items: center; gap: 16px; }
+.moede-dato { flex: none; width: 64px; margin: 0; text-align: center; background: var(--nat); color: var(--kalk); border-radius: 12px; padding: 8px 0 9px; line-height: 1.1; }
+.moede-dato b { display: block; font-size: 1.75rem; letter-spacing: -.02em; }
+.moede-dato span { display: block; font-size: var(--billedtekst); font-weight: 600; color: rgba(230,223,211,.75); }
 .moede h3 { margin: 0; font-size: var(--t3); }
-.moede h3 a { text-decoration: none; }
+.moede h3 a { text-decoration: none; color: var(--nat); }
 .moede-meta { margin: 4px 0 0; font-size: var(--fodnote); color: var(--muted); }
 .moede-meta a { color: var(--indigo); }
+.moede .gk-liste { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 16px; margin-top: 20px; }
+.moede .gk .hl { font-size: var(--sekundaer); line-height: 1.3; margin: 0; }
+.moede .gk .hl a { color: var(--nat); text-decoration: none; }
+.moede .gk .hl a:hover { text-decoration: underline; }
+.moede .punkt-udfald { margin: 0; }
+@media (max-width: 900px) { .moede .gk-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .moede { padding: 16px; } .moede .gk-liste { grid-template-columns: 1fr; gap: 0; } }
 .punkter { list-style: none; margin: 12px 0 0; padding: 0; }
 .punkter li { padding: 10px 0; border-top: 1px solid var(--rule); font-size: var(--broed); line-height: 1.35; }
 .punkter li a { text-decoration: none; font-weight: 600; }
@@ -382,7 +402,6 @@ footer.foot a:hover { text-decoration: underline; }
   .parti-tabel th, .parti-tabel td { padding: 10px 5px; font-size: var(--fodnote); }
   .parti-tabel .parti { white-space: normal; }
   .pct { min-width: 0; } .pct-bar { display: none; }
-  .moede { grid-template-columns: 56px minmax(0, 1fr); gap: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .001ms !important; animation-duration: .001ms !important; }
@@ -519,6 +538,9 @@ footer.foot a:hover { text-decoration: underline; }
 .fi-tekst { display: block; font-size: var(--sekundaer); line-height: 1.5; }
 .fi-kilde { display: inline-block; margin-top: 4px; font-size: var(--fodnote); color: var(--muted); }
 .fi-kilde.debat { font-style: italic; }
+/* Dækningen: det ordrette citat fra sagen, som argumentet bygger på (8/11) */
+.fi-daekning { display: block; margin-top: 6px; padding-left: 10px; border-left: 2px solid var(--rule); font-size: var(--fodnote); line-height: 1.45; color: var(--grafit); }
+.fi-daekning::before { content: "“"; } .fi-daekning::after { content: "”"; }
 .fi-tom { margin: 0 0 10px; font-size: var(--sekundaer); color: var(--muted); }
 .for-imod .kf-mere { margin-top: 14px; }
 @media (max-width: 640px) { .fi-grid { grid-template-columns: 1fr; } }
@@ -528,3 +550,32 @@ footer.foot a:hover { text-decoration: underline; }
 .plankort a { display: block; }
 .plankort img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
 .plankort figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
+
+/* ---------- Forsiderne i én spalte (8/11) ----------
+   Tophistorien med stort billede som Berlingske, derunder et gitter med billede, emne og overskrift og "Vis flere" som TV2. */
+.forside { max-width: 1040px; padding-top: 32px; padding-bottom: 48px; }
+.forside .lead { border-bottom: 0; padding-bottom: 0; }
+.forside .lead .hl { max-width: 24ch; }
+.gitter { margin: 32px 0 40px; padding-top: 28px; border-top: 1px solid var(--rule); }
+.gk-liste { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px 20px; }
+.gk { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.gk[hidden] { display: none; }
+.gk-billede { display: block; width: 100%; }
+.gk-billede img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; background: var(--kalk-lys); }
+.gk .emne-tag { min-height: 0; padding: 4px 8px; }
+.gk .hl { font-size: var(--overskrift); line-height: 1.25; margin: 0; }
+.gk .hl a { color: var(--nat); text-decoration: none; }
+.gk .hl a:hover { text-decoration: underline; }
+.vis-flere { display: block; margin: 40px auto 0; min-height: 48px; padding: 0 28px; border: 0; border-radius: 8px; background: var(--kalk-mork); color: var(--nat); font: 600 var(--sekundaer)/1 var(--sans); cursor: pointer; }
+.vis-flere:hover { background: var(--nat); color: var(--kalk); }
+.forside .paa-mail { max-width: 640px; }
+@media (max-width: 900px) { .gk-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { /* telefonen: lille billede til venstre, emne og overskrift til højre */
+  .gk-liste { grid-template-columns: 1fr; gap: 0; }
+  .gk { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 6px 12px; align-items: start; padding: 14px 0; border-top: 1px solid var(--rule); }
+  .gk-billede { grid-row: span 2; }
+  .gk:first-child { border-top: 0; padding-top: 0; }
+  .gk-billede img { border-radius: 6px; }
+  .gk .emne-tag { justify-self: start; }
+  .gk .hl { font-size: var(--sekundaer); }
+}

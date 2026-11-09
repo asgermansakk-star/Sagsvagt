@@ -303,6 +303,9 @@
   .felt input::placeholder { color: #7A7570; }
   .felt input:focus, .felt select:focus { outline: 3px solid var(--lyng); outline-offset: 2px; box-shadow: inset 0 0 0 2px var(--indigo); } /* tydelig ring uden om feltet på den mørke flade */
   .felt.bad input { box-shadow: inset 0 0 0 2px var(--rosen); }
+  .felt.navne { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; } /* fornavn og efternavn ved siden af hinanden */
+  .felt.navne.bad input:placeholder-shown { box-shadow: inset 0 0 0 2px var(--rosen); }
+  .felt.navne.bad input:not(:placeholder-shown) { box-shadow: none; }
   .valgte { display: flex; flex-wrap: wrap; gap: 6px; }
   .valgte .tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 4px 4px 12px; }
   .valgte .tag button { position: relative; border: 0; cursor: pointer; width: 32px; height: 32px; border-radius: 6px; background: rgba(14,15,20,.15); color: inherit; font-size: var(--fodnote); line-height: 1; padding: 0; }
@@ -324,14 +327,32 @@
   .form-msg.ok { color: var(--lyng); } .form-msg.err { color: var(--rosen); }
   .form-note { font-size: var(--fodnote); color: rgba(230,223,211,.72); line-height: 1.5; }
   .form-note a { color: var(--kalk); }
-  .done { display: none; text-align: center; align-content: center; gap: 8px; }
-  .done .mark { width: 64px; margin: 0 auto 8px; }
-  .done h3 { font-size: var(--t2); }
+  /* Kvitteringen er en side for sig, der dækker hele skærmen (flyttes ud i <body>, når tilmeldingen er gået igennem) */
+  /* Tilmeldingen er en side for sig, der dækker hele skærmen: den åbnes af alle "Skriv dig op"-knapper (#tilmeld) */
+  .tilmeld-baand { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; padding: 40px 48px;
+    border-radius: var(--r-stor); color: var(--kalk); background: var(--moedet); background-color: var(--nat); }
+  .tilmeld-baand h2 { font-size: var(--t1); }
+  .tilmeld-side { display: grid; grid-template-rows: auto 1fr; position: fixed; inset: 0; z-index: 100; overflow-y: auto; overscroll-behavior: contain;
+    color: var(--kalk); background: var(--moedet); background-color: var(--nat); animation: tak-ind .4s ease both; }
+  .tilmeld-side[hidden] { display: none; }
+  .tilmeld-side.straks { animation: none; } /* åbnet fra et link: vis den med det samme (animationer kan stå stille, mens siden indlæses) */
+  @keyframes tak-ind { from { opacity: 0; } }
+  .tilmeld-side .tak-bar { position: static; }
+  .tilmeld-side .luk { all: unset; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; font-size: 1.75rem; line-height: 1; color: var(--kalk); cursor: pointer; }
+  .tilmeld-side .luk:hover { background: rgba(230,223,211,.1); }
+  .tilmeld-side .luk:focus-visible { outline: 3px solid var(--lyng); outline-offset: 2px; }
+  .tilmeld-side .tilmeld-kort { display: block; align-self: center; justify-self: center; width: min(100% - 32px, 32rem); padding: 32px 0 80px; background: none; border-radius: 0; }
+  .tilmeld-side .tilmeld-kort h2 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem); line-height: 1.1; margin-bottom: 32px; }
+  .tilmeld-side .tilmeld-kort.ok h2 { display: none; }
+  .done { display: none; gap: 12px; text-align: center; }
+  .done .mark { width: 72px; margin: 0 auto 12px; }
+  .done h3 { font-size: clamp(2rem, 1.4rem + 2.4vw, 3rem); line-height: 1.1; }
+  body.tak-aaben { overflow: hidden; }
   .done p { color: rgba(230,223,211,.8); }
   .done .tjek { margin-top: 8px; font-size: var(--fodnote); color: rgba(230,223,211,.65); }
   .tilmeld-kort.ok form { display: none; } .tilmeld-kort.ok .done { display: grid; }
   /* Henvisning: den tilmeldte får sit eget link (?fra=ven-xxxxxx) */
-  .henvis { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(230,223,211,.2); text-align: left; }
+  .henvis { margin-top: 32px; padding-top: 32px; border-top: 1px solid rgba(230,223,211,.2); }
   .henvis[hidden] { display: none; }
   .henvis .henvis-titel { font-weight: 600; color: var(--kalk); }
   .henvis-rad { display: flex; gap: 8px; margin-top: 12px; }
@@ -405,6 +426,34 @@
   }
   .spring { position: absolute; left: 16px; top: -64px; z-index: 60; padding: 10px 16px; border-radius: 8px; background: #E6DFD3; color: #0E0F14; font-weight: 600; text-decoration: none; }
   .spring:focus { top: 12px; }
+  /* Enklere forside (8/11): overskriften står midt på filmen */
+  .hero-gitter { align-items: center; }
+
+  /* ---------- Tilmelding trin for trin (8/11) ----------
+     Ét felt ad gangen: det udfyldte rykker op og bliver svagt (tryk på det for at gå tilbage), feltet før det folder sig sammen,
+     og det næste glider ind nedefra. Til sidst lyser knappen op. Uden JavaScript står alle felter som før. */
+  form.trinvis { display: flex; flex-direction: column; gap: 0; }
+  .trinvis .felt, .trinvis .flueben { max-height: 0; min-height: 0; opacity: 0; margin: 0; padding-top: 0; padding-bottom: 0; overflow: hidden; transform: translateY(18px); pointer-events: none;
+    transition: max-height .45s ease, opacity .35s ease, transform .45s ease, margin .45s ease, padding .45s ease; }
+  .trinvis .aktiv, .trinvis .forrige { max-height: 180px; opacity: 1; margin-bottom: 16px; transform: none; pointer-events: auto; overflow: visible; }
+  .trinvis .flueben.aktiv, .trinvis .flueben.forrige { padding: 10px 0; min-height: 44px; }
+  .trinvis.start .felt, .trinvis.start .flueben { transition: none; }
+  .trinvis .forrige { opacity: .45; cursor: pointer; }
+  .trinvis .forrige:hover { opacity: .75; }
+  .trinvis .medlem-felter, .trinvis .konto-felt { display: block; }
+  .trinvis .medlem-felter[hidden], .trinvis .konto-felt[hidden] { display: none; }
+  .trinvis .konto-felt:not(:has(.aktiv)) .konto-note { display: none; }
+  .trinvis .konto-note { margin: 0 0 12px; }
+  .trinvis:not(.klar) .send { background: rgba(230,223,211,.14); color: var(--kalk); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.35); }
+  .trinvis.klar .send { animation: send-lys 2.2s ease-in-out infinite; }
+  .trinvis .aktiv.bad { animation: trin-ryst .32s; }
+  @keyframes send-lys { 0%, 100% { box-shadow: 0 0 0 0 rgba(230,223,211,0), 0 0 0 0 rgba(176,74,80,0); }
+    50% { box-shadow: 0 0 0 6px rgba(230,223,211,.16), 0 0 30px 8px rgba(176,74,80,.5); } }
+  @keyframes trin-ryst { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+  @media (prefers-reduced-motion: reduce) {
+    .trinvis .felt, .trinvis .flueben { transition: none; }
+    .trinvis.klar .send, .trinvis .aktiv.bad { animation: none; }
+  }
 </style>
 <script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1"){var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:(f||(r&&r!==location.hostname?r:"")).slice(0,60)})})}}catch(e){}</script>
 </head>
@@ -419,9 +468,6 @@
   <div class="wrap">
     <a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
     <nav aria-label="Hovedmenu">
-      <a href="#saadan">Sådan virker det</a>
-      <a href="#kort">Kort</a>
-      <a href="#spoergsmaal">Spørgsmål</a>
       <a href="index.html">Læs avisen</a>
       <a href="erhverv.html">Erhverv</a>
     </nav>
@@ -436,31 +482,22 @@
     <button class="film-pause" id="film-pause" type="button" aria-label="Sæt filmen på pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
     <div class="wrap hero-gitter">
      <div>
-      <p class="kicker">Kommunalpolitik, du kan bruge</p>
       <h1 id="hero-h">Politik, der rammer din hverdag. Én mail om mandagen.</h1>
-      <p class="lead">Boliger, busser, cykelstier, klima og natteliv. Sagsvagt læser alt, hvad byrådet og udvalgene behandler, så du ikke skal. Du vælger, hvad du går op i, og får kun de sager, der handler om det, forklaret så det giver mening. Med link til kilden.</p>
       <div class="handlinger">
         <a class="btn btn-primaer" href="#tilmeld">Få min mandagsmail</a>
-        <a class="btn btn-sekundaer" href="#proev">Se et eksempel først</a>
+        <a class="btn btn-sekundaer" href="eksempel.html">Se et eksempel</a>
       </div>
-      <p class="ugen-link"><a href="ugen.html?fra=forside">Eller swipe gennem ugens sager fra København</a></p>
       <form class="find-kommune" id="find-kommune" role="search" novalidate>
         <label for="fk">Find din kommune</label>
         <div><input id="fk" list="kommune-liste" autocomplete="off" placeholder="Skriv din kommune, fx Aarhus"><button class="btn btn-lille btn-sekundaer" type="submit">Find</button></div>
         <p class="fk-fejl" id="fk-fejl" role="status"></p>
       </form>
-      <ul class="tryghed" aria-label="Det kan du regne med">
-        <li>Gratis i testperioden</li>
-        <li>Partineutral</li>
-        <li>Afmeld fra hver mail</li>
-      </ul>
-      <p class="erhverv-linje">Arbejder du med ejendom, byggeri eller rådgivning? <a href="erhverv.html">Se Sagsvagt Erhverv</a></p>
      </div>
       <!-- Tre rigtige sager fra demoen herunder, så man med det samme ser, hvad Sagsvagt finder -->
       <aside class="udklip" aria-labelledby="udklip-h">
         <h2 id="udklip-h">Fra dagsordenerne i København</h2>
         <article class="u-top">
-          <a class="u-billede" href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-10.html" tabindex="-1" aria-hidden="true"><img src="assets/emner/affald.svg" alt=""></a>
+          <a class="u-billede" href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-10.html" tabindex="-1" aria-hidden="true"><img src="assets/emner/affald.jpg" alt=""></a>
           <p class="u-kicker">Affald · 28. sep.</p>
           <h3><a href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-10.html">Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027</a></h3>
           <p class="u-meta">Klima-, Miljø- og Teknikudvalget</p>
@@ -473,165 +510,39 @@
             <h3><a href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-2.html">Fældning af træer i Tingbjerg</a></h3>
           </article>
           <article>
-            <a class="u-billede" href="sag/kk-2026-10-05-klima-miljoe-og-teknikudvalget-15.html" tabindex="-1" aria-hidden="true"><img src="assets/emner/trafik.svg" alt=""></a>
+            <a class="u-billede" href="sag/kk-2026-10-05-klima-miljoe-og-teknikudvalget-15.html" tabindex="-1" aria-hidden="true"><img src="assets/emner/trafik.jpg" alt=""></a>
             <p class="u-kicker">Trafik · 5. okt.</p>
             <h3><a href="sag/kk-2026-10-05-klima-miljoe-og-teknikudvalget-15.html">Nordlige del af Badstuestræde som sekundær gågade</a></h3>
           </article>
         </div>
-        <a class="u-mere" href="#proev">Se 15 sager mere</a>
+        <a class="u-mere" href="index.html">Læs avisen</a>
       </aside>
     </div>
   </section>
 
-  <section class="afsnit" id="kort" aria-labelledby="kort-h">
+  <section class="afsnit" aria-labelledby="tilmeld-cta">
     <div class="wrap">
-      <div class="afsnit-hoved">
-        <h2 id="kort-h">Hvad sker der i din gade?</h2>
-        <p class="lead">Sagerne fra København de sidste fire måneder, sat på et kort efter gade, skole og park. Tryk på en prik.</p>
-      </div>
-      <div class="kortflade">
-        <div class="sk-kort" id="sagskort-flade">
-          <img src="assets/sagskort.jpg" width="1400" height="1202" alt="" loading="lazy">
-          <svg viewBox="0 0 2400 2060" aria-hidden="true"></svg>
-          <span class="sk-kilde">Kort: © OpenStreetMap-bidragydere</span>
-        </div>
-        <div class="sk-sag">
-          <div aria-live="polite">
-            <p class="sk-sted" id="sk-sted">København</p>
-            <h3 id="sk-titel"><a href="kort.html">Se sagerne på kortet</a></h3>
-            <p class="sk-info" id="sk-info"></p>
-          </div>
-          <p class="sk-noegle"><span>Kommer op</span><span>Besluttet</span></p>
-          <div class="sk-skift" id="sk-skift" hidden><button type="button" id="sk-forrige">Forrige sag</button><button type="button" id="sk-naeste">Næste sag</button></div>
-          <a class="btn btn-lys" href="kort.html">Se hele kortet</a>
-        </div>
+      <div class="tilmeld-baand paa-moerk">
+        <h2 id="tilmeld-cta">Få din første mandagsmail</h2>
+        <a class="btn btn-primaer" href="#tilmeld">Skriv mig op</a>
       </div>
     </div>
   </section>
 
-  <section class="afsnit" id="proev" aria-labelledby="proev-h">
-    <div class="wrap">
-      <div class="afsnit-hoved">
-        <h2 id="proev-h">Se, hvad du ville have fået</h2>
-        <p class="lead">18 rigtige sager, som politikerne i København har behandlet de seneste uger.</p>
-      </div>
+</main>
 
-      <div class="kort styring">
-        <div class="raekke">
-          <h3>Vælg dine emner</h3>
-          <div class="roller" role="group" aria-label="Vælg en rolle">
-            <span>Eller vælg en rolle:</span>
-            <button class="rolle" type="button" aria-pressed="false" data-p="studerende">Studerende</button>
-            <button class="rolle" type="button" aria-pressed="false" data-p="politiker">Lokalpolitiker</button>
-            <button class="rolle" type="button" aria-pressed="false" data-p="journalist">Journalist</button>
-            <button class="rolle" type="button" aria-pressed="false" data-p="ejendom">Ejendom og byggeri</button>
-            <button class="rolle" type="button" aria-pressed="false" data-p="forening">Forening</button>
-          </div>
-        </div>
-        <div class="chips" id="chips" role="group" aria-label="Emner"></div>
-        <div class="soeg">
-          <label for="q">Eller skriv dit eget ord</label>
-          <div class="soegfelt">
-            <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12.5 12.5L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            <input id="q" type="search" placeholder="Fx cykel, skrald eller lokalplan" autocomplete="off">
-          </div>
-          <small id="qHint">Vi fanger også ord, der betyder det samme. Prøv "skrald" eller "regnvand".</small>
-        </div>
-      </div>
-
-      <div class="demo-gitter">
-        <div class="kort panel">
-          <div class="kort-hoved"><h3>Det, vi læste</h3><span id="feedMeta">18 punkter</span></div>
-          <div class="scan" id="scan"></div>
-          <ul class="feed" id="feed"></ul>
-          <button class="btn btn-sekundaer btn-lille vis-alle" type="button" id="visAlle" aria-expanded="false">Vis alle 18 punkter</button>
-          <button class="btn btn-sekundaer btn-lille vis-alle skjul" type="button" id="visFaerre" aria-expanded="true">Vis færre</button>
-        </div>
-        <div class="mail" aria-live="polite">
-          <div class="mail-top"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg><div class="meta">Til: dig<br>Mandag kl. 07.00</div></div>
-          <div class="mail-krop">
-            <h4><span class="big-n" id="bigN">0</span> <span id="bigLbl">sager til dig</span></h4>
-            <p id="mailSub">Fra Københavns Kommune, de seneste uger.</p>
-            <ul class="cases" id="cases"></ul>
-          </div>
-          <div class="mail-fod">
-            <small>Hver sag har et kort resumé og et link til kommunens eget dokument.</small>
-            <a class="btn btn-primaer btn-lille" href="#tilmeld">Få den hver mandag</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="afsnit" id="grafik" aria-labelledby="grafik-h">
-    <div class="wrap">
-      <div class="afsnit-hoved">
-        <h2 id="grafik-h">Hvem stemte hvad, og hvor bliver der bygget</h2>
-        <p class="lead">Når politikerne har stemt, ser du resultatet og partierne. Handler sagen om en lokalplan eller et sted, ser du det på kortet. To eksempler fra København.</p>
-      </div>
-      <div class="grafik-gitter">
-        <article>
-          <p class="g-kicker">Trafik · Klima og grønt</p>
-          <h3><a href="sag/kk-2026-10-08-borgerrepraesentationen-4.html">Metro M5: Høring om, hvordan byggeriet skal passe på den beskyttede grønbrogede tudse</a></h3>
-          <p class="g-meta">Borgerrepræsentationen · Besluttet 8. oktober 2026</p>
-          <div class="sg">
-            <p class="sg-udfald"><b>Vedtaget</b> med 50 stemmer for og 3 imod.</p>
-            <span class="sg-bar" aria-hidden="true"><span class="sg-for" style="flex-grow:50"></span><span class="sg-imod" style="flex-grow:3"></span></span>
-            <p class="sg-tal"><span><i class="sg-prik"></i>For <b>50</b></span><span class="sg-t-imod"><i class="sg-prik"></i>Imod <b>3</b></span><span>Undlod <b>0</b></span></p>
-            <p class="sg-gh">Stemte for</p>
-            <ul class="sg-knapper">
-              <li class="sg-knap" style="--pf:#CC4010;--pt:#fff" title="Enhedslisten">Ø</li><li class="sg-knap" style="--pf:#C4175F;--pt:#fff" title="SF">F</li><li class="sg-knap" style="--pf:#C8102E;--pt:#fff" title="Socialdemokratiet">A</li><li class="sg-knap" style="--pf:#00583C;--pt:#fff" title="Det Konservative Folkeparti">C</li><li class="sg-knap" style="--pf:#9A2A8C;--pt:#fff" title="Radikale Venstre">B</li><li class="sg-knap" style="--pf:#0057A8;--pt:#fff" title="Venstre">V</li><li class="sg-knap" style="--pf:#0F7B78;--pt:#fff" title="Liberal Alliance">I</li><li class="sg-knap" style="--pf:#E9C32A;--pt:#14213D" title="Dansk Folkeparti">O</li>
-            </ul>
-            <p class="sg-gh">Stemte imod</p>
-            <ul class="sg-knapper">
-              <li class="sg-knap" style="--pf:#217A35;--pt:#fff" title="Alternativet">Å</li><li class="sg-knap" style="--pf:#8CBF3F;--pt:#14213D" title="Frie Grønne">Q</li>
-            </ul>
-          </div>
-          <a class="g-laes" href="sag/kk-2026-10-08-borgerrepraesentationen-4.html">Læs sagen</a>
-        </article>
-        <article>
-          <p class="g-kicker">Byggeri og lokalplaner</p>
-          <h3><a href="sag/kk-2026-08-20-borgerrepraesentationen-5.html">Lokalplanforslag for Kommunehospitalet II</a></h3>
-          <p class="g-meta">Borgerrepræsentationen · Sendt i offentlig høring</p>
-          <figure class="plankort"><img src="assets/plankort/12188978.jpg" alt="Kort over lokalplanområdet Kommunehospitalet II ved Øster Søgade, markeret med rødt" loading="lazy"><figcaption>Lokalplanens område tegnet ind på kortet. Kort: OpenStreetMap-bidragydere. Plangrænse: Plandata.dk.</figcaption></figure>
-          <a class="g-laes" href="sag/kk-2026-08-20-borgerrepraesentationen-5.html">Læs sagen</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="faktabaand" aria-label="Sagsvagt i tal">
-    <div class="wrap">
-      <div><b>21.000+</b><span>punkter læst fra byråd, udvalg og lokaludvalg</span></div>
-      <div><b class="n-aabne">72</b><span>af 98 kommuner er åbne</span></div>
-      <div><b>07.00</b><span>hver mandag i din indbakke</span></div>
-    </div>
-  </section>
-
-  <section class="afsnit" id="tilmeld" aria-labelledby="tilmeld-h">
-    <div class="wrap">
-      <div class="tilmeld-kort paa-moerk">
-        <div>
-          <h2 id="tilmeld-h">Få din første mandagsmail</h2>
-          <p class="lead">Det er gratis og tager et halvt minut. Vi åbner kommune for kommune, der hvor flest skriver sig op, så din tilmelding rykker din kommune frem i køen.</p>
-          <ul class="fordele">
-            <li><span>Gratis, mens vi tester</span></li>
-            <li><span>Én mail om ugen, ingen spam</span></li>
-            <li><span>Afmeld fra mailen, når som helst</span></li>
-          </ul>
-          <div class="fremdrift"><div class="linje"><i id="fremdrift"></i></div><small><span class="n-aabne">72</span> af 98 kommuner er åbne. Din tilmelding rykker din kommune frem.</small></div>
-        </div>
+<div class="tilmeld-side paa-moerk" id="tilmeld" role="dialog" aria-modal="true" aria-labelledby="tilmeld-h" hidden>
+  <header class="bar tak-bar"><div class="wrap"><a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a><button class="luk" type="button" aria-label="Luk">×</button></div></header>
+      <div class="tilmeld-kort">
+        <h2 id="tilmeld-h">Få din første mandagsmail</h2>
         <form id="form" novalidate>
           <input type="hidden" name="kilde" id="kilde">
+          <div class="felt navne"><div><label for="fornavn">Fornavn</label><input id="fornavn" name="fornavn" type="text" autocomplete="given-name" maxlength="40" placeholder=" " required></div><div><label for="efternavn">Efternavn</label><input id="efternavn" name="efternavn" type="text" autocomplete="family-name" maxlength="60" placeholder=" " required></div></div>
           <div class="felt"><label for="email">Din e-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="navn@eksempel.dk" required></div>
           <!-- Usynligt felt, som kun robotter udfylder (FormSubmit kender også _honey) -->
           <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 
           <div class="felt"><label for="kommuner">Kommuner du vil følge</label><input id="kommuner" name="kommuner" type="text" value="" placeholder="fx Aarhus, Viborg eller København" list="kommune-liste" autocomplete="off"><datalist id="kommune-liste"><option value="Albertslund"><option value="Allerød"><option value="Assens"><option value="Ballerup"><option value="Billund"><option value="Bornholm"><option value="Brøndby"><option value="Brønderslev"><option value="Dragør"><option value="Egedal"><option value="Esbjerg"><option value="Fanø"><option value="Favrskov"><option value="Faxe"><option value="Fredensborg"><option value="Fredericia"><option value="Frederiksberg"><option value="Frederikshavn"><option value="Frederikssund"><option value="Furesø"><option value="Faaborg-Midtfyn"><option value="Gentofte"><option value="Gladsaxe"><option value="Glostrup"><option value="Greve"><option value="Gribskov"><option value="Guldborgsund"><option value="Haderslev"><option value="Halsnæs"><option value="Hedensted"><option value="Helsingør"><option value="Herlev"><option value="Herning"><option value="Hillerød"><option value="Hjørring"><option value="Holbæk"><option value="Holstebro"><option value="Horsens"><option value="Hvidovre"><option value="Høje-Taastrup"><option value="Hørsholm"><option value="Ikast-Brande"><option value="Ishøj"><option value="Jammerbugt"><option value="Kalundborg"><option value="Kerteminde"><option value="Kolding"><option value="København"><option value="Køge"><option value="Langeland"><option value="Lejre"><option value="Lemvig"><option value="Lolland"><option value="Lyngby-Taarbæk"><option value="Læsø"><option value="Mariagerfjord"><option value="Middelfart"><option value="Morsø"><option value="Norddjurs"><option value="Nordfyn"><option value="Nyborg"><option value="Næstved"><option value="Odder"><option value="Odense"><option value="Odsherred"><option value="Randers"><option value="Rebild"><option value="Ringkøbing-Skjern"><option value="Ringsted"><option value="Roskilde"><option value="Rudersdal"><option value="Rødovre"><option value="Samsø"><option value="Silkeborg"><option value="Skanderborg"><option value="Skive"><option value="Slagelse"><option value="Solrød"><option value="Sorø"><option value="Stevns"><option value="Struer"><option value="Svendborg"><option value="Syddjurs"><option value="Sønderborg"><option value="Thisted"><option value="Tønder"><option value="Tårnby"><option value="Vallensbæk"><option value="Varde"><option value="Vejen"><option value="Vejle"><option value="Vesthimmerland"><option value="Viborg"><option value="Vordingborg"><option value="Ærø"><option value="Aabenraa"><option value="Aalborg"><option value="Aarhus"></datalist></div>
-          <div class="felt" id="valgteFelt" hidden>
-            <span class="label-tekst" style="display:block;font-size:var(--fodnote);font-weight:600;margin-bottom:6px">Dine emner fra demoen</span>
-            <div class="valgte" id="picked"></div>
-          </div>
           <div class="felt"><label for="emner">Andre emner eller ord <small>(valgfrit)</small></label><input id="emner" name="emner" type="text" placeholder="Fx cykelstier, lokalplan"></div>
           <div class="felt">
             <label for="rolle">Jeg er</label>
@@ -643,7 +554,6 @@
           </div>
           <label class="flueben"><input type="checkbox" id="medlem" name="medlem"> <span>Jeg er 16-30 år og vil også være gratis medlem af <a href="https://saetdagsordenen.dk" target="_blank" rel="noopener">Sæt Dagsordenen</a></span></label>
           <div class="medlem-felter" id="medlemFelter" hidden>
-            <div class="felt"><label for="navn">Navn</label><input id="navn" name="navn" type="text" autocomplete="name" maxlength="100"></div>
             <div class="felt"><label for="alder">Alder</label><input id="alder" name="alder" type="number" inputmode="numeric" min="16" max="30"></div>
           </div>
           <div class="konto-felt" id="kontoFelt" hidden>
@@ -661,68 +571,12 @@
           <p class="tjek">Kan du ikke finde vores mails? Tjek også din mappe med uønsket mail, og markér dem som "Ikke uønsket".</p>
           <div class="henvis" hidden>
             <p class="henvis-titel">Kender du nogen, der også bør følge med?</p>
-            <p>Send dem dit eget link. Så kan vi se, hvem der kom via dig.</p>
             <div class="henvis-rad"><input id="henvisLink" type="text" readonly aria-label="Dit link til Sagsvagt"><button type="button" class="btn btn-lys btn-lille" id="henvisKnap">Kopiér</button></div>
             <p class="henvis-svar" role="status"></p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="afsnit lys" id="saadan" aria-labelledby="saadan-h">
-    <div class="wrap">
-      <div class="afsnit-hoved">
-        <h2 id="saadan-h">Sådan virker det</h2>
-        <p class="lead">Kommunerne lægger dagsordener og referater ud i hundredvis af dokumenter. Sagsvagt læser dem for dig og finder de punkter, der handler om dine emner.</p>
-      </div>
-      <ol class="trin">
-        <li>
-          <h3>Vælg emner og kommuner</h3>
-          <p>Skriv de sager og ord, du holder øje med. Fx affald, cykelstier, en bestemt skole eller en lokalplan.</p>
-        </li>
-        <li>
-          <h3>Vi læser alt, der bliver lagt ud</h3>
-          <p>Byråd, udvalg og lokaludvalg. Hvert punkt bliver sammenholdt med dine emner, også synonymer.</p>
-        </li>
-        <li>
-          <h3>Én mail hver mandag</h3>
-          <p>Kort resumé af hver sag, hvad der skal besluttes, hvornår, og et link til kommunens eget dokument.</p>
-        </li>
-      </ol>
-      <div class="loefter">
-        <h3>Det kan du regne med</h3>
-        <ul>
-          <li><div><b>Kun offentlige kilder</b><span>Kommunernes egne dagsordener og referater. Hver sag linker til originalen.</span></div></li>
-          <li><div><b>Resuméer, ikke holdninger</b><span>Vi fortæller, hvad der skal besluttes, ikke hvad du skal mene om det.</span></div></li>
-          <li><div><b>Ingen persondata om borgere</b><span>Vi gemmer ikke navne på privatpersoner fra sagerne.</span></div></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="afsnit" id="spoergsmaal" aria-labelledby="faq-h">
-    <div class="wrap">
-      <div class="afsnit-hoved"><h2 id="faq-h">Spørgsmål</h2></div>
-      <div class="faq">
-        <details><summary>Hvor kommer oplysningerne fra?</summary><p>Fra kommunernes egne, offentligt tilgængelige dagsordener og referater. Hver sag i mailen linker til det originale dokument, så du altid kan læse hele sagen.</p></details>
-        <details><summary>Hvilke kommuner er med?</summary><p>Sagsvagt er en lokalavis for hele Danmark. Vi er startet i København med Borgerrepræsentationen, de stående udvalg og lokaludvalgene og åbner kommune for kommune efter, hvad brugerne efterspørger. Under <a href="kommune/">Find din kommune</a> kan du se, hvilke kommuner der allerede er åbne. Skriv de kommuner, du vil følge, når du tilmelder dig, så kommer de først i køen.</p></details>
-        <details><summary>Hvordan finder I de rigtige sager?</summary><p>Vi søger ikke kun efter præcis de ord, du skriver. En sag om "VE-anlæg" bliver også fanget, hvis du følger solceller, og "byplan" fanges, hvis du følger lokalplaner. Du kan prøve det i demoen længere oppe.</p></details>
-        <details><summary>Hvad koster det?</summary><p>Intet, mens vi tester. Bagefter bliver det et abonnement. Du får besked i god tid, og du beslutter selv, om du vil fortsætte.</p></details>
-        <details><summary>Hvornår starter det?</summary><p>De første mails sendes til testbrugerne i løbet af de kommende uger. Du får en mail, når din kommune er klar.</p></details>
-      </div>
-    </div>
-  </section>
-  <section class="afsnit" id="andre" aria-labelledby="andre-h">
-    <div class="wrap">
-      <div class="afsnit-hoved"><h2 id="andre-h">Til virksomheder og foreninger</h2></div>
-      <div class="to-veje">
-        <a href="erhverv.html"><b>Sagsvagt Erhverv</b><span>Se byggerier, lokalplaner og udbud i kommunerne, før de bliver offentligt udbudt.</span><em>Se produkter og priser</em></a>
-        <a href="boks.html"><b>Sæt Sagsvagt på din hjemmeside</b><span>En gratis boks med de nyeste sager fra din bydel, dit udvalg eller dit emne. Den opdaterer sig selv.</span><em>Hent koden</em></a>
-      </div>
-    </div>
-  </section>
-</main>
+</div>
 
 <footer>
   <div class="wrap">
@@ -756,171 +610,8 @@
     film.play().catch(() => {});
   })();
 
-  /* ---------- Kortet over sagerne: prikker fra assets/kort-sager.json på vores eget kortbillede, intet hentes hos andre ---------- */
-  (() => {
-    const flade = $("#sagskort-flade"), Z = 256 * 2 ** 14;
-    const pos = (lon, lat) => { const r = lat * Math.PI / 180; return [(lon + 180) / 360 * Z, (1 - Math.log(Math.tan(r) + 1 / Math.cos(r)) / Math.PI) / 2 * Z]; };
-    const [cx, cy] = pos(12.5525, 55.675);
-    const start = () => fetch("assets/kort-sager.json").then((r) => r.json()).then((alle) => {
-      // Kommende sager først, derefter de nyeste
-      const l = alle.map((s) => { const [x, y] = pos(s.lon, s.lat); return { ...s, x: x - cx + 1200, y: y - cy + 1030 }; })
-        .filter((s) => s.x > 0 && s.y > 0 && s.x < 2400 && s.y < 2060)
-        .sort((a, b) => (b.status === "kommer") - (a.status === "kommer") || b.dato.localeCompare(a.dato));
-      if (!l.length) return;
-      const svg = $("svg", flade);
-      svg.innerHTML = [...l].reverse().map((s) => `<circle cx="${s.x.toFixed(0)}" cy="${s.y.toFixed(0)}" r="22" class="${s.status === "kommer" ? "kommer" : ""}" data-i="${l.indexOf(s)}"/>`).join("");
-      let valgt = 0;
-      const vis = (i) => {
-        valgt = (i + l.length) % l.length;
-        const s = l[valgt];
-        $("#sk-sted").textContent = `${s.sted} · ${s.hvor}`;
-        $("#sk-titel").innerHTML = `<a href="${esc(s.url)}">${esc(s.titel)}</a>`;
-        $("#sk-info").textContent = `${s.status === "kommer" ? "Kommer op" : "Besluttet"} ${new Date(s.dato).toLocaleDateString("da-DK", { day: "numeric", month: "long" })}`;
-        $$("circle", svg).forEach((c) => c.classList.toggle("valgt", +c.dataset.i === valgt));
-        const c = svg.querySelector(`[data-i="${valgt}"]`); svg.append(c);
-      };
-      // Et tryk vælger den nærmeste prik, så de små prikker også kan rammes med en finger
-      flade.addEventListener("click", (e) => {
-        const b = svg.getBoundingClientRect(), x = (e.clientX - b.left) / b.width * 2400, y = (e.clientY - b.top) / b.height * 2060;
-        let bedst = 0, min = Infinity;
-        l.forEach((s, i) => { const d = (s.x - x) ** 2 + (s.y - y) ** 2; if (d < min) { min = d; bedst = i; } });
-        vis(bedst);
-      });
-      $("#sk-forrige").addEventListener("click", () => vis(valgt - 1));
-      $("#sk-naeste").addEventListener("click", () => vis(valgt + 1));
-      $("#sk-skift").hidden = false;
-      vis(0);
-    }).catch(() => {});
-    if (!("IntersectionObserver" in window)) return void start();
-    const o = new IntersectionObserver((e) => { if (e[0].isIntersecting) { o.disconnect(); start(); } }, { rootMargin: "400px" });
-    o.observe(flade);
-  })();
-
-  /* ---------- Emner (rød og blå på skift) og synonymer ---------- */
-  const R = { c: "var(--rosen)", cf: "var(--bordeaux)", hl: "var(--rosen)" }, B = { c: "var(--lyng)", cf: "var(--blaek)", hl: "var(--lyng)" };
-  const EMNER = {
-    affald:  { navn: "Affald", ...R, ord: ["affald", "skrald", "renovation", "genbrug", "tømning", "skraldespand", "madaffald"] },
-    trafik:  { navn: "Trafik og cykler", ...B, ord: ["trafik", "cykel", "cykelsti", "cykler", "vej", "bil", "bus", "metro", "gågade", "parkering", "fortov", "trafiksikkerhed"] },
-    klima:   { navn: "Klima og grønt", ...R, ord: ["klima", "skybrud", "regnvand", "træ", "træer", "natur", "grøn", "park", "tudse", "kloak"] },
-    bolig:   { navn: "Boliger", ...B, ord: ["bolig", "boliger", "studiebolig", "lejlighed", "senior", "almen", "rækkehus"] },
-    byggeri: { navn: "Byggeri og lokalplaner", ...R, ord: ["byggeri", "lokalplan", "byplan", "servitut", "rækkehuse", "byggesag", "bevaring"] },
-    skole:   { navn: "Skoler og børn", ...B, ord: ["skole", "skoler", "specialskole", "dagtilbud", "børnehave", "vuggestue", "børn", "institution"] },
-    budget:  { navn: "Budget", ...R, ord: ["budget", "økonomi", "bevilling", "penge", "pulje", "skat"] },
-    kultur:  { navn: "Kultur", ...B, ord: ["kultur", "bibliotek", "biblioteker", "kunst", "fritid", "borgermøde"] },
-  };
-  const KK = "https://www.kk.dk/dagsordener-og-referater/";
-  const SAGER = [
-    { e: ["affald"], d: "28. sep.", u: "Klima-, Miljø- og Teknikudvalget", t: "Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027", r: "Efter forsøg i villaer i 2025 og 2026 skal mad- og restaffald tømmes hver 14. dag i stedet for hver uge.", v: [7, 3], b: "emner/affald.svg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-28092026/referat/punkt-10" },
-    { e: ["trafik"], d: "30. sep.", u: "Christianshavns Lokaludvalg", t: "Høringssvar om udkast til Trafik- og Byrumsplan Amager", r: "Lokaludvalget godkender sit høringssvar til forvaltningens udkast til en ny trafik- og byrumsplan for Amager.", b: "emner/trafik.svg", k: "Christianshavns%20Lokaludvalg/m%C3%B8de-30092026/referat/punkt-7" },
-    { e: ["trafik"], d: "24. sep.", u: "Brønshøj-Husum Lokaludvalg", t: "Udtalelse om forsøg med midlertidig lukning af Brønshøj Kirkevej", r: "Lokaludvalget udtaler sig om et forsøg med at lukke Brønshøj Kirkevej midlertidigt.", b: "emner/trafik.svg", k: "Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-14" },
-    { e: ["trafik", "klima"], d: "8. okt.", u: "Indre By Lokaludvalg", t: "Henvendelse om fossilfri og sikker trafik på cykelstierne i Indre By", r: "Lokaludvalget skal godkende en henvendelse til Klima-, Miljø- og Teknikudvalget om fossilfri og sikker trafik på cykelstierne.", b: "emner/trafik.svg", k: "Indre%20By%20Lokaludvalg/m%C3%B8de-08102026/dagsorden/punkt-8" },
-    { e: ["klima", "budget"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Forhøjelse af klimabevilling for skybrudsprojekter i Lersøparken", r: "Borgerrepræsentationen skal tage stilling til en større klimabevilling, så skybrudsprojektet i Lersøparken kan gennemføres.", b: "stedkort/101-lersoeparken.jpg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-2" },
-    { e: ["klima"], d: "24. sep.", u: "Bispebjerg Lokaludvalg", t: "Høring vedr. skybrudsprojekt ved Lundehus Kirke", r: "Forvaltningen har sendt fem skybrudsprojekter i høring. Lokaludvalget giver forpersonskabet mandat til at skrive høringssvaret.", b: "emner/klima.svg", k: "Bispebjerg%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-10" },
-    { e: ["klima"], d: "28. sep.", u: "Klima-, Miljø- og Teknikudvalget", t: "Fældning af træer i Tingbjerg", r: "HOFOR skal lægge ny kloak i Tingbjerg, og 138 træer skal fældes, heraf 28 bevaringsværdige. De genplantes bagefter.", b: "stedkort/101-tingbjerg.jpg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-28092026/referat/punkt-2" },
-    { e: ["trafik", "klima"], d: "8. okt.", u: "Borgerrepræsentationen", t: "Metro M5: høring om miljøkonsekvensrapport og grønbroget tudse", r: "Metroselskabet søger tilladelser, så eventuelle fund af den beskyttede grønbrogede tudse kan håndteres under byggeriet af M5.", v: [50, 3], b: "emner/trafik.svg", k: "Borgerrepr%C3%A6sentationen/m%C3%B8de-08102026/referat/punkt-4" },
-    { e: ["bolig"], d: "30. sep.", u: "Christianshavns Lokaludvalg", t: "Forlængelse af tilladelse til 84 midlertidige studieboliger på Refshaleøen", r: "Lokaludvalget tager sit høringssvar om at forlænge tilladelsen til 84 studieboliger på Refshaleøen til efterretning.", b: "stedkort/101-refshaleoeen.jpg", k: "Christianshavns%20Lokaludvalg/m%C3%B8de-30092026/referat/punkt-18" },
-    { e: ["bolig"], d: "6. okt.", u: "Sundheds- og Omsorgsudvalget", t: "Principper for valg af Senior Plus Boligområde", r: "Udvalget skal godkende de kriterier, der afgør, hvor kommunens Senior Plus Boligområder skal ligge.", b: "emner/bolig.svg", k: "Sundheds-%20og%20Omsorgsudvalget/m%C3%B8de-06102026/referat/punkt-2" },
-    { e: ["byggeri"], d: "24. sep.", u: "Vanløse Lokaludvalg", t: "Indledende høring om tillæg til byplan 85 Bellahøjvej", r: "Høring om bevaring af en bygning på Himmerlandsvej 8 med en tilhørende ny lokalplan.", b: "stedkort/101-bellahoejvej.jpg", k: "Vanl%C3%B8se%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-9" },
-    { e: ["byggeri", "bolig"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Erhverv bliver til rækkehuse på Ålholmvej 55, Valby", r: "Udvalget skal tage stilling til, om en villaservitut om antal boliger pr. etage kan fraviges, så erhverv kan blive til rækkehuse.", v: [9, 2], b: "emner/byggeri.svg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-9" },
-    { e: ["budget"], d: "1. okt.", u: "Borgerrepræsentationen", t: "Andenbehandling af budgetforslag 2027 og overslagsårene 2028–2030", r: "Borgerrepræsentationens anden og endelige behandling af Københavns budget for 2027.", b: "emner/budget.svg", k: "Borgerrepr%C3%A6sentationen/m%C3%B8de-01102026/referat/punkt-6" },
-    { e: ["skole", "budget"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Optakt til udmøntning af Budget 2027", r: "Udvalget drøfter, hvordan budgetaftalen for 2027 skal omsættes på børne- og ungeområdet.", b: "emner/skole.svg", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-2" },
-    { e: ["skole"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Handleplanskoncept for specialskoler", r: "Udvalget behandler et koncept for handleplaner på kommunens specialskoler.", b: "emner/skole.svg", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-4" },
-    { e: ["skole"], d: "21. okt.", u: "Børne- og Ungdomsudvalget", t: "Opfølgning på udvidet åbningstid og weekendåbent i dagtilbud", r: "Opfølgning på længere åbningstid og weekendåbent i kommunens dagtilbud.", b: "emner/skole.svg", k: "B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-5" },
-    { e: ["kultur"], d: "24. sep.", u: "Vanløse Lokaludvalg", t: "Borgermøde om bibliotekerne i Københavns Kommune", r: "Vanløse Lokaludvalg bliver medarrangør af et borgermøde om kommunens biblioteker sammen med Amager Vest.", b: "emner/kultur.svg", k: "Vanl%C3%B8se%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-17" },
-    { e: ["trafik"], d: "5. okt.", u: "Klima-, Miljø- og Teknikudvalget", t: "Nordlige del af Badstuestræde som sekundær gågade", r: "Medlemsforslag om, at forvaltningen laver et forslag om at gøre den nordlige del af Badstuestræde op mod Strøget til gågade.", v: [8, 3], b: "emner/trafik.svg", k: "Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-05102026/referat/punkt-15" },
-  ];
-  const PERSONER = { studerende: ["bolig", "trafik", "klima", "kultur"], politiker: ["budget", "skole", "klima"], journalist: ["trafik", "bolig", "budget"], ejendom: ["byggeri", "bolig"], forening: ["klima", "kultur"] };
-
-  const valgt = new Set(["trafik", "klima"]);
-  let fritekst = "";
-
-  /* ---------- Emne-knapper ---------- */
-  const chipsEl = $("#chips");
-  for (const [id, e] of Object.entries(EMNER)) {
-    const n = SAGER.filter((s) => s.e.includes(id)).length;
-    const b = document.createElement("button");
-    b.className = "chip"; b.dataset.id = id; b.type = "button";
-    b.style.setProperty("--c", e.c); b.style.setProperty("--cf", e.cf);
-    b.innerHTML = `${esc(e.navn)} <span class="n">${n}</span>`;
-    b.addEventListener("click", () => { valgt.has(id) ? valgt.delete(id) : valgt.add(id); $$(".rolle").forEach((p) => p.classList.remove("on")); update(); });
-    chipsEl.append(b);
-  }
-  $$(".rolle").forEach((p) => p.addEventListener("click", () => {
-    valgt.clear(); PERSONER[p.dataset.p].forEach((x) => valgt.add(x));
-    $$(".rolle").forEach((x) => { x.classList.toggle("on", x === p); x.setAttribute("aria-pressed", x === p); }); update();
-  }));
-  let qT; $("#q").addEventListener("input", (e) => { clearTimeout(qT); qT = setTimeout(() => { fritekst = e.target.value.trim().toLowerCase(); update(); }, 160); });
-
-  /* ---------- Matchning ---------- */
-  function match(s) {
-    const via = [];
-    for (const id of s.e) if (valgt.has(id)) via.push({ id, ord: null });
-    if (fritekst.length >= 3) {
-      const hay = (s.t + " " + s.r).toLowerCase();
-      for (const id of s.e) {
-        const hitOrd = EMNER[id].ord.find((o) => o.startsWith(fritekst) || fritekst.startsWith(o));
-        if (hitOrd && !via.some((v) => v.id === id)) via.push({ id, ord: fritekst });
-      }
-      if (!via.length && hay.includes(fritekst)) via.push({ id: s.e[0], ord: fritekst, direkte: true });
-    }
-    return via;
-  }
-
-  /* ---------- Listen over alt, vi læste ---------- */
-  const feed = $("#feed");
-  SAGER.forEach((s) => {
-    const li = document.createElement("li");
-    li.innerHTML = `<span class="d">${esc(s.d)}</span><span class="t"><mark>${esc(s.t)}</mark><span class="u">${esc(s.u)}</span></span>`;
-    li.style.setProperty("--hl", EMNER[s.e[0]].hl);
-    feed.append(li);
-  });
-
-  /* ---------- Opdater demo, mail og formular ---------- */
-  function countTo(el, to) {
-    const from = +el.textContent || 0;
-    if (reduce || from === to) { el.textContent = to; return; }
-    const t0 = performance.now(), dur = 400, id = (el._n = (el._n || 0) + 1);
-    const step = (t) => { if (el._n !== id) return; const p = Math.min(1, (t - t0) / dur); el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); };
-    requestAnimationFrame(step);
-    setTimeout(() => { if (el._n === id) el.textContent = to; }, dur + 80);
-  }
-  function update() {
-    $$(".chip").forEach((c) => c.setAttribute("aria-pressed", valgt.has(c.dataset.id)));
-    const hits = SAGER.map((s) => ({ s, via: match(s) })).filter((h) => h.via.length);
-    const scan = $("#scan"); scan.classList.remove("go"); void scan.offsetWidth; scan.classList.add("go");
-    [...feed.children].forEach((li, i) => {
-      const hit = hits.some((h) => h.s === SAGER[i]);
-      const delay = reduce ? 0 : 60 + i * 34;
-      setTimeout(() => { li.classList.toggle("hit", hit); li.classList.toggle("miss", !hit && (valgt.size || fritekst)); }, delay);
-    });
-    $("#feedMeta").textContent = `${SAGER.length} punkter · ${hits.length} fundet`;
-    countTo($("#bigN"), hits.length);
-    $("#bigLbl").textContent = hits.length === 1 ? "sag til dig" : "sager til dig";
-    const cases = $("#cases");
-    if (!hits.length) {
-      cases.innerHTML = `<li class="tom"><b>Ingen sager endnu</b>Vælg et emne eller skriv et ord, så bygger vi din mail.</li>`;
-    } else {
-      cases.innerHTML = hits.map((h, i) => {
-        const tags = h.via.map((v) => { const e = EMNER[v.id]; return `<span class="tag" style="--c:${e.c};--cf:${e.cf}">${esc(e.navn)}${v.ord ? ` · "${esc(v.ord)}"` : ""}</span>`; }).join("");
-        // Stemmerne som en lille søjle (for blå, imod vin), som i mailen og på sagssiderne
-        const st = h.s.v ? `<div class="sg-mini"><span class="sg-bar" aria-hidden="true"><span class="sg-for" style="flex-grow:${h.s.v[0]}"></span><span class="sg-imod" style="flex-grow:${h.s.v[1]}"></span></span><span>${h.s.v[0]} for · ${h.s.v[1]} imod</span></div>` : "";
-        return `<li class="case" style="--delay:${reduce ? 0 : i * 0.04}s"><div><p class="where">${esc(h.s.u)} · ${esc(h.s.d)}</p><h5>${esc(h.s.t)}</h5><p>${esc(h.s.r)}</p>${st}
-          <div class="why"><span style="color:var(--muted)">Matchede</span>${tags}<a href="${KK + h.s.k}" target="_blank" rel="noopener">Læs sagen</a></div></div><img src="assets/${h.s.b}" alt="" loading="lazy"></li>`;
-      }).join("");
-    }
-    const picked = $("#picked");
-    picked.innerHTML = [...valgt].map((id) => `<span class="tag" style="--c:${EMNER[id].c};--cf:${EMNER[id].cf}">${esc(EMNER[id].navn)}<button type="button" aria-label="Fjern ${esc(EMNER[id].navn)}" data-id="${id}">✕</button></span>`).join("");
-    $("#valgteFelt").hidden = !valgt.size;
-    picked.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => { valgt.delete(b.dataset.id); update(); }));
-    if (fritekst && !$("#emner").dataset.touched) $("#emner").value = fritekst;
-  }
-  $("#emner").addEventListener("input", (e) => (e.target.dataset.touched = "1"));
-  update();
-
-  /* ---------- Fold listen ud på små skærme ---------- */
-  const panel = $(".panel");
-  $("#visAlle").addEventListener("click", () => panel.classList.add("alle"));
-  $("#visFaerre").addEventListener("click", () => { panel.classList.remove("alle"); panel.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" }); });
+  // Emnerne fra den gamle demo er væk; tilmeldingen sender stadig feltet valgte_emner (tomt)
+  const valgt = new Set(), EMNER = {};
 
   /* ---------- Topbjælke ---------- */
   const bar = $("#bar");
@@ -931,7 +622,7 @@
   // Svarer vores server ikke, tilbyder vi en færdigudfyldt mail til mansa@sagsvagt.dk. (Før gik den via FormSubmit i USA.)
   const SIGNUP_MAIL = "mansa@sagsvagt.dk";
   const mailto = (d) => `mailto:${SIGNUP_MAIL}?subject=${encodeURIComponent("Tilmelding til Sagsvagt")}&body=${encodeURIComponent(
-    `Skriv mig op til Sagsvagt.\n\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n${d.medlem ? `Medlem af Sæt Dagsordenen: ${d.navn}, ${d.alder} år\n` : ""}`)}`;
+    `Skriv mig op til Sagsvagt.\n\nNavn: ${d.navn || ""}\nE-mail: ${d.email}\nKommuner: ${d.kommuner || ""}\nEmner: ${[d.valgte_emner, d.emner].filter(Boolean).join(", ")}\nJeg er: ${d.rolle || ""}\nKilde: ${d.kilde || ""}\n${d.medlem ? `Medlem af Sæt Dagsordenen: ${d.alder} år\n` : ""}`)}`;
   // Hvor kom den tilmeldte fra? Del fx sagsvagt.dk/vagt.html?fra=instagram eller ?fra=grupper
   const kilde = (() => {
     // ?fra= i adressen eller den side, de kom fra; intet gemmes i browseren (cookiebekendtgørelsen)
@@ -983,11 +674,31 @@
     $("#kommuner").value = kommuneFra;
     if (kommuneFra !== "København") {
       $("#tilmeld-h").textContent = `Få besked, når Sagsvagt åbner i ${kommuneFra}`;
-      $("#tilmeld .lead").textContent = `Sagsvagt er en gratis lokalavis for hele Danmark. Vi åbner kommune for kommune, der hvor flest skriver sig op. Skriv dig op, så rykker ${kommuneFra} op i køen, og du får besked, når den er klar.`;
     }
   }
-  // Demoen bygges efter indlæsning og skubber formularen ned, så hop til den igen, når siden er færdig
-  if (location.hash === "#tilmeld") addEventListener("load", () => $("#tilmeld").scrollIntoView({ block: "start" }));
+  // Tilmeldingssiden: åbnes af alle links til #tilmeld (også fra avisens sider) og lukkes med krydset, Esc eller tilbage-knappen
+  const side = $("#tilmeld");
+  const aabn = (fokus, straks = false) => {
+    if (!side.hidden) return;
+    side.classList.toggle("straks", straks); side.hidden = false;
+    setTimeout(() => side.getAnimations?.().forEach((x) => x.finish()), 600); // står fade-ind stille, vises siden alligevel side.scrollTop = 0; document.body.classList.add("tak-aaben");
+    if (fokus) setTimeout(() => $("#form .aktiv input, #form .aktiv select, #fornavn")?.focus({ preventScroll: true }), 120);
+  };
+  const luk = () => { side.hidden = true; document.body.classList.remove("tak-aaben"); };
+  let skubbet = false; // true, når siden selv har lagt #tilmeld i historikken, så krydset kan gå et skridt tilbage
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest('a[href="#tilmeld"]')) return;
+    e.preventDefault();
+    if (location.hash !== "#tilmeld") { history.pushState(null, "", "#tilmeld"); skubbet = true; }
+    aabn(true);
+  });
+  $(".luk", side).addEventListener("click", () => {
+    if (skubbet) { skubbet = false; history.back(); return; } // popstate lukker siden
+    history.replaceState(null, "", location.pathname + location.search); luk();
+  });
+  addEventListener("popstate", () => { if (location.hash === "#tilmeld") aabn(false, true); else { skubbet = false; luk(); } });
+  addEventListener("keydown", (e) => { if (e.key === "Escape" && !side.hidden) $(".luk", side).click(); });
+  if (location.hash === "#tilmeld") aabn(false, true);
   const form = $("#form"), msg = $(".form-msg", form), btn = $(".send", form), card = $(".tilmeld-kort");
   // Et felt med fejl (.bad) får aria-invalid og peger på fejlbeskeden, så det ikke kun er den røde kant, der viser det
   msg.id = "form-msg";
@@ -1012,8 +723,8 @@
   const medlem = $("#medlem"), medlemFelter = $("#medlemFelter");
   medlem.addEventListener("change", () => {
     medlemFelter.hidden = !medlem.checked;
-    form.navn.required = form.alder.required = medlem.checked;
-    if (medlem.checked) form.navn.focus();
+    form.alder.required = medlem.checked;
+    if (medlem.checked) form.alder.focus();
   });
   // Adgangskode med det samme, hvis en af de valgte kommuner allerede er åben (kommune/aabne.json)
   const kontoFelt = $("#kontoFelt"), kontoNote = $("#kontoNote");
@@ -1021,7 +732,7 @@
   fetch("kommune/aabne.json").then((r) => r.json()).then((l) => {
     aabne = new Set(l.map((k) => k.navn)); visKonto();
     $$(".n-aabne").forEach((el) => (el.textContent = l.length));
-    $("#fremdrift").style.setProperty("--andel", `${Math.round((100 * l.length) / 98)}%`);
+    $("#fremdrift")?.style.setProperty("--andel", `${Math.round((100 * l.length) / 98)}%`);
   }).catch(() => {});
   const visKonto = () => {
     const aabneValgte = [...new Set(kommuneDele(form.kommuner.value).map(rigtigKommune).filter((k) => k && aabne.has(k)))];
@@ -1032,12 +743,89 @@
   };
   form.kommuner.addEventListener("input", visKonto);
   form.kommuner.addEventListener("change", visKonto);
+  /* ---------- Tilmelding trin for trin: ét felt ad gangen, og knappen lyser op til sidst (se CSS'en) ---------- */
+  (() => {
+    const tekst = $("span", btn);
+    const trin = () => [...form.querySelectorAll(".felt, .flueben")].filter((el) => !el.closest("form [hidden]")); // kun skjulte dele af formularen (hele tilmeldingssiden er skjult, til den åbnes)
+    const gyldig = (el) => {
+      const i = el.querySelector("input, select"), v = (i.value || "").trim();
+      if (i.id === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+      if (i.id === "kommuner") return !!v && kommuneDele(v).every((k) => rigtigKommune(k));
+      if (i.id === "fornavn") return !!v && !!form.efternavn.value.trim();
+      if (i.id === "alder") { const a = Number(v); return Number.isInteger(a) && a >= 16 && a <= 30; }
+      if (i.id === "adgangskode") return i.value.length >= 10;
+      return true; // emner, "Jeg er" og fluebenet er valgfri
+    };
+    let aktiv = null;
+    const vis = (el, fokus = true) => {
+      const l = trin(), i = l.indexOf(el);
+      l.forEach((x) => x.classList.remove("aktiv", "forrige", "bad"));
+      el.classList.add("aktiv");
+      if (i > 0) l[i - 1].classList.add("forrige");
+      aktiv = el;
+      const sidste = i === l.length - 1 && gyldig(el);
+      form.classList.toggle("klar", sidste);
+      tekst.textContent = sidste ? "Skriv mig op" : "Næste";
+      const felt = el.querySelector("input, select");
+      if (fokus) setTimeout(() => felt.focus({ preventScroll: true }), reduce ? 0 : 260);
+    };
+    const naeste = () => {
+      // Navnetrinnet har to felter: Enter i fornavn går til efternavn
+      if (document.activeElement === form.fornavn && form.fornavn.value.trim() && !form.efternavn.value.trim()) { form.efternavn.focus(); return; }
+      if (!gyldig(aktiv)) { aktiv.classList.remove("bad"); void aktiv.offsetWidth; aktiv.classList.add("bad"); ([...aktiv.querySelectorAll("input")].find((i) => !i.value.trim()) || aktiv.querySelector("input, select")).focus(); return; }
+      const l = trin(), i = l.indexOf(aktiv);
+      if (i < l.length - 1) vis(l[i + 1]);
+      else { form.classList.add("klar"); tekst.textContent = "Skriv mig op"; btn.focus({ preventScroll: true }); }
+    };
+    form.classList.add("trinvis", "start"); // "start" slår overgangene fra, så felterne ikke folder sig sammen foran brugeren ved indlæsning
+    form.querySelectorAll(".felt input, .felt select").forEach((i) => i.setAttribute("enterkeyhint", "next"));
+    vis(trin()[0], false); // ingen fokus ved indlæsning, så tastaturet ikke springer op på telefonen
+    void form.offsetWidth; setTimeout(() => form.classList.remove("start"), 50);
+    // Enter og knappen går et trin frem, indtil alt er udfyldt; først da sendes tilmeldingen (fanges før den almindelige afsendelse)
+    form.addEventListener("submit", (e) => {
+      if (!form.classList.contains("trinvis") || form.classList.contains("klar")) return;
+      e.preventDefault(); e.stopImmediatePropagation(); naeste();
+    }, true);
+    // Valg i en liste eller et flueben går selv videre
+    form.rolle.addEventListener("change", () => { if (form.rolle.value) setTimeout(naeste, 250); });
+    $("#medlem").addEventListener("change", (e) => { if (e.target.checked) setTimeout(naeste, 250); });
+    // Tryk på det svage felt over det aktive for at rette det; skriver man om i et felt, er man ikke klar længere
+    form.addEventListener("click", (e) => { const f = e.target.closest(".forrige"); if (f && !e.target.closest("a")) vis(f); });
+    form.addEventListener("input", (e) => { const f = e.target.closest(".aktiv"); if (f) { const l = trin(); const klar = l.indexOf(f) === l.length - 1 && gyldig(f); form.classList.toggle("klar", klar); tekst.textContent = klar ? "Skriv mig op" : "Næste"; } });
+    // Navn, e-mail og kommune går selv videre, når feltet er udfyldt, og man holder en kort pause (ingen knap at trykke på).
+    // E-mail venter lidt længere og først, når adressen slutter på fx .dk, så den ikke springer videre midt i "gmail.co".
+    // Vælger man en kommune på listen, går det videre med det samme.
+    let pause;
+    const selvVidere = { efternavn: 900, email: 1400, kommuner: 1400 };
+    form.addEventListener("input", (e) => {
+      clearTimeout(pause);
+      const i = e.target, f = i.closest(".felt"), vent = selvVidere[i.id];
+      if (!vent || !f?.classList.contains("aktiv") || !gyldig(f)) return;
+      if (i.id === "email" && !/\.[a-z]{2,}$/i.test(i.value.trim())) return;
+      const valgtPaaListe = i.id === "kommuner" && (!e.inputType || e.inputType === "insertReplacementText");
+      pause = setTimeout(() => { if (aktiv === f && gyldig(f) && document.activeElement === i) naeste(); }, valgtPaaListe ? 150 : vent);
+    });
+    // Får tilmeldingen en fejl (fx fra serveren), vises alle felter som før, så fejlen kan rettes
+    new MutationObserver(() => {
+      if (!msg.classList.contains("err") || !form.classList.contains("trinvis")) return;
+      form.classList.remove("trinvis", "klar"); tekst.textContent = "Skriv mig op";
+      form.querySelector(".bad input, .bad select")?.focus();
+    }).observe(msg, { attributes: true, attributeFilter: ["class"] });
+  })();
   // bekraeft: serveren har sendt en mail med et link, der skal bruges, før mandagsmailen kommer (dobbelt opt-in)
   const faerdig = (bekraeft) => {
-    if (bekraeft) { card.querySelector(".done h3").textContent = "Tjek din mail."; card.querySelector(".done-tekst").textContent = "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
-    card.classList.add("ok"); visHenvisning(form.email.value); card.scrollIntoView({ block: "center", behavior: reduce ? "auto" : "smooth" }); };
+    const done = $(".done");
+    if (bekraeft) { done.querySelector("h3").textContent = "Tjek din mail."; done.querySelector(".done-tekst").textContent = "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
+    card.classList.add("ok"); visHenvisning(form.email.value);
+    side.scrollTop = 0; done.querySelector("h3").setAttribute("tabindex", "-1"); done.querySelector("h3").focus({ preventScroll: true }); };
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
+    const fornavn = form.fornavn.value.trim(), efternavn = form.efternavn.value.trim(), nf = form.fornavn.closest(".felt");
+    if (!fornavn || !efternavn) {
+      nf.classList.add("bad");
+      msg.className = "form-msg err"; msg.textContent = "Skriv dit fornavn og efternavn."; (fornavn ? form.efternavn : form.fornavn).focus(); return;
+    }
+    nf.classList.remove("bad");
     const email = form.email.value.trim(), f = form.email.parentElement;
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       f.classList.add("bad");
@@ -1052,11 +840,11 @@
     }
     kf.classList.remove("bad");
     if (medlem.checked) {
-      const alder = Number(form.alder.value), fejlFelt = !form.navn.value.trim() ? form.navn : !(Number.isInteger(alder) && alder >= 16 && alder <= 30) ? form.alder : null;
-      [form.navn, form.alder].forEach((el) => el.parentElement.classList.toggle("bad", el === fejlFelt));
+      const alder = Number(form.alder.value), fejlFelt = !(Number.isInteger(alder) && alder >= 16 && alder <= 30) ? form.alder : null;
+      form.alder.parentElement.classList.toggle("bad", !!fejlFelt);
       if (fejlFelt) {
         msg.className = "form-msg err";
-        msg.textContent = fejlFelt === form.navn ? "Skriv dit navn for at blive medlem af Sæt Dagsordenen." : "Man skal være mellem 16 og 30 år for at blive medlem af Sæt Dagsordenen.";
+        msg.textContent = "Man skal være mellem 16 og 30 år for at blive medlem af Sæt Dagsordenen.";
         fejlFelt.focus(); return;
       }
     }
@@ -1072,7 +860,8 @@
     const data = Object.fromEntries(new FormData(form));
     if (kode) data.adgangskode = kode; else delete data.adgangskode;
     data.medlem = medlem.checked;
-    if (!medlem.checked) { delete data.navn; delete data.alder; }
+    data.navn = `${fornavn} ${efternavn}`;
+    if (!medlem.checked) delete data.alder;
     data.valgte_emner = [...valgt].map((id) => EMNER[id].navn).join(", ");
     btn.disabled = true; btn.classList.add("busy"); msg.className = "form-msg"; msg.textContent = "";
     // Vores egen server (api/tilmeld.php) gemmer tilmeldingen, så den kan få en invitation til login.

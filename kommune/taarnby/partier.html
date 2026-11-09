@@ -35,17 +35,14 @@
   <p class="intro">Opgjort ud fra alle afstemninger i referaterne fra Kommunalbestyrelsen og udvalgene i Tårnby Kommune siden 13. august 2026, også afstemninger om ændringsforslag. Et parti tæller med, når det står på listen over for, imod eller undlod. "Med flertallet" er, hvor ofte partiet stemte som det, der blev vedtaget. I udvalgene stemmer partiets medlemmer af udvalget.</p>
   <div class="faner" role="tablist" aria-label="Vis afstemninger fra"><button type="button" role="tab" class="fane" data-omfang="alle" aria-selected="true">Alle</button><button type="button" role="tab" class="fane" data-omfang="br" aria-selected="false">Kommunalbestyrelsen</button><button type="button" role="tab" class="fane" data-omfang="udvalg" aria-selected="false">Udvalgene</button></div>
   <section class="omfang" id="omfang-alle" aria-label="Alle">
-  <p class="intro">1 afstemning med partiernes stemmer.</p>
   <table class="parti-tabel"><thead><tr><th scope="col">Parti</th><th scope="col">Afstemninger</th><th scope="col">For</th><th scope="col">Imod</th><th scope="col">Undlod</th><th scope="col">Med flertallet</th></tr></thead><tbody></tbody></table>
   <h2 class="sec-h" style="margin-top:36px">Hvem stemmer ens?</h2>
   <div class="matrix-wrap"><table class="matrix"><caption>Hvor ofte to partier stemmer ens, i procent af de afstemninger, begge var med i.</caption><thead><tr><th></th></tr></thead><tbody></tbody></table></div>
 </section><section class="omfang" id="omfang-br" hidden aria-label="Kommunalbestyrelsen">
-  <p class="intro">0 afstemninger med partiernes stemmer.</p>
   <table class="parti-tabel"><thead><tr><th scope="col">Parti</th><th scope="col">Afstemninger</th><th scope="col">For</th><th scope="col">Imod</th><th scope="col">Undlod</th><th scope="col">Med flertallet</th></tr></thead><tbody></tbody></table>
   <h2 class="sec-h" style="margin-top:36px">Hvem stemmer ens?</h2>
   <div class="matrix-wrap"><table class="matrix"><caption>Hvor ofte to partier stemmer ens, i procent af de afstemninger, begge var med i.</caption><thead><tr><th></th></tr></thead><tbody></tbody></table></div>
 </section><section class="omfang" id="omfang-udvalg" hidden aria-label="Udvalgene">
-  <p class="intro">1 afstemning med partiernes stemmer.</p>
   <table class="parti-tabel"><thead><tr><th scope="col">Parti</th><th scope="col">Afstemninger</th><th scope="col">For</th><th scope="col">Imod</th><th scope="col">Undlod</th><th scope="col">Med flertallet</th></tr></thead><tbody></tbody></table>
   <h2 class="sec-h" style="margin-top:36px">Hvem stemmer ens?</h2>
   <div class="matrix-wrap"><table class="matrix"><caption>Hvor ofte to partier stemmer ens, i procent af de afstemninger, begge var med i.</caption><thead><tr><th></th></tr></thead><tbody></tbody></table></div>
@@ -65,6 +62,8 @@ document.querySelector(".faner").addEventListener("click", function (e) {
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

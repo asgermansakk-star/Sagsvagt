@@ -19,7 +19,11 @@ $emner = $felt('emner', 2000); $valgte = $felt('valgte_emner', 1000);
 $alleEmner = trim(implode(', ', array_filter([$valgte, $emner])), ', ');
 // Fluebenet "vil også være medlem af Sæt Dagsordenen": navn og alder 16-30 (foreningens vedtægter § 3)
 $medlem = filter_var($d['medlem'] ?? false, FILTER_VALIDATE_BOOLEAN);
-$navn = $felt('navn', 100);
+// Fornavn og efternavn står i hver sin boks; navn er dem samlet (ældre sider sender kun navn). Fornavnet bliver Min avis' og mandagsmailens hilsen.
+$fornavn = $felt('fornavn', 40); $efternavn = $felt('efternavn', 60);
+$navn = mb_substr(trim("$fornavn $efternavn"), 0, 100) ?: $felt('navn', 100);
+if ($fornavn === '' && $navn !== '') $fornavn = mb_substr(explode(' ', $navn)[0], 0, 40);
+$profil = $fornavn !== '' ? json_encode(['navn' => $fornavn], JSON_UNESCAPED_UNICODE) : null;
 $alder = filter_var($d['alder'] ?? '', FILTER_VALIDATE_INT, ['options' => ['min_range' => 16, 'max_range' => 30]]);
 if ($medlem && $navn === '') fejl(400, 'Skriv dit navn for at blive medlem af Sæt Dagsordenen.');
 if ($medlem && $alder === false) fejl(400, 'Man skal være mellem 16 og 30 år for at blive medlem af Sæt Dagsordenen.');
@@ -55,15 +59,16 @@ if ($laast) {
 } elseif ($fandtes) {
     // bekraeftet står først: MySQL bruger de nye værdier i resten af SET, så status og mail_afmeldt skal læses, før de ændres
     $db->prepare("UPDATE abonnenter SET bekraeftet = CASE WHEN status IN ('afmeldt', 'medlem') OR mail_afmeldt IS NOT NULL THEN NULL ELSE bekraeftet END, mail_afmeldt = NULL,
-        kommuner = ?, emner = ?, rolle = ?, status = CASE WHEN status IN ('afmeldt', 'medlem') THEN 'tilmeldt' ELSE status END WHERE id = ?")
-       ->execute([$kommuner, $alleEmner, $rolle, $fandtes['id']]);
+        kommuner = ?, emner = ?, rolle = ?, navn = COALESCE(NULLIF(?, ''), navn), profil = COALESCE(profil, ?),
+        status = CASE WHEN status IN ('afmeldt', 'medlem') THEN 'tilmeldt' ELSE status END WHERE id = ?")
+       ->execute([$kommuner, $alleEmner, $rolle, $navn, $profil, $fandtes['id']]);
 } elseif ($konto) {
     // Ny konto i en åben kommune: adgangskoden gemmes, men kontoen bliver først aktiv, når e-mailen er bekræftet (bekraeft.php)
-    $db->prepare("INSERT INTO abonnenter (email, kommuner, emner, rolle, kilde, oprettet, status, adgangskode) VALUES (?, ?, ?, ?, ?, ?, 'tilmeldt', ?)")
-       ->execute([$email, $kommuner, $alleEmner, $rolle, $kilde, nu(), password_hash($kode, PASSWORD_DEFAULT)]);
+    $db->prepare("INSERT INTO abonnenter (email, kommuner, emner, rolle, kilde, oprettet, status, adgangskode, navn, profil) VALUES (?, ?, ?, ?, ?, ?, 'tilmeldt', ?, ?, ?)")
+       ->execute([$email, $kommuner, $alleEmner, $rolle, $kilde, nu(), password_hash($kode, PASSWORD_DEFAULT), $navn ?: null, $profil]);
 } else {
-    $db->prepare('INSERT INTO abonnenter (email, kommuner, emner, rolle, kilde, oprettet) VALUES (?, ?, ?, ?, ?, ?)')
-       ->execute([$email, $kommuner, $alleEmner, $rolle, $kilde, nu()]);
+    $db->prepare('INSERT INTO abonnenter (email, kommuner, emner, rolle, kilde, oprettet, navn, profil) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
+       ->execute([$email, $kommuner, $alleEmner, $rolle, $kilde, nu(), $navn ?: null, $profil]);
 }
 if ($nytMedlem) {
     // Medlemskabet af Sæt Dagsordenen venter, til linket i mailen er brugt (bekraeft.php), så ingen kan melde en anden ind
@@ -72,8 +77,8 @@ if ($nytMedlem) {
 
 // Besked til redaktionen og mail til den tilmeldte. Fejler mailen, er tilmeldingen stadig gemt.
 if (!$laast) {
-    $linjer = "E-mail: $email\nKommuner: $kommuner\nEmner: $alleEmner\nJeg er: $rolle\nKilde: $kilde\n"
-            . ($medlem ? "Vil være medlem af Sæt Dagsordenen: $navn, $alder år\n" : '') . ($ny ? '' : "(Var skrevet op før og har opdateret sine valg.)\n") . "E-mailen er ikke bekræftet endnu.\n";
+    $linjer = ($navn !== '' ? "Navn: $navn\n" : '') . "E-mail: $email\nKommuner: $kommuner\nEmner: $alleEmner\nJeg er: $rolle\nKilde: $kilde\n"
+            . ($medlem ? "Vil være medlem af Sæt Dagsordenen: $alder år\n" : '') . ($ny ? '' : "(Var skrevet op før og har opdateret sine valg.)\n") . "E-mailen er ikke bekræftet endnu.\n";
     @send_mail(TILMELDINGER_TIL, ($ny ? 'Ny tilmelding' : 'Opdateret tilmelding') . " til Sagsvagt: $email",
         '<pre style="font:14px/1.5 Arial,sans-serif">' . htmlspecialchars($linjer, ENT_QUOTES, 'UTF-8') . '</pre>', $linjer, $email); // "Besvar" går til den tilmeldte
 }

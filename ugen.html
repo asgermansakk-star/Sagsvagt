@@ -122,7 +122,6 @@ h1 { font-size: clamp(2.1rem, 1.5rem + 3vw, 2.75rem); line-height: 1.08; font-we
     <div class="indre">
       <p class="kicker">Ugens sager · København</p>
       <h1 id="intro-h">Det, politikerne besluttede i din by. På et minut.</h1>
-      <p class="lead">Korte kort fra byrådet, udvalgene og lokaludvalgene. Swipe igennem, følg det, du går op i, og få det hver mandag.</p>
       <div class="emner" id="emner" role="group" aria-label="Vælg emner" aria-busy="true"><span class="emne sk-emne" style="width: 96px"></span><span class="emne sk-emne" style="width: 72px"></span><span class="emne sk-emne" style="width: 110px"></span><span class="emne sk-emne" style="width: 84px"></span><span class="emne sk-emne" style="width: 100px"></span><span class="emne sk-emne" style="width: 64px"></span></div>
       <p class="hjaelp">Vælg ingen for at se det hele.</p>
       <div class="handlinger"><button class="btn btn-lys" id="start" type="button" disabled>Se ugens sager</button></div>
@@ -184,7 +183,6 @@ function slutKort(n) {
     <div class="indre">
       <p class="kicker">${n ? `Du har set alle ${n} sager` : "Ingen sager lige nu"}</p>
       <h1 id="slut-h">${n ? "Det var ugen." : "Stille uge i dine emner."}</h1>
-      <p class="lead">Få de sager, der handler om det, du følger, i én mail hver mandag kl. 07.00. Gratis, og du kan afmelde med ét klik.</p>
       <div class="fulgte" id="fulgte"></div>
       <div class="handlinger">
         <a class="btn btn-lys" id="tilmeld" href="vagt.html?fra=ugen#tilmeld">Få dem hver mandag</a>

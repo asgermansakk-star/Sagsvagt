@@ -33,15 +33,14 @@
 <div class="wrap"><div class="listing">
   <p class="kicker"><a href="./">Alle steder</a></p>
   <h1>Toftegårds Plads</h1>
-  <p class="intro">3 sager fra Borgerrepræsentationen, udvalgene og lokaludvalgene i København, der handler om Toftegårds Plads. Nyeste først.</p>
   <div class="del-rad" data-url="https://sagsvagt.dk/sted/toftegaards-plads.html?fra=del" data-titel="Toftegårds Plads: det har politikerne besluttet">
   <button type="button" class="del-knap" hidden>Del</button>
   <a class="del-knap" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsagsvagt.dk%2Fsted%2Ftoftegaards-plads.html%3Ffra%3Dfb-del" target="_blank" rel="noopener">Del på Facebook</a>
   <span class="del-svar" role="status"></span>
 </div>
-  <article><p class="kicker"><span class="status besluttet">Besluttet 17. september</span>, <a href="../udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h2 class="hl"><a href="../sag/kk-2026-09-17-borgerrepraesentationen-16.html">Projektforslag for anlæg af Hanne Varmings Plads – ny plads, Valby</a></h2><p class="dek">På baggrund af Budget 2022, om anlæg af Hanne Varmings Plads, skal der tages stilling til projektforslag samt frigivelse af anlægsmidler til anlæg af Hanne Varmings Plads en ny plads på den tidligere Toftegårds Plads.</p></article>
-<article><p class="kicker"><span class="status">Behandlet 15. september</span>, <a href="../bydel/valby.html">Valby Lokaludvalg</a></p><h2 class="hl"><a href="../sag/kk-2026-09-15-valby-lokaludvalg-9.html">Medlemsforslag om udmøntning af midler til udvikling af Toftegårds Plads</a></h2><p class="dek">Valby Lokaludvalg tog i 2018 initiativ til en udviklingsproces for Toftegårds Plads efter en række borgerhenvendelser, der var kritisk overfor pladsens udformning.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 17. august</span>, <a href="../udvalg/klima-miljoe-og-teknikudvalget.html">Klima-, Miljø- og Teknikudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-08-17-klima-miljoe-og-teknikudvalget-8.html">Projektforslag for anlæg af Hanne Varmings Plads – ny plads, Valby</a></h2><p class="dek">På baggrund af Budget 2022, om anlæg af Hanne Varmings Plads, skal der tages stilling til projektforslag samt frigivelse af anlægsmidler til anlæg af Hanne Varmings Plads en ny plads på den tidligere Toftegårds Plads.</p></article>
+  <article><p class="kicker"><span class="status besluttet">Besluttet 17. september</span>, <a href="../udvalg/borgerrepraesentationen.html">Borgerrepræsentationen</a></p><h2 class="hl"><a href="../sag/kk-2026-09-17-borgerrepraesentationen-16.html">Projektforslag for anlæg af Hanne Varmings Plads – ny plads, Valby</a></h2></article>
+<article><p class="kicker"><span class="status">Behandlet 15. september</span>, <a href="../bydel/valby.html">Valby Lokaludvalg</a></p><h2 class="hl"><a href="../sag/kk-2026-09-15-valby-lokaludvalg-9.html">Medlemsforslag om udmøntning af midler til udvikling af Toftegårds Plads</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 17. august</span>, <a href="../udvalg/klima-miljoe-og-teknikudvalget.html">Klima-, Miljø- og Teknikudvalget</a></p><h2 class="hl"><a href="../sag/kk-2026-08-17-klima-miljoe-og-teknikudvalget-8.html">Projektforslag for anlæg af Hanne Varmings Plads – ny plads, Valby</a></h2></article>
   <aside class="paa-mail tester">
   <h2 class="rubrik">Få besked, når Toftegårds Plads er på dagsordenen</h2>
   <p>Sagsvagt læser alle dagsordener fra byråd, udvalg og lokaludvalg. Skriv dig op, så får du en kort mail hver mandag med de sager, du følger. Vi søger testere i hele Danmark. Det er gratis.</p>
@@ -53,6 +52,8 @@
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

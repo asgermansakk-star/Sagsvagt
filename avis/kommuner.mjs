@@ -28,7 +28,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
   const chips = (liste) => `<ul class="chips">${liste.map((k) => `<li><a href="${kHref(k)}">${esc(k.navn)}${AABNE.has(k.slug) ? ' <span class="aaben">åben</span>' : ""}</a></li>`).join("")}</ul>`;
   // De nyeste vigtige sager fra København som eksempel på, hvad man får
   const eksempler = sager.filter((s) => s.status !== "kommer" && s.vaegt >= 2 && !s.rutine).slice(0, 4);
-  const eksempel = `<ul class="notitser">${eksempler.map((s) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)}</span> <a href="../${s.url}">${esc(s.titel)}</a> <span class="nh-dato">${kortDato(s.dato)}</span></li>`).join("")}</ul>`;
+  const eksempel = `<ul class="notitser">${eksempler.map((s) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)} <span class="nh-dato">${kortDato(s.dato)}</span></span> <a href="../${s.url}">${esc(s.titel)}</a></li>`).join("")}</ul>`;
   const stil = `<style>
   .kommune-side .kicker a { color: inherit; }
   .kommune-tilmeld { background: var(--moedet); color: var(--kalk); border-radius: 12px; padding: 24px 26px; margin: 26px 0 34px; display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; justify-content: space-between; }
@@ -43,7 +43,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
 
   // Avis for en åben kommune med egne sager, bygget som Københavns forside: tophistorie, tre historier, Kort nyt
   // og en højrespalte med tilmelding, udvalgene og kalenderen. Hvert udvalg får sin egen side under kommune/<navn>/.
-  const { kicker, saetninger, ugedag, datoTekst, stor, slug, vagtBoks, notits } = h;
+  const { kicker, saetninger, ugedag, datoTekst, stor, slug, vagtBoks, notits, topHistorie, sagGitter, billedeSti } = h;
   const kommuneSider = [];
   const spred = (liste, n, max) => { const talt = {}; const ud = []; for (const s of liste) { if (ud.length >= n) break; if ((talt[s.udvalg] = (talt[s.udvalg] || 0) + 1) <= max) ud.push(s); } return ud; };
   const egenSide = async (k, egne) => {
@@ -52,12 +52,6 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
     const set = new Set(), unik = (l) => l.filter((s) => { const t = s.titel.toLowerCase(); if (set.has(t)) return false; set.add(t); return true; });
     const nyheder = unik(afholdt.filter((s) => s.vaegt > 0 && !s.rutine).sort((a, b) => b.score - a.score));
     const top = nyheder[0] || afholdt[0] || egne[0];
-    const anden = spred(nyheder.filter((s) => s !== top), 9, 2);
-    const mellem = anden.slice(0, 3);
-    const brugt = new Set([top, ...anden]);
-    const kortNyt = [...anden.slice(3), ...nyheder.filter((s) => !brugt.has(s)).sort((a, b) => b.dato.localeCompare(a.dato)).slice(0, 10)];
-    const kommende = spred(egne.filter((s) => s.status === "kommer" && !s.rutine).sort((a, b) => a.dato.localeCompare(b.dato) || b.score - a.score), 8, 3);
-    const kalender = {}; for (const s of kommende) (kalender[s.dato] ||= []).push(s);
     const prUdvalg = {}; for (const s of egne) (prUdvalg[s.udvalg] ||= []).push(s);
     const udvalg = Object.keys(prUdvalg).sort((a, b) => Math.max(...prUdvalg[b].map((s) => s.vaegt)) - Math.max(...prUdvalg[a].map((s) => s.vaegt)) || a.localeCompare(b, "da"));
     const R = "../";
@@ -70,42 +64,15 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
       await writeFile(join(ROD, sti), side({
         titel: `${u}, ${k.kommune} – Sagsvagt`, beskrivelse: `Sager og beslutninger fra ${u} i ${k.kommune}, hentet fra kommunens dagsordener og referater.`,
         sti, rod: "../../", aktiv: "k-udvalg", kommune: k,
-        indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="../${k.slug}.html">${esc(k.navn)}</a></p><h1>${esc(u)}</h1>${prUdvalg[u].sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr).map((s) => `<article>${kicker(s, "../../", false)}<h2 class="hl"><a href="../../${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 200))}</p>` : ""}</article>`).join("\n")}</div></div>`,
+        indhold: `<div class="wrap"><div class="listing"><p class="kicker"><a href="../${k.slug}.html">${esc(k.navn)}</a></p><h1>${esc(u)}</h1>${prUdvalg[u].sort((a, b) => b.dato.localeCompare(a.dato) || a.nr - b.nr).map((s) => `<article>${kicker(s, "../../", false)}<h2 class="hl"><a href="../../${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `` : ""}</article>`).join("\n")}</div></div>`,
       }));
     }
 
-    return `<div class="wrap">
-  <div class="front">
-    <div>
-      <article class="lead">
-        ${kicker(top, R)}
-        <h1 class="hl"><a href="${R}${top.url}">${esc(top.titel)}</a></h1>
-        ${top.dek ? `<p class="dek anslag">${esc(saetninger(top.dek, 320))}</p>` : ""}
-        ${top.status === "besluttet" && top.udfald ? `<p class="udfald">${esc(top.udfald)}</p>` : top.status === "kommer" ? `<p class="udfald kommer">Til beslutning ${ugedag(top.dato)} ${datoTekst(top.dato)}.</p>` : ""}
-      </article>
-      <div class="mellem">
-        ${mellem.map((s) => `<article>${kicker(s, R)}<h2 class="hl"><a href="${R}${s.url}">${esc(s.titel)}</a></h2>${s.dek ? `<p class="dek">${esc(saetninger(s.dek, 190))}</p>` : ""}</article>`).join("\n        ")}
-      </div>
-      <section class="kortnyt" aria-labelledby="h-kort">
-        <h2 id="h-kort" class="rubrik">Kort nyt</h2>
-        <ul>${kortNyt.map((s) => notits(s, R)).join("")}</ul>
-      </section>
-    </div>
-    <div class="rail">
-      ${vagtBoks(R, `kommune-${k.slug}`, k.navn)}
-      <section aria-labelledby="h-udvalg">
-        <h2 id="h-udvalg" class="rubrik">Udvalg <a href="${k.slug}/udvalg.html">Alle udvalg</a></h2>
-        <ul class="notitser">${udvalg.map((u) => `<li><a href="${k.slug}/${slug(u)}.html">${esc(u)}</a> <span class="nh-dato">${prUdvalg[u].length} sager</span></li>`).join("")}</ul>
-      </section>
-      ${kommende.length ? `<section aria-labelledby="h-kommer">
-        <h2 id="h-kommer" class="rubrik">Kalender <a href="${k.slug}/moeder.html">Alle møder</a></h2>
-        ${Object.entries(kalender).map(([dag, l]) => {
-          const pr = {}; for (const s of l) (pr[s.udvalg] ||= []).push(s);
-          return `<p class="kal-dag">${esc(stor(ugedag(dag)))} ${kortDato(dag)}</p>${Object.entries(pr).map(([u, ps]) => `<p class="kal-moede">${esc(u)}</p><ul class="notitser kal">${ps.map((s) => `<li><a href="${R}${s.url}">${esc(s.titel)}</a></li>`).join("")}</ul>`).join("")}`;
-        }).join("")}
-      </section>` : ""}
-    </div>
-  </div>
+    // Forsiden i én spalte som Københavns: tophistorien, gitteret med "Vis flere" og tilmeldingen
+    return `<div class="wrap forside">
+  ${topHistorie(top, R, billedeSti)}
+  ${sagGitter(nyheder.filter((s) => s !== top).sort((a, b) => b.dato.localeCompare(a.dato) || b.score - a.score).slice(0, 72), R, billedeSti)}
+  ${vagtBoks(R, `kommune-${k.slug}`, k.navn)}
   <p class="kilde-note">Sagsvagt læser dagsordener og referater fra byrådet og udvalgene i ${esc(k.kommune)}. ${esc(k.navn)} er ny på Sagsvagt, så vi viser de møder, kommunen har udgivet de seneste to måneder. Hver sag linker til kommunens eget dokument. <a href="./">Andre kommuner</a></p>
 </div>
 <style>.kilde-note { margin: 40px 0 56px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: var(--sekundaer); color: var(--muted); max-width: 52em; }</style>`;
@@ -125,7 +92,6 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
       : `<div class="wrap"><div class="listing kommune-side">
   <p class="kicker"><a href="./">Alle kommuner</a> · Region ${esc(k.region)}</p>
   <h1>Sagsvagt i ${esc(k.navn)}</h1>
-  <p class="intro">Sagsvagt læser dagsordener og referater fra byråd og udvalg og sender dig de sager, der handler om det, du følger. Vi er startet i København og åbner kommune for kommune, der hvor flest skriver sig op.</p>
   <div class="kommune-tilmeld"><p><b>Skriv dig op til ${esc(k.navn)}</b>Det er gratis. Du får besked, når Sagsvagt åbner i ${esc(k.kommune)}, og hver tilmelding rykker ${esc(k.navn)} op i køen.</p><a class="btn" href="${tilmeld(k)}">Skriv mig op</a></div>
   <h2>Det får du, når ${esc(k.navn)} åbner</h2>
   <ul class="punkter">
@@ -160,7 +126,6 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
     sti: "kommune/", rod: "../", aktiv: "kommune",
     indhold: `<div class="wrap"><div class="listing kommune-side">
   <h1>Sagsvagt i din kommune</h1>
-  <p class="intro">Sagsvagt er åben i ${esc(aabneTekst)}. Vi åbner kommune for kommune, der hvor flest skriver sig op. Find din kommune, og skriv dig op, så får du besked, når den er klar.</p>
   <label class="k-soeg"><span>Find din kommune</span><input type="search" id="k-soeg" placeholder="Skriv fx Aarhus eller Køge" autocomplete="off"></label>
   <p class="k-ingen" id="k-ingen" hidden>Ingen kommuner passer. Tjek stavemåden.</p>
   ${REGIONER.map((r) => `<section class="region"><h2 class="region-h">Region ${r}</h2>${chips(kommuner.filter((k) => k.region === r).sort((a, b) => a.navn.localeCompare(b.navn, "da")))}</section>`).join("\n  ")}

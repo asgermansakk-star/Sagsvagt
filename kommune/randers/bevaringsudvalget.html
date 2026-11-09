@@ -30,12 +30,14 @@
 <a class="spring" href="#indhold">Spring til indholdet</a>
 <!--#include virtual="/del/hoved-randers.html" -->
 <main id="indhold">
-<div class="wrap"><div class="listing"><p class="kicker"><a href="../randers.html">Randers</a></p><h1>Bevaringsudvalget</h1><article><p class="kicker"><span class="status besluttet">Besluttet 24. juni</span></p><h2 class="hl"><a href="../../sag/randers-2026-06-24-bevaringsudvalget-2.html">Søndervej 7 i Årslev - Ansøgning om nedrivning af bygning 2</a></h2><p class="dek">Bevaringsudvalget vurderer, at det bevaringsværdige udhus er ombygget og i så stærkt forfald, at udvalget ikke anbefaler at bygningen bevares.</p></article>
-<article><p class="kicker"><span class="status besluttet">Besluttet 24. juni</span></p><h2 class="hl"><a href="../../sag/randers-2026-06-24-bevaringsudvalget-3.html">Gl. Viborgvej 186, 8920 Randers NV - ansøgning om nedrivning</a></h2><p class="dek">Bevaringsudvalget vil ikke anbefale at det bevaringsværdige udhus skal nedrives.</p></article></div></div>
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../randers.html">Randers</a></p><h1>Bevaringsudvalget</h1><article><p class="kicker"><span class="status besluttet">Besluttet 24. juni</span></p><h2 class="hl"><a href="../../sag/randers-2026-06-24-bevaringsudvalget-2.html">Søndervej 7 i Årslev - Ansøgning om nedrivning af bygning 2</a></h2></article>
+<article><p class="kicker"><span class="status besluttet">Besluttet 24. juni</span></p><h2 class="hl"><a href="../../sag/randers-2026-06-24-bevaringsudvalget-3.html">Gl. Viborgvej 186, 8920 Randers NV - ansøgning om nedrivning</a></h2></article></div></div>
 </main>
 <!--#include virtual="/del/fod.html" -->
 <script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
 (function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
 /* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
 document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});

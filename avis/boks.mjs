@@ -118,8 +118,6 @@ export async function bygBokse({ sager, udvalg, lokal, prUdvalg, prEmne }, h) {
     sti: "boks.html", rod: "", aktiv: "boks",
     indhold: `<div class="wrap"><div class="listing boks-side">
   <h1>Sæt Sagsvagt på din hjemmeside</h1>
-  <p class="intro">Vis de nyeste sager fra din bydel, dit udvalg eller dit emne på din egen hjemmeside. Boksen opdaterer sig selv hver dag, når kommunen lægger nye dagsordener og referater ud. Den er gratis og bruger hverken cookies eller sporing.</p>
-  <p class="intro">Til lokaludvalg, foreninger, politikere, lokalaviser og alle andre, der vil vise, hvad der sker i kommunen.</p>
   <div class="boks-gitter">
     <form class="boks-valg" onsubmit="return false">
       <label for="bv-hvad">Hvad skal boksen vise?</label>
