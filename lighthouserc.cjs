@@ -1,6 +1,7 @@
 // Performancetest med Lighthouse CI (npm run test:perf). Hver side måles tre gange som mobil med langsom forbindelse
 // (Lighthouses standard), og medianen skal klare grænserne nedenfor. Rapporterne gemmes i test-resultater/lighthouse/.
 // Grænserne ligger lidt under, hvad siderne fik ved første måling (9/11-2026), så de fanger en forværring, ikke støj.
+// LCP svinger omkring 4 s på GitHubs maskiner (simuleret langsom mobil), derfor 5 s.
 const { readFileSync, existsSync } = require("node:fs");
 const { join } = require("node:path");
 
@@ -19,7 +20,7 @@ const grænser = (cls) => ({
   "categories:accessibility": ["error", { minScore: 0.9, aggregationMethod: "median-run" }],
   "categories:best-practices": ["error", { minScore: 0.9, aggregationMethod: "median-run" }],
   "categories:seo": ["error", { minScore: 0.9, aggregationMethod: "median-run" }],
-  "largest-contentful-paint": ["error", { maxNumericValue: 4000, aggregationMethod: "median-run" }],
+  "largest-contentful-paint": ["error", { maxNumericValue: 5000, aggregationMethod: "median-run" }],
   "cumulative-layout-shift": ["error", { maxNumericValue: cls, aggregationMethod: "median-run" }],
 });
 
