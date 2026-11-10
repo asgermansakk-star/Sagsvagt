@@ -14,3 +14,5 @@ avis/erhverv-fakta-koe.json
 # Testresultater (npm test: Playwright-spor og Lighthouse-rapporter)
 /test-resultater/
 /.lighthouseci/
+# Tipsene til tipalarmen (avis/tipliste.mjs --indeks; bygges af robotten og uploades, er kun til redaktionerne)
+api/_tips.json

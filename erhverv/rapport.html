@@ -170,7 +170,7 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
   <div class="mere"><button class="btn" type="button" id="vis-flere" hidden>Vis flere</button></div>
   <div class="indstil">
     <section class="boks">
-      <h2>Ugentlig mail</h2>
+      <h2>Mails om nye sager</h2>
       <p id="mail-tekst"></p>
       <button class="btn" type="button" id="mail-knap"></button>
     </section>
@@ -271,8 +271,9 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
 
   function visMail(k) {
     $("#mail-tekst").textContent = k.mail
-      ? "Hver mandag kl. 7 får " + k.modtagere.join(", ") + " en mail med ugens nye signaler, kommende møder, nye udbud og de sager, I følger."
-      : "Den ugentlige mail er slået fra. Rapporten her opdateres stadig hver dag.";
+      ? (k.varsel ? "Så snart der er nyt, får " + k.modtagere.join(", ") + " en mail med de nye signaler, nye punkter på dagsordenen, nye udbud og de sager, I følger."
+        : "Hver mandag kl. 7 får " + k.modtagere.join(", ") + " en mail med ugens nye signaler, kommende møder, nye udbud og de sager, I følger.")
+      : "Mailene er slået fra. Rapporten her opdateres stadig hver dag.";
     $("#mail-knap").textContent = k.mail ? "Slå mailen fra" : "Slå mailen til";
   }
   $("#mail-knap").addEventListener("click", function () {

@@ -62,5 +62,8 @@ $opgave('mm-plan', function () { require_once __DIR__ . '/_mandagsmail.php'; mm_
 $opgave('mm-send', function () { require_once __DIR__ . '/_mandagsmail.php'; mm_maaske_send(); });
 // Sagsvagt Erhverv (api/_erhverv.php): samme mønster som mandagsmailen, med egen kø og egen prøvemail
 $opgave('erhverv', function () { require_once __DIR__ . '/_erhverv.php'; er_maaske_planlaeg(); er_maaske_send(); });
+// Varsler: erhvervskunder og redaktioner får en mail, så snart robotten har lagt nye sager op
+$opgave('erhverv-varsel', function () { require_once __DIR__ . '/_erhverv.php'; er_maaske_varsl(); });
+$opgave('tipalarm', function () { require_once __DIR__ . '/_tips.php'; tip_maaske_koer(); });
 // Afmeldte slettes 30 dage efter afmeldingen (api/_sletning.php), én gang i døgnet
 $opgave('sletning', function () { require_once __DIR__ . '/_sletning.php'; slet_maaske_koer(); });

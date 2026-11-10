@@ -33,7 +33,8 @@ function er_tabeller(PDO $db): void {
         noter $tekst NULL, mail INT NOT NULL DEFAULT 1, version INT NOT NULL DEFAULT 1, oprettet VARCHAR(25) NOT NULL,
         sidst_set VARCHAR(25) NULL, forrige_set VARCHAR(25) NULL, besoeg INT NOT NULL DEFAULT 0)");
     // Kom til senere: CVR og hvornår kunden blev betalende (til fakturalisten)
-    foreach (['cvr' => 'VARCHAR(8) NULL', 'aktiv_fra' => 'VARCHAR(10) NULL', 'brancher' => 'VARCHAR(300) NULL'] as $kol => $type) {
+    // varsel: 1 = mail, så snart der er nyt (efter hver robotkørsel), 0 = én samlet mail hver mandag
+    foreach (['cvr' => 'VARCHAR(8) NULL', 'aktiv_fra' => 'VARCHAR(10) NULL', 'brancher' => 'VARCHAR(300) NULL', 'varsel' => 'INT NOT NULL DEFAULT 1'] as $kol => $type) {
         try { $db->query("SELECT $kol FROM erhverv_kunder LIMIT 1"); } catch (PDOException $e) { $db->exec("ALTER TABLE erhverv_kunder ADD COLUMN $kol $type"); }
     }
     // Kundens vurdering af hvert signal (relevant eller ej): det, piloten skal lære os
@@ -47,6 +48,8 @@ function er_tabeller(PDO $db): void {
         status VARCHAR(20) NOT NULL, note $tekst NULL, ansvarlig VARCHAR(80) NOT NULL DEFAULT '', opdateret VARCHAR(25) NOT NULL, PRIMARY KEY (kunde_id, ref))");
     $db->exec('CREATE TABLE IF NOT EXISTS erhverv_sendt (kunde_id INT NOT NULL, uge VARCHAR(10) NOT NULL, sendt VARCHAR(25) NOT NULL, antal INT NOT NULL DEFAULT 0,
         PRIMARY KEY (kunde_id, uge))');
+    // Det, kunden har fået varsel om: "s:<signal>", "u:<udbud>" og "f:<sag>:<dato>" for sager, de følger
+    $db->exec('CREATE TABLE IF NOT EXISTS erhverv_varslet (kunde_id INT NOT NULL, noegle VARCHAR(220) NOT NULL, tid VARCHAR(25) NOT NULL, PRIMARY KEY (kunde_id, noegle))');
     $db->exec("CREATE TABLE IF NOT EXISTS erhverv_koe (kunde_id INT NOT NULL, uge VARCHAR(10) NOT NULL, emne VARCHAR(255) NOT NULL, html $tekst NOT NULL,
         tekst $tekst NOT NULL, antal INT NOT NULL DEFAULT 0, send_efter VARCHAR(25) NOT NULL, forsoeg INT NOT NULL DEFAULT 0, PRIMARY KEY (kunde_id, uge))");
     // "Book en gennemgang" fra salgssiden (api/erhverv-book.php)
@@ -186,7 +189,9 @@ function er_fakta_chips(array $f): array {
 }
 // Ugens mail til en kunde: nye signaler i ugen op til mandag $uge (efter stadie, tidligste først) og kommende møder de næste
 // 14 dage. Svarer null, hvis der intet er at sende.
-function er_mail_til(array $kunde, string $uge): ?array {
+// $varsel: mailen, der går ud, så snart der er nyt (er_maaske_varsl): kun de signaler, udbud og fulgte sager, hvis nøgler står
+// i $varsel['noegler'], og $uge er dagens dato.
+function er_mail_til(array $kunde, string $uge, ?array $varsel = null): ?array {
     global $K;
     $site = $K['site_url'];
     $alle = er_signaler_til($kunde);
@@ -197,18 +202,19 @@ function er_mail_til(array $kunde, string $uge): ?array {
     // og kundens egne søgeord kommer altid med.
     $relevant = fn($s) => isset($s['ty']['ord']) || !isset($s['rv']) || $s['rv'] >= 2;
     $tilJer = fn($s) => er_til_jer($kunde, $s);
-    $nye = array_values(array_filter($alle, fn($s) => $s['set'] >= $fra && $s['set'] < $uge && !$s['kom'] && $relevant($s)));
+    $med = $varsel ? array_flip($varsel['noegler']) : null;
+    $nye = array_values(array_filter($alle, fn($s) => ($med ? isset($med["s:{$s['id']}"]) : $s['set'] >= $fra && $s['set'] < $uge) && !$s['kom'] && $relevant($s)));
     // De største projekter først (projektkortets relevans), derefter de tidligste stadier
     usort($nye, fn($a, $b) => ($tilJer($b) <=> $tilJer($a)) ?: (($b['rv'] ?? 2) <=> ($a['rv'] ?? 2)) ?: (($raekke[$a['sd']] ?? 9) <=> ($raekke[$b['sd']] ?? 9)) ?: strcmp($b['dato'], $a['dato']));
-    $kommer = array_values(array_filter($alle, fn($s) => $s['kom'] && $s['dato'] >= $uge && $s['dato'] < $til14 && $relevant($s)));
+    $kommer = array_values(array_filter($alle, fn($s) => $s['kom'] && ($med ? isset($med["s:{$s['id']}"]) && $s['dato'] >= $uge : $s['dato'] >= $uge && $s['dato'] < $til14) && $relevant($s)));
     usort($kommer, fn($a, $b) => strcmp($a['dato'], $b['dato']) ?: (($b['rv'] ?? 2) <=> ($a['rv'] ?? 2)));
     // Sager, kunden følger, der er kommet på en dagsorden eller er behandlet igen siden sidste mandag
-    $foelgerNye = array_values(array_filter(er_foelger(db(), $kunde, $alle), fn($f) => $f['ny'] && $f['seneste'] >= $fra));
+    $foelgerNye = array_values(array_filter(er_foelger(db(), $kunde, $alle), fn($f) => $f['ny'] && ($med ? isset($med["f:{$f['id']}:{$f['seneste']}"]) : $f['seneste'] >= $fra)));
     $fulgte = array_column($foelgerNye, 'id');
     $foelger = array_values(array_filter($alle, fn($s) => in_array($s['id'], $fulgte, true)));
     // Nye udbud i ugen fra kundens kommuner, de udbudsgrupper, der passer til produktet
     $grupper = er_udbud_grupper((string)$kunde['produkt']);
-    $udbud = array_values(array_filter(er_udbud_til($kunde), fn($u) => $u['dato'] >= $fra && $u['dato'] < $uge && array_intersect($u['g'], $grupper)));
+    $udbud = array_values(array_filter(er_udbud_til($kunde), fn($u) => ($med ? isset($med["u:{$u['id']}"]) : $u['dato'] >= $fra && $u['dato'] < $uge) && array_intersect($u['g'], $grupper)));
     if (!$nye && !$kommer && !$foelger && !$udbud) return null;
     // Ugens tre vigtigste: relevans 3 med projektkort, kundens brancher først, derefter det største beløb og de kommende møder.
     // De står øverst og tages ud af listerne nedenfor, så intet står to gange.
@@ -219,10 +225,14 @@ function er_mail_til(array $kunde, string $uge): ?array {
     $udenVigtige = fn(array $l) => array_values(array_filter($l, fn($s) => !in_array($s['id'], $vigtigeId, true)));
 
     $n = er_navne(); $C = MM_C; $F = MM_SANS; $e = 'mm_esc';
-    $kommuner = array_values(array_unique(array_map(fn($s) => $s['kn'], $alle)));
+    $kommuner = array_values(array_unique(array_map(fn($s) => $s['kn'], $varsel ? array_merge($nye, $kommer, $foelger) : $alle)));
     $hvor = count($kommuner) > 3 ? count($kommuner) . ' kommuner' : preg_replace('/, ([^,]*)$/u', ' og $1', implode(', ', $kommuner));
     $ugenr = mm_ugenr($uge);
-    $emne = 'Sagsvagt Erhverv uge ' . $ugenr . ': ' . (count($nye) ? count($nye) . (count($nye) === 1 ? ' nyt signal' : ' nye signaler') : (count($udbud) ? count($udbud) . (count($udbud) === 1 ? ' nyt udbud' : ' nye udbud') : 'kommende møder')) . ($hvor ? " i $hvor" : '');
+    $antalNyt = count($nye) + count($kommer) + count($foelger) + count($udbud);
+    $eneste = $antalNyt === 1 ? ($nye[0]['t'] ?? $kommer[0]['t'] ?? $foelger[0]['t'] ?? $udbud[0]['titel']) : null;
+    $emne = $varsel ? ($eneste !== null ? 'Nyt' . ($hvor ? " fra $hvor" : '') . ': ' . $eneste
+            : "$antalNyt nye sager" . ($hvor ? " fra $hvor" : ''))
+        : 'Sagsvagt Erhverv uge ' . $ugenr . ': ' . (count($nye) ? count($nye) . (count($nye) === 1 ? ' nyt signal' : ' nye signaler') : (count($udbud) ? count($udbud) . (count($udbud) === 1 ? ' nyt udbud' : ' nye udbud') : 'kommende møder')) . ($hvor ? " i $hvor" : '');
     $rapport = er_link($kunde);
 
     // Samme form som mandagsmailen (api/_mandagsmail_lav.php): logo og uge øverst, lyngbølgen, de vigtigste som store kort
@@ -278,7 +288,7 @@ function er_mail_til(array $kunde, string $uge): ?array {
         return $h . $mereIRapporten(count($liste) - $max);
     };
     $dele = array_filter([count($nye) ? count($nye) . (count($nye) === 1 ? ' nyt signal' : ' nye signaler') : '',
-        count($kommer) ? count($kommer) . (count($kommer) === 1 ? ' sag' : ' sager') . ' på møder de næste 14 dage' : '',
+        count($kommer) ? count($kommer) . (count($kommer) === 1 ? ' sag' : ' sager') . ($varsel ? ' på en ny dagsorden' : ' på møder de næste 14 dage') : '',
         count($udbud) ? count($udbud) . (count($udbud) === 1 ? ' nyt udbud' : ' nye udbud') : '',
         count($foelger) ? count($foelger) . (count($foelger) === 1 ? ' sag, I følger, er' : ' sager, I følger, er') . ' rykket' : '']);
     $intro = $dele ? mm_stor(preg_replace('/, ([^,]*)$/u', ' og $1', implode(', ', $dele))) . '.' : '';
@@ -296,18 +306,19 @@ function er_mail_til(array $kunde, string $uge): ?array {
     }
     $afmeld = er_afmeld_link((int)$kunde['id']);
     $link = fn($href, $tekst) => '<a href="' . $e($href) . '" style="display:inline-block;padding:12px 9px;line-height:20px;font-weight:600;color:' . $C['indigo'] . ';">' . $tekst . '</a>';
-    $foerste = $dele ? mm_stor(array_values($dele)[0]) : 'Ugens sager';
+    // Varslets overskrift er kort: "Ny sag fra Aarhus." eller "3 nye sager fra Aarhus og Odense."
+    $foerste = $varsel ? ($antalNyt === 1 ? 'Ny sag' : "$antalNyt nye sager") : ($dele ? mm_stor(array_values($dele)[0]) : 'Ugens sager');
     $preheader = ($vigtige[0]['t'] ?? $nye[0]['t'] ?? $kommer[0]['t'] ?? $udbud[0]['titel'] ?? $intro);
     $html = mm_mail_top($emne, $preheader, $ugenr, $uge, MM_MAIL . 'logo.png')
         . '<tr><td align="center" style="padding:12px 28px 0;">'
-        . '<h1 style="margin:0;font:800 34px/1.12 ' . $F . ';color:' . $C['nat'] . ';">God morgen.<br>' . $e($foerste) . '.</h1>'
-        . '<p style="margin:14px 0 0;font:600 13px/1.5 ' . $F . ';color:' . $C['muted'] . ';">' . $e(implode(' · ', array_filter([ER_PRODUKTER[$kunde['produkt']] ?? 'Tidlige signaler', $hvor, $kunde['firma']]))) . '</p>'
+        . '<h1 style="margin:0;font:800 34px/1.12 ' . $F . ';color:' . $C['nat'] . ';">' . ($varsel ? $e($foerste) . ($hvor ? '<br>fra ' . $e($hvor) : '') : 'God morgen.<br>' . $e($foerste)) . '.</h1>'
+        . '<p style="margin:14px 0 0;font:600 13px/1.5 ' . $F . ';color:' . $C['muted'] . ';">' . $e(implode(' · ', array_filter([ER_PRODUKTER[$kunde['produkt']] ?? 'Tidlige signaler', $varsel ? '' : $hvor, $kunde['firma']]))) . '</p>'
         . '</td></tr>'
         . '<tr><td style="padding:22px 0 0;font-size:0;line-height:0;"><img src="' . MM_MAIL . 'boelge-lyng.png" width="600" height="70" alt="" style="display:block;width:100%;height:auto;border:0;"></td></tr>'
-        . $afsnit(er_brancher($kunde) ? 'Ugens vigtigste for jer' : 'Ugens vigtigste', $vigtige, 3, true)
+        . $afsnit($varsel ? (er_brancher($kunde) ? 'Det vigtigste for jer' : 'Det vigtigste') : (er_brancher($kunde) ? 'Ugens vigtigste for jer' : 'Ugens vigtigste'), $vigtige, 3, true)
         . $afsnit('Sager, I følger', $foelger, 10)
-        . $afsnit('Nyt i ugen', $udenVigtige($nye), 12)
-        . $afsnit('På kommende møder', $udenVigtige($kommer), 10)
+        . $afsnit($varsel ? 'Nye signaler' : 'Nyt i ugen', $udenVigtige($nye), 12)
+        . $afsnit($varsel ? 'Nyt på dagsordenen' : 'På kommende møder', $udenVigtige($kommer), 10)
         . ($udbud ? '<tr><td align="center" style="padding:34px 28px 8px;"><h2 style="margin:0;font:800 22px/1.25 ' . $F . ';color:' . $C['nat'] . ';">Nye udbud fra kommunerne</h2></td></tr>' . $udbudRk . $mereIRapporten(count($udbud) - 8) : '')
         . '<tr><td align="center" style="padding:34px 28px 0;"><a href="' . $e($rapport) . '" style="display:inline-block;background:' . $C['nat'] . ';color:' . $C['kalk'] . ';font:700 15px ' . $F . ';text-decoration:none;padding:14px 28px;border-radius:99px;">Åbn hele rapporten</a>'
         . '<p style="margin:14px 0 0;font:14px/1.55 ' . $F . ';color:' . $C['brod'] . ';">Filtrér, eksportér til regneark og markér, hvad der er relevant for jer.</p></td></tr>'
@@ -315,18 +326,18 @@ function er_mail_til(array $kunde, string $uge): ?array {
         . '<tr><td align="center" style="padding:18px 32px 30px;font:12px/1.6 ' . $F . ';color:' . $C['muted'] . ';">'
         . '<img src="' . MM_MAIL . 'symbol.png" width="23" height="28" alt="" style="display:block;border:0;margin:0 auto 14px;">'
         . 'Til ' . $e($kunde['firma']) . '. Sagerne er fra kommunernes egne dagsordener og referater; Sagsvagt refererer kort og linker til kilden. Svar på mailen, hvis noget mangler.<br>'
-        . $link('mailto:' . MM_REDAKTION . '?subject=' . rawurlencode('Sagsvagt Erhverv'), 'Skriv til os') . $link($afmeld, 'Stop de ugentlige mails') . $link($site . 'privatliv.html', 'Privatliv')
+        . $link('mailto:' . MM_REDAKTION . '?subject=' . rawurlencode('Sagsvagt Erhverv'), 'Skriv til os') . $link($afmeld, 'Stop mailene') . $link($site . 'privatliv.html', 'Privatliv')
         . '<br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</td></tr>'
         . "</table>\n</td></tr></table>\n</body></html>";
 
     $linje = fn(array $s) => '• ' . $s['t'] . "\n  " . $kicker($s) . ' · ' . ($s['kom'] ? 'møde ' : '') . mm_dato($s['dato']) . "\n  " . $site . $s['url'];
-    $tekst = "Sagsvagt Erhverv uge $ugenr\n$intro\n\n"
-        . ($vigtige ? "UGENS VIGTIGSTE\n" . implode("\n", array_map(fn($s) => $linje($s) . "\n  " . $s['f']['hvad'], $vigtige)) . "\n\n" : '')
+    $tekst = ($varsel ? 'Sagsvagt Erhverv · ' . mm_dato($uge, true) : "Sagsvagt Erhverv uge $ugenr") . "\n$intro\n\n"
+        . ($vigtige ? ($varsel ? "DET VIGTIGSTE\n" : "UGENS VIGTIGSTE\n") . implode("\n", array_map(fn($s) => $linje($s) . "\n  " . $s['f']['hvad'], $vigtige)) . "\n\n" : '')
         . ($foelger ? "SAGER, I FØLGER\n" . implode("\n", array_map($linje, array_slice($foelger, 0, 10))) . "\n\n" : '')
-        . ($udenVigtige($nye) ? "NYT I UGEN\n" . implode("\n", array_map($linje, array_slice($udenVigtige($nye), 0, 12))) . "\n\n" : '')
-        . ($udenVigtige($kommer) ? "PÅ KOMMENDE MØDER\n" . implode("\n", array_map($linje, array_slice($udenVigtige($kommer), 0, 10))) . "\n\n" : '')
+        . ($udenVigtige($nye) ? ($varsel ? "NYE SIGNALER\n" : "NYT I UGEN\n") . implode("\n", array_map($linje, array_slice($udenVigtige($nye), 0, 12))) . "\n\n" : '')
+        . ($udenVigtige($kommer) ? ($varsel ? "NYT PÅ DAGSORDENEN\n" : "PÅ KOMMENDE MØDER\n") . implode("\n", array_map($linje, array_slice($udenVigtige($kommer), 0, 10))) . "\n\n" : '')
         . ($udbud ? "NYE UDBUD\n" . implode("\n", array_map(fn($u) => '• ' . $u['titel'] . ($u['frist'] ? ' (frist ' . mm_dato($u['frist']) . ')' : '') . "\n  " . $u['url'], array_slice($udbud, 0, 8))) . "\n\n" : '')
-        . "Hele rapporten: $rapport\n\n--\nTil {$kunde['firma']}. Stop de ugentlige mails: $afmeld\nSagsvagt · CVR 46841514";
+        . "Hele rapporten: $rapport\n\n--\nTil {$kunde['firma']}. Stop mailene: $afmeld\nSagsvagt · CVR 46841514";
     return ['emne' => $emne, 'html' => mm_moerk($html), 'tekst' => $tekst, 'antal' => count($nye) + count($kommer) + count($udbud) + count($foelger)];
 }
 
@@ -351,7 +362,8 @@ function er_maaske_planlaeg(?DateTimeImmutable $nu = null): void {
     try { $db->prepare('INSERT INTO erhverv_uger (uge, planlagt) VALUES (?, ?)')->execute([$uge, nu()]); } catch (PDOException $e) { return; }
     @set_time_limit(120);
     $tid = max(mm_kl7($uge), nu());
-    $q = $db->query('SELECT * FROM erhverv_kunder WHERE ' . er_kan() . ' AND mail = 1 ORDER BY firma');
+    // Kun kunder, der vil have én samlet mail om mandagen; de andre får varsler (er_maaske_varsl)
+    $q = $db->query('SELECT * FROM erhverv_kunder WHERE ' . er_kan() . ' AND mail = 1 AND varsel = 0 ORDER BY firma');
     $ind = $db->prepare('INSERT INTO erhverv_koe (kunde_id, uge, emne, html, tekst, antal, send_efter) VALUES (?, ?, ?, ?, ?, ?, ?)');
     $linjer = []; $antal = 0; $proeve = null;
     foreach ($q->fetchAll() as $k) {
@@ -402,6 +414,69 @@ function er_maaske_send(): void {
         if ($svar === 'fejl') { $fejlet->execute([(int)$r['id'], $r['uge']]); error_log('Sagsvagt Erhverv: kunne ikke sende til kunde ' . $r['id']); }
         else $slet->execute([(int)$r['id'], $r['uge']]);
     }
+}
+
+// ---------- Varsler: en mail, så snart der er nyt ----------
+// Kaldes ved besøg (api/besoeg.php) ligesom push-beskederne: når robotten har lagt et nyt signalindeks op
+// (api/_erhverv-signaler.json, efter hver kørsel), får hver kunde med varsel = 1 én mail med det, de ikke har fået
+// varsel om før: nye signaler og dagsordenspunkter, nye udbud og sager, de følger, der er rykket. Første gang huskes alt
+// kun, så en ny kunde ikke får en lavine af gamle sager. Sagssiderne lægges op efter indekset (uploaden tager tid), så
+// et signal, hvis side ikke findes endnu, venter til et senere besøg.
+const ER_VARSEL_DAGE = 7; // ældre signaler og udbud huskes kun
+function er_varsel_noegler(PDO $db, array $kunde, bool $tjekSider = true): array {
+    $graense = date('Y-m-d', time() - ER_VARSEL_DAGE * 86400);
+    $rod = dirname(__DIR__) . '/';
+    $q = $db->prepare('SELECT noegle FROM erhverv_varslet WHERE kunde_id = ?'); $q->execute([(int)$kunde['id']]);
+    $kendte = array_flip($q->fetchAll(PDO::FETCH_COLUMN));
+    $alle = er_signaler_til($kunde);
+    $nye = []; $husk = []; $venter = false;
+    $tag = function (string $n, bool $gammel, bool $klar = true) use (&$nye, &$husk, &$venter, $kendte) {
+        if (isset($kendte[$n])) return;
+        if (!$klar && !$gammel) { $venter = true; return; }
+        $husk[] = $n;
+        if (!$gammel) $nye[] = $n;
+    };
+    // En side, der stadig mangler dagen efter, venter vi ikke længere på
+    $igaar = date('Y-m-d', time() - 86400);
+    foreach ($alle as $s) $tag("s:{$s['id']}", $s['set'] < $graense, !$tjekSider || is_file($rod . $s['url']) || $s['set'] < $igaar);
+    $grupper = er_udbud_grupper((string)$kunde['produkt']);
+    foreach (er_udbud_til($kunde) as $u) if (array_intersect($u['g'], $grupper)) $tag("u:{$u['id']}", $u['dato'] < $graense);
+    foreach (er_foelger($db, $kunde, $alle) as $f) if ($f['ny']) $tag("f:{$f['id']}:{$f['seneste']}", $f['seneste'] < $graense);
+    // kandidater: det, der ville komme med, hvis det ikke var første gang (admin-sidens forhåndsvisning)
+    return ['nye' => $kendte ? $nye : [], 'kandidater' => $nye, 'husk' => $husk, 'foerste' => !$kendte, 'venter' => $venter];
+}
+function er_maaske_varsl(bool $tving = false): array {
+    $fil = __DIR__ . '/_erhverv-signaler.json';
+    $db = db(); er_tabeller($db);
+    $mtime = (string)@filemtime($fil);
+    if (!$tving && indst_hent('erhverv:varsel_mtime') === $mtime && indst_hent('erhverv:varsel_venter') !== '1') return ['koert' => false];
+    if (!$tving && time() - (int)indst_hent('erhverv:varsel_sidst') < 1800) return ['koert' => false, 'venter' => true];
+    if (!indst_laas('erhverv:varsel_laas')) return ['koert' => false, 'laast' => true];
+    try {
+        @set_time_limit(120);
+        indst_saet('erhverv:varsel_sidst', (string)time());
+        $idag = er_idag(); $sendt = 0; $venter = false;
+        $ins = $db->prepare('INSERT INTO erhverv_varslet (kunde_id, noegle, tid) VALUES (?, ?, ?)');
+        foreach ($db->query('SELECT * FROM erhverv_kunder WHERE ' . er_kan() . ' AND mail = 1 AND varsel = 1 ORDER BY id')->fetchAll() as $k) {
+            $v = er_varsel_noegler($db, $k);
+            $venter = $venter || $v['venter'];
+            $db->beginTransaction();
+            foreach ($v['husk'] as $n) { try { $ins->execute([(int)$k['id'], $n, nu()]); } catch (PDOException $e) {} }
+            $db->commit();
+            if (!$v['nye'] || !($m = er_mail_til($k, $idag, ['noegler' => $v['nye']]))) continue;
+            $hoveder = ['List-Unsubscribe' => '<' . er_afmeld_link((int)$k['id']) . '>', 'List-Unsubscribe-Post' => 'List-Unsubscribe=One-Click'];
+            $ok = 0;
+            foreach (er_modtagere($k) as $til) if (send_mail($til, $m['emne'], $m['html'], $m['tekst'], MM_REDAKTION, $hoveder)) $ok++;
+            if (!$ok) continue;
+            $sendt++;
+            // Til admin-sidens tal: én række pr. kunde og dag
+            try { $db->prepare('INSERT INTO erhverv_sendt (kunde_id, uge, sendt, antal) VALUES (?, ?, ?, ?)')->execute([(int)$k['id'], $idag, nu(), (int)$m['antal']]); }
+            catch (PDOException $e) { $db->prepare('UPDATE erhverv_sendt SET sendt = ?, antal = antal + ? WHERE kunde_id = ? AND uge = ?')->execute([nu(), (int)$m['antal'], (int)$k['id'], $idag]); }
+        }
+        indst_saet('erhverv:varsel_mtime', $mtime);
+        indst_saet('erhverv:varsel_venter', $venter ? '1' : '0');
+        return ['koert' => true, 'sendt' => $sendt, 'venter' => $venter];
+    } finally { indst_slip('erhverv:varsel_laas'); }
 }
 
 function er_stop(PDO $db, string $uge): int {

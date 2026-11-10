@@ -14,7 +14,7 @@ $firma = trim(mb_substr((string)($d['firma'] ?? ''), 0, 120));
 $navn = trim(mb_substr((string)($d['navn'] ?? ''), 0, 100));
 if ($firma === '') fejl(400, 'Skriv navnet på virksomheden.');
 if ($email === '') fejl(400, 'Skriv en gyldig e-mail.');
-if (empty($d['samtykke'])) fejl(400, 'Sæt kryds, så vi må sende rapporten og den ugentlige mail i prøveperioden.');
+if (empty($d['samtykke'])) fejl(400, 'Sæt kryds, så vi må sende rapporten og mails om nye sager i prøveperioden.');
 begraens('erhverv-proeve:' . $email, 3, 86400);
 $aabne = array_column(er_indeks()['kommuner'], 'slug');
 $kommuner = array_slice(array_values(array_unique(array_intersect(array_map('strval', (array)($d['kommuner'] ?? [])), $aabne))), 0, 5);
@@ -34,7 +34,7 @@ if ($k['status'] === 'venter') {
     $id = (int)$k['id']; $v = (int)$k['version'];
     $link = $K['site_url'] . "api/erhverv-bekraeft.php?id=$id&t=" . signatur("erhverv-bekraeft:$id:$v");
     [$html, $tekst] = mail_skabelon('Bekræft jeres prøve på Sagsvagt Erhverv',
-        "Tryk på knappen for at starte " . ER_PROEVE_DAGE . " dages gratis prøve for {$k['firma']}. Så får I med det samme et link til jeres rapport, og hver mandag kl. 7 en mail med ugens nye signaler og udbud.\n\nPrøven stopper af sig selv. Der kommer ingen regning.",
+        "Tryk på knappen for at starte " . ER_PROEVE_DAGE . " dages gratis prøve for {$k['firma']}. Så får I med det samme et link til jeres rapport, og en mail, så snart der kommer nye signaler og udbud.\n\nPrøven stopper af sig selv. Der kommer ingen regning.",
         'Start prøven', $link, "Du får denne mail, fordi $email har bedt om en prøve på sagsvagt.dk/erhverv.html. Har du ikke det, så gør ingenting.");
     send_mail($email, 'Bekræft jeres prøve på Sagsvagt Erhverv', $html, $tekst);
 } else {

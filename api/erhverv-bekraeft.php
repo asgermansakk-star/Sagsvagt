@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $db->prepare("UPDATE erhverv_kunder SET status = 'proeve', proeve_slut = ? WHERE id = ? AND status = 'venter'")->execute([$slut, $id]);
     $q->execute([$id]); $k = $q->fetch();
     [$html, $tekst] = mail_skabelon('Jeres rapport på Sagsvagt Erhverv er klar',
-        "Prøven for {$k['firma']} kører til og med " . mm_dato($slut) . ". Gem linket: det er jeres adgang til rapporten. Hver mandag kl. 7 får I også en mail med ugens nye signaler, kommende møder og udbud.\n\nSvar på denne mail, hvis noget mangler, eller I vil have flere kommuner med.",
+        "Prøven for {$k['firma']} kører til og med " . mm_dato($slut) . ". Gem linket: det er jeres adgang til rapporten. I får også en mail, så snart der kommer nye signaler, nye punkter på dagsordenen og nye udbud.\n\nSvar på denne mail, hvis noget mangler, eller I vil have flere kommuner med.",
         'Åbn rapporten', er_link($k), "Linket er personligt. Del det kun i jeres egen virksomhed.");
     send_mail((string)$k['email'], 'Jeres rapport på Sagsvagt Erhverv er klar', $html, $tekst);
     $navne = array_column(er_indeks()['kommuner'], 'navn', 'slug');

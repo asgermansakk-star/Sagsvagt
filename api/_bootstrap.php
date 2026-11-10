@@ -171,6 +171,27 @@ function find_token(string $noegle): ?array {
     return $q->fetch() ?: null;
 }
 
+// ---------- Indstillinger og lås til opgaver, der kører ved besøg ----------
+function indst_hent(string $n): ?string {
+    $q = db()->prepare('SELECT vaerdi FROM indstillinger WHERE noegle = ?'); $q->execute([$n]);
+    $v = $q->fetchColumn();
+    return $v === false ? null : (string)$v;
+}
+function indst_saet(string $n, string $v): void {
+    $db = db();
+    $u = $db->prepare('UPDATE indstillinger SET vaerdi = ? WHERE noegle = ?'); $u->execute([$v, $n]);
+    if ($u->rowCount() === 0 && indst_hent($n) === null) { try { $db->prepare('INSERT INTO indstillinger (noegle, vaerdi) VALUES (?, ?)')->execute([$n, $v]); } catch (PDOException $e) {} }
+}
+// Tager låsen $n i $sek sekunder, så to samtidige besøg ikke sender den samme mail to gange. Tiden gemmes med 12 cifre,
+// så den kan sammenlignes som tekst i både SQLite og MySQL.
+function indst_laas(string $n, int $sek = 120): bool {
+    if (indst_hent($n) === null) indst_saet($n, str_pad('0', 12, '0', STR_PAD_LEFT));
+    $q = db()->prepare('UPDATE indstillinger SET vaerdi = ? WHERE noegle = ? AND vaerdi < ?');
+    $q->execute([str_pad((string)(time() + $sek), 12, '0', STR_PAD_LEFT), $n, str_pad((string)time(), 12, '0', STR_PAD_LEFT)]);
+    return $q->rowCount() === 1;
+}
+function indst_slip(string $n): void { indst_saet($n, str_pad('0', 12, '0', STR_PAD_LEFT)); }
+
 // ---------- Signerede links (afmelding, stop af ugens mail) ----------
 // Links, der skal virke i alle gamle mails, signeres med en hemmelig nøgle, der laves første gang og ligger i databasen.
 function hemmelighed(): string {

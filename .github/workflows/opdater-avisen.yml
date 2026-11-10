@@ -175,6 +175,12 @@ jobs:
           RELEVANS_NOEGLE: ${{ secrets.RELEVANS_NOEGLE }}
           RELEVANS_ARBEJDSRUM: ${{ vars.RELEVANS_ARBEJDSRUM }}
 
+      # Tipalarmen til redaktionerne (api/_tips.php): grunde og spørgsmål til de seneste sager i alle åbne kommuner
+      # (api/_tips.json, ikke i repoet). Serveren sender redaktionerne de nye tips, når filen er lagt op.
+      - name: Tips til redaktionerne
+        continue-on-error: true
+        run: node avis/tipliste.mjs --indeks
+
       - name: Gem ændringer i repoet
         run: |
           git config user.name "Sagsvagt-robot"

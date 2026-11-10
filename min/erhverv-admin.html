@@ -96,10 +96,10 @@
         <label>Pris (kr./md. ekskl. moms)<input id="k-pris" type="number" min="0" step="1"></label>
         <label>CVR<input id="k-cvr" inputmode="numeric" maxlength="8" placeholder="8 cifre"></label>
         <label>Flere modtagere af mailen<input id="k-modtagere" placeholder="kollega@firma.dk, ..."></label>
-        <label style="align-content:end"><span><input id="k-mail" type="checkbox" checked style="width:auto"> Ugentlig mail mandag kl. 7</span></label>
+        <label>Mails<select id="k-mail"><option value="straks">Når der er nyt (efter hver robotkørsel)</option><option value="mandag">Én samlet mail mandag kl. 7</option><option value="ingen">Ingen mails</option></select></label>
         <div class="bred"><label for="k-soeg">Kommuner</label>
           <div class="kommunevalg"><input type="search" id="k-soeg" placeholder="Find kommune"><div class="kommuneliste" id="k-kommuner"></div><p class="valgte" id="k-valgte"></p></div></div>
-        <div class="bred"><label>Brancher (giver "Til jer" og "Ugens tre vigtigste for jer" i mailen og rapporten)</label><div class="branchevalg" id="k-brancher"></div></div>
+        <div class="bred"><label>Brancher (giver "Til jer" og "Det vigtigste for jer" i mailen og rapporten)</label><div class="branchevalg" id="k-brancher"></div></div>
         <label class="bred">Egne søgeord (adskilt med komma, mindst 3 tegn), fx en vej, et projekt eller et firmanavn<input id="k-ord" maxlength="1000"></label>
         <label class="bred">Noter (kun til dig)<textarea id="k-noter" maxlength="4000"></textarea></label>
       </div>
@@ -161,7 +161,7 @@
           + '<td><span class="st ' + x.status + '">' + esc(j.status[x.status]) + "</span>" + slut + (x.pris ? '<div class="lille">' + (+x.pris).toLocaleString("da-DK") + " kr./md.</div>" : "") + "</td>"
           + "<td>" + x.signaler + (x.ord_hits ? '<div class="lille">' + x.ord_hits + " med søgeord</div>" : "") + '<div class="lille">' + x.udbud + " udbud</div></td>"
           + "<td>" + x.besoeg + " besøg" + '<div class="lille">' + (x.sidst_set ? "sidst " + tid(x.sidst_set) : "aldrig åbnet") + "</div>" + (x.ja + x.nej ? '<div class="lille">' + x.ja + " relevante, " + x.nej + " ikke</div>" : "") + (x.foelger ? '<div class="lille">følger ' + x.foelger + " sager</div>" : "") + (x.pipeline ? '<div class="lille">' + x.pipeline + " i pipelinen</div>" : "") + "</td>"
-          + "<td>" + (+x.mail ? "Til" : "Fra") + '<div class="lille">' + (x.mails ? x.mails + " sendt, sidst " + dato(x.sidst_mail) : "ingen endnu") + "</div></td>"
+          + "<td>" + (!+x.mail ? "Fra" : +x.varsel ? "Når der er nyt" : "Mandag") + '<div class="lille">' + (x.mails ? x.mails + " sendt, sidst " + dato(x.sidst_mail) : "ingen endnu") + "</div></td>"
           + '<td><div class="handl"><button class="mini-knap" data-h="ret" data-id="' + x.id + '">Ret</button><button class="mini-knap" data-h="link" data-id="' + x.id + '">Link</button>'
           + '<button class="mini-knap" data-h="forhaand" data-id="' + x.id + '">Vis mail</button><button class="mini-knap" data-h="proeve" data-id="' + x.id + '">Prøve til mig</button>'
           + (x.status === "proeve" || x.status === "venter" || x.status === "pause" ? '<button class="mini-knap" data-h="forlaeng" data-id="' + x.id + '">Forlæng 14 dage</button>' : "")
@@ -191,7 +191,7 @@
     // En ny pilot løber tre måneder til 750 kr./md. (handleplanen); ret det, hvis aftalen er en anden
     $("#k-slut").value = x.id ? (x.proeve_slut || "") : new Date(Date.now() + 91 * 864e5).toISOString().slice(0, 10);
     $("#k-pris").value = x.id ? (x.pris == null ? "" : x.pris) : 750;
-    $("#k-modtagere").value = x.modtagere || ""; $("#k-mail").checked = x.id ? !!+x.mail : true;
+    $("#k-modtagere").value = x.modtagere || ""; $("#k-mail").value = !x.id ? "straks" : !+x.mail ? "ingen" : +x.varsel ? "straks" : "mandag";
     var kb = (x.brancher || "").split(",");
     $("#k-brancher").querySelectorAll("input").forEach(function (i) { i.checked = kb.indexOf(i.value) >= 0; });
     $("#k-ord").value = x.ord || ""; $("#k-noter").value = x.noter || ""; $("#k-cvr").value = x.cvr || "";
@@ -206,7 +206,7 @@
     var ny = !$("#k-id").value;
     er({ handling: "gem", id: +$("#k-id").value || 0, firma: $("#k-firma").value, kontakt: $("#k-kontakt").value, email: $("#k-email").value,
       produkt: $("#k-produkt").value, status: $("#k-status").value, proeve_slut: $("#k-slut").value, pris: $("#k-pris").value,
-      modtagere: $("#k-modtagere").value, mail: $("#k-mail").checked, kommuner: Object.keys(valgte), ord: $("#k-ord").value, brancher: Array.prototype.map.call($("#k-brancher").querySelectorAll("input:checked"), function (i) { return i.value; }), noter: $("#k-noter").value, cvr: $("#k-cvr").value.replace(/\D/g, "") })
+      modtagere: $("#k-modtagere").value, mail: $("#k-mail").value, kommuner: Object.keys(valgte), ord: $("#k-ord").value, brancher: Array.prototype.map.call($("#k-brancher").querySelectorAll("input:checked"), function (i) { return i.value; }), noter: $("#k-noter").value, cvr: $("#k-cvr").value.replace(/\D/g, "") })
       .then(function (j) {
         $("#kunde-form").hidden = true;
         besked(ny ? "Kunden er oprettet. Send linket herunder til kunden (fx i din egen mail)." : "Kunden er gemt.", "ok");
@@ -233,7 +233,7 @@
     if (h === "link") return er({ handling: "link", id: id }).then(function (j) { visLink(j.link); besked("Linket til " + x.firma + ":", "ok"); }).catch(function (e) { besked(e.message, "fejl"); });
     if (h === "nyt_link") { if (confirm("Lav et nyt link til " + x.firma + "? Det gamle link holder op med at virke, også i tidligere mails.")) er({ handling: "nyt_link", id: id }).then(function (j) { visLink(j.link); besked("Nyt link til " + x.firma + ". Det gamle virker ikke længere.", "ok"); }).catch(function (e) { besked(e.message, "fejl"); }); return; }
     if (h === "forhaand") return er({ handling: "forhaand", id: id }).then(function (j) {
-      if (!j.mail) return besked("Ingen mail til " + x.firma + " mandag " + dato(j.uge) + ": intet nyt i ugen og ingen kommende møder.", "");
+      if (!j.mail) return besked(j.varsel ? "Intet nyt til " + x.firma + " lige nu: kunden har fået varsel om alt fra den seneste uge." : "Ingen mail til " + x.firma + " mandag " + dato(j.uge) + ": intet nyt i ugen og ingen kommende møder.", "");
       $("#mail-emne").textContent = j.mail.emne + " → " + j.modtagere.join(", "); $("#mail-ramme").srcdoc = j.mail.html; $("#mail-vis").showModal();
     }).catch(function (e) { besked(e.message, "fejl"); });
     if (h === "proeve") return er({ handling: "proeve", id: id }).then(function (j) { besked(j.ok ? "Prøven er sendt til " + j.sendt_til.join(", ") + "." : "Ingen mail at sende i denne uge.", j.ok ? "ok" : ""); }).catch(function (e) { besked(e.message, "fejl"); });

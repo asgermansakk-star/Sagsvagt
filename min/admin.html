@@ -101,6 +101,20 @@
         <tbody id="pk-raekker"></tbody>
       </table></div>
     </details>
+    <details class="import" id="tip-boks">
+      <summary id="tip-titel">Tipalarm til redaktioner</summary>
+      <p class="lille">Efter aftale med et lokalt medie: redaktionen får en mail, så snart robotten har lagt nye sager op fra deres kommune (efter kørslerne ca. kl. 5 og 15), med de nye sager, der har en grund til at være et tip. Den første mail kommer efter næste kørsel; sager, der findes, når redaktionen tilføjes, kommer ikke med.</p>
+      <div class="handl-raekke" style="flex-wrap:wrap">
+        <input id="tip-navn" placeholder="Redaktion, fx Folketidende" aria-label="Redaktionens navn" style="flex:1 1 180px">
+        <select id="tip-kommune" aria-label="Kommune" style="flex:0 1 180px"></select>
+        <input id="tip-modtagere" placeholder="redaktion@avis.dk, kollega@avis.dk" aria-label="Modtagere" style="flex:2 1 240px">
+        <button class="knap" id="tip-gem" type="button">Tilføj</button>
+      </div>
+      <div class="tabel-wrap"><table class="liste">
+        <thead><tr><th>Redaktion</th><th>Kommune</th><th>Modtagere</th><th>Mails</th><th></th></tr></thead>
+        <tbody id="tip-raekker"></tbody>
+      </table></div>
+    </details>
     <details class="import" id="mm-boks">
       <summary id="mm-titel">Mandagsmail</summary>
       <p class="lille">Laver en mail til alle tilmeldte, så du kan se dem, før de sendes. Følger de en åben kommune, får de sagerne om deres emner (uden emner: ugens vigtigste sager). Er deres kommune ikke åben endnu, får de en kort mail om, at den er på vej. Afmeldte, ubekræftede og adresser markeret med "Mail kom retur" får ingen. Ingen får samme uges mail to gange. <b>Mailen sendes af sig selv:</b> søndag fra kl. 18 lægges ugens mails i kø, du får en prøvemail med en stop-knap, og mailene sendes ved første besøg på sagsvagt.dk efter mandag kl. 7. Her kan du se dem, stoppe ugen eller sende i hånden.</p>
@@ -201,6 +215,7 @@
       hentFotos();
       hentPush();
       hentPakker();
+      hentTips();
     });
   }
   // Plus og Pro: åben eller lukket for bestilling, og dem, der skal faktureres (api/admin/pakker.php)
@@ -217,6 +232,40 @@
     }).join("") || '<tr><td colspan="6" class="lille">Ingen endnu.</td></tr>';
   }
   function hentPakker(data) { return api("admin/pakker.php", data || {}).then(visPakker).catch(function (e) { $("#pk-status").textContent = e.message; }); }
+  // Tipalarm til redaktioner (api/admin/tips.php)
+  var tipData = { redaktioner: [], kommuner: {} };
+  function visTips(j) {
+    tipData = j;
+    var sel = $("#tip-kommune");
+    if (!sel.options.length) sel.innerHTML = '<option value="">Kommune</option>' + Object.keys(j.kommuner).sort(function (a, b) { return j.kommuner[a].localeCompare(j.kommuner[b], "da"); })
+      .map(function (s) { return '<option value="' + esc(s) + '">' + esc(j.kommuner[s]) + "</option>"; }).join("");
+    $("#tip-titel").textContent = "Tipalarm til redaktioner (" + j.redaktioner.filter(function (r) { return +r.aktiv; }).length + " aktive)";
+    $("#tip-raekker").innerHTML = j.redaktioner.map(function (r) {
+      return "<tr><td>" + esc(r.navn) + (+r.aktiv ? "" : ' <span class="lille">(stoppet)</span>') + "</td><td>" + esc(j.kommuner[r.kommune] || r.kommune) + "</td><td>" + esc(r.modtagere) + "</td><td>" + (+r.sendt || 0)
+        + (r.sidst_sendt ? '<div class="lille">sidst ' + dato(r.sidst_sendt) + "</div>" : "") + "</td><td>"
+        + '<button class="mini-knap" data-tip="forhaand" data-id="' + r.id + '">Vis mail</button><button class="mini-knap" data-tip="proeve" data-id="' + r.id + '">Prøve til mig</button>'
+        + '<button class="mini-knap" data-tip="aktiv" data-id="' + r.id + '">' + (+r.aktiv ? "Stop" : "Start") + '</button><button class="mini-knap" data-tip="slet" data-id="' + r.id + '">Slet</button></td></tr>';
+    }).join("") || '<tr><td colspan="5" class="lille">Ingen redaktioner endnu.</td></tr>';
+  }
+  function hentTips() { api("admin/tips.php", {}).then(visTips).catch(function () { $("#tip-titel").textContent = "Tipalarm til redaktioner (kunne ikke hentes)"; }); }
+  $("#tip-gem").addEventListener("click", function () {
+    api("admin/tips.php", { handling: "gem", navn: $("#tip-navn").value, kommune: $("#tip-kommune").value, modtagere: $("#tip-modtagere").value, aktiv: true }).then(function (j) {
+      visTips(j); $("#tip-navn").value = ""; $("#tip-modtagere").value = "";
+      besked("Redaktionen er tilføjet. Den første tipalarm kommer, når robotten har lagt nye sager op.", "ok");
+    }).catch(function (e) { besked(e.message, "fejl"); });
+  });
+  $("#tip-raekker").addEventListener("click", function (e) {
+    var t = e.target.closest("[data-tip]"); if (!t) return;
+    var id = +t.dataset.id, r = tipData.redaktioner.filter(function (x) { return +x.id === id; })[0], h = t.dataset.tip;
+    var fejl = function (e) { besked(e.message, "fejl"); };
+    if (h === "forhaand") api("admin/tips.php", { handling: "forhaand", id: id }).then(function (j) {
+      if (!j.mail) return besked("Ingen tips fra " + (tipData.kommuner[r.kommune] || r.kommune) + " de seneste 14 dage.", "");
+      $("#mm-vis-emne").textContent = j.mail.emne + " → " + j.modtagere.join(", "); $("#mm-ramme").srcdoc = j.mail.html; $("#mm-vis").showModal();
+    }).catch(fejl);
+    if (h === "proeve") api("admin/tips.php", { handling: "proeve", id: id }).then(function (j) { besked(j.ok ? "Prøven er sendt til " + j.sendt_til.join(", ") + "." : "Ingen tips at sende.", j.ok ? "ok" : ""); }).catch(fejl);
+    if (h === "aktiv") api("admin/tips.php", { handling: "gem", id: id, navn: r.navn, kommune: r.kommune, modtagere: r.modtagere, aktiv: !+r.aktiv }).then(visTips).catch(fejl);
+    if (h === "slet" && confirm("Slet " + r.navn + " fra tipalarmen?")) api("admin/tips.php", { handling: "slet", id: id }).then(visTips).catch(fejl);
+  });
   // Push-beskeder: status, til/fra og en udsendelse nu (api/admin/push.php)
   function visPush(j) {
     $("#push-titel").textContent = "Push-beskeder (" + (j.aktiv ? "slået til" : "slået fra") + ")";

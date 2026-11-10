@@ -5,6 +5,10 @@
 // Kør:  node avis/tipliste.mjs guldborgsund                       de seneste 14 dage og kommende møder
 //       node avis/tipliste.mjs guldborgsund --dage 7 --til "Folketidende"
 //       node avis/tipliste.mjs guldborgsund --mail                også som mail (…-mail.html og …-mail.txt) til redaktionen
+//       node avis/tipliste.mjs --indeks                           tipsene i alle åbne kommuner til tipalarmen (api/_tips.json)
+//
+// Tipalarmen (api/_tips.php) sender redaktionerne en mail, så snart robotten har lagt nye sager op. Robotten vurderer
+// sagerne her (grunde, spørgsmål og point), fordi den har den fulde sagstekst og stederne; serveren finder, hvad der er nyt.
 //
 // Listen er til redaktionen og må ikke ligge offentligt: den skrives til plan/tipliste/ (plan/ uploades ikke).
 // Billeder og links peger på sagsvagt.dk, så filen kan sendes som den er. Bilag gengives ikke (ophavsretsloven § 9);
@@ -279,8 +283,34 @@ function listeMail({ k, til, fra, vurderet, top }) {
   return { emne, html: moerk(html), tekst };
 }
 
+// Tipsene i alle åbne kommuner: kun sager med mindst én grund, de seneste 14 dage og kommende møder. Sagens titel, dato
+// og link står i kommunens sager.json på siden; her står kun det, serveren ikke selv kan regne ud.
+async function indeks() {
+  const aabne = JSON.parse(await readFile(join(ROD, "kommune", "aabne.json"), "utf8"));
+  const navne = Object.fromEntries(aabne.map((x) => [x.slug, x.navn]));
+  const kommuner = {};
+  let n = 0;
+  for (const { slug } of aabne) {
+    let k;
+    try { k = await hentKommune(slug, navne); } catch { continue; }
+    const fra = minus(IDAG, 14);
+    const tips = slaaSammen(k.sager
+      .filter((s) => (s.st === "kommer" && s.dato >= IDAG) || (s.st !== "kommer" && s.dato >= fra && s.dato <= IDAG))
+      .filter((s) => !s.r && !RUTINE_EKSTRA.test(s.t))
+      .map((s) => vurder(s, k.byer, k.fuld[s.id])))
+      .filter((v) => v.grunde.length)
+      .map((v) => ({ id: v.s.id, p: v.point, g: v.grunde.map(({ id, navn, tekst }) => ({ id, navn, tekst })),
+        spm: [...v.grunde].sort((a, b) => SPM.indexOf(a.id) - SPM.indexOf(b.id)).slice(0, 2).map((g) => g.spm).join(" "), ogsaa: v.ogsaa }));
+    kommuner[slug] = { navn: k.navn, tips };
+    n += tips.length;
+  }
+  await writeFile(join(ROD, "api", "_tips.json"), JSON.stringify({ genereret: new Date().toISOString(), kommuner }));
+  console.log(`api/_tips.json: ${n} tips i ${Object.keys(kommuner).length} kommuner`);
+}
+
 async function main() {
   const args = process.argv.slice(2);
+  if (args.includes("--indeks")) return indeks();
   const valg = (navn, std) => { const i = args.indexOf(navn); return i >= 0 ? args.splice(i, 2)[1] : std; };
   const dage = Number(valg("--dage", 14)), til = valg("--til", ""), antalTop = Number(valg("--antal", 8));
   const slugs = args.filter((a) => !a.startsWith("--"));

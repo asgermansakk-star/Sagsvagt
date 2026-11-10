@@ -55,14 +55,14 @@ if ($handling === 'gem') {
     $slut = preg_match('/^\d{4}-\d{2}-\d{2}$/', (string)($d['proeve_slut'] ?? '')) ? $d['proeve_slut'] : null;
     $pris = is_numeric($d['pris'] ?? null) ? max(0, min(100000, (int)$d['pris'])) : null;
     $felter = [$firma, trim(mb_substr((string)($d['kontakt'] ?? ''), 0, 100)), $email, implode(', ', $modtagere), $produkt, implode(',', $kommuner), $ord,
-        $status, $slut, $pris, mb_substr((string)($d['noter'] ?? ''), 0, 4000), empty($d['mail']) ? 0 : 1,
-        preg_match('/^\d{8}$/', (string)($d['cvr'] ?? '')) ? $d['cvr'] : null, er_rens_brancher($d['brancher'] ?? [])];
+        $status, $slut, $pris, mb_substr((string)($d['noter'] ?? ''), 0, 4000), ($d['mail'] ?? 'straks') === 'ingen' ? 0 : 1,
+        preg_match('/^\d{8}$/', (string)($d['cvr'] ?? '')) ? $d['cvr'] : null, er_rens_brancher($d['brancher'] ?? []), ($d['mail'] ?? 'straks') === 'mandag' ? 0 : 1];
     if ($id > 0) {
         $hent($id);
-        $db->prepare('UPDATE erhverv_kunder SET firma = ?, kontakt = ?, email = ?, modtagere = ?, produkt = ?, kommuner = ?, ord = ?, status = ?, proeve_slut = ?, pris = ?, noter = ?, mail = ?, cvr = ?, brancher = ? WHERE id = ?')
+        $db->prepare('UPDATE erhverv_kunder SET firma = ?, kontakt = ?, email = ?, modtagere = ?, produkt = ?, kommuner = ?, ord = ?, status = ?, proeve_slut = ?, pris = ?, noter = ?, mail = ?, cvr = ?, brancher = ?, varsel = ? WHERE id = ?')
             ->execute([...$felter, $id]);
     } else {
-        $db->prepare('INSERT INTO erhverv_kunder (firma, kontakt, email, modtagere, produkt, kommuner, ord, status, proeve_slut, pris, noter, mail, cvr, brancher, oprettet) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
+        $db->prepare('INSERT INTO erhverv_kunder (firma, kontakt, email, modtagere, produkt, kommuner, ord, status, proeve_slut, pris, noter, mail, cvr, brancher, varsel, oprettet) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)')
             ->execute([...$felter, nu()]);
         $id = (int)$db->lastInsertId();
     }
@@ -79,14 +79,17 @@ if ($handling === 'nyt_link') {
 if ($handling === 'forhaand' || $handling === 'proeve') {
     global $K;
     $k = $hent($id); $uge = $mandag();
-    $m = er_mail_til($k, $uge);
-    if (!$m) svar(200, ['mail' => null, 'uge' => $uge]);
+    // Kunder med varsler: den mail, de får næste gang der er nyt (det, de ikke har fået varsel om fra den seneste uge)
+    $varsel = (int)$k['varsel'] ? ['noegler' => er_varsel_noegler($db, $k, false)['kandidater']] : null;
+    if ($varsel) $uge = er_idag();
+    $m = $varsel && !$varsel['noegler'] ? null : er_mail_til($k, $uge, $varsel);
+    if (!$m) svar(200, ['mail' => null, 'uge' => $uge, 'varsel' => (bool)$varsel]);
     if ($handling === 'proeve') {
         [$h, $t] = er_uden_afmeld($m + ['kunde_id' => $id]);
         foreach ($K['admins'] as $til) send_mail($til, '[Prøve] ' . $m['emne'], $h, $t);
         svar(200, ['ok' => true, 'sendt_til' => $K['admins']]);
     }
-    svar(200, ['mail' => $m, 'uge' => $uge, 'modtagere' => er_modtagere($k)]);
+    svar(200, ['mail' => $m, 'uge' => $uge, 'varsel' => (bool)$varsel, 'modtagere' => er_modtagere($k)]);
 }
 
 if ($handling === 'forlaeng') {
