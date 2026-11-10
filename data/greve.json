@@ -367,6 +367,14 @@
    "dato": "2026-11-10",
    "punkter": 9,
    "parser": 3
+  },
+  "ccdc3c9f-0f99-4bfb-a166-64dea1137977": {
+   "lastmod": "2026-11-09",
+   "type": "dagsorden",
+   "udvalg": "Spørgsmål / Svar til Byrådet",
+   "dato": "2026-12-31",
+   "punkter": 1,
+   "parser": 3
   }
  },
  "sager": {
@@ -12728,6 +12736,24 @@
     }
    ],
    "bilag": []
+  },
+  "greve-2026-12-31-spoergsmaal-svar-til-byraadet-1": {
+   "id": "greve-2026-12-31-spoergsmaal-svar-til-byraadet-1",
+   "kommune": "Greve",
+   "udvalg": "Spørgsmål / Svar til Byrådet",
+   "dato": "2026-12-31",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.greve.dk/vis?id=ccdc3c9f-0f99-4bfb-a166-64dea1137977",
+   "hentet": "2026-11-09T23:39:59.024Z",
+   "titel": "Spørgsmål /svar til Byrådet 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Fremstilling\nTil orientering vedlægges spørgsmål og besvarelser (spørgsmål /svar)."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -12760,7 +12786,7 @@
    "tjekket": "2026-11-09"
   },
   "https://dagsordener.greve.dk/Sitemap/ForCommittee?committeeId=688ecb05-2f0d-4b12-ab2b-cf896c2e101b": {
-   "senest": "2026-10-30",
+   "senest": "2026-11-09",
    "tjekket": "2026-11-09"
   },
   "https://dagsordener.greve.dk/Sitemap/ForCommittee?committeeId=dccb2d54-9c39-4274-89c0-36c5365efcb7": {
@@ -12936,7 +12962,7 @@
    "tjekket": "2026-10-22"
   }
  },
- "opdateret": "2026-11-09T12:59:37.374Z",
+ "opdateret": "2026-11-09T23:39:59.025Z",
  "kommune": "Greve",
  "parser": 3
 }

@@ -1628,44 +1628,6 @@ URL:https://www.kk.dk/dagsordener-og-referater/B%C3%B8rne-%20og%20Ungdomsu
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:20260811-oekonomiudvalget@sagsvagt.dk
-DTSTAMP:20260811T000000Z
-DTSTART;VALUE=DATE:20260811
-DTEND;VALUE=DATE:20260812
-SUMMARY:Møde: Økonomiudvalget
-DESCRIPTION:31 punkter på dagsordenen.\n• Økonomiudvalgets budgetnotat
- er til budget 2027\n• Københavns Kommunes finansielle risikopolitik og
-  politik for ansvarlige investeringer 2026\n• Revisionsrapport om Risik
- obaseret Ledelsestilsyn for Økonomiforvaltning\, 2026\n• Forslag til l
- okalplan Kommunehospitalet II og kommuneplantillæg\, Indre By\n• Endel
- ig vedtagelse af lokalplan Provstevejkvarteret tillæg 1\, Bispebjerg\n
- • Endelig vedtagelse af lokalplan Ny Ellebjerg-området tillæg 3\, Val
- by\n• Endelig vedtagelse af lokalplan Strandboulevarden 130\, Østerbro
- \n• Forandringsplan for Husum Nord\, Brønshøj-Husum\n• Endelig vedt
- agelse af lokalplan Nordre Fasanvej Nord\, Bispebjerg\n• Endelig vedtag
- else af Tillæg 2026 til Spildevandsplan\n• Optagelse af internt lån i
-  forbindelse med merforbrug på Østerbro Stadion\n• Håndtering af med
- lemsforslag om anonymisering af ansøgninger som krav i kommende udbud\n
- • Københavns Kommunes Kønsligestillingsredegørelse 2026\, herunder a
- frapportering på kommunens personalerettede ligestillingsmåltal\n• Fo
- rnyelse af Københavns Kommunes internationale strategi\n• Håndtering 
- af medlemsforslag om indsatser i venskabsbyaftalen med Kyiv\n• Håndter
- ing af medlemsforslag om sanering i politikker og strategier m.m. i Økon
- omiforvaltningen\n• Status på Mangfoldige Børnefællesskaber\n• Eva
- luering af Økonomiudvalgets mødeafvikling 2026\n• Annullering af ni a
- nlægsprojekter på Klima-\, Miljø- og Teknikudvalgets område\n• Ans
- øgning om lån af tilskudsdeklarationsmidlerne til A/B Andelshuset Møll
- e Alle\, Valby\n• Københavns Kommunes Kontrolindsats 2025\n• Indkomn
- e forslag i 2025 til ny byrumskunst\n• Godkendelse af Kultur-\, Fritids
- - og Borgerserviceudvalgets takstkatalog 2027\n• Ændrede Retningslinje
- r for støtte til folkeoplysning i København\n\nDagsordenen: https://www
- .kk.dk/dagsordener-og-referater/%C3%98konomiudvalget/m%C3%B8de-11082026/r
- eferat
-URL:https://www.kk.dk/dagsordener-og-referater/%C3%98konomiudvalget/m%C3%B
- 8de-11082026/referat
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
 UID:20261020-vesterbro-lokaludvalg@sagsvagt.dk
 DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20261020
@@ -2044,7 +2006,7 @@ DTSTAMP:20261105T000000Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Møde: Borgerrepræsentationen
-DESCRIPTION:36 punkter på dagsordenen.\n• Tredje anlægsoversigt 2026\n
+DESCRIPTION:38 punkter på dagsordenen.\n• Tredje anlægsoversigt 2026\n
  • Bevillingsmæssige ændringer og anlægsbevillinger 2025\, 3. sag\n
  • Fra halvårlig til årlig opkrævning af ejendomsbidrag\n• Forslag 
  til tillæg 4 til lokalplan 448-1\,2&3 Ny Ellebjerg-området (København 
@@ -2071,13 +2033,13 @@ DESCRIPTION:36 punkter på dagsordenen.\n• Tredje anlægsoversigt 2026\n
  orslag om stop for reklamer for særligt klimabelastende transport på ko
  mmunens reklameflader\n• Medlemsforslag om at modvirke forsinkelser ved
   vejarbejde\n• Medlemsforslag om at åbne varmtvandsbassinet på Fussin
- gvej for foreninger i weekenden\n• Medlemsforslag om snyd med handicapp
- arkeringsskilte\n• Medlemsforslag om omdisponering af midler til andet 
- grønt end træer\n• Medlemsforslag om valgfri ældremad\n\nDagsordenen
- : https://www.kk.dk/dagsordener-og-referater/Borgerrepr%C3%A6sentationen/
- m%C3%B8de-05112026/dagsorden
+ gsvej for foreninger i weekenden\n• Medlemsforslag om snyd med handicap
+ parkeringsskilte\n• Medlemsforslag om omdisponering af midler til andet
+  grønt end træer\n• Medlemsforslag om valgfri ældremad\n\nDagsordene
+ n: https://www.kk.dk/dagsordener-og-referater/Borgerrepr%C3%A6sentationen
+ /m%C3%B8de-05112026/referat
 URL:https://www.kk.dk/dagsordener-og-referater/Borgerrepr%C3%A6sentationen
- /m%C3%B8de-05112026/dagsorden
+ /m%C3%B8de-05112026/referat
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
@@ -2194,6 +2156,23 @@ DESCRIPTION:35 punkter på dagsordenen.\n• Forundersøgelsen "Flere gode
  ner-og-referater/Indre%20By%20Lokaludvalg/m%C3%B8de-12112026/dagsorden
 URL:https://www.kk.dk/dagsordener-og-referater/Indre%20By%20Lokaludvalg/m%
  C3%B8de-12112026/dagsorden
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20261102-koebenhavns-nattelivsudvalg@sagsvagt.dk
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Møde: Københavns Nattelivsudvalg
+DESCRIPTION:9 punkter på dagsordenen.\n• Godkendelse af mødeplan for 2
+ 027\n• Temadrøftelse: Et trygt natteliv i København\n• Orientering 
+ om kultur-/frizoneprojektet i København\n• Orientering om arbejdet med
+  lokale indsatsgrupper i 2026\n• Orientering om Charter for er natteliv
+  uden diskrimination i 2026\n\nDagsordenen: https://www.kk.dk/dagsordener
+ -og-referater/K%C3%B8benhavns%20Nattelivsudvalg/m%C3%B8de-02112026/refera
+ t
+URL:https://www.kk.dk/dagsordener-og-referater/K%C3%B8benhavns%20Nattelivs
+ udvalg/m%C3%B8de-02112026/referat
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

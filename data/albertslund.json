@@ -490,6 +490,14 @@
    "dato": "2026-10-31",
    "punkter": 9,
    "parser": 3
+  },
+  "eb65e620-355d-42b3-8987-c646ad8d4503": {
+   "lastmod": "2026-11-09",
+   "type": "dagsorden",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-10",
+   "punkter": 1,
+   "parser": 3
   }
  },
  "sager": {
@@ -9936,17 +9944,25 @@
    "dato": "2026-11-10",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=40631a8d-acfc-4e55-b582-d5768e373171",
-   "hentet": "2026-11-06T12:43:43.281Z",
-   "titel": "Godkendelse af dagsorden",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=eb65e620-355d-42b3-8987-c646ad8d4503",
+   "hentet": "2026-11-09T23:37:13.909Z",
+   "titel": "KB - Tina Bodholdt-Nielsen (O) søger om orlov",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "X\n\nSupplerende\nsagsfremstilling"
+    },
+    {
      "titel": "Indstilling",
-     "tekst": "Borgmesteren indstiller,\n1. at dagsordenen godkendes og\n2. at indkaldelse af stedfortræder godkendes."
+     "tekst": "Borgmesteren indstiller,\n1. at Tina Bodholdt-Nielsens ansøgning om orlov godkendes,\n2. at John Bodholdt-Nielsen godkendes som stedfortræder i de nævnte udvalg og poster,\nog\n3. at Kommunalbestyrelsen udpeger en midlertidig personlig stedfortræder for Ulla\nNielsen (A) til Børne- og Ungeudvalget."
+    },
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsesmedlem Tina Bodholdt-Nielsen (O) søger om orlov."
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Tina Bodholdt-Nielsen (O) har meldt afbud. John Bodholdt-Nielsen (O) er indkaldt som\nstedfortræder."
+     "tekst": "Tina Bodholdt-Nielsen (O) søger om orlov fra Kommunalbestyrelsen fra den 10. november\n2026 og 3 måneder af helbredsmæssige årsager.\nI orlovsperioden indtræder 1. stedfortræder John Bodholdt-Nielsen Dansk Folkeparti, og\novertager følgende af Tina Bodholdt-Nielsens poster:\nØkonomiudvalget\nÆldre- og Sundhedsudvalget\nPosten som formand i Børne- og Ungeudvalget stedfortrædes af næstformanden Hediye Temiz\n(B), mens Ulla Nielsen (A) indtræder i udvalget som personlig stedfortræder for Tina B.\nNielsen.\nKommunalbestyrelsen skal udpege en midlertidig personlig stedfortræder for Ulla Nielsen (A)\n\nfra flertalsgruppen under Tina B. Nielsens fravær."
     }
    ],
    "bilag": []
@@ -10374,7 +10390,7 @@
    "tjekket": "2026-10-12"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=a57a67e3-8894-4dca-b6d1-4986fb2b038b": {
-   "senest": "2026-11-06",
+   "senest": "2026-11-09",
    "tjekket": "2026-11-09"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=42e9ba08-dbda-4e5e-86b3-c79aa487bc42": {
@@ -10486,7 +10502,7 @@
    "tjekket": "2026-10-12"
   }
  },
- "opdateret": "2026-11-09T12:56:37.119Z",
+ "opdateret": "2026-11-09T23:37:13.910Z",
  "kommune": "Albertslund",
  "parser": 3
 }

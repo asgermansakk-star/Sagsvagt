@@ -479,6 +479,38 @@
    "dato": "2026-11-17",
    "punkter": 9,
    "parser": 3
+  },
+  "e462d272-8321-4eaf-a82a-e5ed93be360d": {
+   "lastmod": "2026-11-09",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-09",
+   "punkter": 2,
+   "parser": 3
+  },
+  "fc5fa00d-0a30-48f2-afd9-583da96c04d3": {
+   "lastmod": "2026-11-09",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-09",
+   "punkter": 1,
+   "parser": 3
+  },
+  "8b15505c-f45e-4896-ba31-07dcdf57034f": {
+   "lastmod": "2026-11-09",
+   "type": "referat",
+   "udvalg": "Udvalget for Land og By, Teknik og Miljø",
+   "dato": "2026-11-09",
+   "punkter": 1,
+   "parser": 3
+  },
+  "2c760119-e7e6-4ae4-861d-5fb84e78a530": {
+   "lastmod": "2026-11-09",
+   "type": "referat",
+   "udvalg": "Sport-, Kultur- og Fritidsudvalget",
+   "dato": "2026-11-09",
+   "punkter": 1,
+   "parser": 3
   }
  },
  "sager": {
@@ -11672,15 +11704,15 @@
    "kommune": "Ringsted",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=c1abbae4-a879-4816-b2d2-121882ae1dfe",
-   "hentet": "2026-11-06T12:47:55.484Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fc5fa00d-0a30-48f2-afd9-583da96c04d3",
+   "hentet": "2026-11-09T23:40:55.721Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold"
+     "titel": "Beslutning",
+     "tekst": "Godkendt med bemærkning om, at punkt 3 behandles før punkt 2.\n\nIndhold"
     }
    ],
    "bilag": []
@@ -11728,12 +11760,17 @@
    "kommune": "Ringsted",
    "udvalg": "Udvalget for Land og By, Teknik og Miljø",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=47dd8bab-316c-49f6-802f-a9a8c4c7d4ad",
-   "hentet": "2026-11-03T14:53:48.523Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=8b15505c-f45e-4896-ba31-07dcdf57034f",
+   "hentet": "2026-11-09T23:41:04.214Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen er godkendt med den ændring at punkt 3 rykkes op som punkt 2."
+    }
+   ],
    "bilag": []
   },
   "ringsted-2026-11-09-sport-kultur-og-fritidsudvalget-1": {
@@ -11741,15 +11778,15 @@
    "kommune": "Ringsted",
    "udvalg": "Sport-, Kultur- og Fritidsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=1d923499-492e-4d80-bb59-ec5d18f835b0",
-   "hentet": "2026-11-03T14:53:56.647Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=2c760119-e7e6-4ae4-861d-5fb84e78a530",
+   "hentet": "2026-11-09T23:41:10.419Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold"
+     "titel": "Beslutning",
+     "tekst": "Godkendt med bemærkning om, at punkt 3 behandles før punkt 2.\n\nIndhold"
     }
    ],
    "bilag": []
@@ -12697,35 +12734,35 @@
    "kommune": "Ringsted",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=c1abbae4-a879-4816-b2d2-121882ae1dfe",
-   "hentet": "2026-11-06T12:47:55.484Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=e462d272-8321-4eaf-a82a-e5ed93be360d",
+   "hentet": "2026-11-09T23:40:49.348Z",
    "titel": "Beslutning om bevilling til manglende lønfremskrivning af lønbudgetter",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales godkendt.\n\nIndhold\n\nom høring\n\nOrientering\n\nx\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
     {
      "titel": "Resumé",
      "tekst": "Lønbudgetterne for 2027 til 2030 er ikke fremskrevet korrekt i forhold KLs vejledende\nlønfremskrivning. Lønbudgetterne i det vedtagne budget er derfor ikke retvisende. I sagen skal\nder tages stilling til, om de manglende lønbudgetter skal bevilges samt hvordan det finansieres."
     },
     {
      "titel": "Indstilling",
-     "tekst": "Direktionen indstiller,\n1. at de manglende lønbudgetter på samlet 24,8 mio. kr. i 2027 og 33,4 mio. kr. i 2028, 2029\nog 2030 bevilges i henhold til bilag 1, tabel 3. Bevillingen finansieres af kassen og\nudlignes i forbindelse med regnskabsaflæggelsen for 2026 på baggrund af et forventet\nmindreforbrug.\n2. at driftsbudgetterne til 1.000 årsjubilæet, løft af undervisningsfaciliteter og digitale\ninfoskærme omplaceres fra drift til anlæg\na. der lægges driftsbudgetter i kassen svarende til 25,4 mio. kr. i 2027 for at overholde\nservicerammen.\nb. Der gives anlægsbevilling vedrørende 2027 på 12,2 mio. kr. til Ringsteds 1.000årsjubilæum og rådighedsbeløb på 12,2 mio. kr. til Ringsteds 1.000-årsjubilæum,\nder finansieres af kassen.\nc. Der gives anlægsbevilling vedrørende 2027 på 10 mio. kr. til Løft af\nundervisningsfaciliteter og rådighedsbeløb på 10 mio. kr. til Løft af\nundervisningsfaciliteter der finansieres af kassen.\nd. Der gives anlægsbevilling vedrørende 2027 på 3,2 mio. kr. til digitale infoskærme\nog rådighedsbeløb på 3,2 mio. kr. til digitale infoskærme, der finansieres af kassen.\n3. at de manglende lønbudgetter fra 2028 og frem indgår i råderumsberegningen i\nbudgetprocessen for 2028.\nSagsgang:\nBY"
-    },
-    {
-     "titel": "Beslutning",
-     "tekst": "om høring\nOrientering\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU\n\nx\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+     "tekst": "Direktionen indstiller,\n1. at de manglende lønbudgetter på samlet 24,8 mio. kr. i 2027 og 33,4 mio. kr. i 2028, 2029\nog 2030 bevilges i henhold til bilag 1, tabel 3. Bevillingen finansieres af kassen og\nudlignes i forbindelse med regnskabsaflæggelsen for 2026 på baggrund af et forventet\nmindreforbrug.\n2. at driftsbudgetterne til 1.000 årsjubilæet, løft af undervisningsfaciliteter og digitale\ninfoskærme omplaceres fra drift til anlæg\na. der lægges driftsbudgetter i kassen svarende til 25,4 mio. kr. i 2027 for at overholde\nservicerammen.\nb. Der gives anlægsbevilling vedrørende 2027 på 12,2 mio. kr. til Ringsteds 1.000årsjubilæum og rådighedsbeløb på 12,2 mio. kr. til Ringsteds 1.000-årsjubilæum,\nder finansieres af kassen.\nc. Der gives anlægsbevilling vedrørende 2027 på 10 mio. kr. til Løft af\nundervisningsfaciliteter og rådighedsbeløb på 10 mio. kr. til Løft af\nundervisningsfaciliteter der finansieres af kassen.\nd. Der gives anlægsbevilling vedrørende 2027 på 3,2 mio. kr. til digitale infoskærme\nog rådighedsbeløb på 3,2 mio. kr. til digitale infoskærme, der finansieres af kassen.\n3. at de manglende lønbudgetter fra 2028 og frem indgår i råderumsberegningen i\nbudgetprocessen for 2028.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Lønbudgetterne for 2027 til 2030 er ikke fremskrevet korrekt i forhold til KL’s vejledende\nlønfremskrivning. Der er alene fremskrevet med de 1,16% til basis lønfremskrivning, mens\nøvrige organisationsspecifikke fremskrivninger ikke er medtaget. Se bilag 1.\nI de generelle bemærkninger, som er forelagt for direktion og Byråd, fremgår den korrekte\nlønfremskrivning. Den er dog som beskrevet ikke medtaget i det faktisk vedtagne budget, og\nhar ikke indgået i råderumsberegningen ved budgetforhandlingerne for budget 2027.\nDen manglende fremskrivning udgør 24,8 mio. kr. i 2027 og 33,4 mio. kr. i 2028 og frem, idet\nder er fuld årsvirkning i 2028. Der skal således finansieres 8,6 mio. kr. mere i 2028 end i 2027.\nDet vurderes, at der i regnskabet for 2026 forventes at være et mindreforbrug på ca. 50 mio. kr.\nefter overførsel af uforbrugte anlæg.\nI likviditetsopgørelsen pr. 30/9 2026 blev opgjort udisponeret likviditet på 137,2 mio. kr. Heri er\nindregnet afdrag på lån i 2027.\nHvis de manglende lønmidler bevilges, vil Ringsted Kommune ikke leve op til aftalen med KL i\nforhold til niveauet af serviceudgifter. Der skal derfor ske tilsvarende reduktioner i\nservicebudgettet, hvis Ringsted Kommune dels skal leve op til vores del af aftalen samt sikre\nos mod en eventuel individuel og kollektiv sanktion fra regeringen, hvis vi overskrider\nservicerammen. Der er ikke sanktioner for overskridelse af servicerammen, for den enkelte\nkommune, hvis kommunerne samlet set overholder servicerammen.\nEn gennemgang af budgetaftalen viser, at der er mulighed for at foretage en teknisk\nomplacering af nogle af de aftalte aktiviteter fra serviceudgifter til anlæg i 2027. Dette betyder,\nat budgetaftalen fastholdes, og de aftalte aktiviteter gennemføres som planlagt. Der kan\nkonkret peges på tre poster:\nRingsteds 1.000-årsjubilæum på 14,0 mio. kr.\nLøft af undervisningsfaciliteter på 10,0 mio. kr.\nDigitale infoskærme på 3,2 mio. kr.\nFor projekterne gælder, at der er tale om engangsudgifter i 2027, og at de har karakter af\nanlæg. Der er således alene tale om en teknisk ændring af udgifternes budgetmæssige\n\nplacering. Der er disponeret 1,8 mio. kr. af budgettet til 1.000-årsjubilæet, hvorfor der kan\nomplaceres 12,2 mio. kr. til anlæg. De disponerede midler er anvendt til ansættelse af en\nprojektleder.\n\nPolitisk handlerum\nHvis de manglende lønbudgetter ikke bevilges, vil det være nødvendigt at tilpasse ved\npersonalereduktioner.\nAlternativt kan Byrådet bestille forslag til kompenserende reduktioner inden for servicerammen."
+     "tekst": "Lønbudgetterne for 2027 til 2030 er ikke fremskrevet korrekt i forhold til KL’s vejledende\nlønfremskrivning. Der er alene fremskrevet med de 1,16% til basis lønfremskrivning, mens\nøvrige organisationsspecifikke fremskrivninger ikke er medtaget. Se bilag 1.\nI de generelle bemærkninger, som er forelagt for direktion og Byråd, fremgår den korrekte\nlønfremskrivning. Den er dog som beskrevet ikke medtaget i det faktisk vedtagne budget, og\nhar ikke indgået i råderumsberegningen ved budgetforhandlingerne for budget 2027.\nDen manglende fremskrivning udgør 24,8 mio. kr. i 2027 og 33,4 mio. kr. i 2028 og frem, idet\nder er fuld årsvirkning i 2028. Der skal således finansieres 8,6 mio. kr. mere i 2028 end i 2027.\nDet vurderes, at der i regnskabet for 2026 forventes at være et mindreforbrug på ca. 50 mio. kr.\nefter overførsel af uforbrugte anlæg.\nI likviditetsopgørelsen pr. 30/9 2026 blev opgjort udisponeret likviditet på 137,2 mio. kr. Heri er\nindregnet afdrag på lån i 2027.\nHvis de manglende lønmidler bevilges, vil Ringsted Kommune ikke leve op til aftalen med KL i\nforhold til niveauet af serviceudgifter. Der skal derfor ske tilsvarende reduktioner i\nservicebudgettet, hvis Ringsted Kommune dels skal leve op til vores del af aftalen samt sikre\nos mod en eventuel individuel og kollektiv sanktion fra regeringen, hvis vi overskrider\nservicerammen. Der er ikke sanktioner for overskridelse af servicerammen, for den enkelte\nkommune, hvis kommunerne samlet set overholder servicerammen.\nEn gennemgang af budgetaftalen viser, at der er mulighed for at foretage en teknisk\nomplacering af nogle af de aftalte aktiviteter fra serviceudgifter til anlæg i 2027. Dette betyder,\nat budgetaftalen fastholdes, og de aftalte aktiviteter gennemføres som planlagt. Der kan\nkonkret peges på tre poster:\n\nRingsteds 1.000-årsjubilæum på 14,0 mio. kr.\nLøft af undervisningsfaciliteter på 10,0 mio. kr.\nDigitale infoskærme på 3,2 mio. kr.\nFor projekterne gælder, at der er tale om engangsudgifter i 2027, og at de har karakter af\nanlæg. Der er således alene tale om en teknisk ændring af udgifternes budgetmæssige\nplacering. Der er disponeret 1,8 mio. kr. af budgettet til 1.000-årsjubilæet, hvorfor der kan\nomplaceres 12,2 mio. kr. til anlæg. De disponerede midler er anvendt til ansættelse af en\nprojektleder.\n\nPolitisk handlerum\nHvis de manglende lønbudgetter ikke bevilges, vil det være nødvendigt at tilpasse ved\npersonalereduktioner.\nAlternativt kan Byrådet bestille forslag til kompenserende reduktioner inden for servicerammen."
     },
     {
      "titel": "Vurdering",
-     "tekst": "Administrationen vurderer, at det er nødvendigt at bevilge de manglende lønmidler, så\nRingsted Kommune kan levere den forudsatte service i 2027. Ringsted Kommune har en sund\nøkonomi, og en betydelig fri likviditet. Der vil efter reguleringen fortsat være en betydelig fri\nlikviditet, hvorfor Ringsted Kommunes økonomiske situation fortsat er stabil.\nAdministrationen vurderer, at de tre projekter der foreslås overført til anlæg kan ses som\ntidsafgrænsede og derved følger kommunens kontinuitetsprincip i forhold til anlægsprojekter.\nI forhold til 1.000-årsjubilæet kan henvises til, at Vejle Kommune i forbindelse med byens 700års jubilæum i 2027 har afsat 10 mio. kr. til en anlægspulje samt driftsmidler til planlægning på\nhenholdsvis 1 mio. kr. i 2026 og 2,3 mio. kr. i 2027. Det er samme model, der foreslås i sagen,\nhvor de 1,8 mio. kr., der er disponeret til en ansættelse fra nu og ind i 2027 og 2028 fastholdes\nsom drift.\nEfter budget- og regnskabsreglerne kan der gives samlede anlægsrammebevillinger til mindre,\nnært beslægtede projekter.\nI forhold til styregruppens kompetence, behandlede byrådet den 22. juni 2026 organiseringen\naf Ringsteds 1000-års jubilæum, herunder styregruppens rolle og ansvar. Der foreligger\nsåledes et grundlag for den organisatoriske og strategiske styring. Det fremgår specifikt af\nbudgetaftalen, at det er Byrådet, der skal træffe beslutning om den endelige udmøntning. Det\ntaler for, at styregruppen kan indstille konkrete aktiviteter, men ikke uden videre disponere over\nden samlede pulje uanset om det er service- eller anlægsmidler. Med den foreslåede ændring\nskal Byrådet således frigive en anlægsbevilling i stedet for at godkende disponering af et\ndriftsbudget uagtet at der er tale om samme aktiviteter.\n\nInddragelse og høring\nIngen"
+     "tekst": "Administrationen vurderer, at det er nødvendigt at bevilge de manglende lønmidler, så\nRingsted Kommune kan levere den forudsatte service i 2027. Ringsted Kommune har en sund\nøkonomi, og en betydelig fri likviditet. Der vil efter reguleringen fortsat være en betydelig fri\nlikviditet, hvorfor Ringsted Kommunes økonomiske situation fortsat er stabil.\nAdministrationen vurderer, at de tre projekter der foreslås overført til anlæg kan ses som\ntidsafgrænsede og derved følger kommunens kontinuitetsprincip i forhold til anlægsprojekter.\nI forhold til 1.000-årsjubilæet kan henvises til, at Vejle Kommune i forbindelse med byens 700års jubilæum i 2027 har afsat 10 mio. kr. til en anlægspulje samt driftsmidler til planlægning på\nhenholdsvis 1 mio. kr. i 2026 og 2,3 mio. kr. i 2027. Det er samme model, der foreslås i sagen,\nhvor de 1,8 mio. kr., der er disponeret til en ansættelse fra nu og ind i 2027 og 2028 fastholdes\nsom drift.\nEfter budget- og regnskabsreglerne kan der gives samlede anlægsrammebevillinger til mindre,\nnært beslægtede projekter.\nI forhold til styregruppens kompetence, behandlede byrådet den 22. juni 2026 organiseringen\naf Ringsteds 1000-års jubilæum, herunder styregruppens rolle og ansvar. Der foreligger\nsåledes et grundlag for den organisatoriske og strategiske styring. Det fremgår specifikt af\nbudgetaftalen, at det er Byrådet, der skal træffe beslutning om den endelige udmøntning. Det\ntaler for, at styregruppen kan indstille konkrete aktiviteter, men ikke uden videre disponere over\nden samlede pulje uanset om det er service- eller anlægsmidler. Med den foreslåede ændring\nskal Byrådet således frigive en anlægsbevilling i stedet for at godkende disponering af et\ndriftsbudget uagtet at der er tale om samme aktiviteter.\n\nInddragelse og høring\n\nIngen"
     },
     {
      "titel": "Økonomi",
-     "tekst": "Hvis de manglende lønbudgetter bevilges, vil det medføre et kassetræk på 24,8 mio. kr.\nDer forventes et overskud i regnskab 2026 (ud over overførte anlæg) på ca. 50 mio. kr., hvorfor\n\ndette vil kunne dække kassetrækket. Dette sammenholdt med at fri likviditet er opgjort pr. 30.\nseptember 2026 til 137,2 mio. kr. inklusiv planlagt gældsafvikling i 2027 jf. ØK 2. november\n2026 pkt. 10, gør at der vil være tilstrækkelig likviditet til det planlagte kassetræk.\nVed at overføre dele af 1.000-årsjuiblæet, løft af undervisningsfaciliteter og digitale infoskærme\nfra drift til anlæg - i alt 25,4 mio. kr. - sikres, at vi stadig lever op til vores andel af den samlede\nserviceramme.\nDe ekstra lønudgifter vil blive indregnet i råderummet for budget 2028, og vil derfor indgå i\nbudgetforhandlingerne."
+     "tekst": "Hvis de manglende lønbudgetter bevilges, vil det medføre et kassetræk på 24,8 mio. kr.\nDer forventes et overskud i regnskab 2026 (ud over overførte anlæg) på ca. 50 mio. kr., hvorfor\ndette vil kunne dække kassetrækket. Dette sammenholdt med at fri likviditet er opgjort pr. 30.\nseptember 2026 til 137,2 mio. kr. inklusiv planlagt gældsafvikling i 2027 jf. ØK 2. november\n2026 pkt. 10, gør at der vil være tilstrækkelig likviditet til det planlagte kassetræk.\nVed at overføre dele af 1.000-årsjuiblæet, løft af undervisningsfaciliteter og digitale infoskærme\nfra drift til anlæg - i alt 25,4 mio. kr. - sikres, at vi stadig lever op til vores andel af den samlede\nserviceramme.\nDe ekstra lønudgifter vil blive indregnet i råderummet for budget 2028, og vil derfor indgå i\nbudgetforhandlingerne."
     }
    ],
    "bilag": []
@@ -14781,7 +14818,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=7913d7a4-3a1f-41c9-bb69-859e019a94a6": {
-   "senest": "2026-11-06",
+   "senest": "2026-11-09",
    "tjekket": "2026-11-09"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=1f44f984-c289-4eee-a34a-161f838ee3e2": {
@@ -14805,7 +14842,7 @@
    "tjekket": "2026-11-09"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=ced7a1ff-326a-48ff-ba4a-d1e5831f675d": {
-   "senest": "2026-11-06",
+   "senest": "2026-11-09",
    "tjekket": "2026-11-09"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=274ff71f-7137-4564-8cdc-0fe0c43dd82a": {
@@ -14910,6 +14947,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-09T13:00:49.140Z",
+ "opdateret": "2026-11-09T23:41:10.420Z",
  "kommune": "Ringsted"
 }

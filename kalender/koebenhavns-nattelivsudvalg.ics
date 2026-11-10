@@ -6,4 +6,21 @@ METHOD:PUBLISH
 X-WR-CALNAME:Sagsvagt: Københavns Nattelivsudvalg
 X-WR-TIMEZONE:Europe/Copenhagen
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:20261102-koebenhavns-nattelivsudvalg@sagsvagt.dk
+DTSTAMP:20261102T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Møde: Københavns Nattelivsudvalg
+DESCRIPTION:9 punkter på dagsordenen.\n• Godkendelse af mødeplan for 2
+ 027\n• Temadrøftelse: Et trygt natteliv i København\n• Orientering 
+ om kultur-/frizoneprojektet i København\n• Orientering om arbejdet med
+  lokale indsatsgrupper i 2026\n• Orientering om Charter for er natteliv
+  uden diskrimination i 2026\n\nDagsordenen: https://www.kk.dk/dagsordener
+ -og-referater/K%C3%B8benhavns%20Nattelivsudvalg/m%C3%B8de-02112026/refera
+ t
+URL:https://www.kk.dk/dagsordener-og-referater/K%C3%B8benhavns%20Nattelivs
+ udvalg/m%C3%B8de-02112026/referat
+TRANSP:TRANSPARENT
+END:VEVENT
 END:VCALENDAR
