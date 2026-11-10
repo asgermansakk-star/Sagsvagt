@@ -447,6 +447,22 @@
    "dato": "2026-11-16",
    "punkter": 14,
    "parser": 3
+  },
+  "3dfa93d3-9e2d-4262-a637-156e23c087b0": {
+   "lastmod": "2026-11-10",
+   "type": "referat",
+   "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
+   "dato": "2026-11-09",
+   "punkter": 10,
+   "parser": 3
+  },
+  "4b4c8397-36a7-4594-84fd-03833a005042": {
+   "lastmod": "2026-11-05",
+   "type": "dagsorden",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "punkter": 8,
+   "parser": 3
   }
  },
  "sager": {
@@ -13760,12 +13776,17 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "aabenraa-2026-11-09-arbejdsmarkeds-og-uddannelsesudvalget-2": {
@@ -13773,10 +13794,10 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Godkendelse af bevillingskontrol pr. 30. september 2026",
    "afsnit": [
     {
@@ -13786,6 +13807,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Jobcenter og Borgerservice indstiller,\nat omplaceringer inden for udvalgets egen bevillingsramme i 2026, jf. ovenstående tabel\n1, godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -13795,10 +13820,10 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Drøftelse af udkast til Beskæftigelsespolitik 2027-30",
    "afsnit": [
     {
@@ -13808,6 +13833,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Jobcenter og Borgerservice indstiller,\nat Beskæftigelsespolitik 2027-30 drøftes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -13817,10 +13846,10 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Drøftelse af udkast til Fremtidens Borgerservice 2027-2030 - strategisk udviklingsplan",
    "afsnit": [
     {
@@ -13830,6 +13859,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Jobcenter og Borgerservice indstiller,\nat Arbejdsmarkeds- og Uddannelsesudvalget drøfter udkast til Fremtidens Borgerservice\n2027-2030 – strategisk udviklingsplan."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -13839,10 +13872,10 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Orientering om status på arbejdet med uddannelsesområdet",
    "afsnit": [
     {
@@ -13852,6 +13885,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Jobcenter og Borgerservice indstiller,\nat Arbejdsmarkeds- og Uddannelsesudvalget tager orienteringen om status på arbejdet\nmed uddannelsesområdet til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -13861,10 +13898,10 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Orientering om aftale om Ungeløftet - flere unge i arbejde og forpligtende fællesskaber",
    "afsnit": [
     {
@@ -13874,6 +13911,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Jobcenter og Borgerservice indstiller,\nat orientering om Aftale om Ungeløftet – flere unge i arbejde og forpligtende fællesskaber\ntages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -13883,10 +13924,10 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Orientering om proces for slutevaluering af Velfærdsaftalen",
    "afsnit": [
     {
@@ -13896,6 +13937,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Jobcenter og Borgerservice indstiller,\nat Arbejdsmarkeds- og Uddannelsesudvalget tager orienteringen om proces for\nslutevaluering af Velfærdsaftalen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -13905,10 +13950,10 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Orientering om praksis for byrådsmedlemmer med bemyndigelse til at foretage vielser",
    "afsnit": [
     {
@@ -13918,6 +13963,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Jobcenter og Borgerservice indstiller,\nat orientering om praksis for byrådsmedlemmer med bemyndigelse til at foretage vielser\ntages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -13927,15 +13976,19 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Orientering fra formanden og forvaltningen",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Ny aftale om Job Sønderjylland og orientering fra mødet 21. oktober i den politiske\nstyregruppe Job Sønderjylland.\nDialogforum for udsatte 3. november"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -13945,15 +13998,19 @@
    "kommune": "Aabenraa",
    "udvalg": "Arbejdsmarkeds- og Uddannelsesudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.aabenraa.dk/vis?id=d2855af2-4531-4808-8b2a-5221cb0bc2e0",
-   "hentet": "2026-11-04T12:15:18.592Z",
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=3dfa93d3-9e2d-4262-a637-156e23c087b0",
+   "hentet": "2026-11-10T12:54:07.833Z",
    "titel": "Underskriftsside",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "For at godkende beslutningsprotokollen skal hvert medlem underskrive ved at trykke på\n”Godkend”."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -14538,12 +14595,184 @@
    "titel": "Evt",
    "afsnit": [],
    "bilag": []
+  },
+  "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-1": {
+   "id": "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-1",
+   "kommune": "Aabenraa",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=4b4c8397-36a7-4594-84fd-03833a005042",
+   "hentet": "2026-11-10T12:54:15.396Z",
+   "titel": "Udvalgets baggrund, formål og opgaver",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalgsformanden byder velkommen og introducerer udvalgets medlemmer til baggrunden for\nByrådets beslutning om nedsættelsen af udvalget, dets formål samt de opgaver, som udvalget\nskal varetage med afsæt i det godkendte kommissorium.\nKommissorium for § 17, stk. 4-udvalget vedrørende markvanding og vandindvinding for\nprimære erhverv i Aabenraa Kommune er vedlagt som bilag."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Byråds- og direktionssekretariatet indstiller,\nat introduktionen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-2": {
+   "id": "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-2",
+   "kommune": "Aabenraa",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=4b4c8397-36a7-4594-84fd-03833a005042",
+   "hentet": "2026-11-10T12:54:15.396Z",
+   "titel": "Udvalgets sammensætning",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalgsformanden introducerer til udvalgets sammensætning. Udvalget er sammensat,\njævnfør kommissoriet. Formanden for udvalget er udpeget af Byrådet, mens formanden\nudpeger den endelige deltagerkreds. Udvalget består af i alt 8 medlemmer:\n\nEivind Underbjerg Hansen (V), formand og repræsentant for Aabenraa Byråd\nKurt Asmussen (S), repræsentant for Aabenraa Byråd\nStig Grønvold, Vand-Schmidt\nGunnar Kloppenborg-Skrumsager, Danske Vandværker\nPer Østergård Nielsen, Vandrådet i Aabenraa Kommune\nBritt Bjerre Paulsen, Spiras\nNikolaj Schulz, Spiras\nLouise H. Riemann, LHN\n\nUdvalget sekretariatsbetjenes af Byråds- og Direktionssekretariatet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Byråds- og direktionssekretariatet indstiller,\nat introduktionen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-3": {
+   "id": "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-3",
+   "kommune": "Aabenraa",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=4b4c8397-36a7-4594-84fd-03833a005042",
+   "hentet": "2026-11-10T12:54:15.396Z",
+   "titel": "Udvalgets rammer og roller",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget introduceres til de overordnede formelle rammer og roller, herunder:\n- at udvalget skal aflevere anbefalinger senest med udgangen af juli 2027 med mulighed\nfor forlængelse af fristen med op til tre måneder.\n- at der ikke er tilknyttet bevillingsmæssige ressourcer udover til kortvarig ekstern\nkonsulentbistand op til 75.000 kroner.\n- regler om tavshedspligt, fortrolighed og håndtering af oplysninger i forbindelse med\nudvalgsarbejdet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Byråds- og direktionssekretariatet indstiller,\nat introduktionen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-4": {
+   "id": "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-4",
+   "kommune": "Aabenraa",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=4b4c8397-36a7-4594-84fd-03833a005042",
+   "hentet": "2026-11-10T12:54:15.396Z",
+   "titel": "Foreløbig proces og tidsplan",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalgsformanden rammesætter den foreløbige proces og tidsplan, herunder:\n\nat udvalget skal aflevere sine anbefalinger senest med udgangen af juli 2027.\nat der lægges op til, at udvalget mødes i alt 5 gange, og at hvert møde tilrettelægges ud\nfra et konkret emne.\nat der planlægges efter et afsluttende udvalgsmøde før sommerferien med henblik på, at\nanbefalinger fremlægges for Teknik- og Landdistriktsudvalget den 11. maj 2027 og\nByrådet den 30. juni 2027.\nat Borgmesteren efter indstilling fra formanden kan forlænge fristen med op til tre\nmåneder."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Byråds- og direktionssekretariatet indstiller,\nat introduktionen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-5": {
+   "id": "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-5",
+   "kommune": "Aabenraa",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=4b4c8397-36a7-4594-84fd-03833a005042",
+   "hentet": "2026-11-10T12:54:15.396Z",
+   "titel": "Oplæg om administration på området",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Barbara Frenzel, afdelingschef i Byg, Natur & Miljø, Aabenraa Kommune og Jon Kjær Jensen,\nTeamleder i Vand & GIS, Aabenraa Kommune er inviteret til at give udvalget en præsentation\naf den nuværende administration på området for markvanding og vandindvinding i Aabenraa\nKommune."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Byråds- og direktionssekretariatet indstiller,\nat oplægget tages til orientering"
+    }
+   ],
+   "bilag": []
+  },
+  "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-6": {
+   "id": "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-6",
+   "kommune": "Aabenraa",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=4b4c8397-36a7-4594-84fd-03833a005042",
+   "hentet": "2026-11-10T12:54:15.396Z",
+   "titel": "Drøftelse",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med afsæt i de forudgående dagsordenspunkter, herunder oplægget fra Plan, Teknik & Miljøforvaltningen om den nuværende administration på området for markvanding og\nvandindvinding i Aabenraa Kommune tager udvalget en indledende drøftelse af udvalgets\nvidere arbejde."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Byråds- og direktionssekretariatet indstiller,\nat udvalget drøfter udvalgets videre arbejde."
+    }
+   ],
+   "bilag": []
+  },
+  "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-7": {
+   "id": "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-7",
+   "kommune": "Aabenraa",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=4b4c8397-36a7-4594-84fd-03833a005042",
+   "hentet": "2026-11-10T12:54:15.396Z",
+   "titel": "Godkendelse af mødekalender",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I denne sag godkender udvalget forslag til mødekalender.\nDer lægges op til, at udvalget mødes i alt 5 gange og at hvert møde tilrettelægges ud fra et\nkonkret emne.\nForslag til mødekalender for udvalget:\n- Onsdag den 11. november 2026 fra 12.00 – 15.00 (dette møde)\n- Tirsdag den 15. december 2026 fra 12.00 – 15.00\n- Onsdag den 3. februar 2027 fra 12.00 – 15.00\n- Tirsdag den 9. marts 2027 fra 12.00 – 15.00\n- Onsdag den 21. april 2027 fra 12.00 – 15.00\nMøderne er i udgangspunktet berammet til 3 timers varighed og kan tilpasses dagsorden med\n+/- 30 minutter."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Byråds- og direktionssekretariatet indstiller,\nat mødekalender godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-8": {
+   "id": "aabenraa-2026-11-11-17-stk-4-udvalg-om-markvanding-og-vandindvinding-8",
+   "kommune": "Aabenraa",
+   "udvalg": "§ 17, stk. 4-udvalg om markvanding og vandindvinding",
+   "dato": "2026-11-11",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.aabenraa.dk/vis?id=4b4c8397-36a7-4594-84fd-03833a005042",
+   "hentet": "2026-11-10T12:54:15.396Z",
+   "titel": "Opsamling og eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalgsformanden samler op på udvalgsmødet og opsummerer planen frem mod det\nkommende møde."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=f6f9ac7f-01f1-4fab-a90f-71b2e99b13be": {
    "senest": "2026-10-21",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=7af9d4d5-2ccb-478d-a7d8-a418add71204": {
    "senest": "2025-09-27",
@@ -14555,11 +14784,11 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=99e7574c-b654-4d40-999b-a384e4824b89": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=0630ce66-687f-4f5f-a3ee-ceba1c45d0c0": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=5a8ad725-3970-401d-b7c4-1f0dd571fab0": {
    "senest": "2025-09-27",
@@ -14567,7 +14796,7 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=a057193d-807f-43f3-bdd4-238dc240abc7": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=b323868e-7e60-48cd-b62d-b40a28ffe296": {
    "senest": "2013-12-17",
@@ -14575,7 +14804,7 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=14216ad0-9182-4a16-a9d2-3778af298cb9": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=786044fb-beab-4e40-a01b-aeebf4a5783f": {
    "senest": "2013-12-13",
@@ -14587,7 +14816,7 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=d60e0747-8622-4426-b99a-bd146494d006": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=15716bd2-1820-4635-892b-d046ce6c5374": {
    "senest": "2013-12-17",
@@ -14595,7 +14824,7 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=63e1f951-6c33-4841-a04e-2e85624a69b8": {
    "senest": "2026-11-09",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=605f9826-b917-40b4-89cd-6cac4083818e": {
    "senest": "2013-12-12",
@@ -14603,11 +14832,11 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=b3d91b66-70b3-48c2-ab1d-ed1181c5fe33": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=ea50b2dd-a1ad-4344-8410-e85bc21caf65": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=820d553a-210a-45ee-a195-3086d5becfa5": {
    "senest": "2021-12-09",
@@ -14615,11 +14844,11 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=625070de-f7de-46a4-979a-de1ae9d354a2": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=d8a7bd5e-e00c-4998-a12b-0cf5671425b6": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=eff78804-4b09-4f6c-a9d4-b469afbd27d0": {
    "senest": "2021-12-09",
@@ -14635,7 +14864,7 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=70cd9275-e02b-48fc-8419-f4892581520b": {
    "senest": "2026-10-12",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=208d42a2-66e5-4d96-bc17-69e68113a737": {
    "senest": "2016-02-10",
@@ -14643,11 +14872,11 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=2bce9002-674b-4afc-b913-a5990a677f68": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=9153a2d9-99f6-4e14-9c19-97bbbcefd5e4": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=52801ea2-0f76-45f9-91d5-a503062026b2": {
    "senest": "2013-12-04",
@@ -14659,19 +14888,19 @@
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=469293c6-7209-4843-9bd7-c303b8b06714": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=3c3a0de9-44f1-4db6-b384-19ea0f5c6ded": {
    "senest": "2026-09-24",
-   "tjekket": "2026-11-09"
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=d732c35f-8df5-41de-ab56-cc1491e17bfa": {
    "senest": "",
    "tjekket": "2026-11-05"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=7b363d1f-c3f4-4718-ad6c-7851983e5324": {
-   "senest": "2026-11-04",
-   "tjekket": "2026-11-09"
+   "senest": "2026-11-10",
+   "tjekket": "2026-11-10"
   },
   "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=b5a8fd78-7b67-4bf1-b55c-10e076cdc1e8": {
    "senest": "2025-09-26",
@@ -14692,9 +14921,13 @@
   "https://dagsordener.aabenraa.dk/Sitemap/StaticPages": {
    "senest": "",
    "tjekket": "2026-10-24"
+  },
+  "https://dagsordener.aabenraa.dk/Sitemap/ForCommittee?committeeId=1acfe8d1-50fd-4b7c-9d8c-fc41b45fc08f": {
+   "senest": "2026-11-05",
+   "tjekket": "2026-11-10"
   }
  },
  "parser": 3,
- "opdateret": "2026-11-09T23:43:44.596Z",
+ "opdateret": "2026-11-10T12:54:15.398Z",
  "kommune": "Aabenraa"
 }
