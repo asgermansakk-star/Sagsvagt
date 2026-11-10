@@ -68,7 +68,7 @@
       <li>Op til 3 kommuner, fx der hvor du bor, arbejder og har sommerhus</li>
       <li>Alle tre i mandagsmailen og Min avis</li>
     </ul>
-    <a class="btn" href="mailto:mansa@sagsvagt.dk?subject=Sagsvagt%20Plus">Skriv til os</a>
+    <a class="btn" data-pakke-knap="plus" href="mailto:mansa@sagsvagt.dk?subject=Sagsvagt%20Plus">Skriv til os</a>
   </section>
   <section class="prisk">
     <h2>Pro</h2>
@@ -77,11 +77,18 @@
       <li>Op til 10 kommuner</li>
       <li>Til lokalpolitikere, journalister og foreningsfolk</li>
     </ul>
-    <a class="btn" href="mailto:mansa@sagsvagt.dk?subject=Sagsvagt%20Pro">Skriv til os</a>
+    <a class="btn" data-pakke-knap="pro" href="mailto:mansa@sagsvagt.dk?subject=Sagsvagt%20Pro">Skriv til os</a>
   </section>
 </div>
 <p>Priserne er med moms. Du betaler med faktura og kan opsige hver måned. Vil du skifte din gratis kommune, så <a href="mailto:mansa@sagsvagt.dk?subject=Skift%20kommune">skriv til os</a>. Virksomheder kan bruge <a href="erhverv.html">Sagsvagt Erhverv</a>.</p>
 </div></div>
+<script>
+// Er bestilling åben (slås til på admin-siden), bliver "Skriv til os" til "Bestil", som åbner Min avis med pakken valgt
+fetch("api/pakker.php", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+  if (!j || !j.aaben) return;
+  document.querySelectorAll("[data-pakke-knap]").forEach(function (a) { a.href = "min/#pakke=" + a.getAttribute("data-pakke-knap"); a.textContent = "Bestil"; });
+}).catch(function () {});
+</script>
 </main>
 <footer class="foot">
   <div class="wrap">

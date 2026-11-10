@@ -76,8 +76,23 @@
   .panel { background: var(--kalk-lys); border-radius: 10px; padding: 22px 24px; margin-top: 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; }
   /* Ikonvalg: rigtige radioknapper (piletaster virker), skjult bag runde mærker med 44 px tryk-mål */
   .ikoner { grid-column: 1 / -1; border: 0; padding: 0; margin: 0; min-width: 0; }
-  /* Din kommune: står fast; skiftes kun af redaktionen */
+  /* Din kommune: står fast for Gratis (skiftes af redaktionen); Plus og Pro vælger selv op til grænsen (priser.html) */
   .panel .k-din { margin: 0 0 6px; font: 700 1rem/1.3 var(--sans); color: var(--nat); }
+  .k-valg { display: flex; flex-wrap: wrap; gap: 8px; margin: 4px 0 10px; }
+  .panel .k-valg label { position: relative; margin: 0; font-weight: 600; }
+  .panel .k-valg input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: 0; cursor: pointer; }
+  .k-valg span { display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 8px; border: 1.5px solid var(--rule); background: var(--kalk); color: var(--nat); font: 600 .8125rem/1 var(--sans); }
+  .k-valg label:hover span { border-color: var(--nat); }
+  .k-valg input:checked + span { background: var(--nat); border-color: var(--nat); color: var(--kalk); }
+  .k-valg input:focus-visible + span { outline: 2px solid var(--indigo); outline-offset: 2px; }
+  .k-valg input:disabled + span { opacity: .45; cursor: default; }
+  @media (pointer: coarse) { .k-valg span { min-height: 44px; } }
+  .k-pakker { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 4px 0 10px; }
+  .k-pakker .pk { min-height: 44px; padding: 8px 14px; border: 1.5px solid var(--nat); border-radius: 8px; background: var(--kalk); color: var(--nat); font: 500 .875rem/1.3 var(--sans); cursor: pointer; text-align: left; }
+  .k-pakker .pk:hover { background: var(--nat); color: var(--kalk); }
+  .k-pakker input { flex: 1 1 100%; }
+  .link-knap { all: unset; color: var(--indigo); font-weight: 600; text-decoration: underline; cursor: pointer; }
+  .link-knap:focus-visible { outline: 2px solid var(--indigo); outline-offset: 2px; }
   .ikoner legend { font-size: .8125rem; font-weight: 700; padding: 0; margin-bottom: 8px; }
   .ikon-valg { display: flex; flex-wrap: wrap; gap: 10px; }
   .panel .ikon-valg label { position: relative; width: 64px; height: 64px; margin: 0; display: grid; place-items: center; cursor: pointer; }
@@ -594,10 +609,13 @@
             <legend>Dit ikon</legend>
             <div class="ikon-valg" id="p-ikon"></div>
           </fieldset>
-          <fieldset class="ikoner">
-            <legend>Din kommune</legend>
+          <fieldset class="ikoner" id="pakke-felt">
+            <legend id="p-kommune-titel">Din kommune</legend>
             <p class="k-din" id="p-kommune"></p>
-            <p class="hint">Vil du skifte kommune eller følge flere, så <a href="mailto:mansa@sagsvagt.dk?subject=Skift%20kommune">skriv til os</a>. <a href="../priser.html">Se priserne</a></p>
+            <div class="k-valg" id="p-kommuner" hidden></div>
+            <div class="k-pakker" id="p-pakker" hidden></div>
+            <p class="hint" id="p-kommune-hint"></p>
+            <p class="hint" id="p-pakke-svar" role="status" aria-live="polite"></p>
           </fieldset>
           <div>
             <label for="p-navn">Hvad skal vi kalde dig?</label>
@@ -1440,11 +1458,74 @@
     $("#p-bydel").innerHTML = `<option value="">Vælg bydel …</option>` + bydele.map((u) => `<option value="${esc(u)}"${u === profil.bydel ? " selected" : ""}>${esc(bydelNavn(u))}</option>`).join("");
     // Kun København har lokaludvalg; i andre kommuner skjules bydelen
     $("#p-bydel").parentElement.hidden = $("#h-bydel").parentElement.hidden = !bydele.length;
-    // Kommunen står i tilmeldingen og skiftes kun af redaktionen (Plus og Pro på priser.html)
-    $("#p-kommune").textContent = VALGTE.map(navnPaa).join(", ");
+    fyldPakke();
     $("#p-ikon").innerHTML = [["", "Forbogstav"], ...Object.entries(IKONER).map(([id, [navn]]) => [id, navn])]
       .map(([id, navn]) => `<label title="${navn}"><input type="radio" name="ikon" value="${id}" aria-label="${navn}"${(profil.ikon || "") === id ? " checked" : ""}><span class="av">${id ? ikonSvg(id) : esc(forbogstav() || "A")}</span></label>`).join("");
   }
+  /* ---------- Plus og Pro (priser.html) ----------
+     Gratis følger tilmeldingens ene kommune og skifter den kun ved at skrive til redaktionen. Er bestilling åben
+     (server.pakker.aaben, slås til på admin-siden), kan man vælge Plus eller Pro og sine kommuner; en betalende skifter
+     kommuner inden for grænsen og kan opsige. api/pakke.php gemmer det i tilmeldingen, som avisen og mandagsmailen læser. */
+  let VAELGER = null; // den pakke, man er ved at bestille, ellers null
+  const SKRIV_TIL_OS = '<a href="mailto:mansa@sagsvagt.dk?subject=Skift%20kommune">skriv til os</a>';
+  // Højst maks kommuner: de øvrige felter lukkes, når grænsen er nået
+  const graense = (boks, maks) => { const n = boks.querySelectorAll("input:checked").length; boks.querySelectorAll("input").forEach((i) => (i.disabled = !i.checked && n >= maks)); };
+  function fyldPakke() {
+    const pk = server?.pakke || "gratis", liste = server?.pakker?.liste || {}, aaben = !!server?.pakker?.aaben, betaler = pk !== "gratis";
+    const valg = VAELGER || (betaler ? pk : null), maks = liste[valg]?.kommuner || 1;
+    $("#p-kommune-titel").textContent = betaler ? `Dine kommuner (${liste[pk]?.navn || ""})` : "Din kommune";
+    $("#p-kommune").textContent = VALGTE.map(navnPaa).join(", ");
+    $("#p-kommune").hidden = !!valg;
+    const boks = $("#p-kommuner"); boks.hidden = !valg;
+    if (valg) {
+      const valgte = VALGTE.slice(0, maks);
+      boks.innerHTML = AABNE.map((k) => `<label><input type="checkbox" value="${esc(k.slug)}"${valgte.includes(k.slug) ? " checked" : ""}><span>${esc(k.navn)}</span></label>`).join("");
+      graense(boks, maks);
+    }
+    const pakker = $("#p-pakker");
+    pakker.innerHTML = VAELGER
+      ? `<input id="p-faktura" maxlength="200" autocomplete="organization" placeholder="Navn eller firma på fakturaen (valgfrit)" aria-label="Navn eller firma på fakturaen"><button type="button" class="btn moerk" data-bestil="${VAELGER}">Bestil ${esc(liste[VAELGER].navn)} til ${liste[VAELGER].pris} kr. pr. måned</button><button type="button" class="link-knap" data-fortryd-pakke>Fortryd</button>`
+      : !betaler && aaben ? ["plus", "pro"].filter((id) => liste[id]).map((id) => `<button type="button" class="pk" data-pakke="${id}"><b>${esc(liste[id].navn)}</b> · ${liste[id].pris} kr. pr. måned · op til ${liste[id].kommuner} kommuner</button>`).join("") : "";
+    pakker.hidden = !pakker.innerHTML;
+    $("#p-kommune-hint").innerHTML = betaler ? `${esc(liste[pk].navn)} giver op til ${liste[pk].kommuner} kommuner. <button type="button" class="link-knap" data-opsig>Opsig ${esc(liste[pk].navn)}</button>`
+      : VAELGER ? `Vælg op til ${maks} kommuner. Du får en faktura på mail og kan opsige når som helst.`
+      : aaben ? `Vil du skifte din gratis kommune, så ${SKRIV_TIL_OS}.` : `Vil du skifte kommune eller følge flere, så ${SKRIV_TIL_OS}. <a href="../priser.html">Se priserne</a>`;
+  }
+  // Gem en bestilling, nye kommuner eller en opsigelse, og hent sagerne fra de nye kommuner
+  async function gemPakke(pakke, slugs, fakturaTil = "") {
+    const svar = $("#p-pakke-svar"), boks = $("#p-kommuner");
+    boks.querySelectorAll("input").forEach((i) => (i.disabled = true)); svar.textContent = "Gemmer …";
+    try {
+      const j = await api("pakke.php", { pakke, kommuner: slugs, faktura_til: fakturaTil });
+      const skift = j.pakke !== (server.pakke || "gratis");
+      server.pakke = j.pakke; server.tilmelding = { ...(server.tilmelding || {}), kommuner: j.kommuner }; VAELGER = null;
+      await brugKommuner(j.kommuner.split(", ").map((n) => AABNE.find((a) => a.navn === n)?.slug).filter(Boolean));
+      fyldPanel(); tegn(); visSide(); hentFund();
+      svar.textContent = !skift ? "Gemt." : j.pakke === "gratis" ? "Du har opsagt. Vi har sendt dig en kvittering." : "Tak for din bestilling. Vi har sendt dig en kvittering, og fakturaen kommer på mail.";
+    } catch (err) { fyldPakke(); svar.textContent = err.message; }
+  }
+  $("#p-kommuner").addEventListener("change", (e) => {
+    const pk = server?.pakke || "gratis", liste = server?.pakker?.liste || {}, boks = e.currentTarget;
+    graense(boks, liste[VAELGER || pk]?.kommuner || 1);
+    const slugs = [...boks.querySelectorAll("input:checked")].map((i) => i.value);
+    if (VAELGER) return; // bestillingen gemmes først med knappen
+    if (!slugs.length) { e.target.checked = true; graense(boks, liste[pk]?.kommuner || 1); $("#p-pakke-svar").textContent = "Vælg mindst én kommune."; return; }
+    gemPakke(pk, slugs);
+  });
+  $("#panel").addEventListener("click", (e) => {
+    const t = e.target.closest("[data-pakke],[data-bestil],[data-fortryd-pakke],[data-opsig]");
+    if (!t) return;
+    if (t.dataset.pakke) { VAELGER = t.dataset.pakke; fyldPakke(); $("#p-kommuner input")?.focus(); }
+    else if (t.hasAttribute("data-fortryd-pakke")) { VAELGER = null; fyldPakke(); }
+    else if (t.dataset.bestil) {
+      const slugs = [...$("#p-kommuner").querySelectorAll("input:checked")].map((i) => i.value);
+      if (!slugs.length) { $("#p-pakke-svar").textContent = "Vælg mindst én kommune."; return; }
+      gemPakke(t.dataset.bestil, slugs, $("#p-faktura")?.value.trim() || "");
+    } else if (t.hasAttribute("data-opsig")) {
+      const navn = server.pakker?.liste?.[server.pakke]?.navn || "", behold = VALGTE[0];
+      if (confirm(`Opsig ${navn}? Du beholder ${navnPaa(behold)} gratis og betaler ikke mere fra næste måned.`)) gemPakke("gratis", [behold]);
+    }
+  });
   const vend = () => { const p = $("#panel"); p.hidden = !p.hidden; $("#tilpas")?.setAttribute("aria-expanded", String(!p.hidden)); if (!p.hidden) $("#p-navn").focus(); };
 
   document.addEventListener("click", (e) => {
@@ -1628,6 +1709,13 @@
       const forud = !server.profil ? forudfyld() : [];
       $("#indlaes").hidden = true; $("#avis").hidden = false;
       fyldPanel(); tegn(); visSide(); visVelkomst(forud); hentFund();
+      // Fra priser.html: min/#pakke=plus åbner Tilpas med Plus valgt (kun for Gratis, og kun når bestilling er åben)
+      const bestil = (location.hash.match(/^#pakke=(plus|pro)$/) || [])[1];
+      if (bestil && server?.pakker?.aaben && (server.pakke || "gratis") === "gratis") {
+        VAELGER = bestil; history.replaceState(null, "", location.pathname + location.search);
+        if ($("#panel").hidden) vend();
+        fyldPakke(); $("#pakke-felt").scrollIntoView({ block: "center" });
+      }
     })
     .catch((err) => { console.warn(err); $("#indlaes").className = "wrap"; $("#indlaes").removeAttribute("aria-busy"); $("#indlaes").innerHTML = `<p class="besked fejl" style="margin: 64px 0">Vi kunne ikke hente sagerne lige nu. Prøv igen om lidt.</p>`; });
 })();
