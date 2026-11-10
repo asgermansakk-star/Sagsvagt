@@ -30,6 +30,14 @@ function pakker_saet_aaben(PDO $db, bool $til): void {
     $db->prepare("INSERT INTO indstillinger (noegle, vaerdi) VALUES ('pakker:aaben', ?)")->execute([$til ? '1' : '0']);
 }
 function pakke_af(array $b): string { return isset(PAKKER[$b['pakke'] ?? '']) ? (string)$b['pakke'] : 'gratis'; }
+// Fortrydelsesret: 14 dage fra bestillingen (pakke_fra). Fortryder læseren inden da, betaler de ingenting (priser.html).
+const FORTRYD_DAGE = 14;
+function pakke_fortryd_til(?string $fra): ?string { return $fra ? date('Y-m-d', strtotime("$fra +" . FORTRYD_DAGE . ' days')) : null; }
+function pakke_kan_fortryde(array $b): bool {
+    $til = pakke_fortryd_til($b['pakke_fra'] ?? null);
+    return pakke_af($b) !== 'gratis' && $til !== null && (new DateTimeImmutable('now', new DateTimeZone('Europe/Copenhagen')))->format('Y-m-d') <= $til;
+}
+function pakke_dato(string $iso): string { return date('j/n-Y', strtotime($iso)); }
 // De åbne kommuner som slug => navn (kommune/aabne.json, som avis/kommuner.mjs skriver)
 function pakker_kommuner(): array {
     return array_column(json_decode((string)@file_get_contents(__DIR__ . '/../kommune/aabne.json'), true) ?: [], 'navn', 'slug');

@@ -1487,8 +1487,9 @@
       ? `<input id="p-faktura" maxlength="200" autocomplete="organization" placeholder="Navn eller firma på fakturaen (valgfrit)" aria-label="Navn eller firma på fakturaen"><button type="button" class="btn moerk" data-bestil="${VAELGER}">Bestil ${esc(liste[VAELGER].navn)} til ${liste[VAELGER].pris} kr. pr. måned</button><button type="button" class="link-knap" data-fortryd-pakke>Fortryd</button>`
       : !betaler && aaben ? ["plus", "pro"].filter((id) => liste[id]).map((id) => `<button type="button" class="pk" data-pakke="${id}"><b>${esc(liste[id].navn)}</b> · ${liste[id].pris} kr. pr. måned · op til ${liste[id].kommuner} kommuner</button>`).join("") : "";
     pakker.hidden = !pakker.innerHTML;
-    $("#p-kommune-hint").innerHTML = betaler ? `${esc(liste[pk].navn)} giver op til ${liste[pk].kommuner} kommuner. <button type="button" class="link-knap" data-opsig>Opsig ${esc(liste[pk].navn)}</button>`
-      : VAELGER ? `Vælg op til ${maks} kommuner. Du får en faktura på mail og kan opsige når som helst.`
+    const fortryd = server?.fortryd_til;
+    $("#p-kommune-hint").innerHTML = betaler ? `${esc(liste[pk].navn)} giver op til ${liste[pk].kommuner} kommuner.${fortryd ? ` Du kan fortryde til og med ${dato(fortryd, { day: "numeric", month: "long" })} og betaler så ingenting.` : ""} <button type="button" class="link-knap" data-opsig>${fortryd ? "Fortryd" : "Opsig"} ${esc(liste[pk].navn)}</button>`
+      : VAELGER ? `Vælg op til ${maks} kommuner. Du får en faktura på mail og kan opsige når som helst. Du har 14 dages fortrydelsesret.`
       : aaben ? `Vil du skifte din gratis kommune, så ${SKRIV_TIL_OS}.` : `Vil du skifte kommune eller følge flere, så ${SKRIV_TIL_OS}. <a href="../priser.html">Se priserne</a>`;
   }
   // Gem en bestilling, nye kommuner eller en opsigelse, og hent sagerne fra de nye kommuner
@@ -1498,10 +1499,11 @@
     try {
       const j = await api("pakke.php", { pakke, kommuner: slugs, faktura_til: fakturaTil });
       const skift = j.pakke !== (server.pakke || "gratis");
-      server.pakke = j.pakke; server.tilmelding = { ...(server.tilmelding || {}), kommuner: j.kommuner }; VAELGER = null;
+      server.pakke = j.pakke; server.fortryd_til = j.fortryd_til; server.tilmelding = { ...(server.tilmelding || {}), kommuner: j.kommuner }; VAELGER = null;
       await brugKommuner(j.kommuner.split(", ").map((n) => AABNE.find((a) => a.navn === n)?.slug).filter(Boolean));
       fyldPanel(); tegn(); visSide(); hentFund();
-      svar.textContent = !skift ? "Gemt." : j.pakke === "gratis" ? "Du har opsagt. Vi har sendt dig en kvittering." : "Tak for din bestilling. Vi har sendt dig en kvittering, og fakturaen kommer på mail.";
+      svar.textContent = !skift ? "Gemt." : j.fortrudt ? "Du har fortrudt og betaler ingenting. Vi har sendt dig en kvittering."
+        : j.pakke === "gratis" ? "Du har opsagt. Vi har sendt dig en kvittering." : "Tak for din bestilling. Vi har sendt dig en kvittering, og fakturaen kommer på mail.";
     } catch (err) { fyldPakke(); svar.textContent = err.message; }
   }
   $("#p-kommuner").addEventListener("change", (e) => {
@@ -1523,7 +1525,9 @@
       gemPakke(t.dataset.bestil, slugs, $("#p-faktura")?.value.trim() || "");
     } else if (t.hasAttribute("data-opsig")) {
       const navn = server.pakker?.liste?.[server.pakke]?.navn || "", behold = VALGTE[0];
-      if (confirm(`Opsig ${navn}? Du beholder ${navnPaa(behold)} gratis og betaler ikke mere fra næste måned.`)) gemPakke("gratis", [behold]);
+      const tekst = server.fortryd_til ? `Fortryd ${navn}? Du har bestilt for under 14 dage siden, så du betaler ingenting. Du beholder ${navnPaa(behold)} gratis.`
+        : `Opsig ${navn}? Du beholder ${navnPaa(behold)} gratis og betaler ikke mere fra næste måned.`;
+      if (confirm(tekst)) gemPakke("gratis", [behold]);
     }
   });
   const vend = () => { const p = $("#panel"); p.hidden = !p.hidden; $("#tilpas")?.setAttribute("aria-expanded", String(!p.hidden)); if (!p.hidden) $("#p-navn").focus(); };

@@ -225,72 +225,103 @@ function er_mail_til(array $kunde, string $uge): ?array {
     $emne = 'Sagsvagt Erhverv uge ' . $ugenr . ': ' . (count($nye) ? count($nye) . (count($nye) === 1 ? ' nyt signal' : ' nye signaler') : (count($udbud) ? count($udbud) . (count($udbud) === 1 ? ' nyt udbud' : ' nye udbud') : 'kommende møder')) . ($hvor ? " i $hvor" : '');
     $rapport = er_link($kunde);
 
+    // Samme form som mandagsmailen (api/_mandagsmail_lav.php): logo og uge øverst, lyngbølgen, de vigtigste som store kort
+    // med emnetegningen, resten centreret med en blød streg imellem og rosenbølgen i bunden
     $kicker = function (array $s) use ($n): string {
         $ty = array_map(fn($seg, $t) => $seg === 'ord' ? 'Dine søgeord' : ($n['typer']["$seg:$t"] ?? $t), array_keys($s['ty']), $s['ty']);
         $dele = [$s['kn'], implode(' / ', array_unique($ty))];
         if ($s['sd'] !== '') $dele[] = $n['stadier'][$s['sd']] ?? $s['sd'];
         return implode(' · ', $dele);
     };
-    $raekker = function (array $liste, int $max) use ($site, $C, $F, $e, $kicker, $kunde): string {
-        $h = '';
-        foreach (array_slice($liste, 0, $max) as $s) {
-            $tilJerTekst = er_til_jer($kunde, $s) ? 'Til jer · ' : '';
-            $meta = $s['u'] . ' · ' . ($s['kom'] ? 'møde ' . mm_dato($s['dato'], true) : 'behandlet ' . mm_dato($s['dato'])) . ($s['ud'] !== '' ? ' · ' . $s['ud'] : '');
-            $f = $s['f'] ?? [];
-            $chips = implode(' · ', array_filter(er_fakta_chips($f)));
-            $hvad = ($f['hvad'] ?? '') !== '' ? $f['hvad'] : $s['d'];
-            $h .= '<tr><td style="padding:14px 0;border-top:1px solid ' . $C['rule'] . ';">'
-                . '<p style="margin:0 0 4px;font:700 11px/1.4 ' . $F . ';letter-spacing:.06em;text-transform:uppercase;color:' . $C['indigo'] . ';">' . $e($tilJerTekst . $kicker($s)) . '</p>'
-                . '<a href="' . $e($site . $s['url']) . '" style="font:700 16px/1.35 ' . $F . ';color:' . $C['nat'] . ';text-decoration:none;">' . $e($s['t']) . '</a>'
-                . ($chips !== '' ? '<p style="margin:6px 0 0;font:700 13px/1.5 ' . $F . ';color:' . $C['vin'] . ';">' . $e($chips) . '</p>' : '')
-                . '<p style="margin:4px 0 0;font:13px/1.5 ' . $F . ';color:' . $C['muted'] . ';">' . $e(mm_klip($meta, 200)) . '</p>'
-                . ($hvad !== '' ? '<p style="margin:6px 0 0;font:14px/1.55 ' . $F . ';color:' . $C['brod'] . ';">' . $e(mm_klip($hvad, 220)) . '</p>' : '')
-                . (($f['naeste'] ?? '') !== '' ? '<p style="margin:6px 0 0;font:13px/1.5 ' . $F . ';color:' . $C['brod'] . ';"><b>Næste skridt:</b> ' . $e($f['naeste']) . '</p>' : '')
-                . '</td></tr>';
-        }
-        if (count($liste) > $max) $h .= '<tr><td style="padding:12px 0;border-top:1px solid ' . $C['rule'] . ';font:13px ' . $F . ';color:' . $C['muted'] . ';">… og ' . (count($liste) - $max) . ' mere i rapporten.</td></tr>';
-        return $h;
+    $mere = fn(string $href, string $t) => '<p style="margin:12px 0 0;"><a href="' . $e($href) . '" style="font:700 14px/1.4 ' . $F . ';color:' . $C['indigo'] . ';text-decoration:none;">' . $t . ' ›</a></p>';
+    $skille = '<tr><td style="padding:0 70px;font-size:0;line-height:0;"><img src="' . MM_MAIL . 'skille.png" width="460" height="12" alt="" style="display:block;width:100%;height:auto;border:0;"></td></tr>';
+    // Linjen over overskriften: "Til jer" i vin, derefter kommune, type, stadie og hvornår
+    $over = function (array $s) use ($C, $e, $kicker, $kunde): string {
+        $k = $kicker($s);
+        // Stadiet "Behandlet" står allerede i linjen, så kun datoen
+        $naar = $s['kom'] ? 'møde ' . mm_dato($s['dato'], true) : (str_ends_with($k, 'Behandlet') ? '' : 'behandlet ') . mm_dato($s['dato']);
+        return (er_til_jer($kunde, $s) ? '<b style="color:' . $C['vin'] . ';">Til jer</b> · ' : '') . $e($k . ' · ' . $naar);
     };
-    $afsnit = fn(string $titel, string $rk) => '<tr><td style="padding:26px 28px 0;"><h2 style="margin:0 0 6px;font:800 19px/1.25 ' . $F . ';color:' . $C['nat'] . ';">' . $e($titel) . '</h2>'
-        . '<table role="presentation" width="100%" cellpadding="0" cellspacing="0">' . $rk . '</table></td></tr>';
+    $stor = function (array $s) use ($site, $C, $F, $e, $over, $mere): string {
+        $f = $s['f'] ?? [];
+        $chips = implode(' · ', array_filter(er_fakta_chips($f)));
+        $hvad = ($f['hvad'] ?? '') !== '' ? $f['hvad'] : $s['d'];
+        // Emnetegningen fra sagssiden (assets/emner/<emne>.svg) i mailens jpg-udgave
+        $billede = mm_billede(['id' => $s['id'], 'e' => [pathinfo((string)($s['b'] ?? ''), PATHINFO_FILENAME)]]);
+        return '<tr><td style="padding:14px 22px 6px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:' . $C['kalkLys'] . ';border-radius:16px;"><tr><td align="center" style="padding:22px 22px 26px;">'
+            . '<a href="' . $e($site . $s['url']) . '" style="text-decoration:none;"><img src="' . $billede . '" width="512" height="288" alt="" style="display:block;width:100%;max-width:512px;height:auto;margin:0 auto;border:0;border-radius:14px;"></a>'
+            . '<p style="margin:18px 0 6px;font:600 12px/1.45 ' . $F . ';color:' . $C['muted'] . ';">' . $over($s) . '</p>'
+            . '<a href="' . $e($site . $s['url']) . '" style="font:800 22px/1.25 ' . $F . ';color:' . $C['nat'] . ';text-decoration:none;">' . $e($s['t']) . '</a>'
+            . ($chips !== '' ? '<p style="margin:10px 0 0;font:700 14px/1.5 ' . $F . ';color:' . $C['vin'] . ';">' . $e($chips) . '</p>' : '')
+            . ($hvad !== '' ? '<p style="margin:10px 0 0;font:15px/1.55 ' . $F . ';color:' . $C['brod'] . ';">' . $e(mm_klip($hvad, 220)) . '</p>' : '')
+            . (($f['naeste'] ?? '') !== '' ? '<p style="margin:10px 0 0;font:14px/1.5 ' . $F . ';color:' . $C['nat'] . ';"><b style="color:' . $C['indigo'] . ';">Næste skridt:</b> ' . $e($f['naeste']) . '</p>' : '')
+            . $mere($site . $s['url'], 'Læs hele sagen')
+            . '</td></tr></table></td></tr>';
+    };
+    $kort = function (array $s) use ($site, $C, $F, $e, $over, $mere): string {
+        $f = $s['f'] ?? [];
+        $chips = implode(' · ', array_filter(er_fakta_chips($f)));
+        $hvad = ($f['hvad'] ?? '') !== '' ? $f['hvad'] : $s['d'];
+        return '<tr><td align="center" style="padding:18px 36px;">'
+            . '<p style="margin:0 0 6px;font:600 12px/1.45 ' . $F . ';color:' . $C['muted'] . ';">' . $over($s) . '</p>'
+            . '<a href="' . $e($site . $s['url']) . '" style="font:700 17px/1.35 ' . $F . ';color:' . $C['nat'] . ';text-decoration:none;">' . $e($s['t']) . '</a>'
+            . ($chips !== '' ? '<p style="margin:6px 0 0;font:700 13px/1.5 ' . $F . ';color:' . $C['vin'] . ';">' . $e($chips) . '</p>' : '')
+            . ($hvad !== '' ? '<p style="margin:6px 0 0;font:14px/1.5 ' . $F . ';color:' . $C['brod'] . ';">' . $e(mm_klip($hvad, 160)) . '</p>' : '')
+            . $mere($site . $s['url'], 'Læs mere')
+            . '</td></tr>';
+    };
+    $mereIRapporten = fn(int $n) => $n > 0 ? '<tr><td align="center" style="padding:6px 28px;font:13px/1.5 ' . $F . ';color:' . $C['muted'] . ';">Og ' . $n . ' mere. <a href="' . $e($rapport) . '" style="color:' . $C['indigo'] . ';font-weight:600;">Se dem i rapporten</a></td></tr>' : '';
+    $afsnit = function (string $titel, array $liste, int $max, bool $store = false) use ($C, $F, $e, $stor, $kort, $skille, $mereIRapporten): string {
+        if (!$liste) return '';
+        $h = '<tr><td align="center" style="padding:34px 28px 8px;"><h2 style="margin:0;font:800 22px/1.25 ' . $F . ';color:' . $C['nat'] . ';">' . $e($titel) . '</h2></td></tr>';
+        foreach (array_slice($liste, 0, $max) as $i => $s) $h .= $store ? $stor($s) : (($i ? $skille : '') . $kort($s));
+        return $h . $mereIRapporten(count($liste) - $max);
+    };
     $dele = array_filter([count($nye) ? count($nye) . (count($nye) === 1 ? ' nyt signal' : ' nye signaler') : '',
         count($kommer) ? count($kommer) . (count($kommer) === 1 ? ' sag' : ' sager') . ' på møder de næste 14 dage' : '',
         count($udbud) ? count($udbud) . (count($udbud) === 1 ? ' nyt udbud' : ' nye udbud') : '',
         count($foelger) ? count($foelger) . (count($foelger) === 1 ? ' sag, I følger, er' : ' sager, I følger, er') . ' rykket' : '']);
     $intro = $dele ? mm_stor(preg_replace('/, ([^,]*)$/u', ' og $1', implode(', ', $dele))) . '.' : '';
     $udbudRk = '';
-    foreach (array_slice($udbud, 0, 8) as $u) {
+    foreach (array_slice($udbud, 0, 8) as $i => $u) {
         $art = ['kommer' => 'Udbud på vej', 'aaben' => 'Åbent udbud', 'vundet' => 'Tildelt'][$u['art']];
         $info = array_filter([$u['vaerdi'] ? er_kr((float)$u['vaerdi']) : '', $u['frist'] ? 'frist ' . mm_dato($u['frist']) : '', $u['vinder'] ? 'vundet af ' . implode(', ', $u['vinder']) : '']);
-        $udbudRk .= '<tr><td style="padding:14px 0;border-top:1px solid ' . $C['rule'] . ';">'
-            . '<p style="margin:0 0 4px;font:700 11px/1.4 ' . $F . ';letter-spacing:.06em;text-transform:uppercase;color:' . $C['indigo'] . ';">' . $e(implode(', ', array_slice($u['ordregivere'], 0, 2)) . ' · ' . $art) . '</p>'
-            . '<a href="' . $e($u['url']) . '" style="font:700 16px/1.35 ' . $F . ';color:' . $C['nat'] . ';text-decoration:none;">' . $e($u['titel']) . '</a>'
+        $udbudRk .= ($i ? $skille : '') . '<tr><td align="center" style="padding:18px 36px;">'
+            . '<p style="margin:0 0 6px;font:600 12px/1.45 ' . $F . ';color:' . $C['muted'] . ';"><b style="color:' . $C['indigo'] . ';">' . $art . '</b> · ' . $e(implode(', ', array_slice($u['ordregivere'], 0, 2))) . ' · ' . mm_dato($u['dato']) . '</p>'
+            . '<a href="' . $e($u['url']) . '" style="font:700 17px/1.35 ' . $F . ';color:' . $C['nat'] . ';text-decoration:none;">' . $e($u['titel']) . '</a>'
             . ($info ? '<p style="margin:6px 0 0;font:700 13px/1.5 ' . $F . ';color:' . $C['vin'] . ';">' . $e(implode(' · ', $info)) . '</p>' : '')
-            . '<p style="margin:4px 0 0;font:13px/1.5 ' . $F . ';color:' . $C['muted'] . ';">' . $e($u['kategori']) . ' · offentliggjort ' . mm_dato($u['dato']) . '</p></td></tr>';
+            . '<p style="margin:6px 0 0;font:14px/1.5 ' . $F . ';color:' . $C['brod'] . ';">' . $e($u['kategori']) . '</p>'
+            . $mere($u['url'], 'Se udbuddet')
+            . '</td></tr>';
     }
-    if (count($udbud) > 8) $udbudRk .= '<tr><td style="padding:12px 0;border-top:1px solid ' . $C['rule'] . ';font:13px ' . $F . ';color:' . $C['muted'] . ';">… og ' . (count($udbud) - 8) . ' mere i rapporten.</td></tr>';
     $afmeld = er_afmeld_link((int)$kunde['id']);
-    $html = '<!doctype html><html lang="da"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="supported-color-schemes" content="light dark">' . MM_MOERK_CSS . '</head>'
-        . '<body style="margin:0;padding:0;background:' . $C['kalk'] . ';"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="' . $C['kalk'] . '" style="background:' . $C['kalk'] . ';"><tr><td align="center" style="padding:24px 12px 40px;">'
-        . '<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:100%;max-width:600px;background:' . $C['kalkLys'] . ';border-radius:12px;overflow:hidden;">'
-        . '<tr><td bgcolor="' . $C['nat'] . '" style="background:' . $C['nat'] . ';background-image:linear-gradient(115deg,#28377A 0%,#0C1430 30%,#0E0F14 55%,#3E0E14 80%,#8A2430 100%);padding:24px 28px;">'
-        . '<p style="margin:0 0 8px;font:700 11px ' . $F . ';letter-spacing:.12em;text-transform:uppercase;color:' . $C['rosen'] . ';">Sagsvagt Erhverv · uge ' . $ugenr . '</p>'
-        . '<p style="margin:0;font:800 24px/1.2 ' . $F . ';color:' . $C['kalk'] . ';">' . $e(ER_PRODUKTER[$kunde['produkt']] ?? 'Tidlige signaler') . ($hvor ? ' i ' . $e($hvor) : '') . '</p>'
-        . '<p style="margin:10px 0 0;font:14px/1.5 ' . $F . ';color:#D6CFC3;">' . $e($intro) . '</p></td></tr>'
-        . ($vigtige ? $afsnit(er_brancher($kunde) ? 'Ugens tre vigtigste for jer' : 'Ugens tre vigtigste', $raekker($vigtige, 3)) : '')
-        . ($foelger ? $afsnit('Sager, I følger', $raekker($foelger, 10)) : '')
-        . ($udenVigtige($nye) ? $afsnit('Nyt i ugen', $raekker($udenVigtige($nye), 12)) : '')
-        . ($udenVigtige($kommer) ? $afsnit('På kommende møder', $raekker($udenVigtige($kommer), 10)) : '')
-        . ($udbud ? $afsnit('Nye udbud fra kommunerne', $udbudRk) : '')
-        . '<tr><td style="padding:24px 28px 8px;"><a href="' . $e($rapport) . '" style="display:inline-block;background:' . $C['nat'] . ';color:' . $C['kalk'] . ';font:700 15px ' . $F . ';text-decoration:none;padding:13px 24px;border-radius:8px;">Åbn hele rapporten</a>'
-        . '<p style="margin:14px 0 0;font:13px/1.55 ' . $F . ';color:' . $C['muted'] . ';">I rapporten kan du filtrere, eksportere til regneark og markere, hvilke signaler der er relevante for jer. Svar på mailen, hvis noget mangler.</p></td></tr>'
-        . '<tr><td style="padding:22px 28px 26px;font:12px/1.6 Arial,sans-serif;color:' . $C['muted'] . ';">Til ' . $e($kunde['firma']) . '. Sagerne er fra kommunernes egne dagsordener og referater; Sagsvagt refererer kort og linker til kilden. '
-        . '<a href="' . $e($afmeld) . '" style="color:' . $C['muted'] . ';">Stop de ugentlige mails</a><br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</td></tr>'
-        . '</table></td></tr></table></body></html>';
+    $link = fn($href, $tekst) => '<a href="' . $e($href) . '" style="display:inline-block;padding:12px 9px;line-height:20px;font-weight:600;color:' . $C['indigo'] . ';">' . $tekst . '</a>';
+    $foerste = $dele ? mm_stor(array_values($dele)[0]) : 'Ugens sager';
+    $preheader = ($vigtige[0]['t'] ?? $nye[0]['t'] ?? $kommer[0]['t'] ?? $udbud[0]['titel'] ?? $intro);
+    $html = mm_mail_top($emne, $preheader, $ugenr, $uge, MM_MAIL . 'logo.png')
+        . '<tr><td align="center" style="padding:12px 28px 0;">'
+        . '<h1 style="margin:0;font:800 34px/1.12 ' . $F . ';color:' . $C['nat'] . ';">God morgen.<br>' . $e($foerste) . '.</h1>'
+        . '<p style="margin:14px 0 0;font:600 13px/1.5 ' . $F . ';color:' . $C['muted'] . ';">' . $e(implode(' · ', array_filter([ER_PRODUKTER[$kunde['produkt']] ?? 'Tidlige signaler', $hvor, $kunde['firma']]))) . '</p>'
+        . '</td></tr>'
+        . '<tr><td style="padding:22px 0 0;font-size:0;line-height:0;"><img src="' . MM_MAIL . 'boelge-lyng.png" width="600" height="70" alt="" style="display:block;width:100%;height:auto;border:0;"></td></tr>'
+        . $afsnit(er_brancher($kunde) ? 'Ugens vigtigste for jer' : 'Ugens vigtigste', $vigtige, 3, true)
+        . $afsnit('Sager, I følger', $foelger, 10)
+        . $afsnit('Nyt i ugen', $udenVigtige($nye), 12)
+        . $afsnit('På kommende møder', $udenVigtige($kommer), 10)
+        . ($udbud ? '<tr><td align="center" style="padding:34px 28px 8px;"><h2 style="margin:0;font:800 22px/1.25 ' . $F . ';color:' . $C['nat'] . ';">Nye udbud fra kommunerne</h2></td></tr>' . $udbudRk . $mereIRapporten(count($udbud) - 8) : '')
+        . '<tr><td align="center" style="padding:34px 28px 0;"><a href="' . $e($rapport) . '" style="display:inline-block;background:' . $C['nat'] . ';color:' . $C['kalk'] . ';font:700 15px ' . $F . ';text-decoration:none;padding:14px 28px;border-radius:99px;">Åbn hele rapporten</a>'
+        . '<p style="margin:14px 0 0;font:14px/1.55 ' . $F . ';color:' . $C['brod'] . ';">Filtrér, eksportér til regneark og markér, hvad der er relevant for jer.</p></td></tr>'
+        . '<tr><td style="padding:34px 0 0;font-size:0;line-height:0;"><img src="' . MM_MAIL . 'boelge-rosen.png" width="600" height="70" alt="" style="display:block;width:100%;height:auto;border:0;"></td></tr>'
+        . '<tr><td align="center" style="padding:18px 32px 30px;font:12px/1.6 ' . $F . ';color:' . $C['muted'] . ';">'
+        . '<img src="' . MM_MAIL . 'symbol.png" width="23" height="28" alt="" style="display:block;border:0;margin:0 auto 14px;">'
+        . 'Til ' . $e($kunde['firma']) . '. Sagerne er fra kommunernes egne dagsordener og referater; Sagsvagt refererer kort og linker til kilden. Svar på mailen, hvis noget mangler.<br>'
+        . $link('mailto:' . MM_REDAKTION . '?subject=' . rawurlencode('Sagsvagt Erhverv'), 'Skriv til os') . $link($afmeld, 'Stop de ugentlige mails') . $link($site . 'privatliv.html', 'Privatliv')
+        . '<br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</td></tr>'
+        . "</table>\n</td></tr></table>\n</body></html>";
 
     $linje = fn(array $s) => '• ' . $s['t'] . "\n  " . $kicker($s) . ' · ' . ($s['kom'] ? 'møde ' : '') . mm_dato($s['dato']) . "\n  " . $site . $s['url'];
     $tekst = "Sagsvagt Erhverv uge $ugenr\n$intro\n\n"
-        . ($vigtige ? "UGENS TRE VIGTIGSTE\n" . implode("\n", array_map(fn($s) => $linje($s) . "\n  " . $s['f']['hvad'], $vigtige)) . "\n\n" : '')
+        . ($vigtige ? "UGENS VIGTIGSTE\n" . implode("\n", array_map(fn($s) => $linje($s) . "\n  " . $s['f']['hvad'], $vigtige)) . "\n\n" : '')
         . ($foelger ? "SAGER, I FØLGER\n" . implode("\n", array_map($linje, array_slice($foelger, 0, 10))) . "\n\n" : '')
         . ($udenVigtige($nye) ? "NYT I UGEN\n" . implode("\n", array_map($linje, array_slice($udenVigtige($nye), 0, 12))) . "\n\n" : '')
         . ($udenVigtige($kommer) ? "PÅ KOMMENDE MØDER\n" . implode("\n", array_map($linje, array_slice($udenVigtige($kommer), 0, 10))) . "\n\n" : '')

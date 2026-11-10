@@ -14,5 +14,6 @@ svar(200, [
     'admin' => er_admin($b),
     // Plus og Pro (priser.html): læserens pakke, og om bestilling er åben
     'pakke' => pakke_af($b),
+    'fortryd_til' => pakke_kan_fortryde($b) ? pakke_fortryd_til($b['pakke_fra']) : null,
     'pakker' => ['aaben' => pakker_aaben($db), 'liste' => PAKKER],
 ]);

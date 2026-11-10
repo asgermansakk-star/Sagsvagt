@@ -4,6 +4,7 @@
 //
 // Kør:  node avis/tipliste.mjs guldborgsund                       de seneste 14 dage og kommende møder
 //       node avis/tipliste.mjs guldborgsund --dage 7 --til "Folketidende"
+//       node avis/tipliste.mjs guldborgsund --mail                også som mail (…-mail.html og …-mail.txt) til redaktionen
 //
 // Listen er til redaktionen og må ikke ligge offentligt: den skrives til plan/tipliste/ (plan/ uploades ikke).
 // Billeder og links peger på sagsvagt.dk, så filen kan sendes som den er. Bilag gengives ikke (ophavsretsloven § 9);
@@ -11,6 +12,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 import { hoeringsfrist, iHoering } from "./beriget.mjs";
+import { MAILFARVER as C, MAILSKRIFT as S, MAILBILLEDER as MAIL, moerk, mailTop } from "../assets/mandagsmail.js";
 
 const ROD = join(import.meta.dirname, "..");
 const SITE = (process.env.SITE_URL || "https://sagsvagt.dk/").replace(/\/?$/, "/");
@@ -211,6 +213,72 @@ footer{background:var(--nat);color:rgba(230,223,211,.72);font-size:13px;padding:
 </html>`;
 }
 
+// ---------- Mailen ----------
+// Samme tipliste som mail til redaktionen i mandagsmailens form (assets/mandagsmail.js): logo og uge øverst, lyngbølgen,
+// tipsene som lyse kort og rosenbølgen i bunden. Tabeller og inline-stilarter, så den ser ens ud i Outlook, Gmail og Apple Mail;
+// moerk() giver farverne til mørk tilstand. Tipsene står venstrestillet, fordi de skal læses og ikke bare skimmes.
+const PILLE = { uenig: [C.vin, C.kalk], maerkes: [C.vin, C.kalk], hoering: [C.indigo, C.kalk], kommer: [C.indigo, C.kalk] };
+function listeMail({ k, til, fra, vurderet, top }) {
+  const nr = uge(IDAG);
+  const frister = vurderet.filter((v) => v.grunde.some((g) => g.frist && g.frist >= IDAG)).sort((a, b) => a.grunde.find((g) => g.frist).frist.localeCompare(b.grunde.find((g) => g.frist).frist));
+  const kommende = vurderet.filter((v) => v.s.st === "kommer").sort((a, b) => a.s.dato.localeCompare(b.s.dato));
+  const emne = `Tipliste uge ${nr}: ${top.length} ${top.length === 1 ? "tip" : "tips"} fra ${k.navn}`;
+  const pil = (href, t) => `<a href="${esc(href)}" style="font:700 14px/1.4 ${S};color:${C.indigo};text-decoration:none;">${t} ›</a>`;
+  const h2 = (t) => `<tr><td align="center" style="padding:34px 28px 8px;"><h2 style="margin:0;font:800 22px/1.25 ${S};color:${C.nat};">${esc(t)}</h2></td></tr>`;
+  // En kort liste (frister, møder) på et lyst kort: datoen fed, derefter sagen
+  const liste = (l, dag) => `<tr><td style="padding:10px 22px 6px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.kalkLys};border-radius:16px;"><tr><td style="padding:14px 22px;">`
+    + l.map((v, i) => `<p style="margin:0;padding:10px 0;${i ? `border-top:1px solid ${C.rule};` : ""}font:15px/1.45 ${S};color:${C.brod};"><b style="color:${C.nat};">${esc(dato(dag(v)))}</b> · <a href="${esc(link(v.s))}" style="color:${C.nat};text-decoration:none;font-weight:600;">${esc(v.s.kt || v.s.t)}</a></p>`).join("")
+    + `</td></tr></table></td></tr>`;
+  const tip = (v, i) => {
+    const s = v.s;
+    const piller = v.grunde.map((g) => { const [bg, fg] = PILLE[g.id] || [C.rule, C.nat]; return `<span style="display:inline-block;margin:0 4px 6px 0;padding:4px 9px;border-radius:99px;background:${bg};color:${fg};font:700 11px/1.2 ${S};letter-spacing:.06em;text-transform:uppercase;">${esc(g.navn)}</span>`; }).join("");
+    const besl = renBesl(s.kb);
+    const meta = `${s.u} · ${s.st === "kommer" ? "møde" : "behandlet"} ${dato(s.dato)}${besl && s.st !== "kommer" ? ` · ${kort(besl, 110)}` : ""}${v.ogsaa?.length ? ` · også i ${v.ogsaa.join(" og ")}` : ""}`;
+    const spm = [...v.grunde].sort((a, b) => SPM.indexOf(a.id) - SPM.indexOf(b.id)).slice(0, 2).map((g) => g.spm).join(" ");
+    return `<tr><td style="padding:10px 22px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.kalkLys};border-radius:16px;"><tr><td style="padding:22px 24px 24px;">
+  <p style="margin:0 0 8px;font:800 13px/1.4 ${S};color:${C.vin};">Tip ${i + 1}</p>
+  <p style="margin:0 0 4px;">${piller}</p>
+  <a href="${esc(link(s))}" style="font:800 20px/1.3 ${S};color:${C.nat};text-decoration:none;">${esc(s.kt || s.t)}</a>
+  <p style="margin:6px 0 0;font:600 12px/1.45 ${S};color:${C.muted};">${esc(meta)}</p>
+  ${s.d ? `<p style="margin:10px 0 0;font:15px/1.55 ${S};color:${C.brod};">${esc(kort(s.d))}</p>` : ""}
+  <p style="margin:10px 0 0;font:14px/1.6 ${S};color:${C.brod};">${v.grunde.map((g) => `<b style="color:${C.nat};">${esc(g.navn)}:</b> ${esc(g.tekst)}`).join("<br>")}</p>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:14px 0 0;"><tr><td style="padding:10px 14px;border-radius:10px;background:${C.lyng};font:15px/1.5 ${S};color:${C.blaek};"><b>Spørg:</b> ${esc(spm)}</td></tr></table>
+  <p style="margin:14px 0 0;">${pil(link(s), "Sagen på Sagsvagt")}</p>
+  ${s.k ? `<p style="margin:6px 0 0;">${pil(s.k, "Kommunens dokument")}</p>` : ""}
+</td></tr></table></td></tr>`;
+  };
+  const andre = vurderet.length - top.length;
+  const kommuneSide = k.slug === "koebenhavn" ? SITE : `${SITE}kommune/${k.slug}/`;
+  const link2 = (href, t) => `<a href="${esc(href)}" style="display:inline-block;padding:12px 9px;line-height:20px;font-weight:600;color:${C.indigo};">${t}</a>`;
+  const html = mailTop({ emne, preheader: top[0] ? `${top[0].s.kt || top[0].s.t}${top.length > 1 ? ` og ${top.length - 1} tips mere` : ""}.` : `Ingen tips fra ${k.navn} i denne uge.`, uge: nr, idag: IDAG, logo: `${MAIL}logo.png` })
+    + `<tr><td align="center" style="padding:12px 28px 0;">
+  <h1 style="margin:0;font:800 34px/1.12 ${S};color:${C.nat};">${top.length} ${top.length === 1 ? "tip" : "tips"} fra<br>${esc(k.navn)}.</h1>
+  <p style="margin:14px 0 0;font:600 13px/1.5 ${S};color:${C.muted};">${vurderet.length} sager fra ${esc(dato(fra))} til i dag${til ? ` · Til ${esc(til)}` : ""}</p>
+</td></tr>
+<tr><td style="padding:22px 0 0;font-size:0;line-height:0;"><img src="${MAIL}boelge-lyng.png" width="600" height="70" alt="" style="display:block;width:100%;height:auto;border:0;"></td></tr>
+`
+    + (top.length ? h2("Ugens tips") + top.map(tip).join("\n") : `<tr><td align="center" style="padding:24px 36px;font:16px/1.55 ${S};color:${C.brod};">Ingen sager med en tydelig grund i perioden.</td></tr>`)
+    + (frister.length ? h2("Høringsfrister") + liste(frister.slice(0, 10), (v) => v.grunde.find((g) => g.frist).frist) : "")
+    + (kommende.length ? h2("På kommende møder") + liste(kommende.slice(0, 10), (v) => v.s.dato) : "")
+    + (andre > 0 ? `<tr><td align="center" style="padding:22px 28px 0;font:14px/1.55 ${S};color:${C.brod};">Og ${andre} andre sager i perioden. ${pil(kommuneSide, `Se ${k.navn} på Sagsvagt`)}</td></tr>` : "")
+    + `<tr><td style="padding:34px 0 0;font-size:0;line-height:0;"><img src="${MAIL}boelge-rosen.png" width="600" height="70" alt="" style="display:block;width:100%;height:auto;border:0;"></td></tr>
+<tr><td align="center" style="padding:18px 32px 30px;font:12px/1.6 ${S};color:${C.muted};">
+  <img src="${MAIL}symbol.png" width="23" height="28" alt="" style="display:block;border:0;margin:0 auto 14px;">
+  Til redaktionen og efter aftale. Ikke til offentliggørelse. Sagerne er fundet automatisk i ${esc(k.navn)} Kommunes egne dagsordener og referater; tal, datoer og navne står i kommunens dokument. Grundene er Sagsvagts læsning af teksten, ikke en vurdering af, hvad der er en historie. Bilag er ikke gengivet.<br>
+  ${link2(`mailto:mansa@sagsvagt.dk?subject=${encodeURIComponent(`Tiplisten for ${k.navn}`)}`, "Skriv til os")}${link2(`mailto:mansa@sagsvagt.dk?subject=${encodeURIComponent(`Stop tiplisten for ${k.navn}`)}`, "Stop tiplisten")}${link2(`${SITE}privatliv.html`, "Privatliv")}
+  <br>Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S
+</td></tr>
+</table>
+</td></tr></table>
+</body></html>`;
+  const tekst = `Tipliste uge ${nr} · ${k.navn}${til ? ` · til ${til}` : ""}\n${vurderet.length} sager fra ${dato(fra)} til i dag.\n\nUGENS TIPS\n\n`
+    + top.map((v, i) => `${i + 1}. ${v.s.kt || v.s.t}\n   ${v.s.u} · ${v.s.st === "kommer" ? "møde" : "behandlet"} ${dato(v.s.dato)}\n   ${v.grunde.map((g) => `${g.navn}: ${g.tekst}`).join(" · ")}\n   Spørg: ${[...v.grunde].sort((a, b) => SPM.indexOf(a.id) - SPM.indexOf(b.id)).slice(0, 2).map((g) => g.spm).join(" ")}\n   ${link(v.s)}`).join("\n\n")
+    + (frister.length ? `\n\nHØRINGSFRISTER\n${frister.slice(0, 10).map((v) => `- ${dato(v.grunde.find((g) => g.frist).frist)}: ${v.s.kt || v.s.t}\n  ${link(v.s)}`).join("\n")}` : "")
+    + (kommende.length ? `\n\nPÅ KOMMENDE MØDER\n${kommende.slice(0, 10).map((v) => `- ${dato(v.s.dato)}, ${v.s.u}: ${v.s.kt || v.s.t}\n  ${link(v.s)}`).join("\n")}` : "")
+    + `\n\n--\nTil redaktionen og efter aftale. Ikke til offentliggørelse. Kilde: ${k.navn} Kommunes dagsordener og referater.\nStop tiplisten eller skriv til os: mansa@sagsvagt.dk\nSagsvagt · CVR 46841514\n`;
+  return { emne, html: moerk(html), tekst };
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const valg = (navn, std) => { const i = args.indexOf(navn); return i >= 0 ? args.splice(i, 2)[1] : std; };
@@ -232,6 +300,11 @@ async function main() {
     const top = [...vurderet].filter((v) => v.grunde.length).sort((a, b) => b.point - a.point || b.s.dato.localeCompare(a.s.dato)).slice(0, antalTop);
     const fil = `tipliste-${slug}-${IDAG}.html`;
     await writeFile(join(UD, fil), listeHtml({ k, til, fra, vurderet, top }));
+    if (args.includes("--mail")) {
+      const m = listeMail({ k, til, fra, vurderet, top });
+      await writeFile(join(UD, fil.replace(".html", "-mail.html")), m.html);
+      await writeFile(join(UD, fil.replace(".html", "-mail.txt")), `Emne: ${m.emne}\n\n${m.tekst}`);
+    }
     const nyeste = k.sager.reduce((m, s) => s.st !== "kommer" && s.dato > m ? s.dato : m, "");
     console.log(`${fil}: ${vurderet.length} sager, ${top.length} tips (nyeste referat ${nyeste})`);
   }

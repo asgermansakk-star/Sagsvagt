@@ -259,3 +259,4 @@ export function lavVentemail({ kommuner = [], aabne = [], idag, navn = "", modta
     + tekstBund(afmeld, false);
   return { emne, preheader, html: moerk(html), tekst, antal: { besluttet: 0, kommer: 0, bydel: 0 }, vente: true };
 }
+export { C as MAILFARVER, SANS as MAILSKRIFT, MAIL as MAILBILLEDER, esc as mailEsc, moerk, mailTop };
