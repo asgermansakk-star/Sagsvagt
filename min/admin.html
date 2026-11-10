@@ -252,6 +252,7 @@
         + "<td>" + esc(a.kommuner) + (a.emner ? '<br><span class="lille">' + esc(a.emner) + "</span>" : "") + "</td>"
         + "<td>" + esc(a.rolle) + "</td><td>" + dato(a.oprettet) + "</td>"
         + '<td><button class="mini-knap" data-ret="' + a.id + '" type="button">Ret e-mail</button><br>'
+        + '<button class="mini-knap" data-kommuner="' + a.id + '" type="button">Ret kommuner</button><br>'
         + '<button class="mini-knap" data-fejl="' + a.id + '" data-til="' + (a.mail_fejl ? "" : "1") + '" type="button">' + (a.mail_fejl ? "Mail virker" : "Mail kom retur") + '</button><br>'
         + (a.status !== "afmeldt" ? '<button class="mini-knap" data-afmeld="' + a.id + '" type="button">Afmeld</button><br>' : "") + '<button class="mini-knap" data-slet="' + a.id + '" type="button">Slet</button></td></tr>';
     }).join("") || '<tr><td colspan="7" class="lille">Ingen.</td></tr>';
@@ -291,6 +292,11 @@
     else if ((id = t.getAttribute("data-ret"))) {
       var a = data.find(function (x) { return x.id == id; }), ny = prompt("Ny e-mailadresse til " + (a ? a.email : "") + ":", a ? a.email : "");
       if (ny && (!a || ny.trim() !== a.email)) api("admin/status.php", { id: +id, handling: "ret_email", email: ny }).then(function () { besked("E-mailadressen er rettet.", "ok"); return hent(); }).catch(function (e) { besked(e.message, "fejl"); });
+    }
+    // Gratis følger man én kommune. Skriver nogen for at skifte, eller har de købt Plus (op til 3) eller Pro (alle), rettes det her
+    else if ((id = t.getAttribute("data-kommuner"))) {
+      var b = data.find(function (x) { return x.id == id; }), nye = prompt("Kommuner til " + (b ? b.email : "") + " (adskilt med komma). Gratis: 1 · Plus: op til 3 · Pro: alle", b ? b.kommuner : "");
+      if (nye !== null && (!b || nye.trim() !== b.kommuner)) api("admin/status.php", { id: +id, handling: "ret_kommuner", kommuner: nye }).then(function () { besked("Kommunerne er rettet.", "ok"); return hent(); }).catch(function (e) { besked(e.message, "fejl"); });
     }
     else if ((id = t.getAttribute("data-fejl"))) api("admin/status.php", { id: +id, handling: "mail_fejl", til: !!t.getAttribute("data-til") }).then(hent).catch(function (e) { besked(e.message, "fejl"); });
     else if ((id = t.getAttribute("data-slet"))) { if (confirm("Slet helt? Det kan ikke fortrydes.")) api("admin/status.php", { id: +id, handling: "slet" }).then(hent).catch(function (e) { besked(e.message, "fejl"); }); }

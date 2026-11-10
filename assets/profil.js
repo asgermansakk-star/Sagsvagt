@@ -18,16 +18,17 @@ export const kommunerFraTekst = (tekst, aabne) => [...new Set((tekst || "").spli
 
 // Profilen til mailen. kommuner er tom, hvis læseren ikke følger en åben kommune; så får de ingen mail
 // (vi sender aldrig Københavns sager til en, der har skrevet sig op til en anden kommune).
+// Kommunerne kommer kun fra tilmeldingen (a.kommuner): gratis er det den ene, man skrev sig op med, og flere kommuner
+// (Plus og Pro, se priser.html) sætter redaktionen på admin-siden. Ældre profiler med egne kommuner tæller ikke længere.
 export function profilFor(a, EMNER, aabne) {
   let p = {};
   try { p = a.profil ? JSON.parse(a.profil) : {}; } catch { p = {}; }
-  const valgte = (Array.isArray(p.kommuner) ? p.kommuner : p.kommune ? [p.kommune] : []).filter((s) => aabne.includes(s));
   const emner = (p.emner || []).filter((id) => EMNER[id]);
   return {
     navn: (p.navn || "").trim(),
     emner: emner.length ? emner : emnerFraTekst(a.emner, EMNER),
     ord: Array.isArray(p.ord) ? p.ord : [],
     bydel: p.bydel || "",
-    kommuner: valgte.length ? valgte : kommunerFraTekst(a.kommuner, aabne),
+    kommuner: kommunerFraTekst(a.kommuner, aabne),
   };
 }

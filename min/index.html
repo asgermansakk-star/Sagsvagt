@@ -76,16 +76,8 @@
   .panel { background: var(--kalk-lys); border-radius: 10px; padding: 22px 24px; margin-top: 18px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 28px; }
   /* Ikonvalg: rigtige radioknapper (piletaster virker), skjult bag runde mærker med 44 px tryk-mål */
   .ikoner { grid-column: 1 / -1; border: 0; padding: 0; margin: 0; min-width: 0; }
-  /* Kommunevalg: afkrydsningsfelter vist som knapper; man kan følge flere kommuner på én gang */
-  .k-valg { display: flex; flex-wrap: wrap; gap: 8px; }
-  .panel .k-valg label { position: relative; margin: 0; font-weight: 600; }
-  .panel .k-valg input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: 0; cursor: pointer; }
-  .k-valg span { display: inline-flex; align-items: center; min-height: 38px; padding: 0 14px; border-radius: 8px; border: 1.5px solid var(--rule); background: var(--kalk); color: var(--nat); font: 600 .8125rem/1 var(--sans); }
-  .k-valg label:hover span { border-color: var(--nat); }
-  .k-valg input:checked + span { background: var(--nat); border-color: var(--nat); color: var(--kalk); }
-  .k-valg input:focus-visible + span { outline: 2px solid var(--indigo); outline-offset: 2px; }
-  .k-valg input:disabled + span { opacity: .6; }
-  @media (pointer: coarse) { .k-valg span { min-height: 44px; } }
+  /* Din kommune: står fast; skiftes kun af redaktionen */
+  .panel .k-din { margin: 0 0 6px; font: 700 1rem/1.3 var(--sans); color: var(--nat); }
   .ikoner legend { font-size: .8125rem; font-weight: 700; padding: 0; margin-bottom: 8px; }
   .ikon-valg { display: flex; flex-wrap: wrap; gap: 10px; }
   .panel .ikon-valg label { position: relative; width: 64px; height: 64px; margin: 0; display: grid; place-items: center; cursor: pointer; }
@@ -587,7 +579,7 @@
           <button type="button" class="v-luk" id="velkommen-luk" aria-label="Luk velkomsten">×</button>
           <ol>
             <li><div><b>Vælg dine emner</b> <span id="velkommen-forud"></span></div></li>
-            <li><div><b>Vælg din kommune og dit ikon</b>, og tilføj egne ord, fx din gade</div></li>
+            <li><div><b>Vælg dit ikon</b>, og tilføj egne ord, fx din gade</div></li>
             <li><div><b>Gem sager med stjernen</b>, så finder du dem under Gemte</div></li>
           </ol>
           <div class="knapper">
@@ -603,9 +595,9 @@
             <div class="ikon-valg" id="p-ikon"></div>
           </fieldset>
           <fieldset class="ikoner">
-            <legend>Dine kommuner</legend>
-            <div class="k-valg" id="p-kommuner"></div>
-            <p class="hint" id="p-kommuner-hint">Avisen viser sagerne fra de kommuner, du vælger. Vi åbner flere løbende.</p>
+            <legend>Din kommune</legend>
+            <p class="k-din" id="p-kommune"></p>
+            <p class="hint">Vil du skifte kommune eller følge flere, så <a href="mailto:mansa@sagsvagt.dk?subject=Skift%20kommune">skriv til os</a>. <a href="../priser.html">Se priserne</a></p>
           </fieldset>
           <div>
             <label for="p-navn">Hvad skal vi kalde dig?</label>
@@ -1448,8 +1440,8 @@
     $("#p-bydel").innerHTML = `<option value="">Vælg bydel …</option>` + bydele.map((u) => `<option value="${esc(u)}"${u === profil.bydel ? " selected" : ""}>${esc(bydelNavn(u))}</option>`).join("");
     // Kun København har lokaludvalg; i andre kommuner skjules bydelen
     $("#p-bydel").parentElement.hidden = $("#h-bydel").parentElement.hidden = !bydele.length;
-    $("#p-kommuner").closest("fieldset").hidden = AABNE.length < 2;
-    $("#p-kommuner").innerHTML = AABNE.map((k) => `<label><input type="checkbox" value="${esc(k.slug)}"${VALGTE.includes(k.slug) ? " checked" : ""}><span>${esc(k.navn)}</span></label>`).join("");
+    // Kommunen står i tilmeldingen og skiftes kun af redaktionen (Plus og Pro på priser.html)
+    $("#p-kommune").textContent = VALGTE.map(navnPaa).join(", ");
     $("#p-ikon").innerHTML = [["", "Forbogstav"], ...Object.entries(IKONER).map(([id, [navn]]) => [id, navn])]
       .map(([id, navn]) => `<label title="${navn}"><input type="radio" name="ikon" value="${id}" aria-label="${navn}"${(profil.ikon || "") === id ? " checked" : ""}><span class="av">${id ? ikonSvg(id) : esc(forbogstav() || "A")}</span></label>`).join("");
   }
@@ -1497,7 +1489,6 @@
   $("#p-navn").addEventListener("input", (e) => { profil.navn = e.target.value.slice(0, 40); gem(); tegn(); });
   $("#p-ord").addEventListener("change", (e) => { profil.ord = e.target.value.split(",").map((o) => o.trim()).filter((o) => o.length > 1).slice(0, 12); gem(); tegn(); hentFund(); });
   $("#p-bydel").addEventListener("change", (e) => { profil.bydel = e.target.value; gem(); tegn(); });
-  $("#p-kommuner").addEventListener("change", (e) => skiftKommuner(e.target));
   $("#p-ikon").addEventListener("change", (e) => { profil.ikon = e.target.value; gem(); tegnAvatar(); });
   let t0; $("#soeg").addEventListener("input", (e) => { clearTimeout(t0); t0 = setTimeout(() => { soeg = e.target.value; vist = 20; tegnListe(); }, 120); });
 
@@ -1574,12 +1565,12 @@
   /* ---------- Start ---------- */
   $("#indlaes").hidden = false;
   const hent = (f) => fetch(f, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); });
-  // Kommunerne: dem, man har valgt under Tilpas (profil.kommuner), ellers de åbne kommuner fra tilmeldingen
-  // (fritekst som "Lyngby" eller "Københavns Kommune, Frederiksberg"), ellers København. ?kommune=albertslund virker til test.
+  // Kommunerne: de åbne kommuner fra tilmeldingen (fritekst som "Lyngby" eller "Københavns Kommune, Frederiksberg"),
+  // ellers København. Gratis er det én kommune; flere sætter redaktionen (priser.html). ?kommune=albertslund virker kun uden tilmelding.
   // De åbne kommuner står i kommune/aabne.json (avis/kommuner.mjs); Københavns sager ligger i assets/sager.json.
   const slugAf = (t) => t.toLowerCase().replace(/\s+kommunes?$/, "").replace(/æ/g, "ae").replace(/ø/g, "oe").replace(/å/g, "aa").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const ALIAS = { kbh: "koebenhavn", koebenhavns: "koebenhavn", lyngby: "lyngby-taarbaek", taastrup: "hoeje-taastrup" };
-  const oensket = (q.get("kommune") || server.tilmelding?.kommuner || "").split(/,|\/|\s+og\s+/i)
+  const oensket = (server.tilmelding?.kommuner || q.get("kommune") || "").split(/,|\/|\s+og\s+/i)
     .map((t) => ({ navn: stor(t.trim().replace(/\s+kommunes?$/i, "")), slug: ALIAS[slugAf(t)] || slugAf(t) })).filter((k) => k.slug);
   const erAaben = (slug) => AABNE.some((a) => a.slug === slug);
   const navnPaa = (slug) => AABNE.find((a) => a.slug === slug)?.navn || slug;
@@ -1625,34 +1616,12 @@
     FUND = fund; DATA.fund = fund;
     if (!$("#avis").hidden) tegn();
   }
-  // Skift kommuner under Tilpas: hent de nye sager uden at genindlæse siden. Mindst én kommune skal være valgt.
-  async function skiftKommuner(inp) {
-    const boks = $("#p-kommuner"), note = $("#p-kommuner-hint"), tekst = "Avisen viser sagerne fra de kommuner, du vælger. Vi åbner flere løbende.";
-    const slugs = [...boks.querySelectorAll("input:checked")].map((i) => i.value);
-    if (!slugs.length) { inp.checked = true; note.textContent = "Vælg mindst én kommune."; return; }
-    boks.querySelectorAll("input").forEach((i) => (i.disabled = true)); note.textContent = "Henter sagerne …";
-    const ed = $("#avis .ed"); ed?.setAttribute("aria-busy", "true"); ed?.classList.add("henter"); // de gamle sager dæmpes, til de nye er der
-    try {
-      await brugKommuner(slugs);
-      profil.kommuner = slugs; IKKE_AABEN = null; gem();
-      fyldPanel(); tegn(); visSide(); hentFund();
-      note.textContent = tekst;
-    } catch (err) {
-      console.warn(err); inp.checked = !inp.checked;
-      note.textContent = "Vi kunne ikke hente sagerne lige nu. Prøv igen om lidt.";
-    } finally {
-      boks.querySelectorAll("input").forEach((i) => (i.disabled = false));
-      ed?.removeAttribute("aria-busy"); ed?.classList.remove("henter");
-      boks.querySelector(`input[value="${inp.value}"]`)?.focus();
-    }
-  }
   Promise.all([hent("../kommune/aabne.json").catch(() => AABNE), hent("indlaeg.json").catch(() => ({ indlaeg: [] }))])
     .then(async ([aabne, debat]) => {
       AABNE = aabne; INDLAEG = debat.indlaeg || [];
-      const valgte = profil.kommuner.filter(erAaben);
       const fraTilmelding = [...new Set(oensket.map((o) => o.slug).filter(erAaben))];
-      const slugs = valgte.length ? valgte : fraTilmelding.length ? fraTilmelding : ["koebenhavn"];
-      const lukkede = valgte.length ? [] : oensket.filter((o) => !erAaben(o.slug));
+      const slugs = fraTilmelding.length ? fraTilmelding : ["koebenhavn"];
+      const lukkede = oensket.filter((o) => !erAaben(o.slug));
       IKKE_AABEN = lukkede.length ? { navne: lukkede.map((o) => o.navn), tilbage: !fraTilmelding.length } : null;
       await brugKommuner(slugs);
       SIDST = sidstBesoeg();

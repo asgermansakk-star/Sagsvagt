@@ -15,6 +15,8 @@ $email = ren_email($d['email'] ?? '');
 if ($email === '') fejl(400, 'Skriv en gyldig e-mailadresse.');
 $felt = fn($k, $max) => mb_substr(trim((string)($d[$k] ?? '')), 0, $max);
 $kommuner = $felt('kommuner', 500); $rolle = $felt('rolle', 100); $kilde = $felt('kilde', 100);
+// Gratis følger man én kommune; flere (Plus og Pro, se priser.html) sætter redaktionen på admin-siden
+if (count(array_filter(array_map('trim', preg_split('/,|\/|\s+og\s+/iu', $kommuner)))) > 1) fejl(400, 'Du kan følge én kommune gratis. Vil du følge flere, så skriv til mansa@sagsvagt.dk.');
 $emner = $felt('emner', 2000); $valgte = $felt('valgte_emner', 1000);
 $alleEmner = trim(implode(', ', array_filter([$valgte, $emner])), ', ');
 // Fluebenet "vil også være medlem af Sæt Dagsordenen": navn og alder 16-30 (foreningens vedtægter § 3)

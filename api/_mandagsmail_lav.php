@@ -97,15 +97,14 @@ function mm_kommuner_fra_tekst(?string $tekst, array $aabne): array {
 function mm_profil(array $a, array $EMNER, array $aabne): array {
     $p = json_decode((string)($a['profil'] ?? ''), true);
     if (!is_array($p)) $p = [];
-    $valgte = is_array($p['kommuner'] ?? null) ? $p['kommuner'] : (!empty($p['kommune']) ? [$p['kommune']] : []);
-    $valgte = array_values(array_filter($valgte, fn($s) => in_array($s, $aabne, true)));
     $emner = array_values(array_filter((array)($p['emner'] ?? []), fn($id) => is_string($id) && isset($EMNER[$id])));
     return [
         'navn' => trim((string)($p['navn'] ?? '')),
         'emner' => $emner ?: mm_emner_fra_tekst($a['emner'] ?? '', $EMNER),
         'ord' => is_array($p['ord'] ?? null) ? array_values($p['ord']) : [],
         'bydel' => (string)($p['bydel'] ?? ''),
-        'kommuner' => $valgte ?: mm_kommuner_fra_tekst($a['kommuner'] ?? '', $aabne),
+        // Kun tilmeldingens kommuner (som profilFor i assets/profil.js): Plus og Pro sættes på admin-siden
+        'kommuner' => mm_kommuner_fra_tekst($a['kommuner'] ?? '', $aabne),
     ];
 }
 // De kommuner, en tilmeldt skrev, med pænt navn ("aarhus kommune" → "Aarhus"), som skrevne() på admin-siden

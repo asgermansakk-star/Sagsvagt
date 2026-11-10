@@ -1,6 +1,6 @@
 <?php
 // Redaktionen: afmeld en tilmeldt (beholdes, men får ingen mails og kan ikke logge ind), slet helt (GDPR),
-// ret e-mailadressen eller markér, at mails til adressen kommer retur.
+// ret e-mailadressen eller kommunerne (Plus og Pro, se priser.html), eller markér, at mails til adressen kommer retur.
 declare(strict_types=1);
 require __DIR__ . '/../_bootstrap.php';
 require __DIR__ . '/../_sletning.php';
@@ -28,6 +28,12 @@ if (($d['handling'] ?? '') === 'slet') {
     $db->prepare('UPDATE abonnenter SET email = ?, mail_fejl = NULL WHERE id = ? AND email <> ?')->execute([$ny, $id, $admin['email']]);
     // Links, der er sendt til den gamle adresse, må ikke virke længere (de hører til kontoen, ikke adressen)
     $db->prepare('UPDATE tokens SET brugt = ? WHERE abonnent_id = ? AND brugt IS NULL')->execute([nu(), $id]);
+} elseif (($d['handling'] ?? '') === 'ret_kommuner') {
+    // Gratis følger man den ene kommune fra tilmeldingen; redaktionen skifter den eller giver flere (Plus og Pro, se priser.html).
+    // Min avis og mandagsmailen læser kun denne kolonne.
+    $nye = mb_substr(trim(preg_replace('/\s+/u', ' ', (string)($d['kommuner'] ?? ''))), 0, 500);
+    if ($nye === '') fejl(400, 'Skriv mindst én kommune.');
+    $db->prepare('UPDATE abonnenter SET kommuner = ? WHERE id = ?')->execute([$nye, $id]);
 } elseif (($d['handling'] ?? '') === 'mail_fejl') {
     // Markér (eller fjern markeringen), at mails til adressen kommer retur; så springes den over ved invitationer
     $db->prepare('UPDATE abonnenter SET mail_fejl = ? WHERE id = ?')->execute([!empty($d['til']) ? nu() : null, $id]);

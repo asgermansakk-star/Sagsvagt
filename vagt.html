@@ -297,6 +297,9 @@
   form { display: grid; gap: 16px; align-content: start; }
   .felt label { display: block; font-size: var(--fodnote); font-weight: 600; margin-bottom: 6px; }
   .felt label small { font-weight: 400; opacity: .75; }
+  .felt-note { margin: 8px 0 0; font-size: var(--fodnote); line-height: 1.5; color: var(--rosen); }
+  .felt-note[hidden] { display: none; }
+  .felt-note a { color: var(--kalk); }
   .felt input, .felt select { width: 100%; min-height: 48px; font: 500 var(--broed) var(--sans); color: var(--nat); background: var(--kalk-lys); border: 0;
     border-radius: var(--r-felt); padding: 12px 14px; box-shadow: inset 0 0 0 2px transparent; transition: box-shadow .2s; appearance: none; }
   .felt select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2356535A' stroke-width='2'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
@@ -542,7 +545,7 @@
           <!-- Usynligt felt, som kun robotter udfylder (FormSubmit kender også _honey) -->
           <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
 
-          <div class="felt"><label for="kommuner">Kommuner du vil følge</label><input id="kommuner" name="kommuner" type="text" value="" placeholder="fx Aarhus, Viborg eller København" list="kommune-liste" autocomplete="off"><datalist id="kommune-liste"><option value="Albertslund"><option value="Allerød"><option value="Assens"><option value="Ballerup"><option value="Billund"><option value="Bornholm"><option value="Brøndby"><option value="Brønderslev"><option value="Dragør"><option value="Egedal"><option value="Esbjerg"><option value="Fanø"><option value="Favrskov"><option value="Faxe"><option value="Fredensborg"><option value="Fredericia"><option value="Frederiksberg"><option value="Frederikshavn"><option value="Frederikssund"><option value="Furesø"><option value="Faaborg-Midtfyn"><option value="Gentofte"><option value="Gladsaxe"><option value="Glostrup"><option value="Greve"><option value="Gribskov"><option value="Guldborgsund"><option value="Haderslev"><option value="Halsnæs"><option value="Hedensted"><option value="Helsingør"><option value="Herlev"><option value="Herning"><option value="Hillerød"><option value="Hjørring"><option value="Holbæk"><option value="Holstebro"><option value="Horsens"><option value="Hvidovre"><option value="Høje-Taastrup"><option value="Hørsholm"><option value="Ikast-Brande"><option value="Ishøj"><option value="Jammerbugt"><option value="Kalundborg"><option value="Kerteminde"><option value="Kolding"><option value="København"><option value="Køge"><option value="Langeland"><option value="Lejre"><option value="Lemvig"><option value="Lolland"><option value="Lyngby-Taarbæk"><option value="Læsø"><option value="Mariagerfjord"><option value="Middelfart"><option value="Morsø"><option value="Norddjurs"><option value="Nordfyn"><option value="Nyborg"><option value="Næstved"><option value="Odder"><option value="Odense"><option value="Odsherred"><option value="Randers"><option value="Rebild"><option value="Ringkøbing-Skjern"><option value="Ringsted"><option value="Roskilde"><option value="Rudersdal"><option value="Rødovre"><option value="Samsø"><option value="Silkeborg"><option value="Skanderborg"><option value="Skive"><option value="Slagelse"><option value="Solrød"><option value="Sorø"><option value="Stevns"><option value="Struer"><option value="Svendborg"><option value="Syddjurs"><option value="Sønderborg"><option value="Thisted"><option value="Tønder"><option value="Tårnby"><option value="Vallensbæk"><option value="Varde"><option value="Vejen"><option value="Vejle"><option value="Vesthimmerland"><option value="Viborg"><option value="Vordingborg"><option value="Ærø"><option value="Aabenraa"><option value="Aalborg"><option value="Aarhus"></datalist></div>
+          <div class="felt"><label for="kommuner">Din kommune</label><input id="kommuner" name="kommuner" type="text" value="" placeholder="fx Aarhus" aria-describedby="kommune-note" list="kommune-liste" autocomplete="off"><datalist id="kommune-liste"><option value="Albertslund"><option value="Allerød"><option value="Assens"><option value="Ballerup"><option value="Billund"><option value="Bornholm"><option value="Brøndby"><option value="Brønderslev"><option value="Dragør"><option value="Egedal"><option value="Esbjerg"><option value="Fanø"><option value="Favrskov"><option value="Faxe"><option value="Fredensborg"><option value="Fredericia"><option value="Frederiksberg"><option value="Frederikshavn"><option value="Frederikssund"><option value="Furesø"><option value="Faaborg-Midtfyn"><option value="Gentofte"><option value="Gladsaxe"><option value="Glostrup"><option value="Greve"><option value="Gribskov"><option value="Guldborgsund"><option value="Haderslev"><option value="Halsnæs"><option value="Hedensted"><option value="Helsingør"><option value="Herlev"><option value="Herning"><option value="Hillerød"><option value="Hjørring"><option value="Holbæk"><option value="Holstebro"><option value="Horsens"><option value="Hvidovre"><option value="Høje-Taastrup"><option value="Hørsholm"><option value="Ikast-Brande"><option value="Ishøj"><option value="Jammerbugt"><option value="Kalundborg"><option value="Kerteminde"><option value="Kolding"><option value="København"><option value="Køge"><option value="Langeland"><option value="Lejre"><option value="Lemvig"><option value="Lolland"><option value="Lyngby-Taarbæk"><option value="Læsø"><option value="Mariagerfjord"><option value="Middelfart"><option value="Morsø"><option value="Norddjurs"><option value="Nordfyn"><option value="Nyborg"><option value="Næstved"><option value="Odder"><option value="Odense"><option value="Odsherred"><option value="Randers"><option value="Rebild"><option value="Ringkøbing-Skjern"><option value="Ringsted"><option value="Roskilde"><option value="Rudersdal"><option value="Rødovre"><option value="Samsø"><option value="Silkeborg"><option value="Skanderborg"><option value="Skive"><option value="Slagelse"><option value="Solrød"><option value="Sorø"><option value="Stevns"><option value="Struer"><option value="Svendborg"><option value="Syddjurs"><option value="Sønderborg"><option value="Thisted"><option value="Tønder"><option value="Tårnby"><option value="Vallensbæk"><option value="Varde"><option value="Vejen"><option value="Vejle"><option value="Vesthimmerland"><option value="Viborg"><option value="Vordingborg"><option value="Ærø"><option value="Aabenraa"><option value="Aalborg"><option value="Aarhus"></datalist><p class="felt-note" id="kommune-note" hidden>Du kan følge én kommune gratis. Vil du følge flere, så <a href="priser.html">se priserne</a>.</p></div>
           <div class="felt"><label for="emner">Andre emner eller ord <small>(valgfrit)</small></label><input id="emner" name="emner" type="text" placeholder="Fx cykelstier, lokalplan"></div>
           <div class="felt">
             <label for="rolle">Jeg er</label>
@@ -581,7 +584,7 @@
 <footer>
   <div class="wrap">
     <svg class="logo-svg" viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg>
-    <a href="eksempel.html">Eksempel på en mail</a><a href="kort.html">Kort over sagerne</a><a href="erhverv.html">Sagsvagt Erhverv</a><a href="boks.html">Sæt Sagsvagt på din hjemmeside</a><a href="privatliv.html">Privatliv</a>
+    <a href="eksempel.html">Eksempel på en mail</a><a href="kort.html">Kort over sagerne</a><a href="erhverv.html">Sagsvagt Erhverv</a><a href="boks.html">Sæt Sagsvagt på din hjemmeside</a><a href="priser.html">Priser</a><a href="privatliv.html">Privatliv</a>
     <a href="mailto:mansa@sagsvagt.dk">mansa@sagsvagt.dk</a>
     <span class="firma">Sagsvagt · CVR 46841514 · Ørestads Boulevard 59C, 2. 226, 2300 København S</span>
   </div>
@@ -742,6 +745,8 @@
     kontoNote.textContent = `${navne} på Sagsvagt. Vælg en adgangskode, så kan du logge ind på Min avis, når du har bekræftet din e-mail.`;
   };
   form.kommuner.addEventListener("input", visKonto);
+  // Skriver man flere kommuner, forklarer en linje under feltet, at gratis er én kommune
+  form.kommuner.addEventListener("input", () => { $("#kommune-note").hidden = kommuneDele(form.kommuner.value).length < 2; });
   form.kommuner.addEventListener("change", visKonto);
   /* ---------- Tilmelding trin for trin: ét felt ad gangen, og knappen lyser op til sidst (se CSS'en) ---------- */
   (() => {
@@ -750,7 +755,7 @@
     const gyldig = (el) => {
       const i = el.querySelector("input, select"), v = (i.value || "").trim();
       if (i.id === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
-      if (i.id === "kommuner") return !!v && kommuneDele(v).every((k) => rigtigKommune(k));
+      if (i.id === "kommuner") return kommuneDele(v).length === 1 && !!rigtigKommune(kommuneDele(v)[0]); // gratis følger man én kommune
       if (i.id === "fornavn") return !!v && !!form.efternavn.value.trim();
       if (i.id === "alder") { const a = Number(v); return Number.isInteger(a) && a >= 16 && a <= 30; }
       if (i.id === "adgangskode") return i.value.length >= 10;
@@ -837,6 +842,11 @@
     if (ukendte.length) {
       kf.classList.add("bad");
       msg.className = "form-msg err"; msg.textContent = `Vi kan ikke finde ${ukendte.join(" og ")}. Skriv kommunens navn, fx Aarhus eller Lyngby-Taarbæk.`; form.kommuner.focus(); return;
+    }
+    // Gratis følger man én kommune; flere (Plus og Pro) sætter redaktionen, se priser.html
+    if (dele.length > 1) {
+      kf.classList.add("bad");
+      msg.className = "form-msg err"; msg.innerHTML = 'Du kan følge én kommune gratis. Vil du følge flere, så <a href="priser.html" style="color:var(--kalk)">se priserne</a>.'; form.kommuner.focus(); return;
     }
     kf.classList.remove("bad");
     if (medlem.checked) {
