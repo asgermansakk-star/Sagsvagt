@@ -551,6 +551,14 @@
    "dato": "2026-10-22",
    "punkter": 1,
    "parser": 3
+  },
+  "3e35f80c-b4d1-4b59-9266-ff6b6c320d5a": {
+   "lastmod": "2026-11-10",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-10",
+   "punkter": 3,
+   "parser": 3
   }
  },
  "sager": {
@@ -10367,10 +10375,10 @@
    "kommune": "Gribskov",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.gribskov.dk/vis?id=51a59be8-8abf-4f41-8a01-03e50e4976c2",
-   "hentet": "2026-11-04T12:11:03.295Z",
+   "kilde": "https://dagsordener.gribskov.dk/vis?id=3e35f80c-b4d1-4b59-9266-ff6b6c320d5a",
+   "hentet": "2026-11-10T21:02:28.674Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -10379,7 +10387,11 @@
     },
     {
      "titel": "Indstilling",
-     "tekst": "ADMINISTRATIONEN INDSTILLER TIL ØKONOMIUDVALGET AT BESLUTTE\n1. at godkende dagsorden\n\nLovgrundlag - Godkendelse af dagsorden\nLBK nr. 13 (Kommunestyrelsesloven) af 05.01.2026 § 20"
+     "tekst": "ADMINISTRATIONEN INDSTILLER TIL ØKONOMIUDVALGET AT BESLUTTE\n1. at godkende dagsorden"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende: Helle Lund (I)\n\nLovgrundlag - Godkendelse af dagsorden\nLBK nr. 13 (Kommunestyrelsesloven) af 05.01.2026 § 20"
     }
    ],
    "bilag": []
@@ -10389,10 +10401,10 @@
    "kommune": "Gribskov",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.gribskov.dk/vis?id=51a59be8-8abf-4f41-8a01-03e50e4976c2",
-   "hentet": "2026-11-04T12:11:03.295Z",
+   "kilde": "https://dagsordener.gribskov.dk/vis?id=3e35f80c-b4d1-4b59-9266-ff6b6c320d5a",
+   "hentet": "2026-11-10T21:02:28.674Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
@@ -10402,6 +10414,10 @@
     {
      "titel": "Indstilling",
      "tekst": "ADMINISTRATIONEN INDSTILLER TIL ØKONOMIUDVALGET\n1. at tage orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Mødet begyndte klokken 15.00. Mødet sluttede klokken 15.08.\n\nOrienteringen taget til efterretning.\nFraværende: Helle Lund (I)"
     }
    ],
    "bilag": []
@@ -10411,10 +10427,10 @@
    "kommune": "Gribskov",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.gribskov.dk/vis?id=51a59be8-8abf-4f41-8a01-03e50e4976c2",
-   "hentet": "2026-11-04T12:11:03.295Z",
+   "kilde": "https://dagsordener.gribskov.dk/vis?id=3e35f80c-b4d1-4b59-9266-ff6b6c320d5a",
+   "hentet": "2026-11-10T21:02:28.674Z",
    "titel": "Elektronisk godkendelse af mødeprotokol",
    "afsnit": [
     {
@@ -10841,7 +10857,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.gribskov.dk/Sitemap/ForCommittee?committeeId=58c89508-b322-49aa-bd06-b659c4b033be": {
-   "senest": "2026-11-04",
+   "senest": "2026-11-10",
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.gribskov.dk/Sitemap/ForCommittee?committeeId=0f5f4652-be99-408c-9f87-924dfd43b97e": {
@@ -11058,6 +11074,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-10T12:50:00.408Z",
+ "opdateret": "2026-11-10T21:02:28.674Z",
  "kommune": "Gribskov"
 }

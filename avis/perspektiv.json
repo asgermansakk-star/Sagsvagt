@@ -7734,22 +7734,25 @@
    ]
   },
   "langeland-2026-11-10-oekonomiudvalget-4": {
-   "type": "dagsorden",
-   "lavet": "2026-11-04",
-   "hverdag": "Du mærker ikke noget direkte i hverdagen. Sagen er en halvårlig regnskabsopfølgning, hvor kommunen tjekker pr. 31. august 2026, om pengene rækker. Samlet forventes en negativ tillægsbevilling på 5.906.000 kr. til drift, anlæg og finansiering, så pengene tilføres kassebeholdningen.",
+   "type": "referat",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Sagen er ren budgetopfølgning og ændrer ikke noget, du kan mærke i hverdagen. Kommunen gør status over økonomien pr. 31. august 2026 og forventer samlet et behov for en negativ tillægsbevilling på 5.906.000 kr., som tilføres kassebeholdningen. Økonomiudvalget anbefaler, at kommunalbestyrelsen godkender omplaceringerne.",
    "berorer": [],
    "for": [
     {
-     "tekst": "Giver et tidligt overblik over, hvor budgettet skrider, så kommunen hurtigt kan rette op.",
+     "tekst": "Giver en fast, ensartet kontrol af økonomien to gange om året, så man hurtigt kan reagere på risikoområder.",
      "grundlag": "sagen",
-     "kilde": "Forvaltningen"
+     "kilde": "Forvaltningen",
+     "daekning": "At sikre en åben budgetopfølgningsproces, hvor der hurtigt bliver reageret på eventuelle risikoområder og efterfølgende mulighed for at iværksætte korrigerende handlinger"
     }
    ],
    "imod": [
     {
-     "tekst": "Overførsler på 1.966.000 kr. i mindreforbrug til 2027 kan tyde på, at nogle penge ikke bruges som planlagt.",
+     "tekst": "Er en intern gennemgang, hvor flere udvalg samtidig skal have tillægsbevillinger på op til 2.816.000 kr. finansieret af kassebeholdningen.",
      "grundlag": "sagen",
-     "kilde": "Forvaltningen"
+     "kilde": "Forvaltningen",
+     "daekning": "At der godkendes en tillægsbevilling på 2.816.000 kr. vedr. Socialudvalget, som finansieres af kassebeholdningen"
     }
    ]
   },
@@ -12946,6 +12949,424 @@
      "grundlag": "sagen",
      "kilde": "Forvaltningen",
      "daekning": "Kortlægningen af behov og muligheder er igangsat, og Økonomiudvalget vil modtage en særskilt sag, når resultaterne foreligger."
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-2": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Du mærker ingenting direkte i hverdagen. Sagen handler om at godkende Københavns regnskab for 2025, hvor service endte med et mindreforbrug på 93 mio. kr. Borgerrepræsentationen skal godkende det endeligt den 26. november 2026.",
+   "berorer": [],
+   "for": [
+    {
+     "tekst": "Giver en ren bundlinje: den eksterne revisor godkendte regnskabet uden forbehold, og antallet af revisionsbemærkninger falder fortsat.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Med beretningen godkendte kommunens eksterne revisor, EY, årsregnskabet for 2025 uden forbehold."
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Viser stadig svagheder: revisionen har siden 2021 påpeget, at styringen af informationssikkerhed skal styrkes væsentligt, og ledelsen har et uklart billede af sikkerhedsniveauet.",
+     "grundlag": "sagen",
+     "kilde": "Kontrol- og Rådgivningsudvalget",
+     "daekning": "Siden 2021 har revisionen løbende påpeget behovet for, at styringen og gennemsigtigheden af arbejdet med informationssikkerhed i KK styrkes væsentligt."
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-8": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Du mærker ikke noget direkte i hverdagen i 2027. Sagen fordeler 35,7 mio. kr. til kommunens fælles digitale fundament, mest til AI-infrastruktur (15 mio. kr.) og en fælles dataplatform (12,31 mio. kr.). Pengene kommer fra de 155 mio. kr., der blev afsat i Budget 2026, og sagen går videre til Borgerrepræsentationen.",
+   "berorer": [
+    "Kommunens medarbejdere",
+    "Borgere der kontakter kommunen digitalt",
+    "Sundheds- og Omsorgsforvaltningen og Socialforvaltningen"
+   ],
+   "for": [
+    {
+     "tekst": "Giver et fælles fundament af data og AI, som senere kan give medarbejderne mere tid til kerneopgaven og borgerne lettere adgang til hjælp.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Det betyder, at der kan frigives tid hos medarbejderne til kerneopgaven, og at borgere og virksomheder kan opleve lettere adgang til hjælp og mere tid til personlig dialog."
+    },
+    {
+     "tekst": "Gør det lettere at dele data på tværs af kommunen, så borgerne kan opleve mere sammenhængende service.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Investeringerne i dataplatformen understøtter, at data i højere grad kan deles, udveksles og anvendes på tværs."
+    },
+    {
+     "tekst": "Holder udgifterne inden for rammen, fordi bevillingen til dataplatformen ikke hæver anlægsmåltallet i 2027.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet",
+     "daekning": "I den forbindelse hæves Økonomiforvaltningens anlægsmåltal ikke i 2027, i stedet skal bevillingen afholdes inden for udvalgets anlægsramme."
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Giver ikke i sig selv besparelser, da investeringerne ikke indeholder en effektivisering.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Planen indeholder investeringer i forudsætningsskabende indsatser, som ikke i sig selv indeholder en effektivisering"
+    },
+    {
+     "tekst": "Udskyder de synlige gevinster for borgerne, fordi pengene først går til infrastruktur og først senere til noget, der direkte skaber værdi.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Når der er opbygget et fælles fundament på data og AI, vil det i de kommende år blive muligt også at anvende planen til investeringer, der mere direkte skaber værdi"
+    },
+    {
+     "tekst": "Er uklar om videre finansiering og effektiviseringer, som først afklares i løbet af 2027.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "I løbet af 2027, frem mod prioritering af 2028-midlerne, vil der skabes klarhed over videre finansiering af områderne"
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-3": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Sagen fastsætter, hvor mange penge de enkelte udvalg i København højst må planlægge at bruge på anlæg i 2027, i alt 4.542 mio. kr. Du mærker ikke noget direkte, men udvalgene skal tilpasse budgetterne med i alt 797 mio. kr., så nogle anlægsprojekter kan blive prioriteret om eller udskudt.",
+   "berorer": [
+    "Borgere med projekter i Klima-, Miljø- og Teknikudvalget",
+    "Brugere af kultur- og fritidsanlæg",
+    "Børne- og ungdomsområdet"
+   ],
+   "for": [
+    {
+     "tekst": "Holder kommunen inden for den aftalte anlægsramme og mindsker risikoen for modregning i bloktilskuddet.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Der er en sanktion, der indebærer modregning i bloktilskuddet, hvis kommunerne under et overskrider den aftalte anlægsramme i budgettet, men ikke i regnskabet."
+    },
+    {
+     "tekst": "Giver et tillæg på 7,5 pct. til måltallet, fordi nogle projekter erfaringsmæssigt ikke gennemføres som planlagt, så pengene bliver brugt.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Tillægget sker for at understøtte den samlede anlægseksekvering i kommunen"
+    },
+    {
+     "tekst": "Fordeler måltallet efter udvalgenes gennemsnit i regnskaberne 2023-2025, så enkelte år med udsving fylder mindre.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Den treårige periode anvendes for at gøre styringsmodellen mere robust over for udsving i eksekveringen i de enkelte regnskabsår."
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Kræver store nedjusteringer i budgetterne for flere udvalg, fx 428 mio. kr. i Klima-, Miljø- og Teknikudvalget og 219 mio. kr. i Kultur-, Fritids- og Borgerserviceudvalget.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "mens de øvrige udvalgs budgetter overstiger måltallet, jf. tabel 3."
+    },
+    {
+     "tekst": "Indebærer risiko for, at regnskabet alligevel overstiger anlægsrammen, hvis eksekveringen forbliver som i 2026.",
+     "grundlag": "sagen",
+     "kilde": "Risikovurderingen",
+     "daekning": "er der en risiko for, at regnskab 2027 overstiger anlægsrammen."
+    },
+    {
+     "tekst": "Omfordeler måltal fra forvaltninger med høj eksekvering til dem med lav, hvilket kan give de aktive forvaltninger mindre plads.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Det skaber en omfordeling af anlægsmåltal fra de forvaltninger, der historisk har haft høj eksekvering, til forvaltninger, der har haft mindre eksekvering."
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-15": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Copenhagen Sprint holdes igen 12.-13. juni 2027 med cykelfestival i Østre Anlæg, folkecykelløb og heppezoner på Sankt Hans Torv, Nørrebros Runddel, Dronning Louises Bro og Rådhuspladsen. Bor du langs ruten, kan der komme afspærringer, og ruten bliver ændret, så den også kører gennem Frederiksberg. Kommunen bruger 5 mio. kr. på værtskabet i 2027, og udvalget skal godkende planen.",
+   "berorer": [
+    "Beboere langs løbsruten",
+    "Børnefamilier og cykelinteresserede",
+    "Borgere på Nørrebro og Frederiksberg",
+    "Hobbycyklister der vil køre folkecykelløbet"
+   ],
+   "for": [
+    {
+     "tekst": "Giver stor tilfredshed blandt deltagerne: omkring 85 % af deltagerne ved folkecykelløbet og cykelfestivalen syntes godt om aktiviteterne.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "ca. 85 % af deltagerne til hhv. folkecykelløbet og cykelfestivalen i Østre Anlæg syntes godt om aktiviteterne."
+    },
+    {
+     "tekst": "Giver bedre fremkommelighed end i 2025, fordi indsatsen fra 2026 gav langt færre henvendelser og klager. Den samme informationsindsats gentages i 2027.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "har fået langt færre henvendelser på den telefoniske hotline, sociale medier og i antallet af klager og aktindsigter sammenlignet med 2025."
+    },
+    {
+     "tekst": "Giver københavnerne værdi: i en analyse svarer betalingsvilligheden til 46 mio. kr. i ekstra kommuneskat for et løb i 2028.",
+     "grundlag": "sagen",
+     "kilde": "Idrættens Analyseinstitut",
+     "daekning": "Københavnernes samlede betalingsvillighed for en afholdelse af Copenhagen Sprint i 2028 er opgjort til at være 46 mio. kr. i ekstra kommuneskat."
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Koster 5 mio. kr. i 2027, og kommunen har afsat yderligere 22,5 mio. kr. for 2028-2030. Pengene kunne ellers bruges på andre opgaver.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet",
+     "daekning": "Der er derudover i budget27 afsat 22,5 mio. samlet i årene 2028-2030 til fortsat at afholde Copenhagen Sprint."
+    },
+    {
+     "tekst": "Giver ikke alle glæde af løbet: 19 pct. i analysen helst ville være fri for det, selv hvis det ikke kostede noget.",
+     "grundlag": "sagen",
+     "kilde": "Idrættens Analyseinstitut",
+     "daekning": "19 pct. svarer, at de helst ville være fri for løbet, selv hvis det ikke kostede husstanden noget ekstra."
+    },
+    {
+     "tekst": "Giver ikke altid effekt: kulturkaravanen i 2026 blev kun bemærket af få tilskuere, og der skal nu bruges 0,3 mio. kr. på et nyt koncept.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Evalueringen har vist, at det kun var få tilskuere, der lagde mærke til den."
+    },
+    {
+     "tekst": "Giver gener for beboere langs ruten, fordi ruten udvides til Frederiksberg og byen spærres af i løbsweekenden.",
+     "grundlag": "debatten",
+     "kilde": "Fra debatten",
+     "daekning": ""
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-23": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Københavns Socialforvaltning venter at bruge 175-225 mio. kr. mere end budgetteret i 2026, især på udsatte børn og udsatte voksne. Kommunen foreslår, at Socialudvalget låner 200 mio. kr. internt og betaler ca. 217,2 mio. kr. tilbage over seks år. Du mærker ikke noget med det samme, men pengene skal findes i Socialudvalgets budget i de kommende år.",
+   "berorer": [
+    "Udsatte børn og unge i København",
+    "Udsatte voksne i København",
+    "Ansatte og brugere i Socialforvaltningen"
+   ],
+   "for": [
+    {
+     "tekst": "Lånet dækker et merforbrug, der ikke kan betales inden for årets budget, så forvaltningen kan håndtere udgifterne til udsatte børn og voksne.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Et internt lån giver mulighed for at håndtere et merforbrug, som ikke kan finansieres inden for forvaltningens budget i det pågældende år."
+    },
+    {
+     "tekst": "Lånet er fleksibelt: Bliver merforbruget mindre end 200 mio. kr., kan det overskydende betales tilbage med det samme, og der betales kun renter af det, der står tilbage.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Hvis det endelige lånebehov ved regnskabsafslutningen viser sig at være lavere end de 200 mio. kr., der søges om, kan Socialforvaltningen tilbagebetale det overskydende beløb straks i indeværende år."
+    },
+    {
+     "tekst": "Renten er fastlåst på 3,40 pct. i hele lånets løbetid, så renteudgiften på ca. 17,2 mio. kr. er kendt på forhånd.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Rentesatsen fastlåses for lånets løbetid og beregnes af den resterende gæld."
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Lånet koster ca. 17,2 mio. kr. i renter oven i de 200 mio. kr., som skal tilbagebetales.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet",
+     "daekning": "Socialforvaltningen skal således samlet tilbagebetale ca. 217,2 mio. kr., svarende til de 200 mio. kr. i hovedstol samt ca. 17,2 mio. kr. i renter."
+    },
+    {
+     "tekst": "Afdragene kræver, at Socialudvalget frigør penge i flere år ved at skære eller omprioritere på andre områder.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Det betyder, at der i de kommende år vil være behov for at frigøre midler gennem omprioriteringer og reduktioner af udgifter på andre områder."
+    },
+    {
+     "tekst": "Der er ikke afklaret, hvordan afdragene betales fra 2028. Den nuværende besparelse gælder kun for 2027.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Der er således ikke med sagen om udmøntning af Budget 2027 taget stilling til en varig rammebesparelse fra 2028 og frem"
+    },
+    {
+     "tekst": "Bliver merforbruget større end 200 mio. kr., kan der som udgangspunkt ikke optages et ekstra lån i 2026, og resten skal findes i egen ramme eller overføres til 2027.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Hvis det endelige merforbrug derimod overstiger de 200 mio. kr., vil det som udgangspunkt ikke være muligt at optage et yderligere internt lån i 2026"
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-24": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Københavns Kommune vil tage imod 3,5 mio. kr. fra staten over 2026-2029 til Natcaféen på Sundholm, som har 30 overnatningspladser til hjemløse. Pengene skal holde overnatningspladserne åbne. Du mærker ingen ændring som borger, men for hjemløse har det betydning, om pladserne bliver ved med at være åbne.",
+   "berorer": [
+    "Hjemløse og udsatte borgere i København",
+    "Brugere af Natcaféen på Sundholm"
+   ],
+   "for": [
+    {
+     "tekst": "Giver penge til at holde overnatningspladserne på Sundholm åbne, efter at en del af driften ikke længere kan finansieres af salg og statsrefusion.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Midlerne vil blive prioriteret til at holde overnatningspladserne åbne på tilbuddet."
+    },
+    {
+     "tekst": "Koster kommunen ikke ekstra, fordi puljemidlerne giver lige så store indtægter som udgifter i budgettet.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet",
+     "daekning": "Socialforvaltningen har fået tildelt i alt 3,5 mio. kr. fra Social- og Boligstyrelsens pulje."
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Løser ikke hele problemet, fordi Natcaféens budget ikke er i balance, selv med puljemidlerne.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Det bemærkes, at Natcaféen Sundholms budget på trods af bevillingen af puljemidler ikke er i balance."
+    },
+    {
+     "tekst": "Giver kun midlertidig støtte, og den videre drift og økonomi skal afklares i en separat sag senere.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Socialudvalget vil efter Borgerrepræsentationens beslutning få forelagt en separat sag om Natcaféens videre drift og økonomiske situation."
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-22": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Sagen ændrer ikke noget, du mærker som almindelig borger. Københavns Kommune vil låne 2,2 mio. kr. internt i 2026 til et nyt IT-system til tilsyn med erhvervsaffald. Lånet betales tilbage 2027-2031 via gebyrer fra de virksomheder, der får tilsyn. Økonomiudvalget skal kun sige, at udgifterne holdes inden for Klima-, Miljø- og Teknikudvalgets rammer.",
+   "berorer": [
+    "Virksomheder, der får tilsyn med erhvervsaffald",
+    "Sagsbehandlere i Klima-, Miljø- og Teknikforvaltningen"
+   ],
+   "for": [
+    {
+     "tekst": "Sparer tid på hver tilsynssag, fordi sagsbehandleren kan sende breve og rapporter og journalisere i samme arbejdsgang.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Forvaltningen forventer at kunne spare cirka 1-2 timer pr. tilsynssag."
+    },
+    {
+     "tekst": "Fordeler udgiften over fem år, så de virksomheder, der får tilsyn i 2027, ikke alene betaler for hele systemet.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Der er forudsat en 5-årig afdragsperiode, så det ikke er de virksomheder, der udvælges til at blive ført tilsyn med i 2027, der alene skal dække udgifterne"
+    },
+    {
+     "tekst": "Giver kortere sagsbehandlingstid og bedre service til virksomhederne i løbet af 2027, hvis udviklingen fortsætter nu.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "vil den positive forventede effektivisering, i form af forkortede sagsbehandlingstider og et øget serviceniveau til virksomhederne, kunne realiseres i løbet af 2027."
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Giver virksomhederne en regning via gebyrer, fordi afskrivningerne på systemet kommer med i gebyrerne i hele perioden.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet",
+     "daekning": "Afskrivningerne på IT-systemet vil indgå i gebyrsammensætningen i perioden, hvormed der skabes et overskud, svarende til afskrivningen af IT-systemet."
+    },
+    {
+     "tekst": "Kunne udskydes til 2027, hvor en del af udgifterne allerede er i takstgrundlaget, men systemet ville så blive færdigt senere og kunne påvirke tilsynsarbejdet.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Udskydningen af den fortsatte udvikling vil medføre, at systemet bliver senere færdigt."
+    },
+    {
+     "tekst": "Bruger 2,2 mio. kr. af udvalgets anlægsmåltal, som så ikke kan bruges til andre anlægsprojekter.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet",
+     "daekning": "Udgifterne til udviklingen af IT-systemet bliver afholdt inden for Klima-, Miljø- og Teknikudvalgets anlægsmåltal."
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-12": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Sagen ændrer ikke noget, du selv kan mærke fra dag til dag. Den handler om en aftale mellem hovedstadens kommuner og Region Østdanmark om, hvordan pladser på botilbud og specialskoler bliver købt, solgt og prissat fra 1. januar 2027. Indstillingen har ingen økonomiske konsekvenser i sig selv.",
+   "berorer": [
+    "Borgere med behov for botilbud eller specialtilbud",
+    "Børn og unge i specialundervisning",
+    "Københavns Kommunes socialområde"
+   ],
+   "for": [
+    {
+     "tekst": "Giver kommunerne en fælles tilgang til styring, takster, kapacitet og kvalitetskrav og dermed stærkere position over for private leverandører af botilbud.",
+     "grundlag": "sagen",
+     "kilde": "Socialforvaltningen",
+     "daekning": "Med de fælles initiativer vil kommunerne stå stærkere i forhold til at stille krav til fx den faglige tilgang og kvalitet i indsatsen til de private leverandører af botilbudspladser."
+    },
+    {
+     "tekst": "Gør det sværere for private leverandører at sælge en plads dyrere til en anden kommune, når alle kommuner i Region Østdanmark stiller krav sammen.",
+     "grundlag": "sagen",
+     "kilde": "Socialforvaltningen",
+     "daekning": "den private leverandør fx ikke bare kan ”vende sig om” og sælge pladsen dyrere til anden kommune, når alle kommuner i Region Østdanmark"
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Giver ikke mulighed for at styre udgifterne på det private marked, hvor priserne stiger kraftigt, og som belaster socialområdets økonomi.",
+     "grundlag": "sagen",
+     "kilde": "Socialforvaltningen",
+     "daekning": "Aftalen giver således ikke mulighed for at styre udgifterne på det private marked, hvor enhedspriserne stiger meget i disse år, hvilket udfordrer økonomien på socialområdet."
+    },
+    {
+     "tekst": "Kan blive svær for København at overholde, fordi taksterne på længere sigt forventes at stige, når egne pladser omlægges til borgere med mere komplekse behov.",
+     "grundlag": "sagen",
+     "kilde": "Socialforvaltningen",
+     "daekning": "Københavns Kommune som helhed (specialundervisningstilbud i Børne-Ungdomsforvaltningen og Socialforvaltningens bo- og dagtilbud) kan dermed få udfordringer med at overholde aftalen om at følge pris- og lønreguleringen for de takstbelagte tilbud."
+    }
+   ]
+  },
+  "kk-2026-11-17-økonomiudvalget-16": {
+   "type": "dagsorden",
+   "v": 2,
+   "lavet": "2026-11-10",
+   "hverdag": "Sagen ændrer ikke noget, du mærker lige nu. Den svarer på et forslag fra Radikale Venstre om, at politikerne skal styre By & Havn mere. Staten har sagt nej til toårige planer og til opkøb af grunde, men åbner for, at kommunen kan overtage tilladelser til havnebade, badezoner og events på vandet. Det skal undersøges i en ny sag.",
+   "berorer": [
+    "Brugere af havnebade og badezoner i Københavns Havn",
+    "Arrangører af kultur- og fritidsevents på vandet",
+    "Borgere der venter på flere almene boliger og ejerboliger"
+   ],
+   "for": [
+    {
+     "tekst": "Giver kommunen mulighed for at komme tættere på byudviklingen med faste møder, midtvejsstatus på ejerstrategien og flere data om boliger, uden at lovgivningen skal ændres.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Økonomiforvaltningen ser flere muligheder for, at Borgerrepræsentationen indenfor gældende lovgivning kan komme tættere på tilrettelæggelse af byudviklingen på By & Havns arealer"
+    },
+    {
+     "tekst": "Kan samle tilladelser til havnebade, badezoner og events hos kommunen, som allerede er tilsynsmyndighed, initiativtager og samarbejdspartner på området.",
+     "grundlag": "sagen",
+     "kilde": "Forvaltningen",
+     "daekning": "Kommunen er både myndighed, men også initiativtager og samarbejdspartner."
+    },
+    {
+     "tekst": "Holder muligheden åben, fordi Finansministeriet er indstillet på at drøfte at overdrage enkelte afgrænsede myndighedsopgaver til kommunen.",
+     "grundlag": "sagen",
+     "kilde": "Finansministeriet via forvaltningen",
+     "daekning": "Finansministeriet er indstillet på at indgå i en videre dialog med Københavns Kommune om muligheden for overdragelse af enkelte afgrænsede myndighedsopgaver fra By & Havn til Københavns Kommune."
+    }
+   ],
+   "imod": [
+    {
+     "tekst": "Giver ikke politikerne den styring, medlemsforslaget ønskede, fordi staten afviser toårige udviklingsplaner med handlepligt for By & Havn, som et selskab der skal drives forretningsmæssigt.",
+     "grundlag": "sagen",
+     "kilde": "Finansministeriet via forvaltningen",
+     "daekning": "By & Havn I/S er et kommercielt selskab, som skal drives på forretningsmæssigt grundlag"
+    },
+    {
+     "tekst": "Afviser, at By & Havn kan købe grunde og ejendomme i den eksisterende by, så forslaget om flere boliger gennem opkøb ikke kan gennemføres.",
+     "grundlag": "sagen",
+     "kilde": "Finansministeriet via forvaltningen",
+     "daekning": "en generel adgang for By & Havn til at opkøbe ubeslægtede arealer og ejendomme i København uden direkte tilknytning til selskabets eksisterende portefølje"
+    },
+    {
+     "tekst": "Koster ressourcer, hvis kommunen overtager tilladelserne, og samarbejdet med By & Havn og mange andre myndigheder skal fortsat fungere.",
+     "grundlag": "sagen",
+     "kilde": "Økonomiafsnittet",
+     "daekning": "vil kommunen skulle afsætte ressourcer til myndighedsopgaven."
     }
    ]
   }

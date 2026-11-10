@@ -371,6 +371,38 @@
    "dato": "2026-11-12",
    "punkter": 1,
    "parser": 3
+  },
+  "f5b94e15-12be-4bbf-b189-bb39ce990278": {
+   "lastmod": "2026-11-10",
+   "type": "dagsorden",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "punkter": 16,
+   "parser": 3
+  },
+  "7b618357-cb13-4cec-b8cc-b51b6a87557b": {
+   "lastmod": "2026-11-10",
+   "type": "dagsorden",
+   "udvalg": "Lokalplan 8 - 2A udvalget",
+   "dato": "2026-11-16",
+   "punkter": 4,
+   "parser": 3
+  },
+  "4f41cfee-2fbf-44ad-b059-a65a31665364": {
+   "lastmod": "2026-11-10",
+   "type": "dagsorden",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "punkter": 16,
+   "parser": 3
+  },
+  "655dd610-2bf1-4927-9f4b-4c2b75d089e5": {
+   "lastmod": "2026-11-10",
+   "type": "referat",
+   "udvalg": "Bygningsforbedringsudvalget",
+   "dato": "2026-11-09",
+   "punkter": 1,
+   "parser": 3
   }
  },
  "sager": {
@@ -5301,15 +5333,15 @@
    "kommune": "Ærø",
    "udvalg": "Bygningsforbedringsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=46c2993a-b4e2-4ac5-be84-d0229acca247",
-   "hentet": "2026-10-27T19:39:26.761Z",
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=655dd610-2bf1-4927-9f4b-4c2b75d089e5",
+   "hentet": "2026-11-10T21:06:25.795Z",
    "titel": "Bygningsforbedringsudvalget - Baghus - vinduer og døre - Baggavle 6, 5970 Ærøskøbing",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indledning:\nUdvalget anmodes om tilskud til forsats- samt restaurering af vinduer og døre på ejendommen\nbeliggende Baggavle 6, 5970 Ærøskøbing.\n\nSagsfremstilling:\nUdvalget anmodes om stillingtagen til fremsendte ansøgning om tilskud til forsats- samt\nrestaurering af vinduer og døre på ejendommen beliggende Baggavle 6, 5970 Ærøskøbing.\n\nIndstilling:\nUdvalget anmodes om stillingtagen til fremsendte ansøgning om tilskud."
+     "titel": "Beslutning",
+     "tekst": "Der ydes et tilskud på:\n- Restaurering af 4 stk vinduer - 50 % - 15.791,50 kr.\n- Forsatsvinduer 4 stk - 25 % - 6.940,00 kr.\n- Facadearbejder - afrens - 25 % - 11.268,75 kr.\n- Forsatsdøre - 2 stk - 25 % - 6.787,50 kr.\n- Restaurering af 2 døre - 50 % - 12.005,00 kr.\nDet samlede beløb vil herefter maksimalt kunne udgøre i alt: 52.792,75 kr."
     }
    ],
    "bilag": []
@@ -6061,6 +6093,654 @@
     }
    ],
    "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-1": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-1",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagsfremstilling:\nUdvalget anmodes om at godkende dagsordenen."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-2": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-2",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Beslutning om at sende afgrænsningsnotat for vindmøller ved Tværbymark i høring",
+   "afsnit": [
+    {
+     "titel": "Videre proces",
+     "tekst": "Projektet ligger inden for strandbeskyttelseslinjen. Den 23. oktober meddelte Kystdirektoratet\nafslag på Vind 6's ansøgning om dispensation fra Strandbeskyttelseslinjen til opstilling af\nvindmøller ved Tværbymark. Afslaget vedrører den ansøgte placering indenfor\nStrandbeskyttelseslinjen.\nAfslaget er påklaget. Udfaldet af klagesagen har betydning for muligheden for at realisere\nprojektet som ansøgt. Kommunalbestyrelsen kan derfor vælge at sætte projektet i bero indtil\nder er en afgørelse på klagesagen, eller at fortsætte med høringen af afgrænsningsnotatet.\nHvis plan- og miljøvurderingsprocessen fortsætter:\nHvis høringen af afgrænsningsnotatet gennemføres, mens klagesagen behandles, får borgere\nog berørte myndigheder mulighed for at bidrage med lokal viden, bekymringer samt faglige\ninput til hvilke miljøforhold der bør undersøges nærmere i miljørapporten.\nSamtidig kan de nødvendige miljøundersøgelser gennemføres inden for de relevante sæsoner.\nDet gælder f.eks. undersøgelse for flagermus. Det reducerer risikoen for yderligere forsinkelse\nhvis klagesagen giver mulighed for at fortsætte projektet som ansøgt.\nDe videre undersøgelser kan samtidig afdække andre miljø- og planmæssige forhold, som kan\nvære til hinder for projektets gennemførelse. Hvis undersøgelserne viser , at projektet ikke kan\nrealiseres af andre årsager, kan udfaldet af klagesagen om strandbeskyttelseslinjen få mindre\n\neller ingen betydning for projektets videre forløb.\nEn fortsættelse indebærer en økonomisk og ressourcemæssig risiko. Her skal det bemærkes,\nat de administrative ressourcer begrænser sig til høringen af afgrænsningsnotatet, og den\npolitiske behandling af høringssvar. Mens udgifter til miljøundersøgelser og rådgivning afholdes\naf ansøger. Det ændre dog ikke ved, at hvis klagesagen ikke fører til den nødvendige\ndispensation fra strandbeskyttelseslinjen, kan dele af det gennemførte arbejde vise sig ikke at\nkunne anvendes.\nHvis plan- og miljøvurdering sættes i bero.\nSættes plan- og miljøvurderingsprocessen i bero indtil udfaldet af klagesagen er kendt,\nreduceres risikoen for at der bruges ressourcer på arbejde, som senere viser sig ikke at kunne\nanvendes, fordi projektet ikke kan gennemføres.\nHvis klagesagen falder ud til at projektet kan fortsætte vil en be-ro periode forskyde den\nsamlede proces. det gælder særligt miljøundersøgelser, som skal gennemføres på bestemte\ntidspunkter af året eller over flere sæsoner.\nHvis en relevant undersøgelsesperiode overskrides, kan undersøgelserne først gennemføres i\nen senere sæson, og forsinkelsen bliver dermed længere end selve klagens behandlingstid.\nSamtidig udskydes høringen af afgrænsningsnotatet, og dermed borgernes og\nmyndighedernes mulighed for at bidrage med lokal viden, opmærksomhedspunkter og faglige\ninput. Det kan betyde at forhold, som kan få betydning for miljørapporten, projektets\nudformning eller mulighed for at gennemføre projektet, først bliver identificeret på et senere\ntidspunkt.\nDe miljøforhold, som projektet eller planerne kan påvirke væsentligt, undersøges og vurderes\nnærmere i miljørapporten. Miljøforhold, som ikke forventes at blive væsentligt påvirket,\nbehandles ikke yderligere i miljørapporten. Begrundelsen herfor fremgår af\nafgrænsningsnotatet.\nTidsplan\nHvis kommunalbestyrelsen beslutter, at sende afgrænsningsnotaterne i otte ugers offentlig\nhøring hos borgere og berørte myndigheder, forslås følgende proces for høring og\nborgerinddragelse.\nAfgrænsningsnotatet sendes i høring hos relevante berørte myndigheder og\ninteressenter.\nAfgrænsningsnotatet offentliggøres på Ærø Kommunes høringsportal, hvor borgere og\nøvrige interesserede får mulighed for at indsende høringssvar.\nFor at sikre en åben og gennemsigtig proces med lokal inddragelse foreslås det desuden at:\nafgrænsningsnotatet offentliggøres på Ærø Kommunes høringsportal sammen med en\nkort og letforståelig beskrivelse af projektet og høringens formål.\nbeboere i og omkring projektområdet orienteres direkte om høringen.\n\nder afholdes et borgermøde, hvor projektet, afgrænsningsnotatet og den videre proces\npræsenteres.\nEfter høringsperioden samles og vurderes de indkomne høringssvar. Bemærkninger, der har\nbetydning for miljørapportens indhold og detaljeringsgrad, indarbejdes i den endelige\nafgrænsning.\nDe indkomne høringssvar og tilrettede afgrænsningsnotat fremlægges herefter til fornyet\npolitisk behandling og beslutning, inden arbejdet med miljørapporten fortsætter.\n\nHistorik:\nKommunalbestyrelsen vedtog Klimaplan 2022, i oktober 2022, som danner baggrund for\nkommunens arbejde med vedvarende energi. Herefter blev der gennemført en ansøgnings- og\nudvælgelsesproces for mulige vindmølleprojekter på Ærø.\nSom led i processen blev der den 1 oktober 2025 afholdt informations- og dialog møde om\nvindmølleprojekterne. Ærø Vind 6 I/S indsendte den 30 oktober 2025 en ansøgning til Ærø\nkommune om tilladelse til at opstille ved Tværbymark. De ansøgte vindmøller har en samlet\ninstalleret kapacitet på 6 MW.\nVindmølleprojektet ved Tværbymark er det sydlige af de to vindmølleprojekter, der arbejdes\nvidere med på Ærø. Det andet projekt er placeret ved Leby Kobbel og behandles i en særskilt\nparallel planproces. De kumulative virkninger af projekterne skal belyses i miljørapporterne.\nÆrø kommune har igangsat udarbejdelsen af lokalplan og kommuneplantillæg for projektet.\nSvendborg Kommune varetager myndighedsopgaven vedrørende miljøkonsekvensvurderingen\nsom led i det forpligtende samarbejde.\nÆrø og Svendborg kommune har i sommer og efterår 2026 i samarbejde med bygherre og\nrådgivere arbejdet med afgrænsningsnotatet, som fastlægger, hvilke miljøforhold der skal\nundersøges nærmere i miljøvurderingen. afgrænsningsnotatet har været gennem intern faglig\nhøring og forelægges nu med henblik på en offentlig høring efter politisk vedtagelse.\n\nRetsgrundlag:\nPlanloven.\nLov om miljøvurdering af planer og programmer og af konkrete projekter. (MKV),\nherunder reglerne om afgrænsning af miljørapportens og miljøkonsekvensrapportens\nindhold.\n\nTværgående politikker:\nSagen har sammenhæng med Ærø kommunes Klimaplan 2022 og kommunens arbejde med\nden grønne omstilling.\n\nPersonaleforhold:\nSagen har ingen personalemæssige konsekvenser.\n\nKlimakonsekvenser\nVindmølleprojektet har til formål at bidrage til produktionen af vedvarende energi og dermed til\nden grønne omstilling. Projektets samlede klima- og miljøpåvirkninger kan ikke vurderes\nendeligt på nuværende tidpunkt. Disse forhold skal undersøges nærmere i den kommende\nmiljørapport, hvor både positive og negative påvirkninger skal belyses.\n\nAdministrativ bemærkning:\nIngen.\n\nØkonomi:\nSagen har ingen umiddelbare økonomiske konsekvenser for Ærø Kommune.\n\nSagen afgøres af:\nKommunalbestyrelsen.\n\nIndstilling:\nTeknisk Afdeling indstiller at Kommunalbestyrelsen træffer beslutning om at gå videre med en\naf følgende muligheder:\nA) Processen fortsætter og afgrænsningsnotat sendes i offentlig høring og til berørte\nmyndigheder som foreslået. Den videre planlægning og miljøvurdering gennemføres dermed\nsideløbende med behandling af klagesagen.\nB) Processen sættes i bero, og den videre behandling af afgrænsningsnotatet og\nmiljøvurderingen afventer, at der foreligger en afgørelse i klagesagen."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-3": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-3",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Beslutning om at sende afgrænsningsnotat for vindmøller ved Leby Kobbel i høring",
+   "afsnit": [
+    {
+     "titel": "Videre proces",
+     "tekst": "Projektet ligger inden for strandbeskyttelseslinjen. Den 23. oktober meddelte Kystdirektoratet\nafslag på Vind 6's ansøgning om dispensation fra Strandbeskyttelseslinjen til opstilling af\nvindmøller ved Leby Kobbel. Afslaget vedrører den ansøgte placering indenfor\nStrandbeskyttelseslinjen.\nAfslaget er påklaget. Udfaldet af klagesagen har betydning for muligheden for at realisere\nprojektet som ansøgt. Kommunalbestyrelsen kan derfor vælge at sætte projektet i bero indtil\nder er en afgørelse på klagesagen, eller at fortsætte med høringen af afgrænsningsnotatet.\nHvis plan- og miljøvurderingsprocessen fortsætter:\nHvis høringen af afgrænsningsnotatet gennemføres, mens klagesagen behandles, får borgere\nog berørte myndigheder mulighed for at bidrage med lokal viden, bekymringer samt faglige\ninput til hvilke miljøforhold der bør undersøges nærmere i miljørapporten.\nSamtidig kan de nødvendige miljøundersøgelser gennemføres inden for de relevante sæsoner.\nDet gælder f.eks. undersøgelse for flagermus. Det reducerer risikoen for yderligere forsinkelse\nhvis klagesagen giver mulighed for at fortsætte projektet som ansøgt.\nDe videre undersøgelser kan samtidig afdække andre miljø- og planmæssige forhold, som kan\nvære til hinder for projektets gennemførelse. Hvis undersøgelserne viser , at projektet ikke kan\nrealiseres af andre årsager, kan udfaldet af klagesagen om strandbeskyttelseslinjen få mindre\n\neller ingen betydning for projektets videre forløb.\nEn fortsættelse indebærer en økonomisk og ressourcemæssig risiko. Her skal det bemærkes,\nat de administrative ressourcer begrænser sig til høringen af afgrænsningsnotatet, og den\npolitiske behandling af høringssvar. Mens udgifter til miljøundersøgelser og rådgivning afholdes\naf ansøger. Det ændre dog ikke ved, at hvis klagesagen ikke fører til den nødvendige\ndispensation fra strandbeskyttelseslinjen, kan dele af det gennemførte arbejde vise sig ikke at\nkunne anvendes.\nHvis plan- og miljøvurdering sættes i bero.\nSættes plan- og miljøvurderingsprocessen i bero indtil udfaldet af klagesagen er kendt,\nreduceres risikoen for at der bruges ressourcer på arbejde, som senere viser sig ikke at kunne\nanvendes, fordi projektet ikke kan gennemføres.\nHvis klagesagen falder ud til at projektet kan fortsætte vil en be-ro periode forskyde den\nsamlede proces. det gælder særligt miljøundersøgelser, som skal gennemføres på bestemte\ntidspunkter af året eller over flere sæsoner.\nHvis en relevant undersøgelsesperiode overskrides, kan undersøgelserne først gennemføres i\nen senere sæson, og forsinkelsen bliver dermed længere end selve klagens behandlingstid.\nSamtidig udskydes høringen af afgrænsningsnotatet, og dermed borgernes og\nmyndighedernes mulighed for at bidrage med lokal viden, opmærksomhedspunkter og faglige\ninput. Det kan betyde at forhold, som kan få betydning for miljørapporten, projektets\nudformning eller mulighed for at gennemføre projektet, først bliver identificeret på et senere\ntidspunkt.\nDe miljøforhold, som projektet eller planerne kan påvirke væsentligt, undersøges og vurderes\nnærmere i miljørapporten. Miljøforhold, som ikke forventes at blive væsentligt påvirket,\nbehandles ikke yderligere i miljørapporten. Begrundelsen herfor fremgår af\nafgrænsningsnotatet.\nTidsplan\nHvis kommunalbestyrelsen beslutter, at sende afgrænsningsnotaterne i otte ugers offentlig\nhøring hos borgere og berørte myndigheder, forslås følgende proces for høring og\nborgerinddragelse.\nAfgrænsningsnotatet sendes i høring hos relevante berørte myndigheder og\ninteressenter.\nAfgrænsningsnotatet offentliggøres på Ærø Kommunes høringsportal, hvor borgere og\nøvrige interesserede får mulighed for at indsende høringssvar.\nFor at sikre en åben og gennemsigtig proces med lokal inddragelse foreslås det desuden at:\nafgrænsningsnotatet offentliggøres på Ærø Kommunes høringsportal sammen med en\nkort og letforståelig beskrivelse af projektet og høringens formål.\nbeboere i og omkring projektområdet orienteres direkte om høringen.\n\nder afholdes et borgermøde, hvor projektet, afgrænsningsnotatet og den videre proces\npræsenteres.\nEfter høringsperioden samles og vurderes de indkomne høringssvar. Bemærkninger, der har\nbetydning for miljørapportens indhold og detaljeringsgrad, indarbejdes i den endelige\nafgrænsning.\nDe indkomne høringssvar og tilrettede afgrænsningsnotat fremlægges herefter til fornyet\npolitisk behandling og beslutning, inden arbejdet med miljørapporten fortsætter.\n\nHistorik:\nKommunalbestyrelsen vedtog Klimaplan 2022, i oktober 2022, som danner baggrund for\nkommunens arbejde med vedvarende energi. Herefter blev der gennemført en ansøgnings- og\nudvælgelsesproces for mulige vindmølleprojekter på Ærø.\nSom led i processen blev der den 1 oktober 2025 afholdt informations- og dialog møde om\nvindmølleprojekterne. Ærø Vind 6 I/S indsendte den 30 oktober 2025 en ansøgning til Ærø\nkommune om tilladelse til at opstille ved Leby Kobbel. De ansøgte vindmøller har en samlet\ninstalleret kapacitet på 6 MW.\nVindmølleprojektet ved Leby Kobbel er det sydlige af de to vindmølleprojekter, der arbejdes\nvidere med på Ærø. Det andet projekt er placeret ved Tværbymark og behandles i en særskilt\nparallel planproces. De kumulative virkninger af projekterne skal belyses i miljørapporterne.\nÆrø kommune har igangsat udarbejdelsen af lokalplan og kommuneplantillæg for projektet.\nSvendborg Kommune varetager myndighedsopgaven vedrørende miljøkonsekvensvurderingen\nsom led i det forpligtende samarbejde.\nÆrø og Svendborg kommune har i sommer og efterår 2026 i samarbejde med bygherre og\nrådgivere arbejdet med afgrænsningsnotatet, som fastlægger, hvilke miljøforhold der skal\nundersøges nærmere i miljøvurderingen. Afgrænsningsnotatet har været gennem intern faglig\nhøring og forelægges nu i en offentlig høring efter politisk vedtagelse.\n\nRetsgrundlag:\nPlanloven.\nLov om miljøvurdering af planer og programmer og af konkrete projekter.(MKV) herunder\nreglerne om afgrænsning af miljørapportens og miljøkonsekvensrapportens indhold.\n\nTværgående politikker:\nSagen har sammenhæng med Ærø kommunes Klimaplan 2022 og kommunens arbejde med\nden grønne omstilling.\n\nPersonaleforhold:\nSangen har ingen personalemæssige konsekvenser.\n\nKlimakonsekvenser\n\nVindmølleprojektet har til formål at bidrage til produktionen af vedvarende energi og dermed til\nden grønne omstilling. projektets samlede klima- og miljøpåvirkninger kan ikke vurderes\nendeligt på nuværende tidpunkt. Disse forhold skal undersøges nærmere i den kommende\nmiljørapport, hvor både positive og negative påvirkninger skal belyses.\n\nAdministrativ bemærkning:\nIngen.\n\nØkonomi:\nSagen har ingen umiddelbar økonomiske konsekvenser for Ærø kommune.\n\nSagen afgøres af:\nKommunalbestyrelsen.\n\nIndstilling:\nTeknisk Afdeling indstiller at Kommunalbestyrelsen træffer beslutning om at gå videre med en\naf følgende muligheder:\nA) Processen fortsætter og afgrænsningsnotat sendes i offentlig høring og til berørte\nmyndigheder som foreslået. Den videre planlægning og miljøvurdering gennemføres dermed\nsideløbende med behandling af klagesagen.\nB) Processen sættes i bero, og den videre behandling af afgrænsningsnotatet og\nmiljøvurderingen afventer, at der foreligger en afgørelse i klagesagen."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-4": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-4",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Stillingtagen til Vedtægter for Grundejerforeningen Jørbæk Strand Sommerhusområde",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nStillingtagen til 'Vedtægter for Grundejerforeningen Jørbæk Strand Sommerhusområde'.\n\nSagsfremstilling:\nSommerhusområdet Jørbæk Strand er omfattet af Lokalplan 19-14.\nDet fremgår af lokalplanens § 12, at der skal oprettes en grundejerforening og at vedtægterne\nfor grundejerforeningen skal godkendes af Ærø Kommune.\nDa grundejerforeningens vedtægter bliver tinglyst på ejendommene, kan en ejer af fast\nejendom kun gyldigt pålægge ejendommen servitutbestemmelser om forhold, hvorom der kan\noptages bestemmelser i en lokalplan, hvor Kommunalbestyrelsen har givet et forudgående\ngyldigt samtykke hertil. Det fremgår af Planlovens § 42 stk. 1. Samtykket er en\ngyldighedsbetingelse for servitutten og skal påføres servitutdokumentet jf. stk. 2.\nVedtægterne fastlægger rammerne for grundejerforeningens virke, herunder foreningens\nformål, medlemskab, medlemmernes rettigheder og forpligtelser samt foreningens ledelse og\nøkonomi. Vedtægterne regulerer desuden grundejerforeningens ansvar for fælles forhold i\nområdet, herunder fællesarealer, veje, regnvandshåndtering og renovation i overensstemmelse\nmed lokalplanens bestemmelser.\nVedtægterne fremlægges derfor til Kommunalbestyrelsens godkendelse.\n\nHistorik:\n'Vedtægter for Grundejerforeningen Jørbæk Strand Sommerhusområde' blev fremlagt på\nTeknik-, miljø- og havneudvalgets møde den 24. august 2026. På grund af\ngrundejerforeningens efterfølgende ændringer til vedtægterne blev de ikke sendt videre til\ngodkendelse i Økonomi- og erhvervsudvalget og Kommunalbestyrelsen.\n\nRetsgrundlag:\nPlanloven.\n\nPersonaleforhold:\nIngen.\n\nØkonomi:\nIngen.\n\nSagen afgøres af:\nKommunalbestyrelsen.\n\nIndstilling:\nTeknisk afdeling indstiller, at 'Vedtægter for Grundejerforeningen Jørbæk Strand\nSommerhusområde' vedtages."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-5": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-5",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Stillingtagen til sti mellem Tværby og Øster Bregninge",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nStillingtagen til om stien fra matrikel 14f Ø. Bregninge By, Bregninge, til den private fællesvej\nØster Bregninge 69-75 skal optages som offentlig sti.\n\nSagsfremstilling:\nDer har været tilbagevendende henvendelser fra flere beboere i Bregninge om, hvorvidt stien\nfra matrikel 14f Ø. Bregninge By, Bregninge til den private fællesvej Øster Bregninge 69-75 er\noffentlig (Stiens forløb ses i bilag).\nStiforløbet er ikke en offentlig sti\nAdministrationen har ikke kunnet finde dokumentation for at stien opfylder vejlovgivningens\nbetingelser for at være en offentlig sti, da der ikke er fundet dokumentation for at stien var\noptaget på stifortegnelsen før 1. september 1972 eller efterfølgende skulle være optaget som\noffentlig sti ved en kommunal beslutning. Stien må derfor anses for at være en privat sti eller\nen privat fællessti. Vedligeholdet af stien vil derfor i dag være ejers eller brugernes ansvar.\nStien fra matr. nr. 57e Ø. Bregninge by, Bregninge til den private fællesvej til Tværby 25 over\nmatrikel 14f Ø. Bregninge by, Bregninge\nEjeren af matr.nr. 14f Ø. Bregninge by, Bregninge har oplyst, at kan ikke kan anerkende, at\nstien er en privat fællessti.\nDet er administrationens vurdering, at strækningen fra matr.nr. 57e Ø. Bregninge by,\nBregninge til den private fællesvej til Tværby 25 kan behandles som privat fællessti med ejeren\naf matr. nr. 57e som vejberettiget. Vurderingen er baseret på vejrettighedslovens § 1, stk. 1,\nhvor det fremgår, at en vejret, selv om den ikke er tinglyst, kan være beskyttet, når vejen er\nden eneste eller væsentligste adgang til en ejendom, og vejen fremgår af matrikelkortet i\noverensstemmelse med forholdene i marken. Da den pågældende strækning udgør den\nkorteste forbindelse fra matr.nr. 57e til offentlig vej, kan kommunen administrere denne del af\nstien som privat fællessti, men kommunen kan ikke endeligt afgøre, om der består en privat\nvejret. Med udgangspunkt i lov om vejrettigheder kan kommunen træffe afgørelse om\nvedligeholdelse efter privatvejsloven. Afgørelsen vil kunne påklages til Vejdirektoratet, som\nherefter kan tage stilling til, om kommunen har tilstrækkeligt grundlag til at administrere\nstrækningen som privat fællessti. Hvis strækningen er en privat fællessti, påhviler\nvedligeholdelsesansvaret den vejberettigede grundejer.\nStrækningen fra den matr.nr. 57e Ø. Bregninge by, Bregninge til den private fællesvej Øster\nBregninge 69-75\nDet resterende stiforløb var matr.nr. 57e Ø. Bregninge by, Bregninge til den private fællesvej\nØster Bregninge 69-75 vurderes ikke at kunne administreres som privat fællessti efter\nvejrettighedslovens § 1, stk. 1. Denne del må derfor anses som privat sti. For denne strækning\npåhviler vedligeholdelsen grundejerne i det omfang, de finder det nødvendigt, eller det er\nnødvendigt for at undgå ansvar for uheld i forbindelse med lovlig færdsel på stien.\n\nØnske om at nedlægge en del af stien\nEjerne af matr.nr. 14a Ø. Bregninge by, Bregninge, ønsker at nedlægge den del af den\nformodede private sti, der løber mellem matr. nr. 21b og 21h. Ø. Bregninge by, Bregninge. Ærø\nKommune skal som vejmyndighed ikke tage stilling til nedlæggelse af en privat sti.\nSvendborg Kommune har vurderet stien i forhold til Naturbeskyttelsesloven, og har efter tilsyn\ntruffet afgørelse om at det stiforløb ikke er omfattet af Naturbeskyttelseslovens bestemmelser.\nHandlemuligheder\nHvis Kommunalbestyrelsen ønsker, at stien i dens fulde længde skal være offentlig sti,\nforudsætter det, at arealet erhverves ved opkøb. Enten ved frivillige aftaler eller ved\nekspropriation. I dette tilfælde må det forventes at være nødvendigt at ekspropriere.\nEt stiprojekt omfatter i så fald gennemførelse af åstedsforretning, udmatrikulering,\ngennemførelse af en eller flere taksationssager i tilfælde af utilfredshed med de tilbudte\nerstatninger, erstatningsudbetaling og tinglysning. Umiddelbart kan et projekt skønsmæssigt\nløbe op i 200-400 tkr. Afhængig af sagens forløb.\nEfterfølgende anslås det, at der vil være en udgift på 20 tkr. til rydning og genetablering af\nstien, de steder, hvor den er meget lidt fremkommelig.\nDen årlige udgift til vedligehold anslås at være 5-8 tkr.\nI forbindelse med Teknik-, miljø- og havneudvalgets møde den 6. oktober 2026 fremlagde\nBregninge Lokalråd deres udviklingsplan, herunder planer om at udvikle nyt stisystem omkring\nBregninge i samarbejde med lokale lodsejere og Ærø Kommune, samt mulighed for at\nlokalrådet kunne søge ekstern finansiering til en formalisering af de stier hos f.eks. Danske\nNaturstier, Friluftsrådet eller andre. Det skal i den forbindelse bemærkes, at der i de kendte\ntilskudsordninger ikke kan søges midler til udbetaling af erstatninger og gennemførelse af\nekspropriationssager.\n\nHistorik:\nIngen.\n\nRetsgrundlag:\nLov om offentlige veje.\nLov om private fællesveje.\nLov nr. 143 af 13. april 1938 om private vejrettigheder.\n\nTværgående politikker:\nIngen.\n\nPersonaleforhold:\n\nIngen.\n\nØkonomi:\nDer er i kommunens budget ikke afsat midler til etablering og drift af nye stier.\n\nSagen afgøres af:\nTeknik-, miljø- og havneudvalget.\n\nIndstilling:\nTeknisk afdeling indstiller, at Teknik-, miljø og havneudvalget beslutter:\n1. om man ønsker at igangsætte en proces for erhvervelse af jorden som det gamle\nstiforløb ligger på, med henblik på at etablere en offentlig sti, eller\n2. om man ønsker at indgå i et samarbejde med lokalrådet i Bregninge for belysning af\nmulighederne for at lave nye stisystemer omkring Bregninge, eller\n3. at man ikke ønsker at gøre yderligere for stier i Bregninge på nuværende tidspunkt."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-6": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-6",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Vedtagelse af klimatilpasningsplan",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nÆrø Kommunes Klimatilpasningsplan 2026 forelægges til godkendelse.\n\nSagsfremstilling:\nDer foreligger nu et samlet udkast til klimatilpasningsplan for Ærø kommune.\nFormålet med klimatilpasningsplanen er at skabe et samlet strategisk grundlag for, hvordan\nÆrø Kommune kan styrke robustheden af kritisk infrastruktur i forhold til fremtidige\nklimahændelser.\nEt opdateret risikobillede\nMed afsæt i nyeste data er der udarbejdet et samlet klimarisikobillede for kommunen med\nudgangspunkt i 17 lokaliteter, der i kommuneplanen er udpeget til at indgå i planlægning for\nkystbeskyttelse. Analysen viser, at højvande, stormflod og erosion udgør de største klimafarer\npå Ærø. Konsekvenserne kan øges betydeligt ved koblede hændelser, hvor flere\nklimahændelser opstår samtidig, for eksempel vind, ekstrem nedbør og højvande.\nPrincipper for klimatilpasning\nPlanen arbejder med fire overordnede strategier til håndtering af klimarisici:\nForebyggelse (af nye risici)\nBeskyttelse (fx diger og højvandsmure)\nTilpasning (øget robusthed og håndtering af risiko)\nTransition (ændret arealanvendelse over tid)\nFor hver af de 17 lokaliteter er der anbefalet en strategi og mulige tiltag.\nHandleplan\nDa kommunen ikke kan sikre hele øen på én gang, er der lavet en vurdering af, hvor\nkommunen først bør sætte ind ved hjælp af en analyse af de 17 lokaliteter. Med udgangspunkt\ni analysens resultater, er der udarbejdet et forslag til en handleplan på kort, mellem og lang\nsigt.\nKort sigt (frem mod 2030)\nDrejet, Havsmarken og Bakkevej: Videre konkretesering af kystsikringsprojekt, afsøgning\naf finansieringsmuligheder\nEriks Hale: Fortsat sandfodring og videre konkretisering af etablering af nye bølgebrydere\nGråsten Nor, Stokkeby Nor og Vitsø: Teknisk vurdering af digernes tilstand og\nsikringsniveau\n\nBirkholm: Videre planlægning af digevedligehold og digeforhøjelse samt opdatering af\ndigelaugets vedtægter\nÆrøskøbing havn: Klimatilpasning indtænkes i planlægning af havneudvidelse\nMellemlang sigt (frem mod 2050)\nMarstal Havn: Lokal sikring af pumpeinstallationer\nSøby Havn: Koordinering med Søby Havn om løbende vurdering af sikringsniveau\nStrandvejen, Marstal: Undersøg behov og mulighed for eventuel omlægning af vejadgang\nLang sigt (frem mod 2100)\nUrehoved: Fastholdelse af eksisterende anlæg\nVesterskov / Ommelshoved: Løbende overvågning af eksisterende sikring\nKragnæsdiget: Løbende overvågning og vurdering af behov for lokal beskyttelse af\nejendomme\nVestre Strandvej: Løbende overvågning og vurdering af behov for hævning og stensikring\naf vej\nBorgnæs Møllevej: Løbende overvågning af eksisterende sikring\nUdpegning af indsatser\nSom et tillæg til klimatilpasningsplanen er der udarbejdet konceptuelle beskrivelser af tre\nudpegede indsatsområder, hvor der var behov for mere viden og konkretisering:\nDrejet, Havsmarken og Bakkevej\nDigerne ved Gråsten Nor, Stokkeby Nor og Vitsø\nEriks Hale\nDe tre indsatser er udvalgt på baggrund af den gennemførte klimarisikovurdering og analyse.\nUdvælgelsen afspejler både lokaliteternes klimarisici, deres samfundsmæssige betydning og\nbehovet for yderligere afklaring eller projektmodning.\nFormålet er at understøtte kommunens videre arbejde med projektmodning, prioritering,\ninvesteringsplanlægning og eventuel finansiering af klimatilpasningsindsatser. Notatet\nbeskriver overordnede løsningsprincipper, relevante undersøgelser, centrale udfordringer,\nøkonomisk overslag og anbefalede næste skridt.\nImplementering og finansiering\nKlimatilpasningsplanen udgør et strategisk grundlag for kommunens fremtidige\nklimatilpasningsindsats og indeholder anbefalinger til konkrete projekter og indsatser. Der er\nimidlertid ikke afsat midler til gennemførelse af de anbefalede tiltag, bortset fra, at der for\nBirkholms vedkommende er afsat et budget på 714.000 i 2027 til vedligeholdelse af det indre\ndige.\n\nRealisering af planens indsatser vil derfor forudsætte en politisk prioritering af ressourcer, en\nnærmere modning af projekterne samt en afsøgning af relevante finansieringsmuligheder.\nDette kan blandt andet omfatte statslige puljer, støtteordninger og vejledningsforløb inden for\nklimatilpasning og kystbeskyttelse.\n\nHistorik:\nPå møde den 22. april 2025 besluttede Teknik-, miljø- og havneudvalget at afsætte 500 t.kr. i\n2025-2026 til ekstern rådgivning i forbindelse med udarbejdelse af en klimatilpasningsplan.\nArbejdet blev igangsat i december 2025 med Rambøll som rådgiver.\n\nØkonomi:\nDer er ikke afsat midler til gennemførelse af klimatilpasningsplanens indsatser. Planen\npeger på et fremadrettet behov for prioritering af investeringer og målrettede ansøgninger om\nekstern finansiering.\n\nSagen afgøres af:\nKommunalbestyrelsen.\n\nIndstilling:\nAdministrationen indstiller:\n- At Ærø Kommunes Klimatilpasningsplan 2026 godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-7": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-7",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Life Ring projekt i Stokkeby Nor og muligheden for fondsløsning",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nStillingtagen til indsendelse af en ansøgning til Nordea-fonden og inddragelse af Naturstyrelsen\ni projektet.\n\nSagsfremstilling:\nKommunalbestyrelsen besluttede den 17. juni 2026, at administrationen skal arbejder videre\nmed en model, hvor en ekstern naturfond opkøber projektarealer i Stokkeby nor eller\nmedfinansierer kommunens opkøb, med henblik på at realisere det naturprojekt, som er en del\naf det fælles fynske Life Ring projekt.\nSvendborg Kommune har efterfølgende haft telefonisk kontakt til Naturstyrelsen, som mundtligt\nhar tilkendegivet, at de kunne være interesseret i at eje og drifte et samlet naturareal i\nStokkeby Nor fremover, hvis arealet overdrages til dem efter projektets gennemførelse. Det er\nen fordelagtig løsning for Ærø Kommune, da både offentlighedens adgang og områdets\nnaturformål dermed sikres. Samtidig vil det betyde, at det er Naturstyrelsen, og ikke Ærø\nKommune, som fremover vil stå med drift- og økonomiansvaret forbundet med pasning af\nnaturområdet.\nHvis pleje og drift således kan varetages af Naturstyrelsen, er den væsentligste udfordring at\nfinde finansiering til selve omlægningen. De nyeste budgetberegninger for projektet forudser\nfølgende udgifter:\nJordopkøb:\n\nca. 5,4 mio. kr.\n\nJordfordeling:\n\nca. 1,1 mio. kr.\n\nI alt:\n\nca. 6,5 mio. kr.\n\nDa beløbet ligger ud over Ærø Kommunes vedtagne økonomi til projektet, har Svendborg\nKommune i dialog med teknisk afdeling, afsøgt mulighederne for at finde en fond, der kan\nhjælpe med at løfte økonomien forbundet med omlægningen fra landbrug til natur. Der\nhar været taget telefonisk kontakt til relevante fonde med følgende resultat:\nNordea-fonden: Umiddelbart positive overfor at indgå i en dialog om et eventuelt projekt.\nFonden ønsker ikke at eje jord.\n15. Juni Fonden: Har takket nej.\nVelux Fonden: Har aktuelt primært naturfokus på havet.\nNovo Nordisk Fonden: Har naturfokus inden for rammerne af Den Grønne Trepart.\nHempel Fonden, Bikubenfonden, Fugleværnsfonden, Gubra, Earthbreake og Den\nDanske Naturfond: Arbejder i forskellige former alle med opkøb af arealer med henblik på\nselv at eje og drifte dem.\nMed henvisning til Naturstyrelsens tilbagemelding og ovenstående tilbagemelding fra de\nforskellige fonde, kan næste skridt være at udarbejde en egentlig projektfremlæggelse med et\n\nkonkret budgetforslag, som Nordea-fondens bestyrelse kan tage stilling til. Det skal bemærkes,\naf fondens interesse er med det forbehold, at fondsbestyrelsen kan mene noget andet, når og\nhvis de præsenteres for et konkret projekt\nHvis den model viser sig ikke at kunne realiseres, kan der efterfølgende arbejdes videre med\nmodel, hvor en fond selv ejer og drifter projektarealet.\nDet forudsættes i den forbindelse, at en sti rundt om noret kan indgå i projektet.\n\nHistorik:\nKommunalbestyrelsens beslutning af 17. juni 2026 er vedlagt som bilag.\n\nRetsgrundlag:\nIngen.\n\nTværgående politikker:\nIngen.\n\nPersonaleforhold:\nIngen.\n\nØkonomi:\nDer arbejdes ud fra den forudsætning, at det vedtagne budget ikke overskrides.\n\nSagen afgøres af:\nTeknik-, miljø- og havneudvalget.\n\nIndstilling:\nTeknisk afdeling indstiller, at der udarbejdes en projektbeskrivelse, som kan sendes til Nordeafonden, og at der i den forbindelse indhentes en erklæring om ejerskab og drift fra\nNaturstyrelsen."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-8": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-8",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Gennemførsel af det vedtagne budget 2027-2030",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nUdvalget orienteres om det netop vedtagne budget 2027-2030 på Teknik-, miljø- og\nhavneudvalgets område.\n\nSagsfremstilling:\nDer blev den 23. september 2026 indgået budgetaftale i kommunalbestyrelsen for det\nkommende års budget. Efterfølgende godkendte kommunalbestyrelsen budget 2027-2030 på\nkommunalbestyrelsens møde den 7. oktober 2026.\nBudgetvedtagelsen betyder, at der gennemføres en række tilpasninger i kommunes budget, for\nat sikre den overordnede budgetbalance over de kommende år. Det indebærer besparelser\neller forøgelse af indtægter, og der på udvalgte områder også blevet besluttet\nserviceudvidelser.\nDrift:\nPå Teknik-, miljø og havneudvalgets område indebærer budgettet en række reduktioner på\ndriften. Det drejer sig om følgende (2027 til 2030, beløb i 1000 kr.):\nTMHU driftsramme - nedsætte budget til\nstrandrensning, blå flag mv.\n\nTMHU driftsramme - Reduktion af budget\nkvægprammen Yrsa\n\nTMHU driftsramme Reduktion af budget til\nbyfornyelse\n\nTMHU driftsramme - Reduktion af budget til VE og\nklimatiltag\n\nHavne - Merindtægt lystsejlere\n\nPark og Vej - Optimering af maskinpark\n\nPark og Vej - Nedlæggelse af brolæggerstilling\n\nDet skal i sammenhæng med driftsreduktionerne nævnes, at der på det tekniske område skal\ngennemføres en samlet reduktion på 233 tkr. på Teknisk afdelings driftsramme. Det indgår i\nØkonomi- og erhvervsudvalgets område, men har konsekvens for det tekniske område. Det er:\nDer indføres et fast byggesagsgebyr på 1230 kr. pr. påbegyndt byggesag (2026 gebyr).\nGebyret bliver reguleret til 2027-priser og gælder fra 1. januar 2027. Undtaget for gebyr\ner arrangementer og overnatning, idet det typisk er foreninger og skoler, der ansøger om\ndette. Forventet merindtægt er 109 tkr.\nTeknisk afdelings ramme reduceres med 124 tkr. Der er indbygget en forudsætning om at\nnedlægge de to lokalplanudvalg for så vidt angår en del af besparelsen.\n\nAnlæg:\nTilsvarende er der reduceret på udvalgte anlæg og som noget nyt også budgetteret med\nindtægter ved salg af bygninger. Oversigten fremgår af budgetforliget side 5, samt indgår i\nbudgetønskerne, der ses på side 5/6.\nI forhold til anlægsprojekterne skal det fremhæves, at kommunalbestyrelsen fastholdt det\nopsparede beløb til et klimatilpasningsprojekt på Birkholm, med at reparere det indre dige.\nDesuden forventes det, at udvalget bliver forelagt forslag til udmøntning af de afsatte 400 tkr.,\nder er restbeløb efter SFO Soltoften, afsat til cykelskur og trafikløsning på Grønnegade.\nEndelig er der vedtaget nogle mindre anlægsprojekter som budgetønsker, der gennemføres\nadministrativt (ny gulvbelægning på Knasten osv.)\nUdviklingstiltag:\nI budget 2027-2030 er der også afsat midler til følgende udviklingstiltag:\nUdviklingsplan for Søby (400 tkr.)\nStrategi og lokalplan for Marstal havn (400 tkr.)\nNy lokalplan 9-9B for Ærøskøbing bymidte inkl. bygningsregistrant (1.010 tkr. samlet over\n4 år)\nUdvalget drøfter prioriteringen af disse opgaver i sagen \"Prioritering af planopgaver\".\nBudgetforliget er vedlagt som bilag.\n\nØkonomi:\nFremgår af sagen.\n\nSagen afgøres af:\nTeknik-, miljø- og havneudvalget.\n\nIndstilling:\nTeknisk afdeling indstiller, at orienteringen om budget 2027-2030 tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-9": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-9",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Ærø Vand A/S – Takstblad for 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nGodkendelse af Ærø Vand A/S' forslag til takstblad for 2027.\n\nSagsfremstilling:\nÆrø Vand A/S har ved mail af 29. september 2026 fremsendt takstblad, budgetter og\nredegørelse for takstfastsættelsen for 2027 til kommunal godkendelse. Materialet er godkendt\naf selskabets bestyrelse den 28. september 2026.\nÆrø Vand A/S er omfattet af vandsektorlovens regler om økonomisk regulering, og\nVandsektortilsynet har fastsat de økonomiske rammer for 2027 for henholdsvis drikkevandsog spildevandsforsyningen.\nDrikkevand\nFor drikkevandsforsyningen er den økonomiske ramme for 2027 fastsat til 4.653.984 kr. ekskl.\nmoms. Differencesaldoen pr. 1. januar 2026 udgør 524.327 kr. ekskl. moms.\nÆrø Vand A/S er som almen vandforsyning forpligtet til at fastsætte anlægs- og driftsbidrag i\noverensstemmelse med de økonomiske rammer og hvile-i-sig-selv-princippet.\nDe foreslåede hovedtakster for 2027 er:\nFast årligt bidrag: 2.518,75 kr. inkl. moms pr. bolig-/erhvervsenhed.\nVandpris: 3,75 kr. inkl. moms pr. m³.\nStatsafgift på ledningsført vand: 7,96 kr. inkl. moms pr. m³.\nSamlet driftsbidrag inkl. afgift: 11,71 kr. inkl. moms pr. m³.\nSpildevand\nFor spildevandsforsyningen er den økonomiske ramme for 2027 fastsat til 20.855.038 kr. ekskl.\nmoms. Differencesaldoen pr. 1. januar 2026 udgør 4.899.890 kr. ekskl. moms.\nSpildevandstaksterne er fastsat i overensstemmelse med spildevandsbetalingslovens regler\nom differentierede, degressive kubikmetertakster.\nDe foreslåede hovedtakster for 2027 er:\nFast årligt bidrag: 1.036,25 kr. inkl. moms pr. stikledning.\nVandafledningsbidrag trin 1 (0-500 m³): 72,28 kr. inkl. moms pr. m³.\nVandafledningsbidrag trin 2 (501-20.000 m³): 57,83 kr. inkl. moms pr. m³.\nPwC har gennemgået budget- og takstgrundlaget for både vand- og spildevandsforsyningen og\nvurderer, at de foreslåede takster er fastsat i overensstemmelse med gældende lovgivning, de\nøkonomiske rammer fastsat af Vandsektortilsynet samt hvile-i-sig-selv-princippet.\n\nTakstændringer i forhold til 2026\nFast bidrag for drikkevand stiger fra 1.965 kr. til 2.015 kr. ekskl. moms.\nFast bidrag for spildevand stiger fra 807 kr. til 829 kr. ekskl. moms.\nDe variable takster for både drikkevand og spildevand er uændrede. Øvrige gebyrer og takster\ner uændrede eller reguleret i henhold til gældende lovgivning.\n\nRetsgrundlag:\nLBK nr. 1149 af 28.10.2024. (Lov om vandforsyning m.v.(vandforsyningsloven)).\nLBK nr. 265 af 06.03.2025. (Lov om vandsektorens organisering og økonomiske\nforhold (vandsektorloven)).\nLBK nr. 1243 af 27.10.2025. (Lov om betalingsregler for spildevandsforsyningsselskaber m.v.\n(spildevandsbetalingsloven)).\nBEK nr. 104 af 20.01.2026. (Bekendtgørelse om økonomiske rammer for vandselskaber.) .\nBEK nr. 1537 af 06.12.2024. (Bekendtgørelse om anmeldelse og godkendelse af almene\nvandforsyningers regulativer og anlægs- og driftsbidrag m.v.).\nBEK nr. 1538 af 06.12.2024. (Bekendtgørelse om anmeldelse og godkendelse af\nspildevandsforsyningsselskabers betalingsvedtægter og vandafledningsbidrag m.v.).\n\nØkonomi:\nTakstblad, budgetter og likviditetsbudgetter for 2027 er vedlagt sagen.\nPwC har gennemgået budget- og takstgrundlaget og vurderer, at de foreslåede takster er i\noverensstemmelse med vandforsyningslovens og spildevandsbetalingslovens krav om\nomkostningsdækning samt de økonomiske rammer fastsat af Vandsektortilsynet.\n\nSagen afgøres af:\nKommunalbestyrelsen.\n\nIndstilling:\nTeknisk Afdeling indstiller, at takstblad for 2027 godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-10": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-10",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Ærø Affald A/S - Gebyrblad 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nGodkendelse af Ærø Affald A/S' gebyrblad for 2027.\n\nSagsfremstilling:\nÆrø Affald A/S har den 29. september 2026 fremsendt gebyrblad for 2027 til godkendelse,\nsamt budgetter for 2027 til orientering.\nVedlagte budget og gebyrblad for Ærø Affald A/S er godkendt på et bestyrelsesmøde den 28.\nseptember 2026.\nFor en standardhusstand med 3 beholdere øges det samlede gebyr i 2027 med 190 kr. ex.\nmoms, fra 3.800 kr. (2026) til 3.990 kr. ex. moms. Forøgelsen skyldes primært almindelige\nprisjusteringer på mad- og restaffald, og påvirkningen af reglerne for udvidet producentansvar.\nMed gebyrbladet for 2027 ændres måden at beregne grundgebyret på. Grundgebyret betales\naf alle husstande, med mindre der er søgt og opnået fuldstændig fritagelse i henhold til det\ngældende Regulativ for husholdningsaffald. Fra 1. januar 2027 opkræves ikke længere et\nsærskilt gebyr for beholdere med pap/papir og glas og beholdere med plast/fødevarekartonner\nog metal. Omkostningerne til de 4 fraktioner indgår i stedet i grundgebyret og det koster\nsåledes ikke længere noget at skifte sin beholder ud med en større beholder. Den nye\nberegningsmetode anvendes for at animere til øget udsortering, uden at skulle betale for større\nbeholdere. Grundgebyret øges derfor fra 2.150 kr. ex. moms i 2026 til 2.760 kr. ex. moms i\nEjendomme, der har opnået fritagelse for afhentning af sorteret affald ved husstanden betaler\net reduceret grundgebyr til de kollektive ordninger på 2.080 kr. ex. moms\nAffald som modtages på Ærø Kommunes affaldsanlæg prisreguleres tilsvarende i henhold til\nde almindelige omkostningsstigninger.\nDog hæves gebyret på usorteret affald fra 3.160 kr./ton ex. moms til 6.220 kr./ton ex. moms.\nDet sker for at undgå spekulation i at undlade affaldssortering, og samtidig reducere\nforsyningens tidsforbrug på at foretage eftersortering.\nUdvidet producentansvar og betydningen for renovationsgebyret\nUdvidet producentansvar har indgribende betydning for måden at beregne gebyrer på.\nDe nye regler betyder, at virksomheder, der producerer eller importerer emballerede varer,\nskal betale for håndtering af emballagen, når den bliver til affald. Virksomhederne skal således\nbetale for fx administration, indsamling, sortering og genanvendelse af emballagen. En del af\nbetalingen tilgår Ærø Forsyning A/S, som varetager indsamlingen.\nNår borgerne sorterer deres affald, blandes emballage- og ikkeemballageaffald naturligt.\nÆrø Affald A/S skal stadig betale for håndteringen af ikkeemballageaffald og skal derfor\ntilbagebetale en del af udgifterne til virksomhedernes fælles ordning.\n\nFor at sikre, at producenterne betaler den korrekte andel af omkostningerne til håndtering\naf emballageaffald, er der gennemført undersøgelser af affaldssammensætningen i det\nsorterede affald. Undersøgelser viser, hvor meget emballageaffald og ikke-emballageaffald der\nfindes i de forskellige affaldstyper, som borgerne sorterer. Nogle affaldstyper består af meget\nemballage, mens andre kun indeholder lidt emballage. Herunder er en oversigt over\nundersøgelsens resultat fordelt på de forskellige affaldstyper:\nGlas består af 97 % emballage og 3 % ikkeemballage\nPap består af 88 % emballage og 12 % ikkeemballage\nPapir består af 2 % emballage og 98 % ikkeemballage\nPlast består af 51 % emballage og 49 % ikkeemballage\nMad- og drikkevarekartoner består af 54 % emballage og 46 % ikkeemballage\nMetal består af 33 % emballage og 67 % ikkeemballage\nDa andelen af emballageaffald varierer mellem fraktionerne, påvirkes priserne for de\nenkelte beholdere forskelligt.\nEn 240 liters beholder til glas faldt fx. markant i pris i 2026 - fra 420 kr. ex. moms i 2025 til 30\nkr. ex. moms i 2026, som følge af en høj andel emballage i den fraktion.\nEfter at 2026-gebyrerne for Ærø Affald A/S var beregnet og godkendt, blev det politisk\nbesluttet på nationalt niveau, at alle danske kommuner skulle sænke deres gebyrer for udvidet\nproducentansvar med 37,5 %. Baggrunden var, at virksomhederne, som skal dække udgifterne\ntil\nemballage, var blevet lovet en samlet regning på højst 1,2 mia. kr. for alle kommuner i\nDanmark.\n2026-gebyrerne var beregnet ud fra en forventet indtægt fra udvidet producentansvar på\n3,1 mio. kr. ex. moms, som fuldt ud var indregnet til at nedsætte gebyrerne for borgere og for\nde virksomheder, der benytter affaldsordningerne. Efter lovændringerne er den forventede\nindtægt 2,1 mio. kr. ex. moms. Da 2027-budgettet bygger på den lavere indtægt, er det\nnødvendigt at hæve gebyrerne i 2027, selv om borgerne kunne have en forventning om det\nmodsatte.\nDer forventes yderligere lovændringer, som kan påvirke indtægten. For at undgå at\noverestimere indtægten er 2027-budgettet baseret på de indtægter fra udvidet\nproducentansvar, der er realiseret ved udgangen af 2026. Havde man i 2027 fortsat forventet\nat kunne opnå fuld dækning for udvidet producentansvar (indtægt på 3,1 mio. kr.) var gebyret\nfor en standardhusstand kun steget fra 3.800 kr. ex. moms til 3.820 kr. ex. moms.\nI 2027 nedsættes gebyrerne med cirka 500 kr. ex. moms som et resultat af indtægter fra\nudvidet producentansvar. Indtægterne fra udvidet producentansvar betyder, at gebyrerne for\nde fleste genanvendelige fraktioner fortsat er under niveauet for 2025-gebyrerne. For eksempel\nkoster en 240 liters beholder til glas i 2027; 190 kr. ex. moms, mod 420 kr. ex. moms i 2025.\n\nDer indføres producentansvar for batterier pr. 1. januar 2027, og i lighed med\nemballageordningen, skal producenter af batterier fremover betale for Ærø Affalds A/S'\nhåndtering af batterier. Ærø Affald A/S forventer en refusion på cirka 80.000 kr. ex. moms. om\nåret for håndtering af batterier. Indtægten er indregnet i gebyret og reducerer gebyret pr.\nhusstand med 20 kr. ex. moms.\n\nHistorik:\nIngen.\n\nRetsgrundlag:\nBEK nr. 1743 af 30.12.2024 om affaldsregulativer, - gebyrer og -aktører mv.\n(Affaldsaktørbekendtgørelsen).\nLBK nr. 842 af 11.09.2026 om miljøbeskyttelse.\nBEK nr. 851 af 28.09.2026 om supplerende bestemmelser til forordning om emballage og\nemballageaffald\nBEK nr. 986 af 20.06.2025 om supplerende bestemmelser til forordning pm batterier og\nudtjente batterier\n\nTværgående politikker:\nIngen.\n\nPersonaleforhold:\nIngen.\n\nØkonomi:\nIngen.\n\nSagen afgøres af:\nKommunalbestyrelsen.\n\nIndstilling:\nTeknisk afdeling indstiller, at gebyrbladet for 2027 godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-11": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-11",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Rise Vandværk - Takstblad 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nGodkendelse af Rise Vandværks takstblad for 2027.\n\nSagsfremstilling:\nRise Vandværk A.m.b.a. har 9. oktober 2026 fremsendt takstblad for 2027 til kommunal\ngodkendelse samt budget for 2027 til orientering.\nTakstbladet er udarbejdet på baggrund af vandværkets budget for 2027. De almindelige\nforbrugs- og faste afgifter er uændrede i forhold til 2026.\nFor 2027 foreslås blandt andet følgende hovedtakster:\nFast årligt bidrag: 2.200 kr. inkl. moms pr. bolig-/erhvervsenhed.\nVandpris: 5,25 kr. pr. m³ inkl. moms.\nStatsafgift på ledningsført vand: 7,96 kr. pr. m³.\nSamlet vandpris: 13,21 kr. pr. m³ inkl. moms.\nTilslutningsbidrag: 30.000 kr. inkl. moms.\nDer er foretaget følgende ændringer i forhold til takstblad 2026:\nGebyret for nedlæggelse af vandstik forhøjes fra 6.500 kr. til 10.000 kr. inkl. moms.\nDer indføres et nyt gebyr for udskiftning af frostsprængt vandmåler på 2.250 kr. inkl. moms.\nØvrige takster og gebyrer er uændrede.\nBudgettet for 2027 udviser en nettoomsætning på 1.053.760 kr.. Der er afsat 650.000 kr. til\neventuelle investeringer i ledningsnet og BNBO-indsatser.\n\nRetsgrundlag:\nLovbekendtgørelse 2024-10-28 nr. 1149 om vandforsyning m.v. (særligt reglerne om anlægsog driftsbidrag og hvile-i-sig-selv-princippet).\nBekendtgørelse 2024-12-06 nr. 1537 om anmeldelse og godkendelse af almene\nvandforsyningers regulativer og anlægs- og driftsbidrag m.v.\n(drikkevandstakstkontrolbekendtgørelsen\n\nØkonomi:\nIngen.\n\nSagen afgøres af:\nØkonomi- og Erhvervsudvalget.\n\nØkonomi- og Erhvervsudvalget.\n\nIndstilling:\nTeknisk Afdeling indstiller, at takstblad for 2027 godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-12": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-12",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Søby Vandværk - Takstblad 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nGodkendelse af Søby Vandværk A.m.b.a.s takstblad for 2027.\n\nSagsfremstilling:\nSøby Vandværk A.m.b.a. har 11. september 2026 fremsendt forslag til takstblad for 2027 til\ngodkendelse, samt budget for 2027 til orientering.\nTakstbladet fastsætter vandværkets driftsbidrag, anlægsbidrag og gebyrer gældende for\nforsyningsområdet i 2027.\nSammenlignet med takstbladet for 2026 er størstedelen af taksterne uændrede. Vandprisen\nforeslås dog nedsat fra 8,40 kr. inkl. moms pr. m³ i 2026 til 8,00 kr. inkl. moms pr. m³ i 2027.\nDet faste årlige bidrag fastholdes, ligesom anlægsbidrag og øvrige gebyrer overvejende er\nuændrede.\nFor 2027 foreslås blandt andet følgende hovedtakster:\nFast årligt bidrag: 1.850 kr. inkl. moms pr. bolig-/erhvervsenhed.\nVandpris: 8,00 kr. inkl. moms pr. m³.\nStatsafgift på ledningsført vand: 7,96 kr. pr. m³ inkl. moms.\nSamlet vandpris: 15,96 kr. pr. m³ inkl. moms.\nTilslutningsbidrag: 62.500 kr. inkl. moms.\nBudgettet for 2027 viser en samlet indtægt på 1.599.000 kr. og samlede udgifter på 1.488.500\nkr., svarende til et budgetteret overskud på 110.500 kr. Budgettet indeholder blandt andet\nudgifter til udskiftning af vandmålere.\n\nRetsgrundlag:\nLovbekendtgørelse nr. 1149 af 28. oktober 2024 om vandforsyning m.v. (særligt reglerne om\nanlægs- og driftsbidrag og hvile-i-sig-selv-princippet).\nBekendtgørelse nr. 1537 af 6. december 2024 om anmeldelse og godkendelse af almene\nvandforsyningers regulativer og anlægs- og driftsbidrag m.v.\n(drikkevandstakstkontrolbekendtgørelsen).\n\nØkonomi:\nIngen.\n\nSagen afgøres af:\nØkonomi- og Erhvervsudvalget.\n\nIndstilling:\n\nTeknisk Afdeling indstiller, at takstblad for 2027 for Søby Vandværk A.m.b.a. godkendes"
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-13": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-13",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Bregninge Vandværk - Takstblad 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nGodkendelse af Bregninge Vandværks takstblad for 2027.\n\nSagsfremstilling:\nBregninge Vandværk A.m.b.a. har 14. oktober 20026 fremsendt forslag til takstblad for 2027 til\ngodkendelse. Samt budget til orientering.\nTakstbladet fastsætter vandværkets driftsbidrag, anlægsbidrag og gebyrer gældende for\nforsyningsområdet i 2027.\nSammenlignet med takstbladet for 2026 er størstedelen af taksterne uændrede. Der er dog\nforeslået ændringer i enkelte gebyrer, herunder at gebyret for flytte-/slutopgørelse nedsættes\nfra 150 kr. til 100 kr. ekskl. moms, mens gebyret for nedlæggelse af vandstik forhøjes fra\n10.000 kr. til 20.000 kr. ekskl. moms. Øvrige drifts- og anlægsbidrag er uændrede i forhold til\nFor 2027 foreslås blandt andet følgende hovedtakster:\nFast årligt bidrag: 1.250 kr. ekskl. moms pr. bolig-/erhvervsenhed.\nVandpris: 7,00 kr. pr. m³ ekskl. moms.\nStatsafgift på ledningsført vand: 6,37 kr. pr. m³.\nSamlet vandpris: 13,37 kr. pr. m³ ekskl. moms.\nTilslutningsbidrag: 44.000 kr. ekskl. moms (55.000 kr. inkl. moms).\n\nRetsgrundlag:\nLovbekendtgørelse 2024-10-28 nr. 1149 om vandforsyning m.v. (særligt reglerne om anlægsog driftsbidrag og hvile-i-sig-selv-princippet).\nBekendtgørelse 2024-12-06 nr. 1537 om anmeldelse og godkendelse af almene\nvandforsyningers regulativer og anlægs- og driftsbidrag m.v.\n(drikkevandstakstkontrolbekendtgørelsen).\n\nØkonomi:\nIngen.\n\nSagen afgøres af:\nØkonomi- og Erhvervsudvalget.\n\nIndstilling:\nTeknisk Afdeling indstiller, at takstblad for 2027 godkendes.\n\nTeknisk Afdeling indstiller, at takstblad for 2027 godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-14": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-14",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Kommunikation fra udvalgsmødet",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagsfremstilling:\nUdvalget og direktøren drøfter, om der eventuelt er dagspunkter, der skal kommunikeres ud via\nkommunens kanaler. I givet fald udvælges 1-2 historier, der vurderes at være relevante og\naktuelle for borgerne.\nFor en historie er relevant, skal den:\nhave konkret betydning for borgere (service, tilbud, ændringer, muligheder eller\nresultater)\nvedrøre væsentlige beslutninger, milepæle, fremskridt osv.\nbidrage til forståelse af kommunale indsatser eller processer, hvor borgerinddragelse\neller opmærksomhed er relevant."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-15": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-15",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Orienteringspunkter november 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nOrienteringspunkter til Teknik-, miljø- og havneudvalget - november 2026\n\nSagsfremstilling:\nVedhæftet havnefogedens rapport for november 2026 og statistik for oktober 2026.\nVedhæftet Handicaprådets referat af 9. november 2026.\n\nØkonomi:\nIngen\n\nSagen afgøres af:\nTeknik-, miljø- og havneudvalget.\n\nIndstilling:\nTeknisk afdeling indstiller, at orienteringerne tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-16": {
+   "id": "aeroe-2026-11-17-teknik-miljoe-og-havneudvalget-16",
+   "kommune": "Ærø",
+   "udvalg": "Teknik-, miljø- og havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=f5b94e15-12be-4bbf-b189-bb39ce990278",
+   "hentet": "2026-11-10T21:06:02.523Z",
+   "titel": "Godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagsfremstilling:\nUdvalget skal godkende beslutningsprotokollen. For at godkende beslutningsprotokollen skal\nhvert medlem underskrive ved at trykke godkend."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-16-lokalplan-8-2a-udvalget-1": {
+   "id": "aeroe-2026-11-16-lokalplan-8-2a-udvalget-1",
+   "kommune": "Ærø",
+   "udvalg": "Lokalplan 8 - 2A udvalget",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=7b618357-cb13-4cec-b8cc-b51b6a87557b",
+   "hentet": "2026-11-10T21:06:06.743Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\n\nSagsfremstilling:\n\nIndstilling:"
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-16-lokalplan-8-2a-udvalget-2": {
+   "id": "aeroe-2026-11-16-lokalplan-8-2a-udvalget-2",
+   "kommune": "Ærø",
+   "udvalg": "Lokalplan 8 - 2A udvalget",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=7b618357-cb13-4cec-b8cc-b51b6a87557b",
+   "hentet": "2026-11-10T21:06:06.743Z",
+   "titel": "Lokalplan 8-2A-udvalget - Mødeplan 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nUdvalget anmodes om stillingtagen til mødeplan for 2027\n\nSagsfremstilling:\nUdvalget anmodes om fastlæggelse af møderække for 2027, følgende datoer foreslås:\n\nMandag den 8. februar 2027 kl. 15.30\nMandag den 10. maj 2027 kl. 15.30\nMandag den 6. september 2027 kl. 15.30\nMandag den 8. november 2027 kl. 15.30\n\nIndstilling:\nUdvalget anmodes om fastlæggelse af møderække 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-16-lokalplan-8-2a-udvalget-3": {
+   "id": "aeroe-2026-11-16-lokalplan-8-2a-udvalget-3",
+   "kommune": "Ærø",
+   "udvalg": "Lokalplan 8 - 2A udvalget",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=7b618357-cb13-4cec-b8cc-b51b6a87557b",
+   "hentet": "2026-11-10T21:06:06.743Z",
+   "titel": "Ændringer af facade og tag på ejendommen - Enighedsstræde 6, 5960 Marstal",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nEjeren af ejendommen Enighedsstræde 6, 5960 Marstal, ønsker at ændringer til facade og\ntag.\n\nSagsfremstilling:\nEjeren af ejendommen Enighedsstræde 6, 5960 Marstal har ansøgt om tilladelse til en\nomfattende renovering af bygningen. Formålet er at forbedre bygningens arkitektoniske udtryk,\nmaterialevalg og funktionalitet. Flere af de ønskede ændringer vurderes at være i\noverensstemmelse med lokalplanen, mens enkelte kræver dispensation.\nEjendommen er opført i 1875 og senere om- og tilbygget. Hovedhuset ligger ud mod\nEnighedsstræde, mens der mod haven findes en senere tilbygning og en overdækket terrasse.\nDe ansøgte ændringer er:\nUdskiftning af tag på hovedhuset\nDer ønskes udskiftning af det eksisterende ståltag til røde vingetegl i gammel dansk format.\nAnsøger vurderer, at dette vil bringe bygningen bedre i overensstemmelse med områdets\nhistoriske karakter.\nI følge lokalplan 8-2A § 5.6 er ovenstående i overensstemmelse med lokalplanen.\n\nTagvinduer i hovedhuset\nAnsøger søger tilladelse til:\net nyt tagvinude mod gaden, så der etableres symmetri i tagfladen\nto mindre vinduer i kvisttaget\nudskiftning af eksisterende tagvinduer mod haven\netablering af et ekstra tagvindue mod haven for at forbedre dagslysforholdene på en\nplanlagt hems\nI følge lokalplan 8-2A § 5.15 må der kun opsættes 1 tagvinduer pr. 2 facadefag, hvorfor\netableringen af fire tagvinduer mod haven kræver dispensation.\nDet vurderes også at de to mindre vinduer i kvisttaget kræver en dispensation.\n\nOmbygning af baghusets tag\n\nDet eksisterende flade tag på baghuset ønskes ændret til et sadeltag med en hældning på 23\ngrader. I forbindelse hermed ønskes den eksisterende brandkam mod gården erstattes af en\nbrandkamserstatning.\nIfølge lokalplan 8-2A § 5.7 skal de oprindelige brandkamme bibeholdes, ovenstående kræver\nderfor en dispensation.\n\nNy overdækning/orangeri\nDen eksisterende overdækning med plasttag ønskes ombygget til en mindre konstruktion med\nglastag. Ansøger vurderer, at løsningen vel fremstå mere harmonisk og bedre tilpasset\nbygningens arkitektur. Overdækningen placeres forsat mere en 6 meter fra stien\nFilosofgangen.\nOvenstående vurderes at være i overensstemmelse med lokalplan 8-2A § 6.5, hvorfor de\nønskede ændringer vurderes lovlig.\n\nFacadeændringer\nAnsøger søger tilladelse til:\ngenetablering af historiske facadeindfatninger omkring vinduer og hoveddør\nny farvesætning og restaurering af pudsede facader\nudskiftning af vinduer og døre til trævinduer i overensstemmelse med lokalplanens\nbestemmelser.\nOvenstående vurderes at være i overensstemmelse med lokalplan 8-2A.\n\nAltanværn\nAnsøger gør opmærksom på at det eksisterende altanværn skal udskiftes for at opfylde\ngældende bygningsreglement.\nDer søges tilladelse til at udføre værnet i metal med et udtryk inspireret af ejendommens\neksisterende smedejernsværn ved trappen frem for et traditionelt træværn.\n\nBindingsværksbrystning ved overdækning\nAnsøger ønsker at udføre en del af overdækningens facade som bindingsværk for at markere\nden som en sekundær bygningsdel og skabe et mere traditionelt udtryk.\nOvenstående vurderes at være i overensstemmelse med lokalplanen.\n\nNye facadeåbninger\nAnsøger søger tilladelse til:\netablering af et rundt gavlvindue mod vandet, i gavlen.\nudvidelse af et vindue i baghuset\nændringer af et eksisterende vindue til dør mod haven\nOvenstående vurderes at være i overensstemmelse med lokalplanen.\n\nIndstilling:\nUdvalget anmodes om stillingtagen til det ansøgte."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-16-lokalplan-8-2a-udvalget-4": {
+   "id": "aeroe-2026-11-16-lokalplan-8-2a-udvalget-4",
+   "kommune": "Ærø",
+   "udvalg": "Lokalplan 8 - 2A udvalget",
+   "dato": "2026-11-16",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=7b618357-cb13-4cec-b8cc-b51b6a87557b",
+   "hentet": "2026-11-10T21:06:06.743Z",
+   "titel": "Godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagsfremstilling:"
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-1": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-1",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagsfremstilling:\nUdvalget anmodes om at godkende dagsordenen."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-3": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-3",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Godkendelse af kvalitetsstandard om praktisk hjælp på Ældre- og Sundhedsområdet",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nKommunalbestyrelsen er efter servicelovens § 139 og bekendtgørelse om kvalitetsstandarder\nfor hjemmehjælp, rehabiliteringsforløb samt træning efter servicelovens §§ 83, 83 a og 86\nforpligtet til mindst én gang årligt at udarbejde og følge op på kvalitetsstandarder på\nældreområdet.\nDen reviderede kvalitetsstandard for praktisk hjælp forelægges derfor Kultur- og Socialudvalget\ntil godkendelse med henblik på efterfølgende høring og endelig politisk behandling.\nKvalitetsstandarden er opdateret som følge af Kommunalbestyrelsens budgetforlig for 2027,\nhvor der er truffet beslutning om øget anvendelse af velfærdsteknologiske løsninger i\nforbindelse med levering af praktisk hjælp.\n\nSagsfremstilling:\nAdministrationen har gennemgået Ærø Kommunes kvalitetsstandarder på ældreområdet og\nvurderet, at følgende områder er omfattet af servicelovens krav om årlig revision:\nMadservice\nPraktisk hjælp\nPersonlig pleje\nRehabiliteringsforløb\nGenoptræning og vedligeholdelsestræning\nDe fire kvalitetsstandarder for madservice, personlig pleje, rehabiliteringsforløb samt\ngenoptræning og vedligeholdelsestræning blev behandlet af Kultur- og Socialudvalget i oktober\n2026 og anbefalet sendt i høring hos relevante høringsparter. Revisionerne omfattede primært\nsproglige, redaktionelle og lovtekniske opdateringer.\nKvalitetsstandarden for praktisk hjælp har derimod afventet den endelige budgetbehandling, da\nstandarden skulle tilpasses de vedtagne ændringer om øget anvendelse af velfærdsteknologi.\nSom følge heraf forventes den samlede proces for de fem kvalitetsstandarder først afsluttet i\nbegyndelsen af 2027.\nDen reviderede kvalitetsstandard for praktisk hjælp er gennemgået og opdateret sprogligt og\nredaktionelt med henblik på at sikre et klart og tidssvarende beskrivelsesgrundlag. Herudover\ner budgetaftalens intention om øget anvendelse af velfærdsteknologi indarbejdet i\nkvalitetsstandarden. Ændringer i serviceniveau samt vedrørende velfærdsteknologi er markeret\nmed rødt i det vedlagte udkast til kvalitetsstandarden.\nDet fremgår således, at støvsugning og gulvvask som udgangspunkt udføres ved hjælp af\nrobotstøvsuger med gulvvaskefunktion, mens opvask som udgangspunkt udføres ved hjælp af\nbordopvaskemaskine. Begge løsninger betragtes som forbrugsgoder, der normalt indgår i\n\nsædvanligt indbo, og anskaffes derfor som udgangspunkt af borgeren selv.\nKvalitetsstandarden fastholder samtidig, at der ved visitation og tilrettelæggelse af hjælpen altid\nforetages en konkret og individuel vurdering af borgerens samlede situation, herunder\nfunktionsevne, boligforhold og muligheder for at anvende de velfærdsteknologiske løsninger.\nDe foreslåede ændringer understøtter kommunens rehabiliterende tilgang, som har som\nmålsætning, at praktiske opgaver i videst muligt omfang løses ved hjælp af borgerens egne\nressourcer, hjælpemidler og velfærdsteknologiske løsninger.\nDet må forventes, at ændringerne kan give anledning til spørgsmål fra borgere, idet\nanvendelsen af robotstøvsuger og bordopvaskemaskine som udgangspunkt for levering af\npraktisk hjælp medfører ændrede forventninger til borgernes egen medvirken og anskaffelse af\nudstyr.\nTidsplan\nNovember 2026: Kultur- og Socialudvalget behandler kvalitetsstandarden for praktisk\nhjælp.\nHerefter sendes alle fem kvalitetsstandarder i høring hos Ærø Seniorråd og\nHandicaprådet.\nDecember 2026: Sagen genforelægges Kultur- og Socialudvalget med eventuelle\nhøringssvar.\nPrimo 2027: Sagen behandles i Økonomi- og Erhvervsudvalget samt\nKommunalbestyrelsen.\nEfter endelig godkendelse offentliggøres kvalitetsstandarderne på kommunens\nhjemmeside.\nEfter 1. juli 2027 udfases kvalitetsstandarderne fra hjemmesidens ældreområde i takt\nmed implementeringen af ældreloven og erstattes af servicebeskrivelser for kommunens\ntilbud om helhedspleje efter Ældreloven.\nKvalitetsstandarderne opretholdes fortsat som grundlag for visitation og afgørelser efter\nserviceloven for borgere uden for ældrelovens målgruppe.\n\nRetsgrundlag:\nServicelovens § 83\nBekendtgørelse om kvalitetsstandarder for hjemmehjælp, rehabiliteringsforløb og træning\n\nØkonomi:\n\nSagen afgøres af:\nKommunalbestyrelsen efter godkendelse i Kultur- og Socialudvalget i december 2026.\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget godkender:\n1. at den opdaterede kvalitetsstandard for praktisk hjælp sendes i høring hos\nhøringsberettigede parter sammen med de øvrige fire lovpligtige kvalitetsstandarder"
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-4": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-4",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Orientering om sygefravær og vikarudgifter 3. kvartal af 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nKultur- og Socialudvalget får en kvartalvis orientering om sygefravær, vikarudgifter og ledige\nstillinger på ældre- og sundhedsområdet.\n\nSagsfremstilling:\nDet faldende sygefravær og de stigende vikarudgifter er ikke nødvendigvis udtryk for en direkte sammenhæng\nmellem de to nøgletal. Udviklingen skal blandt andet ses i lyset af de rekrutteringsudfordringer, som Ærø Kommune\noplever på ældre- og sundhedsområdet. En del af de medarbejdere, der tidligere har været langtidssygemeldte, er\nefterfølgende fratrådt deres stilling, hvilket bidrager til et lavere registreret sygefravær. Samtidig har det været\nnødvendigt at anvende flere vikarressourcer for at dække ledige stillinger og opretholde den nødvendige drift.\nDerudover påvirkes vikarforbruget af perioder med borgere, der har mere komplekse pleje- og omsorgsbehov,\nhvilket øger behovet for ekstra bemanding. Endelig har kommunen i et vist omfang valgt at anvende vikarer i\nweekenderne for at understøtte fastholdelsen af faste medarbejdere og skabe mere attraktive arbejdsforhold,\nherunder ved at reducere behovet for arbejde hver anden weekend. Denne indsats vurderes at være et vigtigt\nelement i arbejdet med at rekruttere og fastholde medarbejdere i en tid med mangel på arbejdskraft.\nSygefravær:\nSygefraværet i Ærø Kommune i 2025 samt i 1.-3. kvartal 2026 har været som følger (opgjort i procent):\n\n1.kvartal 2.kvartal\n\n3.kvartal\n\n4.kvartal\n\n1.kvartal\n\n2.kvartal 3.kvartal\n\nMyndighed*\n\nHjemmeplejen\n\nMÆC\n\ni%\n\nSamlet Ældre og\nSundhed\n\nAdministration*\n\nSundhed og\nforebyggelse\n\nDGH Rise\n\nSøkilden\n\nSygeplejen\n\nMadservice\n\n*Myndighed som enhed startede i november 2025, hvorfor sygefraværet indtil da er 0. Pedelfunktionen i Ældre og\nSundhed blev organisatorisk flyttet fra Administration til Myndighed i 4. kvartal 2025. Sygefraværet for denne\nmedarbejdergruppe indgår derfor i Administration i 2026.\nSygefravær i 2025 sammenlignet med øvrige ø-kommuner og landsgennemsnittet\nKultur- og Socialudvalget har ønsket et sammenligningsgrundlag for sygefraværet. Seneste tilgængelige helårsdata\nfor 2025 ses i tabellen nedenfor. Sammenligningen skal ses med forbehold for, at mindre kommuner kan opleve\nstørre udsving som følge af et relativt begrænset antal medarbejdere.\nPå ældre- og sundhedsområdet udgjorde sygefraværet i Ærø Kommune 10,7 %, hvilket ligger over både\nlandsgennemsnittet på 8,3 % og niveauet i de øvrige sammenlignelige ø-kommuner.\nSammenligningen skal ses med et vist forbehold, da mindre kommuner med relativt få medarbejdere kan opleve\nstørre udsving i sygefraværet fra år til år. Tallene giver dog en indikation af, at sygefraværet på ældre- og\nsundhedsområdet i Ærø Kommune ligger over både landsgennemsnittet og de øvrige ø-kommuner.\nKommune\n\nSygefravær i %\n\nÆldre- og sundhedsområdet i %\n\nÆrø\n\nSamsø\n\nLæsø\n\nFanø\n\nLandsgennemsnit\n\nKilde: Kommunernes og Regionernes Løndatakontor (KRL), sygefraværsstatistik 2025. Tallene er opgjort som\nsygefravær i procent af den samlede arbejdstid.\nVikarudgifter:\nDer har været følgende udgifter til vikarer i 1-4 kvartal 2025 og 1.-3. kvartal 2026 (vist i tusinder):\n\nEksterne vikarudgifter i 2025\nog 2026 (tkr.)\n\n3. kvt.\n\n4. kvt.\n\n1. kvt.\n\n2. kvt.\n\n3. kvt.\n\nHjemmeplejen\n\nPlejecentre\n\nSygeplejen\n\nTotal\n\nLønmidler i Ældre og Sundhed 1. januar - 1. september 2026:\nkr.\n\nForbrug\n\nBudget 2026\n\nLøn til personale\n\nVikarbureauer\n\nTotal\n\nDiff. i %\n\nDet faldende sygefravær og de stigende vikarudgifter er ikke nødvendigvis udtryk for en direkte sammenhæng\nmellem de to nøgletal. Udviklingen skal blandt andet ses i lyset af de rekrutteringsudfordringer, som Ærø Kommune\noplever på ældre- og sundhedsområdet. En del af de medarbejdere, der tidligere har været langtidssygemeldte, er\nefterfølgende fratrådt deres stilling, hvilket bidrager til et lavere registreret sygefravær. Samtidig har det været\nnødvendigt at anvende flere vikarressourcer for at dække ledige stillinger og opretholde den nødvendige drift.\nDerudover påvirkes vikarforbruget af perioder med borgere, der har mere komplekse pleje- og omsorgsbehov,\nhvilket øger behovet for ekstra bemanding. Endelig har kommunen i et vist omfang valgt at anvende vikarer i\nweekenderne for at understøtte fastholdelsen af faste medarbejdere og skabe mere attraktive arbejdsforhold,\nherunder ved at reducere behovet for arbejde hver anden weekend. Denne indsats vurderes at være et vigtigt\nelement i arbejdet med at rekruttere og fastholde medarbejdere i en tid med mangel på arbejdskraft.\nLedige stillinger:\nHerunder ses udviklingen i forhold til antallet af ledige stillinger i 2026:\n\nOrganisatorisk enhed\n\nHjemmeplejen\n\nAntal ledige stillinger pr. Antal ledige stillinger pr. 1. Antal ledige stillinger pr. 1.\n1. februar 2026\n\njuni 2026\n\nnovember 2026\n\nMÆC\n\nRise\n\nSøkilden\n\nSygeplejen\n\nTotal\n\nNuværende indsatser\nAdministrationen arbejder allerede med en række indsatser med henblik på at reducere sygefravær, nedbringe\nvikarforbrug samt styrke rekruttering og fastholdelse på ældre- og sundhedsområdet. Indsatserne omfatter blandt\nandet:\nAt styrke ledelsen i hjemmeplejen gennem ansættelse af teamledere\nAt styrke ledelsen i plejecentrene gennem ansættelse af stedfortrædere for lederne\nØget ledelsesopfølgning på sygefravær, herunder systematiske fraværssamtaler og tæt dialog med\nmedarbejdere med gentaget eller langvarigt fravær.\nFokus på trivsel og arbejdsmiljø, herunder lokale initiativer på arbejdspladser med højt fravær.\nStyrket introduktion og onboarding af nye medarbejdere med henblik på fastholdelse.\nLøbende rekrutteringsindsatser, herunder stillingsopslag, samarbejde med uddannelsesinstitutioner,\nrekruttering til elevstillinger, fleksible arbejdstilrettelæggelser og kompetenceudvikling.\nIndsatserne vurderes at have bidraget til det generelle fald i det samlede sygefravær i 2025, men\nudviklingen varierer fortsat mellem enhederne, og særligt hjemmeplejen og MÆC oplever udfordringer med\nledige stillinger.\nEn målrettet vagtplanlægning, som sikrer mere optimal brug af de tilstedeværende ressourcer. Dette sker i\nsamarbejde med bl.a. FOA og Personaleafdelingen.\nFremadrettede tiltag\nAdministrationen har i 2026 et særligt fokus på at forankre, fastholde og udbygge de nuværende\nindsatser, udarbejde forslag til yderligere tiltag for rekruttering, herunder evt. rekruttering af\nudenlandsk arbejdskraft, og fastholdelse samt nedbringelse af vikarudgifter. Sagen om lukning af Rise plejehjem er\net væsentligt element i bestræbelserne på at nedbringe vikarudgifterne og antallet af ledige stillinger.\nAdministrationen vil løbende følge udviklingen og orientere udvalget i de kommende kvartalsvise opfølgninger.\n\nØkonomi:\n\nSagen afgøres af:\nØkonomi- og Erhvervsudvalget\n\nIndstilling:\nAdministrationen indstiller:\nat Kultur- og Socialudvalget anbefaler orienteringen taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-5": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-5",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Orientering om venteliste til ældre- og plejeboliger pr. 1. november 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nKultur- og Socialudvalget ønsker en orientering om ventelisten til ældre- og plejeboliger.\n\nSagsfremstilling:\nVisitation til pleje- og ældreboliger afgøres af Ældre- og Sundhedsområdets visitatorer ud fra\ngældende kvalitetsstandard for ældre- og plejeboliger.\nVenteliste til plejebolig:\nVed tildeling af plejebolig kan borgeren vælge mellem to typer ventelister: garantiventeliste og\nfrit valg-venteliste.\nGarantiventeliste: Plejeboliggarantien betyder, at borgere, som er visiteret til en\nplejebolig, skal have tilbudt en bolig senest to måneder efter optagelse på ventelisten.\nVed optagelse på garantiventelisten vil borgeren blive tilbudt den først ledige plejebolig\ninden for denne frist. Til gengæld er det ikke muligt at vælge en specifik bolig.\nFrit valg-venteliste: Ved optagelse på frit valg-ventelisten kan borgeren ønske en eller\nflere konkrete plejeboliger. Dette kan dog medføre længere ventetid, da tilbuddet\nafhænger af, hvornår der bliver en bolig ledig på de ønskede steder.\nPr. 1.11.2026 ser ventelisterne til en plejebolig i Ærø Kommune ud som følger:\nGarantiventeliste: 0\nFrit valg-venteliste: 1\nVenteliste til ældrebolig:\nDer er 10 borgere på venteliste til ældrebolig i Ærø Kommune (1 borger er på to ventelister).\nAntallet af borgere på venteliste til ældrebolig er faldet fra 14 borgere til 10 borgere siden\nseneste opgørelse i juni 2026. Faldet skyldes dels, at borgerne har fundet anden løsning, for\neksempel en egnet almennyttig bolig via boligforeningen.\nDer bliver cirka 10 ældreboliger ledige til visitation om året. Der forventes derfor en\ngennemsnitlig ventetid på godt et år.\nDer visiteres dog altid til den borger med det største behov, hvorfor nogle få kan opleve kortere\nventetid.\nVentelisten til de enkelte boliger er som nedenstående. En borger kan godt stå på venteliste til\nflere ældreboliger med henholdsvis 1. og 2. prioritet.\nÆrøskøbing, Baggårde: 4 på venteliste.\nMarstal, Birkelygård: 3 på venteliste\n\nMarstal, Peder Skramsgade: 4 på venteliste\nSøby, Rummes Agre: 0 på venteliste.\nLedige ældreboliger:\nDer er ingen ledige ældreboliger. Der visiteres med det samme til ledige ældre boliger, grundet\nden store søgning.\n\nRetsgrundlag:\nLov om social service §192 og 192a\nLov om almene boliger §54\n\nØkonomi:\nIkke relevant.\n\nSagen afgøres af:\nKultur- og Socialudvalget\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget:\n1. Tager orienteringen om ventelister til pleje- og ældreboliger til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-6": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-6",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Implementering af budgetaftale 2027 på Ældre- og Sundhedsområdet",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nEt flertal i Kommunalbestyrelsen bestående af Liste A, Æ, V, F og C indgik den 23. september\n2026 forlig om budgettet for 2027 og overslagsårene frem til 2030.\nBudgetaftalen indeholder en række initiativer på Ældre- og Sundhedsområdet, som skal\nbidrage til at tilpasse serviceniveauet, understøtte en mere bæredygtig drift og frigøre\nmedarbejderressourcer til borgere med de største behov.\nInitiativerne omfatter:\nøget anvendelse af velfærdsteknologiske løsninger i forbindelse med praktisk hjælp,\nherunder robotstøvsugere med gulvvaskefunktion og bordopvaskemaskiner,\nøget anvendelse af sygeplejeklinikker som alternativ til sygeplejeydelser i borgernes eget\nhjem,\nophør af gratis udlån af mikrobølgeovne,\nstyrket rehabiliterende indsats i hjemmeplejen og hjemmesygeplejen, herunder øget\nanvendelse af DigiRehab.\nKultur- og Socialudvalget orienteres med denne sag om administrationens plan for\nimplementering af de vedtagne initiativer og bedes godkende den overordnede\nimplementeringsplan.\n\nSagsfremstilling:\nBudgetaftalen for 2027 indebærer en række ændringer i opgaveløsningen på Ældre- og\nSundhedsområdet. Administrationen har udarbejdet en samlet implementeringsplan med fokus\npå faglig kvalitet, borgerinformation, medarbejderinddragelse og løbende opfølgning.\nImplementeringen vil ske gradvist i løbet af 2027 med hovedvægt på information, dialog og\nunderstøttelse af de berørte borgere.\n1. Ophør af gratis udlån af mikrobølgeovne\nFra 1. januar 2027 ophører ordningen med gratis udlån af mikrobølgeovne.\nTiltaget implementeres ved, at:\nvisitationen orienteres om de nye retningslinjer,\nder ikke længere udleveres mikrobølgeovne til nye borgere,\nrelevante procedurer og informationsmaterialer opdateres,\ninformation om gratis udlån af mikrobølgeovne slettes på kommunens hjemmeside,\nborgere og samarbejdspartnere orienteres gennem kommunens informationskanaler.\nDe borgere, som allerede har en udlånt mikrobølgeovn, berøres ikke af ændringen.\n\n2. Øget anvendelse af velfærdsteknologi\nSom led i budgetaftalen skal anvendelsen af velfærdsteknologiske løsninger øges i forbindelse\nmed levering af praktisk hjælp.\nIndsatsen omfatter især:\nrobotstøvsugere med gulvvaskefunktion,\nbordopvaskemaskiner.\nImplementeringen sker gradvist og med udgangspunkt i nye borgere, der visiteres til praktisk\nhjælp. Sideløbende foretages en løbende gennemgang af eksisterende borgere med henblik\npå at vurdere, om opgaver helt eller delvist kan løses ved hjælp af velfærdsteknologi.\nVed vurderingen tages der fortsat udgangspunkt i den enkelte borgers funktionsevne,\nressourcer og boligforhold.\nFor at understøtte implementeringen gennemføres:\nkompetenceudvikling af medarbejdere,\nudarbejdelse af informationsmateriale om robotstøvsugere og bordopvaskemaskiner,\nudarbejdelse af spørgsmål-og-svar-materiale til borgere og medarbejdere,\ninformationsindsatser målrettet borgere, pårørende og interesseorganisationer.\nKommunikation om initiativet vil have særligt fokus på, at frigjorte medarbejderressourcer i\nhøjere grad kan anvendes til personlig pleje og omsorg for de mest plejekrævende borgere.\n3. Øget brug af sygeplejeklinikker\nBudgetaftalen indebærer en øget anvendelse af sygeplejeklinikker som alternativ til\nsygeplejebesøg i borgerens eget hjem. Fremadrettet vil nye borgere, der visiteres til relevante\nsygeplejeydelser, som udgangspunkt modtage indsatsen i en sygeplejeklinik, når dette er\nfagligt forsvarligt og hensigtsmæssigt.\nImplementeringen understøttes blandt andet gennem:\ninformation og vejledning til medarbejdere og samarbejdspartnere,\ndialog med sygehuse, almen praksis og øvrige relevante samarbejdspartnere,\nudarbejdelse af informationsmateriale samt spørgsmål-og-svar-materiale til borgere og\npårørende,\nløbende opfølgning og monitorering af udviklingen i anvendelsen af sygeplejeklinikker.\nFormålet er at sikre en mere effektiv anvendelse af de sygeplejefaglige ressourcer, samtidig\nmed at den faglige kvalitet understøttes. Sygeplejeklinikkerne tilbyder generelt bedre rammer\nfor undersøgelse, behandling og vejledning end borgerens eget hjem, hvilket kan bidrage til et\nhøjere fagligt niveau og større fleksibilitet i opgaveløsningen.\n\nBorgere, der allerede modtager sygepleje i eget hjem, vil løbende blive vurderet med henblik\npå, om indsatsen helt eller delvist kan overgå til behandling i sygeplejeklinik.\nTransport til og fra sygeplejeklinikken er som udgangspunkt borgerens eget ansvar. Der\nudarbejdes derfor målrettet information til borgerne om ordningen, herunder om\ntransportmuligheder.\n4. Styrket rehabiliterende indsats og DigiRehab\nBudgetaftalen indebærer også en styrkelse af den rehabiliterende tilgang i hjemmeplejen og\nhjemmesygeplejen.\nIndsatsen understøttes blandt andet gennem øget anvendelse af DigiRehab som redskab til\nsystematisk vurdering og træning af borgernes funktionsniveau.\nImplementeringen omfatter:\nkompetenceudvikling af ledere og medarbejdere,\nøget fokus på rehabiliterende arbejdsmetoder,\nsystematisk anvendelse af DigiRehab,\nløbende opfølgning på effekten af indsatserne.\nDer vil blive indsamlet data om udviklingen i borgernes funktionsevne samt ressourceforbrug\nfør og efter rehabiliteringsindsatserne.\nKommunikation og interessentinddragelse\nImplementeringen understøttes af en samlet kommunikationsindsats, som blandt andet\nomfatter:\ninformationsmøder med relevante interessenter,\ndialog med Ærø Seniorråd,\ndialog med Handicaprådet,\ndialog med Ældre Sagen,\ninformation til sygehuse og øvrige samarbejdspartnere,\npressemeddelelser ved væsentlige ændringer,\nopdatering af informationsmaterialer og hjemmeside.\nOpfølgning\nAdministrationen vil løbende følge implementeringen og orientere Kultur- og Socialudvalget om\nstatus og effekter af de vedtagne initiativer.\nDer vil særligt blive fulgt op på:\nanvendelsen af velfærdsteknologiske løsninger,\n\nudviklingen i brugen af sygeplejeklinikker,\neffekten af rehabiliteringsindsatser.\n\nRetsgrundlag:\nServiceloven\nÆldreloven\nKommunalbestyrelsens budgetaftale for 2027\n\nØkonomi:\nTiltagene indgår i de økonomiske forudsætninger, der ligger til grund for budgetaftalen for 2027\nog overslagsårene.\n\nSagen afgøres af:\nKultur- og Socialudvalget\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget:\ntager orienteringen om implementeringen af budgetaftalens initiativer på Ældre- og\nSundhedsområdet til efterretning, og\ngodkender den overordnede implementeringsplan for de vedtagne initiativer."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-7": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-7",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Den nye beskæftigelsesreform: ændringer i indsats og organisering",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nRegeringen har i foråret 2025 indgået aftale om en ny beskæftigelsesreform med det formål at\nforenkle og modernisere beskæftigelsessystemet.\nReformen implementeres trinvist fra 1. januar 2026 og frem mod 2030.\nI 2025 blev de økonomiske konsekvenser for 2026 samt de organisatoriske konsekvenser af\nreformen behandlet af det daværende Kultur- og Socialudvalg.\nDenne sag omhandler den videre udmøntning af reformen, herunder de økonomiske\nreduktioner i 2027, 2028 og 2029 samt de faglige og organisatoriske tilpasninger, der følger af\nreformen.\n\nSagsfremstilling:\nEt væsentligt element i den nye reform er, at jobcentrene i sin nuværende form nedlægges og\ngradvist afløses af en ny, mere fleksibel organisering, hvor kommunerne i højere grad selv kan\ntilrettelægge indsatsen med færre statslige proceskrav.\nDet betyder, at en række proceskrav og særregler afskaffes. F.eks. lempes kravene om, hvor\nmange samtaler og tilbud borgerne skal deltage i.\nI 2025 besluttede Kultur- og Socialudvalget:\n1. at fastholde den eksisterende organisatoriske struktur på området, hvilket betyder, at\nbeskæftigelses- og socialområdet fortsat er samlet under ét\n2. at ændre afdelingsnavn til \"Beskæftigelses- og Socialområdet\".\nMed denne sagsfremstillingen orienteres om områdets interne har re-organisering ift. at\nimødekomme reformens tanker samt hvordan de økonomiske konsekvenser af reformen\ntænkes implementeret i overslagsårene frem til 2030.\nBeskæftigelsesreformen får direkte betydning for økonomien på beskæftigelsesområdet.\nPå landsplan indebærer reformen en varig reduktion af de kommunale udgifter til\nbeskæftigelsesindsatsen på 2,7 mia. kr. årligt fra 2030.\nFor Ærø Kommune svarer dette til en årlig reduktion på ca. 2,7-2,9 mio. kr., inkl. faldende\nudgifter til overførsler.\nBesparelsen forventes primært at kunne realiseres gennem færre lovpligtige samtaler, færre\nproceskrav, en betydelig forenkling af lovgivningen, reduktion af antallet af målgrupper (13 til\n5), ophør af rehabiliteringsteamet, et generelt lavere indsatsniveau på blandt andet\nsygedagpengeområdet m.m. Besparelserne fordeler sig mellem konto 5, som omfatter udgifter\ntil aktivering, tilbud, kurser og anden aktør, og konto 6, som vedrører administration.\n\nI 2026 blev besparelsen fordelt med ca. 518.000 kr. på administrationsrammen og ca. 360.000\nkr. på konto 5. Besparelsen på administrationsrammen blev blandt andet realiseret gennem\nnedlæggelsen af en beskæftigelsesstilling, mens besparelsen på konto 5 blandt andet blev\nopnået gennem ophør af samarbejdsaftalen med Det Gamle Værft. Samlet blev der fundet\nbesparelser for 878.000 kr. mod et krav på 838.000 kr. Der blev således realiseret en\nmerbesparelse på 40.000 kr., som er videreført til arbejdet med at indfri besparelseskravet i\nI 2027 skal området finde yderligere besparelser for 935.000 kr. Her indgår de 40.000 kr. fra\n2026 som en del af finansieringen. Beskæftigelsesområdet har allerede gennem en årrække\narbejdet målrettet med at reducere timeforbruget og tilpasse organisationen på følgende\nmåder:\nOmlægning af beskæftigelsesstillinger og overførsel af timer til det stigende sagspres på\nsocialområdet.\nReduktion af medarbejdertimer som følge af ansatte, der er gået ned i tid uden\nefterfølgende genbesættelse.\nReduktion af ca. 17 ugentlige timer på ungeområdet som følge af færre sager.\nBesættelse af enkelte stillinger med mindre lønudgift (f.eks. nyuddannede).\nAnvendelse af en tidsbegrænset vikar på integrationsområdet i 2026, som ikke\nvidereføres i 2027.\nDisse tiltag betyder, at en væsentlig del af besparelsen i 2027 allerede er indarbejdet på\nadministrationsrammen. De resterende besparelser forventes primært at blive fordelt på\nområdets aktivitets- og indsatspuljer for ledige og sygemeldte borgere.\nDerudover er området påvirket af de generelle økonomiske udfordringer og besparelser, som\nkommunen står overfor. Det indebærer blandt andet, at ønsket om at fastholde en styrket\nindsats på integrationsområdet ikke kan prioriteres i det ønskede omfang. Administrationen\nfølger udviklingen af kvotefordelingen til kommunerne tæt og det kan ikke udelukkes, at et\neventuelt stigende ressourceforbrug på området på et senere tidspunkt vil nødvendiggøre en\npolitisk stillingtagen til, hvordan udfordringen skal håndteres.\nDet er administrationens vurdering, at de indsatser, som reduceres eller bortfalder som følge af\nreformen (Konto 5), i videst muligt omfang kan varetages internt, blandt andet gennem en\nstyrket virksomhedsservice ligesom det fortsat vil være muligt at prioritere indsatser for både\nledige og sygemeldte, dog på et lavere niveau end i dag.\nFor overslagsårene udgør de resterende besparelseskrav ca. 357.000 kr. i 2028 og ca.\nVurderingen er, at disse besparelser kan realiseres på konto 6 gennem naturlig afgang,\nreduktion af timetal ved genbesættelser samt organisatoriske tilpasninger. Derudover forventes\nlovændringerne på sygedagpengeområdet at medføre et lavere behov for visse indsatser,\nhvilket vil bidrage til yderligere besparelser på konto 5.\n\nRetsgrundlag:\nLov om en aktiv beskæftigelsesindsats (ofte forkortet LAB-loven) samt Lov om organisering og\nunderstøttelse af beskæftigelsesindsatser.\n\nØkonomi:\nFor Ærø Kommune indebærer beskæftigelsesreformen en årlig reduktion på ca. 2,7-2,9 mio.\nkr., inkl. faldende udgifter til overførsler.\nI 2026 blev besparelsen fordelt med ca. 518.000 kr. på administrationsrammen og ca. 360.000\nkr. på konto 5. Besparelsen på administrationsrammen blev blandt andet realiseret gennem\nnedlæggelsen af en beskæftigelsesstilling, mens besparelsen på konto 5 blandt andet blev\nopnået gennem ophør af samarbejdsaftalen med Det Gamle Værft. Samlet blev der fundet\nbesparelser for 878.000 kr. mod et krav på 838.000 kr. Der blev således realiseret en\nmerbesparelse på 40.000 kr., som er videreført til arbejdet med at indfri besparelseskravet i\nI 2027 skal området finde yderligere besparelser for 935.000 kr. Her indgår de 40.000 kr. fra\n2026 som en del af finansieringen.\nFor overslagsårene udgør de resterende besparelseskrav ca. 357.000 kr. i 2028 og ca.\n\nØkonomisk påtegning:\nLøn og Økonomi bekræfter, at tallene i sagsfremstillingen er retvisende. Det skal dog\nbemærkes, at de vil ændre sig fra år til år grundet pris- og lønfremskrivning.\n\nSagen afgøres af:\nKultur- og Socialudvalget\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget:\n\n1. Godkender forslag til udmøntning af de økonomiske reduktioner som følge af\nbeskæftigelsesreformen i 2027-2029.\n2. Tager orienteringen om de organisatoriske og opgavemæssige tilpasninger som følge af\nreformen til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-9": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-9",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Marstal Søfartsmuseum: Godkendelse af budget 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nForslag til budget for 2027 for Marstal Søfartsmuseum fremlægges til godkendelse.\n\nSagsfremstilling:\nBudgettet fremlægges hermed til godkendelse. Forvaltningen har ikke fundet anledning til\nkommentarer til det fremsendte.\nEfter sagens behandling i Kommunalbestyrelsen sendes afgørelsen til Slots- og\nKulturstyrelsen.\n\nRetsgrundlag:\nMuseumsloven\n\nØkonomi:\n\nSagen afgøres af:\nKommunalbestyrelsen\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget:\n1. anbefaler budget 2027 godkendt."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-10": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-10",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Kulturpuljen og udviklingspuljen: Overblik november 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nHerunder følger overblik over de disponible beløb for henholdsvis Kulturpuljen og\nUdviklingspuljen for november 2026.\n\nSagsfremstilling:\nDer er afsat 351.000 kr. i budgettet og der er søgt overførsel af tiloversblevne midler fra 2025 :\n259.000 kr. I alt 610.000 kr. Der er ikke bevilget overførsel. Dvs. at årets samlede disponible\nbeløb er 351.000 kr. Se bilag 1 for detaljeret overblik.\nJuni 2026: Beløbet til Børnekulturdag 2026 på 22.000 kr. er tilbageført, da udgiften kan\nfinansieres via kulturmidler fra Kulturregion Fyn.\nKulturpulje overblik\nBudget 2026\n\nDisponibelt beløb i 2026\n\nBevilget tilskud i 2026\n\nudbetalt underskudsgaranti i 2026\n\nReserveret underskudsgarantien\n\nUdbetalt/reserveret d.d.\n\nRestbeløb\n\nDe reserverede beløb på underskudsgarantien frigives løbende, hvis ikke ansøger får behov\nfor at udnytte den. Svarfrister for behov for udbetaling af underskudsgarant findes i oversigten.\n(Bilag 1).\nUdviklingspuljen overblik\n\nAfsat til Lokalråd\n\nTildelt\n\nForbrug i alt\n\nDisponibelt beløb\n\nHerunder skitseres formål med og retningslinjer for de to puljer. Detaljerede retningslinjer\nfindes i bilag.\nKulturpuljen:\nGodkendte foreninger og organisationer eller sammenslutninger, som har et almennyttigt\nformål, kan søge Kulturpuljen. Der ydes tilskud til arrangementer og aktiviteter i Ærø\nKommune, hvor der er offentlig adgang og som markedsføres i lokale medier:\nStørre enkeltstående arrangementer, ikke-kommercielle koncerter, arrangementer og\naktiviteter\nAnnoncering, honorarer, leje af udstyr og andre udgifter i forbindelse med afholdelse af\nkulturarrangementer og aktiviteter\nStøtte til nye foreninger i opstartsfasen. Hvis I som forening tidligere har modtaget\nopstartsstøtte, må I forvente, at støtten gradvist nedsættes. Det afgøres ud fra en konkret\nvurdering\nGenerelt støtter Kulturpuljen ikke:\nDrift af foreninger eller organisationer\nVedligeholdelse af bygninger og materiel, transport og forplejning\nKommercielle arrangementer og aktiviteter\nTilskud eller underskudsgaranti til privatpersoner.\nUdviklingspuljen:\nUdviklingspuljen har til formål at støtte initiativer og aktiviteter inden for kultur- og\nsocialområdet, som ikke umiddelbart kan finansieres andetsteds.\nUdviklingspuljen kan ikke søges direkte men bringes i anvendelse på baggrund af politisk\nprioritering i Kultur- og Socialudvalget.\nPuljen skal altid anvendes til støtte til lokalråd. 10.000 kr. årligt til godkendte lokalråd. For\nnuværende er der seks lokalråd.\nØvrige midler fra puljen kan anvendes:\ntil støtte til kommunale udviklingsaktiviteter ift. kulturlivet på Ærø (kulturpolitik,\nimplementeringsindsatser m.m.)\ntil kulturelle arrangementer og initiativer, der ikke umiddelbart kan støttes via Kulturpuljen.\ntil nyskabende aktiviteter og indsatser inden for kultur- og eller børne- og ungeområdet.\ntil kulturelle udviklingsinitiativer på kommunens egne institutioner\nResterende midler kan ved årets afslutning anvendes til kulturprojekter, hvor det vurderes\n\nrelevant for kulturlivet på Ærø.\n\nØkonomi:\n\nSagen afgøres af:\nKultur- og Socialudvalget\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget:\n1. tager orienteringen til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-11": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-11",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Kulturregion Fyn: Godkendelse af af indsatsområder 2027-2029",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nKulturregion Fyn er et samarbejde mellem ni fynske kommuner, der arbejder for at understøtte\ntværkommunale kulturprojekter og styrke kvalitet af og tilgængelighed til de fynske kulturtilbud.\nKulturregion Fyns politiske styregruppe, som består af medlemskommunernes\nkulturudvalgsformænd, skal beslutte, hvilke kulturelle indsatsområder der skal prioriteres i en\nkommende flerårig aftale mellem kommunerne for 2027-2029. Styregruppen har haft en\nindledende drøftelse af forskellige forslag til indsatsområder.\nForslagene fremlægges til drøftelse og prioritering. Input herfra vil indgå i Kulturregionens\nvidere proces med at udvælge og konkretisere indhold i indsatsområderne.\n\nSagsfremstilling:\nÆrø Kommune udgør sammen med otte andre fynske kommuner det fynske kultursamarbejde\n\"Kulturregion Fyn\", som udvikler og giver støtter kulturaktiviteter i medlemskommunerne.\nKulturregionens arbejde er bygget op om flerårige indsatser. Der skal nu udvælges\nindsatsområder for de kommende tre år.\nDer er indhentet ønsker fra medlemskommuner og kulturaktører. Styregruppen for Kulturregion\nFyn har prioriteret 4 indsatsområder som ønskes drøftet, kvalificeret og prioriteret med fokus\npå at:\nudpege ønskede indholdselementer\nidentificere centrale aktører i egen kommune, der kan være med til at løfte\nindsatsområdet\nudpege målgrupper der skal være særligt fokus på.\nForslagene vil blive præsenteret og beskrevet på Kultur- og Socialudvalgets møde.\n\nForslag til indsatsområder\n1. Børn, unge, dannelse og deltagelse\nFormål: at styrke børn og unges adgang til kunst og kultur samt deres muligheder for selv at\ndeltage aktivt i kulturlivet.\nForslagene spænder fra kulturel dannelse og kreative fællesskaber til talentudvikling, vækstlag\nog unges rolle som medskabere af kultur. Desuden er der fokus på at skabe mere lige adgang\ntil kulturelle oplevelser og på at styrke sammenhængen mellem kulturinstitutioner, skoler,\nfritidsliv og unge kulturmiljøer.\nIdeer til indhold er for eksempel:\nFlere børn på kulturinstitutioner\nKulturelle dannelsesforløb\n\nMobile kunst- og teaterforløb på skoler og i SFO'er\nTalentudvikling inden for musik, kunst og scenekunst\nUnge kulturskabere og kreative fællesskaber\n\n2. Kultur, sundhed, trivsel og fællesskaber\nFormål: At styrke kulturforløb som et tilbud i arbejdet med trivsel, fællesskab, mental sundhed\nog livskvalitet for borgere i forskellige livssituationer.\nPotentialer:\nBygge videre på erfaringer og metoder, som kommuner og kulturaktører har opbygget\ngennem bl.a. Kultur på Recept/Kultur i fællesskaber\nFra udvikling til større udbredelse og forankring af kulturbaserede trivsels- og\nsundhedsindsatser\nStyrket samarbejde mellem kultur-, social-, sundheds- og civilsamfundsaktører\nGode muligheder for ekstern finansiering, da kultur, trivsel og mental sundhed i disse år\ner et prioriteret indsatsområde hos flere fonde og puljer\nUnderstøtter nationale og internationale dagsordener inden for kultur og sundhed\nEksempler:\nKultur på Recept-lignende forløb\nKulturforløb for unge i mistrivsel\nKulturaktiviteter for mennesker uden for arbejdsmarked og uddannelse\nMusikbesøg hos mennesker med demens eller psykisk sårbarhed på plejecentre,\nrehabiliteringscentre og i eget hjem\nMobile kunst- og kulturtilbud, der bringer kunst ud til borgere i sundheds- og\nomsorgstilbud\nMålgrupper :\nMennesker uden for arbejdsmarked og uddannelse, Unge i mistrivsel, Psykisk sårbare,\nMennesker med demens eller som er isoleret på eksempelvis plejecentre\n3. Kulturarv, lokale fællesskaber og stedbaserede kulturmiljøer\nFormål: at udvikle nye måder at skabe lokale mødesteder, fælles fortællinger og stærke\nkulturmiljøer på tværs af Fyn og øsamfundene: at bringe lokale identiteter, fynske særkender,\ndialekter og kulturmiljøer i spil som afsæt for formidling, borgerinddragelse og levende\nlokalsamfund.\nPotentialer:\nBygger på stærke fynske og ø-relaterede særkender, herunder kulturhistorie, dialekter,\nmaritime fortællinger m.m\n\nUdvikle nye formidlingsformer, lokale mødesteder og fælles fortællinger på tværs af\nkommunerne\nSynliggøre Fyns særlige identitet både for borgere og besøgende og skabe kulturtilbud\ntæt på borgernes hverdagsliv\nUnderstøtte borgerinddragelse, frivillighed og lokalt medejerskab\nKoble kulturarv, stedsudvikling, turisme og erhvervsudvikling på nye måder\nEksempler:\n\nFormidling af lokale fortællinger, fynske særkender og dialekter\nUdvikling af kulturhuse, lokale mødesteder og kulturaktiviteter i landsbyer\nKulturmiljøer og historiske landskaber som afsæt for nye oplevelser\nØ-kultur og maritime fortællinger\nBorgerdrevne kulturaktiviteter\n\nMålgrupper:\nSkolebørn og unge, Børnefamilier, Aktive pensionister, Frivillige i lokalsamfund\n4. Kultur, natur og landskaber\nFormål: at bringe kultur og natur tættere sammen og bygge videre på erfaringerne fra\nKulturregion Fyns indsatsområde Kultur i Natur. Natur, kystlandskaber og ø-liv fremhæves som\nsærlige fynske styrkepositioner og som afsæt for kulturelle oplevelser, fælles fortællinger og\nnye samarbejder på tværs af kultur-, natur- og turismeområdet. Indsatsområdet taler samtidig\nind i nationale og internationale strømninger med et voksende fokus på klima, biodiversitet,\nnaturforståelse og lysten til at dyrke naturen.\nPotentialer:\nBygger videre på erfaringerne fra Kultur i Natur, hvor kunstnere, naturformidlere og\ninstitutioner har udviklet nye formater\nMulighed for at engagere større aktører som Naturama, Museum Odense og Geopark\nDet Sydfynske Øhav\nUdvikle kulturformater uden for traditionelle institutioners rammer\nUnderstøtte dagsordener om klima, biodiversitet og grøn omstilling\nImødekomme borgernes stigende interesse for naturpraksisser såsom vinterbadning,\nskovbadning, vandring og naturoplevelser\nEksempler:\n\nUNESCO Global Geopark Det Sydfynske Øhav\n\nNaturkoncerter for unge\nLandart og kunst i landskabet\nKultur ved vandet\nBiodiversitet og naturfællesskaber\nMålgrupper:\nBorgere med interesse for kunst og natur, Børnefamilier, Mennesker med psykisk sårbarhed\nder kan gavne af naturens ro, Aktive pensionister\n\nØkonomi:\n\nSagen afgøres af:\nKultur- og Socialudvalget\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget:\n\n1. Prioriterer indsatsområderne\n2. Udpeger de mest relevante indholdselementer for hvert indsatsområde\n3. Udpeger hvilke målgrupper, udvalget primært ønsker at prioritere i forhold til\nindsatsområderne."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-12": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-12",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Ansøgninger til §7-puljen (ældrepuljen) 2. halvår 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nKultur- og Socialudvalget besluttede på møde den 17. juni 2025 at etablere en §7-pulje. Kulturog Socialudvalget anmodes om at behandle forslaget til fordeling af puljemidlerne i 2. halvår\n\nSagsfremstilling:\nPuljens formål er at styrke samarbejdet mellem civilsamfundet og kommunen ved at støtte\nfrivillige sociale aktiviteter, der gør en forskel for ældre borgere og deres pårørende på Ærø.\nPuljen udbydes to gange årligt: 1. maj og 1. november.\nDer er til november 2026 indkommet 3 ansøgninger:\nFællesspisning for pensionister i Rise søger 2.400 kr. til fællesspisning\nDansk Røde Kors søger 29.900 kr. til juleaften for ældre og ensomme borgere på Ærø.\nLandmandsgruppen søger 6.000 kr. til transport til virksomhedsbesøg på Sønderborgs\nLandbrugsskole.\n\nDer er afsat 50.000 kr. hvoraf Vestærø Pensionistforening modtog et beløb på 15.000 kr. i\nførste halvdel af 2026. Dvs, at der tilbagestår 35.000 kr. til fordeling i efteråret 2026.\nAdministrationen foreslår følgende fordeling af §-7-tilskud:\nFællesspisning for pensionister i Rise\n\nDansk Røde Kors, juleaften\n\nLandmandsgruppen, virksomhedsbesøg\n\nØkonomi:\nDer er afsat 50.000 kr. i 2026.\nHvis forslag til fordeling af ansøgninger for andet halvår 2026 i mødekommes vil puljen for\n2026 være opbrugt.\n\nSagen afgøres af:\nKultur- og Socialudvalget\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget:\n1. drøfter om forslaget til fordeling af §-7-midler 2.halvår 2026 kan godkendes.\n\nSupplerende sagsfremstilling:"
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-13": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-13",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Frivilligt socialt arbejde - SEL §18 - 2. halvår 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nDer er i 2. halvår af 2026 indkommet 9 ansøgninger om tilskud til frivillige sociale organisationer og foreningers\narbejde.\n\nSagsfremstilling:\n9 foreninger har søgt om tilskud til frivilligt socialt arbejde. Ansøgningen fra Ældresagen er oprindeligt søgt under\n§7 puljen, men da foreningen tidligere er tildelt §18-midler til et lignende arrangement, er det fra administrationen\nvurderet at ansøgningen behandles under §18.\nDer er søgt om tilskud for i alt kr. 83.350. I budget 2026 er der afsat kr. 170.000. Der er i alt kr. 68.900 til udbetaling\ni 2. halvår 2026.\nBilaget \"Oversigt over ansøgninger/udbetalinger\" viser hvor meget der blev udbetalt i 2. halvår 2025, samt 1. halvår\n2026 - til de foreninger der også søger i 2. halvår 2026.\n\nDer er indkommet ansøgninger fra følgende:\n\nDer søges om kr.\n\nForslag til udbetaling:\n\nBørns Vilkår\n\nFolkekirkens Nødhjælpsmedarbejdere\n\nUngTrivsel\n\nCentrets Venner\n\nKræftens Bekæmpelse\n\nUngdommens Røde Kors\n\nHøreforeningens lokalafdeling Ærø\n\nProstatakræftforeningen PROFA\n\nÆldresagen Ærø\n\nI alt\n\nØkonomi:\nDer er i budget 2026 afsat kr. 170.000, hvor der i 1. halvår er udbetalt kr. 101.100.\nResterende beløb kr. 68.900 kan udbetales i november 2026.\n\nSagen afgøres af:\nKultur- og Socialudvalget.\n\nIndstilling:\nAdministrationen indstiller at:\n1. Kultur- og Socialudvalget drøfter om ansøgningerne kan imødekommes, og i givet fald med hvilke beløb."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-14": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-14",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Meddelelser til Kultur- og Socialudvalget oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indledning:\nMeddelelser til orientering.\n\nSagsfremstilling:\nDer er følgende meddelelser:\n1. Stormøde om Vores Skole: Børne- og Undervisningsministeriet har med kort varsel\ninviteret til stormøde om Vores Skole i Fredericia den 23. november 2026. Borgmesteren\nog formanden for Kultur- og Socialudvalget har desværre ikke mulighed for at deltage.\nÆrø Kommune bliver repræsenteret ved skolelederen, to lærere, en pædagog og to\nelever.\n2. Ledelsesskifte i Mopælappen: Orientering om baggrunden for det kommende\nledelsesskifte i Mopælappen og den videre dialog med forældrebestyrelsen, herunder et\nplanlagt møde jf. orienteringsmails sendt til kommunalbestyrelsen d. 27. okt. og d. 9. nov.\n3. Midlertidig ledelse i Sundhed og Forebyggelse: Orientering om konstituering af\nmidlertidig leder i Sundhed og Forebyggelse.\n4. Horisontalt samarbejde om børne- og ungdomspsykiatri: Orientering om indledende\nog uforpligtende dialog med regionen om muligheden for at indgå en samarbejdsaftale\nom sundhedsydelser inden for børne- og ungdomspsykiatrien. Formålet er at styrke de\ntidlige og lettilgængelige tilbud til børn og unge med psykiske vanskeligheder og deres\nfamilier. Ærø Kommune har allerede en samarbejdsaftale med Svendborg Kommune om\nbl.a. lettilgængelige tilbud, og mulighederne for et eventuelt nyt samarbejde skal derfor\nogså afklares i forhold til den eksisterende aftale.\n5. Ny placering af heliport: Orientering om behandling af sag i Teknik-, Miljø- og\nHavneudvalget vedrørende en ny placering af heliporten.\n\nØkonomi:\n\nSagen afgøres af:\n\nKultur- og Socialudvalget.\n\nIndstilling:\nAdministrationen indstiller, at Kultur- og Socialudvalget:\n\n1. Tager meddelelserne til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-15": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-15",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Til orientering - referat fra Seniorrådets møde den",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at Kultur- og Socialudvalget:\n\n1. tager orienteringen til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-16": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-16",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Til orientering - referat fra Handicaprådets møde 9. november 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at Kultur- og Socialudvalget:\n\n1. tager orienteringen til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-17": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-17",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 17,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Kommunikation fra udvalgsmødet",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagsfremstilling:\nUdvalget og direktøren drøfter, om der eventuelt er dagspunkter, der skal kommunikeres ud via\nkommunens kanaler. I givet fald udvælges 1-2 historier, der vurderes at være relevante og\naktuelle for borgerne.\nFor en historie er relevant, skal den:\nhave konkret betydning for borgere (service, tilbud, ændringer, muligheder eller\nresultater)\nvedrøre væsentlige beslutninger, milepæle, fremskridt osv.\nbidrage til forståelse af kommunale indsatser eller processer, hvor borgerinddragelse\neller opmærksomhed er relevant."
+    }
+   ],
+   "bilag": []
+  },
+  "aeroe-2026-11-17-kultur-og-socialudvalget-18": {
+   "id": "aeroe-2026-11-17-kultur-og-socialudvalget-18",
+   "kommune": "Ærø",
+   "udvalg": "Kultur- og Socialudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 18,
+   "kilde": "https://dagsordener.aeroekommune.dk/vis?id=4f41cfee-2fbf-44ad-b059-a65a31665364",
+   "hentet": "2026-11-10T21:06:15.671Z",
+   "titel": "Godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagsfremstilling:\nUdvalget skal godkende beslutningsprotokollen.\nFor at godkende beslutningsprotokollen, skal hvert medlem underskrive ved at trykke\n\"Godkend\""
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -6133,7 +6813,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.aeroekommune.dk/Sitemap/ForCommittee?committeeId=030132bc-d1b2-4b87-9830-41dbb6f8c647": {
-   "senest": "2026-10-07",
+   "senest": "2026-11-10",
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.aeroekommune.dk/Sitemap/ForCommittee?committeeId=1737ccc3-42d0-44d7-b5b2-10cbf103a192": {
@@ -6165,7 +6845,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.aeroekommune.dk/Sitemap/ForCommittee?committeeId=2073db1a-25b6-4c85-8131-07e9c5d2f567": {
-   "senest": "2026-09-16",
+   "senest": "2026-11-10",
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.aeroekommune.dk/Sitemap/ForCommittee?committeeId=10ee2c09-6f96-4d83-9433-720b26ed4fff": {
@@ -6177,7 +6857,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.aeroekommune.dk/Sitemap/ForCommittee?committeeId=26335b7b-2c32-459b-be48-dba34fafa323": {
-   "senest": "2026-10-07",
+   "senest": "2026-11-10",
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.aeroekommune.dk/Sitemap/ForCommittee?committeeId=7262d86f-def1-4d77-8c25-462b32c18970": {
@@ -6241,7 +6921,7 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.aeroekommune.dk/Sitemap/ForCommittee?committeeId=5d1b2f59-e0ca-4fc6-8ad0-a2bcdc24c727": {
-   "senest": "2026-10-27",
+   "senest": "2026-11-10",
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.aeroekommune.dk/Sitemap/ForCommittee?committeeId=1f853d01-6afe-4914-a692-7efd77cba63e": {
@@ -6270,6 +6950,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-10T12:54:08.102Z",
+ "opdateret": "2026-11-10T21:06:25.796Z",
  "kommune": "Ærø"
 }

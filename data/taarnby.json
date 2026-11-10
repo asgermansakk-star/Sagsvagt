@@ -478,6 +478,22 @@
    "dato": "2026-11-02",
    "punkter": 8,
    "parser": 3
+  },
+  "5fe9adb4-4113-439d-abc5-4d0a799c14ed": {
+   "lastmod": "2026-11-10",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-04",
+   "punkter": 9,
+   "parser": 3
+  },
+  "3f8778c3-04bf-4a11-b22e-cb4f515b4a28": {
+   "lastmod": "2026-11-10",
+   "type": "referat",
+   "udvalg": "Sundheds- og Omsorgsudvalget",
+   "dato": "2026-11-09",
+   "punkter": 8,
+   "parser": 3
   }
  },
  "sager": {
@@ -12716,19 +12732,23 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Resumé",
-     "tekst": "Dennis W. Clausen har meldt afbud til hele mødet."
+     "tekst": "Dennis W. Clausen og Paw Karslund har meldt afbud til hele mødet."
     },
     {
      "titel": "Indstilling",
      "tekst": "Center for Politik og Kommunikation indstiller til Økonomiudvalget;\n1. at godkende dagsorden."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -12738,10 +12758,10 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
@@ -12751,6 +12771,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Politik og Kommunikation indstiller til Økonomiudvalget;\n1. at tage orienteringerne til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -12760,10 +12784,10 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Beslutning; Overførsel af midler til 2027 til udskiftning af autosprøjte M1",
    "afsnit": [
     {
@@ -12777,6 +12801,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for By, Miljø og Klima indstiller til Økonomiudvalget;\n\nCenter for By, Miljø og Klima indstiller til Økonomiudvalget;\n1. at 2.723.000 kr. af de afsatte 4.035.000 kr. i 2025, overføres til 2027.\n2. at indtægtsbevilling på -75.000 kr. overføres til 2027.\n/SGJ"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillinger godkendt."
     }
    ],
    "bilag": []
@@ -12786,10 +12814,10 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Beslutning; CTR I/S' medvirken til etablering af Varmelast A/S",
    "afsnit": [
     {
@@ -12815,6 +12843,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for By, Miljø og Klima indstiller til Økonomiudvalget;\n1. at godkende at CTR I/S medvirker til etablering af Varmelast A/S som fælles\ndatterselskab sammen med HOFOR og VEKS.\n/SGJ"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -12824,10 +12856,10 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Beslutning; Pulje til unge- og forældre-cafeen",
    "afsnit": [
     {
@@ -12841,6 +12873,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Børn og Familie indstiller til Økonomiudvalget;\n1. at der i 2027 fortsat afsættes 30.000 kr. til Ungecaféen og Forældrecaféen, der\nfinansieres af området for udsatte børn og unge.\n/SGJ"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -12850,10 +12886,10 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Orientering; Resultat af kortlægningen af kommunal- og regionalvalg 2025",
    "afsnit": [
     {
@@ -12867,6 +12903,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Politik og Kommunikation indstiller til Økonomiudvalget;\n1. at rapporten \"Valgdeltagelsen ved kommunal- og regionalvalget 2025\" tages til\nefterretning.\n/LAR"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -12876,10 +12916,10 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Orientering; Status for Innovationspuljen 2025",
    "afsnit": [
     {
@@ -12893,6 +12933,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Politik og Kommunikation indstiller til Økonomiudvalget;\n1. at tage afrapportering vedrørende Innovationspuljen til efterretning.\n/LAR"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -12902,10 +12946,10 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Orientering; Ophør af indsatsen ’Hjem til Os’ (Orientering til fagudvalg)",
    "afsnit": [
     {
@@ -12919,6 +12963,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Børn og Familie indstiller til Økonomiudvalget;\n1. at udvalget tager orienteringen til efterretning.\n2. at sagen fremsendes til orientering i Børne- og Skoleudvalget.\n/SGJ"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -12928,12 +12976,17 @@
    "kommune": "Tårnby",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-04",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 20,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=2e441fc5-dbce-47e0-bd87-c6ceba4c3bb8",
-   "hentet": "2026-10-30T19:29:28.364Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=5fe9adb4-4113-439d-abc5-4d0a799c14ed",
+   "hentet": "2026-11-10T21:00:18.966Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet."
+    }
+   ],
    "bilag": []
   },
   "taarnby-2026-11-09-sundheds-og-omsorgsudvalget-1": {
@@ -12941,15 +12994,23 @@
    "kommune": "Tårnby",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=d954dd7b-095b-46d4-ab1f-dcbc6d79cec2",
-   "hentet": "2026-11-02T22:51:54.428Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=3f8778c3-04bf-4a11-b22e-cb4f515b4a28",
+   "hentet": "2026-11-10T21:00:24.474Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
+     "titel": "Resumé",
+     "tekst": "Dennis W. Clausen (V) havde meldt afbud til hele mødet."
+    },
+    {
      "titel": "Indstilling",
      "tekst": "Center for Politik og Kommunikation indstiller til Sundheds- og Omsorgsudvalget;\n1. at godkende dagsorden."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -12959,10 +13020,10 @@
    "kommune": "Tårnby",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=d954dd7b-095b-46d4-ab1f-dcbc6d79cec2",
-   "hentet": "2026-11-02T22:51:54.428Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=3f8778c3-04bf-4a11-b22e-cb4f515b4a28",
+   "hentet": "2026-11-10T21:00:24.474Z",
    "titel": "Orientering; Fællesmøde med Seniorrådet (kl. 15.30-16.15)",
    "afsnit": [
     {
@@ -12972,6 +13033,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Rehabilitering, Omsorg og Sundhed indstiller til Sundheds- og\nOmsorgsudvalget;\n1. at tage drøftelserne på fællesmødet med Seniorrådet til efterretning.\n/LAR"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -12981,10 +13046,10 @@
    "kommune": "Tårnby",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=d954dd7b-095b-46d4-ab1f-dcbc6d79cec2",
-   "hentet": "2026-11-02T22:51:54.428Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=3f8778c3-04bf-4a11-b22e-cb4f515b4a28",
+   "hentet": "2026-11-10T21:00:24.474Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
@@ -12994,6 +13059,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Politik og Kommunikation indstiller til Sundheds- og Omsorgsudvalget;\n1. at tage meddelelserne til efterretning.\n/LAR"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -13003,10 +13072,10 @@
    "kommune": "Tårnby",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=d954dd7b-095b-46d4-ab1f-dcbc6d79cec2",
-   "hentet": "2026-11-02T22:51:54.428Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=3f8778c3-04bf-4a11-b22e-cb4f515b4a28",
+   "hentet": "2026-11-10T21:00:24.474Z",
    "titel": "Afgørelser fra Ankestyrelsen fremlægges",
    "afsnit": [
     {
@@ -13020,6 +13089,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Politik og Kommunikation indstiller til Sundheds- og Omsorgsudvalget,\n1. at tage afgørelserne til efterretning.\n/LAR"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -13029,10 +13102,10 @@
    "kommune": "Tårnby",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=d954dd7b-095b-46d4-ab1f-dcbc6d79cec2",
-   "hentet": "2026-11-02T22:51:54.428Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=3f8778c3-04bf-4a11-b22e-cb4f515b4a28",
+   "hentet": "2026-11-10T21:00:24.474Z",
    "titel": "Beslutning; Kvalitetsstandarder 2026-2027",
    "afsnit": [
     {
@@ -13046,6 +13119,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Social Indsats og Udvikling indstiller til Sundheds- og Omsorgsudvalget,\n1. at godkende kvalitetstandarderne for 2026-2027.\n2. at godkende, at besparelsen på 1,26 mio. kr. tilfalder kommunekassen fra 2028.\n/LAR"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillinger godkendt."
     }
    ],
    "bilag": []
@@ -13055,10 +13132,10 @@
    "kommune": "Tårnby",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=d954dd7b-095b-46d4-ab1f-dcbc6d79cec2",
-   "hentet": "2026-11-02T22:51:54.428Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=3f8778c3-04bf-4a11-b22e-cb4f515b4a28",
+   "hentet": "2026-11-10T21:00:24.474Z",
    "titel": "Beslutning; Handleplan for velfærdsteknologi 2026-2028 – fra strategi til handling",
    "afsnit": [
     {
@@ -13072,6 +13149,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Rehabilitering, Omsorg og Sundhed indstiller til Sundheds- og\nOmsorgsudvalget,\n1. at godkende handleplanen for strategi for velfærdsteknologi.\n/LAR"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -13081,10 +13162,10 @@
    "kommune": "Tårnby",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=d954dd7b-095b-46d4-ab1f-dcbc6d79cec2",
-   "hentet": "2026-11-02T22:51:54.428Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=3f8778c3-04bf-4a11-b22e-cb4f515b4a28",
+   "hentet": "2026-11-10T21:00:24.474Z",
    "titel": "Orientering; Reviderede kvalitetsstandarder i ROS 2026",
    "afsnit": [
     {
@@ -13098,6 +13179,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Rehabilitering, Omsorg og Sundhed indstiller til Sundheds- og\nOmsorgsudvalget;\n1. at tage orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -13107,12 +13192,17 @@
    "kommune": "Tårnby",
    "udvalg": "Sundheds- og Omsorgsudvalget",
    "dato": "2026-11-09",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.taarnby.dk/vis?id=d954dd7b-095b-46d4-ab1f-dcbc6d79cec2",
-   "hentet": "2026-11-02T22:51:54.428Z",
+   "kilde": "https://dagsordener.taarnby.dk/vis?id=3f8778c3-04bf-4a11-b22e-cb4f515b4a28",
+   "hentet": "2026-11-10T21:00:24.474Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet."
+    }
+   ],
    "bilag": []
   },
   "taarnby-2026-11-10-arbejdsmarkeds-og-beskaeftigelsesudvalget-1": {
@@ -13391,7 +13481,7 @@
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.taarnby.dk/Sitemap/ForCommittee?committeeId=4f753743-3e29-4857-9a4f-6fa91f391280": {
-   "senest": "2026-10-30",
+   "senest": "2026-11-10",
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.taarnby.dk/Sitemap/ForCommittee?committeeId=e20c3b49-ba1a-4324-8907-25e8eb2d6662": {
@@ -13399,7 +13489,7 @@
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.taarnby.dk/Sitemap/ForCommittee?committeeId=82b8f44b-064e-4a01-852c-841a2958180d": {
-   "senest": "2026-11-02",
+   "senest": "2026-11-10",
    "tjekket": "2026-11-10"
   },
   "https://dagsordener.taarnby.dk/Sitemap/ForCommittee?committeeId=b0cf0b72-7760-462a-a3ab-ddd1807bc8e1": {
@@ -13435,7 +13525,7 @@
    "tjekket": "2026-10-20"
   }
  },
- "opdateret": "2026-11-10T12:47:48.095Z",
+ "opdateret": "2026-11-10T21:00:24.475Z",
  "kommune": "Tårnby",
  "parser": 3
 }
