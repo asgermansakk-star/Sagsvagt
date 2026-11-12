@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Udvalget &quot;Sundhedscentrum&quot;, Roskilde Kommune – Sagsvagt</title>
+<meta name="description" content="Sager og beslutninger fra Udvalget &quot;Sundhedscentrum&quot; i Roskilde Kommune, hentet fra kommunens dagsordener og referater.">
+<link rel="canonical" href="https://sagsvagt.dk/kommune/roskilde/udvalget-sundhedscentrum.html">
+<meta name="theme-color" content="#0E0F14">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Udvalget &quot;Sundhedscentrum&quot;, Roskilde Kommune – Sagsvagt">
+<meta property="og:description" content="Sager og beslutninger fra Udvalget &quot;Sundhedscentrum&quot; i Roskilde Kommune, hentet fra kommunens dagsordener og referater.">
+<meta property="og:url" content="https://sagsvagt.dk/kommune/roskilde/udvalget-sundhedscentrum.html">
+<meta property="og:image" content="https://sagsvagt.dk/assets/og-billede.png">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="da_DK">
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="stylesheet" href="../../assets/fonts/montserrat.css">
+<link rel="stylesheet" href="../../assets/avis.css">
+<link rel="stylesheet" href="../../assets/grafik.css">
+<script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1"){var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:(f||(r&&r!==location.hostname?r:"")).slice(0,60)})})}}catch(e){}</script>
+<link rel="alternate" type="application/rss+xml" title="Sagsvagt: København" href="https://sagsvagt.dk/feed/alle.xml">
+</head>
+<body data-aktiv="k-udvalg">
+<a class="spring" href="#indhold">Spring til indholdet</a>
+<!--#include virtual="/del/hoved-roskilde.html" -->
+<main id="indhold">
+<div class="wrap"><div class="listing"><p class="kicker"><a href="../roskilde.html">Roskilde</a></p><h1>Udvalget &quot;Sundhedscentrum&quot;</h1><article><p class="kicker"><span class="status kommer">På dagsordenen 19. november</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-11-19-udvalget-sundhedscentrum-3.html">Beslutning af mission og prioriteringsprincipper v. Mette Olander, direktør</a></h2></article>
+<article><p class="kicker"><span class="status kommer">På dagsordenen 19. november</span></p><h2 class="hl"><a href="../../sag/roskilde-2026-11-19-udvalget-sundhedscentrum-4.html">Beslutning af procesplan for udvalgets arbejde v. Lisbeth Knudsen, strategisk direktør</a></h2></article></div></div>
+</main>
+<!--#include virtual="/del/fod.html" -->
+<script>/* Menuen kommer fra den fælles fil: marker sidens punkt (og "Mere", hvis punktet ligger der) */
+(function(){var a=document.body.dataset.aktiv;document.querySelectorAll("[data-id]").forEach(function(x){if(x.dataset.id!==a)return;x.setAttribute("aria-current","page");var d=x.closest("details");if(d&&x.tagName==="A")d.querySelector("summary").setAttribute("aria-current","page")})})();
+/* "Vis flere" under forsidens gitter: de næste sager; knappen forsvinder, når alle er vist */
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest(".vis-flere");if(!b)return;var l=b.previousElementSibling.querySelectorAll(".gk[hidden]");for(var i=0;i<l.length&&i<+b.dataset.vis;i++)l[i].hidden=false;if(l.length<=+b.dataset.vis)b.remove()});
+/* "Mere" (menu og tab-bjælke) lukker ved klik udenfor, på et punkt eller med Escape */
+document.addEventListener("click",function(e){document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){if(!d.contains(e.target)||e.target===d||e.target.closest("div a"))d.open=false})});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.mere[open],details.tab-mere[open]").forEach(function(d){d.open=false;d.querySelector("summary").focus()})});
+/* Kommunevælgeren henter de åbne kommuner fra kommune/aabne.json første gang, den åbnes (toggle bobler ikke, derfor capture) */
+document.addEventListener("toggle",function(e){var d=e.target,a=d.open&&!d.dataset.hentet&&d.querySelector&&d.querySelector("a[data-alle]");if(!a)return;d.dataset.hentet=1;var rod=a.getAttribute("href").slice(0,-8),nu=d.querySelector("a[data-kommune][aria-current]");nu=nu&&nu.dataset.kommune;fetch(rod+"kommune/aabne.json").then(function(r){return r.json()}).then(function(l){d.querySelectorAll("a[data-kommune]").forEach(function(x){x.remove()});l.forEach(function(u){var x=document.createElement("a");x.href=rod+(u.slug==="koebenhavn"?"index.html":"kommune/"+u.slug+".html");x.dataset.kommune=u.slug;x.textContent=u.navn;if(u.slug===nu)x.setAttribute("aria-current","page");a.parentNode.insertBefore(x,a)})}).catch(function(){d.dataset.hentet=""})},true);
+/* Husk kommunen (valgt i kommunevælgeren eller åbnet på dens forside); Københavns forside viser så vejen dertil */
+try{var K="svKommune";document.addEventListener("click",function(e){var a=e.target.closest("a[data-kommune]");if(a)localStorage.setItem(K,JSON.stringify({s:a.dataset.kommune,n:a.textContent}))});}catch(e){}</script>
+</body>
+</html>

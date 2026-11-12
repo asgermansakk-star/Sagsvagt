@@ -615,6 +615,22 @@
    "dato": "2026-11-11",
    "punkter": 7,
    "parser": 3
+  },
+  "75b6a1cd-9439-46ed-b6e2-6b25a51423b4": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Klima- og Miljøudvalget",
+   "dato": "2026-11-11",
+   "punkter": 10,
+   "parser": 3
+  },
+  "a6761d5c-58bd-44ee-bd13-ab9a31091ac6": {
+   "lastmod": "2026-11-12",
+   "type": "dagsorden",
+   "udvalg": "Beredskabsudvalget",
+   "dato": "2026-11-17",
+   "punkter": 3,
+   "parser": 3
   }
  },
  "sager": {
@@ -11747,12 +11763,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Sagen blev godkendt."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-klima-og-miljoeudvalget-2": {
@@ -11760,10 +11781,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Temadagsorden: Introduktion til Park og Vej - Orientering",
    "afsnit": [
     {
@@ -11777,6 +11798,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget til orientering.\nDirektionen foreslår, at sagen forelægges til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "KLIMA- OG MILJØUDVALGET tiltræder Direktionens forslag."
     }
    ],
    "bilag": []
@@ -11786,10 +11811,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Novafos Investeringsaftale 2027 - Godkendelse",
    "afsnit": [
     {
@@ -11807,6 +11832,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil godkendelse.\nDirektionen foreslår indstillet, at Novafos investeringsaftale 2027 godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "KLIMA- OG MILJØUDVALGET indstiller Direktionens forslag tiltrådt med den\nbemærkning, at forvaltningen skal anmode Novafos om at udarbejde et notat om effekten\naf de kortsigtede optimeringsprojekter vedr. Sjælsø Renseanlæg og den konkrete effekt\npå overløbet UB07, herunder hvilke tiltag der kan iværksættes for at minimere overløbet."
     }
    ],
    "bilag": []
@@ -11816,10 +11845,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Vandforsyningsplan 2026-2036 - Endelig godkendelse",
    "afsnit": [
     {
@@ -11833,6 +11862,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil godkendelse.\nDirektionen foreslår indstillet, at Vandforsyningsplan 2026-2036 for Rudersdal Kommune\ngodkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "KLIMA- OG MILJØUDVALGET indstiller Direktionens forslag tiltrådt."
     }
    ],
    "bilag": []
@@ -11842,10 +11875,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Ny lovgivning for kommunale solcelleanlæg - Godkendelse",
    "afsnit": [
     {
@@ -11859,6 +11892,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget til godkendelse.\nDirektionen foreslår,\n1. at forvaltningen genoptager arbejdet med at udarbejde business cases for\nsolcelleanlæg på egnede bygninger, herunder afsøger muligheden for udlejning af\ntagflader til private aktører, og\n2. at Klima- og Miljøudvalget forelægges en sag primo 2027 med stillingtagen til\nrammerne for kommunens solcelleanlæg."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad. punkt 1.:\nKLIMA- OG MILJØUDVALGET tiltræder Direktionens forslag med seks stemmer for Lars\nHøyer Holmqvist (I), Martin Barfoed (C), Morten Jarlbæk Pedersen (C), Court Møller (B),\nChristian Elkjær (B) og Lars Gissel (Ø) og en stemme imod Jens KloppenborgSkrumsager (V).\nForinden bortfaldt følgende ændringsforslag ad punkt 1) fremsat af Jens KloppenborgSkrumsager (V): at forvaltningen indstiller/stopper arbejdet med at udarbejde\nbusinesscases for solcelleanlæg i kommunalt regi, men afsøger derimod alene de\nmuligheder, der er for udlejning af kommunale tagflader til private energioperatører med\nfem stemmer imod Martin Barfoed (C), Morten Jarlbæk Pedersen (C), Court Møller (B),\nChristian Elkjær (B) og Lars Gissel (Ø) og to stemmer for Jens Kloppenborg-Skrumsager\n(V) og Lars Høyer Holmqvist (I).\nAd. punkt 2.:\nKLIMA- OG MILJØUDVALGET tiltræder Direktionens forslag punkt 2. med den\nbemærkning, at udvalget ønsker en beslutningssag vedr. rammerne for kommunens\nsolcelleanlæg forelagt i første kvartal 2027."
     }
    ],
    "bilag": []
@@ -11868,10 +11905,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Tilsagn om tilskud til forundersøgelse af Sjælsø - Bevilling",
    "afsnit": [
     {
@@ -11885,6 +11922,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil godkendelse.\nDirektionen foreslår indstillet,\n1. at der oprettes et anlægsprojekt ”Forundersøgelse af Sjælsø”,\n2. at der afsættes et positivt rådighedsbeløb i 2027 med tilhørende anlægsbevilling på\n632.200 kr. til at gennemføre forundersøgelsen, finansieret af tilsvarende tilskud fra\nStyrelsen for Grøn Arealomlægning og Vandmiljø, og\n3. at der afsættes et negativ rådighedsbeløb i 2028 med tilhørende anlægsbevilling på\n632.200 kr. til at modtage tilskuddet fra Styrelsen for Grøn Arealomlægning og\nVandmiljø."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "KLIMA- OG MILJØUDVALGET indstiller Direktionens forslag tiltrådt."
     }
    ],
    "bilag": []
@@ -11894,10 +11935,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Onlineformidling om søer og overløb samt årlig status - Godkendelse",
    "afsnit": [
     {
@@ -11911,6 +11952,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget til godkendelse.\nDirektionen foreslår,\n1. at onlineformidlingen om overløb og udløb til søer suppleres af ovenfor beskrevne\nkort på kommunens hjemmeside, baseret på data fra PULS, og\n2. at Klima- og Miljøudvalget årligt i første kvartal modtager a) orientering om det\nforegående års indsatser for søer, b) overordnet status på det foregående års\noverløb og væsentlige hændelser samt c) reduktion (fremadrettet) som følge af\nlangsigtede tiltag (separatkloakering)."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "KLIMA- OG MILJØUDVALGET tiltræder Direktionens forslag."
     }
    ],
    "bilag": []
@@ -11920,10 +11965,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Badevandskvalitet 2026 og test for havkolera - Beslutning",
    "afsnit": [
     {
@@ -11937,6 +11982,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget til beslutning.\nDirektionen foreslår, at der i forbindelse med udtagning af badevandsprøver fortsat testes\nfor havkolera i de næste to badevandssæsoner."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "KLIMA- OG MILJØUDVALGET tiltræder Direktionens forslag."
     }
    ],
    "bilag": []
@@ -11946,15 +11995,19 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
      "titel": "Resumé",
-     "tekst": "Områdechef Jane Riskjær orienterer om:\n1. Status ift. ulovlig fældning af kommunens træer i 2023 (præsentation vedlagt).\n2. Batteriindsamling - Aftale forlænges til og med 2027 (præsentation vedlagt).\n3. 730 grundejere bedes udskifte haveaffaldsbeholder til større (præsentation vedlagt).\n4. Beredskab vedr. sne og affald vintersæson fra 2026 til 27 (præsentation vedlagt).\n5. Stop forbi kaffe-møder i Gl. Holte Syd om opstart af planlægning af separatkloakering\n(præsentation vedlagt).\n6. Status på arbejdet med forundersøgelse af Birkerød Sø (præsentation vedlagt)\n7. Opstart af etablering af miniskov (præsentation vedlagt).\n8. Første resultater fra energitjek (midtvejsrapport) (præsentation vedlagt)."
+     "tekst": "Områdechef Jane Riskjær orienterer om:\n1. Status ift. ulovlig fældning af kommunens træer i 2023 (præsentation vedlagt).\n2. Batteriindsamling - Aftale forlænges til og med 2027 (præsentation vedlagt).\n3. 730 grundejere bedes udskifte haveaffaldsbeholder til større (præsentation vedlagt).\n4. Beredskab vedr. sne og affald vintersæson fra 2026 til 27 (præsentation vedlagt).\n5. Stop forbi kaffe-møder i Gl. Holte Syd om opstart af planlægning af separatkloakering\n(præsentation vedlagt).\n6. Status på arbejdet med forundersøgelse af Birkerød Sø (præsentation vedlagt)\n7. Opstart af etablering af miniskov (præsentation vedlagt).\n8. Første resultater fra energitjek (midtvejsrapport) (præsentation vedlagt).\n\nForinden udvalgsmødet var der foretræde ved \"Ren Sø Gruppen\" vedr. forureningen af\nSjælsø og løsningsmuligheder."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået."
     }
    ],
    "bilag": []
@@ -11964,12 +12017,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Klima- og Miljøudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=aadd86f7-57bb-415c-a2e3-ab4e6d097ae8",
-   "hentet": "2026-11-06T12:47:19.439Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=75b6a1cd-9439-46ed-b6e2-6b25a51423b4",
+   "hentet": "2026-11-12T21:44:26.414Z",
    "titel": "Beslutningsprotokol og underskriftsark",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-boerne-og-skoleudvalget-1": {
@@ -13231,6 +13289,71 @@
     }
    ],
    "bilag": []
+  },
+  "rudersdal-2026-11-17-beredskabsudvalget-2": {
+   "id": "rudersdal-2026-11-17-beredskabsudvalget-2",
+   "kommune": "Rudersdal",
+   "udvalg": "Beredskabsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a6761d5c-58bd-44ee-bd13-ab9a31091ac6",
+   "hentet": "2026-11-12T21:44:33.240Z",
+   "titel": "Orientering om nytårskur for erhvervslivet",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I lighed med tidligere år afholder Rudersdal Kommune nytårskur for erhvervslivet.\nNytårskuren 2027 afholdes tirsdag den 12. januar 2027 kl. 16.00-19.00 i kultursalen på\nKulturcenter Mariehøj. Overskriften får årets nytårskur er: Beredskab og robusthed –\nstyrket konkurrencekraft og stærkere samarbejde.\nNytårskuren tilrettelægges af forvaltningen i samarbejde med borgmesteren,\nErhvervsrådet og Beredskabsudvalget.\nSagen forelægges Beredskabsudvalget til orientering."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Rudersdal Kommune inviterer også i 2027 lokale virksomheder til nytårskur. I 2027 er\narrangementet henlagt til kultursalen på Kulturcenter Mariehøj og finder sted tirsdag den 12.\njanuar 2027 kl. 16.00-19.00. Over de seneste år har tæt ved 400 lokale virksomhedsledere\ndeltaget i nytårskuren, der – ud over at præsentere et aktuelt og virksomhedsrelevant tema –\ngiver mulighed for at anerkende en række af kommunens dygtige virksomheder, ligesom der er\nmulighed for at netværke.\nI 2027 er beredskab udpeget som det bærende tema, og hvor det navnlig er det langsigtede\nstrategiske arbejde med at øge virksomhederne robusthed og dermed styrke deres\nkonkurrencekraft, der bliver omdrejningspunktet.\nPROGRAM:\n16.00 – 16.10 Velkomst\nv/ borgmester Ann Sofie Orth, Rudersdal Kommune.\n16.10 – 16.45 Robusthed er ikke beredskab – det er konkurrencekraft\nv/ Jakob Ellemann-Jensen, vicedirektør i Dansk Erhverv.\nHvordan virksomheder påvirkes af geopolitik, cybertrusler og forsyningskriser og hvordan\nsamarbejdet mellem offentlige myndigheder og erhvervslivet kan styrke robustheden, der\nfremadrettet kan være og vil blive en konkurrencefordel.\n\nKort pause og forfriskning\n\n16.55-17.40 Totalberedskab og erhvervslivets rolle. Hvad skal der til for at vi både styrker\nvores beredskab og skærper virksomhedernes konkurrencekraft?\nJournalist, foredragsholder og TV-vært Nynne Bjerre Christensen indleder, er ordstyrer og\nmoderator.\n\nPaneldiskussion:\nVicedirektør Henrik Brodersen, Styrelsen for Samfundssikkerhed\nAdm. direktør Katrine Johnsen, Erhvervshus Hovedstaden\nVicedirektør i Dansk Erhverv, Jakob Ellemann-Jensen\nBorgmester Ann Sofie Orth, Rudersdal Kommune. Medlem af KL’s Kultur-, Erhverv- og\nSamfundssikkerhedsudvalg\n\n17.40-17.45 Opfølgning på eftermiddagens indlæg og diskussion\nv/ Martin Barfoed, formand for Erhvervsrådet i Rudersdal Kommune.\nOpfordring til at give input om, hvad der er centralt for din virksomhed ift. Beredskab og\nRobusthed, og hvor du kan se et styrket samarbejde. Input gives via digital formular, der tilgås\nvia QR-kode (fremgår af program og vil fremgå af plakater og flyers på stedet).\n17.45 – 18.30 Uddeling af Rudersdal Kommunes erhvervspriser\nPriserne overrækkes af borgmesteren og Erhvervsrådets formandskab.\nDer kan uddeles normalt tre erhvervspriser, og prisvinderne holder takketaler."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Sagen forelægges Beredskabsudvalget til orientering.\nDirektionen foreslår, at sagen forelægges til orientering."
+    }
+   ],
+   "bilag": []
+  },
+  "rudersdal-2026-11-17-beredskabsudvalget-3": {
+   "id": "rudersdal-2026-11-17-beredskabsudvalget-3",
+   "kommune": "Rudersdal",
+   "udvalg": "Beredskabsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a6761d5c-58bd-44ee-bd13-ab9a31091ac6",
+   "hentet": "2026-11-12T21:44:33.240Z",
+   "titel": "Samarbejdsaftale med Røde Kors Rudersdal",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forvaltningen foreslår, at der indgås en samarbejdsaftale med Røde Kors – Rudersdal\nmed henblik på at styrke det lokale beredskab gennem et tættere samarbejde om\nforberedelse, håndtering og opfølgning på kriser, ulykker og andre ekstraordinære\nhændelser.\nSamarbejdsaftalen træder i kraft den 1. december 2026 og gælder foreløbigt i fem år.\nAftalen indebærer som udgangspunkt ikke økonomiske forpligtelser.\nSagen forelægges Beredskabsudvalget til godkendelse."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Et velfungerende lokalt beredskab forudsætter koordinering mellem kommunale myndigheder\nog relevante aktører, der kan bidrage med støtte og omsorg, når ekstraordinære hændelser\nopstår. Med samarbejdsaftalen etableres en ramme for samarbejdet mellem Rudersdal\nKommune og Røde Kors – Rudersdal, både i den forebyggende indsats og i forbindelse med\nkonkrete hændelser.\nAftalen bygger på en gensidig respekt for parternes forskellige roller og ansvar. Kommunen\nbevarer det overordnede ansvar for bl.a. evakuering og indkvartering, mens Røde Kors efter\naftale kan bidrage med frivillige ressourcer og humanitær støtte inden for organisationens\nprincipper og kompetencer.\nSamarbejdet omfatter følgende indsatsområder:\nPsykosocial støtte og omsorg\nSocial assistance, evakuering og indkvartering\nHåndtering af spontanfrivillige\nKrisekommunikation og information\nUddannelse, øvelser og kapacitetsopbygning\n\nSamarbejdet aktiveres efter kommunens anmodning ved relevante hændelser eller efter\ngensidig aftale i forbindelse med forebyggende aktiviteter og øvelser. Der etableres en fælles\nkontaktgruppe, som mødes mindst én gang årligt med henblik på at evaluere samarbejdet,\nopdatere kontaktoplysninger og planlægge fælles aktiviteter.\nSamarbejdsaftalen indebærer som udgangspunkt ikke økonomiske forpligtelser. Eventuelle\nøkonomiske behov, herunder udgifter ved Røde Kors' længerevarende deltagelse i indsatser,\nskal drøftes mellem parterne.\n\nAftalen kan justeres efter behov og opsiges af begge parter. Den kan desuden revideres ved\ngensidig skriftlig aftale.\nUdkast til samarbejdsaftale vedlagt."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Sagen forelægges Beredskabsudvalget til godkendelse.\nDirektionen foreslår, at Beredskabsudvalget godkender samarbejdsaftalen mellem\nRudersdal Kommune og Røde Kors – Rudersdal om samarbejde på beredskabsområdet."
+    }
+   ],
+   "bilag": []
+  },
+  "rudersdal-2026-11-17-beredskabsudvalget-5": {
+   "id": "rudersdal-2026-11-17-beredskabsudvalget-5",
+   "kommune": "Rudersdal",
+   "udvalg": "Beredskabsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a6761d5c-58bd-44ee-bd13-ab9a31091ac6",
+   "hentet": "2026-11-12T21:44:33.240Z",
+   "titel": "Beslutningsprotokol og underskriftsark",
+   "afsnit": [],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -13335,7 +13458,7 @@
    "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=89910af1-7e94-4299-a793-d936104c5b20": {
-   "senest": "2026-11-06",
+   "senest": "2026-11-12",
    "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=a1710bf7-d96d-485b-bef5-818b9938e7b9": {
@@ -13427,7 +13550,7 @@
    "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=6ddc6a8c-f277-427c-bc13-ab9ad0453bfd": {
-   "senest": "2026-09-18",
+   "senest": "2026-11-12",
    "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=82d3b00e-c7d9-4991-867d-585b069e0204": {
@@ -13451,7 +13574,7 @@
    "tjekket": "2026-11-02"
   }
  },
- "opdateret": "2026-11-12T12:54:14.863Z",
+ "opdateret": "2026-11-12T21:44:33.241Z",
  "kommune": "Rudersdal",
  "parser": 3
 }
