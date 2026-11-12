@@ -513,6 +513,48 @@
    "parser": 3,
    "tomFra": "2026-11-11",
    "tegn": 564
+  },
+  "51ea6114-6f64-4a69-bda0-85f31cd2651d": {
+   "lastmod": "2026-11-12",
+   "type": "dagsorden",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "punkter": 18,
+   "parser": 3
+  },
+  "f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c": {
+   "lastmod": "2026-11-12",
+   "type": "dagsorden",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "punkter": 13,
+   "parser": 3
+  },
+  "0fce78b7-478f-438d-b8bf-e244b934cc94": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-11",
+   "punkter": 0,
+   "parser": 3,
+   "tomFra": "2026-11-12",
+   "tegn": 858
+  },
+  "d69c991e-dfec-457f-83d0-7ffe77de77bc": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-11",
+   "punkter": 16,
+   "parser": 3
+  },
+  "43e33b3e-dc73-4fb3-91e1-6d678dd7263d": {
+   "lastmod": "2026-11-12",
+   "type": "dagsorden",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "punkter": 11,
+   "parser": 3
   }
  },
  "sager": {
@@ -14675,12 +14717,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nGodkendt. Herunder tillægsdagsorden."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-11-kommunalbestyrelsen-2": {
@@ -14688,10 +14735,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Lånoptagelse - 2026 låneramme",
    "afsnit": [
     {
@@ -14709,6 +14756,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Et lånoptag på 7,5 mio. kr. vil ved et fastforrentet lån (mulighed 1) betyde, at\nrenteudgiften til lånet i 2027 vil udgøre ca. 262.000 kr. og afdraget 300.000 kr. Ydelsen\npå lånet er indregnet i budget 2027 og frem."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt. Maria Busborg (A) stemmer imod indstillingspunkt 2."
     }
    ],
    "bilag": []
@@ -14718,10 +14769,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Sagsbehandlingsfrister for Borgerservice",
    "afsnit": [
     {
@@ -14739,6 +14790,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ikke i sig selv økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -14748,10 +14803,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Boligforeningen BOSERA - Garanti vedr. afd. 47",
    "afsnit": [
     {
@@ -14769,6 +14824,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Pr. 31. december 2025 har kommunen stillet garantier for 1.337.229.779 kr. Heraf udgør\ngaranti til Udbetaling Danmark (solidarisk hæftelse) 390,0 mio. kr., garantier vedr. almen\nboligbyggeri 506,7 mio. kr., forsyningsvirksomheder 420,2 mio. kr. og øvrige (haller,\nBeredskab Fyn m.fl.) 20,3 mio. kr. En evt. meddelelse af garanti, vil ikke have indvirkning\n\npå kommunens låneramme."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -14778,10 +14837,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Udbud - Revisionsydelse 2027-2030",
    "afsnit": [
     {
@@ -14799,6 +14858,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Det årlige faste honorar i den nye kontrakt er 568.500 kr. Honoraret fremskrives hvert år\n\nmed KL's udmeldte pris- og lønskøn. Budgettet i 2026 er 561.960 kr. I 2027 er budgettet"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -14808,10 +14871,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Revision af styrelsesvedtægt for skolevæsenet",
    "afsnit": [
     {
@@ -14829,6 +14892,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Revisionen af styrelsesvedtægten forventes ikke at medføre nogen væsentlig økonomisk\nekstraudgift, idet vi i praksis har leveret kørsel efter reglerne siden 2024 jf. sag på\nkommunalbestyrelsens møde 8. maj 2024 (pkt. 128)."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -14838,10 +14905,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Sagsbehandlingsfrister på Socialområdet og Arbejdsmarkedsområdet",
    "afsnit": [
     {
@@ -14859,6 +14926,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ikke i sig selv økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -14868,10 +14939,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Anlægsbevilling til forundersøgelse af kvælstofomsættende vådområde ved Kongesø, Avernakø",
    "afsnit": [
     {
@@ -14889,6 +14960,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Forundersøgelsen finansieres af Styrelsen for Grøn Arealomlægning og Vandmiljø\n(SGAV) og de tilskudsberettigede omkostninger udgør 300.000 kr. Der er således ingen\negenfinansiering for kommunen, idet statens tilskud udgør 100 % af de estimerede\nomkostninger.\nErfaringer fra statsligt finansierede projekter viser dog, at der i enkelte forundersøgelser\nkan opstå uforudsete omkostninger på op til 3 %, der ikke dækkes af statens tilsagn.\nUdgifterne afholdes i 2026. Finansiering hjemtages i 2027. Det betyder, at der sker en\nmellemfinansiering af kassen, hvor der trækkes 0,3 mio. kr. i 2026 fra kassen.\nTilsvarende lægges der 0,3 mio. kr. i kassen i 2027.\nTabel 1: Indtægts- og udgiftsbevilling til forundersøgelse af vådområder\nmellemfinansiering fra kassen.\n\nUdvalg\n\nBevilling (nr &\nnavn)\n\nNatur-, Klima- og\nGrøn Trepart\nBæredygtighedsudvalget vådområde\nforundersøgelser\n(udgift)\nNatur-, Klima- og\nGrøn Trepart\nBæredygtighedsudvalget vådområde\nforundersøgelser\n(indtægt)\nKassen\nTotal\n\nVarigt\n(Ja/Nej)\n\n0 Nej\n\n-300 Nej\n\n300 Nej\nNej"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -14898,10 +14973,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Planlægning for anlæg til Vedvarende Energi (VE-anlæg)",
    "afsnit": [
     {
@@ -14915,6 +14990,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kommunalbestyrelsen afholdte d. 30. april 2026 temamøde om VE-anlæg (Vedvarende\nEnergianlæg). På mødet blev muligheder og udfordringer i planlægningen og realiseringen af\nsådanne anlæg drøftet, herunder hvornår og hvordan, udviklere, borgere og interessenter kan\nog skal indgå i processen. Formålet med temamødet var også at give kommunalbestyrelsen et\ngrundlag for at træffe beslutning om, hvordan planlægningen for VE-anlæg skal foregå\nfremadrettet.\n\nI forlængelse af ovenstående har forvaltningen arbejdet med følgende:\n1. Hvordan kan kommunen fremadrettet og geografisk set prioritere og udvælge de VEprojekter, som ønskes realiseret?\n2. Hvordan kan lokalsamfund blive inddraget tidligere og mere meningsfuldt, før den\nformelle planproces for et projekt igangsættes?\nSpørgsmålene skal ses i sammenhæng, fordi forventninger til lokal dialog og værdiskabelse får\nstørst betydning, når de kobles direkte til kommunens beslutninger om igangsættelse af\nplanlægning for et konkret VE-anlæg.\nOpsamling på planlægning af VE-anlæg\n\nEtablering af VE-anlæg bidrager til opfyldelse af mål i kommunens klimahandleplan med\nforpligtelse til at leve op til Parisaftalen, og til den fælles Fynske aftale, om at opnå 80%\nreduktion af CO2 udledningen i 2030. I klimahandleplanen er der følgende mål for opstilling af\nVE-anlæg:\na. opstilling af solceller på 1000 ha, med en effekt på 235.000 t co2 i perioden 2023-2040.\nb. etablering af biogasanlæg, med en effekt på 11.000 t co2 i perioden 2022 - 2030\nFrem til medio september 2026 er der vedtaget planlægning for opstilling af solceller på samlet\nset 446 ha og med en samlet effekt på ca.105.000 t co2. Projekterne er dog ikke realiseret på\ngrund af manglende muligheder for nettilslutning.\nTilslutning til elinfrastrukturen\n\nKapaciteten i elnettet er en væsentlig rammebetingelse for den faktiske realisering af\nprojekterne. I flere dele af landet er der betydelig efterspørgsel efter netkapacitet, og nye VE\nanlæg forventes jf. Energinet at have lange tilslutningshorisonter.\nKommunen har løbende dialog med såvel Energinet som Vores Elnet, og tidshorisonten for\nnødvendige nettilslutninger er ikke kendt. I forlængelse af ovenstående er der derfor risiko for\nat anvende ressourcer på projekter, som ikke er realiserbare.\nTidlig lokal dialog og ansvarsdeling\n\nDialogen med lokalrådene i foråret 2026 og på dialogforum den 26. maj pegede på, at\ninddragelsen skal ske tidligt, mens der fortsat er mulighed for at påvirke projekters placering,\nudformning og lokale bidrag. Der har endvidere været nedsat en arbejdsgruppe mellem\nFynsland og forvaltningen, som har drøftet emner, der lægger sig tæt op af lokalrådenes\nanbefalinger. Arbejdsgruppen og lokalrådene fremhæver bl.a. behovet for tidlig inddragelse,\nbred inddragelse og transparens. Der er opnået en væsentlig viden og fælles forståelse\nomkring borgerinvolvering, som kan anvendes generelt og ikke alene, når det omhandler VEanlæg."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingspunkt 1 godkendt af et flertal bestående af Anstina Krogh (A), Hans\nStavnsager (A), Tanja Kromann (A), Signe Jackson (A), Steffen Jensen (A), Maria\nBusborg (A), René Brinch Petersen (A), Jimmi Krøyer (A) og Poul Kristensen (A), Anna\nMette Skov Borring (B), Thomas Hofstedt Nielsen (C)\nRasmus Viereck (C), Mads Holdgaard (F), Vagn Hansen (F), Åge Prisholm (O), Maria\nWeisbjerg (O), Erling Bonnesen (V), Lars Scheby (V), Jack Odgaard (V), Søren\nKristensen (V), John Jakobsen (V) og Morten Schjøtt (Ø).\nImod stemmer Ole Pedersen (L) og Ole Folmer Greve (Æ).\nRené Jørgensen (I) undlader at stemme.\nIndstillingspunkt 2 og 3 godkendt af en enig kommunalbestyrelse."
     }
    ],
    "bilag": []
@@ -14924,10 +15003,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Forslag til Tillæg nr. 52 til Kommuneplan 2019 - Slagterigrunden, Faaborg",
    "afsnit": [
     {
@@ -14945,6 +15024,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt.\nMorten Schjøtt (Ø) undlader at stemme."
     }
    ],
    "bilag": []
@@ -14954,10 +15037,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Forslag til Lokalplan 2026-5 - Slagterigrunden, Faaborg",
    "afsnit": [
     {
@@ -14975,6 +15058,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt.\nMorten Schjøtt (Ø) undlader at stemme."
     }
    ],
    "bilag": []
@@ -14984,10 +15071,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Godkendelse af revideret kompetencefordelingsplan",
    "afsnit": [
     {
@@ -15001,6 +15088,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kommunalbestyrelsen har den 11. marts 2026, pkt. 71, godkendt den seneste\nkompetencefordelingsplan. Kompetencefordelingsplanen beskriver fordelingen af kompetencen\nmellem kommunalbestyrelsen, de stående udvalg og forvaltningen. Der er nu behov for en\nopdatering.\nMindre lejekontrakter:\nForvaltningen foreslår, at der indsættes et nyt emne nr. 20 vedrørende mindre lejekontrakter,\nhvor kommunen er udlejer, og hvor kompetencen til at indgå lejekontrakten gives til\nforvaltningen. Kompetencen delegeres for lejekontrakter af en varighed på maksimalt 6\nmåneder og med en leje på maksimalt 100.000 kr. Begge kriterier skal være opfyldt.\nIndtægt- og udgiftsbevilling i denne sammenhæng vil blive medtaget på budgetopfølgning\nhurtigst muligt efter indgåelse af en sådan lejekontrakt.\nSom kompetencen er nu, skal alle lejekontrakter - uanset værdi og længde - forelægges\nkommunalbestyrelsen til godkendelse.\nPkt. 19 er tilsvarende rettet, så der sikres sammenhæng.\nSagsbehandlingsfrister:\nPraksis er på nuværende tidspunkt, at sagsbehandlingsfrister bliver godkendt af\nkommunalbestyrelsen. Ankestyrelsen har imidlertid udtalt, at kommunalbestyrelsen kan\ndelegere kompetencen til at fastsætte frister for sagsbehandlingen til såvel et stående udvalg\nsom til forvaltningen.\nForvaltningen foreslår, at kompetencen delegeres til det stående udvalg, som er\nressortansvarlig for de pågældende frister. Formålet er at lette sagsgangen for godkendelse af\nde sagsbehandlingsfrister, som er lovpligtige, jf. retssikkerhedslovens § 3, stk. 2.\nSe nyt emne 37 i vedlagte bilag 1.\n\nGodkendelse af høringer:\nPraksis er på nuværende tidspunkt, at de stående udvalg godkender, at en given sag sendes i\nhøring hos Handicaprådet, Udsatterådet, Ældrerådet og Ungerådet.\nForvaltningen foreslår, at kompetencen til at sende materiale i høring til de respektive råd\ndelegeres til forvaltningen.\nDer er tale om de råd, hvor hyppigheden af høringer er stor, hvorfor det også forslås, at\nkompetencen til at sende i høring i Ø-udvalget ligeledes delegeres til forvaltningen.\nForvaltningen kan dermed sikre en mere smidig proces, hvor høringssvar kan blive vedlagt den\npolitiske sag, hvor der sker en endelig politisk godkendelse.\nPunktet er indsat som nyt emne nr. 38 i vedlagte bilag 1.\nBevillinger:\nForvaltningen har indsat en vejledende tekst på side 5, der vedrører bevillinger. Formålet med\npræciseringen er at vejlede sagsbehandlerne om, at der er mulighed for at medtage indtægtsog udgiftsbevillinger under budgetopfølgninger fremfor i særskilte sager til\nkommunalbestyrelsen.\nDer er samtidig indsat en henvisning under punkterne 22, 23, 24 og 27 i bilag 1."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -15010,10 +15101,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Databeskyttelsesrådgiverens årsrapport",
    "afsnit": [
     {
@@ -15031,6 +15122,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Punktet har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -15040,10 +15135,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Kommunalbestyrelsen - temadrøftelser og temamøder 2026",
    "afsnit": [
     {
@@ -15053,6 +15148,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller, at kommunalbestyrelsen godkender temamødeplanen for 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -15062,12 +15161,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Spørgetid",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nDer var spørgsmål fra Maibritt Binau, Faaborg, fra Jens Toft, Snarup, samt fra Heidi\nFrederiksen, Søddinge.\nSpørgsmål og svar kan ses på kommune-TV."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-11-kommunalbestyrelsen-18": {
@@ -15075,12 +15179,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 18,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=acff82f7-ad26-493b-8bc0-6cdbd31774e9",
-   "hentet": "2026-11-04T12:15:42.058Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=d69c991e-dfec-457f-83d0-7ffe77de77bc",
+   "hentet": "2026-11-12T12:58:42.047Z",
    "titel": "Godkendelse af protokol",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Lars Nielsen (A). I stedet deltager Jimmi Krøyer (A).\nAfbud fra Anne Møllegaard Mortensen (O). I stedet deltager Åge Priisholm (O).\nGodkendt. Herunder tillægsdagsorden."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-10-28-17-stk-4-udvalg-totalberedskab-i-faaborg-midtfyn-kommune-1": {
@@ -15863,16 +15972,991 @@
    "titel": "Godkendelse af protokol",
    "afsnit": [],
    "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-1": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-1",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-2": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-2",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Stormflodssikring Faaborg – Projektforslag og miljøvurdering",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der skal tages stilling til, om projektforslag for stormflodssikringen i Faaborg og\nmiljørapport kan godkendes og dermed kan indgå i ansøgning om tilladelse efter\nkystbeskyttelsesloven."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget og Økonomi- Erhvervs- og\nTurismeudvalget anbefaler kommunalbestyrelsen at godkende\n1. Projektforslaget for stormflodssikringen i Faaborg\n2. Miljøkonsekvensvurderingen (Miljørapport) for stormflodssikringen i Faaborg\n3. At forhøjelse af stormflodssikringen som beredskabsløsning langs Færgevej 8-28 kun\nrealiseres ved de berørte ejendommes accept af et særbidrag for både anlæg og\ndrift."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Faaborg-Midtfyn Kommune arbejder med et stormflodsprojekt, som skal sikre det centrale\nFaaborg og områderne omkring Sundsøen mod stormflod op til kote 2.53. I 2023-2024 blev\nprojektets overordnede løsninger og principper fastlagt i et dispositionsforslag og\nkommunalbestyrelsen har truffet beslutninger om sikringshøjde og linjeføring hhv. d. 6 april\nDispositionsforslaget og de politiske beslutninger har dannet grundlag for den yderligere\ndetaljering i projektforslaget.\nBilag 2 – Projektforslag for stormflodssikring i Faaborg. Se yderligere angående projekthistorik i\nbilag 1 - Tidslinje over projektmilepæle i stormflodssikringen.\nProjektforslaget danner grundlag for den videre projektering i efteråret 2026 og indgår i\nansøgning om tilladelse efter kystbeskyttelsesloven. Overordnet følger projektforslaget\ndispositionsforslaget fra 2024, men med følgende væsentlige ændringer og tilføjelser:\nSærlige foranstaltninger til minimering af bølgeoverskyl\nArbejdet med projektforslaget har understreget at strækningen mellem Faaborg\nhavnebad og Faaborg roklub vil blive særligt udsat for bølger i en stormflodssituation.\nBølgepåvirkningen på denne strækning vil få betydning for resten af stormflodssikringens\neffekt, hvis der ikke etableres anlæg, der modvirker bølgernes effekt. Derfor anbefaler\nforvaltningen, at der etableres en stensætning oven på glaciet og stormflodssikringen på\ndenne delstrækning forhøjes med 40 cm. Det betyder at sikringskoten samlet bliver 2.93\npå denne strækning. Ejerne langs denne strækning er orienteret om den særlige\nforanstaltning.\nDet anbefales af de berørte ejere får mulighed for, via et særbidrag, at tilvælge en\nberedskabsløsning for de 40 cm forhøjelse på strækningen Færgevej 8-28, da det i\n\nhøjere grad bevarer deres udsigt. Særbidraget til anlæg og løbende drift, beregnes på\nbaggrund af differencen mellem prisen på en fastmur i fuld højde og prisen på en\nberedskabsløsning på murens øverste 40 cm. Accepterer de berørte ejere ikke\nsærbidraget, sker forhøjelsen som fast mur i fuld højde. Se bilag 4 - Notat om særbidrag.\nDer indledes dialog med ejerne af de berørte ejendomme.\nSikring af Kanalvej 6 (Slagterens Spisehus)\nI forbindelse med udarbejdelse af projektforslaget er det blevet undersøgt hvorvidt\nKanalvej 6 (Slagterens Spisehus) som hænger ud over kanalen, kan indgå i\nstormflodssikringen. Der arbejdes med en løsning, hvor kanalens spuns (væg) flyttes lidt\nud i kanalen, så bygningen sikres mod havvand. Løsningen erstatter en\nberedskabsløsning gennem bygningens passage.\nNy pumpestation\nSom led i stormflodsprojektet skal der etableres en ny pumpe ved Sundrenden, hvor den\nnuværende pumpe er placeret. Pumpen skal forhindre oversvømmelser af vand fra\nbaglandet ved længerevarende regn eller ekstrem regn, og sikre Sundets vandstand ved\nhøjvande. Pumpen skal erstatte den eksisterende pumpestation, som dels ikke har\nkapacitet nok til at håndtere de fremtidige vejrhændelser og dels er nedslidt.\nPumpestationen blev tidligere estimeret til ca. 3 mio. kr. på baggrund af den begrænsede\nviden på daværende tidspunkt. Siden har det igangværende vandhåndteringsprojekt\nvedrørende regnvand fra oplandet, kvalificeret behovet for at øge kapaciteten på\npumpestationen yderligere og pumpen, inklusiv pumpehus og trykledning, vurderes nu at\nkoste ca. 12 mio. kr. Desuden er der sket en generel prisudvikling, siden pumpestationen\nblev kalkuleret første gang.\nDet nuværende prisoverslag er fortsat behæftet med en vis usikkerhed, primært knyttet til\netablering af en trykledning fra pumpehuset til fjorden i bymæssigt bebyggelse.\nFinansieringen behandles i forbindelse med anlægsbudgettet for 2028.\nAlle ændringer fra dispositionsforslaget til projektforslaget fremgår af bilag 2 – Projektforslag for\nstormflodssikring Faaborg, side 13-14. Pumpestationen var ikke med i dispositionsforslaget og\nfremgår derfor ikke af listen.\nMiljøkonsekvensvurdering\nI forbindelse med projektet er der også blevet udarbejdet en miljørapport, som belyser\nprojektets miljømæssige konsekvenser. Miljøkonsekvensvurderingen, skal indgå i ansøgning\nom tilladelse efter kystbeskyttelsesloven. Rapporten konkluderer at projektet ikke medfører\nvæsentlige påvirkninger på miljøet, som giver anledning til ændringer. Bilag 3 - Miljørapport for\nstormflodssikring i Faaborg inkl. ikke teknisk resumé.\nHøringsproces\nProjektforslag, miljøkonsekvensvurdering, bidragsfordeling, lokalplan og tillæg til kommuneplan\nsendes i høring, når kommunalbestyrelsen, forventeligt i januar 2027, har behandlet\nindsendelse af ansøgning om tilladelse efter kystbeskyttelsesloven for stormflodssikringen i\nFaaborg. Derved opnår man, at høringer af alle dokumenter sker samtidig og at bemærkninger\nog eventuelle klager modtages samtidig."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Pengene til stormflodsskringen blev afsat ved budgetaftale 2021 på baggrund af et\nskitseprojekt. Siden er der sket en udvikling i projektet og en generel prisudvikling, blandt\n\nandet på materialer som aluminium, stål og beton. På den baggrund og efter projektering\naf projektet, vil et opdateret anlægsbudget blive udarbejdet og behandlet i forbindelse\nmed budget 2028.\nFinansiering af pumpestation vil indgå særskilt i processen for budget 2028."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-3": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-3",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Stormflodssikring Faaborg – Justering af principper for bidragsfordeling",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsen vedtog på møde d. 13. august 2025 (pkt. 180) de overordnede\nprincipper for, hvordan finansieringen af stormflodssikringen skulle fordeles.\nEfterfølgende besluttede kommunalbestyrelsen d. 11. marts 2026 at sende principperne\nfor ejerne af tekniske anlægs og vejanlægs bidrag til stormflodssikring i for-høring. Efter\nfor-høringen er der behov for at drøfte høringssvar og beslutte justeringer af\nprincipperne."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget og Økonomi- Erhvervs- og\nTurismeudvalget anbefaler kommunalbestyrelsen at godkende:\n1. at justere principperne for bidragsfordelingen, så veje inddeles i risikoklasser og alle\nveje, som i Den centrale vej- og stifortegnelse (CVF) defineres som stats- og\nkommuneveje, medtages som bidragspligtige.\n2. høringsnotat fra for-høring af ejere af tekniske anlæg og gennemgående veje i\nforbindelse med principperne for bidragsfordelingen, jf. bilag 3 - Høringssnotat forhøring af ejere af tekniske anlæg og veje\n3. at udgifter til etablering af ny pumpestation ikke skal indgå i principperne for\nbidragsfordelingen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Faaborg-Midtfyn Kommune arbejder med et stormflodsprojekt, som skal sikre det centrale\nFaaborg og områderne omkring Sundsøen mod havvand i forbindelse med ekstremt højvande\nfra fjorden. En del af processen har været at fastlægge, hvordan projektet finansieres.\nTidligere har kommunalbestyrelsen besluttet følgende principper for bidragsfordelingen:\nat bidrag for bygninger udgør 85%, veje udgør 10%, og at tekniske anlæg udgør 5% af\ndet samlede beløb til stormflodssikringen. Udgifter til promenade og byrum afholdes af\nkommunen og er derfor ikke omfattet af bidragsfordelingen.\nBygninger og tekniske anlæg inddeles i risikoklasser, der betyder at størrelsen på\nbygningsejeres og ejere af tekniske anlægs bidrag principielt svarer til den\nsandsynlighed, der er for at blive påvirket af en stormflod.\nTidligere beslutninger ang. bidragsfordelingen og projekthistorik fremgår af bilag 1 - Tidslinje\nover projektmilepæle i stormflodssikringen. Ovenstående principper er uddybet i bilag 2 Bidragsfordeling - Stormflodssikring Faaborg.\nOpsummering af høringssvar og anbefalinger til justeringer:\n\nDen 11. marts 2026 (pkt. 61) besluttede kommunalbestyrelsen at sende fordelingsnøglen for\nejere af tekniske anlæg, og ejere af veje i for-høring. Efterfølgende er der indkommet 4\nhøringssvar, som fremgår af bilag 3 - Høringssnotat for-høring af ejere af tekniske anlæg og\nveje i forbindelse med principper for bidragsfordeling. Bemærkningerne har i hovedtræk\nfølgende emner:\n1. Kategorisering af vej samt hvilke veje der indgår.\n2. Manglende hensyn til det tekniske anlægs robusthed overfor vand\n3. Anlæggets værdi kontra bidragets størrelse\n4. Den procentmæssige fordeling mellem bygninger, tekniske anlæg og veje.\nFølgende bemærkninger giver anledning til at drøfte om der er behov for at ændre i de\nvedtagne principper:\nSinal (fibernet) bemærker blandt andet, at det ikke fremgår, hvordan kommunen har\nberegnet bidragssatsen på 5 % og at der ikke er taget højde for de enkelte tekniske\nanlægs særskilte egenskaber, samt at der bør ske yderligere differentiering mellem ejere\naf tekniske anlæg.\nSvar:\nPå baggrund af juridisk rådgivning, er det vurderet at vi har tilstrækkeligt redegjort for, hvordan\nvi har beregnet bidragssatsen på 5 %. Det følger af Miljø- og Fødevareklagenævnets praksis,\nat forsyningsselskaber kan pålægges bidragspligt, selv om deres installationer er indrettet\nsåledes, at de ikke vil lide direkte skade ved en oversvømmelse, når de opnår en indirekte\nfordel – f.eks. ved opretholdelse af adgangsforhold.\nVejdirektoratet ønsker afklaring af om det udelukkende er de anførte veje Sundvejen og\nHavnegade, der har nytte af stormflodssikringen og anfægter at kommunen beregner\nbidrag ud fra en gennemsnitsbetragtning og opfordrer til at der foretages en konkret\nindividuel vurdering. Efter høringsperiodens udløb er Vejdirektoratet vendt tilbage med\nsupplerende høringssvar, hvor de påpeger at Statsvejen ikke tager skade ved stormflod,\nog dermed bør fritages for bidragspligt.\nSvar:\nPå baggrund af juridisk rådgivning anbefales det at statsvejen fortsat indgår i\nbidragsfordelingen, fordi den som fast ejendom opnår beskyttelse eller anden fordel ved\nkystbeskyttelsen. Vejdirektoratets argumenter om manglende materielle skader og udelukkelse\naf transporttab afvises. Forvaltningen vurderer på baggrund af både vejledninger og praksis, at\ntrafikforstyrrelser, skader på vejanlæg og oprydningsomkostninger er relevante skadeformer.\nDerfor er det også forvaltningens anbefaling, at alle statsveje og kommuneveje inden for\nstormflodssikringens beskyttelsesområde indgår i bidragsfordelingen, samt at de inddeles i\nrisikoklasser.\nSe alle høringssvar i bilag 4 og forslag til besvarelse af disse i bilag 3 - Høringssnotat forhøring af ejere af tekniske anlæg og veje i forbindelse med principper for bidragsfordeling.\nAnbefalinger til justeringer af bidragsfordelingen:\n\nVejene har ikke tidligere været inddelt i risikoklasser og det har kun været større\ngennemgående veje, som i kommuneplanen defineres som gennemfartsvej og fordelingsvej,\nsom har indgået i bidragsfordelingen. På baggrund af høringssvar og juridisk vurdering,\nanbefales det at justere bidragsfordelingen så veje inddeles i risikoklasser og alle veje, som i\nDen centrale vej- og stifortegnelse (CVF) defineres som stats- og kommuneveje, medtages\nsom bidragspligtige.\nBehov for ny pumpestation\nRegnvejrshændelsen i efteråret 2023 viste, at den eksisterende pumpe ved Sundrenden er\nnedslidt og ikke har kapacitet til at håndtere længerevarende regnvejr i kombination med\nlængerevarende højvande. Det resulterede i mange ugers oversvømmelse af cykelstier,\nviadukter mv. omkring Sundsøen og derfor er der behov for at etablere en ny pumpestation,\nherunder pumpehus og trykledning ud til fjorden. Pumpens funktion er at opretholde\nvandstanden i Sundet og sikre at vand fra baglandet kan udledes til havet. Da\nstormflodssikringen bliver en yderligere barriere for bagvandet, medtages pumpestationen i\nstormflodsprojektet og indgår derfor i lokalplan for stormflodssikringen, miljørapport samt\nansøgning om tilladelse til at anlægge projektet (kystbeskyttelsesloven). Det giver samtidigt\nden fordel, at der én høringen, én klageadgang og én sagsbehandlingstid ved klagenævnet.\nI forbindelse med projektforslaget er placering og anlægsomkostning til pumpestationen blevet\nbelyst, og det forventes at pumpestationen vil koste ca. 12 mio. kr. inkl. projektering.\nFinansiering af ny pumpestation\nFaaborg-Midtfyn Kommune vil få en særlig nytteværdi af pumpestationen. Herunder bl.a.:\nEn ny pumpe vil kunne håndtere fremtidens (en 100 års hændelse om 50 år) stigende\nregnhændelser og deraf følgende oversvømmelser omkring Sundsøen. Det vil blandt\nandet beskytte den gamle losseplads ved Sundsøen mod oversvømmelse og deraf\nfølgende forureningsfare.\nOpretholde et stabilt vandspejl i Sundsøen, som blandt andet sikre områdets\nnaturværdier.\nDet vil i forbindelse med den videre afklaring blive vurderet, om der er andre parter, der drager\nnytte af pumpestationen. Udgifterne til anlæg og drift af pumpen kan jf.\nomkostningsbekendtgørelsen fordeles mellem dem, der drager nytte.\nPumpestationen kan juridisk set indgå i bidragsfordelingen for stormflodssikringen, men\nforvaltningen anbefaler på baggrund af ovenstående forhold, at udgiften til pumpestationen, på\nlige fod med udgifter til promenade og byrum, ikke indgår i principperne for bidragsfordelingen,\nog dermed ikke bidragsfordeles. Der vil senere blive forelagt en politisk sag, ang. finansiering\naf pumpestation. Det er en forudsætning for stormflodsprojektet, at der findes en plan for\nfinansiering af den nye pumpe, da udgiften ikke kan rummes indenfor det afsatte budget.\nØvrigt bagvand\nHåndteringen af vand i baglandet varetages i en særskilt vandhåndteringsplan, som forventes\nbehandlet i 2.halvår 2026.\n\nHøringsproces\nProjektforslag, miljøkonsekvensvurdering, bidragsfordeling, lokalplan og tillæg til kommuneplan\nsendes i høring, når kommunalbestyrelsen, forventeligt i januar 2027, har behandlet\nindsendelse af ansøgning om tilladelse efter kystbeskyttelsesloven for stormflodssikringen i\nFaaborg. Derved opnår man, at høringer af alle dokumenter sker samtidig og at bemærkninger\nog eventuelle klager modtages samtidig."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Det vurderes, at den øgede udgift som følge af det højere kommunale bidrag til veje kan\nrummes inden for det afsatte budget.\nFinansiering af ny pumpestation bliver behandlet i forbindelse med budget 2028."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-4": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-4",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Tillæg nr. 53 til Kommuneplan 2019, Faa.R.15, Faa.R.18 og Faa.C.2, Faaborg havn",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forslag til Tillæg nr. 53 til Kommuneplan 2019, Faa.R.15, Faa.R.18 og Faa.C.2, Faaborg\nhavn er udarbejdet med det formål at give mulighed for at der kan indarbejdes\nklimatilpasning i planer for området og dermed etablering af et stormflodsikringsanlæg i\nhavneområdet.\nDer skal tages stilling til, om forslaget skal sendes i offentlig høring, om der skal afholdes\nborgermøde."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget og Økonomi- Erhvervs- og\nTurismeudvalget anbefaler kommunalbestyrelsen at:\n1. godkende forslag til Tillæg nr. 53 til Kommuneplan 2019\n2. forslag til Tillæg til kommuneplan, samt miljørapport sendes i offentlig høring i 8 uger\n3. høringsperioden igangsættes efter kommunalbestyrelsen har godkendt ansøgning\nom tilladelse til at etablere stormflodssikring efter kystbeskyttelsesloven\n4. der afholdes borgermøde i høringsperioden"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det blev besluttet at igangsætte planlægningen for området på Teknik- og Miljøudvalgets møde\nd. 25. januar 2024 (punkt 5).\nBaggrunden for udarbejdelse af planerne for stormflodssikring er et ønske om at etablere et\nsikringsanlæg der beskytter Faaborg havn og en del af bymidten mod oversvømmelse ved\nstormflodshændelser i Faaborg fjord.\nFormålet med kommuneplantillægget er at give mulighed for at der kan indarbejdes\nklimatilpasning i planer for området og dermed etablering af et stormflodsikringsanlæg i\nhavneområdet. Rammebestemmelser ændres ved at give mulighed for indarbejdelse af\nklimatilpasning i planer inden for rammer Faa.R.15, Faa.R.18 og Faa.C.2.\nOffentlighedens inddragelse\n\nI forbindelse med offentlighedsfasen blev der i september 2024 indkaldt ideer og forslag til et\ntillæg til Kommuneplan 2019 for stormflodssikringen. Den 8. oktober 2024 blev der afholdt\nborgermøde, hvor lokalplan og den nordlige og sydlige linjeføring bl.a. blev præsenteret og\ndrøftet. Indkaldelse af ideer og forslag, samt invitation til borgermøde er udsendt til de\n\nejendomme som berøres af stormflod på 2,53 m over daglig vande. Der indkom 11\nbemærkninger i høringsperioden.\nBemærkningerne har hovedsageligt omhandlet:\nPlacering/ændring af linjeføring\nØkonomi og bidragsfordeling\nUdfordringer med kloak ved Færgevej/Dosseringen, samt håndtering af regn- og\noplandsvand ifm. stormflod.\nMaterialevalg og udformning af sikringsanlæg/promenade\nAdgang til vandet /tilpasning af sikringsmetode\nProjektets tidsplan\nAndet\nForhøringsnotatet blev godkendt til TMU-mødet den 10. april 2025 (punkt 70), og de mest\nvæsentlige bemærkninger er indarbejdet i lokalplanen. Med hensyn til valg af linjeføring blev\ndet på samme TMU-møde besluttet at gå videre med to linjeføringer, henholdsvis nord og syd\nfor kanalen. Efter mødet blev det vurderet, at merudgiften ved den sydlige løsning ikke var\nsaglig, proportional eller i overensstemmelse med ligebehandlingsprincippet. På\nkommunalbestyrelsens møde den 7. maj 2025 blev det derfor besluttet, at ejerne på den\nsydlige side af kanalen skulle tage stilling til, om de mod en øget bidragspligt ville indgå i\nsikringen. Det valgte de fra, og det blev derfor besluttet at arbejde videre med den nordlige\nløsning. Forhøringsnotatet er ikke efterfølgende tilrettet i forhold til den valgte linjeføring, da\ndenne først blev endeligt afklaret efter behandlingen af høringsnotatet.\nHøringsproces\n\nForvaltningen anbefaler, at forslaget til Tillæg nr. 53 sendes i 8 ugers offentlig høring sammen\nmed forslag til lokalplan 2026-6. Forvaltningen anbefaler, at der afholdes borgermøde i\nforbindelse med høringsperioden.\nProjektforslag, miljøkonsekvensvurdering, bidragsfordeling, lokalplan og tillæg til kommuneplan\nsendes i høring, når kommunalbestyrelsen, forventeligt i januar 2027, har behandlet\nindsendelse af ansøgning om tilladelse efter kystbeskyttelsesloven for stormflodssikringen i\nFaaborg. Derved opnår man, at høringer af alle dokumenter sker samtidig og at bemærkninger\nog eventuelle klager modtages samtidig.\nMiljøvurdering\n\nStormflodssikring er omfattet af Miljøvurderingslovens bilag 2, punkt 10: k): ”Kystanlæg til\nmodvirkning af erosion og maritime vandbygningskonstruktioner, der kan ændre kystlinjerne,\nsom f.eks. skråningsbeskyttelser, strandhøfder og diger, dæmninger, moler, bølgebrydere og\nandre konstruktioner til beskyttelse mod havet bortset fra vedligeholdelse og genopførelse af\nsådanne anlæg”.\n\nPå baggrund af screeningen er det vurderet at planerne skal miljøvurderes. Der er udarbejdet\nen miljørapport. Miljørapportens indhold er afgrænset til at beskrive den sandsynlige\nvæsentlige indvirkning på følgende miljømæssige områder:\n• befolkning og sundhed\n• landskab og kultur\n• natur\n• miljø og klima\nMiljørapporten er udformet jf. Miljøvurderingslovens § 12. De hensyn, som miljørapporten\npeger på, at der skal tages, er indarbejdet i planforslagene."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-5": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-5",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Forslag til Lokalplan 2026-6, Stormflodsikring, Faaborg havn",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forslag til Lokalplan 2026-6 Stormflodsikring, Faaborg havn er udarbejdet med det formål\nat give mulighed for etablering af et sikringsanlæg i form af en sammenhængende\nbarriere langs en ca. 1 km lang strækning langs havnen, der kan forhindre\noversvømmelse af byen ved forhøjet havvandstand.\nDer skal tages stilling til, om forslaget skal sendes i offentlig høring, om der skal afholdes\nborgermøde."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget og Økonomi- Erhvervs og\nTurismeudvalget anbefaler kommunalbestyrelsen at:\n1. godkende forslag til Lokalplan 2026-6\n2. forslag til Lokalplan 2026-6, samt miljørapport sendes i offentlig høring i 8 uger\n3. høringsperioden igangsættes efter kommunalbestyrelsen har godkendt ansøgning\nom tilladelse til at etablere stormflodssikring efter kystbeskyttelsesloven\n4. der afholdes borgermøde i høringsperioden"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det blev besluttet at igangsætte planlægningen for området på Teknik- og Miljøudvalgets møde\nd. 25. januar 2024 (punkt 5).\nBaggrunden for udarbejdelse af planerne for stormflodssikring er et ønske om at etablere et\nsikringsanlæg der beskytter Faaborg havn og en del af bymidten mod oversvømmelse ved\nstormflodshændelser i Faaborg fjord.\nFormål med lokalplan er at give mulighed for etablering af en sammenhængende barriere\nlangs en ca. 1 km lang strækning langs havnen, der kan forhindre oversvømmelse af byen ved\nforhøjet havvandstand.\nLokalplanen skal derudover sikre:\nat stormflodssikring kan placeres hvor det giver bedste mening inden for området\nat sikringsanlægget får en minimumshøjde på 2,53 m DVR 90 med mulighed for at\nforhøje anlægget op til 3,23 m DVR 90.\nat der kan anvendes beredskabsløsninger hvor der er behov for færdsel mellem havn og\nby\n\nat stormflodssikring udføres i materialer der tilpasser byens arkitektur og udtryk\nat der er mulighed for etablering af en promenade, som leder folk igennem området og\ntilknytter aktiviteter langs havnen\nSikringshøjde\n\nI det nuværende stormflodsprojekt er det besluttet at sikre til kote 2,53 m. Det er også besluttet,\nat sikringen på sigt skal kunne forhøjes med yderligere 30 cm til kote 2,83.\nPå en strækning er der på grund af bølgepåvirkning konstateret et behov for et tillæg på sikring\npå 40 cm, som giver en kote på 2,93 m. Den strækningen skal også kunne forhøjes med 30 cm\ni fremtiden. Derfor skal lokalplan give mulighed for en sikring på op til kote 3,23.\nMiljøvurderingen har derfor vurderet stormflodssikring op til kote 3,23.\nOffentlighedens inddragelse\n\nI forbindelse med offentlighedsfasen blev der i september 2024 indkaldt ideer og forslag til et\ntillæg til Kommuneplan 2019 for stormflodssikringen. Den 8. oktober 2024 blev der afholdt\nborgermøde, hvor lokalplan og den nordlige og sydlige linjeføring bl.a. blev præsenteret og\ndrøftet. Indkaldelse af ideer og forslag, samt invitation til borgermøde er udsendt til de\nejendomme som berøres af stormflod på 2,53 m over daglig vand. Der indkom 11\nbemærkninger i høringsperioden. Bemærkningerne har hovedsageligt omhandlet:\nPlacering/ændring af linjeføring\nØkonomi og bidragsfordeling\nUdfordringer med kloak ved Færgevej/Dosseringen, samt håndtering af regn- og\noplandsvand ifm. stormflod.\nMaterialevalg og udformning af sikringsanlæg/promenade\nAdgang til vandet /tilpasning af sikringsmetode\nProjektets tidsplan\nAndet\nForhøringsnotatet blev godkendt til TMU-mødet den 10. april 2025 (punkt 70), og de mest\nvæsentlige bemærkninger er indarbejdet i lokalplanen. Med hensyn til valg af linjeføring blev\ndet på samme TMU-møde besluttet at gå videre med to linjeføringer, henholdsvis nord og syd\nfor kanalen. Efter mødet blev det vurderet, at merudgiften ved den sydlige løsning ikke var\nsaglig, proportional eller i overensstemmelse med ligebehandlingsprincippet. På\nkommunalbestyrelsens møde den 7. maj 2025 blev det derfor besluttet, at ejerne på den\nsydlige side af kanalen skulle tage stilling til, om de mod en øget bidragspligt ville indgå i\nsikringen. Det valgte de fra, og det blev derfor besluttet at arbejde videre med den nordlige\nløsning. Forhøringsnotatet er ikke efterfølgende tilrettet i forhold til den valgte linjeføring, da\ndenne først blev endeligt afklaret efter behandlingen af høringsnotatet.\nHøringsproces\n\nForvaltningen anbefaler, at lokalplanforslaget sendes i 8 ugers offentlig høring sammen med\nforslag til Tillæg nr. 53 til Kommuneplan 2019 og miljørapporten. Forvaltningen anbefaler, at\nder afholdes borgermøde i forbindelse med høringsperioden.\nProjektforslag, miljøkonsekvensvurdering, bidragsfordeling, lokalplan og tillæg til kommuneplan\nsendes i høring, når kommunalbestyrelsen, forventeligt i januar 2027, har behandlet\nindsendelse af ansøgning om tilladelse efter kystbeskyttelsesloven for stormflodssikringen i\nFaaborg. Derved opnår man, at høringer af alle dokumenter sker samtidig og at bemærkninger\nog eventuelle klager modtages samtidig.\nMiljøvurdering\n\nStormflodssikring er omfattet af Miljøvurderingslovens bilag 2, punkt 10: k): ”Kystanlæg til\nmodvirkning af erosion og maritime vandbygningskonstruktioner, der kan ændre kystlinjerne,\nsom f.eks. skråningsbeskyttelser, strandhøfder og diger, dæmninger, moler, bølgebrydere og\nandre konstruktioner til beskyttelse mod havet bortset fra vedligeholdelse og genopførelse af\nsådanne anlæg”.\nPå baggrund af screeningen er det vurderet at planerne skal miljøvurderes. Der er udarbejdet\nen miljørapport. Miljørapportens indhold er afgrænset til at beskrive den sandsynlige\nvæsentlige indvirkning på følgende miljømæssige områder:\n• befolkning og sundhed\n• landskab og kultur\n• natur\n• miljø og klima"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-6": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-6",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Forslag til Tillæg nr. 42 til Kommuneplan 2019 - Digital skiltning",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forslag til Tillæg nr. 42 til Kommuneplan 2019 Retningslinjer og generelle\nrammebestemmelser for digital skiltning er udarbejdet med det formål at sætte rammerne\nfor digital skiltning i Faaborg-Midtfyn Kommune. Der skal tages stilling til, om forslaget\nskal sendes i offentlig høring, om der skal afholdes borgermøde samt om der skal\nudarbejdes miljøvurdering."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget og Økonomi- Erhvervs- og\nTurismeudvalget anbefaler kommunalbestyrelsen at:\n1. godkende forslag til Tillæg nr. 42 til Kommuneplan 2019\n2. forslaget sendes i offentlig høring i 8 uger\n3. der ikke afholdes borgermøde i høringsperioden\n4. der ikke udarbejdes miljøvurdering af forslaget."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Teknik- og Miljøudvalget besluttede på møde d. 22. oktober 2020 (pkt. 180) at igangsætte\nudarbejdelsen af retningslinjer for digital skiltning på baggrund af en sag, hvor et lokalsamfund\nhavde ansøgt om opsætning af flere digitale skilte forskellige steder i den pågældende by.\nDigital skiltning åbner op for nogle nye muligheder for information og reklamering, både for\nlokalsamfund og virksomheder, og det blev vurderet, at de eksisterende retningslinjer for digital\nskiltning viste sig at være utilstrækkelige til at danne grundlag for sagsbehandlingen\nfremadrettet.\nTillæggets formål og indhold\n\nFormålet med tillægget er at sikre en effektiv og ensartet sagsbehandling af ønsker om\nopstilling af digitale skilte til gavn for både ansøger og administration. Med dette som\nadministrationsgrundlag vil det også blive nemmere at vejlede interessenter i hvor og i hvilket\nomfang, der kan gives mulighed for digital skiltning. Rammerne skal dermed sikre ensartethed i\nsagsbehandlingen og at relevante hensyn påses i både sagsbehandling og planlægning\nfremadrettet.\nTillægget redegør i vidt omfang for hensynet til anden lovgivning, da der er en række andre\nrelevante love, som skal overholdes, og som påvirker mulighederne for og omfanget af digital\nskiltning. De nye generelle rammebestemmelser har til hensigt, at gøre det tydeligt, hvad\nkommunen lægger vægt på i sagsbehandlingen udover, hvad der reguleres af anden\n\nlovgivning. Der er derfor opstillet rammebestemmelser om placering, udformning og tekniske\nkrav. Der fastlægges desuden specifikke rammebestemmelser for informationsstandere og\nvirksomhedsskilte, så lokalsamfund og virksomheder i højere grad ved, hvad de kan forvente at\nfå tilladelse til. I forbindelse med lokalplanlægning er det muligt at fastlægge mere specifikke\nbestemmelser for det enkelte lokalplanområde, hvis det vurderes hensigtsmæssigt.\nOffentlighedens inddragelse\n\nForvaltningen anbefaler, at forslaget til Tillæg nr. 42 sendes i 8 ugers offentlig høring og at der\nikke afholdes borgermøde i forbindelse med høringsperioden, men at erhvervsråd, lokalråd og\nandre relevante aktører får forslaget tilsendt. Anbefalingen om ikke at afholde borgermøde\nskyldes, at tillægget vedrører generelle bestemmelser, der gælder hele kommunen og ikke\ngiver mulighed for nærmere defineret bebyggelse eller udlægger nye arealer. Det vurderes\nderfor, at en bred offentlig høring med direkte information til relevante aktører, vil være den\nmest hensigtsmæssige fremgangsmåde til at sikre offentlighedens inddragelse.\nForud for den politiske behandling af forslaget, har der været afholdt et møde med\nrepræsentanter fra Faaborg-Midtfyn Erhvervsråd og Fynsland, hvor de nye\nrammebestemmelser blev præsenteret og drøftet. Repræsentanterne gav generelt udtryk for,\nat det var positivt med nogle klarere rammer på området og at de blev orienteret forud for den\noffentlige høring.\nMiljøvurdering\n\nForslaget til Tillæg nr. 42 til Kommuneplan 2019 er screenet i henhold til miljøvurderingsloven.\nDet vurderes, at realisering af kommuneplantillæggets muligheder ikke medfører væsentlige\nindvirkninger på miljøet. Det anbefales derfor, at der ikke udarbejdes en miljøvurdering af\nkommuneplantillægget."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-7": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-7",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Endelig vedtagelse af Lokalplan 2026-2 tæt-lav boliger på Tvekildevej, Ryslinge",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Lokalplan 2026-2 fremlægges til endelig vedtagelse. Formålet er at udvide\nbyggemulighederne fra åben-lav til tæt-lav boligbyggelse i form af dobbelthuse ved\nTvekildevej i Ryslinge.\nLokalplanforslaget har været i offentlig høring. Der indkom 5 bemærkninger i\nhøringsperioden, som giver anledning til forslag om enkelte ændringer i lokalplanen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget vedtager Lokalplan 2026-2\nmed de ændringer, der fremgår af høringsnotatet, bilag 2."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Forslag til Lokalplan 2026-2 blev godkendt på Teknik- Plan- og Havneudvalgets møde d. 18.\njuni 2026 (punkt 94).\nPlanlægningen for området blev igangsat efter beslutning på Teknik- og Miljøudvalgets møde\nden 22. august 2024 (punkt 143)\nOmrådet er i dag omfattet af Lokalplan 2008-8, som udlægger området til boligformål i form af\nbåde åben-lav og tæt-lav bebyggelse. Lokalplanen har til formål at sikre, at området udvikler\nsig til et attraktivt boligområde centralt beliggende i Ryslinge by.\nEjeren af ejendommene matr.nr. 10bk og 10au, Ryslinge By, Ryslinge, har fremsendt en\nhenvendelse med ønske om at ændre områdets anvendelse, så hele bygherres ejendom kan\nudvikles til tæt-lav boligbebyggelse.\nFormålet med den nye lokalplan er at tilpasse den gældende plan fra 2008, så den i højere\ngrad understøtter ønsket om tæt-lav boligudvikling i området. Lokalplanen skal samtidig sikre,\nat området fremstår som en samlet helhed med attraktive boligforhold og mulighed for grønne\nfællesarealer og stiforbindelser.\nLokalplanen omfatter et areal ud mod Enghavevej (delområde 2), hvor der i dag ligger boliger\ninden for et område udlagt til erhverv i den eksisterende lokalplan. Den nye lokalplan tilpasser\nplanlægningen til den faktiske anvendelse og sikrer en bedre sammenhæng mellem bolig og\nerhverv. Ændringen er i overensstemmelse med den gældende kommuneplanramme, som\nudlægger arealet til blandet bolig og erhverv.\nOffentlighedens inddragelse\n\nForslag til Lokalplan 2026-2 har været i offentlig høring i perioden d. 22. juni 2026 til d. 4.\nseptember 2026. Der indkom 5 bemærkninger i høringsperioden. Se bilag 2 for høringsnotat\nmed de indkomne bemærkninger fra borgere.\nI forbindelse med offentlighedsfasen har der d. 25. august 2026 været afholdt borgermøde.\nBemærkningerne har hovedsageligt omhandlet:\nTrafikale forhold, herunder vejbetjening, trafikafvikling, parkering og trafiksikkerhed.\nNabohensyn, herunder indblik, privatliv, støj og belysning.\nOmfang og placering af den tætte-lave boligbebyggelse.\nHegn, stiforbindelser og disponering af fællesarealer.\nØnsker til den fremtidige boligudvikling i Ryslinge, herunder boligtyper og boligvariation.\nSe bilag 3 for borgernes samlede høringssvar.\nHøringssvarene giver anledning til følgende forslag til ændringer i lokalplanen i forhold til det\noffentliggjorte lokalplanforslag:\nDen maksimale bygningshøjde i delområde 1 reduceres fra 8,5 m til 6 m, svarende til\nhøjdereguleringen i den tidligere Lokalplan 2008-8.\nDer fastsættes en minimumgrundstørrelse på 350 m² (hævet fra 200 m²) for de sydligste\ntæt-lav grunde for at sikre en mere åben bebyggelsesstruktur og en bedre tilpasning til\nden eksisterende parcelhusbebyggelse langs Sandbjergvej.\nKortbilagene 2 og 3 konsekvensrettes som følge af ændringen for de sydligste tæt-lav\ngrunde.\nHerudover er der foretaget mindre redaktionelle ændringer."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Ingen økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-8": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-8",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Forslag til Lokalplan 2026-7 Børnehus Ringe Syd",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forslag til Lokalplan 2026-7 Børnehuse Ringe Syd er udarbejdet med det formål at\nmuliggøre opførelsen af et nyt børnehus på en kommunal matrikel i det kommende\nbyudviklingsområde Ringe Syd. Der skal tages stilling til, om forslaget skal sendes i\noffentlig høring, om der skal afholdes borgermøde samt om der skal udarbejdes\nmiljøvurdering."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget beslutter at:\n1. godkende forslag til Lokalplan 2026-7\n2. forslaget sendes i offentlig høring i 4 uger\n3. der afholdes borgermøde i høringsperioden\n4. der ikke udarbejdes miljøvurdering af forslaget."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det blev besluttet at igangsætte planlægningen for området på Teknik- og Miljøudvalgets møde\nI forbindelse med budgetaftalen for 2026 blev der afsat midler til at fremrykke opførelsen af et\nnyt børnehus i Ringe på en kommunal matrikel. Flere placeringer blev screenet i processen og\nslutteligt viste en kommunal matrikel i det kommende byudviklingsområde Ringe Syd sig at\nvære det bedste valg til opførelsen af det nye børnehus, hvorefter lokalplanlægningen blev\npåbegyndt. Området er omfattet af ”Helhedsplan for nyt boligområde syd for Ringe”, der blev\nvedtaget i 2025. Selvom helhedsplanen omhandler boliger, og ikke specifikt nævner opførelsen\naf en daginstitution, er der med lokalplanen i videst mulige omfang taget udgangspunkt i\nhelhedsplanen og forarbejderne til denne.\nDer er udarbejdet et tillæg til kommuneplanen, der skal muliggøre etape 1 af helhedsplanen,\nherunder udlægge den kommunale matrikel til offentlige formål i form af daginstitution.\nVedtagelsen af lokalplanen for børnehuset forudsætter vedtagelse af kommuneplantillægget.\nTillægget har været i offentlig høring i perioden 11. september - 6. november 2026 og forventes\nat blive vedtaget februar 2027.\nPlanens formål\n\nFormålet med lokalplanen er at fastlægge anvendelsen af området til offentlige formål og give\nmulighed for opførelsen af en daginstitution. Lokalplanen har desuden til formål at definere en\n\noverordnet disponering af området, så henholdsvis bebyggelse og befæstede arealer samt\nløsninger til regnvandshåndtering placeres, hvor det er mest hensigtsmæssigt i henhold til bl.a.\neksisterende terræn, naturlige strømningsveje, eksisterende lavninger mv. Dette gøres ved at\ninddele lokalplanområdet i to delområder til henholdsvis daginstitution og regnvandshåndtering,\nsamt ved at definere et byggefelt. Lokalplanen fastlægger derudover nogle overordnede\nrammer for opførelsen af børnehuset.\nOffentlighedens inddragelse\n\nForvaltningen anbefaler, at lokalplanforslaget sendes i 4 ugers offentlig høring. Forvaltningen\nanbefaler, at der afholdes borgermøde i forbindelse med høringsperioden.\nMiljøvurdering\n\nForslaget til Lokalplan 2026-7 er screenet i henhold til miljøvurderingsloven. Det vurderes, at\nrealiseringen af lokalplanens muligheder ikke medfører væsentlige indvirkninger på miljøet. Det\nanbefales derfor, at der ikke udarbejdes en miljøvurdering af lokalplanen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Ingen økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-9": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-9",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Kriterier for prioritering af lokalplanansøgninger",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunen modtager løbende ansøgninger om igangsættelse af lokalplanlægning til\nbolig-, erhvervs- og udviklingsprojekter samt lovliggørelse. Da ansøgningerne overstiger\nden tilrådeværende kapacitet, foreligger der politisk vedtagne kriterier for planprioritering\nog igangsættelser af projektansøgningerne. Kriterierne skal sikre en transparent, ensartet\nog strategisk prioritering af lokalplanansøgninger. Kriterierne er senest opdaterede og\ngodkendt af Teknik– og Miljøudvalget den 15/12-22 (pkt. 283) og fremlægges nu til\nrevurdering."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget godkender forslag til\nkommende kriterier som beskrevet i sagen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunen modtager et stigende antal ansøgninger om udarbejdelse af lokalplaner, hvilket\nbl.a. er begrundet i lokal vækst karakteriseret ved flere erhvervsprojekter, større boligprojekter\nog realisering af kommunens signaturprojekter. Ansøgningernes fokus er ændret de senere år,\nog en række af signaturprojekter er under realisering, hvorfor der fremlægges en sag for\nrevurdering af kriterierne for prioritering og igangsættelse af lokalplanprojekter.\nGældende kriterier\n\n1. Lovpligtige planer – enten lovændringer eller planer i overensstemmelse med\nkommuneplanen\n2. Planlægning der understøtter signaturprojekter eller andre vedtagne politisk igangsatte\nanlæg i kommunen\n3. Erhverv\n4. VE- anlæg (solceller, vindmøller, biogas mv.)\n5. Øvrige projekter som ikke er i overensstemmelse med kommuneplanen, men\nunderstøtter udviklingsstrategien i udviklingsbyerne og øvrige lokalsamfund\n6. Øvrigt\nForslag til kommende kriterier\n\n1. Lovpligtige planer – enten lovændringer eller planer i overensstemmelse med\nkommuneplanen, samt anlæg der realiserer de politiske budgetaftaler.\n\n2. Planlægning der understøtter kommunens udviklingsstrategi og med særligt fokus på\nerhvervs – og turismestrategien\n3. Erhverv, herunder større boligprojekter, der betragtes som erhverv.\n4. Anlæg der understøtter kommunens klimahandleplan\n5. Øvrige projekter som ikke er i overensstemmelse med kommuneplanen, men som\nunderstøtter grøn boligrotation i såvel større som mindre lokalsamfund\n6. Øvrige\nKriterierne vil (som gældende for nu) blive uddybet med vejledende eksempler til brug for\nPlanafdelingens udarbejdelse af indstillinger."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Forvaltningens indstillinger til igangsættelse af ansøgte projekter sker indenfor den\nøkonomiske driftsramme til planfunktionen/myndighedsfunktionerne, hvilket betyder, at\nder vil være en venteliste.\nI vurderingen af de enkelte projekter kan der være opmærksomhed på en evt. tidsfaktor,\nder kan have betydning for muligheden for realisering, og dermed behov for en særskilt\nfinansiering af ressourcer til myndighedsfunktionen. I forlængelse heraf anbefales det, at\nTeknik- Plan- og Havneudvalget i 2027 i givet fald rejser en konkret sag med anbefaling\naf finansiering gennem en tillægsbevilling overfor Økonomi- Erhvervs- og\nTurismeudvalget og kommunalbestyrelsen.\nDet anbefales, at der til budgetforhandlingerne 2028 overvejes at medtage mulighed for\nfinansiering af konkrete prioriterede projekter, hvor der er et momentum for realisering."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-10": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-10",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Vintertjeneste i Faaborg-Midtfyn Kommune",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Vintertjenesten forventes ved budgetopfølgningen pr. 30.09.26 at have et samlet\nmerforbrug på mere end 25 mio. kr. i 2026, inklusive overførte merforbrug fra tidligere år.\nForvaltningen har identificeret fire mulige spor til at skabe balance mellem budget og\nudgifter. Sporene kan kombineres og har forskellige tidshorisonter. Udvalget skal drøfte\nmulighederne med henblik på det videre arbejde."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget drøfter de mulige spor til\nnedbringelse af vintertjenestens merforbrug, som er beskrevet i sagsfremstilling."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Vintertjenesten har gennem flere år haft et kendt merforbrug, som har medført en nu betydelig\nøkonomisk ubalance. I perioden 2022-2025 har det gennemsnitlige årlige merforbrug været 4,2\nmio. kr., selv om vintrene har været forholdsvis milde. I 2026 forventes merforbruget isoleret\nset at udgøre 11,3 mio. kr., som følge af den særdeles hårde vinter i årets første måneder. Ved\nbudgetopfølgningen pr. 30. september 2026 skønnes det samlede merforbrug ved årets\nudgang derfor at overstige 25 mio. kr., inklusive overført merforbrug fra tidligere år.\nDer skal dermed skabes balance i den løbende drift og det opbyggede merforbrug skal\nafvikles. Hvis det samlede merforbrug på 25 mio. kr. skal afdrages over fem år fra 2028 til\n2032, kræver det en årlig finansiering på 5 mio. kr. til afdrag. Hertil kommer behovet for at\nskabe balance i den løbende drift, som med udgangspunkt i det gennemsnitlige årlige forbrug i\nperioden 2022-2026 kan anslås til 6,1 mio. kr. fra 2027.\nBeregningen er et illustrativt eksempel baseret på det historiske gennemsnit for en 5-årig\nperiode med fire forholdsvise milde vintre og én hård vinter samt en femårig afdragsperiode.\nMed disse forudsætninger vil der være et behov for at finde en forbedring af økonomien på 6,1\nmio. kr. i 2027 og 11,1 mio. kr. årligt i perioden 2028-2032. Når det overførte merforbrug er\nafviklet, vil der fortsat være behov for en varig forbedring på 6,1 mio. kr. årligt for at skabe\nbalance i den løbende drift. Udfordringens omfang skal ses i lyset af, at det nuværende årlige\nbudget til vintertjenesten er 8,3 mio. kr. Se bilag 1 for visuel fremstilling.\nDet faktiske behov vil afhænge af vintervejret og udviklingen i udgifterne. Jo længere tid der\ngår, før der gennemføres løsninger, desto større kan det samlede merforbrug blive, og desto\nstørre bliver behovet for efterfølgende at skabe balance og afdrage gælden.\nDe følgende spor skal derfor ses i lyset af, at der er tale om en betydelig økonomisk udfordring,\nsom sandsynligvis kræver en kombination af budgettilpasning og udgiftsreduktioner.\n\nSpor 1: Et budget i balance\n\nDen økonomiske ubalance skal ses i lyset af, at budgettet for vintertjenesten i 2021 og 2022\nblev reduceret med samlet 3,5 mio. kr. efter flere år med milde vintre. Forudsætningen for\nreduktionerne byggede på en forventning om, at overskud i milde år kunne opbygges som\nreserver til at dække udgifterne i hårde vintre.\nDenne forudsætning har imidlertid vist sig vanskelig at opretholde. De faste udgifter er steget\nvæsentligt, blandt andet som følge af de seneste udbud og stigende priser på salt, brændstof\nmv., og selv milde vintre kræver ofte gentagne indsatser ved temperaturskift omkring\nfrysepunktet. En stor del af budgettet er derfor bundet i faste udgifter, hvilket begrænser\nmuligheden for at opbygge reserver i ”milde” vintre. Af bilag 2 fremgår en oversigt over\nudviklingen i budgettet til Vintertjenesten og forbruget i samme periode.\nEn sammenligning af kommunernes udgifter til vintertjeneste i perioden 2021-2025 viser, at\nFaaborg-Midtfyn Kommunes gennemsnitlige udgifter har været ca. 9.140 kr. pr. kilometer\nkommunal vej om året. Til sammenligning har gennemsnittet for de øvrige kommuner på\nlandsplan været ca. 13.760 kr., mens gennemsnittet for de øvrige fynske kommuner har været\nca. 13.430 kr. og 11.093 kr., når Odense Kommune ikke medtaget i opgørelsen. Se bilag 3 for\nen benchmark af udgifter til vintertjenesten pr. kilometer vej.\nSammenligningen peger således på, at Faaborg-Midtfyn Kommunes udgifter pr. kilometer\nligger under de beregnede gennemsnit. Der er dog betydelige geografiske forskelle i\nudgiftsniveauet, og gennemsnittene dækker over kommuner med forskellige vejnet,\ngeografiske forhold og serviceniveauer. Benchmarken kan derfor ikke stå alene som udtryk for,\nhvad et passende budget for vintertjenesten i Faaborg-Midtfyn Kommune bør være.\nBenchmarken viser til gengæld, at Faaborg-Midtfyn Kommune allerede har et relativt lavt\nudgiftsniveau pr. kilometer vej sammenlignet med både lands- og Fynsgennemsnittet. Det\nunderstreger, at mulighederne for at skabe balance i vintertjenestens økonomi ikke\nnødvendigvis alene skal findes gennem yderligere reduktioner i udgifterne pr. kilometer.\nSamtidig skal resultatet ses i sammenhæng med kommunens konkrete serviceniveau og lokale\nforhold.\nDer skal tages stilling til, hvordan der skabes balance mellem budget og forventede udgifter.\nDet kan ske ved at tilføre budgetmidler, reducere udgifterne eller kombinere de to tilgange. En\nbudgettilpasning kan skabe balance i den løbende drift, mens en varig reduktion af udgifterne\nogså kan bidrage til at frigøre midler til at afdrage det overførte merforbrug.\nDe øvrige spor skal derfor vurderes i forhold til deres forventede økonomiske effekt og\ntidshorisont, herunder deres bidrag til både at skabe balance i driften og afvikle det overførte\nmerforbrug.\nSpor 2: Justeringer af den nuværende drift\n\nDer kan undersøges mindre justeringer, som kan reducere udgifterne inden for de næste par\når. Det kan blandt andet omfatte:\n\nSnerydning ved busstoppesteder: En gennemgang af de steder, hvor ansvaret for\nsnerydning påhviler den tilstødende grundejer. Besparelsespotentialet forventes at være\nbegrænset, da kommunens køretøjer fortsat skal passere på de tilhørende ruter.\nSærlige indsatser: En tydeligere bestilling og finansiering fra øvrige fagområder, når\nVintertjenesten rydder specifikt for borgere med f.eks. behov for behandling eller\nhjemmepleje. En ændret intern finansiering vil ikke reducere kommunens samlede\nudgifter.\nHjemtagelse af vedligeholdelse og reparation af vintermateriel: En vurdering af, om\nvedligeholdelse og reparation af vintermateriel kan hjemtages. Det foreløbige skøn er en\nårlig besparelse på 0,2-0,3 mio. kr. fra andet år.\nMulighederne har forskellig økonomisk effekt og tidshorisont og skal derfor vurderes nærmere,\ninden der kan tages stilling til deres bidrag til en samlet løsning.\nSpor 3: Større gennemgang af vintertjenestens serviceniveau og tilrettelæggelse\n\nEn større gennemgang kan afdække, om vintertjenestens serviceniveau og tilrettelæggelse\nkan ændres, så udgifterne reduceres. Gennemgangen kan blandt andet omfatte:\nBeredskabsperiode: Undersøge muligheden for at afkorte perioden med fast\nvinterberedskab, eksempelvis til 15. november-15. marts, eventuelt med mulighed for\ntilkald i perioderne før og efter. Forvaltningen undersøger i så fald, om lovgivningen eller\nandre krav fastsætter en bestemt periode, hvilke vejklasser der eventuelt skal undtages,\nog hvad et eventuelt tilkøb vil koste.\nPrioritering ved ekstremt vintervejr: Afdække om indsatsen i situationer med omfattende\nsne eller is i højere grad skal koncentreres om de mest kritiske ruter.\nServiceniveau: Undersøge om serviceniveauet på eksempelvis cykelstier, kommunale\nfortove og andre arealer kan tilpasses.\nVinterklasser og rutenet: Afdække om enkelte veje kan flyttes mellem vinterklasser, og\nom ruterne kan tilrettelægges mere hensigtsmæssigt, herunder særligt klasse 3-veje i\nlanddistrikterne.\nGennemgangen kan samtidig danne grundlag for at vurdere, hvordan vintertjenesten fremover\nkan organiseres og udbydes mest hensigtsmæssigt, herunder om nye tekniske løsninger og\nændrede kontraktvilkår kan bidrage til en mere effektiv drift.\nDet nuværende udbud løber over to år. Et nyt udbud forventes gennemført i 2028 med virkning\nfra vinteren 2028/2029, mens principper for et revideret vinterregulativ kan forelægges politisk i\n2027. Mulighederne for mindre justeringer inden da afhænger af de eksisterende kontraktvilkår,\nmen umiddelbart er der råderum til mindre justeringer.\nSpor 4: Ændret vejklassificering\n\nEt særskilt spor er at undersøge, om udvalgte offentlige veje kan overgå til private fællesveje.\nEn sådan ændring kan på længere sigt reducere kommunens udgifter til både vintertjeneste og\n\nanden vejdrift.\nMulighederne skal vurderes konkret ud fra vejenes funktion, trafikale forhold og de juridiske\nkrav til en eventuel omklassificering. En ændring kan ikke begrundes alene i økonomiske\nhensyn, og der vil være behov for en nærmere screening af relevante veje, inden et\nbesparelsespotentiale kan opgøres.\nSamlet vurdering\n\nSporene udelukker ikke hinanden. En holdbar løsning kan kræve en kombination af\nbudgettilpasning, mindre driftsmæssige besparelser og ændringer i vintertjenestens\nserviceniveau og tilrettelæggelse. Omfanget af de enkelte bidrag afhænger af de nærmere\nøkonomiske og driftsmæssige vurderinger."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Drøftelsen har ingen særskilte økonomiske konsekvenser. Udvalget vil – afhængigt af\ndrøftelsen – blive forelagt beslutningssager med henblik på at reducere merudgifterne til\nVintertjenesten."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-11": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-11",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Kvartalsvis budgetopfølgning 30.9.2026 og risikovurdering for 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Budgetopfølgningen pr. 30. september 2026 viser et forventet mindreforbrug på 5,973 mio. kr. svarende til 3,4 pct. af det samlede\nbudget. Herunder er der et stor mindreforbrug vedrørende reetablering efter opgravning der skyldes aktivitetsforskydning, ser man\nbort fra mindreforbruget vedrørende reetablering efter opgravning ville der være et forventet merforbrug på 22,001 mio. kr."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget og Økonomi- Erhvervs- og Turismeudvalget, som del af den samlede\nbudgetopfølgning, anbefaler kommunalbestyrelsen at godkende:\n1. Den kvartalsvise budgetopfølgning pr. 2026 på driften"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Status for budgetopfølgningen\nFormålet med budgetopfølgningen er at komme med et bud på forventet regnskab for 2026 inden for Teknik- Plan- og Havneudvalgets\nbudget.\nBudgetopfølgningen pr. 30. september 2026 udviser et forventet mindreforbrug på 5,973 mio. kr. på driften. Det er en forbedring på 11,766\nmio. kr. siden budgetopfølgningen pr. 31. maj 2026, hvor forventningen var et merforbrug på 5,793 mio. kr. Forbedringen skyldes primært\nen højere forventning til indbetaling til reetablering efter opgravning.\n\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (minus=mindreforbrug) (i 1000. kr.)\nRegnskab\np/l)\n\nKorr. budget\n\n01 Byfornyelse\nog ejendomsdrift\n\n03 Veje og trafik\n\nOmråde\n\n09 Administration\n\nForventet\nregnskab pr.\n\nAfvigelse\n\nAnsøgte\ntillægsbev (TB)\n\nAfvigelse efter TB\nI pct.\n\nFra 2025 til 2026 blev der overført et mindreforbrug på 19,796 mio. kr. indenfor udvalgets bevillinger. Herunder blev der overført 28,887\nmio. kr. vedrørende reetablering efter opgravning. På udvalgtes øvrige aktiviteter blev der overført et samlet merforbrug på 9,091 mio. kr.\n\nDe 3 hovedårsager til afvigelsen inden for Teknik- Plan- og Havneudvalgets budget er:\n\nReetablering efter opgravning: mindreforbrug på 27,974 mio. kr. (03 Veje og trafik)\nDa reetablering efter opgravninger indbetales op til 2 år før midlerne anvendes, er der løbende en opsparing på området, der skal\noverføres til det år hvor midlerne skal anvendes.\nVintertjenesten: merforbrug på 25,039 mio. kr. (03 Veje og trafik)\nSkyldes dels den hårde vinter i januar og februar og dels stigende lønudgifter som følge af ændret praksis for vagtbetaling og\narbejdstider. Herudover vedrør 13,785 mio. kr. overførte merudgifter fra tidligere år.\nPark, Vej og Natur: merforbrug på 3,725 mio. kr. (03 Veje og trafik)\nSkyldes dels prisstigninger på en række inputmaterialer udover den generelle P/L kompensation og dels manglende opjustering af\npriser i tidligere år.\n\nUddybning af de forventede afvigelser pr. bevilling\nBevilling 01 Byfornyelse og Ejendomsdrift\nByfornyelse og Ejendomsdrift har et korrigeret budget på 9,911 mio. kr., hvor der forventes et mindreforbrug på 3,907 mio. kr., svarende til\n39,4 % af budgettet. Ved budgetopfølgningen pr. 31. maj 2026 blev der forventet et mindreforbrug på 0,886 mio. kr. Det forventede\nmindreforbrug er derved opjusteret med 3,021 mio. kr. Det skyldes at de igangsatte initiativer for hhv. Slagterigrunden og Landsbyernes\npotentiale siden sidste budgetopfølgning er periodeforskudt ind i 2027.\nOmdannelse af slagterigrund og samlet havneudvikling:\nHar et mindreforbrug på 1,571 mio. kr., da en del af midlerne skal anvendes til at finansiere en parkeringsstrategi/p-pladser, som har været\noppe politisk og er udskudt til et temamøde i november 2026, og derfor først kan gennemføres i 2027. Derudover skal midlerne bruges til\nstadepladser i 2027, som stadig er en midlertidig aktivitet.\nKonsulenter til kommune- og Lokalplaner:\nDer forventes et mindreforbrug på 1,166 mio. kr., på midlertidige midler afsat til konsulentunderstøttelse af lokalplanarbejdet. Hvilket dels\nskyldes at bygherrer er forsinkede med leverancer, og dels at lokalplaner for VE anlæg er midlertidig pauseret, derfor er forbruget ikke så\nhøjt som tidligere forventet.\nLandsbyers potentiale for omdannelse og udvikling:\nDer forventes et mindreforbrug på 0,968 mio. kr. Midlerne skal anvendes til realisering af landsbyanalysen, samt igangsættelse af afledte\nprojekter som led i den strategiske landsbyplanlægning.\nØvrige afvigelser:\nDer forventes et mindreforbrug på 0,201 mio. kr. Mindreforbruget består af en lang række mindre væsentlige mindreforbrug på driften og\nøvrige mindre projekter.\nBevilling 03 Veje og Trafik\nVeje og Trafik har et samlet korrigeret budget på 124,014 mio. kr., der forventes et merforbrug på 0,020 mio. kr., svarende til 0,0% af\nbudgettet.\nVæsentlige afvigelser\nMerforbrug:\nVintertjenesten:\nEt merforbrug på 25,039 mio. kr. skyldes dels den hårde vinter i januar og februar 2026 og dels stigende lønudgifter som følge af ændret\npraksis for vagtbetaling og arbejdstider. Tidligere gennemførte besparelser har vist sig at være for optimistiske. Af det samlede merforbrug\nudgør 13,785 mio. kr. overførte merudgifter fra tidligere år. En detaljeret redegørelse for vintertjenestens stilling behandles på Teknik- Planog Havneudvalget på samme udvalgsmøde.\nPark, Vej og Natur:\nDer forventes samlet et merforbrug i Park, Vej og Natur på 3,725 mio. kr. mio. kr. Forvaltningen forventer at kunne afvikle 1,185 mio. kr. af\ndet overførte forbrug fra tidligere år, hvor der samlet blev overført et merforbrug på 4,910 mio. kr. Merforbruget skyldes blandt andet at der\nde sidste år har været prisstigninger på en række inputmaterialer der har oversteget den generelle P/L kompensation. At det i 2026 ser ud\ntil at lykkedes at afvikle en del af det overførte merforbrug skyldes, at der i 2026 har været et fuldt stop i forhold til større investeringer i nyt\nmateriel. Der forventes således kun investeringer for 0,5 mio. kr. i 2026 hvor der normalt investeres for ca. 3 mio. kr. om året. Denne\ntilbageholdenhed er ikke bæredygtig på længere sigt og allerede i 2027 ser ind i uundgåelige investeringer til udskiftning af udtjent\nmateriel.\nHavn og Færge:\nPå Havnen forventes der er et merforbrug på 1,014 mio. kr., som primært skyldes et overført merforbrug fra tidligere år på 1,013 mio. kr. I\n2026 forventes et forbrug svarende til budgettet for året. At det ikke er muligt at afvikle det overførte merforbrug skyldes bl.a. udfordringer\nmed faldende indtægter fra f.eks. fiskeri, lastbilgods og anløb af fragtskibe.\nPå færgen forventes der et lille merforbrug på 0,068 mio. kr. Da man efter planen skulle have sparret 1,5 mio. kr. op til dokophold i 2027,\nser man ind i et udfordret budget for 2027. De ekstra omkostninger i år skyldes primært de høje priser på brændstof og olieprodukter, men\nogså et uventet generatorhavari i januar.\nMindreforbrug:\nRetablering efter opgravning:\nDer forventes et mindreforbrug på 27,974 mio. kr. Puljen finansieres af ledningsejere, som indbetaler ved igangsætning af gravearbejder.\nTypisk påbegyndes reetableringen først 2 år efter gravearbejdet er afsluttet, for at være sikker på, at jorden har sat sig. Det medfører at der\nløbende er opsparing på området. Da uforbrugte midler fra den enkelte opgravning skal tilbagebetales, kan mindreforbrug aldrig tilgå andre\nområder eller kassen. Puljens relativt høje niveau skyldes at der i de sidste år er blevet gravet mere end normalt ifm. etablering af\nfjernvarme. Der var ved afslutningen af 2025 opsparet 28,887 mio. kr. i puljen. Der forventes i 2026 at blive gennemført\nreetableringsprojekter for 20,0 mio. kr. samtidig med at der forventes indbetalinger fra nye opgravninger for 19,087 mio. kr., hvoraf 12,587\nmio. kr. er indbetalt pr. 30. september 2026.\nBetaling til Fynbus for buskørsel og skolebuskort:\nDer forventes et mindreforbrug på budgettet til buskørsel og skolebuskort på 0,393 mio. kr. i 2026. Mindreforbruget er afsat til betaling af\n\nmerforbrug vedrørende 2025 der kommer til udbetaling i 2027.\nØvrige afvigelser\nUd over de væsentlige afvigelser der er gennemgået ovenfor forventes der et samlet mindreforbrug på 1,459 mio. kr. på bevillingen, dette\nbestår af en række mindre væsentlige mer- og mindreforbrug.\nKommende opmærksomhedspunkter\nFokus på nye indtægtsmuligheder, og optimering af udgifterne for Havnen.\nDer er igangsat en analyse af de økonomiske udfordringer hos Park, Vej og Natur. Kortlægning har ført til at der pt. arbejdes med\nen ny kontoplan. Der vil være opbremsning i forbruget indtil yderligere afklaring er gennemført.\nManglende opsparing til dokophold for Ø-Færgen.\n\nBevilling 09 Administration\nAdministration har et samlet korrigeret budget på 44,496 mio. kr., hvor der forventes et mindreforbrug på 2,087 mio. kr.\nVæsentlige afvigelser\nMindreforbruget er primært opstået som følge af en række vakante stillinger i centerets enheder. Flere af disse stillinger har været ubesatte\nover en længere periode. Herudover har der været højere lønrefusioner end tidligere antaget.\nStatus for risikovurderingen for 2027\nSom en del af opfølgningen på budgetterne, er der foretaget en risikovurdering af budget 2027 på administrativt udvalgte budgetområder.\nRisikovurderingen har fokus på det eller de områder, hvor der er risiko for budgetafvigelser i 2027. Det er således ikke en fuldstændig\nbudgetopfølgning eller forventet regnskab for 2027.\nInden for Teknik- Plan- og Havneudvalgets budget er de største risikoområder i 2027:\nVintertjenesten: forventet merforbrug i 2027 på mellem 5 og 8 mio. kr. (1003 Veje og trafik)\nForventet merforbrug i vintertjenesten skyldes en kombination af stigende priser på materialer og tjenesteydelser som salt og\nvedligehold af maskiner, ikke fuldt ud implementeret indeksregulering, højere udgifter til reparationer og reservedele, nye\nlovgivningsmæssige krav, materiale- og ressourceknaphed; tilsammen skaber disse forhold et pres på budgettet, som gør det\nuundgåeligt, at udgifterne overstiger de afsatte midler. Hertil kommer merforbrug fra 2026, hvis ikke det håndteres på anden vis.\nTillægsbevillinger\nForvaltningen indstiller, at kommunalbestyrelsen godkender en række overførsler mellem bevillinger, som også kaldes budgetneutrale\ntillægsbevillinger, som fremgår af bilag 1.\nTabel 2: Tillægsbevillinger pr. 30. september 2026 (angivet i 1.000 kr.)\nTillægsbevillinger:\nBeskrivelse\n\nBudgetneutrale\ntillægsbevillinger\n\n(1003) TB BO 30.9 - DP+PVN til IEG Fælles\n\nog\nfrem\n\n(1003) BLK-TB'er ved BO 30.09.26\n\n(1003) Visiteret kørsel\n\n(1003) Justering af Havnens renteudgift for 2026\n\n(1003) AI-konsulent\n\n(1003) Finansiering af PostNord Danmark rundt\n\n(1009) TB BO 30.9 - DP+PVN til IEG Fælles\n\n(1009) BLK-TB'er ved BO 30.09.26\n\n(1003) Ny organisering\n\n(1009) Ekstraudgift Concierge\n\n(1009) AI-konsulent\n\n(1009) Ny organisering\nI alt"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Fremgår af sagsfremstillingen og bilag."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-12": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-12",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Anlæg - Budgetopfølgning 30.09.2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Budgetopfølgningen pr. 30. september 2026 viser et samlet forventet mindreforbrug på\n41,758 mio. kr. efter tillægsbevillinger inden for Teknik- Plan- og Havneudvalgets\nanlægsprojekter."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget og Økonomi- Erhverv- og\nTurismeudvalget, som del af den samlede budgetopfølgning, anbefaler\nkommunalbestyrelsen at godkende:\n1. Den kvartalsvise budgetopfølgning pr. 30. september på anlæg.\n2. At der gives en anlægsbevilling på i alt 0,840 mio. kr. til anlægget ”Landsbypuljen\n3. At rådighedsbeløbet på 0,840 mio. kr. vedr. anlægget ”Landsbypuljen 2014-2026”\nfrigives til Teknik- Plan- og Havneudvalget i 2026.\n4. Der tilføres kassen 0,696 mio. kr. fra anlægget ”Landsbypuljen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formålet med budgetopfølgningen er at give et bud på det forventede regnskab for 2026 inden\nfor Teknik- Plan- og Havneudvalgets anlægsprojekter - samt vurdere om resultatet giver\nanledning til justeringer eller handlinger for at holde budgettet i 2026.\nBudgetopfølgningen for udvalgets driftsområder behandles i en særskilt sag.\nMindre-/Merforbrug på Teknik- Plan- og Havneudvalget\nBudgetopfølgningen pr. 30. september 2026 viser et samlet forventet mindreforbrug på 41,758\nmio. kr. efter tillægsbevillinger. Ved budgetopfølgningen pr. 31. maj 2026 blev der forventet et\nmindreforbrug på 30,266 mio. kr. Det forventede mindreforbrug er steget med 11,492 mio. kr.\nsiden seneste budgetopfølgning.\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (angivet i 1.000 kr., minus=mindreforbrug)\nOprindeligt\nbudget\n\nKorrigeret\nbudget\n\nForventet\nforbrug pr.\n\nAfvigelse\n\nAnsøgte\ntillægsbev\n(TB)\n\nAfvigelse\nefter TB\n\nTeknik- Planog\nHavneudvalget\n\nI pct.\n\nI alt\n\nDe væsentligste afvigelser, er nærmere beskrevet nedenfor med henblik på at give et\nretvisende billede af, den samlede økonomiske udvikling under Teknik- Plan- og\nHavneudvalgets anlæg.\nMindreforbruget vedrører følgende anlægsprojekter:\n”Anlæg af nye cykelstier og opfølgning på trafiksikkerhedsplan (2026-2029)” (6,500\nmio. kr.). Mindreforbruget skyldes hovedsageligt, at der afventes godkendelse fra\nrelevante myndigheder. Derudover er der i nogle af planlagte projekter givet afslag på de\nansøgte ændringer. Derved trækker de planlagte anlæg ud, idet der skal findes nye\nløsninger og der i mange tilfælde også kræver nye runder med borgerinvolveringer.\n”Anlæg af cykelstier og opfølgning på trafiksikkerhedsplan” (5,520 mio. kr.).\nMindreforbruget skyldes, at anlægsprojekt, der gennemføres i samarbejde med\nVejdirektoratet, som strækker sig over perioden 2025 til 2026 er blevet væsentligt\nbilligere end forventet. Projektet omfatter forbedring af cykelstien på Rolighedsvej der\nforventes færdigt i 4 kvartal 2026. Såfremt de sidste anlæg er færdig ultimo 2026, vil det\nsamlede mindreforbruget fra anlægget til gå kassen i forbindelse med overførelsessagen.\n”Ringe Nord - Vejanlæg” (5,465 mio. kr.), hvor mindreforbruget skyldes, at projektet\nafventer afslutning af udbudsrunden. Når udbuddet er afsluttet, kan anlægsarbejdet\nigangsættes.\n”Landsbypuljen 2014-2026” (4,720 mio. kr.). Mindreforbruget skyldes dels opsparede\nmidler, som ikke er blevet udbetalt og dels tidsforskydninger i aftrækket af midlerne.\nPuljens midler anvendes som medfinansiering til renoveringsprojekter eller nedrivning af\nboliger i Faaborg-Midtfyn Kommunes byer. Der er blevet arbejdet på at justere kriterierne\ni puljen i et forsøg på at få flere ansøgere.\n”Klinten strand - renovering - udskifte spunsvæg” (4,252 mio. kr.). Projektet afventer\nendelig godkendelse i TPHU og kan derfor ikke realiseres før 2027. Midlerne søges\nderfor overført til 2027 i forbindelse med regnskabsafslutningen.\n”Cykelsti-Golfparken, Ringe” (3,343 mio. kr.). Mindreforbruget skyldes at anlæggelsen\naf den nye cykelsti på Rolighedsvej skal være færdig først, for dette anlæg kan\npåbegyndes for at undgå for mange trafikale gener. Derved vil mindreforbruget søges\noverført til 2027.\n”Pulje til byforskønnelse” (2,485 mio. kr.), Puljen er en opsparingspulje til at lave\nområdefornyelse i kommunens landsbyer. Det betyder, at midlerne skal opspares og\n\noverføres over årene.\n”Pulje til fornyelse af bymidter” (2,381 mio. kr.), Mindreforbruget skyldes, at der ikke er\nstor søgning til puljen. Teknik- og Miljøudvalget godkendte den 23. oktober (pkt. 172) sag\nvedr. ændring af retningslinjerne for tildeling af støtte i et forsøg på at få anlægsmidlerne.\nDerudover er der iværksat en øget markedsføringsindsats i 2026.\n”Faaborg Øst - Sikring af veje til nye boligområder” (2,240 mio. kr.). Mindreforbruget\nskyldes et projekt, der udvikles af privat investor, som endnu ikke er i mål med aftaler om\nerhvervelse af arealer, så kommunen afventer med lokalplanlægning, og vejprojektet\nafventer den nye lokalplan.\nØvrige anlæg:\nUd over de ni ovennævnte anlægsprojekter omfatter anlægsområdet under Teknik- Planog Havneudvalget yderligere 13 anlægsprojekter, som samlet set udviser et\nmindreforbrug på 5,548 mio. kr. Mindreforbruget kan primært henføres til\nanlægsprojekter, som enten strækker sig over flere år eller som er udskudt til 2027, som\nfølge af bl.a. forsinkelser i projektering, borgerinvolveringer, myndighedsprocesser samt\nudførelsen af projekterne.\nBudgetændringer\nLigesom på driften er formålet med budgetopfølgningen også at godkende budgetændringer\nvedr. anlægsprojekterne.\nAd. Indstillingspunkt 2 og 3, bedes der om en anlægsbevilling samt frigivelse af midler, afsat i\nbudgetaftalen for 2026, til anlægget ”Landsbypuljen 2014-2026”. Midlerne skal anvendes til\nudbetaling af de disponerede midler til ansøgerne.\nAd. indstillingspunkt 4 tilføres kassen 0,696 mio. kr. fra anlægget ”Landsbypuljen 2014-2026”,\nda de reserverede midler ikke kommer til udbetaling, idet de ansøgte projekter ikke er blevet\nrealiseret.\nTabel 2: Tillægsbevillinger pr. 30. september 2026 (angivet i 1.000 kr.)\n\nTillægsbevillinger: Beskrivelse\n\nBudgetneutrale\ntillægsbevillinger\nI alt\n\n(A10) BO\nLandbypuljen\n\nog\nfrem"
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-13": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-13",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Samspil mellem Politik og Administration",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Udvalget har mulighed for at drøfte samspillet mellem politik og administrationen,\nherunder forventninger til den administrative betjening af udvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget drøfter samspillet med politik og administration, set i\nforhold til udvalgets opgavevaretagelse."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formålet med denne kvartalsvise drøftelse i udvalget af samspillet mellem politikere og\nadministrationen er at skabe de bedst mulige rammer for samarbejdet og for betjeningen af de\npolitiske udvalg.\nPunktet skaber mulighed for, at der i forbindelse med udvalgets almindelige og fortløbende\narbejde kan være dialog om eventuelle misforståelser, og at ønsker til samarbejdet kan få ord\nmed på vejen.\nTil drøftelse på baggrund af udvalgets behandling af sager i det seneste kvartal:\nHar udvalget oplevet klare og tydelige sagsfremstillinger?\nHar der været tydelige indstillinger i sagerne, så det var let gennemskueligt, hvad der\nskulle tages stilling til?\nVar den samlede dagsorden til møderne grupperet tilfredsstillende i forhold til typer af\nindstillinger (anbefaling, beslutning, orientering, efterretning), så det var nemt at\ndisponere udvalgets tid?\nEr det udvalgets opfattelse, at administrationen har handlet på de bestillinger, udvalget\nhar givet?\nHvilke tiltag fra administrationen har især gjort en positiv forskel for udvalgets arbejde?\nHar udvalget konstateret arbejdsmetoder, processer eller andet i administrationen, der\nmed fordel kunne ændres i forhold til det efterfølgende politiske arbejde?"
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-14": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-14",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Udvalgets årsplaner - til opdatering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget tager orientering om\nudvalgets årsplan (bilag 1) til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ændringer siden årsplanen sidst er forelagt Teknik- Plan- og Havneudvalget:\nFølgende introduktioner er udskudt:\nIntroduktion til landzonesager og byfornyelse\nIntroduktion til TinyHouse\nIntroduktion til signaturprojekter, herunder også prøvehandlinger – evt. besøge\nfremtidens forstad i Årslev"
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-15": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-15",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Gensidig orientering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget tager orienteringen til\nefterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-16": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-16",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Orientering fra formanden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-17": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-17",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 17,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Præsentation af indkomne ansøgninger om lokalplanlægning",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Teknik- Plan- og Havneudvalget præsenteres for de indkomne ansøgninger om ny\nplanlægning og status på ventelisten forud for behandlingen af ansøgningerne på TeknikPlan og Havneudvalgets møde d. 15. december."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget tager orienteringen til\nefterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Forvaltningen orienterer udvalget om status på den igangværende planlægning og den\nprioriterede venteliste for udarbejdelse af nye planer.\nUdvalget forelægges de ansøgninger, der er modtaget siden seneste planprioritering d. 9. juni\n2026 (pkt. 79). Forvaltningen har udarbejdet indledende vurderinger for hver ansøgning, som\nsammen med ansøgers projektmateriale og udvalgets kriterier for prioritering af ny\nplanlægning, danner grundlag for udvalgets prioritering på udvalgsmødet i juni.\nDe indledende vurderinger beskriver baggrund, planmæssige forhold, mulige barrierer samt\nforventet indstilling og krav til planlægningen. Der gøres opmærksom på, at de indledende\nvurderinger er resultatet af en indledende analyse og vurdering af de planmæssige forhold.\nHvis planlægningen igangsættes, kan der opstå andre forhold, som de kommende planer skal\ntage hensyn til."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Ingen økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-18": {
+   "id": "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-18",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 18,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
+   "hentet": "2026-11-12T12:58:15.001Z",
+   "titel": "Godkendelse af protokol",
+   "afsnit": [],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-1": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-1",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Tidsplan for mødet er vedlagt til orientering."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-2": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-2",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Skoleudviklingssamtaler og kvalitetsmodel",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forvaltningen orienterer om hovedpointerne fra skoleudviklingssamtalerne gennemført i\nforåret 2026. Forvaltningen orienterer samtidig om kvalitetsmarkørerne for skoleåret\n2025/2026, som udgør et fælles datagrundlag for kvalitet og udvikling på skoleområdet.\nEndelig forelægger forvaltningen en revideret procesplan for de kommende\nskoleudviklingssamtaler til godkendelse, herunder en beskrivelse af den løbende\norientering af udvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Skole- og Dagtilbudsudvalget:\n1. tager orientering om resumé fra skoleudviklingssamtalerne til efterretning,\n2. tager orientering om rapport med kvalitetsmarkørerne til efterretning, og\n3. godkender ny procesplan for skoleudviklingssamtaler."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Resume af skoleudviklingssamtalerne\n\nForvaltningen gennemførte i foråret 2026 skoleudviklingssamtaler med Faaborg-Midtfyn\nKommunes folkeskoler. Skoleudviklingssamtalerne afholdes som et element i Folkeskolens\nKvalitetsprogram. Deltagerne var skoleledelser, chef for Opvækst og Læring, skolebestyrelser\nog tillidsvalgte. Samtalerne havde fokus på skolernes lokale udviklingsarbejde samt fælles\nkommunale indsatser. Et samlet resumé af samtalerne er vedlagt som bilag 1.\nForvaltningen kan på tværs af samtalerne konstatere, at følgende temaer fyldte på de fleste\nskoler:\nFællesskabende Lege- og Læringsmiljøer herunder styrkelse af deltagelsesmuligheder\nfor alle.\nSamarbejde mellem lærere og pædagoger.\nUdvikling af SFO'ernes pædagogiske kvalitet.\nTrivsel, arbejdsmiljø og sygefravær.\nDet fremgår desuden af samtalerne, at mange skoler arbejder med co-teaching, fælles\nforberedelse, deltagelsesvejledere, tværprofessionelt samarbejde og kompetenceudvikling.\nFlere skoler beskriver samtidig, at implementeringen af nye arbejdsformer fortsat kræver tid og\nvedholdenhed.\nForvaltningen vurderer på baggrund af samtalerne, at der fortsat skal være en fælles\n\nkommunal understøttelse af arbejdet med fællesskabende læringsmiljøer samt fokus på\nbekymrende skolefravær. Samtidig med arbejder skolerne også videre med forskellige lokale\nudviklingsindsatser.\nRapport om kvalitetsmarkører\n\nOpvækst- og Læringsudvalget besluttede den 27. november 2025 (pkt. 130) en kvalitetsmodel\nfor skoleområdet. Kvalitetsmodellen har følgende fem hovedemner:\nLøfteevne og progression\nTrivsel og læringsmiljø\nSamarbejde og dannelse\nPædagogisk og ledelsesmæssig kvalitet\nBæredygtighed og struktur\nI kvalitetsmodellen afrapporteres på indikatorer, der relaterer sig til de fem hovedemner.\nIndikatorerne inddrages i skoleudviklingssamtalerne.\nForvaltningen har udarbejdet en rapport med kvalitetsmarkører (bilag 2) for skoleåret\n2025/2026, som vil være med til at danne grundlag for de kommende skoleudviklingssamtaler,\nder afholdes på alle skoler i januar og februar 2027.\nDet fremgår af rapporten, at:\n90,0 % af eleverne opnåede mindst karakteren 02 i dansk og matematik i 2025/2026 mod\n89,0 % på landsplan.\nDet samlede elevfravær udgjorde 7,63 %, mens landsgennemsnittet var 8,04 %.\nAndelen af elever med mere end 10 % fravær udgjorde 21,63 % mod 23,93 % på\nlandsplan.\nDen generelle trivsel lå på 3,5 på en skala fra 1 til 5, mens landsgennemsnittet var 3,6.\nDen samlede medarbejdertrivsel på skoleområdet udgjorde indeks 72,4 i 2025 mod 72,6 i\nSegregeringsgraden blev opgjort til 5,05 %. Rapporten oplyser samtidig, at den reelle\nandel forventes at være lidt højere på grund af usikkerheder i datagrundlaget.\nRapporten er fortrolig, da de nationale testresultater er omfattet af tavshedspligt efter\nfolkeskolelovens § 55 b.\nRevideret procesplan for skoleudviklingssamtaler\n\nPå baggrund af det seneste års arbejde med kvalitetsmodel, indikatorer og\nskoleudviklingssamtaler, foreslår forvaltningen, at procesplanen for de kommende\nskoleudviklingssamtaler revideres (bilag 3). Formålet er at sikre en sammenhængende proces\n\nfra indsamling af kvalitetsdata til gennemførelse af samtalerne samt den løbende politiske\norientering.\nProcesplanen fastlægger blandt andet, at rapporten om kvalitetsmarkørerne udsendes til\nskolerne i slutningen af august og forelægges Skole- og Dagtilbudsudvalget i efteråret. Herefter\ndrøfter skolebestyrelserne kvalitetsmarkørerne med henblik på at identificere fokusområder for\ndet kommende skoleår. Disse indgår som et centralt afsæt for skoleudviklingssamtalerne, der\nafholdes i januar og februar. Udvalget orienteres afslutningsvis om hovedpointerne fra\nskoleudviklingssamtalerne i april."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-3": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-3",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "PISA 2025",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "OECD har offentliggjort resultaterne af PISA 2025, som viser en tilbagegang i danske 15åriges resultater inden for læsning, matematik og naturfag. Resultaterne er de laveste for\nDanmark, siden undersøgelsens start i 2000. Forvaltningen orienterer om\nhovedresultaterne og de nationale tendenser samt lægger op til en drøftelse af, hvilke\nopmærksomhedspunkter udviklingen giver anledning til i Faaborg-Midtfyn Kommune."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Skole- og Dagtilbudsudvalget:\n1. Tager orienteringen om resultaterne fra PISA 2025 til efterretning.\n2. Drøfter, hvilke opmærksomhedspunkter resultaterne giver anledning til i det videre\narbejde med elevernes faglige udvikling i Faaborg-Midtfyn Kommune."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "PISA 2025\n\nOECD har offentliggjort resultaterne af PISA 2025 (bilag 1). Resultaterne viser en markant\ntilbagegang i danske 15-åriges faglige resultater inden for læsning, matematik og naturfag.\nResultaterne de laveste for Danmark siden PISA-undersøgelsens start i 2000.\nDe danske elevers resultater er faldet med:\n29 point i læsning til 460 point.\n19 point i matematik til 471 point.\n16 point i naturfag til 478 point.\nDet fremgår af OECD's vurdering, at 20 PISA-pointsvarer til omtrent et års læring.\nUdvikling i elevgruppen\n\nAndelen af fagligt svage elever er steget markant. I både læsning og matematik er andelen af\nlavt præsterende elever omtrent fordoblet over de seneste ti år. Samtidig er andelen af fagligt\nstærke elever faldet.\nResultaterne viser desuden følgende tendenser:\nDanske elever anvender digitale enheder mere i undervisningen end OECD-\n\ngennemsnittet.\nFlere elever oplever digitale forstyrrelser i undervisningen.\nFravær og pjæk er stigende og ligger over OECD-gennemsnittet samt niveauet i de\nøvrige nordiske lande.\nElevernes nysgerrighed og vedholdenhed i forhold til skolearbejde er faldet og ligger\nunder OECD-gennemsnittet.\nNordisk sammenligning\n\nTilbagegangen ses i en række OECD-lande. Danmark har dog haft det største fald blandt de\nnordiske lande i både læsning og naturfag. Finland og Sverige opnår bedre resultater end\nDanmark i disse fag, mens Danmark fortsat har de stærkeste matematikresultater blandt de\nnordiske lande.\nKL peger på behovet for en analyse af årsagerne til udviklingen, herunder betydningen af\nundervisningskvalitet, elevfravær, digitale medier, fagindhold og lærernes kompetencer.\nRegeringens initiativer\n\nRegeringen tager den faglige udvikling meget alvorligt og har blandt andet igangsat følgende\ninitiativer:\nEt dedikeret projekt fra skolestarten i 2027, der har som klart mål, at der skal ske et\nmarkant fagligt løft i de 100 skoler, hvor eleverne klarer sig dårligst i dansk og matematik.\nEn målrettet indsats for at fastholde og rekruttere flere lærere til folkeskolen.\nLandets skoleelever får nu endnu flere fysiske bøger mellem hænderne. Med en ekstra\nbevilling på 50 millioner kroner er op mod 200.000 flere bøger snart på vej til eleverne.\nBevillingen kommer i forlængelse af aftalen om folkeskolens kvalitetsprogram, hvor der\nallerede er afsat 540 millioner kroner til flere skolebøger i perioden 2025-2034.\nDesuden er der etableret et videnscenter mod skolefravær.\nOpmærksomhedspunkter for Faaborg-Midtfyn Kommune\n\nForvaltningen bemærker, at PISA er en national undersøgelse og ikke kan anvendes til at\nvurdere resultater på kommune- eller skoleniveau. Undersøgelsen giver imidlertid et billede af\nudviklingen i dansk skolevæsen og peger på områder, som kommunerne bør følge tæt.\nI bilag 2 i sag 126. Skoleudviklingssamtaler og kvalitetsmodel (lukket bilag jf. folkeskolelovens\n§ 55 b om fortrolighed vedrørende testresultater) indgår de samlede testresultaterne for\novergangstestene for folkeskolerne i Faaborg-Midtfyn Kommune. Resultaterne viser, at der\ngenerelt er få årgange, der i 2026 ligger over landsgennemsnittet i dansk læsning og\nmatematik. Forvaltningen vurderer på den baggrund, at det må forventes, at de tendenser, som\nses i PISA 2025, også har relevans for eleverne i Faaborg-Midtfyn Kommune.\n\nDrøftelse\n\nForvaltningen anbefaler, at Skole- og Dagtilbudsudvalget drøfter:\nHvilke opmærksomhedspunkter resultaterne fra PISA 2025 giver anledning til i FaaborgMidtfyn Kommune, herunder brugen af digital undervisning, som tages med i kommende\nopfølgning på sagen Brug af digitale enheder i skolerne på Skole- og\nDagtilbudsudvalgets møde 18. august 2026 (pkt. 80).\nHvordan arbejdet med elevernes faglige udvikling kan understøttes yderligere.\nOm udviklingen giver anledning til særligt fokus fx på elevfravær, undervisningsmiljø og\nelevernes motivation for skolearbejde."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-4": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-4",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Elevernes Børnetopmøde 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Orientering om programmet for Elevernes Børnetopmøde 2026 samt information om\nbørne- og ungetopmøder i forbindelse med UNICEF Børnevenlig Kommune."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Skole- og Dagtilbudsudvalget tager foreløbigt program samt\norientering om de indledende og opfølgende aktiviteter i forbindelse med Elevernes\nBørnetopmøde til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den 12. november 2025 godkendte kommunalbestyrelsen ny børne- og ungepolitik, og den 14.\njanuar 2026 godkendte kommunalbestyrelsen samarbejdsaftale med UNICEF Danmark med\nhenblik på at blive certificeret som UNICEF Børnevenlig Kommune. Som en del af\ncertificeringen hos UNICEF skal vi som kommune inddrage børn og unge i udviklingen af\nhandlinger i programmet. Det sker bl.a. under Elevernes Børnetopmøde 2026, hvor Skole- og\nDagtilbudsudvalget er inviteret til at deltage.\nBørnetopmødets formål\n\nElevernes Børnetopmøde er en inspirerende dag om børns rettigheder, demokratiske\ndeltagelse og indflydelse med afsæt i FN's Børnekonvention. Dagen bliver fyldt med dialog,\nfællesskab, leg og kreativitet med elevernes perspektiver i centrum.\nTopmødet er en del af arbejdet med Faaborg-Midtfyn Kommunes certificering som UNICEF\nBørnevenlig Kommune og skal bidrage med børnenes perspektiver til den kommende\nhandleplan.\nForvaltningen har den seneste tid arbejdet med aktiviteter i forbindelse med implementeringen\naf første pejlemærke i børne- og ungepolitikken: \"Fællesskab og medborgerskab er grundsten i\ndet gode børne- og ungeliv\" og har i den sammenhæng fokus på at styrke elevdemokratiet. I\nforlængelse af dette afholdes Faaborg-Midtfyn Kommunes første børne- og ungetopmøde på\nBørnerettighedsdagen den 20. november 2026 kl. 9-13 i Idrætscenter Midtfyn med fokus på\neleverne.\nDeltagere:\nDeltagere er alle elevråd 0.-9. klasse fra de kommunale skoler og de voksne, der har\nindflydelse på børnenes skoleliv.\nFølgende er inviteret: Borgmester, Skole- og Dagtilbudsudvalget, styregruppe for UNICEF\n\nBørnevenlig Kommune, skoleledere, repræsentanter fra skolebestyrelserne,\nelevrådskontaktlærere fra kommunale skoler og friskoler, Handicaprådet og Ungdomsrådet.\nIndtil videre deltager 5 friskoler.\nFælleselevråd får en nøglerolle på topmødet og er med til at planlægge, rammesætte og samle\nop på de temaer, der drøftes på Elevernes Børnetopmøde.\nAktiviteter til understøttelse af meningsfuld demokratisk deltagelse før, under og efter børnetopmødet\n\nForeløbigt program for Elevernes Børnetopmøde er vedhæftet som bilag 1. Programmet er\nforeløbigt, og enkelte programpunkter kan derfor blive justeret eller byttet om af hensyn til\nFælleselevrådets rolle. Det endelige program sendes til deltagerne forud for topmødet.\nAktiviteterne faciliteres med afsæt i de teoretiske modeller, der er centrale i den opkvalificering,\nsom Faaborg-Midtfyn Kommune modtager i forbindelse med certificeringen hos UNICEF\nDanmark. Formålet er at sikre, at eleverne både får mulighed for at udtrykke deres\nperspektiver, bliver hørt og oplever, at deres bidrag indgår i det videre arbejde:\nElevrådene har forud for topmødet indsamlet emner fra eleverne for at sikre bred\nrepræsentation og medbestemmelse i valg af temaer (stemmeseddel udviklet af\nFælleselevråd er vedlagt som bilag 2)\nDer gennemføres kompetenceudviklingsforløb for elevrådskontaktlærere med fokus på\nelevdemokrati, demokratisk deltagelse og rettighedsbaseret inddragelse af elevråd.\nDer gennemføres workshops med Fælleselevråd med fokus på at bruge sin stemme og\nstå stærkt med egen gennemslagskraft for at støtte eleverne i at holde taler på\nbørnetopmødet\nEleverne deltager på topmødet i alderssvarende dialogaktiviteter, gruppearbejde og\nfælles drøftelser, der giver plads til forskellige perspektiver og former for deltagelse.\nTingcentralen faciliterer en kreativ workshop, hvor elevernes perspektiver omsættes til et\nfælles kunstværk, for at imødekomme flere måder at udtrykke sig på. Kunstværket\nfungerer både som dokumentation af elevernes bidrag og som afsæt for fortsat dialog og\ninddragelse i arbejdet med UNICEF Børnevenlig Kommune.\nEn moderator understøtter elevernes deltagelse gennem dagen ved at skabe\nsammenhæng mellem programpunkter, facilitere dialoger og sikre, at elevernes stemmer\ner det bærende omdrejningspunkt.\nTopmødets resultater og anbefalinger samles op og bringes videre til den politiske og\nadministrative behandling, herunder det videre arbejde med UNICEF Børnevenlig\nKommune.\nInput fra Elevernes Børnetopmøde samles desuden i et konkret produkt, der skal styrke den\nvidere udvikling af dialogen mellem Skole- og Dagtilbudsudvalget, Fælleselevrådet og\neventuelt Ungdomsrådet.\nSe evt. teoretiske modeller fra UNICEF: saadan-bruger-du-lundys-model-naar-du-inddrager-\n\nboern-og-unge.pdf og saadan-bruger-du-harts-deltagelsesstige-naar-du-inddrager-boern-ogunge.pdf\nRoller og ansvar\n\nSkole- og Dagtilbudsudvalgets rolle er at lytte til eleverne og indgå i dialog med dem gennem\nde faciliterede programpunkter.\nDet politiske udvalg og skolernes rolle er desuden at forholde sig til elevernes perspektiver,\nidentificere relevante handlemuligheder inden for eget ansvarsområde og give eleverne\ntilbagemelding på, hvordan deres input er blevet anvendt eller bragt videre i organisationen.\nAndre aktiviteter i UNICEF Børnevenlig Kommune\n\nSideløbende med Elevernes Børnetopmøde 2026, og fremover i projektets forløb, bliver der\nudviklet initiativer under Børnevenlig Kommune, der også har betydning for andre målgrupper.\nDvs. børn i dagtilbud, børn og unge i mødet med socialområdet, kultur, fritid og\nlandsbysamfund, herunder et konkret forløb for dagtilbud, der fokuserer på at gøre rettigheder\nog demokratisk deltagelse konkret i børnenes nære hverdag.\nFremtidens børne- og ungetopmøder\n\nBørnetopmødet i Faaborg-Midtfyn Kommune evalueres med henblik på at indsamle erfaringer\nog anbefalinger til kommende børne- og ungetopmøder. Evalueringen skal både belyse,\nhvordan formatet kan videreudvikles, og bidrage til en model, hvor fremtidige topmøder\nmålrettes skiftende børne- og ungegrupper samt forskellige temaer, frem for udelukkende at\nvære elevrettede.\nUdvalget modtager i januar en dynamisk handleplan for implementeringen af børne- og\nungepolitikken, herunder arbejdet med UNICEF Børnevenlig Kommune. Derudover er der\nplanlagt en temadrøftelse om UNICEF Børnevenlig Kommune i kommunalbestyrelsen i marts"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Emne\n\nVærdi\n\nTo workshops Fælleselevråd, sparring og\nmoderatorrolle Børnetopmødet\n\n21.000 plus transport\n\nTingcentralen fire gange undervisning,\nværk og facilitering på børnetopmøde\n\nBustransport, Børnetopmødet\n\n24.063 kr. ekskl. moms\n\nLeje af hal/lokale til Børnetopmøde\n\nCa. 6.000 kr. (inkl. bordopstilling til 300\npersoner og brandplan)\n\nForplejning Børnetopmøde\n\n10.000 kr. (anslået, for pizza)\n\nMaterialer til Børnetopmødet\n\nI alt\n\nUdgifterne afholdes inden for 09 Administration under Skole- og Dagtilbudsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-5": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-5",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Grundskoleelevtal pr. 5. september",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Skole- og Dagtilbudsudvalget orienteres om fordelingen af elever på fri- og folkeskoler i\nFaaborg-Midtfyn Kommune."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Skole- og Dagtilbudsudvalget tager orienteringen om\nfordelingen af elever på fri- og folkeskoler til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Forvaltningen har udarbejdet en oversigt over, hvordan eleverne er fordelt på de enkelte fri- og\nfolkeskoler fra skoleåret 2023/2024 til 2026/2027.\nSkolenavn\nSkoleår\nBrobyskolerne\nBrahesminde Skole\n\nAntal elever\n\nRelative\nudvikling\n\nHeldagsskole Faaborg-Midtfyn\nØhavsskolen\nEspe Skole\nTingagerskolen\n\nNordagerskolen\nTre Ege Skolen\nBroskolen\nCarl Nielsen-Skolen\nElever i folkeskoler\n\nFriskoler*\nBroby Fri- og Efterskole (friskole)\nEnghaveskolen - Faaborg Friskole\nHaastrup Friskole\nHjemly Fri- og Idrætsefterskole\nNordskovens Friskole\nRinge Fri- og Efterskole (grundskolen)\nRinge Kost- og Realskole\nRudme Friskole\nKrarup Friskole, Reventlowskolen\nGislev Friskole\nRyslinge Friskole\nTrunderup Friskole\nFerritslev Friskole\nNr. Lyndelse Friskole\nSdr. Nærå Fri- og Efterskole (Friskolen)\n\nElever i friskoler\n\nElever i alt\n*Antal elever med bopæl i Faaborg-Midtfyn Kommune indskrevet på friskole.\n\nTabellen viser, at antallet af elever i grundskolen fra 2023/2024 til 2026/2027 er faldet med 176\nelever fra 5442 til 5266 elever. Faldet i elevtallet i folkeskolerne er på 351 elever fra 3771 til\n3420. Til sammenligning er elevtallet i friskolerne steget med 175 elever i samme periode.\nAf nedenstående tabel fremgår det, at andelen af elever i folkeskolerne er faldet fra 69,3 % i\nskoleåret 2023/2024 til 64,9 % i skoleåret 2026/2027, hvilket også betyder, at andelen af elever\ni friskoler er steget fra 30,7% i 2023/2024 til 35,1% i 2026/2027.\nFordeling af elever i grundskolerne\nSkoleår\nAndel af elever i folkeskoler\nAndel af elever i friskoler\n\nFordeling i %\n\nOversigten er trukket fra kommunens elevadministrationssystem (TEA), hvor tallene er opgjort\n5. september hvert skoleår."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "De økonomiske konsekvenser fremgår af sag på indeværende udvalgsmøde Kvartalsvis\nbudgetopfølgning 30.9.2026 og risikovurdering for 2027 (pkt. 131)."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-6": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-6",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Kvartalsvis budgetopfølgning 30.9.2026 og risikovurdering for 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Budgetopfølgningen pr. 30. september 2026 viser et forventet mindreforbrug på 12,595 mio. kr. svarende til\n1,4 pct.\nBudgetopfølgningen indeholder denne gang også en risikovurdering af udvalgte områder for Budget 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Skole- og Dagtilbudsudvalget og Økonomi-, Erhvervs- og Turismeudvalget, som\ndel af den samlede budgetopfølgning, anbefaler kommunalbestyrelsen at godkende:\n1. Budgetopfølgningen pr. 30. september 2026 på driften jf. bilag 1\n2. Risikovurderingen for 2027\n3. Budgetneutrale tillægsbevillinger på 1,882 mio. kr. i 2026 jf. bilag 2"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Status for budgetopfølgningen\n\nFormålet med budgetopfølgningen er at udarbejde et skøn over det forventede regnskab for 2026 inden for\nSkole- og Dagtilbudsudvalgets budget.\nBudgetopfølgningen pr. 30. september 2026 viser et forventet mindreforbrug på 12,595 mio. kr. på driften, når\nder korrigeres for tillægsbevillinger. Det er en forbedring i forhold til budgetopfølgningen pr. 31. maj, som viste et\nforventet mindreforbrug på 6,775 mio. kr.\nÆndringen i det forventede resultat skyldes primært reducerede udgifter til statsbidrag til fri- og efterskoler, en\nekstraordinær budgettilførsel vedrørende kompensation for udgifter forbundet med fordrevne fra Ukraine og\nforbedring af det forventede regnskab for de decentrale enheder under Uddannelsesområdet.\nBudgetopfølgning for udvalgets anlægsprojekter behandles i en særskilt sag på samme møde.\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (angivet i 1.000 kr., minus=mindreforbrug)\n\n01 Uddannelsesområdet\n\nRegnskab\n\nKorr.\nbudget\n\nForventet\nregnskab pr.\n\nAfvigelse\n\nAnsøgte\ntillægsbev (TB)\n\nAfvigelse\nefter TB pr.\n\nI pct.\n\n02 Sundhedsområdet (børn/unge)\n\n03 Dagtilbudsområdet\n\n09 Administration\n\nDe tre hovedårsager til afvigelsen inden for Skole- og Dagtilbudsudvalgets budget er:\nMerforbrug vedrørende mellemkommunale elever i folkeskolen: 9,831 mio. kr. (01 Uddannelsesområdet)\n\nForventningen er baseret på de nuværende elevtal, hvor 140 elever fra Faaborg-Midtfyn Kommune går i\nfolkeskole i en anden kommune, og 74 elever fra andre kommuner går i folkeskole i Faaborg-Midtfyn Kommune.\nDet forventede merforbrug i 2026 er forøget med 2,182 mio. kr. sammenlignet med budgetopfølgningen pr. 31.\nmaj.\n\nMed det nuværende antal elever i andre kommuners folkeskoler medfører forskellen mellem den\nmellemkommunale takst og kommunens egne skoletilbud et forventet merforbrug på ca. 0,248 mio. kr. i 2027.\nMindreforbrug vedrørende statsbidrag til fri- og efterskoler: -7,105 mio. kr. (01 Uddannelsesområdet)\n\nMindreforbruget skyldes, at der afregnes for færre elever end budgetlagt. Det forventede mindreforbrug er\nforøget med 5,285 mio. kr. i forhold til budgetopfølgningen pr. 31. maj.\nMerforbrug vedrørende Autismeskoletilbuddet: 2,444 mio. kr. (01 Uddannelsesområdet)\n\nMerforbruget skyldes, at der er indskrevet flere elever i tilbuddet end forudsat i budgettet. Det forventede\nmerforbrug i 2026 er reduceret med 0,469 mio. kr. sammenlignet med budgetopfølgningen pr. 31. maj.\nStatus for risikovurderingen for 2027\n\nSom led i budgetopfølgningen er der foretaget en risikovurdering af udvalgte driftsområder inden for Skole- og\nDagtilbudsudvalgets budgetramme. Vurderingen belyser de væsentligste økonomiske risikoområder i 2027 og\nskal derfor ikke betragtes som en samlet forventning til regnskabsresultatet.\nRisikoområderne er udvalgt på baggrund af forvaltningens vurdering af, hvor der er størst risiko for væsentlige\nbudgetoverskridelser i 2027. På den baggrund er befordringsområdet, afregning af mellemkommunale elever og\ndecentrale enheder, hvor merforbrug forventes i den økonomiske handleplan identificeret som væsentlige\nrisikoområder.\nRisikoanalyse af befordringsområdet\n\nBefordringsområdet vurderes at udgøre et væsentligt økonomisk risikoområde i 2027 som følge af usikkerhed\nom udgifterne i de midlertidige befordringskontrakter og de økonomiske konsekvenser af det kommende udbud\naf elevbefordring. Budgettet er i 2027 tilført 2,690 mio. kr. til forventede prisstigninger.\nRisikoanalyse af folkeskoleelever i og udenfor Faaborg-Midtfyn kommune\n\nElevtallet i folkeskolerne udgør et væsentligt økonomisk risikoområde i 2027. Elevtallet pr. 5. september 2026\nviste 42 elever mere end forudsat ved budgetlægningen. På den baggrund forventes aktuelt et merforbrug på\nI bilag 1 kan læses uddybende om både budgetopfølgningen pr. 30. september 2026 og risikovurderingen for\nTillægsbevillinger\n\nForvaltningen indstiller, at kommunalbestyrelsen godkender en række overførsler mellem bevillinger, som også\nkaldes budgetneutrale tillægsbevillinger. I bilag 2 fremgår et overblik over tillægsbevillingerne.\nTabel 2: Tillægsbevillinger pr. 30. september 2026 (angivet i 1.000 kr.)\nKort beskrivelse\nKassefinansierede\ntillægsbevillinger\nBudgetneutrale\ntillægsbevillinger\n\nUdmøntning af minuspulje vedrørende besparelse på FynBus'\nadministrationsomkostninger\nBudgettilpasninger som følge af opgaveflyt mellem SDU og hhv. Økonomi og\nSÆU\nFællesfinansieret indsatser til understøttelse af AI-konsulent, HRunderstøttelse af tjenstlig samtale samt IT-understøttelse\nBudgettilpasninger i forbindelse med opsplitningen af Fællessekretariatet til tre\nfagsekretariater, pr. 1. januar 2027\nFinansiering af merudgift til Concierge\n\nI alt"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen direkte økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-7": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-7",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Anlæg - Budgetopfølgning 30.09.2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Budgetopfølgningen pr. 30. september 2026 viser et samlet forventet mindreforbrug på 0,686 mio. kr. inden for\nSkole- og Dagtilbudsudvalgets anlægsprojekter. Mindreforbruget skyldes primært aktivitetsforskydninger på flere\nanlægsprojekter, hvor gennemførelsen af projekter er udskudt til 2027. Derudover forventes projektet vedrørende\nudvidelse af kapaciteten i den kommunale tandpleje tilpasset den udvidede målgruppe af 18-21-årige at blive\nafsluttet med et reelt mindreforbrug som følge af lavere anlægsudgifter end forventet samt opnået statsrefusion."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Skole- og Dagtilbudsudvalget og Økonomi-, Erhverv- og Turismeudvalget, som del af den\nsamlede budgetopfølgning, anbefaler kommunalbestyrelsen at godkende den kvartalsvise budgetopfølgning pr. 30.\nseptember 2026 på anlæg."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formålet med budgetopfølgningen er at give et bud på det forventede regnskab for 2026 inden for Skole- og\nDagtilbudsudvalgets anlægsprojekter, samt vurdere om resultatet giver anledning til justeringer eller handlinger for at\nholde budgettet i 2026.\nBudgetopfølgningen for udvalgets driftsområder behandles i en særskilt sag.\nForudsætninger\n\nFølgende anlæg er færdiggjort og afsluttet siden budgetopfølgningen 31.maj 2026:\nTilpasning og modernisering af Øhavsskolen afd. Uglen – Inventar.\nUdvidelsen af kapaciteten i den kommunale tandpleje tilpasset den udvidede målgruppe af 18-21-årige - Inventar.\nMindre-/Merforbrug på Skole- og Dagtilbudsudvalget\n\nBudgetopfølgningen pr. 30. september 2026 viser et samlet forventet mindreforbrug på 0,686 mio. kr. efter\ntillægsbevillinger. Dette er en forbedring i forhold til budgetopfølgningen pr. 31. maj 2026, hvor der blev forventet et\nmerforbrug på 0,639 mio. kr. Det forventede resultat er således forbedret med 1,325 mio. kr. siden seneste\nbudgetopfølgning.\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (angivet i 1.000 kr., minus = mindreforbrug)\n\nOprindeligt\nbudget 2026\nSkole- og\nDagtilbudsudvalget\nI alt\n\nKorrigeret\nbudget 2026\n\nForventet\nforbrug pr.\n\nAfvigelse\n\nAnsøgte\ntillægsbev.\n(TB)\n\nAfvigelse efter\nTB\n\nI pct.\n\nDe væsentligste afvigelser er nærmere beskrevet nedenfor med henblik på at give et retvisende billede af, den samlede\nøkonomiske udvikling under Skole- og Dagtilbudsudvalgets anlæg.\nMindreforbruget vedrører følgende anlægsprojekter:\n\n”Udvidelse af kapaciteten i den kommunale tandpleje tilpasset den udvidede målgruppe af 18-21-årige”\n(1,034 mio. kr.), hvor mindreforbruget kan henføres til, at projektet er realiseret billigere end forventet, samt at\nFaaborg-Midtfyn Kommune har opnået 50 % tilskud fra Sundheds- og Kirkeministeriet af de budgetterede udgifter.\n”Udvidelse af kommunens specialiserede tilbud §83 og §4” (0,349 mio. kr.). Mindreforbruget skyldes, at der\naktuelt afventes en afklaring på finansiering af driftsudgifterne til bussen.\n\n”Etablering af køkkenfacilitet i Lundsbjerg Børnehus” (0,279 mio. kr.), hvor mindreforbruget skyldes, at\netableringen af køkkenfaciliteterne ikke forventes færdiggjort i 2026. Mindreforbruget søges derfor overført til 2027 til\nafholdelse af de resterende udgifter.\n”Opgradering af faglokale til natur-/teknikundervisning på Broskolen, afd. Rolfsted - Inventar” (0,200 mio. kr.)\nhar et mindreforbrug, idet projektets anlægsdel først gennemføres efter uge 42 og forventes færdiggjort ultimo 2026.\nIndkøb af inventar kan derfor først finde sted i 2027, hvorfor mindreforbruget vil blive søgt overført til 2027 ved\noverførelsessagen.\n”Midlertidig pavillon på Tingagerskolen - afledt drift og nedtagelse” (0,100 mio. kr.). Mindreforbruget skyldes, at\nnedtagningen af den midlertidige pavillon på Tingagerskolen er udskudt til en ny vurdering senest i marts 2027. Dette\nsker som følge af opstarten af et nyt skærmet tilbud på tre skoler i Faaborg-Midtfyn Kommune, herunder\nTingagerskolen. Det forventes på nuværende tidspunkt, at elevtallet vil stige, hvilket medfører behov for ekstra\nundervisningslokaler. På den baggrund vil mindreforbruget søges overført til 2027 med overførselssagen.\nMerforbrug vedrører følgende anlægsprojekter:\n\n”Skoleudvidelse og renovering Årslev” (1,2 mio. kr.). I forbindelse med den afsluttende etape af moderniseringen\npå Broskolen blev der konstateret asbest. Merudgiften til håndtering heraf blev indarbejdet i budgetforslaget ”Årslev –\nudvikling af ny bymidte” for 2026 og godkendt som en del af budgetforliget. Som følge af skærpede regler på\nområdet er omkostningerne til nedtagning og håndtering af asbest imidlertid steget, hvilket medfører et fortsat\nmerforbrug på anlægget. Der verserer desuden en tvist mellem entreprenøren og Faaborg-Midtfyn Kommune,\nhvorfor det på nuværende tidspunkt er usikkert, om der vil komme yderligere udgifter. Merforbruget forventes at\nkunne dækkes af midler fra anlægget Årslev-rammen, når det endelige niveau er afklaret."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-8": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-8",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Forberedelse af Skole- og Dagtilbudsudvalgets årsplan for 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Årsplan med indhold på Skole- og Dagtilbudsudvalgets møder og aktiviteter i 2027\nforelægges til politisk drøftelse og godkendelse."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Skole- og Dagtilbudsudvalget:\n1. godkender udvalgets årsplan for 2027.\n2. kommer med input til, hvor udvalgsmøderne ønskes afholdt i 2027."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunalbestyrelsen godkendte den 9. september 2026 (pkt. 203) mødekalender for 2027.\nTil planlægning af det politiske år 2027 har forvaltningen udarbejdet en årsplan med indhold på\nSkole- og Dagtilbudsudvalgets møder i form af budgetproces, tilbagevendende sager,\naktiviteter som dialogmøder og konferencer m.v. (bilag 1).\nMødesteder\n\nUdvalgsmøderne afholdes som oftest på relevante decentrale enheder (skoler, dagtilbud,\ntandplejen, sundhedsplejen mv.), hvor der inden mødet foregår en rundvisning. Ambitionen er\nat komme hele vejen rundt i udvalgets område i løbet af valgperioden.\nSå vidt muligt er det endvidere ambitionen at planlægge mødested for det konkrete\nudvalgsmøde, så det indholdsmæssigt giver mening ift. dagsordenen på mødet, fx ift. en\ntemadrøftelse.\nForvaltningen har planlagt mødesteder for udvalgets første halve år. På mødet modtager\nforvaltningen gerne forslag til yderligere mødesteder for Skole- og Dagtilbudsudvalgets møder i"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen økonomiske konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-10": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-10",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Samspil mellem Politik og Administration",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Udvalget har mulighed for at drøfte samspillet mellem politik og administrationen,\nherunder forventninger til den administrative betjening af udvalget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget drøfter samspillet med politik og administration, set i\nforhold til udvalgets opgavevaretagelse."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formålet med denne kvartalsvise drøftelse i udvalget af samspillet mellem politikere og\nadministrationen er at skabe de bedst mulige rammer for samarbejdet og for betjeningen af de\npolitiske udvalg.\nPunktet skaber mulighed for, at der i forbindelse med udvalgets almindelige og fortløbende\narbejde kan være dialog om eventuelle misforståelser, og at ønsker til samarbejdet kan få ord\nmed på vejen.\nTil drøftelse på baggrund af udvalgets behandling af sager i det seneste kvartal:\nHar udvalget oplevet klare og tydelige sagsfremstillinger?\nHar der været tydelige indstillinger i sagerne, så det var let gennemskueligt, hvad der\nskulle tages stilling til?\nVar den samlede dagsorden til møderne grupperet tilfredsstillende i forhold til typer af\nindstillinger (anbefaling, beslutning, orientering, efterretning), så det var nemt at\ndisponere udvalgets tid?\nEr det udvalgets opfattelse, at administrationen har handlet på de bestillinger, udvalget\nhar givet?\nHvilke tiltag fra administrationen har især gjort en positiv forskel for udvalgets arbejde?\nHar udvalget konstateret arbejdsmetoder, processer eller andet i administrationen, der\nmed fordel kunne ændres i forhold til det efterfølgende politiske arbejde?"
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-11": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-11",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Udvalgets årsplan",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Skole- og Dagtilbudsudvalget tager orienteringen om årsplanen\n2026 til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Årsplanen er et dynamisk dokument, som kan tilrettes og suppleres løbende fra møde til møde\nefter udvalgets ønsker.\nUdvalget kan under punktet komme med særlige ønsker til temadrøftelser, yderligere emner\neller andet som måtte have udvalgets interesse inden for fagområdet."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-12": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-12",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Gensidig orientering",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Kommunikation\n2. Nyt fra dagtilbudsområdet\n3. Nyt fra skoleområdet\n4. Opfølgning på dialogmøde den 27. oktober 2026 mellem Skole- og Dagtilbudsudvalget\nog private, kommunale og selvejende dagtilbud og Dagplejen. Se bilag 4A.\n5. Opfølgning på dialogmøde den 2. november 2026 mellem Skole- og Dagtilbudsudvalget\nog folkeskoler og frie grundskoler. Se bilag 5A.\n6. Nyt forløb i Den kulturelle rygsæk gør skolehistorien levende for de yngste: I Den\nkulturelle rygsæks nye kulturarvsforløb ”Drømmeskolen” blev historien vakt til live, da\nelever i 1.–3. klasse mødte Reventlow på Brahetrolleborg Gods og efterfølgende fik\nmulighed for at skabe deres egen drømmeskole. Elevernes drømmeskoler blev udstillet\npå Gærup Skolemuseum i efterårsferien.\nForløbet bygger på et stærkt samarbejde med lokale og nationale kulturaktører og lærere\nfra lokale skoler, som sætter børnenes viden og stemmer i centrum for idéer til deres\negen 'drømmeskole'."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-13": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-13",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Orientering fra formanden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-14": {
+   "id": "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-14",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
+   "hentet": "2026-11-12T12:58:25.316Z",
+   "titel": "Godkendelse af protokol",
+   "afsnit": [],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-1": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-1",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Rundvisning (kl. 13.30 - 14.00)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Mødet indledes med en rundvisning på Green Care Skolerne, som er et behandlings- og\nspecialundervisningstilbud, der kombinerer folkeskoleundervisning med natur, landbrug og\ndyrehold."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-2": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-2",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Godkendelse af dagsorden (kl. 14.00-14.05)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Dagsordenen forelægges til godkendelse.\nSocial- og Arbejdsmarkedschef Henrik Dons Christensen deltager i mødet som\nledelsesrepræsentant.\nDer er afbud fra Lonnie Braagaard. Suppleant Pia Koch Jørgensen deltager i stedet for."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-3": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-3",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Meddelelser fra formanden (kl. 14.05-14.15)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formanden forelægger aktuelle meddelelser til orientering for Handicaprådets medlemmer,\nherunder:\n1. Høringer i Handicaprådet\nModeller for sammenlægning af børneområder på dagtilbudsområdet (høringsfrist\nden 13. november 2026)\nOpgavevaretagelse i Rusmiddelcenter Faaborg-Midtfyn (19. november 2026)\nTværsektoriel stomiudbud (høringssvar er sendt den 14. oktober 2026)\nSagsbehandlingsfrister for Borgerservice (høringsfrist var den 31. august 2026)\nSagsbehandlingsfrister for Socialområdet og Arbejdsmarked (høringssvar er sendt\nden 18. august 2026)\n2. Møder i Tilgængelighedsudvalget\n\n3. Dialogmøder\nDialogmøde mellem Handicaprådet og Skole- og Dagtilbudsudvalget i juni 2027 (8.\njuni 2027 er foreslået)\nDialogmøde mellem Handicaprådet og Social- og Arbejdsmarkedsudvalget og\nSundheds- og Ældreudvalget i august 2027 (dato følger)\n4. Diverse"
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-4": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-4",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Temadrøftelse om tilgængelighed i Faaborg-Midtfyn Kommune (kl. 14.15-14.45)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I budgetaftalen for 2026-2029 er det aftalt, at de relevante udvalg skal drøfte, hvordan\nindsatsen for borgere med særlige tilgængelighedsbehov bedst prioriteres. Forvaltningen\nforelægger sagen for Handicaprådet, før den behandles i Sundheds- og Ældreudvalget og\nTeknik-, Plan- og Havneudvalget. Handicaprådets anbefalinger indgår i grundlaget for\nudvalgenes behandling."
+    },
+    {
+     "titel": "Baggrund",
+     "tekst": "Det fremgår af budgetaftalen for 2026-2029 (s. 4): “Vi arbejder løbende med forbedring af\nfortove, stier, offentlige toiletter med mere. Nogle borgere har særlige tilgængelighedsbehov.\nDette vil vi gerne imødekomme i videst mulige omfang og de relevante kommende udvalg skal\nderfor drøfte, hvordan vi bedst prioriterer indsatsen.”\nSundheds- og Ældreudvalget godkendte den 22. oktober 2025 (pkt. 113), at tilgængelighed\nskulle behandles i en særskilt sag i 2026. Teknik-, Plan- og Havneudvalget og Sundheds- og\nÆldreudvalget er begge ansvarlige for opfølgningen.\nFor at skabe det bedst mulige grundlag for udvalgenes drøftelse forelægger forvaltningen\nsagen for Handicaprådet og Ældrerådet, før den behandles i de to udvalg. Formålet er, at\nrådenes erfaringer og anbefalinger indgår i udvalgenes prioritering.\nStatus på tilgængelighed i Sundhed og Ældre\n\nNår der bygges nyt eller bygges om i Sundhed og Ældre, inddrages\ntilgængelighedskoordinatoren i By, Land og Kultur. Det sker aktuelt ved udvidelsen og\nombygningen af Tømmergården, hvor der er løbende dialog i projektforløbet.\nMed budget 2025 blev der afsat i alt 0,505 mio. kr. til at gøre sansehaverne på Lykkevalg,\nÅløkkeparken og Prices Have Centeret mere tilgængelige, sikre og bæredygtige for beboere\nog borgere. Omdannelsen blev gennemført i 2025.\nForvaltningen vurderer, at der fortsat er udfordringer med tilgængeligheden på Tingager.\nSygeplejeklinikkerne er for små til at leve op til de arbejdsmiljømæssige krav og til at give plads\ntil fx borgere i kørestol. Undersøgelsesrummene til træning er ligeledes for små, når der er\nbriks, kørestol eller rollator i rummet, og når der skal foretages forflytninger. Der er igangsat en\nundersøgelse af, hvor der kan etableres en ny træningsenhed, samt af mulighederne for\nombygning af sygeplejeklinikkerne. Resultaterne forventes fremlagt i forbindelse med\nforberedelserne til budget 2028.\nDrøftelsens afgrænsning\n\nDrøftelsen handler om prioritering af forbedringer i eksisterende byrum og anlæg. Lovbestemte\n\nkrav til tilgængelighed skal overholdes og indgår derfor ikke i prioriteringen. Det, der kan\nprioriteres, er, hvor Faaborg-Midtfyn Kommune først skal sætte ind med yderligere\nforbedringer.\nForvaltningen vurderer, at det er væsentligt, at tilgængeligheden er sammenhængende. Et\ntilgængeligt offentligt toilet har fx begrænset værdi, hvis adgangsvejen dertil ikke er tilgængelig.\nRefleksionsspørgsmål\n\nForvaltningen foreslår, at Handicaprådets drøftelse tager udgangspunkt i følgende spørgsmål:\nHvor oplever borgere med særlige tilgængelighedsbehov de største barrierer i det\noffentlige rum? Det kan fx være fortove, stier, belægninger, niveauforskelle, ledelinjer,\nbelysning, offentlige toiletter, adgangsforhold og muligheder for at hvile undervejs.\nHvilke tilgængelighedsbehov oplever rådet, at der i dag ikke tages tilstrækkeligt hensyn\ntil? Er der fx særlige udfordringer for kørestolsbrugere, gangbesværede,\nsynshandicappede eller borgere med kognitive udfordringer?\nHvilke konkrete steder eller typer af steder bør prioriteres først, og hvorfor? Der tænkes\nsærligt på steder, der har stor betydning for borgernes hverdag, og på\nsammenhængende tilgængelige forbindelser mellem vigtige funktioner.\nHvilke kriterier bør Faaborg-Midtfyn Kommune lægge størst vægt på, når\ntilgængelighedsforbedringer skal prioriteres? Det kan fx være sikkerhed, selvhjulpenhed,\nligeværdig adgang, antal berørte borgere og muligheden for at deltage i samfundslivet.\nDen videre proces\n\nForvaltningen beder både Handicaprådet og Ældrerådet om at udpege tre indsatsområder, så\nrådenes anbefalinger kan sammenlignes og anvendes i den videre prioritering. Handicaprådets\nog Ældrerådets anbefalinger indgår i kommende sager til Sundheds- og Ældreudvalget og\nTeknik-, Plan- og Havneudvalget.\nTilgængelighedskoordinatoren i By, Land og Kultur deltager under punktet."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-5": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-5",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Orientering om BPA ordning (kl. 15.00-15.30)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Karin Jensen orienterede på Handicaprådets møde den 26. april 2026 om, at Faaborg-Midtfyn\nKommune er med i top 10 over de kommuner, hvor brugen af BPA-ordningen er faldet mest.\nUndersøgelsen er udarbejdet af Muskelsvindfonden i forbindelse med kommunalvalget 2025\n(bilag 1 og 2). Det blev aftalt, at BPA ordningen dagsordenssættes på et handicaprådsmøde i\nefteråret 2026.\nFor borgere med betydelig og varigt nedsat fysisk eller psykisk funktionsevne og behov, der\ngør det nødvendigt, at yde særlig støtte til pleje, overvågning og ledsagelse, kan kommunen\nbevilge tilskud til ansættelse af en eller flere hjælpere - såkaldt borgerstyret personlig\nassistance efter servicelovens § 96. Ordningen forkortes ofte til BPA.\nFormålet med ordningen er, at borgeren på trods af et svært fysisk eller psykisk handicap,\nalligevel skal kunne leve en tilværelse så selvstændigt og normalt som muligt i egen bolig.\nFor at bruge BPA-ordningen, skal borgeren være i stand til at fungere som arbejdsgiver. Hvis\nborgeren overfører tilskuddet til en nærtstående, en virksomhed eller forening, skal borgeren\ndog alene være i stand til at fungere som daglig leder/arbejdsleder for hjælperne.\nBorgeren skal være over 18 år, men der er ikke fastsat en øvre aldersgrænse, så borgeren kan\nfortsætte med denne form for hjælp efter at være fyldt 67 år.\nFaaborg-Midtfyn Kommune kan sammenlignes med Haderslev, Assens, Mariagerfjord og\nSkive kommuner i forhold til indbyggertal, areal og geografiske karakteristika. Sammenholdt\nhermed er Faaborg-Midtfyn Kommune ikke lavt placeret i antal BPA ordninger i fjerde kvartal\nKonstitueret leder af Myndighed Social Voksne deltager under punktet."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-6": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-6",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Planlægning af uddeling af Handicapprisen 2026 (kl. 15.30-15.45)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Handicaprådet drøfter uddeling af Handicapprisen 2026, og udpeger vinder af Handicapprisen\nDatoen for uddeling af Handicapprisen er tirsdag den 1. december 2026 kl. 15.00 - 17.00.\nRådhussalen i Faaborg er booket til arrangementet. Borgmesteren, chefen for Social- og\nArbejdsmarkedsområdet, medlemmerne af Handicaprådet er inviteret. Desuden er invitation\nsendt til de indstillede kandidater og dem som har indstillet. Forvaltningen har ligeledes sørget\nfor bestilling af forplejning, annoncering og udarbejdelse af tale.\nHandicaprådets medlemmer står for aftale med kunstner om skulpturen til\nhandicapprisen, indkøb af blomsterbuketter, bookning af musik samt udarbejdelse af check.\nOversigt over kandidater til Handicapprisen 2026 er vedlagt (bilag 1)."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-7": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-7",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Handicaprådets årsplan for 2027 (kl. 15.45-15.50)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Årsplan for handicaprådets møder og aktiviteter i 2027 blev godkendt på Handicaprådets møde\nden 26. oktober 2026 (punkt 50), jf. vedlagte bilag.\nHandicaprådets møder foregår skiftevis i administrationsbygninger i kommunen og på andre\nlokationer. Alle lokationer skal være tilgængelige for kørestolsbrugere.\nHandicaprådet beslutter, hvilke tre lokationer, som de ønsker at besøge i 2027. Forvaltningen\nhar tidligere stillet følgende forslag:\nBo- og Aktivitetscenter Palleshave (udsat i august 2026)\nTræningsområdet på Plejehjemmet Nørrevænget (ikke tidligere besøgt)\nSundhedshuset i Faaborg (besøgt januar 2024)\nHuset i Faaborg (besøgt marts 2024)\nSTU i Broby (besøgt august 2025)\nHjerneskadecenteret i Hillerslev (besøgt januar 2025)\nBeskyttet beskæftigelse - Montagen i Kværndrup (besøgt marts 2025)\nForeningshuset Guldhøj i Ringe (besøgt august 2025)\nMDvuns Huset i Broby (besøgt oktober 2025)\nPunkter til de kommende møder kan tilføjes årsplanen.\nHandicaprådet beslutter, hvilke temaer rådet gerne vil drøfte i 2027. Forvaltningen har på\nbaggrund af tilbagemeldingen fra Handicaprådets temadag den 24. august 2026 skrevet\nforslag til temaer ind i årsplanen:\nTilgængelighed (drøftes på rådsmødet den 23. november 2026)\nSpecialundervisning og dagbehandlingstilbud, VSU og STU\nIndsatser for mennesker med handicap på arbejdsmarkedet\nDeltagelse i kultur- og fritidsliv for mennesker med handicap\nTilbud om genoptræning og rehabilitering\nAttraktive botilbud, aktivitets- og samværstilbud\nNy handicappolitik"
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-8": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-8",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Orientering fra øvrige medlemmer (kl. 15.50-15.55)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Handicaprådets medlemmer forelægger korte orienteringer for hinanden."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-9": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-9",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Økonomi for Handicaprådet (kl. 15.55-15.57)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På mødet gives en status for Handicaprådets budget og regnskab for 2026.\nHandicaprådets budget i 2026 er 78.277 kr. Forbruget er 43.343 kr. Restbudgettet er 34.884 kr."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-10": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-10",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Opfølgning (kl. 15.57-16.00)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Under punktet er der mulighed for opfølgning på tidligere behandlede dagsordenspunkter og\norienteringer."
+    }
+   ],
+   "bilag": []
+  },
+  "faaborg-midtfyn-2026-11-23-handicapraadet-11": {
+   "id": "faaborg-midtfyn-2026-11-23-handicapraadet-11",
+   "kommune": "Faaborg-Midtfyn",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.fmk.dk/vis?id=43e33b3e-dc73-4fb3-91e1-6d678dd7263d",
+   "hentet": "2026-11-12T12:58:47.385Z",
+   "titel": "Godkendelse af referat (kl. 16.00)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Referatet forelægges til godkendelse hos Handicaprådets medlemmer."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=f89af074-2144-4217-8373-96fbb52570ac": {
    "senest": "2026-09-22",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=ece07e04-0bbc-4f8d-bf70-d5f81921e9c0": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=e52dc2db-574f-4845-a223-a6d41c0a5c90": {
    "senest": "2025-09-27",
@@ -15888,19 +16972,19 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=56d67f01-da3f-4787-b986-cbe3fba2dffb": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=6a1c11fd-da59-4758-8727-7915a13aaafb": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=38359e55-77e4-4a5d-a5b5-916c7351ede2": {
-   "senest": "2026-11-02",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=da8f877b-a1b9-442f-b7a0-afe2ebbdd408": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=c1da8795-7f25-4e42-9256-650a568fe21a": {
    "senest": "2025-09-27",
@@ -15920,11 +17004,11 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=bdd6f889-c9e8-4119-a899-8616179d4511": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=1f880b47-4457-4199-aa31-ab936f469784": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=578ee40a-6547-4eb9-bf52-50a2ef99dbab": {
    "senest": "2025-09-27",
@@ -15936,7 +17020,7 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=8bd2d7b1-43eb-4e67-ba7b-a76cfa84c15b": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=8d4e76a8-1087-4c45-93d5-4bf0fdc3520d": {
    "senest": "2016-12-07",
@@ -15944,15 +17028,15 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=fba2908d-b20c-4c9c-bb13-e9cd5e2880db": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=5ac821d3-0efa-4dbe-9a85-de1a14d10ca1": {
-   "senest": "2026-10-21",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=8e173a78-9033-41d6-8e16-3d628749c5eb": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=9d0e2202-f939-4619-9e75-afc7e9180e75": {
    "senest": "2025-09-27",
@@ -15964,11 +17048,11 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=a3603119-da37-4e20-b424-a1bae3e57aca": {
    "senest": "2026-10-21",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=63c4d2f0-74ba-4a99-ab3f-8871287b9c0e": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=7393a133-b0b6-47ce-8d56-703534a523a0": {
    "senest": "2025-09-27",
@@ -15980,15 +17064,15 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=2eaa9c4b-f6a0-4218-9359-3c78be66cd94": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=484cc56d-07ba-44e8-87dd-ff0b49a1fb7c": {
-   "senest": "2026-11-09",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=0462bba4-2f0a-4d8a-80cf-65f1781a8019": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=29ffe563-1ca3-4046-bce5-bec402c42122": {
    "senest": "2025-09-27",
@@ -16003,8 +17087,8 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=17a39ecc-54e2-4b13-8bbb-6f89182a1938": {
-   "senest": "2026-10-30",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=4d39e6bb-aef0-4c22-b7fa-a492dfac5e1f": {
    "senest": "2025-09-27",
@@ -16012,11 +17096,11 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=e80f9a77-aee0-416a-baee-d9ebed30b08a": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=ee235af0-e817-4114-9971-6f1089d346a9": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=a944508d-c463-48cb-96af-7d807626149c": {
    "senest": "2025-09-27",
@@ -16064,10 +17148,10 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=a3201df3-93ae-43d5-96de-086408e59f3e": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   }
  },
  "parser": 3,
- "opdateret": "2026-11-11T21:44:05.159Z",
+ "opdateret": "2026-11-12T12:58:47.387Z",
  "kommune": "Faaborg-Midtfyn"
 }

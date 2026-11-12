@@ -323,6 +323,14 @@
    "dato": "2026-11-16",
    "punkter": 9,
    "parser": 3
+  },
+  "a4dc9e97-1463-4590-b708-d6bfdf7251a4": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-10",
+   "punkter": 18,
+   "parser": 3
   }
  },
  "sager": {
@@ -7075,15 +7083,15 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Godkendelse af forslag til dagsorden",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Forvaltningen indstiller\nAt forslag til dagsorden godkendes."
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -7093,15 +7101,15 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Efterretningsliste",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Forvaltningen indstiller\nIntet til efterretning."
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning"
     }
    ],
    "bilag": []
@@ -7111,10 +7119,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "3. økonomiopfølgning 2026 - Samlet for Odder Kommune",
    "afsnit": [
     {
@@ -7124,6 +7132,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Indstilles til godkendelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -7133,10 +7145,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Forslag til tillæg nr. 8 til Kommuneplan 2025-2031 - nyt varmeværk i Odder",
    "afsnit": [
     {
@@ -7151,15 +7163,19 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Forslag til Lokalplan nr. 1166 - nyt varmeværk i Odder",
    "afsnit": [
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
-     "tekst": "Indstilles til godkendelse\n\nForslag til Lokalplan nr. 1166 - nyt varmeværk i Odder"
+     "tekst": "Indstilles til godkendelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt\n\nForslag til Lokalplan nr. 1166 - nyt varmeværk i Odder"
     },
     {
      "titel": "Resumé",
@@ -7172,6 +7188,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Indstilles til godkendelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -7181,10 +7201,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Varmeprojektforslag for nyt varmeværk i Odder",
    "afsnit": [
     {
@@ -7198,6 +7218,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Indstilles til godkendelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -7207,10 +7231,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Ændring af fælles betalingsvedtægter for Horsens Vand A/S og Odder Spildevand A/S",
    "afsnit": [
     {
@@ -7220,6 +7244,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Indstilles til godkendelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -7229,10 +7257,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Beslutning om det videre arbejde med at udmønte den strategisk-fysiske udviklingsplan for Tunø",
    "afsnit": [
     {
@@ -7242,6 +7270,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Udvalget for Økonomi og Erhverv indstiller forslag til det videre arbejde med udmøntning af\nden strategisk-fysiske udviklingsplan for Tunø samt kommissorium og forretningsorden for\nUdvalget for strategisk-fysisk udvikling af Tunø og indstiller Lars Bluhme (A) og Nikolaj\nEnggård Fogh (C) til at repræsentere Udvalget for Økonomi og Erhverv. Udvalget indstiller\nendvidere, at udvalgets funktionsperiode følger projektperioden."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Venstre har fremsendt følgende ændringsforslag:\n\"At Ø-udvalget bevares, og funktionsperioden følger kommunalbestyrelsens valgperiode.\nAt kommunalbestyrelsen udpeger 4 politikere til Ø-udvalget.\nAt Tunø udpeger 4 medlemmer til Ø-udvalget.\nAt 1 tovholder fra hver gruppe under SFU'en deltager efter behov uden stemmeret.\nAt der fortsat er forvaltningsmæssig understøttelse af Ø-udvalget.\"\n\nÆndringsforslaget sendes til afstemning. For ændringsforslaget stemmer 5 (V) og Henriette\nToftegaard (C). Imod stemmer 14 (A, C, F og Ø).\nÆndringsforslaget nedstemt med 14 stemmer mod 5.\nHerefter stemmes der om ændringsforslag fra Enhedslisten, der foreslår, at udvalgets\nfunktionsperiode følger Kommunalbestyrelsens.\nÆndringsforslaget sendes til afstemning. For ændringsforslaget stemmer 14 (A, C, F og\nØ). Imod stemmer 5 (V) og Henriette Toftegaard (C).\nÆndringsforslaget godkendt med 14 stemmer mod 5.\nHerefter stemmes der om indstillingen fra Udvalget for Økonomi og Erhverv med justeringen af\nfunktionsperioden, så den følger Kommunalbestyrelsens valgperiode jævnfør det godkendte\nændringsforslag fra Enhedslisten.\nFor indstillingen stemmer 14 (A, C, F og Ø). Imod stemmer 5 (V) og Henriette Toftegaard (C).\nIndstillingen godkendt med 14 mod 5 stemmer."
     }
    ],
    "bilag": []
@@ -7251,10 +7283,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Anlægsbevilling til Kulturama - forsøgsordning med frie bymidter, jf. Budget 2026",
    "afsnit": [
     {
@@ -7272,6 +7304,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Indstilles til godkendelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -7281,10 +7317,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Anlægsbevilling til Bygningsfornyelse Rosensgade 10, jf. Budget 2026",
    "afsnit": [
     {
@@ -7302,6 +7338,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Indstilles til godkendelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -7311,10 +7351,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Igangsætning - Revision af Klimaplaner",
    "afsnit": [
     {
@@ -7328,6 +7368,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Udvalget for Økonomi og Erhverv indstiller, at arbejdet med revision og recertificering\naf klimaplanerne gennemføres i dialog med Klimaalliancen og Concito og forankres i Udvalget\nfor Klima, Natur og Planlægning med inddragelse af de resterende faste udvalg.\nUdvalget for Økonomi og Erhverv indstiller endvidere, at processen for arbejdet sendes til\npolitisk godkendelse inden igangsætning af arbejdet med klimahandlingsplanen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen fra Udvalget for Økonomi og Erhverv godkendt."
     }
    ],
    "bilag": []
@@ -7337,10 +7381,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Godkendelse af Rammeaftale 2027-28 på det sociale område",
    "afsnit": [
     {
@@ -7358,6 +7402,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Indstilles til godkendelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     }
    ],
    "bilag": []
@@ -7367,10 +7415,10 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Godkendelse af ændrede vedtægter for Handicaprådet",
    "afsnit": [
     {
@@ -7384,6 +7432,10 @@
     {
      "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
      "tekst": "Et flertal (A og C) i Udvalget for Økonomi og Erhverv indstiller bemærkningen fra Udvalget for\nSocial, Handicap og Beskæftigelse til godkendelse.\nTheis Rubinke Sørensen (F) stemmer imod med følgende mindretalsudtalelse: \"Jeg stemmer\nimod, da jeg jeg ikke mener Handicaprådet selv skal påtage sig referentopgaven, hvis roboref\nikke er en gangbar løsning\"."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Socialistisk Folkeparti har fremsendt følgende ændringsforslag:\n\"Odder Kommune stiller administrativ understøttelse og mødelokaler til rådighed. Kommunen\nhar herunder ansvaret for, at der udarbejdes referater af Handicaprådets møder. Det skal\nafprøves om referatføringen kan ske ved hjælp af en digital løsning som eksempelvis Roboref,\nsåfremt denne fungerer tilfredsstillende. Hvis rådet eller kommunen ikke vurderer, at en sådan\nløsning fungerer, skal forvaltningen fortsat stille referent til rådighed til rådets møder.\"\nÆndringsforslaget sendes til afstemning. For ændringsforslaget stemmer 2 (F). Imod\nstemmer 17 (A, C, V og Ø).\nÆndringsforslaget nedstemt med stemmerne 2 mod 17.\n\nHerefter sendes indstillingen fra Udvalget for Social, Handicap og Beskæftigelse til afstemning.\nFor indstillingen stemmer 17 (A, C, V og Ø). Imod stemmer 2 (F).\nIndstillingen godkendt med 17 stemmer mod 2."
     }
    ],
    "bilag": []
@@ -7393,15 +7445,19 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Anmodning om midlertidig fritagelse fra kommunalbestyrelseshvervet",
    "afsnit": [
     {
      "titel": "Resumé",
      "tekst": "Kommunalbestyrelsen skal tage stilling til anmodning fra Louise Lingren Louring (V) om\nfritagelse for sine kommunale hverv grundet barsel, samt udpege 1. stedfortræder på den\nkandidatliste, hvorpå Louise Lingren Louring (V) er valgt.\n\nBaggrund for sagen\nKommunalbestyrelsesmedlem Louise Lingren Louring anmoder om orlov for sine kommunale\nhverv grundet barsel fra den 24. januar 2027\nDet fremgår af styrelseslovens § 15, stk. 2, at borgmesteren indkalder stedfortræderen, når \"...\net medlem vil være forhindret i at varetage sine kommunale hverv i en forventet periode af\nmindst 1 måned på grund af sin helbredstilstand, graviditet, barsel eller adoption, varetagelse\naf andet offentligt hverv, forretninger eller lignende ...\".\n1. stedfortræderen på den kandidatliste som Louise Lingren Louring er valgt på er Hans\nHammann, Søkrogen 118, 8300 Odder.\nSagen forelægges til Kommunalbestyrelsens beslutning, idet Kommunalbestyrelsen i henhold\ntil § 15, stk. 4, i kommunestyrelsesloven skal træffe beslutning om, hvorvidt betingelserne for\nstedfortræderens indkaldelse er til stede.\n\nForvaltningens bemærkninger\nBetingelserne for indkaldelse af stedfortræder er tilstede i det fraværsgrunden graviditet er\ngyldig jf. § 15, stk. 2.\n\nSagens gang\nKommunalbestyrelsen den 10. november 2026\n\nForvaltningen indstiller\nAt Kommunalbestyrelsen godkender anmodning fra Louise Lingren Louring om\nfritagelse for sine kommunale hverv grundet barsel.\nAt 1. stedfortræderen på kandidatlisten, Hans Hammann, Søkrogen 118, 8300 Odder,\nindkaldes som stedfortræder for Louise Lingren Louring.\nAt Venstre meddeler fordelingen af Louise Lingren Lourings øvrige poster i\norlovsperioden."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt med den præcisering, at der anmodes om orlov fra d. 10. januar 2027."
     }
    ],
    "bilag": []
@@ -7411,15 +7467,19 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 17,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Borgerforslag om styrket kontrol og bedre alternativer til spildevandsslam",
    "afsnit": [
     {
      "titel": "Resumé",
      "tekst": "Kommunalbestyrelsen tager stilling til et borgerforslag om styrket kontrol og bedre alternativer\nfor spildevandsslam, herunder beslutter det eventuelle videre forløb.\n\nBaggrund for sagen\nBorgere i Odder Kommune, som er over 15 år, har mulighed for at stille et borgerforslag, som\nman ønsker, at Kommunalbestyrelsen forholder sig til. Et forslag skal have minimum 358\nstemmer fra borgere i kommunen for at komme til behandling i Kommunalbestyrelsen. Det\nsvarer til halvdelen af det antal stemmer, det krævede for at få et mandat i Odder Byråd ved\nkommunalvalget i 2017. Når et forslag har opnået det nødvendige antal stemmer, fremsætter\nBorgmesteren forslaget til behandling i Kommunalbestyrelsen. Kommunalbestyrelsen tager\nstilling til forslaget, herunder om forslaget skal kvalificeres via en behandling i et fagudvalg.\nNedenstående borgerforslag er stillet af Jacob Holthe Bro og har i oktober opnået det krævede\nantal stemmetal for at blive behandlet i Kommunalbestyrelsen. Forslaget omhandler, at\nvedtage en samlet handleplan for en sikrere håndtering af spildevandsslam i Odder Kommune.\nForslaget har følgende ordlyd:\n\"Styrket kontrol og bedre alternativer til spildevandsslam\nJeg foreslår, at Kommunalbestyrelsen vedtager en samlet handleplan for en sikrere håndtering\naf spildevandsslam i Odder Kommune. Handleplanen skal både styrke kommunens kontrol\nmed udbringningen og sikre, at kommunen arbejder aktivt for behandlingsformer, der kan\nmindske behovet for at sprede spildevandsslam direkte på landbrugsjord.\nHandleplanen skal som minimum indeholde følgende: Grundigere risikovurdering: Kommunen\nskal anvende den gældende kortlægning og den nyeste relevante faglige viden om\nindvindingsoplande, BNBO, områder med særlige drikkevandsinteresser, grundvand, beskyttet\nnatur, søer og vandløb. Terræn, hældning, erosion, ekstremregn, overfladisk afstrømning og\nkendte eller mulige markdræn skal indgå i vurderingen.\nDet skal samtidig fremgå tydeligt, hvornår usikkerhed eller konkret risiko fører til besigtigelse,\nprøvetagning, påbud eller forbud. Tilsyn, mens udbringningen foregår: Kommunen skal så vidt\nmuligt kende det præcise tidspunkt for udbringningen og tilrettelægge risikobaserede\nstikprøvekontroller, mens arbejdet foregår.\nTilsynet skal blandt andet kontrollere: Om slammet svarer til deklarationerne. Om de anmeldte\nmarker og mængder overholdes. Om de gældende afstandskrav overholdes. Om slammet\nnedbringes inden for den gældende frist. Om udbringningen medfører væsentlige lugtgener\neller risiko for afstrømning og forurening.\nKommunen skal have en klar beredskabs- og kontaktprocedure, hvis udbringningen foregår\nuden for normal åbningstid. Kontrollen må ikke være afhængig af, at borgere opdager og\ndokumenterer mulige overtrædelser. Særlige hensyn til weekender og naboer: Kommunen skal\nundersøge sine juridiske muligheder for at forhindre, at spildevandsslam udbringes fra fredag\n\neftermiddag til mandag morgen - navnlig tæt på boliger, landsbyer og byområder. Hvis\nkommunen ikke har hjemmel til et generelt forbud, skal den arbejde for frivillige aftaler med\nlodsejere, slamproducenter og entreprenører om at undgå disse tidspunkter.\nKommunalbestyrelsen skal samtidig tage stilling til, om den vil arbejde for en ændring af de\nnationale regler. Formålet er både at begrænse lugtgener og sikre, at kommunen reelt har\nmulighed for at føre tilsyn, mens udbringningen og nedbringningen foregår. Åbenhed:\nAnmeldelser, analyser, kort, forventede og faktisk leverede mængder, tidspunkter og\nkommunens miljøfaglige vurderinger skal gøres offentligt tilgængelige, så langt reglerne om\npersonoplysninger og fortrolige oplysninger tillader det. Kommunen skal samtidig offentliggøre\nen fast procedure for håndtering af klager og mistanke om ulovlig udbringning. Bedre\nalternativer: Odder Kommune skal i samarbejde med forsyningsselskaber, andre kommuner og\nrelevante faglige miljøer arbejde aktivt for at mindske behovet for direkte udbringning af\nspildevandsslam i den nuværende form. Kommunen skal undersøge mulighederne for blandt\nandet: Pyrolyse af spildevandsslam. Forbrænding med efterfølgende genvinding af fosfor fra\nasken.\nTeknologier til fosforgenvinding som den type, den danske virksomhed Clean Matter arbejder\nmed. Andre metoder, der kan genanvende fosfor og energi uden samtidig at sprede\nproblematiske stoffer direkte på landbrugsjord. Metoderne skal vurderes ud fra dokumenteret\neffekt på blandt andet PFAS, medicinrester, mikroplast, tungmetaller, klima, energiforbrug,\nressourcegenvinding og økonomi.\nHvis det er teknisk og økonomisk muligt, skal kommunen søge deltagelse i et konkret\nudviklings- eller demonstrationsprojekt. Baggrund: Slamudbringningen ved Rodstenseje i\naugust 2026 viste, at de eksisterende regler ikke nødvendigvis er tilstrækkelige, hvis der ikke\nføres kontrol, mens arbejdet foregår.\nOdder Kommune har selv oplyst, at slam blev spredt ulovligt i weekenden inden for den\ngældende afstand, og at slammet ikke blev nedbragt inden for seks timer. Kommunen blev\nførst opmærksom på forholdene efter henvendelser fra borgere. Den aktuelle sag har også\nrejst spørgsmål om forskellen i grundvandskortlægningen, manglende viden om markdræn,\nafstrømning efter ekstremregn og kommunens muligheder for at reagere hurtigt og tage\nprøver.\nBorgerforslaget handler ikke om at foregribe kommunens endelige afgørelse i den konkrete\nsag. Formålet er at lære af forløbet og sikre, at kontrollen fremover bliver mere forebyggende,\ngennemsigtig og effektiv. Genanvendelse af fosfor er vigtig, men den bør ske med den bedst\ntilgængelige teknologi og uden unødvendig risiko for drikkevand, natur og naboer.\"\n\nForvaltningens bemærkninger\nDer henvises til Udvalget for Klima, Natur og Planlægnings behandling af sagen om\nspildevandsslam d. 16. september 2026, hvor flere af de forhold, som borgerforslaget\nomhandler, allerede er belyst.\n\nSagens gang\nKommunalbestyrelsen den 10. november 2026\n\nKommunalbestyrelsen den 10. november 2026\n\nForvaltningen indstiller\nAt Kommunalbestyrelsen drøfter og tager stilling til borgerforslaget om styrket kontrol\nog bedre alternativer til spildevandsslam, herunder beslutter det eventuelle videre\nforløb."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen beslutter at oversende borgerforslaget til Udvalget for Klima, Natur og\nPlanlægning med henblik på kvalificering og fornyet behandling i Kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -7429,15 +7489,19 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 18,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Borgerforslag om en lokalplansændring for et grønt område i Vestbyen",
    "afsnit": [
     {
      "titel": "Resumé",
      "tekst": "Kommunalbestyrelsen tager stilling til et borgerforslag om en lokalplansændring for et grønt\nområde i Vestbyen, herunder beslutter det eventuelle videre forløb.\n\nBaggrund for sagen\nBorgere i Odder Kommune, som er over 15 år, har mulighed for at stille et borgerforslag, som\nman ønsker, at Kommunalbestyrelsen forholder sig til. Et forslag skal have minimum 358\nstemmer fra borgere i kommunen for at komme til behandling i Kommunalbestyrelsen. Det\nsvarer til halvdelen af det antal stemmer, det krævede for at få et mandat i Odder Byråd ved\nkommunalvalget i 2017. Når et forslag har opnået det nødvendige antal stemmer, fremsætter\nBorgmesteren forslaget til behandling i Kommunalbestyrelsen. Kommunalbestyrelsen tager\nstilling til forslaget, herunder om forslaget skal kvalificeres via en behandling i et fagudvalg.\nNedenstående borgerforslag er stillet af Mogens Lund Nielsen og har i oktober opnået det\nkrævede antal stemmetal for at blive behandlet i Kommunalbestyrelsen. Forslaget omhandler,\nat foretage en lokalplansændring for det grønne område i Vestbyen.\nForslaget har følgende ordlyd:\n\"Lokalplansændring for grønt område i Vestbyen\nVi anmoder Odder Kommune om at foretage en lokalplansændring for det grønne område med\nregnvandssøen mellem Vestermarken, Overskov, Høghus og Vesterhåb, så arealet ændres\nfra dagligvareformål til et bynært, rekreativt grønt område i sammenhæng med den\neksisterende regnvandssø.\nProjektet ønskes udviklet med inddragelse af lokale kræfter. Arealet henligger efter mere end\n10 år stadig som en ufærdig skamplet for området, og har vist sig uinteressant for\ndagligvarebutikkerne grundet dens lille størrelse og dens afsides beliggenhed. Formålet er at\netablere et rekreativt og parklignende område i Vestbyen, som kan fungere som et\nsamlingspunkt for alle beboere i Vestbyen, unge som ældre, samt som udflugtsmål for\nområdets skoler og institutioner.\"\n\nForvaltningens bemærkninger\nEn ændring af arealets anvendelse vil kræve en ny lokalplan og vil have betydning for de\nfremtidige dispositionsmuligheder for det kommunalt ejede areal.\n\nSagens gang\nKommunalbestyrelsen den 10. november 2026\n\nForvaltningen indstiller\nAt Kommunalbestyrelsen drøfter og tager stilling til borgerforslaget om en\nlokalplansændring for et grønt område i Vestbyen, herunder beslutter det eventuelle\n\nvidere forløb."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen beslutter at oversende borgerforslaget til Udvalget for Klima, Natur og\nPlanlægning med henblik på kvalificering og fornyet behandling i Kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -7447,15 +7511,15 @@
    "kommune": "Odder",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 22,
-   "kilde": "https://dagsordener.odder.dk/vis?id=b45ea0e7-4b16-4d4c-861c-cbcb29fd1a01",
-   "hentet": "2026-11-04T21:02:02.285Z",
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
    "titel": "Godkendelse af beslutningsprotokol",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Forvaltningen indstiller\nJf. Kommunestyrelseslovens §13 skal mødets beslutningsprotokol godkendes.\nHvert tilstedeværende medlem af Kommunalbestyrelsen skal senest ved mødets afslutning\ngodkende dette punkt digitalt."
+     "titel": "Beslutning",
+     "tekst": "Ingen fraværende.\nMødet sluttede kl. 20.23.\nGodkendt."
     }
    ],
    "bilag": []
@@ -7747,6 +7811,32 @@
     }
    ],
    "bilag": []
+  },
+  "odder-2026-11-10-kommunalbestyrelsen-20": {
+   "id": "odder-2026-11-10-kommunalbestyrelsen-20",
+   "kommune": "Odder",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-10",
+   "type": "referat",
+   "nr": 20,
+   "kilde": "https://dagsordener.odder.dk/vis?id=a4dc9e97-1463-4590-b708-d6bfdf7251a4",
+   "hentet": "2026-11-12T12:58:49.725Z",
+   "titel": "Forligsaftale mellem Foreningen Pakhuset og Odder Kommune",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsen orienteres om forligsaftale mellem Odder Kommune og Foreningen\nPakhuset. Kommunalbestyrelsen godkender at afholde udgifter ved et kassetræk til\ngennemførelse af forligsaftale samt indkøb af inventar til opretholdelse af aktiviteter i\nPakhuset.\n\nBaggrund for sagen\nOdder Kommune opsagde i juni 2025 driftsoverenskomsten med Foreningen Pakhuset med\nvirkning fra d. 1. juli 2026. Opsigelsen skete i henhold til driftsoverenskomstens bestemmelse\nom, at begge parter kan opsige overenskomsten med 12 måneders varsel. Opsigelsen skete\nmed et politisk opdrag om at sætte en ny retning for et åbent og tilgængeligt kulturhus i\nPakhuset.\nForvaltning fik efter opsigelsen til opgave at udarbejde en ny driftsmodel for Pakhuset,\nherunder en model for samarbejde med en aktør. Forvaltningen opstartede denne proces med\nForeningen Pakhuset for at afsøge, hvordan foreningen kunne se sig selv i de nye politiske\nønsker for Pakhuset og samarbejdet herom. Foreningen Pakhuset kunne ikke se sig selv i\nudkastet til en ny samarbejdsaftale og trak sig fra processen i efteråret 2025.\nForvaltningen inviterede herefter åbent ind for andre aktører med afsæt i udkast til en ny\nsamarbejdsaftale. Her ønskede Foreningen Pakhuset igen at deltage i dialogen. I april 2026\nsluttede dialogen uden enighed om en ny samarbejdsaftale, da Foreningen Pakhuset trak sig\nfra processen.\nProcessen med Foreningen Pakhuset har udover dialog om fremtidigt samarbejde også haft et\nspor omkring tvisten om ejerskab af inventar i Pakhuset samt Oddergrisen og togvognene på\nmatriklen.\nForvaltningen har forsøgt at finde en løsningen på tvisten sammen med Foreningen Pakhuset\nuden at nå til enighed.\nSiden august 2026 har advokatfirmaet Bech Bruun understøttet forvaltningen i arbejdet på en\nmulig løsning. Grundet procesrisiko, har anbefalinger fra den juridiske rådgiver været at\narbejde mod indgåelse af et forlig. Dette for at sikre en forsvarlig økonomi og med et ønske om\nikke at ende i en ressourcetung retssag\n\nForvaltningens bemærkninger\nD. 20. oktober 2026 har Foreningen Pakhuset og Odder Kommune underskrevet en\nforligsaftale, der har til formål at afslutte tvisten i mindelighed. Forligsaftalen samt bilag hertil er\nvedlagt sagen.\nJf. forligsaftalen er der efter gennemførelse af aftalen inventar, der vil mangle i Pakhuset for at\n\nkunne opretholde aktiviteter. En del af det nødvendige inventar har Foreningen Pakhuset\nønsket at sælge til Odder Kommune til priser sat i rimelighed efter inventarets brugte stand.\nDette omfatter blandt andet borde, stole, service, togsæder i caféen, klaver samt alt inventar og\nkøkkenudstyr forbundet med Café Pakhuset.\nInventarliste er vedlagt som bilag 1. Bilaget vil blive opdateret med købspriser og eftersendt,\nligesom bilag 2 til forligsaftalen med en vurderingsrapport eftersendes i fald at det er aktuelt.\nForeningen Pakhuset har derudover en række inventar, som foreningen ikke ønsker at sælge,\nog som er nødvendig for opretholdelse af aktiviteter. Dette omfatter blandt andet projektor,\nlærred, lyd- og lysudstyr samt scene. Det forventes at blive indkøbt snarest, således at\naktiviteter kan fortsætte som planlagt.\nØkonomi forbundet med forligsaftalen for Odder Kommune\n\nForligsbeløb\n\nRådgiver og juridisk bistand, Bech Bruun\n\nKøb af inventar fra Foreningen Pakhuset\n\nKøb af nyt inventar\n\nI alt søges om\n\nSagens gang\nUdvalget for Økonomi og Erhverv den 2. november 2026\nKommunalbestyrelsen den 10. november 2026\n\nForvaltningen indstiller\nAt Kommunalbestyrelsen tager orienteringen til efterretning.\nAt Kommunalbestyrelsen bevilger 649.000 kr. ved et kassetræk til gennemførelse af\nforliget samt indkøb af inventar til opretholdelse af aktiviteter og drift af Café Pakhuset."
+    },
+    {
+     "titel": "Behandling i Udvalget for Økonomi og Erhverv 2. november 2026",
+     "tekst": "Udvalget for Økonomi og Erhverv indstiller, at udgifter til forligsaftalen afholdes med 140 t.kr.\n\nUdvalget for Økonomi og Erhverv indstiller, at udgifter til forligsaftalen afholdes med 140 t.kr.\npå Udvalget for Kultur, Fritid og Fællesskabers budget og 139 t.kr på Udvalget for Økonomi og\nErhvervs budget.\nUdvalget for Økonomi og Erhverv indstiller endvidere, at udgifter til advokatbistand på 120 t.kr.\nafholdes på konsulentkontoen og at udgifterne til indkøb af inventar på 250 t.kr. afholdes på\nbygningsvedligeholdskontoen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -7756,7 +7846,7 @@
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=b808d0ec-805c-4171-bcc1-207db0ebbbb6": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=88792a96-805f-47b4-b812-dfaaf59b931d": {
    "senest": "2017-12-11",
@@ -7784,47 +7874,47 @@
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=1de9c1e5-b3e0-485c-99bd-c3155fa15e4b": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=2f096c9f-34e1-47c8-a786-419e82c2c207": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=2aa4286d-decb-456a-9b05-f8f49b9a9c0b": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=ba4823d0-fdb6-4c68-a659-95837af62bc5": {
    "senest": "2025-11-27",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=6fefcb89-1254-42a4-84c4-59cd0395de21": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=01a84f9d-992c-4e1e-9da1-6cc4e873c4cd": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=a68343c3-60bb-4088-8604-6ddb30b31f3d": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=1f56d14e-d188-42ba-afcd-e53c7cb67cd5": {
    "senest": "2025-11-27",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=84a3c25d-09ab-4c26-bb76-060677339b04": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=82ab52e3-556e-4f8f-a28a-ccf8ea674a3f": {
    "senest": "2025-11-27",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=c3ae1633-672a-48d0-9a47-f5c315aa40b7": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=75169114-42c2-48b6-a3fe-fe880f2a702d": {
    "senest": "2025-09-27",
@@ -7836,7 +7926,7 @@
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=2e3e365e-213a-4b14-b3f1-8fa6927cf79d": {
    "senest": "2026-10-09",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=d70a0a4e-1a6f-450d-b4cd-8c102ee4c4eb": {
    "senest": "2025-09-27",
@@ -7892,35 +7982,35 @@
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=d5e9b526-1332-4fb1-b1a7-a4800590f736": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=65f6e1e2-cf37-4fc9-9355-0037c33c5599": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=bc575598-fb58-4750-89b3-9150215cc6d2": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=8b2aff4f-fb86-403d-b74a-d18f403be26f": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=2096b078-f850-448d-852e-c4aa341dfa20": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=115841b0-be31-4984-914b-00277b9dded7": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=11888c11-39a9-4b0a-9359-9d89ec67cd14": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=859e9012-73a5-437f-81bf-214ef0459a7a": {
-   "senest": "2026-11-04",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=64641e62-fcfc-453e-8e5d-657868678b6c": {
    "senest": "2021-06-18",
@@ -7928,15 +8018,15 @@
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=261c7a8f-9940-41fe-a392-db4308424f3c": {
    "senest": "2026-09-21",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=50bb886c-cacd-4426-b333-a1e05f78d681": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=2360cfb3-a0c2-41d3-8493-598f1c0b13e5": {
    "senest": "2026-11-09",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=3843d8be-ecd1-4524-9da4-952c38a9b7e6": {
    "senest": "2025-02-10",
@@ -7956,7 +8046,7 @@
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=7523d0b3-a142-4620-a81d-8aebb7e17054": {
    "senest": "2026-09-01",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odder.dk/Sitemap/ForCommittee?committeeId=08487450-459c-4272-ac23-aa940b07453a": {
    "senest": "2017-12-07",
@@ -7980,6 +8070,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-11T21:44:25.338Z",
+ "opdateret": "2026-11-12T12:58:49.726Z",
  "kommune": "Odder"
 }

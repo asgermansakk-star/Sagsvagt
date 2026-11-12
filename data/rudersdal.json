@@ -559,6 +559,62 @@
    "dato": "2026-11-11",
    "punkter": 7,
    "parser": 3
+  },
+  "38684175-acc5-43fc-9d0e-28df24be1a2b": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-11-11",
+   "punkter": 7,
+   "parser": 3
+  },
+  "fab627f4-8730-403c-b446-c6fe94de6957": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Social- og Beskæftigelsesudvalget",
+   "dato": "2026-11-11",
+   "punkter": 3,
+   "parser": 3
+  },
+  "d0d1908e-6bd1-4a1e-a695-7e2e0307b489": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Social- og Beskæftigelsesudvalget",
+   "dato": "2026-11-11",
+   "punkter": 11,
+   "parser": 3
+  },
+  "d8de8c7c-fb0e-484d-822a-4f583e818a77": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Kultur- og Fritidsudvalget",
+   "dato": "2026-11-11",
+   "punkter": 5,
+   "parser": 3
+  },
+  "12727a40-04af-48a9-9d96-82c33179ac7b": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-11",
+   "punkter": 3,
+   "parser": 3
+  },
+  "3c9c2b8c-6d24-4269-b695-a211dec794f2": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-11",
+   "punkter": 11,
+   "parser": 3
+  },
+  "162f48e3-0d7a-4aa9-af1f-51645158ca37": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Arkitektur- og Byplanudvalget",
+   "dato": "2026-11-11",
+   "punkter": 7,
+   "parser": 3
   }
  },
  "sager": {
@@ -11921,12 +11977,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen blev godkendt"
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-boerne-og-skoleudvalget-2": {
@@ -11934,10 +11995,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Ny vision for skolerne i Rudersdal - genoptagelse efter høring",
    "afsnit": [
     {
@@ -11951,6 +12012,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget og Kommunalbestyrelsen til drøftelse og\ngodkendelse.\nDirektionen foreslår, at den fælles vision for skolerne drøftes og godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "BØRNE- OG SKOLEUDVALGET indstiller Direktionens forslag tiltrådt"
     }
    ],
    "bilag": []
@@ -11960,10 +12025,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Etablering af profilklasser med fokus på iværksætteri",
    "afsnit": [
     {
@@ -11977,6 +12042,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget til godkendelse.\nDirektionen foreslår, at muligheden for at drive iværksætterklasser udbydes blandt\nfolkeskolerne i Rudersdal Kommune, med forventet opstart i forbindelse med skoleåret"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "BØRNE- OG SKOLEUDVALGET tiltræder Direktionens forslag med den tilføjelse, at\nforvaltningen forelægger en indstilling om beslutning til Børne- og Skoleudvalget om\nendelig fordeling og placering af iværksætterklasser sammen med en fremlæggelse af\nalle de indkomne ansøgninger"
     }
    ],
    "bilag": []
@@ -11986,10 +12055,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Resultater fra folkeskolens afgangsprøver 2025-26",
    "afsnit": [
     {
@@ -12003,6 +12072,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionen foreslår, at sagen forelægges til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "BØRNE- OG SKOLEUDVALGET tiltræder Direktionens forslag"
     }
    ],
    "bilag": []
@@ -12012,10 +12085,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Afrunding af erhvervsstrategisk tema 2025 og 2026",
    "afsnit": [
     {
@@ -12033,6 +12106,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionen foreslår at sagen forelægges Erhvervsrådet, Børne- og Skoleudvalget og\nØkonomiudvalget til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "BØRNE- OG SKOLEUDVALGET tiltræder Direktionens forslag med den tilføjelse, at\nudvalget ønsker en opfølgning på virksomhedssamarbejdet for børn og unge på\nudvalgsmødet i august."
     }
    ],
    "bilag": []
@@ -12042,10 +12119,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Takster på Dagtilbudsområdet 2027",
    "afsnit": [
     {
@@ -12059,6 +12136,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionen foreslår, at sagen forelægges til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "BØRNE- OG SKOLEUDVALGET tiltræder Direktionens forslag"
     }
    ],
    "bilag": []
@@ -12068,10 +12149,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Navngivning af kommunale daginstitutioner",
    "afsnit": [
     {
@@ -12085,6 +12166,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil beslutning.\nDirektionen foreslår indstillet:\n1. at kompetencen til godkendelse af navngivning og navneændringer af kommunale\ndaginstitutioner delegeres til Børne- og Skoleudvalget.\n2. at fremtidig navngivning og navneændringer af kommunale daginstitutioner følger de\nbeskrevne principper.\n3. at beslutningen indarbejdes i kommunens delegationsplan."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "BØRNE- OG SKOLEUDVALGET indstiller Direktionens forslag tiltrådt"
     }
    ],
    "bilag": []
@@ -12094,10 +12179,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Børne- og Skoleudvalget",
    "afsnit": [
     {
@@ -12111,6 +12196,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil politisk godkendelse.\nDirektionen foreslår indstillet at, politikområde Dagtilbud ydes en positiv tillægsbevilling\npå 0,480 mio. kr., finansieret af kassen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "BØRNE- OG SKOLEUDVALGET indstiller Direktionens forslag tiltrådt"
     }
    ],
    "bilag": []
@@ -12120,10 +12209,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Børne- og Skoleudvalget",
    "afsnit": [
     {
@@ -12137,6 +12226,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil politisk godkendelse.\nDirektionen foreslår indstillet,\n1. at politikområde Undervisning ydes en negativ tillægsbevilling på 1,054 mio. kr. i\n2026 og 1,973 mio. kr. i 2027 og frem,\n2. at politikområde Dagtilbud ydes en negativ tillægsbevilling på 122 t.kr. i 2026 og\nfrem."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "BØRNE- OG SKOLEUDVALGET indstiller Direktionens forslag tiltrådt"
     }
    ],
    "bilag": []
@@ -12146,15 +12239,19 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
      "titel": "Resumé",
      "tekst": "Forvaltningen orienterer om:\nOrientering om balance/kapacitetsudfordringer for E-sporet på Skovlyskolen\nOrientering om oprettelse af STEM-klasser på Trørødskolen (se bilag 1)\nOmrådeledelse på dagtilbud - orientering om personalesituation\nOpgørelse af minimumsnormeringer på daginstitutionsniveau fra 2027\nOpfølgning på to avisartikler om dagtilbud om sygefravær og personaleomsætning\n(se bilag 2)\nØnske fra Dronninggaard Børnehus om buskørsel i perioden med genhusning i\nbyggeperioden på Kulturcenter Mariehøj"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået"
     }
    ],
    "bilag": []
@@ -12164,12 +12261,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Børne- og Skoleudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=4fd0f5e1-1a47-434d-9d1c-a164c47859ef",
-   "hentet": "2026-11-05T21:12:52.888Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3c9c2b8c-6d24-4269-b695-a211dec794f2",
+   "hentet": "2026-11-12T12:53:54.381Z",
    "titel": "Beslutningsprotokol og underskriftsark",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået"
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-arkitektur-og-byplanudvalget-1": {
@@ -12177,12 +12279,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Arkitektur- og Byplanudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=793effe3-0932-46bc-93fe-d34e9b44450c",
-   "hentet": "2026-11-07T18:54:39.445Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=162f48e3-0d7a-4aa9-af1f-51645158ca37",
+   "hentet": "2026-11-12T12:54:14.862Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev godkendt."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-arkitektur-og-byplanudvalget-2": {
@@ -12190,10 +12297,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Arkitektur- og Byplanudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=793effe3-0932-46bc-93fe-d34e9b44450c",
-   "hentet": "2026-11-07T18:54:39.445Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=162f48e3-0d7a-4aa9-af1f-51645158ca37",
+   "hentet": "2026-11-12T12:54:14.862Z",
    "titel": "Lokalplan for Hotel Marina-grunden – Igangsættende redegørelse",
    "afsnit": [
     {
@@ -12207,6 +12314,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Arkitektur- og Byplanudvalget til beslutning.\nDirektionen foreslår,\n\n1. at arbejdet med en ny lokalplan for Hotel Marina-grunden igangsættes med afsæt i\nstartredegørelsen og principperne a) - h) i sagsfremstillingen, og\n2. at der som led i lokalplanprocessen afholdes en tidlig borgerinddragelse primo 2027."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "ARKITEKTUR- OG BYPLANUDVALGET tiltræder Direktionens forslag med den\nbemærkning, at udvalget ønsker flere parkeringspladser på grunden, så\nkommuneplanens p-norm i højere grad tilgodeses samt, at forvaltningen undersøger\nmuligheden for, at der fortsat kan være dagligvaredrift i området.\nForinden bortfaldt ændringsforslag fremsat af Venstre: Udvalget tiltræder Direktionens\nforslag med den bemærkning, at der sikres en fortsat dagligvaredrift på marinagrunden\nmed fire stemmer imod Dorte Nørbo (F), Nicola Emily Larsen (C), Morten Jarlbæk\nPedersen (C) og Freja Lockenwitz (B) og tre stemmer for Jens Kloppenborg-Skrumsager\n(V), Per Carøe (V) og Lars Høyer Holmqvist (I)."
     }
    ],
    "bilag": []
@@ -12216,10 +12327,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Arkitektur- og Byplanudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=793effe3-0932-46bc-93fe-d34e9b44450c",
-   "hentet": "2026-11-07T18:54:39.445Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=162f48e3-0d7a-4aa9-af1f-51645158ca37",
+   "hentet": "2026-11-12T12:54:14.862Z",
    "titel": "Temadagsorden - Status og indsatser i den strategiske byudvikling i Vedbæk - Orientering",
    "afsnit": [
     {
@@ -12233,6 +12344,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Arkitektur- og Byplanudvalget får sagen til orientering om status på den strategiske\nbyudvikling i Vedbæk og arbejdet med realisering af Vedbæk Visionsplan.\nDirektionen foreslår, at sagen forelægges til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "ARKITEKTUR- OG BYPLANUDVALGET tiltræder Direktionens forslag."
     }
    ],
    "bilag": []
@@ -12242,10 +12357,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Arkitektur- og Byplanudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=793effe3-0932-46bc-93fe-d34e9b44450c",
-   "hentet": "2026-11-07T18:54:39.445Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=162f48e3-0d7a-4aa9-af1f-51645158ca37",
+   "hentet": "2026-11-12T12:54:14.862Z",
    "titel": "Trafikal løsning for Holtehal 3 - Anlægsbevilling",
    "afsnit": [
     {
@@ -12263,6 +12378,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Arkitektur- og Byplanudvalget, Økonomiudvalget og\nKommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet, at der fremrykkes et rådighedsbeløb på 400.000 kr. med\ntilhørende anlægsbevilling fra 2027 til 2026 fra projekt 152201, Holtehal 3 – trafikale\nløsninger, til finansiering af rådgiverydelser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "ARKITEKTUR- OG BYPLANUDVALGET indstiller Direktionens forslag tiltrådt."
     }
    ],
    "bilag": []
@@ -12272,10 +12391,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Arkitektur- og Byplanudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=793effe3-0932-46bc-93fe-d34e9b44450c",
-   "hentet": "2026-11-07T18:54:39.445Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=162f48e3-0d7a-4aa9-af1f-51645158ca37",
+   "hentet": "2026-11-12T12:54:14.862Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Arkitektur- og Byplanudvalget",
    "afsnit": [
     {
@@ -12289,6 +12408,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Arkitektur- og Byplanudvalget, Økonomiudvalget og\nKommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet, at resultatet af budgetopfølgningen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "ARKITEKTUR- OG BYPLANUDVALGET indstiller Direktionens forslag tiltrådt."
     }
    ],
    "bilag": []
@@ -12298,15 +12421,19 @@
    "kommune": "Rudersdal",
    "udvalg": "Arkitektur- og Byplanudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=793effe3-0932-46bc-93fe-d34e9b44450c",
-   "hentet": "2026-11-07T18:54:39.445Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=162f48e3-0d7a-4aa9-af1f-51645158ca37",
+   "hentet": "2026-11-12T12:54:14.862Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
      "titel": "Resumé",
-     "tekst": "Områdechef Jane Riskjær orienterer om:\n\nByggesagsstatistik for oktober 2026 (præsentation vedlagt).\nStatus på større planer (præsentation vedlagt).\nOrientering om ansøgning om tilladelse til telemast ved Brådebæk (præsentation\nvedlagt).\nOrientering om ansøgning om dispensation til ejendomsmægler i ​Holte Midtpunkt 1\n(præsentation vedlagt).\nOrientering om vejprojekt, Øverødvej 79 - Regulering af ulovlig parkering\n(præsentation vedlagt).​\nOrientering om renovering af bro over Mølleåen - Status (præsentation vedlagt).\nOrientering om renovering af vejbro Trørødvej over Maglemoserenden - Status\n(præsentation vedlagt).\nOrientering om trafiksikkerhedsprojekt - T-kryds, Vejlesøvej/Dronninggårds Allé\n(præsentation vedlagt).​"
+     "tekst": "Områdechef Jane Riskjær orienterer om:\n\nByggesagsstatistik for oktober 2026 (præsentation vedlagt).\nStatus på større planer (præsentation vedlagt).\nOrientering om ansøgning om tilladelse til telemast ved Brådebæk (præsentation\nvedlagt).\nOrientering om ansøgning om dispensation til ejendomsmægler i ​Holte Midtpunkt 1\n(præsentation vedlagt).\nOrientering om vejprojekt, Øverødvej 79 - Regulering af ulovlig parkering\n(præsentation vedlagt).​\nOrientering om renovering af bro over Mølleåen - Status (præsentation vedlagt).\nOrientering om renovering af vejbro Trørødvej over Maglemoserenden - Status\n(præsentation vedlagt).\nOrientering om trafiksikkerhedsprojekt - T-kryds, Vejlesøvej/Dronninggårds Allé\n(præsentation vedlagt).\nAlma- Håndtering af varelevering ​(præsentation vedlagt)."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået."
     }
    ],
    "bilag": []
@@ -12316,12 +12443,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Arkitektur- og Byplanudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=793effe3-0932-46bc-93fe-d34e9b44450c",
-   "hentet": "2026-11-07T18:54:39.445Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=162f48e3-0d7a-4aa9-af1f-51645158ca37",
+   "hentet": "2026-11-12T12:54:14.862Z",
    "titel": "Beslutningsprotokol og underskriftsark",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-udvalget-for-aeldre-omsorg-og-sundhed-1": {
@@ -12331,8 +12463,8 @@
    "dato": "2026-11-11",
    "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=8ab62908-9ecc-4bb4-8a90-e672aad8b82e",
-   "hentet": "2026-11-11T21:39:40.078Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=38684175-acc5-43fc-9d0e-28df24be1a2b",
+   "hentet": "2026-11-12T12:52:52.861Z",
    "titel": "Godkendelse af dagsordenen",
    "afsnit": [
     {
@@ -12349,8 +12481,8 @@
    "dato": "2026-11-11",
    "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=8ab62908-9ecc-4bb4-8a90-e672aad8b82e",
-   "hentet": "2026-11-11T21:39:40.078Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=38684175-acc5-43fc-9d0e-28df24be1a2b",
+   "hentet": "2026-11-12T12:52:52.861Z",
    "titel": "Sundhedsreformen – status på opgaveoverdragelse 1. januar 2027",
    "afsnit": [
     {
@@ -12383,8 +12515,8 @@
    "dato": "2026-11-11",
    "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=8ab62908-9ecc-4bb4-8a90-e672aad8b82e",
-   "hentet": "2026-11-11T21:39:40.078Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=38684175-acc5-43fc-9d0e-28df24be1a2b",
+   "hentet": "2026-11-12T12:52:52.861Z",
    "titel": "Besøg på Rehabiliteringscenter Hegnsgården",
    "afsnit": [
     {
@@ -12413,8 +12545,8 @@
    "dato": "2026-11-11",
    "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=8ab62908-9ecc-4bb4-8a90-e672aad8b82e",
-   "hentet": "2026-11-11T21:39:40.078Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=38684175-acc5-43fc-9d0e-28df24be1a2b",
+   "hentet": "2026-11-12T12:52:52.861Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Udvalget for Ældre, Omsorg og Sundhed",
    "afsnit": [
     {
@@ -12443,8 +12575,8 @@
    "dato": "2026-11-11",
    "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=8ab62908-9ecc-4bb4-8a90-e672aad8b82e",
-   "hentet": "2026-11-11T21:39:40.078Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=38684175-acc5-43fc-9d0e-28df24be1a2b",
+   "hentet": "2026-11-12T12:52:52.861Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Udvalget for Ældre, Omsorg og Sundhed",
    "afsnit": [
     {
@@ -12473,8 +12605,8 @@
    "dato": "2026-11-11",
    "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=8ab62908-9ecc-4bb4-8a90-e672aad8b82e",
-   "hentet": "2026-11-11T21:39:40.078Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=38684175-acc5-43fc-9d0e-28df24be1a2b",
+   "hentet": "2026-11-12T12:52:52.861Z",
    "titel": "Kontinuitet i hjemmeplejen",
    "afsnit": [
     {
@@ -12503,8 +12635,8 @@
    "dato": "2026-11-11",
    "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=8ab62908-9ecc-4bb4-8a90-e672aad8b82e",
-   "hentet": "2026-11-11T21:39:40.078Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=38684175-acc5-43fc-9d0e-28df24be1a2b",
+   "hentet": "2026-11-12T12:52:52.861Z",
    "titel": "Beslutningsprotokol og underskriftsark",
    "afsnit": [
     {
@@ -12519,12 +12651,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen blev godkendt"
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-social-og-beskaeftigelsesudvalget-2": {
@@ -12532,10 +12669,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Besøg i Social Myndighed og Rådgivning",
    "afsnit": [
     {
@@ -12549,6 +12686,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionen foreslår, at sagen forelægges til orientering"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået"
     }
    ],
    "bilag": []
@@ -12558,10 +12699,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Rammeaftale 2027-2028 for det højt specialiserede socialområde og specialundervisning",
    "afsnit": [
     {
@@ -12575,6 +12716,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Social- og Beskæftigelsesudvalget, Børne- og Skoleudvalget,\nØkonomiudvalget og Kommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet, at Rammeaftalen 2027-2028 for det specialiserede\nsocialområde og specialundervisning godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "SOCIAL- OG BESKÆFTIGELSESUDVALGET indstiller Direktionens forslag tiltrådt"
     }
    ],
    "bilag": []
@@ -12584,10 +12729,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Valg af midlertidig næstformand",
    "afsnit": [
     {
@@ -12601,6 +12746,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Social- og Beskæftigelsesudvalget til beslutning.\nDirektionen foreslår, at Social- og Beskæftigelsesudvalget vælger en midlertidig\nnæstformand blandt udvalgets medlemmer, til at varetage næstformandens opgaver i\nChristoffer Emil Jexens fraværsperiode."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "SOCIAL- OG BESKÆFTIGELSESUDVALGET tiltræder Direktionens forslag og valgte\nLars Gissel som næstformand"
     }
    ],
    "bilag": []
@@ -12610,10 +12759,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Opstart af Gefion 2",
    "afsnit": [
     {
@@ -12627,6 +12776,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Social- og Beskæftigelsesudvalget, Økonomiudvalget og\nKommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet,\n1. at der gives bevilling til drift af seks nye pladser på i alt 18,6 mio. kr. i 2027 og 19,3\nmio. kr. i 2028 og fremefter\n2. at budgettet til takstindtægter forøges med 18,6 mio. kr. i 2027 og 19,3 mio. kr. i 2028\nog fremefter som følge af de seks nye pladser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "SOCIAL- OG BESKÆFTIGELSESUDVALGET indstiller Direktionens forslag tiltrådt"
     }
    ],
    "bilag": []
@@ -12636,10 +12789,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Status - overblik over indsatser i Familiehuset og eksternt køb af indsatser",
    "afsnit": [
     {
@@ -12653,6 +12806,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionen foreslår, at sagen forelægges til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "SOCIAL- OG BESKÆFTIGELSESUDVALGET tiltræder Direktionens forslag"
     }
    ],
    "bilag": []
@@ -12662,10 +12819,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Status på beskæftigelsesindsatsen",
    "afsnit": [
     {
@@ -12674,11 +12831,15 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Social- og Beskæftigelsesudvalget forelægges hvert kvartal tal for udviklingen i\nbeskæftigelsesindsatsen. Udviklingen i Rudersdal vises for en 12 måneders periode og\nsammenlignes med udviklingen i udvalgte kommuner og på landsplan. Datakilden er\nJobindsats, som er Styrelsen for Arbejdsmarked og Rekrutterings statistikbank.\nSamlet set er antallet af borgere på offentlig forsørgelse steget med 3,9 pct. i det seneste\når. Ser man på udviklingen i de enkelte målgrupper fra juni 2025 til juni 2026, er der variation i\nudviklingen.\nDer har i perioden været en stigning i følgende målgrupper:\nDagpengemodtagere (8,5 pct.)\n\nKontanthjælpsmodtagere (7,0 pct.)\nModtagere af førtidspension (7,0 pct.)\nAntallet af borgere, der er ansat i fleksjob eller modtager ledighedsydelse (3,7 pct.)\n\nDer har i perioden været et fald i følgende målgrupper:\nSygedagpengemodtagere (8,5 pct.)\nBorgere i jobafklaringsforløb (6,2 pct.). Med beskæftigelsesreformen afskaffes\njobafklaringsforløb den 1. januar 2027.\n\nMed hensyn til udviklingen i antallet af dagpengemodtagere, er det især en stigende ledighed\nblandt medlemmerne af Akademikernes a-kasse, A-kassen Ase og Ledernes a-kasse, der er\nårsag til stigningen. Forvaltningen oplever en tendens til, at flere siger op pga. stigende\narbejdspres eller stress, og flere ledige har en lønsikring på 6 til 12 måneder, der kan udskyde\nen tilbagevenden til ordinært job. Desuden har det formentlig en betydning, at Novo Nordisk\nover en periode har afskediget ca. 7.000 ansatte, hvilket har en afsmittende effekt på mange\nbrancher.\nStigningen i antallet af kontanthjælpsmodtagere skyldes primært en øget tilgang af ukrainske\nflygtninge.\nStigningen i førtidspensioner hænger blandt andet sammen med ændringen i\nressourceforløbsydelserne, hvor et større antal borgere fik tilkendt førtidspension efter flere års\nafprøvning i ressourceforløb.\nStatus for fordrevne personer fra Ukraine\nI september 2026 er 218 fordrevne personer fra Ukraine i Rudersdal i beskæftigelse, hvilket\nsvarer til 83 pct. af de jobparate og 63 pct. af de 16-66-årige.\nBeskæftigelsesindsatsen for ukrainerne består af vejledning og opkvalificering,\nvirksomhedspraktikker og ansættelse med løntilskud. Dertil er integrationsgrunduddannelsen\n(IGU) meget anvendt ift. de unge fra Ukraine.\nBeskæftigelse har tre virksomhedskonsulenter, der laver opsøgende arbejde og direkte\nplaceringer af borgere. Der er tilbud om en jobcafe én time hver dag, hvor der løbende\ntilknyttes borgere mhp. at hjælpe med deres jobsøgning og ansøgningsmateriale. Langt de\nfleste ukrainere er selvhjulpne i forhold til at søge arbejde på Digital Jobhelp, hvor de kan få\nhjælp til jobsøgning på ukrainsk.\nForvaltningen oplever jævnligt, at ukrainerne kommer i beskæftigelse ved anvist arbejde eller\nved at de selv finder arbejde, ofte via netværk, og fx indenfor brancher som hoteller, byggeri\neller dagligvarebutikker.\nForvaltningen vurderer yderligere, at der er en stigning i antallet af ukrainere, der udover\n\narbejdsløshed også er ramt af andre vanskeligheder, der kan gøre, at de har behov for fx\nmisbrugsbehandling eller socialpædagogisk støtte, hvilket kræver samarbejde om målgruppen\npå tværs af kommunens enheder.\nDer henvises til vedlagte bilag om udviklingen i beskæftigelsesindsatsen."
+     "tekst": "Social- og Beskæftigelsesudvalget forelægges hvert kvartal tal for udviklingen i\nbeskæftigelsesindsatsen. Udviklingen i Rudersdal vises for en 12 måneders periode og\nsammenlignes med udviklingen i udvalgte kommuner og på landsplan. Datakilden er\nJobindsats, som er Styrelsen for Arbejdsmarked og Rekrutterings statistikbank.\nSamlet set er antallet af borgere på offentlig forsørgelse steget med 3,9 pct. i det seneste\når. Ser man på udviklingen i de enkelte målgrupper fra juni 2025 til juni 2026, er der variation i\nudviklingen.\nDer har i perioden været en stigning i følgende målgrupper:\nDagpengemodtagere (8,5 pct.)\n\nKontanthjælpsmodtagere (7,0 pct.)\nModtagere af førtidspension (7,0 pct.)\nAntallet af borgere, der er ansat i fleksjob eller modtager ledighedsydelse (3,7 pct.)\n\nDer har i perioden været et fald i følgende målgrupper:\nSygedagpengemodtagere (8,5 pct.)\nBorgere i jobafklaringsforløb (6,2 pct.). Med beskæftigelsesreformen afskaffes\njobafklaringsforløb den 1. januar 2027.\n\nMed hensyn til udviklingen i antallet af dagpengemodtagere, er det især en stigende ledighed\nblandt medlemmerne af Akademikernes a-kasse, A-kassen Ase og Ledernes a-kasse, der er\nårsag til stigningen. Forvaltningen oplever en tendens til, at flere siger op pga. stigende\narbejdspres eller stress, og flere ledige har en lønsikring på 6 til 12 måneder, der kan udskyde\nen tilbagevenden til ordinært job. Desuden har det formentlig en betydning, at Novo Nordisk\nover en periode har afskediget ca. 7.000 ansatte, hvilket har en afsmittende effekt på mange\nbrancher.\nStigningen i antallet af kontanthjælpsmodtagere skyldes primært en øget tilgang af ukrainske\nflygtninge.\nStigningen i førtidspensioner hænger blandt andet sammen med ændringen i\nressourceforløbsydelserne, hvor et større antal borgere fik tilkendt førtidspension efter flere års\nafprøvning i ressourceforløb.\nStatus for fordrevne personer fra Ukraine\nI september 2026 er 218 fordrevne personer fra Ukraine i Rudersdal i beskæftigelse, hvilket\nsvarer til 83 pct. af de jobparate og 63 pct. af de 16-66-årige.\nBeskæftigelsesindsatsen for ukrainerne består af vejledning og opkvalificering,\nvirksomhedspraktikker og ansættelse med løntilskud. Dertil er integrationsgrunduddannelsen\n(IGU) meget anvendt ift. de unge fra Ukraine.\nBeskæftigelse har tre virksomhedskonsulenter, der laver opsøgende arbejde og direkte\nplaceringer af borgere. Der er tilbud om en jobcafe én time hver dag, hvor der løbende\ntilknyttes borgere mhp. at hjælpe med deres jobsøgning og ansøgningsmateriale. Langt de\nfleste ukrainere er selvhjulpne i forhold til at søge arbejde på Digital Jobhelp, hvor de kan få\nhjælp til jobsøgning på ukrainsk.\nForvaltningen oplever jævnligt, at ukrainerne kommer i beskæftigelse ved anvist arbejde eller\nved at de selv finder arbejde, ofte via netværk, og fx indenfor brancher som hoteller, byggeri\neller dagligvarebutikker.\n\nForvaltningen vurderer yderligere, at der er en stigning i antallet af ukrainere, der udover\narbejdsløshed også er ramt af andre vanskeligheder, der kan gøre, at de har behov for fx\nmisbrugsbehandling eller socialpædagogisk støtte, hvilket kræver samarbejde om målgruppen\npå tværs af kommunens enheder.\nDer henvises til vedlagte bilag om udviklingen i beskæftigelsesindsatsen."
     },
     {
      "titel": "Indstilling",
      "tekst": "Direktionen foreslår, at sagen forelægges til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "SOCIAL- OG BESKÆFTIGELSESUDVALGET tiltræder Direktionens forslag"
     }
    ],
    "bilag": []
@@ -12688,10 +12849,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Social- og Beskæftigelsesudvalget",
    "afsnit": [
     {
@@ -12705,6 +12866,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Social- og Beskæftigelsesudvalget, Økonomiudvalget og\nKommunalbestyrelsen til godkendelse.\nDirektion foreslår indstillet at,\n1. Politikområde Beskæftigelse ydes en positiv tillægsbevilling på 6,922 mio. kr.,\nfinansieret af kassebeholdningen\n2. Politikområde børn med særlige behov ydes en positiv tillægsbevilling på 27,298 mio.\nkr., finansieret af kassebeholdningen\n3. Politikområde Voksne med særlige behov ydes en positiv tillægsbevilling på 10,002\n\nmio. kr., finansieret af kassebeholdningen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "SOCIAL- OG BESKÆFTIGELSESUDVALGET indstiller Direktionens forslag tiltrådt"
     }
    ],
    "bilag": []
@@ -12714,10 +12879,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Social- og Beskæftigelsesudvalget",
    "afsnit": [
     {
@@ -12731,6 +12896,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Social- og Beskæftigelsesudvalget, Økonomiudvalget og\nKommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet,\n1. at politikområde Børn med særlige behov ydes en positiv tillægsbevilling på 0,444\nmio. kr. i 2026 og 0,498 mio. kr. i 2027 og frem,\n2. at politikområde Børn med særlige behov ydes en indtægtsbevilling på 0,795 mio. kr.\ni 2026 og 1,028 mio. kr. i 2027, samt tilsvarende en udgiftsbevilling på 0,795 mio. kr. i"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "SOCIAL- OG BESKÆFTIGELSESUDVALGET indstiller Direktionens forslag tiltrådt"
     }
    ],
    "bilag": []
@@ -12740,15 +12909,19 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
      "titel": "Resumé",
      "tekst": "Forvaltningen orienterer om:\n\nNy takstmodel gør botilbud mindre attraktive for velfærdskriminelle\nRigsrevisionen gennemfører undersøgelse om dækning af tabt arbejdsfortjeneste i\n20 tilfældige kommuner, bl.a. Rudersdal (se bilag)\nStatus på svarprocent i tilfredshedsundersøgelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået"
     }
    ],
    "bilag": []
@@ -12758,12 +12931,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Social- og Beskæftigelsesudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=b50547da-afb0-49e5-bea8-8b4e02a8beef",
-   "hentet": "2026-11-10T12:50:00.520Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d0d1908e-6bd1-4a1e-a695-7e2e0307b489",
+   "hentet": "2026-11-12T12:53:24.683Z",
    "titel": "Beslutningsprotokol og underskriftsark",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev gennemgået"
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-kultur-og-fritidsudvalget-1": {
@@ -12771,12 +12949,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d5083a7f-bc32-4f09-a30f-433375901919",
-   "hentet": "2026-11-06T12:47:10.451Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d8de8c7c-fb0e-484d-822a-4f583e818a77",
+   "hentet": "2026-11-12T12:53:34.390Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen blev godkendt."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-11-kultur-og-fritidsudvalget-2": {
@@ -12784,10 +12967,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d5083a7f-bc32-4f09-a30f-433375901919",
-   "hentet": "2026-11-06T12:47:10.451Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d8de8c7c-fb0e-484d-822a-4f583e818a77",
+   "hentet": "2026-11-12T12:53:34.390Z",
    "titel": "Rudersdal Museers udstillings- og aktivitetsprogram 2027-2028",
    "afsnit": [
     {
@@ -12801,6 +12984,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Kultur- og Fritidsudvalget til godkendelse.\nDirektionen foreslår, at Kultur- og Fritidsudvalget godkender Udstillings- og\naktivitetsprogrammet 2027-2028."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "KULTUR- OG FRITIDSUDVALGET tiltræder Direktionens forslag."
     }
    ],
    "bilag": []
@@ -12810,10 +12997,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d5083a7f-bc32-4f09-a30f-433375901919",
-   "hentet": "2026-11-06T12:47:10.451Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d8de8c7c-fb0e-484d-822a-4f583e818a77",
+   "hentet": "2026-11-12T12:53:34.390Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Kultur- og Fritidsudvalget",
    "afsnit": [
     {
@@ -12827,6 +13014,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Kultur- og Fritidsudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil politisk godkendelse.\n\nDirektionen foreslår indstillet,\n1. at politikområde Kultur, Fritid og Idræt ydes en negativ tillægsbevilling på 0,5 mio. kr.,\nder lægges i kassen,\n2. at der oprettes et nyt anlægsprojekt, Etablering af nyt billetsystem i svømmehallerne,\nog at der afsættes et rådighedsbeløb og tilhørende anlægsbevilling på 1,0 mio. kr. til\netablering af nyt billetsystem i Rundforbi- og Birkerød svømmehal, finansieret af de til\nformålet reserverede driftsmidler på Idrætsområdet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "KULTUR- OG FRITIDSUDVALGET indstiller Direktionens forslag tiltrådt."
     }
    ],
    "bilag": []
@@ -12836,15 +13027,15 @@
    "kommune": "Rudersdal",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d5083a7f-bc32-4f09-a30f-433375901919",
-   "hentet": "2026-11-06T12:47:10.451Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d8de8c7c-fb0e-484d-822a-4f583e818a77",
+   "hentet": "2026-11-12T12:53:34.390Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
-     "titel": "Resumé",
-     "tekst": "Forvaltningen orienterer om:\nStatus Birkerød Svømmehal\nForpagtning Mantzius\nTest af Omnigym (specialudviklet styrketræningsudstyr til udendørs brug)\nFrivilligfest"
+     "titel": "Beslutning",
+     "tekst": "Forvaltningen orienterede om:\nStatus Birkerød Svømmehal. Forvaltningen fremsætter sag på næste møde i Kulturog Fritidsudvalget, hvor Forvaltningen vil beskrive udfordringerne og økonomi.\nStatus på udbud af forpagtning på Mantzius samt forventningen til videre proces.\nTest af Omnigym (specialudviklet styrketræningsudstyr til udendørs brug), herunder\nat evalueringen viser stor brugertilfredshed og positiv effekt på borgernes fysiske\naktivitet.\nDer gennemføres en evaluering af frivilligfesten. Forvaltningen vender tilbage med\nen sag om evalueringen af festen til Kultur- og Fritidsudvalget i starten af det nye år."
     }
    ],
    "bilag": []
@@ -12854,12 +13045,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Kultur- og Fritidsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d5083a7f-bc32-4f09-a30f-433375901919",
-   "hentet": "2026-11-06T12:47:10.451Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=d8de8c7c-fb0e-484d-822a-4f583e818a77",
+   "hentet": "2026-11-12T12:53:34.390Z",
    "titel": "Beslutningsprotokol og underskriftsark",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutningsprotokollen blev gennemgået."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-17-bestyrelsen-for-ung-i-rudersdal-bur-1": {
@@ -13040,7 +13236,7 @@
  "sitemaps": {
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=eb45bdbc-005e-4735-b2c7-e714c93b140d": {
    "senest": "2026-10-26",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=3f6ae58b-d90c-41f5-967f-89841a144a74": {
    "senest": "2025-09-27",
@@ -13052,15 +13248,15 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=e706faa4-0ca3-45d8-8499-930fdbe2ab47": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=a1b33993-37eb-4fbe-9bb3-ce95c3d2c377": {
    "senest": "2023-12-12",
    "tjekket": "2026-10-22"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=afd52d84-a6a8-4695-903d-03906da305dc": {
-   "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=4865b97a-d396-43f4-95ee-b4a82e2301ba": {
    "senest": "2025-09-27",
@@ -13068,7 +13264,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=54e3d012-ad2a-401e-bbe2-b0909af78b11": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=16912be3-511b-46ab-bd72-f54bb433b4eb": {
    "senest": "2025-09-27",
@@ -13080,11 +13276,11 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=32801f9c-6549-457c-9daa-0bf8f7c43248": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=09b96ef9-3e41-4bfd-9ea7-b2d792e54f03": {
-   "senest": "2026-11-10",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=5fb2cc61-a1cd-4a24-809d-377704484ab7": {
    "senest": "2025-09-26",
@@ -13092,7 +13288,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=94086cf6-7238-4845-af0c-e08bedda764d": {
    "senest": "2026-10-01",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=79cace9a-3d2c-4f71-850c-7cda61c1de8a": {
    "senest": "2025-09-27",
@@ -13107,8 +13303,8 @@
    "tjekket": "2026-10-22"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=ec6a6512-cc24-4008-8094-dac8f26cd858": {
-   "senest": "2026-11-06",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=54600157-bccd-4ee6-baad-7a97b8f75692": {
    "senest": "2025-09-27",
@@ -13120,11 +13316,11 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=5a7c6e2d-d1fe-47ef-bde9-64ab04b9bbc9": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=f0038e78-2f2e-4d40-a3a9-814fec2aa42d": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=21190702-622f-4769-aa66-f41535b76b8c": {
    "senest": "2025-09-27",
@@ -13136,23 +13332,23 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=0a58b078-43f4-49dc-84dc-37b8f8670353": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=89910af1-7e94-4299-a793-d936104c5b20": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=a1710bf7-d96d-485b-bef5-818b9938e7b9": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=d5cde391-97eb-4445-b938-612f489e60ee": {
    "senest": "2026-10-09",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=1b26714f-148a-4fec-b3de-260482995760": {
    "senest": "2026-10-20",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=49463d9d-432a-4172-a390-f52881302cd1": {
    "senest": "2025-10-10",
@@ -13160,7 +13356,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=60d0a051-8e00-4e26-a8b8-9a29fe65b614": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=00c82d18-dfef-423a-9b27-9ff62b89d04b": {
    "senest": "2025-09-27",
@@ -13172,11 +13368,11 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=198a0130-dbbf-4856-84dd-3f2d9391c557": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=d6903c04-3034-49df-bf9a-1326190bb646": {
-   "senest": "2026-11-05",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=63fc27f0-b636-497a-ac21-79f44978e949": {
    "senest": "2025-09-27",
@@ -13188,7 +13384,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=b1868c45-3c01-4464-8e46-c30e45e9790e": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=00e96d08-c85a-40e8-8b40-9164016587ec": {
    "senest": "2017-11-29",
@@ -13208,7 +13404,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=c01b6627-f391-4f45-944c-fd84a72a360f": {
    "senest": "2025-11-20",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=a633e19a-9acf-4c55-88cd-1cd44ed0d77b": {
    "senest": "2024-09-06",
@@ -13216,7 +13412,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=171dcada-b0f0-44b9-aecc-3c5ae9901ab4": {
    "senest": "2026-08-25",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=841618af-4f4b-4b37-8dce-33168d6d0052": {
    "senest": "2023-10-10",
@@ -13228,19 +13424,19 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=1e516c0c-ce44-43d4-a1d2-02cee10d7c04": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=6ddc6a8c-f277-427c-bc13-ab9ad0453bfd": {
    "senest": "2026-09-18",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=82d3b00e-c7d9-4991-867d-585b069e0204": {
-   "senest": "2026-11-07",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=2d760d51-e07a-431f-9b8e-04dc2602be4c": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=c922ecbf-8bd9-4439-ba29-27ff3a8b619b": {
    "senest": "2025-05-23",
@@ -13255,7 +13451,7 @@
    "tjekket": "2026-11-02"
   }
  },
- "opdateret": "2026-11-11T21:39:40.080Z",
+ "opdateret": "2026-11-12T12:54:14.863Z",
  "kommune": "Rudersdal",
  "parser": 3
 }

@@ -663,6 +663,22 @@
    "dato": "2026-11-18",
    "punkter": 14,
    "parser": 3
+  },
+  "7df082e9-40db-4164-af8d-e960a3b52e7c": {
+   "lastmod": "2026-11-11",
+   "type": "dagsorden",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-16",
+   "punkter": 23,
+   "parser": 3
+  },
+  "acf351c0-2a51-404c-b241-b3fe412e25b2": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Udvalget for Klima, Teknik og Miljø",
+   "dato": "2026-11-10",
+   "punkter": 18,
+   "parser": 3
   }
  },
  "sager": {
@@ -18070,10 +18086,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -18083,6 +18099,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. godkende dagsordenen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Mikkel Henriksen (N) bemærkede, at punkt 164 om ekspropriationsvilje for\nkystsikring ved Klint Havnevej burde have været fremlagt som et genoptaget punkt. Den\ntidligere behandling vedlægges punkt 164 som bilag.\nDagsordenen blev herefter godkendt."
     }
    ],
    "bilag": []
@@ -18092,10 +18112,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Besøg på Fårevejle Renseanlæg",
    "afsnit": [
     {
@@ -18105,6 +18125,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage besøget på Fårevejle Renseanlæg til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Taget til efterretning.\nPræsentationen fra besøget er vedlagt referatet. Data vedrørende spildevand er\ntilgængelige via Miljøportalen https://miljoeportal.dk/."
     }
    ],
    "bilag": []
@@ -18114,10 +18138,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Foretræde for udvalget",
    "afsnit": [
     {
@@ -18127,6 +18151,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage oplysningerne fra /foretrædet/træffetiden til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Ingen foretræder."
     }
    ],
    "bilag": []
@@ -18136,15 +18164,19 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Meddelelser fra formanden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Formanden orienterede om deltagelse i et interview med TV2 ØST vedrørende\njordhotellet, Fårevejle. Indslaget er endnu ikke sendt.\nOrienteringen blev taget til efterretning."
     }
    ],
    "bilag": []
@@ -18154,10 +18186,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Nyt fra medlemmernes deltagelse i råd, nævn og bestyrelser",
    "afsnit": [
     {
@@ -18167,6 +18199,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Jette Sloth orienterede om møde i Kalundborg om Grøn Trepart. Her fortalte\nOdsherred Kommune om forprojekterne ved Lammefjord Nordkanal og Fårevejle Huse.\nOrienteringen blev taget til efterretning."
     }
    ],
    "bilag": []
@@ -18176,10 +18212,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Meddelelser fra administrationen",
    "afsnit": [
     {
@@ -18189,6 +18225,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Administrationen orienterede om, at:\nDer er dialog i gang vedrørende placering af vognen.\nKlimaregnskabet er under revision og dette arbejde vil løbe i det meste af år 2027.\nSpørgsmål og svar vedrørende Everborg Jordhotel er udsendt pr. mail og tilføjes\nreferatet som spørgsmål/svar-punkt.\nOrienteringen blev taget til efterretning."
     }
    ],
    "bilag": []
@@ -18198,10 +18238,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Beslutning - Forslag til Vandforsyningsplan 2027 i høring",
    "afsnit": [
     {
@@ -18211,6 +18251,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Byrådet via Økonomiudvalget via Udvalget for Klima, Teknik og\nMiljø at:\n1. godkende, at Forslag til Vandforsyningsplan 2027 og Udkast til screening for\n\nmiljøvurdering sendes i otte ugers offentlig høring."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Indstillet."
     }
    ],
    "bilag": []
@@ -18220,10 +18264,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Beslutning - Genudtrykke ekspropriationsvilje for kystsikring af Klint Havnevej",
    "afsnit": [
     {
@@ -18233,6 +18277,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller Byrådet via Økonomiudvalget via Udvalget for Klima, Teknik og Miljø\nat:\n1. genudtrykke viljen til at ekspropriere retten til at etablere kystsikring på\nstrandarealerne nord og syd for Klint Havn, omfattende dele af matr.nr. 2b og 5ef,\nKlint By, Højby."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Indstillet."
     }
    ],
    "bilag": []
@@ -18242,10 +18290,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Beslutning - Anvendelse af budget afsat til projektering af rundkørsel i Fårevejle i 2026",
    "afsnit": [
     {
@@ -18255,6 +18303,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller Byrådet via Økonomiudvalget via Udvalget for Klima, Teknik og Miljø\nat:\n1. godkende, at uforbrugte midler fra den i budget 2026 afsatte bevilling til projektering\naf rundkørsel i Fårevejle Kirkeby anvendes til trafiksikkerhedstiltag i Fårevejle\nKirkeby."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Indstillet med udvalgets anbefaling om, at indsatsen rettes mod forbedring af\ntrafiksikkerheden i krydset med særligt fokus på ind- og udkørslen til REMA 1000 samt de\nbløde trafikanters forhold. Opmærkning og etablering af byporte anbefales indarbejdet i\nden videre projektering, ligesom behovet for renovering af fortovene skal indgå i den\nsamlede løsning. Hævede flader på Ordrupvej indgår ikke, da de ikke er relevante på\nnuværende tidspunkt."
     }
    ],
    "bilag": []
@@ -18264,10 +18316,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Orientering - Kontraktforhold og bodsbestemmelser på vejområdet",
    "afsnit": [
     {
@@ -18277,6 +18329,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Taget til efterretning.\nPræsentationen, der blev fremvist på mødet, er vedlagt referatet. Spørgsmål/svar om\nvejsidevedligehold tilføjes desuden referatet som spørgsmål/svar-punkt."
     }
    ],
    "bilag": []
@@ -18286,10 +18342,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Initiativsag - Opstramning af regler, tilsyn og påbud ved støjgener fra virksomheder",
    "afsnit": [
     {
@@ -18299,6 +18355,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage stilling til henvendelsen fra Per Flemming Larsen (F) om opstramning af regler,\ntilsyn og påbud ved støjgener fra virksomheder."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Udvalget besluttede, at administrationen giver en orientering om praksis for\narrangements- og lejlighedstilladelser på mødet i januar 2027. På baggrund af\norienteringen tager udvalget stilling til, om der er behov for yderligere tiltag."
     }
    ],
    "bilag": []
@@ -18308,10 +18368,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Initiativsag - Trafiksikkerhed på Klintevej, Nykøbing Sj",
    "afsnit": [
     {
@@ -18321,6 +18381,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage stilling til henvendelse fra Jette Sloth (A) om trafiksikkerhed på Klintevej,\nNykøbing Sj."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Udvalget besluttede, at Klintevej medtages i trafiksikkerhedsplanen med henblik på\nen samlet vurdering og prioritering af trafiksikkerhedsindsatserne."
     }
    ],
    "bilag": []
@@ -18330,10 +18394,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Årshjul",
    "afsnit": [
     {
@@ -18343,6 +18407,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. tage årshjulet til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Taget til efterretning med tilføjelse af en temasag om fortove og prioritering på\nmødet i januar 2027."
     }
    ],
    "bilag": []
@@ -18352,10 +18420,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Underskriftside",
    "afsnit": [
     {
@@ -18365,6 +18433,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktøren indstiller til Udvalget for Klima, Teknik og Miljø at:\n1. underskrive."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1. Underskrevet."
     }
    ],
    "bilag": []
@@ -18374,10 +18446,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Spørgsmål/svar - Klimaplanen",
    "afsnit": [
     {
@@ -18392,10 +18464,10 @@
    "kommune": "Odsherred",
    "udvalg": "Udvalget for Klima, Teknik og Miljø",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 17,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=c14da5c5-3fbb-4c8e-9433-bfccf37d8f02",
-   "hentet": "2026-11-03T20:36:59.064Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
    "titel": "Spørgsmål/svar - Områder udlagt til fjernvarme",
    "afsnit": [
     {
@@ -19501,8 +19573,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -19519,8 +19591,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Foretræde for udvalget",
    "afsnit": [
     {
@@ -19537,8 +19609,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Meddelelser fra formanden",
    "afsnit": [
     {
@@ -19555,8 +19627,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Nyt fra medlemmers deltagelse i råd, nævn og bestyrelser",
    "afsnit": [
     {
@@ -19577,8 +19649,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Orientering fra administrationen",
    "afsnit": [
     {
@@ -19599,8 +19671,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Orientering - Opfølgning på læring af Lynghussagen i 2026",
    "afsnit": [
     {
@@ -19609,7 +19681,7 @@
     },
     {
      "titel": "Indstilling",
-     "tekst": "Direktionen indstiller til Økonomiudvalget via Udvalget for Ældre, Sundhed og\nForebyggelse samt Udvalget for Social, Beskæftigelse og Arbejdsmarked, at:\n\n1. behandle opfølgninger på og status på fremdrift om læring af Lynghussagen til\nØkonomiudvalget den 16. november 2026\n2. fremsende opfølgningen til Økonomiudvalgets behandling den 16. november 2026.\nBeslutning fra Udvalget for Social, Beskæftigelse og Arbejdsmarked, den 10.\nnovember 2026, punkt 161:\n1. behandle opfølgninger på og status på fremdrift om læring af Lynghussagen til\nØkonomiudvalget den 16. november 2026\nBehandlet.\n2. fremsende opfølgningen til Økonomiudvalgets behandling den 16. november 2026.\nFremsendt.\nFraværende:\nHanne Caldron (N)\nFelex Pedersen (A)"
+     "tekst": "Direktionen indstiller til Økonomiudvalget via Udvalget for Ældre, Sundhed og\nForebyggelse samt Udvalget for Social, Beskæftigelse og Arbejdsmarked, at:\n\n1. behandle opfølgninger på og status på fremdrift om læring af Lynghussagen til\nØkonomiudvalget den 16. november 2026\n2. fremsende opfølgningen til Økonomiudvalgets behandling den 16. november 2026.\nBeslutning fra Udvalget for Social, Beskæftigelse og Arbejdsmarked, den 10.\nnovember 2026, punkt 161:\n1. behandle opfølgninger på og status på fremdrift om læring af Lynghussagen til\nØkonomiudvalget den 16. november 2026\nBehandlet.\n2. fremsende opfølgningen til Økonomiudvalgets behandling den 16. november 2026.\nFremsendt.\nFraværende:\nHanne Caldron (N)\nFelex Pedersen (A)\nBeslutning fra Udvalget for Ældre, Sundhed og Forebyggelse, den 11. november\nAd 1) Indstillet.\nAd 2) Indstillet.\nUdvalget udleder at god ledelse, inddragelse af medarbejderne, ressourcer til\nimplementering af forandringer, kompetenceudvikling og træning, supervision og\nsparring, fokuseret opfølgning på tilsyn samt tryghed for medarbejderne er vigtige\nlæringspunkter."
     }
    ],
    "bilag": []
@@ -19621,8 +19693,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - Rammeaftale 2027-2028 på det specialiserede social- og undervisningsområde",
    "afsnit": [
     {
@@ -19643,8 +19715,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Godkendelse af takster jf. Rammeaftalen for det specialiserede socialområde 2027",
    "afsnit": [
     {
@@ -19665,8 +19737,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 9,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - Takster 2027 for tilbud omfattet af Rammeaftale på det specialiserede område",
    "afsnit": [
     {
@@ -19687,8 +19759,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 10,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - Fastsættelse af takster og brugerbetalinger i 2027",
    "afsnit": [
     {
@@ -19709,8 +19781,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 11,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Ansøgning om godkendelse af Skema A, Kirkebjerg, Nr. Asmindrup",
    "afsnit": [
     {
@@ -19731,8 +19803,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 12,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - ændring af retningslinjerne for spørgetid ved Byrådets møder",
    "afsnit": [
     {
@@ -19753,8 +19825,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 13,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Orientering - Status på igangværende investeringer i 2026 i Odsherred Spildevand",
    "afsnit": [
     {
@@ -19775,8 +19847,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 14,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - forlængelse af skadesløsholdelsesordningen for ledelsen i Odsherred Varme A/S",
    "afsnit": [
     {
@@ -19797,8 +19869,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 15,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - Ajourføring af kommissorium for Havnerådet 2026-2029",
    "afsnit": [
     {
@@ -19819,8 +19891,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 16,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - Forslag til Vandforsyningsplan 2027 i høring",
    "afsnit": [
     {
@@ -19841,8 +19913,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 17,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - Anvendelse af budget afsat til projektering af rundkørsel i Fårevejle i 2026",
    "afsnit": [
     {
@@ -19863,8 +19935,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 18,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - Genudtrykke ekspropriationsvilje for kystsikring af Klint Havnevej",
    "afsnit": [
     {
@@ -19885,8 +19957,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 19,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning - undersøgelse af forløbet i sag om jordhotel",
    "afsnit": [
     {
@@ -19907,8 +19979,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 20,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Beslutning om bevilling af tilskud fra Medfinansieringspuljen for foreninger",
    "afsnit": [
     {
@@ -19929,8 +20001,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 24,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Underskriftside",
    "afsnit": [
     {
@@ -19947,8 +20019,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 25,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Spørgsmål/svar - It- og Iværksætterhuset i Egebjerg",
    "afsnit": [
     {
@@ -19965,8 +20037,8 @@
    "dato": "2026-11-16",
    "type": "dagsorden",
    "nr": 26,
-   "kilde": "https://dagsordener.odsherred.dk/vis?id=0fbdece9-8f3d-4c55-a88d-41b9fa21c1d5",
-   "hentet": "2026-11-11T21:40:25.997Z",
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=7df082e9-40db-4164-af8d-e960a3b52e7c",
+   "hentet": "2026-11-12T12:53:56.782Z",
    "titel": "Spørgsmål/svar - saglighed og politisk indflydelse i kommunens sagsbehandling",
    "afsnit": [
     {
@@ -20283,60 +20355,96 @@
     }
    ],
    "bilag": []
+  },
+  "odsherred-2026-11-10-udvalget-for-klima-teknik-og-miljoe-18": {
+   "id": "odsherred-2026-11-10-udvalget-for-klima-teknik-og-miljoe-18",
+   "kommune": "Odsherred",
+   "udvalg": "Udvalget for Klima, Teknik og Miljø",
+   "dato": "2026-11-10",
+   "type": "referat",
+   "nr": 18,
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
+   "titel": "Spørgsmål/svar - Everborg Jordhotel",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Spørgsmål fra Gitte Svendsdatter (Æ) den 9. oktober 2026 om Everborg Jordhotel\nJeg vil gerne have en dokumentation på at der er udskrevet et påbud . Med dato for afvikling.\nSamt en sikkerhed for der ikke køres mere derud. Da målingen viser der ikke kan være mere ift\nmiljøgodkendelse.\nHvordan bliver der tilsyn fremadrettet?\nNu der er konstateret at man bevidst overtræder miljøgodkendelse?\nSamtidig vil jeg gerne undersøge om der er mulighed for andre sanktioner evt. paragraf 14\nforbud.\n\nSvar fra administrationen\nSpørgsmål\nHvordan bliver der tilsyn fremadrettet?\nSvar\nPåbuddet om fjernelse af den jord der ligger uden for det godkendte område bliver sendt\nfredag (det eftersendes, når det er sendt). Der er tidligere udsendt et varsel til Everborg Nordic\nAps, dette er vedhæftet. Virksomheden er i gang med at fjerne det ulovligt placeret jord.\nDer er tale om et jordhotel, dvs. at der løbende bliver både afleveret og bortkørt jord.\nAdministrationen kan se i Jordweb (kommunal registreringsdatabase), at virksomheden i\nmindre omfang har afleveret jord videre til andre modtagere.\nSom beskrevet i orienteringen til Byrådet af den 28. september 2026 om droneopmålingen er\nde volde, der afgrænser virksomhedens areal, medtaget i droneopmålingen. Jorden i voldene\ner ikke omfattet af vilkår 19, da det er en del af virksomhedens indretning, Jorden i disse skal\nderfor ikke medregnes som en del af virksomhedens oplag. Støjvoldenes volumen udgør ifølge\nmiljøgodkendelsen 85.000 m³, svarende til ca. 153.000 ton, som derfor skal fratrækkes den\nsamlede mængde opmålt jord på virksomheden. Dermed er der luft til at de fortsat kan\nmodtage jord. Der kan således ikke stilles sikkerhed for, at der ikke tilføres mere jord.\nSpørgsmål\nNu der er konstateret at man bevidst overtræder miljøgodkendelse? Samtidig vil jeg gerne\nundersøge om der er mulighed for andre sanktioner evt. paragraf 14 forbud.\nSvar\n\nAdministrationen vil fortsat føre tilsyn med virksomheden med henblik på at sikre, at\nmiljøgodkendelsen overholdes. Administrationen har ikke modtaget dokumentation for, at vilkår\ni miljøgodkendelsen bevidst skulle være overtrådt. Vi vil ved fremtidige tilsyn medtage forhold,\nsom er blevet bragt op, og som der ikke tidligere har været fokus på.\nVirksomheden har en miljøgodkendelse til deres eksisterende drift og lokalplanen, som giver\nmulighed for at virksomheden kunne etablere sig i området, er vedtaget for flere år siden.\nAdministrationen kan på den baggrund ikke anbefale at der udstedes et § 14 forbud efter\nplanloven, idet det med overvejende sandsynlighed vil medføre væsentlige erstatningskrav.\nVed åbenlyse ulovligheder med væsentlig forureningsfare, kan administrationen udstede et\nstandsningspåbud til en virksomhed, det vurderes dog, at der ikke er belæg for et sådanne\nforbud i dette tilfælde."
+    }
+   ],
+   "bilag": []
+  },
+  "odsherred-2026-11-10-udvalget-for-klima-teknik-og-miljoe-19": {
+   "id": "odsherred-2026-11-10-udvalget-for-klima-teknik-og-miljoe-19",
+   "kommune": "Odsherred",
+   "udvalg": "Udvalget for Klima, Teknik og Miljø",
+   "dato": "2026-11-10",
+   "type": "referat",
+   "nr": 19,
+   "kilde": "https://dagsordener.odsherred.dk/vis?id=acf351c0-2a51-404c-b241-b3fe412e25b2",
+   "hentet": "2026-11-12T12:54:15.655Z",
+   "titel": "Spørgsmål/svar - Vejsidevedligehold",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Spørgsmål fra Jeppe Lynge Ravn (Ø) af 28. september 2026 om vejsidevedligehold\nI henhold til min henvendelsessag om Vejsidevedligehold, vil jeg gerne vide hvor mange penge\nkommunen bruger på indkøb og opsætning af nye kantpæle, de bliver nemlig mejet ned,\nknækket eller makuleret i samme omgang.\n\nSvar fra administrationen\nKommunens udgift til vedligeholdelse af kantpæle indgår i vores samlede budget til skilte og\nafspærringsmateriel. Kantpæle vurderes at udgøre i området 50-60.000 kroner om året. Dette\nbeløb dækker over udskiftninger på grund af almindeligt slid og ælde, manglende eller ødelagt\nkantpæle. Langt den overvejende del af udskiftningen sker i forbindelser med større asfalt- og\nslidlagsarbejder, hvor vi så i samme omgang fornyer kantpæle på strækningerne, hvis de\ntrænger.\nI kontrakten på vejsidevedligehold er entreprenøren forpligtet til at erstatte og udskifte de\nkantpæle, som ødelægges i forbindelse med arbejdets udførelse. Det er en af de ting,\nvejtilsynet kigger efter, når de kører tilsyn på opgaverne.\nDerfor er kommunens omkostning som udgangspunkt 0,- kroner til dette, og i praksis i hvert\nfald yderst begrænset."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=d84f3503-fd0c-42ea-9b84-a64b82ebe5ca": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=76abe7fd-248b-4225-804b-04891ae7aadc": {
    "senest": "2026-01-27",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=12c4dd34-d48f-4be4-9389-9b8088551e70": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=328d1b33-94e9-4cb2-8f15-c8467f225336": {
    "senest": "2026-02-12",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=65c0b0b2-6990-4c06-a303-4427f614d196": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=c70a9a5b-b982-419d-aa44-9dd35401d370": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=13577398-a376-437f-a5e6-c9fe62d1e8fc": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=7b64ae0b-028d-4e26-872e-fbc51d3206a4": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=f4194953-02c1-4b89-a709-f8ac273b1cab": {
-   "senest": "2026-11-03",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=03929873-943e-416a-9b1d-1137e6ca763b": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=46771978-b4cf-4187-8f8a-ab2e5d849727": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=28470d35-5cee-41bf-a77d-19565dda9116": {
    "senest": "2025-12-16",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=00e6cfd2-859b-498b-af63-eb6055aa4c2f": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=8549021e-1b73-41a6-b513-899e36141924": {
    "senest": "2025-09-27",
@@ -20344,11 +20452,11 @@
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=502e7095-32cb-4593-856d-20a2dba3049d": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=cc727197-e2ec-4734-8947-61580f8cfd15": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=3f5f02eb-10bd-4692-9b05-f48dcee9f40e": {
    "senest": "2025-09-27",
@@ -20364,7 +20472,7 @@
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=ec342e2f-da85-4af6-9444-b3e99497b8c2": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=eee51257-d64b-478f-9136-f764c4eefe3b": {
    "senest": "2025-09-27",
@@ -20372,15 +20480,15 @@
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=65c3a811-294f-482a-a6c8-226def97f9e8": {
    "senest": "2026-10-12",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=466b666b-cb5f-459d-929f-de8abe8caf9b": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=063830d0-0f5c-4aac-9646-04ef23648866": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=2c3ae743-4f51-471f-8ebc-5979725b2e5b": {
    "senest": "2025-11-04",
@@ -20388,15 +20496,15 @@
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=9bb5f75f-ddef-4a5a-947f-45316474e741": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=f98b43ac-8fd1-4d77-bd4b-cc51bc70224a": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=9445a231-b6f0-45b2-8528-386e0bd29341": {
    "senest": "2026-06-15",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=e9fc8a7e-ec15-4dba-ba02-d861b947af2a": {
    "senest": "2025-11-05",
@@ -20408,7 +20516,7 @@
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=40837754-999a-43e5-83c6-c0855faaaa59": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=c8b3e07b-2e46-4484-bb38-5ae5e53bf984": {
    "senest": "2025-09-27",
@@ -20416,15 +20524,15 @@
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=bdf2b3e3-e4f3-428f-bef1-1789053a3168": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=ee1d528c-613d-4994-b0e8-9584bb1a00ea": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=065cceec-295b-4f64-878d-4a996c4f0d73": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=c316e180-3477-4f71-bfb3-16982f1337f2": {
    "senest": "2017-12-05",
@@ -20432,11 +20540,11 @@
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=7e814e06-deb0-4cc8-a8dc-4ae1dfb1df12": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=c2d9d2bd-7071-452b-bdb1-1fc62d6f19bf": {
    "senest": "2026-09-09",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=1011b5ac-686d-4ff2-9cd1-59345a3c79eb": {
    "senest": "2021-06-03",
@@ -20452,7 +20560,7 @@
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=c4f61522-666e-4bc4-b6ed-59de11128d48": {
    "senest": "2026-10-06",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.odsherred.dk/Sitemap/ForCommittee?committeeId=30e2ba3e-fd07-4be3-acae-45590dcb1da2": {
    "senest": "2025-09-27",
@@ -20524,6 +20632,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-11T21:41:13.653Z",
+ "opdateret": "2026-11-12T12:54:15.657Z",
  "kommune": "Odsherred"
 }

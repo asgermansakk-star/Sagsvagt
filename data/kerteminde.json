@@ -455,6 +455,46 @@
    "dato": "2026-11-03",
    "punkter": 9,
    "parser": 3
+  },
+  "dbda2782-d352-4a94-8b3e-b55fe7619a49": {
+   "lastmod": "2026-11-12",
+   "type": "dagsorden",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "punkter": 10,
+   "parser": 3
+  },
+  "9b2cedb8-7fc4-4be9-b42e-09853b5a78b3": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2024-11-13",
+   "punkter": 11,
+   "parser": 3
+  },
+  "d71dc527-674c-41de-912b-02fe2307b6f7": {
+   "lastmod": "2026-11-12",
+   "type": "dagsorden",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "punkter": 9,
+   "parser": 3
+  },
+  "9d36e9de-fda3-46e8-8658-4c7f2adbddd8": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Folkeoplysningsudvalget",
+   "dato": "2026-11-10",
+   "punkter": 9,
+   "parser": 3
+  },
+  "63bf7e63-aff8-412e-8e63-7893fe1053ee": {
+   "lastmod": "2026-11-12",
+   "type": "referat",
+   "udvalg": "Byråd",
+   "dato": "2024-11-28",
+   "punkter": 7,
+   "parser": 3
   }
  },
  "sager": {
@@ -8181,12 +8221,17 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nTorben Pelle Pedersen deltog som suppleant."
+    }
+   ],
    "bilag": []
   },
   "kerteminde-2026-11-10-folkeoplysningsudvalget-2": {
@@ -8194,10 +8239,10 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Orienteringssag: Besøg af aftenskolen Kerteminde Husflid",
    "afsnit": [
     {
@@ -8211,6 +8256,10 @@
     {
      "titel": "Baggrund",
      "tekst": "Kerteminde Husflid er en aftenskole med kurser fra traditionelt håndarbejde til moderne\nhåndværk, skabt til både nybegyndere og erfarne. De låner primært kommunale lokaler i Hans\nTausen Centret i Birkende og på Kulturhus Fjorden i Kerteminde. Aftenskolen har fornylig haft\nudskiftning i deres bestyrelse, hvor de både har skiftet formand og skoleleder.\n\nØkonomiske konsekvenser/finansiering\nAftenskolen har i 2026 modtaget et tilskud fra puljen tilskud til voksenundervisning(aftenskoler)\n\nLovgrundlag\nFolkeoplysningslov\n\nHøring\nIngen\n\nPolitikker og strategier\nKerteminde Kommune, folkeoplysningspolitik indeholder følgende målsætning:\nat understøtte et rigt varieret forenings- og aftenskoleliv.\nat sikre tidssvarende, gode faciliteter for det frivillige foreningsliv og voksenundervisningen.\nat sikre en optimal udnyttelsesgrad i eksisterende og nye faciliteter\n\nPunktet afgøres i\nFolekoplysningsudvalget\n\nIndstilling: Direktionen indstiller at\nFolkeoplysningsudvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet."
     }
    ],
    "bilag": []
@@ -8220,10 +8269,10 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Orienteringssag: Hædringsarrangement 2026",
    "afsnit": [
     {
@@ -8233,6 +8282,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Hvert år afholdes et hædringsarrangement, hvor sportsudøvere, foreningsledere/medlemmer,\nborgere m.fl. hædres for deres indsats på det frivillige område i Kerteminde Kommune.\nArrangementet afholdes i år, torsdag den 19. november 2026 kl. 17.00, i Troelskærsalen på\nKultur- og Administrationscenter i Munkebo.\nKerteminde Kommune (Kultur og Fritids administration) står for planlægning og afholdelse af\nhædringsarrangementet.\nFølgende priser uddeles til arrangementet:\nÅrets borger\nÅrets foreningsleder\nÅrets foreningsmedlem\nÅrets frivillige ildsjæl\nÅrets handicappris (Udpeges af Handicaprådet)\nÅrets bæredygtighedspris(Udpeges af Klima- og Naturudvalget)\nAdministrationen har via nyhedsbreve til folkeoplysende foreninger samt i Kerteminde Ugeavis,\nannonceret med information om, hvordan man kan indstille kandidater til de enkelte priser.\nEfterfølgende er det Folkeoplysningsudvalget der blandt de indstillede kandidater,\nudvælger hvem der skal modtage prisen til \"Årets borger\", \"Årets foreningsleder\", \"Årets\nforeningsmedlem\" samt \"Årets frivillige ildsjæl\".\n\nØkonomiske konsekvenser/finansiering\nDer er afsat 52.000 kr. i 2026 til afholdelse af hædringsarrangement.\nBudgettet skal dække udgifter til gaver til prismodtagere og sportsudøvere, forplejning\nog underholdning.\n\nLovgrundlag\nKommunalfuldmagten\n\nHøring\nIngen\n\nPolitikker og strategier\n\nFolkeoplysningspolitik\nKerteminde Kommune arbejder for at understøtte et rigt og varieret forenings- og aftenskoleliv.\nKultur-, fritids- og idrætspolitik\nI Kerteminde Kommune anerkender vi det frivillige arbejde og værdsætter det gennem\nkonkrete initiativer.\n\nPunktet afgøres i\nFolkeoplysningsudvalget\n\nIndstilling: Direktionen indstiller at\nFolkeoplysningsudvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet."
     }
    ],
    "bilag": []
@@ -8242,10 +8295,10 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Beslutningssag: Godkendelse af omprioritering af midler indenfor folkeoplysningsområdet 2026",
    "afsnit": [
     {
@@ -8255,6 +8308,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Folkeoplysningsudvalget skal beslutte, om der skal omprioriteres midler til Start- og\nudviklingspuljen.\nIfølge retningslinjerne for puljen kan godkendte folkeoplysende foreninger og aftenskoler søge\ntil følgende:\n- udviklingsinitiativer tilknyttet foreningen/aftenskolen\n- tilbud som tiltrækker og fastholder børn, unge og nye grupper\n- etablering og opstart af nye foreninger\n- etablering af nye samarbejder på tværs af fx foreninger og skoler, institutioner mv.\n- initiativer til rekruttering/fastholdelse af frivillige, trænere mv.\n- netværksdannelse for ledere, trænere eller på tværs af aktiviteter/områder\n- foredrag, konferencer og workshops\nDer kan søges løbende dog indtil 1. oktober. Tildeling af midler fra puljen sker efter først-tilmølle princippet.\nIndtil nu har 5 foreninger fået bevilget et tilskud fra puljen.\nPå folkeoplysningsudvalgets møde i september behandlede udvalget 4 ansøgninger til Startog udviklingspuljen, hvoraf en af ansøgningerne blev udsat til november-mødet. Udvalget bad\nadministrationen om at gennemgå området og komme med forslag til eventuelle\nomprioriteringer indenfor udvalgets område.\nEfterfølgende er der indkommet yderligere en ansøgning.\nAdministrationen har gennemgået folkeoplysningsudvalgets område og konstateret, at der\nresterer 50.000 kr. i puljen til ekstraordinært lokaletilskud. På baggrund af tidligere års forbrug\n(se specifikation under økonomiske konsekvenser) er det usandsynligt, at der vil være behov\nfor det afsatte beløb i 2026. Det foreslås derfor, at der flyttes midler fra puljen ekstraordinært\nlokaletilskud til Start- og udviklingspuljen.\n\nØkonomiske konsekvenser/finansiering\nStart- og udviklingspuljen\nRestbudget for Start- og udviklingspuljen udgør 10.000 kr.\nMarslev Klubben har ansøgt om 38.000 kr.\nAftenskolen FOF Østfyn har ansøgt om 6.000 kr.\n\nHvis begge ansøgninger imødekommes, mangler der 34.000 kr. i Start- og udviklingspuljen.\n\nEkstraordinært lokaletilskud\nBudget for puljen til ekstraordinært lokaletilskud udgør 52.000 kr. i 2026. Forbrug for 2026\nudgør indtil nu 1.600 kr.\nHistorik for puljen til ekstraordinært lokaletilskud:\nForbrug 2025: 35.000 kr.\nForbrug 2024: 4.900 kr.\n\nLovgrundlag\nRetningslinjer for foreninger og aftenskoler\n\nHøring\nIngen\n\nPolitikker og strategier\nFolkeoplysningspolitik\nKerteminde Kommune arbejder for at understøtte et rigt varieret forenings- og aftenskoleliv.\n\nPunktet afgøres i\nFolkeoplysningsudvalget\n\nIndstilling: Direktionen indstiller at\nFolkeoplysningsudvalget godkender at tilføre Start- og udviklingspuljen 34.000 fra\nekstraordinært lokaletilskud i 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ikke godkendt."
     }
    ],
    "bilag": []
@@ -8264,10 +8321,10 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Beslutningssag: Marslev Klubben - ansøgning om tilskud fra Start- og udviklingspuljen",
    "afsnit": [
     {
@@ -8281,6 +8338,10 @@
     {
      "titel": "Behandling i Folkeoplysningsudvalget 15. september 2026",
      "tekst": "Udsat til næste møde."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ansøgningen ikke imødekommet."
     }
    ],
    "bilag": []
@@ -8290,10 +8351,10 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Beslutningssag: Aftenskolen FOF Østfyn - ansøgning om tilskud fra Start- og udviklingspuljen",
    "afsnit": [
     {
@@ -8303,6 +8364,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "FOF Østfyn har indsendt ansøgning til Start- og udviklingspuljen og søger om et tilskud på\n5.940 kr. til opstart af Yin yoga hold.\n\nRetningslinjer Start- og udviklingspuljen\nPuljen hører til på Folkeoplysningsområdet og kan søges af godkendte folkeoplysende\nforeninger og aftenskoler.\nDer kan søges til:\n- udviklingsinitiativer tilknyttet foreningen/aftenskolen\n- tilbud som tiltrækker og fastholder børn, unge og nye grupper\n- etablering og opstart af nye foreninger\n- etablering af nye samarbejder på tværs af fx foreninger og skoler, institutioner mv.\n- initiativer til rekruttering/fastholdelse af frivillige, trænere mv.\n- netværksdannelse for ledere, trænere eller på tværs af aktiviteter/områder\n- foredrag, konferencer og workshops\n\nKriterier for at søge puljen:\n- at ansøgningens formål er relevant og tager udgangspunkt i foreninger/aftenskoler og\nfolkeoplysende aktiviteter\n- at ansøgningen understøtter mål og fokusområder i Folkeoplysningspolitikken og Kultur-,\nFritids og Idrætspolitikken\n- der vil blive set positivt på, at projektet medfinansieres af foreningens egne midler, fondseller sponsormidler\nRetningslinjerne for puljen kan læses i sin fulde længde i vedlagte bilag.\n\nAnsøgning FOF Østfyn\nFOF Østfyn vil gerne starte et aften Yin yoga hold op i Kerteminde, da flere har vist interesse\nfor sådan en type hold. Yin yoga får fokus tilbage i kroppen og optimerer energien, bindevævet\nog derved smidigheden, så skader fremadrettet forebygges. For at kunne tilbyde dette kræves\nnogle specielle materialer.\nAftenskolen søger om 5.940 kr. til materialer (yoga-pøller og kork-koldser). De bidrager selv\n\nmed øvrige materialer.\n\nØkonomiske konsekvenser/finansiering\nRestbudget til Start- og udviklingspuljen udgør 10.000 kr.\n\nLovgrundlag\nFolkeoplysningslov\nRetningslinjer for foreninger (retningslinjer Start- og udviklingspulje)\n\nHøring\nIngen\n\nPolitikker og strategier\nFolkeoplysningspolitik\nKerteminde Kommune arbejder for at understøtte et rigt varieret forenings- og aftenskoleliv\n\nPunktet afgøres i\nFolkeoplysningsudvalget\n\nIndstilling: Direktionen indstiller at\nFolkeoplysningsudvalget behandler ansøgningen fra FOF Østfyn."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ansøgningen er imødekommet."
     }
    ],
    "bilag": []
@@ -8312,10 +8377,10 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Beslutningssag: Motorstuen Langeskov - ansøgning om lokaletilskud",
    "afsnit": [
     {
@@ -8325,6 +8390,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Motorstuen Langeskov søger om et lokaletilskud(forskud) til lejede bygninger på Nyborgvej\n28B port 13 i Langeskov.\nForeningen er godkendt i juni 2026 af Folkeoplysningsudvalget og har ikke tidligere modtaget\nlokaletilskud til bygningerne.\nGenerelle regler for lokaletilskud\nIfølge retningslinjer for foreninger skal Folkeoplysningsudvalget godkende nye ansøgninger fra\nforeninger, som ønsker tilskud til egne eller lejede lokaler.\nUdvalget kan undlade at give tilskud til nye lokaler, som foreningen ikke tidligere har fået\ntilskud til, hvis det medfører væsentlige merudgifter og ikke kan rummes indenfor den afsatte\nramme. Hvis udvalget en gang godkender, at en forening kan modtage lokaletilskud, vil\nforeningen hvert år være berettiget til at modtage tilskud indenfor de gældende regler for\nlokaletilskud.\nTilskud beregnes på baggrund af timetal og medlemssammensætning - medlemmer over 25 år\nfratrækkes i lokaletilskudsberegningen.\n\nRegler for forskud på lokaletilskud\nReglerne for forskud er således, at et forskud gives forud i 4 rater, således at foreningen har\nmidler til at afholde lejeudgiften. Derefter laves en afregning, når den endelig udgift til lokaler\nkendes. For meget i tilskud tilbagebetales og for lidt i tilskud godtgøres.\nDer er få andre foreninger, der på nuværende tidspunkt har denne ordning. Størstedelen af de\nforeninger, der modtager lokaletilskud, modtager lokaletilskud på baggrund af afholdte udgifter.\n\nAnsøgning fra Motorstuen\nDet fremgår af den indsendte ansøgning og lejekontrakt, at lejemålet omfatter ca. 165 kvm\nlager rum. Den årlige udgift til foreningens lokaler udgør 65.250 kr. fordelt på lejeudgift og\nforbrugsudgifter.\nPå baggrund af de vedtagne retningslinjer og oplysninger i ansøgningen(medlemstal, timetal)\nkan foreningen opnå et forskud på lokaletilskud på 42.500 kr. Foreningen vil i 2026 kunne opnå\net lokaletilskud fra juni 2026, hvor foreningen blev godkendt som folkeoplysende forening af\nFolkeoplysningsudvalget.\n\nØkonomiske konsekvenser/finansiering\nBudget og forbrug lokaletilskud foreninger\nBudget 2026 udgør 279.000 kr.\nForbrug 2026 forventes at udgøre 215.000 kr.\nDer forventes at restere 64.000 kr. på kontoen til lokaletilskud for foreninger.\n\nLovgrundlag\nFolkeoplysningslov\nRetningslinjer foreninger/lokaletilskud\n\nHøring\nIngen\n\nPolitikker og strategier\nFolkeoplysningspolitik\nKerteminde Kommune afsætter årligt en økonomisk ramme til at honorere målsætningen på\nfolkeoplysningsområdet:\n- at understøtte et rigt varieret forenings- og aftenskoleliv\n- at sikre tidssvarende, gode faciliteter for det frivillige foreningsliv og voksenundervisning\n\nPunktet afgøres i\nFolkeoplysningsudvalget\n\nIndstilling: Direktionen indstiller at\nFolkeoplysningsudvalget godkender forskud på lokaletilskud for perioden juni-december 2026\nsamt fra 2027 og frem til Motorstuen Langeskov."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -8334,10 +8403,10 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Beslutningssag: Godkendelse af foreningen Støtteforeningen for Hans Tausen Centret",
    "afsnit": [
     {
@@ -8347,6 +8416,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Støtteforeningen for Hans Tausen Centret ansøger om godkendelse som folkeoplysende\nforening i Kerteminde Kommune og har indsendt foreningens vedtægter samt tilhørende\nmateriale.\nIfølge retningslinjer for foreninger i Kerteminde Kommune er det Folkeoplysningsudvalget der\ngodkender nye folkeoplysende foreninger.\nAf foreningens vedtægter fremgår det, at formålet med oprettelse af foreningen er at støtte op\nomkring alle de aktiviteter, der foregår i Hans Tausen Centret, lave aktiviteter der har\nmedlemmernes interesse samt at medvirke til at udvikle og forøge brugernes medindflydelse\npå centerets aktiviteter\nStøtteforeningen for Hans Tausen Centret er hjemmehørende i Kerteminde Kommune og\nafholder aktiviteter som billard, stolegymnastik, yoga, porcelæns- og billedmaling og\ntræværksted. Aktiviteterne foregår typisk en gang om ugen.\nAktiviteterne foregår i en kommunal bygning Hans Tausen Centret på Hans Tausensgade 29 i\nBirkende. Huset rummer også andre foreninger samt kommunale aktiviteter.\nForeningen opkræver ifølge deres vedtægter et medlemskontingent.\nDer er afholdt stiftende generalforsamling den 22. oktober 2026.\nAdministrationen har gennemgået foreningens vedtægter. Det vurderes, at vedtægterne lever\nop til kravene i Folkeoplysningsloven samt de kommunale retningslinjer for området.\n\nØkonomiske konsekvenser/finansiering\nForeningen vil have mulighed for at søge puljer via Folkeoplysningsområdet, dog kun Start- og\nudviklingspuljen samt Træner og lederuddannelsespuljen. Da foreningen ikke har medlemmer\nunder 25 år kan de ikke modtage medlemstilskud eller evt. lokaletilskud.\n\nLovgrundlag\nFolkeoplysningsloven\nRetningslinjer for foreninger\n\nHøring\nIngen\n\nPolitikker og strategier\nFolkeoplysningspolitik\nKerteminde Kommune arbejder for at understøtte et rigt varieret forenings- og aftenskoleliv\n\nPunktet afgøres i\nFolkeoplysningsudvalget\n\nIndstilling: Direktionen indstiller at\nFolkeoplysningsudvalget godkender Støtteforeningen for Hans Tausen Centret som\nfolkeoplysende forening under det frivillige folkeoplysende foreningsområde i Kerteminde\nKommune."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -8356,15 +8429,19 @@
    "kommune": "Kerteminde",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-10",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9dd0c849-6c79-4606-9eec-4750adcb7c87",
-   "hentet": "2026-11-03T14:54:47.180Z",
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=9d36e9de-fda3-46e8-8658-4c7f2adbddd8",
+   "hentet": "2026-11-12T12:56:05.958Z",
    "titel": "Gensidig information",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Meddelelser fra formanden og udvalgets medlemmer\nMeddelelser fra administrationen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering givet."
     }
    ],
    "bilag": []
@@ -8390,24 +8467,420 @@
     }
    ],
    "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-1": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-1",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-2": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-2",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Orienteringssag: Ledelsesinformation til Økonomiudvalget pr. 31.10.2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Økonomiudvalget orienteres på mødet omkring en række økonomiske nøgletal samt\nudviklingen på arbejdsmarkedsområde.\n\nDa sagen vedr. budgetopfølgning 2 også behandles på dette udvalgsmøde, bliver de ordinære\nforbrugstal ikke vedlagt. Der henvises i stedet derfor til sagsfremstillingen vedr.\nbudgetopfølgning 2 for forventede regnskabstal. Øvrige ledelsesinformation vedlægges som\nvanligt."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Økonomiudvalget orienteres på mødet omkring en række økonomiske nøgletal samt\nudviklingen på arbejdsmarkedsområde.\n\nDa sagen vedr. budgetopfølgning 2 også behandles på dette udvalgsmøde, bliver de ordinære\nforbrugstal ikke vedlagt. Der henvises i stedet derfor til sagsfremstillingen vedr.\nbudgetopfølgning 2 for forventede regnskabstal. Øvrige ledelsesinformation vedlægges som\nvanligt.\n\nØkonomiske konsekvenser/finansiering\n\nLovgrundlag\n\nHøring\n\nPolitikker og strategier\n\nPunktet afgøres i\nØkonomiudvalget\n\nIndstilling: Direktionen indstiller at\nØkonomiudvalget tager orienteringen til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-3": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-3",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Beslutningssag - Budgetopfølgning 2 pr. 30. september 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Denne sag omhandler budgetopfølgning 2 og er også en bevillingssag for Kerteminde Kommune, og giver\nen status på det forventede regnskab for 2026. Sagen er bygget op, så den redegør for den samlede\nbudgetopfølgning på alle kommunens områder."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ifølge det økonomiske årshjul skal Budgetopfølgning 2 pr. 30. september 2026, politisk behandles i\nnovember måned.\nSagen er skrevet med henblik på at afsnittet Overordnet gennemgang af budgetopfølgning 2 giver en samlet\nindføring i budgetopfølgningen, mens de efterfølgende afsnit skal betragtes som uddybninger. For yderligere\nforklaringer på afvigelser henvises til de tilhørende notater, der er vedhæftet denne sag.\nOverordnet gennemgang af budgetopfølgning 2\nVed budgetopfølgning 1 2026 forventedes et merforbrug på 1,277 mio. kr. vedrørende driften i år. Dette var\ndog uden økonomiske konsekvenser af afskedigelserne på Vestas, som blev estimeret til mellem 4-10 mio.\nkr. På den baggrund og henset til usikkerhederne i 2027 blev der indført udgiftstilbageholdenhed i\norganisationen.\nSiden budgetopfølgning 1 er der indgået en økonomiaftale med regeringen, som medførte en\nmidtvejsregulering af 2026 der tilførte midler til budgetterne i Kerteminde Kommune. En andel af disse\nmidler blev placeret som puljer under Økonomiudvalget på samlet 12,43 mio. kr. og er i forbindelse med\nbudgetopfølgning 2 fortsat uforbrugte. Derfor bør budgetopfølgning 2 også ses både med og uden disse\nengangsmidler.\n\nNedenstående tabel viser resultatet af budgetopfølgning 1 (BO1) samt budgetopfølgning 2 (BO2) hhv. inkl.\nog ekskl. engangsmidler.\n\nAfvigelse ift. korr. budget\n(mio. kr.)\n\nkorrigeret\n\nInkl. engangsekskl. engangs\nindtægter\nindtægter\n\nResultat af ordinær\ndriftsvirksomhed\n\nResultat af anlægsudgifter\nnetto\n\nResultat af finansiering\n\nSamlet bundlinje\n\n+= Mindreforbrug/ - = Merforbrug\n\n*Kolonnen \"BO2-2026 korrigeret\" angiver resultatet uden puljer fra midtvejsreguleringen og uden et salg af Toften.\n\nUden puljerne er merforbruget på driften siden budgetopfølgning 1 steget fra 1,277 mio. kr. til 3,728 mio. kr.\nMerforbruget skyldes flere kendte strukturelle ubalancer på bl.a. de specialiserede områder, men også at\ndet i 2026 har været nødvendigt at udbetale flere større udbetalinger på risikostyring. Dette merforbrug\nforventes til trods for at det samlede arbejdsmarkedsområde nu ved budgetopfølgning 2 forventer et\nmindreforbrug på 11,01 mio. kr.\n\nForventningen til driften for 2026, inklusiv de placerede puljer under Økonomiudvalget, er et mindreforbrug\npå 8,702 mio. kr. ift. det korrigerede budget 2026.\n\nPå anlægsområdet forventes der i 2026 også realiseret en større engangshændelse i form af salg af Toften\npå 27,345 mio. kr. som både påvirker det forventede resultat under anlægsudgifter og finansiering. Uden\nsalg af Toften ville der forventes et mindreforbrug på anlæg på 39,2 mio. kr. grundet ikke realiserede anlæg\nfra 2025 og 2026. Alle anlægsbudgetter forventes at blive overført til 2027 for at projekterne kan\nfærdiggøres.\n\nUden salg af Toften og uden de reserverede puljer fra midtvejsreguleringen ville forventningen til 2026 være\net samlet mindreforbrug på 32,19 mio. kr. for hele Kerteminde Kommune.\n\nInklusiv puljer fra midtvejsregulering og indtægter fra salg af Toften forventes et mindreforbrug på 50,35 mio.\nkr. i 2026 for hele Kerteminde Kommune. Dette er inklusiv ikke realiserede anlægsbudgetter, som skal\noverføres til 2027 og realiseres der.\n\nPuljer under Økonomiudvalget\nI forbindelse med midtvejsreguleringen blev der oprettet en robusthedspulje på 6,93 mio. kr. til at modstå en\nforventet udgift vedr. afskedigelser på Vestas. Der blev også placeret en pulje vedr. lokalløndannelse på\n2,77 mio. kr. med henblik på en senere udmøntning. I forvejen var der placeret ikke allokerede midler på\n2,73 mio. kr. vedrørende sænket elafgift. Samlet er der under Økonomiudvalget puljer svarende til 12,43\nmio. kr.\n\n(mio. kr.)\n\nBeløb\n\nEnergiafgift\n\nLokalløndannelse\n\nRobusthedspulje\n\nSum\n\nPuljen vedr. lokal løndannelse foreslås udmøntet i henhold til særskilt sag på byrådsmøde den 26.\nnovember 2026.\n\nHenset til at det samlede arbejdsmarkedsområde forventer et mindreforbrug på 11,01 mio. kr. vurderes\nrobusthedspuljen ikke aktuel længere. Derfor foreslås en andel af robusthedspuljen benyttet til at dække et\nforventet merforbrug på risikostyring på 3,962 mio. kr. og et forventet merforbrug på barselspuljen på 0,74\nmio. kr.\nHandicap og Psykiatri har i forbindelse med overførselssagen fra 2025 til 2026 fået overført et merforbrug\npå 2,850 mio. kr. Det er tidligere på året besluttet, at området ikke skal indhente det overførte merforbrug,\nhvorfor denne overførsel foreslås udlignet. Herudover indstilles til at reservere 0,5 mio. kr. til ekstern bistand\nifbm. omlægning af erhvervsområdet.\n\nMed dette indstilles til en udmøntning af midler på samlet 8,052 mio. kr. i nærværende\nDet resterende beløb vedrørende robusthedspuljen og de ikke benyttede midler fra den sænkede elafgift på\nsamlet 1,608 mio. kr. foreslås tilført kassen. Dette også henset til at kassen kan komme til at skulle forestå\ndækning af merforbrug på de specialiserede områder i forbindelse med overførselssagen.\n\nBevillingsmæssige ændringer\nBudgetopfølgningssagerne 1 og 2 i Kerteminde Kommune er også bevillingssager og indeholder derfor\nbevillingsændringer til budgettet. Ændringerne kan også vedrøre overslagsårene. I forbindelse med det\nnetop vedtagne budget blev der vedtaget et omstillingsbidrag, som i denne sag udmøntes\nbevillingsmæssigt. Dette drejer sig om en compliance besparelse på indkøb.\n\nUdover denne ændring i bevillinger afledt af Budget 2027 vedtagelsen, oplistes flere bevillingsændringer\n\nunder hvert udvalg i den resterende del af sagen.\n\nUdmøntning af compliance besparelse\nI forbindelse med 2. behandlingen af Budget 2027 blev der vedtaget en compliancebesparelse på indkøb på\n0,51 mio. kr. Dette var en del af omstillingsbidraget Styrket lokal indkøbsfunktion (blok 2027_157). Denne er\nved indlæsning af budgettet for 2027 indlagt som en samlet besparelse under Økonomiudvalget og\nudmøntes nu ud til de respektive områder. Compliance besparelsen sker med udgangspunkt i en\ncomplianceanalyse af kommunens indkøb, som blev præsenteret i forbindelse med budgetseminariet i maj\n2026. Analysen viste, at kommunen i 2025 havde indkøb for ca. 6,8 mio. kr. på områder, hvor der\neksisterede relevante indkøbsaftaler, men hvor indkøbene helt eller delvist blev foretaget uden for disse.\nMed udgangspunkt i en forventet gennemsnitlig gevinst på 15 pct. ved handel på aftaler sammenlignet med\nhandel uden for aftaler blev der identificeret et estimeret besparelsespotentiale på ca. 1,020 mio. kr. årligt.\nPotentialet vedrører alene øget aftaleanvendelse og bedre kontraktefterlevelse. Da der kan være\nusikkerheder omkring denne compliance analyse udmøntes 50% af potentialet, hvilket svarer til 0,510 mio.\nkr. Udmøntningen vil ske på de respektive fagområder ud fra potentialernes størrelse.\n\nTabel 1: Resultat af budgetopfølgning 2 - 2026 (mio. kr.)\n\nAfvigelse\nForv.\nMio. kr.\n\nOverførsel\nfra 2025\n\nKorr.\nbudget\n\nRegnskab\nBO1\n\nForv.\n\n(ml. korr.\nBudget\nRegnskab\nog FR\nBO2\nBO2)\n\nDrift\n\nDagtilbud, uddannelse og\nunge\n\nBørn og Familie\n\nPlan, Teknik og Bosætning\n\nKultur, Fritid og Frivillighed\n\nPleje og Sundhed\n\nHandicap og Psykiatri\n\nErhverv og Vækst\n\nArbejdsmarked\n\nFørtidspension og Fleksjob\n\nPolitisk organisation,\nBeredskab og\nLandsbyudvikling\n\nKlima og Natur\n\n(A) Drift i alt\n\nAnlægsudgifter\n\nAnlægsindtægter\n\nByggemodning\n\nSalg af jord\n\n(B) Anlæg i alt\n\nTværgående administration\n\nAnlæg\n\nFinansiering mv.\n\nLånoptagelse\n\nRenter\n\nAfdrag på lån\n\nBalanceforskydninger\n\nSkatter, tilskud og\nudligning\n\n(C) Finansiering mv. i alt\n\nÆndring af likvide\naktiver (A)+(B)+(C) **\n\n+= Mindreforbrug/ - = Merforbrug\n\n* Det forventede resultat er ekskl. Børnetalsregulering som tilfører området 2,281 mio. kr.\n\n** Læsevejledning til ændring af likvide aktiver: Kolonnen Korrigeret budget angiver budgettet efter bl.a. overførsel fra 2025. Her ses at der forventes et budgetteret\nkassetræk på 33,939 mio. kr.\n\nMed det forventede regnskab for 2026 ved budgetopfølgning 2, forventes i stedet en kasseopbygning på 16,412 mio. kr. Dermed er det forventede regnskab\nforbedret med 50,352 mio. kr. ift. det korrigerede budget.\n\nA. Status på driften\n\nAfsnittet giver en kort opsamling på det forventede regnskab for det enkelte politikområde, hvor større\nafvigelser pointeres. For mere uddybende bemærkninger henvises til de relevante notater, der er vedhæftet\nsagen.\n\nDagtilbud, Uddannelse og Unge\n\nDagtilbud, Uddannelse og Unge forventer et merforbrug på 1,200 mio. kr. ekskl. børnetalsregulering.\n\nPå dagtilbudsområdet forventes et samlet mindreforbrug på 1,046 mio. kr. inkl. en forventet tilført\nbørnetalsregulering på 2,281 mio. kr. Set i forhold til Budgetopfølgning 1, hvor der var en forventning om\n\nmindreforbrug på 2,438 mio. kr., er der sket en forværring af resultatet. Det samlede mindreforbrug på\ndagtilbudsområdet skyldes primært, at der i 2026 er tilført midler vedr. bedre og billigere dagtilbud som følge\naf Finanslov 2026 (udover den forventede tilførte børnetalsregulering).\n\nPå skoleområdet forventes et mindreforbrug der primært kan henføres til befordringsområdet.\n\nPå mellemkommunale områder (uden overførsel) forventes et merforbrug. Dette skyldes et forventet\nmerforbrug på specialundervisning (Interne skoler), som vedr. skoletilbud til børn og unge anbragt i andre\nkommuner.\n\nBørnetalsreguleringen sker med baggrund i en forventning om flere børn i privat institutioner og privat\npasning end forventet ved BO1, hvilket medfører at der skal tilføres budget. For de kommunale\ndaginstitutioner forventes der færre børn end ved BO1. Det har den konsekvens at der samtidig forventes\nfærre forældrebetalingsindtægter, hvilket medfører at der skal tilføres midler til de kommunale\ndaginstitutioner.\n\nPå politikområdet Dagtilbud, Unge og Uddannelse indstilles til at:\n\nDer omplaceres 0,104 mio.kr. i 2026 fra Folkeskoleområdet til SFO området, mhp. på retvisende\nbudgetter, da midlerne oprindeligt skulle være givet til SFO området.\nAt der omplaceres 0,054 mio. kr. (Fjordvang) + 0,057 mio. kr. (Mælkevejen) i 2026 fra Dagtilbud,\nFælles formål til daginstitutionerne Fjordvang og Mælkevejen. vedr. opnormering af ledelse samt\nmidler til barn med behov for særlig støtte.\nDer omplaceres 0,100 mio. kr. i 2026 fra dagtilbud til dagplejen, søskende tilskud med henblik på\nretvisende budgetter i forhold til at søskende tilskud konteres under dagplejen.\nDer omplaceres 0,300 mio. kr. i 2026 fra Daginstitutioner, Økonomisk friplads til Tilskud private instit.,\npasningsordn. mv., Økonomisk friplads for at få retvisende budgetter. Der skal ses på i 2027 om dette\nskal gøres permanent.\nDer omplaceres 0,900 mio. kr. i 2026 fra Efterskoler og ungdomskostskoler til Bidrag til statslige og\nprivate skoler for at give et retvisende budget i 2026.\nDer omplaceres 0,485 mio. kr. fra Befordring, Skoleområdet til Folkeskoler for at imødekomme det\nmerforbrug der er fremkommet pba. at skolelederen ansat primo 2026 ansættes på ny ordning. Der\nkigges ind i at imødekomme dette merforbrug fra 2027 og frem.\nDer omplaceres 0,076 mio. kr. fra 2027 og varigt fra politikområdet Dagtilbud, Uddannelse og Unge,\nheraf 0,056 mio. kr. fra Folkeskoler og 0,020 mio. kr. fra Dagtilbud til politikområdet Tværgående\nAdministration vedrørende den vedtagne compliancebesparelse.\nDer tilføres 2,281 mio. kr. i 2026 fra kassen til Politikområdet Dagtilbud, Uddannelse og Unge hhv.\nDagtilbud (0,936 mio. kr.) og Tilskud til privat institutioner, pasningsordninger mv. (1,345 mio. kr.) som\nfølge af børnetalsreguleringen.\n\nBørn og Familie\nBørn og Familie forventer et samlet merforbrug på 6,519 mio. kr. I forhold til Budgetopfølgning 1 er dette en\nforværring af det forventede resultat med 1,79 mio. kr.\n\nDer ses en stigning i udgifterne til anbringelser samt aflastning. Der ses et stabilt niveau for antal\nanbringelser, hvorfor stigningen i udgifterne kan henføres til stigende enhedspriser og særligt\nbehandlingskrævende børn og unge. Der ses en landsdækkende tendens til, at udgifterne til anbringelser\nstiger og vil gøre det i de kommende år. Det er derfor et område der fortsat vil være under pres i de\nkommende år.\n\nMed henblik på at sikre retvisende budgetter er der i budget 2027-2030 bevilliget budgetudvidelse på netto\n6,2 mio. kr. for at imødekomme de nævnte budgetudfordringer.\n\nPå politikområdet Børn og Familie indstilles til at:\n\nDer omplaceres 0,334 mio. kr. i 2026 og 0,691 mio. kr. i 2027 og frem fra PPR til Modtageteam som er\nudfører på opgaven vedr. Ungerådgivningen.\nDer omplaceres 0,011 mio. kr. fra 2027 og varigt fra politikområdet Børn og Familie, Børn, Unge og\nForebyggelse til politikområdet Tværgående Administration vedrørende den vedtagne\ncompliancebesparelse\n\nPleje og Sundhed\nDer er samlet set et forventet mindreforbrug på 2,936 mio. kr. Dette er en forbedring på 0,584 mio. kr. ift.\nBudgetopfølgning 1\n\nUnder Social- og sundhedselever forventes der et mindreforbrug som skyldes, at dimensioneringen først er\nopfyldt sent i 2026, og at der ikke ansættes over dimensioneringen, som der tidligere har været praksis for.\nPå Plejehjem og Hjemmepleje, Sygepleje og Rehab. forventes der et merforbrug som skyldes manglende\npris- og lønfremskrivning.\nUnder Sundhed og træning forventes et mindreforbrug, hvilket skyldes lavere udgifter til specialiserede\nrehabiliteringsplaner end forventet.\nPå befordringsområdet forventes et mindreforbrug på 0,460 mio. kr. Området skal dog ses samlet med\nHandicap & Psykiatri, hvor der forventes et merforbrug, hvorfor mindreforbruget på Pleje & Sundhed\nudligner dette.\n\nPå områder uden overførselsadgang forventes der balance. Merforbruget på ældreboliger på 1,638 mio. kr.\nskyldes primært tomgangsleje som følge af lukningen af Gl. Dalsbo og Svanehøj plejehjem.\n\nPå politikområdet Pleje og Sundhed indstilles til at:\n\nDer omplaceres 1,426 mio. kr. i 2026 fra Social- og sundhedselever til Hjemmepleje, Sygepleje og\nRehab (0,766 mio. kr.) og Plejehjem (0,660 mio. kr.) vedr. funktionstillæg, ERFA-møder og\nvejledertimer til lokale oplæringsvejledere.\nDer omplaceres 0,200 mio. kr. i 2026 fra Øvrige udgifter til Madservice grundet indkøb af nyt inventar.\nDer omplaceres 0,232 mio. kr. fra 2027 og varigt fra politikområdet Pleje og Sundhed fra hhv.\nHjælpemidler og depotet til politikområdet Tværgående Administration vedrørende den vedtagne\ncompliancebesparelse.\nDer omplaceres 1,828 mio. kr. fra 2027 og frem fra politikområdet Handicap og Psykiatri, Befordring til\npolitikområdet Pleje og Sundhed, Befordring. Årsagen til omplaceringen er ændret konteringspraksis,\nså udgifterne konteres hvor de bevilges.\n\nHandicap og Psykiatri\nOmrådet under ét forventer merforbrug på 2,971 mio. kr., hvilket er en forværring på 0,600 mio. kr. siden\nbudgetopfølgning 1.\n\nDer er overført merforbrug fra 2025 svarende til 2,850 mio. kr., hvorfor der for området isoleret set for i år\nforventes en mindreforbrug. Dette følger den aftalte plan og prioriterede mål for området.\n\nPå trods af at der er færre borgere på botilbud end forudsat ved budgetlægningen, ses der merforbrug vedr.\nKøb af Pladser. Dette skyldes bl.a. højere takster som følge af generelle prisstigninger og øget støttebehov\nhos enkelte borgere. Hertil kommer en markant stigning i antallet af borgere på forsorgshjem og krisecentre.\n\nFor Tilskud til hjælpere forventes også et merforbrug. Årsagen til merforbrug skyldes til dels en stigning i\nantallet af borgere, som modtager hjælp efter SEL §94. Derudover er der en væsentlig stigning i udgiften til\nSEL §96 på grund af lønstigninger samt dækning af udgifter i forbindelse med sygdom.\n\nEgne institutioner forventer et merforbrug, som primært kan henføres til overført merforbrug fra 2025.\nHerudover kan merforbruget henføres til overenskomstbestemte lønstigninger og øgede udgifter til vikarer i\nforbindelse med sommerferieafviklingen og langtidssygemeldinger samt ekstraordinære udgifter til\nfratrædelser.\n\nDer forventes merindtægt vedr. den Centrale refusionsordning. Merindtægten på refusionsområdet bliver\nefter de nye overførselsregler set som en del af det samlede resultat for 2026.\n\nPå politikområdet Handicap og Psykiatri indstilles at:\n\nDer omplaceres 1,000 mio. kr. i 2026 fra Øvrige udgifter til Køb af pladser, grundet borgere som har\nskiftet tilbud i løbet af året. Der omplaceres 1,828 mio. kr. fra 2027 og frem fra politikområdet Handicap\nog Psykiatri, Befordring til politikområdet Pleje og Sundhed, Befordring. Årsagen til omplaceringen er\nændret konteringspraksis, så udgifterne konteres hvor de bevilges.\nDer omplaceres 1,316 mio.kr. i 2026 fra Køb af pladser til Egne institutioner, vedr. ydelser som\nMyndighed køber hos Egne institutioner.\nDer omplaceres 0,018 mio. kr. fra politikområdet Handicap og Psykiatri, heraf 0,006 mio. kr. fra egne\ninstitutioner og 0,012 mio. kr. fra Køb af pladser til Tværgående Administration vedrørende den\nvedtagne compliancebesparelse.\nDer omplaceres 2,850 mio. kr. i 2026 fra politikområdet Tværgående Administration til politikområdet\nHandicap og Psykiatri vedr. at nulstille overført merforbrug fra 2025.\n\nErhverv og Vækst\nErhverv og Vækst forventer et merforbrug på 0,200 mio. kr. Merforbruget kan henføres til Turisme området.\nMed denne sag indstilles der til, jf. beslutning på Kultur-, Fritids- og Frivillighedsudvalgsmøde d. 15. april\n2026, at omprioritere budget til understøttelse af events i 2026, hvorefter området er i balance i lighed med\nforventningen ved budgetopfølgning 1.\n\nPå politikområdet Erhverv- og Vækst indstilles at:\n\nDer omplaceres 0,200 mio. kr. i 2026 fra Kultur, Fritid & Frivillighed til Erhverv & Vækst for at dække\nmerudgiften på Turisme jf. beslutning på Kultur-, Fritids- og Frivillighedsudvalget 15. april 2026 pk.\n\nOverførselsområdet\nOverførselsområdet består af politikområderne Arbejdsmarked og Førtidspension og Fleksjob. Området\nforventede ved budgetopfølgning 1 et mindreforbrug i 2026 på 5,888 mio. kr. I denne forventning var der\nikke indregnet effekt af varslingssagen vedr. Vestas, som på daværende tidspunkt forventes på mellem 4-10\nmio. kr.\nVed midtvejsreguleringen har Kerteminde Kommune modtaget tilskud vedr. ledighed på 5,6 mio. kr. Disse\nblev ikke udmøntet til området, da der for områderne Arbejdsmarked og Førtidspension og Fleksjob under\nét, forventes mindreforbrug, men med en fortsat opmærksomhed på udviklingen på området. Midlerne blev\n\ntilført en robusthedspulje under Økonomiudvalget.\nOmrådet har gennem vedvarende indsatser formået at øge mindreforbruget til 11,01 mio. kr. og dermed ses\nder ikke behov for at udmønte midler fra Robusthedspuljen til området.\n\nArbejdsmarked\nOmrådet forventer et merforbrug på 4,069 mio. kr., hvilket er en forbedring ift. budgetopfølgning 1 på 2,081\nmio. kr.\n\nMerforbruget henføres primært til udgifter til forsikrede ledige. Kerteminde Kommune har i 2026 oplevet en\nstigning i ledigheden og dermed stigende udgifter til forsikrede ledige. Udviklingen afspejler den generelle\ntendens, som ligeledes gør sig gældende på landsplan. Ved Budgetopfølgning 1 var der forventning om\nmerforbrug på 7,78 mio. kr., hvori der ikke var indregnet effekt af afskedigelserne ved Vestas. Stigningen i\nde forventede udgifter for forsikrede ledige kan bl.a. henføres til den generelle stigende ledighed, samt at\nKerteminde Kommune har håndteret varslingssag fra Vestas.\n\nDer ses også en stigning i udgifterne til Jobafklaringsforløb. Dette kan henføres til en stigningen i antallet af\nborgere på jobafklaringsforløb, hvilket er en effekt af, at der er færre borgere på sygedagpenge, og der er en\nnaturlig sammenhæng mellem ydelserne.\nKerteminde Kommune har siden 2025 oplevet et fald i antallet af sygedagpengemodtagere, og følger nu\nniveauet for Region Syddanmark. På sygedagpengeområde er forventningen om mindreforbrug øget med\n3,3 mio. kr. siden budgetopfølgning 1.\n\nVed budgetvedtagelse for 2027 er budgettet til udgifter til fordrevne fra Ukraine teknisk tilpasset, da\nfinansieringen udestod. Finansieringen forventes nu modtaget i midtvejsreguleringen for 2027, men for at\nhave et retvisende budget tilføres området et budget til fordrevne fra Ukraine.\n\nPå politikområdet Arbejdsmarked indstilles at:\n\nDer omplaceres 0,500 mio. kr. fra Integration til FGU i 2026 og varigt til at imødekomme forventning\nom flere elever på FGU.\nDer omplaceres 0,016 mio. kr. fra 2027 og varigt fra politikområdet Arbejdsmarked heraf 0,006 fra\nSTU, UU og FGU og 0,010 mio. kr. fra Beskæftigelsesindsats til politikområdet Tværgående\nAdministration vedrørende den vedtagne compliancebesparelse.\nDer tilføres 2,397 mio. kr. i 2027 fra kassen til politikområdet Arbejdsmarked vedrørende midlertidig\nboligplacering af fordrevne fra Ukraine.\n\nFørtidspension og Fleksjob\n\nDer forventes et mindreforbrug på 15,087 mio. kr. Ved budgetopfølgning 1 var der en forventning om et\nmindreforbrug på 12,038 mio. kr.\n\nMindreforbruget skyldes primært lavere udgifter til førtidspension, herunder et lavere tilkendelsesniveau i\n2026, end det højere niveau, som budgettet er lagt ud fra. Da tilgangen til førtidspension i slutningen af 2025\nikke var så høj som forventet, har Kerteminde Kommune færre borgere på førtidspension ved indgangen af\n2026 end forventet, hvilket resulterer i et mindreforbrug. Ydermere er forventningen til tilgangen på ydelsen i\n2026 blevet reduceret, som følge af et lavere tilkendelsesniveau i 2026.\n\nPlan-, Teknik- og Bosætning\nOmrådet viser et forventet merforbrug på 0,677 mio. kr. Ved budgetopfølgning 1 var der en forventning om,\nat området gik i balance.\n\nMerforbruget kan henføres til Boligkontor u. overførsel som vedrører kommunens drift af Pleje- og\nældreboliger. Frem mod regnskabsafslutningen skal området afdækkes med det formål at få et retvisende\nbudget for området.\n\nOmrådet forventer mindreforbrug på områderne Ejendomsadministration og Ejendomsservice svarende til\n0,475 mio. kr. Med denne sag indstilles til at omplacere disse mindreforbrug til Klima og Natur med henblik\npå delvis udligning af merforbrug.\nHerefter vil udvalget have et samlet merforbrug på 1,152 mio. kr.\n\nPå Politikområde Plan-, Teknik- og Bosætning indstilles at:\n\nDer omplaceres 0,475 mio. kr. i 2026 fra politikområdet Plan, Teknik & Bosætning, heraf 0,157 mio. kr.\nfra Ejendomsadm. Vedligehold +rengøring og 0,318 mio. kr. fra Ejendomsservise til politikområdet\nKlima & Natur til delvis dækning af underskud på Natur.\nDer omplaceres 0,123 mio. kr. fra 2027 og varigt fra Plan, Teknik og Bosætning, Ejendomsadm.\nVedligehold + rengøring til politikområdet Tværgående Administration vedrørende den vedtagne\ncompliancebesparelse.\n\nKlima og Natur\nOmrådet forventer et merforbrug på 3,8 mio. kr.\nMed denne sag indstilles der til en omplacering fra Plan-, Teknik- og Bosætningsudvalget på 0,475 mio. kr.\nHerefter er det forventede merforbrug på 3,333 mio. kr.\n\nDet forventede merforbrug skyldes primært øgede udgifter til Vintertjeneste. Dette område ligger udenfor\noverførsel.\n\nDer forventes et merforbrug på naturområdet, hvor der er overført merforbrug fra 2025. Området løser\nopgaver der for en stor del finansieres af projekt- og puljemidler. Nogle projekter modtages der løbende\nfinansiering til, andre modtages der først finansiering på når projektet afsluttes. Projekterne løber over flere\når. Frem mod regnskabsafslutning skal det afdækkes hvorvidt merforbruget kan henføres til timer der ikke er\nfordelt til projekterne.\n\nPå Politikområde Klima og Natur indstilles at:\n\nDer omplaceres 0,615 mio. kr. fra Ejendomsadm. Energi til Natur under politikområdet Klima og Natur\ntil delvis dækning af underskud på Natur.\nDer omplaceres 0,010 mio. kr. fra 2027 og varigt fra politikområdet Klima og Natur, Vintertjeneste til\npolitikområdet Tværgående Administration vedrørende den vedtagne compliancebesparelse.\nDer omplaceres 0,475 mio. kr. i 2026 fra politikområdet Plan, Teknik & Bosætning, heraf 0,157 mio. kr.\nfra Ejendomsadm. Vedligehold +rengøring og 0,318 mio. kr. fra Ejendomsservise til politikområdet\nKlima & Natur til delvis dækning af underskud på Natur.\n\nKultur, Fritid og Frivillighed\nOmrådet forventer et mindreforbrug på 0,102 mio. kr.\nMed denne sag indstilles, jf. beslutning på Kultur-, Fritids- og Frivillighedsudvalgsmøde d. 15. april 2026, at\nomprioritere 0,200 mio. kr. til Turismeområdet vedr. understøttelse af events i 2026. Herudover indstilles til\nat omplacere samlet 0,065 mio. kr. til Tværgående Administration vedr. merforbrug på lønbudgetter og den\nvedtagne compliancebesparelse. Herefter forventer området et merforbrug på 0,144 mio. kr., hvilket er en\nforværring ift. budgetopfølgning 1, hvor forventningen var at gå i balance.\n\nPå politikområdet Kultur-, Fritid og Frivillighed indstilles at:\n\nDer omplaceres 0,200 mio. kr. i 2026 fra Kultur, Fritid & Frivillighed til Erhverv & Vækst for at dække\nmerudgiften på Turisme jf. beslutning på Kultur-, Fritids- og Frivillighedsudvalget 15. april 2026 pk. 41.\nDer omplaceres 0,046 mio. kr. i 2026 fra politikområdet Kultur, Fritid & Frivillighed til politikområdet\nTværgående administration vedrørende merforbrug på lønbudgetter.\nDer omplaceres 0,019 mio. kr. fra 2027 og varigt fra politikområdet Kultur, Fritid og Frivillighed fra hhv.\nGrunde/bygn. - kultur/fritidsformål (0,012 mio. Kr.), Ungdomsskolen (0,006 mio.kr.) og Kerteminde\nbibliotekerne (0,001 mio. kr.) til politikområdet Tværgående Administration vedrørende den vedtagne\ncompliancebesparelse.\n\nTværgående Administration\nOmrådet forventer et merforbrug på 1,522 mio. kr. uden diverse puljer tilført i forbindelse med\nmidtvejsreguleringen. Dette er en forbedring ift. budgetopfølgning 1, hvor der var forventning om et\nmerforbrug på 4,966 mio. kr.\nInklusiv puljerne tilført i midtvejsreguleringen på 12,43 mio. kr. forventes et mindreforbrug på 10,908 mio. kr.\n\nDer forventes merforbrug på 3,962 mio. kr. på risikostyring og interne forsikringspuljer vedr. arbejdsskader.\nDet forventede forbrug er opgjort i forhold til aktuarrapporten. Der er tale om en enkelt stor\nansvarsskadeudbetaling, 6 større udbetalinger til arbejdsskader samt skadesudbetalinger på øvrige mindre\narbejdsskader. Det er forventningen, at de fremtidige estimerede likviditetspåvirkninger vil stige for\nKerteminde Kommune.\n\nDer forventes et merforbrug vedr. barselspuljen som følge af udmøntningen i 1-3. kvartal 2026.\nBarselspuljen er tilført budget i 2027 og frem.\n\nPå politikområdet Tværgående administration indstilles at:\n\nDer omplaceres 0,046 mio. kr. fra politikområdet Kultur, Fritid & Frivillighed til politikområdet\nTværgående administration vedrørende merforbrug på lønbudgetter.\nDer omplaceres samlet 0,510 mio. kr. til Tværgående Administration fra 2027 og varigt vedrørende\nden vedtagne compliancebesparelse med nedenstående fordeling:\nDer omplaceres 0,076 mio. kr. fra politikområdet Dagtilbud, Uddannelse og Unge, heraf 0,056\nmio.kr. fra Folkeskoler og 0,020 mio.kr. fra Daginstitutioner\nDer omplaceres 0,011 mio. kr. fra politikområdet Børn og Familie, Børn, Unge og Forebyggelse\nDer omplaceres 0,019 mio. kr. fra politikområdet Kultur, Fritid og Frivillighed, heraf 0,012 mio.kr.\nfra Grunde/bygn.- kultur/fritidsformål, 0,006 mio.kr. fra Ungdomsskolen og 0,001 mio.kr. fra\nKerteminde Bibliotekerne.\nDer omplaceres 0,232 mio. kr. fra politikområdet Pleje og Sundhed fra hhv. Hjælpemidler og\ndepotet.\nDer omplaceres 0,018 mio. kr. fra politikområdet Handicap og Psykiatri, hhv. 0,006 fra egne\ninstitutioner og 0,012 mio.kr. fra Køb af pladser.\nDer omplaceres 0,016 mio. kr. fra politikområdet Arbejdsmarked heraf 0,006 fra STU, UU og\nFGU og 0,010 mio. kr. fra Beskæftigelsesindsats.\nDer omplaceres 0,123 mio. kr. fra 2027 og varigt fra politikområdet Plan, Teknik og Bosætning\nfra Ejendomsadm. Vedligehold + rengøring\nDer omplaceres 0,010 mio. kr. fra politikområdet Klima og Natur til politikområdet Tværgående\nAdministration vedrørende den vedtagne compliancebesparelse.\n\nDer omplaceres 0,005 mio. kr. fra Fælles Tværgående Organisationen til Sekretariat og\nForvaltninger\nDer omplaceres 3,962 mio. kr. i 2026 fra Fælles Tværgående Organisationen til Risikostyring/interne\nforsikringspuljer for at dække det forventede merforbrug på området.\nDer omplaceres 0,740 mio. kr. i 2026 internt under Fælles Tværgående Organisationen fra\nrobusthedspuljen til barselspuljen for at dække det forventede merforbrug på området.\nDer indstilles til at omplacere 2,850 mio. kr. i 2026 fra politikområdet Tværgående Administration til\npolitikområdet Handicap og Psykiatri vedr. at nulstille overført merforbrug fra 2025.\nDer omplaceres 0,500 mio. kr. i 2026 internt under Fælles Tværgående Organisation fra pulje vedr.\nsænkelse af energiafgift til pulje vedr. ekstern bistand til omlægning af erhvervsområdet.\nKassen tilføres 1,608 mio. kr. fra politikområdet Tværgående Administration som er det resterende\nbeløb vedrørende robusthedspuljen og midler fra den sænkede elafgift efter øvrige omplaceringer.\n\nPolitisk Organisation\nForventet mindreforbrug på 0,200 mio. kr.\n\nMindreforbrug vedr. primært budgetområderne Kommissioner, Råd & Nævn samt Valg.\n\nRenter\nDer forventes en indtægt vedr. renter på 3,71 mio. kr., hvilket er 7,7 mio. kr. mere end budgetteret.\nMerindtægten skyldes især kursgevinster og udbytter samt større indtægter i forhold til garantiprovision og\nrenter vedr. lån til betaling af ejendomsskatter. Endvidere forventes lavere renteudgifter.\n\nB. Status på anlæg\n\nHvert år overføres der uforbrugte anlægsmidler fra året før til indeværende år, for at sikre at der er midler til\nat allerede opstartede anlægsprojekter kan færdiggøres. I forbindelse med regnskab 2025 blev der overført\nbudget på anlæg svarende til 14,522 mio. kr. Hertil kommer budget til nye projekter på samlet 10,996 mio.\nkr. Således at det samlede anlægsbudget i 2026 blev hævet fra 64,927 mio. kr. til 90,445 mio. kr.\nUltimo 2026 forventes der et mindreforbrug på 26,757 mio. kr. på kommunens anlægsudgifter, som\noverføres til næste år.\n\nIft. kommunes anlægsindtægter er der i 2026 en ekstraordinær indtægt vedr. salg af Toften på 27,345 mio.\nkr.\n\nI forbindelse med salg af Toften indfries eksisterende lån hvormed der ekstraordinært afdrages med 14,2\nmio. kr. og der skal afregnes købsmoms svarende til 0,91 mio. kr. Herudover iværksættes ombygning af Gl.\nDalsbo og Svanehøj som led i bygningsrokade. Hertil frigives anlægsbevillinger på samlet 6,504 mio. kr.\nNetto tilføres kassen 5,731 mio. kr. som følge af salget af Toften.\n\nVed budget 2027 er det besluttet, at udskyde anlægsprojekt vedr. Marslev Børnehus til 2030. Derfor flyttes\nanlægsbevilling vedr. 2026 på 1,5 mio. kr.\n\nPå Anlægsområdet indstilles at:\n\nAnlægsbevilling på 1,5 mio. kr. vedr. Marslev Børnehus deles og der flyttes hhv. 0,300 mio. kr. til 2027\nog 1,2 mio. kr. til 2030, jf. budgetforliget.\nKassen tilføres 0,138 mio. kr. fra anlægsprojektet \"Kloakseparering af kommunale ejendomme\" for at\ndække restfinansiering til \"Indretning af madservice\" samt \"Strandkilen Syd\" som midlertidigt er blevet\nfinansieret af kassen.\nAnlægsbudgettet til projektet Legepladsen på bakken i Munkebo på 0,400 mio. kr. i 2026 frigives\nAnlægsbudgettet til projektet Indretning af madservice på 4,500 mio. kr. i 2026 frigives\n\nC. Status på finansiering, skatter, tilskud og udligning\nDer forventes en afvigelse ift. korrigeret budget 19,5 mio. kr. samlet set for Skatter, Generelle tilskud og\nFinansiering.\n\nI forbindelse færdiggørelse af Ny Dalsbo Plejehjem er byggekredit omlagt til lån på 63,2 mio. kr.\n\nJf. byrådets behandling af sagen vedr. salg af Toften 600 d. 29. Oktober 2026, indfries lån og der laves\nekstraordinært afdrag på 14,2 mio. kr. Hertil kommer afregning af købsmoms på 0,91 mio. kr.\n\nFor området Finansiering, skatter, tilskud og udligning indstilles:\n\nDer omplaceres 63,211 mio. kr. fra lånoptagelse til balanceforskydninger med baggrund i omlægning\naf byggekredit til endeligt lån i forbindelse med opførelse af Ny Dalsbo.\n\nD. Likviditet\n\nMed det forventede resultat af budgetopfølgning 2 forventes den gennemsnitlige likviditet at være 186 mio.\nkr. ved udgangen af 2026.\n\nTabel 2: Gennemsnitlig likviditet 2026 - 2029\n\n(mio. kr.)\n\nGennemsnitlig likviditet\n\nUltimo 2026\n\nUltimo 2027\n\nUltimo 2028\n\nUltimo 2029\n\nE. Service- og anlægsramme\nKerteminde Kommunes oprindelige serviceramme er på 1.360,851 mio. kr. i 2026. Efter\nmidtvejsreguleringen er det udmeldte sigtepunkt på 1.377,895 mio. kr. Med det forventede regnskab ved\nbudgetopfølgning 2 forventes serviceudgifterne i 2026 at udgøre 1.378,375 mio. kr., hvilket er 0,480 mio. kr.\nover den udmeldte serviceramme for Kerteminde Kommune. Overskridelsen af servicerammen skyldes\nforventede merforbrug på driftsområder omfattet af servicerammen fx. Børn og Familie, Handicap og\nPsykiatri, risikostyring samt vintertjenesten.\n\nKerteminde Kommunes bruttoanlægsramme er i 2026 på 73,969 mio. kr. Med det forventede regnskab ved\nbudgetopfølgningen pr. 30. september 2026 forventes bruttoanlægsudgifterne at udgøre 65,528 mio. kr.,\nhvilket er 8,441 mio. kr. under den udmeldte anlægsramme for Kerteminde Kommune.\n\nF. De Økonomiske mål\nNedenstående skema viser det oprindelige budget, korrigeret budget pr. 30. september 2026 og det\nforventede regnskab i forhold til måltallene i den økonomiske politik for 2026.\n\nPå den ordinære drift er det forventede resultat et overskud på 86,308 mio. kr., hvilket lever op til den\nøkonomiske politik.\n\nPå bruttoanlægsinvesteringer er det forventede resultat på 65,528 mio. kr., hvilket er inden for rammerne i\nden økonomiske politik.\n\nFor den langfristede gæld er målsætningen overholdt, da der afdrages mere end der optages lån for.\n\nTabel 3: Resultatet af budgetopfølgning 1 - sammenholdt med de økonomiske mål\n\nForventet\nMåltal (mio. kr.)\n\nResultat af ordinær drift\n\nAnlæg i alt netto\n\nAnlæg i alt brutto\n\nBalanceforskydninger\n\nLån og afdrag\n\nNettoafdrag\n\nI alt tilgang kassen\n\nOpr. budget\n\nKorr. budget\n\nregnskab\n\nMål opfyldt\nJa/Nej\n\nJa\n\nJa\n\nJa\n\n* plus angiver at kassebeholdningen mindskes.\n\nØkonomiske konsekvenser/finansiering\nDet samlede resultat for budgetopfølgning 2 viser et forventet mindreforbrug på 50,352 mio. Mindreforbruget\ner inklusiv forventede uforbrugte anlægsmidler for 26,757 mio. kr., som vil blive overført til 2027 for at sikre\nfærdiggørelse af anlægsprojekterne samt engangsindtægter ved midtvejsreguleringen.\n\nI sagen forelægges indstillinger som påvirker kassen med et samlet kassetræk på 1,465 mio. kr. i 2026.\nDette vedrører et kassetræk vedr. børnetalsregulering på dagtilbudsområdet samt kassetilførsel vedr. rest af\npuljer samt udskydelse af anlægsprojekt vedr. Marslev Børnehus.\n\nLovgrundlag\nLov om kommunernes styrelse, kapitel V om kommunernes økonomiske forvaltning.\n\nHøring\nPunktet skal ikke i høring\n\nPolitikker og strategier\nKerteminde Kommunes økonomiske politik\n\nPunktet afgøres i\nByrådet\n\nIndstilling: Direktionen indstiller at\n\nA: Budgetopfølgning 2 - 2026 for alle udvalg godkendes.\n\nB: Kasseneutrale omplaceringer inden for de enkelte politikområder godkendes af det respektive fagudvalg i\nhenhold til notaterne hvor omplaceringer er beskrevet.\n\nKasseneutrale omplaceringer inden for politikområder\n\n1. Der omplaceres 0,104 mio. kr. i 2026 på politikområdet Dagtilbud, Unge og Uddannelse, fra\nFolkeskoleområdet til SFO området med det formål af opnå retvisende budgetter da midlerne\noprindeligt skulle være givet til SFO området.\n2. Der omplaceres 0,111 mio. kr. 2026 på politikområdet Dagtilbud, Unge og Uddannelse, fra Dagtilbud,\nFælles formål til Daginstitutioner, heraf 0,054 mio. kr. til Daginstitutionen Fjordvang og 0,057 mio. kr. til\nDaginstitutionen Mælkevejen vedr. opnormering af ledelse samt midler til barn med behov for særlig\nstøtte.\n3. Der omplaceres 0,100 mio.kr. i 2026 på politikområdet Dagtilbud, Unge og Uddannelse, fra\ndaginstitutioner til dagplejen, søskende tilskud med henblik på retvisende budgetter i forhold til at\nsøskende tilskud konteres under dagplejen.\n4. Der omplaceres 0,300 mio. kr. i 2026 fra på politikområdet Dagtilbud, Unge og Uddannelse,\nDaginstitutioner, Økonomisk friplads til tilskud private instit., pasningsordn.mv, Økonomisk friplads for\nat få retvisende budgetter, der skal ses på i 2027 om dette skal gøres permanent.\n5. Der omplaceres 0,900 mio.kr. i 2026 på politikområdet Dagtilbud, Unge og Uddannelse, fra Efterskoler\nog ungdomskostskoler til Bidrag til statslige og private skoler for at give et retvisende budget i 2026.\n6. Der omplaceres 0,485 mio. kr. i 2026 på politikområdet Dagtilbud, Unge og Uddannelse, fra\nBefordring, Skoleområdet til Folkeskoler for at imødekomme det merforbrug der er fremkommet pba. at\nskolelederen ansat primo 2026 ansættes på ny ordning. Der kigges ind i at imødekomme dette\nmerforbrug fra 2027 og frem.\n7. Der omplaceres 0,334 mio. kr. i 2026 og 0,691 mio. kr. i 2027 og frem fra PPR under politikområdet\nBørn og Familie til Modtageteam som udfører opgaven omkring Ungerådgivningen.\n8. Der omplaceres 1,426 mio. kr. i 2027 på politikområdet Pleje og Sundhed, fra Social- og\nSundhedselever, heraf 0,660 mio. kr. til Plejehjem samt 0,766 mio. kr. til Hjemmepleje, Sygepleje og\nRehabiliteringscenter.\n9. Der omplaceres 0,200 mio. kr. i 2026 på politikområdet Pleje og Sundhed, fra Øvrige udgifter til\nMadservice grundet indkøb af nyt inventar.\n10. Der omplaceres 1,316 mio. kr. i 2026 på politikområdet Handicap og Psykiatri, fra Køb af pladser til\negne institutioner vedr. ydelser som Myndighed køber hos egne institutioner.\n11. Der omplaceres 1,000 mio. kr. i 2026 på politikområdet Handicap og Psykiatri fra Øvrige udgifter til køb\naf pladser vedr. udgifter til borgere som har skiftet tilbud i løbet af året.\n12. Der omplaceres 0,500 mio. kr. på politikområdet Arbejdsmarked fra Integration til FGU i 2026 og varigt\ntil at imødekomme forventning om flere elever på FGU.\n13. Der omplaceres 0,005 mio. kr. fra 2027 og varigt på politikområdet Tværgående Administration, fra\nFælles Tværgående Organisationen til Sekretariat og Forvaltninger under politikområdet Tværgående\nAdministration vedrørende den vedtagne compliancebesparelse.\n14. Der omplaceres 3,962 mio. kr. i 2026 på politikområdet Tværgående Administration, fra Fælles\nTværgående Organisationen til Risikostyring/interne forsikringspuljer under politikområdet\n\nTværgående Administration for at dække det forventede merforbrug på området.\n15. Der omplaceres 0,740 mio. kr. i 2026 på politikområdet Tværgående Administration, internt under\nFælles Tværgående Organisationen fra robusthedspuljen til barselspuljen for at dække det forventede\nmerforbrug på området.\n16. Der omplaceres 0,500 mio.kr. i 2026 på politikområdet Tværgående Administration, internt under\nFælles Tværgående Organisation fra pulje vedr. Sænkelse af energiafgift til pulje vedr. Ekstern bistand\ntil omlægning af erhvervsområdet.\n17. Der omplaceres 0,615 mio.kr. på politikområdet Klima og Natur, fra Ejendomsadm. Energi til Natur\nvedr. delvis dækning af underskud.\n18. Der omplaceres 63,211 mio. kr. mellem lånoptagelse og balanceforskydninger med baggrund i\nomlægning af byggekredit til endeligt lån i forbindelse med opførelse af Ny Dalsbo.\n\nC: Nedenstående kasseneutrale omplaceringer mellem politikområder godkendes\n\nKasseneutrale omplaceringer mellem politikområder\n1. Der omplaceres 0,046 mio. kr. fra politikområdet Kultur, Fritid & Frivillighed til politikområdet\nTværgående administration, Sekretariat & Forvaltninger vedrørende merforbrug på lønbudgetter.\n2. Der omplaceres 0,200 mio. kr. i 2026 fra politikområdet Kultur, Fritid & Frivillighed til politikområdet\nErhverv & Vækst for at dække merudgiften på Turisme jf. beslutning på Kultur-, Fritids- og\nFrivillighedsudvalget 15. april 2026 pk. 41.\n3. Der omplaceres 0,475 mio. kr. i 2026 fra politikområdet Plan, Teknik & Bosætning, heraf 0,157 mio. kr.\nfra Ejendomsadm. Vedligehold +rengøring og 0,318 mio. kr. fra Ejendomsservise til politikområdet\nKlima & Natur til delvis dækning af underskud på Natur.\n4. Der omplaceres samlet 0,505 mio. kr. til Tværgående Administration fra 2027 og varigt vedrørende\nden vedtagne compliancebesparelse:\n1. Der omplaceres 0,076 mio. kr. fra politikområdet Dagtilbud, Uddannelse og Unge, heraf 0,056\nmio. kr. fra Folkeskoler og 0,020 mio. kr. fra Daginstitutioner\n2. Der omplaceres 0,011 mio. kr. fra politikområdet Børn og Familie, Børn, Unge og Forebyggelse\n3. Der omplaceres 0,019 mio. kr. fra politikområdet Kultur, Fritid & Frivillighed heraf 0,012 mio.kr.\nFra Grunde/bygn. - kultur/fritidsformål, Ungdomsskolen 0,006 mio.kr. og Kerteminde\nBibliotekerne 0,001 mio. kr.\n4. Der omplaceres 0,232 mio. kr. fra politikområdet Pleje og Sundhed vedr. Hjælpemidler og\ndepotet\n5. Der omplaceres 0,018 mio. kr. fra politikområdet Handicap og Psykiatri, heraf 0,006 mio. kr. fra\negne institutioner og 0,012 mio. kr. fra Køb af pladser\n6. Der omplaceres 0,016 mio. kr. fra politikområdet Arbejdsmarked heraf 0,006 mio. kr. fra STU, UU\n& FGU og 0,010 mio. kr. fra Beskæftigelsesindsats\n7. Der omplaceres 0,123 mio. kr. fra politikområdet Plan, Teknik og Bosætning fra Ejendomsadm.\nVedligehold + rengøring\n5. Der omplaceres 0,010 mio. kr. fra politikområdet Klima og Natur fra VintertjenesteDer omplaceres\n\n1,828 mio.kr. fra 2027 og frem fra politikområdet Handicap og Psykiatri, Befordring til Politikområdet\nPleje og Sundhed, Befordring. Årsagen til omplaceringen er ændret konteringspraksis, så udgifterne\nkonteres hvor de bevilges.\n6. Der omplaceres 2,850 mio.kr. i 2026 fra politikområdet Tværgående Administration til politikområdet\nHandicap og Psykiatri vedr. at nulstille overført merforbrug fra 2025.\n\nD: Nedenstående tillægsbevillinger med kassepåvirkning godkendes\n\nTillægsbevillinger med kassepåvirkning\n1. Kassen tilføres 0,138 mio. kr. i 2026 fra anlægsprojektet \"Kloakseparering af kommunale ejendomme\"\nfor at dække restfinansiering til \"Indretning af madservice\" samt \"Strandkilen Syd\" som midlertidigt er\nblevet finansieret af kassen\n2. Anlægsbevilling på 1,5 mio. kr. vedr. Marslev Børnehus deles og der flyttes hhv. 0,300 mio. kr. til 2027\nog 1,2 mio. kr. til 2030, jf. budgetforliget.\n3. Politikområdet Dagtilbud, Uddannelse og Unge, Dagtilbudsområdet, tilføres 2,281 mio. kr. i 2026 fra\nkassen til hhv. Dagtilbud (0,936 mio.kr.) og Tilskud til private institutioner, pasningsordninger mv.\n(1,345 mio.kr.) vedr. børnetalsregulering.\n4. Kassen tilføres 1,608 mio. kr. i 2026 fra politikområdet Tværgående Administration som er det\nresterende beløb vedrørende robusthedspuljen og midler fra den sænkede elafgift efter øvrige\nomplaceringer\n5. Politikområdet Arbejdsmarked tilføres 2,397 mio. kr. i 2027 fra til Integration (med overførselsadgang)\nfra kassen vedrørende midlertidig boligplacering af fordrevne fra Ukraine.\n\nE: Frigivelser af anlægsbudgetter godkendes\n\nFrigivelser af anlægsbudgetter\n1. Anlægsbudgettet til projektet Legepladsen på bakken i Munkebo på 0,400 mio. kr. i 2026 frigives\n2. Anlægsbudgettet til projektet Indretning af madservice på 4,500 mio. kr. i 2026 frigives"
+    },
+    {
+     "titel": "Behandling i Plan-, Teknik- og Bosætningsudvalget 2. november 2026",
+     "tekst": "Anbefales.\nBella Mortensen deltog ikke under behandlingen af dette punkt."
+    },
+    {
+     "titel": "Behandling i Ældre-, Handicap-, Psykiatri- og Sundhedsudvalget 2. november 2026",
+     "tekst": "Anbefales."
+    },
+    {
+     "titel": "Behandling i Børn- Unge- og Uddannelsesudvalget 3. november 2026",
+     "tekst": "Anbefales."
+    },
+    {
+     "titel": "Behandling i Erhvervs,- Vækst- og Arbejdsmarkedsudvalget 4. november 2026",
+     "tekst": "Anbefales."
+    },
+    {
+     "titel": "Behandling i Kultur-, Fritid- og Frivillighedsudvalget 4. november 2026",
+     "tekst": "Anbefales."
+    },
+    {
+     "titel": "Behandling i Klima- og Naturudvalget 4. november 2026",
+     "tekst": "Anbefales."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-4": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-4",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Orienteringssag: Status på Finansiel strategi pr. 30. september 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Økonomiudvalget forelægges kvartalsvis status på den finansielle strategi. Denne sag\nrapporterer status per 30. september 2026 vedr. afkast på investeringer samt status på lån.\nAfkastet på investeringer er pr. 30. september 2026 på 7,6 mio. kr., mens alle lån fortsat\noverholder rammerne i den finansielle strategi."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På møde i november 2025 besluttede Økonomiudvalget at opsige samarbejdet med en af de to\nkapitalforvaltere grundet lavere afkast end forventet. Derfor er der indgået aftale med Sydbank\nsom ny kapitalforvalter i stedet for Nykredit. Sydbank overtog kapitalforvaltningen den 17.\nmarts 2026. Opgørelsen nedenfor viser afkastet for alle tre kapitalforvaltere i tredje kvartal\n2026 i de perioder, hvor de hver især har varetaget kapitalforvaltningen. Rammerne for\nkommunens investeringer og lånesammensætning er fastsat i Kerteminde Kommunes\nfinansielle strategi.\n1. Afkastet i 2026 udgør pr. 30. september 7,6 mio. kr. svarende til et afkast på 3,95 pct på\ntværs af alle tre kapitalforvaltere. Jyske Bank præsterede et afkast på 4,20 pct.,\nSydbank præsterede 3,49 pct. i perioden 17.03.2026 til 30.09.2026 og Nykredit\npræsterede et afkast på 0,08 pct. i perioden 01.01.2026 til 16.03.2026.\n2. Kommunens lånesammensætning er på 81 pct. fastforrentede lån og 19 pct. variabelt\nforrentede lån. Renten på de variabelt forrentede lån justeres løbende, og har\ni 2026 været stigende hvilket betyder, at renteudgiften ligeledes har været stigende.\nAfkastet på kommunens anbringelser har svinget meget over årene. Kommunens afkast i\nperioden 2023 - 2025 har svinget mellem en gevinst på 4,93 mio. kr. til en gevinst på\n15,77 mio. kr.\nTabel 1: Afkast i perioden 2023 - 2025\n\nÅr\n\nAfkast (mio. kr.)\n\nAfkast i procent\n\nØkonomiske konsekvenser/finansiering\n\nLovgrundlag\n\nHøring\n\nPolitikker og strategier\nFinansiel Strategi\n\nPunktet afgøres i\nØkonomiudvalget\n\nIndstilling: Direktionen indstiller at\nOrienteringen tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-5": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-5",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Beslutningssag: Budgetreduktion til råd, udmøntning af budgetaftale 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Af budgetaftalen for 2027 fremgår følgende:\n\"Det indgår allerede i budgetaftalen for 2026 at administrationen skal se nærmere på\nharmoniseringsmuligheder. Partierne bag budgetaftalen for 2027 er enige om, at det skal ske\nved at administrationen i år, belyser de pågældende råd og nævns faktisk gennemsnitlige\nforbrug over de seneste tre år - 2023, 2024 og 2025 - mhp. at budgetterne fra 1. januar 2027\ntilpasses det gennemsnitlige forbrug over årene. Der har historisk været mindreforbrug, hvorfor\naftalepartierne er enige om forlods at indlægge en besparelse på 0,1 mio. kr. Vores råd bygger\npå frivillighed og således ydes der ikke vederlag for arbejdet i kommunens nedsatte råd\"\nI denne sag foreslår administrationen hvordan beslutningen udmøntes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Følgende råd indgår i udmøntningen af budgetaftalen fra 2027 og frem:\nSeniorrådet\nHandicaprådet\nUdsatterådet\nBæredygtighedsrådet\nLandsbyrådet\n\nDe ovenstående råd har følgende udgifter og vederlag:\nSeniorrådet\nMedlemmer modtager mødediæter, når møder afholdes. Medlemmer modtager ingen\nyderligere vederlag. Kerteminde Kommune afholder driftsudgifter for Seniorrådets virksomhed.\nSeniorrådet er ved sidste valg gået fra at være 4 medlemmer til fremover at være 9.\n\nHandicaprådet\nMedlemmer modtager mødediæter, når møder afholdes. Medlemmer modtager ingen\nyderligere vederlag. Kerteminde Kommune afholder driftsudgifter for Handicaprådets\nvirksomhed, herunder udgifter til tegnsprogstolkning og anden handicapkompensation.\n\nUdsatterådet\n\nUdsatterådets medlemmer modtager ingen mødediæter eller vederlag. Kerteminde Kommune\nafholder driftsudgifter for Udsatterådets virksomhed.\n\nBæredygtighedsrådet\nHistorisk har bæredygtighedsrådets formand modtaget vederlag for formandsposten jf.\nBæredygtighedsrådets kommissorium, men med budgetaftalen for 2027 modtages der ikke\nvederlag for denne post fremover. Kerteminde Kommune afholder driftsudgifter for\nBæredygtighedsrådets virksomhed.\n\nLandsbyrådet\nLandsbyrådet modtager af Kerteminde Kommune et årligt tilskud til administration.\n\nUdmøntningen af den vedtagne budgetreduktion til de pågældende råd er baseret på en\nmodel, hvor rådene som minimum har det gennemsnitlige forbrug til rådene for årene 2023,\n2024 og 2025 til rådighed. Dog er forbruget korrigeret for seniorrådet, som er gået fra 4 til 9\nmedlemmer ved sidste valg, samt at bæredygtighedsrådet fremover ikke har en udgift til\nformandsvederlag. Med udgangspunkt i dette har der beregnet været et\nhistorisk gennemsnitligt forbrug på 172 t.kr. på tværs af alle råd, mens det samlede budget er\npå 310 t.kr. Dette betyder at der er en rest på 139 t.kr. (før besparelsen). De respektive råds\nandel af resten på de 139 t.kr. afgør deres andel af besparelsen. Dermed, jo større\nmindreforbrug, jo større andel af besparelsen.\n\nModellen er illustreret i tabel 1.\n\nTabel 1\n\nBeløb i 1.000kr.\n\nNy\nGns.\nBudget\nPct.\nRest\nBudgetreduktion budget\nforbrug 2027\nandel\n\nLandsbyråd\n\nSeniorråd\n\nHandicapråd\n\nBæredygtighedsrådet 47\n\nI alt\n\nUdsatteråd\n\nØkonomiske konsekvenser/finansiering\nDen vedtagne reducering af budgettet til råd på 100 t. kr. udmøntes. Udmøntningen har ingen\nkassepåvirkning.\n\nLovgrundlag\n\nHøring\nSkal ikke i høring.\n\nPolitikker og strategier\nBudgetaftale 2027 - 2030\n\nPunktet afgøres i\nByrådet\n\nIndstilling: Direktionen indstiller at\n1. Den vedtagne budgetreduktion på 100 t. kr. udmøntes i henhold til tabel 1."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-6": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-6",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Beslutningssag: Midler til lokal løndannelse OK26 og honorering af deltidsansattes merarbejde",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Ved OK26 blev der som noget nyt afsat midler til lokal løndannelse med henblik på at understøtte en bæredygtig og\nfleksibel løndannelse i kommunerne. Midlerne for 2026 er tilført ved midtvejsreguleringen (trepartsmidler) og\nmidlerne for 2027 tilføres pr. 1. januar 2027 (finansieret inden for den økonomiske ramme ved OK26).\n\nSom følge af faglig voldgiftskendelse af 4. februar 2026 om honorering af deltidsansattes merarbejde, ændres\noverenskomstbestemmelserne om mer- og overarbejde, således at deltidsansatte, der arbejder ud over den aftalte\narbejdstid, honoreres med overtidshonorering på samme måde som fuldtidsansatte.\n\nDen økonomiske udmøntning af begge punkter forelægges Økonomiudvalget."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Midler til lokal løndannelse OK26\nVed OK26 blev der som noget nyt afsat midler til lokal løndannelse med henblik på at understøtte en bæredygtig og\nfleksibel løndannelse i kommunerne.\nMidlerne for 2026 er tilført ved midtvejsreguleringen (trepartsmidler) og midlerne for 2027 tilføres pr. 1. januar 2027\n(finansieret inden for den økonomiske ramme ved OK26).\n\nFor Kerteminde Kommune udgør midlerne:\n\nTabel 1\n\nÅr\n\nVarige midler\n\nEngangsmidler\n\nSamlet beløb\n\n1,55 mio. kr.\n\n1,22 mio. kr.\n\n2,77 mio. kr.\n\n2,00 mio. kr.\n\n2,00 mio. kr.\n\nLæsevejledning: De varige midler i 2026 stiger fra 1,55 mio. kr. til 2,00 mio. kr. fra 2027, dvs. 0,450 mio. kr. tilføres\nyderligere fra 2027.\n\nMidlerne vedr. 2026 er i forbindelse med midtvejsreguleringen placeret som en pulje under Økonomiudvalget, mens\nmidlerne vedr. 2027 i forbindelse med vedtagelsen af Budget 2027 ligeledes er placeret som en pulje under\nØkonomiudvalget. Nærværende sag anbefaler en udmøntning af midlerne.\n\nRammer for anvendelsen af midlerne\nDet er aftalt mellem KL og Forhandlingsfællesskabet, at kommunen prioriterer og fordeler midlerne ud fra lokale\nbehov, udfordringer og strategiske hensyn. Der er ikke centralt fastsat krav om, at midlerne skal anvendes til\nbestemte personalegrupper, fagområder eller indsatser. Midlerne kan bl.a. bruges til opkvalificering,\nefteruddannelse, lønløft etc.\n\nOrientering til de faglige organisationer\nDer er ikke aftalt centrale krav til processen for orientering af de faglige organisationer.\nKL anbefaler imidlertid, at kommunen efter beslutningen om fordelingen af midlerne gennemfører en\norienteringsproces, hvor de lokale repræsentanter for de faglige organisationer orienteres om de prioriteringer der\ner foretaget og baggrunden herfor. Orienteringen kan eksempelvis ske til hovedudvalget i overensstemmelse med\nKerteminde Kommunes lønpolitik.\nHvis midlerne anvendes til lønforbedringer, skal disse forhandles med de forhandlingsberettigede faglige\norganisationer efter de almindelige regler for lokal løndannelse.\n\nHvordan har andre kommuner prioriteret og udmøntet midlerne:\nHR og Personale har indhentet erfaringer fra en række kommuner i netværket med henblik på at afdække, hvordan\nde har prioriteret og udmøntet midlerne lokalt. De tilbagemeldinger, der er modtaget viser, at kommunerne i vid\nudstrækning til dels inddrager strategiske hensyn i prioriteringen. Nogle kommuner udmønter til bestemte områder,\nandre til bestemte overenskomstgrupper, mens der også er tilfælde, hvor midlerne udmøntes via den generelle\npris- og lønfremskrivning i kommunen.\n\nAnbefalinger til udmøntning af midlerne\nPå baggrund af de centralt aftalte rammer for anvendelsen af midlerne og erfaringsudveksling med andre\nkommuner i netværket, anbefales det at vælge at prioritere midlerne på en af følgende måder i Kerteminde\nKommune:\n\n1) Engangsmidlerne vedrørende lokal løndannelse fordeles efter hensigterne i trepartsaftalen\nMidlerne anvendes til at understøtte de faggrupper, der er omfattet af trepartsaftalen 2023, hvilket betyder at\nmidlerne udmøntes på ældre- og sundhedsområdet samt det pædagogiske og socialpædagogiske område.\nMidlerne udmøntes som en samlet pulje til hvert chefområde, hvorefter den enkelte chef skal tage stilling til\nhvordan midlerne bedst bruges.\n\nTabel 2\n\nProcentdel af\nrelevante\nmedarbejdere\n\nVarige\n\nVarige\n\nmidler\n\nEngangsmidler 2026\n\nmidler\n\nkun i\n\nfra\n\ni alt\n\nSocial,\nArbejdsmarked & 12,9%\n\nBorgerservice\n\nBørn, Unge &\nUddannelse\n\nÆldre &\nSundhed\n\nI alt\n\n2) Ligelig fordeling på tværs af overenskomstområder\nMidlerne fordeles bredt mellem kommunens overenskomstområder med henblik på at understøtte en fleksibel og\nbæredygtig løndannelse på tværs af organisationen.\n\nAdministrationen anbefaler at udmønte efter model 1 og dermed efter hensigterne i trepartsaftalen.\n\nHonorering af deltidsansattes merarbejde fremadrettet\nSom følge af faglig voldgiftskendelse af 4. februar 2026 om honorering af deltidsansattes merarbejde, ændres\noverenskomstbestemmelserne om mer- og overarbejde, således at deltidsansatte, der arbejder ud over den aftalte\narbejdstid, honoreres med overtidshonorering på samme måde som fuldtidsansatte.\nDe områder, hvor andelen af merarbejde er størst er:\nSocial, Arbejdsmarked & Borgerservice\nBørn, Unge & Uddannelse\nÆldre & sundhed\n\nÆndringerne har virkning fra 1. april 2026 og medfører en forventet samlet pris- og lønfremskrivning i Kerteminde\nKommune på 1.104 t. kr. i 2027 og frem (opgjort i 2027 priser).\nMidlerne på 1.104 t.kr. udmøntes til de pågældende decentrale enheder efter nedenstående model:\n\nTabel 3\n\nGennemsnitlig udbetalt\n\nPct.\n\nårligt merarbejde 2023-2025 andel\n\nFordeling af den\nfremadrettede\nudgift\n\nSocial,\nArbejdsmarked &\n\nÆldre & Sundhed\n\nI alt\n\nBorgerservice\n\nBørn, Unge &\nUddannelse\n\nØkonomiske konsekvenser/finansiering\nI 2026 er midlerne tilgået Kerteminde Kommune ved midtvejsreguleringen, og er blevet placeret i en pulje under\nØkonomiudvalget.\n\nVed vedtagelsen af budget 2027 - 2030 blev de varige midler fra 2027 placeret i en pulje under Økonomiudvalget.\n\nBegge puljer udmøntes med denne sag.\nI forbindelse med overførselssagen kan der laves en særskilt opfølgning på forbruget af midlerne i 2026.\n\nLovgrundlag\nOK26 og voldgiftskendelse af 4. februar 2026\n\nHøring\nPunktet skal ikke i høring. Direktionens indstillinger har været drøftet i Strategisk Ledergruppe (SLG) og\nanbefalingerne i sagen følger beslutningen i SLG.\n\nPolitikker og strategier\n\nPunktet afgøres i\nØkonomiudvalget\n\nIndstilling: Direktionen indstiller at\n1. De varige midler vedrørende lokal løndannelse udmøntes efter hensigterne i den daværende trepartsaftale\n(model 1, tabel 2), både hvad angår midlerne i 2026 og 2027 og varigt.\n\n2. Engangsmidlerne vedrørende lokal løndannelse fordeles efter hensigterne i den daværende trepartsaftale\n(model 1, tabel 2).\n\n3. Midler til deltidsansatte udmøntes til lokale lønbudgetter efter tabel 3"
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-7": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-7",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Beslutningssag: Styrelsesvedtægt for Kerteminde Kommunes dagtilbud",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Børn-, unge- og uddannelsesudvalget godkendte på sit møde d. 3.2. udkast til\nStyrelsesvedtægt for Kerteminde Kommunes dagtilbud med henblik på at indhente udtalelser\nfra forældrebestyrelser og fælles bestyrelse. På mødet d. 8.4. behandlede Børn-, unge- og\nuddannelsesudvalget de indhentede udtalelser og udpegede delelementer i dem, der\nskulle indarbejdes i Styrelsesvedtægten for Kerteminde Kommunes dagtilbud.\nAdministrationen har efterfølgende indarbejdet delelementerne.\nUdvalget pegede på mødet d. 8.4.blandt andet på, at det indarbejdes i styrelsesvedtægten, at\nder skal tages og offentliggøres referater af forældrebestyrelsernes møder. Eftersom det er\nen væsentlig ændring af styrelsesvedtægten, har forældrebestyrelserne i dagtilbuddene og\nfælles bestyrelserne haft mulighed for afgive yderligere en udtalelse. Det har én bestyrelse\nbenyttet sig af og har udtalt sig positivt.\nKravet om udfærdigelse og offentliggørelse af referater af bestyrelsesmøder er herefter\nindarbejdet i udkast til styrelsesvedtægt godkendelse.\nPr. 1.1.27. træder organisationsændringer på dagtilbudsområdet i kraft, jf. Økonomiudvalgets\nbeslutning d. 7.10. vedr. eftersyn af den kommunale organisation, som har medført behov for\nat tilpasse udkast til styrelsesvedtægt, så den er overensstemmende med den\nfremadrettede organisering af dagtilbuddene. Administrationen har derfor indhentet yderligere\nudtalelser fra den fælles bestyrelse og de forældrebestyrelser, der berøres af tilpasningerne i\nstyrelsesvedtægten.\nUdkast til Styrelsesvedtægt for de Kerteminde Kommunes dagtilbud lægges hermed op til\npolitisk beslutning i Byrådet.\nAlle indkomne udtalelser fra bestyrelserne samt det oprindelige og det ændrede udkast til\nStyrelsesvedtægt for Kerteminde Kommunes dagtilbud er vedlagt sagen. I udkast til\nden ændrede styrelsesvedtægt er markeret med rød skrift, hvor de udpegede delelementer fra\nudtalelserne er indarbejdet, jf. Børn- unge- og uddannelsesudvalgets beslutning d. 8.4.\nLigesom tilpasninger af styrelsesvedtægten affødt af beslutning vedrørende eftersyn af\norganisationen er markeret med grøn skrift.\n\nSupplerende sagsfremstilling\nRedaktionel fejl i §7 i udkast til styrelsesvedtægt, jf. Børn-, unge- og uddannelsesudvalgets\nindstilling d. 3.11., rettes, når Byrådet har afsluttet sin behandling."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Baggrund for revidering af Styrelsesvedtægt for Kerteminde Kommunes dagtilbud:\nByrådet besluttede d. 25.9., at samarbejdsmodellen, Stærke lokale børn- og ungefællesskaber,\nindføres i alle kommunale skoler og dagtilbud. Beslutningen medfører, at bestyrelser i dagtilbud\n\nog skole i hvert skoledistrikt skal have et tæt samarbejde.\nAdministrationens juridiske vurdering var på den baggrund, at det gav behov for at\nbeskrive kompetencefordelingen mellem de ordinære bestyrelsesmøder og de fælles møder\nmellem bestyrelserne i hvert skoledistrikt i styrelsesvedtægten. Administrationen foreslår i\nudkast til styrelsesvedtægt, at det er forældrebestyrelsen og skolebestyrelsen i hvert\nskoledistrikt, der i fællesskab beskriver egen model for fælles møder, herunder mødefrekvens\nmed mere, så modellen er tilpasset lokale forhold og ønsker.\nLovgivningen angiver, at de bestyrelser, der berøres af en væsentlige ændringer i\nStyrelsesvedtægten, altid skal have mulighed for at udtale sig om ændringerne, hvorfor Børn-,\nunge- og uddannelsesudvalget sendte udkast til styrelsesvedtægt til de kommunale dagtilbud\nmed henblik på at indhente udtalerser fra dagtilbudsområdets bestyrelser.\nBørn-, unge- og uddannelsesudvalget udpegede d. 8.4. med afsæt i de indkomne udtalelser fra\nbestyrelserne elementer til indarbejdelse i udkast til styrelsesvedtægt. Et element, krav om\nudarbejdelse og offentliggørelse af referater af bestyrelsesmøder, vurderedes juridisk at være\naf så væsentlig en karakter, at bestyrelserne skulle gives mulighed for at udtale sig om det.\nDen mulighed har bestyrelserne haft og fælles bestyrelsen for Hindsholm Børn & unge har\nafgivet en udtalelse.\nØkonomiudvalgets beslutning i sag om eftersyn af den kommunale organisation d. 7.10., hvor\nDagplejen sammenlægges under fælles ledelse og bestyrelse og ledelsesstrukturen for flere\ndagtilbud ændres, indebar behov for tilpasning af styrelsesvedtægten. Administrationen\nvurderede, at tilpasningen betød væsentlige ændringer for fælles bestyrelsen ved Hindsholm\nBørn & unge samt forældrebestyrelserne i Dagplejen Nord og Syd, Mælkevejen, Orange\nPlanet, Børnenes By, Balders Hus og Fjordvangens Vuggestue & børnehave, så de blev givet\nmulighed for at udtale sig. Den mulighed har fælles bestyrelsen ved Hindsholm Børn & unge\nbenyttet sig af.\nDelelementer i udtalelser fra forældrebestyrelser og fælles bestyrelse, som Børn-, ungeog uddannelsesudvalget d. 8.4. udpegede til indarbejdelse:\nUdtalende part\n\nDelelement, der skal\nindarbejdes\n\nAdministrationens\nbemærkning\n\nForældrebestyrelserne\nfra Balders Hus,\nBørnenes By og\nDagplejen Nord\n\nBestyrelserne ved.\nMarslev og Nymarken\nskoler samt Marslev\nBørnehus\n\nFælles bestyrelsen v.\nHindsholms Børn &\nunge\n\nIndarbejdet:\nDagtilbud, der har\nfælles ledelse og\nbestyrelse med en\nskole omfattes af\nstyrelsesvedtægten.\n\"Pudsigt, at dagtilbud Fælles bestyrelser\nfor landsbyordninger skal således\nskrives helt ud af\nfremadrettet\nStyrelsesvedtægten\nforholde sig og sikre\nfor dagtilbud, når det opfyldelse af\ner så stor en del af\nbestemmelserne i\nkommunens\nbåde\ndagtilbud som er\nStyrelsesvedtægten\nlandsbyordninger.\"\nfor Kerteminde\nKommunes\ndagtilbud og\nStyrelsesvedtægten\nfor Kerteminde\nKommunes\nskolevæsen.\n\nFælles bestyrelsen v.\nHindsholms Børn &\nunge\n\n\"Vi undrer os over, at\nder alene henvises til\nDagtilbudslovens §\nIndarbejdet.\n15 for opgaverne for Forældrebestyrelser\nforældrebestyrelserne og Fælles\nfor dagtilbud, når\nbestyrelser skal som\nLandsbyordningerne hidtil forholde sig\nbåde skal efterleve\nbåde til § 14 og 15 i\nDagtilbudslovens §14 dagtilbudsloven.\nog 15 (..) Det bør\nvære det samme.\"\n\nFælles bestyrelsen v.\nHindsholms Børn &\nunge\n\n\"Vi undrer os over, at\ndet er frivilligt om\nforældrebestyrelserne Indarbejdet.\ni dagtilbud tager\nreferat og laver dem Det er ikke et krav i\ntilgængelige. Hermed lovgivningen, at der\nopfordring til, at\ntages referat af\nbyrådet kraftigt\nbestyrelsesmøder i\nopfordrer/beslutter, at skoler eller\nder skal tages referat dagtilbud.\nsom gøres\ntilgængeligt for andre\nforældre ift\ngennemsigtighed.\"\n\nFælles bestyrelsen v.\nHindsholm Børn &\nunge\n\n\"Det vil være rart med\nen dato/år på,\nIndarbejdes, når\nhvornår det er trådt i datoen er kendt.\nkraft.\"\n\nLokalMED v. Marslev\nog Nymarken skoler\n\nUdtalelse vedr. udarbejdelse og offentliggørelse af referater af bestyrelsesmøder:\nUdtalende part Udtalelse\n\nAdministrationens\nbemærkning\n\nFælles\nbestyrelsen v.\nHindsholm\nBørn & unge\n\nIndarbejdet.\n\n\"Referater fra vores\nbestyrelsesmøder har i flere år\nværet offentlige. De ligger på\nvores hjemmeside.\"\n\nUdtalelser vedr. tilpasning af styrelsesvedtægten til ny organisering af\ndagtilbudsområdet:\nUdtalende\npart\n\nUdtalelse (uddrag)\n\n\"Vi anerkender, at\ndet er oplagt at\nsamle dagplejere i\nén fælles dagpleje,\nsærligt set i lyset af,\nat der til november\nkun er én dagplejer\n\nAdministrationens bemærkning\n\ntilbage på\nHindsholm.\nVi er dog bekymrede\nfor, at\norganiseringen med\nén fælles\nforældrebestyrelse\nfor dagplejen vil\nbetyde, at dagplejen\nfremadrettet ikke\nlængere er\nrepræsenteret i den\nfælles bestyrelse\nunder\nlandsbyordningen.\nFælles\nDet kan svække den\nbestyrelsen lokale forankring og\nv.\nsammenhængskraft,\nHindsholm som er en væsentlig\nBørn &\nstyrke ved\nunge\nlandsbyordningen.\n\nAdministrationen har været\nundersøgende på muligheder\nfor at bevare en\nforældrerepræsentant fra\nDagplejen i den fælles\nbestyrelse ved Hindholm Børn &\nunge. Det er ikke muligt, når\ndagplejeren ikke længere er\nansat i daginstitutionen på\nHindsholm. Fælles bestyrelsen\nhar dog mulighed for at indbyde\nforældrerepræsentanter eller\nandre\nrepræsentanter for Dagplejen til\nbestyrelsesmøder og etablere et\nsamarbejde med Dagplejen.\nBlot skal fælles bestyrelsen\nVi finder det vigtigt at sikre sig, at beslutninger, der\nbevare forældrenes alene vedører skole\neller dagtibud på Hindsholm,\nmulighed for at\nbidrage på tværs af træffes af\nbestyrelsesrepræsentanterne for\ndagtilbud og skole,\nså vi sikrer en tydelig hhv. skole og dagtilbud på\nHindsholm.\nrød tråd, et fælles\nsprog og en fælles\nforståelse i børnenes Løsningsmuligheden fremgår af\nudkast til styrelsesvedtægt.\novergang fra\ndagtilbud til skole. Vi\nopfordrer derfor til, at\nder i forbindelse med\njusteringen af\nstyrelsesvedtægten\nfindes en løsning,\nder fortsat sikrer\ndagplejens lokale\nrepræsentation og\nindflydelse i\nlandsbyordningens\nfælles bestyrelse.\"\n\nØkonomiske konsekvenser/finansiering\nIkke relevant for sagen.\n\nLovgrundlag\nDagtilbudsloven §14-15 og Folkeskolelovens §24a.\n\nHøring\nAdministrationen har indbudt alle forældrebestyrelser og fælles bestyrelser ved kommunale\ndagtilbud til at afgive en udtalelse ved. udkast til Styrelsesvedtægt for Kerteminde Kommunes\ndagtilbud.\nDer er modtaget høringssvar fra forældrebestyrelserne ved Balders Hus, Børnenes By og\nDagplejen Nord, fra skolebestyrelserne ved Marslev og Nymarken skoler, forældrebestyrelsen\nved Marslev Børnehus samt fra fælles bestyrelsen ved Hindsholm Børn & unge og LokalMED\nved Marslev og Nymarken skoler.\nAdministrationen har desuden indbudt alle forældrebestyrelser og fælles bestyrelser ved\nkommunale dagtilbud til at afgive yderligere en udtalelse vedr. udarbejdelse og offentliggørelse\naf referater af bestyrelsesmøder.\nDer er modtaget én udtalelse fra fælles bestyrelsen ved Hindsholm Børn & unge.\nEndeligt har administrationen indbudt forældebestyrelser ved Dagpleje Nord & Syd,\nMælkevejen, Orange Planet, Børnenes Hus, Balders Hus, Fjordvangen Børnehave &\nvuggestue samt fælles bestyrelse ved Hindsholm Børn & unge til at udtale sig om ændringer i\nstyrelsesvedtægten som følge af omorganiseringen af dagtilbudsområdet, jf. beslutning om\neftersyn af den kommunale organisation.\nDer er modtaget én udtalelse fra fælles bestyrelsen ved Hindsholm Børn & unge.\n\nPolitikker og strategier\nFællesskab i Kerteminde:\n\"I Kerteminde Kommune er målet, at kommunen skal være et fællesskab af ansvarsfulde aktive\nborgere.\"\nFælles retning for velfærdsområderne:\n\"Vi vil have endnu mere fart på fællesskaberne på velfærdsområdet, derfor vil vi arbejde\nstrategisk med styrket fokus på borgerne og fællesskaber, og deraf i endnu højere grad\nunderstøtte implementeringen af vores fællesskabsvision med udgangspunkt i kommunens to\nhovedprincipper:\n- Borgeren skal sikres en enkel og sammenhængende sagsbehandling.\n\n- Decentral styreform, hvor ansvar og beslutningskompetence så vidt muligt er lagt ud i\ninstitutionerne.\"\nBørn- og ungepolitikken:\n\"Forældre, netværk, lokalsamfund og vi som professionelle ses og mødes som aktive\nholdspillere i børn og unges liv og udvikling.\"\n\nPunktet afgøres i\nByrådet\n\nIndstilling: Direktionen indstiller at\nUdkast til Styrelsesvedtægt for Kerteminde Kommunes dagtilbud godkendes."
+    },
+    {
+     "titel": "Behandling i Børn- Unge- og Uddannelsesudvalget 3. november 2026",
+     "tekst": "Anbefales efter rettelse af redaktionelle fejl"
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-9": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-9",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Beslutningssag: Udpegning til bestyrelse for KIT Syd",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I forlængelse af de syddanske kommuners godkendelse af etableringen af KIT Syd skal der\nudpeges en bestyrelse for KIT Syd. Kommunaldirektørkredsen i Syddanmark skal ifølge\nvedtægterne afgive fælles indstilling til ejerkommunerne om udpegning til bestyrelsen. De er\nenige om bl.a. at indstille Nikolaj Sørensen fra Kerteminde Kommune."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I løbet af oktober og starten af november har byrådene og kommunalbestyrelserne i de 22\nsyddanske kommuner godkendt etableringen af KIT Syd. Et af de første skridt i forlængelse\nderaf er udpegningen af en bestyrelse for KIT Syd.\nIfølge de politisk godkendte vedtægter for KIT Syd skal bestyrelsen bestå af syv medlemmer\nmed ansættelse hos de syddanske kommuner: tre kommunaldirektører, to med ledende\nstillinger inden for IT og digitalisering og to ledende stillinger inden for økonomi.\nKommunaldirektørkredsen i Syddanmark har en tværgående og koordinerende rolle og skal\nafgive fælles indstilling til udpegning til bestyrelsen. Det enkelte bestyrelsesmedlem udpeges af\nkommunalbestyrelsen i den kommune, hvor vedkommende er ansat. De kommuner, som ikke\nskal udpege til bestyrelsen, orienteres om kommunaldirektørkredsens indstilling.\nTo bestyrelsespladser følger direkte af vedtægterne. Pladserne varetages af kommunaldirektørerne i de kommuner, der har henholdsvis formands- og næstformandsposten i KKR\nSyddanmark. I den nuværende valgperiode omfatter det derfor kommunaldirektørerne i\nHaderslev Kommune og Svendborg Kommune. Kommunaldirektørkredsen (ekskl. de\nindstillede) er på den baggrund enige om at indstille Peter Karm og Finn G. Johansen til\nbestyrelsen for KIT Syd.\nDerudover er kommunaldirektørkredsen (ekskl. den indstillede) enige om at indstille\nkommunaldirektør Thomas Foged fra Billund Kommune.\nFor de øvrige fire bestyrelsespladser er kommunaldirektørkredsen enige om at indstille:\nøkonomi- og arbejdsmarkedsdirektør Sarah Gaarde fra Vejle Kommune\nchef for Økonomi, Personale og IT Nikolaj Sørensen fra Kerteminde Kommune\nstabschef for Teknologi, Data og Forretnings-IT Anders Drejer Lønbæk fra Odense\nKommune\nIT-chef Bo Mathiasen Bladmose fra Sønderborg Kommune\nIndstillingerne medfører, at der samlet set i bestyrelsen er en bredde ift. kommunestørrelse og\ngeografi, samt at ingen kommune ikke får mere end ét medlem i bestyrelsen.\nFor alle bestyrelsesmedlemmer er valgperioden fire år. Valgperioden for kommunaldirektører\nfølger den kommunale valgperiode og løber dog i første omgang fra 1. januar 2027 til 31.\ndecember 2029. Valgperioden for de øvrige bestyrelsesmedlemmer er forskudt med to år.\nDeres første valgperiode er dog forlænget med ét år og løber derfor fra 1. januar 2027 til 31.\ndecember 2031.\n\nI bilag 7.1 til vedtægterne er det udfoldet, hvad der sker, hvis et bestyrelsesmedlem skifter job\neller har forfald.\n\nØkonomiske konsekvenser/finansiering\n\nLovgrundlag\n\nHøring\n\nPolitikker og strategier\n\nPunktet afgøres i\nByrådet.\n\nIndstilling: Direktionen indstiller at\nkommunaldirektørkredsens indstilling om at udpege Nikolaj Sørensen til bestyrelsen for KIT\nSyd følges."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-10": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-10",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Gensidig information - åbent punkt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Opfølgning på ønske om at drøfte stillingsprofil for chefen for Kultur, Fritid & Faciliteter i lyset af\nomlægning af erhvervsområdet.\nAdministrationen har modtaget en henvendelse fra Dræby Beboerforening, repræsenterende et\nnetværk af borgere omkring Dræby Fed og Odense Fjord, med ønske om et orienteringsmøde\nmed de rette, borgmester og udvalgsformænd."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-18-oekonomiudvalg-14": {
+   "id": "kerteminde-2026-11-18-oekonomiudvalg-14",
+   "kommune": "Kerteminde",
+   "udvalg": "Økonomiudvalg",
+   "dato": "2026-11-18",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=dbda2782-d352-4a94-8b3e-b55fe7619a49",
+   "hentet": "2026-11-12T12:55:33.599Z",
+   "titel": "Godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende beslutningsprotokollen.\nFor at godkende beslutningsprotokollen, skal hvert medlem underskrive ved at trykke\n\"Godkend\" i First Agenda efter oplæsning af referat."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-1": {
+   "id": "kerteminde-2026-11-19-seniorraad-1",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-2": {
+   "id": "kerteminde-2026-11-19-seniorraad-2",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Orientering om budget 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kl. 9.30 Susanne Buch orienterer om budget 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-3": {
+   "id": "kerteminde-2026-11-19-seniorraad-3",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Vedtægter for Seniorrådet",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der er udarbejdet et forslag til nye vedtægter for Seniorrådet i Kerteminde Kommune.\nForslaget forelægges Seniorrådet til drøftelse, så rådets bemærkninger og eventuelle\nændringsforslag kan indgå i det videre arbejde, inden vedtægterne forelægges Byrådet. Efter\nældrelovens § 35 fastsætter Byrådet vedtægterne i samarbejde med rådet.\nForslaget opdaterer vedtægternes henvisninger fra lov om retssikkerhed og administration på\ndet sociale område til ældreloven og beskriver Seniorrådet som et selvstændigt rådgivende\norgan. Forslaget fremhæver desuden rådets arbejde for dialog og medindflydelse. Reglerne\nom offentliggørelse af dagsordener og beslutningsreferater præciseres med forbehold for\ntavshedspligt, databeskyttelse og aktindsigt.\nDe væsentligste ændringer i forhold til de gældende vedtægter er:\nValg og sammensætning: Forslaget indarbejder ældrelovens regler om direkte valg,\nmindst fem medlemmer, stedfortrædere, forbud mod listeopstillinger og valgforbund samt\nmulighed for at aflyse afstemningen, hvis der ikke er opstillet det nødvendige antal\nkandidater. Rådets størrelse på 5-9 medlemmer videreføres.\nKonstituering: Fristen ændres fra senest 15 dage efter valget til senest 15 dage efter\nvalgperiodens begyndelse.\nHøring og orientering: Forslaget samler og uddyber reglerne i et særskilt afsnit. Hvor de\ngældende vedtægter siger, at rådet skal høres om alle forslag, der vedrører ældre,\nlægger forslaget op til at skelne mellem sager, hvor rådet høres, sager, hvor rådet\norienteres, og sager uden hørings- eller orienteringspligt. Forslaget angiver eksempler på\nde enkelte kategorier og viderefører som udgangspunkt en høringsfrist på to uger med\nmulighed for at tilpasse fristen efter sagens karakter. Hvis der ikke opnås enighed om\nhøringsrammerne, følger det af ældrelovens § 34, stk. 3, at rådet skal høres om alle\nforslag, der vedrører ældre.\nTilsynsrapporter: Den gældende bestemmelse om, at Seniorrådet skal udtale sig om\ntilsynsrapporter, og at rapporterne fremsendes, så snart de er udarbejdet, videreføres\nikke. I forslaget nævnes tilsynsrapporter i stedet som et eksempel på sager, hvor\norientering kan være relevant. Forslaget giver dog også mulighed for, at rådet afgiver\nbemærkninger til materiale, der giver anledning til politisk behandling eller opfølgning.\nHastesager: Den gældende regel om, at en særlig høringsprocedure aftales mellem\nborgmester eller udvalgsformand og Seniorrådets formand, erstattes af en mere udførlig\nprocedure om forudgående orientering og bemærkninger, når egentlig høring ikke kan\ngennemføres uden væsentlig ulempe, samt efterfølgende forelæggelse i\nundtagelsestilfælde.\nBestemmelser, der udgår eller ændres: Forslaget viderefører ikke den udtrykkelige\nbestemmelse om, at rådets møder ikke er åbne for offentligheden, den nærmere regel\nom at stedfortrædere deltager ikke i Seniorrådets møder, medmindre de er indtrådt som\nmedlem.\n\nRådets bemærkninger indgår i den videre behandling af forslaget.\nForslaget til nye vedtægter er vedlagt sagen.\nDet indstilles, at Seniorrådet drøfter forslaget til nye vedtægter og afgiver eventuelle\nbemærkninger og ændringsforslag til det videre arbejde."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-4": {
+   "id": "kerteminde-2026-11-19-seniorraad-4",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Tilfredshedsundersøgelse på kommunens plejehjem",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Christina Pawsø forelægger resultatet af undersøgelsen foretaget hos borgere på plejehjem."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-5": {
+   "id": "kerteminde-2026-11-19-seniorraad-5",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Beslutningssag: Kvalitetsstandarder for ældre- og sundhedsområdet 2027 i høring",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kvalitetsstandarder skal godkendes én gang årligt i Byrådet. I denne sag skal udvalget godkende, at\nkvalitetsstandarder for 2027 sendes i høring i Seniorrådet og Handicaprådet i perioden frem til 11.\ndecember 2026.\nOversigt over administrationens ændringsforslag samt kvalitetsstandarder med ændringer er vedhæftet\ndagsordenen: Aflastningsophold, Omsorgstandpleje, Nødkald, Lægekørsel, Kørsel med hjælpemidler,\nAfløsning i eget hjem, Vedligeholdende træning og genoptræning.\nFølgende kvalitetsstandarder uden ændringer er vedhæftet dagsordenen: Boligindretning,\nHandicapkørsel, Hjælp til praktiske opgaver i hjemmet, Hjælpemidler og forbrugsgoder, Madservice,\nPasning af nærtstående med handicap eller alvorlig sygdom, Personlig pleje og hjælp, Plejebolig,\nRehabiliteringsforløb, Reparation af hjælpemidler, Ældrebolig."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunalbestyrelsen skal jf. bekendtgørelsens §2 mindst én gang årligt følge op på de efter §1, stk. 3,\nfastsatte mål for kvaliteten og styringen af hjælpen efter §§83, 83a og 86. Det vil sige kvalitetsstandarder\nfor personlig pleje og hjælp mv., rehabiliteringsforløb samt kommunal genoptræning og\nvedligeholdelsestræning.\nKvalitetsstandarderne beskriver således det serviceniveau, som Byrådet fastlægger. For at efterleve\nlovkravet, skal Byrådet godkende kvalitetsstandarderne inden udgangen af året. Kvalitetsstandarden skal\nindeholde generel information til borgerne om den hjælp, de kan forvente fra kommunen, hvis de får\nbehov for en ydelse, som er omfattet af Bekendtgørelsen om lovpligtige kvalitetsstandarder.\n\nAdministrationen har opdateret og præciseret alle lovpligtige og ikke- lovpligtige\nkvalitetsstandarder. Da de ikke-lovpligtige tidligere har været forelagt politisk med henblik på\nfastsættelse af serviceniveau, er de inkluderet i sagen med henblik på høring i Seniorrådet og\nHandicaprådet og efterfølgende godkendelse i Byrådet.\nForslag til ændringer er indskrevet med blåt og den tekst der foreslås fjernet er markeret med rødt.\nGenerelle rettelser: Indledende tekst er ensrettet, paragraffer, kontaktoplysninger er opdaterede samt\nmindre sproglige ændringer er foretaget.\n\nHøringsperioden frem til 11. december 2026 er tilrettelagt under hensyntagen til Seniorrådets\nog Handicaprådets mødeaktivitet, idet de først kan behandle sagen på møder henholdsvis 19.\nnovember og 3. december 2026. Dette medfører, at sagen først kan forelægges til politisk\n\nbehandling og beslutning i januar 2027.\nOversigt over administrationens ændringsforslag samt kvalitetsstandarder med ændringer er vedhæftet\ndagsordenen: Aflastningsophold, Omsorgstandpleje, Nødkald, Lægekørsel, Kørsel med hjælpemidler,\nAfløsning i eget hjem, Vedligeholdende træning og genoptræning. Følgende kvalitetsstandarder uden\nændringer er vedhæftet dagsordenen: Boligindretning, Handicapkørsel, Hjælp til praktiske opgaver i\nhjemmet, Hjælpemidler og forbrugsgoder, Madservice, Pasning af nærtstående med handicap eller\nalvorlig sygdom, Personlig pleje og hjælp, Plejebolig, Rehabiliteringsforløb, Reparation af hjælpemidler,\nÆldrebolig\n\nØkonomiske konsekvenser/finansiering\nIngen\n\nLovgrundlag\nBEK nr. 1575 af 27/12/2014: Bekendtgørelse om kvalitetsstandarder for hjemmehjælp,\nrehabiliteringsforløb og træning efter servicelovens §§ 83, 83 a og 86\n\nHøring\nHøring i Seniorrådet og Handicaprådet frem til 11. december 2026.\n\nPolitikker og strategier\n\nPunktet afgøres i\nByrådet\n\nIndstilling: Direktionen indstiller at\nudvalget sender kvalitetsstandarderne i høring i Seniorrådet og Handicaprådet frem til 11.\ndecember 2026.\n\nBeslutning på Ældre-, Handicap-, Psykiatri- og Sundhedsudvalget 2026-2029 02-112026\nKvalitetsstandarder sendes i høring"
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-6": {
+   "id": "kerteminde-2026-11-19-seniorraad-6",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Beslutningssag: Sagsbehandlingsfrister på ældre- og sundhedsområdet i høring",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsen skal på de enkelte sagsområder fastsætte og offentliggøre frister for,\nhvor lang tid der må gå fra modtagelsen af en ansøgning til afgørelsen skal være truffet.\nByrådet har sidst godkendt ændrede sagsbehandlingsfrister i 2025 i forbindelse med den nye\nældrelov.\nDa der ikke tidligere har været sagsbehandlingsfrister efter Almenlovens §54 for ældrebolig og\nplejebolig foreslås disse frister tilføjet med en frist på henholdsvis 8 og 6 uger.\nSagen skal i høring i Seniorrådet og Handicaprådet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Efter retssikkerhedslovens § 3, stk. 2 skal kommunen fastsætte og offentliggøre\nsagsbehandlingsfrister på de relevante sagsområder. Der er ikke i lovgivningen fastsat krav\nom, hvor ofte fristerne skal godkendes af byrådet. Kommunen bør dog løbende sikre, at de\noffentliggjorte frister er retvisende og ajourførte.\nByrådet godkendte i 2025 sagsbehandlingsfrister på ældre- og sundhedsområdet i forlængelse\naf den nye ældrelov.\nAdministrationen har vurderet sagsbehandlingsfristerne på ældre- og sundhedsområdet og\nfremlægger fristerne til fornyet godkendelse. Der har ikke hidtil været en sagsbehandlingsfrist\nefter almenboliglovens §54 for ældrebolig og plejebolig. I lighed med flere andre kommuner,\nforeslås sagsbehandlingsfristen for ældrebolig sat til 8 uger og plejebolig til 6 uger.\nHøringsperioden frem til 11. december 2026 er tilrettelagt under hensyntagen til Seniorrådets\nog Handicaprådets mødeaktivitet, idet de først kan behandle sagen på møder henholdsvis 19.\nnovember og 3. december 2026. Dette medfører, at sagen først kan forelægges til politisk\nbehandling og beslutning i januar 2027.\nDe ajourførte sagsbehandlingsfrister er vedhæftet sagen.\n\nØkonomiske konsekvenser/finansiering\n\nLovgrundlag\nLov om retssikkerhed og administration på det sociale område (retssikkerhedsloven) § 3, stk.\n\nHøring\nSagen skal i høring i Seniorrådet og Handicaprådet i perioden frem til 11. december 2026.\n\nPolitikker og strategier\n\nPunktet afgøres i\nByrådet\n\nIndstilling: Direktionen indstiller at\nudvalget sender oversigten over sagsbehandlingsfrister på ældre- og sundhedsområdet i\nhøring i Seniorrådet og Handicaprådet frem til 11. december 2026\n\nBeslutning på Ældre-, Handicap-, Psykiatri- og Sundhedsudvalget 2026-2029 02-112026\nSendes i høring"
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-7": {
+   "id": "kerteminde-2026-11-19-seniorraad-7",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Synlighed",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Seniorrådet fortsætter drøftelse af rådets synlighed."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-8": {
+   "id": "kerteminde-2026-11-19-seniorraad-8",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Gensidig orientering",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Gensidig orientering ved alle."
+    }
+   ],
+   "bilag": []
+  },
+  "kerteminde-2026-11-19-seniorraad-9": {
+   "id": "kerteminde-2026-11-19-seniorraad-9",
+   "kommune": "Kerteminde",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-19",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.kerteminde.dk/vis?id=d71dc527-674c-41de-912b-02fe2307b6f7",
+   "hentet": "2026-11-12T12:55:59.008Z",
+   "titel": "Godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Seniorrådet godkender referatet fra dagens møde."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=2e718586-5722-4079-bd2e-c6a096741641": {
-   "senest": "2026-10-08",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=7628c324-15dd-425c-86f5-3824b868a94d": {
-   "senest": "2025-12-11",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=3257e400-80d2-4c18-b637-7123e23aba65": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=d72c2a85-1aa4-4e76-a2df-489d2f3b02a1": {
    "senest": "2026-01-06",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=3b8e8642-f81f-489c-8af7-e0d9a5cb8b83": {
    "senest": "2025-05-05",
@@ -8415,11 +8888,11 @@
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=d744f286-862d-4a68-b816-94687da051d4": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=dd7f3d06-3a6f-4e69-9187-297e930fcd66": {
    "senest": "2025-12-08",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=8b138a2f-f1da-4d23-b621-9ce91adbc0dc": {
    "senest": "",
@@ -8427,83 +8900,83 @@
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=4b5fd6e1-7117-416e-9a34-e94bfde26c43": {
    "senest": "2025-12-15",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=b8bc0102-7ff1-46a4-be82-b13a30163ddc": {
-   "senest": "2026-10-22",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=9d2e58e5-36a7-4873-b0e3-0d4e55401fe4": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=81b2f40e-bfe4-4a42-809c-3b32dfd27024": {
    "senest": "2026-01-07",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=6708dd28-5232-40bc-9955-fb61bbd5ddc5": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=f3f7d891-57e8-4b2f-a8a5-b56562d34cc4": {
    "senest": "2026-01-06",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=7dddb256-c3c8-4fb5-9702-d5c784d07c63": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=905959bf-fc37-4567-be94-a0eed1250ab7": {
    "senest": "2026-01-08",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=4d71b9d9-28f4-454f-9bc7-26ecd315f22a": {
    "senest": "2026-09-29",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=a24d026d-3e6d-4d02-8d4b-eaeabecb36d4": {
    "senest": "2025-12-16",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=d02f131d-c1c9-4364-8bb0-912757c2f29a": {
-   "senest": "2026-11-03",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=69b4229e-a402-49f5-8cf6-455df3c725b2": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=2c7694f3-091a-41d1-a6fe-85b9a0c62f5d": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=40cba17f-bf0a-4034-b685-361f2be39dc9": {
    "senest": "2026-01-07",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=3bb8e4fd-02d8-4f51-8743-67363c3f5e82": {
    "senest": "2026-01-07",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=c4630b06-9092-4bce-9d2d-ba6a2f95910b": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=52ceabff-8db4-4b44-b6c8-0450d9304375": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=f02d8f01-0bd4-4f0e-9607-c22415ad110a": {
-   "senest": "2025-12-19",
-   "tjekket": "2026-11-11"
+   "senest": "2026-11-12",
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=e9a99023-61e0-4a5f-a853-e7e2fa242ac8": {
    "senest": "2026-06-24",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/ForCommittee?committeeId=aa09bc54-44c2-4893-a594-aa65dc663726": {
    "senest": "2026-10-22",
-   "tjekket": "2026-11-11"
+   "tjekket": "2026-11-12"
   },
   "https://dagsordener.kerteminde.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -8511,6 +8984,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-11T21:41:48.106Z",
+ "opdateret": "2026-11-12T12:56:21.075Z",
  "kommune": "Kerteminde"
 }
