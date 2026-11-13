@@ -881,6 +881,30 @@
    "dato": "2026-11-11",
    "punkter": 9,
    "parser": 3
+  },
+  "236f89bc-a493-4248-a8f0-d665de52bf64": {
+   "lastmod": "2026-11-13",
+   "type": "dagsorden",
+   "udvalg": "Aarhus Byråd",
+   "dato": "2026-11-18",
+   "punkter": 11,
+   "parser": 3
+  },
+  "e8a159bc-3d23-4b89-80b3-9125d4e1a6f3": {
+   "lastmod": "2026-11-13",
+   "type": "referat",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-11",
+   "punkter": 11,
+   "parser": 3
+  },
+  "aa4f0c31-62fd-4022-b97b-e9967146f5c9": {
+   "lastmod": "2026-11-13",
+   "type": "referat",
+   "udvalg": "Natur- og Klimaudvalget",
+   "dato": "2026-11-11",
+   "punkter": 3,
+   "parser": 3
   }
  },
  "sager": {
@@ -11835,12 +11859,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer blev gjort opmærksom på, at enkelte bilag manglede. Forvaltningen oplyste, at\nbilagene ville blive lagt på sagen i løbet af udvalgsmødet.\nDagsordenen blev herefter godkendt."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-2": {
@@ -11848,12 +11877,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Referat",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nReferatet blev taget til efterretning"
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-3": {
@@ -11861,12 +11895,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Nyt fra Stadsdirektøren",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nStadsdirektøren orienterede om følgende emner:\nlufthavnen\nstadion\nen udtalelse fra Amnesty International.\nUdvalgets medlemmer stillede spørgsmål til de enkelte emner.\nDet blev aftalt, at forvaltningen udarbejder et notat om udtalelsen fra Amnesty\nInternational."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-4": {
@@ -11874,10 +11913,10 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Svar på forslag fra EL, LA, DD og DF om et fælles opgør med magistratstyret",
    "afsnit": [
     {
@@ -11886,7 +11925,7 @@
     },
     {
      "titel": "Resumé",
-     "tekst": "Indstillingen behandler beslutningsforslag fra EL, LA, DD og DF samt besvarer spørgsmål\nfra byrådets drøftelse af 17. juni 2026.\nDet vurderes, at det ikke umiddelbart er muligt at indføre samme styreform som i Oslo\nKommune. Det vurderes desuden, at der er fordele og ulemper ved alle kommunale\nstyreformer, og at det er vanskeligt at estimere gevinster og omkostninger forbundet med\nen evt. ændring af styreform i Aarhus Kommune.\nDer kan forventes et vist provenu på sigt, men størrelsen vil afhænge af, hvilken ny\nstyreform man sammenligner magistratsstyret med.\nHvis byrådet ønsker en politisk forankret proces, har Aarhus Kommune tradition for at\nforankre processen i et opgaveudvalg (§ 17, stk. 4).\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) byrådet tager de mulige styreformer til efterretning, som beskrevet i bilag 2 og 3\nAt 2) byrådet tager de efterspurgte relevante betænkninger, rapporter og belysninger til\nefterretning (bilag 5-16), som beskrevet i bilag 2 og 4.\nSAGSFORLØB:"
+     "tekst": "Indstillingen behandler beslutningsforslag fra EL, LA, DD og DF samt besvarer spørgsmål\nfra byrådets drøftelse af 17. juni 2026.\nDet vurderes, at det ikke umiddelbart er muligt at indføre samme styreform som i Oslo\nKommune. Det vurderes desuden, at der er fordele og ulemper ved alle kommunale\nstyreformer, og at det er vanskeligt at estimere gevinster og omkostninger forbundet med\nen evt. ændring af styreform i Aarhus Kommune.\nDer kan forventes et vist provenu på sigt, men størrelsen vil afhænge af, hvilken ny\nstyreform man sammenligner magistratsstyret med.\nHvis byrådet ønsker en politisk forankret proces, har Aarhus Kommune tradition for at\nforankre processen i et opgaveudvalg (§ 17, stk. 4).\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) byrådet tager de mulige styreformer til efterretning, som beskrevet i bilag 2 og 3\nAt 2) byrådet tager de efterspurgte relevante betænkninger, rapporter og belysninger til\nefterretning (bilag 5-16), som beskrevet i bilag 2 og 4.\nSAGSFORLØB"
     },
     {
      "titel": "Behandling i Aarhus Byråd 17. juni 2026",
@@ -11894,7 +11933,7 @@
     },
     {
      "titel": "Behandling i Magistraten 27. oktober 2026",
-     "tekst": "Punktnummer: 3\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Borgmesterens Afdelings indstilling af 30. september\nDanmarksdemokraterne, Enhedslisten de Rød-Grønne og Liberal Alliance tog forbehold.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper kjeldsen forhindret i at deltage i sagens behandling."
+     "tekst": "Punktnummer: 3\nFremsendes til Aarhus Byråd med bemærkning, at Magistraten i mødet den 27. oktober\n2026 anbefaler, at byrådet tiltræder Borgmesterens Afdelings indstilling af 30. september\n\nDanmarksdemokraterne, Enhedslisten de Rød-Grønne og Liberal Alliance tog forbehold.\nRådmand for Magistratsafdelingen for Teknik og Miljø Nicolaj Bang og Rådmand for\nKultur og Borgerservice Jesper kjeldsen forhindret i at deltage i sagens behandling."
     },
     {
      "titel": "Behandling i Aarhus Byråd 4. november 2026",
@@ -11908,12 +11947,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Budget 2027 – endelig udmøntning i BA",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede om emnet med udgangspunkt i en PowerPoint-præsentation,\nder blandt andet omhandlede:\ndet fremtidige organisationsdiagram for Borgmesterens Afdeling\nkonsekvenserne for afdelingen.\nUdvalgets medlemmer stillede herefter spørgsmål og fremsatte bemærkninger, herunder\nom varetagelsen af lovpligtige opgaver og den fremtidige it-infrastruktur."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-6": {
@@ -11921,12 +11965,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Temadrøftelse: Indkøb og Udbud i Aarhus Kommune",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede om emnet med udgangspunkt i en PowerPoint-præsentation,\nder blandt andet omhandlede:\nøkonomi\netik\nmiljø og klima.\nUdvalgets medlemmer stillede spørgsmål både under og efter præsentationen, herunder\nom indkøb af fødevarer og mulighederne for lokale indkøb.\nUdvalget drøftede desuden kort, hvilke fokuspunkter det ønsker at lægge vægt på i det\nvidere arbejde med området."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-7": {
@@ -11934,12 +11983,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Forberedelse til studietur til Paris",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen gennemgik med udgangspunkt i en PowerPoint-præsentation udkastet til\nprogram for de enkelte dage på studieturen."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-8": {
@@ -11947,12 +12001,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Status på AI",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede med udgangspunkt i en PowerPoint-præsentation om status\nfor arbejdet med kunstig intelligens på tværs af kommunen.\nDet blev oplyst, at udvalget løbende vil modtage en status på området.\nUdvalget pegede på flere fokuspunkter vedrørende implementeringen, både generelt og\npå konkrete områder."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-9": {
@@ -11960,12 +12019,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Skriftlige orienteringer",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer var ingen bemærkninger."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-10": {
@@ -11973,12 +12037,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Sager på vej",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nUdvalget bemærkede omfanget af kommende sager set i forhold til antallet af resterende\nudvalgsmøder i 2026.\nForvaltningen redegjorde for den forventede fordeling af sagerne på de resterende\nmøder."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-oekonomi-og-erhvervsudvalget-11": {
@@ -11986,12 +12055,17 @@
    "kommune": "Aarhus",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=ba153f35-2e9d-42f6-a3f0-2495216065ef",
-   "hentet": "2026-11-06T12:52:38.198Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e8a159bc-3d23-4b89-80b3-9125d4e1a6f3",
+   "hentet": "2026-11-13T21:14:01.506Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer var ingen bemærkninger."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-sundheds-og-omsorgsudvalget-1": {
@@ -12143,12 +12217,17 @@
    "kommune": "Aarhus",
    "udvalg": "Natur- og Klimaudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2016a41f-7077-40c1-b719-34493af0f35a",
-   "hentet": "2026-11-06T12:52:48.475Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=aa4f0c31-62fd-4022-b97b-e9967146f5c9",
+   "hentet": "2026-11-13T21:14:07.831Z",
    "titel": "Referat fra sidste udvalgsmøde",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer var ingen bemærkninger."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-natur-og-klimaudvalget-2": {
@@ -12156,10 +12235,10 @@
    "kommune": "Aarhus",
    "udvalg": "Natur- og Klimaudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2016a41f-7077-40c1-b719-34493af0f35a",
-   "hentet": "2026-11-06T12:52:48.475Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=aa4f0c31-62fd-4022-b97b-e9967146f5c9",
+   "hentet": "2026-11-13T21:14:07.831Z",
    "titel": "Svar på forslag fra SF om plads til flere inden for planetens grænser",
    "afsnit": [
     {
@@ -12168,7 +12247,7 @@
     },
     {
      "titel": "Resumé",
-     "tekst": "SF foreslår et skifte i håndteringen af befolkningstilvæksten i Aarhus ved at prioritere\ntransformation af eksisterende bygningsmasse over nybyggeri med henblik på at\nreducere ressourceforbrug og CO₂-udledning og at begrænse behovet for at inddrage\nnye arealer til byudvikling.\nSF foreslår bl.a. kortlægning af transformationspotentialet for eksisterende byggeri.\nSamtidig foreslås en analyse af, hvordan lokalplanlægningen kan prioritere\ntransformationsprojekter med henblik på fastsættelse af mål for andel nye boliger\ngennem transformation.\nDen foreslåede kortlægning på bygningsniveau er omfattende og ressourcetung, og\nTeknik og Miljø vurderer, at det alene giver et øjebliksbillede og begrænset ny, holdbar\nviden, da realiseringen af et potentiale vil være afhængig af bl.a. ejeres dispositioner og\nmarkedsforhold.\nTeknik og Miljø anbefaler, at byrådet inkluderer forslagets intentioner om at fremme\ntransformation af eksisterende byggeri i eksempelvis Planstrategien, men vurderer ikke,\nat Aarhus Ejendomme i lyset af den nuværende driftssituation bør pålægges yderligere af\ndenne type administrative opgaver.\n\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) I forbindelse med Planstrategi som kommer til byrådets behandling i 2027\ninkluderes forslagets intentioner om i højere grad at udnytte og transformere den\neksisterende bygningsmasse i Aarhus Kommune.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Det bemærkes, at indstillingen ikke er fremsendt rettidigt til\nBorgmesterens Afdeling i forhold til at kunne nå byrådsbehandling indenfor den fastsatte\nfrist på 3 måneder efter byrådsbehandlingen af beslutningsforslaget.\nSAGSFORLØB:"
+     "tekst": "SF foreslår et skifte i håndteringen af befolkningstilvæksten i Aarhus ved at prioritere\ntransformation af eksisterende bygningsmasse over nybyggeri med henblik på at\nreducere ressourceforbrug og CO₂-udledning og at begrænse behovet for at inddrage\nnye arealer til byudvikling.\nSF foreslår bl.a. kortlægning af transformationspotentialet for eksisterende byggeri.\nSamtidig foreslås en analyse af, hvordan lokalplanlægningen kan prioritere\ntransformationsprojekter med henblik på fastsættelse af mål for andel nye boliger\ngennem transformation.\nDen foreslåede kortlægning på bygningsniveau er omfattende og ressourcetung, og\nTeknik og Miljø vurderer, at det alene giver et øjebliksbillede og begrænset ny, holdbar\nviden, da realiseringen af et potentiale vil være afhængig af bl.a. ejeres dispositioner og\nmarkedsforhold.\n\nTeknik og Miljø anbefaler, at byrådet inkluderer forslagets intentioner om at fremme\ntransformation af eksisterende byggeri i eksempelvis Planstrategien, men vurderer ikke,\nat Aarhus Ejendomme i lyset af den nuværende driftssituation bør pålægges yderligere af\ndenne type administrative opgaver.\nBESLUTNINGSPUNKTER\nDet indstilles:\nAt 1) I forbindelse med Planstrategi som kommer til byrådets behandling i 2027\ninkluderes forslagets intentioner om i højere grad at udnytte og transformere den\neksisterende bygningsmasse i Aarhus Kommune.\nBORGMESTERENS AFDELINGS PÅTEGNING\nFremsendes til Magistraten. Det bemærkes, at indstillingen ikke er fremsendt rettidigt til\nBorgmesterens Afdeling i forhold til at kunne nå byrådsbehandling indenfor den fastsatte\nfrist på 3 måneder efter byrådsbehandlingen af beslutningsforslaget.\nSAGSFORLØB"
     },
     {
      "titel": "Behandling i Aarhus Byråd 12. november 2025",
@@ -12194,12 +12273,17 @@
    "kommune": "Aarhus",
    "udvalg": "Natur- og Klimaudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2016a41f-7077-40c1-b719-34493af0f35a",
-   "hentet": "2026-11-06T12:52:48.475Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=aa4f0c31-62fd-4022-b97b-e9967146f5c9",
+   "hentet": "2026-11-13T21:14:07.831Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nUdvalget spurgte ind til en beslutning truffet af Aarhus Byrådet i maj 2026 i relation til sag\n2 på dagsordenen. Forvaltningen vender tilbage med svar."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-1": {
@@ -12661,8 +12745,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.233Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [],
    "bilag": []
@@ -12674,8 +12758,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Etablering af IT-serviceorganisation",
    "afsnit": [
     {
@@ -12696,8 +12780,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Svar på forslag fra EL, LA, DD og DF om et fælles opgør med magistratstyret",
    "afsnit": [
     {
@@ -12719,6 +12803,10 @@
     {
      "titel": "Behandling i Aarhus Byråd 4. november 2026",
      "tekst": "Punktnummer: 6\nFremsendes til Økonomi- og Erhvervsudvalget til behandling i henhold til beslutning i\nbyrådets møde den 4. november 2026."
+    },
+    {
+     "titel": "Behandling i Økonomi- og Erhvervsudvalget 11. november 2026",
+     "tekst": "Punktnummer: 4\nUdvalget kunne enstemmigt tiltræde indstillingen i overensstemmelse med Magistratens\nanbefaling.\nThomas Kastrup Christensen var forhindret i at deltage i udvalgets behandling af sagen."
     }
    ],
    "bilag": []
@@ -12730,8 +12818,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Seks nye skæve boliger på Forsorgshjemmet Østervang",
    "afsnit": [
     {
@@ -12768,8 +12856,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Godkendelse af Rammeaftale 2027-28",
    "afsnit": [
     {
@@ -12798,8 +12886,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Byggemodning Aarhus Ø - etape 12",
    "afsnit": [
     {
@@ -12820,8 +12908,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 9,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Lokalplan 1262 - Bevarende lokalplan for Nørreport 16-20B og Kaløgade 5-7 - Forslag",
    "afsnit": [
     {
@@ -12842,8 +12930,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 10,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Udmøntning til midlertidigt byrum på Bispetorv",
    "afsnit": [
     {
@@ -12876,8 +12964,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 11,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Renovering af Rå Hal ved Godsbanen",
    "afsnit": [
     {
@@ -12898,8 +12986,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 12,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Ny specialskole i Lisbjerg",
    "afsnit": [
     {
@@ -12920,8 +13008,8 @@
    "dato": "2026-11-18",
    "type": "dagsorden",
    "nr": 13,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=0c0c2b3f-555c-4216-a211-4f1f5e53fe58",
-   "hentet": "2026-11-12T21:49:24.264Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=236f89bc-a493-4248-a8f0-d665de52bf64",
+   "hentet": "2026-11-13T21:13:53.234Z",
    "titel": "Anlægsregnskab for Sports- og Kulturcampus",
    "afsnit": [
     {
@@ -12938,11 +13026,11 @@
  },
  "sitemaps": {
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=ca5d760a-c7dd-4ee8-b29b-41e51d8a94b7": {
-   "senest": "2026-11-12",
+   "senest": "2026-11-13",
    "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=022a7fed-c258-4e8f-bcef-9907791f4c70": {
-   "senest": "2026-11-06",
+   "senest": "2026-11-13",
    "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=cc536006-94ff-4d59-9a74-5165a7b7007a": {
@@ -12954,7 +13042,7 @@
    "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=e7ff7438-b4eb-4965-a055-e53332a34df7": {
-   "senest": "2026-11-06",
+   "senest": "2026-11-13",
    "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=f00551e6-8b74-4aba-a4af-3bc4228ce661": {
@@ -12983,6 +13071,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-13T12:27:25.083Z",
+ "opdateret": "2026-11-13T21:14:07.833Z",
  "kommune": "Aarhus"
 }

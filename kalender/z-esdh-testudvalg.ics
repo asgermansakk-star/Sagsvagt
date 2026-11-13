@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Sagsvagt//Møder//DA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Sagsvagt: Z-ESDH Testudvalg
+X-WR-TIMEZONE:Europe/Copenhagen
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VEVENT
+UID:20261113-z-esdh-testudvalg@sagsvagt.dk
+DTSTAMP:20261113T000000Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Møde: Z-ESDH Testudvalg
+DESCRIPTION:3 punkter på dagsordenen.\n\n\nDagsordenen: https://www.kk.dk
+ /dagsordener-og-referater/Z-ESDH%20Testudvalg/m%C3%B8de-13112026/dagsorde
+ n
+URL:https://www.kk.dk/dagsordener-og-referater/Z-ESDH%20Testudvalg/m%C3%B8
+ de-13112026/dagsorden
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
