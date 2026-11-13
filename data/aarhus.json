@@ -857,6 +857,30 @@
    "dato": "2026-11-18",
    "punkter": 11,
    "parser": 3
+  },
+  "f2c7160a-3f98-4f8e-af6b-4e99c2a3b6e6": {
+   "lastmod": "2026-11-13",
+   "type": "dagsorden",
+   "udvalg": "Magistraten",
+   "dato": "2026-11-17",
+   "punkter": 3,
+   "parser": 3
+  },
+  "9b9297da-3613-429a-9d9d-321e70ca7dbb": {
+   "lastmod": "2026-11-13",
+   "type": "referat",
+   "udvalg": "Kulturudvalget",
+   "dato": "2026-11-11",
+   "punkter": 7,
+   "parser": 3
+  },
+  "0faf5b67-6dfc-417d-be95-6ea29c02f702": {
+   "lastmod": "2026-11-13",
+   "type": "referat",
+   "udvalg": "Børn- og Unge-udvalget",
+   "dato": "2026-11-11",
+   "punkter": 9,
+   "parser": 3
   }
  },
  "sager": {
@@ -12183,12 +12207,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nGodkendt."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-2": {
@@ -12196,12 +12225,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Referat fra udvalgsmøde den 28. oktober 2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nTaget til efterretning."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-3": {
@@ -12209,12 +12243,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Karakterer ved folkeskolens prøver 2025/26",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede om emnet med udgangspunkt i en PowerPoint-præsentation\nmed bl.a. følgende indhold:\n• Kort om folkeskolens prøver\n• Karaktersnit over tid\n• Resultater ved opdeling på baggrundvariable\n• Opfølgning på faglige resultater\nDer var løbende spørgsmål til oplægget fra udvalgets medlemmer, herunder udvikling i\nprøvefritagelse. Der blev efterspurgt kombinationer af baggrundvariable, herunder\nkøn/baggrund.\nForvaltningen leverer et opfølgende ark med kombinationer af baggrundsvariable."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-4": {
@@ -12222,12 +12261,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Forberedelse til workshop om erfaringsopsamling",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede om emnet med udgangspunkt i en PowerPoint-præsentation\nmed bl.a. følgende indhold:\n• Baggrund og formål\n• Om erfaringsopsamlingen\n• Om workshoppen\nDernæst spørgsmål til dialogmøder fra udvalgets side samt inddragelse."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-5": {
@@ -12235,12 +12279,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Forslag til besparelser",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen orienterede om emnet med udgangspunkt i en PowerPoint-præsentation\nmed bl.a. følgende indhold:\n• Oversigt over budgetaftalen inden for Magistratsafdelingen for Børn og Unge\n• Forslag til besparelser på en række områder\no Dagtilbud\no SFO og UngiAarhus\no Specialtilbud\no Indsatser i relation til skolen\no Tværgående og øvrige\n• Proces for besparelser\nSpørgsmål løbende fra udvalgets medlemmer generelt og til konkrete besparelsesforslag."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-6": {
@@ -12248,12 +12297,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Orienteringspunkter",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nKort orientering fra forvaltningen vedr. konkret bekymringsskrivelse fra\nforældreorganisationer. Emnet forventes at blive sat på næstkommende udvalgsmøde."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-7": {
@@ -12261,12 +12315,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Skriftlige orienteringer",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nIntet at bemærke."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-8": {
@@ -12274,12 +12333,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Sager på vej",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nIntet at bemærke."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-boern-og-unge-udvalget-9": {
@@ -12287,12 +12351,17 @@
    "kommune": "Aarhus",
    "udvalg": "Børn- og Unge-udvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=2728ffa0-b23a-4dce-b623-19be006ccdf8",
-   "hentet": "2026-11-06T12:52:53.262Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=0faf5b67-6dfc-417d-be95-6ea29c02f702",
+   "hentet": "2026-11-13T12:27:25.081Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer gives en tilbagemelding vedr. en samlet tilbagemelding fra besparelserne."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-kulturudvalget-1": {
@@ -12300,12 +12369,17 @@
    "kommune": "Aarhus",
    "udvalg": "Kulturudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=8d357df1-7cf0-4f3e-b8ad-3ff1cd6de31e",
-   "hentet": "2026-11-06T20:39:47.566Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=9b9297da-3613-429a-9d9d-321e70ca7dbb",
+   "hentet": "2026-11-13T12:27:20.590Z",
    "titel": "Godkendelse af referat fra mødet 30. september 2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nReferatet blev godkendt."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-kulturudvalget-2": {
@@ -12313,12 +12387,17 @@
    "kommune": "Aarhus",
    "udvalg": "Kulturudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=8d357df1-7cf0-4f3e-b8ad-3ff1cd6de31e",
-   "hentet": "2026-11-06T20:39:47.566Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=9b9297da-3613-429a-9d9d-321e70ca7dbb",
+   "hentet": "2026-11-13T12:27:20.590Z",
    "titel": "Dagsorden med bemærkninger",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDagsordenen blev godkendt."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-kulturudvalget-4": {
@@ -12326,12 +12405,17 @@
    "kommune": "Aarhus",
    "udvalg": "Kulturudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=8d357df1-7cf0-4f3e-b8ad-3ff1cd6de31e",
-   "hentet": "2026-11-06T20:39:47.566Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=9b9297da-3613-429a-9d9d-321e70ca7dbb",
+   "hentet": "2026-11-13T12:27:20.590Z",
    "titel": "Kongelunden – følgegruppe",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nForvaltningen gav en kort status på projektet, tidsplanen og på økonomien i projekterne\nNyt Stadion Aarhus samt Atletikstadion, Sportens Hus. Der var også en kort beskrivelse\naf den sydlige del af idrætsbyen og kongeruten. Derudover præsenterede forvaltningen\nhovedkonklusionerne fra PwC's afsluttende tredjepartsreview af stadionprojektet.\nDer var spørgsmål fra udvalget, som forvaltningen besvarede, herunder om forventede\nprisstigninger."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-kulturudvalget-5": {
@@ -12339,12 +12423,17 @@
    "kommune": "Aarhus",
    "udvalg": "Kulturudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=8d357df1-7cf0-4f3e-b8ad-3ff1cd6de31e",
-   "hentet": "2026-11-06T20:39:47.566Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=9b9297da-3613-429a-9d9d-321e70ca7dbb",
+   "hentet": "2026-11-13T12:27:20.590Z",
    "titel": "Kulturudvalgets studietur",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nDer var en kort information med opfordring til at give feedback fra turen til forvaltningen.\nDer kommer en samlet opfølgning på studieturen på et senere udvalgsmøde blandt andet\nefter modtagelse af feedback."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-kulturudvalget-6": {
@@ -12352,12 +12441,17 @@
    "kommune": "Aarhus",
    "udvalg": "Kulturudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=8d357df1-7cf0-4f3e-b8ad-3ff1cd6de31e",
-   "hentet": "2026-11-06T20:39:47.566Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=9b9297da-3613-429a-9d9d-321e70ca7dbb",
+   "hentet": "2026-11-13T12:27:20.590Z",
    "titel": "Sager på vej",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nIntet at bemærke."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-kulturudvalget-7": {
@@ -12365,12 +12459,17 @@
    "kommune": "Aarhus",
    "udvalg": "Kulturudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=8d357df1-7cf0-4f3e-b8ad-3ff1cd6de31e",
-   "hentet": "2026-11-06T20:39:47.566Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=9b9297da-3613-429a-9d9d-321e70ca7dbb",
+   "hentet": "2026-11-13T12:27:20.591Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nRådmanden havde en orientering til udvalget.\nUdvalget var desuden enige om at korte det næste udvalgsmøde (den 25. november"
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-kulturudvalget-8": {
@@ -12378,12 +12477,17 @@
    "kommune": "Aarhus",
    "udvalg": "Kulturudvalget",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=8d357df1-7cf0-4f3e-b8ad-3ff1cd6de31e",
-   "hentet": "2026-11-06T20:39:47.566Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=9b9297da-3613-429a-9d9d-321e70ca7dbb",
+   "hentet": "2026-11-13T12:27:20.591Z",
    "titel": "Oplæg om og rundvisning ved Fredspladsen i Gellerup",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nUnder punktet deltog forvaltningen i Magistratsafdelingen for Kultur og Borgerservice,\nembedsfolk fra Magistratsafdelingen for Sociale Forhold og Beskæftigelse, desuden var\nAarhus Jazz Orchestra og Teater Refleksion repræsenteret.\nForvaltningen indledte med en kort rammesætning og fortælling om området fra\nBydelsudvikling, herefter fik udvalget en rundvisning på scenerne med dialog undervejs.\nEfter rundvisningen var der en opsamlende dialog med spørgsmål og bemærkninger til\nforvaltningerne samt Aarhus Jazz Orchestra og Teater Refleksion."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-11-by-og-planudvalget-1": {
@@ -12513,8 +12617,8 @@
    "dato": "2026-11-17",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=04be8877-6cb4-4e40-8dfd-5e2fba719ea0",
-   "hentet": "2026-11-12T12:59:14.882Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=f2c7160a-3f98-4f8e-af6b-4e99c2a3b6e6",
+   "hentet": "2026-11-13T12:27:15.733Z",
    "titel": "Kredsrådsmøde med Østjyllands Politi",
    "afsnit": [],
    "bilag": []
@@ -12526,8 +12630,8 @@
    "dato": "2026-11-17",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=04be8877-6cb4-4e40-8dfd-5e2fba719ea0",
-   "hentet": "2026-11-12T12:59:14.882Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=f2c7160a-3f98-4f8e-af6b-4e99c2a3b6e6",
+   "hentet": "2026-11-13T12:27:15.733Z",
    "titel": "Referat fra Magistratens møde den 10. november 2026",
    "afsnit": [],
    "bilag": []
@@ -12539,8 +12643,8 @@
    "dato": "2026-11-17",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=04be8877-6cb4-4e40-8dfd-5e2fba719ea0",
-   "hentet": "2026-11-12T12:59:14.882Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=f2c7160a-3f98-4f8e-af6b-4e99c2a3b6e6",
+   "hentet": "2026-11-13T12:27:15.733Z",
    "titel": "Renovering af Stenkildeparken, ALBOA afd. 13",
    "afsnit": [
     {
@@ -12835,43 +12939,43 @@
  "sitemaps": {
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=ca5d760a-c7dd-4ee8-b29b-41e51d8a94b7": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-12"
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=022a7fed-c258-4e8f-bcef-9907791f4c70": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-12"
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=cc536006-94ff-4d59-9a74-5165a7b7007a": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-12"
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=e301ea5c-c6c3-4b34-92ee-330d63828fb6": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-12"
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=e7ff7438-b4eb-4965-a055-e53332a34df7": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-12"
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=f00551e6-8b74-4aba-a4af-3bc4228ce661": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-12"
+   "senest": "2026-11-13",
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=31c2be8b-8f63-4eb4-9bb7-3cdeca4a8a0a": {
-   "senest": "2026-11-06",
-   "tjekket": "2026-11-12"
+   "senest": "2026-11-13",
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=dfec9f75-3df7-40ee-b768-12a260db6220": {
    "senest": "2025-09-27",
    "tjekket": "2026-10-25"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=5523897a-b366-4639-bb0b-3a59f3e3cf93": {
-   "senest": "2026-11-06",
-   "tjekket": "2026-11-12"
+   "senest": "2026-11-13",
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=51b46d2e-8abf-47d4-b994-e2e3dd85cf2f": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-12"
+   "tjekket": "2026-11-13"
   },
   "https://dagsordener.aarhus.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -12879,6 +12983,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-12T21:49:24.266Z",
+ "opdateret": "2026-11-13T12:27:25.083Z",
  "kommune": "Aarhus"
 }
