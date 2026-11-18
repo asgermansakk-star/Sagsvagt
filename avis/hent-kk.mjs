@@ -23,6 +23,9 @@ async function hent(url) {
 
 const ren = (s) => s.replace(/ /g, " ").replace(/[ \t]+/g, " ").replace(/\s*\n\s*/g, "\n").trim();
 
+// Kommunens mødesystem viser af og til et testudvalg ("Z ESDH testudvalg"); det er ikke et rigtigt udvalg
+const erTestudvalg = (u) => /\btest/i.test(u || "");
+
 // "/dagsordener-og-referater/<udvalg>/møde-DDMMYYYY/<type>"
 function parseMoedeUrl(href) {
   const m = decodeURIComponent(href).match(/^\/dagsordener-og-referater\/([^/]+)\/møde-(\d{2})(\d{2})(\d{4})\/(dagsorden|referat)$/);
@@ -48,7 +51,7 @@ function afsnit($, root) {
   });
   if (cur.tekst.length) ud.push(cur);
   // Fjern gentagne overskrifter i starten af teksten ("Indstilling Klima-...")
-  return ud.map((a) => ({ titel: a.titel, tekst: a.tekst.join("\n\n").replace(new RegExp("^" + a.titel + "\\s*"), "") }));
+  return ud.map((a) => ({ titel: a.titel, tekst: a.tekst.join("\n\n").replace(new RegExp("^" + a.titel.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\s*"), "") }));
 }
 
 // Kun almindelige webadresser (et javascript:-link fra kommunens side må aldrig ende som link på Sagsvagt)
@@ -62,7 +65,9 @@ async function hentPunkt(url) {
   const root = $(".paragraph--type--agenda-element-case").parent();
   const dele = afsnit($, root.length ? root : $("main"));
   const bilag = $(".file-link").map((_, e) => {
-    const a = $(e).is("a") ? $(e) : $(e).closest("a");
+    // På kk.dk ligger linket inden i .file-link (.file-link-text a), ikke uden om
+    let a = $(e).is("a") ? $(e) : $(e).closest("a");
+    if (!a.length) a = $(e).find("a[href]").first();
     return { navn: ren($(e).find(".file-link-text").text() || $(e).text()), url: webadresse(a.attr("href")) };
   }).get().filter((b) => b.navn);
   return { titel, afsnit: dele, bilag };
@@ -79,7 +84,7 @@ async function main() {
     const $ = await hent(`${LISTE}?page=${side}`);
     $('a[href^="/dagsordener-og-referater/"]').each((_, a) => {
       const m = parseMoedeUrl($(a).attr("href"));
-      if (!m) return;
+      if (!m || erTestudvalg(m.udvalg)) return;
       const key = `${m.udvalg}|${m.dato}`;
       // Et referat erstatter dagsordenen for samme møde
       if (!moeder.has(key) || m.type === "referat") moeder.set(key, m);
@@ -111,6 +116,20 @@ async function main() {
       } catch (e) { console.warn("Fejl:", e.message); }
     }
   }
+
+  // Testudvalg ud af data, hvis de er kommet ind før
+  for (const [id, s] of Object.entries(sager)) if (erTestudvalg(s.udvalg)) delete sager[id];
+
+  // Bilag, der blev gemt uden link (fejl i hentningen indtil 18/11-2026), hentes igen, nyeste først
+  const uden = Object.values(sager)
+    .filter((s) => (s.bilag || []).some((b) => !b.url || /\/undefined$/.test(b.url)))
+    .sort((a, b) => b.dato.localeCompare(a.dato)).slice(0, Number(process.env.BILAG_GENHENT ?? 150));
+  let rettet = 0;
+  for (const s of uden) {
+    try { const p = await hentPunkt(s.kilde); if (p.bilag.length) { s.bilag = p.bilag; rettet++; } }
+    catch (e) { console.warn("Bilag:", e.message); }
+  }
+  if (uden.length) console.log(`Bilagslinks rettet i ${rettet} af ${uden.length} sager`);
 
   await writeFile(DATA, JSON.stringify({ opdateret: new Date().toISOString(), sager }, null, 1));
   console.log(`Færdig: ${nye} nye, ${opdateret} opdaterede, ${Object.keys(sager).length} i alt`);

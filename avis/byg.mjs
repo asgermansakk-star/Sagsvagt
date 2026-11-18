@@ -713,7 +713,7 @@ async function main() {
   // listen viser de sager, vi bringer. Dagsordenen hos kommunen er sagens adresse uden "/punkt-N".
   const moeder = new Map();
   for (const s of alle) {
-    if (!erKK(s)) continue; // mødeoversigten, kalenderne og Min avis er Københavns
+    if (!erKK(s) || /\btest/i.test(s.udvalg)) continue; // mødeoversigten, kalenderne og Min avis er Københavns (testudvalg fra mødesystemet tæller ikke)
     const k = `${s.dato}|${s.udvalg}`;
     if (!moeder.has(k)) moeder.set(k, { dato: s.dato, udvalg: s.udvalg, url: s.kilde.replace(/\/punkt-[^/]+$/, ""), antal: 0, referat: false, sager: [] });
     const m = moeder.get(k); m.antal++; if (s.type === "referat") m.referat = true;
@@ -732,12 +732,12 @@ async function main() {
   <div class="moede-hoved">
     <p class="moede-dato"><span>${ugedag(m.dato).slice(0, 3)}.</span><b>${d(m.dato).getUTCDate()}</b><span>${MDR[d(m.dato).getUTCMonth()].slice(0, 3)}.</span></p>
     <div>
-      <h3><a href="${udvalgUrl(m.udvalg)}">${esc(hvorNavn(m.udvalg))}</a></h3>
+      <h3>${prUdvalg.has(m.udvalg) ? `<a href="${udvalgUrl(m.udvalg)}">${esc(hvorNavn(m.udvalg))}</a>` : esc(hvorNavn(m.udvalg))}</h3>
       <p class="moede-meta">${meta} · <a href="${esc(m.url)}" rel="nofollow">${m.referat ? "Referatet" : "Dagsordenen"} hos kommunen</a></p>
     </div>
   </div>
   ${vis.length ? `<div class="gk-liste">${vis.map((s) => `<article class="gk"><a class="gk-billede" href="${s.url}" tabindex="-1" aria-hidden="true"><img src="${billedeSti(s)}" alt="" loading="lazy"></a>${s.emner.length ? `<span class="emne-tag ${EMNER[s.emner[0]].f}">${esc(EMNER[s.emner[0]].navn)}</span>` : ""}<h4 class="hl"><a href="${s.url}">${esc(s.titel)}</a></h4>${s.status === "besluttet" && s.udfald ? `<p class="punkt-udfald">${esc(s.udfald)}</p>` : ""}</article>`).join("")}</div>` : ""}
-    ${flere || rutine ? `<p class="moede-mere">${[flere && `${flere} ${flere === 1 ? "sag" : "sager"} mere`, rutine && `${rutine} ${rutine === 1 ? "rutinesag" : "rutinesager"}`].filter(Boolean).join(" og ")}. <a href="${udvalgUrl(m.udvalg)}">Se alle sager fra ${esc(hvorNavn(m.udvalg))}</a></p>` : ""}
+    ${flere || rutine ? `<p class="moede-mere">${[flere && `${flere} ${flere === 1 ? "sag" : "sager"} mere`, rutine && `${rutine} ${rutine === 1 ? "rutinesag" : "rutinesager"}`].filter(Boolean).join(" og ")}.${prUdvalg.has(m.udvalg) ? ` <a href="${udvalgUrl(m.udvalg)}">Se alle sager fra ${esc(hvorNavn(m.udvalg))}</a>` : ""}</p>` : ""}
 </article>`;
   };
   await writeFile(join(ROD, "moeder.html"), side({
