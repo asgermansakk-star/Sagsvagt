@@ -28,8 +28,12 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # robot: true springer tjekkene af de byggede sider over (døde links, sager↔sider). Robotten bygger siderne selv, og
+  # ellers ville en fejl i dem stoppe den rettelse, der skal fjerne fejlen (14.–18/11-2026). Linktjekket nedenfor tager dem.
   test:
     uses: ./.github/workflows/test.yml
+    with:
+      robot: true
 
   opdater:
     needs: test
@@ -162,8 +166,9 @@ jobs:
         continue-on-error: true
         run: node avis/ordindeks.mjs
 
-      # Døde interne links og billeder på det byggede site (avis/linktjek.mjs). Stopper ikke robotten.
+      # Døde interne links og billeder på det byggede site (avis/linktjek.mjs). Stopper ikke robotten, men kørslen bliver rød til sidst.
       - name: Linktjek
+        id: linktjek
         continue-on-error: true
         run: node avis/linktjek.mjs
 
@@ -616,4 +621,10 @@ jobs:
         if: steps.parser.outcome == 'failure'
         run: |
           echo "::error::avis/tjek-parsepdf.mjs fejlede, så der blev ikke hentet nye møder fra de andre kommuner."
+          exit 1
+
+      - name: Døde links på det byggede site
+        if: steps.linktjek.outcome == 'failure'
+        run: |
+          echo "::error::avis/linktjek.mjs fandt døde interne links (se trinnet Linktjek). Avisen er opdateret og uploadet alligevel."
           exit 1

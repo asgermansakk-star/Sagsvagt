@@ -8,6 +8,11 @@ on:
   push:
     branches-ignore: [main]
   workflow_call:
+    inputs:
+      robot:
+        description: Kaldt af robotten, som selv bygger siderne bagefter. Springer tjekkene af de byggede sider over.
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -50,6 +55,8 @@ jobs:
       - run: npm ci
       - run: php --version
       - run: npm run test:integration
+        env:
+          SPRING_INDHOLD: ${{ inputs.robot && '1' || '' }}
 
   e2e:
     name: 3. E2E-test
