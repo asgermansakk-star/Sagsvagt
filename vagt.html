@@ -338,6 +338,10 @@
   .tilmeld-side { display: grid; grid-template-rows: auto 1fr; position: fixed; inset: 0; z-index: 100; overflow-y: auto; overscroll-behavior: contain;
     color: var(--kalk); background: var(--moedet); background-color: var(--nat); animation: tak-ind .4s ease both; }
   .tilmeld-side[hidden] { display: none; }
+  /* Ét kornet blad i blåt kigger ind fra højre i fladen over overskriften (se Organiske former i assets/avis.css) */
+  .tilmeld-side { overflow-x: hidden; isolation: isolate; }
+  .tilmeld-side::after { content: ""; position: absolute; z-index: -1; right: -70px; top: 14px; width: 240px; height: 240px; background: url(assets/former/blad-blaa.svg) center / contain no-repeat; transform: scaleX(-1); pointer-events: none; }
+  @media (min-width: 721px) { .tilmeld-side::after { width: 460px; height: 460px; right: -120px; top: -60px; } }
   .tilmeld-side.straks { animation: none; } /* åbnet fra et link: vis den med det samme (animationer kan stå stille, mens siden indlæses) */
   @keyframes tak-ind { from { opacity: 0; } }
   .tilmeld-side .tak-bar { position: static; }

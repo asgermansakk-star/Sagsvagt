@@ -579,3 +579,22 @@ footer.foot a:hover { text-decoration: underline; }
   .gk .emne-tag { justify-self: start; }
   .gk .hl { font-size: var(--sekundaer); }
 }
+
+/* ---------- Organiske former ----------
+   Sagsvagts organiske greb er et kornet blad med samme form som bladene i logoet (assets/former/). Det står højst ét sted
+   pr. side: i feltet "Skriv dig op" (.paa-mail, på forsider, sager og steder), i tilmeldingen (vagt.html) og i login-boksen
+   (min/). Ikke i sidehovedet, på billederne eller i bunden, så formen ikke gentages og siden ikke bliver legende
+   (Asger 18/11-2026). Stregen over udfaldet er smal i enderne som et blad. */
+.paa-mail { position: relative; overflow: hidden; isolation: isolate; background: var(--moedet); color: var(--kalk); padding: 44px 48px; min-height: 240px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 18px; }
+.paa-mail::before { content: ""; position: absolute; z-index: -1; right: -70px; top: -90px; width: 360px; height: 360px; background: url(former/blad-roed.svg) center / contain no-repeat; pointer-events: none; }
+.paa-mail .rubrik { color: var(--kalk); font-size: var(--t1); line-height: 1.15; max-width: 15ch; margin: 0; }
+.paa-mail p { color: rgba(230,223,211,.86); max-width: 44ch; margin: 0; }
+.paa-mail a:not(.btn) { background: var(--kalk); color: var(--nat); }
+.paa-mail a:not(.btn):hover { background: var(--rosen); }
+.udfald { border-top: 0; background: radial-gradient(closest-side, var(--vin) 96%, transparent) 0 0 / min(32em, 100%) 4px no-repeat; }
+.udfald.kommer { background-image: radial-gradient(closest-side, var(--indigo) 96%, transparent); }
+@media (max-width: 720px) {
+  .paa-mail { padding: 120px 28px 32px; min-height: 0; }
+  .paa-mail::before { width: 230px; height: 230px; right: -60px; top: -110px; }
+}
+@media (forced-colors: active) { .paa-mail::before { display: none; } }
