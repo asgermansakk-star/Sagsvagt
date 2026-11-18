@@ -23,6 +23,13 @@
   .knap:disabled { opacity: .5; cursor: wait; }
   .besked { font: 600 .9375rem/1.5 var(--sans) !important; margin-top: 14px !important; }
   .styrke { height: 6px; border-radius: 8px; background: var(--kalk-lys); margin-top: 8px; overflow: hidden; }
+  /* Vis adgangskode: knappen ligger inde i feltet og skifter mellem prikker og tekst */
+  .kode-felt { position: relative; }
+  .kode-felt input { padding-right: 76px !important; }
+  .kode-felt input::-ms-reveal { display: none; }
+  .kode-felt .vis-kode { position: absolute; top: 50%; right: 6px; transform: translateY(-50%); width: auto; min-width: 60px; min-height: 36px; margin: 0; padding: 0 10px; border: 0; border-radius: 6px; background: transparent; color: inherit; font: 600 .8125rem/1 var(--sans); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .kode-felt .vis-kode:hover { background: rgba(128,128,128,.16) !important; }
+  .kode-felt .vis-kode:focus-visible { outline: 3px solid var(--skifer, currentColor); outline-offset: 0; }
   .styrke span { display: block; height: 100%; width: 0; background: var(--vin); transition: width .2s, background .2s; }
 </style>
 </head>
@@ -39,9 +46,9 @@
     <form id="saet" hidden novalidate>
       <h1 id="saet-h">Opret din adgangskode</h1>
       <p>Du logger ind med <b id="email"></b>.</p>
-      <div class="felt"><label for="k1">Adgangskode</label><input id="k1" type="password" autocomplete="new-password" minlength="10" required>
+      <div class="felt"><label for="k1">Adgangskode</label><div class="kode-felt"><input id="k1" type="password" autocomplete="new-password" minlength="10" required><button type="button" class="vis-kode" data-vis-kode aria-pressed="false" aria-label="Vis adgangskode">Vis</button></div>
         <div class="styrke" aria-hidden="true"><span id="styrke"></span></div><p class="hint">Mindst 10 tegn. En sætning, du kan huske, er stærkest.</p></div>
-      <div class="felt"><label for="k2">Gentag adgangskoden</label><input id="k2" type="password" autocomplete="new-password" required></div>
+      <div class="felt"><label for="k2">Gentag adgangskoden</label><div class="kode-felt"><input id="k2" type="password" autocomplete="new-password" required><button type="button" class="vis-kode" data-vis-kode aria-pressed="false" aria-label="Vis adgangskode">Vis</button></div></div>
       <button class="knap" type="submit">Gem og log ind</button>
       <p class="besked" id="saet-besked" role="status" aria-live="polite"></p>
     </form>
@@ -68,7 +75,19 @@
   // Fjern nøglen fra adresselinjen, så den ikke havner i historikken eller deles ved en fejl
   if (token) history.replaceState(null, "", location.pathname);
 
-  function visGlemt(tekst) { $("#henter").hidden = true; $("#glemt").hidden = false; if (tekst) $("#glemt-intro").textContent = tekst; $("#g-email").focus(); }
+  function visGlemt(tekst) {
+    $("#henter").hidden = true; $("#glemt").hidden = false; if (tekst) $("#glemt-intro").textContent = tekst;
+    // E-mailen fra login-boksen, hvis man har skrevet den (gemt i fanen, ikke i adressen)
+    try { var m = sessionStorage.getItem("sv-glemt-mail"); if (m && !$("#g-email").value) $("#g-email").value = m; sessionStorage.removeItem("sv-glemt-mail"); } catch (e) {}
+    $("#g-email").focus();
+  }
+  // Vis adgangskode
+  document.addEventListener("click", function (e) {
+    var v = e.target.closest("[data-vis-kode]"); if (!v) return;
+    var inp = v.parentElement.querySelector("input"), vis = inp.type === "password";
+    inp.type = vis ? "text" : "password"; v.textContent = vis ? "Skjul" : "Vis";
+    v.setAttribute("aria-pressed", String(vis)); v.setAttribute("aria-label", vis ? "Skjul adgangskode" : "Vis adgangskode");
+  });
 
   if (!token) visGlemt();
   else api("adgang.php", { token: token, handling: "tjek" }).then(function (j) {

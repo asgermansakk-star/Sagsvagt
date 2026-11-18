@@ -58,6 +58,19 @@
   .login button:not(:disabled):hover { background: var(--rosen); }
   .login .fejl { color: var(--rosen); font-weight: 600; }
   .login small { display: block; margin-top: 12px; font-size: .8125rem; color: rgba(230,223,211,.7); }
+  .login small a { text-decoration: underline; text-underline-offset: 3px; }
+  .login .label-raekke { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 12px 0 6px; }
+  .login .label-raekke label { margin: 0; }
+  .login .label-raekke a { font-size: .8125rem; font-weight: 600; color: var(--kalk); text-decoration: underline; text-underline-offset: 3px; }
+  .login .label-raekke a:hover { color: var(--rosen); }
+  /* Vis adgangskode: knappen ligger inde i feltet og skifter mellem prikker og tekst */
+  .kode-felt { position: relative; }
+  .kode-felt input { padding-right: 76px !important; }
+  .kode-felt input::-ms-reveal { display: none; }
+  .kode-felt .vis-kode { position: absolute; top: 50%; right: 6px; transform: translateY(-50%); width: auto; min-width: 60px; min-height: 36px; margin: 0; padding: 0 10px; border: 0; border-radius: 6px; background: transparent; color: inherit; font: 600 .8125rem/1 var(--sans); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .kode-felt .vis-kode:hover { background: rgba(128,128,128,.16) !important; }
+  .kode-felt .vis-kode:focus-visible { outline: 3px solid var(--skifer, currentColor); outline-offset: 0; }
+
 
   /* Udgavens top */
   .ed { padding: 22px 0; border-bottom: 2px solid var(--nat); }
@@ -909,7 +922,7 @@
       <p style="margin:0">Når du sletter din konto, sletter vi:</p>
       <ul class="slet-liste"><li>din e-mail og din tilmelding</li><li>dine emner, ord, bydel og gemte sager</li><li>links fra de mails, vi har sendt dig</li></ul>
       <p style="margin:0">Du får ingen mails fra os bagefter. Har du sendt feedback, beholder vi teksten, men uden din e-mail.</p>
-      <div class="felt"><label for="slet-kode">Skriv din adgangskode for at bekræfte</label><input id="slet-kode" type="password" autocomplete="current-password"></div>
+      <div class="felt"><label for="slet-kode">Skriv din adgangskode for at bekræfte</label><div class="kode-felt"><input id="slet-kode" type="password" autocomplete="current-password"><button type="button" class="vis-kode" data-vis-kode aria-pressed="false" aria-label="Vis adgangskode">Vis</button></div></div>
       <p class="skriv-msg" id="slet-msg" role="status" aria-live="polite"></p>
       <div class="send-raekke"><small>Vil du holde en pause, kan du også bare lade være med at logge ind.</small><button class="send farlig" type="submit">Slet min konto</button></div>
     </form>
@@ -999,6 +1012,22 @@
   pushStatus().catch(() => {});
   $("#app-link button").addEventListener("click", installerApp);
   const esc = (s = "") => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  // Vis adgangskode (login og slet konto) og Glemt adgangskode, der tager den skrevne e-mail med til næste side
+  document.addEventListener("click", (e) => {
+    const v = e.target.closest("[data-vis-kode]");
+    if (v) {
+      const inp = v.parentElement.querySelector("input"), vis = inp.type === "password";
+      inp.type = vis ? "text" : "password"; v.textContent = vis ? "Skjul" : "Vis";
+      v.setAttribute("aria-pressed", String(vis)); v.setAttribute("aria-label", vis ? "Skjul adgangskode" : "Vis adgangskode");
+      return;
+    }
+    if (e.target.closest("[data-glemt]")) { try { const m = $("#login-mail")?.value.trim(); if (m) sessionStorage.setItem("sv-glemt-mail", m); } catch {} }
+  });
+  // Skjul adgangskoden igen, før formularen sendes, så browseren gemmer den som en adgangskode
+  document.addEventListener("submit", (e) => e.target.querySelectorAll?.(".kode-felt input").forEach((i) => {
+    i.type = "password"; const b = i.nextElementSibling; if (b) { b.textContent = "Vis"; b.setAttribute("aria-pressed", "false"); b.setAttribute("aria-label", "Vis adgangskode"); }
+  }), true);
+
   const gemt = (k, v) => { try { if (v === undefined) return JSON.parse(localStorage.getItem(k)); localStorage.setItem(k, JSON.stringify(v)); } catch { return null; } };
 
   /* ---------- Adgang ----------
@@ -1025,16 +1054,17 @@
     const f = $(".login");
     f.innerHTML = `<h2>Log ind</h2>
       <label for="login-mail">Din e-mail</label><input id="login-mail" type="email" autocomplete="email" placeholder="navn@eksempel.dk">
-      <label for="login-kode" style="margin-top:12px">Adgangskode</label><input id="login-kode" type="password" autocomplete="current-password">
+      <div class="label-raekke"><label for="login-kode">Adgangskode</label><a href="adgang.html" data-glemt>Glemt adgangskode?</a></div>
+      <div class="kode-felt"><input id="login-kode" type="password" autocomplete="current-password"><button type="button" class="vis-kode" data-vis-kode aria-pressed="false" aria-label="Vis adgangskode">Vis</button></div>
       <button type="submit">Log ind</button>
-      <small id="login-note"><a href="adgang.html" style="color:inherit">Glemt eller ingen adgangskode?</a></small>`;
+      <small id="login-note" role="status" aria-live="polite">Har du ingen adgangskode endnu? <a href="adgang.html" data-glemt style="color:inherit">Få et link på mail</a></small>`;
     f.onsubmit = (e) => {
       e.preventDefault();
       const note = $("#login-note"), knap = f.querySelector("button");
       knap.disabled = true;
       api("login.php", { email: $("#login-mail").value, adgangskode: $("#login-kode").value })
         .then(() => location.reload())
-        .catch((err) => { note.className = "fejl"; note.textContent = err.message; knap.disabled = false; });
+        .catch((err) => { note.className = "fejl"; note.innerHTML = `${esc(err.message)} <a href="adgang.html" data-glemt style="color:inherit">Glemt adgangskode?</a>`; knap.disabled = false; });
     };
     // Uden at scrolle: på telefonen står forklaringen over login-boksen
     $("#login-mail").focus({ preventScroll: true });
