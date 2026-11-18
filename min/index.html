@@ -516,13 +516,23 @@
   .radar-typer svg, .r-maerke svg { width: 14px; height: 14px; flex: none; }
   .radar-gitter { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 28px; align-items: start; }
   .radar-skaerm { position: relative; aspect-ratio: 1; width: 100%; border-radius: 50%; overflow: hidden; background: radial-gradient(circle, #1B2347 0%, var(--blaek) 70%); box-shadow: inset 0 0 0 1.5px rgba(183,187,216,.35), 0 10px 30px rgba(0,0,0,.35); }
-  .radar-skaerm svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .radar-skaerm svg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; }
+  /* Kortet under radaren: mørkt, så prikkerne står tydeligt */
+  .radar-skaerm .radar-bund { position: absolute !important; inset: 0; z-index: 0; background: transparent; pointer-events: none; }
+  .radar-bund .leaflet-tile-pane { filter: grayscale(.85) contrast(1.05) brightness(.97); opacity: 0; transition: opacity .6s; }
+  .radar-bund.klar .leaflet-tile-pane { opacity: 1; }
+  .radar-skaerm::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: 50%; pointer-events: none; background: radial-gradient(circle, rgba(40,55,122,.12) 0%, rgba(40,55,122,.2) 62%, rgba(14,15,20,.75) 100%); }
   .radar-skaerm .ring { fill: none; stroke: rgba(183,187,216,.32); stroke-width: 1; }
   .radar-skaerm .akse { stroke: rgba(183,187,216,.16); stroke-width: 1; }
   .radar-skaerm .ring-tal { fill: rgba(183,187,216,.75); font: 600 10px var(--sans); }
   .radar-skaerm .nord { fill: var(--lyng); font: 700 11px var(--sans); }
   .radar-skaerm .hjem { fill: var(--kalk); stroke: var(--nat); stroke-width: 2.5; }
-  .radar-sweep { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, transparent 0 76%, rgba(183,187,216,.04) 78%, rgba(183,187,216,.32) 99.6%, rgba(183,187,216,.7) 100%); animation: radar-drej 6s linear infinite; pointer-events: none; }
+  .radar-skaerm.med-kort .ring { stroke: rgba(27,35,71,.55); stroke-dasharray: 3 4; }
+  .radar-skaerm.med-kort .akse { stroke: rgba(27,35,71,.18); }
+  .radar-skaerm.med-kort :is(.ring-tal, .nord) { fill: var(--nat); stroke: rgba(255,255,255,.85); stroke-width: 3px; paint-order: stroke; }
+  .radar-skaerm.med-kort .radar-sweep { background: conic-gradient(from 0deg, transparent 0 76%, rgba(40,55,122,.03) 78%, rgba(40,55,122,.22) 99.6%, rgba(40,55,122,.5) 100%); }
+  .radar-skaerm.med-kort .hjem { fill: var(--vin); stroke: var(--kalk); stroke-width: 3; }
+  .radar-sweep { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, transparent 0 76%, rgba(183,187,216,.04) 78%, rgba(183,187,216,.32) 99.6%, rgba(183,187,216,.7) 100%); animation: radar-drej 6s linear infinite; pointer-events: none; z-index: 1; }
   @keyframes radar-drej { to { transform: rotate(360deg); } }
   @media (prefers-reduced-motion: reduce) { .radar-sweep { animation: none; opacity: .5; } .prik.ny path, .prik.ny rect, .prik.ny circle { animation: none !important; } }
   .prik { cursor: pointer; }
@@ -580,6 +590,8 @@
     .radar { padding: 18px 16px 20px; margin-left: -4px; margin-right: -4px; }
     .radar-gitter, .radar.tom { grid-template-columns: 1fr; }
     .radar-skaerm { max-width: 340px; margin: 0 auto; }
+    .radar-valg { flex-wrap: nowrap; width: 100%; gap: 6px; }
+    .radar-valg button { flex: 1 1 0; justify-content: center; padding: 0 4px; white-space: nowrap; }
     .radar-liste { max-height: none; }
   }
 </style>
@@ -1538,16 +1550,18 @@
   /* ---------- Nær dig: radaren under Mine sager ----------
      Midten er læserens adresse (profil.adresse, fundet med api/adresse.php). Punkterne kommer fra ../assets/naerhed.json
      (byggesager fra udvalgets oversigter over naboorienteringer, høringer fra Bliv Hørt og nyheder fra TV2 Kosmopol,
-     avis/naerhed.mjs) og ../assets/kort-sager.json (Københavns sager med et sted). Radaren er vores egen tegning; kortet fra
-     OpenStreetMap hentes først, når man trykker "Vis på kortet", så ingen andre får adressen uden et klik. */
+     avis/naerhed.mjs) og ../assets/kort-sager.json (Københavns sager med et sted). Under radaren ligger et kort fra
+     OpenStreetMap, som hentes gennem api/flise.php, så ingen andre får adressen. "Vis på kortet" giver et stort kort, man kan flytte rundt på. */
   const TYPER = {
     sag: { navn: "Sager", ental: "Sag", form: "cirkel" },
     byg: { navn: "Byggesager", ental: "Byggesag", form: "firkant" },
     hoer: { navn: "Høringer", ental: "Høring", form: "rombe" },
     nyt: { navn: "Nyheder", ental: "Nyhed", form: "trekant" },
   };
-  const RADIER = [500, 1000, 2000];
-  let NAER = null, RADAR_VALGT = null, RADAR_VIST = [], radarKort = null, ADR_FUND = [];
+  const RADIER = [100, 250, 500, 1000, 2000];
+  let NAER = null, RADAR_VALGT = null, RADAR_VIST = [], radarKort = null, radarBund = null, ADR_FUND = [];
+  // Kortbillederne hentes gennem vores egen server (api/flise.php), så OpenStreetMap ikke ser læserens IP eller område
+  const FLISER = "../api/flise.php?z={z}&x={x}&y={y}", OSM_KILDE = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>';
   const RADAR_SKJUL = new Set();
   const form = (type, x, y, r = 6) => {
     const f = (v) => (+v).toFixed(1), X = +x, Y = +y; // tal, ikke tekst: ellers bliver "214.0" + 7.8 til "214.07.8"
@@ -1617,6 +1631,7 @@
   async function visRadar() {
     const boks = $("#radar"), a = profil.adresse;
     if (radarKort) { radarKort.remove(); radarKort = null; }
+    if (radarBund) { radarBund.remove(); radarBund = null; }
     if (!a) {
       boks.className = "radar tom";
       boks.innerHTML = `<div><div class="radar-mini" aria-hidden="true"><div class="radar-sweep"></div></div><h2 id="radar-h" class="radar-h">Hvad sker der omkring dig?</h2>
@@ -1635,7 +1650,7 @@
     // Radarskærmen: 340 × 340 med adressen i midten; øst er højre og nord op
     const S = 340, C = S / 2, rr = C - 18, cos = Math.cos(a.lat * Math.PI / 180);
     const xy = (p) => [C + ((p.lon - a.lon) * cos * 111320) / R * rr, C - ((p.lat - a.lat) * 110540) / R * rr];
-    const ringe = [0.25, 0.5, 0.75, 1].map((f) => `<circle class="ring" cx="${C}" cy="${C}" r="${(rr * f).toFixed(1)}"/>${f === 0.5 || f === 1 ? `<text class="ring-tal" x="${C + 5}" y="${(C - rr * f + 13).toFixed(1)}">${meter(R * f)}</text>` : ""}`).join("");
+    const ringe = [0.25, 0.5, 0.75, 1].map((f) => `<circle class="ring" cx="${C}" cy="${C}" r="${(rr * f).toFixed(1)}"/>${f === 0.5 || f === 1 ? `<text class="ring-tal" x="${C + 5}" y="${(C - rr * f + 13).toFixed(1)}">${R * f < 1000 ? `${Math.round(R * f)} m` : meter(R * f)}</text>` : ""}`).join("");
     const prikker = vis.slice().reverse().map((p) => {
       const [x, y] = xy(p);
       return `<a href="#" class="prik ${p.type}${p.id === RADAR_VALGT ? " valgt" : ""}${p.dato && alder(p.dato) <= 14 && alder(p.dato) >= 0 ? " ny" : ""}" data-prik="${esc(p.id)}" aria-label="${esc(TYPER[p.type].ental)}: ${esc(p.titel)}, ${meter(p.m)} væk">${form(p.type, x, y)}</a>`;
@@ -1667,6 +1682,7 @@
       <div class="radar-typer" role="group" aria-label="Vis på radaren">${Object.entries(TYPER).map(([t, x]) => `<button type="button" data-type="${t}" aria-pressed="${!RADAR_SKJUL.has(t)}">${formIkon(t)}${x.navn} <span>${antal(t)}</span></button>`).join("")}</div>
       <div class="radar-gitter">
         <div class="radar-skaerm">
+          <div class="radar-bund" id="radar-bund" aria-hidden="true"></div>
           <div class="radar-sweep" aria-hidden="true"></div>
           <svg viewBox="0 0 ${S} ${S}" role="img" aria-labelledby="radar-h">
             <line class="akse" x1="${C}" y1="${C - rr}" x2="${C}" y2="${C + rr}"/><line class="akse" x1="${C - rr}" y1="${C}" x2="${C + rr}" y2="${C}"/>
@@ -1679,8 +1695,23 @@
           ${byHoer.length ? `<div class="radar-by"><h3>Åbne høringer for ${by ? "din bydel og " : ""}hele byen</h3><ul>${byHoer.slice(0, 6).map((h) => `<li><a href="${esc(h.url)}" target="_blank" rel="noopener nofollow">${esc(h.titel)}</a> · frist ${esc(kort(h.frist))}</li>`).join("")}</ul></div>` : ""}
         </div>
       </div>
-      <div class="radar-fod"><span>Byggesager fra udvalgets oversigter over naboorienteringer, høringer fra Bliv Hørt, nyheder fra TV2 Kosmopol. Steder fra © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</span>${vis.length ? `<button type="button" data-vis-kort>Vis på kortet</button>` : ""}</div>
+      <div class="radar-fod"><span>Byggesager fra udvalgets oversigter over naboorienteringer, høringer fra Bliv Hørt, nyheder fra TV2 Kosmopol. Kort og steder fra © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</span>${vis.length ? `<button type="button" data-vis-kort>Vis på kortet</button>` : ""}</div>
       <div class="radar-kortet" id="radar-kortet" hidden></div>`;
+    tegnBund(a, R);
+  }
+
+  // Kortet under radarskærmen. Radarens prikker er tegnet med afstand i meter fra adressen; på så små afstande passer
+  // det med kortets projektion, så zoomen vælges, så radius R rammer den yderste ring (152 af 340 enheder).
+  async function tegnBund(a, R) {
+    try { await laesLeaflet(); } catch { return; }
+    const el = $("#radar-bund"); if (!el || profil.adresse !== a) return;
+    const zoom = () => Math.log2((156543.034 * Math.cos(a.lat * Math.PI / 180)) / (R / ((152 / 340) * el.clientWidth)));
+    const k = radarBund = L.map(el, { zoomControl: false, attributionControl: false, dragging: false, touchZoom: false, scrollWheelZoom: false,
+      doubleClickZoom: false, boxZoom: false, keyboard: false, zoomSnap: 0, fadeAnimation: false, inertia: false });
+    k.setView([a.lat, a.lon], zoom(), { animate: false });
+    L.tileLayer(FLISER, { minZoom: 10, maxNativeZoom: 18, maxZoom: 20, keepBuffer: 0 }).on("load", () => { el.classList.add("klar"); el.parentElement.classList.add("med-kort"); }).addTo(k);
+    const ro = new ResizeObserver(() => { if (radarBund !== k) return ro.disconnect(); k.invalidateSize(false); k.setView([a.lat, a.lon], zoom(), { animate: false }); });
+    ro.observe(el);
   }
 
   const laesLeaflet = () => (window.L ? Promise.resolve() : new Promise((ok, nej) => {
@@ -1693,7 +1724,8 @@
     try { await laesLeaflet(); } catch (e) { knap.textContent = e.message; return; }
     f.hidden = false; knap.remove();
     radarKort = L.map(f, { scrollWheelZoom: false });
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(radarKort);
+    L.tileLayer(FLISER, { minZoom: 10, maxNativeZoom: 18, maxZoom: 19, attribution: OSM_KILDE }).addTo(radarKort);
+    radarKort.setMinZoom(10);
     L.circle([a.lat, a.lon], { radius: a.radius || 1000, color: "#28377A", weight: 1.5, dashArray: "5 5", fillOpacity: 0.04 }).addTo(radarKort);
     L.circleMarker([a.lat, a.lon], { radius: 7, color: "#0E0F14", weight: 3, fillColor: "#E6DFD3", fillOpacity: 1 }).addTo(radarKort).bindTooltip(esc(a.tekst));
     for (const p of RADAR_VIST) {

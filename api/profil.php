@@ -23,7 +23,7 @@ $profil = [
         $lat = (float)($a['lat'] ?? 0); $lon = (float)($a['lon'] ?? 0); $tekst = mb_substr(trim((string)($a['tekst'] ?? '')), 0, 120);
         if ($tekst === '' || $lat < 54.4 || $lat > 57.9 || $lon < 7.8 || $lon > 15.3) return null;
         return ['tekst' => $tekst, 'lat' => round($lat, 5), 'lon' => round($lon, 5), 'bydel' => mb_substr(trim((string)($a['bydel'] ?? '')), 0, 60) ?: null,
-            'radius' => in_array((int)($a['radius'] ?? 1000), [500, 1000, 2000], true) ? (int)$a['radius'] : 1000];
+            'radius' => in_array((int)($a['radius'] ?? 1000), [100, 250, 500, 1000, 2000], true) ? (int)$a['radius'] : 1000];
     })($d['adresse'] ?? null),
 ];
 db()->prepare('UPDATE abonnenter SET profil = ? WHERE id = ?')->execute([json_encode($profil, JSON_UNESCAPED_UNICODE), $b['id']]);
