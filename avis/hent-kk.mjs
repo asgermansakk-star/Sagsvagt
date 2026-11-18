@@ -123,7 +123,9 @@ async function main() {
   // Bilag, der blev gemt uden link (fejl i hentningen indtil 18/11-2026), hentes igen, nyeste først
   const uden = Object.values(sager)
     .filter((s) => (s.bilag || []).some((b) => !b.url || /\/undefined$/.test(b.url)))
-    .sort((a, b) => b.dato.localeCompare(a.dato)).slice(0, Number(process.env.BILAG_GENHENT ?? 150));
+    // Udvalgets oversigter over naboorienteringer først (dem bruger radaren i Min avis, avis/naerhed.mjs), så de nyeste
+    .map((s) => ({ s, f: (s.bilag || []).some((b) => /naboorient|dispensation/i.test(b.navn || "")) ? 1 : 0 }))
+    .sort((a, b) => b.f - a.f || b.s.dato.localeCompare(a.s.dato)).map((x) => x.s).slice(0, Number(process.env.BILAG_GENHENT ?? 150));
   let rettet = 0;
   for (const s of uden) {
     try { const p = await hentPunkt(s.kilde); if (p.bilag.length) { s.bilag = p.bilag; rettet++; } }

@@ -500,6 +500,88 @@
   .min-under { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 8px 0 48px; padding-top: 28px; border-top: 1px solid var(--rule); }
   .min-under .sec-h { margin-top: 0; }
   @media (max-width: 900px) { .min-under { grid-template-columns: 1fr; } }
+  /* ---------- Nær dig: radaren under Mine sager ----------
+     Egen tegning (ingen kortfliser): adressen i midten, ringe for afstanden og punkter for sager, byggesager, høringer og nyheder.
+     Hver slags har sin egen form og farve, så farven ikke er eneste tegn. */
+  .radar { margin: 0 0 32px; padding: 22px 24px 24px; border-radius: 14px; background: var(--moedet); color: var(--kalk); }
+  .radar-hoved { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; margin-bottom: 18px; }
+  .radar-h { font-family: var(--sans); font-size: var(--t2); font-weight: 700; letter-spacing: -.01em; margin: 0; color: var(--kalk); }
+  .radar-adr { margin: 4px 0 0; font-size: .875rem; color: rgba(230,223,211,.78); }
+  .radar-adr .link-knap { color: var(--lyng); margin-left: 6px; }
+  .radar-valg { display: flex; flex-wrap: wrap; gap: 8px; }
+  .radar-valg button, .radar-typer button { font: 600 .8125rem/1 var(--sans); min-height: 36px; padding: 0 12px; border-radius: 18px; border: 1.5px solid rgba(230,223,211,.35); background: transparent; color: var(--kalk); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+  .radar-valg button[aria-pressed="true"] { background: var(--kalk); color: var(--nat); border-color: var(--kalk); }
+  .radar-typer { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; }
+  .radar-typer button[aria-pressed="false"] { opacity: .5; text-decoration: line-through; }
+  .radar-typer svg, .r-maerke svg { width: 14px; height: 14px; flex: none; }
+  .radar-gitter { display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr); gap: 28px; align-items: start; }
+  .radar-skaerm { position: relative; aspect-ratio: 1; width: 100%; border-radius: 50%; overflow: hidden; background: radial-gradient(circle, #1B2347 0%, var(--blaek) 70%); box-shadow: inset 0 0 0 1.5px rgba(183,187,216,.35), 0 10px 30px rgba(0,0,0,.35); }
+  .radar-skaerm svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .radar-skaerm .ring { fill: none; stroke: rgba(183,187,216,.32); stroke-width: 1; }
+  .radar-skaerm .akse { stroke: rgba(183,187,216,.16); stroke-width: 1; }
+  .radar-skaerm .ring-tal { fill: rgba(183,187,216,.75); font: 600 10px var(--sans); }
+  .radar-skaerm .nord { fill: var(--lyng); font: 700 11px var(--sans); }
+  .radar-skaerm .hjem { fill: var(--kalk); stroke: var(--nat); stroke-width: 2.5; }
+  .radar-sweep { position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, transparent 0 76%, rgba(183,187,216,.04) 78%, rgba(183,187,216,.32) 99.6%, rgba(183,187,216,.7) 100%); animation: radar-drej 6s linear infinite; pointer-events: none; }
+  @keyframes radar-drej { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .radar-sweep { animation: none; opacity: .5; } .prik.ny path, .prik.ny rect, .prik.ny circle { animation: none !important; } }
+  .prik { cursor: pointer; }
+  .prik :is(circle, rect, path) { stroke: var(--nat); stroke-width: 1.5; transition: transform .15s; transform-box: fill-box; transform-origin: center; }
+  .prik:hover :is(circle, rect, path), .prik:focus-visible :is(circle, rect, path), .prik.valgt :is(circle, rect, path) { transform: scale(1.6); stroke: var(--kalk); stroke-width: 2; }
+  .prik:focus { outline: none; }
+  .prik.ny :is(circle, rect, path) { animation: radar-ny 2.4s ease-in-out infinite; }
+  @keyframes radar-ny { 50% { stroke: var(--kalk); stroke-width: 3; } }
+  .sag :is(circle, rect, path) { fill: var(--kalk); }
+  .byg :is(circle, rect, path) { fill: var(--rosen); }
+  .hoer :is(circle, rect, path) { fill: var(--lyng); }
+  .nyt :is(circle, rect, path) { fill: #E8B04B; }
+  .radar-typer svg :is(circle, rect, path), .r-maerke svg :is(circle, rect, path) { stroke: none; }
+  .radar-liste { list-style: none; margin: 0; padding: 0; max-height: 520px; overflow: auto; border-top: 1px solid rgba(230,223,211,.18); scrollbar-color: rgba(230,223,211,.3) transparent; }
+  .radar-liste li { padding: 14px 6px 14px 10px; border-bottom: 1px solid rgba(230,223,211,.14); border-left: 3px solid transparent; transition: background .2s; }
+  .radar-liste li.valgt { background: rgba(230,223,211,.08); border-left-color: var(--kalk); }
+  .r-top { display: flex; justify-content: space-between; gap: 10px; font: 600 .75rem/1 var(--sans); text-transform: uppercase; letter-spacing: .06em; color: rgba(230,223,211,.72); }
+  .r-maerke { display: inline-flex; align-items: center; gap: 6px; }
+  .r-afst { font-variant-numeric: tabular-nums; text-transform: none; letter-spacing: 0; }
+  .radar-liste h3 { margin: 6px 0 0; font: 600 1rem/1.35 var(--sans); }
+  .radar-liste h3 a { color: var(--kalk); text-decoration: none; }
+  .radar-liste h3 a:hover, .radar-liste h3 a:focus-visible { text-decoration: underline; }
+  .radar-liste p { margin: 4px 0 0; font-size: .875rem; line-height: 1.45; color: rgba(230,223,211,.82); }
+  .radar-liste .r-meta { font-size: .78rem; color: rgba(230,223,211,.62); }
+  .radar-liste .r-frist { color: var(--rosen); font-weight: 700; }
+  .radar-tom-tekst { margin: 6px 0 0; color: rgba(230,223,211,.82); }
+  .radar-by { margin: 22px 0 0; padding-top: 16px; border-top: 1px solid rgba(230,223,211,.18); }
+  .radar-by h3 { margin: 0 0 6px; font: 700 .875rem/1.3 var(--sans); }
+  .radar-by ul { margin: 0; padding: 0 0 0 18px; font-size: .875rem; line-height: 1.6; }
+  .radar-by a { color: var(--kalk); }
+  .radar-fod { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 20px; margin: 18px 0 0; font-size: .75rem; color: rgba(230,223,211,.6); }
+  .radar-fod a { color: rgba(230,223,211,.8); }
+  .radar-fod button { font: 600 .8125rem/1 var(--sans); min-height: 36px; padding: 0 14px; border-radius: 8px; border: 0; background: var(--kalk); color: var(--nat); cursor: pointer; }
+  .radar-kortet { height: 420px; margin-top: 18px; border-radius: 12px; overflow: hidden; color: var(--nat); }
+  .radar-kortet .prik-ikon { overflow: visible; }
+  /* Uden adresse: en indbydende boks med adressefeltet */
+  .radar.tom { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 24px 36px; align-items: center; }
+  .radar.tom .adr label { color: var(--kalk); }
+  .radar-mini { width: 120px; height: 120px; position: relative; border-radius: 50%; overflow: hidden; margin-bottom: 14px; background: radial-gradient(circle, #1B2347 0%, var(--blaek) 70%); box-shadow: inset 0 0 0 1.5px rgba(183,187,216,.35); }
+  /* Adressefeltet (i radaren og i Tilpas) */
+  .adr label { display: block; font-size: .8125rem; font-weight: 700; margin-bottom: 6px; }
+  .adr-raekke { display: flex; gap: 8px; }
+  .adr-raekke input { flex: 1; min-width: 0; font: inherit; font-size: .9375rem; padding: 10px 12px; min-height: 44px; border: 1.5px solid var(--felt-kant); border-radius: 8px; background: var(--kalk); color: var(--nat); }
+  .adr-raekke .btn { min-height: 44px; padding: 0 18px; border: 0; border-radius: 8px; font: 700 .9375rem/1 var(--sans); cursor: pointer; }
+  .radar .adr-raekke .btn { background: var(--kalk); color: var(--nat); }
+  .adr-res { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+  .adr-res button { width: 100%; text-align: left; font: 600 .9375rem/1.3 var(--sans); min-height: 44px; padding: 10px 12px; border-radius: 8px; border: 1.5px solid var(--felt-kant); background: var(--kalk-lys); color: var(--nat); cursor: pointer; }
+  .adr-res button:hover, .adr-res button:focus-visible { border-color: var(--nat); }
+  .adr-msg { font-size: .78rem; margin: 6px 0 0; color: var(--muted); }
+  .radar .adr-msg { color: rgba(230,223,211,.75); }
+  .radar .adr-msg a, .radar .adr-msg .link-knap { color: var(--lyng); }
+  .p-adr { grid-column: span 2; }
+  @media (max-width: 960px) { .p-adr { grid-column: auto; } }
+  @media (max-width: 760px) {
+    .radar { padding: 18px 16px 20px; margin-left: -4px; margin-right: -4px; }
+    .radar-gitter, .radar.tom { grid-template-columns: 1fr; }
+    .radar-skaerm { max-width: 340px; margin: 0 auto; }
+    .radar-liste { max-height: none; }
+  }
 </style>
 </head>
 <body>
@@ -625,6 +707,7 @@
             <label for="p-bydel">Din bydel</label>
             <select id="p-bydel"><option value="">Vælg bydel …</option></select>
           </div>
+          <div class="p-adr" id="p-adr"></div>
           <div>
             <label for="p-ord">Dine egne ord</label>
             <input id="p-ord" placeholder="fx Lersøparken, Valby Langgade">
@@ -682,6 +765,7 @@
       <section class="alle" data-visning="sager" hidden aria-labelledby="h-alle">
         <h1 id="h-alle" class="side-h">Mine sager</h1>
         <p class="side-intro">Alle sager om dine emner og dine egne ord.</p>
+        <section class="radar" id="radar" aria-labelledby="radar-h"></section>
         <div class="vaerktoej">
           <div class="faner" role="tablist" aria-label="Filtrér efter emne" id="faner"></div>
           <label class="soeg"><span class="sr" hidden>Søg</span>
@@ -942,7 +1026,7 @@
   let EMNER = {};
 
   /* ---------- Profil (gemmes i browseren, indtil login er klar) ---------- */
-  const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [], kommuner: [], ikon: "" };
+  const STANDARD = { navn: "", emner: ["trafik", "klima", "byggeri"], ord: [], bydel: "", gemte: [], kommuner: [], ikon: "", adresse: null };
 
   /* ---------- Ikoner ----------
      Atten profilikoner i Vin og blæk. Seks er bygget af logoets to blade (identitet/logo/svg/sagsvagt-symbol-*.svg) med
@@ -1437,6 +1521,7 @@
     document.title = `${SIDER[side]} – Sagsvagt`;
     if (side === "mandagsmail") visMail();
     if (side === "gemte") tegnGemte();
+    if (side === "sager") visRadar();
     scrollTo(0, 0);
     maalNat();
   }
@@ -1450,10 +1535,203 @@
       : `<li>${tom("Du har ikke gemt nogen sager endnu. Tryk på stjernen ved en sag for at gemme den.")}</li>`;
   }
 
+  /* ---------- Nær dig: radaren under Mine sager ----------
+     Midten er læserens adresse (profil.adresse, fundet med api/adresse.php). Punkterne kommer fra ../assets/naerhed.json
+     (byggesager fra udvalgets oversigter over naboorienteringer, høringer fra Bliv Hørt og nyheder fra TV2 Kosmopol,
+     avis/naerhed.mjs) og ../assets/kort-sager.json (Københavns sager med et sted). Radaren er vores egen tegning; kortet fra
+     OpenStreetMap hentes først, når man trykker "Vis på kortet", så ingen andre får adressen uden et klik. */
+  const TYPER = {
+    sag: { navn: "Sager", ental: "Sag", form: "cirkel" },
+    byg: { navn: "Byggesager", ental: "Byggesag", form: "firkant" },
+    hoer: { navn: "Høringer", ental: "Høring", form: "rombe" },
+    nyt: { navn: "Nyheder", ental: "Nyhed", form: "trekant" },
+  };
+  const RADIER = [500, 1000, 2000];
+  let NAER = null, RADAR_VALGT = null, RADAR_VIST = [], radarKort = null, ADR_FUND = [];
+  const RADAR_SKJUL = new Set();
+  const form = (type, x, y, r = 6) => {
+    const f = (v) => (+v).toFixed(1), X = +x, Y = +y; // tal, ikke tekst: ellers bliver "214.0" + 7.8 til "214.07.8"
+    return {
+      cirkel: `<circle cx="${f(X)}" cy="${f(Y)}" r="${f(r)}"/>`,
+      firkant: `<rect x="${f(X - r)}" y="${f(Y - r)}" width="${f(2 * r)}" height="${f(2 * r)}" rx="1.5"/>`,
+      rombe: `<path d="M${f(X)} ${f(Y - r * 1.3)}L${f(X + r * 1.3)} ${f(Y)}L${f(X)} ${f(Y + r * 1.3)}L${f(X - r * 1.3)} ${f(Y)}Z"/>`,
+      trekant: `<path d="M${f(X)} ${f(Y - r * 1.3)}L${f(X + r * 1.25)} ${f(Y + r)}L${f(X - r * 1.25)} ${f(Y + r)}Z"/>`,
+    }[TYPER[type].form];
+  };
+  const formIkon = (type) => `<svg class="${type}" viewBox="-8 -8 16 16" aria-hidden="true">${form(type, 0, 0, 5.5)}</svg>`;
+  const afstand = (a, b) => { const r = Math.PI / 180, x = Math.sin((b.lat - a.lat) * r / 2) ** 2 + Math.cos(a.lat * r) * Math.cos(b.lat * r) * Math.sin((b.lon - a.lon) * r / 2) ** 2; return 12742000 * Math.asin(Math.sqrt(x)); };
+  const meter = (m) => (m < 1000 ? `${Math.max(10, Math.round(m / 10) * 10)} m` : `${(m / 1000).toFixed(1).replace(".", ",")} km`);
+  const KBH = { lat: 55.6761, lon: 12.5683 };
+
+  function hentNaer() {
+    if (NAER) return Promise.resolve(NAER);
+    const j = (f) => fetch(f, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+    return Promise.all([j("../assets/naerhed.json"), j("../assets/kort-sager.json")]).then(([n, ks]) => {
+      if (!n && !ks) throw new Error("Radaren kunne ikke hente data lige nu. Prøv igen om lidt.");
+      const l = [];
+      for (const s of ks || []) l.push({ type: "sag", id: `s:${s.url}`, lat: s.lat, lon: s.lon, titel: s.titel, url: `../${s.url}`, intern: true, dato: s.dato,
+        status: s.status === "kommer" ? "På dagsordenen" : s.status === "besluttet" ? "Besluttet" : "", under: [s.sted, s.hvor].filter(Boolean).join(" · ") });
+      for (const b of n?.byggesager || []) l.push({ type: "byg", id: `b:${b.id}`, lat: b.lat, lon: b.lon, titel: b.adresse, tekst: b.indhold, url: b.kilde, kilde: "Udvalgets oversigt (PDF)",
+        dato: b.dato, status: b.status, frist: b.status === "I naboorientering" && b.frist >= IDAG ? b.frist : null, under: b.lokalplan ? `Lokalplan ${b.lokalplan}` : "", omtrent: !b.praecis });
+      for (const h of n?.hoeringer || []) if (h.lat != null) l.push({ type: "hoer", id: `h:${h.id}`, lat: h.lat, lon: h.lon, titel: h.titel, tekst: h.resume, url: h.url, kilde: "Bliv Hørt",
+        dato: h.start || h.frist, status: h.aaben ? "Åben høring" : "Høringen er slut", frist: h.aaben ? h.frist : null, under: h.bydel || "", omtrent: true });
+      for (const a of n?.nyheder || []) l.push({ type: "nyt", id: `n:${a.url}`, lat: a.lat, lon: a.lon, titel: a.titel, url: a.url, kilde: a.medie, dato: a.dato, under: `${a.medie} · ${a.sted}`, omtrent: true });
+      NAER = { punkter: l.filter((p) => Number.isFinite(p.lat) && Number.isFinite(p.lon)), hoeringer: n?.hoeringer || [] };
+      return NAER;
+    });
+  }
+
+  const adresseFelt = (hvor) => `<div class="adr" data-adr="${hvor}">
+      <label for="adr-${hvor}">Din adresse</label>
+      <div class="adr-raekke"><input id="adr-${hvor}" type="search" enterkeyhint="search" autocomplete="street-address" placeholder="fx Ryesgade 10, 2200 København N" value="${esc(profil.adresse?.tekst || "")}"><button type="button" class="btn moerk" data-adr-find>Find</button></div>
+      <ul class="adr-res" hidden></ul>
+      <p class="adr-msg" role="status" aria-live="polite">Bruges kun til radaren under Mine sager og vises ikke for andre.${profil.adresse ? ` <button type="button" class="link-knap" data-adr-fjern>Fjern adressen</button>` : ""}</p>
+    </div>`;
+
+  async function findAdresse(felt) {
+    const inp = felt.querySelector("input"), res = felt.querySelector(".adr-res"), msg = felt.querySelector(".adr-msg"), knap = felt.querySelector("[data-adr-find]");
+    const q = inp.value.trim();
+    if (q.length < 4) { msg.textContent = "Skriv vejnavn og husnummer, gerne også postnummer."; inp.focus(); return; }
+    msg.textContent = "Søger …"; res.hidden = true; knap.disabled = true;
+    try {
+      const j = await api("adresse.php", { q });
+      ADR_FUND = j.resultater || [];
+      if (!ADR_FUND.length) { msg.textContent = "Vi fandt ikke adressen. Prøv med postnummer, fx “Ryesgade 10, 2200”."; return; }
+      res.innerHTML = ADR_FUND.map((r, i) => `<li><button type="button" data-adr-valg="${i}">${esc(r.tekst)}</button></li>`).join("");
+      res.hidden = false;
+      msg.textContent = ADR_FUND.length === 1 ? "Tryk på adressen for at vælge den." : "Vælg din adresse.";
+      res.querySelector("button").focus();
+    } catch (e) { msg.textContent = e.message; }
+    finally { knap.disabled = false; }
+  }
+  function vaelgAdresse(i, felt) {
+    const r = ADR_FUND[+i]; if (!r) return;
+    profil.adresse = { tekst: r.tekst, lat: r.lat, lon: r.lon, bydel: r.bydel || null, radius: profil.adresse?.radius || 1000 };
+    RADAR_VALGT = null; gem();
+    felt.querySelector("input").value = r.tekst;
+    felt.querySelector(".adr-res").hidden = true;
+    felt.querySelector(".adr-msg").innerHTML = `Gemt: ${esc(r.tekst)}.${felt.dataset.adr === "panel" ? ` <a href="#sager">Se radaren under Mine sager</a>` : ""}`;
+    if (location.hash === "#sager") visRadar();
+  }
+
+  async function visRadar() {
+    const boks = $("#radar"), a = profil.adresse;
+    if (radarKort) { radarKort.remove(); radarKort = null; }
+    if (!a) {
+      boks.className = "radar tom";
+      boks.innerHTML = `<div><div class="radar-mini" aria-hidden="true"><div class="radar-sweep"></div></div><h2 id="radar-h" class="radar-h">Hvad sker der omkring dig?</h2>
+        <p class="radar-tom-tekst">Tilføj din adresse, så viser radaren byggesager, høringer, sager og nyheder tæt på, hvor du bor.</p></div>${adresseFelt("radar")}`;
+      return;
+    }
+    boks.className = "radar";
+    if (!NAER) boks.innerHTML = `<h2 id="radar-h" class="radar-h">Nær dig</h2><p class="radar-tom-tekst">Henter det, der sker omkring dig …</p>`;
+    let d;
+    try { d = await hentNaer(); } catch (e) { boks.innerHTML = `<h2 id="radar-h" class="radar-h">Nær dig</h2><p class="radar-tom-tekst">${esc(e.message)}</p>`; return; }
+    if (profil.adresse !== a) return;
+    const R = RADIER.includes(a.radius) ? a.radius : 1000;
+    const alle = d.punkter.map((p) => ({ ...p, m: afstand(a, p) })).filter((p) => p.m <= R).sort((x, y) => x.m - y.m);
+    const vis = RADAR_VIST = alle.filter((p) => !RADAR_SKJUL.has(p.type));
+    const antal = (t) => alle.filter((p) => p.type === t).length;
+    // Radarskærmen: 340 × 340 med adressen i midten; øst er højre og nord op
+    const S = 340, C = S / 2, rr = C - 18, cos = Math.cos(a.lat * Math.PI / 180);
+    const xy = (p) => [C + ((p.lon - a.lon) * cos * 111320) / R * rr, C - ((p.lat - a.lat) * 110540) / R * rr];
+    const ringe = [0.25, 0.5, 0.75, 1].map((f) => `<circle class="ring" cx="${C}" cy="${C}" r="${(rr * f).toFixed(1)}"/>${f === 0.5 || f === 1 ? `<text class="ring-tal" x="${C + 5}" y="${(C - rr * f + 13).toFixed(1)}">${meter(R * f)}</text>` : ""}`).join("");
+    const prikker = vis.slice().reverse().map((p) => {
+      const [x, y] = xy(p);
+      return `<a href="#" class="prik ${p.type}${p.id === RADAR_VALGT ? " valgt" : ""}${p.dato && alder(p.dato) <= 14 && alder(p.dato) >= 0 ? " ny" : ""}" data-prik="${esc(p.id)}" aria-label="${esc(TYPER[p.type].ental)}: ${esc(p.titel)}, ${meter(p.m)} væk">${form(p.type, x, y)}</a>`;
+    }).join("");
+    const uden = Math.min(...[KBH].map((k) => afstand(a, k))) > 15000;
+    const tomTekst = !alle.length
+      ? uden ? "Radaren har indtil videre kun byggesager, høringer, sager og nyheder fra København. Flere kommuner kommer til."
+        : `Der er ingen sager, byggesager, høringer eller nyheder inden for ${meter(R)} lige nu.${R < 2000 ? " Prøv en større afstand." : ""}`
+      : !vis.length ? "Du har skjult alle slags. Tryk på en af dem ovenfor for at vise dem igen." : "";
+    const punkt = (p) => {
+      const ekstern = !p.intern;
+      const meta = [p.status, p.dato && (p.type === "byg" && p.status === "Dispensation givet" ? `Givet ${kort(p.dato)}` : kort(p.dato)), p.under].filter(Boolean).map(esc).join(" · ");
+      return `<li id="rp-${esc(p.id.replace(/[^a-zA-Z0-9-]/g, "_"))}" data-punkt="${esc(p.id)}"${p.id === RADAR_VALGT ? ' class="valgt"' : ""}>
+        <div class="r-top"><span class="r-maerke">${formIkon(p.type)}${esc(TYPER[p.type].ental)}</span><span class="r-afst">${meter(p.m)}${p.omtrent ? " (omtrent)" : ""}</span></div>
+        <h3><a href="${esc(p.url)}"${ekstern ? ' target="_blank" rel="noopener nofollow"' : ""}>${esc(p.titel)}</a></h3>
+        ${p.tekst ? `<p>${esc(p.tekst)}</p>` : ""}
+        <p class="r-meta">${p.frist ? `<span class="r-frist">Frist ${esc(kort(p.frist))}</span> · ` : ""}${meta}${ekstern && p.kilde ? ` · ${esc(p.kilde)}` : ""}</p>
+      </li>`;
+    };
+    // Åbne høringer uden et bestemt sted, for hele byen eller læserens bydel
+    const by = (a.bydel || "").toLowerCase();
+    const byHoer = uden ? [] : d.hoeringer.filter((h) => h.aaben && h.lat == null && (h.bydel === "Hele byen" || (by && (h.bydel || "").toLowerCase().split(/[/,]| og /).some((x) => x.trim() && (by.includes(x.trim()) || x.includes(by))))));
+    boks.innerHTML = `
+      <div class="radar-hoved">
+        <div><h2 id="radar-h" class="radar-h">Nær dig</h2><p class="radar-adr">Inden for ${meter(R)} fra ${esc(a.tekst)}<button type="button" class="link-knap" data-adr-skift>Skift adresse</button></p></div>
+        <div class="radar-valg" role="group" aria-label="Afstand">${RADIER.map((r) => `<button type="button" data-radius="${r}" aria-pressed="${r === R}">${meter(r)}</button>`).join("")}</div>
+      </div>
+      <div class="adr-skift" hidden>${adresseFelt("radar")}</div>
+      <div class="radar-typer" role="group" aria-label="Vis på radaren">${Object.entries(TYPER).map(([t, x]) => `<button type="button" data-type="${t}" aria-pressed="${!RADAR_SKJUL.has(t)}">${formIkon(t)}${x.navn} <span>${antal(t)}</span></button>`).join("")}</div>
+      <div class="radar-gitter">
+        <div class="radar-skaerm">
+          <div class="radar-sweep" aria-hidden="true"></div>
+          <svg viewBox="0 0 ${S} ${S}" role="img" aria-labelledby="radar-h">
+            <line class="akse" x1="${C}" y1="${C - rr}" x2="${C}" y2="${C + rr}"/><line class="akse" x1="${C - rr}" y1="${C}" x2="${C + rr}" y2="${C}"/>
+            ${ringe}<text class="nord" x="${C}" y="12" text-anchor="middle">N</text>
+            ${prikker}
+            <circle class="hjem" cx="${C}" cy="${C}" r="6"><title>${esc(a.tekst)}</title></circle>
+          </svg>
+        </div>
+        <div>${tomTekst ? `<p class="radar-tom-tekst">${esc(tomTekst)}</p>` : `<ol class="radar-liste" aria-label="Det nærmeste først">${vis.slice(0, 60).map(punkt).join("")}</ol>`}
+          ${byHoer.length ? `<div class="radar-by"><h3>Åbne høringer for ${by ? "din bydel og " : ""}hele byen</h3><ul>${byHoer.slice(0, 6).map((h) => `<li><a href="${esc(h.url)}" target="_blank" rel="noopener nofollow">${esc(h.titel)}</a> · frist ${esc(kort(h.frist))}</li>`).join("")}</ul></div>` : ""}
+        </div>
+      </div>
+      <div class="radar-fod"><span>Byggesager fra udvalgets oversigter over naboorienteringer, høringer fra Bliv Hørt, nyheder fra TV2 Kosmopol. Steder fra © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</span>${vis.length ? `<button type="button" data-vis-kort>Vis på kortet</button>` : ""}</div>
+      <div class="radar-kortet" id="radar-kortet" hidden></div>`;
+  }
+
+  const laesLeaflet = () => (window.L ? Promise.resolve() : new Promise((ok, nej) => {
+    const c = document.createElement("link"); c.rel = "stylesheet"; c.href = "../assets/leaflet/leaflet.css"; document.head.append(c);
+    const sc = document.createElement("script"); sc.src = "../assets/leaflet/leaflet.js"; sc.onload = ok; sc.onerror = () => nej(new Error("Kortet kunne ikke hentes.")); document.head.append(sc);
+  }));
+  async function visRadarKort(knap) {
+    const f = $("#radar-kortet"), a = profil.adresse; if (!a) return;
+    knap.disabled = true; knap.textContent = "Henter kortet …";
+    try { await laesLeaflet(); } catch (e) { knap.textContent = e.message; return; }
+    f.hidden = false; knap.remove();
+    radarKort = L.map(f, { scrollWheelZoom: false });
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19, attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(radarKort);
+    L.circle([a.lat, a.lon], { radius: a.radius || 1000, color: "#28377A", weight: 1.5, dashArray: "5 5", fillOpacity: 0.04 }).addTo(radarKort);
+    L.circleMarker([a.lat, a.lon], { radius: 7, color: "#0E0F14", weight: 3, fillColor: "#E6DFD3", fillOpacity: 1 }).addTo(radarKort).bindTooltip(esc(a.tekst));
+    for (const p of RADAR_VIST) {
+      L.marker([p.lat, p.lon], { title: p.titel, icon: L.divIcon({ className: "", html: `<svg class="prik-ikon prik ${p.type}" viewBox="-10 -10 20 20" width="20" height="20">${form(p.type, 0, 0, 6.5)}</svg>`, iconSize: [20, 20], iconAnchor: [10, 10] }) })
+        .addTo(radarKort).bindPopup(`<p style="margin:0 0 4px;font:600 12px var(--sans)">${esc(TYPER[p.type].ental)} · ${meter(p.m)}</p><a href="${esc(p.url)}"${p.intern ? "" : ' target="_blank" rel="noopener nofollow"'}>${esc(p.titel)}</a>`);
+    }
+    radarKort.fitBounds(L.latLng(a.lat, a.lon).toBounds((a.radius || 1000) * 2.1));
+    f.scrollIntoView({ block: "nearest", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  }
+
+  // Alt i radaren og adressefelterne styres herfra
+  document.addEventListener("click", (e) => {
+    const t = e.target.closest("[data-adr-find],[data-adr-valg],[data-adr-fjern],[data-adr-skift],[data-radius],[data-type],[data-prik],[data-vis-kort]");
+    if (!t) return;
+    const felt = t.closest(".adr");
+    if (t.matches("[data-adr-find]")) findAdresse(felt);
+    else if (t.matches("[data-adr-valg]")) vaelgAdresse(t.dataset.adrValg, felt);
+    else if (t.matches("[data-adr-fjern]")) { profil.adresse = null; gem(); fyldPanel(); if (location.hash === "#sager") visRadar(); }
+    else if (t.matches("[data-adr-skift]")) { const s = $("#radar .adr-skift"); s.hidden = !s.hidden; if (!s.hidden) s.querySelector("input").select(); }
+    else if (t.matches("[data-radius]")) { profil.adresse = { ...profil.adresse, radius: +t.dataset.radius }; gem(); visRadar(); }
+    else if (t.matches("[data-type]")) { const k = t.dataset.type; RADAR_SKJUL.has(k) ? RADAR_SKJUL.delete(k) : RADAR_SKJUL.add(k); visRadar(); }
+    else if (t.matches("[data-vis-kort]")) visRadarKort(t);
+    else if (t.matches("[data-prik]")) {
+      e.preventDefault();
+      RADAR_VALGT = t.dataset.prik;
+      document.querySelectorAll("#radar .prik.valgt, #radar .radar-liste li.valgt").forEach((x) => x.classList.remove("valgt"));
+      t.classList.add("valgt");
+      const li = [...document.querySelectorAll("#radar [data-punkt]")].find((x) => x.dataset.punkt === RADAR_VALGT);
+      if (li) { li.classList.add("valgt"); li.scrollIntoView({ block: "nearest", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); li.querySelector("a")?.focus({ preventScroll: true }); }
+    }
+  });
+  document.addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target.matches?.(".adr input")) { e.preventDefault(); findAdresse(e.target.closest(".adr")); } });
+
   /* ---------- Tilpas ---------- */
   function fyldPanel() {
     $("#p-navn").value = profil.navn;
     $("#p-ord").value = profil.ord.join(", ");
+    $("#p-adr").innerHTML = adresseFelt("panel");
     const bydele = [...new Set(SAGER.map((s) => s.u).filter(lokal))].sort((a, b) => a.localeCompare(b, "da"));
     $("#p-bydel").innerHTML = `<option value="">Vælg bydel …</option>` + bydele.map((u) => `<option value="${esc(u)}"${u === profil.bydel ? " selected" : ""}>${esc(bydelNavn(u))}</option>`).join("");
     // Kun København har lokaludvalg; i andre kommuner skjules bydelen
@@ -1550,7 +1828,7 @@
       gem(); tegn(); if ($("#laes").open) laesSag.opdater?.();
     } else if (t.dataset.fane) { fane = t.dataset.fane; vist = 20; tegnListe(); }
     else if (t.id === "flere") { vist += 20; tegnListe(); }
-    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte, velkommen: profil.velkommen, kommuner: profil.kommuner, ikon: profil.ikon }; gem(); fyldPanel(); tegn(); }
+    else if (t.id === "p-nulstil") { profil = { ...STANDARD, gemte: profil.gemte, velkommen: profil.velkommen, kommuner: profil.kommuner, ikon: profil.ikon, adresse: profil.adresse }; gem(); fyldPanel(); tegn(); }
     else if (t.dataset.tilpas !== undefined) {
       // Fra Konto-menuen eller en tekst: gå til forsiden, åbn Tilpas og rul hen til det (efter visSide har rullet til toppen)
       e.preventDefault(); $("#panel").hidden = true; vend();
