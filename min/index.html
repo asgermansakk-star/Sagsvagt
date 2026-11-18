@@ -48,7 +48,7 @@
   .btn.moerk:hover { background: var(--grafit); }
   .btn.linje { background: transparent; color: var(--nat); box-shadow: inset 0 0 0 1.5px var(--nat); }
   .btn.linje:hover { background: var(--kalk-lys); }
-  .login { position: relative; overflow: hidden; isolation: isolate; background: var(--moedet); color: var(--kalk); border-radius: 10px; padding: 30px 30px 26px; }
+  .login { position: relative; overflow: hidden; isolation: isolate; background: var(--moedet); color: var(--kalk); border-radius: var(--r-blad); padding: 30px 30px 26px; }
   .login::before { content: ""; position: absolute; z-index: -1; right: -54px; top: -84px; width: 160px; height: 160px; background: url(../assets/former/blad-blaa.svg) center / contain no-repeat; transform: scaleX(-1); pointer-events: none; } /* sidens ene blad, se Organiske former i assets/avis.css */
   .login h2 { font-size: 1.1875rem; margin: 0 0 4px; letter-spacing: -.02em; }
   .login p { margin: 0 0 18px; font-size: .9375rem; color: rgba(230,223,211,.8); }
@@ -517,7 +517,7 @@
   /* ---------- Nær dig: radaren under Mine sager ----------
      Egen tegning (ingen kortfliser): adressen i midten, ringe for afstanden og punkter for sager, byggesager, høringer og nyheder.
      Hver slags har sin egen form og farve, så farven ikke er eneste tegn. */
-  .radar { margin: 0 0 32px; padding: 22px 24px 24px; border-radius: 14px; background: var(--moedet); color: var(--kalk); }
+  .radar { margin: 0 0 32px; padding: 22px 24px 24px; border-radius: var(--r-blad); background: var(--moedet); color: var(--kalk); }
   .radar-hoved { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; margin-bottom: 18px; }
   .radar-h { font-family: var(--sans); font-size: var(--t2); font-weight: 700; letter-spacing: -.01em; margin: 0; color: var(--kalk); }
   .radar-adr { margin: 4px 0 0; font-size: .875rem; color: rgba(230,223,211,.78); }

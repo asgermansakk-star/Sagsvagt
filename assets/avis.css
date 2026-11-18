@@ -44,6 +44,8 @@
   --billedtekst: .75rem;
 
   --r-knap: 8px; --r-felt: 12px; --r-kort: 16px; /* knapper let afrundede, ikke piller */
+  /* Bladhjørner: billeder og kort er en lille smule rundere i to modsatte hjørner, som bladene i logoet */
+  --r-blad: 22px 6px; --r-blad-lille: 14px 4px;
   --ease: cubic-bezier(.2,.7,.2,1);
 }
 * { box-sizing: border-box; }
@@ -153,7 +155,7 @@ p { margin: 0; }
 .article header .emner { margin-top: 16px; }
 
 /* ---------- Stille flader ---------- */
-.kort, .kf, .vej, .paa-mail { background: var(--kalk-lys); border-radius: var(--r-kort); }
+.kort, .kf, .vej, .paa-mail { background: var(--kalk-lys); border-radius: var(--r-blad); }
 .decision { font-size: var(--sekundaer); line-height: 1.5; border-top: 2px solid var(--vin); padding: 10px 0 0; max-width: 44em; }
 .decision b { display: block; font-size: var(--fodnote); letter-spacing: .04em; text-transform: uppercase; color: var(--vin); margin-bottom: 4px; }
 /* Når beslutningen er forkortet: en tydelig linje under teksten med et link til hele beslutningen længere nede */
@@ -165,7 +167,7 @@ p { margin: 0; }
 
 /* ---------- Forside ---------- */
 .front { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 0 48px; padding: 32px 0 24px; }
-.leder { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 0 32px; margin-top: 28px; padding: 24px; background: var(--kalk-lys); border-radius: var(--r-kort); }
+.leder { display: grid; grid-template-columns: 8rem minmax(0, 1fr); gap: 0 32px; margin-top: 28px; padding: 24px; background: var(--kalk-lys); border-radius: var(--r-blad); }
 .leder .rubrik { border: 0; padding: 4px 0 0; color: var(--vin); }
 .leder h2 { font-size: var(--t2); margin: 0 0 8px; }
 .leder p { line-height: 1.55; margin: 0 0 10px; max-width: 42em; }
@@ -307,7 +309,7 @@ dfn.ord:focus { outline: 2px solid var(--skifer); outline-offset: 2px; }
 /* Møder */
 .moeder .sec-h { margin-top: 24px; }
 /* Møderne som kort (8/11): mørk datoflise, udvalget og sagerne med billede som forsidens gitter */
-.moede { background: var(--kalk-lys); border-radius: 16px; padding: 20px; margin: 16px 0; }
+.moede { background: var(--kalk-lys); border-radius: var(--r-blad); padding: 20px; margin: 16px 0; }
 .moede-hoved { display: flex; align-items: center; gap: 16px; }
 .moede-dato { flex: none; width: 64px; margin: 0; text-align: center; background: var(--nat); color: var(--kalk); border-radius: 12px; padding: 8px 0 9px; line-height: 1.1; }
 .moede-dato b { display: block; font-size: 1.75rem; letter-spacing: -.02em; }
@@ -548,7 +550,7 @@ footer.foot a:hover { text-decoration: underline; }
 /* Plankort på sager om lokalplaner (avis/plankort.mjs) */
 .plankort { margin: 22px 0 18px; }
 .plankort a { display: block; }
-.plankort img { display: block; width: 100%; height: auto; border-radius: 14px; background: var(--kalk-mork); }
+.plankort img { display: block; width: 100%; height: auto; border-radius: var(--r-blad); background: var(--kalk-mork); }
 .plankort figcaption { font-size: 13px; line-height: 1.45; color: var(--muted); margin-top: 8px; }
 
 /* ---------- Forsiderne i én spalte (8/11) ----------
@@ -561,7 +563,7 @@ footer.foot a:hover { text-decoration: underline; }
 .gk { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .gk[hidden] { display: none; }
 .gk-billede { display: block; width: 100%; }
-.gk-billede img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; background: var(--kalk-lys); }
+.gk-billede img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--r-blad-lille); background: var(--kalk-lys); }
 .gk .emne-tag { min-height: 0; padding: 4px 8px; }
 .gk .hl { font-size: var(--overskrift); line-height: 1.25; margin: 0; }
 .gk .hl a { color: var(--nat); text-decoration: none; }
@@ -575,7 +577,7 @@ footer.foot a:hover { text-decoration: underline; }
   .gk { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 6px 12px; align-items: start; padding: 14px 0; border-top: 1px solid var(--rule); }
   .gk-billede { grid-row: span 2; }
   .gk:first-child { border-top: 0; padding-top: 0; }
-  .gk-billede img { border-radius: 6px; }
+  .gk-billede img { border-radius: 12px 3px; }
   .gk .emne-tag { justify-self: start; }
   .gk .hl { font-size: var(--sekundaer); }
 }
