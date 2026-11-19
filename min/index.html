@@ -343,8 +343,9 @@
      Kortene laves af plan/mockups/natkort.mjs (2400×1100, zoom 15) og ligger i assets/natkort/<kommune>.jpg. */
   .natbund { position: absolute; left: 0; right: 0; top: 0; z-index: 0; pointer-events: none;
     background: linear-gradient(90deg, rgba(14,15,20,.45), rgba(14,15,20,.08) 62%), linear-gradient(135deg, rgba(40,55,122,.5), rgba(14,15,20,.35) 55%, rgba(62,14,20,.55)), var(--natkort, none) center / cover no-repeat, var(--moedet); }
-  /* Natkortene er lavet af OpenStreetMap-fliser, så kilden står i hjørnet (ODbL) */
-  .natbund::after { content: "Kort: © OpenStreetMap-bidragydere"; position: absolute; right: 12px; bottom: 6px; font: 500 10px/1.2 var(--sans); color: rgba(230,223,211,.7); pointer-events: none; }
+  /* Natkortene er lavet af OpenStreetMap-fliser, så kilden skal stå ved kortet (ODbL). Den står lige under kortets
+     nederste kant som en billedtekst, så den ikke kolliderer med dagsstriben inde i kortet */
+  .natbund::after { content: "Kort: © OpenStreetMap-bidragydere"; position: absolute; right: 16px; top: calc(100% + 5px); font: 500 10px/1.2 var(--sans); color: var(--muted); pointer-events: none; }
   body.har-natkort .masthead { background: transparent; position: relative; z-index: 2; }
   .topband { position: relative; z-index: 1; color: var(--kalk); padding: 30px 0 40px; }
   .topband .wrap { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 32px 56px; align-items: end; }
@@ -1919,7 +1920,15 @@
     else if (t.dataset.emne) {
       const id = t.dataset.emne;
       profil.emner = profil.emner.includes(id) ? profil.emner.filter((x) => x !== id) : [...profil.emner, id];
+      // Hele siden tegnes igen, men "Du følger"-rækken skal blive stående, hvor den var: samme sted på skærmen og
+      // samme vandrette rulning, så knappen, man lige trykkede på, ikke glider væk under fingeren
+      const raekke = t.closest("#mine"), foer = t.getBoundingClientRect().top, rul = raekke?.scrollLeft || 0;
       gem(); vist = 20; tegn();
+      if (raekke) {
+        $("#mine").scrollLeft = rul;
+        const ny = $(`#mine [data-emne="${CSS.escape(id)}"]`);
+        if (ny) { scrollBy(0, ny.getBoundingClientRect().top - foer); ny.focus({ preventScroll: true }); }
+      }
     } else if (t.dataset.gem) {
       const id = t.dataset.gem;
       profil.gemte = profil.gemte.includes(id) ? profil.gemte.filter((x) => x !== id) : [id, ...profil.gemte];
