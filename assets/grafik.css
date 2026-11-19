@@ -1,6 +1,6 @@
 /* Emneillustrationer. Kan lægges bagerst i assets/avis.css. */
-.emnebillede { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: var(--r-blad, 14px); object-fit: cover; background: var(--kalk-lys, #EEE8DE); }
-.emnebillede.lille { flex: none; width: 96px; height: 54px; border-radius: 12px 3px; }
+.emnebillede { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 14px; object-fit: cover; background: var(--kalk-lys, #EEE8DE); }
+.emnebillede.lille { flex: none; width: 96px; height: 54px; border-radius: 8px; }
 @media (min-width: 640px) { .emnebillede.lille { width: 128px; height: 72px; } }
 
 /* Høringsnedtælling, læserfotos, luftfoto og fotoformularen (avis/grafik.mjs) */
@@ -26,11 +26,11 @@
 
 /* Billeder på forsiden og i lister (avis/byg.mjs) */
 .lead-billede { display: block; margin: 0 0 14px; }
-.lead-billede img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--r-blad, 14px); }
+.lead-billede img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; }
 .med-billede { display: flex; gap: 14px; align-items: flex-start; }
 .med-billede > div { flex: 1; min-width: 0; }
 .kort-billede { flex: none; order: 2; margin-top: 4px; }
-.kort-billede img { display: block; width: 96px; height: 64px; object-fit: cover; border-radius: 12px 3px; }
+.kort-billede img { display: block; width: 96px; height: 64px; object-fit: cover; border-radius: 10px; }
 @media (min-width: 640px) { .kort-billede img { width: 132px; height: 88px; } }
 /* Tre kolonner på forsiden er for smalle til billede ved siden af teksten, så billedet står øverst */
 @media (min-width: 961px) {
