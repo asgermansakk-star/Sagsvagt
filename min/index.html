@@ -365,7 +365,8 @@
   .strimmel button:focus-visible { outline: 2px solid var(--lyng); outline-offset: 2px; }
   .strimmel small { display: block; font-size: .6875rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--lyng); }
   .strimmel b { display: block; font: 700 1.625rem/1.2 var(--sans); font-variant-numeric: tabular-nums; }
-  .strimmel i { display: block; font-style: normal; font-size: .6875rem; color: rgba(230,223,211,.72); white-space: nowrap; }
+  /* "Ingen møder" og "72 punkter" må gerne gå over to linjer på en smal skærm, så teksten bliver i sin egen boks */
+  .strimmel i { display: block; font-style: normal; font-size: .6875rem; line-height: 1.25; color: rgba(230,223,211,.72); text-wrap: balance; overflow-wrap: break-word; }
   .strimmel em { position: absolute; top: -6px; right: -4px; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 10px; background: var(--vin); color: var(--kalk-lys); font: 700 .6875rem/20px var(--sans); font-style: normal; }
   .strimmel [aria-pressed="true"] { background: var(--kalk); color: var(--nat); }
   .strimmel [aria-pressed="true"] small { color: var(--vin); }
