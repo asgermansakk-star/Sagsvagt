@@ -587,6 +587,72 @@
    "dato": "2026-11-18",
    "punkter": 19,
    "parser": 3
+  },
+  "f6386745-24f8-4a5e-af16-2a89f18f4287": {
+   "lastmod": "2026-11-17",
+   "type": "referat",
+   "udvalg": "Økonomi- Erhvervs- og Turismeudvalget",
+   "dato": "2026-11-16",
+   "punkter": 0,
+   "parser": 3,
+   "tomFra": "2026-11-19",
+   "tegn": 562
+  },
+  "ef6f39f3-289e-45d8-922c-b8e3d533eb55": {
+   "lastmod": "2026-11-17",
+   "type": "referat",
+   "udvalg": "Økonomi- Erhvervs- og Turismeudvalget",
+   "dato": "2026-11-16",
+   "punkter": 3,
+   "parser": 3
+  },
+  "accdd4ba-8364-4522-a6d3-72ea4b3fb497": {
+   "lastmod": "2026-11-17",
+   "type": "referat",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-11-12",
+   "punkter": 11,
+   "parser": 3
+  },
+  "0de9c3c9-3605-4c38-b7ab-8fda6bcad46b": {
+   "lastmod": "2026-11-18",
+   "type": "referat",
+   "udvalg": "Teknik- Plan- og Havneudvalget",
+   "dato": "2026-11-17",
+   "punkter": 18,
+   "parser": 3
+  },
+  "332d0fef-9fe5-4e6e-abe7-6005345631fb": {
+   "lastmod": "2026-11-17",
+   "type": "referat",
+   "udvalg": "Social- og Arbejdsmarkedsudvalget",
+   "dato": "2026-11-16",
+   "punkter": 14,
+   "parser": 3
+  },
+  "1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14": {
+   "lastmod": "2026-11-18",
+   "type": "referat",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-17",
+   "punkter": 13,
+   "parser": 3
+  },
+  "7c624816-67b4-412c-afc0-e2e67841ec28": {
+   "lastmod": "2026-11-18",
+   "type": "referat",
+   "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
+   "dato": "2026-11-18",
+   "punkter": 19,
+   "parser": 3
+  },
+  "a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff": {
+   "lastmod": "2026-11-19",
+   "type": "referat",
+   "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
+   "dato": "2026-11-18",
+   "punkter": 13,
+   "parser": 3
   }
  },
  "sager": {
@@ -15403,15 +15469,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Dagsorden fremlægges til kommentering og godkendelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsorden godkendt."
     }
    ],
    "bilag": []
@@ -15421,15 +15491,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Orientering fra Sundhed og Ældres forvaltning",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Chef for Sundhed og Ældre orienterer om aktuelle tiltag, herunder:\n1. Brugertilfredsundersøgelse behandlet på Sundheds- og Ældreudvalgsmøde den 22.\noktober 2026 pkt. 116 og 117. Kan Ældrerådet give høring på, hvilket tilvalgsspørgsmål,\nsom politikerne beslutter sig for?\n2. Generel orientering fra forvaltningen i Sundhed og Ældre."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Chef for Sundhed og Ældre har ikke mulighed for at deltage. Orientering er udsendt til\nÆldrerådet via mail:\nBrugertilfredsundersøgelse behandlet på Sundheds- og Ældreudvalgsmøde den 1.\noktober 2026 pkt. 116 og 117. Kan Ældrerådet give høring på, hvilket\ntilvalgsspørgsmål, som politikerne beslutter sig for?\nSundheds- og Ældreudvalget traf beslutning om tilvalgsspørgsmål på mødet i oktober.\nSagen var ikke en høringssag.\nUnderskud i hjemmeplejen\nI budgetopfølgningerne fra 31.03 og 31.05 er beskrevet, at der i hjemmeplejen er et\nmerforbrug. Vi kan se, at der bruges mere på løn end der er afsat. Derfor er vi ved at se\npå, hvordan vi kan nedbringe lønudgifterne og samtidig sikre, at borgerne får den hjælp\nde har brug for. Noget af det vi har fokus på, er at undgå brug af eksterne vikarer. Det gør\nvi bl.a. ved at vi søger at have tilstrækkelig med egne vikarer og at kørelisterne er\nplanlagt så optimalt som muligt.\nElse har i den forbindelse hørt, at vores medarbejdere ikke kan få fridage. Det kan de\nnaturligvis. Vores medarbejdere er beskyttet af deres overenskomst og arbejdsmiljøloven\nUnderskuddet i hjemmeplejen har været en tilbagevendende udfordring, hvorfor vi\nigangsatte en analyse af driften i hjemmeplejen ved ekstern konsulent. Analysen peger\npå, som også orienteret Ældrerådet om, at bl.a. implementering af et automatisk\nruteplanlægningsværktøj, kan optimere på driften. Vi implementerer dette værktøj fra\njanuar, hvor den nye organisering træder i kraft, og de faste teams er på plads.\nÆldrerådets kommentar: Der ønskes en drøftelse af, hvilken rolle frivillighed og et internt\nvikarkorps kan spille i denne sammenhæng med merforbruget i hjemmeplejen.\nFællesskabskoordinatorerne starter 1. december\nDen 1. december tager vi hul på et nyt kapitel, når vi byder velkommen til Kristel og Kira,\nsom starter som vores to nye fællesskabskoordinatorer.\n\nDe to stillinger er finansieret med midler fra ældrereformen og skal være med til at styrke\nvores arbejde med forebyggelse og fællesskaber.\nFællesskabskoordinatorerne skal bygge bro mellem kommunen, civilsamfundet og de\nmange lokale fællesskaber og være med til at skabe endnu bedre muligheder for, at flere\nældre kan finde vej til fællesskaber og et aktivt hverdagsliv.\nI praksis skal Kristel og Kira arbejde tæt sammen med både kolleger på ældreområdet,\nKultur & Fritid, lokale foreninger, frivillige og andre aktører i civilsamfundet.\nDe skal være med til at skabe overblik over mulighederne i lokalområderne, styrke\nrelationer og gøre vejen mellem kommunens indsatser og de lokale fællesskaber lettere.\nLykkevalg er Eden registreret\nTorsdag 05.11 blev Lykkevalg Eden registreret. Det var en meget festlig dag med\nbeboere, familier, venner af huset og politikere.\nJeg kan forstå, at der ikke var sendt invitation til kontaktpersonen fra Ældrerådet. Det skal\njeg beklage.\nÆldrerådets kommentar: Kim var inviteret med til arrangementet."
     }
    ],
    "bilag": []
@@ -15439,15 +15513,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Intro fra Mad, Måltider og Ernæring (10.00 - 10.45)",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Intro fra Mad, Måltider og Ernæring\nDer er mulighed for spørgsmål og en kort drøftelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering er taget til efterretning. Se i øvrigt bilagte præsentation."
     }
    ],
    "bilag": []
@@ -15457,15 +15535,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Godkendelse af referat",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Referat fra seneste møde fremlægges til kommentering og godkendelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Referat er godkendt."
     }
    ],
    "bilag": []
@@ -15475,10 +15557,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Orientering fra formand og næstformand",
    "afsnit": [
     {
@@ -15488,6 +15570,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Aktuelt nyt fra formand og næstformand, herunder:\n1. Orientering om valgresultat for PPU (Patient-Pårørendeudvalget) ved OUH\n2. Status på arbejdsgrupper."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Næstformand har deltaget i møde på Hjemly Efterskole, hvor man havde fokus på\nensomhed, og hvordan byplanlægning og boligformer kan være med til at forebygge\nensomhed blandt ældre.\nÆldrerådene har fået plads i PPU ved OUH, hvor Søren Jakobsen er valgt, og hvor\nformand for Ældrerådet er suppleant.\nFormand har deltaget i Danske Ældreråds temadag om synlighed og kommunikation.\nProjekt \"Flere sunde leveår\": Formand deltager i koordineringsgruppen for projektet, der\nløber over 3 år. Der er fokus på at udvikle på tiltag og aktiviteter, som allerede fungerer\nlokalt. Faaborg-Midtfyn Kommune deltager som én ud af 5 kommuner på landsbasis.\nFormand opfordrer til, at flere medlemmer af Ældrerådet deltager: Niels Peter og Annette\ndeltager for Faaborg-egnen, Christian for Midtfyn og Tina for den nordlige del af\nkommunen.\nArbejdsgrupper:\n1. Madudvalget - besat\n2. Samarbejdsforum - besat\n3. PR-udvalg - besat\n4. Budgetudvalg - Henning, Else og Christian\nDet besluttes, at der sættes en annonce \"Orientering fra Ældrerådet\" i ugeaviserne\nhurtigst muligt. PR-udvalget tager sig af opgaven."
     }
    ],
    "bilag": []
@@ -15497,15 +15583,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Orientering fra udvalg og plejehjemsråd",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Udvalgene og plejehjemsråd orienterer om aktuelle aktiviteter og tiltag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "På Åløkkeparken deltager Tina i beboers aktiviteter fremfor på\nplejehjemsrådsmøder.\nEgon har deltaget i et konstruktivt plejehjemrådsmøde på Åhaven.\nKim har været til møde i FynBus. Erling Bonnesen er Ældrerådets kontaktperson\nind i FynBus. Det besluttes at invitere denne til en uddybning af specialkørsel,\nflextrafik samt en generel drøftelse af trafikplanlægning.\nTina og Kim kommer med forslag til nedsættelse af lixtallet på kvalitetsstandarder\nog servicebeskrivelser, så disse fremadrettet bliver mere tilgængelige og\nlæsevenlige for borgerne."
     }
    ],
    "bilag": []
@@ -15515,10 +15605,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Samarbejdsaftale mellem Ældrerådet og kommunalbestyrelsen til revision",
    "afsnit": [
     {
@@ -15528,6 +15618,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "På anmodning fra Ældrerådet ønskes en fornyet gennemgang af samarbejdsaftalen mellem\nÆldrerådet og kommunalbestyrelsen for valgperioden 2026-2029 efter endt politisk behandling\nog kommunalbestyrelsens godkendelse af Ældrerådets vedtægter 2026-2029 på møde den 7.\noktober 2026.\nDe godkendte vedtægter 2026-2029 og senest reviderede samarbejdsaftale er vedlagt som\nbilag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Revideret samarbejdsaftale 2026-2029 er taget til efterretning til videre politisk\nbehandling.\nÆldrerådet undrer sig fortsat over ændring af §10 i Ældrerådets vedtægter og tager\nderfor kontakt til formand for Sundheds- og Ældreudvalget."
     }
    ],
    "bilag": []
@@ -15537,10 +15631,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Forslag til møderække 2027",
    "afsnit": [
     {
@@ -15550,6 +15644,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "På baggrund af beslutning om, at Ældrerådsmøder i 2027 planlægges forud for Sundheds- og\nÆldreudvalgsmøderne stilles følgende forslag til møderække:\nMandag den 18. januar\nMandag den 8. februar\nTorsdag den 11. marts\nMandag den 12. april\nTorsdag den 13. maj\nTorsdag den 10. juni\nMandag den 16. august\nMandag den 13. september\nMandag den 11. oktober\nMandag den 8. november\nMandag den 6. december\nMødetidsrummet vil fortsat være fra klokken 9.00 - 13.00 med mulighed for morgenkaffe i\ntidsrummet klokken 8.30 - 9.00. Juli måned er mødefri.\nDialogmøder i marts og august afventer planlægning med Sundheds- og Ældreudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Møderække er godkendt."
     }
    ],
    "bilag": []
@@ -15559,15 +15657,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Økonomi",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Budgetopfølgning 2026 til orientering og evt. drøftelse jf bilag, som er vedhæftet eller\neftersendes hurtigst muligt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nHusk at indsende diætskema og kørselsgodtgørelse hurtigst muligt efter den 10.\ndecember 2026."
     }
    ],
    "bilag": []
@@ -15577,10 +15679,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Temadrøftelse demenspolitik",
    "afsnit": [
     {
@@ -15590,6 +15692,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Drøftelsen tager udgangspunkt i Ældrerådets udkast til en kommunal demenspolitik. Formand\nog næstformand ønsker input til, hvad Ældrerådet skal fokus på i den videre proces og forslag\ntil samarbejde med politikere og forvaltning.\nForvaltningen deltager ikke under punkt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ældrerådet arbejder videre med planlægning af en temaeftermiddag for politikere,\nforvaltning og rådet. Med ekstern facilitator. Dette skal ske i første kvartal 2027."
     }
    ],
    "bilag": []
@@ -15599,15 +15705,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e24d515e-529b-4cca-ae48-5458af064304",
-   "hentet": "2026-11-06T12:51:54.782Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=accdd4ba-8364-4522-a6d3-72ea4b3fb497",
+   "hentet": "2026-11-19T13:31:57.957Z",
    "titel": "Eventuelt",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Korte orienteringer og koordineringer.\nDer føres ikke referat under dette punkt. Emner, der kræver drøftelse og / eller beslutninger,\nbedes sendt til formand som punkt til kommende møde."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet at føre til referat."
     }
    ],
    "bilag": []
@@ -15617,12 +15727,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Økonomi- Erhvervs- og Turismeudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=63b5dad2-1737-4fdd-af34-80ae71359f7f",
-   "hentet": "2026-11-10T12:54:15.918Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=ef6f39f3-289e-45d8-922c-b8e3d533eb55",
+   "hentet": "2026-11-19T13:31:50.249Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Thomas Hofstedt Nielsen (C) deltog ikke i behandlingen af punktet.\nGodkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-16-oekonomi-erhvervs-og-turismeudvalget-2": {
@@ -15630,10 +15745,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Økonomi- Erhvervs- og Turismeudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=63b5dad2-1737-4fdd-af34-80ae71359f7f",
-   "hentet": "2026-11-10T12:54:15.918Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=ef6f39f3-289e-45d8-922c-b8e3d533eb55",
+   "hentet": "2026-11-19T13:31:50.249Z",
    "titel": "Opfølgning på analyse af førtidspensionsområdet",
    "afsnit": [
     {
@@ -15651,6 +15766,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ikke i sig selv økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -15660,12 +15779,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Økonomi- Erhvervs- og Turismeudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=63b5dad2-1737-4fdd-af34-80ae71359f7f",
-   "hentet": "2026-11-10T12:54:15.918Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=ef6f39f3-289e-45d8-922c-b8e3d533eb55",
+   "hentet": "2026-11-19T13:31:50.249Z",
    "titel": "Godkendelse af protokol",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-16-social-og-arbejdsmarkedsudvalget-1": {
@@ -15673,12 +15797,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-16-social-og-arbejdsmarkedsudvalget-2": {
@@ -15686,10 +15815,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Introduktion til Det Socialfaglige Område",
    "afsnit": [
     {
@@ -15703,6 +15832,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Det Socialfaglige Område varetager udførerrollen i forhold til borgere, som modtager følgende\nsociale indsatser på voksenområdet:\nBostøttetilbud i hele kommunen (serviceloven § 85)\nFaaborg Støttecenter og Ringe Støttecenter (serviceloven § 85)\nVoksenspecialundervisning (VSU)\nSærligt tilrettelagt ungdomsuddannelse (STU)\nMestringsenheden og ledsagerordning (serviceloven § 99)\nAktivitets- og samværstilbud (serviceloven §104)\nBeskyttet beskæftigelsestilbud (serviceloven §103)\nDet Socialfaglige Område arbejder ud fra en recovery tilgang med et helhedsorienteret og\nrehabiliterende perspektiv på borgerne. Dette betyder i praksis, at personalet i Det\nSocialfaglige Område arbejder på at hjælpe borgeren til selv at klare mest muligt, i stedet for at\nudføre opgaverne for borgeren. Personalet støtter, træner og guider borgeren i at genvinde\neller vedligeholde færdigheder. Fokus er på borgerens samlede livssituation, og ikke kun på en\nenkelt diagnose, skade eller udfordring.\nKonstitueret leder af Det Socialfaglige Område, Dennis Fredell Olsen, deltager under punktet\n(bilag 1)."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -15712,10 +15845,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Opfølgning på analyse af førtidspensionsområdet",
    "afsnit": [
     {
@@ -15733,6 +15866,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ikke i sig selv økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -15742,10 +15879,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Høring af udkast til faglig strategi for det specialiserede børne- og familieområde 2027-2029",
    "afsnit": [
     {
@@ -15763,6 +15900,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ikke i sig selv økonomiske konsekvenser. Forvaltningen bemærker, at dele af\nstrategien kan gennemføres ved omprioritering inden for det eksisterende budget, mens\nandre dele forudsætter finansiering, som fastlægges i særskilte sager. Det gælder øget\nforebyggelse og styrkelse af forældrekompetencer, udvidet kapacitet i egne tilbud og\ndataunderstøttet sagsbehandling. Med afsæt i strategien forelægger forvaltningen i\ndecember 2026 de første sager om konkrete tiltag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen godkendt."
     }
    ],
    "bilag": []
@@ -15772,10 +15913,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Kvartalsvis budgetopfølgning 30.9.2026 og risikovurdering for 2027",
    "afsnit": [
     {
@@ -15793,6 +15934,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Punktet har ingen direkte økonomisk konsekvens"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1 – 4 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og kommunalbestyrelsen.\nIndstillingspunkt 5 godkendt."
     }
    ],
    "bilag": []
@@ -15802,10 +15947,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Udmøntningen af Den Sociale Pulje",
    "afsnit": [
     {
@@ -15823,6 +15968,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Tabel 1: Økonomien for Den Sociale Pulje fremgår af følgende tabel (kr.) B udgettet\nfremskrevet i 2027 i henhold til KL's skøn om løn-og prisstigninger.\n\nModtager\n\nHuset (Fast årligt\ntilskud)\nHavnestuen (Fast\nårligt tilskud)\nFrivilligcenteret\n(Fast årligt tilskud)\nFaste årlige tilskud i\nalt\nSamskabelsespuljen\nAnsøgningspuljen\n\nSamlet sociale pulje\n\nBeløb\n(Model A)\n\nBeløb\n\nBeløb 2027\n(Model B)\n\nBeløb 2027\n(Model C)\n\n(heraf fast\nbeløb til\nFaaborg\nRestvarer)\n\nVed ansøgningsrunden i 2026 modtog forvaltningen 52 ansøgninger med et samlet\nansøgt beløb på 1.944.046 kr. Det ansøgte beløb oversteg de disponible midler med\n557.010 kr., svarende til 40,2 %.\nEksisterende administrationsgrundlag for Den Sociale Pulje er vedlagt som bilag. Socialog Arbejdsmarkedsudvalget bliver forelagt et revideret administrationsgrundlag på\ndecember-mødet på baggrund af udvalgets beslutning i indeværende sag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Udvalget godkender, at model A sendes i høring sammen en revideret udgave af model\nC, hvor reduktionen af de faste tilskud er 10 pct. I begge høringsmodeller indgår en\nnedlæggelse af samskabelsespuljen som selvstændig pulje."
     }
    ],
    "bilag": []
@@ -15832,10 +15981,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Årsplan for Social- og Arbejdsmarkedsudvalget i 2027",
    "afsnit": [
     {
@@ -15849,6 +15998,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kommunalbestyrelsen godkendte d. 9. september 2026 (punkt 203) den politiske\nmødekalender 2027 med mødedatoer for bl.a. Social- og Arbejdsmarkedsudvalget.\nTil planlægning af det politiske år 2027 har forvaltningen udarbejdet en politisk årsplan med\nindhold på Social- og Arbejdsmarkedsudvalgets møder i form af besøg i driften,\nvirksomhedsbesøg og aktiviteter som dialogmøder og konferencer m.v. (bilag 1).\nPå mødet modtager forvaltningen gerne forslag til eventuelle temadrøftelser og lokationer på\nSocial- og Arbejdsmarkedsudvalgets møder i 2027."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkt 1 godkendt med tilføjelse af status på ukrainske flygtninge.\nIndstillingspunkt 2 – udvalget ønsker at besøge de to støttecentrene i Faaborg og Ringe i\nforåret, børnehusene samt Familiernes Hus."
     }
    ],
    "bilag": []
@@ -15858,10 +16011,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Ledelsesinformation på Arbejdsmarkedsområdet",
    "afsnit": [
     {
@@ -15879,6 +16032,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -15888,10 +16045,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Opfølgning på KL Jobcamp 2026",
    "afsnit": [
     {
@@ -15909,6 +16066,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ikke i sig selv økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -15918,10 +16079,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Samspil mellem Politik og Administration",
    "afsnit": [
     {
@@ -15935,6 +16096,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Formålet med denne kvartalsvise drøftelse i udvalget af samspillet mellem politikere og\nadministrationen er at skabe de bedst mulige rammer for samarbejdet og for betjeningen af de\npolitiske udvalg.\nPunktet skaber mulighed for, at der i forbindelse med udvalgets almindelige og fortløbende\narbejde kan være dialog om eventuelle misforståelser, og at ønsker til samarbejdet kan få ord\nmed på vejen.\nTil drøftelse på baggrund af udvalgets behandling af sager i det seneste kvartal:\nHar udvalget oplevet klare og tydelige sagsfremstillinger?\nHar der været tydelige indstillinger i sagerne, så det var let gennemskueligt, hvad der\nskulle tages stilling til?\nVar den samlede dagsorden til møderne grupperet tilfredsstillende i forhold til typer af\nindstillinger (anbefaling, beslutning, orientering, efterretning), så det var nemt at\ndisponere udvalgets tid?\nEr det udvalgets opfattelse, at administrationen har handlet på de bestillinger, udvalget\nhar givet?\nHvilke tiltag fra administrationen har især gjort en positiv forskel for udvalgets arbejde?\nHar udvalget konstateret arbejdsmetoder, processer eller andet i administrationen, der\nmed fordel kunne ændres i forhold til det efterfølgende politiske arbejde?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet.\nJimmi Krøyer (A) deltog ikke ved punktets behandling."
     }
    ],
    "bilag": []
@@ -15944,10 +16109,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Udvalgets årsplan",
    "afsnit": [
     {
@@ -15957,6 +16122,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Årsplanen er et dynamisk dokument, som kan tilrettes og suppleres løbende fra møde til møde\nefter udvalgets ønsker.\nUdvalget kan under punktet komme med særlige ønsker til temadrøftelser, yderligere emner\neller andet som måtte have udvalgets interesse indenfor fagområderne."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Jimmi Krøyer (A) deltog ikke ved punktets behandling.\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -15966,15 +16135,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Gensidig orientering",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Gensidig orientering om:\n1. Kommunikation\n2. Socialområdet\n3. Arbejdsmarkedsområdet"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Jimmi Krøyer (A) deltog ikke ved punktets behandling.\nTaget til efterretning med tilføjelse af status på borgersager."
     }
    ],
    "bilag": []
@@ -15984,12 +16157,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Orientering fra formanden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Jimmi Krøyer (A) deltog ikke ved punktets behandling.\nIntet til orientering."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-16-social-og-arbejdsmarkedsudvalget-15": {
@@ -15997,12 +16175,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Social- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e0e3577c-ffa8-417a-bd87-fe631431e9be",
-   "hentet": "2026-11-13T12:26:45.686Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=332d0fef-9fe5-4e6e-abe7-6005345631fb",
+   "hentet": "2026-11-19T13:32:28.749Z",
    "titel": "Godkendelse af protokol",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Jimmi Krøyer (A) deltog ikke ved punktets behandling.\nGodkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-1": {
@@ -16010,12 +16193,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-2": {
@@ -16023,10 +16211,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Stormflodssikring Faaborg – Projektforslag og miljøvurdering",
    "afsnit": [
     {
@@ -16044,6 +16232,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Pengene til stormflodsskringen blev afsat ved budgetaftale 2021 på baggrund af et\nskitseprojekt. Siden er der sket en udvikling i projektet og en generel prisudvikling, blandt\n\nandet på materialer som aluminium, stål og beton. På den baggrund og efter projektering\naf projektet, vil et opdateret anlægsbudget blive udarbejdet og behandlet i forbindelse\nmed budget 2028.\nFinansiering af pumpestation vil indgå særskilt i processen for budget 2028."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1-3 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16053,10 +16245,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Stormflodssikring Faaborg – Justering af principper for bidragsfordeling",
    "afsnit": [
     {
@@ -16074,6 +16266,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Det vurderes, at den øgede udgift som følge af det højere kommunale bidrag til veje kan\nrummes inden for det afsatte budget.\nFinansiering af ny pumpestation bliver behandlet i forbindelse med budget 2028."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1-3 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16083,10 +16279,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Tillæg nr. 53 til Kommuneplan 2019, Faa.R.15, Faa.R.18 og Faa.C.2, Faaborg havn",
    "afsnit": [
     {
@@ -16104,6 +16300,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1-4 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16113,10 +16313,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Forslag til Lokalplan 2026-6, Stormflodsikring, Faaborg havn",
    "afsnit": [
     {
@@ -16134,6 +16334,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1-4 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16143,10 +16347,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Forslag til Tillæg nr. 42 til Kommuneplan 2019 - Digital skiltning",
    "afsnit": [
     {
@@ -16160,6 +16364,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Teknik- og Miljøudvalget besluttede på møde d. 22. oktober 2020 (pkt. 180) at igangsætte\nudarbejdelsen af retningslinjer for digital skiltning på baggrund af en sag, hvor et lokalsamfund\nhavde ansøgt om opsætning af flere digitale skilte forskellige steder i den pågældende by.\nDigital skiltning åbner op for nogle nye muligheder for information og reklamering, både for\nlokalsamfund og virksomheder, og det blev vurderet, at de eksisterende retningslinjer for digital\nskiltning viste sig at være utilstrækkelige til at danne grundlag for sagsbehandlingen\nfremadrettet.\nTillæggets formål og indhold\n\nFormålet med tillægget er at sikre en effektiv og ensartet sagsbehandling af ønsker om\nopstilling af digitale skilte til gavn for både ansøger og administration. Med dette som\nadministrationsgrundlag vil det også blive nemmere at vejlede interessenter i hvor og i hvilket\nomfang, der kan gives mulighed for digital skiltning. Rammerne skal dermed sikre ensartethed i\nsagsbehandlingen og at relevante hensyn påses i både sagsbehandling og planlægning\nfremadrettet.\nTillægget redegør i vidt omfang for hensynet til anden lovgivning, da der er en række andre\nrelevante love, som skal overholdes, og som påvirker mulighederne for og omfanget af digital\nskiltning. De nye generelle rammebestemmelser har til hensigt, at gøre det tydeligt, hvad\nkommunen lægger vægt på i sagsbehandlingen udover, hvad der reguleres af anden\n\nlovgivning. Der er derfor opstillet rammebestemmelser om placering, udformning og tekniske\nkrav. Der fastlægges desuden specifikke rammebestemmelser for informationsstandere og\nvirksomhedsskilte, så lokalsamfund og virksomheder i højere grad ved, hvad de kan forvente at\nfå tilladelse til. I forbindelse med lokalplanlægning er det muligt at fastlægge mere specifikke\nbestemmelser for det enkelte lokalplanområde, hvis det vurderes hensigtsmæssigt.\nOffentlighedens inddragelse\n\nForvaltningen anbefaler, at forslaget til Tillæg nr. 42 sendes i 8 ugers offentlig høring og at der\nikke afholdes borgermøde i forbindelse med høringsperioden, men at erhvervsråd, lokalråd og\nandre relevante aktører får forslaget tilsendt. Anbefalingen om ikke at afholde borgermøde\nskyldes, at tillægget vedrører generelle bestemmelser, der gælder hele kommunen og ikke\ngiver mulighed for nærmere defineret bebyggelse eller udlægger nye arealer. Det vurderes\nderfor, at en bred offentlig høring med direkte information til relevante aktører, vil være den\nmest hensigtsmæssige fremgangsmåde til at sikre offentlighedens inddragelse.\nForud for den politiske behandling af forslaget, har der været afholdt et møde med\nrepræsentanter fra Faaborg-Midtfyn Erhvervsråd og Fynsland, hvor de nye\nrammebestemmelser blev præsenteret og drøftet. Repræsentanterne gav generelt udtryk for,\nat det var positivt med nogle klarere rammer på området og at de blev orienteret forud for den\noffentlige høring.\nMiljøvurdering\n\nForslaget til Tillæg nr. 42 til Kommuneplan 2019 er screenet i henhold til miljøvurderingsloven.\nDet vurderes, at realisering af kommuneplantillæggets muligheder ikke medfører væsentlige\nindvirkninger på miljøet. Det anbefales derfor, at der ikke udarbejdes en miljøvurdering af\nkommuneplantillægget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1-4 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16169,10 +16377,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Endelig vedtagelse af Lokalplan 2026-2 tæt-lav boliger på Tvekildevej, Ryslinge",
    "afsnit": [
     {
@@ -16190,6 +16398,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen godkendt."
     }
    ],
    "bilag": []
@@ -16199,10 +16411,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Forslag til Lokalplan 2026-7 Børnehus Ringe Syd",
    "afsnit": [
     {
@@ -16220,6 +16432,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1-4 godkendt."
     }
    ],
    "bilag": []
@@ -16229,10 +16445,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Kriterier for prioritering af lokalplanansøgninger",
    "afsnit": [
     {
@@ -16250,6 +16466,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Forvaltningens indstillinger til igangsættelse af ansøgte projekter sker indenfor den\nøkonomiske driftsramme til planfunktionen/myndighedsfunktionerne, hvilket betyder, at\nder vil være en venteliste.\nI vurderingen af de enkelte projekter kan der være opmærksomhed på en evt. tidsfaktor,\nder kan have betydning for muligheden for realisering, og dermed behov for en særskilt\nfinansiering af ressourcer til myndighedsfunktionen. I forlængelse heraf anbefales det, at\nTeknik- Plan- og Havneudvalget i 2027 i givet fald rejser en konkret sag med anbefaling\naf finansiering gennem en tillægsbevilling overfor Økonomi- Erhvervs- og\nTurismeudvalget og kommunalbestyrelsen.\nDet anbefales, at der til budgetforhandlingerne 2028 overvejes at medtage mulighed for\nfinansiering af konkrete prioriterede projekter, hvor der er et momentum for realisering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen godkendt."
     }
    ],
    "bilag": []
@@ -16259,10 +16479,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Vintertjeneste i Faaborg-Midtfyn Kommune",
    "afsnit": [
     {
@@ -16280,6 +16500,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Drøftelsen har ingen særskilte økonomiske konsekvenser. Udvalget vil – afhængigt af\ndrøftelsen – blive forelagt beslutningssager med henblik på at reducere merudgifterne til\nVintertjenesten."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -16289,10 +16513,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Kvartalsvis budgetopfølgning 30.9.2026 og risikovurdering for 2027",
    "afsnit": [
     {
@@ -16310,6 +16534,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Fremgår af sagsfremstillingen og bilag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen anbefales overfor Økonomi- Erhvervs- og Turstimeudvalget og kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16319,10 +16547,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Anlæg - Budgetopfølgning 30.09.2026",
    "afsnit": [
     {
@@ -16335,7 +16563,11 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Formålet med budgetopfølgningen er at give et bud på det forventede regnskab for 2026 inden\nfor Teknik- Plan- og Havneudvalgets anlægsprojekter - samt vurdere om resultatet giver\nanledning til justeringer eller handlinger for at holde budgettet i 2026.\nBudgetopfølgningen for udvalgets driftsområder behandles i en særskilt sag.\nMindre-/Merforbrug på Teknik- Plan- og Havneudvalget\nBudgetopfølgningen pr. 30. september 2026 viser et samlet forventet mindreforbrug på 41,758\nmio. kr. efter tillægsbevillinger. Ved budgetopfølgningen pr. 31. maj 2026 blev der forventet et\nmindreforbrug på 30,266 mio. kr. Det forventede mindreforbrug er steget med 11,492 mio. kr.\nsiden seneste budgetopfølgning.\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (angivet i 1.000 kr., minus=mindreforbrug)\nOprindeligt\nbudget\n\nKorrigeret\nbudget\n\nForventet\nforbrug pr.\n\nAfvigelse\n\nAnsøgte\ntillægsbev\n(TB)\n\nAfvigelse\nefter TB\n\nTeknik- Planog\nHavneudvalget\n\nI pct.\n\nI alt\n\nDe væsentligste afvigelser, er nærmere beskrevet nedenfor med henblik på at give et\nretvisende billede af, den samlede økonomiske udvikling under Teknik- Plan- og\nHavneudvalgets anlæg.\nMindreforbruget vedrører følgende anlægsprojekter:\n”Anlæg af nye cykelstier og opfølgning på trafiksikkerhedsplan (2026-2029)” (6,500\nmio. kr.). Mindreforbruget skyldes hovedsageligt, at der afventes godkendelse fra\nrelevante myndigheder. Derudover er der i nogle af planlagte projekter givet afslag på de\nansøgte ændringer. Derved trækker de planlagte anlæg ud, idet der skal findes nye\nløsninger og der i mange tilfælde også kræver nye runder med borgerinvolveringer.\n”Anlæg af cykelstier og opfølgning på trafiksikkerhedsplan” (5,520 mio. kr.).\nMindreforbruget skyldes, at anlægsprojekt, der gennemføres i samarbejde med\nVejdirektoratet, som strækker sig over perioden 2025 til 2026 er blevet væsentligt\nbilligere end forventet. Projektet omfatter forbedring af cykelstien på Rolighedsvej der\nforventes færdigt i 4 kvartal 2026. Såfremt de sidste anlæg er færdig ultimo 2026, vil det\nsamlede mindreforbruget fra anlægget til gå kassen i forbindelse med overførelsessagen.\n”Ringe Nord - Vejanlæg” (5,465 mio. kr.), hvor mindreforbruget skyldes, at projektet\nafventer afslutning af udbudsrunden. Når udbuddet er afsluttet, kan anlægsarbejdet\nigangsættes.\n”Landsbypuljen 2014-2026” (4,720 mio. kr.). Mindreforbruget skyldes dels opsparede\nmidler, som ikke er blevet udbetalt og dels tidsforskydninger i aftrækket af midlerne.\nPuljens midler anvendes som medfinansiering til renoveringsprojekter eller nedrivning af\nboliger i Faaborg-Midtfyn Kommunes byer. Der er blevet arbejdet på at justere kriterierne\ni puljen i et forsøg på at få flere ansøgere.\n”Klinten strand - renovering - udskifte spunsvæg” (4,252 mio. kr.). Projektet afventer\nendelig godkendelse i TPHU og kan derfor ikke realiseres før 2027. Midlerne søges\nderfor overført til 2027 i forbindelse med regnskabsafslutningen.\n”Cykelsti-Golfparken, Ringe” (3,343 mio. kr.). Mindreforbruget skyldes at anlæggelsen\naf den nye cykelsti på Rolighedsvej skal være færdig først, for dette anlæg kan\npåbegyndes for at undgå for mange trafikale gener. Derved vil mindreforbruget søges\noverført til 2027.\n”Pulje til byforskønnelse” (2,485 mio. kr.), Puljen er en opsparingspulje til at lave\nområdefornyelse i kommunens landsbyer. Det betyder, at midlerne skal opspares og\n\noverføres over årene.\n”Pulje til fornyelse af bymidter” (2,381 mio. kr.), Mindreforbruget skyldes, at der ikke er\nstor søgning til puljen. Teknik- og Miljøudvalget godkendte den 23. oktober (pkt. 172) sag\nvedr. ændring af retningslinjerne for tildeling af støtte i et forsøg på at få anlægsmidlerne.\nDerudover er der iværksat en øget markedsføringsindsats i 2026.\n”Faaborg Øst - Sikring af veje til nye boligområder” (2,240 mio. kr.). Mindreforbruget\nskyldes et projekt, der udvikles af privat investor, som endnu ikke er i mål med aftaler om\nerhvervelse af arealer, så kommunen afventer med lokalplanlægning, og vejprojektet\nafventer den nye lokalplan.\nØvrige anlæg:\nUd over de ni ovennævnte anlægsprojekter omfatter anlægsområdet under Teknik- Planog Havneudvalget yderligere 13 anlægsprojekter, som samlet set udviser et\nmindreforbrug på 5,548 mio. kr. Mindreforbruget kan primært henføres til\nanlægsprojekter, som enten strækker sig over flere år eller som er udskudt til 2027, som\nfølge af bl.a. forsinkelser i projektering, borgerinvolveringer, myndighedsprocesser samt\nudførelsen af projekterne.\nBudgetændringer\nLigesom på driften er formålet med budgetopfølgningen også at godkende budgetændringer\nvedr. anlægsprojekterne.\nAd. Indstillingspunkt 2 og 3, bedes der om en anlægsbevilling samt frigivelse af midler, afsat i\nbudgetaftalen for 2026, til anlægget ”Landsbypuljen 2014-2026”. Midlerne skal anvendes til\nudbetaling af de disponerede midler til ansøgerne.\nAd. indstillingspunkt 4 tilføres kassen 0,696 mio. kr. fra anlægget ”Landsbypuljen 2014-2026”,\nda de reserverede midler ikke kommer til udbetaling, idet de ansøgte projekter ikke er blevet\nrealiseret.\nTabel 2: Tillægsbevillinger pr. 30. september 2026 (angivet i 1.000 kr.)\n\nTillægsbevillinger: Beskrivelse\n\nBudgetneutrale\ntillægsbevillinger\nI alt\n\n(A10) BO\nLandbypuljen\n\nog\nfrem"
+     "tekst": "Formålet med budgetopfølgningen er at give et bud på det forventede regnskab for 2026 inden\nfor Teknik- Plan- og Havneudvalgets anlægsprojekter - samt vurdere om resultatet giver\nanledning til justeringer eller handlinger for at holde budgettet i 2026.\nBudgetopfølgningen for udvalgets driftsområder behandles i en særskilt sag.\nMindre-/Merforbrug på Teknik- Plan- og Havneudvalget\nBudgetopfølgningen pr. 30. september 2026 viser et samlet forventet mindreforbrug på 41,758\nmio. kr. efter tillægsbevillinger. Ved budgetopfølgningen pr. 31. maj 2026 blev der forventet et\nmindreforbrug på 30,266 mio. kr. Det forventede mindreforbrug er steget med 11,492 mio. kr.\nsiden seneste budgetopfølgning.\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (angivet i 1.000 kr., minus=mindreforbrug)\nOprindeligt\nbudget\n\nKorrigeret\nbudget\n\nForventet\nforbrug pr.\n\nAfvigelse\n\nAnsøgte\ntillægsbev\n(TB)\n\nAfvigelse\nefter TB\n\nTeknik- Planog\nHavneudvalget\n\nI pct.\n\nI alt\n\nDe væsentligste afvigelser, er nærmere beskrevet nedenfor med henblik på at give et\nretvisende billede af, den samlede økonomiske udvikling under Teknik- Plan- og\nHavneudvalgets anlæg.\nMindreforbruget vedrører følgende anlægsprojekter:\n”Anlæg af nye cykelstier og opfølgning på trafiksikkerhedsplan (2026-2029)” (6,500\nmio. kr.). Mindreforbruget skyldes hovedsageligt, at der afventes godkendelse fra\nrelevante myndigheder. Derudover er der i nogle af planlagte projekter givet afslag på de\nansøgte ændringer. Derved trækker de planlagte anlæg ud, idet der skal findes nye\nløsninger og der i mange tilfælde også kræver nye runder med borgerinvolveringer.\n”Anlæg af cykelstier og opfølgning på trafiksikkerhedsplan” (5,520 mio. kr.).\nMindreforbruget skyldes, at anlægsprojekt, der gennemføres i samarbejde med\nVejdirektoratet, som strækker sig over perioden 2025 til 2026 er blevet væsentligt\nbilligere end forventet. Projektet omfatter forbedring af cykelstien på Rolighedsvej der\nforventes færdigt i 4 kvartal 2026. Såfremt de sidste anlæg er færdig ultimo 2026, vil det\nsamlede mindreforbruget fra anlægget til gå kassen i forbindelse med overførelsessagen.\n”Ringe Nord - Vejanlæg” (5,465 mio. kr.), hvor mindreforbruget skyldes, at projektet\nafventer afslutning af udbudsrunden. Når udbuddet er afsluttet, kan anlægsarbejdet\nigangsættes.\n”Landsbypuljen 2014-2026” (4,720 mio. kr.). Mindreforbruget skyldes dels opsparede\nmidler, som ikke er blevet udbetalt og dels tidsforskydninger i aftrækket af midlerne.\nPuljens midler anvendes som medfinansiering til renoveringsprojekter eller nedrivning af\nboliger i Faaborg-Midtfyn Kommunes byer. Der er blevet arbejdet på at justere kriterierne\ni puljen i et forsøg på at få flere ansøgere.\n”Klinten strand - renovering - udskifte spunsvæg” (4,252 mio. kr.). Projektet afventer\nendelig godkendelse i TPHU og kan derfor ikke realiseres før 2027. Midlerne søges\nderfor overført til 2027 i forbindelse med regnskabsafslutningen.\n”Cykelsti-Golfparken, Ringe” (3,343 mio. kr.). Mindreforbruget skyldes at anlæggelsen\naf den nye cykelsti på Rolighedsvej skal være færdig først, for dette anlæg kan\npåbegyndes for at undgå for mange trafikale gener. Derved vil mindreforbruget søges\noverført til 2027.\n”Pulje til byforskønnelse” (2,485 mio. kr.), Puljen er en opsparingspulje til at lave\nområdefornyelse i kommunens landsbyer. Det betyder, at midlerne skal opspares og\n\noverføres over årene.\n”Pulje til fornyelse af bymidter” (2,381 mio. kr.), Mindreforbruget skyldes, at der ikke er\nstor søgning til puljen. Teknik- og Miljøudvalget godkendte den 23. oktober (pkt. 172) sag\nvedr. ændring af retningslinjerne for tildeling af støtte i et forsøg på at få anlægsmidlerne.\nDerudover er der iværksat en øget markedsføringsindsats i 2026.\n”Faaborg Øst - Sikring af veje til nye boligområder” (2,240 mio. kr.). Mindreforbruget\nskyldes et projekt, der udvikles af privat investor, som endnu ikke er i mål med aftaler om\nerhvervelse af arealer, så kommunen afventer med lokalplanlægning, og vejprojektet\nafventer den nye lokalplan.\nØvrige anlæg:\nUd over de ni ovennævnte anlægsprojekter omfatter anlægsområdet under Teknik- Planog Havneudvalget yderligere 13 anlægsprojekter, som samlet set udviser et\nmindreforbrug på 5,548 mio. kr. Mindreforbruget kan primært henføres til\nanlægsprojekter, som enten strækker sig over flere år eller som er udskudt til 2027, som\nfølge af bl.a. forsinkelser i projektering, borgerinvolveringer, myndighedsprocesser samt\nudførelsen af projekterne.\nBudgetændringer\nLigesom på driften er formålet med budgetopfølgningen også at godkende budgetændringer\nvedr. anlægsprojekterne.\nAd. Indstillingspunkt 2 og 3, bedes der om en anlægsbevilling samt frigivelse af midler, afsat i\nbudgetaftalen for 2026, til anlægget ”Landsbypuljen 2014-2026”. Midlerne skal anvendes til\nudbetaling af de disponerede midler til ansøgerne.\nAd. indstillingspunkt 4 tilføres kassen 0,696 mio. kr. fra anlægget ”Landsbypuljen 2014-2026”,\nda de reserverede midler ikke kommer til udbetaling, idet de ansøgte projekter ikke er blevet\nrealiseret.\nTabel 2: Tillægsbevillinger pr. 30. september 2026 (angivet i 1.000 kr.)\n\nTillægsbevillinger: Beskrivelse\n\nBudgetneutrale\ntillægsbevillinger\nI alt"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "(A10) BO\nLandbypuljen\n\nog\nfrem\n\nIndstillingspunkterne 1-4 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16345,10 +16577,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Samspil mellem Politik og Administration",
    "afsnit": [
     {
@@ -16362,6 +16594,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Formålet med denne kvartalsvise drøftelse i udvalget af samspillet mellem politikere og\nadministrationen er at skabe de bedst mulige rammer for samarbejdet og for betjeningen af de\npolitiske udvalg.\nPunktet skaber mulighed for, at der i forbindelse med udvalgets almindelige og fortløbende\narbejde kan være dialog om eventuelle misforståelser, og at ønsker til samarbejdet kan få ord\nmed på vejen.\nTil drøftelse på baggrund af udvalgets behandling af sager i det seneste kvartal:\nHar udvalget oplevet klare og tydelige sagsfremstillinger?\nHar der været tydelige indstillinger i sagerne, så det var let gennemskueligt, hvad der\nskulle tages stilling til?\nVar den samlede dagsorden til møderne grupperet tilfredsstillende i forhold til typer af\nindstillinger (anbefaling, beslutning, orientering, efterretning), så det var nemt at\ndisponere udvalgets tid?\nEr det udvalgets opfattelse, at administrationen har handlet på de bestillinger, udvalget\nhar givet?\nHvilke tiltag fra administrationen har især gjort en positiv forskel for udvalgets arbejde?\nHar udvalget konstateret arbejdsmetoder, processer eller andet i administrationen, der\nmed fordel kunne ændres i forhold til det efterfølgende politiske arbejde?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -16371,10 +16607,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Udvalgets årsplaner - til opdatering",
    "afsnit": [
     {
@@ -16384,6 +16620,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Ændringer siden årsplanen sidst er forelagt Teknik- Plan- og Havneudvalget:\nFølgende introduktioner er udskudt:\nIntroduktion til landzonesager og byfornyelse\nIntroduktion til TinyHouse\nIntroduktion til signaturprojekter, herunder også prøvehandlinger – evt. besøge\nfremtidens forstad i Årslev"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning med bemærkning om, at udvalgsmødet 15. dec. starter kl. 14 og\nudvides til kl. 19."
     }
    ],
    "bilag": []
@@ -16393,15 +16633,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Gensidig orientering",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller, at Teknik- Plan- og Havneudvalget tager orienteringen til\nefterretning"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning, herunder:\nOpfølgning på ansøgning om dieselgenerator."
     }
    ],
    "bilag": []
@@ -16411,12 +16655,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Orientering fra formanden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Formanden orienterede om:\nAfvikling af borgermøder"
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-17-teknik-plan-og-havneudvalget-17": {
@@ -16424,10 +16673,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 17,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Præsentation af indkomne ansøgninger om lokalplanlægning",
    "afsnit": [
     {
@@ -16445,6 +16694,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -16454,12 +16707,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Teknik- Plan- og Havneudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 18,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=51ea6114-6f64-4a69-bda0-85f31cd2651d",
-   "hentet": "2026-11-12T12:58:15.001Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=0de9c3c9-3605-4c38-b7ab-8fda6bcad46b",
+   "hentet": "2026-11-19T13:32:15.815Z",
    "titel": "Godkendelse af protokol",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-1": {
@@ -16467,15 +16725,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Tidsplan for mødet er vedlagt til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -16485,10 +16747,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Skoleudviklingssamtaler og kvalitetsmodel",
    "afsnit": [
     {
@@ -16506,6 +16768,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1 og 2 taget til efterretning.\nIndstillingspunkt 3 godkendt."
     }
    ],
    "bilag": []
@@ -16515,10 +16781,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "PISA 2025",
    "afsnit": [
     {
@@ -16536,6 +16802,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkt 1 taget til efterretning.\nIndstillingspunkt 2 drøftet."
     }
    ],
    "bilag": []
@@ -16545,10 +16815,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Elevernes Børnetopmøde 2026",
    "afsnit": [
     {
@@ -16566,6 +16836,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Emne\n\nVærdi\n\nTo workshops Fælleselevråd, sparring og\nmoderatorrolle Børnetopmødet\n\n21.000 plus transport\n\nTingcentralen fire gange undervisning,\nværk og facilitering på børnetopmøde\n\nBustransport, Børnetopmødet\n\n24.063 kr. ekskl. moms\n\nLeje af hal/lokale til Børnetopmøde\n\nCa. 6.000 kr. (inkl. bordopstilling til 300\npersoner og brandplan)\n\nForplejning Børnetopmøde\n\n10.000 kr. (anslået, for pizza)\n\nMaterialer til Børnetopmødet\n\nI alt\n\nUdgifterne afholdes inden for 09 Administration under Skole- og Dagtilbudsudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -16575,10 +16849,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Grundskoleelevtal pr. 5. september",
    "afsnit": [
     {
@@ -16596,6 +16870,10 @@
     {
      "titel": "Økonomi",
      "tekst": "De økonomiske konsekvenser fremgår af sag på indeværende udvalgsmøde Kvartalsvis\nbudgetopfølgning 30.9.2026 og risikovurdering for 2027 (pkt. 131)."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -16605,10 +16883,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Kvartalsvis budgetopfølgning 30.9.2026 og risikovurdering for 2027",
    "afsnit": [
     {
@@ -16626,6 +16904,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen direkte økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkterne 1 – 3 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16635,10 +16917,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Anlæg - Budgetopfølgning 30.09.2026",
    "afsnit": [
     {
@@ -16652,6 +16934,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Formålet med budgetopfølgningen er at give et bud på det forventede regnskab for 2026 inden for Skole- og\nDagtilbudsudvalgets anlægsprojekter, samt vurdere om resultatet giver anledning til justeringer eller handlinger for at\nholde budgettet i 2026.\nBudgetopfølgningen for udvalgets driftsområder behandles i en særskilt sag.\nForudsætninger\n\nFølgende anlæg er færdiggjort og afsluttet siden budgetopfølgningen 31.maj 2026:\nTilpasning og modernisering af Øhavsskolen afd. Uglen – Inventar.\nUdvidelsen af kapaciteten i den kommunale tandpleje tilpasset den udvidede målgruppe af 18-21-årige - Inventar.\nMindre-/Merforbrug på Skole- og Dagtilbudsudvalget\n\nBudgetopfølgningen pr. 30. september 2026 viser et samlet forventet mindreforbrug på 0,686 mio. kr. efter\ntillægsbevillinger. Dette er en forbedring i forhold til budgetopfølgningen pr. 31. maj 2026, hvor der blev forventet et\nmerforbrug på 0,639 mio. kr. Det forventede resultat er således forbedret med 1,325 mio. kr. siden seneste\nbudgetopfølgning.\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (angivet i 1.000 kr., minus = mindreforbrug)\n\nOprindeligt\nbudget 2026\nSkole- og\nDagtilbudsudvalget\nI alt\n\nKorrigeret\nbudget 2026\n\nForventet\nforbrug pr.\n\nAfvigelse\n\nAnsøgte\ntillægsbev.\n(TB)\n\nAfvigelse efter\nTB\n\nI pct.\n\nDe væsentligste afvigelser er nærmere beskrevet nedenfor med henblik på at give et retvisende billede af, den samlede\nøkonomiske udvikling under Skole- og Dagtilbudsudvalgets anlæg.\nMindreforbruget vedrører følgende anlægsprojekter:\n\n”Udvidelse af kapaciteten i den kommunale tandpleje tilpasset den udvidede målgruppe af 18-21-årige”\n(1,034 mio. kr.), hvor mindreforbruget kan henføres til, at projektet er realiseret billigere end forventet, samt at\nFaaborg-Midtfyn Kommune har opnået 50 % tilskud fra Sundheds- og Kirkeministeriet af de budgetterede udgifter.\n”Udvidelse af kommunens specialiserede tilbud §83 og §4” (0,349 mio. kr.). Mindreforbruget skyldes, at der\naktuelt afventes en afklaring på finansiering af driftsudgifterne til bussen.\n\n”Etablering af køkkenfacilitet i Lundsbjerg Børnehus” (0,279 mio. kr.), hvor mindreforbruget skyldes, at\netableringen af køkkenfaciliteterne ikke forventes færdiggjort i 2026. Mindreforbruget søges derfor overført til 2027 til\nafholdelse af de resterende udgifter.\n”Opgradering af faglokale til natur-/teknikundervisning på Broskolen, afd. Rolfsted - Inventar” (0,200 mio. kr.)\nhar et mindreforbrug, idet projektets anlægsdel først gennemføres efter uge 42 og forventes færdiggjort ultimo 2026.\nIndkøb af inventar kan derfor først finde sted i 2027, hvorfor mindreforbruget vil blive søgt overført til 2027 ved\noverførelsessagen.\n”Midlertidig pavillon på Tingagerskolen - afledt drift og nedtagelse” (0,100 mio. kr.). Mindreforbruget skyldes, at\nnedtagningen af den midlertidige pavillon på Tingagerskolen er udskudt til en ny vurdering senest i marts 2027. Dette\nsker som følge af opstarten af et nyt skærmet tilbud på tre skoler i Faaborg-Midtfyn Kommune, herunder\nTingagerskolen. Det forventes på nuværende tidspunkt, at elevtallet vil stige, hvilket medfører behov for ekstra\nundervisningslokaler. På den baggrund vil mindreforbruget søges overført til 2027 med overførselssagen.\nMerforbrug vedrører følgende anlægsprojekter:\n\n”Skoleudvidelse og renovering Årslev” (1,2 mio. kr.). I forbindelse med den afsluttende etape af moderniseringen\npå Broskolen blev der konstateret asbest. Merudgiften til håndtering heraf blev indarbejdet i budgetforslaget ”Årslev –\nudvikling af ny bymidte” for 2026 og godkendt som en del af budgetforliget. Som følge af skærpede regler på\nområdet er omkostningerne til nedtagning og håndtering af asbest imidlertid steget, hvilket medfører et fortsat\nmerforbrug på anlægget. Der verserer desuden en tvist mellem entreprenøren og Faaborg-Midtfyn Kommune,\nhvorfor det på nuværende tidspunkt er usikkert, om der vil komme yderligere udgifter. Merforbruget forventes at\nkunne dækkes af midler fra anlægget Årslev-rammen, når det endelige niveau er afklaret."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -16661,10 +16947,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Forberedelse af Skole- og Dagtilbudsudvalgets årsplan for 2027",
    "afsnit": [
     {
@@ -16682,6 +16968,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingspunkt 1 godkendt med tilføjelse af en første drøftelse af børnelivet i en digital\nkontekst i januar 2027.\nIndstillingspunkt 2 drøftet."
     }
    ],
    "bilag": []
@@ -16691,10 +16981,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Samspil mellem Politik og Administration",
    "afsnit": [
     {
@@ -16708,6 +16998,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Formålet med denne kvartalsvise drøftelse i udvalget af samspillet mellem politikere og\nadministrationen er at skabe de bedst mulige rammer for samarbejdet og for betjeningen af de\npolitiske udvalg.\nPunktet skaber mulighed for, at der i forbindelse med udvalgets almindelige og fortløbende\narbejde kan være dialog om eventuelle misforståelser, og at ønsker til samarbejdet kan få ord\nmed på vejen.\nTil drøftelse på baggrund af udvalgets behandling af sager i det seneste kvartal:\nHar udvalget oplevet klare og tydelige sagsfremstillinger?\nHar der været tydelige indstillinger i sagerne, så det var let gennemskueligt, hvad der\nskulle tages stilling til?\nVar den samlede dagsorden til møderne grupperet tilfredsstillende i forhold til typer af\nindstillinger (anbefaling, beslutning, orientering, efterretning), så det var nemt at\ndisponere udvalgets tid?\nEr det udvalgets opfattelse, at administrationen har handlet på de bestillinger, udvalget\nhar givet?\nHvilke tiltag fra administrationen har især gjort en positiv forskel for udvalgets arbejde?\nHar udvalget konstateret arbejdsmetoder, processer eller andet i administrationen, der\nmed fordel kunne ændres i forhold til det efterfølgende politiske arbejde?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -16717,10 +17011,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Udvalgets årsplan",
    "afsnit": [
     {
@@ -16730,6 +17024,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Årsplanen er et dynamisk dokument, som kan tilrettes og suppleres løbende fra møde til møde\nefter udvalgets ønsker.\nUdvalget kan under punktet komme med særlige ønsker til temadrøftelser, yderligere emner\neller andet som måtte have udvalgets interesse inden for fagområdet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -16739,15 +17037,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Gensidig orientering",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "1. Kommunikation\n2. Nyt fra dagtilbudsområdet\n3. Nyt fra skoleområdet\n4. Opfølgning på dialogmøde den 27. oktober 2026 mellem Skole- og Dagtilbudsudvalget\nog private, kommunale og selvejende dagtilbud og Dagplejen. Se bilag 4A.\n5. Opfølgning på dialogmøde den 2. november 2026 mellem Skole- og Dagtilbudsudvalget\nog folkeskoler og frie grundskoler. Se bilag 5A.\n6. Nyt forløb i Den kulturelle rygsæk gør skolehistorien levende for de yngste: I Den\nkulturelle rygsæks nye kulturarvsforløb ”Drømmeskolen” blev historien vakt til live, da\nelever i 1.–3. klasse mødte Reventlow på Brahetrolleborg Gods og efterfølgende fik\nmulighed for at skabe deres egen drømmeskole. Elevernes drømmeskoler blev udstillet\npå Gærup Skolemuseum i efterårsferien.\nForløbet bygger på et stærkt samarbejde med lokale og nationale kulturaktører og lærere\nfra lokale skoler, som sætter børnenes viden og stemmer i centrum for idéer til deres\negen 'drømmeskole'."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -16757,12 +17059,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Orientering fra formanden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Formanden orienterede om KL-udspil om folkeskolen samt regeringens kommende\nstormøde om samme emne."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-17-skole-og-dagtilbudsudvalget-14": {
@@ -16770,12 +17077,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Skole- og Dagtilbudsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=f442b3b4-9fcf-4c82-ab67-0ea2e51e4e8c",
-   "hentet": "2026-11-12T12:58:25.316Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=1887ee1d-0aaf-4f7d-a7d9-b4fbf297ac14",
+   "hentet": "2026-11-19T13:32:48.282Z",
    "titel": "Godkendelse af protokol",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-23-handicapraadet-1": {
@@ -16985,12 +17297,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nGodkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-18-kultur-fritids-og-lokalsamfundsudvalget-2": {
@@ -16998,10 +17315,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Danmarks Naturstier - Anlægsbevilling til Faaborg-Ringe Stien",
    "afsnit": [
     {
@@ -17018,7 +17335,11 @@
     },
     {
      "titel": "Økonomi",
-     "tekst": "Egenfinansieringen er udgifter til Faaborg-Ringe Stien, som kommunen i forvejen ville\nfinansiere fra \"Stipuljen\" - Lokale Bynære Naturstier\". Der er 1.088 mio. kr. i\nanlægsbevillingen \"Lokale bynære stier og naturstier\" i 2026 og udgifterne kan derfor\nafholdes inden for eksisterende anlægsramme.\n\nUdvalg\n\nKFLU\n\nKFLU\n\nKFLU\n\nBevilling (nr &\nnavn)\n\nAnlægsbevilling Revitalisering af\nFaaborg ringe\nStien**\nStipuljen - Lokale\nBynære\nNaturstier***\nFondsmidler fra\nDanmarks Naturstier\n\nTotal\n** Nyt anlæg\n\nVarigt\n(Ja/Nej)\n\nNej"
+     "tekst": "Egenfinansieringen er udgifter til Faaborg-Ringe Stien, som kommunen i forvejen ville\nfinansiere fra \"Stipuljen\" - Lokale Bynære Naturstier\". Der er 1.088 mio. kr. i\nanlægsbevillingen \"Lokale bynære stier og naturstier\" i 2026 og udgifterne kan derfor\nafholdes inden for eksisterende anlægsramme.\n\nUdvalg\n\nKFLU\n\nKFLU\n\nKFLU\n\nBevilling (nr &\nnavn)\n\nAnlægsbevilling Revitalisering af\nFaaborg ringe\nStien**\nStipuljen - Lokale\nBynære\nNaturstier***\nFondsmidler fra\nDanmarks Naturstier\n\nTotal\n\nVarigt\n(Ja/Nej)\n\nNej\n\n** Nyt anlæg"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nIndstillingspunkterne 1-4 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17028,10 +17349,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Energi- og Vedligeholdelsespuljen - behandling af ansøgninger pr. 20. september 2026",
    "afsnit": [
     {
@@ -17049,6 +17370,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Bevilling kan ske fra Energi- og vedligeholdelsespuljen 2026, hvor der er et restbudget på\n318.167 kr. til 3. ansøgningsrunde. Hvis ovenstående ansøgninger bevilges, er udgiften\nfor puljen med momsrefusion i alt 41.261 kr. og puljens restbudget i 2026 er på 276.906\nkr. Bevillingen ligger under Folkeoplysningsområdet, 3003 Fritid og Folkeoplysning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nIndstillingspunkterne 1-7 godkendt."
     }
    ],
    "bilag": []
@@ -17058,10 +17383,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Udpegning af vakant plads til Billedkunstrådet 2027-2030",
    "afsnit": [
     {
@@ -17079,6 +17404,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Beslutning om udpegning har ikke i sig selv økonomiske konsekvenser.\nStatsstøtte til Billedkunstrådets virke i 2027 er forventeligt på 50.000 kr. og skal søges på\nårlig basis. Statsstøtten gives mod tilsvarende lokal/kommunal medfinansiering.\nForvaltningen bemærker, at der i forbindelse med beslutning på Kommunalbestyrelsens\nmøde den 7. september 2021 (punkt 227) blev taget beslutning om at afsætte midler\n(50.000 kr. årligt) til nødvendig medfinansiering af Billedkunstrådet. Heraf årlige\ndriftsmidler til Billedkunstråd (17.000 kr. årligt) suppleret med midler fra 1 %\njordsalgspuljen til kunst og byforskønnelse (33.000 kr. årligt). Udgifter til den nødvendige\nkommunale medfinansiering kan således afholdes indenfor den eksisterende økonomiske\nramme.\nIfølge Billedkunstrådets vedtægter § 7 skal kunstmidlerne fra jordpuljen opgøres én gang\nårligt fremlægges til orientering i Kultur- Fritids- og Lokalsamfundsudvalget. Til orientering\ner puljen opgjort pr. 27. august 2026 og Jordpuljen 1% til kunst og byforskønnelse har et\nrestbeløb på 612.340,00 kr."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nIndstillingspunkt 1 og 2 godkendt af et flertal bestående af Ole Pedersen (L), Steffen\nJensen (A), Maria Weisbjerg (O), Poul Kristensen (A). John Jakobsen (V) undlader at\nstemme."
     }
    ],
    "bilag": []
@@ -17088,10 +17417,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Udvikling af Årslev Hallen – status og videre proces",
    "afsnit": [
     {
@@ -17109,6 +17438,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Der resterer 125.000 kr. af tidligere afsatte midler i halmodellens udviklingspulje til\nudvikling af Årslev hallen.\nHalmodellens bevilling og herunder udviklingspuljen er inden for driftsrammen 3003 Fritid\nog Folkeoplysning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17118,10 +17451,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Ansøgning til Levende litteraturmøder for børn og unge - ved Statens Kunstfond",
    "afsnit": [
     {
@@ -17139,6 +17472,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Der søges om 114.000 kr., svarende til ca. 19 litteraturmøder med et honorar på\nminimum 6.000 kr. pr. møde.\n\nVed tilsagn er Faaborg-Midtfyn Kommunes minimumstilskud 54.538 kr., bestående af et\ngrundbeløb på 32.000 kr. og et tillæg på 22.538 kr. Det endelige tilskud kan blive højere,\nhvis ikke alle kommuner deltager i initiativet.\nTilskudsmidlerne er bundet til honorering af forfattere og illustratorer samt inden for den\nfastsatte ramme transportudgifter.\nHvis der opnås tilsagn, vil sagen blive fremlagt igen med en nærmere projektbeskrivelse,\nsamt beslutning om indtægts- og udgiftsbevilling."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -17148,10 +17485,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Drift - Kvartalsvis budgetopfølgning 30.9.2026",
    "afsnit": [
     {
@@ -17169,6 +17506,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Fremgår af sagsfremstillingen og bilag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nIndstillingspunkt 1 og 2 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17178,10 +17519,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Anlæg - Budgetopfølgning 30.09.2026",
    "afsnit": [
     {
@@ -17195,6 +17536,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Formålet med budgetopfølgningen er, at komme med et bud på forventede regnskab for 2026\ninden for Kultur- Fritid- og Lokalsamfundsudvalgets anlægsprojekter - samt vurdere om\nresultatet giver anledning til justeringer eller handlinger for at holde budgettet i 2026.\nBudgetopfølgningen for udvalgets driftsområder bliver behandlet i en særskilt sag.\nMindre-/Merforbrug på Kultur- Fritid- og Lokalsamfundsudvalget\nBudgetopfølgningen pr. 30. september 2026 viser et forventet mindreforbrug på 24,032 mio. kr.\nefter tillægsbevillinger. Ved budgetopfølgningen pr. 31. maj 2026 var det forventede\nmindreforbrug 22,074 mio. kr. Der er dermed sket en forbedring af det forventede\nregnskabsresultat på 1,958 mio. kr.\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (angivet i 1.000 kr., minus=mindreforbrug)\nOprindeligt Korrigeret Forventet\nAnsøgte\nbudget\nbudget\nforbrug\ntillægsbev Afvigelse\nI\npr. 30.09 Afvigelse\n(TB)\nefter TB pct.\nKultur- Fritid- og\nLokalsamfundsudvalget\nI alt\n\nDe væsentligste afvigelser, er nærmere beskrevet nedenfor med henblik på at give et\nretvisende billede af, den samlede økonomiske udvikling under Kultur- Fritid- og\nLokalsamfundsudvalgets anlæg.\nMindreforbruget vedrører følgende anlægsprojekter:\n”Signaturprojekt Faaborg Museum” (5,000 mio. kr.). Mindreforbruget skyldes at\nprojektet er forsinket på grund af forlænget proces med myndighedsarbejdet og\nudbuddet.\n”Modernisering af aktivitetscentre 2026-2029” (4,764 mio. kr.). En del af de bevilgede\npuljemidler forventes først anvendt efter 2026 og søges derfor overført til 2027. Dette\nskyldes, at projekterne afventer yderligere ekstern finansiering samt nødvendige\ntilladelser. Da projekterne desuden i vidt omfang varetages af frivillig arbejdskraft, må der\nforventes tidsmæssige forskydninger i projektgennemførelsen.\n”Renovering af idrætshaller i FMK 2026–2029” (4,569 mio. kr.). Mindreforbruget\nskyldes, at det på nuværende tidspunkt ikke forventes, at alle renoveringsprojekter kan\nnå at blive gennemført i 2026. Derudover søges der om at noget af mindreforbruget\ndækker et merforbrug på anlægget ”Lysanlæg på idrætsanlæg/boldbaner - udskiftning og\nrenovering”. Det resterende mindreforbrug vil blive søgt overført i forbindelse med\noverførelsessagen 2026/2027.\n”Øhavsmuseet - Nyt besøgscenter og landskabsmuseum” (3,662 mio. kr.), hvor\nmindreforbruget skyldes, at Kommunalbestyrelsen på mødet den 9. september 2026 (pkt.\n202) godkendte model 4 til håndtering af udfordringerne vedrørende Frølageret.\nØhavsmuseets bestyrelse besluttede den 30. juni 2026 at lukke udstillingsbygningen\nFrølageret i Faaborg, for gæster og medarbejdere, idet bygningen blev vurderet til ikke at\nvære sikker. Forvaltningen er i dialog med museet om en revideret plan for projektets\ngennemførelse og de resterende udbetalinger, hvilket medfører forskydninger i projektets\nøkonomi og tidsplan.\n”Gåsebjergsand Aktivitetscenter” (3,020 mio. kr.). Mindreforbruget skyldes, at der\nfortsat afventes ekstern finansiering.\n”Midtfyns Multipark - Udendørs motion, leg og bevægelse for alle” (1,833 mio. kr.).\nDer afventes fortsat på udarbejdelse af lokalplan og myndighedsgodkendelser.\nMerforbruget vedrører følgende anlægsprojekt:\n”Lysanlæg på idrætsanlæg/boldbaner - udskiftning og renovering” (0,530 mio. kr.).\nMerforbruget skyldes at lysanlægget som er anlagt ved boldbanerne i Krarup-Espe er\nblevet dyrere end forventet. Dette skyldes merudgift i forbindelse med tilkobling af el\nforbindelse til det nye lysanlæg. Derudover var også en merudgift til lysanlægget til Nr.\nLyndelse boldbaner i tilkobling til elnettet.\n\nØvrige anlæg:\nUd over de syv ovennævnte anlægsprojekter omfatter anlægsområdet yderligere ni\nanlægsprojekter, som samlet set udviser et mindreforbrug på 1,714 mio. kr. før\ntillægsbevillinger. Mindreforbruget kan primært henføres til tidsforskydninger i\nprojekterne.\nAnlæg knyttet til jordpuljen\nKultur- Fritid- og Lokalsamfundsudvalget har to anlæg (Billedkunstråd og Jordpulje - Kunst) der\ner knyttet til Jordpuljen. Disse afrapporteres i forbindelse med jordpuljen til Økonomi-,\nErhvervs-, og Turismeudvalget og ikke som del af nærværende opfølgning.\nBudgetændringer\nLigesom på driften er formålet med budgetopfølgningen også at godkende budgetændringer\nvedr. anlægsprojekterne.\nAd. Indstillingspunkt 2 bedes der om en budgetneutral omplacering på 0,530 mio. kr. fra\nanlægget ”Renovering af idrætshaller i FMK 2026–2029” til anlægget ”Lysanlæg på\nidrætsanlæg/boldbaner - udskiftning og renovering” under Kultur- Fritids- og\nLokalsamfundsudvalget. Omplaceringen har ingen økonomisk betydning, da det dækkes\nindenfor eget udvalgsbudget. Forklaringen til omplaceringen findes i ovenstående forklaringer."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nIndstillingspunkt 1 og 2 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17204,10 +17549,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Samspil mellem Politik og Administration",
    "afsnit": [
     {
@@ -17221,6 +17566,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Formålet med denne kvartalsvise drøftelse i udvalget af samspillet mellem politikere og\nadministrationen er at skabe de bedst mulige rammer for samarbejdet og for betjeningen af de\npolitiske udvalg.\nPunktet skaber mulighed for, at der i forbindelse med udvalgets almindelige og fortløbende\narbejde kan være dialog om eventuelle misforståelser, og at ønsker til samarbejdet kan få ord\nmed på vejen.\nTil drøftelse på baggrund af udvalgets behandling af sager i det seneste kvartal:\nHar udvalget oplevet klare og tydelige sagsfremstillinger?\nHar der været tydelige indstillinger i sagerne, så det var let gennemskueligt, hvad der\nskulle tages stilling til?\nVar den samlede dagsorden til møderne grupperet tilfredsstillende i forhold til typer af\nindstillinger (anbefaling, beslutning, orientering, efterretning), så det var nemt at\ndisponere udvalgets tid?\nEr det udvalgets opfattelse, at administrationen har handlet på de bestillinger, udvalget\nhar givet?\nHvilke tiltag fra administrationen har især gjort en positiv forskel for udvalgets arbejde?\nHar udvalget konstateret arbejdsmetoder, processer eller andet i administrationen, der\nmed fordel kunne ændres i forhold til det efterfølgende politiske arbejde?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nDrøftet."
     }
    ],
    "bilag": []
@@ -17230,10 +17579,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Udvalgets årsplaner - til opdatering",
    "afsnit": [
     {
@@ -17243,6 +17592,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Ændringer siden årsplanen sidst er forelagt Kultur- Fritids- og Lokalsamfundsudvalget:\nIntroduktion til filmindsatser i FMK er rykket fra november til december.\nDer er tilføjet et fællesmøde mellem Kultur- Fritids- og Lokalsamfundsudvalget, NaturKlima- og Bæredygtighedsudvalget samt Skole- og Dagtilbudsudvalget om styrket\nnaturkendskab den 16. december klokken 14-15."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17252,10 +17605,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Gensidig orientering",
    "afsnit": [
     {
@@ -17265,6 +17618,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "1. Nyt forløb i Den kulturelle rygsæk gør skolehistorien levende for de yngste.\nFortidens skole møder fremtidens drømmeskole!\nI Den kulturelle rygsæks nye kulturarvsforløb ”Drømmeskolen” blev historien vakt til live,\nda elever i 1.–3. klasse mødte Reventlow på Brahetrolleborg Gods og efterfølgende fik\nmulighed for at skabe deres egen drømmeskole. Elevernes drømmeskoler blev udstillet\npå Gærup Skolemuseum i efterårsferien.\nForløbet bygger på et stærkt samarbejde med lokale og nationale kulturaktører og lærere\nfra lokale skoler, som sætter børnenes viden og stemmer i centrum for idéer til deres\negen 'drømmeskole'. Den gode historie er delt på kommunens hjemmeside og\nFacebookside, samt udsendt til pressen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17274,12 +17631,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Orientering fra formanden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nFormanden orienterede om der kommer en sag vedr. puljer under bl.a landdistriktspuljen\ntil december-mødet."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-18-kultur-fritids-og-lokalsamfundsudvalget-14": {
@@ -17287,12 +17649,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Kultur- Fritids- og Lokalsamfundsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=e232b421-ce45-4ef2-8e58-f11126da6871",
-   "hentet": "2026-11-12T21:48:54.425Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=a8c27a70-93e2-4b1d-ac01-0a9cf4c5dcff",
+   "hentet": "2026-11-19T13:33:12.855Z",
    "titel": "Godkendelse af protokol",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Anna Mette Skov Borring (B) og Jimmi Krøyer (A).\nGodkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-19-sundheds-og-aeldreudvalget-1": {
@@ -17543,12 +17910,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nGodkendt."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-18-natur-klima-og-baeredygtighedsudvalget-2": {
@@ -17556,10 +17928,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Revision af FFV Spildevand A/S Betalingsvedtægt for spildevand",
    "afsnit": [
     {
@@ -17577,6 +17949,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Revisionen medfører ikke i sig selv ændringer i de gældende takster for tilslutningsbidrag\nog vandafledningsbidrag.\nEnkelte af de nye eller præciserede bestemmelser kan dog have økonomisk betydning i\nkonkrete tilfælde. Det gælder blandt andet regler om flytning af stik og tilslutningspunkt\nsamt renter og gebyrer.\nRevisionen vurderes ikke i sig selv at medføre direkte økonomiske konsekvenser for FFV\nSpildevand A/S eller Faaborg-Midtfyn Kommune.\nFor kunder og grundejere kan enkelte bestemmelser som nævnt ovenfor have økonomisk\nbetydning i konkrete tilfælde."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingen anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17586,10 +17962,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Revision af Regulativ for tømning af bundfældningstanke FFV Spildevand A/S",
    "afsnit": [
     {
@@ -17607,6 +17983,10 @@
     {
      "titel": "Økonomi",
      "tekst": "For hovedparten af de berørte ejendomme vurderes revisionen ikke at medføre\nvæsentlige nye forpligtelser, men primært at skabe større klarhed om allerede gældende\nkrav og praksis.\nEnkelte af de nye eller præciserede bestemmelser kan dog have økonomisk betydning i\nkonkrete tilfælde. Det gælder særligt muligheden for at opkræve gebyr ved dæksler, der\nvejer mere end foreskrevet i regulativet. Muligheden indføres af hensyn til arbejdsmiljøet\nfor de udførende entreprenører."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingen anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17616,10 +17996,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Fastlæggelse af spildevandstakster for 2027",
    "afsnit": [
     {
@@ -17637,6 +18017,10 @@
     {
      "titel": "Økonomi",
      "tekst": "De nye takster medfører ingen økonomiske konsekvenser for Faaborg-Midtfyn\nKommune ud over kommunens institutioners egenbetaling afledning af spildevand og\nvejbidrag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingen anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17646,10 +18030,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Fastlæggelse af affaldstakster for 2027",
    "afsnit": [
     {
@@ -17667,6 +18051,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Håndtering og opkrævning af takster foretages af FFV Renovation A/S. De nye takster medfører ingen\nøkonomiske konsekvenser for Faaborg-Midtfyn Kommune ud over kommunens institutioners egenbetaling for\nrenovation."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingen anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17676,10 +18064,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Vandværkstakster 2027 - FFV Vand A/S",
    "afsnit": [
     {
@@ -17697,6 +18085,10 @@
     {
      "titel": "Økonomi",
      "tekst": "De nye takster medfører ingen økonomiske konsekvenser for Faaborg-Midtfyn Kommune\nud over kommunens institutioners egenbetaling for brug af vand."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingen anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17706,10 +18098,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Vandværkstakster - 2027",
    "afsnit": [
     {
@@ -17727,6 +18119,10 @@
     {
      "titel": "Økonomi",
      "tekst": "De nye takster medfører ingen økonomiske konsekvenser for Faaborg-Midtfyn\nKommune, ud over kommunale institutioners egenbetaling for brug af vand."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingspunkterne 1-11 godkendt."
     }
    ],
    "bilag": []
@@ -17736,10 +18132,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Godkendelse af Vandløbsregulativ for Sallinge Å",
    "afsnit": [
     {
@@ -17757,6 +18153,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Godkendelse af regulativer har ikke i sig selv en økonomisk konsekvens."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -17766,10 +18166,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Status: Møbelcentralen",
    "afsnit": [
     {
@@ -17783,6 +18183,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Møbelcentralen arbejder med både økonomisk, social og miljømæssig bæredygtighed\nog skaber værdi ud af de møbler og det inventar, vi allerede har i kommunen. Ved at genbruge,\nreparere og upcycle eksisterende møbler spares både ressourcer, CO₂ og kommunale midler.\nSamtidig bidrager Møbelcentralen med indretningshjælp, så vi skaber attraktive og funktionelle\nmiljøer på plejehjem, skoler mv. Dertil bidrager et tæt samarbejde med Arbejdsmarked til, at vi\nskaber meningsfulde arbejdsfællesskaber for borgere i 'Nyttejob', der tidligere har været langt\nfra det ordinære arbejdsmarked.\nMøbelcentralen har d.d.:\nLeveret 654 møbler på tværs af alle forvaltningsområder og dermed sparet godt 900.000\nkr. på nyindkøb\nHaft 16 forløb med borgere i Særligt tilrettelagt nyttejob og én borger i ordinær 16 ugers\npraktik\nSikret mindre affald og færre møbler til bortskaffelse\nØget fokus på cirkulær økonomi i den kommunale drift\nSkabt æstetiske og brugbare rum på plejehjem, i skoler, kontormiljøer mv.\nMøbelcentralen oplever en stigende interesse for at genanvende eksisterende inventar som\nalternativ til nyindkøb, og der kommer mange henvendelser til Møbelcentralen. Vi er godt i\ngang, men det kræver altid et stort formidlingsarbejde at implementere et nyt tiltag som\nMøbelcentralen. Derfor arbejder vi målrettet med at styrke kommunikationen om ordningen, så\nflere medarbejdere og ledere får kendskab til de muligheder, der findes for genbrug af inventar\npå tværs af organisationen. Møbelcentralen synliggøres pt. på instagram, via nyheder og egen\nside på VoresFMK, og endelig på indkøbsplatformen Tellis, hvor Møbelcentralen har sin egen\nfane. For at understøtte en mere systematisk opfølgning forbedres registreringen af møbler og\n\nflytninger mellem enheder løbende, hvilket bidrager til et mere retvisende datagrundlag for\nrapportering og dokumentation. Der er desuden fokus på at synliggøre de klima- og\nressourcegevinster, som projektet skaber gennem forlænget anvendelse af eksisterende\ninventar.\nSocial bæredygtighed\nMøbelcentralen og Arbejdsmarked samarbejder gennem en samarbejdsaftale om borgere i\nSærligt tilrettelagt nyttejobindsats. I perioden 1. januar 2026 - 1. oktober 2026 har 16 borgere\nværet henvist til møbelcentralen til nyttejobindsats. Borgerne fra nyttejobindsatsen indgår med\nde øvrige kollegaer i arbejdsfællesskabet med upcycling og klargøring af møbler. Derudover\nhar Møbelcentralen én medarbejder ansat i flexjob og pt. er der én i ordinær afklarende 16ugers-praktik efter en længere sygemelding. Vi samarbejder også med Socialområdet, hvor\nborgere i beskyttet beskæftigelse hjælper med at køre møbler. På den måde bidrager projektet\nikke kun til klima- og ressourceindsatsen men understøtter også arbejde med social\nbæredygtighed.\nMøbler i cirkulation\nMøbelcentralen har indtil nu sikret, at 654 enheder møbler er blevet omfordelt til ny\nanvendelse. Hvert møbel registreres som én enhed, når det udleveres til et fagcenter gennem\nMøbelcentralen. Møbelcentralen har vedtaget at dokumentere møblernes økonomiske værdi\nved at fastsætte dem ud fra den laveste indkøbspris på det pågældende type møbel i Tellis.\nMed denne værdiansættelse, er der leveret møbler med en værdi af 909.615 kr. Det er vigtigt\nat bemærke, at de møbler, Møbelcentralen leverer ofte er kvalitetsmøbler, hvorfor den reelle\nværdiansættelse formentlig er højere. Der er møbler, der er i så dårlig stand og af så dårlig\nkvalitet, at de ikke kan genbruges. Det gælder ofte møbler af nyere dato, hvorimod ældre\nmøbler ofte er i bedre stand eller kan sættes i stand.\nFagcenter / Stab\n\nAntal\nMøbler\n\nVærdi\n\nAndel af samlet\nværdi\n\nAndel af finansieringen\naf Møbelcentral\n\nOpvækst og læring\n\nkr.\n\nSundhed og ældre\n\nkr.\n\nBLK\n\nkr.\n\nSocialområdet\n\nkr.\n\nArbejdsmarked\n\nkr.\n\nBEO\n\nEstimeret CO₂ besparelse d.d.\nDen økonomiske proxy beregner CO₂-besparelsen ud fra møblets estimerede nyindkøbsværdi,\n\nmens beregning pr. møbel tager udgangspunkt i en standardiseret CO₂-besparelse for hvert\ngenanvendt møbel. Formålet med beregningen er primært at synliggøre den dokumenterbare\nklimaeffekt af genanvendelse frem for at fastlægge en præcis CO₂-værdi for hvert enkelt\nmøbel. Metoderne beskrives i bilag 1.\nMetode\n\nCO₂ besparelse i ton\n\nØkonomisk proxy metode\n\nCO₂ pr. møbel metode:\n\nDesignprojekter og eksterne samarbejder\nMøbelcentralen har lavet en aftale med Sundhed og Ældre om at bistå med indretning og\nompolstring af stole på alle plejehjem i kommunen. Derudover er der indgået samarbejde med\nKADK - Det kongelige akademi for Arkitektur og Design om designprojekter, hvor redesign og\ngenbrug er i fokus. De er engageret i nyindretning af lokale til ungemiljø på Brobyskolerne,\nPontoppidan. Derudover samarbejder vi med A Circular Design Studio, der ligeledes arbejder\nmed genbrug og genanvendelse af diverse materialer."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17792,10 +18196,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Kvartalsvis budgetopfølgning 30.9.2026 og risikovurdering for 2027",
    "afsnit": [
     {
@@ -17813,6 +18217,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Fremgår af sagsfremstillingen og bilag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingspunkterne 1-2 anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17822,10 +18230,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Anlæg - Budgetopfølgning 30.09.2026",
    "afsnit": [
     {
@@ -17839,6 +18247,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Formålet med budgetopfølgningen er at komme med et bud på forventet regnskab for 2026\ninden for Natur- Klima- og Bæredygtighedsudvalgets anlægsprojekter - samt vurdere om\nresultatet giver anledning til justeringer eller handlinger for at holde budgettet i 2026.\nBudgetopfølgningen for udvalgets driftsområder bliver behandlet i en særskilt sag.\nForudsætninger\nFølgende anlæg er lukket siden sidste budgetopfølgning:\nForunders. af vandløbsrestaurering i Sallinge Å, Vandområdeplan\nForunders. af vandløbsrestaurering i Sandholdt Møllebæk og Dyrehavebækken,\nVandomr.plan\n\nMindre-/Merforbrug på Natur- Klima- og Bæredygtighedsudvalget\nBudgetopfølgningen pr. 30. september 2026 viser et forventet merforbrug på 4,780 mio. kr.\nVed budgetopfølgningen pr. 31. maj 2026 blev der forventet et merforbrug på 7,355 mio. kr.\nDet forventede merforbrug er dermed reduceret med 2,575 mio. kr. siden seneste\nbudgetopfølgning.\nTabel 1: Budgetopfølgningen pr. 30. september 2026 (angivet i 1.000 kr., minus=mindreforbrug)\nOprindeligt Korrigeret Forventet\nAnsøgte\nbudget\nbudget\nforbrug\ntillægsbev Afvigelse\npr. 30.09 Afvigelse\n(TB)\nefter TB\n\nI pct.\n\nNatur- Klima- og\nBæredygtighedsudvalget\n\nI alt\n\nDe væsentligste afvigelser, er nærmere beskrevet nedenfor med henblik på at give et\nretvisende billede af den samlede økonomiske udvikling under Natur- Klima- og\nBæredygtighedsudvalgets.\nMindreforbruget vedrører følgende anlægsprojekter:\n”Forundersøgelser vådområder 2026-2027” (0,545 mio. kr.). Mindreforbruget skyldes,\nat en del af de planlagte forundersøgelser er blevet forsinket og derfor ikke forventes\ngennemført inden årets udgang. Projektet følger fortsat den overordnede plan, men dele\naf aktiviteterne og de tilhørende udgifter er forskudt til 2027.\n”Skovrejsning, Ringe Vest” (0,300 mio. kr.). Mindreforbruget skyldes, at der er tale om\nen pulje, hvor der opspares midler til erhvervelse af skovarealer i samarbejde med\nNaturstyrelsen. Mindreforbruget søges derfor overført til 2027.\nMerforbruget vedrører følgende anlægsprojekter:\n”Vandløbsrestaurering i Hågerup Å” (2,592 mio. kr.). Merforbruget skyldes, at\ntilskuddet fra Naturstyrelsen først udbetales ved projektets afslutning. Der er således tale\nom en midlertidig likviditetsforskydning, og merforbruget forventes dækket i 2027, jf.\nkommunalbestyrelsens beslutning den 15. januar 2025 (pkt. 3).\n”Forundersøgelse af vandløbsrestaurering i Skelrenden til Heden, Kværndrup Å,\nVittinge Å og Vindinge Å” (0,878 mio. kr.) Merforbruget skyldes, at tilskuddet fra\nNaturstyrelsen først udbetales ved projektets afslutning. Der er således tale om en\nmidlertidig likviditetsforskydning, og merforbruget forventes dækket i 2027, jf.\nkommunalbestyrelsens beslutning den 4. februar 2026 (pkt. 42).\n”LIFE Ring - FMK (Natur2000 projekt)” (1,733 mio. kr.). Anlægsprojektet løber frem\nmod 2032. Faaborg-Midtfyn Kommunes egenfinansiering udgør 5,5 mio. kr., fordelt over\n8 år. Der afsættes årligt 690.000 kr. i anlægsbudgettet, hvortil der opnås 67 % tilskud fra\nEU. Første rate fra EU blev modtaget i 2024 (2,0 mio. kr.), og næste udbetaling forventes\nførst i 2030. Dette medfører et midlertidigt merforbrug frem mod 2030.\nØvrige anlæg:\nUd over de fire ovennævnte anlægsprojekter omfatter anlægsområdet yderligere ni projekter\nmed både mer- og mindreforbrug, som samlet set udviser et merforbrug på 0,423 mio. kr.\nMerforbruget skyldes primært mindre vandområdeprojekter, hvor der er afholdt udgifter i 2026,\n\nmens de tilhørende refusioner og tilskudsindtægter fra Naturstyrelsen først forventes modtaget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nIndstillingen anbefales overfor Økonomi- Erhvervs- og Turismeudvalget og\nkommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -17848,10 +18260,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Status på Grøn Trepart",
    "afsnit": [
     {
@@ -17865,6 +18277,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Faaborg-Midtfyn Kommune har areal, der afvander til de fire hovedvandoplande rundt om Fyn\nog som følge heraf deltager i de fire Grønne Treparter for disse hovedvandoplande. FaaborgMidtfyn Kommune er repræsenteret med et politisk valgt medlem fra Natur-, Klima- og\nBæredygtighedsudvalget i hvert af de fire Grønne Treparter. Det er:\nGrøn Trepart Odense Fjord: Søren Kristensen (V)\nGrøn Trepart Storebælt: Rasmus Viereck (C)\nGrøn Trepart Det Sydfynsk Øhav: Lars Nielsen (A)\nGrøn Trepart Lillebælt: Mads Holdgaard (F)\nRepræsentanterne og forvaltningen giver en status på de Grønne Treparter."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17874,10 +18290,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Status på BNBO beskyttelse",
    "afsnit": [
     {
@@ -17891,6 +18307,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Fire vandværker mere er nu beskyttet. Der udestår kun tre vandværker og her er varsel om\npåbud er sendt til alle lodsejere med BNBO arealer knyttet til de tre vandværker.\n\nHorne\nDer er 1 BNBO i Horne vandværks område, hvori 3 lodsejere skal indgå en frivillig aftale. Der\ner indgået 1 frivillig aftale. Efter høring af varsel om påbud er\n2 høringssvar kommet ind. Ét påbud afsendt. I den anden sag mangler forvaltningen at\nbesvare det indkomne høringssvar, hvorefter påbuddet vil blive udstedt. Det sidste påbud er\nblevet afsendt, dermed er Hornes BNBO beskyttet.\n\nRyslinge\nDer er 1 BNBO i Ryslinge vandværks område hvori 2 lodsejere skal indgå en aftale. Lodsejer\nhar tidligere modtaget tilbud på aftale.\nEfter høring af varsel om påbud er et høringssvar modtaget. Ét påbud afsendt. I den anden sag\nmangler vi at besvare det indkomne høringssvar, hvorefter påbuddet vil blive udstedt. Det\nsidste påbud er blevet afsendt, dermed er Ryslinges BNBO beskyttet.\n\nNr. Lyndelse\nDer er 1 BNBO i Nr. Lyndelse vandværks område, hvori 1 lodsejer skal indgå en aftale.\nLodsejer har tidligere modtaget tilbud på aftale.\n\nHøringsperioden af varsel om påbud er forlænget til den 22. oktober som følge af\nanmodningen om aktindsigt. Vi forventer herefter at modtage et høringssvar, som skal\nbesvares, inden påbuddet kan udstedes. Det sidste påbud er blevet afsendt, dermed er Nr.\nLyndelses BNBO beskyttet.\n\nVester Aaby\nDer er 1 BNBO i Vester Aaby vandværks område, hvori 1 lodsejer skal indgå en aftale.\nLodsejer har tidligere modtaget tilbud på aftale.\nPåbud er afsendt og dermed er Vester Aaby vandværks BNBO beskyttet.\n\nRolfsted\nDer er 1 BNBO i Rolfsted vandværks område, hvori 2 lodsejere skal indgå en aftale. En\nlodsejer har underskrevet frivillig aftale. En lodsejer har modtaget et tilbud på en frivillig aftale,\nmen vil ikke indgå i en frivillig aftale.\nEfter høring af varsel om påbud er et høringssvar modtaget og håndteret. Påbud er afsendt og\ndermed er Rolfsted vandværks BNBO’er beskyttet.\n\nAvernakø\nDer er 2 BNBO’er i Avernakø vandværks område, hvori 2 lodsejere skal indgå en aftale. Begge\nlodsejere har modtaget et tilbud på en frivillig aftale, men lodsejere vil gerne have lidt længere\nbetænkningstid.\nI høringsperioden af varsel om påbud er ingen høringssvar modtaget. Påbuddene er afsendt\nog dermed er Avernakø vandværks BNBO’er beskyttet.\n\nEspe (Midtfyn Vandforsyning)\nRådgiver har fremsendt et udkast til en frivillig aftale til vandværket. Vandværket har\nefterfølgende indsendt sit høringssvar til kommunes rådgiver. Derudover har rådgiver sendt\ntilbud på frivillig aftale til de 2 berørte lodsejere.\n1 frivillig aftale der er accepteret, forvaltning afventer dokumentation for dette. Varsel om påbud\nfremsendes til den anden lodsejer. Vandværket har indgået frivillige aftaler med alle lodsejerne,\ndermed er Midtfyns Vandforsyning – Espe BNBO’er beskyttet.\n\nVester Hæsinge\n\nRådgiver har fremsendt et udkast til en frivillig aftale til vandværket. Vandværket har\nefterfølgende indsendt sit høringssvar til kommunes rådgiver. Derudover har rådgiver sendt\ntilbud på frivillig aftale til de 2 berørte lodsejere. Ingen mulighed for frivillig aftale. Varsel om\npåbud er afsendt. Høringsfristen er d. 13.11.26. Der er 1 Lodsejer har givet høringssvar.\nPåbuddet sendes efterfølgende høringsfristen.\n\nBrobyværk Andelsvandværk\nRådgiver har fremsendt et udkast til en frivillig aftale til vandværket. Vandværket har\nefterfølgende indsendt sit høringssvar til kommunes rådgiver. Derudover har rådgiver sendt\ntilbud på frivillig aftale til de berørte lodsejere.\n1 har underskrevet en frivillig aftale. Varsel om påbud er afsendt. Høringsfristen er d. 13.11.26.\nIngen høringssvar modtaget endnu. Påbuddet sendes efterfølgende høringsfristen.\n\nNr. Søby\nDer er 1 BNBO i Nr. Søby vandværks område, hvori 2 lodsejer skal indgå en aftale. Lodsejerne\nhar tidligere modtaget tilbud på aftale. Varsel om påbud er afsendt. Høringsfristen er d.\n13.11.26. Der er 1 Lodsejer har givet høringssvar. Påbuddene sendes efterfølgende\nhøringsfristen.\n\nAt give et påbud/forbud er ikke en enkel proces og tager tid. Forvaltningen har skitseret den i 8\ntrin i vedlagte bilag. Trin 1-3 sker ved frivillige aftaler, trin 4-8 igangsættes, når frivillige aftaler\nikke kan opnås. Der kan klages over et påbud/forbud og der kan klages over fastsættelse af\nkompensationen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17900,10 +18320,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Status på miljøsager",
    "afsnit": [
     {
@@ -17921,6 +18341,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ikke økonomiske konsekvenser for kommunen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17930,10 +18354,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Samspil mellem Politik og Administration",
    "afsnit": [
     {
@@ -17947,6 +18371,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Formålet med denne kvartalsvise drøftelse i udvalget af samspillet mellem politikere og\nadministrationen er at skabe de bedst mulige rammer for samarbejdet og for betjeningen af de\npolitiske udvalg.\nPunktet skaber mulighed for, at der i forbindelse med udvalgets almindelige og fortløbende\narbejde kan være dialog om eventuelle misforståelser, og at ønsker til samarbejdet kan få ord\nmed på vejen.\nTil drøftelse på baggrund af udvalgets behandling af sager i det seneste kvartal:\nHar udvalget oplevet klare og tydelige sagsfremstillinger?\nHar der været tydelige indstillinger i sagerne, så det var let gennemskueligt, hvad der\nskulle tages stilling til?\nVar den samlede dagsorden til møderne grupperet tilfredsstillende i forhold til typer af\nindstillinger (anbefaling, beslutning, orientering, efterretning), så det var nemt at\ndisponere udvalgets tid?\nEr det udvalgets opfattelse, at administrationen har handlet på de bestillinger, udvalget\nhar givet?\nHvilke tiltag fra administrationen har især gjort en positiv forskel for udvalgets arbejde?\nHar udvalget konstateret arbejdsmetoder, processer eller andet i administrationen, der\nmed fordel kunne ændres i forhold til det efterfølgende politiske arbejde?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nDrøftet."
     }
    ],
    "bilag": []
@@ -17956,10 +18384,10 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Udvalgets årsplaner - til opdatering",
    "afsnit": [
     {
@@ -17969,6 +18397,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Ændringer siden årsplanen sidst er forelagt Natur- Klima- og Bæredygtighedsudvalget:\nDer er tilføjet et fællesmøde mellem Kultur- Fritids- og Lokalsamfundsudvalget, NaturKlima- og Bæredygtighedsudvalget samt Skole- og Dagtilbudsudvalget om styrket\nnaturkendskab den 16. december klokken 14-15"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17978,15 +18410,19 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 17,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Gensidig orientering",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Forvaltningen indstiller, at Natur- Klima- og Bæredygtighedsudvalget tager orienteringen\ntil efterretning"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -17996,12 +18432,17 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 18,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Orientering fra formanden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nFormanden orienterede om;\nhenvendelse fra Fyns Familie Landbrug om deltagelse i Det grønne råd.\nmøde med Kortegaards Planteskole."
+    }
+   ],
    "bilag": []
   },
   "faaborg-midtfyn-2026-11-18-natur-klima-og-baeredygtighedsudvalget-19": {
@@ -18009,23 +18450,28 @@
    "kommune": "Faaborg-Midtfyn",
    "udvalg": "Natur- Klima- og Bæredygtighedsudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 19,
-   "kilde": "https://dagsordener.fmk.dk/vis?id=0e267b02-bc00-49a7-8e08-989b3346b70e",
-   "hentet": "2026-11-13T12:26:57.538Z",
+   "kilde": "https://dagsordener.fmk.dk/vis?id=7c624816-67b4-412c-afc0-e2e67841ec28",
+   "hentet": "2026-11-19T13:33:03.977Z",
    "titel": "Godkendelse af protokol",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud fra Ole Folmer Greve (Æ).\nGodkendt."
+    }
+   ],
    "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=f89af074-2144-4217-8373-96fbb52570ac": {
    "senest": "2026-09-22",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=ece07e04-0bbc-4f8d-bf70-d5f81921e9c0": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=e52dc2db-574f-4845-a223-a6d41c0a5c90": {
    "senest": "2025-09-27",
@@ -18040,20 +18486,20 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=56d67f01-da3f-4787-b986-cbe3fba2dffb": {
-   "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-17",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=6a1c11fd-da59-4758-8727-7915a13aaafb": {
-   "senest": "2026-11-06",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-17",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=38359e55-77e4-4a5d-a5b5-916c7351ede2": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=da8f877b-a1b9-442f-b7a0-afe2ebbdd408": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=c1da8795-7f25-4e42-9256-650a568fe21a": {
    "senest": "2025-09-27",
@@ -18073,11 +18519,11 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=bdd6f889-c9e8-4119-a899-8616179d4511": {
    "senest": "2026-11-13",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=1f880b47-4457-4199-aa31-ab936f469784": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=578ee40a-6547-4eb9-bf52-50a2ef99dbab": {
    "senest": "2025-09-27",
@@ -18089,23 +18535,23 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=8bd2d7b1-43eb-4e67-ba7b-a76cfa84c15b": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=8d4e76a8-1087-4c45-93d5-4bf0fdc3520d": {
    "senest": "2016-12-07",
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=fba2908d-b20c-4c9c-bb13-e9cd5e2880db": {
-   "senest": "2026-11-13",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-17",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=5ac821d3-0efa-4dbe-9a85-de1a14d10ca1": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=8e173a78-9033-41d6-8e16-3d628749c5eb": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=9d0e2202-f939-4619-9e75-afc7e9180e75": {
    "senest": "2025-09-27",
@@ -18116,12 +18562,12 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=a3603119-da37-4e20-b424-a1bae3e57aca": {
-   "senest": "2026-11-13",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=63c4d2f0-74ba-4a99-ab3f-8871287b9c0e": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=7393a133-b0b6-47ce-8d56-703534a523a0": {
    "senest": "2025-09-27",
@@ -18132,16 +18578,16 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=2eaa9c4b-f6a0-4218-9359-3c78be66cd94": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-19",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=484cc56d-07ba-44e8-87dd-ff0b49a1fb7c": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=0462bba4-2f0a-4d8a-80cf-65f1781a8019": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=29ffe563-1ca3-4046-bce5-bec402c42122": {
    "senest": "2025-09-27",
@@ -18157,7 +18603,7 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=17a39ecc-54e2-4b13-8bbb-6f89182a1938": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=4d39e6bb-aef0-4c22-b7fa-a492dfac5e1f": {
    "senest": "2025-09-27",
@@ -18165,11 +18611,11 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=e80f9a77-aee0-416a-baee-d9ebed30b08a": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=ee235af0-e817-4114-9971-6f1089d346a9": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=a944508d-c463-48cb-96af-7d807626149c": {
    "senest": "2025-09-27",
@@ -18217,10 +18663,10 @@
   },
   "https://dagsordener.fmk.dk/Sitemap/ForCommittee?committeeId=a3201df3-93ae-43d5-96de-086408e59f3e": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   }
  },
  "parser": 3,
- "opdateret": "2026-11-13T21:13:16.149Z",
+ "opdateret": "2026-11-19T13:33:17.069Z",
  "kommune": "Faaborg-Midtfyn"
 }

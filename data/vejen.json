@@ -463,6 +463,30 @@
    "dato": "2026-11-17",
    "punkter": 8,
    "parser": 3
+  },
+  "304524bd-5d85-4ba8-b821-ca2a8434f213": {
+   "lastmod": "2026-11-18",
+   "type": "referat",
+   "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
+   "dato": "2026-11-17",
+   "punkter": 8,
+   "parser": 3
+  },
+  "2d084712-774e-4262-b91e-2c2c288152f9": {
+   "lastmod": "2026-11-18",
+   "type": "dagsorden",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-26",
+   "punkter": 7,
+   "parser": 3
+  },
+  "5d680a87-c436-4b98-b2d6-9b92d2a1c6c3": {
+   "lastmod": "2026-11-16",
+   "type": "referat",
+   "udvalg": "Fritidsrådet",
+   "dato": "2026-11-12",
+   "punkter": 15,
+   "parser": 3
   }
  },
  "sager": {
@@ -8396,12 +8420,17 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.164Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "1. Siden sidst",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    }
+   ],
    "bilag": []
   },
   "vejen-2026-11-12-fritidsraadet-2": {
@@ -8409,12 +8438,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.164Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "2. Orientering fra Udvalget for Sundhed, Kultur & Fritid",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "https://dagsordener.vejen.dk/vis?Referat-Udvalget-for-Sundhed%2C-Kultur-og-Fritid-d.28-092026-kl.10.00&id=d61e4b7a-25d2-474b-9c15-290bb63cb9b9\nhttps://dagsordener.vejen.dk/vis?Referat-Udvalget-for-Sundhed%2C-Kultur-og-Fritid-d.20-102026-kl.16.30&id=4f22ba0a-ef4b-4a6a-bb63-951bcd7ead07"
@@ -8427,12 +8460,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.164Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "3. Evaluering af dialogmøde med Udvalget for Sundhed, Kultur & Fritid",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der blev givet en orientering fra mødet. Fritidsrådet oplever lydhørhed fra Udvalget for\nSundhed, Kultur & Fritid.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Fritidsrådet deltog i dialogmøde med Udvalget for Sundhed, Kultur & Fritid den 20. oktober,\nhvor følgende emner blev drøftet:\nTilskud til foreningsudvikler\nKompetenceplanen § 6-3, stk. 2 – omplacering af midler\nArbejdet med handicapbegrebet\nAktiv i aftenskolen\nForeningsinspiration 22. oktober 2026\nHædringsarrangementet 26. februar 2027\n\nTidligere behandling\n24.09.2026 Fritidsrådet.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nIngen.\n\nHøring\nIngen."
@@ -8445,15 +8482,19 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.164Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "4. Ansøgning om lokaletilskud - Vejen Danseforening",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Fritidsrådet besluttede på mødet den 24. september at udsætte behandlingen af ansøgningen\nom tilskud til leje af lokaler på Mikkelborg Kro, da der var brug for en drøftelse med\nbestyrelsen.\nFormanden for Fritidsrådet har siden sidste møde besøgt foreningen på Mikkelborg Kro\nsammen med administrationen den 21. oktober.\nBestyrelsen fortalte, at der i øjeblikket er 6 børnehold og 5 voksenhold.\nPå de enkelte hold er der mellem 4 og 10 deltagere, og foreningen har pt 82 medlemmer.\nAktiviteterne foregår mandag, onsdag og torsdag, og foreningen lejer i øjeblikket 13 timer om\nugen.\nUdgiften pr. time er iflg. lejekontrakten 205,36 kr., dvs. en månedlig lejeudgift på ca. 11.500 kr.\nincl. el, vand og rengøring.\nForeningen har indsendt et budget, der viser et underskud for 2026 på ca. 30.000 kr. Af\nbudgettet fremgår det, at foreningen forventer at få 65 % i lokaletilskud til lokalelejen.\n\nTidligere behandling\n24.09.2026 Fritidsrådet\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nFolkeoplysningsloven.\n\nHøring\nIngen."
+     "tekst": "Fritidsrådet besluttede på mødet den 24. september at udsætte behandlingen af ansøgningen\nom tilskud til leje af lokaler på Mikkelborg Kro, da der var brug for en drøftelse med\nbestyrelsen.\nFormanden for Fritidsrådet har siden sidste møde besøgt foreningen på Mikkelborg Kro\nsammen med administrationen den 21. oktober.\nBestyrelsen fortalte, at der i øjeblikket er 6 børnehold og 5 voksenhold.\nPå de enkelte hold er der mellem 4 og 10 deltagere, og foreningen har pt 82 medlemmer.\nAktiviteterne foregår mandag, onsdag og torsdag, og foreningen lejer i øjeblikket 13 timer om\nugen.\nUdgiften pr. time er iflg. lejekontrakten 205,36 kr., dvs. en månedlig lejeudgift på ca. 11.500 kr.\nincl. el, vand og rengøring.\nForeningen har indsendt et budget, der viser et underskud for 2026 på ca. 30.000 kr. Af\nbudgettet fremgår det, at foreningen forventer at få 65 % i lokaletilskud til lokalelejen.\n\nTidligere behandling\n24.09.2026 Fritidsrådet\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nFolkeoplysningsloven.\n\nHøring\n\nIngen."
     }
    ],
    "bilag": []
@@ -8463,12 +8504,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.164Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "5. Ansøgning til Aktivitets- og Udviklingspuljen - Vejen og Omegns Sportsfiskerforening",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Fritidsrådet bevilgede det ansøgte.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Vejen og Omegns Sportsfiskerforening (VOSF) søger om et tilskud på 4.160 kr. til indkøb af\nværktøj og udstyr til at binde fluer og lave spinnere.\nForeningen ønsker at starte klubaftner op for både unge og gamle, og skabe noget mere\nsocialt i foreningen i efterårs- og vintersæsonen.\nForeningen har arvet lidt binde materiale og stik fra en nedlagt forening på Fyn, men mangler\nfortsat værktøj til at binde med. Foreningen søger om værktøj til 5 medlemmer.\nPuljen er på 50.000 kr. i 2026, og der 29.713 kr. tilbage i puljen.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nhttps://vejen.dk/selvbetjening/selvbetjening-for-borgere/oekonomi-og-tilskud?\nterm=Aktivitets%20%20og%20udviklingspuljen\n\nHøring\nIngen."
@@ -8481,12 +8526,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.164Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "6. Ansøgning til mindre anlægsprojekter - Sdr. Hygum Ungdoms- og gymnastikforening",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Fritidsrådet bevilgede 15.000kr.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Sdr. Hygum Ungdoms- og Gymnastikforenings badmintonafdeling søger om tilskud på 22.188\nkr. til indkøb af et fugtskab.\nBadmintonafdelingen har ca. 60 unge i alderen 7 – 18 år, og der skal bruges en masse\nbadminton fjerbolde. Det er en stor udgift, hvis fjerboldene ikke bliver fugtbehandlet inden brug.\nDer er dokumenteret en forøget holdbarhed på mellem 50 – 80 %, hvilket forventeligt kan\nreducere boldkøbet med 25-40 %.\nEffekten af korrekt opbevaring af badmintonbolde er dog ikke kun et spørgsmål om økonomi.\nMed korrekt fugtighed og vægt bliver boldens bevægelse og hastighed også optimal, og for\nden enkelte spiller betyder det bedre spiloplevelse, bedre badminton og ikke mindst større\nspiller glæde.\nForeningen har indhentet to tilbud på henholdsvis 23.999 kr. og 22.188 kr.\nDer er 189.000 kr. i puljen, og der er 90.000 kr. til rest.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nhttps://vejen.dk/oplev-vejen/foreninger-og-fritid/puljer-til-foreningslivet/mindreanlaegsprojekter?term=puljen%20til%20mindre%20anl%C3%A6gsprojekter\n\nHøring\nIngen."
@@ -8499,12 +8548,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "7. Ansøgning til mindre anlægsprojekter - Vejen Danseforening",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Fritidsrådet bevilgede 14.000kr.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Vejen Danseforeninger søger om tilskud på 20.344 kr. til indkøb af et mobilt spejl til\ndanseaktiviteterne.\nForeningen købte selv et spejl sidste år, fordi de kunne se et stort behov for bedre\ntræningsmuligheder for danserne.\nDet er været en stor succes, og giver stor motivation og glæde i dansen.\nSpejlet er ikke kun et træningsredskab, men hjælper børnene med at blive mere bevidste om\nderes egen krop og bevægelser.\nDer er 189.000 kr. i puljen, og der er 90.000 kr. til rest.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nhttps://vejen.dk/oplev-vejen/foreninger-og-fritid/puljer-til-foreningslivet/mindreanlaegsprojekter?term=Mindre%20anl%C3%A6gsprojekter\n\nHøring\nIngen."
@@ -8517,12 +8570,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "8. Godkendelse af regnskaber 2025 - Voksenundervisning",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Fritidsrådet tog orienteringen til efterretning.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Aftenskolernes regnskab for 2025 er gennemgået, og oversigten med regnskaberne er vedlagt\nsom bilag.\nAf oversigten fremgår det, at der skal betales ca. 46.000 kr. tilbage, da nogle af aftenskolerne\nikke har haft succes med at gennemføre den planlagte forventede undervisning.\nOversigten vil blive gennemgået på mødet.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nFolkeoplysningsloven.\n\nHøring\nIngen."
@@ -8535,12 +8592,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "9. Evaluering af Foreningsinspiration den 22. oktober 2026",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev drøftet. Der vil blive arbejdet videre med arrangementets form i forbindelse\nmed fritidsrådets strategidag i foråret 2027.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der blev afholdt Foreningsinspiration i Sdr. Hygum Aktivitetscenter den 22. oktober, hvor der\nvar knap 40 deltagere fra folkeoplysende foreninger, patientforeninger og lokalråd.\nCarsten Borch fra Brændkjær delte hans erfaringer med at få frivilligheden til at blomstre i\nlokalsamfundet. Efter oplægget var der workshop, hvor der blev snakket om diverse mulige\ninitiativer i foreninger og lokalsamfund, og efterfølgende blev de gode idéer delt i plenum.\n\nTidligere behandling\n19.02.2026 Fritidsrådet\n07.05.2026 Fritidsrådet\n18.06.2026 Fritidsrådet\n24.09.2026 Fritidstådet\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nIngen.\n\nHøring\nIngen."
@@ -8553,12 +8614,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "10. Evaluering af kurset \"Sådan skaber I udvikling i Folkeoplysningsudvalget\"",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Kurset blev drøftet.\nStrategidag for Fritidsrådet bliver afholdt fredag d. 9. april 2027.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Fritid & Samfund afholdt kurset ”Sådan skaber I udvikling i Folkeoplysningsudvalget” den 22.\nseptember 2026.\nPå kurset blev deltagerne stillet en opgave i form af at skrive, hvilke opgaver, der kunne være\ninteressante at arbejde med i de kommende 2-4 år.\nFritid & Samfund har samlet alle input i et dokument, der er vedhæftet som bilag.\n\nTidligere behandling\n12.03.2026 Fritidsrådet.\n18.06.2026 Fritidsrådet.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nIngen.\n\nHøring\nIngen."
@@ -8571,15 +8636,19 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "11. Netværksgrupper for foreninger",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Fritidsrådet drøftede sagen og godkendte indstillingen. Fritidsrådet ønsker, at der\narbejdes med særligt fokus på børn og unge, som har svært ved at finde deres plads i\nfritidslivet.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Fritidsrådet har gennem en periode drøftet udfordringer med at fastholde og engagere børn og\nunge i foreningslivet. Særligt spejdergrupperne har peget på de udfordringer, som nogle\nforeninger oplever i arbejdet med at skabe trygge og inkluderende fællesskaber for børn og\nunge med særlige behov.\nPå baggrund af drøftelserne i Fritidsrådet er der den 22. oktober 2026 blev der udsendt\ninformation til spejdergrupperne om en ny mulighed for at søge støtte til initiativer, der kan\nstyrke arbejdet med trygge og inkluderende fritidsfællesskaber.\nSamtidig peger erfaringer fra både lokale initiativer og tilbagemeldinger fra Foreningsinspiration\npå, at foreningerne efterspørger sparring, netværk og erfaringsudveksling på tværs.\nErfaringerne viser, at foreningerne oplever værdi i at mødes om fælles udfordringer og udvikle\nløsninger i fællesskab.\nDer er allerede positive erfaringer med tværgående samarbejder i kommunen. I Askov-Malt er\nder gennemført et indledende møde mellem lokale aktører med fokus på børn og unges\ndeltagelse i fritidslivet på tværs af foreninger, og i Bække er det lykkedes at etablere et\ntværgående trænerspireforløb med deltagelse af 26 børn og unge i alderen 7-17 år.\nPå baggrund af Fritidsrådets drøftelser og de positive erfaringer med tværgående samarbejder\nvurderer administrationen, at der er potentiale i at afprøve en model med netværksgrupper på\ntværs af foreninger.\nFormålet er at skabe et forum, hvor frivillige og foreninger kan udveksle erfaringer, opbygge\nkompetencer og udvikle fælles initiativer med fokus på børn og unge i fritidsfællesskaber.\nNetværkene skal bidrage til at styrke foreningernes muligheder for at skabe inkluderende\nfællesskaber og fastholde flere børn og unge i et aktivt fritidsliv.\nSom led i afprøvningen kan der afholdes netværksmøder med faglige oplæg,\nerfaringsudveksling, praksisnære eksempler og udvikling af konkrete lokale samarbejder.\nDisse netværk understøtter samtidig intentionerne i den kommende partnerskabsaftale mellem\nVejen Kommune og DGI Sydvest, hvor der blandt andet er fokus på foreningsudvikling og\nstyrkelse af inkluderende fællesskaber. Gennem partnerskabet forventes det, at frivillige\ntrænere, holdledere, spejderledere og bestyrelsesmedlemmer kan tilbydes konkrete værktøjer,\nsparring og kompetenceudvikling gennem målrettede foreningsudviklingsforløb og håndholdte\nkonsulentindsatser.\n\nErfaringer og resultater forelægges Fritidsrådet med henblik på vurdering af det videre arbejde\nog en eventuel videreførelse af indsatsen.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nFolkeoplysningsloven\n\nHøring\nIngen."
+     "tekst": "Fritidsrådet har gennem en periode drøftet udfordringer med at fastholde og engagere børn og\nunge i foreningslivet. Særligt spejdergrupperne har peget på de udfordringer, som nogle\nforeninger oplever i arbejdet med at skabe trygge og inkluderende fællesskaber for børn og\nunge med særlige behov.\nPå baggrund af drøftelserne i Fritidsrådet er der den 22. oktober 2026 blev der udsendt\ninformation til spejdergrupperne om en ny mulighed for at søge støtte til initiativer, der kan\nstyrke arbejdet med trygge og inkluderende fritidsfællesskaber.\nSamtidig peger erfaringer fra både lokale initiativer og tilbagemeldinger fra Foreningsinspiration\npå, at foreningerne efterspørger sparring, netværk og erfaringsudveksling på tværs.\nErfaringerne viser, at foreningerne oplever værdi i at mødes om fælles udfordringer og udvikle\nløsninger i fællesskab.\nDer er allerede positive erfaringer med tværgående samarbejder i kommunen. I Askov-Malt er\nder gennemført et indledende møde mellem lokale aktører med fokus på børn og unges\ndeltagelse i fritidslivet på tværs af foreninger, og i Bække er det lykkedes at etablere et\ntværgående trænerspireforløb med deltagelse af 26 børn og unge i alderen 7-17 år.\nPå baggrund af Fritidsrådets drøftelser og de positive erfaringer med tværgående samarbejder\nvurderer administrationen, at der er potentiale i at afprøve en model med netværksgrupper på\ntværs af foreninger.\nFormålet er at skabe et forum, hvor frivillige og foreninger kan udveksle erfaringer, opbygge\nkompetencer og udvikle fælles initiativer med fokus på børn og unge i fritidsfællesskaber.\nNetværkene skal bidrage til at styrke foreningernes muligheder for at skabe inkluderende\nfællesskaber og fastholde flere børn og unge i et aktivt fritidsliv.\n\nSom led i afprøvningen kan der afholdes netværksmøder med faglige oplæg,\nerfaringsudveksling, praksisnære eksempler og udvikling af konkrete lokale samarbejder.\nDisse netværk understøtter samtidig intentionerne i den kommende partnerskabsaftale mellem\nVejen Kommune og DGI Sydvest, hvor der blandt andet er fokus på foreningsudvikling og\nstyrkelse af inkluderende fællesskaber. Gennem partnerskabet forventes det, at frivillige\ntrænere, holdledere, spejderledere og bestyrelsesmedlemmer kan tilbydes konkrete værktøjer,\nsparring og kompetenceudvikling gennem målrettede foreningsudviklingsforløb og håndholdte\nkonsulentindsatser.\nErfaringer og resultater forelægges Fritidsrådet med henblik på vurdering af det videre arbejde\nog en eventuel videreførelse af indsatsen.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nFolkeoplysningsloven\n\nHøring\nIngen."
     }
    ],
    "bilag": []
@@ -8589,12 +8658,16 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "12. Fastsættelse af mødedatoer for Fritidsrådet 2027",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Fritidsrådet godkendte mødedatoerne.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "21.01.2027 – gennemgang indstillinger til hædring\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nIngen.\n\nHøring\nIngen."
@@ -8607,12 +8680,17 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "13. Opsamling fra mødet",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Bevillingerne.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    }
+   ],
    "bilag": []
   },
   "vejen-2026-11-12-fritidsraadet-14": {
@@ -8620,12 +8698,17 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "14. Evt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Aftenskolernes Foredragsforum har næste arrangement den 10. marts 2027 med Jesper\nVollmer.\nAfbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    }
+   ],
    "bilag": []
   },
   "vejen-2026-11-12-fritidsraadet-15": {
@@ -8633,12 +8716,17 @@
    "kommune": "Vejen",
    "udvalg": "Fritidsrådet",
    "dato": "2026-11-12",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=688874ec-3ec7-4574-ac87-b96cfb28ebc9",
-   "hentet": "2026-11-06T12:51:47.165Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=5d680a87-c436-4b98-b2d6-9b92d2a1c6c3",
+   "hentet": "2026-11-19T13:32:43.483Z",
    "titel": "15. Underskriftsark",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud: Mila Ponomarenko og Tanja Vestergaard Skøtt."
+    }
+   ],
    "bilag": []
   },
   "vejen-2026-11-17-aeldreraadet-1": {
@@ -8756,15 +8844,19 @@
    "kommune": "Vejen",
    "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=c75ecaec-17d8-42b6-ad21-627f345dcb11",
-   "hentet": "2026-11-12T21:48:42.137Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=304524bd-5d85-4ba8-b821-ca2a8434f213",
+   "hentet": "2026-11-19T13:32:15.311Z",
    "titel": "1. Orientering om status på beredskabsarbejdet i Vejen Kommune (B)",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Nedenfor angives en status på beredskabsarbejdet i Vejen Kommune, hvor vi er i dag, og hvad\nder må forventes at skulle håndteres inden for den kommende tid.\nDer vil på mødet være en kort gennemgang af status og kommende opgaver på\nberedskabsarbejdet.\nDer sker meget på beredskabsområdet og der kommer løbende trusselsopdateringer fra\nSAMSIK, hvordan kommunerne skal forholde sig.\nFor at gøre det lettere for kommunerne at forberede sig, er KL nu klar med anbefalinger på fire\nområder, der skal hjælpe med at skabe mere robuste beredskaber.\nAnbefalingerne retter sig mod fire områder:\n\nDagtilbuds-, skole- og fritidsområdet.\nOmråder med sårbare borgere.\nEnergi- og forsyningsområdet (f.eks. vand, varme, el, spildevand).\nDet digitale område.\n\nKommunerne skal derfor arbejde med at være på forkant med kriserne, uanset om det handler\nom at sikre mad og vand i børnehaverne, hjælpe de sårbare borgere, som vi ikke er i kontakt\nmed eller at lave beredskabsøvelser, så vi sikrer, at vores planer holder, som er udarbejdet på\nde enkelte områder.\nDer er sket udskiftning på personalesiden, og der er derfor brugt tid på at onboarde vores nye\nkollega i organisationen og i forhold til opgaverne. I dag er der afsat 0,5 årsværk og pr. 1.\njanuar 2027 kommer der yderligere 1,0 årsværk til arbejdet, som er med til at styrke og\nkoordinere opgaveløsningen i Vejen Kommune.\nStatus:\n§25 Beredskabsplan og Beredskabspolitik er godkendt og skal revideres i 2027.\nSundhedsberedskabsplanen er revideret og godkendt af Byrådet, og er sket i et\nsamarbejde mellem Sundhed, Kultur & Fritid og Ældre & Rehabilitering.\nDer er dannet et overblik over sikringsrum i kommunen. Og der pågår nu et arbejde med at\n\nbesigtige og registrere standen på sikringsrummene.\nDer er skabt et overblik over vandforsyningsselskaber i Vejen Kommune og hvordan man\nkan opretholde forsyningerne via nødstrømsgeneratorer i en given krisesituation.\nTre nødstrømsgeneratorer er hjemtaget fra Trekantbrand og er testet og serviceret.\nVejen Kommune har bestilt 25 stk. SINE-radioer (brugte) ved TrekantBrand, som blandt\nandet skal anvendes til Direktion, områdechefer, krisestab, myndighedssteder.\nDer er udpeget 10 myndighedssteder og 33 informationssteder i Vejen Kommune.\nDer er udarbejdet procedure for rådhuset og områdekontorer, hvordan man kommer ind i\nbygninger ved strømsvigt.\nIgangværende og kommende opgaver:\nUdarbejdelse af tekst til plakater til informationssteder. Dialog med ejere/bestyrelser om\nplacering og opsætning af skilte.\nIndkøb af materiel til myndighedssteder og beredskabspakker generelt.\nFærdiggørelse af informations- og kommunikationsmateriale til kommunens borgere,\nherunder udarbejdelse af pjecer til omdeling.\nNødstrømsgeneratorer – drøftelse og stillingtagen til hvor mange, der skal anskaffes og\nhvor de skal placeres i Vejen Kommune.\nBeredskabshjemmeside – hvordan får vi den lanceret og hvor skal den ligge?\nTemamøde for Byrådet.\nBeredskabsøvelse for Chefforum.\nHåndtering af spildevand ved forsyningssvigt. Der pågår dialog med Vejen Forsyning.\nIgangsætning af revision af Beredskabspolitik og § 25 Beredskabsplan.\nDelplaner skal ud at leve i Vejen Kommunes organisation. Skal ske ved øvelser og\nevaluering.\nTotalberedskab – hvordan får vi aktiveret lokalsamfundene og erhverv i Vejen Kommune.\nVejen Kommune er med i en arbejdsgruppe om beredskab under Trekantområdet, hvor\nman er ved at undersøge mulighederne for et samarbejde omkring blandt andet øvelser og\nuddannelse af kommunernes beredskabsmedarbejdere.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nDer er afsat midler i budget 2027 til ansættelse af en beredskabskoordinator for at styrke\nberedskabsarbejdet samt til mindre indkøb.\n\nPersonalemæssige konsekvenser\n\nDer er opslået en stilling som beredskabskoordinator med henblik på ansættelse fra 1. januar\nDerudover er det vigtigt, at der afsættes den nødvendige tid og ressourcer i de enkelte\nchefområder og institutioner i kommunen for at sikre, at alle ansatte i Vejen Kommune er\nbekendte med deres rolle i en given krisesituation, herunder til gennemførelse af årlige\nberedskabsøvelser og evalueringer.\n\nRetsregler og andre forskrifter\nBeredskabsloven, Vejledninger fra Beredskabsstyrelsen, SAMSIK og KL.\n\nHøring\nIngen."
+     "tekst": "Nedenfor angives en status på beredskabsarbejdet i Vejen Kommune, hvor vi er i dag, og hvad\nder må forventes at skulle håndteres inden for den kommende tid.\nDer vil på mødet være en kort gennemgang af status og kommende opgaver på\nberedskabsarbejdet.\nDer sker meget på beredskabsområdet og der kommer løbende trusselsopdateringer fra\nSAMSIK, hvordan kommunerne skal forholde sig.\nFor at gøre det lettere for kommunerne at forberede sig, er KL nu klar med anbefalinger på fire\nområder, der skal hjælpe med at skabe mere robuste beredskaber.\nAnbefalingerne retter sig mod fire områder:\n\nDagtilbuds-, skole- og fritidsområdet.\nOmråder med sårbare borgere.\nEnergi- og forsyningsområdet (f.eks. vand, varme, el, spildevand).\nDet digitale område.\n\nKommunerne skal derfor arbejde med at være på forkant med kriserne, uanset om det handler\nom at sikre mad og vand i børnehaverne, hjælpe de sårbare borgere, som vi ikke er i kontakt\nmed eller at lave beredskabsøvelser, så vi sikrer, at vores planer holder, som er udarbejdet på\nde enkelte områder.\nDer er sket udskiftning på personalesiden, og der er derfor brugt tid på at onboarde vores nye\nkollega i organisationen og i forhold til opgaverne. I dag er der afsat 0,5 årsværk og pr. 1.\njanuar 2027 kommer der yderligere 1,0 årsværk til arbejdet, som er med til at styrke og\nkoordinere opgaveløsningen i Vejen Kommune.\nStatus:\n\n§25 Beredskabsplan og Beredskabspolitik er godkendt og skal revideres i 2027.\nSundhedsberedskabsplanen er revideret og godkendt af Byrådet, og er sket i et\nsamarbejde mellem Sundhed, Kultur & Fritid og Ældre & Rehabilitering.\nDer er dannet et overblik over sikringsrum i kommunen. Og der pågår nu et arbejde med at\nbesigtige og registrere standen på sikringsrummene.\nDer er skabt et overblik over vandforsyningsselskaber i Vejen Kommune og hvordan man\nkan opretholde forsyningerne via nødstrømsgeneratorer i en given krisesituation.\nTre nødstrømsgeneratorer er hjemtaget fra Trekantbrand og er testet og serviceret.\nVejen Kommune har bestilt 25 stk. SINE-radioer (brugte) ved TrekantBrand, som blandt\nandet skal anvendes til Direktion, områdechefer, krisestab, myndighedssteder.\nDer er udpeget 10 myndighedssteder og 33 informationssteder i Vejen Kommune.\nDer er udarbejdet procedure for rådhuset og områdekontorer, hvordan man kommer ind i\nbygninger ved strømsvigt.\nIgangværende og kommende opgaver:\nUdarbejdelse af tekst til plakater til informationssteder. Dialog med ejere/bestyrelser om\nplacering og opsætning af skilte.\nIndkøb af materiel til myndighedssteder og beredskabspakker generelt.\nFærdiggørelse af informations- og kommunikationsmateriale til kommunens borgere,\nherunder udarbejdelse af pjecer til omdeling.\nNødstrømsgeneratorer – drøftelse og stillingtagen til hvor mange, der skal anskaffes og\nhvor de skal placeres i Vejen Kommune.\nBeredskabshjemmeside – hvordan får vi den lanceret og hvor skal den ligge?\nTemamøde for Byrådet.\nBeredskabsøvelse for Chefforum.\nHåndtering af spildevand ved forsyningssvigt. Der pågår dialog med Vejen Forsyning.\nIgangsætning af revision af Beredskabspolitik og § 25 Beredskabsplan.\nDelplaner skal ud at leve i Vejen Kommunes organisation. Skal ske ved øvelser og\nevaluering.\nTotalberedskab – hvordan får vi aktiveret lokalsamfundene og erhverv i Vejen Kommune.\nVejen Kommune er med i en arbejdsgruppe om beredskab under Trekantområdet, hvor\nman er ved at undersøge mulighederne for et samarbejde omkring blandt andet øvelser og\nuddannelse af kommunernes beredskabsmedarbejdere.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\n\nDer er afsat midler i budget 2027 til ansættelse af en beredskabskoordinator for at styrke\nberedskabsarbejdet samt til mindre indkøb.\n\nPersonalemæssige konsekvenser\nDer er opslået en stilling som beredskabskoordinator med henblik på ansættelse fra 1. januar\nDerudover er det vigtigt, at der afsættes den nødvendige tid og ressourcer i de enkelte\nchefområder og institutioner i kommunen for at sikre, at alle ansatte i Vejen Kommune er\nbekendte med deres rolle i en given krisesituation, herunder til gennemførelse af årlige\nberedskabsøvelser og evalueringer.\n\nRetsregler og andre forskrifter\nBeredskabsloven, Vejledninger fra Beredskabsstyrelsen, SAMSIK og KL.\n\nHøring\nIngen."
     }
    ],
    "bilag": []
@@ -8774,15 +8866,19 @@
    "kommune": "Vejen",
    "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=c75ecaec-17d8-42b6-ad21-627f345dcb11",
-   "hentet": "2026-11-12T21:48:42.137Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=304524bd-5d85-4ba8-b821-ca2a8434f213",
+   "hentet": "2026-11-19T13:32:15.311Z",
    "titel": "2. Lovforslag nr. L22 - Lov om ændring af lov om planlægning (B)",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Orienteringen blev taget til efterretning."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Ministeren for By-, Land- og Transport har fremsat Lovforslag nr. L 22 - Forslag til lov om\nændring af lov om planlægning, lov om naturbeskyttelse, byggeloven og lov om husdyrbrug og\nanvendelse af gødning m.v. (Bedre udviklingsmuligheder for landdistrikterne og skærpede krav\nom klimatilpasning m.v.) Lovforslaget rummer en række ændringer, som vil påvirke flere\nsagsområder, hvor Vejen Kommune er myndighed. Lovforslaget blev fremsat den 7. oktober\n2026 og skal førstebehandles den 12. november 2026.\nLovforslaget samler en række ændringer i planloven med forventet betydning for\nlandzoneadministrationen, kommuneplanen og kommende lokalplaner. Lovforslaget forventes\nat træde i kraft ved årsskiftet.\nI henhold til gældende landzonebestemmelser er hovedformålet at forhindre spredt bebyggelse\ni det åbne land, at sikre en klar grænse mellem by og land og at bymæssig udvikling sker, hvor\nder gennem planlægningen er åbnet mulighed for det. Spredt bebyggelse i det åbne land kan\nindebære risiko for miljøkonflikter i forhold til eksisterende og fremtidige virksomheder,\nherunder særligt medføre begrænsninger for landbrugets drifts- og udviklingsmuligheder samt\netablering af for eksempel biogasanlæg og opstilling af vindmøller m.v.\nKommunen skal fortsat påse anden lovgivning, der regulerer forholdene i det åbne land, for\neksempel naturbeskyttelses-, miljøbeskyttelses- og husdyrlovgivningen. Dette skal også fortsat\nske efter ændringen.\nÆndringen i lov om planlægning er at give kommunerne mulighed for at give tilladelse til at\nopføre erstatningsboliger i det åbne land for at opretholde livet i mindre lokalsamfund, hvis\nboliger i oplandet må nedrives for eksempel i forbindelse med etablering eller ændring af\nanlæg til vedvarende energi eller anden samfundsnødvendig infrastruktur. Der åbnes således\nogså op for muligheden for at opføre mindre klynger af boliger et andet sted i den forbindelse.\nDet er ikke hensigten med lovforslaget, at ejere skal kunne opnå mulighed for at opføre en ny\nbolig et andet sted i det åbne land ved at lade en eksisterende bolig forfalde.\nEfter gældende landzonepraksis kan en bolig, der gennem længere tid har været forladt og er\nså forfalden, at den må betragtes som en ruin uden væsentlig bygningsmæssig værdi, som\nudgangspunkt ikke danne grundlag for tilladelse til genopførelse. En sådan bolig vil derfor\nheller ikke kunne indgå i grundlaget for opførelse af en ny bolig et andet sted efter den\nforeslåede ordning.\nForvaltningen vil på mødet orientere om lovforslagets ændringer i mulighederne for at tillade\nnye boliger i det åbne land.\n\nDer er i lovforslaget en række initiativer omkring erstatningsboliger samt klyngebebyggelse, der\nkræver, at der udarbejdes et administrationsgrundlag, så sagerne håndteres ensartet og der\nsikres en fælles retning.\nFor nuværende er der ikke udarbejdet vejledninger eller baggrundsmaterialer, der beskriver\nhvordan kommunerne skal udmønte og administrere den kommende lovgivning.\nDer er således lagt op til, at kommunerne skal udarbejde et administrationsgrundlag.\nForvaltningen arbejder p.t. på et administrationsgrundlag, som forventes at være klar til en\nindledende politisk drøftelse til mødet i januar 2027.\nLanddistriktsudvalget er på møde den 5. november 2026 orienteret om det kommende\nlovforslag. Udvalget hilser de nye muligheder velkommen og ser gerne, at Vejen Kommune\narbejder med disse nye muligheder.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nFor nuværende kendes de administrative ressourcer til opgaven ikke.\nDet fremgår af lovforslaget, at boliger, der er nedrevet efter den 15. august 2025, kan indgå i\nkommunens samlede opgørelse over nedrevne boliger, hvis de øvrige betingelser er opfyldt.\nKommunen skal derfor gennemgå de relevante nedrivningssager fra denne dato og vurdere,\nhvilke nedrivninger, der kan medregnes efter den foreslåede ordning.\nAntallet af sager pr. år i forbindelse med den ændrede lovgivning kendes ikke, som også vil\nspille ind i ressourcetrækket på opgaven.\n\nRetsregler og andre forskrifter\nLov om planlægning.\n\nHøring\nIngen."
+     "tekst": "Ministeren for By-, Land- og Transport har fremsat Lovforslag nr. L 22 - Forslag til lov om\nændring af lov om planlægning, lov om naturbeskyttelse, byggeloven og lov om husdyrbrug og\nanvendelse af gødning m.v. (Bedre udviklingsmuligheder for landdistrikterne og skærpede krav\nom klimatilpasning m.v.) Lovforslaget rummer en række ændringer, som vil påvirke flere\nsagsområder, hvor Vejen Kommune er myndighed. Lovforslaget blev fremsat den 7. oktober\n2026 og skal førstebehandles den 12. november 2026.\nLovforslaget samler en række ændringer i planloven med forventet betydning for\nlandzoneadministrationen, kommuneplanen og kommende lokalplaner. Lovforslaget forventes\nat træde i kraft ved årsskiftet.\nI henhold til gældende landzonebestemmelser er hovedformålet at forhindre spredt bebyggelse\ni det åbne land, at sikre en klar grænse mellem by og land og at bymæssig udvikling sker, hvor\nder gennem planlægningen er åbnet mulighed for det. Spredt bebyggelse i det åbne land kan\nindebære risiko for miljøkonflikter i forhold til eksisterende og fremtidige virksomheder,\nherunder særligt medføre begrænsninger for landbrugets drifts- og udviklingsmuligheder samt\netablering af for eksempel biogasanlæg og opstilling af vindmøller m.v.\nKommunen skal fortsat påse anden lovgivning, der regulerer forholdene i det åbne land, for\neksempel naturbeskyttelses-, miljøbeskyttelses- og husdyrlovgivningen. Dette skal også fortsat\nske efter ændringen.\nÆndringen i lov om planlægning er at give kommunerne mulighed for at give tilladelse til at\nopføre erstatningsboliger i det åbne land for at opretholde livet i mindre lokalsamfund, hvis\nboliger i oplandet må nedrives for eksempel i forbindelse med etablering eller ændring af\nanlæg til vedvarende energi eller anden samfundsnødvendig infrastruktur. Der åbnes således\nogså op for muligheden for at opføre mindre klynger af boliger et andet sted i den forbindelse.\nDet er ikke hensigten med lovforslaget, at ejere skal kunne opnå mulighed for at opføre en ny\nbolig et andet sted i det åbne land ved at lade en eksisterende bolig forfalde.\nEfter gældende landzonepraksis kan en bolig, der gennem længere tid har været forladt og er\nså forfalden, at den må betragtes som en ruin uden væsentlig bygningsmæssig værdi, som\nudgangspunkt ikke danne grundlag for tilladelse til genopførelse. En sådan bolig vil derfor\n\nheller ikke kunne indgå i grundlaget for opførelse af en ny bolig et andet sted efter den\nforeslåede ordning.\nForvaltningen vil på mødet orientere om lovforslagets ændringer i mulighederne for at tillade\nnye boliger i det åbne land.\nDer er i lovforslaget en række initiativer omkring erstatningsboliger samt klyngebebyggelse, der\nkræver, at der udarbejdes et administrationsgrundlag, så sagerne håndteres ensartet og der\nsikres en fælles retning.\nFor nuværende er der ikke udarbejdet vejledninger eller baggrundsmaterialer, der beskriver\nhvordan kommunerne skal udmønte og administrere den kommende lovgivning.\nDer er således lagt op til, at kommunerne skal udarbejde et administrationsgrundlag.\nForvaltningen arbejder p.t. på et administrationsgrundlag, som forventes at være klar til en\nindledende politisk drøftelse til mødet i januar 2027.\nLanddistriktsudvalget er på møde den 5. november 2026 orienteret om det kommende\nlovforslag. Udvalget hilser de nye muligheder velkommen og ser gerne, at Vejen Kommune\narbejder med disse nye muligheder.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nFor nuværende kendes de administrative ressourcer til opgaven ikke.\nDet fremgår af lovforslaget, at boliger, der er nedrevet efter den 15. august 2025, kan indgå i\nkommunens samlede opgørelse over nedrevne boliger, hvis de øvrige betingelser er opfyldt.\nKommunen skal derfor gennemgå de relevante nedrivningssager fra denne dato og vurdere,\nhvilke nedrivninger, der kan medregnes efter den foreslåede ordning.\nAntallet af sager pr. år i forbindelse med den ændrede lovgivning kendes ikke, som også vil\nspille ind i ressourcetrækket på opgaven.\n\nRetsregler og andre forskrifter\nLov om planlægning.\n\nHøring\nIngen."
     }
    ],
    "bilag": []
@@ -8792,10 +8888,10 @@
    "kommune": "Vejen",
    "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=c75ecaec-17d8-42b6-ad21-627f345dcb11",
-   "hentet": "2026-11-12T21:48:42.137Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=304524bd-5d85-4ba8-b821-ca2a8434f213",
+   "hentet": "2026-11-19T13:32:15.311Z",
    "titel": "3. Endelig Lokalplan 353 og Kommuneplantillæg nr. 8 for Vejen Syd (C)",
    "afsnit": [
     {
@@ -8803,8 +8899,12 @@
      "tekst": "Anbefales godkendt.\nFraværende: Nils Brøndumbo (O)"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Anbefales godkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Forslag til Lokalplan 353 og Kommuneplantillæg 8 – Vejen Syd – Område til boligformål, har\nværet i offentlig høring i perioden 1. september 2026 til 30. september 2026 og fremlægges\nhermed til vedtagelse med enkelte redaktionelle rettelser til lokalplanens bilag 3, 4 og 5\nangående stiforbindelser.\nLokalplanen er udarbejdet for at sikre fortsat byudvikling og attraktive byggegrunde i Vejen\nSyd. Lokalplanen sikrer mulighed for variation i områderne og i bebyggelserne ved at stille\nforskellige krav til hvert delområde. Der lægges særligt op til, at byggeri i de områder, der\ngrænser op til Skovkilen og til det bevaringsværdige landskab mod syd, tager særlige hensyn\ntil mødet mellem byggeri og landskab. I hvert delområde stilles særlige bestemmelser for veje,\nbeplantninger og grønne områder for at sikre, at de enkelte delområder får deres egen\nidentitet. Lokalplanen giver desuden mulighed for, at regnvand kan håndteres på overfladen i\nåbne render eller i trug, så vand kan indgå som et rekreativt element i de grønne områder.\nDesuden fastlægger lokalplanen bestemmelser for udformning af vejarealer, herunder\nudformningen af den videre udbygning af Hansen Jacobsens Vej.\nForslag til Lokalplan 353 og Kommuneplantillæg 8 kan findes via dette link: Forslag til lokalplan\nLokalplanen og kommuneplantillægget har været i offentlig høring i 4 uger og der er\nindkommet 6 høringssvar fra naboer til lokalplanområdet.\n\nI høringssvar nr. 1 påpeges det, at den på bilag 3, 4 og 5 viste stiforbindelse mellem Niels\nSkovgaards Vej og lokalplanområdet ændres til, at forbinde direkte til Niels Skovgaards Vej i\nstedet for at forbinde igennem det grønne område, dette er en mindre redaktionel rettelse og\nresulterer i, at kortbilagene 3, 4 og 5 tilrettes.\nHøringssvar 2, 3 og 4 er enslydende og påpeger først, at stien omkring Mannehøj bør gå\ndirekte øst-vest og ikke slå en bugt ned mod Skovkilen, for at få flere til at benytte stien og ikke\nslå et smut lige over. På grund af fredningen omkring Mannehøj fastholdes stiens forløb, så der\nikke skal etableres sti med fast belægning indenfor fredningszonen. Derefter vedrører\nhøringssvarene det grønne område nord for delområde 5, der grænser op mod boligområdet i\nMannehøj, her foreslås det, at det grønne område gøres bredere, så det også kan indeholde\nområder til ophold, leg og natur frem for kun cykelsti og enkelte beplantninger. Der er dog\nbeskrevet i lokalplanforslaget, at der planlægges for et grønt område internt i delområde 5, der\nsikrer plads til ophold, leg, grønt og regnvandshåndtering. Da det er beskrevet i\nudviklingsplanen for Vejen Syd at fællesområder placeres centralt i delområderne for at styrke\nde lokale fællesskaber, giver dette punkt ikke anledning til ændringer af lokalplanen.\nTil sidst fremgår det af høringssvarene, at der ønskes en begrænsning af højderne i delområde\n6 til maksimalt 2 etager, frem for 3 etager. Delområde 6, der giver mulighed for byggeri i op til 3\netager (maks. 14 meter), er placeret centralt i lokalplanområdet for at sikre afstand til\neksisterende nabobebyggelser, sikre hensyn til bebyggelsernes møde med det\nbevaringsværdige landskab mod syd, samt at sikre variation i det samlede udtryk af\nbebyggelsen i lokalplanområdet. Desuden er højdegrænserne fastsat efter faglige vurderinger\nog synlighedsanalyser. Internt i delområdet er fastsat byggelinjer mod Skovkilen og mod\nnabobebyggelser, der begrænser bebyggelsen til to etager. Derfor foreslås der ikke ændringer\naf lokalplanforslaget.\nHøringssvar 5 og 6 omhandler ligeledes byggeri i delområde 6 og der gives udtryk for, at der\nikke ønskes byggeri i op til 3 etager (14 meter).\nHøringssvarene er nærmere beskrevet og behandlet i bilaget ”Behandling af høringssvar –\nlokalplan 353”. Se de konkrete forslag til rettelser til planen her.\n\nTidligere behandling\n25.02.2025 Økonomiudvalget.\n18.08.2026 Udvalget for Klima, Miljø og Teknik.\n25.08.2026 Udvalget for Økonomi, Plan og Erhverv.\n01.09.2026 Byrådet.\n10.11.2026 Udvalget for Klima, Miljø og Teknik.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\n\nLBK nr. 572 af 29.05.2024 lov om planlægning.\n\nHøring\nForslagene har været i offentlig høring i 4 uger.\nDer er indkommet 6 høringssvar."
+     "tekst": "Forslag til Lokalplan 353 og Kommuneplantillæg 8 – Vejen Syd – Område til boligformål, har\nværet i offentlig høring i perioden 1. september 2026 til 30. september 2026 og fremlægges\nhermed til vedtagelse med enkelte redaktionelle rettelser til lokalplanens bilag 3, 4 og 5\nangående stiforbindelser.\nLokalplanen er udarbejdet for at sikre fortsat byudvikling og attraktive byggegrunde i Vejen\nSyd. Lokalplanen sikrer mulighed for variation i områderne og i bebyggelserne ved at stille\nforskellige krav til hvert delområde. Der lægges særligt op til, at byggeri i de områder, der\ngrænser op til Skovkilen og til det bevaringsværdige landskab mod syd, tager særlige hensyn\ntil mødet mellem byggeri og landskab. I hvert delområde stilles særlige bestemmelser for veje,\nbeplantninger og grønne områder for at sikre, at de enkelte delområder får deres egen\nidentitet. Lokalplanen giver desuden mulighed for, at regnvand kan håndteres på overfladen i\nåbne render eller i trug, så vand kan indgå som et rekreativt element i de grønne områder.\nDesuden fastlægger lokalplanen bestemmelser for udformning af vejarealer, herunder\nudformningen af den videre udbygning af Hansen Jacobsens Vej.\nForslag til Lokalplan 353 og Kommuneplantillæg 8 kan findes via dette link: Forslag til lokalplan\n\nLokalplanen og kommuneplantillægget har været i offentlig høring i 4 uger og der er\nindkommet 6 høringssvar fra naboer til lokalplanområdet.\nI høringssvar nr. 1 påpeges det, at den på bilag 3, 4 og 5 viste stiforbindelse mellem Niels\nSkovgaards Vej og lokalplanområdet ændres til, at forbinde direkte til Niels Skovgaards Vej i\nstedet for at forbinde igennem det grønne område, dette er en mindre redaktionel rettelse og\nresulterer i, at kortbilagene 3, 4 og 5 tilrettes.\nHøringssvar 2, 3 og 4 er enslydende og påpeger først, at stien omkring Mannehøj bør gå\ndirekte øst-vest og ikke slå en bugt ned mod Skovkilen, for at få flere til at benytte stien og ikke\nslå et smut lige over. På grund af fredningen omkring Mannehøj fastholdes stiens forløb, så der\nikke skal etableres sti med fast belægning indenfor fredningszonen. Derefter vedrører\nhøringssvarene det grønne område nord for delområde 5, der grænser op mod boligområdet i\nMannehøj, her foreslås det, at det grønne område gøres bredere, så det også kan indeholde\nområder til ophold, leg og natur frem for kun cykelsti og enkelte beplantninger. Der er dog\nbeskrevet i lokalplanforslaget, at der planlægges for et grønt område internt i delområde 5, der\nsikrer plads til ophold, leg, grønt og regnvandshåndtering. Da det er beskrevet i\nudviklingsplanen for Vejen Syd at fællesområder placeres centralt i delområderne for at styrke\nde lokale fællesskaber, giver dette punkt ikke anledning til ændringer af lokalplanen.\nTil sidst fremgår det af høringssvarene, at der ønskes en begrænsning af højderne i delområde\n6 til maksimalt 2 etager, frem for 3 etager. Delområde 6, der giver mulighed for byggeri i op til 3\netager (maks. 14 meter), er placeret centralt i lokalplanområdet for at sikre afstand til\neksisterende nabobebyggelser, sikre hensyn til bebyggelsernes møde med det\nbevaringsværdige landskab mod syd, samt at sikre variation i det samlede udtryk af\nbebyggelsen i lokalplanområdet. Desuden er højdegrænserne fastsat efter faglige vurderinger\nog synlighedsanalyser. Internt i delområdet er fastsat byggelinjer mod Skovkilen og mod\nnabobebyggelser, der begrænser bebyggelsen til to etager. Derfor foreslås der ikke ændringer\naf lokalplanforslaget.\nHøringssvar 5 og 6 omhandler ligeledes byggeri i delområde 6 og der gives udtryk for, at der\nikke ønskes byggeri i op til 3 etager (14 meter).\nHøringssvarene er nærmere beskrevet og behandlet i bilaget ”Behandling af høringssvar –\nlokalplan 353”. Se de konkrete forslag til rettelser til planen her.\n\nTidligere behandling\n25.02.2025 Økonomiudvalget.\n18.08.2026 Udvalget for Klima, Miljø og Teknik.\n25.08.2026 Udvalget for Økonomi, Plan og Erhverv.\n01.09.2026 Byrådet.\n10.11.2026 Udvalget for Klima, Miljø og Teknik.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nLBK nr. 572 af 29.05.2024 lov om planlægning.\n\nHøring\nForslagene har været i offentlig høring i 4 uger.\nDer er indkommet 6 høringssvar."
     }
    ],
    "bilag": []
@@ -8814,10 +8914,10 @@
    "kommune": "Vejen",
    "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=c75ecaec-17d8-42b6-ad21-627f345dcb11",
-   "hentet": "2026-11-12T21:48:42.137Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=304524bd-5d85-4ba8-b821-ca2a8434f213",
+   "hentet": "2026-11-19T13:32:15.311Z",
    "titel": "4. Forslag til Lokalplan 351 - Revsing højspændingsstation (C)",
    "afsnit": [
     {
@@ -8825,8 +8925,12 @@
      "tekst": "Anbefales godkendt.\nFraværende: Nils Brøndumbo (O)"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Anbefales godkendt og sendt i høring."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Energinet har ansøgt om planlægning for en ny højspændingsstation ved Revsing. Stationen\nønskes placeret i tilknytning til de eksisterende energianlæg ved Revsing Station og Viking\nLink, og skal understøtte den fortsatte udbygning af transmissionsnettet som følge af den\ngrønne omstilling og den stigende produktion af vedvarende energi. Revsing udgør et centralt\nknudepunkt i den nationale energiinfrastruktur, og Energinet vurderer, at den eksisterende\nstation ikke kan udbygges tilstrækkeligt til fremtidens behov.\nPlanområdet omfatter ca. 46 ha og ligger nordøst for Vejen langs Gestenvej. Lokalplanområdet\nopdeles i to delområder. Delområde 1 udlægges til højspændingsstation med tilhørende\nbygninger, tekniske anlæg og interne veje. Delområde 2 udlægges til landskabstekniske\nanlæg, regnvandshåndtering, beplantning og terrænbearbejdning.\nForslag til Lokalplan 351 og Kommuneplantillæg 4 kan ses på linket Forslag til Lokalplan 351\nAnlægget\nDen eksisterende gasisolerede station i Revsing kan ikke udbygges tilstrækkeligt til fremtidens\nbehov. Lokalplanen giver derfor mulighed for etablering af en ny åben og luftisoleret\nhøjspændingsstation, der skal kunne håndtere fremtidige tilslutninger af vedvarende\nenergianlæg samt den generelle forstærkning af eltransmissionsnettet.\nInden for delområde 1 kan der, ud over selve højspændingsanlægget, opføres op til seks\nmanøvrebygninger med et samlet bebygget areal på op til 3.000 m². Bygningerne må opføres i\nop til 1,5 etage og en maksimal højde på 8,5 meter. Herudover kan der etableres\ntransformeranlæg, tekniske installationer, højspændingsmaster samt lynfangsmaster i op til 30\nmeters højde. Højspændingsmaster kan opføres i op til 45 meters højde indenfor delområde 2.\n\nLandskab og afskærmning\nDer er i planlægningen lagt vægt på at reducere anlæggets visuelle påvirkning af\nomgivelserne. Langs Gestenvej etableres afskærmende beplantningsbælter med\nhjemmehørende træer og buske.\nDelområde 2 udlægges til landskabstekniske anlæg og skal fungere som et grønt område i\ntilknytning til højspændingsstationen. Området skal håndtere regnvand fra stationsanlægget,\nrumme beplantning og landskabelige terrænformationer samt nyttiggøre overskudsjord fra\netableringen af stationen.\nLandskabet udformes som et blødt og varieret bakkelandskab med hjemmehørende træer og\nbuske, der skal bidrage til at afskærme anlægget og sikre en bedre landskabelig indpasning i\nomgivelserne. Samtidig skal udformningen tage hensyn til eksisterende naturinteresser,\nvandløb og beplantning.\nDer må som udgangspunkt ikke opføres bebyggelse i delområde 2, dog kan\nhøjspændingsmaster placeres inden for området. De grønne arealer vil efter etableringsfasen\nfremstå åbne og offentligt tilgængelige.\nStøj\nMiljøvurderingen viser, at der er risiko for at de vejledende støjgrænser ved enkelte\nnaboejendomme ikke kan overholdes uden der etableres afværgeforanstaltninger. Lokalplanen\ngiver derfor mulighed for at opstille støjskærme omkring dele af anlægget.\nMed støjafskærmning vurderes støjpåvirkningen at være begrænset, og støjberegninger viser,\nat de vejledende grænseværdier kan overholdes. Alternativt har Energinet oplyst, at de vil\nsøge at opkøbe de 2 mest støjbelastede ejendomme, og i det tilfælde vil opsætning af\nstøjskærme ikke være nødvendig.\nNatur og miljø\nDele af lokalplanområdet er omfattet af skovbyggelinjen omkring Revsing Plantage.\nLokalplanen indeholder derfor en dispensation fra skovbyggelinjen til de bygninger og tekniske\nanlæg, som er nødvendige for etableringen af den nye højspændingsstation. Dispensationen\ner meddelt som en del af planlægningen, da stationen er afhængig af placeringen i tilknytning\ntil de eksisterende energianlæg ved Revsing.\nI planlægningen er der indarbejdet hensyn til beskyttede naturarealer, vandløb, beskyttede\ndiger og nærliggende naturværdier. Der fastsættes blandt andet afstandskrav til beskyttede\nnaturtyper og krav om håndtering af regnvand, så påvirkningen af omgivelserne begrænses.\nLokalplanen indeholder derudover bestemmelser, der beskytter jord- og vandmiljøet mod\npåvirkning af olie og andre miljøfremmede stoffer.\nKommuneplan\nEn mindre del af området er i dag omfattet af Kommuneplanramme 20.T.05 til tekniske anlæg,\nmens størstedelen af området ikke er kommuneplanlagt. Der er derfor udarbejdet forslag til\nKommuneplantillæg 4, som udlægger et nyt rammeområde 20.T.11 til tekniske anlæg i form af\nhøjspændingsstation, elforsyning og tilhørende landskabstekniske anlæg.\n\nMiljøvurdering\nPlanforslagene er omfattet af miljøvurderingslovens krav om miljøvurdering, og der er derfor\nudarbejdet en miljørapport.\nMiljøvurderingen viser, at projektets væsentligste påvirkning vedrører landskabelige og visuelle\nforhold. Højspændingsstationen vil medføre en markant ændring af det eksisterende landskab\ntæt ved anlægget og påvirke oplevelsen af skovbrynet ved Revsing Plantage. Lokalplanen\nindeholder derfor krav om afskærmende beplantning og landskabelig bearbejdning af terrænet,\nsom skal reducere den visuelle påvirkning. Påvirkningen vurderes dog fortsat som væsentlig.\nMiljørapporten viser samtidig, at planlægningen ikke medfører væsentlige påvirkninger af\nNatura 2000-områder, bilag IV-arter, grundvand eller drikkevandsinteresser. Omdannelsen af\nlandbrugsjord til stationsanlæg og landskabsanlæg medfører desuden en samlet reduktion af\nnæringsstofbelastningen til vandmiljøet.\nMiljørapporten ligger som bilag til lokalplanen og kommuneplantillægget.\nSideløbende med miljøvurdering af planerne, udarbejdes en miljøkonsekvensrapport af det\nkonkrete projekt, hvor Styrelsen for Grøn Arealomlægning og Vandmiljø (SGAV) er myndighed.\nDet konkrete projekt omfatter ud over de tekniske og landskabelige anlæg også omlægning af\nluftledninger, kabler og højspændingsmaster samt nedlæggelse af eksisterende station.\n\nTidligere behandling\n10.11.2026 Udvalget for Klima, Miljø og Teknik.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nLBK nr. 572 af 29.05.2024 lov om planlægning.\nLBK nr. 4 af 03.01.2023 om miljøvurdering af planer og programmer og af konkrete projekter\n(VVM).\n\nHøring\nForslag til Lokalplan 351, Kommuneplantillæg 4 og miljørapporten sendes i offentlig høring i 8\nuger + 2 uger på grund af juleferie. Forvaltningen forventer i samarbejde med Energinet at\nafholde et borgermøde i forbindelse med høringen."
+     "tekst": "Energinet har ansøgt om planlægning for en ny højspændingsstation ved Revsing. Stationen\nønskes placeret i tilknytning til de eksisterende energianlæg ved Revsing Station og Viking\nLink, og skal understøtte den fortsatte udbygning af transmissionsnettet som følge af den\ngrønne omstilling og den stigende produktion af vedvarende energi. Revsing udgør et centralt\nknudepunkt i den nationale energiinfrastruktur, og Energinet vurderer, at den eksisterende\nstation ikke kan udbygges tilstrækkeligt til fremtidens behov.\nPlanområdet omfatter ca. 46 ha og ligger nordøst for Vejen langs Gestenvej. Lokalplanområdet\nopdeles i to delområder. Delområde 1 udlægges til højspændingsstation med tilhørende\nbygninger, tekniske anlæg og interne veje. Delområde 2 udlægges til landskabstekniske\nanlæg, regnvandshåndtering, beplantning og terrænbearbejdning.\nForslag til Lokalplan 351 og Kommuneplantillæg 4 kan ses på linket Forslag til Lokalplan 351\nAnlægget\nDen eksisterende gasisolerede station i Revsing kan ikke udbygges tilstrækkeligt til fremtidens\nbehov. Lokalplanen giver derfor mulighed for etablering af en ny åben og luftisoleret\nhøjspændingsstation, der skal kunne håndtere fremtidige tilslutninger af vedvarende\nenergianlæg samt den generelle forstærkning af eltransmissionsnettet.\nInden for delområde 1 kan der, ud over selve højspændingsanlægget, opføres op til seks\nmanøvrebygninger med et samlet bebygget areal på op til 3.000 m². Bygningerne må opføres i\n\nop til 1,5 etage og en maksimal højde på 8,5 meter. Herudover kan der etableres\ntransformeranlæg, tekniske installationer, højspændingsmaster samt lynfangsmaster i op til 30\nmeters højde. Højspændingsmaster kan opføres i op til 45 meters højde indenfor delområde 2.\nLandskab og afskærmning\nDer er i planlægningen lagt vægt på at reducere anlæggets visuelle påvirkning af\nomgivelserne. Langs Gestenvej etableres afskærmende beplantningsbælter med\nhjemmehørende træer og buske.\nDelområde 2 udlægges til landskabstekniske anlæg og skal fungere som et grønt område i\ntilknytning til højspændingsstationen. Området skal håndtere regnvand fra stationsanlægget,\nrumme beplantning og landskabelige terrænformationer samt nyttiggøre overskudsjord fra\netableringen af stationen.\nLandskabet udformes som et blødt og varieret bakkelandskab med hjemmehørende træer og\nbuske, der skal bidrage til at afskærme anlægget og sikre en bedre landskabelig indpasning i\nomgivelserne. Samtidig skal udformningen tage hensyn til eksisterende naturinteresser,\nvandløb og beplantning.\nDer må som udgangspunkt ikke opføres bebyggelse i delområde 2, dog kan\nhøjspændingsmaster placeres inden for området. De grønne arealer vil efter etableringsfasen\nfremstå åbne og offentligt tilgængelige.\nStøj\nMiljøvurderingen viser, at der er risiko for at de vejledende støjgrænser ved enkelte\nnaboejendomme ikke kan overholdes uden der etableres afværgeforanstaltninger. Lokalplanen\ngiver derfor mulighed for at opstille støjskærme omkring dele af anlægget.\nMed støjafskærmning vurderes støjpåvirkningen at være begrænset, og støjberegninger viser,\nat de vejledende grænseværdier kan overholdes. Alternativt har Energinet oplyst, at de vil\nsøge at opkøbe de 2 mest støjbelastede ejendomme, og i det tilfælde vil opsætning af\nstøjskærme ikke være nødvendig.\nNatur og miljø\nDele af lokalplanområdet er omfattet af skovbyggelinjen omkring Revsing Plantage.\nLokalplanen indeholder derfor en dispensation fra skovbyggelinjen til de bygninger og tekniske\nanlæg, som er nødvendige for etableringen af den nye højspændingsstation. Dispensationen\ner meddelt som en del af planlægningen, da stationen er afhængig af placeringen i tilknytning\ntil de eksisterende energianlæg ved Revsing.\nI planlægningen er der indarbejdet hensyn til beskyttede naturarealer, vandløb, beskyttede\ndiger og nærliggende naturværdier. Der fastsættes blandt andet afstandskrav til beskyttede\nnaturtyper og krav om håndtering af regnvand, så påvirkningen af omgivelserne begrænses.\nLokalplanen indeholder derudover bestemmelser, der beskytter jord- og vandmiljøet mod\npåvirkning af olie og andre miljøfremmede stoffer.\nKommuneplan\nEn mindre del af området er i dag omfattet af Kommuneplanramme 20.T.05 til tekniske anlæg,\n\nmens størstedelen af området ikke er kommuneplanlagt. Der er derfor udarbejdet forslag til\nKommuneplantillæg 4, som udlægger et nyt rammeområde 20.T.11 til tekniske anlæg i form af\nhøjspændingsstation, elforsyning og tilhørende landskabstekniske anlæg.\nMiljøvurdering\nPlanforslagene er omfattet af miljøvurderingslovens krav om miljøvurdering, og der er derfor\nudarbejdet en miljørapport.\nMiljøvurderingen viser, at projektets væsentligste påvirkning vedrører landskabelige og visuelle\nforhold. Højspændingsstationen vil medføre en markant ændring af det eksisterende landskab\ntæt ved anlægget og påvirke oplevelsen af skovbrynet ved Revsing Plantage. Lokalplanen\nindeholder derfor krav om afskærmende beplantning og landskabelig bearbejdning af terrænet,\nsom skal reducere den visuelle påvirkning. Påvirkningen vurderes dog fortsat som væsentlig.\nMiljørapporten viser samtidig, at planlægningen ikke medfører væsentlige påvirkninger af\nNatura 2000-områder, bilag IV-arter, grundvand eller drikkevandsinteresser. Omdannelsen af\nlandbrugsjord til stationsanlæg og landskabsanlæg medfører desuden en samlet reduktion af\nnæringsstofbelastningen til vandmiljøet.\nMiljørapporten ligger som bilag til lokalplanen og kommuneplantillægget.\nSideløbende med miljøvurdering af planerne, udarbejdes en miljøkonsekvensrapport af det\nkonkrete projekt, hvor Styrelsen for Grøn Arealomlægning og Vandmiljø (SGAV) er myndighed.\nDet konkrete projekt omfatter ud over de tekniske og landskabelige anlæg også omlægning af\nluftledninger, kabler og højspændingsmaster samt nedlæggelse af eksisterende station.\n\nTidligere behandling\n10.11.2026 Udvalget for Klima, Miljø og Teknik.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nLBK nr. 572 af 29.05.2024 lov om planlægning.\nLBK nr. 4 af 03.01.2023 om miljøvurdering af planer og programmer og af konkrete projekter\n(VVM).\n\nHøring\nForslag til Lokalplan 351, Kommuneplantillæg 4 og miljørapporten sendes i offentlig høring i 8\nuger + 2 uger på grund af juleferie. Forvaltningen forventer i samarbejde med Energinet at\nafholde et borgermøde i forbindelse med høringen."
     }
    ],
    "bilag": []
@@ -8836,15 +8940,19 @@
    "kommune": "Vejen",
    "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=c75ecaec-17d8-42b6-ad21-627f345dcb11",
-   "hentet": "2026-11-12T21:48:42.137Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=304524bd-5d85-4ba8-b821-ca2a8434f213",
+   "hentet": "2026-11-19T13:32:15.311Z",
    "titel": "5. Anlægsbevillinger - ændret praksis for frigivelse af rådighedsbeløb (C)",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Anbefales godkendt."
+    },
+    {
      "titel": "Baggrund",
-     "tekst": "Vejen Kommunes praksis i forhold til frigivelse af rådighedsbeløb (anlægsbeløb) er, at alle\nrådighedsbeløb over 1 mio. kr. skal frigives ved en særskilt ansøgning om anlægsbevilling. Alle\nrådighedsbeløb under 1 mio. kr. frigives i forbindelse med budgetvedtagelsen.\nDet foreslås at hæve beløbsgrænsen, således at en større del af rådighedsbeløbene i\ninvesteringsoversigten frigives i forbindelse med budgetvedtagelsen. Det kan fx være ved at\nhæve beløbsgrænsen til 3 mio. kr.\nSager om anlægsbevillinger behandles i dag i enten fagudvalgene eller Udvalget for Økonomi,\nPlan og Erhverv med efterfølgende godkendelse i Byrådet. En del af disse sager vedrører\nfrigivelse af rådighedsbeløb, som allerede er afsat i det vedtagne budget, og hvor den politiske\nbehandling derfor primært har en formel bevillingsmæssig karakter.\nVed at meddele flere anlægsbevillinger i forbindelse med budgetvedtagelsen kan behovet for\nefterfølgende særskilte sager om frigivelse af rådighedsbeløb mindskes. Det vil skabe en mere\nenkel proces og give bedre mulighed for at målrette den politiske behandling mod de\nanlægsprojekter, hvor der er behov for en særskilt politisk stillingtagen.\nForslag til ændret praksis\nDet foreslås konkret, at alle rådighedsbeløb på 3 mio. kr. eller derunder fremadrettet frigives i\nforbindelse med budgetvedtagelsen. Herudover kan forvaltningen i forbindelse med\nbudgetvedtagelsen indstille, at visse større rådighedsbeløb også frigives ved\nbudgetvedtagelsen. Dette kan fx være tilbagevendende puljer afsat til\nvedligeholdelse og udskiftning af klimaskærme,\nenergiforbedrende tiltag og energirenoveringer,\nopretholdelse af vejkapital og vejbroer mv.\n\nDen generelle regel vil være, at alle rådighedsbeløb over 3 mio. kr. fortsat frigives ved\nsærskilte ansøgninger om anlægsbevilling, som skal godkendes af Byrådet.\n\nI forbindelse med budgetvedtagelsen vil det fremgå eksplicit af investeringsoversigten, hvilke\nrådighedsbeløb der søges frigivet.\nDe formelle regler, jf. det kommunale budget- og regnskabssystem\nDe bevillingsmæssige regler i forhold til anlægsarbejder siger, at der i budgettet skal være\nafsat det nødvendige rådighedsbeløb, og at der skal foreligge en anlægsbevilling, før et\nkonkret anlægsprojekt kan igangsættes/afholde udgifter. Der er ikke noget til hinder for, at\nByrådet i forbindelse med budgetvedtagelsen, hvor rådighedsbeløbene vedtages, samtidig\ngiver anlægsbevillinger til konkrete anlægsprojekter.\nPraksis i andre kommuner\nSammenlignet med flere af vores nabokommuner fremsender forvaltningen i Vejen Kommune\nflere særskilte ansøgninger om frigivelse af rådighedsbeløb til behandling i Byrådet.\nNogle kommuner frigiver i forbindelse med budgetvedtagelsen alle anlægsprojekter med et\nsamlet rådighedsbeløb op til 3 mio. kr., mens andre kommuner i forbindelse med\nbudgetvedtagelsen også frigiver flere afsatte rådighedsbeløb til konkrete større projekter.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nSåfremt indstillingen godkendes, skal der gives anlægsbevillinger til de anlægsprojekter, som\ner markeret i investeringsoversigten for 2027-2030.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nBevillingsregler i Budget- og regnskabssystem for kommuner.\n\nHøring\nIngen."
+     "tekst": "Vejen Kommunes praksis i forhold til frigivelse af rådighedsbeløb (anlægsbeløb) er, at alle\nrådighedsbeløb over 1 mio. kr. skal frigives ved en særskilt ansøgning om anlægsbevilling. Alle\nrådighedsbeløb under 1 mio. kr. frigives i forbindelse med budgetvedtagelsen.\nDet foreslås at hæve beløbsgrænsen, således at en større del af rådighedsbeløbene i\ninvesteringsoversigten frigives i forbindelse med budgetvedtagelsen. Det kan fx være ved at\nhæve beløbsgrænsen til 3 mio. kr.\nSager om anlægsbevillinger behandles i dag i enten fagudvalgene eller Udvalget for Økonomi,\nPlan og Erhverv med efterfølgende godkendelse i Byrådet. En del af disse sager vedrører\nfrigivelse af rådighedsbeløb, som allerede er afsat i det vedtagne budget, og hvor den politiske\nbehandling derfor primært har en formel bevillingsmæssig karakter.\nVed at meddele flere anlægsbevillinger i forbindelse med budgetvedtagelsen kan behovet for\nefterfølgende særskilte sager om frigivelse af rådighedsbeløb mindskes. Det vil skabe en mere\nenkel proces og give bedre mulighed for at målrette den politiske behandling mod de\nanlægsprojekter, hvor der er behov for en særskilt politisk stillingtagen.\nForslag til ændret praksis\nDet foreslås konkret, at alle rådighedsbeløb på 3 mio. kr. eller derunder fremadrettet frigives i\nforbindelse med budgetvedtagelsen. Herudover kan forvaltningen i forbindelse med\nbudgetvedtagelsen indstille, at visse større rådighedsbeløb også frigives ved\nbudgetvedtagelsen. Dette kan fx være tilbagevendende puljer afsat til\nvedligeholdelse og udskiftning af klimaskærme,\nenergiforbedrende tiltag og energirenoveringer,\nopretholdelse af vejkapital og vejbroer mv.\n\nDen generelle regel vil være, at alle rådighedsbeløb over 3 mio. kr. fortsat frigives ved\nsærskilte ansøgninger om anlægsbevilling, som skal godkendes af Byrådet.\nI forbindelse med budgetvedtagelsen vil det fremgå eksplicit af investeringsoversigten, hvilke\nrådighedsbeløb der søges frigivet.\nDe formelle regler, jf. det kommunale budget- og regnskabssystem\nDe bevillingsmæssige regler i forhold til anlægsarbejder siger, at der i budgettet skal være\nafsat det nødvendige rådighedsbeløb, og at der skal foreligge en anlægsbevilling, før et\nkonkret anlægsprojekt kan igangsættes/afholde udgifter. Der er ikke noget til hinder for, at\nByrådet i forbindelse med budgetvedtagelsen, hvor rådighedsbeløbene vedtages, samtidig\ngiver anlægsbevillinger til konkrete anlægsprojekter.\nPraksis i andre kommuner\nSammenlignet med flere af vores nabokommuner fremsender forvaltningen i Vejen Kommune\nflere særskilte ansøgninger om frigivelse af rådighedsbeløb til behandling i Byrådet.\nNogle kommuner frigiver i forbindelse med budgetvedtagelsen alle anlægsprojekter med et\nsamlet rådighedsbeløb op til 3 mio. kr., mens andre kommuner i forbindelse med\nbudgetvedtagelsen også frigiver flere afsatte rådighedsbeløb til konkrete større projekter.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nSåfremt indstillingen godkendes, skal der gives anlægsbevillinger til de anlægsprojekter, som\ner markeret i investeringsoversigten for 2027-2030.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nBevillingsregler i Budget- og regnskabssystem for kommuner.\n\nHøring\nIngen."
     }
    ],
    "bilag": []
@@ -8854,15 +8962,19 @@
    "kommune": "Vejen",
    "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=c75ecaec-17d8-42b6-ad21-627f345dcb11",
-   "hentet": "2026-11-12T21:48:42.137Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=304524bd-5d85-4ba8-b821-ca2a8434f213",
+   "hentet": "2026-11-19T13:32:15.311Z",
    "titel": "8. Kodeks for Vejen Byråd (C)",
    "afsnit": [
     {
      "titel": "Behandling i Udvalget for Økonomi, Plan og Erhverv 27. oktober 2026",
      "tekst": "Udvalget drøftede forslaget. Forvaltningen foretager enkelte justeringer på baggrund af\ndrøftelsen i Udvalget, og fremsender det til fornyet behandling i Udvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales godkendt."
     },
     {
      "titel": "Sagsfremstilling",
@@ -8876,15 +8988,19 @@
    "kommune": "Vejen",
    "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=c75ecaec-17d8-42b6-ad21-627f345dcb11",
-   "hentet": "2026-11-12T21:48:42.137Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=304524bd-5d85-4ba8-b821-ca2a8434f213",
+   "hentet": "2026-11-19T13:32:15.311Z",
    "titel": "9. Program for strukturanalyser (B)",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Vejen Kommune står over for en række udviklingstendenser, som på både kort og lang sigt vil\nfå væsentlig betydning for borgernes behov og den måde, kommunen organiserer og leverer\nservice på. Kommunen dækker et stort geografisk område, og udviklingen er ikke ensartet.\nMens nogle lokalområder oplever vækst og tilflytning, ses der andre steder et faldende\nbørnetal og ændrede befolkningssammensætninger. Den demografiske udvikling medfører\nændrede behov for kommunale tilbud og serviceydelser, hvilket nødvendiggør løbende\ntilpasning og nytænkning af kommunens struktur og opgaveløsning.\nFor at fremtidssikre Vejen Kommune er der behov for en systematisk og helhedsorienteret\ngennemgang af kommunens struktur og organisering. Kommunen står samtidig over for\nkomplekse økonomiske udfordringer, idet der fra 2028 skal realiseres en permanent\nbesparelse på mindst 10 mio. kr. ud over det årlige råderumsarbejde. Dette forudsætter\npolitiske drøftelser og prioriteringer af væsentlig karakter.\nPå den baggrund igangsættes et samlet program for strukturanalyser. Programmet Hele Vejen\nRundt – klar til fremtiden har i sin helhed til formål at gennemgå alle kommunens fag- og\nstabsområder for at sikre, at vi har den rette organisering og struktur til fremtiden. Samtidig har\nprogrammet til formål at tilpasse kommunens struktur og services, så det matcher borgernes\nbehov, den demografiske udvikling og reducerer serviceudgifterne permanent med mindst 10\nmio. kr. i perioden 2028 – 2030 udover den løbende omprioritering ved de årlige\nbudgetforhandlinger. Programmet realiseres gennem en række projekter og analyser på tværs\naf kommunens områder, som skal skabe et solidt vidensgrundlag og tilvejebringe det\nnødvendige beslutningsgrundlag for afgørende politiske drøftelser om kommunens fremtidige\nstruktur og opgaveløsning.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nProgrammet finansieres i 2027 inden for de afsatte økonomiske rammer, idet udgifter til\nekstern konsulenthjælp primært finansieres af kommunens udviklings- og omstillingspulje\nunder Udvalget for Økonomi, Plan og Erhverv. I 2028 og 2029 kan det blive nødvendigt at\nafsætte ekstra ressourcer til ekstern konsulenthjælp.\nGennemførelse af programmet vil betyde, at der i perioden 1. januar 2027 til 31. december\n2029 vil være færre ressourcer til udviklingsopgaver. Dette vil betyde, at der vil være færre\nressourcer til opgaver bestilt af politiske udvalg, borgmester, direktion og chefforum.\n\nDerudover vil der ved potentielle omstruktureringer være forventede investeringer bl.a. i\nbygninger, tilpasning af lokaler, samt indkøb af it og inventar.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nIngen.\n\nHøring\nIngen."
+     "tekst": "Vejen Kommune står over for en række udviklingstendenser, som på både kort og lang sigt vil\nfå væsentlig betydning for borgernes behov og den måde, kommunen organiserer og leverer\nservice på. Kommunen dækker et stort geografisk område, og udviklingen er ikke ensartet.\nMens nogle lokalområder oplever vækst og tilflytning, ses der andre steder et faldende\nbørnetal og ændrede befolkningssammensætninger. Den demografiske udvikling medfører\nændrede behov for kommunale tilbud og serviceydelser, hvilket nødvendiggør løbende\ntilpasning og nytænkning af kommunens struktur og opgaveløsning.\nFor at fremtidssikre Vejen Kommune er der behov for en systematisk og helhedsorienteret\ngennemgang af kommunens struktur og organisering. Kommunen står samtidig over for\nkomplekse økonomiske udfordringer, idet der fra 2028 skal realiseres en permanent\nbesparelse på mindst 10 mio. kr. ud over det årlige råderumsarbejde. Dette forudsætter\npolitiske drøftelser og prioriteringer af væsentlig karakter.\nPå den baggrund igangsættes et samlet program for strukturanalyser. Programmet Hele Vejen\nRundt – klar til fremtiden har i sin helhed til formål at gennemgå alle kommunens fag- og\nstabsområder for at sikre, at vi har den rette organisering og struktur til fremtiden. Samtidig har\nprogrammet til formål at tilpasse kommunens struktur og services, så det matcher borgernes\nbehov, den demografiske udvikling og reducerer serviceudgifterne permanent med mindst 10\nmio. kr. i perioden 2028 – 2030 udover den løbende omprioritering ved de årlige\nbudgetforhandlinger. Programmet realiseres gennem en række projekter og analyser på tværs\naf kommunens områder, som skal skabe et solidt vidensgrundlag og tilvejebringe det\nnødvendige beslutningsgrundlag for afgørende politiske drøftelser om kommunens fremtidige\nstruktur og opgaveløsning.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nProgrammet finansieres i 2027 inden for de afsatte økonomiske rammer, idet udgifter til\nekstern konsulenthjælp primært finansieres af kommunens udviklings- og omstillingspulje\nunder Udvalget for Økonomi, Plan og Erhverv. I 2028 og 2029 kan det blive nødvendigt at\nafsætte ekstra ressourcer til ekstern konsulenthjælp.\n\nGennemførelse af programmet vil betyde, at der i perioden 1. januar 2027 til 31. december\n2029 vil være færre ressourcer til udviklingsopgaver. Dette vil betyde, at der vil være færre\nressourcer til opgaver bestilt af politiske udvalg, borgmester, direktion og chefforum.\nDerudover vil der ved potentielle omstruktureringer være forventede investeringer bl.a. i\nbygninger, tilpasning af lokaler, samt indkøb af it og inventar.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nIngen.\n\nHøring\nIngen."
     }
    ],
    "bilag": []
@@ -8894,10 +9010,10 @@
    "kommune": "Vejen",
    "udvalg": "Udvalget for Økonomi, Plan og Erhverv",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.vejen.dk/vis?id=c75ecaec-17d8-42b6-ad21-627f345dcb11",
-   "hentet": "2026-11-12T21:48:42.137Z",
+   "kilde": "https://dagsordener.vejen.dk/vis?id=304524bd-5d85-4ba8-b821-ca2a8434f213",
+   "hentet": "2026-11-19T13:32:15.311Z",
    "titel": "13. Underskriftsark",
    "afsnit": [
     {
@@ -8906,12 +9022,160 @@
     }
    ],
    "bilag": []
+  },
+  "vejen-2026-11-26-handicapraadet-1": {
+   "id": "vejen-2026-11-26-handicapraadet-1",
+   "kommune": "Vejen",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.vejen.dk/vis?id=2d084712-774e-4262-b91e-2c2c288152f9",
+   "hentet": "2026-11-19T13:32:27.795Z",
+   "titel": "Godkendelse af referat fra mødet i Handicaprådet den 8. september 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Administrativ indstilling\nFormandskabet for Handicaprådet indstiller, at:\n\nHandicaprådet godkender referat fra møde i Handicaprådet den 8. september 2026.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nIngen.\n\nHøring\nIngen."
+    }
+   ],
+   "bilag": []
+  },
+  "vejen-2026-11-26-handicapraadet-2": {
+   "id": "vejen-2026-11-26-handicapraadet-2",
+   "kommune": "Vejen",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.vejen.dk/vis?id=2d084712-774e-4262-b91e-2c2c288152f9",
+   "hentet": "2026-11-19T13:32:27.795Z",
+   "titel": "Høring - kvalitetsstandarder for personlig pleje, praktisk hjælp og madservice m.v. for 2027 (B)",
+   "afsnit": [
+    {
+     "titel": "Behandling i Udvalget for Ældre, Handicap og Psykiatri 22. september 2026",
+     "tekst": "Drøftet. Kvalitetsstandarderne sendes i høring i Ældre- og Handicapråd."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet skal mindst én gang om året vedtage kvalitetsstandarder for personlig pleje, praktisk\nbistand, madservice og rehabiliteringsforløb (ydelser efter servicelovens § 83).\nKvalitetsstandarderne skal formidle Byrådets overordnede politiske beslutninger om\nserviceniveau, værdier og kvalitetskrav.\nKvalitetsstandarderne er en vejledning til borgerne i, hvad Vejen Kommune er forpligtet til\njævnfør servicelovens paragraffer vedrørende personlig pleje, praktisk hjælp, madservice og\nrehabilitering.\n\nÆndringer:\nKvalitetstandarden for 2026 gennemgik en større tilretning i forhold til webtilgængeligheden,\nderfor er der i den nye kvalitetsstandard for 2027 kun enkelte sproglige tilretninger.\nDe væsentligste ændringer, som ikke kun er sproglige, i kvalitetsstandarden for 2027, er\nbeskrevet nedenfor.\nPunkt 2.1 Personlig pleje\n\nUnder dette punkt er det uddybet, hvad indsatsen personlig pleje indebærer.\n”Personlig hygiejne, herunder bad, håndvask, mundpleje, nedre toilette, negleklip og hudpleje\nm.m.”\nPunkt 2.2 Ernæring\nI teksten er det korrigeret, at der tilstræbes 3 timer mellem hovedmåltiderne i løbet af dagen for\nat sikre den korrekte ernæringstilstand.\nPunkt 3. 1 Rengøring\nHer er punktet omkring robotstøvsugning tydeliggjort.\n”Alle borgere vil som udgangspunkt skulle indkøbe og anvende en selvindkøbt robotstøvsuger\ntil støvsugning af eget hjem.”\nKriterierne for manuel støvsugning er fortsat de samme som i kvalitetsstandarden for 2026.\nPunkt 4. Madservice:\nI kvalitetsstandarderne for 2026 stod der:\n”Madservice består af færdiglavede måltider, som omfatter det varme måltid, det kolde måltid\nog mellemmåltider.”\nI 2027 versionen står der:\n”Madservice består af færdiglavede måltider, hvor borgeren har mulighed for at vælge mellem\n12 forskellige hovedretter og 12 forskellige biretter hver uge.\nMenuen skifter fra uge til uge for at sikre variation i måltiderne, overholde årets sæsoner og\nhøjtider.”\nPunkt 5.0 til 5.3 Afløsning/aflastning i eget hjem\nHer er målgruppen blevet uddybet. Punktet indeholder nu, hvad der ligges vægt på i\nvurderingen af, om borgeren kan tilbydes afløsning/aflastning i eget hjem.\nPunkter i vurderingen:\n\nborgerens funktionsevne\nden pårørendes forhold\nde andre støttemuligheder som træder før, der tilbydes aflastning/afløsning i eget hjem.\n\nServiceniveauet for ordningen har ikke ændret sig, ovenstående kriterier har altid været en del\naf den faglige vurdering. Punktet er uddybet for at sikre et oplyst grundlag til borgere og\npårørende - derfor er det indføjet i kvalitetsstandarden for 2027.\nPunkt 10. Nødkald og telefonopkald\nHer er målgruppen for bevilling af nødkald tydeliggjort.\n\nBorgere, som har udtalt faldrisiko, trods forebyggende indsats, og som ikke er i stand til\nat rejse sig ved egen hjælp.\nBorgere, der grundet helbredsmæssige problemstillinger har behov for hurtig hjælp i\nnødsituationer, og hvor behovet for hjælp ikke kan dækkes på anden måde.\nBorgere, der ikke kan betjene tale eller foretage opkald via telefon/mobiltelefon.\nBorgere, som deltager i et rehabiliteringsforløb og hvor nødkaldet kan være en del af\nden rehabiliterende indsats.\n\nDen væsentligste ændring er; at hvis borger kan betjene, tale og foretage opkald via en\nmobiltelefon, er man som udgangspunkt ikke berettiget til et nødkald.\nBevilling af nødkald sker fremadrettet altid være en midlertidig løsning, derfor vil der ske\nopfølgning efter 3- 6 måneder efter opsætning heraf.\n\nVedlagt i bilag er de gældende kvalitetsstandarder for 2026 og de foreslåede\nkvalitetsstandarder for 2027.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nLov om social service §§ 138-139.\nBekendtgørelse om kvalitetsstandarder for hjemmehjælp, rehabiliteringsforløb og træning efter\nservicelovens §§ 83, 83 a og 86.\n\nHøring\nÆldre- og Handicapråd."
+    }
+   ],
+   "bilag": []
+  },
+  "vejen-2026-11-26-handicapraadet-4": {
+   "id": "vejen-2026-11-26-handicapraadet-4",
+   "kommune": "Vejen",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.vejen.dk/vis?id=2d084712-774e-4262-b91e-2c2c288152f9",
+   "hentet": "2026-11-19T13:32:27.795Z",
+   "titel": "Orientering om ankestyrelsens Danmarkskort for året 2025 (C)",
+   "afsnit": [
+    {
+     "titel": "Behandling i Udvalget for Ældre, Handicap og Psykiatri 20. oktober 2026",
+     "tekst": "Udvalget drøftede resultaterne fra Ankestyrelsens Danmarkskort for 2025 og tog\norienteringen til efterretning.\nUdvalget tilsluttede sig, at fagafdelingerne arbejder videre med kvalitetssikring og\nforbedring af sagsbehandlingen.\nSagen fremsendes til drøftelse i Udvalget for Økonomi, Plan og Erhverv og Byrådet samt\ntil orientering i Ældrerådet og Handicaprådet.\nAfbud: Jan Møller Pedersen (V) og Jakob Bech Jensen (C)."
+    },
+    {
+     "titel": "Behandling i Udvalget for Skoler, Børn og Familie 20. oktober 2026",
+     "tekst": "Udvalget drøftede resultaterne fra Ankestyrelsens Danmarkskort for 2025 og tog\norienteringen til efterretning.\nUdvalget tilsluttede sig, at fagafdelingerne arbejder videre med kvalitetssikring og\nforbedring af sagsbehandlingen.\nSagen fremsendes til drøftelse i Udvalget for Økonomi, Plan og Erhverv og Byrådet samt\ntil orientering i Ældrerådet og Handicaprådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "UDVALGET FOR UNGE, BESKÆFTIGELSE OG INTEGRATION DEN\n\nDrøftet.\nSagen fremsendes til drøftelse og orientering i Udvalget for Økonomi, Plan og Erhverv og\nByrådet samt til orientering i Ældrerådet og Handicaprådet.\nAfbud: Jørgen Lastein (V)."
+    },
+    {
+     "titel": "Behandling i Udvalget for Økonomi, Plan og Erhverv 27. oktober 2026",
+     "tekst": "Drøftet og taget til efterretning."
+    },
+    {
+     "titel": "Behandling i Byråd 3. november 2026",
+     "tekst": "Drøftet og taget til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Hvis en borger klager over en afgørelse truffet efter bestemmelser i serviceloven eller barnets\nlov, skal kommunen foretage en fornyet vurdering af sagen. Hvis kommunen herefter ikke giver\nborgeren fuldt medhold, sendes klagen til Ankestyrelsen til afgørelse.\nSocialministeriet offentliggør hvert år inden den 1. juli et Danmarkskort over kommunernes\nomgørelsesprocenter, jf. retssikkerhedslovens § 84 a. Omgørelsesprocenten viser andelen af\nrealitetsbehandlede klagesager i Ankestyrelsen, som ændres, ophæves eller hjemvises.\nRealitetsbehandlede sager omfatter ikke bortfaldne og afviste klager. Der udarbejdes et kort\nmed omgørelsesprocenter fordelt på landets kommuner for henholdsvis social-,\nvoksenhandicap- og børnehandicapområdet. Se Ankestyrelsens afgørelsestyper i bilag 1.\nI denne sammenhæng omfatter socialområdet hele servicelovsområdet og hele området efter\nbarnets lov. I denne sag fremgår det i de særskilte afsnit, hvilke fagudvalg de enkelte\nDanmarkskort er relevante for. Ud over det samlede Danmarkskort for socialområdet har\nAnkestyrelsen udarbejdet særskilte Danmarkskort for voksenhandicapområdet og\nbørnehandicapområdet. Disse områder indgår samtidig som delmængder af det samlede\nsocialområde. Danmarkskortene for Vejen Kommune med paragrafopdeling er vedlagt som\nbilag 2.\nEfter retssikkerhedslovens § 79 b skal kommunalbestyrelsen behandle Danmarkskortet for\nsocialområdet inden udgangen af det kalenderår, hvor kortet er offentliggjort.\nDanmarkskortene er baseret på Ankestyrelsens klagestatistik, som løbende offentliggøres på\nstyrelsens hjemmeside. Omgørelsesprocenten giver et billede af rigtigheden af de afgørelser,\nsom påklages til Ankestyrelsen, men den belyser ikke til fulde den generelle faglige kvalitet af\nkommunernes sagsbehandling. Ved vurderingen af resultaterne bør omgørelsesprocenten ses\ni sammenhæng med antallet af påklagede sager, det samlede antal behandlede sager i\nkommunen samt andelen af kommunens afgørelser, der påklages. En læsevejledning til\nDanmarkskortene er vedlagt som bilag 3.\n\nDanmarkskort 2025\nLink til danmarkskort på ministeriets hjemmeside: https://www.sm.dk/danmarkskort\nKommunerne har mulighed for at kommentere på statistikken i Danmarkskortene. Eventuelle\nkommentarer bliver herefter synlige i Danmarkskortene. Vejen Kommune har valgt ikke at\nkommentere på Danmarkskortet for 2025.\nDanmarkskort vedr. socialområdet – 2025: Relevant for Udvalget Ældre, Handicap og\nPsykiatri, Udvalget for Skoler, Børn og Familie og Udvalget for Unge, Beskæftigelse og\nIntegration\nNedenstående tabel viser Ankestyrelsens samlede opgørelse over hele socialområdet i Vejen\nKommune i 2025 og 2024.\n\nAfgørelser\n\nStadfæstelse\n\nOmgørelser\n\nOmgørelsesprocent\n\nÆndrede/ophævede\n\nHjemvisning\n\nDet fremgår af Danmarkskortet vedrørende socialområdet, at borgere i Vejen Kommune i 2024\nhar modtaget 6.243 ydelser efter ”de pågældende paragraffer”. Se nærmere definition af dette\ntal i bilag 4.\nKommentar fra Unge & Familie: Relevant for Udvalget for Unge, Beskæftigelse og Integration\nog Udvalget for Skoler, Børn og Familie\nOrienteringen om Ankestyrelsens Danmarkskort er relevant for udvalgene, da opgørelsen giver\nindsigt i udviklingen i omgjorte og hjemviste afgørelser på sagsområder inden for udvalgenes\nansvarsområde. Resultaterne bidrager til den løbende opfølgning på retssikkerhed og\nsagsbehandlingspraksis.\nUnge- og familieområdet har vurderet, at der ikke er grundlag for at ændre den nuværende\npraksis på baggrund af Ankestyrelsens Danmarkskort for 2025, ud over de allerede planlagte\nog igangsatte tiltag på fagområdet. Der ses heller ikke en tydelig tendens i de sager,\nAnkestyrelsen har behandlet. Denne vurdering skal ses i lyset af, at Unge & familie i 2025 traf i\nalt 2.143 afgørelser. Ud af de 6 sager, der blev indbragt for Ankestyrelsen, blev tre hjemvist, én\nstadfæstet, én ophævet og én afvist. Til sammenligning blev der indbragt 5 sager til\nAnkestyrelsens Danmarkskort, hvoraf tre blev stedfæstet, én hjemvist og én afvist.\nUnge & Familie er i gang med at videreudvikle praksis, hvilket blandt andet betyder, at der er\nmulighed for at koble juridisk kompetence på sager til behandling i Ankestyrelsen samt sager,\n\nder hjemvises af Ankestyrelsen.\nFagområdet har forventning om, at der fremadrettet kan forekomme en stigning i antallet af\nsager til Ankestyrelsen, da der løbende udvikles på området. Der er dog ikke en forventning til,\nat antallet af hjemvisninger vil stige, da det netop er udviklingen af systematiserede og styrket\nkvalitet i sagsbehandlingen, der er prioriteret.\nYderligere kommentar fra henholdsvis Unge & Familie og Myndighed Handicap og\nSocialpsykiatri: Relevant for Udvalget Ældre, Handicap og Psykiatri, Udvalget for Skoler, Børn\nog Familie og Udvalget for Unge, Beskæftigelse og Integration\nAnkestyrelsen har tidligere vurderet, at implementeringen af Barnets lov fra 1. januar 2024 i en\novergangsperiode ville medføre flere klagesager, hjemvisninger og omgørelser. Det skyldes\nbehovet for at omsætte de nye regler til praksis, før der foreligger tilstrækkelig vejledning og\nprincipafgørelser fra Ankestyrelsen. Kommunerne opfordres derfor fortsat til at få sager prøvet\nved Ankestyrelsen for at understøtte en ensartet lovanvendelse på tværs af landet.\nKommentar fra Ældre & Rehabilitering: Relevant for Udvalget for Ældre, Handicap og Psykiatri\nI forhold til det samlede antal sagsbehandlede sager på ældre- og rehabiliteringsområdet i\n2025 er få sager indgivet til Ankestyrelsen. Af de sager der er indgivet til Ankestyrelsen på\nældre- og rehabiliteringsområdet – 39 sager - er 29 stadfæstet, 1 ændret/ophævet og 9\nhjemvist til fornyet sagsbehandling. De hjemviste sager drejer sig om én sag vedrørende\nhjemmepleje (serviceloven § 83), én sag vedrørende forbrugsgoder (serviceloven § 113) og 7\nsager vedrørende hjælpemidler (serviceloven § 112).\nDen hjemviste sag vedrørende servicelovens §83, handlede om, at vi som kommune skal have\nstor fokus på den terapeutfaglige vurdering af, hvordan borger kan/ikke kan udføre de daglige\nopgaver i hjemmet.\nServicelovens § 113 vedrørende forbrugsgoder ændrer sig i takt med udviklingen i samfundet\nog borgernes mulighed for at købe flere af de produkter, vi tidligere har betragtet som\nhjælpemidler, i almindelig handel. For eksempel er 3-hjulede cykler ikke længere et\nhjælpemiddel, men betragtes som et forbrugsgode nu. Den hjemviste sag vedrørende § 113\nhandlede om specialbestik, som borger efterfølgende fik bevilget.\n4 af de 7 hjemviste sager vedrørende servicelovens § 112 (hjælpemidler) omhandlede\nkompressionsområdet. De 4 sager er fra omkring tidspunktet, hvor Vejen Kommune ændrede\npraksis vedrørende kompressionsstrømper. Sagerne er sendt til Ankestyrelsen tilbage i slut\n2023 og start 2024. De 3 andre sager vedrører for 2 sagers vedkommende den samme sag,\nefter sagsbehandling af sagen igen, fastholdt vi afgørelsen og efterfølgende har Ældre &\nRehabilitering fået begge sager hjem stadfæstet. Den sidste sag behandlede vi også igen og\nfastholdt afgørelsen, hvorefter borger ikke klagede igen.\nNår der til et barn søges om et hjælpemiddel, et forbrugsgode eller en boligændring, behandles\nsagen ud fra barnets lov § 90. På hjælpemiddelområdet har Hjælpemiddelteamet i Ældre &\nRehabilitering haft 3 sager i Ankestyrelsen jf. barnets lov. Ankestyrelsen har i de 3 sager\nforholdt sig til det ansøgte både som et forbrugsgode og en boligændring. Sagerne har Ældre\n\n& Rehabilitering alle fået medhold i. Det er sager, som omhandler opsætning af akustikplader i\nalmindelig bolig, låse på udendørs låger samt hegn om privat have. I alle sager er det vurderet,\nat det er sædvanligt indbo at opsætte for borgere som måtte ønske det eller have behov herfor.\nÆldre & Rehabilitering uddyber vedrørende ankesagerne i ”bilag 5”.\n\nDanmarkskort vedr. børnehandicapområdet – 2025: Relevant for Udvalget for Ældre, Handicap\nog Psykiatri\nI nedenstående tabel fremgår resultaterne for børnehandicapområdet, hvor Ankestyrelsen har\nudtrukket særlige bestemmelser fra barnets lov for 2025 og 2024. Danmarkskortet på\nbørnehandicapområdet vedr. §§ 82-85, 86, 87-88, 89 og 90 (jf. § 83, 84 og 86 i serviceloven) i\nbarnets lov.\n\nAfgørelser\n\nStadfæstelse\n\nOmgørelser\n\nOmgørelsesprocent\n\nÆndrede/ophævede\n\nHjemvisning\n\nBorgere i Vejen Kommune har i 2024 modtaget 1.151 ydelser efter barnets lov: §§ 86-87, §§\n82-83, § 85, § 90 jf. § 83 i serviceloven, § 90 jf. § 84 stk. 1, i serviceloven, § 90 jf. § 86 stk. 2, i\nserviceloven og § 89.\nKommentar fra Handicap & Socialpsykiatri: Relevant for Udvalget for Ældre, Handicap og\nPsykiatri\nBørnehandicapområdet er et komplekst lovområde, hvor afgørelser træffes på baggrund af\nkonkrete og individuelle vurderinger af barnets behov og familiens situation. Vurderingerne\nbygger på faglige og lægefaglige oplysninger samt statistiske data om udgifter i familier uden\nbørn med handicap. Området påvirkes løbende af ny lovgivning og principafgørelser fra\nAnkestyrelsen, som skal indarbejdes i praksis. Ved tvivl om lovfortolkning eller uenighed kan\nsager indbringes for Ankestyrelsen med henblik på at afklaret praksis.\nAf de 21 afgørelser fra Ankestyrelsen vedrører 17 sager barnets lov § 86 om\nkompensationsberettigende udgifter. Heraf er fire stadfæstet, fire ændret/ophævet og ni\nhjemvist. De resterende afgørelser vedrører tabt arbejdsfortjeneste efter §§ 87-88 (tre sager)\nog ledsagelse efter § 89 (én sag). Samtlige fire afgørelser på disse områder er stadfæstet.\nAntallet af sager på børnehandicapområdet, der er behandlet af Ankestyrelsen, er steget fra 16\nsager i 2024 til 21 sager i 2025. Omgørelsesprocenten er samtidig stort set uændret og udgør\n\n62 % i 2025 mod 63 % i 2024. Selvom omgørelsesprocenten er faldet marginalt, er niveauet\nfortsat højt, hvilket giver anledning til et vedvarende fokus på kvalitet i sagsbehandlingen og på\nat nedbringe omgørelsesprocenten fremadrettet.\nResultaterne skal ses i lyset af lovændringen pr. 1. september 2025, hvor merudgiftsydelsen\nblev erstattet af reglerne om kompensationsberettigende udgifter. Socialministeriet har peget\npå, at der i overgangsperioden kan opstå situationer, hvor borgere oplever at blive over- eller\nunderkompenseret. Da der fortsat ikke foreligger en vejledning på området, må kommunerne i\nhøj grad navigere ud fra lovtekst, praksis og Ankestyrelsens løbende afgørelser. Området\nforventes fortsat at være under indkøring frem mod 2027.\nFor at understøtte høj faglig kvalitet deltog ledere og medarbejdere fra Børnehandicapteamet i\n2025 i Ankestyrelsens kompetenceudviklingsforløb Bedre retssikkerhed og tillid på\nhandicapområdet. Forløbet havde blandt andet fokus målgruppevurdering til de nye\nkompensationsberettigende udgifter efter barnets lov § 86 samt reglerne om tabt\narbejdsfortjeneste efter lovens § 87. Derudover gennemførte medarbejderne i august 2025\nundervisning i reglerne om kompensationsberettigende udgifter forud for lovændringen. Som\nled i den fortsatte kvalitetsudvikling blev der i 2026 ansat en jurist, som fremadrettet bidrager til\nkvalitetssikring af afgørelser og styrkelse af den juridiske understøttelse på området.\nAlle afgørelser fra Ankestyrelsen gennemgås løbende på teammøder med henblik på læring,\nfælles praksis og fortsat udvikling af sagsbehandlingen.\n\nDanmarkskort vedr. voksenhandicapområdet – 2025: Relevant for Udvalget for Ældre,\nHandicap og Psykiatri\nI nedenstående tabel fremgår resultaterne for voksenhandicapområdet, hvor Ankestyrelsen har\nudtrukket særlige bestemmelser fra serviceloven for 2025 og 2024. Danmarkskortet på\nvoksenhandicapområdet vedr. §§ 95, 96, 97 og 100 i serviceloven.\nForuden de særlige udtræk på voksenområdet beskrevet ovenfor, har der været yderligere\nafgørelser omhandlende § 107 vedrørende midlertidigt botilbud, § 85 a vedrørende\nspecialiseret bostøtte, § 84 vedrørende afløsning og aflastning samt § 163 vedrørende\negenbetaling. Disse er derfor også inkluderet i nedenstående tabel.\n\nAfgørelser\n\nStadfæstelse\n\nOmgørelser\n\nOmgørelsesprocent\n\nÆndrede/ophævede\n\nHjemvisning\n\nBorgere i Vejen Kommune har modtaget 201 ydelser efter servicelovens §§ 95, 96, 97 og 100 i\n2024. Myndighed Handicap og Socialpsykiatri varetager i Vejen Kommune paragrafferne på\nnær § 95, som varetages af Ældre & Rehabilitering.\nKommentar fra Handicap & Socialpsykiatri: Relevant for Udvalget for Ældre, Handicap og\nPsykiatri\nVoksenhandicapområdet omfatter en bred vifte af ydelser, hvor afgørelser træffes på baggrund\naf en konkret og individuel vurdering af borgerens funktionsevne, behov og situation.\nAnkestyrelsen har behandlet otte afgørelser på voksenhandicapområdet omfattet af\nDanmarkskortet.\nFire afgørelser vedrører servicelovens § 100 om kompensationsberettigende udgifter til\nvoksne. Én afgørelse er stadfæstet, mens tre er hjemvist. I Vejen Kommune varetages\nsagsbehandlingen af § 100 af Børnehandicapteamet på grund af teamets erfaring med\ntilsvarende komplekse vurderinger. Området er påvirket af de samme lovændringer og den\nsamme manglende vejledning som beskrevet på børnehandicapområdet i forrige afsnit, og der\nses fortsat behov for afklaring af praksis gennem Ankestyrelsens afgørelser.\nDe øvrige fire afgørelser fordeler sig således:\nÉn stadfæstet afgørelse vedrørende § 107 om midlertidigt botilbud.\nÉn hjemvist afgørelse vedrørende § 85 a om specialiseret bostøtte.\nÉn hjemvist afgørelse vedrørende § 84 om afløsning og aflastning.\nÉn ændret/ophævet afgørelse vedrørende § 163 om egenbetaling.\n\nDer er sket en stigning i antallet af sager på voksenhandicapområdet, som Ankestyrelsen har\nbehandlet. I 2024 blev der realitetsbehandlet fire sager, mens der i 2025 blev behandlet otte\nsager. Samtidig er omgørelsesprocenten steget fra 25 % til 75 % i 2025. Udviklingen giver\nanledning til et skærpet fokus på kvaliteten i sagsbehandlingen, og der arbejdes målrettet med\nat styrke kvaliteten gennem læring af Ankestyrelsens praksis. Ankestyrelsens afgørelser\ngennemgås derfor løbende på teammøder med henblik på læring, videndeling og nødvendig\njustering af praksis. Som led i den fortsatte kvalitetsudvikling blev der i 2026 ansat en jurist,\nsom fremadrettet bidrager til kvalitetssikring af afgørelser og styrker den juridiske\nunderstøttelse på området.\n\nTidligere behandling\n20.10.2026 Udvalget for Ældre, Handicap og Psykiatri.\n20.10.2026 Udvalget for Skoler, Børn og Familie.\n20.10.2026 Udvalget for Unge, Beskæftigelse og Integration.\n27.10.2026 Udvalget for Økonomi, Plan og Erhverv.\n03.11.2026 Byrådet.\n\nØkonomiske konsekvenser\n\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nLov om retssikkerhed og administration på det sociale område §§ 79b og 84a.\n\nHøring\nTil orientering i Ældre- og Handicapråd."
+    }
+   ],
+   "bilag": []
+  },
+  "vejen-2026-11-26-handicapraadet-6": {
+   "id": "vejen-2026-11-26-handicapraadet-6",
+   "kommune": "Vejen",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.vejen.dk/vis?id=2d084712-774e-4262-b91e-2c2c288152f9",
+   "hentet": "2026-11-19T13:32:27.795Z",
+   "titel": "Orientering om Socialtilsyns Syds tilsynsbesøg på Veum Bøg 2026 (B)",
+   "afsnit": [
+    {
+     "titel": "Behandling i Udvalget for Ældre, Handicap og Psykiatri 10. november 2026",
+     "tekst": "Orientering taget til efterretning.\nSagen sendes til orientering i Handicaprådet.\nAfbud: Jacob Bech Jensen (C) og Jonas Lee Jeppesen (Æ)."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formålet med orienteringen om Socialtilsyn Syds tilsynsbesøg er at give Udvalget for Ældre,\nHandicap og Psykiatri et kvalificeret indblik i kvaliteten på institutionsområderne i Handicap &\nSocialpsykiatri. Den løbende orientering skal styrke Udvalgets overblik over udviklingen på\nområdet og bidrage til åbenhed om Socialtilsyn Syds vurdering af de kommunale tilbud på\nområdet.\nOm Socialtilsyn Syd\nSocialtilsyn Syd fører lovpligtigt tilsyn med de sociale tilbud i Vejen Kommune for er at sikre, at\ntilbuddene har den fornødne kvalitet, og at borgerne modtager en fagligt forsvarlig indsats i\noverensstemmelse med gældende lovgivning. Orienteringen til Udvalget bidrager dermed til at\nskabe et fælles vidensgrundlag, som kan understøtte det videre arbejde med kvalitetsudvikling\npå området.\nFolketinget vedtog den 11. juni 2025 en ændring af loven om socialtilsyn, som trådte i kraft den\n1. januar 2026. Tidligere gennemførte Socialtilsyn Syd som udgangspunkt årlige tilsyn med alle\nsociale tilbud. Med de nye regler skal tilbuddene fremadrettet have tilsynsbesøg mindst hvert\ntredje år. Tilsynsbesøgene skal som udgangspunkt være uanmeldte. I særlige tilfælde kan\ntilsynet dog gennemføres anmeldt, men besøget må højst varsels fire uger i forvejen.\nSocialtilsyn Syds kvalitetstemaer og kriterier\nSocialtilsyn Syd vurderer kvaliteten af det enkelte tilbud ud fra en fælles national model, der\n\nomfatter fem kvalitetstemaer og kriterier. Herudover foretages der en vurdering af tilbuddets\nøkonomi. De fem kvalitetstemaer er:\nMålgruppe, metoder og resultater\nSundhed og trivsel\nOrganisation og ledelse\nKompetencer\nFysiske rammer\n\nUanmeldt tilsynsbesøg på Veum Bøg 2026\nPå baggrund af en offentlige omtale af Veum Bøg i Gesten gennemførte Socialtilsyn Syd\nuanmeldte tilsynsbesøg på tilbuddet i slutningen af juni og begyndelsen af august 2026.\nSocialtilsyn Syd aflagde senest et uanmeldt besøg den 30. september 2026.\nSocialtilsyn Syds samlede vurdering er, at Veum Bøg har den fornødne kvalitet inden for alle\nfem kvalitetstemaer og kriterier samt i forhold til tilbuddets økonomi. Socialtilsynets\nafrapportering er vedlagt som bilag 1. Med fremsendelsen af Socialtilsyn Syds afrapportering\naf kvalitetsvurderingen er undersøgelsesforløbet afsluttet. Socialtilsyn Syd har ikke fundet\ngrundlag for bekymring for tilbuddets kvalitet. Fagområdet har efterfølgende fået dette skriftligt\nbekræftet af Socialtilsyn Syd.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nIngen.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nSocialtilsynsloven § 7.\n\nHøring\nIngen."
+    }
+   ],
+   "bilag": []
+  },
+  "vejen-2026-11-26-handicapraadet-7": {
+   "id": "vejen-2026-11-26-handicapraadet-7",
+   "kommune": "Vejen",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.vejen.dk/vis?id=2d084712-774e-4262-b91e-2c2c288152f9",
+   "hentet": "2026-11-19T13:32:27.795Z",
+   "titel": "Orientering om den fremtidig håndtering af rusmiddelbehandlingen (B)",
+   "afsnit": [
+    {
+     "titel": "Behandling i Udvalget for Sundhed, Kultur og Fritid 10. november 2026",
+     "tekst": "Orienteringen om den nuværende samarbejdsaftale på rusmiddelområdet taget til\nefterretning.\nFremtidig samarbejdsaftale og organisering af rusmiddelområdet drøftet.\nSagen sendes til orientering i Handicaprådet.\nAfbud: Jonas Lee Jeppesen (Æ) og Henrik Pihl Jessen (V)."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Vejen Kommune har igennem mange år haft en samarbejdsaftale med Esbjerg Kommune\nomkring rusmiddelbehandling omhandlende ambulant alkoholbehandling og\nstofmisbrugsbehandling. Esbjerg Kommune har opsagt samarbejdsaftalen med Vejen\nKommune og Varde Kommune med virkning fra 1. maj 2027. Samarbejdsaftalen er opsagt, da\nEsbjerg Kommune vurderer, at ændringerne kommer til at medføre, at den gældende\nsamarbejdsaftale ikke længere er retvisende.\nSundhed, Kultur og Fritid i Vejen Kommune har været i dialog med Rusmiddelcenteret i\nEsbjerg. Esbjerg Kommune oplyser, at de som følge af udfordringer med driften af deres tilbud\ner i gang med en større omstrukturering af rusmiddelindsatsen, hvor funktioner og tilbud\nsamles.\nEsbjerg Rusmiddelcenter har udarbejdet en ny kvalitetsstandard for social- og sundhedsfaglig\nbehandling. Kvalitetsstandarden fremgår af bilag. Kvalitetsstandarden kommer til at danne\ngrundlag for en eventuelt fremtidig samarbejdsaftale mellem Vejen Kommune og Esbjerg\nKommune, ligesom der vil blive udarbejdet en ny afregningsmodel, der skal sikre større\ngennemsigtighed og en bedre sammenhæng mellem indsats og pris.\n\nUdviklingen af tilbuddene vil blandt andet indebære fokus på individuelle samtaler,\ngruppebehandling og som et nyt tiltag digitale samtaler. Der lægges ikke op til køb af intensive\nforløb med dagligt fremmøde, som vil være en opgave i hjemkommunen i forbindelse med en\nhelhedsorienteret indsats.\nÆndringerne i kvalitetsstandarden fremstår umiddelbart positive, men de økonomiske\nkonsekvenser er vanskelige at gennemskue på nuværende tidspunkt. De økonomiske takster\nforventes at være klar i november 2026. Efter aftale med Esbjerg Kommune er der nedsat en\narbejdsgruppe på tværs af Esbjerg Kommune, Varde Kommune og Vejen Kommune.\nEsbjerg Kommune er fortsat interesseret i en samarbejdsaftale med Vejen Kommune, og\nønsker at genforhandle denne i god tid inden den 1. maj 2027.\nI 2025 havde Vejen Kommune 69 borgere i alkoholbehandling, 85 i stofmisbrugsbehandling og\n5 i døgnbehandling.\nForuden dialogen med Esbjerg Kommune omkring et fremtidigt samarbejde har forvaltningen\nundersøgt alternative modeller for håndtering af alkohol- og stofmisbrugsbehandling.\nDet har afgørende betydning for borgernes nærhed i tilbud, at den ambulante behandling\nfortsat kan foregå lokalt i Vejen Kommune. De seneste tre år har den ambulante behandling\nforegået i Brørup Sundhedscenter.\n\nTidligere behandling\nIngen.\n\nØkonomiske konsekvenser\nVejen Kommune har i 2025 haft udgifter på knap 4 mio. kr. til ambulant alkohol- og\nstofmisbrugsbehandling.\n\nPersonalemæssige konsekvenser\nIngen.\n\nRetsregler og andre forskrifter\nSundhedsloven og Serviceloven.\n\nHøring\nIngen."
+    }
+   ],
+   "bilag": []
+  },
+  "vejen-2026-11-26-handicapraadet-8": {
+   "id": "vejen-2026-11-26-handicapraadet-8",
+   "kommune": "Vejen",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.vejen.dk/vis?id=2d084712-774e-4262-b91e-2c2c288152f9",
+   "hentet": "2026-11-19T13:32:27.795Z",
+   "titel": "Tilbagemelding fra udvalgsmøder",
+   "afsnit": [],
+   "bilag": []
+  },
+  "vejen-2026-11-26-handicapraadet-9": {
+   "id": "vejen-2026-11-26-handicapraadet-9",
+   "kommune": "Vejen",
+   "udvalg": "Handicaprådet",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.vejen.dk/vis?id=2d084712-774e-4262-b91e-2c2c288152f9",
+   "hentet": "2026-11-19T13:32:27.795Z",
+   "titel": "Evt",
+   "afsnit": [],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=a532c72d-ef7a-43ac-8ae6-c6af7f722f0d": {
    "senest": "2026-01-08",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=5b8ccb23-7097-445c-8256-16624a29c702": {
    "senest": "2025-09-27",
@@ -8919,27 +9183,27 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=f858bfb7-d3b0-453b-b4cb-055d177a6ec3": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=b67f44d5-3119-4075-a88b-6f282e3a1101": {
    "senest": "2026-01-12",
    "tjekket": "2026-11-12"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=cb43fc99-3f24-4fa2-8a65-1cbbd227dc91": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=90723545-1a30-4454-a749-b97a8ef5c5ab": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=9f9446f1-9d82-4dc5-96f9-3b3c64b04b06": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=0e179126-e187-4dc3-8bcc-96fbe52ff200": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=80dc6b4c-42fa-42be-bf8d-83a1a963317c": {
    "senest": "2025-09-27",
@@ -8947,7 +9211,7 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=b8bc0d4e-ca80-489e-a11b-4ff14f492cda": {
    "senest": "2025-11-25",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=29e43f3c-ffe9-4a14-9193-fce26a2b33c7": {
    "senest": "2025-09-27",
@@ -8955,11 +9219,11 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=d5dcdeee-0ac8-40d5-9bf5-28297a4019e9": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=cc33db5e-4b20-423a-ab9c-1eede3258d3c": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=b95263ff-31ed-4151-bcb4-077b031dd7f8": {
    "senest": "2025-09-27",
@@ -8967,11 +9231,11 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=e9288033-22fd-420c-b419-39c8e0fe750d": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=686d9c77-cb76-48ea-9184-7c682f01f07d": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=dba3f4b4-74ee-43e9-b2eb-023a5068b1dc": {
    "senest": "2025-09-27",
@@ -8979,11 +9243,11 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=a663ff4e-7b00-4281-a176-5134184fea0f": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=e2532d2d-bb65-47e8-bfde-728c3b9bf628": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=49ace008-579b-40c7-8875-abdd1e781e76": {
    "senest": "2025-09-27",
@@ -8991,7 +9255,7 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=b8fb63da-8013-4f93-803f-1a694e802cf9": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=7992062f-8c6d-4096-aaf2-88eac8e39cb8": {
    "senest": "2025-12-04",
@@ -8999,23 +9263,23 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=d6795a10-5911-4713-95ba-361312d71a68": {
    "senest": "2026-09-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=14868c2d-2339-4190-8350-92b3562819c9": {
    "senest": "2025-11-25",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=533f99c5-1750-429b-9104-3d40acf5f3a1": {
-   "senest": "2026-09-21",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=15229b57-fa5a-4678-9776-0dab951c467b": {
    "senest": "2025-12-12",
    "tjekket": "2026-11-12"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=46819fa5-e8ae-4d4b-a8fd-49709101b0e4": {
-   "senest": "2026-11-06",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-16",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=b4062343-4f22-44f1-acf2-5dfdca194b3e": {
    "senest": "2025-12-19",
@@ -9023,7 +9287,7 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=7a6e93d6-ef7c-41be-812e-f52d1dbb118b": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=9a93bcf6-506c-4048-8c4e-b009b4b07e32": {
    "senest": "2025-09-27",
@@ -9031,7 +9295,7 @@
   },
   "https://dagsordener.vejen.dk/Sitemap/ForCommittee?committeeId=9386e9b4-72e0-4ce7-bd4b-066d4371db02": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejen.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -9039,6 +9303,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-13T21:13:09.397Z",
+ "opdateret": "2026-11-19T13:32:43.484Z",
  "kommune": "Vejen"
 }

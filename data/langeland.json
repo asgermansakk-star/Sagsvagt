@@ -399,6 +399,62 @@
    "dato": "2026-11-09",
    "punkter": 4,
    "parser": 3
+  },
+  "d13f69e0-0edb-4730-a829-62275c983bc1": {
+   "lastmod": "2026-11-19",
+   "type": "dagsorden",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "punkter": 14,
+   "parser": 3
+  },
+  "5f6facc1-b5f1-463b-8d0d-e0c459432969": {
+   "lastmod": "2026-11-17",
+   "type": "dagsorden",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "punkter": 11,
+   "parser": 3
+  },
+  "5336b29f-d98b-46b6-9709-35b621cb2d65": {
+   "lastmod": "2026-11-17",
+   "type": "referat",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-16",
+   "punkter": 9,
+   "parser": 3
+  },
+  "a6236125-e7b6-44dc-9d3d-c837b67119fd": {
+   "lastmod": "2026-11-17",
+   "type": "dagsorden",
+   "udvalg": "Fællesskabsrådet - Vejen til nye fællesskaber",
+   "dato": "2026-11-24",
+   "punkter": 7,
+   "parser": 3
+  },
+  "b4130054-3b12-40f2-b184-321b83ba07ac": {
+   "lastmod": "2026-11-18",
+   "type": "referat",
+   "udvalg": "Folkeoplysningsudvalget",
+   "dato": "2026-11-16",
+   "punkter": 10,
+   "parser": 3
+  },
+  "37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd": {
+   "lastmod": "2026-11-18",
+   "type": "dagsorden",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "punkter": 14,
+   "parser": 3
+  },
+  "cbd9f9c4-0079-4d32-819f-f003866e853b": {
+   "lastmod": "2026-11-18",
+   "type": "dagsorden",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "punkter": 10,
+   "parser": 3
   }
  },
  "sager": {
@@ -13400,15 +13456,15 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Sagen afgøres i:\nKommunalbestyrelsen"
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud under hele mødet:\nUlrik Pihl, Mette Devald-Rasmussen deltog som stedfortræder"
     }
    ],
    "bilag": []
@@ -13418,10 +13474,10 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Spørgetid",
    "afsnit": [
     {
@@ -13431,6 +13487,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Hans Henrik Merrild har fremsendt spørgsmål til spørgetiden i Kommunalbestyrelsen om hvilke\ntanker kommunalbestyrelsen gør sig om at kunne indgå i udviklingspartnerskaber med\nØkonomi- og Indenrigsministeriet. (Baggrunden for spørgsmålet er, at Økonomi- og\nIndenrigsministeriet, i forbindelse med udmelding om tildeling fra særtilskudspuljen for 2027,\nskriver, at de vil desuden gå i dialog med Lolland, Langeland, Læsø og Morsø Kommuner om\nmulige udviklingspartnerskaber.)"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Spørgsmål blev besvaret i spørgetiden.\nAfbud under hele mødet:\nUlrik Pihl, Mette Devald-Rasmussen deltog som stedfortræder"
     }
    ],
    "bilag": []
@@ -13440,10 +13500,10 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Sammendrag",
    "afsnit": [
     {
@@ -13461,6 +13521,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Anbefales.\nAfbud under hele mødet:\nRené Larsen, som stedfortræder deltog Joan Kate Pedersen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud under hele mødet:\nUlrik Pihl, Mette Devald-Rasmussen deltog som stedfortræder"
     }
    ],
    "bilag": []
@@ -13470,10 +13534,10 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Likviditet efter kassekreditreglen den 30. september 2026",
    "afsnit": [
     {
@@ -13491,6 +13555,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Taget til efterretning og videresendes til orientering i Kommunalbestyrelsen.\nAfbud under hele mødet:\nRené Larsen, som stedfortræder deltog Joan Kate Pedersen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nAfbud under hele mødet:\nUlrik Pihl, Mette Devald-Rasmussen deltog som stedfortræder"
     }
    ],
    "bilag": []
@@ -13500,10 +13568,10 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Udbud af revisionsydelse 2027-2030",
    "afsnit": [
     {
@@ -13521,6 +13589,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Anbefales.\nAfbud under hele mødet:\nRené Larsen, som stedfortræder deltog Joan Kate Pedersen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud under hele mødet:\nUlrik Pihl, Mette Devald-Rasmussen deltog som stedfortræder"
     }
    ],
    "bilag": []
@@ -13530,10 +13602,10 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Udtrædelse af Fællesindkøb Fyn",
    "afsnit": [
     {
@@ -13551,6 +13623,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Anbefales.\n\nAfbud under hele mødet:\nRené Larsen, som stedfortræder deltog Joan Kate Pedersen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud under hele mødet:\nUlrik Pihl, Mette Devald-Rasmussen deltog som stedfortræder"
     }
    ],
    "bilag": []
@@ -13560,10 +13636,10 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Ændring af tegningsberettigede grundet ændringer i ledelsen",
    "afsnit": [
     {
@@ -13581,6 +13657,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Anbefales.\nAfbud under hele mødet:\nRené Larsen, som stedfortræder deltog Joan Kate Pedersen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud under hele mødet:\nUlrik Pihl, Mette Devald-Rasmussen deltog som stedfortræder"
     }
    ],
    "bilag": []
@@ -13590,10 +13670,10 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Ny ressourcetildelingsmodel til dagtilbudsområdet - Høringssvar",
    "afsnit": [
     {
@@ -13619,6 +13699,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Anbefales.\nAfbud under hele mødet:\nRené Larsen, som stedfortræder deltog Joan Kate Pedersen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud under hele mødet:\nUlrik Pihl, Mette Devald-Rasmussen deltog som stedfortræder"
     }
    ],
    "bilag": []
@@ -13628,10 +13712,10 @@
    "kommune": "Langeland",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=4a8e0522-d6b3-44ac-8f11-f95c7ab1b145",
-   "hentet": "2026-11-11T21:42:23.906Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5336b29f-d98b-46b6-9709-35b621cb2d65",
+   "hentet": "2026-11-19T13:30:16.491Z",
    "titel": "Godkendelse af beslutningsprotokol - underskriftsside",
    "afsnit": [
     {
@@ -13646,15 +13730,15 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Godkendelse af referat",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Fraværende: Heidi Scherning\n\nGodkendelse af referat\nSagen afgøres i:\nFolkeoplysningsudvalget"
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -13664,15 +13748,15 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Fraværende: Heidi Scherning\n\nGodkendelse af dagsorden\nSagen afgøres i:\nFolkeoplysningsudvalget"
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -13682,10 +13766,10 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Evaluering af temaaftenen den 22. oktober 2026",
    "afsnit": [
     {
@@ -13695,6 +13779,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Folkeoplysningsudvalget bedes evaluere temaaftenen den 22. oktober 2026. Evalueringen kan\nmed fordel forholde sig til rammerne for arrangementet samt oplæggenes relevans for\ndeltagerne.\nDeltagerne har efterfølgende modtaget oplægsholdernes materiale."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Temaaftenen blev gennemført med et flot fremmøde på 46 deltagere, og der er\nefterfølgende modtaget flere positive tilbagemeldinger på aftenens indhold.\nDa programmet viste sig at være for omfattende, blev det ikke muligt at gennemføre\noplægget om GDPR og ophavsret som planlagt. Emnet udsættes derfor til et kommende\narrangement i 2027."
     }
    ],
    "bilag": []
@@ -13704,15 +13792,19 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Gå-hjem-møde om forsikringer i foreninger den 19. januar 2027",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "På baggrund af interesse fra flere foreninger foreslås det at afholde et gå-hjem-møde om\nforsikringer i foreninger.\nBorgmester Jørgen Nielsen har indvilliget i at holde et oplæg om forsikringer med relevans for\nforeninger tirsdag den 19. januar 2027 kl.17-18.\nFolkeoplysningsudvalget bedes beslutter, om der kan arbejdes videre med forberedelserne af\nmødet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Folkeoplysningsudvalget bakker op om afholdelsen af gå-hjem-mødet om forsikringer.\nForvaltningen kan derfor arbejde videre med planlægningen og udsende invitationer til\narrangementet."
     }
    ],
    "bilag": []
@@ -13722,15 +13814,19 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Tilpasning af retningslinjer for Kursuspuljen",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Retningslinjerne for kursuspuljen skal opdateres, så de er svarende til den egentlige\nansøgningsprocedure. Opdateringen indbefatter ikke ændringer i selve kriterierne for at\nmodtage tilskud, men omfatter alene ansøgningsproceduren og formuleringer.\nBåde de nuværende retningslinjer samt den opdateret version er vedlagt som bilag.\nFolkeoplysningsudvalget bedes tage stilling til, om de opdaterede retningslinjer for\nkursuspuljen kan godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tilpasningen af retningslinjerne for kursuspuljen godkendes."
     }
    ],
    "bilag": []
@@ -13740,10 +13836,10 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Ansøgninger til Kursuspuljen 4. kvartal 2026",
    "afsnit": [
     {
@@ -13753,6 +13849,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der er indgået ansøgninger fra to foreninger om tilskud fra kursuspuljen i 4. kvartal 2026.\n\nAnsøger og beløb:\nKong Humble Spejderne søger tilskud på 750,00 kr.\nLangelands Body- og Motion søger tilskud på 1.200,00 kr.\n\nDer er i alt i 4. kvartal ansøgt om tilskud på 1.950,00 kr.\n\nKong Humble Spejderne søger om tilskud på 750,00 kr. til et lederkursus (LK2) for én person.\nKurset er udbudt af Det Danske Spejderkorps. Kurset skal bidrage til at dygtiggøre\nspejderlederen både i sit arbejde med børnene og de frivillige spejderledere i gruppen. Kurset\ner en del af et længere kursusforløb og kursisten har bestået LK1.\nDer er ikke søgt andre fonde.\n\nLangelands Body- og Motion søger om tilskud på 1.200,00 kr. til et kursus for både medlemmer\nog frivillige instruktører i foreningen. Kurset er er udbudt af DGI. Kurset skal bidrage til at\nintroducere seniorer og instruktører for tung styrketræning til seniorer. Der er tilmeldt 23\ndeltagere eksklusiv de frivillige instruktører.\nDer er ikke søgt andre fonde.\nFolkeoplysningsudvalget bedes beslutte, om ansøgningerne skal imødekommes, og i givet fald\nmed hvilket beløb."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kong Humble Spejdernes ansøgning på 750,00 kr. imødekommes med det fulde beløb.\nLangelands Body- og Motions ansøgning på 1.200,00 kr. imødekommes med det fulde\nbeløb."
     }
    ],
    "bilag": []
@@ -13762,10 +13862,10 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Ansøgninger til Basispuljen 4. kvartal 2026",
    "afsnit": [
     {
@@ -13775,6 +13875,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der er indgået ansøgninger fra to foreninger om tilskud fra Basispuljen i 4. kvartal 2026.\n\nAnsøger og beløb:\nRudkøbing Boldklub søger om tilskud på 7.750,00 kr.\nRudkøbing Badmintonklub søger om tilskud på 4.353,00 kr.\n\nDer er i alt i 4. kvartal ansøgt om tilskud på 12.103,00 kr.\n\nRudkøbing Boldklub søger om tilskud på 7.750,00 kr. til 20 nye fodbolde i str. 5. Boldene er til\nklubbens U15 drenge samt deres to seniorhold. Boldene skal bidrage til at holde kontingentet\nnede samt tiltrække og fastholde både spillere og trænere.\nDer er ikke søgt andre fonde.\n\nRudkøbing Badmintonklub søger om tilskud på 4.353,00 kr. til et nyt bordtennisbord samt\nforskelligt bordtennisudstyr (net, bat, bolde og opsamlere). Siden BAT60+ blev etableret i\nforeningen er interessen steget. Der er nu til hver træning 30+ spillere. Derfor har klubben\ninvesteret i et nyt bord. Et nyt bord og udstyr gør at endnu flere kan deltage i fællesskabet.\nDer er ikke søgt andre fonde.\n\nFolkeoplysningsudvalget bedes beslutte, om ansøgningerne skal imødekommes, og i givet fald\nmed hvilket beløb."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Rudkøbing Boldklubs ansøgning på 7.750,00 kr. imødekommes med 5.813,00 kr.\nsvarende til 75%.\nRudkøbing Badmintonklubs ansøgning på 4.353,00 kr. imødekommes med 3594,00 kr.\nsvarende til udgifterne til bordtennisbord, net og boldopsamlere."
     }
    ],
    "bilag": []
@@ -13784,15 +13888,19 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Orienteringssager",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der afholdes tilflyttermøde torsdag den 19. november – Hvor mange deltager?\nStatus på fejring af frivillige\nTilsyn 2026\nStatus på afregning af undervisningstilskud, medlemstilskud og lokaletilskud 2025."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Forvaltningen følger op på regler vedr. uanmeldt tilsyn i private lokaler.\nDe øvrige punkter tages til efterretning."
     }
    ],
    "bilag": []
@@ -13802,15 +13910,15 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Eventuelt",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Fraværende: Heidi Scherning\n\nEventuelt\nSagen afgøres i:\nFolkeoplysningsudvalget"
+     "titel": "Beslutning",
+     "tekst": "Der blev gjort opmærksom på, at de kommende skemaer til seniorlokaletilskudsordningen\nbør udformes, så de gør det enkelt for foreningerne at dokumentere deltagernes alder og\naktivitetsniveau, som skal indberettes i forbindelse med ordningen.\nDer blev gjort opmærksom på, at AOF ønsker at afholde et gratis kursus på Langeland\nom anvendelsen af AI i foreningslivet. Kurset udbydes gennem FVU Digital og\nforudsætter 12-14 deltagere for at kunne gennemføres. Fritidsforvaltningen hjælper med\nat formidler tilbuddet til de folkeoplysende foreninger."
     }
    ],
    "bilag": []
@@ -13820,15 +13928,15 @@
    "kommune": "Langeland",
    "udvalg": "Folkeoplysningsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=95c6fa64-f8b2-4442-bbd5-850d7a4696dd",
-   "hentet": "2026-11-11T21:42:29.115Z",
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=b4130054-3b12-40f2-b184-321b83ba07ac",
+   "hentet": "2026-11-19T13:30:29.192Z",
    "titel": "Underskiftsside",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Fraværende: Heidi Scherning\n\nUnderskiftsside\nSagen afgøres i:\nFolkeoplysningsudvalget"
+     "tekst": "Afbud: Heidi Scherning, Kim Phillip Brammer Welcher\n\nUnderskiftsside\nSagen afgøres i:\nFolkeoplysningsudvalget"
     }
    ],
    "bilag": []
@@ -13936,12 +14044,1272 @@
     }
    ],
    "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-1": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-1",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nTeknik- og Havneudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-2": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-2",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Ansøgning om dispensation fra lokalplan 3.08 om bebyggelsesprocent",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der er ansøgt om byggetilladelse til opførelse af et anneks på 15 m² i sommerhusområde på\nØsterskovvej 52B, 5932 Humble. Projektet medfører, at bebyggelsesprocenten for\nejendommen i delområde 1 i lokalplan 3.08 øges til ca. 14,3 % og dermed overskrider\nlokalplanens maksimale bebyggelsesprocent på 10 %. Bebyggelsesprocenten er fortsat under\nde generelle grænser i bygningsreglementet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ejendommen Østerskovvej 52B er omfattet af lokalplan 3.08, delområde 1, hvor\nbebyggelsesprocenten ikke må overstige 10 %. Det ansøgte anneks på 15 m² medfører, at\nbebyggelsesprocenten for ejendommen vil udgøre ca. 14,3 %, hvilket kræver dispensation fra\nlokalplanen.\nLokalplan 3.08 er udarbejdet med små grundstørrelser i delområde 1. Planlægningen\nforudsatte, at der skulle udlægges et fællesareal til ophold m.v., som skulle kompensere for de\nsmå grundstørrelser og understøtte den samlede bebyggelsesstruktur. Dette fællesareal er\nimidlertid ved en fejl ikke udpeget i den endelige lokalplan, hvilket medfører, at den fastsatte\nbebyggelsesprocent på 10 % i praksis virker mere restriktiv end tilsigtet.\nDen ansøgte bebyggelse holder sig inden for de generelle bebyggelsesregulerende rammer i\nbygningsreglementet for sommerhuse, idet bebyggelsesprocenten fortsat er under 15 %.\nDer er foretaget en naboorientering om dispensationen, og der er ikke kommet nogen\nkommentarer.\nTegningsmateriale af det ansøgte byggeri er vedlagt som bilag.\n\nAfledte konsekvenser\nEn dispensation vil konkret indebære en lempelse af bebyggelsesprocenten for ejendommen\nog kan danne grundlag for en ensartet praksis ved fremtidige, tilsvarende ansøgninger fra\nnaboejendomme inden for samme lokalplanområde. Det vil dog fortsat bero på en konkret\nvurdering af den enkelte ansøgning.\nDen ansøgte bebyggelsesprocent på ca. 14,3 % ligger fortsat under BR18's grænse for\nsommerhuse, hvorfor projektet vurderes at være foreneligt med byggelovgivningen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at Teknik- og Havneudvalget:\nMeddeler dispensation efter planlovens § 19, stk. 1, fra lokalplan 3.08’s\nbestemmelse om maksimal bebyggelsesprocent på 10 % for delområde 1, således\nat der kan opføres et anneks på 15 m² på Østerskovvej 52B, hvorved\nbebyggelsesprocenten bliver ca. 14,3 %"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-3": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-3",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Ansøgning om dispensation fra lokalplan 125, Ændring i facadeudtryk",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Langeland Kommune har modtaget en ansøgning om dispensation fra lokalplan nr. 125 i\nforbindelse med at udføre en ny facade på baghus mod vest, på adressen Slotsgade 15, 5953\nTranekær\nTeknik- og Havneudvalget skal træffe beslutning om, hvorvidt der kan meddeles dispensation\nfra lokalplan Tranekær nr. 125 til det ansøgte. Jf. bilag 03_Ansøgningsmateriale."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Beslutningsgrundlag\nEjendommen er omfattet af Lokalplan nr. 125 – Tranekær, som blandt andet har til formål at\nsikre og bevare Tranekærs særlige kulturmiljøer og at bevare byens huse med de oprindelige\narkitektoniske og håndværksmæssige særpræg, herunder de værdifulde forskelligheder.\nEjendommen er i lokalplanen udpeget med en bevaringsværdi 3 og bygningskategori 2. Huset\ner opført i nyklassicistisk stil.\nJf. Lokalplan nr. 125 – Tranekær:\n§ 7.14 Udvendige bygningsændringer kan udføres som en tilbageføring af en bygning eller\nbygningsdel til et oprindeligt udseende eller i forhold til den til lokalplanen hørende vejledning,\nherunder:\nÆndring af facadeudtryk, ornamentering / detaljering eller farve.\nÆndring af tagform, tagfod eller tagmateriale.\nÆndring af døre, porte og vinduer, herunder ud- formning, materialitet og farve.\nÆndring af murhuller.\nÆndring eller reetablering af skorsten.\n\n§ 7.15 Vinduer skal udformes med oprindelig proportionering og opdeling, males med\ndækkende maling eller dækkende træbeskyttelse og etableres som et af følgende:\n1) Trævinduer med enkeltlagsglas og kitfals eller tilsvarende håndværks- og udseendemæssigt\nmateriale.\n2) Energiruder i træ (termoruder) med maksimalt to lag glas, tynde profiler på karm, ramme og\nsprosser samt afstandsliste udført som ”varm kant” i en diskret farve, der tilpasses vinduets\nøvrige farveholdning.\nAlle nye vinduer skal desuden etableres i henhold til den til lokalplanen hørende vejledning.\n\n§ 7.21 Der kan etableres ny havedør fra bygningernes gård-/haveside, såfremt det sker i\nharmoni med bygningen som helhed og ikke bryder med vinduernes og facadens rytme. Døren\n\nskal tilpasses husets arkitektur og materialitet og udformes i forhold til den til lokalplanen\nhørende vejledning.\n\nUddrag fra lokalplans vejledning\nVinduer: Ved at ændre vinduernes placering og udformning kan facadens arkitektoniske\nudtryk og helhed ændres. Er vinduerne placeret i en særlig takt? Er der symmetri? Hvordan er\nforholdet mellem den åbne og den lukkede del af facaden? Facadens udtryk ændres desuden\nved ændring af vinduernes størrelse, vinduernes sprosseinddeling, sprossernes størrelse,\nvinduets materialitet, mv.\nI tilfælde, hvor der alligevel ønskes energivinduer fremfor enkeltlagsvinduer, er det vigtigt, at\ndisse dimensioneres og profileres så lig originalvinduet som muligt. Det vil sige, at vinduet skal\nudføres i træ, at både karm, rammer, poster og sprosser skal fremstå slanke og diskrete og\nuden store forstyrrende elementer som aluprofiler og -drypnæser. Vinduets sprosser skal være\ngennemgående, hvorfor der ikke må anvendes vinduer, hvor sprosserne fremstår som\npålimede elementer, såkaldte “snydesprosser”. Vinduet skal i sin helhed tilstræbe et enkelt og\nspinkelt udtryk, hvorfor der ikke må anvendes energivinduer med mere end to lag glas.\nAnvendes vinduer med tre lag glas opleves afstandslisterne mellem glasruderne store og\ndominerende sammenlignet med originalvinduerne. Yderligere skal afstandslisten udføres som\nsåkaldt “varm kant”, hvilket betyder, at den i stedet for at være af aluminium er udført i et\nmindre varmeledende materiale såsom kulfiber. Dette materiale kan i farven tilpasses vinduets\nøvrige farvesætning, så man undgår den visuelt dominerende, og ofte lysreflekterende,\naluminiumskantliste.\n\nBYGNINGSTYPER NYKLASSICISME - DØRE OG VINDUER\nDen mest anvendte vinduestype er dannebrogsvinduet; Vinduet ses både som det klassisk\nfirerammede vindue og som det bredere, seksrammede vindue. Yderligere kan de nedre\nrammer være opdelt af en horisontal sprosse, der opdeler rammen i to ruder. Vinduerne er\ngerne trukket en anelse tilbage i facaden, hvorfor vinduespartierne nedadtil afsluttes\nmed en sålbænk eller en skråt affaset murkant.\nEventuelle nye havedøre skal være af træ og glas i et rudeformat, der er afstemt de omgivende\nvinduer. Havedøren skal placeres således, at facadens symmetri og rytme bevares.\n\njf. bilag 05_Lokalplan 125 Tranekær\nLink til lokalplan 125: https://dokument.plandata.dk/20_3807359_1522170950933.pdf\n\nAnsøger ønsker: Renovering og ændring af facaden i baghus mod vest, ud mod\nterrassen/haven, med henblik på ændring af mur & dørhullers størrelse og placering samt\nisætning af nye døre og vinduer.\n\nAnsøgers begrundelse\n\njf. bilag 03_Ansøgningsmateriale\n\nAdministrationens bemærkninger\nBygningen er et af tre på stribe, der er tegnet af arkitekt Martin Nyrop (Københavns Rådhus),\nsom blev engageret til opgaven af Grev Christian J.F. Ahlefeldt-Laurvig (Gamle Greven).\nBygningen er oprindelig opført med politikontor i den ene ende og embedsbolig i den anden.\nBygningen bør fortsat behandles som en helhed. Vinduerne bør fremstå med opdeling i de\nnedre rammer.\n\nDer er valgt en vinduestype, (Bondehusvindue) med termoglas, hvilket stilmæssigt afviger fra\nden oprindelige vinduestype som er dannebrogsvinduer. Der nævnes ikke hvor mange lag glas\nder indgår i termoruden, hvilket er afgørende for anvendelsen af termoglas. Ligeledes om det\ner med varm kant eller ej, sprosserne nævnes som værende 25 mm, men ikke om de er\ngennemgående eller ej. Valget af vinduestype sammenholdt med oplysninger om de øvrige\ndetaljer ved vinduet vurderes derfor, at valget af vinduer afviger væsentligt fra lokalplan 125\nbestemmelse §7.15 samt den tilhørende vejledning til lokalplanen s. 152 – 169.\n\nAnsøger ønsker at etablere to havedøre i baghuset og én i hovedhuset.\nDet er forvaltningens vurdering, på baggrund af det fremsendte tegningsmateriale, jf. bilag\n02_Ny facade mod haven, at de valgte dørtyper med glaspartier ikke harmonerer med\nejendommens øvrige vinduer. Der er i vurderingen lagt særlig vægt på dørenes\nsprosseinddeling og antallet af ruder. Ejendommens eksisterende vinduer er udført som\ntraditionelle dannebrogsvinduer, dette arkitektoniske udtryk skal gentages i havedørene i såvel\nhovedhuset som baghuset. De ansøgte døre er således ikke i overensstemmelse med\nlokalplanens retningslinjer, jf. bilag 05_Lokalplan 125 for Tranekær, § 7.21 samt den tilhørende\nvejledning til lokalplanen, s. 169.\n\nDet er forvaltningens vurdering på baggrund af det fremsendte tegningsmateriale, jf. bilag\n02_Ny facade mod haven, at facadens rytme og harmoni ikke respekteres. Der er i vurderingen\nlagt særlig vægt på, at der ikke sikres en ensartet afstand og takt mellem døre og vinduer,\nhvilket ellers er et gennemgående træk ved ejendommens eksisterende facadeelementer.\nProjektet strider derved imod jf. bilag 05_Lokalplan 125 for Tranekær § 7.21 og s. 84, samt den\ntilhørende vejledning til lokalplanen, s. 168, hvor det fremgår, at der for nyklassicistiske\nbygninger tilstræbes en stram og monumental arkitektur med rene linjer.\n\nAfledte konsekvenser\nEn dispensation vil efter forvaltningens vurdering skabe en uhensigtsmæssig\npræcedensvirkning for den fremtidige administration af lokalplanen i lignende sager. Det vil\nherunder kunne skabe en berettiget forventning hos andre borgere om at opnå tilsvarende\ndispensationer til alternative facadeløsninger, hvilket vil udvande lokalplanens formål.\nEt afslag vil fastholde lokalplanens bevaringsniveau samt de planlægningsmæssige hensyn\nbag den samlede, bevarende lokalplan 125 for Tranekær."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller til Teknik- og Havneudvalget:\nAt der meddeles afslag til det ansøgte"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-4": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-4",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Ansøgning om dispensation fra lokalplan 126 - Havn- og Fritidsområde i Bagenkop",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Teknik og Miljø har modtaget en ansøgning om dispensation til ekstra højde på springtårn på\nadressen Færgevej 24, 5935 Bagenkop. Se bilag 01_Tegningsmateriale.\nTeknik- og Havneudvalget skal træffe beslutning om, hvorvidt der kan meddeles dispensation\nfra lokalplan 126 til det ansøgte."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Beslutningsgrundlag\nEjendommen er omfattet af lokalplan 126 - Havn- og Fritidsområde i Bagenkop, som blandt\nandet har til formål at sikre etablering af lystbådehavn og etablering af projektet ”SHORES\nLangeland”, som tager udgangspunkt i oplevelser med vand.\nSHORES Langeland skal blandt andet munde ud i etableringen af et nyt kraftcenter for\nvandaktivitet i det gamle færgeleje i Bagenkop Havn.\nSHORES Langeland har som overordnet målsætning at aktivere Langelands stedbundne\npotentiale som Øhavets hotspot for vandaktiviteter.\n\nLink til lokalplan 126 - Havn- og Fritidsområde i Bagenkop:\nhttps://dokument.plandata.dk/20_10617365_1623220878842.pdf\n\nAnsøger ønsker følgende:\nEtablering af ekstra højde på det ansøgte udspringstårn\n\nAnsøgers begrundelse\nJf. lokalplan nr. 126, §6.8 og §6.9, er den maksimale byggehøjde i delområde 2.1 fastsat til 17\nmeter, målt fra kajkanten. Da en landmåler har fastlagt kajkantens kote til 1,89 m, udgør den\nmaksimalt tilladte byggehøjde kote 18,89 m.\nDet permanente udspringstårn opføres med den øverste platform i kote 17,0 m og et gelænder\nop til kote 18,6 m. Tårnet overholder dermed i sin daglige form lokalplanens bestemmelser.\nBygherren, Langeland Kommune, ønsker at der kan afholdes udspringskonkurrencer. Dette\nforudsætter, at der i disse perioder kan monteres en midlertidig platform i kote 20,0 m med et\nrækværk på ca. 1,5 m.\nDen midlertidige platform forventes kun at være i brug ca. to gange årligt med en varighed af\nca. én uge pr. gang.\n\nDer ansøges hermed om en tilbagevendende dispensation fra lokalplanens maksimale\nbyggehøjde, kote 18,89 m, til opsætning af en midlertidig platform ca. to gange årligt. I disse\nafgrænsede perioder vil byggeriet overstige den tilladte kote på følgende måde:\nSelve platformen vil overskride den tilladte højde med 1,11 m.\nRækværket vil overskride den tilladte højde med 2,61 m.\n\nAdministrationens bemærkninger\nDen påtænkte overbygning, vurderes ikke at give skygge- og indkigsgener ind imod\nomkringliggende bygninger, idet den nærmeste bolig er cirka 85 meter og 65 meter til\nbygninger, der anvendes til erhverv og fritidsformål.\nDer er fremkommet følgende bemærkninger i forbindelse med nabohøringen:\nDer er ikke udført nabohøring, da det vurderes, at den påtænkte overbygning er af underordnet\nkarakter, og ikke vil give anledning til ekstra støj- og indbliksgener i den begrænsede periode,\nder søges dispensation til.\n\nAfledte konsekvenser\nDet vurderes, at ændringen i forhold til lokalplanen ikke vil være skæmmende og ikke påfører\nomkringliggende naboer på væsentlige gener, ud over det der må forventes, når man bor i et\naktivt havnemiljø\nTilsvarende projekter må forvente at kunne opnå lignende dispensationer."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller til Teknik- og Havneudvalget:\nAt der meddeles dispensation til ekstra højde på springtårn med følgende vilkår:\n? At overbygningen opføres som ansøgt og kan opsættes og benyttes i 2 x en\nuge om året som ansøgt, hvor der hertil lægges en uge i forhold til op- og\nnedtagning til hvert af de to arrangementer"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-5": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-5",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Forslag om gul kantstenslinje som vejafmærkning for parkeringsforbud",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Mulighed for at anvende vejafmærkning med gul kantstenslinje på udvalgte steder i bymiljøet til\nmarkering af parkeringsforbud i stedet for skilte."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Afmærkning med gul kantstenslinje som markering af parkeringsforbud har ikke været anvendt\ntidligere i Langeland Kommune. Administrationen ønsker at kunne anvende denne afmærkning\npå udvalgte kortere vejafsnit i stedet for opsætning af parkeringsforbudsskilte. Det vil bidrage til\nat minimere opsætningen af skilte i bymiljøet.\nAdministrationen har drøftet afmærkningen med Fyns Politi, vejteknisk kontor, og det vurderes,\nat markering af gul kantstenslinje kan anvendes på nøje udvalgte steder.\nBaggrund: Administrationen har henvendelser fra borgere i Rudkøbing by, som har\ntilbagetrukket beliggende ejendomme ved offentlig vej, som oplever at biler parkerer lige foran\nderes overkørsler. Det medfører både irritation over, at de ofte ikke selv kan køre ind og ud og\nbekymring for nødstilfælde, hvis en blokeret indkørsel forhindrer at ambulance eller beredskab\nkan køre op til huset.\nFærdselsloven udtrykker klart, at parkering ud for overkørsler ikke er tilladt. Men der kan være\nbehov for at tydeliggøre parkeringsforbuddet på visse vejafsnit i byen. Det vurderes, at\nafmærkning med gul kantstenslinje kan være en løsning i stedet for skilte.\n\nAfledte konsekvenser\nAfmærkningen med gul kantstenslinje udføres indenfor driftsafdelingens budget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller til Teknik- og Havneudvalget:\nAt afmærkning med gul kantstenslinje på udvalgte steder i bymiljøet godkendes"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-6": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-6",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Snerydning på private fællesvej i bl.a. sommerhusområder",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Hjemlerne i privatvejsloven til vintervedligeholdelse er udtrykkeligt “for grundejernes regning”.\nKommunalbestyrelsen skal derfor træffe beslutning om, hvorvidt Langeland Kommune skal\npålægge grundejere på private fællesveje selv at rydde for sne- og glatførebekæmpe, eller\nkommunen skal påtage sig grundejerforpligtigelsen på private fællesveje med plejekrævende\nhelårsbeboere mod betaling."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Tilsynsmyndigheden har i en administrativ afgørelse om en anden kommunes beslutning om\nvintervedligeholdelse af visse private fællesveje uden opkrævning af betaling bl.a. udtalt:\nAt kommuner ikke lovligt kan påtage sig denne grundejerforpligtelse for en afgrænset\nkreds af borgere uden at opkræve betaling herfor\nAt lovgivningen om private fællesveje og vintervedligeholdelse giver kommunen adgang\ntil at overtage grundejerforpligtelsen mod betaling\n\nLangeland Kommune har dermed ikke lovhjemmel til kommunens hidtidige praksis med at\nudføre vintervedligeholdelse (snerydning, glatførebekæmpelse, renholdelse) på private\nfællesveje i bl.a. sommerhusområder, hvor der bor plejekrævende borgere, uden at sende\nregningen til de vedligeholdelsespligtige grundejere.\nKommunalbestyrelsen skal derfor træffe beslutning om kommunen mod betaling fortsat skal\nudføre sne- og glatførebekæmpelse på private fællesveje, hvor der bor plejekrævende\nhelårsbeboere eller administrationen skal træffe afgørelser og pålægge grundejere på private\nfællesveje selv eller ved privataftale med en entreprenør at udføre sne- og\nglatførebekæmpelse.\nAdministrationen gør opmærksom på, at dette ikke berører akutte situationer, hvor\nBeredskabet – brand, redning, politi, vagtcentral – har direkte kontakt med kommunens\ndriftsafdeling for snerydning.\n\nAfledte konsekvenser\nI vinteren 2025/26 var der meget sne og kommunens udgift til snerydning på private fællesveje\nmed plejekrævende helårsbeboere var på ca. 250.000 kr. Kommunen anvender eksterne\nentreprenører til udførelse af opgaven, da opgaven kræver mandskab til rådighed hele døgnet.\nRessourceforbruget på vintertjeneste varierer selvfølgelig meget fra år til år afhængig af vejrlig."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller at Teknik- og Havneudvalget anbefaler ét af følgende til\nØkonomiudvalg og Kommunalbestyrelsen:\n\nAt kommunens driftsafdeling fortsat skal varetage snerydning på private\nfællesveje i bl.a. sommerhusområder, hvor der bor plejekrævende helårsbeboere\nfor grundejernes regning\neller\nAt snerydning på private fællesveje i bl.a. sommerhusområder, hvor der bor\nplejekrævende helårsbeboere, pålægges udført af grundejerne selv eventuelt ved\nprivataftale med entreprenør for grundejernes regning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-7": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-7",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Langeland Kommunes Klimaplan - status",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsen vedtog Langeland Kommunes Klimaplan og fik den certificeret af C40\nog CONCITO i oktober 2022.\nDenne sagsfremstilling fungerer som den årlige orientering om status for klimaplanens\nhandlinger. Mange af de 65 definerede handlinger er i gang, flere er afsluttet, og nogle\nigangsættes først senere. Indfrielse af mål for mange af handlingerne vurderes realistiske,\nmens andre kræver politisk prioritering. I foråret 2027 fremlægges et dagsordenspunkt\nvedrørende proces for recertificering af klimaplanen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Langeland Kommunes Klimaplan er udarbejdet i 2021-2022 og godkendt af\nKommunalbestyrelsen den 10. oktober 2022. Klimaplanen blev efterfølgende certificeret af C40\nog CONCITO den 24. oktober 2022.\nI Klimaplanen er der besluttet nogle mål og beskrevet et antal handlinger for, hvordan\nkommunen vil arbejde med at opfylde disse mål. I handlingskataloget er de 65 handlinger\nopdelt på nogle hovedområder samt den forventede effekt, og tidshorisonten er angivet for\nhver handling.\nI Klimaplanen er det defineret, at Kommunalbestyrelsen årligt orienteres om status for, hvordan\nhandlingerne i Klimaplanen skrider frem, samt at behov for justeringer anbefales eventuelt\nallerede inden for det pågældende år.\nDe 65 definerede handlinger er opdelt i fem hovedområder: Energi, Transport, Landbrug og\narealanvendelse, Bæredygtig udvikling og Klimatilpasning.\nHer er nogle udvalgte eksempler: (se alle i bilaget).\n\nEnergi:\nEt af hovedformålene er at reducere energiforbrug, men også omlægge til fossilfri\nenergiforsyning og etablere mere vedvarende energi - for derigennem at reducere udledningen\naf CO2.\nIngen kommunale bygninger benytter fossilbaseret varme. Energiforbruget i den\noffentlige sektor er faldet med 9% fra 2022 til 2024 (tal fra 2025 er endnu ikke\ntilgængelige). I kommunens egne bygninger er en stor del af prioriterede\nenergibesparende tiltag udført. Ydermere er der indgået aftale med Odense Kommune\nom at benytte overkapacitet på deres servere, så der fremadrettet spares energi på\nnedkøling af serverrum.\nElforbruget til gadelys på Langeland er siden 2020 reduceret med 67% i 2025. Nettabet i\nelforsyningen er reduceret med 5 % fra 2022 til 2025.\n\nAntallet af oliefyr på hele Langeland er siden 2019 (ved baseline) faldet med 1141 stk.\nsvarende til 47% (målsætningen er en reduktion på 50 % i 2025). Tilsvarende er antallet\naf bygninger med varmepumper steget med 1412 stk. Der er sket en stigning på næsten\n10% i antal af bygninger med fjernvarme som opvarmning.\nElproduktionen fra solcelleanlæg er øget med 109 % (målet var 100 % i 2030).\nØ/strøm afsætter lokalproduceret strøm bl.a. ved salg/udlejning af ladebokse og er\nproduktions-elleverandør og kan afregne solcelleproduktion.\nTransport:\nAmbitionen er at reducere CO2-udledning fra transportsektoren, bl.a. ved mindre fossilbaseret\ntransport, men også ved en generel reduktion, bl.a. af kørte km.\nAlle Langelands regional- og lokalbusser vil fra januar 2027 blive udskiftet med nye\nelbusser.\nAntallet af elbiler (el og plugin) på Langeland er i september 2026 nu 1110 køretøjer,\nsvarende til 14% af alle person- og varebiler på Langeland. (Målsætningen er at 25 % af\nalle person- og varebiler på Langeland er fossilfrie i 2030).\nI den kommunale bilflåde udgør elbiler ca. 3 %. (Målsætningen var 50 % i 2025). I 2027\nskal en ny flådestyringsansvarlig fremlægge beslutningsoplæg om, hvordan kommunens\nfossile biler kan erstattes af elbiler.\nVisitLangeland har sørget for opsætning elcykelladestandere rundt på Langeland. Der er\ni 2026 opsat skilte, som guider cyklister igennem 305 km cykelvej på Langeland.\nVej, Park og Ejendomme udskifter løbende brændstofdrevent håndværktøj til el. Der er\nkun få maskiner, der stadig er benzindrevne.\n\nLandbrug og Arealanvendelse:\nCa. 2/3 af Langelands CO2 udledning kommer fra landbruget, men det er samtidig et område\nkommunen ikke har nogen reel indflydelse på.\n\nRegeringen og aftalepartierne har indgået en Grøn Trepartsaftale, der skal reducere\nlandbrugets kvælstofudledning, øge skovrejsningen og pålægge landbruget en CO2afgift. Endvidere er der vedtaget andre love, der kan påvirke klimabelastningen fra\nlandbruget – fx gødskningslov og nye skatteregler, så det gøres attraktivt at omlægge til\nnatur eller skov.\nIfølge Danmarks Statistik er der i perioden 2018 til 2024 kommet 130 ha mere skov på\nLangeland. Målet var mere end 90 ha inden 2025 og samlet 500 ha inden 2050.\nDe kommunalt ejede arealer er udtaget af omdrift, og flere arealer er udlagt til\nbiodiversitet, mens slåningsfrekvensen for andre arealer er begrænset.\n\nBæredygtig udvikling:\nOmfatter handlinger i forbindelse med informationskampagner, indkøb,\nresurseforbrug/affaldshåndtering samt netværk og partnerskaber.\nDer arbejdes løbende i driften med reducering af forbrug i kommunen bl.a. med\nkonvertering af produkter til grønnere alternativer, reduktion af kørsel m.m.\nLangeland Forsyning har oprettet en bygning til byggematerialer til genanvendelse på\nGenbrugspladsen i Rudkøbing. Denne ordning er meget benyttet.\nVisitLangeland arbejder med at udvikle nye former for regenerativ bæredygtig turisme.\nDer er flere partnerskaber – fx Geopark Det sydfynske Øhav, Havhøst med Langeland\nEfterskole og et stenrevsprojekt med Ærø og Svendborg Kommuner.\nLangelands Bibliotek afholder årligt verdensmålsuge.\nLæringsudviklingsafdelingen i Langeland Kommune har i samarbejde med ”Den grønne\nRygrad” udarbejdet en oversigt (plakat) i forhold til grønne bæredygtighedsindsatser på\nLangeland for skolebørnene. I 2027 følge op med workshops.\n\nDer afholdes online webinar om varmepumper.\n\nAfledte konsekvenser\nOpfyldelse af målene i den eksisterende klimaplan er med til at reducere udledningen af CO2 i\nLangeland Kommune."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller til Teknik- og Havneudvalg, Økonomiudvalg og\nKommunalbestyrelsen:\nAt status for Langeland Kommunes Klimaplan tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-8": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-8",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Analyse \"Mellem Land og By\"",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Langeland Kommune har deltaget i projektet Mellem Land og By – Synergier skaber fremtidens\nbymidter. Som led i projektet har Gehl Architects undersøgt borgernes brug af Rudkøbing\nbymidte og byens betydning for resten af Langeland.\nAnalysen viser, at Rudkøbing har en stærk rolle som handels- og serviceby for hele øen. Den\npeger også på nye muligheder for at skabe mere byliv og styrke forbindelsen mellem bymidten\nog havnen.\nUdvalgene orienteres om resultaterne, som skal bruges i det videre udviklingsarbejde."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Projektet Mellem Land og By er ejet af Landdistrikternes Fællesråd og Dagrofa. Det\ngennemføres i et samarbejde med Aalborg Universitet, Center for Landdistriktsforskning og\nGehl Architects samt kommunerne Vesthimmerland Kommune, Morsø Kommune, Thisted\nKommune, Herning Kommune, Tønder Kommune, Langeland Kommune og Vordingborg\nKommune. Projektet er støttet af Realdania, KFI Erhvervsdrivende Fond samt de syv\ndeltagende kommuner.\nAnalysen, der er vedlagt som bilag, bygger på spørgeskemaer, interviews og studier af byrum.\nFor Rudkøbing har 1.443 borgere besvaret spørgeskemaet. Heraf bor 732 i Rudkøbing og 711\ni oplandet.\nRapporten fra september 2026 giver ny viden om borgernes brug af bymidten, byens betydning\nfor resten af Langeland og mulighederne for at styrke bylivet.\nAnalysens vigtigste resultater for Rudkøbing\nRudkøbing er et vigtigt centrum for hele Langeland.\nAnalysen viser, at Rudkøbing har den højeste besøgsfrekvens blandt de syv undersøgte byer.\n96 % af borgerne i Rudkøbing og 69 % af borgerne i oplandet besøger bymidten mindst én\ngang om ugen.\nSamtidig vurderer 80 % af borgerne i Rudkøbing og 41 % af borgerne i oplandet, at bymidten\ner vigtig for deres hverdag. Begge tal er de højeste blandt de syv undersøgte byer.\nRudkøbing har dermed en central rolle for hele øen, især når det gælder handel, service og\nandre daglige ærinder.\nBorgerne vurderer bymidten positivt\n67 % af borgerne i Rudkøbing og 59 % af borgerne i oplandet vurderer bymidtens kvalitet som\nhøj eller meget høj.\nDesuden oplever 40 % af borgerne i oplandet, at Rudkøbing bymidte gør deres lokalområde\nmere attraktivt at bo i.\nAnalysen viser dog, at det sociale liv i oplandet især er knyttet til de lokale byer og\n\nfællesskaber. Kun 20 % af borgerne i oplandet angiver, at de typisk mødes med andre i\nRudkøbing.\nBedre forbindelser kan styrke handelslivet\nGehl peger på, at de centrale dagligvarebutikker er en styrke for Rudkøbing. Der er dog svage\nforbindelser mellem butikkerne, parkeringsområderne og handelsgaden Østergade.\nPassager mangler vedligeholdelse og wayfinding og livet omkring dagligvarebutikkerne bliver\nderfor kun i begrænset grad synligt i handelsgaden.\nAnalysen peger også på, at bedre forbindelser mellem bymidten og havnen kan styrke byen og\nskabe nye muligheder for ophold og aktiviteter.\nDette peges der allerede på i ”Rudkøbing til os alle ~ sammen - Bymidtestrategi” (se vedlagte\nbilag).\nBiblioteket er ligeledes en vigtig hverdagsdestination for særligt oplandet men orienterer sig\nprimært mod parkeringsområdet og er usynlig fra handelsgaden.\nTorvet kan udvikles som samlingssted\nGehl har undersøgt Torvet og peger på muligheder for at gøre det mere attraktivt at opholde\nsig på.\nAnalysen peger på, at kultur, oplevelser og fællesskaber kan give borgerne flere grunde til at\nbesøge bymidten. På tværs af de syv byer savner 20 % af borgerne flere kulturtilbud. Det viser\net potentiale for at styrke bylivet med kultur og aktiviteter.\nFor Rudkøbing peger Gehl på, at Torvet kan få en større rolle som samlingssted. Kultur,\nkreative værksteder og aktiviteter i tomme lokaler kan skabe mere liv i hverdagen. Samtidig\nskal Torvet fortsat kunne bruges til større arrangementer.\nAnalysen anbefaler også mere beplantning, bedre siddepladser, plads til leg og aktiviteter samt\nmere liv i de tomme lokaler på Torvet.\nGehl foreslår også at afprøve mindre biltrafik og parkering på Torvet i en periode for at\nundersøge, om det kan skabe bedre rammer for ophold.\nDet videre arbejde\nAdministrationen vil bruge analysens resultater som et fagligt grundlag for det kommende\narbejde med at udvikle Rudkøbing og styrke samspillet med resten af Langeland.\nResultaterne skal blandt andet bruges til at udpege nye projekter, styrke dialogen med lokale\naktører og søge støtte fra fonde.\nAnalysen giver et fælles grundlag for at arbejde med handel, kultur, byrum og havn, så de\nenkelte indsatser kan støtte hinanden.\n\nAfledte konsekvenser\nOrienteringen har ingen direkte økonomiske konsekvenser. Eventuelle udgifter til nye projekter\nvil blive behandlet særskilt. Eventuelle konkrete projekter vil blive forelagt de relevante politiske\nudvalg, når der er behov for politisk stillingtagen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller til Teknik- og Havneudvalget:\nAt orienteringen om analysens resultater og det videre arbejde tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-9": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-9",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Sygefravær oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Fagudvalgene og Økonomiudvalget orienteres om resultatet af sygefraværet for januar til\noktober 2026."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med henblik på en øget opmærksomhed på sygefravær og et mål om at nedbringe\nsygefraværet sendes månedsrapporterne fast til orientering i Chefforum og derefter til\norientering i fagudvalgene, Økonomiudvalget samt Hovedudvalget. Sidstnævnte orienteres\nkvartalsvis.\nSygefraværet i januar til oktober 2026 var på 7,8 %, hvilket svarer til et fald på 0,4 %-point i\nforhold til samme periode året før, hvor det var på 8,2 %. Det gennemsnitlige sygefravær de\nsidste 12 måneder var 7,9 %.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller:\nAt sygefraværsrapporten tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-10": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-10",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Tilbud på moleanlægsprojekt i Bagenkop Havn",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der er inden for tidsfristen indkommet to tilbud på betonforstøbning af molen i det tidligere\nfærgeleje i Bagenkop Havn, som begge er konditionsmæssige.\nKommunalbestyrelsen skal træffe beslutning om, hvorvidt ét af de indkomne tilbud kan\naccepters og om optagelse af byggekredit med efterfølgende konvertering til lån ved\nKommuneKredit."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunalbestyrelsen besluttede den 6. oktober 2025 at bemyndige Teknik- og Havneudvalget\ntil at vælge mellem bygherrerådgivers forslag til moleprojekt i det tidligere færgeleje i Bagenkop\nHavn.\nTeknik- og Havneudvalget godkendte den 13. april 2026, under forudsætning af\nKommuneKredits godkendelse, at sende Forslag 2 anslået til 4.645.080 kr. bestående af\nbetonforstøbing af hele molen i det tidligere færgeleje i udbud via bygherrerådgiver.\nKommuneKredit har den 8. juni 2026 godkendt, at projektet vil kunne lånefinansieres.\nForslag 2 har således været i udbud. Der er inden for tidsfristen indkommet to tilbud, som\nbegge er konditionsmæssige, men væsentligt dyrere end først anslået af rådgiver.\nKommunalbestyrelsen skal derfor træffe beslutning om, hvorvidt ét af de indkomne tilbud kan\naccepters.\nKommunalbestyrelsen skal endvidere træffe beslutning om optagelse af byggekredit med\nefterfølgende konvertering til lån ved KommuneKredit.\n\nAfledte konsekvenser\nDa de indkomne tilbud er væsentligt dyrere, reduceres råderummet til andre projekter inden for\ndet den samlede anlægspulje til havne på 30 mio. kr. tilsvarende.\nBilligste tilbud på Forslag 2 beløber sig til 6.457.604 kr.\nHertil kommer udgifter til:\nBygherrerådgiver og forundersøgelser på 348.290 kr.\nBygherrerådgiver i anlægsprocessen på 35.000 kr.\nUforudsete omkostninger på 100.000 kr. (ud over de kr. 97.125 kr. som er indbygget i\ntilbuddet)\nDet samlede anlægsbudget vil derfor beløbe sig til 6.941.000 kr."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller at Teknik- og Havneudvalget anbefaler følgende til Økonomiudvalg\n\nog Kommunalbestyrelsen:\nAt det billigste tilbud på 6.457.604 kr. accepteres\nAt der gives en anlægsbevilling på 6.941.000 kr.\nAt anlægsbevillingen på 6.941.000 kr. frigives\nAt anlægsbevillingen finansieres ved optagelse af en byggekredit med\nefterfølgende lånoptagelse hos KommuneKredit"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-11": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-11",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Tilbud på storparcel på Havnegade 120, 5900 Rudkøbing",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der er inden for tidsfristen indkommet ét tilbud på det udbudte areal på Havnegade 120, 5900\nRudkøbing.\nTilbudsprisen er lavere end Kommunalbestyrelsens fastsatte mindstepris på 5,5 mio. kr.\nDet indkomne tilbud er dermed ikke konditionsmæssigt og afvises."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunalbestyrelsen besluttede den 5. oktober 2026 at genudbyde storparcellen på\nHavnegade 120, 5900 Rudkøbing til en mindstepris på 5,5 mio. kr. og med en budfrist den 9.\nnovember 2026.\nStorparcellen på Havnegade 120, 5900 Rudkøbing har således været i udbud med budfrist den\n9. november 2026. Der er inden for tidsfristen indkommet ét tilbud.\nTilbudsprisen er lavere end Kommunalbestyrelsens fastsatte mindstepris på 5,5 mio. kr. og\ndermed ikke konditionsmæssigt.\n\nAfledte konsekvenser\nTilbuddet er på 4.520.000 kr. og dermed lavere end Kommunalbestyrelsens fastsatte\nmindstepris. Kommunalbestyrelsen må ikke godkende tilbud, der ikke er konditionsmæssige."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller at Teknik- og Havneudvalget anbefaler følgende til Økonomiudvalg\nog Kommunalbestyrelsen:\nAt afvisning af det indkomne tilbud på 4.520.000 kr. tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-12": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-12",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Meddelelser",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nTeknik- og Havneudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-13": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-13",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Drøftelse af beddingsanlæg i Bagenkop Havn"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-teknik-og-havneudvalget-14": {
+   "id": "langeland-2026-11-23-teknik-og-havneudvalget-14",
+   "kommune": "Langeland",
+   "udvalg": "Teknik- og Havneudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=d13f69e0-0edb-4730-a829-62275c983bc1",
+   "hentet": "2026-11-19T13:30:00.811Z",
+   "titel": "Godkendelse af beslutningsprotokol - Underskriftsside",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende beslutningsprotokollen.\nBeslutningsprotokollen føres under møderne, og det forudsættes, at beslutningerne afstemmes\nundervejs i mødet - det kan f.eks. ske ved oplæsning af det protokollerede.\nFor at godkende beslutningsprotokollen, skal hvert af de tilstedeværende medlemmer\nunderskrive beslutningsprotokollen ved mødets afslutning. Det sker digitalt ved at anvende\nknappen \"godkendelse\" i First Agenda."
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-1": {
+   "id": "langeland-2026-11-23-seniorraadet-1",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Spørgetid",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nSeniorrådet"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-2": {
+   "id": "langeland-2026-11-23-seniorraadet-2",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Meddelelser fra formanden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ældrerådsmøde med formænd på Fyn\nTemadag: Det nære sundhedsvæsen\nSundhedscafé Bagenkop\nMusik- og Kulturdagen i Bagenkop\nInterview til Langelandsnyt\nFynbus\nMøde med folkepensionister til kaffe og kage\nBorgermøde om lokalplan 152\nDanske Ældreråd: Orientering om Nærsundhedsplan\nMøde med Det Gode Madhus"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-3": {
+   "id": "langeland-2026-11-23-seniorraadet-3",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Meddelelser fra Ældre og Sundhed",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Status på fællesarrangementet Prisuddelinger\nSeniorKlar - Seniorernes Topmøde\nGennemgang af Ældre- og Sundhedsudvalgsdagsorden"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-4": {
+   "id": "langeland-2026-11-23-seniorraadet-4",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Repræsentation og deltagelse i arrangementer, herunder beboer- og pårørenderåd",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Seniorrådet deltager/deltog i følgende arrangementer:\nDato\n\nArrangement\n\n13. januar 2026\n\nSeniorrådsmøde\n\n23. januar 2026\n\nBeboer- og pårørenderåd, Lindelse Plejecenter\n\n29. januar 2026\n\nBeboer- og pårørenderåd, Tullebølle Plejecenter\n\n3. februar 2026\n\nSeniorrådsmøde\n\n5. februar 2026\n\nBeboer- og pårørenderåd, Rudkøbing Plejehjem\n\n12. februar 2026\n\nCafé Sygeplejen\n\n3. marts 2026\n\nSeniorrådsmøde\n\n5. marts 2026\n\nOpstart af nye Ældreråd – Møde i Danske Ældreråd\n\n9. marts 2026\n\nTemadag om forretningsorden og informationsmateriale\n\n24. marts 2026\n\nFormand- og næstformandsmøder\n\n25. marts 2026\n\nBeboer- og pårørenderåd, Humble Plejecenter\n\n9. april 2026\n\nWorkshop Det gode ældreliv - Danahus\n\n13. april 2026\n\nSeniorrådsmøde\n\n15. april 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-5": {
+   "id": "langeland-2026-11-23-seniorraadet-5",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Møde med Ældre- og Sundhedsudvalget",
+   "afsnit": [
+    {
+     "titel": "Behandling i Seniorrådet 3. marts 2026",
+     "tekst": "Cafémøde i sygeplejen med orientering om sygeplejens praksis og fra træningsområdets\ntilbud. Mødet var udmærket. Der planlægges tilsvarende fremadrettet."
+    },
+    {
+     "titel": "Behandling i Seniorrådet 13. april 2026",
+     "tekst": "Seniorrådet aftaler, at følgende medlemmer følger konkrete udvalg: Jens Borges følger\nErhvervs- og Kulturudvalget, Susan og Per følger Socialudvalget, Poul-Arne følger\nTeknik- og Havneudvalget."
+    },
+    {
+     "titel": "Behandling i Seniorrådet 12. maj 2026",
+     "tekst": "Seniorrådet deltager i jubilæum i Tullebølle."
+    },
+    {
+     "titel": "Behandling i Seniorrådet 2. juni 2026",
+     "tekst": "Seniorrådet følger op efter sommeren."
+    },
+    {
+     "titel": "Behandling i Seniorrådet 24. august 2026",
+     "tekst": "Kalender opdateret.\nAfbud under hele mødet:\nJens Borges"
+    },
+    {
+     "titel": "Behandling i Seniorrådet 21. september 2026",
+     "tekst": "Kalender opdateret."
+    },
+    {
+     "titel": "Behandling i Seniorrådet 26. oktober 2026",
+     "tekst": "Kalender opdateret.\n\nMøde med Ældre- og Sundhedsudvalget\nSagen afgøres i:\nSeniorrådet"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Seniorrådet drøfter mulige emner til mødet med Ældre- og Sundhedsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-6": {
+   "id": "langeland-2026-11-23-seniorraadet-6",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Drøftelse af spørgetid",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Seniorrådet drøfter punktet Spørgetid på dagsordenen i henhold til fremtidig placering og\ntidspunkt, så borgere har lettere ved at deltage, selvom de ankommer med offentlig transport.\nSpørgetid skal også ses i sammenhæng med andre kontaktmuligheder til Seniorrådet."
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-7": {
+   "id": "langeland-2026-11-23-seniorraadet-7",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Udsættelse af julefrokost og møde med suppleanter",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Grundet ministermøde udsættes julefrokost og møde med suppleanter til efter nytåret."
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-8": {
+   "id": "langeland-2026-11-23-seniorraadet-8",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Årshjul 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Seniorrådet drøfter udkast til årshjul for 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-9": {
+   "id": "langeland-2026-11-23-seniorraadet-9",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Orienteringspunkter fra udvalg og bruger- og pårørenderåd",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Seniorrådet orienteres om punkter fra udvalg og bruger- og pårørenderåd."
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-10": {
+   "id": "langeland-2026-11-23-seniorraadet-10",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Status på SoMe for Seniorrådet",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der gives en status for Seniorrådets arbejde med SoMe."
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-23-seniorraadet-11": {
+   "id": "langeland-2026-11-23-seniorraadet-11",
+   "kommune": "Langeland",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=5f6facc1-b5f1-463b-8d0d-e0c459432969",
+   "hentet": "2026-11-19T13:30:07.553Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nSeniorrådet"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-1": {
+   "id": "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-1",
+   "kommune": "Langeland",
+   "udvalg": "Fællesskabsrådet - Vejen til nye fællesskaber",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=a6236125-e7b6-44dc-9d3d-c837b67119fd",
+   "hentet": "2026-11-19T13:30:22.497Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-2": {
+   "id": "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-2",
+   "kommune": "Langeland",
+   "udvalg": "Fællesskabsrådet - Vejen til nye fællesskaber",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=a6236125-e7b6-44dc-9d3d-c837b67119fd",
+   "hentet": "2026-11-19T13:30:22.497Z",
+   "titel": "Meddelelser",
+   "afsnit": [],
+   "bilag": []
+  },
+  "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-3": {
+   "id": "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-3",
+   "kommune": "Langeland",
+   "udvalg": "Fællesskabsrådet - Vejen til nye fællesskaber",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=a6236125-e7b6-44dc-9d3d-c837b67119fd",
+   "hentet": "2026-11-19T13:30:22.497Z",
+   "titel": "Opfølgning fra sidste møde",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kontakt til Socialt Udsatte Rådet i Svendborg v. Karina"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-4": {
+   "id": "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-4",
+   "kommune": "Langeland",
+   "udvalg": "Fællesskabsrådet - Vejen til nye fællesskaber",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=a6236125-e7b6-44dc-9d3d-c837b67119fd",
+   "hentet": "2026-11-19T13:30:22.497Z",
+   "titel": "Tandbehandling",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På sidste møde i Fællesskabsrådet var der et ønske om at tandbehandling blev sat på som\npunkt til dagens møde"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-5": {
+   "id": "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-5",
+   "kommune": "Langeland",
+   "udvalg": "Fællesskabsrådet - Vejen til nye fællesskaber",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=a6236125-e7b6-44dc-9d3d-c837b67119fd",
+   "hentet": "2026-11-19T13:30:22.497Z",
+   "titel": "Drøftelse af temaer for årsplan 2027",
+   "afsnit": [],
+   "bilag": []
+  },
+  "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-6": {
+   "id": "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-6",
+   "kommune": "Langeland",
+   "udvalg": "Fællesskabsrådet - Vejen til nye fællesskaber",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=a6236125-e7b6-44dc-9d3d-c837b67119fd",
+   "hentet": "2026-11-19T13:30:22.497Z",
+   "titel": "Forslag til mødedatoer for 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Herudover evt. ekstraordinært møde enten 6. maj eller 20. maj i forbindelse med planlægning\naf Fællesskabsdagen 2027"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-7": {
+   "id": "langeland-2026-11-24-faellesskabsraadet-vejen-til-nye-faellesskaber-7",
+   "kommune": "Langeland",
+   "udvalg": "Fællesskabsrådet - Vejen til nye fællesskaber",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=a6236125-e7b6-44dc-9d3d-c837b67119fd",
+   "hentet": "2026-11-19T13:30:22.497Z",
+   "titel": "Eventuelt",
+   "afsnit": [],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-1": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-1",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Dette punkt omhandler godkendelse af dagsordenen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal under dette punkt godkende dagsordenen.\n\nAfledte konsekvenser\nIngen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller at Erhvervs- og Kulturudvalget\n• Godkender dagsordenen"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-2": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-2",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Månedlig økonomisk status",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Orientering vedrørende den månedlige økonomiske status til politisk behandling."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den månedlige økonomiske status har til formål at give afvigelsesforklaringer i forhold til det\nkorrigerede budget og eventuelle handleplaner, hvis budgetoverholdelse bliver en udfordring.\nDen månedlige økonomiske status fremsendes på baggrund af beslutningen på\nØkonomiudvalgets møde den 24. juni 2025 samt mødet i Socialudvalget, Børne- og\nSkoleudvalget samt Erhvervs- og Kulturudvalget den 3.-5. februar 2026.\nDen månedlige økonomiske status behandles politisk otte gange om året for Ældre- og\nSundhedsudvalget, Socialudvalget, Børne- og Skoleudvalget samt Erhvervs- og Kulturudvalget\n(dog ikke Center for Erhverv, Kultur og Turisme) og suppleret af to årlige budgetopfølgninger\npr. 31. marts og 31. august. Den månedlige økonomiske status behandles ikke politisk i\nfagudvalgene og i Økonomiudvalget, når den ordinære budgetopfølgning behandles.\n\nAfledte konsekvenser\nChefernes afrapporteringen forelægges Direktionen månedligt.\nEfter behandling i Direktionen sættes den månedlige økonomiske status på fagudvalgene i\nÆldre- og Sundhedsudvalget, Socialudvalget, Børne- og Skoleudvalget samt Erhvervs- og\nKulturudvalget. Fagudvalgenes behandling videresendes til Økonomiudvalget til orientering."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller:\nAt orienteringen tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-3": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-3",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Sygefravær oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Fagudvalgene og Økonomiudvalget orienteres om resultatet af sygefraværet for januar til\noktober 2026."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med henblik på en øget opmærksomhed på sygefravær og et mål om at nedbringe\nsygefraværet sendes månedsrapporterne fast til orientering i Chefforum og derefter til\norientering i fagudvalgene, Økonomiudvalget samt Hovedudvalget. Sidstnævnte orienteres\nkvartalsvis.\nSygefraværet i januar til oktober 2026 var på 7,8 %, hvilket svarer til et fald på 0,4 %-point i\nforhold til samme periode året før, hvor det var på 8,2 %. Det gennemsnitlige sygefravær de\nsidste 12 måneder var 7,9 %.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller:\nAt sygefraværsrapporten tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-4": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-4",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Indgåelse af kontrakt på beskæftigelsesområdet",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Godkendelsessag om indgåelse af samarbejdet med Care Link vedrørende samarbejde på\nbeskæftigelsesområdet 2027-2029."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I forlængelse af et politisk ændringsforslag, der blev endeligt godkendt i forbindelse med\nvedtagelsen af Budget 2027 på Kommunalbestyrelsesmødet den 5. oktober 2026 (punkt 221),\nhar der været dialog med Care Link omkring det videre forløb.\nDer er tale om en aftale, der indeholder investeringer fra den Sociale Kapitalfond, der igennem\nCare Link støtter kommuner i deres arbejde med borgerne. Care Link hjælper med ressourcer i\narbejdet med borgerne og får betaling, hvis de lykkes med at få borgerne tilbage i job. Care\nLink honoreres kun, når resultaterne kan måles efter aftale rammer.\nSamarbejdet påbegyndes den 1. februar 2027 og afsluttes i 2029.\nRammerne for samarbejdet er nu endeligt aftalt, og jævnfør kontraktens ordlyd skal denne\ngodkendes endeligt i Økonomiudvalget.\n\nAfledte konsekvenser\nVed godkendelse af kontrakten indledes det formelle arbejde med Care Link med opstart pr. 1.\njanuar 2027. Hermed er forudsætningerne for at lykkes med budgetbesparelserne i 2028-2030\ntil stede. Provenuet nederst er beløbene medtaget i budget 2027-2030:\nBudgetår:\n\nProvenu:\n\n”-” er besparelse"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at Erhvervs- og Kulturudvalget overfor Økonomiudvalget anbefaler:\nAt samarbejdet med Care Link godkendes, og at samarbejdet igangsættes"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-5": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-5",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Orientering om data fra arbejdsmarkedet",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Til den løbende orientering i udvalget præsenteres nøgletal for ledighed og beskæftigelse i\nLangeland Kommune."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Til hvert udvalgsmøde udarbejdes en sagsfremstilling med ledighedsstatistik og udviklingen i\nbeskæftigelsen.\nData opdateres løbende, og trækkes fra Jobindsats.dk, der administreres af Styrelsen for\nArbejdsmarked og Rekruttering. Det skal bemærkes, at der løbende sker efterreguleringer,\nhvormed statistikken månedligt kan ændre sig. Ledighedstallene er på Jobindsats sidst\nopdateret den 18. november 2026, mens data omhandlende antal lønmodtagere efter bopæl\nog arbejdssted sidst er opdateret den 8. november 2026.\n\nLedighed\nVedhæftet fremgår et bilag, som bl.a. illustrerer fuldtidsbruttoledigheden i Langeland Kommune\nopgjort i både antal og procent. Graferne giver et samlet overblik over antallet af ledige i\nkommunen samt udviklingen herom.\nDa tabellen er blevet opdateret månedligt siden 2013, er det muligt at følge udviklingen over tid\nog sammenligne tidligere perioder med den aktuelle måned. Desuden giver opgørelsen\nmulighed for at sammenligne bruttoledigheden i Langeland Kommune med Svendborg\nKommune og hele landet.\nLedighedsstatistikken opdateres månedligt med data.\nFuldtidsbruttoledige kan defineres som:\nAlle ledige i aldersgruppen 16-64-årige som er jobparate modtagere af dagpenge,\nkontanthjælp, uddannelseshjælp og overgangsydelse - uanset om den ledige er i en aktivitet\neller ikke er i en aktivitet.\nStatistikken viser, at bruttoledigheden i oktober 2026 udgjorde 161 fuldtidspersoner. Dette er\ndet højeste antal fuldtidsbruttoledige for en oktober måned siden 2021. Den laveste ledighed\nfor en oktober var i 2023, hvor bruttoledigheden var 147 fuldtidspersoner.\nBruttoledigheden opgjort i procent vises for Langeland Kommune, Svendborg Kommune og for\nhele landet fordelt over de seneste 18 måneder.\nBruttoledigheden var for Langeland Kommune 3,4 % i september 2026. I oktober 2026 er\nbruttoledigheden 3,5 %. I oktober 2026 er bruttoledigheden for Svendborg Kommune 2,7 %,\nmens den for landsgennemsnittet er 2,9 %.\n\nAntal lønmodtagere\n\nBeskæftigelsen på Langeland opgøres som antal lønmodtagere fordelt efter henholdsvis\nbopæl og arbejdssted. Opgørelsen efter bopæl giver et overblik over, hvor mange borgere\nbosat på Langeland der er i beskæftigelse. Opgørelsen efter arbejdssted viser, hvor mange\nlønmodtagere der har deres daglige arbejde i Langeland Kommune.\nOpgørelserne indeholder data fra 2013 og frem til september 2026. Af det vedhæftede bilag\nfremgår en visualisering af udviklingen i antallet af fuldtidspersoner fra 2023 og frem.\nOpgørelsen over lønmodtagere bosat i Langeland Kommune viser, at der i september 2026 var\n3.392 fuldtidspersoner i beskæftigelse. Dette er det laveste antal lønmodtagere for en\nseptember måned siden 2013. I september 2025 var antallet 3.505 fuldtidspersoner, hvilket\nsvarer til et fald på 113 fuldtidspersoner.\nAntallet af lønmodtagere med arbejdssted i Langeland Kommune var i september 2026 opgjort\ntil 2.859 fuldtidspersoner. Dette er ligeledes det laveste niveau for en september måned siden\n2013. I september 2025 var antallet 3.027 fuldtidspersoner. Sammenlignet med 2025 er der\nsåledes 168 fuldtidspersoner færre i 2026.\n\nLøbende opfølgning\nDen 2. juni 2026 blev udvalget præsenteret for statistik omhandlende det langelandske\narbejdsmarked. Præsentationen tog udgangspunkt i data fra den digitale rapport kaldet, Vores\nArbejdsmarked. Rapporten kan anvendes til løbende at følge det langelandske arbejdsmarked,\nog kan findes via linket: www.jobindsats.dk/rapportbank/rapporter/vores-arbejdsmarked/\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller:\nAt udvalget tager orienteringen til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-6": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-6",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Orientering om udtalelse i forbindelse med høringsbrev fra Ankestyrelsens tilsyn",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsen orienteres om, at kommunen har afgivet en udtalelse til Ankestyrelsens\ntilsyn i en sag vedrørende kommunens praksis for bevilling af ydelser til borgere uden\nfolkeregisteradresse i kommunen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ankestyrelsens tilsyn har ved brev af 23. september 2026 (bilag A) anmodet Langeland\nKommune om en udtalelse. Ankestyrelsen bad i den forbindelse kommunen om særligt at\nredegøre for kommunens praksis for bevilling af ydelser, hvor borgeren har dansk cpr.nr., men\nhvor borgeren ikke har en dansk folkeregisteradresse.\nBaggrunden for Ankestyrelsens opmærksomhed på forholdet er en rapport udgivet af\ntænketanken Justitia om retssikkerhed for iniuit/grønlændere i Danmark. Ifølge rapporten (bilag\nB), har Langeland Kommune oplyst til Justitia, at inuit/grønlændere ”har dansk cpr-nr. – hvorfor\nde behandles på lige fod med andre – de skal have en adresse hos os for at få ydelser.”\nUdtalelsen skal bruges til at vurdere, om der er anledning til at rejse en tilsynssag.\nDet er fra kommunens ydelsesafdeling oplyst, at det svar, der er givet i forbindelse med\nJustitias rapport, desværre er baseret på en intern misforståelse. Den til Justitia oplyste praksis\ner derfor ikke, og har ikke tidligere været, i overensstemmelse med den praksis kommunen\nfaktuelt har på området.\nKommunens behandling af ansøgninger om hjælp tager derimod udgangspunkt i, at borgere,\nder har deres bopæl eller sædvanligvis opholder sig i kommunen, også har ret til at få\nbehandlet deres ansøgning om hjælp her i kommunen.\nDette har kommunen derfor også orienteret Ankestyrelsen om i sin udtalelse (bilag C). Ligesom\nder til udtalelsen er medsendt den gældende procedurebeskrivelse (bilag D), der beskriver den\narbejdsgang, der har været og fortsat er i kommunen for ansøgere uden folkeregisteradresse i\nkommunen.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at Erhvervs- og Kulturudvalget overfor Økonomiudvalget og\nKommunalbestyrelsen anbefaler:\nAt udtalelsen til Ankestyrelsens tilsyn tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-7": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-7",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Ledelsesinformation for beskæftigelsesområdet",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der fremlægges ledelsesinformation til orientering."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den 27. oktober 2026 blev der på møde i Erhvervs- og Kulturudvalget (punkt 160) vedtaget\nform og indhold af den ledelsesinformation, som fremadrettet skal give en orientering om\nudviklingen på beskæftigelsesområdet. Ledelsesinformationen forelægges til orientering\njævnfør udvalgets årshjul.\nLedelsesinformationen er opdelt i fire kategorier, som skal være med til at understøtte arbejdet\nmed de nye fokusområder og ændret form for opfølgning, som den nye Beskæftigelsesreform\nhar medført:\n1. Ydelsesgrupper, udvikling og andel af arbejdsstyrken\n2. Ydelsesgrupper, udvikling og budget\n3. Resultatmål fastsat af ressortministeriet\n4. Lovkrav\nVariablerne til ovenstående opdateres den 16. november, hvorfor bilaget til sagen først tilføjes\ndagsordenspunktet denne dag.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at Erhvervs- og Kulturudvalget:\nTager orienteringen til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-8": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-8",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Analyse \"Mellem Land og By\"",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Langeland Kommune har deltaget i projektet Mellem Land og By – Synergier skaber fremtidens\nbymidter. Som led i projektet har Gehl Architects undersøgt borgernes brug af Rudkøbing\nbymidte og byens betydning for resten af Langeland.\nAnalysen viser, at Rudkøbing har en stærk rolle som handels- og serviceby for hele øen. Den\npeger også på nye muligheder for at skabe mere byliv og styrke forbindelsen mellem bymidten\nog havnen.\nUdvalgene orienteres om resultaterne, som skal bruges i det videre udviklingsarbejde."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Projektet Mellem Land og By er ejet af Landdistrikternes Fællesråd og Dagrofa. Det\ngennemføres i et samarbejde med Aalborg Universitet, Center for Landdistriktsforskning og\nGehl Architects samt kommunerne Vesthimmerland Kommune, Morsø Kommune, Thisted\nKommune, Herning Kommune, Tønder Kommune, Langeland Kommune og Vordingborg\nKommune. Projektet er støttet af Realdania, KFI Erhvervsdrivende Fond samt de syv\ndeltagende kommuner.\nAnalysen, der er vedlagt som bilag, bygger på spørgeskemaer, interviews og studier af byrum.\nFor Rudkøbing har 1.443 borgere besvaret spørgeskemaet. Heraf bor 732 i Rudkøbing og 711\ni oplandet.\nRapporten fra september 2026 giver ny viden om borgernes brug af bymidten, byens betydning\nfor resten af Langeland og mulighederne for at styrke bylivet.\nAnalysens vigtigste resultater for Rudkøbing\nRudkøbing er et vigtigt centrum for hele Langeland\nAnalysen viser, at Rudkøbing har den højeste besøgsfrekvens blandt de syv undersøgte byer.\n96 % af borgerne i Rudkøbing og 69 % af borgerne i oplandet besøger bymidten mindst én\ngang om ugen.\nSamtidig vurderer 80 % af borgerne i Rudkøbing og 41 % af borgerne i oplandet, at bymidten\ner vigtig for deres hverdag. Begge tal er de højeste blandt de syv undersøgte byer.\nRudkøbing har dermed en central rolle for hele øen, især når det gælder handel, service og\nandre daglige ærinder.\nBorgerne vurderer bymidten positivt\n67 % af borgerne i Rudkøbing og 59 % af borgerne i oplandet vurderer bymidtens kvalitet som\nhøj eller meget høj.\nDesuden oplever 40 % af borgerne i oplandet, at Rudkøbing bymidte gør deres lokalområde\nmere attraktivt at bo i.\nAnalysen viser dog, at det sociale liv i oplandet især er knyttet til de lokale byer og\n\nfællesskaber. Kun 20 % af borgerne i oplandet angiver, at de typisk mødes med andre i\nRudkøbing.\nBedre forbindelser kan styrke handelslivet\nGehl peger på, at de centrale dagligvarebutikker er en styrke for Rudkøbing. Der er dog svage\nforbindelser mellem butikkerne, parkeringsområderne og handelsgaden Østergade.\nPassager mangler vedligeholdelse og wayfinding og livet omkring dagligvarebutikkerne bliver\nderfor kun i begrænset grad synligt i handelsgaden.\nAnalysen peger også på, at bedre forbindelser mellem bymidten og havnen kan styrke byen og\nskabe nye muligheder for ophold og aktiviteter.\nDette peges der allerede på i ”Rudkøbing til os alle ~ sammen - Bymidtestrategi” (se vedlagte\nbilag).\nBiblioteket er ligeledes en vigtig hverdagsdestination for særligt oplandet, men orienterer sig\nprimært mod parkeringsområdet og er usynlig fra handelsgaden.\nTorvet kan udvikles som samlingssted\nGehl har undersøgt Torvet og peger på muligheder for at gøre det mere attraktivt at opholde\nsig på.\nAnalysen peger på, at kultur, oplevelser og fællesskaber kan give borgerne flere grunde til at\nbesøge bymidten. På tværs af de syv byer savner 20 % af borgerne flere kulturtilbud. Det viser\net potentiale for at styrke bylivet med kultur og aktiviteter.\nFor Rudkøbing peger Gehl på, at Torvet kan få en større rolle som samlingssted. Kultur,\nkreative værksteder og aktiviteter i tomme lokaler kan skabe mere liv i hverdagen. Samtidig\nskal Torvet fortsat kunne bruges til større arrangementer.\nAnalysen anbefaler også mere beplantning, bedre siddepladser, plads til leg og aktiviteter samt\nmere liv i de tomme lokaler på Torvet.\nGehl foreslår også at afprøve mindre biltrafik og parkering på Torvet i en periode for at\nundersøge, om det kan skabe bedre rammer for ophold.\nDet videre arbejde\nAdministrationen vil bruge analysens resultater som et fagligt grundlag for det kommende\narbejde med at udvikle Rudkøbing og styrke samspillet med resten af Langeland.\nResultaterne skal blandt andet bruges til at udpege nye projekter, styrke dialogen med lokale\naktører og søge støtte fra fonde.\nAnalysen giver et fælles grundlag for at arbejde med handel, kultur, byrum og havn, så de\nenkelte indsatser kan støtte hinanden.\n\nAfledte konsekvenser\nOrienteringen har ingen direkte økonomiske konsekvenser. Eventuelle udgifter til nye projekter\nvil blive behandlet særskilt. Eventuelle konkrete projekter vil blive forelagt de relevante politiske\nudvalg, når der er behov for politisk stillingtagen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller til Erhverv- og Kulturudvalget:\nAt orienteringen om analysens resultater og det videre arbejde tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-9": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-9",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Status på Kyst- og Turismestrategien",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der gives en status på Kyst- og turismestrategien fra 2023."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Langeland Kommunes Kyst- og turismestrategi har seks mål. De handler om helårsturisme,\nbæredygtighed, øget indtjening, flere helårsjob, bosætning og branding.\nTurismens udvikling\nFra januar til august 2026 havde Langeland 430.567 kommercielle overnatninger, heraf ca.\nhalvdelen danske overnatninger (217.798). Hertil kommer 50.444 anslåede AirBnB\novernatninger fra januar til august 2026.\nLystsejlads er en vigtig del af turismen (og er en del af de kommercielle overnatningstal). I\n2025 havde Langeland 81.959 overnatninger fra lystsejlads, svarende til 4,2 % af landets\nsamlede antal. Langeland var dermed blandt landets fem største kommuner på området. I top5 ligger også Ærø, Svendborg og Faaborg-Midtfyn, altså UNESCO Global Geopark – Det\nSydfynske Øhav tilsammen havde de fire kommuner 24,6% af lystbådeovernatninger i 2025 i\nDanmark.\nTurismetallene til og med august 2026 ligger på niveau med 2023 og 2024 og marginalt lavere\nend i 2025 (11.000 kommercielle overnatninger og 3.000 AirBnB). Når alle overnatningstallene\nfor 2026 foreligger, vil de blive forelagt i udvalget.\nHelårsturisme og oplevelser\nEt centralt mål er at skabe flere besøg og mere aktivitet uden for højsæsonen.\nStrategiplanen for 2026 har fokus på bedre samspil mellem turisme, kultur og handel. Der\narbejdes blandt andet med vinteraktiviteter, forårsaktiviteter, filmfestival, Lys i Mørket og\nJulekøbing. Nedenfor er beskrevet eksempler på arbejdet.\nPåske kunst og kultur\nMed Påske Kunst og Kultur sætter vi fokus på Langelands kunst- og kulturliv og skaber en\nanledning til at besøge øen i påskeperioden. I samarbejde med kunstnere, gallerier og\nkulturinstitutioner synliggøres øens mange oplevelser, og Langeland styrkes som en attraktiv\nkulturdestination.\nGeopark Dage\nGeopark Dage synliggør Langelands natur- og landskabskvaliteter gennem lokale aktørers\naktiviteter. Arrangementet giver både lokale og gæster mulighed for at opleve naturen på nye\nmåder.\nLys i Mørket\nI 2026 afholdt vi Lys i Mørket for sjette gang med deltagelse af stadig flere lokale aktører.\nArrangementet tiltrækker gæster i en periode med traditionelt færre besøgende og skaber nye\noplevelser gennem et bredt kulturprogram og aktiviteter på steder, der normalt ikke er åbne for\noffentligheden. Samtidig styrker det samarbejdet mellem lokale kulturinstitutioner, foreninger og\nerhvervsdrivende.\n\nJulemarked på Torvet i Rudkøbing\nI samarbejde med Rudkøbing Handelsstandsforening arrangerer vi julemarked på Torvet i\nRudkøbing to lørdage i december. Julemarkedet skal gøre Langeland til et attraktivt\nudflugtsmål i juletiden, skabe liv i købstaden og give lokale stadeholdere mulighed for at vise\nderes produkter frem, samtidig med at det understøtter julehandlen i byens butikker.\nDer er også fokus på samarbejde med lokale aktører og tilvejebringelse af et større udbud af\noplevelser og spisesteder hele året, sidstnævnte primært i Rudkøbing, hvor den udfordring er\nstørst.\nGeopark og fysisk udvikling\nDen strategisk-fysiske udviklingsplan for Geopark Det Sydfynske Øhav (benævnt SFU -vedlagt\nsom bilag) er et vigtigt grundlag for arbejdet med at udvikle øens natur- og kystturisme.\nDer arbejdes løbende med nedenstående tiltag:\nUdvikling af Geoparkens ankomstpunkt i Bagenkop (SFU)\nDen Grønne Formidlingshave og Geoparkens formidlingscenter (SFU)\nNye faciliteter og aktiviteter i SHORES\nBedre skiltning og vejvisning på øen (SFU)\nUdvikling af cykel- og vandreruter samt en hatbakkerute\nFlere af tiltagene kræver støtte fra fonde og samarbejde med eksterne parter.\nEtablering af Den Grønne Formidlingshave og Geoparkens formidlingscenter er stort set\ntilendebragt. Der mangler delvist beplantning, som afventer vinteren – derudover kommer der\nprimo 2027 en H.C. Ørsted træskulptur i forbindelse med året for hans 250-års fødselsdag.\nSHORES faciliteterne er under opførelse og processen for Springet, Hytten og Loungen\nforløber planmæssigt, og der forventes åbning i januar 2028.\nDe øvrige punkter arbejdes der på dels i forhold til at udvikle disse og dels i forhold til at\ntilvejebringe den nødvendige økonomi.\nBæredygtig turisme\nStrategien har som mål, at 70 % af de større overnatningssteder skal være\nbæredygtighedscertificeret inden 2030.\nStrategiplanen for 2026 har fokus på Green Key, NuNa, samarbejde med sommerhusejere og\nhensyn til naturen. Målet er at udvikle turismen med respekt for øens natur og lokalsamfund.\nBåde Langelands Museum og Besøgscenter Østergade/Visit Langeland er certificeret med\nrelevante Green Key udgaver. Museet med Green Attraction og besøgscentret med Green\nTourism Organization. Det betyder helt konkret, at der både indadtil og udadtil arbejdes med\nbæredygtige tiltag indenfor emner som reduktion af udgifter til el, vand og varme, minimering af\npapirforbrug, bevidsthed om affaldssortering, adfærdsændring af vaner m.v.\nSom en del af Geopark Det Sydfynske Øhav er Langeland Kommune desuden gået med i\nprojektet Nurturing Nature (NuNa), som netop handler om at udvikle et nyt fundament for\nudvikling af turisme. Fundamentet vil i højere grad være funderet på et princip om regenerativ\n\nturisme. Hvad dette i praksis er, og hvordan det udvikles, er en af de ting, som projektet\nhandler om. Projektet er et EU Interreg 6A-projekt, og udvikles derfor på tværs af Danmark og\nTyskland. I løbet af projektet, der løber frem til udgangen af 2028, skal der udvikles produkter.\nHer arbejdes der konkret med to koncepter. Det ene handler om at arbejde sammen med\nsommerhusejerne om at styrke biodiversiteten og klimarobustheden i sommerhusområder. Det\nandet koncept handler om muslingers evne til at rense vandet. Her er der etableret et høsttårn\nmed muslinger i Rudkøbing Havn, og som led i dette arrangeres der events og\nformidlingsaktiviteter for borgere, besøgende og skolebørn.\nBranding og samarbejde\nMarkedsføring og udrulning af brandingstrategien ”Langeland til os alle ~ sammen” skal styrke\nøens synlighed. I 2026 har der været fokus på bedre digital formidling, turisthjemmesider og\nsamarbejdet med Destination Fyn, Geoparken og de lokale turismeaktører.\nLangeland Kommune arbejder med at udbrede den fælles brandingstrategi på tværs af\nkommunens indsatser. VisitLangeland anvender strategien som et gennemgående fundament i\nderes kommunikation og markedsføring. Der er fortsat et potentiale i at få flere lokale\nerhvervsdrivende, foreninger og aktører til at tage brandingen til sig og anvende den i deres\negen formidling.\nSHORES og lokale partnerskaber\nSamarbejdet omkring SHORES er et godt eksempel på, hvordan lokale foreninger, frivillige og\nerhvervsdrivende kan løfte oplevelser i fællesskab. Vinterbaderfestivalen i Bagenkop er et\nkonkret eksempel, hvor frivillige selv står for at udvikle og afvikle hele arrangementet.\nDerudover er partnerskabsaftalerne i regi af SHORES ændret for at styrke samarbejdet med\nlokale virksomheder og foreninger og skabe flere muligheder for at udvikle og synliggøre\nvandaktiviteter på Langeland.\nKunst og kultur i samarbejde med lokale kunstnere\nVi samarbejder med lokale kunstnere og kulturaktører om at synliggøre og udvikle Langelands\nkunst- og kulturtilbud. Det sker blandt andet gennem Påske Kunst og Kultur, hvor kunstnere og\ngallerier er med til at skabe oplevelser for besøgende. Senest er samarbejdet også blevet\nudvidet med et lokalt gavlmaleri i Den Grønne Formidlingshave, som bidrager til at gøre\nkunsten synlig i byrummet.\nSamarbejde på tværs af Fyn og Øerne\nGennem platformen Understory arbejder vi med at samle og synliggøre oplevelser på tværs af\nFyn og Øerne. Platformen giver lokale aktører mulighed for at udbyde og sælge deres\noplevelser og fungerer samtidig som en integreret del af VisitFyns hjemmeside. Det giver\naktørerne adgang til en større markedsføringsplatform og gør det lettere for besøgende at finde\nog booke oplevelser på tværs af destinationen.\nOpsummering\nAdministrationen vurderer, at Kyst- og Turismestrategien fortsat har det rigtige fokus, og der\nfortsat er mange områder, der kan og bør arbejdes videre med. Der bør fortsat være fokus på\nhelårsturisme, lokal indtjening og bæredygtig udvikling.\n\nAfledte konsekvenser\n\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at Erhvervs- og Kulturudvalget:\nDrøfter status"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-10": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-10",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Status fra Arbejdsmarkedsafdelingen",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Implementeringen af beskæftigelsesreformen kører i tre spor, og udvalget vil til hvert møde\nblive præsenteret for en aktuel status.\nHerudover vil udvalget også blive orienteret om sidste nyt på beskæftigelsesområdet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Beskæftigelsesreform\nImplementeringen af beskæftigelsesreformen i Arbejdsmarkedsafdelingen kører i tre spor.\nØkonomisk tilpasning\nMålretning og tilretning af indsatsen i forhold til ændrede rammer og de vedtagne\npejlemærker\nKompetenceudvikling\n\nStyrelsen for Arbejdsmarked og Rekruttering (STAR) afholder netværksmøder hen over\nefteråret for henholdsvis aktivitetsparate kontanthjælpsmodtagere, sygedagpengemodtagere\nog jobparate. Fælles for netværksmøderne er et fokus på den ændrede lovgivning som træder i\nkraft 1. januar 2027, og samtidig får kommunerne mulighed for at dele viden og initiativer med\nhinanden.\n\nØvrigt\nSamarbejde med den Sociale Kapitalfond og Carelink\nSom led i budgetaftalen for 2027 er der igangsat en proces med henblik på at etablere et\nsamarbejde med Den Sociale Kapitalfond og Carelink om en styrket beskæftigelsesindsats\ngennem en social effektinvestering.\nDer er tale om en 2-årig projektperiode, der er rettet mod sygemeldte, borgere i\njobafklaringsforløb, jobparate kontanthjælpsmodtagere og dagpengemodtagere.\nFormålet er blandt andet at vise, at en intensiveret og sammenhængende indsats for en\nudvalgt målgruppe, kan understøtte borgerne i at vende hurtigere og stabilt tilbage til\narbejdsmarkedet sammenlignet med en historisk baseline.\nI alt bliver 120 borgere tilknyttet projektet.\nDet er forventningen, at projektet bliver igangsat den 1. februar 2027.\n\nModtagelse af Ukrainere\nNår en integrationsborger får bevilget midlertidig opholdstilladelse, beslutter\nUdlændingestyrelsen hvilken kommune personen skal visiteres til.\nUdlændingestyrelsen sender et brev til kommunen med navn, cpr.nr og statsborgerskab på\n\npersonen og med angivelse af hvilken lovgivning, borgeren er omfattet af, og hvilket asylcenter\nborgeren er indkvarteret på. I nogle tilfælde har personen allerede ophold på en adresse i\nkommunen.\nEfter modtagelse af kommunebrevet overtager kommunen integrationsforpligtigelsen senest 15\nhverdage efter borgeren er visiteret.\nSiden den 24. september 2026 er der visiteret 20 voksne og otte børn til Langeland Kommune.\nSom en del af integrationsforpligtigelsen skal kommunen tilbyde en midlertidig bolig til\nintegrationsborgere, der visiteres til kommunen.\nLangeland Kommune har på nuværende tidspunkt fem lejligheder på Duevej i Lindelse og otte\nlejligheder på Lindelse Plejecenter. Fra 1. december 2026 vil antallet af lejligheder på Lindelse\nPlejecenter blive reduceret til fem lejligheder.\nDen 1. november 2026 er der indgået aftale med ejeren af Herslevvej 1A i Lindelse om leje af\nbygningen, som tidligere har huset flygtninge fra Asylcenter Holmegaard. I bygningen er der 12\nværelser og fælles køkken og badefaciliteter.\nGrundet den massive tilgang af nye integrationsborgere har det været nødvendigt at ansætte\nen vikar i Arbejdsmarkedsafdelingen til varetagelse af den fremtidige opgave med blandt andet\nmodtagelse og indkvartering af integrationsborgerne.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at:\nOrienteringen tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-11": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-11",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Status fra Center for Erhverv, Kultur og Turisme",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Dette punkt omhandler en kort status siden sidst fra Center for Erhverv, Kultur og Turisme."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Turismetal\nLangeland havde 47.236 kommercielle overnatninger i september 2026, hvilket er ca. 6 %\nfærre end i september 2025 og på niveau med 2022 og 2023.\nUdviklingen på Langeland skal ses i sammenhæng med en generel national tilbagegang i\nseptember hvor de primære årsager formodes at være en tidlig tysk sommerferie og et\nusædvanligt vådt septembervejr, som især ramte kyst- og naturturismen. På landsplan faldt\nantallet af kommercielle overnatninger fra ca. 6,08 mio. i september 2025 til 5,91 mio. i\nseptember 2026. Også på Fyn er billedet blandet, og flere kommuner oplever tilbagegang.\nLangeland har dog fortsat det næsthøjeste antal officielle overnatninger blandt de fynske\nkommuner i september, kun overgået af Odense. AirBnB overnatningerne endte på anslået\n7.218 i september 2026 marginalt lavere end året før.\nSer man på årets første ni måneder, havde Langeland 477.803 overnatninger mod 491.616 i\n2025, svarende til et fald på ca. 2,8 %.\nOvernatningstallene for de kommunale havne foreligger og er vedlagt som bilag. Der har i de\ntre kommunale havne (Strynø, Bagenkop og Rudkøbing) været 9.577 tyske, 4.122 danske og\n510 hollandske overnatninger, mens der har været 1.303 danske og 936 tyske overnattende\nautocampere. Der er tale om en marginal nedgang i forhold til 2025.\nDer eksperimenteres med opsamling af teledata via danske simkort. Disse tal viser, at der er\nvæsentlig mere aktivitet i 2026 end i 2025 og dermed indikation for væsentligt flere besøg på\nLangeland også i oktober måned i år end sidste år. Se vedlagt bilag for yderligere information.\nLangeland Bibliotek\nHar søgt og fået bevilliget 25.452 kr. fra Nordea-fonden til bidrag til oprettelse af et Frøbibliotek\nmed studie- og læsemiljø fysisk på biblioteket.\nBiblioteket laver julemarked i samarbejde med Langelands Museum lørdag den 29. november.\nDen 21. november er der juleteater for 3-6-årige på Langeland Bibliotek.\nVedlagt som bilag er oversigten over voksenarrangementer resten af 2026. Derudover er der\nen række børneaktiviteter, der både er åben for alle og som er målrettet institutioner, skoler og\nlignende.\nRegeringen har afsat 20 mio. kroner til at indkøbe og sammensætte bogpakker med tilhørende\nformidlingsaktiviteter under titlen 'Bogfrø – De små læser'. Alle dagtilbud (dagplejere,\nvuggestuer og børnehaver) har haft mulighed for at tilmelde sig. Der har været god tilslutning\npå Langeland blandt alle tre grupper.\nI december bliver de tilmeldte dagtilbud inviteret på biblioteket, hvor der uddeles bogpakker og\nlæses julehistorier. Bøgerne i bogpakkerne er en gave og skal således ikke afleveres igen. Der\ner også sat penge af til formidling af børnebøger. Pengene anvendes på en fortællekoncert\nmed Hunden Ib i januar, som de tilmeldte dagtilbud inviteres til.\n\nÅrets tema for børnekulturfestivalen var ”Fugle”. Der blev bl.a. vist otte teaterforestillinger, film i\nbiografen, og inviterede til diverse kreaworkshops med fugle som omdrejningspunkt.\nDerudover var der fugletur med ringmærkning i Gulstav Mose i samarbejde med DOF og en\nvildt workshop med plukning og tilberedning af ænder og fasaner. Chapper og hans band\nsluttede ugen af med koncert på biblioteket. Der var i den uge 2.860 besøgende på biblioteket\nog 787 deltog i arrangementer.\nLys i mørket\nLys i Mørket blev afholdt den 6. og 7. november 2026 på Langeland og Strynø. Der var rigtig\nmange aktører, der bød ind med aktiviteter og en række af disse havde udsolgt, hvor der var\nbegrænsninger på antal deltagere. Langelandsfortet havde indvielse af Jens Galschøitts\nskulptur og oplevede over 400 besøgende gæster, ligesom indvielse af gavlmaleriet i\nFormidlingshaven gav anledning til mange besøgende og 329 besøgende i Mads Lange\nudstillingen. 300-350 gæster besøgte Lysende paraplyer i Lohals. Kortfilmsfremvisning i\nBagenkop havde over 100 gæster på 3 visninger. Tranekær Slot og Steensgaard Gods havde\nudsolgt. Brandstationen havde besøg af over 100 personer. Flere restauranter har meldt\ntilbage, at de havde fuldt udsolgt. I det hele taget er der samlet set rigtig gode tilbagemeldinger\nfra aktører. Nogle af butikkerne i Rudkøbing havde åbent og en række af disse har meldt\ntilbage med en status om, at de havde en god omsætning.\nH.C. Ørsted 250 år i 2027\nLangelands Museum og Ørstedsudstillingen arbejder på at gøre Ørstedsprisuddelingen til\nnoget særligt, mens VisitLangeland inddrager H.C. Ørsted i årets aktiviteter og kommunikation.\nRudkøbing Handelsstandsforening vil opfordre medlemmerne til at udvikle særlige Ørstedprodukter. Der arbejdes desuden på en særskilt fejring på fødselsdagen den 14. august.\nAktuelt arbejdes der med fondsansøgninger til at understøtte aktiviteterne.\nLangelands Museum\nMuseet deltager igen i år i julebynight med gløgg og æbleskiver og julemanden starter ude\nforan museet.\nMuseets afdelinger var godt besøgt i forbindelse med \"Lys i mørket\", og næsten 1.000 gæster\nlagde vejen forbi de to dage på de forskellige lokationer.\nÅrets sidste \"film og foredrag\"-arrangement afvikles sidst i november.?\nDer er en bogudgivelse på vej - inden jul udgives bogen \"Frømandskorpset - Danmarks første\nspecialstyrke\".\nDer vil være åbent på Langelandsfortet i vinterferien i uge 7 med aktiviteten ”Jagerpilot for en\ndag”. Sæsonen 2027 starter tidligt, nemlig Palmesøndag d. 21. marts 2027.\nJulemarked\nI samarbejde med Rudkøbing Handelsstandsforening og Fødevaremarkedet arrangeres der\njulemarked på Torvet lørdag den 5. og lørdag den 12. december 2026.\nRudkøbing Byhistoriske Arkiv\nArkivernes Dag blev afholdt den 14. november 2026.\nDen 23. november afholdes ”En verden udenfor” Film & Foredrag i samarbejde med\n\nLangelands Museum i Bio Langeland.\nFolkeoplysning\nFolkeoplysningsudvalget afholdt den 22. oktober den traditionsrige teamaften. Temaet for\naftenen var ”penge i foreningen” bl.a. med oplæg om, hvordan foreningerne kan forebygge\nøkonomisk svindel, hvordan foreningerne kan skaffe flere penge til udvikling gennem fonde og\nom de dokumentationskrav og regler, som er forbundet med det at være en folkeoplysende\nforening, der modtager kommunalt tilskud.\nDer afholdes endnu et temamøde den 19. januar 2027 som et ”gå-hjem-møde” med temaet\nforsikringer i foreninger.\nBymidtesamarbejdet\nDer er sat en dato for et konstituerende møde i det nye Bymidtesamarbejde, hvis\nkommissorium blev godkendt af Kommunalbestyrelsen den 14. september. Det konstituerende\nmøde finder sted den 8. december.\nDialogmøde med detailhandlen i Rudkøbing\nI slutningen af oktober blev der afholdt dialogmøde med detailhandlen i Rudkøbing med knap\n30 deltagere. På mødet blev blandt andet Fremtidens Fynske Bymidter, den nye lukkelov,\nVisitLangelands events i 2027 og den kommende julehandel drøftet.\nDerudover blev sommersæsonen 2026 evalueret. Her var tilbagemeldingen blandt andet, at\nstore sportsevents ikke nødvendigvis skaber øget handel på selve dagen, men til gengæld\ngiver god branding og omtale af byen. Mindre koncerter i byen opleves derimod som noget, der\nkan skabe direkte øget handel.\nErhvervsarrangementer\nDer har i løbet af oktober og november været afholdt erhvervsnetværksmøder for\nerhvervsledere, erhvervskvinder, turismevirksomheder, landbrug- og fødevarevirksomheder,\nerhvervsturisme aktører, SHORES erhvervspartnerskab og Geopark partnere. Der planlægges\ndesuden et erhvervsnetværksmøde for iværksætterne. Endvidere undersøges muligheden for\nat holde et arrangement for butiks- og lokaleejere i Rudkøbing. Arrangementerne er typisk med\negenbetaling for mad og drikke.\nDen 11. februar 2027 afholdes der Iværksætterdag i samarbejde med CoWork Langeland.\nBorgmesteren åbner mødet, derefter er der korte info-sessioner med en række relevante\neksperter som revisor, advokat, Erhvervshus Fyn og Fremtidsfabrikken. Afslutningsvis er der et\nonline-foredrag om trends og tidens tendenser målrettet iværksættere. Oplægget vil være ved\nJulia Lahme, trendforsker, forfatter og antropolog.\nNuNa\nDer har været afviklet et større co-creation/samskabelsesarrangement i samarbejde med\nSvendborg, for at udvise økonomisk omtanke. I denne måned samles alle danske og tyske\npartnere til et større partnermøde i Lübeck, som projektet betaler. Projektet går ind i en fase,\nhvor der er fokus på konkrete, samarbejder og produktudvikling.\nØ-møder – erhvervsturisme\nDet LAG-finansierede projekt om mødeturisme, i samarbejde med Ærø og Samsø, er igang.\nProjektet handler om at styrke erhvervs- og mødeturismen, der typisk ligger i\n\nturismevirksomhedernes ydersæsoner og/eller på hverdage og har en større volumen end\nenkeltturisterne og et større gennemsnitligt dagsforbrug end ferieturisme, hvilket gør det særlig\ninteressant i forhold til at skabe vækst og holde på arbejdskraften også i ydersæsonerne. Det\nførste infomøde for virksomheder er afholdt, og næste skridt er 1-1 sparringer og\nsparringsmøder i nord og syd.\nUndersøgelse af muligheden for fondsstøtte til kvindelig statue\nStatens Kunstfond har åbnet op for en pulje til etablering af statuer af kvinder med historisk\nbetydning. Det undersøges derfor, hvorvidt Langeland Kommune kan søge om midler til en\nstatue fx af en af kvinderne fra Langelands Museums bog \"Kloge og kunstneriske kvinder på\nLangeland\". Her er flere gode bud, både fra den fjerne og den mere nære fortid.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at Erhvervs- og Kulturudvalget:\nTager orienteringen til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-12": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-12",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Meddelelser",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Dette punkt giver mulighed for øvrig information af orienterende karakter."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der noteres under sagsfremstillingen, hvilke orienterende punkter der nævnes mundtligt under\nmødet.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget:\nTager orienteringen til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-13": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-13",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Under dette punkt kan gives gensidig orientering af relevant karakter."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der blev orienteret om:\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at Erhvervs- og Kulturudvalget:\nTager eventuelle orienteringer til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-erhvervs-og-kulturudvalget-14": {
+   "id": "langeland-2026-11-24-erhvervs-og-kulturudvalget-14",
+   "kommune": "Langeland",
+   "udvalg": "Erhvervs- og Kulturudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=37c4b9a8-49c9-4aa6-a5a1-23ed1ec131fd",
+   "hentet": "2026-11-19T13:30:38.833Z",
+   "titel": "Godkendelse af beslutningsprotokol - Underskriftsside",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende beslutningsprotokollen.\nBeslutningsprotokollen føres under møderne, og det forudsættes, at beslutningerne afstemmes\nundervejs i mødet - det kan f.eks. ske ved oplæsning af det protokollerede.\nFor at godkende beslutningsprotokollen, skal hvert af de tilstedeværende medlemmer\nunderskrive beslutningsprotokollen ved mødets afslutning. Det sker digitalt ved at anvende\nknappen \"godkendelse\" i First Agenda."
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-1": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-1",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nBørne- og Skoleudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-2": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-2",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Årshjul 2027 for Børne- og Skoleudvalget",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Årshjulet er et visuelt redskab til at skabe sammenhæng og struktur for Børne- og\nSkoleudvalget."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Årshjulet har til formål at sikre en gennemgående sammenhæng og struktur til møderne i\nudvalget. Udvalgets medlemmer får mulighed for at danne sig et overblik over kommende\nsager til behandling til udvalgsmøderne.\nÅrshjulet tager udgangspunkt i tidligere års erfaringer. Formålet er at give udvalgets\nmedlemmer mulighed for at danne sig et overblik over de faste punkter hen over året.\nDesuden bidrager årshjulet til at administrationen er forberedt på leverancerne til udvalget.\nDermed er årshjulet et redskab til at sikre, at udvalget, på bedst mulig vis, bliver informeret om\ndriften og udviklingen, hvorfra der kan træffes beslutninger på et velinformeret grundlag.\nÅrshjulet beskriver de gennemgående sager, som allerede nu er fastlagt på udvalgets møder i\n2027. Sagerne tager udgangspunkt i dagsordenspunkter behandlet i 2026.\nDer kan løbende forekomme ændringer til årshjulet.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget:\nGodkender årshjulet for 2027"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-3": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-3",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Status fra PPR",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Børne- og Skoleudvalget orienteres hermed om status på arbejdet i PPR."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Skole- og dagtilbudschefen er indtil årsskiftet også leder af PPR, hvorefter området placeres\nunder Social- og Arbejdsmarkedschefen og dermed tættere på Familieafdelingen.\nSkole- og dagtilbudschefen giver en status for området og de igangværende aktiviteter.\nSom en del af oplægget vil der også være besøg af de pædagogiske skolekonsulenter, som\nhar udarbejdet materialet ”Små skridt mod store fællesskaber – Når PPR rykker ind i\nklasselokalet”, som har fået Langeland Kommune med på landkortet.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget:\nTager orienteringen til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-4": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-4",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Revidering af Styrelsesvedtægt for Langeland Kommunes Skolevæsen",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Styrelsesvedtægt for Langeland Kommunes Skolevæsen er senest blevet revideret i juni 2025.\nDer er behov for ny revidering, hvilket bl.a. er begrundet i beslutninger foretaget i forbindelse\nmed Budget 2027."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der er behov for at revidere Styrelsesvedtægt for Langeland Kommunes Skolevæsen, så den\nbliver opdateret i forhold til de ændringer, der er sket på skoleområdet i de forløbne år. Dette\nomhandler bl.a. ændringer i forhold til den nye IT-strategi, ændringer af skole- og\nledelsesstrukturen i kommunen og beslutningen om lukning af Forårs-SFO.\nProcesplan for revidering af styrelsesvedtægten:\nBørne- og Skoleudvalget præsenteres for den reviderede styrelsesvedtægt på mødet\nden 24. november 2026\nDen reviderede styrelsesvedtægt sendes i høring i skolernes bestyrelser, MED-udvalg,\nHandicapudvalget og Strynø-udvalget i perioden 24. november 2026 til 14. januar 2027\nDen reviderede styrelsesvedtægt sendes til godkendelse i Børne- og Skoleudvalget den\n1. februar 2027, i Økonomiudvalget den 9. februar 2027 og i Kommunalbestyrelsen den\n22. februar 2027.\n\nTilføjelser til styrelsesvedtægten\n1) Nyt afsnit om IT\nKommunalbestyrelsen godkendte den 15. december 2025 den nye og reviderede ITstrategi ”IT med mening”. Rammerne for IT har ikke tidligere været en del af\nStyrelsesvedtægten for Langeland Kommunes Skolevæsen og der tilføres derfor et ny\nbilag til dokumentet.\nLangeland Kommunes IT-strategi sætter retningen for arbejdet med digitalisering i\nskolen.\nIT-strategien har fokus på at understøtte elevernes læring, trivsel og digitale dannelse\ngennem målrettet brug af teknologi. IT-strategien sikrer overensstemmelse med den\nkommunale Børne- og Ungepolitik, de nyeste nationale anbefalinger fra Styrelsen for\nUndervisning og Kvalitet samt Trivselskommissionens anbefalinger om balanceret digital\npraksis.\n2) Pædagogisk læringscenter ændres til skolebibliotek\nFra den 1. januar 2026 er folkeskolernes pædagogiske læringscentre ændret til\n\nskolebiblioteker, som en del af en lovændring.\n\n3) Tilpasning af skolestruktur i forbindelse med Budgetaftalen for 2027-2030\nI forbindelse med Budgetaftalen for 2027-2030 ændres rammerne for Ørstedskolen, så\nder pr. 1. august 2027 vil være en børneafdeling fra 0. - 5. klassetrin og en ungeafdeling\nfra 6. - 10. klassetrin og ikke som tidligere en indskolings-, mellemtrins- og\nudskolingsafdeling.\nPå Nordskolen og Strynø Skole udvides der med en 5. klasse.\n4) Lukning af ForårsSFO\nI forbindelse med ny økonomiaftale mellem Staten og kommunerne i 2026 ændres\nrammerne om normering i Forårs-SFO. I forlængelse heraf er det besluttet at nedlægge\nForårs-SFO i Langeland Kommune.\n5) Ny ledelsesstruktur på skoleområdet\nAdministrationen arbejder ud fra en model, hvor Nordskolen ledelsesmæssigt placeres\nunder Humble Skole.\nNordskolen vil være en selvstændig skole med egen bestyrelse.\nPå denne måde forventes det, at der kan skabes større synergi imellem\nlandsbyskolerne. Emnet drøftes nu, selvom modellen ikke er færdigudarbejdet, så det er\nmuligt at forhåndsgodkende forandringen, uden at skulle have en ny høringsperiode.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget:\nSender den reviderede styrelsesvedtægt i høring i skolernes bestyrelser og MEDudvalg samt Handicapudvalget og Strynø-udvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-5": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-5",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Månedlig økonomisk status",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Orientering vedrørende den månedlige økonomiske status til politisk behandling."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den månedlige økonomiske status har til formål at give afvigelsesforklaringer i forhold til det\nkorrigerede budget og eventuelle handleplaner, hvis budgetoverholdelse bliver en udfordring.\nDen månedlige økonomiske status fremsendes på baggrund af beslutningen på\nØkonomiudvalgets møde den 24. juni 2025 samt mødet i Socialudvalget, Børne- og\nSkoleudvalget samt Erhvervs- og Kulturudvalget den 3.-5. februar 2026.\nDen månedlige økonomiske status behandles politisk otte gange om året for Ældre- og\nSundhedsudvalget, Socialudvalget, Børne- og Skoleudvalget samt Erhvervs- og Kulturudvalget\n(dog ikke Center for Erhverv, Kultur og Turisme) og suppleret af to årlige budgetopfølgninger\npr. 31. marts og 31. august. Den månedlige økonomiske status behandles ikke politisk i\nfagudvalgene og i Økonomiudvalget, når den ordinære budgetopfølgning behandles.\n\nAfledte konsekvenser\nChefernes afrapporteringen forelægges Direktionen månedligt.\nEfter behandling i Direktionen sættes den månedlige økonomiske status på fagudvalgene i\nÆldre- og Sundhedsudvalget, Socialudvalget, Børne- og Skoleudvalget samt Erhvervs- og\nKulturudvalget. Fagudvalgenes behandling videresendes til Økonomiudvalget til orientering."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller:\nAt orienteringen tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-6": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-6",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Tillægsbevilling til Børnehuset Nordstjernen",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der søges om en tillægsbevilling på 700.000 kr. i 2026 til Børnehuset Nordstjernen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I henhold til budgetopfølgning pr. 31. august 2026 forventes Børnehuset Nordstjernen at\nafslutte regnskabsår 2026 med et merforbrug på 700.000 kr.\nPå baggrund af faldende børnetal blev der påbegyndt personalejusteringer tilbage i februar\n2026, og dette er nu fuldt effektueret.\nFor at opretholde en forsvarlig drift med antallet af medarbejdere på arbejde har det ikke været\nmuligt at reducere til det niveau, der tildeles lønmidler efter, hvilket er 2,42\nfuldtidsmedarbejdere.\nHvis dette blev effektueret, ville det i praksis betyde, at der kun ville være én medarbejder på\narbejde i over halvdelen af åbningstiden, uagtet antallet af børn tilstede.\nDen nye ressourcetildelingsmodel for dagtilbud, som er godkendt på\nKommunalbestyrelsesmøde den 16. november 2026, har bl.a. indregnet parametre som\nbørnetal, antal medarbejdere og åbningstider, så tillægsbevillinger fremadrettet undgås, for at\nkunne opretholde et kvalitetsmæssigt minimum i alle institutioner, uagtet størrelse og\ngeografisk placering.\n\nAfledte konsekvenser\nTillægsbevillingen vil understøtte Børnehuset Nordstjernen i overgangsfasen til den nye\nressourcetildelingsmodel, hvor der er taget højde for de særlige forhold, der gør sig gældende."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget overfor Økonomiudvalget og Kommunalbestyrelsen\nanbefaler, at:\nGodkende en tillægsbevilling på 700.000 kr. til Børnehuset Nordstjernen\nGodkende at tillægsbevillingen finansieres af kassebeholdningen"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-7": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-7",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Sygefravær oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Fagudvalgene og Økonomiudvalget orienteres om resultatet af sygefraværet for januar til\noktober 2026."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med henblik på en øget opmærksomhed på sygefravær og et mål om at nedbringe\nsygefraværet sendes månedsrapporterne fast til orientering i Chefforum og derefter til\norientering i fagudvalgene, Økonomiudvalget samt Hovedudvalget. Sidstnævnte orienteres\nkvartalsvis.\nSygefraværet i januar til oktober 2026 var på 7,8 %, hvilket svarer til et fald på 0,4 %-point i\nforhold til samme periode året før, hvor det var på 8,2 %. Det gennemsnitlige sygefravær de\nsidste 12 måneder var 7,9 %.\n\nAfledte konsekvenser\nDer er ingen afledte konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller:\nAt sygefraværsrapporten tages til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-8": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-8",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Status fra visitationsudvalget",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Børne- og Skoleudvalget orienteres om behandling af sager i det centrale visitationsudvalg\nsamt dertil hørende økonomi. Sagen omhandler status fra det senest afholdte\nvisitationsudvalgsmøde den 28. oktober 2026, hvor der blev behandlet en sag."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Den ene sag handler om:\nSkoler\nDer er truffet afgørelse om specialklasse på Ørstedskolen til en elev."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Dagtilbud\nRestbudget til støtte i dagtilbud: 10.395 kr.\nForventet mindreforbrug til særlige dagtilbud i andre kommuner: 174.926 kr.\n\nSkoler\nForventet mindreforbrug til støtte i Forårs-SFO: 22.730 kr.\nForventet mindreforbrug til kommunale specialskoler i andre kommuner: 750.320 kr.\nForventet merforbrug til private specialskoler i andre kommuner: 95.548 kr.\n\nSamlet\nForventet mindreforbrug for dagtilbud: 185.321 kr.\nForventet mindreforbrug for skoler: 677.502 kr.\n\nSpecialtilbud på Langeland\nSpecialklassetilbud på Ørstedskolen: 20 elever.\nSPM: 4 – SPU: 16.\nSkrøbelev Skole: 17 elever.\n\nAfledte konsekvenser\nUdviklingen følges og behandles i forbindelse med regnskabsafslutning for 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget:\n\nTager orienteringen til efterretning"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-9": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-9",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nBørne- og Skoleudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "langeland-2026-11-24-boerne-og-skoleudvalget-10": {
+   "id": "langeland-2026-11-24-boerne-og-skoleudvalget-10",
+   "kommune": "Langeland",
+   "udvalg": "Børne- og Skoleudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.langelandkommune.dk/vis?id=cbd9f9c4-0079-4d32-819f-f003866e853b",
+   "hentet": "2026-11-19T13:30:48.971Z",
+   "titel": "Godkendelse af beslutningsprotokol - Underskriftsside",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende beslutningsprotokollen.\nBeslutningsprotokollen føres under møderne, og det forudsættes, at beslutningerne afstemmes\nundervejs i mødet - det kan f.eks. ske ved oplæsning af det protokollerede.\nFor at godkende beslutningsprotokollen, skal hvert af de tilstedeværende medlemmer\nunderskrive beslutningsprotokollen ved mødets afslutning. Det sker digitalt ved at anvende\nknappen \"godkendelse\" i First Agenda."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=43d8d1e9-0439-4cd5-a82d-90c8809c798e": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=d9857ffb-d39f-406e-95da-c48efdf2ae7d": {
    "senest": "2023-10-02",
@@ -13949,7 +15317,7 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=a7712077-3067-434f-9c6a-e2438df53411": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=82102bcb-c50f-4546-a1ee-df17f3b36ef9": {
    "senest": "2022-12-16",
@@ -13957,7 +15325,7 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=c94fb6d7-c8ba-478f-b05b-6f54ea8111c7": {
    "senest": "2025-12-16",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=33c6c935-94c8-4e93-a329-75a0f6e44bfa": {
    "senest": "2023-09-28",
@@ -13965,7 +15333,7 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=9f9a6d2b-fe8c-46a2-b59e-c6518d171a8c": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=6cdf90da-bee7-4891-9873-f842aa57d5a4": {
    "senest": "2025-09-20",
@@ -13973,15 +15341,15 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=ae41a685-59b8-407c-8a53-aa246ea86698": {
    "senest": "2026-05-22",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=f76d640b-5412-4e68-9d7d-55d6806a9a18": {
    "senest": "2025-09-20",
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=b7da15c7-1778-4dba-8aae-9d6f33080ee7": {
-   "senest": "2026-10-26",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-19",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=8a35cffe-4c56-40c4-82e9-88f3f41b56f5": {
    "senest": "2025-11-10",
@@ -13989,19 +15357,19 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=5d56b8fa-2361-4d92-aedd-d64dd2065617": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=16cf97db-86c3-47d2-90f9-3cdd9e10efbb": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=29957250-9e41-4bdd-a26d-358a98b16576": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=3ba4c6d5-5437-44ef-a132-4660058e323d": {
-   "senest": "2026-10-28",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-17",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=c62661e5-3199-45eb-801e-223da872bd07": {
    "senest": "2023-11-22",
@@ -14013,11 +15381,11 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=ccfd4d31-bbb4-4451-8620-7a497e66f9ad": {
    "senest": "2026-05-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=bebb0359-dcbe-42a2-a179-63e958ebf504": {
-   "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-17",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=b9bdca2d-4672-4aa6-adf5-a75c00bda41e": {
    "senest": "2023-09-27",
@@ -14025,35 +15393,35 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=36498429-d6ee-4f5a-81dc-908d587a5740": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=93438022-2f91-42f5-bc1f-91b9749443ac": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=0de395ef-f543-4284-8033-f5f3d7085141": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=7ba00d4f-a170-4f2a-99b0-bfbeb1248e7e": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=a0358eba-042a-4882-b238-0c8d79864c7c": {
    "senest": "2021-08-31",
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=6164cb70-66a7-44f8-b551-8a3340a22672": {
-   "senest": "2026-10-07",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-17",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=ea46c4bc-6411-4520-8c5b-6f1c815b8a8f": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=ad9f0ebf-4faf-40d6-880e-dc15571878ad": {
-   "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=e8a5c73b-739f-44a5-8bbb-6891718e0e8b": {
    "senest": "2025-11-10",
@@ -14061,7 +15429,7 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=45aaf789-384f-4b92-a0d6-5b3927d26a2e": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=9efb009e-677b-4986-ad0f-b22e9462ed77": {
    "senest": "2025-09-20",
@@ -14072,8 +15440,8 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=bfaf5088-3416-4ca4-9703-7a4bc0a0a72a": {
-   "senest": "2026-10-27",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=3860916c-7b50-45a4-b2b5-c4b5fa7316f0": {
    "senest": "",
@@ -14084,12 +15452,12 @@
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=6154cda3-48b9-4a5f-a123-d8183ce84463": {
-   "senest": "2026-10-27",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=962df4f1-c885-4607-99e0-334d8fb86c16": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=f53d7620-853a-42a3-95e0-1bfaa9e244c9": {
    "senest": "",
@@ -14105,11 +15473,11 @@
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=04ee0981-2c7f-41c5-8900-66f55b525faf": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/ForCommittee?committeeId=98ebd85f-fe06-424e-8643-06964f72e700": {
    "senest": "2025-11-25",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.langelandkommune.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -14117,6 +15485,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-13T21:11:31.547Z",
+ "opdateret": "2026-11-19T13:30:48.973Z",
  "kommune": "Langeland"
 }

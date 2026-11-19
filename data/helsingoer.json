@@ -575,6 +575,22 @@
    "dato": "2026-11-11",
    "punkter": 9,
    "parser": 3
+  },
+  "6fe00eca-8ebb-414c-9e78-afa54dcba53d": {
+   "lastmod": "2026-11-18",
+   "type": "dagsorden",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "punkter": 20,
+   "parser": 3
+  },
+  "374bf8f3-03b6-4d6d-8249-49056e6c04c6": {
+   "lastmod": "2026-11-19",
+   "type": "referat",
+   "udvalg": "Seniorrådet",
+   "dato": "2026-11-02",
+   "punkter": 11,
+   "parser": 3
   }
  },
  "sager": {
@@ -9101,15 +9117,19 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "Det indstilles:\nat Seniorrådet godkender dagsorden til seniorrådsmøde mandag den 5. oktober 2026."
+     "tekst": "Det indstilles:\nat Seniorrådet godkender dagsorden til seniorrådsmøde mandag den 2. november 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9119,19 +9139,23 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Nyt fra centerchefen",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "v/Mette Bierbaum\nMette orienterer om Ældreloven og Sundhedsreformen samt sætter fokus på andre aktuelle\nemner."
+     "tekst": "v/Mette Bierbaum\nI Mettes fravær orienterede Berit om ansættelsen af Kristina Basballe som ny leder for\nPlejehjemmet Strandhøj. Der har været et meget stærkt ansøgerfelt til stillingen.\nBerit tilbød besøg af Kristine Fischer, som er ny leder af Hjemmeplejen. Det sker snarest\nmuligt.\nAdministrationen arbejder med at forberede rekruttering til en nyoprettet stilling som økonomisk\nrådgiver for borgerne i komplekse sager.\nAnders Pihl-Jensen er netop tiltrådt som koordinator for Helsingør Kommunes kriseberedskab.\nDer er planer om et eller flere borgermøder og om at sende brev til alle modtagere af\nhjemmehjælp om – sammen med pårørende og andre – at forberede sig til en krisesituation.\nSygefraværet er desværre steget, både i Hjemmeplejen, på plejehjemmene og på sosuuddannelserne, hvor det er svært at rekruttere til fuldtidsarbejde, også under uddannelsen.\nDer er gode erfaringer med ansættelse af en fuldtids vejleder på Plejehjemmet Grønnehaven,\nog tre mere er netop startet 1. november."
     },
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles:\nat Seniorrådet tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Seniorrådet tog orienteringen til efterretning og ønsker besøg af den nye leder af\nhjemmeplejen, lige som vi bakker op om borgermøder om kriseberedskab.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9141,10 +9165,10 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Beslutning: Udmøntning af den kommunale investeringsmotor",
    "afsnit": [
     {
@@ -9153,7 +9177,11 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "I sundhedsreformen er der afsat varige midler til løft af kommunale sundhedsindsatser.\n\nMidlerne indfases gradvist fra og med 2027 og udmøntes af sundhedsrådene.\nDet er aftalt nationalt, at midlerne skal bidrage til langsigtet kapacitetsopbygning i tråd med\nreformens intentioner samt løft i forbindelse med udvikling og afprøvning af nye indsatser.\nLigeledes at midlerne udmøntes efter følgende principper:\nKommunerne har myndighedsansvaret for opgaven\nRelevante oplysninger deles mellem parterne for at understøtte gennemsigtighed i de\nøkonomiske prioriteringer\nDer kan indgå krav (f.eks. i forhold til faglighed mv.) i forbindelse med tilsagn om midler\nAftalerne skal bidrage til langsigtet udvikling af indsatser inden for sundhedsreformens\nintentioner\n\nI 2027 udmøntes i alt 20,1 mio. kr. fra sundhedsrådet til indgåelse af lokale aftaler i de otte\nkommuner indenfor sundhedsrådets to prioriterede temaer:\nÆldre: Fokus på kompetenceudvikling\nBørn og unge i mistrivsel og med psykisk lidelse: Fokus på familier”.\n\nI 2027 udmøntes i alt 3,1 mio. kr. til ikke-bindende anbefalinger i kvalitetsstandarderne for\nalmen sygepleje og basal palliation i kommunerne\nI 2027 udmøntes i alt 7 mio. kr. som er øremærket til kvalitetskrav i kvalitetsstandarder for\nalmen sygepleje og basal palliation.\n\n1. Økonomi i den kommunale investeringsmotor for Helsingør Kommune i 2027\nAndelen af midler fra den kommunale investeringsmotor for Helsingør Kommune fremgår\nnedenfor. For de ikke-bundne midler er fordelingen beregnet efter sygdomstyngde og for de\nbundne midler efter indbyggertal.\nMidler\n\nBeløb i Helsingør og midlernes anvendelse\n\nIkke bundne midler\n\n4,2 mio. kr. til Helsingør Kommune kan anvendes til indsatser på\nsundheds-, social-, ældre-, børn-og unge- samt\nbeskæftigelsesområdet, herunder finansiering af kommunale\nindsatser, der bliver prioriteret i nærsundhedsplanen\n\nIkke-bundne midler\n\n646.000 kr. til Helsingør Kommune.\nAnvendes til implementering af ikke-bindende anbefalinger i\nkvalitetsstandarder for almen sygepleje og palliation i kommunerne\n\nBundne midler\n\n1,3 mio. kr. til Helsingør Kommune.\nEr øremærket til kvalitetskrav i kvalitetsstandarder for almen\nsygepleje og basal palliation\n\n2. Forslag til anvendelse af ikke-bundne midler i den kommunale investeringsmotor i\nPå møde i Sundhedsrådet den 21. september 2026 blev det besluttet, at andelen af ”ikkebundne” midler fra den kommunale investeringsmotor, der skal indgås lokale aftaler om i 2027,\nskal prioriteres inden for to temaer samt fordeles til kommunerne efter sygdomstyngde.\nSundhedsrådet besluttede samtidigt, at den enkelte kommune kan fordele midlerne mellem\ntemaerne efter behov. I Helsingør Kommune lægges op til:\nat fordele midlerne med 25 % til indsatser indenfor temaet: Børn og unge i mistrivsel og\nmed psykisk lidelse: fokus på familier\nat fordele de resterende 75 % til indsatser indenfor temaet: Ældre: fokus på\nkompetenceudvikling.\n\nBegrundelsen for fordelingen er, at der tidligere er bevilget midler til indsatser på børne- og\nungeområdet nationalt. For Akutplanen er der i 2026 afsat 544.000 kr., og i 2027 og 2028\n1.087.000 hvert år, dvs. i alt 2.718.000 kr. For 10-årsplanen for psykiatrien er der i 2026 afsat\nDe foreslåede indsatser vedrørende børn og unge i mistrivsel og med psykisk lidelse, som\nkommunerne vil iværksætte, skal bidrage til at sikre tidlig og forebyggende indsats og bedre\nstøtte til familierne. Indsatserne skal ses i sammenhæng med temaer og indsatser i en\nkommende nærsundhedsplan for Sundhedsråd Nordsjælland.\n\nIndsatser på ældreområdet, som kommunerne vil iværksætte, skal bidrage til kompetenceløft\nog kapacitetsopbygning i ældreplejen, herunder at sikre at de rette kompetencer er til stede, og\nstyrke den faglige kvalitet i fx plejen af sårbare ældre og ældre med demens, i forebyggelsen af\nfald og i arbejdet med de kommende kvalitetsstandarder for basal palliation og kommunal\nsygepleje.\n2.1. Ældre: Fokus på kompetenceudvikling\nMidlerne skal gå til indsatser på ældreområdet og skal bidrage til kompetenceløft og\nkapacitetsopbygning i ældreplejen, herunder at sikre at de rette kompetencer er til stede, samt\nbidrage til at løfte den faglige kvalitet ift. pleje til sårbare ældre, forebyggelse af indlæggelser\nog nye krav i Kvalitetsstandarden for basal palliation og kommunal sygepleje.\nHelsingør kommunes forslag indenfor temaet:\nFaldforebyggelse – Styrke kompetencer og tid til tværfaglig screening samt systematiske\nindsatser til opfølgning med borger, der er faldtruet for at forebygge indlæggelser\nBasal palliation – kapacitetsopbygning over døgnet på tværs af enheder i Sundhed og\nOmsorg for at styrke opsporing, løbende afdækning af behov, fælles plan for den\nenkelte borger samt styrke kompetencer i basal palliation bredt i hjemmeplejen og på\nplejehjem og døgnpladser, herunder arbejde med lokale videnspersoner.\n\nDet samlede beløb ved en fordeling med 75 % af midlerne til disse indsatser giver i alt 3,15\nmio.kr.\n2.3. Børn og unge i mistrivsel og med psykisk lidelse: Fokus på familier”\nHelsingør kommunes forslag indenfor temaet:\nMed afsæt i Trivselskommissionens anbefalinger foreslås en styrket, tidlig og forebyggende\nindsats, der understøtter forældreskabet gennem hele barnets opvækst fra 0-18 år. Formålet er\nat styrke forældres viden, kompetencer og handlemuligheder i relation til børns og unges trivsel\nog udvikling.\nIndsatsen omfatter aldersdifferentierede forældreforløb, oplæg, rådgivning og psykoedukation,\nsom giver forældre konkrete redskaber til at håndtere almindelige udviklingsmæssige\nudfordringer, herunder følelsesregulering, konflikter, sociale relationer, digitale medier,\nskærmbrug og overgange i børne- og ungdomslivet.\nMålet er at styrke forældres tryghed og mestringsevne, normalisere almindelige udfordringer i\nbørn og unges udvikling samt forebygge mistrivsel, ængstelighed og problematisk skolefravær.\nPå længere sigt skal indsatsen bidrage til bedre mental sundhed, øget deltagelse i\nfællesskaber og et reduceret behov for specialiserede indsatser.\n\nDet samlede beløb ved en fordeling med 25 % af midlerne til disse indsatser giver i alt 1,05\nmio.kr.\nDer vil alene blive indgået aftale for 2027 om anvendelse af de ikke-bundne midler, da\nnærsundhedsplanen først bliver vedtaget af Sundhedsrådet i 2027. Midlerne bør dog\nstadigvæk medvirke til den langsigtede kapacitetsopbygning.\n3. De bundne midler\nDe bundne midler udgør 1,3 mio. kr. til Helsingør Kommune. Midlerne er i 2027 bundet til\nnationale tværgående kvalitetsstandarder for almen kommunal sygepleje samt udbredelse af\nmere ensartet basal palliation i borgerens hjem.\nDet er aftalt nationalt, at midlerne udmøntes af sundhedsrådet, og at de er fordelt mellem\nkommunerne efter indbyggertal.\n4. Kvalitetsstandarder for kommunal sygepleje og basal palliation\nSundhedsstyrelsen har sendt kvalitetstandarder for kommunal sygepleje og basal palliation i\nhøring. Jf. kommissoriet for arbejdet er formålet med kvalitetsstandarderne at bidrage til fortsat\nudvikling og forbedringer af de kommunale sundhedsindsatser.\nMidlerne fra investeringsmotoren skal derfor ses i sammenhæng med over en årrække at\nstyrke sygeplejen, så den lever op til kvalitetsstandardens krav om ”en fagligt stærk,\ntilgængelig og døgndækket kommunal sygepleje”, da flere sundhedsindsatser skal løftes nært i\nprimær sektor fremadrettet. Midlerne skal derfor bidrage til at styrke systematisk\nkompetenceudvikling og kapacitet i fht. både medarbejdere og ledelse.\nKvalitetsstandardenerne består af både bindende krav til kommunale indsatser og ikkebindende anbefalinger. ”Bindende krav” er nationalt bindende kvalitetskrav for den kommunale\nsygepleje i alle kommuner. ”Ikke-bindende anbefalinger” er faglige anbefalinger for den\nkommunale sygepleje og basal palliation, som kan omsættes og tilpasses lokalt igennem\naftaler mellem sundhedsråd og kommuner med udgangspunkt i lokale behov og\norganiseringer. En af de ikke-bindende anbefalinger omhandler de kommunale sygeplejerskers\nudvidede virksomhedsområde. Midler fra den kommunale investeringsmotor skal ikke\nanvendes til sygeplejerskers udvidede virksomhedsområde, idet dette skal finansieres af\nregionale midler.\n5. Opfølgning på indsatserne\nDet er aftalt nationalt, at det ikke er hensigten, at sundhedsrådene skal foretage en\nudgiftsopfølgning i kommunerne.\nOpfølgningen skal give sundhedsrådet et grundlag for at følge aktiviteter og resultater af de\nprioriterede indsatser samt understøtte sammenhængen med nærsundhedsplanen og øvrige\naktiviteter i det nære sundhedsvæsen.\n\nDer forelægges på den baggrund en samlet årlig status for sundhedsrådet vedrørende de\nbesluttede indsatser.\n\nRetsgrundlag\nLov om overgangen til en ny sundhedsstruktur (overgangsloven)\nSundhedsloven\n\nRelation til vision og tværgående politikker\nSundhedspolitik 2023-2030 – Lev livet hele livet\n\nØkonomi/Personaleforhold\nUdmøntning af midlerne foregår ved, at kommunerne sender en regning til Region\nØstdanmark, hvor det fulde beløb for de besluttede indsatser fremgår. Regningen skal være\nudspecificeret på de enkelte indsatser og varighed. Kommunen kan derefter budgettere på\naftalt indtægt.\nMidlerne vil blive indarbejdet i budget 2027 under hhv. budgetområde 516 Børne- og\nUngerådgivningen og 619 Omsorg og Ældre. Midlerne kan ikke overføres mellem budgetår og\nskal derfor anvendes i 2027.\n\nKommunikation/Høring/Borgerinddragelse\nSagen er sendt i høring i Seniorrådet."
+     "tekst": "I sundhedsreformen er der afsat varige midler til løft af kommunale sundhedsindsatser.\n\nMidlerne indfases gradvist fra og med 2027 og udmøntes af sundhedsrådene.\nDet er aftalt nationalt, at midlerne skal bidrage til langsigtet kapacitetsopbygning i tråd med\nreformens intentioner samt løft i forbindelse med udvikling og afprøvning af nye indsatser.\nLigeledes at midlerne udmøntes efter følgende principper:\nKommunerne har myndighedsansvaret for opgaven\nRelevante oplysninger deles mellem parterne for at understøtte gennemsigtighed i de\nøkonomiske prioriteringer\nDer kan indgå krav (f.eks. i forhold til faglighed mv.) i forbindelse med tilsagn om midler\nAftalerne skal bidrage til langsigtet udvikling af indsatser inden for sundhedsreformens\nintentioner\n\nI 2027 udmøntes i alt 20,1 mio. kr. fra sundhedsrådet til indgåelse af lokale aftaler i de otte\nkommuner indenfor sundhedsrådets to prioriterede temaer:\nÆldre: Fokus på kompetenceudvikling\nBørn og unge i mistrivsel og med psykisk lidelse: Fokus på familier”.\n\nI 2027 udmøntes i alt 3,1 mio. kr. til ikke-bindende anbefalinger i kvalitetsstandarderne for\nalmen sygepleje og basal palliation i kommunerne\nI 2027 udmøntes i alt 7 mio. kr. som er øremærket til kvalitetskrav i kvalitetsstandarder for\nalmen sygepleje og basal palliation.\n\n1. Økonomi i den kommunale investeringsmotor for Helsingør Kommune i 2027\nAndelen af midler fra den kommunale investeringsmotor for Helsingør Kommune fremgår\nnedenfor. For de ikke-bundne midler er fordelingen beregnet efter sygdomstyngde og for de\nbundne midler efter indbyggertal.\nMidler\n\nBeløb i Helsingør og midlernes anvendelse\n\nIkke bundne midler\n\n4,2 mio. kr. til Helsingør Kommune kan anvendes til indsatser på\nsundheds-, social-, ældre-, børn-og unge- samt\nbeskæftigelsesområdet, herunder finansiering af kommunale\nindsatser, der bliver prioriteret i nærsundhedsplanen\n\nIkke-bundne midler\n\n646.000 kr. til Helsingør Kommune.\nAnvendes til implementering af ikke-bindende anbefalinger i\nkvalitetsstandarder for almen sygepleje og palliation i kommunerne\n\nBundne midler\n\n1,3 mio. kr. til Helsingør Kommune.\nEr øremærket til kvalitetskrav i kvalitetsstandarder for almen\nsygepleje og basal palliation\n\n2. Forslag til anvendelse af ikke-bundne midler i den kommunale investeringsmotor i\nPå møde i Sundhedsrådet den 21. september 2026 blev det besluttet, at andelen af ”ikkebundne” midler fra den kommunale investeringsmotor, der skal indgås lokale aftaler om i 2027,\nskal prioriteres inden for to temaer samt fordeles til kommunerne efter sygdomstyngde.\nSundhedsrådet besluttede samtidigt, at den enkelte kommune kan fordele midlerne mellem\ntemaerne efter behov. I Helsingør Kommune lægges op til:\nat fordele midlerne med 25 % til indsatser indenfor temaet: Børn og unge i mistrivsel og\nmed psykisk lidelse: fokus på familier\nat fordele de resterende 75 % til indsatser indenfor temaet: Ældre: fokus på\nkompetenceudvikling.\n\nBegrundelsen for fordelingen er, at der tidligere er bevilget midler til indsatser på børne- og\nungeområdet nationalt. For Akutplanen er der i 2026 afsat 544.000 kr., og i 2027 og 2028\n1.087.000 hvert år, dvs. i alt 2.718.000 kr. For 10-årsplanen for psykiatrien er der i 2026 afsat\nDe foreslåede indsatser vedrørende børn og unge i mistrivsel og med psykisk lidelse, som\nkommunerne vil iværksætte, skal bidrage til at sikre tidlig og forebyggende indsats og bedre\nstøtte til familierne. Indsatserne skal ses i sammenhæng med temaer og indsatser i en\nkommende nærsundhedsplan for Sundhedsråd Nordsjælland.\n\nIndsatser på ældreområdet, som kommunerne vil iværksætte, skal bidrage til kompetenceløft\nog kapacitetsopbygning i ældreplejen, herunder at sikre at de rette kompetencer er til stede, og\nstyrke den faglige kvalitet i fx plejen af sårbare ældre og ældre med demens, i forebyggelsen af\nfald og i arbejdet med de kommende kvalitetsstandarder for basal palliation og kommunal\nsygepleje.\n2.1. Ældre: Fokus på kompetenceudvikling\nMidlerne skal gå til indsatser på ældreområdet og skal bidrage til kompetenceløft og\nkapacitetsopbygning i ældreplejen, herunder at sikre at de rette kompetencer er til stede, samt\nbidrage til at løfte den faglige kvalitet ift. pleje til sårbare ældre, forebyggelse af indlæggelser\nog nye krav i Kvalitetsstandarden for basal palliation og kommunal sygepleje.\nHelsingør kommunes forslag indenfor temaet:\nFaldforebyggelse – Styrke kompetencer og tid til tværfaglig screening samt systematiske\nindsatser til opfølgning med borger, der er faldtruet for at forebygge indlæggelser\nBasal palliation – kapacitetsopbygning over døgnet på tværs af enheder i Sundhed og\nOmsorg for at styrke opsporing, løbende afdækning af behov, fælles plan for den\nenkelte borger samt styrke kompetencer i basal palliation bredt i hjemmeplejen og på\nplejehjem og døgnpladser, herunder arbejde med lokale videnspersoner.\n\nDet samlede beløb ved en fordeling med 75 % af midlerne til disse indsatser giver i alt 3,15\nmio.kr.\n2.3. Børn og unge i mistrivsel og med psykisk lidelse: Fokus på familier”\nHelsingør kommunes forslag indenfor temaet:\nMed afsæt i Trivselskommissionens anbefalinger foreslås en styrket, tidlig og forebyggende\nindsats, der understøtter forældreskabet gennem hele barnets opvækst fra 0-18 år. Formålet er\nat styrke forældres viden, kompetencer og handlemuligheder i relation til børns og unges trivsel\nog udvikling.\nIndsatsen omfatter aldersdifferentierede forældreforløb, oplæg, rådgivning og psykoedukation,\nsom giver forældre konkrete redskaber til at håndtere almindelige udviklingsmæssige\nudfordringer, herunder følelsesregulering, konflikter, sociale relationer, digitale medier,\nskærmbrug og overgange i børne- og ungdomslivet.\nMålet er at styrke forældres tryghed og mestringsevne, normalisere almindelige udfordringer i\nbørn og unges udvikling samt forebygge mistrivsel, ængstelighed og problematisk skolefravær.\nPå længere sigt skal indsatsen bidrage til bedre mental sundhed, øget deltagelse i\nfællesskaber og et reduceret behov for specialiserede indsatser.\n\nDet samlede beløb ved en fordeling med 25 % af midlerne til disse indsatser giver i alt 1,05\nmio.kr.\nDer vil alene blive indgået aftale for 2027 om anvendelse af de ikke-bundne midler, da\nnærsundhedsplanen først bliver vedtaget af Sundhedsrådet i 2027. Midlerne bør dog\nstadigvæk medvirke til den langsigtede kapacitetsopbygning.\n3. De bundne midler\nDe bundne midler udgør 1,3 mio. kr. til Helsingør Kommune. Midlerne er i 2027 bundet til\nnationale tværgående kvalitetsstandarder for almen kommunal sygepleje samt udbredelse af\nmere ensartet basal palliation i borgerens hjem.\nDet er aftalt nationalt, at midlerne udmøntes af sundhedsrådet, og at de er fordelt mellem\nkommunerne efter indbyggertal.\n4. Kvalitetsstandarder for kommunal sygepleje og basal palliation\nSundhedsstyrelsen har sendt kvalitetstandarder for kommunal sygepleje og basal palliation i\nhøring. Jf. kommissoriet for arbejdet er formålet med kvalitetsstandarderne at bidrage til fortsat\nudvikling og forbedringer af de kommunale sundhedsindsatser.\nMidlerne fra investeringsmotoren skal derfor ses i sammenhæng med over en årrække at\nstyrke sygeplejen, så den lever op til kvalitetsstandardens krav om ”en fagligt stærk,\ntilgængelig og døgndækket kommunal sygepleje”, da flere sundhedsindsatser skal løftes nært i\nprimær sektor fremadrettet. Midlerne skal derfor bidrage til at styrke systematisk\nkompetenceudvikling og kapacitet i fht. både medarbejdere og ledelse.\nKvalitetsstandardenerne består af både bindende krav til kommunale indsatser og ikkebindende anbefalinger. ”Bindende krav” er nationalt bindende kvalitetskrav for den kommunale\nsygepleje i alle kommuner. ”Ikke-bindende anbefalinger” er faglige anbefalinger for den\nkommunale sygepleje og basal palliation, som kan omsættes og tilpasses lokalt igennem\naftaler mellem sundhedsråd og kommuner med udgangspunkt i lokale behov og\norganiseringer. En af de ikke-bindende anbefalinger omhandler de kommunale sygeplejerskers\nudvidede virksomhedsområde. Midler fra den kommunale investeringsmotor skal ikke\nanvendes til sygeplejerskers udvidede virksomhedsområde, idet dette skal finansieres af\nregionale midler.\n5. Opfølgning på indsatserne\nDet er aftalt nationalt, at det ikke er hensigten, at sundhedsrådene skal foretage en\nudgiftsopfølgning i kommunerne.\nOpfølgningen skal give sundhedsrådet et grundlag for at følge aktiviteter og resultater af de\nprioriterede indsatser samt understøtte sammenhængen med nærsundhedsplanen og øvrige\naktiviteter i det nære sundhedsvæsen.\n\nDer forelægges på den baggrund en samlet årlig status for sundhedsrådet vedrørende de\nbesluttede indsatser.\n\nRetsgrundlag\nLov om overgangen til en ny sundhedsstruktur (overgangsloven)\nSundhedsloven\n\nRelation til vision og tværgående politikker\nSundhedspolitik 2023-2030 – Lev livet hele livet\n\nØkonomi/Personaleforhold\nUdmøntning af midlerne foregår ved, at kommunerne sender en regning til Region\nØstdanmark, hvor det fulde beløb for de besluttede indsatser fremgår. Regningen skal være\nudspecificeret på de enkelte indsatser og varighed. Kommunen kan derefter budgettere på\naftalt indtægt.\nMidlerne vil blive indarbejdet i budget 2027 under hhv. budgetområde 517 Udsatte børn og 619\nOmsorg og Ældre. Midlerne kan ikke overføres mellem budgetår og skal derfor anvendes i\n\nKommunikation/Høring/Borgerinddragelse\nSagen er sendt i høring i Seniorrådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Seniorrådet er godt tilfreds med, at de ekstra 3,15 millioner går til en bedre koordineret\nindsats mod faldulykker og til opkvalificering af den lindrende pleje i den sidste svære tid.\nVi glæder os over, at det vil komme både hjemmeboende og plejehjemsbeboere til gode.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9163,10 +9191,10 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Mødeplan for 2027",
    "afsnit": [
     {
@@ -9176,6 +9204,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der foreligger forslag til mødeplan for 2027 Seniorrådet.\nMødedatoer er fastsat under hensyntagen til hvornår Omsorgs- og Sundhedsudvalget har\nmøde sådan, at eventuelle høringssager og høringssvar til og fra rådet kan nå at blive\nbehandlet inden Omsorgs- og Sundhedsudvalgets møde.\nDerudover er der fastlagt 2 fællesmøder mellem Omsorgs- og Sundhedsudvalget og\nSeniorrådet og 2 fællesmøder mellem formandskabet i Omsorg- og Sundhedsudvalget,\ncenterchef og Seniorrådet.\nSeniorrådet skal desuden aftale egne mødedatoer i januar og august."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Seniorrådet godkendte mødeplanen og besluttede desuden at holde møder den 4. januar\nog den 16. august 2027\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9185,10 +9217,10 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Punkter til fællesmøde med formandskabet i Omsorgs- og Sundhedsudvalget samt centerchef",
    "afsnit": [
     {
@@ -9198,6 +9230,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles:\nat Seniorrådet finder forslag til drøftelse med formandskabet og centerchef."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet udsat til møderne 30. november 2026 og 4. januar 2027.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9207,10 +9243,10 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Punkter til fællesmøde med Omsorgs- og Sundhedsudvalget",
    "afsnit": [
     {
@@ -9220,6 +9256,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles:\nat Seniorrådet drøfter de punkter, som ønskes drøftet med Omsorgs- og\nSundhedsudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen blev vedtaget.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9229,10 +9269,10 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Orientering fra seniorrådsmedlemmerne, herunder fra arbejdsgrupper mv",
    "afsnit": [
     {
@@ -9242,6 +9282,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles:\nat Seniorrådet opdaterer listen over kommende møder og aftaler deltagelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Samkørsel til de kommende møder blev aftalt. Julefrokosten holdes under private former\nefter mødet den 30. november.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9251,10 +9295,10 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Besøg af centerchef Nikolaj Hvingtoft Hansen, Center for By, Land og Vand",
    "afsnit": [
     {
@@ -9264,6 +9308,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Seniorrådet ønsker at drøfte følgende punkter med centerchefen:\n1. Seniorboliger\nSeniorrådet er meget optaget af at skaffe nok senioregnede boliger i alle lokalområder. Vi\nglæder os over, at det er tænkt ind i stort set alle nye bebyggelses- og lokalplaner, men vi får\ndem sjældent til høring.\nDer er stor efterspørgsel på seniorbofællesskaber, men også en voksende erkendelse af\nbegrænsningerne:\n\npå den ene side bliver man hurtigt for gammel til at blive optaget. Det rammer blandt andet\nmange enker og enkemænd.\npå den anden side sander bofællesskaberne til, hvis der ikke er tilstrækkelig udskiftning,\ndvs for mange rigtig gamle til at holde fællesskaberne i gang.\nmange kollektiv- og ældreboliger er meget små og derfor ikke i trit med de nye\ngenerationernes ønsker.\n\nHvordan arbejder Bylab med disse ting? Og er der nye tiltag på vej for at sikre flere\nhandicapvanlige seniorboliger? Hvordan fungerer samarbejdet med boligselskaberne?\nEr der plantekniske hindringer for udnyttelse af parcelhuse og andre bygninger til mindre\nbofællesskaber?\n2. Kollektiv transport\n\nHelt aktuelt har vi de store omlægninger af busser og Hornbækbanen efter spærring af\nHavnegade og Møllebakken. I begge tilfælde har vi reageret på åbenlyse urimeligheder, som tak for det! - er blevet ændret til fordel for kunderne, men hvorfor er det ikke tænkt ind fra\nstarten, at der skal være de fornødne stoppesteder, at chaufførerne skal have besked om\nændringerne, og at hele byområder får langt til bussen?\nVi ønsker os kort sagt, at den kollektive betjening bliver tænkt ind i alle større projekter helt fra\nstarten, så det ikke bliver hovsa-løsninger. Og at Bylab involverer Seniorrådet og/eller\nDialoggruppen om tilgængelighed så tidligt, at vi kan nå at reagere i tide.\nHerudover undrer vi os over, at projekter som Møllebakken, Havnegade og Rønnebær Alle\ngennemføres med total vejspærring i så mange måneder. Det er centrale trafikårer af stor\nbetydning for mange menneskers hverdag og giver afledt trafikpres på ellers mere fredelige\nveje i de tilstødende områder.\nHvorfor tager det så lang tid, og hvorfor kan man ikke holde den ene vejbane åben, måske en\ndel af tiden?\nSagen om den manglende betjening af Karetmagervej i Hornbæk har principiel betydning, og vi\nvil gerne orienteres om status og planer. Lige som plejehjemmet Falkenberg blev bygget på\nbar mark uden for byen, valgte man i sin tid at bygge seniorboliger på en grund, der kræver\nsærskilt busbetjening. Man bliver kun visiteret til en ældrebolig, hvis man er dårligt gående eller\npå anden måde svagelig, men ikke alle har adgang til Movias Flexhandicap, og almindelig\nFlextur er stadig dyr og besværlig, hvis man bare vil et smut ind til byen i det daglige.\nVi er bekendt med, at Boliggården har tilbudt at betale for udgifterne til vejarbejde, så bussen\nkan dreje ind om Karetmagervej. Der bor også mange ældre på de tilstødende veje. Det klinger\nhult, at kommunen vil bekæmpe ensomhed, når det skal være så svært bare at komme et smut\nind og handle i butikkerne. Så hvad er det, der forhindrer, at linje 341 igen bliver til 347?\nEndelig vil vi gerne vide, hvor vi kan finde opsamlede erfaringer med gratis offentlig transport i\nde kommuner, der har prøvet det - så vidt vides i Herning, Ikast-Brande, Fredericia, Ærø, på\nFrederiksberg og delvist i Svendborg og Slagelse. Hvad ved vi om tilfredsheden og\nudfordringerne - ud over de økonomiske?\n3. Offentlige toiletter\nDe lokale ældreorganisationers samarbejde om fokus på offentlige toiletter har båret\nbegrænset frugt. Vedligeholdelsen og renholdelsen er blevet mærkbart bedre, men der\nmangler stadig tydelig skiltning og henvisning. Vi oplever, at den opgave falder ned mellem\nflere stole, så ingen rigtig synes, at det er deres bord.\nVi tillader os at betragte det som en sejr, at handicaptoilettet ved Espergærde havn og strand\nnu bliver helårsåbent. Til gengæld er der stadig vinterlukket i Snekkersten havn, hvor\nkommunen kun gør rent i sommerhalvåret, og der er ikke kommet erstatning for det døgnåbne\ntoilet ved busterminalen i Helsingør. Sker der noget med det politiske forslag om indretning af\ntoilet i den tidligere ventesal?\n\nAlternativt kan man i flere andre byer se kabiner opstillet, med eller uden betaling og med eller\nuden reklamer til finansieringen. Det kunne netop på det sted være en mulighed, da der\nallerede er strøm og afløb i fortovsarealet, hvor det gamle toilet befandt sig.\nOg når vi er i gang, så må kommunen kunne organisere en bedre trappe fra busterminalen til\nAnkerpladsen - selv om den er midlertidig. Den er decideret farlig for dårligt gående. Endnu en\nlille, men vigtig opgave, der åbenbart falder ned mellem flere stole...\n4. Flere bænke\nVi har med glæde noteret os, at der er kommet flere bænke op i indre by, og også flere steder\nved skovstierne i nærområdet. Men der er plads til flere, og det er et tema, vi vil arbejde mere\nmed i det nye Seniorråd. Er der noget, vi skal vide, om kommunens planer på området?"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Besøget blev udsat til mødet den 30. november 2026.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9273,10 +9321,10 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Status på Seniorrådets økonomi",
    "afsnit": [
     {
@@ -9286,6 +9334,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles:\nat Seniorrådet tager orienteringen om seniorrådets økonomi til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "De sidste praktiske ting omkring økonomien i 2026 og 2027 blev landet. Merete tager et\nvisuelt overblik med til mødet tirsdag med Udvalget for Omsorg og Sundhed.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9295,19 +9347,23 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Punkter til kommende møder",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "v/Pernille\nFølgende er pt. på listen over punkter til kommende møder:\n\nBesøg af centerchef Nikolaj Hvingtoft Hansen (2 mødedatoer i 2027)\nSundhedsreformen – punkt under nyt fra centerchefen\nSeniorrådet ønsker at blive holdt tæt informeret med særligt fokus på den forebyggende\nindsats.\nRegeringens demens-udspil – når det kommer.\nBeredskab og sårbare borgere (sårbarhedsanalyse)\nSvingelport 7 og 8A, Ejendomsservice\nStatus på Hamlet\nAktiviteter for blinde og svagtseende\nMøde med kommunens demenskonsulent\nLokal seniorbank (jobbank for seniorer)\nBesøg på plejehjemmene – Seniorrådet ønsker at besøge plejehjemmene\nSygefravær"
+     "tekst": "v/Pernille\nFølgende er pt. på listen over punkter til kommende møder:\n\nBesøg af centerchef Nikolaj Hvingtoft Hansen (den 30. november samt 2 mødedatoer i\nSundhedsreformen – punkt under nyt fra centerchefen\nSeniorrådet ønsker at blive holdt tæt informeret med særligt fokus på den forebyggende\nindsats.\nRegeringens demens-udspil – når det kommer.\nBeredskab og sårbare borgere (sårbarhedsanalyse)\nSvingelport 7 og 8A, Ejendomsservice\nStatus på Hamlet\nAktiviteter for blinde og svagtseende\nMøde med kommunens demenskonsulent\nLokal seniorbank (jobbank for seniorer)\nBesøg på plejehjemmene – Seniorrådet ønsker at besøge plejehjemmene\nSygefravær\nMøde med ny leder af hjemmeplejen Kristine Fischer"
     },
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles:\nat Seniorrådet gennemgår listen over punkter til kommende møder, tilføjer og sletter\npunkter og evt. fastsætter dato for behandling af punkterne til et kommende\nseniorrådsmøde."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Møde med den nye leder af Hjemmeplejen blev tilføjet.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -9317,15 +9373,15 @@
    "kommune": "Helsingør",
    "udvalg": "Seniorrådet",
    "dato": "2026-11-02",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.helsingor.dk/vis?id=57b1379d-407f-409e-8f76-16885746a553",
-   "hentet": "2026-10-27T19:35:18.924Z",
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=374bf8f3-03b6-4d6d-8249-49056e6c04c6",
+   "hentet": "2026-11-19T13:24:01.627Z",
    "titel": "Evt",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Fraværende: Jens Kirkegaard\n\nEvt.\nSagen afgøres i:\nSeniorrådet 2026-2029"
+     "titel": "Beslutning",
+     "tekst": "Intet.\nFraværende:\nJens Kirkegaard"
     }
    ],
    "bilag": []
@@ -11075,6 +11131,486 @@
     }
    ],
    "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-1": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-1",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nØkonomi- og Erhvervsudvalget 2026-2029"
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-2": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-2",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Endelig vedtagelse af Kommuneplan",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Offentlig høring\nByrådet besluttede den 22. september 2025 at sende forslag til Kommuneplan 2025 i otte\nugers offentlig høring. Høringen fandt sted fra den 29. september til den 25. november 2025.\nDet dengang fremlagte kommuneplanforslag fremgår af bilag 2.\nDer indkom 39 høringssvar fra blandt andet borgere, foreninger og interesseorganisationer. En\nsammenfatning af høringssvarene samt administrationens bemærkninger og vurderinger\nfremgår af hvidbogen i bilag 3. Høringssvarene i deres fulde længde fremgår af bilag 4.\n2. Statslige bemærkninger\nDer kom desuden bemærkninger fra seks statslige myndigheder. Flere af bemærkningerne\nkunne have ført til statslige indsigelser efter planloven. Det ville betyde, at kommuneplanen\nførst kunne vedtages endeligt, når der var opnået enighed med de pågældende myndigheder\nom de nødvendige ændringer.\nAdministrationen har derfor været i dialog med myndighederne. Dialogen har ført til aftaler om\nen række ændringer og præciseringer af kommuneplanforslaget. På den baggrund har\nmyndighederne undladt at fremsætte indsigelser, forudsat at de aftalte ændringer indarbejdes i\nden endelige kommuneplan.\n\nAftalenotaterne fremgår af bilag 5, mens myndighedernes høringssvar i deres fulde længde\nfremgår af bilag 6.\n3. Ændringer i forbindelse med den endelige vedtagelse\nAdministrationen anbefaler en række ændringer på baggrund af høringen og\nmyndighedsdialogen. En samlet oversigt over ændringerne i forhold til det fremlagte\nkommuneplanforslag fremgår af bilag 7.\n3.1. Ændringer af kommuneplanrammer\nAdministrationen anbefaler følgende ændringer i kommuneplanens rammer i forhold til det\noprindeligt fremlagte kommuneplanforslag:\nRammerne ved Helsingør Station tilpasses efter aftale med Banedanmark.\nBanedanmarks arealer samt arealer omfattet af nationale interesser udtages af\nrammerne til boligformål (1.B61) og offentlige formål (1.D78) og overføres til den\neksisterende ramme til tekniske formål ved stationen (1.T1).\nRammerne ved Snekkersten Station tilpasses efter aftale med Banedanmark. Arealer\nejet af Banedanmark og DSB udtages af rammerne til boligformål (1.B69) og blandet\nbolig og erhverv (1.BE61) og overføres til den eksisterende ramme til tekniske formål\nved stationen (1.T61).\nRammen ved Espergærde Station tilpasses efter aftale med Banedanmark.\nBanedanmarks arealer udtages af rammen til offentlige formål (3.D14) og overføres til\nen ny ramme til tekniske formål (3.T2).\nPå baggrund af høringssvar fra omkringboende fastsættes en maksimal\nbebyggelsesprocent på 45 for rammerne 1.BE61 (Poppelhaven) og 1.BE60\n(Poppelgården). For Poppelhaven fastsættes desuden et maksimalt etageantal på to.\nEjendommen Nørrevej 91 udtages samtidig af ramme 1.BE61 og tilbageføres til ramme\n1.B63 i overensstemmelse med hidtil gældende Kommuneplan 2019. Ændringerne\nudskyder en eventuel fortætning til, at der foreligger et konkret projekt.\nRammeafgrænsningen ved Kronborgvej ændres, så den afspejler områdets forventede\nfremtidige anvendelse. Et område overføres fra ramme 1.BE14 til ramme 1.B1 i\noverensstemmelse med hidtil gældende Kommuneplan 2019. De hidtil gældende\nbestemmelser om bygningshøjde, afstand til nabobygning og Kronborgvej,\nfacadelængder og variation i bygningshøjder fastholdes dermed som særlige\nbestemmelser for området.\nRamme til teknisk anlæg ved Sanderødgård udgår som følge af en aftale med Styrelsen\nfor Grøn arealomlægning og Vandmiljø.\nRamme 4.F4 omkring Nordkysthallen suppleres med en bestemmelse, der tillader\nlysmaster op til 20,2 meter. Ændringen følger af et kommuneplantillæg til hidtil\ngældende Kommuneplan 2019, som er vedtaget inden den endelige vedtagelse af den\n\nnye kommuneplan.\nRamme 7.B6 for Horserød Statsfængsel tilpasses, så den omfatter hele den samlede\nbebyggelse. Der er tale om en administrativ præcisering.\n\n3.2. Ændringer af kommuneplanens retningslinjer og udpegninger\nAdministrationen anbefaler desuden følgende ændringer af kommuneplanens retningslinjer og\nudpegninger i forhold til det oprindeligt fremlagte kommuneplanforslag:\nDer indføres en opmærksomhedszone på 500 meter omkring Banedanmarks\nopstillingsspor og arbejdsarealer. Opmærksomhedszonen indebærer et\nredegørelseskrav ved fremtidig planlægning for miljøfølsom anvendelse.\nOmrådet ved Skibstrup fastholdes som bevaringsværdigt landskab svarende til hidtil\ngældende Kommuneplan 2019. Ændringen sker på baggrund af høringssvar.\nDer indarbejdes generelle retningslinjer for telemaster og antenner på baggrund af\nbemærkninger fra Digitaliseringsstyrelsen.\nDer indarbejdes retningslinjer for transportkorridoren på baggrund af bemærkninger fra\nVejdirektoratet.\nDer indarbejdes generelle retningslinjer for vindmøller på baggrund af bemærkninger fra\nEnergistyrelsen.\nUdpegninger til ønsket skovrejsning ved Havreholm reduceres som følge af en aftale\nmed Styrelsen for Grøn arealomlægning og Vandmiljø.\nUdpegninger til ønsket skovrejsning ved Kvistgård reduceres som følge af en aftale med\nStyrelsen for Grøn arealomlægning og Vandmiljø.\nRetningslinjerne for bevaringsværdige landskaber og større sammenhængende\nlandskaber ændres som følge af en aftale med Styrelsen for Grøn Arealomlægning.\nListen over bevaringsværdige bygninger opdateres på baggrund af det seneste\ndatagrundlag. Ændringen er en administrativ rettelse.\nOmrådet udlagt til fremtidig byzone ved Hornbækvej udgår. Ændringen er en\nadministrativ rettelse.\nVejudlægget ved Falkenbergvejs forlængelse til Ellekildevej udgår. Ændringen er en\nadministrativ rettelse.\n\n3.3. Ændringer i redegørelse og redaktionelle rettelser\nKommuneplanens redegørelse er præciseret og suppleret på en række områder. Beskrivelser\nog planlægningsmæssige forudsætninger er opdateret og uddybet, og relevant fagligt og\nlovgivningsmæssigt grundlag er tilføjet.\n\nRedegørelsen er desuden tilpasset de ændringer i rammer, retningslinjer og udpegninger, der\nfølger af den offentlige høring og dialogen med de statslige myndigheder.\nHerudover er der foretaget mindre redaktionelle og tekniske rettelser uden betydning for\nplanens indhold.\n4. Supplerende høring\nSyv af de foreslåede ændringer til kommuneplanforslaget blev vurderet at være så væsentlige,\nat de efter planloven skulle sendes i supplerende høring inden den endelige vedtagelse.\nByrådet besluttede derfor den 7. september 2026 at sende de syv ændringer i supplerende\nhøring i to uger. Høringen blev gennemført fra den 9. september til den 23. september 2026.\nDe ændringer, der blev sendt i høring, fremgår af dagsordenen til Byrådets møde den 7.\nseptember 2026.\nDer indkom fire høringssvar i den supplerende høring. En sammenfatning af høringssvarene\nsamt administrationens bemærkninger og vurderinger fremgår af hvidbogen i bilag 8.\nDe modtagne høringssvar fremgår i deres fulde helhed af bilag 9.\nAdministrationen vurderer, at høringssvarene ikke giver anledning til yderligere ændringer. Det\nanbefales derfor, at de syv ændringer fastholdes og indarbejdes i kommuneplanen ved den\nendelige vedtagelse.\n5. Sammenfattende redegørelse for miljøvurdering\nForslag til Kommuneplan 2025 er miljøvurderet i henhold til miljøvurderingsloven.\nEfter høringen er der udarbejdet en sammenfattende redegørelse, som beskriver, hvordan\nmiljøvurderingen og de indkomne høringssvar er inddraget i den endelige udformning af\nkommuneplanen. Redegørelsen forholder sig desuden til, om ændringerne efter høringen giver\nanledning til en ny, eller supplerende miljøvurdering.\nDet vurderes, at de ændringer, der er foretaget efter høringen, hverken enkeltvis eller samlet\nmedfører nye væsentlige miljøpåvirkninger eller ændrer miljørapportens grundlæggende\nforudsætninger. Ændringerne giver derfor ikke anledning til en ny miljøvurdering eller til at\nændre eller supplere den eksisterende miljørapport. Den eksisterende miljørapport vurderes\nfortsat at være dækkende for den endeligt vedtagne kommuneplan.\nMiljøvurderingen og den sammenfattende redegørelse fremgår samlet af bilag 10.\n\nØkonomi/Personaleforhold\nSagen har ingen direkte økonomiske konsekvenser for Helsingør Kommune.\n\nKommunikation/Høring/Borgerinddragelse\n\nForslag til Kommuneplan 2025 var i offentlig høring fra den 29. september til den 25. november\n2025. Som led i høringen blev der den 7. oktober afholdt et borgermøde med deltagelse af ca.\n30 borgere, interessenter og politikere.\nSyv væsentlige ændringer til kommuneplanforslaget har efterfølgende været i supplerende\nhøring fra den 9. september til den 23. september 2026. Høringen blev offentliggjort på\nkommunens hjemmeside, og høringsmaterialet om de konkrete ændringer blev desuden sendt\ndirekte til relevante parter.\nSagens forløb\n\nBy-, Plan- og Trafikudvalget den 5. november 2026\nØkonomi- og Erhvervsudvalget den 23. november 2026\nByrådet den 30. november 2026"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By, Land og Vand indstiller,\nat Kommuneplan 2026 med de foreslåede ændringer samt den tilhørende\nsammenfattende redegørelse for miljøvurdering vedtages endeligt."
+    },
+    {
+     "titel": "Behandling i By-, Plan- og Trafikudvalget 5. november 2026",
+     "tekst": "Mette Lene Jensen (V), Knud Vinther Hansen, Janus Kyhl og Birgitte Bergman (C) samt\nMarianne Victor Hansen (F) anbefaler indstillingen med bemærkning om, at koblingen i\nindledningen om gaskværksgrunden udgår.\nMalthe Jacobsen (Ø) stemte imod.\nFraværende:\nBetina Svinggaard"
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-3": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-3",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Godkendelse af klimaplan",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By, Land og Vand indstiller,\nat forslag til ny klimaplan for Helsingør Kommune godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Helsingør Kommune var i 2019 blandt de første 20 kommuner i Danmark til at få en\ninternationalt certificeret klimaplan gennem Klimaalliancen, som er et partnerskab mellem KL\nog RealDania og Concito som videnspartner. Samtidig forpligtede kommunen sig til at opdatere\nplanen løbende (re-certificering), så den bygger på opdateret viden og lever op til\nKlimaalliancens krav til kommunale klimaplaner.\nPå den baggrund har administrationen udarbejdet et forslag til ny klimaplan for Helsingør\nKommune. Den nye klimaplan erstatter den nuværende Klima- og Bæredygtighedsplan samt\nKlimatilpasningsplan og samler dermed kommunens klimaarbejde med at reducere\ndrivhusgasudledninger, styrke klimatilpasningen og nedbringe forbrugets klima- og\nressourceaftryk frem mod 2045. Se bilag 1 (Klimaplan).\n\nConcito og C40 har i september gennemgået forslag til ny klimaplan i henhold til internationale\nmetodiske standarder og har blåstemplet planen. Det betyder, at planens ambitionsniveau og\nretning er forenelig med Parisaftalen. Certificeringen er betinget af, at kommunen etablerer et\nmonitoreringssystem i 2027. Se bilag 2 (Appendix).\n1. Fra plan til strategisk ramme\nStatus på klimaindsatsen viser, at omstillingen går godt. Samtidig bliver de næste faser af\nomstillingen sværere. Det kræver prioriteringer og en fælles retning på tværs af politikområder\nog beslutningsprocesser - både administrativt og politisk. Det indebærer bl.a. en tydeligere\nstyringsramme, tværgående beslutningsprincipper og klimabudgettering. Formålet er at styrke\nkvaliteten i beslutningsgrundlaget og danne grundlag for hvordan Helsingør Kommune arbejder\nmed og taler om omstillingen.\nKlimaplanen tager afsæt i fire styringsprincipper:\n1. Undgå, skift, forbedr: En strategisk tilgang som fremmer aktiv stillingtagen på tværs af\nfagområder, hjælper med at tænke forebyggende, og understøtter bæredygtige valg.\n2. Bevar eller forklar: Bevaring, transformation og renovering af bygninger undersøges og\nprioriteres frem for nybyggeri eller nedrivning.\n3. Kommunen som frontløber: Vi viser retningen og sætter ambitiøse mål til inspiration for\nborgere og virksomheder.\n4. Klima- og ressourcekrisen løses i fællesskab: Kommunen kan ikke nå målene alene og\nalle tager del i omstillingen.\n\nKlimaplanen er en overordnet strategisk ramme med overordnede handlinger, og ikke et\ndetaljeret handlingskatalog. Formålet er at skabe en fleksibel ramme med plads til og fokus på\nudvikling, inddragelse og implementering.\nSamtidig følges klimaplanens fremdrift tæt. Årligt afrapporteres fremdriften via fastlagte KPI’er,\nog kobles til budgetprocessen for at synliggøre nødvendige indsats- og ressourcebehov. Hvert\n4. år afrapporteres fremdriften supplerende med opdaterede kortlægninger og analyser. Dette\nsker som led i revision af planen, som ligeledes foretages hvert 4. år.\n2. En fælles retning med nye ambitiøse mål og fokusområder\nPlanen fastlægger ambitiøse mål på kort, mellem og lang sigt for kommunen som virksomhed,\nog for borgere og virksomheder i kommunen.\nDet langsigtede reduktionsmål indenfor kommunens geografi er at opnå 110 %\nreduktion i 2050. Helsingør Kommune tangerer dermed Regeringens nye mål.\nFor klimatilpasning er visionen at gøre Helsingør Kommune til et sted, hvor mennesker\ntrives, hvor vi er robuste mod klimaforandringer og har begrænset skaderne. Der er\nspecifikke mål for kystsikring og håndtering af vand.\n\nSamtidig tages et større ansvar for udledninger relateret til forbrug. Pejlemærket er at\nhalvere den forbrugsbaserede udledning pr. borgere frem mod 2035.\n\nPå baggrund af vidensgrundlaget, kravene til planen og den lokale kontekst, får fem områder\net særligt omstillingsfokus:\n\na. Vores arealer:\nDer skal arbejdes med at tænke flere funktioner ind på det samme areal frem for at\nplanlægge for separate arealbehov. Samtidig skal Helsingør være mere robust over for\nklimaforandringer ved blandt andet at beskytte kysterne, håndtere øgede\nnedbørsmængder, anvende naturbaserede tilpasningsløsninger, overvåge klimarisici og\nafledte skader og styrke beredskabet.\n\nb. Forbrug:\nDer skal arbejdes med at reducere klima- og ressourceaftrykket fra forbrug med særligt\nfokus på fødevarer og øvrige goder. Det omfatter både kommunens egne indkøb og\narbejdet med at understøtte mere bæredygtige valg blandt borgere og virksomheder.\n\nc. Byggeri og bevaring:\nDer skal arbejdes med at reducere klima- og ressourceaftrykket fra byggeri og anlæg.\nDet indebærer blandt andet at begrænse behovet for nybyggeri og bremse udviklingen\nmed flere boligkvadratmeter pr. borger. Fokus er på bedre udnyttelse af eksisterende\nbygningsmasse gennem transformation, renovering, fortætning og cirkulært byggeri, så\nværdien af eksisterende bygninger og ressourcer bevares længst muligt. For\nkommunens egne bygge- og anlægsprojekter skal der samtidig arbejdes med fælles\nklima- og ressourcekrav.\n\nd. Grøn mobilitet:\nDer skal arbejdes med at reducere væksten i biltrafikken blandt andet gennem\nmobilitetsplanlægning samt bedre forhold og fremkommelighed for cyklister og gående.\nSamtidig skal transportsektoren elektrificeres. For kommunens egen virksomhed skal\nder arbejdes med at omstille bilflåden og maskiner til el, og cykles mere.\n\ne. Energi og varme:\nDer skal arbejdes med energibesparelser, udfasningen af olie og gas til opvarmning, og\nopsætning solceller hos borgere og virksomheder. For kommunens egen virksomhed\nskal der arbejdes med at udfase brugen af fossile brændsler til varme i kommunale\nbygninger, opsætte solceller og forbedre energimærkerne.\n\n3. Klimaarbejdet fremadrettet\nMed Klimaplanen fastlægges den strategiske retning. Den konkrete gennemførelse vil ske\ngennem kommunens faglige planer, projekter, budgetprioriteringer og samarbejder med\naktører inden og uden for kommunen.\nSom følge af planens nye fokus og skærpede ambitioner forventer administrationen desuden at\nfremlægge forslag til en ændret anvendelse af midlerne i Klimapuljen. Formålet er at målrette\nmidlerne, så de bedre understøtter den nye klimaplans fremdrift, prioriteringer og mål.\nAdministrationen forventer at fremlægge forslaget i Klima- og Bæredygtighedsudvalget i\ndecember.\n\nRetsgrundlag\nIngen bemærkninger.\n\nRelation til vision og tværgående politikker\nKlimaplanen går på tværs af en række kommunale politikker og planer. Sammenhængene\nfremgår af Klimaplanens afsnit Samspil med planer og politikker.\n\nØkonomi/Personaleforhold\nFinansiering af planen håndteres med budgetønsker via ordinære budgetproces eller\nforelægges særskilt til politisk beslutning i relevante fagudvalg.\n\nKommunikation/Høring/Borgerinddragelse\nAdministrationen udarbejder en pixiudgave af Klimaplanen, som er printvenlig og målrettet\nekstern kommunikation."
+    },
+    {
+     "titel": "Behandling i Klima- og Bæredygtighedsudvalget 4. november 2026",
+     "tekst": "Forslag til ny klimaplan for Helsingør Kommune anbefales med diverse redaktionelle\nændringer."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-5": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-5",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Forslag til nyt regulativ for vand - Forsyning Helsingør Vand A/S",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By, Land og Vand indstiller,\nat forslag til nyt regulativ godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det nye regulativ for Forsyning Helsingør Vand A/S (bilag 1) følger Danske Vandværkers og\nDANVA’s opdaterede standard skabelon for regulativtekst i forlængelse af en afgørelse fra\nMiljø- og Fødevareklagenævnet 16.januar 2024 (21/01106). Regulativet fastsætter reglerne\nfor, hvordan Forsyning Helsingør Vand leverer vand til forbrugerne, forholdet mellem\nforbrugerne og vandforsyningen og hvordan vandforsyningen opkræver takster og\ntilslutningsafgifter.\nForslag til regulativ er også revideret mht. en række bestemmelser, der er specifikke for\nForsyning Helsingør Vand A/S, hvoraf nogle er foreslået udtaget da de ikke længere er udtryk\nfor gældende praksis.\nOpdateringen af standardregulativet omfatter de punkter, der fremgår af Bilag 2. De specifikke\nændringer i regulativet fremgår af bilag 3.\nDe væsentligste ændringer i regulativet er som følger:\n1.1.13 Ejendomsbegrebet: Ejendomsbegrebet er præciseret med en henvisning til\nudstykningslovens ejendomsbegreb. Dette med henblik på at sikre en klar afgrænsning af\nforståelsen af regulativets bestemmelser.\n3.3 Spinkling: Det eksisterende vandregulativ indeholder bestemmelser om sprinkling. Disse\n\nbestemmelser foreslås udtaget af regulativteksten og i stedet indarbejdet i en vejledning, der\noffentliggøres på forsyningens hjemmeside.\n7 Brandhaner (Brandslukning): Udgifter til nødvendige reduceringer af ledningsdimensioner for\nbrandhaner betales af vandforsyningen og ikke af kommunen. Disse omkostninger skal derfor\nindregnes i taksterne.\nKommunen er dog som tilsynsmyndighed efter omstændighederne forpligtet til at reagere på\nen oplysning fra vandforsyningen om defekte eller overflødige brandhaner, og kan i den\nforbindelse anmode vandforsyningen om at foretage foranstaltninger til sikring heraf mod, at\nkommunen betaler for arbejdet.\n8.1.8 Lukning for vandet på ejerens bekostning: Vandforsyningen må ikke lukke for vandet i\nsituationer, hvor ejeren forsømmer forpligtelser, som påhviler ejeren med hensyn til\nvandinstallationer.\nKommunen er tilsynsmyndighed og vandforsyningen må derfor i stedet for at lukke for vandet\nhenvende sig til kommunen med anmodning om at påbegynde en tilsynssag vedrørende de\nforhold, som er forsømt af ejer. Afsnit om mulighed for at lukke for vandet er derfor udgået af\nregulativteksten.\n9.3 (9.17) Placering af afregningsmålere: En måler skal som det klare udgangspunkt placeres\ninde i huset. Der er på den baggrund foretaget sproglige justeringer i overensstemmelse med\ntilsvarende justeringer i DANVA og Danske Vandværkers branchevejledning.\nTilsyn og afgang til afregningsmålere: Vandforsyningen må ikke lukke for vandet i en situation\nmed risiko for overtrædelse af gældende lovkrav. Bestemmelser om adgang i denne situation\ner derfor udtaget af regulativet.\n9.18, 9.19 Bimålere: Bestemmelser om bimålere anses som et internt anliggende for en\nejendoms ejere og brugere, der ikke vedrører Forsyning Helsingør Vand A/S og udtages af\nregulativet.\n10.3 Eftergivelse af statsafgift ved brud: Regulativet suppleres med fastlæggelse af selvrisiko\nfor ejendomme med flere boligenheder. Selvrisikoen fastsættes pr. boligenhed.\n12.2, 14.1.1. Betaling af anlægsbidrag: Regulativet er suppleret med bestemmelse om at\nvandforsyningen kan opkræve gebyr i tilfælde hvor en ejer bryder plomberingen eller på anden\nvis skaffer sig afgang til aftagning af vand uden forudgående tilladelse.\n14.3 Ejerskifte: Supplerende afsnit medtaget som erstatning for de afsnit om ejerskifte, som i\ndag er fastsat i de fælles leveringsbestemmelser for Forsyning Helsingør A/S.\n15 Liste over gebyrer: Nyt afsnit med angivelse af de enkelte gebyrer, der opkræves\nvedrørende vandforsyning.\n\nCenter for By, Land og Vand anbefaler, at forslag til nyt regulativ godkendes.\n\nRetsgrundlag\nForslag til regulativ skal godkendes af Helsingør Kommune jf. gældende Vandforsyningslovs §\n55. Regulativet er udfærdiget i henhold til gældende bekendtgørelse om almene\nvandforsyningers regulativer og anlægs- og driftsbidrag mv.\n\nRelation til vision og tværgående politikker\nSagen har ingen særskilt relation til vision og tværgående politikker.\n\nØkonomi/Personaleforhold\nSagen har ikke afledte konsekvenser for økonomi og personaleforhold.\n\nKommunikation/Høring/Borgerinddragelse\nSagen giver ikke anledning til særskilt kommunikation/høring/borgerinddragelse."
+    },
+    {
+     "titel": "Behandling i Klima- og Bæredygtighedsudvalget 4. november 2026",
+     "tekst": "Indstillingen anbefales."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-6": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-6",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Ansøgning om underskudsgaranti til skøjtebane på Axeltorv",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Kultur, Erhverv og Fritid indstiller,\nat der gives afslag på ansøgningen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Ansøgning om underskudsgaranti til skøjtebane på Axeltorv\nHelsingør Handel ønsker at etablere en midlertidig skøjtebane på Axeltorv med forventet\nåbning den 13. november 2026 og drift frem til 28. februar 2027.\nSkøjtebanen bliver et gratis tilbud til borgere i alle aldre og besøgende udefra. Både adgang og\nlån af skøjter vil være gratis, og banen forventes at være åben dagligt kl. 12-20.\nProjektet skal skabe et aktivt mødested i vintermånederne og tiltrække flere besøgende til\nbymidten.\nSkøjtebanen etableres i et samarbejde mellem restauranterne på Axeltorv, Helsingør Handel,\nBID-samarbejdet på Axeltorv og Foreningen for Bedre Byliv i Helsingør. Initiativtager og\nprojektleder er Frederik Müller, der driver Hold-An og Gæstgivergården på Axeltorv. Helsingør\nHandel er den formelle ansøger og økonomisk ansvarlig for projektet.\nForeningen for Bedre Byliv støtter projektet med 50.000 kr.\n\n1.1 Tilladelser og drift\nCenter for By, Land og Vand har den 21. oktober 2026 meddelt byggetilladelse til den\nmidlertidige konstruktion og den 26. oktober 2026 udstedt rådighedstilladelse til opstilling af\nskøjtebanen på Axeltorv i perioden 10. november 2026 til 28. februar 2027.\nI tilladelserne er der stillet krav om bemanding og renhold. Skøjtebanen vil derfor være\nbemandet i hele åbningstiden med henblik på udlevering af skøjter, tilsyn, sikkerhed og\nrenhold. Bemanding og renhold er indarbejdet i projektets samlede økonomi.\n2. Økonomi\nDet samlede udgiftsbudget udgør 362.000 kr. ekskl. moms, som er fradragsberettiget.\nBudgettet omfatter etablering og drift af skøjtebanen, herunder udgifter til renhold og praktiske\nopgaver. Bemanding og driftsledelse indgår som arbejdsbidrag uden kontant udgift.\nProjektet finansieres gennem sponsorater fra lokale virksomheder, støtte fra Foreningen for\nBedre Byliv og den ansøgte kommunale underskudsgaranti. Tilsagn om støtte fra Foreningen\nfor Bedre Byliv fremgår ikke at det indsendte budget, da tilsagnet er givet efter\nansøgningsmaterialet, er blevet indsendt.\nFinansiering\n\nBeløb\n\nSamlede budgetterede udgifter\n\nVirksomhedssponsorater\n\nStøtte fra Foreningen for Bedre Byliv\n\nAnsøgt underskudsgaranti\n\nOp til 200.000 kr.\n\nDen samlede private medfinansiering udgør 170.000 kr. Det forventede underskud er dermed\n192.000 kr., som vil kunne dækkes af den ansøgte underskudsgaranti.\nProjektet har ikke til formål at skabe økonomisk overskud. Underskudsgarantien udbetales\nalene på baggrund af et godkendt projektregnskab, der dokumenterer et underskud.\n3. Administrationens vurdering\nAdministrationen vurderer, at skøjtebanen vil være et attraktivt og bredt tilgængeligt\nvintertilbud, som kan skabe aktivitet og fællesskab på tværs af generationer.\nProjektet forventes samtidig at bidrage til øget byliv og understøtte Helsingørs attraktivitet som\nbesøgsdestination uden for højsæsonen.\nAdministrationen vurderer, at de nødvendige tilladelser til etablering og drift af skøjtebanen er\npå plads, og at der er taget højde for krav til bemanding, sikkerhed og forsikring.\nAdministrationen vurderer positivt, at projektet bygger på et lokalt samarbejde mellem\nerhvervsaktører, og at der er opnået økonomisk medfinansiering.\nAdministrationen kan imidlertid af flere grunde ikke anbefale at bevilge en underskudsgaranti til\nprojektet.\n\nDer er ikke tale om en underskudsgaranti i gængs forstand, da en underskudsgaranti som\n\nudgangspunkt bør sikre mod et uforudset økonomisk underskud og ikke anvendes som en\nerstatning for manglende finansiering fra starten.\n\nKommunen bidrager i forvejen med et driftstilskud på 940.000 om året til Foreningen Bedre\nByliv.\n\nEndelig er der ikke i høj nok grad indtænkt alternativ finansiering, der kan nedbringe\nunderskud eller skabe et budget i balance.\n\nAdministrationen anbefaler arrangøren at indgå i yderligere forhandlinger med lokale\nerhvervsdrivende om yderligere sponsorater og medfinansiering for at minimere underskuddet,\nda et muligt underskud vil have konsekvenser for Helsingør Handel og Bedre Bylivs økonomi.\n\nRetsgrundlag\nKommunalfuldmagten.\n\nRelation til vision og tværgående politikker\nVision 2030:\nVi udvikler levende bysamfund med aktive rum og udfoldelsesmuligheder.\nSkabe faciliteter og rekreative udfoldelsesmuligheder, som motiverer til øget sundhed og\net varieret fritidsliv.\nSkabe gode rammevilkår for at drive virksomhed, der bidrager til levende bysamfund.\n\nVi åbner muligheder for fællesskaber, der øger livskvaliteten.\nStyrke rammerne for, at kultur-, idræts- og foreningslivet kan udfolde sig og skabe\ngrobund for fællesskaber.\n\nVi markerer os lokalt, nationalt og internationalt gennem et stærkt kulturliv.\nUdvikle en mangfoldig palette af kulturtilbud, begivenheder og events, som sikrer\nmulighed for oplevelser for alle.\n\nØkonomi/Personaleforhold\nArrangøren ansøger om en underskudsgaranti på op til 200.000 kr.\nDer resterer 144.000 kr. i Puljen til Større Events i 2026.\nDer er foruden denne ansøgning indkommet en ansøgning på 60.000 kr. til DM i\nkortbanesvømning. Sagen behandles i Økonomi- og Erhvervsudvalget på møde i december.\nPå baggrund af det foreliggende budget og den oplyste medfinansiering forventes det samlede\nunderskud for skøjtebanen at udgøre 192.000 kr.\n\nSagen har ikke afledte konsekvenser for kommunens personaleforhold."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-8": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-8",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Orientering: Månedlig ledelsesrapportering for september - status på de store velfærdsområder",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Økonomi og Ejendomme indstiller,\nat orientering foretages."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I det følgende gennemgås forventet regnskab på drift for udvalgene med de store\nvelfærdsområder - nemlig Børne- og Uddannelsesudvalget, Omsorgs- og Sundhedsudvalget\nog Social- og Beskæftigelsesudvalget – i forbindelse med udvalgenes septemberopfølgning.\n\n1. Forventet regnskab for september - drift\nPå driftssiden har centrene indrapporteret et samlet forventet forbrug på 4.362,9 mio. kr., som\nfordeler sig med 2.936,9 mio. kr. på serviceudgifter og 1.426,1 mio. kr. på ikke-serviceudgifter,\nsvarende til et samlet merforbrug på 5,0 mio. kr. ift. forventet budget, jf. tabel 1 nedenfor.\nTabel 1. Forventet regnskab 2026 for udvalg med de store velfærdsområder, drift\nÅrets priser, netto i\n\nOprindeligt\nbudget\n\nForventet\nbudget\n\nForventet\nregnskab\n\nForventet\nmer-/\nmindreforbrug\n\nÆndring i\nforventet\nmer-/\nmindreforbrug ift.\nsidste\nmånedsopfølgning***\n\nBørne- og\nUddannelsesudvalg\n\n- Servicedrift\n\nOmsorgs- og\nSundhedsudvalg\n\n- Servicedrift\n\n- Ikkeservicedrift\n\n- Servicedrift\n\n- Ikkeservicedrift\n\nI alt\n\n- Heraf servicedrift\n\n- Heraf ikkeservicedrift\n\n- Ikkeservicedrift\n\nSocial- og\nBeskæftigelsesudvalg\n\n* Forventet budget udgøres af det korrigerede budget samt forventede ekstrabevillinger\n(tillægsbevillinger og omplaceringer).\n\n** Forventet mer-/mindreforbrug svarer til forskellen mellem forventet regnskab og forventet\nbudget. Merforbrug angives med minus og mindreforbrug med plus.\n*** Forbedring af forventet mer-/mindreforbrug angives med plus, og forværring angives med\nminus.\nDet forventede merforbrug er faldet med netto 3,8 mio. kr. i forhold til sidste månedsopfølgning.\nFor udspecificering af udvalgsområderne se oversigter i bilag 1.\n1.1. Servicedriftsudgifter\nDer forventes et marginalt samlet merforbrug på servicedrift på netto 0,1 mio. kr. ift. forventet\nbudget for de tre udvalg.\nMerforbruget består af en række større merforbrug såvel som mindreforbrug.\nUnder Børne- og Uddannelsesområdet forventes et samlet mindreforbrug på 0,9 mio. kr. Der\nforventes et større merforbrug på Skoler og Fritidsområdet på 9,3 mio. kr., som primært skal\nfindes under folkeskolerne. Folkeskolerne følger en handleplan med henblik på at opnå\nstrukturel balance. Merforbruget modsvares af et større forventet mindreforbrug på Dagtilbud\npå 9,6 mio. kr., som især skyldes mindreudgifter til private pasningsordninger (2,5 mio. kr.),\npulje til studerende (1,3 mio. kr.), sprogpladser (1,1 mio. kr.) og frit valg (1,0 mio. kr.) under\nmyndighedsområdet. Det forventede mindreforbrug på myndighedsområdet udgør i alt 6,2 mio.\nkr. Dertil kommer et mindreforbrug på dagtilbuddene på 3,4 mio. kr.\nUnder Omsorgs- og Sundhedsudvalget forventes et samlet merforbrug på 11,4 mio. kr., som\nfordeler sig med 8,7 mio. kr. på Omsorg og Ældre og 2,7 mio. kr. på Sundhed. På førstnævnte\nbudgetområde skal merforbruget primært findes på plejehjem (10,0 mio. kr.) og hjemmepleje\n(4,6 mio. kr.). Merforbrugene her modsvares kun delvist af et større mindreforbrug på\nmyndigheden på 7,1 mio. kr. På plejehjemsområdet skal merforbruget især findes på\nplejehjemmet Grønnehaven, hvor dette udgør 7,0 mio. kr. Der er vil blive fremlagt særskilt sag\nom økonomien på plejehjemmet til decembermødet i Omsorgs- og Sundhedsudvalget,\nherunder en afviklingsplan for merforbruget. For uddybning af merforbruget se bilag 5.\nUnder Social- og Beskæftigelsesudvalget forventes et mindreforbrug 10,4 mio. kr., som\nfordeler sig med 5,5 mio. kr. henholdsvis Særlig Social Indsats og Beskæftigelse og Anden\nSocial Indsats på5,5 mio. kr. Mindreforbruget på førstnævnte budgetområde skal primært\nfindes på Bøgehøjgård (2,7 mio. kr.) og myndigheden (1,2 mio. kr.). På sidstnævnte\nbudgetområde vedrører mindreforbruget især centerledelse og –administration (2,0 mio. kr.) og\nøvrig beskæftigelse og anden social service (1,6 mio. kr.).\nDet specialiserede socialområde er i balance, men for at undgå nye merforbrug, vil det fortsat\nkræve en tæt opfølgning. Det gælder dog ikke for ikke-servicedrift, jf. afsnit 1.2 nedenfor.\nDet forventede merforbrug for udvalgene er samlet set blevet reduceret med 4,1 mio. kr. siden\nsidste månedsopfølgning:\n\nBørne- og Uddannelsesudvalget: Det forventede merforbrug reduceres med 5,5 mio. kr.\nForbedringen skal primært findes på budgetområderne Skoler og Fritidsområdet og\nDaginstitutioner med forbedringer på henholdsvis 3,8 mio. kr. og 1,6 mio. kr.\nPå skoleområdet skyldes forbedringen primært, at der på myndigheden er\nafregnet årets bidrag til staten vedrørende private grundskoler, friskoler,\nefterskoler mv., hvor udgiften endte 2,6 mio. kr. lavere end forventet. Derudover\ner de forventede udgifter til specialelever, som bliver betalt af myndigheden,\nblevet opdateret og nedskrevet med 1,2 mio. kr.\nPå dagtilbudsområdet skyldes forbedringen primært, at de forventede udgifter til\nfrit valg er blevet tilpasset.\n\nOmsorgs- og Sundhedsudvalget: Det forventede merforbrug forøges med 4,5 mio. kr.,\nsom fordeler sig med forværring på 6,1 mio. kr. på Omsorg og Ældre og en forbedring\npå 1,6 mio. kr. på Sundhed.\nPå ældreområdet skal forværringerne især findes på hjemmeplejen og\nplejehjemsområdet med forværringer på henholdsvis 3,0 mio. kr. og 2,2 mio. kr.\nHvad angår hjemmepleje stiger udgifterne til kommunal hjemmepleje som følge af\nøgede udgifter til vikardækning og ældrereformen. Det stigende merforbrug på\nplejehjemsområdet skyldes primært en forværring på 2,4 mio. kr. på plejehjemmet\nGrønnehaven.\nFaldet i udgifterne på sundhedsområdet skyldes især et fald i udgifterne til\nfærdigdagsbetaling og specialiseret genoptræning.\n\nSocial- og Beskæftigelsesudvalget: Det forventede mindreforbrug forøges med 3,0 mio.\nkr. og skal primært findes på budgetområdet Særlig Social Indsats, hvor det forventede\nmindreforbrug forøges med 3,2 mio. kr. Forbedringen skal især findes på\nudførerområdet, hvor Bøgehøjgård nu forventer et mindreforbrug på 2,7 mio. kr.\nMindreforbruget skyldes, at indflytningsdatoen i 2027 er udskudt fra den oprindelige\nindflytningsdato den 1. januar 2027.\n\nFor uddybende detaljer se månedsopfølgninger for fagudvalgene i bilag 2-4.\n1.2. Ikke-servicedriftsudgifter\nDer forventes et samlet merforbrug på ikke-servicedrift på 4,9 mio. kr. Merforbruget skal især\nunder Børne- og Uddannelsesudvalget, hvor det forventede merforbrug udgør 5,0 mio. kr.\nMerforbruget vedrører fortsat tabt arbejdsfortjeneste.\nI forhold til seneste månedsopfølgning forværres det forventede merforbrug marginalt med 0,3\n\nmio. kr., og den skal primært findes på ydelsesområdet på beskæftigelsesområdet.\n\nRetsgrundlag\nKommunestyrelsesloven.\n\nRelation til vision og tværgående politikker\nHelsingør Kommunes principper for økonomistyring og Helsingør Kommunes Økonomiske\nPolitik.\n\nØkonomi/Personaleforhold\nJf. sagsfremstilling.\n\nKommunikation/Høring/Borgerinddragelse\nSagen giver ikke anledning til særskilt kommunikation/høring/borgerinddragelse."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-9": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-9",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Helsingør Medaljen 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Staben for Politik & Jura indstiller,\n\n1. at Økonomi- og Erhvervsudvalget vælger den/de kandidater, der skal modtage\nHelsingør Medaljen i 2026.\n2. at uddeling af Helsingør Medaljen sker forud for Byrådets møde den 30. november\n2026 kl. 16-17. Uddelingen kan eventuelt ske i Blå- eller Røde værelse."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I løbet af efteråret 2026 er der indkommet forslag til hvem, der skal have Helsingør Medaljen i\nDe modtagne forslag til kandidater fremgår af bilaget. Bilaget er lukket, da det er hemmeligt,\nhvem der er indstillet til medaljen.\nHelsingør Medaljen blev indstiftet af Helsingør Byråd den 18. maj 1953, og i 2018 vedtog det\ndaværende Økonomiudvalg en revideret statut for medaljen.\nAf statutten fremgår det, at beslutningen om uddeling af medaljen træffes af Økonomi- og\nErhvervsudvalget og med et forslag om, at uddeling sker i forbindelse med årets sidste\nbyrådsmøde. For 2026 foreslås det, at medaljen uddeles i forbindelse med det næstsidste\nbyrådsmøde.\nStatuttens bestemmelser for tildeling:\nStk. 1: Helsingør Medaljen gives til borgere fra Helsingør Kommune – eller til andre personer i\nind- og udland, der har en nær tilknytning til Helsingør, eller som ved en ganske særlig indsats\n\nhar haft betydning for et område af eller for hele Helsingør Kommune.\nStk. 2: Medaljen uddeles i tilfælde, hvor der er gjort en indsats af særlig fortjenstfuld og værdig\nkarakter, der har haft stor betydning for et område af eller for hele Helsingør Kommune, og\nsom Helsingør Kommune derfor gerne vil udtrykke særlig anerkendelse overfor.\nAf statutten fremgår det ligeledes, at der ikke er krav om, at uddeling sker hvert år. Vurderer\nØkonomi- og Erhvervsudvalget, at der blandt de indstillede kandidater ikke er nogle, der\nopfylder statuttens krav, kan uddeling udgå det pågældende år. Statutten beskriver ikke noget\nom, hvor mange medaljer, der kan uddeles pr. gang.\nDer resterer i dag ca. 35 medaljer af bronze og knap 10 medaljer af sølv til uddeling.\n\nRetsgrundlag\nStatut for Helsingør Medaljen vedtaget den 19. februar 2018.\n\nRelation til vision og tværgående politikker\nSagen har ingen særskilt relation til vision og tværgående politikker.\n\nØkonomi/Personaleforhold\nSagen har ikke afledte konsekvenser for økonomi og personaleforhold.\n\nKommunikation/Høring/Borgerinddragelse\nDer skal ske kommunikation til dem, der skal modtage en medalje, til dem, der har indstillet\nkandidater, samt til pressen. Modtagere af Helsingør Medaljen holdes hemmelig indtil\nuddelingen. Det er kun kandidaten selv samt evt. familie og indstiller der får det at vide før."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-10": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-10",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Indførelse af ordning med borgerforslag i Helsingør Kommune",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Staben for Politik og Jura indstiller,\n\n1. at der stilles krav om 300 underskrifter med en aldersgrænse på 15 år.\n2. at forslag skal forelægges byrådet til stillingtagen, hvis det opnår den nødvendige\nopbakning inden for 6 måneder.\n3. at et forslag skal indeholde et konkret forslag, som andre kan stemme på.\n4. at forslag om bestemte personer i administrationen og andre forslag, som\nindeholder injurierende, diskriminerende, stødende, krænkende eller lignende\nudsagn slettes fra borgerforslagsportalen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Efter vedtagelsen af budget 2027-2030 har administrationen indhentet tilbud fra potentielle\nleverandører til løsningen med at integrere ordningen på kommunens hjemmeside.\nLeverandørerne kan levere en løsning med MitID-verificering af borgere, der indsender eller\nstemmer for forslag, så det dermed sikres, at de pågældende borgere bor i Helsingør\nKommune.\nForslaget angav at skulle indeholde følgende:\n\n1. Borgerne skal have mulighed for at stille konkrete forslag til politisk behandling i Byrådet,\n\nnår forslaget har fået digital opbakning fra andre borgere. Der er udelukkende tale om\nen mulighed for Byrådets behandling af forslaget – og dermed ingen garanti for, at\nforslaget bliver vedtaget.\n2. Forslaget skal opnå den nødvendige støtte indenfor et tidsinterval, f.eks. 6 måneder.\n3. Det er et krav, at et borgerforslag ikke omhandler bestemte personer i administrationen.\n\nSom i andre kommuner med borgerforslag skal der anvendes digitale platforme med MitIDlogin, så kun borgere bosat i kommunen kan oprette og støtte forslag, og så der kun kan\nstemmes én gang pr. borger.\nForslag til ramme for borgerforslag kan være:\nStøttegrænse: 400–700 underskrifter\nAldersgrænse: 13–15 år og opefter\nGyldighedsperiode: 6 måneder\n\n1. Rammerne for borgerforslag\nDe fleste kommuner, som har indført en ordning med borgerforslag, har et krav om, at forslaget\nskal indeholde en konkret ide, fx ud fra følgende ramme:\nBeskrive, hvad forslaget handler om\nBeskrive, hvorfor forslaget er en god ide\nFormulere et forslag, som andre kan stemme på\n\nDette synes at være en god og objektiv ramme for, hvad et borgerforslag kan indeholde.\nDet vil ligge inden for rammen af, at et forslag skal være konkret.\nAdministrationen har indhentet tilbud på løsninger, som kan håndtere registrering af digital\nopbakning.\nByrådet kan ikke på forhånd beslutte, et borgerforslag skal vedtages uden behandling af\nindholdet. Det vil også være naturligt, hvis ordningen blot fastsætter en forpligtelse til, at\nByrådet skal behandle et forslag, der opnår den nødvendige opbakning.\nHørsholm Kommune med 25.354 borgere har krav om 100 underskrifter, dvs. 4,0 promille.\nFredensborg Kommune med 42.445 borgere har krav om 250 underskrifter, dvs. 5,9 promille.\n5,0 promille i Helsingør Kommune med 64.244 borgere svarer til 321 underskrifter.\nForslagsstillerne har stillet forslag om 400-700 underskrifter. Krav om 700 vil således være højt\n\nsat ift. andre kommuner i Nordsjælland. Ud fra sammenlignelige kommuner vil det proportionalt\nmed et krav om 300 underskrifter. Skal forslagsstillernes forslag følges, vil det være naturligt\nmed et krav om 400 underskrifter.\nUnge på 13 år og opefter har mulighed for at få MitID. For 13-14-årige gælder, at MitID kun\nudstedes, hvis der er samtykke fra en forælder.\nNår den unge fylder 15 år, bliver den unge automatisk tilmeldt digital post fra det offentlige og\nkan derfor samtidigt oprette MitID.\nDet kan derfor overvejes, om det vil være mest naturligt og rimeligt med en aldersgrænse på\n15 år, for at den pågældende skal have direkte mulighed for at underskrive med MitID.\nDet vil være naturligt, at forslag er tidsbegrænsede, så de bevarer en vis aktualitet – både ift.\nemnet eller i forhold til en naturlig tidsramme for forslagsstilleren. 6 måneder vil en rimelig\ntidsramme.\n2. Saglig håndtering af borgerforslagsportalen og borgerforslagenes indhold\nKommunen må ikke udøve censur, men det vil være naturligt at have en tilgang om, at\nkommunen ikke ønsker at have injurierende, diskriminerende, stødende, krænkende eller\nlignende udsagn liggende på sin hjemmeside. Borgerforslagsportalen indlejres direkte på\nkommunens hjemmeside.\nEt borgerforslag bør være sagligt og ligge inden for de beslutningskompetencer, som Byrådet\nhar.\nDet vil være sagligt og proportionalt at anvende forslagsstillernes ramme om, at forslag ikke må\nomhandle bestemte personer i administrationen. Personalemæssige forhold er ikke egnede til\nbehandling i Byrådet.\n\nRetsgrundlag\nKommunestyrelsesloven.\nForvaltningsprincipper.\n\nRelation til vision og tværgående politikker\nPolitik for borgerinddragelse.\n\nØkonomi/Personaleforhold\nSagen har ikke yderligere konsekvenser for økonomi og personaleforhold.\n\nKommunikation/Høring/Borgerinddragelse\nBorgerforslagsportalen vil blive tilgængelig på kommunens hjemmeside."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-11": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-11",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Redegørelse vedr. hjælp til stemmeafgivningen ved valghandlinger",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Staben for Politik og Jura indstiller,\n\n1. at redegørelsen godkendes.\n2. at iværksættelsen af de yderligere tiltag godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Sagens baggrund\nSom nævnt i indledningen har Økonomi- og Indenrigsministeriet den 27. oktober 2026\nanmodet Helsingør Kommune en redegørelse for manglende overholdelse af reglerne om\nhjælp til stemmeafgivningen ved folketingsvalget den 24. marts 2026.\nBrevet er vedlagt som bilag.\nRedegørelse for forholdene, herunder iværksættelse af yderligere tiltag, fremgår af denne sag.\n2. Reglerne om hjælp til stemmeafgivningen\n2.1. Udgangspunktet\nHvis vælgeren har brug for hjælp til at få forklaret stemmesedlen eller til at sætte sit kryds, kan\nvedkommende få hjælp til dette af to medarbejdere på valgstedet (valgstyrere eller\ntilforordnede vælgere).\nVælgeren kan også vælge at få hjælp af en person, vedkommende selv har valgt, i stedet for\nden ene medarbejder. Det kan for eksempel være et familiemedlem, en ven eller ægtefælle. I\n\ndette tilfælde vil hjælpen således blive ydet af både den person, vælgeren selv har valgt, og en\nmyndighedsperson (en valgstyrer eller tilforordnet vælger).\n2.2. Vælgere med dokumenterbar funktionsnedsættelse\nHar vælgeren en fysisk eller psykisk funktionsnedsættelse, har vælgeren mulighed for at få\nhjælp til stemmeafgivningen alene af én person, vedkommende selv har valgt, dvs. uden at der\nogså skal medvirke en myndighedsperson (en valgstyrer eller tilforordnet vælger).\nDer er to betingelser, der skal være opfyldt for, at vælgeren kan få hjælp alene af en person,\nvedkommende selv udpeger:\n1. Vælgeren skal selv klart og tydeligt kunne fortælle eller udtrykke over for en\nmedarbejder på valgstedet, hvem der skal hjælpe.\nHvis vælgeren alene taler tegnsprog, har vedkommende ret til at udtrykke sit ønske på\ntegnsprog, evt. via en tegnsprogstolk, herunder en taktil tegnsprogstolk.\nTegnsprogstolken kan f.eks. være en personlig hjælper eller ægtefælle.\n2. Vælgerens ønske om alene at få hjælp af den person, vedkommende selv udpeger, skal\nvære begrundet i en umiddelbart konstaterbar eller dokumenterbar fysisk eller psykisk\nfunktionsnedsættelse.\nDet betyder, at hvis vælgerens handicap ikke umiddelbart er synligt, skal vedkommende\nvise dokumentation for sit handicap. Det kan f.eks. være et ledsagekort, et\nparkeringskort udstedt af Danske Handicaporganisationer eller en lægeerklæring.\n\n3. Tidligere iværksatte tiltag\nI Helsingør Kommune har vi desværre også ved tidligere valghandlinger oplevet, at reglerne\nom hjælp til stemmeafgivningen ikke er blevet fulgt.\nDerfor iværksatte valgsekretariatet flere indsatser forud for folketingsvalget den 24. marts\n2026. Det må desværre konstateres, at disse indsatser ikke var tilstrækkelige.\nValgsekretariatet havde specifikt med fremhævet skrift vejledt om reglerne for hjælp til\nstemmeafgivningen i den vejledning, som sendes til alle valgstyrere, tilforordnede og\nadministrative tilforordnede forud for valgdagen.\nForud for afvikling af folketingsvalget afholdt valgsekretariatet informationsmøder med både\nvalgstyrerformænd og de administrative valgsekretærer, som står for organiseringen af\nvalgafviklingen på det enkelte valgsted. Under møderne blev specifikt vejledt om reglerne om\nhjælp til stemmeafgivningen, og at der skulle være særligt fokus på at håndtere reglerne\nkorrekt på valgstedet.\nDer blev henledt særlig opmærksomhed på, at vælgere med en dokumenterbar\nfunktionsnedsættelse har ret til at udpege en personlig hjælper, som skal bistå vælgeren.\n\nBrug af Indenrigs- og Sundhedsministeriets materiale om hjælp til stemmeafgivningen:\nBåde Informationsfolderen ”Du kan få hjælp til at sætte dit X” og ministeriets plakater om hjælp\nog hjælpemidler blev udleveret til valgstederne til opsætning og generel information på\nvalgstedet.\n4. Yderligere tiltag\nDa vi kan konstatere, at de allerede iværksatte tiltag ikke er tilstrækkelige, vil valgsekretariatet\niværksætte nedenstående yderligere tiltag.\nValgsekretariatet er opmærksomme på, at vores instruktion og understøttelse overvejende har\nhaft fokus på at klæde valgstyrere og tilforordnede på i perioden op til valgdagen. Flere af\nnedenstående tiltag omfatter derfor initiativer på selve valgdagen for at sikre, at alle valgstyrere\nog tilforordnede er gjort bekendt med reglerne for hjælp til stemmeafgivningen.\n1. Bedre information til alle valgstyrere og tilforordnede på valgstedet:\nVejlede direkte som det øverste i udpegningsbrevet til alle valgstyrere og tilforordnede samt\nadministrative tilforordnede om reglerne om hjælp til stemmeafgivningen. Det vil således være\nden første information, som vil fremgå af brevet.\n2. Særskilt mail udelukkende med vejledning om hjælp til stemmeafgivningen til alle\nvalgstyrere, tilforordnede samt administrative tilforordnede:\nFor at undgå, at vejledningen kan blive overset, når den indgår i en større mængde\ninformation, vil alle valgstyrere og tilforordnede modtage en særskilt mail udelukkende med\ninformation om hjælp til stemmeafgivningen.\n\n3. Gøre det obligatorisk, at valgstyrerformanden starter valgdagen med at instruere valgstyrere\nog tilforordnede på valgstedet:\nValgsekretariatet vil udstyre valgstyrerformanden med en tjekliste for opgaver på valgstedet om\nmorgenen på valgdagen samt klæde valgstyreformanden på til at gennemgå listen på\nvalgstedet.\nDet vil fremover være obligatorisk for valgstyreformanden at gennemgå tjeklisten med alle\nvalgstedets valgstyrer og tilforordnede om morgenen på valgdagen. Som en del af tjeklisten\nskal valgstyreformanden gennemgå reglerne for hjælp til stemmeafgivning, så alle valgstyrere\nog tilforordnede på valgstedet er gjort bekendt med reglerne på selve valgdagen.\n4. Instruere de administrative valgsekretærer i at understøtte valgstyrerformanden i\ngennemgangen af reglerne om hjælp til stemmeafgivningen:\nValgsekretærerne vil blive instrueret i at understøtte valgstyreformandens gennemgang af\ntjeklisten og morgenen på valgdagen. Valgsekretærerne vil blive udstyret med samme tjekliste\nfor valgstyreformanden for at sikre, at det hele bliver gennemgået.\n\nRetsgrundlag\nValglovgivningen.\n\nRelation til vision og tværgående politikker\nSagen giver ikke anledning til særskilt kommunikation/høring/borgerinddragelse.\n\nØkonomi/Personaleforhold\nSagen har ingen konsekvenser for økonomi og personaleforhold.\n\nKommunikation/Høring/Borgerinddragelse\nRedegørelse sendes til Økonomi- og Indenrigsministeriet."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-12": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-12",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Godkendelse af stiftelsesdokumenter og bevilling til IT29",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Job, Borgerservice og Teknologi indstiller,\n\n1. at vedlagte ejeraftale (bilag 1) og vedtægt (bilag 2) i forbindelse med stiftelse af et\nfælleskommunalt aktieselskab for at varetage og udvikle fælles it-driftsopgaver for\nIT29 kommunerne godkendes.\n2. at der gives en tillægsbevilling i 2026 på balanceforskydninger på 1.338.740 kr. til\nkapitalindskud i aktieselskabet IT29. Bevillingen finansieres af merindtægter på\nrenter under hovedkonto 7."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Rammen for stiftelsesdokumenterne og senere yderligere politisk inddragelse\n\nStiftelsesdokumenterne bygger på udkast, som Kammeradvokaten har udarbejdet for KL, idet\nder er foretaget nogle justeringer bl.a. for at give en bedre mindretalsbeskyttelse.\nDokumenterne er nødvendige for at kunne stifte selskabet.\nPå grund af en meget stram tidsplan er der tale om midlertidige dokumenter, og dokumenterne\nvil blive revideret i løbet af 2027, særligt med sigte på bestemmelserne om ejerkommunernes\nstyring og indflydelse i selskabet, herunder udpegning og sammensætning af bestyrelsen. I\nløbet af 2027 gennemføres således en proces med bredere inddragelse, også med politisk\nniveau for at fastlægge dette.\nDe reviderede dokumenter vil blive forelagt kommunalbestyrelserne på ny. Der henvises til\nvedhæftede tidsplan for det videre arbejde (bilag 3).\n2. Selskabets opgaver og hovedtræk i stiftelsesdokumenterne\nSelskabets opgaver og hovedtrækkene i stiftelsesdokumenterne er nærmere beskrevet i bilag\nHer kan fremhæves, at selskabet i første omfang i tråd med økonomiaftalen (fase1) vil\novertage følgende opgaver:\nVaretagelse af den basale IT‑drift for kommunerne, herunder drift af server‑ og\nnetværksinfrastruktur (servere, netværk mv.), datacentre og relaterede tekniske\nplatforme.\nImplementering og drift af grundlæggende sikkerhedsforanstaltninger i relation til server\nog netværk, herunder sikkerhedskopi, gendannelse, logning, overvågning af\ninfrastruktur, herunder evnen til at opdage cyberangreb hos og på tværs af\nkommunerne, samt passende beredskab til håndtering af hændelser på\ninfrastrukturniveau.\n\nOm indholdet af stiftelsesdokumenterne kan fremhæves følgende:\nSelskabet har ikke et erhvervsøkonomisk formål, og overskud skal som\nudgangspunkt reinvesteres i selskabet (”hvile i sig selv”).\nEjerkommunernes kapitalindskud og aktieandel bygger på den enkelte kommunes\nindbyggertal.\nAlle kommuner har ret til at deltage på generalforsamlingen og har stemmeret i\nforhold til deres aktieandel.\nBeslutninger om minimumssikkerhedsniveauet for kommunerne og prisen herfor\n(den såkaldte grundpakke), samt udgifter derudover af en vis størrelse for\nkommunerne samt overførsel af yderligere opgaver til selskabet (fase 2) kræver\nkvalificeret flertal (3/4 flertal) på generalforsamlingen.\n\nSelskabet ledes i en interimsperiode på maksimalt 2 år af en bestyrelse bestående af\n8 kommunaldirektører. Bestyrelsen kan sammen med formandskabet i KKR udpege\nen ekstern bestyrelsesformand.\n\nEn model med en midlertidig embedsmandsbestyrelse i 2 år er beskrevet af\nKammeradvokaten, og der forventes at blive nedsat bestyrelser helt eller delvist bestående af\nembedsmænd i alle de andre fælleskommunale IT-selskaber. Der henvises til oversigten i bilag\nSom følge af tidsfristerne i økonomiaftalen har der ikke været tid til nærmere drøftelse af andre\nmodeller for udpegning og sammensætning af en bestyrelse i 1. omgang.\n\nRetsgrundlag\nIngen bemærkninger.\n\nRelation til vision og tværgående politikker\nSagen har ingen særskilt relation til vision og tværgående politikker.\n\nØkonomi/Personaleforhold\n1. Særligt om ejerkommunernes finansiering af selskabet\nEjerkommunernes finansiering af selskabet falder overordnet i tre dele; stiftelsen af selskabet,\nkommunens engangsudgifter forbundet med at overgå til IT29 efter 1. januar 2028 samt den\nløbende betaling til selskabet efter 1. januar 2028.\nFørste del er den finansiering, der er nødvendig for at sikre, at selskabet kommer i drift. Denne\nfinansiering udgøres af stiftelseskapitalen på 27,1 mio. kr., der skal sikre, at selskabet i\nopstartsfasen ledes af en robust programorganisation, der har tilstrækkeligt med ressourcer til\nat drive etablering og opbygning af organisationen frem mod overtagelsen af kommunernes\ndrift af server- og netværksinfrastruktur. Der er tale om en vurdering af selskabets kapitalbehov\ndet første års tid efter stiftelsen.\nAnden del udgøres af de apportindskud (eksisterende IT-udstyr i kommuner) og den betaling (i\ndet omfang, at en kommunes IT-udstyr ikke overtages af selskabet), der er nødvendig for, at\nselskabet kan levere minimumssikkerhedsniveauet til kommunerne (grundpakken), samt at\nkommunen kan modtage disse ydelser. Selskabet vil stille krav til det IT-udstyr, som overtages\naf selskabet fra kommunerne, idet udstyret skal kunne være en del af det\nminimumssikkerhedsniveau, som selskabet skal levere til kommunerne.\nMinimumssikkerhedsniveauet og prisen herfor skal som nævnt ovenfor vedtages på\ngeneralforsamlingen med kvalificeret flertal (3/4 flertal). En kommune har, når\nminimumssikkerhedsniveauet er vedtaget på generalforsamlingen, mulighed for at udskyde sin\naftagerforpligtelse i op til 2 år (og dermed udskyde implementeringen og betalingen for\ngrundpakken), ligesom kommunen i den periode kan vælge at udtræde af selskabet.\nTredje del er den betaling, der er nødvendig for, at selskabet kan levere de aftalte ydelser til\n\nkommunerne, herunder for at selskabet er i løbende forsvarlig drift. Servicekatalog inklusive\npriser for grundpakken og tilkøbsydelser, bliver udarbejdet i 2027 i forlængelse af oprettelsen\naf selskabet.\nDenne betaling vil gå til at betale for løbende driftsudgifter og selskabets investeringsbehov,\nf.eks. som følge af den teknologiske udvikling. Det kan være vanskeligt på nuværende\ntidspunkt at vurdere investeringsbehovet som følge af den teknologiske udvikling, men det\nforventes som følge af truslerne mod cybersikkerheden at stige. Beslutning om prisen på\ngrundpakken vil blive besluttet af generalforsamlingen forud for, at kommunerne begynder at\naftage ydelser fra selskabet.\nDer er i forhold til Kammeradvokatens udkast tilføjet en særlig bestemmelse om, at\nbeslutninger, der påfører ejerkommunerne udgifter over en vis størrelse, skal vedtages af\ngeneralforsamlingen med kvalificeret flertal.\nBestemmelsen medfører, at følgende skal godkendes på generalforsamlingen med kvalificeret\nflertal.:\nNår selskabets engangsinvesteringer overstiger den enkelte kommunes befolkningsmæssige\nandel af 300 mio. kr. (mellem ca. 3 og ca. 24 mio. kr. for den enkelte kommune)\nøgede driftsudgifter, der overstiger den enkelte kommunes befolkningsmæssige andel af 100\nmio. kr., (mellem ca. 1 og ca. 8 mio. kr. for den enkelte kommune).\nI Kammeradvokatens udkast til ejeraftale er det bestyrelsen, som har beføjelserne til at\ngodkende alt vedrørende økonomi, efter at selskabet går i drift. Der er derfor tale om en\nyderligere mindretalsbeskyttelse ift. skabelonen.\nUdgifter ud over de nævnte vil bestå af tilkøbsydelser, som besluttes og købes enkeltvis af de\nenkelte kommuner, når det tilbydes.\n2. Bevillingsmæssige konsekvenser\nSelskabet vil blive stiftet med en indskudskapital på kr. 27,1 mio. kr. finansieret af kommunerne\nud fra ejerfordelingen, som er fastlagt på baggrund af indbyggertallet pr. 1. januar 2026, jf.\noversigten i ejeraftalens § 6, stk. 1.\nHelsingør Kommunes andel udgør 1,3 mio. kr. Der søges om en bevilling med denne sag.\nFordelingen af indskudskapital fremgår af bilag 6. Bevillingen afsættes på finansposter.\nIndskuddet fra kommunen tilføres som egenkapital til selskabet og indgår i finansieringen af\nselskabets aktiviteter i transitionsperioden. Efter godkendelse af sagen overføres beløbet til\nselskabet.\n\nKommunikation/Høring/Borgerinddragelse\nSagen giver ikke anledning til særskilt kommunikation/høring/borgerinddragelse."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-13": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-13",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Kommunal opbakning til UNESCO værdiundersøgelse",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Kultur, Erhverv og Fritid indstiller,\nat udvalget beslutter, om kommunal opbakning kan anbefales med et tilskud på 20.000\nkr. finansieret af Center for Kultur, Erhverv og Fritid."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Ansøgning\nForeningen søger om et tilsagn fra Helsingør Kommune om støtte til en UNESCO\nværdiundersøgelse som foreningen har taget initiativ til.\nDer er i dag flere kommuner i Danmark og Grønland med UNESCO Verdensarvssteder.\nForeningen vurderer, at der mangler viden om den værdi som UNESCO-stederne skaber.\nViden om de samfundsmæssige aspekter, de økonomiske gevinster og ikke mindst den værdi,\ndet giver lokalbefolkningen.\nForeningen har taget initiativ til at samle UNESCO-stederne i et samarbejde om at højne\nkendskabet og viden om UNESCO-steder i Danmark og Grønland.\nProjektet er delt i to dele:\n1. En undersøgelse af UNESCO’s værdi og påvirkning\n2. Udarbejdelse af en plan for udbredelse af undersøgelsens budskaber\n\nFor at få værdi ude i kommunerne skal undersøgelsen efterfølges af en konkret handleplan.\nForeningen har til hensigt at samarbejde med andre UNESCO-kommuner om en handleplan\nog er positive overfor et økonomisk bidrag på maksimalt 30.000 kr. pr. kommune.\n\nForeningen har fremsendt et støttebrev til alle danske UNESCO-kommuner, hvor\nborgmesteren kan underskrive tilsagn om støtte.\nSe bilag.\nIdeen om en UNESCO værdiundersøgelse er inspireret af en lignende britisk undersøgelse fra\n2019-2020 (National Value of UNESCO to the United Kingdom UNESCO in the UK):\nhttps://unesco-asp.dk/unesco-verdensmaalsskoler/skoler-i-netvaerket\n1.1. Finansiering\nTil selve undersøgelsen søger verdensarvsforeningen fonde om finansiering på op til 700.000\nkr. Hver kommune støtter med op til 30.000 kr.\n2. Rigsfællesskabets Verdensarvsforening\nRigsfællesskabets Verdensarvsforening blev etableret i 2023 og har adresse i Jelling.\nForeningens overordnede mål er at styrke den fælles fortælling om Rigsfællesskabets\nverdensarvs betydning og Unescos værdier.\nForeningen har nedsat en arbejdsgruppe med repræsentanter fra UNESCO Danmarks\nNationalkommission, Site manager ved Vadehavet og Rigsfællesskabets Verdensarvsforening.\nSe bilag.\n3. Administrationens bemærkninger\nAdministrationen kan se et potentiale i at få undersøgt den lokale værdiskabelse i samarbejde\nmed foreningen.\nI Helsingør Kommune er Kronborg og Skolen i Bymidten – verdensmål skole, på UNESCOs\nverdensarvsliste.\n\nRetsgrundlag\nKommunalfuldmagten\n\nRelation til vision og tværgående politikker\nVision 2030:\nPejlemærke 4: Skabe rammerne for kreative iværksætter-, vækst- og uddannelsesmiljøer.\nUdvikle en bæredygtig turisme.\n2. Kulturpolitik\n\nIndsatsområde 1: Fællesskaber, oplevelser, trivsel og sundhed\nSkabe gode rammer for kulturelle fællesskaber og foreningernes og de frivilliges bidrag\ntil kulturlivet – bl.a. gennem kommunens kulturhuse og biblioteker.\nIndsatsområde 3: Erhverv, beskæftigelse, bosætning og internationalt udsyn\nArbejde for fortsat vækst og jobskabelse i kommunen og omsætning i kulturlivet gennem\nøget turisme – særligt international kultur- og kvalitetsturisme.\n\nIndsatsområde 5: Bæredygtig udvikling\nUnderstøtte kulturinstitutionernes arbejde med at udvikle nye forretningsmodeller og\nfinansieringsformer – bl.a. gennem styrket samarbejde med erhvervslivet og fonde mv.\nVærne om den lokale kultur- og naturarv\n\nIndsatsområde 6: Udvikling og Eksperimenter\nVære ambitiøse, modige og stille krav for at sikre, at Helsingør også fremadrettet kan\npræsentere kunst og kultur lokalt på højeste nationale og internationale niveau.\n\nØkonomi/Personaleforhold\nEt kommunalt tilskud på 20.000 kr. kan finansieres inden for rammen af Center for Kultur,\nErhverv og Fritid.\n\nKommunikation/Høring/Borgerinddragelse\nSagen giver ikke anledning til særskilt kommunikation, høring eller borgerinddragelse.\n\nAnsøger oplyser at der pt. er modtaget 7 borgmesterunderskrifter, og at der er tre underskrifter\npå vej. Der forventes flere underskrifter. Der er for nuværende ikke modtaget afslag.\n1.1. Finansiering\nProjektets del 1\nFondsmidler på op til 700.000 kr. skal dække udgifter til et analyseinstitut, som udarbejder\nundersøgelsen, indhenter data mv.\nProjektets del 2\nFormidling af undersøgelsen finansieres af tilskud fra de UNESCO-involverede kommuner med\nop til 30.000 kr. fra hver kommune. Forventet tilskud i alt 400.000 kr.\nMorten Teilmann-Jørgensen, medlem af arbejdsgruppen nedsat af Rigsfællesskabets\nVerdensarvsforening, er i mødet til rådighed online og uddyber ansøgning og svarer på evt.\nspørgsmål fra udvalget.\nMorten Teilmann-Jørgensen er museumschef på Kongernes Jelling og medlem af UNESCO\nDanmarks Nationalkommission.\nAdministrationens bemærkninger\nKorrekt link til lignende britisk undersøgelse fra 2019-2020:\nhttps://unesco.org.uk/projects/national-value-of-unesco-to-the-united-kingdom\nPå den immaterielle kulturarvsliste er flg.\nVerdensmålsskole\nSkolen i Bymidten\nDokumentarv\nØresundtoldsregnskaber\nLevende kulturarv\nNordiske klinkbådstraditioner.\nTræskibssammenslutningen, herunder HAL16\nSe bilag 3 med detaljeret beskrivelse."
+    },
+    {
+     "titel": "Behandling i Kultur- og Turismeudvalget 30. september 2026",
+     "tekst": "Sagen udsat med henblik på yderligere belysning.\n\nSupplerende sagsfremstilling\nØvrige Deltagere\nDeltager online: Morten Teilmann-Jørgensen.\nMorten er medlem af arbejdsgruppen der er nedsat af Rigsfællesskabets Verdensarvsforening.\nSagens forløb\nUdvalget fik forelagt sagen den 20. september og besluttede at udsætte sagen med henblik på\nyderligere belysning."
+    },
+    {
+     "titel": "Behandling i Kultur- og Turismeudvalget 10. november 2026",
+     "tekst": "Udvalget anbefaler en kommunal opbakning med et tilskud på 20.000 kr. finansieret af\nCenter for Kultur, Erhverv og Fritid."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-14": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-14",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Ny budgettildelingsmodel til plejehjemsområdet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Sundhed og Omsorg samt Center for Økonomi og Ejendomme indstiller,\nat den nye budgettildelingsmodel for plejehjemsområdet godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Beskrivelse af ny budgettildelingsmodel\nDen nuværende model er baseret på faste rammebudgetter med årlig regulering samt\nmulighed for midtvejsregulering i tilfælde af ændringer i beboernes kompleksitet.\nDer er et ønske om fremadrettet at skabe en mere gennemsigtig budgettildeling, som øger\nbudgetsikkerheden og derved giver det enkelte plejehjem bedre vilkår i den løbende\nøkonomistyring. Herudover vil den foreslåede ny budgettildeling reducere omfanget af\nadministrative opgaver for plejehjemmene.\nDet anbefales på den baggrund, at budgetgrundlaget fremadrettet forenkles til at bestå af fire\nhovedkomponenter:\n\n1. Fast grundbudget til ledelse, administration samt nattevagter\n2. En ens budgettildeling pr. plads på tværs af alle plejehjem\n3. Et tillæg pr. plads for pladser i skærmede enheder\n4. Derudover vil særlige udgifter fortsat ligge som stedspecifikke budgetter, herunder\nbl.a. udgifter til uniformsdepot, risikomanager samt særlige forhold ved de tre\nselvejende plejehjem.\n\nDer vil fortsat være rammebudgetter på det enkelte plejehjem. Principper og opbygning i den\nforeslåede ny budgettildelingsmodel uddybes i bilag til sagen.\nDet anbefales, at overgangen til den nye model sker endeligt pr. 1. januar 2027.\n2. Budgetprocessen i budgetåret\nDet anbefales, at der med den ny takstmodel gives mulighed for at opdatere taksterne på\nbaggrund af udviklingen i plejebehov og kompleksitet hos beboerne. Af hensyn til\nbudgetsikkerhed anbefales det, at evt. opdateringer sker årligt gældende for det kommende\nbudgetår.\nAdministrationen vil i efteråret 2026 arbejde på at klarlægge mulige indikatorer, der kan\nanvendes til at monitorere udviklingen i beboernes plejebehov og kompleksitet.\n\nRetsgrundlag\nIngen bemærkninger\n\nRelation til vision og tværgående politikker\nSagen har ingen relation til vision og tværgående politikker\n\nØkonomi/Personaleforhold\nImplementeringen af budgettildelingsmodellen er samlet set udgiftsneutral for kommunen, men\nvil betyde en omfordeling af de eksisterende budgetmidler mellem plejehjemmene.\nFor de enkelte plejehjem estimeres de budgetmæssige ændringer at ligge inden for plus/minus\n2 % af plejehjemmenes nuværende udgiftsbudget.\n\nKommunikation/Høring/Borgerinddragelse\nSeniorrådet er høringspart på sagen."
+    },
+    {
+     "titel": "Behandling i Omsorgs- og Sundhedsudvalget 1. september 2026",
+     "tekst": "Sagen udsat.\nFraværende:\n\nMenderes Acikel\nBergur Løkke Rasmussen\n\nSupplerende sagsfremstilling\nAdministrationen har på baggrund af opdaterede kvadratmeter til service- og fællesarealer på\nplejehjemmene omfordelt det samlede budget til rengøring af disse arealer mellem\nplejehjemmene. Bilag 3 er opdateret inkl. ændringen. Budgetændringen på 277.000 kr. mellem\nden nuværende budgettildelingsmodel og den nye budgettildelingsmodel skyldes en\nomfordeling af midler til rengøring af lokaler til dagcenter. Økonomien til driften af dagcentre\nindgår ikke i oversigten i bilaget."
+    },
+    {
+     "titel": "Behandling i Omsorgs- og Sundhedsudvalget 6. oktober 2026",
+     "tekst": "Indstillingen anbefales.\nFraværende:\nMenderes Acikel\nBirgitte Bergman"
+    },
+    {
+     "titel": "Behandling i Økonomi- og Erhvervsudvalget 19. oktober 2026",
+     "tekst": "Sagen sendt retur til behandling i Omsorgs- og Sundhedsudvalget.\n\nSupplerende sagsfremstilling\nBemærkninger fra C med til punkt om ny budgettildelingsmodel for plejehjem\n”C-MED SO – Center for sundhed og omsorg 19. oktober\nDer er afgivet følgende bemærkninger:\nC-med bakker op om forenklingen i den nye budgettildelingsmodel. C-med er samtidig\nopmærksomme på at der kan være en faldgrube i at sikre at budgettilldelingen får udvikling i\ntyngde og kompleksitet hos borgere på plejehjem fremadrettet og gerne fra budget 2028 og\nfrem. Det indgår ikke i den nuværende budgettildeling og der bør udvikles en enkel model for at\nfølge tyngdeudviklingen og dermed ressourcer, når medarbejderne oplever at borgernes behov\nbliver tungere.\nC-Med peger på, at der i stedet burde allokeres flere midler til plejehjemmene i stedet for, at\nder tages fra nogle af plejehjemmene i omfordelingen.\nEndelig peger C-med på, at det er vigtigt, at A-MED involveres når det skal udmøntes lokalt og\n\nder er endelig en opmærksomhed på, at der er meget kort tid til at udmønte reduktionerne i\nbudgetter på de kommunale plejehjem i 2027. \""
+    },
+    {
+     "titel": "Behandling i Omsorgs- og Sundhedsudvalget 3. november 2026",
+     "tekst": "Sagen sendes videre uden anbefaling.\nFraværende:\nKasper Hovgaard\n\nSupplerende sagsfremstilling\nI forbindelse med arbejdet med den nye budgettildelingsmodel for plejehjemsområdet er\nudarbejdet en konsekvensberegning for de enkelte plejehjems budget jf. bilag 3 til sagen.\nPå baggrund af det godkendte budget for perioden 2027-2030 er denne beregning blevet\nopdateret med udgangspunkt i forslaget om den nye budgettildelingsmodel for\nplejehjemsområdet. Den opdaterede beregning er tilføjet som bilag 5 til sagen."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-15": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-15",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Udmøntning af den kommunale investeringsmotor",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Sundhed og Omsorg indstiller,\nat administrationens forslag til indsatser for anvendelse af ikke-bundne midler i den\nkommunale investeringsmotor for 2027 godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I sundhedsreformen er der afsat varige midler til løft af kommunale sundhedsindsatser.\n\nMidlerne indfases gradvist fra og med 2027 og udmøntes af sundhedsrådene.\nDet er aftalt nationalt, at midlerne skal bidrage til langsigtet kapacitetsopbygning i tråd med\nreformens intentioner samt løft i forbindelse med udvikling og afprøvning af nye indsatser.\nLigeledes at midlerne udmøntes efter følgende principper:\nKommunerne har myndighedsansvaret for opgaven\nRelevante oplysninger deles mellem parterne for at understøtte gennemsigtighed i de\nøkonomiske prioriteringer\nDer kan indgå krav (f.eks. i forhold til faglighed mv.) i forbindelse med tilsagn om midler\nAftalerne skal bidrage til langsigtet udvikling af indsatser inden for sundhedsreformens\nintentioner\n\nI 2027 udmøntes i alt 20,1 mio. kr. fra sundhedsrådet til indgåelse af lokale aftaler i de otte\nkommuner indenfor sundhedsrådets to prioriterede temaer:\nÆldre: Fokus på kompetenceudvikling\nBørn og unge i mistrivsel og med psykisk lidelse: Fokus på familier”.\n\nI 2027 udmøntes i alt 3,1 mio. kr. til ikke-bindende anbefalinger i kvalitetsstandarderne for\nalmen sygepleje og basal palliation i kommunerne\nI 2027 udmøntes i alt 7 mio. kr. som er øremærket til kvalitetskrav i kvalitetsstandarder for\nalmen sygepleje og basal palliation.\n\n1. Økonomi i den kommunale investeringsmotor for Helsingør Kommune i 2027\nAndelen af midler fra den kommunale investeringsmotor for Helsingør Kommune fremgår\nnedenfor. For de ikke-bundne midler er fordelingen beregnet efter sygdomstyngde og for de\nbundne midler efter indbyggertal.\nMidler\n\nBeløb i Helsingør og midlernes anvendelse\n\nIkke bundne midler\n\n4,2 mio. kr. til Helsingør Kommune kan anvendes til indsatser på\nsundheds-, social-, ældre-, børn-og unge- samt\nbeskæftigelsesområdet, herunder finansiering af kommunale\nindsatser, der bliver prioriteret i nærsundhedsplanen\n\nIkke-bundne midler\n\n646.000 kr. til Helsingør Kommune.\nAnvendes til implementering af ikke-bindende anbefalinger i\nkvalitetsstandarder for almen sygepleje og palliation i kommunerne\n\nBundne midler\n\n1,3 mio. kr. til Helsingør Kommune.\nEr øremærket til kvalitetskrav i kvalitetsstandarder for almen\nsygepleje og basal palliation\n\n2. Forslag til anvendelse af ikke-bundne midler i den kommunale investeringsmotor i\nPå møde i Sundhedsrådet den 21. september 2026 blev det besluttet, at andelen af ”ikkebundne” midler fra den kommunale investeringsmotor, der skal indgås lokale aftaler om i 2027,\nskal prioriteres inden for to temaer samt fordeles til kommunerne efter sygdomstyngde.\nSundhedsrådet besluttede samtidigt, at den enkelte kommune kan fordele midlerne mellem\ntemaerne efter behov. I Helsingør Kommune lægges op til:\nat fordele midlerne med 25 % til indsatser indenfor temaet: Børn og unge i mistrivsel og\nmed psykisk lidelse: fokus på familier\nat fordele de resterende 75 % til indsatser indenfor temaet: Ældre: fokus på\nkompetenceudvikling.\n\nBegrundelsen for fordelingen er, at der tidligere er bevilget midler til indsatser på børne- og\nungeområdet nationalt. For Akutplanen er der i 2026 afsat 544.000 kr., og i 2027 og 2028\n1.087.000 hvert år, dvs. i alt 2.718.000 kr. For 10-årsplanen for psykiatrien er der i 2026 afsat\nDe foreslåede indsatser vedrørende børn og unge i mistrivsel og med psykisk lidelse, som\nkommunerne vil iværksætte, skal bidrage til at sikre tidlig og forebyggende indsats og bedre\nstøtte til familierne. Indsatserne skal ses i sammenhæng med temaer og indsatser i en\nkommende nærsundhedsplan for Sundhedsråd Nordsjælland.\n\nIndsatser på ældreområdet, som kommunerne vil iværksætte, skal bidrage til kompetenceløft\nog kapacitetsopbygning i ældreplejen, herunder at sikre at de rette kompetencer er til stede, og\nstyrke den faglige kvalitet i fx plejen af sårbare ældre og ældre med demens, i forebyggelsen af\nfald og i arbejdet med de kommende kvalitetsstandarder for basal palliation og kommunal\nsygepleje.\n2.1. Ældre: Fokus på kompetenceudvikling\nMidlerne skal gå til indsatser på ældreområdet og skal bidrage til kompetenceløft og\nkapacitetsopbygning i ældreplejen, herunder at sikre at de rette kompetencer er til stede, samt\nbidrage til at løfte den faglige kvalitet ift. pleje til sårbare ældre, forebyggelse af indlæggelser\nog nye krav i Kvalitetsstandarden for basal palliation og kommunal sygepleje.\nHelsingør kommunes forslag indenfor temaet:\nFaldforebyggelse – Styrke kompetencer og tid til tværfaglig screening samt systematiske\nindsatser til opfølgning med borger, der er faldtruet for at forebygge indlæggelser\nBasal palliation – kapacitetsopbygning over døgnet på tværs af enheder i Sundhed og\nOmsorg for at styrke opsporing, løbende afdækning af behov, fælles plan for den\nenkelte borger samt styrke kompetencer i basal palliation bredt i hjemmeplejen og på\nplejehjem og døgnpladser, herunder arbejde med lokale videnspersoner.\n\nDet samlede beløb ved en fordeling med 75 % af midlerne til disse indsatser giver i alt 3,15\nmio.kr.\n2.3. Børn og unge i mistrivsel og med psykisk lidelse: Fokus på familier”\nHelsingør kommunes forslag indenfor temaet:\nMed afsæt i Trivselskommissionens anbefalinger foreslås en styrket, tidlig og forebyggende\nindsats, der understøtter forældreskabet gennem hele barnets opvækst fra 0-18 år. Formålet er\nat styrke forældres viden, kompetencer og handlemuligheder i relation til børns og unges trivsel\nog udvikling.\nIndsatsen omfatter aldersdifferentierede forældreforløb, oplæg, rådgivning og psykoedukation,\nsom giver forældre konkrete redskaber til at håndtere almindelige udviklingsmæssige\nudfordringer, herunder følelsesregulering, konflikter, sociale relationer, digitale medier,\nskærmbrug og overgange i børne- og ungdomslivet.\nMålet er at styrke forældres tryghed og mestringsevne, normalisere almindelige udfordringer i\nbørn og unges udvikling samt forebygge mistrivsel, ængstelighed og problematisk skolefravær.\nPå længere sigt skal indsatsen bidrage til bedre mental sundhed, øget deltagelse i\nfællesskaber og et reduceret behov for specialiserede indsatser.\n\nDet samlede beløb ved en fordeling med 25 % af midlerne til disse indsatser giver i alt 1,05\nmio.kr.\nDer vil alene blive indgået aftale for 2027 om anvendelse af de ikke-bundne midler, da\nnærsundhedsplanen først bliver vedtaget af Sundhedsrådet i 2027. Midlerne bør dog\nstadigvæk medvirke til den langsigtede kapacitetsopbygning.\n3. De bundne midler\nDe bundne midler udgør 1,3 mio. kr. til Helsingør Kommune. Midlerne er i 2027 bundet til\nnationale tværgående kvalitetsstandarder for almen kommunal sygepleje samt udbredelse af\nmere ensartet basal palliation i borgerens hjem.\nDet er aftalt nationalt, at midlerne udmøntes af sundhedsrådet, og at de er fordelt mellem\nkommunerne efter indbyggertal.\n4. Kvalitetsstandarder for kommunal sygepleje og basal palliation\nSundhedsstyrelsen har sendt kvalitetstandarder for kommunal sygepleje og basal palliation i\nhøring. Jf. kommissoriet for arbejdet er formålet med kvalitetsstandarderne at bidrage til fortsat\nudvikling og forbedringer af de kommunale sundhedsindsatser.\nMidlerne fra investeringsmotoren skal derfor ses i sammenhæng med over en årrække at\nstyrke sygeplejen, så den lever op til kvalitetsstandardens krav om ”en fagligt stærk,\ntilgængelig og døgndækket kommunal sygepleje”, da flere sundhedsindsatser skal løftes nært i\nprimær sektor fremadrettet. Midlerne skal derfor bidrage til at styrke systematisk\nkompetenceudvikling og kapacitet i fht. både medarbejdere og ledelse.\nKvalitetsstandardenerne består af både bindende krav til kommunale indsatser og ikkebindende anbefalinger. ”Bindende krav” er nationalt bindende kvalitetskrav for den kommunale\nsygepleje i alle kommuner. ”Ikke-bindende anbefalinger” er faglige anbefalinger for den\nkommunale sygepleje og basal palliation, som kan omsættes og tilpasses lokalt igennem\naftaler mellem sundhedsråd og kommuner med udgangspunkt i lokale behov og\norganiseringer. En af de ikke-bindende anbefalinger omhandler de kommunale sygeplejerskers\nudvidede virksomhedsområde. Midler fra den kommunale investeringsmotor skal ikke\nanvendes til sygeplejerskers udvidede virksomhedsområde, idet dette skal finansieres af\nregionale midler.\n5. Opfølgning på indsatserne\nDet er aftalt nationalt, at det ikke er hensigten, at sundhedsrådene skal foretage en\nudgiftsopfølgning i kommunerne.\nOpfølgningen skal give sundhedsrådet et grundlag for at følge aktiviteter og resultater af de\nprioriterede indsatser samt understøtte sammenhængen med nærsundhedsplanen og øvrige\naktiviteter i det nære sundhedsvæsen.\n\nDer forelægges på den baggrund en samlet årlig status for sundhedsrådet vedrørende de\nbesluttede indsatser.\n\nRetsgrundlag\nLov om overgangen til en ny sundhedsstruktur (overgangsloven)\nSundhedsloven\n\nRelation til vision og tværgående politikker\nSundhedspolitik 2023-2030 – Lev livet hele livet\n\nØkonomi/Personaleforhold\nUdmøntning af midlerne foregår ved, at kommunerne sender en regning til Region\nØstdanmark, hvor det fulde beløb for de besluttede indsatser fremgår. Regningen skal være\nudspecificeret på de enkelte indsatser og varighed. Kommunen kan derefter budgettere på\naftalt indtægt.\nMidlerne vil blive indarbejdet i budget 2027 under hhv. budgetområde 517 Udsatte børn og 619\nOmsorg og Ældre. Midlerne kan ikke overføres mellem budgetår og skal derfor anvendes i\n\nKommunikation/Høring/Borgerinddragelse\nSagen er sendt i høring i Seniorrådet."
+    },
+    {
+     "titel": "Behandling i Omsorgs- og Sundhedsudvalget 3. november 2026",
+     "tekst": "Indstillingen anbefales.\nFraværende:\nKasper Hovgaard"
+    },
+    {
+     "titel": "Behandling i Børne- og Uddannelsesudvalget 11. november 2026",
+     "tekst": "Emilie Schumacher stillede forslag om ændret fordeling således at midlerne fordeles med\n50% til børne- og ungeområdet og 50% til indsatser til ældreområdet.\nStine Eising (I) og Emilie Schumacher (Ø) stemte for.\nKnud Vinther Hansen (C) Gert Dyekjær (C), Kasper Hovgaard (C) og Silas Drejer (A)\nudlod at stemme.\nForslaget blev vedtaget.\n------------------------------------Udvalget anbefalede administrationens indstilling.\nFraværende:\n\nBente Borg Donkin"
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-16": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-16",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: To større anlægsregnskaber fra Center for By, Land og Vand",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By, Land og Vand og Center for Økonomi og Ejendomme indstiller,\nat de to anlægsregnskaber godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På By-, Plan- og Trafikudvalgets område er færdiggjort to anlægsregnskaber. Samlet set har\nder været et merforbrug på 34.000 kr., der er finansieret af kassen.\nResultatet for de fem projekter fordeler sig således:\n\nAnlægsbevilling\n\nRegnskabsresultat\n\nMer-/\nmindreforbrug*\n\nRundkørsel Esrumvej/harreshøjvej\n\nLundegade trafiksanering og forskønnelse\n\nI alt\n\n* Merforbrug/mindreindtægt -, Mindreforbrug/merindtægt +\nAnlægsregnskaberne er vedlagt som bilag til denne sag.\n\nNedenfor er en kort beskrivelse af de enkelte anlægsprojekter\n1. Rundkørsel Esrumvej/Harreshøjvej\nHelsingør Kommune har ombygget krydset Esrumvej/Harreshøjvej fra T-kryds til en rundkørsel\nmed henblik på at forbedre trafiksikkerheden og trafikafviklingen. Der er etableret rundkørsel\nmed tilhørende jord- og afvandingsarbejder samt beplantning.\nAf trafiksikkerhedsmæssige årsager blev rundkørslen anlagt øst for det eksisterende kryds,\nhvorfor det har været nødvendigt af foretage arealerhvervelse.\nUnder anlægsarbejdet blev det klart, at jorden var væsentlig mere våd end forundersøgelserne\nhavde vist. En større jordudskiftning måtte iværksættes, hvilket medførte behov for tilskud til\nanlægsbevillingen på 2,9 mio. kr. fra miljøpuljen. Rundkørslen blev åbnet for trafik i juni 2024.\nRegnskabet er afsluttet med et merforbrug på 9.000 kr., der er finansieret af kommunekassen.\n2. Lundegade trafiksanering og forskønnelse\nHelsingør Kommune har gennemført trafiksanering og forskønnelse af Lundegade med henblik\npå at forbedre de trafikale forhold og gadens fremtræden. Projektet blev udført i sammenhæng\nmed renovering af fortove og asfaltbelægning i samarbejde med Nordsjællands Park og Vej.\nAnlægsarbejdet blev udført i 2024.\nI forlængelse af projekt Skolen i Bymidten blev der fra byggeriets anlægsramme overført 0,3\nmio. kr. til bevillingen til udbedring af skader på Marienlyst Allé som følge af byggeriet.\nUdbedring af skaderne afventede koordinering med fjernvarmearbejde samt fortovsrenovering\nog trafiksanering af Marienlyst Allé. Arbejderne på Marienlyst Allé er udført i 2026 og afsluttes i\nuge 42 med asfaltslidlag.\nRegnskabet er afsluttet med et merforbrug på 25.000 kr., der er finansieret af kommunekassen\n\nRetsgrundlag\nIngen bemærkninger.\n\nRelation til vision og tværgående politikker\nPrincipper for økonomistyring i Helsingør Kommune.\n\nØkonomi/Personaleforhold\nJf. sagsfremstillingen.\n\nKommunikation/Høring/Borgerinddragelse\nSagen giver ikke anledning til særskilt kommunikation/høring/borgerinddragelse."
+    },
+    {
+     "titel": "Behandling i By-, Plan- og Trafikudvalget 5. november 2026",
+     "tekst": "Indstillingen anbefales.\nFraværende:\nBetina Svinggaard"
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-17": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-17",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 17,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Udsættelse af låneafdrag for Helsingør Svømmeklub",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Kultur, Erhverv og Fritid indstiller,\nat Helsingør Svømmeklubs anmodning om udsættelse af første afdrag på det kommunale\nlån samt udskyde afbetalingsperioden med et år imødekommes. Dette således at første\nafdrag udsættes fra 15. august 2026 til 15. august 2027, og at lånet løber til 2034 i stedet\nfor 2033 Dermed besluttes også, at indtægtsbudgettet under renter og tilgodehavender\nparallelforskydes med et år ud i tiden (fra 2026-2033 til 2027-2034)."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Baggrund\nByrådet besluttede den 25. november 2024 at yde Helsingør Svømmeklub et lån i forbindelse\nmed lukningen af Helsingør Svømmehal. Formålet var at finansiere tilbagebetaling af\nkontingenter til medlemmer, der ikke kunne benytte klubbens sædvanlige aktiviteter, og at sikre\nklubbens fortsatte drift.\nDet politisk godkendte lånebeløb var 1,7 mio. kr., mens den endelige låneaftale blev indgået på\n1,1 mio. kr. Det skyldes, at flere medlemmer valgte ikke at få deres forudbetalte kontingent\ntilbage, men i stedet lod kontingentet overgå til en efterfølgende sæson.\nDen oprindelige forudsætning bag lånet var, at svømmearenaen ville åbne i august 2025.\nSvømmearenaen åbnede senere end forventet og klubben fik dermed kortere tid til at\ngenoptage aktiviteterne og genopbygge sin økonomi inden første afdrag.\nLånet tilbagebetales i otte årlige afdrag på 137.500 kr. og forrentes med 2,5 procent årligt.\nFørste afdrag forfaldt den 15. august 2026 og er ikke betalt.\nTabel 1: Oprindelige forudsætninger og faktisk udvikling\nForhold\n\nOprindeligt grundlag\n\nFaktisk udvikling/status\n\nÅbning af svømmehallen\n\nDen oprindelige\nforudsætning bag lånet var\nåbning i august 2025.\n\nSvømmearenaen åbnede i\napril 2026, næsten et år\nsenere end forudsat.\n\nLånets størrelse\n\nAnsøgning og politisk\nLåneaftale på 1,1 mio. kr.,\nbeslutning på 1,7 mio. kr.\nfordi flere medlemmer lod\nmed en årlig rente på 2,5 pct. kontingentet overgå til en\nsenere sæson frem for at få\ndet tilbagebetalt. Renten er\npå 2,5 pct.\n\nMedlemstal\n\nDen oprindelige politiske sag\nbudgetterede med 830\nmedlemmer i 2025/26 og\n1775 medlemmer i sæsonen\n2026/2027. Senere materiale\nomtaler scenarier på 830,\n1040 og 1250 medlemmer.\n\nKlubben oplyser aktuelt ca.\n1.000 medlemmer.\n\nBassintidskapacitet\n\nKlubbens vækst afhænger\nbl.a. af den tildelte bassintid.\n\nKlubben har fået tildelt\nbassintid svarende\ntilsvarende til ca. 850-1.200\nmedlemmer.\n\n2. Klubbens økonomi og forudsætninger for tilbagebetaling\nKlubben påpeger, at svømmearenaen åbnede senere end forventet. Dette medførte, at\nklubben havde kortere tid end forudsat til at genoptage aktiviteterne og genopbygge\nmedlemstal og økonomi, inden første afdrag på lånet forfaldt i august 2026.\nDe endelige bassintider for sæsonen 2026/27 blev først afklaret i juli 2026. Ifølge klubben\nforsinkede det åbningen for klubtilmeldinger og gav familierne kortere tid til at planlægge\nsæsonens fritidsaktiviteter. Klubben vurderer, at dette har påvirket tilmeldingerne og\nindtægterne ved sæsonstart.\nKlubbens budget for 2026/27 i den økonomiske redegørelse (bilag 1) viser et forventet resultat\npå 300.705 kr. før afdrag og rentebetaling på det kommunale lån. Det forventede resultat efter\nlånebetaling og renter fremgår af tabel 1.\nTabel 2: Helsingør Svømmeklubs budget for 2026/27\nBudgetposter\n\nBeløb i hele kr.\n\nResultat før afdrag og renter\n\nÅrets låneydelse\n\nAkkumuleret rente fra 1/2-2025 til 15/8- 2026\n\nForventet overskud efter låneydelse\n\nBeløb afsat til uforudsete udgifter\n\nKlubben peger på bedre holdplanlægning, flere tilmeldinger og en bedre udnyttelse af holdene\nsom muligheder for at styrke økonomien. Klubben har i dag ni deltagere pr. hold og har en\nambition om at øge antallet til 12 med henblik på at reducere udgifterne til trænerlønninger\ngennem færre hold. Effekten forventes primært fra sæsonen 2027/28. Yderligere\nmedlemsvækst forudsætter ifølge klubben adgang til tilstrækkelig bassintid på de tidspunkter,\nhvor børn, unge og familier efterspørger undervisning.\nDet er aftalt med klubben, at de fordelte bassintider evalueres og justeres om muligt for hver\nsæson. Fordeling af bassintider følger folkeoplysningslovens § 21, stk. 3 og 4 samt de politisk\nvedtagne fordelingsprincipper.\nI indeværende sæson er der tildelt bassintider med mulighed for, at klubben kan vokse til cirka\n1.200 medlemmer. Administrationens vurdering nedenfor bygger således på, at\ntilbagebetalingen af lånet ikke afhænger af mere vandtid, da den tildelte tid allerede giver\nmulighed for at leve op til forudsætninger for lånet.\nMedlemsvækst og øget indtjening indgår i grundlaget for klubbens tilbagebetaling af lånet. Det\ner dog ifølge klubben usikkert, om det budgetterede resultat kan realiseres, og hvilken\nøkonomisk effekt de planlagte tiltag vil have. Klubben oplyser, at 85 personer står på venteliste\ntil de mest attraktive hold, mens 19 af klubbens 107 undervisningshold har højst fire deltagere.\nKlubben vil derfor sammenlægge hold, hvor det kan ske uden at miste medlemmer. En\nnærmere beskrivelse af klubbens økonomiske redegørelse fremgår af bilag 1.\n3. Vurdering\nAdministrationen vurderer, at en udsættelse kan give klubben mulighed for at styrke sit\nøkonomiske fundament. Det skyldes, at klubbens forventede resultat efter betaling af renter og\nafdrag skal opbygges tilstrækkeligt til at kunne dække eventuelle uforudsete udgifter og andre\nøkonomiske udsving.\nDen næsten ni måneder forsinkede åbning af svømmearenaen er den væsentligste\nbegrundelse for klubbens ønske om at udsætte første afdrag på det kommunale lån.\nForsinkelsen gav klubben kortere tid end forventet til at genoptage aktiviteterne og genopbygge\nøkonomien efter svømmehallens lukning. Klubben har dog siden åbningen allerede fået flere\nmedlemmer end forventet. Klubbens budget for 2026/27 viser et forventet resultat på 300.705\nkr. før renter og afdrag på det kommunale lån.\nEn udsættelse reducerer ikke gælden og medfører yderligere renteudgifter. Hvis første afdrag\nudsættes til 15. august 2027, vil klubben dog få et større økonomisk råderum i den kommende\nsæson og således være mere robust også mht. fremtidige afdrag. Administrationen forventer,\nat klubben anvender den øgede likviditet som følge af afdragsudskydelsen til at styrke\nklubbens økonomiske robusthed og opbygge en reserve til uforudsete udgifter, samtidig med at\nmidlerne anvendes under hensyn til klubbens samlede aktiviteter og medlemmer.\n\nRetsgrundlag\nKommunalfuldmagten og den eksisterende låneaftale mellem Helsingør Kommune og\n\nHelsingør Svømmeklub. Sagen vedrører en ændring af tidspunktet for tilbagebetaling af et\nkommunalt lån.\n\nRelation til vision og tværgående politikker\nVision 2030:\nAt styrke foreningslivet og sikre, at alle borgere har mulighed for at deltage i\nidrætsaktiviteter.\nAt fremme sundhed og trivsel for alle aldersgrupper gennem motion og idræt.\nIdræts- og Fritidspolitikken:\nAt sikre rammerne for lokale idrætsforeninger og understøtte det organiserede idrætsliv.\n1.000 flere aktive i foreningslivet.\n\nØkonomi/Personaleforhold\nEn udsættelse ændrer ikke lånets hovedstol på 1,1 mio. kr. eller den aftalte rente på 2,5\nprocent årligt, men forskyder svømmeklubbens betalinger til Helsingør Kommune med et år.\nDet betyder, at den første rentebetaling bliver højere, da der løber et års ekstra renter på.\nVed betaling af første afdrag og renter pr. 15. august 2026 skulle der betales 137.500 kr. i\nafdrag og 42.192 kr. i renter for perioden 1. februar 2025 til 15. august 2026. Ved udskydelse\naf betalingen med et år skal der pr. 15. august 2027 betales 137.500 kr. i afdrag og 69.692 kr. i\nrenter for perioden 1. februar 2025 til 15. august 2027. Hvis det besluttes at udskyde\nbetalingerne af afdrag og renter med et år fra 15. august 2026 til 15. august 2027, så skal\nindtægtsbudgettet på renter og balanceforskydninger tilsvarende forskydes et år ud i tiden.\n\nKommunikation/Høring/Borgerinddragelse\nSagen giver ikke anledning til særskilt høring eller borgerinddragelse."
+    },
+    {
+     "titel": "Behandling i Idræts- og Fritidsudvalget 9. november 2026",
+     "tekst": "Indstilling anbefales.\nFraværende:\nBente Borg Donkin\nBetina Svinggaard"
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-18": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-18",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 18,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Godkendelse af Frokosttakst for Dagtilbud 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Økonomi og Ejendomme indstiller,\nat den opdaterede Frokosttakst for dagtilbud på 1.010 kr./mdr. godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ifølge Dagtilbudsloven skal alle børn i kommunale og selvejende dagtilbud have et sundt\nfrokostmåltid alle hverdage. Det betyder, at kommunen skal tilbyde alle børn i dagtilbud en\nfrokostordning. Det er forældrebestyrelsen i det enkelte dagtilbud som skal beslutte om de\nønsker en frokostordning. Taksten for frokostordningen indgår i beslutningsgrundlaget ved\nafstemningen.\nFlere dagtilbud oplever, at det er vanskeligt at få økonomien til frokostordningen til at hænge\nsammen. Der er derfor i forbindelse med den kommende afstemning i dagtilbuddenes\nforældrebestyrelser lavet en genberegning af taksten. Genberegningen betyder, at taksten\nændres fra 800 kr. til 1.010 kr./mdr. (juli måned er betalingsfri). Ændringen vil være gældende\nfra januar 2027.\nTakstændringen skal ses i lyset af, at taksten ikke er blevet prisjusteret siden 2023. Den\ngenerelle prisudvikling udgør i sig selv ca. 120 kr./mdr. af takstændringen. Der er herudover\ntale om en yderligere opjustering på 90 kr./mdr. på baggrund af erfaringer med de faktiske\nudgifter til ordningen. Det er nødvendigt med en ny takst for at sikre, at frokostordningen\nfremadrettet er fuldt finansieret og dermed ikke risikerer at belaste dagtilbuddets pædagogiske\nnormering.\n\nMed Finanslovsaftalen for 2026 blev forældrenes egenbetalingsandel for en plads i dagtilbud\nnedsat til 21,3 pct. gældende fra 2027. Taksten for en plads i et dagtilbud er fra 1. januar 2027\nfastsat til hhv. 3.805 kr./mdr. for de 0-2 årige og 1.940 kr./mdr. for de 3-6 årige. Tilvælges en\nfrokostordning vil frokosttaksten komme oveni.\nForældrebetalingen til en frokostordning er omfattet af reglerne om fripladstilskud.\n\nRetsgrundlag\nDagtilbudslovens § 16 a og 16 b.\n\nRelation til vision og tværgående politikker\nSagen har ingen særskilt relation til vision og tværgående politikker.\n\nØkonomi/Personaleforhold\nJf. sagsfremstilling."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-19": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-19",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 19,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Beslutning: Salg af Wisborg",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Økonomi og Ejendomme indstiller,\n\n1. at Ejendommen ikke udbydes til salg, før den sidste beboer er fraflyttet i\nforbindelse med flytningen til Bøgehøjgård, når det nye botilbud står færdigt.\n2. at Administrationen gives mandat til at udvikle ejendommen i det fornødne omfang\nforud for salget med henblik på at øge salgsindtægten."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Wisborg, beliggende på Søndre Strandvej 29A og 29B i Helsingør, er en kommunal ejendom\nopført i 1906. Ejendommen anvendes i dag til botilbud i form af opgangsbofællesskabet\nWisborg.\nWisborg har seks pladser og henvender sig til voksne borgere i alderen 18-65 år med psykiske\nlidelser og væsentlige funktionsnedsættelser, som har behov for omfattende støtte, men ikke\nfor døgndækning. Tilbuddet er etableret efter servicelovens § 107, og pladserne bevilges af\nmyndigheden i Center for Social Indsats og Bolig.\nStøtten ydes primært som individuel støtte og suppleres med sociale grupper og\nidrætsaktiviteter. Ejendommen rummer fællesrum, hvor der kan afholdes fællesaktiviteter for\nbeboerne.\nSom led i budget 2027-2030 er det besluttet at tilpasse tilbudsviften ved at lukke\nopgangsbofællesskabet Wisborg og sælge bygningen. Botilbuddet på Wisborg ophører, når de\nsidste beboere flytter til Bøgehøjgård, efter at det nye botilbud er færdigt og klar til indflytning.\nEjendommen vil herefter ikke længere skulle anvendes til det nuværende botilbud. For\nnuværende er der 5 tilbagevarede beboere.\nEjendommen udbydes ikke til salg, før den sidste beboer er fraflyttet. Tidspunktet for udbuddet\nafhænger dermed af færdiggørelsen af Bøgehøjgård og den efterfølgende flytning af beboerne.\nEjendommen er registreret med bevaringsværdi 4 og omfattet af temalokalplan 0.1 for\nbevaringsværdige bygninger i Helsingør Kommune. Den fremtidige anvendelse og eventuelle\n\nbehov for myndighedsgodkendelser afklares i forbindelse med forberedelsen af salget.\nAdministrationen gives mandat til inden salget at undersøge og søge de nødvendige tilladelser\ntil at sammenlægge Wisborgs fem boliger til én bolig samt udstykke grunde til yderligere\nboligbyggeri, Hvis mulighederne godkendes, skal Wisborg og de udstykkede grunde kunne\nsælges særskilt. Dette forudsætter konkret myndighedsbehandling og de nødvendige politiske\nbeslutninger, herunder i By-, Plan- og Trafikudvalget.\nEn kommende køber vil kunne søge om tilsvarende udvikling. Ved at afklare mulighederne\ninden salget kan kommunen sikre, at et eventuelt udviklingspotentiale afspejles i salgsprisen.\nNærværende sag omhandler salg af ejendommen. Den konkrete tilrettelæggelse af beboernes\nflytning til Bøgehøjgård håndteres af Center for Social Indsats og Bolig.\n\nRetsgrundlag\nKommunalfuldmagten.\n\nRelation til vision og tværgående politikker\nEjendomsplanen – Liv og levende bygninger\nVi udvikler byen, så vi bidrager til attraktive boliger og boligområder.\nVi skaber tidssvarende bygninger, der er sunde at opholde sig i, og er tidssvarende,\næstetiske og velholdte.\nVi bygger bæredygtigt, hvilket betyder, at vi energirenoverer ældre bygninger.\n\nØkonomi/Personaleforhold\nSalgsprovenuet og salgsomkostningerne bogføres på budgetområde 825 Økonomi og\nEjendomme under anlægsprojektet Arealoptimering - pulje.\nDet vedtagne budget for 2027-2030 indeholder under forslag r718-007 ”Tilpasning af\ntilbudsviften, lukning af opgangsfællesskabet Wisborg – og salg af bygningen” en\ndriftsbesparelse på 0,1 mio. kr. årligt fra 2028 på budgetområde 718 Særlig Social Indsats.\nDer foreligger ikke en særskilt vurdering af salgsprovenuet i det vedlagte materiale. Det\nforventede provenu og udgifterne til salgets gennemførelse afklares som led i forberedelsen af\nudbuddet.\n\nKommunikation/Høring/Borgerinddragelse\nKommunikation med beboere og pårørende om lukningen af Wisborg og flytningen til\nBøgehøjgård varetages af Center for Social Indsats og Bolig. Forberedelsen af salget\nkoordineres med centret, så ejendommen først udbydes, når den sidste beboer er fraflyttet."
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-21": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-21",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 21,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Orientering: Status på Campus Helsingør",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller,\nat orientering foretages."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der orienteres om status på Campus Helsingør\n\nRetsgrundlag\nIngen bemærkninger\n\nRelation til vision og tværgående politikker\nSagen relaterer sig til satsningsområdet i Vision 2030: Vi skaber attraktive uddannelsesmiljøer\n\nØkonomi/Personaleforhold\nSagen har ikke afledte konsekvenser for økonomi og personaleforhold\n\nKommunikation/Høring/Borgerinddragelse\nSagen giver ikke anledning til særskilt kommunikation/høring/borgerinddragelse"
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-22": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-22",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 22,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Meddelelser/Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nØkonomi- og Erhvervsudvalget 2026-2029"
+    }
+   ],
+   "bilag": []
+  },
+  "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-23": {
+   "id": "helsingoer-2026-11-23-oekonomi-og-erhvervsudvalget-23",
+   "kommune": "Helsingør",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-23",
+   "type": "dagsorden",
+   "nr": 23,
+   "kilde": "https://dagsordener.helsingor.dk/vis?id=6fe00eca-8ebb-414c-9e78-afa54dcba53d",
+   "hentet": "2026-11-19T13:23:50.509Z",
+   "titel": "Godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagen afgøres i:\nØkonomi- og Erhvervsudvalget 2026-2029"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -11087,12 +11623,12 @@
    "tjekket": "2026-10-22"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=6841e0c7-1c77-4ad9-b409-593b4a8219b2": {
-   "senest": "2026-10-20",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=48ad753d-7c69-4a24-a0cc-19ecb9964478": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=37139b09-cb1f-4b58-a04c-5c9da7ad5766": {
    "senest": "2025-09-27",
@@ -11124,19 +11660,19 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=5450d759-32d4-4661-a39e-84d843344f96": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=a778dfca-c769-4f3b-90c4-792a6fba2b51": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=99b006ff-6e70-4e5e-a1bb-50ba3fe5dc80": {
    "senest": "2025-09-27",
    "tjekket": "2026-10-22"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=292b2ff5-f697-4c89-95c7-6288fee9f125": {
-   "senest": "2026-10-27",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-19",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=81f81bff-2a01-4aa8-913b-7ddbc9bd9359": {
    "senest": "2025-09-27",
@@ -11144,11 +11680,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=a1352af2-79ec-4c72-99a7-605783986f43": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=2631058b-5f2f-41e6-b89b-488d7ac6701a": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=cc8cce17-1cd2-4abf-8d16-799cd1f981f5": {
    "senest": "2025-09-27",
@@ -11160,11 +11696,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=2cc79ac3-9841-479f-9536-fbe769903152": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=4be0da71-d397-48f5-b360-814390d79b84": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=958a6ebe-ee8a-42fb-b3b8-9440f6c951bb": {
    "senest": "2025-09-27",
@@ -11176,11 +11712,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=1e03c3f7-9277-485e-829b-83476e094479": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=8356dab8-8751-4a8b-894e-480f30884d13": {
    "senest": "2025-12-01",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=2a03e3a0-0006-4e5a-a535-135fbdf25500": {
    "senest": "2021-12-02",
@@ -11196,11 +11732,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=ead60ee1-8769-40d0-b465-07887daf1a25": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=4faacf99-8697-4471-9ae5-1f2ac1967e26": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=1e3db3bd-e7c9-4f31-b188-657af4264b75": {
    "senest": "2025-09-27",
@@ -11208,11 +11744,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=1b7a4687-1c7b-4938-8638-1827608d2784": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=467355c4-c8b4-45e3-ada2-8dcc86803f49": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=b704e9a3-120d-4377-90ba-303325224590": {
    "senest": "2023-12-19",
@@ -11236,11 +11772,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=4a46398f-46fc-45c6-a404-b4570d019ef0": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=c6502d30-1fd2-4ae3-ab89-c88061a4bd25": {
    "senest": "2026-05-13",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=74e33e53-a61e-4319-afbb-32d0ce61f778": {
    "senest": "2025-09-27",
@@ -11268,19 +11804,19 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=8f92b7c6-65d6-44c2-95d1-3330c6be8d78": {
    "senest": "2026-08-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=2be05a4d-67c5-4e98-bc8f-6f0660577374": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=f77aabe3-70e3-4e31-8f61-7bae82f4d349": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=256f92a3-dc39-4434-9aef-d97c919a0d62": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=91e26f95-2210-470b-b929-47aea0e24f38": {
    "senest": "2025-09-27",
@@ -11292,11 +11828,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=18aeddb6-175b-4c4f-a4c7-f9a0190d92cd": {
    "senest": "2026-10-27",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=f0a9a8ac-ef74-4e56-bd8a-32aeccc1d3e5": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=ad1d8cd7-946e-4f3f-999b-b026f3533db7": {
    "senest": "2025-09-27",
@@ -11308,11 +11844,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=d8e9ad23-7b08-4513-9631-847de343f53d": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=f3c25388-96c2-42d3-84bf-5ab82f214db0": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=5bced394-3e04-4484-87b1-fde3f5cd41a7": {
    "senest": "2025-09-27",
@@ -11324,11 +11860,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=8d14cc47-cedb-4055-b847-3fefb34ef137": {
    "senest": "2026-09-30",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=cf27ebfb-35da-44a5-ac41-715ffb1ebf20": {
    "senest": "2025-12-15",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=06b5b2a8-8916-45a6-b37d-ffe741291d9c": {
    "senest": "2025-09-27",
@@ -11340,11 +11876,11 @@
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=8a8457e5-96ae-49a4-8473-4b2792b45707": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=1c5f1a16-ab9b-4728-bcf5-0997e3936e39": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.helsingor.dk/Sitemap/ForCommittee?committeeId=1742f683-ec0f-4a32-a49d-d5658f7e0721": {
    "senest": "2020-05-05",
@@ -11367,7 +11903,7 @@
    "tjekket": "2026-10-22"
   }
  },
- "opdateret": "2026-11-13T21:08:30.076Z",
+ "opdateret": "2026-11-19T13:24:01.629Z",
  "kommune": "Helsingør",
  "parser": 3
 }

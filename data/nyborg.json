@@ -505,6 +505,30 @@
    "dato": "2026-11-17",
    "punkter": 19,
    "parser": 3
+  },
+  "f65e7f83-562e-42e7-9874-05017cea7ffb": {
+   "lastmod": "2026-11-19",
+   "type": "dagsorden",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-26",
+   "punkter": 3,
+   "parser": 3
+  },
+  "bdb6efd5-5717-4666-90de-b01f23b192c6": {
+   "lastmod": "2026-11-19",
+   "type": "dagsorden",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "punkter": 9,
+   "parser": 3
+  },
+  "65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5": {
+   "lastmod": "2026-11-18",
+   "type": "referat",
+   "udvalg": "Byrådet",
+   "dato": "2026-11-17",
+   "punkter": 19,
+   "parser": 3
   }
  },
  "sager": {
@@ -13123,10 +13147,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Indkaldelse af stedfortrædere",
    "afsnit": [
     {
@@ -13136,6 +13160,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Borgmesteren har modtaget meddelelse om, at følgende har forfald til dagens byrådsmøde:\n\nOle Tyrsted Jørgensen, hvorfor liste F ønsker at indkalde stedfortræder Iben Bohr.\nTina Ginnerup Jespersen, hvorfor liste B ønsker at indkalde stedfortræder Tue Fabricius.\nLone Smidt, hvorfor liste A ønsker at indkalde stedfortræder Poul Erik Knudsen\n\nStedfortrædere indkaldes i henhold til Styrelsesvedtægtens § 23, hvorefter byrådet skal træffe\nbeslutning om, hvorvidt betingelserne for stedfortræderindkaldelsen er opfyldt.\nBetingelserne er:\nat stedfortræderen er rette stedfortræder\nat stedfortræderen er valgbar.\n\nØkonomiske konsekvenser\nDer ydes diæter eller erstatning for dokumenteret tabt arbejdsfortjeneste efter reglerne i\nvederlagsbekendtgørelsens § 6.\n\nSagen afgøres i\nByrådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13145,15 +13173,19 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Det indstilles, at dagsordenen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13163,10 +13195,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Spørgetid",
    "afsnit": [
     {
@@ -13176,6 +13208,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Ingen.\n\nSagen afgøres i\nByrådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\n\nRune Christensen, Knudshovedkvarteret, Nyborg: Spørgsmål vedr. støj på havnen - forhøjelse\naf støjniveau ved påbud til virksomhed.\nKaren Margrethe Nielsen, Provst Hjortsvej, Nyborg: Spørgsmål vedr. støj på havnen forhøjelse af støjniveau ved påbud til virksomhed. Ønsker byrådet et godt liv for byens borgere."
     }
    ],
    "bilag": []
@@ -13185,10 +13221,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Udarbejdelse af en samlet socialpolitik for det specialiserede voksenområde",
    "afsnit": [
     {
@@ -13206,6 +13242,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13215,10 +13255,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Godkendelse af rammeaftale for det specialiserede socialområde 2027-2028",
    "afsnit": [
     {
@@ -13236,6 +13276,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13245,10 +13289,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Godkendelse af ændring af de offentliggjorte sagsbehandlingsfrister på det sociale område",
    "afsnit": [
     {
@@ -13262,6 +13306,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Fraværende: Lone Smidt\nEt flertal bestående af listerne C, I og V anbefaler indstillingen.\nListe A anbefaler indstillingen med undtagelse af Barnets Lov § 35, § 82 og § 86, hvor fristen\nforlænges.\nListe F stemmer imod indstillingen, da liste F mener, at investeringen i socialområdet ikke\nharmonerer med en samtidig forlængelse af sagsbehandlingstiderne.\nListe B undlader at stemme."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\n\nByrådet godkender indstillingen, men ønsker fremadrettet, at der sker en kvartalsvis\nafrapportering i udvalgene, med henblik på at udvalgene fortsat kan arbejde med at reducere\nsagsbehandlingstiderne."
     }
    ],
    "bilag": []
@@ -13271,10 +13319,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Orientering om status på udviklingsplanen for Social og Familie",
    "afsnit": [
     {
@@ -13292,6 +13340,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Fraværende: Lone Smidt\nOrienteringen taget til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nOrienteringen taget til efterretning."
     }
    ],
    "bilag": []
@@ -13301,10 +13353,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Anlægsbevilling til udskiftning af lydmixer i Bastionens sal",
    "afsnit": [
     {
@@ -13322,6 +13374,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13331,10 +13387,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Frigivelse af anlægsmidler - Vejprojekt/kystsikring Risingevej",
    "afsnit": [
     {
@@ -13352,6 +13408,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\n\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13361,10 +13421,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Frigivelse af anlægsmidler - Udfaldsbroen ved Nyborg Slot",
    "afsnit": [
     {
@@ -13382,6 +13442,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13391,10 +13455,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Frigivelse af midler til anlæg af busholdeplads ved Nyborg Slot fra budget 2027",
    "afsnit": [
     {
@@ -13412,6 +13476,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13421,10 +13489,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Afslag på tilladelse til rørbassin under parkeringsplads ved Slottet",
    "afsnit": [
     {
@@ -13442,6 +13510,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Udvalgets indstilling anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nUdvalgets indstilling godkendt."
     }
    ],
    "bilag": []
@@ -13451,10 +13523,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Frigivelse af midler fra Landsbyudviklingspuljen",
    "afsnit": [
     {
@@ -13472,6 +13544,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Udvalgets indstilling anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nUdvalgets indstilling godkendt."
     }
    ],
    "bilag": []
@@ -13481,10 +13557,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Frigivelse af midler til lovliggørelse i bygninger 2027",
    "afsnit": [
     {
@@ -13502,6 +13578,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13511,10 +13591,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Frigivelse af midler til energirenoveringer af bygninger 2027",
    "afsnit": [
     {
@@ -13532,6 +13612,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13541,10 +13625,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Frigivelse af midler til rådgivning til udvikling af byrummet på Østerhavnen",
    "afsnit": [
     {
@@ -13566,6 +13650,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13575,10 +13663,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 17,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Beslutning: Frigivelse af midler til LIFE-Ring - Østerø Sø",
    "afsnit": [
     {
@@ -13596,6 +13684,10 @@
     {
      "titel": "Behandling i Økonomi- og Erhvervsudvalget 9. november 2026",
      "tekst": "Indstillingen anbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nIndstillingen godkendt."
     }
    ],
    "bilag": []
@@ -13605,10 +13697,10 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 19,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Åbne meddelelser",
    "afsnit": [
     {
@@ -13618,6 +13710,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Til orientering\n\nSagen afgøres i\nByrådet"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nTil orientering."
     }
    ],
    "bilag": []
@@ -13627,15 +13723,275 @@
    "kommune": "Nyborg",
    "udvalg": "Byrådet",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 21,
-   "kilde": "https://dagsordener.nyborg.dk/vis?id=be1d4074-48df-4a6e-9352-9153f61ac1f1",
-   "hentet": "2026-11-12T12:56:37.637Z",
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=65dad4a0-0443-4f1e-bbe5-1eb9a346a7a5",
+   "hentet": "2026-11-19T13:30:52.871Z",
    "titel": "Underskriftsside",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Direktionen indstiller, at beslutningsprotokollen godkendes.\nFor at godkende beslutningsprotokollen, skal hvert medlem underskrive ved at trykke\npå 'Godkend' i First Agenda."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Fraværende: Lone Smidt (A), Ole Tyrsted Jørgensen (F), Tina Ginnerup Jespersen (B)\nGodkendt."
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-26-oekonomi-og-erhvervsudvalget-1": {
+   "id": "nyborg-2026-11-26-oekonomi-og-erhvervsudvalget-1",
+   "kommune": "Nyborg",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=f65e7f83-562e-42e7-9874-05017cea7ffb",
+   "hentet": "2026-11-19T13:30:30.066Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-26-oekonomi-og-erhvervsudvalget-2": {
+   "id": "nyborg-2026-11-26-oekonomi-og-erhvervsudvalget-2",
+   "kommune": "Nyborg",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=f65e7f83-562e-42e7-9874-05017cea7ffb",
+   "hentet": "2026-11-19T13:30:30.066Z",
+   "titel": "Beslutning: Sammenhængende Børne- og Ungepolitik",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at forslag til Sammenhængende Børne- og Ungepolitik foreløbigt\ngodkendes og sendes i høring i perioden 2.-10. december 2026, hvorefter politikken\nforelægges byrådet igen til endelig godkendelse på møde 15. december 2026.\nIndstilling fra Skole- og Dagtilbudsudvalget og Social- og Beskæftigelsesudvalget vil foreligge\ntil mødet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Alle kommuner er forpligtet på at udarbejde en sammenhængende børnepolitik, jf. Barnets Lov\n§15: Kommunalbestyrelsen skal udarbejde en sammenhængende børnepolitik, der har til\nformål at sikre sammenhængen mellem det generelle og forebyggende arbejde og den\nmålrettede indsats for børn og unge med behov for særlig støtte. Den sammenhængende\nbørnepolitik skal udformes skriftligt, vedtages af kommunalbestyrelsen og offentliggøres.\nDen nuværende børne- og ungepolitik hedder 'Sammen om Trivsel' og var gældende i\nperioden 2019-2025.\nPå baggrund af partiernes beslutning om at udskyde tidspunktet for beslutning om fremtidens\ndagtilbud og skole, udarbejdede administrationen en procesplan, der blev vedtaget af Skoleog Dagtilbudsudvalget 20. august. Procesplanen lagde op til høj grad af inddragelse af\ninteressenter.\nFølgende aktiviteter er gennemført i efteråret 2026:\nWorkshop 23. september med deltagelse af ledelse, bestyrelser, medarbejdere fra\ndagtilbud og skoler, Ungebyrådet samt interesserede borgere\nLedelsesmøde 6. oktober med deltagelse af ledelser fra dagtilbud, skoler samt\nsocialafdeling\nWorkshop 20. oktober med deltagelse af ledelse, bestyrelser, medarbejdere fra dagtilbud\nog skoler samt interesserede borgere\nInput fra børn og unge fra dagtilbud og skoler (indsamlet via lokale processer)\n\nMed afsæt i de mange input fra de inddragende processer har administrationen udarbejdet et\nudkast til Sammenhængende børne- og ungepolitik.\nPoltikken er bygget op på denne måde:\n\nVores fælles grundlag\nTre bærende principper: Forudsætninger, Forventninger og Forpligtelse\nSamarbejde på tværs\nFra fælles ambition til fælles praksis\n\nFormålet med den sammenhængende børne- og ungepolitik er at skabe et fælles fundament\nog en fælles retning for kommunens arbejde med børn og unge. Politikken skal sikre\nsammenhæng på tværs af almenområdet, de forebyggende indsatser og den målrettede\nstøtte, så børn, unge og familier oplever helhed og kontinuitet - også når flere fagligheder og\nområder er involveret. Politikken sætter samtidig en fælles ramme for, hvordan vi møder børn\nog unge, samarbejder med deres familier og på tværs af fagligheder arbejder for, at alle børn\nog unge får mulighed for at trives, udvikle sig, lære og være en del af betydningsfulde\nfællesskaber.\nMed afsæt i den sammenhængende børne- og ungepolitik bliver der udarbejdet strategier for\ndagtilbud og skole med henblik på vedtagelse i januar 2027.\n\nØkonomiske konsekvenser\nIngen.\n\nSagen afgøres i\nByrådet."
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-26-oekonomi-og-erhvervsudvalget-3": {
+   "id": "nyborg-2026-11-26-oekonomi-og-erhvervsudvalget-3",
+   "kommune": "Nyborg",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-26",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=f65e7f83-562e-42e7-9874-05017cea7ffb",
+   "hentet": "2026-11-19T13:30:30.066Z",
+   "titel": "Underskriftsside",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget godkender beslutningsprotokollen.\nFor at godkende beslutningsprotokollen, skal hvert medlem underskrive ved at trykke på\n'Godkend' i First Agenda."
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-1": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-1",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Godkendelse af dagsordenen",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at dagsordenen godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Dagsorden godkendes.\n\nØkonomiske konsekvenser\nIngen.\n\nSagen afgøres i\nSkole- og Dagtilbudsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-2": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-2",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Beslutning: Ledelsesrapportering pr. 30. september 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at:\nLedelsesrapporteringen godkendes og budgetomplaceringer indarbejdes i korrigeret\nbudget 2026 på baggrund af resultatopgørelse pr. 30. september 2026."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Økonomi og Digitalisering har udarbejdet ledelsesrapportering på baggrund 9 måneders\naktivitet og forbrug i 2026 samt forventet effekt af besparelser og omprioriteringer i den\nøkonomiske handleplan, som blev besluttet i byrådet 23. marts 2026.\nMed vedtagelsen af budget 2026-2029 er målsætningerne, at der er balance på budgettet ud\nfra økonomiske målsætninger om et årligt driftsresultat på 75 mio. kr., der giver plads til\ninvesteringer på gennemsnitligt 75 mio. kr. årligt, samt en likviditet på mindst 32 mio. kr. ultimo\nåret. Der gennemføres kompenserende besparelser, såfremt servicerammen i det vedtagne\nbudget overskrides i løbet af året, og der gives ikke tillægsbevillinger til serviceudgifter.\nDer prognosticeres et driftsresultat på 81,025 mio. kr. i 2026 og en likviditet på 32,000 mio.\nkr. ultimo 2026. Begge resultater lever op til de fastsatte målsætninger.\nDer prognosticeres mindreudgifter ift. korrigeret budget på netto 5,960 mio. kr. Der er\nmindreudgifter på kommunal medfinansiering af sundhedsområdet på 7,157 mio. kr. og\nmerudgift til arbejdsskader på 3,500 mio. kr.\nSom følge af tekniske korrektioner og demografireguleringer omprioriteres i alt 15,000 mio. kr.\ntil finansiering af udgift pga. deltidskendelsen, og der omprioriteres 1,200 mio. kr. til etablering\naf aflastningspladser på Rosengården som led i sundhedsreformen. Desuden omprioriteres\n1,500 mio. kr. fra Teknik og Miljø konto 6 til Serviceteam.\nHerudover er merindtægt på renter på 8,303 mio. kr. De forventede mindreforbrug på\nrammestyrede områder er reduceret med 6,000 mio. kr.\nNyborg Kommune modtager flere fordrevne fra Ukraine, og der er tale om nytilkomne, som\nbåde har behov for boligplacering og støtte til indsatser. For at sikre de ekstraordinære\nUkraine-indsatser ansættes et nyt årsværk i 2 år (2027 og 2028) til håndtering af boligplacering\n\nog Ukraine-indsatser. Udgiften udgør samlet 1,200 mio. kr. Udgiften finansieres indenfor den\nstatslige kompensation vedrørende fordrevne fra Ukraine, som kommunerne modtog med\nmidtvejsreguleringen i 2026. Nyborg Kommune modtog, som beskrevet i\nledelsesrapporteringen pr. 31. maj 2026, 5,670 mio. kr., hvoraf 1,100 mio. kr. i samme\nledelsesrapportering blev udmøntet til de eksisterende administrative indsatser vedrørende\nmodtagelse af fordrevne fra Ukraine.\nServicerammen på 1.919,122 mio. kr. i korrigeret budget 2026 forventes overholdt, og der\nforventes dermed ikke sanktioner fra staten i forhold til overholdelse af budgetloven i 2026.\nDet er i prognosen forudsat, at der vil blive afholdt bruttoanlægsudgifter på 209,289 mio. kr. i\n2026. I forhold til det korrigerede budget er der merudgifter på 13,400 mio. kr. i 2026.\nMerudgifterne finansieres af mindreudgifter på drift samt merindtægter på anlæg på 8,000 mio.\nkr.\nPå grund af tidsforskydning i en række anlægsprojekter forventes, at der vil skulle overføres\n115-125 mio. kr. fra 2026 til 2027. Til sammenligning er overført 96,772 mio. kr. fra 2025 til\nDer forventes anlægsindtægter på 67,818 mio. kr. i 2026. I forhold til det korrigerede budget\ner der merindtægter på 8,000 mio. kr. i 2026. Der er overført anlægsindtægter på 30,156 mio.\nkr. fra 2025 til 2026.\n\nØkonomiske konsekvenser\nLedelsesrapporteringen peger på følgende hovedkonklusioner:\nDriftsresultat\nDer prognosticeres et samlet driftsresultat på 81,025 mio. kr. i 2026, hvilket lever op til\nmålsætningen om et driftsoverskud på mindst 75 mio. i oprindeligt budget 2026.\nDer forventes mindreudgifter ift. korrigeret budget på 5,960 mio. kr. som skyldes:\nMerudgift til Serviceteam på 1,500 mio. kr.\nMerudgift ved Facility Management til etablering af aflastningspladser på 1,200 mio. kr.\nMindreudgift til Teknik og Miljø konto 6 på 1,500 mio. kr.\nMindreudgift til kommunal medfinansiering af sundhedsområdet på 7,157 mio. kr.\nMindreudgift på ældreområdets fællesudgifter, der anvendes til etablering af\naflastningspladser på Rosengården på 1,200 mio. kr.\nMindreudgift ved teknisk korrektion af hjemme- og sygepleje som følge af nedgang i antal\nhjemmeplejemodtagere og antal leverede timer i hjemmeplejen, der omprioriteres til\nfinansiering af udgift på ældreområdet pga. deltidskendelsen på 10,000 mio. kr.\nMindreudgift på grund af demografi på skole- og dagtilbudsområdet og faldende elevtal,\nder omprioriteres til finansiering af udgift på de pædagogiske områder pga.\n\ndeltidskendelsen på 5,000 mio. kr.\nMerudgift til pulje til deltidskendelse på 15,000 mio. kr.\nMerudgift til nyt årsværk til boligplacering og Ukraine-indsats i 2027-2028 på 1,200 mio.\nkr.\nMindreudgift vedfinansiering fra statslig finansiering af Ukraine-indsatser på 1,200 mio.\nkr.\nMerudgift til arbejdsskader på 3,500 mio. kr.\nMerindtægt på renter på 8,303 mio. kr.\nReduktion af forventet mindreforbrug på rammestyre ved overførsel fra 2026 til 2027 på\n6,000 mio. kr.\n\nServicerammen\nServicerammen på 1.919,122 mio. kr. i korrigeret budget 2026 forventes overholdt, og der\nforventes dermed ikke sanktioner fra staten i forhold til overholdelse af budgetloven for 2026.\nAnlægsudgifter\nDet er i prognosen forudsat, at der vil blive afholdt bruttoanlægsudgifter på 209,289 mio. kr. i\n2026. I forhold til det korrigerede budget er der merudgifter på 13,400 mio. kr. i 2026.\nMerudgifterne omfatter:\nPulje til Ungdomsskolens fysiske rammer 1,500 mio. kr.\nOmbygning Ringvej 1B til Den blå og Huset, samt Rusmiddelcenter og Bostøtte 3,900\nmio. kr.\nByggemodning af erhvervsjord 8,000 mio. kr.\n\nI den politiske aftale om budget 2027 er vedtaget, at der skal afsættes 2,0 mio. kr. i\nanlægsbudgettet i 2026 til de fysiske rammer for Ungdomsskolen. Da der i den politiske aftale\nom budget 2026 er afsat 0,500 mio. kr., som endnu ikke er anvendt, skal der afsættes\nyderligere 1,5 mio. kr. til anlægspuljen til fysiske rammer for Ungdomsskolen.\n5.16 Ungdomsskolen - fysiske rammer\nForligspartierne ønsker at understøtte gode og tidssvarende fysiske rammer for\nUngdomsskolen. Der afsættes en anlægspulje på 2 mio. kr. til forbedring af Ungdomsskolens\nfysiske rammer i 2026.\nAdministrationen får til opgave i 2026 at afdække det konkrete behov og udarbejde forslag til\nanvendelse af puljen samt anvise finansiering af anlægspuljen.\nDe 2 mio. kr. indarbejdes i anlægsbudgettet for 2026.\n\nI den politiske aftale om budget 2027 er vedtaget en sammenlægning af Den Blå og Huset.\nTeknik-, Plan- og Landdistriktsudvalget forelægges derfor sideløbende med behandlingen af\ndenne ledelsesrapportering en sag om fremtidig anvendelse af Ringvej 1B. Følgende aktiviteter\nønskes samlet på Ringvej 1B:\nVærestederne Den Blå og Huset fra eksterne lejemål Vægtergade 4 og Helgetoftevej 14.\nRusmiddelcenteret fra eksternt lejemål Vestergade 11.\nBostøtten fra Ringvej 1C.\nVSU det undersøges, om VSU kan indgå på Ringvej 1B.\n\nUdgift til lovliggørelse og nyindretning af Ringvej 1B udgør 4,200 mio. kr. Heraf afsættes\nbudget til anlægsudgifter på 3,900 mio. kr. i denne ledelsesrapportering og 0,300 mio. kr.\nfinansieres indenfor det eksisterende anlægsbudget fra puljen til strategisk arealanvendelse, jf.\nsærskilt fremlagt sag.\nHerudover afsættes 8,000 mio. kr. til byggemodning af erhvervsjord. Efter en høj prioritering af\nerhvervsområdet under de politiske drøftelser om budget 2027 er udarbejdet en analyse af\nerhvervsjord, som viser en øget efterspørgsel. Der har ligeledes været konkrete henvendelser\nfra virksomheder om køb af erhvervsjord. På den baggrund afsættes 8,000 mio. kr. til\nbyggemodning af erhvervsjord. Udgiften finansieres af tilsvarende anlægsindtægter på 8,000\nmio. kr. ved forventet salg af erhvervsjord efter byggemodning.\nForbrugsprocenten ligger per 30. september 2026 på 29,5 %.\nPå grund af tidsforskydning i en række anlægsprojekter forventes, at der vil skulle overføres\n115-125 mio. kr. fra 2026 til 2027. Til sammenligning blev der overført 96,772 mio. kr. fra 2025\nAnlægsindtægter\nDer forventes anlægsindtægter på 67,818 mio. kr. i 2026. I forhold til det korrigerede budget er\nder merindtægter på 8,000 mio. kr. i 2026 ved forventet salg af erhvervsjord.\nDe samlede anlægsindtægter er pr. 30. september 2026 på 10,992 mio.kr. heraf udgør 5,866\nmio. kr. salg af byggegrunde og øvrige arealer. Af provenuet er 1,060 mio. kr. disponeret til\nudgifter til ekstrafundering vedrørende salg af grunde i Åbohaven.\nDer er pr. 30. september 2026 solgt 11 parcelhusgrunde. Der er 3 grunde reserveret.\nAlle anlægsindtægter vil ikke blive realiseret i 2026 og dermed overført til 2027.\nOverførsel af uforbrugte bevillinger\nDer er overført uforbrugte bevillinger fra 2025 til 2026 svarende til 27,939 mio. kr., heraf 3,662\nmio. kr. på selvstyrende områder og 24,277 mio. kr. vedrørende øremærkede bevillinger.\n\nDer er overført anlægsudgifter på 96,722 mio. kr. og anlægsindtægter på 30,156 mio. kr. fra\nEndelig er der overført et beløb på 0,140 mio. kr. vedrørende grundkapitalindskud i\nLandsbyggefonden fra 2025 til 2026.\nRenter og finansielle poster\nDer er pr. 30. september 2026 opnået renteindtægter på 11,591 mio. kr. Det oprindelige budget\nfor renteindtægter udgør 3,288 mio. kr. og der er dermed opnået merindtægter på 8,303 mio.\nkr. Merindtægten indarbejdes i budgettet.\nDer budgetteres med årlige udgifter på 2,668 mio. kr. til afdrag på lån i 2026\nDe resterende lån på 12,477 mio. kr. (385 kr. pr. indbygger) i regnskab 2025 er uopsigelige i\nforhold til Landsbyggefonden og er finansieret via huslejeindtægter på driften. Det ene lån\nudløber i 2032 og de to sidste lån udløber i 2034.\nDer prognosticeres finansforskydninger på leverandørbetalinger på 0,560 mio. kr. i forhold til\nkorrigeret budget i 2026.\nNyborg Kommunes likvide aktiver \"kassebeholdning\" består af en kontantbeholdning og\nværdipapirer som er placeret i investeringsbeviser med aktier og obligationer i henhold til\nNyborg Kommunes finansielle politik.\nLikviditet ultimo\nByrådet i Nyborg Kommune har besluttet, at likviditeten skal være på 32 mio. kr. ultimo året.\nLikviditeten prognosticeres til 32,000 mio. kr. ultimo 2026 og vil blive forøget med overførsel af\nuforbrugte anlægsbevillinger i 2026.\nLikviditeten er 157,022 mio. kr. ved udgangen af september 2026 og har i gennemsnit ligget på\n271,528 mio. kr. i de seneste 12 mdr. og 249,656 mio. kr. i de seneste 3 mdr. I perioden fra\nultimo marts til ultimo juni omfatter likviditeten et for højt overført refusionstilskud fra staten på\n37,248 mio. kr. som er tilbageført i forbindelse med refusionsafregninger ultimo juni.\n\nSagen afgøres i\nByrådet"
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-3": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-3",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Beslutning: Sammenhængende Børne- og Ungepolitik",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at forslag til Sammenhængende Børne- og Ungepolitik foreløbigt\ngodkendes og sendes i høring i perioden 2.-10. december 2026, hvorefter politikken\nforelægges byrådet igen til endelig godkendelse på møde 15. december 2026."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Alle kommuner er forpligtet på at udarbejde en sammenhængende børnepolitik, jf. Barnets Lov\n§15: Kommunalbestyrelsen skal udarbejde en sammenhængende børnepolitik, der har til\nformål at sikre sammenhængen mellem det generelle og forebyggende arbejde og den\nmålrettede indsats for børn og unge med behov for særlig støtte. Den sammenhængende\nbørnepolitik skal udformes skriftligt, vedtages af kommunalbestyrelsen og offentliggøres.\nDen nuværende børne- og ungepolitik hedder 'Sammen om Trivsel' og var gældende i\nperioden 2019-2025.\nPå baggrund af partiernes beslutning om at udskyde tidspunktet for beslutning om fremtidens\ndagtilbud og skole, udarbejdede administrationen en procesplan, der blev vedtaget af Skoleog Dagtilbudsudvalget 20. august. Procesplanen lagde op til høj grad af inddragelse af\ninteressenter.\nFølgende aktiviteter er gennemført i efteråret 2026:\nWorkshop 23. september med deltagelse af ledelse, bestyrelser, medarbejdere fra\ndagtilbud og skoler, Ungebyrådet samt interesserede borgere\nLedelsesmøde 6. oktober med deltagelse af ledelser fra dagtilbud, skoler samt\nsocialafdeling\nWorkshop 20. oktober med deltagelse af ledelse, bestyrelser, medarbejdere fra dagtilbud\nog skoler samt interesserede borgere\nInput fra børn og unge fra dagtilbud og skoler (indsamlet via lokale processer)\n\nMed afsæt i de mange input fra de inddragende processer har administrationen udarbejdet et\nudkast til Sammenhængende børne- og ungepolitik.\nPoltikken er bygget op på denne måde:\nVores fælles grundlag\nTre bærende principper: Forudsætninger, Forventninger og Forpligtelse\n\nSamarbejde på tværs\nFra fælles ambition til fælles praksis\n\nFormålet med den sammenhængende børne- og ungepolitik er at skabe et fælles fundament\nog en fælles retning for kommunens arbejde med børn og unge. Politikken skal sikre\nsammenhæng på tværs af almenområdet, de forebyggende indsatser og den målrettede\nstøtte, så børn, unge og familier oplever helhed og kontinuitet - også når flere fagligheder og\nområder er involveret. Politikken sætter samtidig en fælles ramme for, hvordan vi møder børn\nog unge, samarbejder med deres familier og på tværs af fagligheder arbejder for, at alle børn\nog unge får mulighed for at trives, udvikle sig, lære og være en del af betydningsfulde\nfællesskaber.\nMed afsæt i den sammenhængende børne- og ungepolitik bliver der udarbejdet strategier for\ndagtilbud og skole med henblik på vedtagelse i januar 2027.\n\nØkonomiske konsekvenser\nIngen.\n\nSagen afgøres i\nByrådet."
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-4": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-4",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Beslutning: Kriterier for udmøntning af legepladspulje",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget godkender de oplistede kriterier og indhenter ønsker fra\ndagtilbud og skoler."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Legepladspuljen for 2027 skal udmøntes.\n30.11.2022 besluttede Skole- og Dagtilbudsudvalget nedenstående kriterier for fordeling af\nlegepladspuljen.\nrenovering eller udbedring af eksisterende legeredskaber\nudskiftning af eksisterende legeredskaber\nnye mindre legeredskaber som supplement til det eksisterende\nstørre projekter som erstatning for eksisterende\nstørre projekter som supplement til det eksisterende\nPuljen til renovering eller udskiftning af legeredskaber på legepladser, samt større projekter er\nI februar skal udvalget tage stilling til hvilke ansøgninger der kan imødekommes, hvorfor det nu\ner tid til at anmode dagtilbud og skoler om at indsende deres ønsker for 2027.\nAnsøgningsfristen for dagtilbud og skoler er 10. januar 2027.\n\nØkonomiske konsekvenser\nI kommunens budget er afsat kr. 500.000 i 2027\n\nSagen afgøres i\nSkole- og Dagtilbudsudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-5": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-5",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Beslutning: Tilpasning af serviceniveauet i Funktionsklasserne på Nybroen",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller med virkning fra 1. januar 2027:\n1. at ressourcetildeling til Funktionsklassen øges med 129.000 kr. årligt pr. elev.\n2. at ressourcetildelingen til afdeling Skovparken øges med 8.571 kr. pr. elev årligt.\n3. at den øgede ressourcetildeling finansieres ved omprioritering indenfor styringsmodellen\npå skoleområdet og ved øget takst for elever fra andre kommuner."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Funktionsklassen på Nybroens afdeling Lindholm er et højt specialiseret tilbud til elever med\nomfattende støttebehov. Tilbuddet har 11 elever, heraf fem fra andre kommuner. Eleverne\nmodtager allerede en 1:1-indsats i mindre rammer. Funktionsklassen er oprettet som følge af\nspecifikke støttebehov hos en elevgruppe, som ellers ikke kunne rummes i Nyborg Kommunes\nskoletilbud.\nFor at sikre et tydeligt grundlag for afregningen med de kommuner, der benytter tilbuddet,\nforeslås det at fastlægge det eksisterende serviceniveau og den tilhørende ressourcetildeling.\nDen særlige organisering indebærer lærerressourcer ud over den ordinære tildeling svarende\ntil 129.000 kr. pr. elev årligt (ca. 20 % af en lærerstilling). Beløbet foreslås indarbejdet i\nressourcetildelingen og takstgrundlaget fra 2027.\nÆndringen vedrører takstgrundlag og finansiering. Elevernes nuværende 1:1-indsats\nvidereføres uændret. Sagen omfatter desuden en justering af tildelingen til afdeling\nSkovparken, så den afspejler behovet for lærer- og pædagogressourcer.\n\nØkonomiske konsekvenser\nFor Funktionsklassen udgør tildelingsjusteringen samlet 1.419.000 kr. årligt. Heraf finansieres\n774.000 kr. til de seks elever fra Nyborg Kommune ved omprioritering inden for skoleområdets\nramme. For de fem elever fra andre kommuner reguleres taksterne med samlet 645.000 kr.\nårligt. Tillægskontrakter er udarbejdet med virkning fra 1. januar 2027.\nFor afdeling Skovparken udgør justeringen ved 35 elever ca. 300.000 kr. årligt, som finansieres\ninden for skoleområdets samlede ramme.\n\nSagen afgøres i\nByrådet"
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-7": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-7",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Orientering: Opfølgning på Ung_Indflydelse",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget tager orienteringen til efterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Nærværende sag giver status på opfølgningen på anbefalingerne fra ungeborgersamlingen i\nprojekt Ung_Indflydelse, som blev behandlet i Byrådet den 26. maj 2026. Til sagen er vedlagt\nbilaget \"Forslag til indsatser Ung_Indflydelse\", der giver en samlet vurdering af de 14\nanbefalinger og kategoriserer dem efter, om der allerede arbejdes med dem, om de kræver\npolitisk handling, eller om de vurderes at være dækket af eksisterende tilbud og\nkommunikationskanaler. Bilaget vil desuden danne grundlag for den samlede tilbagemelding til\ndeltagerne i ungeborgersamlingen, som skal fremsendes senest i maj 2027.\nByrådet modtog i foråret 2026 anbefalingerne fra ungeborgersamlingen i projekt\nUng_Indflydelse og godkendte den foreslåede proces for opfølgning. Det fremgår af\nprocesplanen, at relevante udvalg og Byrådet i november 2026 skal modtage en status på\narbejdet.\nFlere af anbefalingerne er allerede omsat til konkrete initiativer eller indgår i planlagte\naktiviteter i Ungdomsskolen. Det gælder blandt andet demokratiworkshops for alle 8. klasser,\nudvikling af et fælles demokratievent samt initiativer, der styrker dialogen mellem unge og\npolitikere. Andre anbefalinger kræver politisk stillingtagen eller involvering af øvrige aktører.\nI bilaget kategoriseres anbefalingerne som:\nUngdomsskolen er gået i gang med arbejdet\nKræver politisk handling eller initiativ\nKommunikationsopgave\nVurderes allerede varetaget\nIkke relevant eller ikke prioriteret\nSom led i projektet skal deltagerne i ungeborgersamlingen modtage en samlet status på\nkommunens arbejde med anbefalingerne senest i maj 2027. Tilbagemeldingen skal beskrive,\nhvilke initiativer der er iværksat, og hvordan de enkelte anbefalinger er blevet behandlet. Det\nvedlagte bilag vil danne grundlag for denne tilbagemelding.\nAdministrationen fortsætter arbejdet med de anbefalinger, der kan realiseres inden for\neksisterende rammer. For de anbefalinger, der kræver politisk prioritering eller tværgående\nbeslutninger, kan statusdokumentet danne grundlag for kommende drøftelser.\n\nØkonomiske konsekvenser\nIngen\n\nSagen afgøres i\nSkole- og Dagtilbudsudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-8": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-8",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Orientering: Status på implementering af civilsamfundsstrategi",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at udvalget tager orienteringen til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Civilsamfundsstrategien 2023-2026 'SAMMEN kan vi mere' blev 23. maj 2023 godkendt i\nByrådet.\nFormålet med strategien er at sikre en fortsat god udvikling på civilsamfundsområdet, skabe\nsammenhængskraft og et øget samspil mellem særligt kommunen og lokale aktører.\nMed henblik på at sikre en bred implementering og forankring af strategiens spor og principper,\ner der nedsat en tværgående implementeringsgruppe for Civilsamfundsstrategien. Der er\nudpeget en tovholder i Børn og Skole, CFP.\nCivilsamfundsstrategien er en tværgående strategi som forudsætter lokalt og afdelingsvist\nengagement på tværs af chefområder. Derudover indgår lederne fra Den Boligsociale\nHelhedsplan samt Frivilligcenter Nyborg i implementeringsgruppen i kraft af deres position som\nbrobyggende led mellem Nyborg Kommune og civilsamfundet. Formålet er desuden, at de kan\ngive sparring omkring lokale handleplaner og generel kvalificering af samarbejdet med\ncivilsamfundet.\nFor at på at sikre en ensartethed i implementeringen af civilsamfundsstrategien på tværs af de\nkommunale afdelinger, blev der indledningsvist udviklet et fælles værktøj til udarbejdelse af\nlokale handleplaner. Med baggrund i et ønske om sikre et bredt og tværgående ansvar for\nimplementeringen af civilsamfundsstrategien fik nøglepersonerne på tværs af kommunale\nafdelinger, i samarbejde med leder og chef, til opgave at udfylde de lokale handleplaner for\nafdelingernes arbejde med implementering af strategien.\nDe lokale handleplaner skaber en forpligtigelse lokalt, som dels understøtter en fortsat\nudvikling af samarbejder med civilsamfundet og samtidig udgør en prioritering i forhold til\nafdelingernes rammer, opgaver, organisering, drift mv. Gennem handleplanerne skærpes\nsåledes de enkelte afdelingers fokus på at videreudvikle samarbejdet med civilsamfundet med\nudgangspunkt i strategiens vision, principper og spor.\nChefgruppen besluttede 16. december 2026 at de nye politiske udvalg skal orienteres om\nstatus på områdets handleplan, ligesom der i forbindelse med status for 2026, udarbejdes en\norienteringssag til Økonomiudvalget.\nPå dagtilbuds- og skoleområdet samarbejdes der allerede på forskellig vis med civilsamfundet.\nDet drejer sig bl.a. om samarbejde med forskellige virksomheder, ungdomsskolens samarbejde\nmed Coop og Børnehuset Åhavens samarbejde med den lokale Brugsen. Det drejer sig om\nsamarbejde med diverse foreninger, bl.a. i forbindelse med den årlige \"Foreningsfestival\". Og\ndet drejer sig om både formelt og uformelt samarbejde med forældre og andre borgere. Her\nkan bl.a. nævnes samarbejdet med en frivillig borger i Kastaniehuset, som kommer i\nbørnehuset et antal timer om ugen og er sammen med børnene, en lokal borger i Frørup, som\nbesøger skolen med sin hund, som de yngste elever læser for og lokale borgeres deltagelse i\nDagplejens Dag. Se vedhæftede kortlægning af samarbejde med civilsamfundet. Derudover\nsamarbejdes der med NGO'er, fx Røde Kors.\n\nBørn og Skole har udarbejdet en handleplan med det formål at styrke samarbejdet med\ncivilsamfundet. Se vedhæftede handleplan og slides for beskrivelse af initiativer og status.\nSamarbejdet med civilsamfundet kan have en stor værdi og rummer et stort potentiale - også\nfor dagtilbud og skoler. I implementeringen af strategien er det vigtigt at holde fokus på, at\nsamarbejdet skal vokse ud af konkrete idéer og behov.\n\nØkonomiske konsekvenser\nIngen\n\nSagen afgøres i\nSkole- og Dagtilbudsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-9": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-9",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Orientering af kommende punkter",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at orientering om kommende punkter tages til efterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Orientering om kommende punkter:\nPræsentation af temaer til kommende strategier for dagtilbud og skole (januar)\nSag vedr. proces for håndtering af Møllervangens Børnehus og evt. ny løsning for\nkapacitet (januar)\nAnvendelse af budgettildeling til Ungdomsskolens rammer (januar)\nStrategier for dagtilbud og skole (februar)\nForeløbige anbefalinger vedr. dagtilbud og skole (februar)\nAnbefalinger vedr. skolestruktur, samt andre forslag, der vedrører skole og\ndagtilbudsområdets kvalitet og udvikling (marts)\nFørste erfaringer og resultater med Læseløftet (marts 2027)\nIntroduktionsprogram (fortsættelse)\n\nØkonomiske konsekvenser\nIngen.\n\nSagen afgøres i\nSkole- og Dagtilbudsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-10": {
+   "id": "nyborg-2026-11-24-skole-og-dagtilbudsudvalget-10",
+   "kommune": "Nyborg",
+   "udvalg": "Skole- og Dagtilbudsudvalget",
+   "dato": "2026-11-24",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.nyborg.dk/vis?id=bdb6efd5-5717-4666-90de-b01f23b192c6",
+   "hentet": "2026-11-19T13:30:40.255Z",
+   "titel": "Orientering om meddelelser fra formanden, udvalgsmedlemmer og administrationen",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Meddelelser fra formanden:\nRegeringen har inviteret til \"Stormøde om vores skole\", afholdes 23. november i Fredericia\nMeddelelser fra udvalgsmedlemmer:\nMeddelelser fra administrationen:\nFælles ledelse på dagtilbudsområdet.\nØkonomi- og Indenrigsministeriet og KL gennemfører i foråret 2027 en landsdækkende\nbrugertilfredshedsundersøgelse blandt forældre til børn i folkeskolen og SFO.\nUndersøgelsen gennemføres af Danmarks Statistik, og resultaterne forventes offentliggjort i\nslutningen af 2027.\n\nØkonomiske konsekvenser\nIngen.\n\nSagen afgøres i\nSkole- og Dagtilbudsudvalget."
     }
    ],
    "bilag": []
@@ -13644,19 +14000,19 @@
  "sitemaps": {
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=1354e87c-c137-446a-a5dd-163a742831b6": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=8f583a78-58ac-4693-bc46-0d5d8cd9aa2f": {
    "senest": "2025-09-27",
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=94eae585-c0ab-4a44-910d-06449c519d40": {
-   "senest": "2026-11-09",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-19",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=bb98344c-083d-4ee3-a1f8-f139a675ce60": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=dd2f1487-1498-48d8-a1bf-91e6c2da5bfb": {
    "senest": "2025-09-27",
@@ -13664,23 +14020,23 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=b064e9b8-e335-4bf9-9a88-9b96449fecdc": {
    "senest": "2025-11-25",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=804b4dca-194d-42a7-bf4e-ef0f8f70340a": {
    "senest": "2026-10-21",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=b63b8a2d-ae7b-469c-859b-e0452b00d63c": {
    "senest": "2025-12-22",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=ed2c1944-1f7e-48fc-b839-cc122d05d13c": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=995c26a1-029b-4102-a9b2-9875410a0ef1": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=471faf95-c731-48e5-a8f9-f27b3b792b3e": {
    "senest": "2025-09-27",
@@ -13688,11 +14044,11 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=ca747b47-4bd8-475f-83f5-16a476571264": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=2e10b6fd-05ea-4671-8a2a-65b2dde5af00": {
    "senest": "2025-11-27",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=e2e8dd73-2212-4cfb-8495-eee24399e149": {
    "senest": "2025-09-27",
@@ -13700,7 +14056,7 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=3cb11d3a-f357-4119-b177-7d2e8fbfc78e": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=0fe67a59-be62-49be-99e1-05e5e01a5f78": {
    "senest": "2025-09-27",
@@ -13708,15 +14064,15 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=7cd080c3-2477-45bd-bc3a-030920ec5e48": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=17ce150b-58d5-423b-b4f4-bf4611eee6f6": {
-   "senest": "2026-10-29",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-19",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=0b713649-d32e-482a-b4e3-a5666c6d705d": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=881e69bc-b5f1-4a0e-8879-d942835d9f22": {
    "senest": "2025-09-27",
@@ -13724,11 +14080,11 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=372607fa-f0f4-4452-90a6-be6a1cbe38c2": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=2ef416f9-272e-4517-a532-75b0a7bcf73d": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=7ddedafe-81f6-40f6-86d2-893c973496e6": {
    "senest": "2025-09-27",
@@ -13736,15 +14092,15 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=6c12bcec-27e0-4c03-b680-77f9f7f4cfdc": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=1569685e-242d-4343-9601-ec69585f3583": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=0c78b0fc-3998-419c-9506-fccbea2adabc": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=ca88e5ea-c47a-4cc9-8036-bff6cd7ab5f9": {
    "senest": "2025-09-27",
@@ -13752,39 +14108,39 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=131367a7-7e89-4c9d-8348-692fe50f61a5": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=f6abecb3-19f2-47c9-914b-362cd47567f3": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=003110b8-ca7c-4867-a314-06bd88229e50": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=64a88f0b-d238-4feb-b3f7-3b030ebe9e85": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=c3c8cc66-a97b-4323-ae6f-c83a134673c8": {
    "senest": "2025-12-16",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=f2afba5a-d3b8-4af9-9132-28933a716c61": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=5730ee32-9874-4829-a69e-992e621d4206": {
    "senest": "2025-09-27",
    "tjekket": "2026-10-23"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=777c98a8-e2ca-4dce-92a5-8ed88447eca6": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-18",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=0340c590-3f3d-4996-93c0-52f7c9d32362": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=77f2204e-511d-4f71-b008-6646ef816eae": {
    "senest": "2025-09-27",
@@ -13796,7 +14152,7 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=d34139b3-4769-4fd3-867c-c8b3068cc5dd": {
    "senest": "2025-12-22",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=3a92b958-017e-4a48-9694-fb594354f36a": {
    "senest": "2025-09-27",
@@ -13808,7 +14164,7 @@
   },
   "https://dagsordener.nyborg.dk/Sitemap/ForCommittee?committeeId=c0291154-5296-4031-b897-503be9ff2080": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.nyborg.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -13816,6 +14172,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-13T21:12:00.664Z",
+ "opdateret": "2026-11-19T13:30:52.873Z",
  "kommune": "Nyborg"
 }

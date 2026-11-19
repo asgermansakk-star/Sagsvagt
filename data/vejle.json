@@ -707,6 +707,22 @@
    "dato": "2026-11-16",
    "punkter": 16,
    "parser": 3
+  },
+  "b115869d-767c-4885-ae3d-87f6134b2799": {
+   "lastmod": "2026-11-17",
+   "type": "referat",
+   "udvalg": "Økonomi- og Erhvervsudvalget",
+   "dato": "2026-11-16",
+   "punkter": 16,
+   "parser": 3
+  },
+  "e6ee83ad-398e-4b6d-a54e-d923911a0fb9": {
+   "lastmod": "2026-11-16",
+   "type": "referat",
+   "udvalg": "Frivilligrådet",
+   "dato": "2026-11-11",
+   "punkter": 11,
+   "parser": 3
   }
  },
  "sager": {
@@ -18668,54 +18684,10 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
-   "titel": "Præsentation af Barnets Blå Hus",
-   "afsnit": [
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Frivilligrådet besøger Barnets Blå Hus, hvor leder Bente Grauslund Kjeldsen giver en\nrundvisning og en introduktion til stedet."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "FORMANDEN INDSTILLER,\nAt punktet tages til efterretning."
-    }
-   ],
-   "bilag": []
-  },
-  "vejle-2026-11-11-frivilligraadet-2": {
-   "id": "vejle-2026-11-11-frivilligraadet-2",
-   "kommune": "Vejle",
-   "udvalg": "Frivilligrådet",
-   "dato": "2026-11-11",
-   "type": "dagsorden",
-   "nr": 2,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
-   "titel": "Godkendelse af dagsordenen",
-   "afsnit": [
-    {
-     "titel": "Sagsfremstilling",
-     "tekst": "Godkendelse af dagsordenen."
-    },
-    {
-     "titel": "Indstilling",
-     "tekst": "FORMANDEN INDSTILLER,\nAt dagsordenen godkendes."
-    }
-   ],
-   "bilag": []
-  },
-  "vejle-2026-11-11-frivilligraadet-3": {
-   "id": "vejle-2026-11-11-frivilligraadet-3",
-   "kommune": "Vejle",
-   "udvalg": "Frivilligrådet",
-   "dato": "2026-11-11",
-   "type": "dagsorden",
-   "nr": 3,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Godkendelse af referat",
    "afsnit": [
     {
@@ -18725,6 +18697,62 @@
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt referatet fra den 25. august 2026 godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Referatet fra 25. august 2026 er godkendt."
+    }
+   ],
+   "bilag": []
+  },
+  "vejle-2026-11-11-frivilligraadet-2": {
+   "id": "vejle-2026-11-11-frivilligraadet-2",
+   "kommune": "Vejle",
+   "udvalg": "Frivilligrådet",
+   "dato": "2026-11-11",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
+   "titel": "Præsentation af Barnets Blå Hus",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Frivilligrådet besøger Barnets Blå Hus, hvor leder Bente Grauslund Kjeldsen giver en\nrundvisning og en introduktion til stedet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORMANDEN INDSTILLER,\nAt punktet tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Bente Grauslund Kjeldsen, leder af Barnets Blå Hus, præsenterede stedet og dets tilbud\ntil børn og familier.\nTilbuddet henvender sig til børn i alderen 0–13 år og er gratis og uden visitation. Der er\nseks afdelinger i Danmark. Barnets Blå Hus har kapacitet til flere børn, så vær endelig\nopmærksomme på at udbrede viden om deres gratis tilbud."
+    }
+   ],
+   "bilag": []
+  },
+  "vejle-2026-11-11-frivilligraadet-3": {
+   "id": "vejle-2026-11-11-frivilligraadet-3",
+   "kommune": "Vejle",
+   "udvalg": "Frivilligrådet",
+   "dato": "2026-11-11",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
+   "titel": "Godkendelse af dagsordenen",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Godkendelse af dagsordenen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORMANDEN INDSTILLER,\nAt dagsordenen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen er godkendt."
     }
    ],
    "bilag": []
@@ -18734,10 +18762,10 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Præsentationsrunde",
    "afsnit": [
     {
@@ -18747,6 +18775,10 @@
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt præsentationen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning. I præsentationsrunden blev Hanne Fredslund Kristensen, som er ny\ndaglig leder af Foreningernes Hus pr. 1. november præsenteret. Hanne Fredslund\nKristensen overtager Else Marie Schmidts plads i Frivilligrådet som repræsentant for\nForeningernes Hus.\nFraværende:\nTherese Kongsgaard, suppleant for Humanitære Foreninger, Kirkernes Sociale Arbejde\nMargit Stycke, suppleant for Frivilligcenter Egtved\nMargit Hansen, suppleant for Foreningernes Hus, Vejle\nKim Brunthaler Mortensen, suppleant for Ældreforeninger, Hemingway-klubben\nAnders Hareskov, suppleant for Handicaporganisationer – Scleroseforeningen VejleBillund\nKlaus Abel, suppleant Patientforeninger, Foreningen PEMF\nMustapha El-Ahmad (F), suppleant Seniorudvalget\nBrian Mathiessen (V), suppleant Voksenudvalget\nSigne Pedersen, Velfærdsstaben"
     }
    ],
    "bilag": []
@@ -18756,10 +18788,10 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Orientering ved formanden",
    "afsnit": [
     {
@@ -18769,6 +18801,10 @@
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Frivilligrådet er inviteret til at deltage i styregruppen for en aktivitetsfestival for seniorer,\nder arrangeres af aktivitetshusene. Formandskabet har udpeget Marianne Vinkler\nLassen, der repræsenterer ældreforeninger, som deltager i styregruppen."
     }
    ],
    "bilag": []
@@ -18778,10 +18814,10 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Valg af næstformand",
    "afsnit": [
     {
@@ -18791,6 +18827,10 @@
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt Frivilligrådet vælger en næstformand i overensstemmelse med reglerne i\nforretningsorden for Vejle Kommunes Frivilligråd."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Formandskabet peger på Camilla Guldberg som ny næstformand. Camilla Guldberg\nrepræsenterer Børn- og Unge, Mentorbarn. Der var ikke andre der stillede op som\nnæstformand og Camilla blev enstemmigt valgt som ny næstformand.\nI"
     }
    ],
    "bilag": []
@@ -18800,10 +18840,10 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Status på arbejdsgrupper",
    "afsnit": [
     {
@@ -18813,6 +18853,10 @@
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt punktet tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nFrivillig Fredag\nAnne Birgitte Hundahl gav en status på evalueringerne fra Frivillig Fredag den 25.\nseptember 2026.\nRådet drøftede efterfølgende Frivillig Fredag og kom med input til næste års fejring.\nRådet fremhævede følgende i evalueringen:\nForplejning: Det blev drøftet, om det giver mening at servere sandwich til sidst eller om\nserveringen bør ligge tidligere, eller om den skal udgå. Samtidig blev det understreget, at\nforplejningen er vigtig og at det kan være problematisk at fjerne dele af tilbuddet.\nTilmelding og fællesskab: Der var tilfredshed med, at alle kan tilmelde sig uden\nbegrænsning. Mange deltager for at være en del af et socialt fællesskab.\nTidspunkt og målgruppe: Et senere tidspunkt blev foreslået af hensyn til deltagere, der\narbejder. Det blev også drøftet, hvordan tidspunkt og underholdning kan gøre\narrangementet mere attraktivt for yngre deltagere.\nØkonomi: Der blev udtrykt ønske om et større økonomisk råderum, så man ikke skal\nafvise deltagere.\nNiveau: Det blev understreget, at arrangementets niveau bør fastholdes, og at ændringer\nikke må opleves som besparelser.\nDer afholdes evalueringsmøde i arbejdsgruppen den 19. november. Herefter skal rådet\n\nså småt i gang med at planlægge næste arrangement.\n\nSynlighed og Facebook\nDer blev givet status på arbejdet med Facebookgruppen.\nDer er udarbejdet en skabelon til ”Den gode historie”, som skal vise eksempler på\nfrivillighed i foreningerne. Barnets Blå Hus har bidraget med en historie, og der er bidrag\npå vej fra flere af rådets foreninger.\nHistorierne skal blandt andet deles på Facebook og i Velfærdsmagasinet.\nDet blev foreslået også at dele historierne via Vejle Kommunes kanaler.\nMuligheden for omtale i ugeavisen blev drøftet.\nDer følges op på næste møde, hvor der forventes at være et par historier klar.\n\nDeltagelse på Seniormessen 2026\nDer blev givet status på Frivilligrådets stand på Seniormessen 2026.\nGruppen havde udarbejdet præsentationsmateriale med roll-ups, en stor plade og en\nkonkurrence.\nPå standen kunne de besøgende besvare et spørgeskema om frivillighed og sætte postits på pladen. Der var pæn deltagelse.\n100 personer deltog i konkurrencen, som blev afgjort ved lodtrækning.\nFormålet var at komme i dialog med de besøgende, og det blev vurderet, at dette\nlykkedes."
     }
    ],
    "bilag": []
@@ -18822,10 +18866,10 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Idé-banken",
    "afsnit": [
     {
@@ -18835,6 +18879,10 @@
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt punktet tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nDet undersøges, om der kan findes en oplægsholder til et temamøde om brug af AI i\nforeninger og som hjælp i foreningsarbejdet. Det kunne f.eks. være Center for Frivilligt\nSocialt Arbejde (CFSA).Vigtigt at få foreningernes behov afklaret, så tilbuddet kan\nmålrettes. Indholdet kan være brug af AI til bestyrelsesarbejde, eksempelvis\npuljeansøgninger, §18-ansøgninger, referater og dagsordener.\nRådet drøftede, om der igen skal afholdes dialogmøder med foreninger rundt i\nkommunen, eventuelt i løbet af 2027. Formandskabet udarbejder et oplæg til, hvordan\nmøderne kan genoptages og gøres relevante og interessante for foreningerne.\nRådet drøftede behovet for at igangsætte arbejdet med en fornyelse af den eksisterende\nfrivilligpolitik, herunder hvem der skal drive processen, og hvordan Børne- og\nUngeudvalget kan inddrages. Søren Peschardt vil gerne undersøge, hvordan arbejdet\nkan sættes i gang. Frivilligpolitikken sættes på dagsordenen til næste møde i februar."
     }
    ],
    "bilag": []
@@ -18844,19 +18892,23 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Næste møde",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Det er aftalt, at der skal være et fast punkt på dagsordenen, hvor rådet kan komme med input\ntil næste møde.\nNæste møde er mandag den 8. februar, kl. 15.30-18.00 i Foreningernes Hus, Vejle.\nDe resterende møder fordeler sig således:\nMaj: Torsdag den 20. maj, kl. 15.30-18.00.\nSeptember: Tirsdag den 14. september, kl. 15.30-18.00.\nNovember: Onsdag den 17. november, kl. 15.30-19.00."
+     "tekst": "Det er aftalt, at der skal være et fast punkt på dagsordenen, hvor rådet kan komme med input\ntil næste møde.\nNæste møde afholdes mandag den 8. februar, kl. 15.30-18.00 i Foreningernes Hus.\nDe resterende møder fordeler sig således:\nMaj: Torsdag den 20. maj, kl. 15.30-18.00.\nSeptember: Tirsdag den 14. september, kl. 15.30-18.00.\nNovember: Onsdag den 17. november, kl. 15.30-19.00."
     },
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt punktet tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning. Mødedatoerne blev godkendt. Mødeindkaldelserne sendes ud\nefterfølgende. Forslag om at første møde i 2027 holdes på Egetoft i Egtved, hvis der er\nledige lokaler."
     }
    ],
    "bilag": []
@@ -18866,15 +18918,19 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Evt",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt punktet tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen bemærkninger."
     }
    ],
    "bilag": []
@@ -18884,10 +18940,10 @@
    "kommune": "Vejle",
    "udvalg": "Frivilligrådet",
    "dato": "2026-11-11",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=4f70957b-a352-4401-accd-6cd4338880f3",
-   "hentet": "2026-11-04T12:48:45.475Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=e6ee83ad-398e-4b6d-a54e-d923911a0fb9",
+   "hentet": "2026-11-19T14:19:03.277Z",
    "titel": "Årsberetning",
    "afsnit": [
     {
@@ -18897,6 +18953,10 @@
     {
      "titel": "Indstilling",
      "tekst": "FORMANDEN INDSTILLER,\nAt punktet tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nFormandens årsberetning\nFrivilligrådets arbejde i 2026\nEt nyt råd er blevet sammensat. Det har heldigvis vist sig at være et Frivilligråd med\nenergi og lyst til at tage fat på både gamle og nye opgaver. Rådet er bredere sammensat\nend det gamle, og uden at genere nogen, er der også sket en foryngelse og der er\ntydeligvis kommet nye kompetencer til.\nRådets arbejde har på flere områder videreført arbejdet sam igangsat nye initiativer. Lad\nmig kort nævne:\nVi holdt velbesøgt gå hjem møde sammen med politiet med emnet forebyggelse af\nsvindel.\nVi har skærpet vores profil på Seniormessen.\nVi har igen i år arbejdet på synligheden. Jeg har gode forventninger til at vi kan finde og\nbringe historier om enkelt frivillige fra hele kommunen.\nFrivillig Fredag er blevet større og bedre. Vi lærte af vores fejl fra sidste år, og fik afviklet\ndagen på en god måde, med rigtig mange gode tilbagemeldinger.\nNy initiativer med gevinster og “mød en frivillig” blev taget godt imod.\nFælles for vores initiativer er arbejdsgrupperne, der får det til at ske. Jeg synes det har\nvist sig at være en givende arbejdsform. Stor tak til alle for det flotte arbejde med stor\nkreativitet og energi.\nVi har holdt fast i vores ambition om at komme på besøg relevante steder. Besøg hos\nFrelsens Hær, Østerbo og i dag Barnets Blå Hus\nVi har også gode ambitioner i det kommende år - flere er parkeret i idebanken. Jeg vil\ndog fremhæve vores ønske om at få sat gang i formuleringen af en ny frivilligpolitik for\nkommunen.\n\nOg så er der Frivillig Fredag. For at kunne videreudvikle dagen, har vi et ønske om at få\nBørne/ungeudvalget med ombord. Ud over flere penge til flere deltagere, så vil det også\nkunne forynge deltagerkredsen, og måske skal vi have en tredje frivilligpris.\nFarvel til næstformand Else Marie Schmidt\nPå vegne af Frivilligrådet blev der sagt farvel til næstformand Else Marie Schmidt, der går\npå pension. Frivilligrådet takkede Else Marie for hendes store indsats i Frivilligrådet\ngennem en årrække."
     }
    ],
    "bilag": []
@@ -19006,10 +19066,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Månedsrapport pr. oktober 2026",
    "afsnit": [
     {
@@ -19023,6 +19083,10 @@
     {
      "titel": "Indstilling",
      "tekst": "KOMMUNALDIREKTØREN INDSTILLER,\nAt orienteringen tages til efterretning\n\nAt orienteringen tages til efterretning"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19032,10 +19096,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Opfølgning på budgetinitiativer pr. 30. september 2026",
    "afsnit": [
     {
@@ -19049,6 +19113,10 @@
     {
      "titel": "Indstilling",
      "tekst": "KOMMUNALDIREKTØREN INDSTILLER,\nat orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19058,10 +19126,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "3. kvartalsopfølgning 2026 - Økonomi- og Erhvervsudvalget",
    "afsnit": [
     {
@@ -19075,6 +19143,10 @@
     {
      "titel": "Indstilling",
      "tekst": "KOMMUNALDIREKTØREN INDSTILLER,\nat 3. kvartalsopfølgning 2026 for Økonomi- og Erhvervsudvalgets eget budgetområde\ngodkendes og indgår i den samlede sag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19084,10 +19156,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "3. kvartalsopfølgning 2026 - Hele Vejle Kommune",
    "afsnit": [
     {
@@ -19105,6 +19177,10 @@
     {
      "titel": "Indstilling",
      "tekst": "KOMMUNALDIREKTØREN INDSTILLER,\nat 3. kvartalsopfølgningen for 2026 godkendes,\nat de bevillingsmæssige ændringer vedrørende 3. kvartalsopfølgningen godkendes, jf.\nbevillingsskemaet under Økonomi, samt specifikation i bilag 2 til 4 vedrørende\nhenholdsvis bevillingsændringer, rådighedsbeløb og anlægsbevillinger,\nat takster for SFO i 2027 godkendes"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19114,10 +19190,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Udvikling af erhvervsområde Vejle Syd",
    "afsnit": [
     {
@@ -19135,6 +19211,10 @@
     {
      "titel": "Indstilling",
      "tekst": "KOMMUNALDIREKTØREN INDSTILLER,\nat Teknisk Udvalg anmodes om at udarbejde helhedsplan for rammeområde 1.3.E.4 og 1.3.R.5 i\nKommuneplan 2025-2037 samt lokalplan med udgangspunkt i ovenstående udkast til\nlokalplanafgrænsning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt med tilføjelse af følgende ”at”: at få afklarende svar fra ministeren i forhold til mulighederne for\ntilslutning til motorvejstilkørsel ved Vejle Syd, til det østlige område.\nTage Jørgensen stemte imod og løftede sagen til Byrådet efter kommunestyrelseslovens § 23.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19144,10 +19224,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Tilskud til SDU Vejle",
    "afsnit": [
     {
@@ -19165,6 +19245,10 @@
     {
      "titel": "Indstilling",
      "tekst": "KOMMUNALDIREKTØREN INDSTILLER,\nAt de bevillingsmæssige konsekvenser jf. afsnittet Økonomi godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19174,10 +19258,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Springcenter i Jelling",
    "afsnit": [
     {
@@ -19195,6 +19279,10 @@
     {
      "titel": "Indstilling",
      "tekst": "KOMMUNALDIREKTØREN INDSTILLER,\nat de bevillingsmæssige konsekvenser jf. afsnittet Økonomi godkendes\nat der ved projektets afslutning fremsendes anlægsregnskab, og eventuel mindreforbrug\ntilbagebetales til Vejle Kommune\nat Kommunale Ejendomme varetager den overordnede projektstyring og koordinering i\nforbindelse med projektets gennemførelse"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales med følgende tilføjelse; at byggeriet først opstartes, når ansøgers egen fulde\nfinansiering er tilvejebragt.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19204,10 +19292,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Overdragelse af kommunegaranti - Give Fjernvarme",
    "afsnit": [
     {
@@ -19225,6 +19313,10 @@
     {
      "titel": "Indstilling",
      "tekst": "KOMMUNALDIREKTØREN INDSTILLER,\nat konvertering af de eksisterende kommunale garantistillelse i dag stillet til Give\nEnergianlæg ApS, fremadrettet stilles til Give Fjernvarme a.m.b.a, godkendes"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19234,10 +19326,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Anlægsbevilling Petersmindeskolen",
    "afsnit": [
     {
@@ -19251,6 +19343,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Opsummering af de bevillingsmæssige konsekvenser\nSagen medfører, at der frigives anlægsbevilling på 26,3 mio. kr. til ombygning af\nPetersmindeskolen.\n\nHøring\nØkonomiafdelingen har ingen bemærkninger af bevillingsmæssig karakter.\n\nKlima og resiliensvurdering\nIngen bemærkninger\n\nSagens videre forløb\nSagen skal behandles af Økonomi- og Erhvervsudvalget og Byrådet.\n\nHistorik\nBørne- og ungedirektøren indstiller, den 5. november 2026, punkt 115:\nat de bevillingsmæssige konsekvenser under afsnittet økonomi godkendes, og\nat der afsættes 26,3 mio. kr. til udbygning af Petersmindeskolen fra 3 til 4 spor i indskolingen.\nDer forventes et forbrug på ca. 4 mio. kr. i 2026 af det samlede rådighedsbeløb. Det resterende\nrådighedsbeløb forventes brugt inden udgangen af 2027, hvor projektet vil stå færdigt.\nKapacitetsudvidelsen betyder, at antallet af klasselokaler øges fra 30 til 40.\n\nBeslutning fra Børne- og Familieudvalget, den 5. november 2026, punkt 115:\nDe bevillingsmæssige konsekvenser blev godkendt og sagen sendes videre til behandling af\nØkonomi- og Erhvervsudvalget og Byrådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19260,10 +19356,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Anlægsbevilling til udbygning af Engum Skole",
    "afsnit": [
     {
@@ -19277,6 +19373,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Opsummering af de bevillingsmæssige konsekvenser\n\nDer søges bevilling på 12,3 mio. kr. til udbygningen af Engum Skole til en fuld 2-sporet\nskole fra 0.-6. klasse. Bevillingen finansieres med 7,0 mio. kr. fra den eksisterende\nbevilling til daginstitutionen i Engum. Herudover søges en ny bevilling og et\nrådighedsbeløb på 5,3 mio. kr., som foreslås finansieret som den første udmøntning af\nPuljen til kapacitetsudfordringer, læringsmiljøer og faglokaler.\nDe nævnte bevillingsændringer på anlæg er opsummeret i ovenstående skema.\nHøring\nCentralt Budget har ingen bemærkninger af bevillingsmæssig karakter.\n\nKlima og resiliensvurdering\nIngen bemærkninger\n\nSagens videre forløb\nSagen skal behandles af Økonomi- og Erhvervsudvalget og Byrådet.\nHistorik\nBørne- og ungedirektøren indstiller, den 5. november 2026, punkt 116:\n\nBørne- og ungedirektøren indstiller, den 5. november 2026, punkt 116:\nat de bevillingsmæssige konsekvenser godkendes, jf. bevillingsskemaet under afsnittet\nØkonomi.\n\nBeslutning fra Børne- og Familieudvalget, den 5. november 2026, punkt 116:\nDe bevillingsmæssige konsekvenser blev godkendt og sagen sendes videre til behandling i\nØkonomi- og Erhvervsudvalget og Byrådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19286,10 +19386,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Ophævelse af landsbyordning i Engum og etablering af selvstændig skole og dagtilbud",
    "afsnit": [
     {
@@ -19303,6 +19403,10 @@
     {
      "titel": "Økonomi",
      "tekst": "De økonomiske konsekvenser ved ophævelse af landsbyordningen vurderes fortsat at\nvære begrænsede. De foreløbige beregninger viser en forventet merudgift på mellem 0\nog 100.000 kr. årligt.\n\nKlima og resiliensvurdering\nIngen bemærkninger.\n\nSagens videre forløb\nDa der er tale om en ændring af skolestrukturen, skal sagen efter behandling i Børne- og\nFamilieudvalget videre til behandling i Økonomi- og Erhvervsudvalget og Byrådet.\n\nHistorik\nBørne- og ungedirektøren indstiller, den 5. november 2026, punkt 117:\nat det indkomne høringssvar tages til efterretning,\nat Børne- og Familieudvalget anbefaler Økonomi- og Erhvervsudvalget og Byrådet at\ngodkende ophævelse af Landsbyordningen Engum og etablering af en selvstændig skole og\ndaginstitution med virkning fra 1. januar 2027, og\nat sagen oversendes til Økonomi- og Erhvervsudvalget og Byrådet med anbefaling om\ngodkendelse.\n\nBeslutning fra Børne- og Familieudvalget, den 5. november 2026, punkt 117:\nHøringssvarene blev taget til efterretning.\nBørne- og Familieudvalget godkendte ophævelsen af Landsbyordningen Engum, og anbefaler\nØkonomi- og Erhvervsudvalget og Byrådet at godkende ophævelsen af Landsbyordningen\nEngum, herunder etablering af selvstændig skole og daginstitution med virkning fra 1. januar"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19312,10 +19416,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Betalingsparkering på handicappladser",
    "afsnit": [
     {
@@ -19329,6 +19433,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Det vurderes ikke, at indførelse af betaling på handicapparkeringspladser vil medføre\nvæsentlige merindtægter for kommunen.\nFormålet med ordningen er primært at øge udskiftningen på\nhandicapparkeringspladserne og dermed forbedre tilgængeligheden for borgere med\nhandicap.\n\nKlima og resiliensvurdering\nIngen bemærkninger.\n\nSagens videre forløb\nSagen skal behandles af Økonomi- og Erhvervsudvalget og Byrådet.\n\nHistorik\nTeknik- og Miljødirektøren indstiller, den 3. november 2026, punkt 201:\nat udvalget overfor Økonomi- & Erhvervsudvalget og byrådet anbefaler, at der indføres\nbetaling på kommunale handicapparkeringspladser i områder med betalingsparkering, alt med\nhenblik på at skabe større flow (udskiftning) og forbedre tilgængeligheden for flere borgere\nmed handicap,\nat §3 i parkeringsbekendtgørelsen for Vejle Kommune ophæves, og\nat udvalget overfor Økonomi- & Erhvervsudvalget og byrådet anbefaler, at takster for\nhandicapparkering fastsættes på samme niveau som de takster, der gælder for kommunens\nøvrige betalingsparkeringspladser.\n\nBeslutning fra Teknisk Udvalg, den 3. november 2026, punkt 201:\nAnbefalet.\nDorte Pannicke undlod at stemme.\nPeder Hummelmose var fraværende."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nDan Arnløv tager forbehold for sin stillingtagen til Byrådets behandling af sagen.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19338,10 +19446,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "De kommunale investeringsmidler i Sundhedsrådene",
    "afsnit": [
     {
@@ -19355,6 +19463,10 @@
     {
      "titel": "Økonomi",
      "tekst": "De kommunale investeringsmidler indfases fra 2027 og øges frem mod fuld indfasning i\nVejle Kommunes andel udgør 7,21 mio. kr. I 2027 fordelt med 4,99 mio. kr. på\nSeniorudvalgets område og 2,22 mio. kr. på Sundheds- og Forebyggelsesudvalgets.\n\nSagens videre forløb\nSagen sendes til orientering i Ældrerådet\n\n16. november 2026: Sagen forelægges Økonomi- og Erhvervsudvalget.\n18. november 2026: Sundhedsråd Lillebælt forelægges aftalerne for alle fire kommuner.\n25. november 2026: Byrådet godkender Vejle Kommunes aftale\n14. december 2026: Regionsrådet forelægges de kommunalt godkendte aftaler til deres\nendelige godkendelse.\n1. januar 2027: Midlerne udmøntes\n\nDeltager i sagens behandling\nat formand for Seniorudvalget Peder Hummelmose og Velfærdsdirektør Anne Mette Lund\npræsenterer sagen.\n\nHistorik\nSeniorudvalget og Sundheds- og Forebyggelsesudvalget blev orienteret om forslagene til\nindsatserne til investeringsmidlerne på deres møder d. 12. august 2026.\nVelfærdsdirektøren indstiller, den 4. november 2026, punkt 108:\nat Seniorudvalget og Sundheds- og Forebyggelsesudvalget anbefaler til Byrådet, at aftalen\nmellem Region Syddanmark og Vejle Kommune om de kommunale investeringsmidler indgås.\nat Seniorudvalget og Sundheds- og Forebyggelsesudvalget anbefaler til Byrådet, at de\nprioriterede indsatser (faste teams med socialpædagogiske kompetencer, sundhedsfremme og\nforebyggelse i socialpsykiatrien, opsporing og tidlig forebyggelse i lokalområdet og Social\nSundhed) igangsættes fra januar 2027 på Seniorudvalgets og Sundheds- og\nForebyggelsesudvalgets områder.\nat Seniorudvalget og Sundheds- og Forebyggelsesudvalget anbefaler til Byrådet, at\nSeniorudvalget bevilliges 4,99 mio. kr. og Sundheds- og Forebyggelsesudvalget bevilliges 2,22\nmio. kr. til afholdelse af de prioriterede indsatser.\nat sagen sendes til orientering i Ældrerådet.\nBeslutning fra Seniorudvalget, den 4. november 2026, punkt 108:\nAnbefalet\n\nKultur- og Sundhedsdirektøren indstiller, den 4. november 2026, punkt 79:\nat Seniorudvalget og Sundheds- og Forebyggelsesudvalget anbefaler til Byrådet, at aftalen\nmellem Region Syddanmark og Vejle Kommune om de kommunale investeringsmidler indgås.\nat Seniorudvalget og Sundheds- og Forebyggelsesudvalget anbefaler til Byrådet, at de\n\nprioriterede indsatser (faste teams med socialpædagogiske kompetencer, sundhedsfremme og\nforebyggelse i socialpsykiatrien, opsporing og tidlig forebyggelse i lokalområdet og Social\nSundhed) igangsættes fra januar 2027 på Seniorudvalgets og Sundheds- og\nForebyggelsesudvalgets områder.\nat Seniorudvalget og Sundheds- og Forebyggelsesudvalget anbefaler til Byrådet, at\nSeniorudvalget bevilliges 4,99 mio. kr. og Sundheds- og Forebyggelsesudvalget bevilliges 2,22\nmio. kr. til afholdelse af de prioriterede indsatser.\nat sagen sendes til orientering i Ældrerådet.\nBeslutning fra Sundheds- og Forebyggelsesudvalget den 4. november 2026, pkt. 79:\nAnbefales\n\nAdministrativ tilføjelse\nAdministrativ tilføjelse den 12/11 2026.\n\nOpsummering af de bevillingsmæssige konsekvenser\nSagen medfører, at der bevilges 4,99 mio. kr. til Seniorudvalget og 2,22 mio. kr. Sundhed- og\nForebyggelsesudvalget til investering i kommunale sundhedsopgaver. Midler finansieres via\ntilskud fra Sundhedsrådet under Region Syd.\nHøringssvar:\nCentralt Budget har ingen bemærkninger af bevillingsmæssig karakter.”"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19364,10 +19476,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Plan for redningsberedskabet - Risikobaseret dimensionering - Vejle Kommune 2027 – 2030",
    "afsnit": [
     {
@@ -19377,6 +19489,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Den nye plan for redningsberedskabet - Risikobaserede dimensionering – i Vejle Kommune\n2027 - 2030, indeholder risikoprofil, serviceniveau, organisation, virksomhed, alarmering,\ndimensionering og materiel.\nPlanen for redningsberedskabet skal inden endelig godkendelse i byrådet sendes til udtalelse\nhos Beredskabsstyrelsen.\nUdtalelsen fra Beredskabsstyrelsen er kommet retur 12. oktober 2026.\nBeredskabsdirektøren har taget udtalelsen fra Beredskabsstyrelsen til efterretning\nAlle punkter som af Beredskabsstyrelsen er beskrevet i udtalelsen, er taget til efterretning, og\nder er ikke driftsmæssige økonomiske konsekvenser forbundet med anbefalingerne eller\nudtalelserne fra Beredskabsstyrelsen.\nPlanen for redningsberedskabet – Risikobaserede dimensionering – tager udgangspunkt i den\ntidligere plan for redningsberedskabet fra foregående valgperiode. Dog med nogle få\ntilretninger, der blandt andet har indflydelse på organisationen, køretøjer og materiel.\nJusteringerne består af:\nBasisberedskaber på de fem brandstationer består af – bemanding 1 holdleder + 5\nbrandfolk 2 køretøjer: Autosprøjte og vandtankvogn på 12.000l vand – station Vejle er\ndog normeret med to basisberedskaber bemanding 1 holdleder + 5 brandfolk (øjeblikkelig\nudrykning) + 1 holdleder + 5 brandfolk på tilkald til 2. slukningsenhed. Stationerne i\nBørkop og Bredsten opnormeres på sigt til basisberedskaber.\nRedningsvogn med special frigørelsesmateriel afgår fremadrettet til alle færdselsuheld\nmed melding om teknisk fastklemt person(er) sammen med basisberedskab (sprøjte,\n\ntankvogn, 1 holdleder + 5 brandfolk) i takt med, at stationerne bliver opgraderet til\nbasisberedskaber.\nVed ABA (Automatisk Brandalarmerings Anlæg) afsendes der fremadrettet basis\nberedskab (sprøjte, tankvogn, 1 holdleder + 5 brandfolk) i takt med, at stationerne bliver\nopgraderet til basisberedskaber.\nAfgangstiden er lovmæssigt bortfaldet. Dog opretholdes der et afgangstidskrav ved\nudkald af deltidsstyrken, som er fastsat til 6 minutter grundet rekrutteringsmuligheder.\nDer skal udarbejdes en stationsanalyse i forhold til placering af eksisterende forhold.\n\nKlima og resiliensvurdering\nIkke relevant.\n\nSagens videre forløb\nEfter udtalelse omkring den nye plan for redningsberedskabet fra Beredskabsstyrelsen, skal\nden nye plan for redningsberedskabet – Risikobaserede dimensionering – behandles af\nBeredskabskommissionen med de udtalelser, Beredskabsstyrelsen måtte have i forbindelse\nmed planforslaget.\nBeredskabskommissionen skal godkende den nye plan for redningsberedskabet og efter\ngodkendelse sendes planen for redningsberedskabet videre til godkendelse af Økonomi - og\nerhvervsudvalget og derefter endelig godkendelse af Byrådet.\n\nHistorik\nBeredskabsdirektøren indstiller, den 23. oktober 2026, punkt 35:\nat Beredskabskommissionen godkender planen for redningsberedskabet Vejle Kommune\nat planen for redningsberedskabet Vejle Kommune 2027 - 2030 sendes til godkendelse hos\nØkonomi - og erhvervsudvalget og derefter til endelig godkendelse hos Byrådet.\n\nBeslutning fra Beredskabskommissionen, den 23. oktober 2026, punkt 35:\nGodkendt.\nBrian Fussing var fraværende."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\n\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19386,10 +19502,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Event- og festivalplads i Jelling",
    "afsnit": [
     {
@@ -19403,6 +19519,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Opsummering af de bevillingsmæssige konsekvenser\nSagen medfører, at der gives anlægsbevilling på 26,981 mio. kr. til projektet. Udgiften\nfinansieres af rådighedsbeløb i 2027+2028 samt en delvis fremrykning af rådighedsbeløb fra\n\nForskydning mellem år finansieres af kassen.\nHøringssvar:\nCentralt Budget har ingen bemærkninger af bevillingsmæssig karakter.\n\nKlima og resiliensvurdering\nIngen bemærkninger.\n\nSagens videre forløb\nSagen skal efterfølgende behandles i Økonomi- og Erhvervsudvalget og Byrådet.\n\nHistorik\nKultur- og Sundhedsdirektøren indstiller, den 3. november 2026, punkt 130:\nat sagen godkendes med de anførte bevillingsmæssige konsekvenser.\n\nBeslutning fra Kultur- og Idrætsudvalget, den 3. november 2026, punkt 130:\nAnbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19412,10 +19532,10 @@
    "kommune": "Vejle",
    "udvalg": "Økonomi- og Erhvervsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.vejle.dk/vis?id=bd16f887-58d3-4882-b6c1-4349596ceac7",
-   "hentet": "2026-11-12T22:21:18.487Z",
+   "kilde": "https://dagsordener.vejle.dk/vis?id=b115869d-767c-4885-ae3d-87f6134b2799",
+   "hentet": "2026-11-19T14:18:58.373Z",
    "titel": "Fornyelse af visionsaftale for Bevæg dig for livet",
    "afsnit": [
     {
@@ -19429,6 +19549,10 @@
     {
      "titel": "Økonomi",
      "tekst": "DIF og DGI bidrager samlet med 250.000 kr. årligt til visionsarbejdet og den fælles\nprojektledelse. Vejle Kommune bidrager med et tilsvarende beløb på 250.000 kr. årligt.\nVejle Kommunes økonomiske bidrag til samarbejdet finansieres af Folkeoplysningsudvalget\ninden for den eksisterende økonomiske ramme. Sagen blev behandlet af\nFolkeoplysningsudvalget d. 29. februar 2024, hvor Folkeoplysningsudvalget afsatte midler til og\nmed 2028. Sagen skal dermed genbehandles i Folkeoplysningsudvalget inden udgangen af\n2028 for den resterende finansiering. Herudover indgår aktivitetsmidler til konkrete indsatser.\nParterne bidrager desuden med medarbejderressourcer og faglige kompetencer, og der vil\nvære mulighed for at søge ekstern fondsfinansiering til konkrete projekter.\n\nKlima og resiliensvurdering\nBevæg dig for livet har en betydning for den sociale resiliens ved at understøtte individuel og\nkollektiv trivsel og sammenhængskraft\n\nSagens videre forløb\nSagen skal behandles af Økonomiudvalget og Byrådet.\n\nHistorik\nKultur- og Sundhedsdirektøren indstiller, den 3. november 2026, punkt 126:\nat visionsaftalen Bevæg dig for livet mellem Vejle Kommune, DIF og DGI for perioden 20272031 godkendes.\n\nBeslutning fra Kultur- og Idrætsudvalget, den 3. november 2026, punkt 126:\nAnbefales."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales med den tilføjelse, at projektet fremadrettet koordineres med Sundheds- og\nForebyggelsesudvalget.\nFraværende: Anne Sofie Stjernholm."
     }
    ],
    "bilag": []
@@ -19441,15 +19565,15 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=412f1a55-bd26-4cee-912b-76a766bb7609": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=e3c91886-d1d0-45ba-b59a-d6cf44d7325a": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-17",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=5f4c8e53-f5da-46f6-87f3-ef66bf112e30": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=991781a9-b45d-4ea8-a6f7-d4432aeb28b8": {
    "senest": "2025-09-27",
@@ -19457,23 +19581,23 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=8a17d0f1-728f-4f21-8bbb-96ea6df1d033": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=ac048344-82ac-479e-8a94-271ed9c7def8": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=1b1a861d-77d5-4d06-897b-633e6b7345ed": {
    "senest": "2026-10-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=84e26e88-c3eb-412b-880c-56cae9e0c429": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=231c9014-2820-400f-91fc-252bd8e5a981": {
    "senest": "2026-03-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=0303651f-e5c0-49be-bfa8-c84857fe95ab": {
    "senest": "2025-10-29",
@@ -19485,15 +19609,15 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=ac0aff5b-4cf0-4cb9-ad39-4dca82abf85e": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=bb95a466-71a6-4c1e-82ea-13e7f597564e": {
    "senest": "2026-10-08",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=e2a7c719-beda-4845-bfe2-6dcd0f7c2c44": {
    "senest": "2026-11-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=19d559d8-2256-4f6f-81c9-e516af0aa266": {
    "senest": "2025-09-27",
@@ -19501,11 +19625,11 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=b1416232-53d8-447c-aad0-156b426ff51e": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=695254f4-d3cf-4ccd-9516-ba836b8f9a87": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=fbf107fb-51b9-4618-b8d5-04fba26a2a49": {
    "senest": "2021-12-14",
@@ -19517,7 +19641,7 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=74ca23c8-362b-4e87-a32d-729ada079c8e": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=33644f70-cf4f-467e-9aba-0755bd47fccc": {
    "senest": "2021-12-17",
@@ -19525,15 +19649,15 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=4a2876b5-77c2-42c6-bdf8-8cd1f54c4775": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=f21a9304-7bb1-4b7f-8c6d-044b01ef4216": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=f8e44e41-9d47-436f-81e4-4089ede2f021": {
    "senest": "2026-09-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=36c1d33e-1788-4a4b-912a-436f819e40fb": {
    "senest": "2025-09-27",
@@ -19545,35 +19669,35 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=3e87fc8f-ee89-4f07-9fef-347bccc9305f": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=7cef63e9-d9ef-49e5-bc91-c7a57721822b": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=787bb87c-3521-4594-b6a7-3069c01114e9": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=dc21bf37-642d-4dc8-9060-70b8b9a2c6f0": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=3d220446-c5ce-492b-a7a6-c94cc9ae862b": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=5c0b2907-683f-41d9-89d6-8fce606df377": {
    "senest": "2026-11-09",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=3ccf9420-6a5f-46b4-925e-a1c3a985477a": {
-   "senest": "2026-11-04",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-16",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=0350313f-b140-46a0-8f36-709b73fe5f26": {
    "senest": "2026-10-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=0e7f029c-019d-4248-aa43-c86eef4a7cc8": {
    "senest": "2025-09-27",
@@ -19581,15 +19705,15 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=1e58d49f-3661-465f-a98b-b53270b88bf8": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=d7a6684f-dff0-49cd-93be-4a2cd88ab165": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=fc9502c1-a88d-44bf-934e-5821968d72ac": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=b4282fc6-afa7-4850-97c6-5020e3f77a7f": {
    "senest": "2025-09-27",
@@ -19601,15 +19725,15 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=def2acac-f29a-47a2-a935-7a04b7fc114f": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=ea20c122-792b-4690-b013-8ce642a998a5": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=ce4eb4a3-e0e7-4676-97cb-b856407109e7": {
    "senest": "2026-10-02",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=8c2016f0-9056-4814-8d07-c67abcc82b7b": {
    "senest": "2013-10-23",
@@ -19621,7 +19745,7 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=2ad0c8e1-873f-4bc3-9778-c29637ad0ded": {
    "senest": "2026-10-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=c8afb1e3-4d0f-4335-bd4a-fabd8daf8f79": {
    "senest": "2021-12-16",
@@ -19629,11 +19753,11 @@
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=548fc016-fc80-4131-88e6-79e14b547625": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/ForCommittee?committeeId=4309ac20-f891-4db3-bd41-eccda59f41f4": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.vejle.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -19641,6 +19765,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-13T21:45:31.318Z",
+ "opdateret": "2026-11-19T14:19:03.279Z",
  "kommune": "Vejle"
 }

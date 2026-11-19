@@ -703,6 +703,38 @@
    "dato": "2026-11-12",
    "punkter": 2,
    "parser": 3
+  },
+  "de2fe395-4ef5-42e3-8bfd-3b38516c7c65": {
+   "lastmod": "2026-11-16",
+   "type": "referat",
+   "udvalg": "Arkitekturrådet",
+   "dato": "2026-11-09",
+   "punkter": 1,
+   "parser": 3
+  },
+  "698a743a-339f-4d2f-bac5-00f669842c56": {
+   "lastmod": "2026-11-16",
+   "type": "referat",
+   "udvalg": "Arkitekturrådet",
+   "dato": "2026-08-04",
+   "punkter": 1,
+   "parser": 3
+  },
+  "82a59746-9e07-4843-ac23-cf3956898e1d": {
+   "lastmod": "2026-11-19",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-18",
+   "punkter": 14,
+   "parser": 3
+  },
+  "602a2406-988b-4279-b265-fd0350dc251b": {
+   "lastmod": "2026-11-17",
+   "type": "referat",
+   "udvalg": "Erhvervs- og Arbejdsmarkedsudvalget",
+   "dato": "2026-11-16",
+   "punkter": 5,
+   "parser": 3
   }
  },
  "sager": {
@@ -13683,12 +13715,17 @@
    "kommune": "Svendborg",
    "udvalg": "Erhvervs- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=c8a46d02-dfcd-42b0-b12b-92d68839639d",
-   "hentet": "2026-11-09T23:42:53.771Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=602a2406-988b-4279-b265-fd0350dc251b",
+   "hentet": "2026-11-19T13:30:36.019Z",
    "titel": "1. Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "I ERHVERVS- OG ARBEJDSMARKEDSUDVALGET 2026-2029 DEN\nGodkendt"
+    }
+   ],
    "bilag": []
   },
   "svendborg-2026-11-16-erhvervs-og-arbejdsmarkedsudvalget-2": {
@@ -13696,10 +13733,10 @@
    "kommune": "Svendborg",
    "udvalg": "Erhvervs- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=c8a46d02-dfcd-42b0-b12b-92d68839639d",
-   "hentet": "2026-11-09T23:42:53.771Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=602a2406-988b-4279-b265-fd0350dc251b",
+   "hentet": "2026-11-19T13:30:36.019Z",
    "titel": "2. Budgetopfølgning pr. 30. september 2026 - Erhvervs- og Arbejdsmarkedsudvalget",
    "afsnit": [
     {
@@ -13709,6 +13746,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der er udarbejdet budgetopfølgning pr. 30. september 2026 jævnfør vedlagte bilag.\nOpfølgningen indgår i kommunens samlede koncernrapport, som forelægges Økonomiudvalget\nden 17. november 2026.\nErhvervs- og Arbejdsmarkedsudvalgets budgetopfølgning viser følgende afvigelser mellem det\nforventede regnskab og det korrigerede budget:\nServiceudgifter\nDet forventede regnskab for serviceudgifterne udgør 113,6 mio. kr., hvilket svarer til et\nforventet mindreforbrug på 8,8 mio. kr. Afvigelserne fordelt på politikområder er følgende:\n\nOverførselsudgifter\nDet forventede regnskab for overførselsudgifterne udgør 1.240,7 mio. kr., hvilket svarer til et\nforventet mindreforbrug på 21,4 mio. kr. Afvigelserne fordelt på politikområder er følgende:\n\nØkonomiske og erhvervsmæssige konsekvenser\nDer henvises til vedlagte rapport.\n\nCO2-Konsekvensvurdering\nIkke relevant.\n\nLovgrundlag, planer, politikker og strategier\nLov om kommunernes styrelse.\n\nSagen afgøres i\nErhvervs- og Arbejdsmarkedsudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I ERHVERVS- OG ARBEJDSMARKEDSUDVALGET 2026-2029 DEN\nTaget til efterretning"
     }
    ],
    "bilag": []
@@ -13718,10 +13759,10 @@
    "kommune": "Svendborg",
    "udvalg": "Erhvervs- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=c8a46d02-dfcd-42b0-b12b-92d68839639d",
-   "hentet": "2026-11-09T23:42:53.771Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=602a2406-988b-4279-b265-fd0350dc251b",
+   "hentet": "2026-11-19T13:30:36.019Z",
    "titel": "3. Budget 2027 - opfølgning på budgetforliget - Erhvervs- og Arbejdsmarkedsudvalget",
    "afsnit": [
     {
@@ -13731,6 +13772,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der blev den 18. september indgået budgetforlig for 2027.\nPå Erhvervs- og Arbejdsmarkedsudvalgets område blev følgende temaer bevilget:\n\nIndsatser for borgere længere væk fra arbejdsmarkedet og fleksjob, 600.000 kr. årligt.\nIndsatsen omfatter test af en ny medarbejdertype, BMV-medarbejder, der får en 3-delt\nfunktion for borgere på kanten af arbejdsmarkedet og for borgere, der er tilkendt\nfleksjob.\nB står for beskæftigelsessagsbehandler (myndighed), M står for mentorfunktion og V\nstår for virksomhedsrettede opgaver. Formålet er at styrke borgerens progression mod\narbejdsmarkedet og derigennem potentielt øge kommunens resultater, herunder\nmulighed for jobpræmie. For borgere, der er tilkendt fleksjob, men uden job, er formålet\nat sikre en overgang fra ledighed til ansættelse i et fleksjob.\n\nBlueTech Startup Hub, 500.000 kr. i 2027 og 2028.\nMedfinansiering af videreførelsen af BlueTech Startup Hub i perioden 1. oktober 2026 til\n30. september 2028. Formålet med projektet er at fastholde og videreudvikle Svendborg\nsom maritimt kraftcenter ved at understøtte tidlige maritime startups. Indsatsen skal\nbidrage til etablering af nye virksomheder, skabe arbejdspladser og tiltrække\nvirksomheder til kommunen.\n\nMed risikopuljen disponeret i alle årene, er der fremover ikke længere budgetlagt nogen\nbufferpulje eller budgetværn til uforudsete udgifter. På den baggrund er forligskredsen optaget\naf, at kommunens regelsæt omkring økonomisk rammestyring, overførselsregler mv. er\ntidssvarende og entydige således der ikke er tvivl om ansvar, regler og ikke mindst handlepligt\ninternt i kommunen. Regler og procedurer skal derfor genbesøges og eventuelt ajourføres med\nhenblik på budget 2028, således at økonomiske udfordringer også fremover bliver håndteret\n\nhensigtsmæssigt, selv uden et budgetværn.\n\nØkonomiske og erhvervsmæssige konsekvenser\nBeløbene er indarbejdet i budget 2027.\n\nCO2-Konsekvensvurdering\nIkke relevant.\n\nLovgrundlag, planer, politikker og strategier\nIkke relevant.\n\nSagen afgøres i\nErhvervs- og Arbejdsmarkedsudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I ERHVERVS- OG ARBEJDSMARKEDSUDVALGET 2026-2029 DEN\nTaget til efterretning"
     }
    ],
    "bilag": []
@@ -13740,10 +13785,10 @@
    "kommune": "Svendborg",
    "udvalg": "Erhvervs- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=c8a46d02-dfcd-42b0-b12b-92d68839639d",
-   "hentet": "2026-11-09T23:42:53.771Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=602a2406-988b-4279-b265-fd0350dc251b",
+   "hentet": "2026-11-19T13:30:36.019Z",
    "titel": "4. Cittaslows fremtid i Svendborg Kommune",
    "afsnit": [
     {
@@ -13753,6 +13798,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Svendborg Kommune blev i 2008 optaget i det internationale Cittaslow-netværk som den første\nkommune i Norden. Medlemskabet blev etableret som en tværgående ramme for kommunens\nudvikling med fokus på blandt andet livskvalitet, bæredygtighed, lokale fællesskaber og\nstedbundne kvaliteter. Cittaslow-bevægelsen har rødder i Slow Food-bevægelsen i Italien og\nbygger på en tilgang til lokal udvikling, hvor blandt andet kvalitet, trivsel, nærvær og lokale\nsærkender er centrale værdier.\nI forbindelse med medlemskabet blev der på Kommunalbestyrelsens bestilling i 2008\nudarbejdet en såkaldt Cittaslowstafet (se bilag 1), som skulle omsætte Cittaslow-idéerne til\nkonkrete projekter og indsatser inden for blandt andet livskvalitet, byrum, natur, kultur og\nerhverv. Handlingsplanen blev blandt andet som følge af omorganisering i administrationen\nkun i begrænset omfang gennemført.\nI 2011 blev den lokale forening, Cittaslow Svendborg (se bilag 2), med bestyrelsen,\nCittaslowrådet, etableret. Foreningen er selvstændig og organisatorisk adskilt fra det\ninternationale Cittaslow-netværk, som kommunen er medlem af. Cittaslowforeningen har i dag\nmere end 70 medlemmer, primært virksomheder, foreninger og andre lokale aktører. Kun en\nmindre del af medlemmerne deltager dog aktivt i foreningens møder og aktiviteter. Foreningens\nformål er blandt andet at fremme Cittaslow som branding af Svendborg, fremme det gode liv\nsamt skabe synlighed, inspiration og dialog om Cittaslow.\nCittaslowrådet skulle oprindeligt tilstræbe en bred repræsentation af blandt andet\nfødevareområdet, erhvervslivet, turisme, kultur og det maritime område samt lokale områder\nmed en særlig tilknytning til Cittaslows værdier. I de første år var blandt andre Svendborg\nEvent, Erhvervskontoret, Kulinarisk Sydfyn og Svendborg Bibliotek repræsenteret.\nCittaslow Svendborg har siden udviklet sig til en medlemsforening med egne aktiviteter og\nprioriteringer. Bestyrelsen, Cittaslowrådet, består af engagerede medlemmer, men er ikke\nsammensat med henblik på at repræsentere bestemte sektorer eller geografiske områder.\nForeningens rolle adskiller sig dermed fra det oprindelige sigte om bred repræsentation og\nsamordning af lokale aktører.\nCittaslow er samtidig blevet en del af fortællingen om Svendborg og de kvaliteter, der forbindes\nmed det gode liv. Aktivitetsniveauet har imidlertid varieret gennem årene, og der har ikke været\nen entydig afgrænsning af, hvordan Cittaslow skal omsættes til konkrete indsatser. Det\nvanskeliggør en samlet vurdering af indsatsernes effekt. Kommunen og Cittaslowrådet har\ndesuden haft forskellige forventninger til roller og indsats, og foreningen har været kritisk over\nfor kommunens arbejde med Cittaslow.\nAdministrationens vurdering er, at Cittaslowrådets ændrede karakter og den manglende\nrepræsentative sammensætning taler for, at kommunen udtræder af foreningen. Det vurderes\nhensigtsmæssigt uanset den politiske stillingtagen til kommunens internationale medlemskab\nog den fremtidige prioritering af Cittaslow-arbejdet. Cittaslowrådet vil fortsat kunne varetage\negne aktiviteter som bestyrelse for en selvstændig forening. Udtræder Svendborg Kommune af\nden lokale forening Cittaslow Svendborg, afklares de vedtægtsmæssige konsekvenser af\n\nudtrædelsen med foreningen. Foreningens vedtægter er vedlagt som bilag 2.\nSamtidig har kommunens strategiske grundlag udviklet sig væsentligt siden optagelsen i det\ninternationale netværk. Det giver anledning til en politisk stillingtagen til Cittaslows fremtidige\nrolle.\nCittaslows rolle i kommunens strategiske arbejde\nSiden Svendborg Kommune blev medlem af Cittaslow, er der vedtaget en række politikker,\nstrategier og udviklingsspor, som i dag sætter retning for kommunens udvikling. Det gælder\nikke mindst udviklingsstrategien Fra mere til bedre, som med afsæt i kommunens fem styrker\nudgør den overordnede strategiske ramme.\nDer er et betydeligt værdimæssigt overlap mellem Cittaslow og Fra mere til bedre. Livskvalitet,\nlokale fællesskaber, bæredygtighed og stedbundne kvaliteter indgår på forskellig vis i\nkommunens eksisterende strategier og indsatser. Arbejdet med disse værdier er derfor ikke i\nsig selv afhængigt af medlemskabet af det internationale Cittaslow-netværk.\nAdministrationens vurdering er, at Cittaslow kan have værdi som en supplerende fortælling og\nramme om konkrete indsatser. Kommunens politisk vedtagne strategier og planer vil fortsat\nvære det primære grundlag for prioriteringer og udvikling.\nHvis det internationale medlemskab videreføres, vil et tydeligere fokus kunne skabe større\nsammenhæng mellem medlemskabet og kommunens konkrete indsatser og gøre det lettere at\nprioritere ressourcer og samarbejder.\nDet internationale netværks kriterier vedrører dog fortsat en bred vifte af kommunale politikker\nog indsatser. En tematisk fokusering af Cittaslow-aktiviteterne ændrer derfor ikke i sig selv på\nde kriterier, der knytter sig til medlemskabet. Cittaslow International vedtog i juni 2026 en\nrevision af vedtægterne, hvor tidligere obligatoriske kriterier betegnes som prioriterede kriterier.\nDette åbner for en mere fleksibel tilgang, hvor et fortsat medlemskab af Cittaslow ikke\nindebærer, at Cittaslow skal være overordnet strategisk styringsramme for kommunen, men\nkan fokuseres på udvalgte områder og anvendes som et konkret redskab, eksempelvis inden\nfor turisme og destinationsudvikling.\nPå den baggrund beskrives tre mulige fokusområder, som har sammenhæng med Cittaslows\nværdier og Svendborg Kommunes eksisterende styrkepositioner.\nFokusområde: Handels- og byliv\nEt fokus på handels- og byliv vil tage afsæt i Cittaslows værdier om kvalitet, nærvær, lokale\nsærkender og gode bymiljøer.\nSvendborg har et varieret handels- og byliv med selvstændige butikker, caféer, kultur og\noplevelser. Cittaslow vil i denne sammenhæng kunne anvendes som en supplerende fortælling\nom de kvaliteter, der kendetegner byen, og som ramme om konkrete samarbejder og\naktiviteter.\n\nEt fokus på handels- og byliv vil eksempelvis kunne omfatte:\nkampagner med fokus på lokal handel og byliv\nmarkedsdage og events med lokale producenter og handelslivet som omdrejningspunkt\nfortællinger om Svendborgs selvstændige butikker, lokale oplevelser og særlige bymiljø\nsamarbejder med handelslivet om synliggørelse af byens lokale kvaliteter.\n\nAdministrationens vurdering er, at Cittaslow på dette område primært vil kunne bidrage som en\nidentitets- og brandingmæssig ramme omkring eksisterende og nye aktiviteter.\nFokusområde: Turisme\nEt fokus på turisme vil tage afsæt i Cittaslows fortælling om autentiske oplevelser, livskvalitet,\nlokale kvaliteter, kultur og gastronomi.\nDisse værdier har sammenhæng med den eksisterende turismeindsats i Svendborg og på\nSydfyn. Cittaslow vil kunne anvendes som en supplerende kvalitetsfortælling i tilknytning til\nområdets øvrige styrkepositioner.\nDet gælder blandt andet UNESCO Global Geopark Det Sydfynske Øhav, som udgør en\ninternational ramme for formidling og udvikling af områdets natur, landskab og oplevelser.\nCittaslow vil i denne sammenhæng kunne fungere som en underfortælling med fokus på den\nlokale livsform og oplevelsen af Svendborg og Sydfyn.\nEt fokus på turisme vil eksempelvis kunne omfatte:\nanvendelse af Cittaslow som underfortælling i markedsføringen af Svendborg og Sydfyn\nkobling mellem byliv, kultur, gastronomi og områdets øvrige styrkepositioner\nmindre events med fokus på lokal mad, kultur, havnemiljø og lokale oplevelser\n\nAdministrationens vurdering er, at Cittaslow på turismeområdet især vil kunne anvendes som\nsupplement til de eksisterende fortællinger og indsatser.\nFokusområde: Kulinarisk destination\nEt fokus på den kulinariske destination tager afsæt i den historiske sammenhæng mellem\nCittaslow og Slow Food-bevægelsen og i Svendborg Kommunes eksisterende ambitioner på\ndet kulinariske område.\nUdviklingsstrategien rummer en ambition om at styrke Svendborg som destination for kulinarisk\nturisme, og der findes allerede en række aktører og samarbejder på området, herunder\nKulinarisk Sydfyn, lokale producenter, restauranter og øvrige fødevareaktører.\nCittaslow vil her kunne anvendes som en fælles fortælling om blandt andet kvalitet, lokale\nråvarer, bæredygtighed og stedbundne oplevelser.\n\nEt fokus på den kulinariske destination vil eksempelvis kunne omfatte:\nanvendelse af Cittaslow ved madfestivaler, markeder og kulinariske arrangementer\nsynliggørelse af lokale råvarer og producenter gennem fælles branding og storytelling\nsamarbejde med relevante aktører om formidling og udvikling af områdets kulinariske\nkvaliteter.\n\nAdministrationens vurdering er, at der på dette område er en naturlig tematisk sammenhæng\nmellem Cittaslows værdigrundlag og eksisterende kommunale ambitioner og lokale aktiviteter.\nUdtrædelse af Cittaslow\nKommunalbestyrelsen kan som alternativ til de tre fokusområder vælge, at Svendborg\nKommune udtræder af det internationale Cittaslow-netværk.\nEn udtrædelse vil betyde, at Svendborg Kommune ikke længere er certificeret Cittaslowkommune og dermed ikke længere kan anvende medlemskabet og Cittaslow-brandet i\nkommunens aktiviteter og kommunikation.\nEn udtrædelse vil ikke i sig selv ændre kommunens eksisterende strategier eller indsatser\ninden for eksempelvis livskvalitet, bæredygtighed, lokale fællesskaber, byliv, turisme og\ngastronomi. Disse områder vil fortsat kunne udvikles med afsæt i Fra mere til bedre,\nkommunens øvrige politikker og strategier samt konkrete politiske prioriteringer.\nRent administrativt vurderes en udtrædelse at være en overskuelig proces.\nVed udtrædelse tilfalder det afsatte budget på 109.000 kr. kassen.\n\nOrganisering og forankring\nI dag ligger det administrative arbejde med Cittaslow i Direktionssekretariatet og økonomien er\nforankret i Økonomiudvalget.\nHvis medlemskabet af det internationale Cittaslow-netværk videreføres med fokus på handelsog byliv, turisme eller den kulinariske destination, vil en forankring tættere på relevante aktører\nkunne styrke sammenhængen med eksisterende indsatser.\nDe tre fokusområder ligger alle tæt på Svendborg Event & Turismes nuværende\narbejdsområder. Administrationen har haft en indledende dialog med Svendborg Event &\nTurisme om mulige snitflader til organisationens eksisterende arbejde. Svendborg Event &\nTurisme er åben for at undersøge mulighederne for et samarbejde. En eventuel rolle for\nSvendborg Event & Turisme vil skulle afklares nærmere i den videre proces, herunder\nrammerne for opgaven og forelæggelse for Svendborg Event & Turismes bestyrelse.\nMuligheden for at varetage arbejdet er endnu ikke behandlet i Svendborg Event & Turismes\n\nbestyrelse. Inden den politiske behandling indhentes der en udtalelse fra bestyrelsen om\nmulighederne for en fremtidig forankring.\nEn eventuel overdragelse forudsætter en efterfølgende afklaring af opgaver, ansvar og\nøkonomi på baggrund af den politiske beslutning.\nUdtalelser forud for politisk behandling\nForud for den politiske behandling har administrationen indhentet udtalelser om udkastet til\nsagsfremstillingen fra både foreningen Cittaslow Svendborgs bestyrelse, Cittaslowrådet og\nSvendborg Event & Turismes bestyrelse. Udtalelse fra Cittaslow-rådet er vedlagt som bilag.\nPolitisk behandling\nCittaslows værdigrundlag har relevans på tværs af kommunens politikker og indsatser. Sagen\nbehandles indledningsvist i Erhvervs- og Arbejdsmarkedsudvalget, da de tre foreslåede\nfokusområder – handels- og byliv, turisme og Svendborg som kulinarisk destination alle ligger\ntæt på udvalgets ansvarsområde.\nDa økonomien er forankret i Økonomiudvalget, tager udvalget stilling til den videre politiske\nproces, herunder eventuel behandling i yderligere fagudvalg, inden sagen forelægges\nKommunalbestyrelsen til endelig beslutning.\n\nØkonomiske og erhvervsmæssige konsekvenser\nSvendborg Kommune har årligt afsat 109.000 kr. til Cittaslow-aktiviteter. Midlerne anvendes\nblandt andet til betaling af medlemskab af det internationale Cittaslow-netværk på 25.000 kr.\nsamt udgifter til eventuelle møder i Cittaslow-netværket, til kommunikation, arrangementer og\nøvrige aktiviteter. Administrationen understøtter Cittaslowforeningen med driftsopgaver.\nDer er udover medlemskab brugt flg. beløb til aktiviteter:\nAdministrationens vurdering er, at en fokuseret tilgang til Cittaslow-arbejdet og valget mellem\nde beskrevne muligheder ikke i sig vil have væsentlige økonomiske konsekvenser for\nerhvervslivet. For virksomheder og andre aktører, der aktivt anvender eller identificerer sig med\nCittaslow, kan en eventuel udtrædelse dog have betydning for deres tilknytning til Cittaslowfortællingen.\nAftaler om opgaver og budget ved en forankring hos Svendborg Event & Turisme afklares efter\nden politiske behandling.\n\nCO2-Konsekvensvurdering\nIkke relevant.\n\nLovgrundlag, planer, politikker og strategier\n\nUdviklingsstrategi Fra mere til bedre\nCittaslowstafetten\n\nSagen afgøres i\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I ERHVERVS- OG ARBEJDSMARKEDSUDVALGET 2026-2029 DEN\nIb Knudsen (Ø) stillede følgende forslag:\nEnhedslisten foreslår at Cittaslow fortsat skal være en fælles ramme for at udvikle\nSvendborg som et godt sted at leve - med blik for både mennesker, miljø, kultur,\nfællesskaber, erhvervsliv og de kvaliteter, der gør kommunen til noget særligt. Kort sagt,\nlivskvalitet.\nSom beskrevet i Cittaslow-stafetten, skal kommunen sørge for tidlig inddragelse ved bl.a.\nkommuneplan og lokalplaner, og sikre at samtalen om Cittaslows principper for\nbæredygtighed og livskvalitet er, et vigtigt supplement til plansystemet, og med til at\nskabe en platform for løbende dialog og samarbejde om denne dagsorden.\nDet stiller krav til Kommunen med hensyn til at sætte og fastholde mål, vælge og vælge\nfra, være opsøgende, lyttende, samarbejdende og agere tværfagligt. Det betyder ikke, at\nKommunen selv skal løse alle opgaverne – tværtimod. Kommunen har til gengæld\nstafetten, og skal få alle relevante eksterne parter med i opgaverne: erhvervslivet,\nturismen, de handlende og øvrige borgere og grupper. Det indebærer, at Kommunen som\nretningsgiver placerer sig selv synligt som:\n1. Procesbærer\n2. Centrum for handling og netværk\n3. Resultat- og forandringsskabende\n4. Forankringssikrer\nSvendborg Kommune har med Cittaslow et godt forankret koncept, og det bør sikres, at\ndet fremover kan udfolde sit potentiale.\nFor forslaget stemte: Ib Knudsen (Ø).\nImod forslaget stemte: John Arly Henriksen (A), Claus Krossteig (A), Jesper Ullemose\n(V), Rik Kool (Æ).\nForslaget bortfaldt hermed.\nUdvalget besluttede herefter at anbefale overfor Økonomiudvalget og\nKommunalbestyrelsen:\n\nAt Svendborg Kommune viderefører medlemskabet af det internationale\nCittaslow-netværk med en fokuseret indsats på alle tre følgende områder:\nHandels – og byliv\n\nTurisme\nSvendborg Kommune som kulinarisk destination\n\nAt administrationen på baggrund af de valgte fokusområder afklarer\nmulighederne og vilkårene for at forankre det fremtidige Cittaslow-arbejde i\nSvendborg Event & Turisme. Administrationen gives mandat til at indgå aftale\nherom. Aftalen forudsætter godkendelse i Svendborg Event & Turismes\nbestyrelse.\n\nAt Svendborg Kommune udtræder af den lokale forening Cittaslow Svendborg, og\nat kommunen afklarer de vedtægtsmæssige konsekvenser af udtrædelsen med\nforeningen.\n\nIb Knudsen (Ø) var imod."
     }
    ],
    "bilag": []
@@ -13762,15 +13811,19 @@
    "kommune": "Svendborg",
    "udvalg": "Erhvervs- og Arbejdsmarkedsudvalget",
    "dato": "2026-11-16",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=c8a46d02-dfcd-42b0-b12b-92d68839639d",
-   "hentet": "2026-11-09T23:42:53.771Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=602a2406-988b-4279-b265-fd0350dc251b",
+   "hentet": "2026-11-19T13:30:36.019Z",
    "titel": "5. Til Orientering",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Til Orientering:\n\nOrientering fra Udvalgsformanden.\nOrientering fra udvalgsmedlemmerne.\nOrientering fra administrationen:\nJulefrokost 2026"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I ERHVERVS- OG ARBEJDSMARKEDSUDVALGET 2026-2029 DEN\nTaget til efterretning.\nJulefrokost holdes mandag den 7. december 2026 kl. 17.00"
     }
    ],
    "bilag": []
@@ -13998,12 +14051,17 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "1. Godkendelse af dagsordenspunkt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "svendborg-2026-11-18-oekonomiudvalget-2": {
@@ -14011,10 +14069,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "2. Dialogmøde med forsyningsselskabet Vand og Affald",
    "afsnit": [
     {
@@ -14024,6 +14082,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Som led i Svendborg Kommunes ejerpolitiks krav om dialog og samarbejde mellem\nbestyrelserne og Kommunalbestyrelsen, afholdes dialogmøde mellem formandskabet\n(bestyrelsesformand, næstformand og direktør for Vand og Affald) og Økonomiudvalget.\nDialogmødet afholdes af en halv times varighed.\nMødedagsorden tager afsæt i ejerpolitikkens generelle forventninger til selskaberne indenfor:\nØkonomisk ansvarlighed\nForpligtende klimamål og miljømæssig ansvarlighed\nSocial ansvarlighed\nBeredskab\nVeje\nTakster\nØvrige aktuelle forhold\n\nDirektøren introducerer med et oplæg om selskabets aktiviteter i relation til ejerpolitikken med\nfokus på det kommende budget.\n\nØkonomiske og erhvervsmæssige konsekvenser\nIngen.\n\nCO2-Konsekvensvurdering\nIngen.\n\nLovgrundlag, planer, politikker og strategier\nEjerpolitik for Svendborg Kommunes forsyningsselskaber 2026-29.\n\nSagen afgøres i\n\nØkonomiudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -14033,10 +14095,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "5. Koncernrapport pr. 30. september 2026",
    "afsnit": [
     {
@@ -14046,6 +14108,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Det forventede regnskabsresultat overholder den økonomiske politiks målsætninger. Det\nordinære driftsresultat udviser et overskud 304,1 mio. kr., gælden afdrages med 73,9 mio. kr.\nog den gennemsnitlige likviditet udgør 444,1 mio. kr. pr. 30. september 2026.\nDet forventede regnskab 2026 viser, at der er områder, som er særlig udfordret. På\nsocialområdet forventes et merforbrug på netto 26,6 mio. kr., og vedr. segregerede elever\nforventes et merforbrug på 6,5 mio. kr. Som følge af den hårde vinter i årets første 2 måneder\nforventes et merforbrug på 8,0 mio. kr. vedr. vintertjeneste.\nDer er ikke indarbejdet udgifter vedr. dommen for overarbejde for deltidsansatte, men et\nforeløbigt skøn viser betydelige økonomiske og administrative konsekvenser i en\nstørrelsesorden mellem 14-20 mio. kr. til brug for lønkrav, morarenter, udgifter til\nsystemunderstøttelse og forøget ressourceforbrug. Den største del af tilbagebetalingskravet\nforventes først at belaste regnskabet for 2027.\nVed udarbejdelse af det forventede regnskab er der taget udgangspunkt i forårets nye\noverenskomst på det kommunale område, som medfører en højere lønstigning på 0,94 pct.\nend det skøn, som er anvendt ved fremskrivning af lønbudget 2026. Kommunen er\nkompenseret herfor ved midtvejsregulering for 2026 med i alt 19,5 mio. kr., og kompensationen\ner indarbejdet i det korrigerede budget pr. 30.9.2026, hvorfor fagudvalgenes budgetafvigelser\nforbedres i forhold til opfølgning 30. juni 2026.\n\nBufferpuljen, risikopuljen og pulje regnskabsafslutningen udgør tilsammen netto ca. 45 mio. kr.,\nsom reserveres til stillingtagen til evt. medfinansiering af udfordrede områder i forbindelse med\nregnskabsafslutningen samt afledte udgifter af krigen i Ukraine.\nOverførselsudgifterne på beskæftigelsesområdet udviser et mindreforbrug på 21,4 mio. kr.,\nhvor kommunen i midtvejsreguleringen er reguleret for 6,7 mio. kr. Desuden indgår et\nekstraordinært mindreforbrug på 38,2 mio. kr. vedr. Kommunal Medfinansiering, idet\nregeringen og KL i forbindelse med sundhedsreformen er blevet enige om at eftergive 4. rate.\nDe samlede forventede anlægsudgifter er siden 30. juni 2026 faldet med 30,8 mio. kr., og\nforventes pt. at udgøre 198,1 mio. kr. Direktionen bemærker, at det forventede anlægsforbrug\nligger væsentlig over tidligere års forbrug.\nDirektionens anbefaling:\nØkonomiudvalget har besluttet, at rammestyringen udmøntes ved at evt. merudgifter inden for\net budgetområde søges finansieret indenfor det pågældende fagudvalg. Evt. merudgifter ved\nregnskabsafslutningen inden for fagudvalget overføres til fagudvalget til efterfølgende\nregnskabsår.\nSet i lyset af udviklingen i det forventede regnskab vedr. serviceudgifter anbefaler direktionen,\nat der fortsat arbejdes med tiltag til forbedring af det forventede regnskabsresultat vedr.\nserviceudgifter på de udfordrede områder frem mod det endelige regnskab.\nDirektionen anbefaler ligeledes, at der i forbindelse med koncernrapporten pr. 30.9.2026 rejses\nen fælles tillægsbevilling, som medfører et provenu på 0,6 mio. kr., som direktionen anbefaler,\ntilføres puljen til regnskabsafslutningen. Puljen udgør herefter 10,3 mio. kr., hvoraf 10 mio. kr.\nvedr. kompensation for krigen i Ukraine.\nTillægsbevillingen omfatter primært tilpasning af anlægsbudgettet ifm. færdiggørelse af\nStenstrup Plejehjem og Aldersro Plejecenter, som medfører en samlet mindreudgift, der delvis\nmodsvares af lavere lånoptagelse.\nStatus på budgetforlig 2026:\nDer vedlægges desuden status på budgetforlig 2026 inkl. uafsluttede sager fra tidligere års\nbudgetforlig for perioden 2021-2025.\n\nØkonomiske og erhvervsmæssige konsekvenser\nFremgår af vedlagte bilag\n\nCO2-Konsekvensvurdering\nEj relevant\n\nLovgrundlag, planer, politikker og strategier\nLov om kommunernes styrelse samt Svendborg Kommunes Økonomiske politik\n\nSagen afgøres i\n\nØkonomiudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning og godkendt."
     }
    ],
    "bilag": []
@@ -14055,10 +14121,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "6. Satser for garantiprovision 2027",
    "afsnit": [
     {
@@ -14068,6 +14134,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Satser for garantiprovisioner 2027\nSatsen for garantiprovision for 2026 er for Vand og Affald, samt Svendborg Fjernvarme\nA.m.b.a. fastsat til 0,75 % af restgælden 31.12.\nTidligere etableret varmepumpeanlæg ved Svendborg Fjernvarme A.m.b.a. er godkendt med\nsats 0,5 % i garantiprovision af restgælden 31.12.\nDe øvrige etablerede forsyningsselskabers årlige garantiprovisionssats udgør 1 % af\nrestgælden 31.12.\nSatsen fastsættes årligt forud for budgetåret på baggrund af markedsniveauet.\nSvendborg Kommunes nuværende garantiprovisionssatser på 0,50 %, 0,75 % og 1,00 % ligger\nfortsat inden for det markedsinterval, som kommunens bankforbindelse oplyser observeres på\nforsyningsområdet (0,35-1,50 % p.a.).\nVed evt. nye garantier vil der videst muligt sikres, at satsen understøttes af en konkret\nmarkedsvurdering baseret på selskabets kreditforhold og gældende markedsmetoder.\nAdministrationen vurderer på baggrund af henvendelse til kommunens bankforbindelse, at\nniveauet for de nærværende satser svarer til markedsniveauet og lægger op til uændrede\nsatser for 2027 - indtil en konkret kredit- eller markedsanalyse skulle udvise, at en ændring af\nsatser er markedsmæssigt begrundet.\n\nØkonomiske og erhvervsmæssige konsekvenser\n\nEvt. reguleringer i satser for garantiprovision vil medføre mindre-/merindtægter for Svendborg\nKommune.\n\nSagen afgøres i\nØkonomiudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -14077,10 +14147,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "7. Støtte til løsning af støjproblematik til ERI Svendborg Padel",
    "afsnit": [
     {
@@ -14102,6 +14172,10 @@
     {
      "titel": "Behandling i Kultur- og Fritidsudvalget 3. november 2026",
      "tekst": "Kultur-og Fritidsudvalget indstiller til Økonomiudvalget og endelig godkendelse i\nKommunalbestyrelsen, at der bevilges et tilskud på 3,2 mio. kr. som ansøgt samt en\nlånegaranti på 5,5 mio. kr., hvoraf 1,0 mio. kr. er overført fra lånegaranti givet til\nforeningen Svendborg Paddelhal. Udvalget indstiller, at økonomiudvalget finder særskilt\nfinansiering til 4,5 mio. kr. i lånegaranti samt tilskuddet på 3,2 mio. kr.\n\nAfbud fra Hanne Ringgaard Møller (B). Som suppleant deltog Jesper Kiel (Ø)."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Liste V stillede ændringsforslag, idet tilskud på 3,2 mio.kr. stilles som lånegaranti.\nFor stemmer Liste V, mens øvrige var imod.\nFagudvalgets indstilling anbefales overfor Kommunalbestyrelsen med bemærkning om,\nat deponering på 4,5 mio.kr. for lånegarantien og tilskuddet på 3,2 mio.kr. finansieres i\nforbindelse med regnskabsafslutningen for 2026.\nListe I og V undlader at stemme."
     }
    ],
    "bilag": []
@@ -14111,10 +14185,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "8. Igangsættelse af midlertidige ungdomsboliger på havnen",
    "afsnit": [
     {
@@ -14128,6 +14202,10 @@
     {
      "titel": "Behandling i Teknik- og Miljøudvalget 5. november 2026",
      "tekst": "Indstillingen anbefales overfor Økonomiudvalget med bemærkning om, at alternative\nplaceringer indenfor Godsbane- eller nærliggende havnearealer skal afsøges."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Udvalgets indstilling godkendt."
     }
    ],
    "bilag": []
@@ -14137,10 +14215,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "9. Østre Kaj - resultat af open call vedr. to siloer",
    "afsnit": [
     {
@@ -14158,6 +14236,10 @@
     {
      "titel": "Behandling i Teknik- og Miljøudvalget 12. november 2026",
      "tekst": "Administrationen orienterer indledningsvist om, at der er modtaget supplerende\noplysninger om finansiering fra forslagsstiller nr. 2 BEEHIVE.\nTeknik og Miljøudvalget anbefaler model B overfor Økonomiudvalget og\nKommunalbestyrelsen med bemærkning om, at den uddybende risiko afdækkende dialog\nudvides til at omfatte både Harbour Horizon (forslag 3) og BEEHIVE (forslag 2).\nDet bemærkes også, at en efterfølgende beslutning om eventuel nedrivning træffes under\nforudsætning af vedtaget plangrundlag.\nAfbud fra Rasmus Schjødt Kold (A), som suppleant deltog Hanne Klit (A)."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Administrationens orientering om risikoafdækning blev taget til efterretning. Beslutningen\ni Teknik- og Miljøudvalget indstilles til Kommunalbestyrelsen.\nBesluttet der afholdes ekstraordinært Økonomiudvalgsmøde 24.11.2026 kl. 16.00-16.15\nforud for Kommunalbestyrelsesmødet."
     }
    ],
    "bilag": []
@@ -14167,10 +14249,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "10. Ændret løsning for cykelstiprojektet på Egensevej, Høje Bøge Vej og Skovsbovej",
    "afsnit": [
     {
@@ -14184,6 +14266,10 @@
     {
      "titel": "Behandling i Teknik- og Miljøudvalget 5. november 2026",
      "tekst": "Det anbefales overfor Økonomiudvalget og Kommunalbestyrelsen, at delstrækning 2\ngennemføres og at de overskydende midler overføres til 2027. Udvalget ønsker på\nfebruar mødet at tage stilling til anvendelsen af de resterende midler."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning i Teknik- og Miljøudvalget anbefales overfor Kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -14193,10 +14279,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "11. Tillæg om terrænnært grundvand til Spildevandsplan 2020-2031",
    "afsnit": [
     {
@@ -14210,6 +14296,10 @@
     {
      "titel": "Behandling i Teknik- og Miljøudvalget 5. november 2026",
      "tekst": "Indstillingen anbefales overfor Økonomiudvalget og Kommunalbestyrelsen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales overfor Kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -14219,10 +14309,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "12. Vedståelse af garantier - Ollerup Gymnastikhøjskole",
    "afsnit": [
     {
@@ -14232,6 +14322,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Gymnastikhøjskolen i Ollerup ønsker, som led i deres arbejde med at styrke deres økonomi og\nnedbringe skolens gæld, at sælge to ejendomme på Enghavevej, som længe ikke har været\nbrugt og derfor ikke bør indgå i skolens fremtidige drift.\nDe er aktuelt i dialog med en konkret køber om Enghavevej 7 og 9, og forventningen er, at\nhandlen kan gennemføres med overtagelse den 31. december 2026.\nSalget er en del af skolens samlede økonomiske strategi, hvor de arbejder på at forbedre\nlikviditeten, reducere gælden og skabe et mere bæredygtigt økonomisk grundlag for de\nkommende år.\nI forbindelse med salget har de anmodet Nykredit om at frigive Enghavevej 7, matr.nr. 51t,\nOllerup By, Ollerup, fra deres pant.\nNykredit har ved brev af 21. oktober 2026 meddelt, at de er indstillet på at frigive ejendommen\nfra pantet, under forudsætning af at Svendborg Kommune vedstår de eksisterende\nkommunegarantier vedrørende følgende lån:\n\nKontantlån nr. 0044738-24\nTilpasningslån nr. 0044738-39\n\nDer er tale om de kommunegarantier, som Svendborg Kommune tidligere har stillet i\nforbindelse med skolens anlægsinvesteringer, henholdsvis i 2018 og 2020.\n\nØkonomiske og erhvervsmæssige konsekvenser\nDer vurderes ingen økonomiske konsekvenser for kommunen.\nNykredit har som sikkerhed for lån fortsat pant i skolens ejendomme, hvilket Svendborg\n\nkommune har betinget sig, da garantierne for de to lån blev godkendt.\n\nCO2-Konsekvensvurdering\nIkke vurderet.\n\nLovgrundlag, planer, politikker og strategier\nBekendtgørelse nr. 1484 af 11. december 2024 om kommunernes låntagning og meddelelse af\ngarantier m.v.\n\nSagen afgøres i\nKommunalbestyrelsen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales overfor Kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -14241,10 +14335,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "13. Cittaslows fremtid i Svendborg Kommune",
    "afsnit": [
     {
@@ -14254,6 +14348,14 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "Svendborg Kommune blev i 2008 optaget i det internationale Cittaslow-netværk som den første\nkommune i Norden. Medlemskabet blev etableret som en tværgående ramme for kommunens\nudvikling med fokus på blandt andet livskvalitet, bæredygtighed, lokale fællesskaber og\nstedbundne kvaliteter. Cittaslow-bevægelsen har rødder i Slow Food-bevægelsen i Italien og\nbygger på en tilgang til lokal udvikling, hvor blandt andet kvalitet, trivsel, nærvær og lokale\nsærkender er centrale værdier.\nI forbindelse med medlemskabet blev der på Kommunalbestyrelsens bestilling i 2008\nudarbejdet en såkaldt Cittaslowstafet (se bilag 1), som skulle omsætte Cittaslow-idéerne til\nkonkrete projekter og indsatser inden for blandt andet livskvalitet, byrum, natur, kultur og\nerhverv. Handlingsplanen blev blandt andet som følge af omorganisering i administrationen\nkun i begrænset omfang gennemført.\nI 2011 blev den lokale forening, Cittaslow Svendborg (se bilag 2), med bestyrelsen,\nCittaslowrådet, etableret. Foreningen er selvstændig og organisatorisk adskilt fra det\ninternationale Cittaslow-netværk, som kommunen er medlem af. Cittaslowforeningen har i dag\nmere end 70 medlemmer, primært virksomheder, foreninger og andre lokale aktører. Kun en\nmindre del af medlemmerne deltager dog aktivt i foreningens møder og aktiviteter. Foreningens\nformål er blandt andet at fremme Cittaslow som branding af Svendborg, fremme det gode liv\nsamt skabe synlighed, inspiration og dialog om Cittaslow.\nCittaslowrådet skulle oprindeligt tilstræbe en bred repræsentation af blandt andet\nfødevareområdet, erhvervslivet, turisme, kultur og det maritime område samt lokale områder\nmed en særlig tilknytning til Cittaslows værdier. I de første år var blandt andre Svendborg\nEvent, Erhvervskontoret, Kulinarisk Sydfyn og Svendborg Bibliotek repræsenteret.\nCittaslow Svendborg har siden udviklet sig til en medlemsforening med egne aktiviteter og\nprioriteringer. Bestyrelsen, Cittaslowrådet, består af engagerede medlemmer, men er ikke\nsammensat med henblik på at repræsentere bestemte sektorer eller geografiske områder.\nForeningens rolle adskiller sig dermed fra det oprindelige sigte om bred repræsentation og\nsamordning af lokale aktører.\nCittaslow er samtidig blevet en del af fortællingen om Svendborg og de kvaliteter, der forbindes\nmed det gode liv. Aktivitetsniveauet har imidlertid varieret gennem årene, og der har ikke været\nen entydig afgrænsning af, hvordan Cittaslow skal omsættes til konkrete indsatser. Det\nvanskeliggør en samlet vurdering af indsatsernes effekt. Kommunen og Cittaslowrådet har\ndesuden haft forskellige forventninger til roller og indsats, og foreningen har været kritisk over\nfor kommunens arbejde med Cittaslow.\nAdministrationens vurdering er, at Cittaslowrådets ændrede karakter og den manglende\nrepræsentative sammensætning taler for, at kommunen udtræder af foreningen. Det vurderes\nhensigtsmæssigt uanset den politiske stillingtagen til kommunens internationale medlemskab\nog den fremtidige prioritering af Cittaslow-arbejdet. Cittaslowrådet vil fortsat kunne varetage\negne aktiviteter som bestyrelse for en selvstændig forening. Udtræder Svendborg Kommune af\nden lokale forening Cittaslow Svendborg, afklares de vedtægtsmæssige konsekvenser af\n\nudtrædelsen med foreningen. Foreningens vedtægter er vedlagt som bilag 2.\nSamtidig har kommunens strategiske grundlag udviklet sig væsentligt siden optagelsen i det\ninternationale netværk. Det giver anledning til en politisk stillingtagen til Cittaslows fremtidige\nrolle.\nCittaslows rolle i kommunens strategiske arbejde\nSiden Svendborg Kommune blev medlem af Cittaslow, er der vedtaget en række politikker,\nstrategier og udviklingsspor, som i dag sætter retning for kommunens udvikling. Det gælder\nikke mindst udviklingsstrategien Fra mere til bedre, som med afsæt i kommunens fem styrker\nudgør den overordnede strategiske ramme.\nDer er et betydeligt værdimæssigt overlap mellem Cittaslow og Fra mere til bedre. Livskvalitet,\nlokale fællesskaber, bæredygtighed og stedbundne kvaliteter indgår på forskellig vis i\nkommunens eksisterende strategier og indsatser. Arbejdet med disse værdier er derfor ikke i\nsig selv afhængigt af medlemskabet af det internationale Cittaslow-netværk.\nAdministrationens vurdering er, at Cittaslow kan have værdi som en supplerende fortælling og\nramme om konkrete indsatser. Kommunens politisk vedtagne strategier og planer vil fortsat\nvære det primære grundlag for prioriteringer og udvikling.\nHvis det internationale medlemskab videreføres, vil et tydeligere fokus kunne skabe større\nsammenhæng mellem medlemskabet og kommunens konkrete indsatser og gøre det lettere at\nprioritere ressourcer og samarbejder.\nDet internationale netværks kriterier vedrører dog fortsat en bred vifte af kommunale politikker\nog indsatser. En tematisk fokusering af Cittaslow-aktiviteterne ændrer derfor ikke i sig selv på\nde kriterier, der knytter sig til medlemskabet. Cittaslow International vedtog i juni 2026 en\nrevision af vedtægterne, hvor tidligere obligatoriske kriterier betegnes som prioriterede kriterier.\nDette åbner for en mere fleksibel tilgang, hvor et fortsat medlemskab af Cittaslow ikke\nindebærer, at Cittaslow skal være overordnet strategisk styringsramme for kommunen, men\nkan fokuseres på udvalgte områder og anvendes som et konkret redskab, eksempelvis inden\nfor turisme og destinationsudvikling.\nPå den baggrund beskrives tre mulige fokusområder, som har sammenhæng med Cittaslows\nværdier og Svendborg Kommunes eksisterende styrkepositioner.\nFokusområde: Handels- og byliv\nEt fokus på handels- og byliv vil tage afsæt i Cittaslows værdier om kvalitet, nærvær, lokale\nsærkender og gode bymiljøer.\nSvendborg har et varieret handels- og byliv med selvstændige butikker, caféer, kultur og\noplevelser. Cittaslow vil i denne sammenhæng kunne anvendes som en supplerende fortælling\nom de kvaliteter, der kendetegner byen, og som ramme om konkrete samarbejder og\naktiviteter.\n\nEt fokus på handels- og byliv vil eksempelvis kunne omfatte:\nkampagner med fokus på lokal handel og byliv\nmarkedsdage og events med lokale producenter og handelslivet som omdrejningspunkt\nfortællinger om Svendborgs selvstændige butikker, lokale oplevelser og særlige bymiljø\nsamarbejder med handelslivet om synliggørelse af byens lokale kvaliteter.\n\nAdministrationens vurdering er, at Cittaslow på dette område primært vil kunne bidrage som en\nidentitets- og brandingmæssig ramme omkring eksisterende og nye aktiviteter.\nFokusområde: Turisme\nEt fokus på turisme vil tage afsæt i Cittaslows fortælling om autentiske oplevelser, livskvalitet,\nlokale kvaliteter, kultur og gastronomi.\nDisse værdier har sammenhæng med den eksisterende turismeindsats i Svendborg og på\nSydfyn. Cittaslow vil kunne anvendes som en supplerende kvalitetsfortælling i tilknytning til\nområdets øvrige styrkepositioner.\nDet gælder blandt andet UNESCO Global Geopark Det Sydfynske Øhav, som udgør en\ninternational ramme for formidling og udvikling af områdets natur, landskab og oplevelser.\nCittaslow vil i denne sammenhæng kunne fungere som en underfortælling med fokus på den\nlokale livsform og oplevelsen af Svendborg og Sydfyn.\nEt fokus på turisme vil eksempelvis kunne omfatte:\nanvendelse af Cittaslow som underfortælling i markedsføringen af Svendborg og Sydfyn\nkobling mellem byliv, kultur, gastronomi og områdets øvrige styrkepositioner\nmindre events med fokus på lokal mad, kultur, havnemiljø og lokale oplevelser\n\nAdministrationens vurdering er, at Cittaslow på turismeområdet især vil kunne anvendes som\nsupplement til de eksisterende fortællinger og indsatser.\nFokusområde: Kulinarisk destination\nEt fokus på den kulinariske destination tager afsæt i den historiske sammenhæng mellem\nCittaslow og Slow Food-bevægelsen og i Svendborg Kommunes eksisterende ambitioner på\ndet kulinariske område.\nUdviklingsstrategien rummer en ambition om at styrke Svendborg som destination for kulinarisk\nturisme, og der findes allerede en række aktører og samarbejder på området, herunder\nKulinarisk Sydfyn, lokale producenter, restauranter og øvrige fødevareaktører.\nCittaslow vil her kunne anvendes som en fælles fortælling om blandt andet kvalitet, lokale\nråvarer, bæredygtighed og stedbundne oplevelser.\n\nEt fokus på den kulinariske destination vil eksempelvis kunne omfatte:\nanvendelse af Cittaslow ved madfestivaler, markeder og kulinariske arrangementer\nsynliggørelse af lokale råvarer og producenter gennem fælles branding og storytelling\nsamarbejde med relevante aktører om formidling og udvikling af områdets kulinariske\nkvaliteter.\n\nAdministrationens vurdering er, at der på dette område er en naturlig tematisk sammenhæng\nmellem Cittaslows værdigrundlag og eksisterende kommunale ambitioner og lokale aktiviteter.\nUdtrædelse af Cittaslow\nKommunalbestyrelsen kan som alternativ til de tre fokusområder vælge, at Svendborg\nKommune udtræder af det internationale Cittaslow-netværk.\nEn udtrædelse vil betyde, at Svendborg Kommune ikke længere er certificeret Cittaslowkommune og dermed ikke længere kan anvende medlemskabet og Cittaslow-brandet i\nkommunens aktiviteter og kommunikation.\nEn udtrædelse vil ikke i sig selv ændre kommunens eksisterende strategier eller indsatser\ninden for eksempelvis livskvalitet, bæredygtighed, lokale fællesskaber, byliv, turisme og\ngastronomi. Disse områder vil fortsat kunne udvikles med afsæt i Fra mere til bedre,\nkommunens øvrige politikker og strategier samt konkrete politiske prioriteringer.\nRent administrativt vurderes en udtrædelse at være en overskuelig proces.\nVed udtrædelse tilfalder det afsatte budget på 109.000 kr. kassen.\n\nOrganisering og forankring\nI dag ligger det administrative arbejde med Cittaslow i Direktionssekretariatet og økonomien er\nforankret i Økonomiudvalget.\nHvis medlemskabet af det internationale Cittaslow-netværk videreføres med fokus på handelsog byliv, turisme eller den kulinariske destination, vil en forankring tættere på relevante aktører\nkunne styrke sammenhængen med eksisterende indsatser.\nDe tre fokusområder ligger alle tæt på Svendborg Event & Turismes nuværende\narbejdsområder. Administrationen har haft en indledende dialog med Svendborg Event &\nTurisme om mulige snitflader til organisationens eksisterende arbejde. Svendborg Event &\nTurisme er åben for at undersøge mulighederne for et samarbejde. En eventuel rolle for\nSvendborg Event & Turisme vil skulle afklares nærmere i den videre proces, herunder\nrammerne for opgaven og forelæggelse for Svendborg Event & Turismes bestyrelse.\nMuligheden for at varetage arbejdet er endnu ikke behandlet i Svendborg Event & Turismes\n\nbestyrelse. Inden den politiske behandling indhentes der en udtalelse fra bestyrelsen om\nmulighederne for en fremtidig forankring.\nEn eventuel overdragelse forudsætter en efterfølgende afklaring af opgaver, ansvar og\nøkonomi på baggrund af den politiske beslutning.\nUdtalelser forud for politisk behandling\nForud for den politiske behandling har administrationen indhentet udtalelser om udkastet til\nsagsfremstillingen fra både foreningen Cittaslow Svendborgs bestyrelse, Cittaslowrådet og\nSvendborg Event & Turismes bestyrelse. Udtalelse fra Cittaslow-rådet er vedlagt som bilag.\nPolitisk behandling\nCittaslows værdigrundlag har relevans på tværs af kommunens politikker og indsatser. Sagen\nbehandles indledningsvist i Erhvervs- og Arbejdsmarkedsudvalget, da de tre foreslåede\nfokusområder – handels- og byliv, turisme og Svendborg som kulinarisk destination alle ligger\ntæt på udvalgets ansvarsområde.\nDa økonomien er forankret i Økonomiudvalget, tager udvalget stilling til den videre politiske\nproces, herunder eventuel behandling i yderligere fagudvalg, inden sagen forelægges\nKommunalbestyrelsen til endelig beslutning.\n\nØkonomiske og erhvervsmæssige konsekvenser\nSvendborg Kommune har årligt afsat 109.000 kr. til Cittaslow-aktiviteter. Midlerne anvendes\nblandt andet til betaling af medlemskab af det internationale Cittaslow-netværk på 25.000 kr.\nsamt udgifter til eventuelle møder i Cittaslow-netværket, til kommunikation, arrangementer og\nøvrige aktiviteter. Administrationen understøtter Cittaslowforeningen med driftsopgaver.\nDer er udover medlemskab brugt flg. beløb til aktiviteter:\nAdministrationens vurdering er, at en fokuseret tilgang til Cittaslow-arbejdet og valget mellem\nde beskrevne muligheder ikke i sig vil have væsentlige økonomiske konsekvenser for\nerhvervslivet. For virksomheder og andre aktører, der aktivt anvender eller identificerer sig med\nCittaslow, kan en eventuel udtrædelse dog have betydning for deres tilknytning til Cittaslowfortællingen.\nAftaler om opgaver og budget ved en forankring hos Svendborg Event & Turisme afklares efter\nden politiske behandling.\n\nCO2-Konsekvensvurdering\nIkke relevant.\n\nLovgrundlag, planer, politikker og strategier\n\nUdviklingsstrategi Fra mere til bedre\nCittaslowstafetten\n\nSagen afgøres i\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "I ERHVERVS- OG ARBEJDSMARKEDSUDVALGET 2026-2029 DEN\nIb Knudsen (Ø) stillede følgende forslag:\nEnhedslisten foreslår at Cittaslow fortsat skal være en fælles ramme for at udvikle\nSvendborg som et godt sted at leve - med blik for både mennesker, miljø, kultur,\nfællesskaber, erhvervsliv og de kvaliteter, der gør kommunen til noget særligt. Kort sagt,\nlivskvalitet.\nSom beskrevet i Cittaslow-stafetten, skal kommunen sørge for tidlig inddragelse ved bl.a.\nkommuneplan og lokalplaner, og sikre at samtalen om Cittaslows principper for\nbæredygtighed og livskvalitet er, et vigtigt supplement til plansystemet, og med til at\nskabe en platform for løbende dialog og samarbejde om denne dagsorden.\nDet stiller krav til Kommunen med hensyn til at sætte og fastholde mål, vælge og vælge\nfra, være opsøgende, lyttende, samarbejdende og agere tværfagligt. Det betyder ikke, at\nKommunen selv skal løse alle opgaverne – tværtimod. Kommunen har til gengæld\nstafetten, og skal få alle relevante eksterne parter med i opgaverne: erhvervslivet,\nturismen, de handlende og øvrige borgere og grupper. Det indebærer, at Kommunen som\nretningsgiver placerer sig selv synligt som:\n1. Procesbærer\n2. Centrum for handling og netværk\n3. Resultat- og forandringsskabende\n4. Forankringssikrer\nSvendborg Kommune har med Cittaslow et godt forankret koncept, og det bør sikres, at\ndet fremover kan udfolde sit potentiale.\nFor forslaget stemte: Ib Knudsen (Ø).\nImod forslaget stemte: John Arly Henriksen (A), Claus Krossteig (A), Jesper Ullemose\n(V), Rik Kool (Æ).\nForslaget bortfaldt hermed.\nUdvalget besluttede herefter at anbefale overfor Økonomiudvalget og\nKommunalbestyrelsen:\n\nAt Svendborg Kommune viderefører medlemskabet af det internationale\nCittaslow-netværk med en fokuseret indsats på alle tre følgende områder:\nHandels – og byliv\n\nTurisme\nSvendborg Kommune som kulinarisk destination\n\nAt administrationen på baggrund af de valgte fokusområder afklarer\nmulighederne og vilkårene for at forankre det fremtidige Cittaslow-arbejde i\nSvendborg Event & Turisme. Administrationen gives mandat til at indgå aftale\nherom. Aftalen forudsætter godkendelse i Svendborg Event & Turismes\nbestyrelse.\n\nAt Svendborg Kommune udtræder af den lokale forening Cittaslow Svendborg, og\nat kommunen afklarer de vedtægtsmæssige konsekvenser af udtrædelsen med\nforeningen.\n\nIb Knudsen (Ø) var imod."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Liste Ø stillede forslag om at sagen oversendes til alle udvalg for drøftelse af prioritering\naf øvrige Cittaslow-kriterierne.\nFor stemmer Liste Ø, F og C og Pia Dam (A), mens øvrige var imod.\nBeslutning i Erhvervs- og arbejdsmarkedsudvalget indstilles til Kommunalbestyrelsen.\nListe Ø var imod med henvisning til forslaget stillet på Erhvers- og\nArbejdsmarkedsudvalget."
     }
    ],
    "bilag": []
@@ -14263,10 +14365,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "14. Godkendelse af Regulativ for husholdningsaffald 2026",
    "afsnit": [
     {
@@ -14280,6 +14382,10 @@
     {
      "titel": "Behandling i Teknik- og Miljøudvalget 5. november 2026",
      "tekst": "Indstillingen anbefales overfor Økonomiudvalget og Kommunalbestyrelsen.\nRasmus Schjødt Kold (liste S) forlod lokalet under punktets behandling."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Rasmus Schjødt Kold (A) blev erklæret inhabil og deltog ikke i punktet.\nAnbefales overfor Kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -14289,10 +14395,10 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "15. Godkendelse af takster for Modtagestation Syddanmark 2027",
    "afsnit": [
     {
@@ -14306,6 +14412,10 @@
     {
      "titel": "Behandling i Teknik- og Miljøudvalget 5. november 2026",
      "tekst": "Indstillingen anbefales overfor Økonomiudvalget og Kommunalbestyrelsen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales overfor Kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -14315,12 +14425,17 @@
    "kommune": "Svendborg",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-18",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.svendborg.dk/vis?id=4d34b3b3-57bb-4216-91aa-7889dacd866e",
-   "hentet": "2026-11-13T12:24:57.999Z",
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=82a59746-9e07-4843-ac23-cf3956898e1d",
+   "hentet": "2026-11-19T13:30:27.974Z",
    "titel": "16. Orientering",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet."
+    }
+   ],
    "bilag": []
   },
   "svendborg-2026-11-12-teknik-og-miljoeudvalget-2": {
@@ -14352,224 +14467,260 @@
     }
    ],
    "bilag": []
+  },
+  "svendborg-2026-11-09-arkitekturraadet-1": {
+   "id": "svendborg-2026-11-09-arkitekturraadet-1",
+   "kommune": "Svendborg",
+   "udvalg": "Arkitekturrådet",
+   "dato": "2026-11-09",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=de2fe395-4ef5-42e3-8bfd-3b38516c7c65",
+   "hentet": "2026-11-19T13:30:08.421Z",
+   "titel": "1. Referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Godkendelse af dagsorden\nGodkendt\n2. Status på aktuelle sager\n• Midlertidige boliger på havnen\nDer er truffet politisk beslutning om afsøgning af mulighed for etablering af op til 30 midlertidige\nungdomsboliger nær Svendborg Havn.\n• Retningslinjer for planlægning ved Myrehøjvej\nDer er truffet politisk beslutning om tilpasning af hjørneflag for kommende planlægning for ny\nbolibgebyggelse på Myrehøjvej.\n• Flexboliger i Svendborg\nAdministrationen foreligger sag til politisk drøftelse i januar om mulig skærpelse af praksis for\nflexboligtilladelser. I dag er der forbud mod flexboliger i Svendborg By og Lundeborg.\n• Planlægning for kobberbækkens øverste etape\nDer er politisk truffet beslutning om at igangsætte lokalplan for øvre etape af Kobberbækken,\nherunder vurdering af offentlig adgang langs bækken.\n• Kommende udbud af friplejehjem i Æskelund\nDer planlægges for udbud af nyt friplejehjem, eventuelt i sammenhæng med\nseniorbofællesskab ved Æskelund i Tved. Udbud forventes i maj 2027.\nOrienteringerne blev taget til efterretning.\n3. De Blå Zoner\n• Open Call er nu afsluttet. Orientering om indkomne forslag og politisk behandling.\nRådet drøftede de indkomne forslag og afgav følgende udtalelse:\nArkitekturrådet finder det meget positivt, at der er fremlagt seriøse og gennemarbejdede\nforslag, som tager udgangspunkt i at bevare væsentlige dele af det eksisterende siloanlæg.\nRådet ser det som en betydelig kvalitet, at der arbejdes med at videreføre stedets identitet og\nkulturhistoriske fortælling gennem genanvendelse af den eksisterende bebyggelsesstruktur.\nMed udgangspunkt i de fremsendte forslag, særligt forslagene fra Harbour Horizon og\nBEEHIVE, vurderer rådet, at det er sandsynliggjort, at den hvide silo kan genanvendes til reelle\nog bæredygtige formål til gavn for byen og i et naturligt samspil med den eksisterende\nbystruktur.\nBegge forslag er velprogrammerede. BEEHIVE bygger videre på Svendborgs kulturelle\nstyrkepositioner, mens Harbour Horizons troværdige bud i høj grad sikrer genkendeligheden af\n\nden oprindelige struktur og dermed fastholder områdets særlige karakter.\nEn bevarelse af den hvide silo vil således bidrage væsentligt til at fastholde et kulturhistorisk\nmiljø af både lokal og national interesse. Bevarelsen af anlægget vil styrke områdets identitet\nog skabe kontinuitet mellem byens industrielle historie og områdets fremtidige udvikling.\nArkitekturrådet anbefaler samlet set, at der arbejdes videre med de fremlagte løsningsforslag\nmed særligt fokus på at sikre en varig og meningsfuld genanvendelse af den eksisterende silo\nsom en integreret del af områdets fremtidige udvikling.\n4. Eventuelt"
+    }
+   ],
+   "bilag": []
+  },
+  "svendborg-2026-08-04-arkitekturraadet-1": {
+   "id": "svendborg-2026-08-04-arkitekturraadet-1",
+   "kommune": "Svendborg",
+   "udvalg": "Arkitekturrådet",
+   "dato": "2026-08-04",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.svendborg.dk/vis?id=698a743a-339f-4d2f-bac5-00f669842c56",
+   "hentet": "2026-11-19T13:30:13.205Z",
+   "titel": "1. Referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Godkendelse af dagsorden\n• Godkendt\n2. Status på aktuelle sager\n• Møllergade 2\n• Lokalplan for Vindeby\n• Badehotel ved Lundeborg\n• Østre Kaj\n• Budgettemadrøftelse vedr. arkitekturpolitik Orienteringen blev taget til efterretning.\nRådet drøftede fremsendt ændringsforslag for Møllergade 2. Rådet vurderede, at det\nfremsendte ændringsforslag med en reduceret kviststørrelse på den afrundede kvist er en\nforbedring ift. det oprindelige forslag, hvorfor indsigelsen mod kvisten frafaldes.\nRådet fastholder fortsat, at de 8 rundede vinduer bør bevares, henset til at disse er et\nvæsentligt og markant element for bygningens karakter.\nRådet har fremsendt høringssvar til lokalplanforslag for ny hal i beddingen ved Petersen og\nSørensen. Rådet anbefaler, at kommunen, som forudsætning for tilladelse til opstilling af den\nmeget store hal, stiller krav om at hallen udsmykkes med et værk, for herved at udnytte den\nmarkante skala, som forventeligt vil udgøre ca. 1100 m2.\nRådet har fremsendt indsigelse mod det kommende hotelbyggeri i Lundeborg. Sagen\nbehandles på Kommunalbestyrelsens møde den 24. august.\nOplæg fra arkitektforeningens direktør Lars Autrup vedlægges referatet.\n3. Ungdomsboliger\n• Orientering om afsøgning af mulige lokationer for ungdomsboliger omkring Svendborg havn\nog Bymidten\nSvendborg Kommune arbejder for at tilvejebringe havnenære ungdomsboliger i byen. Rådet er\npositive overfor denne udvikling og finder at såvel omdannelse af eksisterende byggeri eller\nnybyggeri til ungdomsboliger er en\ngod løsning. Rådet er samtidig positive overfor en løsning med midlertidige boliger, for herved\nat aktivere området, imens der arbejdes for permanente løsninger.\n4. Status på arkitekturpris\n• Deadline for indstilling af projekter er 11. august.\n• Besigtigelse af indstillede projekter den 7. september.\n• Arkitekturens dag og præmiering er den 5. oktober. https://www.svendborg.dk/nyheder/skaldit-byggeprojekt-have-aarets-arkitekturpris/\nTaget til efterretning. Dato for besigtigelse er ændret til den 31. august.\n\n5. Eventuelt\nUCL – Ventilation\nFormanden har fremsendt billeddokumentation for manglende integration af ventilationsanlæg\npå taget af UCL på Svendborg Havn.\nStørstedelen af ventilationsanlægget på UCL er afdækket, dog er enkelte afkast mod Østre\nStationsvej ikke afdækket. Administrationen bemærker i den forbindelse, at det teknisk ikke har\nværet muligt at sikre inddækning af disse, men at det i projekteringsfasen er besluttet at disse\nafkast bemales i ejendommens primærfarver. Bemalingen er endnu ikke udført.\nSkitse fra UCL:"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=a2ed1f9e-e308-4ef3-a616-a26f926fda8f": {
    "senest": "2026-08-25",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=51ef2350-d4dd-448e-9b95-2c9721a15982": {
    "senest": "2026-01-12",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=10bdcd43-375c-44b4-bcc3-4c32e30085d4": {
    "senest": "2026-01-12",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=738ee9bf-2b54-41bd-8adb-a06d889abac0": {
    "senest": "2026-10-26",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=c631211c-8a60-4530-bea0-ca82e4684825": {
    "senest": "2026-05-26",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=f7614da8-c89e-430a-a766-7e5be4f99c59": {
    "senest": "2025-12-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=447004d5-edcc-43fd-8d01-1d96b96a57be": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=de21e7bc-315b-4b6f-8c64-cc6c08f85f7a": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=5e2d73eb-4529-476f-8f2a-8eaa36356349": {
    "senest": "2026-01-30",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=dee0856f-1f20-4137-a6c6-91834a20b06c": {
    "senest": "2026-10-21",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=bff7770a-851b-4629-ba61-6fcd44973b51": {
    "senest": "2026-10-23",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=10618150-dd47-4df7-b55e-c88256b06f2f": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=9c138778-9eed-47e4-871f-f6a3833fdbd6": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=5a0c2869-1260-446f-ae91-2a49793a6de5": {
    "senest": "2026-10-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=d267774c-f7b8-44a9-9591-4f5a9bc0dbbe": {
    "senest": "2026-02-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=34fc5636-cee2-4eb3-9216-e6940546f9a8": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=dcf2f8a7-e075-48b0-97b5-461c48e3df58": {
    "senest": "2025-12-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=90332b18-25ad-41d2-8ba0-061dbfbec157": {
    "senest": "2026-06-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=514ad3ca-7fa0-4598-9c52-0b6fe1bf52cc": {
    "senest": "2026-06-29",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=ed22c3c7-04ba-40d1-b83b-4419a25b92db": {
-   "senest": "2026-06-22",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-16",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=e2782afc-ff67-4137-b58e-c79806ca5330": {
    "senest": "2026-06-23",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=c42ebb45-5886-4547-8501-d1fc8e440863": {
    "senest": "2025-12-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=abeb89cd-ac80-492d-8c3f-15ad70c724f2": {
-   "senest": "2026-11-13",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-19",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=c57eb7e1-3d26-47c5-86ac-f074c65bfedb": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=071511cf-fd6e-47f5-a9c8-dc6266efa2a1": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=b172e582-c07b-4913-a4be-648cb5e03a41": {
    "senest": "2025-12-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=b9f9bd68-d290-4cbc-b4ff-d90edd13468c": {
    "senest": "2026-11-13",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=15d65d3b-c983-4425-9c8d-be49a8cdb573": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=067eab9e-a11e-4b82-a1bf-2383f0495e72": {
    "senest": "2025-12-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=b59b0388-69a8-4749-b405-bcbd6a448731": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=a34cac02-9fab-422e-8c35-b2cb70979041": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=bb7b04cf-d3d3-49e4-8c95-d8f0ca2f71f5": {
    "senest": "2025-12-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=fa3c7d3c-5c13-471d-ae28-efab2c2aae15": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=e1b18770-2c03-47a8-a7c8-090e105fb414": {
    "senest": "2026-03-04",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=5a41bfc4-652a-4c50-907d-157ba76b2817": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=c8230a51-9084-4ab3-bba2-490219aa6599": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=1b9d606d-e9d9-4dbd-8e75-89ab9c0dab49": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=af52d85c-c04c-49e7-8708-b31009f8ccbf": {
    "senest": "2025-12-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=34432320-ca44-4ee5-a513-f0696381cdd8": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=55312362-54be-4447-9aea-4c2d12612525": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=abe07334-cfe0-40a4-891a-32638345ec84": {
    "senest": "2026-05-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=c452136a-aa23-422d-9234-4795f3567d71": {
    "senest": "2026-10-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=4c624d2b-f791-4fcf-bd3b-43e7382acfd4": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=0d203572-8564-4751-b15d-ee5fb7d3a91c": {
    "senest": "2025-12-28",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=28f03e12-5304-430b-b822-8804d2806154": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=06f131c3-ddfd-4236-bd19-8a4cba2c183f": {
-   "senest": "2026-11-09",
-   "tjekket": "2026-11-13"
+   "senest": "2026-11-17",
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=3df97868-646f-4c2c-b1f5-345076438fc5": {
    "senest": "2026-11-03",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=32129f85-12f3-4ea9-82ba-0182ddad7350": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=6f5e8828-43c3-49f2-a9f4-0e7c77c57bbb": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=9850d7fd-347e-43f5-9fcb-552a56b149a6": {
    "senest": "2026-06-25",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=1bbab80f-ac0a-47c4-9ce5-814cad254fa7": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=770432a0-c281-489c-9859-8260916fe3a8": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=94558132-965a-4a54-833f-340482e6ab1f": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/ForCommittee?committeeId=258cbad8-ef86-4fb3-a8a7-9c6ff3b1f629": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-13"
+   "tjekket": "2026-11-19"
   },
   "https://dagsordener.svendborg.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -14577,6 +14728,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-13T21:12:03.057Z",
+ "opdateret": "2026-11-19T13:30:36.021Z",
  "kommune": "Svendborg"
 }
