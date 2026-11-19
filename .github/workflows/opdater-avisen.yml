@@ -139,7 +139,7 @@ jobs:
 
       # Nær dig, radaren under Mine sager i Min avis (avis/naerhed.mjs): byggesager fra Klima-, Miljø- og Teknikudvalgets
       # oversigter over naboorienteringer (PDF, kræver pdftotext), høringer fra Bliv Hørt og nyheder fra TV2 Kosmopol (kun
-      # overskrift og link). Steder slås op i OpenStreetMap, højst 150 nye pr. kørsel, og huskes i data/geokode.json.
+      # overskrift og link). Steder slås op i OpenStreetMap, højst 150 nye pr. kørsel, og huskes i data/naerhed/geokode.json.
       # Skriver assets/naerhed.json. Fejler en kilde, bruges den forrige.
       - name: Nær dig (radaren i Min avis)
         if: github.event_name != 'push' || contains(github.event.head_commit.message, '[hent]')

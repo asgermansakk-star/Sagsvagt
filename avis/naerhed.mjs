@@ -5,7 +5,7 @@
 //   2. Høringer: alle høringer på Bliv Hørt (blivhoert.kk.dk/api/hearing, åbent JSON). Lokalplaner får et sted ud fra titlen.
 //   3. Nyheder: TV2 Kosmopols RSS (København). Kun overskrift, medie, dato og link gemmes, ligesom i avis/medier.mjs, og
 //      kun når artiklen nævner en gade eller et sted i København (avis/steder-kk.json).
-// Adresser og steder slås op i OpenStreetMap (Nominatim) højst én gang i sekundet og huskes i data/geokode.json.
+// Adresser og steder slås op i OpenStreetMap (Nominatim) højst én gang i sekundet og huskes i data/naerhed/geokode.json.
 // PDF'erne læses med pdftotext (poppler-utils). Fejler en kilde, skrives de andre alligevel.
 //   node avis/naerhed.mjs              (alt)
 //   GEOKODE_MAKS=0 node avis/naerhed.mjs   (ingen nye opslag)
@@ -36,7 +36,9 @@ async function hent(url, som = "text") {
 }
 
 // ---------- Geokodning (OpenStreetMap Nominatim, inden for København og Frederiksberg) ----------
-const GEO_FIL = "data/geokode.json";
+// Radarens egne filer ligger i data/naerhed/, så avis/byg.mjs og de andre, der læser kommunernes sager i data/, ikke ser dem
+await mkdir(join(ROD, "data", "naerhed"), { recursive: true });
+const GEO_FIL = "data/naerhed/geokode.json";
 const GEO = await laesJson(GEO_FIL, {});
 let opslag = 0;
 const KK_BOKS = "12.40,55.74,12.70,55.60"; // vest, nord, øst, syd
@@ -114,7 +116,7 @@ async function pdfTekst(url) {
 }
 
 async function byggesager() {
-  const BS_FIL = "data/byggesager.json";
+  const BS_FIL = "data/naerhed/byggesager.json";
   const db = await laesJson(BS_FIL, { pdfer: {}, sager: {} });
   const kk = await laesJson("data/kk.json", { sager: {} });
   const oversigter = [];
@@ -214,7 +216,7 @@ export function findStedINyhed(tekst, navne) {
 let NAVNE;
 const stedNavne = async () => (NAVNE ||= (await laesJson("avis/steder-kk.json", { navne: [] })).navne || []);
 async function nyheder() {
-  const NY_FIL = "data/nyheder-kk.json";
+  const NY_FIL = "data/naerhed/nyheder-kk.json";
   const db = await laesJson(NY_FIL, { artikler: {} });
   const navne = await stedNavne();
   const xml = await hent("https://www.tv2kosmopol.dk/rss");
