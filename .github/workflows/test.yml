@@ -1,6 +1,7 @@
 # Testpipelinen for sagsvagt.dk i fire trin: unittest → integrationstest → E2E-test → performancetest.
 # Et trin kører kun, når det forrige er grønt. Kører ved push til alle andre grene end main. På main kører den som
 # første job i "Opdater avisen" (opdater-avisen.yml), så robotten kun henter, bygger og uploader, når alle fire er grønne.
+# E2E og performance bygger siderne først (node avis/byg.mjs), så de måler den nyeste kode og ikke robottens sidste byg.
 # Lokalt: npm test (eller ét trin ad gangen: npm run test:unit, test:integration, test:e2e, test:perf).
 name: Test
 
@@ -64,12 +65,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      # Det byggede site uden rådata
+      # data/ skal med, fordi siderne bygges før testen
       - uses: actions/checkout@v4
         with:
           sparse-checkout: |
             /*
-            !/data/
             !/identitet/
           sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
@@ -77,6 +77,13 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      # Siderne bygges med den nyeste kode, så testen måler det, robotten uploader. De byggede sider i repoet er fra
+      # robottens sidste kørsel. Måles de, kan en rettelse i skabelonen ikke komme igennem, før robotten har bygget
+      # siderne om, og robotten kører først, når testene er grønne.
+      - name: Byg siderne
+        run: node avis/byg.mjs
+        env:
+          SITE_URL: https://sagsvagt.dk/
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - name: Gem rapport og spor
@@ -97,7 +104,6 @@ jobs:
         with:
           sparse-checkout: |
             /*
-            !/data/
             !/identitet/
           sparse-checkout-cone-mode: false
       - uses: actions/setup-node@v4
@@ -105,6 +111,10 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
+      - name: Byg siderne
+        run: node avis/byg.mjs
+        env:
+          SITE_URL: https://sagsvagt.dk/
       # Lighthouse bruger den Chrome, der følger med maskinen
       - run: npm run test:perf
       - name: Gem Lighthouse-rapporterne
