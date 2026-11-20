@@ -314,6 +314,7 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
 <link rel="icon" href="${rod}favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="${rod}apple-touch-icon.png">
 <link rel="manifest" href="${rod}site.webmanifest">
+<link rel="preload" href="${rod}assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${rod}assets/fonts/montserrat.css">
 <link rel="stylesheet" href="${rod}assets/avis.css">
 <link rel="stylesheet" href="${rod}assets/grafik.css">
