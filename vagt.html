@@ -823,9 +823,10 @@
     }).observe(msg, { attributes: true, attributeFilter: ["class"] });
   })();
   // bekraeft: serveren har sendt en mail med et link, der skal bruges, før mandagsmailen kommer (dobbelt opt-in)
-  const faerdig = (bekraeft) => {
+  // medKonto: man valgte en adgangskode, så linket i mailen logger en ind på Min avis (api/bekraeft.php)
+  const faerdig = (bekraeft, medKonto) => {
     const done = $(".done");
-    if (bekraeft) { done.querySelector("h3").textContent = "Tjek din mail."; done.querySelector(".done-tekst").textContent = "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
+    if (bekraeft) { done.querySelector("h3").textContent = "Tjek din mail."; done.querySelector(".done-tekst").textContent = medKonto ? "Vi har sendt dig en mail med et link. Tryk på det, så er du logget ind på Min avis og får mailen hver mandag kl. 07.00." : "Vi har sendt dig en mail med et link. Tryk på det for at bekræfte, at det er dig. Derefter får du mailen hver mandag kl. 07.00."; }
     card.classList.add("ok"); visHenvisning(form.email.value);
     side.scrollTop = 0; done.querySelector("h3").setAttribute("tabindex", "-1"); done.querySelector("h3").focus({ preventScroll: true }); };
   form.addEventListener("submit", async (e) => {
@@ -885,7 +886,7 @@
       const egen = await fetch("api/tilmeld.php", { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" }, body: JSON.stringify(data) });
       if ((egen.headers.get("content-type") || "").includes("application/json")) {
         const out = await egen.json().catch(() => ({}));
-        if (egen.ok) { faerdig(out.bekraeft); btn.disabled = false; btn.classList.remove("busy"); return; }
+        if (egen.ok) { faerdig(out.bekraeft, !!kode); btn.disabled = false; btn.classList.remove("busy"); return; }
         // Serveren kræver en adgangskode, selvom siden ikke kunne hente listen over åbne kommuner: vis feltet
         if (out.kraever_kode) { kontoFelt.hidden = false; form.adgangskode.focus(); }
         if (egen.status === 400 || egen.status === 429) { msg.className = "form-msg err"; msg.textContent = out.fejl || "Noget gik galt."; btn.disabled = false; btn.classList.remove("busy"); return; }

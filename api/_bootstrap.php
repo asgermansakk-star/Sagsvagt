@@ -231,7 +231,7 @@ function send_bekraeftelse(int $id, string $email, bool $konto = false, bool $me
     global $K;
     $link = $K['site_url'] . 'api/bekraeft.php?t=' . lav_token($id, 'bekraeft', 24 * 14);
     [$html, $tekst] = mail_skabelon($konto ? 'Velkommen til Sagsvagt' : 'Bekræft, at du vil have Sagsvagt',
-        ($konto ? "Bekræft din e-mail med knappen herunder. Så er din konto klar, og du kan logge ind på Min avis med din e-mail og den adgangskode, du valgte. Du får også én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
+        ($konto ? "Bekræft din e-mail med knappen herunder. Så er din konto klar, og du bliver logget ind på Min avis med det samme. Du får også én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
                 : "Tryk på knappen for at bekræfte, at det er dig, der har skrevet dig op. Derefter får du én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner. Er din kommune ikke åben endnu, giver vi besked, når den er klar.\n\n")
         . ($medlem ? "Når du bekræfter, bliver du også gratis medlem af foreningen Sæt Dagsordenen. Foreningen kan se dit navn, din alder, din e-mail og dine kommuner. Vil du melde dig ud, så skriv til kontakt@saetdagsordenen.dk.\n\n" : '')
         . "Har du ikke skrevet dig op, så gør ingenting. Så får du ingen mails fra os.",
