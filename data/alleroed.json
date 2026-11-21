@@ -335,6 +335,14 @@
    "dato": "2026-11-25",
    "punkter": 5,
    "parser": 3
+  },
+  "5f6e181d-90d7-4e8b-9e81-eaa6e8544d02": {
+   "lastmod": "2026-11-20",
+   "type": "referat",
+   "udvalg": "Allerød Byråd",
+   "dato": "2026-11-19",
+   "punkter": 6,
+   "parser": 3
   }
  },
  "sager": {
@@ -9395,15 +9403,15 @@
    "kommune": "Allerød",
    "udvalg": "Allerød Byråd",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.alleroed.dk/vis?id=692b11a2-7aec-4b28-a9b5-fa3a3afcb127",
-   "hentet": "2026-11-19T13:23:18.994Z",
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=5f6e181d-90d7-4e8b-9e81-eaa6e8544d02",
+   "hentet": "2026-11-20T23:18:25.678Z",
    "titel": "Bemærkninger til dagsordenen",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Afbud: Anders Glümer\n\nBemærkninger til dagsordenen"
+     "titel": "Beslutning",
+     "tekst": "Susanne Karlsson er indkaldt som suppleant for Anders Glümer. Leif Johanssen er\nindkaldt som suppleant for Lars Bacher."
     }
    ],
    "bilag": []
@@ -9413,15 +9421,19 @@
    "kommune": "Allerød",
    "udvalg": "Allerød Byråd",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.alleroed.dk/vis?id=692b11a2-7aec-4b28-a9b5-fa3a3afcb127",
-   "hentet": "2026-11-19T13:23:18.994Z",
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=5f6e181d-90d7-4e8b-9e81-eaa6e8544d02",
+   "hentet": "2026-11-20T23:18:25.678Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "-Ankestyrelsen har meddelt, at der ikke længere er anledning til at tilsynet rejser en sag om\nmanglende beskyttelse af de 4 boringsnære indvindingsområder (BNBO) i kommunen. Der er\nrettet op ved, at der er indgået frivillige aftale om de to BNBO ved Lynge Vandværk indgået\nmellem vandværket og lodsejer, samt at kommunen den 5. marts 2026 har meddelt forbud\nmod erhvervsmæssig brug af pesticider mv. til lodsejer af de to BNBO ved Kollerød Vandværk.\nByrådet behandlede udtalelsen til tilsynet den 30. april 2026.\nBrevet fra Ankestyrelsen er vedhæftet som bilag."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -9431,10 +9443,10 @@
    "kommune": "Allerød",
    "udvalg": "Allerød Byråd",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.alleroed.dk/vis?id=692b11a2-7aec-4b28-a9b5-fa3a3afcb127",
-   "hentet": "2026-11-19T13:23:18.994Z",
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=5f6e181d-90d7-4e8b-9e81-eaa6e8544d02",
+   "hentet": "2026-11-20T23:18:25.678Z",
    "titel": "Beslutning: Godkendelse af revideret tømningsregulativ",
    "afsnit": [
     {
@@ -9452,6 +9464,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Økonomiudvalget indstiller forslag til revideret tømningsregulativ godkendt i byrådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Byrådet godkendte forslag til revideret tømningsregulativ."
     }
    ],
    "bilag": []
@@ -9461,10 +9477,10 @@
    "kommune": "Allerød",
    "udvalg": "Allerød Byråd",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.alleroed.dk/vis?id=692b11a2-7aec-4b28-a9b5-fa3a3afcb127",
-   "hentet": "2026-11-19T13:23:18.994Z",
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=5f6e181d-90d7-4e8b-9e81-eaa6e8544d02",
+   "hentet": "2026-11-20T23:18:25.678Z",
    "titel": "Beslutning: Kvalitetsstandarder for voksne med særlige behov",
    "afsnit": [
     {
@@ -9482,6 +9498,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Økonomiudvalget indstiller forslaget godkendt i byrådet med den præcisering, at\ngældende kvalitetsstandard for aflastning og afløsning fastholdes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Byrådet godkendte forslaget med den præcisering, at gældende kvalitetsstandard for\naflastning og afløsning fastholdes."
     }
    ],
    "bilag": []
@@ -9491,10 +9511,10 @@
    "kommune": "Allerød",
    "udvalg": "Allerød Byråd",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.alleroed.dk/vis?id=692b11a2-7aec-4b28-a9b5-fa3a3afcb127",
-   "hentet": "2026-11-19T13:23:18.994Z",
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=5f6e181d-90d7-4e8b-9e81-eaa6e8544d02",
+   "hentet": "2026-11-20T23:18:25.678Z",
    "titel": "Beslutning: Indførelse af parkeringsregulering på offentlige vej- og parkeringsarealer",
    "afsnit": [
     {
@@ -9508,6 +9528,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 10. november 2026",
      "tekst": "Økonomiudvalget henviser til at sagen er begæret i byrådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Byrådet godkendte at:\nDer indgås en aftale med P- Nord om varetagelsen af parkeringskontrol efter\nfærdselsloven på kommunens offentlige veje og parkeringsarealer med virkning fra den\nDer gennemføres en informations-og kommunikationsindsats forud for ikrafttræden af\nparkeringskontrollen. Miljø-Erhverv- og Byudvalget har bestilt en sag om mulighederne\nfor tidsbegrænsning på de kommunale parkeringspladser i bymidten, med henblik på at\ntilgodese så mange brugere som muligt. Ordningen vil løbende evalueres i udvalget.\n\nImod stemte Eric Lerdrup Bourgois, Amanda Egerod Lund og René Nicklas Wendt, idet\n\nde havde følgende mindretalsudtalelse: ”Konservative stemmer imod, fordi vi mener, at vi\nbør afvente resultaterne af den aftalte parkeringsanalyse, før vi træffer beslutning om\nparkeringskontrol. Det er vigtigt, at vi får et samlet overblik over parkeringsbehovet i\nAllerød Bymidte, så vi kan finde de løsninger, der bedst tilgodeser både borgere,\nbutikker, kulturtilbud og øvrige brugere af bymidten.”"
     }
    ],
    "bilag": []
@@ -9517,15 +9541,19 @@
    "kommune": "Allerød",
    "udvalg": "Allerød Byråd",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.alleroed.dk/vis?id=692b11a2-7aec-4b28-a9b5-fa3a3afcb127",
-   "hentet": "2026-11-19T13:23:18.994Z",
+   "kilde": "https://dagsordener.alleroed.dk/vis?id=5f6e181d-90d7-4e8b-9e81-eaa6e8544d02",
+   "hentet": "2026-11-20T23:18:25.678Z",
    "titel": "Underskriftark: Godkendelse af beslutningsprotokol",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Beslutningsprotokollen føres under møderne, og det forudsættes, at beslutningerne afstemmes\nundervejs i mødet - det kan f.eks. ske ved oplæsning af det protokollerede.\nBeslutningsprotokollen godkendes og underskrives ved afslutning af mødet af de\ntilstedeværende byrådsmedlemmer. Det sker digitalt ved at anvende knappen \"godkendelse\"\nøverst til venstre i First Agenda."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Byrådet godkendte protokollen."
     }
    ],
    "bilag": []
@@ -10346,11 +10374,11 @@
  "sitemaps": {
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=b466e53c-f2e0-4723-ba7d-a10c92cf8a16": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=f8551f6e-9b7a-456c-82f6-8dd1319f8266": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=475a86e0-7179-4dfd-929d-65b3aac0ecb9": {
    "senest": "2025-09-27",
@@ -10374,27 +10402,27 @@
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=39609a9e-d29b-466f-8a44-00560823ab3e": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=64b2f9dc-39bc-4eb6-b6dc-215152b42c6a": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=8dfd5dad-a558-4e08-921e-75670b364740": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=29970e29-f121-4587-8d8b-94079d878847": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=c5b70471-2422-405b-8603-5137bde87cb5": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=a8ece604-48f3-44e3-9ec8-778544c60822": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=8be7d2f2-a232-45b0-98a0-98bed48ae16b": {
    "senest": "2017-12-04",
@@ -10410,11 +10438,11 @@
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=c395514c-b962-4507-a807-ecf966c3a5c0": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=f47575f3-d916-498e-a7ea-959d9ecc3b5c": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=9792382b-8a68-4ed9-84e7-801fb87b670e": {
    "senest": "2025-09-27",
@@ -10425,12 +10453,12 @@
    "tjekket": "2026-10-22"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=7c5d1dab-0414-4210-9b68-fb6770e0248b": {
-   "senest": "2026-11-16",
-   "tjekket": "2026-11-19"
+   "senest": "2026-11-20",
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=5bd2044a-7ea3-4ff9-82e2-acb2481be028": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-19"
+   "tjekket": "2026-11-20"
   },
   "https://dagsordener.alleroed.dk/Sitemap/ForCommittee?committeeId=2fb0e59f-081f-4458-8d71-98fc96d11fe9": {
    "senest": "2025-09-27",
@@ -10445,7 +10473,7 @@
    "tjekket": "2026-10-22"
   }
  },
- "opdateret": "2026-11-19T22:28:11.162Z",
+ "opdateret": "2026-11-20T23:18:25.681Z",
  "kommune": "Allerød",
  "parser": 3
 }
