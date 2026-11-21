@@ -15,13 +15,15 @@ if (!chromePath && !process.env.CI) {
   try { const p = require("@playwright/test").chromium.executablePath(); if (existsSync(p)) chromePath = p; } catch {}
 }
 
+// Medianen af de tre målinger for hvert tal for sig. "median-run" vælger én hel måling ud fra FCP og TTI, og når de er
+// ens i alle tre (som på forsiden 21/11-2026), kan den vælge den første, kolde måling (ydeevne 0,73 mod 0,95 og 0,95).
 const grænser = (cls) => ({
-  "categories:performance": ["error", { minScore: 0.8, aggregationMethod: "median-run" }],
-  "categories:accessibility": ["error", { minScore: 0.9, aggregationMethod: "median-run" }],
-  "categories:best-practices": ["error", { minScore: 0.9, aggregationMethod: "median-run" }],
-  "categories:seo": ["error", { minScore: 0.9, aggregationMethod: "median-run" }],
-  "largest-contentful-paint": ["error", { maxNumericValue: 5000, aggregationMethod: "median-run" }],
-  "cumulative-layout-shift": ["error", { maxNumericValue: cls, aggregationMethod: "median-run" }],
+  "categories:performance": ["error", { minScore: 0.8, aggregationMethod: "median" }],
+  "categories:accessibility": ["error", { minScore: 0.9, aggregationMethod: "median" }],
+  "categories:best-practices": ["error", { minScore: 0.9, aggregationMethod: "median" }],
+  "categories:seo": ["error", { minScore: 0.9, aggregationMethod: "median" }],
+  "largest-contentful-paint": ["error", { maxNumericValue: 5000, aggregationMethod: "median" }],
+  "cumulative-layout-shift": ["error", { maxNumericValue: cls, aggregationMethod: "median" }],
 });
 
 module.exports = {
