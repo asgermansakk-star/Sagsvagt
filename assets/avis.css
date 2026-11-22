@@ -612,6 +612,16 @@ footer.foot { background: var(--nat) url(nyt/korn.webp) center top / 720px auto 
 .paa-mail::before { background-image: url(nyt/skive-indigo.webp); }
 h1.hl, .listing > h1 { font-weight: 800; }
 
+/* Tophistoriens billede (avisens forsider og Min avis) er et revet stykke papir, der ligger på siden. Billedet ligger helt inde på
+   papiret, så kilden på kortene stadig kan læses; strimlen holder det fast. */
+.lead > :is(.lead-billede, .kort-billede) { position: relative; isolation: isolate; display: block; overflow: visible; aspect-ratio: auto; height: auto; margin: 4px 0 26px; border-radius: 0; background: none; transform: rotate(-.7deg); }
+.lead > :is(.lead-billede, .kort-billede) img { box-sizing: border-box; display: block; width: 100%; height: auto; aspect-ratio: auto; padding: 3.2% 3%; border-radius: 0; background: var(--kalk-lys) url(nyt/papir.webp) 0 0 / 640px repeat; }
+.lead > :is(.lead-billede, .kort-billede) img, .lead > :is(.lead-billede, .kort-billede)::before { -webkit-mask: url(nyt/riv-maske.webp) center / 111% 114% no-repeat; mask: url(nyt/riv-maske.webp) center / 111% 114% no-repeat; }
+.lead > :is(.lead-billede, .kort-billede)::before { content: ""; position: absolute; z-index: -1; inset: 0; transform: translate(2px, 6px); background: rgba(14,15,20,.3); }
+.lead > :is(.lead-billede, .kort-billede)::after { content: ""; position: absolute; right: 6%; top: -1.5%; width: 22%; aspect-ratio: 520 / 179; background: url(nyt/strimmel-vin.webp) center / 128% auto no-repeat; transform: rotate(5deg); pointer-events: none; }
+.lead .hl { font-weight: 800; }
+@media (forced-colors: active) { .lead > :is(.lead-billede, .kort-billede)::after { display: none; } }
+
 /* ---------- Sagssiden i papirdesignet (Asger 22/11-2026) ----------
    Kun stil, så de 34.000 sagssider ikke skal bygges og uploades igen. Gælder avisens sagssider (sag/), ikke sagsvinduet i Min avis.
    Øverst mørkt papir med overskriften og sagens billede revet ud, datoen på et stykke papir, så én revet kant ned til teksten;

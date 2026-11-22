@@ -89,3 +89,24 @@ test("tilmeldingen åbner som dialog fra forsidens knap", async ({ page }) => {
   // Første trin er fornavnet
   await expect(page.locator("#tilmeld #fornavn")).toBeVisible();
 });
+
+// Radaren lå 22/11-2026 oven på bundmenuen på telefonen. Testbrugeren er opdigtet, og kortet svarer ikke.
+test("radaren i Min avis ligger under bundmenuen på telefonen", async ({ page }, info) => {
+  test.skip(info.project.name !== "mobil", "bundmenuen findes kun på telefonen");
+  const profil = { navn: "Test", emner: ["trafik", "klima"], ord: [], bydel: "", gemte: [], velkommen: true, adresse: { tekst: "Testvej 1", lat: 55.63, lon: 12.579, bydel: "", radius: 2000 } };
+  await page.route("**/api/mig.php*", (r) => r.fulfill({ contentType: "application/json", body: JSON.stringify({ email: "test@example.com", profil, admin: false }) }));
+  await page.goto("/min/#sager");
+  const skaerm = page.locator(".radar-skaerm");
+  await expect(skaerm).toBeVisible();
+  // Rul, så midten af radaren er bag bundmenuen
+  await skaerm.evaluate((e) => scrollTo(0, e.getBoundingClientRect().top + scrollY + e.clientHeight / 2 - innerHeight + 40));
+  const daekket = await page.evaluate(() => {
+    const n = document.querySelector("#min-nav").getBoundingClientRect(), ramt = [];
+    for (let x = 6; x < n.width - 6; x += 12) for (let y = n.top + 4; y < Math.min(n.bottom, innerHeight) - 4; y += 12) {
+      const e = document.elementFromPoint(x, y);
+      if (!e?.closest("#min-nav")) ramt.push(e?.className?.baseVal ?? e?.className ?? "intet");
+    }
+    return ramt;
+  });
+  expect(daekket).toEqual([]);
+});
