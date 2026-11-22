@@ -654,9 +654,9 @@ body .kommune-tilmeld { background: var(--nat) url(nyt/korn.webp) center top / 7
 .vis-flere { background: var(--nat); color: var(--kalk); font-weight: 700; }
 .vis-flere:hover { background: var(--grafit); }
 /* De mørke bokse er revet papir */
-.paa-mail, .prisk.fremhaev, body .kommune-tilmeld { border-radius: 0; box-shadow: none; -webkit-mask: url(nyt/riv-maske.webp) center / 109% 113% no-repeat; mask: url(nyt/riv-maske.webp) center / 109% 113% no-repeat; }
+.paa-mail, .prisk.fremhaev, body .kommune-tilmeld { border-radius: 0; box-shadow: none; -webkit-mask: url(nyt/riv-maske.webp) center / 105% 105% no-repeat; mask: url(nyt/riv-maske.webp) center / 105% 105% no-repeat; }
 .prisk.fremhaev { padding: 40px 28px 36px; }
-@media (min-width: 721px) { .paa-mail { padding: 50px 7%; } }
+@media (min-width: 721px) { .paa-mail { padding: 54px 9%; } }
 /* Sagernes små billeder er revet ud */
 .gk-billede { filter: drop-shadow(0 1px 1px rgba(14,15,20,.35)); }
 .gk-billede img, .moede .gk-billede img { border-radius: 0; -webkit-mask: url(nyt/riv-maske.webp) center / 111% 114% no-repeat; mask: url(nyt/riv-maske.webp) center / 111% 114% no-repeat; }

@@ -100,12 +100,12 @@
   .produkt, .funk div, .udsnit { background: var(--kalk-lys) url(assets/nyt/papir.webp) 0 0 / 640px repeat; border: 0; border-radius: 22px 6px; box-shadow: 0 1px 2px rgba(14,15,20,.1), 0 18px 32px -22px rgba(14,15,20,.5); }
   .udsnit { box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 30px 60px -20px rgba(0,0,0,.85); transform: rotate(-.8deg); }
   .sig img, .produkt img { border-radius: 0; -webkit-mask: url(assets/nyt/riv-maske.webp) center / 111% 114% no-repeat; mask: url(assets/nyt/riv-maske.webp) center / 111% 114% no-repeat; }
-  .pilot { overflow: hidden; border-radius: 0; -webkit-mask: url(assets/nyt/riv-maske.webp) center / 108% 113% no-repeat; mask: url(assets/nyt/riv-maske.webp) center / 108% 113% no-repeat; }
+  .pilot { overflow: hidden; border-radius: 0; -webkit-mask: url(assets/nyt/riv-maske.webp) center / 105% 105% no-repeat; mask: url(assets/nyt/riv-maske.webp) center / 105% 105% no-repeat; }
   .pilot::before { content: ""; position: absolute; z-index: -1; right: -80px; top: -110px; width: 320px; aspect-ratio: 1; background: url(assets/nyt/skive-indigo.webp) center / contain no-repeat; pointer-events: none; }
   footer { position: relative; isolation: isolate; margin-top: 40px; }
   footer::before { content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: -56px; height: 62px; background: url(assets/nyt/kant-nat.webp) center top / 1440px 120px repeat-x; pointer-events: none; }
   /* Pilot */
-  .pilot { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: center; padding: 40px 44px; border-radius: 22px 6px; color: var(--kalk);
+  .pilot { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: center; padding: 60px 8%; color: var(--kalk);
     background: var(--nat) url(assets/nyt/korn.webp) center top / 720px auto repeat; }
   .pilot .kicker { color: var(--rosen); }
   .pilot h2 { color: var(--kalk); max-width: 20ch; }
@@ -171,7 +171,7 @@
     .tal b { font-size: 1.375rem; } .tal span { font-size: .75rem; } .tal div + div { padding-left: 12px; }
     .produkt { grid-template-columns: 1fr; padding: 20px; }
     .produkt img { width: 100%; aspect-ratio: 16 / 9; }
-    .pilot { padding: 28px 20px; }
+    .pilot { padding: 56px 30px 62px; }
     .loefter { grid-template-columns: 1fr; }
     .to { grid-template-columns: 1fr; }
     .funk { grid-template-columns: 1fr; }
