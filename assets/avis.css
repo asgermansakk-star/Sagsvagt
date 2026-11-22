@@ -611,3 +611,88 @@ footer.foot { background: var(--nat) url(nyt/korn.webp) center top / 720px auto 
 .paa-mail { background: var(--nat) url(nyt/korn.webp) center top / 720px auto repeat; }
 .paa-mail::before { background-image: url(nyt/skive-indigo.webp); }
 h1.hl, .listing > h1 { font-weight: 800; }
+
+/* ---------- Sagssiden i papirdesignet (Asger 22/11-2026) ----------
+   Kun stil, så de 34.000 sagssider ikke skal bygges og uploades igen. Gælder avisens sagssider (sag/), ikke sagsvinduet i Min avis.
+   Øverst mørkt papir med overskriften og sagens billede revet ud, datoen på et stykke papir, så én revet kant ned til teksten;
+   Sagens vej i højre side, og nederst flere sager på et nyt stykke papir. */
+body:has(> main > .wrap > .article) > .masthead::after { display: none; }
+body:has(> main > .wrap > .article) > main { padding-top: 0; overflow-x: clip; }
+main > .wrap > .article { display: block; padding: 0; }
+main > .wrap > .article > article > header { --billede: 56.2%; position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr); grid-template-rows: auto auto auto 1fr; column-gap: 48px;
+  color: var(--kalk); padding: 44px 0 64px; margin: 0 0 56px; border: 0; }
+main > .wrap > .article > article > header::before { content: ""; position: absolute; z-index: -2; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: var(--nat) url(nyt/korn.webp) center top / 720px auto repeat; }
+main > .wrap > .article > article > header::after { content: ""; position: absolute; z-index: -1; top: calc(100% - 6px); left: 50%; width: 100vw; height: 60px; transform: translateX(-50%) scaleY(-1); background: url(nyt/kant-nat.webp) center top / 1440px 120px repeat-x; pointer-events: none; }
+main > .wrap > .article > article > header > * { grid-column: 1; }
+/* Overrubrikken deles: udvalget står over overskriften, og datoen ligger som papirmærkat på billedet (kommaet imellem skjules) */
+main > .wrap > .article > article > header > .kicker { display: contents; font-size: 0; }
+main > .wrap > .article > article > header > .kicker > a { grid-column: 1; grid-row: 1; justify-self: start; font-size: var(--sekundaer); font-weight: 700; color: var(--lyng); margin-bottom: 12px; }
+main > .wrap > .article > article > header > .kicker > .status { grid-column: 2; grid-row: 1 / span 4; align-self: start; justify-self: end; z-index: 2; box-sizing: border-box; width: min(290px, 62%); aspect-ratio: 660 / 341; margin: calc(var(--billede) - 120px) -8px 0 0; padding: 0 12% 2%;
+  display: flex; align-items: center; justify-content: center; text-align: center; text-wrap: balance; transform: rotate(4deg); background: url(nyt/maerkat.webp) center / 100% 100% no-repeat; color: var(--nat); font-size: clamp(1rem, 1.5vw, 1.25rem); line-height: 1.15; font-weight: 800; letter-spacing: -.02em; }
+main > .wrap > .article > article > header > h1.hl { grid-row: 2; font-size: clamp(2rem, 1.35rem + 2.2vw, 2.75rem); line-height: 1.1; letter-spacing: -.025em; max-width: none; text-wrap: balance; overflow-wrap: anywhere; hyphenate-limit-chars: 15 6 6; -webkit-hyphenate-limit-before: 6; -webkit-hyphenate-limit-after: 6; }
+main > .wrap > .article > article > header > .emner { grid-row: 3; margin-top: 22px; }
+main > .wrap > .article > article > header > figure { grid-column: 2; grid-row: 1 / span 4; align-self: start; margin: 0; position: relative; }
+main > .wrap > .article > article > header > figure img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 674; object-fit: cover; border-radius: 0; transform: rotate(-2deg); background: none;
+  -webkit-mask: url(nyt/riv-maske.webp) center / 100% 100% no-repeat; mask: url(nyt/riv-maske.webp) center / 100% 100% no-repeat; }
+main > .wrap > .article > article > header > figure::before, main > .wrap > .article > article > header > figure::after { content: ""; position: absolute; z-index: -1; pointer-events: none; background: center / contain no-repeat; }
+main > .wrap > .article > article > header > figure::before { right: -56px; top: -44px; width: 46%; aspect-ratio: 1; background-image: url(nyt/skive-skifer.webp); }
+main > .wrap > .article > article > header > figure::after { left: -60px; bottom: 12%; width: 58%; aspect-ratio: 520 / 179; background-image: url(nyt/strimmel-vin.webp); transform: rotate(-8deg); }
+main > .wrap > .article > article > header > figure:has(figcaption)::after { bottom: 36%; }
+main > .wrap > .article > article > header figcaption { margin-top: 30px; max-width: 58%; font-size: var(--fodnote); color: var(--sten); }
+main > .wrap > .article > article > header figcaption a { color: inherit; }
+/* Kortet skal kunne ses helt med kilde, så det ligger på et revet stykke papir i stedet for selv at blive revet */
+main > .wrap > .article > article > header:has(> .stedkort) { --billede: 62%; }
+main > .wrap > .article > article > header > .stedkort img { box-sizing: border-box; aspect-ratio: auto; padding: 6.5% 5.5%; background: url(nyt/papir.webp) 0 0 / 640px repeat; }
+/* Har sagen et luftfoto, er det det, der rives ud; plankortet står under overskriften */
+main > .wrap > .article > article > header:has(> .luftfoto) { --billede: 65.6%; }
+main > .wrap > .article > article > header > .luftfoto img { aspect-ratio: 1000 / 656; }
+main > .wrap > .article > article > header:has(> .luftfoto) > figure:not(.luftfoto) { grid-column: 1; grid-row: 4; align-self: start; margin-top: 30px; max-width: 420px; }
+main > .wrap > .article > article > header:has(> .luftfoto) > figure:not(.luftfoto) figcaption { margin-top: 12px; max-width: none; }
+main > .wrap > .article > article > header:has(> .luftfoto) > figure:not(.luftfoto) img { aspect-ratio: auto; transform: none; -webkit-mask: none; mask: none; border-radius: var(--r-blad-lille); }
+main > .wrap > .article > article > header:has(> .luftfoto) > figure:not(.luftfoto)::before, main > .wrap > .article > article > header:has(> .luftfoto) > figure:not(.luftfoto)::after { display: none; }
+main > .wrap > .article > article > header > .forenklet { grid-column: 1 / -1; grid-row: 5; margin-top: 40px; color: var(--nat); }
+main > .wrap > .article > article > header > .forenklet summary { background: var(--kalk); color: var(--nat); }
+/* Teksten på lyst papir; Sagens vej i højre spalte */
+main > .wrap > .article > article > .body { max-width: none; padding-bottom: 72px; }
+main > .wrap > .article > article > .body > * { max-width: 44em; }
+main > .wrap > .article .kf { background: url(nyt/papir.webp) 0 0 / 640px repeat; box-shadow: 0 1px 2px rgba(14,15,20,.08), 0 18px 32px -26px rgba(14,15,20,.45); }
+main > .wrap > .article .kf.goer { box-shadow: inset 3px 0 0 var(--vin), 0 18px 32px -26px rgba(14,15,20,.45); }
+main > .wrap > .article .kf.hverdag { box-shadow: inset 3px 0 0 var(--indigo), 0 18px 32px -26px rgba(14,15,20,.45); }
+main > .wrap > .article .kf > h2, main > .wrap > .article .vej > h2 { font-size: var(--t2); font-weight: 800; letter-spacing: -.02em; }
+main > .wrap > .article .vej { background: none; padding: 0; border-radius: 0; }
+main > .wrap > .article .vej ol { display: block; }
+main > .wrap > .article .vej-trin { display: grid; grid-template-columns: 5.75rem minmax(0, 1fr); gap: 2px 12px; padding: 13px 0; border-bottom: 1px solid var(--rule); }
+main > .wrap > .article .vej-trin::before, main > .wrap > .article .vej-trin::after { display: none; }
+main > .wrap > .article .vej-dato { grid-row: 1 / span 2; font-weight: 700; }
+main > .wrap > .article .vej-hvor { margin: 0; overflow-wrap: anywhere; hyphens: auto; }
+main > .wrap > .article .vej-trin.her { padding: 14px 14px; margin: 8px 0 0; border: 0; border-radius: 14px 4px; background: var(--vin); }
+main > .wrap > .article .vej-trin.her.kommer { background: var(--indigo); }
+main > .wrap > .article .vej-trin.her, main > .wrap > .article .vej-trin.her * { color: var(--kalk-lys); }
+@media (min-width: 981px) {
+  main > .wrap > .article > article > .body:has(> .vej) { display: grid; grid-template-columns: minmax(0, 1fr) 340px; column-gap: 56px; align-items: start; grid-auto-flow: row; }
+  main > .wrap > .article > article > .body:has(> .vej) > * { grid-column: 1; width: 100%; }
+  main > .wrap > .article > article > .body > .vej { grid-column: 2; grid-row: 1 / span 14; }
+}
+/* Flere sager på et nyt stykke papir */
+main > .wrap > .article > .side { position: relative; isolation: isolate; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 310px), 1fr)); gap: 20px; padding: 56px 0 72px; }
+main > .wrap > .article > .side::before { content: ""; position: absolute; z-index: -2; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: var(--kalk-lys) url(nyt/papir.webp) 0 0 / 640px repeat; }
+main > .wrap > .article > .side::after { content: ""; position: absolute; z-index: -1; top: -44px; left: 50%; width: 100vw; height: 120px; transform: translateX(-50%); background: url(nyt/kant-kalk.webp) center top / 1440px 120px repeat-x; pointer-events: none;
+  -webkit-mask-image: linear-gradient(#000 40%, transparent); mask-image: linear-gradient(#000 40%, transparent); }
+main > .wrap > .article > .side > .rubrik { display: block; grid-column: 1 / -1; border: 0; padding: 0; margin: 12px 0 4px; font: 800 clamp(1.5rem, 1.2rem + 1vw, 1.875rem)/1.15 var(--sans); letter-spacing: -.02em; text-transform: none; color: var(--nat); }
+main > .wrap > .article > .side > .rubrik::before { content: "LÆS OGSÅ"; display: flex; align-items: center; justify-content: center; width: 150px; height: 46px; margin: 0 0 8px -8px; background: url(nyt/label-vin.webp) center / 100% 100% no-repeat; color: var(--kalk-lys); font: 700 .75rem/1 var(--sans); letter-spacing: .14em; }
+@supports (content: "x" / "") { main > .wrap > .article > .side > .rubrik::before { content: "LÆS OGSÅ" / ""; } }
+main > .wrap > .article > .side > .mini { display: flex; flex-direction: column; gap: 8px; padding: 22px; border: 1px solid rgba(14,15,20,.12); border-radius: var(--r-blad); background: rgba(230,223,211,.7); position: relative; }
+main > .wrap > .article > .side > .mini .hl { font-size: 1.1875rem; line-height: 1.25; font-weight: 800; }
+main > .wrap > .article > .side > .mini .hl a::after { content: ""; position: absolute; inset: 0; }
+main > .wrap > .article > .side > .paa-mail { grid-column: 1 / -1; order: 9; margin: 20px 0 0; }
+@media (max-width: 980px) {
+  main > .wrap > .article > article > header { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; padding: 12px 0 56px; margin-bottom: 48px; }
+  main > .wrap > .article > article > header > .kicker > .status { grid-column: 1; grid-row: 4; width: min(230px, 58%); margin: calc(var(--billede) - 62px) -4px 0 0; font-size: 1rem; }
+  main > .wrap > .article > article > header > figure { grid-column: 1; grid-row: 4; margin: 34px 6px 0; }
+  main > .wrap > .article > article > header > .kicker > a { margin-bottom: 6px; }
+  main > .wrap > .article > article > header:has(> .luftfoto) > figure:not(.luftfoto) { grid-row: 5; max-width: none; margin: 28px 0 0; }
+  main > .wrap > .article > article > header > .forenklet { grid-row: 6; min-width: 0; }
+  main > .wrap > .article > article > header figcaption { margin-top: 46px; max-width: none; }
+  main > .wrap > .article > article > header > figure::before { right: -40px; top: -30px; }
+  main > .wrap > .article > article > header > figure::after { left: -40px; }
+}

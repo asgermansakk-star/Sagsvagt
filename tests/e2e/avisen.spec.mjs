@@ -42,6 +42,17 @@ test("avisen viser sager, og en sag kan åbnes", async ({ page }) => {
   await expect(page.locator("footer")).toContainText("Sagsvagt bygger på kommunernes offentlige dagsordener");
 });
 
+test("sagssiden på papir: overskrift, billede, datomærkat og flere sager, uden at flyde ud over skærmen", async ({ page }) => {
+  await page.goto("/index.html");
+  await page.locator('main a[href^="sag/"]').first().click();
+  const hoved = page.locator("main > .wrap > .article > article > header");
+  await expect(hoved.locator("h1")).toBeVisible();
+  await expect(hoved.locator("figure img").first()).toBeVisible();
+  await expect(hoved.locator(".status")).toBeVisible();
+  await expect(page.locator(".side .mini").first()).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(1);
+});
+
 test("en anden kommunes side har sine egne sager", async ({ page }) => {
   await page.goto("/kommune/aarhus.html");
   await expect(page).toHaveTitle(/Aarhus/);

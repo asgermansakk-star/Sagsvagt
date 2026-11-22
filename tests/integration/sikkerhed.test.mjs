@@ -8,10 +8,12 @@ import { cpSync, mkdtempSync, readFileSync, writeFileSync, readdirSync, existsSy
 import { deflateSync, crc32 } from "node:zlib";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { createServer } from "node:net";
 import { fotoSideIndhold } from "../../avis/grafik.mjs";
 
 const ROD = join(import.meta.dirname, "..", "..");
-const PORT = 4411;
+// En ledig port, så testen ikke rammer en anden server på maskinen
+const PORT = await new Promise((ok) => { const s = createServer().listen(0, "127.0.0.1", () => { const { port } = s.address(); s.close(() => ok(port)); }); });
 const API = `http://127.0.0.1:${PORT}/api/`;
 const SITE = mkdtempSync(join(tmpdir(), "sagsvagt-sik-"));
 let php;
