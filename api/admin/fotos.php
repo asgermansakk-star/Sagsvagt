@@ -4,6 +4,7 @@
 // assets/laeserfotos/index.json (fotograf og tekst); avisen bygges på GitHub og kan ikke se serverens _fotos/.
 declare(strict_types=1);
 require __DIR__ . '/../_bootstrap.php';
+require __DIR__ . '/../_foto.php';
 
 $d = kraev_post();
 kraev_admin();
@@ -20,6 +21,9 @@ if ($h === 'vis' || $h === 'status') {
     $sti = __DIR__ . '/../_fotos/' . basename($f['fil']);
     if (!is_file($sti)) fejl(404, 'Filen mangler');
     $type = (new finfo(FILEINFO_MIME_TYPE))->file($sti);
-    svar(200, ['data' => "data:$type;base64," . base64_encode(file_get_contents($sti)), 'fil' => $f['fil']]);
+    // Billeder fra før 22/11-2026 blev gemt, som de kom; de renses, når de hentes, så sted og tid ikke følger med ud på siden
+    $data = (string)file_get_contents($sti);
+    if (isset(FOTO_TYPER[$type])) $data = foto_rens($data, $type) ?? fejl(500, 'Billedet kunne ikke renses for sted og tid.');
+    svar(200, ['data' => "data:$type;base64," . base64_encode($data), 'fil' => $f['fil']]);
 }
 svar(200, ['fotos' => $db->query('SELECT id, navn, email, sag, sted, tekst, fil, status, oprettet FROM fotos ORDER BY oprettet DESC LIMIT 300')->fetchAll()]);

@@ -228,12 +228,13 @@ jobs:
       # færdig, så en kørsel, der rammer tidsgrænsen, ikke starter forfra næste gang. De ~21.500 sagssider og de lige
       # så mange sags-json'er tager ellers over 5 timer, når alle sider ændres på én gang (nyt layout, 25/10-2026).
       # Bidderne er udeladt fra hovedtrinnet (der heller ikke sletter dem på serveren, fordi exclude også gælder dér).
+      # Værktøjet er låst til den præcise commit bag v4.4.0, så en ændret udgave ikke kan læse FTP-koden.
       # Simply svarer af og til "421 Service temporarily unavailable". Hver bid får derfor et nyt forsøg efter 2 minutter.
       - name: Upload til Simply (FTPS)
         id: upload0
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -259,7 +260,7 @@ jobs:
         id: upload0b
         if: steps.upload0.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -281,7 +282,7 @@ jobs:
         id: upload1
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -303,7 +304,7 @@ jobs:
         id: upload1b
         if: steps.upload1.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -321,7 +322,7 @@ jobs:
         id: upload2
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -343,7 +344,7 @@ jobs:
         id: upload2b
         if: steps.upload2.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -361,7 +362,7 @@ jobs:
         id: upload3
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -383,7 +384,7 @@ jobs:
         id: upload3b
         if: steps.upload3.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -401,7 +402,7 @@ jobs:
         id: upload4
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -423,7 +424,7 @@ jobs:
         id: upload4b
         if: steps.upload4.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -441,7 +442,7 @@ jobs:
         id: upload5
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -463,7 +464,7 @@ jobs:
         id: upload5b
         if: steps.upload5.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -481,7 +482,7 @@ jobs:
         id: upload6
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -503,7 +504,7 @@ jobs:
         id: upload6b
         if: steps.upload6.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -521,7 +522,7 @@ jobs:
         id: upload7
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -543,7 +544,7 @@ jobs:
         id: upload7b
         if: steps.upload7.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -561,7 +562,7 @@ jobs:
         id: upload8
         if: env.FTP_SERVER != ''
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
@@ -583,7 +584,7 @@ jobs:
         id: upload8b
         if: steps.upload8.outcome == 'failure'
         continue-on-error: true
-        uses: SamKirkland/FTP-Deploy-Action@v4.4.0
+        uses: SamKirkland/FTP-Deploy-Action@110f9186c050f71550953127052e77650219c287 # v4.4.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}

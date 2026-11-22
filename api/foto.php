@@ -1,9 +1,11 @@
 <?php
 // Læserfotos: en læser sender et foto fra et sted i en sag. Billedet gemmes i _fotos/ (lukket for omverdenen),
-// registreres i databasen og meldes til redaktionen. Intet vises på siden, før redaktionen har godkendt det og lagt det
+// registreres i databasen og meldes til redaktionen. Sted, tid og andre skjulte oplysninger fjernes, før det gemmes
+// (api/_foto.php). Intet vises på siden, før redaktionen har godkendt det og lagt det
 // i assets/laeserfotos/ (se min/admin.html). Fotografen giver Sagsvagt ret til at bruge billedet med kreditering.
 declare(strict_types=1);
 require __DIR__ . '/_bootstrap.php';
+require __DIR__ . '/_foto.php';
 
 // Upload er multipart, så kraev_post() (JSON) passer ikke; samme beskyttelse: POST, egen header og egen origin
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') fejl(405, 'Kun POST');
@@ -27,14 +29,15 @@ $f = $_FILES['foto'] ?? null;
 if (!$f || ($f['error'] ?? 1) !== UPLOAD_ERR_OK) fejl(400, 'Vælg et billede (højst 10 MB).');
 if ($f['size'] > 10 * 1024 * 1024) fejl(400, 'Billedet er for stort (højst 10 MB).');
 $type = (new finfo(FILEINFO_MIME_TYPE))->file($f['tmp_name']);
-$EXT = ['image/jpeg' => 'jpg', 'image/png' => 'png', 'image/webp' => 'webp', 'image/heic' => 'heic', 'image/heif' => 'heic'];
-if (!isset($EXT[$type])) fejl(400, 'Billedet skal være JPEG, PNG, WEBP eller HEIC.');
+if (!isset(FOTO_TYPER[$type])) fejl(400, 'Billedet skal være JPEG, PNG eller WebP.');
+$rent = foto_rens((string)file_get_contents($f['tmp_name']), $type);
+if ($rent === null) fejl(400, 'Billedet kunne ikke læses. Prøv at gemme det som JPEG.');
 
 $mappe = __DIR__ . '/_fotos';
 if (!is_dir($mappe)) mkdir($mappe, 0700, true);
 if (!is_file("$mappe/.htaccess")) file_put_contents("$mappe/.htaccess", "Require all denied\n");
-$fil = gmdate('Ymd-His') . '-' . bin2hex(random_bytes(6)) . '.' . $EXT[$type];
-if (!move_uploaded_file($f['tmp_name'], "$mappe/$fil")) fejl(500, 'Billedet kunne ikke gemmes. Prøv igen senere.');
+$fil = gmdate('Ymd-His') . '-' . bin2hex(random_bytes(6)) . '.' . FOTO_TYPER[$type];
+if (!is_uploaded_file($f['tmp_name']) || file_put_contents("$mappe/$fil", $rent) !== strlen($rent)) fejl(500, 'Billedet kunne ikke gemmes. Prøv igen senere.');
 
 $db = db();
 $db->prepare('INSERT INTO fotos (navn, email, sag, sted, tekst, fil, oprettet) VALUES (?, ?, ?, ?, ?, ?, ?)')

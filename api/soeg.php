@@ -7,6 +7,7 @@
 // n er antallet af sager i indekset; passer det ikke med sager.json, er de fra hver sin kørsel, og svaret skal ikke bruges.
 declare(strict_types=1);
 require __DIR__ . '/_ord.php';
+require __DIR__ . '/_loft.php';
 
 function ud(int $kode, array $data): never {
     http_response_code($kode);
@@ -16,6 +17,9 @@ function ud(int $kode, array $data): never {
     echo json_encode($data, JSON_UNESCAPED_UNICODE);
     exit;
 }
+
+// Højst 600 opslag på 10 minutter. Søgesiden nøjes med overskrift og resumé, når svaret ikke er 200.
+if (!loft_ok('soeg', 600, 600, $_SERVER['REMOTE_ADDR'] ?? '')) { header('Retry-After: 600'); ud(429, ['fejl' => 'For mange søgninger. Vent lidt, og prøv igen.']); }
 
 $k = (string)($_GET['k'] ?? '');
 if (!ord_fil($k)) ud(404, ['fejl' => 'Ukendt kommune']);

@@ -4,6 +4,7 @@
 // Robotter (søgemaskiner, forhåndsvisninger) tælles ikke.
 declare(strict_types=1);
 require __DIR__ . '/_bootstrap.php';
+require __DIR__ . '/_loft.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); exit; }
 $ua = (string)($_SERVER['HTTP_USER_AGENT'] ?? '');
@@ -23,6 +24,9 @@ if ($rod === '' || !is_file($fil) || !str_ends_with($fil, '.html')) { http_respo
 $kilde = mb_strtolower(preg_replace('/[^a-z0-9.\-_]/i', '', (string)($d['k'] ?? '')));
 $kilde = $kilde === '' ? 'direkte' : mb_substr(preg_replace('/^www\./', '', $kilde), 0, 60);
 
+// Højst 600 besøg i minuttet på hele siden, så nogen ikke kan lægge databasen ned. Alle deler tælleren, fordi IP-adressen
+// ikke må indgå i besøgstallene (privatliv.html)
+if (!loft_ok('besoeg', 600, 60)) { http_response_code(204); exit; }
 $db = db();
 $db->exec('CREATE TABLE IF NOT EXISTS besoeg (dato VARCHAR(10) NOT NULL, sti VARCHAR(200) NOT NULL, kilde VARCHAR(60) NOT NULL, antal INT NOT NULL DEFAULT 0, PRIMARY KEY (dato, sti, kilde))');
 $dato = (new DateTime('now', new DateTimeZone('Europe/Copenhagen')))->format('Y-m-d');

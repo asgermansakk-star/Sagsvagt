@@ -11,6 +11,9 @@ avis/erhverv-fakta-koe.json
 # Interne noter, kunderapporter og salgslister må aldrig i det offentlige repo
 /plan/
 
+# Tællerne i api/_loft.php (laves på serveren)
+/api/_loft/
+
 # Testresultater (npm test: Playwright-spor og Lighthouse-rapporter)
 /test-resultater/
 /.lighthouseci/
