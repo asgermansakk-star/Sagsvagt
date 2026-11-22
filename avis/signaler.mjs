@@ -147,7 +147,6 @@ function rapportHtml({ titel, undertitel, segment, kommuner, alle, eksempel }) {
   const typer = TYPER[segment];
   const antal = (f) => alle.filter(f).length;
   const kommende = alle.filter((g) => g.s.st === "kommer").sort((a, b) => a.s.dato.localeCompare(b.s.dato));
-  const natkort = `${SITE}assets/natkort/${kommuner[0].slug}.jpg`;
   const sektioner = typer.map((t) => {
     const l = alle.filter((g) => g.type.id === t.id).sort((a, b) => RAEKKE.indexOf(a.stadie.id) - RAEKKE.indexOf(b.stadie.id) || b.s.dato.localeCompare(a.s.dato));
     return l.length ? `<section class="type" id="${t.id}"><div class="type-h"><h2>${esc(t.navn)} <span>${l.length}</span></h2><p>${esc(t.om)}</p></div>${l.map(signalKort).join("\n")}</section>` : "";
