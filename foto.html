@@ -36,7 +36,7 @@
     <h1 class="hl">Send et billede til Sagsvagt</h1>
     <form id="foto-form" class="foto-form" novalidate>
       <input type="hidden" name="sag" id="f-sag">
-      <div class="felt"><label for="f-foto">Billede (JPEG, PNG eller HEIC, højst 10 MB)</label><input id="f-foto" name="foto" type="file" accept="image/*" required></div>
+      <div class="felt"><label for="f-foto">Billede (JPEG, PNG eller WebP, højst 10 MB)</label><input id="f-foto" name="foto" type="file" accept="image/jpeg,image/png,image/webp" required></div>
       <div class="felt"><label for="f-sted">Hvor er billedet taget?</label><input id="f-sted" name="sted" type="text" maxlength="120" placeholder="fx hjørnet af Enghavevej og Vasbygade"></div>
       <div class="felt"><label for="f-tekst">Fortæl kort, hvad vi ser (valgfrit)</label><textarea id="f-tekst" name="tekst" rows="3" maxlength="1000"></textarea></div>
       <div class="felt"><label for="f-navn">Dit navn (står under billedet)</label><input id="f-navn" name="navn" type="text" maxlength="80" autocomplete="name" required></div>
