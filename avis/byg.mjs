@@ -252,7 +252,17 @@ const tabBjaelke = (rod, aktiv, k) => {
 const SIDER_MED_FAELLES = true;
 const FAELLES = process.env.FAELLES ? process.env.FAELLES !== "0" : SIDER_MED_FAELLES;
 const delteHoveder = new Map();
-const avishoved = (rod, aktiv, kommune) => `${LOGO_SYMBOL}
+// Riv op (21/11-2026): loadingskærmen, første gang i en session. Det lille script skjuler den med det samme,
+// hvis den er vist før i sessionen; assets/riv.js river den op (styling i assets/riv.css).
+const rivPapir = (rod) => {
+  const img = `<img src="${rod}assets/sagsvagt-vandret-kalk.svg" alt="" width="330" height="103">`;
+  return `<link rel="stylesheet" href="${rod}assets/riv.css">
+<script>try{sessionStorage.getItem("sv-riv")&&document.documentElement.classList.add("riv-set")}catch(e){}</script>
+<div class="riv" id="riv" aria-hidden="true"><div class="riv-h riv-hel">${img}</div><div class="riv-del riv-v"><div class="riv-h">${img}</div></div><div class="riv-del riv-h2"><div class="riv-h">${img}</div></div></div>
+<script src="${rod}assets/riv.js" defer></script>
+`;
+};
+const avishoved = (rod, aktiv, kommune) => `${rivPapir(rod)}${LOGO_SYMBOL}
 <!-- Avishovedet i to etager som Berlingske: logo, kommune, knap og login øverst, de få sektioner centreret nedenunder -->
 <header class="masthead to">
   <div class="wrap mh-top">

@@ -1,0 +1,19 @@
+/* Riv op (Asger 21/11-2026): papiret med logoet rives over fra toppen og ned (assets/riv.js).
+   Loadingskærmen første gang i en session og efter tilmeldingen. Egen fil, så både avisens sider, Min avis og
+   vagt.html (som ikke bruger avis.css) kan hente den. Papiret tager ikke imod tryk, og skulle scriptet ikke køre,
+   skjuler animationen riv-noedstop det efter 8 sekunder, så siden aldrig bliver låst. */
+.riv { position: fixed; inset: 0; z-index: 2147483000; pointer-events: none; overflow: hidden; animation: riv-noedstop 0s linear 8s forwards; }
+@keyframes riv-noedstop { to { visibility: hidden; } }
+.riv-set #riv { display: none; }
+.riv-h { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: #0E0F14 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .87 0 0 0 0 .83 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.riv-h img { width: min(58vw, 330px); height: auto; display: block; }
+.riv-hel { z-index: 2; }
+.riv-del { position: absolute; inset: 0; will-change: transform; transform-origin: 50% 108%; transition: transform .9s cubic-bezier(.6,.02,.22,1), opacity .35s ease .65s; }
+.riv.rives .riv-del, .riv.aaben .riv-del { filter: drop-shadow(0 0 16px rgba(0,0,0,.75)); }
+.riv.aaben .riv-hel { display: none; }
+.riv.aaben .riv-v { transform: translateX(-75vw) translateY(6vh) rotate(-24deg); opacity: 0; }
+.riv.aaben .riv-h2 { transform: translateX(75vw) translateY(6vh) rotate(24deg); opacity: 0; }
+.riv-bid { position: absolute; left: 0; top: 0; width: var(--s); height: calc(var(--s) * .72); background: var(--f); clip-path: var(--k); opacity: 0; will-change: transform, opacity; z-index: 3; }
+.riv.riv-ud { transition: opacity .35s; opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .riv-bid { display: none; } }
