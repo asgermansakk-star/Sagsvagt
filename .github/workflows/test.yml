@@ -24,13 +24,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      # Kun koden; de byggede sider og data er ikke nødvendige her
+      # Kun koden; de byggede sider og data er ikke nødvendige her. Forsidens test (tests/unit/forside.test.mjs) ser efter,
+      # at billederne fra avis/forside.json ligger i assets/nyt/, og at vagt.html henter delene.
       - uses: actions/checkout@v4
         with:
           sparse-checkout: |
             /avis/
             /api/
+            /assets/nyt/
             /tests/
+            /vagt.html
             /package.json
             /package-lock.json
           sparse-checkout-cone-mode: false
