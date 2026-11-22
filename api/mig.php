@@ -11,6 +11,8 @@ svar(200, [
     'email' => $b['email'],
     'profil' => $b['profil'] ? json_decode($b['profil'], true) : null,
     'tilmelding' => ['kommuner' => $b['kommuner'], 'emner' => $b['emner'], 'rolle' => $b['rolle']],
+    // Hvad læseren får på mail (api/samtykke.php). Uden svar (skrevet op før 22/11-2026): kun mandagsmailen
+    'mails' => mails_af($b),
     'admin' => er_admin($b),
     // Plus og Pro (priser.html): læserens pakke, og om bestilling er åben
     'pakke' => pakke_af($b),

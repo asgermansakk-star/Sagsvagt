@@ -131,6 +131,9 @@
   }
   .panel label { display: block; font-size: .8125rem; font-weight: 700; margin-bottom: 6px; }
   .panel input, .panel select { width: 100%; font: inherit; font-size: .9375rem; padding: 10px 12px; border: 1.5px solid var(--felt-kant); border-radius: 8px; background: var(--kalk); color: var(--nat); }
+  .panel .p-mails { grid-column: 1 / -1; }
+  .panel .p-mails label { display: flex; align-items: center; min-height: 44px; margin: 0; font-weight: 500; font-size: .9375rem; cursor: pointer; }
+  .panel .p-mails input { width: 22px; height: 22px; padding: 0; margin: 0; }
   .panel .hint { font-size: .78rem; color: var(--muted); margin: 6px 0 0; }
   .panel .slut { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: .8125rem; color: var(--muted); }
   .panel .slut button { font: 600 .8125rem var(--sans); background: none; border: 0; color: var(--vin); cursor: pointer; padding: 0; }
@@ -871,6 +874,12 @@
             <input id="p-ord" placeholder="fx Lersøparken, Valby Langgade">
             <p class="hint">Adskil med komma. Vi finder sager, hvor ordene står, også inde i sagsteksten.</p>
           </div>
+          <fieldset class="ikoner p-mails">
+            <legend>Dine mails</legend>
+            <label class="bekraeft"><input type="checkbox" id="p-mandag"><span>Sagsvagt må sende mig mandagsmailen</span></label>
+            <label class="bekraeft"><input type="checkbox" id="p-andre"><span>Sagsvagt må sende mig andre informationer på mail om nye funktioner, Plus, Pro og arrangementer</span></label>
+            <p class="hint" id="p-mails-svar" role="status" aria-live="polite"></p>
+          </fieldset>
           <div class="slut"><span id="p-gemmes">Dine valg gemmes på din konto, så de følger dig mellem computer og telefon.</span><span class="knapper-h"><button type="button" id="p-nulstil">Nulstil</button><button type="button" id="p-slet" hidden>Slet min konto</button><button type="button" id="p-gem" class="p-gem">Gem</button></span></div>
         </form>
       </section>
@@ -2136,6 +2145,15 @@
 
   /* ---------- Slet konto ----------
      Kun med rigtigt login. Redaktionens egen konto kan ikke slettes herfra. */
+  // Dine mails: to valg hver for sig, gemt med det samme (api/samtykke.php). Går det galt, står valget, som det var før.
+  const pMails = [$("#p-mandag"), $("#p-andre")], visMails = (m) => { pMails[0].checked = !!m?.mandag; pMails[1].checked = !!m?.andre; };
+  visMails(server.mails);
+  pMails.forEach((i) => i.addEventListener("change", async () => {
+    const svar = $("#p-mails-svar"); svar.textContent = "Gemmer …"; pMails.forEach((x) => (x.disabled = true));
+    try { server.mails = (await api("samtykke.php", { mandag: pMails[0].checked, andre: pMails[1].checked })).mails; svar.textContent = "Gemt."; }
+    catch { svar.textContent = "Det blev ikke gemt. Prøv igen om lidt."; }
+    visMails(server.mails); pMails.forEach((x) => (x.disabled = false)); i.focus();
+  }));
   $("#p-slet").hidden = !!server.admin;
   $("#p-slet").addEventListener("click", () => { $("#slet-msg").textContent = ""; $("#slet-kode").value = ""; $("#slet").showModal(); $("#slet-kode").focus(); });
   $("#slet").addEventListener("click", (e) => { if (e.target === $("#slet")) $("#slet").close(); });

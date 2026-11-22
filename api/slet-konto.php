@@ -15,10 +15,11 @@ if (er_admin($b)) fejl(400, 'Redaktionens konto kan ikke slettes her.');
 $db = db();
 $db->prepare('DELETE FROM tokens WHERE abonnent_id = ?')->execute([$b['id']]);
 try { $db->prepare('DELETE FROM push_abonnementer WHERE abonnent_id = ?')->execute([$b['id']]); } catch (PDOException $e) {} // findes kun, når push er brugt
+$db->prepare('DELETE FROM samtykker WHERE abonnent_id = ?')->execute([$b['id']]);
 $db->prepare("UPDATE feedback SET abonnent_id = NULL, email = '' WHERE abonnent_id = ?")->execute([$b['id']]);
 // Er man også medlem af Sæt Dagsordenen, slettes kun Sagsvagt-delen: medlemskab, navn, alder, kommuner og adgangskode bliver
 $erMedlem = !empty($b['medlem']);
-if ($erMedlem) $db->prepare("UPDATE abonnenter SET status = 'medlem', profil = NULL, emner = '' WHERE id = ?")->execute([$b['id']]);
+if ($erMedlem) $db->prepare("UPDATE abonnenter SET status = 'medlem', profil = NULL, emner = '', samtykke = NULL WHERE id = ?")->execute([$b['id']]);
 else $db->prepare('DELETE FROM abonnenter WHERE id = ?')->execute([$b['id']]);
 
 // Log ud

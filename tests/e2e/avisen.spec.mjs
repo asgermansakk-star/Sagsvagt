@@ -110,3 +110,41 @@ test("radaren i Min avis ligger under bundmenuen på telefonen", async ({ page }
   });
   expect(daekket).toEqual([]);
 });
+
+// Samtykket til mails (22/11-2026): ét valgfrit flueben, der aldrig er sat på forhånd, og ingen kobling til Sæt Dagsordenen
+for (const ja of [true, false]) test(`tilmeldingen sender samtykket, når fluebenet ${ja ? "er sat" : "ikke er sat"}`, async ({ page }) => {
+  let sendt;
+  await page.route("**/api/tilmeld.php", (r) => { sendt = r.request().postDataJSON(); return r.fulfill({ contentType: "application/json", body: JSON.stringify({ ok: true, bekraeft: true }) }); });
+  await page.goto("/#tilmeld");
+  const form = page.locator("#tilmeld #form"), knap = form.locator(".send"), naeste = () => knap.click();
+  await form.locator("#fornavn").fill("Test"); await form.locator("#efternavn").fill("Testesen"); await naeste();
+  await expect(form.locator("#email")).toBeFocused(); await form.locator("#email").fill("test@example.test"); await naeste();
+  await expect(form.locator("#kommuner")).toBeFocused(); await form.locator("#kommuner").fill("København"); await naeste();
+  await expect(form.locator("#emner")).toBeFocused(); await naeste();
+  await expect(form.locator("#rolle")).toBeFocused(); await naeste();
+  await expect(form.locator("#adgangskode")).toBeFocused(); await form.locator("#adgangskode").fill("en-lang-testkode"); await naeste();
+  const felt = form.locator("#samtykke");
+  await expect(felt).toBeFocused(); await expect(felt).not.toBeChecked();
+  await expect(form).not.toContainText("Sæt Dagsordenen");
+  expect(await form.locator(".flueben").evaluate((e) => e.scrollHeight - e.clientHeight)).toBeLessThanOrEqual(1);
+  if (ja) await felt.check();
+  await expect(knap).toHaveText("Skriv mig op"); await knap.click();
+  await expect(page.locator(".done h3")).toHaveText("Tjek din mail.");
+  expect(sendt.samtykke).toBe(ja); expect(sendt.medlem).toBeUndefined();
+  await expect(page.locator(".done-tekst")).toContainText(ja ? "hver mandag" : "ikke sagt ja til mandagsmailen");
+});
+
+test("mails slås til og fra under Tilpas i Min avis", async ({ page }) => {
+  const kald = [];
+  const profil = { navn: "Test", emner: ["trafik"], ord: [], bydel: "", gemte: [], velkommen: true };
+  await page.route("**/api/mig.php*", (r) => r.fulfill({ contentType: "application/json", body: JSON.stringify({ email: "test@example.test", profil, admin: false, mails: { mandag: true, andre: false } }) }));
+  await page.route("**/api/samtykke.php", (r) => { const d = r.request().postDataJSON(); kald.push(d); return kald.length > 1 ? r.fulfill({ status: 500, contentType: "application/json", body: "{}" }) : r.fulfill({ contentType: "application/json", body: JSON.stringify({ mails: d }) }); });
+  await page.goto("/min/");
+  await page.locator("#tilpas").click();
+  const mandag = page.locator("#p-mandag"), andre = page.locator("#p-andre"), svar = page.locator("#p-mails-svar");
+  await expect(mandag).toBeChecked(); await expect(andre).not.toBeChecked();
+  await andre.check(); await expect(svar).toHaveText("Gemt.");
+  expect(kald[0]).toEqual({ mandag: true, andre: true });
+  // Svarer serveren ikke, står valget, som det var
+  await mandag.click(); await expect(svar).toContainText("ikke gemt"); await expect(mandag).toBeChecked();
+});

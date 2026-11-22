@@ -19,21 +19,19 @@ $kommuner = $felt('kommuner', 500); $rolle = $felt('rolle', 100); $kilde = $felt
 if (count(array_filter(array_map('trim', preg_split('/,|\/|\s+og\s+/iu', $kommuner)))) > 1) fejl(400, 'Du kan følge én kommune gratis. Vil du følge flere, så skriv til mansa@sagsvagt.dk.');
 $emner = $felt('emner', 2000); $valgte = $felt('valgte_emner', 1000);
 $alleEmner = trim(implode(', ', array_filter([$valgte, $emner])), ', ');
-// Fluebenet "vil også være medlem af Sæt Dagsordenen": navn og alder 16-30 (foreningens vedtægter § 3)
-$medlem = filter_var($d['medlem'] ?? false, FILTER_VALIDATE_BOOLEAN);
+// Fluebenet "Ja tak, Sagsvagt må sende mig mandagsmailen og andre informationer": valgfrit, for man må ikke skulle sige ja til
+// reklame for at få en konto. Sender siden ikke feltet (en gammel side i browseren), sagde man kun ja til mandagsmailen.
+$samtykke = array_key_exists('samtykke', $d) ? (filter_var($d['samtykke'], FILTER_VALIDATE_BOOLEAN) ? 'ja' : 'nej') : null;
 // Fornavn og efternavn står i hver sin boks; navn er dem samlet (ældre sider sender kun navn). Fornavnet bliver Min avis' og mandagsmailens hilsen.
 $fornavn = $felt('fornavn', 40); $efternavn = $felt('efternavn', 60);
 $navn = mb_substr(trim("$fornavn $efternavn"), 0, 100) ?: $felt('navn', 100);
 if ($fornavn === '' && $navn !== '') $fornavn = mb_substr(explode(' ', $navn)[0], 0, 40);
 $profil = $fornavn !== '' ? json_encode(['navn' => $fornavn], JSON_UNESCAPED_UNICODE) : null;
-$alder = filter_var($d['alder'] ?? '', FILTER_VALIDATE_INT, ['options' => ['min_range' => 16, 'max_range' => 30]]);
-if ($medlem && $navn === '') fejl(400, 'Skriv dit navn for at blive medlem af Sæt Dagsordenen.');
-if ($medlem && $alder === false) fejl(400, 'Man skal være mellem 16 og 30 år for at blive medlem af Sæt Dagsordenen.');
 // Højst tre mails om dagen til samme adresse, så formularen ikke kan bruges til at fylde en andens indbakke
 begraens('tilmeld-mail:' . $email, 3, 86400);
 
 $db = db();
-$q = $db->prepare('SELECT id, status, medlem, bekraeftet, mail_afmeldt FROM abonnenter WHERE email = ?'); $q->execute([$email]);
+$q = $db->prepare('SELECT id, status, bekraeftet, mail_afmeldt FROM abonnenter WHERE email = ?'); $q->execute([$email]);
 $fandtes = $q->fetch();
 
 // Adgangskode ved tilmelding: påkrævet, når mindst én af kommunerne er åben, så ingen ender med en tilmelding uden konto.
@@ -53,7 +51,6 @@ if ($kode !== '') {
 }
 // Ny på Sagsvagt: ingen række, eller en række, der indtil nu kun var foreningsmedlem
 $ny = !$fandtes || $fandtes['status'] === 'medlem';
-$nytMedlem = $medlem && empty($fandtes['medlem']);
 // En bekræftet, aktiv tilmelding røres ikke
 $laast = $fandtes && $fandtes['bekraeftet'] !== null && $fandtes['mail_afmeldt'] === null && !in_array($fandtes['status'], ['afmeldt', 'medlem'], true);
 if ($laast) {
@@ -72,31 +69,24 @@ if ($laast) {
     $db->prepare('INSERT INTO abonnenter (email, kommuner, emner, rolle, kilde, oprettet, navn, profil) VALUES (?, ?, ?, ?, ?, ?, ?, ?)')
        ->execute([$email, $kommuner, $alleEmner, $rolle, $kilde, nu(), $navn ?: null, $profil]);
 }
-if ($nytMedlem) {
-    // Medlemskabet af Sæt Dagsordenen venter, til linket i mailen er brugt (bekraeft.php), så ingen kan melde en anden ind
-    $db->prepare('UPDATE abonnenter SET medlem_venter = COALESCE(medlem_venter, ?), navn = ?, alder = ? WHERE email = ? AND medlem IS NULL')->execute([nu(), $navn, $alder, $email]);
-}
+$q = $db->prepare('SELECT id, bekraeftet FROM abonnenter WHERE email = ?'); $q->execute([$email]);
+$raekke = $q->fetch();
+// Samtykket gælder først, når linket i mailen er brugt, for ellers kan enhver sige ja på en andens vegne
+if (!$laast) gem_samtykke($db, (int)$raekke['id'], $samtykke ?? 'mandag', $samtykke === null ? 'gammel side' : 'tilmelding');
 
 // Besked til redaktionen og mail til den tilmeldte. Fejler mailen, er tilmeldingen stadig gemt.
 if (!$laast) {
     $linjer = ($navn !== '' ? "Navn: $navn\n" : '') . "E-mail: $email\nKommuner: $kommuner\nEmner: $alleEmner\nJeg er: $rolle\nKilde: $kilde\n"
-            . ($medlem ? "Vil være medlem af Sæt Dagsordenen: $alder år\n" : '') . ($ny ? '' : "(Var skrevet op før og har opdateret sine valg.)\n") . "E-mailen er ikke bekræftet endnu.\n";
+            . 'Må få mandagsmailen og andre informationer: ' . ($samtykke ?? 'kun mandagsmailen') . "\n" . ($ny ? '' : "(Var skrevet op før og har opdateret sine valg.)\n") . "E-mailen er ikke bekræftet endnu.\n";
     @send_mail(TILMELDINGER_TIL, ($ny ? 'Ny tilmelding' : 'Opdateret tilmelding') . " til Sagsvagt: $email",
         '<pre style="font:14px/1.5 Arial,sans-serif">' . htmlspecialchars($linjer, ENT_QUOTES, 'UTF-8') . '</pre>', $linjer, $email); // "Besvar" går til den tilmeldte
 }
-if ($nytMedlem) {
-    $tekstF = "Ny tilmelding via sagsvagt.dk (bliver medlem, når e-mailen er bekræftet)\n\nNavn: $navn\nAlder: $alder\nE-mail: $email\nKommuner: $kommuner\n";
-    @send_mail('kontakt@saetdagsordenen.dk', "Ny tilmelding til Sæt Dagsordenen: $navn",
-        '<pre style="font:14px/1.5 Arial,sans-serif">' . htmlspecialchars($tekstF, ENT_QUOTES, 'UTF-8') . '</pre>', $tekstF, $email);
-}
-$q = $db->prepare('SELECT id, bekraeftet FROM abonnenter WHERE email = ?'); $q->execute([$email]);
-$raekke = $q->fetch();
-if ($raekke['bekraeftet'] === null || $nytMedlem) {
-    // Ny, tilbage efter afmelding eller vil være medlem: mail med bekræftelseslinket (og velkomst til en ny konto)
-    @send_bekraeftelse((int)$raekke['id'], $email, $konto, $nytMedlem);
+if ($raekke['bekraeftet'] === null) {
+    // Ny eller tilbage efter afmelding: mail med bekræftelseslinket (og velkomst til en ny konto)
+    @send_bekraeftelse((int)$raekke['id'], $email, $konto);
 } else {
     [$html, $tekst] = mail_skabelon('Du er allerede skrevet op',
-        "Nogen (sikkert dig selv) har skrevet $email op til Sagsvagt igen. Du er allerede skrevet op, så intet er ændret.\n\nVil du ændre dine kommuner eller emner, så log ind på Min avis, eller svar på denne mail.",
+        "Nogen (sikkert dig selv) har skrevet $email op til Sagsvagt igen. Du er allerede skrevet op, så intet er ændret.\n\nVil du ændre dine kommuner, emner eller mails, så log ind på Min avis, eller svar på denne mail.",
         'Gå til Min avis', $K['site_url'] . 'min/', "Du får denne mail, fordi $email er skrevet op til Sagsvagt.");
     @send_mail($email, 'Du er allerede skrevet op til Sagsvagt', $html, $tekst);
 }

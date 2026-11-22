@@ -6,7 +6,7 @@
 declare(strict_types=1);
 
 // Kun dem, der stadig er skrevet op, har bekræftet adressen, ikke har afmeldt mailen, og hvis adresse ikke fejler
-const MM_KAN = "status IN ('tilmeldt', 'inviteret', 'aktiv') AND mail_fejl IS NULL AND bekraeftet IS NOT NULL AND mail_afmeldt IS NULL";
+const MM_KAN = "status IN ('tilmeldt', 'inviteret', 'aktiv') AND mail_fejl IS NULL AND bekraeftet IS NOT NULL AND mail_afmeldt IS NULL AND (samtykke IS NULL OR samtykke IN ('ja', 'mandag'))";
 
 function mm_tabeller(PDO $db): void {
     $db->exec('CREATE TABLE IF NOT EXISTS mandagsmail_sendt (abonnent_id INT NOT NULL, uge VARCHAR(10) NOT NULL, sendt VARCHAR(25) NOT NULL, PRIMARY KEY (abonnent_id, uge))');

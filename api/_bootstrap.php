@@ -81,9 +81,9 @@ function db(): PDO {
         inviteret VARCHAR(25) NULL, adgangskode VARCHAR(255) NULL, profil $tekst NULL, sidst_inde VARCHAR(25) NULL)");
     // mail_fejl: hvornår redaktionen markerede, at mails til adressen kommer retur (kolonnen kom til senere)
     try { $pdo->query('SELECT mail_fejl FROM abonnenter LIMIT 1'); } catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN mail_fejl VARCHAR(25) NULL'); }
-    // Fælles persontabel med foreningen Sæt Dagsordenen: medlem = hvornår man blev medlem (NULL = ikke medlem).
-    // Rækker, der kun er medlemmer, har status 'medlem', så mandagsmail, invitationer, push og login springer dem over.
-    // medlem_venter: har bedt om at blive medlem, men har ikke bekræftet e-mailen endnu (medlem sættes, når linket bruges)
+    // Foreningen Sæt Dagsordenen: Sagsvagt optager ikke medlemmer (fjernet 22/11-2026), men dem, der blev det før, står her endnu.
+    // medlem = hvornår man blev medlem (NULL = ikke medlem). Rækker, der kun er medlemmer, har status 'medlem', så mandagsmail,
+    // invitationer, push og login springer dem over. medlem_venter: bad om det før 22/11-2026 og har ikke brugt linket endnu.
     foreach (['medlem' => 'VARCHAR(25) NULL', 'navn' => 'VARCHAR(100) NULL', 'alder' => 'INT NULL', 'medlem_venter' => 'VARCHAR(25) NULL'] as $kol => $type) {
         try { $pdo->query("SELECT $kol FROM abonnenter LIMIT 1"); } catch (PDOException $e) { $pdo->exec("ALTER TABLE abonnenter ADD COLUMN $kol $type"); }
     }
@@ -92,6 +92,11 @@ function db(): PDO {
     try { $pdo->query('SELECT bekraeftet FROM abonnenter LIMIT 1'); }
     catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN bekraeftet VARCHAR(25) NULL'); $pdo->exec('UPDATE abonnenter SET bekraeftet = oprettet'); }
     try { $pdo->query('SELECT mail_afmeldt FROM abonnenter LIMIT 1'); } catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN mail_afmeldt VARCHAR(25) NULL'); }
+    // samtykke: hvad man har sagt ja til på mail. 'ja' = mandagsmailen og andre informationer (fluebenet i tilmeldingen),
+    // 'mandag' eller 'andre' = kun det ene (Min avis), 'nej' = ingen af dem. NULL = skrevet op før 22/11-2026, hvor man kun sagde
+    // ja til mandagsmailen. Hvert svar gemmes også i samtykker med tid og tekstens udgave, så det kan dokumenteres.
+    try { $pdo->query('SELECT samtykke FROM abonnenter LIMIT 1'); } catch (PDOException $e) { $pdo->exec('ALTER TABLE abonnenter ADD COLUMN samtykke VARCHAR(10) NULL'); }
+    $pdo->exec("CREATE TABLE IF NOT EXISTS samtykker (id $id, abonnent_id INT NOT NULL, svar VARCHAR(10) NOT NULL, tekst VARCHAR(20) NOT NULL, sted VARCHAR(20) NOT NULL, tid VARCHAR(25) NOT NULL)");
     $pdo->exec('CREATE TABLE IF NOT EXISTS indstillinger (noegle VARCHAR(50) NOT NULL PRIMARY KEY, vaerdi VARCHAR(255) NOT NULL)');
     $pdo->exec("CREATE TABLE IF NOT EXISTS tokens (
         id $id, abonnent_id INT NOT NULL, type VARCHAR(10) NOT NULL, hash CHAR(64) NOT NULL UNIQUE, udloeber VARCHAR(25) NOT NULL, brugt VARCHAR(25) NULL)");
@@ -226,16 +231,39 @@ function knap_form(string $tekst): string {
          . htmlspecialchars($tekst, ENT_QUOTES, 'UTF-8') . '</button></form>';
 }
 
+// ---------- Samtykke til mails ----------
+// Udgaven af teksten ved fluebenet i tilmeldingen (vagt.html) og i Min avis (min/index.html). Ændres teksten, skal udgaven også.
+// "Ja tak, Sagsvagt må sende mig mandagsmailen og andre informationer på mail om nye funktioner, Plus, Pro og arrangementer.
+//  Jeg kan sige nej igen når som helst."
+const SAMTYKKE_TEKST = '2026-11-22';
+// Hvem må få andre informationer end mandagsmailen (bruges af den, der engang sender dem). Afmeldt i en mail = heller ikke dem.
+const ANDRE_KAN = "status IN ('tilmeldt', 'inviteret', 'aktiv') AND mail_fejl IS NULL AND bekraeftet IS NOT NULL AND mail_afmeldt IS NULL AND samtykke IN ('ja', 'andre')";
+function gem_samtykke(PDO $db, int $id, string $svar, string $sted): void {
+    $db->prepare('UPDATE abonnenter SET samtykke = ? WHERE id = ?')->execute([$svar, $id]);
+    $db->prepare('INSERT INTO samtykker (abonnent_id, svar, tekst, sted, tid) VALUES (?, ?, ?, ?, ?)')->execute([$id, $svar, SAMTYKKE_TEKST, $sted, nu()]);
+}
+// Hvad læseren får på mail, til Min avis
+function mails_af(array $b): array {
+    $til = empty($b['mail_afmeldt']);
+    return ['mandag' => $til && in_array($b['samtykke'], [null, 'ja', 'mandag'], true), 'andre' => $til && in_array($b['samtykke'], ['ja', 'andre'], true)];
+}
+
 // Dobbelt opt-in: mail med et link, der bekræfter adressen (api/bekraeft.php). $konto: tilmeldt med adgangskode.
-function send_bekraeftelse(int $id, string $email, bool $konto = false, bool $medlem = false): bool {
+function send_bekraeftelse(int $id, string $email, bool $konto = false): bool {
     global $K;
+    $q = db()->prepare('SELECT samtykke FROM abonnenter WHERE id = ?'); $q->execute([$id]);
+    $samtykke = $q->fetchColumn();
+    $mandag = !in_array($samtykke, ['nej', 'andre'], true);
     $link = $K['site_url'] . 'api/bekraeft.php?t=' . lav_token($id, 'bekraeft', 24 * 14);
     [$html, $tekst] = mail_skabelon($konto ? 'Velkommen til Sagsvagt' : 'Bekræft, at du vil have Sagsvagt',
-        ($konto ? "Bekræft din e-mail med knappen herunder. Så er din konto klar, og du bliver logget ind på Min avis med det samme. Du får også én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.\n\n"
-                : "Tryk på knappen for at bekræfte, at det er dig, der har skrevet dig op. Derefter får du én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner. Er din kommune ikke åben endnu, giver vi besked, når den er klar.\n\n")
-        . ($medlem ? "Når du bekræfter, bliver du også gratis medlem af foreningen Sæt Dagsordenen. Foreningen kan se dit navn, din alder, din e-mail og dine kommuner. Vil du melde dig ud, så skriv til kontakt@saetdagsordenen.dk.\n\n" : '')
+        ($konto ? "Bekræft din e-mail med knappen herunder. Så er din konto klar, og du bliver logget ind på Min avis med det samme."
+                : "Tryk på knappen for at bekræfte, at det er dig, der har skrevet dig op.")
+        . ($mandag ? ($konto ? ' Du får også' : ' Derefter får du') . ' én mail hver mandag kl. 7 med de sager fra byråd, udvalg og lokaludvalg, der handler om dine emner.'
+                   : ' Du har ikke sagt ja til mandagsmailen.' . ($konto ? ' Den kan du slå til under Tilpas i Min avis.' : ''))
+        . ($konto ? '' : ' Er din kommune ikke åben endnu, giver vi besked, når den er klar.') . "\n\n"
+        . ($samtykke === 'ja' ? "Du har sagt ja til, at Sagsvagt må sende dig mandagsmailen og andre informationer på mail om nye funktioner, Plus, Pro og arrangementer. Du kan sige nej igen når som helst i Min avis, via afmeldingslinket i mailen eller ved at svare på en mail fra os.\n\n" : '')
         . "Har du ikke skrevet dig op, så gør ingenting. Så får du ingen mails fra os.",
-        $konto ? 'Bekræft min e-mail' : 'Ja, send mig mandagsmailen', $link,
+        $konto || !$mandag ? 'Bekræft min e-mail' : 'Ja, send mig mandagsmailen', $link,
         "Du får denne mail, fordi $email er skrevet op til Sagsvagt. Linket virker i 14 dage.");
     return send_mail($email, $konto ? 'Din konto på Sagsvagt' : 'Bekræft din tilmelding til Sagsvagt', $html, $tekst);
 }
