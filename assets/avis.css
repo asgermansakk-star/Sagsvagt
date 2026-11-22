@@ -51,7 +51,7 @@
 * { box-sizing: border-box; }
 /* Mørk baggrund bag siden: telefonens statuslinje (klokken) og træk ud over kanten får samme farve som sidehovedet */
 html { -webkit-text-size-adjust: 100%; scroll-padding-top: 16px; background: var(--nat); }
-body { margin: 0; background: var(--kalk); color: var(--nat); font: 400 var(--broed)/1.55 var(--sans); -webkit-font-smoothing: antialiased;
+body { margin: 0; background: linear-gradient(rgba(230,223,211,.5), rgba(230,223,211,.5)), var(--kalk) url(nyt/papir-m.webp) 0 0 / 640px repeat; color: var(--nat); font: 400 var(--broed)/1.55 var(--sans); -webkit-font-smoothing: antialiased;
   min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
 body > main { flex: 1 0 auto; }
 a { color: inherit; text-decoration-color: rgba(14,15,20,.3); text-underline-offset: 3px; }
@@ -600,3 +600,14 @@ footer.foot a:hover { text-decoration: underline; }
   .paa-mail::before { width: 230px; height: 230px; right: -60px; top: -110px; }
 }
 @media (forced-colors: active) { .paa-mail::before { display: none; } }
+
+/* ---------- Papirdesignet (Asger 22/11-2026) ----------
+   Avisens sider ligger på samme papir som forsiden: mørkt papir i hoved og bund med én revet kant ned mod siden. */
+.masthead { background: var(--nat) url(nyt/korn.webp) center top / 720px auto repeat; }
+.masthead:not(.min-hoved) { position: relative; z-index: 30; } /* Min avis har sin egen bundmenu og sit natkort i hovedet */
+.masthead:not(.min-hoved)::after { content: ""; position: absolute; left: 0; right: 0; top: calc(100% - 6px); height: 60px; background: url(nyt/kant-nat.webp) center top / 1440px 120px repeat-x; transform: scaleY(-1); z-index: -1; pointer-events: none; }
+body:has(> .masthead:not(.min-hoved)) > main { padding-top: 22px; }
+footer.foot { background: var(--nat) url(nyt/korn.webp) center top / 720px auto repeat; }
+.paa-mail { background: var(--nat) url(nyt/korn.webp) center top / 720px auto repeat; }
+.paa-mail::before { background-image: url(nyt/skive-indigo.webp); }
+h1.hl, .listing > h1 { font-weight: 800; }

@@ -1,0 +1,117 @@
+/* Papirdesignet (collage, Asger 21/11-2026): forsiden vagt.html og tilmeldingen. Hentes efter stilene i vagt.html. Papirerne ligger i nyt/. */
+:root{--nat:#0E0F14;--kalk:#E6DFD3;--kalk-lys:#EEE8DE;--rosen:#DCA9A5;--lyng:#B7BBD8;--vin:#8A2430;--rubin:#B04A50;--indigo:#28377A;--muted:#56535A;--sten:#8D8A86;--ease:cubic-bezier(.23,1,.32,1);--sh:0 1px 2px rgba(14,15,20,.12),0 8px 16px -8px rgba(14,15,20,.25),0 26px 44px -26px rgba(14,15,20,.55)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;background:var(--nat)}
+body{margin:0;font:500 1.0625rem/1.5 "Montserrat",system-ui,sans-serif;color:var(--kalk);background:var(--nat);overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit}h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.025em;font-weight:800;text-wrap:balance;hyphens:manual}p{margin:0;text-wrap:pretty}
+:focus-visible{outline:3px solid var(--lyng);outline-offset:3px;border-radius:4px}
+.spring{position:absolute;left:16px;top:-64px;z-index:60;padding:10px 16px;background:var(--kalk);color:var(--nat);font-weight:700;border-radius:8px}.spring:focus{top:12px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 48px}
+.korn{background:var(--nat) url(nyt/korn.webp) center top/720px auto repeat}
+.papir{background:var(--kalk-lys) url(nyt/papir.webp) 0 0/640px repeat;color:var(--nat);position:relative;display:flow-root}
+.papir-m{background:var(--kalk) url(nyt/papir-m.webp) 0 0/640px repeat;color:var(--nat);position:relative;display:flow-root}
+.kant{display:block;width:100%;height:120px;object-fit:cover;object-position:top center;margin-top:-76px;pointer-events:none;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+@media (min-width:1440px){.kant{object-fit:fill}}
+.knap{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:15px 24px;border-radius:8px;border:0;font-family:inherit;font-weight:700;font-size:1.0625rem;line-height:1.15;text-decoration:none;cursor:pointer;background:var(--kalk);color:var(--nat);transition:transform .15s var(--ease),background-color .2s}
+.knap:active{transform:scale(.97)}.knap:hover{background:var(--kalk-lys)}
+.knap.linje{background:transparent;color:var(--kalk);box-shadow:inset 0 0 0 1.5px rgba(230,223,211,.32)}.knap.linje:hover{background:rgba(230,223,211,.08)}
+.knap.moerk{background:var(--nat);color:var(--kalk)}.knap.moerk:hover{background:#2A2B33}
+/* Sidehoved */
+.top{border-bottom:1px solid rgba(230,223,211,.1)}
+.top .wrap{display:flex;align-items:center;gap:28px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}
+.top .logo{line-height:0;display:flex;align-items:center;min-height:44px}.top .logo img{height:36px;width:auto}
+.top nav{display:flex;gap:26px;flex:1 1 auto;flex-wrap:wrap;font-weight:600}
+.top nav a{text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.top nav a[aria-current]{box-shadow:inset 0 -2px 0 var(--rubin)}
+.top .hand{display:flex;gap:10px;align-items:center}.top .hand .knap{min-height:44px;padding:10px 16px;font-size:.9375rem}
+/* Toppen */
+.hero{position:relative;overflow:hidden;padding:26px 0 140px}
+.ord{font-weight:800;font-size:clamp(6.5rem,15.5vw,14.5rem);line-height:.88;letter-spacing:-.058em;white-space:nowrap;padding-left:max(34px,calc((100vw - 1440px)/2 + 34px));color:var(--kalk)}
+.hero-gitter{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center;padding-top:36px}
+.hero h1{font-size:clamp(2.25rem,4.2vw,3.75rem);max-width:12em}
+.hero .venstre{display:flex;flex-direction:column;gap:30px}
+.handlinger{display:flex;gap:12px;flex-wrap:wrap}
+.find{display:flex;flex-direction:column;gap:10px;max-width:31rem;padding-top:24px;border-top:1px solid rgba(230,223,211,.14)}
+.find label{font-size:.9375rem;font-weight:700;color:var(--lyng)}.find div{display:flex;gap:10px}
+.find input{flex:1;min-width:0;min-height:50px;font-family:inherit;font-weight:500;font-size:1rem;padding:13px 16px;border:0;border-radius:12px;background:var(--kalk-lys);color:var(--nat)}
+.find .knap{min-height:50px;padding:13px 20px}.find .fk-fejl{color:var(--rosen);font-weight:600;min-height:1.5em}
+.collage{margin:0;position:relative;padding:34px 8px 0}
+.collage .del{position:absolute;pointer-events:none;height:auto}.collage .foto{position:relative;display:block;width:100%;height:auto;transform:rotate(-2.5deg)}
+.maerkat{position:absolute;right:0;bottom:30px;width:min(330px,58%);transform:rotate(4deg)}.maerkat img{display:block;width:100%;height:auto}.kaempe,.ord{user-select:none}
+.maerkat a{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 12%;color:var(--nat);text-decoration:none;font-weight:800;font-size:clamp(1.05rem,1.9vw,1.6rem);line-height:1.1;letter-spacing:-.02em}
+.collage figcaption{position:relative;margin-top:46px;font-size:.8125rem;font-weight:600;color:var(--sten)}
+.maerke{position:relative;align-self:flex-start;display:block;width:190px;margin-left:-12px}
+.maerke img{display:block;width:100%;height:auto}.maerke b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:.8125rem;letter-spacing:.14em;color:var(--kalk-lys)}
+.papirafsnit{padding-bottom:84px;display:flex;flex-direction:column;gap:26px}
+.papirafsnit .hoved{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.papirafsnit h2{font-size:clamp(1.75rem,3.2vw,2.5rem)}.papirafsnit .laes{color:var(--vin);font-weight:700;text-decoration:none;padding:10px 0}
+/* Strimlen, der kan rulles og toner ud */
+.strimmel-ydre{border-radius:16px 4px;overflow:hidden;box-shadow:var(--sh)}
+.strimmel{overflow-x:auto;scroll-snap-type:x proximity}.strimmel>div{display:flex;width:max-content}.strimmel img{display:block;width:min(320px,82vw);height:auto;aspect-ratio:4/5;scroll-snap-align:start}
+@property --kv{syntax:"<length>";inherits:false;initial-value:0px}@property --kh{syntax:"<length>";inherits:false;initial-value:0px}
+@keyframes rulkant{0%{--kv:0px;--kh:24px}12%{--kv:24px}88%{--kh:24px}100%{--kv:24px;--kh:0px}}
+@supports (animation-timeline:scroll()){.strimmel{-webkit-mask-image:linear-gradient(to right,transparent,#000 var(--kv),#000 calc(100% - var(--kh)),transparent);mask-image:linear-gradient(to right,transparent,#000 var(--kv),#000 calc(100% - var(--kh)),transparent);animation:rulkant linear both;animation-timeline:scroll(self inline)}}
+/* Sagerne */
+.kort-gitter{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:22px}
+.sagkort{display:flex;flex-direction:column;gap:14px;padding:26px;border:1px solid rgba(14,15,20,.1);border-radius:22px 6px;background:url(nyt/papir.webp) 0 0/640px repeat;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.sagkort:hover{transform:translateY(-3px) rotate(-.3deg);box-shadow:0 1px 2px rgba(14,15,20,.1),0 6px 12px -6px rgba(14,15,20,.18),0 18px 32px -20px rgba(14,15,20,.4)}
+.sagkort .linje1{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.emne{font-size:.8125rem;font-weight:700;padding:5px 10px;border-radius:8px;background:#CDD0E6;color:#0C1430}.emne.r{background:#EBCFCB;color:#3E0E14}
+.sagkort time{font-size:.8125rem;font-weight:600;color:var(--muted)}.sagkort h3{font-size:1.375rem;line-height:1.22;letter-spacing:-.01em}.sagkort h3 a{color:var(--nat);text-decoration:none}.sagkort h3 a::after{content:"";position:absolute;inset:0}.sagkort{position:relative}
+.sagkort p{margin:auto 0 0;font-size:.875rem;font-weight:600;color:var(--muted)}
+/* Tilmeldingen */
+.tilmeld{position:relative;display:flow-root;overflow-x:clip}
+.tilmeld .del{position:absolute;pointer-events:none;height:auto}.tilmeld .indre{position:relative;display:flex;flex-direction:column;align-items:center;gap:26px;text-align:center;padding:36px 48px 120px}
+.kaempe{font-weight:800;font-size:clamp(4rem,12vw,11rem);line-height:.88;letter-spacing:-.058em;color:var(--rosen)}
+.tilmeld h2{font-size:clamp(1.75rem,3.4vw,2.75rem);max-width:17em}
+footer{border-top:1px solid rgba(230,223,211,.1)}
+/* Dele, der skifter med sagerne (avis/forside.mjs) */
+.riv-foto{object-fit:cover;aspect-ratio:1000/656;-webkit-mask:url(nyt/riv-maske.webp) center/100% 100% no-repeat;mask:url(nyt/riv-maske.webp) center/100% 100% no-repeat}
+.collage .d1{right:-70px;top:-40px;width:52%}.collage .d2{left:-90px;bottom:54px;width:68%;transform:rotate(-8deg)}.collage .d3{left:-70px;top:-30px;width:36%}
+.kant.vend{transform:scaleX(-1)}.maerke.bred{width:240px}.rubrikker{display:flex;flex-direction:column;gap:8px;min-width:0}
+.papirafsnit h2 a{color:inherit;text-decoration:none}.papirafsnit h2 a:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:5px}
+.papirafsnit.sidste{padding-bottom:140px}.papirafsnit>.knap{align-self:center}
+.dagens-billede{display:block;max-width:820px}.dagens-billede img{display:block;width:100%;height:auto}
+.hvornaar{font-weight:700;color:var(--muted)}
+.knap.stor{padding:19px 34px}
+/* Filmen af avisen ligger bag tilmeldingen, mørk og under papiret */
+.tilmeld{isolation:isolate}.tilmeld .kant{position:relative;z-index:1}
+.tilmeld .hero-film{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.5}
+.tilmeld::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(14,15,20,.96) 8%,rgba(14,15,20,.72) 38%,rgba(14,15,20,.78))}
+.tilmeld .t1{left:-60px;top:150px;width:min(380px,60vw);transform:rotate(14deg)}.tilmeld .t2{right:-150px;top:40px;width:min(380px,70vw)}
+.film-pause{position:absolute;right:16px;bottom:16px;width:44px;height:44px;display:none;place-items:center;border:0;border-radius:50%;background:rgba(14,15,20,.8);color:var(--kalk);cursor:pointer}
+.film-pause.vis{display:grid}.film-pause svg{width:18px;height:18px;fill:currentColor}
+/* Tilmeldingen: mørkt papir øverst og et revet ark med felterne */
+.tilmeld-side{display:flex;flex-direction:column;background:var(--nat) url(nyt/korn.webp) center top/720px auto repeat}
+.tilmeld-side .bar{background:none}
+.tilmeld-top{position:relative;width:min(100% - 32px,34rem);margin:0 auto;padding:4px 0 62px;display:flex;flex-direction:column;gap:6px}
+.tilmeld-top .del{position:absolute;right:-110px;top:-60px;width:220px;height:auto;pointer-events:none;z-index:-1}
+.tilmeld-top .maerke{width:150px;margin-left:-8px}.tilmeld-top .maerke b{font-size:.75rem}
+.kaempe{color:var(--rosen)}.tilmeld-top .kaempe{font-size:clamp(3.5rem,20vw,8.5rem);line-height:.86;letter-spacing:-.06em;margin-left:-4px}
+.tilmeld-top h2{font-size:clamp(1.625rem,1.2rem + 1.6vw,2.125rem);line-height:1.14;margin-top:8px}
+.tilmeld-ark{flex:1 0 auto;padding-bottom:48px}.tilmeld-ark .kant{height:64px;margin-top:-44px;object-position:top left}
+.tilmeld-side .tilmeld-kort{display:block;margin:0 auto;width:min(100% - 32px,34rem);padding:20px 0 64px;color:var(--nat);background:none;border-radius:0}
+.tilmeld-side:has(.tilmeld-kort.ok) .tilmeld-top h2,.tilmeld-side:has(.tilmeld-kort.ok) .tilmeld-top .maerke{display:none}
+.tilmeld-kort .felt label{font-size:1.5rem;line-height:1.15;font-weight:800;letter-spacing:-.02em;margin-bottom:4px}
+.tilmeld-kort .felt label small{font-size:.875rem;font-weight:600;letter-spacing:0;opacity:1;color:var(--muted)}
+.tilmeld-kort .felt input,.tilmeld-kort .felt select{min-height:52px;padding:8px 0 10px;border-radius:0;background-color:transparent;font:700 1.375rem/1.3 var(--sans);letter-spacing:-.01em;box-shadow:inset 0 -2.5px 0 var(--nat)}
+.tilmeld-kort .felt select{padding-right:32px;background-position:right 4px center}
+.tilmeld-kort .felt input::placeholder{color:#6F6A66;font-weight:600}
+.tilmeld-kort .felt input:focus,.tilmeld-kort .felt select:focus{outline:0;box-shadow:inset 0 -4px 0 var(--indigo)}
+.tilmeld-kort .felt.bad input,.tilmeld-kort .felt.navne.bad input:placeholder-shown{box-shadow:inset 0 -4px 0 var(--vin)}
+.tilmeld-kort .felt.navne label{font-size:1.25rem}.tilmeld-kort .felt.navne{gap:20px}
+.trinvis .forrige{opacity:1}.trinvis .forrige:hover{opacity:1}
+.tilmeld-kort .trinvis .forrige label{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
+.tilmeld-kort .trinvis .forrige input,.tilmeld-kort .trinvis .forrige select{min-height:44px;font-size:1.0625rem;font-weight:600;box-shadow:inset 0 -1px 0 #BDB3A4}
+.felt-note,.form-msg.err{color:var(--vin)}.form-msg.ok{color:var(--indigo)}.felt-note a,.flueben a,.form-note a,.form-msg a{color:var(--nat)}
+.form-note{color:var(--muted)}.konto-note{font-size:.9375rem;opacity:1;color:#3E3B40}.flueben input{accent-color:var(--indigo)}
+.tilmeld-kort .send{width:100%;min-height:58px;font-weight:800;margin-top:8px;background:var(--nat);color:var(--kalk)}
+.trinvis:not(.klar) .send{background:transparent;color:var(--nat);box-shadow:inset 0 0 0 1.5px var(--nat)}
+.send .spin{border-color:rgba(230,223,211,.3);border-top-color:var(--kalk)}
+.done{text-align:left}.done .mark{width:56px;margin:0 0 8px}.done h3{font-size:clamp(2rem,1.4rem + 2.4vw,3rem);line-height:1.1;outline-offset:6px}.done p{color:#3E3B40}.done .tjek{color:var(--muted)}
+.henvis{border-top-color:#BDB3A4}.henvis .henvis-titel{color:var(--nat)}.henvis-rad input{box-shadow:inset 0 0 0 1.5px #7E7A76}
+@media (max-height:700px){.tilmeld-top .kaempe{display:none}.tilmeld-top{padding-bottom:54px}}
+@media (max-width:900px){.wrap{padding:0 16px}.top .wrap{gap:10px 16px}.top nav{order:3;flex-basis:100%;gap:18px;overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.top .hand{margin-left:auto}
+ .hero{padding:14px 0 120px}.ord{font-size:clamp(4rem,27vw,6.5rem);padding-left:10px}.hero-gitter{grid-template-columns:1fr;gap:34px;padding-top:24px}.hero h1{font-size:2.25rem}.handlinger .knap{flex:1 1 100%}
+ .papirafsnit{padding-bottom:64px}.tilmeld .indre{padding:24px 16px 96px}.sagkort{padding:18px}.sagkort h3{font-size:1.1875rem}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}.knap:active{transform:none}}
+@media (max-width:600px){footer .wrap{padding-left:16px;padding-right:16px}.hand .knap{padding:10px 13px}}

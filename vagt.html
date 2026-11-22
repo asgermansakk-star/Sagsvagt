@@ -62,10 +62,6 @@
   h3 { font-size: var(--t2); font-weight: 600; }
   p { margin: 0; }
   .lead { font-size: var(--t3); line-height: 1.5; color: var(--muted); max-width: 38em; }
-  /* Afsnit indledes som i en avis: en sort streg, overskrift og manchet, venstrestillet */
-  .afsnit-hoved { border-top: 2px solid var(--nat); padding-top: 16px; margin: 0 0 32px; }
-  .afsnit-hoved .lead { margin: 10px 0 0; }
-
   /* ---------- Knapper: én familie, tre styrker ---------- */
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 22px;
     font: 600 var(--broed)/1.2 var(--sans); text-decoration: none; border: 0; cursor: pointer; border-radius: var(--r-knap);
@@ -94,208 +90,11 @@
   .bar .btn-lille.btn-sekundaer { color: var(--kalk); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.4); }
   .bar .btn-lille.btn-sekundaer:hover { box-shadow: inset 0 0 0 1.5px var(--kalk); background: rgba(230,223,211,.08); }
 
-  /* ---------- Hero: som en avisforside, venstrestillet og ét budskab ---------- */
-  /* En film af avisen, der ruller stille i baggrunden (assets/video/, mørk udgave så teksten kan læses; stillbillede uden bevægelse), under Mødets farver */
-  .hero { position: relative; overflow: hidden; background: var(--nat); isolation: isolate;
-    color: var(--kalk); padding: 136px 0 72px; }
-  .hero-film { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-  .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(14,15,20,.84), rgba(14,15,20,.66) 58%, rgba(14,15,20,.5)), linear-gradient(135deg, rgba(40,55,122,.45), rgba(14,15,20,.1) 55%, rgba(62,14,20,.5)); }
-  .film-pause { position: absolute; right: 16px; bottom: 16px; width: 44px; height: 44px; display: none; place-items: center; border: 0; border-radius: 50%; background: rgba(14,15,20,.7); color: var(--kalk); cursor: pointer; }
-  .film-pause.vis { display: grid; }
-  .film-pause svg { width: 18px; height: 18px; fill: currentColor; }
-  .hero .erhverv-linje { margin: 20px 0 0; font-size: var(--sekundaer); color: rgba(230,223,211,.84); }
-  .hero .erhverv-linje a { color: var(--kalk); font-weight: 600; }
-  .hero .kicker { margin: 0 0 14px; font-size: var(--fodnote); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--rosen); }
-  .hero h1 { font-size: var(--t-stor); font-weight: 700; letter-spacing: -.03em; line-height: 1.08; max-width: 16ch; }
-  .hero .lead { color: rgba(230,223,211,.84); margin: 20px 0 0; max-width: 36em; }
-  .hero .handlinger { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
-  .hero-gitter { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 64px; align-items: end; }
-  /* Fra dagsordenerne: en lille avisforside med én tophistorie og to mindre, med sagernes egne billeder */
-  .udklip { border-left: 1px solid rgba(230,223,211,.22); padding-left: 32px; align-self: start; }
-  .udklip h2 { font: 700 var(--billedtekst)/1.3 var(--sans); letter-spacing: .12em; text-transform: uppercase; color: rgba(230,223,211,.7); margin-bottom: 14px; }
-  .udklip h3 { font: 700 var(--t3)/1.25 var(--sans); letter-spacing: -.01em; margin: 0; }
-  .udklip h3 a { color: var(--kalk); text-decoration: none; font-size: inherit; font-weight: inherit; }
-  .udklip h3 a:hover { text-decoration: underline; }
-  .u-billede { display: block; border-radius: var(--r-kort); overflow: hidden; background: var(--kalk-lys); margin-bottom: 12px; }
-  .u-billede img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-  .u-kicker { font-size: var(--billedtekst); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--rosen); margin-bottom: 6px; }
-  .u-meta { font-size: var(--fodnote); color: rgba(230,223,211,.7); margin-top: 6px; }
-  .u-top { padding-bottom: 20px; border-bottom: 1px solid rgba(230,223,211,.2); }
-  .u-top h3 { font-size: var(--t2); }
-  .u-smaa { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px 0 14px; }
-  .u-smaa h3 { font-size: var(--sekundaer); line-height: 1.3; }
-  .u-mere { color: var(--kalk); font-size: var(--sekundaer); font-weight: 600; display: inline-flex; min-height: 44px; align-items: center; }
-  /* Stemmegrafik som på sagssiderne (avis/stil/stemmegrafik.css) */
-  .sg-bar { display: flex; height: 20px; border-radius: 5px; overflow: hidden; background: var(--kalk-mork); gap: 2px; }
-  .sg-for { background: var(--indigo); }
-  .sg-imod { background: var(--vin) repeating-linear-gradient(135deg, transparent 0 4px, rgba(255,255,255,.38) 4px 6px); }
-  .sg-mini { display: flex; align-items: center; gap: 8px; font-size: var(--billedtekst); font-weight: 600; font-variant-numeric: tabular-nums; margin-top: 8px; }
-  .sg-mini .sg-bar { width: 64px; height: 8px; border-radius: 3px; gap: 1px; flex: none; }
-  .paa-moerk .sg-mini .sg-bar { background: rgba(230,223,211,.2); }
-  .ugen-link { margin-top: 16px; font-size: var(--sekundaer); }
-  .ugen-link a { color: var(--kalk); font-weight: 600; display: inline-flex; min-height: 44px; align-items: center; }
-  .find-kommune { margin-top: 28px; max-width: 30em; }
-  .find-kommune label { display: block; font-size: var(--sekundaer); font-weight: 600; margin-bottom: 8px; color: rgba(230,223,211,.9); }
-  .find-kommune div { display: flex; gap: 8px; }
-  .find-kommune input { flex: 1; min-width: 0; min-height: 44px; font: 500 var(--broed) var(--sans); color: var(--nat); background: var(--kalk); border: 0; border-radius: var(--r-felt); padding: 10px 14px; }
-  .find-kommune input:focus { outline: 3px solid var(--lyng); outline-offset: 1px; }
-  .find-kommune .btn { min-height: 44px; }
-  .fk-fejl { margin-top: 6px; font-size: var(--fodnote); color: var(--rosen); min-height: 1em; }
-  .tryghed { list-style: none; padding: 0; margin: 24px 0 0; display: flex; gap: 6px 24px; flex-wrap: wrap; font-size: var(--sekundaer); color: rgba(230,223,211,.72); }
-
-  /* ---------- Afsnit ---------- */
-  section.afsnit { padding: 88px 0; }
-  section.afsnit + section.afsnit { padding-top: 0; }
-  /* Alle afsnit står på samme baggrund og skilles af streger, ikke af skiftende farvebånd */
-  .lys { background: transparent; }
-
-  /* ---------- Demo: her virker produktet ---------- */
-  .kort { background: var(--kalk-lys); border-radius: var(--r-kort); padding: 24px; }
-  .lys .kort { background: var(--kalk); }
-  .kort-hoved { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
-  .kort-hoved h3 { font-size: var(--overskrift); font-weight: 600; }
-  .kort-hoved span { font-size: var(--fodnote); color: var(--muted); }
-  .styring { margin-bottom: 16px; }
-  .styring .raekke { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
-  .styring .raekke h3 { font-size: var(--overskrift); font-weight: 600; }
-  .roller { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
-  .roller span { font-size: var(--fodnote); color: var(--muted); margin-right: 4px; }
-  .rolle { font: 500 var(--fodnote)/1 var(--sans); min-height: 44px; padding: 10px 14px; border: 0; cursor: pointer; border-radius: var(--r-knap);
-    background: transparent; color: var(--nat); box-shadow: inset 0 0 0 1.5px var(--rule); transition: background .2s, box-shadow .2s, color .2s; }
-  .rolle:hover { box-shadow: inset 0 0 0 1.5px var(--nat); }
-  .rolle.on { background: var(--nat); color: var(--kalk); box-shadow: none; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip { font: 600 var(--sekundaer)/1 var(--sans); min-height: 44px; cursor: pointer; border: 0; padding: 10px 16px; border-radius: var(--r-knap);
-    color: var(--nat); background: var(--kalk); box-shadow: inset 0 0 0 1.5px var(--rule); display: inline-flex; align-items: center; gap: 8px;
-    transition: background .2s, box-shadow .2s, color .2s, transform .15s var(--ease); }
-  .lys .chip { background: var(--kalk-lys); }
-  .chip:hover { box-shadow: inset 0 0 0 1.5px var(--nat); }
-  .chip:active { transform: scale(.97); }
-  .chip .n { font-size: var(--billedtekst); font-weight: 700; padding: 2px 7px; border-radius: 6px; background: var(--kalk-mork); color: var(--muted); }
-  .chip[aria-pressed="true"] { background: var(--c); color: var(--cf); box-shadow: none; }
-  .chip[aria-pressed="true"] .n { background: rgba(14,15,20,.12); color: inherit; }
-  .soeg { margin-top: 16px; max-width: 520px; }
-  .soeg label { display: block; font-size: var(--fodnote); font-weight: 600; margin-bottom: 6px; }
-  .soegfelt { position: relative; }
-  .soegfelt svg { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); pointer-events: none; }
-  .soeg input { width: 100%; min-height: 48px; font: 500 var(--broed) var(--sans); color: var(--nat); background: var(--kalk); border: 0;
-    box-shadow: inset 0 0 0 1.5px #7E7A76; border-radius: var(--r-felt); padding: 12px 14px 12px 42px; } /* kanten skal stå 3:1 mod kalk */
-  .soeg input:focus { outline: 3px solid var(--skifer); outline-offset: 2px; box-shadow: inset 0 0 0 2px var(--indigo); }
-  .soeg small { display: block; margin-top: 8px; font-size: var(--fodnote); color: var(--muted); }
-
-  .demo-gitter { display: grid; grid-template-columns: 1fr 1.05fr; gap: 16px; align-items: start; }
-  .panel { position: relative; overflow: hidden; }
-  .feed { list-style: none; margin: 0; padding: 0; position: relative; }
-  .feed li { display: grid; grid-template-columns: 56px 1fr; gap: 10px; padding: 10px 4px; border-bottom: 1px solid var(--rule); font-size: var(--sekundaer); line-height: 1.4;
-    transition: opacity .4s var(--ease); }
-  .feed li:last-child { border-bottom: 0; }
-  .feed .d { color: var(--muted); font-size: var(--fodnote); padding-top: 2px; font-variant-numeric: tabular-nums; }
-  .feed .t { font-family: var(--serif); }
-  .feed .t mark { background: linear-gradient(transparent 10%, var(--hl) 10%, var(--hl) 90%, transparent 90%) no-repeat 0 0 / 0% 100%; color: inherit; padding: 0 2px; margin: 0 -2px;
-    transition: background-size .5s var(--ease); }
-  .feed li.hit .t mark { background-size: 100% 100%; }
-  .feed li.miss { opacity: .65; }
-  .feed .u { display: block; font-family: var(--sans); font-size: var(--billedtekst); color: var(--muted); margin-top: 2px; }
-  /* Når listen gennemsøges, løber en tynd streg ned over den, som en læsestreg */
-  .scan { position: absolute; left: 0; right: 0; height: 2px; top: 0; opacity: 0; pointer-events: none; background: var(--vin); }
-  .scan.go { animation: scan .8s var(--ease) forwards; } @keyframes scan { from { top: 0; opacity: 1; } to { top: 100%; opacity: 0; } }
-
-  .mail { background: var(--kalk-lys); border-radius: var(--r-kort); overflow: hidden; position: sticky; top: 80px; }
-  .mail-top { color: var(--kalk); padding: 14px 20px; display: flex; align-items: center; gap: 12px; background: linear-gradient(90deg, rgba(14,15,20,.5), rgba(14,15,20,.1)), url("assets/mail/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet); }
-  .mail-top svg { height: 28px; width: auto; }
-  .mail-top .meta { margin-left: auto; text-align: right; font-size: var(--billedtekst); line-height: 1.4; opacity: .85; }
-  .mail-krop { padding: 20px 20px 8px; }
-  .mail-krop h4 { font-size: var(--t2); display: flex; align-items: baseline; gap: 8px; }
-  .big-n { font-variant-numeric: tabular-nums; color: var(--vin); min-width: 1.2ch; display: inline-block; }
-  .mail-krop > p { margin: 4px 0 14px; color: var(--muted); font-size: var(--sekundaer); }
-  .cases { list-style: none; margin: 0; padding: 0; }
-  .case { border-top: 1px solid var(--rule); padding: 14px 0; animation: ind .4s var(--ease) both; animation-delay: var(--delay, 0s);
-    display: grid; grid-template-columns: minmax(0, 1fr) 96px; gap: 0 14px; }
-  .case > div { min-width: 0; }
-  .case > img { width: 96px; height: 64px; object-fit: cover; border-radius: 8px; background: var(--kalk); margin-top: 2px; }
-  .case:first-child { border-top: 2px solid var(--nat); }
-  @keyframes ind { from { opacity: 0; transform: translateY(8px); } }
-  .case .where { font-size: var(--fodnote); color: var(--muted); margin: 0 0 4px; }
-  .case h5 { margin: 0 0 6px; font: 600 var(--overskrift)/1.3 var(--serif); }
-  .case p { margin: 0 0 10px; font-size: var(--sekundaer); line-height: 1.5; color: #3E3B40; }
-  .case .why { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: var(--fodnote); }
-  .tag { font-weight: 600; padding: 4px 10px; border-radius: 6px; background: var(--c); color: var(--cf); font-size: var(--fodnote); }
-  .case .why a { margin-left: auto; font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; padding: 0 4px; }
-  .tom { text-align: center; padding: 28px 10px 36px; color: var(--muted); font-size: var(--sekundaer); }
-  .tom b { display: block; color: var(--nat); font-size: var(--broed); margin-bottom: 4px; }
-  .mail-fod { padding: 16px 20px 20px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; border-top: 1px solid var(--rule); }
-  .mail-fod small { color: var(--muted); font-size: var(--fodnote); max-width: 30ch; }
-
-  /* ---------- Hvem stemte hvad, og hvor bliver der bygget ---------- */
-  .grafik-gitter { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
-  .grafik-gitter .g-kicker { font-size: var(--billedtekst); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--vin); margin-bottom: 8px; }
-  .grafik-gitter h3 { font-size: var(--t2); line-height: 1.2; margin-bottom: 6px; }
-  .grafik-gitter h3 a { color: var(--nat); text-decoration: none; }
-  .grafik-gitter h3 a:hover { text-decoration: underline; }
-  .g-meta { font-size: var(--fodnote); color: var(--muted); margin-bottom: 16px; }
-  .sg { padding: 18px; background: var(--kalk-lys); border-radius: var(--r-kort); border: 1px solid var(--rule); }
-  .sg-udfald { margin-bottom: 12px; font-size: var(--broed); }
-  .sg-udfald b { color: var(--indigo); }
-  .sg-tal { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 10px; font-size: var(--fodnote); color: var(--muted); }
-  .sg-tal b { color: var(--nat); }
-  .sg-prik { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--indigo); }
-  .sg-t-imod .sg-prik { background: var(--vin); }
-  .sg-gh { margin: 16px 0 8px; font-size: var(--billedtekst); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-  .sg-knapper { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0; padding: 0; }
-  .sg-knap { display: inline-grid; place-items: center; min-width: 34px; height: 34px; padding: 0 8px; border-radius: 8px; background: var(--pf); color: var(--pt); font-weight: 700; font-size: var(--fodnote); }
-  .plankort { margin: 0; }
-  .plankort img { display: block; width: 100%; height: auto; border-radius: var(--r-kort); background: var(--kalk-mork); }
-  .plankort figcaption { font-size: var(--fodnote); color: var(--muted); margin-top: 8px; }
-  .g-laes { display: inline-flex; min-height: 44px; align-items: center; margin-top: 8px; font-weight: 600; }
-
-  /* Mailens natkort er lavet af OpenStreetMap-fliser, så kilden står i hjørnet (ODbL) */
-  .mail-top { position: relative; }
-  .mail-top::after { content: "Kort: © OpenStreetMap-bidragydere"; position: absolute; right: 12px; bottom: 6px; font: 500 10px/1.2 var(--sans); color: rgba(230,223,211,.7); pointer-events: none; }
-  /* ---------- Kortet over sagerne ---------- */
-  .kortflade { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); border-radius: var(--r-kort); overflow: hidden; background: var(--nat); color: var(--kalk); }
-  .sk-kort { position: relative; line-height: 0; cursor: pointer; }
-  .sk-kort img { width: 100%; height: auto; display: block; }
-  .sk-kort svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-  .sk-kort circle { fill: var(--rubin); stroke: var(--kalk); stroke-width: 5; }
-  .sk-kort circle.kommer { fill: var(--skifer); }
-  .sk-kort circle.valgt { fill: var(--kalk); stroke: var(--nat); stroke-width: 10; }
-  .sk-kilde { position: absolute; right: 8px; bottom: 6px; font: 500 10px/1.2 var(--sans); color: rgba(230,223,211,.75); }
-  .sk-sag { display: flex; flex-direction: column; gap: 12px; padding: 28px 24px; }
-  .sk-sted { margin: 0; font-size: var(--fodnote); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--rosen); }
-  .sk-sag h3 { font-size: var(--t2); line-height: 1.25; }
-  .sk-sag h3 a { color: inherit; }
-  .sk-info { margin: 0; font-size: var(--sekundaer); color: rgba(230,223,211,.78); }
-  .sk-skift { display: flex; gap: 8px; margin-top: auto; padding-top: 8px; }
-  .sk-skift button { flex: 1; min-height: 44px; border: 0; border-radius: var(--r-knap); background: rgba(230,223,211,.12); color: var(--kalk); font: 600 var(--sekundaer) var(--sans); cursor: pointer; }
-  .sk-skift button:hover { background: rgba(230,223,211,.2); }
-  .sk-noegle { display: flex; gap: 16px; margin: 0; font-size: var(--fodnote); color: rgba(230,223,211,.78); }
-  .sk-noegle span::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 50%; background: var(--rubin); }
-  .sk-noegle span:first-child::before { background: var(--skifer); }
-  /* ---------- Til virksomheder og foreninger ---------- */
-  .to-veje { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-  .to-veje a { display: flex; flex-direction: column; gap: 8px; padding: 24px; border-radius: var(--r-kort); background: var(--nat); color: var(--kalk); text-decoration: none; }
-  .to-veje a:hover { background: var(--grafit); }
-  .to-veje b { font-size: var(--t2); letter-spacing: -.02em; }
-  .to-veje span { font-size: var(--sekundaer); color: rgba(230,223,211,.8); }
-  .to-veje em { margin-top: auto; padding-top: 8px; font-style: normal; font-weight: 600; font-size: var(--sekundaer); }
-  /* ---------- Sagsvagt i tal ---------- */
-  .faktabaand { color: var(--kalk); background: var(--moedet), var(--nat); }
-  .faktabaand .wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding-top: 56px; padding-bottom: 56px; }
-  .faktabaand b { display: block; font-size: clamp(2.5rem, 1.6rem + 3vw, 3.75rem); font-weight: 700; line-height: 1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
-  .faktabaand div:first-child b { color: var(--rosen); }
-  .faktabaand span { display: block; margin-top: 10px; font-size: var(--sekundaer); color: rgba(230,223,211,.78); }
-
   /* ---------- Tilmelding ---------- */
   .tilmeld-kort { border-radius: var(--r-stor); color: var(--kalk); padding: 48px; background: var(--moedet);
     display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; }
   .tilmeld-kort h2 { font-size: var(--t1); }
   .tilmeld-kort .lead { color: rgba(230,223,211,.84); margin-top: 12px; }
-  .fordele { list-style: none; padding: 0; margin: 24px 0 0; font-size: var(--sekundaer); }
-  .fordele li { padding: 10px 0; border-top: 1px solid rgba(230,223,211,.2); }
-  .fremdrift { margin-top: 24px; }
-  .fremdrift .linje { height: 6px; border-radius: 3px; background: rgba(230,223,211,.2); overflow: hidden; }
-  .fremdrift .linje i { display: block; height: 100%; width: var(--andel, 73%); background: var(--rosen); border-radius: 3px; }
-  .fremdrift small { display: block; margin-top: 8px; font-size: var(--fodnote); color: rgba(230,223,211,.8); }
   form { display: grid; gap: 16px; align-content: start; }
   .felt label { display: block; font-size: var(--fodnote); font-weight: 600; margin-bottom: 6px; }
   .felt label small { font-weight: 400; opacity: .75; }
@@ -311,10 +110,6 @@
   .felt.navne { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; } /* fornavn og efternavn ved siden af hinanden */
   .felt.navne.bad input:placeholder-shown { box-shadow: inset 0 0 0 2px var(--rosen); }
   .felt.navne.bad input:not(:placeholder-shown) { box-shadow: none; }
-  .valgte { display: flex; flex-wrap: wrap; gap: 6px; }
-  .valgte .tag { display: inline-flex; align-items: center; gap: 6px; padding: 4px 4px 4px 12px; }
-  .valgte .tag button { position: relative; border: 0; cursor: pointer; width: 32px; height: 32px; border-radius: 6px; background: rgba(14,15,20,.15); color: inherit; font-size: var(--fodnote); line-height: 1; padding: 0; }
-  .valgte .tag button::after { content: ""; position: absolute; inset: -6px; } /* 44 px at ramme, uden at mærket bliver større */
   .flueben { display: flex; gap: 12px; align-items: flex-start; min-height: 44px; padding: 10px 0; font-size: var(--sekundaer); line-height: 1.4; cursor: pointer; }
   .flueben input { flex: none; width: 24px; height: 24px; margin: 0; accent-color: var(--lyng); cursor: pointer; }
   .flueben a { color: var(--kalk); }
@@ -334,16 +129,10 @@
   .form-note a { color: var(--kalk); }
   /* Kvitteringen er en side for sig, der dækker hele skærmen (flyttes ud i <body>, når tilmeldingen er gået igennem) */
   /* Tilmeldingen er en side for sig, der dækker hele skærmen: den åbnes af alle "Skriv dig op"-knapper (#tilmeld) */
-  .tilmeld-baand { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px; padding: 40px 48px;
-    border-radius: var(--r-stor); color: var(--kalk); background: var(--moedet); background-color: var(--nat); }
-  .tilmeld-baand h2 { font-size: var(--t1); }
   .tilmeld-side { display: grid; grid-template-rows: auto 1fr; position: fixed; inset: 0; z-index: 100; overflow-y: auto; overscroll-behavior: contain;
     color: var(--kalk); background: var(--moedet); background-color: var(--nat); animation: tak-ind .4s ease both; }
   .tilmeld-side[hidden] { display: none; }
-  /* Ét kornet blad i blåt kigger ind fra højre i fladen over overskriften (se Organiske former i assets/avis.css) */
   .tilmeld-side { overflow-x: hidden; isolation: isolate; }
-  .tilmeld-side::after { content: ""; position: absolute; z-index: -1; right: -70px; top: 14px; width: 240px; height: 240px; background: url(assets/former/blad-blaa.svg) center / contain no-repeat; transform: scaleX(-1); pointer-events: none; }
-  @media (min-width: 721px) { .tilmeld-side::after { width: 460px; height: 460px; right: -120px; top: -60px; } }
   .tilmeld-side.straks { animation: none; } /* åbnet fra et link: vis den med det samme (animationer kan stå stille, mens siden indlæses) */
   @keyframes tak-ind { from { opacity: 0; } }
   .tilmeld-side .tak-bar { position: static; }
@@ -368,29 +157,6 @@
   .henvis-rad input { flex: 1; min-width: 0; min-height: 44px; padding: 0 14px; font: 500 var(--sekundaer) var(--sans); color: var(--nat); background: var(--kalk-lys); border: 0; border-radius: var(--r-felt); }
   .henvis-svar { margin-top: 8px; font-size: var(--fodnote); min-height: 1em; }
 
-  /* ---------- Sådan virker det ---------- */
-  /* Trinene er en nummereret liste med tynde streger, ikke tre ens kort */
-  .trin { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; counter-reset: trin; }
-  .trin li { border-top: 1px solid var(--rule); padding-top: 14px; counter-increment: trin; }
-  .trin li::before { content: counter(trin) "."; display: block; font: 600 var(--t2)/1 var(--serif); color: var(--vin); margin-bottom: 10px; }
-  .trin h3 { font-size: var(--t3); margin-bottom: 8px; }
-  .trin p { color: var(--muted); font-size: var(--sekundaer); line-height: 1.5; }
-  .loefter { margin: 56px 0 0; }
-  .loefter h3 { font-size: var(--t3); margin-bottom: 16px; }
-  .loefter ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
-  .loefter li { font-size: var(--sekundaer); line-height: 1.5; border-left: 2px solid var(--vin); padding-left: 14px; }
-  .loefter li b { display: block; color: var(--nat); font-size: var(--broed); margin-bottom: 2px; }
-  .loefter li span { color: var(--muted); }
-
-  /* ---------- Spørgsmål: den indbyggede fold-ud ---------- */
-  .faq { max-width: 760px; }
-  details { border-bottom: 1px solid var(--rule); }
-  summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 20px 4px; font-weight: 600; font-size: var(--overskrift); }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: ""; flex: none; width: 10px; height: 10px; border-right: 2px solid var(--nat); border-bottom: 2px solid var(--nat); transform: rotate(45deg); margin: 0 6px 4px 0; transition: transform .25s var(--ease); }
-  details[open] summary::after { transform: rotate(-135deg); margin-bottom: -4px; }
-  details p { padding: 0 4px 20px; color: var(--muted); max-width: 62ch; line-height: 1.55; }
-
   /* ---------- Fod ---------- */
   footer { background: var(--nat); color: rgba(230,223,211,.72); font-size: var(--sekundaer); }
   footer .wrap { display: flex; gap: 12px 24px; align-items: center; flex-wrap: wrap; padding-top: 32px; padding-bottom: 36px; }
@@ -398,46 +164,11 @@
   footer a { color: var(--kalk); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; } footer a:hover { text-decoration: underline; }
   footer .firma { flex-basis: 100%; font-size: var(--fodnote); opacity: .8; }
 
-  /* ---------- Mindre skærme: samme funktioner, stablet ---------- */
-  /* På små skærme kommer resultatet (mailen) først, og den lange liste foldes sammen */
-  .vis-alle { display: none; width: 100%; margin-top: 8px; }
-  @media (max-width: 900px) {
-    .demo-gitter, .tilmeld-kort, .hero-gitter, .grafik-gitter { grid-template-columns: 1fr; }
-    .udklip { border-left: 0; padding-left: 0; border-top: 1px solid rgba(230,223,211,.22); padding-top: 28px; }
-    .grafik-gitter { gap: 56px; }
-    .mail { position: relative; top: 0; order: -1; }
-    .panel:not(.alle) .feed li:nth-child(n+7) { display: none; }
-    .panel:not(.alle) .vis-alle, .panel.alle .vis-alle.skjul { display: inline-flex; }
-    .panel.alle .vis-alle:not(.skjul) { display: none; }
-    .trin, .loefter ul, .faktabaand .wrap { grid-template-columns: 1fr; }
-    .faktabaand .wrap { gap: 24px; padding-top: 40px; padding-bottom: 40px; }
-    .tilmeld-kort { padding: 32px 24px; gap: 32px; }
-    .bar nav { display: none; }
-    .kortflade, .to-veje { grid-template-columns: 1fr; }
-  }
-  @media (max-width: 520px) {
-    .wrap { padding: 0 16px; }
-    .hero { padding: 112px 0 64px; }
-    section.afsnit, section.afsnit.lys { padding-top: 64px; padding-bottom: 64px; }
-    section.afsnit + section.afsnit:not(.lys) { padding-top: 0; }
-    .kort { padding: 18px; }
-    .tilmeld-kort { padding: 28px 18px; border-radius: var(--r-kort); }
-    .bar .logo svg { height: 36px; }
-    .bar .btn-lille { padding: 8px 12px; }
-    .hero .handlinger .btn { width: 100%; }
-    .mail-top .meta { display: none; }
-    .case { grid-template-columns: minmax(0, 1fr) 72px; }
-    .case > img { width: 72px; height: 50px; }
-    .u-smaa { gap: 14px; }
-  }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
   }
   .spring { position: absolute; left: 16px; top: -64px; z-index: 60; padding: 10px 16px; border-radius: 8px; background: #E6DFD3; color: #0E0F14; font-weight: 600; text-decoration: none; }
   .spring:focus { top: 12px; }
-  /* Enklere forside (8/11): overskriften står midt på filmen */
-  .hero-gitter { align-items: center; }
-
   /* ---------- Tilmelding trin for trin (8/11) ----------
      Ét felt ad gangen: det udfyldte rykker op og bliver svagt (tryk på det for at gå tilbage), feltet før det folder sig sammen,
      og det næste glider ind nedefra. Til sidst lyser knappen op. Uden JavaScript står alle felter som før. */
@@ -464,6 +195,7 @@
     .trinvis.klar .send, .trinvis .aktiv.bad { animation: none; }
   }
 </style>
+<link rel="stylesheet" href="assets/forside.css">
 <script>try{if(!/^(localhost|127[.])/.test(location.hostname)&&navigator.doNotTrack!=="1"){var f=new URLSearchParams(location.search).get("fra"),r=document.referrer&&new URL(document.referrer).hostname;fetch("/api/besoeg.php",{method:"POST",keepalive:true,headers:{"Content-Type":"text/plain"},body:JSON.stringify({s:location.pathname,k:(f||(r&&r!==location.hostname?r:"")).slice(0,60)})})}}catch(e){}</script>
 </head>
 <body>
@@ -476,77 +208,35 @@
   <symbol id="maerke" viewBox="44 16 168 224"><path fill="currentColor" fill-rule="evenodd" d="M51 231.1C66.2 215.4 74.7 194.5 74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C195.7 121.9 187.6 165.2 160.4 196.1C133.1 227 91.1 240.4 51 231.1Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/><path fill="currentColor" fill-rule="evenodd" d="M205 24.9C189.8 40.6 181.3 61.5 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7C60.3 134.1 68.4 90.8 95.6 59.9C122.9 29 164.9 15.6 205 24.9Z M74.7 172.7C74.7 145.9 86.6 120.4 107.2 103.2C127.7 85.9 154.9 78.6 181.3 83.3C181.3 110.1 169.4 135.6 148.8 152.8C128.3 170.1 101.1 177.4 74.7 172.7Z"/></symbol>
 </svg>
 
-<header class="bar" id="bar">
-  <div class="wrap">
-    <a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a>
-    <nav aria-label="Hovedmenu">
-      <a href="index.html">Læs avisen</a>
-      <a href="erhverv.html">Erhverv</a>
-    </nav>
-    <a class="btn btn-lille btn-sekundaer" href="min/">Log ind</a>
-    <a class="btn btn-lille btn-lys" href="#tilmeld">Skriv dig op</a>
-  </div>
-</header>
+<header class="korn top" id="bar"><div class="wrap">
+  <a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><img src="assets/sagsvagt-vandret-kalk.svg" alt="Sagsvagt" width="112" height="36"></a>
+  <nav aria-label="Hovedmenu"><a href="./" aria-current="page">Forside</a><a href="index.html">Avisen</a><a href="emne/">Emner</a><a href="hoeringer.html">Høringer</a><a href="soeg.html">Søg</a><a href="erhverv.html">Erhverv</a></nav>
+  <div class="hand"><a class="knap linje" href="min/">Log ind</a><a class="knap" href="#tilmeld">Skriv dig op</a></div>
+</div></header>
 
 <main id="indhold">
-  <section class="hero paa-moerk" aria-labelledby="hero-h">
-    <video class="hero-film" id="hero-film" muted loop playsinline preload="none" poster="assets/video/avisen.jpg" aria-hidden="true" tabindex="-1"></video>
-    <button class="film-pause" id="film-pause" type="button" aria-label="Sæt filmen på pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
-    <div class="wrap hero-gitter">
-     <div>
-      <h1 id="hero-h">Politik, der rammer din hverdag. Én mail om mandagen.</h1>
-      <div class="handlinger">
-        <a class="btn btn-primaer" href="#tilmeld">Få min mandagsmail</a>
-        <a class="btn btn-sekundaer" href="eksempel.html">Se et eksempel</a>
-      </div>
-      <form class="find-kommune" id="find-kommune" role="search" novalidate>
-        <label for="fk">Find din kommune</label>
-        <div><input id="fk" list="kommune-liste" autocomplete="off" placeholder="Skriv din kommune, fx Aarhus"><button class="btn btn-lille btn-sekundaer" type="submit">Find</button></div>
-        <p class="fk-fejl" id="fk-fejl" role="status"></p>
-      </form>
-     </div>
-      <!-- Tre rigtige sager fra demoen herunder, så man med det samme ser, hvad Sagsvagt finder -->
-      <aside class="udklip" aria-labelledby="udklip-h">
-        <h2 id="udklip-h">Fra dagsordenerne i København</h2>
-        <article class="u-top">
-          <a class="u-billede" href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-10.html" tabindex="-1" aria-hidden="true"><img src="assets/emner/affald.jpg" alt=""></a>
-          <p class="u-kicker">Affald · 28. sep.</p>
-          <h3><a href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-10.html">Udrulning af 14-dages-tømning af mad- og restaffald i hele byen fra 2027</a></h3>
-          <p class="u-meta">Klima-, Miljø- og Teknikudvalget</p>
-          <div class="sg-mini"><span class="sg-bar" aria-hidden="true"><span class="sg-for" style="flex-grow:7"></span><span class="sg-imod" style="flex-grow:3"></span></span><span>7 for · 3 imod</span></div>
-        </article>
-        <div class="u-smaa">
-          <article>
-            <a class="u-billede" href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-2.html" tabindex="-1" aria-hidden="true"><img src="assets/stedkort/101-tingbjerg.jpg" alt=""></a>
-            <p class="u-kicker">Klima · 28. sep.</p>
-            <h3><a href="sag/kk-2026-09-28-klima-miljoe-og-teknikudvalget-2.html">Fældning af træer i Tingbjerg</a></h3>
-          </article>
-          <article>
-            <a class="u-billede" href="sag/kk-2026-10-05-klima-miljoe-og-teknikudvalget-15.html" tabindex="-1" aria-hidden="true"><img src="assets/emner/trafik.jpg" alt=""></a>
-            <p class="u-kicker">Trafik · 5. okt.</p>
-            <h3><a href="sag/kk-2026-10-05-klima-miljoe-og-teknikudvalget-15.html">Nordlige del af Badstuestræde som sekundær gågade</a></h3>
-          </article>
-        </div>
-        <a class="u-mere" href="index.html">Læs avisen</a>
-      </aside>
-    </div>
-  </section>
-
-  <section class="afsnit" aria-labelledby="tilmeld-cta">
-    <div class="wrap">
-      <div class="tilmeld-baand paa-moerk">
-        <h2 id="tilmeld-cta">Få din første mandagsmail</h2>
-        <a class="btn btn-primaer" href="#tilmeld">Skriv mig op</a>
-      </div>
-    </div>
-  </section>
-
+<section class="korn hero" aria-labelledby="hero-h"><div class="ord" aria-hidden="true">KØBENHAVN</div>
+  <div class="wrap hero-gitter"><div class="venstre"><h1 id="hero-h">Hvad besluttede politikerne om din gade?</h1>
+    <div class="handlinger"><a class="knap" href="#tilmeld">Få min mandagsmail</a><a class="knap linje" href="eksempel.html">Se et eksempel</a></div>
+    <form class="find" id="find-kommune" role="search" novalidate><label for="fk">Find din kommune</label><div><input id="fk" type="text" list="kommune-liste" autocomplete="off" placeholder="Skriv din kommune, fx Aarhus"><button class="knap" type="submit">Find</button></div><p class="fk-fejl" id="fk-fejl" role="status"></p></form></div>
+    <figure class="collage"><img class="del d1" src="assets/nyt/skive-skifer.webp" alt="" width="520" height="520"><img class="del d2" src="assets/nyt/strimmel-vin.webp" alt="" width="520" height="179"><img class="del d3" src="assets/nyt/bidder-roed.webp" alt="" width="520" height="520">
+      <!--#include virtual="/del/forside-collage.html" -->
+    </figure></div></section>
+<!--#include virtual="/del/forside-sager.html" -->
+<section class="korn tilmeld" aria-labelledby="tilmeld-cta">
+  <video class="hero-film" id="hero-film" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+  <img class="kant" src="assets/nyt/kant-nat.webp" alt="" width="1440" height="120" loading="lazy">
+  <img class="del t1" src="assets/nyt/strimmel-rubin.webp" alt="" width="520" height="209" loading="lazy"><img class="del t2" src="assets/nyt/skive-indigo.webp" alt="" width="520" height="520" loading="lazy">
+  <div class="indre"><div class="kaempe" aria-hidden="true">MANDAG</div><h2 id="tilmeld-cta">Én mail om mandagen med de sager, du følger.</h2><a class="knap stor" href="#tilmeld">Skriv dig op</a></div>
+  <button class="film-pause" id="film-pause" type="button" aria-label="Sæt filmen på pause"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg></button>
+</section>
 </main>
 
-<div class="tilmeld-side paa-moerk" id="tilmeld" role="dialog" aria-modal="true" aria-labelledby="tilmeld-h" hidden>
+<div class="tilmeld-side korn" id="tilmeld" role="dialog" aria-modal="true" aria-labelledby="tilmeld-h" hidden>
   <header class="bar tak-bar"><div class="wrap"><a class="logo" href="./" aria-label="Sagsvagt, til forsiden"><svg viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg></a><button class="luk" type="button" aria-label="Luk">×</button></div></header>
+  <div class="tilmeld-top"><img class="del" src="assets/nyt/skive-skifer.webp" alt="" width="520" height="520" loading="lazy"><span class="maerke"><img src="assets/nyt/label-vin.webp" alt="" width="460" height="154" loading="lazy"><b>SKRIV DIG OP</b></span><div class="kaempe" aria-hidden="true">MANDAG</div><h2 id="tilmeld-h">Få din første mandagsmail</h2></div>
+  <div class="tilmeld-ark papir"><img class="kant" src="assets/nyt/kant-kalk.webp" alt="" width="1440" height="120" loading="lazy">
       <div class="tilmeld-kort">
-        <h2 id="tilmeld-h">Få din første mandagsmail</h2>
         <form id="form" novalidate>
           <input type="hidden" name="kilde" id="kilde">
           <div class="felt navne"><div><label for="fornavn">Fornavn</label><input id="fornavn" name="fornavn" type="text" autocomplete="given-name" maxlength="40" placeholder=" " required></div><div><label for="efternavn">Efternavn</label><input id="efternavn" name="efternavn" type="text" autocomplete="family-name" maxlength="60" placeholder=" " required></div></div>
@@ -577,20 +267,21 @@
           <p class="form-note">Når du skriver dig op, siger du ja til at få Sagsvagts mail. Vi bruger kun dine oplysninger til det, og du kan afmelde dig når som helst. Læs <a href="privatliv.html">hvordan vi behandler dine oplysninger</a>.</p>
         </form>
         <div class="done" aria-live="polite">
-          <svg class="mark" viewBox="0 0 168 224" aria-hidden="true" style="color:var(--kalk)"><use href="#maerke"/></svg>
+          <svg class="mark" viewBox="0 0 168 224" aria-hidden="true" style="color:var(--nat)"><use href="#maerke"/></svg>
           <h3>Du er skrevet op.</h3>
           <p class="done-tekst">Vi har sendt dig en kvittering, og vi giver besked, når din kommune er klar. Den første mail lander en mandag kl. 07.00.</p>
           <p class="tjek">Kan du ikke finde vores mails? Tjek også din mappe med uønsket mail, og markér dem som "Ikke uønsket".</p>
           <div class="henvis" hidden>
             <p class="henvis-titel">Kender du nogen, der også bør følge med?</p>
-            <div class="henvis-rad"><input id="henvisLink" type="text" readonly aria-label="Dit link til Sagsvagt"><button type="button" class="btn btn-lys btn-lille" id="henvisKnap">Kopiér</button></div>
+            <div class="henvis-rad"><input id="henvisLink" type="text" readonly aria-label="Dit link til Sagsvagt"><button type="button" class="btn btn-primaer btn-lille" id="henvisKnap">Kopiér</button></div>
             <p class="henvis-svar" role="status"></p>
           </div>
         </div>
       </div>
+  </div>
 </div>
 
-<footer>
+<footer class="korn">
   <div class="wrap">
     <svg class="logo-svg" viewBox="0 0 964.08 300.00" role="img" aria-label="Sagsvagt"><use href="#logo"/></svg>
     <a href="eksempel.html">Eksempel på en mail</a><a href="kort.html">Kort over sagerne</a><a href="erhverv.html">Sagsvagt Erhverv</a><a href="boks.html">Sæt Sagsvagt på din hjemmeside</a><a href="priser.html">Priser</a><a href="privatliv.html">Privatliv</a>
@@ -608,7 +299,6 @@
   /* ---------- Filmen af avisen: kun når man ikke har bedt om mindre bevægelse eller mindre data ---------- */
   (() => {
     const film = $("#hero-film"), knap = $("#film-pause");
-    if (reduce || navigator.connection?.saveData) return;
     const ikon = { pause: '<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>', spil: '<path d="M8 5l11 7-11 7z"/>' };
     film.addEventListener("playing", () => knap.classList.add("vis"), { once: true });
     knap.addEventListener("click", () => {
@@ -617,9 +307,18 @@
       knap.setAttribute("aria-label", paa ? "Sæt filmen på pause" : "Afspil filmen");
       knap.querySelector("svg").innerHTML = paa ? ikon.pause : ikon.spil;
     });
-    // Den stående udgave, når feltet er højere end bredt (telefon og tablet på højkant), ellers bliver den brede film meget forstørret
-    film.src = `assets/video/avisen${film.parentElement.offsetHeight > film.parentElement.offsetWidth ? "-mobil" : ""}.mp4`;
-    film.play().catch(() => {});
+    // Den stående udgave, når feltet er højere end bredt (telefon og tablet på højkant), ellers bliver den brede film meget forstørret.
+    // Filmen ligger nede ved tilmeldingen, så den (og stillbilledet) hentes først, når man nærmer sig; uden bevægelse vises kun stillbilledet.
+    const vagt = new IntersectionObserver((e) => {
+      if (!e.some((x) => x.isIntersecting)) return;
+      vagt.disconnect();
+      film.poster = "assets/video/avisen.jpg";
+      if (reduce || navigator.connection?.saveData) return;
+      const felt = film.parentElement;
+      film.src = `assets/video/avisen${felt.offsetHeight > felt.offsetWidth ? "-mobil" : ""}.mp4`;
+      film.play().catch(() => {});
+    }, { rootMargin: "300px" });
+    vagt.observe(film.parentElement);
   })();
 
   // Emnerne fra den gamle demo er væk; tilmeldingen sender stadig feltet valgte_emner (tomt)
@@ -858,7 +557,7 @@
     // Gratis følger man én kommune; flere (Plus og Pro) sætter redaktionen, se priser.html
     if (dele.length > 1) {
       kf.classList.add("bad");
-      msg.className = "form-msg err"; msg.innerHTML = 'Du kan følge én kommune gratis. Vil du følge flere, så <a href="priser.html" style="color:var(--kalk)">se priserne</a>.'; form.kommuner.focus(); return;
+      msg.className = "form-msg err"; msg.innerHTML = 'Du kan følge én kommune gratis. Vil du følge flere, så <a href="priser.html" >se priserne</a>.'; form.kommuner.focus(); return;
     }
     kf.classList.remove("bad");
     if (medlem.checked) {
@@ -900,7 +599,7 @@
     } catch (err) { console.warn("Egen server svarede ikke:", err.message); }
     delete data.adgangskode; // adgangskoden må aldrig stå i en mail
     msg.className = "form-msg err";
-    msg.innerHTML = `Tilmeldingen gik ikke igennem automatisk. <a href="${mailto(data)}" style="color:var(--kalk)">Send den som mail i stedet</a>, så skriver vi dig op.`;
+    msg.innerHTML = `Tilmeldingen gik ikke igennem automatisk. <a href="${mailto(data)}">Send den som mail i stedet</a>, så skriver vi dig op.`;
     btn.disabled = false; btn.classList.remove("busy");
   });
 })();

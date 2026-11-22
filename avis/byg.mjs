@@ -11,6 +11,7 @@ import { stemmeGrafik, stemmeMini } from "./stemmegrafik.mjs";
 import { hoeringsMaerke, laesLaeserfotos, laeserfotoFigur, fotoSideIndhold, bygLuftfotos, luftfotoFigur } from "./grafik.mjs";
 import { findSteder, stedLinks, bygSteder, delRad, DEL_SCRIPT } from "./steder.mjs";
 import { bygBokse } from "./boks.mjs";
+import { forsideDele } from "./forside.mjs";
 import { bygKommuner } from "./kommuner.mjs";
 import { soegIndhold, unikTitel, findKommuneSteder } from "./udgave.mjs";
 import { laesForenklet, forenkletBoks } from "./forenklet.mjs";
@@ -287,11 +288,13 @@ const sidefod = (rod) => `<footer class="foot">
 </footer>
 `;
 // De fælles filer: ét hoved pr. kommune, der har sider, og én sidefod. Links går fra roden (/), så de virker i alle mapper.
+let forsidePapir = null; // papirforsidens to dele, sat af byg() (avis/forside.mjs)
 async function bygFaelles() {
   await rm(join(ROD, "del"), { recursive: true, force: true });
   await mkdir(join(ROD, "del"), { recursive: true });
   for (const [slugK, k] of delteHoveder) await writeFile(join(ROD, "del", `hoved-${slugK}.html`), avishoved("/", "", k));
   await writeFile(join(ROD, "del", "fod.html"), sidefod("/"));
+  if (forsidePapir) for (const [navn, html] of Object.entries(forsidePapir)) await writeFile(join(ROD, "del", `forside-${navn}.html`), html);
   // Prøveside til at tjekke, at serveren sætter filerne ind: https://sagsvagt.dk/del/proeve.html skal vise sidefoden
   await writeFile(join(ROD, "del", "proeve.html"), `<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Prøve</title>\n<!--#include virtual="/del/fod.html" -->\n`);
   console.log(`Fælles filer: ${delteHoveder.size} avishoveder og én sidefod i del/ (${FAELLES ? "siderne bruger dem" : "siderne bruger dem ikke endnu"})`);
@@ -622,6 +625,10 @@ async function main() {
     beskrivelse: "Det, politikerne i Københavns Kommune har besluttet og skal tage stilling til. Fra Borgerrepræsentationen, udvalgene og lokaludvalgene, hentet fra de officielle referater.",
     sti: "index.html", rod: "", indhold: forside, aktiv: "forside",
   }));
+
+  // Papirforsiden på sagsvagt.dk (vagt.html): Dagens sag, collagen og seks nye sager (avis/forside.mjs). Skrives i del/ af bygFaelles.
+  const jsonFil = (sti) => readFile(join(ROD, sti), "utf8").then(JSON.parse).catch(() => ({}));
+  forsidePapir = forsideDele({ sager, gitter, top, idag: IDAG, hoeringer: (await jsonFil("assets/naerhed.json")).hoeringer, valg: await jsonFil("avis/forside.json"), H });
 
   // Sagssider
   const prUdvalg = new Map();

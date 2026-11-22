@@ -1,0 +1,11 @@
+{
+  "_": "Papirforsiden (avis/forside.mjs). collager: billedet øverst, så længe høringen er åben. opslag: opslagets billeder under Dagens sag, så længe sagen ikke er behandlet. Er der ingen, vælger robotten selv.",
+  "collager": [
+    { "hoering": "330", "sag": "kk-2026-11-26-kongens-enghave-lokaludvalg-5", "billede": "assets/nyt/luftfoto.webp", "bredde": 1000, "hoejde": 656,
+      "alt": "Luftfoto af Jernbanebyen med lokalplanens grænse", "tekst": "Jernbanebyen · ny lokalplan i høring · Luftfoto: Klimadatastyrelsen" }
+  ],
+  "opslag": [
+    { "sag": "kk-2026-11-26-borgerrepræsentationen-2", "billeder": ["assets/nyt/stormflod-1.webp", "assets/nyt/stormflod-2.webp", "assets/nyt/stormflod-3.webp", "assets/nyt/stormflod-4.webp", "assets/nyt/stormflod-5.webp"],
+      "alt": ["Stormflod: Politikerne skal frigive penge til første fase af stormflodssikringen", "113 mio. kroner skal bruges på at undersøge, hvordan sikringen påvirker miljøet", "Staten og fire kommuner er med: København, Tårnby, Dragør og Hvidovre", "Borgerrepræsentationen beslutter det 26. november", "Vi læser dagsordenerne og siger til, når sagen er på igen"] }
+  ]
+}

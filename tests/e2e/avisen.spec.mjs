@@ -18,6 +18,18 @@ test("forsiden er tilmeldingen til Sagsvagt", async ({ page }) => {
   await expect(page.locator("h1").first()).toBeVisible();
 });
 
+test("forsiden har Dagens sag og seks sager, og flyder ikke ud over skærmen", async ({ page }) => {
+  await page.goto("/");
+  // Delene sættes ind af serveren (del/forside-*.html, avis/forside.mjs)
+  await expect(page.locator(".collage .foto")).toBeVisible();
+  await expect(page.locator("#dagens-h a")).toHaveAttribute("href", /^\/sag\//);
+  await expect(page.locator(".sagkort")).toHaveCount(6);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(1);
+  await page.locator("#fk").fill("Aarhus");
+  await page.locator("#find-kommune button").click();
+  await expect(page).toHaveURL(/kommune\/aarhus\.html$/);
+});
+
 test("avisen viser sager, og en sag kan åbnes", async ({ page }) => {
   await page.goto("/index.html");
   await expect(page.locator("h1").first()).toBeVisible();
