@@ -599,7 +599,7 @@
   /* ---------- Papirdesignet (Asger 22/11-2026) ----------
      Som sagsvagt.dk: mørkt papir øverst med én revet kant ned til siden, det store ord, og felter på revet, lyst papir.
      Papirerne ligger i ../assets/nyt/. */
-  main { overflow-x: clip; }
+  main { overflow: clip; }
   /* Appen: et mørkt bånd bag klokken, så sidens tekst ikke ruller ind under den */
   body::before { content: ""; position: fixed; left: 0; right: 0; top: 0; height: env(safe-area-inset-top, 0px); z-index: 45; background: var(--nat); pointer-events: none; }
   .min-hoved { position: relative; z-index: 30; } /* over alt indhold: bundmenuen på telefonen ligger herinde */
@@ -641,7 +641,7 @@
 
   /* Møder, bydel og gemte på et nyt stykke papir */
   .min-under { position: relative; isolation: isolate; border-top: 0; margin: 60px 0 0; padding: 40px 0 72px; }
-  .min-under::before { content: ""; position: absolute; z-index: -2; top: 22px; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: var(--kalk-lys) url(../assets/nyt/papir.webp) 0 0 / 640px repeat; }
+  .min-under::before { content: ""; position: absolute; z-index: -2; top: 22px; bottom: -3000px; left: 50%; width: 100vw; transform: translateX(-50%); background: var(--kalk-lys) url(../assets/nyt/papir.webp) 0 0 / 640px repeat; }
   .min-under::after { content: ""; position: absolute; z-index: -1; top: -44px; left: 50%; width: 100vw; height: 120px; transform: translateX(-50%); background: url(../assets/nyt/kant-kalk.webp) center top / 1440px 120px repeat-x; pointer-events: none; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
   .min-under .sec-h { font-size: var(--t2); font-weight: 800; letter-spacing: -.02em; color: var(--nat); border-bottom-color: rgba(14,15,20,.2); }
 
@@ -699,8 +699,9 @@
   .radar-skaerm::before, .radar-mini::before { content: ""; position: absolute; inset: -2.5%; z-index: -1; background: var(--kalk-lys) url(../assets/nyt/papir.webp) 0 0 / 640px repeat; -webkit-mask: url(../assets/nyt/skive-indigo.webp) center / 142% no-repeat; mask: url(../assets/nyt/skive-indigo.webp) center / 142% no-repeat; }
   .radar-gitter > .radar-skaerm { filter: drop-shadow(0 3px 5px rgba(0,0,0,.5)) drop-shadow(0 18px 24px rgba(0,0,0,.45)); }
   .radar-skaerm .radar-bund { background: url(../assets/nyt/papir-m.webp) 0 0 / 640px repeat; -webkit-mask: url(../assets/nyt/skive-skifer.webp) center / 124% no-repeat; mask: url(../assets/nyt/skive-skifer.webp) center / 124% no-repeat; }
-  .radar-bund .leaflet-tile-pane { filter: grayscale(1) contrast(1.12) brightness(1.04); }
-  .radar-bund .leaflet-map-pane { mix-blend-mode: multiply; } /* kortet trykt på papiret */
+  .radar-skaerm .radar-bund { filter: grayscale(1) sepia(.2) contrast(1.06); } /* kortet trykt på papiret; hele fladen, for Safari mister filteret på fliserne */
+  .radar-bund .leaflet-tile-pane { filter: none; }
+  .radar-bund.klar .leaflet-tile-pane { opacity: .86; }
   .radar-skaerm::after { display: none; }
   .radar-sweep { -webkit-mask: url(../assets/nyt/skive-skifer.webp) center / 124% no-repeat; mask: url(../assets/nyt/skive-skifer.webp) center / 124% no-repeat; }
   .radar-skaerm .radar-sweep, .radar-mini .radar-sweep { inset: 0; -webkit-mask: none; mask: none; background: conic-gradient(from 0deg, transparent 0 76%, rgba(40,55,122,.03) 78%, rgba(40,55,122,.2) 99.6%, rgba(40,55,122,.46) 100%); -webkit-clip-path: circle(46.5%); clip-path: circle(46.5%); }

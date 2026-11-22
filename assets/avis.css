@@ -622,6 +622,72 @@ h1.hl, .listing > h1 { font-weight: 800; }
 .lead .hl { font-weight: 800; }
 @media (forced-colors: active) { .lead > :is(.lead-billede, .kort-billede)::after { display: none; } }
 
+/* Papir overalt (Asger 22/11-2026: "avisdesignet skal bare være over alt"). Kun stil, så siderne ikke skal bygges om.
+   Lister og oversigter: overskriften står på det mørke papir i forlængelse af sidehovedet, med én revet kant ned til siden. */
+main { overflow-x: clip; }
+body:has(> main > .wrap > :is(.listing, .emne-oversigt, .foto-side, .kort-h)) > .masthead::after { display: none; }
+body:has(> main > .wrap > :is(.listing, .emne-oversigt, .foto-side, .kort-h)) > main { padding-top: 0; }
+main > .wrap > :is(.listing, .emne-oversigt) { max-width: none; padding-top: 0; }
+main > .wrap > .listing > *:not(h1) { max-width: 860px; }
+main > .wrap > .listing:is(.partier-side, .boks-side, .kommune-side) > *:not(h1) { max-width: none; }
+main > .wrap > :is(.listing, .emne-oversigt, .foto-side) > h1, main > .wrap > h1.kort-h { position: relative; isolation: isolate; max-width: none; margin: 0 0 76px; padding: 34px 0 40px; color: var(--kalk); font-weight: 800; font-size: clamp(2.125rem, 1.4rem + 3.1vw, 3.75rem); line-height: 1.04; letter-spacing: -.035em; text-wrap: balance; }
+main > .wrap > :is(.listing, .emne-oversigt, .foto-side) > h1::before, main > .wrap > h1.kort-h::before { content: ""; position: absolute; z-index: -2; top: -120px; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: var(--nat) url(nyt/korn.webp) center top / 720px auto repeat; }
+main > .wrap > :is(.listing, .emne-oversigt, .foto-side) > h1::after, main > .wrap > h1.kort-h::after { content: ""; position: absolute; z-index: -1; top: calc(100% - 6px); left: 50%; width: 100vw; height: 60px; transform: translateX(-50%) scaleY(-1); background: url(nyt/kant-nat.webp) center top / 1440px 120px repeat-x; pointer-events: none; }
+main > .wrap > .listing > .kicker:first-child { position: relative; z-index: 1; margin: 0; padding: 26px 0 0; color: var(--lyng); font-weight: 700; font-size: var(--sekundaer); }
+main > .wrap > .listing > .kicker:first-child a { color: inherit; }
+main > .wrap > .listing > .kicker:first-child + h1 { padding-top: 6px; }
+main > .wrap > .foto-side { padding-top: 0; }
+:is(.listing, .moeder) .hl, .notitser li a, .kortnyt li a { font-weight: 700; }
+/* Flader som papir: bladhjørner, papirets korn og en blød skygge */
+.moede, .prisk, .foto-form, .kf, .leder { background: var(--kalk-lys) url(nyt/papir.webp) 0 0 / 640px repeat; border-radius: var(--r-blad); box-shadow: 0 1px 2px rgba(14,15,20,.1), 0 18px 32px -24px rgba(14,15,20,.45); }
+main > .wrap > .listing > .moede { padding: 22px; border-bottom: 0; }
+.moede-dato { background: var(--vin); border-radius: 10px 3px; transform: rotate(-2deg); color: var(--kalk-lys); }
+.moede-dato span { color: rgba(238,232,222,.85); }
+.prisk.fremhaev, .kommune-tilmeld { position: relative; overflow: hidden; isolation: isolate; background: var(--nat) url(nyt/korn.webp) center top / 720px auto repeat; }
+body .kommune-tilmeld { background: var(--nat) url(nyt/korn.webp) center top / 720px auto repeat; border-radius: var(--r-blad); }
+.prisk.fremhaev::before { content: ""; position: absolute; z-index: -1; right: -70px; top: -80px; width: 210px; aspect-ratio: 1; background: url(nyt/skive-indigo.webp) center / contain no-repeat; pointer-events: none; }
+.chips a:not([aria-current]), .chips button:not([aria-pressed="true"]), .fane:not([aria-selected="true"]) { background: rgba(238,232,222,.75); box-shadow: inset 0 0 0 1px rgba(14,15,20,.14); border-radius: 9px 3px; }
+.chips a:not([aria-current]):hover, .chips button:not([aria-pressed="true"]):hover, .fane:not([aria-selected="true"]):hover { box-shadow: inset 0 0 0 1.5px var(--nat); }
+.chips a[aria-current], .chips button[aria-pressed="true"], .fane[aria-selected="true"] { border-radius: 9px 3px; }
+.vis-flere { background: var(--nat); color: var(--kalk); font-weight: 700; }
+.vis-flere:hover { background: var(--grafit); }
+/* Sagernes små billeder er revet ud */
+.gk-billede { filter: drop-shadow(0 1px 1px rgba(14,15,20,.35)); }
+.gk-billede img, .moede .gk-billede img { border-radius: 0; -webkit-mask: url(nyt/riv-maske.webp) center / 111% 114% no-repeat; mask: url(nyt/riv-maske.webp) center / 111% 114% no-repeat; }
+.gk:nth-child(odd) .gk-billede { transform: rotate(-.8deg); }
+.gk:nth-child(even) .gk-billede { transform: rotate(.7deg); }
+/* "Flere sager" på et nyt stykke papir */
+.gitter { position: relative; isolation: isolate; border-top: 0; margin: 64px 0 0; padding: 26px 0 64px; }
+.gitter::before { content: ""; position: absolute; z-index: -2; top: 22px; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); background: var(--kalk-lys) url(nyt/papir.webp) 0 0 / 640px repeat; }
+.gitter::after { content: ""; position: absolute; z-index: -1; top: -44px; left: 50%; width: 100vw; height: 120px; transform: translateX(-50%); background: url(nyt/kant-kalk.webp) center top / 1440px 120px repeat-x; pointer-events: none; -webkit-mask-image: linear-gradient(#000 60%, transparent); mask-image: linear-gradient(#000 60%, transparent); }
+.forside .gitter + .paa-mail { margin-top: 48px; }
+/* Bunden rives op over siden, og bundmenuen er lyst papir */
+footer.foot { position: relative; isolation: isolate; margin-top: 0; }
+body > main { padding-bottom: 56px; }
+body:has(> main > .forside > .gitter) > main, body:has(.min-under) > main { padding-bottom: 0; }
+.forside:has(> .gitter:last-child) { padding-bottom: 0; }
+/* Det nederste stykke papir går helt ned til bunden, så det ikke ender i en lige streg. main klipper det, så siden ikke bliver længere */
+.gitter ~ *, .min-under ~ * { position: relative; }
+@supports (overflow: clip) {
+  body > main { overflow: clip; }
+  .gitter::before, .min-front .min-under::before { bottom: -3000px; }
+  body > main > .wrap > .article > .side::before { bottom: -3000px; }
+}
+footer.foot::before { content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: -56px; height: 62px; background: url(nyt/kant-nat.webp) center top / 1440px 120px repeat-x; pointer-events: none; }
+.tabbar { background: var(--kalk-lys) url(nyt/papir.webp) 0 0 / 640px repeat; }
+/* To sider, der kunne trækkes sidelæns på telefonen */
+.foto-form, .foto-form .felt { grid-template-columns: minmax(0, 1fr); }
+.foto-form :is(input[type="text"], input[type="email"], input[type="file"], textarea) { width: 100%; min-width: 0; max-width: 100%; }
+form.foto-form :is(input[type="text"], input[type="email"], textarea) { background: var(--kalk); border-color: var(--felt-kant); }
+.omfang { overflow-x: auto; }
+@media (max-width: 720px) {
+  main > .wrap > :is(.listing, .emne-oversigt, .foto-side) > h1, main > .wrap > h1.kort-h { padding: 14px 0 26px; margin-bottom: 66px; }
+  main > .wrap > .listing > .kicker:first-child { padding-top: 12px; }
+  main > .wrap > .listing > .moede { padding: 16px; }
+  main > .wrap > .listing > .kicker:first-child + h1 { padding-top: 4px; }
+}
+@media (forced-colors: active) { .prisk.fremhaev::before { display: none; } }
+
 /* ---------- Sagssiden i papirdesignet (Asger 22/11-2026) ----------
    Kun stil, så de 34.000 sagssider ikke skal bygges og uploades igen. Gælder avisens sagssider (sag/), ikke sagsvinduet i Min avis.
    Øverst mørkt papir med overskriften og sagens billede revet ud, datoen på et stykke papir, så én revet kant ned til teksten;

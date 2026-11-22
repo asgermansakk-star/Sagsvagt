@@ -12,13 +12,11 @@
 <link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/montserrat.css">
 <!-- Salgssiden for Sagsvagt Erhverv (HANDLEPLAN-SAGSVAGT.md: produktstigen og segmenterne). Samme stil som forsiden (vagt.html):
-     natkortet bag toppen, avisens kickers og streger, knapper let afrundede. Rapporterne bygges af avis/signaler.mjs. -->
+     mørkt papir i toppen, avisens kickers og streger, knapper let afrundede. Rapporterne bygges af avis/signaler.mjs. -->
 <style>
   :root {
     --nat: #0E0F14; --grafit: #2A2B33; --kalk: #E6DFD3; --kalk-lys: #EEE8DE; --kalk-mork: #D9D1C3; --muted: #56535A; --rule: #CFC6B8;
     --bordeaux: #3E0E14; --vin: #8A2430; --rubin: #B04A50; --rosen: #DCA9A5; --blaek: #0C1430; --indigo: #28377A; --skifer: #5D6BA8; --lyng: #B7BBD8;
-    --moedet: radial-gradient(80% 110% at 0% 20%, var(--skifer) 0%, var(--indigo) 26%, var(--blaek) 54%, transparent 76%),
-              radial-gradient(75% 100% at 100% 100%, var(--rubin) 0%, var(--vin) 26%, var(--bordeaux) 54%, transparent 78%), var(--nat);
     --sans: "Montserrat", system-ui, sans-serif; --r-knap: 8px; --r-felt: 12px; --r-kort: 16px;
     /* Statusfarver som på resten af Sagsvagt (assets/avis.css) */
     --fejl: var(--vin); --fejl-flade: #F3DEDB; --ok: var(--indigo); --ok-flade: #DCDFEE; --felt-kant: #7E7A76;
@@ -29,7 +27,7 @@
   .spring:focus { top: 12px; }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-  body { margin: 0; background: var(--kalk); color: var(--nat); font: 500 1.0625rem/1.55 var(--sans); -webkit-font-smoothing: antialiased; }
+  body { margin: 0; background: linear-gradient(rgba(230,223,211,.5), rgba(230,223,211,.5)), var(--kalk) url(assets/nyt/papir-m.webp) 0 0 / 640px repeat; color: var(--nat); font: 500 1.0625rem/1.55 var(--sans); -webkit-font-smoothing: antialiased; }
   h1, h2, h3, p { margin: 0; }
   a { color: var(--indigo); text-underline-offset: 3px; }
   :focus-visible { outline: 3px solid var(--skifer); outline-offset: 3px; }
@@ -42,8 +40,8 @@
   .btn-stille { background: transparent; color: var(--kalk); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.45); }
   .btn-stille:hover { background: rgba(230,223,211,.08); }
 
-  /* Top på natkortet */
-  .top { color: var(--kalk); background: linear-gradient(90deg, rgba(14,15,20,.55), rgba(14,15,20,.1) 62%), linear-gradient(135deg, rgba(40,55,122,.55), rgba(14,15,20,.4) 55%, rgba(62,14,20,.6)), url("assets/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet); }
+  /* Toppen på mørkt papir med en revet kant ned til siden */
+  .top { color: var(--kalk); background: var(--nat) url(assets/nyt/korn.webp) center top / 720px auto repeat; }
   .bar { display: flex; align-items: center; gap: 12px; min-height: 68px; border-bottom: 1px solid rgba(230,223,211,.14); }
   .logo { display: flex; align-items: center; gap: 10px; margin-right: auto; color: var(--kalk); text-decoration: none; }
   .logo img { height: 30px; display: block; }
@@ -71,7 +69,7 @@
   .sig b { display: block; font-size: .9375rem; line-height: 1.3; margin-top: 2px; }
 
   section.afsnit { padding: 88px 0; }
-  section.afsnit + section.afsnit { border-top: 1px solid var(--rule); }
+  section.afsnit + section.afsnit { border-top: 1px solid rgba(14,15,20,.14); }
   .afsnit h2 { font: 800 clamp(1.75rem, 1.2rem + 1.8vw, 2.625rem)/1.1 var(--sans); letter-spacing: -.02em; max-width: 22ch; }
   .afsnit .intro { margin: 14px 0 36px; max-width: 40em; color: var(--muted); font-size: 1.125rem; }
 
@@ -92,12 +90,23 @@
   .pro p { color: var(--muted); font-size: .9375rem; max-width: 44em; }
   .pro b { color: var(--nat); }
 
-  /* Natkortene er lavet af OpenStreetMap-fliser, så kilden står i hjørnet (ODbL) */
-  .top, .pilot { position: relative; }
-  .top::after, .pilot::after { content: "Kort: © OpenStreetMap-bidragydere"; position: absolute; right: 12px; bottom: 6px; font: 500 10px/1.2 var(--sans); color: rgba(230,223,211,.7); pointer-events: none; }
+  /* Papirdesignet (22/11-2026) */
+  .top, .pilot { position: relative; isolation: isolate; }
+  .top { margin-bottom: 40px; overflow-x: clip; }
+  .helt h1 { margin-bottom: 28px; }
+  .top::before { content: ""; position: absolute; z-index: -1; right: max(-140px, -10vw); top: 40px; width: min(520px, 80vw); aspect-ratio: 1; background: url(assets/nyt/skive-indigo.webp) center / contain no-repeat; pointer-events: none; }
+  .top::after { content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: calc(100% - 6px); height: 60px; background: url(assets/nyt/kant-nat.webp) center top / 1440px 120px repeat-x; transform: scaleY(-1); pointer-events: none; }
+  html { background: var(--nat); }
+  .produkt, .funk div, .udsnit { background: var(--kalk-lys) url(assets/nyt/papir.webp) 0 0 / 640px repeat; border: 0; border-radius: 22px 6px; box-shadow: 0 1px 2px rgba(14,15,20,.1), 0 18px 32px -22px rgba(14,15,20,.5); }
+  .udsnit { box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 30px 60px -20px rgba(0,0,0,.85); transform: rotate(-.8deg); }
+  .sig img, .produkt img { border-radius: 0; -webkit-mask: url(assets/nyt/riv-maske.webp) center / 111% 114% no-repeat; mask: url(assets/nyt/riv-maske.webp) center / 111% 114% no-repeat; }
+  .pilot { overflow: hidden; }
+  .pilot::before { content: ""; position: absolute; z-index: -1; right: -80px; top: -110px; width: 320px; aspect-ratio: 1; background: url(assets/nyt/skive-indigo.webp) center / contain no-repeat; pointer-events: none; }
+  footer { position: relative; isolation: isolate; margin-top: 40px; }
+  footer::before { content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: -56px; height: 62px; background: url(assets/nyt/kant-nat.webp) center top / 1440px 120px repeat-x; pointer-events: none; }
   /* Pilot */
-  .pilot { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: center; padding: 40px 44px; border-radius: 20px; color: var(--kalk);
-    background: linear-gradient(135deg, rgba(40,55,122,.6), rgba(14,15,20,.55) 55%, rgba(62,14,20,.65)), url("assets/natkort/koebenhavn.jpg") center / cover no-repeat, var(--moedet); }
+  .pilot { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px 48px; align-items: center; padding: 40px 44px; border-radius: 22px 6px; color: var(--kalk);
+    background: var(--nat) url(assets/nyt/korn.webp) center top / 720px auto repeat; }
   .pilot .kicker { color: var(--rosen); }
   .pilot h2 { color: var(--kalk); max-width: 20ch; }
   .pilot p { margin-top: 12px; color: rgba(230,223,211,.85); max-width: 38em; }
@@ -140,7 +149,7 @@
   .valgte button { border: 0; border-radius: 999px; min-height: 44px; padding: 4px 14px; background: var(--nat); color: var(--kalk); font: 700 .8125rem var(--sans); cursor: pointer; }
   label.tjek { display: flex; gap: 10px; align-items: flex-start; font-weight: 500; font-size: .875rem; }
   label.tjek input { width: auto; min-height: 0; margin-top: 4px; }
-  footer { background: var(--nat); color: rgba(230,223,211,.72); font-size: .875rem; }
+  footer { background: var(--nat) url(assets/nyt/korn.webp) center top / 720px auto repeat; color: rgba(230,223,211,.72); font-size: .875rem; }
   footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding-top: 32px; padding-bottom: 36px; }
   footer img { height: 28px; }
   footer a { color: var(--kalk); }

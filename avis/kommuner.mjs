@@ -31,7 +31,7 @@ export async function bygKommuner({ sager, andre = [], alle = [], soegValg = [],
   const eksempel = `<ul class="notitser">${eksempler.map((s) => `<li><span class="nh-hvor">${esc(erLokaludvalg(s.udvalg) ? bydel(s.udvalg) : s.udvalg)} <span class="nh-dato">${kortDato(s.dato)}</span></span> <a href="../${s.url}">${esc(s.titel)}</a></li>`).join("")}</ul>`;
   const stil = `<style>
   .kommune-side .kicker a { color: inherit; }
-  .kommune-tilmeld { background: var(--moedet); color: var(--kalk); border-radius: 12px; padding: 24px 26px; margin: 26px 0 34px; display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; justify-content: space-between; }
+  .kommune-tilmeld { background: var(--nat); color: var(--kalk); border-radius: 12px; padding: 24px 26px; margin: 26px 0 34px; display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; justify-content: space-between; }
   .kommune-tilmeld p { margin: 0; max-width: 34em; }
   .kommune-tilmeld b { display: block; font-size: 1.125rem; margin-bottom: 4px; }
   .kommune-tilmeld .btn { white-space: nowrap; }

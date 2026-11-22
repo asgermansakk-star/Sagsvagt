@@ -9,20 +9,19 @@
 <link rel="stylesheet" href="../../assets/fonts/montserrat.css">
 <style>
   :root { --nat: #0E0F14; --kalk: #E6DFD3; --kalk-lys: #EEE8DE; --rule: #CFC6B8; --muted: #56535A; --vin: #8A2430; --indigo: #28377A;
-    --moedet: radial-gradient(80% 160% at 0% 0%, #5D6BA8 0%, #28377A 22%, #0C1430 48%, transparent 72%), radial-gradient(70% 160% at 100% 100%, #B04A50 0%, #8A2430 22%, #3E0E14 50%, transparent 75%), #0E0F14;
     --bg: var(--kalk-lys); --tekst: var(--nat); --streg: var(--rule); --svag: var(--muted); }
   .moerk { --bg: #17181F; --tekst: var(--kalk); --streg: rgba(230,223,211,.16); --svag: rgba(230,223,211,.66); }
   * { box-sizing: border-box; }
   /* Boksen fylder den højde, iframen får: listen tager pladsen i midten, og knappen står altid nederst */
   html, body { margin: 0; height: 100%; background: transparent; }
   body { font: 500 15px/1.4 Montserrat, system-ui, sans-serif; color: var(--tekst); -webkit-font-smoothing: antialiased; }
-  .b { background: var(--bg); border: 1px solid var(--streg); border-radius: 12px; overflow: hidden; height: 100%; display: flex; flex-direction: column; }
+  .b { background: var(--bg); border: 1px solid var(--streg); border-radius: 22px 6px; overflow: hidden; height: 100%; display: flex; flex-direction: column; }
   header, footer { flex: none; }
   ol { flex: 1; min-height: 0; overflow: hidden; }
-  header { background: var(--moedet); color: var(--kalk); padding: 14px 18px 14px; }
+  header { background: var(--nat) url(https://sagsvagt.dk/assets/nyt/korn.webp) center top / 720px auto repeat; color: var(--kalk); padding: 14px 18px 14px; }
   header a { color: inherit; display: inline-block; line-height: 0; }
   .logo { height: 30px; width: auto; margin-left: -6px; }
-  h1 { margin: 8px 0 0; font-size: 17px; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
+  h1 { margin: 8px 0 0; font-size: 17px; font-weight: 800; line-height: 1.25; letter-spacing: -.01em; }
   ol { list-style: none; margin: 0; padding: 4px 18px; }
   li { padding: 11px 0; border-top: 1px solid var(--streg); }
   li:first-child { border-top: 0; }

@@ -24,7 +24,6 @@
 :root {
   --nat: #0E0F14; --grafit: #2A2B33; --kalk: #E6DFD3; --kalk-lys: #EEE8DE; --kalk-mork: #D9D1C3; --muted: #56535A; --rule: #CFC6B8;
   --bordeaux: #3E0E14; --vin: #8A2430; --rubin: #B04A50; --rosen: #DCA9A5; --blaek: #0C1430; --indigo: #28377A; --skifer: #5D6BA8; --lyng: #B7BBD8;
-  --moedet: radial-gradient(80% 110% at 0% 20%, var(--skifer) 0%, var(--indigo) 26%, var(--blaek) 54%, transparent 76%), radial-gradient(75% 100% at 100% 100%, var(--rubin) 0%, var(--vin) 26%, var(--bordeaux) 54%, transparent 78%), var(--nat);
   --sans: "Montserrat", system-ui, sans-serif;
   --ease: cubic-bezier(.2,.7,.2,1);
 }
@@ -48,17 +47,21 @@ a { color: inherit; }
 .kort { min-height: 100svh; scroll-snap-align: start; scroll-snap-stop: always; display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; overflow-wrap: break-word; hyphens: auto;
   padding: calc(72px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom)); }
 .indre { width: 100%; max-width: 480px; margin: 0 auto; }
-.moedet { background: var(--moedet); }
+/* Papirdesignet (22/11-2026): mørkt papir med revne stykker på intro og slut, og sagerne på lyst papir */
+.moedet { position: relative; isolation: isolate; overflow: hidden; background: var(--nat) url(assets/nyt/korn.webp) center top / 720px auto repeat; }
+.moedet::before { content: ""; position: absolute; z-index: -1; right: -120px; top: -60px; width: min(460px, 88vw); aspect-ratio: 1; background: url(assets/nyt/skive-indigo.webp) center / contain no-repeat; }
+.moedet::after { content: ""; position: absolute; z-index: -1; left: -90px; bottom: -10px; width: 420px; aspect-ratio: 520 / 179; background: url(assets/nyt/strimmel-vin.webp) center / contain no-repeat; transform: rotate(-9deg); }
+.kort { background: var(--nat) url(assets/nyt/korn.webp) center top / 720px auto repeat; }
 
 /* Intro og slut */
 .kicker { font: 600 .8125rem/1.3 var(--sans); color: rgba(230,223,211,.72); margin: 0 0 10px; }
 h1, h2 { margin: 0; letter-spacing: -.02em; }
-h1 { font-size: clamp(2.1rem, 1.5rem + 3vw, 2.75rem); line-height: 1.08; font-weight: 700; }
+h1 { font-size: clamp(2.1rem, 1.5rem + 3vw, 2.75rem); line-height: 1.05; font-weight: 800; letter-spacing: -.03em; }
 .lead { margin: 16px 0 0; color: rgba(230,223,211,.84); font-size: 1.0625rem; }
 .emner { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; }
 .emne { font: 600 .9375rem/1 var(--sans); min-height: 44px; padding: 10px 14px; border: 0; border-radius: 8px; cursor: pointer;
-  color: var(--kalk); background: transparent; box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.35); transition: background .2s, color .2s, box-shadow .2s; }
-.emne[aria-pressed="true"] { background: var(--kalk); color: var(--nat); box-shadow: none; }
+  color: var(--kalk); background: rgba(14,15,20,.55); box-shadow: inset 0 0 0 1.5px rgba(230,223,211,.35); transition: background .2s, color .2s, box-shadow .2s; }
+.emne[aria-pressed="true"] { border-radius: 9px 3px; background: var(--kalk-lys) url(assets/nyt/papir.webp) 0 0 / 640px repeat; color: var(--nat); box-shadow: none; }
 .hjaelp { margin: 10px 0 0; font-size: .8125rem; color: rgba(230,223,211,.66); }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 0; border-radius: 8px; cursor: pointer;
   font: 600 1.0625rem/1.2 var(--sans); text-decoration: none; transition: background .2s, box-shadow .2s, transform .15s var(--ease); }
@@ -70,13 +73,13 @@ h1 { font-size: clamp(2.1rem, 1.5rem + 3vw, 2.75rem); line-height: 1.08; font-we
 .handlinger { display: grid; gap: 10px; margin-top: 28px; }
 
 /* Sagskortet */
-.sag { background: var(--kalk); color: var(--nat); border-radius: 14px; padding: 24px 20px 20px; display: grid; gap: 14px; }
+.sag { background: var(--kalk-lys) url(assets/nyt/papir.webp) 0 0 / 640px repeat; color: var(--nat); border-radius: 22px 6px; box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 30px 60px -20px rgba(0,0,0,.8); padding: 24px 20px 20px; display: grid; gap: 14px; }
 .sag .linje { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .status { font: 700 .75rem/1 var(--sans); padding: 6px 10px; border-radius: 6px; background: var(--kalk-mork); color: var(--grafit); }
 .status.kommer { background: var(--lyng); color: var(--blaek); }
 .status.besluttet { background: var(--rosen); color: var(--bordeaux); }
 .tag { font: 600 .75rem/1 var(--sans); padding: 6px 10px; border-radius: 6px; box-shadow: inset 0 0 0 1.5px var(--rule); color: var(--muted); }
-.sag h2 { font-size: clamp(1.375rem, 1.1rem + 1.4vw, 1.625rem); line-height: 1.2; font-weight: 700; }
+.sag h2 { font-size: clamp(1.375rem, 1.1rem + 1.4vw, 1.625rem); line-height: 1.2; font-weight: 800; }
 .sag p { margin: 0; color: #3E3B40; font-size: 1rem; line-height: 1.55; }
 .sag .hvem { font-size: .8125rem; color: var(--muted); }
 .sag .kt { font-size: .8125rem; color: var(--muted); margin-top: -6px; }
