@@ -50,6 +50,9 @@ test("sagssiden på papir: overskrift, billede, datomærkat og flere sager, uden
   await expect(hoved.locator("figure img").first()).toBeVisible();
   await expect(hoved.locator(".status")).toBeVisible();
   await expect(page.locator(".side .mini").first()).toBeVisible();
+  // Pilen ved "Læs hele sagen" bliver på linjen og inden for kanten, også på små telefoner
+  await page.setViewportSize({ width: 375, height: 800 });
+  expect((await page.locator(".hel-sag summary").boundingBox()).height).toBeLessThanOrEqual(80);
   expect(await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)).toBeLessThanOrEqual(1);
 });
 

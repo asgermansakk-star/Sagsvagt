@@ -6,8 +6,11 @@ const { readFileSync, existsSync } = require("node:fs");
 const { join } = require("node:path");
 
 const PORT = 4400;
-const sag = JSON.parse(readFileSync(join(__dirname, "assets", "sager.json"), "utf8")).sager[0].url;
-const sider = ["", "index.html", sag, "kommune/aarhus.html", "soeg.html"];
+const { sager } = JSON.parse(readFileSync(join(__dirname, "assets", "sager.json"), "utf8"));
+const sag = sager[0].url;
+// Den nyeste sag med luftfoto: den tungeste slags sagsside (luftfotoet er det store billede øverst)
+const luft = sager.find((s) => /plankort\//.test(s.b || "") && existsSync(join(__dirname, s.b.replace("plankort", "luftfoto"))))?.url;
+const sider = ["", "index.html", sag, ...(luft && luft !== sag ? [luft] : []), "kommune/aarhus.html", "soeg.html"];
 
 // Lokalt bruges Playwrights Chromium; i GitHub Actions den Chrome, der følger med maskinen
 let chromePath = process.env.CHROME_PATH;

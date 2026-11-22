@@ -60,7 +60,8 @@ export async function indlaesSkrift(ROD) {
 }
 
 // SVG → JPEG-buffer
-export function svgTilJpeg(svg, fontFiles, kvalitet = 80) {
-  const r = new Resvg(svg, { font: { fontFiles, loadSystemFonts: false, defaultFontFamily: "Montserrat" } }).render();
+// bredde: skalér billedet (luftfotos vises højst ca. 500 px brede, så 1000 px er nok)
+export function svgTilJpeg(svg, fontFiles, kvalitet = 80, bredde = 0) {
+  const r = new Resvg(svg, { ...(bredde ? { fitTo: { mode: "width", value: bredde } } : {}), font: { fontFiles, loadSystemFonts: false, defaultFontFamily: "Montserrat" } }).render();
   return jpeg.encode({ data: r.pixels, width: r.width, height: r.height }, kvalitet).data;
 }

@@ -64,7 +64,6 @@ fetch("api/foto.php",{method:"POST",credentials:"same-origin",headers:{"X-Sagsva
 // Et luftfoto af planområdet med planens grænse, til sager med plankort. WMS-billedet hentes for præcis kortets udsnit.
 export async function bygLuftfotos(plankort, h) {
   const token = process.env.DATAFORSYNINGEN_TOKEN, ud = new Map();
-  if (!token) return ud;
   const { hent, px, xml, C, indlaesSkrift, svgTilJpeg } = await import("./kortbase.mjs");
   const { fontFiles } = await indlaesSkrift(h.ROD);
   const mappe = join(h.ROD, "assets", "luftfoto");
@@ -76,7 +75,7 @@ export async function bygLuftfotos(plankort, h) {
   for (const [pfil, sager] of planer) {
     const k = sager[0][1], fil = pfil.replace("plankort", "luftfoto");
     if (!existsSync(join(h.ROD, fil))) {
-      if (nye >= +(process.env.MAKS_LUFTFOTO || 25)) continue;
+      if (!token || nye >= +(process.env.MAKS_LUFTFOTO || 25)) continue; // uden nøgle (lokalt og i testene) bruges kun de fotos, der findes
       try {
         const planid = pfil.match(/(\d+)\.jpg$/)[1];
         const q = new URLSearchParams({ service: "WFS", version: "2.0.0", request: "GetFeature", typeNames: `pdk:theme_pdk_lokalplan_${k.status === "F" ? "forslag" : "vedtaget"}`,
@@ -98,7 +97,7 @@ export async function bygLuftfotos(plankort, h) {
   <path d="${sti}" fill="none" stroke="${C.vin}" stroke-width="4.5" stroke-linejoin="round"/>
   <rect x="${W - 520}" y="${H - 34}" width="520" height="34" fill="${C.kalkLys}" fill-opacity="0.85"/>
   <text x="${W - 506}" y="${H - 12}" font-family="Montserrat" font-weight="500" font-size="15" fill="${C.muted}">${xml("Luftfoto: Klimadatastyrelsen · Plangrænse: Plandata.dk · Sagsvagt")}</text></svg>`;
-        await writeFile(join(h.ROD, fil), svgTilJpeg(svg, fontFiles, 78));
+        await writeFile(join(h.ROD, fil), svgTilJpeg(svg, fontFiles, 60, 1000));
         nye++;
       } catch (e) { console.warn(`Luftfoto: ${k.plannavn}: ${e.message}`); continue; }
     }
