@@ -81,6 +81,7 @@
   .ed .sum { font-family: var(--serif); font-size: 1.25rem; line-height: 1.5; color: #3E3B40; margin: 8px 0 0; max-width: 46em; }
   .ed .sum b { color: var(--nat); font-weight: 600; }
   .mine { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 20px; }
+  .mine-rul { display: contents; }
   .mine .lbl { font-size: .8125rem; font-weight: 700; margin-right: 4px; }
   .emne { font: 600 .8125rem/1 var(--sans); padding: 8px 12px; border-radius: 8px; border: 1.5px solid var(--rule); background: transparent; color: var(--nat); cursor: pointer; }
   .emne:hover { border-color: var(--nat); }
@@ -461,10 +462,13 @@
     .liste li { grid-template-columns: 76px minmax(0, 1fr); gap: 4px 14px; }
     .liste li > .kort-billede { width: 76px; height: 54px; }
     .liste li > .handl { grid-column: 2; justify-self: start; margin: 0 0 -6px -9px; }
-    /* "Du følger" som én række, man kan skubbe til siden (som fanerne i TV 2's app) */
-    .mine { flex-wrap: nowrap; overflow-x: auto; margin: 16px -16px 0; padding: 0 16px 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-    .mine::-webkit-scrollbar { display: none; }
-    .mine > * { flex: none; }
+    /* "Du følger" som én række: teksten står fast, og kun emnerne (.mine-rul) kan skubbes til siden. Rulleboksen ruller
+       ikke lodret (luften giver plads til knappernes usynlige trykflader) og fjedrer ikke i enderne. */
+    .mine { flex-wrap: nowrap; margin: 16px -16px 0 0; padding-bottom: 4px; }
+    .mine .lbl { flex: none; }
+    .mine-rul { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; overflow: auto hidden; overscroll-behavior-x: none; margin: -8px 0 -8px -4px; padding: 8px 16px 8px 4px; scrollbar-width: none; }
+    .mine-rul::-webkit-scrollbar { display: none; }
+    .mine-rul > * { flex: none; }
     .ed h1 { font-size: 1.875rem; }
     .ed .sum { font-size: 1.0625rem; }
     .tilpas { margin-left: 0; }
@@ -1285,10 +1289,10 @@
 
   function tegnMine() {
     const antal = (id) => SAGER.filter((s) => !s.r && s.e.includes(id)).length;
-    $("#mine").innerHTML = `<span class="lbl">Du følger</span>`
+    $("#mine").innerHTML = `<span class="lbl">Du følger</span><div class="mine-rul">`
       + Object.entries(EMNER).map(([id, e]) => `<button type="button" class="emne ${e.f}" data-emne="${id}" aria-pressed="${profil.emner.includes(id)}">${esc(e.navn)}<span class="n">${antal(id)}</span></button>`).join("")
       + `<button type="button" class="mail-knap" data-mail>Se din mandagsmail</button>`
-      + `<button type="button" class="tilpas" id="tilpas" aria-expanded="${!$("#panel").hidden}" aria-controls="panel">Tilpas</button>`;
+      + `<button type="button" class="tilpas" id="tilpas" aria-expanded="${!$("#panel").hidden}" aria-controls="panel">Tilpas</button></div>`;
   }
 
   function tegn() {
@@ -1907,10 +1911,10 @@
       window.svLyd?.spil(profil.emner.includes(id) ? "emneTil" : "emneFra");
       // Hele siden tegnes igen, men "Du følger"-rækken skal blive stående, hvor den var: samme sted på skærmen og
       // samme vandrette rulning, så knappen, man lige trykkede på, ikke glider væk under fingeren
-      const raekke = t.closest("#mine"), foer = t.getBoundingClientRect().top, rul = raekke?.scrollLeft || 0;
+      const raekke = t.closest("#mine"), foer = t.getBoundingClientRect().top, rul = raekke?.querySelector(".mine-rul").scrollLeft || 0;
       gem(); vist = 20; tegn();
       if (raekke) {
-        $("#mine").scrollLeft = rul;
+        $(".mine-rul").scrollLeft = rul;
         const ny = $(`#mine [data-emne="${CSS.escape(id)}"]`);
         if (ny) { scrollBy(0, ny.getBoundingClientRect().top - foer); ny.focus({ preventScroll: true }); }
       }
