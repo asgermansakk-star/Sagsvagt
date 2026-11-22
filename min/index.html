@@ -630,10 +630,10 @@
   .side-h { font-weight: 800; margin-top: 54px; }
   .debat { padding-bottom: 72px; }
   .emne { background: rgba(238,232,222,.6); }
-  .velkommen, .panel, .skriv-boks, .sg { border-radius: var(--r-blad); }
+  .velkommen, .panel, .sg { border-radius: var(--r-blad); }
   .velkommen, .panel, .sg { background: url(../assets/nyt/papir.webp) 0 0 / 640px repeat; box-shadow: 0 1px 2px rgba(14,15,20,.1), 0 18px 32px -24px rgba(14,15,20,.45); }
   .skriv-top, .skriv-boks { background: var(--nat) url(../assets/nyt/korn.webp) center top / 720px auto repeat; }
-  .skriv-boks { position: relative; overflow: hidden; isolation: isolate; }
+  .skriv-boks { position: relative; overflow: hidden; isolation: isolate; padding: 34px 30px 38px; border-radius: 0; -webkit-mask: url(../assets/nyt/riv-maske.webp) center / 109% 109% no-repeat; mask: url(../assets/nyt/riv-maske.webp) center / 109% 109% no-repeat; }
   .skriv-boks::before { content: ""; position: absolute; z-index: -1; right: -70px; top: -84px; width: 210px; aspect-ratio: 1; background: url(../assets/nyt/skive-indigo.webp) center / contain no-repeat; pointer-events: none; }
   .skriv-boks h2 { max-width: 11em; font-weight: 800; }
 

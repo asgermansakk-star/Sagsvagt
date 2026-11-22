@@ -38,7 +38,7 @@
   .laes-indhold .mellem .med-billede > div { flex: none; width: 100%; }
   .laes-indhold .mellem .kort-billede { order: 0; width: 100%; margin-top: 0; }
   .laes-indhold .mellem .kort-billede img { width: 100%; height: auto; aspect-ratio: 16 / 9; }
-  .laes-indhold .mellem .hl, .laes-indhold .mellem .kicker, .laes-indhold .mellem .dek { hyphens: auto; overflow-wrap: anywhere; }
+  .laes-indhold .mellem .hl, .laes-indhold .mellem .kicker, .laes-indhold .mellem .dek { hyphens: auto; overflow-wrap: anywhere; hyphenate-limit-chars: 16 7 7; -webkit-hyphenate-limit-before: 8; -webkit-hyphenate-limit-after: 8; }
 }
 
 .laes-indhold .kort-band { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 6fr); margin: 28px 0; border-radius: var(--r-kort); overflow: hidden; background: var(--nat); color: var(--kalk); text-decoration: none; }

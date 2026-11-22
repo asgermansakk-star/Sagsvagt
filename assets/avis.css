@@ -398,7 +398,9 @@ footer.foot a:hover { text-decoration: underline; }
   .kortnyt ul { columns: 1; }
   .second, .emne-gitter { grid-template-columns: 1fr; }
   .lead .dek { font-size: var(--broed); }
-  .hl, .listing h1, .emne-oversigt h1 { -webkit-hyphens: auto; hyphens: auto; overflow-wrap: anywhere; } /* lange kommuneord som "miljøkonsekvensrapport" deles på smalle skærme */
+  /* Lange kommuneord ("miljøkonsekvensrapport") deles på smalle skærme, så de ikke går ud over kanten. Korte ord deles ikke
+     (22/11-2026: "an-læg"): kun ord på mindst 16 bogstaver, i Safari styret af afstanden til ordets ender. */
+  .hl, .listing h1, .emne-oversigt h1 { -webkit-hyphens: auto; hyphens: auto; overflow-wrap: anywhere; hyphenate-limit-chars: 16 7 7; -webkit-hyphenate-limit-before: 8; -webkit-hyphenate-limit-after: 8; }
   .kf, .vej, .paa-mail { padding: 16px; }
   .kf dl > div { grid-template-columns: 1fr; gap: 2px; }
   .parti-tabel th, .parti-tabel td { padding: 10px 5px; font-size: var(--fodnote); }
@@ -651,6 +653,10 @@ body .kommune-tilmeld { background: var(--nat) url(nyt/korn.webp) center top / 7
 .chips a[aria-current], .chips button[aria-pressed="true"], .fane[aria-selected="true"] { border-radius: 9px 3px; }
 .vis-flere { background: var(--nat); color: var(--kalk); font-weight: 700; }
 .vis-flere:hover { background: var(--grafit); }
+/* De mørke bokse er revet papir */
+.paa-mail, .prisk.fremhaev, body .kommune-tilmeld { border-radius: 0; box-shadow: none; -webkit-mask: url(nyt/riv-maske.webp) center / 109% 113% no-repeat; mask: url(nyt/riv-maske.webp) center / 109% 113% no-repeat; }
+.prisk.fremhaev { padding: 40px 28px 36px; }
+@media (min-width: 721px) { .paa-mail { padding: 50px 7%; } }
 /* Sagernes små billeder er revet ud */
 .gk-billede { filter: drop-shadow(0 1px 1px rgba(14,15,20,.35)); }
 .gk-billede img, .moede .gk-billede img { border-radius: 0; -webkit-mask: url(nyt/riv-maske.webp) center / 111% 114% no-repeat; mask: url(nyt/riv-maske.webp) center / 111% 114% no-repeat; }
@@ -705,7 +711,7 @@ main > .wrap > .article > article > header > .kicker { display: contents; font-s
 main > .wrap > .article > article > header > .kicker > a { grid-column: 1; grid-row: 1; justify-self: start; font-size: var(--sekundaer); font-weight: 700; color: var(--lyng); margin-bottom: 12px; }
 main > .wrap > .article > article > header > .kicker > .status { grid-column: 2; grid-row: 1 / span 4; align-self: start; justify-self: end; z-index: 2; box-sizing: border-box; width: min(290px, 62%); aspect-ratio: 660 / 341; margin: calc(var(--billede) - 120px) -8px 0 0; padding: 0 12% 2%;
   display: flex; align-items: center; justify-content: center; text-align: center; text-wrap: balance; transform: rotate(4deg); background: url(nyt/maerkat.webp) center / 100% 100% no-repeat; color: var(--nat); font-size: clamp(1rem, 1.5vw, 1.25rem); line-height: 1.15; font-weight: 800; letter-spacing: -.02em; }
-main > .wrap > .article > article > header > h1.hl { grid-row: 2; font-size: clamp(2rem, 1.35rem + 2.2vw, 2.75rem); line-height: 1.1; letter-spacing: -.025em; max-width: none; text-wrap: balance; overflow-wrap: anywhere; hyphenate-limit-chars: 15 6 6; -webkit-hyphenate-limit-before: 6; -webkit-hyphenate-limit-after: 6; }
+main > .wrap > .article > article > header > h1.hl { grid-row: 2; font-size: clamp(2rem, 1.35rem + 2.2vw, 2.75rem); line-height: 1.1; letter-spacing: -.025em; max-width: none; text-wrap: balance; overflow-wrap: anywhere; hyphenate-limit-chars: 16 7 7; -webkit-hyphenate-limit-before: 8; -webkit-hyphenate-limit-after: 8; }
 main > .wrap > .article > article > header > .emner { grid-row: 3; margin-top: 22px; }
 main > .wrap > .article > article > header > figure { grid-column: 2; grid-row: 1 / span 4; align-self: start; margin: 0; position: relative; }
 main > .wrap > .article > article > header > figure img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 674; object-fit: cover; border-radius: 0; transform: rotate(-2deg); background: none;
