@@ -681,6 +681,22 @@
    "dato": "2026-11-25",
    "punkter": 25,
    "parser": 3
+  },
+  "2b32b5eb-324c-4edd-a15b-cd5e65d46d97": {
+   "lastmod": "2026-11-23",
+   "type": "dagsorden",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-25",
+   "punkter": 25,
+   "parser": 3
+  },
+  "774fea52-11cb-4181-96c3-97d9df1fc5cd": {
+   "lastmod": "2026-11-23",
+   "type": "referat",
+   "udvalg": "Beredskabsudvalget",
+   "dato": "2026-11-17",
+   "punkter": 3,
+   "parser": 3
   }
  },
  "sager": {
@@ -13381,10 +13397,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Beredskabsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a6761d5c-58bd-44ee-bd13-ab9a31091ac6",
-   "hentet": "2026-11-12T21:44:33.240Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=774fea52-11cb-4181-96c3-97d9df1fc5cd",
+   "hentet": "2026-11-23T14:59:59.505Z",
    "titel": "Orientering om nytårskur for erhvervslivet",
    "afsnit": [
     {
@@ -13398,6 +13414,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Beredskabsudvalget til orientering.\nDirektionen foreslår, at sagen forelægges til orientering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beredskabsudvalget tiltræder direktionens forslag."
     }
    ],
    "bilag": []
@@ -13407,10 +13427,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Beredskabsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a6761d5c-58bd-44ee-bd13-ab9a31091ac6",
-   "hentet": "2026-11-12T21:44:33.240Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=774fea52-11cb-4181-96c3-97d9df1fc5cd",
+   "hentet": "2026-11-23T14:59:59.505Z",
    "titel": "Samarbejdsaftale med Røde Kors Rudersdal",
    "afsnit": [
     {
@@ -13424,6 +13444,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Beredskabsudvalget til godkendelse.\nDirektionen foreslår, at Beredskabsudvalget godkender samarbejdsaftalen mellem\nRudersdal Kommune og Røde Kors – Rudersdal om samarbejde på beredskabsområdet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Røde Kors inviteres til samtale om rammerne for og gensidige forventninger til aftalen i\nsammenhæng med underskrivelse af denne."
     }
    ],
    "bilag": []
@@ -13433,12 +13457,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Beredskabsudvalget",
    "dato": "2026-11-17",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a6761d5c-58bd-44ee-bd13-ab9a31091ac6",
-   "hentet": "2026-11-12T21:44:33.240Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=774fea52-11cb-4181-96c3-97d9df1fc5cd",
+   "hentet": "2026-11-23T14:59:59.505Z",
    "titel": "Beslutningsprotokol og underskriftsark",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutningsprotokol blev godkendt."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-18-oekonomiudvalget-1": {
@@ -14324,8 +14353,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [],
    "bilag": []
@@ -14337,10 +14366,15 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Meddelelser",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Foreløbige meddelelser\nMeddelelse om indhold i vedlagt lukkede bilag."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-25-kommunalbestyrelsen-3": {
@@ -14350,8 +14384,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Ny vision for skolerne i Rudersdal - genoptagelse efter høring",
    "afsnit": [
     {
@@ -14376,8 +14410,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Opfølgning på Whistleblowerordning",
    "afsnit": [
     {
@@ -14402,8 +14436,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Genopbygning efter brand 2026 - Naturstøttepunkt",
    "afsnit": [
     {
@@ -14432,8 +14466,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Rammeaftale 2027-2028 for det højt specialiserede socialområde og specialundervisning",
    "afsnit": [
     {
@@ -14458,8 +14492,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Navngivning af kommunale daginstitutioner",
    "afsnit": [
     {
@@ -14484,8 +14518,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 9,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Vandforsyningsplan 2026-2036 - Endelig godkendelse",
    "afsnit": [
     {
@@ -14510,8 +14544,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 10,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Novafos Investeringsaftale 2027 - Godkendelse",
    "afsnit": [
     {
@@ -14540,8 +14574,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 11,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Tilsagn om tilskud til forundersøgelse af Sjælsø - Bevilling",
    "afsnit": [
     {
@@ -14566,8 +14600,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 13,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Trafikal løsning for Holtehal 3 - Anlægsbevilling",
    "afsnit": [
     {
@@ -14596,8 +14630,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 14,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Køb af Krogholmgård, 2950 Vedbæk – Anlægsregnskab mm",
    "afsnit": [
     {
@@ -14606,7 +14640,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Rudersdal Kommune købte i 2025 ejendommen Krogholmgård. Krogholmgård anvendes til\nmidlertidig indkvartering af flygtninge Krogholmgård er pt. fuldt belagt og midlertidigt hjem for\n63 flygtninge.\nKøbet blev lånefinansieret, da erhvervelse af midlertidige flygtningeboliger er omfattet af\nkommunens låneadgang. Der blev afsat et rådighedsbeløb på 35 mio. kr. til købet og en\ntilsvarende indtægtsbevilling til lånebudgettet.\nEjendommen er opført med et indeksreguleret lån, der kun kunne indfris til en kurs over 100.\nKursen på indeksreguleret lån svinger fra dag til dag og den endelige opgørelse blev først\nkendt på overtagelsesdagen. Lånet skulle indfris i forbindelse med købet.\nKøbet blev indgået med overtagelse den 1. maj 2025 til et beløb opgjort til 29,686 mio. kr. og\nden endelige pris blev således 5,314 mio. kr. lavere end forventet. Forvaltningen aflægger\nhermed regnskab.\nRådighedsbeløb i mio. kr.\n\nKøbspris\n\nTinglysningsafgift\n\nSamlet udgift\n\nMindreforbrug\n\nDa rådighedsbeløbet er lånefinansieret, skal mindreforbruget anvendes til at nedjustere\nindtægtsbudgettet til lån, så det bringes i overensstemmelse med det faktisk optagne lån.\nKassen har dog midlertidigt finansieret 4,089 mio. kr. af mindreindtægten på lånebudgettet. Det\ner sket ifm. regnskab 2025 og opgørelsen af lånerammen for 2025, som kommunalbestyrelsen\nbehandlede i marts 2026. Den midlertidige finansiering skyldes, at anlægsregnskabet for købet\naf Krogholmgaard ikke kunne aflægges på daværende tidspunkt.\nMindreforbruget på anlægsprojektet på 5,314 mio. kr. skal dermed fordeles med 4,089 mio. kr.\ntil kassen, mens restbeløbet på 1,225 mio. kr. tilgår lånebudgettet for 2027. Hermed er\nlånebudgettet blevet endelig nulstillet igen efter købet.\nDet sikrer samtidig, at Rudersdal Kommune samlet set ikke låner mere, end hvad det er muligt\ni henhold til lånebekendtgørelsen for kommuner.\nOpsparing til vedligehold\nI forbindelse med købet af ejendommen havde boligselskabet en lovpligtig opsparing på 2,218\nmio. kr. til vedligehold af Krogholmgård. Opsparingen følger ejendommen og har ikke påvirket\nkøbsprisen. Det påvirker derfor ikke det låneberettigede beløb. Boligselskabet har overført\nopsparingen til Rudersdal Kommune. Forvaltningen foreslår, at der oprettes et anlægsprojekt\nXA 151098 Renovering af Krogholmgård til vedligeholdes-/renoveringsarbejder på\nejendommen. Der skal gives en bevilling til både modtagelse af opsparingen og afholdelse af\nudgifterne.\nForvaltningen er af den opfattelse, at opsparingen er knyttet til ejendommen, da opsparingen er\nsket som en del af huslejebetalingen og følger reglerne i driftsbekendtgørelsen for almene\nboliger, hvorfor der anbefales en særskilt vedligeholdelseskonto. Der udestår en større juridisk\nanalyse af reglerne på det almene område og købsaftalen, før der kan træffes beslutning om,\nat midlerne kan disponeres frit.\nForvaltningen anbefaler på den baggrund, at midlerne for nu oprettes som en særskilt konto,\nmen at de rykkes til de generelle vedligeholdelsesmidler, hvis det viser sig, at det er muligt,\nfratrukket evt. nødvendige vedligeholdelsesarbejder på ejendommen. Ejendommen har bl.a.\nfået nyt tag i 2025, der kostede ca. 500.000 kr.\nForvaltningens bemærkninger efter Økonomiudvalgets behandling\nØkonomiudvalget ønskede i forbindelse med deres behandling af sagen, at forvaltningen frem\nmod behandlingen i Kommunalbestyrelsen undersøgte, hvorvidt den overførte opsparing på\n2,218 mio. kr. er bundet til vedligehold på Krogholmgård. Forvaltningen vil forud for\nKommunalbestyrelsens behandling opdatere sagen med svar på Økonomiudvalgets\nspørgsmål."
+     "tekst": "Rudersdal Kommune købte i 2025 ejendommen Krogholmgård. Krogholmgård anvendes til\nmidlertidig indkvartering af flygtninge Krogholmgård er pt. fuldt belagt og midlertidigt hjem for\n63 flygtninge.\nKøbet blev lånefinansieret, da erhvervelse af midlertidige flygtningeboliger er omfattet af\nkommunens låneadgang. Der blev afsat et rådighedsbeløb på 35 mio. kr. til købet og en\ntilsvarende indtægtsbevilling til lånebudgettet.\nEjendommen er opført med et indeksreguleret lån, der kun kunne indfris til en kurs over 100.\nKursen på indeksreguleret lån svinger fra dag til dag og den endelige opgørelse blev først\nkendt på overtagelsesdagen. Lånet skulle indfris i forbindelse med købet.\nKøbet blev indgået med overtagelse den 1. maj 2025 til et beløb opgjort til 29,686 mio. kr. og\nden endelige pris blev således 5,314 mio. kr. lavere end forventet. Forvaltningen aflægger\nhermed regnskab.\nRådighedsbeløb i mio. kr.\n\nKøbspris\n\nTinglysningsafgift\n\nSamlet udgift\n\nMindreforbrug\n\nDa rådighedsbeløbet er lånefinansieret, skal mindreforbruget anvendes til at nedjustere\nindtægtsbudgettet til lån, så det bringes i overensstemmelse med det faktisk optagne lån.\nKassen har dog midlertidigt finansieret 4,089 mio. kr. af mindreindtægten på lånebudgettet. Det\ner sket ifm. regnskab 2025 og opgørelsen af lånerammen for 2025, som kommunalbestyrelsen\nbehandlede i marts 2026. Den midlertidige finansiering skyldes, at anlægsregnskabet for købet\naf Krogholmgaard ikke kunne aflægges på daværende tidspunkt.\nMindreforbruget på anlægsprojektet på 5,314 mio. kr. skal dermed fordeles med 4,089 mio. kr.\ntil kassen, mens restbeløbet på 1,225 mio. kr. tilgår lånebudgettet for 2027. Hermed er\nlånebudgettet blevet endelig nulstillet igen efter købet.\nDet sikrer samtidig, at Rudersdal Kommune samlet set ikke låner mere, end hvad det er muligt\ni henhold til lånebekendtgørelsen for kommuner.\nOpsparing til vedligehold\nI forbindelse med købet af ejendommen havde boligselskabet en lovpligtig opsparing på 2,218\nmio. kr. til vedligehold af Krogholmgård. Opsparingen følger ejendommen og har ikke påvirket\nkøbsprisen. Det påvirker derfor ikke det låneberettigede beløb. Boligselskabet har overført\nopsparingen til Rudersdal Kommune. Forvaltningen foreslår, at der oprettes et anlægsprojekt\nXA 151098 Renovering af Krogholmgård til vedligeholdes-/renoveringsarbejder på\nejendommen. Der skal gives en bevilling til både modtagelse af opsparingen og afholdelse af\nudgifterne.\nForvaltningen er af den opfattelse, at opsparingen er knyttet til ejendommen, da opsparingen er\nsket som en del af huslejebetalingen og følger reglerne i driftsbekendtgørelsen for almene\nboliger, hvorfor der anbefales en særskilt vedligeholdelseskonto. Der udestår en større juridisk\nanalyse af reglerne på det almene område og købsaftalen, før der kan træffes beslutning om,\nat midlerne kan disponeres frit.\nForvaltningen anbefaler på den baggrund, at midlerne for nu oprettes som en særskilt konto,\nmen at de rykkes til de generelle vedligeholdelsesmidler, hvis det viser sig, at det er muligt,\nfratrukket evt. nødvendige vedligeholdelsesarbejder på ejendommen. Ejendommen har bl.a.\nfået nyt tag i 2025, der kostede ca. 500.000 kr.\nForvaltningens bemærkninger efter Økonomiudvalgets behandling\nØkonomiudvalget ønskede i forbindelse med deres behandling af sagen, at forvaltningen frem\nmod behandlingen i Kommunalbestyrelsen undersøgte, hvorvidt den overførte opsparing på\n2,218 mio. kr. er bundet til vedligehold på Krogholmgård.\nForvaltningen er af den opfattelse, at opsparingen er knyttet til ejendommen, da opsparingen er\n\nsket som en del af huslejebetalingen og følger reglerne i driftsbekendtgørelsen for almene\nboliger, hvorfor der anbefales en særskilt vedligeholdelseskonto. Der udestår en juridisk\nanalyse af reglerne på det almene område og købsaftalen, før der kan træffes beslutning om,\nat midlerne kan disponeres frit.\nForvaltningen anbefaler på den baggrund, at midlerne for nu oprettes som en særskilt konto,\nmen at de rykkes til de generelle vedligeholdelsesmidler, hvis det viser sig, at det er muligt,\nfratrukket evt. nødvendige vedligeholdelsesarbejder på ejendommen. Forvaltningens\nanbefaling er tilføjet som et nyt indstillingspunkt seks."
     },
     {
      "titel": "Indstilling",
@@ -14622,8 +14656,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 15,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Ekstraordinært vedligehold - Anlægsregnskaber",
    "afsnit": [
     {
@@ -14648,8 +14682,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 16,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Fremtidens arbejdsplads - Anlægsregnskab",
    "afsnit": [
     {
@@ -14674,8 +14708,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 17,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Økonomiudvalget",
    "afsnit": [
     {
@@ -14700,8 +14734,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 18,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Arkitektur- og Byplanudvalget",
    "afsnit": [
     {
@@ -14722,8 +14756,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 20,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Kultur- og Fritidsudvalget",
    "afsnit": [
     {
@@ -14748,8 +14782,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 21,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Børne- og Skoleudvalget",
    "afsnit": [
     {
@@ -14774,8 +14808,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 22,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Social- og Beskæftigelsesudvalget",
    "afsnit": [
     {
@@ -14800,8 +14834,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 23,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Udvalget for Ældre, Omsorg og Sundhed",
    "afsnit": [
     {
@@ -14826,8 +14860,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 24,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Økonomiudvalget",
    "afsnit": [
     {
@@ -14852,8 +14886,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 25,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Børne- og Skoleudvalget",
    "afsnit": [
     {
@@ -14878,8 +14912,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 26,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Social- og Beskæftigelsesudvalget",
    "afsnit": [
     {
@@ -14904,8 +14938,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 27,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Udvalget for Ældre, Omsorg og Sundhed",
    "afsnit": [
     {
@@ -14930,8 +14964,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 32,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=3502afc6-0777-405b-a94a-4274933b2903",
-   "hentet": "2026-11-20T23:20:05.435Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
+   "hentet": "2026-11-23T14:59:53.037Z",
    "titel": "Beslutningsprotokol og underskriftsark",
    "afsnit": [],
    "bilag": []
@@ -14940,7 +14974,7 @@
  "sitemaps": {
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=eb45bdbc-005e-4735-b2c7-e714c93b140d": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=3f6ae58b-d90c-41f5-967f-89841a144a74": {
    "senest": "2025-09-27",
@@ -14952,7 +14986,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=e706faa4-0ca3-45d8-8499-930fdbe2ab47": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=a1b33993-37eb-4fbe-9bb3-ce95c3d2c377": {
    "senest": "2023-12-12",
@@ -14960,7 +14994,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=afd52d84-a6a8-4695-903d-03906da305dc": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=4865b97a-d396-43f4-95ee-b4a82e2301ba": {
    "senest": "2025-09-27",
@@ -14968,7 +15002,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=54e3d012-ad2a-401e-bbe2-b0909af78b11": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=16912be3-511b-46ab-bd72-f54bb433b4eb": {
    "senest": "2025-09-27",
@@ -14980,11 +15014,11 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=32801f9c-6549-457c-9daa-0bf8f7c43248": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=09b96ef9-3e41-4bfd-9ea7-b2d792e54f03": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=5fb2cc61-a1cd-4a24-809d-377704484ab7": {
    "senest": "2025-09-26",
@@ -14992,7 +15026,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=94086cf6-7238-4845-af0c-e08bedda764d": {
    "senest": "2026-10-01",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=79cace9a-3d2c-4f71-850c-7cda61c1de8a": {
    "senest": "2025-09-27",
@@ -15008,7 +15042,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=ec6a6512-cc24-4008-8094-dac8f26cd858": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=54600157-bccd-4ee6-baad-7a97b8f75692": {
    "senest": "2025-09-27",
@@ -15020,11 +15054,11 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=5a7c6e2d-d1fe-47ef-bde9-64ab04b9bbc9": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=f0038e78-2f2e-4d40-a3a9-814fec2aa42d": {
-   "senest": "2026-11-20",
-   "tjekket": "2026-11-22"
+   "senest": "2026-11-23",
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=21190702-622f-4769-aa66-f41535b76b8c": {
    "senest": "2025-09-27",
@@ -15036,23 +15070,23 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=0a58b078-43f4-49dc-84dc-37b8f8670353": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=89910af1-7e94-4299-a793-d936104c5b20": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=a1710bf7-d96d-485b-bef5-818b9938e7b9": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=d5cde391-97eb-4445-b938-612f489e60ee": {
    "senest": "2026-10-09",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=1b26714f-148a-4fec-b3de-260482995760": {
    "senest": "2026-11-13",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=49463d9d-432a-4172-a390-f52881302cd1": {
    "senest": "2025-10-10",
@@ -15060,7 +15094,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=60d0a051-8e00-4e26-a8b8-9a29fe65b614": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=00c82d18-dfef-423a-9b27-9ff62b89d04b": {
    "senest": "2025-09-27",
@@ -15072,11 +15106,11 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=198a0130-dbbf-4856-84dd-3f2d9391c557": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=d6903c04-3034-49df-bf9a-1326190bb646": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=63fc27f0-b636-497a-ac21-79f44978e949": {
    "senest": "2025-09-27",
@@ -15088,7 +15122,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=b1868c45-3c01-4464-8e46-c30e45e9790e": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=00e96d08-c85a-40e8-8b40-9164016587ec": {
    "senest": "2017-11-29",
@@ -15116,7 +15150,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=171dcada-b0f0-44b9-aecc-3c5ae9901ab4": {
    "senest": "2026-08-25",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=841618af-4f4b-4b37-8dce-33168d6d0052": {
    "senest": "2023-10-10",
@@ -15128,19 +15162,19 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=1e516c0c-ce44-43d4-a1d2-02cee10d7c04": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=6ddc6a8c-f277-427c-bc13-ab9ad0453bfd": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-22"
+   "senest": "2026-11-23",
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=82d3b00e-c7d9-4991-867d-585b069e0204": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=2d760d51-e07a-431f-9b8e-04dc2602be4c": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-22"
+   "tjekket": "2026-11-23"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=c922ecbf-8bd9-4439-ba29-27ff3a8b619b": {
    "senest": "2025-05-23",
@@ -15152,10 +15186,10 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=ae76f519-b55f-4a27-b7ea-025417f33402": {
    "senest": "2026-09-16",
-   "tjekket": "2026-11-02"
+   "tjekket": "2026-11-23"
   }
  },
- "opdateret": "2026-11-22T21:03:35.124Z",
+ "opdateret": "2026-11-23T14:59:59.507Z",
  "kommune": "Rudersdal",
  "parser": 3
 }
