@@ -1,7 +1,7 @@
 // Selvtjek af parsePdf: afkortede titler i indholdsfortegnelsen og titler, der ikke findes i teksten.
 // Kør: node avis/tjek-parsepdf.mjs
 import assert from "node:assert/strict";
-import { parsePdf } from "./hent-firstagenda.mjs";
+import { parsePdf, udskilSkrevneBeslutninger } from "./hent-firstagenda.mjs";
 
 const punkt = (titel, tekst) => `${titel}\nIndstilling\n${tekst}\n\n`;
 const tekst = (indhold, punkter) => `DAGSORDEN Miljø-, Natur- og Byudvalget (2026-2029) d. 22-09-2026\nIndholdsfortegnelse\n${indhold}\n\n${punkter}`;
@@ -82,5 +82,49 @@ Resumé Borgmesteren underskriver.
 `);
 assert.deepEqual(g2.punkter.map((p) => p.titel), ["Lokalplan for et område ved Schæffergården. Offentlig høring", "Underskrift på skøder"]);
 
+
+// Vordingborg: "Beslutning i <udvalg> den 30. september 2026" på en linje for sig inde i indstillingen. Mødets egen
+// beslutning bliver "Beslutning", et andet udvalgs bliver "Behandling i …"
+const v = parsePdf(`REFERAT Økonomiudvalget d. 30-09-2026
+Indholdsfortegnelse
+Godkendelse af dagsorden...... 3 Salg af grund...... 4
+
+Godkendelse af dagsorden
+Indstilling
+Administrationen indstiller, at dagsordenen godkendes.
+Beslutning i Økonomiudvalget den 30. september 2026
+Fraværende: Ingen
+Indstillingen tiltrådt.
+
+Salg af grund
+Indstilling
+Administrationen indstiller, at grunden sælges.
+Beslutning i Udvalget for Natur, Teknik og Miljø den 9. september 2026
+Anbefales.
+Beslutning i Økonomiudvalget den 30. september 2026
+Anbefales til Kommunalbestyrelsen.
+`);
+assert.deepEqual(v.punkter[0].afsnit.map((a) => a.titel), ["Indstilling", "Beslutning"]);
+assert.equal(v.punkter[0].afsnit[1].tekst, "Fraværende: Ingen\nIndstillingen tiltrådt.");
+assert.deepEqual(v.punkter[1].afsnit.map((a) => a.titel), ["Indstilling", "Behandling i Udvalget for natur, teknik og miljø 9. september 2026", "Beslutning"]);
+assert.equal(v.punkter[1].afsnit[2].tekst, "Anbefales til Kommunalbestyrelsen.");
+
+// Sager hentet før rettelsen: beslutningen deles ud af indstillingen, og en sag med beslutning røres ikke
+const gammel = { type: "referat", udvalg: "Økonomiudvalget", dato: "2026-09-30", afsnit: [
+  { titel: "Sagsfremstilling", tekst: "Dagsordenen er udsendt." },
+  { titel: "Indstilling", tekst: "Administrationen indstiller, at dagsordenen godkendes.\n\nBeslutning i Udvalget for Natur, Teknik og Miljø den 9. september 2026\nAnbefales.\nBeslutning i Økonomiudvalget den 30. september 2026\nFraværende: Ingen\nIndstillingen tiltrådt." },
+  { titel: "Økonomi", tekst: "Ingen udgifter." },
+] };
+const ny = udskilSkrevneBeslutninger(gammel);
+assert.deepEqual(ny.map((a) => a.titel), ["Sagsfremstilling", "Indstilling", "Behandling i Udvalget for Natur, Teknik og Miljø 9. september 2026", "Beslutning", "Økonomi"]);
+assert.equal(ny[1].tekst, "Administrationen indstiller, at dagsordenen godkendes.");
+assert.equal(ny[3].tekst, "Fraværende: Ingen\nIndstillingen tiltrådt.");
+assert.deepEqual(udskilSkrevneBeslutninger({ ...gammel, afsnit: ny }), ny);
+assert.deepEqual(udskilSkrevneBeslutninger({ ...gammel, type: "dagsorden" }), gammel.afsnit);
+// To punkter klistret sammen (mødets beslutning står to gange): sagen røres ikke
+const klistret = { ...gammel, afsnit: [{ titel: "Indstilling", tekst: "At A godkendes.\nBeslutning i Økonomiudvalget den 30. september 2026\nGodkendt.\n\nBeslutningssag - B\nAt B godkendes.\nBeslutning i Økonomiudvalget den 30. september 2026\nAfvist." }] };
+assert.deepEqual(udskilSkrevneBeslutninger(klistret), klistret.afsnit);
+// Et andet udvalgs beslutning alene er ikke dette mødes beslutning
+assert.ok(!udskilSkrevneBeslutninger({ ...gammel, udvalg: "Kommunalbestyrelsen" }).some((a) => a.titel === "Beslutning"));
 
 console.log("parsePdf: alle tjek bestået");

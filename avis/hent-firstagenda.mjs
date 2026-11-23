@@ -68,16 +68,21 @@ const datoTekst = (iso) => `${+iso.slice(8)}. ${MDR[+iso.slice(5, 7) - 1]} ${iso
 const tabellinje = (l) => { const b = (l.match(/[a-zæøåA-ZÆØÅ]/g) || []).length; return l.trim().length > 0 && b / l.trim().length < 0.35; };
 const renTekst = (t) => t.split("\n").filter((l) => !tabellinje(l)).join("\n").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
 
+// "Beslutning i <udvalg> den 30. september 2026" på en linje for sig (Vordingborg)
+const SKREVET = new RegExp(`(?<=^|\\n)[ \\t]*Beslutning(?:er)? i ([^\\n]+?) den (\\d{1,2})\\. (${MDR.join("|")}) (\\d{4})(?=[ \\t]*(?:\\n|$))`, "g");
+
 export function parsePdf(tekst, kendteUdvalg = new Map()) {
   // Gentofte skriver "Beslutninger: Økonomiudvalget den 19. oktober 2026" og tidligere behandlinger som
   // "Udvalg: Byplanudvalget Dato: 05-10-2026"; Morsø, Kerteminde, Nyborg, Nordfyn og Ærø skriver "Aktuel beslutning på
   // Byrådet 21-10-2026" og tidligere behandlinger som "Beslutning på Direktionen 28-09-2026". Alle omskrives til den
-  // almindelige form "BESLUTNING I … DEN dd-mm-åååå"
+  // almindelige form "BESLUTNING I … DEN dd-mm-åååå". Vordingborg skriver "Beslutning i Økonomiudvalget den 30. september 2026"
+  // på en linje for sig inde i indstillingen; den omskrives også.
   const to = (n) => String(n).padStart(2, "0");
   const t = tekst.replace(/\r/g, "").replace(/\f/g, "\n")
     .replace(new RegExp(`Beslutninger:\\s*(.+?) den (\\d{1,2})\\. (${MDR.join("|")}) (\\d{4})`, "g"), (_, u, d, m, y) => `BESLUTNING I ${u} DEN ${to(d)}-${to(MDR.indexOf(m) + 1)}-${y}`)
     .replace(/(?:Tidligere beslutninger:\s*)?Udvalg:\s*(.+?)\s+Dato:\s*(\d{2}-\d{2}-\d{4})/g, "BESLUTNING I $1 DEN $2")
-    .replace(/(?<=^|\n)(?:Aktuel b|B)eslutning på ([^\n]+?) (\d{2}-\d{2}-\d{4})(?=[ \t]*\n)/g, "BESLUTNING I $1 DEN $2");
+    .replace(/(?<=^|\n)(?:Aktuel b|B)eslutning på ([^\n]+?) (\d{2}-\d{2}-\d{4})(?=[ \t]*\n)/g, "BESLUTNING I $1 DEN $2")
+    .replace(SKREVET, (_, u, d, m, y) => `BESLUTNING I ${u} DEN ${to(d)}-${to(MDR.indexOf(m) + 1)}-${y}`);
   // Datoen kan mangle en bindestreg ("2210-2026", "17-092026"), så de er valgfrie
   // Lange udvalgsnavne brydes over to linjer ("DAGSORDEN Kultur-, Fritids- &\nFolkesundhedsudvalget d. 26-10-2026")
   const hoved = t.match(/^\s*(DAGSORDEN|REFERAT)\s+([^\n]+?(?:\n[^\n]+?)?)\s+d\.\s*(\d{2})-?(\d{2})-?(\d{4})/m);
@@ -239,6 +244,34 @@ function udskilBeslutning(s) {
   return [...afsnit.slice(0, -1), ...(foer ? [{ ...sidst, tekst: foer }] : []), { titel: "Beslutning", tekst }];
 }
 
+// Sager hentet, før parsePdf kendte Vordingborgs form, har beslutningen liggende inde i indstillingen. Her deles den ud
+// i "Beslutning" (dette møde) og "Behandling i …" (andre udvalg eller datoer), ligesom parsePdf gør. Kan køres igen uden
+// at ændre noget, for sager med et afsnit om beslutning eller behandling røres ikke.
+export function udskilSkrevneBeslutninger(s) {
+  const afsnit = s.afsnit || [];
+  if (s.type !== "referat" || afsnit.some((a) => /^(Beslutning|Behandling)/.test(a.titel))) return afsnit;
+  const to = (n) => String(n).padStart(2, "0");
+  const egen = (m) => norm(m[1]) === norm(s.udvalg) && dato(to(m[2]), to(MDR.indexOf(m[3]) + 1), m[4]) === s.dato;
+  // Står mødets egen beslutning mere end én gang, er flere punkter klistret sammen i én sag; så ved vi ikke, hvilken
+  // beslutning der hører til, og sagen lades være
+  if (afsnit.flatMap((a) => [...a.tekst.matchAll(SKREVET)]).filter(egen).length !== 1) return afsnit;
+  const ud = [];
+  const laeg = (titel, tekst) => { const f = ud.find((a) => a.titel === titel); if (f) f.tekst += `\n\n${tekst}`; else ud.push({ titel, tekst }); };
+  for (const a of afsnit) {
+    const fund = [...a.tekst.matchAll(SKREVET)];
+    if (!fund.length) { ud.push(a); continue; }
+    const foer = a.tekst.slice(0, fund[0].index).trim();
+    if (foer) ud.push({ ...a, tekst: foer });
+    fund.forEach((m, j) => {
+      const tekst = a.tekst.slice(m.index + m[0].length, j + 1 < fund.length ? fund[j + 1].index : a.tekst.length).trim();
+      if (!tekst) return;
+      const dd = dato(to(m[2]), to(MDR.indexOf(m[3]) + 1), m[4]);
+      laeg(egen(m) ? "Beslutning" : `Behandling i ${udenPeriode(m[1])} ${datoTekst(dd)}`, tekst);
+    });
+  }
+  return ud;
+}
+
 // ---------- Én kommune ----------
 async function hentKommune(k) {
   const DATA = join(ROD, "data", `${k.slug}.json`);
@@ -337,7 +370,7 @@ async function hentKommune(k) {
     if (d && pladsholder(s.dato, d.lastmod)) delete gemt.sager[sid];
   }
   // Beslutningen står i nogle kommuner inde i sidste afsnit i stedet for under sin egen overskrift
-  for (const s of Object.values(gemt.sager)) s.afsnit = udskilBeslutning(s);
+  for (const s of Object.values(gemt.sager)) { s.afsnit = udskilSkrevneBeslutninger(s); s.afsnit = udskilBeslutning(s); }
   // Udvalgsnavne i "Behandling i …" står med versaler i PDF'en; brug stavningen fra udvalgets egne møder, når vi kender den
   for (const s of Object.values(gemt.sager)) for (const a of s.afsnit) {
     const b = a.titel.match(/^Behandling i (.+?) (\d+\. \S+ \d{4})$/);
