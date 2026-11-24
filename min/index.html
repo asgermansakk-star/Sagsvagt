@@ -965,7 +965,7 @@
       <div><h2 id="skriv-h">Skriv et indlæg</h2><p>Indlægget sendes til redaktionen. Vi skriver til dig, hvis vi bringer det.</p></div>
       <button class="luk" type="button" data-luk aria-label="Luk">×</button>
     </div>
-    <form id="skriv-form" novalidate>
+    <form id="skriv-form" novalidate><div aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden"><label>Lad dette felt være tomt <input name="sv_felt" type="text" tabindex="-1" autocomplete="off" value=""></label></div>
       <div class="felt"><label for="i-sag">Hvilken sag handler det om?</label><select id="i-sag" name="sag"></select></div>
       <div class="felt"><label for="i-overskrift">Overskrift</label><input id="i-overskrift" name="overskrift" class="hl-in" maxlength="90" placeholder="Din pointe i én sætning"></div>
       <div class="felt">
@@ -1622,7 +1622,7 @@
     const data = {
       overskrift: v.overskrift, tekst: v.tekst, navn: v.navn, titel: v.titel, by: v.by, email: v.email,
       sag: sag ? `${sag.t} (${hvor(sag.u, sag.kn)}, ${kort(sag.dato)})` : "Ingen bestemt sag",
-      sag_id: sag ? sag.id : "", sag_link: sag ? new URL(link(sag), location.href).href : "", bekraeftet: sf.bekraeftet.checked,
+      sag_id: sag ? sag.id : "", sag_link: sag ? new URL(link(sag), location.href).href : "", bekraeftet: sf.bekraeftet.checked, sv_felt: sf.sv_felt.value,
     };
     btn.disabled = true; msg.className = "skriv-msg"; msg.textContent = "Sender …";
     try {

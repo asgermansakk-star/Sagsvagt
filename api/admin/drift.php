@@ -43,4 +43,13 @@ svar(200, [
         'henvendelser' => $rk('SELECT id, firma, produkt, oprettet FROM erhverv_henvendelser WHERE oprettet >= ? ORDER BY id', [gmdate('Y-m-d\TH:i:s\Z', time() - 7 * 86400)])],
     'filer' => ['sager' => $alder('assets/sager.json'), 'aabne' => $alder('kommune/aabne.json'), 'erhverv_signaler' => $alder('api/_erhverv-signaler.json'), 'udbud' => $alder('data/udbud.json')],
     'besoeg' => ['seneste_dag' => $besoeg['d'] ?? null, 'i_dag' => (int)($besoeg['i_dag'] ?? 0)],
+    // Fælder (honeypot) det sidste døgn: antal besøg på fælde-adresser og udfyldte usynlige felter, og hvor mange IP-adresser der
+    // er spærret. Ingen IP-adresser i svaret.
+    'faelder' => (function () use ($en, $rk): array {
+        $t = time() - 86400;
+        return ['adresser' => (int)($en("SELECT COUNT(*) n FROM faelder WHERE tid > ? AND hvad LIKE 'adresse:%'", [$t])['n'] ?? 0),
+            'felter' => (int)($en("SELECT COUNT(*) n FROM faelder WHERE tid > ? AND hvad LIKE 'felt:%'", [$t])['n'] ?? 0),
+            'spaerrede_ip' => count($rk('SELECT noegle FROM forsoeg WHERE noegle LIKE ? AND tid > ? GROUP BY noegle HAVING COUNT(*) >= ?', ['faelde:%', $t, FAELDE_MAX])),
+            'mest' => $rk("SELECT hvad, COUNT(*) n FROM faelder WHERE tid > ? GROUP BY hvad ORDER BY n DESC LIMIT 5", [$t])];
+    })(),
 ]);

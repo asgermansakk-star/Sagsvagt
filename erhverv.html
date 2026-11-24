@@ -308,7 +308,7 @@
         <p class="kicker">Prøv gratis</p>
         <h2>30 dage med jeres egen rapport</h2>
       </div>
-      <form id="f-proeve" novalidate>
+      <form id="f-proeve" novalidate><div aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden"><label>Lad dette felt være tomt <input name="sv_felt" type="text" tabindex="-1" autocomplete="off" value=""></label></div>
         <div class="to">
           <label>Virksomhed<input id="p-firma" autocomplete="organization" maxlength="120"></label>
           <label>Dit navn<input id="p-navn" autocomplete="name" maxlength="100"></label>
@@ -337,7 +337,7 @@
         <h2>Se din egen rapport på 20 minutter</h2>
         <p class="intro">Skriv, hvilke kommuner og hvilket produkt du er interesseret i. Vi svarer inden for én hverdag med et tidspunkt.</p>
       </div>
-      <form id="f-book" novalidate>
+      <form id="f-book" novalidate><div aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden"><label>Lad dette felt være tomt <input name="sv_felt" type="text" tabindex="-1" autocomplete="off" value=""></label></div>
         <div class="to">
           <label>Virksomhed<input id="b-firma" autocomplete="organization" maxlength="120"></label>
           <label>Dit navn<input id="b-navn" autocomplete="name" maxlength="100"></label>
@@ -382,7 +382,7 @@
     tilfoej();
     fetch("api/erhverv-proeve.php", { method: "POST", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" },
       body: JSON.stringify({ firma: $p("p-firma").value, navn: $p("p-navn").value, email: $p("p-email").value, produkt: $p("p-produkt").value,
-        kommuner: [...valgte.keys()], ord: $p("p-ord").value, samtykke: $p("p-samtykke").checked }) })
+        kommuner: [...valgte.keys()], ord: $p("p-ord").value, samtykke: $p("p-samtykke").checked, sv_felt: e.target.sv_felt.value }) })
       .then((r) => r.json().catch(() => ({})).then((j) => { if (!r.ok) throw new Error(j.fejl || "Det lykkedes ikke. Prøv igen om lidt."); }))
       .then(() => { ok.textContent = `Tjek din mail (${$p("p-email").value.trim()}), og tryk på knappen for at starte prøven.`; ok.hidden = false; knap.textContent = "Sendt"; })
       .catch((err) => { fejl.textContent = err.message; fejl.hidden = false; knap.disabled = false; knap.textContent = "Start prøven"; });
@@ -396,7 +396,7 @@
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v("b-email"))) return stop("Skriv en gyldig arbejdsmail, så vi kan svare dig.", "b-email");
     fejl.hidden = true; knap.disabled = true; knap.textContent = "Sender …";
     fetch("api/erhverv-book.php", { method: "POST", headers: { "Content-Type": "application/json", "X-Sagsvagt": "api" },
-      body: JSON.stringify({ firma: v("b-firma"), navn: v("b-navn"), email: v("b-email"), tlf: v("b-tlf"), produkt: v("b-produkt"), besked: v("b-besked") }) })
+      body: JSON.stringify({ firma: v("b-firma"), navn: v("b-navn"), email: v("b-email"), tlf: v("b-tlf"), produkt: v("b-produkt"), besked: v("b-besked"), sv_felt: f.sv_felt.value }) })
       .then((r) => r.json().catch(() => ({})).then((j) => { if (!r.ok) throw new Error(j.fejl || "Det lykkedes ikke. Prøv igen om lidt, eller skriv til mansa@sagsvagt.dk."); }))
       .then(() => { ok.textContent = `Tak. Vi svarer ${v("b-email")} inden for én hverdag med et tidspunkt.`; ok.hidden = false; knap.textContent = "Sendt"; })
       .catch((err) => { fejl.textContent = err.message; fejl.hidden = false; knap.disabled = false; knap.textContent = "Send"; });

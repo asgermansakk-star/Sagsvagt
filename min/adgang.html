@@ -62,7 +62,7 @@
     </form>
 
     <!-- Glemt adgangskode / udløbet link -->
-    <form id="glemt" hidden novalidate>
+    <form id="glemt" hidden novalidate><div aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden"><label>Lad dette felt være tomt <input name="sv_felt" type="text" tabindex="-1" autocomplete="off" value=""></label></div>
       <h1>Glemt adgangskode?</h1>
       <p id="glemt-intro">Skriv den e-mail, du er skrevet op med, så sender vi et link, hvor du kan vælge en adgangskode.</p>
       <div class="felt"><label for="g-email">Din e-mail</label><input id="g-email" type="email" autocomplete="email" required></div>
@@ -123,7 +123,7 @@
     e.preventDefault();
     var b = $("#glemt-besked"), knap = this.querySelector("button");
     knap.disabled = true; b.className = "besked"; b.textContent = "Sender …";
-    api("glemt.php", { email: $("#g-email").value })
+    api("glemt.php", { email: $("#g-email").value, sv_felt: this.sv_felt.value })
       .then(function () { b.className = "besked ok"; b.textContent = "Er du skrevet op med den e-mail, har vi sendt et link. Kan du ikke finde det, så tjek også din mappe med uønsket mail. Linket virker i én time."; })
       .catch(function (err) { b.className = "besked fejl"; b.textContent = err.message; })
       .finally(function () { knap.disabled = false; });

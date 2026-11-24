@@ -30,6 +30,7 @@ function kraev_post(): array {
     $raa = file_get_contents('php://input', false, null, 0, 65536) ?: '';
     $data = json_decode($raa, true);
     if (!is_array($data)) fejl(400, 'Ugyldige data');
+    tjek_faelder($data);
     return $data;
 }
 // Sidens egen adresse (fx https://sagsvagt.dk) plus eventuelle ekstra fra konfigurationen
@@ -101,6 +102,8 @@ function db(): PDO {
     $pdo->exec("CREATE TABLE IF NOT EXISTS tokens (
         id $id, abonnent_id INT NOT NULL, type VARCHAR(10) NOT NULL, hash CHAR(64) NOT NULL UNIQUE, udloeber VARCHAR(25) NOT NULL, brugt VARCHAR(25) NULL)");
     $pdo->exec("CREATE TABLE IF NOT EXISTS forsoeg (noegle VARCHAR(200) NOT NULL, tid INT NOT NULL)");
+    // Fælder (honeypot): hvem der har udfyldt det usynlige felt eller besøgt en fælde-adresse. Slettes efter to døgn.
+    $pdo->exec("CREATE TABLE IF NOT EXISTS faelder (id $id, ip VARCHAR(45) NOT NULL, hvad VARCHAR(200) NOT NULL, agent VARCHAR(255) NOT NULL DEFAULT '', tid INT NOT NULL)");
     // Feedback fra testpersonerne i Min avis. Sletter en bruger sin konto, beholdes teksten uden e-mail.
     $pdo->exec("CREATE TABLE IF NOT EXISTS feedback (
         id $id, abonnent_id INT NULL, email VARCHAR(254) NOT NULL DEFAULT '', vurdering VARCHAR(20) NOT NULL DEFAULT '',
@@ -125,6 +128,27 @@ function for_mange(string $noegle, int $max, int $sek): bool {
     return (int)$q->fetchColumn() >= $max;
 }
 function noter_forsoeg(string $noegle): void { db()->prepare('INSERT INTO forsoeg (noegle, tid) VALUES (?, ?)')->execute([$noegle, time()]); }
+
+// ---------- Fælder (honeypot) ----------
+// 1) Formularerne har et usynligt felt (sv_felt). Mennesker ser det ikke, men robotter, der udfylder alle felter, gør. Så svarer vi
+//    som ved succes, men gemmer og sender intet. Feltet alene spærrer ikke, for en browsers autoudfyldning kan ramme et menneske.
+// 2) Fælde-adresser som /wp-login.php (api/_faelde.php) besøges kun af robotter, der leder efter huller. Rammer en IP-adresse
+//    fælderne FAELDE_MAX gange på et døgn, afvises den på formularer og login resten af døgnet.
+const FAELDE_FELT = 'sv_felt';
+const FAELDE_MAX = 2;
+function noter_faelde(string $hvad): void {
+    $db = db(); $t = time();
+    $db->prepare('DELETE FROM faelder WHERE tid < ?')->execute([$t - 2 * 86400]);
+    $db->prepare('INSERT INTO faelder (ip, hvad, agent, tid) VALUES (?, ?, ?, ?)')
+        ->execute([substr(ip(), 0, 45), mb_substr($hvad, 0, 200), mb_substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 255), $t]);
+}
+function spaerret(): bool { return for_mange('faelde:' . ip(), FAELDE_MAX, 86400); }
+function tjek_faelder(array $in): void {
+    if (spaerret()) fejl(403, 'Ikke tilladt');
+    if (trim((string)($in[FAELDE_FELT] ?? '')) === '') return;
+    noter_faelde('felt:' . basename((string)($_SERVER['SCRIPT_NAME'] ?? '')));
+    svar(200, ['ok' => true]);
+}
 // Login sammenligner med denne hash, når e-mailen ikke findes, så svartiden er den samme (én bcrypt i begge tilfælde)
 const DUMMY_HASH = '$2y$12$GKzZliaJnZy1D7eeUmI0qO4M7TS3Mps.EbOIjuVaMbVGs1P89nZ8S';
 

@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') fejl(405, 'Kun POST');
 if (($_SERVER['HTTP_X_SAGSVAGT'] ?? '') !== 'api') fejl(403, 'Ikke tilladt');
 $origin = rtrim($_SERVER['HTTP_ORIGIN'] ?? '', '/');
 if ($origin !== '' && !in_array($origin, tilladte_origins(), true)) fejl(403, 'Ikke tilladt');
+tjek_faelder($_POST);
 begraens('foto:' . ip(), 6, 3600);
 
 $navn = mb_substr(trim((string)($_POST['navn'] ?? '')), 0, 80);
