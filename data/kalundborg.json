@@ -975,6 +975,46 @@
    "dato": "2026-11-16",
    "punkter": 1,
    "parser": 3
+  },
+  "79886aff-2f9d-42ef-958a-c2f1260b84b8": {
+   "lastmod": "2026-11-24",
+   "type": "dagsorden",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-25",
+   "punkter": 2,
+   "parser": 3
+  },
+  "f75ea24b-b461-4d5e-8387-9dd0b8ae90c3": {
+   "lastmod": "2026-11-24",
+   "type": "referat",
+   "udvalg": "Uddannelsesrådet",
+   "dato": "2026-11-19",
+   "punkter": 7,
+   "parser": 3
+  },
+  "2e4f843f-55c9-490f-a9b7-5a07306f3761": {
+   "lastmod": "2026-11-24",
+   "type": "referat",
+   "udvalg": "Trafik- og Kørselsudvalget",
+   "dato": "2026-11-23",
+   "punkter": 4,
+   "parser": 3
+  },
+  "8f4f2bef-1097-40b6-9bea-aa84d0838d13": {
+   "lastmod": "2026-11-24",
+   "type": "dagsorden",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-25",
+   "punkter": 15,
+   "parser": 3
+  },
+  "0dc4357e-e6ff-4129-a4af-780185d3057a": {
+   "lastmod": "2026-11-24",
+   "type": "referat",
+   "udvalg": "Direktionen",
+   "dato": "2026-11-23",
+   "punkter": 4,
+   "parser": 3
   }
  },
  "sager": {
@@ -14513,12 +14553,16 @@
    "kommune": "Kalundborg",
    "udvalg": "Uddannelsesrådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=13fd4f7a-1147-4c0f-97e7-b3e679a65545",
-   "hentet": "2026-11-12T12:54:30.679Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=f75ea24b-b461-4d5e-8387-9dd0b8ae90c3",
+   "hentet": "2026-11-24T15:12:44.640Z",
    "titel": "Bemærkninger til dagsordenen",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen bemærkninger.\nAfbud: Jørgen Ravnsbæk Andersen, Poul Jørgensen, Tina Beck-Nilsson, Trine Fogh\nLauridsen, Lise Houkjær"
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Mødet i Uddannelsesrådet afholdes i Ungehuset Luma, som ligger på adressen Bredegade 26,\n4400 Kalundborg.\nDer er gode muligheder for parkering i området."
@@ -14531,12 +14575,16 @@
    "kommune": "Kalundborg",
    "udvalg": "Uddannelsesrådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=13fd4f7a-1147-4c0f-97e7-b3e679a65545",
-   "hentet": "2026-11-12T12:54:30.679Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=f75ea24b-b461-4d5e-8387-9dd0b8ae90c3",
+   "hentet": "2026-11-24T15:12:44.641Z",
    "titel": "Præsentation af ungehuset Luma",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Præsentationen blev taget til efterretning med anerkendelse af arbejdet, og ønske fra\nUddannelsesrådets medlemmer om at støtte op om Ungehuset.\n\nAfbud: Jørgen Ravnsbæk Andersen, Poul Jørgensen, Tina Beck-Nilsson, Trine Fogh\nLauridsen, Lise Houkjær"
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Resume og sagens baggrund\n\nUngehuset Luma er vært for mødet. I den forbindelse vil, daglig leder på ungehuset Nicoline\nSaga Brydesen, give en præsentation af huset.\nLUMA er byens ungehus. Huset styres af unge, og er et fristed midt i Kalundborg by, hvor unge\nkan mødes.\n\nIndstillinger\nDirektøren indstiller, at orienteringen tages til efterretning.\nBehandling\n\nUddannelsesrådet."
@@ -14549,15 +14597,19 @@
    "kommune": "Kalundborg",
    "udvalg": "Uddannelsesrådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=13fd4f7a-1147-4c0f-97e7-b3e679a65545",
-   "hentet": "2026-11-12T12:54:30.679Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=f75ea24b-b461-4d5e-8387-9dd0b8ae90c3",
+   "hentet": "2026-11-24T15:12:44.641Z",
    "titel": "Drøftelse af anvendelsen af AI i undervisningen på tværs af uddannelsesinstitutioner",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev drøftet på baggrund af oplæg. Der var anerkendelse af arbejdet med og\nfokus på hensigtsmæssig anvendelse af AI på skoler og uddannelsesinstitutioner.\nHerunder om at AI anvendes til sparring, ikke færdige løsninger, fokus på processen,\nherunder at eleverne/studerende fremlægger prompts som del af afleveringer, mere\nfokus på mundtlighed og fordybelse. Samtidig fokus på at elever og studerende opnår\nforståelse af hvordan AI virker, og at både undervisere og elever/studerende bruger\nværktøjerne hensigtsmæssigt. Opmærksomhed på at AI vil påvirke behov for fremtidige\nuddannelser forskelligt, her er eksempelvis erhvervsuddannelser ikke så hårdt ramt.\nOplæg er vedhæftet som bilag til referatet.\n\nAfbud: Jørgen Ravnsbæk Andersen, Poul Jørgensen, Tina Beck-Nilsson, Trine Fogh\nLauridsen, Lise Houkjær"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Resume og sagens baggrund\nKunstig Intelligens / Artificial Intelligens (AI) er på dagsordenen til mødet med henblik på at\ndele erfaringer på tværs af uddannelsesområdet. Formålet er at inspirere hinanden i den\npædagogiske og didaktiske anvendelse af AI.\n\nIndstillinger\nDirektøren indstiller, at anvendelsen af AI i undervisningen drøftes.\n\nBehandling\nUddannelsesrådet.\n\nPædagogisk IT-konsulent i Fagcenter Børn, Læring og Uddannelse, holder et oplæg om AI i\nfolkeskolen, herunder om arbejdet med at formulere en pædagogisk og didaktiske vejledning.\nUnderviserne Christine Corell og Krister Laursen fra NEG holder et oplæg om den\npædagogiske og didaktiske anvendelse af AI samt praktiske anvendelse fra et lærerperspektiv.\nLektor Susi Manuela Clermont (diplomingeniøruddannelsen i bioteknologi) og lektor Flemming\nKorf Davidsen (diplomingeniøruddannelsen i maskinteknologi) fra Professionshøjskolen\nAbsalon holder et oplæg om anvendelsen af AI inden for deres respektive faglige områder.\nEfterfølgende vil der være en fælles drøftelse af oplæggene og erfaringerne med brugen af AI\npå tværs af uddannelsesområdet."
+     "tekst": "Resume og sagens baggrund\nKunstig Intelligens / Artificial Intelligens (AI) er på dagsordenen til mødet med henblik på at\ndele erfaringer på tværs af uddannelsesområdet. Formålet er at inspirere hinanden i den\npædagogiske og didaktiske anvendelse af AI.\n\nIndstillinger\nDirektøren indstiller, at anvendelsen af AI i undervisningen drøftes.\n\nBehandling\nUddannelsesrådet.\n\nPædagogisk IT-konsulent i Fagcenter Børn, Læring og Uddannelse, holder et oplæg om AI i\nfolkeskolen, herunder om arbejdet med at formulere en pædagogisk og didaktiske vejledning.\nUnderviserne Christine Corell og Krister Laursen fra NEG holder et oplæg om den\npædagogiske og didaktiske anvendelse af AI samt praktiske anvendelse fra et lærerperspektiv.\n\nLektor Susi Manuela Clermont (diplomingeniøruddannelsen i bioteknologi) og lektor Flemming\nKorf Davidsen (diplomingeniøruddannelsen i maskinteknologi) fra Professionshøjskolen\nAbsalon holder et oplæg om anvendelsen af AI inden for deres respektive faglige områder.\nEfterfølgende vil der være en fælles drøftelse af oplæggene og erfaringerne med brugen af AI\npå tværs af uddannelsesområdet."
     }
    ],
    "bilag": []
@@ -14567,12 +14619,16 @@
    "kommune": "Kalundborg",
    "udvalg": "Uddannelsesrådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=13fd4f7a-1147-4c0f-97e7-b3e679a65545",
-   "hentet": "2026-11-12T12:54:30.679Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=f75ea24b-b461-4d5e-8387-9dd0b8ae90c3",
+   "hentet": "2026-11-24T15:12:44.641Z",
    "titel": "Drøftelse af Kalundborg som attraktiv og sammenhængende uddannelseskommune",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "LUMA house council, som består af unge brugere af LUMA gav oplæg om deres\noplevelser og anbefalinger til Kalundborg Kommune som attraktiv uddannelseskommune.\nBoliger til unge/studerende er relativt dyre i Kalundborg Kommune, hvilket er\nhovedproblemet ift. at få studerende til at bo i Kalundborg Kommune.\nDer mangler studenterjobs og praktikpladser i Kalundborg. Mange kræver at man kan tale\ndansk.\nCPR paradoks, man kan ikke få cpr. nr. uden kontrakt, men kan ikke få kontrakt uden cpr.\nnr.\nKalundborg Sprogskole: Ønske om større fleksibilitet ift. forskellige niveauer og\nfleksibilitet ift. on-site klasser på arbejdspladser.\nForslag om projekt med frivillige, der lærer udlændinge dansk ved samtaler.\nAktiviteter\nInformationer på dansk er en udfordring og meget kommunikation er på Facebook, som\nde unge ikke ser.\nTo anbefalinger:\nLav en “Young in Kalundborg” digital platform\nAktivitets velkomst pakke, og fx månedlig kalender\nSundhed, transport og byliv\nDe udenlandske studerende kender ikke det danske sundhedssystem.\nOffentlig transport mangler, fx kører seneste tog fra København kl. 01.\nMangler studenter venlige priser i byen.\nDrøftelse\nDrøftelsen af strategien for Kalundborg som uddannelseskommune udskydes til næste\nmøde, og de unges input inddrages.\nKommunen har hjemmesiden Work in Kalundborg.\nSteffen Lund vil tage de unges input med i bestyrelsen for Campus Kalundborg.\n\nAfbud: Jørgen Ravnsbæk Andersen, Poul Jørgensen, Tina Beck-Nilsson, Trine Fogh\nLauridsen, Lise Houkjær"
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Resume og sagens baggrund\n\nKommunalbestyrelsen har i budget 2027 besluttet, at der skal udarbejdes et forslag til en\nstrategi, som skal styrke samarbejdet mellem folkeskoler, ungdomsuddannelser, videregående\nuddannelser og virksomheder. Uddannelsesrådet vil på mødet give input til udarbejdelse af\nstrategi om Kalundborg som en attraktiv og sammenhængende uddannelseskommune.\nIndstillinger\n\nDirektøren indstiller, at temaet om Kalundborg som en attraktiv og sammenhængende\nuddannelseskommune drøftes.\nBehandling\n\nUddannelsesrådet.\n\nUngerepræsentanter fra LUMA vil indledningsvist holde et oplæg om deres perspektiver på\nKalundborg som en attraktiv og sammenhængende uddannelsesby. Oplægget holdes på\nengelsk.\nDernæst vil der være en indledende fælles drøftelse af Kalundborg som en attraktiv og sammenhængende\nuddannelseskommune. Drøftelsen skal bidrage med input til det videre arbejde med en strategi for\nKalundborg som en attraktiv og sammenhængende uddannelseskommune."
@@ -14585,12 +14641,16 @@
    "kommune": "Kalundborg",
    "udvalg": "Uddannelsesrådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=13fd4f7a-1147-4c0f-97e7-b3e679a65545",
-   "hentet": "2026-11-12T12:54:30.679Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=f75ea24b-b461-4d5e-8387-9dd0b8ae90c3",
+   "hentet": "2026-11-24T15:12:44.641Z",
    "titel": "Beslutning om mødeplan for 2027",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud: Jørgen Ravnsbæk Andersen, Poul Jørgensen, Tina Beck-Nilsson, Trine Fogh\nLauridsen, Lise Houkjær"
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Resume og sagens baggrund\n\nUddannelsesrådet skal beslutte møderækken for 2027.\nIndstillinger\n\nDirektøren indstiller at den foreslåede møderække godkendes, og der aftales, hvor møderne\nafholdes.\nBehandling\n\nUddannelsesrådet\n\nAdministrationen foreslår, at der holdes møder i Uddannelsesrådet på torsdage fra kl. 15:30 til\nkl. 17:30 på følgende datoer i 2027:\nTorsdag den 11. februar 2027\nTorsdag den 24. juni 2027\nTorsdag den 9. september 2027\nTorsdag den 25. november 2027\nProfessionshøjskolen Absalon har tilbudt at være vært på det første møde i februar."
@@ -14603,12 +14663,16 @@
    "kommune": "Kalundborg",
    "udvalg": "Uddannelsesrådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=13fd4f7a-1147-4c0f-97e7-b3e679a65545",
-   "hentet": "2026-11-12T12:54:30.679Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=f75ea24b-b461-4d5e-8387-9dd0b8ae90c3",
+   "hentet": "2026-11-24T15:12:44.641Z",
    "titel": "Temaer til kommende møde",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Afsætte god tid til strategi for Kalundborg som Uddannelseskommune\nFGU\n\nAfbud: Jørgen Ravnsbæk Andersen, Poul Jørgensen, Tina Beck-Nilsson, Trine Fogh\nLauridsen, Lise Houkjær"
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Resume og sagens baggrund\n\nUddannelsesrådet drøfter hvilke temaer, de ønsker drøftet på kommende møde i\nUddannelsesrådet.\nIndstillinger\n\nDirektøren indstiller, at orienteringen tages til efterretning.\nBehandling\n\nUddannelsesrådet."
@@ -14621,12 +14685,16 @@
    "kommune": "Kalundborg",
    "udvalg": "Uddannelsesrådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=13fd4f7a-1147-4c0f-97e7-b3e679a65545",
-   "hentet": "2026-11-12T12:54:30.679Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=f75ea24b-b461-4d5e-8387-9dd0b8ae90c3",
+   "hentet": "2026-11-24T15:12:44.641Z",
    "titel": "Gensidig orientering",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Kalundborg finder på – stort innovationsevent i uge 48. Folkeskoleelever laver\nløsningsforslag på lokale virksomheders udfordringer. Uddannelsesrådet er inviteret til at\nbesøge præmieoverrækkelsen på finalearrangement på Kalundborg Gymnasium fredag\nden 27. november kl. 12.\nSlides er vedhæftet referatet.\nForslag om erfarings netværk for undervisere på de forskellige uddannelsesniveauer.\n\nAfbud: Jørgen Ravnsbæk Andersen, Poul Jørgensen, Tina Beck-Nilsson, Trine Fogh\nLauridsen, Lise Houkjær"
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Uddannelsesvejledningen i Børn, Læring og Uddannelse afholdt Kalundborg Uddannelsesmesse den 11.\nnovember 2026. Uddannelsesmessen er en dag, hvor uddannelsesinstitutioner og virksomheder giver de\nunge et indblik i forskellige uddannelsesveje og jobmuligheder inden for deres brancher. På messen var der\nca. 60 forskellige stande, hvor de besøgende elever blev introduceret til en lang række\nuddannelsesmuligheder igennem praktiske aktiviteter og konkurrencer. I alt deltog 1.600 unge i løbet af\ndagen.\n\nMedlemmerne af Uddannelsesrådet orienterer hinanden om nyt fra deres områder."
@@ -15257,12 +15325,17 @@
    "kommune": "Kalundborg",
    "udvalg": "Trafik- og Kørselsudvalget",
    "dato": "2026-11-23",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=237316b0-3045-477f-8ce6-b400aa4d043a",
-   "hentet": "2026-11-19T13:27:47.638Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=2e4f843f-55c9-490f-a9b7-5a07306f3761",
+   "hentet": "2026-11-24T15:12:50.731Z",
    "titel": "Bemærkninger til dagsordenen",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen bemærkninger.\nAfbud: Thomas Hiorth"
+    }
+   ],
    "bilag": []
   },
   "kalundborg-2026-11-23-trafik-og-koerselsudvalget-2": {
@@ -15270,12 +15343,17 @@
    "kommune": "Kalundborg",
    "udvalg": "Trafik- og Kørselsudvalget",
    "dato": "2026-11-23",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=237316b0-3045-477f-8ce6-b400aa4d043a",
-   "hentet": "2026-11-19T13:27:47.638Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=2e4f843f-55c9-490f-a9b7-5a07306f3761",
+   "hentet": "2026-11-24T15:12:50.731Z",
    "titel": "Meddelelser til orientering",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering omkring buskørsel Bregninge-området.\nAfbud: Thomas Hiorth"
+    }
+   ],
    "bilag": []
   },
   "kalundborg-2026-11-23-trafik-og-koerselsudvalget-3": {
@@ -15283,12 +15361,16 @@
    "kommune": "Kalundborg",
    "udvalg": "Trafik- og Kørselsudvalget",
    "dato": "2026-11-23",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=237316b0-3045-477f-8ce6-b400aa4d043a",
-   "hentet": "2026-11-19T13:27:47.638Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=2e4f843f-55c9-490f-a9b7-5a07306f3761",
+   "hentet": "2026-11-24T15:12:50.731Z",
    "titel": "Beslutning om tidsplan for Trafikbestilling 2028",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud: Thomas Hiorth"
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Resume og sagens baggrund\nTidsplan for Trafikbestilling 2028 fremlægges udvalget til godkendelse.\n\nIndstillinger\nDirektøren indstiller, at tidsplanen for Trafikbestilling 2028 godkendes med udvalgets\neventuelle bemærkninger.\n\nBehandling\nTrafik- og Kørselsudvalget.\n\nTidsplanen for Trafikbestilling 2028 er udarbejdet med afsæt i tidsplanen for Trafikbestilling 2027 og følger\nsamme struktur og proces. Processen igangsættes dog tidligere end ved Trafikbestilling 2027, idet første\nmøde afholdes allerede i november 2026.\nSåfremt der opstår behov for yderligere møder i Trafik- og Kørselsudvalget, kan disse indarbejdes i\ntidsplanen løbende.\n\nI perioden fra november 2026 til juni 2027 forbereder Trafik- og Kørselsudvalget\nTrafikbestillingen 2028, der efter sommerferien behandles af Teknik-, Natur- og Miljøudvalget\nsamt af Økonomiudvalget inden den besluttes af Kommunalbestyrelsen. Derefter afgives\nTrafikbestillingen 2028 til Movia.\nTidsplanen er vedhæftet sagen som bilag, og fremlægges for udvalget på mødet.\nMilepæle i tidsplanen:\nMøder i Trafik- og Kørselsudvalget i november 2026 samt februar, april og juni i 2027.\nLanddistriktsudvalget og Seniorrådet orienteres løbende.\nVirtuelt borgermøde i april - hvor udvalget mødes på Rådhuset.\nAfgivelse af Trafikbestilling 2028 i oktober.\n\nØkonomiske konsekvenser\nIngen bevillingsmæssige konsekvenser."
@@ -15301,15 +15383,19 @@
    "kommune": "Kalundborg",
    "udvalg": "Trafik- og Kørselsudvalget",
    "dato": "2026-11-23",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=237316b0-3045-477f-8ce6-b400aa4d043a",
-   "hentet": "2026-11-19T13:27:47.638Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=2e4f843f-55c9-490f-a9b7-5a07306f3761",
+   "hentet": "2026-11-24T15:12:50.731Z",
    "titel": "Beslutning om fokusområder for Trafikbestilling 2028",
    "afsnit": [
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud: Thomas Hiorth"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Resume og sagens baggrund\n\nPå Trafik- og Kørselsudvalgets møde den 14. april 2026 blev de overordnede rammer for den\nkollektive trafik i kommunen samt fokusområder for Trafikbestilling 2028 drøftet.\nArbejdet med Trafikbestilling 2028 påbegyndes nu i november 2026. Administrationen har med\nafsæt i de drøftede fokusområder opstillet og beskrevet forslag til indhold i forbindelse med\nTrafikbestilling 2028.\nIndstillinger\n\nDirektøren indstiller, at der arbejdes videre med de i sagen nævnte fokusområder for\nTrafikbestilling 2028.\nBehandling\nTrafik- og Kørselsudvalget.\n\nPå Trafik- og Kørselsudvalgets møde den 14. april 2026 blev de overordnede rammer for den\nkollektive trafik i kommunen samt fokusområder for Trafikbestilling 2028 drøftet. Udvalget\nbesluttede, at der arbejdes videre med følgende fokusområder:\n1. Kommende udbud af skolebusser i Høng-området\n2. Tilpasning af busruter i forbindelse med Kalundborgmotorvejen\n3. Vesthavnen\n4. Industriområder\n5. Nye boligområder\n\nI forbindelse med Trafikbestilling 2028 foreslår administrationen, at der arbejdes videre med\nfølgende fokusområder.\nOpgaver til Trafikbestilling 2028\n\nPunkt 1 og 2 er o pgaver skal håndteres og søges løst i forbindelse med Trafikbestilling 2028.\nPunkt 1 - Kommende udbud af skolebusser i Høng-området\nDet kommende udbud af skolebuskørsel i Høng-området vil have kontraktstart den 9.\ndecember 2029 og kommunens ønsker til busbetjeningen skal derfor indgå som en del af\nTrafikbestilling 2028.\n\nPå nuværende tidspunkt betjenes skolebusruterne i Høng-området af seks stk. 12-meter\ndieselbusser. Movias analyser af passagertallet på skolebusruterne viser, at ruterne kan\nbetjenes af minibusser. Administrationen lægger derfor op til, at der udarbejdes følgende fire\nmodeller for betjening af skolebusruterne med elektriske minibusser, hvor Movias\nNærbusordning indgår i to af modellerne.\nMovias Nærbus er et fleksibelt kollektivt transporttilbud, der typisk anvendes i områder med få\npassagerer og lange afstande mellem byerne. Nærbussen kører ikke efter en fast ruteplan eller\nkøreplan som almindelige busser, men bestilles på forhånd og transporterer passagerer\nmellem udvalgte stoppesteder, trafikknudepunkter eller destinationer i lokalområdet i et på\nforhånd besluttede geografiske områder.\nModel A: Nærbusordning kombineret med én fast morgentur og to faste eftermiddagsture på\nde nuværende ruter med elektriske minibusser.\nModel B: Betjening af de nuværende ruter med elektriske minibusser uden tilhørende\nNærbusordning.\nModel C: Nærbusordning kombineret med én fast morgentur og to faste eftermiddagsture på\nnye ruter med elektriske minibusser.\nModel D: Betjening af nye ruter (samme ruter som i model C) med elektriske minibusser uden\ntilhørende Nærbusordning.\nPunkt 2 - Tilpasning af busruter i forbindelse med Kalundborgmotorvejen\nMotorvejen til Kalundborg står efter planen færdig i 2028. I den forbindelse vil der ske\nændringer i vejforløb langs motorvejen.\nVejforbindelser, der i dag krydser Skovvejen, vil ikke nødvendigvis kunne opretholdes som gennemgående\nforbindelser efter etableringen af motorvejen. Dette har konsekvenser for beboerne i området langs\nmotorvejen og den måde områderne kan busbetjenes. Der udarbejdes derfor en plan for mulige ændringer af\nde berørte busruter, så der fortsat kan afvikles busdrift efter motorvejen er etableret.\nMulige opgaver til Trafikbestilling 2028/2029\nPunkt 3, 4 og 5 samles i ét fokusområde. Såfremt fokusområdet ikke kan indeholdes i Trafikbestilling 2028,\nvidereføres det som fokusområde til Trafikbestilling 2029 under hensyntagen til udvalgets ønsker samt\nMovias ressourcemæssige muligheder.\n\nFokusområdet omfatter udarbejdelse af et nyt forslag til bybusbetjening i Kalundborg by, som\nindtænker betjening af nye boligområder, industriområder samt Vesthavnen. Forslaget skal\nhave til formål at inkludere disse områder inden for den nuværende økonomiske ramme.\nForslaget skal understøtte kommunens strategi for kollektiv trafik, hvor følgende principper\nlægges til grund:\nGod korrespondance\nDer skal køres regelmæssigt\n\nDer skal køres der hvor der er passagerer\nForslaget har fokus på at styrke busbetjeningen i de vigtigste transportkorridorer, og hvor potentialet for at\nfastholde og tiltrække passagerer er størst, gennem hyppigere afgange frem for at opretholde et stort\ngeografisk dækningsområde.\nØkonomiske konsekvenser\n\nIngen bevillingsmæssige konsekvenser."
+     "tekst": "Resume og sagens baggrund\n\nPå Trafik- og Kørselsudvalgets møde den 14. april 2026 blev de overordnede rammer for den\nkollektive trafik i kommunen samt fokusområder for Trafikbestilling 2028 drøftet.\nArbejdet med Trafikbestilling 2028 påbegyndes nu i november 2026. Administrationen har med\nafsæt i de drøftede fokusområder opstillet og beskrevet forslag til indhold i forbindelse med\nTrafikbestilling 2028.\nIndstillinger\n\nDirektøren indstiller, at der arbejdes videre med de i sagen nævnte fokusområder for\nTrafikbestilling 2028.\nBehandling\nTrafik- og Kørselsudvalget.\n\nPå Trafik- og Kørselsudvalgets møde den 14. april 2026 blev de overordnede rammer for den\nkollektive trafik i kommunen samt fokusområder for Trafikbestilling 2028 drøftet. Udvalget\nbesluttede, at der arbejdes videre med følgende fokusområder:\n1. Kommende udbud af skolebusser i Høng-området\n2. Tilpasning af busruter i forbindelse med Kalundborgmotorvejen\n3. Vesthavnen\n4. Industriområder\n5. Nye boligområder\n\nI forbindelse med Trafikbestilling 2028 foreslår administrationen, at der arbejdes videre med\nfølgende fokusområder.\nOpgaver til Trafikbestilling 2028\n\nPunkt 1 og 2 er o pgaver skal håndteres og søges løst i forbindelse med Trafikbestilling 2028.\nPunkt 1 - Kommende udbud af skolebusser i Høng-området\nDet kommende udbud af skolebuskørsel i Høng-området vil have kontraktstart den 9.\ndecember 2029 og kommunens ønsker til busbetjeningen skal derfor indgå som en del af\nTrafikbestilling 2028.\nPå nuværende tidspunkt betjenes skolebusruterne i Høng-området af seks stk. 12-meter\ndieselbusser. Movias analyser af passagertallet på skolebusruterne viser, at ruterne kan\nbetjenes af minibusser. Administrationen lægger derfor op til, at der udarbejdes følgende fire\nmodeller for betjening af skolebusruterne med elektriske minibusser, hvor Movias\nNærbusordning indgår i to af modellerne.\nMovias Nærbus er et fleksibelt kollektivt transporttilbud, der typisk anvendes i områder med få\npassagerer og lange afstande mellem byerne. Nærbussen kører ikke efter en fast ruteplan eller\nkøreplan som almindelige busser, men bestilles på forhånd og transporterer passagerer\nmellem udvalgte stoppesteder, trafikknudepunkter eller destinationer i lokalområdet i et på\nforhånd besluttede geografiske områder.\nModel A: Nærbusordning kombineret med én fast morgentur og to faste eftermiddagsture på\nde nuværende ruter med elektriske minibusser.\nModel B: Betjening af de nuværende ruter med elektriske minibusser uden tilhørende\nNærbusordning.\nModel C: Nærbusordning kombineret med én fast morgentur og to faste eftermiddagsture på\nnye ruter med elektriske minibusser.\nModel D: Betjening af nye ruter (samme ruter som i model C) med elektriske minibusser uden\ntilhørende Nærbusordning.\nPunkt 2 - Tilpasning af busruter i forbindelse med Kalundborgmotorvejen\nMotorvejen til Kalundborg står efter planen færdig i 2028. I den forbindelse vil der ske\nændringer i vejforløb langs motorvejen.\nVejforbindelser, der i dag krydser Skovvejen, vil ikke nødvendigvis kunne opretholdes som gennemgående\nforbindelser efter etableringen af motorvejen. Dette har konsekvenser for beboerne i området langs\nmotorvejen og den måde områderne kan busbetjenes. Der udarbejdes derfor en plan for mulige ændringer af\nde berørte busruter, så der fortsat kan afvikles busdrift efter motorvejen er etableret.\nMulige opgaver til Trafikbestilling 2028/2029\nPunkt 3, 4 og 5 samles i ét fokusområde. Såfremt fokusområdet ikke kan indeholdes i Trafikbestilling 2028,\nvidereføres det som fokusområde til Trafikbestilling 2029 under hensyntagen til udvalgets ønsker samt\nMovias ressourcemæssige muligheder.\n\nFokusområdet omfatter udarbejdelse af et nyt forslag til bybusbetjening i Kalundborg by, som\nindtænker betjening af nye boligområder, industriområder samt Vesthavnen. Forslaget skal\n\nhave til formål at inkludere disse områder inden for den nuværende økonomiske ramme.\nForslaget skal understøtte kommunens strategi for kollektiv trafik, hvor følgende principper\nlægges til grund:\nGod korrespondance\nDer skal køres regelmæssigt\nDer skal køres der hvor der er passagerer\nForslaget har fokus på at styrke busbetjeningen i de vigtigste transportkorridorer, og hvor potentialet for at\nfastholde og tiltrække passagerer er størst, gennem hyppigere afgange frem for at opretholde et stort\ngeografisk dækningsområde.\nØkonomiske konsekvenser\n\nIngen bevillingsmæssige konsekvenser."
     }
    ],
    "bilag": []
@@ -15723,8 +15809,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Bemærkninger til dagsordenen",
    "afsnit": [],
    "bilag": []
@@ -15736,8 +15822,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Meddelelser",
    "afsnit": [],
    "bilag": []
@@ -15749,8 +15835,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om Få det Fikset projekt i Høng - Renovering af gadekær",
    "afsnit": [
     {
@@ -15767,8 +15853,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om Få det fikset-projekt Røsnæs - lygtepæle på Røsnæs Kirkegård",
    "afsnit": [
     {
@@ -15785,8 +15871,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om anlægsregnskab for vedligeholdelse af havne 2023",
    "afsnit": [
     {
@@ -15803,8 +15889,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om anlægsregnskab for vedligeholdelse af havne 2024",
    "afsnit": [
     {
@@ -15821,8 +15907,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 9,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om anlægsbevilling til etablering af ”Ny Kærbyvej” og \"Erhvervsvej Vest\"",
    "afsnit": [
     {
@@ -15839,8 +15925,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 10,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om anlægsbevilling til flytning af Kathøjskolen til Hvidebækskolen",
    "afsnit": [
     {
@@ -15857,8 +15943,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 11,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om forsøg med ekstraordinær rågeindsats",
    "afsnit": [
     {
@@ -15875,8 +15961,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 12,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om vilkår vedr. lokalplan for etageboligbebyggelse, på Bredgade 48-50",
    "afsnit": [
     {
@@ -15893,8 +15979,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 13,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning af kommissorium for Ø-udvalget",
    "afsnit": [
     {
@@ -15911,8 +15997,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 14,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om Rammeaftale for det specialiserede social- og undervisningsområde 2027-2028",
    "afsnit": [
     {
@@ -15929,8 +16015,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 15,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om kvalitetstilsyn med folkeskolerne i Kalundborg Kommune",
    "afsnit": [
     {
@@ -15947,8 +16033,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 16,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om tildeling af §18-midler til brug for foreninger i 2027",
    "afsnit": [
     {
@@ -15965,8 +16051,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 17,
-   "kilde": "https://dagsordener.kalundborg.dk/vis?id=03dba46b-88a9-47cb-9e8c-3ecc8adb96d1",
-   "hentet": "2026-11-19T22:31:03.840Z",
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=8f4f2bef-1097-40b6-9bea-aa84d0838d13",
+   "hentet": "2026-11-24T15:13:03.586Z",
    "titel": "Beslutning om tildeling af §18-integrationsmidler til brug i 2027",
    "afsnit": [
     {
@@ -16417,6 +16503,121 @@
     }
    ],
    "bilag": []
+  },
+  "kalundborg-2026-11-25-oekonomiudvalget-1": {
+   "id": "kalundborg-2026-11-25-oekonomiudvalget-1",
+   "kommune": "Kalundborg",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-25",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=79886aff-2f9d-42ef-958a-c2f1260b84b8",
+   "hentet": "2026-11-24T15:12:38.687Z",
+   "titel": "Bemærkninger til dagsordenen",
+   "afsnit": [],
+   "bilag": []
+  },
+  "kalundborg-2026-11-25-oekonomiudvalget-2": {
+   "id": "kalundborg-2026-11-25-oekonomiudvalget-2",
+   "kommune": "Kalundborg",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-25",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=79886aff-2f9d-42ef-958a-c2f1260b84b8",
+   "hentet": "2026-11-24T15:12:38.687Z",
+   "titel": "Meddelelser",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Underskriftsark\n\nDette punkt benyttes til systemmæssig godkendelse af referatet for mødedeltagerne."
+    }
+   ],
+   "bilag": []
+  },
+  "kalundborg-2026-11-23-direktionen-1": {
+   "id": "kalundborg-2026-11-23-direktionen-1",
+   "kommune": "Kalundborg",
+   "udvalg": "Direktionen",
+   "dato": "2026-11-23",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=0dc4357e-e6ff-4129-a4af-780185d3057a",
+   "hentet": "2026-11-24T15:13:09.270Z",
+   "titel": "Decentrale direktionsmøder - Rynkevangskolen",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Resume og sagens baggrund\nDirektionen har besluttet at rykke ét direktionsmøde (som udgangspunkt det sidste møde hver måned) ud af\nDirektionens mødelokale og afholde det hos en decentral afdeling. På det decentrale møde giver afdelingen en\norientering om stedet. Dette møde afholdes hos Rynkevangskolen.\nIndstillinger\nDirektøren indstiller, at orienteringen tages til efterretning.\nBehandling\nDirektionen.\n\nUdover den normale dagsorden til møderne, vil den udvalgte arbejdsplads få mulighed for at præsentere afdelingen\n(15 – 30 minutters oplæg), med deltagelse af ledere og medarbejderrepræsentanter.\nOplægget skal give et nuanceret billede af afdelingen, blandt andet med fokus på eventuelle ledelsesmæssige\nudfordringer samt de succeser arbejdspladsen er særligt stolte af. Der er en forventning om, at Ledelses- og\nstyringsgrundlaget samt Fælles Retning inddrages i oplægget.\nMånedens decentrale møde bliver holdt hos Rynkevangskolen, hvor skoleleder Mette Lykkebo Thomsen deltager\nsammen med viceskoleleder og leder af inklusionscenteret Helle Hansen, afdelingsleder i udskolingen Annette\nHallgren, afdelingsleder indskoling og mellemtrin Maria Gericke og TR for lærerne Torben Rasmussen.\nØkonomiske konsekvenser\nIngen bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "kalundborg-2026-11-23-direktionen-6": {
+   "id": "kalundborg-2026-11-23-direktionen-6",
+   "kommune": "Kalundborg",
+   "udvalg": "Direktionen",
+   "dato": "2026-11-23",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=0dc4357e-e6ff-4129-a4af-780185d3057a",
+   "hentet": "2026-11-24T15:13:09.270Z",
+   "titel": "Godkendelse af Arbejdsmarkedspolitisk Strategi 2027-2030",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Anbefales."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Resume og sagens baggrund\n\nBeslutning om godkendelse af Social- og Beskæftigelsesudvalgets forslag til\nArbejdsmarkedspolitisk Strategi for de næste fire år (2027-2030).\nEn del af Kalundborg Kommunes overordnede, strategiske planlægning og\ninteressevaretagelse i forhold til erhvervsudvikling, uddannelse og rekruttering af arbejdskraft\ner, at der hvert fjerde år formuleres og godkendes en opdateret Arbejdsmarkedspolitisk\nStrategi. Det er den nye kommunalbestyrelse, som skal godkende strategien inden udgangen\naf 2026. Det er Social- og Beskæftigelsesudvalget, som skal sikre inddragelse og involvering,\nsamle input og formulere forslag til strategien, der skal godkendes af kommunalbestyrelsen.\nIndstillinger\n\nDirektøren indstiller, at forslag til Arbejdsmarkedspolitisk Strategi 2027-2030 godkendes.\nBehandling\nDirektionen, Social- og Beskæftigelsesudvalget, Økonomiudvalget, Kommunalbestyrelsen.\n\nEn vigtig del af Social- og Beskæftigelsesudvalgets proces i forbindelse med at opdatere\nArbejdsmarkedspolitisk Strategi 2027-2030 har været at sikre råderum for lokale input. Derfor\nafholdt udvalget en strategisk temadag den 11. juni 2026, hvor kommunalbestyrelsens\nmedlemmer, vigtige eksterne interessenter og samarbejdspartnere og direktionen fik mulighed\nfor at mødes og drøfte retningen i fællesskab. På temadagen kom der mange gode input, som\nAdministrationen samlede op på.\nDen 13. august 2026 drøftede Social- og Beskæftigelsesudvalget administrationens opsamling\npå de mange input fra temadagen og kom frem til en overordnet retning og struktur for,\nhvordan administrationen skulle udarbejde et forslag til opdateret strategi, som udvalget kunne\ndrøfte videre ud fra.\nSocial- og Beskæftigelsesudvalget har behandlet forslag til Arbejdsmarkedspolitisk Strategi på\nudvalgsmøderne i oktober og november 2026.\nForud for kommunalbestyrelsens møde den 16. december 2026 fremlægges sagen for\n\nDirektionen (23. november), Økonomiudvalg (9. december) og Social- og\nBeskæftigelsesudvalget (10. december). Alle har mulighed for at give deres anbefaling til\nkommunalbestyrelsen med eventuelle bemærkninger.\nForslag til Arbejdsmarkedspolitisk Strategi 2027-2030 er vedlagt som bilag.\nØkonomiske konsekvenser\nIngen bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "kalundborg-2026-11-23-direktionen-9": {
+   "id": "kalundborg-2026-11-23-direktionen-9",
+   "kommune": "Kalundborg",
+   "udvalg": "Direktionen",
+   "dato": "2026-11-23",
+   "type": "referat",
+   "nr": 9,
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=0dc4357e-e6ff-4129-a4af-780185d3057a",
+   "hentet": "2026-11-24T15:13:09.270Z",
+   "titel": "Orientering fra Økonomiudvalgsmødet og koordinering af sager til politisk behandling",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Resume og sagens baggrund\nFast punkt på Direktionens dagsorden efter Økonomiudvalgsmøder, hvor der orienteres fra Økonomiudvalgsmødet,\nog hvor sager på vej til politisk behandling koordineres.\n\nIndstillinger\nStabschefen indstiller, at\n1. der følges op på Økonomiudvalgsmødet.\n2. at sager på vej til politisk behandling koordineres.\n\nBehandling\nDirektionen.\n\nØkonomiske konsekvenser\nIngen bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "kalundborg-2026-11-23-direktionen-13": {
+   "id": "kalundborg-2026-11-23-direktionen-13",
+   "kommune": "Kalundborg",
+   "udvalg": "Direktionen",
+   "dato": "2026-11-23",
+   "type": "referat",
+   "nr": 13,
+   "kilde": "https://dagsordener.kalundborg.dk/vis?id=0dc4357e-e6ff-4129-a4af-780185d3057a",
+   "hentet": "2026-11-24T15:13:09.270Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Ingen bemærkninger."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -16425,7 +16626,7 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=2339a9e2-8bdd-4e65-9f58-2cc61d5d01ec": {
-   "senest": "2026-11-19",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=c7eec3fd-15f9-437a-8a44-befa0a8cfb25": {
@@ -16453,11 +16654,11 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=65a403ae-e667-4d1e-b49d-b311de06cf5c": {
-   "senest": "2026-11-12",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=bf65bb3e-3fd9-41a0-8e5e-36035968044c": {
-   "senest": "2026-11-16",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=24577d22-b39b-468c-adc2-1086864136fb": {
@@ -16525,7 +16726,7 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=306abc0d-f1e2-411f-b48d-5c6416817ac6": {
-   "senest": "2026-11-19",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=39ab646c-c63e-4591-a647-88f36e1a958d": {
@@ -16561,7 +16762,7 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=5c15e1d1-aa9e-40d9-b381-88822be20519": {
-   "senest": "2026-11-23",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.kalundborg.dk/Sitemap/ForCommittee?committeeId=3b4d23e5-08ea-47ac-b76c-6c375236d4aa": {
@@ -16586,6 +16787,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-24T02:01:49.467Z",
+ "opdateret": "2026-11-24T15:13:09.272Z",
  "kommune": "Kalundborg"
 }

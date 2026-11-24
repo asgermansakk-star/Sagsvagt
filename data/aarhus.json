@@ -1017,6 +1017,38 @@
    "dato": "2026-11-23",
    "punkter": 10,
    "parser": 3
+  },
+  "1f5c303e-d84f-46c9-8adc-a67cb90fd502": {
+   "lastmod": "2026-11-24",
+   "type": "dagsorden",
+   "udvalg": "Sundheds- og Omsorgsudvalget",
+   "dato": "2026-11-25",
+   "punkter": 7,
+   "parser": 3
+  },
+  "124eb909-8258-458b-9a4b-46c4e01e7fe0": {
+   "lastmod": "2026-11-24",
+   "type": "dagsorden",
+   "udvalg": "Natur- og Klimaudvalget",
+   "dato": "2026-11-25",
+   "punkter": 4,
+   "parser": 3
+  },
+  "07e7446b-07d7-44f6-a130-33b05eeb94f2": {
+   "lastmod": "2026-11-24",
+   "type": "referat",
+   "udvalg": "Magistraten",
+   "dato": "2026-11-24",
+   "punkter": 13,
+   "parser": 3
+  },
+  "e27719d7-2b22-434c-afb4-3e68783f2000": {
+   "lastmod": "2026-11-24",
+   "type": "dagsorden",
+   "udvalg": "By- og Planudvalget",
+   "dato": "2026-11-25",
+   "punkter": 8,
+   "parser": 3
   }
  },
  "sager": {
@@ -13285,12 +13317,17 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Referat fra Magistratens møde den 17. november 2026",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nGodkendt.\nMartin Christensen, Liv Gro Jensen og Sarah Jarsbo var forhindret i at deltage i sagens\nbehandling."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-24-magistraten-2": {
@@ -13298,10 +13335,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Forventet regnskab 2026 for Aarhus Kommune, pr. 30. september",
    "afsnit": [
     {
@@ -13316,10 +13353,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Diverse sager i relation til forventet regnskab 2026",
    "afsnit": [
     {
@@ -13334,10 +13371,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "God Mad til Aarhus - Fødevarestrategi 2026 – 2030",
    "afsnit": [
     {
@@ -13352,10 +13389,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Høringssvar til den regionale sundhedsplan 2027 – 2030",
    "afsnit": [
     {
@@ -13370,10 +13407,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Gebyrer for affaldsordninger 2027",
    "afsnit": [
     {
@@ -13388,10 +13425,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Udmøntning af midler til klimatilpasning 2027-2028",
    "afsnit": [
     {
@@ -13406,10 +13443,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Rottehandlingsplan 2027-2029",
    "afsnit": [
     {
@@ -13424,10 +13461,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Byskitse Solbjerg - Forslag",
    "afsnit": [
     {
@@ -13442,10 +13479,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Risikostyringsplan for oversvømmelser fra hav og vandløb",
    "afsnit": [
     {
@@ -13460,10 +13497,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.323Z",
    "titel": "Boligplan for plejeboliger 2026 – 2035",
    "afsnit": [
     {
@@ -13478,10 +13515,10 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.324Z",
    "titel": "Justering af aktivitetsstøtten til foreninger",
    "afsnit": [
     {
@@ -13496,12 +13533,17 @@
    "kommune": "Aarhus",
    "udvalg": "Magistraten",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=73c8f0d1-894e-47c8-9d51-1e33bf85c9a5",
-   "hentet": "2026-11-20T23:25:06.523Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=07e7446b-07d7-44f6-a130-33b05eeb94f2",
+   "hentet": "2026-11-24T15:16:59.324Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "BESLUTNINGER\nKort orientering om HR-dom vedrørende principiel fortolkning af Almenboligloven.\nMartin Christensen, Liv Gro Jensen og Sarah Jarsbo var forhindret i at deltage i sagens\nbehandling."
+    }
+   ],
    "bilag": []
   },
   "aarhus-2026-11-25-sundheds-og-omsorgsudvalget-1": {
@@ -13511,8 +13553,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=3773f717-b904-4ecf-8bf4-99c4ff4f900d",
-   "hentet": "2026-11-20T23:24:47.077Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1f5c303e-d84f-46c9-8adc-a67cb90fd502",
+   "hentet": "2026-11-24T15:16:45.376Z",
    "titel": "Deltage i møde med borger- og pårørendepanel",
    "afsnit": [],
    "bilag": []
@@ -13524,8 +13566,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=3773f717-b904-4ecf-8bf4-99c4ff4f900d",
-   "hentet": "2026-11-20T23:24:47.077Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1f5c303e-d84f-46c9-8adc-a67cb90fd502",
+   "hentet": "2026-11-24T15:16:45.376Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [],
    "bilag": []
@@ -13537,8 +13579,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=3773f717-b904-4ecf-8bf4-99c4ff4f900d",
-   "hentet": "2026-11-20T23:24:47.077Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1f5c303e-d84f-46c9-8adc-a67cb90fd502",
+   "hentet": "2026-11-24T15:16:45.376Z",
    "titel": "Godkendelse af referat fra seneste møde",
    "afsnit": [],
    "bilag": []
@@ -13550,8 +13592,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=3773f717-b904-4ecf-8bf4-99c4ff4f900d",
-   "hentet": "2026-11-20T23:24:47.077Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1f5c303e-d84f-46c9-8adc-a67cb90fd502",
+   "hentet": "2026-11-24T15:16:45.376Z",
    "titel": "Økonomisk tilpasning",
    "afsnit": [],
    "bilag": []
@@ -13563,8 +13605,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=3773f717-b904-4ecf-8bf4-99c4ff4f900d",
-   "hentet": "2026-11-20T23:24:47.077Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1f5c303e-d84f-46c9-8adc-a67cb90fd502",
+   "hentet": "2026-11-24T15:16:45.376Z",
    "titel": "Afsatte budgetmidler til folkehusene til anlæg",
    "afsnit": [],
    "bilag": []
@@ -13576,8 +13618,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=3773f717-b904-4ecf-8bf4-99c4ff4f900d",
-   "hentet": "2026-11-20T23:24:47.077Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1f5c303e-d84f-46c9-8adc-a67cb90fd502",
+   "hentet": "2026-11-24T15:16:45.376Z",
    "titel": "Kommende møder og indstillinger",
    "afsnit": [],
    "bilag": []
@@ -13589,8 +13631,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=3773f717-b904-4ecf-8bf4-99c4ff4f900d",
-   "hentet": "2026-11-20T23:24:47.077Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=1f5c303e-d84f-46c9-8adc-a67cb90fd502",
+   "hentet": "2026-11-24T15:16:45.376Z",
    "titel": "Eventuelt",
    "afsnit": [],
    "bilag": []
@@ -13602,8 +13644,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=e752da1a-0b5d-4e67-8e0f-81f11e2edf94",
-   "hentet": "2026-11-20T23:24:55.073Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=124eb909-8258-458b-9a4b-46c4e01e7fe0",
+   "hentet": "2026-11-24T15:16:51.405Z",
    "titel": "Referat fra sidste udvalgsmøde",
    "afsnit": [],
    "bilag": []
@@ -13615,8 +13657,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=e752da1a-0b5d-4e67-8e0f-81f11e2edf94",
-   "hentet": "2026-11-20T23:24:55.073Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=124eb909-8258-458b-9a4b-46c4e01e7fe0",
+   "hentet": "2026-11-24T15:16:51.405Z",
    "titel": "Sammenhæng ml. klimahandlingsplanen og Lifeact",
    "afsnit": [],
    "bilag": []
@@ -13628,8 +13670,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=e752da1a-0b5d-4e67-8e0f-81f11e2edf94",
-   "hentet": "2026-11-20T23:24:55.073Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=124eb909-8258-458b-9a4b-46c4e01e7fe0",
+   "hentet": "2026-11-24T15:16:51.405Z",
    "titel": "Drøftelse af interessevaretagelse og politisk handlerum for klimatilpasning",
    "afsnit": [],
    "bilag": []
@@ -13641,8 +13683,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=e752da1a-0b5d-4e67-8e0f-81f11e2edf94",
-   "hentet": "2026-11-20T23:24:55.073Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=124eb909-8258-458b-9a4b-46c4e01e7fe0",
+   "hentet": "2026-11-24T15:16:51.405Z",
    "titel": "Eventuelt",
    "afsnit": [],
    "bilag": []
@@ -13888,8 +13930,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=df9e9e4a-4ac7-46c1-842b-c1933d7d40b9",
-   "hentet": "2026-11-20T23:25:20.691Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e27719d7-2b22-434c-afb4-3e68783f2000",
+   "hentet": "2026-11-24T15:17:05.843Z",
    "titel": "Referat fra sidste udvalgsmøde",
    "afsnit": [],
    "bilag": []
@@ -13901,8 +13943,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=df9e9e4a-4ac7-46c1-842b-c1933d7d40b9",
-   "hentet": "2026-11-20T23:25:20.691Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e27719d7-2b22-434c-afb4-3e68783f2000",
+   "hentet": "2026-11-24T15:17:05.843Z",
    "titel": "Anlægsregnskab for Energirenovering af vejbelysning, del II",
    "afsnit": [
     {
@@ -13927,8 +13969,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=df9e9e4a-4ac7-46c1-842b-c1933d7d40b9",
-   "hentet": "2026-11-20T23:25:20.691Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e27719d7-2b22-434c-afb4-3e68783f2000",
+   "hentet": "2026-11-24T15:17:05.843Z",
    "titel": "Lokalplan 1165, Frydenlund Centret - Endelig",
    "afsnit": [
     {
@@ -13953,8 +13995,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 5,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=df9e9e4a-4ac7-46c1-842b-c1933d7d40b9",
-   "hentet": "2026-11-20T23:25:20.691Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e27719d7-2b22-434c-afb4-3e68783f2000",
+   "hentet": "2026-11-24T15:17:05.843Z",
    "titel": "Lokalplan 1230, parcelhusgrunde i Kolt-Hasselager - Forslag",
    "afsnit": [
     {
@@ -13979,8 +14021,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 6,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=df9e9e4a-4ac7-46c1-842b-c1933d7d40b9",
-   "hentet": "2026-11-20T23:25:20.691Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e27719d7-2b22-434c-afb4-3e68783f2000",
+   "hentet": "2026-11-24T15:17:05.843Z",
    "titel": "Udvalgsdrøftelse - Lokalplan 1253 Boligområde ved Kalmargade",
    "afsnit": [],
    "bilag": []
@@ -13992,8 +14034,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=df9e9e4a-4ac7-46c1-842b-c1933d7d40b9",
-   "hentet": "2026-11-20T23:25:20.691Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e27719d7-2b22-434c-afb4-3e68783f2000",
+   "hentet": "2026-11-24T15:17:05.843Z",
    "titel": "Sager på vej",
    "afsnit": [],
    "bilag": []
@@ -14005,8 +14047,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=df9e9e4a-4ac7-46c1-842b-c1933d7d40b9",
-   "hentet": "2026-11-20T23:25:20.691Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e27719d7-2b22-434c-afb4-3e68783f2000",
+   "hentet": "2026-11-24T15:17:05.843Z",
    "titel": "Eventuelt",
    "afsnit": [],
    "bilag": []
@@ -14018,8 +14060,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 9,
-   "kilde": "https://dagsordener.aarhus.dk/vis?id=df9e9e4a-4ac7-46c1-842b-c1933d7d40b9",
-   "hentet": "2026-11-20T23:25:20.691Z",
+   "kilde": "https://dagsordener.aarhus.dk/vis?id=e27719d7-2b22-434c-afb4-3e68783f2000",
+   "hentet": "2026-11-24T15:17:05.843Z",
    "titel": "Forslag til ny kollektiv trafikstruktur",
    "afsnit": [],
    "bilag": []
@@ -14035,7 +14077,7 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=cc536006-94ff-4d59-9a74-5165a7b7007a": {
-   "senest": "2026-11-20",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=e301ea5c-c6c3-4b34-92ee-330d63828fb6": {
@@ -14043,11 +14085,11 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=e7ff7438-b4eb-4965-a055-e53332a34df7": {
-   "senest": "2026-11-20",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=f00551e6-8b74-4aba-a4af-3bc4228ce661": {
-   "senest": "2026-11-20",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=31c2be8b-8f63-4eb4-9bb7-3cdeca4a8a0a": {
@@ -14063,7 +14105,7 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.aarhus.dk/Sitemap/ForCommittee?committeeId=51b46d2e-8abf-47d4-b994-e2e3dd85cf2f": {
-   "senest": "2026-11-20",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.aarhus.dk/Sitemap/StaticPages": {
@@ -14072,6 +14114,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-24T02:05:16.035Z",
+ "opdateret": "2026-11-24T15:17:05.850Z",
  "kommune": "Aarhus"
 }
