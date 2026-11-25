@@ -24,6 +24,22 @@
 .foto-form .tjek input { margin-top: 3px; width: 18px; height: 18px; flex: none; }
 .wrap.smal { max-width: 680px; }
 
+/* Spørgeskemaet (spoergeskema.html, avis/spoergeskema.mjs) */
+.spoerg-form fieldset { border: 0; margin: 0; padding: 0 0 18px; display: grid; gap: 8px; border-bottom: 1px solid var(--rule); }
+.spoerg-form fieldset:last-of-type { border-bottom: 0; }
+.spoerg-form legend { font-weight: 700; font-size: var(--sekundaer); line-height: 1.35; padding: 0 0 8px; }
+.spoerg-form legend .lille { font-weight: 500; }
+.spoerg-form .skala { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 6px; }
+.spoerg-form .skala.elleve { grid-template-columns: repeat(11, minmax(0, 1fr)); }
+.spoerg-form .skala label { position: relative; display: block; }
+.spoerg-form .skala input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.spoerg-form .skala span { display: flex; align-items: center; justify-content: center; min-height: 44px; border: 1.5px solid var(--rule); border-radius: var(--r-felt); background: #fff; font-weight: 700; font-variant-numeric: tabular-nums; }
+.spoerg-form .skala input:checked + span { background: var(--nat); border-color: var(--nat); color: var(--kalk); }
+.spoerg-form .skala input:focus-visible + span { outline: 2px solid var(--vin); outline-offset: 2px; }
+.spoerg-form .skala-ender { display: flex; justify-content: space-between; margin: 0; }
+.spoerg-form .skjult { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+@media (max-width: 480px) { .spoerg-form .skala.elleve { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+
 /* Billeder på forsiden og i lister (avis/byg.mjs) */
 .lead-billede { display: block; margin: 0 0 14px; }
 .lead-billede img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; }

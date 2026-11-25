@@ -133,6 +133,16 @@
       </table></div>
       <dialog id="mm-vis" aria-label="Forhåndsvisning af mail"><div class="mm-top"><b id="mm-vis-emne"></b><button class="mini-knap" type="button" id="mm-luk">Luk</button></div><iframe id="mm-ramme" title="Mailen" sandbox="allow-popups allow-popups-to-escape-sandbox"></iframe></dialog>
     </details>
+    <details class="import" id="sp-boks">
+      <summary id="sp-titel">Spørgeskema</summary>
+      <p class="lille" id="sp-status">Henter …</p>
+      <p class="lille">Går til dem, der har bekræftet deres tilmelding for mindst 30 dage siden og sagt ja til andre mails end mandagsmailen. Hver får et personligt link (<code>spoergeskema.html</code>) og kun én mail pr. runde. Send en prøve til dig selv først.</p>
+      <div class="handl-raekke">
+        <button class="knap sek" id="sp-proeve" type="button">Send en prøve til mig</button>
+        <button class="knap" id="sp-send" type="button" disabled>Send</button>
+      </div>
+      <div id="sp-resultat"></div>
+    </details>
     <details class="import" id="fb-boks">
       <summary id="fb-titel">Feedback fra Min avis</summary>
       <div id="fb-liste"></div>
@@ -212,7 +222,7 @@
       fyldOmraader();
       vis();
       findHenvisere();
-      hentFeedback();
+      hentFeedback(); hentSpoerg();
       hentFotos();
       hentPush();
       hentPakker();
@@ -294,6 +304,47 @@
       }).join("") : '<p class="lille">Ingen feedback endnu.</p>';
     }).catch(function () {});
   }
+  // Spørgeskemaet: tal, knapper og svarene talt op (api/admin/spoergeskema.php). Navnene skal passe med avis/spoergeskema.mjs.
+  var SP = {
+    brug: ["Hvad bruger du Sagsvagt til?", { mandagsmail: "Mandagsmailen", minavis: "Min avis", forside: "Forsiden og sagerne", soeg: "Søgningen", kort: "Kort eller mødekalender", push: "Beskeder på telefonen", andet: "Andet" }],
+    hyppighed: ["Hvor tit læser du mandagsmailen?", { hver_uge: "Hver uge", par_gange: "Et par gange om måneden", sjaeldent: "Sjældnere", aldrig: "Aldrig eller får den ikke" }],
+    rammer: ["Hvor godt rammer sagerne? (1-5)", null],
+    hjulpet: ["Har Sagsvagt hjulpet dig med noget konkret?", { ja: "Ja", nej: "Nej", ved_ikke: "Ved ikke" }],
+    anbefal: ["Anbefale til en ven eller kollega (0-10)", null],
+    rolle: ["Hvad passer bedst på dig?", { borger: "Borger", politiker: "Lokalpolitiker", journalist: "Journalist", forening: "Forening eller organisation", kommune: "Ansat i en kommune", erhverv: "I en virksomhed", andet: "Andet" }],
+    betale: ["Højst betale om måneden", { nej: "Intet, ville stoppe", under_30: "Under 30 kr.", "30_59": "30-59 kr.", "60_99": "60-99 kr.", "100_plus": "100 kr. eller mere" }]
+  };
+  function visSpoerg(j) {
+    $("#sp-titel").textContent = "Spørgeskema (" + j.svar + " svar af " + j.sendt + " sendt)";
+    $("#sp-status").textContent = "Runde " + j.runde + ": " + j.kan_faa + " kan få det nu. " + j.sendt + " har fået det, og " + j.svar + " har svaret. "
+      + j.kun_mandag + " har brugt Sagsvagt i over " + j.dage + " dage, men har kun sagt ja til mandagsmailen og får det ikke."
+      + (j.sendt_nu != null ? " Sendt nu: " + j.sendt_nu + (j.fejlede && j.fejlede.length ? ", fejlede: " + j.fejlede.join(", ") : "") + "." : "");
+    var k = $("#sp-send"); k.disabled = !j.kan_faa; k.textContent = j.kan_faa ? "Send til " + Math.min(j.kan_faa, 200) + (j.kan_faa > 200 ? " (af " + j.kan_faa + ")" : "") : "Ingen at sende til";
+    if (!j.svar) { $("#sp-resultat").innerHTML = '<p class="lille">Ingen svar endnu.</p>'; return; }
+    var html = "";
+    Object.keys(SP).forEach(function (n) {
+      var o = j.optalt[n] || {}, navne = SP[n][1], sum = 0, noegler = navne ? Object.keys(navne) : Object.keys(o).sort(function (a, b) { return a - b; });
+      Object.keys(o).forEach(function (x) { sum += o[x]; });
+      var snit = !navne && sum ? Object.keys(o).reduce(function (s, x) { return s + x * o[x]; }, 0) / sum : null;
+      html += "<h3 style=\"font-size:1rem;margin:18px 0 6px\">" + esc(SP[n][0]) + (snit != null ? " · gennemsnit " + snit.toFixed(1).replace(".", ",") : "")
+        + (n === "anbefal" && j.nps != null ? " · NPS " + j.nps : "") + '</h3><table class="liste"><tbody>'
+        + noegler.map(function (x) { return "<tr><td>" + esc(navne ? navne[x] : x) + "</td><td style=\"text-align:right\">" + (o[x] || 0) + "</td></tr>"; }).join("") + "</tbody></table>";
+    });
+    html += '<h3 style="font-size:1rem;margin:22px 0 6px">Det, de skrev</h3>' + (j.tekster.length ? j.tekster.map(function (t) {
+      return '<div class="fb"><span class="lille">' + dato(t.tid) + (t.rolle ? " · " + esc(SP.rolle[1][t.rolle] || t.rolle) : "") + " · " + (t.email ? esc(t.email) : "vil ikke kontaktes") + "</span>"
+        + (t.hjulpet ? "<p><b>Hjulpet:</b> " + esc(t.hjulpet) + "</p>" : "") + (t.mangler ? "<p><b>Mangler:</b> " + esc(t.mangler) + "</p>" : "") + "</div>";
+    }).join("") : '<p class="lille">Ingen har skrevet noget endnu.</p>');
+    $("#sp-resultat").innerHTML = html;
+  }
+  function hentSpoerg() { api("admin/spoergeskema.php", { handling: "status" }).then(visSpoerg).catch(function () { $("#sp-status").textContent = "Kunne ikke hente spørgeskemaet."; }); }
+  $("#sp-proeve").addEventListener("click", function () {
+    api("admin/spoergeskema.php", { handling: "proeve" }).then(function (j) { besked("Prøven er sendt til " + j.sendt_til + "."); }).catch(function (e) { besked(e.message, "fejl"); });
+  });
+  $("#sp-send").addEventListener("click", function () {
+    var k = this; if (!confirm(k.textContent + "? Hver får én mail med et personligt link.")) return;
+    k.disabled = true;
+    api("admin/spoergeskema.php", { handling: "send" }).then(visSpoerg).catch(function (e) { besked(e.message, "fejl"); k.disabled = false; });
+  });
   var FOTOSTATUS = { ny: "Ny", godkendt: "Godkendt", afvist: "Afvist" };
   function hentFotos() {
     api("admin/fotos.php").then(function (j) {

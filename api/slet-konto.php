@@ -17,6 +17,10 @@ $db->prepare('DELETE FROM tokens WHERE abonnent_id = ?')->execute([$b['id']]);
 try { $db->prepare('DELETE FROM push_abonnementer WHERE abonnent_id = ?')->execute([$b['id']]); } catch (PDOException $e) {} // findes kun, når push er brugt
 $db->prepare('DELETE FROM samtykker WHERE abonnent_id = ?')->execute([$b['id']]);
 $db->prepare("UPDATE feedback SET abonnent_id = NULL, email = '' WHERE abonnent_id = ?")->execute([$b['id']]);
+try { // findes kun, når spørgeskemaet er brugt; svarene beholdes uden person
+    $db->prepare('UPDATE spoergeskema_svar SET abonnent_id = NULL WHERE abonnent_id = ?')->execute([$b['id']]);
+    $db->prepare('DELETE FROM spoergeskema_sendt WHERE abonnent_id = ?')->execute([$b['id']]);
+} catch (PDOException $e) {}
 // Er man også medlem af Sæt Dagsordenen, slettes kun Sagsvagt-delen: medlemskab, navn, alder, kommuner og adgangskode bliver
 $erMedlem = !empty($b['medlem']);
 if ($erMedlem) $db->prepare("UPDATE abonnenter SET status = 'medlem', profil = NULL, emner = '', samtykke = NULL WHERE id = ?")->execute([$b['id']]);

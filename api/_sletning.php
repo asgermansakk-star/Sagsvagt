@@ -8,13 +8,14 @@ declare(strict_types=1);
 
 const SLET_EFTER_DAGE = 30;
 
-// Fjerner alt om en tilmeldt: links fra mails, push, mailkø og -historik. Feedback beholdes uden e-mail.
+// Fjerner alt om en tilmeldt: links fra mails, push, mailkø og -historik. Feedback og svar på spørgeskemaet beholdes uden e-mail.
 function slet_abonnent(PDO $db, int $id, bool $medlem): void {
     $db->prepare('DELETE FROM tokens WHERE abonnent_id = ?')->execute([$id]);
-    foreach (['push_abonnementer', 'mandagsmail_koe', 'mandagsmail_sendt', 'samtykker'] as $tabel) {
+    foreach (['push_abonnementer', 'mandagsmail_koe', 'mandagsmail_sendt', 'samtykker', 'spoergeskema_sendt'] as $tabel) {
         try { $db->prepare("DELETE FROM $tabel WHERE abonnent_id = ?")->execute([$id]); } catch (PDOException $e) {} // findes kun, når de er brugt
     }
     $db->prepare("UPDATE feedback SET abonnent_id = NULL, email = '' WHERE abonnent_id = ?")->execute([$id]);
+    try { $db->prepare('UPDATE spoergeskema_svar SET abonnent_id = NULL WHERE abonnent_id = ?')->execute([$id]); } catch (PDOException $e) {} // svarene beholdes uden person
     if ($medlem) $db->prepare("UPDATE abonnenter SET status = 'medlem', profil = NULL, emner = '', rolle = '', kilde = '', mail_afmeldt = NULL, samtykke = NULL WHERE id = ?")->execute([$id]);
     else $db->prepare('DELETE FROM abonnenter WHERE id = ?')->execute([$id]);
 }

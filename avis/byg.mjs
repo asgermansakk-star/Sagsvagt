@@ -9,6 +9,7 @@ import { bygStedkort, stedkortFigur } from "./stedkort.mjs";
 import { emneBillede, emneId, emneFil } from "./emnebilleder.mjs";
 import { stemmeGrafik, stemmeMini } from "./stemmegrafik.mjs";
 import { hoeringsMaerke, laesLaeserfotos, laeserfotoFigur, fotoSideIndhold, bygLuftfotos, luftfotoFigur } from "./grafik.mjs";
+import { spoergeskemaIndhold } from "./spoergeskema.mjs";
 import { findSteder, stedLinks, bygSteder, delRad, DEL_SCRIPT } from "./steder.mjs";
 import { bygBokse } from "./boks.mjs";
 import { forsideDele } from "./forside.mjs";
@@ -300,7 +301,7 @@ async function bygFaelles() {
   console.log(`Fælles filer: ${delteHoveder.size} avishoveder og én sidefod i del/ (${FAELLES ? "siderne bruger dem" : "siderne bruger dem ikke endnu"})`);
 }
 
-function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "website", ogBillede = "", kommune = null }) {
+function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "website", ogBillede = "", kommune = null, noindex = false }) {
   const canonical = SITE_URL + sti;
   const udgave = kommune?.navn || "";
   const kanDele = aktiv !== "forside" && aktiv !== "k-forside", faelles = FAELLES && kanDele;
@@ -309,7 +310,7 @@ function side({ titel, beskrivelse, sti, rod, indhold, aktiv = "", ogType = "web
 <html lang="da">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">${noindex ? '\n<meta name="robots" content="noindex">' : ""}
 <title>${esc(titel)}</title>
 <meta name="description" content="${esc(beskrivelse)}">
 <link rel="canonical" href="${canonical}">
@@ -835,6 +836,10 @@ if(g.length)k.fitBounds(g,{padding:[24,24],maxZoom:14})}).catch(function(){var p
   await writeFile(join(ROD, "assets", "grafik-laes.css"), kunInde(grafikCss, ".laes-indhold"));
   await writeFile(join(ROD, "foto.html"), side({
     titel: "Send et billede – Sagsvagt", beskrivelse: "Send et billede fra et sted, politikerne beslutter noget om. Vi viser det med dit navn.", sti: "foto.html", rod: "", indhold: fotoSideIndhold(),
+  }));
+  // Spørgeskemaet til læserne: kun via det personlige link i mailen, så siden skal ikke i Google eller sitemap
+  await writeFile(join(ROD, "spoergeskema.html"), side({
+    titel: "Hvad synes du om Sagsvagt?", beskrivelse: "Spørgeskema til Sagsvagts læsere.", sti: "spoergeskema.html", rod: "", indhold: spoergeskemaIndhold(), noindex: true,
   }));
   await writeFile(join(ROD, "om.html"), side({
     titel: "Om Sagsvagt", beskrivelse: "Sagsvagt gør det let at følge med i, hvad politikerne i din kommune beslutter.", sti: "om.html", rod: "", aktiv: "om",
