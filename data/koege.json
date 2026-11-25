@@ -479,6 +479,38 @@
    "dato": "2026-11-26",
    "punkter": 14,
    "parser": 3
+  },
+  "9a49f7a7-6443-473c-8f7a-2120f7d4b51f": {
+   "lastmod": "2026-11-25",
+   "type": "referat",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "punkter": 8,
+   "parser": 3
+  },
+  "9a27fd59-f2d6-449d-a512-8ab5cc09779c": {
+   "lastmod": "2026-11-25",
+   "type": "dagsorden",
+   "udvalg": "Social- og Beskæftigelsesudvalget",
+   "dato": "2026-11-30",
+   "punkter": 3,
+   "parser": 3
+  },
+  "16edacb4-956f-4ba1-bcae-b53a032a99b7": {
+   "lastmod": "2026-11-25",
+   "type": "referat",
+   "udvalg": "Køge Kommunalbestyrelse",
+   "dato": "2026-11-24",
+   "punkter": 13,
+   "parser": 3
+  },
+  "181abaad-d3b3-4684-a168-b9ffcaa5f9b3": {
+   "lastmod": "2026-11-25",
+   "type": "dagsorden",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "punkter": 9,
+   "parser": 3
   }
  },
  "sager": {
@@ -10043,12 +10075,17 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt, således at punkt 227, 231 og 235 tages af dagsordenen."
+    }
+   ],
    "bilag": []
   },
   "koege-2026-11-24-koege-kommunalbestyrelse-2": {
@@ -10056,15 +10093,19 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Spørgetid - skriftlige spørgsmål til Kommunalbestyrelsen",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Der er ikke modtaget skriftlige spørgsmål."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Intet."
     }
    ],
    "bilag": []
@@ -10074,12 +10115,17 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Spørgetid - mundtlige spørgsmål til Kommunalbestyrelsen",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Michael Bay Hansen, Køge spurgte til borgernes sikkerhed ved brand ved flytning af\nbrandstation til Lellinge. Borgmesteren svarede."
+    }
+   ],
    "bilag": []
   },
   "koege-2026-11-24-koege-kommunalbestyrelse-4": {
@@ -10087,10 +10133,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Køge Festuge - Alternativ placering på Køge Marina",
    "afsnit": [
     {
@@ -10100,6 +10146,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser for Køge Kommune.\n\nSagens forløb\n05/11/2026 Plan-, Grøn- og Landdistriktsudvalget 2026 - 2029\nFor: Thomas Kampmann (C), Thomas Kielgast (F), Ulrik Sejersdal (V), Tanja Glückstadt (O),\nLene Møller Nielsen (A)\nNiels Rolskov (Ø) undlader at stemme.\nDermed er punkt 1 godkendt.\nFor: Thomas Kampmann (C), Thomas Kielgast (F), Ulrik Sejersdal (V), Tanja Glückstadt (O)\nImod: Lene Møller Nielsen (A), Niels Rolskov (Ø)\nLene Møller Nielsen (A) benytter sig af sin standsningsret vedr. punkt 2 og sender sagen til\nbehandling i Kommunalbestyrelsen.\n\nAfbud: Lars Deleuran"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 2:\nFor indstillingen stemte 18 (V, C, O, D, I, Thomas Kielgast (F).\nImod indstillingen stemte 9 (A, Ø, Ali Yahya (F), Nora Chmeis (F).\nIndstillingen vedtaget."
     }
    ],
    "bilag": []
@@ -10109,10 +10159,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "3. Økonomiske Redegørelse 2026 - Kommunalbestyrelsen",
    "afsnit": [
     {
@@ -10122,6 +10172,10 @@
     {
      "titel": "Økonomi",
      "tekst": "3. ØR viser et netto mindreforbrug og merindtægter på 30,6 mio. kr. i 2026. Netto\nmindreforbruget er sammensat af et brutto mindreforbrug på 98,3 mio. kr. og et brutto\nmerforbrug på 67,8 mio. kr. Herudover forventes et varigt mindreforbrug på 4,2 mio. kr.\nServicerammen forventes overholdt.\n\nSagens forløb\n16/11/2026 Økonomiudvalget 2026 - 2029\nAd 1-7: Anbefales.\nDet anbefales at bevilge 4,2 mio. kr. til\n0,5 mio. erhvervsplaymaker\n1,4 mio. kr. til skoleområdet - løft til arbejdet med Pisa-undersøgelsen\n1,3 mio. kr. til mindreindtægt vedr. byggesagsgebyr (ny flat rate model)\n1,0 mio. kr. til frivillighedsindsats på ældreområdet\nfinansieret af det i dagsordensteksten under Økonomi nævnte forventede varige mindreforbrug.\nDet anbefales at give en underskudsgaranti på 0,75 mio. kr. til \"Ud af volden ind i livet\", hvis\nprojektet ikke modtager ekstern finansiering i 2027.\n\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1-7: Godkendt, inklusiv Økonomiudvalgets anbefalinger. Herudover afsættes 100.000\nkr. til udgifter i forbindelse med etablering af Natteravne i Borup og andre byer.\nNiels Rolskov (Ø) kan ikke tiltræde forslaget om byggesagsgebyr."
     }
    ],
    "bilag": []
@@ -10131,10 +10185,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Godkendelse af Skema B for 49 senioregnede boliger ved Ejbovænge i Bjæverskov",
    "afsnit": [
     {
@@ -10148,6 +10202,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Projektets samlede anskaffelsessum udgør 128,456 mio. kr. og finansieres således:\nFinansiering\n\nBeløb\n\nStøttet realkreditlån\n\nKommunalt grundkapitallån\n\nBeboerindskud\n\n2,569 mio. kr.\n\nKommunens direkte økonomiske engagement udgør et grundkapitallån på 10,276 mio. kr.\nHerudover skal kommunen stille garanti for den del af det støttede realkreditlån, der ligger ud\nover 60 pct. af ejendommens værdi. Garantiforpligtelsen er foreløbigt beregnet til ca. 74,630\nmio. kr. Den endelige garantiforpligtelse fastsættes i forbindelse med Skema C.\nAnskaffelsessummen er steget med 27,588 mio. kr., svarende til 27,35 pct., siden\ngodkendelsen af Skema A. Det kommunale grundkapitallån er som følge heraf steget med ca.\n2,207 mio. kr.\n\nDen gældende maksimumsramme er oplyst til 130,844 mio. kr. Anskaffelsessummen ligger\ndermed 2,388 mio. kr. under maksimumsbeløbet. Maksimumsbeløbet er således overholdt,\nforudsat at projektets areal- og beregningsgrundlag kan godkendes efter de gældende regler.\nDen foreløbige gennemsnitlige husleje er beregnet til 1.672 kr. pr. m² årligt eksklusive forbrug\nog øvrige omkostninger.\n\nSagens forløb\n16/11/2026 Økonomiudvalget 2026 - 2029\nAd 1-7: Anbefales.\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget af dagsordenen."
     }
    ],
    "bilag": []
@@ -10157,10 +10215,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Fristforlængelse for Skema C, Solbakken II, Køge Boligselskab",
    "afsnit": [
     {
@@ -10170,6 +10228,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Renoveringen af Solbakken II omfatter støttede arbejder for ca. 150 mio. kr. og ustøttede\narbejder for ca. 61 mio. kr.\nSagen vedrører alene fristforlængelse for indsendelse af byggeregnskabet (Skema C). Der\ntages med sagen ikke stilling til godkendelse af det endelige byggeregnskab eller Skema C.\n\nSagens forløb\n16/11/2026 Økonomiudvalget 2026 - 2029\nAnbefales.\n\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10179,10 +10241,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Godkendelse af Skema C - Køge Nord Skovby",
    "afsnit": [
     {
@@ -10192,6 +10254,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Den samlede godkendte anskaffelsessum udgør ifølge Skema C 111,876 mio. kr. inkl. moms.\nAnskaffelsessummen i Skema C kan overordnet opgøres således:\nSkema C\nGrundudgifter\n\nEntrepriseudgifter\n\nOmkostninger\n\n5,835 mio. kr.\n\nGebyrer\n\n1,637 mio. kr.\n\nSamlet\n\nFinansieringen er i Skema C angivet med støttede lån på 98,451 mio. kr., kommunalt\ngrundkapitallån på 11,188 mio. kr. og beboerindskud på 2,238 mio. kr.\nDet endelige byggeregnskab viser en realiseret finansieringsberettiget anskaffelsessum på\n111.133.143 kr., som finansieres med 97.797.166 kr. i støttet realkreditlån, 11.113.314 kr. i\nkommunalt grundkapitallån og 2.222.663 kr. i beboerindskud.\nForskellen mellem den godkendte anskaffelsessum i Skema C på 111,876 mio. kr. og den\nrealiserede finansieringsberettigede anskaffelsessum i byggeregnskabet på 111.133.143 kr.\nfremgår således særskilt af henholdsvis Skema C og byggeregnskabet.\n\nSagens forløb\n16/11/2026 Økonomiudvalget 2026 - 2029\nAd 1-2: Anbefales.\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10201,10 +10267,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Garantistillelse Skovbo Vand A.m.b.a",
    "afsnit": [
     {
@@ -10214,6 +10280,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Ud fra en samlet vurdering, og med afsæt i kreditvurderingen, risikovurderingen og det\nfremsendte materiale, vurderes garantiprovisionen at skulle udgøre 0,4 %, hvilket svarer til den\ntidligere provisionssats fra sagsfremstillingen i 2025. Indplaceringen tager udgangspunkt i\nBDO's kreditvurdering og EU Kommissionens meddelelse (2008/C 155/02), afsnit 3.3,\nsom fastsættes til en årlig minimumssats på 0,4 %. Dertil kommer stiftelsesprovision på 0,05\n%, når det endelige lån optages.\nGarantistillelse for et lån på 62 mio. kr. vil resultere i opkrævning af en årlig garantiprovision på\n0,4 % de første par år. Når anlægget er etableret og byggekreditten skal omdannes til et\npermanent annuitetslån, opkræves et tillæg på 0,05 %.\n\nSagens forløb\n16/11/2026 Økonomiudvalget 2026 - 2029\nAd 1-4: Anbefales.\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10223,10 +10293,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Køge Digelaug kommunal garantistillelse",
    "afsnit": [
     {
@@ -10236,6 +10306,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Garantistillelsen påvirker ikke kommunens likviditet eller driftsøkonomi ved meddelelsen af\ngarantien. Kommunens risiko er beskrevet nærmere i det vedlagte risikovurderingsnotat, bilag\n1. Der opkræves garantiprovision og stiftelsesprovision i overensstemmelse med kommunens\ngældende praksis. Indtægtsbevillingen indarbejdes i den kommende budgetlægning i budget\n\nSagens forløb\n16/11/2026 Økonomiudvalget 2026 - 2029\nAd 1-3: Anbefales.\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget af dagsordenen."
     }
    ],
    "bilag": []
@@ -10245,10 +10319,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Godkendelse af takster målrettet kolonihaver",
    "afsnit": [
     {
@@ -10258,6 +10332,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Affaldsområdet er gebyrfinansieret og underlagt \"hvile-i-sig-selv\"-princippet.\n\nSagens forløb\n05/11/2026 Plan-, Grøn- og Landdistriktsudvalget 2026 - 2029\nAnbefalet til Økonomiudvalget og Kommunalbestyrelsen.\nAfbud: Lars Deleuran\n16/11/2026 Økonomiudvalget 2026 - 2029\nAnbefales.\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Tilbagesendes til fornyet behandling i Plan-, Grøn- og Landdistriktsudvalget."
     }
    ],
    "bilag": []
@@ -10267,10 +10345,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Udmøntning af bevilling fra akutpakke og udvidelse af akutpakke",
    "afsnit": [
     {
@@ -10280,6 +10358,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Økonomisk Afdeling bemærker, at der gives en tillægsbevilling til merindtægter på 2,9 mio. kr.,\nsom tilføres kassen. Økonomisk Afdeling bemærker endvidere, at der gives en tillægsbevilling\npå enten 2,4 mio. kr. eller 1,3 mio. kr. til beredskabet til fælleskommunale indsats med\nnøddriftscentre afhængig af om model A eller model B vælges. Tillægsbevillingen vil derfor\nmedføre et netto bidrag til kassebeholdningen på enten 0,5 mio. kr. eller 1,6 mio. kr. og en\ntilsvarende negativ påvirkning af servicerammen på enten 2,4 mio. kr. eller 1,3 mio. kr.\nafhængig af om model A eller model B vælges.\n\nSagens forløb\n16/11/2026 Økonomiudvalget 2026 - 2029\n\nAd 1: Anbefales.\nAd 2: Model A anbefales.\n\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad 1: Godkendt.\nAd 2: Model A godkendt."
     }
    ],
    "bilag": []
@@ -10289,10 +10371,10 @@
    "kommune": "Køge",
    "udvalg": "Køge Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.koege.dk/vis?id=50cd75bf-0ae8-496e-819b-8068c6267965",
-   "hentet": "2026-11-19T13:26:32.504Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=16edacb4-956f-4ba1-bcae-b53a032a99b7",
+   "hentet": "2026-11-25T14:40:12.322Z",
    "titel": "Forslag til Lokalplan 1141 Bevarende lokalplan for Egøjevej 89",
    "afsnit": [
     {
@@ -10302,6 +10384,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen har ingen økonomiske konsekvenser for Køge Kommune.\n\nSagens forløb\n05/11/2026 Plan-, Grøn- og Landdistriktsudvalget 2026 - 2029\nAnbefalet til Økonomiudvalget og Kommunalbestyrelsen.\nAfbud: Lars Deleuran\n16/11/2026 Økonomiudvalget 2026 - 2029\nAnbefales.\nAfbud: Anders Gøthe"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10674,64 +10760,468 @@
    "titel": "Eventuelt - åben",
    "afsnit": [],
    "bilag": []
+  },
+  "koege-2026-10-28-udsatteraadet-1": {
+   "id": "koege-2026-10-28-udsatteraadet-1",
+   "kommune": "Køge",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "type": "referat",
+   "nr": 1,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a49f7a7-6443-473c-8f7a-2120f7d4b51f",
+   "hentet": "2026-11-25T14:39:50.456Z",
+   "titel": "Godkendelse dagsordenen og referat",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-10-28-udsatteraadet-2": {
+   "id": "koege-2026-10-28-udsatteraadet-2",
+   "kommune": "Køge",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a49f7a7-6443-473c-8f7a-2120f7d4b51f",
+   "hentet": "2026-11-25T14:39:50.456Z",
+   "titel": "Opfølgning på budget 2027-2029",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Udvalgsformand Susanne Farnø følger op på arbejdet med og resultatet\naf effektiviserings- og omprioriteringskataloget. Herudover bliver Udsatterådet orienteret\nom betydningen af høringssvar, herunder det der blev sendt ind af Udsatterådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Rådet drøftede budgetprocessen og inddragelsen gennem dialog og høringssvar. Der\nblev udtrykt taknemlighed for rådets deltagelse og lettelse over årets budgetforlig. Den\ntidlige inddragelse blev fremhævet som positiv.\nRådet drøftede, om besparelser altid medfører en reel økonomisk gevinst. Det blev\noplyst, at der var sparet længst muligt fra borgerne, blandt andet på administration.\nSamtidig blev administrationens betydning for hurtig sagsbehandling og kendskab til\nborgerne understreget af rådet."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-10-28-udsatteraadet-3": {
+   "id": "koege-2026-10-28-udsatteraadet-3",
+   "kommune": "Køge",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "type": "referat",
+   "nr": 3,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a49f7a7-6443-473c-8f7a-2120f7d4b51f",
+   "hentet": "2026-11-25T14:39:50.456Z",
+   "titel": "Høringssvar",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Udsatterådet drøfter processen omkring høringssvar, og hvordan rådet kan arbejde med\ndisse fremadrettet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Høringssvar blev drøftet som en væsentlig del af Udsatterådets arbejde og mulighed for\npolitisk indflydelse.\nDet gør det nemmere, når lange og komplicerede sager bliver brudt ned og\noverskueliggjort i form af en guide på mail. Derudover er det muligt at ringe til sekretæren\nKlara og afgive sit høringssvar mundtligt.\nDrøftelsen gav anledning til en afklaring omkring forskellen på initiativer og høringssvar."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-10-28-udsatteraadet-4": {
+   "id": "koege-2026-10-28-udsatteraadet-4",
+   "kommune": "Køge",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "type": "referat",
+   "nr": 4,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a49f7a7-6443-473c-8f7a-2120f7d4b51f",
+   "hentet": "2026-11-25T14:39:50.456Z",
+   "titel": "Borgere i egen bolig - rengøring og ledsagelse",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Joan Haar indstiller Udsatterådet til at drøfte muligheder for støtte til borgere i egen bolig,\nherunder rengøring, oprydning og ledsagelse til læge."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Rådet udtrykte bekymring for borgere, der lever i omfattende rod og ikke selv kan\noverskue at ændre forholdene. Der blev peget på risiko for omsorgssvigt og spurgt til\nmuligheden for at søge om hovedrengøring. Det blev anført, at kommunen ikke må rydde\nop i borgernes ting, og at rengøring og oprydning er forskellige opgaver. Der kan derfor\nvære udfordringer i, hvem der har mulighed for at løse opgaven. Rådet drøftede balancen\nmellem borgerens behov og selvbestemmelse, herunder at borgeren selv bestemmer, om\nder skal ryddes op, og at der kan være system i rodet. Samtidig blev der rejst spørgsmål\nom handlemuligheder, hvis forholdene er sundhedsskadelige. Udsendelsen om Manfred\nblev nævnt som eksempel. Sociolancens tilgang blev fremhævet positivt.\nDet blev anført, at borgere ikke længere kan få deres vejleder med til lægen, men i stedet\nhenvises til Social Sundhed. Tilbuddet blev omtalt positivt, men det blev samtidig\nfremhævet, at det ikke kan benyttes af alle.\nSpørgsmålet om hjælp til borgere, der lever i omfattende rod, blev noteret til videre\ndrøftelse."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-10-28-udsatteraadet-5": {
+   "id": "koege-2026-10-28-udsatteraadet-5",
+   "kommune": "Køge",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "type": "referat",
+   "nr": 5,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a49f7a7-6443-473c-8f7a-2120f7d4b51f",
+   "hentet": "2026-11-25T14:39:50.456Z",
+   "titel": "Støtte til at hæve penge og betale i butikker",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Joan Haar indstiller Udsatterådet til at drøfte borgeres behov for støtte til at hæve penge i\nbanken samt handle og betale med kort i butikker."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Rådet drøftede udfordringer for borgere, der har behov for hjælp til at hæve penge eller\nbetale. Det kan dreje sig om udfordringer med at huske sin pinkode, eller at have en\nforståelse for tal og penge, der gør at man nemt kan blive snydt i butikker.\nDer blev udtrykt usikkerhed om, hvorvidt begrænsninger i medarbejdernes mulighed for\nat hjælpe skyldes GDPR eller andre regler. Det blev nævnt, at en værge kan hjælpe, og\nat man i nogle tilfælde kan etablere systemer til håndtering af støtten.\nSpørgsmålet blev noteret til videre drøftelse."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-10-28-udsatteraadet-6": {
+   "id": "koege-2026-10-28-udsatteraadet-6",
+   "kommune": "Køge",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a49f7a7-6443-473c-8f7a-2120f7d4b51f",
+   "hentet": "2026-11-25T14:39:50.456Z",
+   "titel": "Bordet rundt",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Rådets medlemmer orienterer om, hvad der rører sig på deres område."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Punktet blev ikke nået, og udskydes derfor til næste møde."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-10-28-udsatteraadet-7": {
+   "id": "koege-2026-10-28-udsatteraadet-7",
+   "kommune": "Køge",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "type": "referat",
+   "nr": 7,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a49f7a7-6443-473c-8f7a-2120f7d4b51f",
+   "hentet": "2026-11-25T14:39:50.456Z",
+   "titel": "Gensidig orientering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Udsatterådet indstilles til gensidig orientering om:\na. Rådets økonomi\nb. Orientering fra arbejdsgruppen\nc. Orientering fra værestederne\nd. Årshjul – nye datoer\ne. Merchandise"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "a. Rådets økonomi\nDet blev oplyst, at der var ca. 35.000 kr. tilbage. Dog med forbehold for, at der var et par\nregninger fra Danseaften, der ikke var betalt endnu.\nb. Orientering fra arbejdsgruppen\nArbejdsgruppen orienterede om planerne om en udsattedag på Køge Torv. Der var\ngenerel opbakning til initiativet. Den 24. august 2027 blev nævnt som foreløbig dato.\nDer blev drøftet musik og en scene med navne, der kan tiltrække deltagere, samt\naktiviteter i børnehøjde, som også kan tiltrække voksne.\nDet blev fremhævet, at flere skal inddrages, når planerne er mere konkrete, og at\nopbakning til arbejdsgruppens videre arbejde indebærer en forpligtelse for rådet.\nc. Orientering fra værestederne\nDet blev oplyst, at der er glæde over rådets besøg på værestederne, samt et ønske om\nat flere møder op til kaffedialogmøderne med værestederne.\nd. Årshjul – nye datoer\nBlev ikke nået men tages videre til næste møde.\ne. Merchandise\nSekretær Klara bestiller sweatsirts med logo, og tager dem med til næste møde."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-10-28-udsatteraadet-8": {
+   "id": "koege-2026-10-28-udsatteraadet-8",
+   "kommune": "Køge",
+   "udvalg": "Udsatterådet",
+   "dato": "2026-10-28",
+   "type": "referat",
+   "nr": 8,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a49f7a7-6443-473c-8f7a-2120f7d4b51f",
+   "hentet": "2026-11-25T14:39:50.456Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Under eventuelt indstillede forvaltningen til at drøfte proces omkring chefers deltagelse\nved møderne i Udsatterådet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Som følge af besparelserne i Køge Kommunen, vil en chef fra forvaltningen ikke længere\ndeltage fast ved møderne i Udsatterådet. Dette kræver en vedtægtsændring, som\nindebærer høringssvar fra Rådet samt politisk godkendelse i Social- og\nBeskæftigelsesudvalget.\nRådet drøftede chefers deltagelse i rådets møder og mulighederne for at synliggøre\nrådets arbejde i udvalgene. Der blev givet udtryk for forskellige synspunkter på\ndeltagelsen. Det blev blandt andet fremhævet, at manglende deltagelse kan give\nudfordringer, da det stiller højere krav til, hvordan rådet skal formulere skarpe budskaber,\nsamt at vejen til beslutningstagerne bliver længere. På den anden side blev det\nfremhævet, at fast chefdeltagelse stiller større krav til rådets professionalisme, hvilket kan\nvanskeliggøre de ærlige og løse snakke ved møderne.\nPunktet tages videre til næste møde."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-social-og-beskaeftigelsesudvalget-1": {
+   "id": "koege-2026-11-30-social-og-beskaeftigelsesudvalget-1",
+   "kommune": "Køge",
+   "udvalg": "Social- og Beskæftigelsesudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a27fd59-f2d6-449d-a512-8ab5cc09779c",
+   "hentet": "2026-11-25T14:39:55.282Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "koege-2026-11-30-social-og-beskaeftigelsesudvalget-2": {
+   "id": "koege-2026-11-30-social-og-beskaeftigelsesudvalget-2",
+   "kommune": "Køge",
+   "udvalg": "Social- og Beskæftigelsesudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a27fd59-f2d6-449d-a512-8ab5cc09779c",
+   "hentet": "2026-11-25T14:39:55.282Z",
+   "titel": "Kommunale investeringsmidler til nære sundhedsindsatser",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Velfærdsforvaltningen samt Børne- og Kulturforvaltningen indstiller, at Social- og\nBeskæftigelsesudvalget, Ældre- og Sundhedsudvalget samt Børn-, Unge- og\nSkoleudvalget anbefaler, at Økonomiudvalget og Kommunalbestyrelsen godkender\n1. den foreslåede udmøntning af midler for 2027 til nære sundhedsindsatser i Køge\nKommune i forbindelse med sundhedsreformen.\n2. indtægts-/udgiftsbevilling på samlet 1,4 mio. kr. på Børn-, Unge- og Skoleudvalget\nvedr. etablering af Headspace i Køge Kommune og tidlig forebyggende indsats på\ndet sundhedsfremmende børne- og ungeområde.\n3. indtægts-/udgiftsbevilling på samlet 1,5 mio. kr. på Social- og Beskæftigelsesudvalget\nvedr. tidlig og sammenhængende støtte til borgere i eget hjem og på botilbud.\n4. indtægts-/udgiftsbevilling på samlet 1,5 mio. kr. på Ældre- og Sundhedsudvalget\nvedr. styrkelse af demensområdet.\n5. indtægts-/udgiftsbevilling på samlet 2,45 mio. kr. på Ældre- og Sundhedsudvalget til\nde nye nationale kvalitetsstandarder vedrørende almen sygepleje og basal palliation.\n\nBaggrund og vurdering\nDe kommunale investeringsmidler, der er afsat i forbindelse med sundhedsreformen, er varige\nmidler, der indfases gradvist i perioden fra 2027 til 2030, og udmøntes af sundhedsrådene.\nSom en del af forårsaftalen (2025) er det aftalt nationalt, at midlerne skal anvendes til\nindsatser, der hører under kommunalt myndighedsansvar. Det kan være på sundhedsområdet\neller tilgrænsende områder, herunder ældre, børn- og unge samt social- og\nbeskæftigelsesområdet. Derudover indgår der i forårsaftalen principper om deling af relevante\noplysninger mellem region og kommune, samt at der kan indgå tilsagnskrav, der dog ikke kan\nlåse en kommune på et bestemt udgiftsniveau. Endelig bør aftaleprocesserne tilrettelægges så\nenkelt som muligt og under hensyn til at begrænse afledt administration.\nSundhedsrådet Østsjælland og Øernes samlede andel af kommunale investeringsmidler udgør\ni 2027 12 mio. kr. i bundne midler, og 41,2 mio. kr. i frie midler.\nDe bundne midler fordeles direkte til de ni kommuner i sundhedsrådet efter indbyggertal, og\nanvendelsen er bundet til imødekommelse af kravene i de nationale kvalitetsstandarder\nvedrørende almen sygepleje og basal palliation. Køge Kommunes andel heraf udgør 1,75 mio.\nkr. i 2027, som tilgår Ældre- og Sundhedsudvalget.\nHerudover tilgår 0,7 mio. kr. af de frie midler Køge Kommune og Ældre- og Sundhedsudvalget\ntil ikke bunde kvalitetsstandarder. De i alt 2,45 mio. kr. skal bruges til at efterleve de nye\nkvalitetsstandarder, som vil indeholde en blanding af bindende krav og ikke bindende\nanbefalinger til kommunerne.\nDe frie midler fordeles til kommunerne efter en fordelingsnøgle ud fra sygdomstyngden i den\nenkelte kommune. Selve udmøntningen af de frie midler sker ved, at der indgås lokale aftaler\n\nmellem region og kommune. Køge Kommunes andel af de frie investeringsmidler udgør 4,4\nmio. kr. i 2027.\nSundhedsrådet har den 23. oktober 2026 besluttet, at midlerne udmøntes til indsatser indenfor\nseks overordnede indsatsområder, der – som supplement til de nationale principper - udgør en\noverordnet ramme for brugen af de frie midler:\n1) Den ældre medicinske patient,\n2) Borgere med kronisk sygdom,\n3) Børn og unge med psykisk mistrivsel samt\n4) Voksne med psykisk sygdom.\nHertil kommer de to tværgående indsatsområder:\n5) Forebyggelse og civilsamfund samt\n6) Digitalisering og innovation.\nSe vedlagte indsatskatalog for mere information om de enkelte indsatsområder.\nForvaltningens forslag til fordeling af midlerne på indsatser i de enkelte udvalg følger nedenfor.\nÆldre- og Sundhedsudvalget\nStyrkelse af demensområdet\nForvaltningen foreslår at styrke demensområdet. Kommunens demensteam skal i højere grad\nend nu have deres daglige gang på plejehjemmene og understøtte, at demensfaglig viden\nomsættes til konkrete tilgange i plejen på de enkelte enheder.\nMed afsæt i hverdagens opgaver skal teamet yde praksisnær supervision og sparring, facilitere\nfælles refleksion over konkrete borgerforløb og bidrage til målrettet undervisning af\nmedarbejdere på plejehjemmene. Teamet skal desuden understøtte lokale demensfaglige\nnøglepersoner.\nUd over den styrkede indsats på plejeboligområdet skal den øgede kapacitet i demensteamet\nanvendes til at udvikle en tidligere og mere sammenhængende støtte til borgere med demens\nog deres familier. Der skal bl.a. være fokus på yngre borgere med demens, støtte til pårørende\nog udvikling af aktiviteter og fællesskaber i samarbejde med civilsamfund og frivillige\norganisationer.\nFormålet er at styrke kvaliteten i demensindsatsen på tværs af ældreområdet og sikre, at faglig\nunderstøttelse og kompetenceudvikling forankres tæt på borgerne og den daglige praksis.\nForslaget understøtter samtidig indsatsområdet Den ældre medicinske patient.\nBørn-, Unge- og Skoleudvalget\nEtablering af Headspace i Køge Kommune\nForvaltningen foreslår at prioritere midler til Køge Kommunes medfinansiering af etableringen\naf Headspace for unge i alderen 12-25 år. Headspace vil kunne supplere kommunens øvrige\ntidlige tilbud til unge med mistrivsel. Forslaget relaterer sig til indsatsområdet Børn og unge\nmed psykisk mistrivsel.\nTidlig forebyggende indsats på det sundhedsfremmende børne- og ungeområde\nForvaltningen foreslår at prioritere midler til sundhedsfremmende indsatser med det formål at\nstyrke Sundhedsplejens mulighed for at arbejde forebyggende allerede under graviditeten.\nMålet er at skabe en tidlig og sammenhængende indsats om barnet og familien og at\nidentificere og adressere behov for støtte, inden udfordringer vokser sig større.\nKonkret foreslås at udvide Sundhedsplejens tilbud til at omfatte graviditetsbesøg til alle\nførstegangsforældre med fokus på tidlig opsporing af sårbarhed, mental sundhed og\n\nforberedelse på forældrerollen (pt. tilbydes graviditetsbesøg kun til særligt sårbare gravide\n(niveau 3 og 4) på baggrund af henvisning fra andre fagpersoner).\nSocial- og Beskæftigelsesudvalget\nTidlig og sammenhængende støtte i eget hjem og på botilbud\nForvaltningen foreslår at styrke den tidlige støtte til borgere med sammensatte sociale,\npsykiske og sundhedsmæssige udfordringer. Den øgede kapacitet skal anvendes til en mere\nopsøgende og håndholdt indsats, hvor borgerens sociale og sundhedsmæssige behov ses i\nsammenhæng, og hvor der kan sættes tidligere ind med støtte i eget hjem eller på botilbud.\nIndsatsen skal bl.a. understøtte en tættere kobling mellem social støtte, herunder indsatser\nefter §§ 82 og 85, og kommunens sundhedsindsatser samt styrke koordineringen på tværs af\nsocial-, sundheds- og plejeområdet. Samtidig skal samarbejdet med praktiserende læger\nstyrkes for borgere, hvor behandling, social støtte og eventuelt beskæftigelsesindsats skal\nhænge bedre sammen. Formålet er at forebygge, at problemerne vokser sig større, og\nunderstøtte, at flere borgere kan mestre hverdagen og blive længst muligt i eget hjem."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomisk Afdeling bemærker, at der søges tillægsbevillinger til indtægter på samlet -6,85 kr.,\nsom er Køge Kommunes andel af bundne og frie midler fra Sundhedsråd Østsjælland og\nØerne samt tilsvarende udgiftsbevillinger på 6,85 mio. kr.\nBevillingerne er fordelt som følger:\nTillægsbevilling til indtægter på -1,4 mio. kr. til Børn-, Unge- og Skoleudvalget og tilsvarende\nudgiftsbevilling på 1,4 mio. kr. vedr. etablering af Headspace i Køge Kommune og tidlig\nforebyggende indsats på det sundhedsfremmende børne- og ungeområde.\nTillægsbevilling til indtægter på -1,5 mio. kr. og tilsvarende udgiftsbevilling på 1,5 mio. kr. på\nSocial- og Beskæftigelsesudvalget vedr. tidlig og sammenhængende støtte til borgere i eget\nhjem og på botilbud.\nTillægsbevilling til indtægter på -3,95 mio. kr. og tilsvarende udgiftsbevilling på 3,95 mio. kr. på\nÆldre- og Sundhedsudvalget vedr. styrkelse af demensområdet og til de nye nationale\nkvalitetsstandarder vedr. almen sygepleje og basal palliation.\nSe bilag for oversigt over forslag til fordeling af de frie investeringsmidler på udvalg og\nindsatsområder.\nBevillingerne er samlet set udgiftsneutrale for kassebeholdningen og påvirker heller ikke\nservicerammen."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-social-og-beskaeftigelsesudvalget-3": {
+   "id": "koege-2026-11-30-social-og-beskaeftigelsesudvalget-3",
+   "kommune": "Køge",
+   "udvalg": "Social- og Beskæftigelsesudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.koege.dk/vis?id=9a27fd59-f2d6-449d-a512-8ab5cc09779c",
+   "hentet": "2026-11-25T14:39:55.282Z",
+   "titel": "Underskriftsblad - Social- og Beskæftigelsesudvalget",
+   "afsnit": [],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-1": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-1",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-2": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-2",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Orientering om Borgring, UNESCO-verdensarven og Museum Sydøstdanmark",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Børne- og Kulturforvaltningen indstiller, at Kultur- og Idrætsudvalget\n1. tager orienteringen til efterretning.\n\nBaggrund og vurdering\nKultur- og Idrætsudvalget holder sit møde den 30. november 2026 på Vikingeborgen Borgring.\nMuseumsdirektør Henrik Hvenegaard Mikkelsen deltager i den første halve time og orienterer\nom arbejdet med Borgring og UNESCO-verdensarven samt udviklingen af Køge Museum.\nBorgring er sammen med de øvrige danske vikingetidsringborge optaget på UNESCOs\nverdensarvsliste. Køge Kommune og Museum Sydøstdanmark samarbejder om at beskytte,\nudvikle og formidle verdensarvsstedet. Arbejdet er beskrevet i en lokal forvaltningsplan, der\nskal sikre en fælles retning og koordinering mellem kommunen, museet, lodsejeren,\nlokalsamfundet og øvrige relevante aktører.\nForvaltningsplanen omfatter fire lokale indsatsområder:\nFormidling, herunder fortællingen om UNESCO-verdensarven, undervisningsforløb og\nbedre skiltning og vejvisning.\nBæredygtig turisme, herunder markedsføring, ansvarlig udvikling af besøgstal og\nsamarbejde med turisme- og erhvervsaktører.\nLokal forankring, herunder lokale partnerskaber, værtskaber, undervisning og\naktiviteter, der kan skabe kendskab og ejerskab til verdensarven.\nForskning, herunder udvikling af ny viden om Borgring og ringborgene og formidling af\nforskningsresultater til offentligheden.\nMuseet arbejder samtidig med at styrke Borgring som besøgsattraktion. Det omfatter blandt\nandet udvikling af formidlingen, øget synlighed og en skoletjeneste med undervisningsforløb\nom Harald Blåtand, ringborgen, UNESCO-verdensarven og nordisk mytologi. Indsatserne skal\nbidrage til flere besøgende, øget lokal anvendelse og et mere bæredygtigt grundlag for\nattraktionens drift.\nOrienteringen vil desuden omfatte Museum Sydøstdanmarks arbejde med en ny samlet\nstrategi og udviklingen af Køge Museum. Dette kan danne grundlag for den kommende dialog\nom en ny samarbejdsaftale mellem Køge Kommune og Museum Sydøstdanmark.\nSamarbejdsaftalen skal blandt andet beskrive de fælles mål, prioriterede indsatser og\nrammerne for samarbejdet."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er ingen økonomiske konsekvenser i forbindelse med orienteringen."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-3": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-3",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Politisk retning og prioritering af opgaver på kultur- og idrætsområdet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Børne- og Kulturforvaltningen indstiller, at Kultur- og Idrætsudvalget\n1. godkender følgende principper som forvaltningens overordnede rettesnor for arbejdet\nog prioriteringen af opgaver på kultur- og idrætsområdet:\nDrift før udvikling\nAmbitioner skal afstemmes med kapaciteten\nKultur og idræt skal løfte velfærden\nLokalsamfundene frisættes og understøttes\nStørre projekter kræver en klar bestilling\nForeningsservice skal være enkel\n2. godkender sammenfatningen af udvalgets drøftelser med konklusioner og bestillinger\naf kommende udvalgssager, idet bestillingen om en revideret tilskudsmodel for de\nselvejende haller udgår og erstattes af en dialog mellem Kultur- og Idrætsudvalgets\nformandskab og bestyrelsesformændene for de selvejende haller om det fremtidige\nsamarbejde, og\n3. godkender, at ét tema for inspirationsmødet i februar 2027 er opfølgning på den\npolitiske retning og prioriteringen af opgaver på kultur- og idrætsområdet.\n\nBaggrund og vurdering\nKultur- og Idrætsudvalget afholdt den 8. oktober 2026 et inspirationsmøde om den politiske\nretning og prioriteringen af opgaver på kultur- og idrætsområdet. Drøftelsen tog afsæt i seks\nstrategiske pejlemærker.\nForvaltningen sammenfattede drøftelsen i bilaget Opfølgning på Kultur- og Idrætsudvalgets\ninspirationsmøde den 8. oktober (vedlagt sagen). Bilaget indeholder forslag til principper samt\nen udmøntning af 6 pejlemærker med konklusioner og bestillinger til kommende udvalgssager.\nUdvalget gennemgik bilaget den 2. november 2026 og bad forvaltningen fremlægge\nprincipperne, konklusionerne og bestillingerne til godkendelse i udvalget den 30. november\n2026. Udvalget ønskede dog ikke en sag om revidering af tilskudsmodellen for de selvejende\nhaller. I stedet skal udvalgets formandskab gå i dialog med bestyrelsesformændene for\nhallerne om det fremtidige samarbejde.\nPrincipper for arbejdet og prioriteringen\nPrincipperne skal være forvaltningens overordnede rettesnor ved prioritering af opgaver og\n\nressourcer samt ved forberedelse af nye initiativer og politiske sager:\n1. Drift før udvikling: Kerne- og driftsopgaver prioriteres. Nye udviklingsopgaver kræver\npolitisk prioritering og om nødvendigt nedprioritering af andre opgaver.\n2. Ambitioner skal afstemmes med kapaciteten: Nye opgaver og øgede ambitioner skal\nfølges af en tydelig prioritering af ressourcer og opgaver.\n3. Kultur og idræt skal løfte velfærden: Kultur og idræt skal bidrage til trivsel, deltagelse og\nfællesskaber. Første prioritet er børn og unge.\n4. Lokalsamfundene frisættes og understøttes: Lokale aktører har det primære ansvar for\ninitiativ, organisering og drift. Kommunen kan rådgive, facilitere og i særlige tilfælde\nmedfinansiere.\n5. Større projekter kræver en klar bestilling: Forvaltningen deltager i større facilitets- og\nbyudviklingsprojekter, når der foreligger en politisk bestilling, finansiering eller en\nvæsentlig dokumenteret effekt.\n6. Foreningsservice skal være enkel: Digitale løsninger, tydelig kommunikation og én\nindgang til kommunen prioriteres, når det reducerer administrationen.\nPrincipperne ændrer ikke eksisterende politiske beslutninger eller bevillinger. Ændringer, som\nkræver politisk stillingtagen, forelægges i særskilte sager.\nDe seks pejlemærker\nPejlemærke 1: Et tydeligt politisk råderum\nUdvalget ønsker en bedre balance mellem udvikling og drift. Igangværende udviklingsopgaver\nskal derfor gennemgås, så ressourcerne anvendes dér, hvor de skaber størst værdi.\nKonklusioner og bestilling:\nDer igangsættes ikke nyt politik- eller strategiarbejde, før den samlede opgaveportefølje\ner prioriteret.\nUdviklingsopgaver gennemgås med henblik på at tilpasse ambitionsniveau og\nressourceforbrug.\nForvaltningen fremlægger en sag om den samlede gennemgang og prioritering.\nPejlemærke 2: Kultur og idræt som en del af velfærden\nUdvalget ønsker, at kultur og idræt bidrager konkret til kommunens velfærdsopgaver. Første\nskridt er et tættere samarbejde med skole- og dagtilbudsområdet.\nKonklusion og bestilling:\nForvaltningen fremlægger en sag om et gensidigt forpligtende samarbejde mellem Børn-,\nUnge- og Skoleudvalget og Kultur- og Idrætsudvalget.\n\nSagen skal beskrive mål, målgrupper, organisering, finansiering, indsatser og opfølgning.\nPejlemærke 3: Lokal handlekraft og samarbejdspartnere\nUdvalget ønsker at styrke lokale aktørers mulighed for at skabe aktiviteter og fællesskaber.\nAktørerne har det primære ansvar, mens kommunen kan understøtte med rådgivning og\nfacilitering.\nKonklusion og bestilling:\nForvaltningen fremlægger en sag med principper for kommunens understøttelse af lokale\ninitiativer.\nPrincipperne skal tydeliggøre ansvaret for organisering, aktiviteter, drift og lokal\nforankring.\nPejlemærke 4: Kultur og idræt skaber levende steder\nUdvalget ønsker at prioritere mindre anlæg, udendørsfaciliteter og mødesteder tæt på\nborgernes hverdag. Kommunens deltagelse i større byudviklingsprojekter skal bero på en klar\npolitisk bestilling eller væsentlig strategisk betydning.\nKonklusioner og bestilling:\nForvaltningen fremlægger en sag med principper for kommunens understøttelse af lokale\nanlægsprojekter.\nPrincipperne skal beskrive de lokale aktørers ansvar og kommunens mulighed for at\nrådgive, facilitere og medfinansiere.\nSagen skal forholde sig til indsatsen for attraktive udendørs- og outdoorfaciliteter.\nPejlemærke 5: Tidssvarende faciliteter med en klar prioritering\nKultur- og idrætsområdet bidrager efter behov til arealoptimeringsprojekter og overvejelser om\net nyt hovedbibliotek og koncertsted.\nUdvalget ønskede ikke at bestille en sag om revidering af tilskudsmodellen for de selvejende\nhaller.\nKonklusioner og videre handling:\nForvaltningen bidrager med relevant kultur- og idrætsfaglig rådgivning.\nBestillingen om en revideret tilskudsmodel udgår.\nUdvalgets formandskab går i dialog med bestyrelsesformændene for de selvejende haller\nom det fremtidige samarbejde.\nPejlemærke 6: En lettere hverdag for foreninger og samarbejdspartnere\n\nIndsatsen fortsættes med fokus på digitale løsninger, én tydelig indgang til kommunen og\nforenkling af procedurer.\nKonklusioner og bestillinger:\nForvaltningen udarbejder en prioriteret plan for mulige kommunale forenklinger.\nDigitale løsninger prioriteres, når de reducerer administrationen.\nForvaltningen drøfter Kultur- og Idrætsrådets fremtidige rolle med rådet og fremlægger\nom nødvendigt en politisk sag.\nOpfølgning i februar 2027\nForvaltningen foreslår, at inspirationsmødet i februar 2027 anvendes til at følge op på:\narbejdet med konklusionerne og de bestilte udvalgssager,\nprincippernes betydning for prioriteringen af opgaver og ressourcer,\ndialogen med bestyrelsesformændene for de selvejende haller og\neventuelle behov for at justere den politiske retning eller prioriteringen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er ingen økonomiske konsekvenser forbundet med sagen.\nEventuelle økonomiske konsekvenser af kommende initiativer og udvalgssager vil blive belyst i\nforbindelse med behandlingen af de enkelte sager."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-4": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-4",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Evaluering af ny puljestruktur",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Børne- og Kulturforvaltningen indstiller, at Kultur- og Idrætsudvalget\n1. tager evaluering til efterretning\n2. beslutter justeringer for de nye puljer med virkning fra 1. januar 2027.\n\nBaggrund og vurdering\nOm den nye puljestruktur\nPuljestrukturen er resultatet af en grundig og inddragende proces i perioden 2023 - 2025. Der\nhar været afholdt dialogmøder med foreninger og aftenskoler samt gennemført\nfokusgruppeinterview med tidligere ansøgere – herunder foreninger, der tidligere har fået\nafslag. Kultur- og Idrætsrådet har været inddraget i processen igennem hele forløbet. Forslaget\ntil den nye struktur er udarbejdet med bistand fra to eksterne konsulenter med stor erfaring fra\nfondsverdenen og samarbejde med civilsamfundet.\nStrukturen består af én udviklingspulje og to temapuljer med skiftende temaer.\nTemaerne foreslås af foreningslivet på et dialogmøde, kvalificeres yderligere af Kultur- og\nIdrætsrådet og besluttes endeligt af Kultur- og Idrætsudvalget og omfatter pt:\nTemapulje 1: fra drift til udvikling\nTemapulje 2: frivillighed - fastholdelse og rekruttering\nKultur- og Idrætsrådet kvalificerede på ekstraordinært møde den 4. marts 2025, at:\n\"Puljerevideringen er sat i gang for at imødekomme foreningslivets og civilsamfundets egne\ninitiativer og iderigdom, således at de kan bidrage til udviklingen af det samlede kultur- og\nidrætsområde i Køge Kommune. En revideret puljestruktur skal derfor fremme et Fremtidens\nKøge, der bygger på frivillige kræfter, frivillig fremdrift og ikke mindst lokale kompetencer.\nCentralt for dette er et fælles blik på, hvordan fremtidens velfærdsopgaver kan løftes og hvor\npuljerne bidrager til nye og tidssvarende udviklingsprojekter og gerne i partnerskaber. Den nye\npuljestruktur har med andre ord til formål at sikre den fællesskabende kraft i fremtiden - i hele\nKøge Kommune. Kultur- og Idrætsrådet anbefaler til Kultur- og Idrætsudvalget at der arbejdes\nmed bredetemaer til temapuljerne og mulighed for langsigtede projekter.\"\nPuljestrukturen blev efterfølgende vedtaget ved Kultur- og Idrætsudvalgets møde den 31.\nmarts 2025 og temapuljerne den 2. juni 2025 med ikrafttrædelsesdato den 1. januar 2026.\nJævnfør beslutningen skal puljestrukturen evalueres et år efter igangsættelse.\n\nOm evalueringen\nTil brug i evalueringen er der lavet en kvantitativ analyse, en kvalitativ analyse og en intern\nadministrativ evaluering af processen. De tre tiltag ligger til grund for Børne- og\nKulturforvaltningens forslag til videre drøftelse og justering af puljestrukturen.\nDen kvantitative analyse\nForvaltningen har i behandlingen af indkomne ansøgninger indsamlet kvantitativ data til brug\nfor analysen. Data peger på:\nDe nye puljer har i sit første driftsår været genstand for en betydelig interesse fra\nforeningslivet.\nDer blev behandlet 106 ansøgninger fordelt på tre puljer, og der blev ansøgt om 5,1 mio.\nkr., mens den samlede puljeramme udgjorde 2,3 mio. kr. Med andre ord har der været en\nvæsentligt større efterspørgsel efter udviklingsmidler, end de afsatte midler har kunnet\nimødekomme.\nAnsøgningerne kommer fra et bredt udsnit af kultur-, idræts- og fritidsområdet og fra\nstørstedelen af kommunens lokalområder.\nDer blev givet 58 tilsagn og 48 afslag (se bilag), svarende til en tilsagnsprocent på 54,7\npct. De støttede initiativer er kendetegnet ved en høj grad af medfinansiering\n(gennemsnit 38 % som ligger over kravet på 20 %), hvormed de kommunale puljemidler\nfungerer som løftestang for yderligere investeringer og lokal opbakning.\nSamlet peger analysen på, at puljestrukturen understøtter udvikling, innovation og frivilligt\nengagement på kultur-, idræts- og fritidsområdet, men også at efterspørgslen efter\nudviklingsmidler væsentligt overstiger den eksisterende økonomiske ramme.\nDen kvalitative analyse\nDer har været hyret eksterne konsulenter ind til opgaven, for at sikre faglig armslængde i\nprocessen. Analysen er baseret på to fokusgruppeinterviews med foreninger og et interview\nmed forvaltningen.\nFokusgruppe 1 er med repræsentanter fra foreninger, der søgte de tidligere puljer, men som\nikke har søgt de nye puljer. Fokusgruppe 2 er med repræsentanter fra foreninger, som har søgt\nde nye puljer og hvoraf halvdelen enten har fået tilsagn eller afslag på deres ansøgninger. I alt\nhar der været interviewet 15 foreningsrepræsentanter, hvoraf knap en fjerdedel har modtaget\nen bevilling. Interviewene har derfor særligt belyst de kritiske oplevelser med de nye puljer.\nDen kvalitative analyse peger på en række anbefalinger med henblik på at kvalificere, skærpe\nog løfte puljearbejdet, og peger overordnet på følgende overskrifter:\nPuljeformat:\n\nPuljemodellen er en succes og bør fastholdes. Der er dog ønsker til ændringer, herunder\nantal årlige ansøgningsfrister, muligheden for at søge til driftslignende tiltag, rekvisitter og\nflerårige aktiviteter (hvoraf de tre sidste allerede er en mulighed).\nPuljeproces og samarbejde:\nTætter samarbejde med KIR og KIU om formidling af gode historier, forlængelse af\ntemapuljerne, anerkendelse af foreningernes og de frivilliges indsats. Koordinering til\nkommunens øvrige puljer fx. Velfærdsforvaltningens Frivillighedspulje, så\nansøgeroplevelsen løftes for alle.\nPuljekommunikation og - dialog:\nPrioriter kommunikation og dialog. Øget fokus på at kommunikere forskel på drift og\nudvikling samt allerede eksisterende muligheder for foreninger til at søge til udstyr og\nrekvisitter samt til to - årige tiltag. Foreningsportalens funktionalitet og brugervenlighed i\nforhold til puljeansøgning skal prioriteres.\nDen administrative evaluering\nDer har været afholdt evalueringsmøde i forvaltningen, da den nye puljestruktur har trukket\nuforudset mange administrative ressourcer. Dette gælder både i kommunikation af puljerne,\nafholdelse af puljecafeer, etablering af puljetelefon, behandling af ansøgninger, tilbagemelding\ntil ansøgere, journalisering og udbetaling af bevillinger. Da der er tale om første år med den\nnye struktur, er der endnu ikke erfaringer med indhentning af regnskaber og afrapporteringer.\nDette forventes dog at øge den administrative opgave.\nForvaltningen kan konstatere, at:\nmange ansøgninger har tråde ind i andre fagforvaltninger, hvorfor der har været behov\nfor at afstemme med blandt andet jura og ejendomme om, hvorvidt foreningsønsker er\nrealiserbare indenfor kommunalfuldmagtens rammer og derfor kan støttes/ikke støttes.\nder er mange henvendelser fra sociale foreninger, som skal rådgives videre til\nVelfærdsforvaltningens Frivillighedspulje\nfire årlige ansøgningsfrister øger arbejdsmængden.\nDet bemærkes, at den økonomiske ramme til puljerne er løftet med i alt 200.000 kr. årligt med\nbudgetforliget 2027 - 2030.\nPå baggrund af ovenstående foreslår Børne- og Kulturforvaltningen følgende justeringer af\npuljestrukturen\n1) Antallet af ansøgningsfrister reduceres til to årlige frister. De nye frister er fremover den 1.\nmaj og den 1. november.\nDette reducerer både uklarheden om frister i forhold til de enkelte puljer samt den\nadministrative opgave. Datoerne tilgodeser højsæsoner i foreningernes arbejde med\nlokalebooking, tilskudsansøgninger og lignende.\n\n2) Det generelle kriterie for både udviklingspuljen og temapuljerne om ´Projektet er ikke en\ngentagelse af samme aktivitet år efter år´ fremover alene gælder for udviklingspuljen.\nDette imødekommer foreningernes ønsker til også at kunne søge til tilbagevendende og mere\ndriftnære tiltag, hvilket fremover vil kunne løftes via temapuljerne.\n3) Temaer for temapuljerne fastholdes i to år, indtil der vælges nye temaer. Og når der vælges\nnye temaer bidrager Kultur- og idrætsrådet til en udfoldelse og formålsbeskrivelse af\ntemaerne.\nDette sikrer foreningernes kendskab til de enkelte puljer samt forvaltningens mulighed for at\nrådgive og videndele mere i dybden ift. de enkelte temaer.\nDerudover er forvaltningen opmærksomme på at følgende fokuspunkter skal prioriteres\nyderligere i det videre arbejde:\nSystemunderstøttelse i ansøgningsprocessen\nFormidling af puljernes kriterier samt muligheder (herunder muligheden for at søge til 2årige tiltag og rekvisitter)\nVidendeling og netværksdannelse\nKultur - og Idrætsrådets anbefalinger til udvalget\nKultur- og Idrætsrådet har på ekstraordinært møde den 11. november 2026 behandlet\nevaluering af den nye puljestruktur samt forvaltningens forslag til justeringer.\nKultur- og Idrætsrådet istemmer sig forvaltningens forslag og videresender forslagene til\nudvalget med anbefaling.\nVedhæftet er præsentation med centrale pointer fra evalueringen, som blev gennemgået på\ndet ekstraordinære møde i rådet."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen umiddelbare økonomiske konsekvenser for Køge Kommune."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-5": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-5",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Den Maritime Halvø - status og midlertidig aktivering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Børne- og Kulturforvaltningen indstiller, at Kultur- og Idrætsudvalget:\n1. tager status på udviklingen af Den Maritime Halvø til efterretning\n2. godkender proces for midlertidig aktivering af et planlagt aktivitetsområde på Den\nMaritime Halvø.\n\nBaggrund og vurdering\nDenne sag handler om status på udviklingen af Den Maritime Halvø samt oplæg til proces for\nmidlertidig aktivering af et planlagt aktivitetsområde på Den Maritime Halvø.\nDen Maritime Halvø\nDen Maritime Halvø er et kommunalt ejet areal, der ligger som østlig afslutning på det nye\nbyudviklingsområde Søndre Havn. Arealet er omfattet af Lokalplan 1103, som tager afsæt i et\nudarbejdet og politisk godkendt prospekt for den ønskede udvikling af Den Maritime Halvø.\nDer henvises til bilag 1 for historik og planlægningsmæssig disponering af Den Maritime Halvø\nsamt til bilag 2 for nævnte prospekt.\nAktivitetszonen\nEn af zonerne på Den Maritime Halvø er \"aktivitetszonen\" (jf. bilag 1 og 2). Den nordlige del af\naktivitetszonen (og parkeringszonen) har de seneste år været anvendt som byggeplads til\nbyggeprojekterne på Søndre Havn. Men da byggerierne på den østlige del af Søndre Havn er\nved at være færdige, forventes byggepladsen ryddet og overdraget til Køge Kommune senest\nden 1. juni 2027.\nNår Køge Kommune har overtaget arealet (ryddet for byggeplads og med oprindelig belægning\naf asfalt og grus), vil kommunen sørge for en basal klargøring af arealet finansieret af de\nmidler, der i dag er afsat til ordinær drift og renhold af Den Maritime Halvø.\nPå den baggrund kan der arbejdes videre med udviklingen af Den Maritime Halvø med henblik\npå en realisering af planerne og visionerne i nævnte lokalplan og prospekt.\nDet gælder både planerne og visionerne på kort sigt (midlertidig aktivering af området primært\ninden for kultur, idræt og byliv - se bilag 3) og potentielt også planerne og visionerne på\nlængere sigt med nye og permanente faciliteter til maritimt idrætsliv (jf. bilag 1 og 2).\nI tråd med prospektet handler visionen for aktivitetszonen - både på kort og længere sigt – om\n\nat skabe en mindre havnepark tæt på vandet som en rekreativ del af den nye bydel Søndre\nHavn. En maritim bypark og destination i byen, som kan engagere både lokale foreninger,\nbeboere og brugere på Søndre Havn og borgere, institutioner og foreninger fra øvrige dele af\nbyen.\nDen Maritime Halvø er et relativt stort og anvendeligt areal med gode solforhold og en direkte\nrelation til havnen. Arealet ligger dog på ydersiden af Køge Dige og derfor relativt eksponeret i\nforhold til kystnære stormfloder, hvilket lægger visse begrænsninger på brugen af arealet.\nOplæg til proces for midlertidig aktivering\nI forbindelse med udviklingen og aktiveringen af Den Maritime Halvø på kortere sigt - særligt af\naktivitetszone - lægger forvaltningen op til en proces for en midlertidig aktivering af arealet.\nDer henvises til bilag 4 for anbefalet proces, tidsplan og dialog med udvalgte aktører og\ninteressenter.\nParallelt med den anbefalede proces for midlertidig aktivering vil Teknik- og Miljøforvaltningen\nefter kommunens overtagelse sørge for en basal klargøring af arealet.\nParkeringsforhold\nTeknik- og Miljøforvaltningen samt Teknik- og Ejendomsudvalget vil - parallelt med proces for\nden midlertidige aktivering forankret under Kultur- og Idrætsudvalget - i foråret 2027 fastlægge\nog politisk beslutte, hvordan parkeringszonen på Den Maritime Halvø skal reguleres efter\novertagelsen af arealet.\nDe maritime foreninger - nuværende forhold\nFor så vidt angår de nuværende forhold og de to midlertidige klubhus-pavilloner til de maritime\nforeninger, udløber dispensationerne til de midlertidige pavilloner i 2028.\nDet forventes, at dispensationerne kan forlænges i 2028 parallelt med den midlertidige\naktivering og arbejdet med den langsigtede udvikling af Den Maritime Halvø (jf. lokalplan og\nprospekt).\nProces for fornyelse af dispensationerne vil forløbe i særskilt spor - både administrativt og\npolitisk. Teknik- og Miljøforvaltningen samt Kultur- og Idrætsafdelingen har allerede en god\ndialog med de maritime foreninger i forhold til dette arbejde frem mod en potentiel fornyelse i"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er i kommunens økonomiske ramme ikke afsat midler til en midlertidig aktivering af Den\nMaritime Halvø – og en byrums- og facilitetsmæssig understøttelse heraf. Det samme gælder i\nforhold til den langsigtede og facilitetsmæssige udvikling af Den Maritime Halv, jf. lokalplan og\nprospekt.\n\nUnder kommunens Teknik- og Ejendomsudvalg er der for nuværende alene afsat midler til\nløbende basisdrift, vedligehold og renhold af det samlede, kommunale areal. I forhold til en\nmidlertidig aktivering af området fra og med sommer 2027 lægges der således op til, at en\nmidlertidig aktivering af arealet skal drives af aktører, brugere og institutioner på kultur- og\nidrætsområdet - men i tæt samarbejde med kommunens relevante forvaltninger, og hvor\nforvaltningen vil være med til at facilitere, bistå og understøtte den ønskede aktivering.\nDet skal derfor bemærkes, at disse økonomiske forudsætninger forbundet ved en midlertidig\naktivering vil kunne sætte begrænsninger på ønskerne hertil fra både kommune og aktører.\nEn del af det videre arbejde med en langsigtet, facilitetsmæssig og permanent udvikling af Den\nMaritime Halvø vil derfor også bestå af dialog og samarbejde med de maritime klubber, fonde\nog øvrige parter - i forhold til både kvalificering af projektet, økonomi og finansiering."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-6": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-6",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Ildsjælepris og øget fejring af frivillige",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Børne- og Kulturforvaltningen indstiller, at Kultur og idrætsudvalget\n1. tager evaluering af ildsjæleprisen til efterretning\n2. beslutter om Ildsjæleprisen skal fortsætte som i dag, justeres eller ophøre og\n3. drøfter retning for fejring af frivillige fremover.\n\nBaggrund og vurdering\nIldsjæleprisen\nKultur- og Idrætsudvalget besluttede den 10. januar 2022 at igangsætte arbejdet med en\nildsjælepris.\nDen 2. marts 2026 besluttede udvalget, at Ildsjæleprisen skal evalueres slut 2026 \"med henblik\npå at beslutte om ordningen skal fortsætte som i dag, justeres eller ophøre.\"\nIldsjæleprisen uddeles som en hyldest til de mange frivillige, der engagerer sig i kultur-, idrætsog fritidsforeningerne i Køge Kommune. Siden etableringen har 22 frivillige modtaget prisen,\nsom i dag uddeles fire gange årligt med to modtagere i foråret og to i efteråret.\nDer har i perioder været meget få indstillinger til prisen, hvilket peger på et potentiale for at\ngøre anerkendelsen af frivillige mere synlig og omfatte flere end de enkelte prismodtagere.\nFejring af frivillige\nKultur- og Idrætsrådet har på mødet den 26. august 2026 indstillet til Kultur- og Idrætsudvalget,\nat:\ndrøfte forskellige modeller for fejring af frivillige samt en øget adgang til foreningslivet fx\nforeningsmesser.\nBørne- og Kulturforvaltningen bemærker i den forlængelse, at der er flere tiltag og ønsker til en\nøget fejring af frivillige i Køge Kommune:\nAllerede den 17. april 2023 besluttede Kultur- og Idrætsudvalget indsatsområdet ”En øget\nfejring af frivillige i foreninger” som en del af initiativet ”Gør det let at være forening”. Der\nblev ikke fundet en endelig model herfor.\nDen 17. juni 2024 blev det nuværende koncept for medaljevinderarrangementet godkendt\naf Kultur- og Idrætsudvalget og Økonomiudvalget, hvor begge udvalg afsatte 50.000 kr. til\nafholdelsen, inden for den eksisterende økonomiske ramme.\n\nMedaljevinderarrangementet hylder idrætsudøvere, der bor i eller repræsenterer Køge\nKommune, og som har vundet medaljer ved danske eller internationale mesterskaber på\nhøjeste niveau.\nI forbindelse med evalueringen af den nye puljestruktur, udmønter den kvalitative analyse\nsig blandt andet i en anbefaling om øget anerkendelse af foreningernes og de frivilliges\nindsats (se sag herom i indeværende dagsorden).\nVelfærdsforvaltningen uddeler årligt deres egen Frivilligpris med en prisgave på 10.000 kr."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er ikke afsat særskilt budget til Ildsjæleprisen. Omkostninger hertil beløber sig på ca. 5.000\nkr. årligt til blomster og gavekurve og afholdes indenfor Kultur- og Idrætsudvalgets ramme.\nDer er ikke afsat budget til øget fejring af frivillige.\nDer er budgetteret med 50.000 kr. årligt til Medaljevinderarrangementet.\nDet bemærkes, at der med budgetforliget er hentet en besparelse på 300.000 kr. fra Kultur- og\nIdrætsudvalgets ramme ved lavere prioritering af opgaver og projekter."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-7": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-7",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Handleplan for fremtidens idrætsfaciliteter 2025-2027 - status 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Børne- og Kulturforvaltningen indstiller, at Kultur- og Idrætsudvalget:\n1. tager status 2026 på arbejdet med Handleplan for fremtidens idrætsfaciliteter til\nefterretning.\n2. beslutter at sætte dele af arbejdet med indsatsområde 1 og 2 i Handleplan for\nfremtidens idrætsfaciliteter på pause.\n3. beslutter, at forvaltningens arbejde med handleplanens indsatsområde 3 kobles på\nudvalgets behandling af punkt 81 i indeværende dagsorden vedrørende det\nstrategisk pejlemærke 3 - Kultur og idræt skaber levende steder.\n\nBaggrund og vurdering\nKultur- og Idrætsudvalget godkendte den 4. november 2024 \"Handleplanen for Fremtidens\nidrætsfaciliteter 2025-2027\", der indeholder følgende tre overordnede indsatsområder:\nIndsatsområde 1: Behov for traditionelle dedikerede faciliteter\nIndsatsområde 2: Organisering, styring og ledelse af idrætsfaciliteter\nIndsatsområde 3: Attraktive udendørsmiljøer til idræt og bevægelse\nSe bilag 1 for uddybning af Handleplanens vision, fokusområder og nævnte indsatsområder.\nMed godkendelse af Handleplanen indebar også en beslutning om, at Kultur- og\nIdrætsudvalget hvert år får forelagt en sag om status på arbejdet med Handleplanen nærværende sag med status for 2026.\nStatus 2026 på arbejdet med Handleplanen\nEfter godkendelse af Handleplanen blev der nedsat en tværgående arbejdsgruppe\n(styregruppe) med repræsentanter fra Børne- og Kulturforvaltningen, Teknik- og\nMiljøforvaltningen, de selvejende haller, idrætsforeningslivet samt Kultur- og\nIdrætsrådet. Formålet med arbejdsgruppen - udover løbende at drøfte handleplanens arbejde\nog indhold - var generelt at skabe et fast, permanent samarbejdsforum for tværfaglig\nvidendeling, dialog og samarbejde på idrætsområdet i Køge Kommune. Det ønskes fortsat.\nI 2025-2026 har der primært været arbejdet med indsatsområde 1 og 2 - med begrænset\nfælles ansvar, fremdrift og resultat. Der henvises til Kultur- og Idrætsudvalget den 1. december\n2025, hvor udvalget tog status på arbejdet med Handleplanen i 2025 (opstartsåret) til\nefterretning.\nI forlængelse af forvaltningens møde med de selvejende haller den 15. september 2026 samt\n\nKultur- og Idrætsudvalgets beslutning den 2. november 2026 om at udvalgets formandskab\ninviterer hallernes bestyrelsesformænd til politisk dialogmøde - er følgende videre proces\ndrøftet og aftalt:\nEt fælles ønske om at forbedre samarbejdet - politisk, administrativt og på daglig basis mellem Køge Kommune og de selvejende haller (og på tværs af disse), og at en proces\nmed særskilt fokus herpå kvalificeres i 2027 med henblik på en mere tidssvarende\nsamarbejds- og tilskudsmodel 2.0.\nAt de dele af arbejdet med Handleplanen og indsatsområde 1 og 2, der involverer de\nselvejende haller, sættes på pause - men at indsatserne \"Det Gode Værtskab\" og\n\"Åbningsmuligheder i ferier og helligdage\", der er arbejdet på i 2025-2026 søges\nrealiseret og implementeret.\nAt afsøge muligheder for samarbejder vedrørende Handleplanens indsatsområde 3:\n\"Attraktive udendørsmiljøer til idræt og bevægelse\". Dette set i sammenhæng med, at der\nallerede er flere forslag og projekter i proces og under udvikling (både i kommunen og i\nsamarbejde med institutioner og aktører) med fokus på udendørs faciliteter og rum og til\nidræt og bevægelse.\nIndsats \"Det Gode Værtskab\" - afslutning og implementering\nEn af indsatserne, der er arbejdet på i 2025 og 2026, er ”Det Gode Værtskab”, og som i Køge\nforstås som: ”At alle, der benytter idrætsfaciliteterne i de selvejende haller og på skolerne i\nKøge Kommune, skal føle sig velkomne og have lyst til at komme tilbage og bruge faciliteterne.\nDet gælder uanset, om man er idrætsaktiv i en forening er aktiv på egen hånd, er ansat, gæst,\nelev eller tilskuer”.\nEn del af arbejdet har været at udarbejde en fælles inspirationsguide om Det Gode\nVærtskab. Guiden (se bilag 2) er primært målrettet de selvejende haller og kommunale skoler i\nKøge, men alle institutioner og foreninger på kultur- og idrætsområdet, der arbejder godt\nværtskab, kan finde inspiration i guiden. Inspirationsguiden evalueres ultimo 2027.\nIndsats \"Åbningsmuligheder i ferier og helligdage\" - afslutning og implementering\nDer blev iværksat et forsøgsprojekt for sommerferien 2026, hvor kommunale skolehaller var\nåbne for foreninger. Det planlægges at forlænge forsøgsprojektet i sommerferien 2027, så der\nopnået et validt grundlag for foreningernes brug af hallerne, hvorefter projektet evalueres og\nfremlægges for politisk niveau.\nFokus på og igangsætning af indsatsområde 3 \"Attraktive udendørsmiljøer til idræt og\nbevægelse\"\nHandleplanen for fremtidens idrætsfaciliteter dækker hele idrætsfacilitetsområdet i Køge\nKommune - også de udendørs faciliteter, arealer, parker og urbane rum tilknyttet midtby, skov,\nland og havnen. Derfor indeholder Handleplanen også indsatsområdet ”Attraktive\nudendørsmiljøer til idræt og bevægelse” - med en heri anbefalet igangsætning, projektudvikling\n\nog særligt fokus i 2027.\nKultur- og Idrætsudvalget behandler i punkt 81 i indeværende dagsorden arbejdet med det\nstrategiske pejlemærke \"Kultur og idræt skaber levende steder\". Forvaltningen indstiller at\nudvalget indlemmer handleplanens indsatsområde 3 med det strategiske pejlemærke, i\nkommende sag til udvalget."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er ingen økonomiske konsekvenser for Køge Kommune i forbindelse med sagen."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-8": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-8",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Køge Kommune som DBU Velfærdsalliancekommune - status 2026",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Børne- og Kulturforvaltningen indstiller, at Kultur- og Idrætsudvalget\n1. tager status på Køge Kommune som DBU Velfærdsalliancekommune 2023-2027 til\nefterretning.\n\nBaggrund og vurdering\nKøge Kommune som DBU Velfærdsalliancekommune\nKøge Kommune har i 2023-2027 et strategisk partnerskab med Dansk Boldspil-Union (DBU)\nog DBU Sjælland (lokalunion i DBU) om at være ”DBU Velfærdsalliancekommune” (se bilag 1).\nSom en del af Velfærdsalliancen er det aftalt, at Kultur- og Idrætsudvalget hvert efterår får\nforelagt en sag om status på Velfærdsalliancen og dens gennemførte aktiviteter og indsatser.\nFormål, indhold og aktiviteter\nFormålet med partnerskabet er at fremme breddefodbolden og fodboldklubberne i Køge\nKommune - både for børn, unge og voksne, og hvor Velfærdsalliancens parter alle bidrager til\naktiviteternes indhold og kvalitet til gavn for borgere og fodboldklubberne i Køge Kommune herunder inden for børnefodbold, fodbold målrettet piger og kvinder, klubudvikling og frivillighed\nsamt i forhold til afvikling af events, finalekampe og landskampe i Køge (se bilag).\nPartnerskabet indebærer en mulighed for, at Køge kan være værtskommune for afvikling af en\nrække større fodboldkampe og events på både eliteniveau og breddeniveau i Køge Idrætspark.\nDBU og DBU Sjælland har det primære ansvar for den løbende eksekvering af samt opfølgning\npå aktiviteterne - særligt i relation til fodboldklubberne, mens Køge Kommunes forvaltninger og\ntil dels lokale skoler og institutioner i Køge Kommune bidrager med særskilt økonomi og\nbetragtelige ressourcer til samtænkning og synergi på tværs af kommunale og lokale aktører\nsamt i forbindelse med koordinering, planlægning og afvikling af større events og kampe.\nDet gælder eksempelvis SkolePokalen og KvindePokalen, som blev afviklet i Køge Idrætspark i\nhenholdsvis april 2026 og maj 2026. Begge events var en succes både sportsligt, tilskuer-,\nafviklings- og værtsbymæssigt - også i forhold til de gennemførte sideevents på dagen."
+    },
+    {
+     "titel": "Videre proces",
+     "tekst": "Kultur- og Idrætsudvalget vil den 1. juni 2027 få forelagt en sag, der omhandler evaluering af\npartnerskabet og stillingtagen til mulig forlængelse af partnerskabet efter 2027.\n\nSom del af den videre proces i 2027 med evaluering af partnerskabets indhold, indsatser og\naktiviteter vil også indgå input og kommentarer fra øvrige, involverede parter - såsom øvrige\nforvaltninger, lokale skoler og institutioner samt de lokale fodboldklubber ( jf. bilag 2).\nJanuarDialog med DBU om fastlægning af proces for evaluering, inddragelse af og\nfebruar 2027 dialog med involverede aktører samt indhold i drøftelse om forlængelse inklusiv erfaringer fra andre kommuner med tilsvarende Velfærdsallianceaftale.\nFebruar-april Gennemførelse af evaluering, eksterne dialogmøder samt drøftelse med DBU\nog udvalgte aktører om evaluering og principper for forlængelse (indhold,\nøkonomi og scenarier).\nDialogmøder med fodboldklubberne – herunder afvikling af ”DBU\nFormandslounge” med fokus på Velfærdsalliancen.\nMaj-juni\n\nSag til Kultur- og Idrætsudvalget (og evt. øvrige relevante fagudvalg TMF og\nVF) med evaluering af partnerskab 2023-2027 samt politisk stillingtagen til\nmulig forlængelse af Velfærdsalliance-aftale gældende for perioden 20282032.\n\nEfterår/ultimo Mulig færdiggørelse af aftalegrundlag for ny periode 2028-2032 med\ntilhørende politisk sag og underskrift-seance."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Køge Kommune betaler årligt 125.000 kr. i aftaleperioden til DBU for planlægning og afvikling\naf de aftalte breddeidrætsaktiviteter inden for Velfærdsalliancen (jf. bilag 1 og 2).\nStørre kampe og events i Køge Idrætspark – herunder nationale landskampe og pokalfinaler\nom SkolePokalen og KvindePokalen - indgår ikke økonomisk i Velfærdalliancen, hvorfor disse\nkampe og events løbende kræver en særskilt politisk stillingtagen (værtsby og økonomi).\nI 2026 betalte Børn-, Unge- og Skoleudvalget 35.000 kr. i forbindelse med SkolePokalen\n(primært til sideevents), mens Kultur- og Idrætsudvalget betalte 70.000 kr. til afvikling af\nKvindePokalen. Hertil kommer nævnte, betragtelige medarbejderressourcer i kommunens\nforvaltninger, som koordineringen, planlægningen og afviklingen af disse events kræver."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-11-30-kultur-og-idraetsudvalget-9": {
+   "id": "koege-2026-11-30-kultur-og-idraetsudvalget-9",
+   "kommune": "Køge",
+   "udvalg": "Kultur- og Idrætsudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.koege.dk/vis?id=181abaad-d3b3-4684-a168-b9ffcaa5f9b3",
+   "hentet": "2026-11-25T14:40:23.340Z",
+   "titel": "Meddelelser og spørgsmål - åben",
+   "afsnit": [],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=7365ad4c-714d-421a-a0f8-9be6d0d60aa1": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=41d1239a-c519-46c4-ae5f-e21eddf29bfd": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=be6a6881-9377-4d7f-af5f-c498c75a4f88": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=c6ea37ad-af34-42e5-b30c-3437a3859dff": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=2026054a-b1ad-4bb9-94a8-9c3698188551": {
-   "senest": "2026-05-22",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=ad16dcc8-ff1b-4376-b2ff-6285cf84ed0f": {
    "senest": "2026-11-16",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=2de09cdf-e2c8-4ed0-8bfa-b4a32c7ab896": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=869ae10c-4cce-4d26-bd82-ae75996be0e4": {
    "senest": "2026-08-27",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=8389d0fa-5531-4d1b-b6af-b68299f5db3c": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=5e44ac6b-00fb-4f9c-8059-a0ac2ce8d751": {
-   "senest": "2026-11-11",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=53843126-cfec-4241-a9cd-833db6e2d268": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=61d78a51-c4ab-44d7-a828-55cbad27dacc": {
    "senest": "2026-11-16",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=9d917ec5-70c0-4ced-ac1c-a5432383510b": {
    "senest": "2026-11-20",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=643a04eb-deb8-4f3b-a9bd-a9e0a5138d4e": {
    "senest": "2026-08-19",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=e37c334c-198f-4f89-95cf-edc9b8c1975e": {
    "senest": "2025-08-20",
@@ -10742,56 +11232,56 @@
    "tjekket": "2026-11-21"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=9b247e6e-c5d1-4f1e-9a49-9af58fd164bc": {
-   "senest": "2026-11-19",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=ce2d8f41-e20f-47e3-ac45-6e364d37977e": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=6e1dcaab-5256-4773-b9c5-35c83de0a0a3": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=6baf48d1-e3e2-414e-89b0-1bfc4a98919b": {
-   "senest": "2026-11-03",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=e076a563-0310-4d27-8a08-d5bb56104889": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=50b0b586-d1a6-47dc-80c6-8234576b1741": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=9ce55b75-3953-4b0a-98d6-be2fd2d036d1": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=4f0579aa-e033-4589-8c46-faf215594afe": {
    "senest": "2026-11-09",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=1dc25907-1221-4f0a-9efa-b84fb11d5281": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=54a3e767-c1f3-40ae-92e6-48f21192b8ec": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=72284972-2fd5-4bce-846f-a2380a80c833": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=6967b145-5a39-4ec8-b8f9-486ff18f114e": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=01c92701-eb0c-42cc-b3cf-7c75cbf98373": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=d6867e36-2890-4f3b-9823-aa1bfce0fcb4": {
    "senest": "2025-09-11",
@@ -10802,7 +11292,7 @@
    "tjekket": "2026-11-21"
   }
  },
- "opdateret": "2026-11-24T23:52:35.712Z",
+ "opdateret": "2026-11-25T14:40:23.341Z",
  "kommune": "Køge",
  "parser": 3
 }

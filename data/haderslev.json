@@ -935,6 +935,22 @@
    "dato": "2026-11-17",
    "punkter": 15,
    "parser": 3
+  },
+  "9f192e64-2b68-468b-9d8b-a7fa7ac21673": {
+   "lastmod": "2026-11-25",
+   "type": "dagsorden",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "punkter": 11,
+   "parser": 3
+  },
+  "aa18838f-8c0e-48fc-a4d4-976d4f1e1eae": {
+   "lastmod": "2026-11-25",
+   "type": "referat",
+   "udvalg": "Haderslev Kommunalbestyrelse",
+   "dato": "2026-11-24",
+   "punkter": 21,
+   "parser": 3
   }
  },
  "sager": {
@@ -24687,15 +24703,19 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Kommunaldirektøren indstiller, at\ndagsordenen godkendes"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Brian Lange blev godkendt som stedfortræder for Jon Krongaard, og Rune Højer blev\ngodkendt som stedfortræder for Josephine Alstrup Kofod.\nDagsordenen blev godkendt."
     }
    ],
    "bilag": []
@@ -24705,10 +24725,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Kommunalpolitisk Topmøde 18.-19. marts 2027",
    "afsnit": [
     {
@@ -24718,6 +24738,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "I 2027 afholdes der Kommunalpolitisk Topmøde den 18.-19. marts i Aalborg Kongres og\nKulturcenter.\nI henhold til KL’s love kan hver kommune 1 stemmeberettiget delegeret blandt\nkommunalbestyrelsens medlemmer for hver påbegyndt 8.000 indbyggere i kommunen. Valget\nsker som forholdstalsvalg, det vil sige som udgangspunkt efter d'Hondts metode. Det udpeges\npå samme måde stedfortrædere for de delegerede.\nHaderslev Kommune kan deltage i topmødet med 7 delegerede, og der skal derfor udpeges 7\ndelegerede samt stedfortrædere.\nDe partier, der ikke får en plads blandt de delegerede, bliver så vidt muligt tilbudt at deltage i\ntopmødet med 1 repræsentant, dog uden stemmeret.\nI marts 2026 deltog:\nMads Skau med Inga Lykke som stedfortræder\nSigne Knappe med Bent Kloster som stedfortræder\nJon Krongaard med Josephine Alstrup Kofod som stedfortræder\nHolger Mikkelsen med Helle Have som stedfortræder\nKjeld Thrane med Janni Boysen Westergaard som stedfortræder\nSvend Brandt med Alex Bødiker som stedfortræder\nMarie Skødt med Finn Lykkeskov som stedfortræder\n\nProcedure\nHaderslev Kommunalbestyrelse 24. november 2026"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Følgende blev udpeget som delegeret til KL topmøde 2027:\n\nMads Skau med Thomas Fredsted som suppleant,\nJens Friis Felber med Keld Valentin som suppleant,\nJørgen Smed med Signe Knappe som suppleant,\nCarsten Dyhre Hansen med Klara Steenholdt som suppleant,\nHanne Pedersen med Svend Brandt som suppleant,\nJannie Boysen Westergaard med Tina Rosenkilde som suppleant, og\nMaria Glinvad Damgaard med Christian Schultz som suppleant."
     }
    ],
    "bilag": []
@@ -24727,10 +24751,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Udpegning til bestyrelse for KIT Syd",
    "afsnit": [
     {
@@ -24740,6 +24764,10 @@
     {
      "titel": "Sagsfremstilling",
      "tekst": "I løbet af oktober og starten af november har byrådene og kommunalbestyrelserne i de 22\nsyddanske kommuner godkendt etableringen af KIT Syd. Et af de første skridt i forlængelse\nderaf er udpegningen af en bestyrelse for KIT Syd.\nIfølge de politisk godkendte vedtægter for KIT Syd skal bestyrelsen bestå af syv medlemmer\nmed ansættelse hos de syddanske kommuner: tre kommunaldirektører, to med ledende\nstillinger inden for IT og digitalisering og to med ledende stillinger inden for økonomi.\nKommunaldirektørkredsen i Syddanmark har en tværgående og koordinerende rolle og skal\nafgive fælles indstilling til udpegning til bestyrelsen. Det enkelte bestyrelsesmedlem udpeges af\nkommunalbestyrelsen i den kommune, hvor vedkommende er ansat. De kommuner, som ikke\nskal udpege til bestyrelsen, orienteres om kommunaldirektørkredsens indstilling.\nTo bestyrelsespladser følger direkte af vedtægterne. Pladserne varetages af\nkommunaldirektørerne i de kommuner, der har henholdsvis formands- og næstformandsposten\ni KKR Syddanmark. I den nuværende valgperiode omfatter det derfor kommunaldirektørerne i\nHaderslev Kommune og Svendborg Kommune. Kommunaldirektørkredsen (ekskl. de\nindstillede) er på den baggrund enig om at indstille Peter Karm og Finn G. Johansen til\nbestyrelsen for KIT Syd. Selvom de to bestyrelsespladser følger af vedtægterne, er en\nudpegning påkrævet.\nDerudover er kommunaldirektørkredsen (ekskl. den indstillede) enig om at indstille\nkommunaldirektør Thomas Foged fra Billund Kommune.\nFor de øvrige fire bestyrelsespladser er kommunaldirektørkredsen enig om at indstille:\nøkonomi- og arbejdsmarkedsdirektør Sarah Gaarde fra Vejle Kommune\nchef for Økonomi, Personale og IT Nikolaj Sørensen fra Kerteminde Kommune\n\nstabschef for Teknologi, Data og Forretnings-IT Anders Drejer Lønbæk fra Odense\nKommune\nIT-chef Bo Mathiasen Bladmose fra Sønderborg Kommune\nIndstillingerne medfører, at der samlet set i bestyrelsen er en bredde ift. kommunestørrelse og\ngeografi, samt at ingen kommune får mere end ét medlem i bestyrelsen.\nFor alle bestyrelsesmedlemmer er valgperioden fire år. Valgperioden for kommunaldirektører\nfølger den kommunale valgperiode og løber dog i første omgang fra 1. januar 2027 til 31.\ndecember 2029. Valgperioden for de øvrige bestyrelsesmedlemmer er forskudt med to år.\nDeres første valgperiode er dog forlænget med ét år og løber derfor fra 1. januar 2027 til 31.\ndecember 2031.\nI bilag 7.1 til vedtægterne er det udfoldet, hvad der sker, hvis et bestyrelsesmedlem skifter job\neller har forfald.\n\nProcedure\nHaderslev Kommunalbestyrelse 24. november 2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -24749,10 +24777,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "2. Bevillingskontrol 2026",
    "afsnit": [
     {
@@ -24766,6 +24794,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -24775,10 +24807,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Kommunegaranti - Provas Affald A/S",
    "afsnit": [
     {
@@ -24792,6 +24824,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Bent Klosters habilitet blev vurderet. Bent Kloster blev vurderet habil.\nGodkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Bent Klosters, Thies Mathiasens, Inga Lykkes, Cecilie Haalands og Jannie Westergaards\nhabilitet blev vurderet, og de blev alle vurderet habile.\n\nGodkendt."
     }
    ],
    "bilag": []
@@ -24801,10 +24837,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Kommunegaranti - Provas Vand A/S",
    "afsnit": [
     {
@@ -24818,6 +24854,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Bent Klosters habilitet blev vurderet. Bent Kloster blev vurderet habil.\nGodkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Bent Klosters, Thies Mathiasens, Inga Lykkes, Cecilie Haalands og Jannie Westergaards\nhabilitet blev vurderet, og de blev alle vurderet habile.\n\nGodkendt."
     }
    ],
    "bilag": []
@@ -24827,10 +24867,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Ansøgning om kommunal lånegaranti - Haderslev Fjernvarme",
    "afsnit": [
     {
@@ -24844,6 +24884,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -24853,10 +24897,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Beslutning af det videre forløb for renoveringen af Hammelev kunstgræsbane",
    "afsnit": [
     {
@@ -24874,6 +24918,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Indstilling fra Kultur- og Fritidsudvalget blev anbefalet over for kommunalbestyrelsen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -24883,10 +24931,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Forlængelse af lejemålet ved Louiseskolen",
    "afsnit": [
     {
@@ -24904,6 +24952,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -24913,10 +24965,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Rammeaftale for det specialiserede socialområde 2027 - 2028",
    "afsnit": [
     {
@@ -24934,6 +24986,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt, idet det præciseres, at aftalen ikke er udarbejdet med afsæt i høringer fra\nHandicaprådet og Udsatterådet lokalt i Haderslev Kommune."
     }
    ],
    "bilag": []
@@ -24943,10 +24999,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Udmøntning af midler fra sundhedsreformen",
    "afsnit": [
     {
@@ -24968,6 +25024,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -24977,10 +25037,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Vedtagelse af helhedsplan for Vojens og Skrydstrup",
    "afsnit": [
     {
@@ -24998,6 +25058,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt, idet det anbefales over for kommunalbestyrelsen, at planen oversendes til\nLand- og Byudviklingsudvalget med henblik på dialog med Borgerforeningen Skrydstrup\nog Forum Vojens."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen fra Økonomiudvalget blev godkendt.\nFraværende:\nHanne Pedersen"
     }
    ],
    "bilag": []
@@ -25007,10 +25071,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Revideret områdefornyelsesprogram, Rådhuscentret, Vojens",
    "afsnit": [
     {
@@ -25028,6 +25092,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -25037,10 +25105,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Endelig vedtagelse af tillæg nr. 21 til Spildevandsplan 2021-2042",
    "afsnit": [
     {
@@ -25058,6 +25126,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nLeif Storgaard Pedersen\nBo Morthorst Rasmussen"
     }
    ],
    "bilag": []
@@ -25067,10 +25139,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Endelig vedtagelse af tillæg nr. 22 til spildevandsplanen 2021-2042",
    "afsnit": [
     {
@@ -25088,6 +25160,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nLeif Storgaard Pedersen\nBo Morthorst Rasmussen"
     }
    ],
    "bilag": []
@@ -25097,10 +25173,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 17,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Endelig vedtagelse af tillæg nr. 23 til Spildevandsplan 2021-2042",
    "afsnit": [
     {
@@ -25118,6 +25194,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nLeif Storgaard Pedersen\nBo Morthorst Rasmussen"
     }
    ],
    "bilag": []
@@ -25127,10 +25207,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 18,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Endelig vedtagelse af tillæg nr. 24 til Spildevandsplan 2021-2042",
    "afsnit": [
     {
@@ -25148,6 +25228,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Godkendt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nFraværende:\nLeif Storgaard Pedersen\nBo Morthorst Rasmussen"
     }
    ],
    "bilag": []
@@ -25157,10 +25241,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 19,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Provas' takster for affaldsområdet 2027",
    "afsnit": [
     {
@@ -25178,6 +25262,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 17. november 2026",
      "tekst": "Bent Klosters habilitet blev vurderet. Bent Kloster blev vurderet habil.\nGodkendt.\nJon Krongaard (O) stemte imod med følgende mindretalsudtalelse: Regningen for den\nforfejlede og overimplementerede emballageafgift skal ikke havne hos forbrugerne i\nHaderslev Kommune. Derfor stemmer Dansk Folkeparti imod."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Bent Klosters, Thies Mathiasens, Inga Lykkes, Cecilie Haalands og Jannie Westergaards\nhabilitet blev vurderet, og de blev alle vurderet habile.\nAfstemning om indstilling:\nFor stemte: A, B, C, F, I, S, V, Æ og Ø, i alt 28\nImod stemte: O, i alt 3\nIngen undlod at stemme\nIndstillingen blev godkendt.\n\nThies Mathiasen(O), Brian Lange (O) og Rune Højer (O) stemte imod med følgende\nmindretalsudtalelse: Regningen for den forfejlede og overimplementerede emballageafgift\nskal ikke havne hos forbrugerne i Haderslev Kommune. Derfor stemmer Dansk Folkeparti\nimod."
     }
    ],
    "bilag": []
@@ -25187,10 +25275,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 20,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Medlemsinitiativ - Forslag om politisk behandling af ansøgninger om husdyrproduktionsanlæg",
    "afsnit": [
     {
@@ -25200,6 +25288,10 @@
     {
      "titel": "Baggrund",
      "tekst": "Politikerne har efter den gældende kompetenceplan ikke mulighed for at tage stilling til\nlandbrugsvirksomheders ansøgninger om udvidelse af anlæg til husdyrproduktion efter\nhusdyrbrugloven, idet sagerne behandles administrativt.\nI løbet af 2026 har der blandt andet været borgerhenvendelser til det politiske om\nmiljøgodkendelse af et anlæg til fjerkræproduktion på Grarupvej 65, nu Grarupvej 64, efter\nhusdyrbruglovens § 16 a, stk. 2.\nSenest har der været henvendelser i forbindelse med forannoncering af ansøgning om\nmiljøgodkendelse på matrikel nr. 632 i Marstrup. Her ønsker ansøgeren at opføre to stalde til\nproduktion af frilandsæg samt en servicebygning med ægpakkeri m.v. efter lovens § 16 a.\nPolitikerne orienteres ikke om sådanne sager som led i den nuværende administrative\nbehandling, og har derfor ikke mulighed for at tage stilling til ansøgningerne eller\ndispensationer, selvom der kan være miljømæssige og lokalsamfundsmæssige konsekvenser.\nForvaltningen har i 2026 behandlet og godkendt ni sager om husdyranlæg efter\nhusdyrbrugloven. Sagerne omfatter tre anlæg til svineproduktion, fire anlæg til\nfjerkræproduktion og to anlæg til kvægproduktion. Alle ansøgninger er vurderet inden for\nlovgivningens rammer, og der er i enkelte sager meddelt dispensation.\nEn ændring af kompetenceplanen, så ansøgningerne fremover behandles politisk, vil sikre, at\nTeknik- og Klimaudvalget får kendskab til ansøgninger om etablering og udvidelse af\nhusdyranlæg. Udvalget vil samtidig få mulighed for at tage stilling til eventuelle dispensationer.\nÆndring vil give det politiske mulighed for involvering i sager fra landbrugsvirksomheder om\nansøgninger til anlæg til husdyrhold, og de potentielle miljø- og lokalsamfundsmæssige\nkonsekvenser.”\n\nJuridiske aspekter\nSagen optages på dagsordenen i medfør af § 11 i lov om kommunernes styrelse, hvorefter\n\nethvert kommunalbestyrelsesmedlem kan indbringe ethvert spørgsmål om kommunens\nanliggender for kommunalbestyrelsen samt fremsætte forslag til beslutning herom."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afstemning om følgende ændringsforslag fra Carsten Leth Schmidt: Medlemsinitiativet\nsendes til Teknik- og Klimaudvalget med henblik på beslutning af, hvad det videre skal\nske i sagen.\nFor stemte: A, B, C, F, S og Ø, i alt 15\nImod stemte: I, O, V og Æ, i alt 16.\nIngen undlod at stemme.\nÆndringsforslaget faldt\n\nAfstemning om indstilling:\nFor stemte: A, B, F, S og Ø, i alt 12\nImod stemte: C, I, O, V og Æ, i alt 19.\nIngen undlod at stemme.\nForslaget faldt."
     }
    ],
    "bilag": []
@@ -25209,10 +25301,10 @@
    "kommune": "Haderslev",
    "udvalg": "Haderslev Kommunalbestyrelse",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 23,
-   "kilde": "https://dagsordener.haderslev.dk/vis?id=8c7abc94-9e36-4014-8536-d5804a431b75",
-   "hentet": "2026-11-19T13:33:27.352Z",
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
    "titel": "Underskriftsside",
    "afsnit": [
     {
@@ -25221,68 +25313,306 @@
     }
    ],
    "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-1": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-1",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social- og Sundhed indstiller, at:\n- Social- og Handicapudvalget godkender dagsordenen."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-2": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-2",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Fortsættelse af social sygeplejeklinik",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktør for Social og sundhed indstiller, at:\nSocial- og Handicapudvalget drøfter udmøntningen af midler til social\nsygeplejeklinik"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sundhedsklynge Sønderjylland bevilgede i 2025 og 2026 midler til sociale sygeplejeklinikker i\nde sønderjyske kommuner. Haderslev Kommune modtog 250.000 kr. til en social\nsygeplejeklinik. Derudover blev der bevilget 100.000 kr. til en socialsygeplejerske på sygehuset\nog 50.000 kr. til en medarbejder i psykiatrien. Alle tre parter skulle samarbejde om den bedst\nsundhedsfaglige indsats for borgere på værestederne på tværs af kommune, sygehus og\npsykiatri.\nHaderslev Kommune har en socialsygeplejerske ansat 5 timer om ugen til at drive den sociale\nsygeplejeklinik. Klinikken holder til på Borgercaféen to timer hver torsdag og på Cafe\nRegnbuen to timer hver anden mandag i ulige uger. Den sociale sygeplejeklinik hjælper\nborgerne med lettere helbredsmæssige problemstillinger og støtter op om igangværende\nbehandling. Klinikken hjælper også borgerne ved behov for kontakt til egen læge og sygehus. I\njuni 2026 har social sygeplejeklinik igangsat et tættere samarbejde med de kommunale\nstøttekontakt-personer i forbindelse deres udkørende funktion. Aktuelt har den sociale\nsygeplejeklinik ikke ressourcer til at varetage alle henvendelser fra borgerne.\nSocialsygeplejersken i den sociale sygeplejeklinik er desuden med i projekt ”Sammen om\nGram” til og med 2028. Under dette projekt er socialsygeplejersken til stede 5 timer om ugen i\nGram for at støtte borgere med helbredsproblemer og lav sundhedskompetence og derved\nskabe bro mellem sundhedsfaglige indsatser og borgerne. Udvalget godkendte den 1. juni\n2026 (pkt. 67), at Haderslev Kommune deltager i ”Sammen om Gram”, som er et\nudviklingsprojekt med lokal- og civilsamfundsaktører om at skabe sundhedsfremmende\nindsatser for mennesker i sårbare livssituationer i Gram og omegn.\n\nNye midler til social sygeplejeklinik fra Sundhedsråd Sønderjylland\nMed sundhedsreformen og forårsaftalen 2025 er der frem mod 2030 samlet nationalt afsat 2\nmia. kr. til nære sundhedsindsatser i kommunerne - også kaldet den kommunale\ninvesteringsmotor. Investeringerne af midlerne sker via sundhedsrådene.\nRegionsrådet har den 26. oktober 2026 godkendt en indstilling fra Sundhedsråd Sønderjylland\nom, at de sønderjyske kommuner hver bevilges 0,962 mio. kr. årligt i 2027 og 2028 til en\nfortsættelse af social sygeplejeklinik.\nSundhedsrådet lægger op til en etablering af de sociale sygeplejeklinikker efter samme model\nsom i Aabenraa kommune, hvor klinikken er etableret på værestedet, Den blå Oase. Desuden\nlægger Sundhedsrådet op til, at de sociale sygeplejeklinikker får en opsøgende funktion i\nforhold til de mest isolerede borgere. Sundhedsrådets perspektiver på social sygeplejeklinik er\nvedlagt som bilag 1.\nSocial- og Handicapudvalget skal i denne sag drøfte ønsker til udmøntning af midlerne i\nHaderslev kommune.\n\nProcedure\nSocial- og Handicapudvalget den 30. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-3": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-3",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Kvalitetsstandarder 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed indstiller, at:\n\nSocial- og Handicapudvalget godkender kvalitetsstandarderne for 2027"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Social- og Handicapudvalget blev den 28. september 2026 (punkt 115) præsenteret for udkast\ntil kvalitetstandarderne 2027. Udvalget sendte kvalitetsstandarderne i høring i Haderslev\nUdsatteråd og Handicaprådet undtagen kvalitetsstandard 11 (Midlertidigt botilbud) og\nkvalitetsstandard 12 (Længerevarende botilbud), som først behandles, når der foreligger en\nkvalitetsstandard for Madservice. Desuden skal kvalitetsstandard 13 (Behandling af misbrug)\nførst behandles næste år.\nUdvalget sendte således 14 kvalitetsstandarder i høring.\n1. Aflastning udenfor hjemmet\n2. Socialpædagogisk støtte\n4. Borgerstyret personlig assistance\n5. Ledsagelse\n6. Kontaktpersonsordning\n8. Tilbud af behandlingsmæssig karakter\n9. Beskyttet beskæftigelse\n10. Aktivitets- og samværstilbud\n14. Handicapkørsel\n15. Befordring med individuelle transportmidler\nI kvalitetsstandarder, hvor der er anbefalet større ændringer, ny tekst og andre tilføjelser, er\ndette markeret med gult i bilagene. Tekst, der skal slettes, er markeret med blåt i bilagene.\nMindre sproglige justeringer og beløb, der er tilpasset/fremskrevet til 2026-niveau, er ikke\nmarkeret. Forvaltningen har udarbejdet et notat med oversigt over ændringerne (jf. bilag 1).\n\nUdover ovenstående 10 kvalitetsstandarder var følgende fire nye kvalitetstandarder for 2027\nomfattet af høringen:\n3. Socialpædagogisk støtte for personer i hjemløshed eller i risiko for hjemløshed\n(servicelovens § 85a)\n7. Kompensationsydelse (servicelovens § 100)\n16. Krisecenter (servicelovens § 109)\n17. Forsorgshjem (servicelovens § 110)\nKvalitetsstandard 3 Socialpædagogisk støtte for personer i hjemløshed eller i risiko for\nhjemløshed er udarbejdet med baggrund i, at lovgivningen blev ændret 1. oktober 2023. Der er\nnu skabt en tilpas erfaring med visitering efter § 85a til, at forvaltningen har kunne beskrive\nmålgruppe, visitationskriterier og forventninger til omfanget af støtten.\nKvalitetsstandard 7 Kompensationsydelse har tidligere heddet 7 Merudgiftsydelse. Der sket en\nvæsentlig lovgivningsmæssig ændring fra 1. september 2025 omkring servicelovens § 100.Der\ner nu udarbejdet en vejledning fra lovgiver, hvorfor det er muligt at lave en kvalitetsstandard for\nområdet gældende fra 2027.\nKvalitetsstandard 16 Krisecenter er udarbejdet, da området pr. 1. januar 2026 er overgået til\nSocial- og Handicapudvalgets område. Kvalitetsstandarden har primært til formål at have en\nsynlig forventningsafstemning i samarbejdet med myndigheds, krisecenter og borgere.\nKvalitetsstandard 17 Forsorgshjem er udarbejdet med det formål at have en synlig\nforventningsafstemning i samarbejdet med borgere og forsorgshjem på baggrund af\nlovgivningsændringen den 1. oktober 2023, hvor der er sat fokus på at arbejde aktivt hen mod,\nat borgeren kommer i eget hjem med støtte (housing first).\nRådets høringssvar til kvalitetsstandarderne er vedlagt som bilag 16 og 17.\n\nProcedure\nSocial- og Handicapudvalget den 30. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-4": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-4",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Budgetopfølgning pr. 31. oktober 2026 - Social- og Handicapudvalget",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed indstiller, at:\nSocial- og Handicapudvalget tager orienteringen til efterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Budgetopfølgningen for udvalget er opdateret med korrigeret budget og forbrug pr. 31. oktober\n2026. Oversigten viser nettodriftsudgifter, samt en oversigt for anlægsprojekter. Ved et lineært\nforbrug hen over året ville forbrugsprocenten på nuværende tidspunkt være 83,3 %.\nI tabel 1 nedenfor vises nettodriftsudgifterne opgjort mere detaljeret.\n\nTabel 1: Driftsudgifter\nDrift - Beløb i mio. kr.\n\nDriftsudgifter\n\nKorrigeret.\nBudget\n\nForbrug\n\nForbrug %\n\nForbrug %*\n\nServiceudgifter\n\nCentral\nrefusionsordning\n\nÆldreboliger\n\nOverførselsudgifter\n\nI alt\n\n”+”= mindreforbrug på udgifter/merindtægter, ”-”=merforbrug på udgifter/mindreindtægter.\nAfrundingsdifferencer kan forekomme.\n*Forbrugsprocenten i 2025, er eksklusiv Krisecenter.\nØkonomien for ældreboliger administreres dels af kommunen og dels af Boligkontoret\nDanmark. Der udarbejdes særskilt årsregnskab, og eventuelle mer- eller mindreforbrug\noverføres til efterfølgende budgetår. Resultatet påvirker dermed ikke udvalgets serviceramme.\n\nI tabel 2 nedenfor vises nettodriftsudgifterne opgjort på udvalgets områder:\nTabel 2: Driftsområder\nDrift - Beløb i mio. kr.\n\nKorr. Budget\n\nForbrug\n\nForventet\nforbrug\n\nForventet\nresultat\n\nMyndighed for Handicap og\nSocialpsykiatri\n\nLivsmestring og støtte Socialpædagogisk støtte\n\nLivsmestring og støtte Dagtilbud\n\nLivsmestring og støtte Rusmiddel og udsatte\n\nLivsmestring og støtte Forebyggende indsatser\n\nÆldreboliger (SHU)\n\nI alt\n\nDer forventes et netto merforbrug på 16,1 mio. kr. på myndighedsområdet i 2026. Selve\nmyndighedsdriften og administrationen forventes at afslutte året med et samlet mindreforbrug\npå 1,0 mio. kr.\nDe borgerrettede indsatser er samlet set økonomisk presset.\nIndenkommunale borgerrettede indsatser\nDette er de indsatser, som kommunen selv leverer – f.eks. egne botilbud, BPA-ordninger og\nstøtteforløb.\nSamlet set viser området et mindreforbrug på 4,1 mio. kr., men det dækker over store\nforskydninger:\n\nDSI Odinsgaard giver et merforbrug på 9,5 mio. kr.\nHer er der tale om borgere, der har fået bevilget mere støtte.\nBestillerbudgettet viser omvendt et mindreforbrug på 6,9 mio. kr. Det skyldes en del\nledige pladser på egne botilbud, hvor der skal være midler at anvende, hvis nye borgere\nflytter ind.\nBPA-området (Borgerstyret Personlig Assistance) har et mindreforbrug på 6,9 mio. kr.\nblandt andet pga. færre ordninger og lavere timeforbrug.\nØvrige indenkommunale indsatser samlet forventes at afslutte året med et merforbrug\n\npå 0,2 mio. kr.\n\nUdenkommunale borgerrettede indsatser\nDette er indsatser, hvor kommunen køber pladser eller ydelser hos andre kommuner eller hos\nprivate/regionale tilbud.\nI 2026 forventes det, at forvaltningen hjemtager 37,2 mio. kr. i refusioner fra staten.\nOmrådet forventes at ende med et netto merforbrug på 21,2 mio. kr. efter refusioner.\nHeraf forventes Forsorgshjem, § 85a og Krisecenter, isoleret set, at afslutte året med et netto\nmerforbrug på henholdsvis 3,5 mio. kr., 0,8 mio. kr. og 0,7 mio. kr. Samlet set forventes de tre\nposter at udgøre 5 mio. kr. af merforbruget på de udenkommunale indsatser.\nLivsmestring og støtte – Socialpædagogisk støtte i eget hjem og botilbud\nOmrådet forventer et merforbrug på 5,5 mio. kr.\nTeam socialfaglig støtte forventes at afslutte året med et mindreforbrug på 0,3 mio. kr.\nFlere botilbud er økonomisk udfordret. Der pågår en undersøgelse af årsagen.\nKommunens egne botilbud har aktuelt 18 ledige pladser, hvoraf 4 er på Odinsgaard.\nLivsmestring og støtte – Dagtilbud\nDet forventes, at dagtilbuddene under ét afslutter året med et mindreforbrug på 0,8 mio. kr.\n\nLivsmestring og støtte – Rusmiddel og udsatte\nOmrådet forventer et merforbrug på 1,9 mio. kr. Rusmiddelcentret står til at afslutte året i\nbalance. Det skyldes, at der er tilført 0,5 mio. kr. i 2026 og 2027. Udgiften skyldes\nbehandlingsgaranti og aktivitetsstigning på trods af, at integreret rusmiddelsbehandling nu er\nen regional opgave, som Haderslev Kommune har afgivet 1,3 mio. kr. til. Merforbruget er\nfaldet, da centeret har fået 0,2 mio. kr. til styrkelse af alkoholbehandling af borgere med\nalkoholproblematik og samtidig psykisk lidelse.\nStøtteteamet forventer et merforbrug på 1,9 mio. kr. som følge af en markant stigning i antal\nborgere. Udviklingen er gået fra 44 borgere i januar 2026 til 63 borgere i oktober 2026.\n\nLivsmestring og støtte – Forebyggende indsatser\nOmrådet forventer et merforbrug på 0,1 mio. kr.\nAnlæg\nAnlægsopfølgningen viser en forbrugsprocent på 56,2 % og er vedlagt som bilag 1.\nLedelsesinformation er vedlagt i bilag 2.\n\nProcedure\nSocial- og Handicapudvalget d. 30. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-5": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-5",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Budget 2027 - 2030 - Det specialiserede voksenområde",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed indstiller, at:\nSocial- og Handicapudvalget drøfter udmøntningen af midlerne"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det er i budgetforliget for Haderslev Kommune 2027 – 2030 besluttet, at:\n”Det specialiserede voksenområde er fortsat under økonomisk pres. En udvikling, der ses i\nkommuner over hele landet. For at sikre området et bæredygtigt afsæt eftergives merforbruget\ni regnskab 2026 med 20 mio. kr., ligesom der afsættes en engangsbevilling på 20 mio. kr. i\n2027. Fagudvalget har fortsat en opgave i via prioritering, omstilling og tæt økonomistyring for\nat sikre balance mellem aktivitet og økonomi på området.”\nUdvalget skal drøfte, hvordan midlerne skal udmøntes.\n\nProcedure\nSocial- og Handicapudvalget den 30. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-6": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-6",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Budget 2027 – 2030 – Akustisk assistent på botilbud",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed indstiller, at:\nSocial- og Handicapudvalget godkender, at midlerne til Akustisk assistent\nanvendes til aflønning af natoperatør"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det er i budgetforliget for Haderslev Kommune 2027 – 2030 besluttet, at:\n”Akustisk assistent bidrager til øget tryghed og færre forstyrrelse for borgere om natten på\nbotilbud. Forligspartierne er enige om at prioritere 0,6 mio. kr. årligt.”\nAkustisk assistent er velimplementeret på følgende tre botilbud med nattevagt: Vilstrupvej,\nKløvervænget og Åbakken / Grenen. 49 borgere på disse botilbud har indvilget i at benytte\nakustisk assistent, og både borgere og pårørende oplever store fordele ved teknologien.\nFor at teknologien kan virke efter hensigten er det nødvendigt at have en centralt placeret\nnatoperatør, der kan give besked til en lokal nattevagt, hvis Akustisk assistent sender en alarm\neller et lydbillede, fordi en borger f.eks. kalder, græder eller er faldet.\nDer mangler årligt 0,6 mio. kr. til aflønning af operatørens tilstedeværelse hver nat hele året fra\n2027 og frem, og det anbefales derfor, at de bevilgede midler på budget 2027 – 2030\nanvendes til dette formål.\n\nØkonomiske forhold\nDer er med budgetforlig 2027 – 2030 afsat 0,6 mio. kr. årligt til Akustisk assistent på botilbud.\n\nProcedure\nSocial- og Handicapudvalget den 30. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-7": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-7",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Samarbejdsaftale mellem Haderslev Kommune og Gram Hvaler",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed, indstiller, at:\nSocial- og Handicapudvalget godkender samarbejdsaftalen"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget har den 2. november 2026 (pkt. 124) besluttet, at værestedet i Gram skal placeres på\nen fast matrikel i Spejderhytten hos Gram Hvaler.\nHaderslev Kommune og Gram Hvaler har i fællesskab udarbejdet en samarbejdsaftale, som\nforvaltningen anbefaler udvalget at godkende.\nSamarbejdsaftalen fastsætter rammerne for værestedets adgang til og brug af spejdernes\nfaciliteter.\nAftalen fastlægger, at kommunen har ansvaret for værestedet herunder driften, brugerne,\narbejdsmiljøet og eventuelle skader på spejdernes faciliteter forårsaget af medarbejdere eller\nbrugere. Spejderne har ansvaret for bygninger, installationer og vedligehold. Spejderne stiller\nfaciliteterne vederlagsfrit til rådighed. Kommunen medbringer selv ting til den daglige drift af\nværestedet såsom brænde, toiletpapir, rengøringsartikler og lignende.\nAftalen træder i kraft den 1. december 2026 og kan opsiges efter gensidig aftale mellem\nparterne dog med mulighed for opsigelse med op til 6 måneders varsel.\n\nProcedure\nSocial- og Handicapudvalget den 30. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-8": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-8",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Styrkede Uddannelsesmiljøer - høring",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Den administrative styregruppe indstiller, at\nudvalgene tager rapporten til efterretning, jf. bilag 1\nudvalgene godkender, at rådgiverrapporten sendes i høring hos Louiseskolen,\nSTU, Værkstedet Hjortebro, relevante MED-udvalg og Handicaprådet\nsagen genoptages efter høringsperioden med henblik på endelig politisk\nbehandling i marts 2027 i de relevante fagudvalg og efterfølgende i\nØkonomiudvalget og Kommunalbestyrelsen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunalbestyrelsen besluttede den 24. juni 2026 i sag nr. 99 at igangsætte arbejdet med\nStyrkede Uddannelsesmiljøer ved at godkende kommissoriet for arbejdet (vedlagt som bilag 4).\nDet blev ligeledes besluttet at nedsætte en politisk styregruppe med bred repræsentation fra\nKommunalbestyrelsen.\nBaggrunden for arbejdet er kommunens overtagelse af bygningerne på Kroghs Kobbel og\nbehovet for at afklare bygningernes fremtidige anvendelse samt de muligheder, som\novertagelsen giver for at styrke kommunens uddannelses- og specialtilbud.\nSiden sommeren 2026 er der gennemført en analyse- og inddragelsesproces med deltagelse\naf de tre berørte institutioner, relevante ledere og medarbejdere, kommunale fagområder samt\nden eksterne rådgiver. Processen har blandt andet omfattet analyser, medarbejderworkshops,\nstudietur, opmåling og kortlægning af bygningsmassen samt løbende behandling i\nprojektgruppen, den administrative styregruppe og den politiske styregruppe.\n\nFormålet har været at skabe et sammenligneligt og tilstrækkeligt belyst grundlag for politisk\nstillingtagen til de to scenarier. Som supplement til de oprindelige scenarier er muligheden for\nat samle Louiseskolen på Louisevej blevet analyseret. Denne mulighed indgår i\nrådgiverrapporten som et selvstændigt tilvalg, der kan kombineres med begge varianter af\nscenarie B, men som ikke er en forudsætning for scenariet.\nDer foreligger nu en rådgiverrapport, der beskriver de to hovedscenarier og deres varianter.\nRapporten er vedlagt som bilag 1, mens en opsummering af rapporten er vedlagt som bilag 2\nRapporten belyser blandt andet de pædagogiske muligheder, behovet for bygningsmæssige\ntilpasninger samt scenariernes anlægsøkonomi og tidsplan. Materialet er udarbejdet som en\nmuligheds- og scenarieanalyse og udgør ikke et projekteret anlægsforslag.\nDe væsentligste konklusioner i rapporten er:\nScenarie A vurderes ikke realistisk at realiseres inden for den nødvendige tidshorisont.\nScenariet indebærer, at Louiseskolen først flyttes til Kroghs Kobbel, hvorefter STU kan\nflyttes til Louisevej. Rokadekæden betyder, at en permanent placering af STU ikke\nrealistisk kan være etableret inden sommeren 2028, hvor STU’s nuværende lejemål\nophører.\nScenarie A rummer væsentlige pædagogiske potentialer, herunder muligheden for at\nsamle Louiseskolen med mindre og genkendelige afdelingsmiljøer og fælles\nspecialfunktioner.\nScenarie B har et bedre tidsmæssigt udgangspunkt, men forudsætter en faseopdelt\nløsning. De frigivne dele af Kroghs Kobbel kan anvendes til dele af STU, mens de\nøvrige dele af tilbuddet i en overgangsperiode vil skulle håndteres gennem midlertidige\nløsninger.\nScenarie B har et væsentligt pædagogisk potentiale ved på sigt at samle STU som et\nsammenhængende ungdoms- og uddannelsesmiljø med korte forbindelser mellem\nbasisområder, praksisbaserede aktiviteter og fælles funktioner.\nRapporten belyser scenarie B både med STU og Hjortebro på Kroghs Kobbel og med\nSTU og en arealreserve. En mulig samling og videreudvikling af Louiseskolen på\nLouisevej behandles særskilt og forudsætter et anslået nybygningsbehov på ca. 3.000\n\nRapporten belyser dermed muligheder og centrale risici ved de forskellige løsninger. Ved en\nefterfølgende beslutning om et konkret scenarie vil der være behov for yderligere projektering\nog kvalificering.\nForvaltningen anbefaler, at rådgiverrapporten sendes i høring, inden der træffes endelig\npolitisk beslutning om den videre retning. Høringen vil give de direkte berørte institutioner og\nrelevante råd og MED-organer mulighed for at forholde sig til rapportens vurderinger og\nscenarier. Høringen skal samtidig bidrage til at afdække lokale og faglige perspektiver, som bør\nindgå i det samlede beslutningsgrundlag.\n\nHøringen foreslås gennemført i perioden 21. december 2026 til 29. januar 2027.\nUdkast til fælles høringsbrev fra formændene for de fire fagudvalg vedlægges som bilag 3.\n\nProcedure\nBeskæftigelses- og Borgerserviceudvalget 30. november 2026\nSocial- og Handicapudvalget 30. november 2026\nVækst- og Udviklingsudvalget 3. december 2026\nBørne- og Familieudvalget 7. december 2026\nØkonomiudvalget 8. december 2026\nHaderslev Kommunalbestyrelse 15. december 2026\nHandicaprådet 21. januar 2027\nBeskæftigelses- og Borgerserviceudvalget 1. marts 2027\nSocial- og Handicapudvalget 1. marts 2027\nVækst- og Udviklingsudvalget 4. marts 2027\nBørne- og Familieudvalget 8. marts 2027\nØkonomiudvalget 17. marts 2027\nHaderslev Kommunalbestyrelse 30. marts 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-9": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-9",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Orientering fra Sundhedsråd Sønderjylland",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktøren for Social og Sundhed indstiller, at\nSocial- og Handicapudvalget tager orienteringen til efterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sundhedsråd Sønderjylland behandler emner, der kan være relevante for Haderslev\nKommune. På udvalgsmødet vil der være mulighed for at spørge Signe Knappe, Haderslev\nKommunes medlem af Sundhedsråd Sønderjylland, ind til punkterne på Sundhedsrådets\nmøde.\nSundhedsrådet havde møde den 24. november 2026, på mødet behandlede Sundhedsrådet\nblandt andet:\nPunkt 6 – Opsamling på konference om nærsundhedsplanen\nSundhedsrådet drøftede opsamlingen fra konferencen om nærsundhedsplanen den 6.\nnovember 2026. Input fra konferencen indgår i det videre arbejde med at justere og præcisere\nnærsundhedsplanen og identificere områder, der kræver særligt fokus i implementeringen.\nPunkt 8 – Projekt om overvægt\nSundhedsrådet drøftede skaleringsmuligheder og potentialer i projektet Healthy Regions 4 All.\nSom led i projektet afprøver Region Syddanmark og Haderslev Kommune et spørgeskema og\net tværsektorielt forløb, der skal afdække årsager til overvægt og understøtte mere individuelt\ntilrettelagte indsatser. De faldne bemærkninger fra sundhedsrådets drøftelse indarbejdes i det\nvidere arbejde med projektet.\nPunkt 9 – Lukning af Børne- og Ungdomspsykiatriens døgnafsnit i Aabenraa\nSundhedsrådet blev orienteret om det midlertidige stop for nye indlæggelser på Børne- og\nUngdomspsykiatriens døgnafsnit i Aabenraa fra den 16. november 2026. Patienter med behov\nfor indlæggelse henvises til Odense, mens den ambulante aktivitet og den psykiatriske\nskadestue i Aabenraa fortsætter. Der igangsættes en analyse af det fremtidige tilbud, som skal\nindgå i grundlaget for en politisk beslutning i Regionsrådet i første halvår 2027.\nPunkt 10 – Hjælpemidler og behandlingsredskaber\nSundhedsrådet blev orienteret om ansvarsfordelingen mellem region og kommune for\nbehandlingsredskaber, træningsredskaber og hjælpemidler. Der kan særligt opstå udfordringer,\nnår forsyningsansvaret overgår fra regionen til kommunen. Med sundhedsreformen er det\naftalt, at der skal udvikles en ny model, som skal skabe større klarhed om ansvaret og mindske\n\nrisikoen for, at borgerne kommer i klemme mellem myndighederne.\nPunkt 12 – Patient- og pårørendeudvalg\nSundhedsrådet blev orienteret om processen for etablering af et patient- og pårørendeudvalg\nfra 2027. Udvalget skal sikre, at patienters og pårørendes perspektiver og erfaringer indgår\nsystematisk i udviklingen af sundhedsvæsenet og vil som udgangspunkt bestå af seks\nmedlemmer udpeget af Danske Patienter, Danske Handicaporganisationer, ÆldreSagen og\nDanske Ældreråd.\n\nProcedure\nSocial- og Handicapudvalget den 30. november 2026"
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-10": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-10",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Gensidig Orientering",
+   "afsnit": [],
+   "bilag": []
+  },
+  "haderslev-2026-11-30-social-og-handicapudvalget-11": {
+   "id": "haderslev-2026-11-30-social-og-handicapudvalget-11",
+   "kommune": "Haderslev",
+   "udvalg": "Social- og Handicapudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=9f192e64-2b68-468b-9d8b-a7fa7ac21673",
+   "hentet": "2026-11-25T14:45:52.822Z",
+   "titel": "Underskriftsside",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sagsresume\nSocial- og Handicapudvalget skal godkende beslutningsprotokollen. For at godkende\nbeslutningsprotokollen, skal hvert medlem underskrive ved at trykke på Godkend."
+    }
+   ],
+   "bilag": []
+  },
+  "haderslev-2026-11-24-haderslev-kommunalbestyrelse-22": {
+   "id": "haderslev-2026-11-24-haderslev-kommunalbestyrelse-22",
+   "kommune": "Haderslev",
+   "udvalg": "Haderslev Kommunalbestyrelse",
+   "dato": "2026-11-24",
+   "type": "referat",
+   "nr": 22,
+   "kilde": "https://dagsordener.haderslev.dk/vis?id=aa18838f-8c0e-48fc-a4d4-976d4f1e1eae",
+   "hentet": "2026-11-25T14:46:07.895Z",
+   "titel": "Gensidig orientering",
+   "afsnit": [],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=5686a761-c63d-497f-9341-2c7a299e927d": {
    "senest": "2026-06-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=1b5573fb-7cd6-4b96-a6b8-75700d4dc1b4": {
    "senest": "2025-12-12",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=81d4c5b9-7cb8-422a-b85b-41aa17a4717b": {
    "senest": "2026-11-23",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=46cdd600-b0d8-41d7-a627-d793abfdf34e": {
    "senest": "2026-06-19",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=359c21b8-4dad-4730-aaca-fffbd21b7e91": {
    "senest": "2026-11-20",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=fed78cc5-03ab-405f-b606-4a168eae9159": {
    "senest": "2026-04-21",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=cf34b35a-ec3d-4df6-b620-79d1c9ac07c2": {
    "senest": "2026-11-16",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=df0d8a35-6def-472f-9896-f936e0fb19e1": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=f93b21ec-4c47-4afe-b6f1-119155d27b3f": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=12a93602-8cf7-4611-881b-7dae93274ea7": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=de26c5dc-a207-4d37-983f-db7a153ea6e2": {
    "senest": "2026-11-24",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=ed52f85a-0436-47ff-98ef-538426ceba4c": {
    "senest": "2026-02-27",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=3e999a93-10e3-47ee-b555-3428a2a185d5": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=d1054f88-a3a2-457f-8544-31beb3b74413": {
    "senest": "2026-06-08",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=11106f06-c78b-45bc-89f9-9a3a407fe0d2": {
    "senest": "2026-11-06",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=06099258-950b-4b19-a8be-90592b001d46": {
    "senest": "2025-10-01",
@@ -25290,11 +25620,11 @@
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=e0dfb929-7646-4947-936c-e2abc5fe372a": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=701b02b6-81c9-441b-9370-c0ceece09daa": {
    "senest": "2026-09-14",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=a81323f8-a41c-4c23-ac46-683684eb8cc1": {
    "senest": "2023-10-02",
@@ -25302,83 +25632,83 @@
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=75003c4a-41d9-47f9-b74a-e66ab7441272": {
    "senest": "2026-02-26",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=62bb1136-4ced-4cd8-9201-35ce0e58327d": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=5f377a45-f534-4fde-924a-52fd2f636596": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=ddf91631-6e29-418c-a6ef-26175d31a9da": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=7591453a-8328-4512-81b0-5a1ba4fe67d5": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=461c658c-8d14-489a-bb6e-a199e2290ba2": {
    "senest": "2026-04-23",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=d60fb250-0d85-4a07-b532-3919e8baa288": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=7d71550e-b506-4506-8822-e0458cbfd62d": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=a55135c4-b747-484e-8f56-fb9bf07b2a25": {
    "senest": "2026-11-16",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=c210cf9f-b842-4801-ad37-9269a2f0a243": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=b533e404-45ec-4735-8852-45fc7ca28528": {
-   "senest": "2026-11-05",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=c5f611e9-6913-4feb-9d27-35552ad589b1": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=d2ab0ce1-1cee-46d2-b250-02bb385abde4": {
    "senest": "2026-11-09",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=6ddd3c20-8399-45af-923b-5f31853c54ce": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=29551f66-6594-4faf-8b96-70fb736c3c1b": {
    "senest": "2025-12-12",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=b457014f-3815-4ea7-bd39-10b3a5ca691f": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=89231e16-68df-458e-aa80-18fcb50b8e79": {
    "senest": "2026-09-11",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=4a23a63b-b30f-40f3-a880-268914024f26": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=458bd762-380e-41a1-8daa-c871f6bdfc2d": {
    "senest": "2026-02-26",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=0bdaec90-496c-42fb-a921-a22f33734445": {
-   "senest": "2026-11-19",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=54ac4984-fb63-4619-add7-eaf53dbfcd77": {
    "senest": "",
@@ -25386,15 +25716,15 @@
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=9d83befc-3f6e-48d7-b1ea-dbac3bcd9bb2": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=f11c38f9-0c12-463c-9eb0-9c5c89c1e6c9": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=cb33a2b5-4073-49f9-bc2a-bb93a89afc12": {
    "senest": "2026-08-20",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.haderslev.dk/Sitemap/ForCommittee?committeeId=ba20c785-9b47-4be6-818c-71a8c71cda37": {
    "senest": "2025-11-05",
@@ -25406,6 +25736,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-24T23:57:12.568Z",
+ "opdateret": "2026-11-25T14:46:07.897Z",
  "kommune": "Haderslev"
 }

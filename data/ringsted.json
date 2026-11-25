@@ -735,6 +735,30 @@
    "dato": "2026-11-24",
    "punkter": 4,
    "parser": 3
+  },
+  "50cbfff5-bae3-47cf-b5c3-a6ac3957b226": {
+   "lastmod": "2026-11-25",
+   "type": "dagsorden",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "punkter": 27,
+   "parser": 3
+  },
+  "fd2e076a-d081-4882-b784-21459a3732de": {
+   "lastmod": "2026-11-25",
+   "type": "referat",
+   "udvalg": "Ældrerådet",
+   "dato": "2026-11-25",
+   "punkter": 12,
+   "parser": 3
+  },
+  "4635f779-0d66-4355-884f-8c30e1d2e3ba": {
+   "lastmod": "2026-11-25",
+   "type": "referat",
+   "udvalg": "Folkeoplysningsrådet",
+   "dato": "2026-11-24",
+   "punkter": 8,
+   "parser": 3
   }
  },
  "sager": {
@@ -15284,12 +15308,16 @@
    "kommune": "Ringsted",
    "udvalg": "Folkeoplysningsrådet",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=0f3b3761-a68c-4dc4-a151-145da9b22b57",
-   "hentet": "2026-11-19T13:28:34.039Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=4635f779-0d66-4355-884f-8c30e1d2e3ba",
+   "hentet": "2026-11-25T14:41:29.656Z",
    "titel": "Økonomisk oversigt over puljen til udstyr, rekvisitter og projekter",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Til efterretning.\n\nAfbud: Peter Munch Jørgensen, Sabine Skou Gøtterup\n\nIndhold\nIndledning\n\nI denne sag får Folkeoplysningsrådet en økonomisk oversigt over forbrug på kontoen projekter\nog udstyr.\nBeskrivelse af sagen\n\nAdministrationen har udarbejdet en oversigt over tildelte midler på kontoen for projekter og\nudstyr.\nDen samlede pulje er på 475.000 kroner i 2026.\nDer hvor formanden, i samarbejde med administrationen, løbende har behandlet ansøgninger,\nvedlægges disse som bilag.\nInddragelse og høring\n\nIngen."
+    },
     {
      "titel": "Økonomi",
      "tekst": "Ingen bevillingsmæssige konsekvenser."
@@ -15310,12 +15338,16 @@
    "kommune": "Ringsted",
    "udvalg": "Folkeoplysningsrådet",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=0f3b3761-a68c-4dc4-a151-145da9b22b57",
-   "hentet": "2026-11-19T13:28:34.039Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=4635f779-0d66-4355-884f-8c30e1d2e3ba",
+   "hentet": "2026-11-25T14:41:29.656Z",
    "titel": "Karosseriet søger om tilskud til nyt udstyr",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der bevilliges 2/3 af udgiften, dog max. 33.500 kroner.\nAfbud: Peter Munch Jørgensen, Sabine Skou Gøtterup\n\nIndhold"
+    },
     {
      "titel": "Resumé",
      "tekst": "Karosseriet, som er en godkendt forening under Folkeoplysningsloven, søger om tilskud til\nindkøb af nye romaskiner og airbikes til en samlet værdi på 49.980 kroner. Der søges om et\ntilskud på 45.000 kroner. Folkeoplysningsrådet har dog en politik om, at der som udgangspunkt\nkun giver 2/3 i tilskud til udstyr."
@@ -15344,12 +15376,16 @@
    "kommune": "Ringsted",
    "udvalg": "Folkeoplysningsrådet",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=0f3b3761-a68c-4dc4-a151-145da9b22b57",
-   "hentet": "2026-11-19T13:28:34.039Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=4635f779-0d66-4355-884f-8c30e1d2e3ba",
+   "hentet": "2026-11-25T14:41:29.656Z",
    "titel": "Allindelille IF søger om tilskud til udstyr",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der bevilliges 2/3 af beløbet, dog max. 17.600 kroner.\nAfbud: Peter Munch Jørgensen, Sabine Skou Gøtterup\n\nIndhold"
+    },
     {
      "titel": "Resumé",
      "tekst": "Allindelille IF søger om tilskud til udstyr. Administrationen vurderer, at ansøgningen opfylder\nkriterierne i retningslinjerne"
@@ -15360,7 +15396,7 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Allindelille IF søger om tilskud til indkøb af træningsudstyr.\nForeningen er i en positiv udvikling, og det nuværende udstyr anses ikke længere for at være\ntilstrækkeligt.\nForeningen ønsker at udvide tilbuddet af træningsudstyr. Udstyret vil blive brugt til styrke,\nkonditions-, balance- stabilitets- og bevægelighedstræning. Stave til floorball skal bruge til\nfællesaktiviteter og skabe mere variation i træningen.\nDer søges tilskud til at købe følgende udstyr:\nHåndvægte, 5 kg: 10 sæt, svarende til 20 håndvægte\nHåndvægte, 6 kg: 10 sæt, svarende til 20 håndvægte\nHåndvægte, 8 kg: 10 sæt, svarende til 20 håndvægte\nBrede, bløde træningselastikker: 20 sæt\nYogablokke: 20 stk.\nKettlebells, 6 kg: 10 stk.\nKettlebells, 8 kg: 10 stk.\nKettlebells, 10 kg: 10 stk.\nSjippetove: 20 stk.\nYogabolde, 65 cm: 20 stk.\nFloorballsæt: 6 sæt\nFloorball bolde: 100 stk\nUdstyret har en samlet pris på 26.386 kroner.\nAnsøgningen kan læses i bilag.\n\nPolitisk handlerum\n1) Imødekomme ansøgningen.\n2) Imødekomme ansøgningen med et mindre eller større beløb.\n3) Afvise ansøgningen."
+     "tekst": "Allindelille IF søger om tilskud til indkøb af træningsudstyr.\nForeningen er i en positiv udvikling, og det nuværende udstyr anses ikke længere for at være\ntilstrækkeligt.\nForeningen ønsker at udvide tilbuddet af træningsudstyr. Udstyret vil blive brugt til styrke,\nkonditions-, balance- stabilitets- og bevægelighedstræning. Stave til floorball skal bruge til\nfællesaktiviteter og skabe mere variation i træningen.\nDer søges tilskud til at købe følgende udstyr:\nHåndvægte, 5 kg: 10 sæt, svarende til 20 håndvægte\nHåndvægte, 6 kg: 10 sæt, svarende til 20 håndvægte\nHåndvægte, 8 kg: 10 sæt, svarende til 20 håndvægte\nBrede, bløde træningselastikker: 20 sæt\nYogablokke: 20 stk.\nKettlebells, 6 kg: 10 stk.\nKettlebells, 8 kg: 10 stk.\nKettlebells, 10 kg: 10 stk.\nSjippetove: 20 stk.\nYogabolde, 65 cm: 20 stk.\nFloorballsæt: 6 sæt\n\nFloorball bolde: 100 stk\nUdstyret har en samlet pris på 26.386 kroner.\nAnsøgningen kan læses i bilag.\n\nPolitisk handlerum\n1) Imødekomme ansøgningen.\n2) Imødekomme ansøgningen med et mindre eller større beløb.\n3) Afvise ansøgningen."
     },
     {
      "titel": "Vurdering",
@@ -15378,12 +15414,16 @@
    "kommune": "Ringsted",
    "udvalg": "Folkeoplysningsrådet",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=0f3b3761-a68c-4dc4-a151-145da9b22b57",
-   "hentet": "2026-11-19T13:28:34.039Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=4635f779-0d66-4355-884f-8c30e1d2e3ba",
+   "hentet": "2026-11-25T14:41:29.656Z",
    "titel": "Vetterslev-Høm GF søger om tilskud til udstyr til nyopstartet afdeling",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der bevilliges 2/3 i tilskud, dog max. 13.800 kroner.\nAfbud: Peter Munch Jørgensen, Sabine Skou Gøtterup\n\nIndhold"
+    },
     {
      "titel": "Resumé",
      "tekst": "Vetterslev-Høm GF søger om tilskud til udstyr i forbindelse med opstart af bordtennisafdeling.\nAdministrationen vurderer, at ansøgningen opfylder kriterierne i retningslinjerne."
@@ -15412,12 +15452,16 @@
    "kommune": "Ringsted",
    "udvalg": "Folkeoplysningsrådet",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=0f3b3761-a68c-4dc4-a151-145da9b22b57",
-   "hentet": "2026-11-19T13:28:34.039Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=4635f779-0d66-4355-884f-8c30e1d2e3ba",
+   "hentet": "2026-11-25T14:41:29.656Z",
    "titel": "Ringsted Skytteforening søger om tilskud til reparation af rifler",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der bevilliges 2/3 i tilskud, dog max. 16.500 kroner.\nAfbud: Peter Munch Jørgensen, Sabine Skou Gøtterup\n\nIndhold"
+    },
     {
      "titel": "Resumé",
      "tekst": "Ringsted Skytteforening søger om et tilskud til reparation af fire ældre rifler, hvor løbene er slidte. Under et\nbørne-DM oplevede foreningen problemer med riflernes præcision og sikkerhed, da patronerne blev affyret i\nforskellige retninger. Reparation af løbene er mulig og billigere end at udskifte alle fire rifler. Administrationen\nvurderer, at ansøgningen opfylder kriterierne i de gældende retningslinjer.\n\nAdministrationen indstiller, at sagen drøftes."
@@ -15480,12 +15524,16 @@
    "kommune": "Ringsted",
    "udvalg": "Folkeoplysningsrådet",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=0f3b3761-a68c-4dc4-a151-145da9b22b57",
-   "hentet": "2026-11-19T13:28:34.039Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=4635f779-0d66-4355-884f-8c30e1d2e3ba",
+   "hentet": "2026-11-25T14:41:29.656Z",
    "titel": "Orientering - Udbetaling af medlems- og lokaletilskud",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Til efterretning.\nAfbud: Peter Munch Jørgensen, Sabine Skou Gøtterup\n\nIndhold"
+    },
     {
      "titel": "Resumé",
      "tekst": "I denne sag får Folkeoplysningsrådet en orientering om hvilke godkendte folkeoplysende\nforeninger der har modtaget medlems- og/eller lokaletilskud i 2026."
@@ -15500,7 +15548,7 @@
     },
     {
      "titel": "Vurdering",
-     "tekst": "Ingen.\n\nInddragelse og høring\nIngen."
+     "tekst": "Ingen.\n\nInddragelse og høring\n\nIngen."
     },
     {
      "titel": "Økonomi",
@@ -15514,12 +15562,16 @@
    "kommune": "Ringsted",
    "udvalg": "Folkeoplysningsrådet",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=0f3b3761-a68c-4dc4-a151-145da9b22b57",
-   "hentet": "2026-11-19T13:28:34.039Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=4635f779-0d66-4355-884f-8c30e1d2e3ba",
+   "hentet": "2026-11-25T14:41:29.656Z",
    "titel": "Opstart af budgetønsker til byrådets budget 2028",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Følgende budgetposter blev drøftet:\n- \"Unglederpris\" / Gazellepris\n- Topmøde for foreninger\n\nAfbud: Peter Munch Jørgensen, Sabine Skou Gøtterup\n\nIndhold"
+    },
     {
      "titel": "Resumé",
      "tekst": "Søren Sjales Jensen har ønsket at få et punkt på dagsorden \"Opstart af budgetønsker til\nbyrådets budget 2028\"."
@@ -15544,15 +15596,15 @@
    "kommune": "Ringsted",
    "udvalg": "Folkeoplysningsrådet",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=0f3b3761-a68c-4dc4-a151-145da9b22b57",
-   "hentet": "2026-11-19T13:28:34.039Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=4635f779-0d66-4355-884f-8c30e1d2e3ba",
+   "hentet": "2026-11-25T14:41:29.656Z",
    "titel": "Orientering",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\nOrientering fra\n- formanden\n- øvrige medlemmer\n- administrationen"
+     "titel": "Beslutning",
+     "tekst": "Orientering fra\n- formanden\n- øvrige medlemmer\n- administraitonen\n\nAfbud: Peter Munch Jørgensen, Sabine Skou Gøtterup\n\nIndhold\nOrientering fra\n- formanden\n- øvrige medlemmer\n- administrationen"
     }
    ],
    "bilag": []
@@ -15764,12 +15816,17 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "ringsted-2026-11-25-aeldreraadet-2": {
@@ -15777,15 +15834,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Præsentation af Ortved",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nÆldrerådet præsenteres for Ortved Plejecenter, ligesom det politiske udvalg har fået\npræsentation og rundvisning.\nBilagt er dagsordenpunkt for udvalgets rundvisning."
+     "titel": "Beslutning",
+     "tekst": "Plejecenterleder, Heidi Granvig Dahl, præsenterede Plejecenter Ortved.\n\nIndhold\n\nÆldrerådet præsenteres for Ortved Plejecenter, ligesom det politiske udvalg har fået\npræsentation og rundvisning.\nBilagt er dagsordenpunkt for udvalgets rundvisning."
     }
    ],
    "bilag": []
@@ -15795,12 +15852,17 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Referat fra sidste møde",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "ringsted-2026-11-25-aeldreraadet-4": {
@@ -15808,15 +15870,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Opfølgning siden seneste møde",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nSagsbehandlingsfrister på det sociale område for 2027 anbefales godkendt overfor\nByrådet"
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning.\n\nIndhold\n\nSagsbehandlingsfrister på det sociale område for 2027 anbefales godkendt overfor\nByrådet"
     }
    ],
    "bilag": []
@@ -15826,15 +15888,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Opfølgning på møde med borgmesteren",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nÆldrerådet havde møde med borgmesteren den 28. oktober 2026.\nSom opfølgning har sekretariatet udarbejdet forslag til justerede vedtægter (bilagt) med\nfølgende ændringer:\nNavneskifte fra Ældreråd til Seniorråd\nIndstiftelse af Seniorpris\nDer lægges op til at Ældrerådet godkender justerede vedtægter med henblik på efterfølgende\nbehandling i Byrådet. Formandskabet præsenterer udkast til henvendelse til Byrådet på\nmødet.\nDer lægges op til, at Ældrerådet inviterer de relevante fagcenterchefer til fire temamøder i 2027\nfor at drøfte og kvalificere Ældrerådets fire visioner og principper for høring af Ældrerådet."
+     "titel": "Beslutning",
+     "tekst": "Ældrerådet godkendte udkast til justerede vedtægter samt det rundsendte uddybende\nnotat om indstiftelse af seniorpris.\nÆldrerådet godkendte, at relevante fagcenterchefer inviteres til at deltage i ordinære\nÆldrerådsmøder i første halvår 2027. Disse møder udvides med en time, så de starter kl.\n\nIndhold\n\nÆldrerådet havde møde med borgmesteren den 28. oktober 2026.\nSom opfølgning har sekretariatet udarbejdet forslag til justerede vedtægter (bilagt) med\nfølgende ændringer:\nNavneskifte fra Ældreråd til Seniorråd\nIndstiftelse af Seniorpris\nDer lægges op til at Ældrerådet godkender justerede vedtægter med henblik på efterfølgende\nbehandling i Byrådet. Formandskabet præsenterer udkast til henvendelse til Byrådet på\nmødet.\nDer lægges op til, at Ældrerådet inviterer de relevante fagcenterchefer til fire temamøder i 2027\nfor at drøfte og kvalificere Ældrerådets fire visioner og principper for høring af Ældrerådet."
     }
    ],
    "bilag": []
@@ -15844,15 +15906,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Meddelelser fra administrationen",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nStatus på plejecenterledelsen\nÆldrerådets budget for 2027 er uændret fra 2026 (PL-fremskrives)."
+     "titel": "Beslutning",
+     "tekst": "Rasmus Gormsen Hansen orienterede om ny ledelsesstruktur for plejecentrene, budget\nfor 2027 og at Rasmus indtræder som medlem af Handicaprådet.\nÆldrerådet tog orienteringen til efterretning.\n\nIndhold\n\nStatus på plejecenterledelsen\nÆldrerådets budget for 2027 er uændret fra 2026 (PL-fremskrives)."
     }
    ],
    "bilag": []
@@ -15862,15 +15924,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Hørings- og orienteringspunkter fra udvalgene",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nFølgende sager er til høring i Ældrerådet:\nGodkendelse af udlejningskriterier i seniorbofællesskabet Bataljonen (genoptaget) (Frist\ner mandag morgen den 30/11)\nFølgende sager er til orientering i Ældrerådet:\nBeslutning om at højne madkvaliteten (genoptaget)\nBeslutning om kommunal garantistillelse og lånoptag Andelsboligforeningen af 1941 afd.\n32 (Genoptaget)\nOrientering om parkeringsforhold for hjemmeplejen."
+     "titel": "Beslutning",
+     "tekst": "Rasmus Gormsen Hansen præsenterede sagerne.\nÆldrerådet godkendte det rundsendte høringssvar vedrørende udlejningskriterier i\nseniorbofællesskabet Bataljonen.\nVedrørende madkvalitet udtrykte Ældrerådet opbakning til udvalgets beslutning om model\n2a og ønske om at et-to medlemmer af Ældrerådet udpeges til brugerpanelet. Jeanne\nBlum og Jette Nøddebo Dam blev prioriteret til arbejdet.\nVedrørende sagen om kommunal garantistillelse og låneoptag udtrykte Ældrerådet\nbekymring over, at Andelsboligforeningen af 1941 ikke har reageret rettidigt med store\nkonsekvenser for beboere og kommunens udgifter.\nSagerne blev herefter taget til efterretning.\n\nIndhold\n\nFølgende sager er til høring i Ældrerådet:\nGodkendelse af udlejningskriterier i seniorbofællesskabet Bataljonen (genoptaget) (Frist\ner mandag morgen den 30/11)\nFølgende sager er til orientering i Ældrerådet:\nBeslutning om at højne madkvaliteten (genoptaget)\nBeslutning om kommunal garantistillelse og lånoptag Andelsboligforeningen af 1941 afd.\n32 (Genoptaget)\nOrientering om parkeringsforhold for hjemmeplejen."
     }
    ],
    "bilag": []
@@ -15880,15 +15942,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Danske Ældreråd",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nOrientering v. Jan Larsen"
+     "titel": "Beslutning",
+     "tekst": "Jan Larsen orienterede om kommende møde og aktiviteter. Formandskabet deltager i\nmøde den 25. januar 2027.\n\nIndhold\n\nOrientering v. Jan Larsen"
     }
    ],
    "bilag": []
@@ -15898,15 +15960,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Netværk omkring sundhedsråd",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nOrientering v. Birgit Stage og Jan Larsen"
+     "titel": "Beslutning",
+     "tekst": "Birgit Stage orienterede om kommende møde i netværket.\n\nIndhold\n\nOrientering v. Birgit Stage og Jan Larsen"
     }
    ],
    "bilag": []
@@ -15916,15 +15978,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Meddelelser fra formanden",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nOrientering v. Birgit Stage, herunder:\n- Fotosession med borgmester og ældrerådsformand\n- Forberedelse af formandskabets deltagelse på møde i Ældre-, Social- og\nSundhedsudvalget den 14. december 2026"
+     "titel": "Beslutning",
+     "tekst": "Birgit Stage orienterede og Ældrerådet drøftede formandskabets deltagelse på møde i\nÆldre-, Social- og Sundhedsudvalget den 14. december 2026.\n\nIndhold\n\nOrientering v. Birgit Stage, herunder:\n- Fotosession med borgmester og ældrerådsformand\n- Forberedelse af formandskabets deltagelse på møde i Ældre-, Social- og\nSundhedsudvalget den 14. december 2026"
     }
    ],
    "bilag": []
@@ -15934,15 +15996,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Fastlæggelse af næste møde",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold\n\nNæste møde afholdes den 21. december 2026 kl. 9.00-11.00 med efterfølgende gensidig\ndrøftelse med borgmesteren og udvalgsformand inklusiv julefrokost.\nFølgende punkter planlægges på dagsorden:\nFastlæggelse af temamøder i 2027\nSeniordag 10. februar 2027 (2026).\nÆldrerådet kan efterspørge emner og spørgsmål til drøftelse på mødet med borgmesteren og\nudvalgsformanden."
+     "titel": "Beslutning",
+     "tekst": "Ældrerådet efterspurgte følgende emner til drøftelse med borgmesteren:\nSundhedsreform og arbejdet i Sundhedsrådet\nNavneskifte til Seniorråd, indstiftelse af Seniorpris og fokus på ikke plejekrævende seniorer\nStatus for arbejdet med attraktive boliger til seniorer.\n\nÆldrerådet drøftede mulighed for at afholde et temamøde på Hyldegaarden i 2027 og\nmuligheder for at synliggøre tilbud for seniorer og ældre.\n\nIndhold\n\nNæste møde afholdes den 21. december 2026 kl. 9.00-11.00 med efterfølgende gensidig\ndrøftelse med borgmesteren og udvalgsformand inklusiv julefrokost.\nFølgende punkter planlægges på dagsorden:\nFastlæggelse af temamøder i 2027\nSeniordag 10. februar 2027 (2026).\nÆldrerådet kan efterspørge emner og spørgsmål til drøftelse på mødet med borgmesteren og\nudvalgsformanden."
     }
    ],
    "bilag": []
@@ -15952,15 +16014,15 @@
    "kommune": "Ringsted",
    "udvalg": "Ældrerådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.ringsted.dk/vis?id=d44ce029-25c8-4536-9648-57c35d8003ad",
-   "hentet": "2026-11-20T23:20:38.108Z",
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=fd2e076a-d081-4882-b784-21459a3732de",
+   "hentet": "2026-11-25T14:41:20.434Z",
    "titel": "Evt",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Indhold"
+     "titel": "Beslutning",
+     "tekst": "Intet.\n\nIndhold"
     }
    ],
    "bilag": []
@@ -16468,6 +16530,993 @@
     }
    ],
    "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-1": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-1",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indhold"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-2": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-2",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Orientering om Digitaliseringspolitik og Digitaliseringsstrategi - årlig opfølgning 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Sagen indeholder den årlige status på arbejdet med Digitaliseringspolitik 2024-2028 samt\ntilhørende Digitaliseringsstrategi. I år er fokus på ny gevinstmodel, samt det planlagte arbejde\nmed ledergruppen i forhold til at indfri forventningerne i budget 2027, såvel som de politisk\nfastsatte målsætninger i politikken.\nStabschef Marie Gottlieb Danneskiold-Samsøe deltager under behandlingen af punktet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, orienteringen tages til efterretning.\nSagsgang:\nBY\n\nØK\n\nx\n\nx\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Administrationen orienterer om status på arbejdet med digitaliseringspolitikken. Administrationen arbejder\nløbende med de politisk fastsatte målsætninger og fremlægger årligt en status på arbejdet. Sagen\nfremlægger en oversigt over igangværende og planlagte indsatser, der tilsammen løfter ind i de udvalgte\nstrategiske spor.\nDigitaliseringspolitik er vedlagt som Bilag 1\n\nDigitaliseringsstrategi er vedlagt som Bilag 2\nOpfølgning på status\nEn oversigt over igangværende, afsluttede og planlagte indsatser er vedlagt som Bilag 3. Oversigten er\nopdelt i forhold til politiske fokusområder og fordelt på fagcentre. Sagen giver hermed en oversigt over\nRingsted Kommunes indsatser i forhold til alle fokusområder i alle centre. De listede indsatser løfter\ntilsammen de politisk vedtagne ambitioner for digitaliseringsarbejdet:\nDet digitale førstevalg / Frihed og livskvalitet / Merværdi (serviceforbedring)\nØget effektivisering / Økonomisk råderum\nKlima og bæredygtighed\nBørn og Unges trivsel\n\nVed udgangen af 2026 er der 91 igangværende indsatser og 33 afsluttede fordelt på alle\nindsatsområder med en hovedvægt på økonomisk råderum. På alle områder er\ndigitaliseringsarbejdet i gang og aktivitetsniveauet er højt.\nLedelse af Digitaliseringsindsatsen\nI Ringsted Kommunes budget 2027 er vedtaget en række besparelser begrundet i\nforventninger til digitaliseringsarbejdet. Opfølgningen herpå kræver et ledelsesmæssigt fokus\npå digitaliseringsområdet i 2027 og overslagsårene. De igangværende digitaliseringsindsatser\ndækker de politiske intentioner bredt, men realiseringen af forventede gevinster kræver et\nfælles fokus på ledelsesopgaven og kontinuerlig opfølgning. Digitaliseringsområdet er\nkendetegnet ved at gevinster opnås som mange mikrogevinster, og det kræver dermed en\nledelsesmæssig indsats at gruppere gevinster for at opnå reelle besparelser.\nDet planlagte Lederforum i december 2026 for Ringsted Kommunes ca. 150 ledere vil\nomhandle \"Ledelse af digitalisering\". Der er er med programmet lagt op til at klæde\nledergruppen på til arbejdet med at indfri forventninger i budget 2027 såvel som arbejdet med\nde politisk vedtagne målsætninger.\nGevinstrealisering\nChefforum har i november 2026 drøftet en fælles operationel gevinstrealiseringsmodel for\nRingsted Kommune inspireret af KLs rammeværk for gevinstrealisering (Bilag 4).\nModellen lægger op til følgende gevinstområder:\n1. Økonomisk Råderum\n2. Kvalitet\n3. Service\n4. Medarbejdertrivsel\n5. Oplevet forbedring\n\nDer lægges op til at arbejde med en fastlagt gevinstkæde:\n\nModellen indeholder konkrete værktøjer og derudover lægges op til en organisering med en\ntydelig ansvarsfordeling og til en målrettet opfølgning på det samlede arbejde.\nUddannelse og kompetencer\nEn samlet ledelsesindsats vil kræve en uddannelse af den store ledergruppe. Det forventes\nderfor at ledergruppen i løbet af 2027 inviteres til undervisning vedr. digitalisering og\ngevinstrealisering.\nLicensproblematik\nEn del af de gevinster, som er knyttet til implementeringen af AI, kræver at både ledere og\nrelevante medarbejdere har licenser til et brugbart AI-værktøj, som kan benyttes sikkert med\nRingsted-data.\nAdministrationen lægger op til at knytte udgiften til udvidede licenser til konkrete AI-indsatser\nfor på den måde at sikre, at indkøbte licenser skaber den tilsigtede værdi. Besparelserne er\nallerede lagt ud på de enkelte centre/afdelinger, og det er herfra den enkelte afdelingsleder,\nsom skal arbejde med at sikre, at investering i licenser skaber værdi. Centralt fra støttes op\nmed en fælles model og værktøjer til overblik og beregninger.\n\nPolitisk handlerum\nSagen er til orientering."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer at arbejdet med digitalisering skrider planmæssigt frem, og at\nplanerne for arbejdet med gevinstrealisering i 2027 bør støtte organisationen i at indfri\nforventningerne til digitalisering i budget 2027 såvel som opnå de politisk fastsatte\nmålsætninger for området.\n\nInddragelse og høring\nForventningerne til arbejdet med digitaliseringsgevinster er behandlet i MED-systemet i\nforbindelse med budgetprocessen for budget 2027 og har i samme forløb været i høring.\nChefforum har drøftet den fælles gevinstmodel og herunder et fælles fokus på implementering i"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Alle afsatte puljemidler i 2025 og 2026 fordelt på de igangværende aktiviteter, og en ny\nansøgningsrunde til 2027 åbnes i dec. 2026.\nStatus på på Digitaliseringspuljen er vedlagt som Bilag 5"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-3": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-3",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Beslutning om informations- og tryghedspunkter i Ringsted Kommune",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Sagen forelægges med henblik på at godkende en proces for etableringen af faste\ninformationspunkter i Ringsted Kommune og rammerne for den videre planlægning af\ntryghedspunkter.\nInformationspunkter er faste, ubemandede steder, hvor borgerne kan få aktuel\nmyndighedsinformation under en krise. Tryghedspunkter er bemandede steder, der kan\naktiveres ved behov og tilbyde information og udvalgte basale funktioner.\nPunkterne skal styrke kommunens mulighed for at kommunikere med og understøtte borgerne\nved større hændelser, hvor almindelige digitale kommunikationskanaler er helt eller delvist ude\naf drift."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at administrationen går i dialog med lokalråd, kirker og andre relevante parter for at\nafdække den mest hensigtsmæssige placering af informationspunkter og\ntryghedspunkter,\n2. at administrationen fortsætter planlægningen af tryghedspunkter som en skalerbar\nkommunal beredskabskapacitet, og herunder indgår i dialog med Røde Kors Ringsted\nom frivillig bemanding af tryghedspunkterne.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\n\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det ændrede risiko- og trusselsbillede og samfundets afhængighed af strøm, telefoni og\ndigitale løsninger stiller øgede krav til robuste, alternative kommunikationsveje. Ved\nlængerevarende strømsvigt, nedbrud på tele- og mobilnettet, cyberhændelser eller andre\nstørre kriser kan kommunens hjemmeside, sociale medier og telefoni være utilgængelige. Der\ner derfor behov for fysiske steder, hvor borgerne kan få verificeret, opdateret og lokalt relevant\nmyndighedsinformation.\nRingsted Kommune arbejder sammen med de øvrige ejerkommuner bag Midt- og\nSydsjællands Brand og Redning (MSBR) på en fælles og genkendelig model. Arbejdet\nomfatter informationspunkter og tryghedspunkter. Alarmeringspunkter indgår ikke som en\nkommunal driftsopgave i denne sag. Kommunen kan efter en konkret vurdering stille en egnet\nlokation til rådighed for de ansvarlige myndigheder, fx Politi og lokale beredskaber, mens\nplanlægning og drift af egentlig alarmering skal ske med respekt for myndighedernes\nsektoransvar.\nInformationspunkter\nInformationspunkter er faste, ubemandede, fysiske informationssteder, som borgerne kan\norientere sig mod før, under og efter en krise. Punkterne supplerer kommunens almindelige\nkrisekommunikation og kan anvendes, når digitale kanaler ikke virker.\nDet foreslås, at administrationen går i dialog med lokalråd, kirker og andre relevante parter for\nat afdække den mest hensigtsmæssige placering af informationspunkterne. Administrationen\nhar set på muligheden for at placere punkterne ved alle kirker eller alle valgsteder, da de er\ngeografisk fordelt både i Ringsted by og landområderne og udgør kendte steder for borgerne.\nAndre lokationer er mulige. Der er vedhæftet en geografisk afbildning af fordelingen af\ninformationspunkter ved placering ved henholdsvis kirker eller valgsteder.\nInformationspunkterne forsynes med udendørs informationstavler, fx på kirkemur eller lignende\negnet sted. Tavlerne vil indeholde permanent basisinformation, fx om hvad informations- og\ntryghedspunkter er. Under en konkret hændelse skal tavlerne suppleres med aktuel\nmyndighedsinformation, anbefalinger til borgerne, oplysninger om situationen og information\nom eventuel åbning af tryghedspunkter.\nAdministrationen udarbejder et actioncard som bilag til niveau 1 beredskabsplanen, der\nfastlægger den interne, operative arbejdsgang. Når krisestaben er etableret, udarbejder\nKommunikation en kommunikationslinje til godkendelse hos krisestaben. Herefter distribuerer\nEjendomsstaben og Vej- og Ejendomscentret den godkendte information fysisk til tavlerne.\nArbejdsgangen gør det muligt at opdatere informationen analogt, hvis digitale\nkommunikationsmuligheder er utilgængelige.\nDer ses desuden på, om det er muligt at koble solceller på de vedtagne digitale\ninformationstavler, så disse også kan indgå som mulig kommunikationsvej i beredskabet.\n\nTryghedspunkter\nEt tryghedspunkt er en fysisk, bemandet lokation, som kan aktiveres ved en større eller\nlængerevarende hændelse. Her kan borgere modtage myndighedsinformation og, afhængigt af\nsituationen, få adgang til basale funktioner. Et tryghedspunkt er ikke permanent bemandet,\nmen etableres efter en konkret beslutning af kommunens krisestab. Der udestår pt. en konkret\ndefinition og vejledning af, hvad tryghedspunkter skal kunne fra Styrelsen for\nSamfundssikkerhed. Det fælleskommunale forum ønsker at gå videre med planlægningen\ntrods dette, og tilpasse vores model, når en eventuel vejledning eksisterer.\nDen videre planlægning skal omfatte udpegning af egnede lokationer og beskrivelse af et\nskalerbart serviceniveau. Ved valg af lokationer skal der blandt andet ses på geografisk\ndækning, adgangsforhold, fysisk kapacitet, mulighed for nødstrøm, vand, varme, sanitære\nforhold og robust kommunikation. Funktion og bemanding tilpasses hændelsens karakter,\nudbredelse og forventede varighed.\nKommunen har ansvaret for ledelse og myndighedsfunktion på kommunale tryghedspunkter.\nFrivillige organisationer, herunder Røde Kors, kan bistå med konkrete drifts- og\nstøttefunktioner, men overtager ikke myndighedsansvaret. Administrationen har en\nigangværende dialog om muligheden for en samarbejdsaftale med Røde Kors Ringsted om\nkonkrete ydelser til bemanding af tryghedspunkter, fx psykosocial støtte samt uddeling af mad,\nvand og tæpper.\nFælleskommunalt arbejde og videre proces\nDet fælleskommunale arbejde skal sikre en enkel og genkendelig struktur på tværs af\nkommunegrænserne. Den enkelte kommune har fortsat ansvaret for egne lokationer,\nmedarbejdere og beredskabsplanlægning. Modellen skal kunne justeres, når der foreligger nye\nnationale anbefalinger eller krav.\nDet foreslås, at Ringsted Kommune etablerer informationspunkterne og indarbejder den\noperative arbejdsgang i kommunens beredskabsplanlægning. Administrationen fortsætter\nsamtidig arbejdet med en konkret model for tryghedspunkter, herunder lokationer,\nminimumsfunktioner, bemanding, materiel, kommunikation og eventuel bistand fra frivillige\naktører.\nDer er i prioriteringen af midler fra regeringens akutpakke på beredskabsområdet afsat 1,0 mio. kr. til\netablering af informations- og tryghedspunkter i de fire ejerkommuner i MSBR.\nRingsted Kommunes udgifter til informationspunkterne omfatter indkøb og opsætning af\ninformationstavler samt eventuel skiltning og mærkning. Den konkrete udgift afhænger af det endelige\nantal og placeringen af informationspunkterne.\nSom prisreference er en udendørs informationstavle med plads til 15 A4-ark oplyst til 2.648 kr. ekskl.\nmoms pr. stk. Hertil kommer udgifter til montering og eventuel fælles grafisk udformning.\nUdgifterne til etablering af tryghedspunkter kan endnu ikke opgøres. De vil afhænge af valg af lokationer\nsamt det fastlagte niveau for funktioner, bemanding, materiel, kommunikation og eventuel bistand fra frivillige\naktører. Økonomi og finansiering forelægges til politisk stillingtagen, når den videre planlægning er\n\nkonkretiseret.\n\nPolitisk handlerum\nByrådet kan godkende den foreslåede proces for informationspunkter, hvor der indledes dialog\nmed fx lokalråd og kirker om placering, og lade administrationen arbejde videre med en\nskalerbar model for tryghedspunkter. Byrådet kan også give forslag til lokationer for\ninformationspunkterne, eller fastsætte andre politiske rammer for den videre planlægning af\ntryghedspunkter."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at faste informationspunkter vil styrke Ringsted Kommunes evne til\nat opretholde borgerrettet krisekommunikation, når almindelige digitale kanaler ikke kan\nanvendes. Placering ved kirker giver en bred geografisk dækning og tager udgangspunkt i\nkendte lokale steder, men det ønskes at inddrage lokalråd og kirker og andre relevante aktører\ni den endelige placering af punkterne. Løsningen forudsætter klare aftaler med de enkelte\nbygningsejere og en robust intern procedure for udarbejdelse, fysisk distribution og løbende\nudskiftning af information.\nAdministrationen vurderer desuden, at tryghedspunkter bør planlægges som en skalerbar\nberedskabskapacitet frem for som et fast serviceniveau. Det giver mulighed for at tilpasse\nbemanding og funktion til den konkrete hændelse. Planlægningen bør ske i sammenhæng med\nnødstrøm, vandforsyning, robust kommunikation og aftaler med relevante frivillige aktører.\n\nInddragelse og høring\nArbejdet er koordineret med MSBR og de øvrige ejerkommuner. Der er desuden dialog om\nrelevante myndigheders roller og om mulighed for bistand fra frivillige aktører. Ved etablering af\ninformationspunkter skal der indgås aftale med de relevante bygningsejere om placering,\nadgang og vedligeholdelse af informationstavlerne."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser. Udgifterne til Informations- og\ntryghedspunkter forventes dækkes af midler fra regeringens akutpakke på beredskabsområdet."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-4": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-4",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Beslutning vedr. nødgeneratorer - beredskabspulje 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Byrådet besluttede den 9. marts 2026 at igangsætte en række beredskabstiltag finansieret af\nBeredskabspuljen 2026. Beslutningen omfattede blandt andet indkøb af nødgeneratorer samt\nafsættelse af 1 mio. kr. til en batteriløsning på Ortved Plejecenter.\nDen efterfølgende tekniske afdækning har vist, at etablering af nødgeneratorer er væsentligt\nmere omfattende og omkostningstung end oprindeligt forudsat. Det skyldes navnlig behovet for\nombygning af eltavler og øvrige elinstallationer.\nI sagen lægges dermed op til at omfordele de tidligere afsatte midler til batteriløsningen på\nOrtved Plejecenter samt de endnu ufordelte midler på beredskabspuljen til køb og etablering af\nnødgeneratorer."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at Byrådet godkender, at der arbejdes videre med indkøb og etablering af\nnødgeneratorer på de seks udvalgte kommunale lokationer,\n2. at de tidligere afsatte 1.000.000 kr. til en batteriløsning på Ortved Plejecenter omfordeles\ntil indkøb og etablering af nødgeneratorer,\n3. at der inden for Beredskabspuljen 2026 reserveres 880.000 kr. til toiletberedskab,\nuddannelse i SINE-radioer, informations- og tryghedspunkter (inkl. buffer til\nelinstallationer), samt buffer til løbende udgifter, fx systemlicenser og medlemskab af\nvirksomhedsberedskabet.\n4. at det resterende disponible beløb på op til ca. 4.221.807 kr. anvendes til indkøb og\netablering af nødgeneratorer.\nSagsgang:\nBY\n\nØK\n\nx\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet har i budget 2026 afsat en pulje til håndtering af beredskabssituationen. Byrådet\nbesluttede den 9. marts 2026 at igangsætte en række tiltag finansieret af puljen.\nSom en del af beslutningen blev der afsat 880.000 kr. til fem faste nødgeneratorer og én mobil\ngenerator. Der blev desuden afsat 1.000.000 kr. til en batteriløsning på Ortved Plejecenter.\nEfter Byrådets beslutning har administrationen arbejdet videre med at konkretisere\nløsningerne. Den tekniske afdækning har vist, at etableringen af nødgeneratorer er væsentligt\nmere omfattende og omkostningstung end oprindeligt forudsat. Det skyldes navnlig, at de\neksisterende eltavler og elinstallationer på flere af lokationerne skal ombygges, før\nnødgeneratorerne kan tilsluttes. Udgifterne til elarbejdet har vist sig væsentligt højere end først\nestimeret.\nAfdækningen har samtidig vist, at en mindre generator ikke nødvendigvis medfører en\ntilsvarende reduktion i den samlede udgift, fordi en væsentlig del af udgiften vedrører\nombygning af elinstallationerne. Administrationen har på den baggrund estimeret en\ngennemsnitlig udgift på ca. 700.000 kr. pr. lokation og ca. 4,2 mio. kr. samlet. Estimatet er\nforeløbigt, da de enkelte lokationer har forskellige tekniske forhold.\nDer arbejdes med nødstrømsløsninger på følgende syv lokationer:\n1. Solbakken Plejecenter\n2. Nebs Møllegård\n3. Ortved Plejecenter\n4. Regnbuen (som alternativ lokation til patienter der fx masseudskrives fra sygehus)\n5. Bengerds Huse\n6. Knud Lavard Centeret (er ikke tilstrækkeligt dækket af nødstrøm pt.)\nPå Ortved Plejecenter er arbejdet længst fremme. Her er generatorløsningen foreløbigt\nestimeret til ca. 685.000 kr. ekskl. skur og eventuel afdækning.\nPå de øvrige lokationer skal generatorerne understøtte de funktioner, som er nødvendige at\nopretholde ved længerevarende strømafbrydelser. Løsningerne skal derfor dimensioneres efter\nde konkrete behov og tekniske forhold på den enkelte lokation.\nAdministrationen har valgt ikke at indstille opsætning af nødgenerator på Madhuset, idet der er\nindkøbt frysetørret mad til brug under en krise, som kan anvendes lokalt ved at opvarme vand.\n\nDet vil betyde, at der under en længerevarende strømafbrydelse kan være risiko for, at\nopbevaret, kølet og nedfrosset mad efterfølgende skal smides ud.\nDer var oprindeligt afsat 1.000.000 kr. til etablering af en batteriløsning på Ortved Plejecenter.\nDet har efterfølgende vist sig at batteriløsninger ikke kan opsættes sammen med\nnødgeneratorer, der kun startes op ved nedbrud. Derudover kan batteriløsninger sammen med\nfremtidige solcelleanlæg ikke benyttes i beredskabsøjemed, da batterikapaciteten fortsat ikke\ner stor nok til at levere nødstrøm i tre dage på overskyede dage. Dermed kan batteriløsninger\nikke understøtte beredskab.\nDermed foreslås det, at batterianskffelsen ikke finansieres af beredskabpuljen, og at de afsatte\n1.000.000 kr. i stedet omfordeles til indkøb og etablering af nødgeneratorer.\nForudsat at projektering og myndighedsbehandling kan gennemføres som planlagt, vurderes\ndet, at etableringen af generatorerne kan være afsluttet omkring foråret 2027.\n\nPolitisk handlerum\nByrådet kan beslutte at godkende den foreslåede omfordeling og anvende det resterende\ndisponible beløb i Beredskabspuljen til nødgeneratorer og de tre reserverede\nberedskabsindsatser.\nByrådet kan alternativt beslutte at:\nprioritere færre lokationer,\nændre rækkefølgen for etablering af nødgeneratorer,\nfastholde midlerne til batteriløsningen på Ortved Plejecenter,\nændre de foreslåede reservationer til toiletberedskab, SINE-uddannelse samt informations- og\ntryghedspunkter eller\nprioritere nødstrøm til Madhuset for at undgå madspild hvis fryserne ikke kan køre uden strøm. Dette\nvil betyde, at der ikke er finansiering til klargøring af eltavler på tryghedspunkter i Beredskabspuljen.\n\nHvis det samlede tilbud på nødgeneratorerne overstiger den disponible økonomiske ramme,\nkan administrationen forelægge sagen på ny med forslag til prioritering af lokationerne eller\nanden finansiering."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at omprioritering af midler til etablering af nødstrøm på de udvalgte\nkommunale lokationer vil styrke kommunens evne til at opretholde kritiske funktioner ved\nlængerevarende strømafbrydelser.\nSamtidig vurderes det hensigtsmæssigt at reservere begrænsede beløb til toiletberedskab,\nuddannelse i SINE-radioer samt informations- og tryghedspunkter. Det sikrer, at der fortsat kan\narbejdes med andre nødvendige dele af kommunens beredskab. Der er desuden indsat en\nbuffer til løbende udgifter til f.eks. IT-licenser og medlemskab af Virksomhedsberedskabet.\n\nDen øgede omkostning til nødgeneratorerne betyder, at der ikke samtidig kan reserveres\nmidler fra Beredskabspuljen til eventuel klargøring af betondækningsgrave. Hvis der senere\nopstår behov for sådanne arbejder, vil finansieringen derfor skulle afklares særskilt.\nBeredskabspuljen har et samlet korrigeret budget på 6.026.000 kr. Det registrerede forbrug udgør pr.\nnovember 2026 924.192,64 kr. inkl. moms, og det disponible restbudget udgør dermed ca. 5.101.807 kr.\nDet foreslås, at restbudgettet disponeres således:\nFormål\n\nBeløb\n\nToiletberedskab\n\nUddannelse i SINE-radioer\n\nInformations- og tryghedspunkter\n\nBuffer til fx systemlicenser og medlemsskaber\n\nSamlet reservation til øvrige beredskabsindsatser\n\nDisponibelt til nødgeneratorer\n\nDe 4.221.807 kr. til nødgeneratorer inkluderer den tidligere afsatte 1 mio. kr. til batteriløsningen, som foreslås\nomfordelt til generatorerne.\n\nDet aktuelle foreløbige estimat for generatorløsningerne er ca. 4,2 mio. kr. De endelige udgifter\nafhænger af projekteringen, de tekniske forhold på de enkelte lokationer og resultatet af\nindhentning af øvrige tilbud.\nMed et disponibelt beløb på ca. 4.221.807 kr. er der en foreløbig margen på ca. 21.807 kr. i\nforhold til estimatet på 4,9 mio. kr. Margenen er begrænset og kan blandt andet blive påvirket\naf eventuelle udgifter til skure, afdækning, myndighedskrav og uforudsete ændringer af\nelinstallationer.\n\nInddragelse og høring\nIkke relevant."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser i 2026 og 2027.\nGodkendelse af indstillingen vil imidlertid medføre årlige driftsudgifter til vedligehold af\nnødgeneratorer fra 2028 og frem. Det er derfor en forudsætning for godkendelse af\nanskaffelsen, at driftsmidler indtænkes i det tekniske budget fra 2028 og overslagsårene.\nDriftsudgifterne er pt. estimeret som følger:\nOmkostningstype\n\nÅrlig udgift\n\nÅrligt hovedservice af nødgeneratorer\n\nMåned service og driftstest\n\nService af tavler og RCD-test\n\nEksternt oplag af diesel\n\nTotal årlig merudgift\n\nDa etableringen af generatorerne forventes at strække sig ind i 2027, vil det være nødvendigt at overføre de\nrelevante ubrugte puljemidler i overførselssagen fra 2026 til 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-5": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-5",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Evaluering af budgetprocessen for 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I denne sag lægges op til evaluering af budgetprocessen for budget 2027 i Økonomiudvalget,\njf. vedlagte tidsplan."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at Økonomiudvalget evaluerer budgetprocessen for budget 2027.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I henhold til Styrelsesloven gennemfører Ringsted Kommune hvert år en budgetproces med\nhenblik på at fastlægge kommunens budget for næste år.\nBudgetprocessen involverer alle dele af organisationen og kan inddeles i en række leverancer,\nsom kan gøres til genstand for drøftelse og evaluering. Nedenfor er skitseret udvalgte\nleverancer.\nUdarbejdelse af ændringsforslag\nTil udarbejdelse af ændringsforslag blev der ved årets start fastlagt en målsætning for en\nfinansieringspulje på i alt 55 mio. kr. hvoraf 9,3 mio. kr. skulle findes på det specialiserede\n\nområde, 15 mio. kr. skulle findes på anlægspuljer, 20 mio. kr. skulle findes på\ntværgående, strukturelle og organisatoriske forslag og 10,7 mio. kr. skulle findes på\nalmenområdet.\nPartierne havde mulighed for at indsende ændringsforslag til budgettet, som\nefterfølgende blev kvalificeret og indgik i budgetmaterialet til høring.\nHøring og inddragelse\nI forbindelse med udarbejdelsen af ændringsforslag blev afholdt dialogmøder mellem\nfagudvalg og Center- og Stabs Med-udvalg (CMU´er og SMU´er)\nÆndringsforslag til budgettet blev sendt i offentlig høring i perioden 31. august til 13.\nseptember.\nI forbindelse med høring af ændringsforslagene blev afholdt borgermøde i Videns- og\nDemokratihuset tirsdag d. 8. september. Herudover var der dialog med Hoved MEDudvalget (HMU).\nBudgetforhandlinger\nDen 6. september blev afholdt heldags budgetforhandlingsseminar.\nDe følgende to uger mødtes gruppeformændene til forhandlinger på to møder afsluttende\nsøndag den 21. september.\nVedlagt sagen er tidsplan for budgetprocessen.\n\nPolitisk handlerum\nUdvalget kan give input til, hvilke elementer i budgetprocessen for 2027 de ønsker ændret i processen for\nbudget 2028."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at budgetprocessen har sikret et budget i balance, gennemsigtighed\nomkring ændringsforslag og har sikret mulighed for inddragelse af personale, borgere og andre\ninteressenter. Det vurderes at den fremadrettede budgetproces med indarbejdelse af\nbemærkningerne fra ledelsen, HMU og økonomiudvalget vil danne grundlag for en god proces\nfor budget 2028.\n\nInddragelse og høring\nChefforum og direktion er blevet inddraget i forhold til evaluering af budgetprocessen og havde\nfølgende bemærkninger med særlig relevans for samspillet mellem Byråd og administration:.\nTydeligere rammer for håndtering af anlægsønsker\nDer ønskes klarhed over, hvilke anlægsønsker der fortsat er aktuelle efter vedtagelsen af\ndet langsigtede anlægsprogram, samt et samlet og let tilgængeligt overblik over\nanlægsønsker og status på realiseringen af vedtagne projekter.\n\nKlare rammer for MED-inddragelse\nDet skal tydeliggøres, hvornår og hvordan MED-udvalgene inddrages i budgetprocessen,\nsamt hvem der har ansvar for de enkelte opgaver.\nDirektionen peger på, at budgetforslag bør indeholde MED-systemets vurdering af\nkonsekvenserne for personaleforhold og arbejdsmiljø.\nPrioritering af budgetforslag er en politisk opgave og ikke en opgave for MED-systemet.\nHMU er blevet inddraget i forhold til evaluering af budgetprocessen og har følgende\nopmærksomhedspunkter til budgetprocessen:\nat MED ikke er et høringsorgan, men at medarbejdernes perspektiver skal gå videre til\npolitisk niveau ifm. budgetmaterialet.\nat det er en mulighed at reservere HMU til nogle tidspunkter undervejs i\nbudgetprocessen, hvis der opstår behov for hurtig kvalificering af nye eller ændrede\nbudgetforslag.\nat der sikres god MED-inddragelse ifm. de tværgående, organisatoriske budgetforslag.\nat tidsplanen sikrer mulighed for tilstrækkelig MED-inddragelse og tydeligere\nkommunikation omkring deadlines i tidsplanen.\nønske om mere tid sammen i forbindelse med dialogmødet imellem HMU og Byrådet\nat der er fokus på forberedelsesdelen fra HMUs side og strukturen omkring mødet. Det\nopleves som et vigtigt rum, men med plads til forbedring. Obs på ledelsessidens\ninddragelse i forberedelsesdelen samt rolle på mødet - eller klar rammesætning om\ndette. I forbindelse med at den besluttede tidsplan for budget 2028 drøftes i HMU, aftales\nnærmere ift. planlægning af dialogmødet mellem HMU og Byrådet i 2028.\nPositivt med mindre gruppedrøftelser, hvor man får talt med byrådsmedlemmerne"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "Politisk tidsplan for budget 2027",
+     "url": null
+    }
+   ]
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-6": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-6",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Godkendelse af kasse- og regnskabsregulativ",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I denne sag skal Byrådet tage stilling til revideret Kasse- og regnskabsregulativ inklusive bilag.\nKasse og regnskabsregulativet opdateres mindst én gang i hver Byrådsperiode."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at revideret Kasse- og regnskabsregulativ godkendes\n2. at de nuværende bilag ændres til forretningsgange og dermed kan besluttes\nadministrativt.\n3. at der etableres en anlægsbevilling til Byudviklingsfonden under Økonomiudvalget, med\nstartbevilling på fondens opgjorte saldo og at denne finansieres af kassen. Bevillingen til\nByudviklingsfondens kan maksimalt udgøre en negativ saldo på 25 mio. kr. og\nByudviklingsfondens saldo overføres ved regnskabsårets afslutning til det efterfølgende\når.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kasse- og Regnskabsregulativet er Ringsteds Kommunes regelsæt for økonomistyring og\n\nregnskabsvæsen. Regulativet har til formål at sikre:\nTilstrækkelige værktøjer til styring af kommunens økonomi\nEn korrekt administration af kommunens kasse- og regnskabsvæsen\nEn præcisering af budgetansvar og ledelsesansvar\nEt internt kontrolniveau, der tager udgangspunkt i en afvejning mellem væsentlighed og\nrisiko.\nSikre fælles regnskabsprocesser på tværs af kommunen\nDen 8. juni 2026 godkendte Byrådet ændringer til kommunens økonomiske politik. I den\nforbindelse blev det besluttet at flytte følgende elementer fra den økonomiske politik til Kasseog regnskabsregulativet.\nDefinition af tekniske ændringer\nByudviklingsfond\nAnlægsfond\nGrundkapital til almene boliger\nOverførselsregler i forbindelse med regnskabsafslutning\nKasse og regnskabsregulativet består af tre niveauer:\nFørste niveau er selve kasse og regnskabsregulativet, som besluttes af Byrådet.\nAndet niveau er bilag til kasse og regnskabsregulativet, som besluttes af\nØkonomiudvalget.\nTredje niveau er forretningsgange som besluttes af administrationen.\nDet foreslås med denne sag at ændre de fleste af de nuværende bilag til forretningsgange, da\nde beskriver administrative forretningsgange for udførelse af økonomistyring i kommunen.\nFølgende bilag ændres til forretningsgange:\nBilag nuværende regulativ\n\nForretningsgang/notat/oversigt\n\nOpbevaring og af værdier tilhørende andre\n\n1. Forretningsgang for opbevaring og af\nværdier tilhørende andre\n\nRetningslinjer for opkrævning\n\n2. Forretningsgang for opkrævning\n\nKontant- og Forskudskonti\n\n3. Forretningsgang for kontantkasser og\nBetalingskort\n\nLedelsestilsyn\n\n4. Forretningsgang for ledelsestilsyn\n\nRegler for afstemning\n\n5. Forretningsgang for afstemning\n\nRegistrering af anlægsaktiver\n\n6. Forretningsgang for registrering af\nanlægsaktiver\n\nBeskrivelse af forretningsgange og kontroller\nfor lønsystemet\n\n7. Forretningsgang og kontroller for\nlønsystemet\n\nNotat – det retlige grundlag for modtagelse af\ngaver\n\n8. Notat – det retlige grundlag for\nmodtagelse af gaver\n\nForsikringsoversigt inkl. dækninger\n\n9. Forsikringsoversigt inkl. dækninger\n\nDer resterer således kun ét bilag som hedder bilagsbehandling.\nVedr. Byudviklingsfonden ønskes det samtidig at ændre fonden fra en kassefinansieret til\nbevillingsstyret. Hvilket i praksis vil sige at fra 2026 registreres Byudviklingsfondens saldo som\net særligt anlægsprojekt under Økonomiudvalget med fondens aktuelle beholdning som\nstartbudget.\nØkonomisk politik betragtes ikke længere som et bilag til kasse og regnskabsregulativet, men\nsom et selvstændigt dokument, da politikker betragtes som værende overordnet til regulativer.\nAfsnittet finansiel styring udgår af kasse og regnskabsregulativet, da det er beskrevet i den\nfinansielle strategi.\n\nI denne sag skal Byrådet behandle det korrigerede Kasse- og regnskabsregulativ med\novenstående ændringer. Herudover er der foretaget redaktionelle ændringer, præciseringer og\nopdateringer. Som bilag vedlægges det tidligere Kasse- og Regnskabsregulativ med markering\naf foreslåede ændringer samt en udgave der er tilrettet. Derudover vedlægges alle bilag med\nrettelsesmarkeringer hvor der er foretaget ændringer.\nDet opdaterede regulativ træder i kraft, når Byrådets godkendelse er oversendt til revisionen,\nforudsat at revisionen ikke har bemærkninger.\n\nPolitisk handlerum\nDet er muligt at tilpasse alle delene af Kasse- og regnskabsregulativet, så længe det holder sig\ninden for lovgivningens rammer."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Det vurderes, at de foreslåede ændringer af Kasse- og regnskabsregulativet er i\noverensstemmelse med de intentioner der var med overførsel af afsnit fra økonomisk politik til\nKasse- og regnskabsregulativet. Det vurderes desuden, at regulativet med de redaktionelle\nændringer, præciseringer og opdateringer er bragt i overensstemmelse med gældende\nadministrativ praksis og de betegnelser, der anvendes i kommunen. Det bidrager til et mere\ntidssvarende og tydeligt grundlag for den daglige økonomistyring.\nDet vurderes at der ikke er behov for at Økonomiudvalget fastlægger rammer for\nøkonomistyringen i bilag, da det er dækket ind af selve regulativet og administrationens\nforretningsgange.\n\nInddragelse og høring\nIngen"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Byudviklingsfonden foreslås ændret fra saldoopgørelse til bevillingsstyring. Denne finansieres\naf kassen. Hidtil har den været opgjort via saldoopgørelse tilbage fra fondens opstart og dette\nhar også været finansieret af kassen."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-7": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-7",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Godkendelse af tidsplan for budget 2028",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I henhold til lov om kommunernes styrelse skal kommunen hvert år udarbejde et årsbudget og\nflerårige budgetoverslag.\nI denne sag forelægges to forslag til tids- og procesplan for Budget 2028-2031 til politisk\nbehandling."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at forslag til tids- og procesplan for budget 2028-2031 model\nA godkendes.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der fremlægges to forslag til tids- og procesplan for Budget 2028-2031 (bilag 1). Begge tager\nudgangspunkt i en étårig budgetproces, da konsekvenserne af den kommende\nudligningsreform for Ringsted Kommunes økonomiske rammer endnu er uafklarede.\nUsikkerheden kan vanskeliggøre indgåelsen af toårige budgetforlig, da de økonomiske\nforudsætninger kan ændre sig væsentligt.\nDen væsentligste forskel på de fremlagte modeller er, at model A viderefører den hidtidige\n\npraksis med et komprimeret forhandlingsforløb, mens model B med et ekstraordinært\nøkonomiudvalgsmøde giver mere tid til de politiske forhandlinger og mulighed for et opdateret\nbudgetgrundlag ved Byrådets 1. behandling.\nModel A – Videreførelse af hidtidig praksis\nModellen bygger i hovedtræk på sidste års tidsplan. Den politiske behandling sker på de\nordinære møder i Økonomiudvalget og Byrådet.\nØkonomiudvalgets møde til 1. behandlingen af budgettet ligger senere i 2027 end i 2026.\nDerfor er der ikke tid til at reservere en ekstra dag til budgetforhandlinger. Samtidig skal\nændringsforslag til budgetaftalen afleveres allerede dagen efter de sidste forhandlinger.\nModel B – Ekstraordinært økonomiudvalgsmøde og mere tid til budgetforhandlinger\nI modsætning til model A giver det ekstraordinære økonomiudvalgsmøde mere tid til de\npolitiske budgetforhandlinger.\nDer foreslås også et tidligere budgetseminar. Her får Byrådet et opdateret overblik over\nbudgettet. Det omfatter nye skøn for skatte-, tilskuds- og udligningsindtægter i overslagsårene,\npris- og lønskøn samt det endelige beløb fra lov- og cirkulæreprogrammet.\nBudgetseminaret holdes før Økonomiudvalgets behandling af det tekniske budget. Det starter\nmed et dialogmøde mellem Byrådet og HMU for at samle flere møder på én dag.\nDet ekstraordinære økonomiudvalgsmøde holdes også tidligere. Det betyder, at\nhøringssvarene kan indgå i Byrådets 1. behandling. Dermed får Byrådet et samlet og opdateret\nbudgetgrundlag til de politiske forhandlinger.\nTeknisk budget\nUdgangspunktet for budgetlægningen er det tekniske budget. I løbet af budgetprocessen\nkorrigeres det tekniske budget blandt andet for pris- og lønregulering, tekniske ændringer som\nfølge af økonomiaftalen mellem KL og regeringen samt en ny befolkningsprognose.\nDet tekniske budget udarbejdes med udgangspunkt i kommunens økonomiske politik.\nBudgetforslaget for 2028-2031 1. behandles af Byrådet den 13. september 2027 og\noversendes til byrådets 2. behandling den 11. oktober 2027.\nFagudvalgenes proces\nFagudvalgene udarbejder i foråret 2027 ændringsforslag til det tekniske budgetgrundlag.\nForslagene omfatter finansieringsforslag, driftsønsker, anlægsforslag og investeringsforslag.\nSagen om råderum og finansieringsbehov for budget 2028-2031 forelægges for Byrådet til\ngodkendelse den 11. januar 2027.\nAdministrationen understøtter fagudvalgene ved at udarbejde et bruttokatalog med\n\nændringsforslag. Kataloget vil indeholde finansieringsforslag på baggrund af den fastlagte\nfinansieringspulje, investeringsforslag samt de drifts- og anlægsforslag, som vurderes\nnødvendige for at fastholde det eksisterende serviceniveau.\nFagudvalgene prioriterer hver især blandt de udarbejdede forslag inden for eget område.\nTværgående, organisatoriske og strukturelle forslag behandles dog i Økonomiudvalget.\nForslag fra partierne\nI lighed med tidligere år foreslås det, at de politiske partier kan indsende ændringsforslag til\nbudgettet.\nFristen for indsendelse af forslag foreslås fastsat til 21. april 2027.\nPartiernes forslag sendes ligeledes i høring som en del af budgetprocessen.\nKvalificering og høring\nFormålet med inddragelse og høring i budgetprocessen er at indhente synspunkter, idéer og\nviden fra interessenter, brugere, medarbejdere, borgere og råd mv. for at kvalificere\nbudgetlægningen.\nI forbindelse med udarbejdelsen af ændringsforslag afholdes dialogmøder mellem\nfagudvalgene og de relevante Center-MED- og Stabs-MED-udvalg (CMU og SMU). MEDudvalgenes skriftlige bemærkninger indgår i budgetmaterialet.\nDet foreslås, at ændringsforslagene til budgettet, herunder de politiske partiers forslag, sendes\ni offentlig høring fra den 6. september til den 19. september.\nI lighed med tidligere år foreslås det desuden at afholde et borgermøde for at understøtte\nborgerinddragelsen i budgetprocessen den 14. september.\nHerudover indgår dialog med Hoved-MED-udvalget (HMU).\nBudgetforhandlinger\nEfter sommerferien gennemføres de politiske budgetforhandlinger, som afsluttes med Byrådets\nvedtagelse af budgettet.\nI model A er der i lighed med sidste år afsat tre dage til budgetforhandlinger. Da\nØkonomiudvalgets ordinære behandling af budgetforslaget ligger en uge senere i 2027 end i\n2026, bliver forhandlingsforløbet mere komprimeret, og der er ikke mulighed for at reservere en\nekstra forhandlingsdag.\nDen overordnede tidsplan for budgetforhandlingerne i model A fremgår af bilag 2, mens de\ndetaljerede tids- og procesplaner for begge modeller fremgår af bilag 1.\n\nPolitisk handlerum\n\nBudgetprocessen skal overholde følgende lovpligtige frister:\nØkonomiudvalget skal fremlægge budgetforslaget for Byrådet senest den 15. september.\nByrådet skal behandle budgetforslaget to gange med mindst tre ugers mellemrum.\nByrådet skal vedtage budgettet senest den 15. oktober.\nInden for disse rammer kan Byrådet tilpasse:\nAntallet og placeringen af budgetforhandlingsdage.\nDatoerne for den politiske budgetproces.\nOmfanget og tilrettelæggelsen af høring og borgerinddragelse.\nTilrettelæggelsen af MED-inddragelsen under hensyntagen til gældende aftaler.\nDer fremlægges et alternativt forslag til tidsplanen i model B (bilag 1), hvor der er afsat mere tid\ntil de politiske budgetforhandlinger."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at den foreslåede budgetproces er i overensstemmelse med\nreglerne i Styrelsesloven og understøtter kommunens økonomiske politik.\n\nInddragelse og høring\nIngen bemærkninger"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-8": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-8",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Beslutning om bevilling vedr. efterbetalingskrav som følge af deltidskendelsen",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Byrådet skal i denne sag tage stilling til en kassefinansieret bevilling på 10,0 mio. kr. til\ndækning af forventede efterbetalingskrav til nuværende og tidligere deltidsansatte som følge af\ndeltidskendelsen.\nEfterbetalingskravene vedrører som udgangspunkt merarbejde inden for de seneste fem år.\nDet endelige efterbetalingsbeløb er endnu ikke kendt og vil blive opgjort i takt med, at de\nkonkrete krav beregnes.\nKL har tidligere meddelt, at kravet ikke skulle indgå i budgetforhandlingerne, idet kravet ikke vil\ntælle med i opgørelsen af serviceudgifterne. KL arbejder for, at kommunerne helt eller delvist\nkompenseres for udgifterne som følge af deltidskendelsen. En eventuel efterfølgende\nkompensation vil derfor medføre en tilsvarende forbedring af kommunens kassebeholdning."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at der gives en kassefinansieret bevilling på 10,0 mio. kr. til at dække efterbetalingskravet\nog renter som følge af deltidskendelsen.\n2. at den uudnyttede del af bevillingen i 2026 automatisk overføres til 2027, så udbetalinger\ni 2027 ikke skal afvente overførselssagen.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\n\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "To faglige voldgiftskendelser af 4. februar 2026 har fastslået, at visse\noverenskomstbestemmelser på både det private og det offentlige område er i strid med EU`s\ndeltidsdirektiv, hvis deltidsansatte først modtager overtidsbetaling, når deres arbejdstid\noverstiger den normale arbejdstid for fuldtidsansatte. Deltidsansatte, for hvem der findes\nsammenlignelige fuldtidsansatte, skal således som udgangspunkt honoreres med\novertidstillæg for timer, der ligger ud over deres individuelt aftalte arbejdstid. Det gælder, selv\nom arbejdstiden ikke overstiger fuldtidsnormen. Kendelserne giver anledning til potentielle\nefterbetalingskrav fra deltidsansatte i Ringsted Kommune, hvis de har arbejdet ud over deres\naftalte normtid. Efterbetalingskravene er som udgangspunkt omfattet af en femårig\nforældelsesfrist. Det betyder, at der skal ske efterbetaling for relevante krav inden for\nfemårsperioden.\nMed OK26 er reglerne ændret med virkning fra 1. april 2026. Efterbetalingen vedrører derfor\nmerarbejde udført før 1. april 2026.\nSiden april 2026 har KL og Danske Regioner været i dialog med de faglige organisationer og\ndatacentralerne om håndteringen af processen vedrørende efterbetalingskrav som følge af\ndeltidskendelsen. På baggrund af dette arbejde er Ringsted Kommune klar til at påbegynde\nberegning og udbetaling af eventuelle efterbetalingskrav til de berørte medarbejdere.\nDet samlede efterbetalingskrav i Ringsted Kommune er foreløbigt anslået til 10,0 mio. kr.\nVurderingen er fortaget af Løn og Personale baseret på den viden der på nuværende tidspunkt\ner tilgængelig. Beløbet dækker både selve kravet om overtidsbetaling, men også de renter der\ner påløbet. Der er usikkerhed forbundet med skønnet, da de konkrete krav endnu ikke er\nendeligt beregnet. Det endelige beløb kan derfor blive både højere og lavere end de afsatte\n10,0 mio. kr.\nBeløbet hensættes på balancen efter godkendelse. Efterbetalingskravet udbetales derefter fra\nkassen i takt med at Løn og Personale foretager beregningen af kravet, og hensættelsen\nreduceres tilsvarende. Da det ikke forventes at det fulde beløb udbetales i 2026, overføres den\nresterende bevilling til 2027.\nPolitisk handlerum\nDet politiske handlerum vedrører først og fremmest den bevillingsmæssige og finansielle\nhåndtering af kommunens udgifter til efterbetalingen.\nDeltidskendelsen giver ikke noget politisk handlerum i forhold til at udbetale\nefterbetalingskravet. KL vurderer, at kommunerne som følge af det almindelige legalitetsprincip\nsom udgangspunkt har pligt til af egen drift at genoptage tidligere sager, når væsentlige nye\nretlige forhold ændrer kommunens hidtidige opfattelse af gældende ret. Kendelsen af 4. februar\n2026 vurderes at udgøre et sådant nyt retligt forhold."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at bevillingen er nødvendig for, at Ringsted Kommune kan afholde\nde forventede udgifter til berettigede efterbetalingskrav som følge af deltidskendelsen.\nDet vurderes samtidig hensigtsmæssigt, at bevillingen gives samlet og overføres til 2027 i det\nomfang, beregning og udbetaling af efterbetalingskravene ikke kan afsluttes i 2026.\nDet vurderes hensigtsmæssigt, at der gives en automatisk overførselsadgang af uforbrugt\nbevilling, så udbetalinger i 2027 ikke skal afvente overførselssagen. Der vil i givet fald påløbe\nekstra morarenter på udbetalingerne.\nInddragelse og høring\nIngen"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Det forventede efterbetalingskrav udgør foreløbigt 10,0 mio. kr. inklusive forventede renter.\nDet foreslås, at udgiften kassefinansieres.\nKL arbejder for, at kommunerne helt eller delvist kompenseres for udgifterne som følge af\ndeltidskendelsen. Der foreligger på nuværende tidspunkt ikke en endelig afklaring af størrelsen\neller formen på en eventuel kompensation. En eventuel efterfølgende kompensation vil derfor\nmedføre en tilsvarende forbedring af kommunens kassebeholdning."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-11": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-11",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Valg til Beboerklagenævnet for perioden 1. januar 2027 til 31. december 2029",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Funktionsperioden for medlemmerne af Beboerklagenævnet udløber den 31. december 2026.\nByrådet skal derfor for en ny funktionsperiode udpege medlemmer og suppleanter til nævnet,\nmed udgangspunkt i de indstillinger, der er modtaget fra de almene boligorganisationer og\nlejerforeninger. Derudover skal Byrådet indstille en formand og suppleant til beskikkelse i\nSocial- og Boligministeriet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at Asger Poulsen udpeges som medlem og Michael Lomholt som suppleant for de\nalmene boligorganisationer\n2. at Maria Kjærulff Berth udpeges som medlem og Jan Sylvest som suppleant for\nlejerforeningerne\n3. at Tina Henriksen (ansat i kommunen) udpeges som socialt sagkyndig og Sus Bubandt\n(ansat i kommunen) som suppleant\n4. at Jacob Neuer (ansat i kommunen) indstilles som formand og Anne Svendsen som\nsuppleant, og\n5. at funktionsperioden fastsættes til 1. januar 2027 til 31. december 2029\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\n\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I alle kommuner nedsættes et Beboerklagenævn (tvistenævn), der træffer afgørelse i sager om\nvisse uenigheder mellem lejere og boligselskaber i det almene boligbyggeri. Reglerne fremgår\naf almenlejelovens kapitel 17.\nNævnet skal bestå af tre medlemmer, herunder en formand, en udlejerrepræsentant og en\nlejerrepræsentant. I visse sager tiltrædes nævnet derudover af en socialt sagkyndig. For\nformanden og hvert af medlemmerne samt den socialt sagkyndige skal der også udpeges en\nsuppleant.\nMedlemmer og suppleanter udpeges i op til 4 år.\nI Ringsted Kommune er der praksis for, at formanden og den socialt sagkyndige er ansatte i\nkommunen.\nVilkår for valg af medlemmerne\nFormanden beskikkes af Social- og Boligministeriet efter indstilling fra Byrådet. Formanden\nskal have bestået juridisk kandidateksamen, og må ikke have særlig tilknytning til grundejereller lejerorganisationer eller være erhvervsmæssigt interesseret i ejendomshandler.\nDe to andre medlemmer (udlejer- og lejerrepræsentant) udpeges af Byrådet efter indstilling fra\nhenholdsvis de større udlejer- og lejerforeninger. De skal være sagkyndige med hensyn til\nalmene boligforhold.\nI sager om tilsidesættelse af god skik og orden tiltrædes nævnet af en person, der er\nsagkyndig med hensyn til sociale forhold. Den socialt sagkyndige har ikke stemmeret, og\nudpeges ligeledes af Byrådet.\nØkonomiske vilkår for medlemmerne\nByrådet kan tillægge formanden, øvrige nævnsmedlemmer, den socialt sagkyndige og deres\nsuppleanter honorar eller mødediæter for deres hverv. Byrådet besluttede den 7. april 2014, at\nder ikke ydes vederlag til formanden, hvis denne er ansat af Ringsted Kommune. De øvrige\nnævnsmedlemmer modtager mødediæter og befordringsgodtgørelse efter gældende regler.\n\nPolitisk handlerum\nByrådet kan udpege medlemmer og suppleanter til Beboerklagenævnet blandt de kandidater, der er indstillet\naf de almene boligorganisationer samt lejerforeninger. Det betyder, at Byrådet kan vælge at følge\nadministrationens indstilling eller udpege andre af de indstillede kandidater.\nDet bemærkes, at der kun er flere indstillede kandidater at vælge imellem for lejerforeningerne.\nHvis der ikke kan opnås enighed i Byrådet, skal udpegelsen af udlejerrepræsentanten, lejerrepræsentanten,\n\nden socialt sagkyndige samt disses suppleanter ske efter forholdstalsvalg (d'Hondts metode). Indstillingen af\nformand og dennes suppleant skal ske efter flertalsvalg."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at de indstillede kandidater opfylder de lovmæssige krav til de respektive\nfunktioner i Beboerklagenævnet. Det vurderes hertil for så vidt angår de modtagne indstillinger fra\nlejerforeningerne, at der efter en længere årrække med samme lejerrepræsentation, er grundlag for at lade\nandre kvalificerede kandidater varetage hvervet end hidtil.\nAdministrationen vurderer samtidig, at det er hensigtsmæssigt, at formandens suppleant fremover er ekstern\ni tilfælde af myndighedsinhabilitet, da den indstillede formand er intern.\nDerudover vurderes det hensigtsmæssigt, at den næste funktionsperiode fastsættes til perioden 1. januar\n2027 til 31. december 2029, så fremtidige udpegninger kan følge den kommunale valgperiode.\n\nInddragelse og høring\nDe almene boligorganisationerne er enige om, at genindstille Asger Poulsen som medlem og Michael\nLomholt som suppleant.\nDer er modtaget flere indstillinger fra lejerforeningerne:\n\nRoskilde Lejerforening har genindstillet Jan Sylvest som medlem og Tomas Jacobsen\nsom suppleant (bilag 1)\nLejernes Hus har indstillet Maria Kjærulff Berth som medlem og Sven-Aage Berg som\nsuppleant (bilag 2)\nRoskilde Lejerforening har oplyst, at foreningen ikke deler administrationens vurdering af, at\nder efter en længere årrække med samme lejerrepræsentation er grundlag for at lade andre\nkvalificerede kandidater varetage hvervet. Foreningen mener, at et godt oparbejdet kendskab\ntil området og kompetencer i forhold til erfaring er et gode som repræsentant i nævnet."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-12": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-12",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Beslutning om deltagelse i projekter i relation til KLs Demokrati og Sammenhængskraft projekt",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "KL har lanceret programmet Demokrati & Sammenhængskraft, der består af 14 delprojekter,\nsom kommunerne kan vælge at deltage i. Administrationen har behandlet de projekter, der\nprimært retter sig mod den administrative organisation.\nByrådet skal med denne sag tage stilling til deltagelse i de to projekter, der primært retter sig\nmod borgmester og byrådsmedlemmer: 1.1 Lokale medier og lokaldemokrati og 1.3\nVirksomhedernes betydning for lokal sammenhængskraft."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at Byrådet beslutter, om Ringsted Kommune skal tilmeldes projekt 1.1 Lokale medier og lokaldemokrati,\nog\n\n2. at Byrådet beslutter, om Ringsted Kommune skal tilmeldes projekt 1.3 Virksomhedernes betydning for\nlokal sammenhængskraft.\n\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "KL har lanceret programmet Demokrati & Sammenhængskraft med henblik på at styrke og\nudvikle det lokale demokrati og den lokale sammenhængskraft. Programmet består af 14\ndelprojekter fordelt på tre overordnede spor: demokratisk kultur, lokal sammenhængskraft og\nlokalt repræsentativt demokrati. I bilag 1 fremgår en sorteret oversigt over projekterne, og i\nbilag 2 kan ses det samlede katalog som er fremsendt af KL med fulde projektbeskrivelser\nKommunerne kan selv vælge, hvilke delprojekter de ønsker at deltage i. Projekterne har\nforskellige målgrupper og involverer i forskelligt omfang borgmestre, byrådsmedlemmer,\nkommunaldirektører, administrative ledere og medarbejdere.\nDirektionen og Chefforum har behandlet de projekter, som primært retter sig mod den\nadministrative organisation. Som led i behandlingen er der desuden peget på to projekter, som\nvurderes relevante for Ringsted Kommune, men hvor målgruppen primært er borgmester\nog/eller byrådsmedlemmer. Det drejer sig om:\n1.1 lokale medier og lokaldemokrati\nProjektet har fokus på de lokale mediers betydning for lokaldemokratiet og den lokale\ndemokratiske samtale. Projektet skal blandt andet bidrage til øget viden om de lokale mediers\nrolle og til at udvikle og afprøve greb, der kan understøtte en oplyst lokal offentlig debat.\nProjektet vurderes relevant for Ringsted Kommune. Da projektet primært vedrører det politiske\nniveau og den lokale demokratiske samtale, forelægges spørgsmålet om deltagelse for\nByrådet.\n1.3 Virksomhedernes betydning for lokal sammenhængskraft\nProjektet har fokus på virksomhedernes rolle i den lokale sammenhængskraft og på\nmulighederne for at udvikle det strategiske samarbejde mellem kommune og erhvervsliv om\nlokale udfordringer og fællesskaber.\nProjektet vurderes ligeledes relevant for Ringsted Kommune. Da projektet har en politisk\nmålgruppe og lægger op til involvering af borgmester og/eller byrådsmedlemmer, forelægges\nspørgsmålet om deltagelse for Byrådet.\nUd over de to politisk rettede projekter arbejdes der administrativt videre med deltagelse i følgende\ndelprojekter:\n2.3 AI-genererede klager i borger-myndighedsrelationen\n3.1 Kommunens troværdighed i et nyt informationsmiljø\nDen samlede deltagelse skal ses i lyset af, at deltagelse i flere af projekterne kan indebære et væsentligt\ntids- og ressourcetræk. Det præcise ressourcetræk kan på nuværende tidspunkt ikke opgøres, da\nprojekterne udvikles og tilrettelægges sammen med de deltagende kommuner.\nKL har fastsat 21. december 2026 som frist for tilmelding. Kommunen foretager én samlet tilmelding til\nprogrammet.\n\nPolitisk handlerum\n\nByrådet kan beslutte, at Ringsted Kommune deltager i begge, ét eller ingen af de to politisk rettede\ndelprojekter. I beslutningen kan Byrådet blandt andet lægge vægt på projekternes relevans for Ringsted\nKommune, det forventede tids- og ressourcetræk samt kommunens samlede deltagelse i KL's program"
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Det vurderes, at begge projekter kan være relevante for Ringsted Kommune, da de berører\ncentrale aktører og rammer for det lokale demokrati og den lokale sammenhængskraft.\nDeltagelse vil samtidig skulle ses i sammenhæng med kommunens samlede deltagelse i KL's\nprogram og det forventede tids- og ressourcetræk.\nDa projekterne primært retter sig mod borgmester og byrådsmedlemmer, vurderes det, at\nByrådet selv bør tage stilling til, om Ringsted Kommune skal deltage i ét, begge eller ingen af\nprojekterne.\n\nInddragelse og høring\nIntet"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-13": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-13",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Godkendelse af rammebudget for Ringsted 1.000 år",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Byrådet har med budgetaftalen for 2027-2030 afsat 14 mio. kr. til fejringen af Ringsteds 1.000års byjubilæum i 2028. Det fremgår af budgetaftalen, at Byrådet inden udgangen af 2026 skal\nforelægges en sag om den konkrete planlægning og udmøntning af midlerne.\nMed denne sag fremlægges forslag til rammebudget for Ringsted 1.000 år til Byrådets\ngodkendelse. Samtidig foreslås det, at styregruppen bemyndiges til at godkende den konkrete\nudmøntning af midlerne, herunder foretage omprioriteringer inden for den samlede økonomiske\nramme.\nForslaget til rammebudget er godkendt af styregruppen den 20. oktober 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at rammebudgettet for Ringsted 1.000 år godkendes.\n2. at styregruppen for Ringsted 1.000 år bemyndiges til at godkende den konkrete\nplanlægning og udmøntning af midlerne, herunder foretage omprioriteringer og\nomfordelinger mellem budgettets poster inden for den samlede økonomiske ramme og\ngældende bevillinger.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-, Kulturog Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-, Social- og\nSundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet har med budgetaftalen for 2027-2030 afsat 14 mio. kr. til fejringen af Ringsteds 1.000års byjubilæum i 2028.\nDet fremgår af budgetaftalen, at Byrådet ønsker en sag forelagt inden udgangen af 2026, og at\n\"den konkrete planlægning og udmøntning af midlerne skal godkendes af den nedsatte\nstyregruppe og byrådet\".\nMed denne sag fremlægges forslag til et samlet rammebudget for Ringsted 1.000 år.\nRammebudgettet fastlægger den overordnede fordeling af de afsatte midler og danner det\nøkonomiske grundlag for den videre planlægning og gennemførelse af jubilæet.\nJubilæet tager afsæt i kernefortællingen \"Ringsted. Hvor konger mødtes og mennesker mødes\"\nog en programstruktur med tre overordnede spor:\nSignaturer og fyrtårne: Større begivenheder og markante aktiviteter, der skal skabe\nsynlighed og samle mange deltagere.\nFællesspor: Tværgående aktiviteter og samarbejder med borgere, foreninger, institutioner\nog erhvervsliv.\nLokale aktiviteter: Initiativer og arrangementer, der understøtter bred lokal deltagelse og\nengagement i jubilæet.\nRammebudgettet skal understøtte aktiviteter inden for de tre programspor samt den samlede\norganisering, kommunikation og gennemførelse af jubilæet.\nDet foreslås, at Byrådet med godkendelsen af rammebudgettet samtidig bemyndiger\nstyregruppen til at godkende den konkrete planlægning og udmøntning af midlerne.\nBemyndigelsen omfatter også muligheden for at foretage omprioriteringer og omfordelinger\nmellem rammebudgettets poster inden for den samlede økonomiske ramme og gældende\nbevillinger.\nDermed kan jubilæumsprogrammet udvikles og konkretiseres løbende frem mod 2028, uden at\nde enkelte aktiviteter og budgetmæssige justeringer skal forelægges Byrådet til særskilt\ngodkendelse.\nDispositioner, der forudsætter yderligere bevillinger eller ændringer af de bevillingsmæssige\nrammer, vil fortsat skulle forelægges Byrådet.\nForslaget til rammebudget har været drøftet og er godkendt af styregruppen for Ringsted 1.000\når på mødet den 20. oktober 2026.\nRammebudgettet, der ligger i forlængelse af budgetoplægget til budgetproces 2027-2030, er:\n\nMio. kr.\n\nI alt\n\nProgramledelse, koordination og\nadministration\n\nKommunikation, markedsføring og\nbranding\n\nByrum, udsmykning og renhold\n\nSignaturevents/fyrtårne\n\nFællesspor – læring, kultur, pulje til\nforeningsaktiviteter\n\nTil disposition/uforudsete udgifter\n\nI alt\n\nPolitisk handlerum\nByrådet kan godkende det fremlagte rammebudget og den foreslåede bemyndigelse af\nstyregruppen eller beslutte ændringer i rammebudgettet og rammerne for styregruppens\nmandat."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at det fremlagte rammebudget udgør et hensigtsmæssigt grundlag for\nden videre planlægning og gennemførelse af Ringsted 1.000 år.\nDet vurderes samtidig, at en bemyndigelse til styregruppen vil sikre den nødvendige fleksibilitet\ntil løbende at udvikle og tilpasse jubilæumsprogrammet. Muligheden for at omprioritere og\nomfordele midler inden for den samlede økonomiske ramme vil understøtte, at ressourcerne kan\nanvendes i takt med, at konkrete aktiviteter og samarbejder udvikles og kvalificeres.\nInddragelse og høring\nForslaget til rammebudget har været drøftet og godkendt af styregruppen for Ringsted 1.000 år\nden 20. oktober 2026."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Byrådet har med budgetaftalen for 2027-2030 afsat i alt 14 mio. kr. til Ringsted 1.000 år.\n\nForslaget til rammebudget fordeler de afsatte midler på de overordnede aktiviteter og\nindsatsområder.\nGodkendelsen af rammebudgettet og bemyndigelsen af styregruppen medfører ikke yderligere\nbevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-14": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-14",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Markedsføring 2027 – fordeling af midler og fremtidige samarbejdsaftaler",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Med denne sag skal Økonomiudvalget tage stilling til fordelingen af Ringsted Kommunes\nmarkedsføringsbudget for 2027, herunder videreførelse af eksisterende markedsføringsaftaler\nmed lokale sportsklubber samt indgåelse af en ny markedsføringsaftale med Ringsted IF\nFodbold.\nDet foreslås desuden, at indgåelse af en ny aftale med Sporvejsmuseet Skjoldenæsholm\nafventer en nærmere dialog om mulighederne for en bredere drifts- og samarbejdsaftale, samt\nat der i 1. kvartal 2027 forelægges en sag om den fremtidige tilgang til markedsføringsaftaler"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at der indgås markedsføringsaftaler med TMS Ringsted A/S og Foreningen TMS\nRingsted videreføres for 2027 med almindelig pris- og lønfremskrivning, og at aftalen\nmed Benløse Floorball Club videreføres med et beløb på 100.000 kr. i overensstemmelse\nmed klubbens ansøgning.\n2. at der indgås en markedsføringsaftale med Ringsted IF Fodbold i 2027 på 75.000 kr.\n3. at administrationen disponerer de resterende markedsføringsmidler inden for det\nsamlede budget for 2027, med forbehold for en eventuel kommende aftale med\nSporvejsmuseet Skjoldenæsholm.\n4. at indgåelse af en ny aftale med Sporvejsmuseet Skjoldenæsholm for 2027 afventer en\ndialog om mulighederne for en bredere drifts- og samarbejdsaftale, og at der forelægges\nen særskilt politisk sag herom.\n5. at administrationen i 1. kvartal 2027 forelægger en sag om den fremtidige tilgang til\nmarkedsføringsaftaler fra 2028, herunder forslag til retningslinjer og kriterier.\nSagsgang:\nBY"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU\n\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ringsted Kommune har i 2027 et markedsføringsbudget på 1,4 mio. kr. Budgettet anvendes til\nmarkedsføring gennem lokale sportsklubber samt øvrig markedsføring af Ringsted Kommune,\nherunder Ringsted som handels-, erhvervs- og oplevelseskommune.\nRingsted Kommune har i 2026 haft markedsføringsaftaler med TMS Ringsted A/S, Foreningen\nTMS Ringsted og Benløse Floorball Club. Samarbejdspartnerne har fremsendt evalueringer og\nforslag til videreførelse af aftalerne i 2027.\nTMS Ringsted A/S (bilag 1) ønsker en forhøjelse af markedsføringsaftalen til 1.200.000 kr.\nårligt ved deltagelse i Herreligaen og 800.000 kr. ved deltagelse i 1. division. Klubben henviser\nblandt andet til den nationale eksponering gennem ligahåndbold, tv-transmissioner og\ndeltagelsen i Final4 samt stigende omkostninger til elitehåndbold. Klubben fremhæver desuden\nbehovet for fortsat markedsføring af Ringsted i perioden med midlertidig hjemmebane i\nSlagelse. TMS Ringsted A/S ser gerne en flerårig aftale.\nForeningen TMS Ringsted (bilag 2 og 3) ønsker at videreføre markedsføringsaftalen på\nuændrede økonomiske vilkår. Foreningen fremhæver blandt andet markedsføring gennem\nkvindehåndbold, ungdoms- og talenthold, sociale medier og aktiviteter i lokalområdet.\nForeningen ønsker en aftale for perioden 2027-2028.\nBenløse Floorball Club (bilag 4 og 5) ønsker en markedsføringsaftale på 100.000 kr. i 2027.\nKlubben fremhæver fortsat synlighed gennem herre- og kvindeligaholdene, landsdækkende\nturneringer, livestreaming, sociale medier og deltagelse i lokale arrangementer.\nRingsted IF Fodbold har tidligere fremsendt forslag om et nyt markedsføringssamarbejde med\nkommunen, der er behandlet i forbindelse med budgetaftalen for 2027. Med budgetaftalen for\n2027 er der skabt økonomisk grundlag for at indgå en aftale på 75.000 kr. med Ringsted IF\nFodbold.\nForslag til fordeling af markedsføringsmidlerne\nAdministrationen foreslår, at markedsføringsaftalerne med TMS Ringsted A/S og Foreningen\nTMS Ringsted videreføres i 2027 med regulering svarende til kommunens almindelige pris- og\nlønfremskrivning.\nFor Benløse Floorball Club foreslås aftalen videreført med 100.000 kr. i overensstemmelse\n\nmed klubbens ansøgning.\nDermed fastholdes som udgangspunkt de eksisterende økonomiske rammer, og der afsættes\nikke yderligere midler til at imødekomme ønsker om forhøjede markedsføringsbidrag.\nDerudover foreslås indgået en ny markedsføringsaftale med Ringsted IF Fodbold inden for den\nsærskilt afsatte ramme på 75.000 kr.\nSamarbejdspartner\n\nAftale 2026\n\nØnske 2027\n\nForslag 2027\n\nTMS Ringsted A/S\n\nForeningen TMS\n\nBenløse Floorball\n\nRingsted IF Fodbold\n\nI alt\n\nDe samlede markedsføringsaftaler med sportsklubberne udgør herefter 1.039.000 kr. i 2027.\nSamarbejde med Sporvejsmuseet Skjoldenæsholm\nRingsted Kommune har gennem en årrække haft en aftale med Sporvejsmuseet\nSkjoldenæsholm via kommunens markedsføringskonto i forhold til, at museet bidrager til at\nsynliggøre Ringsted Kommune som besøgs- og oplevelsesdestination. Budgettet var i 2026 kr.\nAdministrationen vurderer, at der er anledning til at se nærmere på det samlede samarbejde\nmed Sporvejsmuseet, herunder mulighederne for at udvikle en bredere drifts- og\nsamarbejdsaftale.\nEn sådan aftale vil kunne omfatte flere elementer end den hidtidige markedsføring og skabe en\nmere sammenhængende ramme for samarbejdet mellem kommunen og museet.\nAdministrationen anbefaler derfor, at indgåelse af en ny aftale for 2027 foreløbigt udsættes, og\nat der indledes dialog med Sporvejsmuseet om mulighederne for en bredere aftale.\nPå baggrund af dialogen vil administrationen forelægge en særskilt politisk sag for med forslag\ntil det fremtidige samarbejde, herunder aftalens indhold, økonomi og eventuelle finansiering.\nResterende midler til markedsføring\nDe resterende midler foreslås som hidtil disponeret af administrationen i løbet af året til\n\nmarkedsføring af Ringsted Kommune, herunder Oplev Ringsted, Ringsted Børnefestival,\nRingsted som handels- og oplevelseskommune, Ringsted som erhvervskommune samt anden\ngenerel markedsføring.\nPolitisk handlerum\nØkonomiudvalget kan vælge at godkende administrationens forslag til fordeling af\nmarkedsføringsmidlerne for 2027 eller beslutte en anden fordeling inden for den samlede\nbudgetramme.\nUdvalget kan herunder vælge at prioritere en større del af midlerne til markedsføring gennem\nsportsklubberne eller til kommunens øvrige markedsføringsaktiviteter.\nØkonomiudvalget kan desuden vælge at videreføre en selvstændig aftale med Sporvejsmuseet\nSkjoldenæsholm for 2027 frem for at afvente en særskilt sag om en bredere drifts- og\nsamarbejdsaftale."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer på baggrund af de fremsendte evalueringer, at de eksisterende\nmarkedsføringsaftaler fortsat bidrager til synliggørelsen af Ringsted Kommune gennem\nsportslige aktiviteter, medieeksponering, digitale platforme og lokale arrangementer.\nAdministrationen vurderer, at der er grundlag for at videreføre aftalerne i 2027 med almindelig\npris- og lønfremskrivning, dog således at aftalen med Benløse Floorball Club tilpasses\nklubbens ansøgning. Der er ikke afsat yderligere midler til forhøjelse af de eksisterende aftaler,\nog administrationen anbefaler derfor ikke at imødekomme ønsker om øgede\nmarkedsføringsbidrag.\nAdministrationen vurderer endvidere, at Ringsted IF Fodbold kan bidrage til kommunens\nsynlighed gennem klubbens deltagelse i divisionsfodbold og øvrige aktiviteter.\nAdministrationen vurderer desuden, at der med fordel kan udarbejdes et nyt oplæg til\nkommunens tilgang til markedsføring gennem sportsklubber og øvrige samarbejdspartnere fra\n2028 og frem. Formålet er at sikre en mere systematisk og gennemsigtig tilgang med tydelige\nretningslinjer og kriterier for indgåelse og prioritering af markedsføringsaftaler. Det vil samtidig\ngive mulighed for at tilrettelægge en proces, der indledes tidligere på året, så aftalerne kan\nindgås i god tid inden det kommende budgetår. Administrationen foreslår derfor, at der\nforelægges en sag for Økonomiudvalget i 1. kvartal 2027 med henblik på at fastlægge\nrammerne for den fremtidige praksis.\nEndelig vurderer administrationen, at der er potentiale for at udvikle samarbejdet med\nSporvejsmuseet Skjoldenæsholm i en bredere retning, hvor markedsføring ses i sammenhæng\nmed museets aktiviteter, drift og betydning for kommunens samlede kultur- og oplevelsestilbud.\nDet anbefales derfor, at indgåelse af en ny aftale for 2027 afventer en nærmere dialog med\nmuseet, og at der efterfølgende forelægges en særskilt sag om mulighederne for en bredere\ndrifts- og samarbejdsaftale.\n\nInddragelse og høring\n\nIngen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Ringsted Kommunes samlede budget til markedsføring udgør 1,405 mio. kr. i 2027.\nHeraf foreslås 1.039.000 kr. anvendt til markedsføringsaftaler med de fire sportsklubber. Kr.\n200.000 anvendes til aftale med Sporvejsmuseet Skjoldenæsholm. Det efterlader en ramme på\n166.000 kr. til øvrig markedsføring af Ringsted Kommune.\nSagen har ingen bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-15": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-15",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Beslutning om direktionens deltagelse ved KL's delegeretmøde 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Byrådet skal i denne sag træffe beslutning om direktionens deltagelse ved KL's delegeretmøde"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at direktions deltagelse på KL's delegeret møde godkendes.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet vedtog den 2. februar 2026 fælles retningslinjer for Byrådsmedlemmers deltagelse i rejser,\nkonferencer o.lign.\nI retningslinjerne står følgende i forbindelse med deltagelse i konferencer og KL-arrangementer:\n\"Formålet med KL-delegeretmødet er deltagelse i generalforsamlingen for KL. Økonomiudvalgets\nmedlemmer deltager, og der inviteres en repræsentant for hver af de partier i Byrådet, der ikke har et\nmedlem af Økonomiudvalget. Administrationen deltager ikke.\"\nKL Topmødet danner ramme for drøftelser af aktuelle kommunalpolitiske temaer og afholdelse af KL's\ndelegeretmøde. Topmødet afholdes den 18.-19. marts 2027. KL Topmødet er en af de centrale\nkommunalpolitiske begivenheder i løbet af året. Der deltager godt 1.500 kommunalpolitikere og\nborgmestre, og mere end 300 inviterede gæster fra Folketinget, regeringen, ministerier og organisationer,\n\nsom KL samarbejder med.\nTidligere praksis har været, at direktionen ikke har deltaget ved delegeretmødet i Aalborg Kongrescenter."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Det anslås at direktionens samlede deltagelse vil koste 14.175 kr. Udgifterne bliver afholdt indenfor\ndirektionens eksisterende budget.\nPolitisk handlerum\n\nByrådet træffer beslutning om hvorvidt de ønsker at direktionen deltager ved delegeretmødet\n\nIngen bevillingsmæssige konsekvenser"
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer at direktionens deltagelse vil styrke den politiske understøttelse.\nMed tanke på den relativt beskedne udgift, vurderes det derfor gavnligt at direktionen deltager.\n\nInddragelse og høring\nIngen."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-16": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-16",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Nyt medlem af Handicaprådet (ÆSSU)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I henhold til delegationsplanen udpeger Byrådet nye medlemmer af Handicaprådet. På grund\naf medarbejderudskiftning i administrationen skal der nu udpeges et nyt medlem og en ny\nstedfortræder. Ifølge loven skal medlemmer og stedfortrædere af Handicaprådet udpeges\npersonligt."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at Rasmus Gormsen Hansen udpeges som nyt medlem af Handicaprådet\n2. at Christina Valdemar Jul Thomsen udpeges som ny stedfortræder for Anton Helge\nSvendsen.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\n\nX\n\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Handicaprådet i Ringsted Kommune er sammensat af fire medlemmer, der er indstillet af\nDansk Handicapforbund, to medlemmer fra Byrådet og to medlemmer fra administrationen\nmed relevant faglig indsigt på henholdsvis børne- og voksenområdet.\nHandicaprådets medlem fra voksenområdet, Alice Morsbøl, er gået på pension fra sin stilling\n\nsom centerchef for voksensocialområdet mm. I stedet indstilles ny centerchef for\nvoksensocialområdet mm., Rasmus Gormsen Hansen som nyt medlem af Handicaprådet.\nMaria Brændstrup, som er leder af Myndighedsenheden fortsætter som suppleant for det\nadministrative medlem med viden om voksensocialområdet.\nTilsvarende indstilles leder af Børne- og Familierådgivningen, Christina Valdemar Jul\nThomsen, som ny stedfortræder for Handicaprådsmedlem, Anton Helge Svendsen, centerchef\nfor børneområdet. Den tidligere stedfortræder har fået nyt job.\nUdpegningerne gælder for resten af valgperioden.\n\nPolitisk handlerum\nIfølge gældende lovgivning skal medlemmer og stedfortrædere af Handicaprådet udpeges\npersonligt og derfor forelægges de administrative medlemmer og stedfortrædere altid til politisk\nbehandling.\nByrådet har godkendt de gældende vedtægter for Handicaprådet med udpegning af to\nadministrative medlemmer, som repræsenterer hhv. børne- og voksenområdet."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Forvaltningen vurderer, at indstillingen understøtter, at medlemmerne fra administrationen har\nfaglig indsigt i hhv. børne- og voksenområdet.\n\nInddragelse og høring\nHandicaprådet orienteres om Byrådets endelig udpegning."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har i sig selv ingen bevillingsmæssige konsekvenser.\n\nSagens forløb\n16/11/2026 Ældre-, Social- og Sundhedsudvalget\nAd 1: Anbefales godkendt\nAd 2. Anbefales godkendt"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-17": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-17",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 17,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Beslutning om sagsbehandlingsfrister på det sociale område for 2027 (ÆSSU, ABU, BFU)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Byrådet skal fastsætte frister for, hvor lang tid der må gå, inden der træffes afgørelse i en\nansøgningssag.\nSagen har været behandlet i Ældre-, Social- og Sundhedsudvalget i forhold til beslutning om\nhøring af Ældrerådet og Handicaprådet. Der er nu modtaget høringssvar og sagen\ngenoptages.\n\nI denne sag forelægges forslag til rammeaftale på det specialiserede social- og\nundervisningsområde for 2027-2028 (bilag 1), som KKR Sjælland anbefaler godkendt.\nRammeaftalen 2027-28 viderefører og styrker samarbejdet om kvalitet, styring og udvikling på\ndet specialiserede social- og undervisningsområde i Region Sjælland. De tre hovedtemaer er:\n1) Rette indsatser og tilbud, 2) Styrket sektorsamarbejde, og 3) Øget trivsel blandt børn og\nunge. Implementeringen sker gennem fælles principper, konkrete initiativer og løbende\ntværkommunal koordinering.\nDirektionen indstiller, at rammeaftale 2027-2028 for det specialiserede social - og\nundervisningsområde godkendes\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nX\n\nX\n\nX\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at de foreslåede sagsbehandlingsfrister i bilag 1 godkendes.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nX\n\nX\n\nX\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\n\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget\n\nom høring\nOrientering\n\nX\n\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Efter lov om retssikkerhed og administration § 3 stk. 2 skal Byrådet fastsætte en frist for, hvor\nlang tid der må gå, inden der skal være truffet en afgørelse på de enkelte sagsområder.\nSagsbehandlingsfristerne på social- og arbejdsmarkedsområdet skal opdateres og behandles\npolitisk én gang årligt. Fristerne skal offentliggøres på kommunens hjemmeside.\nSagen har været i høring i Ældrerådet og i Handicaprådet.\n\nHandicaprådet har på møde den 27. september 2026 besluttet følgende:\n\"Handicaprådet tager orienteringssagerne og høringssagen til efterretning, og afgiver ikke\nhøringssvar.\nVed drøftelse af sagen om Danmarkskortet blev det aftalt at dykke mere ned i årsagerne til\nAnkestyrelsens omgørelser ved næste kvartalsorientering fra det specialiserede\nbørneområde.\"\nÆldrerådet har på møde den 23. september 2026 besluttet følgende:\n”Ældrerådet besluttede ikke at afgive høringssvar til sagsbehandlingsfrister på det sociale\nområde for 2027, idet der ikke er indholdsmæssige ændringer.”\nSvarene fra ældrerådet og Handicaprådet giver ikke anledning til ændringer i de foreslåede\nsagsbehandlingstider.\nI bilag 1 er der en kort beskrivelse af sagen, hvor de enkelte afdelinger i administrationen\nforeslår og begrunder ændringer til sagsbehandlingsfristerne. Endvidere beskriver de enkelte\nafdelinger, om sagsbehandlingsfristerne bliver overholdt.\nSagsbehandlingsfristerne fremgår af bilag 2, hvor der er angivet om fristen er ændret eller\nuændret, med angivelse af ændringsårsag. Det fremgår af bilaget, hvilke frister der er\nlovbestemte, og hvilke der er besluttet i Byrådet. Der er desuden medtaget en række\nlovbestemte frister til oplysning for politikerne og borgerne.\nI bilag 3 kan sagsfremstillingen før genoptagelse ses.\nI år har administrationen ingen ændringer til fristerne. De ændringer, der fremgår i bilag 2 er\nstort set konsekvensændringer på baggrund af indførelsen af ældreloven.\nNæste politiske behandling af sagsbehandlingsfristerne:\nAdministrationen fremlægger ultimo 2027 en opfølgning på sagsbehandlingstiderne, samtidig\nmed\ngodkendelse af sagsbehandlingsfrister for 2028.\nPolitisk handlerum\nDer er mulighed for, at byrådet kan fastsætte andre frister, end de frister, som administrationen\nhar foreslået.\n\nDe 17 kommunalbestyrelser i Region Sjælland samt regionsrådet skal ifølge lovgivningen hvert\nandet år indgå en rammeaftale på det specialiserede social- og undervisningsområde.\nRammeaftale 2027-2028 skal ifølge bekendtgørelsen være politisk godkendt i kommunerne og\nsendes til Socialstyrelsen 1. december 2026. KKR Sjælland har på møde 11. september 2026\ndrøftet og godkendt rammeaftalen for 2027-2028 og anbefaler den til kommunalbestyrelser og\nregionsråd.\n\nFormålet med rammeaftalen er at sikre nødvendige tilbud og indsatser til borgerne på det\nspecialiserede social- og undervisningsområde. Aftalen fokuserer både på udvikling (behov,\nfaglighed) og styring (kapacitet, økonomi). Der lægges vægt på tværkommunalt og regionalt\nsamarbejde for at skabe bæredygtige løsninger.\nForslaget til rammeaftale 2027-2028 er at videreføre arbejdet fra rammeaftalen 2025-2026, da\nder iværksat et udviklingsprogram med en stor kompleksitet, som det foreslås at arbejde videre\nmed. Rammeaftalens fokusområder i 2027-2028 vil dermed fortsat være:\n1. Rette indsatser og tilbud til borgerne\nHerunder ligger tre overordnede fælleskommunale principper med indsatsområder tiltrådt\naf kommunerne medio 2024: Fælles om kontrakter og takster, Fælles om kvalitet, Fælles\nom døgn- og botilbud.\n2. Styrket sektorsamarbejde om borgerne på socialpsykiatri- og handicapområdet\n3. Øget trivsel blandt børn- og unge - styrket indsats og forebyggelse\nRammeaftalen for 2027-2028 består af et kort politisk hoved-dokument ( bilag 1), herudover\nindgår en række dokumenter, der kan tilgås via links bagerst i bilaget, bl.a. takstaftale.\nRammeaftalerne har siden 2012 rummet en takstanbefaling og i rammeaftale 2027-2028 er\nforeslået følgende takstanbefaling: Alle kommuner opfordres til at sikre et målrettet arbejde for\nkonstant driftsoptimering med den hensigt at reducere taksterne på de takstbelagte institutioner\nog stram udgiftsstyring generelt, herunder ved køb hos private, og takster må, efter\nefterregulering, kun stige svarende til P/L.\nPolitisk handlerum\nKKR Sjælland anbefaler rammeaftalen godkendt."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Det er administrationens vurdering, at sagsbehandlingsfristerne på det sociale område generelt\nset overholdes, om end der på nogle områder er udfordringer.\n\nInddragelse og høring\nSagen har været i høring i Ældrerådet og i Handicaprådet.\n\nAdministrationen vurderer, at rammeaftalen skaber en ramme for koordinering og udvikling af\nindsatser på det specialiserede social- og specialundervisningsområde.\nInddragelse og høring\nTil orientering i Handicaprådet."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er ingen økonomiske konsekvenser.\n\nSagens forløb\n16/11/2026 Ældre-, Social- og Sundhedsudvalget\nAnbefales godkendt.\n17/11/2026 Arbejdsmarkeds- og Beskæftigelsesudvalget\nAnbefales godkendt.\n18/11/2026 Børne- og Familieudvalget\nAnbefales godkendt.\n\nGodkendelse af KKR rammeaftale 2027 og 2028 (ÆSSU, ABU, BFU)\nIndhold\n\nIngen bevillingsmæssige konsekvenser\n\nSagens forløb\n16/11/2026 Ældre-, Social- og Sundhedsudvalget\nAnbefales godkendt.\n17/11/2026 Arbejdsmarkeds- og Beskæftigelsesudvalget\n\nAnbefales godkendt.\n18/11/2026 Børne- og Familieudvalget\nAnbefales godkendt."
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-20": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-20",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 20,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Anlægsbevilling og rådighedsbeløb til Nørregade 100 (ULBTM, ABU)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Denne sag giver en status på arbejdet med skimmelhåndtering i Nørregade 100, og der bedes\nom midler til flere arbejder. Der er bl.a. fundet 300 lyddæmpere i lukkede radiatorskjulere langs\nvæggene, som indeholder skimmel, de skal derfor fjernes. Der er desuden behov for at\netablere et nyt undertag, idet det nuværende er i så dårlig stand, at det ikke hindrer regn og\nsne i at komme ind i tagrummet. Hvis den sidste del af bygningen på nederste etage skal\nskimmelsaneres, så der er plads til at samtlige medarbejdere kan vende tilbage, skal der\ndesuden etableres omfangsdræn og flyttes jord væk fra facaden mod vest til foråret.\nHvis de planlagte arbejder gennemføres, vurderes det, at bygningen bringes i en stand, så den\nkan anvendes frem til der træffes en endelig beslutning for den fremtidige placering af\nmedarbejderne i bygningen. Der vil dog stadig være et mindre antal kontorer på nederste\netage, der ikke kan anvendes før der er etableret dræn til foråret."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at der gives rådighedsbeløb på 1.700.000 kr. til skimmelsanering af Nørregade 100\nfinansieret af:\na. 1.600.000 kr. fra Indeklimapuljen 2026 og\nb. 100.000 kr. fra Genopretning af bygninger 2026\n2. at der gives anlægsbevilling på 1.700.000 kr. til skimmelsanering af Nørregade 100\n3. at der gives rådighedsbeløb og anlægsbevilling på 700.000 kr. til at fjerne jordvold langs\nfacaden mod vest og etablering af omfangsdræn i 2027 finansieret af Genopretning af\nbygninger 2027.\n4. at orienteringen tages til efterretning.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU\n\nX\nx\n\nx"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der er konstateret skimmel i Nørregade 100. Der er igangsat en række arbejder, der skal\nskimmelsanere bygningen. Administrationen er i den forbindelse ved at få udført en rensning af\nalle ventilationsanlæg og de rør, der fører luften rundt, idet der er fundet skimmel i rørene.\nAdministrationens rådgiver, der er ekspert i at arbejde med skimmelsaneringer, vurderer, at\nkilden til størstedelen af skimlen sandsynligvis er ventilationsanlæggene, der også har spredt\nskimlen ud i bygningen. Hele bygningen er således blevet undersøgt og der er ikke fundet fugt\neller tegn på skimmel på de to øverste etager. Dette skal dog undersøges nærmere. Der er\nsåledes ikke fundet tegn på fugt i væggene ud over på den vestlige side på nederste etage.\nDer vil blive taget skimmelprøver for at dokumentere, at niveauet er på et normalt niveau.\nDer er tidligere givet 2,5 mio. kr. til at skimmelsanere bygningen, jf. Byrådets beslutning den 7.\nseptember 2026. pkt. 13. Midlerne er anvendt til følgende arbejder, der forventes færdige til\nårets udgang:\nRensning af ventilationsanlæg\nSkimmelrengøring af alle lokaler i bygningen\nRenovering af ventilationsanlæg\nEtablering af kontorpladser i tandklinikken på Dagmarskolen.\nKontorarbejdspladserne på Dagmarskolen er lavet på en sådan måde, at der er mulighed for at\nanvende dem til andre kommunale funktioner efterfølgende.\nUnder arbejdet er der fundet 300 skjulte lyddæmpere i radiatorskjulerne, hvor skjulerne er\nudført som lukkede kasser. Der er skruet paneler af kasserne for at få adgang og rengøre dem,\nog i den forbindelse er lyddæmperne fundet. Lyddæmperne er fyldt med skimmel og kan ikke\nafrenses. Der har ikke været kendskab til lyddæmperne, hvorfor der ikke er taget højde for\ndem i den tidligere planlægning. Lyddæmperne skal udskiftes for dels at fjerne skimlen og dels\nså kontorerne fortsat har en tilfredsstillende akustik.\nUndertaget på bygningen er desuden så dårligt, at regn og sne uhindret kommer ind i\ntagrummet. Der skal derfor monteres et nyt undertag, så der ikke trænger vand ind gennem\ntaget. Det vil desuden forhindre følgeskader af det indtrængende vand. Der er dog tale om en\nmidlertidig løsning, så der vil skulle skiftes tagbelægning indenfor en kortere årrække.\nIsoleringen i tagrummet havde synlige skader af den vand, der gennem en årrække er trængt\n\nind gennem taget. Isoleringen er derfor fjernet. Og der skal efter skimmelrenoveringen og\netablering af undertag indlægges ny isolering i tagrummet. I bilag kan de samlede arbejder\nses, der er sat i gang.\nSamlet betyder de igangsatte arbejder, at hvis de suppleres med de her foreslåede, kan\nbygningen anvendes i en årrække, så der er tid til at finde den rette løsning for bygningen.\nDer bedes derfor om 1,7 mio. kr. til:\nUdskiftning af lyddæmpere skjult i konstruktionen\nEtablering af tæt undertag\nEtablering af ny isolering i tagrum\nEkstra rengøring i bygningen frem til ventilationsrensningen er udført.\nArbejderne foreslås hovedsageligt finansieret af restmidler på årets indeklimapulje. Der er et\nstort restbeløb, da lyddæmpning i daginstitutionerne har vist sig billigere at udføre end\nprojekteret. Midlerne kan derfor anvendes til at forbedre indeklimaet i Nørregade 100.\nHvis alle medarbejdere skal tilbage i Nørregade 100, hvor nogen i dag er placeret i den\ntidligere tandlægeklinik på Dagmarskolen, er der behov for at kontorer på nederste etage\nskimmelsaneres. Dette gøres ved at fjerne en jord, der ligger mod facaden, og etablere\nomfangsdræn. Gulvet skal desuden skiftes, hvilket gøres for eksisterende driftsmidler. Arbejdet\nkan først udføres efter vinteren, idet jordarbejder ikke gennemføres i den kolde periode.\nOmfangsdræn og jordarbejder estimeres til at koste 700.000 kr. Hvis der ikke etableres dræn,\nvil et antal kontorer i den nederste etage forblive lukkede.\nDer er igangsat en vurdering af omkostningerne til at renovere hele bygningen. Den vil blive\npræsenteret i første halvdel af 2027, jf. Byrådets møde den 7. september 2026, pkt. 14.\nPolitisk handlerum\nDer kan vælges en strategi, hvor der findes andre placeringer til medarbejderne. Det kræver\ndog, at der er et egnet lejemål, hvilket der ikke er fundet.\nEn flytning af medarbejderne forudsætter derfor, at de enten deles op på flere lokationer eller\nder gennemføres en større rokade blandt de kommunale medarbejdere, hvor andre flyttes i\nlejemål. En sådan er omkostningsfuld og tidskrævende. Administrationen har været i kontakt\nmed ejeren af det gamle posthus, hvor fx Ungeenheden vil kunne placeres. Så vidt vides er\nlejemålet stadig tilgængeligt."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Det er administrationens vurdering, at med udskiftning af lyddæmperne, efterisolering af\nloftsrummet, etablering af et nyt undertag og etablering af omfangsdræn, vil bygningen være i\nen stand, hvor indeklimaet forventes at være tilfredsstillende. Den vil derfor kunne anvendes i\nen årrække\nInddragelse og høring\n\nIngen"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Ekstraarbejderne foreslås delvis finansieret af Indeklimapuljen 2026 og de resterende 100.000\nkr. foreslås finansieres af akutpuljen fra puljen til genopretning af bygninger 2026.\nDer gives rådighedsbeløb og anlægsbevilling på 1.700.000 kr. til skimmelsanering af\nNørregade 100, finansieret med 1.600.000 kr. der udgør restbeløbet i Indeklimapuljen 2026 og\n100.000 kr. fra Genopretnings af bygninger 2026.\nDer gives rådighedsbeløb og anlægsbevilling på 700.000 kr. til at udføre jordarbejder og\nomfangsdræn i 2027 finansieret Genopretning af bygninger 2027.\n\nSagens forløb\n17/11/2026 Arbejdsmarkeds- og Beskæftigelsesudvalget\nTaget til efterretning.\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAd 1 Anbefales godkendt.\nAd 2 Anbefales godkendt.\nAd 3 Anbefales godkendt.\nAd 4 Til efterretning.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-21": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-21",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 21,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Anlægsbevilling til udbedring af brandforhold i Hal B i Ringsted Sportscenter (ULBTM, SKFU)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Siden Hal B er bygget er den renoveret flere gange og der er bygget omkring den. Det har\nbetyder, at der er ændret på brandforholdene i hallen. Hallen er oprindeligt opført med\nbrandventilation i taget, der sikrer hallen i forbindelse med brand. Denne ventilation er ændret i\nforbindelse med renoveringsprojekterne i hallen, og det er nødvendigt at genetablere\nbrandventilation for at opretholde sikkerheden. Løsningen omfatter etablering af\nbrandventileringsåbninger i hallens tag tæt på kip, og anlægget skal integreres med den\nsamlede brandløsning for Ringsted Sportscenter."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at det besluttes at sikre brandforholdene i Hal B ved at genetablere brandventilationen\n2. at der gives rådighedsbeløb og anlægsbevilling på 3,2 mio. kr. finansieret af\nSkattefinansierede anlæg – rammebeløb anlægsudgifter.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\n\nX\n\nX\n\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget\n\nSupplerende sagsfremstilling til Økonomiudvalget den 3011-2026\n\nI forlængelse af fagudvalgenes bemærkninger redegøres der nedenfor for, hvordan fejlen er opstået,\nsamt for koordinering og planlægning af arbejderne. Vedhæftet i bilag 1 er endvidere en opgørelse over\nhvad \"skattefinansierede anlæg - rammebeløb anlægsudgifter\" er anvendt til, og hvad der resterer.\nDa hallens loft blev beklædt med akustikplader for mere end 30 år siden, blev det overset, at en del af\ndet tildækkede rytterlys havde en funktion ifm. udluftning i tilfælde af brand. Der blev efterfølgende i\n2023-2024 ifm. tagudskiftning ikke stillet spørgsmål til løsningen, hvor akustikpladerne dækkede for\nrytterlyset. Det er ikke muligt at placere et ansvar hos rådgiver i forbindelse med fejlen.\nReetableringen forventes gennemført primo 2. kvartal 2027. Arbejdet vil omfatte etableringer at\nrøgudluftning i taget tæt ved kip. Røgudluftningen forbindes elektronisk til Ringsted Sportscenters\nAutomatiske Brandalarmeringsanlæg. Samtidigt etableres der et anlæg, der kan forsyne hallen med luft\nog presse røgen ud, når røgudluftningen aktiveres.\nOpgaven planlægges og gennemføres i tæt samarbejde med Brugerrådet og ledelsen af Ringsted\nSportscenter, og planlægges således, at aktiviteterne vil give mindst mulig gene for brugerne af hal B. I\ndet omfang arbejdet kan udføres udefra, vælges denne løsning.\n\nOprindelig sagsfremstilling\nHal B var oprindeligt forsynet med mulighed for brandventilering via hallens tag. I forbindelse\nmed renoveringsprojekter i hallen gennem tiden, har man ikke været opmærksom på dette, og\nde oprindelige opluk findes ikke mere.\nFormålet med automatisk brandventilation i en idrætshal er at sikre alle kan nå sikkert ud i\ntilfælde af brand og at beskytte bygningskonstruktionen mod kritisk varmeopbygning. Denne\nmulighed er over tid blevet reduceret i takt med, at hallen er blevet sammenbygget med den\nøvrige del af Ringsted Sportscenter.\nDen projekterede løsning omfatter derfor brandventileringsåbninger i tagfladen nær kip, samt et\nsystem der mekanisk sikrer tilstrækkelig erstatningsluft via indblæsningsenheder i facaden.\nDet automatiske brandventilationsanlæg tilsluttes Ringsted Sportscenters ABA-anlæg\n(automatisk brandalarmering), så alarmen automatisk overføres til beredskabet, hvis der opstår\nen brand.\n\nPolitisk handlerum\nDen nuværende brug af hallen forudsætter, at der er brandventilation. Såfremt\nbrandventilationen ikke udføres, skal der laves en ny brandstrategi, hvilket dels være\nbekosteligt og vil desuden medføre følgearbejder."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at det brandudluftningen er en nødvendighed, hvis Hal B skal kunne\nbruges fuldt ud.\n\nInddragelse og høring\n\nOpgaven løses i tæt samarbejde med Ringsted Sportscenter."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Med denne sag søges er rådighedsbeløb og en anlægsbevilling på 3,2 mio. kr. for at sikre\nbrandforholdene i Hal B i Ringsted Sports Center finansieret af Skattefinansierede anlæg rammebeløb anlægsudgifter.\n\nSagens forløb\n17/11/2026 Sport-, Kultur- og Fritidsudvalget\nOrientering taget til efterretning med en bemærkning om at følgende anbefales:\nForud for Økonomiudvalgets behandling ønsker udvalget en redegørelse for, hvordan fejlen\nkunne opstå, samt en beskrivelse af, hvordan arbejdet forventes udført, og hvordan det sikres,\nat det sker til mindst mulig gene for hallens brugere.\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt.\nMed en bemærkning om at der forud for Økonomiudvalgets behandling laves en redegørelse\nfor, hvordan fejlen kunne opstå, samt en beskrivelse af, hvordan arbejdet forventes udført, og\nhvordan det sikres, at det sker til mindst mulig gene for hallens brugere.\nSamt hvad den \"skattefinansierede anlæg - rammebeløb anlægsudgifter\" er anvendt til og hvad\nder resterer.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-22": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-22",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 22,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Anlægsbevilling til efterslæb på Ringsted Sportscenter 2027 (ULBTM, SKFU)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I denne sag søges anlægsrammen ”Anlægspulje til efterslæb på Ringsted Sportscenter” for\n2027 frigivet. Puljen blev med budgetforlig for 2027 forøget med 6 mio. kr. i 2027 og udgør\nsamlet 8,5 mio. kr. Alle midlerne søges frigivet med denne bevilling. Midlerne foreslås primært\nanvendt til genopretning af Hal G. Der ønskes desuden afsat midler til eventuelle akutte\narbejder i Ringsted Sportscenter i 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at der gives rådighedsbeløb på 8.500.000 kr. til Anlægspulje til efterslæb på Ringsted\nSportscenter 2027. Rådighedsbeløbet finansieres af 2027-midler i Anlægspulje til\nefterslæb på Ringsted Sportscenter.\n2. at der gives en anlægsbevilling pr. 1/1 2027 på 8.500.000 kr. til ”Anlægspulje til efterslæb\npå Ringsted Sportscenter 2027”.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nx\n\nx\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med seneste budgetforlig er der hen over en årrække afsat midler til efterslæb på Ringsted\n\nSportscenter. Der er ved at blive udarbejdet en samlet vedligeholdelsesplan for svømmeland,\nog den forventes klar ultimo december 2026.\nHal G (Gymnastikhuset) er i dårlig stand og bør udbedres i 2027 for at undgå yderligere skader\npå bygningen. Hallens bærende konstruktion er udført fejlbehæftet, og der er samtidig anvendt\nmaterialer (Mg-plader) i klimaskærmen, som efterfølgende har vist sig ikke at være egnede til\ndet danske klima. Som følge heraf er det nødvendigt at gennemføre en forstærkning af hallens\nbærende konstruktioner samt en delvis udskiftning af klimaskærmen. Bilag 1 viser placeringen\naf Hal G. Bilag 2 viser oversigtskort over Ringsted Sportscenter.\nBygningen er opført i 2013. Byggeriet blev opført i hovedentreprise. Desværre ophørte\nrådgiveransvaret i 2018 jvf. ABR89, som var gældende da aftalen blev indgået. Det er derfor\nikke mulig at placere et erstatningsmæssigt ansvar hverken hos entreprenør eller rådgiver.\nDer er tidligere bevilget midler til rådgivning. Der bedes nu om at få midler frigivet til udførelsen\naf projektet. Hvis midlerne frigives, forventes byggeriet gennemført hen over sommeren 2026\nfra april til udgangen af september 2027. Bilag 3 uddyber problemerne i hal G.\nAkutarbejder\nRingsted Sportscenter har en omfattende bygningsmasse og der opstår løbende arbejder, som\ner nødvendige at udbedre. Derfor ønskes der afsat 1,5 mio. kr. til akutarbejder, da der kan\nvære behov for at håndtere skader hurtigt, så der ikke opstår følgeskader. Et eksempel på\nakutarbejder kunne være taglækage på Svømmeland, hvor der igen og igen er opstået huller.\nDer er ved at blive udarbejdet en helhedsplan for Svømmeland, som giver grundlaget for at\nlave en samlet plan for Svømmeland.\n\nAnlægspulje til efterslæb på Ringsted Sportscenter\nDelprojekt\n\nOverslag i Tiltag\nkr.\n\nHal G\ngenopretning\n\n7.000.000 Forstærkning af hallens\nbærende konstruktioner\nsamt en delvis\nudskiftning af\nklimaskærmen.\n\nAkut\ngenopretning\n\nI alt\n\nPolitisk handlerum\nDet er muligt at udsætte renoveringen af hal G til næste år, men derved vil der ske yderligere\nnedbrydning af bygningen og derved vil udgifterne til renovering stige.\nDer er mulighed for ikke at give en pulje til akutte arbejder. Det vil betyde, at der skal\nforelægges en sag, hvis der opstår arbejder, der skal udføres. Ringsted Sportscenter har en\nalder og er i en tilstand, hvor erfaringen viser, at der er en sandsynlighed for, at der opstår\nnoget i løbet af året. Særligt har taget på Svømmeland vist sig at være udfordrende."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen har vurderet at det er nødvendigt at udbedre Hal G inden skaderne udvikler\nsig yderligere. Det vurderes ikke at der er fare for sammenstyrtning, men der er opsat\nforstærkning for at skaderne ikke skal udvikle sig.\nDer er desuden behov for en pulje til akutarbejder, idet der løbende opstår mindre skader, der\nskal udbedres.\n\nInddragelse og høring\nDer har været og vil fortsat løbende dialog med Ringsted Sportscenter om projektet"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Med denne sag søges en anlægsbevilling på 8.500.000 kr. til ”Anlægspulje til efterslæb på\nRingsted Sportscenter for 2027” finansieret af det afsatte rådighedsbeløb i budget 2027\ntil ”Anlægspulje til efterslæb på Ringsted Sportscenter\".\n\nSagens forløb\n17/11/2026 Sport-, Kultur- og Fritidsudvalget\nOrientering taget til efterretning.\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-23": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-23",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 23,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Anlægsbevilling til genopretning af Ringsted Kongrescenter (ULBTM, SKFU)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I denne sag skal der tages stilling til frigivelse af anlægsbevilling afsat til Genopretning af Ringsted\nKongrescenter."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at der gives anlægsbevilling på 5 mio. kr. finansieret af det afsatte\nrådighedsbeløb til genopretning af Ringsted Kongrescenter.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU\n\nULBTM\n\nX\n\nX\n\nÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget, BFU=Børne- og\nFamilieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-, Kultur- og Fritidsudvalget,\nULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-, Social- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Denne sag genoptages idet vandinstallationerne i kongressen har vist sig at være i langt dårligere stand\nend forventet. Dette er opdaget imens sagen var ved at blive behandlet. Tidligere behandling se bilag.\nAnlægsbevillingen vil skulle anvendes til de mest presserende forhold vedrørende klimaskærmen,\nbrandsikkerhedsmæssige forhold, samt driftsmæssige og sundhedsmæssige forhold omkring\nkongressens vandinstallation. Med denne bevilling fokuseres der på at reparerer vandinstallationen, sikre\nklimaskærmen og fx hindre indtrængende vand, samt at rette op på brandforhold. Det drejer sig om\nfølgende arbejder:\nReparation og tætning af ovenlysvinduer 200.000 kr.\nFugning af vinduesbånd 100.000 kr.\n\nVinduesudskiftninger 700.000 kr.\nRenovering af brugsvandsinstallationen 3.800.000 kr.\nRenovering af anlæg til røg/brandudluftning 200.000 kr.\nVandinstallationen udgør en meget stor del af udgiften. Det er konstateret, at de nuværende rør er meget\ntæt på at være korroderet igennem mange steder, de indeholder desuden biofilm og der er også\nkonstateret Legionella, som dog er håndteret for nuværende. Såfremt rørene ikke udskiftes, vil der efter\nal sandsynlighed opstå Legionella igen. Der er desuden risiko for, at der sker rørbrud, som vil kunne give\nstore følgeskader.\nDer blev den 10. oktober 2022 afsat en pulje på i alt 10 mio. kr., som skulle sikre at bygningsmassen er\ntidssvarende vedligeholdt i 2026. Med denne sag søges rådighedsbeløb på 5 mio. kr. af de resterende 6\nmio. kr..\nDer vil dermed fortsat være 1 mio. kr. tilbage i puljen, som kan anvendes til forventes i 2027-2029 til akut\nopståede forhold. I budgetaftalen 2027-2030 er der afsat 1,5 mio. kr. årligt til renovering af\nkongrescentret fra 2030 og fremefter. Der er desuden afsat 45 mio. kr. i 2030-2036 til udvikling af\nRingsted Kongrescenter.\nPolitisk handlerum\nDer kan træffes politisk beslutning om at frigive yderligere 1 mio. kr., således at hele den resterende\nbevilling på 6 mio. kr. frigives og anvendes på renovering af bygningen."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Det er administrationens vurdering, at det er vigtigt, at opgaverne vedrørende bygningens klimaskærm\ngennemføres, idet alternativet vil kunne følgeskader på bygningen.\nRenovering af brugsvandsinstallationen er også vigtig, idet det nu ikke længere er muligt at tappe især\nvarmt vand, uden at vandet er misfarvet. Det vil også sikre mod fremtidig Legionella-bakterievækst.\nEndelig vurderer administrationen, at det af hensyn til brugernes sikkerhed, er vigtigt, at forholdene\nomkring brandforhold prioriteres.\nInddragelse og høring\nIngen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Med denne sag søges en anlægsbevilling på 5 mio. kr. til genopretning af Ringsted Kongrescenter\nfinansieret af det i budgettet afsatte beløb. Der resterer derved 1 mio. kr. til genopretning af Ringsted\nKongrescenter.\n\nSagens forløb\n17/11/2026 Sport-, Kultur- og Fritidsudvalget\nAnbefales godkendt.\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt.\n\nAnbefales godkendt.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-24": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-24",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 24,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Godkendelse af anlægsregnskab for udskiftning af gulv i Hal B (ULBTM)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Anlægget for udskiftning af gulv i Hal B er gennemført. Gulvet er udskiftet til et nyt sportsgulv\nmed linolium på trappetrin. Anlægget har et merforbrug på 3.645 kr. der finansieres af\nanlægspuljen for efterslæb på Ringsted Sports Center 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at anlægsregnskabet for udskiftning af gulv i Hal B godkendes\n2. at merforbruget på 3.645 kr. finansieres af anlægspuljen for efterslæb på Ringsted Sports\nCenter 2026.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\n\nX\n\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Gulvet i Hal B i Ringsted Sports Center er udskiftet i sommeren 2023 til nyt sportsgulv\nfinansieret af anlægspuljen til efterslæb på Ringsted Sports Center. Beton på terrændæk i\nhallen er også tilpasset niveau og som belægning på trappetrin i hallen er der lagt linolium,\nprojektet er udført og afsluttet. Bilag 2 viser placeringen af hal B.\nDer er et merforbrug på 3.645 kr., der finansieres af anlægspuljen for efterslæb på Ringsted\nSports Center 2026.\n\nByrådet har på deres møde den 11. april 2023, pkt. 18 fremrykket rådighedsbeløb fra 2025 til\n2023 og godkendt en anlægsbevilling på 2,4 mio. kr. til udskiftning af gulv i Hal B.\nRegnskabet afsluttes nu som en del ad det igangværende oprydningsarbejde i de eksisterende anlægssager.\nAdministrationen er i færd med at reducere i antallet af gamle sager, og en af opgaverne er at lukke de gamle\nanlæg der er afsluttede.\n\nAnlægsregnskaber med en bevilling på 2 mio. kr. og derover skal fremlægges i et selvstændigt\ndagsordenspunkt jf. kasse- og regnskabsregulativet.\nI bilag 3 findes oversigtskort, hvoraf igangværende projekter fremgår.\n\nPolitisk handlerum\nGodkendes anlægsregnskabet ikke kan anlægget for udskiftning af gulv i Hal B ikke afsluttes\nog merforbruget kan ikke finansieres af puljen for efterslæb på Ringsted Sports Center 2026."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at anlægsregnskabet giver et retvisende billede af projektets økonomi og\nressourceforbrug. Det er endvidere administrationens vurdering, at udskiftningen af gulvet er udført\nhåndværksmæssigt forsvarligt og i overensstemmelse med gældende faglige standarder. Gulvet fremstår\nuden væsentlige mangler og vurderes at være i god og holdbar stand.\nInddragelse og høring\n\nIngen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er afsat og bevilget 2.400.000 kr. til udgifter til Udskiftning af gulv i Hal B. Der er forbrugt i\nalt 2.403.645 kr., se bilag 1. Der er et merforbrug på 3.645 kr. der foreslås finansieret af\nanlægspuljen for efterslæb på Ringsted Sports Center 2026.\n\nSagens forløb\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-25": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-25",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 25,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Godkendelse af anlægsregnskab for genopretning af kommunale bygninger 2023 (ULBTM)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Anlægget for genopretning af kommunale bygninger 2023 er gennemført. Der er udført projekter på\nAmtstue Alle 71, Rådhuset, Rønnedevej 9, Vej og Park, m.fl. Anlægget har et mindreforbrug på 920.251\nkr. der foreslås tilført anlægspuljen for genopretning af kommunale bygninger 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at anlægsregnskabet for Genopretning af kommunale bygninger 2023 godkendes\n2. at mindreforbruget på 920.251 kr. tilføres puljen for Genopretning af kommunale bygninger 2027\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU\n\nULBTM\n\nÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nx\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget, BFU=Børne- og\nFamilieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-, Kultur- og Fritidsudvalget,\nULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-, Social- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med pulje 2023 er 26 delprojekter og akutte projekter udført og afsluttet. Det drejer sig fx om udskiftning\naf tag, døre og vindue på Amtstue Alle 71, renovering af kælder under gammel bygning på Rønnedevej\n9, udskiftning af vinduespartier på Bengerds Børnehus, hæve fliser omkring huset på Benløse\nBørnegård, udskiftning af vinduer og sålbænke på Børnehuset Stakhavegård, samt akutmidlerne er\nanvendt til tag på Regnbuen, udbedring af vandskabe på Højbohus, Rådhuset og Ringsted Bibliotek. De\nenkelte projekter er oplistet i bilag.\nDer er et mindreforbrug på 920.251 kr. der dels skyldes, at der kun er gennemført akut genopretning for\n1,2 mio. kr., mens der var budgetteret med 1,5 mio. kr., og at en række projekter er gennemført billigere\n\nend budgetteret. Mindreforbruget tilføres anlægspuljen til genopretning af kommunale bygninger 2027.\nByrådet har på deres møde den 6. februar 2023, pkt. 17 godkendt en anlægsbevilling på 8 mio. kr. til\nGenopretning af kommunale bygninger 2023. Den 9. september 2024, pkt. 10 nedskrev Byrådet\nanlægsbevilling med 0,4 mio. kr. og de 0,4 mio. kr. blev overført til tagudskiftning på Højbohus, herefter\ner den resterende anlægsbevilling på 7,61 mio. kr.\nRegnskabet afsluttes nu fordi det sidste arbejde med udskiftning af vinduespartier og rådne stolper hos\nDaginstitutionen Fristedet er udført. Der har været afholdt 1. årsgennemgang på de enkelte sager.\nAnlægsregnskaber med en bevilling på 2 mio. kr. og derover skal fremlægges i et selvstændigt\ndagsordenspunkt jf. kasse- og regnskabsregulativet.\n\nPolitisk handlerum\nGodkendes anlægsregnskabet ikke kan anlægget for genopretning af kommunale bygninger 2023 ikke\nafsluttes og mindreforbruget kan ikke tilføres anlægspuljen for genopretning af kommunale bygninger\nDet kan vælges at lægge pengene i kassen, den normale procedure med anlægspuljer er, at mer- eller\nmindreforbrug finansieres af anlægspuljen."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Det er administrationens vurdering, at regnskabet giver et retvisende billede af forbruget på anlægget.\nDet er også administrationens vurdering, at renoveringerne er udført efter bedste byggeskik.\n\nInddragelse og høring\nIngen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er afsat og bevilget 7.610.000 kr. til udgifter til Genopretning af kommunale skoler 2023. Der er\nforbrugt i alt 6.689.749 kr., se bilag. Der er et mindreforbrug på 920.251 kr. der foreslås tilført\nanlægspulje for Genopretning af kommunale skoler 2027.\nSaldoen på rammen for kommunale bygninger 2027 er 27.272.000 kr. Med godkendelse af\nmindreforbruget på 920.251 kr. vil saldoen være 28.192.251 kr.\n\nSagens forløb\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-26": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-26",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 26,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Godkendelse af anlægsregnskab for salg af parceller på Annexvej i Høm, etape I (ULBTM)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Anlægget for salg af parceller på Annexvej i Høm, etape I er gennemført. Etapen omfattede 11\nparceller. Anlægget er afsluttet, og alle parcellerne er overdraget til køberne. Der er et provenu\npå minus 992.318 kr. Dette skyldes, der ikke kom nogen overbud i den indledende budrunde.\nAlle parcellerne er derfor solgt til de udbudte mindstepriser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at regnskabet for salg af parceller på Annexvej i Høm, etape I godkendes\n2. at det samlede provenu på minus 992.318 kr. finansieres af Byudviklingsfonden.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nx\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Parcellerne i udstykningen på Annexvej i Høm, etape I har været udbudt til salg. Kort over\nudstykningen fremgår af bilag 1. De 11 parceller er solgt til 5,524 mio. kr. Indtægtsbevillingen\npå 6,5 mio. kr. var højere end den samlede mindstepris for grundene, idet der ofte kommer\noverbud i forbindelse med en udbudsrunden. Mindsteprisen på grundene var en del af\n\ngodkendelsen, jvf. Byrådets møde den 22. juni 2022, pkt. 23.\nDet ses ofte i forbindelse med nye udstykninger, at de første grunde skal sælges før,\ninteressen for alvor vækkes og skaber momentum i salget. Det kan oplyses, at salget af etape\nII med 29 parceller netop er afsluttet, og der kan meldes udsolgt. Her er flere grunde solgt i\noverbud. Byggemodningen af etape II forventes afsluttet i starten af 2027.\nByrådet har på deres møde den 22. juni 2022, pkt. 23 godkendt en anlægsbevilling til udgifter\ntil markedsføring på 270.000 kr., og en anlægsbevilling på 6,5 mio. kr. til indtægter til Salg af\nparceller på Annexvej i Høm, Etape I finansieret af byudviklingsfonden.\nDer er et samlet provenu på minus 992.318 kr. Dette skyldes primært, at indtægterne var\nlavere end forventet. Derudover var udgifterne til markedsføring og landinspektør 16.318 kr.\nhøjere end forventet. Det manglende provenu foreslås finansieret af byudviklingsfonden.\nAnlægsregnskaber med en bevilling på 2 mio. kr. og derover skal fremlægges i et selvstændigt\ndagsordenspunkt jf. kasse- og regnskabsregulativet. I henhold til kasse- og\nregnskabsregulativet skal merforbrug i salgssager tilføres byudviklingsfonden.\nPolitisk handlerum\nGodkendes anlægsregnskabet ikke kan anlægget for salg af parceller på Annexvej i Høm,\netape I ikke afsluttes."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Det er administrationens vurdering, at regnskabet giver et retvisende billede af indtægter og\nudgifter på anlægget.\nDet er samtidig administrationens vurdering, at de 11 parcelhusgrunde, der er solgt i etape I,\nhar været med til at skærpe interessen for etape II, der netop er blevet udsolgt med\novertagelse i 2027.\nInddragelse og høring\nIngen"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er afsat og bevilget 270.000 kr. til markedsføring. Der er forbrugt i alt 286.318 kr., se bilag\n2. Der er afsat og bevilget 6.500.000 kr. i indtægter til salg af parcellerne, der er kommet i alt.\n5.524.000 kr. i salgsindtægter.\nDet samlede provenu på minus 992.318 kr. foreslås finansieret af byudviklingsfonden.\nDer er i byudviklingsfonden en trækningsret på 25 mio. kr. hvoraf der pr. 5. oktober 2026 er\ntrukket 18,211 mio. kr. dermed resterer der en trækningsret på 6,789 mio. kr. Budgettet til\nindtægter og udgifter indgår i saldoen pr. 31. august 2026. Efter trukket provenu på minus\n0,992 mio. kr. vil der være en trækningsret på 5,797 mio. kr.\n\nSagens forløb\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-27": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-27",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 27,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Anlægsbevilling og rådighedsbeløb til forundersøgelse af 11 lavbundsprojekter (ULBTM)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Ringsted Kommune har modtaget tilsagn om tilskud til 11 forundersøgelser af potentielle\nlavbundsprojekter under Den Grønne Trepart. Forundersøgelserne skal afklare projekternes\nrealiserbarhed, lodsejeropbakning og omkostningseffektivitet. Der søges derfor om en samlet\nanlægsbevilling og et rådighedsbeløb på 11,2 mio. kr. til gennemførelse af forundersøgelserne.\nUdgifterne finansieres fuldt ud af en statslig tilskudsordning, og kommunen mellemfinansierer\nalene udgifterne, indtil tilskuddet udbetales.\n\nUdbygningsaftalen med udvikleren af Ringsted Retail kan fastholdes i yderligere to år såfremt\ndet ønskes. Midlerne kan alene anvendes til trafik fra lokalplanens område. De må ikke\nanvendes til håndtering af øget trafik fra andre områder. De seneste trafiktællinger viser en\nmindre stigning i trafikken efter udbygningen af Ringsted Retail, og det er administrationens\nvurdering, at trafikmængden ikke stiger markant mere på grund af projekterne i lokalplanen.\nDer vil derfor ikke være et behov for at ombygge rundkørslen ved Klosterparks Allé, Volden og\nKlosterkrogen i de kommende år. Administrationen anbefaler, at projektet ”Trafikudvikling\nKlosterparks Allé” lukkes, og at udbygningsaftalen ophæves. Herved vil udviklers bidrag\nbortfalde, mens det resterende kommunale anlægsbudget tilbageføres til anlægsfonden."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at der gives et rådighedsbeløb og en anlægsbevilling på 11,2 mio. kr. til gennemførelse af\nforundersøgelser for 11 potentielle lavbundsprojekter, som mellem finansieres af\nkommunekassen.\n2. at der gives et rådighedsbeløb og indtægtsbevilling til indtægter på 11,2 mio. kr. til de 11\nlavbundsprojekter, vedrørende de statslige tilskudsmidler til de 11 lavbundsprojekter, som\ntilgår kommunekassen.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU\n\nDirektionen indstiller,\n1. at projektet ”Trafikudvikling Klosterparks Allé” lukkes og der udarbejdes anlægsregnskab;\n2. at udbygningsaftalen med udvikleren af boksbutikkerne ophæves.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nx\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget\n\nom høring\nOrientering\n\nx\n\nx\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ringsted Kommune har søgt Styrelsen for Grøn Arealomlægning og Vandmiljø (SGAV) om\ntilskud til forundersøgelser af 11 lavbundsprojekter, der indgår i arbejdet med Grøn Trepart.\nKommunen har nu modtaget tilsagn om tilskud til forundersøgelser af alle 11 projekter.\nForundersøgelserne skal som udgangspunkt være afsluttet inden sommeren 2028.\nFor lodsejerne betyder tilsagnene, at mulighederne for at gennemføre projekter indenfor de\nhidtidige overordnede udpegninger nu kan undersøges nærmere. En udpegning af et areal er\nikke ensbetydende med, at der gennemføres et projekt på arealet. Formålet med\nforundersøgelserne er netop at skabe et mere konkret grundlag for at vurdere, om projekterne\ner teknisk mulige, om der er den nødvendige lodsejeropbakning, og om projekterne samlet set\ner omkostningseffektive.\nDet er væsentligt for lodsejerne, at disse forhold bliver afklaret så tidligt som muligt i\nprocessen. Forundersøgelserne skal blandt andet belyse, hvilke konsekvenser og muligheder\net eventuelt projekt vil have for de enkelte ejendomme. Resultaterne skal dermed give\nlodsejerne et bedre grundlag for at tage stilling til, om de ønsker at indgå i et eventuelt\nefterfølgende realiseringsprojekt. Alle lodsejere som er med i forundersøgelserne vil ikke blive\nramt af CO2 -afgiften.\nProjekterne som har modtaget et tilsagn er: Benløse Bæk, Damrenden, Haraldsted Å, Torpet\nMose, Englemosen, Suså NV for Vetterslev, Bedsted Bæk, Bøstofte, Kværkeby Mose, Køge\nÅdal-Folehaven og Skurremose. De meddelte tilsagn fremgår af Bilag 1\nDe 11 projektområder udgør samlet ca. 700 ha og omfatter knap 100 lodsejere. En oversigt\nover projekterne fremgår af Bilag 2.\nForundersøgelserne består af ejendomsmæssige forundersøgelse der skal afdække\nlodsejernes interesse i at deltage i projekterne, mens den teknisk-biologiske forundersøgelse\nblandt andet belyser områdets hydrologiske forhold, muligheder og konsekvenser for at hæve\nvandstanden samt den forventede klimaeffekt.\nDeltagelse i et eventuelt realiseringsprojekt er frivillig, og lodsejeropbakning er derfor en\ngrundlæggende forudsætning for projekternes gennemførelse.\nSom led i forundersøgelserne vurderes desuden projekternes omkostningseffektivitet, da dette\ner afgørende for mulighederne for efterfølgende at opnå statsligt tilskud til realisering.\nUdgifterne på 11,2 mio. kr. omfatter både eksterne konsulentydelser og kommunens interne\nressourceforbrug til projektledelse og teknisk bidrag. Byrådet har tidligere besluttet at ca. 1 mio.\nkr. fra klimapuljen er reserveret til at understøttet arbejdet med Den Grønne Trepart.\nPå tidspunktet for sagens behandling er der endnu ikke gennemført udbud af de nødvendige\nkonsulentydelser, ligesom omfanget af den kommende lodsejerdialog og det tilhørende\nressourceforbrug endnu ikke kendes fuldt ud. Af hensyn til tidsfristerne i tilskudsordningen der\nudløber sommeren 2028 er det nødvendigt at fremlægge sagen på nuværende tidspunkt. En\ntidslinje for den forventede tidsplan fremgår af Bilag 3.\n\nPå baggrund af resultaterne af forundersøgelserne vil det blive vurderet, hvilke projekter der\nhar grundlag for at gå videre mod eventuel realisering. Ringsted Kommune afholder udgifterne\ni projektperioden, mens tilskuddet fra SGAV udbetales på baggrund af afholdte og\ndokumenterede udgifter i overensstemmelse med tilsagnsvilkårene. Kommunen vil derfor\nmidlertidigt mellemfinansiere projektudgifterne og forventes at modtage refusion i perioden\nFordelingen af anlægsbevillingen på de enkelte projekter fremgår af Bilag 4\n\nPolitisk handlerum\nByrådet kan vælge ikke at give den ansøgte anlægsbevilling og frigive det nødvendige\nrådighedsbeløb til forundersøgelserne. I så fald vil Ringsted Kommune ikke kunne udnytte de\nmeddelte statslige tilsagn, og der vil ikke blive gennemført nærmere undersøgelser af de 11\npotentielle lavbundsprojekters tekniske muligheder, lodsejeropbakning og\nomkostningseffektivitet.\nDet vil samtidig begrænse kommunens muligheder for at udvikle og realisere\nlavbundsprojekter, der kan bidrage til opfyldelsen af målene i Den Grønne Trepart og Ringsted\nKommunes klimaplan. Derudover vil det være i modstrid med de forventninger til\nkommunernes medvirken, som følger af aftalen om Den Grønne Trepart.\n\nUdvalget for Land og By, Teknik og Miljø besluttede den 16. september 2026, pkt. 19, bilag\n1, at sende sagen tilbage til administrationen med henblik på at undersøge, om\nudbygningsaftalen med udvikler af Ringsted Retail kan fastholdes i yderligere to år, så den\nfremtidige trafikudvikling kan afventes, inden der træffes endelig beslutning om ombygning af\nrundkørslen ved Klosterparks Allé, Volden og Klosterkrogen.\nAdministrationen har på den baggrund foretaget en juridisk vurdering af udbygningsaftalen og\nmulighederne for at opretholde den stillede sikkerhedsstillelse på 1,5 mio. kr.\nUdbygningsaftalen kan efter planlovens § 21 b fastholdes i en vis periode, når projektet ikke er\nopgivet, og når aftalen fortsat har sammenhæng med lokalplan 332. Aftalen dækker således\nkun trafik, der kommer fra lokalplanområdet, og må ikke anvendes til trafik fra andre områder.\nLokalplanområdet fremgår af bilag 2. Der er ikke fastsat en lovbestemt tidsgrænse, men\nkommunen skal efter almindelige forvaltningsretlige principper undgå at fastholde aftalen i et\nurimeligt langt tidsrum, hvor projektet reelt ikke forventes gennemført.\nAdministrationen har på den baggrund vurderet, at en forlængelse på op til to år er forenelig\nmed aftalens karakter og formål og ikke kan anses for urimelig. En længere forlængelse vil\nkræve en ny politisk stillingtagen til, om projektet fortsat ønskes fastholdt som en realistisk\nmulighed. Den stillede garanti kan derfor opretholdes i de forespurgte to år. Der er ikke\nidentificeret forhold i aftalen eller i planlovens regler, som medfører, at aftalen bortfalder som\nfølge af en udskydelse af beslutningen om vejprojektet.\nAftalen indeholder bestemmelser om bortfald i særlige situationer, herunder hvis lokalplanen\nophæves eller ombygningen ikke udføres. Ingen af disse forhold er aktuelle. Udbygningsaftalen\ner dog bundet op på de tiltag som lokalplan 332 tillader, og kan ikke videreføres udover\nlokalplanens afgrænsninger.\nDen juridiske vurdering viser desuden, at aftalen ikke indeholder krav om, at ombygningen af\nrundkørslen ved Klosterparks Allé, Volden og Klosterkrogen skal være igangsat eller\ngennemført inden en bestemt dato. Kommunen har derfor mulighed for at afvente den videre\ntrafikale udvikling, før der træffes endelig beslutning om projektets gennemførelse.\nSåfremt projektet ”Trafikudvikling Klosterparks Allé” lukkes og udbygningsaftalen ophæves,\nbortfalder udviklerens bidrag på 1,5 mio. kr., mens restbudgettet tilføres anlægsfonden. Skulle\nder senere opstå en ændret trafikal situation som følge af nye projekter i området, vil\nadministrationen kunne fremlægge en ny sag med forslag til trafikale tiltag, herunder eventuel\nombygning af rundkørslen.\nDe seneste trafiktællinger, som fremgår i bilag 1, viser en mindre stigning i trafikken efter\nudbygningen af Ringsted Retail.\n\nPolitisk handlerum\nDet vil være muligt for kommunen at fastholde udbygningsaftalen og sikkerhedsstillelsen i to år\nog gennemføre nye trafiktællinger med henblik på at vurdere, om der opstår et behov for\nombygning af rundkørslen. Denne løsning indebærer, at beslutningen om projektets\ngennemførelse udskydes.\n\nKommunen kan også vælge at igangsætte ombygning af rundkørslen til signalanlæg. De\naktuelle trafiktal nødvendiggør ikke en ombygning af hensyn til kapacitet, men en ombygning\nvil kunne forbedre forholdene for de lette trafikanter."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at gennemførelse af forundersøgelserne er en nødvendig\nforudsætning for at de lodsejere, hvis arealer er udpeget i omlægningsplanerne, kan få en\nvurdering af, om deres arealer kan bidrage til en omkostningseffektiv reduktion af CO2 og\ndermed bidrage til opfyldelsen af målene i Den Grønne Trepart.\nAdministrationen vurderer, at det kan være svært at nå alle projekter indenfor tidsrammen hvor\nde skal være forundersøgt inden sommeren 2028. Specielt for de projekter hvor mange\nlodsejere skal inddrages.\nForundersøgelserne vil samtidig belyse projekternes tekniske muligheder, lodsejeropbakning,\nklimaeffekt og omkostningseffektivitet. Når resultaterne af forundersøgelserne foreligger, vil der\nvære et fyldestgørende grundlag for at vurdere, hvilke projekter der er egnede til videre\nudvikling og eventuel realisering.\nFor lodsejerne betyder forundersøgelserne, at der indledes en mere konkret dialog om\nprojekternes muligheder og betydning for de enkelte ejendomme. En forundersøgelse er ikke\nen beslutning om realisering, og en evt. realisering forudsætter forsat frivillig deltagelse.\nInddragelse og høring\nAlle projekternes endelige realisering forudsætter lodsejernes frivillige deltagelse. Lodsejerne\nvil blive inddraget gennem de ejendomsmæssige og teknisk-biologiske forundersøgelser, hvor\nderes interesse i at deltage i projekterne afklares.\nLodsejernes bemærkninger, ønsker og forslag vil indgå i det videre arbejde med projekterne.\n\nPå nuværende tidspunkt ses der ikke at være behov for at ombygge rundkørslen. Der er ej\nheller grund til at forvente, at der kommer så meget trafik, at trafikken fra lokalplanområdet\nmedfører et behov for, at rundkørslen skal bygges om. Det skyldes bl.a. at der i det oprindelige\nprojekt var forudsat bl.a. et hotel på området, som ville have givet en anden belastning.\n\nInddragelse og høring\nIngen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Med denne sag søges der om en anlægsbevilling på 11,2 mio. kr. til gennemførelse af\nforundersøgelser af 11 lavbundsprojekter. Den resterende del af tilsagnet er målrettet den\nefterfølgende realiseringsfasen samt udbetaling af lodsejerkompensationer, hvis\nforundersøgelserne dokumenterer, at projekterne er omkostningseffektive.\nAnlægsbudgettet er baseret på et estimat af interne projektressourcer, eksterne\nkonsulentydelser mv. og bygger på erfaringer fra både kommunens egne tidligere\nlavbundsprojekter og tilsvarende projekter i andre kommuner.\nGennemførelsen af forundersøgelserne vil medføre et midlertidigt træk på kommunens\nlikviditet. Dette forventes dog løbende udlignet ved refusion fra styrelsen, efterhånden som de\nenkelte projekter afsluttes. Kommunen har desuden mulighed for at anmode styrelsen om\nrateudbetalinger af afholdte udgifter under forundersøgelsesfasen, hvilket kan begrænse de\nlikviditetsmæssige forskydninger.\n\nSagens forløb\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup\n\nBeslutning om ikke at ombygge rundkørsel til signalanlæg ved\nKlosterparks Allé (ULBTM)\nIndhold\n\nSagen har ingen bevillingsmæssige konsekvenser, da økonomien enten vil blive behandlet i en\nkommende sag ang. anlægsregnskab eller i forbindelse med frigivelse af en anlægsbevilling.\nDer er i alt afsat 9,225 mio. kr. til ”Trafikudvikling Klosterparks Alle”, heraf er der på nuværende\ntidspunkt brugt ca. 1,8 mio. kr. hvis projektet stoppes vil restbudgettet på 7,425 mio. kr. blive\ntilført anlægsfonden jf. Kasse- og regnskabsregulativet.\nDet præcise beløb der foreslås tilført anlægsfonden vil fremgå af den kommende sag.\n\nSagens forløb\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nBenjamin Pedersen, Jess Friis, Per Nygaard, Timo Jensen og Klaus Hansen stillede forslag\nom at udskyde afslutningen af projektet og fastholde udbygningsaftalen i to år med udvikleren af\nboksbutikkerne og der skal foretages fornyet trafikmåling forud for at sagen forelægges.\n\nGodkendt efter afstemning:\nNavn\n\nListe\n\nFor\n\nSadik Zeki Topcu\n\nA\n\nX\n\nBenjamin Pedersen\n\nC\n\nX\n\nJess Friis\n\nC\n\nX\n\nPer Nygaard\n\nC\n\nX\n\nTimo Jensen\n\nC\n\nX\n\nBritta Nielsen\n\nF\n\nKlaus Hansen\n\nV\n\nI alt\n\nImod\n\nUndlod\n\nX\nX\n\nBritta Nielsen stemmer imod med en bemærkning om, at hun ikke mener der er behov for at\nombygge rundkørslen til et signalanlæg.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-29": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-29",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 29,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Beslutning om etablering af udetoilet på Børnehuset Heimdal (ULBTM, BFU)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forud for opførelsen af Mælkevejen, blev kapaciteten på Heimdal midlertidigt øget ved hjælp af\nopstilling af pavillon. Pavillonen er nu fjernet igen. Med denne sag skal der tages stilling til, om\nder på pavillonens tidligere placering skal opføres et udetoilet til brug af børnene tilknyttet\nHeimdal."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at der etableres et udetoilet\n2. at udgiften dækkes af det allerede bevilligede budget\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nx\n\nx\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet besluttede den 7. juni 2021 at bevillige 2.252.600 kroner til at øge kapaciteten på\nBørnehuset Heimdal ved hjælp af midlertidige pavilloner. Byrådet bevilgede yderligere 793.621\nkr. den 5. december 2022.\nEfterfølgende er børnehaven Mælkevejen blevet etableret, og børnene fra pavillonerne er i dag\ntilknyttet Mælkevejen. Pavillonerne ved Børnehuset Heimdal er derfor blevet afhændet, og\n\nområdet skal nu reetableres.\nI forbindelse med at området skal reetableres, har børnehaven Heimdal et ønske om at få\netableret et udetoilet på det område, der skal reetableres. Kort der viser placering af udetoilet,\nse bilag 1.\nAlternativet til etablering af et udetoilet er en reetablering af området. En reetablering vil b.la.\nomfatte opgravning og fjernelse af de kloak- og vandinstallationer, som blev anvendt mens der\nstod pavilloner på området. Ved etablering af udetoilet behøver området kun en mindre\nreetablering, idet flisebelægningen kan bruges som adgang til udetoilettet, samt at kloak- og\nvandinstallationer i jorden ikke skal fjernes. Dette gør, at forskellen i økonomien ved hhv. at\nreetablere området og opføre et udetoilet kun udgør ca. 100.000 kr.\nDer er aktuelt en rest anlægsbevilling på ca. 877.000. kr. på projektet. Restbeløbet skyldes, at\nrenovering af pavillonerne har været billigere end forudsat samt at lejeprisen har været billigere\nend forudsat. Et udetoilet koster skønnet 450.000 kr., eller 100.000 kr. mere end det koster at\nreetablere og fjerne rørinstallationerne fra arealet, hvor pavillonen var placeret.\nNår børnene på Børnehuset Heimdal er ude på legepladsen og skal på toilettet, skal de følges\naf en pædagog. Dette lægger et præs på pædagogerne, da der ofte når et barn skal på toilettet\ner behov for, at barnet skal hjælpes af en voksen. Derfor vil der ofte mangle en til opsyn med\nde øvrige børn, der er tilbage på legepladsen. Problemet er størst når det regner, sner eller er\nkoldt, da børnene skal af med ydertøjet og sko.\nDa Børnehuset Heimdal har fokus på udelivet, er der en række pædagogiske fordele ved et\nudetoilet. Et udetoilet kan derfor være en værdifuld del af en pædagogisk praksis, der\nunderstøtter børns udvikling på flere niveauer. Se bilag 2.\nPolitisk handlerum\nDet kan besluttes, at der ikke etableres et udetoilet, men at arealet i stedet reetableres. Det vil\nmedføre en besparelse på ca. 100.000 kr."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Det er administrationens vurdering at etablering af et udetoilet vil være godt set ud fra en\npædagogisk tilgang.\nDet vurderes, at kloak- og vandrør ikke kan efterlades i jorden, idet det er et krav at ikkeanvendte kloaker fjernes eller fyldes med beton grundet risikoen for at de ikke anvendte rør\ntiltrækker rotter. Vandinstallationen bør ligeledes fjernes, da ”døde” installationer øger risikoen\nfor infektion af vandet, ligesom det vil kunne opstå problemer med frostsprængninger.\nInddragelse og høring\nIngen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser, idet udetoilette kan opføres inden for\n\nallerede givet bevilling.\n\nSagens forløb\n18/11/2026 Børne- og Familieudvalget\nOrientering taget til efterretning.\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-30": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-30",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 30,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Beslutning om gadebelysning på Køgevej (ULBTM)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Udbygningen af Hulemarken medfører et øget behov for sikre trafikforhold mellem byen og det\nnye boligområde. I den forbindelse foreslås det, at der etableres gadebelysning på\nstrækningen mellem rundkørslen på Østre Ringvej og lyskrydset ved Kildemarken på Køgevej,\nse kortbilag. Der er allerede etableret gadelys ved Hulemarken. Det vurderes, at der skal\nopsættes ca. 25 lysmaster, og anlægsudgiften anslås til 0,5 mio. kr. Administrationen foreslår,\nat der anvendes midler fra Forarbejder til Hulemarken, der allerede er frigivet.\nMed denne sag skal udvalget tage stilling til, om der skal opsættes gadebelysning på\nstrækningen, og hvordan det skal finansieres."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller,\n1. at der etableres gadebelysning på Køgevej mellem rundkørslen på Østre Ringvej og\nlyskrydset ved Kildemarken\n2. at der anvendes 0,5 mio. kr. finansieret af Forarbejder til Hulemarken.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU\n\nSKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nX\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Klima- og Miljøudvalget besluttede den 17. juni 2021, pkt. 8 at de ønskede en sag om\nbelysning af både vej og cykelsti langs Køgevej, når Hulemarken er klar til udstykning.\nUdbygningen af Hulemarken er nu i gang, og området forventes løbende at blive taget i brug af\nnye beboere fra sommeren 2027. Som følge heraf foreslås det, at der opsættes gadelys for at\nsikre sammenhæng mellem den eksisterende by og det nye boligområde.\nPå dele af strækningen er der allerede etableret gadebelysning, men på strækningen mellem\nrundkørslen på Østre Ringvej og lyskrydset ved Kildemarken på Køgevej mangler der\nbelysning, se kortbilag. Den nye gadebelysning vil styrke oplevelsen af tryghed for både\ngående, cyklister og øvrige trafikanter. Der har desuden gennem tiden været flere\nhenvendelser om den manglende belysning på strækningen.\nPå baggrund af foreløbige beregninger og tekniske vurderinger, ser projektet ud til at komme til\nat bestå af en etablering af ca. 25 lysmaster. Den samlede anlægsudgift er på nuværende\ntidspunkt anslået til 0,5 mio. kr.\nDa projektet ikke kan udføres inden for de afsatte midler til drift af gadebelysningen, foreslår\nadministrationen, at der anvendes midler i det allerede frigivne anlæg til forberedende arbejder\npå Hulemarken. Her er, grundet andre justeringer i projektet, mulighed for at afsætte 0,5 mio.\nkr. til gadebelysningen. Med denne finansieringsmulighed kan arbejdet igangsættes snarest\nmuligt.\n\nPolitisk handlerum\nHvis udvalget ikke ønsker at anvende midler fra Forarbejder til Hulemarken, er der mulighed for\nat finansiere gadebelysningen med anlægsrammen for udvikling af Hulemarken. I\nanlægsrammen er der midler til at finansiere de 0,5 mio. kr. Hvis denne løsning vælges, skal\nder gives en anlægsbevilling til et selvstændigt anlægsprojekt finansieret af anlægsrammen.\nDenne finansiering kan iværksættes fra 2027 og frem."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen vurderer, at gadebelysning vil understøtte den igangværende byudvikling af\nHulemarken og bidrage til en mere tryg forbindelse mellem byen og det nye boligområde.\nDerudover vil etableringen af de ca. 25 nye lysmaster skabe en mere sammenhængende\ngadebelysning langs Køgevej.\nAdministrationen vurderer, at etablering af gadebelysning på strækningen mellem rundkørslen\npå Østre Ringvej og lyskrydset ved Kildemarken er en naturlig og nødvendig del af den\nigangværende udbygning af Hulemarken. Belysningen vil bidrage til at skabe en bedre\nforbindelse mellem det eksisterende byområde og det nye boligområde for både gående,\ncyklister og øvrige trafikanter.\nAdministrationen vurderer, at der er en klar sammenhæng mellem etableringen af\ngadebelysningen og de øvrige anlægsarbejder, der gennemføres i forbindelse med udviklingen\n\naf Hulemarken. Det vurderes derfor hensigtsmæssigt at finansiere projektet via Forarbejder til\nHulemarken, hvor der som følge af projektjusteringer er mulighed for at omprioritere de\nnødvendige midler.\nPå den baggrund vurderer administrationen, at finansiering via Forarbejder til Hulemarken er\nden mest hensigtsmæssige løsning, da den både sikrer en rettidig etablering og understøtter\nmålsætningen om en tryg og velfungerende overgang fra boligområdet til byen.\n\nInddragelse og høring\nIngen"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Det foreslås, at der afsættes 0,5 mio. kr. af det eksisterende anlægsbudget Forarbejder til\nHulemarken.\n\nSagens forløb\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt med en bemærkning om at den skal behandles i Byrådet\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-31": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-31",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 31,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.522Z",
+   "titel": "Ny betalingsvedtægt for Ringsted Spildevand (ULBTM)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Sagen vedrører legalitetsgodkendelse af en revideret betalingsvedtægt for Ringsted\nSpildevand A/S og Ringsted Centralrens A/S. Betalingsvedtægten er opdateret i overensstemmelse\nmed gældende lovgivning og de takstmæssige forhold for 2027, herunder nye regler for pristalsregulering af\ntilslutningsbidrag og faste vandafledningsbidrag.\nVedtægten træder i kraft den 1. januar 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionen indstiller, at den reviderede betalingsvedtægt 2027 for Ringsted Spildevand A/S\nog Ringsted Centralrenseanlæg A/S godkendes.\nSagsgang:\nBY\n\nØK\n\nABU\n\nBFU\n\nSUU SKFU ULBTM ÆSSU"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "om høring\nOrientering\n\nx\n\nx\n\nx\n\nBY=Byråd, ØK=Økonomiudvalg, ABU= Arbejdsmarkeds- og Beskæftigelsesudvalget,\nBFU=Børne- og Familieudvalget, SUU=Skole- og Undervisningsudvalget, SKFU=Sport-,\nKultur- og Fritidsudvalget, ULBTM=Udvalget for Land og By, Teknik og Miljø, ÆSSU=Ældre-,\nSocial- og Sundhedsudvalget"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Bestyrelsen for Ringsted Forsyning A/S har behandlet forslag til en ny betalingsvedtægt og\nsendt denne til godkendelse i Byrådet.\nEfter betalingslovens § 3 b skal spildevandsforsyningsselskabets betalingsvedtægt godkendes\naf kommunalbestyrelsen. Kommunens godkendelse skal ske efter reglerne i bekendtgørelsen\nom anmeldelse og godkendelse af spildevandsforsyningsselskabers betalingsvedtægter og\n\nvandafledningsbidrag m.v.\nForslaget til ny betalingsvedtægt for Ringsted Spildevand A/S og Ringsted Centralrenseanlæg\nA/S. erstatter den gældende vedtægt fra 2021 og er opdateret i overensstemmelse med\ngældende lovgivning og de takstmæssige forhold gældende fra 2027. Vedtægten fastlægger\nregler for tilslutning til spildevandsforsyningen og opkrævning af tilslutningsbidrag,\nvandafledningsbidrag og øvrige bidrag inden for forsyningsområdet.\nNy lovgivning ændrer pristalsreguleringen for tilslutningsbidrag og det faste\nvandafledningsbidrag i betalingsvedtægten. Dette betyder, at tilslutningsbidraget for 2027\nreguleres til 68.701,40 kr. ekskl. moms, hvilket svarer til en stigning på 6.267,06 kr. ekskl.\nmoms. Stigningen skyldes, at man i Ringsted tidligere har brugt bygge- og\nboligomkostningsindekset, men nu bliver det ensrettet på landsplan.\nDen nye betalingsvedtægt med rettelser kan ses af Bilag 1. Rettelsesblad fremgår af Bilag 2.\nPolitisk handlerum\nByrådets råderum i sagen er begrænset til en legalitetsvurdering. Byrådet kan derfor ikke\nændre den fremlagte betalingsvedtægt, medmindre, der er tvivl om dens lovlighed."
+    },
+    {
+     "titel": "Vurdering",
+     "tekst": "Administrationen har gennemgået den fremsendte betalingsvedtægt og vurderer, at den\nopfylder de gældende krav. Administrationen finder derfor, at betalingsvedtægten kan\ngodkendes\nInddragelse og høring\nIngen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\n\nSagens forløb\n18/11/2026 Udvalget for Land og By, Teknik og Miljø\nAnbefales godkendt.\nAfbud: Sine Reffstrup (Stedfortræder Sadik Zeki Topcu)\n\nAfbud: Sine Reffstrup"
+    }
+   ],
+   "bilag": []
+  },
+  "ringsted-2026-11-30-oekonomiudvalget-32": {
+   "id": "ringsted-2026-11-30-oekonomiudvalget-32",
+   "kommune": "Ringsted",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-30",
+   "type": "dagsorden",
+   "nr": 32,
+   "kilde": "https://dagsordener.ringsted.dk/vis?id=50cbfff5-bae3-47cf-b5c3-a6ac3957b226",
+   "hentet": "2026-11-25T14:41:13.523Z",
+   "titel": "Orientering fra borgmester og direktion",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Indhold"
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -16476,20 +17525,20 @@
    "tjekket": "2026-11-22"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=7913d7a4-3a1f-41c9-bb69-859e019a94a6": {
-   "senest": "2026-11-10",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=1f44f984-c289-4eee-a34a-161f838ee3e2": {
-   "senest": "2026-11-20",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=c0b185b6-f8c1-41df-b6ea-b89a204df7b3": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=2219249f-a60c-4f6d-82ea-8758ad24d057": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=e9695b23-5612-4dd6-8821-6c9f774db27d": {
    "senest": "2021-12-21",
@@ -16497,19 +17546,19 @@
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=a541bf7c-a8df-4227-a79f-1ee93776ac4b": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=ced7a1ff-326a-48ff-ba4a-d1e5831f675d": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=274ff71f-7137-4564-8cdc-0fe0c43dd82a": {
    "senest": "2026-11-23",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=f5413cf0-57a6-4114-855f-62a5f082fdf0": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=24b562c7-a0c1-4d59-b6c9-7ee90e54f6f7": {
    "senest": "2021-12-21",
@@ -16517,7 +17566,7 @@
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=537ab301-a9e8-40ef-870a-0ea15b4eb76a": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=b17b6476-63bd-4aad-a185-a0386a1b4b5a": {
    "senest": "2021-12-27",
@@ -16525,7 +17574,7 @@
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=7db3296a-a819-4d92-8600-aaaa26490192": {
    "senest": "2025-12-09",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=d8eab5dd-7f99-4853-844e-1374cbe2e896": {
    "senest": "2021-12-21",
@@ -16537,19 +17586,19 @@
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=f837ab8c-20ce-45eb-ac6c-56b506d3e0a9": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=0c1ad956-d7bd-4a64-b881-03a0d0d1d25a": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=28364300-4360-4ffb-a758-89901cd2c738": {
    "senest": "2026-11-24",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=caad5da9-6e15-47a8-8f41-fb383bfbb6c9": {
-   "senest": "2026-11-17",
-   "tjekket": "2026-11-24"
+   "senest": "2026-11-25",
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=47237132-bf6e-42e5-be8a-ab54c4912b23": {
    "senest": "2021-12-21",
@@ -16557,11 +17606,11 @@
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=83c86731-5ce3-42fd-bf80-d36c7c4a2365": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=eed2ccb7-7940-4a95-9036-b5c8e9fed6c5": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=aff57bba-0c8f-4452-b9b2-757a0b72df5d": {
    "senest": "2022-01-10",
@@ -16569,27 +17618,27 @@
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=1af49c53-0407-4662-a0a0-205db1bb8482": {
    "senest": "2026-11-10",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=7740a8cf-a8e3-441b-9f2b-e14d473ae521": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=345c475d-5514-46c9-9794-f8da729945cc": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=24b993f0-fe4a-458b-8384-24923851afa5": {
    "senest": "2026-04-09",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=b4556f16-f704-42e8-9aa2-5032a342c26d": {
    "senest": "2026-01-23",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=00fd9ebc-6a35-458e-bb65-4cd35f25151d": {
    "senest": "2026-11-24",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=c0664620-d50e-4a8c-9d59-91488b70b292": {
    "senest": "2023-05-12",
@@ -16597,7 +17646,7 @@
   },
   "https://dagsordener.ringsted.dk/Sitemap/ForCommittee?committeeId=514de8b9-f690-450b-ad19-c7c095569c8a": {
    "senest": "2026-09-29",
-   "tjekket": "2026-11-24"
+   "tjekket": "2026-11-25"
   },
   "https://dagsordener.ringsted.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -16605,6 +17654,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-24T23:53:13.654Z",
+ "opdateret": "2026-11-25T14:41:29.657Z",
  "kommune": "Ringsted"
 }
