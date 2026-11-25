@@ -136,10 +136,9 @@
     <details class="import" id="sp-boks">
       <summary id="sp-titel">Spørgeskema</summary>
       <p class="lille" id="sp-status">Henter …</p>
-      <p class="lille">Går til dem, der har bekræftet deres tilmelding for mindst 30 dage siden og sagt ja til andre mails end mandagsmailen. Hver får et personligt link (<code>spoergeskema.html</code>) og kun én mail pr. runde. Send en prøve til dig selv først.</p>
+      <p class="lille">Når runden er slået til, får dem, der har bekræftet deres tilmelding for mindst 30 dage siden, en boks med et personligt link (<code>spoergeskema.html</code>) nederst i mandagsmailen. Højst to mandage, og ikke efter de har svaret. Under Mandagsmail kan du se boksen i mailene, før de sendes.</p>
       <div class="handl-raekke">
-        <button class="knap sek" id="sp-proeve" type="button">Send en prøve til mig</button>
-        <button class="knap" id="sp-send" type="button" disabled>Send</button>
+        <button class="knap" id="sp-aktiv" type="button" disabled>Slå til i mandagsmailen</button>
       </div>
       <div id="sp-resultat"></div>
     </details>
@@ -315,11 +314,11 @@
     betale: ["Højst betale om måneden", { nej: "Intet, ville stoppe", under_30: "Under 30 kr.", "30_59": "30-59 kr.", "60_99": "60-99 kr.", "100_plus": "100 kr. eller mere" }]
   };
   function visSpoerg(j) {
-    $("#sp-titel").textContent = "Spørgeskema (" + j.svar + " svar af " + j.sendt + " sendt)";
-    $("#sp-status").textContent = "Runde " + j.runde + ": " + j.kan_faa + " kan få det nu. " + j.sendt + " har fået det, og " + j.svar + " har svaret. "
-      + j.kun_mandag + " har brugt Sagsvagt i over " + j.dage + " dage, men har kun sagt ja til mandagsmailen og får det ikke."
-      + (j.sendt_nu != null ? " Sendt nu: " + j.sendt_nu + (j.fejlede && j.fejlede.length ? ", fejlede: " + j.fejlede.join(", ") : "") + "." : "");
-    var k = $("#sp-send"); k.disabled = !j.kan_faa; k.textContent = j.kan_faa ? "Send til " + Math.min(j.kan_faa, 200) + (j.kan_faa > 200 ? " (af " + j.kan_faa + ")" : "") : "Ingen at sende til";
+    $("#sp-titel").textContent = "Spørgeskema (" + (j.aktiv ? "slået til, " : "") + j.svar + " svar)";
+    $("#sp-status").textContent = "Runde " + j.runde + " er " + (j.aktiv ? "slået til" : "slået fra") + ". " + j.kan_faa + " kan få boksen i næste mandagsmail. "
+      + j.vist + " har fået den, og " + j.svar + " har svaret.";
+    var k = $("#sp-aktiv"); k.disabled = false; k.dataset.til = j.aktiv ? "" : "1"; k.className = j.aktiv ? "knap sek" : "knap";
+    k.textContent = j.aktiv ? "Slå fra i mandagsmailen" : "Slå til i mandagsmailen";
     if (!j.svar) { $("#sp-resultat").innerHTML = '<p class="lille">Ingen svar endnu.</p>'; return; }
     var html = "";
     Object.keys(SP).forEach(function (n) {
@@ -337,13 +336,11 @@
     $("#sp-resultat").innerHTML = html;
   }
   function hentSpoerg() { api("admin/spoergeskema.php", { handling: "status" }).then(visSpoerg).catch(function () { $("#sp-status").textContent = "Kunne ikke hente spørgeskemaet."; }); }
-  $("#sp-proeve").addEventListener("click", function () {
-    api("admin/spoergeskema.php", { handling: "proeve" }).then(function (j) { besked("Prøven er sendt til " + j.sendt_til + "."); }).catch(function (e) { besked(e.message, "fejl"); });
-  });
-  $("#sp-send").addEventListener("click", function () {
-    var k = this; if (!confirm(k.textContent + "? Hver får én mail med et personligt link.")) return;
-    k.disabled = true;
-    api("admin/spoergeskema.php", { handling: "send" }).then(visSpoerg).catch(function (e) { besked(e.message, "fejl"); k.disabled = false; });
+  $("#sp-aktiv").addEventListener("click", function () {
+    var k = this, til = !!k.dataset.til; k.disabled = true;
+    api("admin/spoergeskema.php", { handling: "aktiv", til: til }).then(function (j) {
+      visSpoerg(j); besked(til ? "Spørgeskemaet kommer med i de næste mandagsmails." : "Spørgeskemaet er slået fra i mandagsmailen.");
+    }).catch(function (e) { besked(e.message, "fejl"); k.disabled = false; });
   });
   var FOTOSTATUS = { ny: "Ny", godkendt: "Godkendt", afvist: "Afvist" };
   function hentFotos() {

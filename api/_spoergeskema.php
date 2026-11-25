@@ -1,13 +1,15 @@
 <?php
-// Spørgeskema til dem, der har brugt Sagsvagt i over en måned (spoergeskema.html). Hver modtager får et personligt, signeret
-// link på mail fra redaktionen (api/admin/spoergeskema.php), så kun de inviterede kan svare, og hver kun én gang pr. runde
-// (svarer man igen, erstattes svaret). Svarene beholdes uden kobling til personen, hvis kontoen slettes (som feedback).
+// Spørgeskema til dem, der har brugt Sagsvagt i over en måned (spoergeskema.html). Linket kommer som en boks i mandagsmailen
+// (den mail, de selv har sagt ja til), når redaktionen har slået runden til på admin-siden. Linket er personligt og signeret,
+// så kun læserne kan svare, og hver kun én gang pr. runde (svarer man igen, erstattes svaret). Boksen kommer med højst
+// SPOERG_GANGE gange og ikke efter, man har svaret. Svarene beholdes uden kobling til personen, hvis kontoen slettes.
 declare(strict_types=1);
 
 // Runden: skift den, når et nyt spørgeskema sendes ud. Svar og udsendelser gemmes pr. runde.
 const SPOERG_RUNDE = '2026-11';
-// Hvem kan få spørgeskemaet: har sagt ja til andre informationer end mandagsmailen og bekræftet for mindst 30 dage siden
+// Hvem kan få spørgeskemaet: får mandagsmailen og bekræftede tilmeldingen for mindst 30 dage siden. Højst 2 mails med boksen.
 const SPOERG_DAGE = 30;
+const SPOERG_GANGE = 2;
 
 // Spørgsmålene. Serveren gemmer kun de svar, der står her; tekster er valgfri og forkortes.
 const SPOERG = [
@@ -61,18 +63,21 @@ function spoerg_rens(array $ind): array {
     return array_keys($ud) === ['kontakt'] ? [] : $ud;
 }
 
-// Hvem der kan få spørgeskemaet, og som ikke har fået det i denne runde
-function spoerg_kan_sql(): string {
-    return ANDRE_KAN . " AND bekraeftet <= ? AND id NOT IN (SELECT abonnent_id FROM spoergeskema_sendt WHERE runde = ?)";
+// Spørgeskemaet kommer med i mandagsmailen, når redaktionen har slået runden til på admin-siden
+function spoerg_aktiv(PDO $db): bool {
+    $q = $db->prepare("SELECT vaerdi FROM indstillinger WHERE noegle = 'spoerg:aktiv'"); $q->execute();
+    return $q->fetchColumn() === SPOERG_RUNDE;
+}
+function spoerg_saet_aktiv(PDO $db, bool $til): void {
+    $db->prepare("DELETE FROM indstillinger WHERE noegle = 'spoerg:aktiv'")->execute();
+    if ($til) $db->prepare("INSERT INTO indstillinger (noegle, vaerdi) VALUES ('spoerg:aktiv', ?)")->execute([SPOERG_RUNDE]);
 }
 function spoerg_graense(): string { return gmdate('Y-m-d\TH:i:s\Z', time() - SPOERG_DAGE * 86400); }
-
-// Mailen med linket. Returnerer [emne, html, tekst].
-function spoerg_mail(int $id, string $email): array {
-    $emne = 'Hvad synes du om Sagsvagt? (3 minutter)';
-    [$html, $tekst] = mail_skabelon('Hvad synes du om Sagsvagt?',
-        "Du har brugt Sagsvagt i over en måned, og vi vil gerne høre, hvad der virker, og hvad der mangler, så vi kan gøre avisen bedre.\n\nDet er 9 korte spørgsmål og tager ca. 3 minutter. Du kan springe alle spørgsmål over.",
-        'Svar på spørgsmålene', spoerg_link($id),
-        "Du får denne mail, fordi $email har sagt ja til andre mails fra Sagsvagt end mandagsmailen. Du kan sige nej til dem under Tilpas i Min avis. Vil du ikke have nogen mails fra os, så afmeld her: " . afmeld_link($id));
-    return [$emne, $html, $tekst];
+// Med i ugens mandagsmail: bekræftet for mindst en måned siden, ikke svaret og ikke fået det SPOERG_GANGE gange ($a fra mm_ugens_mails)
+function spoerg_med(array $a): bool {
+    return !empty($a['bekraeftet']) && $a['bekraeftet'] <= spoerg_graense() && (int)$a['spoerg_svar'] === 0 && (int)$a['spoerg_vist'] < SPOERG_GANGE;
+}
+function spoerg_noter_vist(PDO $db, int $id): void {
+    spoerg_tabeller($db);
+    $db->prepare('INSERT INTO spoergeskema_sendt (abonnent_id, runde, tid) VALUES (?, ?, ?)')->execute([$id, SPOERG_RUNDE, nu()]);
 }

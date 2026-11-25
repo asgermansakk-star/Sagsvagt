@@ -6,6 +6,8 @@
 //   mm_profil($abonnent, $EMNER, $aabneSlugs)                          → profilen (som profilFor)
 //   mm_lav_mandagsmail($data, $profil, $idag, $modtager, $afmeld)      → ['emne', 'preheader', 'html', 'tekst', 'antal']
 //   mm_lav_ventemail($kommuner, $aabne, $idag, $navn, $modtager, $afmeld)
+// $spoerg (sidste parameter): link til spørgeskemaet. Boksen findes kun her på serveren (ikke i JavaScript-udgaven), så
+// uden link er mailen tegn for tegn som før.
 declare(strict_types=1);
 require_once __DIR__ . '/_ord.php';
 
@@ -185,13 +187,25 @@ function mm_mail_bund(string $modtager, string $afmeld = ''): string {
       . $link(MM_SITE . 'privatliv.html', 'Privatliv') . "\n"
       . "</td></tr>\n</table>\n</td></tr></table>\n</body></html>";
 }
+// Boksen med spørgeskemaet (api/_spoergeskema.php) lige før bunden, til dem, der har brugt Sagsvagt i over en måned
+function mm_spoerg_boks(string $link): string {
+    $C = MM_C; $S = MM_SANS;
+    return "<tr><td style=\"padding:30px 28px 0;\"><table role=\"presentation\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"background:{$C['lyng']};border-radius:10px;\"><tr><td style=\"padding:22px 22px 24px;\">\n"
+      . "  <p style=\"margin:0;font:800 20px/1.25 {$S};color:{$C['blaek']};\">Hvad synes du om Sagsvagt?</p>\n"
+      . "  <p style=\"margin:8px 0 16px;font:15px/1.55 {$S};color:{$C['blaek']};\">Du har været med i over en måned. Fortæl os, hvad der virker, og hvad der mangler. 9 korte spørgsmål, ca. 3 minutter.</p>\n"
+      . '  <a href="' . mm_esc($link) . "\" style=\"display:inline-block;padding:12px 20px;border-radius:8px;background:{$C['blaek']};color:{$C['kalk']};font:700 15px/1.2 {$S};text-decoration:none;\">Svar på spørgsmålene</a>\n"
+      . "</td></tr></table></td></tr>\n";
+}
+function mm_spoerg_tekst(string $link): string {
+    return $link === '' ? '' : "\n\nHVAD SYNES DU OM SAGSVAGT?\n\nDu har været med i over en måned. Fortæl os, hvad der virker, og hvad der mangler. 9 korte spørgsmål, ca. 3 minutter:\n{$link}";
+}
 function mm_tekst_bund(string $afmeld, bool $ret = true): string {
     if ($afmeld !== '') return "\n\n--\nDu får denne mail, fordi du har skrevet dig op til Sagsvagt.\nAfmeld: {$afmeld}" . ($ret ? "\nRet dine emner: " . MM_REDAKTION : '') . "\n";
     return "\n\n--\nDu får denne mail, fordi du har skrevet dig op til Sagsvagt. " . ($ret ? 'Afmeld eller ret dine emner: ' : 'Afmeld: ') . MM_REDAKTION . "\n";
 }
 
 // ---------- Mailen (lavMandagsmail) ----------
-function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $modtager = '', string $afmeld = '', string $logo = MM_MAIL . 'logo.png'): array {
+function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $modtager = '', string $afmeld = '', string $logo = MM_MAIL . 'logo.png', string $spoerg = ''): array {
     $C = MM_C; $S = MM_SANS;
     $v = mm_vaelg_sager($data, $profil, $idag);
     $uge = mm_ugenr($idag);
@@ -295,6 +309,7 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
       . $sektion($v['dage'] === 7 ? 'Besluttet i ugen der gik' : 'Besluttet de seneste to uger', $v['besluttet'], $v['flereBesluttet'], true) . "\n"
       . $sektion('På dagsordenen de næste to uger', $v['kommer'], $v['flereKommer'], true, $kalender) . "\n"
       . $sektion('Fra ' . $bydelNavn, $v['bydel'], 0, false) . "\n"
+      . ($spoerg !== '' ? mm_spoerg_boks($spoerg) : '')
       . mm_mail_bund($modtager, $afmeld);
 
     // Ren tekst til mailprogrammer, der ikke viser HTML
@@ -308,14 +323,14 @@ function mm_lav_mandagsmail(array $data, array $profil, string $idag, string $mo
     $del = fn(string $t, array $l) => $l ? "\n\n" . mb_strtoupper($t) . "\n\n" . implode("\n\n", array_map($linje, $l)) : '';
     $tekst = "Sagsvagt, uge {$uge}\n\nGod morgen" . ($navn !== '' ? ", {$navn}" : '') . '.' . ($ingen ? ' Der er ingen nye sager om dine emner i denne uge.' : '')
       . $del('Besluttet', $v['besluttet']) . $del('På dagsordenen de næste to uger', $v['kommer']) . $del('Fra ' . $bydelNavn, $v['bydel'])
-      . mm_tekst_bund($afmeld);
+      . mm_spoerg_tekst($spoerg) . mm_tekst_bund($afmeld);
 
     return ['emne' => $emne, 'preheader' => $preheader, 'html' => mm_moerk($html), 'tekst' => $tekst,
         'antal' => ['besluttet' => $nB, 'kommer' => $nK, 'bydel' => count($v['bydel'])]];
 }
 
 // ---------- Ventelistemailen (lavVentemail) ----------
-function mm_lav_ventemail(array $kommuner, array $aabne, string $idag, string $navn = '', string $modtager = '', string $afmeld = '', string $logo = MM_MAIL . 'logo.png'): array {
+function mm_lav_ventemail(array $kommuner, array $aabne, string $idag, string $navn = '', string $modtager = '', string $afmeld = '', string $logo = MM_MAIL . 'logo.png', string $spoerg = ''): array {
     $C = MM_C; $S = MM_SANS;
     $uge = mm_ugenr($idag);
     $liste = fn(array $l) => count($l) > 1 ? implode(', ', array_slice($l, 0, -1)) . ' og ' . end($l) : ($l[0] ?? '');
@@ -339,24 +354,24 @@ function mm_lav_ventemail(array $kommuner, array $aabne, string $idag, string $n
       . "  {$fremdrift}\n"
       . '  ' . ($hvem !== '' ? '<p style="margin:20px 0 0;"><a href="' . mm_esc($delLink) . "\" style=\"display:inline-block;padding:12px 20px;border-radius:8px;background:{$C['nat']};color:{$C['kalk']};font:700 15px/1.2 {$S};text-decoration:none;\">Del Sagsvagt med en nabo</a></p>\n"
         . "  <p style=\"margin:10px 0 0;font:13px/1.5 {$S};color:{$C['muted']};\">Jo flere fra " . mm_esc($hvem) . ', der skriver sig op, jo før åbner vi.</p>' : '') . "\n"
-      . '</td></tr>' . mm_mail_bund($modtager, $afmeld);
+      . '</td></tr>' . ($spoerg !== '' ? mm_spoerg_boks($spoerg) : '') . mm_mail_bund($modtager, $afmeld);
     $tekst = "Sagsvagt, uge {$uge}\n\nGod morgen" . ($navn !== '' ? ", {$navn}" : '') . ".\n\n"
       . ($hvem !== '' ? "Sagsvagt er endnu ikke åben i {$hvem}. Vi åbner kommune for kommune, der hvor flest skriver sig op, og du får besked, så snart {$hvem} er med.\n\nDel Sagsvagt med en nabo: {$delLink}"
         : 'Du har ikke skrevet, hvilken kommune du vil følge. Svar på denne mail med navnet på din kommune, så sætter vi den i køen.')
       . ($aabne ? "\n\nLige nu følger vi byrådene i {$n} af {$IALT} kommuner: " . MM_SITE . 'kommune/' : '')
-      . mm_tekst_bund($afmeld, false);
+      . mm_spoerg_tekst($spoerg) . mm_tekst_bund($afmeld, false);
     return ['emne' => $emne, 'preheader' => $preheader, 'html' => mm_moerk($html), 'tekst' => $tekst, 'antal' => ['besluttet' => 0, 'kommer' => 0, 'bydel' => 0], 'vente' => true];
 }
 
 // ---------- Ugens mail til én tilmeldt (som forbered() på admin-siden) ----------
 // $hent: fn(slug) → kommunens sager-fil som array. Giver ['type' => 'Sager' | 'Sager (alle emner)' | 'Venteliste', 'mail' => …, 'profil' => …].
-function mm_mail_til(array $a, string $uge, array $aabne, callable $hent, string $afmeld = ''): array {
+function mm_mail_til(array $a, string $uge, array $aabne, callable $hent, string $afmeld = '', string $spoerg = ''): array {
     $slugs = array_column($aabne, 'slug'); $navnPaa = array_column($aabne, 'navn', 'slug');
     $EMNER = $hent('koebenhavn')['emner'];
     $p = mm_profil($a, $EMNER, $slugs);
     if (!$p['kommuner']) {
         return ['type' => 'Venteliste', 'profil' => $p,
-            'mail' => mm_lav_ventemail(mm_skrevne($a['kommuner'] ?? ''), array_column($aabne, 'navn'), $uge, $p['navn'], (string)$a['email'], $afmeld)];
+            'mail' => mm_lav_ventemail(mm_skrevne($a['kommuner'] ?? ''), array_column($aabne, 'navn'), $uge, $p['navn'], (string)$a['email'], $afmeld, MM_MAIL . 'logo.png', $spoerg)];
     }
     $udenEmner = !$p['emner'] && !$p['ord'];
     $sager = []; $emner = null; $fund = [];
@@ -366,7 +381,7 @@ function mm_mail_til(array $a, string $uge, array $aabne, callable $hent, string
         // Søgeordene findes også inde i sagsteksten (ordindekset), ikke kun i overskrift og resumé
         foreach (ord_fund($slug, $p['ord'], $x['sager']) as $o => $ids) $fund[$o] = ($fund[$o] ?? []) + $ids;
     }
-    $mail = mm_lav_mandagsmail(['emner' => $emner, 'sager' => $sager, 'fund' => $fund], $udenEmner ? ['emner' => array_keys($EMNER)] + $p : $p, $uge, (string)$a['email'], $afmeld);
+    $mail = mm_lav_mandagsmail(['emner' => $emner, 'sager' => $sager, 'fund' => $fund], $udenEmner ? ['emner' => array_keys($EMNER)] + $p : $p, $uge, (string)$a['email'], $afmeld, MM_MAIL . 'logo.png', $spoerg);
     if ($udenEmner) $mail['emne'] = preg_replace('/ om dine emner$/u', ' i din kommune', $mail['emne']);
     return ['type' => $udenEmner ? 'Sager (alle emner)' : 'Sager', 'profil' => $p, 'mail' => $mail];
 }

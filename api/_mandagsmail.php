@@ -25,7 +25,11 @@ function mm_send_en(PDO $db, int $id, string $email, string $uge, string $emne, 
     catch (PDOException $e) { return 'allerede'; }
     // Afmeldingsknappen i Gmail, Apple Mail og Outlook (RFC 8058: ét klik sender en POST til linket)
     $hoveder = ['List-Unsubscribe' => '<' . afmeld_link($id) . '>, <mailto:' . TILMELDINGER_TIL . '?subject=Afmeld%20Sagsvagt>', 'List-Unsubscribe-Post' => 'List-Unsubscribe=One-Click'];
-    if (send_mail($email, $emne, $html, $tekst, '', $hoveder)) return 'sendt';
+    if (send_mail($email, $emne, $html, $tekst, '', $hoveder)) {
+        // Havde mailen spørgeskemaet med, tælles det, så hver kun får det et par gange (api/_spoergeskema.php)
+        if (str_contains($html, 'spoergeskema.html?id=')) { require_once __DIR__ . '/_spoergeskema.php'; spoerg_noter_vist($db, $id); }
+        return 'sendt';
+    }
     $db->prepare('DELETE FROM mandagsmail_sendt WHERE abonnent_id = ? AND uge = ?')->execute([$id, $uge]);
     return 'fejl';
 }
@@ -80,17 +84,22 @@ function mm_aabne(): array { return json_decode((string)@file_get_contents(dirna
 // mail til ugen, mails uden sager, og ventelistemails til dem, der har fået en mail inden for 4 uger.
 function mm_ugens_mails(PDO $db, string $uge): array {
     require_once __DIR__ . '/_mandagsmail_lav.php';
+    require_once __DIR__ . '/_spoergeskema.php';
     $aabne = mm_aabne();
     if (!$aabne) return [];
-    $q = $db->prepare('SELECT a.id, a.email, a.kommuner, a.emner, a.status, a.profil, m.sendt, k.send_efter AS planlagt,
-        (SELECT MAX(s.sendt) FROM mandagsmail_sendt s WHERE s.abonnent_id = a.id) AS sidst
+    spoerg_tabeller($db);
+    $spoergAktiv = spoerg_aktiv($db);
+    $q = $db->prepare('SELECT a.id, a.email, a.kommuner, a.emner, a.status, a.profil, a.bekraeftet, m.sendt, k.send_efter AS planlagt,
+        (SELECT MAX(s.sendt) FROM mandagsmail_sendt s WHERE s.abonnent_id = a.id) AS sidst,
+        (SELECT COUNT(*) FROM spoergeskema_sendt ss WHERE ss.abonnent_id = a.id AND ss.runde = ?) AS spoerg_vist,
+        (SELECT COUNT(*) FROM spoergeskema_svar sv WHERE sv.abonnent_id = a.id AND sv.runde = ?) AS spoerg_svar
         FROM abonnenter a LEFT JOIN mandagsmail_sendt m ON m.abonnent_id = a.id AND m.uge = ?
         LEFT JOIN mandagsmail_koe k ON k.abonnent_id = a.id AND k.uge = ? WHERE ' . MM_KAN . ' ORDER BY a.oprettet');
-    $q->execute([$uge, $uge]);
+    $q->execute([SPOERG_RUNDE, SPOERG_RUNDE, $uge, $uge]);
     $ud = [];
     $fireUger = gmdate('Y-m-d\TH:i:s\Z', strtotime("$uge 00:00:00 UTC") - 27 * 86400);
     foreach ($q->fetchAll() as $a) {
-        $m = mm_mail_til($a, $uge, $aabne, 'mm_hent_kommune', afmeld_link((int)$a['id']));
+        $m = mm_mail_til($a, $uge, $aabne, 'mm_hent_kommune', afmeld_link((int)$a['id']), $spoergAktiv && spoerg_med($a) ? spoerg_link((int)$a['id']) : '');
         $n = $m['mail']['antal'];
         $m['spring'] = $a['sendt'] ? 'har fået ugens mail' : ($a['planlagt'] ? 'er allerede planlagt'
             : ($m['type'] === 'Venteliste' ? (($a['sidst'] ?? '') >= $fireUger ? 'ventelistemail inden for 4 uger' : '')
