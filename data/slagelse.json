@@ -793,6 +793,14 @@
    "dato": "2025-10-06",
    "punkter": 6,
    "parser": 3
+  },
+  "99e96dc0-315c-4623-a748-e6860ba06325": {
+   "lastmod": "2026-11-24",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-24",
+   "punkter": 1,
+   "parser": 3
   }
  },
  "sager": {
@@ -20311,12 +20319,16 @@
    "kommune": "Slagelse",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.slagelse.dk/vis?id=93ff152d-6b43-4fca-b4ca-a8f245278f1f",
-   "hentet": "2026-11-20T23:21:55.057Z",
+   "kilde": "https://dagsordener.slagelse.dk/vis?id=99e96dc0-315c-4623-a748-e6860ba06325",
+   "hentet": "2026-11-24T23:54:20.158Z",
    "titel": "Godkendelse af dagsorden (B)",
    "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "At 1: Godkendt."
+    },
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kompetence\nØkonomiudvalget\n\nBeslutningstema\nØkonomiudvalget skal godkende dagsordenen."
@@ -20335,7 +20347,7 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.slagelse.dk/Sitemap/ForCommittee?committeeId=b95f2cd4-e7f7-4a1a-bdde-4299b4c0d7ec": {
-   "senest": "2026-11-23",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.slagelse.dk/Sitemap/ForCommittee?committeeId=1fe487e5-5e0e-467b-a97c-8489d30d5871": {
@@ -20644,6 +20656,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-24T15:13:26.219Z",
+ "opdateret": "2026-11-24T23:54:24.985Z",
  "kommune": "Slagelse"
 }

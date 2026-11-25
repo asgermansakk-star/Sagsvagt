@@ -345,6 +345,14 @@
    "dato": "2026-11-24",
    "punkter": 4,
    "parser": 3
+  },
+  "1521150f-e6a4-46ae-aa83-9ea817eaf1ec": {
+   "lastmod": "2026-11-24",
+   "type": "referat",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-24",
+   "punkter": 4,
+   "parser": 3
   }
  },
  "sager": {
@@ -9903,15 +9911,19 @@
    "kommune": "Morsø",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.mors.dk/vis?id=ac19b565-ef37-4db6-bf2a-51cd9268899d",
-   "hentet": "2026-11-19T13:36:10.179Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=1521150f-e6a4-46ae-aa83-9ea817eaf1ec",
+   "hentet": "2026-11-24T23:58:41.732Z",
    "titel": "Kommunalbestyrelsens godkendelse af dagsordenen",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Administrationen indstiller, at\nDagsordenen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -9921,10 +9933,10 @@
    "kommune": "Morsø",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.mors.dk/vis?id=ac19b565-ef37-4db6-bf2a-51cd9268899d",
-   "hentet": "2026-11-19T13:36:10.179Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=1521150f-e6a4-46ae-aa83-9ea817eaf1ec",
+   "hentet": "2026-11-24T23:58:41.732Z",
    "titel": "Ældreboligregnskab 2025, budget 2027 og huslejefastsættelse 2027",
    "afsnit": [
     {
@@ -9950,6 +9962,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Taget til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -9959,10 +9975,10 @@
    "kommune": "Morsø",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.mors.dk/vis?id=ac19b565-ef37-4db6-bf2a-51cd9268899d",
-   "hentet": "2026-11-19T13:36:10.179Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=1521150f-e6a4-46ae-aa83-9ea817eaf1ec",
+   "hentet": "2026-11-24T23:58:41.732Z",
    "titel": "Topmødeerklæring mellem Region Nord og Kommunerne i Region Nord",
    "afsnit": [
     {
@@ -9988,6 +10004,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Tiltrådt og taget til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -9997,15 +10017,19 @@
    "kommune": "Morsø",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.mors.dk/vis?id=ac19b565-ef37-4db6-bf2a-51cd9268899d",
-   "hentet": "2026-11-19T13:36:10.179Z",
+   "kilde": "https://dagsordener.mors.dk/vis?id=1521150f-e6a4-46ae-aa83-9ea817eaf1ec",
+   "hentet": "2026-11-24T23:58:41.732Z",
    "titel": "Kommunalbestyrelsens godkendelse af referatet",
    "afsnit": [
     {
      "titel": "Indstilling",
      "tekst": "Godkendelse af referatet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10085,7 +10109,7 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=c1bc284e-3f25-4c54-9929-0c0c9e2e3cb0": {
-   "senest": "2026-11-19",
+   "senest": "2026-11-24",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.mors.dk/Sitemap/ForCommittee?committeeId=b1baf803-ece6-468d-b421-bfcb222114da": {
@@ -10134,6 +10158,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-24T15:18:23.498Z",
+ "opdateret": "2026-11-24T23:58:41.733Z",
  "kommune": "Morsø"
 }
