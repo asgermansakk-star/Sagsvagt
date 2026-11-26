@@ -551,6 +551,22 @@
    "dato": "2026-12-01",
    "punkter": 9,
    "parser": 3
+  },
+  "0c3048d1-32cd-4065-9d4a-248bfbc63f82": {
+   "lastmod": "2026-11-25",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-25",
+   "punkter": 2,
+   "parser": 3
+  },
+  "3ab04aaa-3e7f-434b-941a-509dd3ecad5a": {
+   "lastmod": "2026-11-25",
+   "type": "dagsorden",
+   "udvalg": "Byrådet",
+   "dato": "2026-11-25",
+   "punkter": 6,
+   "parser": 3
   }
  },
  "sager": {
@@ -10704,12 +10720,17 @@
    "kommune": "Assens",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsorden.assens.dk/vis?id=f402b10f-2165-44d0-a68c-b885d4d9e0df",
-   "hentet": "2026-11-19T22:31:30.851Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=0c3048d1-32cd-4065-9d4a-248bfbc63f82",
+   "hentet": "2026-11-25T23:28:49.758Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsordenen godkendt."
+    }
+   ],
    "bilag": []
   },
   "assens-2026-11-25-oekonomiudvalget-3": {
@@ -10717,10 +10738,10 @@
    "kommune": "Assens",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsorden.assens.dk/vis?id=f402b10f-2165-44d0-a68c-b885d4d9e0df",
-   "hentet": "2026-11-19T22:31:30.851Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=0c3048d1-32cd-4065-9d4a-248bfbc63f82",
+   "hentet": "2026-11-25T23:28:49.758Z",
    "titel": "Oplæsning af referat",
    "afsnit": [],
    "bilag": []
@@ -10732,8 +10753,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsorden.assens.dk/vis?id=7e05c203-5acd-411a-b587-34d4265dce9a",
-   "hentet": "2026-11-24T15:13:44.636Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=3ab04aaa-3e7f-434b-941a-509dd3ecad5a",
+   "hentet": "2026-11-25T23:29:06.653Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [],
    "bilag": []
@@ -10745,8 +10766,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsorden.assens.dk/vis?id=7e05c203-5acd-411a-b587-34d4265dce9a",
-   "hentet": "2026-11-24T15:13:44.636Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=3ab04aaa-3e7f-434b-941a-509dd3ecad5a",
+   "hentet": "2026-11-25T23:29:06.653Z",
    "titel": "3. totalopfølgning 2026 - Samlet",
    "afsnit": [
     {
@@ -10775,8 +10796,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 3,
-   "kilde": "https://dagsorden.assens.dk/vis?id=7e05c203-5acd-411a-b587-34d4265dce9a",
-   "hentet": "2026-11-24T15:13:44.636Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=3ab04aaa-3e7f-434b-941a-509dd3ecad5a",
+   "hentet": "2026-11-25T23:29:06.653Z",
    "titel": "Ansøgning om kommunal garanti i forbindelse med lånoptag i afd. 206 Indre By, Aarup",
    "afsnit": [
     {
@@ -10805,8 +10826,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 4,
-   "kilde": "https://dagsorden.assens.dk/vis?id=7e05c203-5acd-411a-b587-34d4265dce9a",
-   "hentet": "2026-11-24T15:13:44.636Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=3ab04aaa-3e7f-434b-941a-509dd3ecad5a",
+   "hentet": "2026-11-25T23:29:06.653Z",
    "titel": "Affalds- og ressourceplan 2020 - 2032 forlængelse til og med 2034",
    "afsnit": [
     {
@@ -10831,8 +10852,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 7,
-   "kilde": "https://dagsorden.assens.dk/vis?id=7e05c203-5acd-411a-b587-34d4265dce9a",
-   "hentet": "2026-11-24T15:13:44.636Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=3ab04aaa-3e7f-434b-941a-509dd3ecad5a",
+   "hentet": "2026-11-25T23:29:06.653Z",
    "titel": "Spørgetid",
    "afsnit": [],
    "bilag": []
@@ -10844,8 +10865,8 @@
    "dato": "2026-11-25",
    "type": "dagsorden",
    "nr": 8,
-   "kilde": "https://dagsorden.assens.dk/vis?id=7e05c203-5acd-411a-b587-34d4265dce9a",
-   "hentet": "2026-11-24T15:13:44.636Z",
+   "kilde": "https://dagsorden.assens.dk/vis?id=3ab04aaa-3e7f-434b-941a-509dd3ecad5a",
+   "hentet": "2026-11-25T23:29:06.653Z",
    "titel": "Oplæsning af referat",
    "afsnit": [],
    "bilag": []
@@ -11455,7 +11476,7 @@
  },
  "sitemaps": {
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=bb85158e-bde5-4e9a-843f-b001ae8832cf": {
-   "senest": "2026-11-19",
+   "senest": "2026-11-25",
    "tjekket": "2026-11-25"
   },
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=676c7c98-f559-4184-a429-3c03f508a08e": {
@@ -11515,7 +11536,7 @@
    "tjekket": "2026-11-25"
   },
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=cf98394e-0fee-492a-a622-964daded8100": {
-   "senest": "2026-11-24",
+   "senest": "2026-11-25",
    "tjekket": "2026-11-25"
   },
   "https://dagsorden.assens.dk/Sitemap/ForCommittee?committeeId=0ada06c5-292a-409c-bed3-1bb1444ec8ce": {
@@ -11532,6 +11553,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-25T14:42:48.234Z",
+ "opdateret": "2026-11-25T23:29:06.655Z",
  "kommune": "Assens"
 }
