@@ -490,6 +490,70 @@
    "dato": "2026-11-25",
    "punkter": 1,
    "parser": 3
+  },
+  "fb24e740-d174-4378-a223-244841d5bbba": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-02",
+   "punkter": 5,
+   "parser": 3
+  },
+  "7d53081d-43d5-4ddb-a08e-d07be4e917f3": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-12-01",
+   "punkter": 7,
+   "parser": 3
+  },
+  "8fee92da-fb59-49d9-a3a6-76c50e906657": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Plan- og Miljøudvalget",
+   "dato": "2026-12-01",
+   "punkter": 3,
+   "parser": 3
+  },
+  "821e6ff8-c0fc-41e3-a515-aeefe53b2090": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Institutions- og Skoleudvalget",
+   "dato": "2026-12-01",
+   "punkter": 7,
+   "parser": 3
+  },
+  "bd3f83d1-a3cd-4e55-852c-bda68e242a97": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Fritids- og Kulturudvalget",
+   "dato": "2026-12-01",
+   "punkter": 1,
+   "parser": 3
+  },
+  "dd4602b1-7862-432f-b9bb-e20422f7030a": {
+   "lastmod": "2026-11-26",
+   "type": "referat",
+   "udvalg": "Byrådet",
+   "dato": "2026-11-25",
+   "punkter": 16,
+   "parser": 3
+  },
+  "1abbe5ba-5263-4422-abd9-184e9ef51da2": {
+   "lastmod": "2026-11-26",
+   "type": "referat",
+   "udvalg": "Byrådet",
+   "dato": "2026-11-25",
+   "punkter": 1,
+   "parser": 3
+  },
+  "1827e0c1-e046-44ab-8f3d-c191959b0ffa": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "punkter": 9,
+   "parser": 3
   }
  },
  "sager": {
@@ -7025,10 +7089,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.htk.dk/vis?id=f1f7918d-e5fe-4076-ae93-7bfec9f5603e",
-   "hentet": "2026-11-25T14:37:47.214Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=1abbe5ba-5263-4422-abd9-184e9ef51da2",
+   "hentet": "2026-11-26T14:12:24.423Z",
    "titel": "1. Indkaldelse af stedfortræder for Toke Elling til Byrådet 25-11-2026",
    "afsnit": [
     {
@@ -7038,6 +7102,10 @@
     {
      "titel": "Indstilling",
      "tekst": "At Byrådet godkender, at Marjan Ganjjou kan indtræde som medlem af Byrådet som\nstedfortræder for Toke Elling til Byrådets møde 25-11-2026."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     },
     {
      "titel": "Sagsfremstilling",
@@ -7051,10 +7119,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "2. Indkaldelse af stedfortræder for Melis Aydin til Byrådet 25-11-2026",
    "afsnit": [
     {
@@ -7064,6 +7132,10 @@
     {
      "titel": "Indstilling",
      "tekst": "At Byrådet godkender, at Jeanette Ingemann kan indtræde som medlem af Byrådet som\nstedfortræder for Melis Aydin til Byrådets møde 25-11-2026"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
     },
     {
      "titel": "Sagsfremstilling",
@@ -7077,12 +7149,17 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "3. Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
+    }
+   ],
    "bilag": []
   },
   "hoeje-taastrup-2026-11-25-byraadet-4": {
@@ -7090,10 +7167,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "4. I - Økonomisk Politik - ØU",
    "afsnit": [
     {
@@ -7113,8 +7190,12 @@
      "tekst": "Anbefales."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Den Økonomiske Politik sætter de overordnede rammer for Byrådets økonomiske prioriteringer\nog den løbende økonomistyring. Politikken skal bidrage til en robust økonomi, hvor der både er\nmulighed for at prioritere kommunens udvikling og håndtere uforudsete udsving i indtægter og\nudgifter uden store opbremsninger i den borgernære service.\nSiden målene for den ordinære drift og en robust kassebeholdning blev fastsat i 2018, er HøjeTaastrup Kommune vokset markant fra ca. 50.000 borgere til omkring 60.000 borgere. Det\nsvarer til en befolkningsvækst på ca. 20 pct. Det foreslås derfor, at de to økonomiske nøgletal\nforhøjes tilsvarende. Forslaget tager derudover udgangspunkt i den nuværende Økonomiske\nPolitik, som senest blev vedtaget i 2023.\nDet foreslås at fastholde de seks økonomiske pejlemærker som grundlag for de kommende års\nbudgetlægning og økonomistyring med enkelte justeringer og præciseringer:\n\n1. Balance mellem udgifter og indtægter: Målet for det skattefinansierede driftsresultat\nhæves fra 250 mio. kr. til 300 mio. kr. årligt, så det som udgangspunkt kan finansiere et\nanlægsniveau på ca. 240 mio. kr. og afdrag på lån og øvrige balanceforskydninger for ca.\n60 mio. kr.\n\n2. Robust kassebeholdning, der kan sikre stabil drift: Målet for kassebeholdningen hæves\n\nfra 250 mio. kr. til 300 mio. kr., som vurderes at være et forsvarligt niveau for at kunne sikre\nen robust økonomi og stabil drift.\n\n3. Økonomisk råderum til at udvikle driften: For at fastholde fokus på løbende\neffektivisering også på mellemlangt sigt udvides perspektivet for prioriteringskataloget fra to\ntil fire år. Samtidig skærpes fokus på områder med vedvarende udgifts- og styringsmæssige\nudfordringer.\n\n4. Anlægsbudget som understøtter fremtidens kommune: Pejlemærket justeres med\nfokus på bl.a. kapacitetstilpasning, teknologi og klima. Samtidig er målet at overholde\nkommunens anlægsramme, dog inden for den finansiering, som kommunens økonomi giver\nmulighed for.\n\n5. Gælden skal holdes på et ansvarligt niveau: Pejlemærket justeres, så lånefinansiering\nfortsat skal anvendes med omtanke, men kan anvendes til langsigtede investeringer, hvor\nogså fremtidige borgere får glæde. Målet er, at gælden pr. indbygger ikke stiger.\n\n6. God økonomistyring med mulighed for decentrale overførsler: Pejlemærket justeres\nmed fokus på, at økonomiske udfordringer håndteres inden for eksisterende budgetrammer,\nsamtidig med at muligheden for decentrale overførsler fastholdes under hensyn til\nservicerammen.\n\nForslag til ny Økonomisk Politik er vedlagt som bilag.\n11-11-2026 sagen genoptages\nØkonomiudvalget besluttede 07-10-2026 at udsætte sagen og der blev bestilt et notat som\nsupplement til sagen. Dette er vedlagt som bilag."
+     "tekst": "Den Økonomiske Politik sætter de overordnede rammer for Byrådets økonomiske prioriteringer\nog den løbende økonomistyring. Politikken skal bidrage til en robust økonomi, hvor der både er\nmulighed for at prioritere kommunens udvikling og håndtere uforudsete udsving i indtægter og\nudgifter uden store opbremsninger i den borgernære service.\nSiden målene for den ordinære drift og en robust kassebeholdning blev fastsat i 2018, er HøjeTaastrup Kommune vokset markant fra ca. 50.000 borgere til omkring 60.000 borgere. Det\nsvarer til en befolkningsvækst på ca. 20 pct. Det foreslås derfor, at de to økonomiske nøgletal\nforhøjes tilsvarende. Forslaget tager derudover udgangspunkt i den nuværende Økonomiske\nPolitik, som senest blev vedtaget i 2023.\nDet foreslås at fastholde de seks økonomiske pejlemærker som grundlag for de kommende års\nbudgetlægning og økonomistyring med enkelte justeringer og præciseringer:\n\n1. Balance mellem udgifter og indtægter: Målet for det skattefinansierede driftsresultat\nhæves fra 250 mio. kr. til 300 mio. kr. årligt, så det som udgangspunkt kan finansiere et\nanlægsniveau på ca. 240 mio. kr. og afdrag på lån og øvrige balanceforskydninger for ca.\n60 mio. kr.\n\n2. Robust kassebeholdning, der kan sikre stabil drift: Målet for kassebeholdningen hæves\nfra 250 mio. kr. til 300 mio. kr., som vurderes at være et forsvarligt niveau for at kunne sikre\nen robust økonomi og stabil drift.\n\n3. Økonomisk råderum til at udvikle driften: For at fastholde fokus på løbende\neffektivisering også på mellemlangt sigt udvides perspektivet for prioriteringskataloget fra to\ntil fire år. Samtidig skærpes fokus på områder med vedvarende udgifts- og styringsmæssige\nudfordringer.\n\n4. Anlægsbudget som understøtter fremtidens kommune: Pejlemærket justeres med\nfokus på bl.a. kapacitetstilpasning, teknologi og klima. Samtidig er målet at overholde\nkommunens anlægsramme, dog inden for den finansiering, som kommunens økonomi giver\nmulighed for.\n\n5. Gælden skal holdes på et ansvarligt niveau: Pejlemærket justeres, så lånefinansiering\nfortsat skal anvendes med omtanke, men kan anvendes til langsigtede investeringer, hvor\nogså fremtidige borgere får glæde. Målet er, at gælden pr. indbygger ikke stiger.\n\n6. God økonomistyring med mulighed for decentrale overførsler: Pejlemærket justeres\nmed fokus på, at økonomiske udfordringer håndteres inden for eksisterende budgetrammer,\nsamtidig med at muligheden for decentrale overførsler fastholdes under hensyn til\nservicerammen.\n\nForslag til ny Økonomisk Politik er vedlagt som bilag.\n11-11-2026 sagen genoptages\nØkonomiudvalget besluttede 07-10-2026 at udsætte sagen og der blev bestilt et notat som\nsupplement til sagen. Dette er vedlagt som bilag."
     }
    ],
    "bilag": []
@@ -7124,10 +7205,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "5. I - 2. budgetopfølgning 2026 - ØU",
    "afsnit": [
     {
@@ -7143,12 +7224,16 @@
      "tekst": "Anbefales."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Årets første budgetopfølgning for 2026 viste udfordringer med overholdelse af servicerammen.\nDet skyldes i lighed med en lang række andre kommuner, at det specialiserede socialområde\nog dele af ældreområdet er økonomisk udfordrede. Direktionen igangsatte derfor administrative\nøkonomistyringstiltag uden konsekvens for det politisk fastsatte serviceniveau som forventedes\nat udmønte sig i budgetreduktioner på 18,2 mio. kr., hvoraf en andel blev omfordelt mellem\nudvalg som hjælp til de specialiserede områder og ældreområdet.\n\nDerudover vedtog Byrådet en række besparelser på 9,3 mio. kr., der indebar ændringer i\nserviceniveauet. Efter tiltagene udestod et forventet merforbrug på 15,9 mio. kr. i forhold til\nservicerammen, og et behov for en fortsat stram styring blev derfor meldt ud til alle områder.\n2. budgetopfølgning viser at tiltagene har haft effekt. Samlet set skønnes det, at der med en\nfortsat stram styring stort set vil være balance mellem forbrug og serviceramme, med et lille\nforventet merforbrug på 0,6 mio. kr. Resultatet er meget tilfredsstillende og et udtryk for en stor\nstyringsindsats fra både politisk og administrativt hold.\nServiceudgifter\n2. budgetopfølgning viser, at kommunens serviceudgifter nu stort set forventes at være i\nbalance med servicerammen. Det forventede regnskab udgør 3.779,6 mio. kr. mod en justeret\nserviceramme på 3.779,0 mio. kr. Der forventes dermed en marginal overskridelse på 0,6 mio.\nkr.\nDen forbedrede økonomiske situation skyldes dels, at de administrative og politiske tiltag fra 1.\nbudgetopfølgning har haft effekt, dels at de forventede udgifter på nogle områder er blevet\nlavere end tidligere forudsat.\nPå det specialiserede voksenområde forventes nu et mindreforbrug, især fordi flere borgere\nend forudsat er fraflyttet midlertidige botilbud. Der forventes desuden et væsentligt\nmindreforbrug på dagtilbudsområdet, blandt andet som følge af lavere udgifter til køb af\npladser i andre kommuner og økonomiske fripladser. En del af mindreforbruget på\ndagtilbudsområdet skyldes desuden, at det ikke har været muligt at anvende alle de ekstra\nmidler, som Byrådet i marts besluttede at afsætte til mere børnetid i udvalgte institutioner. Det\nhar været vanskeligt at rekruttere medarbejdere til midlertidige stillinger.\nDer forventes dog fortsat merforbrug på især ældreområdet og det specialiserede\nbørneområde. Det samlede resultat dækker således over merforbrug på nogle områder, som\nmodsvares af mindreforbrug på andre. Fagudvalgenes afvigelser er beskrevet i m-sager, som\ner fremlagt på fagudvalgene på november-møderækken.\nTabel 1: Økonomisk oversigt (afvigelse i forhold til servicerammen)\n(mio. kr.)\n\nKorrigeret Teknisk\nbudget\ntillægsbevilling1\n\nKorrigeret\nbudget,\ninkl.\nteknik\n(C=A+B)\n\nForventet Afvigelse\nregnskab\n(D-C)\n\nØkonomiudvalget\n\nTeknisk Udvalg\n\nPlan- og\nMiljøudvalget\n\n(mio. kr.)\n\nKorrigeret Teknisk\nbudget\ntillægsbevilling1\n\nKorrigeret\nbudget,\ninkl.\nteknik\n(C=A+B)\n\nForventet Afvigelse\nregnskab\n(D-C)\n\nSocial- og\nArbejdsmarkedsudvalget\n\nInstitutions- og\nSkoleudvalget\n\nFritids- og\nKulturudvalget\n\nÆldre- og\nSundhedsudvalget\n\nI alt (ift. budget)\n\nIkke\nudvalgsfordelt\nserviceramme\n\nI alt (ift.\nserviceramme)\n\n1. Ændringer i servicerammen som følge af ændret lovgivning, herunder finanslovsaftale\n(DUT) og overenskomstresultat (pris- og lønregulering), som er finansieret af staten og skal\ntillægsbevilges for at komme ind i budgettet\n\nServicerammen\nServicerammen svarer som udgangspunkt til kommunens oprindelige budget. I løbet af året\nkan servicerammen dog blive justeret som følge af f.eks. ny lovgivning eller\noverenskomstaftaler, der påvirker kommunernes udgifter. Kommunerne kompenseres for de\nøkonomiske konsekvenser gennem en regulering af både bloktilskuddet og servicerammen.\nKompensationen for ny lovgivning sker efter DUT-princippet, mens kompensationen for nye\noverenskomstaftaler sker gennem pris- og lønreguleringen (PL). I begge tilfælde tager\nkompensationen udgangspunkt i de gennemsnitlige merudgifter på landsplan. Den enkelte\nkommunes faktiske merudgifter kan derfor afvige fra den kompensation, kommunen modtager,\nbåde økonomisk og i forhold til servicerammen.\nMed denne budgetopfølgning søges der om tillægsbevillinger til udvalgene på i alt 28,2 mio. kr.\nsom følge af ny lovgivning og overenskomstaftaler. Tillægsbevillingerne finansieres af\ntilsvarende merindtægter fra staten og er dermed af teknisk karakter.\n\nHøje-Taastrup Kommunes serviceramme er som følge af en række tekniske justeringer ændret\nfra oprindeligt 3.720 mio. kr. til 3.779 mio. kr. En del af justeringerne blev indarbejdet ved 1.\nbudgetopfølgning, herunder udgifter til nedsat forældrebetaling i dagtilbud,\nminimumsnormeringer og ukrainske flygtninge.\n2. budgetopfølgning viser et forventet regnskab i 2026 på 3.779,6 mio. kr. Det svarer til et en\nmindre overskridelse af servicerammen på 0,6 mio. kr., svarende til en afvigelse på 0,02 pct.\n\nUdgifter uden for servicerammen\nDer forventes merforbrug på udgifter uden for servicerammen på 16,0 mio. kr., som søges\ntillægsbevilget.\nAfvigelsen vedrører primært et fejlagtigt skøn for refusion fra særligt dyre enkeltsager på det\nspecialiserede børneområde. Ved 1. budgetopfølgning blev indtægtsbudgettet øget for at\nbudgetlægge med samme trend som året forinden, men i stedet er kommet en stor berigtigelse\nvedr. statsrefusion fra 2025, som dels viser at refusionsniveauet i 2025 var for højt og dels\ngiver en udgift i 2026.\nDesuden skyldes merforbruget overførselsudgifter på arbejdsmarkedsområdet, som\nfinansieres af staten med et særligt tilskud til kommuner med høj udvikling i ledigheden.\nModsat forventes merindtægter som følge af indsatsen med indtægtsoptimering, hvor der i år\ner lagt et særligt fokus på at berigtige og indhente manglende mellemkommunal refusion.\nDe væsentligste afvigelser er uddybet i fagudvalgssagerne.\nAnlæg\nDer forventes samlede afvigelser på anlægsområdet på 197,8 mio. kr. i 2026, jf. tabel 3.\nAnlæg inden for anlægsrammen\nDer forventes nettoafvigelser på 211,6 mio. kr. inden for anlægsrammen.\nHovedparten af afvigelserne vedrører forsinkelser i en række anlægsprojekter, hvor udgifterne i\nstedet forventes afholdt i 2027. De forventede forskydninger udgør samlet 198,6 mio. kr.\nAfvigelserne opgøres endeligt i forbindelse med regnskabsafslutningen, hvorefter de vil blive\nsøgt overført til budget 2027.\nDerudover søges 0,5 mio. kr. fremrykket og frigivet fra 2027 til 2026 vedrørende omdannelsen\naf Flønghuset til daginstitution. Midlerne skal anvendes til rådgivning og projektering.\nDesuden forventes der på nuværende tidspunkt merudgifter på 6,0 mio. kr. vedrørende\nservicearealerne på Birkehøj Plejecenter som følge af entreprenørkonkurs under byggeriet.\nAnlæg uden for anlægsrammen\nUden for anlægsrammen forventes afvigelser på samlet 13,9 mio. kr.\nAfvigelsen består primært af mindreindtægter på 10,4 mio. kr., heraf 5,2 mio. kr. vedrørende\n\nOmrådefornyelse Folkeparken, der er forsinket. Herudover medfører entreprenørkonkursen på\nBirkehøj Plejecenter forventede merudgifter vedrørende boligdelen på 6,0 mio. kr.\nTabel 2: Forventede afvigelser på anlægsprojekter\nUdvalg\n\nForventet\nafvigelse i 2026\n\nØkonomiudvalget Anlægsprojekter inden for anlægsrammen\n\nØkonomiudvalget Anlægsprojekter uden for anlægsrammen\n\nTeknisk Udvalg\n\nAnlægsprojekter inden for anlægsrammen\n\nI alt\n\nØkonomiudvalget behandlede den 10-06-2026 (punkt 9) videoovervågning i Taastrup\nHovedgade, hvor der blev afsat rådighedsbeløb i 2026 på 0,46 mio. kr. til formålet. Sagen blev\nikke videresendt til Byrådet, hvorfor det afsatte rådighedsbeløb endnu ikke formelt er frigivet.\nBeløbet på 0,46 mio. kr. søges frigivet med 2. budgetopfølgning. Projektet er igangsat og\nforventes udført inden årets udgang.\nFinansiering\nPå finansieringssiden forventes merindtægter på 90,9 mio. kr., som primært kan henføres til:\n\nMidtvejsreguleringen, der indeholder justeringer på indtægtssiden fx:\nOverenskomstresultatet, som indgår i pris- og lønreguleringen\nFinansiering til flere opgaver som følge af lovændringer, herunder opgaven med\nat tage imod flygtning fra Ukraine (DUT)\nSærligt tilskud til kommuner med høj udvikling i ledigheden\n\nDertil kommer merindtægt vedr.:\nForskerskat\nAfkast på investeringsporteføljen\nEfterregulering af kommunal medfinansiering (KMF) fra 2025\nIndfrielse af lån til betaling af ejendomsskatter og stigning i grundskyld\nNulstilling af forventet deponering vedr. sundheds- og bevægelseshuset"
+     "tekst": "Årets første budgetopfølgning for 2026 viste udfordringer med overholdelse af servicerammen.\nDet skyldes i lighed med en lang række andre kommuner, at det specialiserede socialområde\nog dele af ældreområdet er økonomisk udfordrede. Direktionen igangsatte derfor administrative\n\nøkonomistyringstiltag uden konsekvens for det politisk fastsatte serviceniveau som forventedes\nat udmønte sig i budgetreduktioner på 18,2 mio. kr., hvoraf en andel blev omfordelt mellem\nudvalg som hjælp til de specialiserede områder og ældreområdet.\nDerudover vedtog Byrådet en række besparelser på 9,3 mio. kr., der indebar ændringer i\nserviceniveauet. Efter tiltagene udestod et forventet merforbrug på 15,9 mio. kr. i forhold til\nservicerammen, og et behov for en fortsat stram styring blev derfor meldt ud til alle områder.\n2. budgetopfølgning viser at tiltagene har haft effekt. Samlet set skønnes det, at der med en\nfortsat stram styring stort set vil være balance mellem forbrug og serviceramme, med et lille\nforventet merforbrug på 0,6 mio. kr. Resultatet er meget tilfredsstillende og et udtryk for en stor\nstyringsindsats fra både politisk og administrativt hold.\nServiceudgifter\n2. budgetopfølgning viser, at kommunens serviceudgifter nu stort set forventes at være i\nbalance med servicerammen. Det forventede regnskab udgør 3.779,6 mio. kr. mod en justeret\nserviceramme på 3.779,0 mio. kr. Der forventes dermed en marginal overskridelse på 0,6 mio.\nkr.\nDen forbedrede økonomiske situation skyldes dels, at de administrative og politiske tiltag fra 1.\nbudgetopfølgning har haft effekt, dels at de forventede udgifter på nogle områder er blevet\nlavere end tidligere forudsat.\nPå det specialiserede voksenområde forventes nu et mindreforbrug, især fordi flere borgere\nend forudsat er fraflyttet midlertidige botilbud. Der forventes desuden et væsentligt\nmindreforbrug på dagtilbudsområdet, blandt andet som følge af lavere udgifter til køb af\npladser i andre kommuner og økonomiske fripladser. En del af mindreforbruget på\ndagtilbudsområdet skyldes desuden, at det ikke har været muligt at anvende alle de ekstra\nmidler, som Byrådet i marts besluttede at afsætte til mere børnetid i udvalgte institutioner. Det\nhar været vanskeligt at rekruttere medarbejdere til midlertidige stillinger.\nDer forventes dog fortsat merforbrug på især ældreområdet og det specialiserede\nbørneområde. Det samlede resultat dækker således over merforbrug på nogle områder, som\nmodsvares af mindreforbrug på andre. Fagudvalgenes afvigelser er beskrevet i m-sager, som\ner fremlagt på fagudvalgene på november-møderækken.\nTabel 1: Økonomisk oversigt (afvigelse i forhold til servicerammen)\n(mio. kr.)\n\nKorrigeret Teknisk\nbudget\ntillægsbevilling1\n\nKorrigeret\nbudget,\ninkl.\nteknik\n(C=A+B)\n\nForventet Afvigelse\nregnskab\n(D-C)\n\nØkonomiudvalget\n\nTeknisk Udvalg\n\n(mio. kr.)\n\nKorrigeret Teknisk\nbudget\ntillægsbevilling1\n\nKorrigeret\nbudget,\ninkl.\nteknik\n(C=A+B)\n\nForventet Afvigelse\nregnskab\n(D-C)\n\nPlan- og\nMiljøudvalget\n\nSocial- og\nArbejdsmarkedsudvalget\n\nInstitutions- og\nSkoleudvalget\n\nFritids- og\nKulturudvalget\n\nÆldre- og\nSundhedsudvalget\n\nI alt (ift. budget)\n\nIkke\nudvalgsfordelt\nserviceramme\n\nI alt (ift.\nserviceramme)\n\n1. Ændringer i servicerammen som følge af ændret lovgivning, herunder finanslovsaftale\n(DUT) og overenskomstresultat (pris- og lønregulering), som er finansieret af staten og skal\ntillægsbevilges for at komme ind i budgettet\n\nServicerammen\nServicerammen svarer som udgangspunkt til kommunens oprindelige budget. I løbet af året\nkan servicerammen dog blive justeret som følge af f.eks. ny lovgivning eller\noverenskomstaftaler, der påvirker kommunernes udgifter. Kommunerne kompenseres for de\nøkonomiske konsekvenser gennem en regulering af både bloktilskuddet og servicerammen.\nKompensationen for ny lovgivning sker efter DUT-princippet, mens kompensationen for nye\noverenskomstaftaler sker gennem pris- og lønreguleringen (PL). I begge tilfælde tager\nkompensationen udgangspunkt i de gennemsnitlige merudgifter på landsplan. Den enkelte\nkommunes faktiske merudgifter kan derfor afvige fra den kompensation, kommunen modtager,\nbåde økonomisk og i forhold til servicerammen.\nMed denne budgetopfølgning søges der om tillægsbevillinger til udvalgene på i alt 28,2 mio. kr.\n\nsom følge af ny lovgivning og overenskomstaftaler. Tillægsbevillingerne finansieres af\ntilsvarende merindtægter fra staten og er dermed af teknisk karakter.\nHøje-Taastrup Kommunes serviceramme er som følge af en række tekniske justeringer ændret\nfra oprindeligt 3.720 mio. kr. til 3.779 mio. kr. En del af justeringerne blev indarbejdet ved 1.\nbudgetopfølgning, herunder udgifter til nedsat forældrebetaling i dagtilbud,\nminimumsnormeringer og ukrainske flygtninge.\n2. budgetopfølgning viser et forventet regnskab i 2026 på 3.779,6 mio. kr. Det svarer til et en\nmindre overskridelse af servicerammen på 0,6 mio. kr., svarende til en afvigelse på 0,02 pct.\n\nUdgifter uden for servicerammen\nDer forventes merforbrug på udgifter uden for servicerammen på 16,0 mio. kr., som søges\ntillægsbevilget.\nAfvigelsen vedrører primært et fejlagtigt skøn for refusion fra særligt dyre enkeltsager på det\nspecialiserede børneområde. Ved 1. budgetopfølgning blev indtægtsbudgettet øget for at\nbudgetlægge med samme trend som året forinden, men i stedet er kommet en stor berigtigelse\nvedr. statsrefusion fra 2025, som dels viser at refusionsniveauet i 2025 var for højt og dels\ngiver en udgift i 2026.\nDesuden skyldes merforbruget overførselsudgifter på arbejdsmarkedsområdet, som\nfinansieres af staten med et særligt tilskud til kommuner med høj udvikling i ledigheden.\nModsat forventes merindtægter som følge af indsatsen med indtægtsoptimering, hvor der i år\ner lagt et særligt fokus på at berigtige og indhente manglende mellemkommunal refusion.\nDe væsentligste afvigelser er uddybet i fagudvalgssagerne.\nAnlæg\nDer forventes samlede afvigelser på anlægsområdet på 197,8 mio. kr. i 2026, jf. tabel 3.\nAnlæg inden for anlægsrammen\nDer forventes nettoafvigelser på 211,6 mio. kr. inden for anlægsrammen.\nHovedparten af afvigelserne vedrører forsinkelser i en række anlægsprojekter, hvor udgifterne i\nstedet forventes afholdt i 2027. De forventede forskydninger udgør samlet 198,6 mio. kr.\nAfvigelserne opgøres endeligt i forbindelse med regnskabsafslutningen, hvorefter de vil blive\nsøgt overført til budget 2027.\nDerudover søges 0,5 mio. kr. fremrykket og frigivet fra 2027 til 2026 vedrørende omdannelsen\naf Flønghuset til daginstitution. Midlerne skal anvendes til rådgivning og projektering.\nDesuden forventes der på nuværende tidspunkt merudgifter på 6,0 mio. kr. vedrørende\nservicearealerne på Birkehøj Plejecenter som følge af entreprenørkonkurs under byggeriet.\nAnlæg uden for anlægsrammen\n\nUden for anlægsrammen forventes afvigelser på samlet 13,9 mio. kr.\nAfvigelsen består primært af mindreindtægter på 10,4 mio. kr., heraf 5,2 mio. kr. vedrørende\nOmrådefornyelse Folkeparken, der er forsinket. Herudover medfører entreprenørkonkursen på\nBirkehøj Plejecenter forventede merudgifter vedrørende boligdelen på 6,0 mio. kr.\nTabel 2: Forventede afvigelser på anlægsprojekter\nUdvalg\n\nForventet\nafvigelse i 2026\n\nØkonomiudvalget Anlægsprojekter inden for anlægsrammen\n\nØkonomiudvalget Anlægsprojekter uden for anlægsrammen\n\nTeknisk Udvalg\n\nAnlægsprojekter inden for anlægsrammen\n\nI alt\n\nØkonomiudvalget behandlede den 10-06-2026 (punkt 9) videoovervågning i Taastrup\nHovedgade, hvor der blev afsat rådighedsbeløb i 2026 på 0,46 mio. kr. til formålet. Sagen blev\nikke videresendt til Byrådet, hvorfor det afsatte rådighedsbeløb endnu ikke formelt er frigivet.\nBeløbet på 0,46 mio. kr. søges frigivet med 2. budgetopfølgning. Projektet er igangsat og\nforventes udført inden årets udgang.\nFinansiering\nPå finansieringssiden forventes merindtægter på 90,9 mio. kr., som primært kan henføres til:\n\nMidtvejsreguleringen, der indeholder justeringer på indtægtssiden fx:\nOverenskomstresultatet, som indgår i pris- og lønreguleringen\nFinansiering til flere opgaver som følge af lovændringer, herunder opgaven med\nat tage imod flygtning fra Ukraine (DUT)\nSærligt tilskud til kommuner med høj udvikling i ledigheden\n\nDertil kommer merindtægt vedr.:\nForskerskat\nAfkast på investeringsporteføljen\nEfterregulering af kommunal medfinansiering (KMF) fra 2025\nIndfrielse af lån til betaling af ejendomsskatter og stigning i grundskyld\nNulstilling af forventet deponering vedr. sundheds- og bevægelseshuset"
     },
     {
      "titel": "Økonomi",
-     "tekst": "Tabel 3: Resultatopgørelse (afvigelse i forhold til korrigeret budget)\n\nMio. kr.\n\nOprindeligt Korrigeret Forventet\nbudget\nBudget\nregnskab\n\nAfvigelse\n\nAnsøgt\ntillægsbevilling\n\n1. Serviceudgifter\n\nØkonomiudvalget\n\nTeknisk Udvalg\n\nPlan- og Miljøudvalget\n\nArbejdsmarkeds- og\nSocialudvalget\n\nInstitutions- og\nSkoleudvalget\n\nFritids- og Kulturudvalget\n\nÆldre- og\nSundhedsudvalget\n\n2. Udgifter uden for\nservicerammen\n\n3. Anlæg\n\n4. Finansielle\nudgiftsposter\n\nRenter (netto)\n\nBalanceforskydninger\n\nAfdrag på lån\n\n5. Udgifter i alt (1+2+3+4)\n\n6. Finansielle\nindtægtsposter\n\nLånoptagelse m.v.\n\nSkatter, tilskud og udligning -5.394,9\ninkl. moms\n\n7. Finansiering i alt (4+6)\n\nLikviditetsunderskud (+)\nLikviditetsoverskud (-)\n\n1. Der er en forskel imellem korrigeret budget, inkl. tekniske tillægsbevillinger (DUT og\nPL) og servicerammen på 9,0 mio. kr., som ikke kan fordeles på udvalg. Derfor er\nafvigelsen til korrigereret budget på 9,6 mio. kr., mens afvigelsen til servicerammen\nkun er på 0,6 mio. kr., se også tabel 1."
+     "tekst": "Tabel 3: Resultatopgørelse (afvigelse i forhold til korrigeret budget)\nMio. kr.\n\nOprindeligt Korrigeret Forventet\nbudget\nBudget\nregnskab\n\nAfvigelse\n\nAnsøgt\ntillægsbevilling\n\n1. Serviceudgifter\n\nØkonomiudvalget\n\nTeknisk Udvalg\n\nPlan- og Miljøudvalget\n\nArbejdsmarkeds- og\nSocialudvalget\n\nInstitutions- og\nSkoleudvalget\n\nFritids- og Kulturudvalget\n\nÆldre- og\nSundhedsudvalget\n\n2. Udgifter uden for\nservicerammen\n\n3. Anlæg\n\n4. Finansielle\nudgiftsposter\n\nRenter (netto)\n\nBalanceforskydninger\n\nAfdrag på lån\n\n5. Udgifter i alt (1+2+3+4)\n\n6. Finansielle\nindtægtsposter\n\nLånoptagelse m.v.\n\nSkatter, tilskud og udligning -5.394,9\ninkl. moms\n\n7. Finansiering i alt (4+6)\n\nLikviditetsunderskud (+)\nLikviditetsoverskud (-)\n\n1. Der er en forskel imellem korrigeret budget, inkl. tekniske tillægsbevillinger (DUT og\nPL) og servicerammen på 9,0 mio. kr., som ikke kan fordeles på udvalg. Derfor er\nafvigelsen til korrigereret budget på 9,6 mio. kr., mens afvigelsen til servicerammen\nkun er på 0,6 mio. kr., se også tabel 1."
     }
    ],
    "bilag": []
@@ -7158,10 +7243,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "6. I - Takstkatalog 2027",
    "afsnit": [
     {
@@ -7177,8 +7262,12 @@
      "tekst": "Anbefales."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt"
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Takstkataloget for 2027 er opdateret på baggrund af det vedtagne budget 2027. Kataloget\nindeholder desuden justeringer på musikskole- og svømmehalsområdet samt\nVestforbrændings forslag til gebyrer for virksomheders adgang til genbrugsstationerne i 2027.\nNogle takster er beregnet ud fra de vedtagne budgetter på områderne, mens andre er\nreguleret med KL’s fremskrivningsprocent for salg af produkter og ydelser fra 2026 til 2027.\nUdviklingen i taksterne afspejler blandt andet den almindelige pris- og lønudvikling,\noverenskomstfornyelsen i 2026 (OK26), udviklingen i antallet af børn, unge og ældre og\nændringer som følge af budgetforliget.\nDe væsentligste ændringer i forhold til 2026 er beskrevet nedenfor.\nDagtilbud\nDagtilbudstaksterne blev pr. 01-05-2026 nedsat som følge af finanslovsaftalen for 2026. Fra\n2026 til 2027 stiger taksterne med 3,1 pct. for 0 – 2-årige og 2,0 pct. for 3 – 5-årige.\nUdviklingen skyldes primært pris- og lønregulering, herunder virkningen af OK26. Reduktionen\npå ét årsværk blandt de pædagogiske vejledere, som følge af budgetforliget, trækker i modsat\nretning.\nKlubber\n\nKlubtaksterne stiger gennemsnitlig med knap 2,9 pct. fra 2026 til 2027. Stigningen skyldes\nprimært pris- og lønudviklingen, herunder OK26. Taksterne er desuden påvirket af\nbeslutningerne i budgetforliget vedrørende omfordeling og tilpasning af midler til Klubben i\nCentrum og reduktion i åbningstid i aftenklub.\nMusikskolen\nTakstkataloget er tilpasset, så det afspejler Musikskolens gældende takststruktur og\nbetegnelser, som hidtil ikke har været fuldt ud afspejlet i takstkataloget. Det indebærer blandt\nandet følgende ændringer i betegnelserne:\nInstrumentalundervisning ændres til Solo-undervisning,\nSamspilselever ændres til Ensemble,\nGrundskole ændres til Minimus, Spil Op og Mer Spil Op.\n\nJf. Kulturskolernes vedtægter skal bestyrelsen forelægge begrundede takstændringer for\nByrådet. Bestyrelsen ønsker at tilbyde instrumentleje til 309 kr. pr. sæson og at introducere en\ntalentlinje for 6-19-årige til 5.061 kr. pr. sæson. Derudover foreslås generelt at indføre lidt\nhøjere takster for udenbys elever.\nEndelig foreslås gebyret for HOPE afskaffet, da administrationsomkostningerne ved\nopkrævningen vurderes at være høje i forhold til indtægten.\nÆndringerne indgår i takstkataloget, som forelægges Byrådet til godkendelse.\nSvømmehaller\nTakstkataloget er suppleret med takster for en række ydelser i svømmehallerne. Der foreslås\nfølgende takster:\nSaunagus og infrarød sauna: 26 kr. for en enkeltbillet og 208 kr. for en 10-tursbillet.\nMorgensvømmerkaffe: 31 kr. for en enkeltbillet og 248 kr. for en 10-tursbillet.\n\nDerudover er takster for baneleje indarbejdet i kataloget. Indtægter fra baneleje har indgået i\nbudgettet siden 2023, men taksterne har ikke tidligere fremgået af takstkataloget.\nDe tilføjede takster forelægges Byrådet til godkendelse som en del af det samlede\ntakstkatalog.\nSkorstensfejning\nGebyrerne for skorstensfejning er opdateret på baggrund af de vejledende gebyrer for\nlovpligtigt skorstensfejerarbejde for 2027 fra Skorstensfejerlauget, som er godkendt af KL. De\nenkelte gebyrer stiger mellem 1 og 6 kr. i forhold til 2026.\nVestforbrænding\nVestforbrændings forslag til gebyrer for virksomhedernes anvendelse af genbrugsstationerne i\n\n2027 blev behandlet på Vestforbrændings bestyrelsesmøde 27-05-2026 og forelægges nu\nByrådet til godkendelse. Gebyrerne stiger med 15 kr. pr. besøg for person- og kassebiler og\nbiler, som ikke er registreret i Motorregisteret, og med 10 kr. pr. besøg for ladvogne.\nTømningsordninger\nHøje-Taastrup Kommune har indgået ny kontrakt på området for tømning af samle- og\nbundfældningstanke. Den nye kontrakt medfører forholdsvis store takststigninger, da priserne i\nden tidligere kontrakt ikke har været reguleret i en længere årrække og derfor ikke længere\nafspejler det aktuelle omkostningsniveau.\nByggesagsgebyr\nSom følge af budgetforliget indføres gebyr på udvalgte typer af byggesager. Det omfatter\nindustri- og lagerbygninger, etageboligbyggeri og øvrigt erhvervsbyggeri. Taksten fastsættes til\n750 kr. pr. time."
+     "tekst": "Takstkataloget for 2027 er opdateret på baggrund af det vedtagne budget 2027. Kataloget\nindeholder desuden justeringer på musikskole- og svømmehalsområdet samt\nVestforbrændings forslag til gebyrer for virksomheders adgang til genbrugsstationerne i 2027.\nNogle takster er beregnet ud fra de vedtagne budgetter på områderne, mens andre er\nreguleret med KL’s fremskrivningsprocent for salg af produkter og ydelser fra 2026 til 2027.\nUdviklingen i taksterne afspejler blandt andet den almindelige pris- og lønudvikling,\noverenskomstfornyelsen i 2026 (OK26), udviklingen i antallet af børn, unge og ældre og\nændringer som følge af budgetforliget.\nDe væsentligste ændringer i forhold til 2026 er beskrevet nedenfor.\nDagtilbud\nDagtilbudstaksterne blev pr. 01-05-2026 nedsat som følge af finanslovsaftalen for 2026. Fra\n2026 til 2027 stiger taksterne med 3,1 pct. for 0 – 2-årige og 2,0 pct. for 3 – 5-årige.\nUdviklingen skyldes primært pris- og lønregulering, herunder virkningen af OK26. Reduktionen\npå ét årsværk blandt de pædagogiske vejledere, som følge af budgetforliget, trækker i modsat\n\nretning.\nKlubber\nKlubtaksterne stiger gennemsnitlig med knap 2,9 pct. fra 2026 til 2027. Stigningen skyldes\nprimært pris- og lønudviklingen, herunder OK26. Taksterne er desuden påvirket af\nbeslutningerne i budgetforliget vedrørende omfordeling og tilpasning af midler til Klubben i\nCentrum og reduktion i åbningstid i aftenklub.\nMusikskolen\nTakstkataloget er tilpasset, så det afspejler Musikskolens gældende takststruktur og\nbetegnelser, som hidtil ikke har været fuldt ud afspejlet i takstkataloget. Det indebærer blandt\nandet følgende ændringer i betegnelserne:\nInstrumentalundervisning ændres til Solo-undervisning,\nSamspilselever ændres til Ensemble,\nGrundskole ændres til Minimus, Spil Op og Mer Spil Op.\n\nJf. Kulturskolernes vedtægter skal bestyrelsen forelægge begrundede takstændringer for\nByrådet. Bestyrelsen ønsker at tilbyde instrumentleje til 309 kr. pr. sæson og at introducere en\ntalentlinje for 6-19-årige til 5.061 kr. pr. sæson. Derudover foreslås generelt at indføre lidt\nhøjere takster for udenbys elever.\nEndelig foreslås gebyret for HOPE afskaffet, da administrationsomkostningerne ved\nopkrævningen vurderes at være høje i forhold til indtægten.\nÆndringerne indgår i takstkataloget, som forelægges Byrådet til godkendelse.\nSvømmehaller\nTakstkataloget er suppleret med takster for en række ydelser i svømmehallerne. Der foreslås\nfølgende takster:\nSaunagus og infrarød sauna: 26 kr. for en enkeltbillet og 208 kr. for en 10-tursbillet.\nMorgensvømmerkaffe: 31 kr. for en enkeltbillet og 248 kr. for en 10-tursbillet.\n\nDerudover er takster for baneleje indarbejdet i kataloget. Indtægter fra baneleje har indgået i\nbudgettet siden 2023, men taksterne har ikke tidligere fremgået af takstkataloget.\nDe tilføjede takster forelægges Byrådet til godkendelse som en del af det samlede\ntakstkatalog.\nSkorstensfejning\nGebyrerne for skorstensfejning er opdateret på baggrund af de vejledende gebyrer for\nlovpligtigt skorstensfejerarbejde for 2027 fra Skorstensfejerlauget, som er godkendt af KL. De\nenkelte gebyrer stiger mellem 1 og 6 kr. i forhold til 2026.\n\nVestforbrænding\nVestforbrændings forslag til gebyrer for virksomhedernes anvendelse af genbrugsstationerne i\n2027 blev behandlet på Vestforbrændings bestyrelsesmøde 27-05-2026 og forelægges nu\nByrådet til godkendelse. Gebyrerne stiger med 15 kr. pr. besøg for person- og kassebiler og\nbiler, som ikke er registreret i Motorregisteret, og med 10 kr. pr. besøg for ladvogne.\nTømningsordninger\nHøje-Taastrup Kommune har indgået ny kontrakt på området for tømning af samle- og\nbundfældningstanke. Den nye kontrakt medfører forholdsvis store takststigninger, da priserne i\nden tidligere kontrakt ikke har været reguleret i en længere årrække og derfor ikke længere\nafspejler det aktuelle omkostningsniveau.\nByggesagsgebyr\nSom følge af budgetforliget indføres gebyr på udvalgte typer af byggesager. Det omfatter\nindustri- og lagerbygninger, etageboligbyggeri og øvrigt erhvervsbyggeri. Taksten fastsættes til\n750 kr. pr. time."
     }
    ],
    "bilag": []
@@ -7188,10 +7277,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "7. I - Udvikling af tilbudsviften",
    "afsnit": [
     {
@@ -7215,12 +7304,16 @@
      "tekst": "Ændringsforslag fra F, Ø og A:\n1: Økonomiudvalget indstiller scenarie 1, hvilket betyder at byskolen videreføres og\nudvikles som kommunalt specialundervisningstilbud, som en del af den samlede\ntilbudsvifte.\n2: Der igangsættes et arbejde med at afdække målgrupper på det specialiserede\nbørneområde med henblik på evt. at udvikle målgruppe og normering herunder også\nafdække samarbejde med andre kommuner ift. salg af pladser.\nFor stemmer: A(1), F(1), Ø(1)\nImod stemmer (B(1), C(2), O(1)\nUndlader at stemme I(1)\nÆndringsforslaget falder\n\nÆndringsforslag fra B, C, I og O:\nAt der tilføjes ’ved skoleårets udgang’ til punkt 1\nændringsforslaget anbefales\nAfstemning om sagens oprindelige indstilling tilføjet det anbefalede ændringsforslag fra\nC, B, I og O\nFor stemmer: (B(1), C(2), I(1), O(1),\nImod stemmer: A(1), F(1), Ø(1)\nSagen anbefales"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Byrådet besluttede at sende sagen tilbage til fornyet behandling i Institutions- og\nSkoleudvalget."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Høje-Taastrup Kommune arbejder med at udvikle en bæredygtig og fagligt stærk tilbudsvifte på\nspecialundervisningsområdet. Målet er, at børn og unge så vidt muligt kan forblive i lokale\nfællesskaber, når det er muligt, samtidig med at kommunen kan tilbyde den rette kvalitet\ngennem tilstrækkeligt specialiserede tilbud til børn og unge med særlige behov, når det er\nnødvendigt.\nSom led i denne udvikling har Høje-Taastrup Kommune indgået en ny fælleskommunal\nrammeaftale, sammen med 28 andre kommuner på Sjælland, for behandlings- og\nspecialundervisningstilbud. Rammeaftalen skal understøtte højere kvalitet, øget specialisering,\nfælles kvalitetskrav og mere rentable og bæredygtige løsninger på området. Aftalen giver\nmulighed for adgang til flere og mere specialiserede tilbud til børn og unge med sociale,\nfølelses- eller adfærdsmæssige udfordringer, som har omfattende skolefravær og behov for\nbehandling, og derfor i en periode har brug for et andet tilbud end på folkeskolen.\nHøje-Taastrup Kommunes eget kommunale behandlings- og specialundervisningstilbud\n”Byskolen”, blev etableret i 2025. Som et mindre tilbud har Byskolen begrænsede muligheder\nfor at samle den nødvendige faglige specialisering og kapacitet sammenlignet med større og\nmere specialiserede private tilbud, der indgår under rammeaftalen.\nMed det tværkommunale samarbejde om en fælles rammeaftale, er forudsætningerne for\nudbud og drift på behandlings- og specialundervisningsområdet ændret væsentligt siden\netableringen af Byskolen. Det har givet anledning til en samlet vurdering af kommunens\ntilbudsvifte. På den baggrund anbefaler administrationen, at Byskolen lukkes som led i\nudviklingen af en mere specialiseret og bæredygtig tilbudsvifte på behandlings- og\nspecialundervisningsområdet i Høje-Taastrup Kommune.\nHøje-Taastrup Kommune står overfor en strategisk udvikling af tilbudsviften på behandlingsog specialundervisningsområdet på børne- og ungeområdet. Samtidig arbejder kommunen\nmed at styrke deltagelsesmulighederne for flere børn og unge tættere på almenområdet, samt\nvidereudvikle kvaliteten i de tilbud som skal understøtte børn og unge med behov for\n\nbehandling- og specialundervisning.\nMed den fælleskommunale rammeaftale for behandlings- og specialundervisningstilbud, som\nHøje-Taastrup Kommune, sammen med 28 andre kommuner på Sjælland, har indgået med\nprivate tilbud, forventes en væsentlig udvidelse af den lokale kapacitet med flere og mere\nspecialiserede tilbud fra skoleåret 2026/2027. Derudover har Behandlingsskolerne søgt om at\netablere og indgå en kvalitetsaftale om en ny skole i kommunen. Det giver nye muligheder for\nat tilbyde børn og unge med omfattende sociale, følelsesmæssige, psykiske eller\nadfærdsmæssige vanskeligheder, mere målrettede, specialiserede og lokale\nundervisningstilbud i kommunen til fordelagtige priser.\nDen fremtidige tilbudsvifte på behandlings- og specialundervisningsområdet vil, under\nforudsætning af politisk godkendelse af Behandlingsskolernes kvalitetsaftalen og etablering af\nen skole i den vestlige del af kommunen i Fløng med 42 pladser, bestå af kommunens eget\ntilbud ”Byskolen” med 40 pladser, det private tilbud Basen med 55 pladser, beliggende i den\nøstlige del af kommunen, samt køb af pladser uden for kommunen. Samlet set indebærer dette\nen mere specialiseret og faglig differentieret lokal tilbudsvifte sammenlignet med i dag og en\nhøj kapacitet på 137 pladser, uden at kommunen forpligtes til at anvise elever til bestemte\nprivate tilbud.\nMens arbejdet med at styrke almenområdet skal understøtte, at flest mulige børn og unge kan\ntrives i almene fællesskaber, viser udviklingen på området samtidig et stigende behov for\nspecialiserede indsatser til børn og unge med omfattende mistrivsel, skolefravær og\nskolevægring. Tilbuddene under rammeaftalen vurderes samlet set at have en højere\nspecialisering til denne målgruppe samtidig med mere ensartet kvalitetskrav og større\nfleksibilitet i kapaciteten. Tilbuddene har mere målrettede indsatser, herunder til alvorlige\nskolefraværsproblematikker, som er en af de væsentligste drivere for mistrivsel hos børn- og\nunge samt stigende udgifter på området.\nByskolen blev etableret i oktober 2025, som en sammenlægning af Flønghuset og\nUdskolingstilbuddet og har plads til op til 40 elever fra 0-10. klasse. Byskolen er etableret som\net bredt behandlings- og specialundervisningstilbud. Selvom det med samlingen af Flønghuset\nog Udskolingshuset er lykkes at udvide elevgrundlaget, kan det være vanskeligt at opretholde\nrobuste og specialiserede faglige miljøer omkring specifikke elevbehov samt en stabil\nkapacitetsudnyttelse i et tilbud, der alene baserer sig på kommunens eget elevgrundlag. Som\net mindre tilbud er Byskolen derfor sårbar overfor udsving i elevgrund og kapacitetsbehov.\nMed den øgede lokale kapacitet, som følge af rammeaftalen og med tilbud, der i højere grad er\norganiseret omkring specialiseret behandlingsindsatser til elever med specifikke og komplekse\nbehov, er forudsætningerne for den samlede tilbudsvifte imidlertid ændret væsentligt siden\netableringen af Byskolen. Med flere lokale og mere specialiserede tilbud kan der forventes en\nøget efterspørgsel på de private tilbud, hvilket kan udfordre et tilstrækkeligt elevgrundlaget på\nByskolen.\nUnder forudsætning af, at Byrådet godkender Behandlingsskolernes ansøgning om at etablere\nen skole i Fløng og en kvalitetsaftale med kommunen, er det administrationens vurdering at\n\nden nye lokale kapacitet samlet set er tilstrækkelig uden det kommunale tilbud ”Byskolen”.\nKommunen vil fortsat kunne opfylde sin forsyningsforpligtelse og tilbyde relevante behandlingsog skoleundervisningstilbud til børn og unge gennem de eksterne tilbud under rammeaftalen\nsamt øvrige specialundervisningstilbud i andre kommuner. De eksterne tilbud under\nrammeaftalen vil samtidig kunne tilbyde en bredere vifte af indsatser omkring barnet og\nfamilien, herunder fraværsindsatser og familiebehandling, udover det serviceniveau, som\nByskolen kan tilbyde. Samtidig vurderes den samlede tilbudsvifte med større anvendelse af\nrammeaftaledækkede tilbud at give et mere økonomisk bæredygtigt grundlag for områdets\nfremtidige kapacitet og drift.\nPå den baggrund vurderer administrationen at en omlægning af tilbudsviften, med større\nanvendelse af tilbud under rammeaftalen, vil understøtte en mere bæredygtig, specialiseret og\nfleksibel udvikling af behandlings- og specialundervisningsområdet i Høje-Taastrup Kommune.\nAdministrationen anbefaler derfor at lukke Byskolen som led i denne udvikling.\nByskolen forventes, 01-08-2026, at have mellem 18-22 elever fordelt på 0. – 10. klasse, idet\nflere elever forventes at afslutte deres skoleforløb ved skoleårets afslutning, mens 5 elever\nendnu ikke er opstartet i tilbuddet. Eleverne er fordelt på mange klassetrin med relativt få\nelever pr. årgang, der forventes: 7 elever fra 2. – 5 klasse, 4 elever fra 6. - 7. klasse og 11\nelever fra 9 – 10. klasse."
+     "tekst": "Høje-Taastrup Kommune arbejder med at udvikle en bæredygtig og fagligt stærk tilbudsvifte på\nspecialundervisningsområdet. Målet er, at børn og unge så vidt muligt kan forblive i lokale\nfællesskaber, når det er muligt, samtidig med at kommunen kan tilbyde den rette kvalitet\ngennem tilstrækkeligt specialiserede tilbud til børn og unge med særlige behov, når det er\nnødvendigt.\nSom led i denne udvikling har Høje-Taastrup Kommune indgået en ny fælleskommunal\nrammeaftale, sammen med 28 andre kommuner på Sjælland, for behandlings- og\nspecialundervisningstilbud. Rammeaftalen skal understøtte højere kvalitet, øget specialisering,\nfælles kvalitetskrav og mere rentable og bæredygtige løsninger på området. Aftalen giver\nmulighed for adgang til flere og mere specialiserede tilbud til børn og unge med sociale,\nfølelses- eller adfærdsmæssige udfordringer, som har omfattende skolefravær og behov for\nbehandling, og derfor i en periode har brug for et andet tilbud end på folkeskolen.\nHøje-Taastrup Kommunes eget kommunale behandlings- og specialundervisningstilbud\n”Byskolen”, blev etableret i 2025. Som et mindre tilbud har Byskolen begrænsede muligheder\nfor at samle den nødvendige faglige specialisering og kapacitet sammenlignet med større og\nmere specialiserede private tilbud, der indgår under rammeaftalen.\nMed det tværkommunale samarbejde om en fælles rammeaftale, er forudsætningerne for\nudbud og drift på behandlings- og specialundervisningsområdet ændret væsentligt siden\netableringen af Byskolen. Det har givet anledning til en samlet vurdering af kommunens\ntilbudsvifte. På den baggrund anbefaler administrationen, at Byskolen lukkes som led i\nudviklingen af en mere specialiseret og bæredygtig tilbudsvifte på behandlings- og\nspecialundervisningsområdet i Høje-Taastrup Kommune.\n\nHøje-Taastrup Kommune står overfor en strategisk udvikling af tilbudsviften på behandlingsog specialundervisningsområdet på børne- og ungeområdet. Samtidig arbejder kommunen\nmed at styrke deltagelsesmulighederne for flere børn og unge tættere på almenområdet, samt\nvidereudvikle kvaliteten i de tilbud som skal understøtte børn og unge med behov for\nbehandling- og specialundervisning.\nMed den fælleskommunale rammeaftale for behandlings- og specialundervisningstilbud, som\nHøje-Taastrup Kommune, sammen med 28 andre kommuner på Sjælland, har indgået med\nprivate tilbud, forventes en væsentlig udvidelse af den lokale kapacitet med flere og mere\nspecialiserede tilbud fra skoleåret 2026/2027. Derudover har Behandlingsskolerne søgt om at\netablere og indgå en kvalitetsaftale om en ny skole i kommunen. Det giver nye muligheder for\nat tilbyde børn og unge med omfattende sociale, følelsesmæssige, psykiske eller\nadfærdsmæssige vanskeligheder, mere målrettede, specialiserede og lokale\nundervisningstilbud i kommunen til fordelagtige priser.\nDen fremtidige tilbudsvifte på behandlings- og specialundervisningsområdet vil, under\nforudsætning af politisk godkendelse af Behandlingsskolernes kvalitetsaftalen og etablering af\nen skole i den vestlige del af kommunen i Fløng med 42 pladser, bestå af kommunens eget\ntilbud ”Byskolen” med 40 pladser, det private tilbud Basen med 55 pladser, beliggende i den\nøstlige del af kommunen, samt køb af pladser uden for kommunen. Samlet set indebærer dette\nen mere specialiseret og faglig differentieret lokal tilbudsvifte sammenlignet med i dag og en\nhøj kapacitet på 137 pladser, uden at kommunen forpligtes til at anvise elever til bestemte\nprivate tilbud.\nMens arbejdet med at styrke almenområdet skal understøtte, at flest mulige børn og unge kan\ntrives i almene fællesskaber, viser udviklingen på området samtidig et stigende behov for\nspecialiserede indsatser til børn og unge med omfattende mistrivsel, skolefravær og\nskolevægring. Tilbuddene under rammeaftalen vurderes samlet set at have en højere\nspecialisering til denne målgruppe samtidig med mere ensartet kvalitetskrav og større\nfleksibilitet i kapaciteten. Tilbuddene har mere målrettede indsatser, herunder til alvorlige\nskolefraværsproblematikker, som er en af de væsentligste drivere for mistrivsel hos børn- og\nunge samt stigende udgifter på området.\nByskolen blev etableret i oktober 2025, som en sammenlægning af Flønghuset og\nUdskolingstilbuddet og har plads til op til 40 elever fra 0-10. klasse. Byskolen er etableret som\net bredt behandlings- og specialundervisningstilbud. Selvom det med samlingen af Flønghuset\nog Udskolingshuset er lykkes at udvide elevgrundlaget, kan det være vanskeligt at opretholde\nrobuste og specialiserede faglige miljøer omkring specifikke elevbehov samt en stabil\nkapacitetsudnyttelse i et tilbud, der alene baserer sig på kommunens eget elevgrundlag. Som\net mindre tilbud er Byskolen derfor sårbar overfor udsving i elevgrund og kapacitetsbehov.\nMed den øgede lokale kapacitet, som følge af rammeaftalen og med tilbud, der i højere grad er\norganiseret omkring specialiseret behandlingsindsatser til elever med specifikke og komplekse\nbehov, er forudsætningerne for den samlede tilbudsvifte imidlertid ændret væsentligt siden\netableringen af Byskolen. Med flere lokale og mere specialiserede tilbud kan der forventes en\nøget efterspørgsel på de private tilbud, hvilket kan udfordre et tilstrækkeligt elevgrundlaget på\n\nByskolen.\nUnder forudsætning af, at Byrådet godkender Behandlingsskolernes ansøgning om at etablere\nen skole i Fløng og en kvalitetsaftale med kommunen, er det administrationens vurdering at\nden nye lokale kapacitet samlet set er tilstrækkelig uden det kommunale tilbud ”Byskolen”.\nKommunen vil fortsat kunne opfylde sin forsyningsforpligtelse og tilbyde relevante behandlingsog skoleundervisningstilbud til børn og unge gennem de eksterne tilbud under rammeaftalen\nsamt øvrige specialundervisningstilbud i andre kommuner. De eksterne tilbud under\nrammeaftalen vil samtidig kunne tilbyde en bredere vifte af indsatser omkring barnet og\nfamilien, herunder fraværsindsatser og familiebehandling, udover det serviceniveau, som\nByskolen kan tilbyde. Samtidig vurderes den samlede tilbudsvifte med større anvendelse af\nrammeaftaledækkede tilbud at give et mere økonomisk bæredygtigt grundlag for områdets\nfremtidige kapacitet og drift.\nPå den baggrund vurderer administrationen at en omlægning af tilbudsviften, med større\nanvendelse af tilbud under rammeaftalen, vil understøtte en mere bæredygtig, specialiseret og\nfleksibel udvikling af behandlings- og specialundervisningsområdet i Høje-Taastrup Kommune.\nAdministrationen anbefaler derfor at lukke Byskolen som led i denne udvikling.\nByskolen forventes, 01-08-2026, at have mellem 18-22 elever fordelt på 0. – 10. klasse, idet\nflere elever forventes at afslutte deres skoleforløb ved skoleårets afslutning, mens 5 elever\nendnu ikke er opstartet i tilbuddet. Eleverne er fordelt på mange klassetrin med relativt få\nelever pr. årgang, der forventes: 7 elever fra 2. – 5 klasse, 4 elever fra 6. - 7. klasse og 11\nelever fra 9 – 10. klasse."
     },
     {
      "titel": "Videre proces",
-     "tekst": "Ved politisk godkendelse af sagen igangsætter administrationen den videre proces for lukning\nog afvikling af Byskolen. Det betyder at der vil være ca. 18-22 elever, der skal flytte skole i\nefteråret 2026. Heraf er 5 elever endnu ikke startet på Byskolen, 6 elever er nye elever startet i\ndette skoleår, 7 elever er fra det tidligere “Flønghuset”, og 4 elever er fra det tidligere\n“Udskolingsstilbuddet”.\nNår eleverne skal flytte skole, vil der blive gennemført en individuel og faglig vurdering\naf elevernes behov og fremtidige tilbud. Administrationen vil i dialog med forældre og relevante\nfagpersoner sikre, at der tilrettelægges hensigtsmæssige overgangsforløb for det enkelte barn,\nså der skabes størst mulig kontinuitet og tryghed i overgangen til et nyt tilbud.\nDer igangsættes samtidig den nødvendige proces i forhold til medarbejdere, MED-system og\nfaglige organisationer. Administrationen vil i den forbindelse arbejde for at understøtte en så\ntryg og hensigtsmæssig overgang som muligt for medarbejderne.\nI forbindelse med den videre proces kan overdragelse af opgaven med behandlings- og\nspecialundervisning til andre behandlingsskoler være omfattet af reglerne om\nvirksomhedsoverdragelse. Hvis reglerne om virksomhedsoverdragelse finder anvendelse, vil\nberørte medarbejdere som udgangspunkt have ret til at overgå til den nye arbejdsgiver på\neksisterende løn- og ansættelsesvilkår. Formålet med\nreglerne om virksomhedsoverdragelse er at sikre kontinuitet og tryghed for både medarbejdere\nog børn i forbindelse med overgangen til et nyt tilbud.\nFor børn og unge kan en virksomhedsoverdragelse samtidig understøtte større stabilitet og\n\ngenkendelighed i hverdagen, hvis kendte medarbejdere fortsætter omkring børnene i et nyt\ntilbud. Hvorvidt reglerne om virksomhedsoverdragelse finder anvendelse, afhænger blandt\nandet af elevernes placering og den konkrete organisering af opgaverne i forbindelse med\novergang til nye tilbud.\nAdministrationen vil i givet fald gennemføre den nødvendige proces i forhold til medarbejdere,\nfaglige organisationer og MED-systemet i overensstemmelse med gældende regler og\naftaler. Tidspunktet for den endelige afvikling af Byskolen vil afhænge heraf, og den konkrete\ntidsplan vil derfor blive tilrettelagt, så der sikres størst muligt kontinuitet og tryghed for børn,\nunge og medarbejdere."
+     "tekst": "Ved politisk godkendelse af sagen igangsætter administrationen den videre proces for lukning\nog afvikling af Byskolen. Det betyder at der vil være ca. 18-22 elever, der skal flytte skole i\nefteråret 2026. Heraf er 5 elever endnu ikke startet på Byskolen, 6 elever er nye elever startet i\ndette skoleår, 7 elever er fra det tidligere “Flønghuset”, og 4 elever er fra det tidligere\n“Udskolingsstilbuddet”.\nNår eleverne skal flytte skole, vil der blive gennemført en individuel og faglig vurdering\naf elevernes behov og fremtidige tilbud. Administrationen vil i dialog med forældre og relevante\nfagpersoner sikre, at der tilrettelægges hensigtsmæssige overgangsforløb for det enkelte barn,\nså der skabes størst mulig kontinuitet og tryghed i overgangen til et nyt tilbud.\nDer igangsættes samtidig den nødvendige proces i forhold til medarbejdere, MED-system og\nfaglige organisationer. Administrationen vil i den forbindelse arbejde for at understøtte en så\ntryg og hensigtsmæssig overgang som muligt for medarbejderne.\nI forbindelse med den videre proces kan overdragelse af opgaven med behandlings- og\nspecialundervisning til andre behandlingsskoler være omfattet af reglerne om\nvirksomhedsoverdragelse. Hvis reglerne om virksomhedsoverdragelse finder anvendelse, vil\nberørte medarbejdere som udgangspunkt have ret til at overgå til den nye arbejdsgiver på\neksisterende løn- og ansættelsesvilkår. Formålet med\n\nreglerne om virksomhedsoverdragelse er at sikre kontinuitet og tryghed for både medarbejdere\nog børn i forbindelse med overgangen til et nyt tilbud.\nFor børn og unge kan en virksomhedsoverdragelse samtidig understøtte større stabilitet og\ngenkendelighed i hverdagen, hvis kendte medarbejdere fortsætter omkring børnene i et nyt\ntilbud. Hvorvidt reglerne om virksomhedsoverdragelse finder anvendelse, afhænger blandt\nandet af elevernes placering og den konkrete organisering af opgaverne i forbindelse med\novergang til nye tilbud.\nAdministrationen vil i givet fald gennemføre den nødvendige proces i forhold til medarbejdere,\nfaglige organisationer og MED-systemet i overensstemmelse med gældende regler og\naftaler. Tidspunktet for den endelige afvikling af Byskolen vil afhænge heraf, og den konkrete\ntidsplan vil derfor blive tilrettelagt, så der sikres størst muligt kontinuitet og tryghed for børn,\nunge og medarbejdere."
     },
     {
      "titel": "Økonomi",
@@ -7234,10 +7327,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "8. I - Parkeringsforhold ved institutionen Drømmekilden Valby Søndergade 2 - TU",
    "afsnit": [
     {
@@ -7261,8 +7354,12 @@
      "tekst": "Økonomiudvalget stiller ændringsforslag om, at der indføres standsningsforbud på den\nøstlige side af Valbysøndergade. Ændringsforslaget anbefales enstemmigt\nØkonomiudvalget anbefaler indstillingen fra Teknisk udvalg 29-09-2026 tilføjet\nændringsforslaget fra Økonomiudvalget. Sagens oprindelige indstilling anbefales dermed\nikke."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "1. Byrådet godkendte, at der etableres en sti fra Blåkildegårdens parkeringsplads til\ninstitutionen Drømmekilden, og at der indføres standsningsforbud på den østlige side af\nValbysøndergade.\n2. Byrådet godkendte, at omkostningerne finansieres via eksisterende anlægsbevilling til\nombygning af institutionen og via driftsbudgettet til drift af udearealer på kommunale\n\nejendomme."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Den eksisterende parkeringsplads er lille, og den fungerer dårligt, da dimensionerne er\nuhensigtsmæssige. På vejbesigtigelsen blev der stillet forslag om at udvide parkeringspladsen\nmod nord, som vist på vedlagte skitse (bilag1).\nDen eksisterende parkeringsplads har nogle uhensigtsmæssige mål, og derfor er det ikke lige\n\ntil at opgøre, hvor mange biler der er plads til. Samtidigt er det særdeles vanskeligt at bakke ud\npå grund af pladsmangel, og det skaber kaotiske situationer, hvor nogle vil ind, mens andre vil\nud. Det er ganske ubehageligt at bakke ud måske af et par gange, hvis bilerne er parkeret tæt,\nnår andre forældre holder utålmodigt og venter på en ledig parkeringsplads. Det forringer\nflowet og derved kapaciteten om morgenen.\nDer skal fældes tre større træer, som bliver reetableret med nogle mindre træer.\nPå vejbesigtigelsen blev det drøftet, om forældre og personale kunne henvises til at benytte\nparkeringspladsen ved Blåkildegård, som i dagtimerne sædvanligvis er meget lidt benyttet. Det\ner muligt at gå fra parkeringspladsen langs fortovet på Valby Søndergade. Strækningen fra\nparkeringsplads til indgangsdør er ca. 110 m.\nDer er også mulighed for at anlægge en lidt kortere adgangsvej fra parkeringspladsen til\nbagsiden af institutionen og frem til indgangsdøren. Denne strækning er ca. 90 m lang. Den lidt\nkortere forbindelse bag om institutionen kræver dog etablering af åbning i hegnet og anlæg af\nen sti på en del af strækningen, hvor der i dag er græs. Da afstanden kun er minimal kortere,\nkan en sådan løsning ikke anbefales.\nDe to ruter fra parkeringspladsen bag Blåkildegård til indgangen i Drømmekilden er vist på\nbilag 2.\nAdministrationen anbefaler, at parkeringspladsen udvides. Omkostningerne på ca. 100.000 kr.\nfinansieres delvist via restbudgettet på 58.000 kr. til ombygning af institutionen og delvist via\ndriftsbudgetet til udearealer på kommunale ejendomme.\n11-11-2026 sagen genoptages.\nØkonomiudvalget efterspurgte yderligere oplysninger på møde 07-10-2026. Der vedlægges\nnotat som bilag 3."
+     "tekst": "Den eksisterende parkeringsplads er lille, og den fungerer dårligt, da dimensionerne er\nuhensigtsmæssige. På vejbesigtigelsen blev der stillet forslag om at udvide parkeringspladsen\nmod nord, som vist på vedlagte skitse (bilag1).\nDen eksisterende parkeringsplads har nogle uhensigtsmæssige mål, og derfor er det ikke lige\ntil at opgøre, hvor mange biler der er plads til. Samtidigt er det særdeles vanskeligt at bakke ud\npå grund af pladsmangel, og det skaber kaotiske situationer, hvor nogle vil ind, mens andre vil\nud. Det er ganske ubehageligt at bakke ud måske af et par gange, hvis bilerne er parkeret tæt,\nnår andre forældre holder utålmodigt og venter på en ledig parkeringsplads. Det forringer\nflowet og derved kapaciteten om morgenen.\nDer skal fældes tre større træer, som bliver reetableret med nogle mindre træer.\nPå vejbesigtigelsen blev det drøftet, om forældre og personale kunne henvises til at benytte\nparkeringspladsen ved Blåkildegård, som i dagtimerne sædvanligvis er meget lidt benyttet. Det\ner muligt at gå fra parkeringspladsen langs fortovet på Valby Søndergade. Strækningen fra\nparkeringsplads til indgangsdør er ca. 110 m.\nDer er også mulighed for at anlægge en lidt kortere adgangsvej fra parkeringspladsen til\nbagsiden af institutionen og frem til indgangsdøren. Denne strækning er ca. 90 m lang. Den lidt\nkortere forbindelse bag om institutionen kræver dog etablering af åbning i hegnet og anlæg af\nen sti på en del af strækningen, hvor der i dag er græs. Da afstanden kun er minimal kortere,\nkan en sådan løsning ikke anbefales.\nDe to ruter fra parkeringspladsen bag Blåkildegård til indgangen i Drømmekilden er vist på\nbilag 2.\nAdministrationen anbefaler, at parkeringspladsen udvides. Omkostningerne på ca. 100.000 kr.\nfinansieres delvist via restbudgettet på 58.000 kr. til ombygning af institutionen og delvist via\ndriftsbudgetet til udearealer på kommunale ejendomme.\n11-11-2026 sagen genoptages.\nØkonomiudvalget efterspurgte yderligere oplysninger på møde 07-10-2026. Der vedlægges\nnotat som bilag 3."
     }
    ],
    "bilag": []
@@ -7272,10 +7369,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "10. I -Kommunegodkendelse af låneramme 2027 - Vestforbrænding - ØU",
    "afsnit": [
     {
@@ -7291,8 +7388,12 @@
      "tekst": "Anbefales."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Vestforbrændings bestyrelse har 16-09-2026 besluttet at optage lån på op til 219 mio. kr. til\nfinansiering af forventede investeringer i 2027. Beslutningen er betinget af\ninteressentkommunernes godkendelse.\nInvesteringerne vedrører primært udbygning og modernisering af fjernvarmenettet samt ITunderstøttelse af Vestforbrændings drift og administration.\nTabel 1: Forventede investeringer 2027\nMio. kr.\nFjernvarmenet, fortætningsprojekter i eksisterende varmenet samt infrastruktur\n\nIT-understøttelse af forretningsgange og processer\n\nForventet lånoptagelse i alt\n\nVestforbrænding forventer at investere 201 mio. kr. i udbygning og modernisering af det\neksisterende fjernvarmenet uden for Varmeplan 2030. Investeringen omfatter tilslutning af\nyderligere kunder i eksisterende fjernvarmeområder og konvertering fra olie- og gasfyr til\nfjernvarme. Derudover omfatter investeringen etablering og renovering af vekslerstationer samt\nopgradering af infrastrukturen til udveksling af varme mellem høj- og lavtemperaturnet.\nDer afsættes desuden 18 mio. kr. til IT-understøttelse af Vestforbrændings forretningsgange og\nprocesser. Investeringerne omfatter blandt andet AI-understøttelse, tiltag i forbindelse med\nNIS2-kravene samt systemer til administration af tømninger på genbrugsstationer, arbejdsmiljø\nog beredskab."
+     "tekst": "Vestforbrændings bestyrelse har 16-09-2026 besluttet at optage lån på op til 219 mio. kr. til\nfinansiering af forventede investeringer i 2027. Beslutningen er betinget af\ninteressentkommunernes godkendelse.\nInvesteringerne vedrører primært udbygning og modernisering af fjernvarmenettet samt ITunderstøttelse af Vestforbrændings drift og administration.\nTabel 1: Forventede investeringer 2027\nMio. kr.\nFjernvarmenet, fortætningsprojekter i eksisterende varmenet samt infrastruktur\n\nIT-understøttelse af forretningsgange og processer\n\nForventet lånoptagelse i alt\n\nVestforbrænding forventer at investere 201 mio. kr. i udbygning og modernisering af det\neksisterende fjernvarmenet uden for Varmeplan 2030. Investeringen omfatter tilslutning af\nyderligere kunder i eksisterende fjernvarmeområder og konvertering fra olie- og gasfyr til\nfjernvarme. Derudover omfatter investeringen etablering og renovering af vekslerstationer samt\nopgradering af infrastrukturen til udveksling af varme mellem høj- og lavtemperaturnet.\nDer afsættes desuden 18 mio. kr. til IT-understøttelse af Vestforbrændings forretningsgange og\nprocesser. Investeringerne omfatter blandt andet AI-understøttelse, tiltag i forbindelse med\nNIS2-kravene samt systemer til administration af tømninger på genbrugsstationer, arbejdsmiljø\n\nog beredskab."
     },
     {
      "titel": "Økonomi",
@@ -7306,10 +7407,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "11. I - Garantistillelse ved forhøjelse af kreditfacilitet for VF Affaldsenergi A/S - ØU",
    "afsnit": [
     {
@@ -7325,8 +7426,12 @@
      "tekst": "Anbefales."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Som følge af lovkravet om selskabsgørelse af affaldsforbrændingsaktiviteter blev VF\nAffaldsenergi A/S etableret pr. 01-01-2025. Selskabet driver affaldsforbrændingsaktiviteterne\npå markedsvilkår og skal derfor også finansiere sine investeringer på kommercielle vilkår.\nI 2025 godkendte interessentkommunerne at stille garanti for en kreditfacilitet i Nordea på 400\nmio. kr. med en løbetid på ét år. Høje-Taastrup Byråd godkendte garantistillelsen 18-06-2025.\nVF Affaldsenergi A/S har fortsat behov for finansiering af investeringer i affaldsenergianlægget.\nVestforbrændings bestyrelse godkendte derfor 16-09-2026 en forhøjelse af kreditfaciliteten til\n600 mio. kr. og en forlængelse af løbetiden til fem år. Da selskabet ikke kan optage lån i\nKommuneKredit, sker finansieringen gennem Nordea på markedsvilkår.\nNordea stiller som betingelse, at interessentkommunerne garanterer for 80 pct. af den til\nenhver tid udnyttede kreditfacilitet. Ved fuld udnyttelse af kreditrammen på 600 mio. kr. vil\nkommunernes samlede garantiforpligtelse dermed udgøre 480 mio. kr. Nordea bærer selv\nrisikoen for de resterende 20 pct.\nGarantistillelsen indebærer en større økonomisk risiko end kommunens garantier for lån\noptaget direkte af Vestforbrænding. Det skyldes, at VF Affaldsenergi A/S drives på\nmarkedsvilkår og dermed kan gå konkurs. Ved en konkurs kan kommunerne som\ngarantistillere blive forpligtet til at indfri deres andel af den udnyttede kreditfacilitet. Nordea og\nVestforbrænding vurderer dog, at risikoen er lav."
+     "tekst": "Som følge af lovkravet om selskabsgørelse af affaldsforbrændingsaktiviteter blev VF\nAffaldsenergi A/S etableret pr. 01-01-2025. Selskabet driver affaldsforbrændingsaktiviteterne\npå markedsvilkår og skal derfor også finansiere sine investeringer på kommercielle vilkår.\nI 2025 godkendte interessentkommunerne at stille garanti for en kreditfacilitet i Nordea på 400\nmio. kr. med en løbetid på ét år. Høje-Taastrup Byråd godkendte garantistillelsen 18-06-2025.\nVF Affaldsenergi A/S har fortsat behov for finansiering af investeringer i affaldsenergianlægget.\nVestforbrændings bestyrelse godkendte derfor 16-09-2026 en forhøjelse af kreditfaciliteten til\n600 mio. kr. og en forlængelse af løbetiden til fem år. Da selskabet ikke kan optage lån i\nKommuneKredit, sker finansieringen gennem Nordea på markedsvilkår.\nNordea stiller som betingelse, at interessentkommunerne garanterer for 80 pct. af den til\nenhver tid udnyttede kreditfacilitet. Ved fuld udnyttelse af kreditrammen på 600 mio. kr. vil\nkommunernes samlede garantiforpligtelse dermed udgøre 480 mio. kr. Nordea bærer selv\nrisikoen for de resterende 20 pct.\nGarantistillelsen indebærer en større økonomisk risiko end kommunens garantier for lån\noptaget direkte af Vestforbrænding. Det skyldes, at VF Affaldsenergi A/S drives på\n\nmarkedsvilkår og dermed kan gå konkurs. Ved en konkurs kan kommunerne som\ngarantistillere blive forpligtet til at indfri deres andel af den udnyttede kreditfacilitet. Nordea og\nVestforbrænding vurderer dog, at risikoen er lav."
     },
     {
      "titel": "Økonomi",
@@ -7340,10 +7445,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "12. I - Udskiftning af brugsvandsrør Torstorp Plejehjem, ÆSU, ASU",
    "afsnit": [
     {
@@ -7367,12 +7472,16 @@
      "tekst": "Anbefales."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
      "tekst": "En gennemgang af brugsvandsrørene på Torstorp Plejehjem viser, at rørene har betydelige\naflejringer og mange tæringer. Det peger på grundlæggende fejl i installationen, men det er\nuklart, hvilke fejl der er tale om, og hvor de præcist findes.\nBrugsvandsrørene er nu i så dårlig stand, at de bør udskiftes, før der opstår yderligere skader\npå bygningen. Der forekommer mindre utætheder flere gange om året, og mange af rørene er\nplaceret svært tilgængeligt i loftsrum, hvilket gør reparationer vanskelige. Det kan medføre\nlængere perioder uden vand i dele af bygningen og dermed behov for genhusning. Der er\ndesuden risiko for større vandskader.\nUdskiftningen planlægges udført i etaper med midlertidig forsyning, så der fortsat kan være\nvand i lejlighederne i byggeperioden.\nDer vil være behov for indvendige arbejder i lejlighederne, men kun i begrænset omfang. Det\nkan f.eks. være nødvendigt at nedtage et køkkenskab for at få adgang til\nbrugsvandsledningerne i etageadskillelsen. Arbejdet vurderes at kunne udføres på én dag pr.\nlejlighed, men det kræver adgang til boligerne og vil medføre gener for beboerne.\nDen månedlige husleje på Torstorp Plejecenter fra 2027 vil blive forhøjet med 9%. For en 1rums plejebolig på 60,2 m2 vil dette betyde en stigning fra 6.714 kr. til 7.333 kr. og for en 2rums plejebolig på 81 m2 vil det betyde en stigning fra 7.880 kr. til 8.607 kr.\nDet vurderes, at huslejestigningen på 9 % står i et rimeligt forhold til den investering, der\ngennemføres. Efter stigningen vil huslejen fortsat ligge på et niveau, der ikke vurderes at afvige\nvæsentligt fra huslejeniveauet for tilsvarende almene boliger. Samlet set vurderes\nhuslejestigningen derfor at være sagligt begrundet og rimelig i forhold til projektets formål og\nomfang.\nDa projektet forudsætter anlægsbevilling og gennemførelse af et kommunalt finansieret\nanlægsprojekt, skal disse beslutninger træffes af kommunen. De afledte huslejekonsekvenser\nindarbejdes herefter i afdelingens budget og behandles efter reglerne om beboerdemokrati."
     },
     {
      "titel": "Økonomi",
-     "tekst": "Den samlede udgift til renovering af brugsvandsrørene forventes at udgøre 9,5 mio. kr.\ninkl. moms, hvorfor der anmodes om at der afsættes rådighedsbeløb (budget) hertil.\nUdgiften fordeles forholdsmæssigt mellem servicearealet og boligdelen.\nServicearealets andel udgør 2,128 mio. kr. ekskl. moms og finansieres af\nrenoveringspuljen 2027, som nedskrives tilsvarende.\nBoligdelens andel udgør 6,84 mio. kr. inkl. moms og finansieres via låneoptagelse.\nUdgiften til boligdelen forventes at medføre en huslejestigning på 9 pct.\nI perioden frem til projektets afslutning vil lånebehovet løbende blive finansieret via en\n\nbyggekredit. Ved projektets afslutning indfries byggekreditten i forbindelse med den\nendelige låneoptaglse. Det endelige lån optages som et 30-årigt annuitetslån med fast\nrente."
+     "tekst": "Den samlede udgift til renovering af brugsvandsrørene forventes at udgøre 9,5 mio. kr.\ninkl. moms, hvorfor der anmodes om at der afsættes rådighedsbeløb (budget) hertil.\nUdgiften fordeles forholdsmæssigt mellem servicearealet og boligdelen.\nServicearealets andel udgør 2,128 mio. kr. ekskl. moms og finansieres af\nrenoveringspuljen 2027, som nedskrives tilsvarende.\n\nBoligdelens andel udgør 6,84 mio. kr. inkl. moms og finansieres via låneoptagelse.\nUdgiften til boligdelen forventes at medføre en huslejestigning på 9 pct.\nI perioden frem til projektets afslutning vil lånebehovet løbende blive finansieret via en\nbyggekredit. Ved projektets afslutning indfries byggekreditten i forbindelse med den\nendelige låneoptaglse. Det endelige lån optages som et 30-årigt annuitetslån med fast\nrente."
     }
    ],
    "bilag": []
@@ -7382,10 +7491,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "13. I - Parkeringsudfordringer ved Hjemmeplejehuset, Byskolen og Taastrup Teater - TU",
    "afsnit": [
     {
@@ -7405,8 +7514,12 @@
      "tekst": "Anbefales."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Taastrup Teater og Hjemmeplejehuset, som har til huse på Taastrupgårdsvej, har store\nparkeringsudfordringer.\nTaastrup Teater har fået etableret ekstra parkeringspladser på modsatte side af\nTaastrupgårdsvej som en midlertidig løsning. Hvis Teatret skal ombygges, som der har været\ntale om, skal man til den tid kigge på ekstra parkeringsfaciliteter. Dette er der mulighed for, i\nforlængelse af de nyanlagte parkeringspladser.\nHjemmeplejehuset har udfordringer med parkering til de ansatte og specielt ved vagtskifte.\nAdministrationen vurderer, at det kan klares ved at der etableres ca. 20 pladser. Der er\nudarbejdet et projekt til etablering af ca. 14 pladser på grunden, heraf er de 3 pladser i deres\nnuværende garageanlæg.\nDet er en forudsætning for etablering af parkeringspladserne at der fældes 7 fyrtæer i\nplantebæltet ud mod Taastrupgårdsvej. Plantebæltet er udlagt i lokalplanen, men By- og\nMiljøcentret vurderer, at det er så bredt, at det ikke vil have betydning for plantebæltets\nfunktion.\nAdministrationen har set på forholdene ved institutionerne langs Taastrupgårdsvej og har her\n\nfundet muligheder for at etablere 9 ekstra pladser på Byskolens matrikel.\nVed disse tiltag løses problemer med parkeringsudfordringer for Hjemmeplejehuset i\ndagtimerne og Taastrup Teater i aftentimerne."
+     "tekst": "Taastrup Teater og Hjemmeplejehuset, som har til huse på Taastrupgårdsvej, har store\nparkeringsudfordringer.\nTaastrup Teater har fået etableret ekstra parkeringspladser på modsatte side af\nTaastrupgårdsvej som en midlertidig løsning. Hvis Teatret skal ombygges, som der har været\ntale om, skal man til den tid kigge på ekstra parkeringsfaciliteter. Dette er der mulighed for, i\nforlængelse af de nyanlagte parkeringspladser.\nHjemmeplejehuset har udfordringer med parkering til de ansatte og specielt ved vagtskifte.\nAdministrationen vurderer, at det kan klares ved at der etableres ca. 20 pladser. Der er\nudarbejdet et projekt til etablering af ca. 14 pladser på grunden, heraf er de 3 pladser i deres\nnuværende garageanlæg.\nDet er en forudsætning for etablering af parkeringspladserne at der fældes 7 fyrtæer i\nplantebæltet ud mod Taastrupgårdsvej. Plantebæltet er udlagt i lokalplanen, men By- og\nMiljøcentret vurderer, at det er så bredt, at det ikke vil have betydning for plantebæltets\n\nfunktion.\nAdministrationen har set på forholdene ved institutionerne langs Taastrupgårdsvej og har her\nfundet muligheder for at etablere 9 ekstra pladser på Byskolens matrikel.\nVed disse tiltag løses problemer med parkeringsudfordringer for Hjemmeplejehuset i\ndagtimerne og Taastrup Teater i aftentimerne."
     },
     {
      "titel": "Økonomi",
@@ -7420,10 +7533,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "14. I - Godkendelse af ejerstrategi 2026-2029 for VEKS - PMU",
    "afsnit": [
     {
@@ -7443,8 +7556,12 @@
      "tekst": "Anbefales."
     },
     {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Formålet med ejerstrategien er at sikre, at ejerne fastlægger en strategisk retning for VEKS,\nsom udgør fundamentet for et stærkt og aktivt ejerskab af VEKS og sætter de overordnede\nrammer for en ny forretningsstrategi. Ejerstrategien fastlægger ejernes overordnede mål,\nprincipper og rammer for VEKS’ virke i 2026-2029 og vil danne grundlag for det løbende\narbejde i bestyrelsen med udvikling samt tilpasning af de mere konkrete tiltag i virksomhedens\nforretningsstrategi.\nUdkastet til ejerstrategi tager udgangspunkt i en grundlæggende ambition om, at fjernvarmens\nmaskinrum i hovedstaden og det bredere østdanske område skal udvikle sig i store\nsammenkoblede og stadigt stærkere forbundne infrastruktursystemer. En stadigt bedre evne til\nat flytte energi effektivt rundt i regionen over længere afstande er den centrale nøgle, der skal\nsikre forbrugerne; I) en konkurrencedygtig fjernvarmepris, II) en reduktion af biomassen i\nsystemet gennem øget elektrificering af varmeproduktionen, særligt ved at øge muligheden for\nat opsamle og bruge overskudsvarme, samt III) øge robusthed og forsyningssikkerhed i en\nverden, der på mange måder er i opbrud.\nI udkastet til ejerstrategi peges der på, at VEKS’ tre hovedopgaver er:\n\n1. at bygge, vedligeholde og drive en effektiv, bæredygtig og forsyningssikker kollektiv\ninfrastruktur\n\n2. at sikre en effektiv konkurrenceudsættelse af varmeproducenterne til gavn for\nvarmeforbrugerne, samt\n3. at varetage helhedsorienteret systemplanlægning for det sammenhængende\nvarmesystem for VEKS’ opland i samarbejde med ejerkommunerne,\ndistributionsselskaberne og de øvrige relevante aktører i det sammenhængende\nøstdanske varmesystem.\n\nDerudover påpeger udkastet, at ejerne forventer, at VEKS, som et af landets største\nfjernvarmeselskaber, skal påtage sig det samfundsmæssige ansvar med at skabe øget\nsystemfleksibilitet, herunder brugen af varmelagring, og at det er et væsentligt rationale for\nejerne, at med kollektivet deles risici, hvilket er med til at øge forsyningssikkerheden, og at\nkollektivet er med til at dele fordele og ulemper mellem ejerne.\nPå borgmestermødet 08-06-2026 blev der bl.a. peget på, at VEKS skal;\n\nbidrage aktivt og faciliterende til at skabe og udbygge et sammenhængende\nvarmesystem i det østdanske område\nsikre stabile og lave priser\ni samarbejde med andre transmissionssystemejere som fx CTR og Vestforbrænding\nm.fl. etablere et permanent systemplanarbejde\nvære åben for at aftage overskudsvarme, hvor den end er.\n\nBemærkningerne fra borgmestermødet blev indarbejdet i det udkast, som blev forelagt VEKS’\nbestyrelse 19-08-2026, som besluttede at oversende udkastet til ejerkommunerne til deres\ngodkendelse uden yderligere bemærkninger.\nUdkast til ejerstrategi vedlægges."
+     "tekst": "Formålet med ejerstrategien er at sikre, at ejerne fastlægger en strategisk retning for VEKS,\nsom udgør fundamentet for et stærkt og aktivt ejerskab af VEKS og sætter de overordnede\nrammer for en ny forretningsstrategi. Ejerstrategien fastlægger ejernes overordnede mål,\nprincipper og rammer for VEKS’ virke i 2026-2029 og vil danne grundlag for det løbende\narbejde i bestyrelsen med udvikling samt tilpasning af de mere konkrete tiltag i virksomhedens\nforretningsstrategi.\nUdkastet til ejerstrategi tager udgangspunkt i en grundlæggende ambition om, at fjernvarmens\nmaskinrum i hovedstaden og det bredere østdanske område skal udvikle sig i store\nsammenkoblede og stadigt stærkere forbundne infrastruktursystemer. En stadigt bedre evne til\nat flytte energi effektivt rundt i regionen over længere afstande er den centrale nøgle, der skal\nsikre forbrugerne; I) en konkurrencedygtig fjernvarmepris, II) en reduktion af biomassen i\nsystemet gennem øget elektrificering af varmeproduktionen, særligt ved at øge muligheden for\nat opsamle og bruge overskudsvarme, samt III) øge robusthed og forsyningssikkerhed i en\nverden, der på mange måder er i opbrud.\nI udkastet til ejerstrategi peges der på, at VEKS’ tre hovedopgaver er:\n\n1. at bygge, vedligeholde og drive en effektiv, bæredygtig og forsyningssikker kollektiv\ninfrastruktur\n2. at sikre en effektiv konkurrenceudsættelse af varmeproducenterne til gavn for\nvarmeforbrugerne, samt\n3. at varetage helhedsorienteret systemplanlægning for det sammenhængende\nvarmesystem for VEKS’ opland i samarbejde med ejerkommunerne,\ndistributionsselskaberne og de øvrige relevante aktører i det sammenhængende\nøstdanske varmesystem.\n\nDerudover påpeger udkastet, at ejerne forventer, at VEKS, som et af landets største\nfjernvarmeselskaber, skal påtage sig det samfundsmæssige ansvar med at skabe øget\nsystemfleksibilitet, herunder brugen af varmelagring, og at det er et væsentligt rationale for\nejerne, at med kollektivet deles risici, hvilket er med til at øge forsyningssikkerheden, og at\nkollektivet er med til at dele fordele og ulemper mellem ejerne.\nPå borgmestermødet 08-06-2026 blev der bl.a. peget på, at VEKS skal;\n\nbidrage aktivt og faciliterende til at skabe og udbygge et sammenhængende\nvarmesystem i det østdanske område\nsikre stabile og lave priser\ni samarbejde med andre transmissionssystemejere som fx CTR og Vestforbrænding\nm.fl. etablere et permanent systemplanarbejde\nvære åben for at aftage overskudsvarme, hvor den end er.\n\nBemærkningerne fra borgmestermødet blev indarbejdet i det udkast, som blev forelagt VEKS’\nbestyrelse 19-08-2026, som besluttede at oversende udkastet til ejerkommunerne til deres\ngodkendelse uden yderligere bemærkninger.\nUdkast til ejerstrategi vedlægges."
     }
    ],
    "bilag": []
@@ -7454,10 +7571,10 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "17. I - Forslag til lokalplan for friplejehjem ved Falkenberggade - PMU",
    "afsnit": [
     {
@@ -7477,8 +7594,12 @@
      "tekst": "For stemmer: B(1), C(2), I(1) og O(1)\nImod stemmer A(1)\nUndlader at stemme: F(1) og Ø(1)\nSagen anbefales"
     },
     {
+     "titel": "Beslutning",
+     "tekst": "For stemte: B (2), C (9), I (1) og O (2)\nImod stemte: A (4), F (2) og Ø (1)\nGodkendt."
+    },
+    {
      "titel": "Sagsfremstilling",
-     "tekst": "Lokalplanområdet omfatter matr.nr. 4gc, svarende til storparcel A24 i rammelokalplan 2.30.\nOmrådet afgrænses af Hveen Boulevard mod øst, Falkenberggade mod vest, det\nlokalplanlagte parkeringshus på storparcel A23 mod nord samt parkstrøget og Åbenheden mod\nsyd.\nFormålet med lokalplanen er at skabe de planmæssige rammer for en samlet boligkarré\nmålrettet ældreliv i Høje Taastrup C, hvor etageboliger, plejehjem og botilbud indgår som en\nintegreret del af den bymæssige struktur i den østlige del af bydelen.\nLokalplanen indeholder tre delområder med følgende anvendelser:\n\nDelområde 1: Etageboliger, plejehjem, botilbud og fælleshus\nDelområde 2: Etageboliger\nDelområde 3: Gårdrum\nDet er intentionen, at etageboligerne skal henvende sig til seniorer. Lokalplanen understøtter\ndenne ambition gennem boligernes tætte tilknytning til plejehjemmet samt krav til fælles\nopholdsarealer og faciliteter.\nBebyggelsen\nLokalplanen muliggør opførelse af i alt 14.400 m² bebyggelse med 178 boliger fordelt på 78\netageboliger, 88 plejehjemsboliger og 12 botilbudsboliger samt tilhørende service- og\nfællesfaciliteter og et fælleshus. Bebyggelsen kan opføres i op til otte etager mod nord og\nnedtrappes gradvist til fem etager mod syd. Herved tilpasses bebyggelsen både det omgivende\nbyrum og de tilstødende bebyggelser i bydelen.\nOpholdsarealer\nI forhold til den gældende rammelokalplan for Høje Taastrup C fastlægger dette forslag til\nlokalplan et minimumskrav til de fælles udendørs opholdsarealer i gårdrummet. Kravet skal\nunderstøtte ambitionen om boliger målrettet seniorer og sikre adgang til nære og\nlettilgængelige opholdsarealer.\nSom følge af bebyggelsens omfang og placering samt behovet for kørearealer i tilknytning til\ninstitutionerne er arealet til fælles udendørs opholdsarealer i gårdrummet fastlagt til 370 m²,\nsvarende til 2,6 % af det samlede bruttoetageareal. En del af arealet skal samtidig kunne\nanvendes af redningsberedskabet.\nLokalplanen fastlægger desuden, at mindst 25 % af gårdrummets samlede areal skal\nanlægges som grønne arealer med beplantning og græs. De dele af de grønne arealer, der\nsamtidig skal kunne anvendes til brandredning, etableres med græsarmering.\nDerudover stiller lokalplanen krav om etablering af tagterrasser med et samlet areal på mindst\n230 m². Tagterrasserne kan placeres på udvalgte bygningsdele med en maksimal højde på\nseks etager og skal orienteres væk fra Hveen Boulevard.\nLokalplanen sikrer desuden, at alle etageboliger får adgang til en privat altan eller terrasse. For\nplejehjem og botilbud skal der på hver etage etableres mindst én fælles opholdsaltan med et\nareal på ca. 38 m².\nParkering\nSom følge af Plan- og Økonomiudvalgets bemærkning om at opjustere parkeringsnormen samt\nparkeringsanalysen, som viser, at bilejerskabet er stigende i bydelen, fastlægger lokalplanen\nen skærpet parkeringsnorm for lokalplanområdet i forhold til den gældende rammelokalplan:\n\n0,75 parkeringspladser pr. etagebolig\n0,25 parkeringspladser pr. plejehjemsbolig\n\n0,25 parkeringspladser pr. botilbudsbolig\n\nTil sammenligning fastlægger rammelokalplanen et krav om 1 parkeringsplads pr. 175 m²\nboligareal. Derudover stilles der krav om etablering af cykelparkering i overensstemmelse med\nKommuneplan 2025.\nEksisterende planforhold\nLokalplanområdet er omfattet af rammelokalplan 2.30 for Høje Taastrup C. Ved den endelige\nvedtagelse af nærværende lokalplan aflyses rammelokalplanen for de arealer, der omfattes af\nlokalplanen.\nMiljøscreening\nI henhold til lov om miljøvurdering af planer og programmer er der foretaget en miljøscreening\naf lokalplanen. På baggrund af en udarbejdet miljøscreening har administrationen vurderet, at\nplanen ikke er omfattet af kravet om en miljøvurdering, da planen ikke vil få væsentlig\nindvirkning på miljøet.\nBæredygtighed og arkitektur\nLokalplanen stiller krav om, at bebyggelsen udføres med facader i primært blødstrøgne tegl i\nvarme rødlige nuancer og med bearbejdede detaljer i murværket. Vinduer og døre skal udføres\ni træ eller aluminium i mørkegrå eller sorte nuancer, der harmonerer med facadernes\nmaterialitet.\nMod gårdrummet etableres svalegange, altaner og terrasser, som bidrager til liv og\nunderstøtter følelsen af fællesskab. Mod gaden etableres altaner og terrasser på facaderne\nmod nord og vest samt enkelte steder mod syd, hvor de bidrager til dynamik og variation i\ngadeforløbet.\nDen videre proces\nVed Byrådets godkendelse af lokalplanforslaget sendes det i offentlig høring i mindst 5 uger.\nEfter offentlighedsfasen vil administrationen gennemgå de indkomne henvendelser og på\nbaggrund heraf udarbejde indstilling til endelig vedtagelse af lokalplanforslaget.\nDenne forventes forelagt Byrådet i marts 2027."
+     "tekst": "Lokalplanområdet omfatter matr.nr. 4gc, svarende til storparcel A24 i rammelokalplan 2.30.\nOmrådet afgrænses af Hveen Boulevard mod øst, Falkenberggade mod vest, det\nlokalplanlagte parkeringshus på storparcel A23 mod nord samt parkstrøget og Åbenheden mod\nsyd.\n\nFormålet med lokalplanen er at skabe de planmæssige rammer for en samlet boligkarré\nmålrettet ældreliv i Høje Taastrup C, hvor etageboliger, plejehjem og botilbud indgår som en\nintegreret del af den bymæssige struktur i den østlige del af bydelen.\nLokalplanen indeholder tre delområder med følgende anvendelser:\nDelområde 1: Etageboliger, plejehjem, botilbud og fælleshus\nDelområde 2: Etageboliger\nDelområde 3: Gårdrum\nDet er intentionen, at etageboligerne skal henvende sig til seniorer. Lokalplanen understøtter\ndenne ambition gennem boligernes tætte tilknytning til plejehjemmet samt krav til fælles\nopholdsarealer og faciliteter.\nBebyggelsen\nLokalplanen muliggør opførelse af i alt 14.400 m² bebyggelse med 178 boliger fordelt på 78\netageboliger, 88 plejehjemsboliger og 12 botilbudsboliger samt tilhørende service- og\nfællesfaciliteter og et fælleshus. Bebyggelsen kan opføres i op til otte etager mod nord og\nnedtrappes gradvist til fem etager mod syd. Herved tilpasses bebyggelsen både det omgivende\nbyrum og de tilstødende bebyggelser i bydelen.\nOpholdsarealer\nI forhold til den gældende rammelokalplan for Høje Taastrup C fastlægger dette forslag til\nlokalplan et minimumskrav til de fælles udendørs opholdsarealer i gårdrummet. Kravet skal\nunderstøtte ambitionen om boliger målrettet seniorer og sikre adgang til nære og\nlettilgængelige opholdsarealer.\nSom følge af bebyggelsens omfang og placering samt behovet for kørearealer i tilknytning til\ninstitutionerne er arealet til fælles udendørs opholdsarealer i gårdrummet fastlagt til 370 m²,\nsvarende til 2,6 % af det samlede bruttoetageareal. En del af arealet skal samtidig kunne\nanvendes af redningsberedskabet.\nLokalplanen fastlægger desuden, at mindst 25 % af gårdrummets samlede areal skal\nanlægges som grønne arealer med beplantning og græs. De dele af de grønne arealer, der\nsamtidig skal kunne anvendes til brandredning, etableres med græsarmering.\nDerudover stiller lokalplanen krav om etablering af tagterrasser med et samlet areal på mindst\n230 m². Tagterrasserne kan placeres på udvalgte bygningsdele med en maksimal højde på\nseks etager og skal orienteres væk fra Hveen Boulevard.\nLokalplanen sikrer desuden, at alle etageboliger får adgang til en privat altan eller terrasse. For\nplejehjem og botilbud skal der på hver etage etableres mindst én fælles opholdsaltan med et\nareal på ca. 38 m².\nParkering\nSom følge af Plan- og Økonomiudvalgets bemærkning om at opjustere parkeringsnormen samt\n\nparkeringsanalysen, som viser, at bilejerskabet er stigende i bydelen, fastlægger lokalplanen\nen skærpet parkeringsnorm for lokalplanområdet i forhold til den gældende rammelokalplan:\n\n0,75 parkeringspladser pr. etagebolig\n0,25 parkeringspladser pr. plejehjemsbolig\n0,25 parkeringspladser pr. botilbudsbolig\n\nTil sammenligning fastlægger rammelokalplanen et krav om 1 parkeringsplads pr. 175 m²\nboligareal. Derudover stilles der krav om etablering af cykelparkering i overensstemmelse med\nKommuneplan 2025.\nEksisterende planforhold\nLokalplanområdet er omfattet af rammelokalplan 2.30 for Høje Taastrup C. Ved den endelige\nvedtagelse af nærværende lokalplan aflyses rammelokalplanen for de arealer, der omfattes af\nlokalplanen.\nMiljøscreening\nI henhold til lov om miljøvurdering af planer og programmer er der foretaget en miljøscreening\naf lokalplanen. På baggrund af en udarbejdet miljøscreening har administrationen vurderet, at\nplanen ikke er omfattet af kravet om en miljøvurdering, da planen ikke vil få væsentlig\nindvirkning på miljøet.\nBæredygtighed og arkitektur\nLokalplanen stiller krav om, at bebyggelsen udføres med facader i primært blødstrøgne tegl i\nvarme rødlige nuancer og med bearbejdede detaljer i murværket. Vinduer og døre skal udføres\ni træ eller aluminium i mørkegrå eller sorte nuancer, der harmonerer med facadernes\nmaterialitet.\nMod gårdrummet etableres svalegange, altaner og terrasser, som bidrager til liv og\nunderstøtter følelsen af fællesskab. Mod gaden etableres altaner og terrasser på facaderne\nmod nord og vest samt enkelte steder mod syd, hvor de bidrager til dynamik og variation i\ngadeforløbet.\nDen videre proces\nVed Byrådets godkendelse af lokalplanforslaget sendes det i offentlig høring i mindst 5 uger.\nEfter offentlighedsfasen vil administrationen gennemgå de indkomne henvendelser og på\nbaggrund heraf udarbejde indstilling til endelig vedtagelse af lokalplanforslaget.\nDenne forventes forelagt Byrådet i marts 2027."
     }
    ],
    "bilag": []
@@ -7488,15 +7609,19 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 19,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "24. Forslag fra A, F og Ø om forslag til KL's delegertmøde",
    "afsnit": [
     {
      "titel": "Baggrund",
      "tekst": "Den kommunale velfærd er under et enormt pres og økonomiaftale efter økonomiaftale mellem\nKL og skiftende regeringer, har gennem de sidste mange år ført til, at mange kommuner\nigennem årene har været tvunget til at skære i den kommunale velfærd, hvilket har betydet\nstore kommunale besparelser på vores børn, ældre og på det specialiserede socialområde.\nOverordnet var økonomiaftalen for 2026 et skridt i den rigtige retning, men\nefter sommerferien viste det sig, at mange kommuner herunder Høje Taastrup Kommune\nskulle skære ned på trods af økonomiaftalens løfter om flere penge til velfærd.\nI de sidste års økonomiaftaler er der blevet givet penge til kommunerne som dækker\ndemografi, men en væsentlig komponent i udgiftspresset på kommunerne har været\nprisstigninger på det specialiserede område. I 2025 var udgiftsstigningerne i kommunerne\nsamlet set 2,6 milliarder kroner og der forventes et tilsvarende niveau for 2026.\nDet har betydet at kommunerne igen har været nødsaget til at skære på den borgernære\nvelfærd.\nDet er KL, som hvert år tager stilling til, hvorvidt at de vil godkende den endelige\nøkonomiaftale.\nSom medlem af KL kan hver enkelt kommune stille forslag til KL’s delegeretmøde til det årlige\nKL topmøde. Det er altså under KL’s topmøde, at de enkelte kommuner kan søge indflydelse\nift. hvordan KL skal agere i forskellige spørgsmål.\nPå den baggrund foreslår Enhedslisten, Socialdemokratiet og SF at Høje Taastrup kommune\nstiller nedenstående forslag til vedtagelse på KL’s delegeretmøde på KL’s topmøde 2027.\nForslag fra Høje Taastrup Kommune til KL’s delegeretmøde 2027\nKommunerne er stadig udfordret på økonomien, selvom økonomiaftalen for 2027 var et skridt i\nden rigtige retning. Det er derfor nødvendigt, at en eventuel økonomiaftale kommer til at sikre\ntilstrækkelige økonomiske rammer og muligheder for at udvikle den kommunale velfærd. Ikke\nmindst set i lyset af de mange reformer, som står for døren, hvor kommunerne kommer til at\nspille en central rolle i udmøntningen, er det vigtigt at ressourcerne følger med, så reformerne\nfår den ønskede virkning og ikke føre til uhensigtsmæssige besparelser i de kommunale\nbudgetter.\nUdgiftspresset er fortsat markant på det specialiserede socialområde, og der er et stort behov i\nkommunerne for at prioritere klima og velfærd tilstrækkeligt.\nDerfor opfordrer KL’s delegeretmøde KL’s bestyrelse til at fastholde og forstærke det politiske\npres på regeringen op til og under økonomiforhandlingerne for 2028 og evt. stemme imod en\nøkonomiaftale som forringer kommunernes muligheder for at udvikle den kommunale velfærd.\nDet betyder også at KL’s bestyrelse skal have ekstraordinært fokus på, at en økonomiaftale\nløftes, så den dækker både demografi og udgiftsstigninger på det specialiserede område."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "For stemte A (4), F (2) og Ø (1)\n\nImod stemte B (2), C (9), I (1) og O (2)\nDermed faldt forslaget.\n\nPunkt 25: Lukket: 25. I - Tillæg til samarbejdsaftale om friplejehjemmet Fribo Høje-Taastrup - ØU - (Lukket\npunkt)\nGodkendt."
     }
    ],
    "bilag": []
@@ -7506,11 +7631,703 @@
    "kommune": "Høje-Taastrup",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 21,
-   "kilde": "https://dagsordener.htk.dk/vis?id=9d433405-7c6b-4392-8a74-8195b4b10815",
-   "hentet": "2026-11-19T22:27:52.813Z",
+   "kilde": "https://dagsordener.htk.dk/vis?id=dd4602b1-7862-432f-b9bb-e20422f7030a",
+   "hentet": "2026-11-26T14:12:20.420Z",
    "titel": "27. Underskriftsark Byrådet november 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-2": {
+   "id": "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-2",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.htk.dk/vis?id=fb24e740-d174-4378-a223-244841d5bbba",
+   "hentet": "2026-11-26T14:11:34.622Z",
+   "titel": "2. Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-3": {
+   "id": "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-3",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.htk.dk/vis?id=fb24e740-d174-4378-a223-244841d5bbba",
+   "hentet": "2026-11-26T14:11:34.622Z",
+   "titel": "3. Meddelelser – Ældre- og Sundhedsudvalget",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-5": {
+   "id": "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-5",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.htk.dk/vis?id=fb24e740-d174-4378-a223-244841d5bbba",
+   "hentet": "2026-11-26T14:11:34.622Z",
+   "titel": "5. A - Orientering om Kommissorium for 10-årsplan for Sundheds- og Omsorgspladser - ÆSU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Som følge af Sundhedsreformen omdannes 70 % af de kommunale midlertidige\naflastningspladser 01-01-2027 til regionale Sundheds- og Omsorgspladser. For at sikre en\nbæredygtig plan for udvikling og drift af sundheds- og omsorgspladserne, har Sundhedsrådet\nfor Amager og Vestegnen godkendt et kommissorium for udarbejdelse af en 10-årsplan for de\nregionale Sundheds- og Omsorgspladser.\nUdvalget orienteres med denne sag om indholdet i kommissoriet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Ældre- og Sundhedsudvalget tager orientering om Kommissorium for 10-årsplan for\nSundheds- og Omsorgspladser til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På møde i Sundhedsrådet for Amager og Vestegnen i februar 2026 blev det besluttet, at der\nskal udarbejdes en 10-årsplan som skal beskrive en langsigtet vision for, hvordan\nSundhedsrådet vil udvikle og drifte sundheds- og omsorgspladserne. Dette med henblik på at\nsikre en bæredygtig plan for udvikling og drift af sundheds- og omsorgspladserne.\nEfterfølgende er der i et samarbejde mellem Sundhedsrådets kommuner og Amager Hvidovre\nHospital udarbejdet et kommissorium for 10-årsplanen. Dette kommissorium blev godkendt på\nmødet i Sundhedsrådet den 26-10-2026. Kommissoriet beskriver rammer og grundlæggende\nprincipper for den langsigtede plan for placering af sundheds- og omsorgspladserne, og skal\nses i sammenhæng med Sundhedsrådets arbejde med nærsundhedsplan.\nDe grundlæggende principper for 10-årsplanen er følgende:\nFaglig bæredygtighed\nMed fagligt bæredygtige enheder forstås større enheder med en tilstrækkelig volumen af\npladser for at sikre patientsikkerhed, robust drift samt effektiv udnyttelse af kompetencer\nog ressourcer.\nGeografisk tilgængelighed og spredning\nPlanlægningen skal understøtte størst mulig nærhed og tilgængelighed for borgerne,\nsamtidig med at der sikres en hensigtsmæssig geografisk fordeling af kapaciteten og\nfagligt bæredygtige enheder på tværs af sundhedsrådet.\nFremtidigt kapacitetsbehov\nKapaciteten skal tage afsæt i den demografiske udvikling og befolkningens behov samt\nses i sammenhæng med udviklingen af det nære sundhedsvæsen, herunder\n\nakutsygepleje, hjemmebehandling og øvrige udkørende funktioner.\nDer skal fortsat være mindst 138 sundheds- og omsorgspladser med mulighed for eventuelt at\nøge kapaciteten i takt med efterspørgslen. Høje-Taastrup Kommune er i dag lokation for 19 af\nde 138 pladser.\nOrganisering\nUdarbejdelsen af 10-årsplanen er organiseret i et samarbejde mellem Amager og Hvidovre\nHospital, kommuner og almenpraksis i Sundhedsrådet Amager og Vestegnen.\nSundhedsrådet følger og godkender arbejdet med 10-årsplanen, og forelægges årligt en status\npå planens fremdrift.\nDer er nedsat en styregruppe som har ansvaret for den overordnede retning, træffer\nbeslutninger inden for kommissoriets rammer og sikrer kvaliteten af leverancer i\noverensstemmelse med Sundhedsrådets beslutninger om 10-årsplanen.\nStyregruppens medlemmer er velfærdsdirektørerne fra de fire kommuner hvor der placeres\nsundheds- og omsorgspladser, hvilket er Hvidovre, Brøndby, Tårnby og Høje-Taastrup\nKommune, samt direktøren for Amager Hvidovre Hospital.\nKommissoriet for arbejdet vedlægges som bilag 1."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-6": {
+   "id": "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-6",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.htk.dk/vis?id=fb24e740-d174-4378-a223-244841d5bbba",
+   "hentet": "2026-11-26T14:11:34.622Z",
+   "titel": "6. I - Godkendelse af Sundhedsberedskabsplan 2026-2029 - ÆSU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Ifølge bekendtgørelse om planlægning af sundhedsberedskabet, skal byrådet én gang i hver\nvalgperiode udarbejde og vedtage en plan for sundhedsberedskabet. Administrationen har\nmed afsæt i Sundhedsstyrelsens retningslinjer revideret Høje-Taastrup Kommunes\nSundhedsberedskabsplan (bilag 1), der med denne sag forelægges til godkendelse."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Ældre- og Sundhedsudvalget, Økonomiudvalget og Byrådet godkender den reviderede\nSundhedsberedskabsplan for Høje-Taastrup Kommune 2026-2029."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sundhedsberedskabsplanen tager afsæt i den tidligere Sundhedsberedskabsplan 2022-2025,\nsom blev godkendt i 2022. Revisionen viderefører grundstrukturen i den tidligere\nSundhedsberedskabsplan og planen er opbygget efter Sundhedsstyrelsens håndbog til\nkommunerne for planlægning af sundhedsberedskabet. Den er endvidere ajourført i forhold til\nde gældende nationale anbefalinger og Høje-Taastrup Kommunes overordnede beredskab.\nHøje-Taastrup Kommunes overordnede Beredskabsplan forelægges også til godkendelse i\nByrådet i december 2026.\nDe væsentligste ændringer af Sundhedsberedskabsplanen vedrører sammenkoblingen mellem\ndet generelle beredskab via Krisestaben og sundhedsberedskabet. Dette er bl.a. afspejlet i et\nnyt aktiveringsdiagram samt i handlekortene. Desuden fremstår handlekortene med en mere\nhandlingsorientereret beskrivelse for rettidige indsatser og tydelig ansvarsplacering.\nFormål med en Sundhedsberedskabsplan\nEn kommunal Sundhedsberedskabsplan skal sikre, at Høje-Taastrup Kommune har et robust\nsundhedsberedskab, der kan træde i kraft, når der indtræffer ekstraordinære hændelser med\nkonsekvens for borgernes sundhed. Det vil sige, at Høje-Taastrup Kommune kan udvide og\nomstille sin behandlings- og plejekapacitet ud over det daglige niveau, i tilfælde af større\nulykker og ekstraordinære hændelser eller katastrofer. Sundhedsberedskabet aktiveres i de\ntilfælde, hvor der er et behov udover det sædvanlige.\nSundhedsberedskabsplanen udstikker retningslinjerne for den interne håndtering af kritiske\nsituationer og for et koordineret samarbejde med eksterne beredskaber.\nSundhedsberedskabsplanen er en selvstændig del af Høje-Taastrup Kommunes samlede\nberedskab, som kan aktiveres og fungere uafhængigt af, om kommunens øvrige beredskab er\naktiveret.\nSundhedsberedskabsplanen er et værktøj for sundhedsberedskabsledelsen og Krisestaben,\nder understøtter organisationen med at:\nFør hændelsen – skabe klarhed over roller og ansvar i forbindelse med hændelser.\n\nUnder hændelsen – være retningsgivende for ”hvem, der gør hvad”.\nEfter hændelsen – være grundlag for evaluering af kommunens sundhedsberedskab.\n\nDelplaner og handleplaner\nSundhedsberedskabsplanen består af tre dele:\nDel 1: Sundhedsberedskabsplanens overordnede principper og kerneopgaver.\nDel 2: Indsatsplaner og Handlekort\nSundhedsberedskabsplanen indeholder 9 delplaner, som alle har sammenhæng til mindst ét af\nde 12 handle-kort. En delplan indeholder viden til brug for den operative håndtering af de\nindsatsområder, som kommunen lovmæssigt er forpligtet til at håndtere eller bidrage til, hvis en\nhændelse skulle blive aktuel. Et handlekort indeholder en handlingsorienteret beskrivelse af\nsituationen, opgave, ansvar og handling\nDel 3: Bilagssamling\nBilagssamlingen indeholder telefonlister, skabeloner til logbog og dagsorden, situationsbillede\nmv.\nSundhedsberedskabsplanen i høring\nSundhedsberedskabsplanen har været sendt i høring hos Sundhedsstyrelsen, Region\nHovedstaden og de kommuner, der grænser op til Høje- Taastrup Kommune.\nSundhedsberedskabsplanen skal sendes til Sundhedsstyrelsen for indhentning af rådgivning\nog sendes i høring hos regionen og nabokommunerne, fordi visse hændelser kan afføde et\nsamarbejde på tværs af sektor- og kommunegrænser. Overordnet var der ros fra\nSundhedsstyrelsen til planen for at den: ”fremstår meget velovervejet, velstruktureret,\nhandlingsanvisende og anvendelig”. Samtidig gav høringssvarene fra både\nSundhedsstyrelsen, Region Hovedstaden og to kommuner bemærkninger og forslag til\npræciseringer og overvejelser i forhold til sprogbrug, sammenhæng til øvrige\nberedskabsplaner, forslag til kompetenceudvikling af medarbejdere i beredskab samt forslag\nom uddybning af samarbejde med almen praksis. Administrationen har indarbejdet de\nændringsforslag, der direkte omhandler Sundhedsberedskabsplanen og de øvrige forslag, der\nomhandler det generelle, overordnede beredskab er blevet behandlet i forhold til denne\nberedskabsplan.\nSundhedsberedskabsplanens gyldighed\nPlanen træder i kraft, når den godkendes af Byrådet og den er gyldig indtil en ny plan\nvedtages. En ny plan skal senest godkendes inden udgangen af 2030."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-8": {
+   "id": "hoeje-taastrup-2026-12-02-aeldre-og-sundhedsudvalget-8",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.htk.dk/vis?id=fb24e740-d174-4378-a223-244841d5bbba",
+   "hentet": "2026-11-26T14:11:34.622Z",
+   "titel": "8. Underskriftsark – Ældre- og Sundhedsudvalget",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-teknisk-udvalg-1": {
+   "id": "hoeje-taastrup-2026-12-01-teknisk-udvalg-1",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.htk.dk/vis?id=7d53081d-43d5-4ddb-a08e-d07be4e917f3",
+   "hentet": "2026-11-26T14:11:42.220Z",
+   "titel": "1. Godkendelse af dagsorden Teknisk Udvalg december 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-teknisk-udvalg-2": {
+   "id": "hoeje-taastrup-2026-12-01-teknisk-udvalg-2",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.htk.dk/vis?id=7d53081d-43d5-4ddb-a08e-d07be4e917f3",
+   "hentet": "2026-11-26T14:11:42.220Z",
+   "titel": "2. Meddelelser - Teknisk udvalg december 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-teknisk-udvalg-3": {
+   "id": "hoeje-taastrup-2026-12-01-teknisk-udvalg-3",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.htk.dk/vis?id=7d53081d-43d5-4ddb-a08e-d07be4e917f3",
+   "hentet": "2026-11-26T14:11:42.220Z",
+   "titel": "3. A - Omfanget af parkeringskontrol - TU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "I denne sag tages der stilling til omfanget af parkeringskontrol"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Teknisk Udvalg drøfter det fremadrettede ønskede kontrolomfang."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet besluttede 18-06-2025 at fastholde omfanget af parkeringskontrol på 10 timer om\nugen. Parkeringskontrollen var administrativt blevet nedsat af to omgange i februar og\ndecember 2024 fra først 42 til 20 timer og efterfølgende fra 20 til 10 timer. Formålet var at\nbringe kontrollen på niveau med intentionen ved indførelsen af kommunal parkeringskontrol i\nI 2023 blev der udskrevet 3.990 bøder, i 2025 blev der udskrevet 2.497 bøder og i første halvår\naf 2026 blev der udskrevet 945 bøder. P-Nord modtog i 2025 113 klager fra borgere og\nvirksomheder om ulovlig parkering, og i første halvår af 2026 modtog P-Nord 72 klager. Der er\nvedlagt bilag med parkeringsdata.\nDet er administrationens vurdering, at parkeringsadfærden nu er væsentligt forringet i forhold til\ntiden inden nedsættelsen af kontrolomfanget.\nDet er administrationens vurdering, at øget parkeringskontrol vil resultere i en bedring af\nparkeringsadfærden. Det er ligeledes administrationens vurdering, at omfanget af\nparkeringskontrol kan ramme et niveau, hvor borgerne føler sig overvåget eller urimeligt\nforfulgt. Det besluttede parkeringsomfang, skal ramme en balance mellem hensynet til at få\ntilvejebragt en god parkeringsadfærd og hensynet til at undgå, at borgerne føler sig overvåget\nog urimeligt forfulgt. Denne balance og derved parkeringsomfanget er et politisk spørgsmål.\nP-Nord har meddelt, at 10 timer ugentligt er det laveste timeantal, som kræves for at kunne\nudføre parkeringskontrol på et niveau, som de kan stå inde for. P-Nord har ikke meddelt et loft\nover timeantallet.\nKommunen hverken betaler eller modtager betaling fra P-Nord for driften af parkeringskorpset.\nP-Nord betaler staten halvdelen af afgifterne, og den anden halvdel af afgifterne går til\ndriftsomkostninger."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-teknisk-udvalg-5": {
+   "id": "hoeje-taastrup-2026-12-01-teknisk-udvalg-5",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.htk.dk/vis?id=7d53081d-43d5-4ddb-a08e-d07be4e917f3",
+   "hentet": "2026-11-26T14:11:42.220Z",
+   "titel": "6. I - Frigivelse af anlægsmidler 2027 - TU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "I forbindelse med vedtagelsen af budget 2027-2030, er der i budget 2027 afsat rådighedsbeløb\ntil projekter på vejområdet, grønne- og fritidsområder, som skal igangsættes. Byrådet skal\nfrigive disse beløb til anlægsbevillinger, før administrationen kan anvende disse."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Teknisk Udvalg, Økonomiudvalget og Byrådet godkender at der i 2027 frigives\nnettoanlægsbevillinger på 1,98 mio. kr. til de anlægsprojekter, der fremgår af\nsagsfremstillingen, finansieret af rådighedsbeløb afsat i budget 2027-30."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I denne sag søges der om at få frigivet rådighedsbeløb i anlægsplanen 2027-2030.\nAdministrationen vurderer, at frigivelse af midlerne er en forudsætning for, at arbejderne kan nå\nat blive gennemført i 2027.\nBynære skovrejsningsprojekter.\nDer er afsat midler til at etablere bynære skove på fem udvalgte områder i budget 2026-2030.\nOmråderne er: Røjlegrøften, Grønt område syd for Tofteparken, Grønt område vest for\nHakkemosen, Grønt bælte ud til Mølleholmen og Asfaltbane syd for Mølleholmskolen. (der er\nafsat 1,5 mio. kr. over perioden til de 5 projekter, i henhold til sag forelagt Byrådet punkt 19, 2708-2025).\nOmlægning af græsarealer\nDer er afsat en årlig pulje på 0,2 mio. kr. til omlægning af 10 græsarealer. Omlægningen\nomfatter jordbearbejdning og beplantning med blomstrende buske og urter. Formålet er at øge\nbiodiversiteten og skabe mere æstetiske byrum.\nAfsat og for perioden 2026-2029 er følgende områder: Rabat ved Sydvej, Rabat Hveen\nBoulevard/Skåne Boulevard, Rabatter langs Vejtoften, Rabat langs med Brandhøjgårdsvej,\nRundkørsel Halland Boulevard/ Bornholms Alle, Areal ved Langholmen, Areal ved\nVeststien/Agersøvej, Rundkørsel Vesterled/Stenalderen, Rabat ved Nørreled/Vesterled og\nRabat ved Charlottegårdsvej. (der er afsat 0,8 mio. kr. over perioden til de 10 projekter, i\nhenhold til sag forelagt Byrådet punkt 18, 27-08-2025)."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der søges om frigivelse af rådighedsbeløb til følgende projekter finansieret af\nrådighedsbeløb afsat i 2027-2030.\n\nAnlægsaktivitet\n\nAfsat\nrådighedsbeløb i alt\n\nTidl. frigivet Ansøgt\nfrigivelse\nanlægsbevilling\n\nAnlægsbevilling i\nalt\n\nBynære\nskovrejsningsprojekter\n\nOmlægning af udvalgte\ngræsarealer\n\nI alt økonomiudvalget –\nDriftsbyen"
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-teknisk-udvalg-6": {
+   "id": "hoeje-taastrup-2026-12-01-teknisk-udvalg-6",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.htk.dk/vis?id=7d53081d-43d5-4ddb-a08e-d07be4e917f3",
+   "hentet": "2026-11-26T14:11:42.220Z",
+   "titel": "7. I - Frigivelse af anlægsmidler til visionsplaner for Bynatur 2026 og 2027 - TU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Denne sag fremlægges, da Byrådet 27-04-2021 vedtog, at der skulle udarbejdes visionsplaner\nfor bynær natur for 18 udvalgte områder. Rækkefølgen og tildeling af økonomi blev ændret på\nByrådet 29-05-2024 for at skabe synergi med byudvikling og andre projekter i kommunen som\noverlapper med visionsplansområderne. I 2026 er det følgende to områder som står til\nudførelse: Røjlegrøften og Agersøparken. I 2027 er det følgende område som står til udførelse:\nOfficeparken."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Teknisk Udvalg, Økonomiudvalget og Byrådet godkender\n1. at der i 2026 frigives anlægsbevilling på 400.000 kr. til visionsplaner 2026,\nfinansieret af rådighedsbeløb afsat i budget 2024-2027\n\nat der i 2027 frigives anlægsbevilling på 50.000 kr. til visionsplaner for 2027,\nfinansieret af rådighedsbeløb afsat i budget 2024-2027"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet besluttede 27-04-2021 at udarbejde 18 visionsplaner for bynatur, med henblik på, at\nalle husstande i kommunens byområder indenfor en afstand af 1 km, skal have bynatur med en\nvisionsplan.\nVisionsplanerne planlægger på lang sigt, for både natur-, kultur- og socialværdier og er lavet i\nsamarbejde med borgerne. Der blev lavet et skema med en rækkefølge for implementeringen\nsom blev revideret på Byrådets møde 29-05-2024 for at koordinere med byudviklingen og\nandre projekter."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Visionsplaner til udførelse i 2026 er:\n\nRøjlegrøften 300.000 kr.\nAgersøparken 100.000 kr.\n\nVisionsplaner til udførelse i 2027:\nOfficeparken 50.000 kr.\nDer er afsat rådighedsbeløb til ovenstående projekter i 2026 og 2027, som søges frigivet\n\nmed denne sag."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-teknisk-udvalg-7": {
+   "id": "hoeje-taastrup-2026-12-01-teknisk-udvalg-7",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.htk.dk/vis?id=7d53081d-43d5-4ddb-a08e-d07be4e917f3",
+   "hentet": "2026-11-26T14:11:42.220Z",
+   "titel": "8. I - Nødstrøm i HTK Forsyning - TU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Bestyrelserne i HTK Vand A/S og HTK Spildevand A/S har den 15. september 2026 besluttet\nat etablere nødstrøm, så forsyningen kan levere vand og bortskaffe spildevand i en\nkrisesituation. HTK Forsyning har i brev af 27. oktober 2026 orienteret kommunen om\nbeslutningen, de økonomiske konsekvenser og det videre forløb.\nTeknisk Udvalg, Økonomiudvalget og Byrådet foreslås med denne sag at tage forsyningens\nbeslutning til efterretning, da nødstrøm for vand og spildevand vurderes at stille Høje-Taastrup\nKommune mere robust i en krisesituation."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Teknisk Udvalg, Økonomiudvalget og Byrådet tager HTK Forsynings beslutning om\nnødstrøm til vand- og spildevandsforsyningen til efterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Det fremgår af brevet fra HTK-forsyning (Bilag 1), at beslutningen bygger på forsyningens\nrisikovurdering med udgangspunkt i Nationalt Risikobillede 2025 og lokale forhold. Selskaberne\nhar analyseret seks scenarier med forskellige varigheder af strømsvigt og grader af accepteret\nkvalitetsnedgang samt behovet for faste og mobile nødstrømsløsninger. Bestyrelserne har\nvalgt de optimale løsninger for både vand og spildevand frem for minimumsløsningerne.\nIfølge HTK Forsyning kan de valgte løsninger sikre ingen eller kun ringe kvalitetsafvigelser i op\ntil tre døgn uden strøm. Vandforsyningen kan i princippet opretholdes derefter, så længe diesel\ner til rådighed. Spildevandsløsningen kan fortsat fungere efter tre døgn, hvis en\nkvalitetsnedgang accepteres, og diesel er til rådighed. Forsyningen har en opmærksomhed på\nat faste nødstrømsgeneratorer kan være vanskelige at etablere tæt på beboelse på grund af\nstøjkrav. Det søger forsyningen en dialog med kommunen om med henblik på at vurdere evt.\nmyndighedsgodkendelser.\nLovgrundlag og forsyningsmæssige hensyn\nHTK Forsyning er udpeget som kritisk infrastruktur, hvilket er præciseret i lov om kritiske\nenheders modstandsdygtighed (CER-loven). Her stilles krav om, at omfattede kritiske enheder\nudarbejder risikovurderinger og gennemfører passende og forholdsmæssige tekniske,\nsikkerhedsmæssige og organisatoriske foranstaltninger. Tiltagene skal blandt andet forebygge\nhændelser, afbøde konsekvenser og understøtte genopretning. HTK Forsynings arbejde med\nnødstrøm understøtter særligt håndteringen af strømsvigt og kontinuiteten i kritiske leverancer.\nVandregulativet for HTK Vand A/S angiver desuden, at forsyningen skal tilstræbe\ntilfredsstillende forsyningsforhold og et vandtryk, der gør almindeligt vandforbrug muligt.\nRegulativet giver samtidig mulighed for afbrydelser under særlige forhold, herunder strømsvigt.\nDet ændrede skærpede trusselsbillede og CER-lovens krav taler for, at robustheden vurderes i\n\nlyset dette, hvor nødstrøm i tilfælde af en krisesituation vurderes som et relevant tiltag.\nAdministrationen vurderer, at de besluttede løsninger i HTK-forsyningen er et relevant bidrag til\nkommunens samlede beredskab. For kommunen vil øget robusthed i vand- og\nspildevandsforsyningen reducere risikoen for, at forsyningssvigt forstærker en krisesituation.\nDet er særligt relevant for plejehjem, botilbud, hjemmeboende borgere med støttebehov og\nandre, som ikke selv kan hente eller opbevare tilstrækkeligt vand. Investeringen skal ses i\nsammenhæng med kommunens øvrige beredskabsplanlægning og planerne for nødstrøm på\nkritiske kommunale lokationer."
+    },
+    {
+     "titel": "Videre proces",
+     "tekst": "HTK-Forsyning har igangsat udbud af rådgivning til projektering og udbud. Rådgivning og\nudbud af leverancen forventes at tage op til ca. et halvt år, hvorefter gennemførelsen kræver\nmindst yderligere et halvt år. Forsyningen er i dialog med Driftsbyen om fælles\ndieselopbevaring og søger særskilt de nødvendige myndighedsgodkendelser.\nHTK-forsyning skal samtidig oversende projektet til Forsyningssekretariatet, som skal\ngodkende økonomi og takststigninger over for forbrugerne. Forsyningssekretariatet (også\nkendt som Vandsektortilsynet) er den uafhængige økonomiske regulator af den danske vandog spildevandssektor. Organisatorisk er sekretariatet placeret som en del af Konkurrence- og\nForbrugerstyrelsen under Erhvervsministeriet. Da vand- og spildevandsselskaber fungerer som\nnaturlige monopoler uden direkte konkurrence, fører tilsynet kontrol med selskaberne for at\nbeskytte forbrugere og virksomheder mod unødigt høje priser."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Ifølge brevet er de forventede projektsummer 10,5 mio. kr. i HTK Vand A/S og 16,9 mio.\nkr. i HTK Spildevand A/S, i alt 27,4 mio. kr., finansieret gennem lån i KommuneKredit.\nVed fuld implementering er den isolerede beregnede takststigning ca. 0,16 kr. pr.\nkubikmeter vand og ca. 0,23 kr. pr. kubikmeter spildevand. For en standardforbruger med\net årligt forbrug på 100 kubikmeter svarer det til henholdsvis ca. 16 kr. og 23 kr., i alt ca.\n39 kr. årligt.\nDen foreslåede beslutning indebærer ikke en kommunal bevilling til projektet.\nInvesteringerne finansieres ifølge brevet af selskaberne gennem lånoptagelse og takster.\nHer indgår en proces hvor Forsyningssekretariatet vurderer og godkender projekt og\nøkonomi forbundet med nødstrøm."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-teknisk-udvalg-9": {
+   "id": "hoeje-taastrup-2026-12-01-teknisk-udvalg-9",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Teknisk Udvalg",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.htk.dk/vis?id=7d53081d-43d5-4ddb-a08e-d07be4e917f3",
+   "hentet": "2026-11-26T14:11:42.220Z",
+   "titel": "10. Underskriftsblad - Teknisk Udvalg december 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-plan-og-miljoeudvalget-1": {
+   "id": "hoeje-taastrup-2026-12-01-plan-og-miljoeudvalget-1",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Plan- og Miljøudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.htk.dk/vis?id=8fee92da-fb59-49d9-a3a6-76c50e906657",
+   "hentet": "2026-11-26T14:11:50.920Z",
+   "titel": "1. Godkendelse af dagsorden - Plan- og Miljøudvalget december 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-plan-og-miljoeudvalget-2": {
+   "id": "hoeje-taastrup-2026-12-01-plan-og-miljoeudvalget-2",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Plan- og Miljøudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.htk.dk/vis?id=8fee92da-fb59-49d9-a3a6-76c50e906657",
+   "hentet": "2026-11-26T14:11:50.920Z",
+   "titel": "2. Meddelelser - Plan- og miljøudvalget december 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-plan-og-miljoeudvalget-8": {
+   "id": "hoeje-taastrup-2026-12-01-plan-og-miljoeudvalget-8",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Plan- og Miljøudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.htk.dk/vis?id=8fee92da-fb59-49d9-a3a6-76c50e906657",
+   "hentet": "2026-11-26T14:11:50.920Z",
+   "titel": "12. Underskriftsblad - Plan- og Miljøudvalget december 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-3": {
+   "id": "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-3",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Institutions- og Skoleudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.htk.dk/vis?id=821e6ff8-c0fc-41e3-a515-aeefe53b2090",
+   "hentet": "2026-11-26T14:11:57.677Z",
+   "titel": "3. Godkendelse af dagsorden - Institutions- og Skoleudvalget - 01-12-2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-4": {
+   "id": "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-4",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Institutions- og Skoleudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.htk.dk/vis?id=821e6ff8-c0fc-41e3-a515-aeefe53b2090",
+   "hentet": "2026-11-26T14:11:57.677Z",
+   "titel": "4. Meddelelser - Institutions- og Skoleudvalget - 01-12-2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-5": {
+   "id": "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-5",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Institutions- og Skoleudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.htk.dk/vis?id=821e6ff8-c0fc-41e3-a515-aeefe53b2090",
+   "hentet": "2026-11-26T14:11:57.677Z",
+   "titel": "5. A - Dialogmøder 2026 - ISU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Institutions- og Skoleudvalget godkendte 14-04-2026 fokuspunkter og tidsplan for årets\nskoleudviklingssamtaler. På baggrund af de gennemførte samtaler har administrationen\nudarbejdet en opsamling, som forelægges med henblik på at danne grundlag for udvalgets\ndialogmøder med skolebestyrelserne i december 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at Institutions- og Skoleudvalget godkender, at opsamlingen fra\nskoleudviklingssamtalerne anvendes som grundlag for udvalgets dialogmøder med\nskolebestyrelserne medio december."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Institutions- og Skoleudvalget behandlede 14-04-2026 tidsplan og temaer for årets\nskoleudviklingssamtaler. Der blev fastlagt to politisk besluttede fokuspunkter og ét\nadministrativt fokuspunkt, mens skolerne derudover har kunne vælge to lokale fokuspunkter.\nDe fælles fokuspunkter var:\n\nHvordan kan skolen arbejde for at styrke elevernes faglige kompetencer i dansk og\nmatematik (politisk fokuspunkt)\nStatus på skolens arbejde med trivsel (politisk fokuspunkt)\nHvordan kan skolen arbejde systematisk med data for at følge op på udviklingen af\nelevernes faglige udbytte i undervisningen (administrative fokuspunkt)\nAdministrationen gennemførte skoleudviklingssamtaler med skolerne i september og oktober\nDeltagerne var skolens ledelse, skolebestyrelsesformand samt øvrige deltagere udpeget af\nskolerne og repræsentanter fra administrationen.\nPå baggrund af skoleudviklingssamtalerne har administrationen udarbejdet en opsamling af\nskolernes væsentligste temaer og udviklingsområder. Opsamlingen danner grundlag for\nInstitutions- og Skoleudvalgets dialogmøder med skolebestyrelserne.\nDialogmøderne holdes 07-12-2026, 14-12-2026 og 15-12 2026 i tidsrummet 16.00 – 20.00.\nHver samtale har en varighed på 45 min. med deltagelse af Institutions- og Skoleudvalget og\nrepræsentanter fra skolebestyrelserne.\nDer er ikke afholdt skoleudviklingssamtale med Firkanten i 2026 som følge af ledelsesmæssige\nændringer i perioden for gennemførelse af samtalerne."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-6": {
+   "id": "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-6",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Institutions- og Skoleudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.htk.dk/vis?id=821e6ff8-c0fc-41e3-a515-aeefe53b2090",
+   "hentet": "2026-11-26T14:11:57.677Z",
+   "titel": "6. A - Ankestyrelsens Børnesagsbarometer 2026 - ISU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Ankestyrelsen udarbejder årligt et Børnesagsbarometer med det formål at følge den aktuelle\nudvikling i den juridiske kvalitet af kommunernes sagsbehandling på området for børn og unge\ni udsatte positioner.\nAnkestyrelsen skal orienteres om de foranstaltninger, som byrådet har besluttet at iværksætte.\nDet skal ske med fremsendelse af denne sag og en faglig uddybning fra administrationen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Institutions- og Skoleudvalget tager Ankestyrelsens Børnesagsbarometer 2026 til\nefterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Børnesagsbarometer 2026 giver et aktuelt og generelt billede af kommunernes juridiske\nsagsbehandlingskvalitet på børne- og ungeområdet på tværs af alle landets kommuner. Årets\nbarometer har fokus på lovkrav i forbindelse med underretning og screening, afdækning og\nbørnefaglig undersøgelse, afgørelse om indsats, planer og opfølgning såvel som inddragelse\naf barnet.\nHøje-Taastrup Kommune indgår med 4 sager af i alt 385 undersøgte sager på landsplan. For\nalle 385 sager gælder, at de hverken har været behandlet i eller er påklaget til Ankestyrelsen.\nHerved adskiller Børnesagsbarometret sig fra det årlige danmarkskort, som vedrører de\npåklagede sager til Ankestyrelsen.\nDa alle sager i Børnesagsbarometer 2026 er behandlet efter barnets lovs ikrafttræden 01-012024, kan resultaterne ikke sammenlignes med tidligere børnesagsbarometre.\nLandsdækkende resultater\nBørnesagsbarometer 2026 viser, at kommunerne generelt håndterer de indledende faser af\nbørnesager tilfredsstillende. Lovpligtige frister ved underretninger overholdes i langt\nstørstedelen af sagerne, børn høres i alvorlige sager om vold og overgreb, og screeninger\ngennemføres i de fleste tilfælde. Desuden bygger afdækninger og undersøgelser typisk på\noplysninger fra børn, forældre og relevante fagpersoner.\nBørnesagsbarometer 2026 peger samtidig på udfordringer i den videre sagsbehandling. Mange\nafdækninger og børnefaglige undersøgelser trækker ud, og kommunerne lever ofte ikke op til\nkravene om at gennemføre og afslutte de børnefaglige undersøgelser indenfor den\nlovbestemte frist. Derudover sker opfølgning på indsatser ofte for sent, og kommunerne tager i\nmange sager ikke stilling til behovet for en børne- eller ungeplan eller for behovet for at justere\neksisterende planer. Der er samlet set fortsat udfordringer med rettidighed, opfølgning og\nplanlægning i sagsbehandlingen.\nUdfordringsbilledet i Høje-Taastrup Kommune\n\nAdministrationen kan konstatere, at de mest udbredte landsdækkende udfordringer og fejl i\nBørnesagsbarometer 2026 også gør sig gældende i kommunens egen\nsagsbehandlingspraksis. Det gælder særligt børnefaglige undersøgelser, børne- og ungeplaner\nsamt i opfølgning på indsatser.\nUdfordringerne er kendte og har løbende været forelagt Institutions- og Skoleudvalget, blandt\nandet i halvårlige sager om fristoverholdelse, sager om Rigsrevisionens undersøgelse af\nkommunernes sagsbehandlingspraksis på anbringelsesområdet samt temadrøftelser om\nanalyse af børnefaglige undersøgelse og den faglige omstilling på familieområdet.\nSamlet vurderer administrationen, at udfordringerne ikke primært knytter sig til det faglige\nindhold i sagerne, men i høj grad til fremdrift, rettidighed, systematik og korrekt registrering.\nDette understøttes af tidligere analyser af Familieafdelingens sagsbehandlingspraksis fra PwC\nog BDO. Samtidig anerkender administrationen, at dette er alvorlige og langvarige\nudfordringer, som har betydning for borgernes retssikkerhed og som har vist sig svære at løse.\nIværksatte tiltag\nByrådet har gennem flere år haft stort fokus på at imødekomme udfordringerne på området.\nDer er blandt andet prioriteret:\nBørnepakke 2 med bl.a. opnormering i Familieafdelingen og flere fremskudte rådgivere\n(budget 2024)\nStyrket modtagelse og opstart af nye sager i Familieafdelingen (budget 2026)\nOpnormering samt ressourcer til analyse af børnefaglige undersøgelser (budget 2026)\nInvestering i digital løsning til at styrke kvalitet og rettidighed i Familieafdelingen (budget\n\nParallelt med de politiske prioriteringer arbejder administrationen med en faglig og\norganisatorisk omstilling af Familieafdelingen med fokus på hurtigere opstart og større fremdrift\ni sagerne samt et tættere og mere tydeligt samarbejde med familierne med afsæt i relationel\nvelfærd. I den ganske omfattende omstilling arbejder administrationen blandt andet med:\nEn ny organisering med et større modtageteam, der skal understøtte hurtigere opstart og\nfremdrift i nye sager\nStyrket systematik og arbejdsgange i sagsbehandlingen, herunder opfølgning på frister og\nsagsskridt\nMere systematisk anvendelse af faglige redskaber samt styrket ledelsestilsyn\nTydeligere kommunikation med familierne om status, næste skridt og ansvar\nEmpowerment af rådgiverne, så der skabes større handlekraft og mere tid til dialog og\nsamarbejdet med familierne\nØget digital understøttelse med implementering af AI-baseret redskab til at styrke kvalitet,\nfremdrift og rettidighed.\n\nDette skal bidrage til, at børn, unge og familier oplever en mere rettidig og sammenhængende\nsagsbehandling med færre forsinkelser, større kontinuitet samt bedre opfølgning og dialog."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-7": {
+   "id": "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-7",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Institutions- og Skoleudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.htk.dk/vis?id=821e6ff8-c0fc-41e3-a515-aeefe53b2090",
+   "hentet": "2026-11-26T14:11:57.677Z",
+   "titel": "7. I - Udvikling af tilbudsviften",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Byrådet besluttede på sit møde 25-11-2026 at sende sagen til fornyet behandling i Institutionsog Skoleudvalget.\nØkonomiudvalget besluttede på mødet 10-06-2026, at sagen skulle udgå med henblik på\nyderligere oplysninger.\nMed denne sag fremlægges forslag til udvikling af tilbudsviften på\nspecialundervisningsområdet, som en del af programmet ”Styrket almen” og programsporet\n”Specialtilbud”, der skal styrke kvalitet, kapacitet og sammenhæng til almenområdet.\nTilbudsviften på specialområderne skal løbende tilpasses for at sikre, at den tager højde for, at\nbørn og unges behov, og tendenser i udfordringerne på området, ændrer sig over tid.\nSamtidig med denne sag behandler Institutions- og skoleudvalget en sag om kvalitetsaftale\nmed Behandlingsskolerne, der ønsker at etablere en ny skole i Fløng, efter de har indgået en\nrammeaftale med kommunen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Institutions- og Skoleudvalget, Økonomiudvalget og Byrådet godkender at:\n1. Byskolen lukkes som led i udviklingen af den samlede tilbudsvifte på behandlings- og\nspecialundervisningsområdet i Høje-Taastrup Kommune.\n2. administrationen går videre med den nødvendige myndighedsbehandling og vurdering\naf elevernes fremtidige tilbud samt de nødvendige medarbejderprocesser med henblik på\nen hensigtsmæssige afvikling af Byskolen og overgang til andre tilbud."
+    },
+    {
+     "titel": "Behandling i Institutions- og Skoleudvalget 2. juni 2026",
+     "tekst": "Alle undlod at stemme."
+    },
+    {
+     "titel": "Behandling i Økonomiudvalget 10. juni 2026",
+     "tekst": "Sagen udgik af dagsordenen."
+    },
+    {
+     "titel": "Behandling i Økonomiudvalget 11. november 2026",
+     "tekst": "Ændringsforslag fra F, Ø og A:\n1: Økonomiudvalget indstiller scenarie 1, hvilket betyder at byskolen videreføres og\nudvikles som kommunalt specialundervisningstilbud, som en del af den samlede\ntilbudsvifte.\n2: Der igangsættes et arbejde med at afdække målgrupper på det specialiserede\nbørneområde med henblik på evt. at udvikle målgruppe og normering herunder også\nafdække samarbejde med andre kommuner ift. salg af pladser.\nFor stemmer: A(1), F(1), Ø(1)\nImod stemmer (B(1), C(2), O(1)\nUndlader at stemme I(1)\n\nÆndringsforslaget falder\n\nÆndringsforslag fra B, C, I og O:\nAt der tilføjes ’ved skoleårets udgang’ til punkt 1\nændringsforslaget anbefales\nAfstemning om sagens oprindelige indstilling tilføjet det anbefalede ændringsforslag fra\nC, B, I og O\nFor stemmer: (B(1), C(2), I(1), O(1),\nImod stemmer: A(1), F(1), Ø(1)\nSagen anbefales"
+    },
+    {
+     "titel": "Behandling i Byrådet 25. november 2026",
+     "tekst": "Byrådet besluttede at sende sagen tilbage til fornyet behandling i Institutions- og\nSkoleudvalget."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Høje-Taastrup Kommune arbejder med at udvikle en bæredygtig og fagligt stærk tilbudsvifte på\nspecialundervisningsområdet. Målet er, at børn og unge så vidt muligt kan forblive i lokale\nfællesskaber, når det er muligt, samtidig med at kommunen kan tilbyde den rette kvalitet\ngennem tilstrækkeligt specialiserede tilbud til børn og unge med særlige behov, når det er\nnødvendigt.\nSom led i denne udvikling har Høje-Taastrup Kommune indgået en ny fælleskommunal\nrammeaftale, sammen med 28 andre kommuner på Sjælland, for behandlings- og\nspecialundervisningstilbud. Rammeaftalen skal understøtte højere kvalitet, øget specialisering,\nfælles kvalitetskrav og mere rentable og bæredygtige løsninger på området. Aftalen giver\nmulighed for adgang til flere og mere specialiserede tilbud til børn og unge med sociale,\nfølelses- eller adfærdsmæssige udfordringer, som har omfattende skolefravær og behov for\nbehandling, og derfor i en periode har brug for et andet tilbud end på folkeskolen.\nHøje-Taastrup Kommunes eget kommunale behandlings- og specialundervisningstilbud\n”Byskolen”, blev etableret i 2025. Som et mindre tilbud har Byskolen begrænsede muligheder\nfor at samle den nødvendige faglige specialisering og kapacitet sammenlignet med større og\nmere specialiserede private tilbud, der indgår under rammeaftalen.\nMed det tværkommunale samarbejde om en fælles rammeaftale, er forudsætningerne for\nudbud og drift på behandlings- og specialundervisningsområdet ændret væsentligt siden\netableringen af Byskolen. Det har givet anledning til en samlet vurdering af kommunens\ntilbudsvifte. På den baggrund anbefaler administrationen, at Byskolen lukkes som led i\nudviklingen af en mere specialiseret og bæredygtig tilbudsvifte på behandlings- og\n\nspecialundervisningsområdet i Høje-Taastrup Kommune.\nHøje-Taastrup Kommune står overfor en strategisk udvikling af tilbudsviften på behandlingsog specialundervisningsområdet på børne- og ungeområdet. Samtidig arbejder kommunen\nmed at styrke deltagelsesmulighederne for flere børn og unge tættere på almenområdet, samt\nvidereudvikle kvaliteten i de tilbud som skal understøtte børn og unge med behov for\nbehandling- og specialundervisning.\nMed den fælleskommunale rammeaftale for behandlings- og specialundervisningstilbud, som\nHøje-Taastrup Kommune, sammen med 28 andre kommuner på Sjælland, har indgået med\nprivate tilbud, forventes en væsentlig udvidelse af den lokale kapacitet med flere og mere\nspecialiserede tilbud fra skoleåret 2026/2027. Derudover har Behandlingsskolerne søgt om at\netablere og indgå en kvalitetsaftale om en ny skole i kommunen. Det giver nye muligheder for\nat tilbyde børn og unge med omfattende sociale, følelsesmæssige, psykiske eller\nadfærdsmæssige vanskeligheder, mere målrettede, specialiserede og lokale\nundervisningstilbud i kommunen til fordelagtige priser.\nDen fremtidige tilbudsvifte på behandlings- og specialundervisningsområdet vil, under\nforudsætning af politisk godkendelse af Behandlingsskolernes kvalitetsaftalen og etablering af\nen skole i den vestlige del af kommunen i Fløng med 42 pladser, bestå af kommunens eget\ntilbud ”Byskolen” med 40 pladser, det private tilbud Basen med 55 pladser, beliggende i den\nøstlige del af kommunen, samt køb af pladser uden for kommunen. Samlet set indebærer dette\nen mere specialiseret og faglig differentieret lokal tilbudsvifte sammenlignet med i dag og en\nhøj kapacitet på 137 pladser, uden at kommunen forpligtes til at anvise elever til bestemte\nprivate tilbud.\nMens arbejdet med at styrke almenområdet skal understøtte, at flest mulige børn og unge kan\ntrives i almene fællesskaber, viser udviklingen på området samtidig et stigende behov for\nspecialiserede indsatser til børn og unge med omfattende mistrivsel, skolefravær og\nskolevægring. Tilbuddene under rammeaftalen vurderes samlet set at have en højere\nspecialisering til denne målgruppe samtidig med mere ensartet kvalitetskrav og større\nfleksibilitet i kapaciteten. Tilbuddene har mere målrettede indsatser, herunder til alvorlige\nskolefraværsproblematikker, som er en af de væsentligste drivere for mistrivsel hos børn- og\nunge samt stigende udgifter på området.\nByskolen blev etableret i oktober 2025, som en sammenlægning af Flønghuset og\nUdskolingstilbuddet og har plads til op til 40 elever fra 0-10. klasse. Byskolen er etableret som\net bredt behandlings- og specialundervisningstilbud. Selvom det med samlingen af Flønghuset\nog Udskolingshuset er lykkes at udvide elevgrundlaget, kan det være vanskeligt at opretholde\nrobuste og specialiserede faglige miljøer omkring specifikke elevbehov samt en stabil\nkapacitetsudnyttelse i et tilbud, der alene baserer sig på kommunens eget elevgrundlag. Som\net mindre tilbud er Byskolen derfor sårbar overfor udsving i elevgrund og kapacitetsbehov.\nMed den øgede lokale kapacitet, som følge af rammeaftalen og med tilbud, der i højere grad er\norganiseret omkring specialiseret behandlingsindsatser til elever med specifikke og komplekse\nbehov, er forudsætningerne for den samlede tilbudsvifte imidlertid ændret væsentligt siden\n\netableringen af Byskolen. Med flere lokale og mere specialiserede tilbud kan der forventes en\nøget efterspørgsel på de private tilbud, hvilket kan udfordre et tilstrækkeligt elevgrundlaget på\nByskolen.\nUnder forudsætning af, at Byrådet godkender Behandlingsskolernes ansøgning om at etablere\nen skole i Fløng og en kvalitetsaftale med kommunen, er det administrationens vurdering at\nden nye lokale kapacitet samlet set er tilstrækkelig uden det kommunale tilbud ”Byskolen”.\nKommunen vil fortsat kunne opfylde sin forsyningsforpligtelse og tilbyde relevante behandlingsog skoleundervisningstilbud til børn og unge gennem de eksterne tilbud under rammeaftalen\nsamt øvrige specialundervisningstilbud i andre kommuner. De eksterne tilbud under\nrammeaftalen vil samtidig kunne tilbyde en bredere vifte af indsatser omkring barnet og\nfamilien, herunder fraværsindsatser og familiebehandling, udover det serviceniveau, som\nByskolen kan tilbyde. Samtidig vurderes den samlede tilbudsvifte med større anvendelse af\nrammeaftaledækkede tilbud at give et mere økonomisk bæredygtigt grundlag for områdets\nfremtidige kapacitet og drift.\nPå den baggrund vurderer administrationen at en omlægning af tilbudsviften, med større\nanvendelse af tilbud under rammeaftalen, vil understøtte en mere bæredygtig, specialiseret og\nfleksibel udvikling af behandlings- og specialundervisningsområdet i Høje-Taastrup Kommune.\nAdministrationen anbefaler derfor at lukke Byskolen som led i denne udvikling.\nByskolen forventes, 01-08-2026, at have mellem 18-22 elever fordelt på 0. – 10. klasse, idet\nflere elever forventes at afslutte deres skoleforløb ved skoleårets afslutning, mens 5 elever\nendnu ikke er opstartet i tilbuddet. Eleverne er fordelt på mange klassetrin med relativt få\nelever pr. årgang, der forventes: 7 elever fra 2. – 5 klasse, 4 elever fra 6. - 7. klasse og 11\nelever fra 9 – 10. klasse."
+    },
+    {
+     "titel": "Videre proces",
+     "tekst": "Ved politisk godkendelse af sagen igangsætter administrationen den videre proces for lukning\nog afvikling af Byskolen. Det betyder at der vil være ca. 18-22 elever, der skal flytte skole i\nefteråret 2026. Heraf er 5 elever endnu ikke startet på Byskolen, 6 elever er nye elever startet i\ndette skoleår, 7 elever er fra det tidligere “Flønghuset”, og 4 elever er fra det tidligere\n“Udskolingsstilbuddet”.\nNår eleverne skal flytte skole, vil der blive gennemført en individuel og faglig vurdering\naf elevernes behov og fremtidige tilbud. Administrationen vil i dialog med forældre og relevante\nfagpersoner sikre, at der tilrettelægges hensigtsmæssige overgangsforløb for det enkelte barn,\nså der skabes størst mulig kontinuitet og tryghed i overgangen til et nyt tilbud.\nDer igangsættes samtidig den nødvendige proces i forhold til medarbejdere, MED-system og\nfaglige organisationer. Administrationen vil i den forbindelse arbejde for at understøtte en så\ntryg og hensigtsmæssig overgang som muligt for medarbejderne.\nI forbindelse med den videre proces kan overdragelse af opgaven med behandlings- og\nspecialundervisning til andre behandlingsskoler være omfattet af reglerne om\nvirksomhedsoverdragelse. Hvis reglerne om virksomhedsoverdragelse finder anvendelse, vil\n\nberørte medarbejdere som udgangspunkt have ret til at overgå til den nye arbejdsgiver på\neksisterende løn- og ansættelsesvilkår. Formålet med\nreglerne om virksomhedsoverdragelse er at sikre kontinuitet og tryghed for både medarbejdere\nog børn i forbindelse med overgangen til et nyt tilbud.\nFor børn og unge kan en virksomhedsoverdragelse samtidig understøtte større stabilitet og\ngenkendelighed i hverdagen, hvis kendte medarbejdere fortsætter omkring børnene i et nyt\ntilbud. Hvorvidt reglerne om virksomhedsoverdragelse finder anvendelse, afhænger blandt\nandet af elevernes placering og den konkrete organisering af opgaverne i forbindelse med\novergang til nye tilbud.\nAdministrationen vil i givet fald gennemføre den nødvendige proces i forhold til medarbejdere,\nfaglige organisationer og MED-systemet i overensstemmelse med gældende regler og\naftaler. Tidspunktet for den endelige afvikling af Byskolen vil afhænge heraf, og den konkrete\ntidsplan vil derfor blive tilrettelagt, så der sikres størst muligt kontinuitet og tryghed for børn,\nunge og medarbejdere.\n01-12-2026 sagen genoptages\nSagen genoptages med henblik på fornyet behandling på baggrund af ovenstående\nsagsfremstilling samt de notater og andre svar på spørgsmål, som er blevet udsendt kort tid før\nbyrådsmødet 25-11-2026."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "De økonomiske og implementeringsmæssige konsekvenser indgår i arbejdet med budget\n2027, herunder tilpasning af kapacitet og den fremtidige tilbudsvifte på området.\n11-11-2026 Sagen genoptages\nSagen genoptages hermed, og der er udarbejdet et notat, der supplerer\nsagsfremstillingen til behandling af sagen.\nSagen blev første gang fremlagt i juni 2026, hvorfor oplysningerne i sagen om status og\nkonsekvenser for elever er justeret i forbindelse med skift af skoleåret 2026/2027:\nByskolen har, pr. 01-10-2026, 19 elever fordelt på 0. – 10. klasse. Eleverne er fordelt på\nmange klassetrin med relativt få elever pr. årgang. Der er 8 elever fra 1. – 5 klasse, 4\nelever fra 6. - 7. klasse og 7 elever fra 8 – 10. klasse.\nIdet sagen fremlægges efter vedtagelse af budget 2027, indarbejdes de økonomiske\nkonsekvenser af lukning af Byskolen i forbindelse med 1. budgetopfølgning 2027 og som\nteknisk korrektion til budget 2028-2031.\nSagen er vedlagt et notat, som beskriver forskellige modeller og processer for udvikling af\ntilbudsviften på området for behandlings- og specialskoler, herunder muligheden for\nvirksomhedsoverdragelse ved lukning af Byskolen.\n\nDer pågår aktuelt MED-høring af sagen. Resultatet af høringen vil blive vedlagt sagen\nsom bilag efter høringsfristens udløb, 04-11-2026."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-8": {
+   "id": "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-8",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Institutions- og Skoleudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.htk.dk/vis?id=821e6ff8-c0fc-41e3-a515-aeefe53b2090",
+   "hentet": "2026-11-26T14:11:57.677Z",
+   "titel": "8. I - Status på samarbejde med fællesskabsportalen Boblberg - ISU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Høje-Taastrup Kommune har for perioden 2024-2026 haft en samarbejdsaftale med den\ndigitale fællesskabsportal Boblberg. I 2026 er Boblberg imidlertid blevet en del af Røde Kors og\nstiller nu en gratis version af portalen til rådighed for borgere og foreninger i hele landet.\nAdministrationen anbefaler at Høje-Taastrup Kommune ikke forlænger samarbejdsaftalen, når\nden udløber i 2026, da Boblberg nu er frit tilgængelige for alle borgere og foreninger."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Institutions- og Skoleudvalget, Økonomiudvalget og Byrådet godkender, at:\n\n1. Samarbejdsaftalen med Boblberg ikke forlænges, når den udløber med udgangen\n2. De afsatte midler tilgår kassen fra 2027, jf. økonomiafsnittet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med afsæt i Høje-Taastrup Kommunes udviklingsstrategi 2024-2036 og visionen\n\"Fællesskaber for alle\" besluttede Institutions- og Skoleudvalget, Fritids- og Kulturudvalget og\nØkonomiudvalget i november 2023 at indgå en treårig samarbejdsaftale med den digitale\nfællesskabsportal Boblberg for perioden 2024-2026. Med samarbejdsaftalen fik borgerne i\nHøje-Taastrup Kommune mulighed for at finde fællesskaber, venskaber, netværk, støtte og\nkonkret hjælp via digitale opslag og kontakt til andre borgere på Boblberg.\nSamarbejdet med Boblberg har også bidraget til udmøntning af den politiske beslutning fra\nbudgetforliget 2023 om at understøtte, at familier, som mangler netværk i nærområdet, kan\nsøge og matche med mulige reservebedster. Samarbejdsaftalen med Boblberg har derfor\nværet finansieret af midlerne til en reservebedsteordning, som afsat med budget 2023.\nInstitutions- og Skoleudvalget, Økonomiudvalget og Byrådet forelægges her en status og\nevaluering på det 3-årige samarbejde med Boblberg samt anbefaling vedrørende kommunal\nunderstøttelse af platformen fremover.\nFællesskabsportalen Boblberg\nBoblberg er en digital platform for sociale fællesskaber, der understøtter kontakt og relationer\nmellem mennesker. Platformen har eksisteret siden 2011 og findes både som hjemmeside og\napp. Siden 2019 har Boblberg haft et tæt samarbejde med Røde Kors og samarbejder\ndesuden med en lang række andre organisationer og foreninger om at styrke den fysiske,\nmentale og sociale sundhed. Mere end 50 kommuner har indgået aftale om brug af Boblberg.\nHøje-Taastrup Kommunes samarbejdsaftale har betydet, at borgere gratis kan oprette en profil\nog skabe såkaldte ”bobler” i form af personlige opslag, hvor de søger nye relationer,\n\ninteressefællesskaber eller støtte og hjælp. Andre brugere kan herefter besvare opslagene,\nhvilket kan føre til dialog og relation, enten online eller gennem fysiske møder.\nSamarbejdsaftalen omfattede en administratorfunktion, som screener bobler og dialoger samt\nunderstøttede familierne med indhentelse af børneattester ved reservebedsteaftaler.\nDerudover gav aftalen kommunen adgang til et foreningsmodul og en aktivitetskalender, som\nhjælper borgere, foreninger og institutioner til et let tilgængeligt overblik over lokale aktiviteter\nog fællesskaber.\nStatus på Boblberg i Høje-Taastrup Kommune\nHøje-Taastrup Kommune og Boblberg har løbende evalueret og fulgt op på samarbejde og\nresultater i aftaleperioden. Seneste evaluering i marts 2026 viser samlet set en høj anvendelse\naf platformen og en betydelig borger-til-borger-kontakt på tværs af målgrupper. Resultaterne\nviser, at:\nHøje-Taastrup Kommune samlet har ca. 5.900 brugere på Boblberg med en\ngennemsnitsalder på 41 år. Det svarer til ca. 14 % af kommunens borgere over 15 år.\n85 % af brugerne har fået respons på deres opslag (bobler), hvilket samlet set har\nresulteret i knap 19.500 samtaler med kommunens brugere.\nDer er registreret henholdsvis 193 brugere og 515 brugere i koncepterne ”Julevenner”\nog ”Nytårsvenner”, som understøtter fællesskab omkring højtider.\nDer er gennemført i alt 1.168 samtaler via Sprogland, hvor frivillige fra Røde Kors\ntilbyder mundtlig dansktræning til borgere fra 9-års alderen.\nDer er i alt oprettet 84 bobler vedrørende reservebedsteforældre, og heraf er der sket 67\nmatches mellem brugere, der søger henholdsvis reservebedsteforældre eller børnebørn.\n\nEvalueringen viser konkrete eksempler på bobler og brugerhistorier fra borgere i Høje-Taastrup\nKommune. Disse illustrerer, hvordan Boblberg i praksis har bidraget til at skabe relationer,\nfællesskab og trivsel for forskellige grupper af borgere – på tværs af alder, kultur og sociale\nforudsætninger. Eksempler fremgår af bilag 1.\nFor at udbrede kendskabet til og anvendelsen af platformen har Høje-Taastrup Kommune og\nBoblberg samarbejdet om en række synligheds- og rekrutteringsaktiviteter. Det omfatter blandt\nandet uddeling af informationsmateriale og afvikling af stande og oplæg på blandt andet skoler,\nbiblioteker, plejehjem, væresteder og hos psykologer samt ved arrangementer som\nseniormesse, frivillighedskonference, march mod ensomhed og fest for psykisk sårbare\nborgere.\nBoblberg har løbende screenet opslag og indhentet børneattester med de kommende\nreservebedsters samtykke. Ingen af de indhentede attester har indeholdt anmærkninger.\nEvalueringen af samarbejdet med Boblberg viser, at platformen er et effektivt og inkluderende\nredskab til at understøtte udviklingsstrategiens vision om Fællesskaber for alle. Samarbejdet\nhar givet borgerne en let tilgængelig indgang til fællesskaber, som supplerer kommunens\nøvrige indsatser og understøtter civilsamfundets engagement. Dermed bidrager platformen til\n\nat understøtte øget trivsel, forebyggelse af ensomhed og styrkelse af den lokale\nsammenhængskraft på tværs af alder, køn, etnicitet og livssituation. På den baggrund vurderer\nadministrationen, at Boblberg i høj grad understøtter realiseringen af kommunens strategiske\nambitioner.\nAdgang til Boblberg fra 2027\nBoblberg er fra 01-07-2026 formelt overtaget af Røde Kors. Som følge af dette, er platformen\nnu gratis tilgængelig for alle borgere og foreninger i hele landet. Borgernes adgang til\nplatformen er dermed ikke længere afhængig af kommunal understøttelse og finansiering.\nAdministrationen vurderer derfor, at der ikke længere er behov for en kommunal\nsamarbejdsaftale med Boblberg.\nDet skal bemærkes, at den særlige administratorfunktion vedrørende indhentning af\nbørneattester ved reservebedsteaftaler ikke videreføres, når samarbejdsaftalen ophører. Røde\nKors oplyser, at de ikke er bekendt med, at andre kommuner har indhentet børneattester på\nborgernes vegne ved reservebedsteaftaler, da disse betragtes som en uformel relation mellem\nborgere."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Adgangen til Boblbergs ydelser og moduler har hidtil kostet 108.000 kr. årligt ekskl.\nmoms. med en årlig prisfremskrivning på 4,95 pct. samt en årlig udgift på 6.000 kr. til\nadministratorfunktion.\nMed budgetforlig 2023 blev der afsat 139.370 kr. årligt til reservebedsteordning.\nInstitutions- og Skoleudvalget besluttede i møde 08-11-2023, at samarbejdsaftalen med\nBoblberg skulle finansieres via disse midler, da samarbejdet indeholdt en udmøntning af\nreservebedsteordningen.\nAdministrationen anbefaler, at de afsatte midler til reservebedsteordning, som hidtil har\nfinansieret samarbejdsaftalen, tilgår kassen fra 2027, såfremt samarbejdsaftalen ikke\nforlænges."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-11": {
+   "id": "hoeje-taastrup-2026-12-01-institutions-og-skoleudvalget-11",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Institutions- og Skoleudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.htk.dk/vis?id=821e6ff8-c0fc-41e3-a515-aeefe53b2090",
+   "hentet": "2026-11-26T14:11:57.677Z",
+   "titel": "11. Underskriftsblad - Institutions- og Skoleudvalget - 01-12-2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-01-fritids-og-kulturudvalget-1": {
+   "id": "hoeje-taastrup-2026-12-01-fritids-og-kulturudvalget-1",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Fritids- og Kulturudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.htk.dk/vis?id=bd3f83d1-a3cd-4e55-852c-bda68e242a97",
+   "hentet": "2026-11-26T14:12:02.137Z",
+   "titel": "1. Meddelelser - Fritids- og kulturudvalget december 2026",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-1": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-1",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "1. Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-2": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-2",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "2. Meddelelser – Arbejdsmarkeds- og Socialudvalget",
+   "afsnit": [],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-3": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-3",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "3. A - Udmøntning af puljen til frivillige sociale aktiviteter (§18), 1. runde 2027 - ASU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Hvert år afsætter byrådet en pulje til støtte af de frivillige sociale indsatser i Høje-Taastrup\nKommune i henhold til Serviceloven. I 2027 er puljen på i alt 436.000 kr.\nForslag til fordeling af puljen til støtte af frivillige sociale aktiviteter behandles på\nArbejdsmarkeds- og Socialudvalgets møder to gange årligt. I denne sag skal udvalget tage\nstilling til fordelingen af puljemidler i den første ansøgningsrunde 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Arbejdsmarkeds- og Socialudvalget godkender, at\n\n1. tilskud til de enkelte foreninger og projekter fordeles jf. bilag 1 og nedenstående\nsagsfremstilling.\n2. der afsættes 20.000 kr. til Frivillig Fredag i 2027."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ansøgninger modtaget i 1. ansøgningsrunde\nHøje-Taastrup Kommune har modtaget 32 ansøgninger til første ansøgningsrunde 2027. Der\ner ansøgt om midler for 652.390 kr. i alt. Til sammenligning modtog vi 19 ansøgninger til første\nansøgningsrunde 2026 for i alt 307.812 kr.\nDer er i indstillingen blandt andet taget højde for sammenhængen mellem antal deltagere,\nantal frivillige og økonomi. Det indgår desuden i den samlede vurdering, hvor mange HøjeTaastrup borgere, der forventes at få gavn af indsatsen. Der koordineres med initiativpuljen,\nintegrationspuljen, den tidligere §79-pulje og Strakspuljen, så ansøgere der vurderes at passe\nbedre ind i en af de andre puljer, henvises dertil. Forslag til udmøntning fremgår af bilaget, hvor\nder er givet et resumé af hver ansøgning, samt ansøgt beløb, forslag til tilskud eller afslag og\nbegrundelse.\nFordelingen af puljemidlerne er sendt til høring i Rådet for frivillige sociale foreninger. Rådet\nafgiver høringssvar til fordelingen, hvis de har kommentarer til administrationens indstilling.\nFrivillig Fredag er en årlig national mærkedag, hvor de frivillige fejres over hele landet. I HøjeTaastrup Kommune markeres dagen ved et festligt aftenarrangement for foreningerne med\nunderholdning, netværk og spisning. Frivillig Fredag er samtidig en del af Frivilligugen. HøjeTaastrup Kommune står for afholdelse af arrangementet, som i over 10 år har været finansieret\nvia §18-puljen, da arrangementet traditionelt især henvender sig til de frivillige sociale\nforeninger.\n\nRetningslinjer for støtte til frivillige sociale foreninger\nI nedenstående gives et kort oprids af retningslinjerne for puljen til støtte af frivillige sociale\naktiviteter. For et fuldt overblik over puljens retningslinjer henvises til bilaget.\nPuljen fordeles efter Servicelovens §18 til frivillige sociale indsatser og efter Barnets Lov §17 til\nfrivillige sociale indsatser på børne- og ungeområdet i henhold til de kommunale retningslinjer,\nsenest er revideret af Socialudvalget 15-01-2025.\nOverordnet skal der være tale om aktiviteter, der hovedsageligt er baseret på frivillige kræfter.\nAktiviteterne skal rette sig mod socialt udsatte borgere i/fra Høje-Taastrup Kommune\n(målgruppen er nærmere beskrevet i puljens retningslinjer). Desuden skal de konkrete\nudgiftsposter til aktiviteterne kunne godkendes, jf. puljens retningslinjer.\nSocialudvalget besluttede i 2019 at prioritere lokalt forankrede foreninger/aktiviteter frem for\nlandsorganisationer og udenbys aktiviteter. Udvalget besluttede også at prioritere frivillige\nindsatser, som skaber lokale relationer. Derfor vil landsforeninger, der er forankret udenbys og\naktiviteter der foregår udenbys, som udgangspunkt blive indstillet til afslag. Det gælder som\nudgangspunkt også foreninger, der primært søger om støtte til udenbys udflugter eller ferieture.\nLejrture for udsatte børn fra Høje-Taastrup Kommune indstilles dog i nogle tilfælde til et tilskud,\nder svarer til antallet børn fra Høje-Taastrup Kommune, hvis aktiviteten er i tråd med\nforeningens formål og overholder de øvrige kriterier for puljen.\nI forbindelse med tildelingen af støtte er der desuden lagt vægt på, at ansøgerne bidrager med\naktiviteter, der er kontinuerlige, netværksskabende og som har et socialt og\nsundhedsfremmende sigte. For et fuldt overblik over puljens retningslinjer henvises til bilaget."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "I budgettet for 2027 er der afsat 436.000 kr. til fordeling til frivillige sociale foreninger.\nHeraf afsættes 20.000 kr. til Frivillig Fredag i 2027. Derved er der 416.000 kr. til fordeling i\nSåfremt udvalget godkender administrationens indstilling, fordeles 230.325 kr. i første\nrunde 2027, mens restbeløbet på 185.675 kr. reserveres til anden runde 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-4": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-4",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "4. A - Integrationspuljen: Projekt 2 timer om ugen - ASU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Byrådet har afsat et beløb på 390.000 kr. til Integrationspuljen, som kan søges til projekter, der\nhjælper med integration. Bl.a. foreninger, skoler, klubber, boligorganisationer og private\npersoner kan søge om penge til deres indsatser.\nIntegrationspuljen giver især støtte til projekter, hvor flere arbejder sammen, og som\nunderstøtter Integrationspolitikkens målsætninger. Det kan fx være en frivillig forening, en\nkommunal aktør som en skole eller den boligsociale helhedsplan. For at få støtte skal der være\nen samarbejdsaftale om, hvad projektet/aktiviteten går ud på, hvem der deltager, og hvilke mål\nder er med projektet.\nDer kan også søges penge til fx et enkelt arrangement med fokus på integration som et\nforedrag, en festival, en event eller en udstilling.\nI denne sag skal der tages stilling til et samarbejdsprojekt mellem Fonden for socialt Ansvar –\nProjekt 2 timer om ugen, den boligsociale helhedsplan i Gadehavegård, Ole Rømer-skolen,\nTåstrup bibliotek og en folkeskole, som endnu ikke er udpeget."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Arbejdsmarked- og Socialudvalget godkender en bevilling på 120.000 kr. til Projekt 2\ntimer om ugen finansieret af Integrationspuljen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Projekt 2 Timer om Ugen er et frivilligt socialt initiativ, der gennem de seneste 1,5 år har opnået\ngode resultater med at styrke børn i alderen 3-8 år sprogligt, socialt og kulturelt i det udsatte\nboligområde Gadehavegård og på Ole Rømer-Skolen. På baggrund af de positive erfaringer\nønsker projektet at videreføre og udbygge samarbejdet med den boligsociale helhedsplan, Ole\nRømer-Skolen samt en yderligere folkeskole i Høje-Taastrup Kommune (se evaluering i bilag).\nProjektets formål er at understøtte børns sproglige, sociale og kulturelle udvikling gennem tæt\nkontakt med frivillige dansktalende voksne og deltagelse i strukturerede sproggrupper. Den\nsproglige, sociale og kulturelle stimulering sker enten gennem et individuelt match med en\nfrivillig voksen eller gennem deltagelse i en sproggruppe.\nI et individuelt match mødes barnet med en frivillig dansktalende voksen to timer om ugen.\nBarnet får her en nærværende relation og fuld opmærksomhed fra en voksen, der taler et\nnuanceret dansk. Samværet tager udgangspunkt i barnets interesser og behov og kan blandt\nandet bestå af leg, højtlæsning, kreative aktiviteter eller udflugter. Den sproglige stimulering\nforegår naturligt gennem dialog, fælles oplevelser og aktiviteter, som vækker barnets\nnysgerrighed.\nSamtidig tilbydes deltagelse i sproggrupper, hvor 10-12 børn mødes ugentligt sammen med\nfrivillige voksne.\n\nForløbet strækker sig over 20 uger og bygger på et sprogstimuleringsprogram, der er udviklet i\nsamarbejde med Syddansk Universitet. Gennem sproglege og dialogbaserede aktiviteter\narbejdes der målrettet med at styrke børnenes sproglige opmærksomhed, ordforråd,\nlytteforståelse og mundtlige kommunikation. Formålet er at udvikle børnenes evne og lyst til at\nudtrykke sig på dansk og dermed styrke deres forudsætninger for at deltage aktivt i\nfællesskaber og i undervisningen.\nI projektperioden forventes det at gennemføre tre sproggrupper med plads til op til 12 børn i\nhver gruppe. Det betyder, at op til 36 børn vil deltage i sproggrupperne. Derudover forventes\n15 børn at blive matchet med en frivillig dansktalende voksen i løbet af den 1,5-årige\nprojektperiode. Samlet set vil 51 få gavn af indsatsen.\nAdministrationens vurdering\nAdministrationen vurderer, at Projekt 2 Timer om Ugen bidrager positivt til børns sproglige,\nsociale og kulturelle udvikling. Evalueringen af projektet viser, at de deltagende børn opnår\nstyrkede sproglige og sociale kompetencer gennem både sproggrupperne og match med\nfrivillige voksne.\nIndsatsen vurderes at imødekomme et væsentligt behov i målgruppen. Ved skolestart har\nhenholdsvis 25 pct. af børnene i Gadehavegård et alderssvarende sprog, mens\nlandsgennemsnittet er 85 pct. Projektet supplerer kommunens eksisterende indsats SPROGlighed, der omfatter børn i alderen 0-3 år og deres forældre ved at tilbyde en målrettet indsats\ntil børn i alderen 3-8 år.\nProjektet understøtter integrationspolitikkens indsatsområde; Beskæftigelse og uddannelse,\nsamt styrkelse af sammenhængskraft og modvirke opsplitning."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Integrationspuljen er på i alt 390.000 kr. i 2026. Indtil d.d. er der uddelt 249.500 kr. Der er\nsåledes 140.500 tilbage i puljen. Hvis støtten til projektet godkendes, er restbeløbet i\npuljen 20.500 kr."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-5": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-5",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "5. I - Uddannelsespuljemidler for ledige borgere 2026 - ASU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Styrelsen for Arbejdsmarked og Rekruttering (STAR) har tildelt Høje-Taastrup Kommune i alt\n1,56 mio. kr. fra to forskellige puljer til opkvalificering af ledige; 1) ’Den regionale\nuddannelsespulje’ og 2) ’Puljen til uddannelsesløft’. Midlerne vedrører 2026 og STAR stiller\nkrav om egenfinansiering.\nFor at anvende puljemidlerne skal kommunen selv finansiere en del af udgifterne. Denne\negenfinansiering kan dækkes inden for de eksisterende budgetter til beskæftigelsesindsatsen.\nMed denne sag søges der om bevilling til de statslige puljemidler samt omplacering af allerede\nafsatte kommunale midler til egenfinansieringen. Sagen medfører således ikke behov for\nyderligere kommunale midler."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Arbejdsmarkeds- og Socialudvalget, Økonomiudvalget og Byrådet godkender, at\n\n1. der til Den regionale uddannelsespulje i 2026 gives en indtægtsbevilling på\n1.501.000 kr. og en udgiftsbevilling på 3.900.000 kr.\n2. der til Puljen til uddannelsesløft i 2026 gives en indtægtsbevilling på 58.954 kr. og\nen udgiftsbevilling på 73.693 kr.\n3. kommunens samlede egenfinansiering på 2.413.739 kr. dækkes gennem\nomplacering af allerede afsatte budgetmidler fra områderne integration, aktivering\nog beskæftigelsesordninger, så bevillingerne samlet er udgiftsneutrale for\nkommunen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunen modtager årligt statslige puljemidler til at styrke lediges kompetencer og\nmuligheder for varig beskæftigelse gennem uddannelse. Denne sag vedrører Den regionale\nuddannelsespulje og Puljen til uddannelsesløft. Styrelsen for Arbejdsmarked og Rekruttering\n(STAR) stiller et krav om egenfinansiering ved begge puljer.\nDen regionale uddannelsespulje omfatter alle målgrupper i lov om aktiv beskæftigelsesindsats,\nbortset fra borgere i fleksjob. Formålet med puljen er at tilbyde borgere støtte til korte,\nerhvervsrettede kurser på områder, hvor der mangler arbejdskraft ifølge STAR og Det\nRegionale Beskæftigelsesråd.\nPuljen til uddannelsesløft omfatter dagpengemodtagere og jobparate kontanthjælpsmodtagere\nmed forhøjet sats, der er ufaglærte eller faglærte med en forældet uddannelse, og som er fyldt\n30 år. Formålet med puljen er at give uddannelsesløft i form af støtte til erhvervsuddannelse.\n\nBegge puljer skal anvendes i 2026. Puljerne blev meldt ud i starten af året plus et tillægstilsagn\ni september. Administrationen vil fremover bestræbe sig på at søge bevillingen tidligere på\nåret.\nStatus på anvendelsen af puljerne i 2026\nPuljemidlerne har i 2026 givet mulighed for at tilbyde flere borgere kompetencegivende forløb\nend kommunen ellers ville have haft mulighed for, hvilket har styrket borgernes mulighed for\nbeskæftigelse.\nInden for Den regionale uddannelsespulje har Høje-Taastrup Kommune per den 31-10-2026\nbrugt 3.460.867 kr. til at opkvalificere 170 borgere gennem korte, erhvervsrettede kurser.\nForeløbigt er 51 af de borgere, der har deltaget i kurser, nu i arbejde.\nInden for Puljen til uddannelsesløft har Høje-Taastrup Kommune i alt brugt 73.693 kr., inden\npuljen udløb den 01-02-2026, til at opkvalificere to borgere i form af erhvervsuddannelse på\nhenholdsvis teknisk skole og handelsskole."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "De samlede udgifter til uddannelsesaktiviteterne udgør 3,97 mio. kr. i 2026. Heraf\nfinansieres 1,56 mio. kr. af statslige puljemidler, mens de resterende 2,41 mio. kr.\nfinansieres af kommunens eksisterende budget.\nFordelingen fremgår nedenfor.\nPulje\n\nSamlede\nudgifter\n\nStatslige\nmidler\n\nKommunal\nfinansiering\n\nRegional\nuddannelsespulje\n\n3,900 mio. kr.\n\n1,501 mio. kr.\n\n2,399 mio. kr.\n\nPulje til uddannelsesløft\n\n0,074 mio. kr.\n\n0,059 mio. kr.\n\n0,015 mio. kr.\n\nI alt\n\n3,974 mio. kr.\n\n1,560 mio. kr.\n\n2,414 mio. kr.\n\nDen kommunale finansiering på 2,399 mio. kr. til Den regionale uddannelsespulje\ndækkes ved at omplacere ledige midler fra de eksisterende budgetter til integration og\naktivering. Midlerne er opgjort i forbindelse med 2. budgetopfølgning i 2026.\nDen kommunale finansiering på 14.739 kr. til Puljen til uddannelsesløft dækkes\ntilsvarende ved en omplacering af ledige budgetmidler fra det eksisterende budget til\nbeskæftigelsesordninger.\nDer søges dermed om udgiftsbevillinger på i alt 3,974 mio. kr., som finansieres af\nstatslige tilskud på 1,560 kr. og tilsvarende reduktioner på de eksisterende kommunale\nbudgetter på 2,414 mio. kr.\nDe samlede bevillingsændringer er således budgetneutrale og medfører ingen\nmerudgifter for kommunen."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-6": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-6",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "6. I - Pulje til styrkelse af den kommunale alkoholbehandling - ASU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Høje-Taastrup Kommune har fået tilsagn fra Sundheds- og Kirkeministeriet om midler fra ‘Pulje\ntil styrkelse af den kommunale alkoholbehandling af borgere med alkoholproblematik og\nsamtidig psykisk lidelse’. Midlerne gives for perioden 2026-2028.\nI denne sag anmoder administrationen om en udgifts- og indtægtsbevilling på samlet 735.000\nkr. i perioden 2026-2028. Herudover orienteres kort om resultaterne af\ndøgnbehandlingsforløbene ved sidste pulje, der blev givet for perioden 2022-2025."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Arbejdsmarkeds- og Socialudvalget, Økonomiudvalget og Byrådet,\n1. godkender en udgiftsbevilling på 245.000 kr. og en indtægtsbevilling på 245.000\n2. godkender en udgiftsbevilling på 245.000 kr. og en indtægtsbevilling på 245.000\nkr. i både 2027 og igen i 2028, såfremt tilskuddene bliver optaget på finansloven\nde kommende finansår\n3. tager administrationens redegørelse for perioden 2022-2025 til efterretning"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formålet med puljen er at give landets kommuner mulighed for at tilbyde et kvalificeret\ndøgnbehandlingstilbud til borgere, der både har et alkoholmisbrug og en psykisk lidelse.\nBaggrunden er, at borgere med både alkoholproblemer og psykisk sygdom ofte ikke får\ntilstrækkelig effekt af alkoholbehandling alene. Behandlingen skal derfor tage højde for begge\nproblemstillinger for at skabe bedre resultater.\nDøgnbehandlingsforløb i 2026-2028\nDøgnbehandlingsforløb er omkostningstunge, og der er givet puljemidler til at dække\ndøgnbehandlingsforløb til ca. 3 borgere i alt i den treårige periode 2026-2028. Administrationen\nhar indgået aftale med Ringgårdens døgnbehandling i Middelfart. Ringgården har en høj\nspecialiseringsgrad, faglig kompetence, og 50 års erfaring. Tidligere har kommunen benyttet\nBlå Kors Behandlingscenter Taastrup, men de har nedlagt deres døgnbehandlingstilbud.\nResultater af døgnbehandlingsforløb 2022-2025\nHøje-Taastrup Kommune har tidligere modtaget puljemidler til samme type behandling, hvor\nden seneste pulje var for perioden 2022-2025.\nHøje-Taastrup Kommune samarbejdede i 2022-2024 med Blå Kors Behandlingscenter\nTaastrup om at tilbyde døgnbehandlingsforløb til borgere med alkoholafhængighed og samtidig\npsykisk lidelse. Da Blå Kors Behandlingscenter nedlagde deres døgnbehandlingstilbud i\n\nnovember 2024, indgik Høje-Taastrup Kommune aftale med Ringgårdens døgnbehandling. I\nperioden 2022-2025 blev der ansøgt om 5,5 forløb, men på grund af frafald og kortere forløb\nblandt nogle borgere, så var der i alt 11 borgere, der opstartede behandling i den fireårige\nperiode.\nHos de borgere, der var i forløb i 2022-2025, kan vi se:\nÆndret alkoholforbrug: En stor del af borgerne opnåede ophør af deres alkoholforbrug\nunder behandlingen og udviklede redskaber til at håndtere risikosituationer og forebygge\ntilbagefald. Samtidig oplevede enkelte borgere tilbagefald eller uændret forbrug enten\nved endt behandling eller ved senere opfølgning.\nStyrkede relationer til pårørende: Pårørende blev inddraget i hovedparten af forløbene\ngennem samtaler og kurser, og flere borgere oplevede styrkede relationer til familie og\nnetværk.\nØget trivsel og livskvalitet: Borgerne oplevede øget trivsel og livskvalitet, herunder bedre\nhåndtering af psykiske udfordringer som angst, depression og stress samt større\nstabilitet i hverdagen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Kommunen vil modtage et tilskud på 735.000 kr. fordelt på 3 år. Dette beløb vil modsvare\nkommunens udgifter, og sagen er dermed udgiftsneutral for kommunen. Tilskuddet og\nudgifterne vil blive fordelt med 245.000 årligt i 2026, 2027 og 2028.\nTilskuddene i perioden 2027-2028 forudsætter, at bevillingen bliver optaget på\nfinansloven de kommende finansår."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-7": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-7",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "7. I - Deltagelse i KL's storskalaprojekt om kunstig intelligens på beskæftigelsesområdet - ASU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "Høje-Taastrup Kommune har fået et tilskud på 350.000 kr. fra Kommunernes Landsforening\n(KL) til at deltage i det fælleskommunale storskalaprojekt om kunstig intelligens (AI) på\nbeskæftigelsesområdet. Projektet løber fra 3. kvartal 2026 til udgangen af 2027 og skal hjælpe\nkommunerne med at tage AI-løsninger i brug. Byrådet skal godkende en indtægts- og\nudgiftsbevilling til projektet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Social- og Arbejdsmarkedsudvalget, Økonomiudvalget og Byrådet godkender, at der\ngives en indtægtsbevilling og en tilsvarende udgiftsbevilling på 350.000 kr. til Social- og\nArbejdsmarkedsudvalget for perioden 2026-2027."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I storskalaprojektet samarbejder kommunerne om at tage AI-løsninger i brug og undersøge,\nhvilke forbedringer løsningerne giver i praksis. Gennem projektet får Høje-Taastrup Kommune\nadgang til fælles metoder og viden samt erfaringer fra de andre deltagende kommuner.\nAdministrationen vil bruge denne viden og disse erfaringer i det igangværende arbejde med at\nindføre AI-løsninger på beskæftigelsesområdet, der skal hjælpe medarbejderne før, under og\nefter samtaler med borgerne. Løsningerne skal opsummere borgersager som forberedelse til\nmøder, automatisk omsætte borgersamtaler til tekst og udarbejde udkast til mødereferater. De\nskal også gøre det lettere og hurtigere at finde relevant lovgivning og vejledning til\nsagsbehandlingen.\nMålet er at forbedre dokumentationen på beskæftigelsesområdet og gøre den mere ensartet.\nSamtidig skal løsningerne forkorte tiden fra samtale til færdigt notat og give medarbejderne\nbedre mulighed for at være nærværende i samtalen med borgeren."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Tilskuddet fra KL er fordelt over 2026 og 2027 som vist i tabellen nedenfor.\nØkonomipost og placering\n\nI alt (kr.)\n\nKL-indtægt – SAC/Jobservice\n\nTilskudsfinansierede udgifter – SAC/Jobservice\n\nKommunal medfinansiering – CBA Digitalisering\n\nTilskuddet bruges til at frikøbe medarbejdere i Jobservice, så de kan indføre AI-løsninger,\n\nog til ekstern konsulentbistand, som skal forberede medarbejderne på at bruge AI i deres\nfaglige arbejde.\nKommunens medfinansiering er på ca. 455.000 kr. og dækkes af den eksisterende\nbudgetramme. Beløbet skal dække projektledelse og licenser.\nProjektet kræver dermed ikke yderligere kommunal finansiering."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-8": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-8",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "8. I - Byggeregnskab for 97 familieboliger i Nærheden (skema C) - ASU",
+   "afsnit": [
+    {
+     "titel": "Baggrund",
+     "tekst": "I denne sag skal Byrådet tage stilling til byggeregnskabet for 97 familieboliger i Nærheden\n(skema C).\nByggeriet er afsluttet inden for den økonomiske ramme. Den endelige anskaffelsessum er lidt\nlavere end den anskaffelsessum, Byrådet godkendte ved skema B."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "At Arbejdsmarkeds- og Socialudvalget, Økonomiudvalget og Byrådet godkender:\n1. byggeriets endelige økonomi og finansiering, herunder:\na. byggeregnskabet (skema C) med en endelig anskaffelsessum på 241.646.000 kr.\nb. kommunalt grundkapitallån på 8% af anskaffelsessummen svarende til 19.332.000\nkr.\nc. et grundkøbslån på 13.174.000 kr., samt medfinansiering på 28% af\ngrundkøbslånet svarende til 3.688.720 kr.\nd. en negativ tillægsbevilling på 263.280 kr. som følge af den lavere kommunale\nmedfinansiering af grundkøbslånet.\ne. den årlige husleje på 1.291 kr. pr. m 2 ekskl. forbrug.\nf.\n\nat der ydes en regaranti for den del af lånet, som på tidspunktet for lånets\noptagelse har pantesikkerhed ud over 60 pct. af ejendommens værdi.\n\n2. at administrationen bemyndiges til at godkende dokumentationen for anvendelse af de\nafsatte beløb."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På vegne af Boligselskabet Danske Funktionærers Boligselskab har Domea.dk opført 97\nfamilieboliger i Nærheden.\nBoligerne er et led i udviklingsplanen for Gadehavegård, og er opført som erstatning for en del\naf de boliger, der nedrives i Gadehavegård.\nOpførelse af støttet byggeri sker i tre faser: Skema A (tilsagn), skema B (godkendelse af\nbudget) og skema C (godkendelse af det endelige byggeregnskab).\nByrådet godkendte den 19-06-2024 opførelsen af 97 boliger i Nærheden (skema A). Projektet\nblev efterfølgende udbudt og Byrådet godkendte skema B den 18-09-2024. Byggeriet er nu\ntaget i brug, og Byrådet skal i denne sag godkende det afsluttede byggeregnskab (skema C).\n\nAnskaffelsessummen for de 97 boliger udgør i alt 241,6 mio. kr. ved fradrag af grundkøbslånet.\nAnskaffelsessummen fordeler sig på følgende udgifter:\nSkema A\n\nSkema B\n\nSkema C\n\nGrundudgifter\n\n-grundkøbslån\n\nHåndværkerudgifter\n\nOmkostninger, gebyr\n\nkr.\n-lejeindtægt i byggeperiode\nI alt\n\nDen endelige anskaffelsessum er lavere end ved skema B. Reduktionen skyldes primært\nlejeindtægter i byggeperioden. Samtidig er grundkøbslånet endeligt opgjort til et lavere beløb\nend forudsat ved skema B.\nAnskaffelsessummen finansieres med 90 % realkreditbelåning, 8 % kommunal grundkapital og\n2 % beboerindskud. Der er desuden godkendt et grundkøbslån som fratrækkes\ngrundudgifterne.\nDer er konstateret en forskel mellem revisionsprotokollen og skema C. Boligorganisationen har\noplyst, at forskellen skyldes den endelige opgørelse af grundkøbslånet, som er reduceret fra\n14,1 mio. kr. til 13,2 mio. kr. Skema C afspejler den endelige finansieringsberettigede\nanskaffelsessum.\nVed skema A fastsatte Byrådet som betingelse, at anskaffelsessummen ikke måtte forhøjes\nsom følge af indeksering ud over fastprisperioden. Denne betingelse er overholdt. Der er ikke\nsøgt om indeksering, og den endelige anskaffelsessum ligger 45.000 kr. under\nmaksimumsbeløbet.\nDet samlede gennemsnitlige bruttoareal for familieboligerne er 87,7 m 2.\nHuslejen er beregnet til 1.291 kr./m 2 ekskl. forbrugsudgifter.\nI byggeregnskabet er der afsat 346.000 kr. til ekstraarbejder og låneomkostninger. Det\nanbefales, at administrationen bemyndiges til at godkende den endelige dokumentation for\nanvendelsen af beløbene.\nAdministrationen vurderer, at byggeriet er gennemført tilfredsstillende, idet den endelige\nanskaffelsessum ligger inden for den godkendte ramme og under maksimumsbeløbet."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Den kommunale forpligtelse omfatter:\n1. Et grundkapitallån som blev bevilget ved skema A. Lånet er med skema C reduceret\nfra 19,335 mio. kr. til 19,332 mio. kr. Lånet er rente- og afdragsfrit i indtil 50 år efter\nejendommens ibrugtagelse. Grundkapitallånet medregnes ikke i anlægsrammen.\n2. Medfinansiering på 28% af grundkøbslånet, som blev bevilget ved skema A.\nKommunens andel er med skema C reduceret fra 3.952.000 kr. til 3.688.720 kr. Da\nden endelige kommunale medfinansiering af grundkøbslånet er lavere end forudsat\nved skema A reduceres kommunens udgift 263.280 kr. Beløbet tilgår kassen og\nindgår som en tillægsbevilling med godkendelsen af skema C.\n3. Regaranti for den del af lånet, som på tidspunktet for lånets optagelse har\npantesikkerhed ud over 60 pct. af ejendommens værdi. Ejendommens værdi\n(markedsværdien) fastsættes af det långivende realkreditinstitut, og den endelige\nregaranti vil først blive beregnet i forbindelse med godkendelsen af skema C. Staten\nyder garanti for hele lånet."
+    }
+   ],
+   "bilag": []
+  },
+  "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-11": {
+   "id": "hoeje-taastrup-2026-12-02-arbejdsmarkeds-og-socialudvalget-11",
+   "kommune": "Høje-Taastrup",
+   "udvalg": "Arbejdsmarkeds- og Socialudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.htk.dk/vis?id=1827e0c1-e046-44ab-8f3d-c191959b0ffa",
+   "hentet": "2026-11-26T14:12:31.443Z",
+   "titel": "11. Underskriftsark – Arbejdsmarkeds- og Socialudvalget",
    "afsnit": [],
    "bilag": []
   }
@@ -7518,59 +8335,59 @@
  "sitemaps": {
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=949d023d-64b9-4825-978c-6d1879ffee65": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=2b656e2c-fab1-44ca-9555-700290e49381": {
-   "senest": "2026-11-09",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=352d73ac-106c-4981-90d2-51896ae6bd6c": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=57170dde-e287-4955-a743-d748f8b35cb6": {
-   "senest": "2026-11-05",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=bc99f168-da61-4e5f-ae32-5b26c8a30d68": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=b8de545a-6e30-4409-80d6-3292f8015e13": {
    "senest": "2025-01-30",
    "tjekket": "2026-11-19"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=994eeb57-080b-4903-9434-fe556ddd884f": {
-   "senest": "2026-11-05",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=935c3e20-2469-438c-ac1a-76e6053c501d": {
-   "senest": "2026-11-05",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=985766d2-4c03-43b2-83cd-01cb816b6855": {
    "senest": "",
    "tjekket": "2026-11-01"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=914a09fa-f7ad-4a92-86a8-3db001c1f01b": {
-   "senest": "2026-11-05",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=dc020fa4-040f-40d6-a1ba-83844a6ee5cc": {
    "senest": "2026-09-24",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=ce683df4-0beb-473c-abb1-b81860a31028": {
-   "senest": "2026-11-25",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=859aeec8-3269-453b-982a-47abcc088dff": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=577dd2a0-8721-46f2-850a-42aeb5a86325": {
-   "senest": "2026-11-09",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.htk.dk/Sitemap/ForCommittee?committeeId=3458c30d-7281-4c6a-bafe-4e758f1b744c": {
    "senest": "2025-09-27",
@@ -7585,7 +8402,7 @@
    "tjekket": "2026-11-19"
   }
  },
- "opdateret": "2026-11-25T23:24:19.047Z",
+ "opdateret": "2026-11-26T14:12:31.444Z",
  "kommune": "Høje-Taastrup",
  "parser": 3
 }

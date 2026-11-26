@@ -717,6 +717,30 @@
    "parser": 3,
    "tomFra": "2026-11-25",
    "tegn": 79425
+  },
+  "a60246d0-495e-4f5e-98b8-1101701fdbb0": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "punkter": 8,
+   "parser": 3
+  },
+  "f9b69699-908a-4491-8c5d-e136430a0bd5": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Rudersdal Erhvervsråd",
+   "dato": "2026-12-02",
+   "punkter": 1,
+   "parser": 3
+  },
+  "6a661859-13be-452e-a10b-8b4ab344fe28": {
+   "lastmod": "2026-11-26",
+   "type": "referat",
+   "udvalg": "Kommunalbestyrelsen",
+   "dato": "2026-11-25",
+   "punkter": 25,
+   "parser": 3
   }
  },
  "sager": {
@@ -14371,12 +14395,17 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsorden blev godkendt."
+    }
+   ],
    "bilag": []
   },
   "rudersdal-2026-11-25-kommunalbestyrelsen-2": {
@@ -14384,15 +14413,15 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Meddelelser",
    "afsnit": [
     {
-     "titel": "Resumé",
-     "tekst": "Foreløbige meddelelser\nMeddelelse om indhold i vedlagt lukkede bilag."
+     "titel": "Beslutning",
+     "tekst": "Borgmester Ann Sofie Orth orienterede om:\nIndhold i lukket bilag.\nHåndtering af bombetrusler mod bl.a. skoler i hele landet herunder Rudersdal\nKommune mandag den 23.november."
     }
    ],
    "bilag": []
@@ -14402,10 +14431,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Ny vision for skolerne i Rudersdal - genoptagelse efter høring",
    "afsnit": [
     {
@@ -14419,6 +14448,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget og Kommunalbestyrelsen til drøftelse og\ngodkendelse.\nDirektionen foreslår, at den fælles vision for skolerne drøftes og godkendes.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Børne- og Skoleudvalget 2026-2029, den 11. november 2026,\npunkt 2:\nBØRNE- OG SKOLEUDVALGET indstiller Direktionens forslag tiltrådt"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Børne- og Skoleudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14428,10 +14461,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Opfølgning på Whistleblowerordning",
    "afsnit": [
     {
@@ -14445,6 +14478,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Økonomiudvalget og Kommunalbestyrelsen til beslutning.\nDirektionen foreslår indstillet,\n1. at der udarbejdes en instruks til whistleblowerenheden,\n2. at whistleblowerordningens lovpligtige årsrapport fremadrettet forelægges\nKommunalbestyrelsen,\n3. at forvaltningen gennemfører en tilbudsindhentning på levering af kommunens\neksterne whistleblowerordning med de i sagen beskrevne tre optioner, og\n4. at resultatet af den gennemførte tilbudsindhentning og forslag til valg af leverandør af\nden eksterne whistleblowerordning forelægges Økonomiudvalget og\nKommunalbestyrelsen til godkendelse i første halvår af 2027.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\n\nØkonomiudvalget indstiller direktionens forslag tiltrådt med den bemærkning ad pkt. 1, at\ninstruksen forelægges til politisk beslutning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Økonomiudvalget indstilling inklusiv udvalgets\nbemærkning.\nØkonomiudvalget forelægges en orientering om tidligere konkrete indberetninger."
     }
    ],
    "bilag": []
@@ -14454,10 +14491,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Genopbygning efter brand 2026 - Naturstøttepunkt",
    "afsnit": [
     {
@@ -14475,6 +14512,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Økonomiudvalget og Kommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet, at der afsættes et rådighedsbeløb med tilhørende\nanlægsbevilling på 0,305 mio. kr. til genopførsel af skur efter brand på Naturstøttepunkt\nWesselsminde, finansieret af projekt 452086 pulje til uforudsete udgifter.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller direktionens forslag tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Økonomiudvalget indstilling."
     }
    ],
    "bilag": []
@@ -14484,10 +14525,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Rammeaftale 2027-2028 for det højt specialiserede socialområde og specialundervisning",
    "afsnit": [
     {
@@ -14501,6 +14542,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Social- og Beskæftigelsesudvalget, Børne- og Skoleudvalget,\nØkonomiudvalget og Kommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet, at Rammeaftalen 2027-2028 for det specialiserede\nsocialområde og specialundervisning godkendes.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Social- og Beskæftigelsesudvalget 2026-2029, den 11.\nnovember 2026, punkt 4:\nSOCIAL- OG BESKÆFTIGELSESUDVALGET indstiller Direktionens forslag tiltrådt\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Social- og Beskæftigelsesudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Social- og Beskæftigelsesudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14510,10 +14555,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Navngivning af kommunale daginstitutioner",
    "afsnit": [
     {
@@ -14527,6 +14572,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil beslutning.\nDirektionen foreslår indstillet:\n1. at kompetencen til godkendelse af navngivning og navneændringer af kommunale\ndaginstitutioner delegeres til Børne- og Skoleudvalget.\n2. at fremtidig navngivning og navneændringer af kommunale daginstitutioner følger de\nbeskrevne principper.\n3. at beslutningen indarbejdes i kommunens delegationsplan.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Børne- og Skoleudvalget 2026-2029, den 11. november 2026,\npunkt 7:\nBØRNE- OG SKOLEUDVALGET indstiller Direktionens forslag tiltrådt\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Børne- og Skoleudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Børne- og Skoleudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14536,10 +14585,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Vandforsyningsplan 2026-2036 - Endelig godkendelse",
    "afsnit": [
     {
@@ -14553,6 +14602,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil godkendelse.\nDirektionen foreslår indstillet, at Vandforsyningsplan 2026-2036 for Rudersdal Kommune\ngodkendes.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Klima- og Miljøudvalget 2026-2029, den 11. november 2026,\npunkt 4:\nKLIMA- OG MILJØUDVALGET indstiller Direktionens forslag tiltrådt.\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Klima- og Miljøudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Klima- og Miljøudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14562,10 +14615,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Novafos Investeringsaftale 2027 - Godkendelse",
    "afsnit": [
     {
@@ -14583,6 +14636,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil godkendelse.\nDirektionen foreslår indstillet, at Novafos investeringsaftale 2027 godkendes.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Klima- og Miljøudvalget 2026-2029, den 11. november 2026,\npunkt 3:\nKLIMA- OG MILJØUDVALGET indstiller Direktionens forslag tiltrådt med den bemærkning, at\nforvaltningen skal anmode Novafos om at udarbejde et notat om effekten af de kortsigtede\noptimeringsprojekter vedr. Sjælsø Renseanlæg og den konkrete effekt på overløbet UB07,\nherunder hvilke tiltag der kan iværksættes for at minimere overløbet.\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Klima- og Miljøudvalgets indstilling tiltrådt inklusiv udvalgets\nbemærkning"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Klima- og Miljøudvalgets indstilling inklusiv udvalgets\nbemærkning."
     }
    ],
    "bilag": []
@@ -14592,10 +14649,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Tilsagn om tilskud til forundersøgelse af Sjælsø - Bevilling",
    "afsnit": [
     {
@@ -14609,6 +14666,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Klima- og Miljøudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil godkendelse.\nDirektionen foreslår indstillet,\n1. at der oprettes et anlægsprojekt ”Forundersøgelse af Sjælsø”,\n2. at der afsættes et positivt rådighedsbeløb i 2027 med tilhørende anlægsbevilling på\n632.200 kr. til at gennemføre forundersøgelsen, finansieret af tilsvarende tilskud fra\nStyrelsen for Grøn Arealomlægning og Vandmiljø, og\n3. at der afsættes et negativ rådighedsbeløb i 2028 med tilhørende anlægsbevilling på\n632.200 kr. til at modtage tilskuddet fra Styrelsen for Grøn Arealomlægning og\nVandmiljø.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Klima- og Miljøudvalget 2026-2029, den 11. november 2026,\npunkt 7:\nKLIMA- OG MILJØUDVALGET indstiller Direktionens forslag tiltrådt.\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Klima- og Miljøudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Klima- og Miljøudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14618,10 +14679,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Trafikal løsning for Holtehal 3 - Anlægsbevilling",
    "afsnit": [
     {
@@ -14639,6 +14700,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Arkitektur- og Byplanudvalget, Økonomiudvalget og\nKommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet, at der fremrykkes et rådighedsbeløb på 400.000 kr. med\ntilhørende anlægsbevilling fra 2027 til 2026 fra projekt 152201, Holtehal 3 – trafikale\nløsninger, til finansiering af rådgiverydelser.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Arkitektur- og Byplanudvalget 2026-2029, den 11. november\n2026, punkt 7:\nARKITEKTUR- OG BYPLANUDVALGET indstiller Direktionens forslag tiltrådt.\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Arkitektur- og Byplanudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Arkitektur- og Byplanudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14648,10 +14713,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Køb af Krogholmgård, 2950 Vedbæk – Anlægsregnskab mm",
    "afsnit": [
     {
@@ -14665,6 +14730,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Økonomiudvalget og Kommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet,\n1. at regnskabet godkendes,\n2. at der overføres 1,225 mio. kr. fra projekt 501554 Køb af Krogholmgård til\nindtægtsbudgettet til lån i 2027,\n3. at der gives en negativ tillægsbevilling til rådighedsbeløbet på projekt 501554 Køb af\nKrogholmgård på 4,089 mio. kr., som tilgår kassen,\n4. at der gives en indtægsbevilling på 2,218 mio. kr. til modtagelse af opsparede midler\ntil renovering af Krogholmgård,\n5. at der oprettes en anlægsprojekt XA 151098 Renovering af Krogholdgård med et\nrådighedsbeløb med tilhørende anlægsbevilling på 2,218 mio. kr. i 2026 finansieret af\nden tilsvarende opsparing, som er modtaget i forlængelse af købet af Krogholmgård,\nog\n6. at vedligeholdelsesmidlerne overgår til projekt 151097 Renovering af bygninger,\nsåfremt det viser sig muligt.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller direktionens forslag tiltrådt.\nForvaltningen skal frem mod mødet i Kommunalbestyrelsen besvare, hvorvidt den overførte\nopsparing på 2,218 mio. kr. er bundet til vedligehold på Krogholmgård."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Økonomiudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14674,10 +14743,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Ekstraordinært vedligehold - Anlægsregnskaber",
    "afsnit": [
     {
@@ -14691,6 +14760,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Økonomiudvalget og Kommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet,\n1. at der gives en negativ tillægsbevilling til rådighedsbeløbet på 11.000 kr. til projekt\n451014 Ekstraordinær bygningsvedligeholdelse og vedligeholdelsesefterslæb,\n2. at der gives en positiv tillægsbevilling til rådighedsbeløbet på 0,401 mio. kr. til projekt\n151062 Kloakrenovering af kommunale ejendomme,\n3. at der gives en negativ tillægsbevilling til rådighedsbeløbet på 0,390 mio. kr. på\nprojekt 151097 Renovering af bygninger med tilsvarende reduktion af\nanlægsbevillingen, og\n4. at regnskabet for projekterne 451014 Ekstraordinær bygningsvedligeholdelse og\nvedligeholdelsesefterslæb og 151062 Kloakrenovering af kommunale ejendomme\ngodkendes.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller direktionens forslag tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Økonomkudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14700,10 +14773,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Fremtidens arbejdsplads - Anlægsregnskab",
    "afsnit": [
     {
@@ -14717,6 +14790,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Økonomiudvalget og Kommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet, at anlægsregnskab for projekt 452081 Fremtidens\narbejdsplads godkendes.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller direktionens forslag tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Økonomiudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14726,10 +14803,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 17,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Økonomiudvalget",
    "afsnit": [
     {
@@ -14743,6 +14820,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionen foreslår indstillet at,\n1. at der for politikområde Administration ydes en positiv tillægsbevilling på 1,300 mio.\nkr., som finansieres af kassen,\n2. at der for politikområde Renter ydes en negativ tillægsbevilling på samlet 0,717 mio.\nkr., som tilgår kassen,\n3. at der for politikområde Tilskud og udligning ydes en negativ tillægsbevilling på\nsamlet 44,946 mio. kr., som tilgår kassen,\n4. at der for politikområde Status (balanceforskydninger) ydes en positiv tillægsbevilling\npå samlet 8,480 mio. kr., som finansieres af kassen.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller direktionens forslag tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Økonomiudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14752,10 +14833,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 18,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Arkitektur- og Byplanudvalget",
    "afsnit": [
     {
@@ -14774,10 +14855,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 20,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Kultur- og Fritidsudvalget",
    "afsnit": [
     {
@@ -14791,6 +14872,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Kultur- og Fritidsudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil politisk godkendelse.\n\nDirektionen foreslår indstillet,\n1. at politikområde Kultur, Fritid og Idræt ydes en negativ tillægsbevilling på 0,5 mio. kr.,\nder lægges i kassen,\n2. at der oprettes et nyt anlægsprojekt, Etablering af nyt billetsystem i svømmehallerne,\nog at der afsættes et rådighedsbeløb og tilhørende anlægsbevilling på 1,0 mio. kr. til\netablering af nyt billetsystem i Rundforbi- og Birkerød svømmehal, finansieret af de til\nformålet reserverede driftsmidler på Idrætsområdet.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Kultur- og Fritidsudvalget 2026-2029, den 11. november 2026,\npunkt 4:\nKULTUR- OG FRITIDSUDVALGET indstiller Direktionens forslag tiltrådt.\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Kultur- og Fritidsudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Kultur- og Fritidsudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14800,10 +14885,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 21,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Børne- og Skoleudvalget",
    "afsnit": [
     {
@@ -14817,6 +14902,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil politisk godkendelse.\nDirektionen foreslår indstillet at, politikområde Dagtilbud ydes en positiv tillægsbevilling\npå 0,480 mio. kr., finansieret af kassen.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Børne- og Skoleudvalget 2026-2029, den 11. november 2026,\npunkt 8:\nBØRNE- OG SKOLEUDVALGET indstiller Direktionens forslag tiltrådt\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\n\nØkonomiudvalget indstiller Børene- og Skoleudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Børne- og Skoleudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14826,10 +14915,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 22,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Social- og Beskæftigelsesudvalget",
    "afsnit": [
     {
@@ -14843,6 +14932,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Social- og Beskæftigelsesudvalget, Økonomiudvalget og\nKommunalbestyrelsen til godkendelse.\nDirektion foreslår indstillet at,\n1. Politikområde Beskæftigelse ydes en positiv tillægsbevilling på 6,922 mio. kr.,\nfinansieret af kassebeholdningen\n2. Politikområde børn med særlige behov ydes en positiv tillægsbevilling på 27,298 mio.\nkr., finansieret af kassebeholdningen\n3. Politikområde Voksne med særlige behov ydes en positiv tillægsbevilling på 10,002\n\nmio. kr., finansieret af kassebeholdningen.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Social- og Beskæftigelsesudvalget 2026-2029, den 11.\nnovember 2026, punkt 8:\nSOCIAL- OG BESKÆFTIGELSESUDVALGET indstiller Direktionens forslag tiltrådt\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Social- og Beskæftigelsesudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Social- og Beskæftigelsesudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14852,10 +14945,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 23,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgetopfølgning pr. 31. august 2026 - Udvalget for Ældre, Omsorg og Sundhed",
    "afsnit": [
     {
@@ -14869,6 +14962,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Udvalget for Ældre, Omsorg og Sundhed, Økonomiudvalget og\nKommunalbestyrelsen til politisk godkendelse.\nDirektionen foreslår indstillet at politikområde Ældre ydes en negativ tillægsbevilling på\n1,476 mio. kr., der tilgår kassebeholdningen.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Udvalget for Ældre, Omsorg og Sundhed, den 11. november\n2026, punkt 5:\nUDVALGET FOR ÆLDRE, OMSORG OG SUNDHED indstiller Direktionens forslag tiltrådt.\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Udvalget for Ældre, Omsorg og Sundheds indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Udvalget for Ældre, Omsorg og Sundheds indstilling."
     }
    ],
    "bilag": []
@@ -14878,10 +14975,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 24,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Økonomiudvalget",
    "afsnit": [
     {
@@ -14895,6 +14992,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionen foreslår indstillet,\n1. at politikområde Administration ydes en negativ tillægsbevilling på 0,268 mio. kr. i\n2. at politikområde Administration ydes en positiv tillægsbevilling på 1,596 mio. kr. i\n2027 og frem,\n3. at der gives en negativ tillægsbevilling til rådighedsbeløb og anlægsbevilling på 0,500\nmio. kr. til anlægsprojekt 151558 Miljø- og klimaindsats - varmeplan, myndighed, som\noverføres til anlægsprojekt 151587 Energitjek i 2026.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller direktionens forslag tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Økonomiudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14904,10 +15005,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 25,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Børne- og Skoleudvalget",
    "afsnit": [
     {
@@ -14921,6 +15022,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Børne- og Skoleudvalget, Økonomiudvalget og Kommunalbestyrelsen\ntil politisk godkendelse.\nDirektionen foreslår indstillet,\n1. at politikområde Undervisning ydes en negativ tillægsbevilling på 1,054 mio. kr. i\n2026 og 1,973 mio. kr. i 2027 og frem,\n2. at politikområde Dagtilbud ydes en negativ tillægsbevilling på 122 t.kr. i 2026 og\nfrem.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Børne- og Skoleudvalget 2026-2029, den 11. november 2026,\npunkt 9:\nBØRNE- OG SKOLEUDVALGET indstiller Direktionens forslag tiltrådt\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Børne- og Skoleudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Børne- og Skoleudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14930,10 +15035,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 26,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Social- og Beskæftigelsesudvalget",
    "afsnit": [
     {
@@ -14947,6 +15052,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Social- og Beskæftigelsesudvalget, Økonomiudvalget og\nKommunalbestyrelsen til godkendelse.\nDirektionen foreslår indstillet,\n1. at politikområde Børn med særlige behov ydes en positiv tillægsbevilling på 0,444\nmio. kr. i 2026 og 0,498 mio. kr. i 2027 og frem,\n2. at politikområde Børn med særlige behov ydes en indtægtsbevilling på 0,795 mio. kr.\ni 2026 og 1,028 mio. kr. i 2027, samt tilsvarende en udgiftsbevilling på 0,795 mio. kr. i\n\nVedtagelse fra udvalg\n\nVedtagelse fra Social- og Beskæftigelsesudvalget 2026-2029, den 11.\n\nVedtagelse fra Social- og Beskæftigelsesudvalget 2026-2029, den 11.\nnovember 2026, punkt 9:\nSOCIAL- OG BESKÆFTIGELSESUDVALGET indstiller Direktionens forslag tiltrådt\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Social- og Bskæftigelsesudvalgets indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Social- og Beskæftigelsesudvalgets indstilling."
     }
    ],
    "bilag": []
@@ -14956,10 +15065,10 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 27,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
    "titel": "Budgettekniske rettelser efterår 2026 - Udvalget for Ældre, Omsorg og Sundhed",
    "afsnit": [
     {
@@ -14973,6 +15082,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Sagen forelægges Udvalget for Ældre, Omsorg og Sundhed, Økonomiudvalget og\nKommunalbestyrelsen til politisk godkendelse.\nDirektionen foreslår indstillet,\n1. at politikområde Sundhed ydes en positiv tillægsbevilling på 0,560 mio. kr. i 2026,\nfinansieret af kassen,\n2. at politikområde Ældre ydes en positiv tillægsbevilling på 0,440 mio. kr. i 2026,\nfinansieret af kassen.\n\nVedtagelse fra udvalg\n\nVedtagelse fra Udvalget for Ældre, Omsorg og Sundhed, den 11. november\n2026, punkt 6:\n\nUDVALGET FOR ÆLDRE, OMSORG OG SUNDHED indstiller Direktionens forslag tiltrådt.\n\nVedtagelse fra Økonomiudvalget 2026-2029, den 18. november 2026, punkt\nØkonomiudvalget indstiller Udvalget for Ældre, Omsorg og Sundheds indstilling tiltrådt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Kommunalbestyrelsen tiltræder Udvalget for Ældre, Omsorg og Sundheds indstilling."
     }
    ],
    "bilag": []
@@ -14982,10 +15095,197 @@
    "kommune": "Rudersdal",
    "udvalg": "Kommunalbestyrelsen",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 32,
-   "kilde": "https://dagsordener.rudersdal.dk/vis?id=2b32b5eb-324c-4edd-a15b-cd5e65d46d97",
-   "hentet": "2026-11-23T14:59:53.037Z",
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=6a661859-13be-452e-a10b-8b4ab344fe28",
+   "hentet": "2026-11-26T14:14:11.045Z",
+   "titel": "Beslutningsprotokol og underskriftsark",
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutningsprotokol blev godkendt."
+    }
+   ],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-1": {
+   "id": "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-1",
+   "kommune": "Rudersdal",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a60246d0-495e-4f5e-98b8-1101701fdbb0",
+   "hentet": "2026-11-26T14:13:35.603Z",
+   "titel": "Godkendelse af dagsordenen",
+   "afsnit": [],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-2": {
+   "id": "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-2",
+   "kommune": "Rudersdal",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a60246d0-495e-4f5e-98b8-1101701fdbb0",
+   "hentet": "2026-11-26T14:13:35.603Z",
+   "titel": "Besøg på Teglporten",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Som led i introduktionen af Udvalget for Ældre, Omsorg og Sundhed til tilbud inden for\nudvalgets område afholdes udvalgsmødet på Teglporten i Birkerød. Besøget skal\nunderstøtte udvalgets indsigt i de kommunale tilbud og deres betydning for borgerne.\nTeglporten rummer en række kommunale tilbud inden for blandt andet sundhed,\ngenoptræning, forebyggelse, aktivitet og sociale indsatser. Inden for udvalgets\npolitikområder huser Teglporten Aktivitetscenter Teglporten, Genoptræningscenter\nTeglporten og Rudersdal Rusmiddelcenter.\nUdvalgsmødet afholdes i Aktivitetscenter Teglportens lokaler, hvor centerleder Oscar\nBloch og den daglige leder af Café Snik Snak, Hanne Fritsböger Rau, først vil fortælle om\naktivitetscentret og den nyetablerede café. Herefter vil der være en rundvisning i\nGenoptræningscenteret og Rusmiddelcenteret ved enhedernes ledere dvs. indenfor de\ndele af Teglporten, der rummer tilbud inden for udvalgets politikområder.\nSagen forelægges Udvalget for Ældre, Omsorg og Sundhed til orientering som led i\nintroduktion til Rudersdal Kommunes tilbud inden for udvalgets område."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Teglporten i Birkerød huser flere kommunale enheder med forskellige målgrupper og opgaver.\nI umiddelbar tilknytning til Teglporten 11 ligger desuden en række ældre- og handicapvenlige\nboliger.\nAktivitetscenter Teglporten\nAktivitetscenter Teglporten tilbyder rammer for aktiviteter, motion og socialt samvær for\npensionister og efterlønsmodtagere. Centret understøtter fællesskaber og muligheder for, at\nbrugerne kan deltage aktivt i centrets aktiviteter.\nDer er etableret et brugerråd, som samarbejder med centerledelsen om forhold vedrørende\naktivitetscentret. Brugerrådet består af valgte brugerrepræsentanter og har blandt andet ansvar\nfor at afholde husmøder i samarbejde med centerledelsen. Brugerrådet bidrager dermed til\ndialogen mellem brugerne og centrets ledelse.\nDen 1. september 2026 blev Café Snik Snak indviet som et nyt brugerdrevet projekt på\naktivitetscentret. Caféen er etableret som et toårigt projekt med en årlig bevilling på 500.000 kr.\nsom led i budgetaftalen for 2025-2027. Caféen skal bidrage til at styrke fællesskaber og sociale\naktiviteter og danner blandt andet ramme om foredrag, filmklub, samtalecafé og banko.\nGenoptræningscenter Teglporten\n\nGenoptræningscenter Teglporten varetager ambulante genoptrænings- og\nforebyggelsesopgaver for borgere med behov for trænings- og forebyggelsesindsatser efter\nblandt andet sygdom eller funktionstab. Tilbuddene omfatter blandt andet genoptræning efter\nortopædkirurgiske indgreb og skader, forebyggende rehabiliteringsforløb for borgere med KOL,\ndiabetes og kræft samt genoptræning til ældre borgere med nedsat fysisk funktionsevne. Der\narbejdes desuden med digitalt understøttet træning, som kan supplere borgernes træning på\ncentret og understøtte hjemmetræning.\nRudersdal Rusmiddelcenter\nRudersdal Rusmiddelcenter tilbyder rådgivning, behandling og støtte til borgere med alkohol-,\nstof- og nikotinrelaterede problemer. Tilbuddene omfatter både voksne, unge og pårørende og\ntilrettelægges med udgangspunkt i den enkelte borgers behov og livssituation. Centret tilbyder\ngratis og fortrolig rådgivning og behandling, og borgere kan henvende sig anonymt for at få en\nuforpligtende samtale. Formålet er at støtte borgerne i at reducere eller ophøre med deres\nrusmiddelbrug og styrke deres muligheder for at mestre hverdagen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Sagen forelægges Udvalget for Ældre, Omsorg og Sundhed til orientering som led i\nintroduktion til Rudersdal Kommunes tilbud inden for udvalgets område.\nDirektionen foreslår, at sagen forelægges Udvalget for Ældre, Omsorg og Sundhed til\norientering."
+    }
+   ],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-3": {
+   "id": "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-3",
+   "kommune": "Rudersdal",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a60246d0-495e-4f5e-98b8-1101701fdbb0",
+   "hentet": "2026-11-26T14:13:35.603Z",
+   "titel": "Årlig revision af kvalitetsstandarder og serviceinformation inden for Sundhed og Forebyggelse",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kvalitetsstandarder for personlig pleje, praktisk hjælp, rehabilitering samt\nvedligeholdende træning og genoptræning skal efter serviceloven en gang årligt op til\npolitisk revision. I ældreloven er kravet om kvalitetsstandarder bortfaldet. Der er dog\nfortsat krav om at sikre en generel borgerrettet serviceinformation.\nForvaltningen fremlægger med denne sag kvalitetsstandarder for servicelov sammen\nmed en supplerende serviceinformation om helhedspleje, der særskilt dækker\nældrelovens målgruppe. De foreslåede ændringer i de fremlagte kvalitetsstandarder\nberører ikke serviceniveauet, men er udelukkende administrative justeringer.\nKvalitetstandarderne som her fremlægges, er en del af et større samlet katalog af alle\nstandarder og informationsmateriale for Socialområdet og Sundhed og Forebyggelse.\nForvaltningen har planlagt at arbejde videre med det samlede katalog i 2027 med det\nformål at forenkle den borgerrettede kommunikation om kommunal service alene indenfor\nSundhed og Forebyggelses område.\nSagen forelægges Udvalget for Ældre, Omsorg og Sundhed til godkendelse."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Social- og Sundhedsudvalget godkendte senest i december 2025 kvalitetsstandarder.\nI denne sag fremlægges de kvalitetsstandarder for servicelovens §§ 83, 83a og 86, der\nobligatorisk skal revideres årligt politisk. Det vil sige kvalitetstandarder for personlig pleje,\npraktisk hjælp og træning. Ifølge serviceloven skal kvalitetsstandarder indeholde information\nom den hjælp borgerne kan forvente. Kvalitetsstandarder skal give en præcis beskrivelse af\nindhold, omfang og udførelse af hjælpen og det serviceniveau, der er besluttet kommunalt. For\nældreloven er kravet om obligatoriske kvalitetsstandarder bortfaldet. Kommunalbestyrelsen\nskal dog fortsat sikre en generel borgerrettet serviceinformation. Ældreloven beskriver, at\nserviceinformationen skal forstås som generel information om helhedsplejeforløbene; hvordan\nhjælpen organiseres og udføres via faste teams, og på hvilken måde borgerens\nselvbestemmelse i forhold til den daglige hjælp udmøntes. Således vil en mere generel\nserviceinformation understøtte ældrelovens bærende værdier om borgerens selvbestemmelse,\nog tilliden til medarbejderne og den borgernære ledelse. Dette betyder i praksis en ændring fra\nmeget detaljerede visitationsafgørelser til mere rummelige helhedsplejeforløb, hvor\nmedarbejdere og ledere har et langt større fagligt råderum i hverdagen.\nServiceinformation om helhedsplejeforløbene skal være tilgængelig for borgerne, og skal\ntydeliggøre ældrelovens intentioner om helhedspleje.\n\nForvaltningen foreslår, at beskrivelsen af rammerne for personlig pleje og praktisk hjælp er\ngældende på tværs af servicelov og ældrelov, da det kommunale serviceniveau som\nudgangspunkt ikke er ændret som følge af ældreloven. De aktuelle kvalitetsstandarder er\ndesuden i tidligere versioner gennemskrevet med henblik på en mere enkel information frem\nmod en ældrelov.\nFor såvel kvalitetsstandarder som serviceinformation gælder fortsat en uændret retstilstand,\nhvor det kommunale serviceniveau er vejledende. Den enkelte borgers hjælp vil som altid være\nbaseret på en konkret og individuel vurdering.\nJusteringerne er administrative rettelser som følge af\nÆldrereformens lovgivning: Bortfald af den kommunale tilsynsopgave, som nu er\novergået til Ældretilsyn Øst. Ældrelovens beskrivelser af helhedspleje, hvor træning\nindgår.\nSundhedslovens lovgivning: Overdragelse af de midlertidige døgn- og\nrehabiliteringspladser til regionen og afledte ændring for de kommunale\naflastningspladser.\n\nDe foreslåede rettelser er følgende:\nPersonlig pleje: Tilføjet henvisning til serviceinformation for helhedspleje.\nPraktisk hjælp: Tilføjet henvisning til serviceinformation for helhedspleje. Slettet\nbeskrivelse af tilsyn. Opdateret information om tøjvask overgår til ekstern leverandør.\nTydeliggørelse af anvendelse af robotstøvsuger og egenbetaling for indkøb.\nRehabilitering: Tilføjet henvisning til serviceinformation for helhedspleje. Slettet\nbeskrivelse af tilsyn.\nGenoptræning og vedligeholdende træning: Tilføjet serviceinformation om helhedspleje.\nTræningstilbud er gennemskrevet samlet på tværs af lovgivninger med henblik på en\ntydeligere borger information om indhold, frem for paragraffer.\nHelhedspleje: En serviceinformation om Rudersdal Kommunes helhedspleje og hvordan\nvi arbejder sammen.\nPlejeboliger: Tilføjelse med ældrelovgivningens § 9. Præcisering af at garantiventelisten\nikke omfatter ansøgning til demensvenlig bolig.\nAflastning og afløsning: Aflastningstilbud for Social myndighed fjernes.\nKonsekvensrettelse som følge af Hegnsgårdens overgang til regionale Sundheds- og\nOmsorgspladser bortfalder, og opdatering af aflastningsophold tilbydes på Birkerød Park\nog Æblehaven.\n\nKvalitetsstandarder med de foreslåede justeringer fremgår af bilagene.\n\nDet samlede katalog, som er tilgængeligt på hjemmesiden, indeholder samtlige\nkvalitetsstandarder og information om serviceniveau på tværs af Socialområdet og Sundhed og\nforebyggelse. Det nuværende katalog på 215 sider vurderes at være for svært tilgængeligt for\nborger/ pårørende i sin nuværende form. Forvaltningsområderne ønsker derfor at arbejde\nvidere med en modernisering, som er mere brugervenlig og inden for eget forvaltningsområde\nfor at gøre det mere overskueligt.\nSundhed og forebyggelse vil i 2027 arbejde på en digital understøttelse, der kan give borgerne\nen nemmere søgefunktion og samtidigt have en enkel printvenlig version af relevant\nserviceinformation, der kan udleveres til borgere, som ikke er i stand til at betjene sig digitalt på\nhjemmesiden.\nFremtidige kvalitetsstandarder og serviceinformation bør desuden understøtte ældrelovens\nintentioner om en mindre regelbundet servicebeskrivelse, med plads til selvbestemmelse, et\nfagligt råderum til medarbejdere og borgernær ledelse og med dialog med borger om de\nindividuelle behov og ønsker."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Sagen forelægges Udvalget for Ældre, Omsorg og Sundhed til godkendelse.\nDirektionen foreslår, at kvalitetsstandarderne med de foreslåede justeringer godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-4": {
+   "id": "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-4",
+   "kommune": "Rudersdal",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a60246d0-495e-4f5e-98b8-1101701fdbb0",
+   "hentet": "2026-11-26T14:13:35.603Z",
+   "titel": "Møde med Rudersdal Seniorråd",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Udvalget for Ældre, Omsorg og Sundhed mødes halvårligt med Rudersdal Seniorråd for\nat drøfte emner af fælles interesse. Seniorrådet deltager derfor på denne del af mødet i\nUdvalget for Ældre, Omsorg og Sundhed.\nUdvalget for Ældre, Omsorg og Sundhed og Seniorrådet vil på mødet drøfte\nfokusområder for den kommende demensstrategi. Drøftelsen sammen med Seniorrådet\nvil indgå som en del af det særskilte punkt \"Udvikling af demensstrategi\" på mødet i\nUdvalget for Ældre, Omsorg og Sundhed.\nPlejehjemschef Signe Haldgran (Plejehjem Frydenholm) deltager i punktet.\nSagen forelægges Udvalget for Ældre, Omsorg og Sundhed til orientering med henblik på\ndrøftelse med Seniorrådet som led i udvikling af demensstrategien."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Dagsorden for den del af udvalgsmødet, hvor Seniorrådet deltager:\n\n1. Velkommen v/ udvalgsformand Anette Maj Billesbølle\n2. Orientering og drøftelse af fokusområder for demensstrategien (del af særskilt punkt på\ndagsordenen for Udvalget for Ældre, Omsorg og Sundhed)\n3. Drøftelse af inddragelse af Seniorrådet generelt, herunder eventuelt særlige fokuspunkter\nfor fremtiden.\n4. Afrunding af mødet v/ udvalgsformand Anette Maj Billesbølle"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Sagen forelægges Udvalget for Ældre, Omsorg og Sundhed til orientering med henblik på\ndrøftelse med Seniorrådet som led i udvikling af demensstrategien.\nDirektionen foreslår, at sagen forelægges til orientering."
+    }
+   ],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-5": {
+   "id": "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-5",
+   "kommune": "Rudersdal",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a60246d0-495e-4f5e-98b8-1101701fdbb0",
+   "hentet": "2026-11-26T14:13:35.603Z",
+   "titel": "Udvikling af ny demensstrategi",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Sagen orienterer om status på arbejdet med en ny demensstrategi og præsenterer fem\nfokusområder for den fremtidige udvikling af demensindsatsen i Rudersdal til udvalgets\ngodkendelse.\nI budgetaftalen 2027-2030 er der afsat 1,5 mio. kr. i 2027 og 2 mio. kr. varigt til en\ndemenspakke, som fx kan omfatte flere demenskoordinatorer, daghjemspladser og\nsamarbejdsaftaler med civilsamfundet.\nDer er udarbejdet indsatskatalog, og forvaltningen foreslår, at det prioriteres, at der sker\netablering af et demensfællesskab i partnerskab med Alzheimerforeningen som led i\nmulig udmøntning af den nye demenspakke i budgetaftalen 2027-2030. Desuden foreslås\ndet, at udvalget drøfter, hvilke udviklingsspor fra det tilhørende indsatskatalog, der\nherudover ønskes prioriteret.\nPlejehjemschef Signe Haldgran (Plejehjem Frydenholm), sundhedsfaglig\nkvalitetskonsulent Mie Agerbo Kongsbøg og chefkonsulent Ina Skafte deltager i punktet.\nSagen forelægges Udvalget for Ældre, Omsorg og Sundhed til godkendelse og drøftelse."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget for Ældre, Omsorg og Sundhed blev på møde den 19. august 2026 præsenteret for\nresultaterne af en kvalitativ undersøgelse blandt personer med demens og deres pårørende.\nUndersøgelsen viser generel tilfredshed med demensindsatsen i Rudersdal, men peger\nsamtidig på behov for styrket pårørendestøtte, flere tilbud som giver livskvalitet og aflastning\nsamt fortsat udvikling af de demensfaglige kompetencer.\nI september 2026 har forvaltningen afholdt workshop med 45 medarbejdere og ledere fra bl.a.\nplejehjem, dagcentre, aktivitetscentre, hjemmepleje og demenskoordinatorer. Der er ligeledes\nafholdt en workshop med civilsamfundsaktører med deltagelse af bl.a. idrætsforeninger,\nalmene boligselskaber, Frivilligcentret, Seniorrådet og Ældresagen.\nForvaltningen har samlet alle de indhentede perspektiver og forslag til indsatser og\nsammenstillet med nationale anbefalinger og vidensgrundlag på demensområdet. På den\nbaggrund foreslås fem fokusområder for demensstrategien, som uddybes i bilaget\n’Fokusområder’.\nMed demensstrategien vil vi:\n\n1. Sikre tidlige tilbud og muligheder for et aktivt liv\n\n2. Skabe sammenhængende forløb\n3. Styrke støtten til og samarbejdet med pårørende\n4. Styrke demensfagligheden hos medarbejderne\n5. Skabe et demensvenligt lokalsamfund med stærke fællesskaber\n\nI workshops og interviews er foreslået en lang række indsatser og tiltag, som er samlet og\ntematiseret i bilaget ’Indsatskatalog’. Kataloget omsætter strategiens fokusområder til en række\nkonkrete udviklingsspor og indsatser. Der er et gennemgående fokus på at sikre relevante\ntilbud og styrke støtten til pårørende med henblik på at lette belastningen i hverdagen og\nunderstøtte trivsel gennem hele sygdomsforløbet.\nIndsatserne varierer i omfang og ressourcebehov. En række tiltag vil kunne iværksættes eller\nvidereudvikles inden for de eksisterende rammer, mens andre vil kræve prioritering af\nyderligere ressourcer. Demensstrategien skal samtidig fungere som et fælles pejlemærke for\nden løbende prioritering af indsatser og ressourcer på tværs af området, så aktiviteter og tiltag\nunderstøtter strategiens mål.\nForvaltningen foreslår, at etableringen af et demensfællesskab i partnerskab med\nAlzheimerforeningen bliver et udviklingsspor, fordi indsatsen understøtter flere af\ndemensstrategiens fokusområder samtidig og dermed bidrager til at realisere en række af\nstrategiens centrale ambitioner gennem én samlet indsats. Et demensfællesskab er et åbent\ntilbud til mennesker med demens og deres pårørende, hvor de kan få støtte og rådgivning samt\ndeltage i aktiviteter og fællesskaber i trygge rammer. Tilbuddet etableres i et samarbejde\nmellem kommunen, civilsamfundet og Alzheimerforeningen.\nEt demensfællesskab bidrager til strategiens ambition om tidligere og mere sammenhængende\nstøtte ved at tilbyde hjælp og fællesskab allerede tidligt i sygdomsforløbet, før behovet for mere\nomfattende kommunale indsatser opstår. Samtidig styrkes pårørendestøtten, og der skabes en\ntydeligere bro mellem kommunens tilbud og civilsamfundets fællesskaber. Erfaringerne peger\ndesuden på, at den uvisiterede tilgang gør det lettere for borgere at søge støtte og fastholde\ntilknytningen til et fællesskab gennem demensforløbet.\nForvaltningen har været i dialog med Alzheimerforeningen om mulighederne for at etablere et\nlokalt partnerskab og vurderer på den baggrund, at der er et godt grundlag for at arbejde videre\nmed modellen. Partnerskabet vil indebære, at Rudersdal Kommune finansierer en\ndemensfaglig fællesskabskoordinator, som får ansvar for at udvikle og drive\ndemensfællesskabet lokalt. Koordinatoren skal sikre professionel organisering og\nunderstøttelse af frivilligindsatserne, skabe sammenhæng til kommunens øvrige\ndemensindsatser og bidrage til den demensfaglige forløbskoordinering omkring de borgere og\npårørende, der benytter tilbuddet. Herudover stiller kommunen lokaler og driftsmidler til\nrådighed for aktiviteterne i demensfællesskabet. Indsatsen vurderes at kunne etableres inden\nfor rammerne af de i budgetforliget afsatte midler til den nye demenspakke og dermed udgøre\nen tidlig udmøntning af strategien. Forslaget er uddybet i bilaget ’Demensfællesskab i\npartnerskab med Alzheimerforeningen'.\n\nDa det ikke vil være muligt at igangsætte alle indsatser i indsatskataloget samtidig, lægges der\nop til en politisk drøftelse af, hvilke udviklingsspor der udover samarbejdet med\nAlzheimerforeningen ønskes prioriteret. Drøftelsen kan samtidig danne grundlag for den videre\nprioritering af ressourcer og udviklingsindsatser på demensområdet i de kommende år.\nI budgetaftalen 2027-2030 er der afsat 1,5 mio. kr. i 2027 og 2 mio. kr. varigt til en\ndemenspakke, som fx kan omfatte flere demenskoordinatorer, daghjemspladser og\nsamarbejdsaftaler med civilsamfundet. Udover de midler, som er afsat i budgetforlig for 20272030 for Rudersdal Kommune, forventes der udmøntet midler fra Sundhedsråd Københavns\nOmegn Nord til demensområdet i Rudersdal. Derudover forventes der også nationale midler,\nsom der forhandles om i forbindelse med Finanslovsforhandlingnerne. Udvalget vil blive\norienteret om den konkrete økonomiske betydning for Rudersdal, når forhandlingerne i\nSundhedsråd og nationalt er tilendebragt.\nDen videre proces\nForvaltningen vender tilbage med udkast til selve demensstrategien i februar 2027 med henblik\npå godkendelse. Forvaltningen foreslår, at der planlægges et lanceringsarrangement med fx et\nforedrag om demens."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Sagen forelægges Udvalget for Ældre, Omsorg og Sundhed til godkendelse og drøftelse\nDirektionen foreslår, at Udvalget for Ældre, Omsorg og Sundhed:\n1. godkender de beskrevne fokusområder for demensstrategien,\n2. godkender at der i samarbejde med Alzheimerforeningen etableres et\ndemensfællesskab for de midler, der er afsat i budgetforhandlingerne, og\n3. drøfter prioritering af de øvrige udviklingsspor i indsatskataloget"
+    }
+   ],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-6": {
+   "id": "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-6",
+   "kommune": "Rudersdal",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a60246d0-495e-4f5e-98b8-1101701fdbb0",
+   "hentet": "2026-11-26T14:13:35.603Z",
+   "titel": "Status for sundhedspolitikken - Godkendelse af videreførelse af indsatser 2027",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsen godkendte i juni 2025 Rudersdal Kommunes sundhedspolitik med\ntre strategiske fokusområder: mere aktiv hverdag, bedre mental sundhed og trivsel samt\nmindre nikotin, alkohol og stoffer.\nSom led i udmøntningen af politikken er en række initiativer igangsat, som er med til at\nomsætte sundhedspolitikkens ambitioner til konkrete indsatser. Der er blandt andet\netableret nye tilbud og styrkede samarbejder på tværs af kommunale og frivillige aktører.\nMed udsigt til en ny folkesundhedslov i 2027 foreslår forvaltningen, at de nuværende\nindsatser videreføres i 2027. Når lovens indhold og betydning for kommunerne er kendt,\nvil forvaltningen forelægge forslag til den videre udvikling og prioritering af indsatserne\nunder sundhedspolitikken.\nSagen forelægges Udvalget for Ældre, Omsorg og Sundhed til godkendelse."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunalbestyrelsen godkendte den 25. juni 2025 sundhedspolitikken for Rudersdal\nKommune, vedlagt som bilag. Sundhedspolitikken skal ses i sammenhæng med den vedtagne\nidrætspolitik og ungestrategi, idet der er tydelige snitflader og synergier hermed. Udvalget for\nÆldre, Omsorg og Sundhed blev orienteret om status for idrætspolitikken på møde den 19.\naugust 2026.\nSundhedspolitikken har tre strategiske fokusområder, som er udvalgt på baggrund af data fra\nSundhedsprofilen for Rudersdal. Fokusområderne afspejler de største sundhedsudfordringer\nog områder med størst potentiale for at styrke borgernes sundhed og trivsel. Fokusområderne\ner:\n\nMere aktiv hverdag\nBedre mental sundhed og trivsel\nMindre nikotin, alkohol og stoffer\n\nStatus for indsatser\nSom led i udmøntningen af politikken er der udarbejdet et indsatskatalog med 2-5 indsatser for\nhvert fokusområde. Der følges op på indsatskataloget en gang årligt. I bilaget ’Status for\nindsatser under sundhedspolitikken’ opgøres status for 2025-2026.\nHovedparten af indsatskatalogets indsatser er igangsat og viser positive resultater. Særligt\n\narbejdet med fysisk aktivitet og fællesskaber har bred opbakning, blandt andet gennem\nbrobygningsindsatsen fra genoptræningsforløb til foreningsbaserede fritidstilbud, der fra 2027\nvidereføres i det tværkommunale projekt Trygt i gang. Der er ligeledes igangsat en række\ninitiativer for at styrke deltagelsen i fritids- og foreningsfællesskaber for borgere med særlige\nbehov. Initiativerne er et fælles prioriteret indsatsområde i både Sundhedspolitikken og\nIdrætspolitikken.\nPå området for mental sundhed og trivsel er der etableret flere evidensbaserede tilbud til både\nbørn, unge og voksne. Evalueringer af stresshåndteringsforløb for unge viser markante positive\neffekter på trivsel og stressniveau, og de lettilgængelige behandlingstilbud til børn og unge\nunderstøtter en tidlig indsats med korte ventetider. Desuden bidrager indsatser som\nfællesspisninger og frivilligbaserede samtalegrupper til at styrke fællesskaber og forebygge\nensomhed.\nInden for forebyggelse af nikotin, alkohol og stoffer er der særligt fokus på udvikling af\nnikotinstoptilbud til unge gennem et tværkommunalt projekt, som kombinerer stopforløb,\nforældreindsatser og kompetenceudvikling af fagpersoner. Erfaringerne viser, at det kan være\nvanskeligt at motivere de unge til nikotinstop, og der arbejdes målrettet med\nrekrutteringsindsatser. En anden indsats på området omhandler skolernes politikker og\nretningslinjer, som skal være med til at sætte rammer for, hvordan man håndterer nikotin,\nalkohol og andre rusmidler. Enkelte skoler har retningslinjer, og forvaltningen vil i det\nkommende år i fællesskab se nærmere på mulighederne og behovet for en fælles tilgang på\ntværs af skolerne.\nSamlet set vurderer forvaltningen, at indsatserne i høj grad bidrager til udmøntningen af\npolitikkens strategiske fokusområder. Der er skabt et godt fundament for det videre arbejde, og\nflere indsatser er blevet forankret i eksisterende tilbud og samarbejder. Samtidig viser status, at\nder fortsat er behov for at videreudvikle indsatserne på enkelte områder, så de imødekommer\nbehovene og understøtter sundhedspolitikkens ambitioner.\nNy folkesundhedslov\nRegeringen forventes at fremsætte en ny folkesundhedslov med ikrafttræden den 1. juli 2027.\nLoven skal sætte en ny national ramme for arbejdet med forebyggelse og folkesundhed,\nherunder kommunernes rolle og prioriteringer på området.\nFolkesundhedsloven forventes at forpligte kommunerne til på tværs af velfærdsområder at\narbejde med strukturel forebyggelse, der skaber rammer for sundere valg og bedre trivsel.\nFlere af de temaer, der fremhæves vedr. folkesundhedsloven i aftalen om sundhedsreformen\npeger i samme retning som fokusområderne for Rudersdals sundhedspolitik. Det handler bl.a.\nom fysisk aktivitet, mental trivsel, forebyggelse af nikotin- og alkoholforbrug på\nungdomsuddannelser, stærke fællesskaber og reduktion af social ulighed i sundhed.\nLoven forventes at indeholde nationale mål og rammer for arbejdet med folkesundhed, som vil\nfå betydning for kommunernes tilrettelæggelse og prioritering af indsatser. Samtidig forventes\nloven også at give kommunerne frihed til at fastlægge lokale mål og indsatser i samarbejde\nmed civilsamfund og øvrige lokale aktører.\n\nIndsatserne bør samtidig udvikles i sammenhæng med den kommende nationale\nsundhedsplan og planerne for det nære sundhedsvæsen som led i sundhedsreformen. Begge\nforventes at sætte en tydelig retning for samarbejdet mellem kommuner, almen praksis og\nsygehusvæsenet samt for prioriteringen af forebyggelse, kronikerindsatser og behandling\ntættere på borgerne.\nPå den baggrund vurderer forvaltningen, at det er mest hensigtsmæssigt at konsolidere og\nvidereføre de nuværende indsatser under sundhedspolitikken i første halvår 2027 frem for at\nigangsætte nye initiativer på nuværende tidspunkt. Herved sikres et bedre grundlag for\nefterfølgende at prioritere og tilpasse indsatsen i overensstemmelse med de nationale rammer\nog ambitioner, som kommer med folkesundhedsloven og nærsundhedsplanerne.\nFokus i første halvår 2027 vil derfor være at fortsætte implementeringen af de igangværende\nindsatser og følge op på resultater og erfaringer. Når den nye folkesundhedslovs indhold og\nbetydning for kommunerne er kendt, forelægger forvaltningen forslag til den videre udvikling af\nindsatserne under sundhedspolitikken."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Sagen forelægges Udvalget for Ældre, Omsorg og Sundhed til godkendelse.\nDirektionen foreslår, at Udvalget for Ældre, Omsorg og Sundhed godkender, at de\nnuværende indsatser videreføres i 2027, indtil den nye folkesundhedslov foreligger."
+    }
+   ],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-8": {
+   "id": "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-8",
+   "kommune": "Rudersdal",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a60246d0-495e-4f5e-98b8-1101701fdbb0",
+   "hentet": "2026-11-26T14:13:35.603Z",
+   "titel": "Meddelelser",
+   "afsnit": [],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-9": {
+   "id": "rudersdal-2026-12-02-udvalget-for-aeldre-omsorg-og-sundhed-9",
+   "kommune": "Rudersdal",
+   "udvalg": "Udvalget for Ældre, Omsorg og Sundhed",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=a60246d0-495e-4f5e-98b8-1101701fdbb0",
+   "hentet": "2026-11-26T14:13:35.603Z",
+   "titel": "Beslutningsprotokol og underskriftsark",
+   "afsnit": [],
+   "bilag": []
+  },
+  "rudersdal-2026-12-02-rudersdal-erhvervsraad-2": {
+   "id": "rudersdal-2026-12-02-rudersdal-erhvervsraad-2",
+   "kommune": "Rudersdal",
+   "udvalg": "Rudersdal Erhvervsråd",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.rudersdal.dk/vis?id=f9b69699-908a-4491-8c5d-e136430a0bd5",
+   "hentet": "2026-11-26T14:13:39.705Z",
    "titel": "Beslutningsprotokol og underskriftsark",
    "afsnit": [],
    "bilag": []
@@ -14994,7 +15294,7 @@
  "sitemaps": {
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=eb45bdbc-005e-4735-b2c7-e714c93b140d": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=3f6ae58b-d90c-41f5-967f-89841a144a74": {
    "senest": "2025-09-27",
@@ -15006,15 +15306,15 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=e706faa4-0ca3-45d8-8499-930fdbe2ab47": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=a1b33993-37eb-4fbe-9bb3-ce95c3d2c377": {
    "senest": "2023-12-12",
    "tjekket": "2026-11-21"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=afd52d84-a6a8-4695-903d-03906da305dc": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=4865b97a-d396-43f4-95ee-b4a82e2301ba": {
    "senest": "2025-09-27",
@@ -15022,7 +15322,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=54e3d012-ad2a-401e-bbe2-b0909af78b11": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=16912be3-511b-46ab-bd72-f54bb433b4eb": {
    "senest": "2025-09-27",
@@ -15034,19 +15334,19 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=32801f9c-6549-457c-9daa-0bf8f7c43248": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=09b96ef9-3e41-4bfd-9ea7-b2d792e54f03": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=5fb2cc61-a1cd-4a24-809d-377704484ab7": {
    "senest": "2025-09-26",
    "tjekket": "2026-11-21"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=94086cf6-7238-4845-af0c-e08bedda764d": {
-   "senest": "2026-10-01",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=79cace9a-3d2c-4f71-850c-7cda61c1de8a": {
    "senest": "2025-09-27",
@@ -15062,7 +15362,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=ec6a6512-cc24-4008-8094-dac8f26cd858": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=54600157-bccd-4ee6-baad-7a97b8f75692": {
    "senest": "2025-09-27",
@@ -15074,11 +15374,11 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=5a7c6e2d-d1fe-47ef-bde9-64ab04b9bbc9": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=f0038e78-2f2e-4d40-a3a9-814fec2aa42d": {
-   "senest": "2026-11-23",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=21190702-622f-4769-aa66-f41535b76b8c": {
    "senest": "2025-09-27",
@@ -15090,23 +15390,23 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=0a58b078-43f4-49dc-84dc-37b8f8670353": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=89910af1-7e94-4299-a793-d936104c5b20": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=a1710bf7-d96d-485b-bef5-818b9938e7b9": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=d5cde391-97eb-4445-b938-612f489e60ee": {
    "senest": "2026-10-09",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=1b26714f-148a-4fec-b3de-260482995760": {
    "senest": "2026-11-13",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=49463d9d-432a-4172-a390-f52881302cd1": {
    "senest": "2025-10-10",
@@ -15114,7 +15414,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=60d0a051-8e00-4e26-a8b8-9a29fe65b614": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=00c82d18-dfef-423a-9b27-9ff62b89d04b": {
    "senest": "2025-09-27",
@@ -15126,11 +15426,11 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=198a0130-dbbf-4856-84dd-3f2d9391c557": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=d6903c04-3034-49df-bf9a-1326190bb646": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=63fc27f0-b636-497a-ac21-79f44978e949": {
    "senest": "2025-09-27",
@@ -15142,7 +15442,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=b1868c45-3c01-4464-8e46-c30e45e9790e": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=00e96d08-c85a-40e8-8b40-9164016587ec": {
    "senest": "2017-11-29",
@@ -15170,7 +15470,7 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=171dcada-b0f0-44b9-aecc-3c5ae9901ab4": {
    "senest": "2026-08-25",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=841618af-4f4b-4b37-8dce-33168d6d0052": {
    "senest": "2023-10-10",
@@ -15182,19 +15482,19 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=1e516c0c-ce44-43d4-a1d2-02cee10d7c04": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=6ddc6a8c-f277-427c-bc13-ab9ad0453bfd": {
    "senest": "2026-11-23",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=82d3b00e-c7d9-4991-867d-585b069e0204": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=2d760d51-e07a-431f-9b8e-04dc2602be4c": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=c922ecbf-8bd9-4439-ba29-27ff3a8b619b": {
    "senest": "2025-05-23",
@@ -15206,10 +15506,10 @@
   },
   "https://dagsordener.rudersdal.dk/Sitemap/ForCommittee?committeeId=ae76f519-b55f-4a27-b7ea-025417f33402": {
    "senest": "2026-09-16",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   }
  },
- "opdateret": "2026-11-25T23:25:48.681Z",
+ "opdateret": "2026-11-26T14:14:11.047Z",
  "kommune": "Rudersdal",
  "parser": 3
 }

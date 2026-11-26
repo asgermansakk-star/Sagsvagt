@@ -701,6 +701,22 @@
    "dato": "2026-11-30",
    "punkter": 10,
    "parser": 3
+  },
+  "b3e4a7c3-8598-4209-95a4-043caa47a91d": {
+   "lastmod": "2026-11-26",
+   "type": "referat",
+   "udvalg": "Psykiatrirådet",
+   "dato": "2026-11-19",
+   "punkter": 9,
+   "parser": 3
+  },
+  "66b8a3c9-c545-4de1-b8b0-7c5ad79446ee": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "punkter": 8,
+   "parser": 3
   }
  },
  "sager": {
@@ -21015,15 +21031,19 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Godkendelse af dagsorden",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "Center for Social og Arbejdsmarked indstiller, at\n1. Dagsorden godkendes\n\nBESLUTNINGEN TRÆFFES AF\nPsykiatrirådet"
+     "tekst": "Center for Social og Arbejdsmarked indstiller, at\n1. Dagsorden godkendes"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt\nBESLUTNINGEN TRÆFFES AF\nPsykiatrirådet"
     }
    ],
    "bilag": []
@@ -21033,12 +21053,17 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Meddelelser",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Afbud: Anne Lund Bækkegård (Afsnitsleder), Kenneth Solhof-Nielsen (KAB), Primrose Chanett Edden\nDevonne (Autismeforeningen)\n\nMeddelelser"
+    }
+   ],
    "bilag": []
   },
   "ballerup-2026-11-19-psykiatriraadet-3": {
@@ -21046,10 +21071,10 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Ekstern analyse af det specialiserede voksenområde",
    "afsnit": [
     {
@@ -21063,6 +21088,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Social og Arbejdsmarked indstiller, at\n1. Orienteringen om analysen af det specialiserede voksenområde tages til efterretning.\n2. Handicaprådet og Psykiatrirådet orienteres om analysen af det specialiserede\nvoksenområde godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning"
     }
    ],
    "bilag": [
@@ -21085,10 +21114,10 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Handleplan for Psykiatriområdet",
    "afsnit": [
     {
@@ -21098,6 +21127,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Social og Arbejdsmarked indstiller, at\n1. Psykiatrirådet drøfter mulighed for en kommende handleplan for Psykiatriområdet"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Enighed om, at arbejdet med revision af Psykiatripolitikken påbegyndes i 2027, og at der\nsamtidig påbegyndes udarbejdelse af handleplan."
     }
    ],
    "bilag": [
@@ -21120,10 +21153,10 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Tilfredshedsundersøgelse på handicapområdet",
    "afsnit": [
     {
@@ -21137,6 +21170,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Social og Arbejdsmarked indstiller, at:\n1. Orienteringen om resultaterne af tilfredshedsundersøgelsen tages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Udsættes til fællesmødet med Handicaprådet i 2027."
     }
    ],
    "bilag": [
@@ -21159,10 +21196,10 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Danmarkskort over omgjorte sager på serviceloven og barnets lov 2025",
    "afsnit": [
     {
@@ -21176,6 +21213,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Social og Arbejdsmarked samt Center for Børne- og Ungerådgivning indstiller,\nat\n1. Danmarkskort 2026 over omgørelsesprocenter i klagesager fra ankestyrelsen i 2025\ntages til efterretning."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Udsættes til et fællesmøde med Handicaprådet."
     }
    ],
    "bilag": [
@@ -21198,10 +21239,10 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Ændring i forretningsorden",
    "afsnit": [
     {
@@ -21211,6 +21252,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Social og Arbejdsmarked indstiller, at\n\n1. Psykiatrirådet godkender ændringer i forretningsordenen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt med følgende bemærking: Det skal undersøges, om kommissorium skal\nændres i samme ombæring, og at det således skal ændres i Kommunalbestyrelsen."
     }
    ],
    "bilag": [
@@ -21233,10 +21278,10 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Mødekalender 2027",
    "afsnit": [
     {
@@ -21246,6 +21291,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Center for Social og Arbejdsmarked indstiller, at\n\n1. Mødekalender 2027 godkendes"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": [
@@ -21268,12 +21317,17 @@
    "kommune": "Ballerup",
    "udvalg": "Psykiatrirådet",
    "dato": "2026-11-19",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsorden.ballerup.dk/vis?id=943818b0-129d-4c44-8d30-9fff4cdaa97c",
-   "hentet": "2026-10-30T19:30:17.245Z",
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=b3e4a7c3-8598-4209-95a4-043caa47a91d",
+   "hentet": "2026-11-26T14:12:13.112Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "1. Dagsorden og referat sendes ud pr. mail til rådets medlemmer.\n2. Evaluering af Sindets Dag: Kommunikation og annoncering af selve\narrangementet skal ud tidligere næste år. Foredraget virkede godt samt forplejning.\nPlakater og flyers skal deles bredere ud til næste år. Arbejdet med planlægning af\nSindets Dag 2027 påbegyndes allerede på april-mødet."
+    }
+   ],
    "bilag": []
   },
   "ballerup-2026-11-12-handicapraadet-1": {
@@ -29212,12 +29266,237 @@
      "url": null
     }
    ]
+  },
+  "ballerup-2026-12-03-groent-raad-1": {
+   "id": "ballerup-2026-12-03-groent-raad-1",
+   "kommune": "Ballerup",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=66b8a3c9-c545-4de1-b8b0-7c5ad79446ee",
+   "hentet": "2026-11-26T14:12:18.312Z",
+   "titel": "Meddelelser",
+   "afsnit": [],
+   "bilag": [
+    {
+     "navn": "1 bilag, heraf 1 anbefales.",
+     "url": null
+    }
+   ]
+  },
+  "ballerup-2026-12-03-groent-raad-2": {
+   "id": "ballerup-2026-12-03-groent-raad-2",
+   "kommune": "Ballerup",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=66b8a3c9-c545-4de1-b8b0-7c5ad79446ee",
+   "hentet": "2026-11-26T14:12:18.312Z",
+   "titel": "Planer og høringer på vej",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Administrationen har udarbejdet et administrationsgrundlag, der fastlægger rammer og\nretningslinjer for etablering af privat elladning af biler på offentlige veje og private fællesveje;\ndvs at føre ladekabler fra private ejendomme via en kabelskinne nedfræset i fortovet til\ndet parkerede køretøj, der holder på vejen. Grundlaget skal sikre en ensartet og transparent\nadministration af området.\nAdministrationsgrundlaget bygger på følgende hovedprincipper:\nBorgere, der ikke har mulighed for at lade deres bil på egen grund, ejerforeningens,\nandelforeningens eller almenforeningens grund mv., kan efter konkret vurdering få\ntilladelse til at etablere en kabelskinne med elkabel i fortovet til opladning af en elbil fra en\nladeboks placeret på egen grund.\nDet er ikke tilladt at føre ladekabler løst over fortove eller cykelstier eller i luftrummet over\ndisse arealer.\nLøsninger må ikke forringe trafiksikkerheden eller tilgængeligheden for gående, cyklister\nog øvrige trafikanter.\nEn tilladelse til kabelskinne giver ikke ret til at reservere parkeringspladsen på vejarealet.\nEtablering, drift, vedligeholdelse og eventuel retablering af kabelskinner påhviler\nansøgeren.\n\nForslag til administrationsgrundlag for privat elladning af biler på offentligt tilængelige veje\ngodkendes og sendes i høring.\n\nØkonomiske konsekvenser og finansiering\nIngen økonomiske konsekvenser"
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By og Miljø indstiller, at\n1. Orientering tages til efterretning"
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "0 bilag",
+     "url": null
+    },
+    {
+     "navn": "BESLUTNINGEN TRÆFFES AF",
+     "url": null
+    },
+    {
+     "navn": "Grønt Råd",
+     "url": null
+    }
+   ]
+  },
+  "ballerup-2026-12-03-groent-raad-3": {
+   "id": "ballerup-2026-12-03-groent-raad-3",
+   "kommune": "Ballerup",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=66b8a3c9-c545-4de1-b8b0-7c5ad79446ee",
+   "hentet": "2026-11-26T14:12:18.312Z",
+   "titel": "Oplæg om Trafik- og Mobilitetsplan",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Grønt Råd præsenteres for Ballerup Kommunes arbejde med en Trafik- og Mobilitetsplan.\nOplægget omhandler baggrunden for arbejdet, de centrale temaer og den forventede videre\nproces. Som en del af punktet gennemføres en kort workshop, hvor rådet får mulighed for at\ndrøfte udvalgte temaer og bidrage med perspektiver og input.\nYderligere deltagelse:\nPå Grønt Råds møde deltager trafikplanlægger Pia Widerholdt Bentsen fra Center for By og\nMiljø under behandling af sagen.\n\nØkonomiske konsekvenser og finansiering\nIngen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By og Miljø indstiller, at\n1. Oplæg tages til efterretning."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "0 bilag.",
+     "url": null
+    },
+    {
+     "navn": "BESLUTNINGEN TRÆFFES AF",
+     "url": null
+    },
+    {
+     "navn": "Grønt Råd",
+     "url": null
+    }
+   ]
+  },
+  "ballerup-2026-12-03-groent-raad-4": {
+   "id": "ballerup-2026-12-03-groent-raad-4",
+   "kommune": "Ballerup",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=66b8a3c9-c545-4de1-b8b0-7c5ad79446ee",
+   "hentet": "2026-11-26T14:12:18.312Z",
+   "titel": "Ballerup arter",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Som led i Ballerup Kommunes Naturplan er indsatsen Ballerup arter igangsat. Formålet er at\nstyrke naturformidlingen, øge borgernes kendskab til kommunens naturværdier og skabe\nstørre lokal interesse for biodiversitet og registrering af arter. Samtidig repræsenterer arterne\nforskellige naturtyper og indsatsområder, som er centrale i kommunens naturforvaltning.\nDer er foreløbigt udpeget seks Ballerup-arter:\n1. Spidssnudet frø\n2. Flagermus (spp.)\n3. Pindsvin\n4. Almindelig blåfugl\n5. Vibe\n6. Liden klokke\n\nGrønt Råd inviteres til at bidrage til den videre udvikling og lokale forankring af indsatsen. På\nmødet gives en kort orientering om Ballerup-arterne, hvorefter der gennemføres en mindre\nworkshop. Formålet er at indsamle konkrete forslag til, hvordan Ballerup arterne kan udvikles til\nen lokalt forankret indsats.\n\nØkonomiske konsekvenser og finansiering\nIndsatsen gennemføres som en del af Naturplanens handlinger."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By og Miljø indstiller, at:\n1. Grønt Råd tager orienteringen om Ballerup arterne til efterretning\n2. Grønt Råd kommer med konkrete forslag til, hvordan indsatsen kan formidles og\nforankres gennem arrangementer, borgerinddragelse og lokale samarbejder."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "0 bilag",
+     "url": null
+    },
+    {
+     "navn": "BESLUTNINGEN TRÆFFES AF",
+     "url": null
+    },
+    {
+     "navn": "Grønt Råd",
+     "url": null
+    }
+   ]
+  },
+  "ballerup-2026-12-03-groent-raad-5": {
+   "id": "ballerup-2026-12-03-groent-raad-5",
+   "kommune": "Ballerup",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=66b8a3c9-c545-4de1-b8b0-7c5ad79446ee",
+   "hentet": "2026-11-26T14:12:18.312Z",
+   "titel": "Affaldsdagen 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By og Miljø indstiller, at\n1. Grønt Råd melder tilbage med, hvem der deltager under affaldsdagen 2027.\n2. Grønt Råd melder ind til administrationen, hvis der er noget, denne skal være\nbehjælpelig med."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "0 bilag",
+     "url": null
+    },
+    {
+     "navn": "BESLUTNINGEN TRÆFFES AF",
+     "url": null
+    },
+    {
+     "navn": "Grønt Råd",
+     "url": null
+    }
+   ]
+  },
+  "ballerup-2026-12-03-groent-raad-6": {
+   "id": "ballerup-2026-12-03-groent-raad-6",
+   "kommune": "Ballerup",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=66b8a3c9-c545-4de1-b8b0-7c5ad79446ee",
+   "hentet": "2026-11-26T14:12:18.312Z",
+   "titel": "Grupper i Grønt Råd",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Grønt Råd har nedsat fem faste arbejdsgrupper og har udvalgt én tovholder i hver\narbejdsgruppe.\nArbejdsgrupperne fastsætter selv rammer for deres arbejde og indbyrdes kommunikation.\nPå hvert møde i Grønt Råd giver de enkelte arbejdsgrupper en kort status til rådets øvrige\nmedlemmer og administrationen.\n1. Naturgruppen:\nStine Rahbek Pedersen\nLars Vistrup Skov\nCarsten Frederiksen\nKarin Traun\nPreben Buur Lund\nPaul Maslen (TOVHOLDER)\nAnna-Grethe Jensen\nNiels Egede Olsen\nLinda Gulløv\n2. Trafik\nNiels Egede Olsen\nPeter Bendix (TOVHOLDER)\nGert Schønberg\nPer Mortensen\n3. Klima, Ressourcer og Affald\nNiels Egede Olsen\nStephen Frank Mortensen\nSøren Jensen (TOVHOLDER)\nGert Schønberg\nLinda Gulløv\n4. Fundraising\nPaul Maslen (TOVHOLDER)\n\nNiels Egede Olsen\nPreben Buur Lund\nOle Foss Andersen\nLars Vistrup Skov\n5. PR og Kommunikation\nLars Vistrup Skov (TOVHOLDER)\nCarsten Frederiksen\n\nØkonomiske konsekvenser og finansiering\nIngen økonomiske konsekvenser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for By og Miljø indstiller, at\n1. Orienteringerne tages til efterretning."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "0 bilag",
+     "url": null
+    },
+    {
+     "navn": "BESLUTNINGEN TRÆFFES AF",
+     "url": null
+    },
+    {
+     "navn": "Grønt Råd",
+     "url": null
+    }
+   ]
+  },
+  "ballerup-2026-12-03-groent-raad-7": {
+   "id": "ballerup-2026-12-03-groent-raad-7",
+   "kommune": "Ballerup",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=66b8a3c9-c545-4de1-b8b0-7c5ad79446ee",
+   "hentet": "2026-11-26T14:12:18.312Z",
+   "titel": "Punkter til kommende møder",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Miljøkonsekvensvurderinger: Oplæg om hvad miljøkonsekvensvurderinger er,\nkommunens myndighedsrolle og rammerne for kommunens vurderinger og regulering.\nOplæg fra Kildedal P/S.\nVand og spildevand: Orientering om vand- og spildevandsområdet og den kommende\nproces frem mod en ny ejeraftale, eventuelt med et oplæg fra Ressourcecenter Ballerup.\nDialog med Klima- og Miljøudvalget: Mulighed for et særskilt dialogmøde, så Grønt Råd\nkan møde Klima- og Miljøudvalget, og hvor Grønt Råd udarbejder en særskilt dagsorden\nmed de emner, som rådet ønsker at drøfte med udvalget.\nTORUS-modellen: Præsentation af Gentofte Kommunes TORUS-model som\nbeslutningsværktøj til at belyse sociale behov og planetære grænser. Kan være med\noplæg fra Gentofte Kommune.\nFordele ved helårsgræsning: Opfølgning på naturplejen ved Kildesvinget. Mulighed for\ngennemgang fra administrationen, eller et oplæg fra Anne-Marie C. Bürger fra Myos\nconsult.\nByrums- og arkitekturpolitik: Opfølgning på arbejdet med politikken og på Grønt Råds\ntidligere input.\nHelhedsplan for Lautrup\nKlimaplan 2028-2032: Punktet behandles i 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "ballerup-2026-12-03-groent-raad-8": {
+   "id": "ballerup-2026-12-03-groent-raad-8",
+   "kommune": "Ballerup",
+   "udvalg": "Grønt Råd",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsorden.ballerup.dk/vis?id=66b8a3c9-c545-4de1-b8b0-7c5ad79446ee",
+   "hentet": "2026-11-26T14:12:18.312Z",
+   "titel": "Eventuelt",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Placering af skraldespande og fuglekasser: Grønt Råd inviteres til at pege på konkrete steder,\nhvor der kan være behov for skraldespande, eller hvor opsætning af fuglekasser kan være\nrelevant."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=d4f7fe2c-c7d7-49a1-802e-db5aeeb9b342": {
    "senest": "2026-10-19",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=008b9c4a-3e17-4c5a-b1fd-6771ab966714": {
    "senest": "2025-09-27",
@@ -29233,27 +29512,27 @@
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=8064b4e2-df2b-44fc-8d42-5bd1d88baec5": {
    "senest": "2026-08-26",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=44d84557-1529-4e27-8145-19c7b6da6f29": {
    "senest": "2026-08-31",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=4209948e-3495-4fb5-a98b-b069aba5c04b": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=86918347-4b5c-47e3-8fb7-e00306a175b8": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=93ee741f-4874-45b4-93e2-890519330cbf": {
    "senest": "2025-12-01",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=08c26b69-3272-46ee-8f98-503b536f290f": {
-   "senest": "2026-10-30",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=945dcdf9-1386-4bc9-86d0-025c31ed47e3": {
    "senest": "2025-09-26",
@@ -29261,86 +29540,86 @@
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=c2b5555f-3fc2-4a38-bf56-2ea85526eef1": {
    "senest": "2026-10-30",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=de918ac1-7bec-48f5-ab49-cda7947e1d2c": {
-   "senest": "2026-11-11",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=69293a20-d6c9-4c52-9c35-6f47a210a193": {
    "senest": "2026-09-10",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=fc0e01f6-7546-423a-b84a-f0f5b2e14a35": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=f7e326e6-0099-40c3-9171-7b91cdc8d83e": {
    "senest": "2026-09-14",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=e6ccc39a-0eaa-4ab8-a875-878f330c89af": {
    "senest": "2025-12-17",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=d2f3392d-58d3-4735-9ccd-a1aceaa5bb2a": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=9cdeb2c7-7fdc-45aa-9a6f-2635d29c9251": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=38df67d6-bc88-48e7-af5a-f2f5ebefa3a2": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=e98c0c4f-8f9a-43b8-af24-29a5a20db153": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=dfee3191-70ed-4ba8-bf54-9b86b57a9e94": {
    "senest": "2026-11-23",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=1e1ef589-9c8c-4234-85a0-c0b26c80c45c": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=1fd8a74b-8b10-47ef-8fc7-36243030ca7b": {
    "senest": "2026-11-23",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=29cea1b9-3ee2-4305-bebe-2c89ddbde880": {
    "senest": "2025-11-26",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=6ca7c978-d323-4ec3-91f2-8bd941caf1f3": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=448e6df1-33d7-443b-aa68-cf06fa05f764": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=c815a1ad-518e-4a04-b629-670091364634": {
    "senest": "2026-11-23",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=014bc9c2-a5f8-41cc-98d5-69f89309be5d": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/ForCommittee?committeeId=6c639cbf-2355-4749-a230-5f5c2e24537f": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsorden.ballerup.dk/Sitemap/StaticPages": {
    "senest": "",
    "tjekket": "2026-11-19"
   }
  },
- "opdateret": "2026-11-25T23:26:29.141Z",
+ "opdateret": "2026-11-26T14:12:18.314Z",
  "kommune": "Ballerup",
  "parser": 3
 }

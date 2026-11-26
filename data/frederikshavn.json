@@ -583,6 +583,54 @@
    "dato": "2026-11-30",
    "punkter": 6,
    "parser": 3
+  },
+  "b801e4b7-96be-4fa4-aa85-63592dc770dc": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Distriktsrådet",
+   "dato": "2026-12-01",
+   "punkter": 5,
+   "parser": 3
+  },
+  "a0f11182-4f86-4287-bf36-7698a1b14d42": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Udvalget for Ældre, Social og Handicap",
+   "dato": "2026-12-03",
+   "punkter": 6,
+   "parser": 3
+  },
+  "5ac43b6f-0dac-437e-a47e-b2ac391042f0": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Udvalget for Sundhed, Pleje og Forebyggelse",
+   "dato": "2026-12-02",
+   "punkter": 4,
+   "parser": 3
+  },
+  "8201a9c9-358c-45de-b531-778e8f0de979": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Udvalget for Kultur, Idræt, Forening og Lokalsamfund",
+   "dato": "2026-12-01",
+   "punkter": 6,
+   "parser": 3
+  },
+  "b40f637d-c603-4301-8745-4fd0c47636ba": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Udvalget for Arbejdsmarked, Virksomheder og Uddannelse",
+   "dato": "2026-12-01",
+   "punkter": 5,
+   "parser": 3
+  },
+  "27d09d0a-4816-46ce-8880-f1e5d10b5c16": {
+   "lastmod": "2026-11-26",
+   "type": "referat",
+   "udvalg": "Frederikshavn Byråd",
+   "dato": "2026-11-25",
+   "punkter": 9,
+   "parser": 3
   }
  },
  "sager": {
@@ -14088,15 +14136,19 @@
    "kommune": "Frederikshavn",
    "udvalg": "Frederikshavn Byråd",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=89a50150-da5f-4afa-a303-4e88f97f5655",
-   "hentet": "2026-11-19T22:35:52.406Z",
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
    "titel": "Spørgetid for borgere kl. 18.45-19.00",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Kommunens borgere har mulighed for at stille skriftlige eller mundtlige spørgsmål til\nbyrådet.\nDer er indkommet spørgsmål fra Sofie Thaarup Nielsen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Beslutninger:"
     }
    ],
    "bilag": [
@@ -14111,10 +14163,10 @@
    "kommune": "Frederikshavn",
    "udvalg": "Frederikshavn Byråd",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=89a50150-da5f-4afa-a303-4e88f97f5655",
-   "hentet": "2026-11-19T22:35:52.406Z",
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
    "titel": "Beslutning om godkendelse af dagsorden",
    "afsnit": [
     {
@@ -14124,6 +14176,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionssekretariatet indstiller, at dagsordenen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nPunkt 4 blev taget af dagsordenen og udsat til næste møde efter anmodning fra ejer.\nAfbud fra Klaus Hjulmand (I). I stedet deltog Joakim Madsen (I)."
     }
    ],
    "bilag": []
@@ -14133,10 +14189,10 @@
    "kommune": "Frederikshavn",
    "udvalg": "Frederikshavn Byråd",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=89a50150-da5f-4afa-a303-4e88f97f5655",
-   "hentet": "2026-11-19T22:35:52.406Z",
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
    "titel": "Beslutning om takstændring som følge af budgetaftale 2027-2030",
    "afsnit": [
     {
@@ -14153,7 +14209,7 @@
     },
     {
      "titel": "Behandling i Udvalget for Økonomi og Strategi 18. november 2026",
-     "tekst": "Indstilling kom til afstemning:\nFor stemte 6 (Jon Andersen (V), Jens Borup (V), Mette Hardam (V), Jens Nygaard (Æ),\nPeter Sørensen (C) og Søren Visti (F))\nImod stemte 3 (Karsten Thomsen (A), Peter E. Nielsen (A) og Gitte Kiilerich (A))\n\nSocialdemokratiet mener ikke, at tilførsel af midler til børneområdet skal betyde højere\nforældrebetaling.\nIndstilling anbefales."
+     "tekst": "Indstilling kom til afstemning:\n\nFor stemte 6 (Jon Andersen (V), Jens Borup (V), Mette Hardam (V), Jens Nygaard (Æ),\nPeter Sørensen (C) og Søren Visti (F))\nImod stemte 3 (Karsten Thomsen (A), Peter E. Nielsen (A) og Gitte Kiilerich (A))\nSocialdemokratiet mener ikke, at tilførsel af midler til børneområdet skal betyde højere\nforældrebetaling.\nIndstilling anbefales.\n\nBeslutninger:\nGodkendt.\nIndstillingen kom til afstemning:\nFor stemte 21 (Jon Andersen (V), Jill Byrdal (V), Jens Borup (V), Mette Hardam (V), Jan\nBjeldbak (V), Thomas Jørgensen (V), Bodil Krogh (V), Mogens Brag (V), Helle Gaardboe\nJeppesen (V), Jens Nygaard (Æ), Bent Bøgsted (Æ), Susanne Marianne Møller (Æ),\nJohn Lamp Henriksen (C), Peter Sørensen (C), Thomas Hjort (O), Joakim Madsen (I),\nSøren Frederiksen (F), Søren Visti (F), Jane Bengtsen (F), Almina Nikontovic (F) og Tina\nKruckow (UP))\nImod stemte 8 (Anders Brandt Sørensen (A), Karsten Thomsen (A), Liv Lundholm\nPedersen (A), Gitte Kiilerich (A), Peter E. Nielsen (A), John Karlsson (A), Erik Kyed Trolle\n(A), Brian Kjær (A)).\nSocialdemokratiet kan ikke stemme for takststigningerne på området, da vi ikke kan\nbakke op om at gøre det dyrere at være børnefamilie i Frederikshavn Kommune.\nIndstillingen godkendt.\nAfbud fra Klaus Hjulmand (I). I stedet deltog Joakim Madsen (I)."
     }
    ],
    "bilag": [
@@ -14168,10 +14224,10 @@
    "kommune": "Frederikshavn",
    "udvalg": "Frederikshavn Byråd",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=89a50150-da5f-4afa-a303-4e88f97f5655",
-   "hentet": "2026-11-19T22:35:52.406Z",
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
    "titel": "Beslutning om kapitaltilførsel til Boligforeningen Vesterport afd. 1, 4 og 7",
    "afsnit": [
     {
@@ -14180,11 +14236,11 @@
     },
     {
      "titel": "Indstilling",
-     "tekst": "Økonomi og Løn indstiller, at\n\n1. der træffes en samlet beslutning om at yde kapitaltilførsel til afdeling 1, 4 og 7\nmed i alt 150.000 kr.\n2. de tre afdelinger selv afholder tab ved lejeledighed i perioden fra 1. januar 2026\ntil 31. december 2033."
+     "tekst": "Økonomi og Løn indstiller, at\n1. der træffes en samlet beslutning om at yde kapitaltilførsel til afdeling 1, 4 og 7\nmed i alt 150.000 kr.\n2. de tre afdelinger selv afholder tab ved lejeledighed i perioden fra 1. januar 2026\ntil 31. december 2033."
     },
     {
      "titel": "Behandling i Udvalget for Økonomi og Strategi 18. november 2026",
-     "tekst": "Anbefales."
+     "tekst": "Anbefales.\n\nBeslutninger:\nGodkendt.\nBrian Kjær (A) blev erklæret inhabil og forlod mødet under punktet.\nAfbud fra Klaus Hjulmand (I). I stedet deltog Joakim Madsen (I)."
     }
    ],
    "bilag": [
@@ -14211,10 +14267,10 @@
    "kommune": "Frederikshavn",
    "udvalg": "Frederikshavn Byråd",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=89a50150-da5f-4afa-a303-4e88f97f5655",
-   "hentet": "2026-11-19T22:35:52.406Z",
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
    "titel": "Beslutning om tilpasning af styrelsesvedtægt",
    "afsnit": [
     {
@@ -14223,7 +14279,7 @@
     },
     {
      "titel": "Indstilling",
-     "tekst": "Direktionssekretariatet indstiller, at\n1. styrelsesvedtægten tilpasses på baggrund af Ankestyrelsens bemærkninger\n2. Kommunaldirektøren og direktøren for de tekniske områder bemyndiges til\nsammen at kunne godkende og afslutte handler med salg af mindre arealer,\nsåfremt at arealet ikke selvstændigt kan bebygges, at salgsprisen ikke overstiger\n100.000 kr. og at køber afholder alle omkostninger forbundet med handlen.\n\nDirektionssekretariatet indstiller, at\n1. styrelsesvedtægten tilpasses på baggrund af Ankestyrelsens bemærkninger\n2. Kommunaldirektøren og direktøren for de tekniske områder bemyndiges til\nsammen at kunne godkende og afslutte handler med salg af mindre arealer,\nsåfremt at arealet ikke selvstændigt kan bebygges, at salgsprisen ikke overstiger\n100.000 kr. og at køber afholder alle omkostninger forbundet med handlen."
+     "tekst": "Direktionssekretariatet indstiller, at\n1. styrelsesvedtægten tilpasses på baggrund af Ankestyrelsens bemærkninger\n2. Kommunaldirektøren og direktøren for de tekniske områder bemyndiges til\nsammen at kunne godkende og afslutte handler med salg af mindre arealer,\n\nsåfremt at arealet ikke selvstændigt kan bebygges, at salgsprisen ikke overstiger\n100.000 kr. og at køber afholder alle omkostninger forbundet med handlen.\n\nDirektionssekretariatet indstiller, at\n1. styrelsesvedtægten tilpasses på baggrund af Ankestyrelsens bemærkninger\n2. Kommunaldirektøren og direktøren for de tekniske områder bemyndiges til\nsammen at kunne godkende og afslutte handler med salg af mindre arealer,\nsåfremt at arealet ikke selvstændigt kan bebygges, at salgsprisen ikke overstiger\n100.000 kr. og at køber afholder alle omkostninger forbundet med handlen.\n\nBeslutninger:\nGodkendt.\nAfbud fra Klaus Hjulmand (I). I stedet deltog Joakim Madsen (I)."
     },
     {
      "titel": "Behandling i Frederikshavn Byråd 28. oktober 2026",
@@ -14250,10 +14306,10 @@
    "kommune": "Frederikshavn",
    "udvalg": "Frederikshavn Byråd",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=89a50150-da5f-4afa-a303-4e88f97f5655",
-   "hentet": "2026-11-19T22:35:52.406Z",
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
    "titel": "Beslutning om ekspropriation og erstatning til gennemførelse af flådeværft",
    "afsnit": [
     {
@@ -14266,7 +14322,7 @@
     },
     {
      "titel": "Behandling i Udvalget for Økonomi og Strategi 18. november 2026",
-     "tekst": "Anbefales."
+     "tekst": "Anbefales.\n\nBeslutninger:\nGodkendt med bemærkning om, at der kan udbetales á conto, og at administrationen\nbemyndiges til at fastsætte niveauerne.\nAfbud fra Klaus Hjulmand (I). I stedet deltog Joakim Madsen (I)."
     }
    ],
    "bilag": [
@@ -14317,15 +14373,19 @@
    "kommune": "Frederikshavn",
    "udvalg": "Frederikshavn Byråd",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 13,
-   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=89a50150-da5f-4afa-a303-4e88f97f5655",
-   "hentet": "2026-11-19T22:35:52.406Z",
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
    "titel": "Spørgetid for byrådets medlemmer",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Spørgetid for byrådets medlemmer."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Beslutninger:"
     }
    ],
    "bilag": []
@@ -14335,10 +14395,10 @@
    "kommune": "Frederikshavn",
    "udvalg": "Frederikshavn Byråd",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 15,
-   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=89a50150-da5f-4afa-a303-4e88f97f5655",
-   "hentet": "2026-11-19T22:35:52.406Z",
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
    "titel": "Underskriftside",
    "afsnit": [
     {
@@ -14348,6 +14408,10 @@
     {
      "titel": "Indstilling",
      "tekst": "Direktionssekretariatet indstiller, at beslutningsprotokollen godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nAfbud fra Klaus Hjulmand (I). I stedet deltog Joakim Madsen (I)."
     }
    ],
    "bilag": []
@@ -15105,12 +15169,1302 @@
     }
    ],
    "bilag": []
+  },
+  "frederikshavn-2026-12-01-distriktsraadet-1": {
+   "id": "frederikshavn-2026-12-01-distriktsraadet-1",
+   "kommune": "Frederikshavn",
+   "udvalg": "Distriktsrådet",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b801e4b7-96be-4fa4-aa85-63592dc770dc",
+   "hentet": "2026-11-26T14:20:49.249Z",
+   "titel": "Beslutning om godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Distriktsrådet skal godkende dagsordenen for mødet.\nFormanden foreslår, at alle ansøgninger på dagsordenen gennemgås, inden\nDistriktsrådet tager stilling til fordeling af beløb."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Teknik og Miljø indstiller, at dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-01-distriktsraadet-2": {
+   "id": "frederikshavn-2026-12-01-distriktsraadet-2",
+   "kommune": "Frederikshavn",
+   "udvalg": "Distriktsrådet",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b801e4b7-96be-4fa4-aa85-63592dc770dc",
+   "hentet": "2026-11-26T14:20:49.249Z",
+   "titel": "Beslutning om godkendelse af referat",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Distriktsrådet skal godkende referatet fra seneste møde."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Teknik og Miljø indstiller, at referatet godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-01-distriktsraadet-3": {
+   "id": "frederikshavn-2026-12-01-distriktsraadet-3",
+   "kommune": "Frederikshavn",
+   "udvalg": "Distriktsrådet",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b801e4b7-96be-4fa4-aa85-63592dc770dc",
+   "hentet": "2026-11-26T14:20:49.249Z",
+   "titel": "Orientering om Distriktsrådets økonomi",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Status på Distriktsrådets økonomi er vedhæftet og fremlægges på mødet.\nDer er før mødet 754.262 kr. tilbage i ubrugte midler.\nDer er til mødet modtaget 10 ansøgninger med et samlet ansøgt beløb på 1.401.592 kr.\nDer mangler 449.434 kr. for at kunne imødekomme alle ansøgninger.\nDeadline for næste ansøgningsrunde er 19. januar 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Teknik og Miljø indstiller, at orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Distriktsrådets økonomi - december 2026 (DokumentID: 8999589 - EMN-2025-03732)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-distriktsraadet-4": {
+   "id": "frederikshavn-2026-12-01-distriktsraadet-4",
+   "kommune": "Frederikshavn",
+   "udvalg": "Distriktsrådet",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b801e4b7-96be-4fa4-aa85-63592dc770dc",
+   "hentet": "2026-11-26T14:20:49.249Z",
+   "titel": "Beslutning om godkendelse af ansøgning om tilskud til toiletter til Understed Forsamlingshus",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Understed Idræts- og Borgerforening søger om tilskud til etablering af et handicaptoilet\nog renovering af eksisterende toiletter i forsamlingshuset. Læs mere i\nprojektbeskrivelsen.\nDet samlede projektbudget er på 351.435 kr. Heraf udgør egenfinansieringen 50.000 kr.,\nmens værdien af frivilligt arbejde er opgjort til 2.500 kr. Der er desuden ansøgt om tilskud\npå i alt 125.000 kr. fra to andre puljer. Der søges om et tilskud på 173.935 kr. fra\nDistriktsrådet.\nAnsøgning, projektbeskrivelse, budget og to tilbud er vedlagt som bilag."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Ansøgning (DokumentID: 8988157 - GEO-2026-05743)",
+     "url": null
+    },
+    {
+     "navn": "2. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8984790 - GEO-2026-05743)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-distriktsraadet-5": {
+   "id": "frederikshavn-2026-12-01-distriktsraadet-5",
+   "kommune": "Frederikshavn",
+   "udvalg": "Distriktsrådet",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b801e4b7-96be-4fa4-aa85-63592dc770dc",
+   "hentet": "2026-11-26T14:20:49.249Z",
+   "titel": "Beslutning om godkendelse af ansøgning om tilskud til renovering af Munkegården i Strandby",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Pensionistforeningen Munkegården søger om tilskud til udskiftning af tag, vinduer og\ndøre samt efterisolering af bygningen. Læs mere i projektbeskrivelsen.\nForeningen har to gange tidligere modtaget tilskud. I april 2013 modtog foreningen\n75.000 kr. til udvidelse af Munkegården, og i januar 2016 7.000 kr. til isolering af taget på\nen tilbygning til Munkegården.\nDet samlede projektbudget er på 505.000 kr. Heraf udgør egenfinansieringen 100.000\nkr., mens værdien af frivilligt arbejde er opgjort til 5.000 kr. Der er desuden bevilget\n300.000 kr. fra en anden pulje. Der søges om et tilskud på 100.000 kr. fra Distriktsrådet.\nAnsøgning, projektbeskrivelse, budget, to tilbud og brugsretsaftale er vedlagt som bilag.\n\nSkærum Aktivitetshus søger om tilskud til nyt vinylgulv, akustikplader og loftsbelysning i\nsalen som led i fase 3 af husets renoverings- og moderniseringsplanen. Læs mere i\nprojektbeskrivelsen.\nForeningen modtog på mødet den 28. november 2022 et tilskud på 73.000 kr. til\nenergioptimering i form af et varmepumpeanlæg til Skærum Aktivitetshus som led i\nsamme projekt.\nDet samlede projektbudget er på 234.857 kr. Heraf udgør egenfinansieringen 20.000 kr.,\nmens værdien af frivilligt arbejde er opgjort til 15.000 kr. Der er desuden ansøgt om\n40.000 kr. fra en anden pulje. Der søges om et tilskud på 159.857 kr. fra Distriktsrådet.\nAnsøgning, projektbeskrivelse, budget, seks tilbud og fotos er vedlagt som bilag.\n\nForeningen Dybvad Forsamlingshus søger om tilskud til isolering af krybekælderen under\nfestsalen. Læs mere i den vedlagte beskrivelse af forsamlingshuset.\nForeningen modtog på mødet den 14. maj 2025 et tilskud på 65.000 kr. til\nenergioptimering af handicaptoilettet i Dybvad Forsamlingshus.\nDet samlede projektbudget er på 99.375 kr. Heraf er værdien af frivilligt arbejde opgjort til\n10.000 kr. Der er ikke søgt andre puljer og fonde. Der søges om et tilskud på 89.375 kr.\nfra Distriktsrådet.\nAnsøgning, beskrivelse af Dybvad Forsamlingshus gennem tiden, budget og to tilbud er\nvedlagt som bilag.\n\nForeningen Dybvad Forsamlingshus søger om tilskud til nye vinduer og døre i\nforsamlingshuset. Læs mere i den vedlagte beskrivelse af forsamlingshuset.\nForeningen modtog på mødet den 14. maj 2025 et tilskud på 65.000 kr. til\nenergioptimering af handicaptoilettet i Dybvad Forsamlingshus.\nDet samlede projektbudget er på 356.875 kr. Heraf udgør værdien af frivilligt arbejde\n30.000 kr. Der er desuden ansøgt om 50.000 kr. fra en anden pulje. Der søges om et\ntilskud på 276.875 kr. fra Distriktsrådet.\nAnsøgning, beskrivelse af Dybvad Forsamlingshus gennem tiden, budget og to tilbud er\nvedlagt som bilag.\n\nStøtteforeningen for Hørby-Dybvad Skole søger om tilskud til en fællesskabstrappe,\narbejds- og langborde samt bænke til hytten i Dybvad. Læs mere i projektbeskrivelsen.\nForeningen modtog på mødet den 4. december 2025 et tilskud på 93.583 kr. til samme\nprojekt til Naturoasen i Hørby.\nDet samlede projektbudget er på 151.350 kr. Heraf udgør egenfinansieringen 5.000 kr.,\nmens værdien af frivilligt arbejde er opgjort til 2.500 kr. Der er ikke ansøgt andre puljer og\nfonde. Der søges om et tilskud på 143.850 kr. fra Distriktsrådet.\nAnsøgning, projektbeskrivelse, budget, to tilbud og brugsaftale er vedlagt som bilag.\n\nØstervrå Idræts- og Kulturcenter søger om tilskud til etablering af spærrenet samt grøn\nafskærmning bestående af træer, hæk og buske mellem Hærvejshjemmet og boldbanen.\nLæs mere i projektbeskrivelsen.\nForeningen modtog på mødet den 28. november 2023 et tilskud på 100.000 kr. til\nudarbejdelse af en lokalplan i Østervrå som led i samme projekt.\nDet samlede projektbudget er på 88.000 kr. Heraf udgør egenfinansieringen 13.000 kr.,\nmens værdien af frivilligt arbejde er opgjort til 5.000 kr. Der er desuden ansøgt om 20.000\nkr. fra en anden pulje. Der søges om et tilskud på 50.000 kr. fra Distriktsrådet.\nAnsøgning, projektbeskrivelse, budget og to tilbud er vedlagt som bilag.\n\nØstervrå Borgerforening søger om tilskud til første delprojekt af masterplanen for\nhovedgaden med henblik på at skabe et indbydende, grønt byrum og et uformelt\nmødested i bymidten. Læs mere i projektbeskrivelsen.\nForeningen modtog på mødet den 28. november 2024 et tilskud på 43.750 kr. til ekstern\nrådgivning i forbindelse med forprojektet for hovedgaden i Østervrå som led i samme\nprojekt.\nDet samlede projektbudget er på 1.553.206,25 kr. Heraf er værdien af frivilligt arbejde\nopgjort til 23.000 kr. Der er ansøgt tilskud fra andre puljer og fonde for i alt 1.392.706,25\nkr. Der søges om et tilskud på 137.500 kr. fra Distriktsrådet.\nAnsøgning, projektbeskrivelse, budget, to tilbud, brugsretsaftale samt oversigtskort, fotos\nog skitser er vedlagt som bilag.\n\nÅlbæk Handels- og Håndværkerforening søger om tilskud til et udendørs, demonterbart\nmusik- og speakeranlæg til brug ved arrangementer. Læs mere i projektbeskrivelsen.\nDet samlede projektbudget er på 36.700 kr. Heraf udgør egenfinansieringen 2.500 kr.,\nmens værdien af frivilligt arbejde er opgjort til 1.500 kr. Der er ikke ansøgt andre puljer og\nfonde. Der søges om et tilskud på 32.700 kr. fra Distriktsrådet.\nAnsøgning, projektbeskrivelse, budget, to tilbud og råderetsaftale er vedlagt som bilag.\n\nÅlbæk Bådelaug søger om tilskud til et forprojekt, der skal danne grundlag for en\nvisionsplan for et nyt, tidssvarende klub- og forsamlingshus på havnen. Læs mere i\nprojektbeskrivelsen.\nDet samlede projektbudget er på 287.500 kr. Heraf udgør værdien af frivilligt arbejde\n50.000 kr. Der er ikke ansøgt andre puljer og fonde. Der søges om et tilskud på 237.500\nkr. fra Distriktsrådet.\nAnsøgning, projektbeskrivelse, budget, to tilbud og følgebrev til Distriktsrådet er vedlagt\nsom bilag.\n\nHvert år skal den forening, som modtager lokalpenge til en landsby, aflægge\net særskilt regnskab. Fristen for indsendelse er den 1. februar 2027.\nHver repræsentant modtager en mail med vedhæftet skabelon for indberetning af\nregnskab, som Distriktsrådets medlem har ansvaret for at videresende til rette forening.\nSkabelonen gennemgås på mødet og er vedlagt som bilag.\n\nSekretariatet orienterer om:\n\nNyt fra LandsbyLØBET.\n\nNyt fra LAG Vendsyssel v/ Tove Fønss.\n\nMøde om kollektiv trafik for det kommende køreplansår v/Jørgen Holm Andersen,\nKvissel.\n\nFondsansøgningsaften i Understed.\n\nStatus på Planstrategien\n\nDer foreslås følgende mødedatoer for Distriktsrådet i 2027:\n\nTirsdag 16. februar (ansøgningsfrist 19. januar)\n\nOnsdag 2. juni (ansøgningsfrist 5. maj)\n\nTorsdag 23. september (ansøgningsfrist 26. august)\n\nTirsdag 7. december (ansøgningsfrist 9. november)\n\nMøderne begynder kl. 19.00 og forventes afsluttet senest kl. 22.00.\nPå mødet skal der træffes beslutning om mødesteder. Rådets medlemmer opfordres til at\noverveje, om ét af møderne kan afholdes i den by, de repræsenterer.\nDe godkendte mødedatoer, mødesteder og ansøgningsfrister offentliggøres efterfølgende\npå kommunens hjemmeside.\n\nFormand for Distriktsrådet, Mette Hardam, beretter om året, der er gået i Distriktsrådet.\n\nRådet skal godkende beslutningsprotokollen. For at godkende beslutningsprotokollen,\nskal hvert medlem underskrive ved at trykke på ”Godkend”."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at ansøgningen vurderes at opfylde kriterierne for\nLanddistriktspuljen, og at der træffes beslutning om tilskuddet.\n\nCenter for Teknik og Miljø indstiller, at orienteringen tages til efterretning.\n\nCenter for Teknik og Miljø indstiller, at orienteringen tages til efterretning.\n\nCenter for Teknik og Miljø indstiller, at\n1. mødeplanen godkendes.\n2. steder for mødeafholdelse besluttes.\n\nCenter for Teknik og Miljø indstiller, at orienteringen tages til efterretning.\n\nDirektionssekretariatet indstiller, at beslutningsprotokollen godkendes."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Ansøgning (DokumentID: 8987533 - GEO-2026-05315)",
+     "url": null
+    },
+    {
+     "navn": "2. Projektbeskrivelse (DokumentID: 8963289 - GEO-2026-05315)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8983803 - GEO-2026-05315)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "6. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "6 (Åben) Beslutning om godkendelse af ansøgning om tilskud til",
+     "url": null
+    },
+    {
+     "navn": "renovering af loft, gulv og belysning i Skærum Aktivitetshus",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: GEO-2026-05876",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Ansøgning (DokumentID: 8989441 - GEO-2026-05876)",
+     "url": null
+    },
+    {
+     "navn": "2. Projektbeskrivelse (DokumentID: 8982272 - GEO-2026-05876)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8982273 - GEO-2026-05876)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "6. Fotos af gulv (DokumentID: 8982337 - GEO-2026-05876)",
+     "url": null
+    },
+    {
+     "navn": "7 (Åben) Beslutning om godkendelse af ansøgning om tilskud til isolering",
+     "url": null
+    },
+    {
+     "navn": "af krybekælder i Dybvad Forsamlingshus",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: GEO-2026-05741",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Ansøgning (DokumentID: 8987571 - GEO-2026-05741)",
+     "url": null
+    },
+    {
+     "navn": "2. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8979265 - GEO-2026-05741)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "8 (Åben) Beslutning om godkendelse af ansøgning om tilskud til",
+     "url": null
+    },
+    {
+     "navn": "udskiftning af vinduer og døre i Dybvad Forsamlingshus",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: GEO-2026-05742",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Ansøgning (DokumentID: 8988123 - GEO-2026-05742)",
+     "url": null
+    },
+    {
+     "navn": "2. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8979272 - GEO-2026-05742)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "9 (Åben) Beslutning om godkendelse af ansøgning om tilskud til faciliteter",
+     "url": null
+    },
+    {
+     "navn": "til træhytte til Naturoasen i Dybvad",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: GEO-2026-05883",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Ansøgning (DokumentID: 8989599 - GEO-2026-05883)",
+     "url": null
+    },
+    {
+     "navn": "2. Projektbeskrivelse (DokumentID: 8982388 - GEO-2026-05883)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8982389 - GEO-2026-05883)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "6. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "10 (Åben) Beslutning om godkendelse af ansøgning om tilskud til",
+     "url": null
+    },
+    {
+     "navn": "spærrenet og levende hegn ved Hærvejshjemmet i Østervrå",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: GEO-2026-05739",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Ansøgning (DokumentID: 8987549 - GEO-2026-05739)",
+     "url": null
+    },
+    {
+     "navn": "2. Projektbeskrivelse (DokumentID: 8979219 - GEO-2026-05739)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8983606 - GEO-2026-05739)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "11 (Åben) Beslutning om godkendelse af ansøgning om tilskud til terrænog jordarbejde ved Byens Centrum i Østervrå",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: GEO-2026-05740",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Ansøgning (DokumentID: 8987560 - GEO-2026-05740)",
+     "url": null
+    },
+    {
+     "navn": "2. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8979250 - GEO-2026-05740)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "6. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "7. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "12 (Åben) Beslutning om godkendelse af ansøgning om tilskud til",
+     "url": null
+    },
+    {
+     "navn": "udendørs lydanlæg til Ålbæk",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: GEO-2026-05881",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Ansøgning (DokumentID: 8989584 - GEO-2026-05881)",
+     "url": null
+    },
+    {
+     "navn": "2. Projektbeskrivelse (DokumentID: 8982359 - GEO-2026-05881)",
+     "url": null
+    },
+    {
+     "navn": "3. Budget (DokumentID: 8984770 - GEO-2026-05881)",
+     "url": null
+    },
+    {
+     "navn": "4. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "6. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "13 (Åben) Beslutning om godkendelse af ansøgning om tilskud til ekstern",
+     "url": null
+    },
+    {
+     "navn": "rådgivning til forprojekt om nyt klub- og forsamlingshus på Ålbæk Havn",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: GEO-2026-05885",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Ansøgning (DokumentID: 8989653 - GEO-2026-05885)",
+     "url": null
+    },
+    {
+     "navn": "2. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "3. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "4. Budget (DokumentID: 8982515 - GEO-2026-05885)",
+     "url": null
+    },
+    {
+     "navn": "5. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "6. (Lukket bilag)",
+     "url": null
+    },
+    {
+     "navn": "14 (Åben) Orientering om aflæggelse af regnskab for brug af lokalpenge",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: EMN-2025-03732",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "1. Tilskudsregnskab Lokalpenge 2026 (DokumentID: 8991769 - EMN-2025-03732)",
+     "url": null
+    },
+    {
+     "navn": "15 (Åben) Orientering om nyt fra sekretariatet",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: EMN-2025-03732",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "16 (Åben) Beslutning om godkendelse af Distriktsrådets mødeplan for 2027",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: EMN-2025-03732",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "17 (Åben) Orientering om Formandens beretning 2026",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: EMN-2025-03732",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "18 (Åben) Eventuelt",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: MOS-2026-00113",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Center for Teknik og Miljø",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    },
+    {
+     "navn": "19 (Åben) Underskriftside",
+     "url": null
+    },
+    {
+     "navn": "Sags ID: MOS-2026-00113",
+     "url": null
+    },
+    {
+     "navn": "Ansvarligt center: Direktionssekretariatet",
+     "url": null
+    },
+    {
+     "navn": "Beslutningskompetence",
+     "url": null
+    },
+    {
+     "navn": "DR",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-1": {
+   "id": "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-1",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Ældre, Social og Handicap",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=a0f11182-4f86-4287-bf36-7698a1b14d42",
+   "hentet": "2026-11-26T14:20:56.188Z",
+   "titel": "Beslutning om godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende dagsordenen for mødet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionssekretariatet indstiller, at dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-2": {
+   "id": "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-2",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Ældre, Social og Handicap",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=a0f11182-4f86-4287-bf36-7698a1b14d42",
+   "hentet": "2026-11-26T14:20:56.188Z",
+   "titel": "Beslutning om godkendelse af principper for udbud på hjemmepleje",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget for Ældre, Social og Handicap godkendte på møde den 3. september 2026, at\nder igangsættes udbud på fritvalgsområdet (hjemmepleje). Der skal nu godkendes de\noverordnede principper for udbuddet.\nPå baggrund af markedsdialog og med afsæt i vedhæftede bilag anbefaler\nadministrationen, at udbuddet gennemføres med én privat leverandør, som på sigt skal\nkunne levere hjemmepleje i hele kommunen. Leverandøren gives mulighed for en gradvis\nopstart i et afgrænset geografisk område med løbende udvidelse af kundegrundlaget,\nindtil leverancen omfatter hele kommunen.\nDenne model sikrer borgernes frie valg mellem en kommunal og en privat leverandør,\nsamtidig med at der skabes et tilstrækkeligt kundegrundlag for den private leverandør.\nDermed bliver der tale om en økonomisk og driftsmæssig bæredygtig løsning i løbet af\nkontraktperioden.\nDa et kundegrundlag først skal bygges op af den private leverandør, anbefaler\nadministrationen, at der i udbuddet fastsættes en kontraktperiode på 6 år med mulighed\nfor forlængelse i op til 2 x 12 måneder. Dette for at understøtte en bæredygtig\nkontraktperiode, hvor der er taget højde for, at der er en etableringsfase.\nAdministrationen anbefaler, at udbuddet gennemføres med en maksimalprismodel. Det\ngiver mulighed for, at tilbudsgiverne kan konkurrere på pris inden for kommunens\nfastsatte prisrammer og understøtter samtidig budgetsikkerhed og økonomisk robusthed.\nVedhæftet som bilag er en overordnet beskrivelse af modeller og principper ift. et udbud.\nSagen har været i høring i Ældrerådet og Handicaprådet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Sundhed og Ældre indstiller, at\n1. udbuddet gennemføres med én privat leverandør.\n2. kontraktperioden fastsættes til 6 år med mulighed for forlængelse i op til 2 x 12\nmåneder.\n3. udbuddet gennemføres med en maksimalprismodel."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Overordnede modeller og principper for udbud (DokumentID: 8932083 - EMN-2026-01560)",
+     "url": null
+    },
+    {
+     "navn": "2. Høringssvar fra Ældrerådet (DokumentID: 9000635 - EMN-2026-01560)",
+     "url": null
+    },
+    {
+     "navn": "3. Høringssvar fra Handicaprådet (DokumentID: 9000663 - EMN-2026-01560)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-3": {
+   "id": "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-3",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Ældre, Social og Handicap",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=a0f11182-4f86-4287-bf36-7698a1b14d42",
+   "hentet": "2026-11-26T14:20:56.188Z",
+   "titel": "Beslutning om godkendelse af kvalitetsstandarder og generel borgerrettet information 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunen er forpligtet til hvert år at udarbejde kvalitetsstandarder efter serviceloven for\n\nPraktisk hjælp efter § 83\n\nPersonlig pleje efter § 83\n\nHverdagsrehabilitering efter § 83a\n\nGenoptræning efter § 86\n\nVedligeholdelsestræning efter § 86\n\nMadservice efter § 83\n\nKommunen er desuden forpligtet til at udarbejde en generel information om helhedspleje\ntil borgere, der modtager hjælp efter ældreloven.\nDer er lavet en sproglig opdatering i alle kvalitetsstandarder, så de er blevet mere\nborgernære og præcise.\nDer er lavet følgende indholdsmæssige ændringer i kvalitetsstandarderne:\nForsideteksterne i alle kvalitetsstandarder er ændret, så det nu fremgår, at de gælder\nserviceloven og hvilken paragraf, den enkelte form for hjælp gives efter.\nAfdelings- og centernavn er desuden ændret i alle kvalitetsstandarder.\nDer er lavet følgende indholdsmæssige ændringer i de enkelte kvalitetsstandarder:\nKvalitetsstandard for praktisk hjælp efter § 83\n- Afsnittet ”Tøjvask” er revideret, så det nu informerer om vilkår og praksis for\ntøjvask hos et professionelt vaskeri, som kommunen har indgået kontrakt med.\nKvalitetsstandard for hverdagsrehabilitering efter § 83a\n- I afsnittet ”Hvem leverer hjælpen?” er de to sidste underafsnit vedr. frit valg af\nleverandør til hverdagsrehabilitering slettet. Det skyldes, at kommunen ikke har\nindgået aftale med leverandører om hverdagsrehabilitering, og at borgeren ikke\nkan få et fritvalgsbevis til denne ydelse.\n\nI afsnittet ”Hvordan bruges hjælpemidler og velfærdsteknologi i hjælpen?” er der\ntilføjet eksempler på hjælpemidler og velfærdsteknologi:\no\no\n\n”Hjælpemidler som en rollator, en gribetang eller en badestol.\nTeknologi som en medicinboks med alarm, der minder dig om at tage din\nmedicin, en robotstøvsuger/robotgulvvasker eller en digital kalender, der\nhjælper dig med at huske aftaler.”,\n\nFølgende er slettet: ”[Vurderingen laves] ud fra såvel faglige som\nøkonomiske overvejelser.”\nKvalitetsstandard for genoptræning efter § 86\n\nI afsnittet ”Hvad indeholder genoptræning?” er underafsnittet ”Midlertidigt\naflastningsophold med genoptræning” slettet, da kommunen fra 1. januar 2027\nikke længere har aflastningspladser med genoptræning.\n\nKvalitetsstandard for madservice efter § 83\n\nUnderafsnittet om kølemad er slettet i afsnittet ”Hvad kan du forvente af den\nleverede mad?”. De to leverandører, kommunen har indgået aftale med, leverer\nikke kølemad, men henholdsvis køle-vakuummad og varm mad.\n\n”Generel information om helhedspleje til ældre i Frederikshavn Kommune” er rettet til, så\nden er mere borgervenlig. Indholdet er ikke ændret.\nSagen har været til høring i Ældrerådet og Handicaprådet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Sundhed og Ældre indstiller, at kvalitetsstandarderne og ”Generel information\nom helhedspleje til ældre i Frederikshavn Kommune” 2027 godkendes."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Kvalitetsstandard for Praktisk hjælp SEL § 83 2027 (DokumentID: 8579431 - EMN-2026-03076)",
+     "url": null
+    },
+    {
+     "navn": "2. Kvalitetsstandard for Personlig Pleje SEL § 83 2027 (DokumentID: 8954165 - EMN-2026-03076)",
+     "url": null
+    },
+    {
+     "navn": "3. Kvalitetsstandard for Genoptræning SEL § 86 2027 (DokumentID: 8954263 - EMN-2026-03076)",
+     "url": null
+    },
+    {
+     "navn": "4. Kvalitetsstandard for Vedligeholdelsestræning SEL § 83 2027 (DokumentID: 8954243 - EMN-2026-03076)",
+     "url": null
+    },
+    {
+     "navn": "5. Kvalitetsstandard for hverdagsrehabilitering SEL § 83a 2027 (DokumentID: 8954191 - EMN-2026-03076)",
+     "url": null
+    },
+    {
+     "navn": "6. Kvalitetsstandard for Madservice SEL § 83 2027 (DokumentID: 8954282 - EMN-2026-03076)",
+     "url": null
+    },
+    {
+     "navn": "7. Generel information om helhedspleje til ældre i Frederikshavn Kommune (DokumentID: 8719728 - EMN2026-03076)",
+     "url": null
+    },
+    {
+     "navn": "8. Høringssvar fra Ældrerådet (DokumentID: 9000585 - EMN-2026-03076)",
+     "url": null
+    },
+    {
+     "navn": "9. Høringssvar fra Handicaprådet (DokumentID: 9000613 - EMN-2026-03076)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-4": {
+   "id": "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-4",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Ældre, Social og Handicap",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=a0f11182-4f86-4287-bf36-7698a1b14d42",
+   "hentet": "2026-11-26T14:20:56.188Z",
+   "titel": "Beslutning om implementering af ’Ung i velfærd’",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I budgetforliget for 2027-2030 er der afsat 500.000 kr. årligt til den 4-årige indsats ”Ung i\nplejen”. I indsatsen ansættes 20 unge på 13-17 år i fritidsjob seks timer om ugen på\nkommunens plejecentre. Det svarer til i gennemsnit to unge i fritidsjob på hvert\nplejecenter.\nMålet med at introducere de unge tidligt til ældreområdet er at styrke deres kendskab til\nog interesse for uddannelse og beskæftigelse inden for omsorgs- og sundhedsfagene.\nPå den baggrund forventes det, at indsatsen vil styrke rekrutteringen til\nsundhedsuddannelserne, herunder på SOSU-området.\nAdministrationen anbefaler, at indsatsens navn ændres til ”Ung i velfærd”, da det i højere\ngrad understøtter indsatsens overordnede formål og potentiale. \"Ung i velfærd\" afspejler,\nat indsatsen ikke alene handler om plejeopgaver, men om at give unge indsigt i og\nerfaring med velfærdsområdet. De unge skal primært indgå i sociale aktiviteter,\nrelationsskabende samvær og hverdagsopgaver sammen med beboerne.\nOpgaverne kan fx være at:\n\nHygge om beboerne\n\nDeltage i aktiviteter som spil, musik og gåture\n\nLave små, praktiske opgaver sammen med beboerne, fx dække bord\n\nBeboerne forventes at få glæde af mødet mellem generationer, og at de unge kan\nbidrage til mere liv, socialt samvær og hyggelige aktiviteter i hverdagen.\nIndsatsen implementeres gennem ordinære ansættelser, hvor de unge selv søger\nfritidsjobbene på plejecentrene.\nFOA har tilkendegivet, at de bakker op om indsatsen.\nSagen har været i høring i Ældrerådet og Handicaprådet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Sundhed og Ældre indstiller, at indsatsen ”Ung i velfærd” godkendes."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Høringssvar fra Ældrerådet (DokumentID: 9000495 - EMN-2026-03378)",
+     "url": null
+    },
+    {
+     "navn": "2. Høringssvar fra Handicaprådet (DokumentID: 9000533 - EMN-2026-03378)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-5": {
+   "id": "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-5",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Ældre, Social og Handicap",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=a0f11182-4f86-4287-bf36-7698a1b14d42",
+   "hentet": "2026-11-26T14:20:56.188Z",
+   "titel": "Orientering om økonomien på Udvalget for Ældre, Social og Handicap oktober",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalgets korrigerede budgetramme er på 1.149,6 mio. kr. Der forventes pr. 31. oktober\n2026 et mindreforbrug på 12,3 mio. kr. ved årets udgang. Det forventede resultat er\nberegnet ud fra de aktiviteter, der er kendt pr. 31. oktober.\nMindreforbruget kan primært kan henføres til følgende områder:\n\nMindreforbrug på Udvalgets område på 3,1 mio. kr. grundet 0,7 mio. kr. i ubrugte\nmidler på områdets dispositionskonto og 2,4 mio. kr. i ubrugte midler til afvikling\naf merforbrug fra 2024 reserveret i år 2025-2027. Udvalget besluttede i marts og\nmaj måned, at fastholdelsen af Ålbæk som et døgndækket plejecenter skal\nfinansieres af midlerne til afvikling af merforbrug i 2026 og 2027. I 2026 er Ålbæk\ndog fuldt finansieret gennem budgetforligsmidler 2025-2028, hvorfor midlerne\nfortsat er til rådighed på udvalgets område i 2026.\n\nMindreforbrug på Center for Sundhed og Ældre på 8,2 mio. kr. særligt grundet\nfærre tildelinger af hjælpemidler til borgere på hjælpemiddelområdet samt\nmindreforbrug på Team Udvikling og Aktivitetsområdet. Der har været en stigning\ni visiterede ydelser til hjemmepleje, men området forventer stadig mindreforbrug.\nDer forventes et merforbrug på Plejecentrene på 1,9 mio. kr. Merforbruget\nopvejes til dels af et mindreforbrug på Specialteamet på 1,0 mio. kr.\nMindreforbruget skyldes især, at specialteamet ikke er fuldt implementeret og at\nlønudgifterne til teamet derfor er tilsvarende lave.\nDer ventes mindreforbrug på Elevområdet, hvor antallet af uddannelsesaftaler er\nfor nedadgående. Antallet af aktive uddannelsesaftaler er fra 2023 faldet fra 250\ntil 175 pr. 1. august 2026.\n\nMindreforbrug på Center for Handicap og Psykiatri på 1,0 mio. kr. På området for\nkommunens interne specialiserede botilbud ventes et merforbrug, hvilket dog\nopvejes af et forventet mindreforbrug på køb af botilbudspladser til egne borgere i\nandre kommuner.\n\nI den uddybende økonomiorientering vises de forventede resultater."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Økonomi og Løn indstiller, at orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Bilag - ÆSH oktober 2026 (DokumentID: 8986257 - EMN-2024-04442)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-6": {
+   "id": "frederikshavn-2026-12-03-udvalget-for-aeldre-social-og-handicap-6",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Ældre, Social og Handicap",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=a0f11182-4f86-4287-bf36-7698a1b14d42",
+   "hentet": "2026-11-26T14:20:56.188Z",
+   "titel": "Underskriftside",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende beslutningsprotokollen. For at godkende beslutningsprotokollen,\nskal hvert medlem underskrive ved at trykke på ”Godkend”."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionssekretariatet indstiller, at beslutningsprotokollen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-02-udvalget-for-sundhed-pleje-og-forebyggelse-1": {
+   "id": "frederikshavn-2026-12-02-udvalget-for-sundhed-pleje-og-forebyggelse-1",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Sundhed, Pleje og Forebyggelse",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=5ac43b6f-0dac-437e-a47e-b2ac391042f0",
+   "hentet": "2026-11-26T14:21:01.789Z",
+   "titel": "Beslutning om godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende dagsordenen for mødet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionssekretariatet indstiller, at dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-02-udvalget-for-sundhed-pleje-og-forebyggelse-2": {
+   "id": "frederikshavn-2026-12-02-udvalget-for-sundhed-pleje-og-forebyggelse-2",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Sundhed, Pleje og Forebyggelse",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=5ac43b6f-0dac-437e-a47e-b2ac391042f0",
+   "hentet": "2026-11-26T14:21:01.789Z",
+   "titel": "Beslutning om fordeling af § 18 tilskud til ansøgere i 2027",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der skal fordeles tilskud til ansøgere til frivilligt socialt arbejde for 2027 efter Serviceloven\nDer er én ansøgningsrunde årligt med ansøgningsfrist 1. november og udbetaling primo\njanuar.\nAdministrationen har modtaget 82 ansøgninger, hvor der samlet er ansøgt om 1.962.603\nkr. Det samlede beløb på § 18 puljen i 2027 er på 1.453.692 kr.\nAnsøgningerne fordeler sig således:\n\n56 ansøgninger er tildelt til og med 15.000 kr. svarende til 504.000 kr.\nAnsøgningerne indstilles til orientering.\nOversigt over ansøgninger er vedlagt som bilag.\n\n14 ansøgninger er tildelt over 15.000 kr. svarende til 448.617 kr.\nAnsøgningerne indstilles til behandling i Udvalget for Sundhed, Pleje og\nForebyggelse.\n\n12 ansøgninger indstilles til afslag.\nAnsøgningerne indstilles til behandling i Udvalget for Sundhed, Pleje og\nForebyggelse.\n\nHvis indstillingerne godkendes, er der brugt 952.617 kr. af puljen. Der vil således være et\nrestbeløb på 501.075 kr., som udvalget jf. retningslinjerne kan vælge at prioritere i forhold\ntil bestemte temaer."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Sundhed og Ældre indstiller, at\n1. orienteringen om ansøgninger, der er tildelt beløb til og med 15.000 kr., tages til\nefterretning.\n2. ansøgninger, der er tildelt over 15.000 kr. godkendes:\na. Ældre Sagen Frederikshavn/Læsø i alt 57.500 kr.\nb. Ældre Sagen, Skagen Lokalafdeling i alt 45.000 kr.\nc.\n\nSind Frederikshavn og Læsø i alt 49.500 kr.\n\nd. Røde Kors Sæby afd. i alt 32.000 kr.\ne. Jerup Ældreklub i alt 25.000 kr.\nf.\n\nDen Selvejende Institution Virkelyst i alt 60.125 kr.\n\ng. Broen Frederikshavn i alt 50.000 kr.\nh. OCD-foreningen Lokalgruppe Frederikshavn i alt 39.500 kr.\ni.\n\nNæstehjælperne Nord i alt 28.000 kr.\n\nj.\n\nULF Frederikshavn Kreds i alt 20.492 kr.\n\nk.\n\nLULU – Landsdækkende univers for liv uden vold i alt 17.000 kr.\n\nl.\n\nUngTrivsel i alt 24.500 kr.\n\n3. der meddeles afslag til ansøgninger, der falder uden for rammerne:\nÅrsag: Foreningen har finansielle midler over 150.000 kr.\na. Børns Vilkår\nb. Dansk Center for Familier & Sorg\nc. Fødevarebanken\nd. LGBT+ Danmark\ne. NEFOS – Netværket for selvmordsramte\nf.\n\nDepressionsForeningen\n\nÅrsag: Målgruppen for aktiviteten er ikke socialt udsatte\ng. Læsehunde – Fonden for Socialt Ansvar\nh. Gigtforeningen\ni.\n\nHørby Idrætsforening og Hørby og Omegns Borgerforening\n\nÅrsag: Aktiviteten er ikke omfattet § 18 puljen\nj. Næstehjælperne Nord – julehjælp\nÅrsag: Foreningen modtager anden kommunal støtte\nk.\n\nLokalhistorisk Forening for Voerså og Omegn (foredrag)\n\nl.\n\nLokalhistorisk Forening for Voerså og Omegn (bustur)\n\n4. restbeløb af § 18 puljen for 2027 prioriteres til bestemte temaer."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Bilag Oversigt over ansøgninger indstillet til og med 15000 (DokumentID: 8986033 - EMN-2026-00040)",
+     "url": null
+    },
+    {
+     "navn": "2. Bilag Oversigt over ansøgninger indstillet over 15000 kr (DokumentID: 8985587 - EMN-2026-00040)",
+     "url": null
+    },
+    {
+     "navn": "3. Bilag Oversigt over ansøgninger indstillet til afslag (DokumentID: 8981119 - EMN-2026-00040)",
+     "url": null
+    },
+    {
+     "navn": "4. Bilag Oversigt § 18 2022-2027 (DokumentID: 8989905 - EMN-2026-00040)",
+     "url": null
+    },
+    {
+     "navn": "5. Rammer for tilskud til frivilligt socialt arbejde efter Serviceloven § 18 2027 (DokumentID: 8989013 - EMN2026-00040)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-02-udvalget-for-sundhed-pleje-og-forebyggelse-3": {
+   "id": "frederikshavn-2026-12-02-udvalget-for-sundhed-pleje-og-forebyggelse-3",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Sundhed, Pleje og Forebyggelse",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=5ac43b6f-0dac-437e-a47e-b2ac391042f0",
+   "hentet": "2026-11-26T14:21:01.789Z",
+   "titel": "Orientering om status på Sundhedsreformen og Nærsundhedsplanen, december 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Som led i implementeringen af sundhedsreformen arbejdes der aktuelt med\nudarbejdelsen af Nærsundhedsplanen for Sundhedsråd Vendsyssel.\nNærsundhedsplanen skal danne rammen for den lokale udvikling af det nære\nsundhedsvæsen og beskrive, hvordan kommuner, region og almen praksis i fællesskab\nvil sikre mere sammenhængende og borgernære sundhedstilbud.\nI løbet af 2026 har Sundhedsråd Vendsyssel gennemført en række temadrøftelser om\ncentrale udviklingsområder, herunder forebyggelse, lighed i sundhed, kronisk sygdom,\npsykiatri samt det udadvendte hospital. Input fra disse drøftelser indgår i det videre\narbejde med planen.\nArbejdet forventes at munde ud i en høringsversion i slutningen af 2026 med henblik på\nendelig godkendelse i 2027. For Frederikshavn Kommune bliver nærsundhedsplanen et\ncentralt redskab til at omsætte sundhedsreformen til konkrete lokale indsatser og\nsamarbejder på tværs af sektorer."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Sundhed og Ældre indstiller, at orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-02-udvalget-for-sundhed-pleje-og-forebyggelse-4": {
+   "id": "frederikshavn-2026-12-02-udvalget-for-sundhed-pleje-og-forebyggelse-4",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Sundhed, Pleje og Forebyggelse",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=5ac43b6f-0dac-437e-a47e-b2ac391042f0",
+   "hentet": "2026-11-26T14:21:01.789Z",
+   "titel": "Underskriftside",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende beslutningsprotokollen. For at godkende beslutningsprotokollen,\nskal hvert medlem underskrive ved at trykke på ”Godkend”."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionssekretariatet indstiller, at beslutningsprotokollen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-1": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-1",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Kultur, Idræt, Forening og Lokalsamfund",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=8201a9c9-358c-45de-b531-778e8f0de979",
+   "hentet": "2026-11-26T14:21:08.759Z",
+   "titel": "Beslutning om godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende dagsordenen for mødet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionssekretariatet indstiller, at dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-2": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-2",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Kultur, Idræt, Forening og Lokalsamfund",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=8201a9c9-358c-45de-b531-778e8f0de979",
+   "hentet": "2026-11-26T14:21:08.759Z",
+   "titel": "Beslutning om udmøntning af De Frie Midler 4. kvartal 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal træffe beslutning om udmøntning af De Frie Midler 4. kvartal 2026. Dette er\nårets sidste uddelingsrunde.\nFormålet med puljen er at støtte projekter, der bidrager til udviklingen af kultur- og\nfritidslivet. Puljen støtter projekter inden for oplevelses- eller vidensøkonomi, vækst- og\ntalentudvikling, kunstnerisk udvikling, inklusion, synlighed og innovation, børnekultur samt\nfolkelige kulturelle aktiviteter. Der ydes ikke tilskud til allerede afholdte aktiviteter eller til\nproduktion af egne værker.\nDer er i 2026 afsat i alt 258.553 kr. til fordeling. I de tre foregående uddelingsrunder er\nder uddelt 230.000 kr. Der er i denne runde 28.553 kr. tilbage til uddeling.\nDer er modtaget i alt 4 ansøgninger. To ansøgninger har modtaget administrativt afslag,\nda der er søgt til projekter, der ligger udenfor puljens kriterier. Én ansøger har\ntilkendegivet, at projekt og ansøgning flyttes til 2027. Udvalget skal derfor tage stilling til\nén ansøgning.\nAdministrationen har vurderet ansøgningen i forhold til støttekriterier, finansiering og\nrealiserbarhed. Der er søgt om tilskud på i alt 16.970 kr. Administrationen indstiller tilskud\nfor i alt 5.000 kr.\nProjekttitel\n\nBeskrivelse af\n\nAnsøgt\n\nInd-\n\nAdministrationens\n\nog ansøger\n\nprojekt\n\nbeløb\n\nstilling\n\nbemærkninger\n\nRenovering\naf transportvogne\n\nForeningen søger\nom støtte til\nrenovering og\nlevetidsforlængelse\naf tre\ntransportvogne, som\n\nAdministrationen vurderer, at\nprojektet understøtter\nforeningens mulighed for\nfortsat at afholde deres\naktiviteter, hvoraf\nTordenskioldsdagene er den\n\nForeningen\nTordenskiolds\nSoldater\nFladstrand\n\nanvendes til alle\nderes aktiviteter.\nRenoveringen\nomfatter udskiftning\naf rådne\nbundplanker samt\nnye hjul, flanger og\nmaling.\n\nstørste og vigtigste.\nTransportvognene har en\ndirekte funktion i afviklingen\naf aktiviteterne, og projektet\nvurderes derfor at ligge\nindenfor puljens kriterium om\n”folkelig kulturelle aktiviteter”.\nDer er tale om renovering af\neksisterende, flytbart\nmateriel og ikke etablering\n\nForeningen udfører\nselv\nrenoveringsarbejde\nmed frivillig\narbejdskraft anslået\ntil 40 timer med en\n\neller forbedring af fast\nejendom. Administrationen\nvurderer derfor, at\nansøgningen ikke har\nkarakter af et anlægsprojekt,\nmen af en afgrænset\n\nværdi på 10.000 kr.\n\ninvestering i det materiel, der\ner nødvendig for foreningens\nkulturelle aktiviteter.\n\nProjektet er planlagt\ngennemført ultimo\n\nDet samlede\nmaterialebudget udgør\n16.970 kr. Hertil kommer\nforeningens eget frivillige\narbejde, som er anslået til\n10.000 kr. Foreningen har\noplyst, at den også søger\nekstern finansiering, og kan\nmedfinansiere projektet med\negne midler.\nAdministrationen indstiller\nderfor til et mindre beløb end\ndet ansøgte.\nStøtten kan ydes med\nhjemmel i\nkommunalfuldmagtsreglerne\nom støtte til kulturelle formål\nog frivilligt foreningsarbejde.\nForeningen har oplyst, at\nden ikke har økonomiske\nrelationer til Fonden\nTordenskiold, som modtager\nkommunalt tilskud til\nafholdelse af\nTordenskioldsdagene."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Kultur og Borgerservice indstiller, at Foreningen Tordenskiolds Soldater\nFladstrand ydes et tilskud på 5.000 kr."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Ansøgning nr 1 - Renovering af transportvogne - Foreningen Tordenskiolds Soldater Fladstrand",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-3": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-3",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Kultur, Idræt, Forening og Lokalsamfund",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=8201a9c9-358c-45de-b531-778e8f0de979",
+   "hentet": "2026-11-26T14:21:08.759Z",
+   "titel": "Beslutning om videre proces for haltilskudsmodellen",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget for Kultur, Idræt, Forening og Lokalsamfund skal beslutte den videre proces for\narbejdet med haltilskudsmodellen på baggrund af det foreliggende materiale.\nHaltilskudsmodellen er evalueret blandt de selvejende institutioner,\nparaplyorganisationerne og de folkeoplysende foreninger. Der er modtaget svar fra alle\n12 selvejende institutioner, Idrætssamvirket i Frederikshavn Kommune og 69 foreninger.\nDerudover foreligger høringssvar fra Folkeoplysningsudvalget.\nEvalueringen blandt de selvejende institutioner viser, at budgetsikkerhed vægtes højt. 67\n% svarer, at modellen i meget høj grad giver budgetsikkerhed, mens 8 % svarer i høj\ngrad. Alle 12 vurderer desuden langsigtet planlægning og investeringer som enten vigtigt\neller meget vigtigt.\nPå spørgsmålet om den foretrukne fremtidige model vælger 42 % en lige balance mellem\nbudgetsikkerhed og aktivitet, 33 % høj budgetsikkerhed med begrænset\naktivitetsafhængighed, 17 % overvejende budgetsikkerhed med enkelte\naktivitetsincitamenter og 8 % overvejende aktivitetsbaseret tilskud med begrænset\nbudgetsikkerhed. Ingen vælger et stærkt aktivitetsbaseret tilskud, hvor tilskuddet kan\nvariere fra år til år.\nDe åbne besvarelser fra de selvejende institutioner viser forskellige ønsker til en fremtidig\nmodel. Der peges bl.a. på stabile grundtilskud, aktivitetsrelaterede elementer, flerårighed,\nincitamenter til øget aktivitet, hensyn til forskelle mellem faciliteter samt større\ngennemsigtighed. Andre besvarelser peger på, at den nuværende model bør fortsætte\neller kun justeres begrænset.\nForeningerne vurderer overordnet samarbejdet med ledelsen af de selvejende\ninstitutioner positivt. Her svarer 57 % i høj grad. Foreningerne er også tilfredse med\nhallens fleksibilitet i forhold til ændringer og særlige ønsker, hvor 54 % svarer i høj grad.\nVurderingen af hallens bidrag til udvikling af nye aktiviteter er mere blandet. På en skala\nfra 1 til 5 fordeler svarene sig således: 7 % svarer 1, 12 % svarer 2, 29 % svarer 3, 25 %\nsvarer 4 og 28 % svarer 5. Besvarelserne er fortsat overvejende positive, men peger\nsamtidig på, at der er mulighed for at styrke hallernes bidrag til udvikling af nye aktiviteter.\nFolkeoplysningsudvalget anbefaler, at haltilskudsmodellen fortsat sikrer lige adgang til\nfaciliteter for foreningslivet. Folkeoplysningsudvalget peger samtidig på, at en fremtidig\nmodel kan indeholde incitamenter til udvikling, samarbejde og nye aktiviteter.\n\nIncitamenterne bør tage højde for institutionernes forskellige størrelse og\nbefolkningsgrundlag og være mulige at opnå uanset størrelse og placering.\nIdrætssamvirket vurderer overordnet, at den nuværende model fungerer efter hensigten\nog har skabt lighed i lokalelejen, økonomisk tryghed for hallerne samt mindre uro i\nforeningslivet. Samtidig peges der på et manglende økonomisk incitament for hallerne til\nat skabe mere aktivitet og på forholdene omkring foreningernes økonomi ved\nweekendstævner og arrangementer.\nEndvidere anbefaler Idrætssamvirket, at en udvidelse af modellen til flere faciliteter følges\naf en tilsvarende udvidelse af den økonomiske ramme. Desuden fremhæves betydningen\naf geografisk lighed, idet forskelle i befolkningstæthed kan påvirke faciliteters aktivitetsog belægningsniveau.\nPå tværs af materialet fremgår både ønske om at fastholde elementer i den nuværende\nmodel og forslag om justeringer. Materialet peger bl.a. på budgetsikkerhed, lige adgang,\naktivitet og udvikling, forskelle mellem institutionernes vilkår samt gennemsigtighed som\nforhold i drøftelsen af den fremtidige model."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Kultur og Borgerservice indstiller, at\n1. processen vedrørende haltilskudsmodellen fortsættes i overensstemmelse med\nden godkendte tidsplan, dog med undtagelse af dialogmøde\n2. der afholdes dialogmøde med institutionerne i januar 2027."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Høringssvar fra Folkeoplysningsudvalget vedr. Evaluering af haltilskudsmodellen (DokumentID: 8986740 EMN-2025-01498)",
+     "url": null
+    },
+    {
+     "navn": "2. Samlet dokument - evaluering af haltilskudsmodellen - revideret (DokumentID: 8988522 - EMN-2025-01498)",
+     "url": null
+    },
+    {
+     "navn": "3. Tidsplan for evaluering af haltilskudsmodellen (DokumentID: 8990670 - EMN-2025-01498)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-4": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-4",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Kultur, Idræt, Forening og Lokalsamfund",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=8201a9c9-358c-45de-b531-778e8f0de979",
+   "hentet": "2026-11-26T14:21:08.759Z",
+   "titel": "Beslutning om tilskud til SKAL Contemporary",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget besluttede på møde den 3. november 2026 at udsætte beslutning om sag\nvedrørende tilskud til SKAL Contemporary til mødet i december.\nSagen vedrører udvalgets stillingtagen til tilskud til det foreningsbaserede udstillingssted\nfor samtidskunst, SKAL Contemporary (herefter benævnt SKAL).\nSKAL har i perioden 2024-2026 modtaget et årligt kommunalt driftstilskud på 50.000 kr.\nSKAL har siden årsskiftet 2020/2021 haft base i Skagen, de seneste to år med adresse i\nDet Grå Fyr. SKAL præsenterer årligt mindst 4 nyproducerede udstillinger indenfor\nsamtidskunsten. SKAL oplever stor succes i opbakningen fra de relevante almene fonde\ntil udstillingsstedets virke og har i perioden 2024-2026 kunnet dokumentere tiltrækning af\neksterne midler på basis af de kommunale tilskud i forholdet 1:23.\nSKAL har i sommeren 2026 henvendt sig til udvalget med henblik på afklaring af\nmulighederne for en varig årlig driftsstøtte.\nI henvendelsen peger SKAL på to ønskelige støttescenarier. Et scenarie hvor SKAL\nstøttes med det højest mulige beløb til dækning af udstillingsstedets administrations- og\ndriftsudgifter på årligt op til 150.000 kr., og et andet scenarie, hvor der udover støtte til\nadministrations- og driftsudgifter også støttes med midler til en basisløn til\nudstillingsstedets leder på minimum 350.000 kr. årligt."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Kultur og Borgerservice indstiller, at\n1. SKAL støttes med 50.000 kr. i 2027\n2. der i forbindelse med kommende prioriteringer indenfor udvalgets område tages\nstilling til et årligt varigt driftstilskud til SKAL gældende for 2028."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. 260626 Henvendelse KIFL_Skal Contemporary_amc (DokumentID: 8944700 - EMN-2026-02977)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-5": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-5",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Kultur, Idræt, Forening og Lokalsamfund",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=8201a9c9-358c-45de-b531-778e8f0de979",
+   "hentet": "2026-11-26T14:21:08.759Z",
+   "titel": "Beslutning om ny model for anvendelse af midlerne i landsbyfornyelsespuljen",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget besluttede den 5. maj 2026, at der skulle tages fornyet stilling til den\nfremadrettede model for anvendelse af midlerne i landsbyfornyelsespuljen. Samtidig blev\ndet besluttet, at processen skulle indledes med et dialogmøde med repræsentanter fra\nDistriktsrådet, så ideer til den fremadrettede anvendelse kunne drøftes. Dialogmødet\nfandt sted den 11. august 2026.\nUdvalget besluttede herudover den 27. august 2026, at der gennemføres endnu en\nnedrivningspulje, så aktiviteten holdes i gang under de nuværende rammer, mens\nudvalget tager stilling til den fremadrettede anvendelse.\nDer er til indsatsen afsat ca. 1,5 mio. kr. (anlægsmidler) i 2026, og samme beløb i\noverslagsårene. Da der er tale om anlægsmidler overføres ikke-benyttede anlægsmidler i\nudgangspunktet. Anlægsmidlerne er over årene blevet anvendt som supplement ind i den\nstatslige landsbyfornyelsespulje, hvorfra kommunen modtager refusion på 60 % af de\nudgifter kommunen har afholdt forlods. Det betyder i praksis, at den kommunale\nbudgetafsætning på 1,5 mio. kr. over tid kan understøtte nedrivningsaktiviteter for op til\nca. 3,5 mio. kr., hvis den maksimale gearing opnås. Der kan gå op til 6 måneder fra\nkommunen har afholdt en udgift, til den statslige refusion kan hjemtages.\nDen statslige landsbyfornyelsespulje kan anvendes i byer med under 4.000 indbyggere\nog i det åbne land, bl.a. til nedrivning eller istandsættelse af nedslidte bygninger, samt\nforbedring af lokale byrum. Det betyder, at ordningen omfatter alle byer med undtagelse\naf Frederikshavn, Sæby og Skagen.\nDen senest gældende model bygger på handleplanen ”Strategisk landsbyforskønnelse”,\nsom blev godkendt af Plan- og Miljøudvalg den 31. august 2021 (bilag 1). Indsatsen har\nprioriteret frivillige aftaler om nedrivning af skæmmende ejendomme, særligt i\nlandsbyerne og langs større veje.\nI praksis har administrationen typisk udbudt 2 runder årligt af 5-6 ejendomme. Den\nhidtidige model har haft fordele og ulemper. For mere information om hidtil gældende\nordning henvises til bilag 2.\nI budget 2026-29 er det aftalt, at midlerne i landsbyfornyelsespuljen – der hidtil primært\nhar været anvendt til nedrivning – fremover også skal benyttes til istandsættelse af\nforsamlingshuse, områdefornyelse og lokale mødesteder. Formålet er at skabe endnu\nbedre rammer for fællesskab og sammenhængskraft i de mindre byer og lokalsamfund.\n\nAdministrationen har på den baggrund udarbejdet forslag til, hvordan alternative modeller\nfor udmøntning af landsbyfornyelsesmidler kan gennemføres (se bilag). Modellerne tager\nafsæt i de muligheder, der fremgår af bekendtgørelse om lov om landsbyfornyelse.\nDerudover har administrationen indhentet viden om øvrige nordjyske kommuners\nanvendelse af puljemidler fra Landsbyfornyelsespuljen.\nBlandt de beskrevne modeller er bl.a. en tilpasning af nuværende model for nedrivning,\nmen som i højere grad vurderes at kunne møde behovet for forskønnelse gennem\nforbedring af byrum.\nAdministrationen har i sin vurdering lagt vægt på modellernes forventede evne til at\nunderstøtte synlige forskønnelsesindsatser i lokalsamfundene, behovet for lokalt\nengagement og medfinansiering samt de administrative ressourcer, der kræves for at\ngennemføre indsatserne. Se bilag for en nærmere beskrivelse af de enkelte modellers\nindhold, fordele og ulemper.\n\nModel 1. Videreførelse af nedrivningsindsats kombineret med\nbyrumsforskønnelse bygger videre på en indsats, hvor kommunen har stor\nerfaring med gennemførelsen, samtidig med at forskønnelseseffekten kan øges.\n\nModel 2. Istandsættelse af nedslidte bygninger vurderes at kunne skabe synlige\nforbedringer af eksisterende bygninger og lokale mødesteder, men er samtidig\nafhængig af ejernes økonomiske medvirken og interesse for at gennemføre\nprojekterne.\n\nModel 3. Områdefornyelse giver mulighed for større og mere helhedsorienterede\nudviklingsindsatser, men er samtidig den mest ressourcekrævende model at\nigangsætte og administrere i forhold til de tilgængelige økonomiske midler.\n\nModel 4. Understøttelse af frivillige forskønnelsesindsatser kan fremme lokalt\nengagement og frivillige initiativer, men vurderes samtidig at være sårbar over for\nvariationer i lokale ressourcer og frivillig deltagelse. Herudover er der tale om et\nnyt format for anvendelse af landsbyfornyelsespuljen uden direkte reference fra\nandre af de forespurgte kommuner.\n\nAdministrationen anbefaler en kombinationsmodel, hvor hovedparten af de årligt afsatte\nmidler (ca. 80 %) anvendes til Model 1, der viderefører nedrivningsindsatsen kombineret\nmed byrumsforskønnelse. Den resterende andel på ca. 20 % foreslås anvendt til\nistandsættelse af nedslidte bygninger. Både i model 1 og 2 kan indarbejdes muligheden\nfor mobilisering af frivillige indsatser, men samtidigt kan modellerne også realiseres\nuagtet omfanget af frivillige, der ønsker at medvirke i den faktiske projektgennemførelse.\nHvis udvalget følger administrationens indstilling, vil administrationen arbejde med at\nfinde egnede emner til brug for en kommende nedrivningsrunde (model 1) primo 2027 og\nheri også indtænke muligheden for at indarbejde byrumsforskønnelse som beskrevet i\nbilag 3. I forbindelse hermed vil administrationen også følge udvalgets anbefaling om via\n\nDistriktsrådet at komme i dialog med lokale borgergrupper og lokalråd for at afklare\nmulige driftsscenarier. Sideløbende hermed vil administrationen udarbejde forslag til\nkriterier, proces og tidsplan for gennemførelse af indsatsen i model 2 og forelægge til\nefterfølgende politisk godkendelse."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Teknik og Miljø indstiller, at\n1. der arbejdes videre med en model 1 for nedrivning og byrumsforskønnelse med\nallokering af ca. 80 % af puljemidlerne\n2. administrationen for model 2 udarbejder kriterier, proces og tidsplan, der\nforelægges til efterfølgende politisk godkendelse."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Bilag 1 Strategisk Landsbyforskønnelse (DokumentID: 8934650 - EMN-2026-02885)",
+     "url": null
+    },
+    {
+     "navn": "2. Bilag 2 Hidtidig administration af Landsbyfornyelsespuljen (DokumentID: 8934648 - EMN-2026-02885)",
+     "url": null
+    },
+    {
+     "navn": "3. Bilag 3 Uddybende beskrivelse af modeller med fordele og ulemper rev02 (DokumentID: 8988245 - EMN2026-02885)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-6": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-kultur-idraet-forening-og-lokalsamfund-6",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Kultur, Idræt, Forening og Lokalsamfund",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=8201a9c9-358c-45de-b531-778e8f0de979",
+   "hentet": "2026-11-26T14:21:08.759Z",
+   "titel": "Underskriftside",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende beslutningsprotokollen. For at godkende beslutningsprotokollen,\nskal hvert medlem underskrive ved at trykke på ”Godkend”."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionssekretariatet indstiller, at beslutningsprotokollen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-1": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-1",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Arbejdsmarked, Virksomheder og Uddannelse",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b40f637d-c603-4301-8745-4fd0c47636ba",
+   "hentet": "2026-11-26T14:21:13.699Z",
+   "titel": "Beslutning om godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende dagsordenen for mødet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionssekretariatet indstiller, at dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-2": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-2",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Arbejdsmarked, Virksomheder og Uddannelse",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b40f637d-c603-4301-8745-4fd0c47636ba",
+   "hentet": "2026-11-26T14:21:13.699Z",
+   "titel": "Orientering om Sprogcenter Frederikshavns fremtidige placering",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På mødet den 3. november 2026 anmodede Udvalget for Arbejdsmarked, Virksomheder\nog Uddannelse om en sag vedrørende Sprogskolens placering. Med denne sag\nfremlægges administrationens vurdering af forskellige perspektiver og beregninger på en\nfremtidig lokalisering af Sprogskolen.\nSprogskolen er i dag placeret på Hånbækvej 32, Frederikshavn. Som led i kommunens\nejendomsstrategi er det besluttet, at aktiviteterne på adressen skal fraflyttes, og at\nSprogskolen skal placeres på en ny lokation. Der er på nuværende tidspunkt ikke truffet\nbeslutning om den fremtidige placering.\nIntegrationsafdelingen, som tidligere var samlokaliseret med Sprogskolen på Hånbækvej,\ner blevet flyttet til Kastaniegården. Kastaniegården råder imidlertid ikke over de\nnødvendige fysiske rammer til også at huse Sprogskolen, hvorfor der skal findes en\nalternativ løsning for Sprogskolens fremtidige placering.\nSprogcenteret har et betydeligt aktivitetsniveau med 348 aktive kursister fordelt på de tre\ndanskuddannelser og et årligt gennemløb på omkring 530 kursister. Aktuelt udgør\nborgere med ukrainsk baggrund omkring halvdelen af kursisterne, hvilket understreger\nbehovet for fleksibilitet i både kapacitet, medarbejderstab og lokaleforhold da nye kriser i\nverden eller ophør af en krise hurtigt kan ændre kursistantallet.\nPå baggrund af det nuværende aktivitetsniveau og kursistsammensætning er der behov\nfor mindst syv undervisningslokaler samt faciliteter til modultest, visitation, administration,\nmedarbejderarbejdspladser og opholdsarealer. Samlet er der behov for 13 lokaler samt\ntilhørende fælles- og opholdsarealer for at kunne understøtte den nuværende drift og\nsikre mulighed for nødvendig fleksibilitet i holdsammensætningen. Fleksibiliteten i\nholdsammensætning skal sikre optimering af gennemløbstider for kursisterne, og betyder\nat max. 2 modulniveauer samles i samme klasse.\nStørstedelen af kursisterne er bosat i eller omkring Frederikshavn. Der er ca. 250\nkursister fra Frederikshavn, knap 70 kursister fra Skagen og Ålbæk, omkring 30 kursister\nfra Sæby/Østervrå mm. samt 12 kursister fra Læsø (online).\nErfaringen viser, at længere transportafstand øger risikoen for fravær og frafald og giver\nlængere uddannelsesforløb. Det gælder særligt for kursister i beskæftigelse, kursister\nmed børn samt kursister med begrænset adgang til transport.\nF.eks. blev der i 2024 etableret et sprogtilbud i Skagen for beskæftigede kursister\nbosiddende i Skagen og omegn. Resultatet er at kursisterne nu fremmøder mere til\n\nundervisningen og har en god progression hen imod færdiggørelse af deres\ndanskuddannelse. Sprogcenterets geografiske placering har derfor væsentlig betydning\nfor kursisternes transporttid, fremmøde og gennemførelse af danskuddannelsen.\nAdministrationen har også vurderet forskellige placeringsmuligheder i forhold til\nbefordringsudgifter til kursisterne, som dækkes af Jobcentret. Denne viser, at en\nplacering uden for Frederikshavn vil medføre øgede kommunale befordringsudgifter for\nhovedparten af kursisterne, da det er kursister der deltager i danskuddannelse som led i\nintegrations- eller beskæftigelsesindsatsen. De beregnede årlige merudgifter til befordring\nudgør ca. 570.000 kr. ved en placering i Gærum, ca. 912.000 kr. ved en placering i Sæby\nog ca. 1,7 mio. kr. ved en placering i Skagen. Hertil kommer administrative ressourcer til\nsagsbehandling og opfølgning på befordringsgodtgørelse. I tallene er fratrukket kursister,\nder allerede modtager kørselsgodtgørelse. Udgiften er bruttotal, hvor der kan hjemtages\n50% refusion fra staten. Til sammenligning er der pt. samlet set 12 A-kursister\n(dagpenge), som modtager transportgodtgørelse for fremmødte dage.\nEn placering uden for Frederikshavn vurderes samtidig at svække den nuværende\nsammenhæng mellem sprogundervisning og integrationsindsatsen. Sprogcenteret spiller\ndesuden en vigtig rolle i kommunens arbejde med at understøtte rekruttering,\nfastholdelse og integration af international arbejdskraft, som efterspørges af lokale\nvirksomheder. Derudover kan en placering udenfor Frederikshavn/nordligere end\nFrederikshavn gøre det sværere at fastholde og rekruttere sprogskolelærere, der primært\nkommer fra Aalborg.\nAdministrationen vurderer samlet set, at en placering i Frederikshavn bedst understøtter\nhensynet til kursisternes tilgængelighed, den kommunale integrationsindsats,\nvirksomhedernes behov for arbejdskraft samt en økonomisk bæredygtig drift. Placeringen\nsikrer den bedste tilgængelighed for størstedelen af kursisterne, minimerer risikoen for\nfravær og frafald og undgår væsentlige merudgifter til befordring."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Jobcenter Frederikshavn indstiller, at orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Fremtidig placering af Sprogcenter Frederikshavn - bilag (DokumentID: 8991961 - EMN-2025-01070)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-3": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-3",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Arbejdsmarked, Virksomheder og Uddannelse",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b40f637d-c603-4301-8745-4fd0c47636ba",
+   "hentet": "2026-11-26T14:21:13.699Z",
+   "titel": "Orientering om KL's tværkommunale brugerundersøgelse 2026",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "KL’s borgertilfredshedsundersøgelse gennemføres årligt for at måle borgernes oplevelse\naf mødet med jobcentret og kvaliteten af den service, de modtager. Undersøgelsen giver\nmulighed for at sammenligne borgernes tilfredshed i Jobcenter Frederikshavn med\nlandsgennemsnittet og bidrager dermed med vigtig viden om, hvordan jobcentrets indsats\nopleves af borgerne.\nUndersøgelsen understøtter Jobcenter Frederikshavns Beskæftigelsesplan, hvor der er\nfokus på, at alle ledige skal mødes med en værdig, respektfuld og professionel\nsagsbehandling. Resultaterne anvendes derfor som et redskab til løbende at følge op på\nborgernes oplevelse af kontakten med jobcentret og identificere eventuelle områder med\nbehov for forbedring.\nMed beskæftigelsesreformen er de tidligere benchmarkmålinger på\nbeskæftigelsesområdet udfaset. I stedet er der etableret en ny national model for\nresultatopfølgning, som træder i kraft pr. 1. januar 2027. De nye resultatmålinger har til\nformål at flytte fokus fra sammenligninger mellem kommuner til resultater, der i højere\ngrad viser, hvordan kommunerne lykkes med at hjælpe borgere i job og uddannelse.\nFremadrettet vil borgertilfredshedsundersøgelser indgå som en af seks nationale\nresultatmålinger på beskæftigelsesområdet.\nOverordnet set er resultaterne for undersøgelsen positive. Frederikshavn scorer over\nlandsgennemsnittet i 5 ud af 5 kategorier.\nUndersøgelsen er foretaget ved en stikprøveudtagelse af borgere, som i efteråret 2026\nhavde en aktiv sag i jobcentret og deltog i en samtale i den givne periode. I\nFrederikshavn har 33,7 % af de adspurgte besvaret spørgeskemaet – inkl. delvise\nbesvarelser. Dette er lige under landsgennemsnittet, hvor 36,0 % har svaret inkl. delvise\nbesvarelser. Hvert spørgsmål er på en skala fra 1-5, hvor 5 er meget tilfreds eller meget\nenig.\nSpørgeskemaet består udover den overordnede tilfredshed af i alt 5 temaer, som\nafdækker borgerens oplevelse af: Mødet med jobcenteret, mål og aktiviteter i forløbet,\nseneste samtale med sagsbehandler, progression mod arbejde eller uddannelse samt\nsamlet tilfredshed med forløb.\nResultaterne er:\n\nI forhold til den overordnede tilfredshed ligger Frederikshavn på 4,0 ud af 5,\nhvilket er tilfredsstillende sammenholdt med landsgennemsnittet på 3,62.\n\nI temaet \"Mødet med jobcentret\" er gennemsnittet for Frederikshavn på 3,94.\nSammenholdes det med landsgennemsnittet på 3,70, ligger Frederikshavn også\nover gennemsnittet i dette tema.\n\nOgså i temaet om mål og aktiviteter er gennemsnittet i Frederikshavn (3,69)\nhøjere end landsgennemsnittet (3,39).\n\nBorgerne blev ligeledes spurgt, om de føler, at de forskellige afdelinger i\nkommunen arbejder godt sammen om deres forløb. Her er Frederikshavn med\n3,48 over landsgennemsnittet på 3,01.\n\nTemaet vedrørende den seneste samtale dækker over seks forskellige\nspørgsmål. Kommunens gennemsnit er for disse 3,97, hvor landsgennemsnittet\ner på 3,72.\n\nI det sidste tema omhandlende progression er kommunen også over\nlandsgennemsnittet med 3,28 mod 2,94.\n\nResultaterne af undersøgelsen vil blive drøftet i jobcentrets ledergruppe og vil i den\nkommende tid blive drøftet med medarbejderne i de respektive afdelinger. Her vil mulige\nudviklingspunkter blive identificeret, så der kan arbejdes videre med disse."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Jobcenter Frederikshavn indstiller, at orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Tværkommunal borgerundersøgelse Frederikshavn (DokumentID: 8988217 - EMN-2021-03514)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-4": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-4",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Arbejdsmarked, Virksomheder og Uddannelse",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b40f637d-c603-4301-8745-4fd0c47636ba",
+   "hentet": "2026-11-26T14:21:13.699Z",
+   "titel": "Orientering om investeringscases",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunens økonomi står i de kommende år over for betydelige udfordringer. På\nbeskæftigelsesområdet ses stigende udgifter til forsørgelse, særligt på\nførtidspensionsområdet, samtidig med at virksomhederne oplever mangel på arbejdskraft\nsom følge af den historisk lave ledighed. Hertil kommer forventede besparelseskrav som\nfølge af den nye beskæftigelsesreform samt et fortsat udgiftspres på de specialiserede\nsocialområder for både børn, unge og voksne.\nI denne situation kan det være vigtigt at arbejde strategisk med investeringstænkning.\nFormålet er at identificere indsatser, hvor en målrettet investering i dag kan skabe bedre\nresultater for borgerne og samtidig reducere kommunens udgifter på længere sigt.\nInvesteringsstrategier bygger på princippet om, at kommunen i en afgrænset periode\ntilfører ekstra ressourcer til en indsats for efterfølgende at opnå varige økonomiske og\nsamfundsmæssige gevinster. Gevinsterne kan bestå af færre udgifter til offentlig\nforsørgelse, færre sociale foranstaltninger, øgede skatteindtægter samt reduceret behov\nfor andre kommunale indsatser.\nInvesteringstænkning forbindes ofte med beskæftigelsesområdet, hvor målet er at hjælpe\nborgere hurtigere og mere varigt i beskæftigelse eller uddannelse gennem intensive,\nvirksomhedsrettede eller tværfaglige indsatser. Tilgangen kan imidlertid også anvendes\npå andre områder. På det sociale område kan tidlige og effektive indsatser understøtte\nborgernes mestringsevne og selvhjulpenhed, mens investeringer på økonomiområdet\nkan bidrage til en mere effektiv håndtering af f.eks. mellemkommunale refusioner og\ndermed sikre hjemtagelse af indtægter, som kommunen er berettiget til.\nDer er flere væsentlige argumenter for at arbejde systematisk med investeringsstrategier:\n\nLangvarig eller permanent offentlig forsørgelse er forbundet med betydelige\nkommunale udgifter.\n\nOmfattende og langvarige sociale indsatser kan medføre store udgifter over\nmange år.\n\nBorgere, der opnår beskæftigelse eller uddannelse, bidrager til arbejdsudbuddet\nog kommunens skattegrundlag.\n\nVirksomhedernes efterspørgsel efter arbejdskraft giver mulighed for at bringe\nflere borgere tættere på arbejdsmarkedet.\n\nTidlige og intensive indsatser kan forebygge, at problemer udvikler sig og kræver\nmere omfattende og dyrere indsatser senere.\n\nEn forudsætning for succesfulde investeringsstrategier er, at de forventede gevinster kan\ndokumenteres eller sandsynliggøres, og at der er et realistisk potentiale for at forbedre\nborgernes tilknytning til arbejdsmarkedet eller reducere behovet for støtte og hjælp.\nErfaringer og analyser på området peger på, at investeringstænkning særligt kan være\nrelevant inden for følgende målgrupper:\n\nSygemeldte borgere\nTidlig, tværfaglig og virksomhedsrettet indsats kan forkorte sygefraværsforløb og\nreducere antallet af borgere, der overgår til længerevarende ydelser.\n\nAktivitetsparate kontanthjælpsmodtagere\nInvesteringer i en koordineret jobrettet indsats, virksomhedsrettede tilbud og\nparallelle sociale indsatser kan reducere meget lange forsørgelsesforløb.\n\nUnge uden uddannelse eller beskæftigelse\nTidlige indsatser over for unge kan give gevinster over mange år gennem\nreduceret offentlig forsørgelse og øget arbejdsmarkedstilknytning.\n\nVirksomhedsrettede indsatser\nFlere analyser peger på, at virksomhedsplaceringer, løntilskud, småjob, ordinære\ntimer og tæt samarbejde med lokale virksomheder ofte giver et bedre afkast end\nrent kursus- og vejledningsbaserede tilbud.\n\nEn investering i en styrket sygedagpengeindsats kan f.eks. være rentabel, hvis\nsygefraværsperioden for en gruppe borgere reduceres med blot få uger. På samme\nmåde kan selv mindre reduktioner i lange kontanthjælpsforløb skabe betydelige\nøkonomiske gevinster, når de samlede forsørgelsesudgifter over tid reduceres.\nInvesteringstænkning kan være et relevant redskab til både at forbedre borgernes\nmuligheder for selvforsørgelse og styrke kommunens økonomi. Potentialet på\nbeskæftigelsesområdet vurderes særligt at være til stede på områder med høj\nforsørgelsesudgift, lange sagsforløb og dokumenteret effekt af virksomhedsrettede eller\nintensive indsatser."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Jobcenter Frederikshavn indstiller, at orienteringen tages til efterretning."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Skabelon til investeringscase sagsfremstilling (DokumentID: 8991993 - EMN-2022-03340)",
+     "url": null
+    }
+   ]
+  },
+  "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-5": {
+   "id": "frederikshavn-2026-12-01-udvalget-for-arbejdsmarked-virksomheder-og-uddannelse-5",
+   "kommune": "Frederikshavn",
+   "udvalg": "Udvalget for Arbejdsmarked, Virksomheder og Uddannelse",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=b40f637d-c603-4301-8745-4fd0c47636ba",
+   "hentet": "2026-11-26T14:21:13.699Z",
+   "titel": "Underskriftside",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalget skal godkende beslutningsprotokollen. For at godkende beslutningsprotokollen,\nskal hvert medlem underskrive ved at trykke på ”Godkend”."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Direktionssekretariatet indstiller, at beslutningsprotokollen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "frederikshavn-2026-11-25-frederikshavn-byraad-14": {
+   "id": "frederikshavn-2026-11-25-frederikshavn-byraad-14",
+   "kommune": "Frederikshavn",
+   "udvalg": "Frederikshavn Byråd",
+   "dato": "2026-11-25",
+   "type": "referat",
+   "nr": 14,
+   "kilde": "https://dagsordener.frederikshavn.dk/vis?id=27d09d0a-4816-46ce-8880-f1e5d10b5c16",
+   "hentet": "2026-11-26T14:21:22.079Z",
+   "titel": "Beslutning om salg af erhvervsjord ved Ole Rømers Vej i Frederikshavn",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunen har udbudt et erhvervsareal på ca. 36.000 m² beliggende ved Ole Rømers\nVej i Frederikshavn til salg i offentligt udbud med en mindstepris på 35 kr. pr.m².\nVed budfristens udløb var der modtaget ét købstilbud på 1.350.000 kr., svarende til ca.\nDet udbudte areal består af tre matrikler, som alle er omfattet af kommuneplanramme\nFRE.E.13.18, som udlægger området til erhvervsformål. To af matriklerne er beliggende i\nlandzone.\nFor at arealet kan anvendes til erhvervsformål i overensstemmelse med\nkommuneplanens rammer, skal der udarbejdes lokalplan, hvor de berørte arealer\noverføres fra landzone til byzone. Såfremt købers projekt kræver ny lokalplan, kan køber\nefter overtagelsen anmode om igangsættelse af ny planlægning.\nBilag 2 forbliver lukket efter behandlingen af sagen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "Center for Teknik og Miljø indstiller, at arealet sælges til tilbudsgiver for 1.350.000 kr."
+    },
+    {
+     "titel": "Behandling i Udvalget for Økonomi og Strategi 18. november 2026",
+     "tekst": "Anbefales.\n\nBeslutninger:\nGodkendt.\nAfbud fra Klaus Hjulmand (I). I stedet deltog Joakim Madsen (I)."
+    }
+   ],
+   "bilag": [
+    {
+     "navn": "1. Kortbilag - Ole Rømers Vej (DokumentID: 8931090 - GEO-2026-03822)",
+     "url": null
+    },
+    {
+     "navn": "2. (Lukket bilag)",
+     "url": null
+    }
+   ]
   }
  },
  "sitemaps": {
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=63743b1a-cf51-4905-9f52-e73754227da7": {
    "senest": "2026-11-24",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=f3f22547-4a77-4344-9fd7-51e90f362372": {
    "senest": "2025-11-25",
@@ -15130,7 +16484,7 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=c0a29d3f-b90c-4c82-b888-4a009047f79e": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=259d73d6-703b-425e-a18a-6c4bbd87ec8c": {
    "senest": "2009-01-26",
@@ -15158,7 +16512,7 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=21922a00-1c1f-41dd-96e6-79f521669cd2": {
    "senest": "2026-11-24",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=8b6fcfe1-3046-4c91-86dc-5399a1afa152": {
    "senest": "2025-11-25",
@@ -15170,7 +16524,7 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=dc6a12f9-44ab-42ca-8791-a1bc5f32d76e": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=99034bd8-cc4d-4553-a02e-5d7b0f0f7277": {
    "senest": "2025-11-14",
@@ -15189,12 +16543,12 @@
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=737fbf04-c5a2-4307-868a-1746cc7e6bce": {
-   "senest": "2026-09-18",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=e2ee3cff-2197-45fc-810c-367f7154299d": {
    "senest": "2025-12-10",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=dd44d062-bffc-4234-b7a1-79d6112545af": {
    "senest": "2015-04-22",
@@ -15202,11 +16556,11 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=880002e4-8183-4c73-a17e-931a99c63536": {
    "senest": "2026-06-09",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=e0715c98-77e9-43b9-ba53-5979dc59c308": {
    "senest": "2025-11-27",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=c7999cb2-db26-4df1-9c92-e07b7b96d724": {
    "senest": "2024-09-30",
@@ -15230,7 +16584,7 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=ab4ebfc0-f6da-4e3d-9b8a-85de0a21330e": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=bbfff517-3ad8-46cd-b0aa-2eac15acff4a": {
    "senest": "2024-09-30",
@@ -15238,39 +16592,39 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=3e659174-328a-4457-819e-c7872347e7a6": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=10b53783-ef8d-40f3-a20c-c0f8edc0bfa1": {
-   "senest": "2026-11-06",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=900300b2-6482-4ab8-9f7a-5280f0af8676": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=911807ad-354e-4857-9ace-a29e28a40b44": {
-   "senest": "2026-11-05",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=e20cee0b-fc56-42a9-8792-61d6fce67d7d": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=f4401213-0c0c-4029-a5bc-fd0072864e4f": {
-   "senest": "2026-11-04",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=c762af87-b457-4559-998e-e14fb0874625": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=fef3646b-7721-4a0d-aa95-817b0616c1d5": {
-   "senest": "2026-11-04",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=6dd3cbb8-2486-4b3c-92ed-edfda5f92bc7": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=4114f61a-604b-49fa-b61b-419f1c70db51": {
    "senest": "2024-09-30",
@@ -15282,7 +16636,7 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=a09fcf34-0ccb-44e7-95fd-919f70998715": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=8c621f02-6e0e-4a98-8c66-9342e9e35ee2": {
    "senest": "2025-09-27",
@@ -15294,11 +16648,11 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=b927de0c-7a03-465c-930d-e6aff14a8acb": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=ae6a89fa-286f-4444-b54b-0d64d54917ca": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=7d21e7cd-54d0-4b1d-90ad-5f6f30704fe0": {
    "senest": "2024-09-30",
@@ -15306,19 +16660,19 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=7f80fc45-5eff-49c8-a1b4-e1cb75249268": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=4026a255-bed9-4dda-99ce-27d3a0ecbc26": {
    "senest": "2024-09-30",
    "tjekket": "2026-11-24"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=d9ad17cf-e62f-4eba-89be-7a7f68fa478c": {
-   "senest": "2026-11-19",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=e3e2ab69-f552-4a40-9896-e24cf6671d00": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=10b98425-f7a5-4053-9480-90a139308c77": {
    "senest": "2024-09-30",
@@ -15326,7 +16680,7 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=ad77f346-a8d5-4130-b5e0-91000a7d0be5": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=2e622b57-e495-4953-b1fc-2e70fc8d4cd5": {
    "senest": "2024-09-30",
@@ -15334,7 +16688,7 @@
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=9bac7ec7-5abc-48c6-8f39-9c513cf262fd": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.frederikshavn.dk/Sitemap/ForCommittee?committeeId=e99012d3-0f45-4afd-a670-ed5e027c6317": {
    "senest": "2024-09-30",
@@ -15346,6 +16700,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-25T23:32:49.867Z",
+ "opdateret": "2026-11-26T14:21:22.081Z",
  "kommune": "Frederikshavn"
 }

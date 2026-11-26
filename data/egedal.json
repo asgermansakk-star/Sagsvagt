@@ -727,6 +727,38 @@
    "dato": "2026-12-02",
    "punkter": 7,
    "parser": 3
+  },
+  "4129d49b-17a9-4ccc-a500-1f155bdfbdd9": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Plan- og Byudviklingsudvalget",
+   "dato": "2026-12-01",
+   "punkter": 6,
+   "parser": 3
+  },
+  "6cd9b576-c3da-400d-a10b-e0e76e116c82": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Idræts-, Fritids- og Kulturudvalget",
+   "dato": "2026-12-03",
+   "punkter": 6,
+   "parser": 3
+  },
+  "04a4d86b-215a-4b79-ba6b-f0653c674b51": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Erhvervs- og Bæredygtighedsudvalget",
+   "dato": "2026-12-01",
+   "punkter": 6,
+   "parser": 3
+  },
+  "4cbcf418-c787-486a-9ee7-14f2038ebd7c": {
+   "lastmod": "2026-11-26",
+   "type": "referat",
+   "udvalg": "Byrådet",
+   "dato": "2026-11-25",
+   "punkter": 16,
+   "parser": 3
   }
  },
  "sager": {
@@ -10118,12 +10150,17 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Der var afbud fra Bo Vesth (V) og Jens Skov (F).\nDer var afbud fra Mai Nørreskov (A). Brian Øllegaard (A) blev godkendt som\nstedfortræder.\nAllan Bøwig (O) deltog ikke under punkt 1-8.\nHelle Bovien deltog ikke under punkt 17-22.\nBo Brøndum Petersen (B) spurgte, om han var inhabil ift. behandlingen af punkt 19 –\nAnden runde af borgerbudget 2026 med forlænget ansøgningsfrist, da han er formand for\nSlagslunde-Ganløse Menighedsråd, der står som ansøger på flere af forslagene til\nborgerbudgettet.\nDer blev stemt om Bo Brøndum Petersens inhabilitet.\nFor inhabilitet stemte A, B, C, Jonathan Kristensen (F), I, L, Karsten Søndergaard (V),\nAnne Mollerup Lanz (V), Anders Bo Larsen (V) og Ø med i alt 17 stemmer.\nImod inhabilitet stemte E i alt 1 stemme.\nBo Brøndum Petersen (B) blev erklæret inhabil.\nBirgitte Neergaard-Kofod (C) spurgte, om hun var inhabil ift. behandlingen af punkt 19 –\nAnden runde af borgerbudget 2026 med forlænget ansøgningsfrist, da hun er gift med\nanden-oldermanden fra Ledøje Bylaug. Bjørn Weitemeyer/ Ledøje Bylaug står som\nansøger på ét af forslagene til borgerbudgettet.\nDer blev stemt om Birgitte Neergaard-Kofods inhabilitet.\nFor inhabilitet stemte I med i alt 2 stemmer.\nImod inhabilitet stemte A, B, C, E, Jonathan Kristensen (F), L, Karsten Søndergaard (V),\nAnne Mollerup Lanz (V), Anders Bo Larsen (V) og Ø med i alt 16 stemmer.\nBirgitte Neergaard-Kofod (C) blev ikke erklæret inhabil.\nUlrik John Nielsen (L) spurgte, om han var inhabil ift. behandlingen af sag 13 Principbeslutning om den fremtidige anvendelse af Kildedal Nord, da han ejer et\njordstykke i nærheden af området.\nDer blev stemt om Ulrik John Nielsens inhabilitet.\nFor inhabilitet stemte I med i alt 2 stemmer.\nImod inhabilitet stemte A, B, C, E, Jonathan Kristensen (F), L, Karsten Søndergaard (V),\nAnne Mollerup Lanz (V), Anders Bo Larsen (V) og Ø med i alt 16 stemmer.\nUlrik John Nielsen (L) blev ikke erklæret inhabil.\nDagsordenen godkendt."
+    }
+   ],
    "bilag": []
   },
   "egedal-2026-11-25-byraadet-2": {
@@ -10131,10 +10168,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Lånegaranti Egedal Fjernvarme A/S 2027 - beslutning",
    "afsnit": [
     {
@@ -10148,6 +10185,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10157,10 +10198,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "I/S Vestforbrænding - Godkendelse af låneramme 2027 - beslutning",
    "afsnit": [
     {
@@ -10174,6 +10215,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Der blev stemt om administrations indstilling.\nFor stemte Birgitte Neergaard-Kofod (C), Johan Hahn (E), Rikke Mortensen (B), Ulrik\nJohn Nielsen (L), Karsten Søndergaard (V) og Vicky Holst Rasmussen (A) med i alt 6\nstemmer.\nImod stemte Edith Thingstrup (I) med i alt 1 stemme.\nJens Skov (F) og Anders Bo Larsen (V) var fraværende.\nIndstillingen anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10183,10 +10228,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "I/S Vestforbrænding - Godkendelse af kreditfacilitet og kommunal garantistillelse - beslutning",
    "afsnit": [
     {
@@ -10200,6 +10245,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Der blev stemt om administrations indstillinger.\nFor stemte Birgitte Neergaard-Kofod (C), Johan Hahn (E), Rikke Mortensen (B), Ulrik\nJohn Nielsen (L), Karsten Søndergaard (V) og Vicky Holst Rasmussen (A) med i alt 6\nstemmer.\nImod stemte Edith Thingstrup (I) med i alt 1 stemme.\nJens Skov (F) og Anders Bo Larsen (V) var fraværende.\nIndstillingerne anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Der blev stemt om administrationens indstillinger.\nFor stemte A, B, C, E, Jonathan Kristensen (F), L, Karsten Søndergaard (V), Anne\nMollerup Lanz (V), Anders Bo Larsen (V) og Ø med i alt 16 stemmer.\nImod stemte I med i alt 2 stemmer.\nBo Vesth (V), Jens Skov (F) og Allan Bøwig (O) var fraværende.\nIndstillingerne blev godkendt."
     }
    ],
    "bilag": []
@@ -10209,10 +10258,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Godkendelse af stiftelsesdokumenter for IT29 A/S - beslutning",
    "afsnit": [
     {
@@ -10226,6 +10275,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10235,10 +10288,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Revideret plejeplan for fredningen Tunneldale ved Ganløse og Slagslunde - beslutning",
    "afsnit": [
     {
@@ -10256,6 +10309,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Der blev stemt om indstillingen.\nFor stemte A, B, C, E, Jonathan Kristensen (F), I, Lars Winther Andersen (L), Janus Veje\n(L), Karsten Søndergaard (V), Anne Mollerup Lanz (V), Anders Bo Larsen (V) og Ø med i\nalt 17 stemmer.\n\nUlrik John Nielsen (L) undlod at stemme.\nBo Vesth (V), Jens Skov (F) og Allan Bøwig (O) var fraværende.\nIndstillingen blev godkendt."
     }
    ],
    "bilag": []
@@ -10265,10 +10322,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 8,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Forslag til kommissorium § 17.4-udvalg inden for beredskab - beslutning",
    "afsnit": [
     {
@@ -10286,6 +10343,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Birgitte Neergaard-Kofod (C) og Rikke Mortensen (B) stillede ændringsforslag om at følge\nadministrationens indstilling.\nDer blev stemt om ændringsforslaget.\nFor stemte Birgitte Neergaard-Kofod (C), Rikke Mortensen (B), Johan Hahn (E) og Ulrik\nJohn Nielsen (L) med i alt 4 stemmer.\nImod stemte Karsten Søndergaard (V), Vicky Holst Rasmussen (A) og Edith Thingstrup\n(I) med alt 3 stemmer.\nJens Skov (F) og Anders Bo Larsen (V) var fraværende.\nÆndringsforslaget anbefalet.\nKarsten Søndergaard (V), Vicky Holst Rasmussen (A) og Edith Thingstrup (I) fremsatte\nfølgende mindretalsudtalelse: Udarbejdelsen af kommissoriet skal afvente ansættelse af\nberedskabskoordinator."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "A, I og V fremsatte følgende ændringsforslag som en samlet erstatning for\nadministrationens indstilling:\n\n1. Beslutningen om at nedsætte et § 17, stk. 4-udvalg om beredskab udsættes, indtil\nberedskabskoordinatoren er ansat.\n\n2. Beredskabskoordinatoren udarbejder en kortlægning af kommunens beredskab og\nde ressourcer, der findes hos civilsamfund, foreninger og virksomheder.\nKortlægningen forelægges Klima-, Teknik- og Miljøudvalget senest 6 måneder\nefter ansættelsen.\n3. Kortlægningen skal indeholde et forslag til, hvordan civilsamfundet inddrages. Det\nkan være et § 17, stk. 4-udvalg, eller et lettere alternativ, fx et beredskabsnetværk\nmed et årligt møde og evt. en fælles øvelse.\n4. Inddragelsen af civilsamfundet i beredskabet koordineres med den igangværende\ncivilsamfundsstrategi, så der ikke opstår dobbeltarbejde.\n5. Borgermødet om hjemmeberedskab gennemføres uafhængigt af\nudvalgsstrukturen og så hurtigt som muligt.\n\nFor stemte A, I, Karsten Søndergaard (V), Anne Mollerup Lanz (V) og Anders Bo Larsen\n(V) med i alt 8 stemmer.\nImod stemte B, C, E, Jonatan Kristensen (F), L og Ø med i alt 10 stemmer.\nBo Vesth (V), Jens Skov (F) og Allan Bøwig (O) var fraværende.\nÆndringsforslaget faldt.\nIndstillingen fra Økonomiudvalget blev godkendt."
     }
    ],
    "bilag": []
@@ -10295,10 +10356,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Plan for salg af kommunale arealer - beslutning",
    "afsnit": [
     {
@@ -10316,6 +10377,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Der blev stemt om ændringsforslaget stillet i Plan- og Byudviklingsudvalget.\nFor stemte Birgitte Neergaard-Kofod (C), Rikke Mortensen (B), Johan Hahn (E), Ulrik\nJohn Nielsen (L) og Vicky Holst Rasmussen (A) med i alt 5 stemmer.\nImod stemte Edith Thingstrup (I) og Karsten Søndergaard (V) med i alt 2 stemmer.\nJens Skov (F) og Anders Bo Larsen (V) var fraværende.\nEdith Thingstrup (I) og Karsten Søndergaard (V) ønskede følgende mindretalsudtalelse:\nVi stemmer imod, da vi mener helhedsplanen for Egedal By skal opdateres med en\nsamlet plan for parkeringsforhold og rekreative muligheder.\nØkonomiudvalget anbefaler, at Barnekæret udgår af salgslisten som indstillet af Plan- og\nByudviklingsudvalget.\nIndstillingen med ovennævnte ændringsforslag anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen fra økonomiudvalget blev godkendt med følgende tilføjelse: Administrationen\ngives mandat til, at når A11.1, A11.2 eller A12 sættes til salg, skal matrikel 4gr indgå i\nsalget med den klausul, at arealet skal udlægges til rekreativt grønt område."
     }
    ],
    "bilag": []
@@ -10325,10 +10390,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Budget 2027 for Ølstykke almennyttige Boligselskabs afdeling 1, Svanholmvænge - beslutning",
    "afsnit": [
     {
@@ -10346,6 +10411,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Der blev stemt om indstillingen.\nFor stemte A, B, C, E, I, L, O, Karsten Søndergaard (V), Anne Mollerup Lanz (V) og\nAnders Bo Larsen (V) med i alt 17 stemmer.\nImod stemte Ø med i alt 1 stemme.\nJonathan Kristensen (F) undlod at stemme.\nBo Vesth (V) og Jens Skov (F) var fraværende.\nIndstillingen blev godkendt."
     }
    ],
    "bilag": []
@@ -10355,10 +10424,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 11,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Budget 2027 for DUAB's afdeling 32, Bækkegården - beslutning",
    "afsnit": [
     {
@@ -10376,6 +10445,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Der blev stemt om indstillingen.\nFor stemte A, B, C, E, Jonathan Kristensen (F), I, L, O, Karsten Søndergaard (V), Anne\nMollerup Lanz (V) og Anders Bo Larsen (V) med i alt 18 stemmer.\nImod stemte Ø med i alt 1 stemme.\nBo Vesth (V) og Jens Skov (F) var fraværende.\nIndstillingen blev godkendt."
     }
    ],
    "bilag": []
@@ -10385,10 +10458,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 12,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Lokalplan 085 og kommuneplantillæg 4 for Smørum Idrætsområde og kraftvarme - beslutning",
    "afsnit": [
     {
@@ -10406,6 +10479,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Birgitte Neergaard-Kofod (C) stillede følgende ændringsforslag: P2 skal forblive i\nlokalplanen som mulighed for permanent parkering.\nDer blev stemt om ændringsforslaget.\nFor stemte Birgitte Neergaard-Kofod (C) med i alt 1 stemme.\nImod stemte Rikke Mortensen (B), Vicky Holst Rasmussen (A), Edith Thingstrup (I),\nJohan Hahn (E), Ulrik John Nielsen (L) og Karsten Søndergaard (V) med i alt 6 stemmer.\nJens Skov (F) og Anders Bo Larsen (V) var fraværende.\nÆndringsforslaget faldt.\nAdministrationens indstillinger blev anbefalet med den tilføjelse, at der udarbejdes simple\nretningslinjer for eventparkering."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Det Konservative Folkeparti stillede følgende ændringsforslag: P2 skal forblive i\nlokalplanen som mulighed for permanent parkering.\nDer blev stemt om ændringsforslaget.\nFor stemte C og O med i alt 3 stemmer.\nImod stemte A, B, E, Jonathan Kristensen (F), I, L, Karsten Søndergaard (V), Anne\nMollerup Lanz (V), Anders Bo Larsen (V) og Ø med i alt 16 stemmer.\nÆndringsforslaget faldt.\nDet Konservative Folkeparti stillede følgende ændringsforslag: Indstillingens punkt 1.a.\nudgår.\nDer blev stemt om ændringsforslaget.\nFor stemte C og O med i alt 3 stemmer.\nImod stemte A, B, E, Jonathan Kristensen (F), I, L, Karsten Søndergaard (V), Anne\nMollerup Lanz (V), Anders Bo Larsen (V) og Ø med i alt 16 stemmer.\nÆndringsforslaget faldt.\n\nAdministrationens indstillinger blev godkendt med den tilføjelse, at der udarbejdes simple\nretningslinjer for eventparkering.\nBo Vesth (V) og Jens Skov (F) var fraværende."
     }
    ],
    "bilag": []
@@ -10415,10 +10492,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 14,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Ganløse Vandværk - Fritagelse for grundskyld - beslutning",
    "afsnit": [
     {
@@ -10432,6 +10509,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
     }
    ],
    "bilag": []
@@ -10441,10 +10522,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 16,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Indkøbs- og Udbudspolitik - beslutning",
    "afsnit": [
     {
@@ -10462,6 +10543,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Der blev stemt om indstillingen.\nFor stemte A, B, C, E, Jonathan Kristensen (F), I, L, Karsten Søndergaard (V), Anne\nMollerup Lanz (V) og Anders Bo Larsen (V) med i alt 17 stemmer.\nImod stemte O med i alt 1 stemme.\nBo Vesth (V), Jens Skov (F) og Helle Bovien (Ø) var fraværende.\nIndstillingen blev godkendt."
     }
    ],
    "bilag": []
@@ -10471,10 +10556,10 @@
    "kommune": "Egedal",
    "udvalg": "Byrådet",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 18,
-   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=20750c55-cad5-4b7a-aeb2-d104ec2fff4b",
-   "hentet": "2026-11-20T23:19:43.747Z",
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
    "titel": "Flytning af lysværk - beslutning",
    "afsnit": [
     {
@@ -10492,6 +10577,10 @@
     {
      "titel": "Behandling i Økonomiudvalget 18. november 2026",
      "tekst": "Karsten Søndergaard (V) stillede ændringsforslag om at ny-opsætning og placering\nafventer færdiggørelse af Egedal Multiarena.\nDer blev stemt om ændringsforslaget.\nFor stemte Karsten Søndergaard (V), Vicky Holst Rasmussen (A) og Edith Thingstrup (I)\nmed i alt 3 stemmer.\nImod stemte Birgitte Neergaard-Kofod (C), Ulrik John Nielsen (L), Johan Hahn (E) og\nRikke Mortensen (B) med i alt 4 stemmer.\nJens Skov (F) og Anders Bo Larsen (V) var fraværende.\nÆndringsforslaget faldt.\nDer blev stemt om indstillingen fra Kunstrådet.\nFor stemte Birgitte Neergaard-Kofod (C), Ulrik John Nielsen (L), Johan Hahn (E) og Rikke\nMortensen (B) med i alt 4 stemmer.\nImod stemte Karsten Søndergaard (V), Vicky Holst Rasmussen (A) og Edith Thingstrup\n(I) med i alt 3 stemmer.\nJens Skov (F) og Anders Bo Larsen (V) var fraværende.\nIndstillingen fra Kunstrådet blev anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "A og V stillede følgende ændringsforslag:\nNy-opsætning og placering afventer færdiggørelse af Egedal Multiarena.\nDer blev stemt om ændringsforslaget.\nFor stemte A, I, Karsten Søndergaard (V), Anne Mollerup Lanz (V) og Anders Bo Larsen\n(V) med i alt 8 stemmer.\nImod stemte B, C, E, Jonathan Kristensen (F), L og O og med i alt 10 stemmer.\nÆndringsforslaget faldt.\nJens Skov (F), Bo Vesth (V) og Helle Bovien (Ø) var fraværende.\nIndstillingen fra Kunstrådet blev godkendt."
     }
    ],
    "bilag": []
@@ -10857,12 +10946,480 @@
     }
    ],
    "bilag": []
+  },
+  "egedal-2026-12-01-plan-og-byudviklingsudvalget-1": {
+   "id": "egedal-2026-12-01-plan-og-byudviklingsudvalget-1",
+   "kommune": "Egedal",
+   "udvalg": "Plan- og Byudviklingsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4129d49b-17a9-4ccc-a500-1f155bdfbdd9",
+   "hentet": "2026-11-26T14:13:33.538Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at dagsorden godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Godkendelse af dagsorden."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-plan-og-byudviklingsudvalget-2": {
+   "id": "egedal-2026-12-01-plan-og-byudviklingsudvalget-2",
+   "kommune": "Egedal",
+   "udvalg": "Plan- og Byudviklingsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4129d49b-17a9-4ccc-a500-1f155bdfbdd9",
+   "hentet": "2026-11-26T14:13:33.538Z",
+   "titel": "Planstrategi 2027 - første behandling - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at administrationen udarbejder forslag til Planstrategi 2027\nmed det i sagen beskrevet indhold."
+    },
+    {
+     "titel": "Baggrund",
+     "tekst": "Byrådet besluttede den 5. maj 2026 at igangsætte udarbejdelsen af Planstrategi 2027 med\ntilhørende tids- og procesplan. Følgende aktiviteter er gennemført:\nMaj 2026: Igangsættelse af Planstrategi 2027\nJuni 2026: Kvalificering af temaer ved temadrøftelse med Byrådet\nSeptember 2026: Workshop med lokalsamfundene\n\nPå temadrøftelsen den 4. juni 2026 blev der tilkendegivet et ønske om en yderligere politisk\ndrøftelse af planstrategien som opfølgning på workshoppen med lokalsamfundene og inden\nden politiske behandling af forslag til Planstrategi 2027.\nAdministrationen fremlægger derfor denne sag med oplæg til Planstrategi 2027 til første\nbehandling, inden administrationen udarbejder forslag til planstrategi 2027 fremlægges til\nvedtagelse med henblik på offentlig høring. Oplægget giver mulighed for politisk drøftelse og\nretningssætning for planstrategiens indhold.\nOplæg til Planstrategi 2027\nPlanstrategi 2027 beskriver Byrådets vision for kommunens fremtidige udvikling og de\nlangsigtede mål, der skal sætte retningen for den fysiske planlægning frem mod Kommuneplan\n2029. Se bilag 1.\nPlanstrategien bygger på tre overordnede temaer:\nStrategisk og styrket erhvervsudvikling, der skaber arbejdspladser\nBalanceret byudvikling, der skaber merværdi\nEt åbent land, der forener benyttelse og beskyttelse\n\nUnder hvert tema er der formuleret fokusområder og indsatser, som understøtter visionen og\nde langsigtede mål. Hertil er der udarbejdet et arbejdsprogram, der peger på de emner og\nplanlægningsopgaver, som skal belyses og kvalificeres i forbindelse med Kommuneplan 2029\nmed henblik på at omsætte planstrategiens vision og mål til konkrete retningslinjer, rammer og\nprioriteringer.\nPlanstrategiens vision og langsigtede mål er kvalificeret gennem dialog med lokalsamfundene\nog bygger videre på de strategiske prioriteringer og ændringer, der blev fastlagt med\nKommuneplan 2025, herunder:\nEn forøgelse af arealer, hvor skovrejsning er ønsket\nEn opdatering af Byrådets principper for bæredygtighed og kvalitet i byudviklingen\nMarkering af kommuneplanrammer i forhold til mulige udfordringer med håndtering af\nregnvand\nUdpegning af interesseområder, der vurderes egnede til opstilling af vindmøller og\nsolcelleanlæg\nStyrkelse af kommuneplanrammerne for Værebro Erhvervsområde\nFastholdelse af Egedals store byudviklingsområder\nUdpegning af perspektivområder til fremtidig by- og erhvervsudvikling ved Smørum,\nLedøjetoften og Værebro\nStyrkede muligheder for udvikling af kommunens mindre byer og landsbyer\nArbejdet med en ny, selvstændig stiplan\n\nPå denne baggrund indstiller administrationen, at det besluttes, at administrationen udarbejder\nforslag til Planstrategi 2027, inden administrationen udarbejder forslag til planstrategi 2027\nfremlægges til vedtagelse med henblik på offentlig høring."
+    },
+    {
+     "titel": "Videre proces",
+     "tekst": "På baggrund af Byrådets beslutning udarbejder administrationen forslag til Planstrategi 2027 til\npolitisk behandling efter følgende tidsplan:\n- Marts 2027: Politisk behandling af forslag til Planstrategi 2027 med henblik på offentlig\nhøring.\n- August 2027: Endelig vedtagelse af Planstrategi 2027.\n- Oktober 2027: Igangsættelse af arbejdet med Kommuneplan 2029.\nForslaget vil forud for den politiske behandling blive færdigredigeret og opsat i et endeligt\ngrafisk layout.\n\nKonsekvenser for budgettet\nSagen har ingen bevillingsmæssige konsekvenser.\n\nBorgerdialog\nDen 3. september 2026 blev der afholdt dialogmøde og workshop for kommunens\nlokalsamfund og grundejerforeninger. Der deltog 32 borgere fra 10 af kommunens 17\nbysamfund. Workshoppen gav anledning til en række input og perspektiver, som\nadministrationen efterfølgende har bearbejdet til 11 overordnede budskaber. Budskaberne har\nbidraget til udformningen af planstrategiens vision, mål og fokusområder. Se bilag 2."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-plan-og-byudviklingsudvalget-4": {
+   "id": "egedal-2026-12-01-plan-og-byudviklingsudvalget-4",
+   "kommune": "Egedal",
+   "udvalg": "Plan- og Byudviklingsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4129d49b-17a9-4ccc-a500-1f155bdfbdd9",
+   "hentet": "2026-11-26T14:13:33.538Z",
+   "titel": "Budget 2027 for Boligselskabet Sandbjerghuses afdeling 1 og afdeling 2 - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at:\n\n1. Boligselskabet Sandbjerghuses budgetforslag 2027 for afdeling 1, med en\nhuslejestigning på 15,25% godkendes.\n2. Boligselskabet Sandbjerghuses budgetforslag 2027 for afdeling 2, med en\nhuslejestigning på 13,92% godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I almene boliger fastsættes huslejen via budgettet for den enkelte almenboligafdeling.\nBudgetforslaget udarbejdes af boligorganisationen (ejeren) og forelægges til godkendelse på et\nafdelingsmøde (lejerne). Hvis ikke der kan opnås enighed om budgetforslaget, skal\nuenigheden forelægges til endelig afgørelse i Byrådet.\nBoligselskabet Sandbjerghuses forelagde den 9. september 2026, på et fælles afdelingsmøde\nfor begge afdelinger, budgetforslagene for 2027. Forslagene blev begge nedstemt på grund af\nhuslejestigningen. Budgetforslagene og referatet fra fællesmødet er vedlagt som bilag.\nAfdeling 1 består af 52 familieboliger og 7 ungdomsboliger og har en afdelingsbestyrelse.\nAfdeling 2 består af 3 familieboliger, hvilket er huse placeret forskellige steder i Ganløse og\nStenløse uden en afdelingsbestyrelse.\nAfdelingsbestyrelsen i afdeling 1 har været særligt aktiv i udarbejdelsen af budgettet og har\ngodkendt den foreslåede huslejestigning. Huslejestigningen skyldes hovedsageligt øgede\nhenlæggelser til planlagt og periodisk vedligeholdelse. Dette skal sikre, at afdelingen kan\nfinansiere kommende vedligeholdelsesarbejder, herunder den forestående udskiftning af\ntagene med asbestholdige materialer, som er påbudt igangsat af kommunen. Byrådet traf\nbeslutning om udarbejdelse af et påbud den 27. august 2025, hvorefter påbuddet var i høring\nhos boligselskabet og endeligt fremsendt den 30. oktober 2025 med en frist på 2 år.\n\nFor afdeling 2 skyldes huslejestigningen ligeledes primært øgede henlæggelser til planlagt\nvedligeholdelse. Formålet er at sikre finansiering af kommende vedligeholdelsesarbejder samt\nen fortsat økonomisk balance i afdelingen.\nAdministrationen vurderer, ligesom boligorganisationen og afdelingsbestyrelsen, at det er\nnødvendigt at øge afdelingernes opsparing til planlagt vedligeholdelse for at imødekomme\nkommende vedligeholdelsesarbejder, sikre økonomisk balance og undgå fremtidige\nunderskud.\nAdministrationen anser huslejestigningerne på henholdsvis 15,25% og 13,92% for at være i\nden høje ende. Men da Egedal Kommune gennem en årrække har opfordret til at styrke\nafdelingernes henlæggelser og økonomiske robusthed, vurderes stigningerne dog at være\nnødvendige for at sikre en økonomisk bæredygtig drift og tilstrækkelige midler til fremtidige\nvedligeholdelsesarbejder.\nBudgetforslaget vil medføre huslejestigninger på 197, 91 kr. pr. m 2 i afdeling 1:\nLejlighedsstørrelse\n\nHusleje før\n\nHusleje efter\n\nStigning\n\nHusleje A. 36,6 m 2 (1 rum)\n\nHusleje B. 66,3 m 2 (2 rum)\n\nHusleje C. 78 m2 (3 rum)\n\nHusleje D. 96,4 m2 (4 rum)\n\n(Beregnet ud fra gennemsnitlig årlig leje pr. m².)\nBudgetforslaget vil medføre huslejestigninger på 182,49 kr. pr. m 2 i afdeling 2:\nLejlighedsstørrelse\n\nHusleje før\n\nHusleje efter\n\nStigning\n\nHusleje A. 71 m2 (2 rum)\n\nHusleje B. 96 m2 (3 rum)\n\nHusleje C. 103 m2 (4 rum)\n\n(Beregnet ud fra gennemsnitlig årlig leje pr. m².)\nByrådet har, som tilsynsmyndighed, pligt til at gribe ind, hvis økonomien i en almennyttig\nboligafdeling ikke lever op til lovens krav. Den huslejestigning, der fremgår af boligselskabets\nbudgetforslag, vil efter administrationens vurdering balancere afdelingens økonomi, så den\nlever op til lovens krav.\nPå den baggrund skal administrationen anbefale, at Boligselskabet Sandbjerghuses\nbudgetforslag for afdeling 1 og 2 godkendes.\n\nKonsekvenser for budgettet\nSagen har ingen bevillingsmæssige konsekvenser.\n\nBorgerdialog\nBeboerne i afdeling 1 og 2 har behandlet budgetforslag 2027 den 9. september 2026, hvor\nbegge budgetter blev afvist."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-plan-og-byudviklingsudvalget-5": {
+   "id": "egedal-2026-12-01-plan-og-byudviklingsudvalget-5",
+   "kommune": "Egedal",
+   "udvalg": "Plan- og Byudviklingsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4129d49b-17a9-4ccc-a500-1f155bdfbdd9",
+   "hentet": "2026-11-26T14:13:33.538Z",
+   "titel": "Årets tredje budgetopfølgning (PBU) - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at Byrådet, under Plan- og Byudviklingsudvalget, godkender:\n1. Tillægsbevilling for -1 mio. kr. til Borgerservice og organisation\n2. Omplacering af 6.000 kr. til Ejendom og byggeri\n3. Den fremlagte statusmåling på udmøntning af tiltag i budgetaftalen for 2026-29, jf.\nbilag 1."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Borgerservice og organisation søger en negativ tillægsbevilling på -1,0 mio. kr., da budgettet til\nEjendom og GIS kan reduceres med -1,0 mio. kr.\nBudgettet for Ejendom og byggeri søges udvidet med 6.000 kr. fra udmøntning af puljen til\nmerudgifter for affaldshåndtering i kommunale institutioner. Forventningen for året er herudover\nfortsat balance. Der opleves dog et stort pres på udgifterne til især energi, som følge af højere\npriser på enhederne end tidligere.\nBy, teknik og miljø foretager ingen budgetændringer. Forventningen for året er fortsat balance.\nBudgettet under udvalget indeholder 5 politiske initiativer; på nuværende tidspunkt forløber ét\ninitiativ planmæssigt, men er endnu ikke afsluttet (gul), mens 4 initiativer er implementeret og\nafsluttet.\nBudgetopfølgningens samlede betydning for kommunens økonomi\nÅrets sidste budgetopfølgning kommer i forlængelse af budgetopfølgning fra september, hvor\nder blev givet en tillægsbevilling til merudgifter for godt 40 mio. kr., der hovedsageligt angik\nkøbsbudgettet for børn på socialområdet og stigende udgifter til dagpenge på\narbejdsmarkedsområdet. Det blev delvist finansieret af merindtægter fra midtvejsreguleringen i\nøkonomiaftalen.\nDenne budgetopfølgning indebærer en række budgetkorrektioner på tværs af driften, men\ningen ændringer for kommunens økonomi under et, da der er fundet fuld finansiering til\nnødvendige budgetudvidelser via merindtægter og kompenserende mindreforbrug på andre\n\nbudgetområder.\nDe væsentligste budgettilpasninger angår følgende:\nBudgetudfordringen på købsbudgettet for såvel børn som voksne på socialområdet, samt færre\nsalgsindtægter grundet forsinket ibrugtagen af Engbo og Solkrogen, medfører et behov for en\ntillægsbevilling på 12,5 mio. kr. Dette kan finansieres af merindtægter fra særligt dyre\nenkeltsager svarende til 7,5 mio. kr. samt mindreforbrug på i alt 5 mio. kr. på henholdsvis\nskoleområdet (relateret til privatskole-budgettet) og ældreområdet (relateret til elevbudgettet).\nTrods denne tillægsbevilling, er der i værste fald fortsat en økonomisk udfordring på det\nspecialiserede socialområde i størrelsesordenen 10 mio. kr., som der arbejdes intensivt på at\nfå nedbragt i 4. kvartal.\nBudgettet til glatførebekæmpelse udvides samtidig med 2 mio. kr. i lyset af den hårde vinter\nprimo året og til håndtering af forventede udgifter i årets fjerde kvartal. I modsat retning er\nindarbejdet en kompenserende reduktion af barselspuljen og budgettet til Ejendomme og GIS.\nPå anlægsområdet er indregnet forventede overførelser af anlægsudgifter fra 2026 til 2027 på i\nalt 49,7 mio. kr. inkl. forsyning.\nStatus for kommunens økonomiske nøgletal fremgår af tabel 1 nedenfor.\nTabel 1: De økonomiske hjørneflag\n\nDriftsoverskuddet udgør uændret 115 mio. kr., og ligger derved 23 mio. kr. under\nmålsætningen i den økonomiske politik.\nServiceudgifterne stiger med 2 mio. kr. og udgør nu 2.615 mio. kr., hvorved serviceudgifterne i\nforhold til oprindeligt budget er steget med 55 mio. kr.\nSet i forhold til KL`s aktuelle sigtepunkt for serviceudgifterne udgør presset på servicerammen i\nstørrelsesordenen 12 mio. kr.\nDer vil være opmærksomhed på såvel driftsoverskuddets størrelse som presset på\nservicerammen i den videre økonomistyring frem mod regnskabsafslutningen.\nKommunens bruttoanlægsudgifter ekskl. forsyning falder med godt 49 mio. kr. til 161 mio. kr.,\nhvilket skyldes forventede overførelser af anlægsbudget fra 2026 til 2027. Det forventede\nregnskab på anlægsområdet på 161 mio. kr. er fortsat over oprindeligt budget på 158 mio. kr.\n\nDen gennemsnitlige kassebeholdning stiger med 25 mio. kr. til 468 mio. kr.\n\nKonsekvenser for budgettet\nKommunens driftsoverskud udgør uændret 115 mio. kr., og serviceudgifterne stiger med 2 mio.\nkr. Bruttoanlægsudgifterne falder med 49 mio. kr. Den gennemsnitlige kassebeholdning stiger\nmed 25 mio. kr."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-plan-og-byudviklingsudvalget-6": {
+   "id": "egedal-2026-12-01-plan-og-byudviklingsudvalget-6",
+   "kommune": "Egedal",
+   "udvalg": "Plan- og Byudviklingsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4129d49b-17a9-4ccc-a500-1f155bdfbdd9",
+   "hentet": "2026-11-26T14:13:33.538Z",
+   "titel": "Implementering af budget 2027-30 (PBU) - orientering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at udvalget tager oversigten over initiativer til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På baggrund af vedtagelsen af Budget 2027-30 har administrationen udarbejdet en oversigt\n(implementeringsark) over de initiativer og dermed politiske beslutninger, der bliver igangsat og\nskal implementeres i 2027. Det vedrører alle udvidelser, effektiviseringer, besparelser og nye\nanlægsinvesteringer, som nu er indarbejdet i budgetrammerne, samt politiske\nhensigtserklæringer fra budgetaftalen.\nImplementeringsarket bruges som et administrativt redskab i forhold til planlægning og\nressourcestyring samt til den politiske afrapportering af status og fremdrift i implementeringen.\nInitiativerne er oplistet under deres respektive politiske udvalg og med en kort beskrivelse af\nforslagets indhold og dertil knyttet bevilling. Fordelingen af initiativerne på udvalg og ansvarlige\nfagcentre afspejler, hvor initiativpligten ligger. Det skal imidlertid understreges, at det for flere af\ninitiativerne gælder, at de vil involvere flere udvalg og fagcentre, hvilket vil blive håndteret i den\nkonkrete opgaveløsning.\nI løbet af budgetåret vil implementeringsarket blive forelagt til politisk behandling i\nfagudvalgene, Økonomiudvalget og Byrådet, hvor administrationen redegør for status for\nimplementeringen af de for fagudvalget relevante initiativer, mens Økonomiudvalget og\nByrådet forelægges implementeringsarket i sin helhed.\nStatus forlægges i forbindelse med den politiske behandling af opfølgningen på budget 2027 i\nhenholdsvis april, september og december måned.\n\nKonsekvenser for budgettet\nDer er ingen økonomiske konsekvenser som følge af sagen. De økonomiske konsekvenser af\nde politiske beslutninger er indarbejdet i budgettet jf. sagens bilag."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-plan-og-byudviklingsudvalget-7": {
+   "id": "egedal-2026-12-01-plan-og-byudviklingsudvalget-7",
+   "kommune": "Egedal",
+   "udvalg": "Plan- og Byudviklingsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4129d49b-17a9-4ccc-a500-1f155bdfbdd9",
+   "hentet": "2026-11-26T14:13:33.538Z",
+   "titel": "Orienteringssager",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalg og administrationen orienterer hinanden gensidigt om henvendelser, sager,\nkommende arrangementer, evt. foretræde og træffetid mm., herunder:\n\nÅrlig oversigt over administrative afgørelser (afslag og dispensationer) efter bygge-,\nplan- og naturbeskyttelsesloven, oversigt vedlagt som bilag.\nSocial- og Arbejdsmarkedsudvalget behandler, på deres møde i december, sag om\nKriterier for kommunal boliganvisning.\n\nStatus på lokalplanlægningen for den vestlige del af Værebro Erhvervsområde."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-1": {
+   "id": "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-1",
+   "kommune": "Egedal",
+   "udvalg": "Idræts-, Fritids- og Kulturudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=6cd9b576-c3da-400d-a10b-e0e76e116c82",
+   "hentet": "2026-11-26T14:13:39.827Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at dagsordenen godkendes."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-2": {
+   "id": "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-2",
+   "kommune": "Egedal",
+   "udvalg": "Idræts-, Fritids- og Kulturudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=6cd9b576-c3da-400d-a10b-e0e76e116c82",
+   "hentet": "2026-11-26T14:13:39.827Z",
+   "titel": "Evaluering af Skoletjenestefunktion - orientering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet besluttede med Budget 2024 at afsætte 150.000 kr. årligt til etablering af en\nskoletjeneste med base på Skenkelsø Mølle Museum. Bevillingen svarer til cirka 10\narbejdstimer om ugen. På Skenkelsø Mølle Museum får skoleelever mulighed for at opleve\nhistorien på nært hold. Skoletjenestens undervisningsforløb henvender sig til forskellige\nklassetrin og fagområder, og det spænder fra oldtidens samfund til nyere tids teknologiske\nudvikling.\nForløbene kan bookes via hjemmesiden www.skoletjenesten.dk/egedal-kommune, som giver\nskoler og institutioner et samlet overblik over de tilgængelige tilbud.\nI løbet af de seneste to år har skoletjenesten opbygget et solidt fundament og har løbende\nudvidet både målgrupper og undervisningstilbud. Der udbydes i dag ni forskellige forløb,\nherunder et særligt tilrettelagt tilbud til dagtilbudsområdet.\nOpgaver og aktiviteter\nSkenkelsø Mølle Museum ser det som en central formidlingsopgave at gøre lokalhistorien\nnærværende og relevant for børn og unge i Egedal Kommune. Dette sker både gennem besøg\npå museet og ved aktiviteter, der gennemføres ude på skolerne. Indsatsen understøtter\nintentionerne i Den Åbne Skole, hvor samarbejde mellem folkeskoler og lokale\nkulturinstitutioner er en vigtig del af lovgivningens formål.\nSkoletjenestens arbejde omfatter blandt andet planlægning og gennemførelse af\nundervisningsforløb, forberedelse, klargøring, oprydning og transport samt udvikling af nye\nundervisningstilbud. Hertil kommer markedsføring, koordinering med samarbejdspartnere,\nindkøb af materialer og gennemførelse af særlige arrangementer mv.\nUdvidelse til daginstitutioner og stigende aktivitet\nI 2026 er målgruppen blevet udvidet til også at omfatte daginstitutioner. Som led heri blev der\nden 17. juni 2026 afholdt en personaledag for ledere på dagtilbudsområdet. Arrangementet\nskabte stor interesse for de nye tilbud, og flere institutioner har efterfølgende vist interesse for\nat booke forløb.\n\nAktivitetsniveauet er samtidig steget markant. Antallet af gennemførte og planlagte forløb i\n2026 ligger væsentligt over niveauet i 2025, hvilket afspejler en stigende efterspørgsel fra både\nskoler og dagtilbud:\nÅr\n\nAntal forløb\n\nAntal elever\n\nIndtil 1. september 2026\n\nEfter 1. september 2026\n\n26 planlagte\n\nHvis alle planlagte forløb gennemføres, vil aktivitetsniveauet i 2026 være omkring 60% højere\nend i 2025.\nPerspektiver på videre udvikling\nDer er identificeret flere muligheder for at videreudvikle skoletjenestens tilbud og styrke\nsamarbejdet med andre lokale aktører. Blandt andet undersøges mulighederne for at inddrage\nLokalarkivet i Stenløse Kulturhus som læringsmiljø for kildebaserede undervisningsforløb\nmålrettet udskolingen og Egedal Gymnasium.\nDerudover er der interesse for at udvide samarbejdet med Ledøje-Historisk Forening med\nhenblik på øget anvendelse af Smørum Gamle Skole som ramme om undervisningsaktiviteter.\nDer ses også potentiale i at udvikle undervisningsmaterialer, der kan understøtte skolernes\narbejde før og efter et museumsbesøg og dermed styrke den samlede læringsoplevelse.\nEndelig kan der være muligheder i at udbygge samarbejdet med blandt andre Natur\nvejledningen, bibliotekerne, Musik- og Kulturskolen, Ung Egedal og andre relevante aktører.\nSamtidig skal det bemærkes, at aktivitetsniveauet allerede i dag ligger tæt på den kapacitet,\nder kan understøttes inden for den nuværende økonomiske ramme. Eventuelle nye aktiviteter,\nudvidelser af målgrupper eller udvikling af yderligere tilbud vil derfor ske på bekostning af\nandre aktiviteter. Det betyder, at der ikke kan forventes en væsentlig udvidelse af\nskoletjenestens samlede aktivitet uden ændrede ressourcemæssige forudsætninger.\nSkoletjenestens formidler, Ragnhild Pedersen, deltager på mødet i Idræts-, Fritids- og\nKulturudvalget.\n\nKonsekvenser for budgettet\nSagen har ingen bevillingsmæssige konsekvenser."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-3": {
+   "id": "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-3",
+   "kommune": "Egedal",
+   "udvalg": "Idræts-, Fritids- og Kulturudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=6cd9b576-c3da-400d-a10b-e0e76e116c82",
+   "hentet": "2026-11-26T14:13:39.827Z",
+   "titel": "Årets tredje budgetopfølgning (IFKU) - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at Byrådet, under Idræts-, Fritids- og Kulturudvalget,\ngodkender:\n1. Omplaceringer for 210.000 kr. til Ejendom og byggeri.\n2. Omplaceringer for 69.000 kr. til Kultur, fritid og arbejdsmarked.\n3. Den fremlagte statusmåling på udmøntning af tiltag i budgetaftalen for 2026-29, jf.\nbilag 1."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ejendom og byggeri søger udvidelse af budgettet med 0,2 mio. kr. fra udmøntning af den\ncentrale pulje til udgifter for affaldshåndtering i kommunale institutioner. Der foretages ingen\nøvrige ændringer, og forventningen for året er fortsat balance.\nKultur, fritid og arbejdsmarked søger udvidelse af budgettet med 0,1 mio. kr. som følge af\nudmøntning af affaldspuljen. Også her er forventningen for året fortsat balance.\nBudgettet under udvalget indeholder 7 politiske initiativer. På nuværende tidspunkt forløber 2\ninitiativer planmæssigt, men er endnu ikke afsluttet (gule), mens 5 initialer er implementeret og\nafsluttet.\nBudgetopfølgningens samlede betydning for kommunens økonomi\nÅrets sidste budgetopfølgning kommer i forlængelse af budgetopfølgningen fra september,\nhvor der blev givet en tillægsbevilling til merudgifter for godt 40 mio. kr., der hovedsageligt\nangik købsbudgettet for børn på socialområdet og stigende udgifter til dagpenge på\narbejdsmarkedsområdet. Det blev delvist finansieret af merindtægter fra midtvejsreguleringen i\nøkonomiaftalen.\nDenne budgetopfølgning indebærer en række budgetkorrektioner på tværs af driften, men\ningen ændringer for kommunens økonomi under et, da der er fundet fuld finansiering til\nnødvendige budgetudvidelser via merindtægter og kompenserende mindreforbrug på andre\nbudgetområder.\n\nBudgetudfordringen på købsbudgettet for såvel børn som voksne på socialområdet samt færre\nsalgsindtægter grundet forsinket ibrugtagen af Engbo og Solkrogen medfører et behov for en\ntillægsbevilling på 12,5 mio. kr. Dette kan finansieres af merindtægter fra særligt dyre\nenkeltsager svarende til 7,5 mio. kr. samt mindreforbrug på i alt 5 mio. kr. på henholdsvis\nskoleområdet (relateret til privatskole-budgettet) og ældreområdet (relateret til elevbudgettet).\nTrods denne tillægsbevilling er der i værste fald fortsat en økonomisk udfordring på det\nspecialiserede socialområde i størrelsesordenen 10 mio. kr., som der arbejdes intensivt på at\nfå nedbragt i 4. kvartal.\nBudgettet til glatførebekæmpelse udvides samtidig med 2 mio. kr. i lyset af den hårde vinter\nprimo året og til håndtering af forventede udgifter i årets fjerde kvartal. I modsat retning er\nindarbejdet en kompenserende reduktion af barselspuljen og budgettet til Ejendomme og GIS.\nPå anlægsområdet er indregnet forventede overførelser af anlægsudgifter fra 2026 til 2027 på i\nalt 49,7 mio. kr. inkl. forsyning.\nStatus for kommunens økonomiske nøgletal fremgår af tabel 1 nedenfor.\nTabel 1: De økonomiske hjørneflag\n\nDriftsoverskuddet udgør uændret 115 mio. kr., og ligger derved 23 mio. kr. under\nmålsætningen i den økonomiske politik.\nServiceudgifterne stiger med 2 mio. kr. og udgør nu 2.615 mio. kr., hvorved serviceudgifterne i\nforhold til oprindeligt budget er steget med 55 mio. kr. Set i forhold til KL`s aktuelle sigtepunkt\nfor serviceudgifterne udgør presset på servicerammen i størrelsesordenen 12 mio. kr. Der vil\nvære opmærksomhed på såvel driftsoverskuddets størrelse som presset på servicerammen i\nden videre økonomistyring frem mod regnskabsafslutningen.\nKommunens bruttoanlægsudgifter ekskl. forsyning falder med godt 49 mio. kr. til 161 mio. kr.,\nhvilket skyldes forventede overførelser af anlægsbudget fra 2026 til 2027. Det forventede\nregnskab på anlægsområdet på 161 mio. kr. er fortsat over oprindeligt budget på 158 mio. kr.\nDen gennemsnitlige kassebeholdning stiger med 25 mio. kr. til 468 mio. kr.\n\nKonsekvenser for budgettet\nKommunens driftsoverskud udgør uændret 115 mio. kr., og serviceudgifterne stiger med 2 mio.\n\nkr. Bruttoanlægsudgifterne falder med 49 mio. kr. Den gennemsnitlige kassebeholdning stiger\nmed 25 mio. kr."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-4": {
+   "id": "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-4",
+   "kommune": "Egedal",
+   "udvalg": "Idræts-, Fritids- og Kulturudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=6cd9b576-c3da-400d-a10b-e0e76e116c82",
+   "hentet": "2026-11-26T14:13:39.827Z",
+   "titel": "Implementering af budget 2027-30 (IFKU) - orientering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På baggrund af vedtagelsen af Budget 2027-30 har administrationen udarbejdet en oversigt\n(implementeringsark) over de initiativer og dermed politiske beslutninger, der bliver igangsat og\nskal implementeres i 2027. Det vedrører alle udvidelser, effektiviseringer, besparelser og nye\nanlægsinvesteringer, som nu er indarbejdet i budgetrammerne, samt politiske\nhensigtserklæringer fra budgetaftalen.\nImplementeringsarket bruges som et administrativt redskab i forhold til planlægning og\nressourcestyring samt til den politiske afrapportering af status og fremdrift i implementeringen.\nInitiativerne er oplistet under deres respektive politiske udvalg og med en kort beskrivelse af\nforslagets indhold og dertil knyttet bevilling. Fordelingen af initiativerne på udvalg og ansvarlige\nfagcentre afspejler, hvor initiativpligten ligger. Det skal imidlertid understreges, at det for flere af\ninitiativerne gælder, at de vil involvere flere udvalg og fagcentre, hvilket vil blive håndteret i den\nkonkrete opgaveløsning.\nI løbet af budgetåret vil implementeringsarket blive forelagt til politisk behandling i\nfagudvalgene, Økonomiudvalget og Byrådet, hvor administrationen redegør for status for\nimplementeringen af de for fagudvalget relevante initiativer, mens Økonomiudvalget og\nByrådet forelægges implementeringsarket i sin helhed.\nStatus forelægges i forbindelse med den politiske behandling af opfølgningen på budget 2027 i\nhenholdsvis april, september og december måned.\n\nKonsekvenser for budgettet\nDer er ingen økonomiske konsekvenser som følge af sagen. De økonomiske konsekvenser af\nde politiske beslutninger er indarbejdet i budgettet jf. sagens bilag."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-5": {
+   "id": "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-5",
+   "kommune": "Egedal",
+   "udvalg": "Idræts-, Fritids- og Kulturudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=6cd9b576-c3da-400d-a10b-e0e76e116c82",
+   "hentet": "2026-11-26T14:13:39.827Z",
+   "titel": "Retningslinjer for lokaletilskud under Folkeoplysningsloven - orientering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Godkendte folkeoplysende foreninger med medlemmer under 25 år og aftenskoler i Egedal\nKommune kan søge om lokaletilskud jf. Folkeoplysningsloven (§§ 23 og 25).\nDer kan søges tilskud til;\nleje/drift af foreningens egne eller lejede lokaler til folkeoplysende aktiviteter, hvis\nkommunen ikke kan stille faciliteter til rådighed,\nhytte- og lejrpladser.\n\nFolkeoplysningsloven er en rammelov. Kommunalbestyrelsen kan inden for lovens rammer\nfastsætte lokale retningslinjer for administrationen af for eksempel lokaletilskuddene. Egedal\nKommunes lokale retningslinjer er senest politisk godkendt den 27. november 2025, og de\ntrådte i kraft den 1. januar 2026. Retningslinjerne er vedlagt som bilag.\nFormålet med de lokale retningslinjer er at skabe gennemsigtighed og ensartet praksis for\nforeningerne, sikre korrekt forvaltning af kommunens tilskudsmidler samt give klare rammer for\nansøgning, dokumentation og beregning af tilskud. Retningslinjerne bidrager samtidig til, at\nkommunen kan administrere ordningen inden for den økonomiske ramme, som Byrådet årligt\nafsætter til området.\nAdministrationen gennemgår de gældende retningslinjer på mødet. Overordnet set beskriver\nretningslinjerne blandt andet:\n\nLokaletilskuddets størrelse, hvilket i Egedal er sat til 75% af driftsudgifterne for\naftenskoler og 65% af driftsudgifterne til folkeoplysende foreninger, hvilket svarer til det,\nsom Folkeoplysningsloven definerer som et minimum.\nTyper af udgifter der er tilskudsberettigede, eksempelvis lejeudgifter, forsikringer,\nforsyningsudgifter og almindelig vedligeholdelse af egne eller lejede lokaler.\n\nRegler for beregning af tilskud, herunder aktivitetstimetal og håndtering af medlemmer\nover 24 år.\nSærlige bestemmelser for hytte- og lejrture, rideklubber samt mulighed for tilskud til\nekstraordinær vedligeholdelse af egne lokaler.\nAnsøgningsfrister, dokumentationskrav og kommunens tilsyn med anvendelsen af\ntilskudsmidler.\nBegrænsninger i tilskudsordningen og kommunens muligheder for at afvise eller\nreducere tilskud i særlige tilfælde. Det gælder for eksempel, når der er tale om nye\nansøgninger, nye eller ændrede lejemål samt ved væsentlige udvidelser af\naktivitetsgrundlaget som indebærer merudgifter for kommunen.\n\nKonsekvenser for budgettet\nSagen har ingen bevillingsmæssige konsekvenser.\n\nBorgerdialog\nDe gældende retningslinjer er udarbejdet af en arbejdsgruppe med repræsentanter fra\nadministrationen og Folkeoplysningsudvalget."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-8": {
+   "id": "egedal-2026-12-03-idraets-fritids-og-kulturudvalget-8",
+   "kommune": "Egedal",
+   "udvalg": "Idræts-, Fritids- og Kulturudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=6cd9b576-c3da-400d-a10b-e0e76e116c82",
+   "hentet": "2026-11-26T14:13:39.827Z",
+   "titel": "Orienteringspunkter",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalg og administration orienterer hinanden gensidigt om henvendelser, sager,\nkommende arrangementer, evt. foretræde og træffetid mm., herunder:\n\nDet sker i Egedal: Nyt koncept på Kommunes Facebook med månedligt opslag med et\nudvalg af kommende måneds aktiviteter.\nDen 29.oktober 2026 afholdte administrationen en workshop i samarbejde med DIF om,\nhvordan foreningerne kan styrke inkluderende fællesskaber og understøtte børn og\nunges trivsel. I workshoppen deltog 9 foreninger. 12 var tilmeldt.\nMøde i Lokalarkiv om Museumsrådet den 3. november 2026.\nMøde i Kunstrådet 10. november 2026.\nMøde Musikskolens bestyrelsen 11. november 2026."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-1": {
+   "id": "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-1",
+   "kommune": "Egedal",
+   "udvalg": "Erhvervs- og Bæredygtighedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=04a4d86b-215a-4b79-ba6b-f0653c674b51",
+   "hentet": "2026-11-26T14:13:46.590Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at dagsorden godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Godkendelse af dagsorden."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-2": {
+   "id": "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-2",
+   "kommune": "Egedal",
+   "udvalg": "Erhvervs- og Bæredygtighedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=04a4d86b-215a-4b79-ba6b-f0653c674b51",
+   "hentet": "2026-11-26T14:13:46.590Z",
+   "titel": "Erhvervsstrategi 2030 - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at forslag til Erhvervsstrategi 2030 godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet vedtog i 2023 strategiske pejlemærker for erhvervsudviklingen i Egedal Kommune og\netablerede Egedal Erhvervsforum som ramme for dialogen med erhvervslivet. De strategiske\npejlemærker havde fokus på service og samarbejde, lokale arbejdspladser, bæredygtig\nudvikling og fremtidens virksomheder og erhvervsområder.\nErhvervs- og Bæredygtighedsudvalget har efterfølgende drøftet den strategiske\nerhvervsindsats og været i dialog med Egedal Erhvervsforum. Udvalget har blandt andet lagt\nvægt på et højt ambitionsniveau, tydelige mål og løbende opfølgning.\nPå den baggrund har administrationen udarbejdet Erhvervsstrategi 2030. Strategien skal sætte\nen ambitiøs retning for en bæredygtig erhvervsudvikling og styrke rammerne for\nvirksomhedernes udvikling, vækst og jobskabelse. Strategien skal samtidig understøtte og\nfastholde eksisterende virksomheder og bidrage til, at nye virksomheder etablerer sig i Egedal.\nStrategien tager afsæt i tre ambitioner:\nVÆRE:\nVirksomheder skal opleve Egedal som en af de bedste kommuner at drive virksomhed i; et\nsted hvor der er godt at være som virksomhed.\nVÆKSTE:\nVirksomheder skal kunne udvikle sig og vækste i Egedal uden at være nødt til at flytte fra\nkommunen.\nVÆLGE:\nFlere virksomheder skal aktivt vælge Egedal som kommune, hvor de etablerer sig, udvikler\nderes forretning og skaber arbejdspladser. Strategien skal desuden skabe sammenhæng til\nPlanstrategi 2027 og den fysiske planlægning, herunder udviklingen af kommunens\nerhvervsarealer og infrastruktur.\nGennemførelse og opfølgning\n\nErhvervsstrategien udmøntes gennem en prioriteret handleplan, som udvikles i samarbejde\nmed virksomheder, erhvervsorganisationer, uddannelsesinstitutioner og øvrige relevante\naktører. Handleplanens indsatser gennemføres inden for de politisk fastlagte rammer.\nErhvervs- og Bæredygtighedsudvalget følger årligt strategiens fremdrift. Senest i 2027\nfastlægges et fælles grundlag for opfølgningen på strategiens mål, og i 2028 gennemføres en\npolitisk midtvejsevaluering. Erhvervslivet i Egedal vil blive inddraget i opfølgning på\nhandlingsplanen.\nOpfølgningen baseres blandt andet på Egedal Kommunes erhvervsundersøgelse, DI’s måling\naf lokal erhvervsvenlighed samt øvrig relevant viden og data. Erhvervsstrategi 2030 fremgår af\nbilag 1.\n\nKonsekvenser for budgettet\nSagen har ingen bevillingsmæssige konsekvenser.\n\nBorgerdialog\nForslaget til erhvervsstrategi blev drøftet med Egedal Erhvervsforum den 12. november 2026."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-3": {
+   "id": "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-3",
+   "kommune": "Egedal",
+   "udvalg": "Erhvervs- og Bæredygtighedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=04a4d86b-215a-4b79-ba6b-f0653c674b51",
+   "hentet": "2026-11-26T14:13:46.590Z",
+   "titel": "Kriterier for Egedal Erhvervspris - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at:\n\nDe nye kriterier for Egedal Erhvervspris godkendes.\nPrisen kan tildeles en virksomhed med aktivt CVR-nummer eller P-nummer\nregistreret på en adresse i Egedal Kommune.\nErhvervs- og Bæredygtighedsudvalget beslutter, hvilken virksomhed der modtager\nprisen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Egedal Erhvervspris uddeles én gang årligt til en lokal virksomhed, der har gjort en særlig\nindsats for erhvervslivet, arbejdsmarkedet eller lokalsamfundet.\nDe hidtidige kriterier har blandt andet omfattet socialt ansvar, bidrag til lokalområdet,\ninnovation, grøn omstilling eller praktik- og jobmuligheder for unge.\nDet foreslås, at kriterierne opdateres, så de understøtter erhvervsstrategiens ambition om, at\nvirksomheder skal være, vækste og vælge Egedal.\nGrundkrav og kriterier\nEgedal Erhvervspris kan tildeles en virksomhed med et aktivt CVR-nummer eller P-nummer og\nen arbejdsplads eller driftsenhed i Egedal Kommune. Det gælder også virksomheder med\nhovedsæde uden for kommunen.\nVirksomheden skal skabe værdi og udvikling i Egedal inden for ét eller flere af\nerhvervsstrategiens tre fokusområder:\nVÆRE:\nVirksomheden bidrager til attraktive og inkluderende arbejdspladser, socialt ansvar,\nkompetenceudvikling, uddannelse eller lokale samarbejder.\nVÆKSTE:\n\nVirksomheden skaber vækst og udvikling gennem arbejdspladser, udvidelse, innovation,\niværksætteri eller grøn og digital omstilling.\nVÆLGE:\nVirksomheden vælger Egedal som erhvervskommune, fordi Egedal er et attraktivt sted at\netablere, drive og udvikle virksomhed samt Egedals profil som erhvervskommune.\nErhvervs- og Bæredygtighedsudvalget udpeger prismodtageren på baggrund af en samlet\nvurdering af de indstillede virksomheder og deres positive betydning for Egedal. Virksomheden\nbehøver ikke at opfylde alle kriterier.\nIndstilling og udvælgelse\nVirksomheder, organisationer, foreninger, borgere og andre med tilknytning til Egedal kan\nindstille kandidater. Virksomheder kan også indstille sig selv.\nAdministrationen annoncerer indstillingsperioden og fastsætter en frist. Herefter kontrollerer\nadministrationen, at grundkravene er opfyldt, og forelægger de kvalificerede kandidater for\nErhvervs- og Bæredygtighedsudvalget, som udpeger prismodtageren.\nEgedal Erhvervspris overrækkes ved Egedal Kommunes nytårskur for erhvervslivet.\nAdministrationen bemærker, at ovenstående er under forudsætning af, at byrådet ultimo\ndecember vedtager forslag til erhvervsstrategi.\n\nKonsekvenser for budgettet\nSagen har ingen bevillingsmæssige konsekvenser.\n\nBorgerdialog\nEgedal erhvervsforum har været inddraget om priskategorierne. I forbindelse med\nannonceringen af Egedal Erhvervspris inddrages virksomheder, organisationer, foreninger,\nborgere og andre med tilknytning til Egedal ved at få mulighed for at indstille kandidater til\nprisen."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-4": {
+   "id": "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-4",
+   "kommune": "Egedal",
+   "udvalg": "Erhvervs- og Bæredygtighedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=04a4d86b-215a-4b79-ba6b-f0653c674b51",
+   "hentet": "2026-11-26T14:13:46.590Z",
+   "titel": "Årets tredje budgetopfølgning (EBU) - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at Byrådet, under Erhvervs- og Bæredygtighedsudvalget,\ngodkender:\n1. Resultatet af budgetopfølgningen\n2. Den fremlagte statusmåling på udmøntning af tiltag i budgetaftalen for 2026-29, jf.\nbilag 1."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Der foretages ingen ændringer under By, teknik og miljø ved denne budgetopfølgning.\nForventningen for året er fortsat balance.\nBudgettet under udvalget indeholder ét politisk initiativ om udarbejdelse af ny indkøbspolitik;\ninitiativet er afsluttet.\nBudgetopfølgningens samlede betydning for kommunens økonomi\nÅrets sidste budgetopfølgning kommer i forlængelse af budgetopfølgning fra september, hvor\nder blev givet en tillægsbevilling til merudgifter for godt 40 mio. kr., der hovedsageligt angik\nkøbsbudgettet for børn på socialområdet og stigende udgifter til dagpenge på\narbejdsmarkedsområdet. Det blev delvist finansieret af merindtægter fra midtvejsreguleringen i\nøkonomiaftalen.\nDenne budgetopfølgning indebærer en række budgetkorrektioner på tværs af driften, men\ningen ændringer for kommunens økonomi under et, da der er fundet fuld finansiering til\nnødvendige budgetudvidelser via merindtægter og kompenserende mindreforbrug på andre\nbudgetområder.\nDe væsentligste budgettilpasninger angår følgende:\nBudgetudfordringen på købsbudgettet for såvel børn som voksne på socialområdet, samt færre\nsalgsindtægter grundet forsinket ibrugtagen af Engbo og Solkrogen, medfører et behov for en\ntillægsbevilling på 12,5 mio. kr. Dette kan finansieres af merindtægter fra særligt dyre\nenkeltsager svarende til 7,5 mio. kr. samt mindreforbrug på i alt 5 mio. kr. på henholdsvis\nskoleområdet (relateret til privatskole-budgettet) og ældreområdet (relateret til elevbudgettet).\n\nTrods denne tillægsbevilling, er der i værste fald fortsat en økonomisk udfordring på det\nspecialiserede socialområde i størrelsesordenen 10 mio. kr., som der arbejdes intensivt på at\nfå nedbragt i 4. kvartal.\nBudgettet til glatførebekæmpelse udvides samtidig med 2 mio. kr. i lyset af den hårde vinter\nprimo året og til håndtering af forventede udgifter i årets fjerde kvartal. I modsat retning er\nindarbejdet en kompenserende reduktion af barselspuljen og budgettet til Ejendomme og GIS.\nPå anlægsområdet er indregnet forventede overførelser af anlægsudgifter fra 2026 til 2027 på i\nalt 49,7 mio. kr. inkl. forsyning.\nStatus for kommunens økonomiske nøgletal fremgår af tabel 1 nedenfor.\nTabel 1: De økonomiske hjørneflag\n\nDriftsoverskuddet udgør uændret 115 mio. kr., og ligger derved 23 mio. kr. under\nmålsætningen i den økonomiske politik.\nServiceudgifterne stiger med 2 mio. kr. og udgør nu 2.615 mio. kr., hvorved serviceudgifterne i\nforhold til oprindeligt budget er steget med 55 mio. kr.\nSet i forhold til KL`s aktuelle sigtepunkt for serviceudgifterne udgør presset på servicerammen i\nstørrelsesordenen 12 mio. kr.\nDer vil være opmærksomhed på såvel driftsoverskuddets størrelse som presset på\nservicerammen i den videre økonomistyring frem mod regnskabsafslutningen.\nKommunens bruttoanlægsudgifter ekskl. forsyning falder med godt 49 mio. kr. til 161 mio. kr.,\nhvilket skyldes forventede overførelser af anlægsbudget fra 2026 til 2027. Det forventede\nregnskab på anlægsområdet på 161 mio. kr. er fortsat over oprindeligt budget på 158 mio. kr.\nDen gennemsnitlige kassebeholdning stiger med 25 mio. kr. til 468 mio. kr.\n\nKonsekvenser for budgettet\nKommunens driftsoverskud udgør uændret 115 mio. kr., og serviceudgifterne stiger med 2 mio.\nkr. Bruttoanlægsudgifterne falder med 49 mio. kr. Den gennemsnitlige kassebeholdning stiger\nmed 25 mio. kr."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-5": {
+   "id": "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-5",
+   "kommune": "Egedal",
+   "udvalg": "Erhvervs- og Bæredygtighedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=04a4d86b-215a-4b79-ba6b-f0653c674b51",
+   "hentet": "2026-11-26T14:13:46.590Z",
+   "titel": "Implementering af budget 2027-30 (EBU) - orientering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at udvalget tager oversigten over initiativer til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På baggrund af vedtagelsen af Budget 2027-30 har administrationen udarbejdet en oversigt\n(implementeringsark) over de initiativer og dermed politiske beslutninger, der bliver igangsat og\nskal implementeres i 2027. Det vedrører alle udvidelser, effektiviseringer, besparelser og nye\nanlægsinvesteringer, som nu er indarbejdet i budgetrammerne, samt politiske\nhensigtserklæringer fra budgetaftalen.\nImplementeringsarket bruges som et administrativt redskab i forhold til planlægning og\nressourcestyring samt til den politiske afrapportering af status og fremdrift i implementeringen.\nInitiativerne er oplistet under deres respektive politiske udvalg og med en kort beskrivelse af\nforslagets indhold og dertil knyttet bevilling. Fordelingen af initiativerne på udvalg og ansvarlige\nfagcentre afspejler, hvor initiativpligten ligger. Det skal imidlertid understreges, at det for flere af\ninitiativerne gælder, at de vil involvere flere udvalg og fagcentre, hvilket vil blive håndteret i den\nkonkrete opgaveløsning.\nI løbet af budgetåret vil implementeringsarket blive forelagt til politisk behandling i\nfagudvalgene, Økonomiudvalget og Byrådet, hvor administrationen redegør for status for\nimplementeringen af de for fagudvalget relevante initiativer, mens Økonomiudvalget og\nByrådet forelægges implementeringsarket i sin helhed.\nStatus forlægges i forbindelse med den politiske behandling af opfølgningen på budget 2027 i\nhenholdsvis april, september og december måned.\n\nKonsekvenser for budgettet\nDer er ingen økonomiske konsekvenser som følge af sagen. De økonomiske konsekvenser af\nde politiske beslutninger er indarbejdet i budgettet jf. sagens bilag."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-6": {
+   "id": "egedal-2026-12-01-erhvervs-og-baeredygtighedsudvalget-6",
+   "kommune": "Egedal",
+   "udvalg": "Erhvervs- og Bæredygtighedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=04a4d86b-215a-4b79-ba6b-f0653c674b51",
+   "hentet": "2026-11-26T14:13:46.590Z",
+   "titel": "Orienteringssager",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalg og administrationen orienterer hinanden gensidigt om henvendelser, sager,\nkommende arrangementer, evt. foretræde og træffetid mm., herunder:\n\nKåring af gazellevirksomheder i 2026.\nEkstraordinært møde i EBU den 18. januar 2027 om erhvervspriser\nEgedal Erhvervs efterårskonference."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-11-25-byraadet-6": {
+   "id": "egedal-2026-11-25-byraadet-6",
+   "kommune": "Egedal",
+   "udvalg": "Byrådet",
+   "dato": "2026-11-25",
+   "type": "referat",
+   "nr": 6,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
+   "titel": "Revideret plejeplan for fredningen Langåsen og Nellesødalen - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Det indstilles, at den reviderede plejeplan godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Fredningen Langåsen og Nellesødalen\nFredningen for Langåsen og Nelleødalen er fra 2003 og dækker en del af Naturpark Mølleåen,\nsom omfatter et større, markant istidslandskab, der strækker sig over store dele af Egedal-,\nFrederikssund-, Furesø-, Allerød- og Hillerød kommuner.\nLangåsen og Nellesødalen-fredningen ligger mellem de to adskilte delområder i Ganløse og\nSlagslunde Tunneldale-Fredningen. Plejeplanens afgrænsning er sammenfaldende med\nfredningens grænser og omfatter et areal på 61,2 ha, der er ejet af private lodsejere og\nforeninger.\nFredningen har til formål at:\nBevare de landskabelige, biologiske og kulturhistoriske kvaliteter.\nBevare og synliggøre områdets geologiske interesser.\nSikre den rekreative udnyttelse af området og offentlighedens adgang til området.\nÅbne mulighed for naturpleje og naturgenopretning i området.\n\nHvad er en plejeplan\nDen nuværende plejeplan for Langåsen og Nellesødalen er fra 2018, og der er ikke et krav om\nrevision.\nEgedal Kommune er tilsyns- og plejemyndighed for fredningen. Egedal Kommune er ikke\nforpligtiget til at udføre plejeforanstaltninger i fredningsområdet. Det er alene en ret, der kan\ntages i brug, hvis det tjener fredningens formål.\nHvis der udføres plejeforanstaltninger, skal det ske i overensstemmelse med plejeplanen, som\nindeholder de retningslinjer og rammer, der skal følges at sikre, at planens målsætning nås.\nDen reviderede plejeplan\n\nNye plejetiltag\nOmrådet er fortsat delt op i de samme underområder magen til opdelingen i den eksisterende\nplejeplan. Det fremgår af bilag 1, tabel 1, hvilke plejetiltag, der bør iværksættes for at opnå\nmålene for plejen.\nOverordnet set er der behov for mere intensiv græsning, og i forhold til den eksisterende\nplejeplan, også rydning af opvækst på flere arealer. Dette vil også i højere grad understøtte\nformålet med fredningen, som bl.a. er at synliggøre det særegne landskab og formidle de\ngeologiske værdier. Det anbefales i den nye plan at se nærmere på behovet for at oprense en\nsø/vandhul, hvor der før var lagt op til kun at rydde tagrør.\nBeskrivelse af området\nOmrådebeskrivelsen er ikke ændret meget i forhold til den eksisterende plan. Der er sket\nopdatering af datagrundlaget for forekomster af arter mv.\nLayout og sprog\nKortene er blevet opdateret, så de layoutmæssigt fremstår mere tydelige, og der er lavet\nsproglige rettelser så plejeplanen er mere letlæselig.\n\nKonsekvenser for budgettet\nSagen har ingen bevillingsmæssige konsekvenser.\n\nBorgerdialog\nGrønt Råd har været hørt i forbindelse med arbejdet med revision af plejeplanen, og har ikke\nhaft bemærkninger. Den vedtagede nye plejeplan skal sendes til berørte lodsejere til\norientering (jf. bekendtgørelsen skal de ikke høres).\nDer har ikke været dialog med lodsejerne i forbindelse med opdateringen af plejeplanen, men\ndet vil der komme når og hvis kommunen ønsker at bruge ressourcer på at gennemføre pleje i\nområdet."
+    },
+    {
+     "titel": "Behandling i Klima-, Teknik- og Miljøudvalget 4. november 2026",
+     "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Behandling i Økonomiudvalget 18. november 2026",
+     "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
+   "bilag": []
+  },
+  "egedal-2026-11-25-byraadet-13": {
+   "id": "egedal-2026-11-25-byraadet-13",
+   "kommune": "Egedal",
+   "udvalg": "Byrådet",
+   "dato": "2026-11-25",
+   "type": "referat",
+   "nr": 13,
+   "kilde": "https://dagsordener.egedalkommune.dk/vis?id=4cbcf418-c787-486a-9ee7-14f2038ebd7c",
+   "hentet": "2026-11-26T14:14:01.150Z",
+   "titel": "Principbeslutning om den fremtidige anvendelse af Kildedal Nord - beslutning",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Administrationen indstiller, at anvendelsen af Kildedal Nord ændres fra blandet byformål\ntil erhvervsområde."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Administrationen er ved at forberede den kommende planstrategi. I den forbindelse er det\ncentralt at se på, om administrationen i det videre arbejde skal udlægge større områder til\nerhverv, da det vil give bedre mulighed for at tiltrække erhvervsvirksomheder til kommunen.\nEgedal Kommune har et ønske om i højere grad at tiltrække virksomheder til kommunen. Det\nvil give mulighed for, at der fremover skabes flere arbejdspladser i kommunen, hvilket\nunderstøtter Egedal som en kommune, man både kan bo og arbejde i.\nØnsket om at tiltrække flere arbejdspladser er afspejlet i de Strategiske pejlemærker for Egedal\nkommunes erhvervsindsats, som Byrådet vedtog i februar 2023. De strategiske pejlemærker er\nbl.a. en pejling på, hvordan der kan tiltrækkes flere virksomheder til Egedal kommune, og\nfremhæver bl.a. ønsket om at udvikle attraktive erhvervsområder, der sikrer plads til udvidelse\nog udvikling af virksomheder i Egedal kommune.\nEgedal Kommune forventer at vedtage en erhvervsstrategi ved årsskiftet, der vil have en\nambition om styrke den strategiske erhvervsindsats.\nKildedal Nord ligger i kommunens østlige del, umiddelbart nord for Kildedal Station. Området er\nca. 89 ha, hvoraf kommunen ejer ca. 33 ha i den sydlige del. Se kortbilag i bilag 1.\nKildedal Nord er et attraktivt areal, der er meget egnet til erhvervsudvikling. Kildedal Nord\nligger tæt på både offentlig transport, på Frederikssundsmotorvejen og andre større\nerhvervsområder i både Egedal og Ballerup Kommuner.\nKildedal Nord har gennem en årrække været udlagt til fremtidig byudvikling, og der har været\narbejdet med en række forskellige visioner og udviklingsscenarier for området, herunder ferieog fritidsformål, statslige funktioner, boligområde og idræts- og træningsfaciliteter. Se historisk\nrids i bilag 2.\n\nSenest har byrådet i august 2025 vedtaget de overordnede rammer for udarbejdelse af en\nhelhedsplan for Kildedal Nord. Byrådet tilkendegav i den forbindelse, at området som\nudgangspunkt skulle udvikles til blandet byformål med boliger, offentlige formål, service og\nerhverv. Arbejdet blev senere sat i bero som følge af henvendelser fra erhvervsvirksomheder\nom arealet.\nKommunen modtager løbende henvendelser fra virksomheder, som ønsker at placere sig i\nområdet, også større virksomheder med interesse for at etablere sit hovedsæde i området.\nOmrådet vil pga. sin placering kunne udlægges til virksomheder, der har et større arealbehov\nog til en virksomhedstype, som har særlige behov ift. afstand til naboer m.v. pga. støj (op til\nmiljøklasse 4).\nAdministrationen vurderer, at det er meget attraktiv erhvervsjord i Egedal Kommune.\nAdministrationen vil i det kommende arbejde lægge op til, at der kommer en klar retning for\nudviklingen af erhvervsområdet, særlig at der kan være større virksomheder som domiciler,\nmens forvaltningen ikke vil lægge op til solceller eller batteripark.\nKonsekvenser ved at ændre områdets status\nÆndringen vil betyde, at udviklingen af Kildedal Nord vil ændre karakter fra det hidtidige\nudgangspunkt om blandet byområde med mulighed for op til 600 boliger, hvoraf de 350 har\nindgået i boligprognosen, til at være et erhvervsområde.\nÆndringen vil samtidig få betydning for den fremtidige disponering af de øvrige arealer i\nKildedal Nord, herunder afgrænsning af byudviklingsområdet mod nord, erhvervsklasser og\nzonering samt rækkefølgen for udbygning af de resterende arealer.\nSamtidig vil en ændret anvendelse skabe et nyt grundlag for den fremtidige planlægning af\nKildedal Nord og blive afspejlet i boligprognosen, befolkningsprognosen og elevtalsprognosen\nog dermed i behov for dagtilbud og skoler."
+    },
+    {
+     "titel": "Videre proces",
+     "tekst": "Såfremt Byrådet beslutter, at administrationen, i arbejdet med planstrategien, skal ændre\nanvendelsen af Kildedal Nord til erhverv op til miljøklasse 4, vil administrationen arbejde videre\nmed de nødvendige planmæssige afklaringer.\nI Planstrategi 2027 er der blandt andet fokus på at skabe bedre muligheder for erhvervslivet.\nDerfor foreslås det, at Kildedal Nord fremover anvendes til erhvervsformål. I den forbindelse vil\nadministrationen undersøge, om der skal etableres et større rekreativt område mellem den del\naf Kildedal Nord, der udvikles til byformål, og Knardrup.\nKommuneplan 2029 følger op på planstrategi 2027 med de konkrete rammeændringer,\nligesom den fremtidige afgrænsning, zonering og rækkefølge for udbygning af den resterende\ndel af Kildedal Nord vil indgå arbejdet med Kommuneplan 2029.\n\nKonsekvenser for budgettet\n\nSagen har ingen bevillingsmæssige konsekvenser i sig selv. Salg af erhvervsjord vil typisk ske\ntil billigere priser end salg af jord til boliger eller blandet by.\n\nBorgerdialog\nDer vil blive gennemført borgerdialog i forbindelse med fremtidig planlægninger herunder\nplanstrategi, kommuneplan og lokalplanlægning."
+    },
+    {
+     "titel": "Behandling i Plan- og Byudviklingsudvalget 3. november 2026",
+     "tekst": "Anbefalet."
+    },
+    {
+     "titel": "Behandling i Økonomiudvalget 18. november 2026",
+     "tekst": "Ulrik John Nielsen (L) spurgte, om han var inhabil i sagen.\nDer blev stemt om Ulrik John Nielsens inhabilitet.\nFor inhabilitet stemte Edith Thingstrup (I).\nImod inhabilitet stemte Birgitte Neergaard-Kofod (C), Johan Hahn (E), Ulrik John Nielsen\n(L), Rikke Mortensen (B), Karsten Søndergaard (V) og Vicky Holst Rasmussen (A) med 6\nstemmer.\nJens Skov (F) og Anders Bo Larsen (V) var fraværende\nUlrik John Nielsen (L) blev ikke erklæret inhabil.\nIndstillingen blev anbefalet."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Indstillingen blev godkendt."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=50331ef3-062e-4e58-a166-a0c11d2b2e26": {
    "senest": "2025-12-11",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=f4ca2eda-e625-4d7e-9e9d-a7610ae50855": {
    "senest": "2017-12-20",
@@ -10870,15 +11427,15 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=528ab01e-3e5f-40d5-80e9-6784b4cf3d62": {
    "senest": "2026-11-19",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=0e5ec606-c977-41a4-ac7e-7fe26eaef3f9": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=d148160c-82c3-4f48-913e-7c18679f8ed4": {
    "senest": "2026-11-24",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=a41db2b3-33dc-4249-8c5e-c3ceaec5a914": {
    "senest": "2025-09-27",
@@ -10894,11 +11451,11 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=85791976-37b7-4163-be22-d06ce4a42c04": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=7341820a-a774-441f-a2b1-d40c391020a2": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=ad205d0e-5ed9-4198-abab-e0ba4f9b9613": {
    "senest": "2017-11-30",
@@ -10910,15 +11467,15 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=01057b45-79d9-41c9-b126-62cbebe02104": {
    "senest": "2025-11-28",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=e9f3bb55-511c-4273-921c-236f8b47303e": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=8bce4b78-bc90-45f4-a4c4-61ac8fcb3db2": {
    "senest": "2026-11-16",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=6a8af2a9-e58e-488c-872a-ae577c3c9b32": {
    "senest": "2017-12-07",
@@ -10930,19 +11487,19 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=7ec99251-7ca4-4c37-8eb7-c38245b7fa9e": {
    "senest": "2025-12-03",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=01b3fc27-f921-4810-8835-7cd417a8fb5f": {
-   "senest": "2026-11-18",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=41d2dfb4-1a87-4a15-b54f-0c60bb37c21c": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=d7ac2043-03d1-4767-a1c7-575e099aaf8a": {
    "senest": "2025-11-28",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=c7925800-58fa-43d0-850f-36ba96508273": {
    "senest": "2025-09-27",
@@ -10954,19 +11511,19 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=f7d67e2a-c143-4fd1-909f-6c1a6ba3c625": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=8c8fa82b-9ecb-473d-8b13-390f8c5ab0e5": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=37ea6db9-0d8e-4014-92f4-5b7744d0bf1a": {
-   "senest": "2026-11-18",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=433bb63b-38c5-4122-a843-dd5c41993410": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=cb1f8c90-cb02-43b4-8d1b-aa3b428d8d34": {
    "senest": "",
@@ -10998,11 +11555,11 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=b13d5f50-3a69-4697-9561-6a4453607d88": {
    "senest": "2026-09-03",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=fc85bdb0-0c62-48a7-b4e0-b686e1573e77": {
    "senest": "2025-12-12",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=f0e2c467-7ab3-4689-8b0d-024619d99c0d": {
    "senest": "2025-09-27",
@@ -11010,19 +11567,19 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=2a877e75-a22d-46b8-a8e6-2c3a1a6561ca": {
    "senest": "2025-12-02",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=e08ac4f5-ae14-4663-a6b6-18bb23ab32fb": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=eaff9d9f-848a-406e-ab07-d7eabad4714a": {
-   "senest": "2026-11-04",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=4f0bef22-01a3-41d4-af78-4580ec68415b": {
    "senest": "2026-11-11",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=4f18ae25-502a-437d-9b56-293dbac47ba3": {
    "senest": "2025-09-27",
@@ -11034,7 +11591,7 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=7486eeda-7898-49ea-8f41-d15900092ee0": {
    "senest": "2025-12-05",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=54f837a8-d49b-41bd-a0a7-81be7cc426b3": {
    "senest": "2021-12-10",
@@ -11042,7 +11599,7 @@
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=097c0f76-8015-448e-b89c-fb62f70c8021": {
    "senest": "2025-12-18",
-   "tjekket": "2026-11-25"
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=a7b7c534-3c43-4208-b048-41b3015b1c09": {
    "senest": "2017-12-20",
@@ -11053,15 +11610,15 @@
    "tjekket": "2026-11-21"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/ForCommittee?committeeId=f49bcb03-3856-4ab8-b197-2b6d727044a1": {
-   "senest": "2026-11-20",
-   "tjekket": "2026-11-25"
+   "senest": "2026-11-26",
+   "tjekket": "2026-11-26"
   },
   "https://dagsordener.egedalkommune.dk/Sitemap/StaticPages": {
    "senest": "",
    "tjekket": "2026-11-21"
   }
  },
- "opdateret": "2026-11-25T23:25:48.092Z",
+ "opdateret": "2026-11-26T14:14:01.152Z",
  "kommune": "Egedal",
  "parser": 3
 }
