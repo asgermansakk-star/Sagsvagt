@@ -732,6 +732,24 @@
    "dato": "2026-12-01",
    "punkter": 30,
    "parser": 3
+  },
+  "4db7eb8e-7cfa-4769-a322-f1421e784ba8": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-12-01",
+   "punkter": 0,
+   "parser": 3,
+   "tomFra": "2026-11-26",
+   "tegn": 10709
+  },
+  "38758044-73fc-4d63-af47-7198bc0830ff": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Plan- og Byudviklingsudvalget",
+   "dato": "2026-12-01",
+   "punkter": 1,
+   "parser": 3
   }
  },
  "sager": {
@@ -12944,8 +12962,8 @@
    "dato": "2026-12-01",
    "type": "dagsorden",
    "nr": 1,
-   "kilde": "https://dagsordner.albertslund.dk/vis?id=a2f060bd-f143-4139-adc9-a1b505e3fa9e",
-   "hentet": "2026-11-25T14:36:14.213Z",
+   "kilde": "https://dagsordner.albertslund.dk/vis?id=38758044-73fc-4d63-af47-7198bc0830ff",
+   "hentet": "2026-11-26T23:17:07.595Z",
    "titel": "PBU - Godkendelse af dagsorden",
    "afsnit": [
     {
@@ -13984,7 +14002,7 @@
    "tjekket": "2026-11-26"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=503fa81d-6624-456d-aec6-0ba4669a9343": {
-   "senest": "2026-11-25",
+   "senest": "2026-11-26",
    "tjekket": "2026-11-26"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=06d069eb-df00-4e4e-bf44-ea533c1d54d9": {
@@ -14036,7 +14054,7 @@
    "tjekket": "2026-11-11"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=79c15739-b067-4234-951a-a97dc48b96de": {
-   "senest": "2026-11-25",
+   "senest": "2026-11-26",
    "tjekket": "2026-11-26"
   },
   "https://dagsordner.albertslund.dk/Sitemap/ForCommittee?committeeId=ac5d2ad9-ff9f-454a-9edd-b39a7ae2998b": {
@@ -14172,7 +14190,7 @@
    "tjekket": "2026-11-11"
   }
  },
- "opdateret": "2026-11-26T14:10:03.226Z",
+ "opdateret": "2026-11-26T23:17:07.596Z",
  "kommune": "Albertslund",
  "parser": 3
 }

@@ -511,6 +511,30 @@
    "dato": "2026-11-30",
    "punkter": 9,
    "parser": 3
+  },
+  "a7729444-8083-4987-9afd-4158c79e0c80": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "punkter": 10,
+   "parser": 3
+  },
+  "ed9c7461-ef92-4ad6-b740-31ae10179034": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "punkter": 13,
+   "parser": 3
+  },
+  "38c3ff1c-ea9d-4874-9ce4-a5144a31fd2b": {
+   "lastmod": "2026-11-26",
+   "type": "referat",
+   "udvalg": "Børn-, Unge- og Skoleudvalget",
+   "dato": "2026-11-25",
+   "punkter": 5,
+   "parser": 3
   }
  },
  "sager": {
@@ -10397,12 +10421,17 @@
    "kommune": "Køge",
    "udvalg": "Børn-, Unge- og Skoleudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.koege.dk/vis?id=195a453b-e14b-453e-8f72-d978d5a767d8",
-   "hentet": "2026-11-19T22:29:28.904Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=38c3ff1c-ea9d-4874-9ce4-a5144a31fd2b",
+   "hentet": "2026-11-26T23:20:52.910Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt."
+    }
+   ],
    "bilag": []
   },
   "koege-2026-11-25-boern-unge-og-skoleudvalget-2": {
@@ -10410,10 +10439,10 @@
    "kommune": "Køge",
    "udvalg": "Børn-, Unge- og Skoleudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.koege.dk/vis?id=195a453b-e14b-453e-8f72-d978d5a767d8",
-   "hentet": "2026-11-19T22:29:28.904Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=38c3ff1c-ea9d-4874-9ce4-a5144a31fd2b",
+   "hentet": "2026-11-26T23:20:52.910Z",
    "titel": "Besøg af Fælleselevrådet",
    "afsnit": [
     {
@@ -10423,6 +10452,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Der er ingen økonomiske konsekvenser for Køge Kommune i forbindelse med drøftelsen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Drøftet."
     }
    ],
    "bilag": []
@@ -10432,10 +10465,10 @@
    "kommune": "Køge",
    "udvalg": "Børn-, Unge- og Skoleudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.koege.dk/vis?id=195a453b-e14b-453e-8f72-d978d5a767d8",
-   "hentet": "2026-11-19T22:29:28.904Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=38c3ff1c-ea9d-4874-9ce4-a5144a31fd2b",
+   "hentet": "2026-11-26T23:20:52.910Z",
    "titel": "Fremskudt tværfaglig rådgivning",
    "afsnit": [
     {
@@ -10445,6 +10478,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Arbejdet med udvikling af modellen gennemføres inden for de eksisterende budgetrammer.\nUdgangspunktet er, at den fremskudte tværfaglige rådgivning realiseres inden for de\neksisterende økonomiske rammer. Som led i arbejdet afdækkes de økonomiske konsekvenser\nved forskellige grader af decentral og samtidig tilstedeværelse, herunder konsekvenser ved\nændrede arbejdsgange, transport, fysiske rammer og øvrige driftsmæssige forhold."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad. 1 og 2. Godkendt."
     }
    ],
    "bilag": []
@@ -10454,19 +10491,23 @@
    "kommune": "Køge",
    "udvalg": "Børn-, Unge- og Skoleudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.koege.dk/vis?id=195a453b-e14b-453e-8f72-d978d5a767d8",
-   "hentet": "2026-11-19T22:29:28.904Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=38c3ff1c-ea9d-4874-9ce4-a5144a31fd2b",
+   "hentet": "2026-11-26T23:20:52.910Z",
    "titel": "Kommunale investeringsmidler til nære sundhedsindsatser",
    "afsnit": [
     {
      "titel": "Indstilling",
-     "tekst": "Børne- og Kulturforvaltningen samt Velfærdsforvaltningen indstiller, at Børn-, Unge- og\nSkoleudvalget, Social- og Beskæftigelsesudvalget samt Ældre- og\nSundhedsudvalget anbefaler, at Økonomiudvalget og Kommunalbestyrelsen godkender\n1. godkender den foreslåede udmøntning af midler for 2027 til nære sundhedsindsatser\ni Køge Kommune i forbindelse med sundhedsreformen\n2. godkender indtægts-/udgiftsbevilling på samlet 1,4 mio. kr. på Børn-, Unge- og\nSkoleudvalget vedr. etablering af Headspace i Køge Kommune og tidlig\nforebyggende indsats på det\nsundhedsfremmende børne- og ungeområde\n3. godkender indtægts-/udgiftsbevilling på samlet 1,5 mio. kr. på Social- og\nBeskæftigelsesudvalget vedr. tidlig og sammenhængende støtte til borgere i eget\nhjem og på botilbud\n4. godkender indtægts-/udgiftsbevilling på samlet 1,5 mio. kr. på Ældre- og\nSundhedsudvalget vedr. styrkelse af demensområdet\n5. godkender indtægts-/udgiftsbevilling på samlet 2,45 mio. kr. på Ældre- og\nSundhedsudvalget til de nye nationale kvalitetsstandarder vedrørende almen\nsygepleje og basal palliation.\n\nBaggrund og vurdering\nDe kommunale investeringsmidler, der er afsat i forbindelse med sundhedsreformen, er varige\nmidler, der indfases gradvist i perioden fra 2027 til 2030, og udmøntes af sundhedsrådene.\nSom en del af forårsaftalen (2025) er det aftalt nationalt, at midlerne skal anvendes til\nindsatser, der hører under kommunalt myndighedsansvar. Det kan være på sundhedsområdet\neller tilgrænsende områder, herunder ældre, børn- og unge samt social- og\nbeskæftigelsesområdet. Derudover indgår der i forårsaftalen principper om deling af relevante\noplysninger mellem region og kommune, samt at der kan indgå tilsagnskrav, der dog ikke kan\nlåse en kommune på et bestemt udgiftsniveau. Endelig bør aftaleprocesserne tilrettelægges så\nenkelt som muligt og under hensyn til at begrænse afledt administration.\nSundhedsrådet Østsjælland og Øernes samlede andel af kommunale investeringsmidler udgør\ni 2027 12 mio. kr. i bundne midler, og 41,2 mio. kr. i frie midler.\n\nDe bundne midler fordeles direkte til de ni kommuner i sundhedsrådet efter indbyggertal, og\nanvendelsen er bundet til imødekommelse af kravene i de nationale kvalitetsstandarder\nvedrørende almen sygepleje og basal palliation. Køge Kommunes andel heraf udgør 1,75 mio.\nkr. i 2027, som tilgår Ældre- og Sundhedsudvalget.\nHerudover tilgår 0,7 mio. kr. af de frie midler Køge Kommune og Ældre- og Sundhedsudvalget\ntil ikke bunde kvalitetsstandarder. De i alt 2,45 mio. kr. skal bruges til at efterleve de nye\nkvalitetsstandarder, som vil indeholde en blanding af bindende krav og ikke bindende\nanbefalinger til kommunerne.\nDe frie midler fordeles til kommunerne efter en fordelingsnøgle ud fra sygdomstyngden i den\nenkelte kommune. Selve udmøntningen af de frie midler sker ved, at der indgås lokale aftaler\nmellem region og kommune. Køge Kommunes andel af de frie investeringsmidler udgør 4,4\nmio. kr. i 2027.\nSundhedsrådet har den 23. oktober 2026 besluttet, at midlerne udmøntes til indsatser indenfor\nseks overordnede indsatsområder, der – som supplement til de nationale principper - udgør en\noverordnet ramme for brugen af de frie midler:\n1) Den ældre medicinske patient,\n2) Borgere med kronisk sygdom,\n3) Børn og unge med psykisk mistrivsel samt\n4) Voksne med psykisk sygdom.\nHertil kommer de to tværgående indsatsområder:\n5) Forebyggelse og civilsamfund samt\n6) Digitalisering og innovation.\nSe vedlagte indsatskatalog for mere information om de enkelte indsatsområder.\nForvaltningens forslag til fordeling af midlerne på indsatser i de enkelte udvalg følger nedenfor.\nÆldre- og Sundhedsudvalget\nStyrkelse af demensområdet\nForvaltningen foreslår at styrke demensområdet. Kommunens demensteam skal i højere grad\nend nu have deres daglige gang på plejehjemmene og understøtte, at demensfaglig viden\nomsættes til konkrete tilgange i plejen på de enkelte enheder.\nMed afsæt i hverdagens opgaver skal teamet yde praksisnær supervision og sparring, facilitere\nfælles refleksion over konkrete borgerforløb og bidrage til målrettet undervisning af\nmedarbejdere på plejehjemmene. Teamet skal desuden understøtte lokale demensfaglige\nnøglepersoner.\nUd over den styrkede indsats på plejeboligområdet skal den øgede kapacitet i demensteamet\nanvendes til at udvikle en tidligere og mere sammenhængende støtte til borgere med demens\n\nog deres familier. Der skal bl.a. være fokus på yngre borgere med demens, støtte til pårørende\nog udvikling af aktiviteter og fællesskaber i samarbejde med civilsamfund og frivillige\norganisationer.\nFormålet er at styrke kvaliteten i demensindsatsen på tværs af ældreområdet og sikre, at faglig\nunderstøttelse og kompetenceudvikling forankres tæt på borgerne og den daglige praksis.\nForslaget understøtter samtidig indsatsområdet Den ældre medicinske patient.\nBørn-, Unge- og Skoleudvalget\nEtablering af Headspace i Køge Kommune\nForvaltningen foreslår at prioritere midler til Køge Kommunes medfinansiering af etableringen\naf Headspace for unge i alderen 12-25 år. Headspace vil kunne supplere kommunens øvrige\ntidlige tilbud til unge med mistrivsel. Forslaget relaterer sig til indsatsområdet Børn og unge\nmed psykisk mistrivsel.\nTidlig forebyggende indsats på det sundhedsfremmende børne- og ungeområde\nForvaltningen foreslår at prioritere midler til sundhedsfremmende indsatser med det formål at\nstyrke Sundhedsplejens mulighed for at arbejde forebyggende allerede under graviditeten.\nMålet er at skabe en tidlig og sammenhængende indsats om barnet og familien og at\nidentificere og adressere behov for støtte, inden udfordringer vokser sig større.\nKonkret foreslås at udvide Sundhedsplejens tilbud til at omfatte graviditetsbesøg til alle\nførstegangsforældre med fokus på tidlig opsporing af sårbarhed, mental sundhed og\nforberedelse på forældrerollen (pt. tilbydes graviditetsbesøg kun til særligt sårbare gravide\n(niveau 3 og 4) på baggrund af henvisning fra andre fagpersoner).\nSocial- og Beskæftigelsesudvalget\nTidlig og sammenhængende støtte i eget hjem og på botilbud\nForvaltningen foreslår at styrke den tidlige støtte til borgere med sammensatte sociale,\npsykiske og sundhedsmæssige udfordringer. Den øgede kapacitet skal anvendes til en mere\nopsøgende og håndholdt indsats, hvor borgerens sociale og sundhedsmæssige behov ses i\nsammenhæng, og hvor der kan sættes tidligere ind med støtte i eget hjem eller på botilbud.\nIndsatsen skal bl.a. understøtte en tættere kobling mellem social støtte, herunder indsatser\nefter §§ 82 og 85, og kommunens sundhedsindsatser samt styrke koordineringen på tværs af\nsocial-, sundheds- og plejeområdet. Samtidig skal samarbejdet med praktiserende læger\nstyrkes for borgere, hvor behandling, social støtte og eventuelt beskæftigelsesindsats skal\nhænge bedre sammen. Formålet er at forebygge, at problemerne vokser sig større, og\nunderstøtte, at flere borgere kan mestre hverdagen og blive længst muligt i eget hjem."
+     "tekst": "Børne- og Kulturforvaltningen samt Velfærdsforvaltningen indstiller, at Børn-, Unge- og\nSkoleudvalget, Social- og Beskæftigelsesudvalget samt Ældre- og\nSundhedsudvalget anbefaler, at Økonomiudvalget og Kommunalbestyrelsen\n1. godkender den foreslåede udmøntning af midler for 2027 til nære sundhedsindsatser\ni Køge Kommune i forbindelse med sundhedsreformen\n2. godkender indtægts-/udgiftsbevilling på samlet 1,4 mio. kr. på Børn-, Unge- og\nSkoleudvalget vedr. etablering af Headspace i Køge Kommune og tidlig\nforebyggende indsats på det\nsundhedsfremmende børne- og ungeområde\n3. godkender indtægts-/udgiftsbevilling på samlet 1,5 mio. kr. på Social- og\nBeskæftigelsesudvalget vedr. tidlig og sammenhængende støtte til borgere i eget\nhjem og på botilbud\n4. godkender indtægts-/udgiftsbevilling på samlet 1,5 mio. kr. på Ældre- og\nSundhedsudvalget vedr. styrkelse af demensområdet\n5. godkender indtægts-/udgiftsbevilling på samlet 2,45 mio. kr. på Ældre- og\nSundhedsudvalget til de nye nationale kvalitetsstandarder vedrørende almen\nsygepleje og basal palliation.\n\nBaggrund og vurdering\nDe kommunale investeringsmidler, der er afsat i forbindelse med sundhedsreformen, er varige\nmidler, der indfases gradvist i perioden fra 2027 til 2030, og udmøntes af sundhedsrådene.\nSom en del af forårsaftalen (2025) er det aftalt nationalt, at midlerne skal anvendes til\nindsatser, der hører under kommunalt myndighedsansvar. Det kan være på sundhedsområdet\neller tilgrænsende områder, herunder ældre, børn- og unge samt social- og\nbeskæftigelsesområdet. Derudover indgår der i forårsaftalen principper om deling af relevante\noplysninger mellem region og kommune, samt at der kan indgå tilsagnskrav, der dog ikke kan\nlåse en kommune på et bestemt udgiftsniveau. Endelig bør aftaleprocesserne tilrettelægges så\nenkelt som muligt og under hensyn til at begrænse afledt administration.\nSundhedsrådet Østsjælland og Øernes samlede andel af kommunale investeringsmidler udgør\ni 2027 12 mio. kr. i bundne midler, og 41,2 mio. kr. i frie midler.\n\nDe bundne midler fordeles direkte til de ni kommuner i sundhedsrådet efter indbyggertal, og\nanvendelsen er bundet til imødekommelse af kravene i de nationale kvalitetsstandarder\nvedrørende almen sygepleje og basal palliation. Køge Kommunes andel heraf udgør 1,75 mio.\nkr. i 2027, som tilgår Ældre- og Sundhedsudvalget.\nHerudover tilgår 0,7 mio. kr. af de frie midler Køge Kommune og Ældre- og Sundhedsudvalget\ntil ikke bunde kvalitetsstandarder. De i alt 2,45 mio. kr. skal bruges til at efterleve de nye\nkvalitetsstandarder, som vil indeholde en blanding af bindende krav og ikke bindende\nanbefalinger til kommunerne.\nDe frie midler fordeles til kommunerne efter en fordelingsnøgle ud fra sygdomstyngden i den\nenkelte kommune. Selve udmøntningen af de frie midler sker ved, at der indgås lokale aftaler\nmellem region og kommune. Køge Kommunes andel af de frie investeringsmidler udgør 4,4\nmio. kr. i 2027.\nSundhedsrådet har den 23. oktober 2026 besluttet, at midlerne udmøntes til indsatser indenfor\nseks overordnede indsatsområder, der – som supplement til de nationale principper - udgør en\noverordnet ramme for brugen af de frie midler:\n1) Den ældre medicinske patient,\n2) Borgere med kronisk sygdom,\n3) Børn og unge med psykisk mistrivsel samt\n4) Voksne med psykisk sygdom.\nHertil kommer de to tværgående indsatsområder:\n5) Forebyggelse og civilsamfund samt\n6) Digitalisering og innovation.\nSe vedlagte indsatskatalog for mere information om de enkelte indsatsområder.\nForvaltningens forslag til fordeling af midlerne på indsatser i de enkelte udvalg følger nedenfor.\nÆldre- og Sundhedsudvalget\nStyrkelse af demensområdet\nForvaltningen foreslår at styrke demensområdet. Kommunens demensteam skal i højere grad\nend nu have deres daglige gang på plejehjemmene og understøtte, at demensfaglig viden\nomsættes til konkrete tilgange i plejen på de enkelte enheder.\nMed afsæt i hverdagens opgaver skal teamet yde praksisnær supervision og sparring, facilitere\nfælles refleksion over konkrete borgerforløb og bidrage til målrettet undervisning af\nmedarbejdere på plejehjemmene. Teamet skal desuden understøtte lokale demensfaglige\nnøglepersoner.\nUd over den styrkede indsats på plejeboligområdet skal den øgede kapacitet i demensteamet\nanvendes til at udvikle en tidligere og mere sammenhængende støtte til borgere med demens\n\nog deres familier. Der skal bl.a. være fokus på yngre borgere med demens, støtte til pårørende\nog udvikling af aktiviteter og fællesskaber i samarbejde med civilsamfund og frivillige\norganisationer.\nFormålet er at styrke kvaliteten i demensindsatsen på tværs af ældreområdet og sikre, at faglig\nunderstøttelse og kompetenceudvikling forankres tæt på borgerne og den daglige praksis.\nForslaget understøtter samtidig indsatsområdet Den ældre medicinske patient.\nBørn-, Unge- og Skoleudvalget\nEtablering af Headspace i Køge Kommune\nForvaltningen foreslår at prioritere midler til Køge Kommunes medfinansiering af etableringen\naf Headspace for unge i alderen 12-25 år. Headspace vil kunne supplere kommunens øvrige\ntidlige tilbud til unge med mistrivsel. Forslaget relaterer sig til indsatsområdet Børn og unge\nmed psykisk mistrivsel.\nTidlig forebyggende indsats på det sundhedsfremmende børne- og ungeområde\nForvaltningen foreslår at prioritere midler til sundhedsfremmende indsatser med det formål at\nstyrke Sundhedsplejens mulighed for at arbejde forebyggende allerede under graviditeten.\nMålet er at skabe en tidlig og sammenhængende indsats om barnet og familien og at\nidentificere og adressere behov for støtte, inden udfordringer vokser sig større.\nKonkret foreslås at udvide Sundhedsplejens tilbud til at omfatte graviditetsbesøg til alle\nførstegangsforældre med fokus på tidlig opsporing af sårbarhed, mental sundhed og\nforberedelse på forældrerollen (pt. tilbydes graviditetsbesøg kun til særligt sårbare gravide\n(niveau 3 og 4) på baggrund af henvisning fra andre fagpersoner).\nSocial- og Beskæftigelsesudvalget\nTidlig og sammenhængende støtte i eget hjem og på botilbud\nForvaltningen foreslår at styrke den tidlige støtte til borgere med sammensatte sociale,\npsykiske og sundhedsmæssige udfordringer. Den øgede kapacitet skal anvendes til en mere\nopsøgende og håndholdt indsats, hvor borgerens sociale og sundhedsmæssige behov ses i\nsammenhæng, og hvor der kan sættes tidligere ind med støtte i eget hjem eller på botilbud.\nIndsatsen skal bl.a. understøtte en tættere kobling mellem social støtte, herunder indsatser\nefter §§ 82 og 85, og kommunens sundhedsindsatser samt styrke koordineringen på tværs af\nsocial-, sundheds- og plejeområdet. Samtidig skal samarbejdet med praktiserende læger\nstyrkes for borgere, hvor behandling, social støtte og eventuelt beskæftigelsesindsats skal\nhænge bedre sammen. Formålet er at forebygge, at problemerne vokser sig større, og\nunderstøtte, at flere borgere kan mestre hverdagen og blive længst muligt i eget hjem."
     },
     {
      "titel": "Økonomi",
      "tekst": "Økonomisk Afdeling bemærker, at der søges tillægsbevillinger til indtægter på samlet -6,85 kr.,\nsom er Køge Kommunes andel af bundne og frie midler fra Sundhedsråd Østsjælland og\nØerne samt tilsvarende udgiftsbevillinger på 6,85 mio. kr.\nBevillingerne er fordelt som følger:\nTillægsbevilling til indtægter på -1,4 mio. kr. til Børn-, Unge- og Skoleudvalget og tilsvarende\nudgiftsbevilling på 1,4 mio. kr. vedr. etablering af Headspace i Køge Kommune og tidlig\nforebyggende indsats på det sundhedsfremmende børne- og ungeområde.\nTillægsbevilling til indtægter på -1,5 mio. kr. og tilsvarende udgiftsbevilling på 1,5 mio. kr. på\nSocial- og Beskæftigelsesudvalget vedr. tidlig og sammenhængende støtte til borgere i eget\nhjem og på botilbud.\nTillægsbevilling til indtægter på -3,95 mio. kr. og tilsvarende udgiftsbevilling på 3,95 mio. kr. på\nÆldre- og Sundhedsudvalget vedr. styrkelse af demensområdet og til de nye nationale\nkvalitetsstandarder vedr. almen sygepleje og basal palliation.\nSe bilag for oversigt over forslag til fordeling af de frie investeringsmidler på udvalg og\nindsatsområder.\nBevillingerne er samlet set udgiftsneutrale for kassebeholdningen og påvirker heller ikke\nservicerammen."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Ad. 1 – 5. Anbefales overfor Økonomiudvalget og Kommunalbestyrelsen."
     }
    ],
    "bilag": []
@@ -10476,15 +10517,15 @@
    "kommune": "Køge",
    "udvalg": "Børn-, Unge- og Skoleudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.koege.dk/vis?id=195a453b-e14b-453e-8f72-d978d5a767d8",
-   "hentet": "2026-11-19T22:29:28.904Z",
+   "kilde": "https://dagsordener.koege.dk/vis?id=38c3ff1c-ea9d-4874-9ce4-a5144a31fd2b",
+   "hentet": "2026-11-26T23:20:52.910Z",
    "titel": "Information til Børn-, Unge- og Skoleudvalget",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Kommunikation\nSSP Køge har fået 733.000 kr. i støtte frem til udgangen af 2029 til projekt om digital\nmodstandskraft.\nProjektet skal forebygge ekstremisme og digital risikoadfærd. Der udvikles og afprøves\nmetoder og undervisningsmateriale, som styrker demokratisk deltagelse, fællesskab og digital\nmodstandskraft.\nProjektet gennemføres i et tværgående samarbejde, og modellen skal på sigt kunne anvendes\ntil forskellige målgrupper og inspirere andre kommuner."
+     "titel": "Beslutning",
+     "tekst": "Taget til efterretning."
     }
    ],
    "bilag": []
@@ -11164,6 +11205,454 @@
    "titel": "Meddelelser og spørgsmål - åben",
    "afsnit": [],
    "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-1": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-1",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Kommunale investeringsmidler til nære sundhedsindsatser",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Velfærdsforvaltningen samt Børne- og Kulturforvaltningen indstiller, at Ældre- og\nSundhedsudvalget, Børn-, Unge- og Skoleudvalget samt Social- og\nBeskæftigelsesudvalget anbefaler, at Økonomiudvalget og Kommunalbestyrelsen\ngodkender\n1. den foreslåede udmøntning af midler for 2027 til nære sundhedsindsatser i Køge\nKommune i forbindelse med sundhedsreformen.\n2. indtægts-/udgiftsbevilling på samlet 1,4 mio. kr. på Børn-, Unge- og Skoleudvalget\nvedr. etablering af Headspace i Køge Kommune og tidlig forebyggende indsats på det\nsundhedsfremmende børne- og ungeområde.\n3. indtægts-/udgiftsbevilling på samlet 1,5 mio. kr. på Social- og Beskæftigelsesudvalget\nvedr. tidlig og sammenhængende støtte til borgere i eget hjem og på botilbud.\n4. indtægts-/udgiftsbevilling på samlet 1,5 mio. kr. på Ældre- og Sundhedsudvalget vedr.\nstyrkelse af demensområdet.\n5. indtægts-/udgiftsbevilling på samlet 2,45 mio. kr. på Ældre- og Sundhedsudvalget til de\nnye nationale kvalitetsstandarder vedrørende almen sygepleje og basal palliation.\n\nBaggrund og vurdering\nDe kommunale investeringsmidler, der er afsat i forbindelse med sundhedsreformen, er varige\nmidler, der indfases gradvist i perioden fra 2027 til 2030, og udmøntes af sundhedsrådene.\nSom en del af forårsaftalen (2025) mellem et bredt flertal af Folketingets partier er det aftalt\nnationalt, at midlerne skal anvendes til indsatser, der hører under kommunalt\nmyndighedsansvar. Det kan være ”sundhedsindsatser, som i lovgivningen er henlagt til\nkommunerne – også sundhedsindsatser som er forankret på andre kommunale områder fx\nældreområdet eller socialområdet” (forårsaftalen, bilag 3).\nSundhedsrådet Østsjælland og Øernes samlede andel af kommunale investeringsmidler udgør\ni 2027 12 mio. kr. i bundne midler, og 41,2 mio. kr. i frie midler.\nDe bundne midler fordeles direkte til de ni kommuner i sundhedsrådet efter indbyggertal, og\nanvendelsen er bundet til imødekommelse af kravene i de nationale kvalitetsstandarder\nvedrørende almen sygepleje og basal palliation. Køge Kommunes andel heraf udgør 1,75 mio.\nkr. i 2027, som tilgår Ældre- og Sundhedsudvalget.\nDe frie midler fordeles til kommunerne efter en fordelingsnøgle ud fra sygdomstyngden i den\nenkelte kommune. De sydlige kommuner i sundhedsrådet får på denne måde en større andel\naf midlerne end de nordlige kommuner. Køge modtager dels 0,7 mio.kr. til understøttelse af\nsamme kvalitetsstandarder, som nævnt ovenfor (det samlede beløb til kvalitetsstandarder\nkommer dermed op på i alt 2,45 mio.kr., som tilgår Ældre- og Sundhedsudvalget), dels 4,4 mio.\nkr., som kommunen selv kan udmønte i frie investeringsmidler\nSundhedsrådet har den 23. oktober 2026 besluttet, at de frie investeringsmidler kan udmøntes\ntil indsatser indenfor seks overordnede indsatsområder, der supplerer forårsaftalens ramme:\n1. Den ældre medicinske patient,\n\n2. Borgere med kronisk sygdom,\n3. Børn og unge med psykisk mistrivsel samt\n4. Voksne med psykisk sygdom.\nHertil kommer de to tværgående indsatsområder:\n1. Forebyggelse og civilsamfund samt\n2. Digitalisering og innovation.\nSe vedlagte indsatskatalog for mere information om de enkelte indsatsområder. Forvaltningens\nforslag til fordeling af midlerne på indsatser i de enkelte udvalg følger nedenfor.\nÆldre- og Sundhedsudvalget\nStyrkelse af demensområdet\nForvaltningen foreslår at styrke demensområdet. Kommunens demensteam skal i højere grad\nend nu have deres daglige gang på plejehjemmene og understøtte, at demensfaglig viden\nomsættes til konkrete tilgange i plejen på de enkelte enheder.\nMed afsæt i hverdagens opgaver skal teamet yde praksisnær supervision og sparring, facilitere\nfælles refleksion over konkrete borgerforløb og bidrage til målrettet undervisning af\nmedarbejdere på plejehjemmene. Teamet skal desuden understøtte lokale demensfaglige\nnøglepersoner.\nUd over den styrkede indsats på plejeboligområdet skal den øgede kapacitet i demensteamet\nanvendes til at udvikle en tidligere og mere sammenhængende støtte til borgere med demens\nog deres familier i eget hjem. Der skal bl.a. være fokus på yngre borgere med demens, støtte\ntil pårørende og udvikling af aktiviteter og fællesskaber i samarbejde med civilsamfund og\nfrivillige organisationer.\nFormålet er at styrke kvaliteten i demensindsatsen på tværs af ældreområdet og sikre, at faglig\nunderstøttelse og kompetenceudvikling forankres tæt på borgerne og den daglige praksis.\nForslaget understøtter indsatsområdet ”Den ældre medicinske patient”.\nBørn,- Unge- og Skoleudvalget\nEtablering af Headspace i Køge Kommune\nForvaltningen foreslår at prioritere midler til Køge Kommunes medfinansiering af etableringen\naf Headspace for unge i alderen 12-25 år. Headspace vil kunne supplere kommunens øvrige\ntidlige tilbud til unge med mistrivsel. Forslaget understøtter indsatsområdet Børn og unge med\npsykisk mistrivsel.\nTidlig forebyggende indsats på det sundhedsfremmende børne- og ungeområde\nForvaltningen foreslår at prioritere midler til sundhedsfremmende indsatser med det formål at\nstyrke Sundhedsplejens mulighed for at arbejde forebyggende allerede under graviditeten.\nMålet er at skabe en tidlig og sammenhængende indsats om barnet og familien og at\nidentificere og adressere behov for støtte, inden udfordringer vokser sig større.\nKonkret foreslås at udvide Sundhedsplejens tilbud til at omfatte graviditetsbesøg til alle\nførstegangsforældre med fokus på tidlig opsporing af sårbarhed, mental sundhed og\nforberedelse på forældrerollen (pt. tilbydes graviditetsbesøg kun til særligt sårbare gravide\n(niveau 3 og 4) på baggrund af henvisning fra andre fagpersoner). Forslaget understøtter\nindsatsområdet Børn og unge med psykisk mistrivsel.\nSocial- og Beskæftigelsesudvalget\n\nTidlig og sammenhængende støtte i eget hjem og på botilbud\nForvaltningen foreslår at styrke den tidlige støtte til borgere med sammensatte sociale,\npsykiske og sundhedsmæssige udfordringer. Den øgede kapacitet skal anvendes til en mere\nopsøgende og håndholdt indsats, hvor borgerens sociale og sundhedsmæssige behov ses i\nsammenhæng, og hvor der kan sættes tidligere ind med støtte i eget hjem eller på botilbud.\nIndsatsen skal bl.a. understøtte en tættere kobling mellem social støtte, herunder indsatser\nefter\n§§ 82 og 85, og kommunens sundhedsindsatser samt styrke koordineringen på tværs af social, sundheds- og plejeområdet. Samtidig skal samarbejdet med praktiserende læger styrkes for\nborgere, hvor behandling, social støtte og eventuelt beskæftigelsesindsats skal hænge bedre\nsammen. Formålet er at forebygge, at problemerne vokser sig større, og understøtte, at flere\nborgere kan mestre hverdagen og blive længst muligt i eget hjem.\nBorgmester Ken Kristensen deltager under Ældre- og Sundhedsudvalgets behandling af\npunktet."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomisk Afdeling bemærker, at der søges tillægsbevillinger til indtægter på samlet -6,85\nmio. kr., som er Køge Kommunes andel af bundne og frie midler fra Sundhedsråd Østsjælland\nog Øerne samt tilsvarende udgiftsbevillinger på 6,85 mio. kr.\nBevillingerne er fordelt som følger:\nTillægsbevilling til indtægter på -1,4 mio. kr. og tilsvarende udgiftsbevilling på 1,4 mio.\nkr. til Børn-, Unge- og Skoleudvalget vedr. etablering af Headspace i Køge Kommune og tidlig\nforebyggende indsats på det sundhedsfremmende børne- og ungeområde.\nTillægsbevilling til indtægter på -1,5 mio. kr. og tilsvarende udgiftsbevilling på 1,5 mio. kr. til\nSocial- og Beskæftigelsesudvalget vedr. tidlig og sammenhængende støtte til borgere i eget\nhjem og på botilbud.\nTillægsbevilling til indtægter på samlet -3,95 mio. kr. og tilsvarende udgiftsbevillinger på 3,95\nmio. kr. til Ældre- og Sundhedsudvalget vedr. styrkelse af demensområdet og til de nye\nnationale kvalitetsstandarder vedrørende almen sygepleje og basal palliation.\nSe bilag for oversigt over forslag til fordeling af de frie investeringsmidler på udvalg og\nindsatsområder.\nBevillingerne er samlet set udgiftsneutrale for kassebeholdningen og påvirker heller ikke\nservicerammen."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-2": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-2",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-3": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-3",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Godkendelse af borgerrettede takster for 2027",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Velfærdsforvaltningen indstiller, at de borgerrettede takster for 2027 på Ældre- og\nSundhedsudvalgets område godkendes.\n\nBaggrund og vurdering\nHvert år den 1. januar reguleres en række satser for bl.a. egenbetaling på ældre- og\nsundhedsområdet som følge af udstedte ministerielle cirkulæreskrivelser, herunder bl.a. loft for\negenbetaling for madordninger, samt for omsorgs- og specialtandpleje. Typisk reguleres loftet\nfor egenbetalingen med satsreguleringsprocenten. Generelt er det således, at taksterne er\nomkostningsbestemte og maksimalt må svare til de gennemsnitlige omkostninger forbundet\nmed tilvejebringelse af ydelsen, dog under hensyn til de føromtalte lofter for egenbetaling.\nTaksten for ophold på aflastningsplads er sammensat af taksten på døgnkost for den\nalmindelige plejeboligplads, taksten for rengøringsartikler samt betaling for udgifter til\nsengelinned - opgjort pr. døgn.\nIdet nævnte cirkulærer typisk først udstedes medio- til ultimo november eller senere, har en del\naf taksterne på Ældre- og Sundhedsudvalgets område ikke kunnet indgå i den almindelige\nvedtagelse af budgettet for 2027. De foreslåede takster til godkendelse i denne sagsfremstilling\nsupplerer dermed budgettet.\nDet samlede takstblad fremgår nedenfor og satserne for 2027 indstilles til godkendelse.\nTaksterne svarer maksimalt til kommunens udgifter til leverandører. Taksterne er fremskrevet\nmed satsreguleringsprocenten, der for 2027 er sat til 2,6%. Der er dog foretaget visse minimale\nafrundinger i borgerens favør\nRegeringen har i øjeblikket et lovforslag i høring om ændring af Sundhedsloven med henblik på\nindførelse af gratis tandpleje for bestemte grupper. Dette betyder bl.a. at den hidtidige\negenbetaling på omsorgs- og specialtandpleje vil bortfalde. Indtægtstabet forventes håndteret\nsom såkaldt DUT-sag, hvor kommunerne kompenseres for ændringer i lovgivningen.\nTaksterne på madservice er baseret på ÆSU's godkendelse af udbud af madlevering på\nudvalgets møde d. 5. oktober 2026 punkt 107. Det vindende tilbud medfører, når også fx\nlevering/transport er inkluderet, en reduceret betaling for hovedretten på plejeboligområdet,\nhvilket slår igennem både for den fastsatte egenbetaling (borgertakst) på plejehjem samt\ntaksten for aflastningsophold. Satsen ligger et pænt stykke under det loft der er for opkrævning\naf egenbetaling.\nFor hjemmeboendes betaling er satsen fastsat til det gældende loft i 2027 idet\nleverandørbetalingen her overstiger denne pris, hvilket tidligere er beskrevet i\nsagsfremstillingen til ovenfor nævnte møde. Her dækkes indtægtstabet af DUT-kompensation\nsvarende til godt 2 mio. kr. for Køge Kommune.\nTakster - service ældreområdet\n\nÆldre institutioner – rengøringsartikler mv. pr. måned\n\nPlejehjem (§192) – vinduespudsning pr. måned\n\nOmsorgstandpleje pr. år\n\nGøres gratis\n\nSpecialtandpleje pr. år\n\n2.380,00 Gøres gratis\n\nKørsel, til eller fra vedligeholdelsestræning (§86) og daghjem, pr. tur\n\nTøjvask pr. måned\n\nTakster - madordninger ældreområdet\n\nHjemmeboende (Hovedret) pr. dag\n\nPlejehjemsbeboere pr. måned\n\nAflastningsophold pr. døgn\n\nKommunikation\nTaksterne vil blive offentliggjort på kommunens hjemmeside."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er ingen økonomiske konsekvenser for Køge Kommune, idet der er taget højde for\negenbetalingsindtægterne i det vedtagne budget."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-4": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-4",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Dialogmøde med Seniorrådet",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Velfærdsforvaltningen indstiller, at der afholdes dialogmøde med Seniorrådet med afsæt i\nRådets ønsker og forvaltningens forslag nedenfor.\n\nBaggrund og vurdering\nMed henblik på at styrke dialogen afholdes der to årlige dialogmøder mellem Ældre- og\nSundhedsudvalget og Seniorrådet. Hertil kommer det dialogmøde der afholdes i som led i\nbudgetprocessen.\nSeniorrådet har foreslået, at der på dialogmødet i december 2026 drøftes temaerne frivillighed,\npårørende og værdighed.\nForvaltningen foreslår herudover at Rådet orienteres om forhold vedrørende\nsundhedsreformens ikrafttræden 1. januar 2027.\nSeniorrådet er et lovpligtigt råd og rådets opgaver er i henhold til loven at rådgive byrådet i\nældrepolitiske spørgsmål og formidle synspunkter mellem borgere og byrådet om lokalpolitiske\nspørgsmål der vedrører ældre borgere. I hver kommune skal det aftales hvordan rammerne for\nrådets arbejde skal være, herunder hvordan Seniorrådet skal høres.\nPå mødet deltager Seniorrådet og Seniorrådets sekretær Trine F. Andersen. I Seniorrådet er\nder pt. følgende medlemmer: Marie Tordsson (forperson), Jan Munk (næstforperson), Grethe\nHansen, Birgit Ingvor Nielsen, Ivan Nyboe, Lis V. Hildebrandt, Annette Holst Nielsen og Joan\nHaar."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er ikke økonomiske konsekvenser for Køge Kommune."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-5": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-5",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Proces for udfasning af Møllebo og Sandmarksbo plejehjem",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Forvaltningen indstiller, at Ældre- og Sundhedsudvalget;\n- godkender, at der fra den 1. januar 2027 ikke visiteres nye beboere til Møllebo og\nSandmarksbo, og at de to plejehjem udgår som valgmulighed på fritvalgs- og\ngarantiventelisten,\n- godkender, at beboerne på Møllebo og Sandmarksbo, som ønsker at flytte, får\nfortrinsret til de 39 nye plejeboliger på Køge Nord Plejecenter, etape 3, ved den\nforventede ibrugtagning medio 2028.\n\nBaggrund og vurdering\nI denne sag skal udvalget især tage stilling til udfasningen af Sandmarksbo og Møllebo samt\neventuel fortrinsret til boliger på Køge Nord plejecenter, etape 3 for beboerne på de to\nplejehjem.\nI forbindelse med vedtagelsen af Budget 2027-2030 besluttede Kommunalbestyrelsen at\nigangsætte en udfasning af plejehjemmene Møllebo og Sandmarksbo. Beslutningen skal\nunderstøtte den langsigtede udvikling af plejeboligområdet og sikre, at borgerne i Køge\nKommune fremover kan tilbydes mere tidssvarende plejeboliger.\nKort om Møllebo og Sandmarksbo\nMøllebo er et af kommunens mindre plejehjem med 24 plejeboliger. Bygningen er kommunalt\nejet og rummer ud over plejehjemmet blandt andet daghjem, demensenheden, sygeplejeklinik\nog en hjemmeplejeenhed. Plejehjemmets størrelse og indretning på flere etager giver\ndriftsmæssige udfordringer og begrænsede muligheder for stordriftsfordele.\nSandmarksbo har 30 plejeboliger og er en del af Kollektivbebyggelsen Sandmarksbo, der også\nomfatter ejer- og lejeboliger. Køge Kommune lejer sig ind i bygningen. Plejeboligerne fremstår\npå flere områder utidssvarende, blandt andet fordi beboere med funktionsnedsættelse skal\nbenytte fælles baderum. Udover leje af plejehjem lejes ligeledes et produktionskøkken, der\nogså er beliggende i kollektivbebyggelsen.\nUdfasningen forventes at forløbe over en længere periode og skal gennemføres med hensyn til\nbeboere, pårørende og medarbejdere samt mulighederne for at opretholde en faglig og\nøkonomisk forsvarlig drift. Den videre planlægning skal bl.a. understøtte en eventuel overgang\ntil andre plejeboliger for de beboere, der ønsker at flytte, samtidig med at de nuværende\nbeboeres ret til at blive boende respekteres.\nAlternative plejeboliger, venteliste og rådgivning\nFra den 1. januar 2027 foreslås det, at der ikke længere visiteres nye beboere til Møllebo og\nSandmarksbo. Samtidig udgår de to plejehjem som valgmulighed på fritvalgs- og\ngarantiventelisten.\nBeboere på Møllebo og Sandmarksbo, der ønsker at flytte, kan allerede nu få information,\nrådgivning og hjælp til at blive skrevet på venteliste til en anden plejebolig. Mulighederne\nomfatter andre plejeboliger, plejeboliger i kommunen og på sigt de nye boliger på Køge Nord\nPlejecenter.\nKommunen planlægger at tage nye plejeboliger på Køge Nord Plejecenter, etape 3, i brug\n\nmedio 2028. Det foreslås, at beboere fra Møllebo og Sandmarksbo, der ønsker at flytte, i en\nperiode der senere fastlægges, får fortrinsret til disse boliger. Fortrinsretten forelægges med\ndenne sag til godkendelse og er således ikke en allerede besluttet ordning. Det foreslås, at der\narrangeres orienteringsmøder om Køge Nord plejecenter for pårørende og beboere.\nTildeling af plejeboliger på kommunens øvrige plejehjem sker på baggrund af en konkret og\nindividuel vurdering af den enkelte borgers behov samt under hensyntagen til den planlagte\nudfasning af Sandmarksbo og Møllebo.\nBorgere, der ønsker at flytte fra et plejehjem til et andet, kan blive optaget på ventelisten på\nsamme vilkår som øvrige borgere. Disse borgere er dog ikke omfattet af plejeboliggarantien og\nkan derfor ikke tildeles bolig via garantiventelisten.\nVentelisten administreres ikke efter anciennitet, og borgerne tildeles derfor ikke et\nventelistenummer. Tildeling af ledige plejeboliger sker i stedet på baggrund af en løbende,\nkonkret og individuel vurdering af, hvilke borgere der har det største og mest aktuelle behov.\nSærligt om udfasningen og betydningen for personalet:\nMedarbejderne på Sandmarksbo og Møllebo er løbende orienteret om udfasningen, blandt\nandet på personalemøder.\nDa der nedlægges flere pladser, end der etableres med de 39 nye plejeboliger på Køge Nord\netape 3 i 2028, undersøger en HR-arbejdsgruppe mulighederne for ansættelse på andre\nplejehjem eller i sygehjemmeplejen for medarbejdere, der ikke i første omgang kan tilbydes en\nstilling på Køge Nord. Eftersom ældreområdet kan se frem til udtalt mangel på medarbejdere\nde kommende år forventes alle medarbejdere at blive tilbudt overførsel til andre\ntjenesteder. Modeller for den personalemæssige håndtering forventes klar inden udgangen af\n2026. Formålet er at fastholde medarbejderne på området eller i anden ansættelse i Køge\nKommune.\nSandmarksbo – Opmærksomhedspunkter\nDer har været indledende dialoger med administratoren for Sandmarksbo. Dialogen har blandt\nandet omhandlet mulighederne for en eventuel om- og nybygning af plejehjemmet samt\neventuel alternativ anvendelse af bygningerne. Ift. førstnævnte er vurderingen at i omegnen af\n70 boliger er hensigtsmæssigt og administrator undersøger mulighederne i den henseende.\nDa kommunen lejer sig ind i en kollektivbebyggelse, som også rummer ejer- og lejeboliger,\nkræver udfasningen særlig opmærksomhed på sammenhængen mellem plejehjemmets drift,\nkommunens lejemål og den øvrige bebyggelse. Følgende forhold skal afklares i den videre\nplanlægning:\nKøge Kommunes leje af centralkøkkenet.\nMuligheder for om- og nybygning? Eller alternativ anvendelse\nKoordinering med administratoren om den videre proces, herunder vilkår for fraflytning\nSærligt vedrørende Møllebo\nFor Møllebo skal der som led i udfasningen afdækkes muligheden for eventuel anvendelse af\nenkelte ledige pladser som midlertidigt døgnopholdspladser i fald der midlertidigt er behov\nherfor."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "De økonomiske konsekvenser ved udfasning af henholdsvis Sandmarksbo og Møllebo fremgår\naf effektiviserings- og omprioriteringskataloget for 2027-30."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-6": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-6",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Godkendelse af ejerstrategi for Fælles Hjælpemiddeldepot I/S",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Velfærdsforvaltningen indstiller, at Ældre- og Sundhedsudvalget anbefaler\nØkonomiudvalget og Kommunalbestyrelsen at godkende ejerstrategi for Fælles\nHjælpemiddeldepot I/S 2027-2030.\n\nBaggrund og vurdering\nFælles Hjælpemiddeldepot I/S er etableret af otte ejerkommuner for at sikre en effektiv og\nomkostningsbevidst håndtering af hjælpemidler til borgerne.\nPå et møde mellem borgmestrene i ejerkommunerne den 29. januar 2026 blev det besluttet at\nudarbejde en fælles ejerstrategi for selskabet med henblik på at styrke ejerkommunernes\nfælles retning, ejerskab og strategiske fokus. Strategien er udarbejdet i dialog mellem\nejerkommunerne, bestyrelsen og selskabets ledelse. Som led i processen blev der i maj 2026\nafholdt et fælles temamøde med deltagelse af bestyrelsen, selskabets ledelse og\nejerkommunernes direktørkreds, hvor centrale temaer og fremtidige udviklingsmuligheder blev\ndrøftet. Bestyrelsen behandlede efterfølgende ejerstrategien og afgav sin anbefaling til\nejerkommunerne i august 2026.\nStrategien er efter drøftelse på møde mellem ejerkommunernes borgmestre den 28. oktober\n2026 blevet præciseret med hensyn til evaluering af ejerkommunernes tilfredshed og\nafholdelse af årlige ejermøder.\nEjerstrategien for 2027-2030 fastlægger de otte ejerkommuners fælles forventninger til\nselskabets udvikling og værdiskabelse. Strategien skal samtidig sikre et fælles grundlag for\ndialogen mellem ejerkommunerne, bestyrelsen og selskabets ledelse.\nStrategien bygger på fire centrale pejlemærker:\n1. Borgerværdi og kvalitet – Høj kvalitet, leveringssikkerhed, borgernes behov og løbende\nopfølgning på borgertilfredsheden.\n2. Effektiv drift og økonomisk ansvarlighed – Effektiv ressourceudnyttelse, fælles indkøb,\nstordriftsfordele og bedre udnyttelse af selskabets kapacitet, herunder muligheden for\noptagelse af nye ejerkommuner.\n3. Bæredygtighed og innovation – Genanvendelse af hjælpemidler, cirkulær økonomi,\nreduktion af miljøbelastningen og udvikling af nye velfærdsteknologiske løsninger.\n4. Samarbejde, tillid og god selskabsledelse – Åbenhed, tydelig ansvarsfordeling, tæt\nsamarbejde med ejerkommunerne og systematisk opfølgning på selskabets\nværdiskabelse.\nEjerstrategien fastlægger, at bestyrelsen årligt afrapporterer til ejerkommunerne om\nudviklingen inden for strategiens fire pejlemærker. Afrapporteringen skal blandt andet omfatte\nkvalitet, leveringssikkerhed, økonomi, effektiviseringer, bæredygtighed, udviklingsaktiviteter,\nmedarbejderforhold og væsentlige risici.\nSom følge af borgmestrenes bemærkninger er det desuden indarbejdet, at ejerkommunernes\n\ntilfredshed med samarbejdet og den oplevede værdi evalueres hvert andet år i indeværende\nvalgperiode, og at der afholdes et årligt ejermøde mellem bestyrelsen og borgmestrene.\nEjerstrategien evalueres som minimum én gang i hver kommunal valgperiode eller ved\nvæsentlige ændringer i selskabets rammevilkår.\nStrategien er drøftet og godkendt af FHD's bestyrelse. Efter politisk godkendelse i\nejerkommunernes kommunalbestyrelser vil strategien blive implementeret med årlig opfølgning\nog evaluering af målsætningerne."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der er ingen økonomiske konsekvenser for Køge Kommune."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-7": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-7",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Status og videre proces for beredskabsorganisering i Velfærdsforvaltningen",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Velfærdsforvaltningen indstiller, at Ældre- og Sundhedsudvalget godkender den videre\nproces- og tidsplan for beredskabet for hjemmeboende sårbare borgere, herunder\ninddragelse af relevante bruger- og rådgivende råd forud for politisk behandling i april/maj\n\nBaggrund og vurdering\nVelfærdsforvaltningen har etableret et 72-timersberedskab på kommunale plejehjem og\nbotilbud. Arbejdet retter sig nu især mod sårbare borgere i eget hjem, løbende træning og\netablering af nødgeneratorer i samarbejde med Teknik- og Miljøforvaltningen. Arbejdet tager\nafsæt i de nationale anbefalinger og KL’s anbefalinger. Tilsvarende sag forelægges Social- og\nBeskæftigelsesudvalget.\n72 timers beredskab\nByrådet blev i oktober 2025 orienteret om etableringen af et 72-timersberedskab på\nforvaltningens døgntilbud. Beredskabet har været på plads siden årsskiftet 2025/2026 og\nomfatter mad, vand og hygiejneartikler til beboere og personale til tre døgn samt bl.a. tæpper,\nnødradioer, nødbelysning og kraftige powerbanks.\nFormålet er at sikre livsnødvendig og kritisk pleje og omsorg under en krise. Beredskabet er\nikke dimensioneret til normal drift. Powerbanks understøtter i stedet udvalgte kritiske\nfunktioner, fx elektrisk plejeudstyr, lifte eller opladning af telefoner og pc’ere.\nTo årlige beredskabsdage og lokal opfølgning\nForvaltningen har en beredskabsorganisation med ansvar fra chefgruppe til enhedsniveau og\nlokale planer og handlingsvejledninger, såkaldte action cards. Lederne har ansvar for at sikre\nløbende vedligeholdelse af planer, forsyninger og udstyr samt vejledninger på papir ved itnedbrud.\nBeredskabet skal forankres i arbejdspladsens rutiner og kultur. Derfor afholdes to årlige\nberedskabsdage for lederne med øvelser og erfaringsudveksling. Lederne følger op lokalt og\ninddrager medarbejderne, så læringen omsættes til praksis.\nDen 27. oktober 2026 blev der gennemført en temadag med genopfriskning af\nkrisestyringssystemet C3, gennemgang af beredskabsudstyret og en bordøvelse om\nlængerevarende strømsvigt. Øvelsen pegede især på kommunikation ved nedbrud, adgang til\nnødkørelister og nødstrøm for udekørende funktioner samt bemanding og transport som\nopgaver til videre afklaring.\nSårbare borgere i eget hjem\nDet væsentligste resterende udviklingsområde er en samlet plan for hjemmeboende sårbare\nborgere, herunder borgere med syge- og hjemmepleje eller socialpædagogisk støtte. Alle\nhjemmeboende borgere skal i udgangspunktet kunne klare sig selv i tre døgn, sådan som den\nøvrige del af befolkningen er pålagt. Det vil sige indkøb af mad, vand i reserve, FM-radio mv.\nPlanen skal tydeliggøre, hvilke borgere der eventuelt har behov for yderligere konkret støtte,\nog hvem kommunen skal sikre kritisk hjælp til under en krise.\n\nEn mulig afgrænsningsmodel, inspireret af Viborg Kommune, tager afsæt i borgerens\nfunktionsevne, netværk og afhængighed af kritisk hjælp eller udstyr. Modellen skelner mellem\na) borgere med behov for kritisk hjælp inden for få timer, b) borgere med kritiske behov inden\nfor et til tre døgn og c) borgere, der som udgangspunkt er selvhjulpne.\nPlanen skal herudover omfatte ajourføring af oplysninger, adgang til borgerlister ved it-nedbrud\nog kommunikation til borgere og pårørende. Civilsamfundets mulige bidrag til at nå sårbare\nborgere uden tæt kontakt til kommunen skal også indtænkes.\nForvaltningen har allerede betydelig erfaring med krisehåndtering fra Covid-epidemien samt\ntidligere storme med oversvømmelse og vurderer, at der også her og nu vil kunne iværksættes\nen prioriteret indsats ud fra beredskabsorganisationen, medarbejdernes borgerkendskab og\nkonkrete faglige vurderinger. Hovedfokus er derfor at gøre indsatsen mere systematisk og\nmindre personafhængig, herunder at tage højde for samtidige svigt i strøm, vand, it og\nkommunikation.\nProces og tidlig inddragelse af rådene\nForvaltningen foreslår, at rådene inddrages i arbejdet med beredskabet for hjemmeboende\nsårbare borgere, herunder kommunikation til målgruppen.\nPå den baggrund foreslås følgende proces- og tidsplan:\nUltimo februar 2027: Fagligt oplæg til målgruppeafgrænsning, prioritering, støtte,\narbejdsgange og kommunikationsplan.\nMarts 2027: Dialog med relevante råd og efterfølgende bearbejdning af oplægget.\nApril/maj 2027: Politisk beslutning om målgruppeafgrænsning og serviceniveau, herunder\nkommunikationsplan og eventuelle økonomiske konsekvenser. Rådenes bidrag og\nforvaltningens opfølgning indgår i beslutningsgrundlaget.\nNødgeneratorer på plejehjem og botilbud\nNødgeneratorer skal supplere 72-timersberedskabet med strøm til en større del af\ndøgntilbuddenes drift, også ud over tre døgn, forudsat adgang til brændstof. De dimensioneres\ntil almindelige elinstallationer, herunder belysning, køleskabe og lifte, men sikrer ikke\nalmindelig varmeforsyning, vandforsyning eller sanitære forhold.\nTeknik- og Miljøforvaltningen har ansvaret for indkøb og etablering. Der er indgået aftale om 10\ngeneratorer til de prioriterede døgntilbud. I alt 13 døgntilbud indgår i prioriteringen, og Køge\nNord og Ny Føllehavegård skal dele én generator. Plejehjem prioriteres før botilbud. Møllebo\nog Sandmarksbo indgår ikke i planen.\nDe første generatorer forventes etableret ved Køge Nord/Ny Føllehavegård og Nørremarkens\nPlejehjem omkring årsskiftet 2026/2027, derefter to til tre installationer om måneden. Målet er\nafslutning i første kvartal 2027, men arbejdet kan strække sig ind i andet kvartal afhængigt af\nbl.a. byggetilladelser, vejr og erfaringerne med de første installationer. Velfærdsforvaltningen\nfølger arbejdet sammen med Teknik- og Miljøforvaltningen."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen indebærer ikke nye bevillinger. Eventuelle økonomiske konsekvenser og\nfinansieringsbehov ved beredskabet for hjemmeboende borgere belyses i udvalgssagen i\napril/maj 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-8": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-8",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Buddy robotter på plejehjem-Midtvejsevaluering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Velfærdsforvaltningen indstiller, at Ældre- og Sundhedsudvalget tager orienteringen om\nbrugen af Buddy-robotter på Køge Nord Plejecenter og de foreløbige resultater til\nefterretning.\n\nBaggrund og vurdering\nKøge Nord Plejecenter afprøver i perioden marts 2026 til februar 2027 to Buddy-robotter i\nplejecentrets to afdelinger. Buddy er en mobil transportrobot, som medarbejderne kan tilkalde\ntil transport af blandt andet affald og vasketøj. Formålet med afprøvningen er at undersøge, om\nrobotterne kan aflaste medarbejderne for transportopgaver, mindske arbejdsbyrden og dermed\ngive bedre mulighed for nærvær med beboerne. Samtidig skal det afklares om robotterne kan\nskabe bedre indeklima i forhold til hurtig fjernelse af affald. Afprøvningen er nu halvvejs og der\ner foretaget midtvejsevaluering i form af spørgeskemaer til medarbejderne og data fra robotten.\nResultater og erfaringer præsenteres herunder.\nBorgerne har taget godt imod robotterne, som kører nænsomt rundt på gangene og stopper\nhvis nogen kommer for tæt på. Efter de første seks måneder viser erfaringerne, at Buddyrobotterne bruges dagligt og løser interne transportopgaver i alle vagtlag men primært i dag- og\naftenvagt. Robotterne anvendes hovedsagelig til transport af affald og pleje- og\nhygiejneremedier, men også til vasketøj, service og andre interne transportopgaver. De\nforeløbige resultater viser:\n8.048 robot udførte transportopgaver, svarende til gennemsnitligt 1.341 opgaver om\nmåneden\n540,79 kørte kilometer for begge robotter\nFysisk aflastning af medarbejderne gennem færre gåture med løft og slæb\nMindre synligt affald og færre lugtgener på gangene\nMere nærvær hos beboeren (Lettere at blive eller vende hurtigere tilbage til beboeren)\nGevinsterne hænger tæt sammen med organiseringen omkring robotterne. Der er således\netableret nye arbejdsgange og en særlig rolle i form af en Buddy-ansvarlig medarbejder, som\nsikrer tømning af robotten for affald mv. I den resterende projektperiode styrkes fokus\nyderligere i medarbejdergruppen på ansvarsfordelingen og faste rutiner. Dette da ulemperne\nved robotten opleves som manglende tømning, opladning eller uhensigtsmæssig placering.\nKøge Kommune bidrager også til videreudviklingen af robotten. Der er blandt andet givet input\ntil leverandøren til en anden udformning af opbevaringsrummene, og robottens\nkøreegenskaber er justeret ad flere omgange efter feedback fra medarbejderne.\nSamlet set viser de foreløbige resultater at Buddy-robotterne har et positivt potentiale som\naflastende arbejdsredskab. En medarbejder beskriver det således: ”Buddy frigiver tid, så\npersonalet har mere tid til omsorg og pleje.” Ved projektets afslutning i marts 2027 samles der\n\nop på de kvalitative og kvantitative erfaringer som grundlag for den endelige vurdering af\nrobotternes effekter og gevinster, herunder deres potentiale i forhold til udbredelse på flere\nplejehjem.\nFakta og billeder af Buddy-robotten findes i bilag 1."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Udgiften til robotterne afholdes inden for eksisterende budget og har ingen yderligere\nøkonomiske konsekvenser for Køge Kommune."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-10": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-10",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Nyt fra formanden, medlemmer af udvalget og forvaltningen",
+   "afsnit": [],
+   "bilag": []
+  },
+  "koege-2026-12-01-aeldre-og-sundhedsudvalget-11": {
+   "id": "koege-2026-12-01-aeldre-og-sundhedsudvalget-11",
+   "kommune": "Køge",
+   "udvalg": "Ældre- og Sundhedsudvalget",
+   "dato": "2026-12-01",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.koege.dk/vis?id=a7729444-8083-4987-9afd-4158c79e0c80",
+   "hentet": "2026-11-26T23:20:37.038Z",
+   "titel": "Eventuelt - åben",
+   "afsnit": [],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-1": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-1",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Godkendelse af dagsorden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-3": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-3",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Genopretning 2027 - anlægsbevilling",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Miljøforvaltningen indstiller, at Teknik- og Ejendomsudvalget anbefaler, at\nØkonomiudvalget og Kommunalbestyrelsen,\n1. godkender anlægsbevilling på 46,1 mio. kr. i 2027 til vedligehold af kommunens\nejendomme i 2027, finansieret af det afsatte rådighedsbeløb på TEU 101 Vedligehold\naf kommunens ejendomme.\n\nBaggrund og vurdering\nPå Køge Kommunes investeringsoversigt for 2027 er der afsat et rådighedsbeløb på 46,1 mio.\nkr. til vedligehold af kommunens ejendomme i 2027. På investeringsoversigten er det nummer\nTEU 101 Vedligehold af kommunens ejendomme 2027.\nAnlægsprojektet omfatter opgaver med både planlagt og genoprettende vedligeholdelse af alle\nKøge Kommunes ejendomme. Opgaverne samles i en prioriteringsliste for 2027, der anvendes\nsom et internt arbejdsredskab i forvaltningen.\nDe prioriterede opgaver er oplistet i vedhæftede lukkede bilag 1 og er inddelt i puljer,\ngeografiske områder og projekter.\nMidlerne anvendes eksempelvis til udskiftning af tage, vinduer og døre, tekniske anlæg (fx\nventilation), renovering samt planlagt genoprettende vedligeholdelse af øvrige bygningsdele.\nPå grund af prisstigninger i byggebranchen og forlængede leveringstider for visse materialer,\nkan det ikke garanteres, at alle opgaver på prioriteringslisten vil blive udført."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomisk afdeling bemærker, at der søges en anlægsbevilling på i alt 46,1 mio. kr. som\nfrigiver det afsatte rådighedsbeløb i 2027 på 46,1 mio. kr. (TEU 101 Vedligehold af\nkommunens ejendomme).\nAnlægsbevillingen har derfor ikke effekt på den beregnede kassebeholdning. Det bemærkes,\nat anlægsprojektet indgår i de samlede anlægsudgifter, som skal afholdes inden for det\nfastsatte anlægsloft. Der kan være en risiko for, at det i budgettet vedtagne anlægsniveau\noverskrides."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-4": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-4",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Ny gang- og cykelbro Søndre Havn - anlægsbevilling",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Miljøforvaltningen indstiller, at Teknik- og Ejendomsudvalget anbefaler, at\nØkonomiudvalget og Kommunalbestyrelsen\n1. godkender anlægsbevilling på 2,156 mio. kr. i 2027, 3,235 mio. kr. i 2028 og 21,564\nmio. kr. i 2029 til den nye cykel- og gangbro i Søndre Havn, finansieret af de afsatte\nrådighedsbeløb på 2,156 mio. kr. i 2027 og 3,235 mio. kr. i 2028 og 21,564 mio. kr. i\n2029 på TEU 41 cykel/gangbro Sdr. Havn.\nTeknik- og Miljøforvaltningen indstiller til Teknik- og Ejendomsudvalget, at\n2. Teknik- og Miljøforvaltningen bemyndiges til, på baggrund af\nbedømmelseskomitéens udpegning af vinderen, at indgå forhandlinger om\nrådgiveraftalen med vinderen og igangsætte den videre projektering, under\nforudsætning af at projektet kan gennemføres inden for den godkendte økonomiske\nramme.\n\nBaggrund og vurdering\nDer er i årene 2027-2029 afsat midler til en ny cykel- og gangbro ved Søndre Havn, som\nlokalplan 1119 giver mulighed for at etablere. Baggrunden er den forventede trafikvækst i\nforbindelse med færdigudbygningen af Søndre Havn, som den eksisterende bro med sin\nnuværende udformning ikke er dimensioneret til at håndtere. Den nye bro skal øge\ntrafiksikkerheden for gående og cyklister og samtidig muliggøre, at den eksisterende bro\nsenere kan ombygges til to kørebaner, så fremkommeligheden for biltrafikken forbedres.\nProjektkonkurrence\nTeknik- og Miljøforvaltningen har udbudt en projektkonkurrence efter EU's udbudsregler med\ndet formål at finde et realiserbart idéoplæg til en ny gang- og cykelbro. Visionen er at skabe en\nsammenhængende forbindelse, der forener trafikale hensyn med arkitektonisk kvalitet og en\nattraktiv oplevelsesværdi.\nProjektkonkurrencen består af tre dele: Prækvalifikationsfasen, konkurrencefasen og den\nefterfølgende forhandling med vinderen om indgåelse af en rådgivningskontrakt.\nForvaltningen har i november 2026 prækvalificeret fem virksomheder/teams, som forventes at\nindsende idéforslag senest den 29. januar 2027. Forslagene skal behandles af en\nbedømmelseskomité i februar. Komitéen består af borgmesteren, formanden for Teknik- og\nEjendomsudvalget, direktøren for TMF samt fire fagdommere. Komitéen skal på baggrund af\nde bedømmelseskriterier, der fremgår af udbudsbetingelserne, udpege en vinder, som\n\nefterfølgende inviteres til forhandling om rådgiveraftalen.\nDen videre proces\nFor at fastholde tidsplanen og sikre koordineringen med den igangværende underføring\nforeslås det, at forvaltningen bemyndiges til at indlede forhandling om rådgiveraftalen med den\nudpegede vinder og igangsætte den videre projektering inden for den godkendte økonomiske\nramme umiddelbart efter konkurrencefasens afslutning.\n\nKommunikation\nEfter konkurrencens afslutning offentliggøres konkurrenceforslagene og begrundelsen for\nvalget af vinder. Kommunikationen foreslås bl.a. at ske via en nyhed på kommunens\nhjemmeside eller sociale medier samt gennem en pressemeddelelse.\nI den videre projektering inddrages relevante interessenter, borgere og erhvervsdrivende i\nområdet i dialog om projektets udformning."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomisk afdeling bemærker, at der søges en anlægsbevilling på i alt 27,0 mio. kr. som\nfrigiver det afsatte rådighedsbeløb i 2027 på 2,156 mio. kr., i 2028 på 3,235 mio. kr. og i 2029\npå 21,564 mio. kr. på TEU 41 Cykelsti/gangbro Sdr. Havn.\nAnlægsbevillingen har derfor ikke effekt på den beregnede kassebeholdning. Det\nbemærkes, at anlægsprojektet indgår i de samlede anlægsudgifter, som skal afholdes inden\nfor det fastsatte anlægsloft. Der kan være en risiko for, at det i budgettet vedtagne\nanlægsniveau overskrides."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-5": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-5",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Ravnsborg Enge, forbedring af infrastruktur - anlægsbevilling",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Miljøforvaltningen indstiller, at Teknik- og Ejendomsudvalget anbefaler, at\nØkonomiudvalget og Kommunalbestyrelsen,\n1. godkender en anlægsbevilling på 5,6 mio. kr. i 2027 og 10,219 mio. kr. i 2028 til TEU\n34 Ravnsborg Enge – Vejinfrastruktur, finansieret af det afsatte rådighedsbeløb på\nTEU 34 Ravnsborg Enge – Vejinfrastruktur på 5,6 mio. kr. i 2027 og 10,219 mio. kr. i\n\nBaggrund og vurdering\nI 2024 frigav Kommunalbestyrelsen en anlægsbevillig på 24,5 mio. kr. til Ravnsborg Enge –\ninfrastruktur (TEU34). I budget 2027 er der afsat 5,6 mio. kr. i 2027 og 10,2 mio.kr. i 2028 som\nnu søges bevilget, så den samlede anlægsbevilling er 40,3 mio. kr.\nPå mødet i Teknik- og Ejendomsudvalget den 4. marts 2026 blev det besluttet hvilke projekter,\nder planlægges igangsat inden for den samlede økonomiske ramme:\nEgøjevej - ombygning smal fællessti til delt sti fra Friggsvej til syd for Ravnsborgvej\nRundkørslen Vordingborgvej/Orkestervej/Klemmenstrupvej – krydsombygning med\nsignalanlæg\nRundkørslen Ravnsborgvej/Orkestervej/Hastrupvej – mindre ombygning\nOrkestervej – ombygning smal fællessti til fortov og cykelsti mellem Vordingborgvej og\nRavnsborgvej\nRavnsborgvej – ombygning smal fællessti til fortov og cykelsti fra Orkestervej\nAnlægsarbejdet med etablering af delte stier på Egøjevej igangsættes i november 2026.\nDer er EU-udbud af totalrådgivning i forbindelse med projekteringen af de øvrige projekter, der\nblev prioriteret på mødet den 4. marts 2026. Anlægsstart for disse projekter forventes i 3.\nkvartal 2027.\n\nKommunikation\nDer blev den 4. februar 2025 afholdt borgermøde om projekterne som følge af udbygningen af\nRavnsborg Enge.\nNår anlægsarbejderne opstartes vil der blive orienteret om projektet på lokaliteten,\nligesom direkte berørte borgere bliver inddraget og orienteret i forbindelse med projekternes\nopstart. Der vil desuden blive informeret via kommunens hjemmeside."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomisk afdeling bemærker, at der søges en anlægsbevilling på i alt 15,8 mio. kr. som\nfrigiver det afsatte rådighedsbeløb i 2027 på 5,6 mio. kr. og i 2028 på 10,219 mio. kr. på TEU\nRavnsborg Enge – Vejinfrastruktur.\nAnlægsbevillingen har derfor ikke effekt på den beregnede kassebeholdning. Det\nbemærkes, at anlægsprojektet indgår i de samlede anlægsudgifter, som skal afholdes inden\nfor det fastsatte anlægsloft. Der kan være en risiko for, at det i budgettet vedtagne\nanlægsniveau overskrides.\nDermed er der samlet frigivet en anlægsbevilling på i alt 40,3 mio. kr.,\nidet Kommunalbestyrelsen frigav en anlægsbevilling på 24,5 mio. kr. til projektet den 2. april"
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-6": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-6",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Køge Marina eventinfrastruktur - anlægsbevilling",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Miljøforvaltningen indstiller, at Teknik- og Ejendomsudvalget anbefaler\nØkonomiudvalget og Kommunalbestyrelsen at;\n1. der afsættes et rådighedsbeløb og gives en anlægsbevilling på 5,0 mio. kr. i 2027\ntil etablering af infrastruktur og beredskabs ind- og udgange, der skal understøtte\nafholdelse af større og mindre arrangementer på det sydlige marinaområde,\nfinansieret af kassen.\n\nBaggrund og vurdering\nKøge Kommune ønsker at styrke mulighederne for at tiltrække og afvikle flere mindre og\nenkelte større events og arrangementer på Køge Marina. For at det sydlige område kan\nanvendes til arrangementer med op mod 10.000-12.000 publikummer, er der behov for at\netablere en grundlæggende og robust infrastruktur i området, som kan sikre beredskabsveje,\nhvis der opstår en hændelse i forbindelse med et arrangement.\nTiltagene skal først og fremmest sikre hensigtsmæssige adgangs- og beredskabsveje, så\npublikum, beredskab og den nødvendige servicetrafik kan håndteres sikkert og med færrest\nmulige konflikter under arrangementerne.\nAdgangs- og beredskabsforhold\nUd over en opgradering af eksisterende veje og stier skal der etableres en seks meter bred\nadgangs- og beredskabsvej langs vandet med forbindelse til industrihavnen. Dermed kan den\nsydlige marina i beredskabssituationer tilgås fra to sider.\nBeredskabsvejen etableres som en ringforbindelse, der skal sikre god og trafiksikker færdsel. I\nden forbindelse skal der etableres en port, så forbindelsen til industrihavnen kan åbnes som\nnødudgang ved arrangementer. Anvendelse af industrihavnen skal følgelig ske efter aftale med\nKøge Havn.\nMod vest skal den nuværende sti- og adgangsvej udvides, og området skal ryddes for unødigt\noplag og hegn ligesom der skal ske en tilpasning af jordvoldene. Det skal sikre optimale til- og\nfrakørselsforhold til den eksisterende stibro, vejen \"bådehavnen\" og det øvrige marinaområde.\nSamtidig skal der etableres mulighed for evakuering fra den vestlige del af området til Køge\nHavn og Nordhavnsvej via nye portåbninger.\nDe 5 mio. kr. til anlæg af veje og stier er baseret på et overordnet overslag. Der igangsættes\nderfor en proces, som skal belyse projektet nærmere inden endelig igangsætning. Udvalget vil\nløbende blive orienteret om projektets fremdrift og såfremt der er behov for yderligere\nfinansiering vil der fremlagt ny sag.\n\nAdgangs- og beredskabsveje tilstræbes at være færdige sommeren 2027.\nOmrådets anvendelse og evakueringsforhold skal drøftes med politi og beredskab. Det er i\nsidste ende den enkelte arrangørs ansvar, at området har den nødvendige kapacitet til det\nkonkrete arrangement.\nForsyning til eventområdet\nUd over vej- og adgangsforhold arbejder forvaltningen videre med et projekt omkring etablering\naf basis levering af el-, vand- og kloakforsyning frem til eventområdet. Permanente\ntilslutningsmuligheder vil begrænse behovet for midlertidige installationer ved de enkelte\narrangementer og gøre området mere driftssikkert og anvendeligt til forskellige typer events.\nDet er endnu ikke fuldt klarlagt, hvilket omfang eller kapacitetsbehov der er. Der vil derfor\nsenere i forløbet blive frembragt en sag, som belyser projektet og behovet for anlægsøkonomi\ntil dette.\nProjektet omkring forsyning af eventområdet skal ses i sammenhæng med projektet om\nforsyning af foreningsområdet ved Rødfyrsmolen.\nPermanente rammer for events\nInvesteringen skal således ikke understøtte konkrete arrangementer, men udvide de\neksisterende fysiske rammer, som gør det muligt at anvende området til events på en sikker,\neffektiv og fleksibel måde.\nInvesteringen understøtter samtidig kommunens ambition om at udvikle rammerne for turisme\nog events og skal ses i sammenhæng med kommunens arbejde med en samlet eventstrategi\nog den videre visionsplan for Køge Marina.\nForudsætninger og forbehold\nProjektet er på nuværende tidspunkt baseret på et overordnet projekt- og anlægsoverslag. Den\nvidere projektering skal blandt andet afklare forhold vedrørende risiko- og beskyttelseszoner,\nmiljøforhold og eventuel udledning samt nødvendige myndighedsgodkendelser.\nDe nævnte forhold kan få betydning for projektets endelige udformning, anlægsøkonomi og\ntidsplan."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomisk Afdeling bemærker, at der søges et rådighedsbeløb samt frigivelse af\nanlægsbevilling på 5,0 mio. kr. i 2027 finansieret af kassen.\nDen budgetterede kassebeholdning vil blive påvirket negativt med bevillingen, da der ikke er\nafsat rådighedsbeløb i 2027. Anlægsprojektet indgår i beregningen af anlægsloftet, og der er\nen risiko for overskridelse af vedtaget anlægsniveau i budgettet."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-8": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-8",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Køge Torv - udbud af tre arealer til pavilloner med tilhørende udeservering",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Miljøforvaltningen indstiller til Teknik- og Ejendomsudvalget,\n1. at orienteringen om de økonomiske konsekvenser ved den fremtidige udlejning af\narealer til pavilloner med tilhørende udeservering på Køge Torv tages til efterretning.\n2. at forvaltningen har bemyndigelse til at indgå lejeaftaler, hvis de indkomne tilbud på\nkvadratmeter er større end eller lig med de 484 kr.\n\nBaggrund og vurdering\nDet er besluttet, at de i bilag 3 viste arealer på den indre del af Køge Torv, som er udlagt til\npavilloner med tilhørende udeservering, skal udbydes ved offentligt udbud med lejestart den 1.\nmarts 2027.\nI forbindelse med det kommende udbud skal tilbudsgiver tilbyde en årlig leje for retten til at\nbenytte det kommunale areal. Den fremtidige lejeindtægt vil derfor afhænge af resultatet af\nudbuddet og de tilbud, der modtages. Udbudsvilkårene fremgår af bilag 2.\nDer står i dag tre pavilloner på Torvet. I forbindelse med genudbuddet kan en ny lejer efter\naftale med den tidligere ejer, overtage en eksisterende pavillon. En sådan overdragelse er et\nprivatretligt forhold mellem den tidligere og den kommende ejer, og kommunen er derfor ikke\npart i en eventuel aftale om køb eller overdragelse. Hvis en eksisterende pavillon ikke\novertages, skal den tidligere lejer fjerne pavillonen og den kommende lejer skal etablere en ny\npavillon.\n\nKommunikation\nUdbuddet offentliggøres på kommunens hjemmeside og i Ugeavisen Køge i\noverensstemmelse med den besluttede udbudsprocedure."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Med afsæt i udbuddet i 2021, hvor minimumslejen blev fastsat til 400 kr. pr. m², har\nforvaltningen beregnet en reguleret minimumslejepris pr. m². Minimumslejen er beregnet på\nbaggrund af en indeksregulering fra juli 2020 til juli 2026, derved fastsættes minimumslejen ved\ndette udbud til 484 kr. pr. m².\nDe tre arealer udgør samlet 461 m². Med et grundbeløb på 484 kr. pr. m² årligt svarer dette til\nen samlet minimumsleje på 223.124 kr. årligt (i 2027), forudsat at alle tre arealer udlejes.\nHvis der i forbindelse med udbuddet afgives tilbud på en højere årlig leje, vil dette medføre en\nøget lejeindtægt. Den endelige økonomiske konsekvens kan derfor først opgøres efter\nudbuddets afslutning.\n\nUdgifter til etablering, drift, vedligeholdelse og eventuel fjernelse af pavillonerne afholdes af\nlejerne. Udbuddet vil derfor ikke medføre kommunale udgifter til pavillonerne. Eventuelle\nadministrative udgifter i forbindelse med gennemførelse af udbuddet og den efterfølgende\nkontraktadministration afholdes inden for forvaltningens eksisterende budgetramme."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-9": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-9",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Hegnet, Gærdet & Diget, 4600 Køge - etablering af parkeringsrestriktioner",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Ejendomsforvaltningen indstiller, at Teknik- og Ejendomsudvalget,\n1. godkender etablering af 2-timers tidsbegrænset parkering i tidsrummet kl. 08.0014.00 på Hegnet, Gærdet og Diget, svarende til den eksisterende\nparkeringsrestriktion på Gl. Ringstedvej.\n\nBaggrund og vurdering\nBeboerne på vejene Hegnet, Gærdet og Diget har efter indførelsen af parkeringsrestriktioner\npå Gl. Ringstedvej oplevet parkeringsudfordringer.\nDe oplevede parkeringsudfordringer på Hegnet, Gærdet og Diget hænger blandt andet\nsammen med parkering fra elever på Køge Gymnasium. Efter etablering af 2-timers parkering i\ntidsrummet kl. 08:00-14:00 på dele af Gl. Ringstedvej er en del af parkering flyttet til de\nomkringliggende boligveje.\nTeknik- og Miljøforvaltningen har været i dialog med beboere i området om udfordringerne og\nmulige løsninger. Som opfølgning blev der gennemført en spørgeskemaundersøgelse blandt\nbeboerne på Hegnet, Gærdet og Diget med følgende tre scenarier:\n1. Tilsvarende parkeringsrestriktioner som på Gl. Ringstedvej\n2. Parkeringsforbud i den ene side af vejene\n3. Parkeringsrestriktioner kombineret med en ordning med parkeringstilladelse til beboere.\nSpørgeskemaundersøgelsen viser, at 65,4 % har tilkendegivet en positiv holdning til 2-timers\nparkering svarende til ordningen på Gl. Ringstedvej. Til sammenligning har 58,6 %\ntilkendegivet en positiv holdning til parkeringsrestriktioner kombineret med en ordning med\nparkeringstilladelse til beboere.\nPå baggrund af undersøgelsen vurderer forvaltningen, at der bør etableres 2-timers parkering i\ntidsrummet kl. 08.00-14.00 på Hegnet, Gærdet og Diget. Løsningen har den største opbakning\nblandt de adspurgte og vil samtidig skabe en ensartet parkeringsregulering i området svarende\ntil den eksisterende ordning på Gl. Ringstedvej.\nEtablering af 2-timers parkering på Hegnet, Gærdet og Diget vil begrænse mulighederne for\nlængerevarende parkering i området, herunder for elever på Køge Gymnasium. Dette skal\nafvejes over for hensynet til de trafikale forhold og de gener, som parkeringen medfører på de\nberørte boligveje.\n\nKommunikation\nBeboerne på Hegnet, Gærdet og Diget orienteres om udvalgets beslutning og om den\n\neventuelle kommende parkeringsregulering.\nHvis parkeringsrestriktionerne godkendes, vil Teknik- og Miljøforvaltningen herefter arbejde\nvidere med den konkrete skiltning og den nødvendige myndighedsmæssige behandling."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Etablering af parkeringsrestriktionerne vil medføre udgifter til indkøb og opsætning af den\nnødvendige skiltning på de tre veje. De samlede etableringsudgifter vurderes at udgøre ca."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-10": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-10",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Køge bymidte - begrænsning af lange køretøjer",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Miljøforvaltningen indstiller, at Teknik- og Ejendomsudvalget\n1. drøfter muligheden for at begrænse kørsel med køretøjer og vogntog over 12 meter i\nKøge bymidte.\n\nBaggrund og vurdering\nDer kan opleves udfordringer med lange lastbiler og sættevognstog i Køge bymidte, hvor veje\nog byrum flere steder er mindre egnede til kørsel og manøvrering med lange køretøjer.\nDet foreslås derfor drøftet, om der skal indføres en længdebegrænsning på 12 meter inden for\net afgrænset område af bymidten. Formålet er at begrænse kørsel med lange køretøjer og\nvogntog, samtidig med at butikker og øvrige erhverv fortsat kan modtage vareleverancer med\nkøretøjer på op til 12 meter.\nSom bilag 1 vedlægges et forslag til geografisk afgrænsning af det område, der kan omfattes\naf reguleringen.\nEn længdebegrænsning kan skiltes med C 43 Køretøjslængde med angivelsen 12 m.\nReguleringen vil gælde køretøjer, herunder vogntog, hvis samlede længde inklusive læs\noverstiger den angivne længde.\nFordele og ulemper\nEn længdebegrænsning kan reducere antallet af lange køretøjer og vogntog i bymidten og\ndermed mindske gener ved kørsel og manøvrering med store køretøjer. Samtidig vil\nvarelevering fortsat være mulig med køretøjer på op til 12 meter.\nReguleringen kan omvendt få konsekvenser for butikker og virksomheder, som i dag modtager\nleverancer med længere køretøjer. Transportørerne kan få behov for at anvende mindre\nkøretøjer eller ændre distributionsruter. Den lavere transportkapacitet pr. køretøj kan samtidig\nhave en negativ påvirkning på CO₂-regnskabet, hvis det medfører, at der skal anvendes flere\nkøretøjer eller gennemføres flere ture for at transportere den samme mængde varer til\nbutikkerne. Begrænsningen vil desuden gælde alle køretøjer og vogntog over 12 meter, og ikke\nkun sættevognstog.\nFlere danske byer har oplevet problemer med store lastbiler i tætte og historiske bymiljøer. I\nFaaborg har lastbilers vending og parkering omkring torvet blandt andet medført skader på\nbygninger og risiko for påkørsel af personer og byinventar. Faaborg-Midtfyn Kommune har\nderfor tidsbegrænset adgangen til torvet og anvist en bestemt ensrettet rute til varelevering.\nEksemplet viser, at problemer med store køretøjer i ældre bymidter også forekommer i andre\n\nkommuner, men at reguleringen typisk sker gennem adgangsforbud, leveringsruter og fysiske\nforanstaltninger frem for en generel længdebegrænsning.\nForhold ved en eventuel videreførelse af projektet\nVed en eventuel videreførelse af projektet skal der derfor arbejdes med den konkrete\nafgrænsning, alternative ruter og forvarsling, så lange køretøjer så vidt muligt kan ledes uden\nom området, inden de når bymidten. Den endelige færdselsregulering vil desuden skulle ske\nmed politiets samtykke. Det er i den forbindelse vigtigt, at begrænsningen begrundes med\nkonkrete trafikale forhold i området herunder trafiksikkerhed og fremkommelighed.\nForvaltningen har på nuværende tidspunkt kun kendskab til én ejendom, Rådhusstræde 10H,\nhvor der er gjort plads til varelevering med sættevognstog. Forvaltningen vil tage kontakt til\nvirksomheder i det berørte område for en drøftelse af forslaget."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Drøftelsen har ingen økonomiske konsekvenser. Eventuelle økonomiske konsekvenser ved\nkonkrete løsninger vil blive belyst i en efterfølgende sag."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-11": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-11",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Rotter – handlingsplan for forebyggelse og bekæmpelse af rotter i Køge Kommune 2027-2030",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Miljøforvaltningen indstiller, at Teknik- og Ejendomsudvalget\n1. godkender handlingsplan for forebyggelse og bekæmpelse af rotter i Køge Kommune\n\nBaggrund og vurdering\nHandlingsplanen skal beskrive mål og handling for konkrete tiltag, der skal sikre effektiv\nforebyggelse og bekæmpelse af rotter i planperioden.\nKommunens første rottehandlingsplan fra 2017 satte ny fokus på rotteområdet og har derfor\ndannet grundlag for mange justeringer af kommunens tilgang til forebyggelse og bekæmpelse\naf rotter.\nHandlingsplanerne har været med til at øge kommunens forebyggende indsats, som var et af\nde overordnede mål med de nye bekendtgørelser. Planerne har ligeledes sat fokus på\nreduktion af anvendelsen af rottegift og kommunens tilsynsrolle.\nMålet om reduktion af brugen af rottegift er blevet indfriet. I 2021 brugte den kommunale\nbekæmpelse gift i ca. 80% af de aktive rottebekæmpelses-sager. Nu er brugen af rottegift\nreduceret til ca. 10% af de aktive sager.\nDen nye handlingsplan tager afsæt i disse resultater og arbejder videre med at sikre effektiv\nforebyggelse og bekæmpelse i den næste planperiode 2027-2030 (se bilag 1).\nDet bærende princip i både forebyggelse og bekæmpelse af rotter er samarbejdet mellem\nborgere, virksomheder og kommunen. Dette samarbejde styrker den forebyggende indsats og\nfremmer en effektiv rottebekæmpelse, som tager størst muligt hensyn til natur og miljø.\nHovedmålene i den nye handlingsplan:\nGiftfri bekæmpelse\nAt fastholde fokus på de giftfrie metoder og holde antallet af sager, hvor der anvendes\ngift, nede omkring 10%.\nPå grund af udbredt resistens overfor antikoagulanterne, er målet i perioden at begrænse\nbrugen af disse stoffer til et absolut minimum.\nForebyggende servicebesøg\nNår et område med mange anmeldelser er udpeget, er målet at gennemføre\nservicebesøg inden for 30 dage.\n\nRottespærre på institutioner\nAlle regionale, statslige og private institutioner (daginstitutioner, skoler, plejehjem,\nhospitaler) beliggende i Køge Kommune skal i perioden kontaktes med henblik på dialog\nom rottespærre og rottesikring.\nFokus på byggepladser\nDialogmøde afholdes med Teknik- og Miljøforvaltningen (Byg og Plan).\nKontrol med sikringsordninger\nDer udvælges et antal sikringsordninger til en stikprøvekontrol i perioden.\nVed kontrollen gennemgås ejendomsrapporter, besøgsrapporter og evt. bekæmpelse.\nKontrolpunkter (kasser) efterses ligeledes."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Rottegebyret dækker kommunens indsats med forebyggelse og bekæmpelse af rotter,\nherunder den daglige bekæmpelse hos borgere, borgerhenvendelser, tilsyn med\nlandbrugsvirksomheder, tilsyn med sikringsordninger, information, kampagner, administration\nog udviklingsopgaver.\nRottegebyret er sammensat af en fast pris pr. ejendom og en kvadratmetersats baseret på\nejendommens bebyggede areal. Rottegebyret opkræves af kommunen som et årligt\nejendomsbidrag.\nGebyrtaksterne for 2026 fordeler sig således:\nFast pris pr. ejendom: 79,35 kr.\nBebygget areal op til 250 m²: 0,6664 kr. pr. m²\nBebygget areal over 250 m²: 0,3332 kr. pr. m²\nTaksten for rottegebyr kan reguleres i planperioden.\nDen samlede indtægt fra rottegebyret er i 2026 budgetteret til 4,6 mio. kr.\nRottegebyret fordeles med 85% til den daglige bekæmpelse og forebyggelse i samarbejde med\nborgere og virksomheder og 15% til myndighedsarbejde, driftsplanlægning, driftssystem,\ndriftsstyring."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-12": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-12",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 12,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Anlægsregnskaber 2. halvår 2026 – Teknik- og Ejendomsudvalget",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Teknik- og Miljøforvaltningen indstiller, at Teknik- og Ejendomsudvalget anbefaler, at\nØkonomiudvalget og Kommunalbestyrelsen;\n1. godkender anlægsregnskabet og at mindreforbruget på -603.634 kr. på Forlægning\nLyngvej Campus mm. tilføres kassen,\n2. godkender anlægsregnskabet og at merforbruget på 446.888 kr. på\nEnergispareprojekter 2023 finansieres af kassen,\n3. godkender anlægsregnskabet og at mindreforbruget på -4.592 kr.\npå Energispareprojekter 2024 tilføres kassen,\n4. godkender anlægsregnskabet og at merforbruget på 538.010 kr. på\nOmklædningsfaciliteter i Køge Nord finansieres af kassen,\n5. godkender anlægsregnskaberne og at mindreforbruget på -2.566.302 kr.\npå Etablering af 30 aflastnings- og genoptræningspladser samt Etablering af\ngenoptræningscenter og daghjem tilføres kassen.\n\nBaggrund og vurdering\nFor anlægsregnskaber med bruttoudgifter på 2 mio. kr. eller mere, aflægges et særskilt\nanlægsregnskab som skal godkendes af Kommunalbestyrelsen.\nFor anlægsregnskaber med merforbrug eller mindreindtægt i forhold til det samlede\nrådighedsbeløb, er der en ”bagatelgrænse”. Bagatelgrænsen er 3 pct. af rådighedsbeløbet for\nprojekter med rådighedsbeløb op til 2 mio. kr., 250.000 for projekter op til 15 mio. kr. og\n500.000 for projekter over 15 mio. kr., skal regnskabsforklares og administrativt finansieres\neller tilgå kassebeholdningen. For anlægsregnskaber der indeholder afvigelser derover skal\nindstilles til Kommunalbestyrelsens godkendelse med anvisning om finansiering. For\nanlægsregnskaber under bagatelgrænsen bemærkes regnskabet med, at afvigelsen tilgår eller\nfinansieres af kassen.\nAnlægsregnskabet aflægges efter retningslinjerne i Køge Kommunes Økonomiske\nStyringsprincipper.\nInfrastruktur\nFølgende anlægsregnskaber aflægges i henhold til Kommunalbestyrelsens beslutninger, jf.\nbilaget.\n\nAnlægsprojekt\n\nAnlægsbevilling Bevilling/\nForbrug\nRådighedsbeløb\n\nMerforbrug (+)\neller\nMindreforbrug()\n\nForlægning Lyngvej\nCampus mm., XA8131000014\n\nI alt\n\nKommunens ejendomme\nFølgende anlægsregnskaber aflægges i henhold til Kommunalbestyrelsens beslutninger, jf.\nbilaget.\nAnlægsprojekt\n\nAnlægsbevilling Bevilling/\nForbrug\nRådighedsbeløb\n\nMerforbrug (+)\neller\nMindreforbrug()\n\nEnergispareprojekter\n\nEnergispareprojekter\n\nOmklædningsfaciliteter i\nKøge Nord, XA8198000016\n\nEtablering af 30\naflastnings- og\ngenoptræningspladser og\nEtablering af\ngenoptræningscenter og\ndaghjem, XA-8192000009\n\nI alt\n\nØkonomisk Afdeling har påtegnet anlægsregnskaberne, som gennemgås i vedhæftede bilag."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der aflægges anlægsregnskab for Køge Kommunes infrastrukturprojekter og kommunens\nejendomme. Samlet set er anlægsbevillingerne på 188,5 mio. kr., forbruget på 186,3 mio. kr.\nog mindreforbruget på -2,2 mio. kr. Kassebeholdningen øges dermed med 2,2 mio. kr."
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-13": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-13",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Orientering fra formanden",
+   "afsnit": [],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-14": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-14",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Orientering fra forvaltningen",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Køge Dige\nKøge festuge"
+    }
+   ],
+   "bilag": []
+  },
+  "koege-2026-12-02-teknik-og-ejendomsudvalget-15": {
+   "id": "koege-2026-12-02-teknik-og-ejendomsudvalget-15",
+   "kommune": "Køge",
+   "udvalg": "Teknik- og Ejendomsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.koege.dk/vis?id=ed9c7461-ef92-4ad6-b740-31ae10179034",
+   "hentet": "2026-11-26T23:20:47.138Z",
+   "titel": "Eventuelt - åben",
+   "afsnit": [],
+   "bilag": []
   }
  },
  "sitemaps": {
@@ -11176,7 +11665,7 @@
    "tjekket": "2026-11-26"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=be6a6881-9377-4d7f-af5f-c498c75a4f88": {
-   "senest": "2026-11-04",
+   "senest": "2026-11-26",
    "tjekket": "2026-11-26"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=c6ea37ad-af34-42e5-b30c-3437a3859dff": {
@@ -11188,7 +11677,7 @@
    "tjekket": "2026-11-26"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=ad16dcc8-ff1b-4376-b2ff-6285cf84ed0f": {
-   "senest": "2026-11-16",
+   "senest": "2026-11-26",
    "tjekket": "2026-11-26"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=2de09cdf-e2c8-4ed0-8bfa-b4a32c7ab896": {
@@ -11276,7 +11765,7 @@
    "tjekket": "2026-11-26"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=6967b145-5a39-4ec8-b8f9-486ff18f114e": {
-   "senest": "2026-11-19",
+   "senest": "2026-11-26",
    "tjekket": "2026-11-26"
   },
   "https://dagsordener.koege.dk/Sitemap/ForCommittee?committeeId=01c92701-eb0c-42cc-b3cf-7c75cbf98373": {
@@ -11292,7 +11781,7 @@
    "tjekket": "2026-11-21"
   }
  },
- "opdateret": "2026-11-26T14:13:40.697Z",
+ "opdateret": "2026-11-26T23:20:52.911Z",
  "kommune": "Køge",
  "parser": 3
 }

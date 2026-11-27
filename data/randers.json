@@ -935,6 +935,22 @@
    "dato": "2025-06-24",
    "punkter": 21,
    "parser": 3
+  },
+  "173fb578-0846-485a-856c-ee10c53a2cc6": {
+   "lastmod": "2026-11-26",
+   "type": "referat",
+   "udvalg": "Økonomiudvalget",
+   "dato": "2026-11-26",
+   "punkter": 1,
+   "parser": 3
+  },
+  "3baaea2b-5557-4082-b770-1d4ff61d446f": {
+   "lastmod": "2026-11-26",
+   "type": "dagsorden",
+   "udvalg": "Byrådet",
+   "dato": "2026-12-01",
+   "punkter": 1,
+   "parser": 3
   }
  },
  "sager": {
@@ -21284,10 +21300,36 @@
    "kommune": "Randers",
    "udvalg": "Økonomiudvalget",
    "dato": "2026-11-26",
+   "type": "referat",
+   "nr": 2,
+   "kilde": "https://dagsordener.randers.dk/vis?id=173fb578-0846-485a-856c-ee10c53a2cc6",
+   "hentet": "2026-11-26T23:31:13.280Z",
+   "titel": "Digital godkendelse af tilstedeværelse",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "Digital godkendelse for tilstedeværelse."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Godkendt.\nRené Skaarup (Æ) deltog som stedfortræder for Henrik Hove (Æ).\nKasper Fuhr Christensen (E) og Mogens Nyholm (B) deltog ikke i sagens behandling."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Digital godkendelse for tilstedeværelse."
+    }
+   ],
+   "bilag": []
+  },
+  "randers-2026-12-01-byraadet-2": {
+   "id": "randers-2026-12-01-byraadet-2",
+   "kommune": "Randers",
+   "udvalg": "Byrådet",
+   "dato": "2026-12-01",
    "type": "dagsorden",
    "nr": 2,
-   "kilde": "https://dagsordener.randers.dk/vis?id=1f0523be-8706-4a4e-b739-392da1dbdc60",
-   "hentet": "2026-11-26T14:24:48.353Z",
+   "kilde": "https://dagsordener.randers.dk/vis?id=3baaea2b-5557-4082-b770-1d4ff61d446f",
+   "hentet": "2026-11-26T23:31:20.097Z",
    "titel": "Digital godkendelse af tilstedeværelse",
    "afsnit": [
     {
@@ -21561,6 +21603,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-26T14:25:21.240Z",
+ "opdateret": "2026-11-26T23:31:20.100Z",
  "kommune": "Randers"
 }
