@@ -535,6 +535,30 @@
    "dato": "2026-12-03",
    "punkter": 4,
    "parser": 3
+  },
+  "98f2475b-061e-419d-83ea-1f0de04a3f61": {
+   "lastmod": "2026-11-27",
+   "type": "dagsorden",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "punkter": 20,
+   "parser": 3
+  },
+  "e48c038c-495e-41fb-95e5-790ec93afb22": {
+   "lastmod": "2026-11-27",
+   "type": "referat",
+   "udvalg": "Sundheds- og Ældreudvalget",
+   "dato": "2026-11-25",
+   "punkter": 8,
+   "parser": 3
+  },
+  "44d858be-bfcd-454b-a266-b9f01ddf9afa": {
+   "lastmod": "2026-11-27",
+   "type": "referat",
+   "udvalg": "Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget",
+   "dato": "2026-11-25",
+   "punkter": 6,
+   "parser": 3
   }
  },
  "sager": {
@@ -10487,10 +10511,10 @@
    "kommune": "Herlev",
    "udvalg": "Sundheds- og Ældreudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=082c687e-b1fe-4229-a951-9d1318e69045",
-   "hentet": "2026-11-25T14:37:48.703Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=e48c038c-495e-41fb-95e5-790ec93afb22",
+   "hentet": "2026-11-27T14:05:26.864Z",
    "titel": "Dialog med Ældrerådet",
    "afsnit": [
     {
@@ -10508,6 +10532,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -10517,10 +10545,10 @@
    "kommune": "Herlev",
    "udvalg": "Sundheds- og Ældreudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=082c687e-b1fe-4229-a951-9d1318e69045",
-   "hentet": "2026-11-25T14:37:48.703Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=e48c038c-495e-41fb-95e5-790ec93afb22",
+   "hentet": "2026-11-27T14:05:26.864Z",
    "titel": "Uddeling af tilskud til frivilligt socialt arbejde",
    "afsnit": [
     {
@@ -10538,6 +10566,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nForvaltningen trak sagen til senere behandling."
     }
    ],
    "bilag": []
@@ -10547,10 +10579,10 @@
    "kommune": "Herlev",
    "udvalg": "Sundheds- og Ældreudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=082c687e-b1fe-4229-a951-9d1318e69045",
-   "hentet": "2026-11-25T14:37:48.703Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=e48c038c-495e-41fb-95e5-790ec93afb22",
+   "hentet": "2026-11-27T14:05:26.864Z",
    "titel": "Fælles ledelse af plejecentrene og Helhedsplejen",
    "afsnit": [
     {
@@ -10568,6 +10600,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -10577,10 +10613,10 @@
    "kommune": "Herlev",
    "udvalg": "Sundheds- og Ældreudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=082c687e-b1fe-4229-a951-9d1318e69045",
-   "hentet": "2026-11-25T14:37:48.703Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=e48c038c-495e-41fb-95e5-790ec93afb22",
+   "hentet": "2026-11-27T14:05:26.864Z",
    "titel": "Status og resultater af træning i eget hjem med DigiRehab",
    "afsnit": [
     {
@@ -10593,11 +10629,15 @@
     },
     {
      "titel": "Sagsfremstilling",
-     "tekst": "Kommunalbestyrelsen besluttede i 2023 at implementere træningsforløb for borgere i eget hjem med\nvelfærdsteknologien DigiRehab. Forvaltningen har siden da fremlagt to effektmålinger, og fremlægger nu\nden senest effektmåling for perioden den 1. august 2025 til den 31. juli 2026.\nI perioden har 114 borgere gennemført et træningsforløb. Analysen af effekter baserer sig dog kun på 74\naf disse, da der ikke har kunnet tilvejebringes tilstrækkelige ydelsesdata på tildelt og leveret hjælp for\nborgere, som har gennemført prehab-forløb (forebyggende træningsforløb).\nResultater af træningen\nEffektrapporten viser fortsat gode resultater med indsatsen. For de 74 borgere, der har gennemført\ntræningen, har 89 procent (66 borgere) enten fastholdt eller reduceret behovet for hjælp, ifølge\nscreeninger. For de 74 borgere har der i gennemsnit været et reduceret plejebehov på 69 timer mindre\nper borger efter et år, sammenlignet med hvis borgeren ikke havde fået indsatsen. Ifølge screeningerne\nhar 95 procent også bevaret eller forbedret deres fysiske formåen. Det er også vurderingen fra de tre\nansatte hjemmetrænere, at borgerne er glade for indsatsen og opnår øget mobilitet - og dermed også\nøgede muligheder for et selvstændigt og aktivt hverdagsliv.\nUdvidelse af målgruppe for træningen\nDen 29. januar 2025 besluttede Sundheds- og Voksenudvalget at udvide målgruppen til også at omfatte\nen tidlig og forebyggende prehab-træning til borgere, der kun modtager praktisk bistand (f.eks.\nrengøring). Selvom det ikke har været muligt at udtrække særskilte effektdata for målgruppen, ses det, at\n95 procent af borgerne har forbedret eller bevaret deres fysiske formåen. Den faglige vurdering er også,\nat træningen bidrager til at forebygge og udskyde behovet for personlig pleje for den udvidede\nmålgruppe.\nSagen sendes til orientering til Ældrerådet.\nFunktionschef Annika Nielsen deltager under punktet.\n\nLovgrundlag\n\nÆldrelovens § 10."
+     "tekst": "Kommunalbestyrelsen besluttede i 2023 at implementere træningsforløb for borgere i eget hjem med\nvelfærdsteknologien DigiRehab. Forvaltningen har siden da fremlagt to effektmålinger, og fremlægger nu\nden senest effektmåling for perioden den 1. august 2025 til den 31. juli 2026.\nI perioden har 114 borgere gennemført et træningsforløb. Analysen af effekter baserer sig dog kun på 74\naf disse, da der ikke har kunnet tilvejebringes tilstrækkelige ydelsesdata på tildelt og leveret hjælp for\nborgere, som har gennemført prehab-forløb (forebyggende træningsforløb).\nResultater af træningen\nEffektrapporten viser fortsat gode resultater med indsatsen. For de 74 borgere, der har gennemført\ntræningen, har 89 procent (66 borgere) enten fastholdt eller reduceret behovet for hjælp, ifølge\nscreeninger. For de 74 borgere har der i gennemsnit været et reduceret plejebehov på 69 timer mindre\nper borger efter et år, sammenlignet med hvis borgeren ikke havde fået indsatsen. Ifølge screeningerne\nhar 95 procent også bevaret eller forbedret deres fysiske formåen. Det er også vurderingen fra de tre\nansatte hjemmetrænere, at borgerne er glade for indsatsen og opnår øget mobilitet - og dermed også\nøgede muligheder for et selvstændigt og aktivt hverdagsliv.\nUdvidelse af målgruppe for træningen\nDen 29. januar 2025 besluttede Sundheds- og Voksenudvalget at udvide målgruppen til også at omfatte\nen tidlig og forebyggende prehab-træning til borgere, der kun modtager praktisk bistand (f.eks.\nrengøring). Selvom det ikke har været muligt at udtrække særskilte effektdata for målgruppen, ses det, at\n95 procent af borgerne har forbedret eller bevaret deres fysiske formåen. Den faglige vurdering er også,\nat træningen bidrager til at forebygge og udskyde behovet for personlig pleje for den udvidede\nmålgruppe.\nSagen sendes til orientering til Ældrerådet.\nFunktionschef Annika Nielsen deltager under punktet.\n\nLovgrundlag\nÆldrelovens § 10."
     },
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -10607,10 +10647,10 @@
    "kommune": "Herlev",
    "udvalg": "Sundheds- og Ældreudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=082c687e-b1fe-4229-a951-9d1318e69045",
-   "hentet": "2026-11-25T14:37:48.703Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=e48c038c-495e-41fb-95e5-790ec93afb22",
+   "hentet": "2026-11-27T14:05:26.864Z",
    "titel": "Plejehjem Hammergården - Borgermøde og status pr. november 2026",
    "afsnit": [
     {
@@ -10628,6 +10668,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nAd. 1.: Taget til efterretning.\nAd. 2.: Taget til efterretning."
     }
    ],
    "bilag": []
@@ -10637,10 +10681,10 @@
    "kommune": "Herlev",
    "udvalg": "Sundheds- og Ældreudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=082c687e-b1fe-4229-a951-9d1318e69045",
-   "hentet": "2026-11-25T14:37:48.703Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=e48c038c-495e-41fb-95e5-790ec93afb22",
+   "hentet": "2026-11-27T14:05:26.864Z",
    "titel": "Budgetopfølgning pr. den 30. september 2026 for Sundheds- og Ældreudvalget",
    "afsnit": [
     {
@@ -10658,6 +10702,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Intet at bemærke.\n\nBeslutningskompetence\nSundheds- og Ældreudvalget."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -10667,15 +10715,15 @@
    "kommune": "Herlev",
    "udvalg": "Sundheds- og Ældreudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 7,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=082c687e-b1fe-4229-a951-9d1318e69045",
-   "hentet": "2026-11-25T14:37:48.703Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=e48c038c-495e-41fb-95e5-790ec93afb22",
+   "hentet": "2026-11-27T14:05:26.864Z",
    "titel": "Meddelelser - Åbent møde",
    "afsnit": [
     {
-     "titel": "Sagsfremstilling",
-     "tekst": "Meddelelser\nOrientering fra Sundhedsrådet\nOrientering om implementering af automatiseret ruteplanlægning i Helhedsplejen\nOrientering om overgangen til Sundheds- og Omsorgspladser frem mod den 1. januar 2027"
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -10685,10 +10733,10 @@
    "kommune": "Herlev",
    "udvalg": "Sundheds- og Ældreudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 10,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=082c687e-b1fe-4229-a951-9d1318e69045",
-   "hentet": "2026-11-25T14:37:48.703Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=e48c038c-495e-41fb-95e5-790ec93afb22",
+   "hentet": "2026-11-27T14:05:26.864Z",
    "titel": "Godkendelse af det digitale underskriftsblad",
    "afsnit": [
     {
@@ -10698,6 +10746,10 @@
     {
      "titel": "Indstilling",
      "tekst": "FORVALTNINGEN INDSTILLER,\nat protokol underskrives digitalt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nProtokollen blev underskrevet."
     }
    ],
    "bilag": []
@@ -11823,10 +11875,10 @@
    "kommune": "Herlev",
    "udvalg": "Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=55ba74bd-f3d5-4ae6-aa96-aaec88588b0a",
-   "hentet": "2026-11-19T13:22:31.525Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=44d858be-bfcd-454b-a266-b9f01ddf9afa",
+   "hentet": "2026-11-27T14:05:34.976Z",
    "titel": "Orientering om anvendelse af AI på beskæftigelsesområdet",
    "afsnit": [
     {
@@ -11844,6 +11896,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nBeskæftigelses-, Social-, Handicap- og Psykiatriudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -11853,10 +11909,10 @@
    "kommune": "Herlev",
    "udvalg": "Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 2,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=55ba74bd-f3d5-4ae6-aa96-aaec88588b0a",
-   "hentet": "2026-11-19T13:22:31.525Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=44d858be-bfcd-454b-a266-b9f01ddf9afa",
+   "hentet": "2026-11-27T14:05:34.976Z",
    "titel": "Medfinansiering af AI-storskalaprojekt på beskæftigelsesområdet",
    "afsnit": [
     {
@@ -11874,6 +11930,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Nedenstående tabel angiver finansieringen ved Herlev Kommunes deltagelse i AI-storskalaprojekt på\nbeskæftigelsesområdet.\n\nKommunernes Landsforening (KL) yder et tilskud på 50 % op til 350.000 kr. for deltagelse i AIstorskalaprojektet på beskæftigelsesområdet.\nHerlev Kommunes medfinansiering udgør ligeledes 350.000 kr., som finansieres inden for\nArbejdsmarked og Borgerservices egen budgetramme.\nKL oplyser, at projektet løber fra 2026 og forventes afsluttet ved udgangen af 2027. Indtægterne for\nregnskab 2027 afregnes i 2028.\nDen 15. februar 2027 og 2028 aflægges regnskab til KL for foregående kalenderår.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTiltrådt."
     }
    ],
    "bilag": []
@@ -11883,10 +11943,10 @@
    "kommune": "Herlev",
    "udvalg": "Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=55ba74bd-f3d5-4ae6-aa96-aaec88588b0a",
-   "hentet": "2026-11-19T13:22:31.525Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=44d858be-bfcd-454b-a266-b9f01ddf9afa",
+   "hentet": "2026-11-27T14:05:34.976Z",
    "titel": "Pejlemærker for beskæftigelsesindsatsen i Herlev Kommune",
    "afsnit": [
     {
@@ -11904,6 +11964,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTiltrådt med bemærkningen om, at pejlemærkerne justeres, når der kommer nye meldinger fra\nstaten.\nDer indføjes nye pejlemærker løbende, når de kommer fra Star.\nPejlemærkerne opdateres hvert andet år."
     }
    ],
    "bilag": []
@@ -11913,10 +11977,10 @@
    "kommune": "Herlev",
    "udvalg": "Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=55ba74bd-f3d5-4ae6-aa96-aaec88588b0a",
-   "hentet": "2026-11-19T13:22:31.525Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=44d858be-bfcd-454b-a266-b9f01ddf9afa",
+   "hentet": "2026-11-27T14:05:34.976Z",
    "titel": "Orientering om psykiatritilbuddene Juvelhuset og Hjemvejen",
    "afsnit": [
     {
@@ -11934,6 +11998,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nBeskæftigelses-, Social-, Handicap- og Psykiatriudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -11943,10 +12011,10 @@
    "kommune": "Herlev",
    "udvalg": "Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=55ba74bd-f3d5-4ae6-aa96-aaec88588b0a",
-   "hentet": "2026-11-19T13:22:31.525Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=44d858be-bfcd-454b-a266-b9f01ddf9afa",
+   "hentet": "2026-11-27T14:05:34.976Z",
    "titel": "JobCAMP 2026",
    "afsnit": [
     {
@@ -11964,6 +12032,10 @@
     {
      "titel": "Økonomi",
      "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nBeskæftigelses-, Social-, Handicap- og Psykiatriudvalget"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\n\nTaget til efterretning."
     }
    ],
    "bilag": []
@@ -11973,10 +12045,10 @@
    "kommune": "Herlev",
    "udvalg": "Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget",
    "dato": "2026-11-25",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 9,
-   "kilde": "https://dagsordener.herlev.dk/vis?id=55ba74bd-f3d5-4ae6-aa96-aaec88588b0a",
-   "hentet": "2026-11-19T13:22:31.525Z",
+   "kilde": "https://dagsordener.herlev.dk/vis?id=44d858be-bfcd-454b-a266-b9f01ddf9afa",
+   "hentet": "2026-11-27T14:05:34.976Z",
    "titel": "Godkendelse af det digitale underskriftsblad",
    "afsnit": [
     {
@@ -11986,6 +12058,10 @@
     {
      "titel": "Indstilling",
      "tekst": "FORVALTNINGEN INDSTILLER,\nat protokol underskrives digitalt."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Afbud:\nJeannet Lauenborg (C)\nProtokollen blev underskrevet."
     }
    ],
    "bilag": []
@@ -12547,24 +12623,660 @@
     }
    ],
    "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-1": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-1",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Åbenhed om omprioriteringskataloget i budgetprocessen",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Hovedudvalget har i forbindelse med evalueringen af budgetprocessen 2026 anbefalet en tidligere\nog bredere involvering af MED-organisationen i det fremadrettede arbejde med\nomprioriteringskataloger. Hovedudvalget anbefaler, at relevante MED-udvalg får mulighed for at\ndrøfte omprioriteringsforslagene inden den politiske behandling. Formålet er at kvalificere\nforslagene ved at inddrage medarbejdernes viden om de driftsmæssige og personalemæssige\nkonsekvenser af forslagene."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat Hovedudvalgets anbefaling om, at relevante MED-udvalg kan involveres i drøftelsen af\nomprioriteringsforslagene som led i budgetprocessen drøftes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På mødet i Hovedudvalget den 12. november 2026 blev processen for Budget 2027 evalueret. I den\nforbindelse godkendte Hovedudvalget årshjulet for de kommende budgetprocesser. Hovedudvalget\ndrøftede samtidig mulighederne for at styrke medarbejderinddragelsen, særligt i forbindelse med\nudarbejdelsen af omprioriteringskataloget.\nTidligere involvering af Hovedudvalget\nSom led i den fremtidige budgetproces forelægges omprioriteringskataloget for Hovedudvalget, inden det\npræsenteres for det politiske niveau. Der afholdes et møde i Hovedudvalget den 25. januar 2027 med\nhenblik på at drøfte omprioriteringskatalogerne samt eventuelt afgive udtalelser forud for drøftelsen af\nomprioriteringskatalogerne i fagudvalgene i februar 2027. Endvidere er der planlagt et møde i\nHovedudvalget den 7. april 2027, hvor borgmesteren og gruppeformændene inviteres til at deltage for\ndialog om omprioriteringskataloget.\nAnbefaling om øget åbenhed i MED-organisationen\nHovedudvalget anbefaler, at relevante MED-udvalg får mulighed for at drøfte de omprioriteringsforslag,\nder vedrører deres område, inden omprioriteringskataloget behandles i fagudvalgene i februar og marts\nHovedudvalget vurderer, at en bredere involvering af MED-organisationen vil bidrage til at kvalificere\nforslagene. De lokale MED-udvalg har indsigt i de faglige, driftsmæssige og personalemæssige forhold\npå de berørte områder og kan derfor bidrage med viden om forslagenes konsekvenser, som kan styrke\ndet politiske beslutningsgrundlag.\nModel for involvering af relevante MED-udvalg\nSom følge af organisationsændringen pr. den 1. november 2026 er MED-organisationen under tilpasning.\nHvis anbefalingen godkendes, vil forvaltningen i dialog med Hovedudvalget fastlægge en model for,\nhvordan de relevante MED-udvalg involveres i budgetprocessen. Når modellen er fastlagt, gives\n\nØkonomi- og Planlægningsudvalget en orientering herom.\nUnder punktet deltager Michael Gyes (næstformand) og Jens Lunden (repræsentant) fra Hovedudvalget.\n\nLovgrundlag\nIntern tilrettelæggelse af kommunens opgaver."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen bevillingsmæssige konsekvenser.\n\nBeslutningskompetence\nØkonomi- og Planlægningsudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-2": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-2",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "APV- og trivselsmåling 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Resultatet af APV- og trivselsmålingen er blevet gennemgået på Hovedudvalgsmøde den 12.\nnovember. Hoveudvalget har på baggrund af gennemgangen udvalgt fem overordnede\nfokusområder."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat orienteringen tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Resultaterne af kortlægningsprocessen, gennemført som første led i APV- og trivselsmåling 2026, er nu\nsendt ud til alle arbejdsmiljøgrupperne i Herlev Kommune. Svarprocenten endte på 82%, hvilket er fire\nprocentpoint mere end ved den tilsvarende undersøgelse gennemført i 2023.\nDer er gennemført temamøder på alle områder, hvor arbejdsmiljøgrupperne er instrueret i, hvordan de\ninddrager deres kollegaer i opfølgningen på resultaterne, samt udvælger og løbende følger op på\nhandleplaner. Stab for HR har adgang til de handleplaner, der udarbejdes på alle niveauer af kommunen,\nog vil på hovedudvalgets møde i januar kunne give en status på, hvor langt arbejdsmiljøgrupperne er\nmed dette arbejde.\nHovedudvalget udvalgte på deres møde den 12. november 2026 følgende fokuspunkter på baggrund af\nresultatet af APV- og trivselsmålingen:\nFysisk arbejdsmiljø - herunder indeklima, støj, rengøring og infektionsrisiko.\nSygefravær - i relation til de arbejdsmiljømæssige udfordringer, der i APV- og trivselsmålingen\ntyder på at have sammenhæng med sygefravær.\nForebyggelse af krænkende handlinger - særligt med fokus på at klæde\narbejdsmiljøorganisationen på til at håndtere henvendelser omkring krænkende handlinger.\nBalance - Som er den driver, der scorer lavest i målingen på overordnet niveau.\nStøttende ledelse - med fokus på at give lederne de bedst mulige forudsætninger for at bedrive\ngod ledelse.\nDer var enighed om, at Hovedudvalget ikke udarbejder egentlige handleplaner for de fem\nindsatsområder, men i stedet sætter fokus på, hvordan der arbejdes med disse punkter lokalt i den videre\nproces.\nAPV- og trivselsmålingen 2026 er vedhæftet som bilag, og vil blive gennemgået på Økonomi- og\nPlanlægningsudvalgsmødet.\n\nLovgrundlag\nIkke lovbestemt intern tilrettelæggelse af kommunens opgaver."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nØkonomi- og Planlægningsudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-3": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-3",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Status på ansættelsesstoppet pr. ultimo oktober 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Status pr. oktober 2026 på midlertidigt ansættelsesstop for alle administrative og tekniske stillinger\npå alle områder gældende fra juni 2026 og 12 måneder frem. Der blev sidst givet status på\nØkonomi- og Planlægningsudvalgsmøde den 30. september. Det blev i denne forbindelse besluttet\nat gennemgangen af stillinger berørt af ansættelsesstoppet skulle være mere dybdegående."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat status pr. oktober 2026 på det midlertidige ansættelsesstop for alle administrative og tekniske\nstillinger tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På baggrund af budgetopfølgningen pr. ultimo marts 2026, hvor forventningen var et samlet merforbrug\npå op mod 53 mio. kr., besluttede Økonomi- og Planlægningsudvalget den 3. juni 2026 at indføre et\nmidlertidigt ansættelsesstop på 12 måneder fra juni 2026 med henblik på at opveje merforbrug på\nvelfærdsområderne i regnskab 2026 og 2027.\nI følge den tekniske beregning på personalegrupperne for Administration og IT, Akademikere og Teknisk\npersonale, forventes en personaleomsætning at udgøre 20% for Administration og IT, 15% for\nAkademikere samt 15 % for Teknisk personale. Med denne personaleomsætning vil et ansættelsesstop\nresultere i gennemsnitlig 4,8 stilling pr. måned. Helårseffekten er teknisk beregnet til 57 stillinger.\nStatus på ansættelsesstoppet\nSamlet set er der 19 personer, der er fratrådt deres stillinger indenfor de givne jobkatgorier i perioden 1.\njuni - 31. oktober. Af de medarbejdere, der er fratrådt deres stilling, er der i 6 tilfælde dispenseret fra\nansættelsesstoppet. Det drejer sig om følgende:\nTeknisk serviceleder i Rådhusservice (fuld tid) - stillingen har inden genbesættelse stået ledig i 8\nmåneder\nTeknisk servicemedarbejder i Teknisk service (fuld tid) - stillingen har inden genbesættelse stået\nledig i 6 måneder\nProjektleder i Byggeri (fuld tid) - stillingen har inden genbesættelse stået ledig i 3 måneder\nSkolesekretær på Birkholmskolen (30 timer) - stillingen blev besat som led i en\nomplaceringsforpligtigelse i forlængelse af besparelsen af administrative medarbejder. Der er\nsparet 3 måneders løn som følge af ansættelsesstoppet\nLøn- og personalekonsulent i Stab for HR (fuld tid) - Stillingen blev genbesat med det samme\nInformationssikkerhedskoordinator (fuld tid) - Stillingen har inden genbesættelse stået ledig i 2\nmåneder\nSamlet set har der været 12 fuldtidsstillinger, der har været ubesat i samlet set 86 måneder samt 7\ndeltidsstillinger, der har været ubesat i hvad der svarer til 15 måneders fuldtidsbeskæftigelse.\n\nDer givet dispensation til videreførsel af 4 stillinger, der burde være ophørt i perioden. Det drejer sig om:\nForlængelse af et vikariat på Biblioteket\nVidereførsel af en studentermedhjælper under Idræt, som arbejder med Herlev-passet (12 timer)\nForlængelse af ansættelse af en adm. medarbejder i Finans og Opkrævning (fuld tid)\nAnsættelse af en Psykolog i Familiebehandlingen\nFratrædelser indenfor omfattede områder frem mod ophør af ansættelsesstop\nUdover de medarbejdere, der allerede har fratrådt deres stilling, er der 19 stillinger, der allerede har en\nkendt fratrædelsesdato. Af de 19 stillinger er der givet dispensation for genbesættelse i 5 tilfælde.\nDerudover er der givet dispensation til følgende:\nMidlertidig stilling på Biblioteket til dækning af længerevarende sygdomsforløb\nBarselsvikar i Jobservice\nEn specialarbejder på idrætsområdet til at dække to opsigelser\nTo specialarbejder til vejdrift - én til en stilling, der har stået ledig siden 31. juli, og én til at erstatte\nen medarbejdere, der døede efter kort tids sygdom\nEt barselsvikariat til Job og Erhverv, der skal dække to barsler\nEn administrativ medarbejder til Ydelse, der skal dække en stilling, der har stået ubesat siden\nmarts\n\nSupplerende sagsfremstilling\nBenyttes kun, hvis der skal tilføjes yderligere oplysninger fra behandlingen i et udvalg til efterfølgende\nbehandling i et andet udvalg. Ellers slettes teksten således at feltet er tomt.\n\nLovgrundlag\nIkke lovbestemt intern tilrettelæggelse af kommunens opgaver."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nØkonomi- og Planlægningsudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-4": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-4",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Budgetopfølgning pr. 30. september 2026 - Samlet for Herlev Kommune",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forvaltningen har udarbejdet budgetopfølgning pr. den 30. september 2026, som fremlægges til\nudvalgets orientering."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At budgetopfølgningen pr. den 30. september 2026 tages til efterretning.\n2. At der foretages tekniske budgetændringer på tværs af bevillingsområder jævnfør bilaget\n\"Tekniske justeringer\" og økonomiafsnittet.\n3. At pulje til differentieret lønfremskrivning som er afsat fra 2027 og frem, på 21,5 mio. kr.\nudmøntes til fagområder jævnfør bilaget \"Udmøntning af pulje til differentieret\nlønfremskrivning\" og økonomiafsnittet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Driftsvirksomheden\nPå den samlede driftsvirksomhed ses et samlet forbrug på 1.961,3 mio. kr. og en samlet forbrugsprocent\npå 74,97 pr. den 30. september 2026. En mere detaljeret forbrugsrapport fremgår af vedhæftede bilag\n\"Detaljeret forbrug på Driftsbevillinger pr. den 30. september pr. udvalg\".\nBudgetopfølgning\nDet samlede forventede merforbrug i 2026 udgør 37,2 mio. kr. hvilket er nedbragt med -16,1 mio. kr.\nsiden sidste budgetopfølgning pr. ultimo maj, som følge af effekt af handleplaner og andre\nudgiftsreducerende tiltag. Forvaltningen udmeldte ved sidste budgetopfølgning at sigtemålet for\nmerforbruget var at nedbringe dette til 40,0 mio. kr. på tværs af alle bevillingsområder for Herlev\nKommune, hvilket nu forventes at kunne overholdes.\nAf det samlede forventede merforbrug på 37,2 mio. kr. kan et samlet merforbrug på 20,4 mio. kr.\nhenføres til servicerammen. Dertil kommer et forventet merforbrug på 14,8 mio. kr. på\narbejdsmarkedsområdet, som ligger uden for servicerammen og et merforbrug på takst- og\ngebyrfinansierede områder på 2,4 mio. kr.\nTabel 1: Forventet driftsregnskab pr. den 30. september 2026 (den samlede driftsvirksomhed, eksklusiv\ndet takstfinansierede område)\nI mio. kr.\n\nKorrigeret\n\nForbrug pr.\n\nForbrugsprocent\n\nForventet\n\nForventet\n\nbudget\n\nden 30.\n\npr. den 30.\n\nregnskab\n\nafvigelse\n\nseptember\n\nseptember 2026\n\nBy, Teknik og Klima\n\nBy og Fællesskab /\n\nSekretariatsfunktion\n\nKultur og Idræt\n\nArbejdsmarked og\n\nVoksen Social\n\nStabe\n\nBørn Skole og\n\nBorgerservice\nSundhed,\nForebyggelse og\nÆldre\n\nUddannelse /\nSekretariatsfunktion\nBørn og Familier\nI alt\ndriftsvirksomheden\nNote: *positivt fortegn (+) angiver forventet merforbrug, negativt fortegn (-) angiver mindreforbrug.\nNår der ses bort fra det takstfinansierede område, udviser den samlede prognose for Herlev Kommune et\nforventet merforbrug på 34,8 mio. kr., hvilket er et fald på -18,5 mio. kr. siden budgetopfølgningen pr. 31.\nmaj 2026. Faldet kan henføres til arbejdsmarkedsområdet (-6,0 mio. kr.) og til fald i udgifterne på\nserviceområderne (-12,5 mio. kr.).\nBemærkninger\nPå kommunaldirektørens områder forventes et samlet mindreforbrug på -16,6 mio. kr. (fald på -13,9 mio.\nkr. siden sidste opfølgning).\nUnder Stab for HR forventes mindreforbrug (-4,0 mio. kr.) til seniorjobordningen, pulje for\nindefrosne feriemidler samt Tjenestemandspensioner.\nI Stab for Økonomi og Indkøb forventes et mindreforbrug (-17,7 mio. kr.), som kan henføres til\nreservepulje til at imødegå merforbrug tværgående i organisation, administrative udgifter overført til\nrenovationsområdet, samt administrationsgebyr til Udbetaling Danmark.\nFor Direktionssekretariatet forventes et samlet mindreforbrug (-0,2 mio. kr.).\nI IT- og Digitalisering forventes fortsat et merforbrug (2,5 mio. kr.) til udfasning af kontrakt med\nekstern leverandør af IT-supportopgaver.\nFor Direktionen forventes fortsat et merforbrug på løn (2,9 mio. kr.), som kan henføres til lukket sag\nnr. 49 ved kommunalbestyrelsens møde den 18. februar 2026.\nPå By og Fællesskab forventes et samlet mindreforbrug på -1,5 mio. kr. (fald på -3,1 mio. kr. siden sidste\nopfølgning).\nUnder By, Teknik og Klima forventes et mindreforbrug (-0,1 mio. kr.), som skyldes merudgifter til\nbygningsdriften som følge af efteropkrævning fra Vestforbrænding, merudgifter til rengøring og\nmerudgifter til varme. Disse merforbrug modgås af forventet mindreforbrug på el-afgift, driftstilskud\ntil Movia, samt forventet mindreforbrug på vejvedligehold.\nFor By og Fællesskab / Sekretariatsfunktion forventes et mindreforbrug (-0,9 mio. kr.) som skyldes\nforventede mindreudgifter til Boligsikring.\nUnder Kultur og Idræt forventes et mindreforbrug (-0,5 mio. kr.) til drift af idrætsfaciliteter, hvor der\n\nved sidste budgetopfølgning forventedes budgetoverholdelse.\nPå Social-, Ældre- og Beskæftigelse forventes et samlet merforbrug på 41,0 mio. kr. (fald på -5,4 mio. kr.\nsiden sidste opfølgning).\nUnder Arbejdsmarked og Borgerservice forventes et merforbrug på 14,8 mio. kr., som kan\nhenføres til ydelser til borgere, særligt førtidspension, dagpenge til forsikrede ledige,\nsygedagpenge samt ressourceforløb.\nUnder Sundhed, Forebyggelse og Ældre forventes et merforbrug på 15,3 mio. kr., grundet udgifter\ntil eksterne vikarer og højt lønforbrug under Helhedsplejen, samt et højt personaleforbrug på\nplejecentrene.\nUnder Voksen Social forventes et merforbrug på 10,9 mio. kr. som primært kan henføres til\nHandicap og Psykiatri / Myndighed, hvor der forventes øgede udgifter til køb af pladser til\nsocialpædagogisk støtte samt ophold på kvindekrisecentre og forsorgshjem.\nPå Børn, Skole og Uddannelse forventes et samlet merforbrug på 11,9 mio. kr. (stigning på 3,9 mio. kr.\nsiden sidste opfølgning).\nPå Børn Skole og Uddannelse / Sekretariatsfunktion forventes et merforbrug på 0,1 mio. kr.\nFor Børn og Familier forventes et merforbrug på 11,9 mio. kr., som primært skyldes tværfaglige\nindsatser herunder børn med særlige behov, støtte til enkeltintegrerede elever på kommunale\nfolkeskoler samt særligt tilrettelagt undervisning, modsat herfor forventes der mindreforbrug på\nalmenskoleområdet samt dagtilbudsområdet, hvor det forventede mindreforbrug primært skyldes\nrekrutteringsvanskeligheder.\nHandleplaner\nStatus på handleplaner for de enheder der er omfattet, vil blive forelagt på de fire fagudvalg, på\nudvalgsmøderne i december måned.\nTakst- og gebyrfinansierede områder\nTabel 2: Takst- og gebyrfinansierede områder\nI mio. kr.\n\nKorrigeret\n\nForbrug pr.\n\nForbrugsprocent\n\nForventet\n\nForventet\n\nbudget\n\npr. 30. september\n\nregnskab\n\nafvigelse\n\nseptember\n\nSkadedyrsbekæmpelse,\n\nRenovation, U\n\nUdgifter i alt\n\nSkadedyrsbekæmpelse,\n\nRenovation, I\n\nIndtægter i alt\n\nI alt for takst- og\n\nU\n\nI\n\ngebyrfinansierede\nområder\n\nNote: *positivt fortegn (+) angiver forventet merforbrug, negativt fortegn (-) angiver mindreforbrug.\nSamlet set for Herlev Kommune ses pr. den 30. september 2026 et nettoforbrug på det takst- og\ngebyrfinansierede område på -21,4 mio. kr., svarende til en forbrugsprocent på 220,2.\nBudgettet på det takst- og gebyrfinansierede område har et nettobudget indeholdende både indtægter og\nudgifter. Det samlede indtægtsbudget udgør -78,6 mio. kr. i 2026, mens det samlede udgiftsbudget udgør\ni alt 68,9 mio. kr. På indtægtssiden er der pr. den 30. september 2026 afholdt indtægter for -70,9 mio. kr.\nsvarende til en forbrugsprocent på 90,2. På udgiftssiden er der afholdt udgifter for 49,6 mio. kr. svarende\ntil en forbrugsprocent på 71,9.\nBemærkninger\nRenovation (stigning på 2,5 mio. kr. siden sidste opfølgning)\nPå renovation forventes et merforbrug på 2,5 mio. kr. Merforbruget skyldes at alle kommunerne\nsidste år blev anvist, at Emballagegebyret for producentansvar skulle opkræves med 62,5% af det\nfastsatte gebyr, indtil 3. kvartal 2026, hvorefter der skulle foretages en efteropkrævning af det\nudestående beløb. Vestforbrænding forventer ikke at denne efteropkrævning vil blive opretholdt af\nden nuværende regering, hvilket medfører et forventet indtægtstab på 3,8 mio. kr., som dog i\nnogen grad modsvares af merindtægter på -1,3 mio. kr. som følge af befolkningsudviklingen og\ntilsvarende øgede gebyrindtægter.\nSkadedyrsbekæmpelse (fald på -0,1 mio. kr. siden sidste opfølgning)\nPå skadedyrsbekæmpelse forventes et mindreforbrug på -0,1 mio. kr. i 2026, grundet lavere\naktivitet på området.\nAnlægsområdet\nTabel 3: Anlægsområdet\nI mio. kr.\n\nKorrigeret\n\nForbrug pr.\n\nForbrugsprocent\n\nForventet\n\nForventet\n\nbudget\n\nden\n\npr. 30. september\n\nregnskab\n\nafvigelse\n\n30.september\n\nAnlægsudgifter\n\nAnlægsindtægter\n\nI alt\n\nanlægsområdet\nNote: *positivt fortegn (+) angiver forventet merforbrug, negativt fortegn (-) angiver mindreforbrug.\nDer er på anlægsområdet afholdt anlægsudgifter for 61,3 mio. kr. ud af et korrigeret budget på 180,4 mio.\nkr., svarende til en forbrugsprocent på 33,99. Der er indkommet anlægsindtægter for -8,2 mio. kr. ud af et\nbudget på -16,9 mio. kr. svarende til en forbrugsprocent på 48,0.\nDer forventes pr. den 30. september 2026 et samlet mindreforbrug på anlægsudgifter på -76,8 mio. kr.\nsvarende til en forbrugsprocent på 57,4 på udgiftssiden, og et samlet nettoforbrug på 57,7. En mere\ndetaljeret forbrugsrapport over forbrug på alle anlægsprojekter pr. den 30. september 2026, er vedhæftet\ni bilaget \"Detaljeret forbrug på Anlægsbevillinger pr. den 30. september pr. udvalg\".\n\nTekniske justeringer\nDer indstilles til udgiftsneutrale budgetmæssige ændringer jævnfør sagens indstillingspunkt 2. De\ntekniske korrektioner er omplaceringer af opgaver mellem afdelinger i kommunen og fremgår af bilaget\n\"tekniske justeringer\".\nUdmøntning af pulje til differentieret lønfremskrivning 2027\nDer indstilles til, at den centralt afsatte pulje til differentieret lønfremskrivning i budget 2027 udmøntes til\nde fagområder i kommunen, hvis overenskomster har en højere lønstigning end den generelle aftale for\nkommunalt ansatte, jævnfør sagens indstillingspunkt 3. og bilaget \"Udmøntning af pulje til differentieret\nlønfremskrivning\".\nI forlængelse OK-26 forliget (overenskomstforhandlingerne for de offentligt ansatte) stiger en række\nfaggrupper i løn i den nuværende overenskomstperiode, ud over den normale lønstigning for alle ansatte\ni kommunen. I budgettet for 2027-2030 er der afsat en årlig pulje på 21,5 mio. kr. som skal udmøntes til\nde budgetter hvor de omfattede faggrupper er ansat. Fordelingen af puljen fremgår af bilaget.\n\nLovgrundlag\nIkke lovbestemt intern tilrettelæggelse af kommunens opgaver."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Der indstilles til budgetmæssige ændringer jævnfør sagens indstillingspunkt 2 samt bilaget\n\"Tekniske justeringer\", idet der er tale om budgetændringer af en teknisk karakter som samlet set\ner budgetneutrale for kommunen.\nDer indstilles endvidere til budgetmæssige ændringer jævnfør sagens indstillingspunkt 3 samt\nbilaget \"Udmøntning af pulje til differentieret lønfremskrivning\", der er ligeledes tale om\nbudgetændringer af en teknisk karakter, som samlet set er budgetneutrale for kommunen.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-5": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-5",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Budgetopfølgning pr. 30. september 2026 for Økonomi- og Planlægningsudvalget",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forvaltningen har udarbejdet budgetopfølgning pr. den 30. september 2026, som fremlægges til\nudvalgets orientering."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat, budgetopfølgning pr. den 30. september 2026 tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Budgetopfølgningen pr. den 30. september 2026 for Økonomi- og Planlægningsudvalget.\nI hele 1.000 kr.\n\nKorrigeret\n\nForbrug pr.\n\nForbrugsprocent\n\nForventet\n\nbudget\n\npr. 30. september\n\nregnskab\n\nseptember\n\nAfvigelse\n\nBy, Teknik og Klima\n\nBy og Fællesskab /\n\nStabe\n\nBørn, Skole og\n\nBørn og Familier\n\nI alt Økonomi- og\n\nSekretariat\nKultur og Idræt\nArbejdsmarked og\nborgerservice\nSundhed, Forebyggelse\nog Ældre\n\nUddannelse /\nSekretariat\n\nPlanlægningsudvalget\nPå Økonomi- og Planlægningsudvalgets områder ses et samlet forbrug på 320,5 mio. kr. og en samlet\nforbrugsprocent på 71,37.\nPrognosen for udvalget udviser et forventet mindreforbrug på -15,8 mio. kr., hvilket er fald på -18,1 mio.\nkr. siden budgetopfølgningen pr. den 31. maj 2026.\nBemærkninger:\nBy, Teknik og Klima (fald på -1,0 mio. kr. siden sidste opfølgning)\n\nPå By, Teknik og Klima forventes et merforbrug på 4,5 mio. kr. grundet merudgifter til\nbygningsdriften (4,8 mio. kr.) som følge af efterregulering fra Vestforbrænding samt\nadvokatbistand til sag mod tidligere rengøringsleverandør, et merforbrug på byg (0,3 mio. kr.) til\nekstern assistance for byggesagsbehandling, et mindreforbrug på byggeri (-0,2 mio. kr.)\nvedrørende lønudgifter og et mindreforbrug på Grønne områder og Mobilitet (-0,5 mio. kr.) til pleje\naf grønne områder.\nFaldet siden sidste opfølgning vedrører sig primært mindreforbrug på henholdsvis Byggeri samt\nGrønne områder og Mobilitet.\nBy og Fællesskab / Sekretariat (fald på -1,4 mio. kr. siden sidste opfølgning)\nPå By og Fællesskab / Sekretariat forventes et mindreforbrug på -0,9 mio. kr. som primært\nvedrører sig forventede mindreforbrug til udbetaling af driftssikring af boligbyggeri og\nredningsberedskabet.\nFaldet siden sidste opfølgning vedrører sig primært en bedring i forventningen til lejetab og\nistandsættelser efter fraflytning under driftssikring af boligbyggeri.\nArbejdsmarked og Borgerservice (stigning på 0,2 mio. kr. siden sidste opfølgning)\nPå Arbejdsmarked og Borgerservice forventes et mindreforbrug på -0,4 mio. kr. mindreforbruget\nskyldes fortsat lønvakance.\nStigningen siden sidste opfølgning skyldes ændring i lønprognosen.\nStabe (fald på -13,9 mio. kr. siden sidste opfølgning)\nPå Stabe forventes et mindreforbrug på -16,6 mio. kr. som kan henføres til et mindreforbrug på\nStab for Økonomi og Indkøb (-17,7 mio. kr.) som følge af reservepulje til at imødegå merforbrug\ntværgående i organisationen, administrative udgifter overført til renovationsområdet samt\nadministrationsgebyr til Udbetaling Danmark. På Stab for HR forventes et mindreforbrug (-4,0\nmio. kr.) som primært vedrører sig tjenestemandspensioner og seniorjobordning. Der forventes et\nmerforbrug på Direktionen (2,9 mio. kr.) som følge af lukket sag nr. 49 på kommunalbestyrelsens\nmøde den 18. februar 2026. På Direktionssekretariatet og IT forventes et merforbrug (2,3 mio. kr.)\nsom følge af udfasning af kontrakt med ekstern leverandør af IT-supportopgaver under IT- og\nDigitalisering.\nFaldet siden sidste opfølgning skyldes at der ved Lov- og Cirkulæreprogrammet juni 2026, er\nafsat reservepulje til at imødegå merforbrug tværgående i organisationen.\nBørn og Familier (fald på -2,2 mio. kr. siden sidste opfølgning)\nPå Børn og Familier forventes et mindreforbrug på -2,5 mio. kr. grundet et forventet mindreforbrug\nunder UngHerlev (-1,6 mio. kr.) som følge af mindreudgifter til vagtordningen, og et mindreforbrug\nunder Tværfaglige indsatser (-0,9 mio. kr.) som følge af reserverede puljemidler som dog\nmodsvares af merforbrug på samme område under Børne-, Familie og Forebyggelsesudvalget.\nFaldet siden sidste opfølgning skyldes ovennævnte ubrugte midler under UngHerlev og den\novennævnte uudmøntede pulje under Tværfaglige indsatser.\nSamlet for Herlev Kommune forventes et merforbrug på 37,2 mio. kr. ved budgetopfølgningen pr. 30.\nseptember 2026. Det forventes således at sigtemålet om et samlet merforbrug på højst 40,0 mio. kr.\noverholdes.\n\nAnlæg:\nDer er på anlægsprojekter med reference til udvalget afholdt et nettoanlægsforbrug på -4,2 mio. kr. ud af\net budget på -5,2 mio. kr. svarende til en forbrugsprocent på 80,40.\nEn mere detaljeret forbrugsrapport på driftsbevillinger, samt oversigt over forbrug på anlægsprojekter\nmed reference til udvalget pr. den 30. september 2026, er vedhæftet som bilag.\nDen samlede budgetopfølgning for Herlev Kommune pr. den 30. september 2026 forelægges\nKommunalbestyrelsen den 9. december 2026.\n\nLovgrundlag\nIntet at bemærke."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Intet at bemærke.\n\nBeslutningskompetence\nØkonomi- og Planlægningsudvalget"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-6": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-6",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Godkendelse af stiftelsesdokumenter for IT29 A/S",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Det fremgår af Økonomiaftalen for 2026 mellem regeringen og KL (indgået maj 2025), at\nkommunerne senest den 1. januar 2027 skal samle deres basale IT-drift i fire til fem\nfælleskommunale enheder. Formålet er at sikre øget cybersikkerhed og en økonomisk effektiv\nunderstøttelse af de deltagende kommuner. Det fremgår endvidere, at selskaberne inden\nudgangen af 2027 skal have overtaget kommunernes drift af server- og netværksinfrastruktur.\nKommunalbestyrelserne i 29 kommuner i Region Hovedstaden (incl. Solrød Kommune og excl.\nKøbenhavns Kommune) har besluttet sammen at stifte et fælleskommunalt aktieselskab (A/S), og\nder skal i forlængelse heraf vedtages stiftelsesdokumenter for selskabet, og selskabet skal\nregistreres i Erhvervsstyrelsen. Selskabet har betegnelsen IT29. Der forventes derudover at blive\nstiftet fire regionale IT-selskaber af de øvrige kommuner.\nDer sigtes på, at IT29 stiftes i perioden den 21. december - 31. december 2026 eller hurtigst muligt\nderefter, da dette er nødvendigt for at overholde tidsfristerne i økonomiaftalen.\nKommunalbestyrelsen tiltræder med denne sag indholdet af vedlagte stiftelsesdokumenterne for\nselskabet. Stiftelsesdokumenterne er vid udstrækning lavet på baggrund af det materiale, som KL\nog Kammeradvokaten har udarbejdet til brug for denne proces."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At vedhæftede ejeraftale (bilag 1) og vedtægt (bilag 2) i forbindelse med stiftelse af et\nfælleskommunalt aktieselskab for at varetage og udvikle fælles it-driftsopgaver for IT29\nkommunerne godkendes.\n2. At der gives en tillægsbevilling på 666.660 kr. til kapitalindskud i aktieselskabet IT29, der\nafsættes på finansposter, finansieret indenfor bevillingsområdet Stabe."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "1. Rammen for stiftelsesdokumenterne og senere yderligere politisk inddragelse\nStiftelsesdokumenterne bygger på udkast, som Kammeradvokaten har udarbejdet for KL, idet der er\nforetaget nogle justeringer bl.a. for at give en bedre mindretalsbeskyttelse.\nDokumenterne er nødvendige for at kunne stifte selskabet.\nPå grund af en meget stram tidsplan er der tale om midlertidige dokumenter, og dokumenterne vil blive\nrevideret i løbet af 2027 særligt med sigte på bestemmelserne om ejerkommunernes styring og\nindflydelse i selskabet, herunder udpegning og sammensætning af bestyrelsen. I løbet af 2027\ngennemføres således en proces med bredere inddragelse også med politisk niveau for at fastlægge\ndette.\nDe reviderede dokumenter vil blive forelagt kommunalbestyrelserne på ny. Der kan henvises til\nvedhæftede tidsplan for det videre arbejde (bilag 3).\n\n2. Selskabets opgaver og hovedtræk i stiftelsesdokumenterne\nSelskabets opgaver og hovedtrækkene i stiftelsesdokumenterne er nærmere beskrevet i vedhæftede\nbilag 4.\nHer kan fremhæves, at selskabet i første omfang i tråd med kommuneaftalen (fase1) vil overtage\nfølgende opgaver:\nVaretagelse af den basale IT‑drift for kommunerne, herunder drift af server‑ og\nnetværksinfrastruktur (servere, netværk mv.), datacentre og relaterede tekniske platforme.\nImplementering og drift af grundlæggende sikkerhedsforanstaltninger i relation til server og\nnetværk, herunder sikkerhedskopi, gendannelse, logning, overvågning af infrastruktur, herunder\nevnen til at opdage cyberangreb hos og på tværs af kommunerne, samt passende beredskab til\nhåndtering af hændelser på infrastrukturniveau.\nOm indholdet af stiftelsesdokumenterne kan fremhæves følgende:\nSelskabet har ikke et erhvervsøkonomisk formål, og overskud skal som udgangspunkt reinvesteres\ni selskabet (”hvile i sig selv”).\nEjerkommunernes kapitalindskud og aktieandel bygger på den enkelte kommunes indbyggertal.\nAlle kommuner har ret til at deltage på generalforsamlingen og har stemmeret i forhold til deres\naktieandel.\nBeslutninger om minimumssikkerhedsniveauet for kommunerne og prisen herfor (den såkaldte\ngrundpakke), samt udgifter derudover af en vis størrelse for kommunerne samt overførsel af\nyderligere opgaver til selskabet (fase 2) kræver kvalificeret flertal (3/4 flertal) på\ngeneralforsamlingen.\nSelskabet ledes i en interimsperiode på maksimalt 2 år af en bestyrelse bestående af 8\nkommunaldirektører. Bestyrelsen kan sammen med formandskabet i KKR udpege en ekstern\nbestyrelsesformand.\nEn model med en midlertidig embedsmandsbestyrelse i 2 år er beskrevet af Kammeradvokaten, og der\nforventes at blive nedsat bestyrelser helt eller delvist bestående af embedsmænd i alle de andre\nfælleskommunale IT-selskaber. Der kan henvises til oversigten i bilag 5.\nSom følge af tidsfristerne i økonomiaftalen har der ikke været tid til nærmere drøftelse af andre modeller\nfor udpegning og sammensætning af en bestyrelse i 1. omgang.\n3. Særligt om ejerkommunernes finansiering af selskabet\nEjerkommunernes finansiering af selskabet falder overordnet i tre dele; stiftelsen af selskabet,\nkommunens engangsudgifter forbundet med at overgå til IT29 efter den 1. januar 2028 samt den løbende\nbetaling til selskabet efter den 1. januar 2028.\nFørste del er den finansiering, der er nødvendig for at sikre, at selskabet kommer i drift. Denne\nfinansiering udgøres af stiftelseskapitalen på 27,1 mio. kr., der skal sikre, at selskabet i opstartsfasen\nledes af en robust programorganisation, der har tilstrækkeligt med ressourcer til at drive etablering og\nopbygning af organisationen frem mod overtagelsen af kommunernes drift af server- og\n\nnetværksinfrastruktur. Der er tale om en vurdering af selskabets kapitalbehov det første års tid efter\nstiftelsen.\nAnden del udgøres af de apportindskud (eksisterende IT-udstyr i kommuner) og den betaling (i det\nomfang, at en kommunes IT-udstyr ikke overtages af selskabet), der er nødvendig for, at selskabet kan\nlevere minimumssikkerhedsniveauet til kommunerne (grundpakken), samt at kommunen kan modtage\ndisse ydelser. Selskabet vil stille krav til det IT-udstyr, som overtages af selskabet fra kommunerne, idet\nudstyret skal kunne være en del af det minimumssikkerhedsniveau, som selskabet skal levere til\nkommunerne.\nMinimumssikkerhedsniveauet og prisen herfor skal som nævnt ovenfor vedtages på generalforsamlingen\nmed kvalificeret flertal (3/4 flertal). En kommune har, når minimumssikkerhedsniveauet er vedtaget på\ngeneralforsamlingen, mulighed for at udskyde sin aftagerforpligtelse i op til 2 år (og dermed udskyde\nimplementeringen og betalingen for grundpakken), ligesom kommunen i den periode kan vælge at\nudtræde af selskabet.\nTredje del er den betaling, der er nødvendig for, at selskabet kan levere de aftalte ydelser til\nkommunerne, herunder for at selskabet er i løbende forsvarlig drift. Servicekatalog inklusive priser for\ngrundpakken og tilkøbsydelser, bliver udarbejdet i 2027 i forlængelse af oprettelsen af selskabet.\nDenne betaling vil gå til at betale for løbende driftsudgifter og selskabets investeringsbehov, f.eks. som\nfølge af den teknologiske udvikling. Det kan være vanskeligt på nuværende tidspunkt at vurdere\ninvesteringsbehovet som følge af den teknologiske udvikling, men det forventes som følge af truslerne\nmod cybersikkerheden at stige. Beslutning om prisen på grundpakken vil blive besluttet af\ngeneralforsamlingen forud for, at kommunerne begynder at aftage ydelser fra selskabet.\nDer er i forhold til Kammeradvokatens udkast tilføjet en særlig bestemmelse om, at beslutninger, der\npåfører ejerkommunerne udgifter over en vis størrelse, skal vedtages af generalforsamlingen med\nkvalificeret flertal.\nBestemmelsen medfører, at følgende skal godkendes på generalforsamlingen med kvalificeret flertal.:\n1. Når selskabets engangsinvesteringer overstiger den enkelte kommunes befolkningsmæssige andel\naf 300 mio. kr. (mellem ca. 3 og ca. 24 mio. kr. for den enkelte kommune).\n2. Øgede driftsudgifter, der overstiger den enkelte kommunes befolkningsmæssige andel af 100 mio.\nkr., (mellem ca. 1 og ca. 8 mio. kr. for den enkelte kommune).\nI Kammeradvokatens udkast til ejeraftale er det bestyrelsen, som har beføjelserne til at godkende alt\nvedrørende økonomi, efter at selskabet går i drift. Der er derfor tale om en yderligere\nmindretalsbeskyttelse ift. skabelonen.\nUdgifter ud over de nævnte vil bestå af tilkøbsydelser, som besluttes og købes enkeltvis af de enkelte\nkommuner, når det tilbydes.\n\nLovgrundlag\nLov om aktie- og anpartsselskaber (selskabsloven), styrelsesloven og kommunalfuldmagten"
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Selskabet vil blive stiftet med en indskudskapital på kr. 27,1 mio. kr. finansieret af kommunerne ud\nfra ejerfordelingen, som er fastlagt på baggrund af indbyggertallet pr. 1. januar 2026, jf. oversigten i\nejeraftalens § 6, stk. 1.\nHerlev Kommunes andel udgør 666.660 kr. der meddeles bevilling til med denne sag. Fordelingen\naf indskudskapital fremgår af bilag 6. Bevillingen afsættes på finansposter, og belaster dermed ikke\nkommunens service- eller anlægsramme, det afklares i IT29 regi, om indskuddet kan\nlånefinansieres, via. det statsligt udmeldte låneramme for etablering af tværkommunale fælles itorganisationer. Såfremt der kan optages lån, har indskuddet kun en marginal likviditetsmæssig\neffekt i budgetperioden. Bevillingen finansieres indenfor bevillingsområdet stabe.\nIndskuddet fra kommunen tilføres som egenkapital til selskabet og indgår i finansieringen af\nselskabets aktiviteter i transitionsperioden. Efter godkendelse af sagen overføres beløbet til\nselskabet.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-7": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-7",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Budgetmæssig justering som følge af ny organisering",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I forlængelse af kommunalbestyrelsens beslutning af den 13. maj 2026, om at udvide direktionen\nfra to til tre fagdirektører er der behov for at opdele de eksisterende sekretariater så de\nunderstøtter den nye opgavefordeling i direktionen."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat der foretages budgetneutrale bevillingsmæssige omplaceringer fra 2027, på tværs at\nstabsområderne som beskrevet i sagsfremstillingen og sagens økonomiafsnit."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunalbestyrelsen godkendte i foråret 2024 en ny organisering med fokus på styrket faglighed,\ndecentralisering og øget frisættelse. En evaluering i foråret 2026 viste behov for yderligere\ndirektørunderstøttelse for at understøtte målene og de decentrale ledere. Direktionen blev derfor udvidet\nfra tre til fire direktører pr. den 1. august 2026.\nSom følge heraf er organisationen justeret for at sikre understøttelse tættere på fagområderne. Der er\netableret tre direktørstabe til understøttelse af fagdirektørerne, mens Direktionssekretariatet er nedlagt og\nerstattet af en mindre Direktionsenhed til understøttelse af kommunaldirektøren og borgmesteren.\nOrientering om den tilpassede administrative organisation er endvidere givet ved meddelelse fra\nkommunaldirektøren på kommunalbestyrelsesmødet den 11. november 2026.\nSom led i justeringen skal følgende bevillingsmæssige ændringer godkendes:\nDirektionssekretariatet:\nEnheden erstattes af en mindre direktionsenhed, til at understøtte kommunaldirektøren og borgmesteren.\nNuværende sekretariatsfunktioner fordeles ud til fagdirektørerne, foruden overføres IT- og Digitalisering\ntil Stab for Økonomi og Indkøb som skifter navn til Stab for Økonomi, Indkøb og Digitalisering.\nVelfærdssekretariatet:\nEnheden erstattes af henholdsvis Stab for Børn, Skole og Uddannelse, samt Stab for Social, Ældre, og\nBeskæftigelsesområdet. Medarbejdere og opgaver fordeles i forhold til direktørernes opgaveportefølje.\nSekretariat for By, og fællesskab:\nEnheden skifter navn til Stab for By og Fællesskab, boliganvisning flyttes til Social, Ældre, og\nBeskæftigelsesområdet.\nVedhæftet til sagen er bilag med organisationsdiagram hvor den nye opdeling er angivet.\n\nLovgrundlag\nIkke lovbestemt intern tilrettelæggelse af kommunens opgaver."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen medfører følgende budgetmæssige konsekvenser på tværs af direktørområder.\nTabel til bevillingsmæssige ændringer\n\nvarig\n\nKommunaldirektør\n\nja\n\nDirektør for By og\n\nja\n\nja\n\nja\n\nFællesskab\nDirektør for Børn,\nSkole og\nUddannelse\nDirektør for Social,\nÆldre og\nBeskæftigelse\nI alt\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-8": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-8",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Ansøgning fra Vestergaarden om kollektiv råderet",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Boligforeningen 3B, afdeling Vestergården II søger godkendelse af projekt med individuel\nmodernisering af badeværelse som kollektiv råderet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At individuel modernisering af badeværelse på op til 190.000 kr. pr. bolig og afledt lejestigning\nmed indtil 1.450 kr. pr. måned i 20 år godkendes.\n2. At projektfinansiering ved boligafdelingens optagelse og tinglysning af 20-årigt realkreditlån\nmed provenu på indtil 7.600.000 kr. svarende til 40 badeværelser godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Som administrator for 3B søger KAB, afdeling Vestergården II, om Herlev Kommunes godkendelse af\nprojekt, hvorefter boligtagere i afdelingen efter eget valg, og efter behørig teknisk godkendelse, kan\nforetage modernisering af boligens badeværelse og betale udgifterne hertil gennem et midlertidigt tillæg\ntil huslejen. Ordningen gælder også for fraflyttede boliger, hvor ejendomskontoret skønner det\nhensigtsmæssigt at modernisere, før den nye beboer flytter ind.\nProjektet er godkendt på afdelingsmøde i boligafdelingen den 10. marts 2026 og af boligselskabets\nbestyrelse den 26. august 2026.\nForvaltningen kan anbefale godkendelse af projektet, dets finansiering og den afledte lejestigning, idet\nmuligheden for frivilligt at modernisere boligen vil være til gavn for beboerne, ligesom forbedring af bad\neller køkken vil øge boligens og dermed også boligafdelingens standard.\n\nLovgrundlag\nLov om almene boliger § 29, stk. 1 og § 37b samt Lov om leje af almene boliger § 10, stk. 3."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Projektet påvirker ikke Herlev Kommunes økonomi, men lejestigningen skal godkendes af\nkommunalbestyrelsen. Da kommunen har en myndighedsforpligtigelse overfor de almene\nboligselskaber til at godkende lån og lejestigning.\nOmkostninger til modernisering kan maksimalt udgøre 190.000 kr. pr. badeværelse inklusiv\nhonorar til KAB. Alle omkostninger udlægges af boligafdelingen, som finansierer dette ved\noptagelse af 20-årigt realkreditlån, som maksimalt kan beløbe sig til et provenu på 7.600.000 kr.\nLånet betales ved en forholdsmæssig forhøjelse af huslejen i de boliger, der moderniseres, mens\nhuslejen i øvrige boliger ikke påvirkes. Når lånet er afviklet efter 20 år, bortfalder lejeforhøjelsen.\nAnsøger oplyser, at hvis den maksimale moderniseringsramme udnyttes, udgør det midlertidige\n\nindividuelle lejetillæg henholdsvis 1450 kr. pr. måned for bad.\nFor modernisering af badeværelse vil det have følgende lejekonsekvens for tre forskellige\nlånebeløb.\nLånebeløb 100.000kr.\n\nLånebeløb 150.000kr.\n\nLånebeløb 190.000kr.\n\nMånedlig ydelse 960kr.\n\nMånedlig ydelse 1.100kr.\n\nMånedlig ydelse1.450kr.\n\nBoligtageren kan vælge at modernisere for et lavere beløb, og den resulterende lejestigning bliver\ndermed tilsvarende mindre. Det er forvaltningens vurdering, at lejen for moderniserede boliger ikke\nkommer til at overstige markedslejen, og at der derfor ikke vil være øget risiko for lejetab i\nafdelingen. Endvidere at der med ydelsen på realkreditlånet og de modsvarende individuelle\nlejeforhøjelser fortsat vil være balance mellem indtægter og udgifter i boligafdelingen.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-9": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-9",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Ansøgning renovering og låneoptag til renovering DVB København",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "DVB-København søger Herlev Kommunes godkendelse af projekt, låneoptagelse og lejestigning\nfor renovering i afdeling 2 Småhusene, 16 boliger."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At projekt med renoveringsarbejder i afdeling 2 Småhusene godkendes.\n2. At det godkendes at afdeling 2 Småhusene optager et 30-årigt realkreditlån på indtil 4.451.200\nkr.\n3. At lejestigning på indtil 12,83% godkendes.\n4. At Herlev Kommune stiller garanti på 42,81% af kreditforeningslånet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På vegne af DVB-København, afdeling 2 Småhusene, søger administrator Boligkontoret Danmark med\nvedhæftede ansøgning om Herlev Kommunes godkendelse af renoveringsprojekt og optagelse af lån til\ndelvis finansiering heraf, samt godkendelse af den resulterende lejestigning.\nProjektet omfatter:\nUdskiftning af tage samt nødvendige følgearbejder på tagkonstruktioner, isolering og skorstene.\nMiljøundersøgelse, afgrænsning, sanering og bortskaffelse af asbestholdige materialer, samt\nnødvendig rengøring og kontrol af berørte områder.\nUdskiftning og forbedring af udvalgte vinduer og døre.\nVedligeholdelse, reparation og efterisolering af udvalgte facader og gavle.\nTilhørende bygningsmæssige reparationer, retablering og kvalitetssikring.\nProjekt, låneoptagelse og lejestigning er godkendt i boligafdelingen på afdelingsmøder den 31. august\n2026. Der foreligger godkendelse fra boligselskabets bestyrelse på møde den 29. juli 2026. Både projekt,\nlåneoptagelse og lejestigning skal tillige godkendes af kommunalbestyrelsen.\nForvaltningen vurderer, at renoveringen er nødvendig for at sikre ejendommenes klimaskærm,\nsundhedsmæssige forhold og langsigtede anvendelighed\n\nLovgrundlag\nLov om almene boliger §29 stk. 1, bkg. nr. 1642 af 7/12/2023, §79, stk. 4, §115 og §119, stk. 1, nr. 6,\nsamt lov om almene boliger §98 og § 127, stk. 2, 4 pkt."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen har ingen økonomisk betydning for Herlev Kommune.\n\nDer er ansøgt om, at Herlev Kommune stiller kommunal garanti efter almenboliglovens § 98 for\nrealkreditlånet til ekstraordinære renoveringsarbejder. Der ansøges om garanti for de sidst\nprioriterede 42,81% af et lån med en hovedstol på 4.389.000 kr., beregnet efter lovens § 127,\nstk.2, 4. pkt.\nPå det grundlag har ansøger beregnet en samlet anskaffelsessum på 5.791.200 kr. Hertil bidrager\nboligafdelingens henlæggelser med 1.000.000 kr., egen trækningsret i Landsbyggefonde på\n340.000 kr., og restbeløbet ønskes finansieret med et 30-årigt realkreditlån på 4.451.200kr. med\nen budgetteret årlig ydelse på 278.200 kr., svarende til 1.449 kr. pr. måned og en gennemsnitlig\nleje på 1.652 kr. pr. kvm. årligt.\nBoligstørrelse\n\nNuværende husleje/md. (beregnet)\n\nHuslejestigning 12,83 %\n\nNy husleje/md.\n\nForvaltningen deler vurdering om, at den forøgede leje ikke vil overstige markedslejen for den\nrenoverede boligafdeling, og at projektet derfor ikke vil medføre udlejningsvanskeligheder eller\nvæsentligt øge risiko for lejetab. Dog bør man være opmærksomhed på, at afdelingens boliger\nfortsat skal være betalbare for boligsøgende til almene boligafdelinger.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-10": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-10",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Medfinansiering af AI-storskalaprojekt på beskæftigelsesområdet",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forvaltningen foreslår, at Herlev Kommune medfinansierer det nationale AI-storskalaprojekt om AIunderstøttet dokumentation på beskæftigelsesområdet. Projektet skal effektivisere og styrke\ndokumentationsarbejdet samt frigøre mere tid til borgerkontakt og andre opgaver."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat der afsættes en indtægtsbevilling på -0,35 mio. kr. og en udgiftsbevilling på 0,7 mio. kr. og\nmedfinansieringen på -0,35 mio. kr. finansieres indenfor Arbejdsmarked og Borgerservices\nbudgetramme, som angivet i økonomiafsnittet."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Herlev Kommune har fået tilsagn til at indgå i det nationale AI-storskalaprojekt; AI-understøttet dokumentation\npå beskæftigelsesområdet. Projektet er en del af aftalen mellem Regeringen, KL og Danske Regioner om tre\nstorskalaprojekter med fokus på øget brug af kunstig intelligens i den offentlige sektor.\nMed beskæftigelsesreformen har kommunerne ligeledes fået hjemmel til at styrke brugen af kunstig intelligens\npå området. Kunstig intelligens kan dermed anvendes til at behandle personoplysninger.\nFormålet med AI-storskalaprojektet er at effektivisere og styrke dokumentationsarbejdet på\nbeskæftigelsesområdet og dermed frigøre tid til borgerkontakt og komplekse opgaver.\nEn væsentlig del af medarbejdernes administrative arbejde består af at udarbejde referater på baggrund af\nsamtaler med borgere, eksempelvis borgere på kontanthjælp, dagpenge eller i jobafklaringsforløb.\nDokumentationen er lovpligtig og udgør en central del af borgerens sag og det videre opfølgningsforløb.\nMed implementering af kunstig intelligens bliver det muligt automatisk at transkribere samtaler til tekst og\ndokumentation. Det gør det muligt at reducere tiden, som sagsbehandleren bruger på at skrive referater af\nborgersamtaler. Derudover kan teknologien understøtte tolkeopgaver, hvilket kan forbedre kommunikationen\nmed borgere, der ikke taler dansk, og mindske behovet for ekstern tolkebistand.\nSamlet set forventes projektet at effektivisere og styrke arbejdsgange, sikre nærvær i samtalen med borgeren,\nfrigive tid til andre opgaver og skabe bedre rammer for medarbejdernes trivsel.\nI alt deltager 64 kommuner i projektet, som er organiseret i syv kommuneklynger. Gennem deltagelsen får\nHerlev Kommune økonomisk tilskud til at implementere nye AI-løsninger og indgå i et tværkommunalt netværk\nmed erfaringsudveksling og videndeling.\n\nLovgrundlag\nBeskæftigelsesreformen, april 2025."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Nedenstående tabel angiver finansieringen ved Herlev Kommunes deltagelse i AI-storskalaprojekt på\nbeskæftigelsesområdet.\n\nKommunernes Landsforening (KL) yder et tilskud på 50 % op til 350.000 kr. for deltagelse i AIstorskalaprojektet på beskæftigelsesområdet.\nHerlev Kommunes medfinansiering udgør ligeledes 350.000 kr., som finansieres inden for\nArbejdsmarked og Borgerservices egen budgetramme.\nKL oplyser, at projektet løber fra 2026 og forventes afsluttet ved udgangen af 2027. Indtægterne for\nregnskab 2027 afregnes i 2028.\nDen 15. februar 2027 og 2028 aflægges regnskab til KL for foregående kalenderår.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget, 25. november 2026, pkt.\nAfbud:\nJeannet Lauenborg (C)\nTiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-11": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-11",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Godkendelse af fondsindtægter til Gammelgaard 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I denne sag forelægges fondstilsagn til Gammelgaards udstillingsprogram i 2026. Tilsagnet udgør\n180.000 kr., og fordeler sig på støtte til konkrete udstillinger."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At fondsindtægter til Gammelgaards udstillingsprogram i 2026 på 180.000 kr. godkendes.\n2. At finansiering af fondsmoms på 17,5% af 180.000 kr. svarende til kr. 31.500 kr. afholdes\ninden for Gammelgaards vedtagne budget."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Gammelgaard er Herlev Kommunes kunsthal, og præsenterer årligt et udstillingsprogram med tilhørende\nformidling og arrangementer.\nI 2026 byder programmet på en bred vifte af oplevelser – fra Marianne Grønnows soloudstilling FIERCE\nLOVE til forårets dobbeltkoncept 1+1, som rummer de to parallelle udstillinger Legestue af Javier Alvarez\nSagredo og Sofie Winther samt FOR:EN:ING af Ana Pavlovic og Vladimir Tomic. Efteråret afsluttes med\ngruppeudstillingen Solen er så rød mor, hvor Anna Fro Vodder, Emilie Imán, Eske Kath og Lise Blomberg\nviser nye værker.\nGammelgaards drift finansieres af kommunen, mens en stor del af udstillingsprogrammets omkostninger\ndækkes gennem ansøgninger til private og offentlige fonde. Udstillingerne har som udgangspunkt gratis\nentré, og fondsmidlerne går direkte til at realisere udstillinger og aktiviteter, som ellers måtte nedskaleres\neller bortfalde. Flere fonde stiller krav om, at midlerne anvendes til det ansøgte formål, at der aflægges\nrapport og at fonden krediteres.\nOversigt over fondstilsagn\nFondstilsagn til Gammelgaards aktiviteter udgør 180.000 kr. Tilsagnene dækker specifikke\nudstillinger/projekter. I nedenstående skema ses en oversigt over fondstilsagn til udstillinger og projekter i\nUdstilling/projekt\n\nFond\n\nBeløb (kr.)\n\nAna Pavlovic & Vladimir Tomić\n\nToyota-Fonden\n\nJavier Alvarez Sagredo & Sofie Winther\n\nKnud Højgaards Fond\n\nHoffmann og Husmans Fond\n\nGrosserer L.F.Foghts Fond\n\nToyota-Fonden\n\nMetro-Schrøder Fonden\n\nSolen er så rød mor\n\nFondstilsagn samles i to-tre årlige sager. Sagerne vedrører altid samme kalenderår. Seneste sag om\n\nFondstilsagn til Gammelgaard blev godkendt af kommunalbestyrelsen den 15. april 2026.\nSom bilag til sagen vedlægges et samlet økonomisk overblik over Gammelgaards fondsindtægter for\nhele 2026 (Bilag 1), og en samlet oversigt over modtagne fondstilsagn for 2026 (Bilag 2).\n\nLovgrundlag\nKommunalfuldmagten."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Varig ?\n\nToyota-Fonden\n\nNej\n\nKnud Højgaards Fond\n\nNej\n\nHoffmann og Husmans Fond\n\nNej\n\nGrosserer L.F.Foghts Fond\n\nNej\n\nToyota-Fonden\n\nNej\n\nMetro-Schrøder Fonden\n\nNej\n\nUdstillingsudgifter i alt\n\nNej\n\nI alt (Klassificering)\n\nNej\n\nGammelgaard har modtaget tilsagn om donationer på 180.000 kr. fra fem forskellige fonde.\nGammelgaard skal afholde 17,5% i fondsmoms af tilskud modtaget fra de private fonde.\nGammelgaard skal afholde fondsmoms af 180.000 kr., hvilket udgør 31.500 kr., som afholdes\ninden for det vedtagne rammebudget for Gammelgaard i 2026.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Kultur-, Idræts- og Fritidsudvalget, 23. november 2026, pkt. 104:\nAd 1.: Tiltrådt.\nAd 2.: Tiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-13": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-13",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 13,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Endelig vedtagelse af Lokalplan 34-1 for et område øst for Grønsvinget og nord for Vingetoften",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsen tiltrådte den 27. august 2026, at sende Forslag til lokalplan 34-1 for et\nområde øst for Grønsvinget og nord for Vingetoften i fire ugers høring."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat lokalplan 34-1 for et område øst for Grønsvinget og nord for Vingetoften vedtages."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Lokalplan 34-1 for et område øst for Grønsvinget og nord for Vingetoften, er et tillæg til lokalplan 34 af\nsamme navn. Tillægget regulerer alene muligheden for, at etablere fire fælles carporte og dertilhørende\nskure i området.\nLokalplan 34-1 regulerer carportenes omfang og placering, samt carportenes fremtræden som lette og\nensartet bebyggelser, der ikke skaber genskin til gene for områdets beboere.\nForslag til lokalplan 34-1 for et område øst for Grønsvinget og nord for Vingetoften har været i offentlig\nhøring fra den 10.september 2026-8. oktober 2026. I høringsperioden har der været afholdt borgermøde\nden 24. september.2026.\nDer er vedhæftet et notat med opsamling på borgermødet. Der er i høringsperioden indkommet ni\nhøringssvar til lokalplanen fra borgere, HOFOR og Vestforbrændingen.\nHvidbog med høringssvar samt forvaltningens behandling af høringssvarene er vedhæftet.\nHøringssvarene omhandler særligt gener fra genskin fra carportene samt højden på carportene, som af\nflere vurderes at være for høj.\nHøringssvarene har givet anledning til en enkelt ændring til lokalplanen. Ændringen er en præcisering af\nbestemmelsen omkring genskin og hvordan dette måles. Præciseringen fremgår af hvidbogen.\nLokalplan 34-1\nLokalplan 34-1 for et område øst for Grønsvinget og nord for Vingetoften er vedhæftet og kan tilgås i\nHerlev Kommunes digitale planportal DKplan:\nhttps://herlev.viewer.dkplan.niras.dk/DKplan/DKplan.aspx?LokalplanId=189\n\nSupplerende sagsfremstilling\nTil bestemmelse §6.13 tilføjes ”GU”, således at bestemmelsen lyder: ”For at begrænse refleksioner må\nmaterialer på carporte maksimalt have en glansværdi på 30 GU målt efter ISO 2813.” Da særlige forhold\ngør sig gældende omkring måling af refleksion fra gennemsigtige materialer, tilføjes desuden følgende\nbestemmelse: ”Transparente eller translucente materialer må kun anvendes mod særlig tilladelse ved\n\nkommunalbestyrelsen.\"\n\nLovgrundlag\nPlanloven."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Miljø-, Klima- og Teknikudvalget , 23. november 2026, pkt. 138:\nTiltrådt med 6 stemmer for (A, C, V, Ø) og 1 stemme imod (F).\nSF-Socialistisk Folkeparti (F) ønsker følgende stemmeforklaring:\nSF-Socialistisk Folkeparti (F) stemmer nej til forslag til lokalplan 34-1, da intentionen alene handler\nom at lovliggøre et ulovligt byggeri af carporte i det allerede opførte omfang og materialevalg. Hvis\nformålet havde været, at imødekomme en ansøgning om udskiftning af de tidligere carporte i træ\nmed nye carporte, i samme omfang og udført i træ og matchende de bagvedliggende boliger i\nfarvevalg, ville SF-Socialitisk Folkeparti (F) have stillet sig positivt."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-14": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-14",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 14,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Udmøntning af tildelte midler til Tandplejen i Budget 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Med afsæt i de tildelte midler på 0,1 mio. kr. i Budget 2026 til Tandplejen, under Børne-, Familieog Forebyggelsesudvalget, forelægges udvalget data sammen med initiativer, der styrker børn,\nunges og forældres fokus på tandsundhed og fremmøde til tandundersøgelser, understøtter gode\ntandplejevaner og bidrager til en mere bæredygtig udnyttelse af Tandplejens ressourcer. Midlerne\nforeslås målrettet den beskrevne informations- og motivationsindsats. Ved opbakning til\ninitiativerne forventes disse igangsat primo 2027, hvorfor de uforbrugte midler søges overført til\nbudgetår 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At iværksættelse af initiativer for de afsatte midler i Budget 2026 godkendes.\n2. At budgettet på 0,1 mio. kr. målrettet analyse i Tandplejen, perioderes fra 2026 til 2027."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "På mødet i juni 2026 blev udvalget præsenteret for data, der viser, at omfanget af udeblivelser og sene\nafbud til undersøgelser i Tandplejen stiger fra 15-årsalderen, hvor de unge gradvist overtager ansvaret\nfor selv at møde til aftaler. Der er begrænset viden om årsagerne til udviklingen, men en øget indsigt kan\nbidrage til at målrette indsatser, der understøtter fremmøde, rettidige afbud og gode tandplejevaner\nblandt børn og unge sammen med en bæredygtig udnyttelse af Tandplejens ressourcer.\nMed afsæt i de afsatte midler i Budget 2026 til Tandplejen forelægges udvalget data sammen med\ninitiativer, der styrker tandsundhed og fremmøde til tandundersøgelser blandt børn og unge og bidrager\ntil en mere bæredygtig udnyttelse af Tandplejens ressourcer.\nData belyser fremmødemønstre blandt 6-14-årige, 15-17-årige og 18-21-årige, herunder omfanget af\nudeblivelser og sene afbud (mindre end ét døgn før den aftalte tid) til tandundersøgelser.\nFokus er på tandundersøgelser, eksklusiv undersøgelser forbundet med tandregulering, da udeblivelser\nog afbud primært knytter sig til almindelige tandundersøgelser og ikke til undersøgelser i\ntandreguleringen og generelle tandbehandlinger. Data opgøres samlet for Tandplejens to kliniklokationer,\nda borgerne kan booke på begge lokationer.\nForebyggende og oplysende initiativer\nUdførte:\nKommunikation ud til borgerne: Tilpasning af brevskabeloner, så informationen om aftaler,\nforventninger og nødvendige handlinger i forbindelse med besøg i Tandplejen bliver lettere at\nforstå for borgerne.\nPlanlagte:\nInformations- og motivationsindsats: Udvikling af en målrettet informations- og motivationsindsats\n\nmed kampagnemateriale, f.eks. plakater, SoMe-opslag, foldere og anbefalinger til konkrete\nværktøjer, der styrker unges fokus på tandsundhed, fremmøde og rettidige afbud. Indsatsen\nkvalificeres gennem fokusgruppeinterviews med unge og forældre, herunder via det nyetablerede\nungeråd, for at skabe indsigt i årsager til udeblivelser og identificere tiltag, der kan understøtte\nfremmøde. Materialet kan desuden omfatte informationsmateriale til dagtilbud og skoler, som\nminder om at prioritere tandundersøgelser og tandsundhed.\nSamarbejde med Sundhedsplejen: Deltagelse på et af Sundhedsplejens temamøder for forældre til\nyngre børn med fokus på, hvordan forældre bedst kan understøtte deres børns og unges\ntandsundhed. Link til Tandplejens hjemmeside på Sundhedsplejens hjemmeside.\nSamarbejde med dagtilbud og skoler: Invitation sendes til dagtilbud og skoler om besøg fra\nTandplejen med fokus på at understøtte børn og unges tandsundhed gennem information og\nvejledning til elever og/eller forældre.\nUnder forudsætning af at der er opbakning til iværksættelse af ovennævnte initiativer, forventes disse at\nkunne påbegyndes primo 2027, hvorfor der ansøges om, at de uforbrugte midler givet til Tandplejen,\nunder Børne-, Familie- og Forebyggelsesudvalget, overføres fra budgetår 2026 til budgetår 2027.\n\nLovgrundlag\nIkke lovbestemt intern tilrettelæggelse af kommunens opgaver."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Beløb i 1.000 kr.\n\nVarig?\n\nTandplejen\n\nI alt\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Børne-, Familie- og Forebyggelsesudvalget, 24. november 2026, pkt. 117:\nAd 1.: Tiltrådt.\nAd 2.: Tiltrådt.\nPræsentation er vedhæftet.\n\nNej"
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-15": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-15",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 15,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Pejlemærker for beskæftigelsesindsatsen i Herlev Kommune",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forvaltningen præsenterer forslag til pejlemærker for beskæftigelsesindsatsen i Herlev Kommune."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat forslag til pejlemærker for beskæftigelsesindsatsen godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Pejlemærkerne for beskæftigelsesindsatsen i Herlev Kommune skal bidrage til at sætte retning og skabe\net fælles fokus på de resultater, kommunen ønsker at opnå. Pejlemærkerne fungerer som et styrings- og\nudviklingsredskab, der understøtter den løbende prioritering af indsatser og ressourcer på\nbeskæftigelsesområdet.\nPejlemærkerne tager afsæt i den resultatopfølgning, som udarbejdes af Styrelsen for Arbejdsmarked og\nRekruttering (STAR), samt lokale ambitioner i Herlev Kommune.\nFor de pejlemærker, der tager afsæt i STARs resultatopfølning, er det ikke alle målingerne, som er\noffentliggjort endnu.\nPejlemærkerne gælder for 2027 og 2028 og skal herefter revideres i Beskæftigelses-, Social-, Handicapog Psykiatriudvalget.\nPejlemærkerne fordeler sig under følgende overskrifter:\n1. Andel borgere på offentlig forsørgelse\n2. Andel unge over 18 år på kontanthjælp\n3. Afgang til job og uddannelse seks måneder efter nyledighed\n4. Deltidsarbejde og småjobs for borgere længere fra arbejdsmarkedet\n5. Varig tilknytning til arbejdsmarkedet (ikke offentliggjort endnu)\n6. Virksomhedstilfredshed (ikke offentliggjort endnu)\n7. Borgertilfredshed (ikke offentliggjort endnu)\nPejlemærker for beskæftigelsesindsatsen er vedhæftet som bilag.\nMed budgetaftalen 2026 blev der afsat midler til en hensigtsmæssig implementering af\nbeskæftigelsesreformen herunder fastholdelse af de effektfulde indsatser for unge og sygemeldte\nborgere. Udviklingen for disse målgrupper kan følges i pejlemærke 1 og 2.\n\nLovgrundlag\nIkke lovbestemt intern tilrettelæggelse af kommunens opgaver."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Beskæftigelses-, Social-, Handicap- og Psykiatriudvalget, 25. november 2026,\nAfbud:\nJeannet Lauenborg (C)\nTiltrådt med bemærkningen om, at pejlemærkerne justeres, når der kommer nye meldinger fra\nstaten.\nDer indføjes nye pejlemærker løbende, når de kommer fra Star.\nPejlemærkerne opdateres hvert andet år."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-16": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-16",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 16,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Endelig vedtagelse af Lokalplan 142 for Herlev Kro",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kommunalbestyrelsen tiltrådte den 27. august 2026, at sende forslag til Lokalplan 142 for Herlev\nKro i fire ugers offentlig høring. Lokalplan 142 for Herlev Kro forelægges nu til endelig vedtagelse."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat Lokalplan 142 for Herlev Kro vedtages."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Lokalplanen har til formål, at sikre den gamle krobygning på Herlev Torv og fastholde bygningens\nbevaringsværdige træk. Lokalplanen fastlægger områdets anvendelse til hotel-, restaurant- og caféformål\nsamt giver mulighed for indretning af gårdhave med udeservering. Det eksisterende etageareal,\nbygningsomfang og bygningshøjder fastholdes.\nLokalplanen erstatter samtidig de bebyggelsesregulerende bestemmelser i den servitut, som Økonomiog Planlægningsudvalget godkendte den 3. december 2025. Servitutten kan aflyses efter lokalplanens\nendelige vedtagelse.\nForslag til Lokalplan 142 for Herlev Kro har været fremlagt i offentlig høring i perioden fra den 10.\nseptember 2026 til den 8. oktober 2026.\nI høringsperioden er der indkommet ét høringssvar fra Vestforbrænding I/S, som oplyser, at de ikke har\nbemærkninger til lokalplanen. Der er således ikke indkommet bemærkninger, som giver anledning til\nændringer af lokalplanen.\nLokalplan 142 for Herlev Kro er vedhæftet og kan tilgås via Herlev Kommunes digitale planportal i\nDKplan.\n\nLovgrundlag\nPlanloven."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nKommunalbetyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Miljø-, Klima- og Teknikudvalget , 23. november 2026, pkt. 139:\nTiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-17": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-17",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 17,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Udbud af indsamling af mad- og restaffald samt miljøbokse og vask af beholdere",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Kontrakten for indsamling af madaffald, restaffald og miljøbokse samt vask af beholdere udløber i\nseptember 2027 og skal genudbydes. Kommunalbestyrelsen skal derfor fastlægge kontraktperiode\nog tildelingskriterier, samt orienteres om de væsentligste mindstekrav i forhold til den gældende\nkontrakt."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At kontrakten tildeles ud fra det bedste forhold mellem pris og kvalitet, hvor pris vægter 40%,\nklima 30% og kvalitet i opgaveløsningen 30%.\n2. At kontrakten udbydes med en løbetid på fire år, med mulighed for forlængelse af to gange ét\når.\n3. At orienteringen om de væsentligste mindstekrav og ændringer i udbudsmaterialet tages til\nefterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udbud af kontrakt for indsamling af husholdningsaffald og vask af beholdere tager afsæt i Herlev\nKommunes indkøbs- og udbudsstrategi 2024, samt kommunalbestyrelsens beslutning af den 7. oktober\n2026 om serviceniveauet for indsamling af mad- og restaffald.\nDet foreslås, at tilbuddene vurderes efter det bedste forhold mellem pris og kvalitet, hvor pris vægter\n40%, og klima samt kvalitet i opgaveløsningen hver vægter 30%.\nForvaltningen vurderer, at klima med fordel kan vægtes tungere end indkøbs- og udbudsstrategiens\nudgangspunkt på 20%, uden at gå på kompromis med pris og kvalitet, for at understøtte en mere\nklimavenlig indsamling.\nEvalueringsmodel\nTilbuddene evalueres på en skala fra 0 til 10 point. Den laveste tilbudspris tildeles 10 point, mens de\nøvrige priser tildeles point efter, hvor langt de forholdsmæssigt ligger fra den bedste pris. Klima og\nkvalitet i opgaveløsningen vurderes på grundlag af tilbudsgivernes beskrivelser og dokumentation. Da\nden laveste pris altid opnår 10 point, mens de kvalitative parametre ikke nødvendigvis opnår\nmaksimumpoint, vil prisen reelt have stor betydning for resultatet på trods af vægtningen på 40%.\nKontraktperiode\nKontraktperioden foreslås tilpasset kontrakten for de genanvendelige fraktioner, så fremtidige udbud kan\nsamles og skabe synergi i drift og materiel. På den baggrund anbefaler forvaltningen, at kontrakten\nudbydes med en løbetid på fire år, med mulighed for forlængelse af to gange ét år.\nTildelingskriteriet Klima\nKlima vurderes på andelen af tømninger med eldrevne indsamlingsbiler fra kontraktstart. Der stilles krav\n\nom eldrevne indsamlingsbiler senest 12 måneder efter kontraktstart, og der lægges desuden vægt på\nanvendelse af vedvarende el og relevante bæredygtighedscertificeringer.\nTildelingskriteriet Kvalitet i opgaveløsningen\nVed vurderingen af kvalitet i opgaveløsningen foreslås, at der lægges vægt på følgende:\nDriftssikkerhed: Tilbudsgiverens evne til at opretholde indsamlingen under vanskelige driftsforhold,\nherunder længerevarende vintervejr og planlagte gravearbejder, f.eks. fjernvarmearbejde.\nBeredskabsplan: Tilbudsgiverens evne til at sikre fortsat affaldsindsamling ved forsyningssvigt,\ncyberangreb og øvrige driftsforstyrrelser, herunder håndtering af kritiske adresser som plejehjem.\nMindstekrav og ændringer\nDet vedhæftede baggrundsnotat beskriver de væsentligste mindstekrav og ændringer i forhold til den\nnuværende kontrakt. Udbudsmaterialet tilpasses kommunalbestyrelsens beslutning af 7. oktober 2026\nom serviceniveauet, herunder vask af beholdere, sommertømning og tømning af nedgravede beholdere.\nFrivillig sommertømning indarbejdes som en option med særskilt prissætning.\nProces og tidsplan\nUdbuddet behandles politisk i efteråret 2026 og forventes offentliggjort i december 2026. Kontrakten\nforventes indgået i marts 2027 efter gennemført udbudsproces og politisk orientering. Herefter følger\nimplementering frem mod kontraktstart den 1. oktober 2027.\n\nLovgrundlag\nEfter affaldsbekendtgørelsens §§ 19, 26 og 32 skal kommunalbestyrelsen etablere kommunale\naffaldsordninger, herunder henteordninger for særskilt indsamling af madaffald, restaffald og farligt affald.\nKontrakten udbydes som et offentligt udbud i henhold til udbudsloven."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Affaldsområdet er gebyrfinansieret og skal over en årrække hvile i sig selv. Kommunens\nomkostninger til indsamlingen afspejles derfor i affaldsgebyrernes størrelse. De endelige priser for\nindsamlingen kendes først, når udbuddet er gennemført. Kommunalbestyrelsen forventes\norienteret om resultatet i marts 2027.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Miljø-, Klima- og Teknikudvalget , 23. november 2026, pkt. 135:\nAd 1.: Tiltrådt.\nAd 2.: Tiltrådt.\nAd 3.: Taget til efterretning."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-18": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-18",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 18,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Børnesagsbarometret 2026",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Børnesagsbarometer 2026 blev offentliggjort den 22. oktober 2026 og er udarbejdet med henblik\npå at give et landsdækkende billede af den juridiske kvalitet i kommunernes sagsbehandling på\nbørne- og ungeområdet efter bestemmelserne i barnets lov. Der orienteres om resultaterne af\nBørnesagsbarometret 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat orientering om resultaterne af Børnesagsbarometret 2026 tages til efterretning."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ankestyrelsen gennemgår årligt på vegne af Socialministeriet kommunernes sager på området for børnog unge i udsatte positioner for at vurdere overholdelsen af udvalgte lovkrav. Fra 2026 er\nBørnesagsbarometret omlagt til en fast årlig model, hvor alle kommuner vurderes hvert år efter barnets\nlov, med fokus på hele sagsforløbet frem for enkeltstående afgørelser.\nUndersøgelsesmetode\nBørnesagsbarometret 2026 omfatter 385 ikke-påklagede sager fra alle kommuner, heraf 296 oprettet på\nbaggrund af underretninger. Den juridiske kvalitet er vurderet efter barnets lovs kapitel 3, 4, 5, 9 og 10\nmed fokus på underretninger, screening, afdækning/børnefaglig undersøgelse, indsatser, planer og\nopfølgning.\nFor Herlev Kommune indgår to sager oprettet på baggrund af underretninger.\nUndersøgelsen omfatter sagens opstart og de efterfølgende seks til otte måneder. Kun sager oprettet\neller genåbnet efter den 1. november 2024 og fortsat åbne ved Ankestyrelsens sagsindkaldelse indgår,\nog vurderingerne bygger udelukkende på indsendt dokumentation.\nUndersøgelsens resultater\nResultaterne viser landsdækkende tendenser og kan ikke bruges til at vurdere den enkelte kommune,\nligesom der for den enkelte kommune ej heller er mulighed for en yderligere uddybning af vurderingerne i\nde enkelte sager.\nUndersøgelsen viser, at kommunerne generelt overholder centrale lovkrav ved underretninger og\nscreening. På landsplan overholdes 24-timersfristen i 93 % af sagerne og screeningskravet i 88 %. I 96\n% af overgrebssagerne er der enten afholdt en børnesamtale eller givet en begrundet faglig forklaring på,\nhvorfor samtalen ikke er gennemført. Samtidig iværksættes en tredjedel af indsatserne under\nudredningen, hvilket reducerer ventetiden fra ca. seks til tre måneder.\nUndersøgelsen peger samtidig på udfordringer med lange sagsbehandlingstider, forsinkede afdækninger\nog børnefaglige undersøgelser, manglende rettidig opfølgning, utilstrækkelig anvendelse af barnets\n\nplan/ungeplan samt begrænset børneinddragelse. Der går i gennemsnit 49 dage fra underretning til\nscreening og faglig vurdering, og i 14 % af sagerne er der ikke registreret direkte kontakt med barnet.\nAnkestyrelsen har anmodet kommunerne om senest den 8. januar 2027 at orientere om opfølgningen på\nresultaterne via et digitalt spørgeskema.\nBørne-, Familie- og Forebyggelsesudvalget orienteres november 2026 om de opfølgende indsatser, som\nvurderes relevante på baggrund af undersøgelsens resultater.\nResultaterne fra Børnesagsbarometret 2026 er vedhæftet.\n\nLovgrundlag\nRetssikkerhedslovens § 79 a, stk. 1, om politisk behandling af undersøgelsens resultater samt § 79 a,\nstk. 2, om Ankestyrelsens mulighed for at anmode om orientering om kommunens behandling og\neventuelle opfølgende foranstaltninger."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Sagen medfører ikke bevillingsmæssige ændringer.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Børne-, Familie- og Forebyggelsesudvalget, 24. november 2026, pkt. 118:\nTaget til efterretning.\nPræsentation er vedhæftet."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-19": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-19",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 19,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Frigivelse og omdisponering af anlægsmidler til køkken i dagtilbuddet Herlevgård/Solsikken",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I budget 2026 er der afsat 1,7 mio. kr. til Køkken i dagtilbuddet Herlevgård/Solsikken. Heraf udestår\nprioritering og frigivelse af 0,75 mio. kr.\nProjektet vedrørende Køkken til Herlevgård/Solsikken blev godkendt den 15. januar 2025 med\nhenblik på etablering af et fælles køkken. Efter opdelingen af Herlevgård/Solsikken i to dagtilbud\nsom følge af budgetaftalen for 2026 foreslår forvaltningen, at midlerne i stedet anvendes til\nkøkkenfaciliteter på dagtilbudsområdet generelt, herunder i første omgang til køkkenet i\nDagtilbuddet Edison."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At 0,75 mio. kr. af anlægsbevillingen til ’Køkken Herlevgård/Solsikken 2026’ prioriteres og\nfrigives til en gennemførelse af de prioriterede formål, jævnfør tabel i økonomiafsnittet.\n2. At den samlede anlægsbevilling på 1,7 mio. kr. omprioriteres til ’generelle køkkenfaciliteter på\ndagtilbudsområdet’, og at projektet skifter navn til dette formål.\n3. At rådgiver- og entreprenørarbejderne udbydes i henhold til Tilbudslovens regler med\ntildelingskriteriet ”økonomisk mest fordelagtige bud” efter delkriterierne: Pris, kvalitet, og\nbæredygtighed.\n4. At forvaltningen bemyndiges til at indgå og administrere kontrakterne med de vindende\ntilbudsgivere."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "I budget 2026 er der afsat 1,7 mio. kr. i anlægsmidler til Køkken i dagtilbuddet Herlevgård/Solsikken.\nHeraf er der prioriteret og frigivet 0,95 mio. kr. af kommunalbestyrelsen den 15. januar 2025. Der udestår\nderfor prioritering og frigivelse af de resterende 0,75 mio. kr. i budget 2026."
+    },
+    {
+     "titel": "Baggrund",
+     "tekst": "Oprindeligt besluttede kommunalbestyrelsen den 15. januar 2025, at bevillingen til Køkken\nHerlevgård/Solsikken skulle anvendes til ombygning og etablering af et fælles produktionskøkken i det\ndaværende dagtilbud som erstatning for tre mindre køkkener.\nI 2026 blev dagtilbuddet opdelt i to i henhold til budgetaftalen for budget 2026 for at ’styrke ledelsen i\ndagtilbud med flere lokationer’. Idet det oprindelige formål ikke længere kan realiseres, er projektet ikke\nigangsat i 2026. De tre små køkkener er lovlige ud fra bygningsreglementet ved opførslen af det\ndaværende dagtilbud. Derfor anbefales det at omprioritere midlerne til køkkenfaciliteter generelt på\ndagtilbudsområdet, først og fremmest i Dagtilbuddet Edison.\nKøkkenfaciliteter til dagtilbuddet Edison\nDagtilbuddet Edison ligger i lejede lokaler i det sydlige Herlev. Der er et anretterkøkken, hvor der i dag\n\nproduceres mad til ca. 150 børn, hvorfor der er behov for at investere i større og bedre køkkeninventar.\nHelt konkret en industriovn, en fastmonteret større industrirøremaskine, et ekstra køleskab og en\nstålkøkkenbordplade. Det vil også være tilrådeligt at udvide køkkenet, og dermed kunne etablere flere\nkøkkenbordflader, emhætte mv.\nVed godkendelse af denne sag vil forvaltningen gå i dialog med udlejer om muligheder, vilkår for samt\ngodkendelse af ombygningen af køkkenet. Udkast til forslag til køkkenudvidelse og indretning set i\nforhold til eksisterende køkken er vedhæftet i bilag.\nKøkkenfaciliteter generelt\nMange dagtilbud har behov for forbedrede køkkenfaciliteter, men behovene og de bygningsmæssige\nmuligheder varierer. Da flere dagtilbud i Herlev Kommune har eller forventes at få et stigende børnetal,\nanbefaler forvaltningen, at eventuelle resterende midler anvendes til opgradering af køkkenfaciliteter i\nprioriterede dagtilbud. Prioriteringen sker i dialog med ledelsen på dagtilbudsområdet.\nTidsplan for udmøntning af anlægsmidlerne\nDen forventede tidsplan for udmøntning af midlerne er som følgende:\nIndkøb af hårde hvidevare til produktionskøkken i 2026.\nAftale og godkendelse fra udlejer.\nProjektering, byggesagsbehandling, og tilbudsindhentning 2027.\nUdførsel.\n\nSupplerende sagsfremstilling\nBeløbet til projektledelse omfatter projektledelse og rådgivning i forbindelse med projektering, ombygning\nog indretning af køkkener på dagtilbudsområdet, herunder fagspecifik certificeret rådgivning vedrørende\nbrand, el og ventilation mv.\nDer har ikke i de tidligere frigivelsessager på dagtilbudsområdet i 2026 været afsat særskilte midler til\nprojektledelse.\n\nLovgrundlag\nTilbudsloven og udbudsloven."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "I budget 2026 er der afsat 1,7 mio. kr. i anlægsmidler til ’Køkken Herlevgård/Solsikken’. Heraf er\nder prioriteret og frigivet 0,95 mio. kr. af kommunalbestyrelsen den 15. januar 2025.\nDer udestår derfor prioritering og frigivelse af de resterende 0,75 mio. kr. i budget 2026.\nForvaltningen foreslår nedenstående prioritering af den samlede anlægsbevilling på 1,7 mio. kr.\nProjekt\nIndkøb af køkkeninventar, indretning af køkkener samt\neventuelt projektering og ombygning af køkkener på\ndagtilbudsområdet generelt, samt andre afledte\nudgifter\n\nI mio. kr.\n\nProjektledelse\n\nI alt\n\nForvaltningen anbefaler, at den samlede anlægsbevilling dermed omprioriteres til formålet\n’generelle køkkenfaciliteter på dagtilbudsområdet’ 2026.\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Børne-, Familie- og Forebyggelsesudvalget, 24. november 2026, pkt. 121:\nAd 1.: Tiltrådt med 6 stemmer for (F. I, A, C og Ø). 1 undlod at stemme (V).\nAd 2.: Tiltrådt med 6 stemmer for (F. I, A, C og Ø). 1 undlod at stemme (V).\nAd 3.: Tiltrådt med 6 stemmer for (F. I, A, C og Ø). 1 undlod at stemme (V).\nAd 4.: Tiltrådt med 6 stemmer for (F. I, A, C og Ø). 1 undlod at stemme (V).\nUdvalget bemærker, at beløbet til projektledelse er højt set i forhold til projektets størrelse og\nønsker en specifikation af projektledelsen i den videre behandling af sagen."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-20": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-20",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 20,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Organisering af modtageområdet for nyankomne elever",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Forvaltningen foreslår, at modtageklasserne M2 (mellemtrin) og M3 (udskoling) på Lindehøjskolen\netableres permanent som Herlev Kommunes modtagetilbud til nyankomne elever med behov for\ndansk som andetsprog.\nForslaget skal sikre et stabilt og fagligt stærkt undervisningstilbud til målgruppen, understøtte\nelevernes deltagelse i skolernes fællesskaber og bidrage til en hensigtsmæssig\nkapacitetsudnyttelse på tværs af kommunens skoler.\nSamtidig foreslås det, at kompetencen til at godkende op til 15 elever i en modtageklasse\ndelegeres til forvaltningen, samt at udgifterne til de to modtagerklasser i 2027/2028 og frem\nfinansieres som hidtil, indenfor skolernes samlede budegetramme."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\n1. At modtageklasserne M2 og M3 etableres permanent som Herlev Kommunes modtagetilbud til\nnyankomne elever.\n2. At kompetencen til at godkende op til 15 elever i en modtageklasse delegeres til forvaltningen.\n3. At udgifterne til de to modtagerklasserene i skoleåret 2027/2028 og frem finansieres af\nskolerne, fordelt efter antal almen klasser på skolerne."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Herlev Kommune oplever fortsat tilflytning af børn og unge med behov for dansk som andetsprog.\nForvaltningen vurderer derfor, at der er behov for en permanent organisering af modtageområdet, som\nbåde sikrer høj faglig kvalitet, understøtter elevernes deltagelse i skolernes fællesskaber og bidrager til\nen hensigtsmæssig kapacitetsudnyttelse på tværs af kommunens skoler.\nModtageklasserne på Lindehøjskolen blev oprindeligt etableret som en midlertidig løsning. Erfaringerne\nviser, at tilbuddet giver eleverne et målrettet sprogligt og fagligt løft og understøtter en gradvis overgang\ntil almenundervisningen. Samtidig har Lindehøjskolen gennem de seneste år opbygget erfaring og\nkompetencer inden for undervisning af nyankomne elever og dansk som andetsprog.\nForvaltningen vurderer derfor, at der er behov for et permanent modtagetilbud, som kan understøtte både\nde aktuelle og de forventede fremtidige behov.\nModtagetilbuddet\nMålgruppen er nyankomne elever, som ikke har tilstrækkelige dansksproglige kompetencer til at deltage\nfuldt ud i almenundervisningen.\nModtagetilbuddet omfatter ikke indskolingen. Forvaltningen vurderer, at de yngste elever som\nudgangspunkt har bedst af at gå i skole i deres nærmiljø og blive en del af distriktsskolens fællesskab fra\n\nstarten. Samtidig viser erfaringerne, at yngre børn ofte tilegner sig dansk hurtigt gennem deltagelse i\nskole og fritidsliv. Indskolingselever med behov for dansk som andetsprog understøttes derfor som\nudgangspunkt på distriktsskolen gennem basisdansk og øvrige DSA-indsatser.\nUndervisningen i modtageklasserne tilrettelægges med fokus på elevernes sproglige udvikling, faglige\nprogression og deltagelse i skolens fællesskaber. Som led i indsatsen arbejdes der systematisk med\nbrobygning til almenområdet, så eleverne gradvist kan deltage i undervisning og aktiviteter i deres\nkommende stamklasse.\nNyankomne elever kan modtage støtte gennem forskellige indsatser afhængigt af deres behov.\nModtageklasser er for elever, der har behov for et intensivt forløb i dansk som andetsprog, før de kan\ndeltage fuldt ud i almenundervisningen. Herudover tilbyder alle skolerne undervisning i dansk som\nandetsprog i form af basisdansk og supplerende dansk til elever, der går i en almenklasse, men fortsat\nhar behov for sproglig understøttelse. Elever kan være indskrevet i en modtageklasse i op til to år,\nhvorefter undervisningen fortsætter i almenklassen med den nødvendige støtte i dansk som andetsprog\nErfaringerne viser samtidig, at en betydelig del af eleverne i modtagerklasserne efterfølgende fortsætter\nderes skolegang på Lindehøjskolen.\nKlassestørrelse\nEfter folkeskolelovens regler kan en modtageklasse som udgangspunkt have op til 12 elever ved\nskoleårets begyndelse. Kommunalbestyrelsen kan godkende op til 15 elever, hvis det vurderes\npædagogisk forsvarligt. Forvaltningen foreslår, at denne kompetence delegeres til forvaltningen, så\nvurderingen kan foretages tæt på praksis, på baggrund af den konkrete elevgruppes sammensætning og\nud fra en konkret pædagogisk vurdering.\nDa undervisningen organiseres med løbende brobygning til almenområdet, vil eleverne ofte deltage en\ndel af undervisningstiden i deres stamklasse. Forvaltningen vurderer derfor, at det i relevante tilfælde vil\nvære pædagogisk forsvarligt at godkende op til 15 elever i en modtageklasse.\n\nLovgrundlag\nFolkeskolelovens § 5 samt reglerne om undervisning i dansk som andetsprog for nyankomne elever."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Modtagerklasserne på Lindehøjskolen er normeret med 1,0 lærerårsværk og 0,5 pædagogårsværk\nhver i skoleåret 2026/2027. De to klasser, M2 og M3, er normeret med i alt 2,0 lærerårsværk og\n1,0 pædagogårsværk.\nTabellen viser udgiften og finansieringen i 2027 priser, hvis Skole- og Uddannelsesudvalget\nbeslutter at forlænge modtagerklasserne fra skoleåret 2027/2028 og frem.\nSkole- og Uddannelsesudvalget besluttede på møde den 26. marts 2026 at udgifterne til de to\nmodtagerklasser i skoleåret 2026/2027 blev finansieret af skolerne, fordelt efter antal almen klasser\npå skolerne.\n\nVarig\n\nModtagerklasser (M2 & M3)\n\nJa\n\nEngskolen\n\nJa\n\nElverhøjens skole\n\nJa\n\nKlausdalskolen\n\nJa\n\nBirkholmskolen\n\nJa\n\nLindehøjskolen\n\nJa\n\nI alt\n\nBeslutningskompetence\nKommunalbestyrelsen"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Beslutning fra Skole- og Uddannelsesudvalget, 24. november 2026, pkt. 104:\nAd 1.: Tiltrådt.\nAd 2.: Tiltrådt.\nAd 3.: Tiltrådt."
+    }
+   ],
+   "bilag": []
+  },
+  "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-22": {
+   "id": "herlev-2026-12-02-oekonomi-og-planlaegningsudvalget-22",
+   "kommune": "Herlev",
+   "udvalg": "Økonomi- og Planlægningsudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 22,
+   "kilde": "https://dagsordener.herlev.dk/vis?id=98f2475b-061e-419d-83ea-1f0de04a3f61",
+   "hentet": "2026-11-27T14:05:19.597Z",
+   "titel": "Godkendelse af det digitale underskriftsblad",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Digitalt underskriftsblad."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "FORVALTNINGEN INDSTILLER,\nat protokol underskrives digitalt."
+    }
+   ],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=e38e1585-c776-416f-9e73-c04884c7f96f": {
    "senest": "2026-01-02",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=a6a32a98-346f-48cd-a2bc-6d12ebf51adc": {
    "senest": "2025-09-27",
    "tjekket": "2026-11-20"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=23ddc951-1931-42f1-b6bf-deecd020d942": {
-   "senest": "2026-11-04",
-   "tjekket": "2026-11-26"
+   "senest": "2026-11-27",
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=06a919c8-dc47-4af2-befc-9703a150588b": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=4529f1b2-a7b1-4234-b03d-7568db10115a": {
    "senest": "2025-09-27",
@@ -12572,27 +13284,27 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=71a366db-8b2d-40c5-83d9-cd6fbd336de7": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=b3b91831-d1aa-4c7a-8836-6548a014d889": {
    "senest": "2025-12-19",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=8b4423d3-50bb-4372-926d-1d402b684681": {
    "senest": "2026-11-23",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=b7aa1b30-8c64-4062-978c-6be27bbf265a": {
    "senest": "2023-09-27",
    "tjekket": "2026-11-20"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=1c6bd53f-3bc8-4093-bf8a-c0579618a49d": {
-   "senest": "2026-11-25",
-   "tjekket": "2026-11-26"
+   "senest": "2026-11-27",
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=91028251-d0fe-4388-a7b7-baec47ea5f1f": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=2c8c01e0-6ac9-4584-a7c8-d0a6ca371f54": {
    "senest": "2025-09-27",
@@ -12600,7 +13312,7 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=13c19c90-c017-47d5-954e-9d666da39b2c": {
    "senest": "2026-01-12",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=1080b6b9-7515-45ff-a161-1789c29a025d": {
    "senest": "2025-09-27",
@@ -12608,15 +13320,15 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=c63f62ef-6ecc-4b1c-bbbd-d0b0a4981e1a": {
    "senest": "2026-11-17",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=7b7b79e1-bbb0-4daf-928d-30b8782dddd9": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=f1bce4e7-f7ba-4a06-b567-c5156bfe6e3e": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=b3f91f1c-6fe4-4124-b0df-97d7beb1e2fc": {
    "senest": "2025-09-27",
@@ -12624,15 +13336,15 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=d8fd5681-fa50-49fc-a585-2e70f1ef4117": {
    "senest": "2026-11-26",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=cdd4ac8b-da1c-49a6-8e35-de587388ef96": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=5fc6c5f1-d2f2-40bb-a02f-d32059a45ac3": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=8201c66e-49d3-4011-b13e-8bad1644534f": {
    "senest": "2025-09-27",
@@ -12640,7 +13352,7 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=80667a57-b4fd-48b6-8fb6-5888df8d0e44": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=84d4d77c-85c3-48b1-97bf-c0042444fa4d": {
    "senest": "2025-09-27",
@@ -12648,11 +13360,11 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=9cb5e30d-a96c-4740-be95-47b21055e894": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=cfd184ee-bf0a-40a5-bfab-08766ec4c23b": {
    "senest": "2026-01-19",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=118702ea-36dd-4904-8ba9-723606e95f1f": {
    "senest": "2025-09-27",
@@ -12664,15 +13376,15 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=d174af7c-3261-4914-844c-032d50663510": {
    "senest": "2026-11-04",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=153fa26b-fcf9-4c65-8d3c-d616399bafaa": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=848c1fe0-8ae2-4c81-8df5-0725d915e70e": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=12ff61ab-ac72-4e69-b00b-91c9792ffbfc": {
    "senest": "2025-09-27",
@@ -12680,15 +13392,15 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=ee2e9680-0939-4940-b519-e1d6370e9d9d": {
    "senest": "2026-11-12",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=0d1d5448-c991-487c-94ba-63e574537922": {
-   "senest": "2026-11-18",
-   "tjekket": "2026-11-26"
+   "senest": "2026-11-27",
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=15f8a141-3520-4df9-aaaa-2cc3f3e5db3d": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=83c06764-c14a-411c-a073-654d125d35cb": {
    "senest": "2025-09-27",
@@ -12700,23 +13412,23 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=f2129625-82f0-41fc-8d50-91b97fcdd1cd": {
    "senest": "2026-11-24",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=4d1a8ac4-24e4-400b-9069-eb51a6b0c6e0": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=540c440e-c1bb-4c11-be2b-815f3280638b": {
    "senest": "2026-11-26",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=ca9ca150-be9d-4e5d-aec5-25cc14a4f53f": {
    "senest": "2026-01-15",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=02111b59-b864-4d58-b471-da5ecd208d95": {
    "senest": "2026-01-19",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=352f849d-bfb9-4b7b-b6f3-45c9781361c8": {
    "senest": "2025-09-27",
@@ -12724,7 +13436,7 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=cce909f1-c815-4322-8103-ef006b3c2eba": {
    "senest": "2026-01-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=fd0b2638-9db3-4c66-8dd8-0a5ba7c7fa9f": {
    "senest": "2025-09-27",
@@ -12732,14 +13444,14 @@
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=8fc22f9c-bced-4309-b76d-1c0ecaf12788": {
    "senest": "2026-01-12",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.herlev.dk/Sitemap/ForCommittee?committeeId=d3e9c6b4-6dda-4d1d-9e95-ca53dde48b08": {
    "senest": "2025-09-27",
    "tjekket": "2026-11-20"
   }
  },
- "opdateret": "2026-11-26T23:17:58.657Z",
+ "opdateret": "2026-11-27T14:05:34.977Z",
  "kommune": "Herlev",
  "parser": 3
 }

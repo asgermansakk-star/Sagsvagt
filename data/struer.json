@@ -471,6 +471,38 @@
    "dato": "2026-12-01",
    "punkter": 5,
    "parser": 3
+  },
+  "99148a78-b2aa-40b6-a2b8-4653bc5bda57": {
+   "lastmod": "2026-11-27",
+   "type": "dagsorden",
+   "udvalg": "Ældre- og sundhedsudvalget",
+   "dato": "2026-12-03",
+   "punkter": 7,
+   "parser": 3
+  },
+  "6bf420cc-c99b-4e25-8c24-fce72fc29a6b": {
+   "lastmod": "2026-11-27",
+   "type": "dagsorden",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "punkter": 9,
+   "parser": 3
+  },
+  "1943117e-565f-4a19-ada6-ad8275e95da8": {
+   "lastmod": "2026-11-27",
+   "type": "dagsorden",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "punkter": 8,
+   "parser": 3
+  },
+  "1c9e0cab-3d91-4757-8805-5db6b06bb70c": {
+   "lastmod": "2026-11-27",
+   "type": "referat",
+   "udvalg": "Seniorråd",
+   "dato": "2026-11-24",
+   "punkter": 5,
+   "parser": 3
   }
  },
  "sager": {
@@ -8451,12 +8483,21 @@
    "kommune": "Struer",
    "udvalg": "Seniorråd",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 1,
-   "kilde": "https://dagsordener.struer.dk/vis?id=f70b33f4-b280-4cbb-8ec8-cee748dd097b",
-   "hentet": "2026-11-19T13:32:46.114Z",
+   "kilde": "https://dagsordener.struer.dk/vis?id=1c9e0cab-3d91-4757-8805-5db6b06bb70c",
+   "hentet": "2026-11-27T14:12:13.572Z",
    "titel": "Godkendelse af dagsorden",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "at dagsorden godkendes."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Dagsorden godkendt."
+    }
+   ],
    "bilag": []
   },
   "struer-2026-11-24-seniorraad-3": {
@@ -8464,15 +8505,19 @@
    "kommune": "Struer",
    "udvalg": "Seniorråd",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 3,
-   "kilde": "https://dagsordener.struer.dk/vis?id=f70b33f4-b280-4cbb-8ec8-cee748dd097b",
-   "hentet": "2026-11-19T13:32:46.114Z",
+   "kilde": "https://dagsordener.struer.dk/vis?id=1c9e0cab-3d91-4757-8805-5db6b06bb70c",
+   "hentet": "2026-11-27T14:12:13.572Z",
    "titel": "Nyt fra Centerchefen",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Orientering fra Ældre- og Sundhedsudvalgets møde den 10.november\nDigital understøttet træning\nSensorteknologi i plejeboliger\nStatus på Sundhedsreformen\nOrganisering af den kommunale sygepleje\nOrientering om seneste undersøgelse omkring tilfredshed på ældreområdet"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Orientering fra centerchefen\nCenterchefen orienterede om følgende:\nDigitalt understøttet træning:\nDer blev orienteret om digitalt understøttet træning via appen ExorLive Go.\nPræsentationen vedlægges som bilag.\nSensorteknologi i plejeboliger:\nÆldre- og Sundhedsudvalget har godkendt implementering af Teton på Enggård Centret\nog Solvang.\nStatus på sundhedsreformen:\nDer blev orienteret om, at følgende områder overgår til regionen pr. 1. januar:\nMidlertidige pladser\nAkutsygepleje\nPatientrettet forebyggelse\nSpecialiseret rehabilitering\nOrganisering af den kommunale sygepleje:\nDen kommunale sygepleje, som hidtil har været fordelt på tre områder, samles\nfremadrettet med fælles base. Sygeplejen vil fortsat køre ud i områderne og indgå i de\nlokale teams.\nTilfredshedsundersøgelse på ældreområdet:\nDer blev orienteret om den seneste undersøgelse af tilfredsheden på ældreområdet.\nUndersøgelsen gennemføres i 2027 blandt både borgere, der modtager hjemmepleje i\neget hjem, og borgere på plejehjem."
     }
    ],
    "bilag": []
@@ -8482,15 +8527,19 @@
    "kommune": "Struer",
    "udvalg": "Seniorråd",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 4,
-   "kilde": "https://dagsordener.struer.dk/vis?id=f70b33f4-b280-4cbb-8ec8-cee748dd097b",
-   "hentet": "2026-11-19T13:32:46.114Z",
+   "kilde": "https://dagsordener.struer.dk/vis?id=1c9e0cab-3d91-4757-8805-5db6b06bb70c",
+   "hentet": "2026-11-27T14:12:13.572Z",
    "titel": "Orientering: Ældretilsyn Svalegangen",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Der har den 7.september 2026 været afholdt ældretilsyn på demensenheden Svalegangen.\nTilsynet var uanmeldt.\nÆldretilsyn har til formål at understøtte kvalitet, tryghed og værdighed i ældreplejen samt føre\ntilsyn med, at indsatsen lever op til gældende krav. Tilsynet skal samtidig bidrage til læring og\nkvalitetsudvikling i den enkelte enhed og på tværs af ældreområdet.\nTilsynet vurderer, at Svalegangen fremstår samlet set med: God kvalitet.\nÆldretilsynet vurderer, at der ingen væsentlige udfordringer er med kvaliteten i helhedsplejen.\n\nDen samlede vurdering tager afsæt i følgende:\nPlejeenheden arbejder systematisk med pårørendesamarbejdet og inddrager de pårørendes\nviden om den enkelte borger i tilrettelæggelsen af den helhedsorienterede indsats.\nÆldretilsynet vurderer desuden, at plejeenheden har fokus på at sikre, at pårørende oplever\nsig hørt og mødt. Videre vurderer ældretilsynet, at plejeenheden arbejder målrettet med at\ntilbyde aktiviteter, der tager udgangspunkt i den enkelte borgers ønsker, behov, ressourcer og\naktuelle funktionsniveau.\nPlejeenheden redegør for, at borgernes kognitive udfordringer medfører, at samarbejdet med\nlokale fællesskaber og civilsamfundsaktører kun i begrænset omfang er muligt.\nPlejeenheden har derfor fokus på aktiviteter og samvær, der tager afsæt i borgernes aktuelle\nbehov og dagsform.\n\nLovgrundlag\nÆldretilsynsloven § 7, stk. 4"
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Centerchefen orienterede om tilsyn."
     }
    ],
    "bilag": []
@@ -8500,15 +8549,19 @@
    "kommune": "Struer",
    "udvalg": "Seniorråd",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 5,
-   "kilde": "https://dagsordener.struer.dk/vis?id=f70b33f4-b280-4cbb-8ec8-cee748dd097b",
-   "hentet": "2026-11-19T13:32:46.114Z",
+   "kilde": "https://dagsordener.struer.dk/vis?id=1c9e0cab-3d91-4757-8805-5db6b06bb70c",
+   "hentet": "2026-11-27T14:12:13.572Z",
    "titel": "Orientering: Tilsyn fra Styrelsen for patientsikkerhed - Hjemmesygeplejen Vest",
    "afsnit": [
     {
      "titel": "Sagsfremstilling",
      "tekst": "Styrelsen for Patientsikkerhed gennemfører planlagte udgående tilsyn med behandlingssteder\nsom led i det løbende risikobaserede og stikprøvebaserede tilsyn. Formålet er at vurdere, om\nden sundhedsfaglige indsats lever op til gældende krav til patientsikkerhed og faglig kvalitet.\nPlanlagte tilsyn gennemføres ikke med en fast kadence, og et planlagt tilsyn er derfor ikke i sig\nselv udtryk for en konkret bekymring for patientsikkerheden på det enkelte behandlingssted.\nStyrelsen for Patientsikkerhed gennemførte den 13. august 2026 et planlagt sundhedsfagligt\ntilsyn i Hjemmesygeplejen Vest.\nSamlet vurdering\nTilsynet resulterede i vurderingen \"Mindre problemer af betydning for patientsikkerheden\".\nTilsynet vurderede, at behandlingsstedet kan rette op på manglerne ved et skærpet fokus fra\nledelsens side på nødvendige tiltag, implementering og opfølgning for at sikre, at\nhenstillingerne bliver fulgt.\nStyrelsen vurderede samtidig, at medarbejderne generelt havde kendskab til borgernes\nproblemstillinger, udførte den nødvendige pleje og behandling, og udviste forståelse og vilje til\nat rette op på de konstaterede mangler."
+    },
+    {
+     "titel": "Beslutning",
+     "tekst": "Centerchefen orienterede om tilsyn."
     }
    ],
    "bilag": []
@@ -8518,12 +8571,17 @@
    "kommune": "Struer",
    "udvalg": "Seniorråd",
    "dato": "2026-11-24",
-   "type": "dagsorden",
+   "type": "referat",
    "nr": 6,
-   "kilde": "https://dagsordener.struer.dk/vis?id=f70b33f4-b280-4cbb-8ec8-cee748dd097b",
-   "hentet": "2026-11-19T13:32:46.114Z",
+   "kilde": "https://dagsordener.struer.dk/vis?id=1c9e0cab-3d91-4757-8805-5db6b06bb70c",
+   "hentet": "2026-11-27T14:12:13.572Z",
    "titel": "Eventuelt",
-   "afsnit": [],
+   "afsnit": [
+    {
+     "titel": "Beslutning",
+     "tekst": "Seniorrådet udtrykte anerkendelse af Struer Kommunes arbejde med at synliggøre\nkommunen, herunder social- og sundhedsfaget.\nSeniorrådet ønsker, at de to unge SOSU-medarbejdere, som er ansat i kommunen som\nundervisere, inviteres til et kommende møde for at fortælle om deres arbejde."
+    }
+   ],
    "bilag": []
   },
   "struer-2026-11-16-handicapraad-2": {
@@ -9515,20 +9573,549 @@
    "titel": "Underskriftsside (BU)",
    "afsnit": [],
    "bilag": []
+  },
+  "struer-2026-12-03-aeldre-og-sundhedsudvalget-1": {
+   "id": "struer-2026-12-03-aeldre-og-sundhedsudvalget-1",
+   "kommune": "Struer",
+   "udvalg": "Ældre- og sundhedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.struer.dk/vis?id=99148a78-b2aa-40b6-a2b8-4653bc5bda57",
+   "hentet": "2026-11-27T14:11:49.644Z",
+   "titel": "Orientering: Status på helhedspleje og rehabilitering i hjemmeplejen (ÆOS)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Den nye ældrelov trådte i kraft pr. 1. juli 2025. Med den nye lov er kommunerne forpligtet\ntil at levere hjemmehjælp til borgere over 67 år i form af helhedspleje. Den 1. november\n2026 igangsatte Struer Kommune visitering til helhedspleje i fritvalgsområdet.\nDer gives orientering om den aktuelle status for implementeringen af helhedspleje i\nfritvalgsområdet i Struer Kommune samt erfaringer med den øgede rehabiliteringsindsats\nsom ligeledes blev iværksat i efteråret 2025."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Med indførelsen af den nye ældrelov blev kommunerne forpligtet på at tilrettelægge hjælpen\nefter principperne for helhedspleje, hvor hjælpen ikke længere skal leveres som enkeltstående,\nvisiterede ydelser, men som en sammenhængende, helhedsorienteret indsats.\nLoven har til formål at styrke borgernes selvbestemmelse, tryghed og kontinuitet samt sikre, at\nhjælpen ydes med udgangspunkt i borgerens ressourcer, ønsker og konkrete\nhverdagssituation.\nHelhedspleje indebærer blandt andet, at medarbejderne skal have et udvidet fagligt råderum til\nat prioritere og tilpasse hjælpen ud fra borgerens aktuelle behov, og at hjælpen skal leveres af\nfærre medarbejdere, for at understøtte en mere stabil og relations baseret indsats.\nLoven lægger vægt på, at hjælpen skal være mere fleksibel og mindre opdelt, og at praktiske\nog personlige opgaver i højere grad skal løses samlet af samme medarbejder.\nDe tre bærende værdier i ældreloven er:\n1. Den ældres selvbestemmelse\n2. Tillid til medarbejderne og den borgernære ledelse\n3. Et tæt samspil med pårørende, lokale fællesskaber og civilsamfund\nStatus på implementeringen i Struer Kommune\nStruer Kommune er i fuld gang med at implementere helhedspleje. Implementeringen\nindebærer bl.a.:\nTilpasning af arbejdsgange og planlægning i både kommunal og privat hjemmepleje.\nOmlægning fra enkeltydelser til helhedsplejeforløb med udgangspunkt i en mere\nbehovsstyret og helhedsorienteret hjælp.\n\nKompetenceudvikling af medarbejdere med fokus på fagligt råderum, tværfaglig\nforståelse og relationel hjemmepleje.\nDialog med leverandører om rammer, muligheder og opmærksomhedspunkter i\nhelhedsplejen.\nHelhedspleje omfatter desuden rehabilitering og træning - hvilket udvalget i slutningen af 2025\nvalgte at prioritere økonomiske ressourcer til.\nUdvalget gives en status på, hvor langt implementeringen er, herunder erfaringer fra praksis,\neventuelle udfordringer og plan for den videre proces ift. rehabiliterings- og træningsindsatsen i\nStruer Kommune.\nLeder af Visitationen Kristina Fleng Madsen deltager i punktet.\n\nLovgrundlag\nÆldreloven"
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-aeldre-og-sundhedsudvalget-2": {
+   "id": "struer-2026-12-03-aeldre-og-sundhedsudvalget-2",
+   "kommune": "Struer",
+   "udvalg": "Ældre- og sundhedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.struer.dk/vis?id=99148a78-b2aa-40b6-a2b8-4653bc5bda57",
+   "hentet": "2026-11-27T14:11:49.644Z",
+   "titel": "Orientering: Prøvehandling med kvikskranke og udlån af kørestole fra biblioteket (ÆOS)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Der orienteres om status og de foreløbige erfaringer med de prøvehandlinger på\nhjælpemiddelområdet, som ældre- og sundhedsudvalget godkendte (9. april 2026, pkt.\nPrøvehandlingerne skal give borgerne lettere og hurtigere adgang til udvalgte\nhjælpemidler gennem direkte udlevering i Velfærdshuset og midlertidigt udlån af\ntransportkørestole via biblioteket."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ældre- og sundhedsudvalget besluttede (9. april 2026, pkt. 37) at godkende prøvehandlinger\nomkring udlevering af udvalgte hjælpemidler uden forudgående visitationen, men med\nmulighed for rådgivning og vejledning af ergoterapeuter ved udlevering af relevante\nhjælpemidler.\nPrøvehandlingerne ses som en udvidelse af den allerede eksisterende praksis indenfor\npersonlige hjælpemidler, hvor borgerens behov og hurtig adgang til hjælpemidler er i fokus.\nI tråd med Struer Kommunes fokus på borgernære tilbud og let adgang til kommunale\nindsatser foreslås det, at udlevering og udlån af udvalgte hjælpemidler i højere grad sker\ndirekte til borger ved personligt fremmøde.\nFormålet med prøvehandlingerne\nAt øge borgernes mulighed for hurtig adgang til relevante hjælpemidler.\nAt reducere ventetid og administrativ sagsbehandling på standardhjælpemidler.\nAt afdække potentialet i direkte udlevering til borger, der selv fremmøder.\nAt understøtte en mere enkel og tilgængelig indgang til hjælpemiddelområdet.\nPrøvehandling 1: Udlevering af hjælpemidler i Velfærdshuset\nVisitationen udleverer og udlåner udvalgte hjælpemidler uden forudgående sagsbehandling via\nKvik Service, som er placeret i Velfærdshuset.\nBorgeren skal selv fremmøde i Velfærdshuset for at få udleveret hjælpemidlet.\nPrøvehandlingen omfatter følgende hjælpemidler:\nBadebænk\n\nToiletforhøjer\nFritstående toiletstol\nSengeklodser\nSatinlagner\nSengebånd og greb\nSmå hjælpemidler til brug i køkkenet\nRollatorer\nDer er tale om hjælpemidler, som i praksis ofte anvendes bredt, og hvor behovet kan vurderes\numiddelbart ved borgerens henvendelse.\nMålgruppen er borgere i Struer Kommune, som har behov for ovenstående hjælpemidler og\nsom selv har mulighed for at fremmøde i Velfærdshuset.\nPrøvehandling 2: Midlertidigt udlån af transportkørestole\nSom supplement til 1. prøvehandling har vi iværksat at borgere i Struer kommune får mulighed\nfor at låne en transportkørestol som et midlertidigt udlån via biblioteket, med en udlånsperiode\nop til 14 dage.\nFormålet med dette er at:\nImødekomme borgere, som har behov for en transportkørestol i forbindelse med ture\nsammen med pårørende.\nUnderstøtte borgernes mulighed for deltagelse i sociale aktiviteter uden nødvendigvis at\nfå bevilget et varigt hjælpemiddel.\nUdlånsperioden på 14 dage foreslås for at sikre, at transportkørestole kun bevilges til varigt\nudlån til borgere, som har et reelt og vedvarende behov, defineret som behov for anvendelse\nmere end 4‑5 gange ugentligt.\nHerved understøttes målsætningen om, at borgere i Struer Kommune forbliver så selvhjulpne\nog mobile som muligt, og at hjælpemidler anvendes målrettet og i overensstemmelse med et\nrehabiliterende sigte.\nLeder af Visitationen Kristina Fleng Madsen deltager i punktet og forelægger udvalget de\nforeløbige resultater og erfaringer med prøvehandlingerne."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-aeldre-og-sundhedsudvalget-3": {
+   "id": "struer-2026-12-03-aeldre-og-sundhedsudvalget-3",
+   "kommune": "Struer",
+   "udvalg": "Ældre- og sundhedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.struer.dk/vis?id=99148a78-b2aa-40b6-a2b8-4653bc5bda57",
+   "hentet": "2026-11-27T14:11:49.644Z",
+   "titel": "Automatisk besøgsplanlægning i hjemmeplejen (ÆOS - ØK - BY)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "I budgetaftale 2026 besluttede byrådet at undersøge mulighederne for at effektivisere\nkørsel i hjemmeplejen via AI ruteplanlægning. Det blev aftalt som et LØP-forløb hvor\nmålet var et opnå et provenu på 200.000 kr. årligt fra 2027, samtidig med, at der afsættes\n100.000 kr. til implementering."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat scenarie 2 godkendes,\nat reduktionen på LØP-forløbet udmøntes som en rammebesparelse på budgettet til\nhjælpemidler med 100.000 kr. i 2027 og 200.000 kr. i 2028-2030,\nat udviklingen på området følges, med henblik på, om der senere kan laves en positiv\nbusiness case ved etablering af automatisk besøgs- og ruteplanlægning i hjemmeplejen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Formålet med AI ruteplanlægning er i udgangspunktet at optimere køreruter, vagt- og\nbesøgsplaner, så medarbejderne bruger mindre tid på transport, og dermed kan teknologien\nforventelig hjælpe kommunerne med at håndtere flere ældre borgere og mangel på\narbejdskraft.\nAdministrationen har nu afsøgt markedet for løsninger. Der har bl.a. været afviklet besøg i\nLemvig Kommune, der har gjort sig erfaringer med løsningen Pondoo. Det er en AI-baseret\nløsning til automatisk besøgs- og ruteplanlægning i hjemmeplejen. Den planlægger ud fra bl.a.\nborgernes behov, medarbejdernes kompetencer, kontinuitet, tidsvinduer og køretid.\nLøsningen kan integreres med KMD Nexus.\nAdministrationens vurdering er at Pondoo er det system der bedst opfylder kravene og der er\nsamtidig god integration til KMD Nexus. Det er ligeledes den løsning en række andre\nkommuner har gjort sig erfaringer med, og derigennem giver god mulighed for sparring\nfremadrettet.\nUdgiften til anskaffelse af Pondoo omfatter udgifter til implementering (engangsudgift) og fast\nårlig drift for anvendelse af løsningen:\nSystemunderstøttelse\nImplementering\n\nÅrlig drift\n\nSamlet\n\nAdministrationen ser følgende muligheder for at udmønte LØP-forløbet:\nScenarie 1 – Gennemførelse og udmøntning af provenu\nPondoo anskaffes og implementeres til automatisk besøgs- og ruteplanlægning i hjemmeplejen\ni Struer Kommune. Indkøbet medfører en budgetreduktion på løbende 500.000 kr. for at\nsystemunderstøttelsen og forventet provenu i LØP-forløbet, kan udmøntes, samt øget\nfinansiering til implementering på 275.000 kr. i 2027, jf. nedenstående tabel.\nScenarie 1\n\nSystemunderstøttelse\n(implementering og drift)\n\nLØP-forløb, udmøntning\nprovenu\n\nLØP-forløb, udmøntning til\nimplementering\n\nDriftsbesparelse (drift af\nsystem + provenu LØPforløb)\n\nEngangsbesparelse (rest til\nfinansiering af\nimplementering)\n\nSamlet\n\nHvis scenarie 1 vælges, foreslås besparelsen realiseret på budgettet under myndighed til\npersonlig pleje og praktisk hjælp, samt helhedspleje, men henblik på, at der kan reduceres i\nudgifterne til vagtplanlægning og drift i hjemmeplejen.\nAdministrationen ser mange positive ting ved systemet, herunder bl.a. mere realistiske\nkøreplaner, som understøtter bedre planlægning og arbejdsmiljø. Administrationen ser dog\nikke for nuværende, at reducerede udgifter til vagtplanlægning og drift i hjemmeplejen kan\nudmønte en besparelse på 500.000 kr. årligt, hvis projektet gennemføres.\nScenarie 2 – Projektet realiseres ikke på nuværende tidspunkt\nProjektet med automatisk besøgs- og ruteplanlægning i hjemmeplejen realiseres ikke på\nnuværende tidspunkt. Reduktionsrammen i LØP-forløbet kan dermed ikke realiseres.\nHvis scenarie 2 vælges, foreslås reduktionsrammen i LØP-forløbet i stedet placeret som en\nrammebesparelse under ældre- og sundhedsudvalget (under Center for Sundhed og Omsorg),\n\nsom udmøntes på budget til hjælpemidler, som pt. vurderes at kunne rumme reduktionen uden\nat påvirke det fastsatte serviceniveau.\nScenarie 2\n\nLØP-forløb, udmøntning\nprovenu\n\nLØP-forløb, udmøntning til\nimplementering\n\nRammebesparelse på budget\ntil hjælpemidler\n\nSamlet\n\nDet er dog fortsat administrationens anbefaling at følge udviklingen på området, med henblik\npå, om der senere kan laves en positiv business case ved etablering af automatisk besøgs- og\nruteplanlægning i hjemmeplejen.\nØkonomichef Henrik J. Mogensen deltager i behandling af punktet."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-aeldre-og-sundhedsudvalget-4": {
+   "id": "struer-2026-12-03-aeldre-og-sundhedsudvalget-4",
+   "kommune": "Struer",
+   "udvalg": "Ældre- og sundhedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.struer.dk/vis?id=99148a78-b2aa-40b6-a2b8-4653bc5bda57",
+   "hentet": "2026-11-27T14:11:49.644Z",
+   "titel": "Udvidelse af demenskonsulentfunktionen (ÆOS)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Antallet af borgere, som er tilknyttet demenskoordinatorerne i Struer Kommune, er steget\nfra 170 borgere i begyndelsen af året til 206 borgere i efteråret. Det svarer til en stigning\npå godt 21 % i perioden. Det forventes, at antallet fortsat vil stige som følge af den\ndemografiske udvikling. Samtidig er opgaveporteføljen blevet udvidet med blandt andet\nvirtuelle diagnosesamtaler, opfølgning på borgere med mild kognitiv svækkelse, styrket\ndokumentation, samt udvikling af aktiviteter og forebyggende tilbud.\nDemensområdet varetages aktuelt af to demenskoordinatorer svarende til to\nfuldtidsårsværk. Den samlede opgavemængde betyder, at der er ventetid på\nhjemmebesøg, og at mulighederne for at reagere hurtigt ved akutte eller komplekse\nproblemstillinger er begrænsede. Administrationen vurderer derfor, at der er grundlag for\nat udvide området med ét årsværk.\nUdvidelsen skal sikre en mere rettidig, sammenhængende og forebyggende indsats for\nmennesker med demens eller mild kognitiv svækkelse samt deres pårørende."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat udvidelse af demenskonsulentfunktionen med et årsværk foreløbigt ét år frem\ngodkendes\nat den anviste finansiering af udvidelsen godkendes"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Struer Kommune har i dag to demenskoordinatorer svarende til to fuldtidsårsværk.\nDemenskoordinatorerne varetager blandt andet hjemmebesøg, rådgivning af borgere og\npårørende, pårørendegrupper, Café Kilen, visitation og koordinering vedrørende Lærkehuset\nog demensydelser samt faglig sparring og tværsektorielt samarbejde.\nAntallet af borgere tilknyttet demenskoordinatorerne er steget fra 170 i begyndelsen af 2026 til\n206 i efteråret, svarende til en stigning på godt 21 %. Det forventes, at antallet fortsat vil stige\nsom følge af den demografiske udvikling.\nNye og udvidede opgaver\nSamtidig er opgaveporteføljen udvidet med blandt andet virtuelle diagnosesamtaler, opfølgning\npå borgere med mild kognitiv svækkelse (MCI), styrket dokumentation samt udvikling af\naktiviteter og forebyggende tilbud.\nStruer Kommune deltager i 2026-2028 i et projekt om tidligere opsporing og systematisk\n\nopfølgning på borgere med MCI. Derudover arbejdes der med at udvikle flere differentierede\naktivitets- og fællesskabstilbud i samarbejde med blandt andet civilsamfundet.\nUdviklingen understøtter ældrelovens fokus på selvbestemmelse, sammenhængende\nborgerforløb og tæt samspil med pårørende, lokale fællesskaber og civilsamfund.\nAdministrationens vurdering\nAdministrationen vurderer, at stigningen i antallet af borgere kombineret med en udvidet\nopgaveportefølje betyder, at de nuværende to årsværk ikke giver tilstrækkelig kapacitet. Der er\nventetid på hjemmebesøg, og mulighederne for at reagere hurtigt ved akutte eller komplekse\nproblemstillinger er begrænsede.\nDer er allerede gennemført organisatoriske tilpasninger, blandt andet omkring\npårørendegrupper og Café Kilen, for at frigive mere tid til borgerrettede opgaver.\nTilpasningerne har dog ikke været tilstrækkelige til at imødekomme den samlede\nopgavemængde.\nDet foreslås derfor at udvide demenskoordinatorfunktionen nu med ét årsværk.\nUdvidelsen skal sikre en mere rettidig, sammenhængende og forebyggende indsats for\nborgere med demens eller mild kognitiv svækkelse og deres pårørende samt styrke den\ndemensfaglige understøttelse på tværs af Sundhed og Omsorg."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Udvidelsen med ét fuldtidsårsværk forventes at medføre en årlig udgift på 630.000 kr.,\ninklusive løn, pension, ferie, eventuelle tillæg, kompetenceudvikling og øvrige\npersonaleudgifter\nFinansiering foreslås nu via overførte uforbrugte midler i forbindelse med\nregnskabsafslutningen for 2026.\nPå længere sigt forventes finansiering gennem midler ifm. den kommende nationale\ndemenshandleplan, der bl.a. har fokus på at sikre flere borgere adgang til fast\ndemenskoordinator. Administrationen vil følge udmøntningen af økonomien i handleplanen\nmed henblik på mulighederne for fremadrettet medfinansiering af den styrkede demensindsats\n\nØkonomipåtegning:\njf. budgetopfølgning pr. 30. september 2026 forventes centrets samlede genbevilling at\nudgøre 8,9 mio. kr."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-aeldre-og-sundhedsudvalget-5": {
+   "id": "struer-2026-12-03-aeldre-og-sundhedsudvalget-5",
+   "kommune": "Struer",
+   "udvalg": "Ældre- og sundhedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.struer.dk/vis?id=99148a78-b2aa-40b6-a2b8-4653bc5bda57",
+   "hentet": "2026-11-27T14:11:49.644Z",
+   "titel": "Nære kommunale sundhedsindsatser (ÆOS)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Med sundhedsreformen er der afsat midler til nære kommunale sundhedsindsatser via\nsundhedsrådene. Sundhedsråd Vestjylland har fastlagt fire temaer for udmøntningen i 2027 og\n2028. Sagen lægger op til en politisk drøftelse af input til, hvilke indsatser der bør arbejdes videre\nmed i Struer Kommune og på tværs af kommunerne.\nPerspektiverne indgår i det videre arbejde med konkrete forslag til udmøntning, inden der indgås\naftaler mellem Sundhedsrådet og kommunerne senest 1. april i 2027."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat de politiske perspektiver på udmøntningen af den kommunale investeringsmotor i 2027\nog 2028 drøftes"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Sundhedsreformen skal understøtte et mere nært, lige og sammenhængende\nsundhedsvæsen. Som led heri er der afsat midler til at løfte de kommunale sundhedsindsatser\nvia sundhedsrådene – også kaldet den kommunale investeringsmotor.\nNår midlerne er fuldt indfaset i 2030, er der nationalt afsat 2 mia. kr. årligt til kommunale\nsundhedsindsatser. Midlerne skal udmøntes til krav og anbefalinger i nationale\nkvalitetsstandarder samt et yderligere løft af kommunale sundhedsindsatser. Denne sag\nvedrører sidstnævnte, som udmøntes gennem aftaler mellem sundhedsråd og kommuner.\nDet fremgår af Forårsaftalen fra maj 2025, at midlerne skal anvendes til reelle løft af de nære\nsundhedsindsatser med fokus på at understøtte langsigtet kapacitetsopbygning. Midlerne kan\ndog samtidig anvendes til midlertidige løft, eksempelvis udvikling og afprøvning af nye\nindsatser. Dermed giver investeringsmotoren mulighed for både at styrke og robustgøre\nkommunale sundhedsopgaver og udvikle nye løsninger, der understøtter omstillingen til et\nmere nært og sammenhængende sundhedsvæsen.\nDer er tale om sundhedsindsatser i bred forstand. Midlerne kan anvendes til kommunale\nsundhedsopgaver og til indsatser på eksempelvis social-, ældre-, børn og unge- eller\nbeskæftigelsesområdet, når de har betydning for borgernes sundhed.\nAftalerne om udmøntningen skal indgås 1. april det forudgående år. I opstartsåret 2026 kan\ndenne tidsfrist fraviges. Det vil sige, at udmøntningen af midlerne for 2027 og 2028 skal være\nindgået 1. april 2027.\nFor Sundhedsråd Vestjylland er der 15,64 mio. kr. i 2027 og 24,90 mio. kr. i 2028 til løft af\nkommunale sundhedsindsatser, hvilket fremgår af nedenstående tabel. Det er den foreløbige\nvurdering, da endelig fordeling mangler national afklaring.\n\nSundhedsrådets politiske retning\nSundhedsråd Vestjylland besluttede den 7. oktober 2026 en række overordnede principper for\nudmøntningen. – Blandt andet at den skal tage afsæt i den kommende nærsundhedsplan, at\nmidlerne skal komme alle kommuner til gavn, men at fordelingen skal tage udgangspunkt i\nbehov frem for en 1:1-fordeling.\nSundhedsrådet prioriterede følgende temaer for udmøntningen i 2027 og 2028:\nBørn og unges mistrivsel\nDemens\nKvinders sundhed\nUlighed i adgang til sundhed, både geografisk og socialt.\nSundhedsrådet ønskede samtidigt at se på mulighederne for partnerskaber og for at bygge\nvidere på eksisterende indsatser frem for at etablere parallelle tilbud.\n\nKommunalpolitiske perspektiver på udmøntningen\nDe seks kommuner Ringkøbing-Skjern, Herning, Ikast-Brande, Struer, Lemvig og Holstebro\narbejder nu videre med at konkretisere mulige indsatser inden for de fire temaer i samarbejde\nmed Regionshospitalet Gødstrup.\nPå den baggrund lægges op, at de kommunalpolitiske perspektiver for udmøntningen af\nmidlerne drøftes i kommunerne. Drøftelsen skal give input til udarbejdelse af forslag, som kan\nkomme borgerne til gavn og videreudvikle og robustgøre de kommunale sundhedsindsatser.\nDrøftelsen kan blandt andet tage afsæt i politiske perspektiver på:\nKonkrete indsatser: Hvor er der inden for de fire temaer særlige udfordringer eller\npotentialer, som det vil være relevant at investere i?\nSamspil med øvrige kommunale indsatser: Hvor kan investeringerne understøtte eller\nbygge videre på eksisterende prioriteringer og indsatser?\nSammenhæng i det samlede sundhedsvæsen: Hvor kan kommunale investeringer styrke\nforebyggelse og tidlig indsats, skabe mere sammenhængende forløb for borgerne og\n\nunderstøtte omstillingen til et mere nært og lige sundhedsvæsen?\nPerspektiverne fra de politiske udvalg danner retning for det videre arbejde med at konkretisere\nforslag. Her vil kommunerne i samarbejde med Regionshospitalet Gødstrup både se på, hvor\ndet giver mening med fælles løsninger/indsatser på tværs og hvor løsningerne skal målrettes\nlokale behov og forhold.\nTil brug for drøftelserne kan udvalgene også hente inspiration i de politiske og faglige dialoger,\nder allerede er gennemført i kommunerne i forbindelse med arbejdet med nærsundhedsplanen\n(vedlagt som bilag).\nInden for de fire temaer peger dialogerne eksempelvis på\nBørn og unges mistrivsel: tidligere hjælp, mere sammenhængende adgang til hjælp og\ntværfaglige indsatser tæt på hverdagen.\nDemens: tidligere opsporing og forebyggelse samt sammenhængende støtte til borgere\nog pårørende.\nKvinders sundhed: forebyggelse, tidlig indsats og mere differentierede tilbud,\neksempelvis omkring graviditet og familiedannelse.\nUlighed i adgang til sundhed: lokale og fleksible tilbud samt mere målrettede indsatser,\nhvor geografi, sociale forhold eller sundhedskompetencer skaber barrierer.\n\nDen videre proces\nDe politiske drøftelser i kommunerne indgår i det videre administrative arbejde med at\nkonkretisere forslag inden for de fire prioriterede temaer. Dette forelægges til sundhedsrådet til\nbehandling forventeligt i starten af det nye år. Efterfølgende indgås aftaler mellem\nsundhedsrådene og kommunerne senest 1. april 2027."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-aeldre-og-sundhedsudvalget-6": {
+   "id": "struer-2026-12-03-aeldre-og-sundhedsudvalget-6",
+   "kommune": "Struer",
+   "udvalg": "Ældre- og sundhedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.struer.dk/vis?id=99148a78-b2aa-40b6-a2b8-4653bc5bda57",
+   "hentet": "2026-11-27T14:11:49.644Z",
+   "titel": "Orientering (ÆOS)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Referat fra møde i Sundhedsråd Vestjylland den 11. november 2026 (bilag 1)\nDagsorden til møde i Sundhedsråd Vestjylland den 2. december 2026 (bilag 2)\nTrafiklys - eftersendes."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-aeldre-og-sundhedsudvalget-9": {
+   "id": "struer-2026-12-03-aeldre-og-sundhedsudvalget-9",
+   "kommune": "Struer",
+   "udvalg": "Ældre- og sundhedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.struer.dk/vis?id=99148a78-b2aa-40b6-a2b8-4653bc5bda57",
+   "hentet": "2026-11-27T14:11:49.644Z",
+   "titel": "Underskriftside (ÆOS)",
+   "afsnit": [],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-1": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-1",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Besøg på Rensningsanlægget (TMK)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Udvalgsmødet starter på Struer Energis Rensningsanlæg på Havnevej 22, 7600 Struer.\nHer gives kort rundvisning og en introduktion til anlæggets drift, renseprocesser og aktuelle\nudfordringer.\nBesøget forventes at tage ca. 30 minutter.\nMødet genoptages i udvalgslokalet kl. ca. 13.45 hvor der er mulighed for spørgsmål til besøget\npå rensningsanlægget.\nSpildevandschef Thomas Sørensen, Struer Energi deltager i behandling af punktet."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-2": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-2",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Lånegaranti nomi a/s (TMK - ØK - BY)",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat Struer Kommune stiller lånegaranti for de lån i KommuneKredit, som overdrages fra\nNomi4s i/s til nomi a/s i 2027 jf. opgørelse i sagsfremstillingen."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Nomi4s i/s virksomhedsoverdrager de kompetenceoverdragne affaldsaktiviteter, undtagen\ndeponidrift, til nomi a/s pr. 1. januar 2027. Der henvises til tidligere godkendelse af\nvirksomhedsoverdragelsen.\nVirksomhedsoverdragelsen til nomi a/s indebærer også, at anlægsaktiverne overføres fra\nNomi4s i/s til nomi a/s, herunder grunde, bygninger, genbrugspladser, maskiner, underjordiske\naffaldsløsninger mm.\nDa anlægsaktiverne overføres, skal alle lån hos Kommunekredit også overføres, da de bliver\nen væsentlig del af anlægsfinansieringen i nomi a/s.\nNomi4s i/s har som fælleskommunalt interessentskab direkte låneadgang i KommuneKredit, og\noptagelse af lån kræver ikke kommunal lånegaranti, da interessentkommunerne automatisk\nhæfter for alle aktiviteter i det fælleskommunale i/s.\nKommuneKredits udlånsvilkår kræver, at interessentkommunerne (Holstebro, Lemvig, Skive og\nStruer) stiller direkte pro rata garanti, før lånene kan overføres fra Nomi4s i/s til nomi a/s. Det\ner ikke tilstrækkeligt med lånegaranti fra Nomi4s i/s.\nDen nominelle værdi af lånene udgør 57.604.569,91 kr. pr. 1. januar 2027.\nPro rata fordelingen mellem interessentkommunerne sker i henhold til Samarbejdsaftalen for\nNomi4s i/s, og med den fordelingsnøgle der er gældende for indbyrdes hæftelse på\noverdragelsestidspunktet. (Indbyggertal den 1. januar 2024 jf. Samarbejdsaftalens pkt. 4.3)\nDen anvendte fordeling er gældende i restløbetiden for de overdragne lån og andrager\nfølgende pro rata beløb pr. 1. januar 2027:\n\nHolstebro Kommune\n\nLemvig Kommune\n\nSkive Kommune\n\nStruer Kommune\n\nDer henvises i øvrigt til vedhæftede lånespecifikation (bilag 1).\nDe enkelte interessentkommuner opkræver årligt 0,55 % i garantiprovision af lånene i\nKommuneKredit hos Nomi4s i/s. Garantiprovisionen på 0,55 % bliver fra 2027 opkrævet hos\nnomi a/s.\nMed henvisning til Bekendtgørelse om kommunernes låntagning og meddelelse af garantier\nmv. er der automatisk låneadgang på affaldsområdet, så disse dispositioner påvirker ikke den\nkommunale låneramme."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomi har ikke yderligere bemærkninger."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-3": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-3",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Orientering: Statusrapport for Affaldsplan 2022-2034 (TMK)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Struer Kommune vedtog i 2022 Affalds- og Ressourceplanen 2022-2034 med seks\nfokusområder for at øge genanvendelse og reducere affald. Den årlige statusrapport\nviser, at alle initiativer er igangsat eller afsluttet, og arbejdet forløber planmæssigt i\nsamarbejde med Nomi4s."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Struer Kommune vedtog i 2022 Struer Kommunes Affalds- & Ressourceplan gældende for\nperioden 2022-2034.\nAf planen fremgår det, at der en gang årligt, udarbejdes en afrapportering omkring status for\naffalds- og ressourceplanen.\nAffalds- og Ressourceplanen 2022-2034 indeholder i alt seks fokusområder, der lægger sig\nopad indsatsområderne i den nationale handlingsplan for cirkulær økonomi og dermed\nunderstøtter målene deri.\nAffalds- og Ressourceplanen skal understøtte, at de konkrete mål for genanvendelsesprocent\nfor husholdningsaffald og plastemballage nås, ligesom planen skal understøtte en udvikling,\nhvor mindre affald forbrændes og mere genanvendes eller genbruges direkte.\nStatus på Struer Kommunes Affalds- og Ressourceplan sker løbende for at gennemgå og\nevaluere de respektive indsatsområder og projekter heri, så det er muligt at vurdere, om de\nplanlagte initiativer forventes at kunne indfri målsætningerne i planen.\nAf vedlagte statusrapport (bilag 1) fremgår det, at alle initiativerne i Affalds- og\nRessourceplanen enten er igangsat eller er afsluttet. Der er således ingen væsentlige\nudfordringer eller afvigelser i forhold til planens målsætninger, og arbejdet med Affalds- og\nRessourceplanen forløber som planlagt.\nYvonne Thagaard Andersen fra Nomi4s deltager i mødet med kort oplæg."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-4": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-4",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Igangsætning af lokalplan nr. 376 - For Rosengården i Humlum (TMK)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Struer Kommune har modtaget en ansøgning fra en bygherre, der ønsker at opføre 10\nåben-lav boliger på Østerbrogade 16 i Humlum. Området har tidligere været anvendt til\noffentlige formål i form af et plejehjem og senest som midlertidige boliger for ukrainske\nflygtninge. Projektets omfang kræver udarbejdelsen af en ny lokalplan og et\nkommuneplantillæg, der giver mulighed for at opføre boliger i området."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat planlægningen for lokalplan nr. 375 - for Rosengården i Humlum igangsættes"
+    },
+    {
+     "titel": "Baggrund",
+     "tekst": "Østerbrogade 16 i Humlum har tidligere huset plejehjemmet Rosengården. Plejehjemmet\nlukkede i 2019 og blev i årene 2022-2024 brugt til at huse flygtninge fra krigen i Ukraine. De\ntidligere plejehjemsbygninger blev i 2025 revet ned, hvorefter grunden blev sat til salg og købt\naf en privat bygherre.\nBygherre ønsker, at der skal opføres 10 fritliggende boliger på grunden med henblik på\nudlejning af disse som privatboliger. Opførelsen af 10 boliger udløser lokalplanpligt efter\nPlanloven. På den baggrund orienterer administrationen om at arbejdet med lokalplanen\nigangsættes.\nFormål\nFormålet med udarbejdelsen af lokalplanen er:\nat give mulighed for, at der kan etableres åben-lav boligbebyggelse på den tidligere\nplejehjemsgrund i Humlum.\nat områdets disponering samt bebyggelsens organisering og arkitektur indpasses i områdets\nkarakter og struktur.\nat sikre tilgængelighed i området og grønne friarealer, så området kan benyttes af både børn\nog ældre.\nat sikre, at der skabes forbindelser og sammenhæng til den øvrige by.\nLokalplanområdet\nLokalplanområdet er udlagt til offentlige formål i kommuneplanrammerne 6 O 1 og rekreativt\n\nområde i kommuneplanramme 6 R 1 i Kommuneplan 2025. Lokalplanens realisering\nforudsætter derfor en revision af kommuneplanrammerne for lokalplanens område. Derfor\nudarbejdes forslag til kommuneplantillæg nr. 6 B 7 sideløbende med forslag til lokalplan nr. 376\n– Boligområdet Rosengården i Humlum\nEn mindre del af lokalplanområdet er beliggende indenfor et område, der er omfattet af\nlokalplan nr. 363 – Boligområde, Rosenhaven i Humlum og er udlagt som et rekreativt område.\nVed den endelige vedtagelse af lokalplan nr. 376 ophæves den del af lokalplan nr. 363, som\ngeografisk overlapper med lokalplan nr. 376.\nProjektbeskrivelse\nProjektet omfatter 10 fritstående boliger, der omkranser et fælles grønt område med legeplads\nog opholdsarealer. Boligerne består af fritstående huse med egen have, indkørsel og carport.\nBygherre ønsker at etablere en fælles affaldsstation på området. Her vil administrationen\nundersøge om det er hensigtsmæssigt at placere affaldsspande til eksempelvis restaffald ved\nhver enkelt bolig, så den fælles affaldsstation vil være til bl.a. pap, plast og metal.\nAdgangen til området sker via en ensrettet fællesvej, der kobler sig på Chr. Gades Vej, ved\nbåde ind- og udkørsel. Boligerne ligger langs vejens forløb, hvorfra alle boliger har deres egen\nindkørsel med plads til to biler. Derudover er der fælles gæsteparkering i grønne lommer langs\nvejen. Der skal etableres handicapparkering i området.\nNaturstrategi\nI Struer Kommune er der udarbejdet en naturstrategi, der beskriver ambitionerne for\nnaturområderne i kommunen. I byerne er ambitionen at skabe større biodiversitet med\nhjemmehørende arter samtidig med, at der skabes variation mellem den naturlige og den\nvelpassede natur. Planforslaget indgår i strategiens retningslinjer i forhold til at bidrage til\nnaturen i nyopførte byområder.\nVandhåndtering\nBygherre udarbejder i forbindelse med udarbejdelsen af lokalplanforslaget en plan for\nhåndtering af tag- og overfladevand.\nArkitektur\nI kommuneplanen er området langs Østerbrogade udpeget som et værdifuldt kulturmiljø. Da\nprojektområdet ligger langs samme vej, bør sammenhængen med lokalområdet indtænkes i\narkitekturen, så det ikke strider imod områdets særlige kvaliteter. Her er valget af materialer og\nbygningernes formsprog særligt vigtige.\nOffentlig høring\nHumlum Borgerforening er blevet fremlagt for projektforslaget i den indledende proces og har\nherigennem haft mulighed for at komme med bemærkninger til projektet. Borgerforeningen er\nmeget positive overfor projektforslaget. Derudover sendes planforslaget til offentlig høring\ninden vedtagelse, hvor relevante parter kan indsende deres høringssvar."
+    },
+    {
+     "titel": "Videre proces",
+     "tekst": "Med udgangspunkt i ovenstående orienterer administrationen hermed om, at planarbejdet\nigangsættes. Planarbejdet omfatter en miljøscreening, udarbejdelsen af et forslag til en\nlokalplan og et forslag til et kommuneplantillæg.\n\nLovgrundlag\nPlanloven, § 13 (Lokalplanpligt)\nPlanloven, § 16 (Lokalplanens indhold)\nPlanloven, § 24 (Offentliggørelse og høring)\nPlanloven, § 5 a og § 5 b (Kystnærhedszonen)\nNaturbeskyttelsesloven, § 17 (Skovbyggelinje)"
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-5": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-5",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Tillæg 5 til Spildevandsplanen (TMK - ØK - BY)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Administrationen indstiller, at tillæg nr. 5 til Spildevandsplanen godkendes.\nTillægget omfatter 39 enkeltstående ejendomme i det åbne land, som foreslås optaget i\nSpildevandsplanen med henblik på spildevandskloakering. Fælles for ejendommene er,\nat de ligger tæt på eksisterende spildevandsledninger.\nSpildevandet fra 38 af ejendommene vil blive ledt til Struer Renseanlæg, mens\nspildevandet fra den sidste ejendom vil blive ledt til Flovlev Renseanlæg.\nBegge renseanlæg har tilstrækkelig ledig kapacitet til at håndtere den øgede\nspildevandsmængde."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat tillæg nr. 5 til Spildevandsplanen godkendes med henblik på fremlæggelse i 8 ugers\noffentlig høring,\nat administrationen bemyndiges til at vedtage det endelige tillæg efter høringsperiodens\nafslutning, forudsat at der ikke fremkommer høringssvar, som giver anledning til\nvæsentlige ændringer af tillægget."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Tillæg nr. 5 til Spildevandsplanen, som ønskes godkendt, indeholder oplysninger om 39\nenkeltejendomme i Struer Kommune, som ønskes optaget i gældende Spildevandsplan til\nspildevandskloakering.\nDer findes i dag flere ejendomme i det åbne land i Struer Kommune, hvor spildevandet enten\nikke renses efter bundfældningstanken eller renses i forældede og utilstrækkelige renseanlæg.\nDette medfører en uhensigtsmæssig udledning af næringsstoffer til nærliggende vandmiljøer,\nhvilket kan påvirke vandmiljøets tilstand negativt.\nI alt 39 ejendomme er udpeget, fordi de ligger særligt tæt på eksisterende\nspildevandsledninger. Det vurderes derfor hensigtsmæssigt at påbyde disse ejendomme at\ntilslutte sig det centrale spildevandssystem frem for at fortsætte med udledning af urenset\nspildevand eller at skulle etablere forbedret spildevandsrensning på den enkelte ejendom.\nFlere af ejendommene er beliggende i områder, der i vandområdeplanerne er udpeget med\nhenblik på forbedret spildevandsrensning.\nNår tillæg nr. 5 til Spildevandsplanen er endeligt vedtaget, vil de berørte ejendomme være\n\nomfattet af planens bestemmelser om spildevandskloakering. Ejerne vil dermed være\nforpligtede til at tilslutte ejendommene til det offentlige spildevandssystem i overensstemmelse\nmed de nærmere vilkår og frister, som fastsættes af Struer Kommune. Den konkrete\ntilslutningspligt og tidspunktet for tilslutning vil blive meddelt de berørte ejere i forbindelse med\nden efterfølgende myndighedsbehandling.\nInden tillæg nr. 5 til Spildevandsplanen kan endeligt vedtages, skal tillægget i offentlig høring i\n8 uger, således borgere og virksomheder har mulighed for at komme med bemærkninger. Der\nlægges i indstillingen op til, at administrationen kan godkende det endelige tillæg, såfremt der\nikke er fremkommet væsentlige indsigelser eller ændringsforslag i høringsperioden.\nTeknik-, miljø- og klimaudvalget, den 11. november 2026, pkt. 148:\nSagen udsættes til næste udvalgsmøde.\nMartin Hulgaard deltog ikke behandling af punktet.\n\nAdministrationens tilføjelse, 2. december 2026:\nBilag 1 beskriver de matrikler der er omfattet af tillægget. Der er tilføjet en beskrivelse ved de\nmatrikler, hvor det er nødvendigt at etablere kloakledning for at kunne tilslutte de omfattede\nejendomme. De berørte matrikler indgår som teknisk forudsætning for gennemførelse af\nkloakeringen, da ledningsføring går over disse matrikler for at kunne kloakere de udpegede\nejendomme.\n\nLovgrundlag\nMiljøbeskyttelseslovens § 32 om kommunal pligt til spildevandsplan\nSpildevandsbekendtgørelsens § 10 om behandling af forslag til og vedtagelse af\nspildevandsplan\nMiljøvurderingslovens § 8 om miljøvurdering af planer og programmer"
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-7": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-7",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Godkendelse af takster for Jegindø Vandværk 2027 (TMK)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Jegindø Vandværk har indsendt takster for anlægs- og driftsbidrag på drikkevand for\n2027 til kommunal godkendelse. Almene vandforsyninger skal hvert år have godkendt\ntakster af kommunalbestyrelsen. Centralt for den kommunale godkendelse af taksterne er\noverholdelse af hvile-i-sig-selv-princippet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat taksterne for Jegindø Vandværk 2027 godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Byrådet skal i henhold til vandforsyningslovens § 54, stk. 1 godkende taksterne for anlægs- og\ndriftsbidrag for almene vandforsyningsanlæg.\nJegindø Vandværk er ikke omfattet af vandsektorloven og kravet om fastsættelse af prisloft fra\nForsyningssekretariatet. Byrådet kan undlade at godkende taksterne, hvis de mener, at\ntaksterne ikke med rimelighed kan godkendes.\nAlmene vandforsyningsanlæg skal have godkendt takster hvert år, også selvom taksterne er\nuændrede. Takster, som ikke er godkendt, kan ikke opkræves. Forbrugerne kan således\nnægte at betale opkrævning for ikke-godkendte takster og kan ligeledes kræve at få\ntilbagebetalt allerede betalte takster, som ikke har været gyldige. Da takster for Jegindø\nVandværk stiger med mere end 5 %, skal de behandles af teknik-, miljø og klimaudvalget, jf.\nkompetenceplanen.\nVandværket forsynede i 2025 379 ejendomme.\nVandværket har sendt takstblad for 2027 til godkendelse (bilag 1). Vandværkets seneste\ngodkendte takstblad er fra 2026 (bilag 2).\nAf fremsendte takstblad for 2027 fremgår det:\nat den faste afgift er steget fra 700 kr. til 800 kr. svarende til en stigning på 14,29 % siden\nsidste godkendte takstblad.\nat kubikmeterprisen er uændret siden sidste godkendte takstblad.\nAdministrationen har foretaget den obligatoriske legalitetskontrol af fremsendte materiale,\nherunder budget, regnskab, investeringsplan og overholdelse af hvile-i-sig-selv-princippet.\nAdministrationen vurderer, at takststigningen er acceptabel.\n\nLovgrundlag\nVandforsyningsloven (LBKG nr. 1149 af 28/10/2024).\nJf. kompetenceplanen har byrådet overdraget kompetencen til godkendelse af taksterne for\nanlægs- og driftsbidrag for almene vandforsyningsanlæg til teknik-, miljø og klimaudvalget, når\ntakstændringerne er større end 5 %."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-8": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-8",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 8,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Ansøgning om dispensation til opførsel af carport (TMK)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Administrationen har modtaget en ansøgning om dispensation fra lokalplan nr. 5.2 for\nsommerhusområdet ved Søndbjerg-Serup Strand. Ansøger ønsker at opføre en dobbelt\nstålcarport. Det ansøgte vil medføre en bebyggelsesprocent på 12 %, hvilket vil være en\noverskridelse af den for området fastlagte bebyggelsesprocent på 10 %, svarende til 27\nm2. En dispensation vil ikke være i overensstemmelse med de retningslinjer som blev\nvedtaget på udvalgets møde den 2. september 2026."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat der træffes beslutning om, hvorvidt der kan meddeles dispensation til den ansøgte\ncarport."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Administrationen har modtaget en ansøgning om dispensation fra lokalplan 5.2 for\nsommerhusområdet ved Søndbjerg-Serup Strand angående opførsel af en dobbelt carport i\nstål på 31,9 m2. Det ansøgte vil medføre en overskridelse af bebyggelsesprocenten på ca. 2\nTeknik-, miljø- og klimaudvalget besluttede (2. september 2026, pkt. 124), at der for grunde\nover 1200 m2 indenfor lokalplanens område, som udgangspunkt meddeles afslag på\ndispensation til en bebyggelsesprocent på over 10 %.\nI denne sag er grunden på 1337 m 2, hvilket overstiger de 1200 m 2. Den nuværende\nbygningsmasse på 128 m2 giver en bebyggelsesprocent på 9,57 %, hvilket vil sige, at ansøger\nmaksimalt må bygge 5 m2 mere for at holde sig under 10 %. Med den ansøgte carport vil\nbebyggelsesprocenten komme op på 11,96 %, en overskridelse svarende til ca. 27 m2.\nAnsøgningen vedrører en carport, der placeres i sammenhæng med eksisterende bebyggelse.\nDet er administrationens vurdering, at det ansøgte ikke vil medføre betydelige gener for\nnaboerne.\nSagen forelægges udvalget med henblik på en beslutning om, hvorvidt det kan tillades, at\ncarporten opføres, selvom bebyggelsesprocenten overskrides. Der henvises til udvalgets\nbeslutning på mødet den 2. september 2026."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-9": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-9",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 9,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Orientering (TMK)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Grøn Trepart - administrationen orienterer om, at der er udarbejdet genberegnede\nudledningsgrænser for Grøn Trepart Nissum Fjord og Grøn Trepart Limfjorden.\nAdministrationen præsenterer de nye grænser.\nOpfølgning på lys i busskure - på sidste udvalgsmøde blev der rejst spørgsmål om\npraksis for belysning af busskurene i kommunen. Administrationen giver en opdatering."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-11": {
+   "id": "struer-2026-12-02-teknik-miljoe-og-klimaudvalget-11",
+   "kommune": "Struer",
+   "udvalg": "Teknik-, miljø- og klimaudvalget",
+   "dato": "2026-12-02",
+   "type": "dagsorden",
+   "nr": 11,
+   "kilde": "https://dagsordener.struer.dk/vis?id=6bf420cc-c99b-4e25-8c24-fce72fc29a6b",
+   "hentet": "2026-11-27T14:11:58.959Z",
+   "titel": "Underskriftsside (TMK)",
+   "afsnit": [],
+   "bilag": []
+  },
+  "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-1": {
+   "id": "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-1",
+   "kommune": "Struer",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 1,
+   "kilde": "https://dagsordener.struer.dk/vis?id=1943117e-565f-4a19-ada6-ad8275e95da8",
+   "hentet": "2026-11-27T14:12:05.563Z",
+   "titel": "Vennekredse - Fordeling af tilskud 2027 (SA)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Vennekredsene på ældreområdet tildeles årligt en særskilt bevilling af frivillighedsmidler\njf. \"Retningslinjer for tildeling af § 18 midler i Struer Kommune\".\nTilskuddet tildeles i forhold til antal plejeboliger og der aflægges ligeledes årligt, et\nregnskab for anvendelse af det bevilgede tilskud.\nVennekredsene vil til særlige formål kunne søge om ekstra bevilling af § 18-midler."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat fordelingen af bevillingen godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Budgettet vedrørende tilskud til vennekredse udgør for 2027: 209.000 kr.\nBudgettet fratrækkes 20.000 kr. til gratis kaffe til frivillige samt 15.000 kr. til annoncering for\nhyggeklubber og foreninger.\nRestbevillingen på 174.000 kr. (ekskl. moms) udbetales som bruttotilskud, i alt 179.000 kr. (inkl.\nmoms).\nBeløbet foreslås fordelt som vist nedenfor:\nPlejecenter\n\nAntal plejeboliger\n\nTilskud 2027\n\nEnggårdcentret\n\nSvalegangen\n\nSolvang Ældrecenter\n\nBangs Have\n\nAsp Plejecenter (friplejehjem)\n\nI alt\n\nSocial- og arbejdsmarkedsudvalget den 11. november 2026, pkt. 105:\nUdsættes.\nOverblik vedr. socialt frivilligt arbejde og øvrige sociale formål\n\nAdministrationen har siden social- og arbejdsmarkedsudvalget den 11. november 2026 vedlagt\nbilag 1, som giver et samlet overblik over - og kort beskrivelse af - budgetrammerne i budget\n2027-2030 til social frivilligt arbejde og øvrige sociale formål, som jf. styrelsesvedtægten er\nhjemmehørende i udvalget.\nDet præciseres, at puljen til vennekredse understøtter kommunens forpligtigelse om støtte til\nfrivilligt arbejde på ældreområdet efter ældreloven §7.\nHenrik Jeberg Mogensen deltager i behandling af punktet."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-2": {
+   "id": "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-2",
+   "kommune": "Struer",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 2,
+   "kilde": "https://dagsordener.struer.dk/vis?id=1943117e-565f-4a19-ada6-ad8275e95da8",
+   "hentet": "2026-11-27T14:12:05.563Z",
+   "titel": "Orientering: AI i beskæftigelsesindsatsen (SA)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kunstig intelligens er i stigende grad på vej ind i den kommunale beskæftigelsesindsats. Flere\nkommuner anvender i dag AI-baserede værktøjer til blandt andet at understøtte samtaler med\nborgere, dokumentation, sagsforberedelse og håndtering af store mængder information.\nUdviklingen giver nye muligheder for at frigøre tid fra administrative opgaver og samtidig\nunderstøtte kvaliteten i sagsbehandlingen.\nAI skal i denne sammenhæng ses som et arbejdsredskab. Den faglige vurdering,\nkvalitetssikringen og ansvaret for sagsbehandlingen ligger fortsat hos medarbejderen.\nJobcentret har gennem det seneste år arbejdet med at tage AI-baserede værktøjer i\nanvendelse i den daglige opgaveløsning. Det omfatter blandt andet Dialogstøtte og Summa fra\nSchultz samt KAILA Kommune fra Karnov Group.\nDialogstøtte anvendes i forbindelse med borgersamtaler og udarbejder efter samtalen et\nudkast til dokumentation, som medarbejderen efterfølgende kvalitetssikrer. Anvendelsen af\nDialogstøtte er steget markant gennem 2026 og indgår nu i en stor del af de relevante samtaler\ni Center for Arbejdsmarked.\nPå mødet gives en medarbejder et praksisnært oplæg om arbejdet med Dialogstøtte, herunder\nom implementeringen, anvendelsen og de hidtidige erfaringer og resultater. Der vil desuden\nblive orienteret om anvendelsen af øvrige AI-værktøjer på området.\nMed afsæt i oplægget lægges der op til en drøftelse i Social- og arbejdsmarkedsudvalget af\nerfaringerne og de videre muligheder og perspektiver ved anvendelsen af AI i\nbeskæftigelsesindsatsen.\nMichelle Lilli V. Larsen deltager i behandling af punktet."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-3": {
+   "id": "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-3",
+   "kommune": "Struer",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 3,
+   "kilde": "https://dagsordener.struer.dk/vis?id=1943117e-565f-4a19-ada6-ad8275e95da8",
+   "hentet": "2026-11-27T14:12:05.563Z",
+   "titel": "Inkluderende Fællesskaber til Struer Kommune (SA)",
+   "afsnit": [
+    {
+     "titel": "Resumé",
+     "tekst": "Projekt Inkluderende Fællesskaber hjælper borgere med førtidspension ind i\nmeningsfulde fællesskaber gennem job med løntilskud, frivilligt arbejde og\nfritidsaktiviteter. Projektets parter ønsker at videreføre indsatsen, udvide målgruppen og\nudbrede projektet til Struer Kommune. Social- og Arbejdsmarkedsudvalget skal tage\nstilling til, om Jobcenter Struer skal arbejde videre med muligheden for at indgå i\nprojektet."
+    },
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat Jobcenter Struer arbejder videre med muligheden for at indgå i en videreførelse og\nudvidelse af projekt Inkluderende Fællesskaber."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Projekt Inkluderende Fællesskaber har siden den 1. juni 2024 været et samarbejde mellem\nJobcenter Lemvig, Frivilligcenter Lemvig og DGI Vestjylland. Formålet er at hjælpe borgere\nmed førtidspension ind i meningsfulde fællesskaber på arbejdsmarkedet samt i foreninger og\nkulturinstitutioner.\nProjektet har rekrutteret 103 borgere med førtidspension. Heraf er 45 kommet i job med\nløntilskud, 32 i frivilligt arbejde og 26 i fritidsaktiviteter. Midtvejsevalueringen fra juni 2026 viser\ndesuden positive resultater for blandt andet deltagernes trivsel, relationer og oplevelse af at\nvære en del af et fællesskab.\nPå baggrund af resultaterne og interessen for projektet ønsker samarbejdspartnerne at\nvidereføre og udvide indsatsen. Der arbejdes med at søge midler fra puljen ”Skalering og\nstyrket forankring”, så en tilsvarende indsats kan etableres i Struer Kommune sideløbende med\nindsatsen i Lemvig Kommune.\nJobcenter Struer har været i dialog med de nuværende projektparter om mulighederne for at\nudvide projektet til Struer Kommune. På baggrund af dialogen ønskes muligheden for\ndeltagelse i en ny projektperiode forelagt politisk. Ved en udvidelse forventes\nprojektorganisationen at bestå af DGI Vestjylland, Jobcenter Lemvig, Frivilligcenter Lemvig,\nJobcenter Struer og Frivilligcenter Struer.\nSamtidig foreslås målgruppen udvidet. Ud over borgere med førtidspension skal projektet\nfremover kunne omfatte aktivitetsparate kontanthjælpsmodtagere og eventuelt\nsygedagpengemodtagere, der gennem længere tid har haft en svag tilknytning til\narbejdsmarkedet.\n\nProjektet forventes at løbe fra sommeren 2027 til sommeren 2030. Projektorganisationen\nforventer at søge et beløb tæt på puljens fulde ramme på 5 mio. kr. Projektoplægget omfatter\nto fuldtidsansatte projektledere, én til indsatsen i Lemvig og én til indsatsen i Struer."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-4": {
+   "id": "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-4",
+   "kommune": "Struer",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 4,
+   "kilde": "https://dagsordener.struer.dk/vis?id=1943117e-565f-4a19-ada6-ad8275e95da8",
+   "hentet": "2026-11-27T14:12:05.563Z",
+   "titel": "Orientering: Ledelsesinformation for det specialiserede socialområde (SA)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Ledelsesinformation giver et samlet overblik over aktivitet, udvikling og økonomi på\nsocialområdet. Formålet er at understøtte et fælles vidensgrundlag for prioritering, planlægning\nog opfølgning. Sammenligninger over tid og på tværs af kommuner kan samtidig synliggøre\nforskelle og pege på områder, der kræver nærmere opmærksomhed.\nNogle af de væsentligste fund i vedhæftede rapport:\nSocio-geografiske forhold: Struer Kommune har en udfordret\nbefolkningssammensætning. Størstedelen af befolkningen bor i områder i kategori 4, hvor\nen højere kategori angiver større udsathed.\nUdviklingen i aktivitet: Antallet af helårsydelser på socialområdet er overordnet stabilt i\nperioden 2023–2025. Socialpædagogisk støtte efter §85 er det paragrafområde, der har\nflest helårsydelser gennem hele perioden.\nØkonomiske nøgletal: Budgetafvigelsen på socialområdet har været relativt stor i 2024 og\n2025 efter en lang årrække med overholdelse af budgetterne. Derudover viser rapporten\nogså tal vedr. køb og salg af pladser på tværs af de sociale tilbudstyper.\nYdelser på tværs af kommuner: I 4. kvartal 2025 er antallet af helårsydelser til botilbud og\ndagtilbud pr. 1.000 indbyggere overordnet forholdsvis sammenligneligt mellem de\nkommunerne i lokalområdet.\nSamlet udgiftsniveau: Struer Kommunes udgifter til botilbud, krisecentre og herberger\nudgør i 2025 ca. 4.705 kr. pr. indbygger. Udgiftsniveauet er normalt i sammenligning med\nandre kommuner.\nEnhedsudgifter: Sammenligningen med Holstebro, Skive og Thisted viser, at Struer\nKommune har de laveste gennemsnitlige enhedsudgifter til både midlertidige botilbud\nefter § 107 og længerevarende botilbud efter § 108. De øvrige paragrafområder er\nsammenlignelige."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-5": {
+   "id": "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-5",
+   "kommune": "Struer",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 5,
+   "kilde": "https://dagsordener.struer.dk/vis?id=1943117e-565f-4a19-ada6-ad8275e95da8",
+   "hentet": "2026-11-27T14:12:05.563Z",
+   "titel": "Kvalitetsstandard for madservice på botilbud (SA)",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat udkastet til kvalitetsstandard for madservice på botilbud godkendes."
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Vedhæftede kvalitetsstandard beskriver madservice efter servicelovens § 83 b til borgere i\nbotilbud, der på grund af varigt nedsat fysisk eller psykisk funktionsevne eller særlige sociale\nproblemer ikke selv kan eller har vanskeligt ved at lave mad.\nIndsatsen tilrettelægges efter en konkret og individuel vurdering og kan omfatte delvis eller fuld\nforplejning. Formålet er at sikre varieret og ernæringsrigtig kost samt understøtte borgerens\nselvstændighed og livskvalitet.\nDen centrale ændring fra tidligere er, at madservice nu har fået sin egen paragraf særskilt fra\nøvrig praktisk hjælp med klarere målgruppeafgrænsning og krav. Derudover kan der fremover\nikke som udgangspunkt ydes pædagogisk støtte til madlavning sammen med borgeren.\nLovgivningen åbner dog op for, at der undtagelser kan laves ift. madlavning med specifikke\nborgere. Med henvisning til servicelovens § 83 b, stk. 2, foreslås det dertil, at borgerne i Ung\nved Fjorden kan tilbydes hjælp til at tilberede aftensmad, da dette tilbud fungerer som et\nspringbræt til voksenlivet for en yngre målgruppe.\nKvalitetsstandarden sendes til høring i handicaprådet efter behandlingen i udvalget. Hvis\ndenne høring giver anledning til justeringer i kvalitetsstandarden, vil udvalget blive forelagt\ndette."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-6": {
+   "id": "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-6",
+   "kommune": "Struer",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 6,
+   "kilde": "https://dagsordener.struer.dk/vis?id=1943117e-565f-4a19-ada6-ad8275e95da8",
+   "hentet": "2026-11-27T14:12:05.563Z",
+   "titel": "Plan for forebyggelse - og sundhed på socialområdet 2027 (SA)",
+   "afsnit": [
+    {
+     "titel": "Indstilling",
+     "tekst": "ADMINISTRATIONEN INDSTILLER\nat udvalget godkender den reviderede plan til forebyggelse - og sundhed på\nsocialområdet"
+    },
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Kommunen ønsker med den reviderede forebyggelsesplan at styrke en tidlig,\nsammenhængende og mere lige adgang til sundheds- og sociale forebyggelsesindsatser for\nborgere med psykiske og sociale udfordringer. Planen følger op på den nationale 10-årsplan\nfor psykiatrien og mental sundhed og har samtidig fokus på at mindske ulighed i sundhed\ngennem lokale, fleksible og målrettede tilbud, særligt for borgere, hvor geografi, sociale forhold\neller sundhedskompetencer gør det vanskeligere at få den rette hjælp i tide.\nIndsatserne skal sikre, at borgere med moderat til svære psykiske, sociale - og\nsundhedsmæssige udfordringer får den rette hjælp på det rette tidspunkt. Formålet er at\nforebygge forværring, styrke borgerens mestring og selvstændighed og dermed mindske\nrisikoen for, at der senere bliver behov for mere omfattende sociale eller sundhedsmæssige\nindsatser. Indsatsen understøtter samtidig ambitionen om tidlig hjælp og en mere\nsammenhængende indsats tæt på borgerens hverdagsliv.\nForebyggelsesplanen omsætter disse ambitioner til tre konkrete indsatser: forebyggende\nlivsmestring og læringsforløb til borgere med psykiske belastninger, en socialsygeplejerske\nmålrettet de mest udsatte borgere og afklaringspladser efter psykiatrisk indlæggelse.\nIndsatserne skal tilsammen understøtte tidligere hjælp, bedre adgang til relevante\nsundhedstilbud og et mere trygt og selvstændigt hverdagsliv for de mest udsatte borgere i\nStruer Kommune.\nCenteret har de nødvendige faglige kompetencer til at varetage de nye forebyggende indsatser\ni eget regi inden for en samlet ansættelsesramme på 37 timer ugentligt. Indsatserne bygger\nvidere på eksisterende viden og tilbud og styrker den tidlige og sammenhængende indsats for\nborgerne."
+    },
+    {
+     "titel": "Økonomi",
+     "tekst": "Økonomipåtegning:\nUdgiften finansieres af Handicap, Social og Psykiatris budget til Forebyggende\ntidsbegrænset hjælp."
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-7": {
+   "id": "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-7",
+   "kommune": "Struer",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 7,
+   "kilde": "https://dagsordener.struer.dk/vis?id=1943117e-565f-4a19-ada6-ad8275e95da8",
+   "hentet": "2026-11-27T14:12:05.563Z",
+   "titel": "Orientering (SA)",
+   "afsnit": [
+    {
+     "titel": "Sagsfremstilling",
+     "tekst": "Dialogforum for udsatte"
+    }
+   ],
+   "bilag": []
+  },
+  "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-10": {
+   "id": "struer-2026-12-03-social-og-arbejdsmarkedsudvalget-10",
+   "kommune": "Struer",
+   "udvalg": "Social- og arbejdsmarkedsudvalget",
+   "dato": "2026-12-03",
+   "type": "dagsorden",
+   "nr": 10,
+   "kilde": "https://dagsordener.struer.dk/vis?id=1943117e-565f-4a19-ada6-ad8275e95da8",
+   "hentet": "2026-11-27T14:12:05.563Z",
+   "titel": "Underskriftsside (SA)",
+   "afsnit": [],
+   "bilag": []
   }
  },
  "sitemaps": {
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=3e70c628-b217-4ebf-ace4-0b69a797ef44": {
    "senest": "2026-11-18",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=4fff79fc-de1b-4e39-a3a8-951532ed8315": {
    "senest": "2025-09-27",
    "tjekket": "2026-11-23"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=2f567d17-628d-47d5-b5e1-676313bd46ec": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-26"
+   "senest": "2026-11-27",
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=0d21ea3e-3335-4064-bfb6-a162a553e9ab": {
    "senest": "2025-10-07",
@@ -9539,20 +10126,20 @@
    "tjekket": "2026-11-23"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=0f4dcc09-75e0-4b5f-ba08-aa3b56f7c5d1": {
-   "senest": "2026-11-13",
-   "tjekket": "2026-11-26"
+   "senest": "2026-11-27",
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=456905c6-cab7-4550-8f8d-aff6299f2dd1": {
    "senest": "2025-12-04",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=d2ba0edc-b839-4eef-86ab-c8ed54546460": {
-   "senest": "2026-11-12",
-   "tjekket": "2026-11-26"
+   "senest": "2026-11-27",
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=da0e50bd-87c8-4300-b02d-3b73264af97d": {
-   "senest": "2026-11-18",
-   "tjekket": "2026-11-26"
+   "senest": "2026-11-27",
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=ce1d76a2-4513-4fe4-9e2b-c1007cfa4668": {
    "senest": "2021-12-15",
@@ -9560,7 +10147,7 @@
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=b07d17bb-ca50-47ce-bd41-ee710066ea95": {
    "senest": "2026-11-26",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=8774f66a-e111-4e75-964f-22f7ca99c8a6": {
    "senest": "2025-09-27",
@@ -9568,19 +10155,19 @@
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=9794cea6-d3b1-4740-abb7-bf2c2394c3c4": {
    "senest": "2026-11-23",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=8176fa02-4d10-4d19-9145-b2b493ba91b3": {
    "senest": "2026-11-26",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=5147b256-9bc4-4fd2-bc8e-c606ac6d64ca": {
    "senest": "2026-09-21",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=bca64e11-100d-4670-b749-d1d5efe19ed6": {
    "senest": "2026-11-05",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=a1454a93-eb82-49e2-ad77-77809506c844": {
    "senest": "2022-01-13",
@@ -9588,11 +10175,11 @@
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=b8315f77-e5dc-45ea-ac7f-b6935bc5deb8": {
    "senest": "2026-11-26",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/ForCommittee?committeeId=29b89b1e-3cc9-485e-9fa0-9573421cb7b1": {
    "senest": "2026-11-25",
-   "tjekket": "2026-11-26"
+   "tjekket": "2026-11-27"
   },
   "https://dagsordener.struer.dk/Sitemap/StaticPages": {
    "senest": "",
@@ -9600,6 +10187,6 @@
   }
  },
  "parser": 3,
- "opdateret": "2026-11-26T23:25:27.009Z",
+ "opdateret": "2026-11-27T14:12:13.572Z",
  "kommune": "Struer"
 }
